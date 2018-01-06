@@ -13,16 +13,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9f71c83d70dc6daca7a3906b784d6babf8dea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerators"></a>列舉值
 此區段會列出原始檔控制外掛程式必須知道原始檔控制外掛程式 API 中的列舉值資料型別。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [指令碼](../extensibility/command-code-enumerator.md)  
  列舉的選項[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)和[SccPopulateList](../extensibility/sccpopulatelist-function.md)函式。  
   

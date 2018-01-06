@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 287618def7897cd2c91a63db9d8272c919190dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 408d7801e883e85e37d721c342dba691702d77cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：編輯 SharePoint 部署組態
   您可以建立部署組態，或修改現有的部署組態。 例如，您無法執行的單一步驟或變更的部署程序中的步驟順序。 您可能想要建立或修改部署組態，因為無法變更內建和以程式設計方式加入的組態。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**現用部署組態**清單方塊中，選擇您想要使用的部署組態的名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

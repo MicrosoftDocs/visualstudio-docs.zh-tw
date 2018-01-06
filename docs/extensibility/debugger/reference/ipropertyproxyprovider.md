@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de400fc9e5b631a7ccffb0547fa693a8bf0ac419
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 671c80de705ffafc5a3e0040aee0de7f750e28af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 這個介面會提供 proxy 介面來檢視及變更物件的資料。  
@@ -38,7 +39,7 @@ IPropertyProxyProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  `IPropertyProxyProvider`介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|擷取屬性 proxy 介面若要檢視的物件。|  
   
@@ -52,7 +53,7 @@ IPropertyProxyProvider : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
  [類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   

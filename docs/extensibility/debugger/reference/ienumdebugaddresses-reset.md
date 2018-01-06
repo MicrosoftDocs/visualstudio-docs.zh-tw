@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b126565533bc46c315502ddce06f95f1d588271a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e38329fd8f6e460111b9052264c92c189a7f5454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 這個方法會將列舉重設第一個項目。  
@@ -42,6 +43,6 @@ int Reset();
 ## <a name="remarks"></a>備註  
  呼叫這個方法是下, 一次呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)傳回列舉的第一個項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
  [下一步](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

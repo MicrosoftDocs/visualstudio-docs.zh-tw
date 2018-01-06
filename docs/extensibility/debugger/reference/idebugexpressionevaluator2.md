@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3b8939df57445470229747c2b776215c9f30311
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e8ea51014ae21610b49b76fd553739c67fc4009f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
@@ -37,7 +38,7 @@ IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
 ## <a name="methods"></a>方法  
  除了上[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|擷取服務物件，指定其唯一的識別項。|  
 |[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|預先載入指定的符號提供者所指定的模組。|  

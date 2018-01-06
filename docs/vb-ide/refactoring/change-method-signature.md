@@ -16,11 +16,12 @@ f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
 dev_langs: VB
-ms.openlocfilehash: 83d1329706f53b1e5474a0a2cc4c859f0e982096
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac0b8394f71f2f7949cf21b4ea34eba733bf4d34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-a-method-signature-in-visual-basic"></a>變更在 Visual Basic 中的方法簽章
 **項目：**可讓您移除或變更的方法參數的順序。
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 
    ![變更簽章對話方塊](media/changesignature_dialog.png)
 
-   | 按鈕 | 說明
+   | 按鈕 | 描述
    | ------ | ---
    | **向上/向下鍵** | 將選取的參數在清單中上下移動
    | **移除**  | 從清單中移除選取的參數
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 
    ![變更簽章結果](media/changesignature_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (Visual Basic)](../refactoring-vb.md)  
 [預覽變更](../../ide/preview-changes.md)

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
 - vs.debug.ENC.CannotEditWhileException
@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21d72c5bb4bacaed0324d688d96c663e3153b6a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>編輯後繼續錯誤訊息對話方塊
 您的語言支援 [編輯後繼續]，偵錯時，會出現此對話方塊，但**編輯後繼續**不適用於您所做的程式碼變更的類型。 方塊內的錯誤訊息會提供更詳細的說明。 出現這個對話方塊的可能原因包括：  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
  **[確定]**  
  結束對話方塊，並取消緊接在前的編輯嘗試。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C + + 編輯後繼續部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
  [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)

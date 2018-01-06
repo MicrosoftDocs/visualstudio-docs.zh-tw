@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0acb0a0785f7cb493df30af8d828cf64b5372cae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dca773ca63e2ab6bbc852648d2dea92b0b9813d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 此介面代表在程式中執行的執行緒。  
@@ -42,7 +43,7 @@ IDebugThread2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugThread2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|擷取這個執行緒的堆疊框架的清單。|  
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|取得執行緒的名稱。|  
@@ -68,7 +69,7 @@ IDebugThread2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>偵錯 Visual Studio 中的 ASP.NET 應用程式
 
@@ -124,7 +125,7 @@ Web.config 檔案應該看起來像下列的範例：
 
 2. 如果您選擇外部伺服器 （自訂），請輸入正確的 URL 中**專案 URL** (或**基底 URL**) 欄位。
 
-    如果本機 IIS 外部的伺服器，就必須安裝並正確設定 IIS。 例如，必須在 IIS 中設定正確的 ASP.NET 版本。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 如果您想要測試部署，以及偵錯，請參閱[部署來測試](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)。
+    如果本機 IIS 外部的伺服器，就必須安裝並正確設定 IIS。 例如，必須在 IIS 中設定正確的 ASP.NET 版本。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 如果您想要測試部署，以及偵錯，請參閱[部署來測試](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis)。
 
     如果外部伺服器[遠端](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)相反地，附加至處理序，這些專案不會使用設定偵錯。
 
@@ -134,7 +135,7 @@ IIS express，您不需要設定網頁伺服器 （略過這一節）。 IIS Exp
 
 如果您使用本機 IIS web 伺服器，請遵循下列步驟。
 
-1. 請確定 IIS 已正確安裝。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+1. 請確定 IIS 已正確安裝。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
     * 請確定您在伺服器上安裝正確的 ASP.NET 版本。 使用 Web Platform Installer (WebPI) 安裝 ASP.NET 4.5 (從 Windows Server 2012 R2 中的 伺服器 節點，選擇 **取得新的 Web 平台元件**ASP.NET 然後搜尋)。 若要安裝 ASP.NET Core，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration)。
 
@@ -223,12 +224,12 @@ IIS express，web 應用程式會自動進行部署時開始偵錯 （略過這�
 > [!IMPORTANT]
 > 啟用偵錯模式會大幅影響效能的程式[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]應用程式。 請務必先停用偵錯模式，再部署發行應用程式或進行效能度量。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [ASP.NET 偵錯： 系統需求](aspnet-debugging-system-requirements.md)   
 [如何： 執行背景工作處理序的使用者帳戶](how-to-run-the-worker-process-under-a-user-account.md)   
 [如何： 尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)   
 [偵錯已部署的 Web 應用程式](debugging-deployed-web-applications.md)   
 [逐步解說： 偵錯 Web Form](walkthrough-debugging-a-web-form.md)   
 [如何： 偵錯 ASP.NET 例外狀況](how-to-debug-aspnet-exceptions.md)   
-[偵錯 Web 應用程式： 錯誤和疑難排解](debugging-web-applications-errors-and-troubleshooting.md)
+[對 Web 應用程式進行偵錯：錯誤和疑難排解](debugging-web-applications-errors-and-troubleshooting.md)
   

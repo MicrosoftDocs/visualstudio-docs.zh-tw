@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c89469cd1b2d41fc0e3258d2875b9e22b7c55747
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c312123b9782b892f6ce99d7e7684b1622e75381
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 指定的暫止中斷點的狀態旗標。  
@@ -57,6 +58,6 @@ public enum enum_PENDING_BP_STATE_FLAGS {
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

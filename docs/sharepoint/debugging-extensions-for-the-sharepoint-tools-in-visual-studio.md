@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98bb43322d4a222d63bafac22d78e433a3000530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb6ddce35a45c71fb72a4e6d1f138e044afd50e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯 Visual Studio 中 SharePoint 工具的擴充功能
   您可以偵錯在實驗執行個體或規則的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要疑難排解延伸模組的行為，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 如何執行 SharePoint 命令。  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |MaxReceivedMessageSize|指定允許的大小上限，以位元組為單位，Visual Studio 和 vssphost4.exe 之間傳遞的 WCF 訊息的 REG_DWORD。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
 |MaxStringContentLength|REG_DWORD 指定允許的大小上限，單位為位元組的 Visual Studio 和 vssphost4.exe 之間傳遞的字串。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [部署 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

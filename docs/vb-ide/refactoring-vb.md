@@ -17,11 +17,12 @@ helpviewer_keywords: refactoring [VB]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b80a5f51394fda2274190322be172325205984a0
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: e1344f3bdfdfba5b3092c1c5e3669d4b2f98698f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-in-visual-basic"></a>在 Visual Basic 中重構
 
@@ -39,7 +40,7 @@ Visual Basic 提供下列的重構功能：
 * [重新命名](refactoring/rename.md)
 * [同步處理類型和檔案名稱](refactoring/sync-type-and-file.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [重構程式碼產生和 Visual Studio 中的快速動作](../ide/refactoring-code-generation-quick-actions.md)  
 [在 C# 中重構](../csharp-ide/refactoring-csharp.md)

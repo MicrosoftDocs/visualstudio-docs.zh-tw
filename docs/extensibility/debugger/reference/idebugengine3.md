@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df8ea8f5e95cf32f5b1425a4f110c424155b2ef2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f601cd38b5546d79f97e1c15a7c33c5de7df5d03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示單一的偵錯引擎 (DE) 可控制偵錯的一個或多個模組。  
@@ -38,7 +39,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)、`IDebugEngine3`介面會公開下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|設定 DE 將會用來搜尋偵錯符號的路徑。|  
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|載入尚未有載入其符號的所有模組的符號。|  
@@ -53,5 +54,5 @@ IDebugEngine3 : IDebugEngine2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

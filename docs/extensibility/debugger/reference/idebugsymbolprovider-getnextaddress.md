@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250fedb3227309b4f6b1d3505f96b27cd316e9ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 319422f99d8b2541e017c2072db300478db5c1a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 取得會遵循特定的偵錯中的位址方法的偵錯位址。  
@@ -54,5 +55,5 @@ int GetNextAddress(
 ## <a name="return-value"></a>傳回值  
  傳回有效`HRESULT`，通常為 S_OK。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

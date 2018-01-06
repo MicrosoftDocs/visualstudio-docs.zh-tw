@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e03a8c35a2e0bae6748bfe9737e8e21923390762
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 988f000e032233e23dffcd08b4fa0a9c7bbe5e64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 這個方法會傳回在列舉中的項目數。  
@@ -47,5 +48,5 @@ int GetCount(
 ## <a name="remarks"></a>備註  
  這個方法不是慣用的 COM 列舉介面會指定只有下一步、 複製、 Skip 和重設需要實作的一部分。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -30,11 +30,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bba3f2e5f645b6b97fb43b22e7dfc1028a01ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3398364f4c9e4046c3ab4670a544a96c5ac455c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>建立 SharePoint 的 Web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀和行為的 SharePoint 網站的頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們出現在 SharePoint 網站的頁面的建置組塊。 請參閱[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="sharepoint-controls"></a>SharePoint 控制項  
  Visual Studio 會提供一些控制項，用於建立 SharePoint 頁面，例如應用程式頁面。 會出現在這些控制項**工具箱**下**SharePoint 控制項**。 這些控制項的功能是衍生自[Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315)命名空間，其中包含在 SharePoint 網站和清單頁面所使用的 ASP.NET 伺服器控制項。  
   
-|控制項名稱|說明|  
+|控制項名稱|描述|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|插入 ASP 功能表。 如需詳細資訊，請參閱[功能表控制項概觀](http://go.microsoft.com/fwlink/?LinkId=235316)。|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|插入**連結**.aspx 頁面項目，並套用所定義的一個或多個外部樣式表**CssRegistration**。|  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|示範如何建立網頁組件的 SharePoint 頁面。|  
 |[如何：使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|示範如何使用視覺化設計介面建立 SharePoint web 組件。|  

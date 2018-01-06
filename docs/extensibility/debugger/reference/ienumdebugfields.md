@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed697205a5cd7d866df639e2908e3cc0b4fa2f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e930a9e78fb1d91bc5738256e0555f3949829c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 此介面代表實作物件的集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。  
@@ -38,7 +39,7 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定的數目的項目。|  
@@ -55,7 +56,7 @@ IEnumDebugFields : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)   

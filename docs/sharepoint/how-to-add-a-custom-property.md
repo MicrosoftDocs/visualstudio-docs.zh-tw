@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b087ae9f767ed762b6d9269f60f2612127bdc705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 813063a2cd32374171c37e770e033959d7b7d3d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：加入自訂屬性
   您可以將自訂屬性加入至模型使用**屬性編輯器**。 您可以存取這些屬性中擷取資訊，例如連接字串和其他資料在執行階段程式碼。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  如**值**欄位的自訂屬性，指定值，然後選擇 [**確定**] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

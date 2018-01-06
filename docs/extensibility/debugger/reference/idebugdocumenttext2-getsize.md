@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25bf0a7c570c2c11e09c9e6d98d1f4be05d7adb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 117d557ad2ee5d7fe3490644162d1995e86c1873
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 擷取文件中的此位置的文字的大小。  
@@ -54,5 +55,5 @@ int GetSize(
   
  [僅限 C#]必須指定這兩個參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

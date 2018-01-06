@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d758c5d4f410881989492f64dd7a7e5b8dc73804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 41fbe935bb6bde5a57e6277ffcf5e357cc53a391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：新增與移除功能相依性
   您的 SharePoint 功能仍取決於其他功能的功能或資料。 在這些情況下，您可以將這些其他功能做為相依性標示為您的功能。 如此一來，可確保在 SharePoint 伺服器之前您功能已啟用,，就會啟動相依的功能。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在功能設計工具中，依序展開**功能啟用相依性** 節點，選擇您想要移除，然後選擇功能名稱**移除** 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：新增與移除 SharePoint 功能中的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

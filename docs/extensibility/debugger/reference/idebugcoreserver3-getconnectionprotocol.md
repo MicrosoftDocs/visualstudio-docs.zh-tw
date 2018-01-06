@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 094f08f4c19e12983717aaac3d1562e1a7c42f22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfa1b8c335d871c83aaf27e3929dd70e981450da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 傳回值，指出目前用於伺服器和偵錯封裝之間進行通訊的通訊協定。  
@@ -44,6 +45,6 @@ int GetConnectionProtocol(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

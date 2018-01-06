@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8bf894d8dc68e951333c517ddc1708b9b277582
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09032546b565a0fe638d63f76685ff83e26f532c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>如何：以程式設計方式建立會議邀請
   本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用行事曆項目](../vsto/working-with-calendar-items.md)   
  [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  
   

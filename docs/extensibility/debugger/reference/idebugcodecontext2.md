@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9e003372e390d7e807f314555310c167bf011a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此介面代表程式碼指示的開始位置。 大部分的執行階段架構，程式碼內容可以視為程式的執行資料流中的位址。  
@@ -38,7 +39,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了上[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|取得對應至使用中程式碼內容的文件內容。|  
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|取得這個程式碼內容的語言資訊。|  
@@ -53,7 +54,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
  [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   

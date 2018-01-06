@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40ec185caf65197d46abc7def26def7929f70d74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f06d8e80bcaecefa515ae4ca0b0bd46cab1ca8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 將指定的值新增至目前的內容，並傳回新的內容。  
@@ -56,5 +57,5 @@ int Add(
   
  這個方法必須永遠會產生新的內容，即使產生的位址超出此內容相關聯的記憶體空間。 唯一的例外是，如果沒有記憶體可以配置給新的內容或`ppMemCxt`是空值 （這是錯誤）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

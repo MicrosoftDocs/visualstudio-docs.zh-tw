@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C# 中撰寫視覺化檢視 #
 本逐步解說示範如何使用 C# 撰寫簡單的視覺化檢視。 您將在本逐步解說中建立的視覺化檢視會顯示使用 Windows form 訊息方塊字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視其他資料類型時，必須遵循的基本步驟。  
@@ -48,7 +45,7 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**名稱**方塊中，輸入適當的名稱，為該類別庫，例如 MyFirstVisualizer。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
  建立類別庫之後，您必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，好讓您可以使用定義的類別那里。 將參考加入之前，不過，您必須重新命名一些類別，才有意義的名稱。  
   
@@ -65,11 +62,11 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**加入參考**對話方塊**.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
 6.  在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ ms.lasthandoff: 11/11/2017
   
 1.  在 debuggerside.cs 中，請移至下列程式碼行：  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  將程式碼變更：  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ ms.lasthandoff: 11/11/2017
   
 -   在`public class DebuggerSide`，加入下列**方法：**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -109,11 +106,11 @@ ms.lasthandoff: 11/11/2017
   
 2.  在**加入參考**對話方塊**.NET**索引標籤上，選擇 System.Windows.Forms.DLL。  
   
-3.  按一下 [確定]。  
+3.  按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  在 DebuggerSide.cs 中，將下列陳述式加入至 `using` 陳述式：  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  在 `Show` 方法中，加入下列程式碼行：  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ ms.lasthandoff: 11/11/2017
   
 1.  之後，將下列屬性程式碼加入至 debuggerside.cs 中，`using`陳述式之前`namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  在**建置**功能表上，選擇**建置 MyFirstVisualizer**。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。  
@@ -153,7 +150,7 @@ ms.lasthandoff: 11/11/2017
   
 1.  將下列方法加入至 `public DebuggerSide` 類別：  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -173,7 +170,7 @@ ms.lasthandoff: 11/11/2017
   
 3.  在**名稱**方塊中，輸入有意義的名稱，為主控台應用程式，例如`MyTestConsole`。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
  此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。  
   
@@ -183,13 +180,13 @@ ms.lasthandoff: 11/11/2017
   
 2.  在**加入參考**對話方塊中， **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
-3.  按一下 [確定]。  
+3.  按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  以滑鼠右鍵按一下**MyTestConsole**選擇**加入參考**一次。  
   
 5.  在**加入參考**對話方塊中，按一下 **專案**索引標籤，然後按一下 MyFirstVisualizer。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
  現在，您就可以加入程式碼來完成測試載入器。  
   
@@ -203,13 +200,13 @@ ms.lasthandoff: 11/11/2017
   
 3.  在 TestConsole.cs，加入下列程式碼`using`陳述式：  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  在 `Main` 方法中，加入下列程式碼：  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
@@ -243,7 +240,7 @@ ms.lasthandoff: 11/11/2017
   
 4.  在**名稱**方塊中，輸入適當的類別庫，例如 MySecondVisualizer 的名稱。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
  現在，您可以將視覺化檢視項目：  
   
@@ -261,7 +258,7 @@ ms.lasthandoff: 11/11/2017
   
  這是所有步驟。 查看 SecondVisualizer.cs 的檔案，並檢視範本新增為您的程式碼。 請繼續並實驗程式碼。 現在，您知道的基本概念，您會在您建立您自己的更複雜且實用的視覺化檢視。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
  [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

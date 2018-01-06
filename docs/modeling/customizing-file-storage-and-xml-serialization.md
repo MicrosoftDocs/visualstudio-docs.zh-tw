@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: eae3a0ffd77fa4b399b2d62d3139e7bd8a405d48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 當使用者儲存工作執行個體，或*模型*中的特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或更新的 XML 檔案。 檔案追縱可以重新建立存放區中的模型。  
@@ -268,7 +269,7 @@ ms.lasthandoff: 10/27/2017
   
 |||  
 |-|-|  
-|屬性|說明|  
+|屬性|描述|  
 |具有自訂項目結構描述|如果為 True，表示網域類別有自訂元素的結構描述|  
 |是 Custom|將此設**True**如果您想要撰寫您自己這個網域類別的序列化和還原序列化程式碼。<br /><br /> 建置方案，並調查要探索的詳細的指示的錯誤。|  
 |領域類別|這個類別的資料節點適用於網域類別。 唯讀。|  
@@ -285,7 +286,7 @@ ms.lasthandoff: 10/27/2017
   
 |||  
 |-|-|  
-|屬性|說明|  
+|屬性|描述|  
 |網域屬性|Xml 序列化組態資料所套用的屬性。 唯讀。|  
 |Moniker 索引鍵|如果為 True，屬性用的索引鍵，建立參考這個網域類別的執行個體的 moniker。|  
 |是 Moniker 辨識符號|如果為 True，屬性用於建立限定詞 moniker 中。 如果為 false，而且 SerializeId 不適用於此領域的類別，moniker 會限定在內嵌的樹狀目錄中的父元素的 moniker。|  
@@ -296,7 +297,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="xml-role-data"></a>角色 Xml 資料  
  來源類別節點下找到角色資料節點。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |具有自訂 Moniker|設定為 true，如果您想要提供您自己的程式碼產生和解析 moniker 會周遊此關聯性。<br /><br /> 如需詳細指示，請建置方案，，，然後按兩下 錯誤訊息。|  
 |網域關聯性|指定要套用這些選項的關係。 唯讀。|  
@@ -304,6 +305,6 @@ ms.lasthandoff: 10/27/2017
 |角色項目名稱|指定的名稱衍生自來源角色的 XML 項目。 預設值是角色屬性名稱。|  
 |使用完整的表單|如果為 true，每個目標項目或 moniker 會括住，代表關聯性的 XML 節點。 這應該設定為 true，如果關聯性有自己的網域屬性。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

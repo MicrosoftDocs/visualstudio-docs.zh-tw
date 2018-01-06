@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f494eb3a48818323eedcb958a4126857b8d7ef5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b47a9bde47049c957af9f60e1d09d03b55c2359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 這個介面會描述連接埠。 這項描述用來將連接埠新增至連接埠供應商。  
@@ -38,7 +39,7 @@ IDebugPortRequest2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPortRequest2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|取得要建立的連接埠的名稱。|  
   
@@ -52,7 +53,7 @@ IDebugPortRequest2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

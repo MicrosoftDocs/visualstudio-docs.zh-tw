@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
 VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須使用 Visual Studio 註冊服務，然後加入服務。  
@@ -140,7 +141,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
   
      值`helloString`應該是"Hello"。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
  [使用並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

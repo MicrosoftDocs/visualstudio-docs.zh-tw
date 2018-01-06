@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df00ec25a4f417e6a84a5c42f04f082df6e0b05c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66e0ba17503a0d1bd90358d2cafc3ccec09f6fac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 取得先前用來建立連接埠 （如果有的話） 的連接埠的描述。  
@@ -44,7 +45,7 @@ int GetPortRequest(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  傳回`E_PORT_NO_REQUEST`如果連接埠不是使用[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)連接埠要求。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

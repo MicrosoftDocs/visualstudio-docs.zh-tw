@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7233bc1a739bd3bf6544aad879f898bf3848ee7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9ba7e2fa9b9e4991ac969347791b5231ee37bbd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：新增資源檔
   將資源檔加入的命令所在的方案節點，在 [方案總管] 功能節點的捷徑功能表。 如需詳細資訊，請參閱[當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  當**資源編輯器**中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源加入至資源檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

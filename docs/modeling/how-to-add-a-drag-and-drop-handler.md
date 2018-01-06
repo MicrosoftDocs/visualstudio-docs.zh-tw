@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3b462a3f5eb70fd21b907a046b0774f937bb738d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9f39931fed8d1491610bfafb6fd012439a48c0ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式，即為*軌跡處理常式*。  
@@ -171,7 +172,7 @@ using System.Linq;
   
     1.  如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
-    2.  在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 **啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。  
+    2.  在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 **啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定 **Deploying Office Solutions**]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。  
   
     3.  按一下**轉換所有範本**並重建方案。  
   
@@ -586,7 +587,7 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂複本的行為](../modeling/customizing-copy-behavior.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
  

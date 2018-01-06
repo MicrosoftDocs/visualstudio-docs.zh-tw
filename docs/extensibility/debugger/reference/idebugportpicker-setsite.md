@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4853d9ea3517cc5b589c6a9435b89a69738006d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a307c2b387905706d229d7811f490f109f14c78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 設定服務提供者。  
@@ -46,5 +47,5 @@ public int SetSite(
 ## <a name="remarks"></a>備註  
  在呼叫其他任何方法之前，會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

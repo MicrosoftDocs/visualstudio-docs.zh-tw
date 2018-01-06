@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 519b842f99ff3e4460626b82aafd24a02f9e720d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 545d5fa19182678ec1610fa7b689332e272f9962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用內建的色彩項目
 使用內建的色彩項目之前，您必須先指示整合式的開發環境 (IDE) 未提供您自己自訂色彩項目，在此情況下的方式是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>物件。 您可以設定語言服務的登錄項目。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果您要提供自訂色彩項目未設定此登錄項目。 如需詳細資訊，請參閱[自訂色彩項目](../../extensibility/internals/custom-colorable-items.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器中著色的語法](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [使用語法色彩編碼舊版語言服務](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)   

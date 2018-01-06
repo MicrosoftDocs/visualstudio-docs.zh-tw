@@ -15,16 +15,17 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d580d3d74d8648b7181ac1ca384d3232fa8225b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 119e6dc088c6f6e80d79ab096d97b7404c530611
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-vspackages"></a>註冊 Vspackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔包含否則會加入至系統登錄的所有登錄資訊。 將屬性加入至原始程式碼，然後執行登錄 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  描述 Vspackage 的載入路徑。  
   

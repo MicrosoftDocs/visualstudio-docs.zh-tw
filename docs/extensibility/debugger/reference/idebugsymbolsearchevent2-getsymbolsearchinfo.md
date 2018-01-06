@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdf3b80a49641a13d9c17673376d70cfdee103cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 37a25e762f15a550aa3c4d06c85c64c500065747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 呼叫事件處理常式來擷取有關符號載入處理序的結果。  
@@ -61,7 +62,7 @@ int GetSymbolSearchInfo(
 ## <a name="remarks"></a>備註  
  當處理常式會接收[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件之後嘗試載入模組的偵錯符號，處理常式會呼叫 thismethod 來判斷該負載結果。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
  [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

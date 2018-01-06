@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4f74912dc5233cd62a4d35465d34c70e376c1df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-in-vspackages"></a>在 Vspackage 中的資源
 您可以在 managed VSPackage 本身或原生附屬 UI Dll，受管理的附屬 Dll 中內嵌的當地語系化的資源。  
@@ -88,6 +89,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
   
  當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage 在執行安裝程式中的資源要求，該封裝是可能已經載入和初始化，因此是最小的效能損失。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
  [MFC 應用程式中的當地語系化資源：附屬 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   

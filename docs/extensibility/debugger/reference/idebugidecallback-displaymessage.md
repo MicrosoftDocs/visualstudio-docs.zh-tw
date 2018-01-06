@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc1ee71800f4945ea44ed6c2836140f748d51673
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a0623daf4c5bb15db0235923d7563b1c13e9facb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 將指定的訊息字串傳送至偵錯工具的 [輸出] 視窗。  
@@ -43,5 +44,5 @@ int DisplayMessage (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

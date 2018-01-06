@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5937d37cfed89ee7f10779f764b8d78d370eb362
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b92a622b6b898c917710ac748b9205079d71ea5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-class---internal-members"></a>工作類別的內部成員
 本主題描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考主題。  
@@ -45,14 +46,14 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="methods"></a>方法  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|設定或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 狀態位元。|  
 |[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|預留位置方法作為偵錯工具的中斷點目標。|  
   
 ### <a name="fields"></a>欄位  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。|  
@@ -82,6 +83,6 @@ ms.lasthandoff: 10/31/2017
   
 -   `InternalWait`  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "37"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 56d67aff89c7f0cf58911cebfdaf5bfdb1464796
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e05574ba51a690621d57b6f32017d1eb359675eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。  
@@ -41,7 +42,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 |**部落格**|-   [Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [測試應用程式](https://www.visualstudio.com/en-gb/docs/test/overview)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)

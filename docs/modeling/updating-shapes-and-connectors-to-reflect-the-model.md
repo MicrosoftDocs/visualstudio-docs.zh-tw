@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c63d8e9d7da3c02259e557580c5d7cafa74d0b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 以網域特定語言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以進行反映基礎模型的狀態圖形的外觀。  

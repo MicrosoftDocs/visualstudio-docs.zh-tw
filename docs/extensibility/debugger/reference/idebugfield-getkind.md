@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3c1e1a97284bdc7864a9148e451cff5528ea6eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ce0ad7a6e9e7523f8f46814335eaa85c1c092c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 這個方法會取得欄位的類型。  
@@ -44,6 +45,6 @@ int GetKind(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

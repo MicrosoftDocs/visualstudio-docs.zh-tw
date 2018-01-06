@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 300f0553ee081dee8adc34ab48ce1989fc86e6c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5ecc39025ce92cf2b2d230b6690ad1b7bc5896ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 取得本身的連接埠的處理序識別碼。  
@@ -47,5 +48,5 @@ int GetPortProcessId (
 ## <a name="remarks"></a>備註  
  Win32 執行階段中，這個方法通常會呼叫 Win32 函式`GetCurrentProcessId`取得實體的處理序識別碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

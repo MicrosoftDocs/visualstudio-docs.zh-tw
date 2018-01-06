@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b1d1c05b6156cb38222eeedb287de4b3fc52b18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b28e0cd6d66479479dbdb51825e0804abab06be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 取得 managed 程式碼物件，代表與此物件相關聯的值。  
@@ -47,5 +48,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>備註  
  `ICorDebugValue`物件是代表值的通用語言執行平台介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

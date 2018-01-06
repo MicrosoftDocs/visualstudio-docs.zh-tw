@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7aab5978d2fc5f7bee82b097ed61a9603d7e198
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 664ab99af45e8c449247c5515184293ecb1a469f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何： 隱藏的文字中提供支援舊版語言服務
 您可以建立大綱區域除了隱藏的文字區域。 用戶端控制或編輯器控制，可以是隱藏的文字區域，可用於完全隱藏的文字區域。 編輯器會顯示為水平線隱藏的區域。 舉例來說，這是在 HTML 編輯器中的 [僅限指令碼] 檢視。  

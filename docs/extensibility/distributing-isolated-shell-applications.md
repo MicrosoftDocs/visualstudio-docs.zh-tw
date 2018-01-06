@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a40d2b8c108d7180ffc68ac2eee6811d49b21c08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 250f1d7769f6035e015eeb7247c439b27f913b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>散發 Isolated 的 Shell 應用程式
 若要建立獨立的 shell 應用程式，您必須安裝 Visual Studio 和 Visual Studio SDK。 散發到電腦其他使用者或客戶的應用程式，必須包含在 isolated shell 的特殊可轉散發套件。  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>散發 Isolated 的 Shell 應用程式的必要條件  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |Visual Studio SDK|您必須以開發並測試的擴充功能 SDK [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 您也可以使用 SDK 來建立您自己的 Visual Studio isolated shell 的執行個體。<br /><br /> Visual Studio 是 SDK 的必要條件。|  
 |Microsoft Visual Studio Isolated Shell 可轉散發套件|可轉散發套件您包含安裝程式中，當您建置在 Visual Studio 工具環境隔離 shell。 隔離的 Shell 可轉散發套件包含.NET Framework 4.5。|  

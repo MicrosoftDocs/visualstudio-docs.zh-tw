@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee4fe04f22bd9afbff8e2d26ef9d699b0226241
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a3bb34435bc7c6411fe694e4476eb9ffeacfe1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 可讓偵錯引擎，將覆寫預設行為[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 偵錯工作階段結束時。  
@@ -34,7 +35,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugProgramDestroyEventFlags2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|擷取程式旗標會終結。|  
   

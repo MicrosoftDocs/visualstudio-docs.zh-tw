@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d9d1f6ac733a0feccb3f2fa8175fb85ed035b35c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊版程式碼當中不知所措。 比方說，當您在偵錯，您可能必須查看跨越許多檔案和專案的程式碼。 使用 Code Map 巡覽程式碼片段並了解它們之間的關聯性。 如此一來，您就不必在腦中持續追蹤此程式碼，或繪製個別的圖表。 因此，當您工作中斷時，Code Map 可協助重新整理您正在處理之程式碼的記憶。  
@@ -139,6 +140,6 @@ Code Map 有助於避免在大型程式碼基底、不熟悉的程式碼或舊�
   
  現在您已完成調查。 您藉由對應程式碼成功找到問題並且加以解決。 您還可以利用對應巡覽程式碼、記住您所學到的內容，以及顯示您用於解決問題的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)   
  [視覺化程式碼](../modeling/visualize-code.md)

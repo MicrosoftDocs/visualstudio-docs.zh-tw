@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ecc33a729864fe1fd84c16e732ffceb3b0f858a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 偵錯引擎 (DE) 會使用此介面將訊息傳送至 Visual Studio 需要使用者回應。  
@@ -40,7 +41,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugMessageEvent2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|取得要顯示的訊息。|  
 |[Responsemanager](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|設定回應，如果有，從訊息方塊。|  
@@ -59,7 +60,7 @@ IDebugMessageEvent2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

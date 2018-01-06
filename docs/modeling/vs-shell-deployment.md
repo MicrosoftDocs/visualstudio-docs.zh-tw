@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e7632b99d3fa9d347b5a259cd446edc2f6d9efa8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aeb4ca2153d4c060862d31e53202312f061bf1ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 獨立的 shell 可讓您判斷哪些 Visual Studio 需要與特定領域語言，和該方案的顯示方式互動功能。 如需 Visual Studio isolated shell 的詳細資訊，請參閱[自訂 Isolated Shell](../extensibility/customizing-the-isolated-shell.md)。 您可以找到有關如何自訂在 isolated 的 shell 中的詳細資訊[自訂 Isolated Shell](http://msdn.microsoft.com/en-us/d75463cd-1155-42e4-8b7a-046ed6becbbf)。  

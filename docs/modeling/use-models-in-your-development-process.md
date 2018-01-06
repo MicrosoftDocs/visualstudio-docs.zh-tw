@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4a93b60cfac2bbc727fbc2a7b4054c4e7b8e3dce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片： 透過模型改進架構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
@@ -131,7 +132,7 @@ ms.lasthandoff: 11/07/2017
 |**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   

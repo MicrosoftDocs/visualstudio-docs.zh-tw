@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 848fc50b8886cc736c5a7a856beec238c084d879
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3dca463352d5e698b74ecc6bda2a1579e3290513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模組來包含檔案
   *模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 是容器，可讓您將部署到 SharePoint 的檔案，例如 ASPX 主版頁面、 文字檔或影像。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      當您將檔案加入專案時，它的項目會自動加入至模組的 Elements.xml 檔案。 部署專案時，檔案會複製到 SharePoint 伺服器上，相對於專案的根目錄中，指定**檔案**項目的**Url**屬性，例如`Url="Module1/New Folder/SomeFile.doc`。 如果您想要變更檔案的部署位置，請將它移至另一個資料夾中**方案總管 中**或變更其**Url**設定。  
   
-8.  針對您想要出現在文件庫中的任何檔案，請附加`Type="GhostableInLibrary"`Elements.xml 中其項目屬性。 例如：  
+8.  針對您想要出現在文件庫中的任何檔案，請附加`Type="GhostableInLibrary"`Elements.xml 中其項目屬性。 例如，套用至物件的  
   
     ```  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
      將檔案複製到 SharePoint 中的指定位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

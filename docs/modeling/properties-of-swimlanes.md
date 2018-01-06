@@ -13,18 +13,19 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1b8eacf8fdd74fc9fe0703dc50beb46a2442e939
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f43af2ef4a3a13952fb04c594db336afcb97afbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-swimlanes"></a>泳道的屬性
 您可以加入圖表的泳道。 泳道分成垂直或水平區域的圖表。 您可以定義其他的圖形會顯示在泳道內部。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
  泳道具有下表中所列的屬性。  
   
-|屬性|說明|預設|  
+|屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |主體填滿色彩|主體的泳道填滿色彩。|白色|  
 |標頭填滿色彩|標頭的泳道填滿色彩。|暗灰色|  
@@ -46,10 +47,10 @@ ms.lasthandoff: 10/27/2017
 |初始高度|此英吋的泳道，初始的高度。 僅適用於水平的泳道。|0|  
 |初始寬度|此英吋的泳道，初始的寬度。 僅適用於垂直泳道。|0|  
 |公開文字色彩|如果`True`，使用者可以設定在產生的設計工具的泳道的色彩。 若要設定這種情況，以滑鼠右鍵按一下 「 泳道 」 圖形，然後按一下**新增公開**。|False|  
-|說明|用來產生的設計工具的文件。|\<無 >|  
+|描述|用來產生的設計工具的文件。|\<無 >|  
 |顯示名稱|將參考此泳道類別產生的設計工具中顯示的名稱。|\<無 >|  
 |固定的工具提示文字|使用固定的工具提示文字。|\<無 >|  
 |說明關鍵字|用於檢索這個泳道的 F1 說明關鍵字。|\<無 >|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

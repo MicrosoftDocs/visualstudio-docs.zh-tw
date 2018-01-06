@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂站台工作流程活動
   本逐步解說示範如何建立網站層級的工作流程使用的自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是站台上的清單）。自訂活動會建立備份公告清單，然後公告清單的內容複製到其中。  
@@ -128,7 +129,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在 快速啟動 列上選擇 **公告備份**連結。 請注意，所有的宣告中所包含的**公告**清單已複製到這個新的清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

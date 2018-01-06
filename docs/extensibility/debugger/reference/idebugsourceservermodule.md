@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa50dcd0e379b3e32c11d531db25817038ed9c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: caf51056af3172e5dd13c551bf61d9780e407b1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 表示包含在 PDB 檔案中的來源伺服器資訊。  
@@ -34,7 +35,7 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugSourceServerModule`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|擷取的來源伺服器資訊的陣列。|  
   

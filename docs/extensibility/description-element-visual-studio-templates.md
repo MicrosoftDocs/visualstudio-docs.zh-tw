@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6618ee5f6d7e110dd712fa6df4fbfb7906d8b46f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e58ee9b351acaeaabb842abd1c9e4d04ec1a189
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="description-element-visual-studio-templates"></a>描述項目 (Visual Studio 範本)
 指定範本描述出現在**新專案**或**加入新項目** 對話方塊。  
@@ -39,11 +40,11 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Package`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 封裝的 GUID 識別碼。|  
 |`ID`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 的資源 id。|  
@@ -92,6 +93,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

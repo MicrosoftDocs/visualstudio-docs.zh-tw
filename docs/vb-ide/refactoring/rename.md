@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.rename
 dev_langs: VB
-ms.openlocfilehash: 35313f036e1f324d3f8908a4527cd3a2ad64ae52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da85803adf3de8afa0912a1f47e2b474952df51d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-a-code-symbol-in-visual-basic"></a>重新命名在 Visual Basic 中的程式碼符號
 **項目：**可讓您重新命名程式碼的符號，例如欄位、 區域變數、 方法、 命名空間、 屬性和類型的識別項。
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
 >
 > ![重新命名衝突](media/rename_conflict.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (Visual Basic)](../refactoring-vb.md)  
 [預覽變更](../../ide/preview-changes.md)

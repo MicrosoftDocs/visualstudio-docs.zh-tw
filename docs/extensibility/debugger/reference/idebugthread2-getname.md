@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c608c01b788c88385814fced4fae99d267e96f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e75fe48ee3974857de0acd4e3af99c0c3ea16314
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 取得執行緒的名稱。  
@@ -47,6 +48,6 @@ int GetName (
 ## <a name="remarks"></a>備註  
  擷取的名稱永遠可以顯示的名稱，而且此名稱會說明執行緒。 執行緒名稱可能會衍生自執行階段架構支援將具名的執行緒，或可能被衍生自的偵錯引擎的名稱。 或者，設定執行緒名稱，由呼叫[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

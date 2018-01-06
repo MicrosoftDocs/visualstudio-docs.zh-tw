@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8100c43578c11ae73f26764df74aa17caccc3611
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d7acd147fd8d2b73b2172900baf7e1f49808e9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
 工作階段的偵錯管理員 (SDM) 會管理任何數目的偵錯引擎 (DE) 偵錯任意數目的任意數目的機器上的多個處理程序中的程式。 除了多工器偵錯引擎，SDM 會提供 ide 偵錯工作階段的統一的檢視。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  SDM 不會追蹤目前的處理序、 執行緒或堆疊框架。 處理程序、 程式和執行緒資訊傳送給特定的偵錯事件搭配 SDM。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

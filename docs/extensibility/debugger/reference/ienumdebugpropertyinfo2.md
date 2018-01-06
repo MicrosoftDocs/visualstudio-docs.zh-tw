@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e7f261a449e20873183ff59487c1a6b2df6b678
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 578418c1afa831120cf77fd5a1da48d84126ec8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 這個介面會列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
@@ -38,7 +39,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugPropertyInfo2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|擷取指定的數目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列舉順序中的結構。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|略過指定的數目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列舉順序中的結構。|  
@@ -56,7 +57,7 @@ IEnumDebugPropertyInfo2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fabdf30480666ee3bc24bf3d68af4cc0dcc1ccb6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 94f2e781c316f3891fdef0c324d54fa2f9742222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何： 文字緩衝區使用註冊事件舊版應用程式開發介面
 如果您要使用舊版 API 存取文字緩衝區，您應該註冊的文字緩衝區事件，如下列程序中所示。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
   
      環境傳回的 cookie，您可以在停止聽候事件藉由呼叫使用<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在舊版 API 中的文字緩衝區事件](../extensibility/text-buffer-events-in-the-legacy-api.md)

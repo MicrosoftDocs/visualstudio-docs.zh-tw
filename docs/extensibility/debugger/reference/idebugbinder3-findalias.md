@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f209829e3b6c76571a53370c11c6d6d7343b088c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b88ae0da5f90da45d33ec56169665e9c8430846c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 這個方法會找出的指定名稱的別名。 這會在程式中搜尋所有別名。  
@@ -52,6 +53,6 @@ int FindAlias(
 ## <a name="remarks"></a>備註  
  這個方法會初始化為 null，然後再呼叫; 的目的地物件然後它會測試之後若要判斷已找到別名有 null 值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

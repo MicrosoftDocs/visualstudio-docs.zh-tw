@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1cf3eead4b268dbbca5ad4333adcc647522b051
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 81765959c0735080141ba8974387d592a461df25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 傳回所有可能的偵錯引擎 (DE) 可以偵錯此程式的 Guid。  
@@ -57,5 +58,5 @@ int EnumPossibleEngines(
 ## <a name="remarks"></a>備註  
  若要判斷有多少引擎，可以呼叫這個方法一次使用`celtBuffer`參數設為 0 和`rgguidEngines`參數設定為 null 的值。 這會傳回`HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`(0x8007007A C#) 和`pceltEngines`參數會傳回所需的緩衝區大小。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

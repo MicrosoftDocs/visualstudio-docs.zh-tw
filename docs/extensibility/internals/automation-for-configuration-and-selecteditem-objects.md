@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42a3b8bdd8930c9006ba49fd0f2e2dd2491b38cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a9446a5c63df7f20d6e4dbdc3cb60bf20183bb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>自動化組態和 SelectedItem 物件
 您可以自動化組建和選取的項目中的程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="automation-for-selecteditem"></a>SelectedItem 的自動化  
  您沒有提供實作`SelectedItem`物件，因為 Visual Studio 包含標準的實作。 不過，您可以實作`SelectedItem`如果您偏好的物件。 您必須實作物件，包含`SelectedItem`介面，並將回應傳回至呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>VSITEMID 方法設為<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [參與 Automation 模型](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [了解組建組態](../../ide/understanding-build-configurations.md)

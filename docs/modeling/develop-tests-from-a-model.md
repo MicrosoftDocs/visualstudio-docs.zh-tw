@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ea0753130b6fa1da60cf83cf15c0ee5c7f4010c2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: d576eda94c421b16ac3f752efa26f2ecb1b761b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。  
@@ -157,7 +158,7 @@ Assert (countAfter == countBefore = 1);
   
 3.  加入測試套件 (驗證模型項目中所表示的需求的測試案例)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   

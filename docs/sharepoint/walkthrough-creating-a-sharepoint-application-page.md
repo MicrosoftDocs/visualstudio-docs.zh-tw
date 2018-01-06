@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e49e8d50905dc0bb0b3c104a7133fe7435e2e944
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 161d1d1e6b48de029124290ff38d04427c543b6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
   應用程式頁面是一種特殊的形式的 ASP.NET 網頁。 應用程式頁面包含合併與 SharePoint 主版頁面的內容。 如需詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 -   測試應用程式頁面。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -167,7 +168,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)   
  [應用程式 _layouts 頁面中輸入](http://go.microsoft.com/fwlink/?LinkID=169274)  
   

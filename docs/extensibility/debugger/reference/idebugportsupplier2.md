@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6e5c5a9091b633c4c2c5ca46990393302e5e20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 257bbf334adbdfd3a93cf172de0b15bf63cb3217
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 這個介面會提供工作階段的偵錯管理員 (SDM) 連接埠。  
@@ -61,7 +62,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPortSupplier2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|取得連接埠供應商名稱。|  
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|取得連接埠供應商識別碼。|  
@@ -81,7 +82,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   

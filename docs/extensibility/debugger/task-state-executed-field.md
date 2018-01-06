@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f479185ed3e941b6c6ee59858a1c0b968d744c0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75389d4bdf8e245985cdb6e16c35db38a9bd49ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstateexecuted-field"></a>TASK_STATE_EXECUTED 欄位
 工作正在執行，但尚未完成。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位包含此值，<xref:System.Threading.Tasks.Task.Status%2A>屬性會傳回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

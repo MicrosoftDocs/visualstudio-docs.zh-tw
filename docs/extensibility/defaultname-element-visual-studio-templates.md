@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0e65c17eef2242a8732638be680889ea9b55374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6a20bd878e9c6f85e03ff0738ed2a92d274f6232
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 (Visual Studio 範本)
 在建立時，請指定 Visual Studio 專案系統將產生的專案或項目的名稱。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

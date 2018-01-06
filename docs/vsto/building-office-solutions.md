@@ -31,11 +31,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯和 Visual Studio 中建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[偵錯 Office 專案](../vsto/debugging-office-projects.md)|列出偵錯 Office 專案的相關問題。|  
 |[逐步解說：建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|示範如何建立 Excel 的基本文件層級自訂。|  

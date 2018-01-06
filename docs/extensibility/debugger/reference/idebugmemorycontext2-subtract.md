@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b1dc686846e0ca1e60f6bfce03dc5976c0d1d34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ef3f851b48de363e5d63afad4d993d1e693af6fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 減去指定的值，從目前的內容，並傳回新的內容。  
@@ -56,5 +57,5 @@ int Subtract(
   
  這個方法必須永遠會產生新的內容，即使產生的位址超出此內容相關聯的記憶體空間。 唯一的例外是，如果沒有記憶體可以配置給新的內容或`ppMemCxt`是空值 （這是錯誤）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

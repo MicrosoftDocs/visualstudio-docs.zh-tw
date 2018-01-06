@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>擴充專案
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署的單位的方式。 您可以找到詳細資訊中的專案[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  本節主題說明如何建立自訂專案，以及如何管理不同類型的 Visual Studio 方案。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [建立基本的專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)  
  描述如何建立自訂專案系統。  
   

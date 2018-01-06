@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e1cc33d1a84f5f8a3cd186b148f57e296a350f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e13147e12a630c596d19bcad99e81f2476d9a58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 擷取處理序中執行的所有執行緒的清單。  
@@ -49,7 +50,7 @@ int EnumThreads(
   
  這個方法提供一份不重複的處理序的執行緒。 否則，若要列舉執行特定程式的執行緒，請使用[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

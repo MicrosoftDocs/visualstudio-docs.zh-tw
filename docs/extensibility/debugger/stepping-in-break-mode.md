@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 011de9ce3e4e1445354f907dcf56a0f4ecbef6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb56cef2f60b0268528ea75e4fe2b991a7472192
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stepping-in-break-mode"></a>在中斷模式中逐步執行
 以下說明當偵錯工具處於中斷模式，但必須逐步執行程式碼所發生的程序：  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  完成步驟後，傳送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)為停止事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

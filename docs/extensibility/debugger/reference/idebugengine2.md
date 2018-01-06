@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f684a29eea526f7725e8a876f53453512f65dadc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 95a1a8c48bd6eab0f21ccc85a125b5d10f42ef4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 此介面代表偵錯引擎 (DE)。 它用來建立中斷點來設定及清除例外狀況中管理的偵錯工作階段，各層面。  
@@ -38,7 +39,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugEngine2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|建立偵錯程式 DE 的所有程式的列舉值。|  
 |[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|將 DE 附加至程式。|  
@@ -61,6 +62,6 @@ IDebugEngine2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

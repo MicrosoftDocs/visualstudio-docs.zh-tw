@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d27a087c67401e90e8a3f4629c27d1255d0ade75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bd9e42ae6be1cbd5afe1cbe2ae1b06da7f9937f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 設定這個屬性的值，指定參考的值。  
@@ -59,13 +60,13 @@ int SetValueAsReference(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則會傳回錯誤，程式碼，通常是下列其中之一：  
   
-|錯誤|說明|  
+|錯誤|描述|  
 |-----------|-----------------|  
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|不支援的值設定的參考。|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|無法設定值，因為這個屬性會參考給方法。|  
 |`E_SETVALUE_VALUE_IS_READONLY`|值是唯讀，且無法設定。|  
 |`E_NOTIMPL`|未實作方法。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

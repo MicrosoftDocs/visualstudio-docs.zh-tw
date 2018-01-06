@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供的工具可協助您建立自訂工作流程，管理生命週期的文件和 SharePoint 網站的清單項目。 提供的項目包括設計工具、一組活動控制項，以及必要的組件參考。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]也包含**SharePoint 自訂精靈**協助建立及設定工作流程。  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[逐步解說：建立並偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|將引導您逐步完成建立及偵錯簡單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流程。|  
 |[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|逐步引導您建立更完整[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]關聯與初始化表單的工作流程完成。|  
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
 |[逐步解說：建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|示範如何執行兩項重要工作： 建立站台層級的工作流程，並建立自訂工作流程活動。|  
 |[逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|示範如何匯入 SharePoint Designer 2010 中建立的可重複使用宣告式工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)  

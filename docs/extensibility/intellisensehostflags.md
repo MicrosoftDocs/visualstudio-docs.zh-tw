@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8e00768e544dbd6bb37a4de70e0f730fe967a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 36cf7ba40deba4bd133f2c4baf92c310665ed275
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主機旗標。  
@@ -40,7 +41,7 @@ enum IntellisenseHostFlags
   
 #### <a name="parameters"></a>參數  
   
-|成員|說明|  
+|成員|描述|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|內容緩衝區是唯讀的。|  
 |`IHF_NOSEPARATESUBJECT`|沒有主旨文字。 內容緩衝區包含 IntelliSense 目標 (表示`!IHF_READONLYCONTEXT`)。|  
@@ -51,5 +52,5 @@ enum IntellisenseHostFlags
 ## <a name="requirements"></a>需求  
  SingleFileeditor.idl  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

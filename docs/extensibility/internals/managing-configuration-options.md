@@ -13,16 +13,17 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-configuration-options"></a>管理組態選項
 當您建立新的專案類型時，您必須管理專案和方案組態設定，以決定如何您將會建立專案、 封裝、 部署和執行。 下列主題將討論專案和方案組態。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [概觀](../../extensibility/internals/configuration-options-overview.md)  
  描述如何在專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支援多個組態。  
   

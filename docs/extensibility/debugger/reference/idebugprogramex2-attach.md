@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8d025d4e788ac63ab0c75429e08c48215b9c902
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 440a4ce6b008efe541187d1d99d886f4c7c5f9ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 附加至程式的工作階段。  
@@ -61,5 +62,5 @@ int Attach(
 > [!NOTE]
 >  在傳遞介面`pSession`cookie，可唯一識別附加到此程式; 的偵錯工作階段管理員值僅被視為是提供的介面上的方法都是的功能。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

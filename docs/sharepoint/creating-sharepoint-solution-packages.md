@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   使用封裝設計工具，您可以建立並自訂部署套件。 例如，您可以加入 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟動範圍，以及識別功能依存性。 在設計工具也會產生資訊清單描述每個封裝的 XML 檔案。  
@@ -39,11 +40,11 @@ ms.lasthandoff: 10/31/2017
   
 |封裝設計工具屬性|預設設定的說明|  
 |-------------------------------|------------------------------------|  
-|名稱|必要項。 設定封裝的預設名稱為*ProjectName*。|  
-|重設網頁伺服器|選擇項。 如果您想要重新啟動 Web 伺服器，SharePoint 伺服器上安裝.wsp 檔案之後，請選取。|  
-|部署伺服器類型|必要項。 根據預設，會將範圍設定為 ApplicationServer。<br /><br /> ApplicationServer： 描述裝載服務的伺服器。<br /><br /> WebFrontEnd： 描述裝載網站的伺服器。|  
+|名稱|必要。 設定封裝的預設名稱為*ProjectName*。|  
+|重設網頁伺服器|選擇性。 如果您想要重新啟動 Web 伺服器，SharePoint 伺服器上安裝.wsp 檔案之後，請選取。|  
+|部署伺服器類型|必要。 根據預設，會將範圍設定為 ApplicationServer。<br /><br /> ApplicationServer： 描述裝載服務的伺服器。<br /><br /> WebFrontEnd： 描述裝載網站的伺服器。|  
 |在方案中的項目|所有的 SharePoint 專案項目，可以加入至封裝的功能。|  
-|在封裝中的項目|選擇項。 所有的 SharePoint 項目和您想要部署封裝中的功能。|  
+|在封裝中的項目|選擇性。 所有的 SharePoint 項目和您想要部署封裝中的功能。|  
   
 ## <a name="configuring-the-packaging-process"></a>設定封裝的程序  
  開發 Visual Studio 中的 SharePoint 方案之後，您可以自訂封裝專案的方式。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="package-folder-structure"></a>封裝的資料夾結構  
  當您封裝您的 SharePoint 專案時，.wsp 檔案會為您建立在 SolutionFolder\bin\\*BuildConfiguration*資料夾。 例如，如果您的方案處於*磁碟機*: \Visual Studio 2013\Projects\ListDefinition1 和組建組態設為 發行、.wsp 檔案位於*磁碟機*: \Visual Studio 2013 \Projects\ListDefinition1\bin\Release。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [如何： 新增與移除功能和封裝的項目使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [如何： 建立 SharePoint 套件](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   

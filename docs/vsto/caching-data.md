@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d5f044f1f1d0f36918939a67d9d2e5bb1899929
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 616dea48ba9689bd90a01dab64c8855bdf774adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caching-data"></a>快取資料
   您可以快取文件層級自訂中的資料物件，以便可存取資料，而不需要開啟 Microsoft Office Word 或 Microsoft Office Excel 或離線。 若要快取物件，該物件必須符合特定需求的資料類型。 .NET Framework 中的許多常見的資料類型符合這些需求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
   
  如果您加入的物件**null**值使用的資料快取<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>屬性在設計階段，您可以使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別，以初始化快取的資料物件，才能在開啟文件。 這非常有用，如果您想要初始化沒有 Word 或 Excel 之前, 安裝在終端使用者開啟文件的伺服器上的快取的資料。 如需詳細資訊，請參閱 [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 使用快取資料，離線或伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何： 以程式設計方式快取中的 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

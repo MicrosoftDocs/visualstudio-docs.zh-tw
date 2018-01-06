@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 701c5e33273dc6d00156e554e1abaa9a003568eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74990eac497b8ed239894121eb954cd8eeca55e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 將指定的值顯示為呼叫這個方法。  
@@ -64,7 +65,7 @@ int DisplayValue(
   
  若要支援上變更此值指定[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)物件，您可以使用[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法-如果此值可以表示為字串。 否則，就必須建立自訂介面 — 獨佔實作此運算式評估工具`DisplayValue`方法-實作的相同物件上`IDebugProperty3`介面。 這個自訂的介面會提供方法來變更資料的任意大小或複雜度。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

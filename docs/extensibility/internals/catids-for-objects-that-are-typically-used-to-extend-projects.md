@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 568f5b98cd652e872e7bcc7d63e85de7f134546d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98349042fe66748ed4eb72a1604893e3f4e67d80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>物件，通常會用來擴充專案項 Catid
 下表列出用來擴充項 Catid`Project`和`ProjectItem`自動化物件[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案。 這些項 Catid VSLangProj.olb 中定義。  
@@ -96,6 +97,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 |[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]|{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}|  
 |[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]|{F184B08F-C81C-45F6-A57F-5ABD9991F28F}|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)

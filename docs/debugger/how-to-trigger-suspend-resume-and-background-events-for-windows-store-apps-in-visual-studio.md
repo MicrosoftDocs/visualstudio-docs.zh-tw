@@ -18,20 +18,21 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
   
  本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 (即使您的應用程式並未執行也無妨)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。  
   
- 程序生命週期管理和背景工作的詳細資訊請參閱[正在啟動，繼續執行，並多工](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index)。  
+ 程序生命週期管理和背景工作的詳細資訊請參閱[正在啟動，繼續執行，並多工](/windows/uwp/launch-resume/index)。  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
+##  <a name="BKMK_In_this_topic"></a>本主題內容  
  [觸發處理程序生命週期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)  
   
  [觸發背景工作](#BKMK_Trigger_background_tasks)  
@@ -123,8 +124,8 @@ ms.lasthandoff: 11/11/2017
   
 4.  選擇 [ **診斷** ] 記錄檔。  
   
-## <a name="see-also"></a>另請參閱  
- [使用 Visual Studio 的測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
+## <a name="see-also"></a>請參閱  
+ [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [應用程式生命週期](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [啟動、 繼續及多工作業](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

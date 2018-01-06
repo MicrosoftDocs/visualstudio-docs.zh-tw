@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40bd08ef1cba620332d613fb1e1522982594ef51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3f5f04c65e9e5799c759dd5a77d7158c98b9d46d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 代表動態欄位[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
@@ -31,7 +32,7 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ## <a name="methods"></a>方法  
  除了上[IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|擷取指定其基本類型的型別。|  
 |[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|擷取類型，提供的語彙基元。|  

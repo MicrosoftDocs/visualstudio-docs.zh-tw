@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b92fe7fece58dd2006507f0285d3c440af437ee4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 44bb1eebecbec036572a9bb8857c87db8e4e4817
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>擴充基底的專案物件的模型
 專案子類型可能會擴充自動化物件模型的基底的專案，在下列位置：  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/31/2017
   
 -   Configuration.Properties-此集合會公開 （例如，偵錯） 的特定組態的專案組態相依屬性。 如需詳細資訊，請參閱 <xref:EnvDTE.Configuration>。 專案子類型可以使用 Automation 擴充項来加入此集合及其屬性。 <xref:EnvDTE80.IInternalExtenderProvider>主要專案子類型的彙總工具上實作介面提供其物件的 CATID `VSHPROPID_CfgBrowseObjectCATID` (對應至`itemid`值<xref:Microsoft.VisualStudio.VSConstants.VSITEMID_ROOT>)。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>介面用來區別一個組態瀏覽的物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

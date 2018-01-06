@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1258b2b7fdc1c91eaaa6265ce74a3891deda8ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4cde5d8f27c7961e3b9ed7bda34473d755226072
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 取得 blob （位元組) 的屬性資訊。  
@@ -54,5 +55,5 @@ int GetAttributeBytes(
   
  屬性代表自訂屬性的未經處理資料。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

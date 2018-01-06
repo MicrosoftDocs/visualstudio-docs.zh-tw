@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 798ac2d76bb3d9b0bcad2a6dbf7e7aa300030b42
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0e97d2cc15e3b613fa56d2d4df1d5df8c68f9b06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述一個反組譯碼指令整合式的開發環境 (IDE) 以顯示。  
@@ -223,7 +224,7 @@ namespace MyNamespace
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26819cccc4f5359da83684575423f8d0be276497
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 685ad1d619fdf9f04fe1a9cd1122a9e6ed3ba025
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>How to： 裝載在其他編輯器中的編輯器
 在 Visual Studio 中您可以藉由主控視窗指定為父視窗來裝載一個編輯器內的另一個。 若要這樣做，請設定參數<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>子視窗框架上。  

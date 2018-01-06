@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4207903fdd0f9a1462460d7f7cb2704e70e08df6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nesting-projects"></a>巢狀專案
 企業應用程式開發人員使用您的 VS 套件可以輕鬆地群組類似類型的專案中一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*專案巢狀*。 例如，企業樣板專案會使用巢狀的專案與群組專案組成各種分類。 商務外觀專案、 Web UI 專案等等中群組在一起一個類別目錄。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  ![巢狀專案方案](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 巢狀的專案範例  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 實作巢狀的專案](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [卸載並重新載入巢狀專案的考量](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [巢狀專案的精靈支援](../../extensibility/internals/wizard-support-for-nested-projects.md)   

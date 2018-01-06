@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>在 Visual Basic 中產生類別或類型
 **項目：**可讓您立即產生類別或類型的程式碼。 
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 
    ![產生類別預覽](media/class_preview.png)
 
-   選取 | 說明
+   選取 | 描述
    --- | ---
    產生類別*TypeName*' 中新的檔案 | 建立名為類別*TypeName*中名為*TypeName*.cs/.vb
    產生類別*TypeName*' | 建立名為類別*TypeName*目前檔案中。
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 
    ![產生類型](media/class_newtype.png)
 
-   選取 | 說明
+   選取 | 描述
    --- | ---
    存取 | 將類型設定為具有*預設*，*內部*或*公用*存取。
    類型 | 這可設定為*類別*或*結構*。
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
 
    ![產生類別的結果](media/class_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (Visual Basic)](../code-generation-vb.md)  
 [預覽變更](../../ide/preview-changes.md)

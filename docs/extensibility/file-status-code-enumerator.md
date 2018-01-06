@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25320e87bce135d442bfc25499f3c503fa529ff0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7957a8b841c34b85983af1aa152af466c469f8e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="file-status-code-enumerator"></a>檔案狀態碼列舉值
 `SccStatus`列舉值包含具名常數的值在原始檔控制系統中指定檔案的狀態。 這個列舉型別由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)和`POPLISTFUNC`回呼函式 (請參閱[POPLISTFUNC](../extensibility/poplistfunc.md)如需詳細資訊)。  
@@ -106,7 +107,7 @@ enum SccStatus {
  SCC_STATUS_RESERVED_2  
  保留供內部使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

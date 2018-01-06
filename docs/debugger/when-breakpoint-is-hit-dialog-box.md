@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.whenbreakpointishit
 dev_langs:
 - CSharp
@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e91841f1146d23305577cc00059f0bf9d505a90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c03e68315c8c0818d6b9cf6a102adde4ea4f8a10
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
 使用此對話方塊中，您可以自訂中斷點叫用時所發生的動作。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/31/2017
  **繼續執行**  
  啟用此控制項時，才**列印訊息**已選取。 選取這個控制項，您可以使用中斷點當做追蹤點追蹤程式執行，而不是重大時叫用的位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用中斷點](../debugger/using-breakpoints.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71f3e14c6a8c87290de2a6204fa28f99a8cabe8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0bca2eef930b871d5728ff1c85742a28f4b51a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項 (。Suo) 檔案
 方案使用者選項 (.suo) 檔案包含每個使用者方案選項。 這個檔案不應該簽入原始程式碼控制項中。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
  這兩種方法，`SaveUserOptions`和`WriteUserOptions`，會針對每個資料流的資訊儲存到.suo 檔案中，傳入的指標呼叫以遞迴方式`IVsSolutionPersistence`。 呼叫以遞迴方式，以允許進行的.suo 檔案的多個資料流寫入。 如此一來，使用者資訊與方案一起保存，一定會有的下次開啟方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  [方案](../../extensibility/internals/solutions.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>逐步解說：建立並偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫來判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。  
@@ -293,7 +294,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有關 Windows Workflow Foundation 活動的詳細資訊，請參閱[.net 命名空間](http://go.microsoft.com/fwlink/?LinkId=178993)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

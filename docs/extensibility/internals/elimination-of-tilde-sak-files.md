@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e487acefcb06c4fa0cd2070bfcf20bd065d500ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在原始檔控制外掛程式 API 1.2 ~ SAK 檔案已由功能旗標和偵測原始檔控制外掛程式支援 MSSCCPRJ 檔案，並在共用簽出的新函式取代。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  如果這個登錄機碼設定為 dword: 00000000，它相當於索引鍵不存在，要與 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案並不支援共用簽出。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

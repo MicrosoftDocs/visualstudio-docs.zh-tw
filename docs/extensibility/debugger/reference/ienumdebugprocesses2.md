@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e5be156ec0a30f736b96cfe6451b893dfb8eacf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 559d95834ccb8c7d0081a95a8412dccf12b1d8fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 這個介面會列舉在偵錯連接埠上執行的處理程序。  
@@ -38,7 +39,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugProcesses2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉順序中的程序。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過指定的數目的列舉順序中的程序。|  
@@ -56,6 +57,6 @@ IEnumDebugProcesses : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66fbf5e73639766ad27f7853e8170cd49518202f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c160fb10ce4ebdd8d483da5f1ccbd7efaa6d685
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 決定是否工作階段的偵錯管理員 (SDM) 可以卸離程序。  
@@ -38,6 +39,6 @@ int CanDetach();
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK.`傳回`S_FALSE`如果偵錯工具無法從處理序中斷連結。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

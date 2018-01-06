@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23f905a4a7fc239efb2220f15deb95954a46d998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b5dcc6c2384116494f4e95896328fc06bff71bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。  
@@ -47,6 +48,6 @@ int EnumModules(
 ## <a name="remarks"></a>備註  
  模組 DLL 或組件，而且通常會列在**模組**偵錯視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

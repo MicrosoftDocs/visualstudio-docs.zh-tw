@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d74c49a7de90e0c804cd4ec10a9201d3bff57866
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7f8991e361b46afe842cd65b933116d73bbfb69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugIDECallback : IUnknown
 ## <a name="methods"></a>方法  
  這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|將指定的訊息字串傳送至偵錯工具的 [輸出] 視窗。|  
   

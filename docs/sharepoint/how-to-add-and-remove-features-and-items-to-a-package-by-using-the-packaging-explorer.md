@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bafa2a4310a77f9f5a9f061e378ac05f2896d4ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ad944d9997b80a89971802d86a2fa3075533a5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝總管在套件中新增與移除功能和項目
   若要設定套件以部署 SharePoint 項目和功能，您可以使用 [封裝總管] 中。 您可以調整的 SharePoint 專案項目和功能.wsp 檔案內。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  功能或封裝中，開啟捷徑功能表，然後選擇**驗證**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

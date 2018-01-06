@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecdbdc3074ad6dc80a8bd713c46303ba3cca628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53ab248d9e71d3177cabb8ce522343d37bcabb26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-availability"></a>命令可用性
 Visual Studio 內容會決定可用的命令。 根據目前的專案、 目前的編輯器，會載入 Vspackage 和整合式的開發環境 (IDE) 的其他層面，可以變更內容。  
@@ -53,6 +54,6 @@ Visual Studio 內容會決定可用的命令。 根據目前的專案、 目前�
     > [!CAUTION]
     >  請確定，VSPackage 不會影響任何現有的內容中的 Guid 因為其他 Vspackage 可能會取決於它們。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選擇內容物件](../../extensibility/internals/selection-context-objects.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

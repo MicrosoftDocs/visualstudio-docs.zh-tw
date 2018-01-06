@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 945eeb8b81ecb26d43da9528db154d133c4f868c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17cf60573b6feb9fd317116eec4639dbf88f6089
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何： 提供適用於 Windows 的自動化
 您可以提供文件和工具視窗的自動化。 每當您想要的視窗中，使用 automation 物件和環境不存在時，提供自動化建議提供的現成的 automation 物件，與工作清單。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
  此外，編輯器可提供 VSPackage 特有的 automation 物件，透過擷取<xref:EnvDTE.Document.Object%2A>方法，藉由實作`IVsExtensibleObject`或`IExtensibleObject`介面。 [VSSDK 範例](http://aka.ms/vs2015sdksamples)佔 RTF 特定文件的自動化物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

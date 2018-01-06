@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 053ece03abfbb94d809c3e5a3627bc46ef2195e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 31fd8ba79218c6844e8fc5af33a81ce1c95a8abf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-documents"></a>Granting Trust to Documents
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 -   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱[How to： 將文件層級 Office 方案發行至 SharePoint 伺服器使用 clickonce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  

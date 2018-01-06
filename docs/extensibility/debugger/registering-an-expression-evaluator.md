@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa0d368a68dcbacc2d8b137011efb5942429b7cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9a8aa71d6c529aa4d06acf1d887f10a58cd8367e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-an-expression-evaluator"></a>註冊的運算式評估工具
 > [!IMPORTANT]
@@ -114,7 +115,7 @@ namespace EEMC
   
 2.  呼叫 helper 函式`SetEEMetric`註冊 Visual Studio 中的下表所示的 EE 度量。 此函式`SetEEMetric`和下面指定的度量資訊會 dbgmetric.lib 程式庫的一部分。 請參閱[SDK 進行偵錯的協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。  
   
-    |度量|說明|  
+    |度量|描述|  
     |------------|-----------------|  
     |`metricCLSID`|`CLSID`EE class factory 的|  
     |`metricName`|可顯示的字串為 EE 的名稱|  
@@ -213,6 +214,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [適用於偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

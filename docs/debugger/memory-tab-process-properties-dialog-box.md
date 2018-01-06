@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7629fd477d0eb5a2a142e48aa90bb97e4c10a152
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f846b66378f73239adf025d017e3553aaf6046a8
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、記憶體索引標籤
 使用**記憶體** 索引標籤以顯示如何處理程序使用的記憶體。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  
   
  下列設定都適用於**記憶體** 索引標籤：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**虛擬位元組**|處理序正在使用虛擬位址空間的目前大小 （以位元組為單位）。 使用虛擬位址空間不會不一定表示相應地使用磁碟或主記憶體分頁。 不過，虛擬空間很有限，而且使用太多可能會限制處理序載入程式庫的能力。|  
 |**尖峰虛擬位元組**|在任何一個時間已使用的處理程序的虛擬位址空間的位元組數目上限。|  

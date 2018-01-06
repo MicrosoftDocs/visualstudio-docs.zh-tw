@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d0d14d407dbff9493af0206369cfd8b9c8d556c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 974b76bafabaa3621ffb71a530b67e9643436c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 這個方法會取得此程式的 編輯後繼續 (ENC) 更新。 自訂偵錯引擎一律會傳回`E_NOTIMPL`。  
@@ -47,5 +48,5 @@ int GetENCUpdate(
 > [!NOTE]
 >  應該會一律傳回的自訂偵錯引擎`E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

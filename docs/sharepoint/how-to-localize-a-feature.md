@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53dbaa806ae3b65314d5aeed8df9338905a946cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-a-feature"></a>如何：當地語系化功能
   根據預設，功能標題和描述使用硬式編碼的字串值。 若要當地語系化的功能標題和描述，請使用參考的當地語系化的資源的運算式取代字串。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
      當地語系化的功能標題和描述會出現在應用程式。 若要顯示當地語系化的資源，請在 SharePoint 伺服器必須符合資源檔的文化特性的語言套件安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 將資源檔](../sharepoint/how-to-add-a-resource-file.md)   
  [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   

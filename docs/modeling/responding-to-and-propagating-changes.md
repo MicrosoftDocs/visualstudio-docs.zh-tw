@@ -12,16 +12,17 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫傳播變更給模型的其他組件或外部的資源，例如檔案、 資料庫或其他元件的程式碼。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  一般來說，請考慮下列技術順序如下：  
   
 |技術|案例|如需詳細資訊|  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/27/2017
   
 -   **事件引數傳遞至規則和事件**這兩個事件和傳遞規則`EventArgs`參數的相關資訊的模型變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 攔截按一下圖形或裝飾項目](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

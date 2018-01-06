@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1a8255180a3a5313f0a1c14b17ba10c885c10abc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
 當您修改或新增特定領域語言方案中的文字範本時，可能會發生錯誤時，引擎轉換原始碼，或在編譯產生的程式碼時的範本。 下列逐步解說將示範一些您可以偵錯文字範本的事情。  

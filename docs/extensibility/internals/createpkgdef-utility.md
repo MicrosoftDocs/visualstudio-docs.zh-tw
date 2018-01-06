@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 採用.dll 檔案，以做為參數的 Visual Studio 擴充功能，並建立.dll 伴隨著.pkgdef 檔。 .Pkgdef 檔包含會否則被寫入系統登錄時安裝擴充功能的所有資訊。  
@@ -37,10 +38,10 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
   
 ## <a name="arguments"></a>引數  
  /out =`FileName`  
- 必要項。 設定.pkgdef 輸出檔名稱`FileName`。  
+ 必要。 設定.pkgdef 輸出檔名稱`FileName`。  
   
  /codebase  
- 選擇項。 強制使用程式碼基底公用程式的註冊。  
+ 選擇性。 強制使用程式碼基底公用程式的註冊。  
   
  /assembly 選項  
  強制使用組件公用程式的註冊。  
@@ -56,5 +57,5 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 > [!NOTE]
 >  **擴充功能和更新**工具無法用來存取擴充功能，除非它會安裝為 VSIX 套件的一部分。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)

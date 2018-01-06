@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af681832a8c298427c13060d858b57b99654953a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 151648a6c12e2c28d912be3b75c51b438ae5ee13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>如何：在 Office 專案中建立事件處理常式
   有幾種方式在 Visual Basic 和 C# 中建立事件處理常式。 在 [設計] 檢視中，您可以建立預設值為控制項的事件處理常式，方法是按兩下控制項，或使用 [事件] 窗格的**屬性**視窗控制項上建立的任何事件處理常式。 不過，如果您是在程式碼 檢視中，您可能不想要切換至 設計 檢視中建立事件處理常式。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
      Visual Studio 自動完成的一行程式碼、 建立事件處理常式，並將插入點移至新建立的事件處理常式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
  [逐步解說： 針對 NamedRange 控制項的事件進行程式設計](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)  

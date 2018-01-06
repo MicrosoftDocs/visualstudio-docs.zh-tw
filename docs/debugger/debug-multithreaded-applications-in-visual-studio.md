@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
@@ -41,7 +42,7 @@ Visual Studio 會提供不同的工具，以用於偵錯多執行緒應用程式
 
 - 執行緒偵錯執行緒的主要工具是**執行緒**視窗中，來源視窗中的執行緒標記**平行堆疊**視窗中，**平行監看式**視窗中，並**偵錯位置**工具列。 若要了解**執行緒**視窗和**偵錯位置**工具列上，請參閱[逐步解說： 使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**平行堆疊**和**平行監看式**windows，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題示範如何使用執行緒標記。
   
-- 使用之程式碼[工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)，偵錯的主要工具是**平行堆疊**視窗中， **平行監看式**視窗中，而**工作**視窗 (**工作**視窗也支援 JavaScript)。 若要開始使用，請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)和[逐步解說： 偵錯 c + + AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)。 
+- 使用之程式碼[工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)，偵錯的主要工具是**平行堆疊**視窗中， **平行監看式**視窗中，而**工作**視窗 (**工作**視窗也支援 JavaScript)。 若要開始使用，請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)和[逐步解說： 偵錯 c + + AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
 - 主要工具是偵錯 gpu 執行緒， **GPU 執行緒**視窗。 請參閱[How to： 使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)。  
 
@@ -51,7 +52,7 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
   
 偵錯具有使用者介面的多執行緒應用程式可能會特別地困難。 在這種情況下，您可以考慮在第二部電腦上執行該應用程式，並使用遠端偵錯。 如需資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。  
  執行緒偵錯功能，並強調的功能的導覽**平行堆疊**視窗和**平行監看式**視窗。
 
@@ -101,6 +102,6 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
  提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

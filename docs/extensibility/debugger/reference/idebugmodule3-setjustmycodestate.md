@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0d34dba427106f2f8f99b3cfe4bc586579ee4be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48ffa09b66ee789526a2c6b99c57bf9d500f2c61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 將標記視為使用者程式碼或不模組。  
@@ -44,5 +45,5 @@ int SetJustMyCodeState(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

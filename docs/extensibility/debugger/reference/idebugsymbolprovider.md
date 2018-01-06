@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33958c7159c6348aca696e295deb245031e904d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2fbafdf4e2227d7c4d4a69b8b310cf082ac72ee0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 此介面代表提供符號和類型，將其傳回做為欄位的符號提供者。  
@@ -38,7 +39,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugSymbolProvider`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |`Initialize`|已取代。 請勿使用。|  
 |`Uninitialize`|已取代。 請勿使用。|  
@@ -104,5 +105,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

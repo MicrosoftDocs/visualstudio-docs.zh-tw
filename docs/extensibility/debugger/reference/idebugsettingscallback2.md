@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7488b937c2390000ce4ac3ef4d8ff04555f1b16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 779550509dd6d30b16f30a47c1b9a2879d5034ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 啟用偵錯引擎讀取度量設定從遠端。  
@@ -34,7 +35,7 @@ IDebugSettingsCallback2D : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugSettingsCallback2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|列舉可用的運算式評估工具提供的語言和廠商識別碼。|  
 |[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|擷取運算式評估工具本機物件指定度量。|  

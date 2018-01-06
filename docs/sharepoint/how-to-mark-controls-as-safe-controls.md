@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：將控制項標記為安全控制項
   為了安全性，SharePoint 會區別 Web 指令碼資料隱碼對受保護的 Web 控制項，以及不是。 受保護的控制項，或*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的安全控制項項目屬性，SharePoint 專案項目，或在中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 16. 選擇 Tab 鍵，然後再選擇**確定**按鈕以關閉對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

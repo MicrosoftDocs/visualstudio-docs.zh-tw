@@ -20,11 +20,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5d38dacb07cfce6cae2f2b83a68c7090542cac8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 08de10397c8abd132a94ed288c7795f068190f24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [如何： 以程式設計方式保護活頁簿](../vsto/how-to-programmatically-protect-workbooks.md)   

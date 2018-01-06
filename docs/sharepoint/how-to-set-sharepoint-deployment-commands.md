@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65c67972dddedcd05338d793883b2dcba0789d48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d5692195f340ce347df0bc6f8ad2d60225f24e6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>如何：設定 SharePoint 部署命令
   您可以藉由設定預先部署和部署後命令自訂部署程序。 這些命令之前和之後執行其他部署動作時進行偵錯 SharePoint 方案，從 Visual Studio。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
      例如，若要完成部署之後列出目錄內容，輸入**dir**。 若要使用 MSBuild 變數從組建目錄複製組件，請輸入**複製 $ （targetpath) c:\DeploymentDirectory**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

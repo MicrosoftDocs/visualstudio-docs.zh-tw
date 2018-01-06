@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02fe1424755f2adc58165587686b195a544a2664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbcab0922e9c8bbb8e41f7d409668890d2cae616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 繼續執行的處理程序。  
@@ -44,6 +45,6 @@ int ResumeProcess(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

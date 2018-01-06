@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>決定是否要實作原始檔控制 VSPackage
 本節的擴充原始檔控制方案並提供廣泛的指導方針選擇適合整合路徑的相關 elaborates 的原始檔控制外掛程式和原始檔控制 Vspackage 的選擇。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  處理查詢編輯和儲存查詢的事件 (請參閱[查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

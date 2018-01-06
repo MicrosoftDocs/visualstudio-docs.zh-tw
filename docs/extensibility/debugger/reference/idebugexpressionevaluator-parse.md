@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0491cd6d80db449fbeaa8fee2a6040a66082558
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e64d7419973f0505a2413d7ea56be12a31d01a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 這個方法會將運算式字串轉換成剖析的運算式。  
@@ -72,7 +73,7 @@ int Parse(
 ## <a name="remarks"></a>備註  
  這個方法會產生已剖析的運算式，而不實際的值。 剖析的運算式已準備好進行評估，也就是轉換成的值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

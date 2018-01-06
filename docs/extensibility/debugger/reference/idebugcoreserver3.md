@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66b543735a48364429eec02d23df0bd08c987035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9456ddbe7588217e4864f6f8c8b994bc9323ab76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 這個介面可讓的伺服器處理序正在執行中的相關資訊的存取。  
@@ -38,7 +39,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了上[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|擷取伺服器的名稱。|  
 |[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|擷取伺服器名稱的易記版本|  
@@ -59,6 +60,6 @@ IDebugCoreServer3 : IDebugCoreServer2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

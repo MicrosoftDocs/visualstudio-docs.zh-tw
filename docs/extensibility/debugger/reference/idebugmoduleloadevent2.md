@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c74ec97e127517ed800469d18b961207231466ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 640c759398e7898455cd977a240fe63c7af5b487
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時載入或卸載模組。  
@@ -38,7 +39,7 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugModuleLoadEvent2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|取得模組，正在載入或卸載。|  
   
@@ -52,7 +53,7 @@ IDebugModuleLoadEvent2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

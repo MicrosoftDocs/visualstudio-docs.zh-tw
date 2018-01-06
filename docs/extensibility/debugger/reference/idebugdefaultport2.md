@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a733ff466a8c0e8ad62e1d633054d0631024b9ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2a388d25ec828eeedb5c86860ad697848a5cb77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 這個介面會提供數種方法來存取伺服器的連接埠，以及通知功能。  
@@ -38,7 +39,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了中定義的方法[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|取得從這個連接埠的連接埠通知介面。|  
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|主控這個連接埠的伺服器取得的介面。|  
@@ -54,6 +55,6 @@ IDebugDefaultPort2 : IDebugPort2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

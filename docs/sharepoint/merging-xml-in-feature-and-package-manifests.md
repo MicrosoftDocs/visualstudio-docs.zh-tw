@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d418e757a93d77b0034bbdb8287b0e81a5a3860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>合併功能和封裝資訊清單中的 XML
   功能和封裝所定義[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 這些封裝資訊清單是從設計工具及自訂產生的資料組合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]由使用者輸入資訊清單範本中。 在封裝階段[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]merges 自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]陳述式與設計工具提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]形成封裝[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 類似的項目更新版本中合併的例外狀況，例外狀況會合併，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]之後將檔案部署至 SharePoint，並將資訊清單檔案較小且更有效率的驗證錯誤。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="package-manifest-elements"></a>封裝資訊清單的項目  
  下表是一份套件資訊清單的所有項目可以合併和其用來比對的唯一索引鍵。  
   
-|項目名稱|唯一索引鍵|  
+|元素名稱|唯一索引鍵|  
 |------------------|----------------|  
 |方案 （所有屬性）|*屬性名稱*（方案項目之每個屬性名稱是唯一的索引鍵）。|  
 |ApplicationResourceFiles/ApplicationResourceFile|位置|  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="manually-add-deployed-files"></a>手動新增已部署的檔案  
  資訊清單的項目，例如 ApplicationResourceFile 和 DwpFiles，指定包含檔案名稱的位置。 不過，將檔案名稱的項目加入至資訊清單範本不會對基礎檔案封裝。 您必須將檔案加入至要包含在封裝中，並據此將其部署類型屬性的專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

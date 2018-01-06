@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33801c7228e9f4b43c76ef3f29f26631bdad5edf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d6fa4778bbc500bdea888fe64918b0e50f5c6531
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 這個方法會設定所有未處理的例外狀況的狀態。  
@@ -44,6 +45,6 @@ int SetAllExceptions(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

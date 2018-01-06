@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05fb3f0a33c0f033733c40b17d636243c18ee22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b7a88c00e980cb86764958886d737d5113dfe1fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-a-legacy-language-service"></a>開發舊版語言服務
 這個區段會連結至主題可協助您建立舊版語言服務。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 儘速。 這會提升語言服務的效能，並可讓您充分利用新編輯器功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [舊版語言服務模型](../../extensibility/internals/model-of-a-legacy-language-service.md)  
  提供的最小的語言服務模型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心編輯器。 您可以使用這個模型做為指南，來建立您自己的語言服務。  
   

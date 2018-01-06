@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bab156bdd1589aaac10a619409b44e50558b9c15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67ee77197493cbba0161a3ee53a0617a58b62522
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面新增到工作流程
   本逐步解說示範如何將應用程式頁面會顯示在工作流程專案從工作流程衍生的資料。 它是在專案中的主題描述基礎[逐步解說： 建立工作流程關聯與初始化表單與](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -135,7 +136,7 @@ ms.lasthandoff: 10/31/2017
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  將下列程式碼加入至 `Page_Load` 方法中：  
+3.  將下列程式碼加入 `Page_Load` 方法：  
   
     ```vb  
     Try  
@@ -351,7 +352,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)   
  [建立 SharePoint 應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   

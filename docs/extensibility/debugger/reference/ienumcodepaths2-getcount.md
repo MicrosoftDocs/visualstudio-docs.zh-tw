@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ac5e03fda3150b6d8c8f3b11cfdf8300a56ab43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b1ff8c25beecc5591be9139162f2a81ffa7c854
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 列舉中傳回的項目數。  
@@ -47,5 +48,5 @@ int GetCount(
 ## <a name="remarks"></a>備註  
  這個方法不是指定的自訂 COM 列舉介面的一部分`Next`， `Clone`， `Skip`，和`Reset`必須實作的方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

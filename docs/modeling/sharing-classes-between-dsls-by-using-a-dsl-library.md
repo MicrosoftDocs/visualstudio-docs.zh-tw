@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ed225f315c92cf9276eb97fcb78e1730250ecd4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 20234988ba43597752dea6269f97ee4b26fe19b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK，您可以建立不完整，您可以匯入另一個 DSL DSL 定義。 這可讓您因素的類似模型的通用部分。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/27/2017
   
  DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫，其匯入也會自動出現在 DSL 總管 中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

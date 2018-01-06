@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b340249db1b5d4796f0123448282b1f4d29c78c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9202c60a990e2638e90daa380116aa2acfdc9f23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>如何：將功能新增至 SharePoint 方案
   當您建立 SharePoint 方案時，其中一項功能和封裝會加入至方案中。 您可以加入更多的功能項目，來組織不同類型的 SharePoint 檔案。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在**方案總管] 中**，開啟捷徑功能表**功能**，然後選擇 [**加入功能**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

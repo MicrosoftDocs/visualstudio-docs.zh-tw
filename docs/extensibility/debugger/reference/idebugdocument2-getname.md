@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 717a1eb794e3712427d6b905851c32796c3865c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2eeef7ced30d6f8de3b9d0fc6f783502936a4859
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 取得其中一種數種形式的文件的名稱。  
@@ -52,6 +53,6 @@ int GetName(
 ## <a name="remarks"></a>備註  
  為標題或檔案名稱或甚至是檔案名稱的一部分，這個方法可以比方說，會傳回文件的名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

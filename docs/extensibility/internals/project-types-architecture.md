@@ -13,16 +13,17 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86ff1ed0b616eb52d57755e7537642e4f086c1f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 34402ae0b998d4ae534507e23ffa31e0d7cef9bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-types-architecture"></a>專案類型的架構
 本節包含有關架構中的專案類型的詳細的資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)  
  列出專案類型可以取用的服務，它必須實作的介面。  
   

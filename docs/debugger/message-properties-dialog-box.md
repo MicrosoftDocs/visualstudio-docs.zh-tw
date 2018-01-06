@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - message options
 - message options, General
@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab11a037a5cf9d313e3269a5c3c8df464b120006
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
 使用此對話方塊來找出有關特定訊息的詳細資訊。 若要顯示此對話方塊中，焦點移至[訊息檢視](../debugger/messages-view.md)視窗。 在樹狀目錄中，選取訊息的任何節點，然後選擇 **屬性**從**檢視**功能表。  

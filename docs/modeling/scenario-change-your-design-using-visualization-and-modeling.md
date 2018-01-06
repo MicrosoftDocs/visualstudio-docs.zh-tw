@@ -20,11 +20,12 @@ caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e6ffb17164bf49cb585d9fd67dd99c833a805411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 請使用 Visual Studio 中的視覺化與模型工具，確定您的軟體系統符合使用者的需求。
@@ -82,10 +83,10 @@ ms.lasthandoff: 10/27/2017
   
 ||**使用者需求模型化**|**商務程序模型化**|**系統架構與設計**|**程式碼視覺化與探索**|**驗證**|  
 |------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|  
-|領域特定語言 (DSL) 圖表|是|是|是|||  
-|相依性圖表中，圖層驗證|||是|是|是|  
-|Code Map|||是|是|是|  
-|類別設計工具 (以程式碼為基礎)||||是||  
+|領域特定語言 (DSL) 圖表|[是]|是|[是]|||  
+|相依性圖表中，圖層驗證|||[是]|是|[是]|  
+|Code Map|||[是]|是|[是]|  
+|類別設計工具 (以程式碼為基礎)||||[是]||  
   
 若要繪製相依性圖表，您必須建立在現有的方案或新的模型專案。 這些圖表必須在模型專案中建立。
 相依性圖表上的項目位於模型專案中，但它們不會儲存在一般模型。 由程式碼建立的 Code Map 與 .NET 類別圖表則位在模型專案之外。  
@@ -404,7 +405,7 @@ ms.lasthandoff: 10/27/2017
   
 #### <a name="relationship-to-other-diagrams"></a>與其他圖表的關聯性  
   
-|**圖表**|**說明**|  
+|**圖表**|**描述**|  
 |-----------------|---------------------|  
 |相依性圖表|定義與類別相關的系統邏輯架構。<br /><br /> 使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 請參閱：<br /><br /> -   [從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)<br />-   [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)<br />-   [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)|  
 |Code Map|將現有程式碼中的組織與關聯性視覺化。<br /><br /> 若要識別類別、其關聯性及方法，請建立會顯示這些項目的 Code Map。<br /><br /> 請參閱：<br /><br /> -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)|  
@@ -486,7 +487,7 @@ ms.lasthandoff: 10/27/2017
 |------------------|---------------|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將程式碼視覺化](../modeling/visualize-code.md)   
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
  [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   

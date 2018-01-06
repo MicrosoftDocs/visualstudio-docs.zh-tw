@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: bf96406356799a0953ee34eb736266267fe74510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0bac9e45316a0739187bb5825a08091a437dcb93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文字範本中，`output` 指示詞用來定義轉換檔案的副檔名和編碼。  

@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91421fbfa5474c54b15109a1d0aec6de61369713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d868e69a1c7bbeeb7c25deb78acf90fe36af2e2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 方案逐步解說中的資料
   下列逐步解說示範如何處理 Microsoft Office Word 和 Microsoft Office Excel 文件層級自訂和 VSTO 增益集中的資料。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
  [逐步解說：變更伺服器上的活頁簿快取資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  示範如何在不啟動 Excel 的情況下，修改 Microsoft Office Excel 活頁簿中快取的資料集。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office UI 自訂逐步解說](../vsto/office-ui-customization-walkthroughs.md)   

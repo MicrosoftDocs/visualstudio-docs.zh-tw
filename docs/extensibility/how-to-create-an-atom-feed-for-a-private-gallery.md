@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 建立的 Atom 摘要私用組件庫
 您可以建立 Atom (RSS) 摘要到內部網路位置，其中包含延伸模組，並加入至摘要**擴充功能和更新**作為私用組件庫。 如需詳細資訊，請參閱[私用組件庫](../extensibility/private-galleries.md)。  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
   
  請注意兩個連結標記是指產生影像的資料夾中的螢幕擷取畫面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [私用組件庫](../extensibility/private-galleries.md)

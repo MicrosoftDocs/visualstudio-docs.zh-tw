@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d876fd9b536a0d16ae0aef4daed7f4c92c62f250
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e096d7c11e044f62f82fb8162aac5553e38b3a29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -41,7 +42,7 @@ IDebugManagedObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)、`IDebugManagedObject`介面會公開下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|傳回代表 managed 程式碼物件，而且可以從任何適當 managed 程式碼取得介面的介面。|  
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|此物件的值設為指定的 managed 程式碼之物件的值。|  
@@ -56,6 +57,6 @@ IDebugManagedObject : IDebugObject
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

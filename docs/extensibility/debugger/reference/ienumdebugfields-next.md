@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 079b1fc4a021804f8ed65a6890d5d13c12a8d93b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fc9776314264d1f1e6fec2b33dcf8aea2286f894
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 這個方法會傳回下一個項目的集合，從列舉型別。  
@@ -54,6 +55,6 @@ int Next(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`。 傳回`S_FALSE`如果無法傳回要求的元素數目少於; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

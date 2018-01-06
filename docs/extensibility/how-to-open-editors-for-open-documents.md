@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 開啟編輯器開啟的文件
 開啟文件視窗的專案之前，專案首先必須決定檔案是否已開啟另一個編輯器的文件視窗中。 可以在專案特定的編輯器中，請開啟檔案，或是其中一個標準的編輯器向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  如果尚未開啟文件，然後完成中的步驟[如何： 開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開啟並儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 開啟專案的特定編輯器](../extensibility/how-to-open-project-specific-editors.md)   
  [如何︰開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e92138f969189a33e1a5aad5a083c8ac57852dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d59de29078db46f716fe9d01a3f3fa076139ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 偵錯引擎 (DE) 可以傳送這個選擇性事件工作階段的偵錯管理員 (SDM) 當程式已停止。  

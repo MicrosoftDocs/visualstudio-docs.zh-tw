@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 *指示詞處理器*碼加入至工作*產生轉換類別*。 如果您呼叫*指示詞*從*文字範本*，文字範本中所撰寫的程式碼的其餘部分可以依賴指示詞提供的功能。  
@@ -635,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  在本節中，您會將自訂指示詞處理器的機碼加入至位於上述位置的登錄。  
   
 > [!CAUTION]
->  不當編輯登錄可能會造成系統嚴重受損。 變更登錄之前，務必先備份電腦上任何重要的資料。  
+>  不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。  
   
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>若要加入指示詞處理器的登錄機碼  
   
@@ -670,7 +671,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     |----------|----------|----------|  
     |(預設值)|REG_SZ|(值未設定)|  
     |類別|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |組件|REG_SZ|CustomDP.dll|  
+    |Assembly|REG_SZ|CustomDP.dll|  
   
 6.  重新啟動 Visual Studio。  
   

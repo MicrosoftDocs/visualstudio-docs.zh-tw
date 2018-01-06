@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d654669ad35ce77d840f4852ceb7a6605a8221be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-modeling"></a>專案模型
 您的專案實作標準專案物件，提供自動化的下一個步驟：<xref:EnvDTE.Projects>和`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>物件; 並且您的實作唯一剩餘的物件。 Dteinternal.h 檔案中，會定義這些標準的物件。 BscPrj 範例中提供的標準物件實作。 您也可以為模型使用這些類別，建立您自己獨立的並排的標準專案物件與從其他專案類型的專案物件。  
@@ -56,7 +57,7 @@ Projects
   
  如果您沒有實作`Project`物件時，環境仍會傳回泛型`Project`物件，其中包含專案的名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:EnvDTE.Projects>   
  <xref:EnvDTE.ProjectItem>   
  <xref:EnvDTE.ProjectItems>

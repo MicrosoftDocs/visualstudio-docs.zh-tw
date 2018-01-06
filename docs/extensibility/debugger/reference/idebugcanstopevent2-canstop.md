@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9008410831d3c2c7b6e93d4f35a1d08914a5336
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5fe4c0ab03e6f0683fff3d43658fde5bc90bf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 要在目前的程式碼位置停止或繼續執行，只會告知偵錯引擎 (DE)。  
@@ -49,7 +50,7 @@ int CanStop (
   
  如果 DE 停止時，它會傳送描述停止原因的事件。 通常有兩個事件，傳送時，由使用者或訊號中斷[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)介面，以及所代表的中斷點事件[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

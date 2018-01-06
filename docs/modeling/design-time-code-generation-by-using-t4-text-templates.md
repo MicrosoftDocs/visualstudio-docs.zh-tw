@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 97cf47eafc99abefeebce0f69ac2840617fb35e2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9f510759d878792a31913fef8596ae6829cf74f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓這些變更的程式碼，它們會根據從資料產生*模型*。 模型是檔案或資料庫包含您的應用程式需求重要資訊。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/22/2017
   
 5.  儲存檔案。  
   
-     您可能會看到**安全性警告**會要求您確認您想要執行此範本的訊息方塊。 按一下 [確定]。  
+     您可能會看到**安全性警告**會要求您確認您想要執行此範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。  
   
 6.  在**方案總管 中**，展開範本檔節點，而您會發現副檔名的檔案**.txt**。 此檔案包含從範本產生的文字。  
   
@@ -373,5 +374,5 @@ Warning("A warning message");
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 使用 Visual Studio 中的即時、 以專案為基礎的程式碼分析器，應用程式開發介面作者可以送出網域專屬的程式碼分析，做為其 NuGet 封裝的一部分。  這些分析器由.NET 編譯器平台 (code-named"Roslyn")，因為它們會產生您的程式碼中的警告，當您輸入您已完成 （沒有其他等待建置您的程式碼，找出問題） 的行之前。  分析器可以也介面透過立即讓您清理您的程式碼的 Visual Studio 燈泡提示的自動程式碼修正  

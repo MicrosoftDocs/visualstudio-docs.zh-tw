@@ -20,11 +20,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1033f33835dfdeefbb4791e356ca50a577b789ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後將它們產生關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後您將建立的專案範本，可用來建立新的專案，其中包含網站欄專案項目。  
@@ -723,7 +724,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  **網站 URL**屬性預設是空的網站資料行專案範本並不提供精靈來建立專案時，收集此值。 若要了解如何加入精靈，這個值會要求開發人員，並接著在新的專案中設定這個屬性，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-3.  選擇**F5**索引鍵。  
+3.  選擇 **F5** 鍵。  
   
      封裝和部署到 SharePoint 網站中所指定的站台的資料行**網站 URL**專案的屬性。 網頁瀏覽器會開啟此站台的預設頁面。  
   
@@ -736,7 +737,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在站台的資料行清單中，確認**自訂資料行**群組包含資料行名為**SiteColumnTest**。  
   
-7.  關閉 web 瀏覽器。  
+7.  關閉網頁瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
  完成測試專案之後，請從 Visual Studio 的實驗執行個體中移除專案範本。  
@@ -758,7 +759,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>後續步驟  
  完成此逐步解說之後，精靈可以加入的專案範本。 當使用者建立網站欄專案時，精靈會要求使用者輸入要用於偵錯，以及是否沙箱，新方案的網站 URL 和精靈設定新的專案，這項資訊。 精靈也會收集的資料行 （例如基底類型和要列出站台的資料行組件庫中的資料行中的群組） 的相關資訊，並將這項資訊加入至新的專案中的 Elements.xml 檔案。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

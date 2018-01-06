@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f04251ea8141d07a52499beae46b2881814eec9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17a629c2d93bb5e91fb301d4da9dca825e5b8917
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-parameters"></a>自訂參數
 啟動精靈之後自訂參數可控制精靈 的作業。 關聯的.vsz 檔案提供整合式的開發環境 (IDE) 來封裝並啟動精靈時以字串的陣列傳遞給精靈的使用者定義參數的陣列。 然後精靈會剖析字串的陣列，並使用的資訊來控制精靈的實際操作。 如此一來，精靈可以自訂功能，根據.vsz 檔案內容而定。  
@@ -44,7 +45,7 @@ Param="PROJECT_TYPE = CSPROJ"
   
  如需詳細資訊，請參閱[精靈 (。Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  [內容參數](../../extensibility/internals/context-parameters.md)   
  [精靈](../../extensibility/internals/wizards.md)   

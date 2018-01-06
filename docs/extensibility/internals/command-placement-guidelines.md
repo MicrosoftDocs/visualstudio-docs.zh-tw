@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e74bda24459bedeef007b451c7fabe3922e7ab37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c79d58530a7f6afc5779fab1bc0b5a1626cb595
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-placement-guidelines"></a>命令位置指導方針
 在 Visual Studio 整合式的開發環境 (IDE) 中定位命令的最佳作法是根據命令集的大小而有所不同。 定義命令和定位根據.vsct 檔案中的資訊。  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
 -   在`CommandPlacements`區段中，填入指定的功能表項目或群組應在彼此相鄰。 這有助於提高可讀性，並使`Priority`排名更輕鬆地判斷。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

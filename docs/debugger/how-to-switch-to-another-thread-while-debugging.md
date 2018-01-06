@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何： 在 Visual Studio 中偵錯時切換至另一個執行緒
 當您偵錯多執行緒應用程式時，您可以使用數種方法的任何一個可從您已使用的其他執行緒的執行緒切換。
 
 > [!NOTE]
-> 如果您想要控制執行執行緒的順序，您需要[凍結和解除凍結執行緒](/debugger/get-started-debugging-multithreaded-apps.md)。
+> 如果您想要控制執行執行緒的順序，您需要[凍結和解除凍結執行緒](../debugger/get-started-debugging-multithreaded-apps.md)。
 
 當您檢查程式碼編輯器和不同的多執行緒偵錯視窗中的執行緒時，黃色箭號表示目前的執行緒。 尾端彎曲的綠色箭號表示非目前執行緒的目前偵錯工具內容。
   
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  在清單中，按一下您要切換至哪個執行緒。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)

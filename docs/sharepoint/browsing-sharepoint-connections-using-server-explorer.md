@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>使用伺服器總管瀏覽 SharePoint 連線
   您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 網站元件，例如清單定義和內容類型，會出現在節點名為**SharePoint 連接**的樹狀檢視中**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視**，**伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。  
@@ -50,11 +51,11 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：新增或移除 SharePoint 連線](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|描述會新增至新的 SharePoint 網站需要的步驟**SharePoint 連接**節點**伺服器總管**。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

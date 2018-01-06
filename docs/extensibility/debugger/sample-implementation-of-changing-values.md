@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3b5fb298d6efdc68553b1585ae290d9414b87a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7443f12c85b8c8231a82e95eb9a459eb8f5fe625
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 > [!IMPORTANT]
@@ -425,6 +426,6 @@ HRESULT FieldSetValue(
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [變更本機值](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)

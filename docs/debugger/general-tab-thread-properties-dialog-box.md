@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -15,18 +15,19 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2af344735b88fb7091ec438638c948a7f7f2ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8d53c373c58e31f2a2719df8afa6dd0da9cd3c6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 若要進一步了解特定的執行緒中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開訊息。 選取的任何執行緒節點在樹狀目錄中，然後選擇 **屬性**從**檢視**功能表。  
   
  **執行緒屬性**對話方塊包含一個窗格，**一般** 索引標籤。可用的設定如下：  
   
-|項目|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**模組名稱**|模組的名稱。|  
 |**執行緒 ID**|此執行緒的唯一識別碼。 請注意，執行緒 ID 編號會被重複使用。它們只會針對該執行緒的存留期間識別的執行緒。|  

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae46cd5e90b4cdd23b0c7fafa147c43805974283
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e94e0606256eda3fb8cdcade90979342d078e125
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 擷取從指定的處理序中執行程式的清單。  
@@ -49,7 +50,7 @@ int GetProviderProcessData(
  `Flags`  
  [in]從旗標的組合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。 此呼叫一般會在下列旗標：  
   
-|旗標|說明|  
+|旗標|描述|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|呼叫端遠端電腦上執行。|  
 |`PFLAG_DEBUGGEE`|呼叫端目前所偵錯 （封送處理的其他資訊將會傳回每個節點）。|  
@@ -74,7 +75,7 @@ int GetProviderProcessData(
 ## <a name="remarks"></a>備註  
  這個方法通常會呼叫處理程序來取得該處理序中執行的程式清單。 傳回的資訊是一份[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

@@ -25,11 +25,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11cf0d01c14506c3328c5d9e24456090360d4d58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 936832d0db6f71d51d9a415b18e788db2a1e308b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-association-between-entities"></a>建立實體之間的關聯
   您可以定義您藉由建立關聯的商務資料連線 (BDC) 模型中實體之間的關聯性。 Visual Studio 會產生模型的取用者提供每個關聯的相關資訊的方法。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)  
   

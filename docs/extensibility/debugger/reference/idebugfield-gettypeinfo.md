@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11b04ce148fbfe8129f62c21da0a0b015ed6e8f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f1ec3adf1f71d5d7f7e916b261555ca8aeb9d31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 這個方法會取得與類型無關的符號或類型資訊。  
@@ -47,7 +48,7 @@ int GetTypeInfo(
 ## <a name="remarks"></a>備註  
  例如，與類型無關資訊會包括 AppDomain、 模組，以及包含符號的類別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

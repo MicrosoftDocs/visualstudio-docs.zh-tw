@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97b97b6a79ac93dd614cf6557d338d5f0398192e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>取得字型和色彩資訊文字的顏色標示
 呈現或彩色的文字顯示在使用者介面 (UI) 項目中的程序取決於專案、 技術和開發人員的喜好設定的類型。 **字型和色彩**屬性頁儲存設定。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  取得字型和色彩資訊之後剖析文字，以顯示以識別需要顏色標示的項目，然後使用適當的字型和色彩 視窗中顯示文字。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  [使用字型和文字](/dotnet/framework/winforms/advanced/using-fonts-and-text)   

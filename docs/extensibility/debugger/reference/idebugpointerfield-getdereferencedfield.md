@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35081931fcb87c73ca6643002a09b43c3ab674b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f881a7ad6f11b4c916dad8af184d84a434f3e510
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 這個方法會傳回這個指標物件指向的物件類型。  
@@ -47,6 +48,6 @@ int GetDereferencedField(
 ## <a name="remarks"></a>備註  
  例如，如果[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)物件指向一個整數， [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)這個方法所傳回的類型描述該整數類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

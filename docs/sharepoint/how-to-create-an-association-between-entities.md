@@ -27,11 +27,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c8643a87a6226e03e8726910a459168e8b4c5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3bfc9f37fa440b57ad78a3df9640888e4f2a3d73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：建立實體之間的關聯
   您可以定義您藉由建立關聯的商務資料連線 (BDC) 模型中實體之間的關聯性。 Visual Studio 會產生模型的取用者提供每個關聯的相關資訊的方法。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
      關聯的導覽器方法的範例，請參閱[建立實體之間關聯](../sharepoint/creating-an-association-between-entities.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   

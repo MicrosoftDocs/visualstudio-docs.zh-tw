@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9d88f78d9f3942eb4744168c874a37db26dd144
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1df57ec1afbf378ec2b0f5d0e1dc084b5e52782
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 取得此模組的相關資訊。  
@@ -54,7 +55,7 @@ int GetInfo(
 ## <a name="remarks"></a>備註  
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構包含的模組中所顯示的名稱**模組**視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

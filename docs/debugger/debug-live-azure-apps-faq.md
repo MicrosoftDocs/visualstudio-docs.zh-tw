@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c62269cacff6fc456d99219a5317de97c0a0ee0
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: fd2ca2bf48c50b0ea5b44654d0711ba162313f04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Asked Questions for Visual Studio 偵錯快照集
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/17/2017
 1. 瀏覽至您的應用程式服務 Kudu 網站 (也就是 yourappservice。**scm**。 名稱是.azurewebsites.net) 並瀏覽至**站台擴充程式**。
 1. 按一下 X 快照偵錯工具的網站擴充功能上將它移除。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [偵錯即時使用快照集偵錯工具的 ASP.NET 應用程式](../debugger/debug-live-azure-applications.md)  

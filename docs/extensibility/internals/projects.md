@@ -18,16 +18,17 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects"></a>專案
 在 Visual Studio 專案是容器，開發人員用來組織原始程式碼檔和其他資源，會出現在**方案總管 中**。 一般而言，專案是檔案 （例如，C# 專案.csproj 檔案），儲存原始程式檔和資源，例如點陣圖檔案的參考。 專案可讓您組織、 建置、 偵錯及部署原始程式碼，請參考 Web 服務、 資料庫和其他資源。 Vspackage 可以擴充 Visual Studio 專案系統的三個層面：*專案類型*，*專案子類型*，和*自訂工具*。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [專案類型](../../extensibility/internals/project-types.md)  
  *專案類型*加入新種類的專案中，例如程式設計語言的支援。 例如，Visual Studio 支援每種語言有它自己的專案類型，及 IronPython 整合範例包括 IronPython 語言的專案類型。 您必須建立 C# 或 Visual Basic 自訂如何項目會建置、 偵錯、 部署，並顯示在以外之語言的專案類型**方案總管 中**。 如需詳細資訊，請參閱[專案類型](../../extensibility/internals/project-types.md)。  
   

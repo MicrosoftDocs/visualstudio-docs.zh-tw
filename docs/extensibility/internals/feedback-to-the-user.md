@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="feedback-to-the-user"></a>意見反應給使用者
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 中，有關可用的功能根據使用者的目前選取範圍和全域選取範圍內容的視覺化回饋。 下表列出可在不同的選取項目內容中的功能。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用中階層視窗中，通常是**方案總管 中**，和其標題列更新，以反映目前的內容和即時線上**專案**功能表命令現在會套用至使用中的 Web應用程式專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [選擇內容物件](../../extensibility/internals/selection-context-objects.md)   
  [階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)

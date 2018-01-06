@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b913f0eb4f3dfa4e1ff8fa5bf6719a8f6fed4e3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9c7bcba4207e5caa14b9db27f2d9b243376c6d01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 這個介面會列舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構。  
@@ -38,7 +39,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugReferenceInfo2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|擷取指定的數目的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列舉順序中的結構。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|略過指定的數目的[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)列舉順序中的結構。|  
@@ -56,7 +57,7 @@ IEnumDebugReferenceInfo2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   

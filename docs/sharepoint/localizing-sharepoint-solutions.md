@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>當地語系化 SharePoint 方案
   準備您的應用程式，讓它們可以用於全球的過程稱為當地語系化。 當地語系化轉譯特定的文化特性的資源。 如需詳細資訊，請參閱[全球化和當地語系化應用程式](/visualstudio/ide/globalizing-and-localizing-applications)。 本主題提供有關如何當地語系化 SharePoint 方案的概觀。  
@@ -91,7 +92,7 @@ $Resources:String ID
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
- 例如：  
+ 例如:   
   
 ```  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
@@ -114,11 +115,11 @@ $Resources:String ID
 ### <a name="localizing-code"></a>當地語系化程式碼  
  除了當地語系化功能字串和[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]標記中，您也必須將訊息字串和出現在您方案的程式碼中的錯誤字串當地語系化。 當地語系化資訊和附屬組件中所包含的錯誤訊息。 附屬組件包含的使用者都看得到，例如字串[!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]文字和輸出訊息類似的例外狀況。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用標準.NET Framework 的中樞和支點模型。 集線器或程式主要組件，包含預設語言資源。 支點或附屬組件，包含語言特定資源。 如需詳細資訊，請參閱[封裝和部署資源](http://go.microsoft.com/fwlink/?LinkId=179280)。 從資源 (.resx) 檔編譯附屬組件。 當您將語言特定資源檔加入您的專案和方案套件，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將資源檔編譯至附屬組件名為*專案名稱*。.resources.dll。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用標準.NET Framework 的中樞和支點模型。 集線器或程式主要組件，包含預設語言資源。 支點或附屬組件，包含語言特定資源。 如需詳細資訊，請參閱[封裝和部署資源](http://go.microsoft.com/fwlink/?LinkId=179280)。 從資源 (.resx) 檔編譯附屬組件。 當您將語言特定資源檔加入您的專案和方案套件，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將資源檔編譯至附屬組件名為*專案名稱*.resources.dll。  
   
  如同 ASPX 標記當地語系化 SharePoint 應用程式程式碼，將個別的資源檔專案項目加入至您的專案。一個用於預設語言，另一個用於每個當地語系化語言。 不過，如前所述，如果您已經有資源檔來當地語系化 ASPX 標記，您可以重複使用它們的當地語系化程式碼。 如果您需要建立資源檔，提供的預設語言資源檔案副檔名為.resx 附加您選擇的名稱。 名稱相同的名稱加上的特定語言的文化特性的當地語系化的資源檔[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 每個資源檔的 [建置動作] 屬性設為要在附屬資源組件建立內嵌資源。  
   
- 若要建立的附屬組件，建置專案，然後再將檔案做為其他組件透過**進階** 索引標籤**封裝設計工具**。 當加入組件，前面加上文化特性[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]資料夾的位置路徑，例如 DE-DE\\*專案項目名稱*。.resources.dll。 這可讓封裝包含具有相同名稱的檔案。  
+ 若要建立的附屬組件，建置專案，然後再將檔案做為其他組件透過**進階** 索引標籤**封裝設計工具**。 當加入組件，前面加上文化特性[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]資料夾的位置路徑，例如 DE-DE\\*專案項目名稱*.resources.dll。 這可讓封裝包含具有相同名稱的檔案。  
   
  在您的程式碼取代硬式編碼字串呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>方法使用下列語法：  
   
@@ -133,7 +134,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
   
  在衍生類別中，參考的字串識別碼從資源檔和 ResourceManager 来取得之物件的當地語系化的值的字串 id。 此值傳回到屬性編輯器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 當地語系化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   
  [如何： 當地語系化程式碼](../sharepoint/how-to-localize-code.md)   

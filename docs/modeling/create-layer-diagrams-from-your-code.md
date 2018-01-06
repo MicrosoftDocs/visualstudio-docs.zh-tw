@@ -16,11 +16,12 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從程式碼中建立相依性圖表
 若要以視覺化方式檢視您的軟體系統高層級的邏輯架構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持一致與這個設計中，以驗證程式碼相依性圖表。 您可以建立適用於 Visual C#.NET 和 Visual Basic.NET 專案的相依性圖表。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/27/2017
   
 -   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
  [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
  [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)   

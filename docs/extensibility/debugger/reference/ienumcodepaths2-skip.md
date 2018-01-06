@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2dc00ec727be054ff05b08a968bdb52f8b33ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: afc6fa8637a3ff91639617f64739684a72867046
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 略過指定的項目數目。  
@@ -47,5 +48,5 @@ int Skip(
 ## <a name="remarks"></a>備註  
  如果`celt`指定的值大於數的其餘項目，列舉型別設定為結束和`S_FALSE`傳回。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

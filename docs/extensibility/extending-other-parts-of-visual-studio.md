@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a8617c4d6c5ac4a224a97f6a6311a5526151599
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bce4fe32dc53904dec901736d7d02e3f7ac21b69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他組件
 有許多您可以擴充的 Visual Studio 使用者介面的多個部分。 這裡我們會示範幾。  

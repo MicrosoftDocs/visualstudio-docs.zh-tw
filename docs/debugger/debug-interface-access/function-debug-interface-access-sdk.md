@@ -14,11 +14,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39d3871fcfbd3702e2ad198f2061be41dc51ac18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5989a2c03c5a6e3f829c0183c797204e3311f5d2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="function-debug-interface-access-sdk"></a>函式 (偵錯介面存取 SDK)
 每個函式由`SymTagFunction`符號。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|`Data type`|說明|  
+|屬性|`Data type`|描述|  
 |--------------|-----------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|其中一個值的[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)，如果函式成員函式。|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|時差部分的位置。如需詳細資訊，請參閱[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE`如果函式包含[setjmp](/cpp/c-runtime-library/reference/setjmp)呼叫 （只在 DIA SDK V8.0 或更新版本）。|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`如果函式傳回插斷 （只在 DIA SDK V8.0 或更新版本）。|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE`如果函式都是虛擬的簡介。|  
-|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`如果函式已標示為使用其中一個[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp.md)屬性。|  
+|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`如果函式已標示為使用其中一個[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp)屬性。|  
 |[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE`如果函式標示為[naked](/cpp/cpp/naked-cpp)屬性 （只在 DIA SDK V8.0 或更新版本）。|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`如果函式是靜態的 （只在 DIA SDK V8.0 或更新版本）。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|函式程式碼，從位置開始的位元組數目。|  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|如果虛擬函式，然後虛擬函式表中的位移。|  
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果函式標示為 volatile。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   

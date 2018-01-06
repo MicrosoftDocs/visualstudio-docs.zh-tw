@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e94564eaaf10765e68e35fa4f573efae7c74dc7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e07ab129cb49ffba892ba3b681e6239d4477256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 取得為一系列的連續的位元組所指向的值。  
@@ -62,6 +63,6 @@ int GetBytes(
 ## <a name="remarks"></a>備註  
  如果這個方法會使用指標所表示的這[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)指向基本型別或基本型別 （也就是可以由簡單的一連串的位元組陣列） 的簡單陣列。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

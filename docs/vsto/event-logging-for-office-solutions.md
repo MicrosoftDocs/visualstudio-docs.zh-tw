@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c79049765d2e80f7cbf5c8588b637f8ae46af6ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55864eda9d62be5988d1d3ab7262c4d34c0662f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。  
@@ -98,9 +99,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  在 [變數值]  方塊中，輸入 **1**。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  
   

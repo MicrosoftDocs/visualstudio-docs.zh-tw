@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 018f843e9e62430c780df1d3d15f06634a31908d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa6c15c59a025f4b031765b620083b7b3369c7c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 取得參考的最具衍生性參考。 保留供未來使用。  
@@ -47,5 +48,5 @@ int GetDerivedMostReference(
 ## <a name="remarks"></a>備註  
  例如，如果這個屬性描述的物件，實作`ClassRoot`但這是實際的具現化`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件代表參考`ClassDerived`物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

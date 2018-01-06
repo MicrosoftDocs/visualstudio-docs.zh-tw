@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5a567b906be7e295a8ea1c32f9fdbe19320bd5f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5dfe24252ce2ce51ff86fa680d94964b86d09365
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 建立陣列物件。 這個陣列可包含其中一個基本類型，或物件執行個體的值。  
@@ -72,5 +73,5 @@ int CreateArrayObject(
 ## <a name="remarks"></a>備註  
  呼叫這個方法來建立物件，表示由函式的陣列參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

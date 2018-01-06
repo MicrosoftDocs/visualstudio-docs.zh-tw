@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7c5a68a9a199a8734d33669a68ee2e770bd449e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e32049d2c3b6b210ed1627f133ceb0ace4063abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 擷取列舉順序中的自訂屬性指定的數目。  
@@ -54,6 +55,6 @@ int Next(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`。 傳回`S_FALSE`如果無法傳回要求的元素數目少於; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

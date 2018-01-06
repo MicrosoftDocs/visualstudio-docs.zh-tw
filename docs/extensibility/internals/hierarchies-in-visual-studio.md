@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a651267ed279fa5efaf14efb4f1f866794c5cc3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4b0bc2e7c60a4b474f54fd32fd522712326c157
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-in-visual-studio"></a>在 Visual Studio 中的階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示專案作為*階層*。 在 IDE 中，階層是以樹狀結構的節點，其中每個節點都有一組相關聯的屬性。 A*專案階層架構*是保留的專案項目、 項目關聯性和的項目相關聯的屬性和命令的容器。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  當使用者在編輯器中開啟項目時，該項目會控制在階層會選取，而且會變成使用中的階層。 選取的階層會決定可用的項目上採取動作的命令的集合。 追蹤使用者焦點放在這種方式可讓以反映使用者的目前內容的階層。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案類型](../../extensibility/internals/project-types.md)   
  [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [VSSDK 範例](http://aka.ms/vs2015sdksamples)

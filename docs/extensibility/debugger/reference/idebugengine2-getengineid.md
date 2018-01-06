@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 008c3cb2f2c4f8e12eedbae347515099524da2c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98331e1d81b310d5b3a8da94d9ca78ea48205f3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得偵錯引擎 (DE) 的 GUID。  
@@ -64,5 +65,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine){
 }    
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

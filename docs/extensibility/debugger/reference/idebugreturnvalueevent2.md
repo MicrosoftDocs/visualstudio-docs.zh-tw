@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64fe7f3e673df9f78b81de73561e798b1415f15c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0ad57acd6218158b1dd10b0f18e421bcd397a2d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 之後逐步執行登出或進入函式。  
@@ -38,7 +39,7 @@ IDebugReturnValueEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugReturnValueEvent2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|取得上跳離函式傳回的值。|  
   
@@ -52,6 +53,6 @@ IDebugReturnValueEvent2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e6e0864baa39a8865701f28243c516ace3e5882
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cbd8928b8bcf3e782533f068aaaee8085e331f9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以程式設計方式在活頁簿中加入新的工作表
   您可以用程式設計方式建立工作表，然後將工作表加入活頁簿的工作表集合。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
      新的工作表是原生的 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件，不是主項目。 您也可以從原生的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 物件產生 <xref:Microsoft.Office.Interop.Excel.Worksheet> 主項目。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [如何： 以程式設計方式從活頁簿刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   

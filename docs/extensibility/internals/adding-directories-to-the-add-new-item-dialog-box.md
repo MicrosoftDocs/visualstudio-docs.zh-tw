@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591cc9ef1693f2a910eb42a2be3ff5db02ed5c8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 878c06e1965b5a96510df0e1b28175972546e227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>新增目錄，以加入新項目對話方塊
 下列程式碼範例示範如何註冊一組新的目錄**加入新項目** 對話方塊。 目錄**加入新項目**對話方塊會針對每個專案不同。 因此，專案子機碼下，在中找到登錄目錄\<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
@@ -56,7 +57,7 @@ NoRemove Projects
   
  您也可以擴充現有的專案，以程式設計方式編寫專案子類型。 與專案子類型，您可以擴充的專案而不需要撰寫新的專案類型。 如需專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [將目錄新增至新增專案對話方塊](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

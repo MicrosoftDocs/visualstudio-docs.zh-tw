@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0ae7190d0b55dec593e8d9f7c20542d5a7d5bc6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 64a32115aa7810352148a61e3dd0faeebb0ee9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>如何：將現有的 BDC 模型檔案加入至 SharePoint 專案
   您可以自訂封裝，及使用 Visual Studio 將模型檔案 (.bdcm) 新增至任何 SharePoint 伺服器陣列的專案重新部署商務資料連線 (BDC) 模型。 如需詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
      **商務資料連接模型**項目加入至專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
  [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   

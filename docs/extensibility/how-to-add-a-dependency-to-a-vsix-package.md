@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f6f1e4739922a2d73999b36c0dc66e6069a6d6b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: vssdk
+ms.openlocfilehash: 27fbf8c079ca1270074d7cae683ef6f8127e2a5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 將相依性加入至 VSIX 封裝
 
@@ -50,6 +51,6 @@ ms.lasthandoff: 11/29/2017
 VSIXInstaller 會偵測到舊版的 Visual Studio，並通知使用者需要的更新版的更新。
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
  [VSIX 擴充功能的結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [VSIX 套件的剖析](../extensibility/anatomy-of-a-vsix-package.md)[準備 Windows Installer 部署的擴充功能](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

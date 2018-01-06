@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 532fd69bea467403047a7151584b7cf918ad602d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: acac1aad651817ba351604b67af7f0440c82dabb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。  
@@ -562,7 +563,7 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
  [如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [自訂刪除行為](../modeling/customizing-deletion-behavior.md)   

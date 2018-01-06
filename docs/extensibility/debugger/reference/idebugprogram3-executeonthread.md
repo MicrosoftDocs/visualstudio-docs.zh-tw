@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b75ee8c7b53e751f322ba41bc3f93e2542e192ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 649b16c1b57b2f66772c2117b776e6b79ad862be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 執行偵錯工具的程式。 執行緒會傳回給哪一個執行緒執行程式時，正在檢視使用者的偵錯工具資訊。  
@@ -53,6 +54,6 @@ int ExecuteOnThread(
   
  執行緒傳遞給`ExecuteOnThread`決定哪個步驟取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 執行緒的資訊之後，您只需要取消使用中執行緒上的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

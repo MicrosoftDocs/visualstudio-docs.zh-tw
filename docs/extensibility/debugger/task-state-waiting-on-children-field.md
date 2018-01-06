@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4ac804160bcbdebfd951c4b281def7eb25265b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1ae1216e8d954d3dde9a8693c3b6ad6fd3e16e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN 欄位
 工作已完成執行其委派，而且在暗中等候附加的子工作完成。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位包含此值，<xref:System.Threading.Tasks.Task.Status%2A>屬性會傳回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

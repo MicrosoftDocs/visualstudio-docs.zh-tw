@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75e0b83b81c0d0d80b29c6b9ab32826402fcec99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 這個介面通知程序和程式建立和解構的特定連接埠上接聽的程式 （通常是工作階段偵錯管理員 [SDM] 或偵錯引擎）。 這項資訊可以用來呈現的程序和程式的連接埠上執行的即時檢視。  
@@ -38,7 +39,7 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPortEvents2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|傳送說明建立和解構的處理序和程式的連接埠上的事件。|  
   
@@ -54,6 +55,6 @@ IDebugPortEvents2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

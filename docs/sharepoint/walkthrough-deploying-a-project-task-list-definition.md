@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a9f981db2b48c550e1312acf4f387a495a0386e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16cccaf9a8639ef2d7213140121b087cd15e72d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-deploying-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
   本逐步解說將示範如何使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 建立、自訂、偵錯和部署 SharePoint 清單以追蹤專案工作。  
@@ -194,7 +195,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [SharePoint Server 2010 的 Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

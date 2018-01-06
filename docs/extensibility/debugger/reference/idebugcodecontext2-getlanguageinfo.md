@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2b2f6f49b7ee8ebdf356a25bc2531aa2b8b9cf8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6bb29ddf1ebbaafffc316562604d3e7b6cba8ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 取得這個程式碼內容的語言資訊。  
@@ -52,5 +53,5 @@ int GetLanguageInfo(
 ## <a name="remarks"></a>備註  
  至少其中一個參數必須傳回非 null 值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

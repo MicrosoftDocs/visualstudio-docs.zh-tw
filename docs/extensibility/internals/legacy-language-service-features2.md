@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c91beed050f665a73622eb929fbafc482a15a78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92c33d46f7bc58de1bee0b6c782165a6c7cd8d5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 下列主題列出一些您可以提供的舊版語言服務功能。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 儘速。 這會提升語言服務的效能，並可讓您充分利用新編輯器功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
  說明如何實作語法著色。  
   

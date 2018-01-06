@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>使用 [開啟] 命令顯示檔案
 專案可以要求顯示 IDE**開啟** 對話方塊。 此要求會提示使用者開啟的標準編輯器中選取的檔案。 下列步驟說明此程序。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  當使用者選取的項目**開啟**對話方塊中，然後在 IDE 開啟文件，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。 如需詳細資訊，請參閱[如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開啟並儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
  [使用 開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
  [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)

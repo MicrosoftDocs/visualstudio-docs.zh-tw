@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90313b9cf47ab358be0341248ce134f0fabe45ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea0297b32d89b274d8c19250b03256e050797f06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 此介面代表列舉型別。  
@@ -38,7 +39,7 @@ IDebugEnumField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>依照 VTable 順序的方法  
  除了上`IDebugField`和`IDebugContainerField`介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述這個列舉類型的名稱。|  
 |[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|傳回與指定的值相關聯的列舉常數的名稱。|  
@@ -55,7 +56,7 @@ IDebugEnumField : IDebugContainerField
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

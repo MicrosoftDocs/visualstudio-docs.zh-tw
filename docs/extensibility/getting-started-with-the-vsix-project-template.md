@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f29ebabbb40e747b2b321fcb1b3b5598284a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c87fd485a0d682dc21de21dfe32b83cfc29b520a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 若要建立擴充功能或封裝部署的現有擴充功能，您可以使用 VSIX 專案範本。 此 VSIX 專案範本具有 Visual Basic 和 Visual C# 版本中，而且已安裝 Visual Studio SDK 的一部分。  

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e1eb67855ae1e13970ad5eab2eba8dd6308abbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a262d2f4aa90bc9ae638fb6cfbfe8af605f2446a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 建立容器的欄位的列舉值。  
@@ -67,7 +68,7 @@ int EnumFields(
 ## <a name="remarks"></a>備註  
  `dwKindFilter`， `dwModifiersFilter`，和`pszNameFilter`參數可以結合，例如，若要選取所有公用虛擬方法名為"MyMethod"。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   

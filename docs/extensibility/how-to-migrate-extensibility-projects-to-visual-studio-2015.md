@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 將擴充性專案移轉至 Visual Studio 2015
 以下是如何升級您的擴充功能。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  從專案移除 VS SDK 的參考組件，來選取它們，以滑鼠右鍵按一下和**移除**。  
   
-3.  加入 NuGet 版本的 VS SDK 的參考組件。  在**方案總管參考**節點，開啟**管理 NuGet 封裝...**對話方塊。  如果您想要深入了解此對話方塊，請參閱[封裝管理員 UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI)。 VS SDK 的參考組件上發佈[nuget.org](http://www.nuget.org)由[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
+3.  加入 NuGet 版本的 VS SDK 的參考組件。  在**方案總管參考**節點，開啟**管理 NuGet 封裝...**對話方塊。  如果您想要深入了解此對話方塊，請參閱[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 的參考組件上發佈[nuget.org](http://www.nuget.org)由[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
 4.  使用**nuget.org**做為您**套件來源**，搜尋符合所需的參考組件的 NuGet 封裝名稱 (例如： Microsoft.VisualStudio.Shell.14.0) 並將它安裝在您專案。  NuGet 可以新增多個參考組件，以滿足初始的組件相依性。  
   

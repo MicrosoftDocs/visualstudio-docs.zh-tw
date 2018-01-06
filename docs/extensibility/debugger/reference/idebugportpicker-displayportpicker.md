@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf6dee7f9c79e82d9e952e481c638c870308e890
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f3dc923bc9a835581439b6de9307de452f24801
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 顯示指定的對話方塊，可讓使用者選取的連接埠。  
@@ -50,5 +51,5 @@ public int DisplayPortPicker(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回值為`S_FALSE`(或傳回值的`S_OK`與`BSTR`設`NULL`) 表示使用者已按一下**取消**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

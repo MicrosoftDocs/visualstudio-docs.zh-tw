@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案的連接設定的應用程式
 使用原始檔控制外掛程式 API 1.2 建置可以跨多個專案或多個連線內容中執行相同的原始檔控制作業批次作業使用原始檔控制外掛程式。 若要刪除備援，每個專案的使用者經驗的對話方塊可用批次。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
   
  `SCCBeginBatch`函數啟動的原始檔控制作業群組。 `SccEndBatch`關閉群組。 可能不是巢狀群組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

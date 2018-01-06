@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b256be2c354f680fe4ce4d898a3d60107956d80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 023611e20f8df50a3d07086d6600b1622f1b69be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 決定是否可以終止處理程序。  
@@ -44,6 +45,6 @@ HRESULT CanTerminateProcess(
 ## <a name="return-value"></a>傳回值  
  傳回`S_OK`可以終止處理程序; 否則傳回`S_FALSE`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

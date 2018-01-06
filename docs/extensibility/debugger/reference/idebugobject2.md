@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6072d88bf6e065c7f9f72b5e6d1ffab0dcc46d03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40b52cf5c36db3bf4fa07004df9a171e77c2520e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -41,7 +42,7 @@ IDebugObject2 : IDebugObject
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了上[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面，`IDebugObject2`實作下列介面：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|取得變數的欄位 （如果有的話），可能會支援這個物件所表示的屬性。|  
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|取得 managed 程式碼物件，代表此物件的值。|  
@@ -61,7 +62,7 @@ IDebugObject2 : IDebugObject
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af86f2b8daeffeb700b619c4ba0d9cbb00700dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>用於擴充偵錯工具藍圖
 這份文件提供用於擴充的指南和參考資訊[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]偵錯工具與[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/31/2017
   
      [範例](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

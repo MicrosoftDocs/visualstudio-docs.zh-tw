@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a679fcd597251e5e76a1d3457b5cfe54e5caecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b7184b722d0331efbfcb83e2d63563ea1ae13acc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 此介面代表來源檔案的文件中的位置。  
@@ -38,7 +39,7 @@ IDebugDocumentContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocumentContext2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|取得包含此文件內容的文件。|  
 |[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|取得包含此文件內容的文件可顯示名稱。|  
@@ -56,7 +57,7 @@ IDebugDocumentContext2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)   

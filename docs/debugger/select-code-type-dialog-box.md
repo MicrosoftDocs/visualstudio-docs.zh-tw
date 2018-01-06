@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.selectengines
 dev_langs:
 - CSharp
@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 421c8a206091bf69e20a814a693f1b88bbb0d843
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d90d0bd4b310334e11a6ff394384c7e9003d3c3e
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 若要開啟此對話方塊中，開啟**附加至處理序**對話方塊，然後按一下**選取** 按鈕。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
  **偵錯這些程式碼類型：**  
  從提供的清單選擇要進行偵錯的程式碼類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

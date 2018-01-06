@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>核心編輯器內
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器是一組可讓您修改和查詢文字資訊的數個元件。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會路由到編輯器介面卡。 建議，不過，您調整您的自訂內容到新的編輯器應用程式開發介面。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 -   與語言服務整合  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [執行個體化使用舊版 API 的核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
  提供有關如何使用的逐步指示<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>來建立執行個體的核心編輯器。  
   

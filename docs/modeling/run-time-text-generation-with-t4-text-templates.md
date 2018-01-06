@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 您也可以使用應用程式在執行階段中產生的文字字串[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]執行階段文字範本。 應用程式執行所在的電腦不需要有[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 執行階段範本有時也稱為 「 前置處理過的文字範本 」 因為在編譯時期，範本會產生在執行階段執行的程式碼。  
@@ -114,7 +115,7 @@ This report is Company Confidential.
 ```  
   
 ### <a name="embedded-program-code"></a>內嵌的程式碼  
- 您可以插入程式碼之間`<#`和`#>`。 例如：  
+ 您可以插入程式碼之間`<#`和`#>`。 例如:   
   
 ```csharp  
 <table>  
@@ -424,7 +425,7 @@ End material for DerivedTemplate1.
   
  執行階段範本可用在任何應用程式，在編譯時期決定範本和其內容。 但是，如果您想要撰寫[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能，產生的文字範本，在執行階段變更，請參閱 < 從[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)   
  [Oleg Sych 所了解 T4： 前置處理過的文字範本](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

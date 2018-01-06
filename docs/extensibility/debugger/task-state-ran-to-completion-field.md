@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86e04ded45232c18677e078f6dea3751a8ea0067
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d70f57629cb051ed3241e9ade33e84390ff55e4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION 欄位
 工作已成功完成執行。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)欄位包含此值，<xref:System.Threading.Tasks.Task.Status%2A>屬性會傳回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

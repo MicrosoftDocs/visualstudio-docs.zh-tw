@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1696e3c22ff1e23c7728c5e12940a5559959ac1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f9d58ef5832b70e1f9dbac356eaa242ca2be1ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 此介面代表可進行偵錯的程式。  
@@ -38,7 +39,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgramNode2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|取得程式的名稱。|  
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|取得裝載程式的處理序名稱。|  
@@ -58,7 +59,7 @@ IDebugProgramNode2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)   

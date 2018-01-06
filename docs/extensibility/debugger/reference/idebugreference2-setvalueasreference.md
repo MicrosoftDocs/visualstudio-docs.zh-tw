@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b684f540bf5488f1febc93228c73259ccf03c77
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0de3b3330bac567e1db09025c8d701b0f431d525
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 設定從另一個參考的參考值。 保留供未來使用。  
@@ -59,5 +60,5 @@ int SetValueAsReference (
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

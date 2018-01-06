@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aa1c643a07f15f361c77c618d717cc2655277c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc6dacbac1092e211ba129417bd4e47aea31b733
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 偵錯引擎 (DE) 目前正在執行的程式中擲回例外狀況時，將此介面傳送至工作階段的偵錯管理員 (SDM)。  
@@ -38,7 +39,7 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugExceptionEvent2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|取得有關引發這個事件的例外狀況的詳細的資訊。|  
 |[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|取得引發這個事件的例外狀況擲回的人們可讀取描述。|  
@@ -55,7 +56,7 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="remarks"></a>備註  
  在之前傳送事件，DE 檢查是否這個例外狀況事件已指定發生第一個或第二個可能的例外狀況由先前呼叫[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)。 如果已指定為第一個可能發生的例外狀況，`IDebugExceptionEvent2`會傳送事件至 SDM。 如果沒有，DE 可讓應用程式有機會處理此例外狀況。 如果已不提供任何例外狀況處理常式，而且例外狀況已指定為第二個可能的例外狀況，`IDebugExceptionEvent2`會傳送事件至 SDM。 否則 DE 會繼續執行程式，而且作業系統或執行階段處理的例外狀況。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

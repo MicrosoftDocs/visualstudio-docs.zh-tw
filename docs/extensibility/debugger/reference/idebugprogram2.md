@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 此介面代表執行的處理序中的程式。  
@@ -38,7 +39,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgram2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|列舉執行此程式中的執行緒。|  
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|取得程式的名稱。|  
@@ -72,7 +73,7 @@ IDebugProgram2 : IUnknown
 ## <a name="remarks"></a>備註  
  程式已經處理程序所組成的一或多個程式時，在特定的執行階段架構中，執行的執行緒容器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
  [下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   

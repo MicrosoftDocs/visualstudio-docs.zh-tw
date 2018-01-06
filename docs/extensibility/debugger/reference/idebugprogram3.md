@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2da4dcb4911488bd82c358efc3b8075f1941af6f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cb827c875731134b9d8f9ea2833f3629ca0d3c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 此介面代表正在執行的處理序中，並擴充程式[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)藉由提供執行緒的資訊。  
@@ -37,7 +38,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgram3`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|執行程式。 執行緒會傳回給哪一個執行緒執行時，正在檢視使用者的偵錯工具資訊。|  
   
@@ -51,7 +52,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="remarks"></a>備註  
  程式已經處理程序所組成的一或多個程式時，在特定的執行階段架構中，執行的執行緒容器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: daf5f3e7547ee32b641ccf4c1448eaa9a80b72fa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7a28b738c757924f2a3c588d52ea896dc6301384
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 這個介面會表示為位元組陣列。  
@@ -38,7 +39,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  `IEEDataStorage`介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|擷取指定的資料提供的緩衝區位元組數目。|  
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|擷取可用的資料位元組數目。|  
@@ -55,7 +56,7 @@ IEEDataStorage : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

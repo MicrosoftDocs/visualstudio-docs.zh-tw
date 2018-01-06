@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
@@ -15,18 +15,19 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc116cc0085d5db9e54ca6befce6d3627c5d975
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="process-properties-dialog-box"></a>處理序屬性對話方塊
 若要進一步了解特定的處理程序中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  
   
  Windows 98 和 Windows 95 在作業系統上，只有的修改版本**一般**則顯示索引標籤。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [處理序屬性對話方塊、一般索引標籤](../debugger/general-tab-thread-properties-dialog-box.md)  
  使用這個對話方塊方塊中尋找深入了解選取的處理序。  
   

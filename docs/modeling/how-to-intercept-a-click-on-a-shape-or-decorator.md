@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 52ecb40d98a352e629ac234be294c972126b4d68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程序示範如何攔截按一下圖形或圖示裝飾項目。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。  
@@ -396,6 +397,6 @@ namespace Company.CompartmentDrag
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [回應，且將變更傳播](../modeling/responding-to-and-propagating-changes.md)   
  [Decorator 的屬性](../modeling/properties-of-decorators.md)

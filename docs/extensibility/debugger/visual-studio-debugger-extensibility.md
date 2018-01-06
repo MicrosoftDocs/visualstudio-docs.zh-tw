@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5b5943dc8087a22e1bdfb94ae6d0d10335c174a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 偵錯工具擴充性
 Visual Studio 包含完整的互動式來源的程式碼偵錯工具，提供功能強大且容易使用的工具來追蹤程式中的 bug。 偵錯工具有完整的支援 Visual Basic、 C#、 C/c + + 和 JavaScript。 不過，在使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，也就是可從[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)，其他程式設計語言的支援相同的豐富功能的偵錯工具。  
@@ -32,7 +33,7 @@ Visual Studio 包含完整的互動式來源的程式碼偵錯工具，提供功
   
  下列各節說明如何使用偵錯工具來擴充[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
  說明該怎麼辦[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯提供項目，以及如何安裝 SDK。  
   
@@ -45,7 +46,7 @@ Visual Studio 包含完整的互動式來源的程式碼偵錯工具，提供功
  [選擇偵錯引擎的實作策略](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
  討論如何實作您 DE。  
   
- [參考](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
+ [參考資料](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  文件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯應用程式開發介面。  
   
  [範例](../../extensibility/debugger/visual-studio-debugging-samples.md)  

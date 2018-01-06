@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95ea54e6aa41209c18ece03585c3b02898f9327b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 038ab8e2476f29cbbefb73495252c43866899062
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。  
@@ -121,7 +122,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:application>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

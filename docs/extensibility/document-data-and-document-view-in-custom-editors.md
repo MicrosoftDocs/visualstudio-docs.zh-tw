@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3506a6906c4223888a14132339cbe5499c92d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和文件 檢視中自訂編輯器
 自訂編輯器包含兩個部分： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件代表要顯示的文字資料，而文件檢視物件 （或 「 檢視 」） 則代表要在其中顯示文件資料物件的一或多個 windows。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
  有兩個選項用於建立自訂編輯器的檢視。 其中一個是就地啟用模型中，檢視裝載在視窗中使用 ActiveX 控制項或文件資料物件的位置。 第二個是簡化的內嵌模型，由裝載檢視[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>實作來處理視窗命令。 就地啟用模型的相關資訊，請參閱[就地啟用](../extensibility/in-place-activation.md)。 簡化的內嵌模型的相關資訊，請參閱[簡化內嵌](../extensibility/simplified-embedding.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)   
  [簡化的嵌入](../extensibility/simplified-embedding.md)   
  [如何： 將附加至文件資料的檢視](../extensibility/how-to-attach-views-to-document-data.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63cbb04310dba0bddea4f6730a6ae5095cbe2612
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e61b80aaf4c5c8b0e25f5b2a4a42f13d75d305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-windows"></a>文件視窗
 在 Visual Studio*文件視窗*是相關聯的多重文件介面 (MDI) 視窗框架的子視窗。 文件視窗通常用於顯示和修改原始程式碼或文字，但它們也可以裝載其他功能的類型。 文件視窗：  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="the-running-document-table"></a>執行 Document 資料表  
  IDE 使用執行中文件資料表 (RDT) 來追蹤每個文件視窗的狀態。 RDT 是透過哪份文件視窗會收到通知的事件，例如關閉方案時，或已對檔案進行編輯的機制。 如需詳細資訊，請參閱[執行中的文件表格](../../extensibility/internals/running-document-table.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [已延遲載入文件](../../extensibility/internals/delayed-document-loading.md)

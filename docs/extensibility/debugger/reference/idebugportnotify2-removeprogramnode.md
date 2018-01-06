@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efb3ca5e659782d50c7111d51cac970676dbaffd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8bd07eafde56cb9d753aeaf5911daeea9275b6a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 取消登錄從連接埠執行才能進行偵錯的程式。  
@@ -47,7 +48,7 @@ int RemoveProgramNode(
 ## <a name="remarks"></a>備註  
  這個方法會移除已加入至呼叫程式節點[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

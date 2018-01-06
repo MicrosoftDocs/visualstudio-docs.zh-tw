@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2b57cc7b5959f82b5f02c4939d6645c30c1c706
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e90137ada43a127dc3c7eac3c98620f3a846d024
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 取得電腦相關的堆疊框架相關聯的實體位址範圍的表示。  
@@ -54,5 +55,5 @@ int GetPhysicalStackRange (
   
  它會假設，呼叫堆疊高到低排列，也就是，新的堆疊框架會加入在逐漸較低的記憶體位址。 執行階段架構必須提供符合這個假設的實體堆疊範圍。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

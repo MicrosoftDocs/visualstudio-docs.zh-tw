@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>使用 IntelliTrace 步驟後的檢視快照集
-IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用程式的快照集步驟的事件。 記錄快照集可讓您回到上一個中斷點或步驟，並檢視應用程式的狀態，因為它已在過去。 IntelliTrace 步驟後可以節省許多時間當您想要查看先前的應用程式狀態，但是不想要重新啟動偵錯，或重新建立所需的應用程式狀態。
+IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用程式的快照集步驟的事件。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
 IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15.5 及更新版本，而您需要 Windows 10 年度更新或更新版本。 目前支援偵錯 ASP.NET、 WinForms、 WPF、 受管理的主控台應用程式，與受管理的類別庫的功能。 目前不支援偵錯 ASP.NET Core、.NET Core 或 UWP 應用程式。 
   
@@ -38,7 +39,7 @@ IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷�
 
 ## <a name="navigate-and-view-snapshots"></a>瀏覽和檢視的快照集
 
-您可以使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])**中偵錯 工具列按鈕。 這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 自動逐步向前或向執行事件就會啟動選取的事件歷程偵錯。
+您可以使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])**中偵錯 工具列按鈕。 這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
 
 ![向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png "步驟向後和向前步驟按鈕")
 
@@ -85,7 +86,7 @@ IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷�
         1. 從 Visual Studio 安裝程式安裝適用於桌上型電腦 (x86、x64) 的 VC++ 2015.3 v140 工具組。
         2. 建置目標應用程式。
         3. 從命令列使用 editbin 工具來設定`Largeaddressaware`目標可執行檔的旗標。 例如，您可能會使用這個命令 （之後更新的路徑）:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
-        4. 若要開始偵錯，請按**F5**。 現在，拍攝快照時，在偵錯工具的步驟和中斷點。
+        4. 若要開始偵錯，請按 **F5**。 現在，拍攝快照時，在偵錯工具的步驟和中斷點。
 
         > [!Note]
         > `Largeaddressaware`旗標必須設定每個可執行檔根據變更的時間。

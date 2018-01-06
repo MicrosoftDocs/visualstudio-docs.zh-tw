@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37aff0510af501b75aafe190fc412a0d4b9fd625
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ced25067161fe1429c14c4668d8b69a757080140
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元加入至搜尋方法
   篩選描述元可讓取用者的模型之前，它們執行，將值傳遞給方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

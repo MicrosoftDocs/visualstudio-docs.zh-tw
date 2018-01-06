@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c6384ce4437290c0baa5ea1438a0751b4ec1fcf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4dbecbbd5a1913990eb8f5e3fc20d875a627352e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>如何：為 SharePoint 應用程式頁面或 Web 組件建立使用者控制項
   您可以建立自訂使用者控制項，為 SharePoint 方案提供自訂功能，而且您可以在專案內重複使用該功能。 您可以將 Web 組件或應用程式頁面中加入使用者控制項，或加入其他 ASP.NET 控制項和 SharePoint 控制項，並且定義控制項的屬性和方法。 如需使用者控制項的詳細資訊，請參閱[Web 組件或應用程式頁面建立可重複使用控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)和[使用者控制項和 SharePoint 中的伺服器控制項](http://blogs.msdn.com/b/kaevans/archive/2011/04/28/user-controls-and-server-controls-in-sharepoint.aspx)。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
      這個檔案會出現在**方案總管 中**使用者控制項檔案下，且.cs 或.vb 副檔名，視專案語言而定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
  [建立 SharePoint 應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [建立 SharePoint 的 Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)  

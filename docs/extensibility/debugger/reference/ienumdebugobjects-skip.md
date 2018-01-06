@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a605a2e8380852310035ea9ba3cf39554a27ff7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 009efee252e350f71c0f1389ecca03f3fae3f926
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 這個方法會略過指定的項目數目。  
@@ -47,5 +48,5 @@ int Skip(
 ## <a name="remarks"></a>備註  
  如果`celt`指定的值大於數的其餘項目，列舉型別設定為結束和`S_FALSE`傳回。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9631f2206705ef6daf36b355aa6cb1d5be6458d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9842527f90d9b2df7308f1e80e337de2848d9179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 目前的堆疊框架上偵錯工具在其想要攔截目前的例外狀況時呼叫。  
@@ -51,7 +52,7 @@ int InterceptCurrentException(
   
  以下是最常見的錯誤傳回。  
   
-|錯誤|說明|  
+|錯誤|描述|  
 |-----------|-----------------|  
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|無法攔截目前的例外狀況。|  
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|目前的執行框架尚未尚未搜尋處理常式。|  
@@ -67,7 +68,7 @@ int InterceptCurrentException(
   
  攔截完成之後， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)收到信號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

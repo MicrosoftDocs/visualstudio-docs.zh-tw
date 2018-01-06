@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac758e7e8ce4d288b347b1207883642c920059bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5cd56e2b83411710fa110c7abd65d965d828083d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。  
@@ -47,5 +48,5 @@ int IsUserData(
 ## <a name="remarks"></a>備註  
  使用者資料指定為 JustMyCode （使用者可設定選項將模組標記為使用者程式碼，並因此可使用的堆疊追蹤） 模組的一部分的任何物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

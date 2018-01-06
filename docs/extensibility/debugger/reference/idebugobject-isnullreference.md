@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c1d9fec58fb8c5a47e08fac76f49d366cac3a37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 57952a29750b15cecf61abcea8a4aa02059464df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 測試此物件是否為 null 參考。  
@@ -47,5 +48,5 @@ int IsNullReference(
 ## <a name="remarks"></a>備註  
  Null 參考表示空的物件或尚未指派給物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

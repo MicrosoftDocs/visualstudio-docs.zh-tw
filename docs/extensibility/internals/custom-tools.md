@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-tools"></a>自訂工具
 *自訂工具*可讓您將工具與專案中的項目產生關聯，並執行該工具，每次您儲存檔案。 某些自訂的工具，有時也稱為*單一檔案產生器*，常用來實作轉譯器產生程式碼的資料，反之亦然。 例如，單一檔案產生器建立[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]超出.settings 和.resx 檔的原始程式碼。 產生的原始程式碼存取強型別.settings 和.resx 檔案中的資料。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案類型支援的自訂工具。[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案類型不這麼做。 您自己的專案類型也可以支援的自訂工具。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  自訂工具相關聯`ProjectItem`介面的物件，並就像設計工具和編輯器。 自訂工具會採用所表示的檔案`ProjectItem`做為輸入，並將寫入新的檔案其檔案名稱由`DefaultExtension`方法。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)  
  描述如何使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面，以實作自訂的工具。  
   

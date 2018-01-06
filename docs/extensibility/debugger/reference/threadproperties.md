@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4ec394deef3b317d91e6cbe22bbc1d95a6aca5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 86fc5231f8d577e0456ce2d9f76c7b6d7f831280
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 描述執行緒屬性。  
@@ -81,7 +82,7 @@ public struct THREADPROPERTIES {
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbc17c9998be2d97e65452decf2ab97836e3128
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 261359ae3dc82f8544d0f48cf0e8f1103ccedd5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 這個方法會剖析的運算式評估，並選擇性地將轉換為其他資料類型的結果。  
@@ -77,7 +78,7 @@ int EvaluateSync(
 ## <a name="remarks"></a>備註  
  運算式評估內容由提供`pAddress`這可讓它來判斷包含方法，然後使用語言範圍規則可決定在運算式中的符號的值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

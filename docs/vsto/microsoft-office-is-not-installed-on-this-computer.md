@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af9a13a72aed42f46a755520802f8688bc962161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70329c058146dde9b94713b66dfbd29319250f45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>這部電腦未安裝 Microsoft Office
   Visual Studio 找不到對應至這種專案類型的 Microsoft Office 應用程式。 如果您正在開發 VSTO 增益集專案，這表示您無法偵錯或執行專案。 如果您嘗試建立文件層級專案，這表示您無法建立專案。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  請安裝與這種專案類型相關聯的 Microsoft Office 應用程式，包括主要 Interop 組件。 如需支援之 Microsoft Office 版本的詳細資訊，請參閱 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
   

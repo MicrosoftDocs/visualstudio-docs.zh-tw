@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88f7d2bf3a3351999175425366cf421c3b5ce0b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 209006129bcb2cfaaf88233768df1d9597cd09a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 隱藏檔案變更告知
 當實體代表文字緩衝的檔案已變更時，對話方塊會顯示與訊息**您要將變更儲存到下列項目嗎？** 這稱為檔案變更通知。 如果檔案要有多少變更，不過，一再重複顯示這個對話方塊可以快速成為造成困擾。  

@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f971dd1a6ed2c4e16e3e991d43bc6ca7ca5b2f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e76425b81bc2198bbe96740c792b6da47a14d846
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder 欄位
 表示這個非泛型執行個體將委派的泛型的產生器物件。  
@@ -36,6 +37,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   
  [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

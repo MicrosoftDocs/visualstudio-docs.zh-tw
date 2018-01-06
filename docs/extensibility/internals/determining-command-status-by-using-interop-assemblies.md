@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cde6ae841271622e0d538d679991288c111095e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b7b695288bec904e1e576f9f566944613c97f31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>使用 Interop 組件判斷命令狀態
 VSPackage 必須持續追蹤的命令，它可以處理的狀態。 當 VSPackage 內處理的命令會變成啟用或停用，無法判斷環境。 負責 VSPackage 來通知有關命令狀態的環境，例如，狀態的一般命令例如**剪下**，**複製**，和**貼上**。  
@@ -36,6 +37,6 @@ VSPackage 必須持續追蹤的命令，它可以處理的狀態。 當 VSPackag
 ## <a name="status-notification-failure"></a>狀態通知失敗  
  通知命令狀態變更的環境中失敗 VSPackage 可以將 UI 置於不一致的狀態。 請記住，您的功能表或內容功能表命令的任何可放入工具列上的使用者。 因此，更新 UI，功能表或內容功能表開啟時，只是不夠的。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [實作](../../extensibility/internals/command-implementation.md)

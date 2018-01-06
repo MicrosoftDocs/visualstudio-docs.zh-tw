@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 000cb6be2c2aa15f70784513d3ce8bf929eb982e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb324df233faab6c7fa240697d582531d1438c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 傳回代表位置，如果堆疊回溯作業的程式碼內容時發生。  
@@ -47,6 +48,6 @@ int GetUnwindCodeContext(
 ## <a name="remarks"></a>備註  
  即使這個方法可能會傳回程式碼內容的位置堆疊回溯之後，它不一定表示堆疊回溯可以實際發生在目前的堆疊框架。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

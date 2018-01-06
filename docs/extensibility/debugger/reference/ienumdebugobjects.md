@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20f2d7695cfed89bc38cb73e2f00216060e2d970
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c8f62f4a153ac5c5966721578313245fc02f7d04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -41,7 +42,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定的數目的項目。|  
@@ -59,6 +60,6 @@ IEnumDebugObjects : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

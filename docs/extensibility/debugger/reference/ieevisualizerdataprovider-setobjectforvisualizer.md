@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76a901401e854611cc987ac5c0cf8eeabb8dfd53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feb48452b466301f7987db613997158aed160bac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化檢視表示的物件。  
@@ -57,6 +58,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>備註  
  這是由實作器決定如何傳回錯誤資訊。 不過，它可能會有些呼叫端可能僅以查看例外狀況物件是否已傳回有知道查詢時，發生錯誤，因此如果發生錯誤，這個方法一律會傳回例外狀況物件。 如果呼叫端想要進行，應該也提供錯誤字串使用它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

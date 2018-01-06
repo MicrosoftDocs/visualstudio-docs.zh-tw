@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d6f04e420ed7268c009467f74c020d429ab2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88cfedfd31532750d9db4fd00f43e507e6812e2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 設定或變更與此繫結中斷點相關聯的條件。  
@@ -49,7 +50,7 @@ int SetCondition(
 ## <a name="remarks"></a>備註  
  與此中斷點先前關聯的任何條件將會遺失。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad6b7ffde868bf6b9dc4f9ef3bab9d9094ab765
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5315281b904a6a4144f8e06780048e25cd5e0221
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 這個方法可讓使用者附加至不安全的程序之前，顯示警告的連接埠供應商。  
@@ -41,5 +42,5 @@ int QueryCanSafelyAttach();
   
 -   `FAILURE`： 附加至處理序會失敗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

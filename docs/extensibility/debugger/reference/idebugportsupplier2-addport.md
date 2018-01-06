@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c04e72f6883c00425834a03622a5efcd5a3dbb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f77b0dd072c0e1acdbe642a0ded64a554f809f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 新增連接埠。  
@@ -52,7 +53,7 @@ int AddPort(
 ## <a name="remarks"></a>備註  
  這個方法會建立要求的通訊埠，以及將它加入至使用中連接埠的連接埠供應商的內部清單。 [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)可以第一次呼叫方法，以避免可能耗費時間的延遲。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

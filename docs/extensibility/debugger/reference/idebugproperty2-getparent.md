@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c41a796a23ea0f1d9a1f8eb0336fa82a4c25760
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3f33bf6fc0f7a93ed50f73766a9ed144bb0b9d8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 取得屬性的父屬性。  
@@ -44,5 +45,5 @@ int GetParent (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETPARENT_NO_PARENT`如果沒有父系。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

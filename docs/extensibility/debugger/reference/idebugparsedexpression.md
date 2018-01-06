@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11fc3ddcfd7e5b2a3a46ff6a2db64dfe431fbc69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e6ccaf11dc94702b29888a83c108908be3f8f354
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -41,7 +42,7 @@ IDebugParsedExpression : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugParsedExpression`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|評估已剖析的運算式。|  
   
@@ -55,7 +56,7 @@ IDebugParsedExpression : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

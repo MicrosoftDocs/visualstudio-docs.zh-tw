@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 在 Visualization and Modeling SDK，您可以定義存放區將變更傳播至儲存區，例如非存放區變數、 檔案、 模型中其他存放區，或其他外部資源的事件處理常式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能。 儲存的事件處理常式會執行觸發的事件發生所在的交易結束之後。 它們也會在復原或取消復原作業中執行。 因此，不同於存放區規則存放區事件是最適合用於更新儲存區以外的值中。 不同於.NET 事件存放區的事件處理常式已登錄到接聽的類別： 您沒有註冊個別的處理常式，每個執行個體。 如需如何選擇不同的方式處理變更的詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
@@ -188,7 +189,7 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||  
 |TransactionRolledBack||  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [回應，且將變更傳播](../modeling/responding-to-and-propagating-changes.md)   
  [範例程式碼： 循環圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
  

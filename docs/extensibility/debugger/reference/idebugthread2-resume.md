@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25b0f663b6f512cbe8ea6eaafa2167a6828280c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5de844c3b07a509f266e2f9d278d1f78bea2b089
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 繼續執行緒執行。  
@@ -49,6 +50,6 @@ int Resume (
   
  每次呼叫此方法，必須是先前呼叫[暫停](../../../extensibility/debugger/reference/idebugthread2-suspend.md)方法。 暫停計數決定多少次`IDebugThread2::Suspend`到目前為止已呼叫方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

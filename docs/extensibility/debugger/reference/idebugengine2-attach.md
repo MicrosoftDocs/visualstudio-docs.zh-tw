@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 將偵錯引擎 (DE) 附加至程式或程式。 工作階段的偵錯管理員 (SDM) 執行同處理序以 SDM DE 時呼叫。  
@@ -87,7 +88,7 @@ int Attach(
   
  所給定陣列中呼叫程式節點的方法之前`pProgram`或`rgpProgramNodes`，模擬，如果需要上, 應該啟用`IDebugProgram2`代表程式節點的介面。 一般來說，不過，這個步驟並非必要。 如需詳細資訊，請參閱[安全性問題](../../../extensibility/debugger/security-issues.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

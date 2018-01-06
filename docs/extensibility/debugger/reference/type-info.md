@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dc77aa5b633c4160fc34717c0b9382d89d9f0e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d6888d2680cffbde132885d730cd35f6e509c2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此結構指定的各種欄位的類型的相關資訊。  
@@ -111,7 +112,7 @@ namespace MyPackage
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   

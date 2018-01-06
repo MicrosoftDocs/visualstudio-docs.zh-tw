@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e7f810ff5ad1654081cd061edbc4360eb988402
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>如何： 識別文件庫中的符號
 符號瀏覽工具中顯示符號的階層式的檢視。 符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。  
@@ -84,7 +85,7 @@ N1
   
      物件管理員呼叫此方法來取得符號的簡報路徑中包含的節點清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [支援的符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [如何： 註冊物件管理員與程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

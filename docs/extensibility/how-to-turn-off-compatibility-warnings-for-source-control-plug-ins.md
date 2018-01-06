@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93db7526e7d6ba3eccf86e8c9769a1d9e9af3519
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 622c0d4a75289e5025051b339b959a6b0b56442d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉原始檔控制外掛程式的相容性警告
 使用原始檔控制中的時，使用者可能會看到幾個相容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 顯示的警告取決於原始檔控制外掛程式的功能，而且可以停用，詳細資料如下。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
   
      建議您最好支援重新進入 (`SCC_CAP_REENTRANT`功能); 這樣做將會移除這個警告。 不過，如果這項支援不可行，可以設定這些登錄項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能旗標](../extensibility/capability-flags.md)

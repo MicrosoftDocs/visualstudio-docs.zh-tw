@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e4a4311d5e115e20d23096a6ca1e3bce2dcbea6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: adb5987e8537938c5d6f6c6241cd466654bf4793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。  
@@ -52,6 +53,6 @@ int SetValue(
 ## <a name="remarks"></a>備註  
  陣列中的值會複製到這個[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，並取代任何現有的值。 大於或小於現有的值，可以是新值的大小。 這`IDebugObject`不能是 null 參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

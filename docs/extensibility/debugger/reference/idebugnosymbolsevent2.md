@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71cc6524a5d30e2789909a64f8b814ddb4fe286a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4c103cdfec8d93c8b43106d5e2b3757750ffda70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 訊號[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具 UI，警告使用者符號找不到啟動可執行檔。  

@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faf46489be0b9a56485fc93c2138a7f6702c4778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7ced5627420f5ac90da2cae1a2930dbd0b973dbc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-project-output-reference"></a>如何：加入專案輸出參考
   若要部署至 SharePoint 的非 SharePoint 專案的組件 （或 Silverlight 專案中的.xap 檔案），請將其加入做為專案輸出參考。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  選擇箭號旁**專案名稱**，選擇非 SharePoint 專案項目名稱，然後選擇**確定** 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [如何： 將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

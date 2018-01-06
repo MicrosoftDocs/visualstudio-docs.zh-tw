@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87098c362e5b37690e2ab3116ffca431d58f129d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4859e47f8a7ade34a920e4d8e2fac3be58508de3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指實際建置程序從輸出項目移至期望位置進行偵錯和安裝。 例如，Web 應用程式可能會在本機電腦上建置，並將其放在伺服器上。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  設定可以指定會影響其組建或部署作業的相依性。 建置或部署的相依性都必須為內建或部署之前或之後建立本身的組態或部署的專案。 建置專案之間的相依性的說明<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>介面，並部署相依性與<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面。 如需詳細資訊，請參閱[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

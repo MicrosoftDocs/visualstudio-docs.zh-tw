@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9df7004767641b9693745b2250eef4948d9e908d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 項目 (Visual Studio 範本精靈擴充)
 實作類別的完整的名稱`IWizard`介面。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本精靈的註冊項目。|  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

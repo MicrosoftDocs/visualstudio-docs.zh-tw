@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8776288baf97ea9bf6b8c4b9b9f4a055ab88949
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757e533f855ab1bc276e484d46d6866b0dd6ca40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 這個方法會判斷是否已過期或父容器的此物件的編輯後繼續狀態。 自訂運算式評估工具不會實作這個方法，一律會傳回`E_NOTIMPL`。  
@@ -47,5 +48,5 @@ int IsEncOutdated(
 > [!NOTE]
 >  自訂運算式評估工具應該會一律傳回`E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

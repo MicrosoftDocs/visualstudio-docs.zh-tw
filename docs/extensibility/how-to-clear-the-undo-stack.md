@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a0d79b16c911390322c8ea3c27a0b0f8cd5d15d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2592ad8bbec0ddf87731d25f5c46c714a3336d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clear-the-undo-stack"></a>如何： 清除復原堆疊
 下列的下列程序說明如何清除復原堆疊。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
     }  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 實作復原管理](../extensibility/how-to-implement-undo-management.md)

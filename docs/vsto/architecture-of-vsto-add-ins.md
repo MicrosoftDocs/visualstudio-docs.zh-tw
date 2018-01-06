@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9813add14da26049e5e32b9e060a146db4ce9afb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a4dbe8611da0814bfaa148b2d9c4caf7f7858d9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 增益集的架構
   使用 Visual Studio 中 Office Developer Tools 建立的 VSTO 增益集具有同時強調穩定性和安全性的架構功能，這些功能可讓其與 Microsoft Office 密切合作。 本主題描述 VSTO 增益集的下列層面：  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在 VSTO 增益集中呼叫 `ThisAddIn_Startup` 方法。 這個方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的預設事件處理常式。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

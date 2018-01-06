@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd0ec398877a581109f864411ede684147e86ebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee3e04c16b59ae97b93a3c521aa1a63f57835eb4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 傳回這個物件中包含的位元組數目。  
@@ -47,6 +48,6 @@ int GetSize(
 ## <a name="remarks"></a>備註  
  使用[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)方法來擷取實際的資料位元組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

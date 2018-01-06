@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ddc090e827b0a94a6534a0c4e625299cbc2ef5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d17e31f3282727386654b0d1913fd00424c3c0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 這個方法會以同步方式評估運算式。  
@@ -59,7 +60,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。 一些典型的錯誤碼為：  
   
-|錯誤|說明|  
+|錯誤|描述|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|目前正在評估另一個運算式，並不支援同時運算式評估。|  
 |E_EVALUATE_TIMEOUT|評估已逾時。|  
@@ -115,7 +116,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

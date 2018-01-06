@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b40a141b90489fa65ffc5f29b363d3d647ca4cb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91ee83167c681b713ea7d7a51a38d45b05fba4d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugport2"></a>IDebugPort2
 此介面代表電腦上的偵錯連接埠。  
@@ -40,7 +41,7 @@ IDebugPort2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPort2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|傳回的連接埠名稱。|  
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|傳回的連接埠識別碼。|  
@@ -59,7 +60,7 @@ IDebugPort2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

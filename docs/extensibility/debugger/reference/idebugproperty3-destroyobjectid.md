@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ceae63b77f0797e0781318cfa362e735d995eb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5fdc38d8b337a653b9f8d1481a505dbe8e0cfaa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 終結與這個屬性，相關聯指出呼叫端不再想要識別唯一來自其他所有屬性的這個屬性的唯一識別碼。  
@@ -43,6 +44,6 @@ int DestroyObjectID();
   
  呼叫以建立唯一的 Id [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)方法呼叫端想要確定在所有其他屬性間唯一識別出此屬性時。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

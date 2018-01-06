@@ -9,11 +9,12 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: 962166354b2dcc69a8baa382bccc60cf1dbc05e0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>動員.Net 的 Visual Basic 升級小幫手 (VBUC)
 

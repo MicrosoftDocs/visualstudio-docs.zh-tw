@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b593b7bcd22b5eb8c12fffb6fe277a68a9da12f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9bf48e49b564ab2284f7615f56ba3c7390140861
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 將列舉序列重設為開頭。  
@@ -39,6 +40,6 @@ int Reset();
 ## <a name="remarks"></a>備註  
  呼叫這個方法是下, 一次呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)方法會傳回第一個元素的列舉型別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
  [下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

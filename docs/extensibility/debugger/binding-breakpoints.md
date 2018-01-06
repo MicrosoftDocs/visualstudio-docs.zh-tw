@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08000dddcd574d21225aa110cf9eb4ab2487aadb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55416d6b156055d967424476f5add3b4ed75d18d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-breakpoints"></a>繫結中斷點
 如果使用者設定中斷點，也許是按 F9，IDE 會構成要求，並提示偵錯工作階段來建立中斷點。  
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
   
  如果將 DE 處理中斷點，但無法繫結，但是某些其他 DE 可能會繫結，會傳回警告。 IDE 會放入問題圖像 （glyph） 左邊的原始程式碼行中斷點字符內回應。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 554be41beaca8696f299b7f71d889b8a2fbbfc2e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1a4f110308ead7fde00528ed0404becd802069f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 此介面代表指標類型。  
@@ -38,7 +39,7 @@ IDebugPointerField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了上`IDebugField`和`IDebugContainerField`介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述指標的目標。|  
   
@@ -52,7 +53,7 @@ IDebugPointerField : IDebugContainerField
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

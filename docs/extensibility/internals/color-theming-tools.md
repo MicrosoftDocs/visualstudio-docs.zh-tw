@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8218f37626516fbbcfa0258409f6468467f810
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4d8368f1e73bdc5e679e1799db8926ee32dddb6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-theming-tools"></a>色彩佈景主題工具
 VS SDK 提供數個工具，可協助您建立及管理色彩佈景主題。  

@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 071c8832e154f151d6ee9d04c45b5bc927366f7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：新增與移除 SharePoint 功能中的項目
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 專案項目加入您的功能。 再進行部署，您可以加入和移除 SharePoint 專案項目來修改 SharePoint 功能。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
      SharePoint 專案項目會出現在**方案中的項目**清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

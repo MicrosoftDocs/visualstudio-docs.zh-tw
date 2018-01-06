@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf00254e4a967e318711945d70dfff5fba70c9bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 20b25e5354df648ba0265d156dbbf1e27add3e05
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 取得此物件的類型。  
@@ -47,6 +48,6 @@ int GetField(
 ## <a name="remarks"></a>備註  
  欄位描述的物件類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

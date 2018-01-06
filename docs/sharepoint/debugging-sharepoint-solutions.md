@@ -19,11 +19,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a3c7a2676c786e631b4c8b471272185b81e36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0fdde3820615a41ed91e48538dac80fa234a724
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-sharepoint-solutions"></a>對 SharePoint 方案進行偵錯
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您開始偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將專案檔案部署到 SharePoint 伺服器，然後開啟網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -151,7 +152,7 @@ ms.lasthandoff: 10/31/2017
   
  如需有關其他 SharePoint 登錄機碼的詳細資訊，請參閱[偵錯 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [針對 SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
   

@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
   商務資料連線 (BDC) 服務可讓 SharePoint，以顯示來自後端伺服器應用程式、 Web 服務和資料庫的商務資料。  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>測試專案  
   
-1.  選擇**F5**索引鍵。  
+1.  選擇 **F5** 鍵。  
   
      開啟 SharePoint 網站。  
   
@@ -294,7 +295,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   

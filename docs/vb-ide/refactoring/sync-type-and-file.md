@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: da6f39dd3573d361c1da579eb3d84c2c8ceeb517
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 307e8da9c662c4aeeedb1607e45d32fc79956f5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-in-visual-basic"></a>同步處理檔案名稱，或要在 Visual Basic 中的類型的檔案名稱的類型
 
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
 
    ![Inline 結果](media/synctype_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (Visual Basic)](../refactoring-vb.md)

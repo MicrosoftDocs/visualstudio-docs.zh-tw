@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 語言服務定義的項目和功能特定的語言，並用來提供該語言的特定資訊的編輯器。 例如，編輯器必須知道的項目和語言的關鍵字，以支援的語法著色。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  下表提供模型中物件的概觀。  
   
-|元件|物件|函式|  
+|元件|Object|功能|  
 |---------------|------------|--------------|  
 |文字緩衝區|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Unicode 讀取/寫入文字資料流。 您可使用其他編碼的文字。|  
 |程式碼視窗|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|文件視窗包含一個或多個文字檢視。 當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在多重文件介面 (MDI) 模式中，程式碼視窗是 MDI 子系。|  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
 |文字管理員|受<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服務，而從中您取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指標|維護常用資訊先前所述的所有元件都共用的元件。|  
 |語言服務|實作而定;實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|物件，提供特定語言資訊，例如語法反白顯示、 陳述式完成和大括號比對的編輯器。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器中的文件資料和文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)

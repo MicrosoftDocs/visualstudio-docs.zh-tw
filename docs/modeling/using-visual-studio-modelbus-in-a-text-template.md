@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c496aaa7db6f2260764b413bfdf09f766be87384
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 01a08ef43a344f71fe988693401c7064a902b92b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 如果您撰寫文字範本讀取模型，其中包含[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 參考時，您可能想要解析的參考來存取目標模型。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
   
     3.  在對話方塊中，選取**我想要公開 （expose） 至 ModelBus 此 DSL**。 如果您想要這個 DSL 來公開其模型並取用其他 Dsl 的參考，您可以選取這兩個選項。  
   
-    4.  按一下 [確定]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。  
+    4.  按一下 [確定 **Deploying Office Solutions**]。 新專案 "ModelBusAdapter" 會隨即加入至 DSL 方案。  
   
     5.  按一下**轉換所有範本**。  
   
@@ -408,7 +409,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      如果您已經設定 MBR 該項目上，開啟 參考的模型，並選取參考的項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
  

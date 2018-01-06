@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3903526ed9dc8e516520603966ea1936e46fbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b53b8fb7beb7d478f5a21035aa27eb13022ff0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 取得物件的大小，以位元組為單位。  
@@ -47,6 +48,6 @@ int GetSize(
 ## <a name="remarks"></a>備註  
  使用[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)方法來擷取成位元組序列的值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

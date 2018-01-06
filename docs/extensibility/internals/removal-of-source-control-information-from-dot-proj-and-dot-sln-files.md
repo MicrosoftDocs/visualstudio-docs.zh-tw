@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>從原始檔控制資訊移除。Proj 和。Sln 檔案
 原始檔控制外掛程式 API SCC 1.2 版中的資訊會儲存在 MSSCCPRJ。SCC 檔案。 MSSCCPRJ 的優點。SCC 檔案是，SCC 資訊是不在來源-控制像.proj 和.sln 檔案中一樣。  
@@ -27,5 +28,5 @@ ms.lasthandoff: 10/31/2017
   
  在 原始檔控制外掛程式 API 版本 1.1，IDE 使用 ~ 偵測如果外掛程式支援 MSSCCPRJ SAK 檔案。儲存原始檔控制資訊的 SCC 方法。 原始檔控制外掛程式 API 1.2 版提供一項新功能來偵測 MSSCCPRJ 的支援。SCC 檔案，而不使用 ~ SAK 檔案。 如需詳細資訊，請參閱[消除 ~ SAK 檔案](../../extensibility/internals/elimination-of-tilde-sak-files.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

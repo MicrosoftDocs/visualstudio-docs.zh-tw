@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d916bf047471e506166610882313d66177448fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f159260a5fd4ae1892a0282cbeba0615b492d604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 中斷連結的程式的偵錯引擎。  
@@ -41,5 +42,5 @@ int Detach();
 ## <a name="remarks"></a>備註  
  中斷連結的程式會繼續執行，但卻不會再偵錯工作階段的一部分。 一旦卸離的偵錯引擎時，會不傳送任何程式偵錯事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

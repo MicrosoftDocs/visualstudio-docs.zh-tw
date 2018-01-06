@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 182e74a4f82c392ec34137730502b0b62bf60292
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c6d356274998d07975dfce3cb3ba367c62c72ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 代表 COM + 符號提供者所特有的 managed 程式碼的方法。  
@@ -34,7 +35,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ## <a name="methods"></a>方法  
  除了上[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面，這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|決定是否偵錯符號會載入指定的模組指定的應用程式網域識別項。|  
 |[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|從指定的基本類型建立類型。|  

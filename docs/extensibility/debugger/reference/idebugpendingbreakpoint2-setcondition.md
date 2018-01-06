@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc4b55e1de6c643179b3ac9a5b06aecc24e85a59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 34c47fd8bd4843b74eb78d96723e3aae051616d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 設定或變更暫止中斷點具有相關聯的條件。  
@@ -49,6 +50,6 @@ int SetCondition(
 ## <a name="remarks"></a>備註  
  暫止中斷點先前關聯的任何條件將會遺失。 若要設定其條件中指定的值稱為 「 暫止中斷點，從這個繫結的所有中斷點`bpCondition`參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff52c4590d49fc10ffee9bbfe5020d94c912fd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1df4aab215290f976f58f2c06f3cd42282344fee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 擷取泛型欄位相關聯的型別參數數目。  
@@ -48,5 +49,5 @@ int TypeParamCount(
 ## <a name="remarks"></a>備註  
  如果清單\<T >，這個方法會傳回 1，並在清單\<T1、 T2 >，這個方法會傳回 2。 如果沒有任何型別參數，這個方法會傳回 0。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

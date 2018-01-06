@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8b349bee09f068a5777ecc212223c36951236ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此介面代表連接埠上執行的處理序。 如果連接埠是本機連接埠，則`IDebugProcess2`通常表示本機電腦上的實體程序。  
@@ -42,7 +43,7 @@ IDebugProcess2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProcess2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|取得處理序的描述。|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|列舉包含在此程序中的程式。|  
@@ -69,7 +70,7 @@ IDebugProcess2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   

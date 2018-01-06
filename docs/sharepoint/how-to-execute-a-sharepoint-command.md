@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1cfe20d0cac50603265644fb48102ef22537631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4888489ef5b60b1222acf09b827c7551818c64b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>如何：執行 SharePoint 命令
   如果您想要使用伺服器物件模型中的 SharePoint 工具擴充功能，您必須建立自訂*SharePoint 命令*來呼叫 API。 定義命令，並將它部署在與您的 SharePoint 工具擴充功能之後，您的延伸模組可以執行命令來呼叫 SharePoint 伺服器物件模型。 若要執行此命令，使用其中一個的 ExecuteCommand 方法<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>物件。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="compiling-the-code"></a>編譯程式碼  
  這個範例需要 Microsoft.VisualStudio.SharePoint 組件的參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [如何： 建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [逐步解說：擴充伺服器總管以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

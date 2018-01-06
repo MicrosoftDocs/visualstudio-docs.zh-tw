@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81c934add7248b7d63854b259957d58aae298401
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 12b3d9781348beb69bb2f4923dd5d5b311f157c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 表示原始程式檔中的字元位移位置。  
@@ -34,7 +35,7 @@ IDebugDocumentPositionOffset2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugDocumentPositionOffset2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|擷取目前的文件位置的範圍。|  
   
@@ -48,5 +49,5 @@ IDebugDocumentPositionOffset2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

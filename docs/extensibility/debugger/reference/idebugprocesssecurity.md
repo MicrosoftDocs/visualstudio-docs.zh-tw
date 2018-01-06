@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e9c3a5f87540f8b255030654fb0917e3045ae19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7acdb0f16182ebca904229d7620b80f5ec81d1de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity`是為了警告使用者，附加至處理序是不安全的連接埠供應商來實作。  
@@ -31,7 +32,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProcessSecurity`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|從連接埠供應商取得的使用者名稱。|  
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|附加至偵錯的處理序是不安全，警告使用者。|  
@@ -46,7 +47,7 @@ IDebugProcessSecurity : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [連接埠](../../../extensibility/debugger/ports.md)   
  [連接埠供應商](../../../extensibility/debugger/port-suppliers.md)   
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ce42039759128ac8b41556b94714da8cd43197d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d4fe70f9d0ef5273f30f16e99524247a2e45843c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]顯示文字內的 UI**傳輸資訊**區段**附加至處理序** 對話方塊。  
@@ -34,7 +35,7 @@ IDebugPortSupplierDescription2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugPortSupplierDescription2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|擷取連接埠供應商的描述和描述中繼資料。|  
   

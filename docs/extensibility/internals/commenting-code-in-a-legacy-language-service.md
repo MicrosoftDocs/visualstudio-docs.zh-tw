@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8952612c9502704f79410461d29ca8ab87fa3ee4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e6dfeb31ab062d5182b56ba450450d41a6dab807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在舊版語言服務中的註解程式碼
 程式設計語言通常會提供註解或註解的程式碼的方法。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。  
@@ -64,6 +65,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)

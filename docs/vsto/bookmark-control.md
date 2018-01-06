@@ -21,11 +21,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d846c1a0a52011991d231e567c1727e456a1feee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a946c190197b40dbc51fe2ddbcff434a21d84c11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [逐步解說： 建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   

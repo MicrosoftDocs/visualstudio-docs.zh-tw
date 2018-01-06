@@ -16,16 +16,17 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002d9f2bb9a70d3f223b13d505639089005a09ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 846f0bff11c557164ff101d0b5beb1950fded62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 當您自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您應該了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理階層，例如專案和如何決定向使用者顯示的內容使用選取範圍內容。 本章節將討論的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層和選取範圍。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)  
  描述專案階層和階層的一般概念。  
   

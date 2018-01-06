@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d085c149c72393f0179ad6b6b50334426777d9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0202433bdae8583eaab6cbca2fbf1e2c9cde08bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 取得此程式正在執行中的程序。  
@@ -49,7 +50,7 @@ int GetProcess(
   
  實作`IDebugEngineLaunch2`介面表示 DE 必須了解如何建立處理程序中; 因此，DE 實作[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面是能夠知道它正在哪個程序。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

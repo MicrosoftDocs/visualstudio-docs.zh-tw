@@ -19,11 +19,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2c9e2111e02bb9669b7e915bb170e4607932978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d9949cd9686c846c3baec67553b8cab203bc843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以程式設計方式加入及刪除工作表註解
   您可以透過程式設計方式，加入及刪除 Microsoft Office Excel 工作表中的註解。 註解只能加入單一儲存格，而不能加入多個儲存格範圍。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [如何： 以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)  

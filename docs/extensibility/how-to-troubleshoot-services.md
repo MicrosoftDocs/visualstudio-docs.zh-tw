@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c241b80430fd02a649efab7f8a65498e606d2804
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 疑難排解服務問題
 有幾個常見的問題，當您嘗試取得服務可能會發生：  
@@ -68,7 +69,7 @@ if (log == null) return;
   
      如果工具視窗裝載使用者控制項或任何其他控制項容器，容器會設置在 Windows 元件模型，而且沒有任何存取權[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服務。 您可以呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>取得 VSPackage 服務提供者從控制項容器中的。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [可用服務清單](../extensibility/internals/list-of-available-services.md)   
  [使用並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

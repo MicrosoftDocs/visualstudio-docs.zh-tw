@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c12e300a3537d1927710b0a4c3550ec3f5fd762
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 實作 尋找和取代機制
 Visual Studio 提供兩種實作尋找/取代。 一種方式為傳遞到殼層文字映像，並讓它處理搜尋、 反白顯示和取代文字。 這可讓使用者指定多個文字範圍。 或者，您的 VSPackage 可以控制這項功能本身。 在這兩種情況下，您必須通知殼層有關目前的目標和所有開啟的文件的目標。  
@@ -34,7 +35,7 @@ Visual Studio 提供兩種實作尋找/取代。 一種方式為傳遞到殼層�
   
 3.  如果您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>方法，您可以藉由呼叫簡化您的搜尋工作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>   

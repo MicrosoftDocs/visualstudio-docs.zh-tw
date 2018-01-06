@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a90a5cfdc521de0716d81b07529822f69289b605
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1104ebfbd066ad438262fcca0186acfb3854dbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 使用 CreateExpInstance 公用程式建立時，重設，或刪除的 Visual Studio 的實驗執行個體。 偵錯及測試 Visual Studio 擴充功能，而不需要變更基礎產品，您可以使用實驗性執行個體。  
@@ -62,5 +63,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix = Exp**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../../extensibility/internals/vspackages.md)

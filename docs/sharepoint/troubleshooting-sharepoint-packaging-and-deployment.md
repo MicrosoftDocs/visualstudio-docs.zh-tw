@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint 封裝和部署疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。  
@@ -109,12 +110,12 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  警告 1 元素 ' [*控制項名稱*]' 不是已知的項目。 當網站中發生編譯錯誤或 web.config 檔案遺失時，就會發生這個狀況。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  如果[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案系統並不知道巢狀的使用者控制項，它無法提供 Intellisense 而且會發出警告。 專案系統不會感知巢狀的使用者控制項的如果無法建置專案而且設計工具並未關閉及重新開啟，或者自動撤銷選項已啟用，讓使用者控制偵錯後，從 SharePoint 登錄區撤銷。  
   
  若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請清除**偵錯後自動撤銷** 核取方塊**SharePoint**  索引標籤的 專案屬性 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

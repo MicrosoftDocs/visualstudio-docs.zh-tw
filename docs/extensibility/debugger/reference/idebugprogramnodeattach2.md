@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 604518d30b2bf03c357787e1bfad1f9c90c6766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1ff6b3aa49030ed49a05cb81e0a949c7bc55806c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允許的嘗試附加至相關聯的程式通知程式節點。  
@@ -38,7 +39,7 @@ IDebugProgramNodeAttach2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|附加至相關聯的程式或延後的附加程序[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。|  
   
@@ -56,7 +57,7 @@ IDebugProgramNodeAttach2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   

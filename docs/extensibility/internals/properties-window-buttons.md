@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>屬性視窗 按鈕
 根據開發語言和產品類型，某些按鈕預設會顯示的工具列上的**屬性**視窗。 在所有情況下，**分類**， **Alphabetized**，**屬性**，和**屬性頁**顯示按鈕。 在 Visual C# 和 Visual Basic**事件**按鈕也會顯示。 在特定 Visual c + + 專案中， **VC + + 訊息**和**VC 會覆寫**顯示按鈕。 其他專案類型，可能會顯示其他按鈕。 如需中的按鈕**屬性**視窗中，請參閱[屬性 視窗](../../ide/reference/properties-window.md)。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  您無法加入工具列按鈕，**屬性**程式使用 unmanaged 程式碼視窗。 若要新增工具列按鈕，您必須建立衍生自的 managed 的物件<xref:System.Windows.Forms.Design.PropertyTab>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)

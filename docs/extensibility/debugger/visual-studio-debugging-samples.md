@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04814e7f699d196f09152c927c723f16c9c779c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 008a9f4030078e2277185112ad791c8a7731bcc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 偵錯範例
 兩個範例示範如何擴充 Visual Studio 偵錯工具使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

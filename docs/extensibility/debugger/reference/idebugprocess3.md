@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc6c8fe7553a1fdff43875ec305978ea4f983843
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 89fc02ecec75d229b4cb743b9d1f4b2b0857ddc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此介面代表正在執行的程序，而且它的程式。 這個介面是用來取代中的數個方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可控制程序中的所有程式。  
@@ -43,7 +44,7 @@ IDebugProcess3 : IDebugProcess2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)，`IDebugProcess3`實作下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|會繼續執行，或是逐步執行處理程序。|  
 |[執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|開始執行的處理序。|  
@@ -62,7 +63,7 @@ IDebugProcess3 : IDebugProcess2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

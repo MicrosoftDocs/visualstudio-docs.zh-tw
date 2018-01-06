@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：當地語系化 ASPX 標記
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]網頁 (.aspx) 通常會使用硬式編碼的字串值。 若要當地語系化這些字串，請將它們取代參考當地語系化的資源的運算式中。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
      當地語系化的字串會出現在應用程式。 若要顯示當地語系化的資源，請在 SharePoint 伺服器必須符合資源檔的文化特性的語言套件安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 當地語系化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 將資源檔](../sharepoint/how-to-add-a-resource-file.md)   

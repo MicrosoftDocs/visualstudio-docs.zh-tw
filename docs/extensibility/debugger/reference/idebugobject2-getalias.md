@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cdb6510edcb11df6359066637fd796d142ddae1a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a487043d6c046a9c117c4845d56db2f18bf51896
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，取得與這個物件相關聯的別名。  
@@ -47,6 +48,6 @@ int GetAlias(
 ## <a name="remarks"></a>備註  
  物件的別名會透過呼叫[CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

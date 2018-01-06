@@ -16,16 +16,17 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ecd310065162451c6d7d6857b1f21646a82b8ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ff40bf1abb6d3583d7df8ec8423cf7be743a12c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 參考 (SharePoint 工具擴充性)
   本章節包含擴充 Visual Studio 中的 SharePoint 工具的應用程式開發介面參考文件。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  <xref:Microsoft.VisualStudio.SharePoint>  
  包含您用來擴充 SharePoint 專案系統的型別。 例如，您可以擴充內建的 SharePoint 專案和專案項目，或您可以建立您自己的專案項目。  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  包含用來自訂 SharePoint 專案的功能和封裝驗證行為的類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [參考 &#40;SharePoint 工具擴充性 &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [工具擴充功能的 SharePoint 程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   

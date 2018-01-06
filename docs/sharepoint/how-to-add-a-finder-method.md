@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0aa8888456d75554b2270058b844c7f76cb63fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b7594c650c1492b16e784ec649de6e66d1e6ec33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：加入搜尋方法
   若要啟用 web 組件或清單中顯示的實體清單的商務資料連接服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法會傳回實體執行個體的集合。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19722a4cffb0e3708939734253b0f2c4a408389e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 64d741146c0ee2421ab663f78601bfba8c373f86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定義參數的類型描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱[TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
   
      新的類型描述元便會做為子類型描述元加入集合類型描述元。 將此類型描述元設定為實體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

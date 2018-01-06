@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7481531c910ddf668ce911ae37215545b77903
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52a9dbed6cec64426247a0b92bff2b8ec98ec97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫通用語言執行階段運算式評估工具
 > [!IMPORTANT]
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio 偵錯封裝的某些方面必須解譯的程式語言的內容中的程式碼。 例如，當停止執行在中斷點時，使用者已輸入的任何運算式**監看式**必須評估並顯示視窗。 此外，使用者可以變更本機變數的值輸入到運算式**監看式**視窗或**即時運算**視窗。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Common Language Runtime 和運算式評估](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
  說明，當您要將專屬的程式語言整合到 Visual Studio IDE 中，撰寫 EE 能夠評估內容中的專用語言的運算式可讓您編譯成 Microsoft intermediate language (MSIL)不需要撰寫偵錯引擎。  
   
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
  [實作類型視覺化檢視和自訂檢視器](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
  說明哪些介面必須實作以支援類型的視覺化檢視和自訂檢視器的元件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯工具的擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

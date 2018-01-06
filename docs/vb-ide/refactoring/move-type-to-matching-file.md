@@ -11,11 +11,12 @@ ms.assetid: d8e0b3fd-d1d9-4e3f-b0f6-9f8ffbbc6297
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5d42bf01f8979cb52ea4fb4f89f16a78d78024
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 862c144c2319f6247a9fd38d7f71036a4ba090a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="move-type-to-a-matching-file-in-visual-basic"></a>將類型移到 Visual Basic 中的比對檔案
 **項目：**可讓您選取的類型移至具有相同名稱的個別檔案。
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 
    ![Inline 結果](media/movetype_result.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [重構 (Visual Basic)](../refactoring-vb.md)

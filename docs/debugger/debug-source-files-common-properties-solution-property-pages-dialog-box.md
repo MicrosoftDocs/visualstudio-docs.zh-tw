@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.options.FindSource
 dev_langs:
 - CSharp
@@ -25,11 +25,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96ca9ef63a3823b942a6d7a160c31473f5db8962
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>方案屬性頁對話方塊、通用屬性、偵錯原始程式檔
 此屬性頁可指定對方案進行偵錯時，偵錯工具將於何處尋找原始程式檔。  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
  **不要尋找這些原始程式檔**  
  輸入要讓偵錯工具讀取時排除的任何檔案名稱。 如果偵錯工具在上面其中一個指定的目錄中找到這些檔案中的某一個，就會忽略該檔案。 如果**尋找原始碼**時進行偵錯，而您按一下對話方塊中出現**取消**，您要搜尋的檔案會加入到此清單，如此偵錯工具將不會繼續搜尋該檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

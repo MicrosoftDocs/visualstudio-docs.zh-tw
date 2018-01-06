@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.exefordebug
 dev_langs:
 - CSharp
@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2fa8dfde80cff512ca6f774d8ee90a524931450
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c52d66d0a2e71b96a907fc73b16d42fa13b080bb
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>偵錯工作階段的可執行檔對話方塊
 當您嘗試對未指定任何可執行檔的 DLL 進行偵錯時，就會出現這個對話方塊。 Visual Studio 無法直接啟動 DLL。 它會改為啟動指定的可執行檔。 您可以對可執行檔呼叫的 DLL 進行偵錯。  
@@ -40,6 +41,6 @@ ms.lasthandoff: 10/31/2017
   
  輸入後，這些設定都會儲存在專案的 [屬性頁] 中，如此就不必在後續偵錯工作階段中重新輸入。 如果您需要變更設定，請開啟 [屬性頁] 並變更這些值。 如需有關如何指定偵錯工作階段的可執行檔的詳細資訊，請參閱[偵錯 Dll](../debugger/how-to-debug-from-a-dll-project.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

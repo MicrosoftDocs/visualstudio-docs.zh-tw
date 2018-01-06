@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc7afe28e435e0dcdd58c7403f6282ebf3609a23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b77524d5f297ada0e4821e229d9bb981518f9730
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以程式設計方式在 Outlook 中移動項目
   本範例將讀取的電子郵件訊息從**收件匣**到名為**測試**。 範例只會將郵件移，讓 word**測試**中`Subject`欄位。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   電子郵件訊息到達的字**測試**中`Subject`欄位。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用資料夾](../vsto/working-with-folders.md)   
  [如何： 以程式設計方式擷取名稱的資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
  [如何： 以程式設計方式搜尋特定的資料夾中](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   

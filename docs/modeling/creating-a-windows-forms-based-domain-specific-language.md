@@ -11,11 +11,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b17355eae0ca7462fa08173b3a6986c033924080
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示的特定領域語言 (DSL) 模型，而不是使用 DSL 圖表狀態。 本主題會引導您繫結至 DSL 的 Windows Form 中，使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK。  
@@ -326,7 +327,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
  因此我們建議您改用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>建立新的項目。 如需詳細資訊，請參閱[自訂項目建立及移動](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

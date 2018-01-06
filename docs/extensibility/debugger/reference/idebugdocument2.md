@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a252accd95dda401ab0be974df4edbf7b722a18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 175be5f50b03573b13df8a8c0d2a9a0e1e921cc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此介面代表來源文件。  
@@ -38,7 +39,7 @@ IDebugDocument2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocument2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|取得其中一種數種形式的文件的名稱。|  
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|取得文件的類別識別項。|  
@@ -53,7 +54,7 @@ IDebugDocument2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   

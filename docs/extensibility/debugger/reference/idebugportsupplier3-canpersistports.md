@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95e62f283d2ea0411162fb0406c712f0d17a1183
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7cb364ca40c42a3f392a5944169b7dd97075ab9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 這個方法會判斷是否連接埠供應商可以保存連接埠 （藉由將它們寫入至磁碟） 的偵錯工具的引動過程之間。  
@@ -42,5 +43,5 @@ int CanPersistPorts();
 ## <a name="remarks"></a>備註  
  如果連接埠供應商可以保存連接埠，應該這樣做，終結時並再重新載入它們時再次具現化。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

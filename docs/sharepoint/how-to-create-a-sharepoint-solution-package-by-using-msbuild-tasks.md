@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3cfe26fde4dd2d2b6617a008769fd535bb3e2cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 827566ddf888b430a1e46c26633dfe6fbf919af8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 工作建立 SharePoint 方案套件
   您可以建置、 清除及驗證 SharePoint 套件 (.wsp) 的開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令來自動化組建電腦上使用 Team Foundation Server 的建置程序。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
     msbuild /property:WarningLevel = 2  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：新增與移除 SharePoint 功能中的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

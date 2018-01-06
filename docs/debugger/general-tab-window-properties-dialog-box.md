@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b26896ce119e49ec2d001a0b09bc7b563bd7cac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5aea8d5eb998280d6602f4ea28eb0b52d5f86da3
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、一般索引標籤
 使用**一般**索引標籤，以顯示選取的視窗的相關資訊。 若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，焦點移至[視窗檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗中的任何節點，然後選擇 **屬性**從**檢視**功能表。  
   
  下列設定都適用於**一般** 索引標籤：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**視窗標題**|中視窗標題、 文字或包含在一個視窗中，如果它是控制項的文字。|  
 |**視窗控制代碼**|此視窗的唯一識別碼。 視窗控制代碼數字會重複使用。這些識別視窗只會針對該視窗的存留期。|  

@@ -16,16 +16,17 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a30589591a7cef60ecfb19945366f8fcf539da02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a270811cc13d4b0e9af027ec2b4b5d2032582a3e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-and-saving-project-items"></a>開啟並儲存專案項目
 當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 下列主題討論不同的方法，來開啟和儲存檔案。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [使用開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
  提供 IDE 的處理方式的逐步說明**開啟檔案**命令，而且此命令的回應中的專案的角色。  
   

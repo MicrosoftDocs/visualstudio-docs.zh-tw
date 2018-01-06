@@ -12,11 +12,12 @@ caps.latest.revision: "50"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 534a7317b4bca2abe559c028d025a52997a9f508
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cff244ea8b3ba8e6dd25af06d51bf5b80b51aa06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 有數種方法，當您撰寫程式碼時，就一律可供您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字範本。 這些方法會定義在<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。  
@@ -116,7 +117,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- 型別`this.Host`範本正在執行的所在的主機類型而定。 在執行中的範本中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以轉型`this.Host`至`IServiceProvider`來存取服務，例如 IDE。 例如：  
+ 型別`this.Host`範本正在執行的所在的主機類型而定。 在執行中的範本中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以轉型`this.Host`至`IServiceProvider`來存取服務，例如 IDE。 例如:   
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

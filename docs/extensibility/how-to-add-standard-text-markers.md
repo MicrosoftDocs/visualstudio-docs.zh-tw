@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fb92185dd2efee7f42ce1ba4d97435e0b2e8a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bdcdbabae26a9116b1e00910ecef2f83f4075551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何： 加入標準文字標記
 使用下列程序建立隨附的預設文字標記類型的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
      執行任何動作的文字標記您的自訂命令規定使用這個呼叫的這項資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   
  [如何： 建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   

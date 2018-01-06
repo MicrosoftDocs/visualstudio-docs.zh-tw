@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5916da8b7aa5018824ffe8040e7184fe6d1bf31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acf4038a5b3cafa1febcd4a44c3e82222d6f5d86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自訂組件
   您的專案可以參考組件從相同方案中其他專案。 不過，您必須加入這些組件的功能檔案的專案使用**指派參考組件 Lobsystem 加入** 對話方塊。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  偵錯自訂組件中的程式碼，您必須將組件加入至方案套件。 如需詳細資訊，請參閱[如何： 加入和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [如何： 將現有的 BDC 模型檔案加入至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

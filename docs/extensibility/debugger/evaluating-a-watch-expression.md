@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc63e378766fa6b50e52788d7117d767613bec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b28c07ba77bcee7fb0368985cbdcec015177e30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-expression"></a>評估 監看式運算式
 > [!IMPORTANT]
@@ -175,6 +176,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [監看式視窗運算式評估](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [運算式評估的實作範例](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

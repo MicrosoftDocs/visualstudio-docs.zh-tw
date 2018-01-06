@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a58abdcf816896c0705a7ecce32ae82c9c8f16d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48029ed4e925073b0d121a88846aa2f0af0a51cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 程式停止執行下一個要求的時間它執行緒嘗試執行的其中一個。  
@@ -43,6 +44,6 @@ int CauseBreak();
   
  這個方法是非同步方法會立即傳回而不一定會等候程式停止。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

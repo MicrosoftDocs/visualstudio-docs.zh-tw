@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93f6d82b88be23b160effe1c8162648132f461c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2ad135ddb69128a19d49bcc1ebb7acd77a496c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得代表值的物件位址的記憶體內容。  
@@ -47,5 +48,5 @@ int GetMemoryContext(
 ## <a name="remarks"></a>備註  
  傳回的記憶體內容會指定的位址值所表示的這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

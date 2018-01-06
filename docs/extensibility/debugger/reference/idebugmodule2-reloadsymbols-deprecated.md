@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3923431ed4936cf34a077d8d5d818c96e9630221
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 609769b44dc4d876a1a2d13d0e126927ee47a739
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已過時。 請勿使用。 重新載入此模組的符號。  
@@ -52,6 +53,6 @@ int ReloadSymbols(
 ## <a name="remarks"></a>備註  
  不再支援這個方法。 實作[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)方法改為。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

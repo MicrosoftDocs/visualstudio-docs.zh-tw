@@ -24,11 +24,12 @@ caps.latest.revision: "86"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b3e40a5a11e681f372b9cb76b43060b87ac900b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf755c0e90eda2c5478d16305b7540dd86b9ef5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：  
@@ -145,7 +146,7 @@ ms.lasthandoff: 10/31/2017
   
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫**啟動**自訂組件中的事件處理常式。 如需詳細資訊，請參閱 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

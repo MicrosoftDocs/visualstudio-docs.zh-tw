@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ffe7e33b4652c0f0d3bd506e28d14c5b0949983
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: edf2cfe689caa58e1c0402a91fa31237cb2c7215
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IEEVisualizerDataProvider : IUnknown
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|判斷是否可以更新物件 （和接下來，其值），代表這個視覺化檢視。|  
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|強制重新評估的物件為這個視覺化檢視。|  
@@ -57,7 +58,7 @@ IEEVisualizerDataProvider : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

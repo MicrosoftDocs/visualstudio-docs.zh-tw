@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -24,11 +24,12 @@ caps.latest.revision: "46"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98e23108f7619f4bba0609b8a29cb26d09bd9f9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 **工具 > 選項 > 偵錯 > 一般**頁面可讓您設定下列選項：  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
     在啟用 Just My Code 的狀態下開始偵錯時，如果沒有使用者程式碼 ("My Code")，這個選項會警告您。 
 
 **啟用.NET Framework 來源逐步執行**  
-允許偵錯工具逐步執行 .NET Framework 原始檔。 啟用此選項會自動停用 Just My Code。.NET Framework 符號會下載到快取位置。 您可以變更快取中的位置**選項**對話方塊中，**偵錯**類別，**符號**頁面。  
+允許偵錯工具逐步執行 .NET Framework 原始檔。 啟用此選項會自動停用 Just My Code.NET Framework 符號會下載到快取位置。 您可以變更快取中的位置**選項**對話方塊中，**偵錯**類別，**符號**頁面。  
   
 **不進入屬性和運算子 (僅限 Managed)**  
 讓偵錯工具無法逐步執行 Managed 程式碼中的屬性和運算子。  
@@ -199,6 +200,6 @@ Managed 程式碼中啟用例外狀況助理。 在 Visual Studio 2017，例外�
   
 您應在偵錯 .NET C++ 程式碼時使用此選項，原因是新的偵錯引擎不支援評估 .NET C++ 運算式。 然而，啟用 [原生相容性模式] 會停用許多相依於目前偵錯工具實作以進行運作的功能。 例如，舊版引擎缺乏許多視覺化檢視針對內建型別類似`std::string`Visual Studio 2015 的專案中。   請在這些案例中使用 Visual Studio 2013 專案，以獲得最佳的偵錯體驗。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 553141f01211389308978e80d22220634625c940
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8ca045a1fee17891fbe053d1d072a4affa41c787
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 取得正在偵錯此處理程序之工作階段的名稱。 這項資訊可以顯示一個 IDE 正在偵錯特定電腦上的特定處理程序的使用者。  
@@ -40,5 +41,5 @@ HRESULT GetAttachedSessionName(
 ## <a name="return-value"></a>傳回值  
  這個方法一律會傳回`E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

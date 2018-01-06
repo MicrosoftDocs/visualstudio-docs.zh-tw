@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 354d3f574515fcc9e8417e817363f9bbe7327f06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 95c98887e50786df4e59010070064eaeb6bafa0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：加入建立者方法
   建立者方法會將新資料加入至資料來源的實體。 商務資料連線 (BDC) 服務會呼叫這個方法，當使用者選擇**新項目**清單中的模型為基礎的功能區上的按鈕。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
      [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

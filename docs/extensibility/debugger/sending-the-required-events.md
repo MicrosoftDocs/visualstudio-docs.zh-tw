@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30a5b1150d44c138465db36da2b032b71f075397
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2fa28a3429c52e3d4eb8b5fc9faefbd86ee04d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-the-required-events"></a>傳送所需的事件
 使用此程序所需的事件傳送。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  許多語言的程式碼開頭使用全域初始設定式或外部的先行編譯的函式 （從 CRT 程式庫或 _Main）。 如果您正在偵錯的程式語言，包含這些類型的初始項目點之前的項目，然後執行這個程式碼並不會傳送項目點事件時的使用者進入點，例如**主要**或`WinMain`，已達到。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [啟用要偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

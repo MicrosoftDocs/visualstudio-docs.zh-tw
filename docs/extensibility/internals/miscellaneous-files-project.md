@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 514eb7a80b5e23997abb64c513af1b278bf90704
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d3fa64b06504d8982594945f5b0c38956676b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
 當使用者開啟專案項目時，IDE 會指派給其他檔案專案不是成員的方案中的任何專案的任何項目。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
  其他檔案專案不需要使用者明確建立其與**新專案** 對話方塊。 此外，其他檔案專案不會永久管理專案成員的清單。 它會使用的選擇性功能，記錄的每個使用者最近使用過的檔案清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   

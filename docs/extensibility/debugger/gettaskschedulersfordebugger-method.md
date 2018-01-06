@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 474d809f36d21b254dbb8bf302cd21bc83db88a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2c657b7cef89871e17af442e41229c2fda0f4b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 擷取所有的陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  這個方法不是安全執行緒，並不應與其他執行個體同時使用<xref:System.Threading.Tasks.TaskScheduler>。 它應從呼叫偵錯工具只在偵錯工具已經暫停所有其他執行緒時。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)

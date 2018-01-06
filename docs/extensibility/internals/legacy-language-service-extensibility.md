@@ -15,11 +15,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cc4913141350b0e0efa65ec0b4db913b578460b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-extensibility"></a>舊版語言服務擴充性
 語言服務提供編輯原始程式碼，IDE 中的特定語言的支援。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  本節討論的結構與舊版語言服務實作。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [移轉舊版語言服務](../../extensibility/internals/migrating-a-legacy-language-service.md)  
  說明如何更新語言服務從 Visual Studio 2008 的最新版本。  
   

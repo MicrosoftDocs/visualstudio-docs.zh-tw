@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d00e9c65798388bce6eb426a1c4326db49f0ec80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 99047f7703f39a04049162686079ed26ad9b30f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 中止要求下一個程式也就是這個處理序中執行的程式碼，並傳送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件物件。  
@@ -38,5 +39,5 @@ int CauseBreak();
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

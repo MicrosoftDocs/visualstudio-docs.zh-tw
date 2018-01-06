@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 301af8eb2e6b317a532fec6dfdd5ac64f62d12a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bf5881dabea216d7226e731c169dd97d1460c7fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 這個方法會取得伺服器的機器公用程式。  
@@ -50,5 +51,5 @@ int GetMachineUtilities_V7(
 ## <a name="remarks"></a>備註  
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]一律傳回`E_NOTIMPL`如果在呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

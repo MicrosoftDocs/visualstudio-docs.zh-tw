@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18ff0fef277967dcb446f62120843f476ddb4a3f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 304d99c1ddd5fdfddba0c4df88fc4eeeb9dcb7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 您可以使用 managed 的 package framework (MPF) 中的類別來實作可支援各種不同的功能，舊版語言服務，例如語法反白顯示、 括號對稱和 IntelliSense 完成。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 儘速。 這會提升語言服務的效能，並可讓您充分利用新編輯器功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)  
  MPF 中支援的語言服務功能的概觀。  
   

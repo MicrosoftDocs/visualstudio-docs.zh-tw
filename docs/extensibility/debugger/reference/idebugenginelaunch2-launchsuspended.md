@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c028848315e7e84f68a6fa2a302e3a656e1394f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b9c05a566c62df63ebabebab287188011e4f1ca5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 這個方法會藉由偵錯引擎 (DE) 啟動處理程序。  
@@ -109,7 +110,7 @@ int LaunchSuspended(
   
  [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)方法來啟動處理程序已成功啟動在暫停狀態之後呼叫。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)   

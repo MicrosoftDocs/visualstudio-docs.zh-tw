@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1218be6316740b50ebd7446848ee1bd3352b122e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 偵錯引擎 (DE) 會使用此介面，將偵錯事件傳送至工作階段的偵錯管理員 (SDM)。  
@@ -38,7 +39,7 @@ IDebugEventCallback2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugEventCallback2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|傳送通知的偵錯 SDM 的事件。|  
   
@@ -54,7 +55,7 @@ IDebugEventCallback2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   

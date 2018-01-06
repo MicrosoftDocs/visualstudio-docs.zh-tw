@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 464557102bd6dcbbbda4032c0588c55baa954664
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 本逐步解說示範如何將追蹤屬性新增至網域模型。  
@@ -758,7 +759,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="next-steps"></a>後續步驟  
  如果您想要使用多個追蹤屬性，或在一個以上的 DSL 中實作追蹤屬性，您可以建立文字範本產生一般的程式碼，以支援每個追蹤的屬性。 如需文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   

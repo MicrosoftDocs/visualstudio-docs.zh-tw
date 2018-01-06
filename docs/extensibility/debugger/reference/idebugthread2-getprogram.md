@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce48319058e3cb7db1d120f0727f671dc0c41fdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1fff62ec1f84b6574d9c4b2d1f1e648644173360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行緒正在執行的程式。  
@@ -44,6 +45,6 @@ int GetProgram (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

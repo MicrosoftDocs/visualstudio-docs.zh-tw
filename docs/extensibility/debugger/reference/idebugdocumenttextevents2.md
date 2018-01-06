@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd875edda076035d5c243fc4bfe83dceda61ac42
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 這個介面用來偵錯引擎所提供的來源文件變更的相關通知 Visual Studio。  
@@ -38,7 +39,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocumentTextEvents2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|表示已終結整份文件。|  
 |[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|已加入文件中插入文字會告知偵錯封裝。|  
@@ -57,6 +58,6 @@ IDebugDocumentTextEvents2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

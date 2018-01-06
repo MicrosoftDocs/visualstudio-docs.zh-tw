@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa5f72d33fff87d9f20f33621d53a92ac1221533
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 612cdb579615acb7ca5b4b6a34c0c485683c4fe1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 這個方法會將方法的位置和位移轉換成記憶體位址。  
@@ -69,7 +70,7 @@ int GetMethodLocationProperty(
   
  不論名稱為何`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞的不完整的方法名稱。 在此情況下，選取的方法是一個內含`pAddress`。 這個參數的解譯方式，是由運算式評估工具及它所支援的語言實作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

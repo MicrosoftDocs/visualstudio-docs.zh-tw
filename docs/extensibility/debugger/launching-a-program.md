@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>啟動程式
 要偵錯程式的使用者可以按 F5 執行偵錯工具從 IDE。 這會開始一系列的事件，最後會導致在 IDE 的連接到偵錯引擎 (DE)，接著連接，或附加，程式，如下所示：  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  如果`GUID_NULL`傳遞，則連接埠啟動的程式。 程式開始執行之後，執行階段環境會建立`IDebugProgramNode2`來描述程式介面，並將其傳遞給`IDebugPortNotify2::AddProgramNode`。 這會通知程式正在執行的連接埠。 然後 SDM 附加偵錯引擎執行的程式。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [通知連接埠](../../extensibility/debugger/notifying-the-port.md)  
  說明程式會啟動，而且連接埠會收到通知之後，會發生什麼事。  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f5703b54a1deb96e9d6719c2726164e1002a18f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe976923c77902a4e3e42fc634a3227cadccdfc5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：將 Managed 程式碼擴充附加至文件
   您可以將自訂組件附加至現有的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿。 文件或活頁簿可以處於任何支援的 Microsoft Office 專案和 Visual Studio 中的開發工具的檔案格式。 如需詳細資訊，請參閱[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  建置專案，並執行您要附加自訂應用程式的電腦上。 電腦必須有 Visual Studio 2010 Tools for Office Runtime 安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [如何： 從文件移除 Managed 程式碼擴充](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)  

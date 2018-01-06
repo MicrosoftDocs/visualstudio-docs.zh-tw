@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 67302893dbebb65316b9c2aab09f70ddaa3e6567
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9caafd73703478c75d7d91708ddcf5d14139e7fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-visual-basic"></a>引進在 Visual Basic 中的本機變數
 **項目：**可讓您立即產生一個本機變數來取代現有的運算式。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
    >[!NOTE]
    >您可以使用**..所有出現的...**取代找不到，所選的運算式不只是一個您有特別反白顯示的每個執行個體的功能表選項。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (Visual Basic)](../code-generation-vb.md)  
 [預覽變更](../../ide/preview-changes.md) 

@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>使用 managed 程式碼使用 Visual Studio 偵錯工具進行偵錯
 
@@ -29,7 +30,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 2. 在下**Visual C#**或**Visual Basic**，選擇**.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
 
-     如果您沒有看到**主控台應用程式 (.NET Core)**專案範本，請按一下**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案** 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**.NET 桌面開發**和**.NET Core**工作負載，然後選擇 **修改**。
+     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇**.NET 桌面開發**和**.NET Core**工作負載，然後選擇 **修改**。
 
 3. 輸入的名稱，例如**MyDbgApp**按一下**確定**。
 
@@ -183,6 +184,6 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
 - 若要深入了解偵錯工具，請參閱[啟動偵錯工具並瀏覽程式碼](../debugger/getting-started-with-the-debugger.md)。
 - 若要了解有關中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

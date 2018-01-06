@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本專案系統，第 2 部分
 在這一系列，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本專案系統。 本逐步解說為基礎的基本專案系統所加入 Visual Studio 範本、 屬性頁，以及其他功能。 您必須先完成第一個逐步解說，才能啟動這一個。  
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  展開**專案和方案**節點，然後再選取**建置並執行**。  
   
-3.  設定**MSBuild 專案組建輸出詳細等級**至**一般**。 按一下 [確定]。  
+3.  設定**MSBuild 專案組建輸出詳細等級**至**一般**。 按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  重建 SimpleProject 專案。  
   
@@ -282,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ 是中的使用者所提供的名稱**新專案**對話方塊中，修改以移除所有 unsafe 字元和空格。  
   
- 如需範本參數的完整清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB： 如何： 將自訂參數傳遞至範本](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
+ 如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB： 如何： 將自訂參數傳遞至範本](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
   
 #### <a name="to-substitute-project-template-parameters"></a>若要取代的專案範本參數  
   

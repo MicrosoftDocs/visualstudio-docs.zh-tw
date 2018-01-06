@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>事件描述
 每種類型的事件有特定的用途。  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>事件和其使用的原因  
   
-|事件|說明|  
+|Event - 事件|描述|  
 |-----------|-----------------|  
 |啟用文件事件|偵錯引擎 (DE) 想要開啟或文件帶到前景 IDE 時，就會發生。|  
 |繫結的中斷點或中斷點錯誤事件|傳送時的中斷點繫結或當中斷點無法繫結，而且會傳回錯誤。|  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/31/2017
 |執行緒名稱變更事件|當使用者變更執行緒的名稱時，就會傳送。|  
 |程式名稱變更事件|當使用者變更程式的名稱時，就會傳送。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [傳送事件](../../extensibility/debugger/sending-events.md)

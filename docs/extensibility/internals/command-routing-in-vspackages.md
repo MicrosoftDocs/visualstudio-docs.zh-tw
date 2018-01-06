@@ -15,16 +15,17 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffbfb131eedb316c321bbf955ec7cc2951c71b8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f3d2347f8bf37173f3eb257293b71d706eb0a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令路由
 命令路由傳入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根據它的執行的內容。 它是全域內容來路由傳送從向外的初步內容。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [路由的演算法](../../extensibility/internals/command-routing-algorithm.md)  
  描述命令路由解析的順序。  
   

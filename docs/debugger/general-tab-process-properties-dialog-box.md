@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Process properties for Windows NT
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9548b35d893fa08458c6254776c8949cc83c510
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 54e4eb317b4bd40ce21c4cfcd9a3c1db3948e36f
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、一般索引標籤
 使用**一般**索引標籤，以進一步了解特定的處理程序。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  
   
  下列設定都適用於**一般** 索引標籤：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**模組名稱**|模組的名稱。|  
 |**處理序 ID**|此程序的唯一識別碼。 處理序識別碼為重複使用，因此它們僅針對該程序的存留期可識別程序。 程式執行時，會建立處理程序物件類型。 處理程序中的所有執行緒共用相同的位址空間，並具有相同的資料存取權。|  

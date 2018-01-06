@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords: debugger, Web application errors
-ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0538693a815cf9749b3cd9df007486de1af3637
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 
@@ -45,10 +45,10 @@ ms.lasthandoff: 10/31/2017
 
 4. (IIS)請確定正確的 ASP.NET 版本已安裝在伺服器上。
 
-    ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
+    ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
   
-4. 如果`maxConnection`限制在 IIS 中的將會過低，而您太多連線，您可能需要[增加的連線限制](https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
+4. 如果`maxConnection`限制在 IIS 中的將會過低，而您太多連線，您可能需要[增加的連線限制](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯遠端 IIS 電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

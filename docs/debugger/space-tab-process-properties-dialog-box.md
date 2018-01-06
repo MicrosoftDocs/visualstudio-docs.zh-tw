@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a70f9805f0868c7afec70fdda26ff97766281d9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4c5cf453f9eaee2f13a410e7218717d81f16c882
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、空間索引標籤
 使用**空間**檢查處理程序的位址空間 索引標籤。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  
   
  下列設定都適用於**空間** 索引標籤：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**顯示標記空間**|使用此清單方塊選取的空間 （影像、 對應、 所保留或未指派） 類別。|  
 |**可執行檔的位元組**|所選取類別目錄，此處理序正在使用的所有位址空間的總和。 可執行檔的記憶體是指可執行的程式，但不是能讀取或寫入。|  

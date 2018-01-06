@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6782e1cb84f4fbbe63a0e69a5c684d44ec7ccd21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 註冊物件管理員與程式庫
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**和**尋找符號結果**，讓您檢視外部元件或專案中的符號。 符號包含命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，以及將它們以公開[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會填入資料的工具。  
@@ -167,7 +168,7 @@ ms.lasthandoff: 10/31/2017
   
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [支援的符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

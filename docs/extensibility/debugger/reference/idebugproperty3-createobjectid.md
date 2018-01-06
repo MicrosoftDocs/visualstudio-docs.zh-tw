@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 363a43c71a6812ee69e1fda5778eb992579e9c76
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 337e1a4025e71a637e73b258df41828b7ddf1f43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立這個屬性以確保它是唯一在所有其他屬性之間的唯一識別碼。  
@@ -46,6 +47,6 @@ int CreateObjectID();
 > [!NOTE]
 >  沒有任何方法來擷取這個唯一識別碼，因此 DE 可以執行任何它需要的唯一識別碼時`CreateObjectID`方法呼叫。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

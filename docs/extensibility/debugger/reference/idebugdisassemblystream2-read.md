@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c75a832c2b9a59a681d6a80d087b69212a5361d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: edc41da40c4f0c292523ed338419fbc4a7253dcf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 讀取從反組譯碼資料流中目前位置開始的指示。  
@@ -66,7 +67,7 @@ int Read(
   
  `DSF_OPERANDS_SYMBOLS`旗標可以加入至`DSF_OPERANDS`加上旗標`dwFields`參數，以指出當解譯指示應該使用的符號名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   

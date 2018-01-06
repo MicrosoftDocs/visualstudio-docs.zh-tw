@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9c0cd58c069989b9516d707ba4c9a35faf53013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fce74b91512ee22eda7ce8c3e61de0ac03636d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 這個介面會列舉[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  
@@ -38,7 +39,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugFrameInfo2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[下一步](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|擷取指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉順序中的結構。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|略過指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉順序中的結構。|  
@@ -56,7 +57,7 @@ IEnumDebugFrameInfo2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

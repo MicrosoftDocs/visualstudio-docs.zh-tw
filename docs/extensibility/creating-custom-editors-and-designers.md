@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型：  
@@ -72,7 +73,7 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型�
   
      如果可以內嵌，建立主應用程式視窗外部編輯器中，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>方法並將<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉值，以`DP_External`。 如果編輯器無法內嵌，IDE 會自動為它建立個別的視窗。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [逐步解說︰建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  說明如何建立自訂編輯器。  
   
@@ -101,5 +102,5 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型�
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
  說明如何建立符合的其餘部分的 UI 項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a411287a369ca5b2beab70a9be7e4dcc2e4947d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08d396d378f168b9a54e3b640e69dfeb3f6c9ba1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 這個方法的 JustMyCode 狀態資訊告知偵錯引擎。  
@@ -57,6 +58,6 @@ int SetJustMyCodeState(
 ## <a name="remarks"></a>備註  
  JustMyCode 是偵錯只屬於使用者程式碼，並忽略系統程式碼等所有中繼程式碼的概念，即使原始程式碼是適用於該系統程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f4e27cfcff61be6712df97de0bb36008bda2547e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d29c90dbfebaa71ace3e6d1027f17bb43fcd971
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。  
@@ -343,6 +344,6 @@ validationController.ValidateCustom
 > [!WARNING]
 >  確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

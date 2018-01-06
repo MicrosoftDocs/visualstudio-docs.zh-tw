@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0049ebeb51d385850105d65d5db624829005d7d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4818ab2b7fd08732e36294a0e00bb9e74df18511
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得欄位的容器。  
@@ -47,6 +48,6 @@ int GetContainer(
 ## <a name="remarks"></a>備註  
  如果此欄位沒有一個容器傳回的`ppContainerField`將會是 null 的值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

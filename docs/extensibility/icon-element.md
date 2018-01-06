@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e8309e0052f6aa92a0069f0c2138880a7742de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2787798afe9554601d44a965ae3f12d5ebeab8bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element"></a>圖示項目
 圖示標記的 guid 屬性是定義點陣圖的 guid。  Id 屬性選取點陣圖區域中的位置。 這是選擇性的項目。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**會隱含。  
@@ -31,26 +32,26 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|Guid|必要項。 定義點陣圖的 guid。|  
-|id|必要項。 點陣圖區域中選取的位置。|  
+|Guid|必要。 定義點陣圖的 guid。|  
+|id|必要。 點陣圖區域中選取的位置。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |無。|無。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

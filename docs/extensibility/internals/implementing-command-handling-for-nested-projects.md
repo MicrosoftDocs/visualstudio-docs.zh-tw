@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作處理巢狀專案命令
 IDE 可以傳遞命令，都會通過<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，以巢狀的專案或父專案可以篩選或覆寫命令。  
@@ -53,7 +54,7 @@ IDE 可以傳遞命令，都會通過<xref:Microsoft.VisualStudio.Shell.Interop.
   
      若要將命令路由傳送至子專案沒有父專案。 IDE 會執行這項工作...  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [命令、 功能表和工具列](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)

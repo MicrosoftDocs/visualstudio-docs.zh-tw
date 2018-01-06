@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8e1a7e91156074b4cc4ae8925853d532deec203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f34e954945f6b557f8c5e1f5ac0b0802e1e663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 這個介面會提供方法來檢視相關聯的物件上的資料。 這個介面是支援的類型視覺化檢視的一部分。  
@@ -38,7 +39,7 @@ IPropertyProxyEESide : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下列方法會實作這個介面：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化資料來源提供者，以便可存取物件的資料。|  
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|擷取物件的組件的相關資訊。|  
@@ -57,7 +58,7 @@ IPropertyProxyEESide : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   

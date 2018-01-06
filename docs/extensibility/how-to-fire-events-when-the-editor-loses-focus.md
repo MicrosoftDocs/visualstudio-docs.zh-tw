@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a566d52dc1aabb9895e2f1f9751fdb37ae016d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb20adf3950e87c37e2ca64bcd78913839f89d01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件，當編輯器失去焦點時
 有時則需要知道當編輯器失去焦點視窗框架上。 例如，您可能需要擷取從程式碼視窗的程式碼編輯器不會再著重於它之後。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  

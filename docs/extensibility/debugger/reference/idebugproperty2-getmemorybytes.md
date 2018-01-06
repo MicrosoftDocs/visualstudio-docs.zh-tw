@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5981a0fb11b4c8af203cf3d7ba33074c7ffd8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0dcf714b2882936b6c62016c9b1c7d80eb2ed2b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 取得記憶體的位元組組成屬性的值。  
@@ -44,6 +45,6 @@ int GetMemoryBytes (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETMEMORYBYTES_NO_MEMORY_BYTES`是否有任何擷取的記憶體位元組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

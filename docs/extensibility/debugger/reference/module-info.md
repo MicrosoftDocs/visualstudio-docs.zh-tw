@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5d86bf829c904acd56ca9ab37aa94a0f4038214
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd49230165282dd656252c4edaabfbaa31d43340
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 描述特定模組 （DLL、 EXE 或組件）。  
@@ -108,7 +109,7 @@ public struct MODULE_INFO {
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   

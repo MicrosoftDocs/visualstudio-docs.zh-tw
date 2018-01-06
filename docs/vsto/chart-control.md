@@ -20,11 +20,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15583118629a5b75854c87892ccc85db59d49322
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fc5dfd4916383af8b69c14a87805e965ea855d23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="chart-control"></a>Chart Control
   <xref:Microsoft.Office.Tools.Excel.Chart> 控制項是一個會公開事件的圖表物件。 當您將圖表加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.Chart> 物件，以便您直接對這個物件進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 -   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   

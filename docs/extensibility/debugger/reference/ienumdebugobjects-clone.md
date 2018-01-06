@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19d36d2e08d6cb284e08083ec1d1fe14cd48caec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b1f13ff063450055f9d65f757b28c91220deb38a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 這個方法會傳回目前列舉為個別物件的複本。  
@@ -47,5 +48,5 @@ int Clone(
 ## <a name="remarks"></a>備註  
  列舉的副本會呼叫這個方法只有在有相同的原始狀態。 不過，複製和原始的狀態分開的而且可以個別變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

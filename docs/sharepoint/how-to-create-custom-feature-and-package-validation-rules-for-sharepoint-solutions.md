@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a4b2c9bb828fb8c8b55829a4a6a295bb8324361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 20a56a2f6582a08270292cd86cf62a9344d8565f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：建立 SharePoint 方案的自訂功能和封裝驗證規則
   您可以建立自訂驗證規則來驗證由 Visual Studio 產生的方案套件。 您也可以選取 整個功能或封裝上執行完整驗證**驗證**從內容功能表的套件或在功能**PackagingExplorer**。 當您將新功能或 SharePonit 專案項目加入至專案，以判斷封裝或功能是否會處於有效狀態，則會執行部分驗證。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="deploying-the-extension"></a>部署擴充功能  
  若要部署延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要發佈副檔名的檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2b225d84bfae6d182da86b2878a3761f67572be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 110a68d737ac2f194c7a318c41d05801d69511c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stack-frames"></a>堆疊框架
 偵錯工具就架構而言，**堆疊框架**:  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)介面，通常由偵錯引擎 (DE) 或由於執行執行緒的虛擬機器所建立。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   

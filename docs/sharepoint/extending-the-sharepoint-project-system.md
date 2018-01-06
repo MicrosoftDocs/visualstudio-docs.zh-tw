@@ -18,11 +18,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和項目範本來建立 SharePoint 方案。 這些範本符合需求的許多開發案例，但您可能會發現某些情況下，它們不在其中提供您所需要的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 -   SharePoint 專案系統中的 Visual Studio 自動化物件模型或整合物件模型中，對應的物件中轉換物件，反之亦然。 如需詳細資訊，請參閱[轉換之間 SharePoint 專案系統類型與其他 Visual Studio 專案類型](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
  [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   

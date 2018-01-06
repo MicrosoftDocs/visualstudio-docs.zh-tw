@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 392f2f33d792c4e8f31ff0423b68a28a68797818
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1f5fc7695df028330d0e53faebefc178f499da1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>篩選巢狀專案 AddItem 對話方塊
 當您顯示**AddItem**巢狀專案中，父專案 對話方塊可以控制哪些項目會顯示在對話方塊中。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  `IVsFilterAddProjectItemDlg`介面也可以實作依類別篩選。 如需詳細資訊，請參閱[將項目加入新項目 對話方塊加入](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)和[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd3f81580af908d06fe7389c04a6559d14f1075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b1a0f4175dc884283dcf92b7f6268a518cdaf0ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具擴充功能時，您可能需要呼叫 SharePoint Api 來執行特定工作。 比方說，如果您建立 SharePoint 專案的自訂部署步驟，您可能需要呼叫 SharePoint Api 來執行一些工作來部署解決方案。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="understanding-how-sharepoint-commands-are-executed"></a>了解如何 SharePoint 命令會執行  
  定義 SharePoint 命令的組件會在名為 vssphost4.exe 64 位元主控件程序中載入的。 中的 SharePoint 工具擴充功能呼叫 SharePoint 命令之後，而不是 32 位元 Visual Studio 處理序 (devenv.exe) vssphost4.exe 執行命令。 您可以控制如何在登錄中設定值執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱[偵錯 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [如何： 執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [SharePoint 工具延伸模組的程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  

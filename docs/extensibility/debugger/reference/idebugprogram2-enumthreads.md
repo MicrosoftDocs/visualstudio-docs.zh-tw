@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be139b110f9cd0e0278fa95ea97da3e95e2aa68e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585085dcbac83b8d9995a568247ddb7744d3d85d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 擷取一份程式中執行的執行緒。  
@@ -44,7 +45,7 @@ int EnumThreads(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091ebddc0c3424bdbf8126257fe56e6959bc28c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 853d6f4f4f4b9bef54b35c1f2277e3112c1fe31d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 這個介面提供的支援：  
@@ -46,7 +47,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自`IDebugProperty2`、`IDebugProperty3`介面會公開下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|傳回與屬性相關聯的字串長度。|  
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|使用者提供的緩衝區中傳回的字串。|  
@@ -66,7 +67,7 @@ IDebugProperty3 : IDebugProperty2
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

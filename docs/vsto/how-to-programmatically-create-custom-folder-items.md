@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a3b6059acb924bd07d1205e6ffac1d58527875f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7566503fb0fcf92ed30c21f800239ebafb6a21f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以程式設計方式建立自訂資料夾項目
   這個範例會在 Microsoft Office Outlook 中建立新的資料夾。 登入的使用者名稱會用於資料夾名稱。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>範例  
  [!code-csharp[Trin_OL_CustFolderItem#1](../vsto/codesnippet/CSharp/Trin_OL_CustFolderItem/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用資料夾](../vsto/working-with-folders.md)   
  [如何： 以程式設計方式將項目加入 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
  [如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)  

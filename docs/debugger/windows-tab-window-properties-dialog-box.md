@@ -6,25 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a49ec9b52d2eaf6dc336ed28d5b4e531bb3b25cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8336d854f8288429c40ff308e0f0c8004edfe1c
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、視窗索引標籤
 使用**Windows**索引標籤，以顯示在 windows 上的資訊與選取的視窗。 若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，焦點移至[視窗檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗中的任何節點，然後選擇 **屬性**從**檢視**功能表。  
   
  下列設定都適用於**Windows**  索引標籤：  
   
-|進入|說明|  
+|進入|描述|  
 |-----------|-----------------|  
 |**下一個視窗**|下一個同層級視窗 （如果沒有下一個視窗 「 無 」） 的視窗樹狀檢視中顯示的相同順序 (z-order) 的控制代碼。 選擇此項目以檢視下一個視窗的內容。|  
 |**前一個視窗**|前一個同層級視窗 （如果沒有上一個視窗 「 無 」） 的視窗樹狀檢視中顯示的相同順序 (z-order) 的控制代碼。 選擇此項目以檢視前一個視窗的內容。|  

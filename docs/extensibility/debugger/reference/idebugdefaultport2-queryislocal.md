@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b90459eb9dc3a2646bbe1ba5eb9ab25e9a8327b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52ee13002cc53084bc4f81b8cb65d489f3932d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 這個方法會判斷此連接埠是否在本機電腦上。  
@@ -38,5 +39,5 @@ int QueryIsLocal();
 ## <a name="return-value"></a>傳回值  
  傳回`S_OK`此連接埠是否為本機 （在呼叫端相同的電腦） 或`S_FALSE`連接埠是否位於另一部電腦上。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

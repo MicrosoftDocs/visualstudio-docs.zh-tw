@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5907f540e5f81e26b7d184352e3c38531ec5da66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb69380913f188031c97b46530ea2659fc05fe30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 Visual Studio 會提供一組的 automation 介面的自訂環境。 Automation 模型是可讓使用者建立 Visual Studio 增益集和擴充功能的物件模型。  
@@ -26,7 +27,7 @@ Visual Studio 會提供一組的 automation 介面的自訂環境。 Automation 
   
  若要讓一般使用者經驗一致，您可遵循一組指導方針，讓 VSPackage 的 automation 模型會遵循概念，設計 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Automation 模型概觀](../../extensibility/internals/automation-model-overview.md)  
  定義相關的群組控制一般環境的主要 facet 的物件的 automation 模型。 這組物件，如圖中的 automation 模型圖表所示。  
   

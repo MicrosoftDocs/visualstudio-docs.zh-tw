@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b78f90df8b6e46774310bd4a8cf218fbcbc7a18b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c18f4097fb9f718f4ec2fc9c4683e599d38b74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>擴充 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具符合許多應用程式開發案例的需求。 不過，您可能會發現情況下，它們無法提供您或其他開發人員需要的功能。 在這些情況下，您可以擴充 SharePoint 工具來建立您需要的功能。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  若要安裝 Visual Studio SDK，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。 如需有關 Visual Studio 擴充功能的詳細資訊，請參閱[開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工具擴充功能的 SharePoint 程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   

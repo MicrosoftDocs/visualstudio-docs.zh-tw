@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 159d6a7b3a381eeb5d6f92154e657de67c567a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這個行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。  
@@ -293,7 +294,7 @@ partial class NestedShapesSampleDocData
   
  如需詳細資訊，請參閱[自訂項目建立及移動](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂複本的行為](../modeling/customizing-copy-behavior.md)   
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

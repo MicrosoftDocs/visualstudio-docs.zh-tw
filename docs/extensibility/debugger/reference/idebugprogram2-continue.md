@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81a8bf23ee0272f448c49b6d58d194d3ba261509
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c90c456c4825ea9da054f7e78621493cc90a648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如步驟），並在程式啟動重新執行。  
@@ -53,6 +54,6 @@ int Continue(
 > [!WARNING]
 >  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

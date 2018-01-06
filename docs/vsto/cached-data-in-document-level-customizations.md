@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f90aeb03dd62d76064124e9870a5a4dbcd250621
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: deb63265b65a382132d3ef957ad67ddd1bccb438
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文件層級自訂中的快取資料
   文件層級自訂的主要目標是將資料從 Office 文件中的檢視。 資料是指儲存在文件，包括數字和文字中的資訊。 檢視是指使用者介面和 Microsoft Office Word 和 Microsoft Office Excel 物件模型。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |您可以儲存的資料類型？|您符合特定需求的自訂組件中的任何公用物件。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。|任何 XML 資料。|  
 |您可以存取的資料而不啟動 Microsoft Office 應用程式嗎？|是，透過使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別所提供[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|是，使用中的類別來<xref:System.IO.Packaging>命名空間，或使用 Open XML 格式 SDK。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   

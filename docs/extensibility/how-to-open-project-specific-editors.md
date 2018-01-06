@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何： 開啟專案的特定編輯器
 如果正在開啟專案項目檔在本質上繫結至該專案的特定編輯器，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器，您可以使用此專案專屬編輯器選項指定的特定點陣圖編輯器會辨識唯一至您的專案檔中的資訊。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>方法，以顯示並開啟檢視。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開啟並儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)   
  [如何︰針對開啟的文件開啟編輯器](../extensibility/how-to-open-editors-for-open-documents.md)

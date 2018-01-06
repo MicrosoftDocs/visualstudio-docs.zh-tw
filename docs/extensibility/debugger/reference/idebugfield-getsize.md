@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1b578568d6a372edde6269b1beb742f955d670a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b6c06a9fd218029c59f2ee004d5c421363530af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 這個方法會取得欄位，以位元組為單位的大小。  
@@ -47,5 +48,5 @@ int GetSize(
 ## <a name="remarks"></a>備註  
  所有欄位都具有型別和所有型別都有大小。 比方說，類型為位元組的欄位有 1 個位元組的大小。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

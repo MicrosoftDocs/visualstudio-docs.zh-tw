@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50cd7ec29f0d4ff8d5dd3a5adde3829d0b601f0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e03ea38cd4642f1793b338529f94fe015cad9c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 擷取的符號提供者為成員的符號群組的相關資訊。  
@@ -53,5 +54,5 @@ int GetCurrentModulesState(
 ## <a name="remarks"></a>備註  
  模組已新增，或從符號群組中移除時，將變更的狀態。 因此，這個方法可以用來偵測符號群組已經被修改。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

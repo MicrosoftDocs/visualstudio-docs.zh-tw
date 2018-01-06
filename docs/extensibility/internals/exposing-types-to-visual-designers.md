@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>若要公開的視覺化設計工具的類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考加上其相依性） 的一組完整的相依性的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂的工具所產生的檔案中定義的型別。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
      Temporary PE 編譯時，只提供給編譯器的原始程式檔時自訂工具輸出。 因此，使用 temporary PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [BuildManager 物件簡介](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
  [註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)

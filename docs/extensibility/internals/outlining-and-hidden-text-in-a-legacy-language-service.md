@@ -13,16 +13,17 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c28fbedddcd5a3d7bb80f1c14cd9a7f2ffe89eb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0435225f30f5f596aed4631f0130b94cd3b273ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>在舊版語言服務中的大綱和隱藏文字
 大綱可以讓單一資料行摺疊的文字行的順序。 例如，c + + 中的所有方法可摺都疊至單一行中顯示方法簽章。 隱藏的文字是的可顯示或隱藏的文字行的順序。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何︰支援在舊版語言服務中製作大綱](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  說明如何實作  
   

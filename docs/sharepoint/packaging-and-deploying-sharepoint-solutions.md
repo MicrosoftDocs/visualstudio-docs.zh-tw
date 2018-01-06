@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 362667d4f07acb7a6c245247b40911be35479b96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c584e4951289cd813a0f1d6bcf14920bd9713436
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 方案部署到 SharePoint 伺服器使用方案套件 (.wsp) 檔案。 您可以使用 Visual Studio，將您的 SharePoint 專案項目組織成功能，以及建立套件以部署您的 SharePoint 功能。  
@@ -107,7 +108,7 @@ ms.lasthandoff: 10/31/2017
   
  如果加入的檔案不會套用至任何特定專案方案中，您可以將空白的 SharePoint 專案加入方案中，並將其他檔案新增到它。 特別至內容資料庫中，將檔案部署至 SharePoint，另一個替代方式是將模組加入至專案，然後將檔案新增至模組。 如需詳細資訊，請參閱[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

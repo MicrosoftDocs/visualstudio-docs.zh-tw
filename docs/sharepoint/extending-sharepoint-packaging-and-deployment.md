@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b88c89d9464b5ac9bc588c4364de97c1f4e281d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2239a73b5a6f35a3571af90f8bd2814150da9d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>擴充 SharePoint 封裝和部署
   您可以擴充 SharePoint 專案的封裝和部署程序。
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="customizing-validation-rules"></a>自訂驗證規則  
  部署方案套件 (.wsp) 之前，您可以建立自訂的功能和封裝驗證規則來驗證功能或封裝是否有效。 比方說，您可以向開發人員報告資訊、警告或錯誤以協助修正驗證問題。 如需詳細資訊，請參閱[How to： 建立自訂功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 執行程式碼時部署步驟](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
  [逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
  [如何： 建立 SharePoint 方案的自訂功能和封裝驗證規則](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   

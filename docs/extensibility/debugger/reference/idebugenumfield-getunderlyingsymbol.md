@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdfec41092d974be90f1b376089fa4a66c45c955
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00391ebb3b683cec51a40d381d8ada87e9b18a73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 這個方法會傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示列舉型別的名稱。  
@@ -47,7 +48,7 @@ int GetUnderlyingSymbol(
 ## <a name="remarks"></a>備註  
  列舉名稱也包含之型別的列舉型別，使用繫結至記憶體位置[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)

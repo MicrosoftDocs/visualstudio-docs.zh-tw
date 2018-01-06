@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>設計商務資料連接模型
   您可以將實體和方法加入至模型檔案來開發商務資料連線 (BDC) 服務的型號。 實體會描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法執行的工作，例如加入、 刪除或更新實體將代表的資料。 如需詳細資訊，請參閱[整合至 SharePoint 的商務資料](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -117,7 +118,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)|描述可讓您以視覺化方式設計 BDC 模型的工具。|  
 |[如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)|示範如何將外部內容類型或實體加入至模型。|  

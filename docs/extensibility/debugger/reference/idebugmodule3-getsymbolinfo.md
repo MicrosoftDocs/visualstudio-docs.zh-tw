@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 341d31537f3c6c67e601296cf14eb5a6a10df08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8648e591e545db73b636c6b21fcbcaa1d1afb640
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 擷取的路徑中搜尋符號，以及搜尋每個路徑的結果的清單。  
@@ -87,7 +88,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
  **c:\symbols\user32.pdb...找不到檔案。**  
 **c:\winnt\symbols\user32.pdb...版本不符。**  
 **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...載入符號。**   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

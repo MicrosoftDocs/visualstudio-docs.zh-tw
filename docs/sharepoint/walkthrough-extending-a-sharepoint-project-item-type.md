@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案項目類型
   您可以使用**商務資料連接模型**專案項目在 SharePoint 中建立商務資料連線 (BDC) 服務的型號。 根據預設，當您建立模型時使用此專案項目中，模型中的資料不是顯示給使用者。 您也必須建立一個外部清單，在 SharePoint 中，讓使用者可以檢視資料。  
@@ -241,7 +242,7 @@ ms.lasthandoff: 10/31/2017
   
 14. 確認**列出**快速啟動 區域中的區段不尚未包含在專案中預設 BDC 模型為基礎的清單。 您必須先建立外部資料 清單中，使用 SharePoint 使用者介面，或使用專案項目擴充功能。  
   
-15. 關閉 web 瀏覽器。  
+15. 關閉網頁瀏覽器。  
   
 16. 中已 TestBDCModel 專案開啟的 Visual Studio 執行個體，開啟捷徑功能表**TestBDCModel**中的節點**方案總管] 中**，然後選擇 [**產生外部資料清單**。  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 10/31/2017
   
      **商務資料連接模型**專案範本會產生預設 BDC 模型，提供所有資料。  
   
-22. 關閉 web 瀏覽器。  
+22. 關閉網頁瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
  完成測試的專案項目擴充功能之後，從 SharePoint 網站移除外部清單和 BDC 模型，並移除 Visual Studio 中的專案項目擴充功能。  
@@ -274,7 +275,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  下**權限與管理**，選擇**刪除這份清單**，然後選擇 **確定**以確認您想要將清單傳送至資源回收筒。  
   
-5.  關閉 web 瀏覽器。  
+5.  關閉網頁瀏覽器。  
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>若要從 SharePoint 網站移除 BDC 模型  
   
@@ -296,7 +297,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  關閉 Visual Studio （實驗性執行個體和 GenerateExternalDataLists 方案已開啟的執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e82a2e716c7200a581bb0716d31ef0dabffd09e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b431ac941d61742536798ed217abafe057874e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 這個介面會提供有關計劃的主機 （處理序） 資訊。  
@@ -38,7 +39,7 @@ IDebugProgramHost2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgramHost2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|取得標題、 易記名稱或裝載的處理序，此程式的檔案名稱。|  
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|取得這個程式的裝載處理序的處理序識別碼。|  
@@ -51,6 +52,6 @@ IDebugProgramHost2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

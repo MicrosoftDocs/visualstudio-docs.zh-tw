@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fdf062c9b33dd4a160f54bba83991a3cdda7f0d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1806b6aa1b6c6d4ac233e4a9d5785fe903d42221
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
 您可以使用逸出序列，在文字範本產生文字範本的標籤和 （在 C# 僅限程式碼） 來逸出控制字元和引號。  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/27/2017
   
 -   如果逸出 (\\) 字元會顯示任何以外，它控制字元或引號 （在僅限 C#) 來逸出序列中的其他地方，直接將輸出的字元。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：使用逸出序列從範本產生範本](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

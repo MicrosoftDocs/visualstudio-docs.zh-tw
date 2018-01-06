@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a16404dc9e91c6f4383ea58d84a6a1716538c46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c39ec782ddfdb8eedfa54c0a274ce92b25c9e1df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 提供連接埠供應商的地區設定支援。  
@@ -34,7 +35,7 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法**IDebugPortSupplierLocale2**。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|設定連接埠供應商的地區設定。|  
   
@@ -45,7 +46,7 @@ IDebugPortSupplierLocale2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

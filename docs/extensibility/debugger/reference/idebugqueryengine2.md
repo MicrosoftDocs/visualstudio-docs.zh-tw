@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5545d49776e31b60719a49e4dbdca14d7dfdda3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a54b6f6ab5667993553074f1ca2511a544a0eaea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 這個介面可讓偵錯管理員 (SDM) 擷取介面，表示偵錯引擎 (DE) 的工作階段。  
@@ -38,7 +39,7 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugQueryEngine2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|取得自訂偵錯引擎 (DE) 介面。|  
   
@@ -52,7 +53,7 @@ IDebugQueryEngine2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

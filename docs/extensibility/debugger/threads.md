@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 150e27c4b8df06784848829bfe713773cf9d48a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f611284584b091fca390f660b3e840f6cebe048c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads"></a>執行緒
 偵錯工具就架構而言，**執行緒**:  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)介面，通常由偵錯引擎 (DE) 或由於執行程式的虛擬機器所建立。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   

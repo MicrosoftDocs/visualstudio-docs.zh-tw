@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08cd747c762d7820e4744251fb00abff22b3fdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活動記錄檔
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是在零售環境中偵錯 Vspackage 特別有用。  
@@ -60,7 +61,7 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是在零售環境
   
  您應該取得活動記錄檔之前寫入。 不要快取或儲存供日後使用的活動記錄檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)   

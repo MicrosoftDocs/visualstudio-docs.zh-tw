@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc4d81470a1ea15573171a80034efcd6daf720ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53964947ac69cb9b4958bff0a8a6fd4ffa0a8afa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 擷取這個屬性類型的檢視器的相關資訊，才能具現化該檢視器。  
@@ -72,7 +73,7 @@ int GetManagedViewerCreationData(
 ## <a name="remarks"></a>備註  
  類型的視覺化檢視使用這個方法來具現化受管理的檢視器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

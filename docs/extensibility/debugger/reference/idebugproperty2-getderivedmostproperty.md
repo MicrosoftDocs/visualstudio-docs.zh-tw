@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ac691b8e1c2d28477eb8c07f760eae8909a9633
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e9efd498485340b49dbd385a6a94fa6cf7fcedd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 取得屬性的最具衍生性屬性。  
@@ -47,5 +48,5 @@ int GetDerivedMostProperty (
 ## <a name="remarks"></a>備註  
  例如，如果這個屬性描述的物件，實作`ClassRoot`但這是實際的具現化`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件描述`ClassDerived`物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

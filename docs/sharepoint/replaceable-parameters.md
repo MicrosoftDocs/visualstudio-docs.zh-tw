@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 其功能類似於標準 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 範本語彙基元。 如需詳細資訊，請參閱[範本參數](/visualstudio/ide/template-parameters)。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/31/2017
   
  或者，您可以加入擴充功能直接.targets 檔案。 不過，如此一來改變不只是封裝在本機系統上，所有 SharePoint 專案擴充功能清單自己。 當您在系統上唯一的開發人員，或大部分的專案需要它，這可能是很方便。 不過，因為它是特定系統，此方法不是高度可攜性，因此，建議您將任何擴充功能加入專案檔改為。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

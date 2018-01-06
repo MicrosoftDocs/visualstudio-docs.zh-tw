@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 
 * 請檢查您的應用程式集區組態、 更正它如有需要並再試一次。
 
-    應用程式集區可能設定不符合您的 Visual Studio 專案的 ASP.NET 版本。 更新應用程式集區中的 ASP.NET 版本，然後重新啟動它。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+    應用程式集區可能設定不符合您的 Visual Studio 專案的 ASP.NET 版本。 更新應用程式集區中的 ASP.NET 版本，然後重新啟動它。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
     此外，如果密碼認證已變更，您可能需要更新您的應用程式集區或網站。  應用程式集區中更新認證**進階設定 > 處理序模型 > 識別**。 網站中，更新中的認證**基本設定 > 做為連接...**.重新啟動應用程式集區。
     
@@ -129,7 +129,7 @@ ms.lasthandoff: 10/31/2017
 
 * 請確定已在 IIS 上安裝正確的 ASP.NET 版本。
 
-    ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
+    ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
   
 * 若您只使用 IP 位址，請解決驗證錯誤
 
@@ -155,11 +155,11 @@ ms.lasthandoff: 10/31/2017
 
      若 IIS 未正確安裝，則您在瀏覽器中輸入 `http://localhost` 時應該會發生錯誤。
      
-     如需有關部署至 IIS 的詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
+     如需有關部署至 IIS 的詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
 
 * 在伺服器上建立基本的 ASP.NET 應用程式 （或使用基本的 web.config 檔案）。
 
     如果您無法取得您的應用程式使用偵錯工具，請嘗試在伺服器上，在本機建立基本的 ASP.NET 應用程式，並嘗試進行偵錯基本應用程式。 （您可能想要使用預設的 ASP.NET MVC 範本。）如果您可以偵錯的基本應用程式，可協助您識別兩個組態之間的差異。 尋找設定差異在 web.config 檔案中，例如 URL 重寫規則。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

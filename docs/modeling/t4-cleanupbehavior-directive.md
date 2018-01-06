@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f60151ba4563c07cd9f6f6619982d8e6a8657ead
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8b56d7be76e9cf43434f2f7d4c5fc2fa9a3222b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior 指示詞
 若要在處理文字範本後刪除 appDomain，請加入下列幾行：  
