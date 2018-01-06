@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e7d3d4e3d9a4034a948ee0fa094efbb45b6a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48443396038e703ed226c035ede34861fe50fa61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>變更功能表命令的文字
 下列步驟顯示如何藉由變更功能表命令的文字標籤<xref:System.ComponentModel.Design.IMenuCommandService>服務。  

@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會實作為 VSPackage 和管理整個偵錯工作階段。 偵錯工作階段包含下列項目：  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  ![元件偵錯概觀](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [偵錯封裝](../../extensibility/debugger/debug-package.md)  
  討論偵錯封裝，在中執行[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]殼層，會處理所有的使用者介面。  
   
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)  
  包含各種不同的偵錯工作，例如啟動程式，以及評估運算式的連結。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

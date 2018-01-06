@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5202d7468ecefe9de1754f592eef826f0390b869
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 (Visual Studio 範本)
 指定的組件範本會使用該組件的參考加入專案的相關資訊。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
  此文字會指定要加入至專案，當項目樣板具現化的組件。 這個組件名稱必須指定下列方式之一：  
   
--   做為完整的組件名稱。 例如：  
+-   做為完整的組件名稱。 例如:   
   
     ```  
     <Assembly>  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

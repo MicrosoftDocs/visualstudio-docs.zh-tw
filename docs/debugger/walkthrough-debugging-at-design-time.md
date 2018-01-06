@@ -23,14 +23,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5869279a7bafb11368b7fb232e6ca68ca7d98478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
-您可以使用 Visual Studio**即時運算**視窗執行函式或副程式時不執行您的應用程式。 如果函式或副程式包含中斷點，Visual Studio 會在適當處中斷執行。 您接著可以使用偵錯工具視窗檢查程式狀態。 這項功能稱為設計階段偵錯。  
+您可以使用 Visual Studio**即時運算**視窗執行函式或副程式時不執行您的應用程式。 如果函式或副程式包含中斷點，Visual Studio 會在適當處中斷執行。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能稱為設計階段偵錯。  
   
  下列程序示範如何使用這項功能。  
   
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
   
 10. 在**偵錯**功能表上，按一下 **繼續**，並確認您是否仍在設計模式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

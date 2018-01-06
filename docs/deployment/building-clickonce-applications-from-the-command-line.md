@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 86dba79e6e8b7e3f3b2837e494cfeddd2692d0cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只剩的另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在集中建置實驗室，或使用進階指令碼技術建置專案本身的範圍之外。  
@@ -160,14 +161,14 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL 和 UpdateURL  
  下表顯示四個 ClickOnce 部署的 URL 選項。  
   
-|URL 選項|說明|  
+|URL 選項|描述|  
 |----------------|-----------------|  
 |`PublishURL`|如果您要發行 ClickOnce 應用程式至網站的必要項。|  
-|`InstallURL`|選擇項。 設定此 URL 選項，如果安裝站台不同`PublishURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`InstallURL`至網頁的 URL。|  
-|`SupportURL`|選擇項。 設定此 URL 選項，如果支援站台不同`PublishURL`。 例如，您可以設定`SupportURL`至貴公司的客戶支援的網站。|  
-|`UpdateURL`|選擇項。 設定此 URL 選項，如果不同的更新位置`InstallURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`UpdateURL`至網頁的 URL。|  
+|`InstallURL`|選擇性。 設定此 URL 選項，如果安裝站台不同`PublishURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`InstallURL`至網頁的 URL。|  
+|`SupportURL`|選擇性。 設定此 URL 選項，如果支援站台不同`PublishURL`。 例如，您可以設定`SupportURL`至貴公司的客戶支援的網站。|  
+|`UpdateURL`|選擇性。 設定此 URL 選項，如果不同的更新位置`InstallURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`UpdateURL`至網頁的 URL。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   

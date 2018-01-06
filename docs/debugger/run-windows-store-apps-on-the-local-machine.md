@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08e0108a3fb7a93dc19fe1aa96988912068ace70
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 63cb81c9bc168ad0bda8d675c0bf0bbde3759eff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-the-local-machine"></a>在本機電腦上執行的 UWP 應用程式
 ![僅適用於 Windows](../debugger/media/windows_only_content.png "windows_only_content")  

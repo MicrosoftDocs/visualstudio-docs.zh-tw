@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc69edbe0865953d242967490a0852c9da4942b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff9458eed7f9c77a964240f81017d27d95d9622
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-flag-element"></a>命令旗標的項目
 修改其父項目。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>子元素  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |AllowParams|表示使用者可以輸入中的命令參數**命令**他們輸入命令的正式名稱時，視窗。<br /><br /> 適用於：`Button`|  
 |AlwaysCreate|即使它沒有任何群組或按鈕時，會建立功能表。<br /><br /> 適用於：`Menu`|  
@@ -73,10 +74,10 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)|提供的群組[按鈕項目](../extensibility/button-element.md)項目。|  
 |[Menus 元素](../extensibility/menus-element.md)|定義所有實作 VSPackage 的功能表。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

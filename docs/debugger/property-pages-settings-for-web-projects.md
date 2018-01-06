@@ -24,18 +24,19 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c86e45ea5108361271658d5dd8e7dfadbde2012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e58541c5ab0c7a38773740343349880aa5297e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 您可以變更網站偵錯組態中的屬性設定**屬性頁** 對話方塊中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁** 對話方塊。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>組態屬性資料夾 (起始選項分類)  
   
-|**設定**|**說明**|  
+|**設定**|**描述**|  
 |-----------------|---------------------|  
 |**起始動作**|標題，用以分類與應用程式啟動相關的選項。|  
 |**使用目前的頁面**|指定目前的頁面為偵錯的起始點。|  
@@ -54,5 +55,5 @@ ms.lasthandoff: 10/31/2017
 |**SQL Server 偵錯**|允許 SQL Server 資料庫物件偵錯。|  
 |**Silverlight 偵錯**|允許偵錯 Silverlight 元件。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

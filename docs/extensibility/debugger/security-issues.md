@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8061c419f81493e56a58df8fefbe4d3362d43e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 753f916d148675afd7313afc8673232f22280b7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-issues"></a>安全性問題
 偵錯使用 Visual Studio 的程式，所需的唯一權限是相同的開發人員必須在執行程式。 這包括大部分的情況下 （與其他服務，例如網際網路資訊服務，某些情況下可能需要較高的層級的權限） 的遠端偵錯。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  這表示開發人員可以偵錯的程式他或她入門任何特殊權限。 開發人員甚至可以偵錯的其他人是否相同的安全性群組的成員，其他人來啟動處理序。 若要啟用遠端偵錯，就必須只將必要的複製檔案至遠端電腦並啟動 msvsmon.exe，(請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)   
  [處理序偵錯管理員](../../extensibility/debugger/process-debug-manager.md)   
  [遠端偵錯](../../debugger/remote-debugging.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 6c7d8b1562b821129b3b9f0e6881f7a47a3a95da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供應用程式自動更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會定期讀取它以查看是否有可用更新，應用程式的部署資訊清單檔。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 >  應用程式更新會需要網路連接。 如果沒有網路連接，不論您所選擇的更新策略為何，應用程式將會執行但不檢查更新。  
   
 > [!NOTE]
->  在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 <xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 `deploymentProvider` Visual Studio 中的項目對應**更新位置**欄位**更新**對話方塊中的 [**發行**] 索引標籤。.NET Framework 3.5 則放寬了此規則。 如需詳細資訊，請參閱[部署 ClickOnce 應用程式的測試和實際執行伺服器，而 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
+>  在 .NET Framework 2.0 和 .NET Framework 3.0 中，不論應用程式是隨時檢查更新、在啟動之前或之後檢查更新，或者使用 <xref:System.Deployment.Application> API 檢查更新，您都必須設定部署資訊清單中的 `deploymentProvider`。 `deploymentProvider` Visual Studio 中的項目對應**更新位置**欄位**更新**對話方塊中的 [**發行**] 索引標籤.NET Framework 3.5 則放寬了此規則。 如需詳細資訊，請參閱[部署 ClickOnce 應用程式的測試和實際執行伺服器，而 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>在應用程式啟動後檢查更新  
  使用此策略時，應用程式會在執行中時，嘗試在背景中尋找及讀取部署資訊清單檔。 如果有可用的更新，下次使用者執行應用程式時，就會收到下載並安裝更新的提示。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/27/2017
   
  如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Deployment.Application>   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   

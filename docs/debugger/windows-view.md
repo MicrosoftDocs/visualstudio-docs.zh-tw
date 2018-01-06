@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d52dbe2dd362f657db4f974d81f418b4d26fd4f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-view"></a>視窗檢視
 當您第一次開啟 Spy + + 時，Windows 檢視會顯示系統中的所有視窗和控制項的樹狀結構。 視窗控制代碼和類別名稱會顯示。 目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層。 同層級視窗會顯示在其父代下方縮排的 expansible 清單。  
@@ -32,7 +33,7 @@ Spy++ 視窗檢視
   
  當視窗檢視有焦點時，您可以使用搜尋工具中的[視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)顯示資訊從任何視窗中開啟您的系統上。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：使用搜尋工具](../debugger/how-to-use-the-finder-tool.md)  
  顯示此工具會用於屬性或訊息期間，所進行的掃描。  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec66bd21eb119c348391f191f23570e66119122f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fe77428d1d9cfb5ff12554e87ec9afe15d6c86b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用編輯後繼續 (C#)
 利用 C# 的 [編輯後繼續]，偵錯時您可以在中斷模式中變更程式碼。 不需要停止並重新啟動偵錯工作階段，就可以套用這些變更。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
      當您重新啟動偵錯工作階段，設定會生效。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [支援的程式碼變更 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)   

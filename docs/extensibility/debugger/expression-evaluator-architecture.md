@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  表示將專用語言整合到 Visual Studio 偵錯封裝，實作所需的運算式評估工具 (EE) 介面，然後呼叫的通用語言執行階段的符號提供者 (SP) 和繫結器介面。 預存程序和繫結器物件，以及目前的執行位址，會評估運算式的內容。 這些介面產生及耗用的資訊代表 EE 架構中的重要概念。  
   
-## <a name="overview"></a>概觀  
+## <a name="overview"></a>總覽  
   
 ### <a name="parsing-the-expression"></a>剖析運算式  
  當您偵錯程式時，會評估運算式的原因，但永遠在中斷點 （由使用者用來放置中斷點或其中一個例外狀況所造成） 停止偵錯的程式。 所表示的是 Visual Studio 時取得堆疊框架，目前[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)介面，從 偵錯引擎 (DE)。 Visual Studio 接著會呼叫[GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)取得[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。 此介面代表的內容，在其中的運算式可以評估;[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)是評估程序的進入點。 目前，DE 實作所有介面。  
@@ -49,14 +50,14 @@ ms.lasthandoff: 10/31/2017
   
  請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需有關這個程序的顯示變數的值。 請參閱[變更本機值](../../extensibility/debugger/changing-the-value-of-a-local.md)如需有關如何變更變數的值。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  提供 DE 呼叫 EE 時傳遞的引數。  
   
  [主要的運算式評估工具介面](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  說明撰寫 EE，以及評估內容時所需的重要介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)   
  [變更區域變數的值](../../extensibility/debugger/changing-the-value-of-a-local.md)

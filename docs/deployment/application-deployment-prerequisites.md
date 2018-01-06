@@ -23,11 +23,12 @@ caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c323e3800e98e2451a371f3ff84b3351d760a94c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 為了確保應用程式順利安裝及執行，您必須先確認目標電腦上已安裝與應用程式相依的所有元件。 例如，使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立的大多數應用程式都與 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 具相依性；在安裝應用程式之前，目的地電腦上必須存在正確的 Common Language Runtime 版本。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/27/2017
   
  如果您變更任何啟動載入器選項，則必須變更未簽署的啟動載入器，稍後再簽署啟動載入器檔案。  
   
-|命令列引數|說明|  
+|命令列引數|描述|  
 |---------------------------|-----------------|  
 |**-？，-h、-說明**|顯示 [說明] 對話方塊。|  
 |**--componentsurl 的 url**|顯示此安裝程式的儲存 URL 和元件 URL。|  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="operating-system-support"></a>作業系統支援  
  Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core 提供具有有限功能的低維護伺服器環境，因此不支援 Visual Studio 啟動載入器。 例如，Server Core 安裝選項只支援 .NET Framework 3.5 Server Core 設定檔，因此無法執行與完整 .NET Framework 相依的 Visual Studio 功能。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

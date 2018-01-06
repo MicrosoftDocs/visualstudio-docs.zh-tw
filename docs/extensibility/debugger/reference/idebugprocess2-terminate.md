@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2bdc4fbe8910eba6082c69656c5765c47673f02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c3bed9f3df7266a12d8cd8c39f16955fa647c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 終止處理序。  
@@ -41,5 +42,5 @@ int Terminate();
 ## <a name="remarks"></a>備註  
  當終止處理程序時，會終止該處理序內的所有程式。沒有任何可以執行任何更多的程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

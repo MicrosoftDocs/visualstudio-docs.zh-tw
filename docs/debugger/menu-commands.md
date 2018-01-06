@@ -15,16 +15,17 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 824dfd632b48bc4f80324e119dfe1af9a5c7015e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f1aa79c58bcb5c9281811319db80c002b03e2be3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menu-commands"></a>功能表命令
 本節中的說明主題清單 Spy + + 功能表上可用的命令。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Spy 功能表命令](../debugger/spy-menu-commands.md)  
  描述可從每個命令**Spy**功能表。  
   

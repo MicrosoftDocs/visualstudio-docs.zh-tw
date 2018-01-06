@@ -15,18 +15,19 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 若要與整合整合式的開發環境 (IDE)，以作為無縫越好，並提供整合的經驗，原始檔控制外掛程式可以使用 IDE 所實作的回呼函式。 外掛程式可以呼叫這些函式在適當時將資訊傳遞至 IDE; 原始檔控制作業的時間IDE 可以做為內嵌的項目在其原生的 UI 中顯示這項資訊。 使用者擁有較低分散的體驗，在此案例中比如果外掛程式採用自己的 UI。  
   
  必要的標頭檔是 scc.h。 預設位置是 \Program Files\VSIP 8.0\EnvSDK\common\inc\\。 此外也會在 \Program Files\VSIP 8.0\MSSCCI 有原始檔控制外掛程式範例的 VSIP 資料夾中\\。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
  描述回呼函式，以供[SccOpenProject](../extensibility/sccopenproject-function.md)顯示從原始檔控制外掛程式透過 IDE 的訊息。  
   

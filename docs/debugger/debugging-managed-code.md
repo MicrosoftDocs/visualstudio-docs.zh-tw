@@ -21,16 +21,17 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 本節針對 Managed 應用程式或是以 Common Language Runtime 為目標的程式語言 (例如 Visual Basic、C# 和 C++) 所撰寫的應用程式，說明常見的偵錯問題和技術。 本文所說明的技術屬於高階技術。 如需詳細資訊，請參閱[使用偵錯工具](../debugger/debugger-basics.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [輸出視窗中的診斷訊息](../debugger/diagnostic-messages-in-the-output-window.md)  
  描述<xref:System.Diagnostics.Debug>和<xref:System.Diagnostics.Trace>類別，與您可以撰寫執行階段訊息**輸出**視窗。 這兩個類別包括能夠讓資訊輸出的方法，有些資訊輸出不會中斷執行，有些則會在指定條件失敗時中斷執行。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  [混合模式偵錯](../debugger/debugging-mixed-mode-applications.md)  
  說明偵錯混合模式應用程式的方法。 也就是結合機器碼和 Managed 程式碼的任何應用程式。  
   
- [錯誤： 無法進行偵錯系統上已啟用核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [錯誤：無法進行偵錯，系統中已啟動核心偵錯工具](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  說明如果您嘗試在偵錯 managed 程式碼就會發生的錯誤訊息[!INCLUDE[win7](../debugger/includes/win7_md.md)]， [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]， [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]， [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]，或已在偵錯模式啟動 Windows NT 系統。  
   
  [JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
  [偵錯首頁](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：在設計階段針對自訂 Windows Forms 控制項進行偵錯](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)   
  [偵錯工具安全性](../debugger/debugger-security.md)  
  [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能的教學課程](../debugger/debugger-feature-tour.md)

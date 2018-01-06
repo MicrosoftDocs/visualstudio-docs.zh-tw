@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2335c0279c8e7a23e1b514a8264651e73fedebfc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：在 ClickOnce 部署中指定個別必要條件的支援 URL
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行應用程式。 這些包括必要的最小版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，作業系統，必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不過，無法安裝這些必要條件的任何本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。  
@@ -68,7 +69,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
       </dependency>  
     ```  
   
-5.  選擇項。 .NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 的程式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]文字編輯器中的應用程式。  
+5.  選擇性。 .NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 的程式[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]文字編輯器中的應用程式。  
   
 6.  .NET Framework 4 必要條件，新增`supportUrl`屬性`compatibleFrameworks`項目：  
   
@@ -84,7 +85,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  支援 URL 不會顯示在對話方塊中，如果應用程式標示為在部分信任中執行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<w > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   

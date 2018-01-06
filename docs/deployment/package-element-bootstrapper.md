@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5281d53f213d2cb09f470484ddca2fbaa8cb4601
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;元素 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。  
@@ -147,9 +148,9 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Culture`|必要項。 定義這個封裝，決定要使用的語言的文化特性。 這個屬性是索引鍵到`Strings`元素，其在安裝期間列出產品名稱和錯誤訊息的特定文化特性的字串。|  
-|`Name`|必要項。 例如，開發人員工具內顯示的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵到`Strings`項目，其中應包含`String`具有項目`Name`和`Culture`屬性設定為符合`Name`和`Culture`屬性`Package`。|  
-|`LicenseAgreement`|選擇項。 指定的檔案名稱中包含使用者授權合約 (EULA) 散發套件。  這個檔案可以是純文字 (.txt) 或 Rtf 格式。 (.rtf)|  
+|`Culture`|必要。 定義這個封裝，決定要使用的語言的文化特性。 這個屬性是索引鍵到`Strings`元素，其在安裝期間列出產品名稱和錯誤訊息的特定文化特性的字串。|  
+|`Name`|必要。 例如，開發人員工具內顯示的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵到`Strings`項目，其中應包含`String`具有項目`Name`和`Culture`屬性設定為符合`Name`和`Culture`屬性`Package`。|  
+|`LicenseAgreement`|選擇性。 指定的檔案名稱中包含使用者授權合約 (EULA) 散發套件。  這個檔案可以是純文字 (.txt) 或 Rtf 格式。 (.rtf)|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會顯示完整的封裝檔案轉散發[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
@@ -189,5 +190,5 @@ ms.lasthandoff: 10/27/2017
 </Package>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

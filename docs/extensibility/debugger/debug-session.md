@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd1654ba50f8bf4fd11558518f826d46f91151c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d071df3240b36ce547f5581bbb2c5bbf27193487
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-session"></a>偵錯工作階段
 偵錯工具就架構而言，**工作階段**:  
@@ -26,6 +27,6 @@ ms.lasthandoff: 10/31/2017
   
 -   是由工作階段偵錯管理員 (SDM) 實作。 如需詳細資訊，請參閱[工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
 您可以設定 ClickOnce 應用程式與較新的檔案版本和組件版本的組件變成可用時自動更新。 若要確定您的客戶同意此行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，並不會安裝。  
@@ -246,7 +247,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  您可能要關閉並重新開啟 Visual Studio 以查看更新的同意對話方塊中 [必要條件] 對話方塊。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="creating-and-testing-the-setup-program"></a>建立並測試安裝程式  
  設定更新同意應用程式的必要元件之後，您可以產生應用程式的安裝程式並啟動載入器。  
@@ -301,7 +302,7 @@ ms.lasthandoff: 10/27/2017
   
 8.  如果出現 [安裝應用程式] 對話方塊中，按一下**安裝**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   

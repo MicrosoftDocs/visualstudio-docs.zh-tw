@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aabfa9551b591b87631100326e328db0511a3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 393661fba27341ec858aa5c099ea9d131e42273a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [圖形管線階段] 視窗可協助您了解如何透過 Direct3D 圖形管線各階段轉換個別繪製呼叫。  
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
   
  ![頂點著色器階段結果預覽](media/gfx_diag_vertex_shader_preview.png)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

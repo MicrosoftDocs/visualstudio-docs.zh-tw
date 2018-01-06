@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47ed06179d09996ac1b35cd3d2dd5d6cb99296d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d5075e55f1db35f7a588094a7c398c9d4c25483c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  若要減輕這項弱點，請留意視覺化檢視所公開的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
  [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
  [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   

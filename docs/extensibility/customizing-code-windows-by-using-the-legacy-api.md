@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼視窗
 程式碼視窗會支援一或多個文字檢視文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
  語言服務實作的程式碼視窗管理員，並負責管理裝飾，如下拉式清單列。 程式碼視窗呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>程式碼視窗初始化期間的方法。 下拉式清單列或一個按鈕列，進行這個呼叫時，可以新增語言服務 (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) 到程式碼視窗。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  `Customizing Code Windows by Using the Legacy API`  
  說明如何自訂程式碼視窗使用舊版 API。  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
  [如何： 引發事件，當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  說明如何將文件檢視附加至文件資料物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   

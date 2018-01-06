@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3484ac7aa26f630245a471a234dd19468e50ebf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 345dbfd982c2e80fadc0f4c3d9484c662b6090ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 此訊息可能是因為遠端偵錯監視已不正確設定遠端電腦上或遠端電腦因為網路問題或防火牆的存在而無法存取。
@@ -169,5 +170,5 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生數�
 ## <a name="more-help"></a>詳細的說明  
  若要取得更多的遠端偵錯工具的說明，請開啟 遠端偵錯工具的 說明 頁面 (**協助 > 使用量**遠端偵錯工具中)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>建立設定類別
 在此逐步解說中您建立 Visual Studio 設定類別目錄，並使用它來儲存值，並從設定檔案還原值。 設定類別是一群相關的屬性顯示為 「 自訂設定點。 」也就是為核取方塊在**匯入和匯出設定**精靈。 (您可以在它找到**工具**功能表。)儲存或還原為類別目錄時，設定和個別的設定不會顯示在精靈中。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在樹狀檢視中的左窗格中，依序展開**我類別**，然後按一下 **我的格線頁**。  
   
-4.  值變更**OptionFloat**至 3.1416 和**OptionInteger**到 12。 按一下 [確定]。  
+4.  值變更**OptionFloat**至 3.1416 和**OptionInteger**到 12。 按一下 [確定 **Deploying Office Solutions**]。  
   
 5.  在**工具**功能表上，按一下 **匯入和匯出設定**。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 10/31/2017
   
 11. 關閉 設定檔，而不變更它。  
   
-12. 上**工具**功能表上，按一下**選項**，依序展開**我類別**，按一下**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**設為 1。 按一下 [確定]。  
+12. 上**工具**功能表上，按一下**選項**，依序展開**我類別**，按一下**我的格線頁**然後再將值變更**OptionFloat**為 1.0 和**OptionInteger**設為 1。 按一下 [確定 **Deploying Office Solutions**]。  
   
 13. 上**工具**功能表上，按一下 **匯入和匯出設定**，選取**匯入選取的環境設定**，然後按一下 **下一步**。  
   

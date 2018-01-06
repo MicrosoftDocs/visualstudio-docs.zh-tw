@@ -20,11 +20,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -103,11 +104,11 @@ ms.lasthandoff: 12/07/2017
   
      您可能需要加入**以服務方式登入**權利加入此帳戶的使用者 (尋找**本機安全性原則**(secpol.msc) 中**啟動**頁面或視窗 (或類型**secpol**在命令提示字元)。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶加入**屬性**視窗，然後按一下**確定**)。 按 [ **下一步**]。  
   
-5.  選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按一下 [下一步] 。  
+5.  選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按 [ **下一步**]。  
   
 6.  如果可以啟動服務，您就會看到 [您已順利完成 Visual Studio 遠端偵錯工具組態精靈] 。 如果無法啟動服務，您就會看到 [無法完成 Visual Studio 遠端偵錯工具組態精靈] 。 此頁面也會提供啟動服務所需遵循的一些祕訣。  
   
-7.  按一下 [完成] 。  
+7.  按一下 [ **完成**]。  
   
  此時 [遠端偵錯工具] 會以服務方式執行。 您可以驗證，請移至**控制台 > 服務**，並尋找**Visual Studio 2015 遠端偵錯工具**。  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 12/07/2017
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)   

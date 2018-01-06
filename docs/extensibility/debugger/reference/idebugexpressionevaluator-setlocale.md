@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdba51967b470023deb5997bc243b900e3155245
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe9dd81fad59c526233a56f1c5bcd1a178ad46f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 這個方法會設定要用來建立可列印結果的語言。  
@@ -47,5 +48,5 @@ int SetLocale(
 ## <a name="remarks"></a>備註  
  運算式評估工具 (EE) 已載入，因此 EE 必須要能夠立即切換語言時，這個方法可能會呼叫多次。 EE 適當語言傳回錯誤訊息和字串用於這個地區設定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

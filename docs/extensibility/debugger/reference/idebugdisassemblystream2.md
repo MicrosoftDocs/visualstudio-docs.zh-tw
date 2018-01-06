@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c15e358a415bd3efc95b81daa2058320d79478
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 63426abcc059da3278569f433907d9f073e510b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 此介面代表資料流的指示。  
@@ -38,7 +39,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDisassemblyStream2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|讀取從反組譯碼資料流中目前位置開始的指示。|  
 |[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|讀取的指標在中移動反組譯碼資料流給定的指示，相對於指定的位置數目。|  
@@ -59,7 +60,7 @@ IDebugDisassemblyStream2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eb280684f0c06391bc6c0596093c01f260f685d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;元素 （ClickOnce 應用程式）
 識別應該是組件時執行這[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用戶端電腦上執行應用程式。  
@@ -60,32 +61,32 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|選擇項。 此值不是由.NET Framework。|  
+|`name`|選擇性。 此值不是由.NET Framework。|  
   
  `entryPoint`具有下列項目。  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必要項。 角色`assemblyIdentity`和其屬性定義於[ \<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
+ 必要。 角色`assemblyIdentity`和其屬性定義於[ \<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
   
  `processorArchitecture`這個項目的屬性和`processorArchitecture`中定義屬性`assemblyIdentity`其他位置中應用程式資訊清單必須相符。  
   
 ## <a name="commandline"></a>命令列  
- 必要項。 必須是子系`entryPoint`項目。 它沒有任何子項目，並具有下列屬性。  
+ 必要。 必須是子系`entryPoint`項目。 它沒有任何子項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`file`|必要項。 啟動組件的本機參考[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此值不能包含斜線 （/） 或斜線 (\\) 路徑分隔符號。|  
-|`parameters`|必要項。 描述要進入點所採取的動作。 唯一有效的值是`run`; 提供空白字串，如果`run`假設。|  
+|`file`|必要。 啟動組件的本機參考[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此值不能包含斜線 （/） 或斜線 (\\) 路徑分隔符號。|  
+|`parameters`|必要。 描述要進入點所採取的動作。 唯一有效的值是`run`; 提供空白字串，如果`run`假設。|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- 選擇項。 如果包含，指定此部署包含將自訂主機，內部部署的元件，並不是獨立的應用程式。  
+ 選擇性。 如果包含，指定此部署包含將自訂主機，內部部署的元件，並不是獨立的應用程式。  
   
  如果這個項目已存在，`assemblyIdentity`和`commandLine`項目也不得存在。 如有需要，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]將會在安裝期間引發驗證錯誤。  
   
  這個項目具有任何屬性，而且沒有子節點。  
   
 ## <a name="customux"></a>customUX  
- 選擇項。 指定的應用程式已安裝及維護自訂安裝程式，而且不建立開始功能表項目、 快顯或新增或移除程式 項目。  
+ 選擇性。 指定的應用程式已安裝及維護自訂安裝程式，而且不建立開始功能表項目、 快顯或新增或移除程式 項目。  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
@@ -114,5 +115,5 @@ ms.lasthandoff: 10/27/2017
   </entryPoint>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

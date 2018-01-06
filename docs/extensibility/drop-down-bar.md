@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f5da476bb9b54b536cb296112d578574822e410
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="drop-down-bar"></a>下拉式清單列
 在下拉式清單列提供程式碼視窗頂端，並包含兩個下拉式清單。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>附加至程式碼視窗的下拉式清單列  
  若要在建立時，請將下拉式清單列附加至程式碼視窗中，語言服務應該附加至下拉式清單列時<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>方法呼叫。 如果呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A>方法表示下拉式清單列沒有已不存在，然後呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>。 若要存取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>介面，請呼叫<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>從<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>傳回指標給您時您<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>實作已附加。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用舊版 API 的自訂程式碼視窗](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [舊版語言服務中對巡覽列的支援](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

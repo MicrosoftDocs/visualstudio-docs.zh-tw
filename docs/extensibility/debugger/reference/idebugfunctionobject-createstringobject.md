@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60e690ebe589671e9ead6496f33f30923ea3ca36
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc5e3d3c0ad71eb3b28c67756c321326687bf325
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 建立字串物件。  
@@ -52,5 +53,5 @@ int CreateStringObject(
 ## <a name="remarks"></a>備註  
  呼叫這個方法來建立物件，表示字串是由表示的函式的參數， [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

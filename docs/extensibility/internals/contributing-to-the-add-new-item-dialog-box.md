@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>提供給加入新項目對話方塊
 專案子類型可提供完整的新目錄的項目**加入新項目**註冊對話方塊**加入項目**下的 範本`Projects`登錄子機碼。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
   
  您可以篩選中的項目**加入新項目**對話方塊中，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>專案子類型的彙總工具物件上的介面。 比方說，彙總實作資料庫專案的專案子類型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案中，可以篩選[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]特定項目從**加入新項目**，實作篩選，然後在對話方塊開啟，可以加入資料庫專案的特定項目支援`VSHPROPID_ AddItemTemplatesGuid`中<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。 如需有關篩選和加入項目至**加入新項目**對話方塊中，請參閱[將項目加入新項目 對話方塊加入](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

@@ -13,16 +13,17 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>偵錯工作
 偵錯程式，它必須啟動並偵錯引擎 (DE) 必須連接到它，否則 DE 必須附加至先前啟動程式。 在附加之後，DE 必須產生特定的啟動事件。 在回應時，偵錯封裝嘗試繫結在 IDE 中設定的中斷點。 當程式叫用繫結的中斷點時，它會中止，並等待使用者輸入。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [安全性問題](../../extensibility/debugger/security-issues.md)  
  討論偵錯程式所需的安全性步驟。  
   
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)  
  說明如何 DE 同時中運作的程式碼、 文件和運算式評估內容。 描述三個內容、 位置、 位置或評估適用於它的每個軸。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

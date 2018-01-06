@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4a25eeee8eceaf5ee94a4c7217f72fd8e9841c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b933bbaeb3a4bcfb616250df7e190fea71fea209
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
 若要進一步了解中所列的視窗[視窗檢視](../debugger/windows-view.md)，使用[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)。  

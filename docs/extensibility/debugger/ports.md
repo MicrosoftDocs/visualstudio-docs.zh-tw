@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 926f5e9a80a91da57d843c11175865f78775e38c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6378ddc2663e4ecf239c78ede96f0c1bc12d77a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ports"></a>連接埠
 偵錯工具就架構而言，**連接埠**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供處理所有 windows 處理程序，原生和 managed 的預設連接埠。 自訂連接埠必須與不是以 Windows 為基礎的外部裝置連線的實作。 若要提供這類自訂連接埠，自訂連接埠供應商也必須實作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [處理程序](../../extensibility/debugger/processes.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

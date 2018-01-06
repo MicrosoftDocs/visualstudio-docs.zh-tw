@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 63377b7edde2204d30802361aa5628d3aa473652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
@@ -104,6 +105,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="limitations-of-trusted-application-deployment"></a>信任的應用程式部署的限制  
  您可以使用信任的應用程式部署，授與提高的信任給透過 Web 或企業共用部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您不必針對在 CD 上散發的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式使用信任的應用程式部署，因為依預設，這些應用程式便已被授與完全信任。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

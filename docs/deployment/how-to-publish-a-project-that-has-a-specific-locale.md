@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 48ad25fd215ae9485420b3fbbfa9ac3cd41b8827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：發行具有指定地區的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。  
@@ -164,7 +165,7 @@ ms.lasthandoff: 10/27/2017
   
 7.  查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了當地語系化資源 DLL 以外，您還應該查看安裝的檔案，例如資訊清單、setup.exe 和發行網頁檔案。 (根據預設，ClickOnce 會在 EXE 和 DLL 中附加 .deploy 副檔名，您可以在部署後移除此副檔名)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [巨集的開發環境](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [巨集總管 視窗](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   

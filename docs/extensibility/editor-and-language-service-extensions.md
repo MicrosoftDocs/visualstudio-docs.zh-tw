@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e5ad07694604c7b61c922cd097809fa037e0501
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 59de764dfcb976dfac303f44a67340e117ae5e06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-and-language-service-extensions"></a>編輯器和語言服務延伸模組
 您可以擴充 Visual Studio 程式碼編輯器的大部分功能。 編輯器以 Windows Presentation Foundation (WPF) 為基礎，而以 managed 程式碼撰寫。 雖然此設計不同於在舊版的 Visual Studio 中的設計，它會提供大部分相同的功能。 若要擴充編輯器 中，使用 Managed Extensibility Framework (MEF)。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)|若要使用編輯器項目範本的簡介。|  
 |[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)|導入的設計和核心編輯器的功能，並示範如何延伸該架構的文件連結。|  

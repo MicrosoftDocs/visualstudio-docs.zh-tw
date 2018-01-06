@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗
 **記憶體**視窗可讓您檢視您的應用程式使用的記憶體空間。 **監看式**視窗中，**快速監看式**對話方塊中，**自動變數**視窗中，和**區域變數**視窗會顯示的變數，也就是內容儲存在記憶體中的特定位置。 但是**記憶體** 視窗會顯示整體。 這類檢視對於檢查無法適當地顯示在其他視窗的大批資料 (例如，緩衝區或很大的字串) 來說極為方便。 不過，**記憶體**視窗並不限於顯示資料。 它還會顯示記憶體空間內的所有內容，不管這些內容是資料、程式碼，或是未指派之記憶體內的無意義資料。  
@@ -117,5 +118,5 @@ ms.lasthandoff: 10/31/2017
   
      現在，當您使用執行命令例如**步驟**，會顯示的記憶體位址會自動隨著指標變動而變動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

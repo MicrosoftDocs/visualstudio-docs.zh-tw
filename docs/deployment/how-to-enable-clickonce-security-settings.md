@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7fc7df79f798596901d74d089baf1b84f1dcd152
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d9fb07f8348e161743b373a83d49c4dd614d8c5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 必須啟用 ClickOnce 應用程式的程式碼存取安全性，才能發行應用程式。 當您發行應用程式使用發行精靈時，這會自動完成。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  使用發行精靈發行應用程式每次會選取此核取方塊。您必須將它清除每個成功發佈之後，再次。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  

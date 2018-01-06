@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45ef0413540729abb67caad992a557c5b4692dfe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d23b1b97145b5e0b24ebfe814aeca5168ef6a06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 這個介面可讓偵錯管理員 (SDM) 通知的處理程序是從處理序中斷連結或附加至工作階段。  
@@ -45,7 +46,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProcessEx2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|通知處理程序工作階段現在偵錯程序。|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|通知處理程序工作階段不會再偵錯程序。|  
@@ -61,6 +62,6 @@ IDebugProcessEx2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

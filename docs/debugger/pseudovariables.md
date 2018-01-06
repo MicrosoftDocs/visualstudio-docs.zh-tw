@@ -21,11 +21,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b92b070641e4eed47b0094e1611f78cd799e6952
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的虛擬變數
 虛擬變數是用來顯示在變數視窗中的特定資訊的詞彙或**快速監看式** 對話方塊。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。  
@@ -63,13 +64,13 @@ $handles
   
  在 Visual Basic 中，您可以使用下表中顯示的虛擬變數：  
   
-|虛擬變數|函式|  
+|虛擬變數|功能|  
 |--------------------|--------------|  
 |`$delete` 或 `$$delete`|刪除所建立的隱含變數**即時運算**視窗。 語法是`$delete,`*變數*或`$delete,`*變數*`.`|  
 |`$objectids` 或 `$listobjectids`|將所有作用中物件 ID 顯示為指定運算式的子項。 語法是`$objectid,`*運算式*或`$listobjectids,`*運算式*`.`|  
 |`$`*N*`#`|顯示物件具有相等的物件識別碼*N*。|  
 |`$dynamic`|顯示特殊**動態檢視**實作物件節點`IDynamicMetaObjectProvider`。 介面。 語法是`$dynamic,`*物件*。 此功能僅適用於使用 .NET Framework 第 4 版的程式碼。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [變數視窗](../debugger/debugger-windows.md)

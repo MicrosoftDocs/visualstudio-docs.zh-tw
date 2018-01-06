@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動時執行 Visual Studio 外部的應用程式中發生的例外狀況或損毀。 這可讓您測試您的應用程式未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**啟用 Just-In-Time 偵錯這些程式碼類型**方塊中，選取或清除相關的程式類型： **Managed**，**原生**，或**指令碼**.    
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
 即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
      若要啟用時間恰好偵錯 Windows Forms 應用程式，您必須執行下列額外的步驟：  
   
-2.  設定`jitDebugging`值設定為`true`中`system.windows.form`區段 machine.config 或*\<應用程式名稱 >*。.exe.config 檔案：  
+2.  設定`jitDebugging`值設定為`true`中`system.windows.form`區段 machine.config 或*\<應用程式名稱 >*.exe.config 檔案：  
   
     ```  
     <configuration>  
@@ -122,7 +123,7 @@ static void Main(string[] args)
 > [!IMPORTANT]
 >  為了讓這個程序運作[發行組態](../debugger/how-to-set-debug-and-release-configurations.md)，您必須關閉[Just My Code](../debugger/just-my-code.md)。 在 Visual Studio 中，按一下 **工具 > 選項**。 在**選項**對話方塊中，選取**偵錯**。 移除從檢查**啟用 Just My Code**。  
   
- 建置方案 (在 Visual Studio 中，選擇 **建置 > 重建方案**)。 您可以選擇偵錯或發行組態 (選擇**偵錯**完整的偵錯經驗)。 如需建置組態的詳細資訊，請參閱[了解建置組態](../ide/understanding-build-configurations.md)。  
+ 建置方案 (在 Visual Studio 中，選擇 **建置 > 重建方案**)。 您可以選擇偵錯或發行組態 (選擇**偵錯**完整的偵錯經驗)。 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
   
  在建置程序會建立可執行檔的 ThrowsNullException.exe。 您可以建立 C# 專案的資料夾底下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或**...\ThrowsNullException\ThrowsNullException\bin\Release**。  
   
@@ -176,7 +177,7 @@ static void Main(string[] args)
   
      若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [在 Just-in-time，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 >   
 >  您可以透過 **Monitor** 模式執行代理程式，即可在 IntelliTrace 資料中收集效能相關事件。 **Monitor** 模式的效能影響低於 **Trace** 模式或 **IntelliTrace 獨立收集器**。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。 請參閱[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。  
   
- **Requirements**  
+ **需求**  
   
 -   .NET Framework 3.5、4 或 4.5  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
   
     2.  將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。  
   
-         例如：  
+         例如:   
   
         -   針對 **DefaultAppPool** 應用程式集區中的 Web App：  
   
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
   
     2.  在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。  
   
-         例如：  
+         例如:   
   
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`  
   
@@ -178,7 +179,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。  
   
-     例如：  
+     例如:   
   
     -   使用 Windows **icacls** 命令設定權限：  
   
@@ -292,7 +293,7 @@ ms.lasthandoff: 10/31/2017
   
 -   只有當您認為沒有問題，或是可以重現問題，請執行收集器。  
   
-     開始收集，並重現問題，然後停止收集。 在 Visual Studio Enterprise 中開啟 .iTrace 檔案，並檢查資料。 請參閱 [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)。  
+     開始收集，並重現問題，然後停止收集。 在 Visual Studio Enterprise 中開啟 .iTrace 檔案，並檢查資料。 請參閱 [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案](#BKMK_View_IntelliTrace_Log_Files)。  
   
 -   針對 Web App 和 SharePoint 應用程式，收集器會為每個共用指定應用程式集區的應用程式記錄資料。 這可能會讓任何共用相同應用程式集區的 App 變慢，即使您只能在收集計劃中指定單一 App 的模組也是一樣。  
   
@@ -367,7 +368,7 @@ ms.lasthandoff: 10/31/2017
   
      是，為了降低對效能的影響，IntelliTrace 會限制只對下列值進行資料收集：傳遞給方法以及從方法傳回的基本資料類型值，以及傳遞給方法以及從方法傳回之最上層物件欄位中的基本資料類型值。  
   
-     例如，假設您有接受整數 `AlterEmployee` 和 `id` 物件 `Employee` 的 `oldemployee`方法簽章：  
+     例如，假設您有接受整數 `AlterEmployee` 和 `id` 物件 `Employee` 的 `oldemployee` 方法簽章：  
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

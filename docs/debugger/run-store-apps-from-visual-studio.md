@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71e467984e0211496bea39a7b0c5207b228e4071
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: c93436266dacada869ca461405e39d29be346e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-from-visual-studio"></a>從 Visual Studio 執行 UWP 應用程式
 UWP 應用程式上執行廣泛的裝置，以及 Visual Studio 提供您數種方式執行並與這些應用程式互動。 "F5" 體驗已獲增強，可在開發期間輕鬆地偵錯、分析和測試應用程式。  
@@ -32,8 +33,8 @@ UWP 應用程式上執行廣泛的裝置，以及 Visual Studio 提供您數種�
   
 |||  
 |-|-|  
-|[在本機電腦上執行的 UWP 應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)|在 UWP 應用程式在裝置上執行 Visual Studio。|  
-|[UWP 應用程式在模擬器中執行](../debugger/run-windows-store-apps-in-the-simulator.md)|在 UWP 應用程式執行的桌面視窗中，會模擬[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]功能，例如觸控和方向。|  
-|[在遠端電腦上執行的 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)|部署和執行在 UWP 應用程式透過網路或直接透過乙太網路纜線連接到 Visual Studio 電腦的裝置上。|  
+|[在本機電腦上執行 UWP App](../debugger/run-windows-store-apps-on-the-local-machine.md)|在 UWP 應用程式在裝置上執行 Visual Studio。|  
+|[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)|在 UWP 應用程式執行的桌面視窗中，會模擬[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]功能，例如觸控和方向。|  
+|[在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)|部署和執行在 UWP 應用程式透過網路或直接透過乙太網路纜線連接到 Visual Studio 電腦的裝置上。|  
 |[在模擬器中執行 Windows Phone 應用程式](../debugger/run-windows-phone-apps-in-the-emulator.md)|執行 UWP 應用程式在模擬 Windows Phone 的桌面視窗中。|  
-|[部署 Visual Studio 從 UWP 應用程式](../debugger/deploy-windows-store-apps-from-visual-studio.md)|部署和註冊在 UWP 應用程式上進行臨機操作測試的裝置。|
+|[從 Visual Studio 部署 UWP App](../debugger/deploy-windows-store-apps-from-visual-studio.md)|部署和註冊在 UWP 應用程式上進行臨機操作測試的裝置。|

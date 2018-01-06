@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息碼和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送至特定處理程序或特別適用於捕捉視窗初始化訊息的執行緒所擁有的所有 windows 訊息。  
@@ -48,7 +49,7 @@ Spy++ 訊息檢視
   
 6.  當您有足夠的訊息時，選擇**停止記錄**從**訊息**功能表。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [控制訊息檢視](../debugger/how-to-control-messages-view.md)  
  說明如何管理訊息檢視。  
   

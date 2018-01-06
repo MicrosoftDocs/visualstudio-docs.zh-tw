@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bfd605665627bcc9269f9225acb7d2e12418ab4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d28b6d4eb18535cbfef39790b544288ad39659c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 方法
 預留位置方法作為偵錯工具的中斷點目標。 這個方法不能內嵌或最佳化。  
@@ -37,5 +38,5 @@ private void NotifyDebuggerOfWaitCompletion()
   
 ## <a name="requirements"></a>需求  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

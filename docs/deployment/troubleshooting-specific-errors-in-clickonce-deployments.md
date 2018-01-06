@@ -23,11 +23,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 40c679811f137e77909395042d91d0458c874d90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 本主題列出當您部署時，可能會發生下列常見錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。  
@@ -139,6 +140,6 @@ ms.lasthandoff: 10/27/2017
 |無法透過網路啟動捷徑。|捷徑[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]只在本機硬碟上啟動應用程式。 無法啟動這類開啟指向遠端伺服器上的捷徑檔案的 URL。|  
 |應用程式太大而無法在線上，在部分信任中執行。 如需協助，請連絡應用程式廠商或您的系統管理員。|在部分信任中執行的應用程式不能大於線上應用程式的配額，其預設值為 250 MB 大小的一半。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06beda1fdeda9f62d8f89b9458f488961d39fe29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 回應在 Just-in-time 偵錯工具
 
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
 
     在 IIS 管理員 中，以滑鼠右鍵按一下伺服器節點，然後選擇 **切換到功能檢視**。 在 [ASP.NET] 區段中，選擇**.NET 編譯**，並確定您選擇**False**做為偵錯行為 （步驟都在舊版 IIS 不同）。
   
-## <a name="see-also"></a>另請參閱    
+## <a name="see-also"></a>請參閱    
  [偵錯工具基礎](../debugger/debugger-basics.md)   

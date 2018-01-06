@@ -27,11 +27,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 603ff665e2c01abe62954e4e65e49a095d358b29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 53f9c0114573c6f08a2d9219e4dd2028ffe9ac7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 有各種不同的問題[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性、 應用程式版本和資訊清單的語法和語意，可能會導致[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署未順利完成。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  您更新的資訊清單每次您必須再次加以簽署。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

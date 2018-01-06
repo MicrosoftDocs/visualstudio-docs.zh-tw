@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 11e10800ff51abd6f95447d85204a44f8367f551
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: cplusplus
+ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce Unmanaged API 參考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]從 dfshim.dll 未受管理的公用 Api。  
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/27/2017
 ### <a name="return-value"></a>傳回值  
  如果成功，會傳回 S_OK;否則，會傳回 HRESULT，表示失敗。 如果 managed 例外狀況發生時，會傳回 0x80020009 (DISP_E_EXCEPTION)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

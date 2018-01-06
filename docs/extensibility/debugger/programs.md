@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e34dbcf9c19b5e8e7a16d2f409159597670cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03b4885e653d879e3aaec1d9a68bc9be144cb676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programs"></a>Programs
 偵錯工具就架構而言，**程式**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面，建立程式已連接之前，或做為附加的處理序，視實作而定的一部分。 根據對應時的連接埠列舉處理序的程式，會建立每個程式[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)傳遞做為引數的介面[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 雖然偵錯引擎也會產生`IDebugProgram2`介面來代表程式，這些程式不會建立符合程式節點。 `IDebugProgramNode2` DE 所建立的介面可用來實際偵錯時所建立的連接埠僅適用於探索處理程序中執行的程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [處理程序](../../extensibility/debugger/processes.md)   
  [程式節點](../../extensibility/debugger/program-nodes.md)   
  [模組](../../extensibility/debugger/modules.md)   

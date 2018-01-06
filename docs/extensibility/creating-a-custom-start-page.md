@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9782e51688ae1ef4fda3ed52636de54149fa79e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 您可以依照此文件中的步驟來建立自訂起始頁。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   您已經測試您的起始頁，並找到它的穩定性之後，請使用**自訂起始頁**選項**選項**對話方塊來選取做為 Visual Studio 的主要執行個體中的 [開始] 頁面  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 在 [開始] 頁面中加入自訂的 XAML](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [將使用者控制項加入至 [開始] 頁面](../extensibility/adding-user-control-to-the-start-page.md)   
  [將 Visual Studio 命令加入至 [開始] 頁面](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   

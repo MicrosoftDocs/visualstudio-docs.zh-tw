@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2be6dfa5b5946c2da92becd7b1699b203c8a170e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 276435ea2f2e13837b301ab6a0228c12682773e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 可讓目標電腦的相關資訊的查詢。  
@@ -34,7 +35,7 @@ IDebugWindowsComputerPort2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugWindowsComputerPort2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|擷取電腦的相關資訊的偵錯工具中執行。|  
   

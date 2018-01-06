@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說： 偵錯平行應用程式在 Visual Studio 中
 本逐步解說示範如何使用**平行工作**和**平行堆疊**視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 程式碼中斷之後，本逐步解說示範如何使用**平行工作**和**平行堆疊**視窗來檢查。  
@@ -304,7 +305,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="summary"></a>總結  
  本逐步解說示範**平行工作**和**平行堆疊**偵錯工具視窗。 請在使用多執行緒程式碼的實際專案上使用這些視窗。 您可以檢查以 C++、C# 或 Visual Basic 撰寫的平行程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   

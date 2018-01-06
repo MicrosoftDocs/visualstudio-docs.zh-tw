@@ -28,16 +28,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
+##  <a name="BKMK_In_this_topic"></a>本主題內容  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [TRACE 巨集](#BKMK_The_TRACE_macro)  
@@ -484,5 +485,5 @@ pMyPerson->Dump( afxDump );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Visual C++](../debugger/debugging-native-code.md)

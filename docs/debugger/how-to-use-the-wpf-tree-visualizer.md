@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e30d1fbd8cd23a514d1036bc43c809626c665d73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78806b2ace7872db06ff403bcae28bb6eff21cd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 樹狀架構視覺化檢閱
 您可以使用 [WPF 樹狀架構視覺化檢閱] 瀏覽 WPF 物件的視覺化樹狀，以及檢閱該樹狀內含物件的 WPF 相依性屬性。 如需視覺化樹狀結構的詳細資訊，請參閱[中 WPF 樹狀架構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 如需相依性屬性的詳細資訊，請參閱[相依性屬性概觀](/dotnet/framework/wpf/advanced/dependency-properties-overview)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 -   按一下**關閉**對話方塊右上角的圖示。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [WPF 中的樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)   
  [相依性屬性概觀](/dotnet/framework/wpf/advanced/dependency-properties-overview)

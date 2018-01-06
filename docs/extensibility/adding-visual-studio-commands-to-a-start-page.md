@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 973e0cfbceb6cbf67c5bc11cdde370607334809a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efb332de822bd86cc95c4786dbca3472fd0984cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令加入至 [開始] 頁面
 當您建立自訂起始頁時，您可以將 Visual Studio 命令加入它。 本文將討論不同的方式將 Visual Studio 命令繫結至 XAML 開始頁面上的物件。  
@@ -110,5 +111,5 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
  如需範例，請參閱[逐步解說： 起始頁上儲存使用者設定](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將使用者控制項加入至起始頁](../extensibility/adding-user-control-to-the-start-page.md)

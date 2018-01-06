@@ -23,11 +23,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad52c8f9b2580538b573eb2ef66164040ca66b25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6c6c8c239d27952c35486be308e5947aff50952
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要偵錯執行緒和處理序，在 Visual Studio 中的工具
 *執行緒*和*處理程序*是電腦科學中相關的概念。 兩者都代表必須以特定順序執行的指令序列。 但是，不同執行緒或處理序中的指令能夠平行執行。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |**工作**視窗|-檢視有關的資訊<xref:System.Threading.Tasks.Task>物件包括工作 ID、 工作狀態 （已排程、 執行、 等待中、 死結），以及哪一個執行緒指派給工作。<br />的呼叫堆疊中目前位置。<br />在建立時傳遞給工作的委派|-切換至目前的工作<br />-旗標或取消旗標的工作<br />-凍結或解除凍結工作|  
 |**GPU 執行緒**視窗|-旗標資料行，您可以在其中標示想要特別注意的執行緒。<br />-目前執行緒的資料行，其中黃色箭號表示目前的執行緒。<br />-**執行緒計數**資料行，在相同位置顯示的執行緒數目。<br />-**列**資料行，顯示每個執行緒群組所在的程式碼行。<br />-**位址**資料行，顯示每個執行緒群組所在的指令位址。<br />-**位置**資料行，是位址在程式碼中的位置。<br />-**狀態**資料行，顯示執行緒為作用中或已封鎖。<br />-**磚**資料行，資料列中顯示執行緒的磚索引。|-變更為不同的執行緒<br />-顯示特定 tile 和執行緒<br />-顯示或隱藏資料行<br />依資料行排序<br />-群組執行緒<br />-凍結或解除凍結執行緒<br />-旗標或取消旗標的執行緒<br />-顯示已標幟的執行緒|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [偵錯 GPU 程式碼](../debugger/debugging-gpu-code.md)

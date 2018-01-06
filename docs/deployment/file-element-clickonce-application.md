@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;元素 （ClickOnce 應用程式）
 識別所有非組件檔案下載和使用的應用程式。  
@@ -91,70 +92,70 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要項。 識別檔案的名稱。|  
-|`size`|必要項。 指定的大小，以位元組為單位的檔案。|  
+|`name`|必要。 識別檔案的名稱。|  
+|`size`|必要。 指定的大小，以位元組為單位的檔案。|  
 |`group`|選擇性的如果`optional`屬性沒有指定或設為`false`; 若`optional`是`true`。 這個檔案所屬的群組名稱。 此名稱可以是，開發人員所選擇的任何 Unicode 字串值，而且用於下載檔案的要求<xref:System.Deployment.Application.ApplicationDeployment>類別。|  
-|`optional`|選擇項。 指定這個檔案必須下載第一個應用程式時執行，或是否檔案應該位於只能在伺服器上的應用程式依需求要求之前。 如果`false`或未定義，下載檔案時第一次執行或安裝應用程式。 如果`true`、`group`必須指定有效的應用程式資訊清單。 `optional`不可為 true 如果`writeableType`指定值的`applicationData`。|  
-|`writeableType`|選擇項。 指定這個檔案是一個資料檔案。 目前唯一有效的值是`applicationData`。|  
+|`optional`|選擇性。 指定這個檔案必須下載第一個應用程式時執行，或是否檔案應該位於只能在伺服器上的應用程式依需求要求之前。 如果`false`或未定義，下載檔案時第一次執行或安裝應用程式。 如果`true`、`group`必須指定有效的應用程式資訊清單。 `optional`不可為 true 如果`writeableType`指定值的`applicationData`。|  
+|`writeableType`|選擇性。 指定這個檔案是一個資料檔案。 目前唯一有效的值是`applicationData`。|  
   
 ## <a name="typelib"></a>型別程式庫  
  `typelib`項目是選擇性項目子系檔案。 元素會描述屬於 COM 元件的類型程式庫。 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`tlbid`|必要項。 指派給類型程式庫的 GUID。|  
-|`version`|必要項。 類型程式庫版本號碼。|  
-|`helpdir`|必要項。 包含元件的說明檔案的目錄。 可能是長度為零。|  
-|`resourceid`|選擇項。 十六進位字串表示法地區設定識別碼 (LCID)。 它是一到四個十六進位數字，不含 0x 前置詞，也沒有前置零。 LCID 可能次要中性語言識別碼。|  
-|`flags`|選擇項。 這個類型程式庫的類型程式庫旗標字串表示。 具體來說，它應該是"RESTRICTED"、"CONTROL"、"HIDDEN"和"HASDISKIMAGE"其中之一。|  
+|`tlbid`|必要。 指派給類型程式庫的 GUID。|  
+|`version`|必要。 類型程式庫版本號碼。|  
+|`helpdir`|必要。 包含元件的說明檔案的目錄。 可能是長度為零。|  
+|`resourceid`|選擇性。 十六進位字串表示法地區設定識別碼 (LCID)。 它是一到四個十六進位數字，不含 0x 前置詞，也沒有前置零。 LCID 可能次要中性語言識別碼。|  
+|`flags`|選擇性。 這個類型程式庫的類型程式庫旗標字串表示。 具體來說，它應該是"RESTRICTED"、"CONTROL"、"HIDDEN"和"HASDISKIMAGE"其中之一。|  
   
 ## <a name="comclass"></a>comClass  
  `comClass`項目是選擇性的子系`file`項目，但如果，則需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`clsid`|必要項。 表示做為 GUID 的 COM 元件類別識別碼。|  
-|`description`|選擇項。 類別名稱。|  
-|`threadingModel`|選擇項。 同處理序 COM 類別所使用的執行緒模型。 如果此屬性為 null，則會使用沒有執行緒模型。 元件用戶端的主執行緒上建立和此執行緒會封送處理來自其他執行緒的呼叫。 下列清單顯示有效值：<br /><br /> `Apartment`、`Free`、`Both`和`Neutral`。|  
-|`tlbid`|選擇項。 此 COM 元件的類型程式庫的 GUID。|  
-|`progid`|選擇項。 版本相依程式設計識別碼相關聯之 COM 元件。 格式`ProgID`是`<vendor>.<component>.<version>`。|  
-|`miscStatus`|選擇項。 組件中的重複項目資訊清單所提供的資訊`MiscStatus`登錄機碼。 如果值`miscStatusIcon`， `miscStatusContent`， `miscStatusDocprint`，或`miscStatusThumbnail`找不到屬性，對應的預設值列在`miscStatus`用於遺漏的屬性。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
-|`miscStatusIcon`|選擇項。 組件中的重複項目資訊清單 DVASPECT_ICON 所提供的資訊。 它可以提供物件的圖示。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`Miscstatus`登錄機碼值。|  
-|`miscStatusContent`|選擇項。 組件中的重複項目資訊清單 DVASPECT_CONTENT 所提供的資訊。 它可以提供複合文件可顯示在螢幕或印表機。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
-|`miscStatusDocPrint`|選擇項。 組件中的重複項目資訊清單 DVASPECT_DOCPRINT 所提供的資訊。 如同列印至印表機，它可以提供的物件表示，可顯示在螢幕上。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
-|`miscStatusThumbnail`|選擇項。 組件中的重複項目資訊清單所提供的其他方面的資訊。 它可以提供在瀏覽工具可顯示物件的縮圖。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
+|`clsid`|必要。 表示做為 GUID 的 COM 元件類別識別碼。|  
+|`description`|選擇性。 類別名稱。|  
+|`threadingModel`|選擇性。 同處理序 COM 類別所使用的執行緒模型。 如果此屬性為 null，則會使用沒有執行緒模型。 元件用戶端的主執行緒上建立和此執行緒會封送處理來自其他執行緒的呼叫。 下列清單顯示有效值：<br /><br /> `Apartment`、`Free`、`Both`和`Neutral`。|  
+|`tlbid`|選擇性。 此 COM 元件的類型程式庫的 GUID。|  
+|`progid`|選擇性。 版本相依程式設計識別碼相關聯之 COM 元件。 格式`ProgID`是`<vendor>.<component>.<version>`。|  
+|`miscStatus`|選擇性。 組件中的重複項目資訊清單所提供的資訊`MiscStatus`登錄機碼。 如果值`miscStatusIcon`， `miscStatusContent`， `miscStatusDocprint`，或`miscStatusThumbnail`找不到屬性，對應的預設值列在`miscStatus`用於遺漏的屬性。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
+|`miscStatusIcon`|選擇性。 組件中的重複項目資訊清單 DVASPECT_ICON 所提供的資訊。 它可以提供物件的圖示。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`Miscstatus`登錄機碼值。|  
+|`miscStatusContent`|選擇性。 組件中的重複項目資訊清單 DVASPECT_CONTENT 所提供的資訊。 它可以提供複合文件可顯示在螢幕或印表機。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
+|`miscStatusDocPrint`|選擇性。 組件中的重複項目資訊清單 DVASPECT_DOCPRINT 所提供的資訊。 如同列印至印表機，它可以提供的物件表示，可顯示在螢幕上。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
+|`miscStatusThumbnail`|選擇性。 組件中的重複項目資訊清單所提供的其他方面的資訊。 它可以提供在瀏覽工具可顯示物件的縮圖。 值可以是下表中的屬性值的逗號分隔清單。 您可以使用這個屬性，如果 COM 類別是需要 OCX 類別`MiscStatus`登錄機碼值。|  
   
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  `comInterfaceExternalProxyStub`項目是選擇性的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 元素包含下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須周圍的括號。|  
-|`baseInterface`|選擇項。 所參考的介面的介面的 IID`iid`衍生。|  
-|`numMethods`|選擇項。 實作介面的方法數目。|  
-|`name`|選擇項。 介面的名稱會出現在程式碼。|  
-|`tlbid`|選擇項。 類型程式庫，其中包含指定的介面描述`iid`屬性。|  
-|`proxyStubClass32`|選擇項。 將 IID 對應至在 32 位元 proxy Dll 的 CLSID。|  
+|`iid`|必要。 介面識別碼 (IID) 這由這個 proxy。 IID 必須周圍的括號。|  
+|`baseInterface`|選擇性。 所參考的介面的介面的 IID`iid`衍生。|  
+|`numMethods`|選擇性。 實作介面的方法數目。|  
+|`name`|選擇性。 介面的名稱會出現在程式碼。|  
+|`tlbid`|選擇性。 類型程式庫，其中包含指定的介面描述`iid`屬性。|  
+|`proxyStubClass32`|選擇性。 將 IID 對應至在 32 位元 proxy Dll 的 CLSID。|  
   
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  `comInterfaceProxyStub`項目是選擇性的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 元素包含下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須周圍的括號。|  
-|`baseInterface`|選擇項。 所參考的介面的介面的 IID`iid`衍生。|  
-|`numMethods`|選擇項。 實作介面的方法數目。|  
-|`Name`|選擇項。 介面的名稱會出現在程式碼。|  
-|`Tlbid`|選擇項。 類型程式庫，其中包含指定的介面描述`iid`屬性。|  
-|`proxyStubClass32`|選擇項。 將 IID 對應至在 32 位元 proxy Dll 的 CLSID。|  
-|`threadingModel`|選擇項。 選擇項。 同處理序 COM 類別所使用的執行緒模型。 如果此屬性為 null，則會使用沒有執行緒模型。 元件用戶端的主執行緒上建立和此執行緒會封送處理來自其他執行緒的呼叫。 下列清單顯示有效值：<br /><br /> `Apartment`、`Free`、`Both`和`Neutral`。|  
+|`iid`|必要。 介面識別碼 (IID) 這由這個 proxy。 IID 必須周圍的括號。|  
+|`baseInterface`|選擇性。 所參考的介面的介面的 IID`iid`衍生。|  
+|`numMethods`|選擇性。 實作介面的方法數目。|  
+|`Name`|選擇性。 介面的名稱會出現在程式碼。|  
+|`Tlbid`|選擇性。 類型程式庫，其中包含指定的介面描述`iid`屬性。|  
+|`proxyStubClass32`|選擇性。 將 IID 對應至在 32 位元 proxy Dll 的 CLSID。|  
+|`threadingModel`|選擇性。 選擇性。 同處理序 COM 類別所使用的執行緒模型。 如果此屬性為 null，則會使用沒有執行緒模型。 元件用戶端的主執行緒上建立和此執行緒會封送處理來自其他執行緒的呼叫。 下列清單顯示有效值：<br /><br /> `Apartment`、`Free`、`Both`和`Neutral`。|  
   
 ## <a name="windowclass"></a>windowClass  
  `windowClass`項目是選擇性的子系`file`項目，但如果可能需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 此元素會參考 COM 元件，其必須套用至該版本所定義的視窗類別。 元素包含下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`versioned`|選擇項。 控制項的內部視窗類別註冊中使用名稱的是否包含含有視窗類別的組件的版本。 這個屬性的值可以是`yes`或`no`。 預設為 `yes`。 值`no`應該只用來並行元件和對等的非---並存元件所定義相同的視窗類別，而且您想要將它們視為相同的視窗類別。 請注意，視窗類別註冊的一般規則套用 — 僅註冊視窗類別的第一個元件將無法進行註冊，因為它不能套用至它的版本。|  
+|`versioned`|選擇性。 控制項的內部視窗類別註冊中使用名稱的是否包含含有視窗類別的組件的版本。 這個屬性的值可以是`yes`或`no`。 預設值為 `yes`。 值`no`應該只用來並行元件和對等的非---並存元件所定義相同的視窗類別，而且您想要將它們視為相同的視窗類別。 請注意，視窗類別註冊的一般規則套用 — 僅註冊視窗類別的第一個元件將無法進行註冊，因為它不能套用至它的版本。|  
   
 ## <a name="hash"></a>雜湊  
  `hash`項目是選擇性的子系`file`項目。 `hash`項目沒有任何屬性。  
@@ -169,14 +170,14 @@ ms.lasthandoff: 10/27/2017
 ## <a name="dsigtransform"></a>dsig:Transform  
  `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 `dsig:Transform`元素都具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用來計算此檔案的摘要的演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。|  
   
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod`元素都具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用來計算此檔案的摘要的演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   
@@ -201,5 +202,5 @@ ms.lasthandoff: 10/27/2017
 </file>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

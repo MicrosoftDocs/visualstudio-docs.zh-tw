@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具視窗
 您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 **偵錯 > Windows**。  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
 |反組譯碼|CTRL+ALT+D|[如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)|  
 |暫存器|CTRL+ALT+G|[如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具基礎](../debugger/debugger-basics.md)

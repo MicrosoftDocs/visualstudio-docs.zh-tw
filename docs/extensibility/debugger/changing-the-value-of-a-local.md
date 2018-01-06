@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78affeb358200599d925b9b70df3ae945759054c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-value-of-a-local"></a>變更本機值
 > [!IMPORTANT]
@@ -45,10 +46,10 @@ ms.lasthandoff: 10/31/2017
   
  也使用這個程序中的變數值變更**監看式**視窗，但是它是`IDebugProperty2`物件而非區域變數的值相關聯`IDebugProperty2`本機與相關聯的物件它本身。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [變更值的範例實作](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  使用 MyCEE 範例逐步變更值的程序。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69fbcb828f7fd534e9f086db43f2e63110794b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 Spy++ 可讓您執行下列工作︰  
@@ -53,7 +54,7 @@ Spy++ 可讓您執行下列工作︰
 > [!NOTE]
 >  雖然 Spy++ (64 位元) 的檔案名稱包含 "amd"，但它會在任何 x64 Windows 作業系統上執行。  
   
-## <a name="see-also"></a>另請參閱 
+## <a name="see-also"></a>請參閱 
  [如何： 啟動 Spy + +](../debugger/how-to-start-spy-increment.md)   
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 檢視](../debugger/spy-increment-views.md)   

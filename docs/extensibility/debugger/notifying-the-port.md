@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 之後啟動程式，連接埠必須要收到通知，，如下所示：  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  一旦 DE 身分識別已知時，就有一個 SDM 可將它附加至程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [啟動程式](../../extensibility/debugger/launching-a-program.md)   
  [在啟動後附加](../../extensibility/debugger/attaching-after-a-launch.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

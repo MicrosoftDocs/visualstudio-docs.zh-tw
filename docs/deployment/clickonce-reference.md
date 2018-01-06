@@ -19,16 +19,17 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 898acac30776a4b189433440c9bb713a00561029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 下列頁面描述用來代表 ClickOnce 應用程式的 XML 檔案的結構。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
  列出並描述的元素和構成應用程式資訊清單的屬性。  
   

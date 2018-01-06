@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 205837bc5bfdf9476839ea1e54a53dc57dbf9a72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfeb9f4465d4e3db18bd1332ffd0d19fecbbf861
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="operational-modes"></a>作業模式
 有三種模式中的 IDE 可以操作，如下所示：  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
   
  當程式成功地逐步執行至下一行程式碼或函式，或執行至游標處，或設定之中斷點時，DE 會自動轉換回中斷模式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制執行](../../extensibility/debugger/control-of-execution.md)

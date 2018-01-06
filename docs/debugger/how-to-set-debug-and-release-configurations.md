@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 設定偵錯和發行 Visual Studio 中的組態
 Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 依照名稱提示，您可以建置用來偵錯的偵錯版本，和最後發行散發的發行版本。  
@@ -47,7 +48,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
   
 程式的發行組態不包含符號偵錯資訊，而且會完全最佳化。 偵錯資訊可產生.pdb 檔案[編譯器選項而定](#BKMK_symbols_release)可用。 建立.pdb 檔可能會非常有用，如果您日後必須偵錯發行版本。  
   
-如需建置組態的詳細資訊，請參閱[了解建置組態](../ide/understanding-build-configurations.md)。  
+如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
   
 您可以變更組建組態從**建置**功能表上，從工具列上，或在專案屬性頁中。 專案屬性頁因語言而異。 下列程序示範如何從功能表和工具列變更組建組態。 如需如何變更不同語言專案中組建組態的詳細資訊，請參閱 < 另請參閱下一節。  
   
@@ -112,11 +113,11 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
     可執行檔或主要輸出檔相同資料夾中建立符號檔案。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visua Studio debugger 中指定符號 (.pdb) 檔和原始程式檔](../debugger/debugger-settings-and-preparation.md)  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [C + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [若為 C# 專案設定偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [適用於 Visual Basic 專案設定偵錯組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
  [偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ac8580a1b930d4ad18db9eebb275e4eb67d80c62
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （啟動載入器）
 `Commands`項目實作的項目底下所描述的測試`InstallChecks`項目，並宣告哪一個套件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]啟動載入器應該安裝，如果測試失敗。  
@@ -72,19 +73,19 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Reboot`|選擇項。 決定系統是否應該重新啟動的任何封裝傳回重新開機結束代碼。 下列清單顯示有效值：<br /><br /> `Defer`. 重新啟動延後到未來。<br /><br /> `Immediate`. 如果其中一個封裝傳回重新開機結束代碼，會導致立即重新啟動。<br /><br /> `None`. 會導致任何重新啟動的要求會被忽略。<br /><br /> 預設為 `Immediate`。|  
+|`Reboot`|選擇性。 決定系統是否應該重新啟動的任何封裝傳回重新開機結束代碼。 下列清單顯示有效值：<br /><br /> `Defer`. 重新啟動延後到未來。<br /><br /> `Immediate`. 如果其中一個封裝傳回重新開機結束代碼，會導致立即重新啟動。<br /><br /> `None`. 會導致任何重新啟動的要求會被忽略。<br /><br /> 預設值為 `Immediate`。|  
   
 ## <a name="command"></a>命令  
  `Command` 項目是 `Commands` 項目的子項目。 A`Commands`元素可以有一或多個`Command`項目。 項目具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`PackageFile`|必要項。 若要安裝封裝的名稱應該一或多個所指定的條件`InstallConditions`傳回 false。 封裝必須在同一個檔案中定義，使用`PackageFile`項目。|  
-|`Arguments`|選擇項。 一組命令列引數傳遞至封裝檔案。|  
-|`EstimatedInstallSeconds`|選擇項。 估計的時間，以秒為單位，它會安裝封裝。 這個值會決定啟動載入器向使用者顯示進度列的大小。 預設為在此情況下 0，不會指定估計的時間。|  
-|`EstimatedDiskBytes`|選擇項。 已完成的單位為位元組，封裝會在安裝後所佔用的磁碟空間估計的量。 此值用於啟動載入器會顯示給使用者的硬碟空間需求。 預設值為的 0，啟動載入器的情況下不會顯示任何硬碟空間需求。|  
-|`EstimatedTempBytes`|選擇項。 以位元組為單位，封裝將會需要的暫存磁碟空間估計的量。|  
-|`Log`|選擇項。 記錄檔套件所產生、 相對於套件的根目錄路徑。|  
+|`PackageFile`|必要。 若要安裝封裝的名稱應該一或多個所指定的條件`InstallConditions`傳回 false。 封裝必須在同一個檔案中定義，使用`PackageFile`項目。|  
+|`Arguments`|選擇性。 一組命令列引數傳遞至封裝檔案。|  
+|`EstimatedInstallSeconds`|選擇性。 估計的時間，以秒為單位，它會安裝封裝。 這個值會決定啟動載入器向使用者顯示進度列的大小。 預設為在此情況下 0，不會指定估計的時間。|  
+|`EstimatedDiskBytes`|選擇性。 已完成的單位為位元組，封裝會在安裝後所佔用的磁碟空間估計的量。 此值用於啟動載入器會顯示給使用者的硬碟空間需求。 預設值為的 0，啟動載入器的情況下不會顯示任何硬碟空間需求。|  
+|`EstimatedTempBytes`|選擇性。 以位元組為單位，封裝將會需要的暫存磁碟空間估計的量。|  
+|`Log`|選擇性。 記錄檔套件所產生、 相對於套件的根目錄路徑。|  
   
 ## <a name="installconditions"></a>InstallConditions  
  `InstallConditions`元素是子系`Command`項目。 每個`Command`元素可以有最多一個`InstallConditions`項目。 如果沒有`InstallConditions`元素存在，所指定的封裝`Condition`永遠會執行。  
@@ -96,10 +97,10 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要項。 要測試的屬性名稱。 屬性必須先前已定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱[ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
-|`Compare`|必要項。 要執行的比較類型。 下列清單顯示有效值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|必要項。 要與屬性比較的值。|  
-|`Schedule`|選擇項。 名稱`Schedule`定義何時應該評估此規則的標記。|  
+|`Property`|必要。 要測試的屬性名稱。 屬性必須先前已定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱[ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
+|`Compare`|必要。 要執行的比較類型。 下列清單顯示有效值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|必要。 要與屬性比較的值。|  
+|`Schedule`|選擇性。 名稱`Schedule`定義何時應該評估此規則的標記。|  
   
 ## <a name="failif"></a>FailIf  
  `FailIf`元素是子系`InstallConditions`項目，並說明正值條件下應該停止安裝。 每個`InstallConditions`元素可以有零或多個`FailIf`項目。  
@@ -108,11 +109,11 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要項。 要測試的屬性名稱。 屬性必須先前已定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱[ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
-|`Compare`|必要項。 要執行的比較類型。 下列清單顯示有效值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|必要項。 要與屬性比較的值。|  
-|`String`|選擇項。 要在發生錯誤時對使用者顯示的文字。|  
-|`Schedule`|選擇項。 名稱`Schedule`定義何時應該評估此規則的標記。|  
+|`Property`|必要。 要測試的屬性名稱。 屬性必須先前已定義的子系`InstallChecks`項目。 如需詳細資訊，請參閱[ \<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)。|  
+|`Compare`|必要。 要執行的比較類型。 下列清單顯示有效值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|必要。 要與屬性比較的值。|  
+|`String`|選擇性。 要在發生錯誤時對使用者顯示的文字。|  
+|`Schedule`|選擇性。 名稱`Schedule`定義何時應該評估此規則的標記。|  
   
 ## <a name="exitcodes"></a>ExitCodes  
  `ExitCodes`元素是子系`Command`項目。 `ExitCodes`元素包含一或多個`ExitCode`項目，可決定安裝應該執行以回應從封裝的結束代碼。 可以有一個選擇性`ExitCode`下方的項目`Command`項目。 `ExitCodes`沒有任何屬性。  
@@ -122,10 +123,10 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Value`|必要項。 結束代碼值，這個`ExitCode`元素會套用。|  
-|`Result`|必要項。 如何安裝應該回應此結束程式碼。 下列清單顯示有效值：<br /><br /> `Success`. 旗標為已成功安裝封裝。<br /><br /> `SuccessReboot`. 封裝已經順利安裝，加上旗標，指示系統重新啟動。<br /><br /> `Fail`. 標記為失敗的封裝。<br /><br /> `FailReboot`. 套件標記為失敗，並指示重新啟動系統。|  
-|`String`|選擇項。 要顯示給使用者，以回應此結束程式碼的值。|  
-|`FormatMessageFromSystem`|選擇項。 決定是否要使用對應的結束代碼，系統提供的錯誤訊息，或使用中提供的值`String`。 有效值為`true`，這表示若要使用系統提供的錯誤和`false`，這表示若要使用所提供的字串`String`。 預設為 `false`。 如果這個屬性是`false`，但`String`未設定，將使用系統提供的錯誤。|  
+|`Value`|必要。 結束代碼值，這個`ExitCode`元素會套用。|  
+|`Result`|必要。 如何安裝應該回應此結束程式碼。 下列清單顯示有效值：<br /><br /> `Success`. 旗標為已成功安裝封裝。<br /><br /> `SuccessReboot`. 封裝已經順利安裝，加上旗標，指示系統重新啟動。<br /><br /> `Fail`. 標記為失敗的封裝。<br /><br /> `FailReboot`. 套件標記為失敗，並指示重新啟動系統。|  
+|`String`|選擇性。 要顯示給使用者，以回應此結束程式碼的值。|  
+|`FormatMessageFromSystem`|選擇性。 決定是否要使用對應的結束代碼，系統提供的錯誤訊息，或使用中提供的值`String`。 有效值為`true`，這表示若要使用系統提供的錯誤和`false`，這表示若要使用所提供的字串`String`。 預設值為 `false`。 如果這個屬性是`false`，但`String`未設定，將使用系統提供的錯誤。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會定義可用來安裝.NET Framework 2.0 命令。  
@@ -205,6 +206,6 @@ ms.lasthandoff: 10/27/2017
 </Commands>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)

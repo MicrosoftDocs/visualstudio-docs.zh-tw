@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>評估運算式
 運算式會建立從 [自動變數]、 監看式、 快速監看式或立即的 windows 中傳遞的字串。 評估運算式時，它會產生可列印的字串，包含名稱和類型變數或引數和其值。 這個字串會顯示在對應的 IDE 視窗中。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  若要啟用運算式的評估，必須實作 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。 評估同步和非同步要求的實作[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
  [運算式評估內容](../../extensibility/debugger/expression-evaluation-context.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

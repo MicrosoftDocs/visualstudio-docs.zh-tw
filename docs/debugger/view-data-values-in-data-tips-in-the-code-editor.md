@@ -21,11 +21,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eb975b5d4c1f3450ca18b1ea0da3cd3b7fb6375
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊程式碼編輯器中的檢視資料值
 資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。
@@ -138,7 +139,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  使用對話方塊來尋找您想要開啟，然後按一下的 XML 檔案**確定**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   

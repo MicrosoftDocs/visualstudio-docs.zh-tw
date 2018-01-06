@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ffb8aed183b50958c8835b2a1e79b808ac20174
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更的命令外觀，對使用者提供意見反應。 例如，您可以命令無法使用時的外觀不同。 您可以使用或無法使用，讓命令、 隱藏或顯示它們，或檢查或取消核取功能表上。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  在**工具**您現在應該會看到的功能表**新文字**。 按一下**新文字**。 此命令應該現在會變成灰色。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   

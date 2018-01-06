@@ -16,11 +16,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26993da79249d1706dc8609cfcd5b0ceb66e1ec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具的 產能的秘訣和訣竅
 
@@ -166,5 +167,5 @@ ms.lasthandoff: 10/31/2017
 - [在 Visual Studio 中偵錯的較小者已知的 hack 7](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [在 Visual Studio 中的 7 隱藏的珍貴](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)

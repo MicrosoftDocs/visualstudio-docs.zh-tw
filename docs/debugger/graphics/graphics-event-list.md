@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc520e9d28e8cc02262833d2de4cba088b879dab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。  
@@ -108,12 +109,12 @@ ms.lasthandoff: 10/31/2017
 
 此視窗可讓您檢視事件清單中選取之項目的歷程記錄。  在頂端的下拉式清單可用來選取要檢視的歷程記錄的其他項目。  包含視窗的上半部**框架安裝事件**。  這些是屬於事件*建立*類型類別目錄，都是通常初始化，並建立資源的呼叫。  視窗的下半部包含的底部**畫面格事件**> 一節。  這些是一般的讀取和寫入的資源使用量期間發生的事件。  
 
-資料行|說明
+資料行|描述
 ---|---
 **Type** | 通常顯示的項目的型別*建立*，*讀取*和*寫入*。  
 **檢視** | 資源的縮圖會顯示在該時間點。  按兩下以開啟資源的詳細資料檢視在該時間縮圖。  
 **Event**| 顯示發生在方法呼叫產生事件。  選取 [監看式] 圖示也可以檢視個別項目上的任何其他記錄![監看式 圖示](media/gfx_watch.png)上適當的程式行。  此外，任何項目，會繪製為藍色文字，例如`m_commandList`在上面的螢幕擷取畫面，可以選取如需詳細資訊。
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

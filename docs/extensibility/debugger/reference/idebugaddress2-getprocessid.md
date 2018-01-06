@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35ed788f5ac49b92b8702d433aa46df7571267d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bcc83bf3fd83a0c84fa73e11fc9c25f990bd769b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 擷取擁有物件所表示之處理序識別碼[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)介面。  
@@ -44,5 +45,5 @@ int GetProcessID (
 ## <a name="return-value"></a>傳回值  
  如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f682b676a793a9a8a29e31f29920b212d127aff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fcaca4e27f7a4e986222e3fa6767a106ef6d90d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 這個方法會判斷物件的執行階段類型。  
@@ -52,7 +53,7 @@ int ResolveRuntimeType(
 ## <a name="remarks"></a>備註  
  物件的執行階段型別一律不是編譯時期已知。 例如，使用多型，引數可以傳遞至函式為其基底類別，例如按鈕類別。 實際引數可能會在衍生的類別，例如選項按鈕類別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

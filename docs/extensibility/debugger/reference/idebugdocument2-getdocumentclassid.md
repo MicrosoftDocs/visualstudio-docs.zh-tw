@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e216cf5af1ad22acf81f46ca385f7092e8ee8316
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8065a7fcf110288fcbde546ef37b64f43032ff8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 取得文件的類別識別項。  
@@ -47,5 +48,5 @@ int GetDocumentClassID(
 ## <a name="remarks"></a>備註  
  類別 GUID 可以用來具現化個別的類別，其中每一個代表文件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

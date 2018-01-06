@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否只使用 Just My Code，Visual Studio 中的使用者程式碼進行偵錯
 您可以設定 Visual Studio 自動不進入系統、 架構和其他非使用者呼叫，並摺疊這些呼叫，在 [呼叫堆疊] 視窗中。 啟用或停用此行為的功能稱為*Just My Code*。 本主題描述如何在 C#、 Visual Basic、 c + + 和 JavaScript 專案中使用 Just My Code。
@@ -119,12 +120,12 @@ ms.lasthandoff: 11/11/2017
   
 ```  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|函式|必要項。 指定一個或多個函式做為非使用者函式。|  
-|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
-|`Module`|選擇項。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|  
-|`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> -   `NoStepInto`-會告知偵錯工具不進入符合的函式。<br />-   `StepInto`-告知偵錯工具来進入符合的函式覆寫任何其他`NoStepInto`符合的函式。|  
+|功能|必要。 指定一個或多個函式做為非使用者函式。|  
+|`Name`|必要。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
+|`Module`|選擇性。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|  
+|`Action`|必要。 區分大小寫值的其中之一：<br /><br /> -   `NoStepInto`-會告知偵錯工具不進入符合的函式。<br />-   `StepInto`-告知偵錯工具来進入符合的函式覆寫任何其他`NoStepInto`符合的函式。|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>自訂呼叫堆疊行為  
  您可以在 `*.natjmc` 檔案指定模組、原始程式檔和函式，將它們指定為在呼叫堆疊中視為非使用者程式碼。  
@@ -159,21 +160,21 @@ ms.lasthandoff: 11/11/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零個或一個字元） 和`*`（零或多個字元）。 例如：<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知偵錯工具將所有磁碟機上 `\3rdParty\UtilLibs` 中的所有模組視為外部程式碼。|  
-|`Company`|選擇項。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|  
+|`Name`|必要。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零個或一個字元） 和`*`（零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知偵錯工具將所有磁碟機上 `\3rdParty\UtilLibs` 中的所有模組視為外部程式碼。|  
+|`Company`|選擇性。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|  
   
  **檔案項目屬性**  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 要視為外部程式碼的原始程式檔之完整路徑。 在指定路徑時，您可以使用 Windows 萬用字元 `?` 和 `*`。|  
+|`Name`|必要。 要視為外部程式碼的原始程式檔之完整路徑。 在指定路徑時，您可以使用 Windows 萬用字元 `?` 和 `*`。|  
   
  **函式項目屬性**  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 要視為外部程式碼的函式之完整名稱。|  
-|`Module`|選擇項。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|  
+|`Name`|必要。 要視為外部程式碼的函式之完整名稱。|  
+|`Module`|選擇性。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|  
 |`ExceptionImplementation`|當設定為 `true` 時，此呼叫堆疊會顯示擲回例外狀況的函式，而不是這個函式。|  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript Just My Code  

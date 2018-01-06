@@ -24,11 +24,12 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您無法使用 Visual Studio 來部署您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，或您需要使用進階的部署功能，例如受信任的應用程式部署，您應該使用 Mage.exe 命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單。 本逐步解說描述如何建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用命令列版本 (Mage.exe) 或資訊清單產生和編輯工具的圖形化的版本 (MageUI.exe) 的部署。  
@@ -205,7 +206,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="next-steps"></a>後續步驟  
  當您需要部署新版應用程式時，建立名為新版本之後的新目錄，例如 1.0.0.1—and 新應用程式檔案複製到新的目錄。 接著，您必須遵循上述步驟，建立和簽署新的應用程式資訊清單，並更新並簽署部署資訊清單。 小心指定在這兩個 Mage.exe 相同的更高版本`-New`和`-Update`呼叫，為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]更高版本中，只會更新具有最重要的最左邊的整數。 如果您使用 MageUI.exe，您可以更新部署資訊清單開啟它，選取**應用程式參考**索引標籤上，按一下**選取資訊清單**按鈕，然後再選取 更新應用程式資訊清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

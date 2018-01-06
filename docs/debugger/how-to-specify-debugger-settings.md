@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b32af95cb319d72508c557e70ef9eddbee25d841
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6cc67f446c2b7f6ee428184395ef0230864dc7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定偵錯工具設定
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，您可以指定偵測工具行為的各種設定，包括變數如何顯示、某些警告是否要呈現、如何設定中斷點，以及中斷會如何影響執行中的程式  指定在偵錯工具設定**選項** 對話方塊。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  選取或清除所需選項或選項。 請按 F1 取得這些選項的相關說明。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、偵錯、一般](../debugger/general-debugging-options-dialog-box.md)   
  [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   

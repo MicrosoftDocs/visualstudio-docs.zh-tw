@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8acb93b9e079dbfc3abf5083734b9b4ec392e1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be8f0b36ebe57041e9d36b8f606bd5bddd0601bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>中斷點 (Visual Studio SDK)
 有三種中斷點類型： 暫止，繫結，以及錯誤。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
  [程式碼內容](../../extensibility/debugger/code-context.md)   

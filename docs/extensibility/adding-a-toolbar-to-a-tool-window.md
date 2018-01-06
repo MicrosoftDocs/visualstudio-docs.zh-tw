@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cdcd1fd772505ff4536968290ca87a85a501f6a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 07b5eea4fe6d5f58ec4b05563af253aeef0c5f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>新增工具列加入工具視窗
 本逐步解說示範如何將工具列加入工具視窗。  
@@ -116,5 +117,5 @@ ms.lasthandoff: 10/31/2017
   
 3.  在工具列上，按一下 顯示的訊息圖示**TWTestCommandPackage 內 TWToolbar.TWTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [加入工具列](../extensibility/adding-a-toolbar.md)

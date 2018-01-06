@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe00aff9834d612702c61f06a1d0c924852c9462
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：顯示 WPF 追蹤資訊
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]可以從 WPF 應用程式接收偵錯追蹤資訊，並顯示該資訊**輸出**視窗。 若要顯示偵錯追蹤資訊，必須啟用 WPF 追蹤。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      如需這些追蹤資訊層級含意的詳細資訊，請參閱 <xref:System.Diagnostics.SourceLevels>。  
   
-9. 按一下 [確定]。  
+9. 按一下 [確定 **Deploying Office Solutions**]。  
   
 ### <a name="to-disable-wpf-trace-information"></a>若要停用 WPF 追蹤資訊  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  按一下下拉式清單，然後選取**關閉**。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 WPF](../debugger/debugging-wpf.md)

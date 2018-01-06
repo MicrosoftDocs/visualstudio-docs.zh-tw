@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b19c6ba222644bc9d5fb97874f50bf6a6aa59d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂的文件
 環境控制代碼**儲存**，**存**，和**全部儲存**命令。 當使用者按一下**儲存**，**存**，**或 全部儲存**上**檔案**功能表或關閉方案，導致 全部儲存，下列程序。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果您實作您自己的持續性，請務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法，以節省時間。 這個方法會檢查並確定它是安全儲存檔案 （例如，檔案不是唯讀）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>控制執行
 偵錯引擎 (DE) 通常會傳送下列事件之一為最後一個啟動事件：  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
   
  SDM 對呼叫`Step`， **Execute**，和**繼續**都是非同步的這表示 SDM 預期呼叫快速傳回。 如果 DE SDM 停止將事件傳送之前在相同執行緒上`Step`， **Execute**，或**繼續**傳回 SDM 停止回應。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

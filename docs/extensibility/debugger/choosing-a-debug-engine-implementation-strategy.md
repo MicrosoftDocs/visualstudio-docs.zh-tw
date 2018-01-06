@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08d82f867ac2723ff68da615d5dc6977b8038af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fae5211ac270832f07038faafbd6f5bc463d3944
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>選擇偵錯引擎實作策略
 您可以使用執行階段架構來判斷您偵錯引擎 (DE) 實作的策略。 偵錯引擎可能會建立在同處理序執行的程式偵錯，在同處理序執行的 Visual Studio 工作階段偵錯管理員 (SDM) 或超出-處理序以這兩種。 下列指導方針有助於您選擇下列三種策略。  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/31/2017
   
 -   如果 DE 必須呼叫程式存取符號存放區，建立程式 DE 同處理序。 在此情況下，程式會建立 DE 的執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯工具的擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

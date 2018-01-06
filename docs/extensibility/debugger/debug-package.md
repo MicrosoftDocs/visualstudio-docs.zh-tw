@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eccd258476f82871732ef7b16f0282d2f945b9ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2cbb124dcb2d2d7a0bbcba1bc57eb3c704dd770
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-package"></a>偵錯封裝
 偵錯封裝在 Visual Studio shell 中執行，並處理所有的使用者介面。 它會使用 Visual Studio 偵錯介面和通訊工作階段的偵錯管理員 (SDM)。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  偵錯封裝是由 vsdebug.dll 實作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作階段偵錯管理員](../../extensibility/debugger/session-debug-manager.md)   
  [堆疊框架](../../extensibility/debugger/stack-frames.md)   
  [執行緒](../../extensibility/debugger/threads.md)   

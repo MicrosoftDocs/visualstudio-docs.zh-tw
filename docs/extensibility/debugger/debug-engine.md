@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>偵錯引擎
 偵錯引擎 (DE) 搭配運作的解譯器或作業系統提供偵錯服務，例如執行控制項、 中斷點及運算式評估。 DE 負責監視程式，偵錯時的狀態。 若要執行完成此動作，DE 會使用任何方法有它中支援的執行階段，是否將 cpu，或從應用程式開發介面由執行階段所提供。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  DE 搭配以啟用該特定執行階段 DE，若要了解運算式的語法的運算式評估工具元件。 DE 也可以搭配符號處理常式元件存取的語言編譯器所產生的符號偵錯資訊。 如需詳細資訊，請參閱[運算式評估工具](../../extensibility/debugger/expression-evaluator.md)和[符號提供者](../../extensibility/debugger/symbol-provider.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [運算式評估工具](../../extensibility/debugger/expression-evaluator.md)   
  [符號提供者](../../extensibility/debugger/symbol-provider.md)

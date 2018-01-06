@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: bb8c31d37bd37f4e2db8415ef1815caec0ec185a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 955e29add1990793711dd69fffbd2306ce61407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;w&gt;元素 （ClickOnce 部署）
 識別安裝及執行此應用程式所需的 .NET Framework 版本。  
@@ -47,18 +48,18 @@ ms.lasthandoff: 10/27/2017
   
  下表列出屬性，`compatibleFrameworks`項目支援。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|`S` `upportUrl`|選擇項。 指定的 URL，您可以在其中下載慣用相容的.NET Framework 版本。|  
+|`S` `upportUrl`|選擇性。 指定的 URL，您可以在其中下載慣用相容的.NET Framework 版本。|  
   
 ## <a name="framework"></a>架構  
- 必要項。 下表列出的屬性，`framework`項目支援。  
+ 必要。 下表列出的屬性，`framework`項目支援。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`targetVersion`|必要項。 指定的目標.NET Framework 的版本號碼。|  
-|`profile`|必要項。 指定的目標.NET Framework 的設定檔。|  
-|`supportedRuntime`|必要項。 指定執行階段相關聯的目標.NET Framework 的版本號碼。|  
+|`targetVersion`|必要。 指定的目標.NET Framework 的版本號碼。|  
+|`profile`|必要。 指定的目標.NET Framework 的設定檔。|  
+|`supportedRuntime`|必要。 指定執行階段相關聯的目標.NET Framework 的版本號碼。|  
   
 ## <a name="remarks"></a>備註  
   
@@ -74,5 +75,5 @@ ms.lasthandoff: 10/27/2017
 </compatibleFrameworks>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)

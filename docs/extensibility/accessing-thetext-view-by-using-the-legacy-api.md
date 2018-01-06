@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07ce61a0188802455c4e64b698344c3f275215bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bea908ee04913c5ec56678f1438229e045bf68c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>使用舊版 API 存取 theText 檢視
 文字檢視是儲存在文字緩衝區之文字的呈現。 您可以在下一節中所示，使用舊版 API 存取文字檢視。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
  [文字] 檢視的事件通知使用來提供`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents`介面。 實作這個介面上您的用戶端物件來接收通知的文字檢視變更。 使用公開這個介面可文字檢視<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>上文字檢視，以從檢視接收變更通知的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [變更檢視設定，以使用舊版 API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)   
  [使用文字管理員監控全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)

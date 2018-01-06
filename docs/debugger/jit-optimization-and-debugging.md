@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acf75c0fbf6f5c3cfcf645d288c4e5e2eb2450d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 當您偵錯 managed 應用程式，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]依預設會隱藏在 just-in-time (JIT) 程式碼的最佳化。 隱藏 JIT 最佳化表示您是在偵錯非最佳化的程式碼。 因為沒有最佳化，所以程式碼的執行速度較慢，但是您的偵錯經驗會更完整。 偵錯最佳化的程式碼更為困難，建議您只有在遇到發生於最佳化程式碼中的錯誤，又無法在非最佳化版本中重現錯誤時，才偵錯最佳化的程式碼。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  請記住，**模組載入時隱藏 JIT 最佳化**選項會在模組載入時隱藏程式碼的最佳化。 如果是附加至已在執行中的處理序，其中可能包含已經載入的、編譯為 JIT 以及最佳化的程式碼。 **模組載入時隱藏 JIT 最佳化**選項無效這類程式碼，雖然會影響在附加後載入的模組。 此外，**模組載入時隱藏 JIT 最佳化**選項不會影響模組，例如 WinForms.dll 使用 NGEN 建立的。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

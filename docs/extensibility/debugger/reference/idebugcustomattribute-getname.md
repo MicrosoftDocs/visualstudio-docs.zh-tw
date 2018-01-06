@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 165362ab03685a3acca457e4095778b9dcb182e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8237fe3ad25baa912ee3a1eb84da533d788346cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 取得自訂屬性的名稱。  
@@ -47,5 +48,5 @@ int GetName(
 ## <a name="remarks"></a>備註  
  這個方法所傳回的具名會對應至用來宣告屬性類別的名稱。 這可能不完全對應到名稱自訂屬性類別本身的 C# 允許 「 屬性 」 尾碼，用於在宣告時卸除從自訂屬性的名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

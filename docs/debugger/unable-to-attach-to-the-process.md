@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec2c181edc69ac2e693de96fcf72fe9116f758b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 691d0352b327dd2665b3a6daf22b3542929d3ca3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 無法附加至處理序。 當連接至這部電腦時，伺服器上的偵錯工具元件會收到拒絕存取。  
@@ -62,5 +63,5 @@ ms.lasthandoff: 10/31/2017
   
 7.  關閉所有視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

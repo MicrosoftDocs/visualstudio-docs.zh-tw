@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1aa73140760f161971f30e4232658b18453f233f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9ca3465aafc36af24f36f86edd5bf3dc5c69d576
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 快取概觀
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，無論它們是安裝在本機，或裝載於線上，會儲存在用戶端電腦[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式*快取*。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]快取是一系列的本機設定目錄的目前使用者的 [Documents and Settings] 資料夾底下的隱藏目錄。 此快取保存應用程式的所有檔案，包括組件、 組態檔、 應用程式和使用者設定和資料目錄。 快取也會負責將應用程式的資料目錄移轉到最新版本。 如需有關資料移轉的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/27/2017
   
  根據預設，用戶端電腦有 250 MB 的儲存體的線上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這項限制不計算的資料檔案。 系統管理員可以放大或縮小特定用戶端電腦上的此配額變更登錄機碼，HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB，也就是 DWORD 值表示快取大小，以 kb 為單位。 例如，為了減少快取大小為 50 MB，您會為 51200 變更此值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

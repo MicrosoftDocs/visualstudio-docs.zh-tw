@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9b240bcdcc576e7ace85e766b54e5cd70e4e5503
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新
 ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 在第一個方法中，您可以設定 ClickOnce 部署以自動檢查更新，在特定間隔內。 在第二個方法中，您可以撰寫程式碼乃使用<xref:System.Deployment.Application.ApplicationDeployment>檢查更新的類別，根據事件，例如使用者的要求。  
@@ -62,7 +63,7 @@ ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您的應用程式必須具有完全信任權限使用以程式設計方式更新。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 指定部署更新的替代位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

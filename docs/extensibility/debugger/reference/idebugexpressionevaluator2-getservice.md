@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d907bdd93d2c17eb86ae07f9c9cfa3034fa3c09d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1ff102b35e7492a47833fbbac710509711eac471
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 擷取服務物件，指定其唯一的識別項。  
@@ -53,5 +54,5 @@ int GetService (
 ## <a name="remarks"></a>備註  
  這可供從另一個運算式評估工具取得服務的第三方運算式評估工具。 例如，這個方法無法用於從預設運算式評估工具取得視覺化檢視服務的介面。 第三方運算式評估工具不太可能需要實作這個介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

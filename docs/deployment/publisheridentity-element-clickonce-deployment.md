@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 9a59b97b3260beaf39ae20b62a44903add13e622
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 527ab7ae43790f7e824ead33fb601f0f8dee2bf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
 包含簽署此部署資訊清單之發行者的資訊。  
@@ -43,8 +44,8 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要項。 描述發行此應用程式的合作對象的識別。|  
-|`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|  
+|`name`|必要。 描述發行此應用程式的合作對象的識別。|  
+|`issuerKeyHash`|必要。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|  
   
 #### <a name="parameters"></a>參數  
   

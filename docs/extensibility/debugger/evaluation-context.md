@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a44d7ce7cffa2afc40971b0ea6f88a6f62617f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9a490ef7c4ea42fe85c291ee913d7ad5e1cda1bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluation-context"></a>評估內容
 > [!IMPORTANT]
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="arguments"></a>引數  
   
-|引數|說明|  
+|引數|描述|  
 |--------------|-----------------|  
 |`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)用來識別符號的介面，可指定符號處理常式 (SH)。|  
 |`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)介面，可指定目前執行點。 這可以用來尋找包含正在執行的程式碼的方法。|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  `IDebugParsedExpression::EvaluateSync`傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表所產生的值和其類型的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [索引鍵運算式評估工具介面](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
  [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   

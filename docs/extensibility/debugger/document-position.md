@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4132742177eac126a6aa67f915c16c2ff4e8c93c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b9d447588f39e29957cf401c52b2716f34eeafaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-position"></a>文件位置
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**文件位置**:  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼內容](../../extensibility/debugger/code-context.md)   
  [文件內容](../../extensibility/debugger/document-context.md)   
  [符號提供者](../../extensibility/debugger/symbol-provider.md)   

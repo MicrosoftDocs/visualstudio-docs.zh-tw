@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是一種部署技術，可讓您建立自我更新 Windows 為基礎的應用程式可以安裝並執行最少的使用者互動。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用於發佈及更新部署與 ClickOnce 技術，如果您已經開發您的專案與 Visual Basic 和 Visual C# 應用程式提供完整支援。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/27/2017
  Authenticode 憑證可用來驗證應用程式的發行者。 藉由使用 Authenticode 以部署應用程式，ClickOnce 會有助於防止有害的程式合法程式來自已建立、 值得信任的來源方法本身。 或者，也可以使用憑證簽署應用程式和部署資訊清單，以證明檔案未已遭竄改。 如需詳細資訊，請參閱[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 憑證也可用來設定用戶端電腦具有受信任的發行者清單。 如果應用程式來自受信任的發行者，則它可以安裝沒有任何使用者互動。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
 ### <a name="code-access-security"></a>程式碼存取安全性  
- 程式碼存取安全性有助於限制程式碼對受保護資源的存取。 在大部分情況下，您可以選擇網際網路或近端內部網路區域以限制權限。 使用**安全性**頁面**ProjectDesigner**來要求適當的應用程式的區域。 您也可以偵錯應用程式，以限制使用權限來模擬的使用者體驗。 如需詳細資訊，請參閱[ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
+ 程式碼存取安全性有助於限制程式碼對受保護資源的存取。 在大部分情況下，您可以選擇網際網路或近端內部網路區域以限制權限。 使用**安全性**頁面**ProjectDesigner**來要求適當的應用程式的區域。 您也可以偵錯應用程式，以限制使用權限來模擬的使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示  
  如果應用程式要求超過區域可讓更多的權限，可以提示使用者進行信任決策。 使用者可以決定是否受信任而得以執行 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 XAML 瀏覽器應用程式和 Office 方案。 如需詳細資訊，請參閱[How to： 設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="clickonce-tools"></a>ClickOnce 工具  
  下表顯示的工具，您可以使用產生、 編輯、 簽署，並重新簽署應用程式和部署資訊清單。  
   
-|工具|說明|  
+|工具|描述|  
 |----------|-----------------|  
 |[專案設計工具、安全性頁面](../ide/reference/security-page-project-designer.md)|簽署的應用程式和部署資訊清單。|  
 |[專案設計工具、發行頁面](../ide/reference/publish-page-project-designer.md)|產生和編輯 Visual Basic 和 Visual C# 應用程式的應用程式和部署資訊清單。|  
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/27/2017
 |Internet Explorer|2.0、 3.0、 3.5、 3.5 SP1、 4|  
 |Firefox|2.0 SP1、 3.5 SP1、 4|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Vista 的 ClickOnce 部署](../deployment/clickonce-deployment-on-windows-vista.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

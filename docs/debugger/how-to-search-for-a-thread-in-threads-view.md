@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16404b5446b8aedc26d8ecc88e88b6061d896e69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6aa48e8a83263ed31a36c97020a0f495a7a50f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在執行緒檢視中搜尋執行緒
 您可以使用它的執行緒 ID 或模組字串做為搜尋準則來搜尋特定執行緒 檢視中的執行緒。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示所選取之執行緒的屬性中的執行緒樹狀結構。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  選擇**向上**或**向**搜尋初始方向。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
  如果找到符合的執行緒，它會反白顯示 [執行緒檢視] 視窗中。

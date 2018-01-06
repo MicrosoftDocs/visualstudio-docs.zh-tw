@@ -115,11 +115,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e32547d66d1bf4de73b209ac0174598da9bbb731
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C + + 偵錯組態的專案設定
 您可以變更 C 或 Visual c + + 的偵錯組態中的專案設定**屬性頁** 對話方塊中所述[How to： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁** 對話方塊。  
@@ -133,7 +134,7 @@ ms.lasthandoff: 11/11/2017
   
 ## <a name="configuration-properties-folder-debugging-category"></a>組態屬性資料夾 (偵錯分類)  
   
-|**設定**|**說明**|  
+|**設定**|**描述**|  
 |-----------------|---------------------|  
 |**若要啟動的偵錯工具**|指定要執行的偵錯工具，並提供下列選項：<br /><br /> -   **本機 Windows 偵錯工具**<br />-   **遠端 Windows 偵錯工具**<br />-   **Web 瀏覽器偵錯工具**<br />-   **Web 服務偵錯工具**|  
 |**命令**（本機 Windows 偵錯工具）|指定用來啟動將於本機電腦上進行偵錯之程式的命令。|  
@@ -157,19 +158,19 @@ ms.lasthandoff: 11/11/2017
   
 ## <a name="cc-folder-general-category"></a>C/C++ 資料夾 (一般分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**偵錯資訊格式**([/Z7、 /Zd、 Zi、 /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱[/Z7、 /Zd、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)。|  
   
 ## <a name="cc-folder-optimization-category"></a>C/C++ 資料夾 (最佳化分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**Optimization**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 最佳化的程式碼將不再符合原始程式碼， 因此不容易進行偵錯。<br /><br /> 預設選項 (**已停用 (/ 0d**) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|  
   
 ## <a name="linker-folder-debugging-category"></a>連結器資料夾 (偵錯分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**產生偵錯資訊**([偵錯](/cpp/build/reference/debug-generate-debug-info))|通知連結器要包含偵錯資訊，資訊的格式是由 /Z7、/Zd、Zi 或 /ZI 所指定。|  
 |**產生程式資料庫檔**([/PDB:name](/cpp/build/reference/pdb-use-program-database))|在這個方塊中指定 PDB 檔的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|  
@@ -187,9 +188,9 @@ ms.lasthandoff: 11/11/2017
 
 若要偵錯您的專案外部的 Dll，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal)。 如果您要偵錯 DLL 專案，但不具有存取呼叫的應用程式的專案，請參閱[如何從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [建立和管理 Visual c + + 專案](/cpp/ide/creating-and-managing-visual-cpp-projects)   
+ [建立和管理 Visual C++ 專案](/cpp/ide/creating-and-managing-visual-cpp-projects)   
  [/ASSEMBLYDEBUG （加入 DebuggableAttribute）](/cpp/build/reference/assemblydebug-add-debuggableattribute)   
  [建置命令和屬性的一般巨集](/cpp/ide/common-macros-for-build-commands-and-properties)

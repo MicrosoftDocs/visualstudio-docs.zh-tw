@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 並非所有的開發人員建立 ClickOnce 部署計劃部署應用程式本身。 其中許多只使用 ClickOnce 封裝其應用程式，然後遞交檔案給客戶，例如大型公司。 客戶會變成負責裝載其網路上的應用程式。 本主題討論這類部署中的.NET Framework 3.5 版之前的版本中固有的問題。 然後，它會描述在.NET Framework 3.5 使用新的 [使用信任的資訊清單] 功能提供新的方案。 最後，它會做出結論與建議的策略，以建立 ClickOnce 部署的客戶仍在使用較舊版本的.NET framework。  
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/27/2017
   
  這個方法的缺點是它需要客戶安裝.NET Framework SDK 工具，並讓開發人員或系統管理員身分在使用這些技術。 有些客戶可能會要求需要少量或沒有技術投入時間集中用於其組件的解決方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41c797d2c04c630d5aee7ff5ca2c0d5fc084026a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cab184b0ecf4c4971b116cc9dfde26d8f80b45f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="port-suppliers"></a>連接埠供應商
 偵錯工具就架構而言，**連接埠供應商**:  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供預設連接埠提供者和預設連接埠。 如果需要實作自訂連接埠，自訂連接埠供應商也必須實作以提供自訂連接埠。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [伺服器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [連接埠](../../extensibility/debugger/ports.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

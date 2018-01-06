@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 92182b9b6c6b2b2759b77e7b14d71dfd40379fc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 463286eb8360b728b3b7e3ce9396c9f4b7e11305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：建立封裝資訊清單
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但卻封裝資訊清單的每個地區設定。 產品資訊清單都應在不同的當地語系化版本的共用的功能。  
@@ -101,5 +102,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

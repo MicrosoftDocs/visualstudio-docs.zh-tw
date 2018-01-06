@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>處理序檢視
 處理序檢視會顯示您系統上的所有使用中的處理序樹狀結構。 顯示處理序識別碼和模組名稱。 如果您想要檢查通常對應於正在執行之程式的特定系統處理序，請使用處理序檢視。 處理程序所識別的模組名稱，或指定 「 系統處理序 」。  
@@ -38,7 +39,7 @@ Spy++ 處理序檢視
   
  上圖顯示處理序檢視與程序和執行緒展開的節點。  
   
-### <a name="in-this-section"></a>本章節內容  
+### <a name="in-this-section"></a>本節內容  
  [處理序檢視中的處理序搜尋](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  說明如何在處理程序檢視尋找特定的處理程序。  
   

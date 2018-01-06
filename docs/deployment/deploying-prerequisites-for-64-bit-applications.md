@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: aefb619487fba984e8f625dfe414c2f514f28c70
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6e0134b0a0a6151b6ae6544f1ad8272a6d4cac47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>64 位元應用程式的部署必要條件
 ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括**x86**對於 32 位元平台， **x64**用於支援 AMD64 和 EM64T 指令集，和**Itanium** 64 位元 Itanium 處理器。  
@@ -42,9 +43,9 @@ ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標�
 |Visual C++ 2010 執行階段程式庫 (IA64)|否|是|  
 |Visual C++ 2010 執行階段程式庫 (x64)|是|否|  
 |Microsoft .NET Framework 4 (x86 和 x64)|是||  
-|Microsoft .NET Framework 4 Client Profile (x86 和 x64)|是||  
+|Microsoft .NET Framework 4 Client Profile (x86 和 x64)|[是]||  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署應用程式、 服務和元件](../deployment/deploying-applications-services-and-components.md)   
- [如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

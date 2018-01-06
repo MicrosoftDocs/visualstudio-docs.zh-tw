@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ac80a3fcf3a7f75be3f23dd1350da047ccbb393
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ab4e57f500c2dfbfe673713c784cbc93ff52a73d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**運算式評估內容**:  
@@ -30,6 +31,6 @@ ms.lasthandoff: 10/31/2017
   
      指定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面，可以建立偵錯引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)藉由剖析運算式的介面。 指定`IDebugExpression2`介面，DE 可以取得透過同步或非同步的運算式評估的值。 顯示此值的名稱和類型的變數或引數，以及傳送給 IDE。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算式評估介面](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

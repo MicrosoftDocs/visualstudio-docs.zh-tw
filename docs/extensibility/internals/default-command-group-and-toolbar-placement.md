@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5f1ec42408e4fd7d33d9445ae09252fae8d03db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設的命令、 群組及工具列位置
 產品的一致性與穩定性，UI 預設會顯示特定命令的群組，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令和命令群組提供定義。 Vspackage 也可以使用標準命令和命令群組。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
   
  IDE 和產品工具列下方應放編輯器工具列。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDE 定義命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

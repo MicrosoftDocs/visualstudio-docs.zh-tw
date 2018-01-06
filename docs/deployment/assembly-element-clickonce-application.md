@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c94d70f2be28a6a420d683335c99ee0466a52114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;組件&gt;元素 （ClickOnce 應用程式）
 應用程式資訊清單最上層項目。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`manifestVersion`|必要項。 `manifestVersion`屬性必須設為`1.0`。|  
+|`manifestVersion`|必要。 `manifestVersion`屬性必須設為`1.0`。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例說明`assembly`應用程式資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這個程式碼範例是中提供之較大範例的一部分[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/27/2017
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)   
  [\<組件 > 項目](../deployment/assembly-element-clickonce-deployment.md)

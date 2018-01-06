@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 90def1bc4d824c6fdfd597ec8beb4b1f18f9e008
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c19312b005a1f8dfeefa766ed3a5e6a8ab1c566c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;元素 （ClickOnce 部署）
 部署資訊清單最上層項目。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`manifestVersion`|必要項。 此屬性必須設為`1.0`。|  
+|`manifestVersion`|必要。 此屬性必須設為`1.0`。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例說明`assembly`部署使用的應用程式的部署資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 這個程式碼範例是針對所提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
@@ -63,6 +64,6 @@ ms.lasthandoff: 10/27/2017
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)

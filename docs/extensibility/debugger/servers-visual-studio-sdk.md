@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 496e9b361dbb7f5c3eb5cf5197a1351a1182af3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 404048e37f0a95ac1425250cfdcd098c4eb7f59d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
 偵錯工具就架構而言，**伺服器**:  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 -   由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)介面，只藉由 Visual Studio （Visual Studio 執行的每個執行個體的伺服器一個執行個體）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [連接埠](../../extensibility/debugger/ports.md)   
  [連接埠供應商](../../extensibility/debugger/port-suppliers.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

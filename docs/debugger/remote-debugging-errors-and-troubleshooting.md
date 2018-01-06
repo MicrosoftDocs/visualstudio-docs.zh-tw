@@ -25,11 +25,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fea0a39532b7edbbe5f8419f1d5588b8a5d73471
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10ffa79e5a9ca7d64be9842db80a39f54d192a4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
 您可能會在嘗試進行遠端偵錯時，發生下列錯誤。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
 -   [錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

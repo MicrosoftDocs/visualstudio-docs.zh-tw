@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee5b500f0ba42f7aa3b56439d34f88294b3b3717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61973b6b9d7c62e8276f46443d0b9520419d3934
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 代表自訂的 UI 中選取連接埠。  
@@ -34,7 +35,7 @@ IDebugPortPicker : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugPortPicker`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|顯示指定的對話方塊，可讓使用者選取的連接埠。|  
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|設定服務提供者。|  

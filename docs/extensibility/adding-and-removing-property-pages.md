@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-and-removing-property-pages"></a>加入和移除屬性頁
 專案設計工具提供管理專案屬性、 設定和資源的集中式的位置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，並包含存取透過左側索引標籤的窗格右邊的數字。 專案設計工具中 （通常稱為屬性頁） 的窗格會因專案類型和語言而異。 專案設計工具可以使用存取**屬性**命令**專案**功能表。  
@@ -208,5 +209,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  本主題提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](http://aka.ms/vs2015sdksamples)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案子類型](../extensibility/internals/project-subtypes.md)

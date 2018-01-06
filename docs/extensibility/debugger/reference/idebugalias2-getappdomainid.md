@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4d5dacd7a614981971c691d3c06c436eaf55008
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a8ddebc0f540be650650595e5b808c9c4b19f706
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 擷取應用程式定義域的識別項。  
@@ -48,5 +49,5 @@ int GetAppDomainId (
 ## <a name="remarks"></a>備註  
  建立的應用程式網域識別項的變更時重新啟動應用程式和新的應用程式定義域。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

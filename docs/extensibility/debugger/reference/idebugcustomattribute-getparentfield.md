@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47aba2e8861ff03e01b67370d61c9e7c3685b9a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cad1876a366f46c11e296dc58d5ad4f01e6583f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 取得要附加自訂屬性的欄位。  
@@ -47,6 +48,6 @@ int GetParentField(
 ## <a name="remarks"></a>備註  
  呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法在傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位父物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

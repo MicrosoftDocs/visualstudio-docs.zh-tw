@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ef67cc92119aaa875d1babb43c254e72779d965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：以 Code Center Premium 來源進行偵錯
 利用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 偵錯工具，您可以從 Microsoft MSDN Code Center Premium 對安全共用來源進行偵錯。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
      如果在完成此程序之後，您無法使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 來偵錯原始程式碼，請檢查快取位置中是否有先前已快取且過期的符號檔。 移除過期的符號檔。  
   
-11. 按一下 [確定]。  
+11. 按一下 [確定 **Deploying Office Solutions**]。  
   
 12. 重新啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 以確實保存設定。  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  瀏覽並尋找您想要的原始檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)

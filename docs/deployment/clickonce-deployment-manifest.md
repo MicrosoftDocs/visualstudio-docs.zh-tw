@@ -19,28 +19,29 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。  
   
  部署資訊清單具有下列項目和屬性。  
   
-|項目|描述|屬性|  
+|元素|描述|屬性|  
 |-------------|-----------------|----------------|  
-|[\<組件 > 項目](../deployment/assembly-element-clickonce-deployment.md)|必要項。 最上層項目。|`manifestVersion`|  
-|[\<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要項。 識別此 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<描述 > 項目](../deployment/description-element-clickonce-deployment.md)|必要項。 識別應用程式資訊用於建立 shell 的存在和**新增或移除程式**控制台 中的項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<部署 > 項目](../deployment/deployment-element-clickonce-deployment.md)|選擇項。 識別用於更新部署及公開至系統的屬性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<w > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必要項。 識別安裝及執行此應用程式所需的 .NET Framework 版本。|`SupportUrl`|  
-|[\<相依性 > 項目](../deployment/dependency-element-clickonce-deployment.md)|必要項。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
+|[\<組件 > 項目](../deployment/assembly-element-clickonce-deployment.md)|必要。 最上層項目。|`manifestVersion`|  
+|[\<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要。 識別此 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[\<描述 > 項目](../deployment/description-element-clickonce-deployment.md)|必要。 識別應用程式資訊用於建立 shell 的存在和**新增或移除程式**控制台 中的項目。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<部署 > 項目](../deployment/deployment-element-clickonce-deployment.md)|選擇性。 識別用於更新部署及公開至系統的屬性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
+|[\<w > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必要。 識別安裝及執行此應用程式所需的 .NET Framework 版本。|`SupportUrl`|  
+|[\<相依性 > 項目](../deployment/dependency-element-clickonce-deployment.md)|必要。 識別部署所要安裝的應用程式版本，以及應用程式資訊清單的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity > 項目](../deployment/publisheridentity-element-clickonce-deployment.md)|簽署資訊清單的必要項。 包含簽署此部署資訊清單之發行者的資訊。|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<簽章 > 項目](../deployment/signature-element-clickonce-deployment.md)|選擇項。 包含對此部署資訊清單進行數位簽章時所需的資訊。|無|  
-|[\<customErrorReporting > 項目](../deployment/customerrorreporting-element-clickonce-deployment.md)|選擇項。 指定要在錯誤發生時顯示的 URI。|URI|  
+|[\<簽章 > 項目](../deployment/signature-element-clickonce-deployment.md)|選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。|無|  
+|[\<customErrorReporting > 項目](../deployment/customerrorreporting-element-clickonce-deployment.md)|選擇性。 指定要在錯誤發生時顯示的 URI。|URI|  
   
 ## <a name="remarks"></a>備註  
  部署資訊清單檔會識別 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署，包含目前的版本與其他部署設定。 這會參考應用程式資訊清單，其中描述此應用程式的目前版本和部署內包含的所有檔案。  
@@ -120,5 +121,5 @@ ms.lasthandoff: 10/27/2017
 </Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

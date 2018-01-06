@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba9a9a6b406ad5a94cced7820e6b4581db56eb2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f3fe862f0115ae4890bd07e0b4f0171ecafcb4b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime 和運算式評估
 > [!IMPORTANT]
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  當 CLR DE 呼叫專屬的 EE 評估運算式時，DE 提供 EE 預存程序和繫結器物件的介面。 因此，撰寫 CLR 為基礎的偵錯引擎表示它是為了只實作適當的運算式評估工具的介面。CLR 會負責繫結和處理您的符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

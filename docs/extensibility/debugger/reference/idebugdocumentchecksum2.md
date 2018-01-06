@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d70923fa450f79aacd059ebb4d2fde753fb13564
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50fbee2dbdb30873c97f1ca465d99161add90a19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 代表偵錯文件的總和檢查碼，並可讓您傳遞元件之間的總和檢查碼。  
@@ -34,7 +35,7 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugDocumentChecksum2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|擷取指定要使用的位元組數目上限的文件的總和檢查碼及演算法識別項。|  
   

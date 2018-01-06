@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>在模擬器中執行的 UWP 和 Windows 8.1 應用程式
 UWP 和 Windows 8.1 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 UWP 或 Windows 8.1 的應用程式。 您可以執行的應用程式選擇的實體螢幕大小和您要模擬的解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
@@ -146,12 +147,12 @@ UWP 和 Windows 8.1 應用程式的 Visual Studio 模擬器是桌面應用程式
   
  [如何使用背景工作回應系統事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [如何觸發暫止、 繼續及背景事件在 UWP 應用程式](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [如何在 UWP App 中觸發暫停、繼續和背景事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 使用鍵盤巡覽模擬器  
  您可以藉由按下巡覽模擬器工具列**CTRL + ALT + 向上鍵**將焦點從模擬器視窗切換至模擬器工具列。 使用 **向上鍵** 和 **向下鍵** 可以在工具列按鈕之間移動。  
   
  您可以藉由按下關閉模擬器**CTRL + ALT + F4**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)

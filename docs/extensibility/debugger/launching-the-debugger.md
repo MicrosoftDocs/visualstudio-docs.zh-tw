@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23fd772b74c4caafbde37541933c38e306f9dc75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7b5b596f553c0f84c9306bba010d2b97a33e1a16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-the-debugger"></a>啟動偵錯工具
 啟動偵錯工具需要傳送正確的順序的方法和事件的適當的屬性。  
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/31/2017
   
 8.  DE 傳送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)來與 SDM`EVENT_SYNC`屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)   
  [啟動程式](../../extensibility/debugger/launching-a-program.md)

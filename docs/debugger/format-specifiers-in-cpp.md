@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C + + 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。  
@@ -65,14 +66,14 @@ int main() {
 ##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
  下表顯示可在 Visual Studio 中使用的格式規範。 使用 C++/CLI 的 Interop 偵錯不支援粗體的規範。  
   
-|規範|格式|原始的監看值|顯示的值|  
+|指定名稱|格式|原始的監看值|顯示的值|  
 |---------------|------------|--------------------------|---------------------|  
 |d|十進位整數|0x00000066|102|  
 |o|不帶正負號的八進位整數|0x00000066|000000000146|  
 |x<br /><br /> **h**|十六進位整數|102|0xcccccccc|  
-|x<br /><br /> **H**|十六進位整數|102|0xcccccccc|  
+|X<br /><br /> **H**|十六進位整數|102|0xcccccccc|  
 |c|單一字元|0x0065, c|101 'e'|  
-|s|const char* 字串|\<位置 >"hello world"|"hello world"|  
+|秒|const char* 字串|\<位置 >"hello world"|"hello world"|  
 |**sb**|const char * 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
 |s8|UTF-8 字串|\<位置 >"This is utf-8 咖啡杯 â˜•"|"This is utf-8 咖啡杯 ☕"|
 |**s8b**|Utf-8 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
@@ -106,7 +107,7 @@ int main() {
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範  
  偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。  
   
-|規範|格式|原始的監看值|顯示的值|  
+|指定名稱|格式|原始的監看值|顯示的值|  
 |---------------|------------|--------------------------|---------------------|  
 |**d,i**|帶正負號的十進位整數|0xF000F065|-268373915|  
 |**u**|不帶正負號的十進位整數|0x0065|101|  
@@ -117,7 +118,7 @@ int main() {
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
 |**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
 |c|單一字元|\<位置 >|101 'e'|  
-|s|const char*|\<位置 >|"hello world"|  
+|秒|const char*|\<位置 >|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<位置 >|L"hello world"|  
 |sub|const wchar_t*<br /><br /> const char16_t\*|\<位置 >|hello world|  
 |s8|const char*|\<位置 >|"hello world"|  
@@ -132,16 +133,16 @@ int main() {
 |符號|格式|原始的監看值|顯示的值|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 個 ASCII 字元|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**m**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**mb**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
 |**mw**|8 個字組|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 個 Doubleword|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>使用 C + interop 偵錯中做為陣列的指標大小規範 + CLI  
  如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
   
-|規範|格式|運算式|顯示的值|  
+|指定名稱|格式|運算式|顯示的值|  
 |---------------|------------|----------------|---------------------|  
 |n|十進位整數|pBuffer[32]|顯示 `pBuffer` 為 32 個項目的陣列。|

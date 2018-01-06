@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b301d16c96878974c12b94879f717c727d129a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 您可以啟動 Spy + + 從 Visual Studio 或在命令提示字元。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  型別**spyxx.exe**然後按 ENTER 鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 檢視](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

@@ -16,16 +16,17 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e376ced68301abae6090a87114e2178c0adc28cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 679559b70096dc7ec3baa792ea98c0c3fea7cc67
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-source-control-plug-in"></a>建立原始檔控制外掛程式
 Visual Studio SDK 提供可讓您將原始檔控制功能，加入資源[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它可讓您使用這份文件中所述的原始檔控制外掛程式 api 符合任何外掛程式 DLL。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)  
  描述如何安裝原始檔控制外掛程式，並反白顯示目前可用的原始檔控制外掛程式 API 版本。  
   

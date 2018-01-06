@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字串&gt;元素 （啟動載入器）
 定義產品名稱、 封裝名稱，以及安裝錯誤訊息的當地語系化的字串。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 字串的名稱。|  
+|`Name`|必要。 字串的名稱。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會指定的所有英文字串[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝程式。  
@@ -75,5 +76,5 @@ ms.lasthandoff: 10/27/2017
 </Strings>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)

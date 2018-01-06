@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-directly-to-a-program"></a>直接附加程式
 使用者想要偵錯程式已在通常執行的處理序中遵循這個程序：  
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
   
  第二個例外情況是，附加到已在執行中的程式 DE 所傳送的啟動事件不通常包含項目點事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在啟動後傳送啟動事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

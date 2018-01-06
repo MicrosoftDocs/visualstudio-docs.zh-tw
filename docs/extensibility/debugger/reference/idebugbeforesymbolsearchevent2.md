@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9541c7008129f47df93e2e4cf2c3e8248742b0c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ec023384ab95e72d0341fb728eb0fd6a4f58480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 偵錯引擎 (DE) 過程中傳送此介面至工作階段的偵錯管理員 (SDM) 的狀態設列訊息符號載入。  
@@ -37,7 +38,7 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugBeforeSymbolSearchEvent2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|擷取目前所偵錯之模組的名稱。|  
   

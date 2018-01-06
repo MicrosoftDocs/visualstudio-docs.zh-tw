@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>執行緒和工作使用平行堆疊 視窗檢視
 **平行堆疊**視窗時，您要偵錯多執行緒應用程式。 其**執行緒檢視**顯示您的應用程式中的所有執行緒的呼叫堆疊資訊。 這個檢視可讓您巡覽執行緒和其上的堆疊框架。 在 managed 程式碼，**工作檢視**顯示呼叫堆疊的<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件。 原生程式碼，**工作檢視**顯示呼叫堆疊的[工作群組](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[平行演算法](/cpp/parallel/concrt/parallel-algorithms)，[非同步代理程式](/cpp/parallel/concrt/asynchronous-agents)，和[輕量型工作](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  在圖中，目前執行緒的呼叫路徑會以藍色，反白顯示執行緒的目前位置 （作用中堆疊框架） 是並用黃色箭號。 您可以選取不同的方法中變更目前堆疊框架**平行堆疊**視窗。 這可能也會導致切換目前執行緒，取決於您選取的方法已是目前執行緒的一部分還是另一個執行緒的一部分。 下表描述的主要功能**平行堆疊**視窗，如下圖所示。  
   
-|圖說文字字母|項目名稱|描述|  
+|圖說文字字母|元素名稱|描述|  
 |--------------------|------------------|-----------------|  
 |A|呼叫堆疊區段或節點|包含一系列的一個或多個執行緒的方法。 如果節點未連接任何帶箭號的線條，則表示它代表執行緒的整個呼叫路徑。|  
 |B|藍色醒目提示|表示目前執行緒的呼叫路徑。|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|圖示|說明|  
+|圖示|描述|  
 |![平行堆疊 的黃色箭頭](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|表示此方法包含目前執行緒的目前位置 （作用中堆疊框架）。|  
 |![平行堆疊 的執行緒圖示](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|表示此方法包含非目前執行緒的目前位置 （作用中堆疊框架）。|  
 |![平行堆疊 的綠色箭頭](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|表示此方法包含目前的堆疊框架 （目前的偵錯工具內容）。 該方法名稱在其出現的所有節點中會顯示為粗體。|  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 |圖說文字字母|控制項|描述|  
 |--------------------|-------------|-----------------|  
-|A|執行緒/工作下拉式方塊|切換執行緒呼叫堆疊檢視和工作呼叫堆疊檢視。 如需詳細資訊，請參閱＜工作檢視＞和＜執行緒檢視＞。|  
+|A|執行緒/工作下拉式方塊|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱＜工作檢閱＞和＜執行緒檢閱＞。|  
 |B|僅顯示有旗標的項目|顯示呼叫堆疊，僅適用於執行緒視窗中的其他偵錯，例如標示**GPU 執行緒**視窗和**平行監看式**視窗。|  
 |C|切換方法檢視|切換 [堆疊檢視] 和 [方法檢視]。 如需詳細資訊，請參閱＜方法檢視＞。|  
 |D|自動捲動到目前堆疊框架|自動捲動圖表，讓目前堆疊框架出現在檢視中。 當您要從其他視窗變更目前堆疊框架，或是到達大型圖表中的新中斷點時，這項功能會很有用。|  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
  切換至新的堆疊框架，就可以將該方法變成目前的方法，並讓視窗顯示新方法的所有呼叫端和被呼叫端。 有些執行緒可能會因此顯示或不見，視該方法是否出現在這些執行緒的呼叫堆疊中。 若要回到 [堆疊檢視]，請再按一下 [方法檢視] 工具列按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)   
  [逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   

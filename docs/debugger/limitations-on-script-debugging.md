@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b254cddf7a31da0bf9f9825c256f2e94583f538
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援用戶端指令碼偵錯，但受限於本主題所述的限制。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 -   位於在 `<script id="">` 區塊中設定中斷點，中斷點對應會忽略 `id` 屬性。  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>中斷點對應和重複的程式行  
- 為了要在伺服器端和用戶端指令碼中找到對應位置，中斷點對應演算法會檢查每一行的程式碼。 演算法會假設每一行都是唯一的。 如果有兩行以上包含相同的程式碼，而且您已在其中一個重複的程式行上設定中斷點，則中斷點對應演算法可能會在用戶端檔案中選取錯誤的重複項目。 為了避免這種情況發生，請在您設定中斷點的程式行上加入註解。 例如：  
+ 為了要在伺服器端和用戶端指令碼中找到對應位置，中斷點對應演算法會檢查每一行的程式碼。 演算法會假設每一行都是唯一的。 如果有兩行以上包含相同的程式碼，而且您已在其中一個重複的程式行上設定中斷點，則中斷點對應演算法可能會在用戶端檔案中選取錯誤的重複項目。 為了避免這種情況發生，請在您設定中斷點的程式行上加入註解。 例如:   
   
 ```  
 i++ ;  

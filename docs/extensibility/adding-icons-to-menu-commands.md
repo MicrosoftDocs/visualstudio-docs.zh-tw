@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cdf521228a1878fa94343418bd6a182f9707a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-icons-to-menu-commands"></a>將圖示加入至功能表命令
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （為了節省空間） 時功能表上顯示命令通常會顯示圖示和文字的命令。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
   
 8.  測試您的圖示。 建置此專案並開始偵錯。 在實驗性執行個體中，找到的命令。 它應該會顯示圖示您加入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要照常開始偵錯-根據預設，已開啟 IntelliTrace，您可以查看 IntelliTrace 所記錄的新資訊**診斷工具**視窗下的**事件**] 索引標籤。選取事件，然後按一下 [**啟用歷程偵錯**若要查看呼叫堆疊和區域變數記錄此事件。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 11/15/2017
 ## <a name="forums"></a>論壇  
  [Visual Studio 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
-## <a name="videos"></a>影片  
+## <a name="videos"></a>視訊  
  [IntelliTrace 經驗](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)  
   
  [Microsoft Visual Studio 中的 IntelliTrace 歷程偵錯 Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

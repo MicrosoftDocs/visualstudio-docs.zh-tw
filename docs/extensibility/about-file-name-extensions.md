@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aba03fd68fc5e0e68dbf13887de0c25094fa951
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8f504a70950ea9e808d50bd8b9bc7ef5dd92d699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-file-name-extensions"></a>關於檔案名稱副檔名
 當您註冊 VSPackage 的副檔名時，您將它與關聯的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這是重要如果多個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]安裝在電腦上。  
@@ -38,6 +39,6 @@ HKEY_CLASSES_ROOT\
   
  在某些情況下，不應該變更副檔名相關聯的 ProgID。 例如，.htm 副檔名的 ProgID (progid = htmlfile) 是硬式編碼在某個作業系統中的小數位數，且廣泛已知且使用中關聯.htm 與.html 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [註冊檔案名稱擴充功能-並存部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [指定適用於副檔名的檔案處理常式](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

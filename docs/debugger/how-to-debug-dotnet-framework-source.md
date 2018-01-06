@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：偵錯 .NET Framework 原始檔
 最新版的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供的新功能[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]偵錯。 若要偵錯[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]來源，您必須偵錯符號的程式碼存取權。 您也必須啟用逐步執行到[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]來源。  
@@ -37,9 +38,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**一般**方塊中，設定**啟用.NET Framework**來源逐步執行。  
   
-    1.  如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定]。  
+    1.  如果您已啟用 Just My Code，將會出現警告對話方塊，通知您 Just My Code 現在已停用。 按一下 [確定 **Deploying Office Solutions**]。  
   
-    2.  如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定]。  
+    2.  如果您未設定符號快取區位置，將會出現另一個對話方塊，通知您現在已經設定預設的符號快取區位置。 按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  在下**偵錯**分類中，按一下 **符號**。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
      如果您沒有選擇立即下載符號，便會在下次開始偵錯程式時，自動下載符號。  
   
-7.  按一下**確定**關閉**選項** 對話方塊。  
+7.  按一下 [確定] 關閉 [選項] 對話方塊。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>若要使用模組視窗載入 Framework 符號  
   
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  指向**載入符號來源**按一下**Microsoft 符號伺服器**或**符號路徑**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

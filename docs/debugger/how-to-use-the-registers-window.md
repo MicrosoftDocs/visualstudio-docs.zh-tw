@@ -26,11 +26,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>檢視登錄值和使用 Visual Studio 偵錯工具中的暫存器視窗
 暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯** 節點，**一般**類別目錄。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  暫存器資訊無法用於指令碼或 SQL 應用程式內。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯的基本概念： 暫存器視窗](../debugger/debugging-basics-registers-window.md)   
+## <a name="see-also"></a>請參閱  
+ [偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)   
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)

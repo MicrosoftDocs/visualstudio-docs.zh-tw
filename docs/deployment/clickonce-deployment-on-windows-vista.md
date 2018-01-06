@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 22a50c85db54ed58b675253bb071c4aab47fe197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 49ea73293e8cc491b515644a7e7d3f226a799339
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 在 Visual Studio 中的建置應用程式對使用者帳戶控制 (UAC) 在 Windows Vista 上通常會產生內嵌的資訊清單，編碼為二進位的 XML 資料，應用程式的可執行檔。 因為 ClickOnce 和免註冊 COM 應用程式需要外部資訊清單，Visual Studio 會產生這些類型的專案包含 UAC 資料，而不是內嵌的資訊清單檔案。 根據預設，Visual Studio 會從呼叫 app.manifest 檔案使用資訊，來產生外部 UAC 資訊清單資訊 （如 ClickOnce 和免註冊 COM 部署），或將它內嵌在應用程式的可執行檔 （適用於所有其他情況下）。 Visual Studio 提供下列選項以產生資訊清單：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
  設定 Visual Basic 專案，以產生資訊清單的相關資訊，請參閱[應用程式] 頁面上，[專案設計工具 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [使用者權限和 Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   

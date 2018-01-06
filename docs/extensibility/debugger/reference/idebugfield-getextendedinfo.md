@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5b52c5634b4b34edf11ddb8a56317cc237063bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c6b2aaa953e47366e7a99fb5a821f530d37ed66e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 這個方法取得擴充欄位的相關資訊。  
@@ -45,7 +46,7 @@ int GetExtendedInfo(
  `guidExtendedInfo`  
  [in]選取要傳回的資訊。 有效值為：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`guidConstantValue`|以一連串的位元組值。|  
 |`guidConstantType`|類型簽章為型別。|  
@@ -62,5 +63,5 @@ int GetExtendedInfo(
 ## <a name="remarks"></a>備註  
  目前，這個方法只會傳回型別或常數的值。 呼叫端必須釋放中傳回的緩衝區`prgBuffer`藉由呼叫 COM 的`CoTaskMemFree`函式 （c + +） 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

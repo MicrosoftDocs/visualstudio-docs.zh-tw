@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d85c76ce48ca2e04e7ce40b9e40075c8ba539e6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: f98867a5420755ca2eb4e2fb5e75070759a1a91b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>偵錯使用 Visual Studio 中的預先擷取的內容的 UWP 應用程式
 ![僅適用於 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -44,5 +45,5 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  當您新增或修改指定的 Web 內容時，請重複上述步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部落格文章： 觸發預先擷取的 Windows 市集應用程式在 Visual Studio 2013 Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

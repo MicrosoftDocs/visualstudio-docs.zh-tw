@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 傳統 COM 元件的部署一直困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用重疊的應用程式之間。 這種情況通常不是.NET Framework 應用程式中的問題因為彼此完全隔離的應用程式或元件的並存相容。 Visual Studio 可讓您部署獨立的 COM 元件，Windows XP 或更高版本的作業系統上。  
@@ -174,5 +175,5 @@ ms.lasthandoff: 10/27/2017
   
  即使應用程式的部署不需要註冊，則需要有數種案例中的 COM 開發人員在電腦，必須註冊。 `Isolated`屬性需要開發人員的電腦上註冊 COM 元件，以自動產生資訊清單在建置期間。 沒有註冊擷取功能，可以在建置期間叫用自我登錄。 此外，任何未明確定義類型程式庫中的類別不會反映在資訊清單中。 當使用預先存在的資訊清單，例如原生參考的 COM 元件，元件可能不需要註冊在開發階段。 不過，如果就需要註冊元件是一個 ActiveX 控制項，而且您想要將它併入**工具箱**和 Windows Form 設計工具。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

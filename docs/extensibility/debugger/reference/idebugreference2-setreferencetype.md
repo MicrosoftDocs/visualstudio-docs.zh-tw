@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abe3627f11540f43e59d4d22cec6598a924fa3b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6da0317bb98c89fc78dadf0317dd6f0e01c699bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 設定參考類型。 保留供未來使用。  
@@ -44,6 +45,6 @@ int SetReferenceType (
 ## <a name="return-value"></a>傳回值  
  一律傳回 `E_NOTIMPL`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

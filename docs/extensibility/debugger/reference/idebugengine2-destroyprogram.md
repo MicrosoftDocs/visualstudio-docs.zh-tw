@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7efe7c8c4d917e6dd1868625ca1d80996176acb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 066a8a3cf9fb4f9c39d36cfa4ea386e06cbba831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 通知偵錯引擎 (DE) 4mb 終止指定的程式，而且 DE 應該清除程式的所有參考，傳送程式損毀事件。  
@@ -49,7 +50,7 @@ int DestroyProgram(
   
  不實作此方法 (傳回`E_NOTIMPL`) 如果 DE 執行相同的程序進行偵錯的程式中。 只有當 DE 執行 SDM 相同的程序中，會實作這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

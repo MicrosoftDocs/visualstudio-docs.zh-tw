@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>定址 DPI 問題
 越來越多的裝置所傳送與 「 高解析度 」 畫面。 這些畫面通常會有每英吋點數 (ppi) 超過 200 像素為單位。 必須搭配使用這些電腦上的應用程式內容延伸到檢視裝置的正常檢視距離內容的需求。 顯示適用之高密度的主要目標 2014 中，為行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。  

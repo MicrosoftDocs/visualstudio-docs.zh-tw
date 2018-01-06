@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼變更 （C# 和 Visual Basic）
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/11/2017
 |語言項目功能|支援的編輯作業|限制|
 |-|-|-|
 |類型|加入方法、 欄位、 建構函式、 box|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iterator|加入或修改|否|
+|迭代器|加入或修改|否|
 |非同步/等候運算式|加入或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |動態物件|加入或修改|否|
 |Lambda 運算式|加入或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -78,7 +79,7 @@ ms.lasthandoff: 12/11/2017
 |再試一次為 try-catch-finally 區塊|它包含現用陳述式時，修改|
 |Using 陳述式|新增|
 |非同步方法 lambda|修改非同步方法/lambda 中以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterator|修改.NET Framework 4 為目標的專案中的迭代器，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|迭代器|修改.NET Framework 4 為目標的專案中的迭代器，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
   
 ## <a name="unsafe-code"></a>Unsafe 程式碼  
  變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。  
@@ -107,6 +108,6 @@ ms.lasthandoff: 12/11/2017
   
 -   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

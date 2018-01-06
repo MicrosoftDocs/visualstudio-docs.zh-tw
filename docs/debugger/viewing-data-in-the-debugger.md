@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dad9291e60577bd5d6faec557931ac3dcd37c45a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e8f008ba3cde911ed5c21f281d30fda2a77bf824
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立資料的自訂檢視
 各種由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具所提供的工具，都可用來檢查和修改您的程式狀態。 這些工具大多數只能在中斷模式下運作。
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="create-custom-visualizers"></a>建立自訂的視覺化檢視  
  視覺化檢視可讓您檢視物件或變數的內容中有意義的方式。 在 Visual Studio 偵錯工具視覺化檢視是指您可以使用放大鏡圖示來開啟的不同 windows ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "視覺化檢視圖示")。 例如，可以使用 HTML 視覺化工具來檢視 HTML 字串，如同在瀏覽器中解譯和顯示的字串一樣。 您可以從資料提示方塊、[監看式]  視窗、[自動變數]  視窗、[區域變數]  視窗或 [快速監看式]  對話方塊存取視覺化工具。 如需詳細資訊，請參閱[建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [命令視窗](../ide/reference/command-window.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

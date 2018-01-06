@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ba89642b51d4b1d471bc6c46d84441c6383005c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: caa523004d07a9721f7a6f738622dce9484c9821
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 此介面代表繫結和評估剖析的運算式已備妥。  
@@ -38,7 +39,7 @@ IDebugExpression2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugExpression2`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|以非同步方式評估此運算式。|  
 |[中止](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|結束非同步的運算式評估。|  
@@ -58,6 +59,6 @@ IDebugExpression2 : IUnknown
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)

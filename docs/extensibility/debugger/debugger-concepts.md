@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e928d396db2029bc4d2e659c869fd74e0df3191
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 920706adb86d79e635e4f5289ca010e03282853e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝時所使用的架構概念。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [偵錯工作階段](../../extensibility/debugger/debug-session.md)  
  說明偵錯架構中的工作階段角色。  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: af40da0690bd8b6cc9cc12dd16fe9e11045b0624
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;元素 （啟動載入器）
 `Product`元素是產品檔案內的最上層 XML 元素。  
@@ -142,7 +143,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `Product`項目必要的產品檔案中。 它有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`ProductCode`|產品的唯一識別碼。|  
   
@@ -251,5 +252,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

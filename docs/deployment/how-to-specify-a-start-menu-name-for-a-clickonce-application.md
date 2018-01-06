@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: b27cf6d67cef1098a54277d4857b75d3fba0ff65
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f01bb5750f31101a6d8ec0cb5f33669e5fbf2b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 應用程式的開始功能表名稱
 當[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]供線上及離線使用，安裝應用程式，加入一個項目是**啟動**功能表和**新增或移除程式**清單。 根據預設，顯示名稱是應用程式組件的名稱相同，但是您可以變更顯示名稱，藉由設定**產品名稱**中**發行選項** 對話方塊。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/27/2017
   
 6.  您可以選擇性地輸入中的發行者名稱**發行者名稱**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 VSPackage 工具列上的命令的集合。 集合可以擁有最多五個小節，如下： 功能表、 群組、 按鈕、 組合和點陣圖。  
@@ -40,17 +41,17 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |套件|GUID，識別 VSPackage 提供的命令。<br /><br /> 例如，封裝 ="guidVsPackage1Pkg"。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Menus 元素](../extensibility/menus-element.md)|定義所有實作 VSPackage 的功能表。|  
 |[Groups 元素](../extensibility/groups-element.md)|包含在 VSPackage 中定義的命令群組的項目。|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給 IDE 的命令的所有項目。 可能的項目是功能表項目、 功能表、 工具列和下拉式方塊。|  
   
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
 <Commands>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

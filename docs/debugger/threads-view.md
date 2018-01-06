@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>執行緒檢視
 [執行緒] 檢視是您的系統上的 windows 與相關聯的所有執行緒的一般清單。 會顯示執行緒 ID 和每個執行緒的模組名稱。 程序不包含在內，但您可以輕鬆找到擁有所選取之執行緒的程序。  
@@ -34,7 +35,7 @@ Spy++ 執行緒檢視
   
  上圖顯示 [執行緒] 檢視。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [執行緒檢視中的執行緒搜尋](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  說明如何在執行緒檢視中找到特定的執行緒。  
   

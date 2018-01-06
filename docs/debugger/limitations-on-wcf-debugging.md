@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72e166d5501849dd84964364a94b2bdf6dc239a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14340ad3a19feb6340b836b1db8d71b3a8adcd83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 您可以使用三種方式開始對 WCF 服務進行偵錯：  
@@ -82,6 +83,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="self-hosting"></a>自我裝載  
  若要啟用的偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式， [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 之前必須先安裝[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。 如果[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]之前先安裝[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5，就會發生錯誤時嘗試進行偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式。 錯誤訊息為「無法自動逐步執行伺服器」。 若要修正此問題，請使用 Windows**控制台** > **程式和功能**修復您[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   
  [如何：偵錯自我裝載的 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -13,16 +13,17 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1c38c110e9499936a24c33432180adf18209bf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a581c5a9ae56f52727c011db1de2ad35a5ba3592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>啟用要進行偵錯的程式
 您偵錯引擎 (DE) 偵錯程式之前，必須先啟動 DE，或將它附加至現有的程式。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [取得連接埠](../../extensibility/debugger/getting-a-port.md)  
  討論如何以啟用偵錯程式的第一個步驟取得的連接埠。  
   

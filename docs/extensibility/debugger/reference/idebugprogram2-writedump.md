@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b68392d94b16f13106e421c5d466e3fbdf4a2b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 40fcd345a2a07a0ebdcf9e984b060cc81e946fc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 寫入傾印至檔案。  
@@ -52,5 +53,5 @@ int WriteDump(
 ## <a name="remarks"></a>備註  
  目前的堆疊框架，本身的堆疊、 執行中的程式，可能是由程式擁有的任何記憶體的執行緒清單，通常會包含程式傾印。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

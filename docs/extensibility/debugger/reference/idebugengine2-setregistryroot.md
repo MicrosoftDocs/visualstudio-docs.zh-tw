@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb553ea8b461b7b571db4970d38514873f9d467e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a514dfb0d248ec38d130b70db432352b5c09411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 設定偵錯引擎 (DE) 的登錄根目錄。  
@@ -47,5 +48,5 @@ int SetRegistryRoot(
 ## <a name="remarks"></a>備註  
  這個方法可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]指定替代的登錄根目錄 DE 應該用來取得登錄設定; 例如，"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp"。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

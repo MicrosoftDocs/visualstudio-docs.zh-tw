@@ -12,11 +12,15 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload:
+- aspnet
+- dotnetcore
+- azure
+ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS 和 Visual Studio 2017 在 Azure 上的遠端偵錯 ASP.NET Core
 您可以部署到 Windows Server 電腦與 IIS，ASP.NET Web 應用程式，並將它設定為遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
@@ -75,7 +79,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
     應該在 Visual Studio 中叫用中斷點。
 
-    就這麼容易 ！ 本主題中步驟的其餘部分適用於 Azure VM 上的遠端偵錯。
+    就這麼容易！ 本主題中步驟的其餘部分適用於 Azure VM 上的遠端偵錯。
 
 ## <a name="BKMK_azure_vm"></a>Azure VM 上的遠端偵錯 ASP.NET Core
 

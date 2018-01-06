@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6a9d1d63b4fb15a920f175013af8a05cb38beb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5ce9f82e88c6275000c17d40e2b1e1494683715
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-interfaces"></a>運算式評估介面
 > [!IMPORTANT]
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Visual Studio (VS)  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|表示變數的數值別名。|  
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|代表數值的別名變數，並可讓運算式評估工具 (EE) 以取得應用程式定義域做為別名。|  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|可讓您建立[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)物件。|  
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|代表集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [撰寫 CLR 運算式評估工具](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

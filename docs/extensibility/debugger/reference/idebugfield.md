@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b13b14bcbc44bc74b044bcecb8aad99dff2d323a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00d3113f0151b9a2ad32259b24cc45dcca8bbccf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfield"></a>IDebugField
 此介面代表一個欄位，也就是符號或類型的描述。  
@@ -38,7 +39,7 @@ IDebugField : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugField`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|取得可顯示的符號或類型的相關資訊。|  
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|取得欄位的類型。|  
@@ -70,5 +71,5 @@ weather stormy;
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

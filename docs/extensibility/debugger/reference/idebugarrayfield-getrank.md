@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2467c8d4ed85a685de80511d68a20e24c047306e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 786f765e684f720c8c29b91331259e772bd5a007
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 取得的順位或陣列的維度數目。  
@@ -47,5 +48,5 @@ int GetRank(
 ## <a name="remarks"></a>備註  
  陣列陣序對應至維度的數目。 C + + 和 C# 中，多維度陣列其實是陣列的陣列，因此可以視為只是一維陣列 (和`GetRank`方法一律會傳回 1)。 在[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]相反地，多維度陣列的處理方式不同，這類陣列的陣序反映的維度數目 (和`GetRank`方法永遠都會傳回的維度數目)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

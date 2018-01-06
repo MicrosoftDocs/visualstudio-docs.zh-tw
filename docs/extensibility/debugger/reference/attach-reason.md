@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba7149d13c85ec99128488e7207a5320f93d680f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 527e7a445356a46abdd6f2edb0555b7c5c9c7de8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定偵錯引擎 (DE) 附加至程式節點的原因。  
@@ -62,7 +63,7 @@ public enum enum_ATTACH_REASON {
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

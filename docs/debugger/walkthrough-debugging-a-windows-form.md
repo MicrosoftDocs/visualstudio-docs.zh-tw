@@ -26,11 +26,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: multiple
+ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的受管理應用程式。 Windows Form 建立標準的 Windows 應用程式。 您可以完成這個逐步解說中使用 Visual Basic、 C# 或 c + +。  
@@ -60,7 +61,7 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
   
 4.  在**名稱**方塊中，為專案指定唯一的名稱 (例如，Walkthrough_SimpleDebug)。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
      Visual Studio 會建立新的專案，並在 Windows Form 設計工具中顯示新的表單。 如需詳細資訊，請參閱[Windows Form 設計工具](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
@@ -188,6 +189,6 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
   
      偵錯工具在中斷點中斷執行的 Windows Form。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

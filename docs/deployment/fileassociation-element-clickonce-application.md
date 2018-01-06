@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 應用程式）
 識別要與應用程式相關聯的副檔名。  
@@ -45,10 +46,10 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`extension`|必要項。 要與應用程式相關聯的副檔名。|  
-|`description`|必要項。 Shell 所使用的檔案類型的描述。|  
-|`progid`|必要項。 可唯一識別檔案類型的名稱。|  
-|`defaultIcon`|必要項。 指定要用於此副檔名的檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，其中包含這個項目。|  
+|`extension`|必要。 要與應用程式相關聯的副檔名。|  
+|`description`|必要。 Shell 所使用的檔案類型的描述。|  
+|`progid`|必要。 可唯一識別檔案類型的名稱。|  
+|`defaultIcon`|必要。 指定要用於此副檔名的檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，其中包含這個項目。|  
   
 ## <a name="remarks"></a>備註  
  這個項目必須包括 XML 命名空間參考，以 「 結構描述 urn:-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`中其父系的項目[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  
@@ -81,5 +82,5 @@ ms.lasthandoff: 10/27/2017
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

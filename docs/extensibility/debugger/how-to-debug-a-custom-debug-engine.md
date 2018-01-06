@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何： 偵錯自訂偵錯引擎
 專案類型會從啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示所控制的執行個體啟動時 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]無法偵錯 DE。 下面這樣是可讓您偵錯您的自訂 DE 的步驟。  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
   
 9. 如果您選擇偵錯啟動 DE 的程序，您可以執行 「 偵錯自訂偵錯引擎 」 程序啟動之後，將附加至您 DE 中的步驟。 這會提供三個執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]執行： 一個用於您的專案類型的來源，為您具現化的專案類型，以及協力廠商附加至您 DE 第二個。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

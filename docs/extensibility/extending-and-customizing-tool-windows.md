@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>擴充及自訂工具視窗
 Visual Studio 提供許多不同類型的視窗，例如工具視窗、 文件視窗和對話方塊視窗。 [屬性] 視窗、 [輸出] 視窗和 [工作清單] 視窗中，例如其他視窗是工具視窗的類型。  
@@ -49,5 +50,5 @@ Visual Studio 提供許多不同類型的視窗，例如工具視窗、 文件�
 ## <a name="modal-dialog-boxes"></a>強制回應對話方塊  
  您應該在 Visual Studio 擴充功能中建立強制回應對話方塊藉由從它們衍生<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>，可讓您控制它們和其餘的 UI。 如需詳細資訊，請參閱 。 [建立和管理的強制回應對話方塊](../extensibility/creating-and-managing-modal-dialog-boxes.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)

@@ -15,16 +15,17 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78e786b27ebe2847bc9327f673d2cbd780179efa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8319db245e0cef0f23cf699e3345f783a2d02f59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="other-dialog-boxes"></a>其他對話方塊
 這些對話方塊顯示 Spy + + 程式的相關資訊。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [關於 Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
  Spy + + 程式的擁有權資訊。  
   

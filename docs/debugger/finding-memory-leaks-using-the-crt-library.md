@@ -33,11 +33,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3c95f24db0dc158b668f0e324fd5bac066dd4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 記憶體流失 (定義是無法正確解除配置先前配置的記憶體) 是 C/C++ 應用程式中最不易察覺和難以偵測的錯誤之一。 一開始可能只有少許記憶體流失而未察覺，但隨著時間經過，累積的記憶體流失可能愈來愈多而造成一些症狀，包括應用程式效能降低，甚至是因記憶體不足而沒有反應。 情況更嚴重者，發生記憶體流失的應用程式會因為耗盡所有可用的記憶體而造成其他應用程式也沒有反應，以致於難以判斷到底哪一個應用程式才是禍首。 即使看似無害的記憶體流失也可能是其他問題的根源，而應該解決。  
@@ -262,7 +263,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>誤報  
  在某些情況下， `_CrtDumpMemoryLeaks` 會提供錯誤的記憶體流失指示。 如果您使用的程式庫將內部配置標記為 _NORMAL_BLOCKs，而非 `_CRT_BLOCK`s 或 `_CLIENT_BLOCK`s，則可能會發生這種情形。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 在 Visual Studio .NET 之前的舊版標準樣板程式庫會造成 `_CrtDumpMemoryLeaks` 提出這樣的誤報，但最新版本中已修正這個問題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

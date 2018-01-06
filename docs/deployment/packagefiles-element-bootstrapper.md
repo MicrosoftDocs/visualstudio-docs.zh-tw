@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;元素 （啟動載入器）
 `PackageFiles`元素包含`PackageFile`項目，可定義執行的安裝封裝`Command`項目。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|選擇項。 如果設定為`false`，安裝程式只會下載檔案，從參考`Command`項目。 如果設定為`true`，將下載的所有檔案。<br /><br /> 如果設為`IfNotHomesite`，安裝程式將有相同的行為如同`False`如果`ComponentsLocation`設為`HomeSite`，否則的行為相同，如同`True`。 此設定可讓封裝自行只要 HomeSite 案例中執行本身的行為。<br /><br /> 預設為 `true`。|  
+|`CopyAllPackageFiles`|選擇性。 如果設定為`false`，安裝程式只會下載檔案，從參考`Command`項目。 如果設定為`true`，將下載的所有檔案。<br /><br /> 如果設為`IfNotHomesite`，安裝程式將有相同的行為如同`False`如果`ComponentsLocation`設為`HomeSite`，否則的行為相同，如同`True`。 此設定可讓封裝自行只要 HomeSite 案例中執行本身的行為。<br /><br /> 預設值為 `true`。|  
   
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile`元素是子系`PackageFiles`項目。 A`PackageFiles`元素必須至少一個`PackageFile`項目。  
@@ -57,11 +58,11 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 封裝檔案的名稱。 這是名稱，`Command`時它會定義用以安裝封裝的條件，將會參考項目。 此值也會用做為索引鍵到`Strings`資料表，以擷取之類的工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述封裝。|  
-|`HomeSite`|選擇項。 在遠端伺服器上，如果不是隨附於安裝程式封裝的位置。|  
-|`CopyOnBuild`|選擇項。 指定啟動載入器是否應該在建置階段複製封裝檔案在磁碟上。 預設值為 true。|  
+|`Name`|必要。 封裝檔案的名稱。 這是名稱，`Command`時它會定義用以安裝封裝的條件，將會參考項目。 此值也會用做為索引鍵到`Strings`資料表，以擷取之類的工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述封裝。|  
+|`HomeSite`|選擇性。 在遠端伺服器上，如果不是隨附於安裝程式封裝的位置。|  
+|`CopyOnBuild`|選擇性。 指定啟動載入器是否應該在建置階段複製封裝檔案在磁碟上。 預設值為 true。|  
 |`PublicKey`|加密的封裝的憑證簽署人公開金鑰。 若`HomeSite`使用; 否則為選擇性。|  
-|`Hash`|選擇項。 封裝檔案的 SHA1 雜湊。 這用來在安裝期間確認檔案的完整性。 如果無法計算相同的雜湊，從套件檔案，將不會安裝封裝。|  
+|`Hash`|選擇性。 封裝檔案的 SHA1 雜湊。 這用來在安裝期間確認檔案的完整性。 如果無法計算相同的雜湊，從套件檔案，將不會安裝封裝。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會定義封裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可轉散發套件及其相依性，例如 Windows Installer。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/27/2017
 </PackageFiles>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

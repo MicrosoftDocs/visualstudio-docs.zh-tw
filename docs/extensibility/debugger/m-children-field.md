@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6c7db4e05873ca0272da4eb551418d466ddc03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 59848b177b4bfaccba2d5f2e5771a08ec0bc060a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mchildren-field"></a>m_children 欄位
 使用這項工作中註冊的子工作的清單。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
  如果工作已完成，其他執行緒可以存取此欄位，只要這些不加入任何項目，或從中移除任何項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ContingentProperties 類別](../../extensibility/debugger/contingentproperties-class-internal-members.md)

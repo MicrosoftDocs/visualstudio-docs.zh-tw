@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
 文字是負責管理文字資料流和檔案的持續性。 雖然緩衝區可以讀取或寫入其他格式，使用 Unicode 來執行所有一般與緩衝區通訊。 在舊版的 Api，文字緩衝區可以使用一段或二維座標系統來找出緩衝區中的字元位置。  
@@ -32,12 +33,12 @@ ms.lasthandoff: 10/31/2017
   
  文字緩衝區的第二個責任是檔案的持續性。 若要這樣做，文字緩衝區物件會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和做為專案項目的文件資料物件的元件和其他參與持續性的環境元件。 如需詳細資訊，請參閱[開啟和儲存的專案項目](../extensibility/internals/opening-and-saving-project-items.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [變更檢視設定，以使用舊版 API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  說明如何變更檢視設定使用舊版 API。  
   
  [使用文字管理員監控全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
  說明如何使用文字管理員監視通用設定...  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心編輯器內](../extensibility/inside-the-core-editor.md)

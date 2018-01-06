@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>核心介面
 下列介面會使用擴充偵錯工具的核心介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Breakpoints"></a>中斷點  
  有關這些介面實作] 和 [追蹤的中斷點。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|表示繫結至記憶體位置中斷點。|  
 |[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|傳送 DE 中斷點繫結的記憶體位置時。|  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Contexts"></a>內容  
  這些介面代表各種偵錯程式內的內容。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|表示程式碼指示的開始位置。|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，以擷取模組和處理序的介面。|  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="CoreServer"></a>核心伺服器  
  這些介面代表一個程式正在偵錯的電腦。 這些由實作[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]但可以由偵錯引擎呼叫。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|提供存取權的連接埠和通訊埠供應商，以及電腦的相關資訊。|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|代表[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)支援遠端偵錯。|  
@@ -113,7 +114,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="DebugEngines"></a>偵錯引擎  
  這些介面代表偵錯引擎以及與其相關聯的事件。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|表示自訂偵錯引擎。|  
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|表示支援載入符號、 JustMyCode 和例外狀況的自訂偵錯引擎。|  
@@ -125,7 +126,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Documents"></a>文件  
  這些介面代表文件 （來源檔案） 和其相關聯的項目。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|DE 傳送以要求開啟的文件。|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|表示反組譯指示文件中的資料流。|  
@@ -140,7 +141,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Events"></a> 事件  
  這些介面代表 DE 與工作階段的偵錯管理員 (SDM) 之間傳送的所有事件。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|DE 傳送以要求開啟的文件。|  
 |[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)|DE|偵錯引擎 (DE) 過程中傳送此介面至工作階段的偵錯管理員 (SDM) 的狀態設列訊息符號載入。|  
@@ -185,7 +186,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Expressions"></a>運算式  
  這些介面代表要在特定內容中評估運算式。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|表示要評估的運算式。 取自[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|代表用來評估運算式的內容。 取自[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)介面。|  
@@ -194,7 +195,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Memory"></a>記憶體  
  這些介面代表記憶體中的位元組序列。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|代表可以讀取或寫入的記憶體中的位元組序列。|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|表示在記憶體中的一連串的位元組的位置。|  
@@ -202,7 +203,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Modules"></a> 模組  
  這些介面代表一個模組，其對應的可執行檔或。DLL 的檔案。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|代表單一可執行檔或 DLL。|  
 |[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|代表[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)支援符號。|  
@@ -213,7 +214,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Ports"></a>連接埠  
  這些介面代表連接埠和通訊埠供應商。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)|VS PS|代表本機電腦上的預設連接埠。|  
 |[IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)|VS|可讓偵錯引擎，使用 DCOM 詢問[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，請確定防火牆會封鎖遠端偵錯。|  
@@ -233,7 +234,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Processes"></a>處理程序  
  這些介面代表處理程序包含一或多個程式的單一可執行檔。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS、 DE|表示執行的電腦的處理序。|  
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS、 DE|表示正在支援的處理序偵錯 (用來取代步驟，繼續進行，並執行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面)。|  
@@ -245,7 +246,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Programs"></a>程式  
  這些介面代表邏輯單元不一定對應至實體的可執行檔或模組執行的程式。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|代表[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)需要與其他同時進行偵錯的程式正常運作。|  
 |[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE、 PS|表示執行的邏輯單元。|  
@@ -264,7 +265,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Properties"></a> 屬性  
  這些介面代表相關聯的特定內容，通常運算式評估的結果值的屬性。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|代表[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ，可以自訂方式來顯示其值。|  
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|代表堆疊框架、 文件，或運算式評估的結果值。|  
@@ -278,7 +279,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="StackFrames"></a>堆疊框架  
  這些介面代表堆疊框架，在內容中的中斷點或例外狀況發生。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|表示內容中的中斷點或例外狀況發生。|  
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|代表[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)此運算子可以處理攔截例外狀況。|  
@@ -288,7 +289,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Threads"></a> 執行緒  
  這些介面代表執行緒和其相關聯的事件。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|表示執行的執行緒。|  
 |[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|在建立執行緒時，由 DE 傳送。|  
@@ -299,12 +300,12 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="TypeVisualizers"></a>類型的視覺化檢視  
  這些介面會提供支援的類型視覺化檢視。 通常實作這些介面是由運算式評估工具。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|表示要呈現給類型視覺化檢視的位元組陣列。|  
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|提供方法來取得要傳遞給類型視覺化檢視資料的存取權。|  
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|表示可存取的屬性[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)實作。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [建立自訂的偵錯引擎](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

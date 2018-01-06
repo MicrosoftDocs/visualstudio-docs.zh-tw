@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db8a6cd6832b2fa427cea539bc03add5d330e06e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a9d9331e8767c4d815a6f62b7952414ced966d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具列
 此工具列會出現在 Spy + + 中的功能表列底下。 若要顯示或隱藏工具列上**檢視**功能表上，按一下 **工具列**。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |![Spy #43; &#43;屬性總管 按鈕](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + + _PropExp")|顯示在視窗檢視中選取視窗屬性。|  
 |![Spy #43; &#43;重新整理 按鈕](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + + _Refresh")|重新整理系統檢視表。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 檢視](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

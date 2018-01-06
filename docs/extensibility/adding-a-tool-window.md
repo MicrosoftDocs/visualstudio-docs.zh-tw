@@ -15,11 +15,12 @@ caps.latest.revision: "52"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f160fb123a52fef7215d4f365ffa28a6cae451e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 205c6928010d4cf3a35c6947e516c0bbc8674f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tool-window"></a>加入工具視窗
 在本逐步解說，您會學習如何建立工具視窗，並將其整合到 Visual Studio 中，以下列方式：  
@@ -279,5 +280,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
   
      您應該會聽到鐘聲音效。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

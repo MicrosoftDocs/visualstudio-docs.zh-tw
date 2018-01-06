@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f19ec03dda8666eea39b50af40a44ab2c68694ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權合約檔案 (例如 eula.rtf) 和套件資訊清單 (package.xml)。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/27/2017
   
 6.  儲存 package.xml 檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)

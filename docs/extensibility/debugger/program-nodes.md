@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6deae60a8e7863e19ec0624ff6452bf41816070
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90ec92ad46a850c26e700e9feafa60d291f608ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="program-nodes"></a>程式節點
 偵錯工具就架構而言，**程式節點**:  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  程式附加至 IDE 必須，該程式的輕量級描述。 可以從 [程式] 節點中取得這項資訊。 在程式附加至時，IDE 就必須顯示更詳細的資訊，例如執行在程式中的所有執行緒的清單。 這項資訊被取自程式本身。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [處理程序](../../extensibility/debugger/processes.md)   
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   

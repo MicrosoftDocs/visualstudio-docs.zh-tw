@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具詞彙
 以下是使用的字彙[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯 sdk 》。  
@@ -87,5 +88,5 @@ ms.lasthandoff: 10/31/2017
  警告中斷點  
  描述在暫止中斷點警告抽象概念。 警告中斷點描述為何暫止中斷點具有尚未繫結至程式碼位置的原因。 這可能是，有未載入程式碼尚未暫止中斷點，所描述的位置，或因其他原因。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯工具的擴充性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

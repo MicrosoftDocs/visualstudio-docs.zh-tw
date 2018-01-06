@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 263a6628154a5c36326c7fbdbd7a522cde28c40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [DebuggerDisplayAttribute 類別](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
@@ -93,9 +94,9 @@ public sealed class MyClass
 ## <a name="example"></a>範例  
  下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：  
   
-|**Name**|**值**|**Type**|  
+|**名稱**|**值**|**Type**|  
 |--------------|---------------|--------------|  
-|索引鍵|"three"|object {string}|  
+|Key|"three"|object {string}|  
 |值|3|object {int}|  
   
 ```CSharp  
@@ -176,7 +177,7 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch-based-attachment"></a>啟動為基礎的附件
 啟動為基礎的附件，程式會自動執行。 裝載程式的處理序啟動時由 SDM，啟動為基礎的附件遵循類似於手動附件方法的路徑。 如需資訊，請參閱[附加至程式](../../extensibility/debugger/attaching-to-the-program.md)。  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  傳送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)通知 SDM 啟動之處理序會建立一個新的執行緒事件物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [傳送所需的事件](../../extensibility/debugger/sending-the-required-events.md)   
  [啟用要偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

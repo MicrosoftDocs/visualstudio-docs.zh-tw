@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Remote Debugging Monitor
 - remote debugging, Remote Debugging Monitor
 - msvsmon.exe
-ms.assetid: e5b18734-2daf-4c58-b5de-24ae1295703e
 caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f3f2c9e0b3f88734d21ae06f1af48409c58766a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6575dc0d0a71481efff1da7808c7fbc62f94e56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視以不同使用者執行
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：  
@@ -44,6 +44,6 @@ ms.lasthandoff: 10/31/2017
 > [!CAUTION]
 >  將進行連接的權限授與其他使用者，可能會意外連接至錯誤的遠端偵錯工作階段。 中的偵錯**非驗證**模式非常不安全，應該謹慎使用。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

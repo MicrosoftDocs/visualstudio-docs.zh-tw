@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0a06a9b4be6cb20339c8c89f8594f290c1f6a46a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 已啟動程式之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
  DE 現在已附加到程式並準備好要傳送的任何啟動事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [直接附加程式](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [通知連接埠](../../extensibility/debugger/notifying-the-port.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)   

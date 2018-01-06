@@ -15,16 +15,17 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>方案
 方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個方案檔案，以文字為基礎的方案 (.sln) 檔案和二進位的解決方案使用者選項 (.suo) 檔案。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [概觀](../../extensibility/internals/solutions-overview.md)  
  討論方案，並開啟方案時所發生的程序中所包含的方案檔類型。  
   

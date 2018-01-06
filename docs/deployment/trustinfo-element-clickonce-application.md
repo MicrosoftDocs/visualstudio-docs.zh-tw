@@ -26,11 +26,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 645d4252dd13f4e4629d1ab636ad8b85142242c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 51247e86535ed9c8da04fadd5993b973f3a5f694
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 應用程式）
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。  
@@ -73,38 +74,38 @@ ms.lasthandoff: 10/27/2017
  `trustInfo` 為必要元素，位於 `asm.v2` 命名空間。 其沒有屬性，包含下列元素。  
   
 ## <a name="security"></a>安全性  
- 必要項。 這個元素是 `trustInfo` 元素的子項。 其包含 `applicationRequestMinimum` 元素，而沒有屬性。  
+ 必要。 這個元素是 `trustInfo` 元素的子項。 其包含 `applicationRequestMinimum` 元素，而沒有屬性。  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 必要項。 這個元素是 `security` 元素的子項，並包含 `PermissionSet`、 `assemblyRequest`與 `defaultAssemblyRequest`元素。 這個元素沒有屬性。  
+ 必要。 這個元素是 `security` 元素的子項，並包含 `PermissionSet`、 `assemblyRequest`與 `defaultAssemblyRequest`元素。 這個元素沒有屬性。  
   
 ## <a name="permissionset"></a>PermissionSet  
- 必要項。 這個元素是 `applicationRequestMinimum` 元素的子項，並包含 `IPermission` 元素。 這個項目具有下列屬性。  
+ 必要。 這個元素是 `applicationRequestMinimum` 元素的子項，並包含 `IPermission` 元素。 這個項目具有下列屬性。  
   
 -   `ID`  
   
-     必要項。 識別權限集合。 這個屬性可以是任何值。 識別碼在 `defaultAssemblyRequest` 和 `assemblyRequest` 屬性中受參考。  
+     必要。 識別權限集合。 這個屬性可以是任何值。 識別碼在 `defaultAssemblyRequest` 和 `assemblyRequest` 屬性中受參考。  
   
 -   `version`  
   
-     必要項。 識別權限版本。 這個值通常是 `1`。  
+     必要。 識別權限版本。 這個值通常是 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
- 選擇項。 這個元素是 `PermissionSet` 元素的子項。 `IPermission` 元素完全識別 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。  
+ 選擇性。 這個元素是 `PermissionSet` 元素的子項。 `IPermission` 元素完全識別 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。  
   
 -   `class`  
   
-     必要項。 依強式名稱識別權限類別。 例如，下列程式碼可識別 `FileDialogPermission` 類型。  
+     必要。 依強式名稱識別權限類別。 例如，下列程式碼可識別 `FileDialogPermission` 類型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     必要項。 識別權限版本。 這個值通常是 `1`。  
+     必要。 識別權限版本。 這個值通常是 `1`。  
   
 -   `Unrestricted`  
   
-     必要項。 識別應用程式是否需要這個權限不受限制的授與。 如果為 `true`，即無條件權限授與。 如果為 `false`或未定義屬性，則根據 `IPermission` 標記上定義的權限特有屬性而受限。 採用下列權限：  
+     必要。 識別應用程式是否需要這個權限不受限制的授與。 如果為 `true`，即無條件權限授與。 如果為 `false`或未定義屬性，則根據 `IPermission` 標記上定義的權限特有屬性而受限。 採用下列權限：  
   
     ```  
     <IPermission  
@@ -120,32 +121,32 @@ ms.lasthandoff: 10/27/2017
      在這個範例中， <xref:System.Security.Permissions.EnvironmentPermission> 的宣告會將應用程式限制為只能讀取環境變數 USERNAME，而 <xref:System.Security.Permissions.FileDialogPermission> 的宣告則讓應用程式不受限制地使用所有 <xref:System.Windows.Forms.FileDialog> 類別。  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- 選擇項。 識別授與所有組件的權限集合。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
+ 選擇性。 識別授與所有組件的權限集合。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
   
 -   `permissionSetReference`  
   
      必要項。 識別預設權限的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- 選擇項。 識別特定組件的權限。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
+ 選擇性。 識別特定組件的權限。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
   
 -   `Name`  
   
-     必要項。 識別組件名稱。  
+     必要。 識別組件名稱。  
   
 -   `permissionSetReference`  
   
-     必要項。 識別這個組件需要的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
+     必要。 識別這個組件需要的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- 選擇項。 這個元素是 `security` 元素的子項，並包含 `requestedExecutionLevel` 元素。 這個元素沒有屬性。  
+ 選擇性。 這個元素是 `security` 元素的子項，並包含 `requestedExecutionLevel` 元素。 這個元素沒有屬性。  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- 選擇項。 識別要執行應用程式要求的安全性層級。 這個元素沒有子項，並具有下列屬性。  
+ 選擇性。 識別要執行應用程式要求的安全性層級。 這個元素沒有子項，並具有下列屬性。  
   
 -   `Level`  
   
-     必要項。 指出應用程式要求的安全性層級。 可能的值為：  
+     必要。 指出應用程式要求的安全性層級。 可能的值為：  
   
      `asInvoker`，未要求其他權限。 這個層級不需要其他信任提示。  
   
@@ -157,7 +158,7 @@ ms.lasthandoff: 10/27/2017
   
 -   `uiAccess`  
   
-     選擇項。 指出應用程式是否需要存取受保護的使用者介面元素。 值可以是 `true` 或 `false`，預設為 false。 只有已簽署的應用程式可使用值 true。  
+     選擇性。 指出應用程式是否需要存取受保護的使用者介面元素。 值可以是 `true` 或 `false`，預設為 false。 只有已簽署的應用程式可使用值 true。  
   
 ## <a name="remarks"></a>備註  
  如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式要求的權限比用戶端電腦預設要授與者更高，通用語言執行平台的信任管理員會詢問使用者是否要授與應用程式這個提高權限的信任層級。 如果使用者拒絕，應用程式就不會執行；否則會以要求的權限執行。  
@@ -270,6 +271,6 @@ ms.lasthandoff: 10/27/2017
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

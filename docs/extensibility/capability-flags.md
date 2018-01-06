@@ -13,16 +13,17 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>功能旗標
 SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元旗標。 SCC_EXCAP_*xxx*旗標是累加式的旗標，表示擴充的功能，並解析為整數值。  
   
-|功能的程式碼|值|說明|  
+|功能的程式碼|值|描述|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|支援[SccRemove](../extensibility/sccremove-function.md)和命令。|  
 |`SCC_CAP_RENAME`|0x00000002L|支援[SccRename](../extensibility/sccrename-function.md)和命令。|  
@@ -52,7 +53,7 @@ SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元�
   
 ## <a name="capability-bits-added-in-version-12"></a>在 1.2 版中加入功能位元  
   
-|功能的程式碼|值|說明|  
+|功能的程式碼|值|描述|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|支援[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)。|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|支援[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。|  
@@ -65,7 +66,7 @@ SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元�
 ## <a name="capability-bits-added-in-version-13"></a>1.3 版中新增的功能位元  
  這些旗標會傳遞一次一個[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函式來判斷是否支援功能。  
   
-|擴充的功能的程式碼|值|說明|  
+|擴充的功能的程式碼|值|描述|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支援`SCC_CHECKOUT_LOCALVER`簽出選項。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|支援[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|  
@@ -79,5 +80,5 @@ SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元�
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|可以刪除已簽出檔案。|  
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|可以重新命名已簽出檔案。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

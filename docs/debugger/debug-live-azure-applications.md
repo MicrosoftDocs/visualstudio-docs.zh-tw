@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
-您感興趣的程式碼執行時，快照集偵錯工具會擷取在實際執行應用程式的快照。 若要指示拍攝快照集，偵錯工具，您在程式碼中設定 snappoints 和 logpoints。 偵錯工具可讓您清楚瞭解發生錯誤，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅減少解決實際執行環境中發生的問題所花費的時間。
+您感興趣的程式碼執行時，快照集偵錯工具會擷取在實際執行應用程式的快照。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
 Snappoints 和 logpoints 的類似於中斷點。 不同於中斷點、 snappoints 不會中止應用程式叫用時。 通常，擷取快照時 snappoint 需要大約 10-20 毫秒為單位。 
 
-快照集集合是適用於下列 Azure App Service 中執行的 web 應用程式：
+快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
 
-- .NET Framework 4.6.1 上執行的 ASP.NET 應用程式或更新版本。
-- .NET Core 2.0 或更新版本的 Windows 上執行的 ASP.NET Core 應用程式。
+- 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
+- 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
 此外，快照集偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 或更高版本的版本和基本或更高版本的應用程式服務方案。 
 

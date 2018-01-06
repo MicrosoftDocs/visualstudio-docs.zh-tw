@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 8.1 應用程式
 Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒有實體裝置，您還是可以在電腦上偵錯和測試 Windows Phone 應用程式。 您可以模擬常見觸控和旋轉事件，以及選擇您要模擬的實體螢幕大小和解析度。 您也可以測試許多常用功能，例如位置、網路、通知、感應器、加速計和選擇性的 SD 記憶卡。  
@@ -37,7 +38,7 @@ Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒
   
  第一次在 Windows Phone 模擬器中執行 Windows Phone 應用程式時，會發生下列事件：  
   
-1.  啟動模擬器。  
+1.  模擬器啟動。  
   
 2.  模擬器載入 Windows Phone 作業系統。  
   
@@ -148,7 +149,7 @@ Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒
   
  下表列出硬體鍵盤上，可用於模擬 Windows Phone 上之按鈕及其他控制項的按鍵。  
   
-|電腦硬體按鈕|Windows Phone 硬體按鈕|備註|  
+|電腦硬體按鈕|Windows Phone 硬體按鈕|注意|  
 |---------------------------|-----------------------------------|-----------|  
 |F1|BACK|長按會如預期運作。|  
 |F2|START|長按會如預期運作。|  

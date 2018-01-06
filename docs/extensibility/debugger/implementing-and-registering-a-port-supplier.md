@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>實作並註冊一個連接埠的供應商
 連接埠供應商的角色是追蹤，並提供連接埠，接著管理處理程序。 您必須建立一個連接埠時，連接埠提供者具現化 CoCreate 使用連接埠供應商的 GUID （工作階段的偵錯管理員 [SDM] 將會使用連接埠供應商使用者選取或專案系統所指定的連接埠供應商）。 然後會呼叫 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以新增任何連接埠。 如果可以加入一個連接埠，藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)並將其傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述連接埠。 `AddPort`會傳回新的連接埠由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。  
@@ -62,7 +63,7 @@ RemoveMetric(metrictypePortSupplier,
   
  連接埠供應商可以透過方法提供其名稱和 GUID [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)和[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)分別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實作連接埠供應商](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [SDK 進行偵錯的協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [連接埠提供者](../../extensibility/debugger/port-suppliers.md)

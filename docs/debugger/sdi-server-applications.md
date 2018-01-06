@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 089eeada5f3d9d392aff7768ed3f5b813ef8f772
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: feec570217240c7b7dd7d71b7f40987b756869de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdi-server-applications"></a>SDI 伺服器應用程式
 如果您正在偵錯 SDI 伺服器應用程式，您必須指定`/Embedding`或`/Automation`中**命令列引數**屬性*專案*屬性頁對話方塊中，C/c + +、 C# 中，或Visual Basic 專案。  
@@ -34,6 +35,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="finding-the-command-line-arguments-property"></a>找出命令列引數屬性  
  若要存取*專案*屬性頁 對話方塊中，以滑鼠右鍵按一下方案總管 中的專案，並從捷徑功能表，然後選擇 屬性。 若要尋找 [命令列的引數] 屬性，請展開 [組態屬性] 分類，然後按一下 [偵錯] 頁。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
  [如何：偵錯 COM 伺服器](../debugger/how-to-debug-com-servers.md)

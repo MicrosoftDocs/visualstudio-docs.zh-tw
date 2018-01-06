@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>圖形物件表
 Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您遊戲或應用程式之畫面格的 Direct3D 物件。  
@@ -39,10 +40,10 @@ Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您�
 ### <a name="graphics-object-table-format"></a>圖形物件表格式  
  [物件表] 會顯示支援與所選事件相關聯之畫面格的 Direct3D 物件和資源，例如狀態物件、緩衝區、著色器、紋理和其他資源。 物件表會略過在先前畫面格中建立，但未於所擷取的畫面格期間使用的物件。 在後續事件中，將會略過在擷取的畫面格期間被先前事件損毀的物件。 未設定在 D3D10Device 或 D3D11DeviceContext 上的物件會以灰色文字顯示。 物件會以表格格式顯示。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**識別碼**|物件識別碼。|  
-|**Name**|使用 Direct3D 函式 `SetPrivateData` 設定在物件上的應用程式特定資訊 (通常是為了提供物件的其他識別資訊)。|  
+|**名稱**|使用 Direct3D 函式 `SetPrivateData` 設定在物件上的應用程式特定資訊 (通常是為了提供物件的其他識別資訊)。|  
 |**Type**|物件類型。|  
 |**使用中**|針對在擷取的畫面格期間設定在 D3D10Device 或 D3D11DeviceContext 上的物件，會顯示 "*"。<br /><br /> 這會對應至顯示為灰色文字的物件，但會提供資料行項目，可讓您用來協助排序物件表。|  
 |**Size**|物件大小 (以位元組為單位)。|  
@@ -81,7 +82,7 @@ Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您�
   
  您也可以切換**顯示位移**核取方塊以隱藏或顯示緩衝區中的每個項目的位移。  
   
-|類型|說明|  
+|類型|描述|  
 |----------|-----------------|  
 |**float**|32 位元浮點值。|  
 |**float2**|包含兩個 32 位元浮點值的向量。|  
@@ -112,6 +113,6 @@ Visual Studio 圖形分析中的 [圖形物件表] 可協助您了解支援您�
 |**uint64**|64 位元不帶正負號的整數值。 與相同**u8byte**。|  
 |**bool**|布林 (`true` 或 `false`) 值。 每個布林值會以 32 位元值表示。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [圖形診斷 （偵錯 DirectX 圖形）](visual-studio-graphics-diagnostics.md)   
  [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

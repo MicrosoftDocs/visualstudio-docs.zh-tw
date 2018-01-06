@@ -37,11 +37,12 @@ caps.latest.revision: "57"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 844b1378866bdd66b11494f01ff4762909408af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
@@ -246,5 +247,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="breakpoints-dont-work-in-a-dll"></a>中斷點在 DLL 中無法運作  
  在偵錯工具尚未載入有關程式碼所在模組的偵錯資訊之前，您無法在原始程式檔中設定中斷點。 問題徵兆可能包含 [無法設定中斷點] 這類訊息。 警告中斷點圖像 (Glyph) 會出現在中斷點的位置。 不過，這些警告中斷點在程式碼載入時會成為實際的中斷點。 如需載入符號的詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30ef8524fbc5d6451bcc302079f769fd05c66185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f6cba643f6d1b0f5f1d1c9fff23c8636bd12caca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 這個方法會比較此欄位與指定欄位相等。  
@@ -44,5 +45,5 @@ int Equal(
 ## <a name="return-value"></a>傳回值  
  如果是相同的欄位，會傳回`S_OK`。 如果欄位不相同，就會傳回`S_FALSE.`反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

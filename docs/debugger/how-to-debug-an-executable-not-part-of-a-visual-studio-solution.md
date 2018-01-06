@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be07be0e1374360a96b6672b095dcc039c6bb4f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ded5dfaec889e32bbf4c65f8e6a2335fd8c97a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>如何： 偵錯的可執行檔不是 Visual Studio 方案的一部分
 有時候，您可能想要偵錯的可執行檔 （.exe 檔） 不屬於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 這種可執行檔可能是您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之外所建立的可執行檔，或是您從別處取得的可執行檔。  
@@ -63,11 +64,11 @@ ms.lasthandoff: 10/31/2017
   
 3.  找出並選取可執行檔。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 5.  選擇執行命令，例如啟動可執行檔**啟動**，從**偵錯**功能表。    
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [DBG 檔案](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)

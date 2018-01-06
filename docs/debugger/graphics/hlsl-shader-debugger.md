@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7d095d5dec0194f75d739899433c04439f08539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1aeeb2da6817375e0327dba385037dccdc58cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著色器程式碼在應用程式的真實狀況下的運作方式。  
@@ -74,7 +75,7 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
   
  如需有關如何使用 HLSL 偵錯工具來偵錯著色器錯誤的範例，請參閱[範例](graphics-diagnostics-examples.md)或另請參閱 > 一節中連結的逐步解說。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [逐步解說： 偵錯因著色而產生錯誤的轉譯](walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [逐步解說：使用圖形診斷來偵錯計算著色器](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

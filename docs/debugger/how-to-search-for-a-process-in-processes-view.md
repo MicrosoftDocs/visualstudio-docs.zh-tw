@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78c67ccc34d9c95914f6b46d537a4df3431c877f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 542c560805ef33e33519c055a6ed4a59285d0db9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
 您可以使用它的處理序識別碼或模組字串做為搜尋準則搜尋處理序檢視中的特定處理序。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示所選處理序的屬性，處理序樹狀結構中。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  選擇**向上**或**向**搜尋初始方向。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
  如果找到比對程序，它會反白顯示在**處理序檢視**視窗。

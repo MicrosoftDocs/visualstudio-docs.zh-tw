@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40b97c53570362c79bf3b1627ad183dcf6964b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48b871eeccb5ff561ef4b95689f12a9f58302bc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具實作策略
 > [!IMPORTANT]
@@ -32,6 +33,6 @@ ms.lasthandoff: 10/31/2017
   
  [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)接下來應該實作方法。 偵錯引擎 (DE) 呼叫此方法來取得本機變數和引數的清單傳遞`IDebugProperty2::EnumChildren``guidFilter`引數的`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren`呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，結合在單一的列舉中的結果。 請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實作運算式評估工具](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>如何： 從 Visual Studio 中的 DLL 專案進行偵錯
 若要偵錯 DLL 專案的一種方式為在 DLL 專案的專案屬性中指定呼叫應用程式，然後您可以從開始偵錯 DLL 專案本身。 要執行這個方法，應用程式必須呼叫 DLL，DLL 必須位在應用程式預期可找到的位置和 （否則應用程式可能會找到不同版本的 dll 和載入，而是，它將不會叫用中斷點）。 其他的偵錯 Dll 的方法，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)。
@@ -83,8 +84,8 @@ C++ 屬性頁面在配置與內容方面和 C# 及 Visual Basic 的屬性頁面�
 
     您會在 DLL 中達到的中斷點。 如果您不能叫用中斷點，請確定您的 DLL 輸出 (根據預設， **project\Debug**資料夾) 是在位置中呼叫的應用程式預期可找到。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)   
- [若為 C# 專案設定偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [適用於 Visual Basic 專案設定偵錯組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

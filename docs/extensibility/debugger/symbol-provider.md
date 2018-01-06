@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider"></a>符號提供者
 運算式評估工具實作必須存取以便評估變數和運算式語言編譯器所產生的符號偵錯資訊。 它會使用介面的符號提供者 (SP)，也稱為符號處理常式。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/31/2017
   
  如果您的預存程序只會使用您的自訂偵錯引擎，您可以在根據的偵錯引擎需求適當地實作預存程序。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

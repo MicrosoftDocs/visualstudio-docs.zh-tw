@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 856358b9864da9cb685619ec1ce94d2c5b4bc4f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fdb9d357f1046c453ad6e21829a55983a044ff4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>疑難排解 ClickOnce 部署
 本主題將協助您診斷及解決最常見的問題[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/27/2017
  [偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
  描述偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式的技術。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

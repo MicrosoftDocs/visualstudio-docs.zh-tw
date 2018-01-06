@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 44acef520a15b86e15906eb4197f538b23b92d8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 83458b627949cda5f918ec06a5f84bd9697ba6d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：使用 ClickOnce 應用程式安裝必要條件
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式需要.NET Framework 正確版本已安裝在電腦上，才能執行，則為許多應用程式有其他必要條件。 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，您可以選擇一組的必要條件元件，以與您的應用程式一起封裝。 在安裝期間，會檢查以判斷是否它已經存在; 每個必要條件如果不將會安裝在安裝之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  您必須確定指定的元件的安裝程式存在於指定的位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

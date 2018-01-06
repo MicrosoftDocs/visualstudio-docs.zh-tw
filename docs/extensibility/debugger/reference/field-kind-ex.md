@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 910ad92cbc71fd4fb1b98567ff4629ef563ac476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 列舉的欄位的其他種類的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件可以包含。 這個列舉型別擴充[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)列舉型別。  
@@ -60,6 +61,6 @@ public enum enum_FIELD_KIND_EX
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

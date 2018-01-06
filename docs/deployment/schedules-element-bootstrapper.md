@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;排程&gt;元素 （啟動載入器）
 `Schedules`元素包含`Schedule`項目，可定義特定時間所定義的命令在`Command`應該執行項目。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要項。 排程項目名稱。 這會對應至`ScheduleName`屬性`Command`項目。 當`Command`參考具名的排程，就只會執行它時，由`Schedule`項目。 可能也與相關聯的排程`FailIf`和`BypassIf`項目，這些條件的測試限制於指定的排程執行。 如需詳細資訊，請參閱[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`Name`|必要。 排程項目名稱。 這會對應至`ScheduleName`屬性`Command`項目。 當`Command`參考具名的排程，就只會執行它時，由`Schedule`項目。 可能也與相關聯的排程`FailIf`和`BypassIf`項目，這些條件的測試限制於指定的排程執行。 如需詳細資訊，請參閱[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
   
  給定`Schedule`元素能有正好一個下列子節點。  
   
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/27/2017
 ## <a name="afterpackage"></a>AfterPackage  
  `AfterPackage`項目會指示安裝程式以安裝指定的封裝之後，執行命令。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

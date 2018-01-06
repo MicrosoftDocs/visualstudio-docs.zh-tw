@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>監看式視窗運算式評估
 > [!IMPORTANT]
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  不需要遵守此兩步驟程序，即使 Visual Studio 會假設; EEEE 可以剖析和評估相同的步驟時[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)稱為 （這是 MyCEE 範例的運作方式，例如）。 如果您的語言可以形成複雜的運算式，您可能想要剖析步驟分開評估步驟。 許多監看運算式時，這可以增加效能，Visual Studio 偵錯工具中的顯示。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [運算式評估的實作範例](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  若要逐步執行的運算式評估程序使用 MyCEE 範例。  
   
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  提供偵錯引擎 (DE) 呼叫運算式評估工具 (EE) 時，會傳遞的引數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

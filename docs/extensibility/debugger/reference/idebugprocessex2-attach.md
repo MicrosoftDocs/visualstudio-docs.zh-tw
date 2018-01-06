@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111895b73ee9685b9608be9812452d04d84cd48c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: da89be65f4b02fa0db254dd85463e422d17fe589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 這個方法會通知處理程序工作階段現在偵錯程序。  
@@ -47,5 +48,5 @@ int Attach(
 ## <a name="remarks"></a>備註  
  在傳遞介面`pSession`cookie，可唯一識別附加至此處理序; 的偵錯工作階段管理員值僅被視為是提供的介面上的方法都是的功能。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

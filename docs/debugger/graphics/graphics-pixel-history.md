@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a191585a251af878c6abef5599a490d7eafe363
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫助您了解在遊戲或應用程式的畫面格期間，Direct3D 事件對特定像素有何影響。  
@@ -76,6 +77,6 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
  若要了解像素歷史記錄中的圖形事件，您可能需要發生事件時的裝置狀態相關資訊，或是事件參考之 Direct3D 物件的相關資訊。 中的像素歷史記錄，每個事件**圖形像素歷史記錄**提供的連結，然後目前裝置狀態和相關物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 遺漏的物件，因為裝置狀態](walkthrough-missing-objects-due-to-device-state.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

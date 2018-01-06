@@ -22,11 +22,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8de46a08d49bb71da055021b6785e4a3e2e97efc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 應用程式中的更新
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有許多彈性，指定何時以及如何執行更新檢查、 是否強制、 更新和應用程式應該檢查更新。  
@@ -107,10 +108,10 @@ ms.lasthandoff: 10/27/2017
   
 7.  建置您的應用程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>   
  [應用程式更新對話方塊](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

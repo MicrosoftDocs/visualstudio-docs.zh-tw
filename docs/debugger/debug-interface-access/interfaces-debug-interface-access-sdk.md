@@ -16,16 +16,17 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 044c6ce1dafbd5ce753d9e3a98d41ed1963a77ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e128aa0a4cbb30106981b152252ff308e21669b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 方法依字母順序列在每個介面，在該資料表的內容，並依照 Vtable 順序的介面上。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
  可控制 DIA SDK 會以偵錯物件的虛擬和相對虛擬位址的計算。  
   
@@ -132,5 +133,5 @@ ms.lasthandoff: 10/31/2017
  [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  描述可在 DIA SDK 中的常數。  
   
-## <a name="see-also"></a>另請參閱  
- [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+## <a name="see-also"></a>請參閱  
+ [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

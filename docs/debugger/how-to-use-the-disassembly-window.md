@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c72de947262cd87e4920d87c2d4d54664e02cc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中檢視反組譯碼程式碼
 這項功能會啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。 它並不能用來偵錯指令碼或 SQL。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
   
      如需詳細資訊，請參閱[分頁向上或向下，在記憶體中的](../debugger/how-to-page-up-or-down-in-memory.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

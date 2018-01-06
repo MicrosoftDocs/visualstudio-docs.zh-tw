@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f295dd93580caee4b6288febf7e83c09736b6080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69270c5d90c26cf653ee31b81bcb9f453b814e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes"></a>處理序
 偵錯工具就架構而言，**程序**:  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  偵錯封裝可以附加至處理序的偵錯引擎 (DE) 藉由呼叫[附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 這表示 DE 附加所有可能的程式，它可以處理程序中執行。 例如，如果 common language runtime DE 附加至處理序，它會將附加，才能執行 managed 程式碼中的程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [執行緒](../../extensibility/debugger/threads.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

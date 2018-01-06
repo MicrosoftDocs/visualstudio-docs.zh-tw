@@ -27,11 +27,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 932ccf7bdbea8fa68d0c2883d0ae8fd77eedf5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11d29d2d8a5ebf4774f3b71ea72a1dd9bc58cbd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
 > [!NOTE]
@@ -53,11 +54,11 @@ ms.lasthandoff: 10/31/2017
   
 6.  如果您指定 Internet Explorer 做為容器，而且您正使用 Active Desktop，輸入`/new`中**命令引數**方塊。  
   
-7.  按一下 [確定]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      如果您未指定容器中的**專案屬性頁**對話方塊中，當您開始偵錯時，可以指定容器。 當您選取 [執行命令以啟動偵錯，[偵錯工作階段] 對話方塊的可執行檔](../debugger/executable-for-debugging-session-dialog-box.md)隨即出現。 在對話方塊中指定容器的路徑名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ActiveX 控制項](/cpp/mfc/activex-controls)   
  [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)   
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   

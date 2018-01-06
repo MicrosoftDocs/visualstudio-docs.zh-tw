@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項和功能表
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 本節中的頁面詳細說明如何使用這些功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [下拉式清單列](../extensibility/drop-down-bar.md)  
  描述在下拉式清單列，並提供實作它的指示。  
   

@@ -22,11 +22,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d888c04827f3df2c9bc5ede33d4dfd9a6742dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>從 Visual Studio 偵錯 DLL 專案
 下列 Visual Studio 範本會建立 Dll:  
@@ -121,11 +122,11 @@ ms.lasthandoff: 10/31/2017
 
 如需有關專案設定的詳細資訊，請參閱[屬性頁 （Visual c + +）](/cpp/ide/property-pages-visual-cpp)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [Visual c + + 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [若為 C# 專案設定偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [適用於 Visual Basic 專案設定偵錯組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

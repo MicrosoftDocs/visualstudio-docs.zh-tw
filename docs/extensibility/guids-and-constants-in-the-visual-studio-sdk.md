@@ -15,16 +15,17 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1334ec7b2fb5b1d11c5aee5a4febb50e63cece4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631ffac458cd5f7d29051cdd53431bf7f7e4ccb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 和 Visual Studio SDK 中的常數
 <xref:Microsoft.VisualStudio.VSConstants>類別會提供存取的環境 Guid 和常數的選取項目。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [IDE GUID](../extensibility/ide-guids.md)  
  列出所提供的 Guid <xref:Microsoft.VisualStudio.VSConstants>。  
   

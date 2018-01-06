@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b52121850bd82090e756f700880be02d35e6d86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) 和 [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
 3.  [造訪 TechNet](http://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。  
   
 ####  <a name="FullPermissionsITLog"></a> 問：如何設定應用程式集區的權限？  
- **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如：  
+ **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如:   
   
 -   使用 Windows **icacls** 命令設定權限：  
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
     5.  在 [輸入要選取的物件名稱]  方塊中，加入 Web 應用程式或 SharePoint 應用程式的應用程式集區。  
   
-    6.  選擇 [檢查名稱]  來解析名稱。 選擇 [ **確定**]。  
+    6.  選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。  
   
     7.  請確定應用程式集區具有**讀取 & 執行**權限。  
   

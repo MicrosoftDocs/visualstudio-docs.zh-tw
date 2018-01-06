@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0696a9e45727c5d62f275d0574d5ec54e378038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 以下是如何開始偵錯處理程序、 處理序之間切換、 中斷和繼續執行、 逐步執行來源、 停止偵錯，並終止或中斷處理序。  
@@ -208,7 +209,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**命令**|**說明**|  
+|**命令**|**描述**|  
 |**偵錯**功能表：<br /><br /> -   **停止偵錯**|除非變更行為**處理程序**視窗**偵錯停止時中斷連結**選項：<br /><br /> 1.偵錯工具所啟動的處理序將會結束。<br />2.附加的處理序會與偵錯工具中斷連結。|  
 |**偵錯**功能表：<br /><br /> -   **全部結束**|所有處理序都會結束。|  
 |**偵錯**功能表：<br /><br /> -   **中斷所有連結**|偵錯工具會從所有處理序中斷連結。|  
@@ -220,7 +221,7 @@ ms.lasthandoff: 10/31/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   

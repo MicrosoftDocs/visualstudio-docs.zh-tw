@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator"></a>運算式評估工具
 運算式評估工具 (EE) 檢查語言剖析和執行階段，在評估變數和運算式的語法讓 IDE 處於中斷模式時，使用者可以檢視它們。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="implementation-notes"></a>實作注意事項  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯引擎預期要與運算式評估工具使用 Common Language Runtime (CLR) 介面。 因此，運算式評估工具適用於[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯引擎都必須支援的 CLR (所有 CLR 偵錯介面的完整清單位於 debugref.doc 屬於的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)])。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)

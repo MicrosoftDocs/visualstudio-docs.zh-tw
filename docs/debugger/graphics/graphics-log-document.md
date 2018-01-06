@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8429e7175ca6ab9a537952fb4a605f2281da69c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 圖形記錄文件是在圖形診斷工作階段下執行應用程式時所發生圖形事件的記錄。 錄製之後，您可以在 Visual Studio 圖形分析器中檢查記錄來診斷轉譯和效能問題。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
  **Direct3D 資訊**  
  列出有關擷取工作階段期間，所使用之顯示卡的硬體和驅動程式功能資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**10 位元 XR 高彩格式**|**True** 10 位元 XR 高彩格式支援; 否則如果**False**。|  
 |**DirectCompute CS 4.x**|**True** Compute Shader 4.0，則支援; 否則如果**False**。|  
@@ -66,18 +67,18 @@ ms.lasthandoff: 10/31/2017
  **顯示資訊**  
  列出擷取工作階段期間所使用之顯示卡的相關資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
-|**說明**|顯示卡描述字串。|  
+|**描述**|顯示卡描述字串。|  
 |**顯示記憶體**|已安裝在圖形卡上的記憶體數量。|  
 |**驅動程式名稱**|圖形卡驅動程式的名稱。|  
 |**驅動程式版本**|圖形卡驅動程式的版本。|  
-|**Name**|圖形卡的名稱。|  
+|**名稱**|圖形卡的名稱。|  
   
  **實驗檔案**  
  列出與擷取工作階段相關聯之實驗檔案的資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**路徑**|.vsglog 檔案的路徑。 **注意：**下舊版擷取，這個屬性是未使用。|  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
  **系統資訊**  
  列出已在擷取工作階段期間，裝載應用程式之硬體和作業系統的資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**記憶體**|已安裝在電腦中的記憶體數量。|  
 |**OS 架構**|作業系統的目標 CPU 架構。|  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
  **目標應用程式**  
  列出做為擷取工作階段之原因的應用程式相關資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**上次修改日期/時間**|建置應用程式的日期和時間。|  
 |**路徑**|應用程式的路徑。|  
@@ -108,12 +109,12 @@ ms.lasthandoff: 10/31/2017
  **VSG 記錄檔**  
  列出圖形記錄文件的資訊。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**建立者**|已建立圖形記錄文件的應用程式名稱。 例如，如果已從 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動擷取工作階段 (手動擷取)，則此屬性的值為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。|  
 |**工作階段開始時間**|擷取工作階段開始的日期和時間。|  
 |**Size**|圖形記錄文件的大小。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

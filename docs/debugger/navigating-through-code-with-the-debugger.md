@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cda62de6fe72598674b90e4a0ef5dccd8cf2a2af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>巡覽程式碼與 Visual Studio 偵錯工具
 熟悉命令和快速鍵來巡覽偵錯工具中的程式碼，也會讓更快且更容易尋找和解決您的應用程式中的問題。 當您巡覽程式碼偵錯工具中的時，您可以檢查您的應用程式的狀態，或深入了解它的執行流程。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="BKMK_Step_over_Step_out"></a>逐步執行程式碼中，略過函式  
  當偵錯工具中執行程式碼，通常您會發現，您不需要看到特定函式中發生的事 (不在意或您知道它如何運作，要經過完整測試的程式庫程式碼)。 若要跳過程式碼中使用這些命令 （函式仍在執行，當然，但偵錯工具會略過它們）。  
   
-|鍵盤命令|功能表命令|說明|  
+|鍵盤命令|功能表命令|描述|  
 |----------------------|------------------|-----------------|  
 |**F10**|**不進入函式**|如果目前的行包含函式呼叫，**不進入函式**執行的程式碼，然後之後暫止執行的程式碼的第一行呼叫的函式傳回。|  
 |**Shift + F11**|**跳離函式**|**跳離函式**仍然會繼續執行程式碼和目前的函式會傳回 （偵錯工具會略過透過目前的函式） 時，暫停執行。|  
