@@ -14,18 +14,19 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0077ababbbcfb1b2dff77a8847f5e0e0671241be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6f9fe7b24a1e2bdd68d92f6dd22952df0d2a057
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
 下表顯示語彙階層架構中的符號類型。  
   
 ## <a name="symbol-types"></a>符號類型  
   
-|符號類型|說明|  
+|符號類型|描述|  
 |-----------------|-----------------|  
 |[註釋](../../debugger/debug-interface-access/annotation.md)|在程式碼中指定註解的位置。|  
 |[區塊](../../debugger/debug-interface-access/block.md)|您可以指定巢狀的範圍中函式。|  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  其他符號屬性可能會提供根據符號類型。 在個別的符號主題中列出了這些屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   

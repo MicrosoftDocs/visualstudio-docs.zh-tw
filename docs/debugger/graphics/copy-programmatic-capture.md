@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0b8cb397afd4f1ba58dca30b4314471b4647576
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f8fce1893363ac6df0e6d22320f718833a1114e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copy-programmatic-capture"></a>複製 (程式設計擷取)
 將使用中的圖形記錄 (.vsglog) 檔案的內容複製到新的檔案。  

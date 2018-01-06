@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e319f0e6c9ca6197930858407a2177e9fe246907
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 797724287439631b9398af43616116a1635381ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 下列程序描述如何同時偵錯 Managed 和原生程式碼，這也稱為混合模式偵錯。 依照 DLL 或應用程式是否以機器碼撰寫而定，會有下列兩種情況：  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
 
     ![啟用機器碼偵錯](../debugger/media/dbg-mixed-mode-from-csharp.png "啟用機器碼偵錯")
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)

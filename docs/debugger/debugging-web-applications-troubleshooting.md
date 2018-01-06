@@ -21,16 +21,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364da0cdee3f063bc982f2731969c1be98cf386c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e68040d1cdfbac6c1127a280c3d1e1773c2794ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 本節包含可以用來解決錯誤的通用程序。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：檢查 IIS 屬性設定](../debugger/how-to-verify-iis-property-settings.md)  
  本節將會解釋如何正確地設定 IIS 的屬性以啟用偵錯。  
   

@@ -30,11 +30,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6958776655f48fe22ef97f193ddffafe12da6cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8d915339ae8e81d16b46ca602b45d527ab78aa9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
   
 -   [錯誤：無法在 Web 伺服器上啟動偵錯](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)

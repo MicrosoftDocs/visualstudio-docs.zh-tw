@@ -12,11 +12,12 @@ ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a129fcc5cfabb46dfa545d7f70e291b121ee5353
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.workload: cplusplus
+ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + 核心指導方針檢查程式參考
 本節列出 c + + 核心指導方針檢查警告。 如需程式碼分析資訊，請參閱[/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門： C/c + + 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。  
@@ -234,5 +235,5 @@ C26483 STATIC_INDEX_OUT_OF_RANGE:
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   運算式 '%expr%': 沒有陣列至指標衰退。 請參閱[c + + 核心指導方針 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [使用 c + + 核心指導方針 Checker](using-the-cpp-core-guidelines-checkers.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1996bed14323adeac794f12ed4307e96e3ba8b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176e6a482212ee0cb6531d558e2b322ce4bec2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 擷取的原始程式檔的原始檔識別項。  
@@ -45,7 +46,7 @@ HRESULT findFileById (
 ## <a name="remarks"></a>備註  
  原始檔識別項是 DIA sdk 在內部用來使所有原始程式檔的唯一的唯一值。 這個方法通常是在內部用來 DIA SDK 中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasession:: Findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

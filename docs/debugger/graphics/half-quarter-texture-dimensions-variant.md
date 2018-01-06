@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d71ee66c9d13dab5918e90c6434c3397d52191a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93431c8863e2b30fb98d00bec5112257e54496f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 減少非呈現目標的紋理上的紋理維度。  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>範例  
  此變異會先在執行階段調整紋理大小，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Mip-map 產生變異](mip-map-generation-variant.md)   
  [BC 紋理壓縮變異](bc-texture-compression-variant.md)

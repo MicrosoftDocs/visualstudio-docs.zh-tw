@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89e653ac13f92566ab350fa009de809f1712ab39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9cc839b7829070f5d4c2e9db9da12b6522c21eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-a-register-value"></a>如何：編輯暫存器值
 暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
     > [!CAUTION]
     >  由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點暫存器中的某些最小顯著性位元變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

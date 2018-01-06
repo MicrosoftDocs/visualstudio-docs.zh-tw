@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87c230ed85ed666abbad96bbdbda614ae0a01a1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82d8c547885021d83e272bcd3ab1a5d560c73a39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>關於 Visual Studio 中的暫存器視窗
 **註冊**視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。  
@@ -55,6 +56,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>暫存器群組  
  若要減少雜亂，**註冊**視窗會將暫存器組織成群組。 如果您以滑鼠右鍵按一下**註冊**視窗中，您會看到包含清單的群組，您可以顯示或隱藏您可視快顯功能表。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

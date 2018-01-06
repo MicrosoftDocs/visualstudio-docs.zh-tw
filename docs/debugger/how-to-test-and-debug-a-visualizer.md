@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57e4387fad4a750af26245febe5d9573d43deccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 75102abacbf93c90b6c24d2884224dd9dd1e1bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
      如需更完整的範例，請參閱[逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

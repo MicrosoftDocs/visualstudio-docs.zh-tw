@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f329d285ec0f9014335b883e0206a426a9aab8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da12d0cde9e8dae0d291985bc8bf88931ab35ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
 程式資料庫檔案 (副檔名.pdb) 是包含類型和符號進行編譯和連結專案期間所收集的偵錯資訊的二進位檔案。 當您編譯 C/c + + 程式以建立 PDB 檔案**/ZI**或**/Zi**或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]程式與**偵錯**選項。 物件的檔案包含偵錯資訊的.pdb 檔案的參考。 如需有關 pdb 檔的詳細資訊，請參閱[PDB 檔案](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 應用程式可以使用下列一般步驟，以取得詳細各種符號、 物件和可執行映像中的資料元素。  
@@ -92,5 +93,5 @@ ms.lasthandoff: 10/31/2017
     }  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3dc1b7e6eee583494070cc9ebb151181dc805da
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 「編輯後繼續」是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 偵錯的一個功能，當程式碼在中斷模式中執行時，這項功能可讓您變更程式碼。 套用程式碼編輯之後，您可以繼續以新的編輯執行程式碼，並查看其效果。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/11/2017
   
  本章節中的主題提供其他詳細資訊，說明使用這項功能的方法以及不允許進行的變更種類。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：以編輯後繼續在中斷模式套用編輯](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  說明在中斷模式中套用程式碼編輯的方式。  
   

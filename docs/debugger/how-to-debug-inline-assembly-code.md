@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7afce4f676f6bcc61066d168dab743571c4bddc6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c0b43f4c7f464a96161527f378dfeebc81aa43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>如何：偵錯內嵌組譯程式碼
 > [!NOTE]
@@ -42,6 +43,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  使用**註冊**視窗來檢視暫存器的內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

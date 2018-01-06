@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42eba14ac70483d8a28445f86e4acc35a13593b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6b2f3745642daac4159588dd54d69a2d81c58f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 擷取在堆疊上的本機變數會保留基底指標暫存器的識別碼。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設`SymTagFunction`。  
@@ -50,5 +51,5 @@ HRESULT get_localBasePointerRegisterId (
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

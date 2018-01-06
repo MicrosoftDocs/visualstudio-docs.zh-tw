@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：以編輯後繼續在中斷模式套用編輯
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
   
      這時程式碼便會一併執行您套用至專案的編輯。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [支援的程式碼變更 （C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

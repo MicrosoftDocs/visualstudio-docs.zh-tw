@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a08f0d6052fcdb6346faef4080f971e9c18ac51b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f336c35f9b0f9301a5e61c271b25af2e6ecbd9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 擷取符號識別碼，FORTRAN 陣列維度的上限。  
@@ -44,5 +45,5 @@ HRESULT get_upperBoundId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，以將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

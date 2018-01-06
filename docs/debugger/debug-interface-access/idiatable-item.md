@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5c0c810dfd1a17f2fa63e64bf199a5882174aae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 12d04da8ea2c2a136b61924578fcb925b17fc12f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 擷取指定的項目資料表中的參考。  
@@ -47,7 +48,7 @@ HRESULT Item (
   
  它是更常見的方法呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並透過列舉值的特定方式來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
  [Idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   

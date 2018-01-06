@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c4b5021db951acc6ed8ed750542febab9fdfbf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9e1ade672c3abd81f4f71d1e48a39560e17e1465
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-console-projects"></a>偵錯準備：主控台專案
 準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱[Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備： Windows Forms 應用程式 (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
  當您從 Visual Studio 啟動主控台應用程式時**主控台**視窗有時候會出現在 Visual Studio 視窗後面。 如果您嘗試從 Visual Studio 啟動主控台應用程式而且似乎沒有回應，請嘗試移動 Visual Studio 視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [Visual c + + 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   

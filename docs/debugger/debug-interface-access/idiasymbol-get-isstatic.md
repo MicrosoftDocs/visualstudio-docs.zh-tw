@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7da9f51087cee078650e9161d3003b94bff1b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ecb091f1314961cf94f4d0ad7acbb6b6f938fc5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 擷取旗標，指定是否函式或 thunk 層已標示為靜態。  
@@ -45,8 +46,8 @@ HRESULT get_isStatic(
   
 |需求|描述|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

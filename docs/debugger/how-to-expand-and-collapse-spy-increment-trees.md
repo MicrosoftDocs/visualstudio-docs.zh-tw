@@ -13,18 +13,19 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e419adef776c3973ae3d470e97c88483f0d7d0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
 您可以展開和摺疊的 Windows、 處理序和執行緒檢視，使用兩種方法： 在視窗中，或使用的圖示上按一下**樹狀**功能表。 + 和-在樹狀目錄中的圖示做為在 Visual c + + 專案的視窗。  
   
  **樹狀**功能表包含四個命令：  
   
-|功能表命令|說明|  
+|功能表命令|描述|  
 |------------------|-----------------|  
 |**展開一層**|下一個層級來展開目前選取的項目。|  
 |**展開分支**|完全展開目前選取的項目。|  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  從**樹狀**功能表上，選擇其中一個展開或摺疊命令。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 檢視](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

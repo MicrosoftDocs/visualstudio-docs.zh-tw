@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f32e2e4c5c57359acdc4348f0a83399096383ff2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 229f9a4b8e723fb01991f756b10ed706c7ebb4c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="init"></a>Init
 準備主動擷取和記錄到圖形記錄檔的圖形資訊的圖形診斷的應用程式元件。  
@@ -38,5 +39,5 @@ void Init(
   
  您可以完成並關閉使用中的圖形記錄檔藉由呼叫`UnInit`，然後擷取並錄製新的圖形記錄檔的多個圖形資訊，藉由呼叫`Init`一次。 您可以依您想要建立數個獨立的圖形記錄檔使用相同的次數重複這`VsgDbg`執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [UnInit](init.md)

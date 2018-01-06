@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f007d1fa6d9a1bbdebdd78a88272c98f0c44cdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-native-code-faqs"></a>機器碼偵錯 FAQ
 下列主題包含一些常見問題集的解答：  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
 -   [如果暫止於 MFC，如何可以回到呼叫 MFC 的函式？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

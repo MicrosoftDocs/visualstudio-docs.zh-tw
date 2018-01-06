@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93cc2f53715fbc76f17d05f53a9fb90dae5f1185
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-com-servers"></a>如何：偵錯 COM 伺服器
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  啟動容器應用程式 (Container Application)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
  [如何： 偵錯 COM 用戶端和伺服器使用 RPC 偵錯](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)   

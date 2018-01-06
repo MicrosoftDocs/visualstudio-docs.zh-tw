@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5eb1d51c867cccfe262e6c4ae06b065196823d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1b7e2edabbd0938f0ce3e6c6558b9910c9e98c58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
 擷取 managed 函式或變數的中繼資料語彙基元。  
@@ -41,5 +42,5 @@ HRESULT get_token (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -29,11 +29,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb41f8fea8447f8616b4c20f442ffd4fa8b48c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。 您也可以在 [即時運算]  視窗、[命令]  視窗，甚至來源視窗中使用格式規範。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip (資料提示方塊)。 DataTip (資料提示方塊) 會反映 DataTip 顯示中的格式規範。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="format-specifiers"></a>格式規範  
  下表說明偵錯工具可辨識的 C# 格式規範。  
   
-|規範|格式|原始的監看值|顯示|  
+|指定名稱|格式|原始的監看值|顯示|  
 |---------------|------------|--------------------------|--------------|  
 |ac|強制評估運算式。 在隱含評估屬性和隱含函式呼叫關閉時，這就會很有用。|訊息 「 隱含函式評估已關閉使用者 」|\<值 >|  
 |d|十進位整數|0x0065|101|  
@@ -69,6 +70,6 @@ ms.lasthandoff: 10/31/2017
 |raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T >|字典的未經處理檢視\<T >|  
 |結果|搭配實作 IEnumerable 或 IEnumerable 類型的變數\<T >，通常是在查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員。|顯示符合查詢條件的成員。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)

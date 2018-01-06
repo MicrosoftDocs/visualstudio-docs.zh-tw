@@ -25,11 +25,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6232f86e9e9f5d59e9e109d08b75120cc90902c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95ad4f9c028b9b40bf5104539a608453c9d6f9dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>如何：尋找程式損毀時所在的 DLL
 > [!NOTE]
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
 6.  查看**名稱**和**路徑**資料行，以查看此 DLL 名稱和路徑。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)   
  [如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)

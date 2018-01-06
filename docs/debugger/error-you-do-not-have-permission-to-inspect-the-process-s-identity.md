@@ -6,22 +6,22 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
 caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e168af69b04fb152e054860b2a6bd2084a349ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤： 您沒有權限檢查處理程序 &#39; s 的身分識別
 您沒有檢查此處理序識別的權限。 這很可能是因為系統組態所造成。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在**終端機服務內容**視窗，請移至**一般**索引標籤，然後設定**啟動類型**至**手動**。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
 9. 重新啟動電腦。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在下**遠端桌面**，選取**允許使用者從遠端連線到此電腦**。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

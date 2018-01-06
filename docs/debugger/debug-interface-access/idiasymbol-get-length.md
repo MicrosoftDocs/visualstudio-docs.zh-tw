@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cdb52f21a5dd8a6bc41eaf21092013abffdc3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2a1d879b2460b4b09ea47bcb892f760a912e7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 擷取的位元數或位元組這個符號所表示之物件所使用的記憶體。  
@@ -56,9 +57,9 @@ pSymbol->get_length( &length );
   
 |需求|描述|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

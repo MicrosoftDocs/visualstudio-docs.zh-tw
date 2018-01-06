@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7231e0cc5c9d5946fabe504c16813ea47b24bdbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 095fb9d8477a649c72204c018f28fe6636a3903f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 建構的執行個體`VsgDbg`不論是否準備主動擷取和記錄的圖形資訊預設會根據指定的布林值參數的圖形診斷的應用程式元件的類別。  
@@ -38,7 +39,7 @@ VsgDbg(
   
  當建構函式呼叫與`bDefaultInit`設`false`，圖形診斷的應用程式元件可以準備主動擷取和記錄在稍後的圖形資訊，藉由呼叫`Init`函式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VsgDbg:: ~ VsgDbg （解構函式）](vsgdbg-tilde-vsgdbg-destructor.md)   
  [初始化](init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)   

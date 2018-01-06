@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e57e1fddaabe0346987a7ed27b4f3cd682055d5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3939ab86cd9f0948a2be44756b9ed94d143ecc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasession"></a>IDiaSession
 提供偵錯符號的查詢內容。  
@@ -32,7 +33,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDiaSession`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|擷取對應至這個符號存放區中的符號的可執行檔的負載位址。 這是相同的值傳遞給`put_loadAddress`方法。|  
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定載入位址，對應的可執行檔，此符號存放區中。 **注意：**請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  
@@ -117,7 +118,7 @@ void InitializeDIA(const char *szFilename)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)   

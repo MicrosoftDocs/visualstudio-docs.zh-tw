@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 偵錯資訊編譯的程式儲存在程式資料庫 (.pdb) 檔，做為可使用偵錯介面存取 (DIA) SDK Api 的符號。 所有符號[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)屬性。 `symTag`屬性指示符號的類型所定義的[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 `symIndexId`屬性是`DWORD`含有符號的每個執行個體的唯一識別碼值。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  當嘗試存取屬性，如果沒有發生錯誤，而且已指派的符號屬性的值，屬性的"get"方法會傳回`S_OK`。 傳回值為`S_FALSE`指出屬性不是有效的目前符號。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [符號位置](../../debugger/debug-interface-access/symbol-locations.md)  
  描述不同種類的可以有一個符號的位置。  
   
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/31/2017
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
  描述對應至不同的語言項目，例如類別、 陣列和函式傳回類型的符號類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

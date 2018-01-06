@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25d6a52ed1cfa845670b97c63bf90e9e6e262e5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5fbcdd8e78867eec2184f0df72e7a90f033e6f30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  
@@ -44,5 +45,5 @@ HRESULT get_volatileType (
 ## <a name="remarks"></a>備註  
  在 c + +，UDT 可以標示`volatile`關鍵字，表示其內容不會假設存在一個存取從到下一步。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

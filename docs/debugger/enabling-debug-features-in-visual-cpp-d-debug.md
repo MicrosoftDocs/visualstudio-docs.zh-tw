@@ -27,11 +27,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b762f34df693ac3b5992d0b1e9c2ba4fa6fb8cb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 0f1067ee5b60b8a8a402c9612357f2d83b6da138
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>啟用 Visual C++ 的偵錯功能 (/D_DEBUG)
 在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，偵錯功能，當您編譯您的程式使用的符號時，會啟用判斷提示之類**_DEBUG**定義。 您可以定義**_DEBUG**中有兩種：  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
   
  MFC 程式的偵錯組態必須與 MFC 程式庫的偵錯版本連結。 MFC 標頭檔會決定要連結的 MFC 程式庫的正確版本根據定義，例如符號**_DEBUG**和**_UNICODE**。 如需詳細資訊，請參閱[MFC 程式庫版本](/cpp/mfc/mfc-library-versions)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 - SQL
-ms.assetid: 596425c8-14c7-4c05-8823-e1c52f420f5e
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43a437cfc4be1c9168b16e4b9d1a46e2eadcb2e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e45c70d8186a178bafe6544bf83dcec1ed35d9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以 &#39; t 尋找不到 SSDEBUGPS
 SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。  

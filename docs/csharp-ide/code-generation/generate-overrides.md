@@ -10,11 +10,12 @@ ms.topic: article
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.openlocfilehash: 88ebbeed4af1d0ea79a27ff21f7ae38ec8c252c1
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: ce415cd6b86d8a5bd9bc905f3bc6b395d06753f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-c"></a>產生 Equals 和 GetHashCode 方法覆寫在 C# 中 #
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/29/2017
 
    ![產生方法結果](media/overrides_result.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

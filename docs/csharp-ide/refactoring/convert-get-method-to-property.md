@@ -13,11 +13,12 @@ ms.author: kaseyu
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.convertmethodtoproperty
 dev_langs: csharp
-ms.openlocfilehash: d034b8835caf0a5e56a9ef32599cf9197f1e3e16
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: 71ff3db81be256bdb82413d04b2f939b706c6586
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method"></a>Get 方法轉換成屬性/屬性轉換 Get 方法
 ## <a name="convert-get-method-to-property"></a>Get 方法轉換成屬性
@@ -74,6 +75,6 @@ public int MyValue
 
 1. 如果您滿意預覽程式碼中的變更，請按**Enter**或按一下 從功能表的修正，會認可變更。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (C#)](../refactoring-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

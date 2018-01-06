@@ -22,24 +22,25 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 本節將說明如何偵錯數種類型的 Web 應用程式。  
   
-## <a name="in-this-section"></a>本章節內容   
+## <a name="in-this-section"></a>本節內容   
  [用戶端指令碼偵錯](../debugger/client-side-script-debugging.md)  
  討論 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網頁中的測試指令碼和用戶端指令碼。  
   
 ## <a name="related-sections"></a>相關章節  
- [偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ [對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  說明啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式偵錯的必要步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   

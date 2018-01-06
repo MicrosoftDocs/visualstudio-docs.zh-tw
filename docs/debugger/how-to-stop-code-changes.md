@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06c0e59d7e4fea617945c6548f9bbccfdd6e22b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fde04b22c725064e9066d7ec8a4f85816bd45a01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
  如果您選擇此選項，就無法認可任何的程式碼變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)   
  [編輯後繼續、 偵錯、 選項對話方塊](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 22ea6a58453de8c28703dbe0252ab6370be55bf3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7cc4d8420cd823964aeed790a412e462b14634c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立 N-Tier 資料應用程式
 *多層式架構*資料應用程式是可存取資料而且分成多個邏輯層，應用程式或*層*。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的終端使用者隔離。 如需詳細資訊，請參閱[多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。  
@@ -219,7 +220,7 @@ ms.lasthandoff: 11/09/2017
   
 3.  同時選取**DataAccessTier**和**DataEntityTier**專案。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>將函式加入至服務，以在資料存取層中呼叫 GetCustomers 和 GetOrders 方法  
  現在，資料存取層包含方法可以傳回資料、在資料服務中建立方法以呼叫資料存取層中的方法。  
@@ -380,7 +381,7 @@ MaxReceivedMessageSize 的預設值不是足夠容納從客戶和訂單資料表
   
 -   將其他方法加入至服務，以將資料更新回資料庫。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用多層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [階層式更新](../data-tools/hierarchical-update.md)   
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

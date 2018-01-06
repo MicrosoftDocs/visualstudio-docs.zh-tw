@@ -24,11 +24,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4d1675ecda24413fb43f92848f3c358a20a9a71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66ed3dbd6c67fe247ea514a9d41780584ae8f1e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
   
      若要取得裝飾的名稱，請參閱[檢視裝飾名稱](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [機器碼偵錯 Faq](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7099fdc72bc93d86d49727eb782d2fd072ec1e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: d1b9326aa862bd03bb989a4d6863e94dae7bddef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)的編輯後繼續的限制相關資訊。
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/31/2017
   
  在上述情形中，偵錯工具會繼續執行原始的程式碼直到套用變更為止。 過時程式碼會在不同的來源視窗中顯示為暫時原始程式檔視窗，並使用像是 `enc25.tmp`的標題。 已編輯的來源會繼續出現在原始來源視窗中。 如果您嘗試編輯過時程式碼，就會出現警告訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)

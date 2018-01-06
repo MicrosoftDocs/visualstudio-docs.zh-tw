@@ -22,11 +22,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3717a7e51643f49def2ff8cd6a9077a49ed8bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 433789524facdc4dba95e5dcfc9e6859a9124692
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：顯示和隱藏暫存器群組
 **註冊**視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯** 節點，**一般**類別目錄。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
   
      捷徑功能表會停用偵錯硬體不支援的暫存器群組，因此不會選取這些群組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)

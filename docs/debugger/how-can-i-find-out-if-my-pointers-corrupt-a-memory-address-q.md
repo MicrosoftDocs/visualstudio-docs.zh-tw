@@ -24,11 +24,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 863acbf45268330e106360dd7778acab94b670de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a57b36fc1d1dd25f439f65fe9d72cec6aab63471
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  當您叫用中斷點時，使用**記憶體**0x00408000 開始的視窗來檢視記憶體內容。 如需詳細資訊，請參閱[記憶體 Windows](../debugger/memory-windows.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [機器碼偵錯 Faq](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

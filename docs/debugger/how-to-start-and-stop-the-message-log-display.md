@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45f7246df2fc757f5e2a4a46e215cd25d45b1b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6057ca5e8bd6d81a72c4578a0ee8b776da46fdc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
 當[訊息檢視](../debugger/messages-view.md)視窗是作用中，**開始記錄**或**停止記錄**選擇出現在 Spy + +**訊息**功能表上，而對應**開始記錄**或**停止記錄**工具列按鈕會變成作用中。  

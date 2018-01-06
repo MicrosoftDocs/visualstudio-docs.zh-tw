@@ -28,11 +28,14 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724851fcd78050d3502cdec4369c7c6a79c9419f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- dotnet
+- cplusplus
+ms.openlocfilehash: 1c00546b983c9bbb0fd6c01717bd0a09c993e11b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +）
 您可以停用或啟用編輯後繼續中的**選項**在執行階段 對話方塊。 但是在進行偵錯時，無法變更這項設定。  
@@ -62,7 +65,7 @@ ms.lasthandoff: 10/31/2017
     - **警告出現過時的程式碼 （僅限原生）**  
         取得過時程式碼的警告。 
   
-7.  按一下 [確定]。    
+7.  按一下 [確定 **Deploying Office Solutions**]。    
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)

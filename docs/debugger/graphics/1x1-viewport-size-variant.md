@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 074cf7111108b7ae4f3b6866be19f0a12d3c429b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab9f8be1d202f21147afaf9f4f52a3c90c403ed8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport 大小變異
 將所有呈現目標上的檢視區維度減少為 1x1 個像素。  

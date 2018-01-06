@@ -20,21 +20,22 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02eeb34427c6742847aef4035aef428838cc0e23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b21ce6ea8d4a65321c5af2cbae3cbc334dde3684
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-wpf"></a>偵錯 WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 提供了額外的功能，可讓 WPF 應用程式偵錯變得更輕鬆。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：使用 WPF 樹狀架構視覺化檢視](../debugger/how-to-use-the-wpf-tree-visualizer.md)|您可以使用 [WPF 樹狀架構視覺化檢閱] 瀏覽 WPF 物件的視覺化樹狀，以及檢閱該樹狀中物件的 WPF 相依性屬性。 本主題描述 [WPF 樹狀架構視覺化檢閱] 的使用者介面。|  
 |[如何：顯示 WPF 追蹤資訊](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可以從 WPF 應用程式接收偵錯追蹤資訊，並顯示該資訊**輸出**視窗。 此主題描述如何啟用和自訂 WPF 追蹤資訊的顯示。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 421c1f5f8736b9bd2cd95ac61570cc831c468c78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 072c5cde6a4a0af81397863db36bbf861b7ef0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>偵錯已部署的 ASP.NET 應用程式
 若要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯已部署的應用程式，您必須附加至 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序，並且確定偵錯工具可以存取應用程式的符號。 您還必須找出並開啟應用程式的原始程式檔 (Source File)。 如需詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，[如何： 尋找 ASP.NET 處理序名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)，和[系統需求](../debugger/aspnet-debugging-system-requirements.md)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  許多 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式都會參考到包含商務邏輯或其他實用程式碼的 DLL。 這類的參考將 DLL 複製從本機電腦的 Web 應用程式的虛擬目錄的 \bin 資料夾時部署您的應用程式。 在偵錯時請記住，您的 Web 應用程式是參考該 DLL 的複本而非本機電腦上的複本。 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
  [如何： 啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
  [如何： 尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.kernel_dbg_enabled
 dev_langs:
 - CSharp
@@ -14,16 +14,16 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords: kernel debugger
-ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 448dbc486d58bc46e531b92de9f78272e4304d27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0841b6e6d592a8b09b85e744d693f0b356fcbf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯目前 &#39; t 可能因為核心偵錯已啟用系統上
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
@@ -58,7 +58,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>若要在目前工作階段中停用核心偵錯  
   
--   在命令提示字元中輸入：  
+-   在命令提示中，輸入：  
   
     ```  
     Kdbgctrl.exe -d  
@@ -66,7 +66,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>若要停用所有工作階段的核心偵錯 (Windows Vista 和 Windows 7)  
   
-1.  在命令提示字元中輸入：  
+1.  在命令提示中，輸入：  
   
     ```  
     bcdedit /debug off   
@@ -100,6 +100,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

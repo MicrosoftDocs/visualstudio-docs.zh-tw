@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4ff3c0d06d7f668ad3d61f785320def8b9ddd0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 489403e4ce5052cb526a361e4548ab8823a20b18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：將執行緒加上旗標和取消旗標
 您可以加上旗標的執行緒，您想要特別注意標記中的圖示與**執行緒**，**平行堆疊**（執行緒檢視）**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。  
@@ -59,9 +60,9 @@ ms.lasthandoff: 10/31/2017
   
 4.  （選擇性）在**搜尋**方塊中，輸入要搜尋特定模組的字串。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)  
  [逐步解說： 偵錯多執行緒應用程式使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)

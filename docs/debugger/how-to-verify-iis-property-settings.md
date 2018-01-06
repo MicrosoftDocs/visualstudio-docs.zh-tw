@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0d58ea851423e9239d8685f89890b5d9e152d53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a9bda1bdf3fadffedc71873ddec6733b68651a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
 您可以使用 IIS 系統管理工具設定 Web 應用程式的屬性。 必須正確設定這些屬性才能順利執行應用程式，因此驗證這些設定通常都是疑難排解的必要步驟。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/31/2017
   
 9. 按一下**確定**關閉**網際網路資訊服務 (IIS) 管理員**，**網際網路服務管理員**，或**Internet Information Services** 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [疑難排解](../debugger/debugging-web-applications-troubleshooting.md)

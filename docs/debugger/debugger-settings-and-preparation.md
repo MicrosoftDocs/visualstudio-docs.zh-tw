@@ -21,18 +21,19 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b260610f32f7ece52870e6f6e90d5b0986b61d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  
   
  如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [偵錯工具專案設定](../debugger/debugger-project-settings.md)  
  說明如何指定偵錯工具設定、如何設定偵錯和發行組態，以及如何管理符號和原始程式碼。 也會說明 C++、C#、F#、Visual Basic 偵錯組態和 Web 專案的適當專案設定。  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
  [如何：指定偵錯的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何設定登錄機碼以向偵錯工具表示使用何版本。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

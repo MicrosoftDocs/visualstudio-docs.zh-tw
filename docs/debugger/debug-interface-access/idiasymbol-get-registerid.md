@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5fe8b131e715f5fa55d2d2f99cb8c4714996290
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c944869d48c484f7ddf234f4e00a5d10e96f70ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 擷取位置的登錄指示項時[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設`LocIsEnregistered`。  
@@ -44,6 +45,6 @@ HRESULT get_registerId (
 ## <a name="remarks"></a>備註  
  如果符號為相對於暫存器，亦即，如果符號的[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設`LocIsRegRel`，使用`get_registerId`方法呼叫後面接著[idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)取得符號所在位置的暫存器從位移的方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

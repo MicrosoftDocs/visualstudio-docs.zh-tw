@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285cfb5a68055612fc7d77022b8f9d1d61067ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9440eeda69592fad2e7c8f4e3e936f4b3dff29b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninit"></a>UnInit
 終結的圖形記錄檔，就會關閉它，並釋出應用程式的作用中記錄的圖形資訊時所使用的資源。  
@@ -32,5 +33,5 @@ void UnInit();
   
  之後`UnInit`的執行個體上呼叫`VsgDbg`類別，在新的圖形記錄檔可以藉由呼叫建立`Init`以及藉由呼叫進行最終處理`UnInit`。 您可以重複此步驟，您想要使用相同的次數`VsgDbg`建立數個獨立的圖形記錄檔的執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Init](init.md)

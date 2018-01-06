@@ -20,18 +20,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771506897b5c40242c26a06db4e176e6eb785b21
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。  
   
  本節說明可以使用的選項，以及設定這些選項的方式。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)  
  在 [ **選項** ] 對話方塊中說明偵錯工具設定。  
   
@@ -60,5 +61,5 @@ ms.lasthandoff: 11/11/2017
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
  說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具對程式進行偵錯時所需的準備工作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)

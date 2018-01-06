@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說： 在交易中儲存資料
 本逐步解說示範如何將資料儲存在交易中，使用<xref:System.Transactions>命名空間。 在本逐步解說中，您將建立 Windows Forms 應用程式。 您將使用資料來源組態精靈，在 Northwind 範例資料庫中建立兩個資料表的資料集。 您會將資料繫結控制項加入 Windows form，以及您將修改 BindingNavigator 的儲存按鈕以更新資料庫在 TransactionScope 內部的程式碼。  
@@ -173,6 +174,6 @@ ms.lasthandoff: 11/09/2017
   
 -   選取**F5**執行應用程式。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [如何： 使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)  
 [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe88b8d864cc0762124f021980b95b427a3f7a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2a24b96672c7677943fa7dfe7807c578bf4d64ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>如何：在發生例外狀況後檢查系統程式碼
 發生例外狀況 (Exception) 時，您可能必須檢查系統呼叫內部的程式碼，判斷造成例外狀況的原因。 下列程序說明如果您沒有載入系統程式碼的符號，或是在已經啟用 Just My Code 的情況下，如何執行這項工作。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  您現在可以檢查系統程式碼中的**呼叫堆疊**視窗和其他視窗。 比方說，您可以按兩下呼叫框架，在來源中檢視程式碼或**反組譯碼**視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)

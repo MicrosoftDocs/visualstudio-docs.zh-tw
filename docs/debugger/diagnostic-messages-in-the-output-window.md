@@ -30,11 +30,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b898921b022dde9a666a42725bf63c0bb9e6ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>診斷訊息傳送至輸出視窗
 您可以撰寫執行階段訊息**輸出**視窗使用`Debug`類別或`Trace`類別，也就是組件的<xref:System.Diagnostics>類別庫。 如果您只希望在程式的偵錯版本中輸出，請使用 Debug 類別。 如果要同時在偵錯和發行版本 (Release Version) 中輸出，則使用 Trace 類別。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 -   已結束的執行序。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [輸出視窗](../ide/reference/output-window.md)   
  [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  

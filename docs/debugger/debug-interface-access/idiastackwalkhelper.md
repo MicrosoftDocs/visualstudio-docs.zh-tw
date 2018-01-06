@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a092cc6044f42a53abf97ff36417a23c1f2adca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cbd88bbe3e8a752721047ee80d847e72cf115b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 可加速，查核堆疊使用的程式偵錯資料庫 (.pdb) 檔案。  
@@ -34,7 +35,7 @@ IDiaStackWalkHelper: IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 VTable 順序的方法  
  下表顯示的方法`IDiaStackWalkHelper`:  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|擷取暫存器的值。|  
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|設定暫存器的值。|  
@@ -59,7 +60,7 @@ IDiaStackWalkHelper: IUnknown
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   

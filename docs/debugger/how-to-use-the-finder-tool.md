@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e48fd86555a2bd110f2945063b23f03d0ce64e16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
 您可以使用搜尋工具中**尋找視窗**對話方塊，即可顯示視窗屬性或訊息。 搜尋工具也可以找出已停用的子視窗，並分辨哪一個視窗，來反白顯示，如果停用子視窗有重疊。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
      如果您選取**屬性**、[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)隨即開啟。 如果您選取**訊息**、[訊息檢視](../debugger/messages-view.md)視窗隨即開啟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Spy + + 檢視](../debugger/spy-increment-views.md)   
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

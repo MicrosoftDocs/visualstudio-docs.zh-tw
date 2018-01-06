@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 873b7dd10a2e39aa795626bc7d387df7017740d8
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload: multiple
+ms.openlocfilehash: 01e9b9ced1db8f41c8ad1fb6386eec0d6080dd99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱[建立 Windows 應用程式專案](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
@@ -52,7 +53,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
   
 2.  建立需要的中斷點。  
   
-     因為 Windows Form 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
+     因為 Windows Forms 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
   
     1.  與控制項相關的事件，例如點選、輸入等等。  
   
@@ -66,7 +67,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
   
 4.  使用中討論的技術進行偵錯[偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)   
