@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77a5f294acf60eebc745cb78042e0ea3431fc998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cc60a266a238ee8d3635637b907ce88933b29a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 設定偵錯符號進行搜尋的路徑。  
@@ -43,7 +44,7 @@ int SetSymbolPath(
   
 #### <a name="parameters"></a>參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`szSymbolSearchPath`|[in]字串，包含的符號搜尋路徑。 如需詳細資訊，請參閱 < 備註 >。 不可以是 null。|  
 |`szSymbolCachePath`|[in]字串，包含可快取符號的本機路徑。 不可以是 null。|  
@@ -63,6 +64,6 @@ int SetSymbolPath(
   
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)方法會執行實際的符號載入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

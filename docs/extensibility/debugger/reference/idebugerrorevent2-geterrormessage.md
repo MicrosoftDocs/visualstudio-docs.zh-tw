@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b8a4e4c2ca938d8c600d3fd9ef0e615aa847fd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06ffcbaf1266f017b75e6c3662300096b534e209
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 傳回可讓人類看得懂的錯誤訊息建構的資訊。  
@@ -72,6 +73,6 @@ int GetErrorMessage(
 ## <a name="remarks"></a>備註  
  錯誤訊息的格式應沿著`"What I was doing.  %1"`。 `"%1"`會再變成由呼叫端衍生自錯誤碼的錯誤訊息 (在傳回`hrErrorReason`)。 `pMessageType`參數會告知呼叫端應如何顯示最後的錯誤訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

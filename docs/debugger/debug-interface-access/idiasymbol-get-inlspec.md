@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-此函式會擷取旗標，指出是否函式已標記為內嵌 (使用其中一種[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp.md)屬性)。  
+此函式會擷取旗標，指出是否函式已標記為內嵌 (使用其中一種[inline、 __inline、 \__forceinline](/cpp/cpp/inline-functions-cpp)屬性)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,9 +46,9 @@ HRESULT get_inlSpec(
   
 |需求|描述|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline、__inline、\__forceinline](/cpp/cpp/inline-functions-cpp.md)
+ [inline、__inline、\__forceinline](/cpp/cpp/inline-functions-cpp)
