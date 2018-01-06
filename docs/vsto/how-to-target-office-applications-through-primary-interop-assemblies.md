@@ -21,11 +21,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a96ec16afda8823ddf9918340498e29efdff2f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bf714645f126f8a6f5e8aaca3ee6a2721bfe0a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Assembly Binding Redirection
   當您建立新的 Office 專案時，Visual Studio 會自動將參考加入建置專案所需的 Microsoft Office 主要 Interop 組件 (PIA)。 在下列情節中，您必須將參考加入其他 PIA：  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  Office 專案中，一律加入 Office Pia 的參考使用**.NET**  索引標籤**加入參考**對話方塊而非**COM**  索引標籤。如需詳細資訊，請參閱 [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      組件名稱會出現在**參考**資料夾**方案總管 中**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

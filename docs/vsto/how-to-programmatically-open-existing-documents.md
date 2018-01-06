@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 528245e33f3157bf42f70b3918ee9f8fc9539f9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 991a282cb3fc8a34f3434c9cdb0a9be214c9e3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以程式設計方式開啟現有文件
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法會開啟完整的路徑和檔案名稱所指定的現有 Microsoft Office Word 文件。 這個方法會傳回<xref:Microsoft.Office.Interop.Word.Document>表示開啟的文件。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 -   名為 NewDocument.doc 文件必須位於 c 磁碟機上名為測試目錄  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 以程式設計方式建立新文件](../vsto/how-to-programmatically-create-new-documents.md)   
  [如何： 以程式設計方式關閉文件](../vsto/how-to-programmatically-close-documents.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

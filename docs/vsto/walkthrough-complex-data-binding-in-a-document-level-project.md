@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff7896b24508891a62ad3a0760880ed6a68a65a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：文件層級專案中的複雜資料繫結
   本逐步解說示範在文件層級專案中的複雜資料繫結的基本概念。 您可以結合多個 Microsoft Office Excel 工作表中的資料格至 Northwind SQL Server 資料庫中的欄位。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-a-new-project"></a>建立新專案  
  第一個步驟是建立 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立名稱的 Excel 活頁簿專案**我的複雜資料繫結**。 在精靈中，選取**建立新的文件**。  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  加入空白資料列中的下列資訊。  
   
-    |EmployeeID|LastName|FirstName|標題|  
+    |員工識別碼|LastName|FirstName|標題|  
     |----------------|--------------|---------------|-----------|  
     |10|Ito|Shu|銷售經理|  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 10/31/2017
   
 -   建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱[逐步解說： 建立主版詳細資料的關聯使用快取的資料集](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [逐步解說：文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

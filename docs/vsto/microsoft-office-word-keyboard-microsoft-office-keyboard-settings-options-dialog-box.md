@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbce725246356086ac64b1810b80b91839caea3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 19e6e386a1d96fcadd788bb30f318de76e7f928f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤
   Microsoft Office Word 和 Visual Studio 同時處理快顯的索引鍵。 針對不同的命令，在 Word 和 Visual Studio 中，可以獨立相同快速鍵組合。 在 Visual Studio 中的文件層級專案中開啟 Word 時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會收到所有捷徑命令，但您可以讓 Word 文件選取具有焦點時，接收這些**動態鍵盤配置**。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
  **動態鍵盤配置**  
  Visual Studio 會在有焦點時，才收到快顯命令。 當 Word 文件具有焦點時，Word 就會收到所有的捷徑命令。 例如，如果您在 Word 文件具有焦點時按 F5 功能鍵，Word 會開啟**尋找和取代**對話方塊**移至**選取的索引標籤。 如果您按下 F5，Visual Studio 焦點時，Visual Studio 會啟動偵錯您的方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Excel 鍵盤](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

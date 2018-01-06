@@ -18,11 +18,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9aafcb9a131743c09d139f6f210c0d50425f4cba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96616338d0fd26e31ac0cc67e66d4dc35d03fdda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-resize-listobject-controls"></a>如何：調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  選取新的資料範圍，為您的資料表。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ##  <a name="runtimedoclevel"></a> 在文件層級專案中，於執行階段調整 ListObject 控制項的大小  
  您可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法在執行階段調整 <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> 控制項的大小。 您無法使用此方法將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項移至工作表上的新位置。 標頭必須留在相同的資料列，且已調整大小的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項必須與原始的清單物件重疊。 已調整大小的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項必須包含標頭資料列，和至少一個資料列。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

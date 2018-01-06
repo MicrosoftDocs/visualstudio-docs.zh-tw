@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28d755d6123b2911bccd10e668212e1ea6a54484
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：使用按鈕在文件的文字方塊中顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立 Word 文件專案名稱**My Word Button**。 在精靈中，選取**建立新的文件**。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**insertText**|  
+    |**名稱**|**insertText**|  
     |**Text**|**插入文字**|  
   
  現在，您可以撰寫在按一下按鈕時將執行的程式碼。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說： 更新文件使用選項按鈕中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   

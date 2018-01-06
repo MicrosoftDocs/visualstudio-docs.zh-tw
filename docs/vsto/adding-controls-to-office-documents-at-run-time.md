@@ -27,11 +27,12 @@ caps.latest.revision: "102"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db8a4fad73bb710662ce63bd299751c725e0c6ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d29fd74ee92344ac8b2eedbe4a5b8838171d7d96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-controls-to-office-documents-at-run-time"></a>在執行階段將控制項加入至 Office 文件
   您可以在執行階段將控制項加入 Microsoft Office Word 文件與 Microsoft Office Excel 活頁簿中。 您也可以在執行階段加以移除。 您在執行階段加入或移除的控制項稱為 *動態控制項*。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [Office 文件中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)   

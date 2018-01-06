@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02d6a544b660a110c618bdcb7d3b778fd82ceaaa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8800055878c53adce195bbf7078da410c12128da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>HOW TO：實作 Windows Communication Foundation 合約作業 (舊版)
 本主題描述當使用以 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 為目標的舊版 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 時，如何實作 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 合約作業。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
 5.  將您要使用的實作，該作業內的工作流程活動**ReceiveActivity**活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選擇作業對話方塊 （舊版）](../workflow-designer/choose-operation-dialog-box-legacy.md)   
  [如何： 叫用 WCF 合約作業 （舊版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)

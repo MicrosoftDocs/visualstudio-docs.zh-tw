@@ -18,11 +18,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>存取伺服器文件中的資料
   您可以程式設計的文件層級自訂中的資料，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 物件模型。 這表示您可以存取並沒有文字的伺服器上的文件中所包含的資料，或安裝 Excel。 例如，程式碼在伺服器上 (例如，在[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]頁面) 可以自訂文件中的資料，並將自訂文件傳送給終端使用者。 當使用者開啟文件時，方案組件中的資料繫結程式碼將自訂的資料繫結至文件。 這可能是因為文件中的資料分開的使用者介面。 如需詳細資訊，請參閱[文件層級自訂中的快取資料](../vsto/cached-data-in-document-level-customizations.md)。  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="accessing-typed-datasets-in-the-cache"></a>存取快取中的具類型資料集  
  如果您想要存取中具類型資料集的資料，同時從 Office 方案和 Office，外面的應用程式，例如 Windows Forms 應用程式或[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]專案中，您必須同時參考其他組件中定義具類型資料集專案。 如果您將具類型資料集加入每個專案使用**資料來源組態精靈**或**Dataset 設計工具**，.NET Framework 會將具類型資料集做為不同類型的兩個專案中. 如需建立具類型資料集的詳細資訊，請參閱[建立並設定 Visual Studio 中的資料集](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在伺服器上的文件中存取資料](../vsto/accessing-data-in-documents-on-the-server.md)   
  [文件層級自訂中的快取資料](../vsto/cached-data-in-document-level-customizations.md)  
   

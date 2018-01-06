@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c2cbca8406f93184bab7ed80a0450047abea711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc47c6bf1e19f66fa55d29f436ba615742d08a3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>使用者入門 (Visual Studio 中的 SharePoint 程式開發)
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
   
  SharePoint 提供網頁型的共同作業平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供許多專案範本，可用來建立 SharePoint 網站和內容，包括清單定義、工作流程、商務資料連接模型以及網站定義。 此外，您還可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立 SharePoint 專案的擴充功能和工具。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|列出針對 SharePoint 進行開發的軟體需求。|  
 |[SharePoint 錯誤的其他相關資訊](../sharepoint/additional-information-for-sharepoint-errors.md)|描述如何在 SharePoint 程式開發和疑難排解期間尋找說明。|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-sections"></a>相關章節  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)|在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中說明 SharePoint 開發。|  
 |[建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|說明如何使用適用於開發 SharePoint 的 Visual Studio 工具，建立 SharePoint 的自訂網站資料行、內容類型和清單。|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |[封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|描述如何封裝及部署 SharePoint 方案。|  
 |[擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|說明如何擴充 SharePoint 工具來建立您需要的功能。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [使用 伺服器總管瀏覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

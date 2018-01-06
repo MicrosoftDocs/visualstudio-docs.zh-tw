@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 您可以使用 XML 編輯器捷徑功能表上的下列兩個命令叫用 XML 片段。 **插入程式碼片段**命令在游標位置插入 XML 片段。 **環繞**命令會以 XML 片段所選的文字周圍。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型可讓您決定是否可與程式碼片段**插入程式碼片段**命令，**環繞**命令，或兩者。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 10/31/2017
   
  要變更可編輯的程式碼片段欄位的預設色彩，請修改中的程式碼片段欄位設定**字型和色彩**窗格**選項**的對話方塊。 如需詳細資訊，請參閱[如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 片段](../xml-tools/xml-snippets.md)   
  [如何： 從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
  [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)

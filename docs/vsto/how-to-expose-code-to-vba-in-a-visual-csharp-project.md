@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 671618479b1be55fcf08d93b2a398c27348b9878
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：公開程式碼給 Visual C# 專案中的 VBA
   如果您想要與彼此互動的程式碼的兩個類型，您可以公開的 Visual C# 專案給 Visual Basic for Applications (VBA) 程式碼中的程式碼。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
   
 12. 建置專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Creating Outlook Form Regions
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
 ###  <a name="HandlingFormRegionEvents"></a>處理表單區域事件  
  **Outlook 表單區域**項目會自動將下列三個事件處理常式加入表單區域程式碼檔案。  
   
-|事件|描述|  
+|Event - 事件|描述|  
 |-----------|-----------------|  
 |FormRegionInitializing|在表單區域初始化之前發生。 您可以檢查這個事件處理常式中的條件，以決定 Outlook 是否應顯示表單區域。 如需詳細資訊，請參閱[如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)。|  
 |FormRegionShowing|發生於建立表單區域的執行個體之後，但在表單區域顯示之前。|  
@@ -179,7 +180,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[建立 Outlook 表單區域的方針](../vsto/guidelines-for-creating-outlook-form-regions.md)|提供資訊來協助您最佳化表單區域及避免發生可能的問題。|  
 |[如何：在 Outlook 增益集專案中新增表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|示範如何建立表單區域，以擴充標準或自訂 Microsoft Office Outlook 表單使用**新的 Outlook 表單區域**精靈。|  

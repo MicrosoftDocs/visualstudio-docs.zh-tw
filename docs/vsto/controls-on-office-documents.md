@@ -21,11 +21,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c626839b852098f6bae6093a424a786a74522fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a8a8f3bd66ef6f70f8775c1ed064df61b0e9e52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controls-on-office-documents"></a>Office 文件上的控制項
   您也可以在 Visual Studio 中使用 Office 開發工具，將 Windows Forms 控制項和「主控制項」 *appliesto_controls* (Host Control) 加入 Word 文件和 Excel 工作表。 主控制項是一種物件，在 Word 和 Excel 物件模型中擴充各種使用者介面 (UI) 物件。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  當您開發 Excel 或 Word 文件層級專案時，您可以用程式設計方式在執行階段中加入這些控制項，或您可以使用 Visual Studio 設計工具，在設計階段中將這些控制項加入專案的文件或活頁簿。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
  描述主項目和主控制項的功能，包含針對事件進行程式設計、將控制項繫結至資料，以及此控制項和原生物件的控制項有何不同。  
   

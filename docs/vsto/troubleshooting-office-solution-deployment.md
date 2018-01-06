@@ -19,11 +19,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50df21e315aaaa9b0ecbc7d961fbc7b568646785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a778aa9e257773ca186bba8b99d5e426f8f26aed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Office 方案部署疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。  
@@ -128,7 +129,7 @@ ms.lasthandoff: 10/31/2017
   
  將副檔名設為 **.vsto** ，MIME 類型設為 **application/x-ms-vsto**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [疑難排解 ClickOnce 部署](/visualstudio/deployment/troubleshooting-clickonce-deployments)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   

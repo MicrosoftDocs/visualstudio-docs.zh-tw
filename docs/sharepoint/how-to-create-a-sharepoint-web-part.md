@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847124dc9a7e4cd80993df5b50c5d3d3b752f228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5d4f06b13c1c27c9f4b5e245e73929596dcf423
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：建立 SharePoint Web 組件
   您可以建立並自訂 web 組件加入**Web 組件**至任何 SharePoint 專案項目，然後編輯 web 組件，或使用設計工具的程式碼檔。 如需詳細資訊，請參閱[How to： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
      如需範例，請參閱[逐步解說： 建立 SharePoint Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [逐步解說： 建立 SharePoint Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   

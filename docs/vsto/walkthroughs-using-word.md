@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65f581cbb0e1096a6be029bbdca3fe918b0918ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6973b2e99c2c2f8be6211c4a4c9cf7277c796440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthroughs-using-word"></a>使用 Word 的逐步解說
   下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Word 以及自訂使用者介面 (UI) 的方式。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
  [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
  示範如何使用 VSTO 增益集中的 XML 描述元檔案，建立自訂的功能區索引標籤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office 方案逐步解說中的資料](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Office UI 自訂逐步解說](../vsto/office-ui-customization-walkthroughs.md)   

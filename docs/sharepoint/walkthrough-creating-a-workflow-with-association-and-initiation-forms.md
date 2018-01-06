@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始化表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始化表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 啟動工作流程時先到 SharePoint 系統管理員 （關聯表單） 相關聯的 ASPX 形式。  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
      **SharePoint 自訂精靈**隨即出現。  
   
-10. 在**指定偵錯的工作流程名稱**頁面上，接受預設名稱 (**ExpenseReport-Workflow1**)。 保留預設流程範本類型值 (**清單工作流程)**。 選擇**下一步** 按鈕。  
+10. 在**指定偵錯的工作流程名稱**頁面上，接受預設名稱 (**ExpenseReport-Workflow1**)。 保留預設流程範本類型值 (**清單工作流程)**。 選擇 [下一步] 按鈕。  
   
 11. 在**您希望 Visual Studio 自動關聯工作流程偵錯工作階段中？**頁面上，清除 自動將您的工作流程範本，如果已核取方塊。  
   
@@ -451,7 +452,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要了解有關 SharePoint 工作流程的詳細資訊，請參閱[Windows SharePoint Services 中的工作流程](http://go.microsoft.com/fwlink/?LinkID=166275)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [逐步解說：將應用程式頁面新增到工作流程](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
   

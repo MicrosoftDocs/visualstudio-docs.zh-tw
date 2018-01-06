@@ -11,11 +11,12 @@ ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 22e9e9c6f31923eb097b34eab19e61762fb2956b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4321ccba1d3081023c8603df04174506df78f288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 <xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.State.Exit%2A>|False|指定此狀態在轉換時發生的動作。 當<xref:System.Activities.Statements.State>活動展開時，這個值可以拖曳中的活動設定**工具箱**並放到**結束**區段的狀態。|  
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|列出來自 <xref:System.Activities.Statements.State> 的可能轉換。 清單中的每個項目都有指向關聯的 <xref:System.Activities.Statements.Transition> 和目的地 <xref:System.Activities.Statements.State> 的連結。 按一下此連結會將設計工具切換到 <xref:System.Activities.Statements.Transition> 或 <xref:System.Activities.Statements.State> 的展開檢視。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [FinalState](../workflow-designer/finalstate-activity-designer.md)   
  [轉換](../workflow-designer/transition-activity-designer.md)

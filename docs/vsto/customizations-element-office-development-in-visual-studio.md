@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90268fed6f70f97c87bc1a09376aa93c1fda3106
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d26ede37f64a95e62ff15152ff69be22ccb1ce4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
  `customizations` 項目具有下列子項目。  
   
 ### <a name="customization"></a>自訂  
- 必要項。 `customization`中的項目`vstov4`命名空間中定義[&#60; 自訂 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/customization-element-office-development-in-visual-studio.md).  
+ 必要。 `customization`中的項目`vstov4`命名空間中定義[&#60; 自訂 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>文件層級自訂的範例  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:customizations>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

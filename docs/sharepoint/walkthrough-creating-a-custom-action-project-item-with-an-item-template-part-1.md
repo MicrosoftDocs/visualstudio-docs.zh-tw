@@ -20,11 +20,12 @@ caps.latest.revision: "152"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddab05340b898a1a9a1868c7e537e6b53cc013b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以藉由建立您自己的專案項目類型擴充 Visual Studio 中的 SharePoint 專案系統。 在本逐步解說，您將建立可加入至 SharePoint 專案，在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**網站動作**功能表的 SharePoint 網站。  
@@ -453,7 +454,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>後續步驟  
  完成此逐步解說之後，精靈可以加入項目範本。 當使用者加入自訂動作專案項目加入 SharePoint 專案時，精靈會收集資訊的動作 （例如其位置和選擇的動作時，瀏覽至 URL） 並將這項資訊加入至 Elements.xml 檔案，在新的專案項目。 如需詳細資訊，請參閱[逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 建立自訂動作專案項目包含項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

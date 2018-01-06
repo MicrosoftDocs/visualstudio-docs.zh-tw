@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 422dd91a5b8e22bb9859d8ffa10160bdbe77a021
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1071db6a7a8205ef337737473a18d1a6c31af43c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 本主題說明偵錯工具的視窗及對話方塊。 它僅討論具有 XSLT 特定偵錯行為的使用者介面片段。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/02/2017
 ## <a name="locals-window"></a>本機視窗  
  [本機] 視窗會顯示樣式表中定義之任何變數的相關資訊。 [本機] 視窗包含資訊的三個資料行：  
   
- **Name**  
+ **名稱**  
  此資料行包含目前範圍中所有區域變數的名稱。 節點集具有樹狀目錄控制項，您可向下展開以查看其子資料夾。  
   
  **值**  
@@ -96,7 +97,7 @@ ms.lasthandoff: 11/02/2017
   
  如需詳細資訊， [How to： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 XSLT](../xml-tools/debugging-xslt.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)

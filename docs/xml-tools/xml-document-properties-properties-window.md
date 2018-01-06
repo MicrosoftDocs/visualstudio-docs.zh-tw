@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24f3760fb328331684e6894954d79675ff27494e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性 (屬性視窗)
 **屬性**視窗會提供有關使用 XML 編輯器中的文件的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
   
  編輯 XSLT 檔時，這個屬性可用來指定應該在不同的樣式表時使用**顯示 XSLT 輸出**或**偵錯 XSLT**選取命令。 例如，當編輯包含在父樣式表中的樣式表時，您可能想要這樣做。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)

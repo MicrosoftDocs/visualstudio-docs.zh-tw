@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Excel 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Excel、擴充 Excel 功能和自訂 Excel 使用者介面 (UI)。 如需文件層級自訂和 VSTO 增益集差異的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 -   [自訂 Excel 的使用者介面](#UI)。  
   
 ##  <a name="automating"></a> 自動化 Excel  
- Excel 物件模型會公開您可用來自動化 Excel 的許多類型。 例如，您可以程式設計的方式建立圖表、格式化工作表，以及設定範圍和儲存格的值。 如需詳細資訊，請參閱 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
+ Excel 物件模型會公開您可用來自動化 Excel 的許多類型。 例如，您可以程式設計的方式建立圖表、格式化工作表，以及設定範圍和儲存格的值。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/excel-object-model-overview.md)。  
   
  在 Visual Studio 中開發 Excel 方案時，您也可以在解決方案中使用 *「主項目」* (host items) 和 *「主控制項」* (host controls)。 這些都是在 Excel 物件模型中擴充某些常用物件的物件，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些擴充物件的行為與它們所根據的 Excel 物件一樣，但是這些物件會在物件中加入額外的事件和資料繫結功能。 如需詳細資訊，請參閱 [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)。  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 |[逐步解說：建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|示範如何建立 Excel 的基本文件層級自訂。|  
 |[逐步解說：建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|示範如何建立 Excel 的基本 VSTO 增益集。|  
 |[逐步解說：在執行階段於 VSTO 增益集專案中，將控制項新增至工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|示範如何使用 VSTO 增益集，於執行階段在工作表中加入 Windows Form 按鈕、 <xref:Microsoft.Office.Tools.Excel.NamedRange>和 <xref:Microsoft.Office.Tools.Excel.ListObject> 。|
-|[了解 Coauthoring 和增益集](./understanding-coauthoring-and-addins.md)|描述您可能需要對您的方案，以容納 coauthoring 的調整。|  
+|[了解共同撰寫與增益集](./understanding-coauthoring-and-addins.md)|描述您可能需要對您的方案，以容納 coauthoring 的調整。|  
 |[Office 程式開發中的 Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199011)|提供開發 Excel 方案的相關文章和參考文件連結。 非專屬於使用 Visual Studio 的 Office 程式開發。|  
   
   

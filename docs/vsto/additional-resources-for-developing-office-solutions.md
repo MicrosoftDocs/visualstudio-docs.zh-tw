@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd55b39f3a35e8ee8f3f16cc5a64e61cb824177
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>用於開發 Office 方案的其他資源
   Microsoft Office Developer Tools for Visual Studio 只代表許多擴充 Office 應用程式方式的其中之一。 Office 應用程式也有一些內建的功能，例如 Open XML 格式，是 Office Developer Tools for Visual Studio 或本文件未涵蓋者。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
  [使用 Visual Studio 進行 Office 程式開發部落格](http://go.microsoft.com/fwlink/?LinkId=149748)  
  這個部落格由建立 Office Developer Tools for Visual Studio 的 Microsoft 團隊負責維護。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 方案錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)  
   
   

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5093e5561140a0ebff57da1f7c21a8954ee58bb3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aa1cdd0dd563a5f87d4e32f779985afd63319032
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
 與舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 相較，引數設計工具可讓資料更容易流入及流出活動。 按一下即可存取設計工具**引數**設計畫布左下角的按鈕。 設計工具會包含引數出現在表格形式，而且可依每個資料行標頭，除了清單**預設值**資料行。 每個引數都包含名稱、in/out/in-out/屬性方向、型別與預設運算式值 (如果有的話)。 名稱與預設運算式值都是可編輯的文字欄位，而型別和方向都可從下拉式清單中選取。 [!包含[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。  
@@ -34,6 +35,6 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  若要刪除引數，選取引數依序按一下它，然後按**刪除**索引鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)   
  [變數與引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

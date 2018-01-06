@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddaad272326c4cd77e0e54bd7216974181c77a72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ca816a635abf929f2bfa1614f4560f434adbfd45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs 檔案的一個或多個屬性對於所選取的訊息類別是無效的
   當您匯入在 Outlook 中設計的表單區域，但表單區域上的一或多個欄位與您在 [新增表單區域精靈]  最後一頁選取的訊息類別不相容時，就會出現這個錯誤。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在 Outlook 的表單設計工具中，移除與您規劃在 [新增表單區域精靈]  最後一頁選取的訊息類別不相容的欄位。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

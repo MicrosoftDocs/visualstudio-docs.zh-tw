@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd90fbaf4e8f16d1975cbc540bedf2c1e26c018c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e8af98ecf48c01a7c81afad54398afdfdc8456b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 程式開發範例和逐步解說
   本節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建立 Microsoft Office 方案的技術。  
@@ -41,9 +42,9 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[Office 程式開發範例](../vsto/office-development-samples.md)|提供範例說明使用 Visual Studio 中的 Office 和 SharePoint 開發的應用程式的連結。|  
 |[使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)|列出逐步指南，提供在 Visual Studio 中的 Office 程式開發工具的簡介，並說明您可以將 Word 整合到 Office 商業應用程式的方式。|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-sections"></a>相關章節  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)|提供安裝、 專案範本，Office 主要的 interop 組件和新的 Office 程式開發功能的相關資訊的連結。|  
 |[Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)|從開發人員和終端使用者的觀點說明 managed 程式碼如何 Office 方案的工作並包括如何 managed 程式碼適用於 Office 文件，且應用程式的相關資訊。|  

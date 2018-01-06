@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9091298155a0c8223df954c0c7b9ca17a3cf7f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c770de8513d5e04c9c30654216382a0650363818
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-tasks"></a>XML 編輯器工作
 本節描述如何使用 XML 編輯器完成一般工作。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [逐步解說：使用 XML 編輯器功能](../xml-tools/walkthrough-using-xml-editor-features.md)  
  示範如何使用某些 XML 編輯器功能。  
   

@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1f74bdf7b740fbf8d30df78f1433196d21c0ebbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 (Visual Studio 中的 Office 程式開發)
   使用**發行精靈**將方案檔複製到指定的位置，建立資訊清單檔案，並建立安裝程式。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>您要在其中發行應用程式？  
  **指定要發行此應用程式的位置**  
- 必要項。 發行位置是目錄位置**發行精靈**從組建複製資訊清單、 組件、 暫時憑證和其他檔案等方案檔。 您必須具有這個目錄的寫入權限。  
+ 必要。 發行位置是目錄位置**發行精靈**從組建複製資訊清單、 組件、 暫時憑證和其他檔案等方案檔。 您必須具有這個目錄的寫入權限。  
   
  輸入該位置的磁碟路徑、 檔案共用、 FTP 站台或網站的 URL，或按一下**瀏覽**按鈕來瀏覽的位置。 路徑可以是下列格式：  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio 不會不燒錄 CD 或 DVD。 您必須手動將輸出複製到 CD 或 DVD。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [發行頁面、 專案設計工具 &#40; 的 Office 程式開發 Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  

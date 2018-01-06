@@ -12,18 +12,19 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 4dae234ac636a44ba65950f52168550ba1edbf2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 373dc0134326b590907d31ee9ab6cb31d534da0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>以 .NET 3.0 或 .NET 3.5 Framework 為目標開發工作流程應用程式
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 會提供 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 來建立以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 為目標的 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] 應用程式。 設計工具會使用熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用者介面進行工作流程應用程式的圖形建構與偵錯。  
   
  [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 也會提供舊版工作流程設計工具的存取，該設計工具可用來以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。 本章節包含使用這個舊版設計工具的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [使用舊版工作流程設計工具](../workflow-designer/using-the-legacy-workflow-designer.md)  
   
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)  

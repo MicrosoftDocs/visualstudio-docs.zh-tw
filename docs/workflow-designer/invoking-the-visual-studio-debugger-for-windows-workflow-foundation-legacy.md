@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f56c7926e949511d90af20ce6789fe662c08e1c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e28e86324c967397e67eefe054ae4d220acb41f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
 本主題描述如何在舊版 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 偵錯工具來偵錯 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 應用程式。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -56,6 +57,6 @@ ms.lasthandoff: 10/27/2017
   
  如果主應用程式設為啟始專案，則只會叫用 Visual Studio 偵錯工具進行偵錯，不會叫用 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation。 如果使用 Visual Studio 偵錯工具，則只會叫用 C# 或 Visual Basic 程式碼中斷點，不會叫用工作流程設計工具中設定的中斷點。 例如，如果使用 <xref:System.Workflow.Activities.ParallelActivity> Debugger for Windows Workflow Foundation，則會叫用您在設計工具中的 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] 活動上設定的中斷點，但當您使用 Visual Studio 偵錯工具時不會叫用該中斷點。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在工作流程 （舊版） 中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)

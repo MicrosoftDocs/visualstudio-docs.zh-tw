@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da7f4695bc817a66761c579b4c5af85b59ee041f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-office-solutions"></a>授與信任給 Office 方案
   授與信任給 Office 方案表示修改每個目標的電腦可以信任方案組件、 應用程式資訊清單中，部署資訊清單和文件的安全性原則。 由您或使用者時，可以授信任 Office 方案。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  系統管理員可以停用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，或需要提示則只會針對解決方案使用 Authenticode 憑證所簽署。 如需如何變更這些設定的 MyComputer、 近端內部網路、 網際網路、 TrustedSites 和 UntrustedSites 區域的詳細資訊，請參閱[How to： 設定 ClickOnce 信任提示行為](/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [授與信任給文件](../vsto/granting-trust-to-documents.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   

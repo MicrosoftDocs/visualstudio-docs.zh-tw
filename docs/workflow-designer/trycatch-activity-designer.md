@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a00afe1ac5e0eda29378a439398bc6bd4d90e71b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9fe179a0e1aee4ff929974899d26df48f669ccd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 **TryCatch**活動設計工具用來建立及設定<xref:System.Activities.Statements.TryCatch>活動。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|集合**攔截**時，要檢查的項目<xref:System.Activities.Statements.TryCatch.Try%2A>活動會擲回的例外狀況。<br /><br /> 您必須至少在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 或 <xref:System.Activities.Statements.TryCatch.Finally%2A> 區塊中加入一個活動。|  
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|當 <xref:System.Activities.Statements.TryCatch.Try%2A> 和 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活動完成執行時，要執行的活動。<br /><br /> 您必須至少在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 或 <xref:System.Activities.Statements.TryCatch.Finally%2A> 區塊中加入一個活動。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [集合](../workflow-designer/collection-activity-designers.md)   
  [重新擲回](../workflow-designer/rethrow-activity-designer.md)   
  [Throw](../workflow-designer/throw-activity-designer.md)

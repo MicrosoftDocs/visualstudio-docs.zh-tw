@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14a6cf63bbe227a2ab0a4bd2790d863ee6295145
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8847f079646f2c90d50c7a7f3c8ecbd5c510150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 結構描述設計工具
 本章節描述如何使用 XML 結構描述設計工具完成一般工作。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)  
  描述如何建立新 XML 結構描述 (XSD) 檔案，然後將內容加入 XSD 檔案。  
   
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
  [範例 XSD 檔案](../xml-tools/sample-xsd-files.md)  
  提供用於工作範例之範例 XSD 文件的程式碼清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 結構描述設計工具](../xml-tools/xml-schema-designer.md)

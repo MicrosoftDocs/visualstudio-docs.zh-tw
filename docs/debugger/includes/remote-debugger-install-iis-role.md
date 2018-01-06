@@ -13,13 +13,13 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 103cefa8573c8f44efff0b53b0c09a5ec26706e6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dbc9d727dc412e3d354d806a45c352eef810cd99
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
-這些步驟會顯示 IIS 的基本組態。 如需進一步資訊或安裝到 Windows 桌面的電腦，請參閱[發行至 IIS](https://docs.microsoft.com/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)或[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+這些步驟會顯示 IIS 的基本組態。 如需進一步資訊或安裝到 Windows 桌面的電腦，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)或[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
 Windows Server 作業系統中，使用**新增角色及功能**透過精靈**管理**連結或**儀表板**中連結**伺服器管理員**. 在**伺服器角色**步驟中，核取 [網頁伺服器 (IIS)] 方塊。
 

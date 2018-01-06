@@ -11,16 +11,17 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包括幾項系統提供的活動，在您建構工作流程時，可以使用這些活動。 本節包含用來控制工作流程中之流程的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  執行其主體包含至少一次，直到指定的條件評估為該活動**true**。  
   

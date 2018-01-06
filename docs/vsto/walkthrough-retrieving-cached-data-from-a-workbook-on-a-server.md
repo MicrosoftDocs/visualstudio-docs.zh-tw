@@ -21,11 +21,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb745f97b2ab1499206b94cfcd03c2255c7bb3b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 31a895bfc4892959eedba846f226bccba3435bb6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-retrieving-cached-data-from-a-workbook-on-a-server"></a>逐步解說：擷取伺服器上的活頁簿快取資料
   本逐步解說示範如何從 Microsoft Office Excel 活頁簿中而不啟動 Excel 使用快取資料集擷取資料<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
  雖然本逐步解說假設您在開發電腦上執行程式碼，但是本逐步解說所示範的程式碼可以使用未安裝 Excel 的伺服器上。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在**新專案**對話方塊方塊中，確定**為方案建立目錄**未選取核取方塊。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**AdventureWorksDataSet**專案加入**方案總管 中**並開啟**Class1.cs**或**Class1.vb**程式碼檔案。  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
      否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱[加入新連接](../data-tools/add-new-connections.md)。  
   
-6.  在 [ **將連接字串儲存到應用程式組態檔** ] 頁面上，按 [ **下一步**]。  
+6.  在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。  
   
 7.  在**選擇您的資料庫物件**頁面上，展開**資料表**選取**Product (SalesLT)**。  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在**名稱**方塊中，輸入**AdventureWorksReport**。 請勿修改的位置。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。  
   
@@ -238,7 +239,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**名稱**方塊中，輸入**DataReader**。 請勿修改的位置。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**DataReader**專案加入**方案總管 中**並開啟**Program.cs**或**Module1.vb**程式碼檔案。  
   
@@ -251,7 +252,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**.NET**索引標籤上，選取 microsoft.visualstudio.tools.applications.serverdocument 的參考。  
   
-3.  按一下 [確定]。  
+3.  按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  在**方案總管 中**，以滑鼠右鍵按一下**DataReader**專案，然後按一下**加入參考**。  
   
@@ -307,7 +308,7 @@ ms.lasthandoff: 10/31/2017
   
 -   變更中快取的資料集的資料，而不啟動 Excel。 如需詳細資訊，請參閱[逐步解說： 變更伺服器上的活頁簿中快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說： 將資料插入到之伺服器上的活頁簿](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
  [逐步解說： 變更伺服器上的活頁簿中快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
  [連接至 Windows Forms 應用程式中的資料](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  

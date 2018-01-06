@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c904d70ea72ba485405a64d4898acc90fffbab2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16478232faa2b34a6d8f93d2a53b69b0f76b871
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   卸載 Managed VSTO 增益集之前呼叫。  
@@ -37,7 +38,7 @@ HRESULT Unload();
 ## <a name="remarks"></a>備註  
  Microsoft Office 的目前版本不會呼叫這個方法。 這個方法是保留供日後使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Load](../vsto/imanagedaddin-load.md)  
   

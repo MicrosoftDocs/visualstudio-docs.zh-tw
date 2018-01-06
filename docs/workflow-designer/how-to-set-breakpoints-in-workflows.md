@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a5565a5f53506ee61cc40cdd09ab4719bef0742b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c9a3124ddefc892207ccc821b80056baab14166
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 時，您可以在圖形化工作流程上設定中斷點，就像利用 Visual Basic 或 C# 程式碼設定一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
      或者，您也可以按快速鍵**F9**之後選取的活動，或您可以在活動上按一下滑鼠右鍵並選取**中斷點**然後**插入中斷點**從內容功能表。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [偵錯工作流程與工作流程設計工具](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
  [如何：使用工作流程設計工具對 XAML 進行偵錯](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

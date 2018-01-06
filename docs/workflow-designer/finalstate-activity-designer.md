@@ -10,11 +10,12 @@ ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 4bc8e8c9278561cbeee06828e8d828e4072296b8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7268da0f92a75d1e24b215dbfaf44d89210228f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活動設計工具
 <xref:System.Activities.Core.Presentation.FinalState> 設計工具是用來建立會終止狀態機器執行個體的 <xref:System.Activities.Statements.State>。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.State> 活動設計工具在標頭中的易記名稱。 預設值是**狀態**。 此值可在屬性方格中編輯，或是直接在活動設計工具的標頭上編輯。 <xref:System.Activities.Statements.State.DisplayName%2A> 可用於階層連結巡覽，顯示在工作流程設計工具的頂端。<br /><br /> 雖然 <xref:System.Activities.Statements.State.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.State.Entry%2A>|False|指定此狀態在轉換時發生的動作。 這個值可以拖曳中的活動設定**工具箱**並放到<xref:System.Activities.Statements.State.Entry%2A>區段的狀態。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [StateMachine](../workflow-designer/statemachine-activity-designer.md)   
  [狀態](../workflow-designer/state-activity-designer.md)   
  [轉換](../workflow-designer/transition-activity-designer.md)

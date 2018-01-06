@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f7523327fe63bfd00fb5bc5ce4f98aeef61a2567
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 670fc24ee800794bd9b013d5e5aaab6dbb98bcd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 **CompensableActivity**活動設計工具用來建立及設定<xref:System.Activities.Statements.CompensableActivity>活動。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|指定補償 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活動時所要執行的活動。 使用 <xref:System.Activities.Statements.Compensate> 活動可以明確叫用這個處理常式。<br /><br /> 若要加入該活動，卸除其活動設計工具從**工具箱**到**CompensationHandler**方塊**CompensableActivity**活動設計工具的提示文字 「在此置放活動 」。|  
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|指定確認 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 活動時所要執行的活動。 使用 <xref:System.Activities.Statements.Confirm> 活動可以明確叫用這個處理常式。<br /><br /> 若要加入該活動，卸除其活動設計工具從**工具箱**到**Compensableactivity**方塊**CompensableActivity**活動設計工具的提示文字 「在此置放活動 」。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [交易](../workflow-designer/transaction-activity-designers.md)   
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [補償](../workflow-designer/compensate-activity-designer.md)   

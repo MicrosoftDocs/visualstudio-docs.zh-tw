@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ab99d27af2ecb9fef24084b41a326c66c828d4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c88f2efd3e7494fdec5d0cfaee8ecb492c43603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從圖表檢視和內容模型檢視列印圖表
 本主題描述如何從圖表檢視或內容模型檢視列印圖表。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  使用 XPS 檢視器列印儲存在 XPS 檔中的影像。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [圖表檢視](../xml-tools/graph-view.md)   
  [內容模型檢視](../xml-tools/content-model-view.md)   
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

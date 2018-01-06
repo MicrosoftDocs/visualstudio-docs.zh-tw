@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 93f5a4d237addf835a1eb4caa9979259242fab02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f3dd415646f9205794ed51572ed9dbcfc5b45b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>HOW TO：建立工作流程專案 (舊版)
 請依照這些步驟來建立以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標的 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 專案。 這個程序會使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 所提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
   
      如果您想要建立專案的方案目錄，選取**為方案建立目錄**核取方塊，然後輸入中的名稱**方案名稱**方塊。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)

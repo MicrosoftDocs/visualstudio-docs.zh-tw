@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6a61c8f4ea5e9d9cc6d4ab13437d2ec4d4eef7ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2dc5245dd50fd2a5211d55107e537fbc8eb6eb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-activity-library"></a>HOW TO：建立活動程式庫
 自訂活動是用來將工作流程中特定的商務程序模型化。 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中提供了活動程式庫範本，可讓您透過 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 來以視覺方式建立這類自訂活動。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/27/2017
     > [!CAUTION]
     >  自訂活動的主體中僅可有一個子活動，但是該子活動可以是複合活動，例如 <xref:System.Activities.Statements.Sequence> 活動或 <xref:System.Activities.Statements.Flowchart> 活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立活動](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

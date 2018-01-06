@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d75076bc811cc94a62f7b737116984a08295961
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a1e61b3b2055e6a32fa1e179232e7366fe2b3d16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>逐步解說：在 Visual C# 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 -   從 VBA 程式碼呼叫方法。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -97,7 +98,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  您現在即可建立 Excel 的文件層級專案，而該專案會使用您先前建立且已啟用巨集的活頁簿。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
@@ -111,13 +112,13 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 [名稱]  方塊中，輸入 [CallingCodeFromVBA] 。  
   
-7.  按一下 [ **確定**]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      隨即開啟 [Visual Studio Tools for Office 專案精靈]  。  
   
 8.  選取 [複製現有文件] ，然後在 [現有文件的完整路徑]  方塊中，指定您先前建立之 **WorkbookWithVBA** 活頁簿的位置。 如果您使用已啟用巨集的自有活頁簿，則改為指定該活頁簿的位置。  
   
-9. 按一下 [完成] 。  
+9. 按一下 [ **完成**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會在設計工具中開啟 **WorkbookWithVBA** 活頁簿，並將 [CallingCodeFromVBA]  專案加入 [方案總管] 。  
   
@@ -184,7 +185,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在 [擷取介面]  對話方塊的 [選取 Public 成員以形成介面]  方塊中，按一下 `CreateVstoNamedRange` 方法的項目。  
   
-4.  按一下 [ **確定**]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會產生名稱為 `ISheet1`的新介面，而且會修改 `Sheet1` 類別的定義，以便實作 `ISheet1` 介面。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會在 [程式碼編輯器] 中開啟 **ISheet1.cs** 檔案。  
   
@@ -250,7 +251,7 @@ ms.lasthandoff: 10/31/2017
   
 -   從 VBA 呼叫 VSTO 增益集中的程式碼。 如需詳細資訊，請參閱[逐步解說： 在 VSTO 增益集從 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   

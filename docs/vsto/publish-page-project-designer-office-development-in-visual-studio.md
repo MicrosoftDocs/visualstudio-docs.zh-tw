@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ce726d9d86bd57e5cf245010212545f0055c8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>專案設計工具、發行頁 (Visual Studio 中的 Office 程式開發)
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置 (網站、FTP 伺服器或檔案路徑)**  
- 必要項。  
+ 必要。  
   
  發行資料夾位置是 Visual Studio 從組建複製資訊清單、組件及其他檔案等方案檔的目的地目錄。 您必須具有這個目錄的寫入權限。  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  根據預設，如果您已安裝 IIS，發行位置為 *http://localhost/projectname/* ；如果未安裝 IIS，則為 publish\ 目錄。  
   
  **安裝資料夾 URL**  
- 選擇項。  
+ 選擇性。  
   
  安裝資料夾 URL 是使用者將從中安裝自訂的目錄。 它也是方案將會用來檢查更新的路徑。 路徑可以與發行資料夾位置相同，但這並非必要條件。  
   
@@ -106,12 +107,12 @@ ms.lasthandoff: 10/31/2017
  設定自訂的版本號碼。 當版本號碼變更時，應用程式會以更新的形式發行。 在建置程序期間，會針對每個版本建立新的資料夾，以避免覆寫先前發行的版本。 發行版本的每個部分 (**主要**、 **次要**、 **組建**、 **修訂**) 最多可包含 5 個數字。  
   
  **隨著每次發行自動遞增修訂**  
- 選擇項。 選取時 (預設)，每次發行一次自訂，版本號碼的 **修訂** 部分都會加一。 這會使得自訂以更新的形式發行。  
+ 選擇性。 選取時 (預設)，每次發行一次自訂，版本號碼的 **修訂** 部分都會加一。 這會使得自訂以更新的形式發行。  
   
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈]  中的 [完成] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Office 方案的部署必要條件](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  

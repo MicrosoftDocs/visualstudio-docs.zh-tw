@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 方案中的晚期繫結
   Office 應用程式的物件模型中的某些類型提供功能，可透過晚期繫結功能。 例如，一些方法和屬性可以傳回不同類型的物件，視 Office 應用程式的內容而定，而某些型別可以公開不同的方法或在不同內容中的屬性。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [使用動態類型 &#40;& #35。程式設計手冊 &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a6999a7a390c207c184f26d36e0ca5d64d5fef5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38b88dac0760c1935961bab662302dd60bc26e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight Web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是服務所實作的 RESTful ListData.svc。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會使用 ListData.svc 顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱[SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)和[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -232,7 +233,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  存取資料時在 Silverlight 中跨網域，Silverlight 會防範可用來利用 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務提供跨網域界限](http://go.microsoft.com/fwlink/?LinkId=223276)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [部署、發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   

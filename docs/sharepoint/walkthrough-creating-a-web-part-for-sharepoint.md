@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3293382ffc0c36fb78bb115d0f38c311278a7151
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a580d662c09e0f8a73deca2c4e0cea7cea6650c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint 的 Web 組件
   Web 組件可讓使用者直接使用瀏覽器中修改內容、 外觀和行為的 SharePoint 網站頁面。 本逐步解說會示範如何建立使用 Web 組件**Web 組件**Visual Studio 2010 中的項目範本。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 -   在 SharePoint 中測試 Web 組件。  
   
     > [!NOTE]  
-    >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+    >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -226,7 +227,7 @@ ms.lasthandoff: 10/31/2017
   
      所有員工會都出現在 Web 組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [如何： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   

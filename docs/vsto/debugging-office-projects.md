@@ -22,11 +22,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 110d6231da40ab59c3979b97441b3ac0ad458b3e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ab8d3f8f815ac2b86f58fdf14051c8032bbb5cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-office-projects"></a>偵錯 Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 當您偵錯 Office 專案時，也可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能，例如可以插入中斷點，以及在 [區域變數]  視窗中檢視變數。 如需 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具的詳細資訊，請參閱 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  若要將錯誤寫入記錄檔，請建立名為 `VSTO_LOGALERTS` 的環境變數，並將其設定為 1 (一)。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在包含 VSTO 增益集之部署資訊清單的資料夾中，或在包含與自訂關聯之文件或活頁簿的資料夾中，建立記錄檔。 如果失敗， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在本機 %TEMP% 資料夾中建立記錄檔。 若是應用程式層級 VSTO 增益集，預設名稱為 *增益集名稱*.vsto.log。 若是文件層級專案，記錄檔的名稱為 *文件名稱*.*副檔名*.log，例如 ExcelWorkbook1.xlsx.log。 若要停止記錄錯誤，請刪除環境變數或將其設定為 0 (零)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [如何： 重新啟用已停用的 VSTO 增益集](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

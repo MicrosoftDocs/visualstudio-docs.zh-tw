@@ -31,11 +31,12 @@ caps.latest.revision: "92"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61fe29fca2feb0f19e613af62f4d9407b8d8bbff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e091564ce02f55904e69d1abd9e240534a6dd8c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office Runtime 概觀
   若要在 Visual Studio 中執行使用 Microsoft Office 開發人員工具所建立的方案，則必須先在使用者電腦上安裝 Visual Studio 2010 Tools for Office Runtime。 如需詳細資訊，請參閱 [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office Runtime 包含兩個主要元件：  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="repairing-the-visual-studio-2010-tools-for-office-runtime"></a>準備 Visual Studio 2010 Tools for Office Runtime  
  如果您需要修復此執行階段，請在 [控制台] 開啟 [程式和功能]  或 [新增或移除程式]  ，選取程式清單中的 [Microsoft Visual Studio 2010 Tools for Office Runtime]  ，然後按一下 [解除安裝] 。 執行的安裝程式可讓您修復此執行階段。 如果您按一下 [ **變更**]，則系統不會提供修復執行階段的選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [中的 Visual Studio Tools for Office Runtime 的組件](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   

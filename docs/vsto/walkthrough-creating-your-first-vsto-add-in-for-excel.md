@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d22d5b80186bf3117980cd8059ac9431bac5522
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0009e47f068cbc6b1bfead6fabee1d95a63422d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>逐步解說：建立 Excel 的第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的應用程式層級增益集。 不論開啟哪一份活頁簿，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -92,9 +93,9 @@ ms.lasthandoff: 10/31/2017
   
  若要在儲存活頁簿時修改活頁簿，前面的程式碼範例可以使用下列物件：  
   
--   `ThisAddIn` 類別的 `Application` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Excel.Application> 物件，此物件代表 Excel 目前的執行個體。  
+-   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Excel.Application> 物件，此物件代表 Excel 目前的執行個體。  
   
--   <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式的 `Wb` 參數。 `Wb` 參數是 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，此物件代表儲存的活頁簿。 如需詳細資訊，請參閱 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
+-   <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式的 `Wb` 參數。 `Wb` 參數是 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，此物件代表儲存的活頁簿。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/excel-object-model-overview.md)。  
   
 ## <a name="testing-the-project"></a>測試專案  
   
@@ -134,7 +135,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Excel VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 方案](../vsto/excel-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   

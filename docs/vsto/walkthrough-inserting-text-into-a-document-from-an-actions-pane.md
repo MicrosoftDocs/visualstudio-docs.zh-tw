@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入文件
   本逐步解說示範如何在 Microsoft Office Word 文件中建立執行窗格。 [動作] 窗格包含收集輸入，然後將文字傳送至文件的兩個控制項。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 -   應用程式開啟時顯示 [動作] 窗格。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立 Word 文件專案名稱**我基本的 [動作] 窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      **2008 年 3 月 21日日**  
   
-     **Name**  
+     **名稱**  
   
      **地址**  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**名稱**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  新增第二個**標籤**控制項加入執行窗格控制項，並變更**文字**屬性**位址**。  
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
+    |**名稱**|**getAddress**|  
     |**接受傳回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  
@@ -133,7 +134,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**addText**|  
+    |**名稱**|**addText**|  
     |**Text**|**插入**|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>加入程式碼，將文字插入文件  
@@ -183,7 +184,7 @@ ms.lasthandoff: 10/31/2017
   
 -   資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱[逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [如何： 將執行窗格加入至 Excel 活頁簿](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   

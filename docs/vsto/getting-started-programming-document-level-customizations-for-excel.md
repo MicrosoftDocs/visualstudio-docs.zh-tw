@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Excel 文件層級自訂的程式設計入門
   如果您剛開始使用 Visual Studio 建立 Microsoft Office excel 的文件層級自訂，以下是您需要知道。  
@@ -67,13 +68,13 @@ ms.lasthandoff: 10/31/2017
   
  如需引導您完成一些 Excel 專案中的一般工作的主題，請參閱[Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [Excel 方案](../vsto/excel-solutions.md)   
  [逐步解說： 建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

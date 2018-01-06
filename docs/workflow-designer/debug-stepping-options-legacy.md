@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: fbdb0d481c0740310f40f6a75d8c84db765f847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b93226b7223272c04b7d2e6b36b82cf737cd1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-stepping-options-legacy"></a>偵錯逐步執行選項 (舊版)
 本主題描述如何偵錯在舊版 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 中擁有並行活動的 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 應用程式。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -36,6 +37,6 @@ ms.lasthandoff: 10/27/2017
   
  您在偵錯舊版狀態機器工作流程時，應選取執行個體逐步執行選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)   
  [如何：變更偵錯逐步執行選項 (舊版)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

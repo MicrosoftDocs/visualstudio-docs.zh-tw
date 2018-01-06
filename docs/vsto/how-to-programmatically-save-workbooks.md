@@ -19,11 +19,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be604d75183209ecdf068409e26007277cb6d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d0aa6421893c9d930f917e98fb8aa85b6ceb28d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以程式設計方式儲存活頁簿
   儲存活頁簿有好幾種方式。 您可以儲存活頁簿，而不變更路徑。 如果活頁簿先前沒有儲存過，則應該指定路徑來儲存活頁簿。 如果沒有明確指定路徑，Microsoft Office Excel 會將這個檔案以建立時指定的名稱儲存在目前的資料夾中。 您也可以儲存活頁簿的複本，而不修改記憶體中的已開啟活頁簿。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>穩固程式設計  
  以互動方式取消任何儲存或複製活頁簿的方法，都會在程式碼中引發執行階段錯誤。 例如，如果您的程序呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A>方法，但不停用的提示，Excel，而且使用者按一下**取消**出現提示時，Excel 就會引發執行階段錯誤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [Workbook 主項目](../vsto/workbook-host-item.md)   
  [如何： 以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   

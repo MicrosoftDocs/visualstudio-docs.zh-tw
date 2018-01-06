@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c8bdc3930e09dce6607df10f9d8db004f9a3f2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: de32c5de84bf915bf3e9de21171ec3ab1ad7aee7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPointsCollection` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoints` 項目。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
  `entryPointsCollection` 具有下列項目。  
   
 ### <a name="entrypoints"></a>entryPoints  
- 必要項。 角色`entryPoints`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 必要。 角色`entryPoints`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -179,7 +180,7 @@ ms.lasthandoff: 10/31/2017
     </vstav3:entryPointsCollection>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

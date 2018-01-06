@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee19d6fd6bd84f344a205b0e508abbede63cdebb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
   當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的文件： _AssemblyLocation 和 _AssemblyName。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以便啟動自訂。 如需詳細資訊，請參閱[Office 方案的架構在 Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  *方案識別碼已*是 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]用來識別解決方案。 *方案識別碼已*會建置專案時自動產生。 **Vstolocal**詞彙來表示[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]從相同的資料夾和文件應該在載入組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [應用程式和 Office 方案中的部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)   

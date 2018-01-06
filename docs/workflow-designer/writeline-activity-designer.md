@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 615cfb46222dfbf6e6b3cb1ba6741cde7c7bf708
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f531539737389938a7ff0a757235d8c5c2af263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活動設計工具
 **WriteLine**活動設計工具用來建立及設定<xref:System.Activities.Statements.WriteLine>活動。  
@@ -38,8 +39,8 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|要寫入的文字。 若要設定此屬性，輸入 Visual Basic 運算式**文字**方塊**WriteLine**活動設計工具，或在屬性方格中。|  
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> 從中寫入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 預設值為主控台。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [基本類型](../workflow-designer/primitives-activity-designers.md)   
  [指派](../workflow-designer/assign-activity-designer.md)   
  [延遲](../workflow-designer/delay-activity-designer.md)   
- [叫用方法](../workflow-designer/invokemethod-activity-designer.md)
+ [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

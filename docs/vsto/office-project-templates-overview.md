@@ -35,11 +35,12 @@ caps.latest.revision: "68"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6066e5adbe4519011f56a4d88ecfcc834eb7788c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d62ccb1e842621a129a4749ae2727c10c0da970a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：  
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="excel-add-ins-xla-files"></a>Excel 增益集 (.xla 檔)  
  目前沒有可建立 Excel VSTO 增益集 (.xla 檔案) 的 Office 專案。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果將具有 managed 程式碼擴充，為活頁簿**Microsoft Office Excel 增益集 (\*.xla)**檔案中，您可以選取在**增益集**套用至另一個活頁簿的對話方塊。 在某些情況下，套用 VSTO 增益集以後，程式碼會在目標活頁簿中執行，但是目前並不支援這樣使用 Office 方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   

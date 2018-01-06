@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項限制
   有一些 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中，加入 Windows Form 控制項和 Windows Form 控制項加入至 Windows Form 之間的差異。 例如，當您將加入<xref:Microsoft.Office.Tools.Word.Controls.Button>這類控制項加入文件中，屬性<xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>， <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>，和<xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A>未如您預期運作。  
@@ -193,7 +194,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="support-for-legacy-activex-controls"></a>支援的舊版 ActiveX 控制項  
  如果您建立使用現有的 Word 文件或包含 ActiveX 控制項的 Excel 活頁簿的文件層級 Office 專案時，ActiveX 控制項的功能不會遺失。不過，沒有您從 Visual Studio 中的文件中加入新的 ActiveX 控制項的支援。 例如，如果您的 Word 文件有一個按鈕，從**控制項**工具箱 中執行 Visual Basic for Applications (VBA) 巨集，它會繼續已在 Office 專案中使用文件之後，執行巨集。 不過，建議您移除 ActiveX 控制項和 VBA 巨集和取代 Windows Form 控制項和 managed 程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

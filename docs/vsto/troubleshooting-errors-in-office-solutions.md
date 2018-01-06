@@ -24,11 +24,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dd06ed6fde181760a1c4893b523bd7ef9c8dcc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e74b2daab5d9a8f5840b9109edd871e311bc4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office 方案的錯誤疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：  
@@ -216,7 +217,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  不論您按一下**是**或**否**在對話方塊中，Visual Studio 終止 Excel 或 Word 處理序，並停止偵錯工具。 若要停止專案偵錯而不顯示此對話方塊，請直接結束 Excel 或 Word，而不是在 Visual Studio 中停止偵錯工具。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 方案疑難排解](../vsto/troubleshooting-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  

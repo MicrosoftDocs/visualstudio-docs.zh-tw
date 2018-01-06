@@ -27,11 +27,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc29b307f6459e3a5841ae1dd1c60ae9ab9ed152
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本和使用方式。 
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="list"></a>清單  
  清單是可重複使用基底 SharePoint 清單定義，例如行事曆或工作清單中的執行個體。 將清單加入至您的方案之後, 清單設計工具可讓您將網站資料行加入至清單，並建立自訂清單的資料行。 這包括站台內容類型的資料行。 您可以指定*檢視*針對清單中，以決定將會出現在清單中的資料行。 如需詳細資訊，請參閱[逐步解說： 建立網站資料行、 內容類型，以及 sharepoint 清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)和[建置組塊： 清單和文件庫](http://go.microsoft.com/fwlink/?LinkId=179421)。  
   
-### <a name="module"></a>模組  
+### <a name="module"></a>Module  
  *模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 包含您想要部署到 SharePoint 伺服器，例如影像或資訊的任何檔案。 模組專案項目包含**模組**節點。 [模組] 節點包含兩個專案項目範本： XML 定義檔，做為模組資訊清單，以及 sample.txt 檔案預留位置檔案。 如需詳細資訊，請參閱[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)和[模組](http://go.microsoft.com/fwlink/?LinkId=179425)。  
   
 ### <a name="sequential-workflow-farm-solution-only"></a>循序工作流程 （僅限陣列方案）  
@@ -146,7 +147,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="web-part"></a>網頁組件  
  A *web 組件*是一種特殊的頁面稱為網頁組件內執行的伺服器端控制項。 它們會出現在 SharePoint 網站的頁面的建置組塊。 Web 組件項目會提供可讓您設計的 SharePoint 網站的 web 組件的檔案。 如需詳細資訊，請參閱[How to： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [SharePoint 產品與技術](http://go.microsoft.com/fwlink/?LinkId=178818)  
   

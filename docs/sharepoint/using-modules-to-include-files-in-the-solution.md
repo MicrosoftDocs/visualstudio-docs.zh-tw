@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 484ae234839876922b6c04767d67ed56f85a108d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>使用模組來包含方案中的檔案
   有時候可能何時您可能想要將檔案部署到 SharePoint 伺服器，不論他們的檔案類型，例如新的主版頁面。 若要這樣做，您可以使用*模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]程式碼模組)。 模組是 SharePoint 方案中檔案的容器。 部署方案時，此模組中的檔案會複製到 SharePoint 伺服器上指定的資料夾。  
@@ -52,15 +53,15 @@ ms.lasthandoff: 10/31/2017
   
  Elements.xml 檔案包含下列元素：  
   
-|項目名稱|描述|  
+|元素名稱|描述|  
 |------------------|-----------------|  
 |項目|包含所有模組中定義的項目。|  
-|模組|模組項目具有單一屬性*名稱*，指定模組的名稱格式`<Module Name="Module1">`。<br /><br /> 請注意，如果您變更模組的名稱 (或其*資料夾名稱*屬性)，您必須手動更新的模組項目中的名稱。<br /><br /> 如果您指定檔案的子目錄中的模組項目， [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) 會自動為其建立的比對目錄結構。|  
+|Module|模組項目具有單一屬性*名稱*，指定模組的名稱格式`<Module Name="Module1">`。<br /><br /> 請注意，如果您變更模組的名稱 (或其*資料夾名稱*屬性)，您必須手動更新的模組項目中的名稱。<br /><br /> 如果您指定檔案的子目錄中的模組項目， [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) 會自動為其建立的比對目錄結構。|  
 |檔案|檔案項目具有兩個參數，*路徑*和*Url*。<br /><br /> 路徑： 的名稱和位置的 SharePoint 方案中的檔案。 格式為， `Path="Module1\Sample.txt"`。<br /><br /> -Url： 檔案的 SharePoint 伺服器的部署所在的位置。 格式為， `Url="Module1/Sample.txt"`。<br /><br /> 型別： 選擇性屬性，有兩種設定： *GhostableInLibrary*和*Ghostable*。 格式為， `Type="GhostableInLibrary"`。 指定*GhostableInLibrary*表示的檔案會加入至 SharePoint 的文件庫與清單項目加入至程式庫時，伴隨著檔案。 指定*Ghostable*會導致要加入至 SharePoint 文件庫之外的檔案。|  
   
  您想要部署的每個檔案都需要個別的`<File>`Elements.xml 中的項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 使用模組中包含的檔案](../sharepoint/how-to-include-files-by-using-a-module.md)   
  [如何： 佈建檔案](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   

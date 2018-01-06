@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0a3b7c7cf56aa465f88ae918056e2d71ad6c41e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e114f95baf771d8138fd155cf79f6e0ddbf14485
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活動設計工具
 **TerminateWorkflow**活動設計工具用來建立及設定<xref:System.Activities.Statements.TerminateWorkflow>活動。  
@@ -38,6 +39,6 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|當工作流程終止時所要擲回的例外狀況。 請在屬性方格中設定這個屬性。|  
 |<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|說明工作流程終止的原因。 請在屬性方格中設定這個屬性。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行階段](../workflow-designer/runtime-activity-designers.md)   
  [保存](../workflow-designer/persist-activity-designer.md)

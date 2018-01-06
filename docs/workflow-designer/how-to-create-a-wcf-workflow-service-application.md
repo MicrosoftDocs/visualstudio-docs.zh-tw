@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 62eeab72ab88094f7986bb29bd6f3a55ad6aeff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8730b8f1611694ec7927b52fa4118cf3ca3801b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>HOW TO：建立 WCF 工作流程服務應用程式
 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 工作流程服務應用程式是分散式通訊服務，可在用戶端與服務本身之間傳遞訊息，並跨越處理序界限。 服務端的服務合約實作是採用類似 .NET Framework 3.5 舊版工作流程服務的方式，透過 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 中的工作流程活動來宣告完成。  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/27/2017
   
 8.  專案範本會以 XAML 格式建立服務定義。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 會開啟設計檢視，其中有包含一組 <xref:System.Activities.Statements.Sequence> 和 <xref:System.ServiceModel.Activities.Receive> 活動的 <xref:System.ServiceModel.Activities.SendReply> 活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立活動](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

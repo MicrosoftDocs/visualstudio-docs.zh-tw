@@ -19,11 +19,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3346b5cf096c523c9eb2c066d87a85e0d57efd94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d65b97fa42be6f8c89a2cfd963ce7ad1212b6dc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域將表單區域與每個項目的訊息類別產生關聯。 例如，如果您想要的郵件項目底部附加表單區域，您就可以與 IPM 關聯表單區域。請注意訊息類別。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  Visual Studio 不會驗證您提供的訊息類別名稱正確，或為有效。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   

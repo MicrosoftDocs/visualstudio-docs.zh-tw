@@ -35,11 +35,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12ae527d52e3dad3c60d561ba3bd5fa1171ac48b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
   當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
@@ -80,13 +81,13 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示如果您建立的使用者控制項會在使用者控制項類別中使用 `Globals` 類別的某個屬性，您必須先檢查該屬性是否傳回 **null** ，再嘗試使用傳回的物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Document 主項目](../vsto/document-host-item.md)   
  [Workbook 主項目](../vsto/workbook-host-item.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48995b4a40d4e67b0c0e2e44d66545c4c90dd26b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3eeabc3d271e02b83530ffd15ff2e951defcc589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `document`元素`vstov4`命名空間儲存文件層級自訂的自訂特定資訊。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`solutionId`|必要項。 由 Visual Studio Tools for Office runtime 用來唯一識別文件層級方案的 GUID。 這個值會儲存為 _AssemblyLocation 自訂文件屬性。 如需詳細資訊，請參閱 [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md)。|  
+|`solutionId`|必要。 由 Visual Studio Tools for Office runtime 用來唯一識別文件層級方案的 GUID。 這個值會儲存為 _AssemblyLocation 自訂文件屬性。 如需詳細資訊，請參閱 [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md)。|  
   
  `document`沒有任何子項目。  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   solutionId="73e" />  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

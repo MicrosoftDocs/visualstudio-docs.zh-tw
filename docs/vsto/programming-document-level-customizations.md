@@ -32,11 +32,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68135e13a0e78e0250b087713ab459825018ff84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 68d0cfbc96b72208eee26f3cc75dd9a19d1b63fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-document-level-customizations"></a>文件層級自訂程式設計
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：  
@@ -117,7 +118,7 @@ Globals.ThisDocument.Save();
  如需有關`Globals`物件，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="adding-controls-to-documents"></a>將控制項加入文件  
- 若要自訂文件的 UI，您可以將 Windows Forms 控制項或 *「主控制項」* (host control) 加入文件介面。 藉由合併不同的控制項集合並撰寫程式碼，您可以將控制項繫結至資料、從使用者收集資訊，以及回應使用者動作。  
+ 若要自訂文件的 UI，您可以將 Windows Forms 控制項或 *「主控制項」* (host control) 加入文件介面。 藉由結合不同組的控制項並撰寫程式碼，您可以將控制項繫結至資料、從使用者收集資訊，以及回應使用者動作。  
   
  主控制項是一種會擴充 Word 和 Excel 物件模型中某些物件的類別。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject> 主控制項會提供 Excel 中 <xref:Microsoft.Office.Interop.Excel.ListObject> 的所有功能。 但是， <xref:Microsoft.Office.Tools.Excel.ListObject> 主控制項還多了一些事件和資料繫結功能。  
   
@@ -171,10 +172,10 @@ Globals.ThisDocument.Save();
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
  若要呼叫 HasVstoObject 和 GetVstoObject 方法時，使用的 Globals.Factory.GetVstoObject 或 Globals.Factory.HasVstoObject 方法並傳入原生 Word 或 Excel 物件 (例如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 您想要測試。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

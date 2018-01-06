@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5126e15daa8cbc22f4b64be0bb2bb2f3e0bb6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ef55a90b55314bf7ab2c5aa6259f09b62a350da3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面及包含影像的網站頁面
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面和網站頁面，其中包含影像變成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**選取要匯入項目**頁面的 **模組**中**類型**資料行中，選取核取方塊只將檔案匯入下表中。  
   
-    |檔案名稱|說明|  
+    |檔案名稱|描述|  
     |---------------|-----------------|  
     |_catalogsmasterpage\_|自訂主版頁面。|  
     |images_|SharePoint 檔案系統中影像檔。|  
@@ -180,7 +181,7 @@ ms.lasthandoff: 10/31/2017
   
  檔案匯入的替代方式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署到 SharePoint 會將檔案新增至模組中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][How to： 匯入的主版頁面或佈景主題](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  

@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e012b9f173e432cfee88beec7d861faaa7be03b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 197da04c42b97f274979e46a2ba4691747365362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>建立 Outlook 表單區域的方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
  **視窗** 圖示會出現在顯示取代型或全部取代型表單區域之開啟項目的通知區域和 ALT+TAB 對話方塊中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   

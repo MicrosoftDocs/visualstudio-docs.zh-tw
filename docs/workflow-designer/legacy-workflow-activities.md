@@ -15,18 +15,19 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8a5c35fb036c1d9a94bd42c5ceabe17ae65e7b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 756fa86cf892120b0062e2816f146425ac1b4fa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-workflow-activities"></a>舊版工作流程活動
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 包括一組預設的活動，這組活動提供許多功能，如控制流程、條件、事件處理、狀態管理，以及與應用程式和服務相互通訊。 設計工作流程時，您可以使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 系統提供的活動，或者建立自訂活動。  
   
  下表列出 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 架構全新的活動集。 然而，並非所有，這些活動都由活動設計工具可以從存取**工具箱**的[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 若要建立活動，其設計工具拖曳**工具箱**並將它放在設計介面上。  
   
-|活動|說明|  
+|活動|描述|  
 |--------------|-----------------|  
 |[CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65025)|搭配**HandleExternalEventActivity**活動與本機服務的輸入和輸出通訊。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][使用 CallExternalMethodActivity 活動](http://go.microsoft.com/fwlink?LinkID=65060)。|  
 |[CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)|用於包含清除邏輯，適用於複合活動的所有子系完成執行前即取消複合活動時。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][使用 CancellationHandlerActivity 活動](http://go.microsoft.com/fwlink?LinkID=65061)。|  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[crabout](../test/includes/crabout_md.md)]如何建立自訂活動，請參閱[開發的自訂活動](http://go.microsoft.com/fwlink?LinkID=65023)和[使用舊版活動設計工具](../workflow-designer/using-the-legacy-activity-designer.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [活動檢視 (舊版)](../workflow-designer/activity-views-legacy.md)  
  說明不同的活動設計檢視。  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/27/2017
  [如何： 叫用 WCF 合約作業 （舊版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  說明叫用 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 合約作業的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Workflow Foundation 活動](http://go.microsoft.com/fwlink?LinkID=65005)   
  [開發工作流程](http://go.microsoft.com/fwlink?LinkID=65010)   
  [開發工作流程活動](http://go.microsoft.com/fwlink?LinkID=65023)

@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>處理資料表
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理資料表，提供逐步程序和程式碼範例。 在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 |將資料列或資料行加入資料表。|[如何：以程式設計方式在 Word 表格中新增列和欄](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|  
 |將文字加入儲存格並加以格式化。|[如何：以程式設計方式在 Word 表格的儲存格中新增文字和格式](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   

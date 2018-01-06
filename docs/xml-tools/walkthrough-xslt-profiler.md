@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2680a8f42dc984897b3fba4913ea69dbc23333f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: be03e554bbdf55c447437116373cc60b15df391e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估並解決 XSLT 程式碼中與效能相關的問題。 XSLT 分析工具包含 XSL 和 XSLT 樣式表最佳化的實用提示。 就需要最大效能的 XSLT 應用程式而言，此工具是非常基本的。  
@@ -108,5 +109,5 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
   
 4.  處理序檢視會顯示包含表格**處理序識別碼**，**處理序名稱**，**開始時間**，而**結束時間**。 按一下資料行名稱即可排序資料。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)

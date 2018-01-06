@@ -11,11 +11,12 @@ ms.assetid: 96cfed7f-f090-4369-8a85-2dcd4c7cf12b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68f60b6159cad7f751dfc47a8af116ef33a164c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 663a5ed393502d24c8b677dd2776a87b9855540e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implement-an-abstract-class-in-visual-basic"></a>在 Visual Basic 中實作抽象類別
 **項目：**可讓您立即產生來實作抽象類別的程式碼。 
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 
    ![實作類別結果](media/abstract_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (Visual Basic)](../code-generation-vb.md)  
 [預覽變更](../../ide/preview-changes.md)

@@ -26,11 +26,12 @@ caps.latest.revision: "96"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97cac11c943b75f5bc74e5cb67c9810b9ba7032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: aca002dc7f9793dc379fb4e1a325342704e4d6c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
   
      如需有關如何將文件新增至信任位置的詳細資訊，請參閱 Microsoft Office Online 網站[建立、 移除或變更檔案的信任位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [Office 方案的共同開發](../vsto/collaborative-development-of-office-solutions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

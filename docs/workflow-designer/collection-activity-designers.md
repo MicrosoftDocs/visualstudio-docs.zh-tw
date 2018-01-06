@@ -11,16 +11,17 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a4ceae41bd2ec87c3d1784f52405b70f9d905e29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed466bd7a992d11bc804478eb3f7aa0ace3e3f90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collection-activity-designers"></a>Collection 活動設計工具
 Collection 活動設計工具用於建立及設定管理集合所需的活動。本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活動與範本設計工具的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)  
  用來建立及設定 <xref:System.Activities.Statements.AddToCollection%601> 活動。  
   

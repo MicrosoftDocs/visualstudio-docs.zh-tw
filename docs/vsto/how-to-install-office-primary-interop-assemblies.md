@@ -18,11 +18,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14ce408395cc992e83cb26aecbc2e4ab428428ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3368e3176badf8aa1bf1eebe6453674380de46f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安裝 Office 主要 Interop 組件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
     > [!WARNING]  
     >  根據預設，PIA 內嵌在您的方案中當您建置它，您不需要將 Pia 散發給使用者，以做為使用 VSTO 增益集或自訂的先決條件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [如何： 設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   

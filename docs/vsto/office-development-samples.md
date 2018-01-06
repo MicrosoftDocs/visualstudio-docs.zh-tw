@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Office 程式開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |UI 管理員範例|示範如何藉由實作 VSTO 增益集中的擴充性介面，來建立 Outlook 的功能區自訂、自訂工作窗格和自訂表單區域。 功能區、工作窗格和表單區域的每個執行個體可彼此正確通訊。|  
 |VBA 和 VSTO 互通性範例|示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Excel 文件層級自訂中的方法。<br /><br /> 這個範例僅於線上提供使用。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSDN 開發人員範例： 透過程式碼範例學習](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Office 程式設計中的常見工作](../vsto/common-tasks-in-office-programming.md)  
   

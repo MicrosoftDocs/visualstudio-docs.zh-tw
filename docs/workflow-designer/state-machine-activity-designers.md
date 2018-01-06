@@ -10,16 +10,17 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: ad07ac5eba9e8579ae08f5ba1b242f3bc5483a5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d4c8dbac90e3d1e3ec10314debf0a288ad48053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包括一些在建構工作流程時可以使用的活動設計工具。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [StateMachine](../workflow-designer/statemachine-activity-designer.md)  
  包含狀態和模型工作流程的集合，這些工作流程使用熟悉的狀態機器開發架構。  
   

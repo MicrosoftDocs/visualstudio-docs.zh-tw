@@ -23,11 +23,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 70c956981c9e211d16d39ac22f759b6a21e0bc5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 66b9c93c9a1c4bcf55b4efc5e95d5b6353f9bd68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-vsto-add-in-project"></a>建立 VSTO 增益集專案  
  第一步是建立 Excel 的 VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在 VSTO 增益集中自訂功能區。 如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)和[How to： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [在 VSTO 增益集中呼叫程式碼，從其他 Office 方案](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

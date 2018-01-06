@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說示範在 Microsoft Office Excel 工作表上使用選項按鈕，以讓使用者能夠快速切換選項之間的基本概念。 在此情況下，選項會變更圖表樣式。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   當選取選項時變更圖表樣式。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-a-new-project"></a>建立新專案  
  在此步驟中，您將建立根據的 Excel 活頁簿專案**ExcelChart**活頁簿。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立名稱的 Excel 活頁簿專案**我的 Excel 圖表**。 在精靈中，選取**複製現有文件**。  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  按一下**瀏覽**buttonand 瀏覽至您稍早在本逐步解說中建立的活頁簿。  
   
-3.  按一下 [確定]。  
+3.  按一下 [確定 **Deploying Office Solutions**]。  
   
      Visual Studio 設計工具中開啟新 Excel 活頁簿，並將**我的 Excel 圖表**專案加入**方案總管 中**。  
   
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**dataChart**|  
+    |**名稱**|**dataChart**|  
     |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>加入控制項  
@@ -138,28 +139,28 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**columnChart**|  
+    |**名稱**|**columnChart**|  
     |**Text**|**直條圖**|  
   
 3.  將第二個選項按鈕加入至使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**barChart**|  
+    |**名稱**|**barChart**|  
     |**Text**|**橫條圖**|  
   
 4.  將第三個選項按鈕加入至使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**lineChart**|  
+    |**名稱**|**lineChart**|  
     |**Text**|**折線圖**|  
   
 5.  將第四個按鈕加入至使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**areaBlockChart**|  
+    |**名稱**|**areaBlockChart**|  
     |**Text**|**區塊圖**|  
   
  接下來，撰寫程式碼來更新圖表，按一下選項按鈕時。  
@@ -253,7 +254,7 @@ ms.lasthandoff: 10/31/2017
   
 -   變更格式的工作表上使用核取方塊。 如需詳細資訊，請參閱[逐步解說： 變更工作表格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)  
   
   

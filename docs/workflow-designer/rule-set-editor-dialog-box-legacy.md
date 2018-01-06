@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6ac342921696cb2a88426e2fd1f1ddee79e9341c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**對話方塊中，在舊版[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -34,12 +35,12 @@ ms.lasthandoff: 10/27/2017
   
  下表描述的使用者介面 (UI) 項目**規則集編輯器** 對話方塊。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |----------------|-----------------|  
 |**新增規則**|將新的規則定義新增至規則集。|  
 |**刪除**|將選取的規則從規則集內刪除。|  
 |**鏈結**|指定規則集要使用哪種類型的向前鏈結。 可用的選項如下：<br /><br /> -   **完整鏈結**，其中指定要使用所有正向鏈結的機制： 隱含的方法屬性設定，並明確使用**更新**函式。<br />-   **循序**，指定不使用任何向前鏈結。<br />-   **僅明確更新**，指定只有上執行向前鏈結**更新**動作。<br /><br /> 如需向前鏈結的詳細資訊，請參閱[使用 PolicyActivity 活動](http://go.microsoft.com/fwlink?LinkID=65004)。|  
-|**Name**|規則集清單資料行標題。 按一下會按照名稱排序規則清單。|  
+|**名稱**|規則集清單資料行標題。 按一下會按照名稱排序規則清單。|  
 |**優先順序**|規則集清單資料行標題。 按一下會按照優先權排序規則清單。|  
 |**重新評估**|規則集清單資料行標題。 按一下會按照重新評估類型排序規則清單。|  
 |**規則預覽**|規則集清單資料行標題。 按一下會按照規則的條件和動作預覽排序規則清單。|  
@@ -89,7 +90,7 @@ Update("this/Address/State")
   
  如需有關使用**更新**與向前鏈結，請參閱[使用 PolicyActivity 活動](http://go.microsoft.com/fwlink?LinkID=65004)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
  [選取規則集對話方塊 （舊版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
  [使用 PolicyActivity 活動](http://go.microsoft.com/fwlink?LinkID=65004)   

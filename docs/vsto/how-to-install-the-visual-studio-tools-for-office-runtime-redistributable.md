@@ -18,11 +18,12 @@ caps.latest.revision: "94"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d3439a98a445761a8d357d9b4bef631da034943
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cdd4ab2331bb6e21c126f10258db2e233a533f9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安裝 Visual Studio Tools for Office Runtime 可轉散發套件
   執行使用中的 Microsoft Office developer tools 建立的方案，每一部電腦上必須安裝 Visual Studio 2010 Tools for Office Runtime [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 當您安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 時，此執行階段會自動安裝。 如需詳細資訊，請參閱 [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包含語言套件。 如果您的 Windows 安裝設定為英文以外的語言，您可以使用在 Windows 上的相同語言顯示執行階段訊息。 同樣地，如果使用者安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然後在安裝設定為英文以外之語言的 Windows 上執行您的方案，則執行階段訊息會以和 Windows 使用的相同語言顯示。 在某些情況下，您可能需要額外的語言套件。 例如，您可能需要其他語言套件，如果您的 Windows 版本會使用一個以上的語言設定，或在安裝後，您切換到另一種語言[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 您可以找到語言套件時[Microsoft Visual Studio 2010 Tools for Microsoft Office System (4.0 版 Runtime) 語言套件](http://go.microsoft.com/fwlink/?LinkId=140386)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [如何： 設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   

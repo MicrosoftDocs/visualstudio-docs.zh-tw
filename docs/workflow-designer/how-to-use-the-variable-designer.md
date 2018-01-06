@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 064080a2446858123dd7b259dd5d2752f4253a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c9bf63222f16e29044a9a07078096b765421fbb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-variable-designer"></a>HOW TO：使用變數設計工具
 變數設計工具適用於建立變數，以用於資料繫結的狀況以及條件陳述式。 按一下即可存取設計工具**變數**設計畫布左下角的按鈕。 設計工具會包含一份表格顯示並可依每個資料行標頭，除了變數**預設**資料行。 每個變數都會包含名稱、變數型別、範圍與預設值 (如果有的話)。 名稱和預設值都是可編輯的文字欄位，而型別和範圍都可從下拉式清單中選取。 範圍是叫用變數設計工具時選取的活動。 如果無法在選取範圍內建立變數，則範圍會預設為離選取最近的祖系活動，以便在其範圍內建立變數。 [!包含[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
     > [!NOTE]
     >  若要刪除變數，按一下以選取變數，並按一下**刪除**索引鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)   
  [變數和引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)   
  [如何：使用引數設計工具](../workflow-designer/how-to-use-the-argument-designer.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a432dabb09f3242ff3ba73527b86aac45e609588
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>HOW TO：從 XML 編輯器執行 XSLT 轉換
 XML 編輯器可讓您將 XSLT 樣式表與 XML 文件相關聯、執行轉換，以及檢閱輸出。 XSLT 轉換的結果輸出會顯示在新文件視窗中。  
@@ -65,5 +66,5 @@ XML 編輯器可讓您將 XSLT 樣式表與 XML 文件相關聯、執行轉換�
   
      XSLT 轉換結果的輸出會顯示在新的文件視窗和 [輸出] 視窗中使用的編輯器取決於檔案的副檔名您**輸出**文件屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

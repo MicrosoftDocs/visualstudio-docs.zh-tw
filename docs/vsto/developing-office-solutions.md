@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。  
@@ -58,12 +59,12 @@ ms.lasthandoff: 10/31/2017
 |[Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)|提供文件層級自訂和相關程式設計工作的程式設計模型概觀。|  
 |[Office UI 自訂](../vsto/office-ui-customization.md)|描述可以使用 VSTO 增益集和文件層級自訂，以不同方式自訂 Office 應用程式 UI。|  
 |[Office 方案的資料](../vsto/data-in-office-solutions.md)|描述您可以不同方式使用 Office 方案中的資料，例如將資料繫結至控制項和快取文件層級自訂中的資料。|  
-|[自動儲存有何影響 Office 方案](./how-autosave-impacts-office-solutions.md)|描述您可能需要將 Office 方案時已啟用 調整。|
+|[自動儲存如何影響 Office 方案](./how-autosave-impacts-office-solutions.md)|描述您可能需要將 Office 方案時已啟用 調整。|
 |[針對 Office 方案進行疑難排解](../vsto/troubleshooting-office-solutions.md)|提供建立 Office 方案時可能遇到之常見問題的解決提示。|  
 |[Office 中的執行緒支援](../vsto/threading-support-in-office.md)|提供在 Office 方案中使用多個執行緒的概觀。|  
 |[Office 專案中的協助工具](../vsto/accessibility-in-office-projects.md)|描述在 Office 方案中可用的協助工具功能。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
  [如何： 讀取和寫入文件屬性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
  [如何： 為目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   

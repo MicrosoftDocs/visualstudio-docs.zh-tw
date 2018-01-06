@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3690f3e8459821e0a927a351ee28f901b318deab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio 中提供的其他語言編輯器。 本節說明如何使用 IntelliSense (XSLT) 搭配 XML 結構定義語言 (XSD) 與 XSLT 文件。  
@@ -118,7 +119,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 3.  若要變更任何**自動插入**區段，然後按一下**確定**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   
  [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

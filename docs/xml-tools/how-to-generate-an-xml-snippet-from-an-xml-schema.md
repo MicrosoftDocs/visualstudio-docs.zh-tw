@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1090d1509152aaa507220d3119977bb8e9252876
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案且定位在項目名稱旁邊時，可以按 TAB 鍵，將從該項目之結構描述資訊產生的 XML 資料填入項目。  
@@ -67,7 +68,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 5.  選取結構描述檔案，然後按一下**開啟**。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
      XML 結構描述現在已與 XML 文件相關聯。  
   
@@ -153,6 +154,6 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 </Contact>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 片段](../xml-tools/xml-snippets.md)   
  [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)

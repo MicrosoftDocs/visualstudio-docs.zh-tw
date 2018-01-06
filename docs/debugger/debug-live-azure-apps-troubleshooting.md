@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照集，則在 Visual Studio 中偵錯的疑難排解和已知問題
 
@@ -68,10 +69,10 @@ ms.lasthandoff: 11/22/2017
 - 目前不支援對相同的應用程式服務的多個 Visual Studio 用戶端使用的快照集進行偵錯。
 - Roslyn IL 最佳化不完全支援在 ASP.NET Core 專案。 對於某些 ASP.NET Core 專案，您可能無法看到部分變數，或在條件陳述式中使用一些變數。 
 - 特殊變數，例如*$FUNCTION*或*$CALLER*，無法評估在條件陳述式或 logpoints ASP.NET Core 專案。
-- 偵錯快照集不會對此應用程式服務具有[本機快取](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache)開啟。
+- 偵錯快照集不會對此應用程式服務具有[本機快取](/azure/app-service/app-service-local-cache)開啟。
 - 目前不支援偵錯應用程式開發介面應用程式的快照集。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [偵錯即時使用快照集偵錯工具的 ASP.NET 應用程式](../debugger/debug-live-azure-applications.md)  

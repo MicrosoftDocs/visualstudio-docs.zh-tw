@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa74884edc5f0dea16d95fc5f177323da1fab6ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3cf5c9d448d7e637344ee3dd5741871f5c177fdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 對於在 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 中處理資料的方式，XML 及其相關技術扮演很重要的角色。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/02/2017
 > [!NOTE]
 >  XSLT 偵錯在 Professional 版及 Team 版中可用。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [XML 編輯器](../xml-tools/xml-editor.md)  
  簡介 XML 編輯器。  
   
@@ -67,5 +68,5 @@ ms.lasthandoff: 11/02/2017
  [Managed 程式碼中的 XML Web Service](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  討論如何建立及部署 XML Web 服務，以及如何存取 XML Web 服務。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

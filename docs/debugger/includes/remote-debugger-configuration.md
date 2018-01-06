@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 05a288a2d8dff776d8a5d3faea47b06d101f2ea3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/03/2018
 ---
 您必須在遠端電腦上擁有管理權限。  
   
@@ -43,4 +43,4 @@ ms.lasthandoff: 10/27/2017
   
  當您完成偵錯，必須先停止遠端偵錯工具時，按一下 **檔案 > 結束**視窗上。 您可以重新啟動從**啟動**功能表或從命令列：  
   
- **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具\\< x86、 x64 或 Appx\msvsmon.exe**。  
+ **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具\\< x86、 x64 或 Appx > \msvsmon.exe**。  

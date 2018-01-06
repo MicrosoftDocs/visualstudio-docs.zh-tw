@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。  
@@ -112,7 +113,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   
  $prefix$ 變數即可在 XML 片段中的其他位置使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 片段](../xml-tools/xml-snippets.md)   
  [如何： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)   
  [如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 979f3aa0d138d1e66248ffc51b4f4cc72d62adf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-worksheets"></a>使用工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類別包含您用來執行工作表工作的方法和屬性。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [使用範圍](../vsto/working-with-ranges.md)   

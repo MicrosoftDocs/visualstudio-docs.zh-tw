@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發概觀 (VSTO)
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  如需在 VSTO Office 方案中使用 PIA 的詳細資訊，請參閱下列主題：  
   
--   [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+-   [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
 -   [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="security"></a>安全性  
  VSTO Office 方案的安全性是透過 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在安裝和載入方案時進行的一系列檢查來強制執行。 這些檢查包括確認是否信任部署資訊清單的位置，或是否信任用於簽署部署資訊清單的憑證。 如需詳細資訊，請參閱 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   

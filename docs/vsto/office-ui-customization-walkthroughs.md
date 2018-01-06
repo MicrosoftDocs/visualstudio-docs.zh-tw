@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed22d8b5fced2f423d6c6f1af764ba3ccf07a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4ae3cc188c08088321ede661cef36cd8102e8fb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 自訂逐步解說
   下列逐步解說示範使用文件層級自訂和 VSTO 增益集來自訂 Microsoft Office 應用程式使用者介面 (UI) 的方法。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
  [逐步解說：使用選項按鈕更新工作表中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  說明在 Excel 工作表上使用選項按鈕變更圖表樣式的基本概念。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office 方案逐步解說中的資料](../vsto/data-in-office-solutions-walkthroughs.md)   

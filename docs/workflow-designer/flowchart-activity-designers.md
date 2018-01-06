@@ -11,16 +11,17 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: daffde4567ebe1134277147afe35ae501a57cdb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a0d158311b82a799cbdf7e7d9c0093f588208a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart 活動設計工具
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包括幾項系統提供的活動，在您建構工作流程時，可以使用這些活動。 本節包含用來管理工作流程中之流程圖的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [流程圖](../workflow-designer/flowchart-activity-designer.md)  
  **用來建立工作流程定義和管理複雜的流程控制。**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)  
  根據是否滿足指定條件來提供控制流程的二選一分支。  

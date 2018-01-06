@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 581ef7bafc075419df8e2dfb1731b334a9564455
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d42476d7298025fb18a703f027a2a870faf204a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `postAction` 命名空間的 `vstav3` 項目包含 `entrypoint` 項目和所有 `postActionData` 項目，這些項目與安裝 Office 方案後執行的部署後動作相關。  
@@ -42,15 +43,15 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `postAction` 項目是選擇項，且位於 `vstav3` 命名空間。 在應用程式資訊清單中，會為每個部署後動作定義一個 `postAction` 項目。  
   
- `postAction` 項目沒有任何屬性。  
+ `postAction`項目沒有任何屬性。  
   
  `postAction` 具有下列項目。  
   
 ### <a name="entrypoint"></a>entrypoint  
- 選擇項。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 選擇性。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postActionData  
- 選擇項。 角色`postActionData`中的項目`vstav3`命名空間中定義[&#60; postActionData &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ 選擇性。 角色`postActionData`中的項目`vstav3`命名空間中定義[&#60; postActionData &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>部署後動作範例  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:postAction>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

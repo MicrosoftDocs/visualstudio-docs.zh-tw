@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f747a6fd05d19d56ce94f368cb89a18ff83a8b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8832852f8b27b1ea3b2bd97abc271a2afc076743
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-file-relationships"></a>範例 XSD 檔：關聯性
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是附帶註釋和文件的採購單結構描述。  

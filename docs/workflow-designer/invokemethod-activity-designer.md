@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d84873c1d4755b4eea723345f52d71064ecb9ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1fe242e3e4fd2a885373d776f79f50071fa83c1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 **InvokeMethod**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeMethod>活動。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
   
  這個限制不適用於 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 和 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>，因為它們並非工作流程引數，因此並未登錄於 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 方法中 <xref:System.Activities.Statements.InvokeMethod> 活動的 <xref:System.Activities.Activity.CacheMetadata%2A> 集合。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [基本類型](../workflow-designer/primitives-activity-designers.md)   
  [指派](../workflow-designer/assign-activity-designer.md)   
  [延遲](../workflow-designer/delay-activity-designer.md)   

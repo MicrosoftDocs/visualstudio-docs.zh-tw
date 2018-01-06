@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1b8a1e19d69b1cfd2f88551556820f94e64c06a
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="schema-cache"></a>結構描述快取
 XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。  
@@ -127,5 +128,5 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
   
      目錄會自動重新載入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

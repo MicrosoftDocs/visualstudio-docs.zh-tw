@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1733ac8333675975bb5d4b42dce9df3c01e5ac0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `update`項目會指定的方案會檢查更新的間隔。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`enabled`|必要項。 將 enabled 設定為下列值之一：<br /><br /> -   **true**檢查更新。<br />-   **false**以防止 檢查更新。|  
+|`enabled`|必要。 將 enabled 設定為下列值之一：<br /><br /> -   **true**檢查更新。<br />-   **false**以防止 檢查更新。|  
   
  `update`項目具有下列子元素。  
   
@@ -56,10 +57,10 @@ ms.lasthandoff: 10/31/2017
   
  `expiration`元素都具有下列屬性。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`maximumAge`|-必要。 將其設定為整數。|  
-|`unit`|必要項。 設定`unit`至下列值之一：<br /><br /> -   **小時**<br />-   **天**<br />-   **週**|  
+|`unit`|必要。 設定`unit`至下列值之一：<br /><br /> -   **小時**<br />-   **天**<br />-   **週**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:update>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   

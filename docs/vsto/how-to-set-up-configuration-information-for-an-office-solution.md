@@ -18,11 +18,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8c2e0a904ad3cdbef3e70072d263cc26274de52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7b8c8c9ca6dd964a58aa65b901d9219732179f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：設定 Office 方案的組態資訊
   您可以使用組態檔來設定 Office 方案特有的設定。 您可以指定組件繫結原則、 遠端處理物件、 偵錯和追蹤設定等設定。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
  沒有任何特殊考量的 Office 專案中使用組態檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於.NET Framework 組態檔結構描述](/dotnet/framework/configure-apps/file-schema/index)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  

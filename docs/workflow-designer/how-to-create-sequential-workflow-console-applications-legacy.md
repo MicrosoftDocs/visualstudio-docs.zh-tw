@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 7e9732334f422b4042f2cd581afaea06bf99ab16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 79969572e4cab24e93a6c593a23369a00243ae0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>HOW TO：建立循序工作流程主控台應用程式 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 來建立循序工作流程主控台應用程式專案。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -47,12 +48,12 @@ ms.lasthandoff: 10/27/2017
   
      接著會開啟 Windows Form 設計工具，顯示您剛剛建立之專案的 Form1。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
      工作流程設計工具會開啟並顯示您所建立的循序工作流程之設計介面。  
   
 9. 活動拖曳至**工具箱**至設計介面中**將活動置放在**指定區域。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
  [開發工作流程](http://msdn.microsoft.com/en-us/557bcb1f-a7ab-49f6-8df7-2706b7001301)

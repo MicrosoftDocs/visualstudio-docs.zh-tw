@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c5832388db7e70791193024b263da275cdf5eaa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 54eb1f58c6e623df352b382df7259e4457dd4597
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-in-office-projects"></a>Office 專案中的屬性
   在 Visual Studio 中，Office 專案有幾個可用的重要屬性。 這些屬性可於 [屬性]  視窗中取得。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  使用 [屬性]  視窗的 [Value2]  屬性，將 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 屬性繫結至資料來源的欄位。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [Office 專案中的事件](../vsto/events-in-office-projects.md)  

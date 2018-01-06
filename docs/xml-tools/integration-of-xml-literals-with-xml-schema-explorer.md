@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05b652a1ff590d30593d015af8a33d062c85c42b
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: dad11fa10e7c61845ac0d4ea5663e6f2c7bc88ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>整合 XML 常值與 XML 結構描述總管
 Visual Basic 支援 XML 常值，這表示您可以將 XML 片段直接合併 Visual Basic 程式碼。 如需詳細資訊，請參閱[XML 常值概觀](http://go.microsoft.com/fwlink/?LinkId=140325)。  
@@ -29,5 +30,5 @@ Visual Basic 支援 XML 常值，這表示您可以將 XML 片段直接合併 Vi
   
  ![Visual Basic XML 常值。XML 結構描述總管](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif "VBXMLLiteralsWithXMLSchemaExplorer2")
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [如何：搭配使用 XML 結構描述設計工具和 XML 常值](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

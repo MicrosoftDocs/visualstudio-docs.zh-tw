@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: be208d526fdc9f1d6f434425e3931b0f0a6510f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 314ff5252b426610b9a50327fe6754b2a953908c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 樣本設計工具
 **SendAndReceiveReply**範本用來建立一對預先設定<xref:System.ServiceModel.Activities.Send>和<xref:System.ServiceModel.Activities.ReceiveReply>內的活動<xref:System.Activities.Statements.Sequence>做為要求/回應訊息交換的一部分相互關聯的活動在用戶端上的模式。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A>|False|指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 物件的集合，這些物件會初始化多個 <xref:System.ServiceModel.Activities.CorrelationHandle> 物件，用來設定工作流程內的這個 <xref:System.ServiceModel.Activities.Receive> 活動。 按一下省略符號按鈕旁的 [<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>屬性以開啟 [屬性] 方格中的**加入相互關聯初始設定式**] 對話方塊。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]使用此方塊中，請參閱[加入 CorrelationInitializers 對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)主題。|  
 |<xref:System.ServiceModel.Activities.ReceiveReply.Action%2A>|False|指定訊息的動作標頭。 如果沒有明確設定，其值會預設為：<br /><br /> **https://tempuri.org/ {服務合約命名空間} / {服務合約名稱} / {作業名稱}。**|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [接收](../workflow-designer/receive-activity-designer.md)   

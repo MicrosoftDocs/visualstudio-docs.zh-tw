@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 方案的全球化與當地語系化
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)。  
@@ -80,7 +81,7 @@ Application.ActiveCell.Value2 = "05/12/04"
   
  但相同的程式碼，用在以 Visual Studio 中的 Office 開發工具建立的解決方案並透過 COM Interop 傳遞到 Excel 時，產生的結果和以 en-US 樣式格式化的日期一樣。  
   
- 例如:  
+ 例如:   
   
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]  
@@ -98,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>使用外部資料的應用程式  
  任何開啟或使用外部資料的程式碼，例如包含從舊有系統匯出的以逗號分隔值的檔案 (CSV 檔案)，如果使用 en-US 以外的任何格式匯出，也可能受到影響。 因為所有值應該都是二進位格式，所以資料庫存取可能不受影響；除非資料庫將日期儲存為字串，或執行了不使用二進位格式的作業。 此外，如果您使用 Excel 資料建構 SQL 查詢，您可能需要確保其為 en-US 格式，視所用函數而定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 為目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

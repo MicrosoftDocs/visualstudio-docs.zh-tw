@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>XML 編輯器
 XML 編輯器以 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 文字編輯器為基礎，並包括 XML 語言的其他支援。 XML 編輯器包括下列功能：  
@@ -54,7 +55,7 @@ XML 編輯器以 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visu
   
 -   XML 結構描述總管。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [XML 文件驗證](../xml-tools/xml-document-validation.md)  
  說明語法檢查及驗證功能。  
   
@@ -80,5 +81,5 @@ XML 編輯器以 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visu
  [XML 標準參考](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
  提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

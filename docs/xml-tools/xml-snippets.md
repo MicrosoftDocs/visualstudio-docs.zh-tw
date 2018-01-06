@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f53c8d55011f52a3ed6ecf6fa4fab77855a9ec3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-snippets"></a>XML 片段
 XML 編輯器提供一項功能，稱為*XML 片段*，可讓您更快速地建置 XML 檔案。 您可藉由將 XML 片段插入檔案來重複使用它們。 還可根據 XML 結構描述定義語言 (XSD) 結構描述，產生 XML 資料。  
@@ -52,5 +53,5 @@ XML 編輯器提供一項功能，稱為*XML 片段*，可讓您更快速地建�
   
  如需詳細資訊，請參閱[How to： 建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

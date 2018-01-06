@@ -18,11 +18,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae3fceb52e0a99ee87a12a650333b3bc8cf1420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0076eea1fa8866ad90bf4125583ed8359916de4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，如果同一部電腦上有多位使用者將執行您的方案，您應該考慮使用 Windows Installer (.msi)。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
      下表會說明每個選項。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |**從元件廠商的網站下載必要條件**|系統會提示使用者下載並安裝廠商提供的這些必要條件。|  
     |**從應用程式的相同位置下載必要條件**|必要軟體會隨方案安裝。 如果您選擇這個選項，Visual Studio 會自動將所有必要條件套件複製到發行位置。 必要條件套件必須放在開發電腦上，這個選項才能正常運作。|  
@@ -460,7 +461,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [發行 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   

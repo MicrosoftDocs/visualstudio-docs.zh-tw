@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ffb172b551018ae7352edb7dd9fed44824a794ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed372e54e0e40d06dbd1ecf818f507c1a425ad03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>繫結至活動 &#39; s 屬性對話方塊 （舊版）
 本主題描述如何使用**繫結至活動的屬性**對話方塊中，在舊版[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -28,12 +29,12 @@ ms.lasthandoff: 10/27/2017
   
  下表描述的使用者介面 (UI) 項目**繫結至活動的屬性** 對話方塊。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |----------------|-----------------|  
 |**繫結至現有的成員**|在樹狀檢閱窗格中選取您要繫結程序的成員。 樹狀檢閱下方的窗格會顯示一個訊息，表示成員是否為可繫結程序的有效型別。 按一下**確定**繫結至選取的有效成員。|  
 |**繫結到新的成員**|建立要繫結的新成員欄位或屬性。 輸入**新成員名稱**。 選擇您是否想要建立相依性屬性或公用欄位選取**建立欄位**或**建立屬性**。 按一下**確定**若要建立新的成員。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用活動屬性](http://go.microsoft.com/fwlink?LinkID=65013)   
  [使用相依性屬性](http://go.microsoft.com/fwlink?LinkID=65007)   
  [舊版 Windows Workflow Foundation UI 設計工具的說明](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c2c3083daec31620efa9f9665443d9d35b06804b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f2df04273936f84c8bf371ecb053a7bb22f82147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 是由三個主要 UI 區域構成：設計工具介面、上方的階層連結列和下方的殼層。 位於畫面上方的階層連結列，會用於顯示目前根活動的祖系清單。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][如何： 使用階層連結巡覽](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 位於畫面中央的設計介面，會用於撰寫工作流程。 位於畫面下方的殼層，會包含許多管理目前檢視的按鈕。  

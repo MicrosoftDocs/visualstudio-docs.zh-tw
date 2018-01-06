@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3f1e9fca25f29bd7e649816a0529a58c7ec2f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-components"></a>XML 編輯器元件
 本節討論 XML 編輯器視窗及對話方塊。 因為 XML 編輯器是以文字編輯器為基礎，所以使用一般文字編輯器設定來設定部分整合式開發環境 (IDE)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [其他、XML、文字編輯器、選項對話方塊](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
  討論 XML 編輯器的自動完成及結構描述設定。  
   
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
  [如何： 設定一般編輯器選項](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  說明如何設定一般設定，如顯示、陳述式完成等。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

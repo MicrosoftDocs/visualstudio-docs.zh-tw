@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6e0d64c1a0a9f80bf4c3b9ff677c3e3c5e6bc984
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 31afb7827905a0111027cb38d9081def211df7dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>HOW TO：設定工作流程專案屬性 (舊版)
 依照下列步驟來檢視或修改與工作流程專案相關聯的屬性。  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/27/2017
   
 4.  在專案中**屬性**視窗中，檢視及修改您想要變更的屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)

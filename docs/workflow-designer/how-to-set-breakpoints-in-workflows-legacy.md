@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 89189feb32d84db8fb5c5eb7970faf325be1acd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d634f9648ed87f448e1b984392c827badc42930c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>HOW TO：在工作流程中設定中斷點 (舊版)
 本主題描述如何在使用舊版 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 建置的 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 應用程式中設定中斷點。 當您的 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 應用程式需要以 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -61,8 +62,8 @@ ms.lasthandoff: 10/27/2017
   
 5.  選取**工作流程**從**語言**清單。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)   
  [叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

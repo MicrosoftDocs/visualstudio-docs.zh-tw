@@ -20,11 +20,12 @@ caps.latest.revision: "103"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02f5d5cf2d726755cce4b3de2dcd74a5dad18db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b7322faa797ea9ce51af0cd716ffb6536f062ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-creating-office-solutions"></a>Designing and Creating Office Solutions
   Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專案範本。 文件的本節描述此專案範本，並提供有關建立 Office 專案的指引。 如需如何建立專案之後實作自訂程式碼和使用者介面的資訊，請參閱[開發 Office 方案](../vsto/developing-office-solutions.md)。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="referenced-assemblies"></a>參考的組件  
  組件可以參考列入專案參考中的其他組件。 不過，一個文件層級的專案組件不能參考另一個文件層級的專案組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio 環境中的 office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)   

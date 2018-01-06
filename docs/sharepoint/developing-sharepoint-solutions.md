@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)|說明 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供的 SharePoint 專案和專案項目範本。|  
 |[如何：將項目新增至 SharePoint 專案](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|說明如何將新的或現有的項目加入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。|  
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
 |[SharePoint 方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|說明在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開發 SharePoint 方案的安全性考量。|  
 |[URL 選擇器對話方塊 &#40;Visual Studio &#41; 中的 SharePoint 開發](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|說明可用來在您的專案或本機 SharePoint 伺服器上新增資源路徑參考的對話方塊。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用 &#40;Visual Studio &#41; 中的 SharePoint 開發](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [使用 伺服器總管瀏覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

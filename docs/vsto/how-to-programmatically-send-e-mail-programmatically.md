@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98b0eefafa86fdaf8f7a664ac75a2f7c71a43549
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 39a0ebee37c57630649f680d14aa8fef22833225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-send-e-mail"></a>如何： 以程式設計方式傳送電子郵件  
   這個範例會將電子郵件訊息傳送至具有網域名稱的連絡人**example.com**在他們的電子郵件地址。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="robust-programming"></a>穩固程式設計  
  請勿移除網域名稱中搜尋的篩選器程式碼**example.com**。您的方案會傳送電子郵件給所有的連絡人，如果移除篩選。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用郵件項目](../vsto/working-with-mail-items.md)   
  [如何： 以程式設計方式建立電子郵件項目](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [如何： 以程式設計方式存取 Outlook 連絡人](../vsto/how-to-programmatically-access-outlook-contacts.md)   

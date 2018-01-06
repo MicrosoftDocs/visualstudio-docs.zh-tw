@@ -23,11 +23,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fcf026af4877ee2aefe17551763752d385b63493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區可組織相關的命令，以便輕鬆找到它們。 命令會顯示為功能區上的控制項。 控制項會組織成*群組*沿著在應用程式視窗的頂端邊緣的水平區域。 相關的群組會組織在索引標籤上。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區、 新增**功能區 （視覺化設計工具）**或**功能區 (XML)**項目加入 Office 專案。|  
 |[功能區設計工具](../vsto/ribbon-designer.md)|說明如何使用功能區設計工具，在 Microsoft Office 應用程式的功能區中加入自訂的索引標籤、群組和控制項。|  

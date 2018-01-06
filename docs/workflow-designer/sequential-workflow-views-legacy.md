@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 74aac4ab6406b4f400d6d5951c00b2a92af91ec0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8b54fbb37d33bdb6d4e397c81ad85bffd39b221f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sequential-workflow-views-legacy"></a>循序工作流程檢視 (舊版)
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 提供可用來以 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
   
  下表列出每個檢視的名稱和說明。  
   
-|功能表/索引標籤選項|說明|  
+|功能表/索引標籤選項|描述|  
 |----------------------|-----------------|  
 |**檢視 SequentialWorkflow**|以滑鼠右鍵按一下設計介面，並選取**檢視 SequentialWorkflow**從內容功能表選項以顯示**循序工作流程**檢視會顯示活動的圖形表示循序工作流程。 或選取**檢視 SequentialWorkflow**從**工作流程**功能表。|  
 |**檢視取消處理常式**|以滑鼠右鍵按一下設計介面，並選取**檢視取消處理常式**從內容功能表選項以顯示**循序工作流程**檢視檢視會顯示[CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)與工作流程關聯的活動。 或選取**檢視取消處理常式**從**工作流程**功能表。|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/27/2017
   
  如需類似的檢視的詳細資訊，請參閱[活動檢視 （舊版）](../workflow-designer/activity-views-legacy.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [活動檢視 （舊版）](../workflow-designer/activity-views-legacy.md)   
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
  [工作流程撰寫模式](http://go.microsoft.com/fwlink?LinkID=65014)

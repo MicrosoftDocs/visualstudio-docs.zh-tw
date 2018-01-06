@@ -18,11 +18,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35f5a865faafc730a13f5d0cd3a432a724434dde
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>逐步解說：使用選項按鈕更新文件中的圖表
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立 Word 文件專案名稱**My Chart Options**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -96,28 +97,28 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**columnChart**|  
+    |**名稱**|**columnChart**|  
     |**Text**|**直條圖**|  
   
 3.  新增第二個**選項按鈕**使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**barChart**|  
+    |**名稱**|**barChart**|  
     |**Text**|**橫條圖**|  
   
 4.  新增第三個**選項按鈕**使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**lineChart**|  
+    |**名稱**|**lineChart**|  
     |**Text**|**折線圖**|  
   
 5.  加入第四個**選項按鈕**使用者控制項，並變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**areaBlockChart**|  
+    |**名稱**|**areaBlockChart**|  
     |**Text**|**區塊圖**|  
   
 ## <a name="adding-references"></a>加入參考  
@@ -216,7 +217,7 @@ ms.lasthandoff: 10/31/2017
   
 -   從下拉式方塊選取樣式，以變更格式。 如需詳細資訊，請參閱[逐步解說： 變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6b6a0cbfc0a82bbc827b0a994426ef7e87ced91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊從**工具**功能表。  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 </dir>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)

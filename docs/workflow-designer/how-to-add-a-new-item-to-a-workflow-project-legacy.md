@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ad57b87dcbae858f865a12538c79436e907caa34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: add7474c2d38c2cbb06b0d1cc3c92efa0a16c321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>HOW TO：將新的項目加入至工作流程專案 (舊版)
 當您使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 所提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 來建立工作流程專案時 (此專案是以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標)，您可以將 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 項目和其他熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 項目加入專案中。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/27/2017
   
 3.  按一下**新增**將項目加入至工作流程專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)

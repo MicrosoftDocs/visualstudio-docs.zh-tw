@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 23e042a7ff34163872b3a932b105bc3b452023ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: aff3172f5f01612923e72ad76f85205af0c31a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 將活動加入至**工具箱**方案中數個不同的方式。 您可以從目前的專案內部加入活動、從不同的專案參考活動，或是從不同的組件參考活動。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/27/2017
   
 6.  自訂活動會出現在**工具箱**之前已新增項目為焦點 類別底下。 例如，如果**一般**類別目錄中選取**工具箱**之前加入工具箱項目，該活動會出現在**一般**類別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)

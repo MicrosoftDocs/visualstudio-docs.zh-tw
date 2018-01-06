@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d083ff3a6c39b0d399b641db7e3a33d4f200e7bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b4f455ad27966f5ac3c5dba6c3ac276670f74b26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `addin` 命名空間的 `vstav3` 項目包含 Microsoft Office VSTO 增益集和使用 Visual Studio 開發之文件層級自訂的特定資訊。  
@@ -60,16 +61,16 @@ ms.lasthandoff: 10/31/2017
  `addin` 項目具有下列子項目。  
   
 ### <a name="entrypoints"></a>entryPoints  
- 必要項。 `entryPoints`項目述[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 必要。 `entryPoints`項目述[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="update"></a>更新  
- 必要項。 `update`項目述[&#60; update &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/update-element-office-development-in-visual-studio.md).  
+ 必要。 `update`項目述[&#60; update &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/update-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactions"></a>postActions  
- 選擇項。 `postActions`項目述[&#60; postActions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ 選擇性。 `postActions`項目述[&#60; postActions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactions-element-office-development-in-visual-studio.md).  
   
 ### <a name="application"></a>應用程式  
- 必要項。 `application`項目述[&#60; 應用程式 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md).  
+ 必要。 `application`項目述[&#60; 應用程式 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -193,7 +194,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:addIn>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

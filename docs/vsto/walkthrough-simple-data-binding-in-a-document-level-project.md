@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 847b547aae785d94f8d9025b7b4badf9d8b21075
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 36053a8ef415e35f1244d0e379a49a46ea24f33d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：文件層級專案中的簡單資料繫結
   本逐步解說示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的之單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也會示範如何加入控制項，可讓您捲動資料表中的所有記錄。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-a-new-project"></a>建立新專案  
  在此步驟中，您將建立的 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立名稱的 Excel 活頁簿專案**我簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -195,7 +196,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[How to： 使用 Windows Form BindingNavigator 控制項的瀏覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [逐步解說：文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  

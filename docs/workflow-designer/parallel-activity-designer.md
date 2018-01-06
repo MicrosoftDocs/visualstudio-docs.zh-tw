@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b6b6c0498b98f38b786ce846fd6d975287a2c75e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8be40a9cae29291951a320422755f0ff5d1f7365
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活動設計工具
 <xref:System.Activities.Statements.Parallel> 活動會並行執行屬於同一集合的子活動。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|包含要執行之子活動的集合。|  
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|在分支完成後評估。 如果評估為**True**，然後排定擱置中分支都會取消。 如果這個屬性未設定或評估為**False**，在活動完成的所有子活動完成時。 預設值是**null**。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [順序](../workflow-designer/sequence-activity-designer.md)   
  [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [控制流程](../workflow-designer/control-flow-activity-designers.md)

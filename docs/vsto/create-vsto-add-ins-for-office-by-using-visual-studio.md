@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3006ddafa743a5cd55a687895e894f3cbb068a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16d3e15187d6164bf0b659a94ac81d26a8bf6a5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467) 包含有關 Office 自訂和 Office Business Application (OBA) 的技術文件、程式碼範例、下載、社群資訊、支援和其他文件連結。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供有關如何設定開發電腦以建立 Office 方案、如何開始建立 Office 方案，以及 Visual Studio 中 Office 開發新功能的資訊連結。  
   

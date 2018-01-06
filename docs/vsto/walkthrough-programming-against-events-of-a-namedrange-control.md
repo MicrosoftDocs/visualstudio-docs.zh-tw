@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說示範如何加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入 Microsoft Office Excel 工作表並對其使用 Visual Studio 中的 Office 程式開發工具所使用的事件進行程式設計。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 -   測試您的專案。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  在此步驟中，您將建立使用 Visual Studio 的 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立名稱的 Excel 活頁簿專案**我的具名範圍事件**。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  確認**$A$ 1**會出現在編輯的文字方塊和該資料格**A1**已選取。 如果沒有，請按一下資料格**A1**來選取它。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      資料格**A1**成為具名範圍`namedRange1`。 沒有可見指示工作表，但`namedRange1`會出現在**名稱**方塊 （位於正上方的工作表左邊） 當資料格**A1**已選取。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  確認**$B$ 3**會出現在編輯的文字方塊和該資料格**B3**已選取。 如果沒有，請按一下資料格**B3**來選取它。  
   
-7.  按一下 [確定]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      資料格**B3**成為具名範圍`namedRange2`。  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署專案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 514e6e0f52867b586135050d555508caec8cb6e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5fb633d58485ab605cbfed1d3bddeb7b70e100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>逐步解說：為您的 Outlook 建立第一個 VSTO 增益集
   本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 [名稱]  方塊中輸入 **FirstOutlookAddIn**。  
   
-7.  按一下 [ **確定**]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstExcelAddIn** 專案，並在編輯器中開啟 [ThisAddIn]  程式碼檔。  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 -   `ThisAddIn` 類別的部分定義。 這個類別提供您撰寫程式碼的進入點，並提供對 Outlook 物件模型的存取。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。  
   
--   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件處理常式。 當 Outlook 載入和卸載 VSTO 增益集時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在 VSTO 增益集載入時將它初始化，以及在 VSTO 增益集卸載時清除它所用的資源。 如需詳細資訊，請參閱 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
+-   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件處理常式。 當 Outlook 載入和卸載 VSTO 增益集時，會呼叫這些事件處理常式。 請使用這些事件處理常式，在 VSTO 增益集載入時將它初始化，以及在 VSTO 增益集卸載時清除它所用的資源。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。  
   
 #### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>將文字加入每封新郵件的主旨和本文  
   
@@ -139,7 +140,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Outlook VSTO 增益集。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Outlook 方案](../vsto/outlook-solutions.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   

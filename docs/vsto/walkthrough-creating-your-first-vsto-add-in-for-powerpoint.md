@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>逐步解說：為您的 PowerPoint 建立第一個 VSTO 增益集
   本逐步解說示範如何建立 Microsoft Office PowerPoint 的 VSTO 增益集。 不論開啟哪一份簡報，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="creating-the-project"></a>建立專案  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在**名稱**方塊中，輸入**FirstPowerPointAddIn**。  
   
-7.  按一下 [確定]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstPowerPointAddIn**專案，並開啟**ThisAddIn**編輯器中的程式碼檔案。  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 10/31/2017
   
  若要修改每張新投影片，前面的程式碼範例可以使用下列物件：  
   
--   `ThisAddIn` 類別的 `Application` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.PowerPoint.Application> 物件，此物件代表 PowerPoint 目前的執行個體。  
+-   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.PowerPoint.Application> 物件，此物件代表 PowerPoint 目前的執行個體。  
   
--   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> 事件之事件處理常式的 `Sld` 參數。 `Sld` 參數是 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 物件，此物件代表新投影片。 如需詳細資訊，請參閱[PowerPoint 方案](../vsto/powerpoint-solutions.md)。  
+-   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> 事件的事件處理常式的 `Sld` 參數。 `Sld` 參數是 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 物件，此物件代表新投影片。 如需詳細資訊，請參閱[PowerPoint 方案](../vsto/powerpoint-solutions.md)。  
   
 ## <a name="testing-the-project"></a>測試專案  
  當您建置和執行專案時，請確認文字方塊有出現在您加入簡報的新投影片中。  
@@ -133,7 +134,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 PowerPoint VSTO 增益集。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [PowerPoint 方案](../vsto/powerpoint-solutions.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   

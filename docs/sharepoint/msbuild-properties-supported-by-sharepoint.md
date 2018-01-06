@@ -18,16 +18,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e90448d5e7a24f4904f9c4ea02ac041531ce02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: af70078790c684ce774a203b265d7c767779ab15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支援的 MSBuild 屬性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 檔案、 專案檔或專案使用者檔案中定義的屬性可用於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 除了一般[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]專案中，SharePoint 所提供的屬性定義的 SharePoint 專案特定的額外屬性。  
   
- 如需常見的清單[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]屬性，請參閱[一般 MSBuild 專案屬性](http://go.microsoft.com/fwlink/?LinkID=168687)。 針對您的程式語言所支援之屬性的完整清單，查看.targets 檔案、 專案檔 （.csproj 或.vbproj） 或專案使用者檔案 (副檔名為.csproj.user 或。.vbproj.user)。  
+ 如需常見的清單[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]屬性，請參閱[一般 MSBuild 專案屬性](http://go.microsoft.com/fwlink/?LinkID=168687)。 針對您的程式語言所支援之屬性的完整清單，查看.targets 檔案、 專案檔 （.csproj 或.vbproj） 或專案使用者檔案 (副檔名為.csproj.user 或.vbproj.user)。  
   
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>MSBuild 屬性特有的 SharePoint  
  下表列出[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]特別適用於 SharePoint 專案中的屬性[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 其他屬性，但它們僅供內部使用。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]  
 >  您可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]變數語法`$(` *propertyName* `)`或環境變數語法`%` *propertyName* `%`指定的屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 參考](/visualstudio/msbuild/msbuild-reference)  
   
   

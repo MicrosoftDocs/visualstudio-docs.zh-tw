@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f6b1f88fcc796cbee0a48fd39da2ad9c4fe1489a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b4b9207702e6b4c3b93838eccfe1da15c42b5baa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>從遠端電腦偵錯工作流程 (舊版)
 本主題描述如何偵錯使用舊版 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 所建置的遠端舊版 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 應用程式。 當您的應用程式需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 遠端偵錯的運作方式與其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 元件的遠端偵錯功能相同。 如需詳細資訊，請參閱[!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]MSDN Library 中的遠端偵錯。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)

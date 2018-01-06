@@ -24,11 +24,12 @@ caps.latest.revision: "66"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bee3ed6bb88945d880f1fb855cec0f7cb9be27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-object-model-overview"></a>Deploying Office Solutions
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[Excel 方案](../vsto/excel-solutions.md)|說明如何建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。|  
 |[使用範圍](../vsto/working-with-ranges.md)|提供示範如何使用範圍執行常見工作的範例。|  

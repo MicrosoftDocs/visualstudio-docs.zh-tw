@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13da2a068348478be8511e1c5624059b0d063bac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a0f2e0b87e791618477ff6e11c9e180793d5495
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：  
@@ -47,8 +48,8 @@ ms.lasthandoff: 10/31/2017
   
 |專案類型|Microsoft Office 應用程式|  
 |-------------------|----------------------------------|  
-|文件層級自訂|Excel<br /><br /> Word|  
-|VSTO 增益集|Excel<br /><br /> InfoPath (僅限 InfoPath 2013 與 InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
+|文件層級自訂|Excel<br /><br /> 字組|  
+|VSTO 增益集|Excel<br /><br /> InfoPath (僅限 InfoPath 2013 與 InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> Visio<br /><br /> 字組<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>不同專案類型中可用的功能  
  下表顯示哪些專案類型提供各項功能。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 |功能區自訂。|文件層級專案。<br /><br /> 下列應用程式的 VSTO 增益集專案：<br /><br /> Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />Outlook<br />-PowerPoint<br />專案<br />Visio<br />字組|[功能區概觀](../vsto/ribbon-overview.md)|  
 |視覺文件設計工具。|文件層級專案。|[在 Visual Studio 環境下的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   

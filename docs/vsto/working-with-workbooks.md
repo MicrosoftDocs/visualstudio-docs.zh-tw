@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3d83847341e7689b34edb0a4582225886e5eebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfab2572544a89f0f5f353998e68093369d626f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-workbooks"></a>使用活頁簿
   <xref:Microsoft.Office.Tools.Excel.Workbook> 和 <xref:Microsoft.Office.Interop.Excel.Workbooks> 類別包含您用來執行活頁簿工作的方法和屬性。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [使用工作表](../vsto/working-with-worksheets.md)   
  [使用範圍](../vsto/working-with-ranges.md)   

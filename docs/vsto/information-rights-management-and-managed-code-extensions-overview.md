@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ff6c79d6bed7ec1b5a459f64c0e57c8c35ab4e1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21431cd16407d61db6f981aad68d52906c2de1f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>資訊版權管理和 Managed 程式碼擴充概觀
   Microsoft Office Word 和 Microsoft Office Excel 提供的資訊版權管理 (IRM)，可協助防止未經授權的人員檢視或變更敏感資訊的功能。 如需資訊版權管理的運作方式的詳細資訊，請參閱特定 Office 應用程式中的說明。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
  若要修正此問題，具有完整控制存取文件或活頁簿的人員必須變更為允許以程式設計方式存取物件模型的預設權限設定。 如需詳細資訊，請參閱[如何： 允許程式碼，以執行文件背後以限制使用權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂
   您可以使用 Visual Studio 中的 Office 程式開發人員工具，自訂 Microsoft Office 應用程式的使用者介面 (UI)。 本主題在下列各節中描述您可以自訂的 UI 功能：  
@@ -49,13 +50,13 @@ ms.lasthandoff: 10/31/2017
   
 |功能|支援的專案類型|支援的 Microsoft Office 應用程式|  
 |-------------|-----------------------------|---------------------------------------------|  
-|執行窗格|文件層級自訂|Excel<br /><br /> Word|  
-|自訂工作窗格|VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|自訂功能區 UI|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
-|Backstage 檢視|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio|  
+|執行窗格|文件層級自訂|Excel<br /><br /> 字組|  
+|自訂工作窗格|VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 字組<br /><br /> Excel|  
+|自訂功能區 UI|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> 字組<br /><br /> Visio|  
+|Backstage 檢視|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> 字組<br /><br /> Visio|  
 |Outlook 表單區域|VSTO 增益集|Outlook|  
-|文件上的控制項|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> Word|  
-|快顯功能表|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|文件上的控制項|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> 字組|  
+|快顯功能表|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> 字組<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>執行窗格和自訂工作窗格  
  工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 幾乎所有的 Microsoft Office 應用程式都包括內建的工作窗格。 工作窗格的範例是在 Word 中的 [說明] 工作窗格。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Shortcut"></a>快顯功能表  
  在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您將加入**功能區 (XML)**項目加入 Office 專案，您可以將 XML 加入功能區 XML 檔案，以建立快顯功能表。 如需有關使用 XML 來建立快顯功能表的詳細資訊，請參閱[如何： 新增命令至捷徑功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   

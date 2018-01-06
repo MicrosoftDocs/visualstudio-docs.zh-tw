@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint 的 Web 組件
   如果您建立 SharePoint 網站的 web 組件，您的使用者可以直接使用瀏覽器修改內容、 外觀和行為，該網站中的頁數。 本逐步解說會示範如何使用 SharePoint，以視覺化方式建立的 web 組件**視覺 Web 組件**中的專案範本[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -198,7 +199,7 @@ ms.lasthandoff: 10/31/2017
   
      從您指定的所有行事曆事件會出現在每月的行事曆檢視。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [如何： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   

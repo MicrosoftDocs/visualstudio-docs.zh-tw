@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bf7b639504d6bca53af590d200d9d291ddcd66b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3cc5656877f3e6c1ee578a53345e2482c2103223
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-office-solution-security"></a>Office 方案安全性疑難排解
   本主題包含當您使用保護 Office 方案時，可能會遇到的常見問題的解決提示。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  管理使用 ieesc 時，Internet Explorer 7 的效果和更新版本中，找出網站和通用命名慣例 (UNC) 路徑，您信任並將其加入至其中一個信任的安全性區域 （近端內部網路或信任的網站）。如需如何管理區域相關資訊，請參閱[設定 ClickOnce 信任的發行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

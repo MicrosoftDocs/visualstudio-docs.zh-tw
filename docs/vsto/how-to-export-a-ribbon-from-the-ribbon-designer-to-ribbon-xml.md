@@ -23,11 +23,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b73bff8170e351e9e22e95d53ae446895cfdbd2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7cbdf38b3debd7710ed036d008d52b8ef080d37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：將功能區設計工具的功能區匯出到功能區 XML
   **功能區 （視覺化設計工具）**項目不支援所有可能的功能區自訂類型。 若要進階方式自訂功能區，您可以從設計工具的功能區匯出至功能區 XML，並直接編輯 XML。  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
   
      如需撰寫回呼方法與使用 RibbonX 程式設計模型的資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

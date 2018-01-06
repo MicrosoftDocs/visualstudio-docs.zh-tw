@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 84f483c4e280dbf5c1dc303805028456cd1ff59e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e488d7daceb5bbebae318e674fdffa9256c53eeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>HOW TO：建立活動設計工具程式庫
 自訂活動設計工具可讓您建立標準或自訂活動的使用者介面。 您可以控制使用者介面的複雜性，並且能為活動建立多個設計工具。 這個案例可讓您建立專為多個對象量身訂做的設計工具。  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/27/2017
     > [!WARNING]
     >  自訂活動設計工具可用於自訂活動，也用於預設[!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)]活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 738568db51cce97ee0b110220aa195b4ded2adba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8bcdcc42ada14f808c165e9e06b269817f79575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 <xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 <xref:System.Activities.Statements.Flowchart> 可以利用程式碼或使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 製作。 這個主題提供 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 體驗的說明文件。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 工作流程活動設計工具可供開發人員以自然的方式製作工作流程。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|在 <xref:System.Activities.Statements.FlowNode> 開始時執行的 <xref:System.Activities.Statements.Flowchart>。|  
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|包含 <xref:System.Activities.Statements.FlowNode> 中 <xref:System.Activities.Statements.Flowchart> 物件的集合。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [流程圖](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
  [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c077cab7bf02023d0bfb1714940f98020600477
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1407d34bc833c5c8a911adc87c8fa7cfec933256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：搭配使用中斷點與 XSLT
 您可在 XSLT 樣式表或 XML 來源文件中設定中斷點。 如果您在標記上設定了中斷點，則在開始執行時，中斷點會移至下一個具有原始程式行資訊的陳述式 (Statement)。  
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
   
 5.  按一下**偵錯 XSL** XML 編輯器工具列上的按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 在**屬性**視窗、 對話方塊中或設計工具，例如變數設計工具中，當您選取**瀏覽型別...**從資料類型的清單，是**瀏覽並選取.NET 型別**對話方塊 （簡稱為 「 型別瀏覽器 」 是簡短形式）。 在這個對話方塊中，您可以從組件與專案的樹狀檢閱中選擇型別。  
@@ -71,5 +72,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用型別瀏覽器對話方塊選取服務合約  
  選取服務合約型別時，型別瀏覽器只顯示具有 <xref:System.ServiceModel.ServiceContractAttribute> 屬性的型別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)

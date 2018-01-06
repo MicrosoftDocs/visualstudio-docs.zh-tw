@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 52c78a49a468be929e93946b3b162c31370558dc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f218f46bb48dde51fa628854358c267a21443599
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>HOW TO：建立循序工作流程程式庫 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 來建立循序工作流程程式庫專案。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -48,8 +49,8 @@ ms.lasthandoff: 10/27/2017
   
      如果您想要建立專案的方案目錄，選取**為方案建立目錄**核取方塊，然後輸入中的名稱**方案名稱**方塊。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)   
  [工作流程的撰寫樣式](http://msdn.microsoft.com/en-us/aacf4ec6-da05-4974-958a-974769dda739)

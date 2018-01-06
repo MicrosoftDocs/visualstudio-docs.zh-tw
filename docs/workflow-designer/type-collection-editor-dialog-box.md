@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bdc27b59640d92507956030fc34c767e321a81fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8e4b794a623c3a0218e44773da6bdb6c76612816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 **型別集合編輯器**對話方塊用來新增至已知型別的**傳送**和**接收**活動。 也使用此對話方塊來加入泛型型別引數**InvokeMethod**活動。 當用於**傳送**和**接收**活動，以加入已知型別，**型別集合編輯器**對話方塊會要求附加唯一的型別。 如果加入重複的型別，並認可變更，即可**確定**，會傳回錯誤訊息。 當用於**InvokeMethod**活動，將泛型型別引數，**型別集合編輯器** 會允許附加重複的型別。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/27/2017
   
  下表描述的使用者介面 (UI) 項目**型別集合** 對話方塊。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |----------------|-----------------|  
 |**類型清單**|已加入或已移除之型別的清單。|  
   

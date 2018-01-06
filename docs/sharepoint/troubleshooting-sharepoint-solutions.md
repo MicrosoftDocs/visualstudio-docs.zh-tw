@@ -19,11 +19,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa3ecb6be4ba458c7a703e77e56c6ba51490887d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱[偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  「 無效的字元 」 錯誤訊息。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  SharePoint 專案和專案項目的名稱只能使用下列字元：  
   
 -   英數字 ASCII 字元  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  在封裝階段 「 無效的字元 」 錯誤訊息。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  欄位定義的 ID 必須是以大括號括住的 GUID，如下列範例所示：  
   
 ```xml  
@@ -103,7 +104,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  無。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  因為不正確的值中就會發生這個問題**路徑**webtemp 站台定義設定檔，例如 webtemp_SiteDefinitionProject1.xml 屬性。 在**路徑**webtemp 檔案，位於屬性**部署位置**，變更適當的地區設定 1033年[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日本地區設定將值變更為 1041年。 如需詳細資訊，請參閱[microsoft 指派的地區設定識別碼](http://go.microsoft.com/fwlink/?LinkID=165561)MSDN 網站上。  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在乾淨系統上部署工作流程專案時，就會出現錯誤  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 -   名稱的 IMetadataObject '\<*模型名稱*>' 中欄位 'name' 的重複有值...  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  若要解決此問題，手動刪除模型，然後重新部署方案。  您可以使用下列工具來刪除模型：  
   
 -   SharePoint 2010 管理中心。 如需詳細資訊，請參閱[BDC 模型管理](http://go.microsoft.com/fwlink/?LinkID=181472)Microsoft TechNet 網站上。  
@@ -205,7 +206,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  部署步驟啟用功能時發生錯誤: [識別碼] 欄位 [*Guid*] 功能中定義 [*Guid*] 中目前的網站集合或子網站中，找不到。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  這個錯誤是發生，因為匯入可重複使用工作流程專案中的欄位識別碼衝突的結果[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不會變更工作表單欄位 Id。 如果您部署包含原始工作流程的相同伺服器上匯入工作流程時，會發生欄位 ID 衝突。  
   
  若要解決此問題，使用 [尋找和取代] 功能來變更所有匯入工作流程檔案中的欄位 ID 屬性的值。  
@@ -216,7 +217,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="error-message"></a>錯誤訊息  
  建置錯誤： 部署步驟啟用功能時發生錯誤： 檔案 Template\Features\\[*匯入專案**功能**名稱*] \Files\Lists\\[*舊**清單名稱*] \Schema.xml 不存在。  
   
-### <a name="resolution"></a>解決方法  
+### <a name="resolution"></a>解決方式  
  當您匯入的清單執行個體時，就會名為 CustomSchema 屬性加入至清單執行個體的 Elements.xml 檔案中。 Elements.xml 包含自訂 schema.xml 清單執行個體的路徑。 當您重新命名的清單執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 自訂 schema.xml 的部署路徑變更，但 CustomSchema 屬性的路徑值不會更新。 如此一來，清單執行個體中找不到 schema.xml 檔案舊啟用此功能時，會將 CustomSchema 屬性所指定的路徑。  
   
  若要解決此問題，請更新 schema.xml 檔 CustomSchema 屬性中的部署位置的路徑。  
@@ -279,7 +280,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="resolution"></a>解決方式  
  若要解決此問題，請確定 Visual Studio 中 SharePoint 專案的 [網站 URL] 屬性值符合指派給 Web 應用程式之備用存取對應預設區域的 URL。 使用另一個區域 (例如內部網路) 做為 URL 無法解決此錯誤。 專案的網站 URL 和預設區域中的 URL 必須相符。 若要存取備用存取對應，開啟 SharePoint 2010 管理中心公用程式中，選擇**應用程式管理**連結，然後在**Web 應用程式**，選擇**設定備用存取對應**連結。 如需詳細資訊，請參閱[建立 Web 應用程式的區域](http://go.microsoft.com/fwlink/?LinkId=192274)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SharePoint 封裝和部署疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Visual Studio 偵錯](/visualstudio/debugger/debugging-in-visual-studio)  

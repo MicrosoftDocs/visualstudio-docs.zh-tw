@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6bef5c0358ecdadb5f8f9aada4e69d748b3fa14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a61221f8349064305bbd925016121da01d52515b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="searching-the-schema-set"></a>搜尋結構描述集
 XML 結構描述總管可讓您以下列方式搜尋結構描述集：  
@@ -51,5 +52,5 @@ XML 結構描述總管可讓您以下列方式搜尋結構描述集：
 ## <a name="clearing-search-results"></a>清除搜尋結果  
  若要清除搜尋結果，請按一下**x** XML 結構描述總管搜尋工具列的摘要結果面板上的按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)

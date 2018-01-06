@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a575ab2ede1c537ea4a62b27656946f838ef8b47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d367dbbe273f39bef9ebb6161211864d6d430b97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流程視窗 (舊版)
 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 可用來以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。 舊版設計工具是一種視覺化設計工具，可用來建立工作流程。 您可以將活動從**工具箱**設計介面，然後再進行那里設定。 當此介面為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 編輯器視窗時，會佔用其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 編輯器視窗使用的主視窗區域。 工作流程的名稱會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 視窗標題列中。  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/27/2017
 |方案總管|以階層式樹狀檢視顯示工作流程專案，並可讓您存取協助管理專案的功能。|  
 |偵錯視窗|標準的 Visual Studio 偵錯視窗，例如**執行緒**，**呼叫堆疊**，**中斷點**，**區域變數工具**，和**監看工具**windows。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)

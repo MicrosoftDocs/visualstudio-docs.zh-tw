@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 324d5e07ed2c1515036282abe12336f90225993f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>逐步解說：建立 Project 的第一個 VSTO 增益集
   本逐步解說示範如何建立 Microsoft Office Project 的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -60,13 +61,13 @@ ms.lasthandoff: 10/31/2017
   
 3.  在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。  
   
-4.  在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。  
+4.  在展開的 [Office/SharePoint] **Deploying Office Solutions** 節點下，選取 [Office 增益集]  節點。  
   
 5.  在專案範本清單中，選取 [Project 2010 增益集]  或 [Project 2013 增益集] 。  
   
 6.  在 [名稱]  方塊中，輸入 **FirstProjectAddIn**。  
   
-7.  按一下 [ **確定**]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstProjectAddIn** 專案，並在編輯器中開啟 **ThisAddIn** 程式碼檔。  
   
@@ -133,7 +134,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Project VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [專案的方案](../vsto/project-solutions.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)   

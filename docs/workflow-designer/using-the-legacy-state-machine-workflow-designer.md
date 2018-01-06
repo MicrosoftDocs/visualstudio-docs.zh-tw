@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用舊版狀態機器工作流程設計工具
 您可以在建立新的狀態機器工作流程中的專案時[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]為目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，您可以選擇使用**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 舊版狀態機器專案範本的相關資訊，請參閱[How to： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="state-machine-workflow-activities"></a>狀態機器工作流程活動  
  下表說明狀態機器工作流程設計工具中使用的重要活動：  
   
-|工具箱名稱|活動|說明|  
+|工具箱名稱|活動|描述|  
 |------------------|--------------|-----------------|  
 |**狀態**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|代表狀態機器; 中的狀態可能包含其他**StateActivity**活動。 如需詳細資訊，請參閱[使用 StateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65083)。|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|指定轉換至新狀態。 如需詳細資訊，請參閱[使用 SetStateActivity 活動](http://go.microsoft.com/fwlink?LinkID=65082)。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
 >   
 >  若要開啟**文件大綱**視窗，請在**檢視**功能表上，指向**其他視窗**，然後選取**文件大綱**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
  [如何： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [狀態機器工作流程](http://go.microsoft.com/fwlink?LinkID=65016)   

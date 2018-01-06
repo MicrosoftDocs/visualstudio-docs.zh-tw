@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>逐步解說：在執行階段於 VSTO 增益集中，將控制項加入文件
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 文件。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/31/2017
     |屬性|值|  
     |--------------|-----------|  
     |**名稱**|**addRichTextCheckBox**|  
-    |**標籤**|**加入 RTF 控制項**|  
+    |**Label**|**加入 RTF 控制項**|  
   
 10. 在功能區設計工具中，按兩下 [加入按鈕] 。  
   
@@ -186,7 +187,7 @@ ms.lasthandoff: 10/31/2017
   
 -   如需示範如何將控制項加入工作表加入 VSTO 增益集使用適用於 Excel 的逐步解說，請參閱[逐步解說： 將控制項加入工作表，在執行階段，在 VSTO 增益集專案](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Word 方案](../vsto/word-solutions.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office 文件中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)   

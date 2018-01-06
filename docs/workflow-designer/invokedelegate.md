@@ -13,11 +13,12 @@ ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: "3"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 180e9ca5ae635608ca3d7f9cf24abab13c8076a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 56b132403d51a591a8832c1417bec73bde442266
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 **InvokeDelegate**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeDelegate>活動。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|活動執行時要呼叫之 <xref:System.Activities.ActivityDelegate> 的名稱。 此屬性也可以在設計工具介面上編輯。 這是必要的屬性。|  
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|被呼叫之委派的引數集合。 索引鍵位於參數物件的名稱<xref:System.Activities.ActivityDelegate>且值為引數的運算式會評估並指派給對應的參數物件。 在屬性方格中，按一下省略符號按鈕，在**DelegateArguments**欄位，它會顯示**DelegateArguments**對話方塊，供您設定此屬性。 按一下**建立引數**欄位來加入引數。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：定義並取用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

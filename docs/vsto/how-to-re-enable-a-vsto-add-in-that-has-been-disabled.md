@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d89215c759b4fabc48f697100f2935d0fa33e5ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0b54ad4592e22f828074ef29d734f7f9441921f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新啟用已停用的 VSTO 增益集
   Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 如果應用程式在您嘗試進行偵錯時並未載入 VSTO 增益集，表示應用程式可能已經強制停用或非強制停用 VSTO 增益集。  
@@ -74,9 +75,9 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 [COM 增益集]  對話方塊中，選取已停用 VSTO 增益集旁邊的核取方塊。  
   
-7.  按一下 [確定]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [偵錯 Office 專案](../vsto/debugging-office-projects.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

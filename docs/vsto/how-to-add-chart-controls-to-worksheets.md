@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ba31b5577090c3aef01ad974ba51a72e6f9980e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 53b30bb62e4c4f4146b1c43b6fe08f9683ba4867
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：將圖表控制項加入至工作表
   您可以在設計階段及執行階段，於文件層級自訂中，將 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項加入 Microsoft Office Excel 工作表。 您也可以在執行階段，於 VSTO 增益集中加入 <xref:Microsoft.Office.Tools.Excel.Chart> 控制項。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   要繪製成圖表的資料，即工作表中 A5 到 D8 之間的範圍。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [圖表控制項](../vsto/chart-control.md)   

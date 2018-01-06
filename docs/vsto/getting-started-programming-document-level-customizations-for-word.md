@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Word 文件層級自訂的程式設計入門
   如果您剛開始使用 Visual Studio 建立 Microsoft Office word 的文件層級自訂，以下是您需要知道。  
@@ -67,13 +68,13 @@ ms.lasthandoff: 10/31/2017
   
  如需引導您完成一些常見的工作，在 Word 專案中的主題，請參閱[Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [Word 方案](../vsto/word-solutions.md)   
  [逐步解說： 建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

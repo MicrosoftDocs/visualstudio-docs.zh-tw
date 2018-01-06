@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：以不執行程式碼的方式開啟 Office 方案
   建立具有 managed 程式碼擴充的 Microsoft Office 方案時仍會執行使用者的 Office 應用程式中的安全性設定設定為高。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office 管理。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
      如果方案由多人使用，這個方法會防止執行所有這些方案。 如果問題位於程式碼或參考的伺服器，而且您想要停止執行它的所有使用者，這可能會很有用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

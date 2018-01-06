@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c77d5fb404be8dda323720c1e0c1ab2c1887c88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cace0c9826a76a4a8341c6b85e1219dcf287e80a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="secure-deployment"></a>安全的部署
   當您建立 Office 方案時，會自動允許之程式碼執行的專案中更新您的開發電腦。 不過，當您部署方案時，您必須提供的簽署憑證，使用的方案，或使用基礎信任決策的辨識項[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示金鑰。 如需詳細資訊，請參閱[授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  若要啟用 Office 方案執行程式碼，將這兩個`Disabled`項目為 0 （零），或刪除的登錄項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [若要執行或裝載 Office 方案的電腦進行準備工作](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  

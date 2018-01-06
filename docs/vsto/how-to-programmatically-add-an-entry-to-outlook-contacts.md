@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d94e1c1fa7aac5fe5be517587155be1f7c00102
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2e72b3391660c3eb4d132b549666695cbf5e4ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>如何：以程式設計方式將項目加入至 Outlook 連絡人
   這個範例會建立新的連絡人，並輸入新的連絡人的資料。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_OL_AddContact#1](../vsto/codesnippet/VisualBasic/Trin_OL_AddContact/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_AddContact#1](../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用連絡人項目](../vsto/working-with-contact-items.md)   
  [如何： 以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)   
  [如何： 以程式設計方式存取 Outlook 連絡人](../vsto/how-to-programmatically-access-outlook-contacts.md)   

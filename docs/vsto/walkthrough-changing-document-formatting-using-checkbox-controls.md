@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項來變更文件格式
   本逐步解說示範如何使用 Microsoft Office Word 的文件層級自訂的 Windows Form 控制項，變更文字格式。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立 Word 文件專案名稱**My Word 格式**。 在精靈中，選取**建立新的文件**。  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
+    |**名稱**|**applyBoldFont**|  
     |**Text**|**粗體**|  
   
 4.  按**Enter**移動插入點在第一個核取方塊下方。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
+    |**名稱**|**applyItalicFont**|  
     |**Text**|**斜體**|  
   
 6.  按**Enter**移動插入點在第二個核取方塊下方。  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
+    |**名稱**|**applyUnderlineFont**|  
     |**Text**|**加上底線**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>若要加入文字和書籤控制項  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
   
 -  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   

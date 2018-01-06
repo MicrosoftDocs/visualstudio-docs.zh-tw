@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
   Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置自訂的解決方案符合標準的協助工具需求。 Microsoft 會發行在網站上的協助工具的指導方針。 如需詳細資訊，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
      此時會出現訊息指出您必須重新啟動 Visual Studio，變更才會生效。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 5.  重新啟動 Visual Studio，並重新開啟您的專案。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  您可以使用 [放大鏡]，以克服這些限制。 [放大鏡] 是顯示公用程式建立個別的視窗以顯示螢幕的放的大部分的 Windows。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [殘障人士的協助工具](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5ecc739da7cc3aa78a5c175ae323f5cd2447d40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44fd32f579eb6d8f27d9eddf00be946349c4bc86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：擷取 SharePoint 專案服務
   您可以存取 SharePoint 專案服務，在下列類型的方案：  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  在 Visual Studio 擴充功能具有存取權<xref:EnvDTE80.DTE2>物件，您可以要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件使用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法<xref:Microsoft.VisualStudio.Shell.ServiceProvider>物件。 如需詳細資訊，請參閱[從 DTE 物件取得服務](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
  [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)  

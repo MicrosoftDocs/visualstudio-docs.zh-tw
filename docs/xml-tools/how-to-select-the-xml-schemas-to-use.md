@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50077e430d6d9f273dd4cd3e247de3df043804c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取。 結構描述快取包括用於 IntelliSense 及 XML 文件驗證的常見 XML 結構描述。  
@@ -44,7 +45,7 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
   
     -   選取多個結構描述中所列**XML 結構描述**對話方塊中，以滑鼠右鍵按一下並選取**使用此結構描述**。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      選取的結構描述的清單複製到**結構描述**文件屬性。  
   
@@ -73,7 +74,7 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
     > [!NOTE]
     >  如果您仍必須透過結構描述的參考`schemaLocation`屬性，或符合`targetNamespace`然後**移除**中自動關聯會導致這種情況下將無法運作。 在此情況下建議您將標示為結構描述**不使用選取的結構描述**中**使用**資料行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [結構描述快取](../xml-tools/schema-cache.md)   
  [XML 結構描述 對話方塊](../xml-tools/xml-schemas-dialog-box.md)   
  [XML 編輯器](../xml-tools/xml-editor.md)

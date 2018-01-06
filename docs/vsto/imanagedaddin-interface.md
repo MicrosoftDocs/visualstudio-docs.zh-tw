@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d892b48f5cd22e1175f6cb046f627efb398e044
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be74604bfabde34f2046af98ac976abd37068022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   實作 IManagedAddin 介面，以建立元件載入 managed VSTO 增益集。2007 Microsoft Office system 中已新增這個介面。  
@@ -87,7 +88,7 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]  
 >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的 VSTOLoader.dll 也會使用這個 CLSID。 因此，如果您使用 IManagedAddin 來建立您自己的 VSTO 增益集載入器和執行階段元件，您無法部署您的元件會執行 VSTO 增益集依賴的電腦[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Unmanaged 的 API 參考 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
   
   

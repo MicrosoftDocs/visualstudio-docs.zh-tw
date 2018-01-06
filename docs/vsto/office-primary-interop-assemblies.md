@@ -19,11 +19,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b97c44da9740d36ea68766c8dc0e56e535d5165
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: faef08b559a2e792630c03bcd09acf5122b9ddac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
   若要從 Office 專案使用 Microsoft Office 應用程式的功能，您必須使用應用程式的主要 Interop 組件 (PIA)。 PIA 可讓 Managed 程式碼與 Microsoft Office 應用程式的 COM 物件模型互動。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="binding-redirect-assemblies"></a>繫結重新導向組件  
  當您在全域組件快取中安裝及註冊 Office PIA 時 (使用 Office 或是安裝 PIA 的可轉散發套件)，只會在全域組件快取中安裝繫結重新導向組件。 這些組件可確保執行階段載入的是正確版本的主要 Interop 組件。 例如，當參考 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 組件的方案會在具有相同主要 Interop 組件之 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的電腦上執行時，繫結重新導向組件會指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 執行階段載入 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主要 Interop 組件。 如需詳細資訊，請參閱[操作說明：啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [InfoPath 方案](../vsto/infopath-solutions.md)   

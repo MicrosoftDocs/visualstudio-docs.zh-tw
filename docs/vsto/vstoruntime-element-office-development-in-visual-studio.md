@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d6ac2393a5cfd27b2909fb5a5d63ff0260941e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 13f5517e0bde4d5881acaf89640b01509cf19eb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/31/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`release`|必要項。 Visual Studio Tools for Office Runtime 的發行版本。|  
-|`version`|必要項。 Visual Studio Tools for Office Runtime 的版本號碼。|  
-|`supportUrl`|選擇項。 Visual Studio Tools for Office Runtime 的安裝位置連結。|  
+|`release`|必要。 Visual Studio Tools for Office Runtime 的發行版本。|  
+|`version`|必要。 Visual Studio Tools for Office Runtime 的版本號碼。|  
+|`supportUrl`|選擇性。 Visual Studio Tools for Office Runtime 的安裝位置連結。|  
   
  `vstoRuntime` 沒有任何項目。  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
     supportUrl="http://www.microsoft.com" />  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

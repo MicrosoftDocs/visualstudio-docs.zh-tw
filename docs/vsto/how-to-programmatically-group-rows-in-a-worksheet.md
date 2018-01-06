@@ -25,11 +25,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c11911d6d9e7b92b7a86b21723c8788afe15a57b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f17c90fb5f10dfdc0658f9176e0e15cedcc6f1d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式在工作表中分組資料列
   您可以分組一或多個整個資料列。 若要在工作表中建立群組時，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生 Excel 範圍物件。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   

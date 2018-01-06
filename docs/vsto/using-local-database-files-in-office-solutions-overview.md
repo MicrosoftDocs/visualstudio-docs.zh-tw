@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>使用在 Office 方案概觀中的本機資料庫檔案
   您可以包含資料庫檔案，例如 SQL Server Express (.mdf) 檔案或 Microsoft Office Access (.mdb) 檔案，在 Office 方案中。 這可讓使用者維護的情況下維護集中式的資料庫不必要的例如在使用單一電腦的本機庫存方案中的本機資料庫。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="local-database-files-and-caching-the-dataset"></a>本機資料庫檔案和快取資料集  
  在 Microsoft Office Excel 和 Microsoft Office Word 文件層級方案中，您可以在快取文件中的資料集來標記與屬性的資料集執行個體<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>。 當您將資料庫檔案加入您的專案使用**資料來源組態精靈**，自動具類型資料集加入至您的專案。 它是很少會需要套用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>此資料集，因為資料已在本機使用者的電腦上。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 從資料庫的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   

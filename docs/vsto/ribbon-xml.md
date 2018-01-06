@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   [功能區 (XML)] 項目可讓您使用 XML 自訂功能區。 如果您想要以 [功能區 (視覺化設計工具)] 項目不支援的方式自訂功能區，請使用 [功能區 (XML)] 項目。 您可以如何處理每個項目比較，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
  下表描述功能區 XML 檔中的預設項目。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |**customUI**|代表 VSTO 增益集專案中的自訂功能區。|  
 |**ribbon**|代表功能區。|  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
  這些項目都擁有指定自訂功能區外觀和行為的屬性。 下表描述功能區 XML 檔中的預設屬性。  
   
-|屬性|父項目|說明|  
+|屬性|父項目|描述|  
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|識別應用程式載入功能區時所呼叫的方法。|  
 |**idMso**|**索引標籤**|識別要顯示在功能區中的內建索引標籤。|  
@@ -142,11 +143,11 @@ ms.lasthandoff: 10/31/2017
   
 |方法|描述|  
 |------------|-----------------|  
-|`GetCustomUI`|傳回功能區 XML 檔案的內容。 Microsoft Office 應用程式會呼叫這個方法，以取得定義自訂功能區使用者介面的 XML 字串。 這個方法會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`應該只能為傳回功能區 XML 檔案的內容而實作不應該用來初始化 VSTO 增益集。   具體而言，您不應嘗試在 `GetCustomUI` 實作中顯示對話方塊或其他視窗。 否則自訂功能區可能無法正確運作。 如果需要執行初始化 VSTO 增益集的程式碼，請將該程式碼加入至 `ThisAddIn_Startup` 事件處理常式。|  
+|`GetCustomUI`|傳回功能區 XML 檔案的內容。 Microsoft Office 應用程式會呼叫這個方法，以取得定義自訂功能區使用者介面的 XML 字串。 這個方法會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`應該只能為傳回功能區 XML 檔案的內容而實作不應該用來初始化 VSTO 增益集。 具體而言，您不應嘗試在 `GetCustomUI` 實作中顯示對話方塊或其他視窗。 否則自訂功能區可能無法正確運作。 如果需要執行初始化 VSTO 增益集的程式碼，請將該程式碼加入至 `ThisAddIn_Startup` 事件處理常式。|  
 |`OnLoad`|將 <xref:Microsoft.Office.Core.IRibbonControl> 參數指派給 `ribbon` 欄位。 Microsoft Office 應用程式會在載入自訂功能區時呼叫此方法。 您可以使用這個欄位動態更新自訂功能區。 如需詳細資訊，請參閱技術文件自訂開發人員適用的 Office (2007) 功能區使用者介面 (第一部分，共三部分) [GetCustomUI](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3)。|  
 |`GetResourceText`|由 `GetCustomUI` 方法呼叫以取得功能區 XML 檔案的內容。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [逐步解說： 使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)  

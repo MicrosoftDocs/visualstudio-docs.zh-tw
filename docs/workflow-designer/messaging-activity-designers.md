@@ -11,18 +11,19 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2aa2383326682dcedbb0888f5b55d34e3894327c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 481d9e577989b1bd75cea22e0faab6d8a1cc64cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 傳訊活動設計工具會用來建立及設定從 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 應用程式內部傳送與接收 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 訊息的傳訊活動。 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] 導入五個傳訊活動，而且 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 提供兩個新的範本設計工具，可用來管理工作流程內的傳訊。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活動與範本設計工具的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|訊息活動|說明|  
+|訊息活動|描述|  
 |----------------------|-----------------|  
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|建立及設定 <xref:System.ServiceModel.Activities.CorrelationScope> 活動，該活動會使用 <xref:System.ServiceModel.Activities.CorrelationHandle> 物件提供子系傳訊活動的隱含管理。|  
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|建立及設定 <xref:System.ServiceModel.Activities.InitializeCorrelation> 活動，該活動會用來初始化相互關聯而不傳送或接收訊息。|  

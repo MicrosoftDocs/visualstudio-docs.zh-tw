@@ -19,11 +19,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fe1626a818a6442e56e8934b142a31b65f83c0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 08b66bdb454c12e54756a0cde37dccdb53024a6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說：VSTO 增益集專案中的簡單資料繫結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件，以及在執行階段將控制項繫結至資料。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-a-new-project"></a>建立新專案  
  第一步是建立 Word VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  使用 Visual Basic 或 C#，建立名稱為 [ **從資料庫填入文件**] 的 Word VSTO 增益集專案。  
   
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/31/2017
   
      否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱[加入新連接](../data-tools/add-new-connections.md)。  
   
-5.  在 [ **將連接字串儲存到應用程式組態檔** ] 頁面上，按 [ **下一步**]。  
+5.  在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。  
   
 6.  在 [ **選擇您的資料庫物件** ] 頁面中，展開 [ **資料表** ]，然後選取 [ **Customer (SalesLT)**]。  
   
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  按 [ **下一個** ] 和 [ **前一個** ] 按鈕，即可捲動資料庫記錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   

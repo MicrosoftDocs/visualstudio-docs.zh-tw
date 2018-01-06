@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b483889dbd970b2225c773e6dd43b9333b0d8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：顯示增益集使用者介面錯誤
   根據預設，如果 VSTO 增益集嘗試處理 Microsoft Office 使用者介面 (UI) 時失敗，不會顯示任何錯誤訊息。 不過，您可以設定 Microsoft Office 應用程式，顯示與 UI 相關的錯誤訊息。 您可以使用這些訊息來協助判斷為何自訂功能區未出現，或為何出現了功能區但沒有出現任何控制項。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  對於 Outlook，[顯示 VSTO 增益集使用者介面錯誤]  核取方塊位於詳細資料窗格的 [開發人員]  區段。 對於其他應用程式，此核取方塊位於詳細資料窗格的 [一般]  區段。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   

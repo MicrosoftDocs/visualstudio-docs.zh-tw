@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 65510d727fdf0640ca8efa646a14d0814951cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8288db6ddca4041a409b435ccd730d0b15b013b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-activity-designer"></a>使用舊版活動設計工具
 本主題描述如何在舊版 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 中使用活動設計工具。 當以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標時，請使用舊版設計工具。  
@@ -49,15 +50,15 @@ ms.lasthandoff: 10/27/2017
   
 |屬性|註解|  
 |--------------|--------------|  
-|**Name**|活動名稱。|  
+|**名稱**|活動名稱。|  
 |**基底類別**|衍生活動的基底類別。 預設基底類別是[SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020)。 在**屬性**視窗中，按一下 **基底類別**省略**[…]**選取中的另一個基底類別[瀏覽並選取.NET 類型對話方塊 （舊版）](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)。|  
-|**說明**|使用者定義的活動描述。|  
+|**描述**|使用者定義的活動描述。|  
 |**已啟用**|設定為**True**依預設，若要啟用活動執行和驗證。 設定為**False**停用活動的執行與驗證。 如需活動執行和驗證資訊，請參閱[開發工作流程活動](http://go.microsoft.com/fwlink?LinkID=65024)。|  
   
 ## <a name="adding-child-activities"></a>新增子活動  
  您可以將子活動從 [工具箱] 拖曳至您正在設計的活動。 接著，便可以使用屬性瀏覽器設定每一個子活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發工作流程活動](http://go.microsoft.com/fwlink?LinkID=65024)   
  [建立自訂活動](http://go.microsoft.com/fwlink?LinkID=65021)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)   

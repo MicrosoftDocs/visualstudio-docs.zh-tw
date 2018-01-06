@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2f7b77dfb83fbadb4b05685e684e95ee0c2d57cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 56a20f6e29f0f1bd6e071e6d3b48442c0bf02e77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt;活動設計工具
 <xref:System.Activities.Statements.ParallelForEach%601> 活動會列舉集合的項目，並且平行執行集合中各個項目的內嵌陳述式，而這是同一個執行緒上的非同步處理。 如果預期此活動的子活動會進入閒置狀態，請使用這個流量控制活動代替 <xref:System.Activities.Statements.Sequence> 活動。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/27/2017
   
  依預設，迴圈 Iterator 會命名為 item。 您可以變更中的迭代器變數名稱**ForEach**方塊中**ParallelForEach\<T >**活動設計工具。 迴圈 Iterator 可用在 <xref:System.Activities.Statements.ParallelForEach%601> 活動子系中的運算式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [順序](../workflow-designer/sequence-activity-designer.md)   
  [平行](../workflow-designer/parallel-activity-designer.md)   
  [控制流程](../workflow-designer/control-flow-activity-designers.md)

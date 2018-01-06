@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12a367b6051f7ed1ca1f51e0c9d7e8ada4be4ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 88509ec452525647e4ce36b0c7e5e35574d6243f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：簽署 Office 方案
   如果您登入方案時，可以授與信任給方案以辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有方案將都會信任。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  若要確認正在使用正確的憑證，請按一下**更多詳細資料**檢視憑證資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [專案設計工具、簽署頁面](/visualstudio/ide/reference/signing-page-project-designer)  

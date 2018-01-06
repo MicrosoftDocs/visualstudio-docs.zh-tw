@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03679a6d6acbee2a69d0ffa576b3606be4b64a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 098dc82734ca200ff538f284e002c1cbff424fbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔
 本主題描述如何建立新 XML 結構描述 (XSD) 檔案，然後將內容加入至 XSD 檔案。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
      XML 結構描述總管將以新的結構描述集進行更新。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 XML 資料](../xml-tools/working-with-xml-data.md)   
  [XML 結構描述設計工具工作](../xml-tools/xml-schema-designer-tasks.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7faec3b7a6bf33886928034e1f68ab31c7a60b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-workflow-designer"></a>使用舊版工作流程設計工具
 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 可用來以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
 |自動捲動|如果您的工作流程很大，有時可能需要在設計介面區域的可視範圍外放置活動。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您將活動拖曳到設計介面的邊緣，靠近您要放置活動的地方。 設計介面檢視會自動往該方向捲動。|  
 |智慧標籤|設定不完整或是設定無效的活動會以驚嘆號圖示標記。 您可以按一下圖示，便會看到一個下拉式清單，其中列出活動中的組態需求。 然後您可以使用**屬性**適當地設定活動的視窗。 當活動的所有屬性都有效時，驚嘆號圖示便會消失。|  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Visual Studio 工作流程視窗 (舊版)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
   
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/27/2017
   
  [舊版 Windows Workflow Foundation UI 設計工具的說明](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發工作流程](http://go.microsoft.com/fwlink?LinkID=65010)

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8b5158bb17470ce63dbc22dc5b501a314ebda8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f9b9b3500b833b8ecf56d66d036f8284484b6600
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>如何：在功能區群組中加入對話方塊啟動程式
   您可以加入對話方塊啟動程式功能區上的任何群組。 對話方塊啟動是小型圖示出現在群組中。 使用者按一下此圖示以開啟相關的對話方塊或提供更多的選項與群組相關聯的工作窗格。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
      將程式碼加入<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick>開啟自訂或內建對話方塊群組的事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   

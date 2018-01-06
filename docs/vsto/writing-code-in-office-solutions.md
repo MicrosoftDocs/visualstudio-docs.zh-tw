@@ -37,11 +37,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2147076bd4aa90230d1216af19459efe71209d50
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5d6a400f5c1ee523e2bb3fd95be215af0e5ba371
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-in-office-solutions"></a>撰寫 Office 方案中的程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
 |-------------|-----------------|-----------------------------------------|  
 |陣列索引|Microsoft Office 應用程式中的集合的較低陣列界限從 1 開始。 Visual Basic 和 Visual C# 使用以 0 為基礎的陣列。 如需詳細資訊，請參閱[陣列 &#40;& #35。程式設計手冊 &#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的陣列](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要存取 Microsoft Office 應用程式物件模型中的集合的第一個項目，請使用索引 1，而不是 0。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 專案中的事件](../vsto/events-in-office-projects.md)   

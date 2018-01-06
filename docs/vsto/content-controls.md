@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>內容控制項的資料繫結事件  
  所有的內容控制項都會提供一組事件，您可以控制它們來執行與資料相關的工作，例如先驗證控制項中的文字是否符合特定準則，再更新資料來源。 下表列出與資料繫結相關的內容控制項事件。  
   
-|工作|事件|  
+|工作|Event - 事件|  
 |----------|-----------|  
 |就在 Word 自動更新繫結至自訂 XML 組件的內容控制項文字之前，執行程式碼。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |就在 Word 自動更新繫結至內容控制項的自訂 XML 組件資料之前 (也就是內容控制項中的文字變更之後)，執行程式碼。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
@@ -238,7 +239,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [逐步解說： 使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   

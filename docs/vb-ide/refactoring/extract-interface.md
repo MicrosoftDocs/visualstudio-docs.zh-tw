@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: VB
-ms.openlocfilehash: 9616cae1282b992722f75eee091e2c9d271e85f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 08bbae629dbd0e1098eca67107926d290ffe7fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-visual-basic"></a>擷取在 Visual Basic 中的介面
 **項目：**可讓您建立使用現有的成員，從類別、 結構或介面的介面。
@@ -42,18 +43,18 @@ ms.lasthandoff: 10/31/2017
      * 以滑鼠右鍵按一下選取的類別名稱**快速控制項目及重構**功能表，然後選取**擷取介面**從預覽視窗快顯視窗。
 
 1. 在**擷取介面**顯的對話方塊中輸入系統要求的資訊：![擷取介面](media/extractinterface_dialog.png)
-   | 欄位 | 說明 |
+   | 欄位 | 描述 |
    | --- | --- |
    | **新的介面名稱** | 要建立的介面名稱。 這將會預設為我*ClassName*，其中*ClassName*是您在上面選取之類別的名稱。 |
    | **新的檔案名稱** | 將產生包含檔案的介面名稱。 因為使用的介面名稱，則會預設為我*ClassName*，其中*ClassName*是您在上面選取之類別的名稱。 |
    | **選取 public 成員以形成介面** | 要擷取至介面的項目。  您可以選取 視需要為您想。 |
 
-1. 按一下 [確定]。
+1. 按一下 [確定 **Deploying Office Solutions**]。
 
    指定之名稱的檔案中，將會立即建立介面。  此外，您所選取的類別現在會實作該介面。
 
    ![產生的類別](media/extractinterface_class.png)
    ![產生介面](media/extractinterface_interface.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [重構 (Visual Basic)](../refactoring-vb.md)

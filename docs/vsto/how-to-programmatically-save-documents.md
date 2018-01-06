@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c6a47bae9923d68acc189c53766d5206244f97c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 251522a745ee7b8dc9894a403f09d1a6d3f32793
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何：以程式設計方式儲存文件
   有幾種方式來儲存 Microsoft Office Word 文件。 您可以儲存文件，而不需要變更的文件的名稱，或您可以使用新名稱儲存文件。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要以新名稱儲存文件，名為 Test 的目錄必須存在於磁碟機 c。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 以程式設計方式關閉文件](../vsto/how-to-programmatically-close-documents.md)   
  [如何： 以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Document 主項目](../vsto/document-host-item.md)   

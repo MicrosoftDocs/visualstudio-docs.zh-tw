@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d7fbdb1851669d704cb8a44f8144291c04ae0ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f840354cad5551a9413ccb74851dfaca3353a5fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>HOW TO：叫用工作流程偵錯工具
 一般而言，偵錯工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以利用下列方式啟動工作流程偵錯工具：  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/27/2017
   
 -   如果您要建立的工作流程主控台應用程式專案，直接按**F5**開始進行偵錯您的應用程式和工作流程。 如果您正在自行建置活動程式庫，必須使用可執行的裝載應用程式做為啟始專案。 在中設定啟始專案**方案總管 中**，主應用程式的專案名稱上按一下滑鼠右鍵，然後選取**設定為啟始專案**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   
  [使用工作流程設計工具偵錯工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

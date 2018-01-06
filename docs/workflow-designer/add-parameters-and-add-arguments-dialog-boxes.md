@@ -11,11 +11,12 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 517cbacd0c92d220ca446b8523c3383f8bac0a97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>加入參數及加入引數對話方塊
 下表描述的使用者介面 (UI) 項目**將參數加入**所使用的對話方塊<xref:System.Activities.Statements.InvokeMethod>設計工具。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
   
 |||  
 |-|-|  
-|**Name**|引數的名稱。|  
+|**名稱**|引數的名稱。|  
 |**方向**|指定引數表示資料傳入委派、從委派傳出資料，或兩者皆是。|  
 |**Type**|新引數的型別名稱。|  
 |**值**|用於此委派引數執行個體的值。|

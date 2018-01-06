@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3834ee91b06a668052a4fd86e559e0d4dbdd8f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acbe1cf2a97018dae1a69e363594d415a9e62c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>如何：以程式設計方式在收到電子郵件訊息時執行動作
   本範例會在使用者會收到電子郵件訊息時執行自訂動作。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_PerformActions/thisaddin.vb#1)]
  [!code-csharp[Trin_Outlook_RL_PerformActions#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_PerformActions/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [使用郵件項目](../vsto/working-with-mail-items.md)   
  [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  

@@ -22,11 +22,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbb628ffc8f52de34aa67ad5888b7110d1bc7da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8933345017cef96c17ed69a42dc3e095fcf7c7ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>GetCustomUI
   本逐步解說示範如何建立自訂功能區索引標籤使用**功能區 (XML)**項目。  
@@ -40,19 +41,19 @@ ms.lasthandoff: 10/31/2017
 -   使用上的按鈕自動化 Microsoft Office Word**增益集** 索引標籤。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Word。  
+-   Microsoft Word  
   
 ## <a name="creating-the-project"></a>建立專案  
  第一步是建立 Word VSTO 增益集專案。 您稍後將會自訂**增益集**這份文件 索引標籤。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立**Word 增益集**名稱專案**MyRibbonAddIn**。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在**方案總管] 中**，以滑鼠右鍵按一下**MyRibbon.xml** ，然後按一下 [**開啟**。  
   
-2.  取代內容** 索引標籤**具有下列 XML 項目。 這段 XML 會變更預設控制項群組的標籤**內容**，並將兩個新的按鈕標籤**插入文字**和**插入表格**。  
+2.  取代內容 **索引標籤**具有下列 XML 項目。 這段 XML 會變更預設控制項群組的標籤**內容**，並將兩個新的按鈕標籤**插入文字**和**插入表格**。  
   
     ```  
     <tab idMso="TabAddIns">  
@@ -158,7 +159,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用 Outlook 表單區域自訂 Microsoft Office Outlook 的 UI。 如需詳細資訊，請參閱[逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  

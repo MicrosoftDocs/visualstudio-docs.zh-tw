@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 是視覺化設計工具，也是偵錯工具，可用於圖形建構與 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 開發環境下所裝載之 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] 中的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 應用程式之偵錯。 它可讓您使用範本與活動設計工具，來撰寫複合工作流程應用程式、活動程式庫或 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 服務。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]工作流程，請參閱[Windows Workflow Foundation &#91;。NET Framework 4 &#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
 -   **加入服務參考...**功能可讓您產生的活動會自動存取 Web 服務。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)  
  示範如何使用內建設計工具來建立新的活動與工作流程專案，以及如何使用設計工具提供的其他工具來處理引數、變數、運算式、匯入和階層連結列巡覽。  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 320233edede13e2f33bdcb206b056bf1d0b94b8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2db745d34c86e4b0aa5639872106096421044bce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>選擇作業對話方塊 (舊版)
 本主題描述如何使用**選擇作業**對話方塊中，在舊版[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/27/2017
   
  下表描述的使用者介面 (UI) 項目**選擇作業** 對話方塊。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |----------------|-----------------|  
 |**新增合約**|為您建立新合約。 您可以在這個合約上定義新作業。 (這個介面僅能與 <xref:System.Workflow.Activities.ReceiveActivity> 搭配使用)|  
 |**加入作業**|將新作業加入至您在中建立的新合約**選擇作業** 對話方塊。 **注意：**您可以加入新的作業只透過建立的合約**選擇作業** 對話方塊。 <br /><br /> (這個介面僅能與 <xref:System.Workflow.Activities.ReceiveActivity> 搭配使用)|  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 > [!NOTE]
 >  **選擇作業**對話方塊會顯示唯一的合約或作業所使用的其他<xref:System.Workflow.Activities.SendActivity>工作流程中的活動。 同樣地，**選擇作業**對話方塊的 <xref:System.Workflow.Activities.ReceiveActivity>活動顯示唯一的合約或作業所使用的其他**ReceiveActivity**工作流程中的活動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 實作 WCF 合約作業 （舊版）](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [如何： 叫用 WCF 合約作業 （舊版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [舊版 Windows Workflow Foundation UI 設計工具的說明](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

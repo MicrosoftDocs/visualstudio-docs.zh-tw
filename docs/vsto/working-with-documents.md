@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2236ecbc6bb30ff3cfba9bebd5d5e5509f54721a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c18ae3fb8c3366c1c8e552f4b5f24a34004ce9d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-documents"></a>使用文件
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文件，提供逐步程序和程式碼範例。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |在文件中加入頁首或頁尾。|[如何：以程式設計方式在文件中新增頁首和頁尾](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|  
 |移除文件中所有註解。|[如何：以程式設計方式從文件中移除所有的註解](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   

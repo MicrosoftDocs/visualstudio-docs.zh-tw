@@ -22,11 +22,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38508a664ff94628dfd3fd5ec00eacb32fbb1187
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4f8d987b8079230591d4bfdbe51c6d640cbf265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>從其他 Office 方案呼叫 VSTO 增益集的程式碼
   您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Microsoft Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您的 Microsoft Office Excel VSTO 增益集會計算 Web 服務的財務資料，則其他方案可以在執行階段呼叫這個 Excel VSTO 增益集來執行這些計算。  
@@ -146,7 +147,7 @@ utilities.ImportData();
   
  在這個範例中，如果您嘗試將 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 屬性的值轉型為 `AddInUtilities` 類別 (而不是 `IAddInUtilities` 介面)，則程式碼會擲回 <xref:System.InvalidCastException>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

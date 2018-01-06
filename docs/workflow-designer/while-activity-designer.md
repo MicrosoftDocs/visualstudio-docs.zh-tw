@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: b70e0c66813c474d5711538843da93a669df88d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f232d8e6c4a1dab9000b8f0e0f3037d083acbbef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="while-activity-designer"></a>While 活動設計工具
 <xref:System.Activities.Statements.While>活動會執行包含的活動其<xref:System.Activities.Statements.While.Body%2A>時指定<xref:System.Activities.Statements.While.Condition%2A>評估為**true**。 包含的活動可能永遠不會執行。 如果您要包含的活動至少執行一次，請改用 <xref:System.Activities.Statements.DoWhile> 活動。  
@@ -30,6 +31,6 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.While.Body%2A>|False|包含要執行的活動時<xref:System.Activities.Statements.While.Condition%2A>評估為**true**。|  
 |<xref:System.Activities.Statements.While.Condition%2A>|True|包含要評估的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 運算式，用於判斷是否要執行 <xref:System.Activities.Statements.While.Body%2A> 中的活動。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制流程](../workflow-designer/control-flow-activity-designers.md)   
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)

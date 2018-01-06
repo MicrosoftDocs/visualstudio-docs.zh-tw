@@ -61,11 +61,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d57dab19820436dd9c7e3fb07607b5506c180a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e0da4387056e68046294a2f82c9db7bbc798de07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
   您可以使用下列資源可協助您尋找 Visual Studio 中建立 Office 方案時遇到的常見問題的解答。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/31/2017
  [用於開發 Office 方案的其他資源](../vsto/additional-resources-for-developing-office-solutions.md)  
  提供進一步了解開發 Office 方案和 Visual Studio 中的 Office 程式開發的其他資源的連結。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [疑難排解 Office 方案中的錯誤](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [Office 方案部署疑難排解](../vsto/troubleshooting-office-solution-deployment.md)   

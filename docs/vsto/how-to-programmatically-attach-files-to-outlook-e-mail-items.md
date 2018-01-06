@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c81c5f4981c1d6ebbd26cf9abf22b6c4033f8ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 21a7af80b2c371b0f3088d3aa863d76fc55d7ab1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>如何：以程式設計方式將檔案附加至 Outlook 電子郵件項目
   這個範例會將檔案附加至新的郵件項目，並將它傳送至 Armando Pinto。 範例假設名為 Armando Pinto 個人為收件者。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用郵件項目](../vsto/working-with-mail-items.md)   
  [如何： 以程式設計方式傳送電子郵件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [如何： 以程式設計方式儲存附件從 Outlook 電子郵件項目](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   

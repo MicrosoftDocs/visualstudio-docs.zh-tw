@@ -16,16 +16,17 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 413054698d241a1580a850c271e8710334c020f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f45aed7a9d49bb3803137aac3420a6a61c5de3aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>使用者介面參考 (Visual Studio 中的 Office 程式開發)
   下列使用者介面項目屬於 Visual Studio 中 Office 專案的一部分。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [發行頁面、 專案設計工具 &#40; 的 Office 程式開發 Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)  
  描述用來設定屬性以部署 Office 方案的屬性頁。  
   

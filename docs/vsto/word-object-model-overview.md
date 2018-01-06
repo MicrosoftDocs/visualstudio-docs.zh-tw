@@ -22,11 +22,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b01307811930ec865e2b38e899318dfdd99c74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型概觀
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。  
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
   
  VBA 物件模型參考中的所有物件和成員都會對應至 Word PIA 中的類型和成員。 例如，VBA 物件模型參考中的文件物件對應至<xref:Microsoft.Office.Interop.Word.Document>Word PIA 中的物件。 雖然 VBA 物件模型參考提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Word 專案中使用這些程式碼範例，則必須將這個參考中的 VBA 程式碼轉譯為 Visual Basic 或 Visual C#。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [使用文件](../vsto/working-with-documents.md)   

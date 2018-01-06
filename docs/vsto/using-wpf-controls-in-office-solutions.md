@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>在 Office 方案中使用 WPF 控制項
   雖然 Visual Studio 中使用 Office 開發工具所建立的解決方案設計成直接使用 Windows Form 控制項，您也可以在解決方案中使用 WPF 控制項。 Windows Presentation Foundation (WPF) 是 Windows Form 設計使用者介面的替代方式。 WPF 使用稱為 Extensible Application Markup Language (XAML) 的標記語言，提供納入 UI、媒體和文件新技術。 如需詳細資訊，請參閱[Visual Studio 2015 中的 WPF 簡介](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs)。  
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [逐步解說：設定 WPF 內容的樣式](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   

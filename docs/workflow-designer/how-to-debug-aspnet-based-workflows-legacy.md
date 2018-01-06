@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0eb248f04119f8f0ad70b9a09a4fb22c73399233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: aspnet
+ms.openlocfilehash: 36905d8716b2f6a0fd961f668b7b5ca7c3ef623d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>HOW TO：ASP.NET 工作流程偵錯 (舊版)
 本主題描述如何在舊版 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 中偵錯 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 型 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 應用程式，該應用程式是以 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 為目標。  
@@ -47,13 +48,13 @@ ms.lasthandoff: 10/27/2017
   
 7.  選取**偵錯這些程式碼類型**選取**工作流程**。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
 9. 按一下 [附加] 。  
   
 10. 在瀏覽器中開啟預設網頁，並啟動工作流程。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [叫用 Visual Studio Debugger for Windows Workflow Foundation （舊版）](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
  [如何： 在工作流程 （舊版） 中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)

@@ -12,11 +12,12 @@ ms.assetid: 73c19226-11f2-4b8f-a9e6-98f83fee0667
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 182ee3a78939cb1aa2dc476d7ce3a5772d21de0d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ff21c1eca780947a12ab82a578dcbf65fccbc55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation"></a>程式碼產生
 Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工作。  Visual Basic 提供的下列程式碼產生功能：  

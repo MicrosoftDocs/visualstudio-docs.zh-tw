@@ -23,11 +23,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93010f03384e3cb3930911115ee92b3bb9205b9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 80b01aa30e1f90ad1f2e810519f92a05eb1be954
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿
   您可以使用 VSTO 增益集，以下列方式自訂 Word 文件和 Excel 活頁簿：  
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
  HasVstoObject 方法時，您想要在指定的 Office 物件具有擴充的物件時，才執行程式碼。 例如，如果您有 Word VSTO 增益集處理<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>儲存事件從之前的文件移除 managed 的控制項，您可用來判斷是否已擴充該文件 HasVstoObject 方法。 如果文件尚未擴充，便無法包含 Managed 控制項，因此事件處理常式可能會直接傳回，而不嘗試清除文件上的控制項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

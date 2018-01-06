@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbfccabe310732943a818515c69abc61bec59e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本主題提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不具備執行緒安全，但您可使用 Office 方案中的多個執行緒。 Office 應用程式的元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供序列化並行呼叫，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的機制。 這項機制稱為單一執行緒 apartment (STA) 模型。 呼叫已序列化，因為呼叫端可能會封鎖一段時間，伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="modeless-forms"></a>非強制回應表單  
  非強制回應表單可讓某種類型的應用程式互動時顯示表單。 使用者互動的表單，並與未關閉應用程式互動的表單。 Office 物件模型支援受管理的非強制回應表單。不過，它們不應在背景執行緒上。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Managed 執行緒處理](/dotnet/standard/threading/)  
  [執行緒處理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [執行緒 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [使用執行緒和執行緒處理](/dotnet/standard/threading/using-threads-and-threading)   

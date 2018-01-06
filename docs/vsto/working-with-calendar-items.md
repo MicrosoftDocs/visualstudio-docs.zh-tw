@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45117a5fd69705241c7e35dde66270deddca380e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-calendar-items"></a>使用行事曆項目
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 類別包含您用來執行行事曆項目工作的方法和屬性。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱 [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用連絡人項目](../vsto/working-with-contact-items.md)   
  [使用資料夾](../vsto/working-with-folders.md)   
  [使用郵件項目](../vsto/working-with-mail-items.md)   

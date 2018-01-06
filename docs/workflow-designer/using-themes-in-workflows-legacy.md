@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6acbd33d04c939b95d16da4e0c8085681b602378
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: afaa64da38508ffcf55d86c3a6fe16bd0e884f7a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-themes-in-workflows-legacy"></a>在工作流程中使用佈景主題 (舊版)
 本主題描述當使用以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 為目標的舊版 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 時，如何在 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 中使用佈景主題。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
   
  您可以選取預設值，並儲存自訂佈景主題使用[佈景主題、 工作流程設計工具、 選項對話方塊 （舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)。 若要開啟此對話方塊中，按一下**選取自訂主題**上**工作流程**功能表 (或工作流程設計介面上按一下滑鼠右鍵，然後按一下**選取自訂主題**)，然後選取**工作流程設計工具**選項。 選取的佈景主題，然後按一下**確定**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [主題組態對話方塊 （舊版）](../workflow-designer/theme-configuration-dialog-box-legacy.md)   
  [佈景主題、 工作流程設計工具、 選項對話方塊 （舊版）](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md)   
  [使用舊版工作流程設計工具](../workflow-designer/using-the-legacy-workflow-designer.md)

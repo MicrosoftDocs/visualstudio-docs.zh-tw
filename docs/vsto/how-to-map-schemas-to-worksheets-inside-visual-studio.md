@@ -20,11 +20,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c09c99bc5d8bc964ae3afd82fe7a4a9fd5764edd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：在 Visual Studio 內將結構描述對應至工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用相同的 Microsoft Office Excel 工具，您可以使用 Visual Studio 外部開啟活頁簿時。 將結構描述對應至工作表之前或之後建立 Excel 方案的 Office 專案會建立相同的物件。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  瀏覽至您的結構描述檔案，加以選取，然後按**開啟**。  
   
-8.  按一下 [確定]。  
+8.  按一下 [確定 **Deploying Office Solutions**]。  
   
      結構描述中表示**XML 來源**視窗。 在專案中，具型別的<xref:System.Data.DataSet>會根據結構描述，產生和<xref:System.Windows.Forms.BindingSource>建立。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
      如果您將重複的結構描述項目時，Office 專案會產生<xref:Microsoft.Office.Tools.Excel.ListObject>不會自動繫結至資料來源的控制項。 如需詳細資訊，請參閱[XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 將結構描述對應至 Visual Studio 內的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [文件層級自訂中的 XML 結構描述和資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   

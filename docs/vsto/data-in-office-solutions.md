@@ -19,16 +19,17 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34ba644d94ab24c4967bea6e64b5e70fdd582237
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b96fb2b9f05656835cae4ca164babcc6fcb07cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-in-office-solutions"></a>Office 方案的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
  說明如何在 Office 方案中將資料繫結至控制項。  
   

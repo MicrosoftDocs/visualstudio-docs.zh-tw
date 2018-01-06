@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：匯入主版頁面或佈景主題
   您可以提供網頁 SharePoint 網站上一致的外觀建立並使用主版頁面和佈景主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]未提供範本，針對這些項目，但您可以在 SharePoint Designer 中建立它們，然後再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
      主版頁面或佈景主題的清單隨即出現，並包含的主版頁面或佈景主題，您匯入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [主版頁面](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [建立 SharePoint 的網頁](../sharepoint/creating-pages-for-sharepoint.md)   

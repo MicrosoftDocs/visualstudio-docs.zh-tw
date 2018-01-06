@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>逐步解說：在執行階段於 VSTO 增益集專案中，將控制項加入工作表中
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -76,21 +77,21 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**Button**|  
+    |**名稱**|**Button**|  
     |**Label**|**Button**|  
   
 6.  將第二個核取方塊加入 [group1] ，然後變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**NamedRange**|  
+    |**名稱**|**NamedRange**|  
     |**Label**|**NamedRange**|  
   
 7.  將第三個核取方塊加入**group1**，然後變更下列屬性。  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**ListObject**|  
+    |**名稱**|**ListObject**|  
     |**Label**|**ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>將控制項加入工作表  
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若要深入了解如何將控制項儲存至工作表，請參閱 Excel VSTO 增益集動態控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Excel 方案](../vsto/excel-solutions.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   

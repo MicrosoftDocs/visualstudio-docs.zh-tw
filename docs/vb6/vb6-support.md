@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.openlocfilehash: bdfe33cac19d488bc7763f3c61c518093d8afffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: paulyuk
+ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>支援適用於 Visual Basic 6.0 在 Windows 上的陳述式
 

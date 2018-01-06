@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 68d198675f5b0b91320e9c21d497caf225798cc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c02cf726cbf575eae9c389186846855ee1206c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 **接收**活動設計工具用來建立及設定<xref:System.ServiceModel.Activities.Receive>活動。 <xref:System.ServiceModel.Activities.Receive> 活動是接收訊息的活動，該訊息可能是內建的型別 (例如 <xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream> 或 <xref:System.Xml.Linq.XElement>)，或是應用程式定義的資料合約、訊息合約或可序列化的 XML 類別。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|指定 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之序列化程式的型別。 預設值是 <xref:System.Runtime.Serialization.DataContractSerializer>，這會使用提供的資料合約，將型別的執行個體序列化及還原序列化，成為 XML 資料流或文件。 如果 XML 需要更多控制，也可以使用 <xref:System.Xml.Serialization.XmlSerializer>。|  
 |<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|指定訊息的動作標頭。 如果它未明確設定，其值會預設為： https://tempuri.org/ {服務合約命名空間} / {服務合約名稱} / {作業名稱}。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   

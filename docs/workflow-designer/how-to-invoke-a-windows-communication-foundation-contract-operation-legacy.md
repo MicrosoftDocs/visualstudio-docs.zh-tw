@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 51b20275f63b47d607679e04ff061cf77b0d9f90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fdc27d34efef818dae30d1f54f5f3a67e7408d7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>HOW TO：叫用 Windows Communication Foundation 合約作業 (舊版)
 本主題描述當使用以 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 或 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 為目標的舊版 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 時，如何叫用 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 合約作業。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/27/2017
   
 4.  如果端點組態已不存在，請在組態檔中建立端點組態。 如需有關如何設定您的用戶端的詳細資訊，請參閱[WCF 用戶端概觀](/dotnet/framework/wcf/wcf-client-overview)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選擇作業對話方塊 （舊版）](../workflow-designer/choose-operation-dialog-box-legacy.md)   
  [如何： 實作 WCF 合約作業 （舊版）](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)

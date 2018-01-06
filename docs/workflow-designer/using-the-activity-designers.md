@@ -14,16 +14,17 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 91ce5811be2aae3744afb7444ab35a9a3da54a20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5e82bde3e7d30fd0516deb4f79ff89bb77d19709
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 包括許多系統供應的活動，在您建構活動與工作流程時，可以使用這些活動。 本節描述系統供應的活動分類與其可用的設計工具。 這些類別內的個別活動與其個別設計工具的主題，均描述這些活動的功能，並提供如何使用活動的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [控制流程](../workflow-designer/control-flow-activity-designers.md)  
  用於在工作流程內控制流程的活動設計工具  
   

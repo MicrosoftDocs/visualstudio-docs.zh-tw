@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c099f73e98542c29718efc4158593da35d333abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `appAddin` 命名空間的 `vstov4` 項目會儲存自訂 VSTO 增益集特定的資訊。  
@@ -45,17 +46,17 @@ ms.lasthandoff: 10/31/2017
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`application`|必要項。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
-|`loadBehavior`|選擇項。 根據預設，將此值設定為下列值時，會啟用 `loadBehavior` 。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)中標題為 LoadBehavior 值的表格。|  
-|`keyName`|必要項。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|`application`|必要。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
+|`loadBehavior`|選擇性。 根據預設，將此值設定為下列值時，會啟用 `loadBehavior` 。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)中標題為 LoadBehavior 值的表格。|  
+|`keyName`|必要。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
   
  `appAddin` 項目具有下列子項目。  
   
 ### <a name="friendlyname"></a>friendlyName  
- 選擇項。 `friendlyName`項目中會說明[&#60; friendlyName &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ 選擇性。 `friendlyName`項目中會說明[&#60; friendlyName &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>描述  
- 選擇項。 `description`項目中會說明[&#60; 描述 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/description-element-office-development-in-visual-studio.md).  
+ 選擇性。 `description`項目中會說明[&#60; 描述 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
  只有包含表單區域的 Outlook VSTO 增益集才需要。 `formRegions`項目中會說明[&#60; formRegions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/formregions-element-office-development-in-visual-studio.md).  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

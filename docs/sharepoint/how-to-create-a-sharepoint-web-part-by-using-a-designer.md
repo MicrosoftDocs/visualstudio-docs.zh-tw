@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f329b1402917bc7c129bcdc9f504dfe99bcccbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b993512350e6bd27d0dce8ef359bc33fccde5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>如何：使用設計工具建立 SharePoint Web 組件
   您可以建立的 web 組件加入**視覺 Web 組件**至任何 SharePoint 專案項目。 這會在其中加入控制項和程式碼與 web 組件的 Visual Studio 中開啟 Visual Web Developer 設計工具。 Web 組件一樣，視覺 web 組件運作方式都相同。 唯一的差別在於您設計 Visual Web Developer 設計工具中的視覺 web 組件。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
      在**方案總管 中**，您的 web 組件隨即出現。 設計 Visual Web Developer 設計工具中的網頁組件之後, 您將在您指定的站台上測試。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
  [逐步解說： 建立 SharePoint Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   

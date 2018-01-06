@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d83241e265db0e0ef0165cbc1615f23ea2ec5a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 59c82cd16da614229cedd01bccd7a5057246299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：將 XMLMappedRange 控制項加入至工作表
   當您將 XML 元素對應至 Microsoft Office Excel 中的資料格時，Visual Studio 會自動加入<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項加入工作表。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  如果您將從父項目拖曳**XML 來源**工作窗格<xref:Microsoft.Office.Tools.Excel.ListObject>建立控制項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   

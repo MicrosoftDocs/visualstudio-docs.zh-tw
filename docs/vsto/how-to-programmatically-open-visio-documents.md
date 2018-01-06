@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4aa949d1ff2a8d9954c29314a85363d04d09b1a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b2a6c395ed6dbfb8265ac131dd4318b590bf92e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以程式設計方式開啟 Visio 文件
   有兩種方法來開啟現有的 Microsoft Office Visio 文件： 開啟和 OpenEx。 OpenEx 方法等於開啟方法，不同之處在於它會提供引數中的呼叫端指定文件開啟的方式。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [我的文件] 資料夾 (Windows XP 及更早版本) 或 [文件] 資料夾 (Windows Vista) 中，名為 `myDrawing.vsd` 的目錄中必須有名為 `Test` 的 Visio 文件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [如何： 以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   

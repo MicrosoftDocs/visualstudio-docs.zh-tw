@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2991b31c387e959b055d30d37dd01cf79652adf7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-model-view"></a>內容模型檢視
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型檢視包含兩個面板：**工作區**包含中的節點清單的面板[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)，與設計介面，您可以在其中檢視結構描述的內容模型在選取的節點**工作區**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/02/2017
 ## <a name="context-menus"></a>內容功能表  
  當您以滑鼠右鍵按一下設計介面或 [工作空間] 面板中的項目時，內容功能表隨即出現。 下表描述內容模型檢視設計介面的可用選項。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**在 XML 結構描述總管中顯示**|將焦點放在 XML 結構描述總管，然後反白顯示結構描述集節點。|  
 |**在圖形檢視中顯示**|切換至圖表檢視。|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 11/02/2017
   
  以下資料表描述 [工作空間] 面板可用的選項。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**在 XML 結構描述總管中顯示**|將焦點放在 XML 結構描述總管，然後反白顯示結構描述集節點。|  
 |**在圖形檢視中顯示**|切換至圖表檢視。|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/02/2017
   
  ![XML 結構描述設計工具工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**顯示開始檢視**|切換成[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 1**。|  
 |**顯示內容模型檢視**|切換成[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 2**。|  
@@ -115,5 +116,5 @@ ms.lasthandoff: 11/02/2017
   
  如果您在 XML 編輯器中變更結構描述集，內容模型檢閱也會同步進行變更。 如需詳細資訊，請參閱[使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

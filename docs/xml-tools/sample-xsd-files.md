@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a48af8fb930f30157314b408ff4b77f4c397ff7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98783b05d531f41583bbd3843e50a808f655ba2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-files"></a>範例 XSD 檔案
 XSD 結構描述設計工具文件中使用下列範例檔案。  
@@ -26,7 +27,7 @@ XSD 結構描述設計工具文件中使用下列範例檔案。
   
 ## <a name="in-this-section"></a>本章節內容  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[範例 XSD 檔案：採購單結構描述](../xml-tools/sample-xsd-file-purchase-order-schema.md)|包含一般採購單結構描述的 XSD 文件。|  
 |[範例 XSD 檔案：簡單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)|包含簡單結構描述的 XSD 文件。|  

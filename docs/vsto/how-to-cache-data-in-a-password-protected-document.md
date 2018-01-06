@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb1dd096b08525cd03f65ed46def81979bfaf272
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ecc4913d9d508d95347945b8f4aaa816bc3d510c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：快取受密碼保護文件中的資料
   如果您將資料加入至文件或受密碼保護的活頁簿中的資料快取時，快取的資料變更會不會自動儲存。 您可以覆寫專案中的兩個方法，快取的資料儲存變更。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="compiling-the-code"></a>編譯程式碼  
  將此程式碼加入`ThisWorkbook`專案中的類別。 此程式碼會假設密碼儲存在名為的欄位`securelyStoredPassword`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快取資料](../vsto/caching-data.md)   
  [如何： 使用快取資料，離線或伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何：以程式設計方式快取 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  

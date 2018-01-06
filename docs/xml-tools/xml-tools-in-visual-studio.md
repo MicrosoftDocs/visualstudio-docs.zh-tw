@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3786e74f9913400e7a95d962c8512d2263d6ae39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29407d3f8d95f815b588fff30a4e1268904eb54d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 *可延伸標記語言 (XML)*是一種標記語言，提供用來描述資料格式。 這種語言可以協助在多個平台之間更精確地宣告內容，以及提供更有意義的搜尋結果。 此外，XML 可將資料的呈現方式與資料本身分開。 例如在 HTML 中，您可以使用標記來指示瀏覽器以粗體或斜體顯示資料，但在 XML 中，您只能使用標記來描述資料，例如城市名稱、溫度和氣壓。 在 XML 中，您可以使用可延伸樣式表語言 (XSL) 和階層式樣式表 (CSS) 等樣式表，在瀏覽器中呈現資料。 XML 可將資料的呈現方式和處理分開。 這讓您可以套用不同的樣式表和應用程式，以您想要的方式來顯示及處理資料。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  如需詳細資訊，請參閱[XML 開發人員中心](http://go.microsoft.com/fwlink/?LinkID=100176)，適用於 XML 開發人員提供最新的文件、 技術資訊、 下載、 新聞群組，以及其他資源。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [使用 XML 資料](../xml-tools/working-with-xml-data.md)  
  討論 XML 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之資料處理方式中所扮演的角色。  
   

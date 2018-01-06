@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 282a1bff821ee032d0d08038858c3a04fc7796ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3635a92f40f2ed313ca08dcc6357900ac002a60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  `postActions` 具有下列項目：  
   
 ### <a name="postaction"></a>postAction  
- 選擇項。 角色`postAction`中的項目`vstav3`命名空間中定義[&#60; postAction &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ 選擇性。 角色`postAction`中的項目`vstav3`命名空間中定義[&#60; postAction &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>部署後動作範例  
   
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 </vstav3:postActions>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

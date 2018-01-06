@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32b87cf771b0eda1ba58973dbc2c197f4898dfd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4856554b92f5689e17141004b7d4e0ffe5e781cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：使用內容模型檢視檢查節點的內容模型
 本主題描述如何瀏覽您使用的節點[內容模型檢視](../xml-tools/content-model-view.md)。  

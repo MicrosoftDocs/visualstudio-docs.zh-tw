@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: e4b019c2733a8e411b1d3e5be15af3b272708ce1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcadbe113e92c761559161bdd8a7eba6e95937d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>HOW TO：建立工作流程主控台應用程式
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 可讓您建立執行系統或人工處理序的工作流程。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 會提供建立這些工作流程的設計介面。 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 可用來從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立工作流程，或者可以整合到重新裝載設計工具的其他應用程式中。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/27/2017
   
 9. 若要撰寫工作流程，拖曳活動或其他工作流程項目從**工具箱**到在您的工作流程設計介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

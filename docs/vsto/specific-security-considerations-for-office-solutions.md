@@ -23,11 +23,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dcbda36113bbf17ec65b9397e8312b03dcf7615a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bfe5505fdd861fb99c3f4d40abd0f17e066339b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>指定 Office 方案的安全性考量
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在 [詳細資料] 窗格中，選取 [要求應用程式增益集由受信任的發行者簽署]  或 [停用所有應用程式增益集] 。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

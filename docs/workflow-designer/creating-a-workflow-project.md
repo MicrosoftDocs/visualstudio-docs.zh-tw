@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>建立工作流程專案
 工作流程、[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]、工作流程服務、自訂活動與自訂活動設計工具都可使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本建立。 本節描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中提供的專案範本來建立程式庫和應用程式。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/27/2017
   
  最後一個主題描述如何將工作流程活動、設計工具和服務或是其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 項目加入至現有的工作流程 (或其他) 專案。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：建立工作流程主控台應用程式](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  描述如何建立工作流程主控台應用程式。  
   
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>相關章節  
  [設計工作流程](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)

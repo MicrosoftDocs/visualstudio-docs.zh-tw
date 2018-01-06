@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c1fa8867c4f9ab46b50f0b2a144970d772cbd71
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: azure
+ms.openlocfilehash: 7008ac8ea30e704403542b7b9786cffb1c5da158
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>將 ASP.NET 或 ASP.NET Core 應用程式發行至使用 Visual Studio 的 Azure 應用程式服務
 
@@ -71,5 +72,5 @@ ms.lasthandoff: 12/15/2017
 
 ## <a name="next-steps"></a>後續步驟
 
-- [ASP.NET Core 應用程式部署至 Azure](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [ASP.NET Core 使用 Git 連續部署](https://docs.microsoft.com/en-us/aspnet/core/publishing/azure-continuous-deployment)
+- [ASP.NET Core 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+- [使用 Git 將 ASP.NET Core 持續部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment)

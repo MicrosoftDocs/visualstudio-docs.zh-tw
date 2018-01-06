@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2253eb414e58d5168cf6e1d2f4c22880d18d1bd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d15236de90af6a8749482f2b159d66c28a1b8c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-legacy-workflows"></a>偵錯舊版工作流程
 如果您在 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 中使用舊版 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] 來建置以 .NET Framework 3.0 或 3.5 為目標的 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 應用程式，您可以像任何其他程式一樣，藉由設定中斷點、附加至處理序，並檢查執行緒和呼叫堆疊，來偵錯您的工作流程。 您也可以選擇遠端偵錯。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/27/2017
   
 -   混合模式偵錯。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
  [停用 Visual Studio Debugger for Windows Workflow Foundation (舊版)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  

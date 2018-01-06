@@ -22,11 +22,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a8da60aa9d9dc3ab7becb56b3b4c7701494daef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 07d467d67c78f6779a8be2d21b266f8328e30ff7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：快取資料供離線使用或於伺服器上使用
   您可以標示資料項目，快取中的文件，以便提供離線。 這也使得資料中操作其他程式碼時，文件儲存在伺服器上的文件。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在**屬性**視窗中，將**修飾詞**屬性**公用**(根據預設，它是**內部**)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快取資料](../vsto/caching-data.md)   
  [如何： 以程式設計方式快取中的 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

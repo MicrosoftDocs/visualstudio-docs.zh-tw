@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6927a639bd3bb41b0498b1eb939d07cddcde0a79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1d9008dc88640adee8db3f02b43cad314a47b32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署的逐步解說
   下列主題示範如何設定安全性原則，讓您執行方案，以及如何部署 Office 方案。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
  提供有關您的方案中建立 Word 和 Excel 解決方案和組件的角色資訊的連結。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

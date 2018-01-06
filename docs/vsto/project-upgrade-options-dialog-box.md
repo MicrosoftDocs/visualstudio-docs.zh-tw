@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c35d0f13ff9dff1da3508e935e072bd0129d5d49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 39c46eb81a78319fceac3eb6d184a0a38eaa1f3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-upgrade-options-dialog-box"></a>選項對話方塊、專案升級
   您可以使用 [專案升級]  頁面，指定 Visual Studio 是否會自動變更 VSTO 增益集專案，將其目標設定為開發電腦上所安裝的 Office 版本。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  **永遠升級為已安裝的 Office 版本**  
  由於 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 中的 Office 專案只能以 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 或 Microsoft [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 應用程式為目標，因此會在 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 中停用這個選項。 如需詳細資訊，請參閱 [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md)   
  [如何： 升級 Office 方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
   

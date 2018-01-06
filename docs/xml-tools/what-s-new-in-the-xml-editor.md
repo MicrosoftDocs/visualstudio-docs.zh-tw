@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a4984bf33796f043c4a92ba83407c3c23e23d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c70a4011d38b7ad92b1c225c719fb1ffe709caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-xml-editor"></a>什麼 &#39;的新 XML 編輯器
 下列功能是 Visual Studio 2010 中的新功能。  
@@ -30,6 +31,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="xslt-hierarchy"></a>XSLT 階層  
  XSLT 階層工具可讓您在內含的樣式表和/或內建範本規則中加入中斷點。 如需詳細資訊，請參閱[逐步解說： 使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器工作](../xml-tools/xml-editor-tasks.md)   
  [XML 編輯器](../xml-tools/xml-editor.md)

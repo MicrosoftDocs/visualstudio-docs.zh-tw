@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="mapifolder-object"></a>MAPIFolder 物件  
  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件表示含有電子郵件訊息、連絡人、工作和其他項目的資料夾。 Outlook 會提供 16 個預設的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件。  
   
- 這些預設的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件是由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列舉值所定義。 例如：  
+ 這些預設的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件是由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列舉值所定義。 例如，套用至物件的  
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox 對應至**收件匣**在 Outlook 中的資料夾。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[使用連絡人項目](../vsto/working-with-contact-items.md)|所提供的主題示範如何使用連絡人執行工作。|  
 |[使用郵件項目](../vsto/working-with-mail-items.md)|所提供的主題示範如何使用郵件項目執行工作。|  

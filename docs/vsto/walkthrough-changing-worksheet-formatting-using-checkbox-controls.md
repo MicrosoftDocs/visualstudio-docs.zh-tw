@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項來變更工作表格式
   本逐步解說示範使用 Microsoft Office Excel 工作表上的核取方塊變更格式的基本概念。 您將使用 Visual Studio 中的 Office 程式開發工具建立，並將程式碼加入至您的專案。 若要查看結果為已完成的範例，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   測試您的專案。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="creating-the-project"></a>建立專案  
  在此步驟中，您將使用 Visual Studio 建立的 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  建立名稱的 Excel 活頁簿專案**我的 Excel 格式設定**。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -72,21 +73,21 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
+    |**名稱**|**applyBoldFont**|  
     |**Text**|**粗體**|  
   
 5.  拖曳第二個核取方塊，開啟或儲存格附近**B4**並變更下列屬性：  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
+    |**名稱**|**applyItalicFont**|  
     |**Text**|**斜體**|  
   
 6.  拖曳第三個核取方塊，開啟或儲存格附近**B6**並變更下列屬性：  
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
+    |**名稱**|**applyUnderlineFont**|  
     |**Text**|**加上底線**|  
   
 7.  按住 CTRL 鍵同時選取所有的三個核取方塊控制項。  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  確認**$B$ 9**會出現在編輯的文字方塊和該資料格**B9**已選取。 如果沒有，請按一下資料格**B9**來選取它。  
   
-3.  按一下 [確定]。  
+3.  按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  資料格**B9**成為具名範圍`NamedRange1`。  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
     |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**textFont**|  
+    |**名稱**|**textFont**|  
     |**Value2**|**按一下核取方塊變更格式，這段文字。**|  
   
  接下來，撰寫程式碼格式化的文字，在選取的選項。  
@@ -165,7 +166,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說： 在工作表使用按鈕的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

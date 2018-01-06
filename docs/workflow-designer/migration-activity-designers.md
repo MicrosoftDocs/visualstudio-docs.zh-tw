@@ -11,16 +11,17 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>Migration 活動設計工具
 [移轉] 活動設計工具的用途，是從以 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] 為目標的工作流程呼叫工作流程 3.0/3.5 活動。 本節包含的主題會提供如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活動設計工具的指引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Interop](../workflow-designer/interop-activity-designer.md)  
  用來建立及設定 <xref:System.Activities.Statements.Interop> 活動。  
   

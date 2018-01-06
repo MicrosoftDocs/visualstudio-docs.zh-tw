@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 87398c82d0a22c79d852292fef3f86abe63a443d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bb816aee41f86e2cbdc71e93b78f1a9e09249a00
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 **指派**活動設計工具用來建立及設定<xref:System.Activities.Statements.Assign>活動。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.Assign.To%2A>|True|<xref:System.Activities.Statements.Assign.Value%2A> 指派至的變數或引數。 這必須是有效的 Visual Basic 識別項。 若要設定此屬性，輸入 Visual Basic 運算式**至**方塊**指派**活動設計工具，或在屬性方格中。|  
 |<xref:System.Activities.Statements.Assign.Value%2A>|True|指派給變數的值。 若要設定<xref:System.Activities.Statements.Assign.Value%2A>，輸入在 Visual Basic 運算式**值**方塊**指派**活動設計工具，或在屬性方格中。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [基本類型](../workflow-designer/primitives-activity-designers.md)   
  [延遲](../workflow-designer/delay-activity-designer.md)   
  [叫用方法](../workflow-designer/invokemethod-activity-designer.md)   

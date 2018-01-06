@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5f98e1bd3052f3977a0071f2835fad1a7ed16726
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="select-condition-dialog-box-legacy"></a>選取條件對話方塊 (舊版)
 本主題描述如何使用**選取條件**對話方塊中，在舊版[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/27/2017
   
  下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |----------------|-----------------|  
 |**新...**|按一下以開啟[規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)來建立新的規則條件。|  
 |**編輯...**|按一下以開啟[規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)編輯所選取的規則條件。|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
  如需條件的詳細資訊，請參閱[在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
  [如何： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)   

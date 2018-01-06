@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94313e1e7cb8d6f36c5c8bfb505d280f4e235a3b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18a7b1b02ce7aabd816675ff547eecc857fb64bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多位開發人員可以在 Office 專案工作，如同它們在其他 Visual Studio 專案上共同作業。 Visual Studio 正確地找出每一部做為 Microsoft Office 安裝，即使將 Office 安裝在不同的位置。 不過，有一些要注意的重要的考量。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="debug-properties-are-not-shared"></a>偵錯內容不會共用  
- 偵錯屬性不是在原始檔控制中由多位使用者共用。 Visual Basic 和 Visual C# 專案的偵錯屬性儲存使用者專屬檔案中 (*ProjectName*。.vbproj.user 或*ProjectName*。 副檔名為.csproj.user)，而此檔案不在原始檔控制。 如果有多人同時進行偵錯，每個人都必須手動輸入偵錯屬性。  
+ 偵錯屬性不是在原始檔控制中由多位使用者共用。 Visual Basic 和 Visual C# 專案的偵錯屬性儲存使用者專屬檔案中 (*ProjectName*.vbproj.user 或*ProjectName*。 副檔名為.csproj.user)，而此檔案不在原始檔控制。 如果有多人同時進行偵錯，每個人都必須手動輸入偵錯屬性。  
   
  如果專案存放在網路共用而不是原始檔控制中，某些額外的步驟必須前往啟用共同作業以開啟方案，並測試組件的開發。  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  在建置期間自動產生的暫存憑證未受到密碼。 憑證中包含開發人員的登入名稱和其他個人資訊。 如果您部署自訂的暫時憑證所簽署，其他人可以存取這項資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)  

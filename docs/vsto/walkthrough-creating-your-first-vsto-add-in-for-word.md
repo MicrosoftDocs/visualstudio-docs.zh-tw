@@ -20,11 +20,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a61a56401e97a47da0903dadfff35e16c974bbc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cb36af8973ce44de9c6e7bbb06af8040da420dbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>逐步解說：為您的 Word 建立第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在**名稱**方塊中，輸入**FirstWordAddIn**。  
   
-7.  按一下 [確定]。  
+7.  按一下 [確定 **Deploying Office Solutions**]。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstWordAddIn**專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  關閉 Word。  
   
-## <a name="cleaning-up-the-project"></a>清除專案  
+## <a name="cleaning-up-the-project"></a>清除 Project  
  當您完成專案開發時，請從開發電腦移除 VSTO 增益集組件、登錄項目和安全性設定。 否則，每次在開發電腦上開啟 Word 時，VSTO 增益集將會繼續執行。  
   
 #### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 -   部署 Word 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word 方案](../vsto/word-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e54c4f4d95e5f8c23e6768ba3ebd09ef663fee1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1d9ec0e71977f48519077c5f50bfab0ae69141c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：新增與移除對應的資料夾
   某些常用的資料夾，在 SharePoint 中，例如影像和配置、 深度內嵌檔案階層中。 您可以將這些資料夾對應到 SharePoint 專案中做更輕易地進行存取。 對應的資料夾是 SharePoint 專案中對應至實體位置中的 SharePoint 伺服器安裝檔案的資料夾。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要從專案移除對應的資料夾，開啟其捷徑功能表，選擇 **刪除**，然後選擇 **確定**按鈕在對話方塊中，確認移除。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

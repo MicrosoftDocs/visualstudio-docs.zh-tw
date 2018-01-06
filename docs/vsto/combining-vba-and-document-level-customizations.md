@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。  
@@ -253,7 +254,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |設定 **EnableVbaCallers** 或 **ReferenceAssemblyFromVbaProject** 屬性之後，會有錯誤訊息指出 <xref:System.Reflection.AssemblyVersionAttribute> 所指定版本號碼無效。|請確定您專案之 AssemblyInfo.cs 或 AssemblyInfo.vb 檔案中的 <xref:System.Reflection.AssemblyVersionAttribute> 宣告設為有效的組件版本號碼。 如需組件版本號碼的相關資訊，請參閱 <xref:System.Reflection.AssemblyVersionAttribute> 類別。|  
 |重新命名自訂組件之後，呼叫自訂組件的 VBA 程式碼會停止運作。|如果您在將自訂組件名稱公開給 VBA 程式碼之後才變更它，文件中的 VBA 專案與自訂組件之間的連結已中斷。 若要修正此問題，請將專案中的 **ReferenceFromVbaAssembly** 屬性變更為 **False** ，然後再變回 **True**，最後將 VBA 程式碼中的任何舊組件名稱參考取代為新的組件名稱。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [如何： 公開程式碼給 Visual C# 35; 中的 VBA專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [逐步解說： 從 Visual Basic 專案中的 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   

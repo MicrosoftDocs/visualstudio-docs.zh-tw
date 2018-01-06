@@ -19,11 +19,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbc6f8876236d1a056874500aea4878f9643f91b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 06a2488606b93040cf897ac510455b8a9ef74ce2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理執行窗格的控制項配置
   動作窗格停駐右邊的文件或工作表的預設值;不過，它可以停駐於左方、 top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼上適當堆疊使用者控制項 [動作] 窗格。 如需詳細資訊，請參閱 [Actions Pane Overview](../vsto/actions-pane-overview.md)。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
 >  如果使用者在執行階段調整動作 窗格中，您可以設定控制項調整大小以使用 動作 窗格。 您可以使用 Windows Form 控制項的 <xref:System.Windows.Forms.Control.Anchor%2A> 屬性，將控制項錨定到執行窗格。 如需詳細資訊，請參閱[How to： 在 Windows Form 上控制項的錨定](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>若要設定執行窗格控制項堆疊順序  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
   
 -   控制與包含多個使用者控制項的執行窗格或巢狀的動作 窗格中的 Word 文件層級專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   

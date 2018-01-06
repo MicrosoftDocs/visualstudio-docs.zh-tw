@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae58db5ac642bca1e68d3ad074d4a69062a1f294
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 本逐步解說示範如何使用 XSLT IntelliSense 自動填入某些屬性的值。  
@@ -162,5 +163,5 @@ ms.lasthandoff: 10/31/2017
   
      請注意前置詞清單如何出現在 `stylesheet-prefix` 項目的 `result-prefix` 和 `xsl:namespace-alias` 屬性中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)

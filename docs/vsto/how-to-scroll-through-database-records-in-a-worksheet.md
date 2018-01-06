@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6e3dcc6d0ed711d41fd47f043177e5d172193249
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：在工作表中捲動資料庫記錄
   下列程序示範如何使用設計工具，顯示在控制項，可讓使用者捲動瀏覽的所有記錄在 Microsoft Office Excel 工作表，從資料庫資料表的單一欄位。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  從**Windows Form**  索引標籤**工具箱**，新增<xref:System.Windows.Forms.BindingNavigator>控制項加入工作表中，並設定您想要使用的控制項。 如需詳細資訊，請參閱[BindingNavigator 控制項概觀 &#40;Windows Form &#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

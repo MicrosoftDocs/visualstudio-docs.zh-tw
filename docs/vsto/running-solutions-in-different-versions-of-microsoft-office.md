@@ -21,11 +21,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93e365d335f835196576ad9ed10216e904e81f93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a52ab5c2f2f5a367681929966175ca4c4cb33b56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>在不同的 Microsoft Office 版本中執行方案
     
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
  下表顯示哪些版本的 Microsoft Office 可以執行使用舊版 Visual Studio 中，建立方案和哪些版本[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和.NET Framework 所需的每個解決方案。  
   
-|用來建立方案的 Visual Studio 版本|專案範本的目標 Office 版本|可以執行方案的 Office 版本|在使用者電腦上的必要執行階段|在使用者電腦上的必要 .NET Framework 版本|  
+|用來建立方案的 Visual Studio 版本|專案範本的目標 Office 版本|可以執行方案的 Office 版本|在終端使用者電腦上的必要執行階段|在使用者電腦上的必要 .NET Framework 版本|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
 |Visual Studio 2008 Professional<br /><br /> 或<br /><br /> Visual Studio Team System 2008|2007 Microsoft Office system|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> 2007 Microsoft Office system|Visual Studio 2010 Tools for Office Runtime<sup>1</sup><br /><br /> 或<br /><br /> Visual Studio Tools for the Microsoft Office system (3.0 版執行階段)|.NET Framework 3.5|  
 |其中一個下列版本的 Visual Studio 2005 VSTO 2005 se<sup>2</sup>安裝：<br /><br /> -Visual Studio 2005 Tools for Office<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|2007 Microsoft Office system|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)](僅限 32 位元<sup>3</sup>)<br /><br /> 2007 Microsoft Office system|Visual Studio 2005 Tools for Office Second Edition Runtime|.NET Framework 2.0、.NET Framework 3.0 或 .NET Framework 3.5|  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
  3. 需要 Visual Studio 2005 Tools for Office Second Edition Runtime 的 Office 方案與 64 位元版本的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 不相容。 若要在 64 位元版本的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 執行這些方案，您必須先將專案升級成 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 或以 2007 Microsoft Office system 為目標的 Visual Studio 2008 專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   

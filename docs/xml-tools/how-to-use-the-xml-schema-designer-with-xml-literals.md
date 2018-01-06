@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: cd78b50c9b2f22459548a906a5c45945da84ebb5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 本主題描述如何在 Visual Studio 專案中檢視與 XML 常值相關的結構描述。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/02/2017
   
 1.  啟動 Visual Studio。  
   
-2.  從**檔案**功能表上，選取**新增**，然後選取**專案**。 [ **新增專案** ] 對話方塊隨即出現。 如**專案類型**，選取**其他語言，** ，然後選取  **Visual Basic**。 如**範本**，選取 主控台應用程式。 然後輸入`XMLLiterals`中**名稱**欄位和中的專案位置**位置**欄位。 按一下 [確定]。  
+2.  從**檔案**功能表上，選取**新增**，然後選取**專案**。 [ **新增專案** ] 對話方塊隨即出現。 如**專案類型**，選取**其他語言，** ，然後選取  **Visual Basic**。 如**範本**，選取 主控台應用程式。 然後輸入`XMLLiterals`中**名稱**欄位和中的專案位置**位置**欄位。 按一下 [確定 **Deploying Office Solutions**]。  
   
      隨即會建立新專案。 XMLLiterals 專案包含一個 Visual Basic 原始程式檔：Module1.vb。  
   

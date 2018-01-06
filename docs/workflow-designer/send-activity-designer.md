@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: abe4a4f418e2204355d55c16194ea31b939383aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6b3e4d7b00691d7ea2c86a81d0d2880b9f7366bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 **傳送**活動設計工具用來建立及設定<xref:System.ServiceModel.Activities.Send>活動。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||訊息傳送至的 <xref:System.ServiceModel.EndpointAddress>。|  
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||端點組態的名稱。 這個屬性會在您設定組態檔中的端點時設定。 這個屬性應該設定為指定的名稱**\<端點 >**組態檔中的項目。 如果設定這個屬性，<xref:System.ServiceModel.Activities.Send.Endpoint%2A>屬性應該是**null**。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   

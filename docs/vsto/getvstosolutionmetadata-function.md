@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e0d0a3975acc272f9c4727e6a7b35aff7f698866
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5caba6e6b42eefccfc9dc520758c7dfbc7346844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函式
   這個 API 支援 Office 基礎結構，並不適合直接從您的程式碼使用。  
@@ -35,7 +36,7 @@ HRESULT WINAPI GetVstoSolutionMetadata(
   
 #### <a name="parameters"></a>參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |*lpwszSolutionMetadataKey*|請勿使用。|  
 |*ppSolutionInfo*|請勿使用。|  

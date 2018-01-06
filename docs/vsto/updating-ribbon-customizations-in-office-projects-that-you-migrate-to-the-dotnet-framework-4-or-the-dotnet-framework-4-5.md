@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d1aa39880145513049134871a48210a0e1e0b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您要移轉至 .NET Framework 4 或 .NET Framework 4.5 之 Office 專案中的功能區自訂
   如果專案包含使用所建立的功能區自訂**功能區 （視覺化設計工具）**專案項目，您必須進行下列變更您的專案程式碼，如果目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="updating-the-generated-ribbon-code"></a>更新產生的功能區程式碼  
  如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須執行下列步驟變更功能區項目產生的程式碼。 您需要更新的程式碼檔是根據程式語言和您建立專案的方式而定：  
   
--   在 Visual Basic 專案中，或在 Visual C# 專案，您建立[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]功能區程式碼後置檔案中執行的所有步驟 (*YourRibbonItem*。.Designer.cs 或*YourRibbonItem*。.Designer.vb)。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**顯示所有檔案**按鈕**方案總管 中**。  
+-   在 Visual Basic 專案中，或在 Visual C# 專案，您建立[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]或[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]功能區程式碼後置檔案中執行的所有步驟 (*YourRibbonItem*.Designer.cs 或*YourRibbonItem*.Designer.vb)。 若要查看 Visual Basic 專案中的程式碼後置檔案，請按一下**顯示所有檔案**按鈕**方案總管 中**。  
   
 -   Visual C# 專案，您在 Visual Studio 2008 中建立並升級至[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，執行功能區程式碼檔中的前兩個步驟 (*YourRibbonItem*.cs 或*YourRibbonItem*.vb)，以及在功能區程式碼後置檔案中執行其餘的步驟。  
   
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
  下表列出目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本專案中的功能區事件以及它們的相關委派。  
   
-|事件|用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本專案的委派|  
+|Event - 事件|用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本專案的委派|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |產生的功能區類別中的 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 事件|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
@@ -189,7 +190,7 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)  
   

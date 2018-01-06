@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eb47be36cbda86c8383760ced20b65691fd16842
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ede4048722fd18f62fe4d0bbf19ac75995cb99e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>如何：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，新增**功能區 （視覺化設計工具）**或**功能區 (XML)**項目加入 Office 專案。  
@@ -69,11 +70,11 @@ ms.lasthandoff: 10/31/2017
   
     -   保留供 Windows 或 DOS 例如 （"nul"、"aux"、"con"、"com1"、"lpt1"等等） 的名稱  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
  功能區項目會出現在**方案總管 中**。 下一個步驟的詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

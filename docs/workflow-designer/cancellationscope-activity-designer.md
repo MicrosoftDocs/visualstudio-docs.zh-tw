@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 4b2ad28e6b89273b5fdb55e4cfa35d1df292221a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6e9206eff3eaaeb3b5a79bb8457738c21af05c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 **CancellationScope**活動設計工具用來建立及設定<xref:System.Activities.Statements.CancellationScope>活動。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定提供取消邏輯的活動。 若要加入<xref:System.Activities.Statements.CancellationScope.Body%2A>活動，請從活動**工具箱**到**主體**方塊上**CancellationScope**活動設計工具的提示文字 「 卸除活動 」。|  
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|指定如果取消時所要執行的活動。 若要加入<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>活動，請從活動**工具箱**到**CancellationHandler**方塊**CancellationScope**活動設計工具的提示「 置放活動 」 文字。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [交易](../workflow-designer/transaction-activity-designers.md)   
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
  [補償](../workflow-designer/compensate-activity-designer.md)   

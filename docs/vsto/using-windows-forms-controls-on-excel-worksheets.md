@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bbd9c19698a9c81b5af29d27bba91b8aa36dcd2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d80158853ec042b98f7e40feda70520af55ed32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-windows-forms-controls-on-excel-worksheets"></a>在 Excel 工作表中使用 Windows Form 控制項
   您可以加入 Windows Form 控制項 Microsoft Office Excel 活頁簿，您會將控制項加入 Windows Form 的方式相同。 如需有關文件上的控制項使用的一般資訊，請參閱[Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="formula-for-embedding-controls"></a>內嵌控制項的公式  
  在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 調整工作表儲存格內的控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [如何： 列印時隱藏工作表上的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [逐步解說： 變更工作表使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   

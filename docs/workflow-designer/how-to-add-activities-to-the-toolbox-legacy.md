@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 9b0dce8c2600d125a84044bef60957bd1bfa8b44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7bc489c000cf2d5fa875859208aa631a839168d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>HOW TO：將活動新增至工具箱 (舊版)
 建置與舊版工作流程方案時[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]、 自訂活動可以加入至工作流程專案和其設計工具會置於**工具箱**的簡單存取權。 您也可以直接將活動新增**工具箱**從動態連結程式庫 (DLL)。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/27/2017
   
 4.  按一下**確定**完成新增活動至工具箱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用舊版活動設計工具](../workflow-designer/using-the-legacy-activity-designer.md)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)

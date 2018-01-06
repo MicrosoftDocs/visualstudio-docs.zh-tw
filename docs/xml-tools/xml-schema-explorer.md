@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fa99ea63f9af2c69519691add827053b3059ac0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可讓您使用 XML 結構定義語言 (XSD) 結構描述。 當您開啟 XML 結構描述檔案，**結構描述集**節點會出現在 XML 結構描述總管。 所有包含的、匯入的或重新定義的目標檔結構描述，以及透過 `include` 或 `import` 陳述式參考的所有檔案，也會出現在 XML 結構描述總管中。  
@@ -80,7 +81,7 @@ XML 結構描述總管會透過樹狀檢視提供結構描述設定的階層式�
   
  您無法拖放本機節點或匯入。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 -   [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)  
   
@@ -90,5 +91,5 @@ XML 結構描述總管會透過樹狀檢視提供結構描述設定的階層式�
   
 -   [整合 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：將節點從 XML 結構描述總管新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

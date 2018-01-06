@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型概觀
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公開強類型的物件模型可讓您取得和設定在執行階段的功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏控制項內容。 您也可以加入索引標籤、 群組和控制項的功能區中，但只能由 Office 應用程式載入功能區前。 如需資訊，請參閱[設定變成唯讀的屬性](#SettingReadOnlyProperties)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="RibbonEvents"></a>功能區事件  
  **功能區**類別包含下列三個事件：  
   
-|事件|說明|  
+|Event - 事件|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office 應用程式載入功能區自訂時引發。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>事件處理常式會自動加入至功能區程式碼檔案。 在功能區載入時執行自訂程式碼中使用此事件處理常式。|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|可讓您快取映像，在功能區自訂功能區載入時。 如果您撰寫程式碼快取中這個事件處理常式的功能區映像，您可以取得輕微的效能改善。 如需詳細資訊，請參閱<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
@@ -117,7 +118,7 @@ ms.lasthandoff: 10/31/2017
   
  在 Visual C# 專案，您是從 Visual Studio 2008 升級，建構函式會出現在功能區程式碼檔案。  
   
- 在 Visual Basic 專案中，或在 Visual C# 專案中建立[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，建構函式會出現在功能區設計工具程式碼檔案。 這個檔案命名為*YourRibbonItem*。.Designer.cs 或*YourRibbonItem*。.Designer.vb。 若要查看這個檔案在 Visual Basic 專案中的，您必須先按一下**顯示所有檔案**方案總管 中的按鈕。  
+ 在 Visual Basic 專案中，或在 Visual C# 專案中建立[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，建構函式會出現在功能區設計工具程式碼檔案。 這個檔案命名為*YourRibbonItem*.Designer.cs 或*YourRibbonItem*.Designer.vb。 若要查看這個檔案在 Visual Basic 專案中的，您必須先按一下**顯示所有檔案**方案總管 中的按鈕。  
   
 ### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>CreateRibbonExtensibilityObject 方法中設定屬性  
  您可以設定的屬性`Ribbon`控制當您覆寫中的 CreateRibbonExtensibilityObject 方法`ThisAddin`， `ThisWorkbook`，或`ThisDocument`專案的類別。 如需 CreateRibbonExtensibilityObject 方法的詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
+|**名稱**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**位置**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**資料列計數**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ribbon-control-events"></a>功能區控制項事件  
  每個控制項類別包含一或多個事件。 下表描述這些事件。  
   
-|事件|說明|  
+|Event - 事件|描述|  
 |-----------|-----------------|  
 |按一下|發生於按下控制項時。|  
 |TextChanged|編輯方塊或下拉式方塊的文字變更時發生。|  
@@ -182,12 +183,12 @@ ms.lasthandoff: 10/31/2017
   
  這些事件的事件處理常式有下列兩個參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |*寄件者*|<xref:System.Object>表示引發事件的控制項。|  
 |*e*|A<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>包含<xref:Microsoft.Office.Core.IRibbonControl>。 這個控制項用來存取所提供的功能區物件模型中沒有任何屬性[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   

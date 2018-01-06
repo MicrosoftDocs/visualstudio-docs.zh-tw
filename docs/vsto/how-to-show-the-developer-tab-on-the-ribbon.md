@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cad7fb4fe49df9688a0b9e7b3baa1f1108694136
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3885ce387aa27857e59fb3af74990d953c047225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤在 Office 應用程式的功能區，您必須將它顯示此索引標籤，因為它不會出現預設設定。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  選擇**確定**按鈕以關閉**選項** 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)  
   
   
