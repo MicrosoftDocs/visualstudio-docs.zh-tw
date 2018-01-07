@@ -1,6 +1,6 @@
 
 # [分析文件](index.md)
-# 概觀
+# 總覽
 ## [分析功能導覽](profiling-feature-tour.md)
 # 快速入門
 ## [分析 CPU 使用量 (受控)](quickstart-cpu-usage-managed.md)
@@ -8,14 +8,15 @@
 ## [分析 CPU 使用量 (ASP.NET)](quickstart-cpu-usage-aspnet.md)
 # 教學課程
 ## [在 Visual Studio 中分析應用程式效能](beginners-guide-to-performance-profiling.md)
+## [分析 Visual Studio 中的記憶體使用狀況](memory-usage.md)
 # 概念
 ## [使用或不使用偵錯工具來執行程式碼剖析工具](running-profiling-tools-with-or-without-the-debugger.md)
 # 作法指南
-## [分析記憶體使用量](memory-usage.md)
-### [自訂原生 ETW 堆積事件](custom-native-etw-heap-events.md)
-### [記憶體使用量 (不使用偵錯工具)](memory-usage-without-debugging2.md)
 ## [分析 CPU 使用量](cpu-usage.md)
 ### [分析通用 Windows App (UWP) 中的 CPU 使用量](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [分析記憶體使用量](analyze-memory-usage.md)
+### [自訂原生 ETW 堆積事件](custom-native-etw-heap-events.md)
+### [記憶體使用量 (不使用偵錯工具)](memory-usage-without-debugging2.md)
 ## [分析 GPU 使用量](gpu-usage.md)
 ## [分析資源取用量](application-timeline.md)
 ## [使用效能提示](perftips.md)
@@ -86,8 +87,8 @@
 ####### [DA0005：常見的 GC2 集合](da0005-frequent-gc2-collections.md)
 ####### [DA0006：覆寫實值型別的 Equals()](da0006-override-equals-parens-for-value-types.md)
 ####### [DA0007：避免使用例外狀況進行控制流程](da0007-avoid-using-exceptions-for-control-flow.md)
-####### [DA0010：GetHashCode 函式高度耗費資源](da0010-expensive-gethashcode.md)
-####### [DA0011：CompareTo 函式高度耗費資源](da0011-expensive-compareto.md)
+####### [DA0010：GetHashCode 高度耗費資源](da0010-expensive-gethashcode.md)
+####### [DA0011：CompareTo 高度耗費資源](da0011-expensive-compareto.md)
 ####### [DA0012：大量的反射](da0012-significant-amount-of-reflection.md)
 ####### [DA0013：String.Split 或 String.Substring 的用量高](da0013-high-usage-of-string-split-or-string-substring.md)
 ####### [DA0018：32 位元應用程式正以處理序 Managed 記憶體限制執行](da0018-32-bit-application-running-at-process-managed-memory-limits.md)
@@ -96,7 +97,7 @@
 ####### [DA0023：高記憶體回收 CPU 時間](da0023-high-gc-cpu-time.md)
 ####### [DA0024：過度的記憶體回收 CPU 時間](da0024-excessive-gc-cpu-time.md)
 ####### [DA0038：高比率的鎖定爭用](da0038-high-rate-of-lock-contentions.md)
-####### [DA0039：極高比率的鎖定爭用](da0039-very-high-rate-of-lock-contentions.md)
+####### [DA0039：鎖定爭用的比率非常高](da0039-very-high-rate-of-lock-contentions.md)
 ###### [記憶體和分頁效能規則](memory-and-paging-performance-rules.md)
 ####### [DA0014：極高比率的使用中記憶體分頁到磁碟](da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)
 ####### [DA0017：高比率的使用中記憶體分頁到磁碟](da0017-high-rates-of-paging-active-memory-to-disk.md)
