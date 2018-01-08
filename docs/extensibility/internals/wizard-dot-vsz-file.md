@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7f4abe6240f799ed6db71fcf04a40774facaf6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f70d41b353640a3b2b108a55f14b8737a7fe1f8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-vsz-file"></a>精靈 (。Vsz) 檔案
 整合式的開發環境 (IDE) 會使用.vsz 檔案來啟動精靈。 這些.vsz 檔案包含用來判斷要呼叫哪一個精靈的 IDE 資訊和要傳遞給精靈的資訊。  
@@ -38,7 +39,7 @@ Param="WIZARDUI = FALSE"
   
  以下是.vsz 檔案中的組件。  
   
-|組件|說明|  
+|組件|描述|  
 |----------|-----------------|  
 |VSWizard|在檔案中的第一個參數是範本檔案格式的版本號碼。 此版本號碼必須是 6.0、 7.0、 7.1、 或 8.0。 其他數字無法啟動，並會導致不正確的格式錯誤。|  
 |精靈|此欄位會包含 OLE ProgID 的精靈，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|  
@@ -48,7 +49,7 @@ Param="WIZARDUI = FALSE"
   
  若要加入.vsz 檔案中的預設地區設定識別碼，請指定`FALLBACK_LCID`= 的 xxxx，其中 xxxx 會是地區設定識別碼，例如，1033 代表英文。 當`FALLBACK_LCID`參數定義、 找不到目前的識別碼時，精靈會使用提供的後援地區設定識別碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂參數](../../extensibility/internals/custom-parameters.md)   
  [精靈](../../extensibility/internals/wizards.md)   
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

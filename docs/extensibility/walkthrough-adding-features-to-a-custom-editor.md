@@ -13,11 +13,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df3621d87ae80c0eee105183edbc97a4e7ade62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>逐步解說： 加入功能與自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
         > [!NOTE]
         >  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>取得指標`IVsFileChangeEx`。  
   
-7.  協調與原始程式碼控制的文件編輯事件。 做法：  
+7.  協調與原始程式碼控制的文件編輯事件。 若要這樣做：  
   
     1.  取得指標`IVsQueryEditQuerySave2`藉由呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。  
   
@@ -65,13 +66,13 @@ ms.lasthandoff: 10/31/2017
   
          這個方法會提示使用者儲存檔案，如果尚未儲存，或自上次儲存已變更。  
   
-8.  啟用**屬性**視窗中顯示的文字編輯器 中選取的屬性。 做法：  
+8.  啟用**屬性**視窗中顯示的文字編輯器 中選取的屬性。 若要這樣做：  
   
     1.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次文字選取範圍變更時，傳遞的實作中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
   
     2.  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務取得的指標<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
   
-9. 啟用使用者拖放項目之間的編輯器和**工具箱**，或外部編輯器 （例如 Microsoft Word) 之間和**工具箱**。 做法：  
+9. 啟用使用者拖放項目之間的編輯器和**工具箱**，或外部編輯器 （例如 Microsoft Word) 之間和**工具箱**。 若要這樣做：  
   
     1.  實作`IDropTarget`您編輯器，可提醒 IDE，您的編輯器是在置放目標上。  
   
@@ -154,6 +155,6 @@ ms.lasthandoff: 10/31/2017
   
     -   `Window.Object`  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [參與 Automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   
  [如何： 提供的內容編輯器](../extensibility/how-to-provide-context-for-editors.md)

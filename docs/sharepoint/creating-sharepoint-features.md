@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8f78a12aa70c3c7042a821a737485da963f7a56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a6917a8909bed30319d104f45398409b4ba367f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能來分組相關更容易進行部署的 SharePoint 專案項目。 您可以建立功能、 設定範圍，及使用 SharePoint 功能設計工具，將其他功能標示為相依性。 在設計工具也會產生資訊清單，其中會描述每項功能的 XML 檔案。  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/31/2017
   
 |屬性|描述|  
 |--------------|-----------------|  
-|標題|選擇項。 此功能的預設標題設定為*SolutionName**FeatureName*。|  
-|說明|選擇項。 SharePoint 功能的描述。|  
-|範圍|必要項。 如果一項功能由使用**方案總管 中**，範圍預設設定為 Web。<br /><br /> 伺服陣列： 啟動整個伺服器陣列的功能。<br /><br /> 站台： 啟動網站集合中的所有網站的功能。<br /><br /> -Web： 啟動特定網站的功能。<br /><br /> -WebApplication： 啟動 web 應用程式中的所有網站的功能。|  
+|標題|選擇性。 此功能的預設標題設定為*SolutionName**FeatureName*。|  
+|描述|選擇性。 SharePoint 功能的描述。|  
+|範圍|必要。 如果一項功能由使用**方案總管 中**，範圍預設設定為 Web。<br /><br /> 伺服陣列： 啟動整個伺服器陣列的功能。<br /><br /> 站台： 啟動網站集合中的所有網站的功能。<br /><br /> -Web： 啟動特定網站的功能。<br /><br /> -WebApplication： 啟動 web 應用程式中的所有網站的功能。|  
 |在方案中的項目|SharePoint 的所有項目可以加入的功能。|  
 |功能中的項目|SharePoint 專案項目已加入的功能。|  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="adding-feature-dependencies"></a>加入功能依存性  
  您可以設定功能資訊清單，讓 SharePoint 伺服器中啟用某些功能之前啟動您的功能。 比方說，如果您的 SharePoint 功能相依於其他功能的功能或資料，SharePoint 伺服器可以先嘗試啟動的任何功能取決於您的功能。 如需詳細資訊，請參閱[如何： 加入和移除功能相依性](../sharepoint/how-to-add-and-remove-feature-dependencies.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何： 加入和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
  [如何：新增與移除功能相依性](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  

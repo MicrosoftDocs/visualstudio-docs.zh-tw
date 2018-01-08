@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>逐步解說： 大綱
 您可以實作以語言為基礎的功能，例如藉由定義的一種您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的語言服務內容或您可以定義您自己的檔案名稱副檔名和內容類型，並區定義套用至該類型，或者您可以將區域定義套用至現有的內容類型 （例如"text")。 本逐步解說示範如何定義及顯示大綱區域。  
@@ -133,5 +134,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  應該要有包含這兩個大括號中的大綱區域。 您可以按一下減號左邊的左大括號來摺疊的大綱區域。 當區域已摺疊，省略符號 （...） 應該會顯示已摺疊的區域和快顯視窗包含文字的左邊**暫留文字**指標移省略符號時，應該會出現。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

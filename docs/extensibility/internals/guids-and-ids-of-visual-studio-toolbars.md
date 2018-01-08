@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具列
 本主題列舉的 GUID 和 ID 值的 Visual Studio 整合式的開發環境 (IDE) 中包含的工具列和包含的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  只有群組可以直接從工具列下降。 若要加入群組，設定其父代的 GUID 和 ID 的工具列。 若要將按鈕加入至工具列，設定其父群組工具列上。  
   
-|工具列|ID|  
+|工具列|識別碼|  
 |-------------|--------|  
 |標準|IDM_VS_TOOL_STANDARD|  
 |組建|IDM_VS_TOOL_BUILD|  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="special-toolbars"></a>特殊的工具列  
  這些工具列會由 Visual Studio IDE 中，但可提供特殊的功能，且未裝載命令群組。  
   
-|工具列|ID|  
+|工具列|識別碼|  
 |-------------|--------|  
 |Add 命令|IDM_VS_TOOL_ADDCOMMAND|  
 |未定義|IDM_VS_TOOL_UNDEFINED|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="standard-toolbar-groups"></a>[標準] 工具列的群組  
   
-|名稱|ID|  
+|名稱|識別碼|  
 |----------|--------|  
 |儲存檔案/開啟|IDG_VS_TOOLSB_SAVEOPEN|  
 |剪下/複製|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +79,14 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="build-toolbar-groups"></a>建立工具列群組  
   
-|名稱|ID|  
+|名稱|識別碼|  
 |----------|--------|  
 |建置列|IDG_VS_BUILDBAR|  
 |取消|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>文字編輯器 工具列上的群組  
   
-|名稱|ID|  
+|名稱|識別碼|  
 |----------|--------|  
 |完成|IDM_VS_TOOL_TEXTEDITOR|  
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="debug-toolbar-groups"></a>偵錯 工具列的群組  
   
-|名稱|ID|  
+|名稱|識別碼|  
 |----------|--------|  
 |執行|IDM_DEBUG_TOOLBAR|  
 |逐步執行|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,7 +104,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="debug-location-toolbar-groups"></a>偵錯位置工具列群組  
   
-|名稱|ID|  
+|名稱|識別碼|  
 |----------|--------|  
 |偵錯位置|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
 |記憶體 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1...4<br /><br /> IDG_MEMORY_COLUMNS1...4|  
 |處理序|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [新增工具列加入工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

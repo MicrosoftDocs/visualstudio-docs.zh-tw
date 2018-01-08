@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 642b0cecd700d66db30385f149a30cd09113fc7d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45c05f738086cad87d204e1421513da54a01e211
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-parameters"></a>內容參數
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 中，您可以加入至精靈**新專案**，**加入新項目**，或**加入子專案**對話方塊。 加入的精靈位於**檔案**功能表或以滑鼠右鍵按一下專案，以在**方案總管 中**。 IDE 會將內容參數傳遞給精靈的實作。 IDE 呼叫精靈時，內容參數會定義專案的狀態。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="context-parameters-for-new-project"></a>新專案的內容參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`WizardType`|註冊精靈類型 (<xref:EnvDTE.Constants.vsWizardNewProject>) 或用來表示的精靈類型的 GUID。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}。|  
 |`ProjectName`|是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。|  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="context-parameters-for-add-new-item"></a>內容參數加入新項目  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`WizardType`|註冊精靈類型 (<xref:EnvDTE.Constants.vsWizardAddItem>) 或用來表示的精靈類型的 GUID。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。|  
 |`ProjectName`|是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="context-parameters-for-add-sub-project"></a>新增子專案的內容參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`WizardType`|註冊精靈類型 (<xref:EnvDTE.Constants.vsWizardAddSubProject>) 或用來表示的精靈類型的 GUID。 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]實作中，精靈的 GUID 是 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。|  
 |`ProjectName`|是唯一的字串[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案名稱。|  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |`InstallationDirectory`|目錄路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是安裝。|  
 |`Silent`|布林值，指出是否應該以無訊息模式執行精靈如同**完成**所按下 (`TRUE`)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
  [自訂參數](../../extensibility/internals/custom-parameters.md)   

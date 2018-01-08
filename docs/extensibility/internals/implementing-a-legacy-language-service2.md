@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24e847eb0f1d05717ab6b114921a66b04cd94922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 20dc3cf7b4db090bf7fcd0086b3e72575d8490cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 若要實作語言服務使用 managed 的 package framework (MPF)，您必須衍生自<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作下列的抽象方法和屬性：  
@@ -195,7 +196,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>LanguageService 類別中  
   
-|方法|傳回類別|說明|  
+|方法|傳回類別|描述|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|若要支援自訂文字檢視新增項目。|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|若要支援自訂文件屬性。|  
@@ -212,7 +213,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>來源類別中  
   
-|方法|傳回類別|說明|  
+|方法|傳回類別|描述|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|自訂 IntelliSense 完成清單 （此方法通常不會覆寫） 的顯示。|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|支援標記錯誤清單中的工作清單。具體來說，支援開啟檔案並跳到造成錯誤的一行以外的功能。|  
@@ -222,7 +223,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>AuthoringScope 類別中  
   
-|方法|傳回類別|說明|  
+|方法|傳回類別|描述|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供例如成員或類型宣告的清單。 必須實作這個方法，但可能會傳回 null 值。 如果這個方法會傳回有效的物件的物件必須是您的版本的執行個體<xref:Microsoft.VisualStudio.Package.Declarations>類別。|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|針對指定的內容中提供方法簽章的清單。 必須實作這個方法，但可能會傳回 null 值。 如果這個方法會傳回有效的物件的物件必須是您的版本的執行個體<xref:Microsoft.VisualStudio.Package.Methods>類別。|  
@@ -360,7 +361,7 @@ public enum IconImageIndex
         }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)   

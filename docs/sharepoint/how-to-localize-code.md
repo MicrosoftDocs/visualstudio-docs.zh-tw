@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c283f8e2b73fdb4ba44322ca09f8fb436d729ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4e920074f6f771c2b8e5a78b128bf3b1f096d77e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-code"></a>如何：當地語系化程式碼
   未當地語系化的程式碼會使用硬式編碼的字串值。 若要當地語系化程式碼的字串，它們取代成呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，這是參考的當地語系化的資源的方法。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  在**封裝設計工具**，選擇**進階**索引標籤，然後再加入附屬組件。  
   
-9. 在**位置**方塊中，在前面加上文化特性識別碼資料夾的位置路徑，例如 DE-DE\\*專案項目名稱*。.resources.dll。  
+9. 在**位置**方塊中，在前面加上文化特性識別碼資料夾的位置路徑，例如 DE-DE\\*專案項目名稱*.resources.dll。  
   
 10. 如果您的方案已經參考 System.Web 組件，加入的參考，並加入您的程式碼中的指示詞<xref:System.Web>。  
   
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
   
      當地語系化的字串會出現在應用程式。 若要顯示當地語系化的資源，請在 SharePoint 伺服器必須符合資源檔的文化特性的語言套件安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 當地語系化功能](../sharepoint/how-to-localize-a-feature.md)   
  [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   

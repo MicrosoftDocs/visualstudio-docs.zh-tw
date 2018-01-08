@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589013b996f9ed018e28292a27c6a760eef1dae7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec61845433329645fbc4f02a72c062c3cf47f9f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 此函式會列舉指定的檔案，提供透過回呼函式的每個檔案的名稱變更的相關資訊清單。  
@@ -54,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|查詢處理程序已順利完成。|  
 |SCC_E_PROJNOTOPEN|不在原始檔控制中開啟專案。|  
@@ -64,7 +65,7 @@ SCCRTN SccQueryChanges(
 ## <a name="remarks"></a>備註  
  要查詢的變更要在命名空間： 具體而言，重新命名、 新增和移除檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [錯誤碼](../extensibility/error-codes.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 666174c4f0f54679907bd239a81c5c369dc09a3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d067d5dd150dd026a2bd29a8933e8d9f72222b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 這是在呼叫中指定的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_NAMECHANGEPFN`) 和用於進行通訊所做的原始檔控制外掛程式傳回給 IDE 的名稱變更。  
@@ -51,6 +52,6 @@ typedef void (*OPTNAMECHANGEPFN)(
   
  如果在 IDE 中不支援此回呼，它不會呼叫[SccSetOption](../extensibility/sccsetoption-function.md)指定它。 如果外掛程式不支援此回呼，它會傳回`SCC_E_OPNOTSUPPORTED`從`SccSetOption`當 IDE 嘗試設定回呼函式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

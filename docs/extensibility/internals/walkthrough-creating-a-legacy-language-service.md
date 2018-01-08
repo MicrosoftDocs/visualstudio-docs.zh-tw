@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說： 建立舊版語言服務
 使用 managed 的封裝架構 (MPF) 語言類別實作中的語言服務[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]相當簡單。 您需要 VSPackage 也可以裝載語言服務、 語言服務本身，以及您的語言剖析器。  
@@ -132,5 +133,5 @@ ms.lasthandoff: 10/31/2017
   
      例如，輸入`public override`若要查看所有方法都可以在該類別中覆寫清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d92a6c7250e22972a2b352b74b974601ff6065c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b43e4ac1c8e40a9f4f378be42cc642767bee0777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （整合模式）
 Visual Studio 整合式 shell 包括整合式的開發環境 (IDE)、 偵錯工具，以及原始檔控制整合。 不隨附的任何程式語言。 但是，整合式的 shell 並提供此架構可讓您將加入的程式語言。  
@@ -80,5 +81,5 @@ Visual Studio 整合式 shell 包括整合式的開發環境 (IDE)、 偵錯工�
   
 -   沒有 Visual Studio 語言，或其相關聯的專案範本或專案項目範本，會包含在整合式 shell。 語言特有的任何實作其他功能不是，針對 Visual Basic 程式碼片段的範例。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

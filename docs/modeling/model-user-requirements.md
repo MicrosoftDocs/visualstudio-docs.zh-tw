@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(模型化商務網域)。  
@@ -100,6 +101,6 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |記錄服務品質需求的更多詳細資訊|[定義服務需求品質的方針](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |如何開發遵守服務需求品質的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
  [建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)   

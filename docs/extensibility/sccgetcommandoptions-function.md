@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6848689be19e67009314b167b60724a95fd6da5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3bce2922c961bf29f320f047a91057a638fe708a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函式會提示使用者輸入指定之命令的進階選項。  
@@ -50,7 +51,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_I_ADV_SUPPORT|原始檔控制外掛程式支援命令的進階的選項。|  
@@ -76,6 +77,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 >  此命令`SCC_COMMAND_OPTIONS`IDE 會顯示時，會使用**選項**對話方塊，讓使用者設定控制整合的運作方式的喜好設定。 如果原始檔控制外掛程式想要提供它自己喜好設定 對話方塊中，它可以顯示從**進階**IDE 喜好設定 對話方塊中的按鈕。 外掛程式就是只負責取得並保存這項資訊;IDE 不使用它，或修改它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [指令碼](../extensibility/command-code-enumerator.md)

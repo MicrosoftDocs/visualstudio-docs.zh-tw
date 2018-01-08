@@ -14,11 +14,12 @@ caps.latest.revision: "25"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fae53e45b231292df8b7a6ae8bf4f2babc5d9e88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5cb41ab9a68e567d7c6b64243c6cec017835088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>相依性圖表的擴充功能疑難排解
 本主題說明當您建立圖層模型擴充功能時可能遇到的一些問題。  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/27/2017
   
 4.  在**source.extension.vsixmanifest**在圖層驗證專案中，確定您已經加入兩**MEF 元件**項目和**自訂延伸模組類型**項目底下**內容**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

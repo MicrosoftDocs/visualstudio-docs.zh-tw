@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e8de9588e263d392252134a470312a9dc4f4b648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 您可以允許的項目拖曳出來，放到另一個，從 [工具箱] 中或貼上或移動作業。 您可以移動的項目連結至目標項目中，使用您指定的關聯性。  
@@ -314,7 +315,7 @@ ms.lasthandoff: 10/27/2017
   
      您不應該會看到無法使用的指標，以及您應該能夠將新**輸入連接埠**上現有的我的最愛。 選取新**輸入連接埠**並將它拖曳至另一個點**元件**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自訂工具和 [工具箱]](../modeling/customizing-tools-and-the-toolbox.md)   
  [DSL 的循環圖範例](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b6aa6ead6811f50cc186f46561b214ba4cd0905
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6a0344177d50d7121b1116e80983db80233dac90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
 此函式判斷原始檔控制外掛程式是否支援 MSSCCPRJ 的建立。SCC 檔案，每個指定的檔案。  
@@ -50,7 +51,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_INVALIDFILEPATH|其中一個陣列中的路徑無效。|  
@@ -59,6 +60,6 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="remarks"></a>備註  
  一份檔案，以決定是否原始檔控制外掛程式在提供支援 MSSCCPRJ 呼叫此函式。SCC 檔案，每個指定的檔案 （如需有關 MSSCCPRJ 的詳細資訊。SCC 檔案，請參閱[MSSCCPRJ。SCC 檔案](../extensibility/mssccprj-scc-file.md))。 原始檔控制外掛程式可以宣告它們是否具備建立 MSSCCPRJ 的功能。SCC 檔案，藉由宣告`SCC_CAP_SCCFILE`初始化期間。 外掛程式傳回`TRUE`或`FALSE`為每個檔案`pbSccFiles`陣列來指出指定的檔案必須有 MSSCCPRJ。SCC 支援。 如果外掛程式從函式傳回成功碼，傳回陣列中的值都會被接受。 如果失敗，陣列會被忽略。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

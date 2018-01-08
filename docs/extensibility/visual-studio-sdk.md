@@ -17,11 +17,12 @@ caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbf9ab21b494bfc8b26251a8bdb79c16f81dc05d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: bf8c558d01538d477aee3670b3c119d72a83878d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK，可協助您擴充 Visual Studio 功能，或將新的功能整合到 Visual Studio。 您可以散發給其他使用者，以及 Visual Studio Marketplace 您擴充功能。 下列是一些可擴充 Visual Studio 的方法：  
@@ -56,7 +57,7 @@ Visual Studio SDK，可協助您擴充 Visual Studio 功能，或將新的功能
  利用[映像服務與類別目錄](../extensibility/image-service-and-catalog.md)絕佳的映像管理和支援高 DPI 與主題。  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>尋找和安裝現有的 Visual Studio 擴充功能  
- 您可以找到 Visual Studio 擴充功能中的**擴充功能和更新**對話**工具**功能表。 如需詳細資訊，請參閱[尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)。 您也可以尋找擴充功能中的[Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ 您可以找到 Visual Studio 擴充功能中的**擴充功能和更新**對話**工具**功能表。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。 您也可以尋找擴充功能中的[Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考  
  您可以尋找在 Visual Studio SDK 的 API 參考[Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)。  
@@ -75,7 +76,7 @@ Visual Studio SDK，可協助您擴充 Visual Studio 功能，或將新的功能
   
 -   [擴充 Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [如何： 將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
  [常見問題集： 將增益集轉換為 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   

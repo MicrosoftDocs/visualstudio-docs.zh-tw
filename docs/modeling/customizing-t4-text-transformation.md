@@ -14,16 +14,17 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4909edabd71686948632f390dfeed5f49cb6fca0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-t4-text-transformation"></a>自訂 T4 文字轉換
 文字範本是的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可讓您產生程式碼或其他文字檔案，完成轉換程序。 使用[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]，您可以自訂文字範本指示詞處理器或文字範本主應用程式來延伸預設範本轉換流程。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [文字範本轉換流程](../modeling/the-text-template-transformation-process.md)  
  說明文字轉換的運作方式，並說明範本主應用程式和指示詞處理器的角色。  
   

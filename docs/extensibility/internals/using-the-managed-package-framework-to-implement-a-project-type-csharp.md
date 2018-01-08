@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16e1d301e5a3977f656c52f9c97eb43ee216075f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 108ace4286ae896f38d7f19fea00873e7ca89e9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用 Managed 的封裝架構實作專案型別 (C#)
 Managed Package Framework (MPF) 提供的 C# 類別可以使用或來實作您自己的專案類型繼承。 MPF 實作許多介面 Visual Studio 必須是專案類型提供，讓您自由地專注於實作您的專案類型的軟體。  

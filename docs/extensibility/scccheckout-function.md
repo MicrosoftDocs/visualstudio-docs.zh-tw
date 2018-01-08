@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於所有簽出的檔案。註解引數可以是`null`字串。  
@@ -62,7 +63,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|簽出成功。|  
 |SCC_E_FILENOTCONTROLLED|選取的檔案不是原始程式碼控制之下。|  
@@ -74,6 +75,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|另一位使用者完成獨佔簽出這個檔案。|  
 |SCC_I_OPERATIONCANCELED|作業已完成前取消。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)

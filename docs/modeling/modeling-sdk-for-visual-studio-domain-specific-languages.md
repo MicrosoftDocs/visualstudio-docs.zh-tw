@@ -15,11 +15,12 @@ caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大的模型為基礎的開發工具，可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/27/2017
   
  如需進階的技巧和疑難排解指引，請瀏覽[Visual Studio DSL & Modeling 工具擴充性論壇](http://go.microsoft.com/fwlink/?LinkID=186074)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [開始使用特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)  
   
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)  

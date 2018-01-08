@@ -12,11 +12,12 @@ caps.latest.revision: "35"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4982dcc5c6fb0184f1f467971b6255aace6bec53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c549881184a112a779a14a919a91cd7ee4854fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 定義其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼。 大部分的 DSL 方案中的程式碼會產生這個檔案中。  
@@ -134,7 +135,7 @@ ms.lasthandoff: 10/27/2017
   
  在圖表上輸入，或修改設定 role 的多重性`Multiplicity`屬性**屬性**視窗。 下表描述此屬性的設定。  
   
-|多重性類型|說明|  
+|多重性類型|描述|  
 |-----------------------|-----------------|  
 |0..* （零對多）|每個執行個體的網域類別可以有多個關聯性執行個體或關聯性的任何執行個體。|  
 |0..1 （零對一）|每個執行個體的網域類別可以有一個以上的執行個體的關聯性或關聯性的任何執行個體。|  
@@ -150,5 +151,5 @@ ms.lasthandoff: 10/27/2017
   
  在衍生的關聯性，指定其基底關聯性。 在網域類別連結應該衍生自它，或連結的基底關聯性的類別相同。 在模型中建立衍生關聯性的連結時，它是衍生和基底關聯性的執行個體。 您可以在程式碼中，巡覽至使用基底或衍生的類別產生的屬性連結的另一端。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

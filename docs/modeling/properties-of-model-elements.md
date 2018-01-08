@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7c42f7a0a2a87aadc63f65240b981bc3e94c5417
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ef494d68ba8ce8134483f910bc7e6d984e4717c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-model-elements"></a>模型項目的屬性
 此區段會列出 DSL 定義圖表中或 DSL 總管 中，選取一個項目時，您看到 屬性 視窗中的屬性。  

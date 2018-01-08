@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b637e59b1e436c42b6b15f0dddaa1ed2ef6ff03c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78c4823e3644dc755cef518dcbbba5f42c7aebc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-colorable-items"></a>自訂色彩項目
 您可以覆寫類型的清單上色功能，例如關鍵字以及註解、 實作自訂色彩項目做為語言服務的一部分。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
  如需如何實作的範例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>介面，請參閱<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務模型](../../extensibility/internals/model-of-a-legacy-language-service.md)   
  [自訂編輯器中著色的語法](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [使用語法色彩編碼舊版語言服務](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

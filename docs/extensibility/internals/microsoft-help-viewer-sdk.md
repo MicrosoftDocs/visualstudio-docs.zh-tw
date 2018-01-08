@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 說明檢視器 SDK
 本文章包含 Visual Studio 說明檢視器整合者執行下列工作：  
@@ -351,7 +352,7 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵： 顯�
   
 下表中出現在括號之間的任何字串是一個預留位置，必須將可辨識的值取代。 例如，在\<中繼 name="Microsoft.Help.Locale"內容 ="[語言程式碼]"/ >，"[語言程式碼]"必須取代值，例如 「 en-us-我們"。  
   
-|屬性 （HTML 表示）|說明|  
+|屬性 （HTML 表示）|描述|  
 |--------------------------------------|-----------------|  
 |\<中繼 name="Microsoft.Help.Locale"內容 ="[語言代碼]"/ >|本主題的地區設定。 如果此標記使用主題中，必須一次使用，且它必須插入上述任何其他 Microsoft 說明標記。 如果未使用此標記，主題的本文文字是以使用斷詞工具所關聯之產品的地區設定，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 此標記符合 ISOC RFC 4646。 若要確保 Microsoft 說明可正確運作，使用此屬性而不是一般的 [語言] 屬性。|  
 |\<中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ >|本主題的地區設定時也會使用其他地區設定。 如果此標記用於主題，它必須使用一次。 類別目錄包含一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題都可以有相同的識別碼，但每個必須指定唯一的 TopicLocale。 指定符合目錄的地區設定 TopicLocale 這個主題會顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。|  
@@ -449,7 +450,7 @@ Branding.xml 檔案包含用來以一致的方式呈現主題中的特定項目�
 |ViewColorizedText|以色彩標示的檢視|  
 |CombinedVBTabDisplayLanguage|Visual Basic （範例）|  
 |VBDeclaration|宣告|  
-|VBUsage|使用方式|  
+|VBUsage|使用量|  
 |功能：|**意見反應、 頁尾和標誌**|  
 |用法:|提供客戶提供透過電子郵件之目前主題的意見反應的意見反應控制項。  著作權文字內容。  標誌的定義。|  
 |**目**|**值 （這些字串可以修改以符合內容 adopter 需要）。**|  
@@ -519,7 +520,7 @@ Branding.js 檔案包含 JavaScript 使用由 Visual Studio 說明檢視器的�
   
 ||||  
 |-|-|-|  
-|**商標的功能**|**JavaScript 函式**|**說明**|  
+|**商標的功能**|**JavaScript 函式**|**描述**|  
 |Var...||定義變數|  
 |取得使用者程式碼語言|setUserPreferenceLang|對應索引 # 程式碼語言|  
 |設定並取得 cookie 值|getCookie setCookie||  
@@ -691,7 +692,7 @@ Visual Studio 內容會顯示 Visual Studio 標誌，以及其他圖形。  Visu
   
 本逐步解說示範如何併入在 Visual Studio Shell 應用程式的說明內容，然後再部署它。  
   
-**Requirements**  
+**需求**  
   
 1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]  
   

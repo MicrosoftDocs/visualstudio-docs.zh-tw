@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 TextTransform.exe 是命令列工具可讓您轉換文字範本。 當您呼叫 TextTransform.exe 時，您可以指定文字範本檔的名稱做為引數。 TextTransform.exe 呼叫文字轉換引擎，並處理文字範本。 TextTransform.exe 通常會從指令碼呼叫。 不過，它不是通常是必要的因為您可以在 Visual Studio 中或在建置流程中執行文字轉換。  
@@ -50,11 +51,11 @@ TextTransform [<options>] <templateName>
   
 #### <a name="parameters"></a>參數  
   
-|**引數**|**說明**|  
+|**引數**|**描述**|  
 |------------------|---------------------|  
 |`templateName`|識別您想要轉換的範本檔案的名稱。|  
   
-|**選項**|**說明**|  
+|**選項**|**描述**|  
 |----------------|---------------------|  
 |**-out** \<檔名 >|要轉換的輸出寫入檔案。|  
 |**-r** \<組件 >|用於編譯和執行文字範本的組件。|  

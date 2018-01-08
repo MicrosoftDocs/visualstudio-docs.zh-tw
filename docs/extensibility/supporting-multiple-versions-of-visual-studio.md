@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個版本的 Visual Studio
 詞彙*來並行*表示您可以安裝和維護多個版本的同一部電腦上的產品。 適用於 Vspackage，這表示使用者可以擁有數個 Visual Studio 版本安裝在同一部電腦上。 不過，您不能有 Vspackage，載入至單一的 Visual Studio 版本的並存版本。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  安裝 Visual Studio 版本也會安裝對應的版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 例如，在同一部電腦上安裝 Visual Studio 2010 和 Visual Studio 2012 也會安裝 4.0 和 4.5 版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]分別。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [在共用和建立版本的 VSPackage 之間進行選擇](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
  說明如何解決在 VSPackage 中的由並行問題。  
   

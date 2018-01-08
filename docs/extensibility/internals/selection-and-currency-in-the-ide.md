@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 307344a9027e629f08350b77adf99d22d0c127a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-and-currency-in-the-ide"></a>選取項目及在 IDE 中的貨幣
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可讓您維護使用者的資訊目前選取物件，使用選取*內容*。 與選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="selection-context"></a>選取項目內容  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 全域追蹤的 IDE 貨幣，在它自己的全域選取範圍內容物件。 下表顯示組成的選取項目內容的項目。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |目前的階層|通常是目前的專案。NULL 目前的階層表示整個方案是最新。|  
 |目前的項目識別碼|選取的項目內目前的階層。[專案] 視窗中的多個選取項目時，可以有多個目前的項目。|  
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
   
 -   變更項目追蹤的視窗框架選取項目內容中的事件。 範例包括變更選取範圍內 DocObject 或變更在專案類型 視窗中的選取範圍。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選擇內容物件](../../extensibility/internals/selection-context-objects.md)   
  [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)

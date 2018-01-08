@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>傳送 Visual Studio 擴充功能
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 共用與朋友或同事，或發行 Visual Studio Marketplace 上。 本節中，我們說明您需要執行動作以發行和維護您的擴充功能的所有事情：.vsix 檔案時，發佈、 當地語系化，以及更新工作。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/09/2017
  VSIX 格式不支援安裝的程式碼片段。 它也不支援某些其他功能，例如寫入至全域組件快取 (GAC) 或系統登錄。 如果您需要寫入至 GAC 中，或是在安裝中的登錄，您必須使用 Windows Installer。 如需詳細資訊，請參閱[準備擴充功能的 Windows Installer 部署](../extensibility/preparing-extensions-for-windows-installer-deployment.md)。  
   
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中發佈您的擴充功能  
- 您可以擴充散佈給其他人只要郵寄它們.vsix 檔，或放在伺服器上。 但若要取得您的程式碼的許多人，最好是將它放在[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 Visual Studio Marketplace 延伸模組都可透過 Visual Studio 使用者**擴充功能和更新**。 如需詳細資訊，請參閱[尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)。  
+ 您可以擴充散佈給其他人只要郵寄它們.vsix 檔，或放在伺服器上。 但若要取得您的程式碼的許多人，最好是將它放在[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 Visual Studio Marketplace 延伸模組都可透過 Visual Studio 使用者**擴充功能和更新**。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。  
   
  如需示範如何將擴充功能上傳至 Visual Studio Marketplace 的完整範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)|說明如何使用 VSIX 專案範本來安裝自訂專案範本。|  
 |[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)|描述 VSIX 套件的元件。|  

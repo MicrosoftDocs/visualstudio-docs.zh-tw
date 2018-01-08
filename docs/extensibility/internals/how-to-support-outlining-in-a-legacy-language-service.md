@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e08ca6d5a670bb2c1a0f0073920c753add50322c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa57b0d09cb8422a9dde1f70306d2f3808b0384e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支援舊版語言服務中的大綱
 大綱用來展開或摺疊的文字不同的區域。 使用方式大綱定義不同的語言不同。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  請小心隱藏新行字元。 隱藏的文字應該擴充第一行的開始到最後一個字元的最後一個區段中的一行，並只顯示最後一個新行字元。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 隱藏的文字中提供支援舊版語言服務](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce9c4ec33a76afbba1b334fdc5bac5aee17e334
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97993833d08479fbf518fb5b4852f46cc34f9bc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 這個函式具有指定名稱所指定的現有父專案下建立子專案`lpParentProjPath`引數。  
@@ -62,7 +63,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功建立子專案。|  
 |SCC_E_INITIALIZEFAILED|無法初始化父專案。|  
@@ -92,7 +93,7 @@ SCCRTN SccCreateSubProject(
   
  如果登錄項目設為 dword: 00000001，Visual Studio 不會嘗試使用這些新的函式，並加入原始檔控制中的這些操作可在舊版的 Visual Studio 中所顯示的一樣。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -18,16 +18,17 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-fonts-and-colors"></a>使用字型和色彩
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]支援使用顯示文字的字型和色彩。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [字型和色彩概觀](../extensibility/font-and-color-overview.md)  
  討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 也介紹的概念分類和顯示項目，並說明如何 Vspackage 和核心編輯器使用 文字屬性。  
   

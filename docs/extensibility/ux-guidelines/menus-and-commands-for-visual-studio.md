@@ -12,16 +12,17 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408a496b78defbca928420f39ebdf9e9de718019
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce4e297b698952135ef9f771243577789719dbae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>功能表和 Visual Studio 的命令
 ## <a name="command-usage"></a>命令使用方式  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  與 Microsoft Office，這是一套可包含許多不同的產品，不同的是 Visual Studio 包含許多產品，每個會造成全域的 Visual Studio ide 的命令集。 IDE 會篩選內容會根據使用者所提供的功能來管理數千個命令的複雜性。  
   
  變更使用者的內容-例如從 [設計] 視窗切換到編輯視窗的程式碼，而功能不相關的到新的內容就會消失。 在相同的時間，以及相關的動態資訊，例如屬性和 [工具箱] 選項的新功能介面。 使用者應該不會注意到可用的命令集的交換。 如果使用者是團體或混淆命令時，出現或消失，UI 設計需要調整。 使用者的目前內容是一律以一或多個方法，例如 IDE 標題列、 [屬性] 視窗或 [屬性頁] 對話方塊中。  
@@ -255,7 +256,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="access-and-shortcut-keys"></a>存取和快速鍵  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  有兩種類型的鍵盤按鍵：  
   
 -   **存取金鑰**（也稱為快速鍵） 允許在對話方塊的 UI 中使用鍵盤存取透過功能表命令以及每個標籤。 便捷鍵主要是供協助工具、 指派給所有功能表和大部分對話方塊控制項，不是所要的記憶中，會影響只有目前的視窗，而且會當地語系化。  

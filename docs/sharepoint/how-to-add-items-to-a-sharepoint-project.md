@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7995b6768ae188484c15a3b1d3157df116ca481
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67b35bb60224ce8c10136314ce2d42635d80c5c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：將項目新增至 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每個包含多個 SharePoint 專案項目。 您開啟或建立 SharePoint 方案之後，您可以加入新的或現有的項目這些專案。 例如，新的工作流程專案會隨附預設表單，名為 default.aspx 中，但您可以取代為新的或不同的形式，該表單，或加入另一種 ASPX 形式。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  瀏覽至包含您要新增、 加以選擇，然後選擇的項目資料夾**新增** 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

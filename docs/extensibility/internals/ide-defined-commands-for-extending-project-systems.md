@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5e6f4caf8466100763b6a4ae11f6760a3d4c655
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b450a55de29e112d158cb783ad366eb4fbcaca7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE 定義的命令，以擴充專案系統
 當您想要擴充的專案系統時，您可以使用命令和命令所提供的群組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="command-menus"></a>功能表命令  
  下表顯示有用的位置，讓您將叫用專案擴充性的高層級命令的命令功能表。  
   
-|命令功能表|說明|  
+|命令功能表|描述|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|**專案**最上層功能表。|  
 |IDM_VS_TOOL_PROJWIN|**方案總管 中**工具列。|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="shortcut-menus"></a>快顯功能表  
  下表顯示快顯功能表中選取單一節點時所要套用**方案總管 中**，或有多個同質性的選取項目中時**方案總管 中**，這是當所有選取的節點都屬於相同的類型。  
   
-|快顯功能表|說明|  
+|快顯功能表|描述|  
 |-------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|適用於選取專案節點時。|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|選取檔案時適用。|  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  下表顯示時，適用的快顯功能表中的選取範圍**方案總管 中**跨越多個階層，  
   
-|快顯功能表|說明|  
+|快顯功能表|描述|  
 |-------------------|-----------------|  
 |IDM_VS_CTXT_XPROJ_SLNPROJ|適用於目前的選取範圍包含的方案節點和根專案節點時。|  
 |IDM_VS_CTXT_XPROJ_SLNITEM|適用於目前的選取範圍包含方案節點和專案項目時。|  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="command-groups"></a>命令群組  
  下表顯示當擴充的專案，而且您可以透過存取時，您可以使用的命令群組<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>快顯功能表。  
   
-|命令群組|說明|  
+|命令群組|描述|  
 |-------------------|-----------------|  
 |IDG_VS_CTXT_PROJECT_BUILD|建立、 重建和部署專案的命令。|  
 |IDG_VS_CTXT_COMPILELINK|編譯及連結專案命令。|  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 |IDG_VS_CTXT_PROJECT_TRANSFER|命令進行剪下、 複製和貼上作業。|  
 |IDG_VS_CTXT_PROJECT_PROPERTIES|命令可提供存取**專案屬性** 對話方塊。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)

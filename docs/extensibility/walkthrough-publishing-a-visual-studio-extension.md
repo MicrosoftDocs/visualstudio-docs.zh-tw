@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8eac89a2bdde3b0a20ea3a98775de84a503f86c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說： 發行 Visual Studio 擴充功能
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 11/09/2017
 
 2. 按一下右上角**發行**擴充功能。  選擇您用來發行 TestPublish 「 發行者 」。  TestPublish 的清單隨即顯示。
 
-3. 將滑鼠停留在延伸模組項目，然後按一下**...**和**移除...**系統會要求您確認要移除該擴充功能。  按一下 [確定]。
+3. 將滑鼠停留在延伸模組項目，然後按一下**...**和**移除...**系統會要求您確認要移除該擴充功能。  按一下 [確定 **Deploying Office Solutions**]。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a1b1e7c7b782868ece2c640f75fd506018f3e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f9bfae4fb64a4dde27f8156560f0fa850fcd5885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-object"></a>專案組態物件
 專案組態物件管理 ui 的組態資訊的顯示。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  `ISpecifyPropertyPages`和`IDispatch`可用搭配屬性頁來擷取，並向使用者顯示組態相關資訊。 如需詳細資訊，請參閱[屬性頁](../../extensibility/internals/property-pages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [專案組態的輸出](../../extensibility/internals/project-configuration-for-output.md)   

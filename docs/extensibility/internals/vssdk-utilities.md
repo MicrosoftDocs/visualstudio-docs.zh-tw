@@ -13,16 +13,17 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d74f0a7978ab0e06cfc7289c827c458487aa630c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03336b99b8b49c190a292ca9257aa24d4366f28c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 本節主題說明 VSSDK 隨附的工具。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [RegPkg 公用程式](../../extensibility/internals/regpkg-utility.md)  
   [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)  
   [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)  

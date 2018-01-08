@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 263e2adf69aa479974a07dbb2acc2d4cd8f2a0dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1405fbeba34f3e3aa9c645f6eaffe90fe6ac9036
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須告知可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]確認他們已安裝，且應該會載入。 此程序被透過將資訊寫入登錄中。 這是安裝程式的典型的作業。  
@@ -58,6 +59,6 @@ Vspackage 必須告知可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
   
 -   存取網路資源，例如類型程式庫中，如果元件是同時指定為從來源執行而且列於 SelfReg 資料表中，自我登錄程式碼可能會遭到拒絕。 這可能會導致元件失敗的系統管理安裝期間安裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Managed 的封裝註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

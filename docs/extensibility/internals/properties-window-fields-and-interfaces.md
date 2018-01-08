@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 若要判斷哪些資訊會顯示在選取的模型**屬性**視窗根據在 IDE 中具有焦點的視窗。 每個視窗中，並在選取的視窗中，物件可以有推送至全域範圍內容的選取項目內容物件。 該視窗具有焦點時，環境會更新全域範圍內容視窗框架中的值。 當焦點變更時，也會選取範圍內容。  
@@ -116,5 +117,5 @@ STDAPI DLLGetDocumentation
   
  取得當地語系化的名稱和屬性描述的另一種是藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 如需實作此方法的詳細資訊，請參閱[屬性視窗中的欄位和介面](../../extensibility/internals/properties-window-fields-and-interfaces.md)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ebd219beb28fc183d876e0391192390da03f8ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffa21e0351b6516920700d8dde0ba8b43243a9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>擴充獨立的 Shell
 您可以擴充 Visual Studio isolated shell 將 VSPackage、 Managed Extensibility Framework (MEF) 元件的組件或泛型的 VSIX 專案加入至您的獨立的 shell 應用程式。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  加入名為的 Visual Studio Package 專案`MenuCommandsPackage`。  
   
-2.  在**基本 VSPackage 資訊**頁面在精靈的設定**公司名稱**至`Fabrikam`和**VSPackage 名稱**至`FabrikamMenuCommands`。 選擇**下一步** 按鈕。  
+2.  在**基本 VSPackage 資訊**頁面在精靈的設定**公司名稱**至`Fabrikam`和**VSPackage 名稱**至`FabrikamMenuCommands`。 選擇 [下一步] 按鈕。  
   
 3.  在下一個頁面上，選取**功能表命令**，然後選擇 **下一步**。  
   
@@ -121,5 +122,5 @@ ms.lasthandoff: 10/31/2017
   
 8.  建置並執行方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f89736c448570157711c15d2d86091d91e1f30d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-building"></a>建置專案組態
 給定方案的方案組態的清單是由方案組態 對話方塊來管理。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
  此外，您可以提供的方格中的專案相依性的視窗。 如需詳細資訊，請參閱[屬性顯示格線](../../extensibility/internals/properties-display-grid.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

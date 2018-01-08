@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbfdffa02a4bca9f145a2f20e3d2af31b8bcd97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91201eb42d711a09caadad3ef6bf663b23d6c099
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-projects"></a>Web 專案
 Web 專案系統會建立 Web 專案的專案系統。 Web 專案建立 Web 應用程式。 您可以程式設計使用傳統的程式設計語言，例如網頁[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，以收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。 使用相關聯的程式碼的網頁會呼叫智慧網頁。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Essentials](../../extensibility/internals/web-project-essentials.md)  
  顯示重要的項目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Web 專案。  
   

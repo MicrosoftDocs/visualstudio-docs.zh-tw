@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>測試區域 3： 簽出/恢復簽出
 這個原始檔控制外掛程式的測試區域涵蓋透過版本存放區中的編輯和還原項目**簽出**和**恢復簽出**命令。  
@@ -136,5 +137,5 @@ ms.lasthandoff: 10/31/2017
 |復原簽出專案的檔案加入專案之後|1.建立新的專案，並將它加入至原始檔控制。<br />2.簽出專案。<br />3.將檔案加入專案。<br />4.復原簽出專案。|加入的檔案會從方案總管 中的專案中移除。<br /><br /> 專案不再簽出。|  
 |從專案刪除檔案後恢復專案的簽出|1.建立新的專案，並將它加入至原始檔控制。<br />2.簽出專案。<br />3.從專案刪除檔案。<br />4.復原簽出專案。|已刪除的檔案會出現在 [方案總管] 中的專案。<br /><br /> 專案不再簽出。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

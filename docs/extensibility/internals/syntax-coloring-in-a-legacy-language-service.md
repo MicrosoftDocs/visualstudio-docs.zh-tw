@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>使用語法色彩編碼舊版語言服務
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用著色服務識別語言的項目，並顯示在編輯器中指定的色彩。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  除了使用語言服務色彩標示器，VSPackage 也可以使用一般用途[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]著色機制的文字。 如需有關這項機制的詳細資訊，請參閱[使用字型和色彩](../../extensibility/using-fonts-and-colors.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)  
  討論如何編輯器存取語言服務的語法著色和語言服務必須實作以支援語法著色。  
   
@@ -75,5 +76,5 @@ ms.lasthandoff: 10/31/2017
  [自訂可設定色彩的項目](../../extensibility/internals/custom-colorable-items.md)  
  討論如何實作自訂色彩項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用字型和色彩](../../extensibility/using-fonts-and-colors.md)

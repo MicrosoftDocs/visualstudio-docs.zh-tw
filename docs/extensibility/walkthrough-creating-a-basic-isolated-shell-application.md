@@ -17,11 +17,12 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 28a555f2ab6e907a54cfb88d57ee09f5f47771ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本獨立的 Shell 應用程式
 本逐步解說示範如何建立獨立的 shell 方案、 自訂 [說明] 工具視窗中，以及建立安裝程式安裝在 isolated 的 shell。  
@@ -218,7 +219,7 @@ ms.lasthandoff: 12/14/2017
   
     7.  Splash.bmp  
   
-5.  按一下**加入專案輸出**按鈕，然後加入**MyVSShellStub/主要輸出**。 按一下 [確定]。  
+5.  按一下**加入專案輸出**按鈕，然後加入**MyVSShellStub/主要輸出**。 按一下 [確定 **Deploying Office Solutions**]。  
   
 6.  在左窗格中下,**目的地電腦**，以滑鼠右鍵按一下**Fabrikam 音樂編輯器 [INSTALLDIR]**節點並加入**新資料夾**名為**延伸**。  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "27"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d019e602c5bf198df03a50034c2ed29519d16e53
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0569b5cced2100e1ed3b746464b001d929a209be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 其他 Visual Studio 使用者可以安裝您使用 Visual Studio 建立的圖層模型擴充功能。  

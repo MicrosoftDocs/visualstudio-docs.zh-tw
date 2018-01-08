@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6baa3086d1a81ce433a077ab1ed0dff4cb152308
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1cbc00fde74aa8f3592d4f50b31005e951b14962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 下列一般指導方針可能有幫助您在產生程式碼或其他應用程式資源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它們不被固定的規則。  
@@ -136,7 +137,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
  撰寫您想要產生，並確定它是正確的程式碼或文字的範例。 然後將其副檔名變更為.tt 並以累加方式插入程式碼會藉由讀取模型修改內容。  
   
  請考慮使用具類型的模型。  
- 雖然您可以建立您的模型資料庫或 XML 結構描述，可能有助於建立網域特定語言 (DSL)。 DSL 的優點是它會產生的類別來代表結構描述和屬性，以表示屬性的每個節點。 這表示您可以藉由程式設計方面的商務模型。 例如：  
+ 雖然您可以建立您的模型資料庫或 XML 結構描述，可能有助於建立網域特定語言 (DSL)。 DSL 的優點是它會產生的類別來代表結構描述和屬性，以表示屬性的每個節點。 這表示您可以藉由程式設計方面的商務模型。 例如:   
   
 ```  
 Team Members:  
@@ -153,6 +154,6 @@ Team Members:
   
  您也可以為特定領域語言 (DSL) 來設計您自己的圖表類型。 從 UML 和 Dsl，可以產生程式碼。 如需詳細資訊，請參閱[分析和模組化架構](../modeling/analyze-and-model-your-architecture.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)

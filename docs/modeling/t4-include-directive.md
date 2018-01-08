@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4f46faae63d3fd60715ecd9aec804d03ef6dbc81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5d76ca47f0278306c16d6d5b15b964d6118318c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的文字範本中，您可以使用 `<#@include#>` 指示詞來納入另一個檔案的文字。 您可以將 `include` 指示詞放在文字範本中第一個 `<#+ ... #>` 類別功能區塊之前的任何位置。 被納入的檔案也包含 `include` 指示詞和其他指示詞。 如此可讓您在範本之間共用範本程式碼和重複使用文字。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/27/2017
   
      這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾  
   
--   `filePath` 可以包含以 "%" 分隔的環境變數。 例如：  
+-   `filePath` 可以包含以 "%" 分隔的環境變數。 例如:   
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  

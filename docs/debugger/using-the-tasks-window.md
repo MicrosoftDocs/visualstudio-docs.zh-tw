@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
-**工作**視窗類似於**執行緒**視窗中，差別在於前者顯示的相關資訊<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class.md)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 
+**工作**視窗類似於**執行緒**視窗中，差別在於前者顯示的相關資訊<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 
   
  在 managed 程式碼，您可以使用**工作**視窗中，當您使用<xref:System.Threading.Tasks.Task?displayProperty=fullName>物件或**await**和**非同步**關鍵字 (**Await**和**非同步**visualbasic)。 如需在 managed 程式碼工作的詳細資訊，請參閱[平行程式設計](/dotnet/standard/parallel-programming/index)。  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 12/07/2017
 ## <a name="tasks-column-information"></a>工作資料行資訊  
  中的資料行**工作**視窗會顯示下列資訊。  
   
-|資料行名稱|說明|  
+|資料行名稱|描述|  
 |-----------------|-----------------|  
 |**旗標**|顯示已加上旗標的工作，並可讓您為工作加上或取消旗標。|  
 |**圖示**|黃色箭號表示目前工作。 目前工作是目前執行緒上的最上方工作。<br /><br /> 白色箭號表示最新的工作，即叫用偵錯工具時的最新工作。<br /><br /> 暫停圖示表示已由使用者凍結的工作。 在清單中，於工作上按一下滑鼠右鍵，就可以凍結和解除凍結工作。|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 12/07/2017
 |**傳回狀態**|工作完成時的狀態。 傳回的狀態值包括**成功**， **Cancelled**，和**錯誤**。|  
 |**AppDomain**|針對 Managed 程式碼，是正在執行工作的應用程式定義域。|  
 |**task_group**|原生程式碼的位址[task_group](/cpp/parallel/concrt/reference/task-group-class.mdd)已排程工作的物件。 針對非同步代理程式和輕量型工作，此欄會設為 0。|  
-|流程|工作執行所在的處理序 ID。|  
+|處理序|工作執行所在的處理序 ID。|  
 |非同步狀態|對於 Managed 程式碼來說，是指工作狀態。 根據預設，這個資料行是隱藏狀態。 若要顯示這個資料行，請開啟其中一個資料行標頭的操作功能表。 選擇**資料行**， **AsyncState**。|  
   
  在資料行標題上按一下滑鼠右鍵，然後選取想要的資料行，就可以將資料行加入至檢視  (清除選取範圍，就可以移除資料行)。您也可以將資料行向左或向右拖曳，以重新排列資料行。 下圖顯示資料行捷徑功能表。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 12/07/2017
   
  ![在 [工作] 視窗的捷徑執行緒功能表](../debugger/media/parallel_tasks_contextmenu2.png "Parallel_Tasks_ContextMenu2")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [平行程式設計](/dotnet/standard/parallel-programming/index)   

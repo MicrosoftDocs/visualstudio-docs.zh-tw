@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的色彩  
@@ -255,7 +256,7 @@ protected override void Dispose(bool disposing)
   
 ##  <a name="BKMK_ChoosingHighContrastColors"></a>選擇高對比色彩  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
 Windows 會使用數種高對比系統層級主題增加文字、 背景和影像的色彩對比，讓項目會出現在螢幕上比較明顯。 為了協助工具，很重要，Visual Studio 介面項目時做出回應正確使用者切換至 高對比佈景主題。  
   
 少數幾個系統色彩可以用於高對比佈景主題。 在選擇您的系統色彩名稱時，請記住下列秘訣：  
@@ -289,7 +290,7 @@ Windows 會使用數種高對比系統層級主題增加文字、 背景和影�
 ### <a name="usage-patterns"></a>使用模式
 許多常見的 UI 項目已定義的高對比色彩。 您可以參考這些使用模式選擇自己的系統色彩名稱時，讓您的 UI 項目都符合類似的元件。  
   
-| 系統色彩 | 使用方式 |
+| 系統色彩 | 使用量 |
 | --- | --- |
 | ActiveCaption | -使用中的 IDE 和 rafted 的視窗按鈕上暫留，然後按下字符<br />IDE 和 rafted 的視窗標題列背景<br />預設狀態列背景 |
 | ActiveCaptionText | -使用中的 IDE 與 rafted 的視窗標題列前景 （文字和字符）<br />-背景和框線的動態顯示和按上的作用中視窗按鈕 |
@@ -314,7 +315,7 @@ Windows 會使用數種高對比系統層級主題增加文字、 背景和影�
   
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a>適用於一般使用者公開色彩  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
 有時您會想要允許使用者自訂 UI，例如當您在建立程式碼編輯器或設計介面時。 若要這樣做的最常見方式是使用**工具&gt;選項**對話方塊。 除非您有高特製化需要特殊控制項的 UI，來提供自訂的最簡單方式是透過**字型和色彩**頁面內**環境** 對話方塊的區段。 對於您公開自訂每個項目，使用者可以選擇變更的前景色彩、 背景色彩，或兩者。
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>建立 VSPackage，您可自訂的色彩  
@@ -337,7 +338,7 @@ VSPackage 可以控制的字型和色彩透過自訂類別，和字型和色彩 
   
 填入具有兩個值的登錄：  
 
-| 名稱 | 類型 | 資料 | 說明 |
+| 名稱 | 類型 | 資料 | 描述 |
 | --- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
 | Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務 GUID |
@@ -349,7 +350,7 @@ VSPackage 可以控制的字型和色彩透過自訂類別，和字型和色彩 
   
 填入具有兩個值的登錄：
 
-| 名稱 | 類型 | 資料 | 說明 |
+| 名稱 | 類型 | 資料 | 描述 |
 |--- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
 | Package | REG_SZ | GUID | 支援類別目錄之 VSPackage 服務 GUID |

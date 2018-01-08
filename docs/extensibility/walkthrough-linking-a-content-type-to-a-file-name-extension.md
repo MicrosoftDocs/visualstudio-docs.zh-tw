@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfe19b8733a6ee5ffe3d038778e664a4a1455dbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5df3bab0a453f4f8edcff3be86e5a767065b59da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至檔案的副檔名
 您可以定義您自己的內容類型，然後連結它透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能檔案的副檔名。 在某些情況下，檔案名稱的副檔名已經定義語言服務;不過，使用 MEF 您仍必須將它連結至內容類型。  
@@ -103,5 +104,5 @@ ms.lasthandoff: 10/31/2017
     [ContentType("hid")]  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

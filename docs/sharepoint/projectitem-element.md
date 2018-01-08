@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a9f1ac258f6501aedb2fd89ce21514d785b25f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。  
@@ -43,11 +44,11 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |**DefaultFile**|選擇性**xs: string**屬性。<br /><br /> 相對路徑，包括檔案名稱，當您開啟 SharePoint 專案項目中的，會在 Visual Studio 編輯器中開啟的檔案**方案總管 中**。 路徑是相對於包含.spdata 檔案的資料夾。|  
 |**FeatureReceiverClass**|選擇性**xs: string**屬性。<br /><br /> 這個 SharePoint 專案項目的功能接收器類別完整限定的名稱。 如需功能接收器的詳細資訊，請參閱[提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[ExtensionData](../sharepoint/extensiondata-element.md)|選擇性項目。<br /><br /> 代表 SharePoint 專案項目相關聯的自訂資料項目的集合。<br /><br /> 您可以只包含一**ExtensionData**項目。|  
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|選擇性項目。<br /><br /> 表示將它部署至 SharePoint 時，會包含與功能的屬性值的集合。<br /><br /> 您可以只包含一**FeatureProperties**項目。|  
@@ -73,12 +74,12 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

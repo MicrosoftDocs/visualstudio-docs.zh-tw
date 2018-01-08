@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: bertaygu
+ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量延伸模組中啟動的影響
 

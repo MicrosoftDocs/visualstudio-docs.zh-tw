@@ -15,16 +15,17 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35bd935683f8ace47536389ebc65f34311e9fcfd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VS Shell 指定 VSPackage 的檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須是能夠找出組件載入 VSPackage 的 DLL。 您可以找出它以各種方式下, 表中所述。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |使用程式碼基底登錄機碼。|程式碼基底的索引鍵可以用來直接[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]從任何完整的檔案路徑載入 VSPackage 組件。 索引鍵的值應該是 DLL 的檔案路徑。 這是最佳的方式有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]將封裝組件載入。 這項技術有時稱為 「 程式碼基底/私密金鑰安裝目錄技術。 」 在註冊期間的程式碼基底值透過傳遞至註冊屬性類別的執行個體<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext>型別。|  
 |將放入 DLL **PrivateAssemblies**目錄。|將組件中的**PrivateAssemblies**子目錄[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]目錄。 組件位於**PrivateAssemblies**會自動偵測，但不是會顯示在**加入參考** 對話方塊。 之間的差異**PrivateAssemblies**和**PublicAssemblies**是組件中**PublicAssemblies**會列舉在**加入參考**  對話方塊。 如果您選擇不使用 「 程式碼基底/私密金鑰安裝目錄 」 的技術，則您應安裝到**PrivateAssemblies**目錄。|  

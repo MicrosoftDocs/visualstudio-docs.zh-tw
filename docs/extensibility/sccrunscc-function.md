@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9ac82ac0363428ade1b6010a9060e15284db224
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ad179325c4f34cd206a3c5e6b0840a69dd46037
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用的原始檔控制系統管理工具。  
@@ -50,7 +51,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|原始檔控制系統管理工具已順利叫用。|  
 |SCC_I_OPERATIONCANCELED|作業已取消。|  
@@ -67,7 +68,7 @@ SCCRTN SccRunScc(
   
  此函式通常叫用使用者選取時**啟動\<原始檔控制伺服器 >**從**檔案** -> **原始檔控制**功能表。 這**啟動**功能表選項可一律停用，或甚至隱藏設定登錄項目。 請參閱[如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需詳細資訊，這和其他功能的位元)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [功能旗標](../extensibility/capability-flags.md)   

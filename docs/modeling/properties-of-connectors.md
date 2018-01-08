@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e974c768f9bf73b92cb974875654846a267bb893
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器代表產生的設計工具中的網域關聯性。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/27/2017
   
  連接器有下列表格中所列的屬性。  
   
-|屬性|說明|預設|  
+|屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |色彩|此連接器的色彩。|黑色|  
 |虛線樣式|此連接器 （實線、 虛線、 點、 線、 虛線點點或自訂） 線條的虛線樣式。|實線|  
@@ -45,10 +46,10 @@ ms.lasthandoff: 10/27/2017
 |注意|此連接器相關聯的非正式附註。|\<無 >|  
 |路徑樣式|用於路由連接器的樣式。 A`Rectilinear`連接器可做為必要項; 直角開啟`Straight`連接器並不會。|直線|  
 |公開為屬性的色彩<br /><br /> 當做屬性公開的虛線樣式<br /><br /> 公開為屬性的粗細<br /><br /> 公開文字色彩|如果`True`，使用者可以設定圖形的所述的屬性。 若要設定這種情況，以滑鼠右鍵按一下圖形定義，然後按一下**新增公開**。|False|  
-|說明|用來產生的設計工具的文件。|\<無 >|  
+|描述|用來產生的設計工具的文件。|\<無 >|  
 |顯示名稱|將此連接器產生的設計工具中顯示的名稱。|\<無 >|  
 |固定的工具提示文字|使用固定的工具提示文字。|\<無 >|  
 |說明關鍵字|用來編製索引的這個項目 F1 說明關鍵字。|\<無 >|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用文字標記與舊版應用程式開發介面
 文字標記是文字的浮動範圍中的緩衝區，可能會影響顯示和文字的區域的行為。 標記包含中斷點、 書籤，波浪底線和唯讀區域。 文字標記會基本上不同的語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面上，通常被要求語法著色。 語法著色可變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並在套用特殊的行為和著色。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何： 加入標準文字標記](../extensibility/how-to-add-standard-text-markers.md)|描述如何將所提供的標準文字標記類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字檢視核心編輯器。|  
 |[如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)|描述如何實作的執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用於使用紅色波浪底線指出錯誤的標記。|  

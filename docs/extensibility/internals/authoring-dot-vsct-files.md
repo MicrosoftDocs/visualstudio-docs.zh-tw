@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad1a8cbd8bc0369d405bf0a0c26c4285e143e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 本文件示範如何撰寫.vsct 檔加入 Visual Studio 整合式的開發環境 (IDE) 中的功能表項目、 工具列和其他使用者介面 (UI) 項目。 UI 項目加入 Visual Studio Package (VSPackage) 已經沒有.vsct 檔時，請使用下列步驟。  
@@ -235,7 +236,7 @@ ms.lasthandoff: 10/31/2017
  MenuController  
  功能表控制器是具有旁邊的箭頭的按鈕。 按一下箭頭，即可開啟清單。 若要將功能表控制器加入至 UI 中，建立`Menu`項目並設定其`type`屬性**MenuController**或**MenuControllerLatched**，取決於您想要的行為。 若要填入功能表控制器，將它設為父代`Group`項目。 功能表控制器將會顯示該群組的所有子系的下拉式清單上。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)

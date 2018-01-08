@@ -12,16 +12,17 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e06a3e89b69b2b69a97c4deb2d68d98913f6e03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ##  <a name="BKMK_CommonControls"></a>通用控制項  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
 通用控制項便會產生大部分的 Visual Studio 中的使用者介面。 在 Visual Studio 介面中使用的最常見的控制項應該遵循[Windows 桌面互動的指導方針](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)。 本主題旨在說明 Visual Studio，並涵蓋了特殊的情況或加強這些 Windows 指導方針的詳細資料。  
   
 #### <a name="common-controls-in-this-topic"></a>本主題中的通用控制項  
@@ -218,7 +219,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a>按鈕和超連結  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
 按鈕和連結控制項 （超連結） 應該遵循[超連結的基本 Windows 桌面指引](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx)使用量、 字詞、 調整大小，和間距。  
   
 ### <a name="choosing-between-buttons-and-links"></a>選擇按鈕和連結  
@@ -301,7 +302,7 @@ Visual Studio 中的大部分按鈕會出現在公用程式的對話方塊，而
   
 > **注意：**使用者需要這些 （沒有存取機碼） 的按鈕索引標籤上，因此將它們放在合理的順序。 地圖`name`花費，讓螢幕助讀程式正確解譯按鈕動作的動作按鈕的屬性。  
   
-| 函式 | 按鈕 |  
+| 功能 | 按鈕 |  
 | --- | --- |  
 | 新增 | ![圖形的 [新增] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
 | 移除 | ![圖形的 [移除] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |

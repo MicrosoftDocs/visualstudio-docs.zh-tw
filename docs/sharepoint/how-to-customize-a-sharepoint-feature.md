@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d81a65a8030fd77ead1362602b0e16f474ef410c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ed5ca134205568a185541b64e3f22cc4f76ed36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>如何：自訂 SharePoint 功能
   您可以建立和使用功能設計工具，Visual Studio 中自訂 SharePoint 功能。 例如，您可以設定功能範圍，以及做為相依性加入其他功能。 根據預設，當您將新功能加入方案總管 或 SharePoint 封裝總管 中，會開啟功能設計工具。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  範本會以原始的文字，重新整理，而且 XML 的任何變更都會遺失。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

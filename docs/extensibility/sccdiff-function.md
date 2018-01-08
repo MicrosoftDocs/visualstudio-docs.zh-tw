@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfe7da717a59b114052080048e97b1d6fcdd425
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 此函式會顯示 （或選擇性地只會檢查） 目前的檔案 （位於本機磁碟上） 和最後一個簽入的版本之間的差異，在來源控制系統。  
@@ -54,7 +55,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|工作複製與伺服器版本都相同。|  
 |SCC_I_FILESDIFFERS|使用的複本不同於原始檔控制下的版本。|  
@@ -83,5 +84,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|以無訊息方式比較透過總和檢查碼時支援檔案。 如果不支援，會回復為內容的比較。|  
 |SCC_DIFF_QD_TIME|以無訊息方式比較透過支援時，其時間戳記的檔案。 如果不支援，會回復為內容的比較。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

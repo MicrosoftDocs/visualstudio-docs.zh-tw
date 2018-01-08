@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-editor"></a>在編輯器
 編輯器 是由不同子系統，設計用來將編輯器 中 文字 檢視和使用者介面文字模型分開的數字。  
@@ -287,6 +288,6 @@ P: ABCDEvwxyz
   
  陳述式完成提供方法名稱、 XML 項目，和其他程式碼撰寫或標記的項目可能完成快顯的清單。 一般情況下，使用者筆勢會叫用完成的工作階段。 工作階段會顯示可能的完成的清單，使用者可以選取其中一個，或關閉的清單。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>負責建立及觸發<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>計算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>的工作階段的完成項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)   
  [編輯器匯入](../extensibility/editor-imports.md)

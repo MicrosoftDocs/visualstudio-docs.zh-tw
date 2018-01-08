@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>影像和 Visual Studio 的圖示
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>使用 Visual Studio 中的映像  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_IconDesign"></a>設計圖示  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  Visual Studio 會使用具有全新的幾何和正負數 （淡/濃） 50/50 平衡和使用直接、 容易了解象徵物的現代化樣式圖示。 重要圖示設計點清楚、 簡化主機，以及內容周圍的中心。  
   
 -   **清晰度：**專注於核心比喻，其意義和責難提供圖示。  
@@ -249,7 +250,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_UsingColorInImages"></a>使用映像中的色彩  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  在 Visual Studio 中的圖示是主要是單色。 保留色彩傳達的特定資訊並永遠不會為裝飾。 使用色彩：  
   
 -   表示動作  
@@ -271,7 +272,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="base-palette"></a>基礎調色盤  
  所有標準的圖示會包含三種基底的色彩。 圖示會包含任何漸層或延伸陰影，以 3D 工具圖示的一個或兩個例外狀況。  
   
-|使用方式|名稱|值 （淺色佈景主題）|樣本|範例|  
+|使用量|名稱|值 （淺色佈景主題）|樣本|範例|  
 |-----------|----------|---------------------------|------------|-------------|  
 |暗色調背景 /|VS BG|424242 / 66,66,66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基礎調色盤範例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405年 02_BasePaletteExample")|  
 |前景/輕|VS FG|F0EFF1 / 240,239,241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -284,7 +285,7 @@ ms.lasthandoff: 10/31/2017
 #### <a name="action-modifiers"></a>動作修飾詞  
  下列四種色彩表示動作修飾詞所需的動作類型：  
   
-|使用方式|名稱|值 （所有主題）|樣本|  
+|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
 |正|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |負|VS 動作紅色|A1260D / 161,38,13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -327,14 +328,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="folder"></a>資料夾  
   
-|使用方式|名稱|值 （所有主題）|樣本|範例|  
+|使用量|名稱|值 （所有主題）|樣本|範例|  
 |-----------|----------|--------------------------|------------|-------------|  
 |資料夾|資料夾|DCB67A / 220,182,122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio 語言  
  每個一般的 語言 或 Visual Studio 中提供的平台有相關聯的色彩。 這些色彩使用基底的圖示，或出現在複合圖示右上角的語言修飾詞。  
   
-|使用方式|名稱|值 （所有主題）|樣本|  
+|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
 |ASP，HTML，WPF|ASP HTML WPF 藍色|0095D 7 / 0,149,215|![樣本 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP 紫色|9B4F96 / 155,79,150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
@@ -356,25 +357,25 @@ ms.lasthandoff: 10/31/2017
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense 圖示使用獨佔的調色盤。 這些色彩可協助使用者快速區分 IntelliSense 快顯清單中的不同項目。  
   
-|使用方式|名稱|值 （所有主題）|樣本|  
+|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
 |事件類別|VS 動作橙色|C27D1A / 194,125,26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |擴充方法，方法中，模組中委派|VS 動作紫色|652 D 90 / 101,45,144|![樣本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |欄位、 列舉項目、 巨集、 結構、 等位的實值型別，運算子，介面|VS 動作藍色|00539 C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|物件|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Object|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |常數，例外狀況、 列舉項目、 地圖、 地圖項目、 命名空間中，範本中，類型定義|背景 (VS BG)|424242 / 66,66,66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 圖示的範例  
   
 ||||||  
 |-|-|-|-|-|  
-|![IntelliSense 類別圖示](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405年 36_IntelliSenseClass")<br />類別|![IntelliSense 私用事件圖示](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405年 37_IntelliSensePrivateEvent")<br />私用事件|![IntelliSense 委派圖示](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405年 38_IntelliSenseDelegate")<br />委派|![IntelliSense 方法 friend 圖示](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405年 39_IntelliSenseMethodFriend")<br />方法 Friend|![欄位圖示](../../extensibility/ux-guidelines/media/0405-40_field.png "0405年 40_Field")<br />欄位|  
-|![IntelliSense 受保護的列舉項目圖示](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405年 41_IntelliSenseProtectedEnumItem")<br />受保護的列舉項目|![IntelliSense 物件圖示](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405年 42_IntelliSenseObject")<br />物件|![IntelliSense 範本圖示](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405年 43_IntelliSenseTemplate")<br />範本|![IntelliSense 例外狀況捷徑圖示](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405年 44_IntelliSenseExceptionShortcut")<br />例外狀況捷徑||  
+|![IntelliSense 類別圖示](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405年 36_IntelliSenseClass")<br />類別|![IntelliSense 私用事件圖示](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405年 37_IntelliSensePrivateEvent")<br />私用事件|![IntelliSense 委派圖示](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405年 38_IntelliSenseDelegate")<br />Delegate - 委派|![IntelliSense 方法 friend 圖示](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405年 39_IntelliSenseMethodFriend")<br />方法 Friend|![欄位圖示](../../extensibility/ux-guidelines/media/0405-40_field.png "0405年 40_Field")<br />欄位|  
+|![IntelliSense 受保護的列舉項目圖示](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405年 41_IntelliSenseProtectedEnumItem")<br />受保護的列舉項目|![IntelliSense 物件圖示](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405年 42_IntelliSenseObject")<br />Object|![IntelliSense 範本圖示](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405年 43_IntelliSenseTemplate")<br />範本|![IntelliSense 例外狀況捷徑圖示](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405年 44_IntelliSenseExceptionShortcut")<br />例外狀況捷徑||  
   
 ### <a name="notifications"></a>通知  
  在 Visual Studio 中的通知可用來表示狀態。 通知調色盤會使用下列四種色彩，以及黑色或白色前景填滿選項，定義下列狀態層級的通知。  
   
-|使用方式|名稱|值 （所有主題）|樣本|  
+|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
 |狀態： 中性|通知藍色 （與藍色）|1BA1E2 / 27,161,226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |狀態： 正數|通知綠色 （VS 綠色）|339933 / 51,153,51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -392,7 +393,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  一般情況下，Visual Studio Online 包含裝載在瀏覽器的功能。 在不同的環境中的色彩而有所不同，但樣式會保持相同。  
   
-|群組|使用方式|名稱|值 （所有主題）|樣本|  
+|群組|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|背景|TFSO BG|656565/ 101, 101, 101|![樣本 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|外框|TFSO 出|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  

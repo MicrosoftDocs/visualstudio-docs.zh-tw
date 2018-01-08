@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-element"></a>符號的項目
 會定義 Guid 和其他 VSCT 項目所使用的識別碼。 對於 unmanaged 程式碼，這項資訊通常是由所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼使用的符號項目來定義這項資訊的子元素。  
@@ -38,24 +39,24 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |無||  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |GuidSymbol|會定義 GUID 符號。 GuidSymbol 具有兩個必要的屬性： 名稱和值。 名稱的符號名稱，且此值為 GUID 字串形式的值。<br /><br /> 例如：\<GuidSymbol 名稱 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
 |IDSymbol|定義符號。 IDSymbol 具有兩個必要的屬性： 名稱和值。 名稱的符號名稱，且此值為字串形式的符號值。<br /><br /> 例如：\<IDSymbol 名稱 ="MyMenuGroup"value ="0x1020"/ >|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[CommandTable 元素](../extensibility/commandtable-element.md)|.Vsct 檔的根項目。|  
   
@@ -72,5 +73,5 @@ ms.lasthandoff: 10/31/2017
 </Symbols>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0be1527c82264ef388eb01d3a06702c1c4bb4f7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cf841cf70f092fb38adc42bfa6271c6c3aa121d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言 (DSL) 中的所有網域屬性可以顯示在圖表上和您語言總管中，對使用者和程式碼可以存取。 不過，屬性不同，其值會儲存的方式。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="kinds-of-domain-properties"></a>類型的定義域屬性  
  DSL 定義中，您可以設定**種類**的網域屬性，如下表中所列：  
   
-|網域屬性類型|說明|  
+|網域屬性類型|描述|  
 |--------------------------|-----------------|  
 |**標準**（預設值）|儲存在網域屬性*儲存*和序列化為檔案。|  
 |**計算**|唯讀的網域屬性不會儲存在存放區，但會從其他值計算出。<br /><br /> 例如，`Person.Age`無法從計算`Person.BirthDate`。<br /><br /> 您必須提供程式碼會執行計算。 一般而言，您會計算來自其他網域屬性的值。 不過，您也可以使用外部資源。|  
@@ -109,7 +110,7 @@ void SetAgeValue(int value)
   
  如需有關交易的詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [網域屬性的屬性](../modeling/properties-of-domain-properties.md)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案建立 Web 應用程式。 您可以使用 Web 專案建立 Web 應用程式具有智慧網頁。 智慧網頁已呈現網頁上指定的伺服器端程式碼。  
@@ -59,5 +60,5 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案建立 Web 應用
   
     -   一定要在程式碼編輯器的主要緩衝區中建立錯誤標記 （紅色曲線）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Web 專案](../../extensibility/internals/web-projects.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f3fd29f46f0edb184b3e0cd5e6ddc766ffc94de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>在舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊工具提示提供使用者有關的語言建構中的提示。  

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>中的測試區域 4： 檢查
 這個原始檔控制外掛程式的測試區域涵蓋將更新的項目傳送至版本存放區透過**簽入**命令。  
@@ -69,5 +70,5 @@ ms.lasthandoff: 10/31/2017
 |將專案加入原始檔控制下的空白方案 (**簽入**對話方塊)|1.建立空白方案。<br />2.將方案加入原始檔控制。<br />3.加入新的專案。<br />4.如果出現提示，請接受簽出的方案。<br />5.從簽入**簽入** 對話方塊。|常見的預期的行為。|  
 |將專案加入原始檔控制下的空白方案 (**暫止簽入**視窗)|1.建立空白方案。<br />2.將方案加入原始檔控制。<br />3.加入新的專案。<br />4.如果出現提示，請接受簽出的方案。<br />5.請從方案中**暫止簽入**視窗。|常見的預期的行為。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

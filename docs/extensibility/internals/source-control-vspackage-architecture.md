@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80153e271fed6a7fab49e00c8124f1ede7613bfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 002dea54b63a78975d56464319614d369a9b2318
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-architecture"></a>原始檔控制 VSPackage 架構
 原始檔控制封裝是使用 VSPackage 服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 所提供。 傳回，原始檔控制封裝提供原始檔控制服務的功能。 此外，原始檔控制封裝是功能更多樣的替代方式的原始檔控制整合到原始檔控制外掛程式比[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
   
  撰寫 VSPackage 為基礎的原始檔控制封裝需要更進階的程式設計專業知識，比撰寫原始檔控制外掛程式 API 為基礎外掛程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  [快速入門](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

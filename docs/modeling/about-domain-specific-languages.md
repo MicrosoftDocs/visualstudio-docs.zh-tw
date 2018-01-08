@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3bab0e785dfccddb7d182864a01146fe697b4247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7bdd5f6f9561e3479d173a1e182ffa07649bc776
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 與一般用途的程式語言，例如 C# 或 UML，不同的網域特定定義域語言 (DSL) 被為了 express 特定問題空間或網域中的陳述式。  

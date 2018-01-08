@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合截然不同的設定中的互動和設計元素。 在 Visual Studio 中關於一致性的最重要複合模式的部分包括：  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_DataVisualization"></a>資料視覺效果  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  圖是視覺化的方式，來彙總，並將資料視覺化以加強決策。 它們可以協助使用者面臨大量資料，但很少表示什麼值得注意，以及可能需要的動作，請參閱。  
   
  如果下列任何一個狀況成立，使用者將受益圖表：  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="BKMK_OnObjectUI"></a>物件在 UI 中和其內  
  本節提供內容來窺視，也稱為程式碼查看檢視中，類型的物件上 UI 特有 Visual Studio。  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
   
 -   物件上的 UI 應能提供使用者更多的資訊或互動功能沒有 detracting 從其主要工作。  
   
@@ -252,7 +253,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_SelectionModels"></a>選擇模型  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  選取模型是用來表示，並確認使用者介面中感興趣的一或多個物件上作業的機制。 本主題討論在 Visual Studio 文件編輯器中的選取項目互動模式： 文字編輯器、 設計介面和模型化介面。  
   
  使用者必須具有一種表示 Visual Studio 使用，而且 Visual Studio 必須如預期般以回應意見反應給使用者的相關項目上運作時。 或心力，以在使用者和使用者介面之間的差異可能會導致使用者無法意識到動作，而這樣可能造成非預期的結果。 通常，錯誤會發現，直到使用者會看到內容有所遺漏或已變更。 因此會選擇模型的使用者介面設計的最重要部分，其中一個。 雖然 Visual Studio 中的選取範圍模型與 Windows 一致，有會有些微差異。  
@@ -273,7 +274,7 @@ ms.lasthandoff: 10/31/2017
   
 -   脫離  
   
--   Region  
+-   區域  
   
 #### <a name="scope"></a>範圍  
  選取範圍的最重要的元件確保使用者知道他們在哪一個視窗中工作 （啟動），但焦點是位於 （選取項目） 的位置。 Visual Studio 視窗管理功能延伸在 Windows 中，但是啟用配置都是相同： 互動 視窗將焦點移至視窗。 Visual Studio 的兩個指標進行啟用： 分別用於文件視窗和工具視窗。  
@@ -396,7 +397,7 @@ ms.lasthandoff: 10/31/2017
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>圖形物件選取項目外觀  
  選取控點會以矩形模式物件的週框方塊周圍繪製的平方。 下圖顯示圖形化的物件可以有控制代碼、 調整大小，以及在就地編輯的外觀的各種狀態的範例。 控點大小應該繫結至視窗的框線和邊緣度量使用**GetSystemMetrics**應用程式開發介面。  
   
-|狀態|外觀|視覺化詳細資料|  
+|狀況|外觀|視覺化詳細資料|  
 |-----------|----------------|--------------------|  
 |**未選取**|預設|![預設按鈕狀態](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713年 10_DefaultState")||  
 |**主要選取項目**|可調整大小|![使用主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize")|![使用主要選取項目調整大小控點 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713年 12_PrimaryResizeZoom")|  
@@ -438,11 +439,11 @@ ms.lasthandoff: 10/31/2017
   
  清單中的選取項目可能是連續、 脫離的或地區。 當多個選取項目是允許的連續和脫離選取項目應該一律支援，同時支援區域 （方塊） 選取項目是選擇性的。 藉由拖曳清單主體的空白字元不會起始地區選取項目。  
   
-|物件|選取|  
+|Object|選取|  
 |------------|---------------|  
 |清單|連續|一律支援 （時允許多重選取）。|  
 |清單|脫離|一律支援 （時允許多重選取）。|  
-|清單|Region|選擇性的支援。 啟始拖曳滑鼠清單主體的泛空白字元。|  
+|清單|區域|選擇性的支援。 啟始拖曳滑鼠清單主體的泛空白字元。|  
   
  按一下清單中選取發生按一下資料列。 如果使用者按一下在清單資料格支援就地編輯，也會立即啟動就地編輯儲存格。 否則，整個資料列會立即選取，並顯示反白顯示。  
   
@@ -476,17 +477,17 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_PersistenceAndSavingSettings"></a>持續性和儲存設定  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  雖然 Visual Studio 中的每個軟體元件，通常負責它自己的狀態和持續性的 Visual Studio 會自動儲存設定，在某些情況下，例如與視窗大小和位置。 下表會自動儲存的設定和設定需要明確的使用者或程式設計所要採取動作的組合。  
   
-|物件|要儲存的項目|當儲存|儲存的位置|  
+|Object|要儲存的項目|當儲存|儲存的位置|  
 |------------|------------------|------------------|-------------------|  
 |可選取物件 （例如，程式碼行）|在程式碼行上的中斷點<br /><br /> 使用者快顯的一行程式碼相關聯|當儲存專案|**使用者選項 (.suo)**專案檔|  
 |對話方塊|對話方塊中，如果它已移動的位置<br /><br /> 使用者上次使用對話方塊中的檢視|在對話方塊關閉時<br /><br /> 當 Visual Studio 工作階段結束|在記憶體中<br /><br /> 登錄機碼**HKEY_Current_User**|  
 |視窗|大小和視窗的位置|在視窗關閉時<br /><br /> Visual Studio 模式時變更<br /><br /> 當 Visual Studio 工作階段結束|**使用者選項 (.suo)**專案檔<br /><br /> 自訂的選項視窗的 設定檔|  
 |文件|文件中目前選取範圍<br /><br /> 文件檢視<br /><br /> 使用者造訪的最後幾個地方|當儲存文件|**使用者選項 (.suo)**專案檔|  
 |專案|檔案的參考<br /><br /> 參考磁碟上的目錄<br /><br /> 其他軟體的參考<br /><br /> 元件<br /><br /> 專案本身的狀態資訊|當儲存專案|專案檔|  
-|解決方式|專案的參考<br /><br /> 檔案的參考|儲存專案或方案時|**方案 (.sln)**檔案|  
+|方案|專案的參考<br /><br /> 檔案的參考|儲存專案或方案時|**方案 (.sln)**檔案|  
 |中的設定**工具 > 選項**|鍵盤自訂<br /><br /> 自訂工具列<br /><br /> 色彩配置|當**工具 > 選項**對話方塊關閉<br /><br /> 當 Visual Studio 工作階段結束|登錄機碼**HKEY_Current_User**|  
   
  哪些使用者正在進行，並時執行它，指出設定是否正在儲存在儲存至磁碟 （跨工作階段是以登錄設定），（在工作階段期間），記憶體中的專案或方案檔本身為組件的一部分**方案選項 (.suo)**檔案，或為自訂設定檔，只有該軟體元件知道。 上表顯示數個設定可以儲存的事件。 不過，在其他的時候，您可能想要儲存狀態：  

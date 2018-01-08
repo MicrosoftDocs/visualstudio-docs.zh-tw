@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5eed4b08398b2acd9a136ba0ccf67527a574f16f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2e9a22d0340774087fab8dd7dc564f415d9d9aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函式
 此函式會擷取佇列的狀態事件。  
@@ -50,7 +51,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|取得成功的事件。|  
 |SCC_E_OPNOTSUPPORTED|不支援此函式。|  
@@ -61,6 +62,6 @@ SCCRTN SccGetEvents (
   
  如果沒有更新狀態報表，原始檔控制外掛程式會儲存空字串所指向之緩衝區中`lpFileName`。 否則，外掛程式儲存檔案的完整路徑名稱的狀態資訊已變更，並傳回適當的狀態碼為 (其中一個值中詳述[檔案狀態碼](../extensibility/file-status-code-enumerator.md))。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

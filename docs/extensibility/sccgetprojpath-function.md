@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c626cfc6da56258241071476aba03690f349092
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函式
 此函數會提示使用者輸入專案路徑，也就是只對原始檔控制外掛程式有意義的字串。 使用者時，它會呼叫：  
@@ -82,7 +83,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功建立或擷取專案。|  
 |SCC_I_OPERATIONCANCELED|已取消作業。|  
@@ -106,6 +107,6 @@ SCCRTN SccGetProjPath (
   
  例如，如果使用者在**新專案**Visual Studio 中的精靈他或她將專案加入至原始檔控制、 Visual Studio 會呼叫這個函式，並外掛程式會決定是否可以在原始檔控制系統，若要建立新的專案包含 Visual Studio 專案。 如果使用者按一下**取消**之前正在完成精靈，永遠不會建立專案。 如果使用者按一下**確定**，Visual Studio 會呼叫`SccOpenProject`，並傳入`SCC_OPT_CREATEIFNEW`，和原始檔控制專案建立在該時間。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

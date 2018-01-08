@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-windows-in-the-registry"></a>在登錄中的工具視窗
 提供的工具視窗的 Vspackage 必須向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]做為工具視窗提供者。 使用 Visual Studio 封裝範本所建立的工具視窗這麼做的預設值。 工具視窗提供者具有指定可視性的屬性，例如預設工具視窗大小和位置，做為工具視窗窗格和停駐樣式的視窗 GUID 的系統登錄機碼。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
   
  第二個選擇性金鑰 ToolWindows\Visibility，指定之 Guid 的要求將會看見 [工具] 視窗的命令。 在此情況下，沒有指定任何命令。 如需詳細資訊，請參閱[工具視窗顯示組態](../extensibility/tool-window-display-configuration.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

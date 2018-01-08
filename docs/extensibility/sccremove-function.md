@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28901d9635a4a823507834cde201860fda1e2168
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。  
@@ -62,7 +63,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功移除。|  
 |SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制中。|  
@@ -76,5 +77,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>備註  
  此函式會從原始檔控制系統中移除的檔案，但不會刪除它們從使用者的本機硬碟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

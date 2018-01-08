@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案建立這些登錄項目。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|名稱|類型|資料|說明|  
+|名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |`@`（預設值）|REG_SZ|`FigPrj Project VSPackage`|可當地語系化的名稱，這個登錄 VSPackage （專案類型）。|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|專案類型 DLL 的路徑。 IDE 載入此 DLL，並將傳遞至 VSPackage CLSID`DllGetClassObject`取得<xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory>建構<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>物件。|  
@@ -150,7 +151,7 @@ ms.lasthandoff: 10/31/2017
   
  下表顯示可用在先前的程式碼片段的篩選選項。  
   
-|篩選選項|說明|  
+|篩選選項|描述|  
 |-------------------|-----------------|  
 |`CommonFindFilesFilter`|表示篩選條件是其中一個常見的篩選器中**檔案中尋找** 對話方塊。 一般篩選器會列出未標記為常見的篩選條件之前篩選清單中。|  
 |`CommonOpenFilesFilter`|表示篩選條件是其中一個常見的篩選器中**開啟檔案** 對話方塊。 一般篩選器會列出未標記為常見的篩選條件之前篩選清單中。|  
@@ -223,7 +224,7 @@ ms.lasthandoff: 10/31/2017
   
  最後一個欄位識別 CTMENU 資源的版本號碼。 您可以變更版本號碼，一次合併功能表。  
   
-|名稱|類型|資料|說明|  
+|名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |%Clsid_package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
   
@@ -267,7 +268,7 @@ ms.lasthandoff: 10/31/2017
   
  這表示如果您包含 PROJECT_TYPE = EF.vsz 檔案中，環境會發現您.vsz 檔案中指定先前的 ProductDir 目錄中的項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

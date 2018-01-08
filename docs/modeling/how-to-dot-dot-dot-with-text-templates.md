@@ -11,11 +11,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 93b4d129cd09fe3d3b67bfc743286577b1e285dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 351b9025ba4631a515f1f6cf627e27e6afb3cc88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 文字範本中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供有用的方式產生任何類型的文字。 您可以使用文字範本產生的文字，做為您的應用程式的一部分的執行階段，並在設計階段產生的專案程式碼部分。 本主題摘要說明最常要求 「 如何？...」 問題。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/27/2017
      如需詳細資訊，請參閱[開始使用的特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)和[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
 ### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>要從取得資料[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- 若要使用所提供的服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，由組`hostSpecific`屬性，並載入`EnvDTE`組件。 例如：  
+ 若要使用所提供的服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，由組`hostSpecific`屬性，並載入`EnvDTE`組件。 例如:   
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

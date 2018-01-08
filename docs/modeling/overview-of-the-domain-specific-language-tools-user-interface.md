@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d76ed4d14e7333678fcf927dfa1b2f21d8573be5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 416c7f399ce8ce23eceee4ccf8891dd657d5836a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次開啟中的特定領域語言工具 （DSL 工具） 解決方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，使用者介面會類似下列圖片。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/27/2017
 |圖形與連接器|圖形指定模型項目應如何顯示 DSL 圖表。，連接器指定行上可以用來顯示關聯性的 DSL 圖表。<br /><br /> 若要建立圖形或連接器，將工具拖曳至**圖表項目**圖表的側邊。|  
 |圖形對應|圖形地圖會顯示為的網域模型圖表中，它會顯示網域類別連結圖形或連接器，它會顯示的網域關聯性。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具的概觀](../modeling/overview-of-domain-specific-language-tools.md)   
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f29ca84669f563da5733c8c07b219d498ccf6ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-project-objects"></a>公開專案物件
 自訂專案類型可以提供 automation 物件，以便讓專案使用 automation 介面的存取權。 每個專案類型必須為提供標準<xref:EnvDTE.Project>自動化物件，存取從<xref:EnvDTE.Solution>，其中包含已經在 IDE 中開啟的所有專案的集合。 在專案中的每個項目必須由公開<xref:EnvDTE.ProjectItem>物件存取具有`Project.ProjectItems`。 除了這些標準 automation 物件，可以選擇專案的方案專案特定自動化物件。  
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
      自訂`Projects`集合物件是您專案的 automation 模型的其餘部分方便進入點。 您的專案物件也是從存取<xref:EnvDTE.Solution>專案集合。 建立適當的程式碼和登錄項目可提供與取用者之後`Projects`物件集合，您的實作必須提供剩餘專案模型標準的物件。 如需詳細資訊，請參閱[專案模型](../../extensibility/internals/project-modeling.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdaab4c5c9f0ee5522ae372e4a0cd94fb113eed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631aaaf4bf3d36cf5b83c8e67791c453cdfed925
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>使用修改 Isolated 的 Shell。Vsct 檔案
 UI 專案，Visual Studio 隔離的 shell 專案包含.vsct 檔案，可讓您指定哪些應用程式群組和個別的命令可用於應用程式。 以下是未修改的.vsct 檔案的摘錄。  
@@ -44,7 +45,7 @@ UI 專案，Visual Studio 隔離的 shell 專案包含.vsct 檔案，可讓您�
 ## <a name="referenced-files"></a>參考的檔案  
  應用程式的預設.vsct 檔參考的下列檔案。 這些檔案位於 Visual Studio SDK 安裝目錄的 \VisualStudioIntegration\Common\Inc\ 子目錄中。  
   
-|檔案|說明|  
+|檔案|描述|  
 |----------|-----------------|  
 |wbids.h|Web 瀏覽封裝 UI 身分識別。|  
 |AppIDCmdUsed.vsct|主要的 Visual Studio UI 元素的命令資料表。|  
@@ -56,5 +57,5 @@ UI 專案，Visual Studio 隔離的 shell 專案包含.vsct 檔案，可讓您�
   
  如需詳細資訊，請參閱[設計 XML 命令資料表 (。Vsct) 檔案](../internals/designing-xml-command-table-dot-vsct-files.md)和[VSCT XML 結構描述參考](../vsct-xml-schema-reference.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio Isolated Shell](visual-studio-isolated-shell.md)

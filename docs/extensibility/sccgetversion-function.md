@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f64b1412d0750bba4d3985d33286915e22f1474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2aef7ed21124c2e3555442819461f1989388ab22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函式
 此函式可取得原始檔控制外掛程式 API 支援原始檔控制外掛程式的版本號碼。  
@@ -35,7 +36,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>傳回值  
  A`LONG`包含支援的原始檔控制外掛程式 API 的版本號碼的資料類型：  
   
-|WORD|說明|  
+|WORD|描述|  
 |----------|-----------------|  
 |HIWORD|主要版本|  
 |取代 LOWORD|次要版本|  
@@ -43,5 +44,5 @@ LONG SccGetVersion(void);
 ## <a name="remarks"></a>備註  
  例如，如果原始檔控制外掛程式支援 1.3 版的原始檔控制外掛程式 API，此函式會傳回 0x0103。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

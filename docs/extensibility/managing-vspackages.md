@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>管理 Vspackage
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本的註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的位元，以管理您的封裝。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage  
  了解 Vspackage 不會載入或發生錯誤的疑難排解的技術：[疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1acbeb95ed7fa59fd64feefe050debc0ce9b6461
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c5dace5862354c26a22b65b3f471163e50738c7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 Visual Studio Visualization and Modeling SDK 提供您的特定領域語言 (DSL) 工具內建的平台。  
@@ -44,5 +45,5 @@ Visual Studio Visualization and Modeling SDK 提供您的特定領域語言 (DSL
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|可讓您定義捷徑 （操作） 功能表命令。|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|可讓您定義驗證條件約束。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)

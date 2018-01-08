@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>按鍵繫結關係的項目
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。  
@@ -33,32 +34,32 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
-|Guid|必要項。|  
-|id|必要項。|  
-|編輯器|必要項。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍的值是"guidVSStd97"。|  
-|key1|必要項。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
-|mod1|選擇項。 CTRL、 ALT 和 shift 鍵，以空格分隔的任何組合。|  
-|key2|選擇項。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
-|mod2|選擇項。 CTRL、 ALT 和 shift 鍵，以空格分隔的任何組合。|  
-|模擬器|選擇項。|  
-|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|Guid|必要。|  
+|id|必要。|  
+|編輯器|必要。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍的值是"guidVSStd97"。|  
+|key1|必要。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
+|mod1|選擇性。 CTRL、 ALT 和 shift 鍵，以空格分隔的任何組合。|  
+|key2|選擇性。 有效值包括所有可輸入的英數字元，以及兩位數的十六進位值前面加上 0x 和[VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx)。|  
+|mod2|選擇性。 CTRL、 ALT 和 shift 鍵，以空格分隔的任何組合。|  
+|模擬器|選擇性。|  
+|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |父代||  
 |註釋||  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[KeyBindings 元素](../extensibility/keybindings-element.md)|群組 KeyBinding 項目和其他按鍵組合群組。|  
   
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [金鑰繫結項目](../extensibility/keybindings-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

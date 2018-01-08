@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54b15d849efacb681eb8b4238cd067144bc67342
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78993e12c1ab4098e20aad243faaa487ff0ea35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Isolated 的 Shell 進入點參數 （c + +）
 Visual Studio shell 為基礎的應用程式啟動時，它會呼叫在 Visual Studio shell 項目起點。 下列設定會覆寫的殼層的開始項目點的呼叫中。 如需每個設定的說明，請參閱[。Pkgdef 檔案](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
@@ -95,6 +96,6 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="example"></a>範例  
  若要停用增益集，並變更您的應用程式的預設專案位置，您可以設定 「 AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp 」 的最後一個參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂 Isolated 的 Shell](customizing-the-isolated-shell.md)   
  [.Pkgdef 檔案](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

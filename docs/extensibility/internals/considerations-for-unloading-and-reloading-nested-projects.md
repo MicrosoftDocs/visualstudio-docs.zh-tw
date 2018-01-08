@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載並重新載入巢狀專案的考量
 當您實作巢狀的專案類型時，您必須執行額外步驟，當您卸除並重新載入專案。 若要正確通知方案的事件接聽程式，您必須正確地提高`OnBeforeUnloadProject`和`OnAfterLoadProject`事件。  
@@ -33,6 +34,6 @@ ms.lasthandoff: 10/31/2017
   
  若要處理程序中，父專案呼叫`QueryInterface`上<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents>介面關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution>介面。 `IVsFireSolutionEvents`具有函式，以指示 IDE 引發`OnBeforeUnloadProject`卸載巢狀的專案，然後再引發事件`OnAfterLoadProject`重新載入專案相同的事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)

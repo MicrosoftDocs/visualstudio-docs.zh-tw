@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定指定如何圖表會顯示在設計工具中產生的屬性。 例如，您可以指定文字的預設色彩在圖表中。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/27/2017
   
  下表列出的圖表的屬性。  
   
-|屬性|說明|預設|  
+|屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |填滿色彩|圖表的填滿色彩。|白色|  
 |文字色彩|顯示在圖表的文字色彩。|黑色|  
@@ -42,9 +43,9 @@ ms.lasthandoff: 10/27/2017
 |注意|這個項目相關聯的非正式附註。|\<無 >|  
 |會公開為屬性填滿色彩|如果`True`，使用者可以設定圖表設計工具產生的填滿色彩。 若要設定這種情況，以滑鼠右鍵按一下圖表圖形，並按一下**新增 Explosed**。|False|  
 |公開為屬性的文字色彩|如果`True`，使用者可以在產生的設計工具中設定圖表的文字色彩。 若要設定這種情況，以滑鼠右鍵按一下圖表圖形，並按一下**新增 Explosed**。|False|  
-|說明|描述用來產生的設計工具的文件。|\<無 >|  
+|描述|描述用來產生的設計工具的文件。|\<無 >|  
 |顯示名稱|會產生這個圖表設計工具中顯示的名稱。|\<無 >|  
 |說明關鍵字|用於檢索這個圖表 F1 說明關鍵字。|\<無 >|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

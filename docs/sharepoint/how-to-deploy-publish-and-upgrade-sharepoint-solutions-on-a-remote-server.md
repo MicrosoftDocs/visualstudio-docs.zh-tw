@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 115509e8ff79aafa703c429b476041d558e3167c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519f40017fff5dd3241f4563c5a85d0d0d15c01b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器部署、發行和升級 SharePoint 方案
   除了將 SharePoint 方案部署到本機系統，您可以發行至遠端站台或本機 SharePoint 網站的沙箱化 SharePoint 方案。 在遠端發佈程序將.wsp 檔案複製到 SharePoint 伺服器、 安裝方案，然後可讓您啟用方案。 任何變更之後，您也可以升級遠端 SharePoint 方案安裝。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
      停用舊的版本的方案、 新版本的方案，會升級舊的方案，從保留的資料和新的方案會在 SharePoint 中啟動。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 部署和發行至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   

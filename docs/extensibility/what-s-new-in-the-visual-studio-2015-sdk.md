@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼 &#39;的新 Visual Studio 2015 SDK
 Visual Studio SDK 的 Visual Studio 2015、 Visual Studio 2015 更新和 Visual Studio 2017 具有下列新增和更新功能。  
@@ -53,7 +54,7 @@ Visual Studio SDK 的 Visual Studio 2015、 Visual Studio 2015 更新和 Visual 
  C + +，VSPackage 精靈支援功能表命令、 工具視窗和自訂編輯器。 尋找在**新專案**對話方塊**Visual c + + / 擴充性**。  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>透過 NuGet VS SDK 的參考組件  
- 增加的可攜性和擴充性專案的共用，您可以使用 VS SDK 的參考組件的 NuGet 版本。  這些是用於[nuget.org](http://www.nuget.org)所發行[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)並可輕鬆地加入至專案或透過 Visual Studio 方案**參考 / 管理 NuGet封裝**對話方塊。 您可以個別將參考加入至特定的擴充性的組件，或新增所有 VS SDK 都參考一次使用 VS SDK 的組件[中繼封裝](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要深入了解 NuGet，請參閱[NuGet 文件](http://docs.microsoft.com/NuGet)和[封裝管理員 UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI)主題。  
+ 增加的可攜性和擴充性專案的共用，您可以使用 VS SDK 的參考組件的 NuGet 版本。  這些是用於[nuget.org](http://www.nuget.org)所發行[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)並可輕鬆地加入至專案或透過 Visual Studio 方案**參考 / 管理 NuGet封裝**對話方塊。 您可以個別將參考加入至特定的擴充性的組件，或新增所有 VS SDK 都參考一次使用 VS SDK 的組件[中繼封裝](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要深入了解 NuGet，請參閱[NuGet 文件](/NuGet)和[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)主題。  
   
  當您使用 VS SDK 的參考組件的 NuGet 版本時，另一位使用者不需要安裝 VS SDK，以開啟和建置您的專案。  NuGet 參考組件和 VS SDK 建置工具會自動安裝該專案的電腦上。  
   

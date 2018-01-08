@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce5ecc4cead8ba8c5673f5ba15f8dda78a90e6be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什麼 &#39; s 原始檔控制外掛程式 API 版本 1.2 的新功能
 本章節強調原始檔控制外掛程式 API 1.2 版中的進階原始檔控制功能。 以下列出 1.2 版中的新功能：  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
  [從 .Proj 和 .Sln 檔案移除原始檔控制資訊](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
  說明如何原始檔控制外掛程式 API 版本 1.2 儲存專案和方案的相關資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

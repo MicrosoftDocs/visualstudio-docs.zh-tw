@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb782b79c00576a431c8f4453ddf020606aaf5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d77c307ec7b732ba727b7210b4f4eaacb44584aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是您的專案的重要設計考量。 大部分的專案使用專案項目代表檔案。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其資料為非檔案型的專案。 這兩個檔案的擁有者專案和專案檔必須保存。 IDE 會指示專案以儲存本身或專案項目。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
  上的方法`IVsPersistHierarchyItem2`介面用來判斷是否可以重新載入項目，如果項目可以是，將它重新載入。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>方法可以實作以造成變更的項目而不會儲存被捨棄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

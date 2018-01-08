@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f64b02521fcea9abef9d7196a27e4a209100a892
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄項目  
  *VS Reg 根*\Languages\Language 服務\\*語言名稱*索引鍵可包含下列值。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|*\<GUID >*|語言服務的 GUID。|  
 |LangResID|REG_DWORD|0x0-0xffff|資源識別元 (ResID) 語言的當地語系化的文字名稱的字串。|  
@@ -67,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>偵錯工具的語言選項的登錄項目  
  *VS Reg 根*\Languages\Language 服務\\*語言名稱*\Debugger 語言\\*GUID*\ 金鑰可包含下列值。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|文字|預設值可以用於文件的語言名稱。 此索引鍵的名稱是有對應的項目中的運算式評估工具的 GUID  *\<VS 登錄根目錄 >*\AD7Metrics\Expression 評估工具。|  
   
@@ -86,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>編輯器工具選項的登錄項目  
  您可以新增登錄機碼 EditorToolsOptions 機碼下的屬性頁和屬性節點。 這些索引鍵和其值會識別在屬性頁**選項**對話方塊 (上**工具**功能表)，可用來設定語言服務。 在下列範例中，*頁面名稱*屬性頁面中，名稱和*節點名稱*位於樹狀結構中節點的名稱**選項** 對話方塊。 必須分別指定頁面項目和節點的項目。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|resID|此選項頁面的當地語系化的顯示名稱。 名稱可以是常值文字或 #`nnn`，其中`nnn`附屬 DLL 的指定 VSPackage 中字串資源 id。|  
 |Package|REG_SZ|*GUID*|實作這個選項頁面的 VSPackage 的 GUID。|  
@@ -120,7 +121,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>檔案名稱副檔名選項的登錄項目  
  副檔名的項目應該包含前置的句點，例如".myext"。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|*GUID*|此檔案名稱副檔名類型的預設語言服務的服務 GUID。|  
   
@@ -137,7 +138,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>編輯器選項的登錄項目  
  *VS Reg 根*\Editors 索引鍵可包含下列值：  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|""|未使用。您可以將您的名稱的文件。|  
 |DefaultToolboxTab|REG_SZ|""|編輯器在作用中時，進行預設 [工具箱] 索引標籤的名稱。|  
@@ -162,7 +163,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>邏輯檢視選項的登錄項目  
  *VS Reg 根*\Editors\\*編輯器 GUI >*\LogicalViews 索引鍵可包含下列值。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ||未使用。|  
 |*\<GUID >*|REG_SZ|""|支援的邏輯檢視的索引鍵。 您可以視需要有最大數量的這些。 登錄項目名稱會是很重要的不是值，都是空字串。|  
@@ -184,7 +185,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>編輯器延伸模組選項的登錄項目  
  *VS Reg 根*\Editors\\*編輯器 GUID*\Extensions 索引鍵可包含下列值。 檔案名稱的副檔名不包含前置句號。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ||未使用。|  
 |*\<ext >*|REG_DWORD|0 0xffffffff|擴充功能的相對優先權。 如果兩個或多個語言共用同一個延伸模組，則會選擇較高優先順序的語言。|  
@@ -210,7 +211,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
   
  這些登錄項目透過存取<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|IntelliSense 作業的支援。|  
 |MatchBraces|REG_DWORD|0-1|支援的語言組，例如大括號、 括號和方括號比對。|  
@@ -240,5 +241,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

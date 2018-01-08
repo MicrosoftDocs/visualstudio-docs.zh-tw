@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>從原始檔控制取得測試區域 2:
 這個測試區域涵蓋測試案例從透過 Get 命令的版本存放區中擷取項目。 這兩個本機和 Web 專案，可以套用這些測試案例。  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
 |取得檔案在本機，存在相同的版本存放區中的最新版本|1.建立新的專案。<br />2.將項目加入專案。<br />3.將放在原始檔控制專案。<br />4.取得項目 (**檔案**，**原始檔控制**，**取得**\<項目 >)。|本機檔案不會變更。|  
 |取得具有一個專案的方案|1.建立方案與專案。<br />2.將原始檔控制下的方案。<br />3.刪除所有專案檔在本機。<br />4.取得方案 (**檔案**，**原始檔控制**，**取得**)。|所有已刪除的檔案會在本機上還原。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

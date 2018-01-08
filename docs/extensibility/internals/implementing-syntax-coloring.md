@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務提供語法顏色標示時，剖析器將一行文字轉換成色彩項目的陣列，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應傳回語彙基元的型別屬於色彩的項目清單。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在程式碼視窗中，根據指派給適當的權杖類型的色彩標示器物件的屬性，會顯示每個色彩的項目。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="managed-package-framework-colorizer"></a>Managed 的封裝架構色彩標示器  
  Managed 的 package framework (MPF) 提供實作的色彩標示器所需的所有類別。 您的語言服務類別應該繼承<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作需要的方法。 您必須提供掃描器和剖析器藉由實作<xref:Microsoft.VisualStudio.Package.IScanner>介面，並傳回該介面從執行個體<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (其中一個方法中必須實作<xref:Microsoft.VisualStudio.Package.LanguageService>類別)。 如需詳細資訊，請參閱[語法色彩標示在舊版語言服務](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 使用內建的色彩項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自訂色彩項目](../../extensibility/internals/custom-colorable-items.md)   
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   

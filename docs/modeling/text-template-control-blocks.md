@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a2f2ba54f26e84ee321f0f726f2f07dbef5c19b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5bd426efbe6de1815c28bd122f13e7c6c912c359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：  
@@ -120,7 +121,7 @@ Some text.
 > [!NOTE]
 >  類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。 不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。 每個包含的檔案的類別功能區塊後可以有標準區塊。  
   
- 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如:  
+ 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如:   
   
 ```  
 <#+  

@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 44ae5ff7e9095d6c88d753342da30983b30b7364
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 和 Id 的 Visual Studio 命令
 會安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 GUID 和 ID 的值包含在 Visual Studio 整合式的開發環境 (IDE) 中的命令。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
      沒有可靠的方式可搜尋的動態文字。 相反地，尋找裝載查閱所需的命令群組[Guid 和 Id 的 Visual Studio 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，並搜尋該群組的識別碼。 如果命令不需要定義群組做為其[父項目](../../extensibility/parent-element.md)，搜尋 SharedCmdPlace.vsct 和 ShellCmdPlace.vsct （或偵錯工具命令的 VsDbgCmdPlace.vsct）`<CommandPlacement>`設定的父系的項目命令。 SharedCmdPlace.vsct，ShellCmdPlace.vsct，andVsDbgCmdPlace.vsct 位於*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\ 資料夾。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MenuCommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)

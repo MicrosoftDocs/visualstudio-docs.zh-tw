@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，讓操作它們的方式 Visual Studio 的使用者。 使用者可以改變背景、 大小、 DPI、 高對比，以及其他設定。 此工具也會顯示每個映像資訊清單的載入資訊，並顯示每個映像的來源資訊映像資訊清單中。 此工具可用於：  
@@ -74,9 +75,9 @@ Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，
 |-|-|  
 |**子元素**|**定義**|  
 |匯入|匯入的目前資訊清單中使用的指定資訊清單檔案的符號。|  
-|GUID|符號表示的 GUID，而且必須符合 GUID 格式。|  
-|ID|符號代表識別碼，而且必須是非負值整數。|  
-|字串|符號代表任意字串值。|  
+|Guid|符號表示的 GUID，而且必須符合 GUID 格式。|  
+|識別碼|符號代表識別碼，而且必須是非負值整數。|  
+|String|符號代表任意字串值。|  
   
  符號會區分大小寫，且參考使用 $(symbol-name) 語法：  
   
@@ -90,7 +91,7 @@ Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，
   
 |||  
 |-|-|  
-|**符號**|**說明**|  
+|**符號**|**描述**|  
 |CommonProgramFiles|%Commonprogramfiles%環境變數的值|  
 |LocalAppData|%Localappdata%環境變數的值|  
 |ManifestFolder|包含資訊清單檔案的資料夾|  
@@ -115,8 +116,8 @@ Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|GUID|[必要]影像 moniker GUID 部分|  
-|ID|[必要]影像 moniker 識別碼部分|  
+|Guid|[必要]影像 moniker GUID 部分|  
+|識別碼|[必要]影像 moniker 識別碼部分|  
 |AllowColorInversion|[選擇性的預設為 true]指出映像是否可以具有它以程式設計方式反轉使用深色背景的色彩。|  
   
  **來源**  
@@ -155,7 +156,7 @@ Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，
 |-|-|  
 |**屬性**|**定義**|  
 |類型|[必要]原生資源 PNG 或 XAML 的類型|  
-|ID|[必要]原生資源的整數識別碼部分|  
+|識別碼|[必要]原生資源的整數識別碼部分|  
   
  **ImageList**  
   
@@ -171,8 +172,8 @@ Visual Studio 影像庫檢視器工具可以載入並搜尋映像資訊清單，
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|GUID|[必要]影像 moniker GUID 部分|  
-|ID|[必要]影像 moniker 識別碼部分|  
+|Guid|[必要]影像 moniker GUID 部分|  
+|識別碼|[必要]影像 moniker 識別碼部分|  
 |外部|[選擇性的預設為 false]指出是否影像 moniker 參考目前的資訊清單中的映像。|  
   
  所含影像 moniker 沒有參考目前的清單中所定義的映像。 如果映像庫中找不到包含的影像，影像空白預留位置，將使用其所在位置。  

@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 當使用者執行從原始檔控制作業，在整合式的開發環境 (IDE) 內時，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 外掛程式可以針對此用途顯示自己的訊息方塊。 不過，多個緊密整合，外掛程式可以傳遞字串給 IDE，並接著顯示在其原生方法來顯示狀態資訊。 這個機制是`LPTEXTOUTPROC`函式指標。 IDE 會實作此函式 （以下更詳細說明） 來顯示錯誤和狀態。  
@@ -47,7 +48,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  訊息的類型。 下表列出支援的值，這個參數。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|訊息會視為資訊、 警告或錯誤。|  
 |`SCC_MSG_STATUS`|訊息會顯示狀態，並可以在狀態列中顯示。|  
@@ -61,7 +62,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>傳回值  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|顯示字串，或該作業未順利完成。|  
 |SCC_MSG_RTN_CANCEL|使用者想要取消作業。|  
@@ -139,6 +140,6 @@ LONG SendStatusMessage(
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2d456f84078e54694deb11fda0082ac40d278dd2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e7b5fc639e93061a4abd0acbfc1425223d673282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>撰寫程式碼來自訂網域指定的語言
 本節說明如何使用自訂程式碼存取、 修改或建立特定領域語言的模型。  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/27/2017
   
 -   **序列化**。 存放區提供的標準方式序列化至檔案包含的物件。 您可以自訂序列化和還原序列化的規則。 如需詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

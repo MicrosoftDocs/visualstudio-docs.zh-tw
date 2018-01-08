@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2da455cdafc399b64fe42109c7973185ce69c79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 43add362011b31ce695e9a8d9e77d6ca2dedb0e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是所使用的回呼函式[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作列舉的檔案名稱的集合，並判斷每個檔案的狀態。  
@@ -46,7 +47,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>傳回值  
  IDE 會傳回適當的錯誤程式碼：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|繼續處理。|  
 |SCC_I_OPERATIONCANCELED|停止處理。|  
@@ -84,7 +85,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  指出檔案的狀態碼：  
   
-|程式碼|說明|  
+|程式碼|描述|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|無法分辨哪些變更。|  
 |`SCC_CHANGE_UNCHANGED`|這個檔案的名稱並無任何變更。|  
@@ -100,7 +101,7 @@ struct QUERYCHANGESDATA_W
  lpLatestName  
  此項目目前的檔案名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [錯誤碼](../extensibility/error-codes.md)

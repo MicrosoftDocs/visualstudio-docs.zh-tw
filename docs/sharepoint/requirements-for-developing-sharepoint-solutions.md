@@ -20,11 +20,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a29eee363f3ad886d9ea6a13ee43475fba2e9448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a32ceee7609fca96f27388839415ec5ac4d219de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>開發 SharePoint 方案的要求
   之前，您可以使用 Visual Studio 中包含的 SharePoint 方案開發工具，您必須在系統上安裝下列先決條件：  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  新增您的使用者帳戶到 WSS_ADMIN_WPG 群組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用 &#40;Visual Studio &#41; 中的 SharePoint 開發](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)  
   
   

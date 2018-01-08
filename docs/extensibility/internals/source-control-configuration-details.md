@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17e14d4f8d3d62297ae1d2f3e62a9ed0574fef9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8a2cc2f1c13c46b3ac4838d95ce588d0461347
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制設定的詳細資料
 若要實作原始檔控制，您需要正確地設定您的專案系統或編輯器，請執行下列：  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
  對於每個新增、 重新命名及移除動作，沒有`OnQuery*`方法和`OnAfter*`方法。 呼叫`OnQuery*`方法來要求權限加入，請重新命名或移除檔案或目錄。 呼叫`OnAfter*`方法之後，加入、 重新命名或移除檔案或目錄的專案狀態會反映新的狀態。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>   

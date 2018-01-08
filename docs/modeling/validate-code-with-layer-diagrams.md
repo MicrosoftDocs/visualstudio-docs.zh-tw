@@ -23,11 +23,12 @@ caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1e9041c397b121a5919ad370ccb7020c229e9b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
      在您將程式碼移至不同的架構時，請尋找需要運作的程式碼或相依性。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio  
   
@@ -247,7 +248,7 @@ ms.lasthandoff: 10/27/2017
   
  以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。  
   
-|**語法**|**說明**|  
+|**語法**|**描述**|  
 |----------------|---------------------|  
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN*是相依性圖表上的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是種*ArtifactN*，例如**類別**或**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
 |*NamespaceNameN*|命名空間的名稱。|  
@@ -264,6 +265,6 @@ ms.lasthandoff: 10/27/2017
 |DV9001:**架構分析發現內部錯誤**|結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。|如需詳細資訊，請參閱建置事件記錄檔或輸出視窗。|  
 
  
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
  [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   

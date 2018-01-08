@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab395fdb8c06e643c76ee0918b8a626abb756cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d30ad5b61f59e6183067ddcc789b2fc796c7aef9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 建立自訂文字標記
 如果您想要建立自訂文字標記強調或組織程式碼，您必須採取下列步驟：  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
      唯一識別您的服務會傳回的 cookie。 您稍後可以使用此 cookie 來撤銷您的自訂標記類型服務藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>介面，指定此 cookie 值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 加入標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c0fa4b408c43acbf2ec87bcfaca5135c9037af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee6c746874e7e00643f1b840185969a6dabadfe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選器的重要命令
 如果您想要建立功能完整的語言服務篩選條件，請考慮將處理下列的命令。 中定義的命令識別碼的完整清單<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>列舉 managed 程式碼和 Stdidcmd.h 標頭檔案 unmanaged[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]程式碼。 您可以找到 Stdidcmd.h 檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  您不一定要篩選下表中的每個命令。  
   
-|命令|說明|  
+|命令|描述|  
 |-------------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者按一下滑鼠右鍵時，就會傳送。 此命令會指出它是以提供快顯功能表的時間。 如果您不處理這個命令，文字編輯器會提供不含任何語言特有的命令的預設快顯功能表。 若要包含在此功能表命令，處理命令，並顯示快顯功能表自己。|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 CTRL + J，通常傳送。 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>顯示陳述式完成方塊。|  
@@ -41,5 +42,5 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|當使用者輸入 CTRL + 空格鍵時，通常傳送。 此命令會告知語言服務呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>。|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常，從功能表中，傳送**註解選取範圍**或**取消註解選取範圍**從**進階**中**編輯**功能表。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>表示使用者想要標記為註解選取的文字。<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>指出使用者想要選取的文字取消註解。 這些命令可以只由語言服務實作。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

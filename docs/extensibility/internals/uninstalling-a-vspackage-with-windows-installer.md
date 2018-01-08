@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b71c977fcc616c6d9cf30b78c9fd7610f11bcd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee8ad89e02dfa8aebbb39a9d7ebe523ad01bb7e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>解除安裝 Windows Installer VSPackage
 大部分的情況下，Windows Installer 可以解除安裝 VSPackage 只由 「 復原 」 一樣安裝 VSPackage。 自訂動作所述[命令，必須是執行之後安裝](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必須也解除安裝後執行。 因為 devenv.exe 呼叫 InstallFinalize 標準動作，進行安裝和解除安裝之前，CustomAction 和 InstallExecuteSequence 資料表項目會做這兩種情況。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  `Installed`這是當它偵測到您的 VSPackage 確認已安裝在系統上，設定 Windows Installer 屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Installer](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [偵測系統需求](../../extensibility/internals/detecting-system-requirements.md)

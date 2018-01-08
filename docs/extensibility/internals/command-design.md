@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf6d0d7a9aa556aab454f90e4dcfc5dc4f236c03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe3db0582c65a2ece2162ab24afb6d179b865a27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-design"></a>命令的設計
 當您將命令加入 VSPackage 時，您必須指定所在出現、 時，以及它的方式處理。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[實作](../../extensibility/internals/command-implementation.md)|描述如何在 VSPackage 中實作命令。|  
 |[可用性](../../extensibility/internals/command-availability.md)|描述 Visual Studio 內容如何決定可用的命令。|  

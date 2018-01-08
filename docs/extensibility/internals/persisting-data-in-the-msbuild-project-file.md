@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 專案檔中的保存資料
 專案子類型可能需要將特定子類型的資料保存在專案檔，以供稍後使用。 專案子類型會使用專案檔的持續性符合下列需求：  
@@ -78,5 +79,5 @@ ms.lasthandoff: 10/31/2017
       </ProjectExtensions>  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案子類型](../../extensibility/internals/project-subtypes.md)

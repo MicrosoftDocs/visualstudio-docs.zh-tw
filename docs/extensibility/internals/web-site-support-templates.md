@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4e3d64f77064c04e131853786495c921711f2d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b17674b8cd5058ec20db4c483b2c3508aa275b29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-templates"></a>支援的網站範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]網站專案和項目範本提供可重複使用且可自訂的網站專案和項目 stub，不需要從頭開始建立新的網站專案和項目，以加速開發程序。 如需有關[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。  
@@ -186,5 +187,5 @@ ms.lasthandoff: 10/31/2017
   
      範本檔案會決定新的主版頁面和其相依檔案的內容，如果有的話。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [網站支援](../../extensibility/internals/web-site-support.md)

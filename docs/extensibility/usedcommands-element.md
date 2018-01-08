@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a51359a840812bc20714df91a3357801366f3616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35b8821a76926da6ea9cab8ca61ef8f62e5ec72d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。  
@@ -36,23 +37,23 @@ UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他程式碼來實作命令。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供的命令 （例如，功能表項目、 功能表、 工具列和下拉式方塊），整合式的開發環境 (IDE) 的所有項目。|  
   
@@ -66,6 +67,6 @@ UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [UsedCommand 項目](../extensibility/usedcommand-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

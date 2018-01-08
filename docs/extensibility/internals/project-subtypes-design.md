@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70d16c90ad8ef4837ad9d131e46ed2027dd6c543
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes-design"></a>專案子類型設計
 專案子類型可讓 Vspackage 延伸 Microsoft Build Engine (MSBuild) 為基礎的專案。 使用彙總可讓您重複使用的核心管理專案系統中實作大量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]卻仍然來自訂特定案例的行為。  
@@ -89,6 +90,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|允許將專案檔 （.vbproj 或.csproj） 任意結構化的 XML 資料保存的專案子類型。 這項資料看不到 MSBuild。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|可讓專案子類型：<br /><br /> 新增新的 MSBuild 屬性，以保存。<br />-從 MSBuild 中移除不必要的屬性。<br />MSBuild 屬性的目前值的查詢。<br />-變更 MSBuild 屬性的目前值。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

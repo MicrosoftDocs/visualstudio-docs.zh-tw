@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂的分類和顯示項目
 VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 透過自訂的分類和顯示項目。  
@@ -54,7 +55,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[
   
 -   填入具有兩個值的登錄：  
   
-    |名稱|類型|資料|說明|  
+    |名稱|類型|資料|描述|  
     |----------|----------|----------|-----------------|  
     |分類|REG_SZ|GUID|若要識別類別目錄建立的 GUID。|  
     |Package|REG_SZ|GUID|支援類別目錄的 VSPackage 服務的 GUID。|  
@@ -69,7 +70,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[
   
 -   填入具有兩個值的登錄：  
   
-    |名稱|類型|資料|說明|  
+    |名稱|類型|資料|描述|  
     |----------|----------|----------|-----------------|  
     |分類|REG_SZ|GUID|建立識別群組的 GUID。|  
     |Package|REG_SZ|GUID|支援類別目錄服務的 GUID。|  
@@ -125,7 +126,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[
     > [!NOTE]
     >  為了確保透過輪詢得到的結果正確無誤，可能很有用使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷是否需要快取排清及更新之前呼叫的方法擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>   

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b33516bd013f744813b2fdb357f224bcb0d9822
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 ImmutableArrays 感知程式碼程式庫
 
@@ -311,7 +312,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 您可以看到所有完成的程式碼[這裡](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)。  DoNotUseImmutableArrayCollectionInitializer 和 DoNotUseImmutableArrayCtor 每一個子資料夾具有找出問題並實作顯示在 Visual Studio 燈泡 UI 的程式碼修正程式的 C# 檔案的 C# 檔案。  請注意，完成的程式碼具有極小的多個抽象概念，以避免擷取 ImmutableArray\<T > 一再輸入物件。  它使用巢狀的已註冊的動作所使用的內容中儲存的型別物件時的子動作 （分析物件建立和分析集合初始設定） 執行。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [\\\Build 2015 talk](http://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub 上的完整程式碼](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

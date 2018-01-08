@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 006ab3b57a21d5b9a661f06bc984f4dca8757bfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 服務是兩個 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的另一個 VSPackage 也可以使用的介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
     
     這段程式碼會取得 SVsActivityLog 服務，並將其轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to： 使用活動記錄檔](../../extensibility/how-to-use-the-activity-log.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
  [使用並提供服務](../../extensibility/using-and-providing-services.md)   
  [轉型和類型轉換](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   

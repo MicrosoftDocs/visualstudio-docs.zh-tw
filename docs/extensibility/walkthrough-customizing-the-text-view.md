@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>逐步解說： 自訂文字檢視
 您可以自訂文字檢視藉由修改任何其編輯器格式對應中的下列屬性：  
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
 5.  開啟可見的空白字元。 (在**編輯**功能表上，指向**進階**，然後按一下 **檢視空白區**)。 某些索引標籤中輸入的文字。 應該會顯示紅色的箭頭表示索引標籤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

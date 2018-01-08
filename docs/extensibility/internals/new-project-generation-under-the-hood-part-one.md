@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生： 在幕後，第一部
 您曾經想過有關如何建立您自己的專案類型嗎？ 不知道實際發生的狀況時建立新的專案？ 讓我們看一下實際上並查看實際狀況。  
@@ -91,7 +92,7 @@ devenv /installvstemplates
  優先順序，數目愈低愈高樹狀目錄中的位置。  
   
 ##### <a name="developeractivity"></a>DeveloperActivity  
- 如果這個子機碼存在，則根節點的位置由開發人員設定 對話方塊所控制。 例如：  
+ 如果這個子機碼存在，則根節點的位置由開發人員設定 對話方塊所控制。 例如，套用至物件的  
   
  DeveloperActivity REG_SZ VC #  
   
@@ -215,5 +216,5 @@ devenv /installvstemplates
   
  **MyProjectNode**會顯示為子節點的 Visual C# 中的 Windows 節點的下方。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產生新專案︰深入探討，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

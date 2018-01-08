@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a82f420203b88bb94531401d061493621f3eba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e508bda0b22c798246b0f6abf4dfb03c41a92d6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>執行個體化使用舊版 API 的核心編輯器
 編輯器會負責文字編輯功能，例如插入、 刪除、 複製和貼。 它會結合這些函式提供的語言服務，例如文字著色、 縮排和 IntelliSense 陳述式完成。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
  如需一般資訊，請參閱[逐步解說： 建立核心編輯器和註冊編輯器檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心編輯器內](../extensibility/inside-the-core-editor.md)   
  [開啟並儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
  [逐步解說： 建立核心編輯器和登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

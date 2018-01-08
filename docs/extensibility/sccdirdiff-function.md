@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea335ef6bcb2a27b4312c613062be0d365711cbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示目前的本機目錄上的用戶端磁碟 」 和 「 原始檔控制下對應的專案之間的差異。  
@@ -54,7 +55,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|磁碟上的目錄是在原始程式碼控制中的專案相同。|  
 |SCC_I_FILESDIFFER|在磁碟上的目錄會與原始程式碼控制中的專案不同。|  
@@ -81,5 +82,5 @@ SCCRTN SccDirDiff(
 > [!NOTE]
 >  此函式會使用相同的命令旗標，表示[SccDiff](../extensibility/sccdiff-function.md)。 不過，可以選擇原始檔控制外掛程式不支援目錄的 「 快速差異 」 作業。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

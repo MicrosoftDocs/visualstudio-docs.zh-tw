@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 您可以撰寫程式碼，以建立和刪除模型項目、 設定其屬性，以及建立和刪除項目之間的連結。 在交易內，就必須進行的所有變更。 如果項目會在圖表檢視，圖表將會 「 」 自動修正交易的結尾。  
@@ -514,7 +515,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>儲存資料分割  
  當載入模型時，同時載入隨附的圖表。 一般而言，模型載入 Store.DefaultPartition，而且圖表內容載入至另一個磁碟分割。 通常，每個資料分割的內容會載入，並儲存至個別檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [中的網域特定定義域語言的驗證](../modeling/validation-in-a-domain-specific-language.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   

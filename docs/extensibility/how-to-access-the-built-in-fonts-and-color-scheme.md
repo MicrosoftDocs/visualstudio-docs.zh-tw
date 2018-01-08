@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
 Visual Studio 整合式的開發環境 (IDE) 將其 [編輯器] 視窗相關聯字型和色彩的配置。 您可以存取透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。  
@@ -58,11 +59,11 @@ Visual Studio 整合式的開發環境 (IDE) 將其 [編輯器] 視窗相關聯�
   
 2.  填入登錄以便使用內建字型和色彩配置具有四個值：  
   
-    |名稱|類型|資料|說明|  
+    |名稱|類型|資料|描述|  
     |----------|----------|----------|-----------------|  
     |分類|REG_SZ|GUID|任意的 GUID，識別包含內建的字型和色彩配置的分類。|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 此 GUID 可供使用的預設字型和色彩設定的所有 Vspackage。|  
-    |NameID|REG_DWORD|ID|在 VSPackage 中的可當地語系化的類別目錄名稱的資源識別碼。|  
+    |NameID|REG_DWORD|識別碼|在 VSPackage 中的可當地語系化的類別目錄名稱的資源識別碼。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 實作的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。|  
   
 3.  
@@ -98,7 +99,7 @@ if (spPropCatContainer != NULL){
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用字型和色彩](../extensibility/using-fonts-and-colors.md)   
  [取得字型和色彩資訊文字的顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)   

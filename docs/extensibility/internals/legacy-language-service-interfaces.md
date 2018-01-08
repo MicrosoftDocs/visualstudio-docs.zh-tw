@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 任何特定的程式設計語言，可以有只有一個執行個體的語言服務一次。 不過，單一語言服務可以服務多個編輯器。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="additional-language-service-interfaces"></a>其他語言服務介面  
  語言服務可以提供其他介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]要求每個執行個體的文字緩衝的這些介面的個別執行個體。 因此，您應該在它自己的物件上實作的每一個這些介面。 下表顯示需要文字緩衝區執行個體每一個執行個體的介面。  
   
-|介面|說明|  
+|介面|描述|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|管理程式碼視窗裝飾，如的下拉式清單列。 您可以使用，以取得此介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>方法。 有一個<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>每個程式碼視窗。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|以顏色標示語言關鍵字和分隔符號。 您可以使用，以取得此介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>方法。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>在 [小畫家] 階段呼叫。 避免大量計算工作內<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>或可能降低效能。|  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|可讓您使用的命令處理常式 [文字] 檢視修改。 您實作的類別<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>也必須實作介面<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 擷取文字檢視<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>物件藉由查詢<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>物件傳遞到<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法。 應該有一個<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>為每個檢視的物件。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|攔截使用者輸入到程式碼視窗的命令。 監視輸出您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>實作，以提供自訂的完成資訊並檢視修改<br /><br /> 將您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>文字檢視，呼叫的物件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [檢查清單︰建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

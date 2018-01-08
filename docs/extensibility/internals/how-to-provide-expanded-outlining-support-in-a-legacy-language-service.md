@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fd353e39e3e3edbdbdb929fa16abb74126dbbc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1133166560fa371bbb5a2b008175034d48a2a7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 擴充大綱中提供支援舊版語言服務
 有兩個選項，來擴充您的語言支援的大綱支援**摺疊至定義**命令。 您可以將控制編輯器的大綱區域，並將用戶端控制大綱區域。  

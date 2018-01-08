@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>支援的舊版語言服務程式碼片段
 程式碼片段是一段程式碼插入至原始程式檔。 程式碼片段本身是以 XML 為基礎的範本與一組欄位。 程式碼片段插入後可以有不同的值，根據插入程式碼片段的內容，會反白顯示這些欄位。 立即插入程式碼片段之後，語言服務可以格式化程式碼片段。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
  下列的替代項目可以放在儲存中的路徑\<DirPath > 標記中的索引檔案。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |%LCID%|地區設定識別碼。|  
 |%Installroot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安裝資料夾。|  
@@ -391,7 +392,7 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [程式碼片段](../../ide/code-snippets.md)   

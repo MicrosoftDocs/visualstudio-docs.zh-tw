@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>自訂圖表上的展示
 圖表是網域指定的語言設計工具的主要簡報區域。 使用者通常會使用圖表來建構其模型。 您可以如下列主題中所述來自訂圖表。  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/27/2017
   
 -   [在 Windows Form 中內嵌圖表](../modeling/embedding-a-diagram-in-a-windows-form.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

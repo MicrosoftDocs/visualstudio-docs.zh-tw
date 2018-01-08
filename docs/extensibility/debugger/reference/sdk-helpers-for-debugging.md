@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 進行偵錯的協助程式
 這些函式和宣告是 c + + 中實作偵錯引擎，運算式評估工具，符號提供者的全域 helper 函式。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  在此時間有不受管理的這些函式和宣告版本。  
   
-## <a name="overview"></a>概觀  
+## <a name="overview"></a>總覽  
  為了讓偵錯引擎，運算式評估工具，符號提供者使用由 Visual Studio，您必須註冊它們。 這是藉由設定登錄子機碼和項目，亦稱為 「 設定度量 」。 下列全域函式被為了讓您輕鬆更新這些度量的程序。 若要找出這些函式會更新每個登錄子機碼的版面配置的登錄位置上，請參閱 > 一節。  
   
 ## <a name="general-metric-functions"></a>一般標準函式  
@@ -50,7 +51,7 @@ HRESULT GetMetric(
 );  
 ```  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |pszMachine|[in]將寫入其登錄可能是遠端電腦名稱 (`NULL`表示本機電腦)。|  
 |pszType|[in]其中一種衡量標準的類型。|  
@@ -73,7 +74,7 @@ HRESULT SetMetric(
 );  
 ```  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |pszType|[in]其中一種衡量標準的類型。|  
 |guidSection|[in]特定引擎、 評估工具、 例外狀況和其他內容的 GUID。這會指定度量的型別特定的項目底下的子區段。|  
@@ -94,7 +95,7 @@ HRESULT RemoveMetric(
 );  
 ```  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |pszType|[in]其中一種衡量標準的類型。|  
 |guidSection|[in]特定引擎、 評估工具、 例外狀況和其他內容的 GUID。這會指定度量的型別特定的項目底下的子區段。|  
@@ -114,7 +115,7 @@ HRESULT EnumMetricSections(
 );  
 ```  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |pszMachine|[in]將寫入其登錄可能是遠端電腦名稱 (`NULL`表示本機電腦)。|  
 |pszType|[in]其中一種衡量標準的類型。|  
@@ -124,7 +125,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="expression-evaluator-functions"></a>運算式評估工具函式  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |GetEEMetric|從登錄擷取公制值。|  
 |SetEEMetric|設定登錄中指定的度量值。|  
@@ -133,7 +134,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="exception-functions"></a>例外狀況函式  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |GetExceptionMetric|從登錄擷取公制值。|  
 |SetExceptionMetric|設定登錄中指定的度量值。|  
@@ -142,7 +143,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="symbol-provider-functions"></a>符號提供者函式  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |GetSPMetric|從登錄擷取公制值。|  
 |SetSPMetric|設定登錄中指定的度量值。|  
@@ -150,7 +151,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="enumeration-functions"></a>列舉函式  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |EnumMetricSections|列舉指定的單位類型的所有度量。|  
 |EnumDebugEngine|列舉已註冊的偵錯引擎。|  
@@ -167,7 +168,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|所有例外狀況的度量。|  
 |metricttypeEEExtension|所有的運算式評估工具擴充功能。|  
   
-|偵錯引擎屬性|說明|  
+|偵錯引擎屬性|描述|  
 |-----------------------------|-----------------|  
 |metricAddressBP|設為非零，表示支援位址中斷點。|  
 |metricAlwaysLoadLocal|設為非零，若要永遠載入偵錯引擎在本機。|  
@@ -203,13 +204,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|登錄機碼包含所指定的偵錯引擎與此偵錯引擎不相容的 Guid 項目。|  
 |metricDisableJITOptimization|將此設為非零，表示應該在偵錯期間停用在 just-in-time （適用於 managed 程式碼） 的最佳化。|  
   
-|運算式評估工具內容|說明|  
+|運算式評估工具內容|描述|  
 |-------------------------------------|-----------------|  
 |metricEngine|這會保留偵錯引擎支援指定的運算式評估工具的數目。|  
 |metricPreloadModules|將此設為非零，表示應該預先運算式評估工具對程式啟動時載入模組。|  
 |metricThisObjectName|設定為"this"的物件名稱。|  
   
-|運算式評估工具的擴充屬性|說明|  
+|運算式評估工具的擴充屬性|描述|  
 |-----------------------------------------------|-----------------|  
 |metricExtensionDll|支援這項擴充功能 dll 名稱。|  
 |metricExtensionRegistersSupported|支援的暫存器的清單。|  
@@ -217,18 +218,18 @@ HRESULT EnumMetricSections(
 |metricExtensionTypesSupported|支援的類型清單。|  
 |metricExtensionTypesEntryPoint|存取類型的進入點。|  
   
-|連接埠供應商屬性|說明|  
+|連接埠供應商屬性|描述|  
 |------------------------------|-----------------|  
 |metricPortPickerCLSID|（對話方塊使用者可以使用選取的連接埠，並加入要用於偵錯的連接埠） 的連接埠選取器的 CLSID。|  
 |metricDisallowUserEnteredPorts|為非零，如果使用者輸入連接埠不能加入至連接埠供應商 （基本上是唯讀，這會連接埠選取器對話方塊）。|  
 |metricPidBase|配置處理序識別碼時，連接埠提供者所使用的基底的處理序識別碼。|  
   
-|預先定義的預存程序存放區型別|說明|  
+|預先定義的預存程序存放區型別|描述|  
 |-------------------------------|-----------------|  
 |storetypeFile|符號會儲存在個別的檔案。|  
 |storetypeMetadata|符號會儲存為組件中的中繼資料。|  
   
-|其他屬性|說明|  
+|其他屬性|描述|  
 |------------------------------|-----------------|  
 |metricShowNonUserCode|將此設為非零，以顯示 nonuser 程式碼。|  
 |metricJustMyCodeStepping|將此設為非零，表示只會在使用者程式碼可以發生逐步執行。|  
@@ -262,7 +263,7 @@ HRESULT EnumMetricSections(
   
  *[度量] = [公制值]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[登錄機碼]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本 root]*|Visual Studio 版本 (例如， `7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用**/rootsuffix**切換至**devenv.exe**。 VSIP，對於此修飾詞通常是**Exp**，因此版本根為，比方說，8.0Exp。|  
@@ -295,7 +296,7 @@ HRESULT EnumMetricSections(
   
  `1` = *[連接埠供應商 guid]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[引擎 guid]*|偵錯引擎的 GUID。|  
 |*[類別 guid]*|類別可實作此偵錯引擎的 GUID。|  
@@ -314,7 +315,7 @@ HRESULT EnumMetricSections(
   
  *[度量] = [公制值]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[連接埠供應商 guid]*|連接埠供應商的 GUID|  
 |*[類別 guid]*|實作此連接埠供應商類別 GUID|  
@@ -342,7 +343,7 @@ HRESULT EnumMetricSections(
   
  *[度量] = [公制值]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[符號提供者 guid]*|符號提供者 GUID|  
 |*[類別 guid]*|類別會實作這個符號提供者的 GUID|  
@@ -371,7 +372,7 @@ HRESULT EnumMetricSections(
   
  `1` = *[偵錯引擎 guid]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[語言 guid]*|一種語言的 GUID|  
 |*[廠商 guid]*|供應商的 GUID|  
@@ -389,7 +390,7 @@ HRESULT EnumMetricSections(
   
  *[度量] = [公制值]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[延伸模組 guid]*|運算式評估工具延伸模組的 GUID|  
   
@@ -414,7 +415,7 @@ HRESULT EnumMetricSections(
   
  *[度量] = [公制值]*  
   
-|預留位置|說明|  
+|預留位置|描述|  
 |-----------------|-----------------|  
 |*[偵錯引擎 guid]*|偵錯引擎，可支援例外狀況的 GUID。|  
 |*[例外狀況型別]*|識別可處理的例外狀況類別的子機碼一般的標題。 一般名稱是**c + + 例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外**，和**原生執行階段會檢查**。 這些名稱也可用來識別特定類別的例外狀況給使用者。|  
@@ -427,5 +428,5 @@ HRESULT EnumMetricSections(
   
  程式庫： libs\ad2de.lib、 libs\dbgmetric.lib  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

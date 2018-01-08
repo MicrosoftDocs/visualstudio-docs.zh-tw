@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a0bc7ab99c6bc3643ee61b403e4aa0c40c41a63a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式設定選項可控制行為的原始檔控制外掛程式。  
@@ -46,7 +47,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功設定選項。|  
 |SCC_I_SHARESUBPROJOK|時所傳回`nOption`已`SCC_OPT_SHARESUBPROJ`和原始檔控制外掛程式可讓 IDE 來設定目的地資料夾。|  
@@ -57,7 +58,7 @@ SCCRTN SccSetOption(
   
  選項及其值的摘要：  
   
-|`nOption`|`dwValue`|說明|  
+|`nOption`|`dwValue`|描述|  
 |---------------|---------------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|啟用/停用背景事件佇列。|  
 |`SCC_OPT_USERDATA`|任意值|指定要傳遞給使用者值[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)回呼函式。|  
@@ -81,7 +82,7 @@ SCCRTN SccSetOption(
 ## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
  如果`nOption`設`SCC_OPT_SHARESUBPROJ`，IDE 會測試是否從原始檔控制新增檔案時，原始檔控制外掛程式可以使用指定的本機資料夾。 值`dwVal`在此情況下並不重要參數。 如果使用這個外掛程式來指定檔案來源中的加入其中的本機目的資料夾 IDE 負責控制何時[SccAddFromScc](../extensibility/sccaddfromscc-function.md)呼叫時，則必須傳回外掛程式`SCC_I_SHARESUBPROJOK`時`SccSetOption`函式呼叫。 接著會使用 IDE`lplpFileNames`參數`SccAddFromScc`傳遞目的地資料夾中的函式。 外掛程式會使用該目的地資料夾將加入從原始檔控制的檔案。 如果外掛程式不會傳回`SCC_I_SHARESUBPROJOK`時`SCC_OPT_SHARESUBPROJ`設定選項時，IDE 會假設外掛程式無法將檔案加入只在目前的本機資料夾。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

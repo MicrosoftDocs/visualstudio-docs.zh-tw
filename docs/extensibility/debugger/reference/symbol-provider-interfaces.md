@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84b8e517efa7c5c4aaeba4bf6e19dc23b0615eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2b3ec92ce76a3218c646c51ccb28d99322baf93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider-interfaces"></a>符號提供者介面
 以下是符號處理介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="discussion"></a>討論  
  這些介面可用來評估在中斷模式期間的呼叫堆疊中的變數。 它們被實作只有通用語言執行階段的符號提供者 (SP)。  
   
-|介面|由實作|說明|  
+|介面|由實作|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|代表項目的位址。|  
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|代表位址的項目，提供存取的處理序識別碼。|  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|代表集合[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)物件。|  
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|代表集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

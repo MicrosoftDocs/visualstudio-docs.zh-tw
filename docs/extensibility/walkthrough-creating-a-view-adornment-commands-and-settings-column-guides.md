@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （資料行指南）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。  本主題會示範如何開始使用常見的延伸模組功能，資料行的指南。  資料行的輔助線是以視覺化方式淺色文字編輯器的檢視，可協助您管理您的程式碼的特定資料行寬度上繪製的直線。  特別是格式化程式碼可能很重要的範例包含在文件，部落格文章，或錯誤報告。  
@@ -1351,7 +1352,7 @@ private int GetApplicableColumn(EventArgs e)
   
  您可以試用版本與這個 Visual Studio 組件庫的資料行指南功能[延伸](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在編輯器](../extensibility/inside-the-editor.md)   
  [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)   
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)   

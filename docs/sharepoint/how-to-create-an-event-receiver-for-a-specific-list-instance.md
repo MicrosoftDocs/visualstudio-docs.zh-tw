@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單執行個體建立事件接收器
   清單執行個體的事件接收器會回應在清單中定義的任何執行個體中發生的事件。 雖然事件接收器範本不會啟用目標的特定清單執行個體，您可以修改事件接收器，以便以回應事件中的特定清單執行個體的清單定義為範圍。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
      請注意，事件接收器將不會在新的 announcement 因為收件者已設定為只回應中的自訂公告清單執行個體中，事件才會觸發**TestAnnouncements**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

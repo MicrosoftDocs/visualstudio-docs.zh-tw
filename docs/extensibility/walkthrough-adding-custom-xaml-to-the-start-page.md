@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 924a6e2640002bc47eb75c903c46b5a170a9c308
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65875823e2bc6e09eb0439a267a9c25acada87fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>逐步解說： 在 [開始] 頁面中加入自訂的 XAML
 本逐步解說示範如何建立自訂 Visual Studio 起始頁包含網頁瀏覽器。  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>後續步驟  
  Visual Studio 起始頁現在包含 Web 瀏覽器索引標籤和 MyButton 索引標籤會顯示索引標籤。您可以建立具有其他功能使用之自訂開始的頁面*程式碼後置*模型中所示，新增自訂.dll[加入使用者控制項加入起始頁](../extensibility/adding-user-control-to-the-start-page.md)。 您也可以發行至產生的.vsix 檔案與其他使用者共用自訂起始頁[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，或另一個網站或網路共用。 如需詳細資訊，請參閱[部署自訂起始頁](../extensibility/deploying-custom-start-pages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
  [WPF 控制項](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)

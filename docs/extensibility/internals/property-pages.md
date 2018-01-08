@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484d53315f836117b69270a2f43b6b780733b9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可以檢視和變更使用屬性頁的專案組態相關和-獨立屬性。 A**屬性頁**中啟用按鈕**屬性**視窗或 [方案總管] 工具列上的物件，提供所選物件的屬性頁面上檢視。 屬性頁所建立的環境，而且可供方案和專案。 它們，不過，也可以是可進行的專案項目使用的組態相關的屬性。 在專案中的檔案需要不同的編譯器參數設定，才能正確建置時，可能會使用這項功能。  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
      實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>方法來擷取專案階層架構和專案項目或選取的項目。 您會使用 DTE，`SelectedItems.SelectedItem.Project`和`SelectedItems.SelectedItem.ProjectItem`方法。 沒有核心中的這些標題下的範例程式碼[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [專案組態物件](../../extensibility/internals/project-configuration-object.md)   

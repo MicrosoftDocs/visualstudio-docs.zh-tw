@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>在 Visual Studio 中的部署概觀
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/15/2017
 
     ![選擇發行](../deployment/media/quickstart-publish.png)
 
-- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用本機部署或靜態連結。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用本機部署或靜態連結。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>發行至 Web 或網路共用部署
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 12/15/2017
 
     您也可以部署 ASP.NET 應用程式和服務中的其他方法的數字。 如需詳細資訊，請參閱[部署 ASP.NET web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用集中部署。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用集中部署。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
 
 - **Windows 桌面**可以發行到 web 伺服器或網路檔案共用使用 ClickOnce 部署的 Windows 桌面應用程式。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[部署桌面應用程式使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)和[部署原生應用程式使用 ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/15/2017
     > [!NOTE]
     > 如果您沒有 Azure 帳戶，您可以[這裡進行註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
 
-- 其他**Azure 服務**： 請參閱特定[Azure 服務](https://docs.microsoft.com/azure/#pivot=products)可能支援的 Visual Studio 的不同的部署選項的文件。
+- 其他**Azure 服務**： 請參閱特定[Azure 服務](/azure/#pivot=products)可能支援的 Visual Studio 的不同的部署選項的文件。
 
 ### <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 

@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 此函式可讓使用者瀏覽已在原始檔控制系統中的檔案，之後將這些檔案目前的專案。 例如，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。  
@@ -50,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|檔案已成功位於而且加入至專案。|  
 |SCC_I_OPERATIONCANCELED|不會影響已取消作業。|  
@@ -68,6 +69,6 @@ SCCRTN SccAddFromScc (
 > [!NOTE]
 >  初始 VSSCI API 版本未提供一個方法來指示加入的檔案的目標專案。 若要完成此的語意`lplpFIleNames`參數已增強為方便輸入/輸出參數，而不是輸出參數。 如果只指定單一檔案，也就是指之值`lpnFiles`= 1，則第一個項目`lplpFileNames`包含目標資料夾。 若要使用這些新的語意，IDE 呼叫`SccSetOption`函式與`nOption`參數設定為`SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意，它會傳回`SCC_E_OPTNOTSUPPORTED`。 執行這樣的停用使用**從原始檔控制加入**功能。 如果外掛程式支援**從原始檔控制加入**功能 (`SCC_CAP_ADDFROMSCC`)，則必須支援新的語意，並傳回`SCC_I_SHARESUBPROJOK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

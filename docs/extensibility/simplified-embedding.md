@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 183dc4ad9d7ea1a2f6855be050ad8459a3f801ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="simplified-embedding"></a>簡化的嵌入
 簡化內嵌時，會啟用在編輯器中 （也就是對的子系） 父代其文件檢視物件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗命令。 簡化的嵌入編輯器無法裝載作用中的控制項。 下圖中會顯示用來建立使用簡化的嵌入編輯器的物件。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  中所包含的所有介面實作，以建立使用簡化的嵌入編輯器`CYourEditorDocument`物件。 不過，若要支援多個檢視的文件資料，分割到不同的資料，以及檢視物件的介面在下表所示。  
   
-|介面|介面的位置|用法|  
+|介面|介面的位置|使用|  
 |---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供連接至父視窗。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|檢視|處理命令。|  

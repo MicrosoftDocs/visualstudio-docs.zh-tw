@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: dd51497bb73981ca81623ad495edc9561e85d3da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-get-a-service"></a>如何： 取得服務
 您通常需要取得 Visual Studio 服務來存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一個或多個介面。 您可以從 VSPackage 取得大部分的服務。  
@@ -84,7 +85,7 @@ if (sp != null)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 提供的服務](../extensibility/how-to-provide-a-service.md)   
  [使用並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d61b4fade0775c5e017a85fa5364779bc567b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 此函式開啟現有的原始檔控制專案，或建立一個新。  
@@ -70,7 +71,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|在中開啟專案的成功。|  
 |SCC_E_INITIALIZEFAILED|無法初始化專案。|  
@@ -106,7 +107,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  `SCC_CAP_REENTRANT`位元原始檔控制外掛程式 API 1.1 版中引進。 未設定，或在 1.0 版中，會被忽略，並假設為 nonreentrant 所有 1.0 版原始檔控制外掛程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCloseProject](../extensibility/scccloseproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)   

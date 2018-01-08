@@ -13,18 +13,19 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1085312849ce33518654e044a795d6aa4b735e07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列功能，必須由原始檔控制外掛程式依據這個應用程式開發介面實作。 每個函式和語意的簽章相關聯的位元旗標，此參考中的詳細說明其他參數。  
   
 ## <a name="initialization-and-housekeeping-functions"></a>初始設定和維護函式  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|關閉專案。|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|提示使用者提供對於指定的命令的進階選項。|  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="core-source-control-functions"></a>核心原始檔控制功能  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|將陣列的原始檔控制系統的完整的路徑名稱所指定的檔案。|  
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|可讓使用者瀏覽已在原始檔控制系統中的檔案，然後將這些檔案目前的專案。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>支援的額外功能 （1.2 版的原始檔控制外掛程式 API） 的函式  
  此群組的函式定義的原始檔控制外掛程式 API 1.2 版中包含的其他功能。 它們提供更進階的原始檔控制功能和功能的存取。  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|啟動批次作業。|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|建立具有指定名稱的現有父專案底下的子專案。|  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>支援進階的功能 （1.3 版的原始檔控制外掛程式 API） 的函式  
  此群組的函式定義的原始檔控制外掛程式 API 1.3 版中包含的其他功能。 它們提供更進階的原始檔控制功能和功能的存取。  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|從原始檔控制加入目前專案的檔案清單。|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|從沒有使用者介面的原始檔控制中擷取檔案的清單。|  
@@ -87,6 +88,6 @@ ms.lasthandoff: 10/31/2017
   
  (環境 SDK 中提供的通用資料夾中，預設包含*[磁碟機]*\Program Files\VSIP 8.0\EnvSDK\common\inc; MSSCCI 範例中，VSIP 資料夾中也提供*[磁碟機]*\ProgramFiles\VSIP 8.0\MSSCCI)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)

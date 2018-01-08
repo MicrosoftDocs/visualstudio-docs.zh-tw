@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca277abe07ffe843ed3f4106615796340f5367a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e007ffe8cf3cc893bc9575a3e7c083090b523467
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令資料表 (。Vsct) 檔案
 XML 命令表 (.vsct) 檔案描述的配置和外觀 VSPackage 的命令項目。 命令項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目群組。 本主題描述 XML 命令資料表檔、 它們如何影響命令項目和功能表，以及如何建立它們。  
@@ -123,5 +124,5 @@ XML 命令表 (.vsct) 檔案描述的配置和外觀 VSPackage 的命令項目�
   
  使用命令列執行工具**CreateExpInstance /Reset**。 請記住，此工具會移除在實驗登錄區通常不會安裝的所有已註冊的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

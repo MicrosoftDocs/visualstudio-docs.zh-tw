@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaf35854aede65b605b4578ca9ee71375ad7a479
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔案設定 Visual Studio 擴充功能的安裝行為。  
@@ -60,10 +61,10 @@ ms.lasthandoff: 10/31/2017
   
  **中繼資料** 索引標籤包含下列控制項。  
   
- **說明**  
+ **描述**  
  提供的擴充功能，在中顯示的文字描述**擴充管理員**。  
   
- **語言**  
+ **Language**  
  指定的預設語言套件，對應到資訊清單中的文字資料。 `Language`屬性會遵循 common language runtime (CLR) 地區設定程式碼慣例資源組件，例如，en-us-我們、 en-us、 為 fr-fr。 根據預設，此值是中性;這表示此封裝將在 Visual Studio 的任何語言版本上執行。  
   
  **授權**  
@@ -150,6 +151,6 @@ ms.lasthandoff: 10/31/2017
   
  識別碼必須相符`ID`的相依性套件中繼資料屬性。 來源可以是目前的方案、 目前已安裝的擴充功能或檔案中的專案。 **的相依性解析方式**設定可以是巢狀的封裝相對路徑或相依性的下載位置的 URL。 識別碼、 版本和相依性套件的解析度對應至`Id`， `Version`，和`Location`屬性相關聯的`Dependency`項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSIX 擴充功能 2.0 結構描述參考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd70d65a7d2cbabbbf7fcd3581e8ba974ff25ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>大括號比對以舊版語言服務
 大括號比對，可協助開發人員追蹤需要一起發生，例如括弧和大括號的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="enabling-support-for-brace-matching"></a>啟用支援括號對稱  
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>屬性可以設定`MatchBraces`， `MatchBracesAtCaret`，和`ShowMatchingBrace`名為設定的對應屬性參數<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 使用者也可以設定語言喜好設定的屬性。  
   
-|登錄項目|屬性|說明|  
+|登錄項目|屬性|描述|  
 |--------------------|--------------|-----------------|  
 |`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|啟用括號對稱|  
 |`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|移動插入號所在的啟用括號對稱。|  
@@ -138,6 +139,6 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [舊版語言服務的剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

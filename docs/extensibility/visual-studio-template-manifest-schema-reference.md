@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
 此結構描述會描述針對 Visual Studio 專案或項目樣板所產生的 Visual Studio 範本資訊清單 (.vstman) 檔案格式，並且描述的位置和其他範本的相關資訊。  
@@ -30,9 +31,9 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>屬性  
   
--   **版本**： 字串，表示範本資訊清單的版本。 必要項。  
+-   **版本**： 字串，表示範本資訊清單的版本。 必要。  
   
--   **地區設定**： 字串，表示地區設定或範本資訊清單的地區設定。 地區設定值套用至所有範本，因此您必須使用不同的資訊清單，每個地區設定。 選擇項。  
+-   **地區設定**： 字串，表示地區設定或範本資訊清單的地區設定。 地區設定值套用至所有範本，因此您必須使用不同的資訊清單，每個地區設定。 選擇性。  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -70,11 +71,11 @@ ms.lasthandoff: 10/31/2017
   
 -   **RelativePath**： 範本的路徑。 可以有只有一個項目，每個路徑，因此第一個會針對所有資訊清單中獲得優先權。  
   
--   **LocalizedName**: A **NameDescriptionIcon**項目，指定當地語系化的名稱。 選擇項。  
+-   **LocalizedName**: A **NameDescriptionIcon**項目，指定當地語系化的名稱。 選擇性。  
   
--   **SortOrder** ： 字串，指定排序次序。 選擇項。  
+-   **SortOrder** ： 字串，指定排序次序。 選擇性。  
   
--   **ParentFolderOverrideName**： 覆寫的父資料夾的名稱。 選擇項。 這個項目具有**名稱**屬性，也就是指定名稱的字串值。  
+-   **ParentFolderOverrideName**： 覆寫的父資料夾的名稱。 選擇性。 這個項目具有**名稱**屬性，也就是指定名稱的字串值。  
   
 ### <a name="parent-element"></a>Parent 項目  
  **VSTemplateManifest**  
@@ -84,9 +85,9 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="attributes"></a>屬性  
   
--   **封裝**： 指定封裝的字串值。 選擇項。  
+-   **封裝**： 指定封裝的字串值。 選擇性。  
   
--   **識別碼**： 字串值，指定識別碼。 選擇項。  
+-   **識別碼**： 字串值，指定識別碼。 選擇性。  
   
 ### <a name="child-elements"></a>子元素  
  無。  

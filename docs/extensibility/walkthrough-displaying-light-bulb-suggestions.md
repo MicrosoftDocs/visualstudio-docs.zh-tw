@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46a20e68874db1bc94dda4227c062174e0b72b01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97ab32d4bfe0772d7b50ea1ca5a0b0ec143ed536
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說： 顯示燈泡建議
 燈泡是 Visual Studio 編輯器中使用的圖示會展開以顯示一組動作，例如內建的程式碼分析器或重構程式碼來識別問題的修正。  

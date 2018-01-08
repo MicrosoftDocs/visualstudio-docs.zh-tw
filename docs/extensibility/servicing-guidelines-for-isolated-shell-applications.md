@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e15d228794fb03441d42c081f11bf75b11fdd45
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c5c8bc626f8a6aabe7fbc450067667d301f11c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Isolated 的 Shell 應用程式的服務指導方針
 當您發佈的 Visual Studio isolated shell 應用程式時，您必須能夠在安裝之後，您的應用程式提供軟體更新。 若要這樣做，您必須使用 Microsoft Installer (MSI) 檔案安裝應用程式。 這種安裝可讓 web 轉散發 Microsoft 所提供的軟體更新下載，且由您的客戶不需要自訂的介入。  

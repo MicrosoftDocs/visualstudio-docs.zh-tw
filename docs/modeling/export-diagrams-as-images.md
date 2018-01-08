@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 253f6292331bd3a67a5f57ab6a0936928dedcf77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
  [共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19b3956e03c23d70852d8a2297544a72d91b840
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f3927ac9aa9e85be026d2b9a2af1c0c4d956c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-output"></a>專案組態的輸出
 每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置處理序。 這些輸出項目的私用使用者，而且可以放置在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
   
  如需詳細資訊，請參閱的實作`IVsOutputGroup`的自訂專案範例中[專案的 MPF](http://mpfproj12.codeplex.com)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [專案組態物件](../../extensibility/internals/project-configuration-object.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec22eaeaf24af1c65823c64c65dd2c39f1003ec8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4be6e63df26d3c4a9b6539276aa97f69e349b83c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 此函式判斷哪一個目錄以及 （選擇性） 檔案會儲存在原始檔控制，指定要檢查的目錄清單。  
@@ -58,7 +59,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功完成作業。|  
 |SCC_E_UNKNOWNERROR|發生錯誤。|  
@@ -66,7 +67,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>備註  
  只有目錄和 （選擇性） 實際上是在原始檔控制儲存機制的檔案名稱會傳遞至回呼函式中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   

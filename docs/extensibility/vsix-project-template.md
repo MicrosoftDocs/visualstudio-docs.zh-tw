@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24a2937b37aa339f85e197f6ff2bb49cbb0ce86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 您可以使用 VSIX 專案範本來將一或多個 Visual Studio 擴充功能包裝在 VSIX 專案，並再將封裝發佈上[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站。  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]建置包含 VSIX 資訊清單檔案、 [Content_Types].xml 檔案，以及所有您加入至專案的延伸模組資產.vsix 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSIX 擴充功能 2.0 結構描述參考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)

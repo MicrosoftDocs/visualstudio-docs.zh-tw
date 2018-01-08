@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 執行文件資料表 (RDT) 維護的計數為開啟的文件和它們的任何編輯鎖定。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件。 修改多個檔案的圖形化使用者介面的設計工具通常會使用這項功能。  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
   
  多次 UI 設計工具，以程式設計方式修改程式碼檔會對多個檔案進行變更。 在此情況下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法會處理一或多個文件，藉由儲存**您要將變更儲存到下列項目嗎？**  對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行中的文件表格](../extensibility/internals/running-document-table.md)   
  [持續性與執行中的文件資料表](../extensibility/internals/persistence-and-the-running-document-table.md)

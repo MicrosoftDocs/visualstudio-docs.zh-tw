@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3742887be40f07f4b64003727333d4d21d08831e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95377f79d02952c63b673d50569fac058a8573c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 此函式簽入原始檔控制系統，儲存所做的變更和建立新的版本先前會在簽出檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。  
@@ -62,7 +63,7 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|檔案已成功簽入。|  
 |SCC_E_FILENOTCONTROLLED|選取的檔案不是原始程式碼控制之下。|  
@@ -82,5 +83,5 @@ SCCRTN SccCheckin (
   
  `fOptions`引數可以指定值為`SCC_KEEP_CHECKEDOUT`旗標，表示檢查檔案，而且一次簽出該使用者的意圖。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

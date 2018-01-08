@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2128d4c2659d7e6e389384c4bf7e133a4fb32e47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dea9d25f211ca5042234c0400b2a10086136f49c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安裝案例
 請務必設計您的 VSPackage 安裝程式的彈性。 例如，您可能需要在未來，發行安全性修補程式或您可能會變更商務策略，需要完整的並存版本控制支援。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
   
  **請注意**-並存組件的部署的詳細資訊，請參閱[簡化部署和以.NET Framework 解決 DLL Hell](http://msdn.microsoft.com/library/ms973843.aspx)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [支援多個 Visual Studio 版本](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

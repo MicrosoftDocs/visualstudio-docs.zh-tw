@@ -27,11 +27,12 @@ caps.latest.revision: "48"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 1dd23a5350f1618323005cfffdcd1ab9b6c04d1d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3aa3531b9c784b84309475e9a06dbc04b5f37fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 

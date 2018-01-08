@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7191d31d4ec53fb26f4ab20114201836f1b58fc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757968aabfc256cda37a103d48c8d12f1fc16fa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 IDE 執行兩個精靈，可實作用於巢狀專案父專案：**新專案**精靈和**加入項目**精靈。  
@@ -31,6 +32,6 @@ IDE 執行兩個精靈，可實作用於巢狀專案父專案：**新專案**精
   
  如需有關精靈的詳細資訊，請參閱[精靈 (。Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)，[內容參數](../../extensibility/internals/context-parameters.md)和[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)

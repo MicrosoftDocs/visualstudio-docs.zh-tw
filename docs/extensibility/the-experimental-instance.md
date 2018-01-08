@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de242ed974716b0ba00918d30bc2679a36420fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a656baf951e573a5913960b19c1b583797de090f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 為了保護您的 Visual Studio 開發環境，從未經測試的應用程式，可能會變更，VSSDK 會提供您可用來試用實驗空間。 您像往常一樣，使用 Visual Studio 來開發新的應用程式，但您執行使用此實驗執行個體。  

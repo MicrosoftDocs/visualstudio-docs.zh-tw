@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 語言服務提供可讓您實作特定的編輯器支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能。 Managed Package Framework (MPF) 語言服務類別提供常用的功能和部分支援其他功能的完整支援。  
@@ -91,6 +92,6 @@ ms.lasthandoff: 10/31/2017
   
 -   [在舊版語言服務中驗證中斷點](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

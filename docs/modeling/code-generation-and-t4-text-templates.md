@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中， *「T4 文字範本」* (T4 text template) 混合了文字區塊及可產生文字檔案的控制邏輯。 控制邏輯是由 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]撰寫的程式碼片段。 在 Visual Studio 2015 Update 2 (含) 以後版本中，您可以在 T4 範本指示詞中使用 C# 6.0 版功能。 產生的檔案可以是任何類型的文字，例如網頁、資源檔或任何語言的原始程式碼。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/27/2017
   
  此外，範本也包含程式碼片段。 您可以使用這些片段來重複文字區段、建立條件式區段，以及顯示應用程式的資料。  
   
- 為產生輸出，應用程式會呼叫範本所產生的函式。 例如：  
+ 為產生輸出，應用程式會呼叫範本所產生的函式。 例如:   
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  
@@ -96,7 +97,7 @@ namespace Fabrikam.FirstJob
   
  文字範本轉換功能的名稱為 *T4*。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)  
  在任何會產生文字檔案的應用程式中，先行編譯的文字範本是簡單而可靠的文字定義方法。 但是，此方法不可用於會在執行階段變更的文字範本。  
   
@@ -121,5 +122,5 @@ namespace Fabrikam.FirstJob
  [自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)  
  如何為您自己的資料來源撰寫指示詞處理器和自訂範本化主機。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

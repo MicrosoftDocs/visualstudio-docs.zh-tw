@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6329950b3af0b0ec44347ad9a85124ee7192439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ae8540a2f372abacd8eda6e63cd868edbb050392
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-options-pages"></a>建立選項頁面
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]managed 的封裝架構類別衍生自<xref:Microsoft.VisualStudio.Shell.DialogPage>擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加入 IDE**選項**頁面下**工具**功能表。  
@@ -62,21 +63,21 @@ ms.lasthandoff: 10/31/2017
 ## <a name="example"></a>範例  
  以下是簡單"hello world"的實作的選項頁面。 將下列程式碼加入至預設專案與 Visual Studio 封裝範本所建立**功能表命令**選取的選項將充分示範選項頁面的功能。  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列類別定義的最小的"hello world"選項頁面。 開啟時，使用者可以設定公開`HelloWorld`屬性方格中的屬性。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  將下列屬性套用至在封裝類別讓頁面上的選項可載入封裝時。 數字會針對類別目錄和頁面上，任意的資源識別碼和結尾的布林值，指定該分頁是否支援自動化。  
   
 ### <a name="code"></a>程式碼  
  [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列事件處理常式會顯示在 [選項] 頁面中設定的屬性值而定的結果。 它會使用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>方法的結果明確地轉換成自訂選項的頁面類型，若要存取此網頁所公開的屬性。  
   
  封裝範本所產生的專案，在呼叫此函式從`MenuItemCallback`函式，將它附加至的預設命令加入至**工具**功能表。  
@@ -85,6 +86,6 @@ ms.lasthandoff: 10/31/2017
  [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充使用者設定和選項](../../extensibility/extending-user-settings-and-options.md)   
  [選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)

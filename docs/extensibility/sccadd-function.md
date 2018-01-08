@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8cd55986d7f4597030830906485ba1d7c1b3389
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 此函式會將新檔案加入至原始檔控制系統。  
@@ -62,7 +63,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|加入作業成功。|  
 |SCC_E_FILEALREADYEXISTS|選取的檔案已經在原始檔控制中。|  
@@ -94,5 +95,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|將檔案視為 Unicode 文字中 UTF16 Little Endian 格式。|  
 |SCC_FILETYPE_UTF16BE|0x40|將檔案以在 UTF16 Big Endian Unicode 文字格式化。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

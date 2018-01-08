@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4dd9df4832e08d33a8209181e47a38101a5658f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 本主題說明在定義和使用 Visual studio 使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/27/2017
   
      ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
-4.  在**名稱**方塊中，輸入**FamilyTree**。 按一下 [確定]。  
+4.  在**名稱**方塊中，輸入**FamilyTree**。 按一下 [確定 **Deploying Office Solutions**]。  
   
      **特定領域語言精靈**隨即開啟，並顯示一份範本 DSL 解決方案。  
   
@@ -405,7 +406,7 @@ ms.lasthandoff: 10/27/2017
   
 2.  重建任何實驗 Dsl 或其他實驗[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]您仍然想要使用的擴充功能。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
 

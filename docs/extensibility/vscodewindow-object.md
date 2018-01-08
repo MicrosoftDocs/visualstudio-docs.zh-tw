@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0b114db98f5a8a50065c8a3219dc4179787c738
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2de0998a3d89c1af3e18fa60aa3f8511716f6165
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 程式碼視窗是一種特殊文件視窗，通常可以包含一或多個文字檢視<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>物件。  
@@ -29,12 +30,12 @@ ms.lasthandoff: 10/31/2017
   
  下表包含中的介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>物件。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|提供一般存取機制來尋找服務的全域唯一識別碼 (GUID) 識別。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|代表包含一或多個程式碼檢視多個文件介面 (MDI) 子系。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填滿視窗框架。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [編輯圖表](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

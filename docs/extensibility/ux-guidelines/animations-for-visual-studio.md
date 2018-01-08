@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a45fd22cce46cb9e43a649fb969980f42b395db2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的動畫
 ## <a name="animation-fundamentals"></a>動畫的基本概念  
@@ -121,7 +122,7 @@ ms.lasthandoff: 10/31/2017
   
 -   有行動網卡到另一個項目
   
-##### <a name="state"></a>狀態  
+##### <a name="state"></a>狀況  
   
 -   內容更新
   
@@ -198,7 +199,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_AnimationPatterns"></a>動畫模式  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
 在 Visual Studio 中的動畫，旨在提供特定的函式不會影響使用者產能。 一般而言，在 Visual Studio 中的動畫應：  
   
 -   小型和不顯眼  

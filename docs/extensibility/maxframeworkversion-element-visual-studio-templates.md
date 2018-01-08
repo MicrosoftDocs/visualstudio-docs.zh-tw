@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da1b30274254c5c1dd81ad20dd64e8749672f96e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c473b3253809c09f9ba0af90f7a0fed349dedb93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 項目 (Visual Studio 範本)
 指定範本所需的.NET Framework 的最新版本。 它會決定是否顯示範本**範本**區段**加入新的專案**對話方塊中，根據值中選取**的目標Framework版本**方塊**加入新的專案** 對話方塊。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
   
  在此範例中，最大版本的.NET Framework 所需的範本，以表示`MaxFrameworkVersion`，為 3.5。 只有當您選取 3.0 或 3.5 中的時，將會顯示上述範本**目標 Framework 版本**方塊中**加入新的專案** 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4598b100572bb47fd537e8edad927d78b4f1550
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2dcf8040217a13688dc1ff33183f237f0f58bbcf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *沙箱化方案*是 Microsoft SharePoint 2010，可讓網站集合的使用者上傳自己的自訂程式碼的方案中的功能。 常見的沙箱化方案已上傳自己的 Web 組件的使用者。  
@@ -143,7 +144,7 @@ ms.lasthandoff: 10/31/2017
   
 -   程式碼的工作流程  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [差異沙箱化方案與伺服器陣列方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

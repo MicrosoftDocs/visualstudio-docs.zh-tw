@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>建立 SharePoint 的站台定義
   中的 SharePoint 網站定義專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可讓您建立*網站定義*，做為新的 SharePoint 網站的基礎。 這些定義不只會決定的外觀和行為的 SharePoint 網站，但也其預設內容和功能。 在定義中，您可以將預先設定的清單、 內容類型、 事件接收器、 影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您建立部落格網站定義為基礎的站台時，此網站包含清單、 Web 組件和部落格網站需要的其他項目。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|將引導您逐步完成建立基本網站定義專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
 |[如何： 建立自訂網站定義和設定](http://go.microsoft.com/fwlink/?LinkId=183309)|描述如何在 SharePoint 中建立自訂網站定義複製現有的站台定義，然後再修改該複本。|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |[程式設計 ASP.NET Web 網頁](http://go.microsoft.com/fwlink/?LinkId=178728)|提供有關如何建立事件處理常式中的資訊[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]頁面，以及如何使用用戶端指令碼。|  
 |[在 Windows SharePoint Services 中程式設計](http://go.microsoft.com/fwlink/?LinkId=178729)|描述如何使用受管理的物件模型中所提供[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

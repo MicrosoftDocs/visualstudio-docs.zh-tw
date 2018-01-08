@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版 API 中的文字緩衝區事件
 文字緩衝區物件發出數個不同的事件可讓您回應不同的情況。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="text-buffer-interfaces"></a>文字緩衝區介面  
  以下是文字緩衝區物件所實作的介面。  
   
-|介面|說明|  
+|介面|描述|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|讓您建立複合的動作 （也就是動作會分組在單一復原/取消復原單位）。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|可讓文字緩衝區所管理的文件資料的持續性。|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="text-buffer-event-interfaces"></a>文字緩衝區事件介面  
  以下是文字緩衝區事件通知的介面。  
   
-|介面|說明|  
+|介面|描述|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferEvents>|新語言服務相關聯的文字緩衝區時，通知用戶端。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents>|初始化文字緩衝區時，變更文字緩衝區中的資料時，通知用戶端。|  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsPreliminaryTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsPreliminaryTextChangeCommitEvents`引發之前其他事件，例如美化，若要確定其他事件認可變更之前不要變更文字。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsFinalTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsFinalTextChangeCommitEvents`適用於只能由語言服務或其他擁有完整控制權編輯的物件。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用舊版 API 存取文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
  [如何： 文字緩衝區使用註冊事件舊版應用程式開發介面](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

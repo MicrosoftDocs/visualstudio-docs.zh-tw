@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 577010320dc4aa0a726e7c0befba8173245681e7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3323d317ac8b04731d1573d5c1a05150e012cbfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務 Essentials
 您必須提供整合到 Visual Studio 程式設計語言的語言服務。 本主題說明可在舊版語言服務的功能。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  舊版語言服務會提供下列功能：  
   
-|功能|說明|  
+|功能|描述|  
 |-------------|-----------------|  
 |語法標色|會使編輯器檢視來顯示不同的色彩和字型樣式語言的不同項目。 區分可讓它更容易閱讀及編輯檔案。<br /><br /> 如需一般資訊，請參閱[語法著色舊版語言服務在](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。<br /><br /> Managed 的 package framework (MPF) 中的這項功能的相關資訊，請參閱[語法色彩標示在舊版語言服務](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。|  
 |陳述式完成|完成陳述式或使用者已開始輸入關鍵字。 陳述式完成可協助使用者更輕鬆地輸入困難的陳述式，並輸入較少，較少的錯誤機會。<br /><br /> 如需一般資訊，請參閱[舊版語言服務中的陳述式完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)。<br /><br /> MPF 這項功能的相關資訊，請參閱[舊版語言服務中的文字完成](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)。|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
  下列功能與程式語言的支援，但不語言服務的一部分：  
   
-|功能|說明|  
+|功能|描述|  
 |-------------|-----------------|  
 |運算式評估工具|支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具透過驗證中斷點，並提供運算式的清單中顯示**自動變數**偵錯視窗。<br /><br /> 如需詳細資訊，請參閱[偵錯的語言服務支援](../../extensibility/internals/language-service-support-for-debugging.md)。|  
 |符號瀏覽工具|支援**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**，和**尋找符號結果**。|

@@ -12,11 +12,12 @@ caps.latest.revision: "54"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 20d4222f96958a730c563ff9bc84b2b5d0b08538
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 394887f5da92e6325266167a0c79f717e0a3a31c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 （DSL 工具），裝載在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，讓您設計的特定領域語言，然後產生所有使用者必須具備才能建立模型為基礎之語言的項目。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/27/2017
   
  當您建置並執行 DSL 工具方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，另一個執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]顯示給使用者的語言特定領域語言的外觀。 在您確認一切運作正常之後，您可以將發佈`.vsix`DslPackage 專案的組建資料夾中的檔案。 這個檔案可以用來安裝做為 DSL[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]其他電腦上的擴充功能。  如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [實驗執行個體](../extensibility/the-experimental-instance.md)   
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

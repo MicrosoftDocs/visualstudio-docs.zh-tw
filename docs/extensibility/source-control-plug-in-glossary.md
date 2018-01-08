@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式詞彙
 下列很有幫助的詞彙和定義適用於原始檔控制外掛程式 SDK 文件。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
  修訂  
  檔案歷程記錄或一組檔案中的認可的變更。 修訂是其中一個快照集的不斷變更的專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

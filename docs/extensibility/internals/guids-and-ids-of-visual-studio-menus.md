@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 功能表
 本主題列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>在 Visual Studio 功能表列上的群組  
  若要加入功能表的功能表列時，設定其中一個群組做為其父系。  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |檔案/編輯/檢視表|IDG_VS_MM_FILEEDITVIEW|  
 |重構|IDG_VS_MM_REFACTORING:|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>在 Visual Studio 功能表列上的功能表  
  將群組新增至現有的 Visual Studio 功能表中，設定下列功能表的其中一個為其父系。 這份清單中不包含子功能表。  
   
-|功能表|ID|  
+|功能表|識別碼|  
 |----------|--------|  
 |檔案|IDM_VS_MENU_FILE|  
 |Edit|IDM_VS_MENU_EDIT|  
@@ -69,11 +70,11 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="file-menu-groups"></a>檔案功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |開啟新 /|IDG_VS_FILE_FILE|  
 |新增|IDG_VS_FILE_ADD|  
-|解決方式|IDG_VS_FILE_SOLUTION|  
+|方案|IDG_VS_FILE_SOLUTION|  
 |其他|IDG_VS_FILE_MISC|  
 |儲存|IDG_VS_FILE_SAVE|  
 |重新命名|IDG_VS_FILE_RENAME|  
@@ -85,11 +86,11 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="edit-menu-groups"></a>編輯功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |復原/取消復原|IDG_VS_EDIT_UNDOREDO|  
 |剪下/複製/貼上|IDG_VS_EDIT_CUTCOPY|  
-|選取|IDG_VS_EDIT_SELECT|  
+|選用版|IDG_VS_EDIT_SELECT|  
 |移至|IDG_VS_EDIT_GOTO|  
 |Find|IDG_VS_EDIT_FIND|  
 |物件|IDG_VS_EDIT_OBJECTS|  
@@ -98,14 +99,14 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="refactor-menu-groups"></a>重構功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |通用|IDG_REFACTORING_COMMON|  
 |進階|IDG_REFACTORING_ADVANCED|  
   
 ### <a name="view-menu-groups"></a>檢視功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |表單程式碼|IDG_VS_VIEW_FORMCODE|  
 |瀏覽器|IDG_VS_VIEW_BROWSER|  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="project-menu-groups"></a>專案功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |其他新增|IDG_VS_PROJ_MISCADD|  
 |新增|IDG_VS_PROJ_ADD|  
@@ -138,9 +139,9 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="build-menu-groups"></a>建置功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
-|解決方式|IDG_VS_BUILD_SOLUTION|  
+|方案|IDG_VS_BUILD_SOLUTION|  
 |選取|IDG_VS_BUILD_SELECTION|  
 |特性指引最佳化|IDG_VS_PGO_SELECTION|  
 |其他|IDG_VS_BUILD_MISC|  
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="tools-menu-groups"></a>工具功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |命令列|IDG_VS_TOOLS_CMDLINE|  
 |程式碼片段|IDG_VS_TOOLS_SNIPPETS|  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="window-menu-groups"></a>視窗功能表的群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |新增|IDG_VS_WINDOW_NEW|  
 |停駐/關閉|IDG_VS_DOCKCLOSE|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="help-menu-groups"></a>說明功能表群組  
   
-|群組|ID|  
+|群組|識別碼|  
 |-----------|--------|  
 |範例|IDG_VS_HELP_SAMPLES|  
 |支援|IDG_VS_HELP_SUPPORT|  
@@ -215,7 +216,7 @@ ms.lasthandoff: 10/31/2017
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|  
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Guid 和 Id 的 Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [Guid 和 Id 的 Visual Studio 命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

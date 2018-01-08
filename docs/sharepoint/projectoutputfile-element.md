@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: edcaf6e858c2ebf6d8068fba4f9a179904ea0a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示要部署至 SharePoint 時，包含與專案項目個別專案的輸出。  
@@ -38,11 +39,11 @@ ms.lasthandoff: 10/31/2017
  **ProjectOutputFileType**  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |**ProjectId**|需要**xs: string**屬性。<br /><br /> 相依專案具有您想要包含的輸出的 GUID。 這會對應至**ProjectGuid**相依專案檔中的項目。|  
 |**ProjectPath**|需要**xs: string**屬性。<br /><br /> 相對路徑，包括相依專案具有您想要包含的輸出的專案檔案名稱。 這個路徑是相對於包含 SharePoint 專案項目之 SharePoint 專案的根資料夾。|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[檔案](../sharepoint/files-element.md)|指定要部署至 SharePoint 時，與 SharePoint 專案項目包含的檔案。|  
   
@@ -65,12 +66,12 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  

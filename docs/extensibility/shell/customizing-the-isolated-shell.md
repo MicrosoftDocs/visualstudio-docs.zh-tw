@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98cf51c539f34b3ad0a843a055603bd5480d2b24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9f5a6059d36493c93ceae249879530e49182acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-isolated-shell"></a>自訂 Isolated 的 Shell
 藉由變更 Visual Studio 使用者介面的不同層面，以及限制的命令和特殊應用程式中包含的功能，您可以自訂 Visual Studio isolated shell 應用程式。  

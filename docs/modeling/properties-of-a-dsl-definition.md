@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義的屬性
 DslDefinition 屬性會定義*網域特定領域語言*定義屬性，例如版本編號。 DslDefinition 屬性會出現在**屬性**視窗中，當您按一下圖中的開放區域*網域特定語言設計工具*。  
@@ -25,7 +26,7 @@ DslDefinition 屬性會定義*網域特定領域語言*定義屬性，例如版�
   
  DslDefinition 具有下表中的屬性：  
   
-|屬性|說明|預設|  
+|屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |存取修飾詞|決定網域類別的存取修飾詞為公用或內部。|public|  
 |自訂屬性|自訂網域類別的屬性。<br /><br /> **請注意**新增屬性使用瀏覽按鈕。|\<無 >|  
@@ -36,7 +37,7 @@ DslDefinition 屬性會定義*網域特定領域語言*定義屬性，例如版�
 |封裝命名空間|命名空間[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產生此 dsl 的封裝。|\<無 >|  
 |產品名稱|要註冊進行的產品名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產生此 dsl 的封裝。|\<無 >|  
 |注意|此網域類別相關聯的資訊。|\<無 >|  
-|說明|這個網域類別的描述。|\<無 >|  
+|描述|這個網域類別的描述。|\<無 >|  
 |顯示名稱|會產生這個網域類別設計工具中顯示的名稱。|\<無 >|  
 |說明關鍵字|此網域類別相關聯的 help 關鍵字。|\<無 >|  
 |組建|此網域特定領域語言定義累加組建編號。|0|  
@@ -44,5 +45,5 @@ DslDefinition 屬性會定義*網域特定領域語言*定義屬性，例如版�
 |次要版本|此網域特定領域語言定義累加式的次要組建編號。|0|  
 |修訂|累加版本建置此網域特定領域語言定義的數字。|0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

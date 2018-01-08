@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92462699141f9d0a1af2d9eb461caadf4ee467ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 562cff752e38cfcfa224f54b4350317b76db4bec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （隔離或整合）
 您可以建立自己的 Visual Studio 為基礎應用程式中整合或隔離模式。 在整合式模式中，許多功能，Visual Studio 可用除了您的應用程式。 在隔離模式中，您可以選擇您想要發佈和您自己的擴充功能的 Visual Studio 功能的子集。  
@@ -58,5 +59,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="additional-resources"></a>其他資源  
  如需可轉散發套件的詳細資訊，請參閱[Visual Studio 擴充性下載](http://go.microsoft.com/fwlink/?LinkID=119298)網站。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [推出 Visual Studio 擴充功能](../shipping-visual-studio-extensions.md)

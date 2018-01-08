@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>擴充 SharePoint 專案項目
   建立專案項目擴充功能，當您想要將功能加入至已安裝 Visual Studio 中的 SharePoint 專案項目的型別。 例如，您可以建立擴充功能為內建**事件接收器**或**清單定義**專案項目在 Visual Studio 中，或者您可以建立自訂專案項目類型的擴充功能。 您也可以建立適用於所有類型的 SharePoint 專案項目延伸模組。  
@@ -61,14 +62,14 @@ ms.lasthandoff: 10/31/2017
 |空元素|Microsoft.VisualStudio.SharePoint.GenericElement|  
 |清單定義<br /><br /> 從內容類型的清單定義|Microsoft.VisualStudio.SharePoint.ListDefinition|  
 |清單執行個體|Microsoft.VisualStudio.SharePoint.ListInstance|  
-|模組|Microsoft.VisualStudio.SharePoint.Module|  
+|Module|Microsoft.VisualStudio.SharePoint.Module|  
 |循序性工作流程<br /><br /> 狀態機器工作流程|Microsoft.VisualStudio.SharePoint.Workflow|  
 |網站定義|Microsoft.VisualStudio.SharePoint.SiteDefinition|  
 |視覺 Web 組件|Microsoft.VisualStudio.SharePoint.VisualWebPart|  
-|Web 組件|Microsoft.VisualStudio.SharePoint.WebPart|  
+|網頁組件|Microsoft.VisualStudio.SharePoint.WebPart|  
 |工作流程關聯表單|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [如何： 將捷徑功能表項目加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [如何： 將屬性加入 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   

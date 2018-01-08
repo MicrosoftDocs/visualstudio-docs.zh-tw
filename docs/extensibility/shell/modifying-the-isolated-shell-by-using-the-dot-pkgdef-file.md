@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37e15fd871ad55bfca2ebf725b8a814b03df6d93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f250d81ec35a2d9de074f54dded1f7ef0d76ef09
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>使用修改 Isolated 的 Shell。Pkgdef 檔案
 .Pkgdef 檔支援，您可以用來自訂 isolated 的 shell 應用程式的設定。 它會指定應用程式的電腦上安裝並啟動應用程式時，Visual Studio shell 所參考之時所建立的值。 設定會組織適用的登錄機碼為基礎的檔案中。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 -   所有可當地語系化的資源識別項使用格式"@*resourceID*"或"#*resourceID*"，其中*resourceID*是應用程式 UI 的封裝中的資源識別碼例如， `"@102"`。 應用程式 UI 封裝是 AppLocalizationPackage 設定中所參考的封裝。  
   
- 例如：  
+ 例如，套用至物件的  
   
 ```  
 "HideSolutionConcept"=dword:00000001  
@@ -68,7 +69,7 @@ ms.lasthandoff: 10/31/2017
 |CommandLineLogo|字串|在主控台視窗中執行應用程式時的橫幅文字。 這個設定會影響支援命令列建置作業的應用程式。<br /><br /> 預設值是"*companyName**solutionName* 1.0 版。"，其中*companyName*是提供安裝 Windows 時，公司和名稱*solutionName*是應用程式方案檔的名稱。|  
 |DefaultDebugEngine|字串|預設 GUID 偵錯引擎使用應用程式。<br /><br /> 注意： 空的 GUID （全部為零） 表示應用程式未指定預設偵錯引擎。 這可讓偵錯工具若要選取要使用的偵錯引擎。<br /><br /> 預設值是"{00000000-0000-0000-0000-000000000000}"。|  
 |DefaultHomePage|字串|內部的網頁瀏覽器視窗預設首頁 URL。<br /><br /> 如果**首頁**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是已安裝 Windows 時所提供的公司的 URL。|  
-|DefaultProjectsLocation|字串|預設專案資料夾的完整路徑。 例如：<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 專案位置**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。<br /><br /> 預設值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是應用程式方案檔的名稱。|  
+|DefaultProjectsLocation|字串|預設專案資料夾的完整路徑。 例如，套用至物件的<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 專案位置**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。<br /><br /> 預設值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是應用程式方案檔的名稱。|  
 |DefaultSearchPage|字串|內部的網頁瀏覽器視窗的預設搜尋網頁 URL。<br /><br /> 如果**搜尋頁面**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是"http://search.live.com"。|  
 |DefaultUserFilesFolderRoot|字串|[使用者] 資料夾中，相對於目前的使用者名稱的 [我的文件] 資料夾。<br /><br /> 預設值是應用程式方案檔的名稱。|  
 |DisableOutputWindow|dword|指出是否在 isolated 的 shell 應該將 [輸出] 視窗為已停用。<br /><br /> 如果此值設為 true，Visual Studio 不會顯示方案建置管理員輸出中的**輸出**視窗，並且隱藏**建置開始時顯示輸出視窗**中核取方塊**專案和方案**類別目錄中的**選項** 對話方塊。<br /><br /> 預設值為 false。|  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 |HideSolutionConcept|dword|建立所有獨立專案和專案預設值，來隱藏的方案和獨立專案與方案相關的命令，則為 true否則為 false。<br /><br /> 如果**永遠顯示方案**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。<br /><br /> 預設值為 false。|  
 |NewProjDlgInstalledTemplatesHdr|字串|中的 Visual Studio 的快速範本標頭的名稱**範本**清單中**新專案** 對話方塊。 這是字串或從應用程式 UI 封裝載入可當地語系化的資源識別碼。<br /><br /> 預設值是"*solutionName*安裝的範本 」，其中*solutionName*是應用程式方案檔的名稱。|  
 |NewProjDlgSlnTreeNodeTitle|字串|名稱**Visual Studio 方案**節點**專案類型**樹狀目錄中**新專案** 對話方塊。 這是字串或從應用程式 UI 封裝載入可當地語系化的資源識別碼。<br /><br /> 預設值是"*solutionName*安裝的範本 」，其中*solutionName*是應用程式方案檔的名稱。|  
-|SolutionFileCreatorIdentifier|字串|應用程式識別項，會顯示為應用程式所產生的方案檔中的第二行。 這一行會顯示建立檔案的應用程式。 依照慣例，這個值會包含名稱的應用程式和應用程式版本號碼。 例如：<br /><br /> `"SolutionFileCreatorIdentifier"="MyVSShellStub Solution File, Format Version 10.00"`<br /><br /> VSLauncher.exe 程式，也就是開啟的 Visual Studio 方案檔的預設程式，會使用這個第二行來判斷用來開啟方案檔中的 Visual Studio 版本。 應用程式需要它自己的啟動器來處理其相關聯的方案檔。 啟動器無法也使用此第二行方案檔來判斷哪個版本的應用程式中開啟方案中。<br /><br /> 注意： Visual Studio VSLauncher.exe 程式不會處理由獨立的 shell 應用程式所建立的.sln 檔案。<br /><br /> 預設值是"*solutionName* 10.00" 的格式版本 方案檔案，其中*solutionName*是應用程式方案檔的名稱。|  
+|SolutionFileCreatorIdentifier|字串|應用程式識別項，會顯示為應用程式所產生的方案檔中的第二行。 這一行會顯示建立檔案的應用程式。 依照慣例，這個值會包含名稱的應用程式和應用程式版本號碼。 例如，套用至物件的<br /><br /> `"SolutionFileCreatorIdentifier"="MyVSShellStub Solution File, Format Version 10.00"`<br /><br /> VSLauncher.exe 程式，也就是開啟的 Visual Studio 方案檔的預設程式，會使用這個第二行來判斷用來開啟方案檔中的 Visual Studio 版本。 應用程式需要它自己的啟動器來處理其相關聯的方案檔。 啟動器無法也使用此第二行方案檔來判斷哪個版本的應用程式中開啟方案中。<br /><br /> 注意： Visual Studio VSLauncher.exe 程式不會處理由獨立的 shell 應用程式所建立的.sln 檔案。<br /><br /> 預設值是"*solutionName* 10.00" 的格式版本 方案檔案，其中*solutionName*是應用程式方案檔的名稱。|  
 |SolutionFileExt|字串|方案檔名的副檔名的應用程式。 我們建議您選擇唯一的檔名的擴充功能 (not.sln)。<br /><br /> 預設值是"*solutionName*_sln"，其中*solutionName*是應用程式方案檔的名稱。|  
 |SplashScreenBitmap|字串|應用程式啟動顯示畫面的點陣圖檔案的完整路徑。<br /><br /> 預設值是"$RootFolder$\Splash.bmp"。|  
 |ThisVersionDTECLSID|字串|應用程式的 automation 物件的類別識別項 (CLSID)。<br /><br /> 應用程式自動化物件是在 Visual Studio shell automation 模型和實作應用程式的最上層物件<xref:EnvDTE._DTE?displayProperty=fullName>介面。<br /><br /> 如果應用程式自動化物件己正確登錄的 HKEY_CLASSES_ROOT\CLSID 登錄機碼下，則您可以使用[CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)函式來直接建立應用程式的執行個體。<br /><br /> Visual Studio shell 會使用這個 CLSID 來執行物件表格 (ROT) 中註冊應用程式自動化物件，使用 ACTIVEOBJECT_WEAK 旗標。 這可讓您使用[GetActiveObject](http://msdn.microsoft.com/en-us/a276e30c-6a7f-4cde-9639-21a9f5170b62)函式可擷取應用程式的執行個體的指標。 此外，如果您定義的應用程式的 automation 物件的 ProgID，然後在 Visual Studio shell 也會註冊應用程式的每個執行個體 ROT 中使用項目表單 moniker 的*progID*:*processID*，其中*progID*是應用程式的 automation 物件的 ProgID 和*processID*是該應用程式的執行個體的處理序識別碼。 例如，如果您建立 moniker，如下所示：<br /><br /> `CreateItemMoniker(L"!",`  *instanceString*`, &instanceMoniker)`<br /><br /> 其中`instanceString`是*progID*:*processID*字串。 然後您可以使用`instanceMoniker`與 ROT GetObject 函式取得的執行個體。<br /><br /> 如果省略 ThisVersionDTECLSID 設定，然後在應用程式不會公開透過元件物件模型 (COM)。 在此情況下，無法建立應用程式的執行個體呼叫[CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)函式，無法註冊 ROT 中。<br /><br /> 每個 VSPackage 版本必須有不同的 CLSID。<br /><br /> 預設值是 Visual Studio 自動化物件產生的應用程式的 GUID。|  
@@ -95,7 +96,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Common7\IDE\\\PublicAssemblies  
   
- 要加入的繫結路徑的目錄，請加入一個項目表單的"*directoryName*"=""，其中*directoryName*是絕對路徑。 例如：  
+ 要加入的繫結路徑的目錄，請加入一個項目表單的"*directoryName*"=""，其中*directoryName*是絕對路徑。 例如，套用至物件的  
   
 ```  
 [$RootKey$\BindingPaths\{00000000-0000-0000-0000-000000000000}]  
@@ -127,6 +128,6 @@ ms.lasthandoff: 10/31/2017
   
  每個套件提供功能表項目就會發佈應用程式的一部分，加入封裝的功能表項目項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂 Isolated 的 Shell](customizing-the-isolated-shell.md)   
  [.Pkgundef 檔案](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)

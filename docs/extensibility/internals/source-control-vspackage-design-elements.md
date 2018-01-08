@@ -13,16 +13,17 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c78e6a8a93a89d39434552694b5d969698bea45e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 234346aba360d70d3bbc673067d2634a5112d0f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 設計元素
 此章節的主題會概述結構 VSPackage 必須實作深層整合原始檔控制。 它也會列出的介面可以實作服務的原始檔控制 VSPackage，和原始檔控制 VSPackage 的介面和服務可以使用從其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]元件來支援其來源控制模型和功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [VSPackage 結構](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
  定義的原始檔控制 VSPackage 的結構。  
   

@@ -19,11 +19,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6254be575593056c386360aa0d7c0a83833d75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a69b93f05619b16657d045cc7ef833d468ae7a51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Isolated Shell
 Visual Studio isolated shell 可讓您建立可執行的並行的獨立應用程式與其他版本的 Visual Studio。 它是主要是用於裝載特定的工具，可以使用 Visual Studio 服務，但也有自訂的外觀和商標。 Visual Studio 功能和功能表命令的群組可以輕鬆地開啟和關閉。 應用程式標題、 應用程式圖示和啟動顯示畫面都開放完全自訂。 如需可自訂的功能，請參閱[自訂 Isolated Shell](../extensibility/customizing-the-isolated-shell.md)。  
@@ -65,5 +66,5 @@ Visual Studio isolated shell 可讓您建立可執行的並行的獨立應用程
 |Web|HTML 編輯器<br /><br /> 網頁瀏覽器<br /><br /> Web Form 設計工具<br /><br /> 網站專案<br /><br /> Web 應用程式專案|  
 |擴充性|使用 Vspackage 和 MEF 元件|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Shell (獨立模式或整合模式)](../extensibility/shell-isolated-or-integrated.md)

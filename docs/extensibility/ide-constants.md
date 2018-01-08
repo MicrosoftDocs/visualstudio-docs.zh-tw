@@ -20,18 +20,19 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817c95d511ff1b02558010f3046827684b72d4f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4a43bc68a87d00dcce90f1a948b64dd786e9b440
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-constants"></a>IDE 常數
 <xref:Microsoft.VisualStudio.VSConstants>類別會提供的常數特有的整合式的開發環境 (IDE) 和先前定義只能在標頭檔中。  
   
 ## <a name="logical-and-physical-views"></a>邏輯與實體的檢視  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式應該此值傳遞至<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法來取得**開啟**對話方塊中，在此情況下，在可能的程式碼檢視。|  
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`處理常式此值傳遞至<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法來取得**開啟**對話方塊中，在此情況下填入可能<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Debugging>偵錯檢視對應到相同的檢視為<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID_Code>。|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="editor-factory-flags"></a>編輯器 Factory 旗標  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_CLONEFILE>|過時的旗標做為第一個參數的位元結合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|  
 |<xref:Microsoft.VisualStudio.VSConstants.CEF_OPENASNEW>|組合的位元的第一個參數為<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，此方法，指出編輯器 factory 應該執行必要的修正程式。|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-errors"></a>Visual Studio 錯誤  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|介面返回非同步行為常數時在該物件中已忙碌|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|特定的 HRESULT 錯誤[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的 「 不相容的文件資料 」。|  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="visual-studio-constants"></a>Visual Studio 常數  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|特定的 HRESULT 錯誤[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和，指出 「 轉送專案 」。|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|常數的特定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"工具箱標記 」。|  
@@ -118,5 +119,5 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [用來擴充專案系統的 IDE 定義的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

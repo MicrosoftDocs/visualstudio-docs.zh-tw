@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e688d30d2367236cfcf5b2d14b36eb602832fc0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 此函式初始化原始檔控制外掛程式，並提供整合式的開發環境 (IDE) 的限制及功能。  
@@ -66,7 +67,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|原始檔控制初始化成功。|  
 |SCC_E_INITIALIZEFAILED|系統無法初始化。|  
@@ -84,7 +85,7 @@ SCCRTN SccInitialize (
   
  `lpSccCaps`參數可讓原始檔控制外掛程式位置以儲存位元旗標，指出 「 隨插即用單元的功能。 (如需完整的功能位元旗標清單，請參閱[功能旗標](../extensibility/capability-flags.md))。 比方說，如果將結果寫入到呼叫端提供的回呼函式，此外掛程式會設定功能的外掛程式計劃位元 SCC_CAP_TEXTOUT。 這會通知 IDE 來建立版本控制結果的視窗。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

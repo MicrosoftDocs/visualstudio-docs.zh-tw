@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93c32d9eaa3549529a649472550ec8268cd0f6e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cf621b3050382d79fcf44df2ac5d50d9885e03d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函式會顯示指定的檔案歷程記錄。  
@@ -58,7 +59,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功取得版本歷程記錄。|  
 |SCC_I_RELOADFILE|原始檔控制系統實際修改磁碟上的檔案 （比方說，藉由取得它的舊版本），擷取記錄時，IDE 應重新載入這個檔案。|  
@@ -77,6 +78,6 @@ SCCRTN SccHistory(
 > [!NOTE]
 >  如果原始檔控制外掛程式不支援此函式的檔案陣列，可以顯示只有第一個檔案的檔案歷程記錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

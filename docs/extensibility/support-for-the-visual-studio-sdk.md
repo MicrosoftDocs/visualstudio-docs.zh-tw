@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 595e8cec9f90e44c4260ade6c9654483513c310a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ccbbc6652fd4918c88bf8c3728b85e17e5b9213d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 支援
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
   
  個別支援要求的相關資訊，請參閱[個別的支援要求](http://go.microsoft.com/fwlink/?LinkID=82385)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [告訴我們](../ide/talk-to-us.md)

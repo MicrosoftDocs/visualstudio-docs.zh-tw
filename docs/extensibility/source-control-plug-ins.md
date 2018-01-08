@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5169b3d74a77bbb079dab5b310a3b7ebbbeff0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考章節包含完整的介面規格，可讓原始檔控制系統整合與[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會指定的語法和語意的原始檔控制外掛程式必須實作介面以各種函式和資料類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)  
  列出原始檔控制外掛程式必須遵守原始檔控制外掛程式 API 實作的函式。  
   

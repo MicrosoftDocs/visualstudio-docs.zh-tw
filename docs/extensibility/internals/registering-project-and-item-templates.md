@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型必須登錄其專案和專案項目範本目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用您的專案類型相關聯的登錄資訊來決定要顯示在**加入新的專案**和**加入新項目**對話方塊。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|名稱|類型|說明|  
+|名稱|類型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|這類專案的預設名稱。|  
 |DisplayName|REG_SZ|要從附屬 DLL 擷取的資源識別碼名稱的登錄的封裝底下。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|名稱|類型|說明|  
+|名稱|類型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|加入項目範本的資源識別碼。|  
 |TemplatesDir|REG_SZ|在對話方塊中顯示的專案項目路徑**加入新項目**精靈。|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 "SortPriority"=dword:00000064  
 ```  
   
-|名稱|類型|說明|  
+|名稱|類型|描述|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|可在其中一個常見的篩選器篩選**檔案中尋找** 對話方塊。 一般篩選器會列出未標記為常見的篩選條件之前篩選清單中。|  
 |CommonOpenFilesFilter|REG_DWORD|可在其中一個常見的篩選器篩選**開啟檔案** 對話方塊。 一般篩選器會列出未標記為常見的篩選條件之前篩選清單中。|  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
  \WizardFiles  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [精靈](../../extensibility/internals/wizards.md)   
  [當地語系化應用程式](../../ide/localizing-applications.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe4921e48c978b1073c985d4c11f11a14f3b351c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="selection-context-objects"></a>選擇內容物件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 以判斷應該顯示在 IDE 中使用全域選取範圍的內容物件。 每個視窗在 IDE 中的可以有自己的選取範圍的內容物件推送至全域範圍內容。 IDE 視窗中的值更新全域選取範圍的內容，該視窗具有焦點時。 如需詳細資訊，請參閱[意見反應給使用者](../../extensibility/internals/feedback-to-the-user.md)。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  VSPackage 處理程式碼執行活動，例如更新階層時，重新啟動工具或其他類似的工作所收到的事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
  [在 Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)   

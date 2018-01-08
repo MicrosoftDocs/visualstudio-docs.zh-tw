@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c30ed08cc4c62b033f86dfd71e2276bd8be8fbad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供擴充點，您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分語言服務功能。 這些是主要的擴充點分類：  

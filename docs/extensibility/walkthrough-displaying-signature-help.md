@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7078ee1e125ca11b0707b22b0d824cd0fc2d75b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-signature-help"></a>逐步解說： 顯示簽章說明
 簽章說明 (也稱為*參數資訊*) 時，顯示在方法簽章工具提示使用者輸入的參數清單開頭字元 （通常是左括號）。 當具有類型的參數和參數分隔符號 （通常是逗號），工具提示會更新以顯示下一個參數以粗體顯示。 您可以定義的語言服務內容中的 「 簽章說明您可以定義您自己的檔案名稱副檔名和內容類型，並顯示只要該類型的簽章說明或現有的內容類型 （例如，「 文字 」） 可以顯示 簽章說明。 本逐步解說示範如何顯示簽章說明 「 文字 」 內容類型。  
@@ -246,5 +247,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  輸入左括號之後，您應該會看到工具提示會顯示一份兩個簽章`add()`方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

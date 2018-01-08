@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cdfb4631420f6803e6434bd67b93bd713cfd1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-standard-document"></a>正在儲存標準文件
 環境會處理儲存、 另存新檔，以及儲存所有命令。 當使用者選取**儲存**，**存**，或**全部儲存**從**檔案**功能表或關閉方案，導致**儲存所有**，執行下列程序。  
@@ -60,6 +61,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法來傳輸至新階層的文件。 執行 [另存新檔] 命令的階層架構會呼叫這個方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

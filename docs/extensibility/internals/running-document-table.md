@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>執行中的文件表格
 IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 這份清單包括在記憶體中，不論是否目前正在編輯這些文件的所有開啟的文件。 文件是會保存，包括檔案的專案或主要專案檔 （例如，.vcxproj 檔案） 中的任何項目。  
@@ -30,7 +31,7 @@ IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前
 ## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目  
  執行中文件資料表包含下列項目。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |文件 moniker|字串，可唯一識別文件資料物件。 這會是專案系統所管理的檔案 (例如，C:\MyProject\MyFile) 的絕對檔案路徑。 這個字串也用於儲存在檔案系統，例如資料庫中的預存程序以外的存放區中的專案。 在此情況下，專案系統可以自創唯一的字串，它可以辨識和可能剖析以判斷如何儲存文件。|  
 |階層的擁有者|擁有文件中，所表示的階層物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。|  
@@ -59,6 +60,6 @@ IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前
   
 -   用於向專案系統要求的完整文件路徑，然後接著 RDT 中查閱項目階層或項目識別碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [RDT_ReadLock 使用量](../../extensibility/internals/rdt-readlock-usage.md)   
  [持續性與執行中的文件資料表](../../extensibility/internals/persistence-and-the-running-document-table.md)

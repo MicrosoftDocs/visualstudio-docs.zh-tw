@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>公開 Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可讓您使用自動化來源的事件。 我們建議您來源專案和專案項目的事件。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  「 AutomationProjectItemEvents"="傳回 AutomationProjectItemsEvents 物件 」  
   
-|名稱|類型|範圍|說明|  
+|名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |預設值 (@)|REG_SZ|未使用|未使用。 如需文件，您可以使用的資料欄位。|  
 |AutomationProjectsEvents|REG_SZ|事件物件的名稱。|索引鍵的名稱會相關。 如需文件，您可以使用的資料欄位。<br /><br /> 這個範例來自基本專案範例。|  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
  AutomationEvents.h 和 AutomationEvents.cpp 包含宣告和實作下表中的類別。  
   
-|類別|說明|  
+|類別|描述|  
 |-----------|-----------------|  
 |`CAutomationEvents`|實作事件根物件，擷取自`DTE.Events`物件。|  
 |`CProjectsEventsContainer` 和 `CProjectItemsEventsContainer`|實作會引發對應的事件的事件來源物件。|  
@@ -112,6 +113,6 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
   
  事件物件會從相同的中央位置，擷取`DTE.Events`物件。 如此一來，所有事件物件會都群組在一起，讓使用者不必瀏覽整個物件模型來尋找特定的事件。 這也可讓您提供您特定的 VSPackage 物件，而不需要您實作您自己的全系統事件的程式碼。 不過，一般使用者，使用者必須尋找事件，以供您`ProjectItem`介面，不立即清除該事件物件擷取的位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [VSSDK 範例](http://aka.ms/vs2015sdksamples)

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 935ea7d9fde2872c952f79afaa95058e9f18d0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>導覽列的舊版語言服務的支援
 導覽列頂端的編輯器檢視會顯示檔案中的類型和成員。 類型會以左側下拉式清單中，而成員就會顯示在右側下拉式清單。 當使用者選取類型時，將插入號會放在類型的第一行。 當使用者選取成員時，會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。  

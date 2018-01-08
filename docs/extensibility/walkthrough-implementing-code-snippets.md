@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc6fbfee6ab64cb50c03c55604db969e8ffc2d9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a9ef9fcce1a02820b2855b6e39c5da2d3a7cc48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說： 實作程式碼片段
 您可以建立程式碼片段，及它們包含在編輯器延伸模組，以便擴充功能的使用者可以將它們加入自己的程式碼。  

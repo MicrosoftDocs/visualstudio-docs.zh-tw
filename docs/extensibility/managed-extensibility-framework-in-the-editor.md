@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4677b10d54a6c591c2f60e4c0b1f2978ad49a0ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c13b1a4e1b183b3a6f4b54f58cca3593ce5c7bb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>在編輯器中的 managed 的 Extensibility Framework
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建立。 您可以建立 MEF 元件，以便擴充編輯器，和您的程式碼可以使用編輯器元件以及。  
@@ -104,5 +105,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 5.  當您編譯組件，將它放入...您的 Visual Studio 安裝 \Common7\IDE\Components\ 資料夾。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

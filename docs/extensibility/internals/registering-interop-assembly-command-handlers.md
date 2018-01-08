@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f359c8bcad7bdc32b481fa6fc30a96a8669129f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使整合式的開發環境 (IDE) 適當地路由傳送它的命令。  
@@ -53,7 +54,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
  下表描述的欄位\<*資源資訊*>。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |\<*資源 DLL 路徑*>|這是資源包含功能表資源 DLL 的完整路徑，或保留為空白，表示 VSPackage 的資源 DLL 使用 （如同在其中註冊自己的 VSPackage 的封裝子機碼中指定）。<br /><br /> 它是可將此欄位保留空白。|  
 |\<*功能表資源識別碼*>|這是資源識別碼`CTMENU`資源，因為從編譯的所有 UI 項目包含 vspackage [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。|  
@@ -69,6 +70,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [使用 Interop 組件的命令和功能表](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

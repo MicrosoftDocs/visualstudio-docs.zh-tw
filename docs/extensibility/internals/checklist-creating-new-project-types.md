@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06b6dc2fab4158f36126b6509909dd0db6fd7125
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea9c2ebd295fe463192c50da402240e0b1df1304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-new-project-types"></a>檢查清單： 建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  建立 Microsoft Installer (.msi) 檔案安裝您的 Vspackage。 如需詳細資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)，[註冊專案類型](../../extensibility/internals/registering-a-project-type.md)，和[Vspackage](../../extensibility/internals/vspackages.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [建立專案類型的時機](../../extensibility/internals/when-to-create-project-types.md)   
  [建立專案類型](../../extensibility/internals/creating-project-types.md)

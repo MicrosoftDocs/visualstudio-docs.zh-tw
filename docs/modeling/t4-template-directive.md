@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6bb99e6ef2c4a898285e4d7dae503aec0fc7d955
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文字範本的開頭通常是 `template` 指示詞，用於指定範本的處理方式。 文字範本和其所包含之任何檔案中的 template 指示詞不得超過一個。  
@@ -80,7 +81,7 @@ hostspecific="true"
   
  由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它不適用於 「[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：  
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:   
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -115,7 +116,7 @@ Content of myFile is:
   
  Language 屬性中指定的語言 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) 要用於陳述式及運算式區塊中的原始程式碼。 從中產生輸出的中繼程式碼檔會使用這個語言。 這個語言與範本產生的語言無關，它可以是任何種類的文字。  
   
- 例如：  
+ 例如:   
   
 ```vb  
 <#@ template language="VB" #>  

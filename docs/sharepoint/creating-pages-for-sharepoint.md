@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bef1fce26bbd9ea57073273f462ec484a46a647b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7baa368e34b7b721e7b41c617c6ce6e89bb5f980
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-pages-for-sharepoint"></a>建立 SharePoint 的網頁
   您可以建立應用程式頁面、 網站頁面、 主版頁面和 SharePoint 網站的頁面配置。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何新增應用程式頁面： 會合併與 SharePoint 主版頁面的.aspx 內容。|  
 |[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|示範如何建立 SharePoint 網站執行的 ASP.NET 網頁。|  

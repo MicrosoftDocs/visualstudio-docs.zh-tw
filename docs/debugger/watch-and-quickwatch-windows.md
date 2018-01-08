@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>使用監看式和 Visual Studio 中的 快速監看式視窗變數上設定監看式
 當您偵錯時，您可以使用**監看式**(**偵錯 > Windows > 監看式 > 監看式 （1、 2、 3、 4）**) 和**快速監看式**(以滑鼠右鍵按一下變數 / **偵錯 > 快速監看式**) windows 監看變數和運算式。  其差異在於 [監看式]  視窗可以顯示數個變數，而 [快速監看式]  視窗一次僅可顯示單一變數。
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>動態檢視和監看式視窗  
  某些指令碼語言 （例如 JavaScript 或 Python） 使用動態或[鴨子輸入](https://en.wikipedia.org/wiki/Duck_typing)，和.NET 語言 （4.0 或更新版本） 支援物件，不容易觀察使用一般的偵錯視窗中，因為它們可能無法顯示的執行階段屬性和方法。  
   
- 當 [監看式] 視窗會顯示從實作的類型建立的物件[IDynamicMetaObjectProvider 介面](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7)，偵錯工具會加入一個特殊**動態檢視**節點**自動變數**顯示。 此節點會顯示動態物件的動態成員，但不允許編輯成員值。  
+ 當 [監看式] 視窗會顯示從實作的類型建立的物件[IDynamicMetaObjectProvider 介面](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7)，偵錯工具會加入一個特殊**動態檢視**節點**自動變數**顯示。 此節點會顯示動態物件的動態成員，但不允許編輯成員值。  
   
  如果您以滑鼠右鍵按一下 [動態檢視]  的任何子系，並選擇 [加入監看式] ，偵錯工具會插入新的監看變數，其可將物件轉換成動態物件。 換句話說， **object Name** 會變成 (**(dynamic)object).Name**。  
   
@@ -248,5 +249,5 @@ public class Program
   
  [動態檢視]  也強化了 COM 物件的偵錯體驗。 當偵錯工具發現包裝在 **System.__ComObject**中的 COM 物件時，它會為該物件新增 [動態檢視]  節點。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具視窗](../debugger/debugger-windows.md)

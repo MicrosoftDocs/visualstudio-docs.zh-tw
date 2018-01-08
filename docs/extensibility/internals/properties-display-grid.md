@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35b36c357c9b98d81627eea0d511b0b4fd49f693
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88720010c178fb1ca3a4c2425002f5f34e26e777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-display-grid"></a>屬性顯示格線
 **屬性**視窗會顯示格線中的欄位。 左側資料行包含的屬性名稱。右邊的資料行包含的屬性值。  
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
   
 -   按一下省略符號 （...） 按鈕，就會顯示使用者可以從中選取 （例如色彩選擇器或字型 清單中） 的屬性值的清單。 <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>提供這些值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)

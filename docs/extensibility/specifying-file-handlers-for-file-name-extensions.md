@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5833285a3d9ce9df02dc0359379ea623054588a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定副檔名的檔案處理常式
 有數種方式可判斷應用程式會處理具有特定副檔名的檔案。 OpenWithList 和 OpenWithProgids 動詞命令是兩種方式指定之副檔名的登錄項目下的檔案處理常式。  
@@ -79,6 +80,6 @@ HKEY_CLASSES_ROOT\
   
  如果舊 ProgID 具有與它相關聯的動詞命令，則這些動詞命令也會出現在**開啟***產品名稱*快顯功能表中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [關於檔案名稱副檔名](../extensibility/about-file-name-extensions.md)   
  [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

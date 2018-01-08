@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f863377f326dd7bd62381a34c6236d938b11505
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 93eb993877d464f4303e0b49dc7219425c1a5f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>使用修改 Isolated 的 Shell。Pkgundef 檔案
 您可以修改.pkgundef 来排除的檔案指定的登錄項目從獨立的 shell 應用程式。 一般而言，第一次的電腦，啟動應用程式的 Visual Studio shell 將複製現有的 Visual Studio 登錄項目到應用程式的根登錄機碼。 這包括任何參考目前已安裝的 Vspackage。  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
   
  傳送應用程式的.pkgundef 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 功能的封裝 Guid](package-guids-of-visual-studio-features.md)   
  [自訂 Isolated Shell](customizing-the-isolated-shell.md)

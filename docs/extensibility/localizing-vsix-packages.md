@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a8bb9332b30e5dbc410bdacea3800713b25b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-vsix-packages"></a>當地語系化 VSIX 封裝
 
@@ -60,7 +61,7 @@ Extension.vsixlangpack 檔會遵循[VSIX 語言組件的結構描述 2.0](../ext
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>說明
+### <a name="description"></a>描述
 
 下列範例會顯示相關部分 Extension.vsixmanifest 檔案，以及對應 Extension.vsixlangpack 檔案西班牙文。 如果目標電腦的 Visual Studio 地區設定設定為西班牙文語言組件中的值會取代從資訊清單的值。
 
@@ -102,9 +103,9 @@ Extension.vsixlangpack 檔會遵循[VSIX 語言組件的結構描述 2.0](../ext
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[VSIX LanguagePack 結構描述 2.0 參考](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|VSIX 語言套件描述.vsix 部署檔案的當地語系化資訊。|
 |[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)|Vsix 套件的內容與結構描述。|

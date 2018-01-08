@@ -12,27 +12,30 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂專案與 Visual Studio 2017 的項目範本
-從 Visual Studio 2017 開始，Visual Studio 會變更其探索專案和項目已由.vsix 或.msi 安裝的範本的方式。 如果您擁有使用自訂專案或項目範本的擴充功能，您需要更新您的擴充功能。 本主題說明您必須。  
-  
- 這項變更會影響只有 Visual Studio 2017。 它不會影響舊版的 Visual Studio。  
-  
- 如果您想要建立專案或項目範本為 VSIX 擴充功能的一部分，請參閱[建立自訂專案與項目範本](../extensibility/creating-custom-project-and-item-templates.md)。  
-  
-## <a name="template-scanning"></a>掃描的範本  
- 先前， **devenv /setup**或**devenv /installvstemplates**掃描本機的磁碟，以便尋找專案和項目範本。 從 Preview 4 開始，將會執行掃描僅針對使用者層級位置 (**%USERPROFILE%\Documents\\< Visual Studio 版本\>\My 匯出範本\\**) 所用的所產生的範本**檔案 > 匯出範本**命令。  
-  
- 其他 （非使用者） 的位置，您必須包含指定的位置和範本的其他特性 manifest(.vstman) 檔案。 .Vstman 檔案會產生以及用於範本的.vstemplate 檔案。 如果您安裝您使用.vsix 的擴充功能，您可以完成這需要重新編譯的 Visual Studio 2017 中的擴充功能。 但如果您使用.msi 時，您需要以手動方式進行變更。 如需您需要如何進行這些變更的清單，請參閱**升級至與安裝擴充功能。MSI**本主題稍後。  
+
+從 Visual Studio 2017 開始，Visual Studio 會探索已由.vsix 或.msi 安裝在不同的方式與舊版 Visual Studio 中的專案和項目範本。 如果您擁有使用自訂專案或項目範本的擴充功能，您需要更新您的擴充功能。 本主題說明您必須。
+
+這項變更會影響只有 Visual Studio 2017。 它不會影響舊版的 Visual Studio。
+
+如果您想要建立專案或項目範本為 VSIX 擴充功能的一部分，請參閱[建立自訂專案與項目範本](../extensibility/creating-custom-project-and-item-templates.md)。
+
+## <a name="template-scanning"></a>掃描的範本
+
+在舊版的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**掃描本機的磁碟，以便尋找專案和項目範本。 從 Visual Studio 2017 開始，會執行掃描僅針對使用者層級的位置。 預設使用者層級位置是**%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 所產生的範本，這個位置用**專案** > **匯出範本...**命令時，如果**自動將範本匯入至 Visual Studio**精靈中選取選項。
+
+其他 （非使用者） 的位置，您必須包含指定的位置和範本的其他特性 manifest(.vstman) 檔案。 .Vstman 檔案會產生以及用於範本的.vstemplate 檔案。 如果您安裝您使用.vsix 的擴充功能，您可以完成這需要重新編譯的 Visual Studio 2017 中的擴充功能。 但如果您使用.msi 時，您需要以手動方式進行變更。 如需您需要如何進行這些變更的清單，請參閱**升級至與安裝擴充功能。MSI**本主題稍後。  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何更新 VSIX 擴充功能與專案或項目範本  
- 此程序說明如何以 Visual Studio 2017
-1.  在 Visual Studio 2017 開啟的方案。 系統會要求您升級的程式碼。 按一下 [確定]。  
+
+1.  在 Visual Studio 2017 開啟的方案。 系統會要求您升級的程式碼。 按一下 [確定 **Deploying Office Solutions**]。  
   
 2.  在升級完成之後，您可能需要變更安裝目標的版本。 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案，然後選取**安裝目標**] 索引標籤。如果**版本範圍**欄位是**[14.0]**，按一下 [**編輯**並將它變更為包含 Visual Studio 2017。 例如，您可以將它設定為**[14.0,15.0]**安裝擴充功能，Visual Studio 2015 或 Visual Studio 2017，或**[15.0]**只 Visual Studio 2017 來安裝它。  
   
@@ -176,41 +179,19 @@ ms.lasthandoff: 12/14/2017
   
  如需.vstman 檔案的不同元素的詳細資訊，請參閱[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>安裝擴充功能的升級。MSI  
- 有些 msi 延伸模組會將範本部署到一般的範本位置，如下所示：  
-  
--   **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**  
-  
--   **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本 >**  
-  
- 如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含在擴充功能安裝程式。 您應該比較上面所列的.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看您要包含的項目  
-  
- 您應該建立個別的專案和項目範本的資訊清單，它們應該指向根範本目錄指定上述。 您應該建立一個資訊清單，每個擴充功能和地區設定。  
-  
-## <a name="troubleshooting-template-installation"></a>範本安裝疑難排解  
- 如果您執行部署您的專案或項目範本的問題，您可以啟用診斷記錄。  
-  
-1.  建立 Common7\IDE\CommonExtensions 資料夾中的 pkgdef 檔案安裝 (例如 C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) 具有下列內容：  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>安裝擴充功能的升級。MSI
 
-2. 藉由搜尋它，在 Windows search 中開啟 「 開發人員命令提示字元 」 安裝，然後執行`devenv /updateConfiguration`。
+有些 msi 延伸模組會將範本部署到一般的範本位置，如下所示：
 
-3.  啟動 Visual Studio，然後啟動新的專案和新的項目對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在**%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （執行個體識別碼對應至您的 Visual Studio 執行個體的安裝識別碼）。 每個範本樹狀目錄中初始化會將項目附加至這個記錄檔。  
-  
- 記錄檔包含下列資料行：  
-  
--   **FullPathToTemplate**，其中包含下列值：  
-  
-    -   1 代表資訊清單為基礎的部署  
-  
-    -   0 代表磁碟為基礎的部署  
-  
--   **TemplateFileName**  
-  
--   其他範本的內容
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**
 
-注意： 若要停用記錄，請移除 pkgdef 檔案或變更的值`EnableTemplateDiscoveryLog`至`dword:00000000`並執行`devenv /updateConfiguration`一次。
+- **\<Visual Studio 安裝目錄 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 專案/項目範本 >**
+
+如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含在擴充功能安裝程式。 比較上面所列的.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+
+您應該建立個別的專案和項目範本的資訊清單，它們應該指向根範本目錄指定上述。 建立一個資訊清單，每個擴充功能和地區設定。
+
+## <a name="see-also"></a>另請參閱
+
+[疑難排解範本探索](troubleshooting-template-discovery.md)  
+[建立自訂專案與項目範本](creating-custom-project-and-item-templates.md)

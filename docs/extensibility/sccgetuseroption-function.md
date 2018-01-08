@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 此函式會擷取各種不同的使用者特定的選項。  
@@ -46,7 +47,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功擷取選項。|  
 |SCC_E_OPNOTSUPPORTED|不支援選項。|  
@@ -55,10 +56,10 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>備註  
  此命令支援下列選項：  
   
-|使用者選項|說明|  
+|使用者選項|描述|  
 |-----------------|-----------------|  
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|決定使用者是否想要簽出本機版本的檔案。 `lpVal`指派`SCC_USEROPT_COLV_YES`（使用者想要簽出本機檔案） 或`SCC_USEROPT_COLV_NO`。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [錯誤碼](../extensibility/error-codes.md)

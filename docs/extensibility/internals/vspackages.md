@@ -13,16 +13,17 @@ caps.latest.revision: "45"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ccd78a87f4c3d2d7ef178c939a22afb24e42d75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe656b22537276f15a1b3cebaaa6890ed4a87735
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackages"></a>VSPackages
 Vspackage 是可擴充的軟體模組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI 項目、 服務、 專案、 編輯器和設計工具提供整合式的開發環境 (IDE)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  說明如何指定 Visual Studio shell 的 VSPackage 位置。  
   

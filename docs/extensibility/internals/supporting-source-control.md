@@ -13,16 +13,17 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-source-control"></a>支援的原始檔控制
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援的檔案簽出、 簽入和其他原始檔控制作業，您的專案或編輯器。 做為原始檔控制用戶端，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設計來與原始檔控制封裝中，例如互動[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，可保存、 版本控制和一組動態定義檔案的存取控制等機能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [原始檔控制套件的模型](../../extensibility/internals/model-for-source-control-packages.md)  
  描述專案型別必須實作的介面來支援原始檔控制。  
   

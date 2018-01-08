@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e9644353430fa70d6876ab3210ad340ac30312d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3a9edc754070c7bb0aabdc76b2d52efd32a453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-commands-available"></a>提供命令使用
 當多個 Vspackage 加入至 Visual Studio 時，使用者介面 (UI) 可能會變得過擁擠命令。 您可以設計您的封裝，以協助降低這個問題，如下：  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]監視所產生的使用者動作，例如載入專案，或編輯要建置變更。 發生變更時，會自動修改 IDE 的外觀。 下表顯示四個主要的內容，IDE 的變更，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]監視器。  
   
-|內容的型別|說明|  
+|內容的型別|描述|  
 |---------------------|-----------------|  
 |使用中的專案類型|對於大部分的專案類型，這`GUID`值時的 VSPackage 實作專案 GUID 相同。 不過，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案使用 專案類型`GUID`做為值。|  
 |使用中視窗|一般而言，這是最後一個使用中的文件視窗所建立的索引鍵繫結的目前 UI 內容。 不過，它也可能是有一個索引鍵繫結資料表，類似於內部的 Web 瀏覽器工具視窗。 多個索引標籤的文件視窗 （例如 HTML 編輯器） 如每個索引標籤上會有不同的命令內容`GUID`。|  
@@ -147,7 +148,7 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MenuCommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Vspackage 中的命令路由](../../extensibility/internals/command-routing-in-vspackages.md)   

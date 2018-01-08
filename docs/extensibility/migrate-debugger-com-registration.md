@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregg-miskelly
 ms.author: greggm
 manager: ghogen
-ms.openlocfilehash: 06bfef5f1b4d67cb691a74b953296b1ab057d62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: greggm
+ms.openlocfilehash: 737c970555fce8f3cdac118421eddb09f52d7c53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>移轉 COM 類別註冊 64 位元偵錯工具
 

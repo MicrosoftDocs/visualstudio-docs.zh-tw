@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb3bcca8c56ebefa665e44384df0751e71f6591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理並行的檔案關聯
 如果您的 VSPackage 提供的檔案關聯，您必須決定如何處理的並行安裝所在的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該被叫用以開啟檔案。 不相容的檔案格式複合問題。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
     ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>判斷最新版本的 Visual Studio 的 CustomAction 資料表資料列  
   
-    |動作|類型|來源|目標|  
+    |動作|類型|原始程式檔|目標|  
     |------------|----------|------------|------------|  
     |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
     |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
   
 -   提供組態選項的頁面或對話方塊方塊，可讓使用者選擇檔案關聯，以便回收遺失的關聯。 指示使用者解除安裝後執行它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [註冊檔案名稱擴充功能-並存部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

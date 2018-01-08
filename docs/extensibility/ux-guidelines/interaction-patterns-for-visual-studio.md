@@ -12,21 +12,22 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e084ace914f65a9e97307f0a70d6c5e2211be55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31a3bff68a15603c8d40818fa2d826da64421dad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>適用於 Visual Studio 的互動模式
-## <a name="overview"></a>概觀  
+## <a name="overview"></a>總覽  
  設計模式中，在一般情況下，是可以套用在解決問題的相似的條件約束一組特定的情況下設計的核心。 功能和系統設計師做為起始點，然後可適用於其特定的情況下使用這些設計模式。  
   
  Visual Studio 的建置新的功能時，應考量的一般互動模式的程式庫。 有兩個核心內容，我們設計模式： Visual Studio 用戶端 (devenv) 與 Visual Studio Online。 針對某些設計問題，沒有都適用於所有情況下的常見模式。 在許多情況下，不過，解決方案可能會不同，要呈現在瀏覽器和裝載於用戶端應用程式的 ui。  
   
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio 用戶端模式類型  
   
-|模式類型|說明|範例|  
+|模式類型|描述|範例|  
 |------------------|-----------------|--------------|  
 |**應用程式層級模式**|應用程式，判斷或顯示應用程式內容，並包含複合和控制項模式，其中通用的高層級模式|工具視窗<br />文件視窗|  
 |**複合模式**|常見的模式，可能會跨越多個應用程式模式或由數個不同的組態中的控制項所組成的可辨識的模式|檢視切換<br />-清單產生器<br />顯示資料<br />-通知<br />-驗證<br />選取模型|  

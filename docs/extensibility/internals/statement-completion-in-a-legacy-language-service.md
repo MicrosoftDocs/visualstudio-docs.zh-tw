@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c694295c3456accc8d2c1cd3b0a1ec20f59343c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>在舊版語言服務中的陳述式完成
 陳述式完成是語言服務用來協助完成語言關鍵字或項目，在開始核心編輯器中輸入使用者的程序。 本主題討論陳述式完成的運作方式，以及如何實作語言服務中。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
  在編輯器中輸入該觸發程序時，特別是，文字緩衝區 — 語言服務然後呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>方法。 這會導致啟動 UI，讓使用者可以選擇從陳述式完成的候選項目編輯器。 此方法需要您實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>和<xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags>做為參數的旗標。 捲動清單方塊中顯示的完成項目清單。 當使用者繼續輸入，在清單方塊選取項目會更新以反映最符合的最新的字元類型。 核心編輯器實作陳述式完成的 UI，但語言服務必須實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>介面來定義一組候選陳述式的完成項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [攔截舊版語言服務命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

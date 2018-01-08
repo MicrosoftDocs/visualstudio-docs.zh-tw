@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說： 在 [開始] 頁面上儲存使用者設定
 您可以保存使用者設定起始頁。 依循這個逐步解說，您可以建立將設定儲存至登錄中，當使用者按一下按鈕時，並接著會擷取該設定，每次在開始頁面載入的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設起始頁 XAML 會呼叫該控制項，您不必修改本身的起始頁。  
@@ -175,7 +176,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**環境**] 節點，按一下 [**啟動**，然後在**自訂起始頁**清單中，選取**[安裝擴充功能] 儲存我的設定啟動頁面**.  
   
-     按一下 [確定]。  
+     按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  如果它已開啟，然後在關閉起始頁**檢視**功能表上，按一下 **起始頁**。  
   
@@ -202,6 +203,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="next-steps"></a>後續步驟  
  您可以修改這個使用者控制項，以儲存並擷取任何數目的自訂設定來取得及設定使用不同的值，從不同的事件處理常式`SettingsStore`屬性。 只要您使用不同`propertyName`參數，每次呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>，值不會覆寫彼此的登錄中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
  [將 Visual Studio 命令加入至起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

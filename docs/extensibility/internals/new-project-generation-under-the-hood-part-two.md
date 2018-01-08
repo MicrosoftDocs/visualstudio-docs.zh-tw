@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生： 在幕後，第二部分
 中[產生新的專案： 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新專案**對話方塊方塊會填入。 讓我們假設您已選取**Visual C# Windows 應用程式**、 填寫**名稱**和**位置**文字方塊中，並按下 [確定]。  
@@ -64,7 +65,7 @@ namespace Simple
 }  
 ```  
   
- 如需範本參數的完整清單，請參閱[範本參數](../../ide/template-parameters.md)。  
+ 如需完整的範本參數清單，請參閱[範本參數](../../ide/template-parameters.md)。  
   
 ## <a name="a-look-inside-a-vstemplate-file"></a>深入了解。VSTemplate 檔案  
  基本的.vstemplate 檔案具有這種格式  
@@ -156,6 +157,6 @@ namespace Simple
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產生新專案︰深入探討，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [ MSBuild](../../msbuild/msbuild.md)

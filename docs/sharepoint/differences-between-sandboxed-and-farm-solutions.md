@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c13d27f8c79f1bc638741d8877ac95a0dff4885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>沙箱化方案與伺服器陣列方案之間的差異
   當您編譯 SharePoint 方案時，將部署至 SharePoint 伺服器，並偵錯工具附加至偵錯。 沙箱化方案屬性的設定取決於用於方案進行偵錯的程序： 沙箱化方案或伺服器陣列方案。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]附加偵錯工具，才能執行目前的站台的 W3WP 或 SPUCWorkerProcess 處理序。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]也會將附加 managed COM 加號和工作流程偵錯引擎。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)  

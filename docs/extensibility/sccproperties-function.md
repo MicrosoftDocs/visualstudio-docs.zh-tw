@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccproperties-function"></a>SccProperties 函式
 此函式會顯示檔案或專案的原始檔控制屬性。  
@@ -46,7 +47,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功顯示內容。|  
 |SCC_I_RELOADFILE|在版本控制系統已修改檔案內容中，因此 IDE 應重新載入此檔案。|  
@@ -60,5 +61,5 @@ SCCRTN SccProperties (
   
  屬性由原始檔控制外掛程式所定義，而且可能會有所不同外掛程式外掛程式。 如果外掛程式可讓使用者變更原始檔控制的內容檔案，它應該傳回`SCC_I_RELOAD`來表示此檔案或專案需要重新載入在 IDE。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

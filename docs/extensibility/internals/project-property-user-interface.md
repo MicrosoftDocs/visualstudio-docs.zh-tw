@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 36d8f6afebf09d4efd176ba204dcc6f485a56124
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d967cec28a50948a9577336b886376b9cfe0040
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-property-user-interface"></a>專案屬性的使用者介面
 專案子類型可以使用專案中的項目**屬性頁**對話方塊所提供的基底的專案，隱藏或做唯讀控制項和整個網頁提供，或將專案子類型特有的頁面加入至**屬性頁** 對話方塊。  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
   
  新加入的專案子類型的屬性頁的基底專案實作散發專案設定瀏覽的物件。 這個專案設定瀏覽物件支援 Automation 擴充項。 如需有關 AutomationExtenders 的詳細資訊，請參閱[實作和使用 Automation 擴充項](http://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356)。 專案子類型呼叫所實作的屬性頁<xref:EnvDTE.Project.Extender%2A>擷取他們自己專案子類型組態瀏覽物件擴充的基底的專案設定瀏覽的物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:EnvDTE.IFilterProperties>   
  [屬性頁對話方塊](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

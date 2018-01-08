@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面項目
 VSPackage 可以加入使用者介面 (UI) 項目，例如，功能表、 工具列和工具視窗，來透過.vsct 檔的 Visual Studio。  
@@ -191,7 +192,7 @@ priority="0x0100" type="Menu">
 ### <a name="parenting"></a>父代  
  下列規則可控制如何項目可以呼叫另一個做為其父系的項目。  
   
-|項目|在本節中的命令資料表定義|可能包含 (父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （稱為父代）|  
+|元素|在本節中的命令資料表定義|可能包含 (父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （稱為父代）|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |群組|[群組項目](../../extensibility/groups-element.md)、 IDE、 其他 Vspackage|功能表上，為群組，請在項目本身|功能表、 群組和命令|  
 |功能表|[功能表項目](../../extensibility/menus-element.md)、 IDE、 其他 Vspackage|1 到 *n* 群組|0 到 *n* 群組|  
@@ -302,5 +303,5 @@ priority="0x0100" type="Menu">
   
 -   若要讓特定的 UI 項目顯示在 IDE 中，您必須實作一或多個介面，或撰寫一些程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

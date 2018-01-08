@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e638031d1c675b21e7d0bd8a8fdd8d1f83a5d05f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f830880b936fbc70d0bdc0e103c4b128570b74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>部署網域指定的語言方案
 在您自己的電腦或其他電腦上，您可以安裝的網域特定定義域語言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必須安裝在目標電腦上。  

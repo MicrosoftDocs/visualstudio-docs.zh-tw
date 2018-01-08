@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>設定選項的概觀
 中的專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是搭配命名集的屬性、 通常編譯器參數和檔案位置中所述的組建類型。 根據預設，新的方案包含兩個組態，偵錯和發行。 使用預設值，或修改以符合您特定的方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果使用只能在一個設定，該組態會對應到所有的方案組態。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
  組態物件的介面和在上圖中的組態提供者物件介面上的進一步資訊，請參閱[專案組態物件](../../extensibility/internals/project-configuration-object.md)。 此外，[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)的組態產生器及建置相依性物件的介面，提供詳細資訊和[管理部署的專案組態](../../extensibility/internals/project-configuration-for-managing-deployment.md)進一步描述附加至的組態部署器和部署相依性物件的介面。 最後，[專案組態輸出](../../extensibility/internals/project-configuration-for-output.md)描述輸出群組和輸出物件的介面，並使用屬性頁，來檢視和設定組態相關的屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [方案組態](../../extensibility/internals/solution-configuration.md)

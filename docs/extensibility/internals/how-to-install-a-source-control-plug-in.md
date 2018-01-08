@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab02b65e4a40f15da857038a45d9bcc2b88b1b83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包括三個步驟：  
@@ -119,5 +120,5 @@ ms.lasthandoff: 10/31/2017
   
  如果這些條件都符合，就可以呼叫支援 1.2 和 1.3 版的新函數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

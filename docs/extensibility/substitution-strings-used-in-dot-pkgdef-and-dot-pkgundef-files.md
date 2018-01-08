@@ -14,18 +14,19 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220e6d9bb9d360a51f9a83b5d0b4420cf64aef91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b23876c454a447f9a7e47d866f81208b813a17ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>中所使用的替代字串。Pkgdef 和。Pkgundef 檔案
 您可以使用列在下面.pkgdef 的替代字串，您可為您的 Visual Studio 定義.pkgundef 檔案獨立 shell 應用程式。  
   
 ## <a name="substitution-strings"></a>替代字串  
   
-|字串|說明|  
+|String|描述|  
 |------------|-----------------|  
 |$=*RegistryEntry*$|值*RegistryEntry*項目。 如果登錄項目字串會以反斜線 (\\)，則會使用預設值的登錄子機碼。 例如，替代字串 $= 的 HKEY_CURRENT_USER\Environment\TEMP$ 會擴大到目前使用者的暫存資料夾。|  
 |$AppName $|傳遞至 AppEnv.dll 進入點的應用程式限定的名稱。 限定的名稱是由應用程式名稱、 底線和應用程式的自動化物件，也會記錄為 ThisVersionDTECLSID 設定專案.pkgdef 檔中的值的類別識別項 (CLSID) 所組成。|  

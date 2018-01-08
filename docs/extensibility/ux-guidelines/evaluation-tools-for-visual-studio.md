@@ -12,17 +12,18 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04a2d2c404f60712169639a73ff8d138fdd9323a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7026a14a4880a47f415f5aecd1c15f8a2423d86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>評估 Tools for Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 的技術檢查清單  
  您可以使用這份檢查清單來評估使用者經驗的視覺效果且互動的詳細資料的品質。  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
   
 -   請確認所有命令，會都導致告知使用者，其命令有見證人的意見反應。  
   

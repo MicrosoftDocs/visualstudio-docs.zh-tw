@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1： 加入開啟從原始檔控制
 這個原始檔控制外掛程式測試區域涵蓋放在原始檔控制的專案或解決方案，並擷取原始檔控制。  
@@ -86,5 +87,5 @@ ms.lasthandoff: 10/31/2017
 |將加入單一專案的方案，在單一專案|1.建立單一專案的方案。<br />2.將方案加入原始檔控制。<br />3.關閉方案。<br />4.建立第二個空白方案。<br />5.從原始檔控制加入先前受控制的方案 (**檔案**，**原始檔控制**，**加入的專案，從原始檔控制**)。|加入的專案會出現在**方案總管 中**和簽入。|  
 |將加入至方案，方案加入原始檔控制選取範圍|1.建立方案與專案。<br />2.只將方案加入至原始檔控制選項。 如果這個步驟成功，請繼續下一個步驟。<br />3.關閉方案。<br />4.建立新的方案。<br />5.從原始檔控制加入先前受控制的方案 (**檔案**，**原始檔控制**，**加入的專案，從原始檔控制**)。|`Result from Step 2:`<br /><br /> 專案不在原始檔控制中。<br /><br /> `Result from Step 5:`<br /><br /> 如果第一個方案具有方案項目，它們無法加入從原始檔控制，因此它們不會出現。<br /><br /> 從第一個方案的專案會顯示為無法使用。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

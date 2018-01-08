@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 指定本機檔案的清單，此函式，判斷哪些檔案會從原始程式碼控制資料庫中對應的版本不同。  
@@ -54,10 +55,10 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|作業已順利完成。|  
 |SCC_UNSPECIFIEDERROR|發生一般錯誤。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

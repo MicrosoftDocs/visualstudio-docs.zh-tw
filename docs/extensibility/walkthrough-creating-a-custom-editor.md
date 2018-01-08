@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74408fd88a594503c2a585cd0edfa86f28ed596e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9e8ea75cb96b36f885a55cbf9f174394379dc05a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>逐步解說： 建立自訂編輯器
 VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPackage 專案範本已不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -48,5 +49,5 @@ VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPacka
   
      此編輯器支援剪下和貼上、 尋找和取代和開啟負載作業。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

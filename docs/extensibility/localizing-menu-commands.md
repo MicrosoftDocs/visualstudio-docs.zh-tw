@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77bd698149ca4e73b462fc3ada9256ba5911177e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-menu-commands"></a>當地語系化 功能表命令
 您可以提供當地語系化的文字的功能表和工具列命令藉由建立當地語系化的.vsct 檔案，並為您的 VSPackage，然後更新專案檔的變更當地語系化的.resx 檔。  
@@ -156,7 +157,7 @@ ms.lasthandoff: 10/31/2017
   
      這樣會建立主要組件，以及每種語言的資源組件。 當地語系化的部署程序的資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommand 對比OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

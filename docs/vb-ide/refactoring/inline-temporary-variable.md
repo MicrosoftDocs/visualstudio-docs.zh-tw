@@ -11,11 +11,12 @@ ms.assetid: a63d6407-5acb-4d5f-8c0e-ecedddc07177
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 574a1a41464ede08571e1c0201618d666fa7ad92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3607e646f5f1ccc6121e5ee8a5b71772008f1ce8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inline-a-temporary-variable-in-visual-basic"></a>內嵌在 Visual Basic 中的暫存變數
 **項目：**可讓您移除使用的暫存變數，並取代的實際程式碼。
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 
    ![Inline 結果](media/inline_result.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [重構 (Visual Basic)](../refactoring-vb.md)

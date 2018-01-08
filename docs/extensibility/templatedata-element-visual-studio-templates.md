@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0cda80ce9ff762547e6938ec27027fe5e045d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85dba252eedaeafbffdc58eadac91386ff6cac98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。  
@@ -39,17 +40,17 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的名稱出現在**新專案**或**加入新項目** 對話方塊。|  
-|[說明](../extensibility/description-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本描述出現在**新專案**或**加入新項目** 對話方塊。|  
+|[名稱](../extensibility/name-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的名稱出現在**新專案**或**加入新項目** 對話方塊。|  
+|[描述](../extensibility/description-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本描述出現在**新專案**或**加入新項目** 對話方塊。|  
 |[圖示](../extensibility/icon-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定的路徑和檔名做為圖示時，它會出現在 映像檔的**新專案**或**加入新項目**對話方塊範本。|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必要項目。<br /><br /> 將專案範本分類，使其出現在中指定的群組**新專案** 對話方塊。|  
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將專案範本分類，使它顯示在指定的子類別目錄之下**新專案** 對話方塊。|  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本或入門套件的所有中繼資料。|  
   
@@ -109,6 +110,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

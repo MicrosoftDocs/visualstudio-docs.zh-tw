@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b981430e9ce8f6bebf35d49fe1193f1d2097a715
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2ff6152d5c9b5108dff00d9b17cb4fb2471ac4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>重新格式化舊版語言服務中的程式碼
 
@@ -185,6 +186,6 @@ namespace MyLanguagePackage
 }  
 ```  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [舊版語言服務功能](legacy-language-service-features1.md)

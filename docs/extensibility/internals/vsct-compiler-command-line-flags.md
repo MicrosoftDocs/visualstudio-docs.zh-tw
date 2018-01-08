@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 編譯器命令列的旗標
 Visual Studio 命令表 (VSCT) 編譯器會提供命令列參數，以確保成功編譯的.vsct 檔案。  
@@ -57,7 +58,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  可接受的旗標，它們代表什麼意思是，如下所示。  
   
-|參數|說明|  
+|參數|描述|  
 |------------|-----------------|  
 |-D|指定任何其他已定義的符號。|  
 |-I|表示額外的 include 解析檔案參考時，應使用的路徑。|  
@@ -77,7 +78,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  VSCT 編譯器也可以反編譯先前建置的二進位檔案。 若要這樣做，請提供 二進位檔\<infile >。   如果 VSCT 編譯器所產生的二進位檔案，它會有其已內嵌的符號，並會產生輸出中的符號名稱\<符號 > 一節的輸出。 如果二進位檔由 CTC 編譯器所產生，則輸出會包含實際的 Guid 和 Id。 產生目前版本的 Ctc.exe *.ctsym 檔案是否為二進位的輸入檔的相同資料夾中，會從該檔案載入符號，與用於輸出。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

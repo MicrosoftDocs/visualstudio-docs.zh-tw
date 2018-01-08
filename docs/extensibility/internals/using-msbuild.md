@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a148a7c5fa6d0e72345ab7f96696a11d5ba5185f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b9d05b85cacfcdf90a883ffd08d4dec316eaafc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的完整描述可建置、 建置工作，與組建組態的專案項目。  
@@ -56,7 +57,7 @@ MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與MSBuild 工作  
  單一檔案產生器是可存取在執行階段，但 MSBuild 工作可用來在設計階段和建置時間。 最大的彈性，因此，使用 MSBuild 工作來轉換，並產生程式碼。 如需詳細資訊，請參閱[自訂工具](../../extensibility/internals/custom-tools.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../../msbuild/msbuild-reference.md)   
  [MSBuild](../../msbuild/msbuild.md)   
  [自訂工具](../../extensibility/internals/custom-tools.md)

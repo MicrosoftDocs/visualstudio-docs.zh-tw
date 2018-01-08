@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 982a4f54788e38129adaf5b23c15609f3ccad53d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 49c6ea6eff4abbd8b0863bc04a07b8c912f35c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。  
@@ -48,11 +49,11 @@ ms.lasthandoff: 11/07/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|共用大型或中型專案中的模型。|  
 |[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)|您可以將部分圖表複製到應用程式，例如 PowerPoint 或 Word，或將圖表列印到 XPS 檔案。|  
 |[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)|模型和圖表概觀。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)

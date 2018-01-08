@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 783c93386ae967138a0fb782a05cb8a21f0ad009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2d6326f08276da60a3e901912bfb579428680d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 使用者經驗指導方針
 Visual Studio 使用者經驗指導方針適用於 Visual studio 中設計的新功能的任何人。 這些指導方針包含常見的使用者模型和互動模式的相關資訊，因此新的使用者介面 (UI) 的設計工具可以建立會順暢且一致的開發環境中的使用者經驗。  

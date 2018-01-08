@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊副檔名的指令動詞
 與應用程式的檔案名稱副檔名關聯通常會有發生於使用者按兩下檔案時的慣用的動作。 這建議動作連結至一個動詞命令，例如開啟時，都會對應至動作。  
@@ -113,5 +114,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  如果您想要變更預設的並存部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

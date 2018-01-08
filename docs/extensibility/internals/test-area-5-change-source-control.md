@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5： 變更原始檔控制
 變更原始檔控制，透過此原始檔控制外掛程式的測試區域涵蓋了**變更原始檔控制**命令。  
@@ -75,5 +76,5 @@ ms.lasthandoff: 10/31/2017
 |只需關閉方案重新繫結**變更原始檔控制**對話方塊|1.建立專案。<br />2.只有方案加入原始檔控制使用 (**檔案**，**原始檔控制**，**加入所選專案加入原始檔控制**。<br />3.開啟**變更原始檔控制** 對話方塊。<br />4.只有方案解除繫結 (請不要關閉**變更原始檔控制** 對話方塊。)<br />5.繫結僅解決方案。<br />6.按一下 [確定]  關閉對話方塊。<br />7.簽出方案和方案項目 （如果有的話）|解決方案會保持受控制的。<br /><br /> 專案會維持未受控制的。|  
 |只有當相同的目錄中的方案/專案重新繫結|1.建立專案。<br />2.只有這個專案加入原始檔控制使用 (**檔案**，**原始檔控制**，**加入所選專案加入原始檔控制**。<br />3.關閉方案。<br />4.使用至少兩個專案中建立新的方案。<br />5.將方案加入原始檔控制。<br />6.加入在步驟 1 中建立從原始檔控制的專案。<br />7.如果出現提示，請接受簽出的方案。<br />8.請檢查整個方案中。<br />9.開啟**變更原始檔控制** 對話方塊。<br />10.選取 （從步驟 6) 加入的專案，然後按一下**解除繫結**。<br />11.按一下 [確定]  關閉對話方塊。<br />12.如果出現提示，請接受簽出。<br />13.重新開啟**變更原始檔控制** 對話方塊。<br />14.選取 （從步驟 6) 加入的專案，然後按一下**繫結**。<br />15.選取的原始位置。|方案和專案保持控制。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

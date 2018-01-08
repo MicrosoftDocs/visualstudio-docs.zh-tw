@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7be9b3bf7783980cfbbe1abfc44fe1748dd20a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-sln-file"></a>方案 (。Sln) 檔案
 解決方案是用於組織專案在 Visual Studio 中的結構。 方案會維護文字為基礎 (共用） 的.sln 和.suo （二進位檔、 使用者特定解決方案的選項） 檔案中的專案狀態資訊。 如需.suo 檔案的詳細資訊，請參閱[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
@@ -101,7 +102,7 @@ EndGlobal
   
  .Sln 檔案包含中的項目`preSolution`和`postSolution`區段。 因為解決方案需要這項資訊來正確載入.suo 檔案中沒有類似的區段。 .Suo 檔案包含使用者特定的選項，例如，不是共用或放置在原始程式碼控制之下的私人資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
  [方案](../../extensibility/internals/solutions.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2f1808adcb7c8c79d2139e89e31f21a85cb694
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-element"></a>字串的項目
 字串元素必須包含至少一個**ButtonText**子項目。 所有其他子項目是選擇性的。 無效的 XML 字元，例如 '&' 和 '<' 必須編碼為實體 ('&amp;'和'&lt;' 等)。  
@@ -36,17 +37,17 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|語言|選擇項。 語言 ="。"。|  
+|語言|選擇性。 語言 ="。"。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |ButtonText|這個欄位和命令定義中的五個下列文字欄位可讓您指定各種功能表中出現的文字。 根據預設，`ButtonText`欄位會出現在功能表控制器。 `ButtonText`欄位也會成為預設值，如果是空白的其他文字欄位。 `ButtonText`欄位不可為空白，即使指定的文字欄位。|  
 |ToolTipText|`ToolTipText`欄位指定功能表項目的工具提示中顯示的文字。<br /><br /> 如果`ToolTipText`欄位是空白的`ButtonText`欄位使用。|  
@@ -57,11 +58,11 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Button 元素](../extensibility/button-element.md)|定義使用者可以與之互動的項目。|  
 |[Menu 元素](../extensibility/menu-element.md)|定義單一功能表項目。|  
 |[Combo 元素](../extensibility/combo-element.md)|定義了出現在下拉式方塊中的命令。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

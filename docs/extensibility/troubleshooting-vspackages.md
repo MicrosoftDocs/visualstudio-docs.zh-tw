@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e409d31b4f1e16f735b9b4ef22d42dedccf55a9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage
 以下是常見的問題，您可能有與您的 VSPackage，並解決問題的秘訣。  
@@ -126,5 +127,5 @@ ms.lasthandoff: 10/31/2017
   
  請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c6d5d88563d97c18081cbf44b67e247d98a468
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffbe31d9d5919c1e8b94482556c851fc07a1750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝獨立的 Shell 應用程式
 若要安裝的殼層應用程式中，您必須執行下列步驟。  
@@ -239,7 +240,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>解密傳回值  
  在某些作業系統上的 Visual Studio Shell （獨立模式） 安裝將需要重新啟動。 您可以呼叫的傳回碼來判斷此條件`ExecCmd`。  
   
-|傳回值|說明|  
+|傳回值|描述|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|安裝已完成。 您現在可以安裝您的應用程式。|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|安裝已完成。 重新啟動電腦之後，您可以安裝您的應用程式。|  
@@ -370,5 +371,5 @@ boutiqueInstallCmd.Format(cmdLine, msi, log);
 dwResult = ExecCmd(boutiqueInstallCmd, FALSE);  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

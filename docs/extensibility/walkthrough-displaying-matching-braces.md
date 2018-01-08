@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>逐步解說： 顯示對稱的括號
 您可以實作語言為基礎的功能，例如定義您想要比對，在大括的號，然後將文字標記標記加入至對稱的括號，當插入號位於其中一個大括號比對的大括號。 您可以定義大括號中的內容語言，或您可以定義您自己的檔案名稱副檔名和內容類型，並將標籤套用到僅該型別，或您可以將標籤套用到現有的內容類型 （例如"text")。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對括號。  
@@ -124,5 +125,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  當您開啟的大括號前面插入號時，該括號和關閉對稱的大括號應該會反白顯示。 當您將游標放只在關閉的大括號之後時，該括號和相符的左大括號應該會反白顯示。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

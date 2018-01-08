@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85b700f0cb1e3a364cae69ff6c628151ea6a7bd3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b63a7e8c9a6b2a4f2539cd6a8426ba9df365ab76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
 此函式會擷取從原始檔控制每個指定的檔案而不需要使用者互動。  
@@ -57,7 +58,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|作業已順利完成。|  
 |SCC_E_BACKGROUNDGETINPROGRESS|背景擷取 」 正在執行 （原始檔控制外掛程式應該傳回這只有在不支援同時批次作業）。|  
@@ -68,6 +69,6 @@ SCCRTN SccBackgroundGet(
   
  使用`dwFlags`引數是相同[SccGet](../extensibility/sccget-function.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15c32ccd3634529c63eb95eb698c3239b6c0e37e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b1e52963253f73c633b9b14bf64525bdb0afaeab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-the-isolated-shell"></a>Isolated Shell 的項目
 您可以修改登錄設定、 執行階段設定和應用程式進入點，獨立的 shell 應用程式時，其.vsct、.pkgdef、 and.pkgundef 檔案。  

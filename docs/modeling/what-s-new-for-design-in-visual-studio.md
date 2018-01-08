@@ -16,11 +16,12 @@ caps.latest.revision: "32"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ce1172baf41cf670b253b2420f5538607addfeb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 137ca47d83e0540a7d0b3959d7d806dbf3d5f3a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>什麼 &#39; s Visual Studio 中設計的新功能
 
@@ -75,10 +76,10 @@ Visual Studio 有數個版本。 並非所有版本都提供 Architecture and Mo
   
 |**功能**|**企業版**|**專業版**|**Community**|**Express**|  
 |-----------------|--------------------|----------------------|-------------------|-----------------|  
-|**Code Map**|是|請參閱附註 (1)|-|-|  
-|**相依性圖表**|是|請參閱附註 (2)|請參閱附註 (2)|-|  
-|**導向圖形**（DGML 圖表）|是|是|是|-|  
-|**程式碼複製品**|是|-|-|-|  
+|**Code Map**|[是]|請參閱附註 (1)|-|-|  
+|**相依性圖表**|[是]|請參閱附註 (2)|請參閱附註 (2)|-|  
+|**導向圖形**（DGML 圖表）|[是]|是|[是]|-|  
+|**程式碼複製品**|[是]|-|-|-|  
   
 注意 (1)：僅支援讀取程式碼對應、篩選程式碼對應、加入新的泛型節點，及從選取範圍建立新的導向圖形。
 

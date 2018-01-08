@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118f715e71f610d4e9dc2589767f6fb54ab4e814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取範圍 (原始檔控制 VSPackage)
 VSPackage 必須註冊來公開它的原始檔控制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果一個以上的原始檔控制 VSPackage 註冊，使用者可以選取要在適當的時間載入的 VSPackage。 請參閱[Vspackage](../../extensibility/internals/vspackages.md)如需有關 Vspackage 和如何加以註冊。  
@@ -82,7 +83,7 @@ VSPackage 必須註冊來公開它的原始檔控制[!INCLUDE[vsprvs](../../code
   
  不同於舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，IDE 重新啟動已不再切換原始檔控制 Vspackage 的唯一方式。 VSPackage 選項是自動的。 切換封裝，需要 Windows 使用者的權限 （沒有系統管理員或進階使用者）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   
  [功能](../../extensibility/internals/source-control-vspackage-features.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   

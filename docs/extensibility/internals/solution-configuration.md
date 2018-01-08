@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>方案組態
 方案層級內容儲存在方案組態。 這些指示的行為**啟動**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案透過設定設定的組建。 環境被設計來建置及執行時，最佳化解決方案，而不是專案。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
  一旦加入新的方案組態時，使用者可以選取它從標準工具列組建及/或啟動該組態的方案組態下拉式清單方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [專案組態物件](../../extensibility/internals/project-configuration-object.md)

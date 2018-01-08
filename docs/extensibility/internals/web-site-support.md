@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>網站支援
 網站專案系統會建立 Web 專案的專案系統。 Web 專案建立 Web 應用程式。 網站專案會產生一個可執行檔，每個具有相關聯的程式碼的網頁。 從原始程式碼檔案 /App_Code 資料夾中產生其他可執行檔。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [網站支援範本](../../extensibility/internals/web-site-support-templates.md)  
  列出可用來建立新的網站專案和相關聯的項目範本。  
   

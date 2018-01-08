@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a4162b91a9345c94b7bd6a7e2f1099da3d631e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5651e7c00abe91ec8e4cae7b720b6534318051f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>疑難排解 RegPkg 套件登錄
 > [!NOTE]
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  RegPkg 舊版可以註冊使用 Microsoft.VisualStudio.Shell.dll 組件都已建置完成的封裝。 不過，它無法登錄所使用的組件的更新版本建立的封裝。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../../extensibility/internals/vspackages.md)

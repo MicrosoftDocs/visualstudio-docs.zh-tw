@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用精靈
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  
@@ -68,7 +69,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 3.  為資產加入 VSIX 專案的組件。 開啟 source.extension.vsixmanifest 檔案，然後選取**資產** 索引標籤。中**加入新資產**視窗中，針對**類型**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**A目前方案中的專案**，以及**專案**選取**MyProjectWizard**。  
   
-4.  加入下列參考加入 VSIX 專案。 (在**方案總管 中**，在 VSIX 專案節點，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在**加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows Form**組件並加以選取。 現在選取**延伸** 索引標籤尋找**EnvDTE**組件並加以選取。 也可以找到**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定]。  
+4.  加入下列參考加入 VSIX 專案。 (在**方案總管 中**，在 VSIX 專案節點，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在**加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows Form**組件並加以選取。 現在選取**延伸** 索引標籤尋找**EnvDTE**組件並加以選取。 也可以找到**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定 **Deploying Office Solutions**]。  
   
 5.  加入 VSIX 專案精靈實作的類別。 (在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別**WizardImplementation**。  
   
@@ -309,7 +310,9 @@ namespace $safeprojectname$
   
      請注意，`$custommessage$`已取代為精靈的使用者輸入表單中輸入的文字。  
   
-## <a name="see-also"></a>另請參閱  
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [自訂範本](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension 元素 (Visual Studio 範本)](../extensibility/wizardextension-element-visual-studio-templates.md)
+## <a name="see-also"></a>請參閱  
+
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+[自訂範本](../ide/customizing-project-and-item-templates.md)  
+[WizardExtension 元素 (Visual Studio 範本)](../extensibility/wizardextension-element-visual-studio-templates.md)  
+[在 Visual Studio 範本中的 NuGet 封裝](/nuget/visual-studio-extensibility/visual-studio-templates)

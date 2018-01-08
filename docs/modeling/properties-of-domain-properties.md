@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 58402e1030516e6f587ec428bd98179ff82ec43a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 17168b43056870dc259965c31902c36450876702
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
@@ -36,7 +37,7 @@ A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person
   
 |屬性|描述|預設值|  
 |--------------|-----------------|-------------------|  
-|**說明**|此描述可用來記載產生之設計工具的使用者介面 (UI)。|\<無 >|  
+|**描述**|此描述可用來記載產生之設計工具的使用者介面 (UI)。|\<無 >|  
 |**顯示名稱**|將在產生的設計工具中針對此網域屬性顯示的名稱。 它可以包含空格和標點符號，例如 "Song Title"。|\<無 >|  
 |**項目名稱提供者**|如果您將 `Is Element Name` 設為 `true`，才適用此提供者。 您可以撰寫程式碼，為網域類別的新項目提供名稱，覆寫預設行為。<br /><br /> 在 DSL 專案的程式碼檔中，建立從 <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider> 衍生的類別。<br /><br /> 然後在 DSL Explorer 中，以滑鼠右鍵按一下 DSL 的根 ，然後按一下 [加入外部類型]。 輸入您的類別名稱。<br /><br /> 再度選取此網域屬性，然後在下拉式清單中選取類別的名稱。|\<無 >|  
 |**Getter 的存取修飾詞**|網域類別的存取層級 (`public` 或 `internal`)。 此層級可控制程式碼存取屬性的範圍。|`public`|  
@@ -45,10 +46,10 @@ A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person
 |**是項目名稱**|如果為 `True`，此網域屬性將在 DSL Explorer 中顯示為其模型項目的名稱。<br /><br /> 新的模型項目將接收此屬性的唯一預設值。 如果您想要控制如何產生這些值，設定**項目名稱提供者**。|`False`|  
 |**UI 為唯讀狀態**|如果為 `True`，則無法使用 UI 變更網域屬性的值。 它仍然可由程式設定，並且可以在 [屬性] 視窗中看見它。<br /><br /> 如果您想要隱藏從使用者的網域屬性，設定**是可瀏覽**。 如果您想要控制存取的程式，設定**Setter 的存取修飾詞**。|`False`|  
 |**類型**|網域屬性的類型 (`Normal`、`Calculated` 或 `CustomStorage`)。 如需詳細資訊，請參閱[計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。|`Normal`|  
-|**Name**|此網域屬性的名稱。 它必須是有效的識別項，例如**SongTitle**。|\<無 >|  
+|**名稱**|此網域屬性的名稱。 它必須是有效的識別項，例如**SongTitle**。|\<無 >|  
 |**備註**|與此網域屬性相關聯的非正式附註。|\<無 >|  
 |**Setter 的存取修飾詞**|Setter 的存取修飾詞。 此修飾詞可控制程式碼設定屬性的範圍。|`public`|  
 |**Type**|屬性的類型。 若要加入至可用類型清單，以滑鼠右鍵按一下的 DSL 總管 中，在 DSL 根目錄，然後按一下**加入外部類型**。|`String`|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

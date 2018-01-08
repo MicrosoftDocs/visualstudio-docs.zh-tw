@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用代表現有的 Visual Studio 佈景主題色彩.xml 檔，並將它.pkgdef 檔案，所以這些色彩可用於 Visual Studio 中。 所以可以輕鬆地比較.xml 檔案之間的差異，因為此工具是適合用來管理原始檔控制中的自訂色彩。 它也可經由連結至建置環境以便組建輸出，則為有效的.pkgdef 檔。  
@@ -113,7 +114,7 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 |-|-|  
 |**屬性**|**定義**|  
 |類型|[必要]色彩的類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:*的色彩就是無效或未設定。<br /><br /> *CT_RAW:* ARGB 資料列值。<br /><br /> *CT_COLORINDEX:*請勿使用。<br /><br /> *CT_SYSCOLOR:* SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio 中的色彩。<br /><br /> *CT_AUTOMATIC:*自動色彩。<br /><br /> *CT_TRACK_FOREGROUND:*請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:*請勿使用。|  
-|來源|[必要]以十六進位表示色彩的值|  
+|原始程式檔|[必要]以十六進位表示色彩的值|  
   
  中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您在只有 CT_RAW 和 CT_SYSCOLOR 時使用。  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示設定
 中的選擇性值會指定當 VSPackage 註冊工具視窗、 的預設位置、 大小、 停駐樣式，以及其他可見性資訊。 如需有關工具視窗登錄的詳細資訊，請參閱[登錄中的工具視窗](../extensibility/tool-windows-in-the-registry.md)  
@@ -38,7 +39,7 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|名稱|類型|資料|說明|  
+|名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |名稱|REG_SZ|[簡短名稱到這裡]|描述工具視窗的簡短名稱。 僅適用於在登錄中的參考。|  
 |浮動|REG_SZ|"X1，Y1，X2，Y2"|四個以逗號分隔值。 X1，Y1 是工具視窗的左上角的座標。 X2，Y2 是右下角的座標。 所有值都都在螢幕座標。|  
@@ -90,7 +91,7 @@ HKEY_LOCAL_MACHINE\
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |(預設值)|REG_SZ|無|保留空白。|  
-|*\<GUID >*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇項。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 此值通常是`reg_dword`設為 0。|  
+|*\<GUID >*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 此值通常是`reg_dword`設為 0。|  
   
 ### <a name="example"></a>範例  
   
@@ -109,5 +110,5 @@ HKEY_LOCAL_MACHINE\
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

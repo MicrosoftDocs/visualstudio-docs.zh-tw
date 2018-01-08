@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7175bd4e2d0b07640dd45b38aa246c649def32ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8a331c131eaf48eb7be8bc3709599412aa01b1ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用 Project Factory 建立的專案執行個體
 專案中的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*專案 factory*建立專案中物件的執行個體。 專案 factory 是類似於標準的 class factory cocreatable COM 物件。 不過，專案物件不是 cocreatable： 只可以建立使用專案 factory。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  專案可以也使用任何檔案，且，相反地，其專案中儲存狀態檔案系統，例如資料庫或 Web 伺服器以外的儲存機制。 在此情況下，檔案名稱參數傳遞至`CreateProject`方法不是實際檔案系統路徑，而是唯一的字串-URL，來識別專案資料。 您不需要複製範本檔案會傳遞給`CreateProject`觸發要執行的適當建構順序。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   

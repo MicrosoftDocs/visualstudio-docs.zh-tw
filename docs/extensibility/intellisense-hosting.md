@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供 IntelliSense 程式碼的 Visual Studio 文字編輯器所未裝載。  
@@ -35,7 +36,7 @@ Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供
   
  中所定義的主應用程式旗標[IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)，以下摘要說明。  
   
-|IntelliSense 主機旗標|說明|  
+|IntelliSense 主機旗標|描述|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|設定此旗標表示的內容緩衝區是唯讀和編輯，就會發生只在主旨文字。|  
 |IHF_NOSEPERATESUBJECT|設定這個旗標表示有是沒有個別的 IntelliSense 主旨。 主旨存在於內容緩衝區中，例如在傳統<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>IntelliSense 系統。|  
@@ -49,5 +50,5 @@ Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor>介面是共同建立版本的整合式的開發環境 (IDE) 由標準完成視窗。 任何<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>介面可以使用此 completor 介面來快速實作 IntelliSense。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

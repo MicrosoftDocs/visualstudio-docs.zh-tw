@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-7-share"></a>測試區域 7： 共用
 這個測試區域涵蓋透過位置之間的共用項目**共用**命令。  
@@ -61,5 +62,5 @@ ms.lasthandoff: 10/31/2017
 |共用資料夾到載入的專案，遞迴|1.建立新的專案。<br />2.將方案加入原始檔控制。<br />3.選取的專案。<br />4.開啟**共用**對話方塊 (**檔案** -> **原始檔控制** -> **共用**)。<br />5.選取的資料夾。<br />6.共用資料夾以遞迴方式至專案。|常見的預期的行為。|  
 |共用之間的數個檔案從一個專案|1.有數個檔案建立新的專案。<br />2.將方案加入原始檔控制。<br />3.關閉方案。<br />4.新的方案中建立新的專案。<br />5.將方案加入原始檔控制。<br />6.選取的專案。<br />7.開啟**共用**對話方塊 (**檔案** -> **原始檔控制** -> **共用**)。<br />8.共用數個檔案從先前建立的專案，以目前開啟的專案。|常見的預期的行為。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

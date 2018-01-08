@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1490c350a9c2c5fc91d516e2658c47a8246eb5d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 **屬性**視窗[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可顯示專案和組態屬性。 讓使用者可以設定您的應用程式的內容，您可以提供您自己的專案類型 屬性頁。  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
  `MyConfigProp`組態屬性會出現在 [組態] 屬性頁面，為**我的組態屬性**分類中**我類別**。 如果選取此選項，則描述**我描述**，會出現在 [描述] 面板。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [加入和移除屬性頁](../../extensibility/adding-and-removing-property-pages.md)   
  [專案](../../extensibility/internals/projects.md)   
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

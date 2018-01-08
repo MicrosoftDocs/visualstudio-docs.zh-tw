@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 如果您永遠不會編寫 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**本頁很有幫助？**螢幕的底部) 以取得您想要。  
@@ -89,4 +90,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="how-can-i-distribute-my-extension"></a>我要如何散發 my 擴充功能？  
  您可以在另一部電腦上安裝您的擴充功能，或將它傳送給您的朋友為.vsix 檔案，按兩下安裝。 您可以進一步了解在 VSIX 封裝[傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。  
   
- 您也可以發佈您的擴充功能，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 如需封裝至 Marketplace 擴充功能的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需您需要如何在 Marketplace 上發佈的詳細資訊，請參閱[產品和用於 Visual Studio 擴充功能](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview)。
+ 您也可以發佈您的擴充功能，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 如需封裝至 Marketplace 擴充功能的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需您需要如何在 Marketplace 上發佈的詳細資訊，請參閱[產品和用於 Visual Studio 擴充功能](/vsts/integrate/ide/extensions/overview)。

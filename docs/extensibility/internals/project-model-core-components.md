@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 在專案模型上，展開下列資料表。 這些表格顯示介面，而且模型的介面和特定物件相關聯的服務中識別的服務的簡短的描述。 此外，資料表會詳細說明中的專案建立和維護，根據您的特定專案類型的需求是選用的其他介面。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|用來實作 automation 模型。 在專案模式中，您將傳回的內容物件，可讓您建立該物件的執行個體。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|用於剪貼簿事件物件上實作專案階層架構中。 `SVsUIHierWinClipboardHelper`可讓您正確地控制代碼剪下、 複製和貼上作業。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [不在組建中： 使用 HierUtil7 專案類別來實作的專案型別 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   

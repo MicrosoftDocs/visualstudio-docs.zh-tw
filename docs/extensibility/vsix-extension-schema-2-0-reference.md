@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1c81a34a290b34207f505d6b1ab46fa8b11cd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f0ac6fdedb5d65f40f718c568297dc0196c4537
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 擴充功能 2.0 結構描述參考
 VSIX 部署資訊清單檔描述 VSIX 套件的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂類型和屬性加入。  資訊清單的結構描述可以延伸。 資訊清單的載入器會忽略不了解的 XML 元素和屬性。  
@@ -216,5 +217,5 @@ VSIX 部署資訊清單檔描述 VSIX 套件的內容。 檔案格式是結構�
 </PackageManifest>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

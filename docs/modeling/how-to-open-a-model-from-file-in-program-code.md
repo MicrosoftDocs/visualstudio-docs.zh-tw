@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d225f991d7d0160f261c4a7c25c1251564a8b97b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 49059888851ec3f153c27f9109ccea107d0961b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
 您可以在任何應用程式開啟 DSL 模型。  

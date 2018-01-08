@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
 當您建立的巢狀的專案類型都必須實作數個額外的步驟。 父專案會在某些相同方案中有針對其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個解決方案和所要建立的巢狀專案階層的父專案必須引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
   
  [篩選巢狀專案的 AddItem 對話方塊](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   

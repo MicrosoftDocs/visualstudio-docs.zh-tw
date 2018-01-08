@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3e0216161669e12c245484da3ca6e4de63c6a48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須決定數個設計有關您的專案類型。 您必須決定您將使用哪些類型的專案將包含的項目、 如何將保存專案檔，以及哪一種承諾模型。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
  資料物件開啟時使用交易的模式，變更會儲存到記憶體中的暫存位置，並未經過認可，直到使用者手動選擇要儲存檔案。 在這段時間，必須一起出現的所有變更，或將會進行任何變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [NIB： 項目管理專案中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [開啟並儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abf254aa21be5ec4b7401e21afa5f9bcca00e011
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性**是 COM 和 COM + 元件的通用屬性瀏覽器視窗，並支援所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產品。 **屬性**視窗搭配`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
   
  此章節提供詳細的資訊與相關的個別區域**屬性**視窗和您必須實作的介面來填入視窗呼叫。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [屬性視窗概觀](../../extensibility/internals/properties-window-overview.md)  
  說明的目的**屬性**相對於工具視窗與文件視窗的視窗。  
   

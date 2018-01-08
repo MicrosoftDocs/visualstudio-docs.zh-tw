@@ -13,16 +13,17 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c16fde6cb9dcb29428ad2d52a08b53cffb9f9850
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-features"></a>原始檔控制 VSPackage 的功能
 本章節描述各種功能的原始檔控制 VSPackage。 本文將概述註冊，並選取 VSPackage，在 詳細資料，並討論三種主要的原始檔控制相關功能： 處理查詢編輯查詢儲存 (QEQS) 事件、 字符取代和原始檔控制的自訂使用者介面 (UI)函式。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [註冊和選取範圍](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
  描述封裝註冊和選取範圍機制。  
   

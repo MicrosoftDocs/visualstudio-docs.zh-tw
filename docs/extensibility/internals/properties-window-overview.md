@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0094accca0feb026fca02c78bf6e86fe512ce981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 **屬性**視窗用來顯示在 windows 中提供的兩個主要類型中選取物件的屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 這兩種 windows 類型如下：  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
  下表列出所使用的主要介面**屬性**視窗。  
   
-|介面名稱|說明|  
+|介面名稱|描述|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供的類別清單**屬性**視窗，並將每一個屬性對應至類別目錄。|  
 |[IDispatch 介面](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|公開物件的方法與屬性，以程式設計的工具和其他支援自動化的應用程式。|  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
  如需進一步資訊`IDispatch`，請參閱 MSDN library。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)   
  [屬性視窗中的欄位和介面](../../extensibility/internals/properties-window-fields-and-interfaces.md)

@@ -15,18 +15,19 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ace754b9d6ddb220b3647b281011d3763810987c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71a202bdb71469e4d6b46eb537147092b1ea9013
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表 (。Vsct) 檔案
 命令資料表的組態檔是文字檔，描述一組之 VSPackage 所包含的命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令資料表 (VSCT) 編譯器會以 XML 為基礎的組態檔 （.vsct 檔案） 編譯成二進位的命令資料表輸出 (.cto) 檔案。 結果.cto 檔是與所建立所使用的命令資料表 (CTC) 編譯器來編譯.ctc 組態檔相同。 不過，XML.vsct 檔案有一些優點，例如 XML 編輯器和 XML IntelliSense。  
   
  若要深入了解的語法和語意.vsct 檔案，請參閱[設計 XML 命令資料表 (。Vsct) 檔案](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [設計 XML 命令表檔案 (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  描述如何設計.vsct 檔案。  
   

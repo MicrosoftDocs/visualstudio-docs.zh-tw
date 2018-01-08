@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2cd6f661afb876d06c30bdccb6786eac4e99e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9034be93256250c5502d5f8da9c79a4308a47ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-guids"></a>IDE 的 Guid
 <xref:Microsoft.VisualStudio.VSConstants>類別發行 Guid 的整合式的開發環境 (IDE) 的某些部分，如下所列在下表中。  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsDocOutlinePackage>|21af45b0-ffa5-11d0-b63f-00a0c922e851|  
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider>|35222106-bb44-11d0-8c46-00c04fc2aae2|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Managed 程式碼的 COM 常數](../extensibility/com-constants-in-managed-code.md)   
  [IDE 常數](../extensibility/ide-constants.md)   
  [用來擴充專案系統的 IDE 定義的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e288ccfd0e59f95c521d605c34e04240c94a1848
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e220692b263dbb35779c25ff0b189f219e98b842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 *文字範本轉換流程*採用*文字範本*做為輸入和產生的文字檔做為輸出的檔案。 *文字範本轉換引擎*控制項與文字範本轉換主應用程式和一個或多個文字範本互動的處理程序和引擎*指示詞處理器*完成程序。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/27/2017
   
 -   如需詳細資訊，請參閱[逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)  
  說明如何自訂指示詞處理器暫存器。  
   

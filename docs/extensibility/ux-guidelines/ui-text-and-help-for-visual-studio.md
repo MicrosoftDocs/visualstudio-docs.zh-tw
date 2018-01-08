@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0019a0687370ac328fe78f57f1d26e661eb214a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字和 Visual Studio 的說明
 ##  <a name="BKMK_UITextAndTerminology"></a>UI 文字和術語  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="error-messages"></a>錯誤訊息  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  發生錯誤。 設定限制使用者可以執行是合理的第一個步驟，在避免屆時錯誤訊息。 不過，發生錯誤時的編寫完善的錯誤訊息可以移對緩和此問題。 錯誤訊息可說是其中一個最重要的使用者會看到，因為它們是同步，則表示需要解決問題的通知類型。 撰寫不夠周全的錯誤訊息會保留使用者在他們自己決定錯誤的原因以及任何可能的解決方案。  
   
  注意過度使用而使或混淆的錯誤訊息，因此遇到將值加入至使用者的寫入只需要訊息，使用者可能會停止。 如果只是通知訊息，然後使用替代的簡報。  
@@ -266,7 +267,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="accessing-help"></a>存取說明  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  除了 MSDN 中的文件，Visual Studio 使用者都有數個存取點，以協助使用者在 UI 中。 若要確保這些存取點會一直處於可用狀態，功能小組需要利用環境所提供的說明系統。 這些存取點是：  
   
 -   **在對話方塊中的指示和補充文字。** 提供方向或說明 UI 介面或使用暫留時顯示資訊提示圖示上的靜態文字。  
@@ -427,7 +428,7 @@ public class HelpForm : Form
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [字型及格式設定適用於 Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [適用於 Visual Studio 的版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
  [適用於 Visual Studio 的通知和進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

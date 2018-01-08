@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 745e91e7d5cbb63238fc384c2f5cc9677218fda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e29b7c5a3aa9b19147020e5a954f7379e161ce55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。  

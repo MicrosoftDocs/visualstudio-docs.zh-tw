@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>加入項目來加入新項目對話方塊
 新增項目到的程序**加入新項目**對話方塊開頭的登錄機碼。 AddItemTemplates > 一節中所示的下列登錄項目，包含可在哪些項目中的目錄名稱與路徑**加入新項目**放 對話方塊。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
  「 SortPriority"= dword:00000064  
   
-|名稱|類型|（從.rgs 檔案） 的資料|說明|  
+|名稱|類型|（從.rgs 檔案） 的資料|描述|  
 |----------|----------|-----------------------------|-----------------|  
 |@ （預設值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|資源識別碼**加入項目**範本。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|顯示的對話方塊中的專案項目路徑**加入新項目**精靈。|  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
  如果您實作此篩選器功能時，您沒有對應的每個項目應該隱藏資料表。 您只可以將項目分類為類型，並置於.vsdir 或多個檔案的分類。 然後您可以隱藏任何實作介面中有某個特定分類的項目。 如此一來，您可以在中的項目**加入新項目**對話方塊方塊動態根據專案中的狀態。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [物件，通常會用來擴充專案項 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   

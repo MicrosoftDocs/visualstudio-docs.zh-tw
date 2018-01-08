@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自訂使用者介面 (原始檔控制 VSPackage)
 VSPackage 透過 Visual Studio 命令表 (.vsct) 檔案中宣告它的功能表項目和其預設狀態。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示在其預設狀態中的功能表項目直到載入 VSPackage。 接著，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。  
@@ -52,13 +53,13 @@ VSPackage 透過 Visual Studio 命令表 (.vsct) 檔案中宣告它的功能表�
   
  下表描述的特定詳細資料，關於如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 會隱藏不同的 UI 項目。  
   
-|UI 項目|說明|  
+|UI 項目|描述|  
 |-------------|-----------------|  
 |功能表與工具列|原始檔控制封裝必須設定初始的功能表和工具列可見性狀態中的原始檔控制封裝識別碼[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) .vsct 檔的區段。 這可讓[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]適當地設定功能表項目的狀態，而不載入 VSPackage 和呼叫的實作 IDE<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。|  
 |工具視窗|原始檔控制 VSPackage 隱藏變成非作用中時，它擁有任何工具視窗。|  
 |原始檔控制特定的 VSPackage 選項頁|登錄機碼 HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts 可讓 VSPackage 設定中需要顯示其選項頁面的內容。 此機碼下的登錄項目，就必須建立使用識別碼 (SID) 的原始檔控制服務的服務，並將其指派為 1 的 DWORD 值。 UI 事件發生時的內容中向註冊 VSPackage 的原始檔控制，則會呼叫 VSPackage，是否在作用中。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   

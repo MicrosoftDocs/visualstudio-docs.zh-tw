@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737ce6ae0368d7d1db9d72e6fb25355409663c09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>公開屬性，以 [屬性] 視窗
 本逐步解說會公開公用屬性物件與**屬性**視窗。 您對這些屬性的變更會反映在**屬性**視窗。  
@@ -269,5 +270,5 @@ ms.lasthandoff: 10/31/2017
   
  Visual Studio 工具視窗將 Visual Studio 工作階段之間保存。 如需有關保存工具視窗狀態的詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)

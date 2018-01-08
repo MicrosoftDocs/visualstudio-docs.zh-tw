@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務與編輯器延伸模組
 您可以使用編輯器延伸模組，將語言服務功能，例如，大綱、 括號對稱、 IntelliSense 和燈泡您自己的程式語言，或任何內容型別。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如文字著色、 邊界、 裝飾和其他視覺化項目。 您也可以定義您自己的內容，類型，並指定的外觀和行為的文字檢視您的內容隨即出現。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="managing-extensions"></a>管理擴充功能  
  Visual studio 的擴充功能會列示於**擴充功能和更新**(上**工具**功能表)。 如果您要測試擴充功能中的實驗執行個體，它列在**擴充功能和更新**在實驗執行個體，但並未列在開發執行個體。  
   
- 如需詳細資訊，請參閱[尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)。  
+ 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>使用範本來建立編輯器延伸模組  
  您可以使用編輯器範本來建立自訂分類器、 裝飾及邊界的 MEF 擴充功能。 有適用於 C# 和 Visual Basic 專案範本。 如需詳細資訊，請參閱[編輯器項目範本以建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
@@ -88,5 +89,5 @@ ms.lasthandoff: 10/31/2017
   
 -   [逐步解說︰搭配編輯器擴充功能使用快速鍵](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

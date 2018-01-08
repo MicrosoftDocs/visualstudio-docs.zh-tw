@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，以檢視及編譯，但不是用於編輯的複本。 在大多數系統中，檔案會標記為唯讀。  
@@ -58,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|取得作業成功。|  
 |SCC_E_FILENOTCONTROLLED|檔案不在原始檔控制中。|  
@@ -101,6 +102,6 @@ SCCRTN SccGet(
   
     6.  更新的 b.txt 檔案現在可以簽入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)

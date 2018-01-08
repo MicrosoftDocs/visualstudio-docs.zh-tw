@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29cbc142be40d4c4e2e8780304767bd17d1d94fe
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 22261c7485f1779eb3613c7ef5af693feeb51fbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要啟用自訂的工具在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必須註冊，因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以具現化，並與特定專案類型關聯。  
@@ -43,15 +44,15 @@ ms.lasthandoff: 12/14/2017
   
     -   (預設值)  
   
-         選擇項。 提供的自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。  
+         選擇性。 提供的自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。  
   
     -   CLSID  
   
-         必要項。 指定的類別庫實作的 COM 元件的識別碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
+         必要。 指定的類別庫實作的 COM 元件的識別碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
   
     -   GeneratesDesignTimeSource  
   
-         必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須為類型不適用於視覺化設計工具 （零） 0 或 1 （一） 可以使用視覺化設計工具類型。  
+         必要。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須為類型不適用於視覺化設計工具 （零） 0 或 1 （一） 可以使用視覺化設計工具類型。  
   
     > [!NOTE]
     >  您必須註冊自訂的工具，分別為每個想要使用自訂工具的語言。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 12/14/2017
     "GeneratesDesignTimeSource"=dword:00000001  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
  [若要公開的視覺化設計工具的類型](../../extensibility/internals/exposing-types-to-visual-designers.md)   

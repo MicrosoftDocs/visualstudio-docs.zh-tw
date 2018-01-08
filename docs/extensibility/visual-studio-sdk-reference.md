@@ -15,16 +15,17 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含使用 Visual Studio SDK 開發人員 Visual Studio 的命名空間、 相關的命名空間和感興趣的其他區域的相關資訊。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
  編輯器和語言使用的舊版 interop 介面服務。  
   

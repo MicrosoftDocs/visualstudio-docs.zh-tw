@@ -23,11 +23,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 858df05759f1c3b4205d4cbcd0bbad2cdfb6e034
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e159efdfd709a0ef8950347a191bb4053ef715bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>建立 SharePoint 的應用程式頁面
   *應用程式頁面*是設計用來在 SharePoint 網站中使用 ASP.NET Web 網頁。 應用程式頁面是特殊的類型的 ASP.NET 網頁。 應用程式頁面和標準的 ASP.NET 網頁的主要差異是應用程式頁面上包含合併 SharePoint 主版頁面的內容。 主版頁面可讓應用程式頁面來做為站台的其他頁面共用相同的外觀和行為。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
  您可以明確地變更的主版頁面所設定使用的應用程式頁面`MasterPageFile`應用程式的屬性`Page`項目。 (例如： `MasterPageFile="~/_layouts/applicationv4.master"`)。 事實上，您必須將此屬性，如果在 SharePoint 伺服器上未啟用動態主版頁面。 如需有關在 SharePoint 中的主版頁面的詳細資訊，請參閱[主版頁面](http://go.microsoft.com/fwlink/?LinkID=169281)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [SharePoint Foundation 開發深度](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [ASP.NET 概觀](/aspnet/overview)   
  [ASP.NET Web Pages](/aspnet/web-pages/index)   

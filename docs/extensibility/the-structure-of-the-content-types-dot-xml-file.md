@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 檔案的結構
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 會使用 [Content_Types].xml 檔案來安裝封裝，但不會安裝該檔案本身。  
@@ -34,32 +35,32 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="root-element"></a>根項目  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |`Types`|包含列舉 VSIX 封裝中的檔案類型的子項目。|  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Xmlns`|(必要項。)使用此 [Content_Types].xml 檔案的結構描述位置。|  
   
 ### <a name="attribute-name-attribute"></a>{屬性名稱}屬性  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |http://schemas.openformats.org/package/2006/content-types|內容類型結構描述的位置。|  
   
 ### <a name="child-elements"></a>子元素  
  `Types`項目可以包含任意數目的`Default`項目。  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |`Default`|描述 VSIX 封裝中的內容型別。 每個封裝中的檔案類型必須有它自己`Default`項目。|  
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Extension`|VSIX 套件中之檔案的副檔名。|  
 |`ContentType`|描述檔案名稱的副檔名相關聯的內容的類型。|  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列 [Content_Types].xml 檔案會描述一般的 VSIX 封裝。  
   
 ### <a name="code"></a>程式碼  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
 </Types>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 擴充功能的結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC： 新的標準來包裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)
