@@ -14,11 +14,12 @@ caps.latest.revision: "51"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 A*文字範本**主機*提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*需要的檔案或組件可從主機要求的資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
@@ -818,5 +819,5 @@ A*文字範本**主機*提供環境，可讓*文字範本轉換引擎*執行。 
 ## <a name="next-steps"></a>後續步驟  
  在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說： 連接到產生指示詞處理器的主機](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

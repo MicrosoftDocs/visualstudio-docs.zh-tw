@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d60acd7d0d992ced0235d5d1e1c768f146bf4acd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0338425d1812f7638feac01a3e804435cd0ae278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字範本中設定中斷點。 偵錯設計階段文字範本，請儲存文字範本檔，，然後選擇**偵錯 T4 範本**快顯功能表的 [方案總管] 中的檔案。 若要偵錯執行階段文字範本，只要偵錯它所屬的應用程式。  

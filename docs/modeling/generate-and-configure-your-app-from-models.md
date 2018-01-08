@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/27/2017
   
      例如，UML 類別圖是方塊與箭號的集合；運用這個標記法，您理論上可以定義任何項目。 但是，不建議您使用類別圖，而事實上描述一組類型的位置除外。 例如，您可以調整類別圖來描述不同類型的網頁。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   
  [如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

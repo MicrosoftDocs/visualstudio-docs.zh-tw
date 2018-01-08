@@ -12,11 +12,12 @@ caps.latest.revision: "42"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fe3f64cf11542d0b8098bb9a47c02a2a47647253
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>相依性圖表中加入自訂架構驗證
 在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，以便他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。  
@@ -276,5 +277,5 @@ namespace Validator3
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

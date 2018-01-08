@@ -32,11 +32,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: b768ca1a54608e7632753d4bb7d065e3ae8ece28
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32a159b717c3a6eebdfed5b5b2047837f72ac6e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 建立 code map 以視覺方式追蹤呼叫堆疊偵錯時。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。  
@@ -188,7 +189,7 @@ ms.lasthandoff: 10/27/2017
   
 -   [使用對應圖尋找 bug](#FindBugs)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   
  [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)   

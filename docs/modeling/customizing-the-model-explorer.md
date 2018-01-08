@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 880b10da32e858ce6e532bc5b8e75227a6e999d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 075f0295eaec64c2a80832e3c23f4b3247a93860
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以變更的外觀和行為的 [總管] 中您的網域特定語言設計工具，如下所示：  
@@ -112,5 +113,5 @@ ms.lasthandoff: 10/27/2017
   
      總管 中應該只顯示**執行者** 節點，並不應該顯示**註解**節點。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

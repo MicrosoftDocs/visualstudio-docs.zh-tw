@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: e1ea2e37668806849b88d1fb7d6a15142518c076
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1d4c70d319e80eea95af6f71180b8ef4a37cad45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 有向圖形標記語言 (DGML) 描述用於視覺化以及執行複雜度分析的資訊，而且是用來在 Visual Studio 中保存 Code Map 的格式。 它使用簡單的 XML 來描述循環與非循環的有向圖形。 有向圖形是一組用連結或邊緣相連的節點。 節點和連結可用來表示網路結構，例如軟體專案中的項目。  
@@ -321,7 +322,7 @@ ms.lasthandoff: 10/27/2017
 </Properties>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   
  [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

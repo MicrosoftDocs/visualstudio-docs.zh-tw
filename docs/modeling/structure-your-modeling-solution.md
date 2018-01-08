@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: aeaaa6605d316804dc49a82de72fa2c43d25b03c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 3819227bbdfdd754166c886c9da0cc8bd727e94e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 若要在開發專案中有效使用模型，小組成員必須能夠同時處理不同專案部分的模型。 本主題建議的配置，是將應用程式分割成不同部分，其對應到整個分層圖的圖層。  
@@ -108,5 +109,5 @@ ms.lasthandoff: 11/07/2017
   
  [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)的進一步指引管理小組中的模型  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)

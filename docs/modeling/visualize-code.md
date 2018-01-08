@@ -16,11 +16,12 @@ caps.latest.revision: "47"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 0abc0bff93da0944ce7e413a83dafc47e375a8a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 您可以使用 Visual Studio 的視覺化和模型工具，以利了解現有的程式碼，並描述您的應用程式。 這可讓您以視覺化方式了解變更會如何影響程式碼，並幫助您評估因這些變更所導致的工作和風險。 例如：  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
 |**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構論壇](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [案例： 變更您的設計使用視覺化和模型](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)   
  [分析和模型架構](../modeling/analyze-and-model-your-architecture.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   

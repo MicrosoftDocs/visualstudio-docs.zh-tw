@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2555fe2be42ed58482cdacf174a6cb035a8d7bd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-tools"></a>自訂項目工具
 在一些 DSL 定義，您一組項目代表單一的概念。 例如，如果您建立的模型，其中一個元件都有一組固定的通訊埠，您一定想要在其父元件的同時間建立的連接埠。 因此，您必須自訂項目建立工具，讓它會建立一組項目，而不是其中一個。 若要達成此目的，您可以自訂如何初始化項目建立工具。  
@@ -61,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)

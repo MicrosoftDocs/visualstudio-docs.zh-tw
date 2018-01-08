@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 3fdf24bbcfcbda2e5e6c1d8a3737d9a53ed5ae23
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e117b6fad7a558d002bf0e8689c56dbc2947644f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
 交易確認至存放區所做的變更會被視為一個群組。 變更群組可加以認可或回復，當做單一單位。  

@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: dafee91f26cf45d780f1b222d8daf5977980a3f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0106c63a967e8780c56245d461231f7df47f5b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在您自己的電腦或其他電腦上，您可以安裝的網域特定定義域語言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必須安裝在目標電腦上。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/27/2017
   
     -   DSL 總管 中按一下根節點，然後在 屬性 視窗中，檢閱：  
   
-        -   說明  
+        -   描述  
   
         -   版本  
   

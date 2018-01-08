@@ -16,11 +16,12 @@ caps.latest.revision: "55"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 6f55cbcd7e213d228a8b20f89538dfd88d8c2038
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 藉由建立描述您的應用程式架構以高層級*相依性圖表*Visual Studio 中。 確定您的程式碼保持一致與這個設計來驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
@@ -159,6 +160,6 @@ ms.lasthandoff: 11/07/2017
 ##  <a name="BuildValidation"></a>在建置流程中包含圖層驗證  
  若要確保在程式碼的日後變更符合相依性圖表，包含您的方案標準建置流程的圖層驗證。 其他小組成員會建置此方案，只要任何程式碼中的相依性和相依性圖表的差異將會報告為建置錯誤。 如需在建置程序中包含圖層驗證的詳細資訊，請參閱[使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
  [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)

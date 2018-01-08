@@ -14,11 +14,12 @@ caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7f2b46b615c80e2455823ee63262f17f08d307c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立將變更傳播會在項目到另一個 Visualization and Modeling SDK (VMSDK) 中的存放區規則。 存放區中的任何項目變更時，規則排程時所要執行，通常就會認可最外層的交易。 有不同類型的不同類型的事件，例如加入新項目，或刪除它的規則。 您可以將規則附加到特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保模型變更時，會更新圖表。 您可以自訂特定領域語言，加入您自己的規則。  
@@ -212,6 +213,6 @@ namespace Company.TaskRuleExample
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [事件處理常式將模型之外的變更傳播](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)

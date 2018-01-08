@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f3dc3efefa4a89d64a64bd946f1f79e6c5a6d4df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 的文字行。 您可以設裝飾項目會出現，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可以有不同的圖示會出現取決於該人員的性別的子系數目等等。  
@@ -106,7 +107,7 @@ A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 
   
 8.  重新建置並執行方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [定義圖形和連接器](../modeling/defining-shapes-and-connectors.md)   
  [在圖表上設定的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

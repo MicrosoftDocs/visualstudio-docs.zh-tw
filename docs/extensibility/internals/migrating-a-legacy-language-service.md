@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5b114cb060f4a689f2712dbaf323e6d2ee327c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f5f7cff29dd368acbbc3f599ec0cf623343031f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以移轉至較新版的 Visual Studio 的舊版語言服務更新專案，並將 source.extension.vsixmanifest 檔案加入專案。 語言服務本身將會繼續如往常一般，運作，因為 Visual Studio 編輯器會調整它。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  開啟 RegExLangServ.sln 方案。  
   
-5.  **單向升級** 視窗隨即出現。 按一下 [確定]。  
+5.  **單向升級** 視窗隨即出現。 按一下 [確定 **Deploying Office Solutions**]。  
   
 6.  更新的專案屬性。 開啟**專案屬性**所選取專案節點中的視窗**方案總管 中**、 按一下滑鼠右鍵，然後選取**屬性**。  
   
@@ -109,5 +110,5 @@ ms.lasthandoff: 10/31/2017
   
 12. 開始偵錯。 開啟 Visual Studio 的第二個執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

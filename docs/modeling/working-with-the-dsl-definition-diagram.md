@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 圖表[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定義是重要的工具來定義特定領域語言。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="expandcollapse-inheritance-tree"></a>展開/摺疊繼承樹狀結構  
  如果網域類別是其他網域類別的基底類別，您可以隱藏繼承樹狀結構網域類別定義上按一下滑鼠右鍵，然後按一下 **摺疊繼承樹狀結構**。 顯示繼承樹狀結構，定義項目上按一下滑鼠右鍵，然後按一下**展開繼承樹狀結構**。  
   
-### <a name="bring-tree-here"></a>將樹狀結構移到這裡  
+### <a name="bring-tree-here"></a>Bring Tree Here  
  您可以將圖表合併的預留網域類別上按一下滑鼠右鍵，然後按一下**這裡使樹狀**。 預留位置網域類別會成為定義項目，並顯示繼承和關聯性樹狀結構。 如果先前的定義項目是關聯性目標或繼承關聯性中的子項，該項目會成為預留位置項目；否則該項目不會出現。  
   
 ### <a name="split-tree"></a>Split Tree  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/27/2017
 ### <a name="show-as-class"></a>Show As Class  
  如果網域關聯性衍生關聯性，或者如果有與其他網域關聯性的內嵌或參考關聯性，您可以用滑鼠右鍵按一下關聯性，然後按一下做為類別顯示的關聯性**顯示類別**. 會顯示關聯性**定義域屬性**區間，而且會顯示在繼承和關聯性樹狀結構。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

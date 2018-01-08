@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20952c22f7449e7e19880f6f89f87d5d34bf8ee9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5f71926705169d4ed7dc40318e83f265e8603f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241：必須提供格式化方法的正確引數
 |||  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
  `format`字串引數傳遞至方法，例如<xref:System.Console.WriteLine%2A>， <xref:System.Console.Write%2A>，或<xref:System.String.Format%2A?displayProperty=fullName>不包含對應至每個物件引數，或反之亦然的格式項目。  
   
 ## <a name="rule-description"></a>規則描述  
- 例如，方法的引數<xref:System.Console.WriteLine%2A>， <xref:System.Console.Write%2A>，和<xref:System.String.Format%2A>格式字串，後面接著數個組成<xref:System.Object?displayProperty=fullName>執行個體。 格式字串所組成的文字和內嵌的格式項目表單的 {索引 [，對齊] [: formatString]}。 'index' 是以零起始的整數，會指出需要格式化的物件。 如果物件在格式字串中沒有對應的索引，則會忽略物件。 如果 'index' 所指定的物件不存在，<xref:System.FormatException?displayProperty=fullName>會在執行階段擲回。  
+ 例如，方法的引數<xref:System.Console.WriteLine%2A>， <xref:System.Console.Write%2A>，和<xref:System.String.Format%2A>格式字串，後面接著數個組成<xref:System.Object?displayProperty=fullName>執行個體。 格式字串所組成的文字和內嵌的格式項目表單的 {索引，[對齊] [: formatString]}。 'index' 是以零起始的整數，會指出需要格式化的物件。 如果物件在格式字串中沒有對應的索引，則會忽略物件。 如果 'index' 所指定的物件不存在，<xref:System.FormatException?displayProperty=fullName>會在執行階段擲回。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，提供格式項目每個物件引數，並提供每個格式項目之物件引數。  

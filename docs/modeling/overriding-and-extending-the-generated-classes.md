@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 81f218f9c0d9cd5d9c6abf8f4f9f0fb78181f4f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 DSL 定義是您可以在其建置一組強大的工具為基礎的網域特定定義域語言的平台。 許多擴充功能和地可覆寫及擴充所產生的 DSL 定義的類別。 這些類別包括不只是您在 DSL 定義圖表中，明確定義的網域類別，但其他類別，定義工具箱、 總管、 序列化和等等。  

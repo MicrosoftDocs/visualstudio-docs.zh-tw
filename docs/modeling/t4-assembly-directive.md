@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 設計階段文字範本中，`assembly` 指示詞會載入組件，因此範本程式碼可以使用它的類型。 這種效果類似在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中加入組件參考。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
   
 -   組件的絕對路徑  
   
- `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如：  
+ `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -91,5 +92,5 @@ ms.lasthandoff: 10/27/2017
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [T4 包含指示詞](../modeling/t4-include-directive.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "81"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e4f3dd4d84e52c8ae98cd5ae2dd8b93ac1e69c59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 925c61e2fa8ebf8c53e8170c7563031b4bbcb18b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 指示詞會提供指令給文字範本轉換引擎。  
