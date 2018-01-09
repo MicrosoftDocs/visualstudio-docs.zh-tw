@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 在您撰寫程式碼時，Visual Studio IntelliSense 會直接顯示您可以呼叫的函式、物件成員、函式引數和[程式碼片段](code-snippets.md)等相關資訊。 它也會在您輸入時顯示可能的完整命令，並在您按 Tab 鍵或 Enter 鍵時完成 (請參閱 [進階] 索引標籤的[編輯器選項](code-editing.md#editor-options))。 在編輯器與 [Interactive 視窗](interactive-repl.md)中皆能使用 IntelliSense。
 
-![顯示函式簽章的 IntelliSense](media/intellisense-function-signature.png) 
+![顯示函式簽章的 IntelliSense](media/intellisense-function-signature.png)
 
 鍵入函式或其他陳述式時，IntelliSense 會提供自動完成功能表，依您已輸入的內容 (區分大小寫) 來篩選︰
 
 ![IntelliSense 自動完成功能表](media/intellisense-auto-complete-menu.png)
 
-按 Tab 鍵 (或 Enter 鍵、空格鍵，視選項的設定方式而定) 將會插入下拉式清單中選取的項目。 您可以使用方向鍵來變更選取範圍。 
+按 Tab 鍵 (或 Enter 鍵、空格鍵，視選項的設定方式而定) 將會插入下拉式清單中選取的項目。 您可以使用方向鍵來變更選取範圍。
 
 IntelliSense 也提供 R 物件成員的建議︰
- 
+
 ![物件成員的 IntelliSense 建議](media/intellisense-auto-complete-r-objects.png)
- 
+
 按 Esc 鍵時會一併關閉功能表。 您可以用 Ctrl + 空格鍵再次開啟它。
 
 為函式呼叫輸入開頭的 `(` 會插入結尾 `)`，然後叫出簽章說明，如先前所示︰

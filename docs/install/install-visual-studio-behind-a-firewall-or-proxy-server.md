@@ -17,11 +17,12 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2bafcbf441d4efd6446e77f619379a665597e063
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方
 
@@ -71,7 +72,7 @@ Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio 2017](install-visual-studio.md)
 * [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)

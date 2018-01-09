@@ -1,5 +1,5 @@
 ---
-title: "對 Visual Studio 中的 Python 進行 Azure 遠端偵錯疑難排解 | Microsoft Docs"
+title: "在 Visual Studio 中對 Python 進行 Azure 遠端偵錯疑難排解 | Microsoft Docs"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,17 +12,20 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Python 和 Azure 適用的遠端偵錯疑難排解工具
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>適用於 Python 和 Azure 的遠端偵錯疑難排解工具
 
 下列的任何一個原因將會導致 Visual Studio 無法附加到[適用於遠端偵錯的 Azure App Service](debugging-azure-remote.md)︰
 
-| 原因 | 解決方法 |
+| 原因 | 解決方式 |
 | --- | --- |
 | 您並未安裝 Visual Studio 2013 Update 4 或更新版本。 | 從 [visualstudio.com](https://www.visualstudio.com/downloads/) 安裝適合的版本。 | 
 | 部署至 App Service 的專案與在 Visual Studio 中開啟的專案不符。 | 將正確的專案載入 Visual Studio。 |

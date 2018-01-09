@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 230362695dd9f099c15eb1113e1eb121418b0c41
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何：解除鎖定 Visual Studio
 
@@ -68,9 +69,9 @@ ms.lasthandoff: 11/17/2017
 
 ### <a name="update-expired-licenses"></a>更新到期的授權
 
- 如果您的訂閱完全到期，而不再具有 Visual Studio 的存取權限，您必須更新您的訂閱，或新增另一個有訂閱的帳戶。 若要查看您正在使用之授權的詳細資訊，請移至 [檔案]、[帳戶設定]，並查看對話方塊右側的授權資訊。 如果您有與不同帳戶建立關聯的其他訂閱，請選取 [新增帳戶] 連結，將該帳戶新增到對話方塊左側的 [所有帳戶] 清單。
+ 如果您的訂用帳戶完全到期，而不再具有 Visual Studio 的存取權限，則必須更新您的訂用帳戶，或新增另一個具有訂用帳戶的帳戶。 若要查看您正在使用之授權的詳細資訊，請移至 [檔案]、[帳戶設定]，並查看對話方塊右側的授權資訊。 如果您有與不同帳戶建立關聯的其他訂閱，請選取 [新增帳戶] 連結，將該帳戶新增到對話方塊左側的 [所有帳戶] 清單。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[登入 Visual Studio](../ide/signing-in-to-visual-studio.md)  
-[Visual Studio 所使用的網際網路資源](../ide/connected-environment.md)
+* [登入 Visual Studio](../ide/signing-in-to-visual-studio.md)
+ 

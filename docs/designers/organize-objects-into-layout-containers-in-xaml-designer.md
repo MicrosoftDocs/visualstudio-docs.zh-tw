@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5635f5da028283e6683548ec4388f7b3bfcbd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9c7b9c8f0f36435c2595a5df648daa54a614e278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 想像一下您想讓物件 (例如影像、按鈕和影片等物件) 出現在頁面的什麼地方。 或許您想讓物件出現在資料列和資料行中、在垂直或水平的單一行中，或在固定位置中。  
@@ -132,6 +133,6 @@ ms.lasthandoff: 10/31/2017
   
  ![](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

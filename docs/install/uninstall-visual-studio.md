@@ -15,11 +15,12 @@ ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3defb5813311a1c71bf6010fe49dc066f3403a1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3f2d472d5fc4b6581a9e94e1c2efacc2299eaca0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 Visual Studio 是我們提供給開發人員的整合式生產力工具套件，本頁面將引導您完成 Visual Studio 的解除安裝作業。  
@@ -58,7 +59,7 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio](install-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)

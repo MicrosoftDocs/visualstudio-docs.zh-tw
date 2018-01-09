@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 效能分析的初學者指南 | Microsoft Docs"
+title: "在 Visual Studio 中分析應用程式效能 | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,14 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 5ff8e6fe4814d9f049a816997252dac032e631ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>效能分析的初學者指南
+# <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
   
 當偵錯工具暫停時，[CPU 使用量] 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
@@ -68,7 +69,7 @@ ms.lasthandoff: 12/08/2017
 
      ![診斷工具可啟用 CPU 分析](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     當您選擇 [啟用 CPU 分析] 時，Visual Studio 就會開始錄製您的函式和它們執行所需的時間。 只有在應用程式於中斷點停止時，您才能檢視收集的資料。
+     當您選擇 [記錄 CPU 分析] 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間。 只有在應用程式於中斷點停止時，您才能檢視收集的資料。
 
 8.  按 F5 使應用程式執行至第二個中斷點。
 
@@ -155,7 +156,7 @@ ms.lasthandoff: 12/08/2017
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
 </div>
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [記憶體使用量](../profiling/memory-usage.md)  
  [CPU 使用量](../profiling/cpu-usage.md)  
  [Visual Studio 中的分析](../profiling/index.md)  

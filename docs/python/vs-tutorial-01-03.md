@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: 5d6d12e4-f06a-4c3f-8efa-f9fd9711c942
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8756ea30b3ca0e86f23dcad7ed4ed73826cbaaa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -63,8 +63,8 @@ ms.lasthandoff: 10/31/2017
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![使用互動式傳送貼上多行程式碼](media/vs-getting-started-python-15-interactive5.png)
@@ -83,14 +83,13 @@ ms.lasthandoff: 10/31/2017
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     如果您想要複製互動式視窗的確切內容 (包含提示和輸出)，只需要使用標準 [複製] 命令。
 
 1. 您剛完成的作業是使用互動式視窗的快速 REPL 環境了解一小部分程式碼的詳細資料，然後您可以方便地將該程式碼新增至專案的原始程式檔。 當您現在使用 Ctrl+F5 (或 [偵錯] > [開始但不偵錯]) 再次執行程式碼時，就會看到您想要的確切結果。
-
 
 ## <a name="next-steps"></a>後續步驟
 

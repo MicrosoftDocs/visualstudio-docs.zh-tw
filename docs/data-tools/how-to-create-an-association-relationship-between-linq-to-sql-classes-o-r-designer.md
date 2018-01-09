@@ -25,7 +25,7 @@ ms.lasthandoff: 12/22/2017
 您使用時必須選取父類別和子類別**關聯編輯器**對話方塊來建立關聯。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 例如，如果要建立與 Northwind 的 Customers 和 Orders 資料表對應的實體類別，則 Customer 類別會是父類別，而 Order 類別會是子類別。  
   
 > [!NOTE]
->  當您將資料表從**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)]([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)])，會自動建立根據現有的關聯在資料庫中的外部索引鍵關聯性。  
+>  當您將資料表從**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)])，會自動建立根據現有的關聯在資料庫中的外部索引鍵關聯性。  
 
 ## <a name="association-properties"></a>關聯屬性
 當您在 O/R 設計工具中選取該關聯時，建立關聯之後，有一些可設定的屬性中**屬性**視窗。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。  

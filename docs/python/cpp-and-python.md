@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -124,14 +125,14 @@ ms.lasthandoff: 12/01/2017
     > 請不要將 [C/C++] > [產生程式碼] > [執行階段程式庫] 選項設定為 [多執行緒偵錯 DLL (/MDd)]，即使是針對偵錯組態。 請選取 [多執行緒 DLL (/MD)] 執行階段，因為非偵錯 Python 二進位碼檔案是使用它所建置。 如果您剛好設定 /MDd 選項，您會在建置 DLL 的偵錯組態時看到錯誤「C1189: Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容」。 此外，如果您移除 `Py_LIMITED_API` 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為「Python 嚴重錯誤︰PyThreadState_Get︰沒有目前的執行緒」。)
     >
     > 請注意，/MDd 選項用來建置 Python 偵錯二進位檔案 (例如 python_d.exe)，但針對延伸模組 DLL 選取它仍會導致 `Py_LIMITED_API` 建置錯誤。
-   
+
 1. 以滑鼠右鍵按一下 C++ 專案，然後選取 [建置] 來測試您的組態 (偵錯和發行)。 `.pyd` 檔案位於 **Debug** 和 **Release** 下的 *solution* 資料夾，而不是 C++ 專案資料夾本身。
 
 1. 將下列程式碼加入 C++ 專案的主要 `.cpp` 檔案︰
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ ms.lasthandoff: 12/01/2017
     ```
 
 1. 重新建置 C++ 專案，確認您的程式碼正確。
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>將 C++ 專案轉換成適用於 Python 的延伸模組
 
@@ -171,11 +171,12 @@ ms.lasthandoff: 12/01/2017
     }
     ```
 
-1. 新增結構，定義 C++ `tanh` 函式如何向 Python 呈現：
+1. 新增結構，定義 C++ `tanh_impl` 函式如何向 Python 呈現：
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ ms.lasthandoff: 12/01/2017
     };
     ```
 
-1. 新增結構，定義您將在 Python 程式碼中看到的模組 (module.cpp 等 C++ 專案的內部檔名不太重要)。
+1. 新增可定義模組的結構，因為您想要在 Python 程式碼中參照它，特別是使用 `from...import` 陳述式時。 在下列範例中，"superfastcode" 模組名稱表示您可以在 Python 中使用 `from superfastcode import fast_tanh`，因為 `fast_tanh` 定義於 `superfastcode_methods` 內  (module.cpp 等 C++ 專案的內部檔名不太重要)。
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. 新增方法，當 Python 載入模組時會呼叫該方法，它必須命名為 `PyInit_<module-name>`，其中 &lt;模組名稱&gt; 完全符合 C++ 專案的 [一般] > [目標名稱] 屬性 (亦即，它符合專案所建置之 `.pyd` 的檔名)。
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -229,12 +230,12 @@ ms.lasthandoff: 12/01/2017
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
 
-    如需有關此指令碼的文件，請參閱 [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (建置 C 和 C++ 延伸模組) (python.org)。
+    如需此指令碼的文件，請參閱[建置 C 和 C++ 延伸模組](https://docs.python.org/3/extending/building.html) (python.org)。
 
 1. 從命令列使用 `setup.py` 程式碼時，其會指示 Python 使用 Visual Studio 2015 C++ 工具組建置延伸模組。 開啟提升權限的命令提示字元、巡覽至包含 C++ 專案 (和 `setup.py`) 的資料夾，然後輸入下列命令︰
 
@@ -249,7 +250,7 @@ ms.lasthandoff: 12/01/2017
 1. 在您的 `.py` 檔案中新增下列幾行，呼叫從 DLL 匯出的 `fast_tanh` 方法，並顯示其輸出。 如果您以手動方式輸入 `from s` 陳述式，則會看到 `superfastcode` 出現在完成清單中，且輸入 `import` 之後會出現 `fast_tanh` 方法。
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

@@ -12,11 +12,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: "106"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: de0ce914e61f6fd3dc3eb227496b09e77c37be57
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 580187da1ceb95369eb9da085248016a9d9a1707
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式化 UI 測試和動作記錄的支援組態和平台
 Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會列在下表中。 這些組態也套用至使用 [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)]建立的動作記錄。  
@@ -47,7 +48,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 |Windows Phone App|只支援 WinRT-XAML 架構的 Phone 應用程式。|  
 |UWP 應用程式|只支援以 XAML 為基礎 UWP 的應用程式。|  
 |通用 Windows App|只支援手機和桌上型電腦上以 XAML 為基礎的通用 Windows App。|  
-|Edge|在 Visual Studio 2015 Update 2 和更新版本，使用[自動程式化 UI 跨瀏覽器測試延伸模組](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)|  
+|Edge|不支援錄製動作步驟或使用產生器來檢視物件屬性。 使用 Visual Studio 2015 Update 2 和更新版本可以在 Edge 瀏覽器上播放測試，方法是使用[自動程式化 UI 跨瀏覽器測試延伸模組](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)|  
 |Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **重要事項︰**只有在桌上型電腦才支援 Internet Explorer 10。 <br /><br /> Internet Explorer 11 **重要事項︰**只有在桌上型電腦才支援 Internet Explorer 11。|完全支援。<br /><br /> -   **在 Internet Explorer 9 和 Internet Explorer 10 中支援 HTML5：** 自動程式碼 UI 測試支援錄製、播放和驗證 HTML5 控制項：Audio、Video、ProgressBar 和 Slider。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。 **警告：**      如果您在 Internet Explorer 10 中建立自動程式化 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。<br />-   **支援 Internet Explorer 10 拼字檢查：** Internet Explorer 10 包含所有文字方塊的拼字檢查功能。 這樣可讓您從建議的更正清單中選擇。 自動程式碼 UI 測試會忽略選取替代拼字建議之類的使用者動作。 只會記錄在文字方塊中輸入的最後一個字。<br />     會記錄使用拼字檢查控制項之自動程式碼 UI 測試的下列動作：[新增至字典]、[複製]、[全選]、[新增至字典] 和 [忽略]。<br />-   **支援在 Windows 8 下執行的 64 位元 Internet Explorer：** 之前並不支援使用 64 位元版本的 Internet Explorer 進行錄製和播放。 在 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，已針對 Internet Explorer 64 位元版本啟用自動程式碼 UI 測試。 **警告：**      只有在執行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本時，才會提供對 Internet Explorer 的 64 位元支援。<br />-   **在 Internet Explorer 9 中支援釘選的網站：**Internet Explorer 9 已導入釘選的網站。 使用釘選的網站時，您可直接從 Windows 工作列進入最喜愛的網站，而不需先開啟 Internet Explorer。 自動程式碼 UI 測試目前可以在釘選的網站上產生意圖感知動作。 如需釘選網站的詳細資訊，請參閱 [釘選的網站](http://go.microsoft.com/fwlink/?LinkId=220037)。<br />-   **支援 Internet Explorer 9 語意標記：** Internet Explorer 9 引進了下列語意標記：section、nav、article、aside、hgroup、header、footer、figure、figcaption 和 mark。 自動程式碼 UI 測試會在錄製時忽略以上所有語意標記。 您可以使用 [自動程式碼 UI 測試產生器] 在這些標記上加入判斷提示。 您可以在 [自動程式碼 UI 測試產生器] 中使用巡覽撥號，巡覽至其中任何項目並檢視其屬性。<br />-   **完美地處理在 Internet Explorer 版本之間的空白字元：** Internet Explorer 8、Internet Explorer 9 和 Internet Explorer 10 處理空白字元的方式有所差異。 自動程式碼 UI 測試會順暢地處理這些差異。 因此，在 Internet Explorer 8 中建立的自動程式碼 UI 測試可以在 Internet Explorer 9 和 Internet Explorer 10 中順利運作。<br />-   **現在會記錄 Internet Explorer 的通知區域並且設定「錯誤時繼續」屬性：**在 Internet Explorer 通知區域中的所有動作現在都會加以記錄，並且會設定「錯誤時繼續」屬性。 如果通知列未在播放期間出現，則會忽略其上面的動作，而自動程式碼 UI 測試會繼續執行下一個動作。|  
 |Windows Forms 與 WPF 協力廠商控制項|完全支援。<br /><br /> 若要啟用 Windows Forms 和 WPF 應用程式的協力廠商控制項，您必須加入參考和程式碼。 如需詳細資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)。|  
 |Internet Explorer 6<br /><br /> Internet Explorer 7|不支援。|  
@@ -69,6 +70,6 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
   
  如需有關如何建立擴充功能以支援其他平台的資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)和[擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [從現有的動作記錄產生自動程式化 UI 測試](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)

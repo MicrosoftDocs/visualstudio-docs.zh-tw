@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>使用 R 互動視窗
 
@@ -60,7 +61,7 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 
 工具列命令如下，其中大部分都有鍵盤對等項目，而且 [R 工具] > [工作階段] 和 [R 工具] > [工作目錄] 功能表上也都會提供 (如所述)：
 
-| 按鈕 | 命令 | 按鍵組合 | 說明 | 
+| 按鈕 | 命令 | 按鍵組合 | 描述 | 
 | --- | --- | --- | --- |
 | ![[重設] 按鈕](media/repl-toolbar-01-reset.png) | 重設 | Ctrl+Shift+F10 | 重設互動式視窗工作階段，並清除所有變數和歷程記錄。 |
 | ![[清除] 按鈕](media/repl-toolbar-02-clear.png) | 清除 | Ctrl+L | 清除互動式視窗中所顯示的輸出；不會影響工作階段變數或歷程記錄。 |
@@ -75,7 +76,6 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 | ![[將工作目錄設定為專案位置] 按鈕](media/repl-toolbar-11-set-working-directory-to-project.png) | 將工作目錄設定為專案位置 | Ctrl+Shift+P | 將工作目錄設定為 Visual Studio 中目前已載入專案的根目錄。 請參閱[工作目錄](#working-directory)。 |
 | (文字欄位) | 選取工作目錄 | N/A | 工作目錄的直接輸入欄位。 請參閱[工作目錄](#working-directory)。 |
 
-
 ## <a name="workspaces-and-sessions"></a>工作區和工作階段
 
 在互動式視窗中執行程式碼，會在您目前的工作階段中建置內容。 內容是由全域變數、函式定義、程式庫載入等所組成。 這個內容統稱為「工作區」，而您隨時可以儲存和載入工作區。 
@@ -88,12 +88,10 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 
 [重設] 按鈕或 [R 工具] > [工作階段] > [重設] 可清除工作階段內容。 如果您要使用遠端工作階段，則重設也會刪除遠端電腦上的使用者設定檔，以清除所有儲存在該處的檔案 (請參閱[工作區](workspaces.md#directories-on-local-and-remote-computers))。
 
-
 ## <a name="working-directory"></a>工作目錄
 
 開發人員通常會想要變更其在互動式工作階段時的工作目錄。 可在工具列、[R 工具] > [工作目錄] 功能表以及專案操作功能表上取得的各種命令，可讓您輕鬆地將工作目錄設定為來源檔案的位置、專案的位置，或任何其他任意位置。 這麼做可協助您在參考檔案時，避免鍵入完整路徑名稱或過長的相對路徑名稱。
 
- 
 ## <a name="history"></a>歷程
 
 您在互動式視窗中輸入的每一行，包括從編輯器傳送的行，都會保留在 REPL 的歷程記錄中。 您接著可以使用向上鍵和向下鍵來巡覽歷程記錄，因為您可能習慣使用命令列。

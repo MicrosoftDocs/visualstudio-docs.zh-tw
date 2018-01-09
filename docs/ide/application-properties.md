@@ -11,52 +11,49 @@ helpviewer_keywords:
 - application properties [Visual Studio]
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 203b8dad25cd7d6128cff54ac0f2c24c78fba680
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="application-properties"></a>Application Properties
-您可以在 [專案設計工具] 的 [應用程式] 窗格中，設定 Visual Basic、C# 和 F# 應用程式的一般應用程式屬性 (例如應用程式類型、啟動物件和組件資訊)。  
-  
- 下列工作可以在 [應用程式] 窗格中完成：  
-  
+# <a name="application-properties"></a>應用程式屬性
+
+您可以在 [專案設計工具] 的 [應用程式] 窗格中，設定 Visual Basic、C# 和 F# 應用程式的一般應用程式屬性 (例如應用程式類型、啟動物件和組件資訊)。
+
+下列工作可以在 [應用程式] 窗格中完成：
+
 -   指定組件資訊  
-  
+
 -   指定應用程式的啟動顯示畫面  
-  
+
 -   指定應用程式層級事件  
-  
+
 -   變更組件名稱  
-  
+
 -   變更應用程式的命名空間  
-  
+
 -   變更應用程式類型  
-  
+
 -   變更應用程式的啟動物件  
-  
+
 -   指定應用程式圖示  
-  
+
 -   啟用 Windows XP 視覺化樣式  
-  
+
 -   指定應用程式的執行個體行為  
-  
+
 -   啟用自訂使用者驗證  
-  
--   指定應用程式的關閉行為  
-  
- 適用於您應用程式的工作取決於所使用的開發語言。  
-  
-## <a name="in-this-section"></a>本章節內容  
+
+-   指定應用程式的關閉行為
+
+## <a name="see-also"></a>另請參閱
+
  [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
-  
-## <a name="see-also"></a>另請參閱  
  [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

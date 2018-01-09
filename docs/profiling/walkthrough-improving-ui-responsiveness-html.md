@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>逐步解說：改善 UI 回應性 (HTML)
 本逐步解說將帶領您使用 [HTML UI 回應性分析工具](../profiling/html-ui-responsiveness.md)找出並修正效能問題。 在 Visual Studio 中，此分析工具適用於使用 JavaScript 的 UWP 應用程式。 在這個案例中，您將建立極常更新 DOM 項目的效能測試應用程式，並且使用分析工具找出並修正問題。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>建立及執行效能測試應用程式  
   
-1.  在 Visual Studio 中，建立新的 Windows 通用 JavaScript 專案。 (選取 [檔案] / [新增] / [專案]。) 選擇左窗格中的 [JavaScript]，然後選擇 [Windows]，[Windows 10]，然後選擇 [通用] 或 [Windows Phone]。  
+1.  在 Visual Studio 中，建立新的 Windows 通用 JavaScript 專案。 選取 [檔案] > [新增] > [專案]。 選擇左窗格中的 [JavaScript]，然後選擇 [Windows]，[Windows 10]，然後選擇 [通用] 或 [Windows Phone]。  
   
 2.  > [!IMPORTANT]
     >  本主題中所顯示的診斷結果均以 Windows 8 App 為測試對象。  
@@ -242,5 +243,5 @@ ms.lasthandoff: 12/07/2017
   
 2.  再次執行 HTML UI 回應性分析工具並檢查 CPU 使用率圖表。 您會發現這次並沒有發生過多的事件，而且 CPU 使用率也下降接近到零， 表示問題修復了。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [HTML UI 回應性](../profiling/html-ui-responsiveness.md)

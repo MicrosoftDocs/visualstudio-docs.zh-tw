@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 74978a3ef43a1e98202d32ed418008071c8794be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>設定遠端工作區
 
@@ -105,8 +106,8 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 如需了解使用自我簽署憑證的優點與風險，請參閱 Windows 說明。 `rtvs-daemon` 套件會在安裝期間產生自我簽署的憑證並進行設定。 只有當您想要取代自動產生的自我簽署憑證時，才需要進行下列作業。
 
 自行核發自我簽署憑證：
-1. SSH 或登入您的 Linux 電腦。
 
+1. SSH 或登入您的 Linux 電腦。
 1. 安裝 `ssl-cert` 套件：
     ```sh
     sudo apt-get install ssl-cert

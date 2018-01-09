@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-下方列出的的是允許的值。您可以以逗號分隔來指定多個值。
+以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \*(請使用此值來指定所有符號)
 - Class - 類別
@@ -63,7 +64,7 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-下方列出的的是允許的值，您可以以逗號分隔來指定多個值。
+以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \* (請使用此值來指定所有存取層級)
 - public
@@ -81,16 +82,15 @@ ms.lasthandoff: 12/01/2017
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-下方列出的的是允許的值，您可以以逗號分隔來指定多個值。
+以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
-- \* (請使用此值來指定所有修飾詞)
 - abstract 或 must_inherit
 - async
 - const
 - readonly
 - static 或 shared
 
-若您省略這個屬性，您的命名規則將會套用至所有修飾詞。
+`required_modifiers` 是選擇性屬性。 若您省略這個屬性，您的命名規則將會套用至所有修飾詞。
 
 ## <a name="style"></a>樣式
 
@@ -155,7 +155,7 @@ warning | 當未遵循此樣式時，在錯誤清單中顯示編譯器警告。
 
 ## <a name="example"></a>範例
 
-以下是包含命名慣例的 .editorconfig 範例檔案。該命名慣例指定了公用屬性、方法、欄位、事件及委派必須以大寫形式命名。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
+下列 .editorconfig 檔案包含的命名慣例，指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -185,7 +185,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [.NET 語言與格式設定慣例](../ide/editorconfig-code-style-settings-reference.md)  
 [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)

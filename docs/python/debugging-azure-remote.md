@@ -1,5 +1,5 @@
 ---
-title: "使用 Visual Studio 中的 Python 進行 Azure 遠端偵錯 | Microsoft Docs"
+title: "在 Visual Studio 中使用 Python 進行 Azure 遠端偵錯 | Microsoft Docs"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>對 Azure 上的 Python 程式碼進行遠端偵錯
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 12/01/2017
 
 一旦您的專案已正確部署並已啟用 Web 通訊端，即可從 Visual Studio 中的 [伺服器總管 (Server Explorer)] 附加到 App Service ([檢視 (View)] > [伺服器總管 (Server Explorer)])。 在 [Azure] > [App Service] 下尋找您的網站和適用的資源群組，以滑鼠右鍵按一下並選取 [附加偵錯工具 (Python) (Attach Debugger (Python))]。 ([附加偵錯工具]  命令適用於在 IIS 下執行的 .NET 應用程式，且只有在連同 Python 應用程式一併裝載 .NET 程式碼時才有用。)
 
-Visual Studio 可能會直接提供您一連串的指示來直接附加，如以下的[不使用伺服器總管附加](#attaching-without-server-explorer)所述。 如果看不到 [附加偵錯工具 (Python) (Attach Debugger (Python))] 命令或 Visual Studio 無法附加到您的網站，請參閱[對 Azure 遠端偵錯進行疑難排解](debugging-azure-remote-troubleshooting.md)。
+Visual Studio 可能會直接提供您一連串的指示來直接附加，如以下的[不使用伺服器總管附加](#attaching-without-server-explorer)所述。 如果看不到 [附加偵錯工具 (Python)] 命令或 Visual Studio 無法附加到您的網站，請參閱[對 Azure 遠端偵錯進行疑難排解](debugging-azure-remote-troubleshooting.md)。
 
 如果連接成功，Visual Studio 會切換成偵錯工具檢視。 工具列指出偵錯中的處理序，例如 `wss://` URI：
 

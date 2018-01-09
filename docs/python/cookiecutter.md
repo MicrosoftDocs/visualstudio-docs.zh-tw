@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中適用於 Python 的 Cookiecutter 擴充功能 | Microsoft Docs"
+title: "Visual Studio 中適用於 Python 的 Cookiecutter 延伸模組 | Microsoft Docs"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,17 +12,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0844526b7c5dbc0955bc9cafff6f63121b9d7182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017，並可在舊版的 Visual Studio 中獨立安裝。
 
-Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anaconda 3 4.2 或更新版本 (32 位元或 64 位元)。 如果沒有適合的 Python 解譯器，Visual Studio 會顯示警告。 如果您在 Visual Studio 執行時安裝 Python 解譯器，按一下 Cookiecutter 工具列上的 [首頁] 按鈕可以偵測新安裝的解譯器。 (請參閱 [Python 環境](python-environments.md)以取得關於環境的一般資訊。)
+Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anaconda 3 4.2 或更新版本 (32 位元或 64 位元)。 如果沒有適合的 Python 解譯器，Visual Studio 會顯示警告。 如果您在 Visual Studio 執行時安裝 Python 解譯器，按一下 Cookiecutter 工具列上的 [首頁] 按鈕可以偵測新安裝的解譯器。 (請參閱 [Python 環境](python-environments.md)以取得環境的一般資訊)。
 
 安裝之後，選取 [檢視] > [Cookiecutter 總管] 以開啟其視窗︰
 
@@ -99,7 +100,7 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 | 屬性 | 描述 |
 | --- | --- |
 | ThisAddIn | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
-| 說明 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
+| 描述 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
 | URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
 | 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`︰標準文字方塊，字串的預設值。</li><li>`list`︰標準下拉式方塊，清單的預設值。</li><li>`yesno`︰可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`︰包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 
@@ -171,7 +172,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 ]
 ```
 
-使用多個引數的陣列。 針對參數，請將參數和其值分割成不同的引數，並使用適當引用。 例如：
+使用多個引數的陣列。 針對參數，請將參數和其值分割成不同的引數，並使用適當引用。 例如: 
 
 ```json
 "_visual_studio_post_cmds": [

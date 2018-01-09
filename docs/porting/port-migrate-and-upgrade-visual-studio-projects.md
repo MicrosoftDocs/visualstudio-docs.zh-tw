@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b508aadfb44792374c323854ee5333905827f23e
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e786abe316d60ad0d6cc8a0fd5de356f8d2332c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、移轉及升級 Visual Studio 專案
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/12/2017
 
 下列清單描述 Visual Studio 2017 對使用舊版建立之專案的支援。
 
-如果您在此處沒有看到應列出的專案或檔案類型，請參閱[本主題的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，並記在下列註解中。
+如果您在這裡看不到應列出的專案或檔案類型，請參閱[本主題的 Visual Studio 2015 版本](https://msdn.microsoft.com/library/hh266747.aspx)，並[提出問題](https://github.com/MicrosoftDocs/visualstudio-docs/issues/)與您專案類型的詳細資料。
 
 | 專案類型 | 支援 |
 | --- | --- |

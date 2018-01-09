@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的資料科學與分析應用程式工作負載 | Microsoft Docs"
 ms.custom: 
-ms.date: 9/5/2017
+ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,16 +10,16 @@ ms.technology:
 - devlang-fsharp
 ms.tgt_pltfrm: 
 ms.topic: landing-page
-ms.assetid: 018069f3-6d1a-4143-a851-d86d2ff5fbfc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 976bd73c7740e474e4fa7ea3e4cf89f880c7900c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-science
+ms.openlocfilehash: 97debeab6349fefee48d6c550c39c18c3e516b75
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>資料科學與分析應用程式工作負載
 
@@ -42,17 +42,16 @@ R 和 Python 是兩個用於資料科學的主要指令碼語言。 這兩種語
 
 - F # 語言支援
 - Python：
-    - Python 語言支援
-    - Python Web 支援
-    - [Anaconda3 64 位元](https://www.continuum.io) (包含大量資料科學程式庫和 Python 解譯器的 Python 散發)
-    - Cookiecutter 範本支援
+  - Python 語言支援
+  - Python Web 支援
+  - [Anaconda3 64 位元](https://www.continuum.io) (包含大量資料科學程式庫和 Python 解譯器的 Python 散發)
+  - Cookiecutter 範本支援
 - R:
-    - R 語言支援    
-    - [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started) (Microsoft 的完全相容、社群支援的 R 解譯器與 ScaleR 程式庫，以對單一節點或叢集進行更快速地計算。 您也可以從 [CRAN](https://cran.r-project.org/) 使用任何 R)。
-    - R 開發工具的執行階段支援
+  - R 語言支援
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (Microsoft 的完全相容、社群支援的 R 解譯器與 ScaleR 程式庫，以對單一節點或叢集進行更快速地計算。 您也可以從 [CRAN](https://cran.r-project.org/) 使用任何 R)。
+  - R 開發工具的執行階段支援
 
-> [!Note]
-> 雖然 F# 隨附數個其他工作負載，而 Python 具有自己的工作負載，但是資料科學與分析應用程式是目前包含 R 的唯一工作負載。與工作負載無關，在安裝程式的 [個別元件] 索引標籤上也可以選取三個 R 元件。 選取 [開發活動] > [R 語言支援]、[開發活動] > [Microsoft R Client] 和 [編譯器、建置工具與執行階段] > [R 開發工具的執行階段支援] 選項。
+雖然 F# 隨附數個其他工作負載，而 Python 具有自己的工作負載，但是資料科學與分析應用程式是目前包含 R 的唯一工作負載。與工作負載無關，在安裝程式的 [個別元件] 索引標籤上也可以選取三個 R 元件。 選取 [開發活動] > [R 語言支援]、[開發活動] > [Microsoft R Client] 和 [編譯器、建置工具與執行階段] > [R 開發工具的執行階段支援] 選項。
 
 ## <a name="sql-server-integration"></a>SQL Server 整合
 
@@ -73,7 +72,6 @@ SQL Server 支援使用 R 和 Python，以直接在 SQL Server 內執行進階�
 若要完整利用 SQL Server 整合，您也應該使用 [SQL Server Data Tools] 選項來安裝**資料儲存和處理**工作負載。 此選項可啟用 SQL IntelliSense、語法醒目提示和部署。
 
 ![資料儲存和處理工作負載](media/data-storage-workload.png) &nbsp;&nbsp; &nbsp;&nbsp; ![資料儲存和處理工作負載選項](media/data-storage-workload-options.png)
-
 
 如需詳細資訊：
 

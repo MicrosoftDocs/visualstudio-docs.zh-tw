@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-environments"></a>Python 環境
 
@@ -110,7 +111,7 @@ Visual Studio 通常會透過檢查登錄來找出安裝的 Python 解譯器 (�
 
 ![Python 環境的 [Oview (概觀)] 索引標籤](media/environments-overview-tab.png)
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 | --- | --- |
 | 將此環境設為新專案的預設值 | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
 | 前往散發者的網站 | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
@@ -137,7 +138,7 @@ Visual Studio 通常會透過檢查登錄來找出安裝的 Python 解譯器 (�
 
 | 欄位 | 描述 |
 | --- | --- |
-| **說明** | 要賦予環境的名稱。 |
+| **描述** | 要賦予環境的名稱。 |
 | **Prefix path (前置路徑)** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
 | **Interpreter path (解譯器路徑)** | 解譯器可執行檔的路徑，通常是前置路徑後面再接著 `python.exe` |
 | **Windowed interpreter (Windows 解譯器)** | 非主控台可執行檔的路徑，通常是前置路徑後面再接著 `pythonw.exe`。 |

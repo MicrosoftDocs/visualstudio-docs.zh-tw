@@ -17,13 +17,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: data-science
+ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
+
+設定的存取方式是透過 [R 工具] > [選項] 功能表，或透過 [工具] > [選項] 並捲動到 [R 工具]：
+
+  ![R 工具的 [選項] 對話方塊](media/options-dialog.png)
 
 您可以使用下列方法存取 R 專用的選項及設定。 您必須選取位於 [選項] 對話方塊底部的 [顯示所有設定] 方塊，才能顯示這些區段。
 
@@ -66,20 +71,20 @@ ms.lasthandoff: 12/07/2017
 
 這些選項控制[變數總管](variable-explorer.md)和偵錯工具視窗 (如監看式和區域變數) 中的值處理方式 (請參閱[偵錯](debugging.md))。
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 評估使用中繫結 | `True` | 為 `True` 時，確保您在檢查變數和屬性時一律會看到最新值。 根據實作方式，風險是評估運算式可能會造成副作用。 |
 | 顯示以點為前置字元的變數 | `False` | 指定是否顯示前面加上 `.` 的變數。 |
 
 ### <a name="grid-view"></a>格線檢視
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 動態評估 | `False` | 根據預設，`View(<expression>)` 函式會擷取資料的快照集作為資料框架，而該資料框架會儲存大型資料集並消耗大量的記憶體。 將此選項設為 `True`，表示運算式會在格線更新並僅擷取要顯示的資料時進行評估。 然而，若運算式發生變更，則資料同時也會發生變更。此舉可能不適合 dplyr pip 運算式。 |
 
 ### <a name="help"></a>說明
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | F1 網頁瀏覽器 | `Internal` | 控制使用 Ctrl+F1 搜尋詞彙時的說明顯示方式。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 |
 | F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中對詞彙按 Ctrl+F1 時，如何將搜尋詞彙傳遞至搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 |
@@ -87,7 +92,7 @@ ms.lasthandoff: 12/07/2017
 
 ### <a name="history"></a>歷程
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 一律儲存歷程記錄 | `True` | 控制只要關閉專案，RTVS 是否就會將命令歷程記錄寫入工作目錄中的 `.RHistory` 檔案。 即使您在結束前未儲存專案，還是會儲存歷程記錄。 |
 | 重設搜尋篩選 | `True` | 判斷 [歷程記錄] 視窗是否可以篩選命令歷程記錄，只顯示子字串與 [R 歷程記錄] 對話方塊中篩選詞彙相符的命令。 此設定可決定是否只要執行新命令就重設歷程記錄搜尋篩選，或切換至新專案，這樣會觸發載入不同的 `.RHistory` 檔案。 如果您使用篩選集來執行命令，並且納悶剛剛執行的命令為什麼未顯示在 [歷程記錄] 中，則預設設定 `True` 可將驚喜降至最低。 |
@@ -95,32 +100,32 @@ ms.lasthandoff: 12/07/2017
 
 ### <a name="html"></a>HTML
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | HTML 網頁瀏覽器 | `External` | 判斷是否呈現 `ggvis` 繪圖或 `shiny` 應用程式這類內容。 `Internal` 會在 Visual Studio 的工具視窗內顯示 HTML 輸出；`External` 會在預設瀏覽器中顯示 HTML 輸出。 |
 
 ### <a name="logging"></a>記錄
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 記錄事件 | `Normal` | 控制用於 RTVS 診斷的記錄詳細程度。 預設設定 `Normal` 會在 `TEMP` 目錄中建立記錄檔。 設定為 `Traffic` 時，RTVS 會記錄所有命令以及工作階段中的回應。 這些記錄檔絕不會離開您的電腦，但可能有助於診斷 RTVS 中的問題。 |
 
 ### <a name="markdown"></a>Markdown
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | Markdown 預覽瀏覽器 | `External` | 判斷顯示 RMarkdown HTML 輸出的位置。 `Internal` 會在 Visual Studio 的工具視窗內顯示 RMarkdown HTML 文件；`External` 會使用預設瀏覽器顯示 RMarkdown HTML。 |
 
 ### <a name="r-engine"></a>R 引擎
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 字碼頁 | `(OS Default)` | 設定 R 的字碼頁 (地區設定)。預設會使用作業系統的基礎地區設定。 | 
 | CRAN 鏡像 | `(Use .Rprofile)` | 設定預設 CRAN 鏡像來進行套件安裝。 預設設定 `Use .Rprofile` 使用 `.RProfile` 檔案中的 CRAN 鏡像設定。 |
 
 ### <a name="workspace"></a>工作區
 
-| 選項 | 預設值 | 說明 |
+| 選項 | 預設值 | 描述 |
 | --- | --- | --- |
 | 在專案開啟時載入工作區 | `No` | 設定為 `Yes` 會在開啟專案時，將工作階段資料從 `.RData` 檔案載入至全域環境。 |
 | 在重設時提示儲存工作區 | `Yes` | 設定為 `No` 會在您按一下 [互動式視窗] 中的 [重設] 按鈕時停用提示儲存工作區。 |

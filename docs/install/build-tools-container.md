@@ -11,11 +11,12 @@ ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: f7a85581023e100f5b69d1250711d0746540fe5c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-build-tools-into-a-container"></a>將建置工具安裝至容器
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 11/22/2017
 
 如果 Visual Studio Build Tools 沒有您建置原始程式碼所需的工具，這些相同步驟可用於其他 Visual Studio 產品。 但請注意，Windows 容器不支援互動式使用者介面，因此所有命令都必須自動化。
 
-## <a name="overview"></a>概觀
+## <a name="overview"></a>總覽
 
 您可以使用 [Docker](https://www.docker.com/what-docker) 建立映像，然後從中建立容器以建置您的原始程式碼。 範例 Dockerfile 會安裝最新版 Visual Studio Build Tools 2017，以及其他常用於建置原始程式碼的實用程式。 您可以進一步修改自己的 Dockerfile，以包含其他工具和指令碼來執行測試、發行建置輸出等等。
 
@@ -191,7 +192,8 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [容器的進階範例](advanced-build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
+* [Visual Studio Build Tools 2017 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

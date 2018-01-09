@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>在 Visual Studio 中同步處理設定
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>關閉特定電腦的同步設定
 
-Visual Studio 的同步設定預設為開啟。 您可以關閉電腦的同步設定，方法是移至 [工具] &#124; [選項] &#124; [環境] &#124; [同步設定] 頁面，並且取消核取核取方塊。  例如，如果您決定不要同步處理電腦 A 上 Visual Studio 的設定，則任何在電腦 A 上的設定變更都不會出現在電腦 B 或電腦 C 上。電腦 B 和 C 會繼續互相同步處理，但不會和電腦 A 同步。
+Visual Studio 的同步設定預設為開啟。 您可以關閉電腦的同步設定，方法是移至 [工具] &#124; [選項] &#124; [環境] &#124; [帳戶] 頁面，並且取消核取核取方塊。  例如，如果您決定不要同步處理電腦 A 上 Visual Studio 的設定，則任何在電腦 A 上的設定變更都不會出現在電腦 B 或電腦 C 上。電腦 B 和 C 會繼續互相同步處理，但不會和電腦 A 同步。
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>同步處理 Visual Studio 系列產品和版本之間的設定
 
@@ -67,6 +68,6 @@ Visual Studio 的同步設定預設為開啟。 您可以關閉電腦的同步�
 2. 開啟已升級 Visual Studio 安裝的**適用於 VS 2017 的開發人員命令提示字元**，並從中執行 `devenv /resetuserdata`。
 3. 啟動 Visual Studio，並從匯出的設定檔匯入儲存的設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)

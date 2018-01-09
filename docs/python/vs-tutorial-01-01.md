@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: a9dbfba9-192a-42b2-8f6f-0c5f0b4a605b
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: bdffa1de6b291c1c4e0a7b99708c353deffda5e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -45,20 +45,20 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
 1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案] (Ctrl+Shift+N) 以啟動 [新增專案] 對話方塊。 在這裡，您可以瀏覽不同語言的範本，然後選取您專案的範本，並指定 Visual Studio 放置檔案的位置。
 
-1. 若要檢視 Python 範本，請選取左側的 [範本] > [其他語言] > [Python]，或搜尋 "Python"。 使用搜尋十分適合在您不記得範本在語言樹狀結構中的位置時來尋找範本。
+1. 若要檢視 Python 範本，請選取左側的 [已安裝] > [Python]，或搜尋 "Python"。 使用搜尋十分適合在您不記得範本在語言樹狀結構中的位置時來尋找範本。
 
     ![顯示 Python 專案的新增專案對話方塊](media/vs-getting-started-python-01-new-project.png)
 
-1. 請注意，Visual Studio 中的 Python 支援如何包含一些專案範本，包含使用 Bottle、Flask 和 Django 架構的 Web 應用程式。 不過，基於本逐步解說的目的，讓我們先從空白專案開始。 
+    請注意，Visual Studio 中的 Python 支援如何包含一些專案範本，包含使用 Bottle、Flask 和 Django 架構的 Web 應用程式。 不過，基於本逐步解說的目的，讓我們先從空白專案開始。
 
 1. 選取 [Python 應用程式] 範本，並指定專案的名稱，然後選取 [確定]。 
 
 1. 幾分鐘後，Visual Studio 會在方案總管 視窗 (1) 中顯示專案結構。 預設程式碼檔案會在編輯器中開啟 (2)。 也會出現屬性視窗 (3)，以顯示方案總管中所選取之任何項目的其他資訊 (包含其在磁碟上的確切位置)。
- 
+
     ![方案總管中的 Python 專案](media/vs-getting-started-python-02-windows.png)
- 
+
 1. 需要一些時間來熟悉方案總管，您可以在其中瀏覽專案中的檔案和資料夾。
-    
+
     ![方案總管已展開以顯示各種功能](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 `.pyproj` 檔案所呈現。
@@ -70,7 +70,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
     (4) 在專案下方，也會有 [Python 環境] 節點。 展開時，您會看到您可用的 Python 解譯器。 展開解譯器節點，查看已安裝到該環境 (5) 的程式庫。
 
     以滑鼠右鍵按一下方案總管中的任何節點或項目，以存取適用命令的功能表。 例如，**Rename** 命令可讓您變更任何節點或項目的名稱 (包含專案和方案)。
-    
+
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]

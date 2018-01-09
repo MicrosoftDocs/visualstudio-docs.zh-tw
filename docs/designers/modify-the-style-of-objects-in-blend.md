@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0133ced82f35a8daefeb3dcaaacd4822f5cad345
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0d01e7c8ef95270cde9c1054cc286b62bbe95c46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 若要自訂物件，最簡單的方式就是在 [屬性] 窗格中設定屬性。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>還原控制項的預設樣式或範本  
- 選取控制項，然後在[屬性](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 接著按一下 [進階選項]![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
+ 選取控制項，然後在[屬性](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 然後按一下 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
   
 ##  <a name="Visual"></a>視覺狀態：依控制項的狀態變更其外觀  
  控制項可根據使用者互動有不同的視覺外觀。 例如，在使用者按一下按鈕時，您可以讓按鈕變成綠色或者執行動畫。 您可以使用轉場來縮短或加長視覺狀態間的時間。  
@@ -118,5 +119,5 @@ ms.lasthandoff: 10/31/2017
   
  **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources) (資源的簡短接觸)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

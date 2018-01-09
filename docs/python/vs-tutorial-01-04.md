@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 90f22c2f7626b09f230c497c54c8a37511ea1b0b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -26,34 +27,34 @@ ms.lasthandoff: 12/01/2017
 
 1. 將 `PythonApplication1.py` 檔案中的程式碼取代為下列程式碼。 程式碼的這項差異會展開 `make_dot_string`，以在偵錯工具中檢查其離散步驟。 它也會將 `for` 迴圈放在 `main` 函式中，並呼叫該函式來明確執行它：
 
-    ```python  
-    import sys  
-    from math import sin, cos, radians    
-    
+    ```python
+    import sys
+    from math import sin, cos, radians
+
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
         str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
         return str
-    
-    def main():  
-        for i in range(0, 1800, 12):
-            s = make_dot_string(i)  
-            print(s)  
-            
-    main()
-    ```  
 
-1. 按下 F5，或選取 [偵錯] > [開始偵錯] 功能表命令，檢查程式碼運作是否正常。 此命令會在偵錯工具中執行程式碼，但因為您在執行程式時尚未執行任何作業來暫停程式，所以它只會輸出反覆幾次的波浪圖樣。 對輸出視窗按一個按鍵。
+    def main():
+        for i in range(0, 1800, 12):
+            s = make_dot_string(i)
+            print(s)
+
+    main()
+    ```
+
+1. 按下 F5，或選取 [偵錯] > [開始偵錯] 功能表命令，檢查程式碼運作是否正常。 此命令會在偵錯工具中執行程式碼，但因為您在執行程式時尚未執行任何作業來暫停程式，所以它只會輸出反覆幾次的波浪圖樣。 按任意鍵以關閉輸出視窗。
 
     > [!Tip]
     > 若要在程式完成時自動關閉輸出視窗，請使用下列程式碼取代 `main()` 呼叫：
     >
-    > ```python    
-    > if __name__ == "__main__":  
-    >     sys.exit(int(main() or 0))      
-    > ```    
+    > ```python
+    > if __name__ == "__main__":
+    >     sys.exit(int(main() or 0))
+    > ```
 
 1. 在 `for` 陳述式上設定中斷點，方法是按一下該行旁的灰色邊界，或者將插入點放在該行，並使用 [偵錯] > [切換中斷點] 命令 (F9)。 灰色邊界會出現紅點，以指出中斷點 (如下方箭號所註)：
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 12/01/2017
     - [跳離函式] (Shift+F11) 會執行目前函式的其餘部分，並暫停於要呼叫的程式碼。
 
 1. 使用 [不進入函式]，不進入 `for` 陳述式。 「逐步執行」表示偵錯工具執行目前程式碼行 (包含任何函式呼叫)，然後再次立即暫停。 請注意，現在於 [區域變數] 和 [自動變數] 視窗中如何定義變數 `i`。
- 
+
 1. 不進入可呼叫 `make_dot_string` 並暫停的下個程式碼行。 [不進入函式] 這裡特別表示偵錯工具會在傳回時執行整個 `make_dot_string` 並暫停。 除非該函式有個別的中斷點，否則偵錯工具不會停止在該函式內部。
 
 1. 繼續逐步執行程式碼數次，並觀察 [區域變數] 或 [自動變數] 視窗中的值如何變更。
@@ -86,20 +87,20 @@ ms.lasthandoff: 12/01/2017
 1. 在 [區域變數] 或 [自動變數] 視窗中，按兩下 `i` 或 `s` 變數的 [值] 資料行，以編輯值。 按 Enter 或按一下該值外部，以套用任何變更。
 
 1. 使用 [逐步執行]，繼續逐步執行程式碼。 [逐步執行] 表示偵錯工具進入具有偵錯資訊的任何函式呼叫 (例如 `make_dot_string`)。 位在 `make_dot_string` 內之後，您可以檢查其區域變數，並特別逐步執行其程式碼。
- 
+
 1. 繼續逐步執行 [逐步執行]，並注意到，當您到達 `make_dot_string` 結尾時，下個步驟會回到 `s` 變數中具有新傳回值的 `for` 迴圈。 當您再次逐步執行到 `print` 陳述式時，會注意到對 `print` 的 [逐步執行] 不會進入該函式。 原因是 `print` 不是以 Python 撰寫，而是 Python 執行階段內的原生程式碼。
 
 1. 繼續使用 [逐步執行]，直到您再次到達 `make_dot_string`。 然後使用 [跳離函式]，並注意到，您回到 `for` 迴圈。 使用 [跳離函式]，偵錯工具會執行函式的其餘部分，然後在要呼叫的程式碼中自動暫停。 如果您逐步執行您想要偵錯之較長函式的某個部分，但不需要逐步執行其餘部分，也不想要在要呼叫的程式碼中設定明確的中斷點，則這十分有用。
 
 1. 若要繼續執行程式，直到達到下一個中斷點，請使用 [繼續] (F5)。 因為您在 `for` 迴圈中有中斷點，將會在下一個反覆項目中斷。
 
-1. 逐步執行迴圈中的數百個反覆項目可能十分冗長，因此 Visual Studio 可讓您將「條件」新增至中斷點。 偵錯工具接著只會在符合條件時，將程式暫停於中斷點。 例如，您可以在 `for` 陳述式上使用含中斷點的條件，讓它只在 `i` 的值超過 1600 時暫停。 若要設定此條件，請以滑鼠右鍵按一下中斷點紅點，然後選取 [條件] (Alt+F9,C)。 在出現的 [中斷點設定] 快顯視窗中，輸入 `i > 1600` 作為運算式，然後選取 [關閉]。 按 F5 繼續執行，並觀察程式在下一個中斷之前反覆執行多次。 
+1. 逐步執行迴圈中的數百個反覆項目可能十分冗長，因此 Visual Studio 可讓您將「條件」新增至中斷點。 偵錯工具接著只會在符合條件時，將程式暫停於中斷點。 例如，您可以在 `for` 陳述式上使用含中斷點的條件，讓它只在 `i` 的值超過 1600 時暫停。 若要設定此條件，請以滑鼠右鍵按一下中斷點紅點，然後選取 [條件] (Alt+F9,C)。 在出現的 [中斷點設定] 快顯視窗中，輸入 `i > 1600` 作為運算式，然後選取 [關閉]。 按 F5 繼續執行，並觀察程式在下一個中斷之前反覆執行多次。
 
     ![設定中斷點條件](media/vs-getting-started-python-21-debugging4.png)
 
 1. 若要執行程式直到完成，請按一下滑鼠右鍵並選取 [停用中斷點] (Ctrl+F9) 來停用中斷點。 然後選取 [繼續] (或按 F5) 以 執行程式。 程式結束時，Visual Studio 會停止其偵錯工作階段，並回復為其編輯模式。 請注意，您也可以按一下中斷點來刪除中斷點，但這也會刪除任何您已設定的條件。
 
-> [!Tip]    
+> [!Tip]
 > 在某些情況下 (例如，無法啟動 Python 解譯器本身)，輸出視窗只會短暫出現後自動關閉，而不讓您看到任何錯誤訊息。 如果發生這種情況，請以滑鼠右鍵按一下方案總管中的專案，並選取 [屬性]，再選取 [偵錯] 索引標籤，然後將 `-i` 新增至 [解譯器引數] 欄位。 此引數會導致解譯器在程式完成之後進入互動模式，並在您輸入 Ctrl+Z、Enter 結束之前保持視窗開啟。
 
 ## <a name="next-steps"></a>後續步驟
@@ -108,5 +109,6 @@ ms.lasthandoff: 12/01/2017
 > [在 Python 環境中安裝套件](vs-tutorial-01-05.md)
 
 ### <a name="going-deeper"></a>繼續探討
+
 - [偵錯](debugging.md)。
 - [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)提供 Visual Studio 偵錯功能的完整文件。

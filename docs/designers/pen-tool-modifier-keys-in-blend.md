@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2485d80fa9ec0816513ac7e5c374bdd6832dff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f8f21520b0ab26e3f0099097a473ee298c5674
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
-下表列出當您使用 [畫筆] 工具 ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。  
+下表列出當您使用**畫筆**工具 ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。  
   
 |若要執行這項操作|請執行|Pointer|  
 |-----------------------|-------------|-------------|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |結合兩個路徑時建立平滑的角|選取兩個路徑，按一下 [畫筆] 工具，再按一下其中一個路徑的結束點，然後拖曳另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|  
 |建立新路徑|按住 CTRL 鍵，並按一下上一個路徑的外部，以停止將點加入上一個路徑，然後按一下或拖曳您想要開始新路徑的地方|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> 畫筆開始指標|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)   
  [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)   

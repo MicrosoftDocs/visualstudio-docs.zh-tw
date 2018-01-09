@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dbb4c3d0a2d9077572a80c43d9d49d9c7e898dce
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-pylint-to-check-python-code"></a>使用 PyLint 檢查 Python 程式碼
 
@@ -39,7 +40,7 @@ PyLint 警告和錯誤會出現在 [錯誤清單] 視窗中︰
 
 ## <a name="setting-pylint-command-line-options"></a>設定 PyLint 命令列選項
 
-PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) (命令列選項) 一節描述如何透過 `.pylintrc` 設定檔控制 PyLint 的行為。 這類檔案可以放在 Visual Studio Python 專案的根目錄中或其他位置 (視您想要將這些設定套用的範圍而定)。
+PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) (命令列選項) 一節描述如何透過 `.pylintrc` 設定檔控制 PyLint 的行為。 視您想要套用這些設定的範圍而定，這類檔案可以放在 Visual Studio Python 專案的根目錄或其他位置 (如需詳細資料，請參閱[命令列選項](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options))。
 
 例如，若要在專案的 `.pylintrc` 檔案中隱藏上圖顯示的「遺失 docstring」警告，請執行下列步驟︰
 
@@ -54,3 +55,9 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
 1. 開啟檔案進行編輯，它包含您可以使用的各種設定。 若要停用警告，請找出 `[MESSAGES CONTROL]` 區段，然後找出該區段的 `disable` 設定。 您會看到一長串的特定訊息，可以在其中附加您想要的任何警告。 在此範例中，請附加 `,missing-docstring` (包括其中的逗號)。
 
 1. 儲存 `.pylintrc` 檔案，再次執行 PyLint，您會發現警告現在已經隱藏。
+
+> [!Tip]
+> 若要使用網路共用中的 `.pylintrc` 檔案，請利用使用 UNC 路徑或對應磁碟機代號之網路共用上的檔案名稱值來建立名為 `PYLINTRC` 的環境變數。 例如: 
+> ```
+> PYLINTRC=\\myshare\python\.pylintrc
+> ```

@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 6dda33b14a96d7d866413ea26dc267f9aa8b772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
-[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援可提供專案範本來設定 Django 架構 Web 應用程式的結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，搜尋「Django」，然後選取 [Django Web 專案] 範本。 產生的專案包含未定案程式碼，以及預設 SQLite 資料庫。 [空白 Django Web 專案] 範本和上述範本相似，但不包含資料庫。
+[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援可提供專案範本來設定 Django 架構 Web 應用程式的結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，並搜尋 "Django"，然後選取 [Django Web 專案]  範本。 產生的專案包含未定案程式碼，以及預設 SQLite 資料庫。 [Blank Django Web Project] (空白 Django Web 專案) 範本相似，但不包含資料庫。
 
 Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
@@ -38,13 +39,11 @@ Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio 也針對 Django 專案提供完整的[偵錯支援](debugging.md)： 
 
 ![中斷點](media/template-django-debugging.png)
 
 Django 專案一般是透過其 `manage.py` 檔案進行管理，而此檔案是 Visual Studio 所遵循的假設。 如果您停止使用該檔案作為進入點，則會中斷專案檔。 在該情況下，您需要[從現有檔案重新建立專案](python-projects.md#creating-a-project-from-existing-files)，而不要將它標示為 Django 專案。
-
 
 ## <a name="django-management-console"></a>Django 管理主控台
 

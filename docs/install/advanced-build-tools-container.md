@@ -11,11 +11,12 @@ ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: 8ab92d3936306ac47a59df33b4a1131341b28d44
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 
@@ -96,6 +97,7 @@ At line:1 char:1
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [將建置工具安裝至容器](build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
+* [Visual Studio Build Tools 2017 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

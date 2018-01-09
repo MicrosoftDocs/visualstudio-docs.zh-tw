@@ -1,36 +1,25 @@
 ---
-title: "使用 Visual Studio 的 Visual C# 和 Visual Basic 使用者入門 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+title: "使用 Visual Studio 的 Visual C# 和 Visual Basic 使用者入門 | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: "vs-acquisition" ms.tgt_pltfrm: "" ms.topic: "get-started-article" helpviewer_keywords: 
+  - 「C# 教學課程」
+  - 「Visual Basic 教學課程」
+  - 「了解 VB」
+  - 「VB 教學課程」
+  - 「了解 C#」
+  - "了解 Visual Basic" author: "TerryGLee" ms.author: "tglee" manager: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>使用 Visual Studio 的 Visual C# 和 Visual Basic 使用者入門
 不論您是剛接觸 Visual C# 或 Microsoft Visual Basic，都要從這裡開始學習。 「使用者入門說明」是一系列連續性的課程，將帶領您熟悉 Visual C# 和 Visual Basic。 盡情享受樂趣，並撰寫出一些了不起的軟體！  
   
  若要了解 Visual C++，請參閱 [Visual C++ 資源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  識別 Visual Studio IDE 中的基本視窗，藉由進行設定來最佳化您的開發經驗，然後建立一個簡單的程式。  
   
@@ -47,5 +36,5 @@ ms.lasthandoff: 10/31/2017
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171)了解如何在 Visual Studio 中建立簡單通用 Windows 應用程式。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Visual Studio Visual Studio 使用者開發入門](get-started-developing-with-visual-studio.md)

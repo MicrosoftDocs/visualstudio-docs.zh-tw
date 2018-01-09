@@ -8,20 +8,20 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-web-project-templates"></a>Python Web 專案範本
 
-Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其可針對處理各種架構進行設定)，在 Bottle、Flask 和 Django 架構中開發 Web 專案。 針對 Pyramid 等其他架構，您也可以使用一般的「Web 專案」範本。
+Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其可針對處理各種架構進行設定)，在 Bottle、Flask 和 Django 架構中開發 Web 專案。 針對 Pyramid 這類其他架構，您也可以使用一般的 [Web 專案] 範本。
 
 Visual Studio 不包含這些架構本身。 您必須以滑鼠右鍵按一下專案，並選取 [Python] > [安裝/升級架構] 來個別安裝架構。
 
@@ -63,12 +63,12 @@ Microsoft Azure 雲端服務「確實」支援 `requirements.txt` 檔案。 如�
 > [!Note]
 > [執行伺服器命令] 中的值會搭配 [偵錯] > [啟動伺服器] 命令或 Ctrl-F5 使用；[偵錯伺服器命令] 群組中的值則是搭配 [偵錯] > [啟動偵錯伺服器] 命令或 F5 使用。
 
-
 ### <a name="sample-bottle-configuration"></a>範例 Bottle 設定
 
-Bottle Web 專案範本包括會執行必要設定的未定案程式碼。 不過，匯入的 Bottle 應用程式可能不會包括此程式碼，在這種情況下，下列設定會使用已安裝的 `bottle` 模組啟動應用程式：
+[Bottle Web 專案] 範本包含會執行必要設定的未定案程式碼。 不過，匯入的 Bottle 應用程式可能不會包括此程式碼，在這種情況下，下列設定會使用已安裝的 `bottle` 模組啟動應用程式：
 
 - [執行伺服器命令] 群組：
+
     - **命令**：`bottle` (模組)
     - **引數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -80,9 +80,10 @@ Bottle Web 專案範本包括會執行必要設定的未定案程式碼。 不�
 
 ### <a name="sample-pyramid-configuration"></a>範例 Pyramid 設定
 
-Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一旦建立應用程式，便可以使用[從現有的 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
+Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建立應用程式之後，即可使用[從現有 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
 
 - [偵錯] 群組：
+
     - **伺服器連接埠**：6543 (或是 .ini 檔案中設定的值)
 
 - [執行伺服器命令] 群組：
@@ -95,7 +96,6 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一
 
 > [!Tip]
 > 您可能必須設定專案的 [工作目錄] 屬性，因為 Pyramid 應用程式的層級通常會比來源樹狀結構的最上層目錄再深一層。
-
 
 ### <a name="other-configurations"></a>其他設定
 
@@ -163,7 +163,7 @@ c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 - Azure 靜態檔案 web.config：當您有上述其中一個 `web.config` 檔案時，請將該檔案新增至子目錄，以排除它不讓應用程式進行處理。
 - Azure 遠端偵錯 web.config：新增透過 WebSockets 進行遠端偵錯的必要檔案。
 - Web 角色支援檔案：包含雲端服務 Web 角色的預設部署指令碼。
-- 背景工作角色角色支援檔案：包含雲端服務背景工作角色的預設部署及啟動指令碼。
+- 背景工作角色支援檔案：包含雲端服務背景工作角色的預設部署和啟動指令碼。
 
 如果您將偵錯 `web.config` 範本新增到專案，並計劃使用 Python 遠端偵錯，則必須使用 [偵錯] 設定來發行網站。 此設定不同於目前使用中的方案組態，且一律預設為 [發行]。 若要變更它，請開啟 [設定] 索引標籤，並使用發佈精靈的 [設定] 下拉式方塊 (如需建立並部署至 Azure Web Apps 的詳細資訊，請參閱 [Azure 文件](https://azure.microsoft.com/develop/python/))：
 

@@ -8,7 +8,6 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3c714867-7a64-4b1e-aca8-09d956192279
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
@@ -19,11 +18,12 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: python
+ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="general-options"></a>一般選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 建立虛擬環境時顯示輸出視窗| 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | 安裝或移除套件時顯示輸出視窗 | 開啟 |  清除即可防止 [輸出] 視窗出現。 |
@@ -60,7 +60,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="debugging-options"></a>偵錯選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 發生錯誤時於執行前提示 | 開啟 | 設定時，系統會提示您確認您想要執行包含錯誤的程式碼。 清除此選項，可停用警告。 |
 | 處理序異常結束時等候輸入<br/><br/>處理序正常結束時等候輸入 | 開啟 (針對兩者) | 從 Visual Studio 啟動的 Python 程式會執行它自己的主控台視窗中。 視窗預設會在關閉之前等待您按任一鍵，不論程式的結束方式為何。 若要移除該提示，並自動關閉視窗，請清除其中任一或兩個選項。 |
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="diagnostics-options"></a>診斷選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 包括分析記錄檔 | 開啟 | 使用按鈕將診斷儲存到檔案，或將它們複製到剪貼簿時，包含與已安裝 Python 環境分析相關的詳細記錄檔。 此選項可能會大幅增加所產生檔案的大小，但通常是診斷 IntelliSense 問題時所需的項目。 |
 | 將診斷儲存到檔案 (按鈕) | N/A | 提示輸入檔案名稱，然後將記錄檔儲存到文字檔。 |
@@ -83,7 +83,7 @@ ms.lasthandoff: 11/02/2017
 
 ## <a name="interactive-windows-options"></a>互動式視窗選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 指令碼 | N/A | 指定啟動指令碼的一般資料夾，以套用至所有環境的互動式視窗。 請參閱[啟動指令碼](python-environments.md#startup-scripts)。 不過，請注意，這項功能目前無法運作。 |
 | 按向上鍵/向下鍵巡覽歷程記錄 | 開啟 | 使用方向鍵，在互動式視窗中巡覽歷程記錄。 清除此設定，可改為使用方向鍵在互動式視窗的輸出中進行巡覽。 |
@@ -96,7 +96,7 @@ ms.lasthandoff: 11/02/2017
 
 ### <a name="completion-results"></a>完成結果
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 成員完成會顯示成員的交集 | Off | 設定時，只會顯示所有可能類型所支援的完成。 |
 | 根據搜尋字串篩選清單 | 開啟 | 在您鍵入時，套用完成建議的篩選 (預設為核取)。 |
@@ -104,7 +104,7 @@ ms.lasthandoff: 11/02/2017
 
 ### <a name="selection-in-completion-list"></a>完成清單中的選取範圍
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 輸入下列字元予以認可 | {}[]().,:;+-*/%&&#124;^~=<>#@\ | 這些字元一般會接在可從完成清單中選取的識別碼後面，因此只要鍵入字元就可以輕易地認可完成。 您可以視需要在清單中移除或新增特定字元。  |
 | 按 Enter 認可目前的完成 | 開啟 | 設定時，Enter 鍵會選擇並套用目前選取的完成，與上面字元相同 (但，當然，沒有 Enter 的字元，因此無法直接進入該清單！)。 |
@@ -112,7 +112,7 @@ ms.lasthandoff: 11/02/2017
 
 ### <a name="miscellaneous-options"></a>其他選項
 
-| 選項 | 預設 | 說明 |
+| 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 檔案開啟時進入大綱模式 | 開啟 | 開啟 Python 程式碼檔案時，會自動開啟編輯器中的 Visual Studio 大綱功能。 |
 | 貼上已移除的 REPL 提示 | 開啟 | 從貼上的文字中移除 >>> 和 ...，允許將程式碼從互動式視窗輕鬆傳送至編輯器。 如果您在從其他來源貼上時需要保留這些字元，請清除此選項。 |

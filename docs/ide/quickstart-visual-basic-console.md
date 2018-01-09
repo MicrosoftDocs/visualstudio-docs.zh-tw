@@ -1,7 +1,7 @@
 ---
-title: "快速入門：使用 Visual Basic 在 Visual Studio 中建立主控台應用程式 | Microsoft Docs"
+title: "快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式 | Microsoft Docs"
 ms.custom: 
-ms.date: 12/05/2017
+ms.date: 12/10/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -12,13 +12,14 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 57441895ccff8bf32b59d6306ca4ae618382d356
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="quickstart-create-a-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立主控台應用程式
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立在主控台上執行的簡單 Visual Basic 應用程式。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
@@ -32,11 +33,11 @@ ms.lasthandoff: 12/11/2017
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將專案命名為 *HelloWorld*。
 
-   ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/new-project-vb-dotnet-helloworld-console-app.png)
+   ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
      如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。
 
-   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vb-open-visual-studio-installer.png)
+   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
      Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -79,6 +80,7 @@ ms.lasthandoff: 12/11/2017
 
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Basic 和 Visual Studio IDE。 如果您想要更深入地鑽研，請繼續目錄的＜教學課程＞一節中的教學課程。
 
-## <a name="see-also"></a>請參閱
-* [快速入門：使用 Visual Basic 在 Visual Studio 中建立 "Hello World" Windows Forms 應用程式](quickstart-visual-basic-winforms.md)
-* [深入了解 Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+## <a name="see-also"></a>另請參閱
+* [快速入門：使用 Visual Studio 在 Visual Basic 中建立 "Hello World" Windows Forms 應用程式](quickstart-visual-basic-winforms.md)
+* [教學課程：Visual Studio 中的 Visual Basic 使用者入門](tutorial-visual-basic-console.md)
+* [IntelliSense for Visual Basic 程式碼檔案](visual-basic-specific-intellisense.md)

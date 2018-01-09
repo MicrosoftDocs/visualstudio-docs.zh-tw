@@ -12,15 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 47c0bd7bea18f32b8e017dabb803c4db4f46e2ca
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
-多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是需要能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用 (範例請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md))。 載入 Python 專案之後，Visual Studio 為 Python 和原生 (C/C++) 提供整合式的同步混合模式偵錯，包含合併的呼叫堆疊、可在 Python 和原生程式碼及任一類型的程式碼中斷點之間逐步執行、可在原生框架查看物件的 Python 表示法，反之亦然︰
+多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是需要能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用 (如需範例，請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md))。 載入 Python 專案之後，Visual Studio 為 Python 和原生 (C/C++) 提供整合式的同步混合模式偵錯，包含合併的呼叫堆疊、可在 Python 和原生程式碼及任一類型的程式碼中斷點之間逐步執行、可在原生框架查看物件的 Python 表示法，反之亦然︰
 
 ![混合模式偵錯](media/mixed-mode-debugging.png) 
 

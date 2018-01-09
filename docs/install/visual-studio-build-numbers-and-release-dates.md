@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 下表列出 Visual Studio 2017 迄今為止的組建編號和發行日期。
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | 發行 | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Preview 1.1 | 預覽 | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | 發行 | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Preview 1.0 | 預覽 | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | 發行 | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | 發行 | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Preview 5.0 | 預覽 | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | 發行 | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Preview 4.0 | 預覽 | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | 發行 | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | 發行 | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | 發行 | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Preview 3.0 | 預覽 | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | 發行 | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Preview 2.0 | 預覽 | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | 發行 | 10/19/2017 | 15.4.27004.2005 |
 | 15.5 Preview 1 | 預覽 | 10/11/2017 | 15.0.27009.1 |
 | 15.4 | 發行 | 10/9/2017 | 15.0.27004.20002 |
 | 15.4 Preview 6 | 預覽 | 10/9/2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ ms.lasthandoff: 11/22/2017
 | 15.3.1 | 發行 | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1 Preview 1 | 預覽 | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1  | 發行 | 8/18/2017 | 15.0.26730.08 |
-| 15.4 Preview 1 | 預覽 | 8/22/2017 | N/A |
+| 15.4 Preview 1 | 預覽 | 8/24/2017 | 15.4.26823.1 |
 | 15.3 | 發行 | 8/14/2017 | 15.0.26730.3 |
 | 15.3 Preview 7.1 | 預覽 | 8/11/2017 | 15.0.26730.3 |
 | 15.3 Preview 7 | 預覽 | 8/1/2017 | 15.0.26730.0 |
@@ -78,10 +95,10 @@ ms.lasthandoff: 11/22/2017
 以下是一些支援選項：
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio) \(英文\)，與我們以及其他 Visual Studio 開發人員進行互動。  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
+* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [Visual Studio 2017 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

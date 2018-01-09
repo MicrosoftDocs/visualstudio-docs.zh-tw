@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 程式碼片段
 程式碼片段是可快速插入程式碼的現成程式碼片段。 例如，`for` 程式碼片段會建立空白 `for` 迴圈。 部分程式碼片段是範圍陳述式程式碼片段，可讓您選取程式碼行，然後選擇包含所選取程式碼行的程式碼片段。 例如，如果您選取程式碼行，然後啟用 `for` 程式碼片段，則會建立迴圈區塊內包含這些程式碼行的 `for` 迴圈。 程式碼片段可以更快速、更輕鬆且更可靠地撰寫程式碼。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 12/07/2017
 |使用|建立 [using](/dotnet/csharp/language-reference/keywords/using-directive) 指示詞。|在命名空間 (包含全域命名空間) 內部。|  
 |while|建立 [while](/dotnet/csharp/language-reference/keywords/while) 迴圈。|在方法、索引子、屬性存取子或事件存取子內。|  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼片段函式](../ide/code-snippet-functions.md)   
  [程式碼片段](../ide/code-snippets.md)   
  [範本參數](../ide/template-parameters.md)   

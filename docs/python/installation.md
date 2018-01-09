@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 12/01/2017
 
     ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
 
-    | 選項 | 說明 | 
+    | 選項 | 描述 | 
     | --- | --- |
     | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種套件的開放型資料科學平台  (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。 |
     | Cookiecutter 範本支援 | 安裝 Cookicutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](cookiecutter.md)。 |
@@ -71,7 +72,6 @@ ms.lasthandoff: 12/01/2017
 1. 安裝之後，安裝程式會提供選項來修改、啟動、修復或解除安裝 Visual Studio。 任何已安裝元件有更新時，如果 Visual Studio 有更新，則 [修改] 按鈕會變更為 [更新]  (修改選項接著就會出現在下拉式功能表上)。您也可以搜尋 "Visual Studio"，以從 Windows [開始] 功能表啟動 Visual Studio 和安裝程式。
 
     ![從安裝程式啟動、修改或解除安裝 Visual Studio](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

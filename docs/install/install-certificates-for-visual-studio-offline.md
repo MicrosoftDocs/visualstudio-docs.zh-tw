@@ -14,11 +14,12 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 4d462120e7b51551ca7f15cc2d23387824a1f9f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -80,7 +81,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
     * 中繼憑證：**Microsoft 程式碼簽署 PCA**
         * 所有系統都需要。 請注意，從 Windows Update 套用所有更新的系統可能沒有此憑證。
     * 根憑證：**Microsoft 根憑證授權單位**
-        * 必要項。 此憑證隨附於執行 Windows 7 或更新版本的系統。
+        * 必要。 此憑證隨附於執行 Windows 7 或更新版本的系統。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>為何不會自動安裝來自 Certificates 資料夾的憑證？
 
@@ -121,7 +122,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio](install-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE 概觀 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概觀
 
@@ -35,19 +36,41 @@ Visual Studio 是一個互動式開發環境 (IDE)；這是一個有創意的啟
 
 ### <a name="create-cloud-apps-for-azure"></a>建立適用於 Azure 的雲端應用程式
 
-Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提供技術之支援雲端的應用程式。 您可以直接從 IDE，在 Microsoft Azure 上設定、建置、偵錯、封裝及部署應用程式和服務。 請使用「已連接服務」來將 Azure 服務運用在您的應用程式上。 若要取得「適用於 .NET 的 Azure 工具」，請在安裝 Visual Studio 時，選取 [Azure 開發] 工作負載。 如需詳細資訊，請參閱 [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/)。
+Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提供技術之支援雲端的應用程式。 您可以直接從 IDE，在 Microsoft Azure 上設定、建置、偵錯、封裝及部署應用程式和服務。 若要取得「適用於 .NET 的 Azure 工具」，請在安裝 Visual Studio 時，選取 [Azure 開發] 工作負載。 如需詳細資訊，請參閱 [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/)。
+
+您可以使用「已連線的服務」，將 Azure 服務運用到您的應用程式，例如：
+
+- [Azure 行動服務](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Azure 儲存體](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp (英文)](https://www.visualstudio.com/hockey-app/) 可協助您散發搶鮮版 (Beta)、收集即時當機報告，以及取得實際使用者的意見反應。 此外，您可以將 Office 365 REST API 與您自己的應用程式進行整合，以連接儲存在雲端的資料。 如需詳細資訊，請參閱[下列 GitHub 範例](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)。
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) 可協助您偵測和診斷應用程式和 Web 服務中的品質問題。 Application Insights 也可協助您了解使用者實際上如何處理應用程式，以最佳化使用者體驗。
 
 ### <a name="create-apps-for-the-web"></a>建立適用於 Web 的應用程式
 
-Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 如需詳細資訊，請參閱[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
+Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適用於 Web 的應用程式。 您可以使用 ASP.NET、Node.js、Python、JavaScript 及 TypeScript 來建立 Web 應用程式。 Visual Studio 了解 Angular、jQuery、Express 等 Web 架構。 ASP.NET Core 和 .NET Core 可在 Windows、Mac 及 Linux 作業系統上執行。 [ASP.NET Core](http://www.asp.net/core/overview) 是 MVC、WebAPI 及 SignalR 的重大更新，可以在 Windows、Mac 及 Linux 上執行。  ASP.NET Core 是全新的設計，提供您可組合的簡式 .NET 堆疊，讓您建置現代化的雲端架構 Web 應用程式和服務。
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>在世界級的編輯環境中撰寫程式碼
+如需詳細資訊，請參閱[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
 
-Visual Studio 可透過語法色彩標示、陳述式完成、IntelliSense (所選程式碼元素的快顯描述)、程式碼大綱、設定偵錯中斷點等功能，協助您快速且輕鬆地撰寫程式碼。
+### <a name="build-cross-platform-apps-and-games"></a>建置跨平台應用程式和遊戲
 
-![JavaScript 程式碼範例](../ide/media/vside_tour_javascript_example.gif)
+您可以使用 Visual Studio 建置適用於 Android、iOS、Linux、Windows 及其他裝置的應用程式和遊戲。 深入了解[跨平台行動開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)。 通用 Windows 應用程式可協助您在多個平台上充分運用您的程式碼。 如需詳細資訊，請參閱[通用 Windows 應用程式](https://dev.windows.com/en-us/windows-apps)。
 
-若要深入了解，請參閱[在程式碼和文字編輯器中撰寫程式碼](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)。
+根據您的應用程式需求和想要使用的語言，來選擇所需的工具：
+
+- [Xamarin for Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：所有裝置通用的 C# 程式碼基底。
+
+- [Visual Studio Tools for Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md)：HTML、CSS 和 JavaScript 或 Typescript 的通用程式碼基底。
+
+- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)：以 C# 進行 2D/3D 遊戲開發。
+
+- [C++ for Cross-Platform Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：使用 C++ 的共用程式碼程式庫和應用程式。
+
+- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md)：Visual Studio Emulator for Android：不分 IDE，為您的 Android 應用程式執行偵錯及測試。
+
+搭配遊戲開發工具 (例如 DirectX、Unity、Unreal、Cocos 等)，[使用 Visual Studio 建立遊戲](https://www.visualstudio.com/vs/game-development/)。
 
 Visual Studio 還可協助您進行更多的工作。 如需更完整的清單，請參閱 [Visual Studio IDE](https://www.visualstudio.com/vs/)。
 
@@ -153,7 +176,7 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
 - [[輸出]](../ide/reference/output-window.md) 視窗就是 Visual Studio 傳送其通知的位置，例如偵錯和錯誤訊息、編譯器警告、發行狀態訊息等。 每個訊息來源都有自己的索引標籤。
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)] (/vsts/tfvc/overview) 與其他人共用程式碼。
+- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/overview)) 與其他人共用程式碼。
 
 - [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可讓您檢視和管理 Azure 資源，例如虛擬機器、資料表、SQL 資料庫等。 如果特定作業需要 Azure 入口網站，Cloud Explorer 會提供連結，將您帶到 Azure 入口網站中您所需前往的位置。
 
@@ -173,7 +196,7 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
   ![Visual Studio 成員清單](../ide/media/vs2017_Intellisense.png)
 
-- 「波浪線」是紅色的波浪底線，可在您輸入程式碼時，針對錯誤或潛在的問題即時提出警示。 這可讓您立即修正它們，而不需等到編譯或執行階段才發現錯誤。 如果您將滑鼠停留在波浪線，則您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的建議。 如需詳細資訊，請參閱[執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)。
+- 「波浪線」是紅色的波浪底線，可在您輸入程式碼時，針對錯誤或潛在的問題即時提出警示。 這可讓您立即修正它們，而不需等到編譯或執行階段才發現錯誤。 如果您將滑鼠停留在波浪線，則您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的建議。 如需詳細資訊，請參閱 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
 
  ![波浪線](../ide/media/vs2017_squiggle.png)
 
@@ -199,7 +222,7 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
-您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或是使用 [Visual Studio Team Services (VSTS)](/vsts/index) 來一邊管理整個專案的程式碼，一邊管理錯誤 (bug) 與工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Team Services](/vsts/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Team Services)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能) (部落格)。
+您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或是使用 [Visual Studio Team Services (VSTS)](/vsts/index) 來一邊管理整個專案的程式碼，一邊管理錯誤 (bug) 與工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱[開始使用 Git 和 Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能) (部落格)。
 
 Visual Studio Team Services 是一項雲端式服務，可用來裝載軟體專案及允許以小組進行共同作業。 VSTS 支援 Git 和 Team Foundation 原始檔控制系統，以及 Scrum、CMMI 和 Agile 開發方法。 Team Foundation 版本控制 (TFVC) 使用單一且集中式伺服器儲存機制來追蹤和版本化檔案。 在其他開發人員取得最新變更的地方，一律將本機變更簽入中央伺服器。
 
@@ -211,7 +234,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-如需 Visual Studio Team Services 及 Team Foundation Server 的文件，請參閱 [Visual Studio Team Services](/vsts/index)。
+您也可以自動化建置流程，來建置您小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 如需詳細資訊，請參閱[任何平台上的持續整合 (英文)](https://www.visualstudio.com/en-us/docs/build/overview)。
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>連接至服務、資料庫及雲端式資源
 
@@ -234,8 +257,13 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 ![SQL Server 物件總管](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>擴充 Visual Studio
+如果 Visual Studio 沒有您所需的確切功能，您可以新增功能！ 您可以根據您的工作負載和風格將 IDE 個人化、針對尚未與 Visual Studio 整合的外部工具新增支援，以及修改現有的功能以提升您的生產力。 若要尋找最新版本的 Visual Studio 擴充性工具 (VS SDK)，請參閱 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-如果 Visual Studio 沒有您所需的確切功能，您可以新增功能！ 您可以根據您的工作負載和風格將 IDE 個人化、針對尚未與 Visual Studio 整合的外部工具新增支援，以及修改現有的功能以提升您的生產力。 Visual Studio 提供來自 Microsoft、我們的合作夥伴及社群的工具、控制項和範本。 若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
+您可以使用 .NET 編譯器平台 (Roslyn) 來撰寫自己的程式碼分析器和程式碼產生器。 前往 [Roslyn](https://github.com/dotnet/Roslyn)尋找您所需要的各項資源。
+
+尋找由 Microsoft 開發人員和開發社群所建立的 Visual Studio [現有延伸模組](https://marketplace.visualstudio.com/vs)。
+
+若要深入了解如何擴充 Visual Studio，請參閱[擴充 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
 
 ## <a name="learn-more-and-find-out-whats-new"></a>深入了解並找出新功能
 
@@ -243,7 +271,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 恭喜您完成 Visual Studio IDE 的導覽！ 希望您已了解有關其部分主要功能一些實用資訊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio IDE](https://www.visualstudio.com/vs/)
 * [Visual Studio 下載](https://www.visualstudio.com/downloads/)

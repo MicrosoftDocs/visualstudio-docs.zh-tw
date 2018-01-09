@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動作縮減為單一鍵盤快速鍵，以加速您的作業。 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中鍵盤快速鍵可分為下列兩種分類：  

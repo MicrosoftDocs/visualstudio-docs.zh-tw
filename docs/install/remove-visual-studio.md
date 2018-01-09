@@ -21,11 +21,12 @@ ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: heaths
 manager: erickn
-ms.openlocfilehash: 3c859b0023c9ea282afde837b17b7c93f3f4fbd7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: a08a24be4f3f9e915a93c9beac7cf5e5c28eb7ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remove-visual-studio"></a>移除 Visual Studio
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 11/22/2017
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio 2017](install-visual-studio.md)
 * [更新 Visual Studio 2017](update-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)

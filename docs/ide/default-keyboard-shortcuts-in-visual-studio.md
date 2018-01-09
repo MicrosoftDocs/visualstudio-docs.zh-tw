@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 如需鍵盤存取範圍的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
@@ -33,7 +34,7 @@ ms.lasthandoff: 12/07/2017
 
 |||||  
 |-|-|-|-|  
-|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[專案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
 |[類別檢視操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[說明](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  
@@ -1164,7 +1165,7 @@ ms.lasthandoff: 12/07/2017
 |XsdDesigner.ShowGraphView|Ctrl+3|  
 |XsdDesigner.ShowStartView|Ctrl+1|  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  
 [圖示影像編輯器](/cpp/windows/image-editor-for-icons)  
 [使用 IntelliSense](../ide/using-intellisense.md)

@@ -1,7 +1,7 @@
 ---
 title: "更新 Visual Studio 2017 | Microsoft Docs"
 description: "了解如何逐步更新 Visual Studio。"
-ms.date: 11/08/2017
+ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - update Visual Studio
 - change visual studio
 - changing Visual Studio
-ms.assetid: db005b65-d233-4471-b337-551fb3fa2464
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 472b14cc16c7dc8c3a0a9bb21ac7d64a858d0094
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 更新 Visual Studio 的目的通常是為了擴充其功能，以及修正客戶回報的問題。 為了確保您擁有的是[最新且經過最佳化的 Visual Studio 版本](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history)，您需要加以更新。 方式如下：
@@ -30,19 +30,35 @@ ms.lasthandoff: 11/22/2017
 ## <a name="update-by-using-the-notifications-hub"></a>使用通知中樞更新
 1. 如有更新，您將會在 Visual Studio 中看到通知旗標。
 
-  ![使用通知中樞更新 Visual Studio 2017](media/notification-flag.png "Visual Studio 中的通知旗標")
+  ![使用通知中樞更新 Visual Studio 2017](media/notification-flag.png "Visual Studio 中的更新通知旗標")
 
-  按一下或點選通知旗標，以開啟 [通知] 中樞。
+  選擇通知旗標，以開啟 [通知] 中樞。
 
   ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的通知中樞")
 
-2. 按一下或點選 [有 "Visual Studio 更新" 可供使用]，隨即開啟 [擴充功能和更新] 對話方塊。
+2. 選擇 ["Visual Studio Update" is available] (有 "Visual Studio 更新" 可供使用)，以開啟 [延伸模組和更新] 對話方塊。
 
   ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub-select.png "Visual Studio 中的通知中樞")
 
-3. 在 [擴充功能和更新] 對話方塊中，按一下或點選 [更新] 按鈕。
+3. 在 [延伸模組和更新] 對話方塊中，選擇 [更新] 按鈕。
 
   ![使用通知中樞更新 Visual Studio 2017](media/notifications-extensions-and-updates.png "Visual Studio 中的 [擴充功能和更新] 對話方塊")
+
+### <a name="more-about-visual-studio-notifications"></a>進一步了解 Visual Studio 通知
+
+Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新可用，也會通知您 Visual Studio 環境中何時發生特定事件。
+
+* 通知旗標為黃色時，表示有可供您安裝的 Visual Studio 產品更新。
+* 通知旗標為紅色時，表示您的授權發生問題。
+* 通知旗標為黑色時，表示有需要檢閱的選擇性或資訊訊息。
+
+選擇通知旗標以開啟 [通知] 中樞，然後選擇您想要處理的通知。 或者，選擇忽略或關閉通知。
+
+ ![在 [通知] 中樞內檢視選擇性或資訊訊息](media/notification-flag-optional.png "Visual Studio 中的選擇性或資訊訊息通知旗標")
+
+如果您選擇忽略通知，則 Visual Studio 將停止顯示該通知。 如果您想要重設已忽略的通知清單，請按一下 [通知] 中樞中的 [設定] 按鈕。
+
+   ![選擇 [通知] 中樞內的 [設定] 按鈕來檢視通知選項](media/vs-notifications-hub-settings-button.png "選擇 [通知] 中樞內的 [設定] 按鈕來檢視通知選項")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式更新
 1.  開啟安裝程式。 您可能需要更新安裝程式才能繼續。 如果是這種情況，系統會提示您執行這項操作。
@@ -53,7 +69,7 @@ ms.lasthandoff: 11/22/2017
 
 3.  如果有更新可供使用，您將會看到 [更新] 按鈕。 (安裝程式可能需要幾秒鐘的時間來判斷是否有更新可供使用)。
 
-  按一下或點選 [更新] 按鈕，以安裝更新。
+  選擇 [更新] 按鈕，以安裝更新。
 
      ![使用 Visual Studio 安裝程式更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安裝程式更新 Visual Studio 2017")
 
@@ -66,8 +82,8 @@ ms.lasthandoff: 11/22/2017
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio 2017](install-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
-* [Visual Studio 2017 系統管理員指南](visual-studio-administrator-guide.md)
+* [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

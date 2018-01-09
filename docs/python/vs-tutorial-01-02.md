@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: c9171e4c-1bba-4581-b18e-cc8a9ad25f0c
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9eca2beb71e6e0e8a1a861e00119caba0bd62923
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>第 2 步：撰寫和執行程式碼
 
@@ -42,14 +42,14 @@ ms.lasthandoff: 11/02/2017
     ```
 
 1. 請注意區別 `print` 陳述式與 `"Hello Visual Studio"` 引數的語法著色。 同時，暫時刪除字串的最後一個 `"` 並注意 Visual Studio 如何為包含語法錯誤的程式碼顯示紅色底線。 然後取代 `"` 以更正程式碼。
- 
+
     ![IntelliSense 語法著色和錯誤醒目提示](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 請選取 [工具] > [選項] 功能表命令，並瀏覽 [環境] 和 [文字編輯器] 索引標籤下方的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]。 
 
 1. 按 Ctrl + F5 或選取 [偵錯] > [啟動但不偵錯] 功能表項目，來執行已撰寫到這個時間點的程式碼。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
- 
+
 1. 當您執行程式時，隨即出現顯示結果的主控台視窗，就如同您從命令列搭配 `PythonApplication1.py` 執行 Python 解譯器。 按某個按鍵來關閉視窗，並返回到 Visual Studio 編輯器。
 
     ![第一次執行程式的輸出](media/vs-getting-started-python-07-output.png)
@@ -71,28 +71,26 @@ ms.lasthandoff: 11/02/2017
 1. 透過匯入 `sin`、`cos` 和 `radians` 成員來完成，注意每個成員可用的自動完成選項。 當您完成時，您的程式碼應該會如下所示︰
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
-    > 當您輸入時，自動完成選項會與子字串搭配使用，比對部分字組、字組開頭的字母，甚至是略過的字元。 如需詳細資訊，請參閱[編輯程式碼 - 自動完成](code-editing.md#completions)。
+    > 當您輸入時，自動完成選項會與子字串搭配使用，比對部分字組、字組開頭的字母，甚至是略過的字元。 如需詳細資料，請參閱[編輯程式碼 - 自動完成](code-editing.md#completions)。
 
 1. 新增更多一些的程式碼來列印 360 度的餘弦值：
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. 使用 Ctrl + F5 或 [偵錯] > [啟動但不偵錯]，再次執行程式。 當您完成時，請關閉輸出視窗。
 
-
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [使用互動式 REPL 視窗](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>繼續探討
 

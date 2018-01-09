@@ -15,11 +15,12 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff653e6fd9fb33cd7141671e9b77f297f8457a8b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 當您從命令提示字元安裝 Visual Studio 2017 時，可以使用各種命令列參數來控制或自訂安裝。 您可以從命令列執行下列動作：
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/22/2017
 
 (根據您要安裝的產品版本，適當地取代 `vs_enterprise.exe`。 如需範例，請參閱[命令列參數範例](command-line-parameter-examples.md)頁面)。
 
-| **命令** | **說明** |
+| **命令** | **描述** |
 | ----------------------- | --------------- |
 | (空白) | 安裝產品。 |
 | `modify` | 修改所安裝的產品。 |
@@ -49,7 +50,7 @@ ms.lasthandoff: 11/22/2017
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
 
-| **安裝選項** | **說明** |
+| **安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--installPath <dir>` | 要操作之執行個體的安裝目錄。 若是安裝命令，這是**選擇性的**，而且是執行個體的安裝位置。 若是其他命令，這是**必要的**，而且是先前已安裝執行個體的安裝位置。 |
 | `--addProductLang <language-locale>` | **選擇性**︰在安裝或修改作業期間，這會決定要安裝到產品的 UI 語言套件。 它可在命令列上出現多次，以新增多個語言套件。 如果未出現，則會使用電腦地區設定來安裝。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -70,7 +71,7 @@ ms.lasthandoff: 11/22/2017
 
 > 注意︰指定多個工作負載和元件時，您必須針對每個項目重複 `--add` 或 `--remove` 命令列參數。
 
-| **配置選項** | **說明** |
+| **配置選項** | **描述** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | 指定一個目錄以建立離線安裝快取。 如需詳細資訊，請參閱[建立 Visual Studio 的網路型安裝](create-a-network-installation-of-visual-studio.md)。|
 | `--lang <one or more language-locales>` | **選擇性**：搭配使用 `--layout`，以指定語言的資源套件來準備離線安裝快取。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/22/2017
 | `--fix` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。  如果找到任何損毀或遺失的檔案，則會重新下載。  必須有網際網路存取權才可修正配置。 |
 | `--clean <one or more paths to catalogs>` | **版本 15.3 的新功能，選擇性**：從已更新為較新版的配置中移除舊版元件。 |
 
-| **進階安裝選項** | **說明** |
+| **進階安裝選項** | **描述** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：要安裝執行個體的通道識別碼。 這對安裝命令是必要的，對其他指定了 `--installPath` 的命令則會予以略過。 |
 | `--channelUri <uri>` | **選擇性**︰通道資訊清單的 URI。 如果不需要更新，`--channelUri` 可以指向不存在的檔案 (例如 --channelUri C:\doesntExist.chman)。此選項可用於安裝命令，但針對其他命令則會予以略過。 |
@@ -100,7 +101,7 @@ ms.lasthandoff: 11/22/2017
 如需依 Visual Studio 產品排序的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)頁面。
 
 ## <a name="list-of-language-locales"></a>語言地區設定清單
-| **語言地區設定** | **語言** |
+| **語言地區設定** | **Language** |
 | ----------------------- | --------------- |
 | cs-CZ | 捷克文 |
 | de-DE | 德文 |
@@ -140,7 +141,7 @@ ms.lasthandoff: 11/22/2017
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
  * [安裝 Visual Studio 2017](install-visual-studio.md)
  * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)

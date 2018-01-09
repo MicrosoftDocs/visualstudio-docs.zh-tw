@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6906f2e0290416d9a287a9541cf5e40e26180ffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 1e56c0b64b0ccd508d7a879d8270af8ffed5c807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET 服務並收集詳細計時資料
 本主題描述如何使用 [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集詳細的計時資料。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  **/user** 和 **/crosssession** 選項通常是分析服務的必要選項。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。|  
     |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。|  
@@ -85,14 +86,14 @@ ms.lasthandoff: 10/31/2017
   
 -   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|  
   
 ## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段  
- 若要結束分析工作階段，請停止正在執行已檢測元件的服務，然後呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉分析工具，結束分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。  
+ 若要結束分析工作階段，請停止正在執行已檢測元件的服務，然後呼叫 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉分析工具，並關閉分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。  
   
  您必須重新啟動電腦才能套用新的環境設定。  
   
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  從服務控制管理員停止服務。  
   
-2.  關閉程式碼剖析工具。 類型：  
+2.  關閉分析工具。 類型：  
   
      **VSPerfCmd /shutdown**  
   
@@ -112,6 +113,6 @@ ms.lasthandoff: 10/31/2017
   
 5.  重新啟動電腦。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

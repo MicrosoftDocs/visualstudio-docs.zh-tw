@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 您可以使用特定的字元編碼來儲存檔案，以支援雙向語言。 您也可以在開啟檔案時指定編碼方式，讓 Visual Studio 正確顯示檔案。  
@@ -58,6 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  遵循上述程序步驟 2 和 3。  
   
-## <a name="see-also"></a>另請參閱  
- [編碼方式和 Windows Forms 全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>另請參閱
+[編碼與分行符號](encodings-and-line-breaks.md)  
+[編碼方式和 Windows Forms 全球化](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

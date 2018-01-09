@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 388784b53018c30357f496cfbeb533c0a07a3053
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立具有 Windows 使用者介面 (UI) 的簡單 Visual Basic 應用程式。
@@ -94,6 +95,6 @@ ms.lasthandoff: 12/11/2017
 
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Basic 和 Visual Studio IDE。 如果您想要更深入地鑽研，請繼續目錄的＜教學課程＞一節中的教學課程。  
 
-## <a name="see-also"></a>請參閱   
-* [快速入門：使用 Visual Basic 在 Visual Studio 中建立主控台應用程式](quickstart-visual-basic-console.md) ](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
+## <a name="see-also"></a>另請參閱   
+* [快速入門：使用 Visual Basic 在 Visual Studio 中建立主控台應用程式](quickstart-visual-basic-console.md)
 * [深入了解 Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

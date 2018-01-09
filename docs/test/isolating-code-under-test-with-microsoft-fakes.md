@@ -6,53 +6,56 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
+dev.langs:
+- VB
+- CSharp
 ms.topic: article
-ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
-caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1802f211002585a2f23e82b8e0b097c118bd1ff5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 35189a94ca0cd1bd9bd9b0aa91349fffd847c22b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。  
-  
- Fakes 分為兩種類別：  
-  
--   [虛設常式](#stubs)會以一小段實作相同介面的類別取代類別。  若要使用虛設常式，您所設計的應用程式必須讓每個元件只相依於介面，而不相依於其他元件。 (「元件」表示一起設計及更新的類別或類別群組，通常會包含在組件中)。  
-  
--   [填充碼](#shims)會在執行階段修改應用程式的編譯程式碼，以便執行您的測試所提供的填充碼，而不是進行指定的方法呼叫。 您可以使用填充碼取代您無法修改的組件 (例如 .NET 組件) 的呼叫。  
-  
- ![Fakes 會取代其他元件](../test/media/fakes-2.png "Fakes-2")  
-  
- **Requirements**  
-  
--   Visual Studio 企業版  
-  
+
+Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。
+
+Fakes 分為兩種類別：
+
+-   [虛設常式](#stubs)會以一小段實作相同介面的類別取代類別。  若要使用虛設常式，您所設計的應用程式必須讓每個元件只相依於介面，而不相依於其他元件。 (「元件」表示一起設計及更新的類別或類別群組，通常會包含在組件中)。
+
+-   [填充碼](#shims)會在執行階段修改應用程式的編譯程式碼，以便執行您的測試所提供的填充碼，而不是進行指定的方法呼叫。 您可以使用填充碼取代您無法修改的組件 (例如 .NET 組件) 的呼叫。
+
+![Fakes 會取代其他元件](../test/media/fakes-2.png "Fakes-2")  
+
+**需求**
+
+-   Visual Studio 企業版
+
 ## <a name="choosing-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇  
- 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。  
+由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。  
   
- 一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是，個別介面定義通常未隨附外部組件 (例如 System.dll)，因此，您必須使用填充碼。  
+一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是，個別介面定義通常未隨附外部組件 (例如 System.dll)，因此，您必須使用填充碼。  
   
- 其他考量為：  
+其他考量為：  
   
- **效能。** 由於填充碼會在執行階段重寫程式碼，因此執行得比較慢。 虛設常式類型沒有這樣的效能負荷，執行速度與虛擬方法一樣快。  
+**效能。** 由於填充碼會在執行階段重寫程式碼，因此執行得比較慢。 虛設常式類型沒有這樣的效能負荷，執行速度與虛擬方法一樣快。  
   
- **靜態方法，密封類型。** 您只能使用虛設常式實作介面。 因此，虛設常式類型不能用於靜態方法、非虛擬方法、密封虛擬方法、密封類型中的方法等等。  
+**靜態方法，密封類型。** 您只能使用虛設常式實作介面。 因此，虛設常式類型不能用於靜態方法、非虛擬方法、密封虛擬方法、密封類型中的方法等等。  
   
- **內部類型。** 虛設常式和填充碼都可以搭配使用組件屬性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取的內部類型一起使用。  
+**內部類型。** 虛設常式和填充碼都可以搭配使用組件屬性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取的內部類型一起使用。  
   
- **私用方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。  
+**私用方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。  
   
- **介面和抽象方法。** 虛設常式提供可用於測試的介面和抽象方法實作。 填充碼無法檢測介面和抽象方法，因為它們沒有方法主體。  
+**介面和抽象方法。** 虛設常式提供可用於測試的介面和抽象方法實作。 填充碼無法檢測介面和抽象方法，因為它們沒有方法主體。  
   
- 一般而言，我們建議您使用虛設常式類型與程式碼基底中的相依性隔離。 您可以藉由將元件隱藏在介面後面來達成。 您可以使用填充碼類型隔離不提供可測試之應用程式開發介面的協力廠商元件。  
+一般而言，我們建議您使用虛設常式類型與程式碼基底中的相依性隔離。 您可以藉由將元件隱藏在介面後面來達成。 您可以使用填充碼類型隔離不提供可測試之應用程式開發介面的協力廠商元件。  
   
 ##  <a name="stubs"></a> 開始使用虛設常式  
- 如需更詳細的描述，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
+如需更詳細的描述，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
 1.  **插入介面**  
   
@@ -141,14 +144,14 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
     ```  
   
-     這裡最特別的是 `StubIStockFeed` 類別。 Microsoft Fakes 機制會針對參考組件中的每一個介面產生虛設常式類別。 該虛設常式類別的名稱衍生自介面的名稱，再加上前置詞「`Fakes.Stub`」並附加參數類型名稱。  
+    這裡最特別的是 `StubIStockFeed` 類別。 Microsoft Fakes 機制會針對參考組件中的每一個介面產生虛設常式類別。 該虛設常式類別的名稱衍生自介面的名稱，再加上前置詞「`Fakes.Stub`」並附加參數類型名稱。  
   
-     另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。 如需詳細資訊，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
+    另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。 如需詳細資訊，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
 ##  <a name="shims"></a> 開始使用填充碼  
- (如需更詳細的描述，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md))。  
+(如需更詳細的描述，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md))。  
   
- 假設您的元件包含對 `DateTime.Now` 的呼叫：  
+假設您的元件包含對 `DateTime.Now` 的呼叫：  
   
 ```csharp  
 // Code under test:  
@@ -159,9 +162,9 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
 ```  
   
- 在測試期間，您要填充 `Now` 屬性，因為真實版本會在每次呼叫時傳回不同的值，非常不方便。  
+在測試期間，您要填充 `Now` 屬性，因為真實版本會在每次呼叫時傳回不同的值，非常不方便。  
   
- 若要使用填充碼，就不需要修改應用程式程式碼或以特別方式撰寫程式碼。  
+若要使用填充碼，就不需要修改應用程式程式碼或以特別方式撰寫程式碼。  
   
 1.  **新增 Fakes 組件**  
   
@@ -200,10 +203,9 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
                     Assert.AreEqual(fixedYear, year);  
                 }  
             }  
-    }  
-  
-    ```  
-  
+    }
+    ```
+
     ```vb  
     <TestClass()> _  
     Public Class TestClass1  
@@ -229,19 +231,19 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
         End Sub  
     End Class  
     ```  
-  
-     填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。 方法名稱後面要加上參數名稱。 (您不必將任何組件參考加入 System.Fakes)。  
-  
- 上述範例使用靜態方法的填充碼。 若要使用填充碼做為執行個體方法，請在類型名稱和方法名稱之間撰寫 `AllInstances`：  
-  
+
+    填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。 方法名稱後面要加上參數名稱。 (您不必將任何組件參考加入 System.Fakes)。  
+
+上述範例使用靜態方法的填充碼。 若要使用填充碼做為執行個體方法，請在類型名稱和方法名稱之間撰寫 `AllInstances`：  
+
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
-  
- (沒有任何 'System.IO.Fakes' 組件可參考。 此命名空間是填充碼建立處理序所產生的。 但您可以按照一般方式使用 'using' 或 'Import')。  
-  
- 您也可以為特定執行個體、建構函式和屬性建立填充碼。 如需詳細資訊，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。  
-  
+
+(沒有任何 'System.IO.Fakes' 組件可參考。 此命名空間是填充碼建立處理序所產生的。 但您可以按照一般方式使用 'using' 或 'Import')。  
+
+您也可以為特定執行個體、建構函式和屬性建立填充碼。 如需詳細資訊，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。  
+
 ## <a name="in-this-section"></a>本節內容  
  [使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
   

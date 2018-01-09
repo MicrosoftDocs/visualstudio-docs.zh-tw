@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c9c53f76-d0ef-4095-8b39-b7eb9bb33aba
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ce10862b3d71be43a86c1a98a9edf822ac9baf6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Python 專案
 
@@ -57,7 +57,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 > [!Tip]
 > 如果您從專案移除選取的啟動檔案，且不選取新的啟動檔案，則嘗試執行專案會造成出現 Python 輸出視窗，但接著幾乎立即消失。 如果您遇到這個問題，請確認您已指派啟動檔案。 此外，若要在此情況下讓輸出視窗保持開啟，請以滑鼠右鍵按一下專案，依序選取 [屬性]**、**[偵錯] 索引標籤，然後將 `-i` 加入 [解譯器引數] 欄位。 此引數會導致解譯器在程式完成之後進入互動模式，並在您輸入 Ctrl+Z、Enter 以結束之前保持視窗開啟。
 
-新專案一律會與預設的全域 Python 環境關聯。 若要將專案與不同的環境 (包括虛擬環境) 建立關聯，請在專案中的 [Python Environments (Python 環境)] 節點上按一下滑鼠右鍵，選取 [Add/Remove Python Environments (新增/移除 Python 環境)]，然後選取您想要的環境。 若要變更使用中環境，請以滑鼠右鍵按一下想要的環境，然後選取 [啟用環境]，如下所示。 如需更多詳細資料，請參閱 [Python 環境](python-environments.md#project-specific-environments)。
+新專案一律會與預設的全域 Python 環境關聯。 若要將專案與不同的環境 (包括虛擬環境) 建立關聯，請在專案中的 [Python Environments (Python 環境)] 節點上按一下滑鼠右鍵，選取 [Add/Remove Python Environments (新增/移除 Python 環境)]，然後選取您想要的環境。 若要變更使用中環境，請以滑鼠右鍵按一下想要的環境，然後選取 [啟用環境]，如下所示。 如需詳細資料，請參閱 [Python 環境](python-environments.md#project-specific-environments)。
 
 ![啟用 Python 專案的環境](media/projects-activate-environment.png)
 
@@ -72,9 +72,9 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 | 範本 | 描述 | 
 | --- | --- |
-| [從現有的 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
+| [從現有 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](python-environments.md#project-specific-environments)來變更此環境。 |
-| [Azure 雲端服務](template-azure-cloud-service.md) | 以 Python 撰寫的「Azure 雲端服務」專案。 |
+| [Azure 雲端服務](template-azure-cloud-service.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
 | [Web 專案](template-web.md) | 以各種架構 (包括 Bottle、Django、Flask 及 Flask/Jade) 為基礎的 Web 伺服器專案。 |
 | IronPython 應用程式 | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
 | IronPython WPF 應用程式 | 一種針對應用程式的使用者介面使用 IronPython 搭配 Windows Presentation Foundation XAML 檔案的專案結構。 Visual Studio 會提供 XAML UI 設計工具、程式碼後置可以用 Python 來撰寫，應用程式則會在不顯示主控台的情況下執行。 |
@@ -88,7 +88,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 ### <a name="creating-a-project-from-existing-files"></a>從現有的檔案建立專案
 
 > [!Important]
-> 此處所述的程序不會移動或複製原始程式檔。 如果您想要使用複本，請先複製資料夾。
+> 此處所述的程序不會移動或複製原始來源檔案。 如果您想要使用複本，請先複製資料夾。
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
@@ -145,6 +145,6 @@ Visual Studio 專案支援新增對專案和擴充功能的參考，這些參考
 
 ### <a name="webpi-projects"></a>WebPI 專案
 
-您可以新增對 WebPI 產品項目的參考以供部署到「Microsoft Azure 雲端服務」，然後在該處透過 WebPI 摘要來安裝額外的元件。 根據預設，顯示的摘要為 Python 特定，並且包含 Django、CPython 及其他核心元件。 您也可以選取自己的摘要，如以下所示。 當發佈到 Microsoft Azure 時，安裝作業將會安裝所有參考的產品。
+您可以新增對 WebPI 產品項目的參考以供部署到 Microsoft Azure 雲端服務，然後在該處透過 WebPI 摘要來安裝額外的元件。 根據預設，顯示的摘要為 Python 特定，並且包含 Django、CPython 及其他核心元件。 您也可以選取自己的摘要，如以下所示。 當發佈到 Microsoft Azure 時，安裝作業將會安裝所有參考的產品。
 
 ![WebPI 參考](media/projects-webPI-components.png)

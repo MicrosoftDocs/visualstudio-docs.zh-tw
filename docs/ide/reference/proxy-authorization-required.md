@@ -1,5 +1,5 @@
 ---
-title: "需要 Proxy 授權錯誤 | Microsoft Docs"
+title: "更正所需的 Proxy 授權錯誤 | Microsoft Docs"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6544edb62bac07f5ab787e4a3b2f8abaebafa777
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: e33e0e2896ccb3a5f7fe6d6da57f509af30d77fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 
@@ -56,10 +57,6 @@ ms.lasthandoff: 11/17/2017
 
         您必須在 `proxyaddress="<http://<yourproxy:port#>`中插入您的網路的正確 Proxy 位址。
 
-    或
+    OR
 
 - 您也可以遵循 [這篇文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) 中的指令，加入允許您使用 Proxy 的程式碼。
-
-## <a name="see-also"></a>請參閱
-
-[Visual Studio 所使用的網際網路資源](../connected-environment.md)

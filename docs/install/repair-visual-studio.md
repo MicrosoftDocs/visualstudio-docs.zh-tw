@@ -11,11 +11,12 @@ ms.topic: article
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
-ms.openlocfilehash: 29a6e4e74c6be1b749e72b5a483dcb25635337c5
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: pchapman
+ms.openlocfilehash: 9112042014f89e6e5c7e1293f890e14a882d34fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="repair-visual-studio-2017"></a>修復 Visual Studio 2017
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 11/22/2017
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [安裝 Visual Studio 2017](install-visual-studio.md)
 * [更新 Visual Studio 2017](update-visual-studio.md)
 * [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)

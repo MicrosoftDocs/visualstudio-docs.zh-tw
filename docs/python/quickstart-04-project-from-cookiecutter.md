@@ -1,5 +1,5 @@
 ---
-title: "快速入門：在 Visual Studio 中從 Cookiecutter 樣本建立 Python 專案 | Microsoft Docs"
+title: "快速入門：在 Visual Studio 中從 Cookiecutter 範本建立 Python 專案 | Microsoft Docs"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: d0b21c78ab31c093ef48300ac746c3c2fd7d6778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 
@@ -41,7 +42,6 @@ ms.lasthandoff: 12/01/2017
 1. 按 Ctrl + F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
 
     ![python-sklearn-classifier-cookiecutter 範本專案的輸出](media/projects-from-cookiecutter4.png)
-
 
 ## <a name="next-steps"></a>後續步驟
 

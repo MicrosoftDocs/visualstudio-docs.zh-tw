@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
 本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 桌面應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。  
@@ -266,12 +267,12 @@ ms.lasthandoff: 12/12/2017
   
 #### <a name="to-add-a-background-image"></a>加入背景影像  
   
-1.  選擇下列影像並儲存為 `watermark.png`。  
+1.  選擇下列影像並將它儲存為 `watermark.png`。  
   
-     ![逐步解說的浮水印影像](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![逐步解說的浮水印影像](../designers/media/wpf_watermark.png "watermark")  
   
     > [!NOTE]
-    >  或者，您可以建立自己的影像並儲存為 `watermark.png`。  
+    >  或者您可以建立自己的影像並將它儲存為 `watermark.png`。  
   
 2.  在 **方案總管**中，開啟 **ExpenseIt** 節點的捷徑功能表，然後依序選擇 [加入] 和 [現有項目] 。  
   
@@ -886,5 +887,5 @@ ms.lasthandoff: 12/12/2017
   
 -   [WPF 中的文件](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

@@ -12,23 +12,26 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
 Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端服務。
 
-[雲端服務](http://go.microsoft.com/fwlink/?LinkId=306052)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們分別會執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 就 Python 來說，任何支援 WSGI 的 Web 架構都可用來撰寫這類應用程式 (如 [Web 專案範本](template-web.md)所支援)。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會利用[資料](http://go.microsoft.com/fwlink/?LinkId=401571)和[應用程式服務](http://go.microsoft.com/fwlink/?LinkId=401572)程式庫 (可使用 `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) 安裝)。
+[雲端服務](http://go.microsoft.com/fwlink/?LinkId=306052)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 就 Python 來說，任何支援 WSGI 的 Web 架構都可用來撰寫這類應用程式 (如 [Web 專案範本](template-web.md)所支援)。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會利用[資料](http://go.microsoft.com/fwlink/?LinkId=401571)和[應用程式服務](http://go.microsoft.com/fwlink/?LinkId=401572)程式庫 (可使用 `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) 安裝)。
 
 本主題包含 Visual Studio 2017 中的專案範本和其他支援 (與舊版類似，但有一些差異) 的詳細資料。 如需搭配 Python 使用 Azure 的詳細資訊，請瀏覽 [Azure Python 開發人員中心](http://go.microsoft.com/fwlink/?linkid=254360)。
 
 ## <a name="create-a-project"></a>建立專案
 
-1. 安裝[適用於 Visual Studio 的 Azure .NET SDK (英文)](https://www.visualstudio.com/vs/azure-tools/)，這是使用雲端服務範本的必要項目。
+1. 安裝[適用於 Visual Studio 的 Azure .NET SDK](https://www.visualstudio.com/vs/azure-tools/)，這是使用雲端服務範本的必要項目。
 1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案...]，然後搜尋「Azure Python」，並從清單中選取 [Azure 雲端服務]：
 
     ![適用於 Python 的 Azure 雲端專案範本](media/template-azure-cloud-project.png)
@@ -46,7 +49,6 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
     ![背景工作角色支援檔案](media/template-azure-cloud-service-worker-role-support-files.png)
 
     若要將這些設定指令碼新增至新的專案，請以滑鼠右鍵按一下專案，並選取 [新增] > [新增項目...]，然後選取 [Web 角色支援檔案] 或 [背景工作角色支援檔案]。
-   
 
 ## <a name="configuring-role-deployment"></a>設定角色部署
 
@@ -66,12 +68,11 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 ## <a name="testing-role-deployment"></a>測試角色部署
 
-撰寫角色時，您可以使用雲端服務模擬器在本機上測試雲端專案。 該模擬器隨附於 Azure SDK 工具，而且是您的雲端服務發佈至 Azure 時使用之環境的精簡版本。
+撰寫角色時，您可以使用雲端服務模擬器在本機上測試雲端專案。 該模擬器隨附於 Azure SDK 工具，而且是您的雲端服務發行至 Azure 時使用之環境的精簡版本。
 
 若要啟動模擬器，請先確定您的雲端專案在方案中是啟始專案，方法是以滑鼠右鍵按一下並選取 [設定為啟始專案]。 接著選取 [偵錯] > [開始偵錯] (F5) 或 [偵錯] > [啟動但不偵錯] (Ctrl+F5)。
 
 請注意，由於模擬器的限制，您將無法針對 Python 程式碼進行偵錯。 因此建議您獨立地執行角色來對角色進行偵錯，然後在發佈前使用模擬器進行整合測試。
-
 
 ## <a name="deploying-a-role"></a>部署角色
 
@@ -83,12 +84,11 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 最後，背景工作角色會執行 `LaunchWorker.ps1`，這會開始執行您的 Python 指令碼；Web 角色會初始化 IIS 並開始處理 Web 要求。
 
-
 ## <a name="dependencies"></a>相依性
 
 針對雲端服務，`ConfigureCloudService.ps1` 指令碼會使用 `pip` 來安裝一組 Python 相依性。 相依性應該指定於名為 `requirements.txt` 的檔案中 (可藉由修改 `ConfigureCloudService.ps1` 來自訂)。 該檔案在初始化過程中會使用 `pip install -r requirements.txt` 來執行。
 
-請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 擴充功能的所有程式庫都必須提供預先編譯的二進位檔。
+請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 延伸模組的所有程式庫都必須提供預先編譯的二進位檔。
 
 PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](python-environments.md#managing-required-packages)，以取得管理 `requirements.txt` 檔案的詳細資料。
 
@@ -97,6 +97,7 @@ PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動�
 如果您的 Web 或背景工作角色在部署後無法正確運作，請檢查下列各項：
 
 - 您的 Python 專案包含 bin\ 資料夾，並 (至少) 含有：
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1` (針對背景工作角色)
     - `ps.cmd`

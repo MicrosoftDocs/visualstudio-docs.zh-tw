@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f4fd45337ebd0f00362d352077cf8441e6f5afa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 您可以建立可移動物件或讓物件淡入和淡出的簡短動畫。  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [按鈕動畫](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|建立在使用者指向按鈕時會出現在上面的有趣效果。|  
 |![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立動畫並使用加減速](https://www.youtube.com/watch?v=mAJXYrwxGYo)|製作會在使用者按下計算機影像的按鈕時出現的動畫效果。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

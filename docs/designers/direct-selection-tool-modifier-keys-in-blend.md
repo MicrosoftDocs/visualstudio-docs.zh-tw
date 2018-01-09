@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e7638f1f8134ded87f2bde1f9617757e6ad536b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9845a7db8d71e802cc24160d16e5382717c0c28b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
-下表列出您可以用來修改現有路徑圖形的**直接選取**工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。  
+下表列出您可以用來修改現有路徑圖形的**直接選取**工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。  
   
 |若要執行這項操作|請執行|Pointer|  
 |-----------------------|-------------|-------------|  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 ALT 鍵，然後拖曳線段|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> 轉換線段的指標|  
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 ALT 鍵，然後拖曳正切函數的結束點|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> 轉換正切函數的指標|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)   
  [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)   

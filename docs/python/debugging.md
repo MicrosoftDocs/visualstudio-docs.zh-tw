@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a6aac76bc3830dd6c003c9834b242c6d79f7821
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -43,9 +43,9 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Visual Studio 中的 Python 支援在不使用檔案的情況下進行偵錯。 在開啟獨立 Python 檔案的情況下，於編輯器中按一下滑鼠右鍵，選取 [啟動並偵錯]，Visual Studio 就會在不使用引數的情況下，以全域預設環境啟動指令碼 (請參閱 [Python 環境](python-environments.md))。 但之後您就有完整的偵錯支援。
+> Visual Studio 中的 Python 支援在不使用檔案的情況下進行偵錯。 在開啟獨立 Python 檔案的情況下，以滑鼠右鍵按一下編輯器，並選取 [啟動並偵錯]，Visual Studio 就會在不使用引數的情況下，以全域預設環境啟動指令碼 (請參閱 [Python 環境](python-environments.md))。 但之後您就有完整的偵錯支援。
 >
-> 若要控制環境和引數，請建立程式碼的專案，這可以透過[從現有的 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)專案範本輕鬆地完成。
+> 若要控制環境和引數，請建立程式碼的專案，這可以透過[從現有 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)專案範本輕鬆地完成。
 
 <a name="debugging-with-a-project"></a>
 
@@ -175,7 +175,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 [偵錯互動式 (Debug Interactive)] 視窗支援[標準 REPL 命令](interactive-repl.md#meta-commands)以外的中繼命令：
 
-| 命令 | 引數 | 說明 |
+| 命令 | 引數 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 從目前的陳述式開始執行程式。 |
 | `$down`, `$d` | 在堆疊追蹤中將目前的框架下移一層。 |

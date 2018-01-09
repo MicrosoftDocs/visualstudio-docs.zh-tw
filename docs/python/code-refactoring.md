@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>重構 Python 程式碼
 
@@ -28,6 +29,7 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 - [移除未使用的匯入](#remove-imports)會移除未使用的匯入
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>重新命名
 
 1. 以滑鼠右鍵按一下您要重新命名的識別項並選取 [重新命名]，或將插入點放在該識別項中並選取 [編輯] > [重構] > [重新命名...] 功能表命令 (F2)。
