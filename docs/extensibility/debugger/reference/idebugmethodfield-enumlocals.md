@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa4ab5a8963ae8364e35cdc0e2a5237a75d35994
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 451c2ccad7d817946bd3d2c2e83ed27279124f2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 建立選取的本機變數之方法的列舉值。  
@@ -74,7 +75,7 @@ public void func(int index)
   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件代表`func`方法本身。 呼叫`EnumLocals`方法[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)設`Inner Scope 1`位址可讓您傳回列舉包含`temp1`變數，例如。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4910f5b0daa5b474be4061d73c8600c388884451
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c8208b0d803dc5cbf6333f15cbda5b0f34bbd16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 建立的方法，包括由編譯器在內部產生的所有區域變數的列舉值。  
@@ -54,7 +55,7 @@ int EnumAllLocals(
   
  一種方法可以包含多個範圍的內容或區塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a4cc7b61426479a45e87568b040906426870233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 294d10eb8a8fab361ddf5b3dadf4d779a95947a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。  
@@ -346,7 +347,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
   
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)   
  [自訂和擴充的網域特定定義域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)   

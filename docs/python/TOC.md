@@ -20,7 +20,7 @@
 ### [Django Web 專案範本](template-django.md)
 ### [Azure 雲端服務範本](template-azure-cloud-service.md)
 ## [Azure SDK for Python](azure-sdk-for-python.md)
-# 如何
+# 作法指南
 ## [編輯程式碼](code-editing.md)
 ### [格式化程式碼](code-formatting.md)
 ### [重構程式碼](code-refactoring.md)

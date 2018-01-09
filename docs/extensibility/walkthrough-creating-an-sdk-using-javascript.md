@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a87ee7d1a48c313a29d00524d471b46ef572f4a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說： 建立使用 JavaScript SDK
 本逐步解說將說明如何使用 JavaScript 建立簡單的數學 SDK 為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分成下列部分：  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**名稱**文字方塊中，指定`SimpleMathVSIX`選擇**確定** 按鈕。  
   
-4.  如果**Visual Studio 封裝精靈**出現時，選擇**下一步**按鈕**褖畫惎**頁面上，然後在**第 1 頁的 7**，選擇**完成**按鈕。  
+4.  如果**Visual Studio 封裝精靈**出現時，選擇**下一步**按鈕**歡迎** 頁面上，然後在**第 1 頁的 7**，選擇**完成** 按鈕。  
   
      雖然**資訊清單設計工具**隨即開啟，我們會保留此逐步解說簡單直接修改資訊清單檔案。  
   
@@ -316,5 +317,5 @@ ms.lasthandoff: 10/31/2017
   
 12. 在 建立應用程式 UI 中，輸入任何兩個數字選取作業，，然後選擇   **=**   按鈕。 正確的結果會出現。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

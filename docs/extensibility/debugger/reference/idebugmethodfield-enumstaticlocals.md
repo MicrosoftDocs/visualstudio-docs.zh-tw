@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49de63c81c46f379630f5d5cb328a670472ddcee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0aa4a5e044dfc28302735e058c8863d4eb683670
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 建立方法的靜態區域變數的列舉值。  
@@ -47,7 +48,7 @@ int EnumStaticLocals(
 ## <a name="remarks"></a>備註  
  每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的靜態區域變數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)每個物件，以判斷確切的靜態區域變數的類型所代表的物件上的方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
