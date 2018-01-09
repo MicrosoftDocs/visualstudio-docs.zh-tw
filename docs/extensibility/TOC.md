@@ -95,6 +95,7 @@
 ## [管理方案中的專案載入](managing-project-loading-in-a-solution.md)
 # [建立自訂專案和項目範本](creating-custom-project-and-item-templates.md)
 ## [升級 Visual Studio 2017 的自訂專案和項目範本](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
+## [為範本探索進行疑難排解](troubleshooting-template-discovery.md)
 ## [如何︰搭配專案範本使用精靈](how-to-use-wizards-with-project-templates.md)
 ## [Visual Studio 範本結構描述參考](visual-studio-template-schema-reference.md)
 ### [AppliesTo 元素 (Visual Studio 範本)](appliesto-element-visual-studio-templates.md)
