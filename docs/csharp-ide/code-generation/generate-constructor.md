@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>在 C# 中產生的建構函式 #
 **項目：**可讓您立即產生新的建構函式，在類別上的程式碼。 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![產生建構函式的結果](media/constructor_result.png)
 
-## <a id="selection"></a>將參數加入至現有的建構函式
+## <a id="addparameter"></a>將參數加入至現有的建構函式
 1. 將參數加入至現有的物件具現化。
 
 1. 將游標放在該行其中會有紅色曲線，表示您已使用建構函式不存在。

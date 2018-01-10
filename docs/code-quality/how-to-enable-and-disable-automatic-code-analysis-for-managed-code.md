@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 198047196ba6f58c69736ef67352267845047b52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6dc55e2acee733538121bf5aac51b935e2d86d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何：啟用和停用 Managed 程式碼的自動程式碼分析
-您可以設定每個 managed 程式碼專案的組建之前執行的程式碼分析。 您可以設定不同的程式碼分析屬性，每個[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]組態。  
+您可以設定程式碼分析 managed 程式碼專案的每次建置之後執行。 您可以設定不同的程式碼分析屬性，每個[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]組態。  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>若要啟用或停用自動程式碼分析  
   

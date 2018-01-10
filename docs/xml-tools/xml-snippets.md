@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>XML 片段
 XML 編輯器提供一項功能，稱為*XML 片段*，可讓您更快速地建置 XML 檔案。 您可藉由將 XML 片段插入檔案來重複使用它們。 還可根據 XML 結構描述定義語言 (XSD) 結構描述，產生 XML 資料。  
@@ -37,7 +37,7 @@ XML 編輯器提供一項功能，稱為*XML 片段*，可讓您更快速地建�
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  插入片段的方式有兩種。 **插入程式碼片段**命令在游標位置插入 XML 片段。 **環繞**命令會以 XML 片段所選的文字周圍。 可能會有兩個命令從**IntelliSense**  子功能表下的**編輯**功能表上，或是從編輯器捷徑功能表。  
   

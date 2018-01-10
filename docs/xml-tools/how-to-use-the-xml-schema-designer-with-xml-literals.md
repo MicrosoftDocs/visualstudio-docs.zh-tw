@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: VB
 ms.workload: multiple
-ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cda22612959e083cb1f0179d65554d38fab9cf03
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 本主題描述如何在 Visual Studio 專案中檢視與 XML 常值相關的結構描述。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 12/22/2017
   
        End Sub  
    End Module  
-   ```  
+   ```
   
 2.  以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入的任何 XML 節點，然後選取**在結構描述總管中顯示**。  
   
