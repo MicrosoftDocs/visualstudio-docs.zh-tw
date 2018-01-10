@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio 偵錯工具的功能導覽
 
@@ -111,7 +112,7 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 ## <a name="restart-your-app-quickly"></a>快速地重新啟動您的應用程式
 
-按一下**重新啟動** ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式")中偵錯 工具列按鈕 (**Ctrl + Shift + F5**)。
+按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式")中偵錯工具列按鈕 (**Ctrl + Shift + F5**)。
 
 當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
 
@@ -193,6 +194,26 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 展開**例外狀況設定**節點以查看更多選項如何處理此例外狀況類型，但您不需要變更任何項目為本教學課程 ！
 
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>偵錯即時 Azure App Service 中的 ASP.NET 應用程式
+
+**快照偵錯工具**您感興趣的程式碼執行時，會在實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+
+![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png "啟動快照集偵錯工具")
+
+使用 Azure App Service 中執行的 ASP.NET 應用程式的快照集的集合。 ASP.NET 應用程式必須執行.NET Framework 4.6.1 或更新版本，且必須.NET Core 2.0 或更新版本的 Windows 上執行 ASP.NET Core 應用程式。
+
+如需詳細資訊，請參閱[即時使用快照集偵錯工具的 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)。
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>檢視快照集具有 IntelliTrace 步驟回 (Visual Studio Enterprise)
+
+**IntelliTrace 步驟後**自動快照的應用程式在每個中斷點和偵錯工具事件步驟。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
+
+您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
+
+![逐步執行向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "步驟向後和向前按鈕")  
+
+如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
+
 ## <a name="more-features-to-look-at"></a>若要查看更多的功能
 
 -   [偵錯工具秘訣和訣竅](../debugger/debugger-tips-and-tricks.md)了解如何增加您的產能，偵錯工具。
@@ -209,5 +230,5 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 -   [偵錯介面存取 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK)。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)

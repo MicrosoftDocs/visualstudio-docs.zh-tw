@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是視覺效果設計畫布。 若要將自訂索引標籤、 群組和控制項加入 Microsoft Office 應用程式的功能區中使用功能區設計工具。  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/31/2017
 ###  <a name="AddControlsToGroups"></a>將控制項加入至群組  
  將一或多個控制項加入至群組。 下表描述每個控制項。  
   
-|控制項|說明|  
+|控制項|描述|  
 |-------------|-----------------|  
 |**方塊**|組織的群組中的控制項容器。 您可以加入任何控制項，除了分隔符號、 群組或索引標籤中。方塊可以水平或垂直。|  
 |**Button**|啟動動作的按鈕。 您可以將按鈕加入群組、 按鈕群組中，下拉式清單、 組件庫、 功能表上或分割按鈕。|  
@@ -204,7 +205,7 @@ ms.lasthandoff: 10/31/2017
 |如果是開啟的下拉式面板，請選取下拉式面板上的第一個控制項。|RIGHT|  
 |關閉下拉式面板。|ESC|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

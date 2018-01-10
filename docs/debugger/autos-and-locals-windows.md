@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2504807bd4717ec7f42ed059e7ef4d962c7441e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗
 **自動變數**視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > [自動變數]**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > [區域變數]**) 會相當實用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是在不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
@@ -137,5 +138,5 @@ private static int subtractVars(int i, int j)
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具視窗](../debugger/debugger-windows.md)

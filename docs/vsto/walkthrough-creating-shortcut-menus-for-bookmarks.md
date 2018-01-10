@@ -20,11 +20,12 @@ caps.latest.revision: "57"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8dbb248fdaab10aaef6146ae68e36a64b60bb453
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>逐步解說：建立書籤的快速鍵功能表
   本逐步解說示範如何建立快顯功能表<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文件層級自訂中的控制項。 當使用者以滑鼠右鍵按一下書籤中的文字時，快顯功能表隨即出現，並提供用來格式化文字的使用者選項。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="BKMK_CreateProject"></a>建立專案  
  第一個步驟是在 Visual Studio 中建立的 Word 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>建立新的專案  
   
 -   建立具有名稱的 Word 文件專案**我的書籤快顯功能表**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用核取方塊變更格式書籤中。 如需詳細資訊，請參閱[逐步解說： 變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   

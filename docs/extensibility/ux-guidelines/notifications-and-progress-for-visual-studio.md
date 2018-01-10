@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和 Visual Studio 的進度
 ##  <a name="BKMK_NotificationSystems"></a>通知系統  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  有幾種方式來通知使用者發生什麼事 Visual Studio 中對於軟體開發工作。  
   
  在實作任何一種通知：  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>選擇正確方法  
  您可以使用此表格來協助您選擇正確的方法，來通知您郵件的使用者。  
   
-|方法|用法|請勿使用|  
+|方法|使用|請勿使用|  
 |------------|---------|----------------|  
 |[強制回應的錯誤訊息對話方塊](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|當繼續進行之前，需要使用者回應時使用。|請勿使用時不需要封鎖使用者並中斷其流程。 請避免使用強制回應對話方塊，最好盡可能以顯示訊息，另一個、 較具侵入性的方式。|  
 |[IDE 狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|環境文字狀態相關的處理序的資訊時使用。|請勿單獨。 適用於搭配其他意見反應機制。|  
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_ProgressIndicators"></a>進度指標  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  進度指標是很重要的一部分來提供使用者意見反應的通知系統。 程序和操作將會完成時，它們會告訴使用者。 熟悉的指標類型包括進度列、 旋轉的資料指標和動畫的圖示。 類型和位置進度列指示器，取決於需要的內容，包括報告的內容和多久程序或作業完成。  
   
 #### <a name="factors"></a>因素  
@@ -288,7 +289,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_Infobars"></a>資訊列  
   
-### <a name="overview"></a>概觀  
+### <a name="overview"></a>總覽  
  資訊列授與使用者靠近注意其位置的指標，並使用共用的資訊列控制項，以確保一致的視覺外觀和互動。  
   
  ![資訊列](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904年 01_Infobar")  
@@ -487,7 +488,7 @@ public interface IVsInfoBarUIEvents
   
  ![欄位驗證來搭配 [必要] 標籤](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905年 02_FieldValidationRequired")  
   
- 程式可以判斷控制項是否處於的狀態為*輸入無效的內容*當焦點移到另一個控制項，或當使用者按一下 [確定] 認可 按鈕，或當使用者儲存文件或表單。  
+ 程式可以判斷控制項是否處於的狀態為*輸入無效的內容*當焦點移到另一個控制項，或當使用者按一下 [確定] 認可按鈕，或當使用者儲存文件或表單。  
   
  決定無效的內容狀態後，在控制項內，或只旁邊會出現一個圖示。 描述錯誤的工具提示應該會出現暫留時顯示的圖示或控制項。 此外，用來建立無效的狀態控制項周圍的 1 像素框線應該會出現。  
   

@@ -1,8 +1,8 @@
 ---
-redirect_url: /visualstudio/ide/creating-project-and-item-templates.md
-ms.openlocfilehash: 706af5101f5178eeba01ecec8acf14896bfa431e
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+redirect_url: /visualstudio/ide/creating-project-and-item-templates
+ms.openlocfilehash: 1f3a4324654626d2de81d32f720456fb4b45594d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---

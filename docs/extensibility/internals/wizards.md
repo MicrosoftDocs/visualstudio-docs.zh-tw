@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 838b7cac850b8e7eb3401065cf13202d3a3a40ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizards"></a>精靈
 建立精靈之後，您通常想要將它加入至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 加入的精靈則會出現在**加入新的專案**或**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，開啟的方案中以滑鼠右鍵按一下**方案總管 中**，指向 **新增**，和然後按一下 **新專案**或**新項目**。  
@@ -28,9 +29,9 @@ ms.lasthandoff: 10/31/2017
   
  您也可以提供根據開啟時，會傳遞給精靈的自訂參數會以不同的方式，啟動精靈。  
   
- 本節中的主題將討論您實作會造成檔案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**加入新的專案**和**加入新項目**列出可用的精靈與範本 精靈對話方塊和程式精靈在 IDE 中正常運作所必須符合的需求。  
+ 本節中的主題將討論您實作會造成檔案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**加入新的專案**和**加入新項目**列出可用的精靈與範本精靈對話方塊和程式精靈在 IDE 中正常運作所必須符合的需求。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
  提供的哪一個範本概觀目錄描述檔案，並說明其顯示在對話方塊中的專案相關聯的範本檔案、 精靈.vsz 檔案和資料夾在 IDE 中的運作方式。  
   

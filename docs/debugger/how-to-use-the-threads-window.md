@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4469f2f70bececca258fe4ea1a98d753f8349f87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 253798cdde2a40a70496dbe2ed89f9d0a9316640
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>逐步解說： 偵錯 Visual Studio 中使用 [執行緒] 視窗中的多執行緒應用程式
 Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您偵錯多執行緒應用程式的項目。 本教學課程示範如何使用**執行緒**視窗和**偵錯位置**工具列。 如需其他工具的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。   
@@ -43,7 +44,7 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
   
 4.  在**名稱**方塊中，輸入名稱 MyThreadWalkthroughApp。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
      新的主控台專案隨即出現。 專案建立之後，便會出現原始程式檔 (Source File)。 根據您所選擇的語言，原始程式檔的名稱可能是 Module1.vb、Program.cs 或 MyThreadWalkthroughApp.cpp  
   
@@ -57,7 +58,7 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
   
     ```VB  
     Thread.Sleep(3000)   
-    Console.WriteLine(  
+    Console.WriteLine()
     ```  
   
     ```CSharp  
@@ -259,6 +260,6 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
   
      與執行緒標記，您只能切換到停止在該特定位置的執行緒。 使用**執行緒**視窗和**偵錯位置**工具列上，您可以切換至任何執行緒。   
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)

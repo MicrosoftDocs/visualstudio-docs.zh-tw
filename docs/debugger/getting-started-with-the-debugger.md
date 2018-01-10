@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 偵錯
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 12/15/2017
 
 |         |         |
 |---------|---------|
-| ![觀看影片](../install/media/video-icon.png "WatchVideo") | [觀看影片](#video)偵錯，會顯示類似的步驟。 |
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
 
 雖然此示範應用程式是 C#，功能也適用於 c + +、 Visual Basic、 JavaScript 和 Visual Studio （除非註明） 支援其他語言。
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 12/15/2017
 
 ## <a name="restart-your-app-quickly"></a>快速地重新啟動您的應用程式
 
-1. 按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯 工具列 （Ctrl + Shift + F5） 按鈕。
+1. 按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯工具列 （Ctrl + Shift + F5） 按鈕。
 
     當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
 
@@ -279,13 +280,7 @@ ms.lasthandoff: 12/15/2017
 
 若要深入了解偵錯工具的功能，請參閱[偵錯工具秘訣和訣竅](../debugger/debugger-tips-and-tricks.md)。
 
-## <a name="video"></a>請觀看影片，以進行偵錯
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

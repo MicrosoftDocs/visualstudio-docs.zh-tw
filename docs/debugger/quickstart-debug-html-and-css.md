@@ -23,11 +23,12 @@ caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1650326711d8d788a7e232df97044c8e896e3b4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>偵錯 HTML 和 CSS UWP 和 Windows 8.1 應用程式中
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -251,7 +252,7 @@ ms.lasthandoff: 11/11/2017
   
  當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
   
- ![在 [DOM 總管] 中選取項目 按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+ ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
  按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
   
@@ -277,7 +278,7 @@ ms.lasthandoff: 11/11/2017
   
  移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 Visual Studio。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [偵錯使用 DOM 總管 的 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)   
  [偵錯使用 DOM 總管 的版面配置](../debugger/debug-layout-using-dom-explorer.md)   

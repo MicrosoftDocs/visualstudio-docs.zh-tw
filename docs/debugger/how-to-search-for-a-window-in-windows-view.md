@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b970979759c7ef6a6b236a1f2dff34815a72d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dfec3f78e9f95a55d453c45c5a264125152cbf1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在視窗檢視中搜尋視窗
 您可以使用其控制代碼、 標題、 類別或其標題和類別的組合做為搜尋準則，以搜尋特定的視窗，在視窗檢視中。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示選取的視窗的屬性視窗樹狀目錄中。  
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  選擇**向上**或**向**搜尋初始方向。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
      如果找到符合的視窗，它會反白顯示在[視窗檢視](../debugger/windows-view.md)視窗。

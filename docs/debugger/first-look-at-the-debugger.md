@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68eb471f1db42b60114c2a14745ba4771b640c0d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>開始使用 Visual Studio 偵錯工具
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 這裡我們會示範一個簡單的 C# 程式，偵錯，但您可以將相同的步驟套用至 c + + 及 JavaScript 等其他語言中的程式碼。
@@ -61,7 +62,7 @@ static void Main(string[] args)
   
  ![偵錯時的自動變數視窗](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- 如需有關這些視窗的詳細資訊，請參閱[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)。  
+ 如需有關這些視窗的詳細資訊，請參閱[自動變數 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)。  
   
  我們來看看如何隨著我們逐步執行程式變更變數的值。 上設定中斷點`testInt += 1;`行，然後重新啟動偵錯。 您應該會看到**testInt**中**區域變數**和**自動變數**windows **0**，和**我**是**1**。 當您繼續偵錯 (**偵錯 > 繼續**，或**繼續**的工具列上，或**F5**)，您可以看到的值**testInt**若要變更**1**，然後**2**，依此類推。 當您想再觀查這些變更時，以移除中斷點 (**偵錯 > 切換中斷點**，或按一下邊界上)，然後繼續偵錯。 如果您想要移除所有中斷點，請按一下**偵錯 > 刪除所有中斷點**，或**CTRL + SHIFT + F9**，然後按一下**是**對話方塊，詢問上**執行您想要移除所有中斷點嗎？**.  
   

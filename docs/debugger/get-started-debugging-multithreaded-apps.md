@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
 
 |         |         |
 |---------|---------|
-| ![觀看影片](../install/media/video-icon.png "WatchVideo") | [觀看影片](#video)多執行緒偵錯，顯示類似的步驟。 |
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)多執行緒偵錯，顯示類似的步驟。 |
 
 其他主題提供使用其他的多執行緒偵錯工具的其他資訊：
 
@@ -53,7 +54,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
 4.  在**名稱**方塊中，輸入名稱 MyThreadWalkthroughApp。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
      新的主控台專案隨即出現。 專案建立之後，便會出現原始程式檔 (Source File)。 根據您選擇的語言，而可能 Program.cs、 MyThreadWalkthroughApp.cpp 或 Module1.vb 呼叫原始程式檔。  
   
@@ -373,18 +374,12 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 - 若要切換至另一個執行緒，請參閱[如何： 切換到另一個執行緒時偵錯](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
 
-## <a name="video"></a>請觀看影片，以在多執行緒偵錯
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
-
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>若要深入了解 平行堆疊 和 平行監看式視窗  
   
 - 請參閱[How to： 使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md) 
 
 - 請參閱[How to： 使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)

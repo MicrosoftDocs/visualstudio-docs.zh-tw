@@ -20,11 +20,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義網域指定的語言 (DSL)，請從範本建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。  
@@ -626,7 +627,7 @@ ms.lasthandoff: 10/27/2017
 |變更組件名稱之後未出現 DSL 的工具箱。|檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[如何： 變更命名空間的特定領域語言](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
 |DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。|重設實驗執行個體，然後重建方案。<br /><br /> 1.在 Windows 啟動 功能表底下**所有程式**，依序展開[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然後**工具**，然後按一下**重設 Microsoft Visual Studio 實驗執行個體**。<br />2.在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**建置**功能表上，按一下 **重建方案**。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始使用的特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)   
  [建立 Windows Form 特定領域語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [建立 WPF 架構的特定領域語言](../modeling/creating-a-wpf-based-domain-specific-language.md)

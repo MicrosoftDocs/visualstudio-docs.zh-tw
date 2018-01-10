@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a3c41646fa7424197325c48b4cd40bc7a9eb8ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b04ebb2fd28c808c742897bbf4ceb94505641e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-types"></a>專案類型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包含數種語言的專案類型，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也可讓您建立您自己的專案類型。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Essentials](../../extensibility/internals/project-type-essentials.md)  
  顯示您必須開始使用 專案類型的重要資訊。  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
  討論的設計的專案類型。  
   
  [將命令加入至方案總管工具列](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- 詳細描述您要加入按鈕必須遵循的步驟[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**方案總管 中**工具列。  
+ 詳細描述您要加入按鈕必須遵循的步驟[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**方案總管中**工具列。  
   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)  
  討論如何您可以將範本新增至您的專案類型，讓使用者可以建立新的專案和專案項目，根據的模式。  

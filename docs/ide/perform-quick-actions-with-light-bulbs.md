@@ -1,8 +1,8 @@
 ---
-redirect_url: /visualstudio/ide/quick-actions.md
-ms.openlocfilehash: b7ba1be5f38abf92370796656fc6cb8fffc80e11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/quick-actions
+ms.openlocfilehash: a5af78437cbfcfc5269da792ccca895db46429a6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---

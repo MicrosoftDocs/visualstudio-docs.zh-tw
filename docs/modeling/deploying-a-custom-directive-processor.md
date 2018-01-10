@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 若要在任何電腦上的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用自訂指示詞處理器，您必須透過本主題中所述的其中一個方法進行註冊。  
@@ -198,5 +199,5 @@ ms.lasthandoff: 10/27/2017
 |類別|REG_SZ|\<**完整的類別名稱**>|  
 |Assembly|REG_SZ|\<**在 GAC 中組件名稱**>|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
