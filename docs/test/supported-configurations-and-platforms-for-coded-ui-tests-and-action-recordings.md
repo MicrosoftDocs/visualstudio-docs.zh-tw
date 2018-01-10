@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests
-ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
-caps.latest.revision: "106"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 580187da1ceb95369eb9da085248016a9d9a1707
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+author: gewarren
+ms.openlocfilehash: d2cc29115108b1a5d308a227ed0be30d44e56d67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式化 UI 測試和動作記錄的支援組態和平台
 Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會列在下表中。 這些組態也套用至使用 [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)]建立的動作記錄。  
@@ -70,6 +69,6 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
   
  如需有關如何建立擴充功能以支援其他平台的資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)和[擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)。  
   
-## <a name="see-also"></a>請參閱  
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [從現有的動作記錄產生自動程式化 UI 測試](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+## <a name="see-also"></a>另請參閱
+
+[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  

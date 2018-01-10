@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
@@ -224,7 +224,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 * **UWP 和 Win32 的最佳選擇** <br/>
 我們改進了 Windows 10 平台，提供[傳統型橋接器](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)讓 Windows 10 更適用於所有 .NET 開發人員，不論其目前焦點是在 UWP、WPF、Windows Form 或 Xamarin。 透過 Visual Studio 2017 15.5 版中新增的應用程式套件專案類型，您可以像是針對 UWP 專案一樣，針對 WPF 或 Windows Forms 專案建立 Windows 應用程式套件。 封裝應用程式之後，您將享有所有 Windows 10 應用程式部署優點，並可選擇透過 Microsoft Store (適用於消費者應用程式) 或商務用 Microsoft Store 和教育用 Microsoft Store 進行散發。 由於已封裝應用程式可以存取桌面上的完整 UWP API 介面和 Win32 API，因此您現在可以使用 UWP API 和 Windows 10 功能逐漸將 WPF 和 Windows Forms 應用程式現代化。 此外，您可以將 Win32 元件加入 UWP 應用程式，在桌面上顯示所有 Win32 功能。 
 
-如需 UWP 的詳細資訊，請參閱[開發適用於通用 Windows 平台 (UWP) 的應用程式](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)頁面。
+如需 UWP 的詳細資訊，請參閱[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)頁面。
 
 ## <a name="mobile-app-development"></a>行動應用程式開發
 ### <a name="xamarin"></a>Xamarin
@@ -271,7 +271,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 
 **15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。  
 
-如需詳細資訊，請參閱 [.NET Core 指南](https://docs.microsoft.com/dotnet/core/index)頁面。
+如需詳細資訊，請參閱 [.NET Core 指南](/dotnet/core/index)頁面。
 
 ## <a name="games-development"></a>遊戲開發
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity

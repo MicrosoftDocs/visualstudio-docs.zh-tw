@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
-caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: dd663d17dc7d0dc66af7cdd27f0da3cf9a253523
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: d926e28dc918900715090d32f929b6b7ff5cb482
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 您可以使用**測試總管**視窗來撰寫及執行 C++ 單元測試，就像是其他語言一樣。 如需使用**測試總管**的詳細資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。 
@@ -38,7 +37,7 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 2) **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。 
 
-3) **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-cpp.md)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
+3) **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 
 **Visual Studio 2015 和更早版本**

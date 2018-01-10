@@ -10,16 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
-ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 85abc33ab5dd1253402e020c3b77c1b639e5ae44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 500b3a3c28b2ccb07e8fb61552aff9c427d780d6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 所提供的這個範例程式碼可用於下列逐步解說：  

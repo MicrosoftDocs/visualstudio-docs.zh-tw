@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="project-references"></a>專案參考
 
-通用 Windows 平台 (UWP) 專案可以建立對方案中其他 UWP 專案或者 Windows 8.1 專案或二進位檔的參考，前提是這些專案不使用 Windows 10 中已淘汰的 API。 如需詳細資訊，請參閱 [從 Windows 執行階段 8 移至 UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root)。
+通用 Windows 平台 (UWP) 專案可以建立對方案中其他 UWP 專案或者 Windows 8.1 專案或二進位檔的參考，前提是這些專案不使用 Windows 10 中已淘汰的 API。 如需詳細資訊，請參閱 [從 Windows 執行階段 8 移至 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
 
 如果選擇將 Windows 8.1 專案的目標重定為 Windows 10，請參閱[移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
 

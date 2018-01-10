@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: xamarin
-ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android、iOS 及 Windows 的跨平台行動裝置應用程式。 Xamarin 讓大部分的程式碼可在平台之間共用，只有極低比例的程式碼需要在特定平台上運作。 如需 Xamarin 本身的詳細資訊，請參閱 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
@@ -38,9 +38,9 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
 |管理待處理項目和衝刺 (Sprint)|[是]||  
-|工作追蹤|是||  
-|小組聊天室共同作業|是||  
-|看板|是||  
+|工作追蹤|[是]||  
+|小組聊天室共同作業|[是]||  
+|看板|[是]||  
 |報告和視覺化進度|[是]||  
   
 ## <a name="modeling"></a>模型化  
@@ -51,13 +51,13 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
 |順序圖表|[是]||  
-|相依性圖形|是||  
-|呼叫階層|是||  
-|類別設計工具|是||  
-|架構總管|是||  
-|UML 圖表 (使用案例、活動、類別、元件、序列和 DSL)|是||  
-|圖層圖表|是||  
-|圖層驗證|是||  
+|相依性圖形|[是]||  
+|呼叫階層|[是]||  
+|類別設計工具|[是]||  
+|架構總管|[是]||  
+|UML 圖表 (使用案例、活動、類別、元件、序列和 DSL)|[是]||  
+|圖層圖表|[是]||  
+|圖層驗證|[是]||  
   
 ## <a name="code"></a>程式碼  
   
@@ -77,16 +77,15 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |內部部署 TFS 伺服器|[是]|組建電腦必須安裝 Xamarin，而且必須可連結到 OSX 電腦，以便為 iOS 進行建置。 請參閱 [為 Xamarin 設定 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin 網站)|  
 |連結至 Visual Studio Team Services 的內部部署組建伺服器|[是]|如需相關指示，請參閱[組建伺服器](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
 |Visual Studio Team Services 的裝載控制器服務|[是]|[建置您的 Xamarin 應用程式 (英文)](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)。|  
-|具有預先定義和後置指令碼的組建定義|是||  
-|包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
+|具有預先定義和後置指令碼的組建定義|[是]||  
+|包括閘道簽入的連續整合|[是]|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
   
-## <a name="testing"></a>測試  
- 參考連結：**[測試應用程式](/devops-test-docs/test/test-apps-early-and-often)**  
-  
+## <a name="testing"></a>測試
+
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
-|規劃測試、建立測試案例和組織測試套件|是||  
-|手動測試|是||  
+|規劃測試、建立測試案例和組織測試套件|[是]||  
+|手動測試|[是]||  
 |測試管理員 (錄製和播放測試)|[是]|僅限來自 Visual Studio 的 Windows 裝置及 Android 模擬器。 可利用 [Xamarin 測試錄製器 (英文)](https://www.xamarin.com/test-cloud/recorder)，針對所有裝置進行錄製。|  
 |程式碼涵蓋範圍|N/A||  
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|[是]|對於 Windows 和 Android 的目標，可以使用內建的 MSTest 工具。 若要在 Windows、Android 和 iOS 上執行單元測試，Xamarin 會建議使用 NUnit。 請參閱 [為 Xamarin 設定 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin 網站)。|  
@@ -108,8 +107,8 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
   
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
-|管理發行處理序|是||  
-|部署至伺服器以便透過指令碼進行側面載入|是||  
+|管理發行處理序|[是]||  
+|部署至伺服器以便透過指令碼進行側面載入|[是]||  
 |上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
   
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視  

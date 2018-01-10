@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf97be0c7a7b5bb9d6a9d43ceeb5cd9e9334025d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>使用 PyLint 檢查 Python 程式碼
 
@@ -46,7 +46,7 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
 
 1. 在命令列中，巡覽至您的專案根目錄 (其包含您的 `.pyproj` 檔案)，然後執行下列命令來產生已加註解的設定檔︰
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -57,7 +57,4 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
 1. 儲存 `.pylintrc` 檔案，再次執行 PyLint，您會發現警告現在已經隱藏。
 
 > [!Tip]
-> 若要使用網路共用中的 `.pylintrc` 檔案，請利用使用 UNC 路徑或對應磁碟機代號之網路共用上的檔案名稱值來建立名為 `PYLINTRC` 的環境變數。 例如: 
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> 若要使用網路共用中的 `.pylintrc` 檔案，請利用使用 UNC 路徑或對應磁碟機代號之網路共用上的檔案名稱值來建立名為 `PYLINTRC` 的環境變數。 例如，`PYLINTRC=\\myshare\python\.pylintrc`。

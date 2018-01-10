@@ -15,11 +15,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 97debeab6349fefee48d6c550c39c18c3e516b75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>資料科學與分析應用程式工作負載
 
@@ -27,7 +27,7 @@ Visual Studio 中的 資料科學與分析應用程式工作負載結合三種�
 
 - [R 和 Microsoft R Client](../rtvs/index.md)
 - [Python 和 Anaconda](../python/python-in-visual-studio.md)
-- [含 .NET Framework 的 F#](https://docs.microsoft.com/dotnet/fsharp/)
+- [含 .NET Framework 的 F#](/dotnet/fsharp/)
 
 ![Visual Studio 安裝程式中的資料科學與分析應用程式工作負載](media/data-science-workload.png)
 

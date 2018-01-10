@@ -22,11 +22,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 tlbimp.exe 和 aximp.exe，以產生必要的包裝函式組件。 此參數允許多目標的 `ResolveComReferences`。|  
 |`FilesWritten`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含寫入至磁碟的所有檔案名稱。 這包括快取檔案 (如果有的話)。 此參數對於 Clean 的實作很有用。|  
 |`MinimalRebuildFromTracking`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定參數，指定是否將使用追蹤式累加建置。 如果為 `true`，會開啟累加建置，否則會強制重建。|  
-|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定布林值，該值可指定是否建立新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) 以評估資源 (.resx) 檔 (true)，或是只有當資源檔參考使用者的組件 (false) 時建立新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain)。|  
+|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定布林值，該值可指定是否建立新的 [AppDomain](/dotnet/api/system.appdomain) 以評估資源 (.resx) 檔 (true)，或是只有當資源檔參考使用者的組件 (false) 時建立新的 [AppDomain](/dotnet/api/system.appdomain)。|  
 |`OutputResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定所產生檔案 (例如 .resources 檔案) 的名稱。 如果未指定名稱，會使用符合的輸入檔名稱，且建立的 .resources 檔案會置於包含該輸入檔的目錄中。|  
 |`PublicClass`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會建立強型別資源類別做為公用類別。|  
 |`References`|選擇性的 `String[]` 參數。<br /><br /> 要從中載入 .resx 檔型別的參考。 Resx 檔案資料元素可能具有 .NET 型別。 讀取 .resx 檔時，必須解析此型別。 一般而言，使用標準型別載入規則即可順利解析。 如果您提供 `References` 中的組件，則會優先使用它們。<br /><br /> 強型別資源不需要此參數。|  

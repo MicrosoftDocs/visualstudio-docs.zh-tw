@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6a76f89db120f8655d63a064cb3d851abb9eac64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 8f2aa063163898a87ff563a356f6bb389cb07243
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>範例 Excel 延伸模組：ActionFilter 類別
 此內部類別延伸 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 類別，並代表 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 項目之測試動作的篩選。  

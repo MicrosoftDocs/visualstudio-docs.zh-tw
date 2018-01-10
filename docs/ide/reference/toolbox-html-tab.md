@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 工具箱的 [HTML] 索引標籤提供適用於網頁和 Web Forms 的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視] 功能表上，按一下 [工具箱]，然後按一下 [工具箱] 的 [HTML] 索引標籤。  
@@ -86,7 +86,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (檔案)**  
  ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (密碼)**  
  ![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -114,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (核取方塊)**  
  ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -161,7 +161,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 > [!IMPORTANT]
->  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **資料表**  
  ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif "vxTable")  

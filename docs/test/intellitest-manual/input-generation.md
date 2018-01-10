@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Dynamic symbolic execution
-ms.assetid: B938E2D2-7B7C-4D76-B26C-2616F5B4A9F5
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 89754f6b66de78b4ff3fb9c80cf9eb3dfab7cfac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: c8d72ad4e5b84802f3c8f2eba426f98ed5477468
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 

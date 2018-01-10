@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce432a20aa451807058fc83432705e5b32440b63
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-6-working-with-git"></a>步驟 6：使用 Git
 
@@ -47,7 +47,7 @@ Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 Git
 
 ## <a name="going-deeper"></a>繼續探討
 
-如需使用 Git 的更廣泛教學課程，請參閱[與 Visual Studio 2017 和 VSTS Git 共用程式碼](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
+如需使用 Git 的更廣泛教學課程，請參閱[與 Visual Studio 2017 和 VSTS Git 共用程式碼](/vsts/git/share-your-code-in-git-vs-2017)
 
 ## <a name="tutorial-review"></a>教學課程檢閱
 

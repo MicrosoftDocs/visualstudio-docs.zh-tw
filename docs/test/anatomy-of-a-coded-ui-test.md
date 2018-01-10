@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests
-ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
-caps.latest.revision: "23"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 04472a9dee89a270c78876022b16ef54f200ecd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 928caef1cdad112e794bd7ac9317d8f8dbf03117
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 當您在自動程式化 UI 測試專案中建立自動程式碼 UI測試時，有數個檔案會加入至您的方案。 在本主題中，我們將使用範例自動程式化 UI 測試來探索這些檔案。  

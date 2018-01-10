@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: vs.unittesting.testexplorer.overview
-ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
-caps.latest.revision: "27"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e25d450eee8b404819df152a759d7238363d1a78
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。  
@@ -190,7 +189,7 @@ ms.lasthandoff: 12/22/2017
 FilterName:"Criteria" -FilterName:"SubsetCriteria"  
 ```  
   
- 例如：  
+ 例如，套用至物件的  
   
 ```  
 FullName:"MyClass" - FullName:"PerfTest"  

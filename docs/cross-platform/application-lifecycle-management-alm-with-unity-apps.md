@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。  
@@ -34,9 +34,9 @@ ms.lasthandoff: 12/22/2017
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
 |管理待處理項目和衝刺 (Sprint)|[是]||  
-|工作追蹤|是||  
-|小組聊天室共同作業|是||  
-|看板|是||  
+|工作追蹤|[是]||  
+|小組聊天室共同作業|[是]||  
+|看板|[是]||  
 |報告和視覺化進度|[是]||  
 
 ## <a name="modeling"></a>模型化  
@@ -81,23 +81,23 @@ ms.lasthandoff: 12/22/2017
 |內部部署 TFS 伺服器|可能|Unity 專案是透過 Unity 環境而非透過 Visual Studio 組建系統所建置 (Visual Studio Tools for Unity 內的建置將會編譯指令碼，而不會產生可執行檔)。 可能會[從命令列建置 Unity 專案](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity 文件)，因此，可能會在 TFS 伺服器上設定 MSBuild 處理序來執行適當的 Unity 命令，但前提是要將 Unity 安裝於該電腦上。<br /><br /> Unity 也提供 [Unity 雲端組建 (英文)](https://build.cloud.unity3d.com/landing/)，其會監視 Git 或 SVN 儲存機制，並執行定期建置。 它目前並未使用 Team Foundation 版本控制或 Visual Studio Team Services。|  
 |連結至 Visual Studio Team Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Visual Studio Team Services 觸發的組建使用內部部署的 TFS 電腦。  相關指示，請參閱[建置和發行代理程式](/vsts/build-release/concepts/agents/agents)。|  
 |Visual Studio Team Services 的裝載控制器服務|否|目前不支援 Unity 組建。|  
-|具有預先定義和後置指令碼的組建定義|是|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|  
-|包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
+|具有預先定義和後置指令碼的組建定義|[是]|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|  
+|包括閘道簽入的連續整合|[是]|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
 
-## <a name="testing"></a>測試  
- 參考連結：**[測試應用程式](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>測試
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|規劃測試、建立測試案例和組織測試套件|是||  
-|手動測試|是||  
+|規劃測試、建立測試案例和組織測試套件|[是]||  
+|手動測試|[是]||  
 |測試管理員 (錄製和播放測試)|僅限 Windows 裝置及 Android 模擬器||  
 |程式碼涵蓋範圍|N/A|不適用，因為是在 Unity 內進行單元測試，而非 Visual Studio 內，請見下文。|  
 |[對程式碼進行單元測試](../test/unit-test-your-code.md)|在 Unity 內，而非 Visual Studio 內|Unity 提供專屬單元測試架構做為 [Unity 測試工具 (英文)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store) 的一部分。 單元測試結果會在 Unity 內報告，但不會顯示在 Visual Studio 內。|  
 |[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)|否|自動程式化 UI 測試會依賴應用程式 UI 中的可讀取控制項；Unity 應用程式在本質上是圖形，因此，自動程式化 UI 測試工具無法讀取內容。|  
 
-## <a name="improve-code-quality"></a>改善程式碼品質  
- 參考連結︰**[改善程式碼品質](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>改善程式碼品質
+
+參考連結︰**[改善程式碼品質](/visualstudio/test/improve-code-quality)**  
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
@@ -112,8 +112,8 @@ ms.lasthandoff: 12/22/2017
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|管理發行處理序|是||  
-|部署至伺服器以便透過指令碼進行側面載入|是||  
+|管理發行處理序|[是]||  
+|部署至伺服器以便透過指令碼進行側面載入|[是]||  
 |上傳至應用程式存放區|Partial|您可以針對某些應用程式存放區，使用擴充功能來自動化此程序。  請參閱[適用於 Visual Studio Team Services 的擴充功能 (英文)](https://marketplace.visualstudio.com/VSTS)；例如[適用於 Google Play 的擴充功能 (英文)](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 監視  

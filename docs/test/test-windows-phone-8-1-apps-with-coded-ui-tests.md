@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: "28"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 2af4471fd816746f19c06a7769fec6eb4ae5f425
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
 
@@ -376,7 +375,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |功能|UWP 應用程式|Windows Phone 應用程式|  
 |-------------|------------------------|------------------------|  
-|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。 請參閱 [在 Microsoft Test Manager 中自動化測試案例](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager)。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|  
+|執行測試的目標|本機或遠端電腦。 當您使用自動化測試案例執行測試時，可指定遠端電腦。|模擬器或裝置。 請參閱本主題中的 [問：我只能在模擬器上執行測試，還是也可以使用實體裝置？](#TestingPhoneAppsCodedUI_EmulatorDevice)|  
 |從命令列執行|不需要使用設定檔案來指定目標。|不需要使用 Runsettings 檔案來指定目標。|  
 |殼層控制項的特製化類別|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |XAML 應用程式中的 WebView 控制項|如果使用 Html* 特製化類別與 HTML 項目互動，則支援。 請參閱 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>。|不支援。|  

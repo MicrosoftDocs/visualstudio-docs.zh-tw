@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>重構 Python 程式碼
 
@@ -26,7 +26,7 @@ Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命�
 - [重新命名](#rename)會重新命名選取的類別、方法或變數名稱
 - [擷取方法](#extract-method)會從選取的程式碼建立新方法
 - [加入匯入](#add-import)提供智慧標籤以加入遺漏的匯入
-- [移除未使用的匯入](#remove-imports)會移除未使用的匯入
+- [移除未使用的匯入](#remove-unused-imports)會移除未使用的匯入
 
 <a name="rename-variable"</a>
 
@@ -72,6 +72,7 @@ Visual Studio 會嘗試篩選出未實際定義於模組中的成員，例如已
 最後，如果某項目正常情況下會被排除，但卻具有其他會包含的值 (例如，因為已在模組中指派名稱的值)，Visual Studio 仍會排除匯入。 此行為假設不應該匯出值，因為它定義在另一個模組中，因此其他的指派可能是空的值，也不會匯出。
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>移除未使用的匯入
 
 撰寫程式碼時，對於完全未使用的模組，很容易得到 `import` 陳述式。 由於 Visual Studio 會分析您的程式碼，因此可以查看範圍內是否使用了匯入的名稱 (陳述式即出現在該範圍下方)，以自動判斷 `import` 陳述式是否有必要。

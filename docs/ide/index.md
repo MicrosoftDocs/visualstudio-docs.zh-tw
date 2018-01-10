@@ -7,11 +7,11 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 43a8e6128c83b0c7a99e9fee11c55927c8341d4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d0a35aefbf9bcf7866112bd77bb345d0da12f6c4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/22/2017
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" alt="" />
+                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -62,7 +62,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_advanced.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_advanced.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -85,7 +85,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_road-map.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -103,7 +103,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_categorize.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -121,7 +121,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_code-edit.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -139,7 +139,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_config-tools.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -157,7 +157,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_Csharp.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -175,7 +175,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_vb.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -193,7 +193,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_Cplusplus.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -211,7 +211,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_python.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -229,7 +229,7 @@ ms.lasthandoff: 12/22/2017
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/logos/logo_nodejs.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -249,22 +249,22 @@ ms.lasthandoff: 12/22/2017
 
 <!--
 <div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833067"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_Fsharp.svg"><span>F#</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_Fsharp.svg"><span>F#</span></a></div>
 <div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833066"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_TS.svg"><span>TypeScript</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span></a></div>
 -->
 
 <div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/python/vs-tutorial-01-01"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_Python.svg"><span>Python</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/rtvs/getting-started-with-r"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_R.svg"><span>R</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_R.svg"><span>R</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/ide/tutorial-csharp-aspnet-core"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_Csharp.svg"><span>C#</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_Csharp.svg"><span>C#</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/ide/tutorial-visual-basic-console"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/logos/logo_vb.svg"><span>Visual Basic</span></a></div>
+src="https://docs.microsoft.com/media/logos/logo_vb.svg"><span>Visual Basic</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/ide/getting-started-with-debugging-in-visual-studio"><img width="48" height="48" alt=""
-src="https://docs.microsoft.com/en-us/media/common/i_debug.svg"><span>偵錯</span></a></div>
+src="https://docs.microsoft.com/media/common/i_debug.svg"><span>偵錯</span></a></div>

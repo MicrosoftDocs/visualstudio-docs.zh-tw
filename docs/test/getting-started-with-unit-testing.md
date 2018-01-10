@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: unit testing, create unit test plans
-ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bfb37b6ea2c448d0243f72857de0a29fa2d20c87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e6789c3a8ddb9b0aa317df0d2362d39946069cbd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -92,21 +91,21 @@ ms.lasthandoff: 12/22/2017
 <a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>使用 IntelliTest 產生單元測試
 
-當您執行 IntelliTest 時，您很容易就能看到哪些測試失敗，進而加入必要的程式碼來修正測試。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。 若要了解做法，請參閱[使用 IntelliTest 為程式碼產生單元測試](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)。
+當您執行 IntelliTest 時，您很容易就能看到哪些測試失敗，進而加入必要的程式碼來修正測試。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。 若要了解做法，請參閱[使用 IntelliTest 為程式碼產生單元測試](../test/generate-unit-tests-for-your-code-with-intellitest.md)。
 
 ![使用 IntelliTest 產生單元測試](media/intellitest.png)
 
 <a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
-您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer)。
+您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。 若要了解做法，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
 
 ![使用 [測試總管] 執行單元測試](media/testexplorer.png)
 
 <a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 
-若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。 若要了解做法，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)。
+若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。 若要了解做法，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 ![使用程式碼涵蓋範圍來決定所測試的程式碼數量](media/codecoverage.png)
 

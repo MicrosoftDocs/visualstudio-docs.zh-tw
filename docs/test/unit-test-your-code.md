@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 單元測試提供開發人員及測試人員一個快速的方法，可在 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 專案中查看類別之方法中的邏輯錯誤。  
@@ -55,15 +54,6 @@ ms.lasthandoff: 12/22/2017
 |**擴充單元測試類型：**您可以在測試中加入可能不存在單元測試架構中的功能。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=185591)。|  
 |**設定測試選項：**例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>相關工作  
- [在 Microsoft Test Manager 中檢閱測試結果](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- 描述測試結果以及使用這些結果的方式，包括如何檢視、儲存和刪除測試結果。  
-  
- [使用 Microsoft Visual Studio 執行系統測試](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- 提供有關使用 Visual Studio 執行自動化測試 (相對於使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]) 的資訊連結。  
-  
 ## <a name="reference"></a>參考資料  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  描述 UnitTesting 命名空間，此命名空間可提供屬性、例外狀況、判斷提示和其他支援單元測試的類別。  
@@ -85,6 +75,6 @@ ms.lasthandoff: 12/22/2017
 ### <a name="reference"></a>參考資料  
  [單元測試的內容索引](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>請參閱  
- [改善程式碼品質](/visualstudio/test/improve-code-quality)   
- [測試應用程式](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>另請參閱
+
+[改善程式碼品質](/visualstudio/test/improve-code-quality)

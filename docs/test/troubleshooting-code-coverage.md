@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 10fc7fe674e73ab1c81721048a50db80d1dd6fdd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="troubleshooting-code-coverage"></a>針對程式碼涵蓋範圍進行疑難排解
 Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 (.dll 或 .exe 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果] 視窗會顯示類似「產生空白的結果:....」的錯誤。有幾個可能發生這種情況的原因。 本主題有助於解決這些問題。  

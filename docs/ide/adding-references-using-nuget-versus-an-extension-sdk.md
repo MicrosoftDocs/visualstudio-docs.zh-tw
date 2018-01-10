@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 
 您可以使用 Visual Studio 的 NuGet 延伸模組或軟體開發套件 (SDK)，提供套件以在 Visual Studio 專案內使用。 藉由描述這兩個機制之間的差異與相似之處，本主題可以協助您選擇適合您工作的機制。
 
-- NuGet 是開放原始碼套件管理系統，可簡化程式庫併入專案方案的程序。 如需詳細資訊，請參閱 [NuGet 文件](http://docs.microsoft.com/nuget)。
+- NuGet 是開放原始碼套件管理系統，可簡化程式庫併入專案方案的程序。 如需詳細資訊，請參閱 [NuGet 文件](/nuget)。
 
 - SDK 是檔案集合，Visual Studio 會將這個集合視為單一參考項目。 [參考管理員] 對話方塊會列出所有與在您顯示該對話方塊時已開啟之專案相關的 SDK。 當您將 SDK 新增到專案時，可以透過 IntelliSense、[工具箱]、設計工具、[物件瀏覽器]、MSBuild、部署、偵錯和封裝，存取該 SDK 的所有內容。 如需 SDK 的詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 

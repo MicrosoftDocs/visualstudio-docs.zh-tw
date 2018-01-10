@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -36,9 +36,9 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 - 執行 Python 的遠端電腦，作業系統為 Mac OS 或 Linux。
 - 已開啟上述電腦的防火牆連接埠 5678 (輸入)，其為遠端偵錯的預設值。
 
-您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)上的清單，以取得其他的 Python 下載位置。
+您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)上的清單，以取得其他的 Python 下載位置。
 
-如需建立 Azure VM 防火牆規則的詳細資訊，請參閱[使用 Azure 入口網站對 Azure 中的 VM 開啟連接埠](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal)。
+如需建立 Azure VM 防火牆規則的詳細資訊，請參閱[使用 Azure 入口網站對 Azure 中的 VM 開啟連接埠](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 
 ## <a name="preparing-the-script-for-debugging"></a>準備偵錯指令碼
 
@@ -132,14 +132,13 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>使用 SSL 保護偵錯工具連線
 
 根據預設，與 ptvsd 遠端偵錯伺服器的連線只有受到密碼的保護，並會以純文字傳遞所有的資料。 如需更安全的連線，ptvsd 支援 SSL，您可依下列方式設定︰
 
 1. 在遠端電腦上，使用 openssl 來產生個別的自我簽署憑證和金鑰檔案：
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +151,8 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    您也可以在本機電腦上的程式碼檔案進行相同變更，但這個程式碼並不會實際執行，因為不是絕對必要。    
+
+    您也可以在本機電腦上的程式碼檔案進行相同變更，但這個程式碼並不會實際執行，因為不是絕對必要。
 
 1. 重新啟動遠端電腦上的 Python 程式，使其準備好開始偵錯。
 

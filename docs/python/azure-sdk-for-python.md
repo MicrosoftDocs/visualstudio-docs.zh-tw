@@ -1,7 +1,7 @@
 ---
 title: "Azure SDK for Python |Microsoft 文件"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 43fbcc0c5c1674d127755a61ef3e15523e792a21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 647b07e3816551e60e176280199ad5298db53200
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -31,7 +31,7 @@ Azure SDK 是從 [Python 封裝索引 (英文)](https://pypi.python.org/pypi/azu
 
 安裝**最新的穩定版本** (支援 Python 2.7 與 3.3 或更新版本)，如下所示：
 
-```bash
+```command
 pip install azure
 ```
 
@@ -43,14 +43,14 @@ pip install azure
 
 [Azure SDK for Python 開發人員中心](http://azure.microsoft.com/develop/python/)也有一些實用的資源，包括教學課程，例如：
 
-  - 使用 [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
-  - [Blob 儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
-  - [表格儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
-  - [佇列儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
-  - [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-python-application)
-  - [服務匯流排佇列](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [服務匯流排主題/訂用帳戶](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-  - [服務管理](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- 使用 [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
+- [Blob 儲存體](/azure/storage/storage-python-how-to-use-blob-storage)
+- [表格儲存體](/azure/storage/storage-python-how-to-use-table-storage)
+- [佇列儲存體](/azure/storage/storage-python-how-to-use-queue-storage)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [服務匯流排佇列](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [服務匯流排主題/訂用帳戶](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [服務管理](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 對於沒有文件的公用 API，[SDK 的 GitHub 存放庫](https://github.com/Azure/azure-sdk-for-python)中的單元測試是很好的資訊來源：
 

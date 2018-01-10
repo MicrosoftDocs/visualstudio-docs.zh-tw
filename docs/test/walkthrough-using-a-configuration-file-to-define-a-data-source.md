@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
@@ -269,8 +268,8 @@ ms.lasthandoff: 12/22/2017
 > [!IMPORTANT]
 >  部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。  
   
-## <a name="see-also"></a>請參閱  
- [對程式碼進行單元測試](../test/unit-test-your-code.md)   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [測試應用程式](/devops-test-docs/test/test-apps-early-and-often)   
- [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>請參閱
+
+[對程式碼進行單元測試](../test/unit-test-your-code.md)  
+[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)

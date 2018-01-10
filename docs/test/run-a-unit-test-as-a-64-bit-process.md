@@ -10,16 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 36a33e9be37255e6bcf199e612a44f65ca243a1e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 如果您有 64 位元的電腦，即可透過 64 位元處理序的形式執行單元測試並擷取程式碼涵蓋範圍資訊。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
      在 .runsettings 檔案中指定 `<TargetPlatform>x64</TargetPlatform>`。 這個方法的優點是，您可以指定不同檔案中的設定群組，並且在不同設定之間快速切換。 您也可以在方案之間複製設定。 如需詳細資訊，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。  
   
-## <a name="see-also"></a>請參閱  
- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)   
- [對程式碼進行單元測試](../test/unit-test-your-code.md)   
- [指定 Visual Studio 測試的測試設定](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+## <a name="see-also"></a>另請參閱
+
+[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)  
+[對程式碼進行單元測試](../test/unit-test-your-code.md)  

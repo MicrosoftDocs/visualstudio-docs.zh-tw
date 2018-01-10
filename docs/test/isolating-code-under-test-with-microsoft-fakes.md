@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
-dev.langs:
+ms.topic: article
+ms.author: gewarren
+manager: ghogen
+ms.workload: multiple
+author: gewarren
+dev_langs:
 - VB
 - CSharp
-ms.topic: article
-ms.author: douge
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 35189a94ca0cd1bd9bd9b0aa91349fffd847c22b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 42164191a3782de31245b1bc46cddce57a56de02
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
 

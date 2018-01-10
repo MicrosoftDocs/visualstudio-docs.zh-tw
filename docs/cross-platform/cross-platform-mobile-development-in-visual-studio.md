@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f6e8eb7d7349bc88a54707c68a4e505d3f6720b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 您可以使用 Visual Studio 建置 Android、iOS 和 Windows 裝置的應用程式。  設計應用程式時，請使用 Visual Studio 中的工具，輕鬆地加入已連線的服務，例如 Office 365、Azure App Service 和 Application Insights。
@@ -118,7 +118,7 @@ ms.lasthandoff: 12/22/2017
 |**進一步了解**|
 |--------------------|
 |[安裝 Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[開始使用 Visual Studio Tools for Apache Cordova (英文)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
+|[開始使用 Visual Studio Tools for Apache Cordova (英文)](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
 |[了解 Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> 建置 Android 和 Windows 的應用程式 (C++)

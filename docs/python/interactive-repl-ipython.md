@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5eab9ef6f3030e8a71547babd9dd9cc279813eee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
@@ -32,7 +32,7 @@ IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的
 
 1. 查看 [套件] (或 [pip]) 索引標籤，並確保其中已列出 `IPython` 和 `matplotlib`。 如果沒有，請在這裡安裝它們。
 
-1. 選取 [概觀] 索引標籤並選取 [使用 IPython 互動模式]。 (在 Visual Studio 2015 中，選取 [設定互動選項] 開啟 [選項] 對話方塊，然後將 [互動模式] 設定為 IPython，並選取 [確定]。)    
+1. 選取 [概觀] 索引標籤並選取 [使用 IPython 互動模式]。 (在 Visual Studio 2015 中，選取 [設定互動選項] 開啟 [選項] 對話方塊，然後將 [互動模式] 設定為 IPython，並選取 [確定]。)
 
 1. 選取 [開啟互動式視窗] 以開啟 IPython 模式的互動式視窗。 如果您剛變更互動模式，您可能需要重設視窗，如果僅出現 >>> 提示，也可能需要按下 Enter。
 
@@ -76,11 +76,11 @@ IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的
     ![將程式碼從編輯器傳送至互動式視窗](media/ipython-repl-05.png)
 
 1. 若要在互動式視窗外查看圖表，請改為使用 [偵錯] > [啟動但不偵錯] 命令來執行程式碼。
-    
+
 IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](http://ipython.org/documentation.html)。
 
 ## <a name="related-topics"></a>相關主題
 
 - 若要輕鬆使用 Jupyter，且不需安裝，請嘗試免費的 [Azure Notebooks 託管服務](https://notebooks.azure.com/)，可讓您保留並與其他人共用您的筆記。
 
-- 您也可以在 Azure 上自己的 Windows 或 Linux 虛擬機器執行 Jupyter (之前稱為 IPython)。 如需詳細資訊，請參閱[在 Azure 上建立 Azure VM、安裝 Jupyter 並執行 Jupyter Notebook](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook)。
+- 您也可以在 Azure 上自己的 Windows 或 Linux 虛擬機器執行 Jupyter (之前稱為 IPython)。 如需詳細資訊，請參閱[在 Azure 上建立 Azure VM、安裝 Jupyter 並執行 Jupyter Notebook](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook)。

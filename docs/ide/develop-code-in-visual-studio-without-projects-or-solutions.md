@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼  
 在 Visual Studio 2017 中，您可以在 Visual Studio 中從幾乎任何類型的目錄型專案開啟程式碼，而不需使用方案或專案檔。 例如，這意謂著您可以在 Git 上尋找程式碼專案、複製它，然後直接在 Visual Studio 中開啟它並開始開發，而不需建立方案或專案。  
@@ -172,7 +172,7 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
 
   ![自訂建置工作命令](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. 將下列建置工作新增到 tasks.vs.json。 針對這個範例，我們將新增兩個工作：一個叫做 "makefile-build"，另一個叫做 "makefile-clean"，前者會使用 nMake 命令來建置專案，後者會使用 "clean" 引數來呼叫 nMake 命令。 您應該在現有的 "tasks" 陣列內新增這些工作。 (請注意，這些只是範例建置工作。 若要讓它們實際運作，您的系統上必須安裝包含 [nMake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) 的工作負載)。  
+1. 將下列建置工作新增到 tasks.vs.json。 針對這個範例，我們將新增兩個工作：一個叫做 "makefile-build"，另一個叫做 "makefile-clean"，前者會使用 nMake 命令來建置專案，後者會使用 "clean" 引數來呼叫 nMake 命令。 您應該在現有的 "tasks" 陣列內新增這些工作。 (請注意，這些只是範例建置工作。 若要讓它們實際運作，您的系統上必須安裝包含 [nMake](/cpp/build/nmake-reference) 的工作負載)。
 
   ```xml
   {

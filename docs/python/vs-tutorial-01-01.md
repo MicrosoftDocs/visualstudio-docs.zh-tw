@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 Python，步驟 1 | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -51,7 +51,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
     請注意，Visual Studio 中的 Python 支援如何包含一些專案範本，包含使用 Bottle、Flask 和 Django 架構的 Web 應用程式。 不過，基於本逐步解說的目的，讓我們先從空白專案開始。
 
-1. 選取 [Python 應用程式] 範本，並指定專案的名稱，然後選取 [確定]。 
+1. 選取 [Python 應用程式] 範本，並指定專案的名稱，然後選取 [確定]。
 
 1. 幾分鐘後，Visual Studio 會在方案總管 視窗 (1) 中顯示專案結構。 預設程式碼檔案會在編輯器中開啟 (2)。 也會出現屬性視窗 (3)，以顯示方案總管中所選取之任何項目的其他資訊 (包含其在磁碟上的確切位置)。
 

@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
-caps.latest.revision: "9"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0a0643f6e290d5be5b4d2854246d5dc95c0d731f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e36d73a0c05378a95b3ece46945de1686796493f
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
 延伸模組會使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 並代表 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 中 Worksheet 控制項和 Cell 控制項的類別。  

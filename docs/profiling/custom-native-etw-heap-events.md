@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: ghogen
 dev_langs: C++
 ms.workload: cplusplus
-ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
-Visual Studio 包含各種[分析與診斷工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
+Visual Studio 包含各種[分析與診斷工具](../profiling/profiling-tools.md)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
 
 在許多情況下，您可能想要使用自訂的堆積，以避免來自標準堆積的配置負荷。  比方說，您可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)，將大量記憶體配置在應用程式或遊戲開頭，接著在該清單內管理自己的區塊。  在此案例中，記憶體分析工具只會查看該初始配置，而不會查看您在記憶體區塊內完成的自訂管理。  不過，使用自訂原生堆積 ETW 提供者時，您就可以讓工具了解您在標準堆積以外進行的任何配置。
 
@@ -48,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-從未追蹤自訂堆積之[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) \(英文\) 工具擷取的快照，將只會顯示單一的 8192 位元組配置，而不會顯示任何由集區所做的自訂配置：
+從未追蹤自訂堆積之[記憶體使用量](../profiling/memory-usage.md) \(英文\) 工具擷取的快照，將只會顯示單一的 8192 位元組配置，而不會顯示任何由集區所做的自訂配置：
 
 ![Windows 堆積配置](media/heap-example-windows-heap.png)
 
@@ -139,7 +139,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="tracking-memory-usage"></a>追蹤記憶體使用量
-這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
+這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
 
 ![啟用堆積分析](media/heap-enable-heap.png)
 
@@ -153,11 +153,11 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 ![NT 堆積與追蹤程式](media/heap-example-windows-heap.png)
 
-如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件，以了解相關說明。
+如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](../profiling/memory-usage.md)文件，以了解相關說明。
 
 > [!TIP]
 > Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt + F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl+Alt+F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>請參閱
-[分析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[分析工具](../profiling/profiling-tools.md)  
+[記憶體使用量](../profiling/memory-usage.md)

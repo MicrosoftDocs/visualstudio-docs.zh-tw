@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/22/2017
     ![Python 互動式視窗並拖曳調整大小](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > 您可以拖曳框線分隔符號，以調整 Visual Studio 中所有視窗的大小。 您也可以單獨將視窗拖出 Visual Studio 框架，不過，您也可以在框架內排列視窗。 如需完整詳細資料，請參閱<a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">自訂視窗版面配置</a>。
+    > 您可以拖曳框線分隔符號，以調整 Visual Studio 中所有視窗的大小。 您也可以單獨將視窗拖出 Visual Studio 框架，不過，您也可以在框架內排列視窗。 如需完整詳細資料，請參閱[自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)。
 
 1. 輸入幾個陳述式 (例如 `print("Hello, Visual Studio")`) 和運算式 (例如 `123/456`) 查看立即結果：
 

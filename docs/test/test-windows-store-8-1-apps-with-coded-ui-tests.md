@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
-caps.latest.revision: "23"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 7bbb703d753770444bb9f3641778d0b1a62fc374
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 Windows UWP 應用程式
 

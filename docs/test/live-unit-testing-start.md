@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -56,7 +56,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 1. 在 [新增專案] 對話方塊中，選取 C# 節點，然後選取 [.NET Standard]。 
 
    > [!NOTE]
-   > 因為我們的程式庫目標是 .NET Standard，而非特定 .NET 實作，所以可以從任何支援該版 .NET Standard 的 .NET 實作進行呼叫。 如需詳細資訊，請參閱 [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard)。
+   > 因為我們的程式庫目標是 .NET Standard，而非特定 .NET 實作，所以可以從任何支援該版 .NET Standard 的 .NET 實作進行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
 
 1. 選取右窗格中的 [Class Library (.NET Standard)] (類別庫 (.NET Standard)) 範本，然後在 [名稱] 文字方塊中輸入 `StringLibrary`，如下圖所示：
 
@@ -84,7 +84,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 1. 在 [新增專案] 對話方塊中，選取 Visual Basic 節點，然後選取 [.NET Standard]。 
 
    > [!NOTE]
-   > 因為我們的程式庫目標是 .NET Standard，而非特定 .NET 實作，所以可以從任何支援該版 .NET Standard 的 .NET 實作進行呼叫。 如需詳細資訊，請參閱 [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard)。
+   > 因為我們的程式庫目標是 .NET Standard，而非特定 .NET 實作，所以可以從任何支援該版 .NET Standard 的 .NET 實作進行呼叫。 如需詳細資訊，請參閱 [.NET Standard](/dotnet/standard/net-standard)。
 
 1. 選取右窗格中的 [Class Library (.NET Standard)] (類別庫 (.NET Standard)) 範本，然後在 [名稱] 文字方塊中輸入 `StringLibrary`，如下圖所示：
 
@@ -104,7 +104,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
      
       - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
     
-1. 以滑鼠右鍵按一下方案總管中的 StringLibrary 專案，然後選取 [屬性]。 在 [應用程式] 索引標籤上，刪除 [根命名空間] 文字方塊中的文字，如下圖所示。 根命名空間是由原始程式碼中的 [Namespace 陳述式](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement)所定義。
+1. 以滑鼠右鍵按一下方案總管中的 StringLibrary 專案，然後選取 [屬性]。 在 [應用程式] 索引標籤上，刪除 [根命名空間] 文字方塊中的文字，如下圖所示。 根命名空間是由原始程式碼中的 [Namespace 陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)所定義。
 
    ![Visual Basic 專案的 [專案屬性] 對話方塊](./media/lut-start/vb-properties.png)
  
@@ -250,7 +250,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. 在 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法呼叫之後立即新增下列程式碼，來修改 `DirectCallWithNullOrEmpty` 方法。
+1. 在 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法呼叫之後立即新增下列程式碼，來修改 `DirectCallWithNullOrEmpty` 方法。
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -267,7 +267,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. 在 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法呼叫之後立即新增下列程式碼，來修改 `DirectCallWithNullOrEmpty` 方法。
+1. 在 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 方法呼叫之後立即新增下列程式碼，來修改 `DirectCallWithNullOrEmpty` 方法。
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -308,7 +308,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
     
 1. 選取 [偵錯選取的測試]，以偵錯失敗的測試。 
  
-1. Visual Studio 會以偵錯模式執行測試。 我們的測試會將陣列中的每個字串都指派給名為 `phrase` 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法呼叫中的未預期值所造成的例外狀況對話方塊。  
+1. Visual Studio 會以偵錯模式執行測試。 我們的測試會將陣列中的每個字串都指派給名為 `phrase` 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法呼叫中的未預期值所造成的例外狀況對話方塊。  
 
    ![Live Unit Testing 例外狀況對話方塊。](media/lut-start/exception-dialog-cs.png) 
  
@@ -341,7 +341,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
     
 1. 選取 [偵錯選取的測試]，以偵錯失敗的測試。 
  
-1. Visual Studio 會以偵錯模式執行測試。 我們的測試會將陣列中的每個字串都指派給名為 `phrase` 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法呼叫中的未預期值所造成的例外狀況對話方塊。  
+1. Visual Studio 會以偵錯模式執行測試。 我們的測試會將陣列中的每個字串都指派給名為 `phrase` 的變數，並將它傳遞給 `HasEmbeddedSpaces` 方法。 assert 運算式第一次為 `false` 時，執行程式會暫停並叫用偵錯工具。 下圖顯示 [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) 方法呼叫中的未預期值所造成的例外狀況對話方塊。  
 
    ![Live Unit Testing 例外狀況對話方塊。](media/lut-start/exception-dialog-vb.png) 
  

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 專案範本
 
@@ -68,13 +68,12 @@ Microsoft Azure 雲端服務「確實」支援 `requirements.txt` 檔案。 如�
 [Bottle Web 專案] 範本包含會執行必要設定的未定案程式碼。 不過，匯入的 Bottle 應用程式可能不會包括此程式碼，在這種情況下，下列設定會使用已安裝的 `bottle` 模組啟動應用程式：
 
 - [執行伺服器命令] 群組：
-
-    - **命令**：`bottle` (模組)
-    - **引數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**：`bottle` (模組)
+  - **引數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - [偵錯伺服器命令] 群組：
-    - **命令**：`bottle` (模組)
-    - **引數**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **命令**：`bottle` (模組)
+  - **引數**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
 
@@ -83,12 +82,11 @@ Microsoft Azure 雲端服務「確實」支援 `requirements.txt` 檔案。 如�
 Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建立應用程式之後，即可使用[從現有 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
 
 - [偵錯] 群組：
-
-    - **伺服器連接埠**：6543 (或是 .ini 檔案中設定的值)
+  - **伺服器連接埠**：6543 (或是 .ini 檔案中設定的值)
 
 - [執行伺服器命令] 群組：
-    - 命令：`..\env\scripts\pserve-script.py` (指令碼)
-    - 引數：`Production.ini`
+  - 命令：`..\env\scripts\pserve-script.py` (指令碼)
+  - 引數：`Production.ini`
 
 - [偵錯伺服器命令] 群組：
     - 命令：`..\env\scripts\pserve-script.py` (指令碼)
@@ -146,7 +144,7 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建
 
 目前，安裝封裝的建議方式，是在安裝網站擴充功能後使用開發主控台，並直接執行 PIP。 使用 Python 的完整路徑非常重要，否則您可能會執行錯誤版本的 Python，而且您通常並不需要使用虛擬環境。 例如: 
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Upgrade SCVMM 2008 R2 to SCVMM 2012, test lab
-ms.assetid: 5be92444-c701-43c7-8b2a-77df8e02bc27
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a50c075effd8c1bb63bd56b7fab04a7509d23e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 51d907dfe25d8f27065b2a4d8bbecaa3e98e42a1
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="upgrade-scvmm-2008-r2-to-scvmm-2012"></a>將 SCVMM 2008 R2 升級至 SCVMM 2012
 
