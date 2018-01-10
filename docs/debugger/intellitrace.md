@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 當您使用 IntelliTrace 記錄和追蹤程式碼的執行歷程時，可以縮短對應用程式進行偵錯的時間。 您可以輕鬆地找到錯誤，因為 IntelliTrace 可讓您：  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**我的應用程式，使用 IntelliTrace 進行偵錯：**<br /><br /> -顯示過去的事件。<br />-顯示過去事件的呼叫資訊。<br />-儲存 IntelliTrace 工作階段。<br />控制 IntelliTrace 所收集的資料。|-   [逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />-   [歷程偵錯](../debugger/historical-debugging.md)<br />-   [使用 IntelliTrace 步驟後的檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|-   [收集更多診斷資料，在手動測試中](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**在 Test Manager 中的測試工作階段期間收集 IntelliTrace 資料**|-   [收集更多診斷資料，在手動測試中](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**從已部署應用程式收集 IntelliTrace 資料**|-   [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**從開始偵錯 IntelliTrace 記錄檔 （.iTrace 檔案）。**|-   [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
 -   您的應用程式在測試電腦上當機，但在開發電腦上卻執行得很順利。  
   
-     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集更多診斷資料，在手動測試中的](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)和[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。  
+     您可以從 Microsoft Test Manager 收集 IntelliTrace 資料，將資料儲存至 .iTrace 檔案，然後將這個檔案附加至 Team Foundation Server 工作項目供日後調查。 請參閱[收集更多診斷資料，在手動測試中的](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)和[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。  
   
 -   在部署的應用程式中發生 Bug 或當機。  
   
@@ -180,8 +180,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="in-this-section"></a>本節內容  
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
-  
- [包含難以重現的 Bug 的診斷追蹤資料](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)  
   

@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace 方法 (String) (JavaScript)
 使用規則運算式或搜尋字串取代字串中的文字。  
@@ -34,18 +34,18 @@ ms.lasthandoff: 10/27/2017
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>參數  
  `stringObj`  
- 必要項。 要執行取代的 `String` 物件或字串常值。 這個字串不會修改**取代**方法。 不過，這個方法的傳回值是由取代所產生的字串。  
+ 必要。 要執行取代的 `String` 物件或字串常值。 這個字串不會修改**取代**方法。 不過，這個方法的傳回值是由取代所產生的字串。  
   
  `rgExp`  
- 必要項。 執行個體**規則運算式**物件，其中包含規則運算式模式和適用旗標。 也可以是代表規則運算式的 `String` 物件或字串常值。 如果`rgExp`不是執行個體的**規則運算式**物件，它會轉換為字串，並對結果進行完全相符搜尋; 不嘗試將字串轉換為規則運算式。  
+ 必要。 執行個體**規則運算式**物件，其中包含規則運算式模式和適用旗標。 也可以是代表規則運算式的 `String` 物件或字串常值。 如果`rgExp`不是執行個體的**規則運算式**物件，它會轉換為字串，並對結果進行完全相符搜尋; 不嘗試將字串轉換為規則運算式。  
   
  `replaceText`  
- 必要項。 `String` 物件或字串常值，其中包含每次成功比對 `rgExp` 中的 `stringObj` 時用來取代的文字。 在 [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本中，`replaceText` 引數也可以做為傳回取代文字的函式。  
+ 必要。 `String` 物件或字串常值，其中包含每次成功比對 `rgExp` 中的 `stringObj` 時用來取代的文字。 在 [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本中，`replaceText` 引數也可以做為傳回取代文字的函式。  
   
 ## <a name="return-value"></a>傳回值  
  結果**取代**方法是一份`stringObj`指定之取代動作已完成。  
@@ -59,8 +59,8 @@ stringObj. replace(rgExp, replaceText)
 |**$&**|指定整個模式比對之 `stringObj` 的部分  ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
 |`$``|指定的該部分`stringObj`之前所描述的相符項目 **$&** 。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
 |`$'`|指定的該部分`stringObj`一節所描述的相符項目 **$&** 。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
-|`$`  ***n***|*n*個擷取的子相符項目，其中 *n* 是從 1 到 9 的單一十進位數字。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
-|`$`  ***nn***|*nn*個擷取的子相符項目，其中 *nn* 是從 01 到 99 的二位數十進位數。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
+|`$`  ***n***| *n*個擷取的子相符項目，其中 *n* 是從 1 到 9 的單一十進位數字。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
+|`$`  ***nn***| *nn*個擷取的子相符項目，其中 *nn* 是從 01 到 99 的二位數十進位數。 ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本)|  
   
  如果`replaceText`是函數，針對每個相符的子字串的函式會以下列呼叫*m* + 3 引數其中*m*是左邊擷取括號中的數字`rgExp`。 第一個引數是相符的子字串。 下一步 *m*引數是所有搜尋所產生的擷取。 引數*m* + 2 是中的位移`stringObj`位置比對，而引數*m* + 3 則是`stringObj`。 結果會產生字串值，這是使用對應之函式呼叫的傳回值來取代每一個相符子字串所產生的結果。  
   
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  下列範例適用於 [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] (含) 以後版本，將示範如何使用傳回取代文字的函式。 它會以攝氏度數取代後面接著 "F" 的任何數字。  
@@ -119,7 +119,7 @@ document.write(f2c("Water freezes at 32F and boils at 212F."));
   
  **適用於**:[字串物件](../../javascript/reference/string-object-javascript.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [exec 方法 （規則運算式）](../../javascript/reference/exec-method-regular-expression-javascript.md)   
  [match 方法 （字串）](../../javascript/reference/match-method-string-javascript.md)   
  [RegExp 物件](../../javascript/reference/regexp-object-javascript.md)   

@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用精靈
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  
@@ -198,6 +198,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  

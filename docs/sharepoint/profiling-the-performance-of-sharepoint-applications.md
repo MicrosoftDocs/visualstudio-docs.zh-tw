@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>剖析 SharePoint 應用程式的效能
   如果您的 SharePoint 應用程式正在執行速度很慢或沒有效率，您可以使用 Visual Studio 中的程式碼剖析功能來識別問題的程式碼和其他項目。 藉由使用負載測試功能，您可以判斷在資源不足時，例如當許多使用者存取應用程式同時執行 SharePoint 應用程式的方式。 藉由執行 web 效能測試，您可以測量應用程式從網站上的執行方式。 您可以藉由使用自動程式化的 UI 測試，確認整個 SharePoint 應用程式，包括其使用者介面，是否能正常運作。 當您一起使用這些測試時，它們可以協助您識別效能問題，然後再部署應用程式。  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[對程式碼進行單元測試](/visualstudio/test/unit-test-your-code)|描述如何使用單元測試程式碼中找出邏輯錯誤。|  
 |[使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|說明如何測試 SharePoint 應用程式的使用者介面。|  
   
-## <a name="see-also"></a>請參閱  
- [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [測試應用程式](/devops-test-docs/test/test-apps-early-and-often)   
- [改善程式碼品質](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>請參閱
+
+[建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[改善程式碼品質](/visualstudio/test/improve-code-quality)

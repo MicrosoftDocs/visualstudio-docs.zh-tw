@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c5be469cd93ce0b920e9100b43d642fd96427a79
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說： 自訂插入、 更新和刪除實體類別的行為
+
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面建立和編輯[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]類別 （實體類別） 為基礎的資料庫中的物件。 使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)。  
   
 執行更新的邏輯預設是由 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段提供。 執行階段會根據資料表的結構描述 (資料行定義和主索引鍵資訊)，建立預設的 Insert、Update 和 Delete 陳述式。 如果不想要使用預設行為，則可以設定更新行為，並指定用特定的預存程序 (Stored Procedure) 來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱[自訂作業所使用預存程序](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。  
   
 > [!NOTE]
->  本逐步解說需要的可用性**InsertCustomer**， **UpdateCustomer**，和**DeleteCustomer**預存程序 Northwind 資料庫。  
+> 本逐步解說需要的可用性**InsertCustomer**， **UpdateCustomer**，和**DeleteCustomer**預存程序 Northwind 資料庫。  
   
 這個逐步解說提供覆寫預設 LINQ to SQL 執行階段行為，以使用預存程序將資料儲存回資料庫的必要步驟。  
   
@@ -48,7 +49,8 @@ ms.lasthandoff: 01/05/2018
   
 -   設定 Customer 類別，以使用預存程序來執行插入、更新和刪除作業。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要條件
+
 本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
 1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
@@ -65,12 +67,13 @@ ms.lasthandoff: 01/05/2018
 
        在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。  
   
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>建立應用程式和加入 LINQ to SQL 類別  
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>建立應用程式和加入 LINQ to SQL 類別
+
 因為您會使用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 類別並將資料顯示在 Windows Form 上，所以請建立新的 Windows Form 應用程式並加入 LINQ to SQL 類別檔案。  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要建立新的 Windows Forms 應用程式專案包含 LINQ to SQL 類別  
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要建立新的 Windows Forms 應用程式專案包含 LINQ to SQL 類別
   
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
@@ -90,10 +93,11 @@ ms.lasthandoff: 01/05/2018
   
      專案中隨即加入空的 LINQ to SQL 類別檔案 (Northwind.dbml)，並開啟 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
   
-## <a name="creating-the-customer-entity-class-and-object-data-source"></a>建立 Customer 實體類別和物件資料來源  
- 建立[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]來對應至資料庫資料表拖曳資料表的類別**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。 結果會產生對應至資料庫中各資料表的 LINQ to SQL 實體類別。 建立實體類別之後，實體類別就和其他具有公用 (Public) 屬性的類別一樣，可以當成物件資料來源使用。  
+## <a name="creating-the-customer-entity-class-and-object-data-source"></a>建立 Customer 實體類別和物件資料來源
+
+建立[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]來對應至資料庫資料表拖曳資料表的類別**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。 結果會產生對應至資料庫中各資料表的 LINQ to SQL 實體類別。 建立實體類別之後，實體類別就和其他具有公用 (Public) 屬性的類別一樣，可以當成物件資料來源使用。  
   
-#### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>若要建立 Customer 實體類別和將它設為資料來源  
+### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>若要建立 Customer 實體類別和將它設為資料來源
   
 1.  在**伺服器總管**/**資料庫總管**，在 SQL Server 版本的 Northwind 範例資料庫中尋找 Customer 資料表。 
   
@@ -118,17 +122,18 @@ ms.lasthandoff: 01/05/2018
     >  如果**客戶**類別不提供，取消精靈、 建置專案時，並再次執行精靈。  
 8.  按一下**完成**建立資料來源並將新增**客戶**實體類別，以**資料來源**視窗。  
   
-## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>建立 DataGridView 以便在 Windows Form 上顯示 Customer 資料  
- 建立繫結至實體類別拖曳控制項[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]資料來源項目從**資料來源**視窗拖曳至 Windows Form。  
+## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>建立 DataGridView 以便在 Windows Form 上顯示 Customer 資料
+
+建立繫結至實體類別拖曳控制項[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]資料來源項目從**資料來源**視窗拖曳至 Windows Form。  
   
-#### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>若要加入繫結至實體類別的控制項  
+### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>若要加入繫結至實體類別的控制項
   
 1.  在 [設計] 檢視表中開啟 [Form1]。  
   
 2.  從**資料來源** 視窗中，拖曳**客戶**節點拖曳至 Form1。  
   
     > [!NOTE]
-    >  若要顯示**資料來源**視窗中，按一下 **顯示資料來源**上**資料**功能表。  
+    > 若要顯示**資料來源**視窗中，按一下 **顯示資料來源**上**資料**功能表。  
   
 3.  在 [程式碼編輯器] 中開啟 Form1。  
   
@@ -154,10 +159,11 @@ ms.lasthandoff: 01/05/2018
         = northwindDataContext1.Customers;    
     ```  
   
-## <a name="implementing-save-functionality"></a>實作儲存功能  
- 預設不會啟用儲存按鈕，也不會實作儲存功能。 同時，為物件資料來源建立資料繫結控制項時，並不會自動加入程式碼以將變更的資料儲存至資料庫。 本節說明如何啟用儲存按鈕並實作 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 物件的儲存功能。  
+## <a name="implementing-save-functionality"></a>實作儲存功能
+
+預設不會啟用儲存按鈕，也不會實作儲存功能。 同時，為物件資料來源建立資料繫結控制項時，並不會自動加入程式碼以將變更的資料儲存至資料庫。 本節說明如何啟用儲存按鈕並實作 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 物件的儲存功能。  
   
-#### <a name="to-implement-save-functionality"></a>若要實作儲存功能  
+### <a name="to-implement-save-functionality"></a>若要實作儲存功能
   
 1.  在 [設計] 檢視表中開啟 [Form1]。  
   
@@ -177,9 +183,9 @@ ms.lasthandoff: 01/05/2018
     northwindDataContext1.SubmitChanges();  
     ```  
   
-## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>覆寫執行更新 (插入、更新和刪除) 的預設行為  
+## <a name="overriding-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>覆寫執行更新 (插入、更新和刪除) 的預設行為
   
-#### <a name="to-override-the-default-update-behavior"></a>若要覆寫預設更新行為  
+### <a name="to-override-the-default-update-behavior"></a>若要覆寫預設更新行為
   
 1.  在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中開啟 LINQ to SQL 檔案  (按兩下**Northwind.dbml**檔案**方案總管 中**。)  
   
@@ -230,13 +236,14 @@ ms.lasthandoff: 01/05/2018
 19. 按一下 [確定 **Deploying Office Solutions**]。  
   
 > [!NOTE]
->  雖然這在本特定逐步解說中不會構成問題，仍不建議 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 在插入和更新期間，針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行自動處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
+> 雖然這在本特定逐步解說中不會構成問題，仍不建議 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 在插入和更新期間，針對識別 (自動遞增)、rowguidcol (資料庫產生的 GUID) 和時間戳記資料行自動處理資料庫產生的值。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
-## <a name="testing-the-application"></a>測試應用程式  
- 執行應用程式一次，確認**UpdateCustomers**預存程序已正確更新資料庫中的客戶記錄。  
-  
-#### <a name="to-test-the-application"></a>若要測試應用程式  
-  
+## <a name="testing-the-application"></a>測試應用程式
+
+執行應用程式一次，確認**UpdateCustomers**預存程序已正確更新資料庫中的客戶記錄。
+
+### <a name="to-test-the-application"></a>若要測試應用程式
+
 1.  按 F5。  
   
 2.  修改方格內的記錄，以測試「更新」行為。  
@@ -258,19 +265,20 @@ ms.lasthandoff: 01/05/2018
 10. 按 F5 並確認已從資料庫中移除刪除的記錄。  
   
     > [!NOTE]
-    >  如果您的應用程式會使用 SQL Server Express Edition，根據的值**複製到輸出目錄**資料庫檔案的屬性，變更可能不會出現在步驟 10 中按下 F5。 
-  
-## <a name="next-steps"></a>後續步驟  
-根據應用程式需求的不同，在建立 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 實體類別之後，您可能會想執行幾個步驟。 您可以進行下列作業讓此應用程式發揮更強的功能：  
-  
--   在更新期間實作並行檢查。 如需資訊，請參閱[開放式並行存取： 概觀](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。  
-  
--   加入 LINQ 查詢，以篩選資料。 如需資訊，請參閱[LINQ 查詢 (C#) 簡介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。  
-  
+    > 如果您的應用程式會使用 SQL Server Express Edition，根據的值**複製到輸出目錄**資料庫檔案的屬性，變更可能不會出現在步驟 10 中按下 F5。
+
+## <a name="next-steps"></a>後續步驟
+
+根據應用程式需求的不同，在建立 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 實體類別之後，您可能會想執行幾個步驟。 您可以進行下列作業讓此應用程式發揮更強的功能：
+
+- 在更新期間實作並行檢查。 如需資訊，請參閱[開放式並行存取： 概觀](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。
+
+- 加入 LINQ 查詢，以篩選資料。 如需資訊，請參閱[LINQ 查詢 (C#) 簡介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
+
 ## <a name="see-also"></a>另請參閱
-[LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
-[DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)   
+
+[LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)  
+[DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)  
 [如何： 指派預存程序來執行更新、 插入和刪除](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
-[LINQ to SQL 查詢](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
- 
+[LINQ to SQL 查詢](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)
