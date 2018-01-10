@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊從**工具**功能表。  
@@ -35,12 +35,12 @@ ms.lasthandoff: 12/22/2017
  **對齊每一個屬性在各自的行**  
  垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例。  
   
-```  
+```xml
 <item id = "123-A"  
       name = "hammer"  
       price = "9.95">  
 </item>  
-```  
+```
   
 ## <a name="auto-reformat"></a>自動重新格式化  
  **從剪貼簿貼上**  
@@ -55,12 +55,12 @@ ms.lasthandoff: 12/22/2017
   
  如果項目包含文字與標記的混合，則將內容視為混合內容。 以下是具有混合內容的項目範例。  
   
-```  
+```xml
 <dir>c:\data\AlphaProject\  
   <file readOnly="false">test1.txt</file>  
   <file readOnly="false">test2.txt</file>  
 </dir>  
-```  
+```
   
 ## <a name="see-also"></a>請參閱  
  [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)   

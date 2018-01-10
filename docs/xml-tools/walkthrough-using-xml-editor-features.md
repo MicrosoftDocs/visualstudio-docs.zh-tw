@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d87870ef00ceb0a3c66b91975b11038c00bd1dc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7460071cc45c8e4994ad0a72d5f26dcce40c853
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 此逐步教學中的步驟顯示如何建立新的 XML 文件。 逐步教學還會使用 XML 編輯器的部分功能，使其在 XML 撰寫上具有價值。  
@@ -128,7 +128,7 @@ ms.lasthandoff: 12/22/2017
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ## <a name="see-also"></a>請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

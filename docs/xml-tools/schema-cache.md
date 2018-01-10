@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>結構描述快取
 XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。  
@@ -54,13 +54,13 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
   
  XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 catalog.xsd 檔定義目錄檔案的格式，並包含在結構描述快取目錄中。 catalog.xml 檔是預設的目錄，而且包含 %InstallDir% 中其他結構描述的連結。 以下是 catalog.xml 檔的範例：  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  `href` 屬性可以是指向結構描述的任意檔案路徑或 http URL。 檔案路徑是對目錄文件的相對路徑。 編輯器會辨識以 %% 分隔的下列變數，並在路徑中展開它們：  
   
@@ -82,25 +82,25 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
   
 目錄文件可包含指向其他目錄的 `Catalog` 項目。 您可以使用 `Catalog` 項目指向小組或公司共用的中心目錄，或與業務夥伴共用的線上目錄。 `href` 屬性是其他目錄的檔案路徑或 http URL。 以下是 `Catalog` 項目的範例：  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  目錄還可以使用特殊的 `Association` 項目，來控制結構描述如何與 XML 文件產生關聯。 此項目將沒有目標命名空間的結構描述與特定的副檔名相關聯，這樣做很有用，因為 XML 編輯器不會自動關聯任何沒有 `targetNamespace` 屬性的結構描述。 在下列範例中，`Association` 項目將 dotNetConfig 結構描述，與具有 config 副檔名的所有檔案相關聯：  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>當地語系化結構描述  
  在許多情況下，catalog.xml 檔不包含當地語系化結構描述的項目。 您可以將其他項目加入到指向當地語系化資料結構目錄的 catalog.xml 檔案中。  
   
  在下列範例中，已經建立使用 %LCID% 變數指向當地語系化結構描述的新 `Schema` 項目。  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>變更結構描述快取的位置  
  您可以自訂結構描述快取使用的位置**其他**選項頁面。 如果您有偏好之結構描述的目錄，則可以設定編輯器改為使用那些結構描述。  

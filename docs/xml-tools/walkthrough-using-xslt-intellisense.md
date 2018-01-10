@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 本逐步解說示範如何使用 XSLT IntelliSense 自動填入某些屬性的值。  
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  建立新的 XSLT 檔案，並複製下列程式碼：  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ ms.lasthandoff: 12/22/2017
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  在 `<xsl:template name="msg23" match="msg23">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:call-template` 項目：  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      當您輸入時，範本名稱的清單會出現在 `name=""` 項目的 `xsl:call-template` 屬性中。  
   
 3.  在 `<xsl:call-template name="localized-message">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:with-param` 項目：  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      參數名稱的清單會出現在 `name=""` 項目的 `xsl:with-param` 屬性中。  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  建立新的 XSLT 檔案，並複製下列程式碼：  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ ms.lasthandoff: 12/22/2017
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  在 `<xsl:apply-templates select="phone" />` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl: apply-templates` 項目：  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      範本模式的清單會出現在 `mode=""` 項目的 `xsl:apply-templates` 屬性中。  
   
@@ -126,7 +126,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  建立新的 XSLT 檔案，並複製下列程式碼：  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ ms.lasthandoff: 12/22/2017
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之後插入資料指標並按 ENTER。 接著開始輸入下列 `xsl:namespace-alias` 項目：  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      請注意前置詞清單如何出現在 `stylesheet-prefix` 項目的 `result-prefix` 和 `xsl:namespace-alias` 屬性中。  
   
-## <a name="see-also"></a>請參閱  
- [XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>另請參閱
+
+[XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)
