@@ -22,17 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   [功能區 (XML)] 項目可讓您使用 XML 自訂功能區。 如果您想要以 [功能區 (視覺化設計工具)] 項目不支援的方式自訂功能區，請使用 [功能區 (XML)] 項目。 您可以如何處理每個項目比較，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  

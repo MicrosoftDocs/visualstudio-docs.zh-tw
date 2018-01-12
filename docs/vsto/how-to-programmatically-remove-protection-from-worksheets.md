@@ -15,17 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, removing from worksheets
 - Unprotect method
-ms.assetid: 034688d2-eda7-4b4a-bcc2-d0999ff879a4
-caps.latest.revision: "48"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 08de10397c8abd132a94ed288c7795f068190f24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b4564baab3cf2daa6e8859a66dbc6e9e06ffdef
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。  

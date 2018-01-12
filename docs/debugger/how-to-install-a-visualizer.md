@@ -22,17 +22,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 71b1d5cda498f42383e430a505296b2c4e074b73
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9864a2a8f3f39e368ae1293b4b27fc0a8d9e056
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。  
   
 > [!NOTE]
->  在**存放區**應用程式，僅標準文字、 HTML、 XML 及 JSON 視覺化檢視支援。 不支援自訂 (使用者建立的) 視覺化檢視。  
+>  在 UWP 應用程式，僅標準文字、 HTML、 XML 及 JSON 視覺化檢視支援。 不支援自訂 (使用者建立的) 視覺化檢視。  
   
 ### <a name="to-install-a-visualizer"></a>安裝視覺化檢視  
   

@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-ms.assetid: 66a0b389-1f71-421f-9817-a19840765d83
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-localize-a-feature"></a>如何：當地語系化功能
   根據預設，功能標題和描述使用硬式編碼的字串值。 若要當地語系化的功能標題和描述，請使用參考的當地語系化的資源的運算式取代字串。  

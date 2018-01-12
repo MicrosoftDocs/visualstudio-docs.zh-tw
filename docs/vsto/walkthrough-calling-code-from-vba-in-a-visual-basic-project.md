@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-ms.assetid: 798bc2fa-449e-4d1a-86b4-18e57b02a4a8
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1428ad569b50ee3ff176f7fd7c55135a9ea718c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcd52322d88b79d90d4a20888ad2bb90a379c7df
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>逐步解說：在 Visual Basic 專案中呼叫 VBA 的程式碼
   本逐步解說示範如何從文件中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Word 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `ThisDocument` 主項目類別、將方法公開至 VBA 程式碼，然後從文件中的 VBA 程式碼呼叫此方法。  

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - shapes [Office development in Visual Studio], copying and pasting Visio shapes
 - Visio [Office development in Visual Studio], copying and pasting Visio shapes
-ms.assetid: 762d95cf-2d5c-4dea-988b-8f4da88fa1f1
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5b1f3a402d4f39b3648bbcf577ff48a130625b50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3c5074c4d7979672a79b7d09749035af840e543
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以程式設計方式在 Visio 文件中複製並貼上圖形
   您可以程式設計方式，將文件頁面上的圖形複製貼到同一份文件的另一個新頁面上。 您可以選擇將圖形貼到預設位置 (使用中視窗的中央)，或是貼到與原始頁面一樣的座標位置。  

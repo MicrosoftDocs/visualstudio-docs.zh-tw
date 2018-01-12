@@ -14,17 +14,15 @@ helpviewer_keywords:
 - custom calendars [Office development in Visual Studio]
 - calendars [Office development in Visual Studio], custom
 - appointments [Office development in Visual Studio]
-ms.assetid: 8272b53f-4cf0-46ee-b80e-93aa680cd9f5
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f5f8b606008c66e2c0c173351d5e3d31c808c996
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 131b4a5e724ab5a9b4d98141a7a203a12e8e811d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>如何：以程式設計方式建立自訂行事曆
   這個範例會建立新行事曆 資料夾名為**PersonalCalendar**，然後建立新的約會項目，並將它加入至行事曆 資料夾。 程式碼接著會顯示行事曆 資料夾。  

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - deleting contacts
 - contacts [Office development in Visual Studio], deleting
-ms.assetid: 3aeb107f-b6d9-4645-b3d2-43c20beee833
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cfa9bf22d384b564a4051681bded69a2b186c9c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 191281006e2a8a2af69cb0f367a8dc1c2824749a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>如何：以程式設計方式刪除 Outlook 連絡人
   這個範例會刪除連絡人。 本範例假設 [連絡人]  資料夾中有名為 "Armando Pinto" 的連絡人。  

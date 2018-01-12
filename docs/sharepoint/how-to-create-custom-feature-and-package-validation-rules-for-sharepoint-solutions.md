@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-ms.assetid: 17e818f8-0f3a-4a96-a6fc-1634ddb4825d
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 20a56a2f6582a08270292cd86cf62a9344d8565f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: efc9cc2988125621212698576deeca1247e26a58
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：建立 SharePoint 方案的自訂功能和封裝驗證規則
   您可以建立自訂驗證規則來驗證由 Visual Studio 產生的方案套件。 您也可以選取 整個功能或封裝上執行完整驗證**驗證**從內容功能表的套件或在功能**PackagingExplorer**。 當您將新功能或 SharePonit 專案項目加入至專案，以判斷封裝或功能是否會處於有效狀態，則會執行部分驗證。  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-ms.assetid: 9bccf6f9-3c63-4d23-8f44-f7a608a43613
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 21a7af80b2c371b0f3088d3aa863d76fc55d7ab1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 557f3e4d2e06188cf361da6c9ea3e4910e60b0a6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>如何：以程式設計方式將檔案附加至 Outlook 電子郵件項目
   這個範例會將檔案附加至新的郵件項目，並將它傳送至 Armando Pinto。 範例假設名為 Armando Pinto 個人為收件者。  

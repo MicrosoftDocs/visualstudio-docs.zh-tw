@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint project service
 - SharePoint development in Visual Studio, extensibility features
-ms.assetid: bfb6cbc7-6c28-4e1a-abb4-88f149e7712c
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6bf5ac3acb0b0693c6c53de6705fee105f7f3404
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aa1bc8d5853e8f8f3253273aff4dd8eb0d44e177
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-sharepoint-project-service"></a>使用 SharePoint 專案服務
   SharePoint 專案系統包含可讓您執行專案系統相關工作的專案服務。 專案服務是 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 物件。  

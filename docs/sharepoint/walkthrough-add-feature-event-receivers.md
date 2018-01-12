@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, advanced packaging tools
 - SharePoint development in Visual Studio, event receivers
 - SharePoint development in Visual Studio, feature event receivers
-ms.assetid: fbd44c33-2c27-4d57-abca-21cddc16fbc3
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6250673ae2fa262fbe932aea79e36aeb6b0d0915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e028eb4d95495e92718769979f43012319596960
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>逐步解說：新增功能事件接收器
   功能事件接收器是在 SharePoint 中其中一個的下列功能相關的事件發生時執行的方法：  

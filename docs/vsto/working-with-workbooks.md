@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - workbooks [Office development in Visual Studio], common tasks
 - Excel [Office development in Visual Studio], workbooks
-ms.assetid: 4eca9d7b-5d99-4bc8-9d05-13714f017909
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cfab2572544a89f0f5f353998e68093369d626f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 774d22be5cf7ef65d7c323d151400a2ea2b33cc5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-workbooks"></a>使用活頁簿
   <xref:Microsoft.Office.Tools.Excel.Workbook> 和 <xref:Microsoft.Office.Interop.Excel.Workbooks> 類別包含您用來執行活頁簿工作的方法和屬性。  

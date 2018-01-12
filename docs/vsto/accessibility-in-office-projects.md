@@ -15,17 +15,15 @@ helpviewer_keywords:
 - shortcut keys [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], shortcut keys
 - accessibility [Office development in Visual Studio]
-ms.assetid: 48efcf1f-ca49-47ce-99f0-cc99f051aeae
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 567ab9cffbd4546e276fcfd55af773e99fe07d34
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
   Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置自訂的解決方案符合標準的協助工具需求。 Microsoft 會發行在網站上的協助工具的指導方針。 如需詳細資訊，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。  

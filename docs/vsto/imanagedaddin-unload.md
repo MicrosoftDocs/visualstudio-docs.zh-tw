@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Unload method
-ms.assetid: 40a73f07-2605-4745-8ac5-0a0189167fd7
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b16478232faa2b34a6d8f93d2a53b69b0f76b871
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aadf5235eb64c14b14f7241b4fd2b89b0a9887da
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   卸載 Managed VSTO 增益集之前呼叫。  

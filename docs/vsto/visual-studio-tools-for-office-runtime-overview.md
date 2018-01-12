@@ -26,17 +26,15 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio], about VSTO runtime
 - solution loader [Office development in Visual Studio]
 - runtime [Office development in Visual Studio]
-ms.assetid: 5526a4d2-a61c-43ee-8349-dd1968e0cdb4
-caps.latest.revision: "92"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e091564ce02f55904e69d1abd9e240534a6dd8c7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office Runtime 概觀
   若要在 Visual Studio 中執行使用 Microsoft Office 開發人員工具所建立的方案，則必須先在使用者電腦上安裝 Visual Studio 2010 Tools for Office Runtime。 如需詳細資訊，請參閱 [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office Runtime 包含兩個主要元件：  

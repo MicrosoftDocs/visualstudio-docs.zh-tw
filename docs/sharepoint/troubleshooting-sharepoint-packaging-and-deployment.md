@@ -23,17 +23,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-ms.assetid: eff72675-59e6-4395-bc80-4255da77f523
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a2c9cbb7b0b9e7f0536fb393bcea3d0873e0d90a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint 封裝和部署疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。  

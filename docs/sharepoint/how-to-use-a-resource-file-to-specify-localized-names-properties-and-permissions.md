@@ -21,17 +21,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], resource file
 - BDC [SharePoint development in Visual Studio], resource strings
-ms.assetid: 72bb744d-818b-4e5a-9da2-295412025680
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3fc67e84ab9519e41c2c8eb8da29025da510bc6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 144d81b2835479ee8cfdff0657814070cff813db
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>如何：使用資源檔來指定當地語系化名稱、屬性和使用權限
   藉由使用資源檔，您可以提供當地語系化的名稱和定義屬性，或是對商務資料連接 (BDC) 模型中定義的物件套用權限。 若要指定這項資訊，您將加入**商務資料連接資源**要包含的專案項目**商務資料連接模型**項目。 然後編輯資源檔的 XML，藉此指定名稱、屬性和權限。  
