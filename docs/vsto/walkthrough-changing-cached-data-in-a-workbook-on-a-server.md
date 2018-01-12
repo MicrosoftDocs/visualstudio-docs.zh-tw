@@ -16,17 +16,15 @@ helpviewer_keywords:
 - server-side data access [Office development in Visual Studio]
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
-ms.assetid: 69e13de3-9286-40cc-8c4b-1727caf761bf
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9d6f3032a2c09b176b8fb1df7443cd07ef0ab1e8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcea73cfbd87a4e541654b91463091b08c47b8c0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>逐步解說：變更伺服器上的活頁簿快取資料
   本逐步解說示範如何修改 Microsoft Office Excel 活頁簿中而不啟動 Excel 使用快取的資料集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。  

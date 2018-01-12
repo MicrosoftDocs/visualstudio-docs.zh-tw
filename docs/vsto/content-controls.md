@@ -38,17 +38,15 @@ helpviewer_keywords:
 - custom XML parts, content controls
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
-ms.assetid: ed59e522-dd6e-4c82-8d49-f5dbcfcc950d
-caps.latest.revision: "65"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  

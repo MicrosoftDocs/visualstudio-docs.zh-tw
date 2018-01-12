@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, multiple Office versions
 - Office solutions [Office development in Visual Studio]
 - multiple Office versions
-ms.assetid: 414e7741-c07d-4900-9d10-68b821413b3f
-caps.latest.revision: "61"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a52ab5c2f2f5a367681929966175ca4c4cb33b56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f39217b456694b7e611e0386cede9fdf3c11baf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>在不同的 Microsoft Office 版本中執行方案
     

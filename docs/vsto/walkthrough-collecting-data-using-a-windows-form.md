@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Windows Forms [Office development in Visual Studio], collecting data
 - forms [Office development in Visual Studio], walkthroughs
 - worksheets [Office development in Visual Studio], collecting data
-ms.assetid: 40e87f7f-cfbb-4761-bf1b-d042f45f4f09
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d52a97e57701159a8ff64a106a92f181b50df66f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6945d4e44a0ecb56c6ae7a3823dc0d7951f197
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-collecting-data-using-a-windows-form"></a>逐步解說：使用 Windows Form 收集資料
   本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。  

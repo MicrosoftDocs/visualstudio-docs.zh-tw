@@ -15,17 +15,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-ms.assetid: 32ffad3d-fba4-476a-99b8-ef440434f4e1
-caps.latest.revision: "50"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ee0dc3da505807a572b646c4c286132cc45ca81
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：文件層級專案中的複雜資料繫結
   本逐步解說示範在文件層級專案中的複雜資料繫結的基本概念。 您可以結合多個 Microsoft Office Excel 工作表中的資料格至 Northwind SQL Server 資料庫中的欄位。  

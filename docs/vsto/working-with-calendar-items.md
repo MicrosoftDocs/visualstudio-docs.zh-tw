@@ -18,17 +18,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], calendars
 - calendars [Office development in Visual Studio], about calendars in Outlook
 - e-mail [Office development in Visual Studio], calendars
-ms.assetid: 8adf9a13-5bd9-4053-91fe-b8d5f8534e21
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 45117a5fd69705241c7e35dde66270deddca380e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c7f08142ae1431dd27b50eca9c192cc2475448a8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-calendar-items"></a>使用行事曆項目
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 類別包含您用來執行行事曆項目工作的方法和屬性。  

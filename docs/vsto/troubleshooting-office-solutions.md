@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
-ms.assetid: 0518ffa9-97e5-4596-8ff2-8a24aef42b9e
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1e335f4c8215499eedd93590455911c3ec234051
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 869981f12d1625c491b2262611335a8b92ee2c6f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-office-solutions"></a>Office 方案疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。  

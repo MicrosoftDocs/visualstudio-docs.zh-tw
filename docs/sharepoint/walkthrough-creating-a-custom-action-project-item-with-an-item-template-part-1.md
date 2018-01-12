@@ -15,17 +15,15 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: 41ed9c1c-4239-4d80-934b-975fde744288
-caps.latest.revision: "152"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以藉由建立您自己的專案項目類型擴充 Visual Studio 中的 SharePoint 專案系統。 在本逐步解說，您將建立可加入至 SharePoint 專案，在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**網站動作**功能表的 SharePoint 網站。  
