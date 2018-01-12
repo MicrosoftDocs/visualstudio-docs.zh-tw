@@ -18,17 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, errors
 - SharePoint development in Visual Studio, troubleshooting
-ms.assetid: 83d20a81-fd81-4cbd-8f28-bb6bddeb06de
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45bf01c0d153eca484a480fa4aff25bb2e68769a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
   您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具疑難排解主題和 Microsoft Developer Network (MSDN) 公共論壇中錯誤和警告。  

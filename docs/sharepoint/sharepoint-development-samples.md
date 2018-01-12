@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, samples
-ms.assetid: bb8c7c86-ed78-4245-8d50-31413753911d
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5ae8d0806fad9b932e935611990cb40fcbe3e4d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9cfe4870ed7d7c976e05f6ebc8deeb197e029183
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 程式開發範例
   您可以使用 Visual Studio 來下載並安裝 SharePoint 的應用程式的範例[MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185)。  

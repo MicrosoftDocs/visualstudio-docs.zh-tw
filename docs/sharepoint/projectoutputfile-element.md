@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: ProjectOutputFile element
-ms.assetid: 52a017bf-e19c-49e4-bb8f-cbe6958195c2
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: edcaf6e858c2ebf6d8068fba4f9a179904ea0a72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b57f00960629d65f264f22532a16202d6ae5d7a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示要部署至 SharePoint 時，包含與專案項目個別專案的輸出。  

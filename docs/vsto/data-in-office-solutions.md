@@ -14,17 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], data
 - datasets [Office development in Visual Studio]
-ms.assetid: 8478c095-864b-4ed3-8a70-1fc19b411c6a
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8b96fb2b9f05656835cae4ca164babcc6fcb07cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63725a87cbd758a7b2d6c02f1eb7a20e4e4e7de0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="data-in-office-solutions"></a>Office 方案的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。  

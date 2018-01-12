@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 3e147307514656a693d47d24a8017b1b4ebbf182
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -140,7 +140,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
 描述如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[開放式資料通訊協定 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 
-[Office 方案的資料](/office-dev/office-dev/data-in-office-solutions)  
+[Office 方案的資料](../vsto/data-in-office-solutions.md)  
 包含說明資料在 Office 方案中的運作方式的主題連結。 這包括結構描述導向的程式設計、 資料快取，以及伺服器端資料存取的相關資訊。
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  

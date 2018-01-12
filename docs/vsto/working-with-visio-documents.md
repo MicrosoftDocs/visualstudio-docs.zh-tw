@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], document common tasks
 - Office documents [Office development in Visual Studio, common tasks in Visio
 - documents [Office development in Visual Studio], common tasks in Visio
-ms.assetid: 0e9aa441-5bce-4a72-bc8b-7311e3235b9a
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6ecabb2b917c2d0f54085f7fe54dea2a3767f07c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c34703e2897475a168215194c0dfb30000551021
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-visio-documents"></a>使用 Visio 文件
   此章節的主題提供使用 Microsoft Office Visio 物件模型處理文件在 Office 專案中的逐步程序和程式碼範例。  

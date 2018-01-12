@@ -11,16 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: autosave
-ms.assetid: b60bb228-0e72-4f24-88bb-397dfc5d50a7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2f2be3b4311792f58cb655f8e878557e276a04e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ced97cb56e099eec70ea2b87c7d1a31ee7d4d89d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動儲存有何影響 Office 方案
 

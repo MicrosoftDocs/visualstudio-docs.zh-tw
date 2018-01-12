@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 當您使用 IntelliTrace 記錄和追蹤程式碼的執行歷程時，可以縮短對應用程式進行偵錯的時間。 您可以輕鬆地找到錯誤，因為 IntelliTrace 可讓您：  
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/09/2018
 |||  
 |-|-|  
 |**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更高版本。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要偵錯 SharePoint 應用程式使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br />     若要偵錯 Microsoft Azure 應用程式，使用 IntelliTrace，請參閱[偵錯使用 IntelliTrace 和 Visual Studio 發行雲端服務](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|  
-|**有限的支援**|.NET core 和 ASP.NET Core 應用程式支援只適用於事件<br />-F # 實驗基礎的應用程式<br />支援只適用於事件的 Windows 市集應用程式|  
+|**有限的支援**|.NET core 和 ASP.NET Core 應用程式支援只適用於事件<br />-F # 實驗基礎的應用程式<br />-支援只適用於事件 UWP 應用程式|  
 |**不支援**|C + +、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|  
   
 > [!NOTE]

@@ -12,17 +12,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], saving string data
 - projects [SharePoint development in Visual Studio], saving string data
 - SharePoint projects, saving string data
-ms.assetid: 903b9da7-2eea-404c-9a7a-7bc15cb90d6c
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 07865f3a52d4cca71cf76a3d95ac041a5c389494
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56cdfb95de6f0e5f8644ea3c73daacbf90e33a97
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>儲存 SharePoint 專案系統擴充功能的資料
   當您擴充 SharePoint 專案系統時，您可以儲存 SharePoint 專案關閉後持續發生的字串資料。 通常與特定的專案項目或專案本身相關聯的資料。  

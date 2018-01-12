@@ -15,17 +15,15 @@ helpviewer_keywords:
 - worksheets, ranges
 - ranges, common tasks
 - workbooks, ranges
-ms.assetid: 26835a5d-402c-4c13-8f33-e4d8ffed3dfe
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 80f681ece88ebf417f626f557f3a01dc9199b612
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-ranges"></a>使用範圍
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Interop.Excel.Range> 類別包含您用來執行有範圍工作的方法和屬性。  

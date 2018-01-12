@@ -15,17 +15,15 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - data [Office development in Visual Studio], copying across worksheets
 - copying data, Office development in Visual Studio
-ms.assetid: eed7dbaf-bdb5-4330-ba2e-5f3d50817eca
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9f8b976427abe35ef8383604eea93f1513316903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1f79fc905152c3d2c56fa70bff9f2936835fab4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以程式設計方式跨工作表複製資料和格式
   您可以從上一個工作表範圍複製資料，所有其他工作表在活頁簿中，使用<xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A>方法。 指定範圍，以及您是否要複製資料、 格式設定，或兩者。  

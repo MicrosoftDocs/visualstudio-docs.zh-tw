@@ -11,16 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: coauthoring, in Excel
-ms.assetid: a9479a52-54e5-421c-9a89-69607153bf6b
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f8432757481618da49f59130316a88706ec37a38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 656f1274b4dafc46c1417d2282f982eaed0c2f06
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="understanding-coauthoring-and-add-ins"></a>了解 Coauthoring 和增益集
 

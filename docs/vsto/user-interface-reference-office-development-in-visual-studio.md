@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: reference [Office development in Visual Studio], user interface
-ms.assetid: e6c2657f-45e5-42d6-90c7-a45ec1dcbf50
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f45aed7a9d49bb3803137aac3420a6a61c5de3aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 470fa3340898e000863a5a3368be5bbdde2a08e0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>使用者介面參考 (Visual Studio 中的 Office 程式開發)
   下列使用者介面項目屬於 Visual Studio 中 Office 專案的一部分。  

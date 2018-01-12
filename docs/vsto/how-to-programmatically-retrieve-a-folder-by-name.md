@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Outlook folders [Office development in Visual Studio], retrieving by name
-ms.assetid: 7f819525-b431-4b57-9a7f-3a6454c74298
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 542340605407450c1cedaf9077faa90b05cdfa28
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 536abafec5d2d8792eb966c763a89b0c78dd49fc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以程式設計方式依名稱擷取資料夾
   這個範例會取得命名自訂資料夾的參考，並接著會顯示資料夾的內容。  

@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office development in Visual Studio, getting started
-ms.assetid: fc27e84c-dca2-4b0a-8794-f57a2a886262
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c50dd98c929e8875930b964f3e5f15218fb90174
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>使用者入門 (Visual Studio 中的 Office 程式開發)
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。  

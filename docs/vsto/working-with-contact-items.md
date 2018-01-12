@@ -15,17 +15,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], about contacts
 - e-mail [Office development in Visual Studio], contacts
 - contacts [Office development in Visual Studio]
-ms.assetid: e1bd9493-ee33-40e0-8b62-f310e9e35b33
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 378b33e7396678273a8aa14eb96e355117ce1f6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1b58f64c59d09a20f55072d601f6faa6233d543a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-contact-items"></a>使用連絡人項目
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 類別包含您用來執行連絡人工作的方法和屬性。  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-ms.assetid: bb251fe9-f1bf-4ddd-9359-4b7f78fbd50f
-caps.latest.revision: "9"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9427d2307a9d9726c2df1032410168c3b5cf1cc8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c8cf3a3705fd389f16ac02d5739eeb754df99ac9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>如何：將捷徑功能表項目加入至 SharePoint 專案
   您可以加入任何 SharePoint 專案的捷徑功能表項目。 當使用者以滑鼠右鍵按一下專案節點中的，會出現的功能表項目**方案總管 中**。  

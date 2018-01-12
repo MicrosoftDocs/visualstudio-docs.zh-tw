@@ -15,17 +15,15 @@ helpviewer_keywords:
 - mappings [Office development in Visual Studio], XML schemas to Excel worksheets
 - Excel [Office development in Visual Studio], XML schemas
 - worksheets [Office development in Visual Studio], XML schemas
-ms.assetid: cef3f751-c1cf-46f3-9177-0bacdcee4121
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed0da1c2ac181db93105a93dd2269be55f0379a2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：在 Visual Studio 內將結構描述對應至工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用相同的 Microsoft Office Excel 工具，您可以使用 Visual Studio 外部開啟活頁簿時。 將結構描述對應至工作表之前或之後建立 Excel 方案的 Office 專案會建立相同的物件。  

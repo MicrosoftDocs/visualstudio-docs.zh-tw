@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-ms.assetid: 92948fcc-76c6-4b08-ba63-cab59dd60eb1
-caps.latest.revision: "61"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3368e3176badf8aa1bf1eebe6453674380de46f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e5bdd299c9d8d11517234fe4fd57ea0be617ab65
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安裝 Office 主要 Interop 組件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。  

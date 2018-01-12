@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>在模擬器中執行的 UWP 和 Windows 8.1 應用程式
 UWP 和 Windows 8.1 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 UWP 或 Windows 8.1 的應用程式。 您可以執行的應用程式選擇的實體螢幕大小和您要模擬的解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
   
- 模擬器會提供的環境，在其中您可以設計、 開發、 偵錯和測試 UWP 應用程式。 不過，您發行至 Microsoft Store 的應用程式之前，您應該測試您的應用程式，在實際裝置上。  
+ 模擬器會提供的環境，在其中您可以設計、 開發、 偵錯和測試 UWP 應用程式。 不過，您將您的應用程式發行至 Microsoft 市集之前，您應該測試您的應用程式，在實際裝置上。  
   
  UWP 應用程式的 Visual Studio 模擬器不會在本機電腦上執行的隔離環境中。 因此，發生在模擬器中的錯誤，例如無法修復的全系統錯誤，也會影響到整部電腦。  
   

@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-ms.assetid: 4d551be0-2124-4481-b398-481ded9b5d46
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3773364467ba79cb17e71feb4c1c17feded750f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b7144f5f8c7c4d2ca42543abe236479ac364d7f8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：新增或移除 SharePoint 連線
   伺服器總管可讓您瀏覽 SharePoint 網站，以及資料連接。 不過，您可以瀏覽 SharePoint 網站的內容之前您必須將它加入至**SharePoint 連接**節點。  

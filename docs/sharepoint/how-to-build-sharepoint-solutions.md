@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, building
-ms.assetid: 7ded93e6-fba2-4e7f-8865-62841fd2b04b
-caps.latest.revision: "11"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38cd54bdfb29bdc0966a0ad56817720814f38a47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71355ad98765a2022521a24c3c5bd3e4b535776d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：建置 SharePoint 案
   建置 SharePoint 解決方案並無不同建置 Visual Studio 中的其他應用程式。 如需建置應用程式的詳細資訊，請參閱[編譯和 Visual Studio 中建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。 SharePoint 方案特有的一些考量的討論，請參閱[How to： 部署和 SharePoint 方案發行至本機 SharePoint 網站](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)。  

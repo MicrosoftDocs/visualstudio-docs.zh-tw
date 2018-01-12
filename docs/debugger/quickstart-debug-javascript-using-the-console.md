@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 您可以使用 JavaScript 主控台視窗進行互動，並且使用 JavaScript 建置的 UWP 應用程式進行偵錯。 這些功能支援[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]app、 Windows Phone 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 您可以使用 JavaScript 主控台視窗進行互動，並且使用 JavaScript 建置的 UWP 應用程式進行偵錯。 這些功能支援用於 UWP 應用程式， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app、 Windows Phone 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式。 如需主控台命令參考，請參閱 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  [JavaScript 主控台] 視窗可讓您：  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台支援 [JavaScript 主控台] 視窗：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]與使用 JavaScript 和 HTML 的 Windows Phone 應用程式  
+-   UWP 應用程式， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，與使用 JavaScript 和 HTML 的 Windows Phone 應用程式  
   
 -   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上執行的 Internet Explorer 11  
   

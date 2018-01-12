@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>部署 Visual Studio 從 UWP 應用程式
 ![僅適用於 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 在 Windows 10 的遠端裝置，您必須啟用[開發人員模式下](/windows/uwp/get-started/enable-your-device-for-development)。 在執行建立者的更新的 Windows 10 裝置上或更新版本中，遠端工具會自動安裝時部署您的應用程式。 如需詳細資訊，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
 
 > [!NOTE]
-> 在 Windows 8.1 和 Windows 10 的 pre-建立者的更新版本，Visual Studio 遠端工具必須安裝在遠端裝置上，必須執行遠端偵錯工具。 在 Windows 8.1，您也必須安裝開發人員授權。
+> 在 Windows 8.1 和 Windows 10 的 pre-建立者的更新版本，適用於 Visual Studio 遠端工具必須安裝在遠端裝置上，必須執行遠端偵錯工具。 在 Windows 8.1，您也必須安裝開發人員授權。
   
 部署使用遠端偵錯工具網路通道，將應用程式檔案傳送至遠端裝置。  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 12/22/2017
  您可以在啟始專案的 [偵錯] 屬性頁上設定下列部署選項。  
   
  **允許網路回送**  
- 基於安全性考量，不允許以標準模式安裝的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式，對其安裝所在的裝置進行網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。  
+ 基於安全性理由，UWP 或[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]標準模式安裝的應用程式不允許進行網路呼叫其安裝所在的裝置。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。  
   
  移除應用程式中的網路回送豁免：  
   

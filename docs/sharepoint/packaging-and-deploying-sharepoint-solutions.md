@@ -16,17 +16,15 @@ helpviewer_keywords:
 - packaging [SharePoint development in Visual Studio]
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, packaging and deploying
-ms.assetid: 39072fa7-9f94-49c0-9a67-cbcce0147e61
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c584e4951289cd813a0f1d6bcf14920bd9713436
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 方案部署到 SharePoint 伺服器使用方案套件 (.wsp) 檔案。 您可以使用 Visual Studio，將您的 SharePoint 專案項目組織成功能，以及建立套件以部署您的 SharePoint 功能。  

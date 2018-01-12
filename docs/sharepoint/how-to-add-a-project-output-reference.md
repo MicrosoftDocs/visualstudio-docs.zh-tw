@@ -16,17 +16,15 @@ helpviewer_keywords:
 - project output references [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, project output references
 - SharePoint development in Visual Studio, advanced packaging tools
-ms.assetid: 9d6bc25e-bf0d-4483-a691-2ad7a796fa80
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7ced5627420f5ac90da2cae1a2930dbd0b973dbc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0114971baa164858add68f2f1d6f571407ba5320
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-project-output-reference"></a>如何：加入專案輸出參考
   若要部署至 SharePoint 的非 SharePoint 專案的組件 （或 Silverlight 專案中的.xap 檔案），請將其加入做為專案輸出參考。  

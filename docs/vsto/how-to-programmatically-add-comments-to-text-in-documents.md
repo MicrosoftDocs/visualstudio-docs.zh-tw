@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-ms.assetid: 4e396e31-01bf-424c-be6b-9a1806bcd572
-caps.latest.revision: "26"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 69f320ef3e7b3914d9d6eadb7466b3a216ef95d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2702d8aed4dce16a2dde1c42b2b1410ebded14e3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以程式設計方式為文件中的文字加入註解
   文件類別的註解屬性中某個範圍的 Microsoft Office Word 文件中的文字加入註解。  

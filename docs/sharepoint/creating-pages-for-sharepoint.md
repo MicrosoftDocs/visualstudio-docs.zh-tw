@@ -17,17 +17,15 @@ helpviewer_keywords:
 - master pages[SharePoint development in Visual Studio], designing
 - content pages[SharePoint development in Visual Studio], designing
 - page layouts[SharePoint development in Visual Studio], designing
-ms.assetid: 57678ed1-841f-45de-a1d3-5f9e233bf3ce
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7baa368e34b7b721e7b41c617c6ce6e89bb5f980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b65c601d36dd04d95466fc8f8dff7a95b70c44a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-pages-for-sharepoint"></a>建立 SharePoint 的網頁
   您可以建立應用程式頁面、 網站頁面、 主版頁面和 SharePoint 網站的頁面配置。  

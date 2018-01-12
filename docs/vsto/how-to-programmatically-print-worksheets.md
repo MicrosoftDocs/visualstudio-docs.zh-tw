@@ -14,17 +14,15 @@ helpviewer_keywords:
 - printing [Office development in Visual Studio], worksheets
 - worksheets, printing
 - print preview, worksheets
-ms.assetid: 312bfcd7-0a74-421c-b42e-df71a06b7bdf
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6385798eaee40eb3d945b4d18af2d007c1f85f77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 97c4c5b870cd16b07f211b952df8994b87ad159b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>如何：以程式設計方式列印工作表
   您可以列印活頁簿中的任何工作表。  

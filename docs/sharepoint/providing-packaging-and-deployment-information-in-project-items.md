@@ -26,17 +26,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature receiver
 - feature receiver [SharePoint development in Visual Studio]
 - safe controls [SharePoint development in Visual Studio]
-ms.assetid: 209ff3b9-d701-4d27-9d24-005fcc811cbe
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 84379f4847bb708bf8089ac32e261b459e87e1a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: adc98932391e726e1704ebe88ec0a9120f7bb678
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Providing Packaging and Deployment Information in Project Items
   中的所有 SharePoint 專案項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]有的屬性，您可以使用專案部署至 SharePoint 時，提供額外的資料。 這些屬性如下所示：  

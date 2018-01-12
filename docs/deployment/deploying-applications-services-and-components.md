@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>在 Visual Studio 中的部署概觀
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/05/2018
 
 - **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 您可以將部署到使用發行工具使用 FTP 或 Web Deploy 的網站。 如需詳細資訊，請參閱[部署網站至](quickstart-deploy-to-a-web-site.md)。
 
-    在 方案總管 中，以滑鼠右鍵按一下專案，然後選擇 **發行**。 在 [發行] 工具中，選擇您想要的選項組態步驟。
+    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 [發行] 工具中，選擇您想要的選項組態步驟。
 
     ![選擇 IIS、 FTP 和其他內容。](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/05/2018
 
 ### <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core** web 應用程式： 您可以使用 [發行] 工具，快速地將應用程式部署至 Azure App Service 或至 Azure 虛擬機器。 在 方案總管 中，以滑鼠右鍵按一下專案，然後選擇 **發行**。 在 發行 對話方塊中，選擇  **Microsoft Azure App Service**或**Microsoft Azure 虛擬機器**，然後依照 設定步驟。
+- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core** web 應用程式： 您可以使用 [發行] 工具，快速地將應用程式部署至 Azure App Service 或至 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 發行 對話方塊中，選擇  **Microsoft Azure App Service**或**Microsoft Azure 虛擬機器**，然後依照 設定步驟。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
 

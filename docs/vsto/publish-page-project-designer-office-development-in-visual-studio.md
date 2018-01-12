@@ -15,17 +15,15 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio]
 - publishing, Office solutions
 - Property Pages dialog box, Publish [Office development in Visual Studio]
-ms.assetid: 94d9bdf1-84fa-4e26-8ece-a1a0dabda5ea
-caps.latest.revision: "31"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 508557ab96747327e090bfa12b118a1a39ad9bbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>專案設計工具、發行頁 (Visual Studio 中的 Office 程式開發)
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  

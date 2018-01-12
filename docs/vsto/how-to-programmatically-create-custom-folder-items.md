@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], creating
 - Outlook folders [Office development in Visual Studio], custom
-ms.assetid: 5af5b11c-3911-46fa-8a80-413c23b4f2b5
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7566503fb0fcf92ed30c21f800239ebafb6a21f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8b8b5dd6a287f5e6daf6391e77baeee8da8f129d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以程式設計方式建立自訂資料夾項目
   這個範例會在 Microsoft Office Outlook 中建立新的資料夾。 登入的使用者名稱會用於資料夾名稱。  

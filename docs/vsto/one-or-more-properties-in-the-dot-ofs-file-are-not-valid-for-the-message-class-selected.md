@@ -11,17 +11,15 @@ f1_keywords: VSTO.NewFormRegionWizard.OFSPropertyError
 dev_langs:
 - VB
 - CSharp
-ms.assetid: ca9e2ec1-df96-45ca-9611-cec47edfe1e4
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ca816a635abf929f2bfa1614f4560f434adbfd45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6ab0b36921911ac8c70501096868f47a40371f79
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs 檔案的一個或多個屬性對於所選取的訊息類別是無效的
   當您匯入在 Outlook 中設計的表單區域，但表單區域上的一或多個欄位與您在 [新增表單區域精靈]  最後一頁選取的訊息類別不相容時，就會出現這個錯誤。  

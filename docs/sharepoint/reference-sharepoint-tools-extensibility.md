@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, reference for project and tools extensibility
-ms.assetid: af489a35-3317-465d-9639-21df4f1ca974
-caps.latest.revision: "6"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8b1782d5efa47fffb09d2e54413be1d5e35f89d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a7e578fae9203a72fe44b245e1d139e11c01dfd5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>參考 (SharePoint 工具擴充性)
   本章節包含擴充 Visual Studio 中的 SharePoint 工具的參考文件。  

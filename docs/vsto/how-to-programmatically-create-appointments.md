@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 - Outlook calendars [Office development in Visual Studio], creating appointments
-ms.assetid: 3ee1c03c-0bc3-49d7-8edf-b14fab9aceb8
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9058cbd633931003751baf98fa1fcf34dd32b118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fc90be6ef353e2b620b9dc2fccd246c0d29f5780
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-appointments"></a>如何：以程式設計方式建立約會
   本範例會建立約會並加入約會會議邀請的收件者。  

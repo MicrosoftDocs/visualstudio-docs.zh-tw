@@ -14,17 +14,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-ms.assetid: 8bfa5950-0ef4-4417-9538-cc8a5a1c35e2
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fe9fb4a12d45cf5d713fb76fe3fe04e1346a8355
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 879d34828e4619ac9a538f9db7cf1acef7b830b0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>在伺服器總管中擴充 SharePoint 連線節點
   在 Visual Studio 中，您可以連接到開發電腦上的本機 SharePoint 網站使用**SharePoint 連接**節點**伺服器總管**視窗。 此節點會顯示許多元件的本機 SharePoint 網站中的階層式樹狀檢視。 例如，您可以在本機站台上檢視清單、 文件庫和內容類型。 如需有關使用**伺服器總管**若要連接至本機 SharePoint 網站，請參閱[瀏覽 SharePoint 連線使用伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。  

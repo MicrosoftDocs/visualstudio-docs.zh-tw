@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, website
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 07944d5690433831889e56375cfa13ba774aaa8b
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e324869eb90cd60cba68d9ed7b2e3fdb1ebb588d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式發行至網站，使用 Visual Studio 發行工具
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
-1. 在 Visual Studio 中，選擇 **檔案 > 新的專案**。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 1. 在下**Visual C#**或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 01/05/2018
 
 1. 輸入的名稱，例如**MyWebApp**按一下**確定**。
 
-    Visual Studio 建立專案。
+    Visual Studio 會建立專案。
 
 1. 選擇**建置 > 建置方案**建置專案。
 
 ## <a name="publish-to-a-web-site"></a>發行至網站
 
-1. 在 方案總管 中，以滑鼠右鍵按一下專案，然後選擇 **發行**。
+1. 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。
 
     ![選擇發行](../deployment/media/quickstart-publish-aspnet.png "選擇發行")
 

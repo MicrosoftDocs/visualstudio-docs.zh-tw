@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 處理序執行之後，請按一下**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**) 若要開啟**附加至處理序** 對話方塊。
@@ -147,10 +147,7 @@ ms.lasthandoff: 12/22/2017
 |伺服器處理序上的其他支援的應用程式類型進行偵錯|（如果伺服器位於遠端），請使用遠端工具，附加至處理序|iexplore.exe 或其他處理程序|如有必要，請使用工作管理員，找出程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)和本主題稍後的章節|
 |遠端偵錯 Windows 桌面應用程式|遠端工具和 F5|N/A| 請參閱[遠端偵錯](../debugger/remote-debugging.md)|
 |遠端偵錯的通用 (UWP)、 OneCore、 HoloLens 或 IoT 應用程式|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
-|您從 Visual Studio 未啟動的通用 Windows 應用程式 (UWP)、 OneCore、 HoloLens 或 IoT 應用程式進行偵錯|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
-  
-> [!WARNING]
->  若要附加至以 JavaScript 撰寫的 UWP，您必須先啟用應用程式的偵錯。 請參閱[附加偵錯工具](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger)Windows 開發人員中心。  
+|您從 Visual Studio 未啟動的通用 Windows 應用程式 (UWP)、 OneCore、 HoloLens 或 IoT 應用程式進行偵錯|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|  
   
 > [!NOTE]
 >  偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 連結器選項連結，將其自動加入程式碼。

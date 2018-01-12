@@ -15,17 +15,15 @@ helpviewer_keywords:
 - types [Office development in Visual Studio], casting
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
-ms.assetid: 80b0d23e-df68-4ea9-a02b-238aee8ca9c0
-caps.latest.revision: "49"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 方案中的晚期繫結
   Office 應用程式的物件模型中的某些類型提供功能，可透過晚期繫結功能。 例如，一些方法和屬性可以傳回不同類型的物件，視 Office 應用程式的內容而定，而某些型別可以公開不同的方法或在不同內容中的屬性。  

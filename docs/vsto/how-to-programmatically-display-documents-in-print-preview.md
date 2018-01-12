@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], displaying documents in print preview
 - documents [Office development in Visual Studio], displaying in print preview
-ms.assetid: 96c7faea-9c5c-42b4-a009-08894a6d15c9
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 762a068858e7ad79c9a4fe9d02d1d868f150c5a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c4da179b2ead999634f77d8c53f32e458326e961
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>如何：以程式設計方式在預覽列印中顯示文件
   如果您的方案會產生報告，您可能想要在 [預覽列印] 模式中向使用者顯示報告。  

@@ -12,12 +12,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
@@ -86,7 +85,7 @@ C + + 核心指導方針，會有幫助您撰寫更好且更安全的程式碼�
 自 Visual Studio 2017 版本 15.3，支援的規則集是： 
   - **擁有者指標規則**強制[資源管理會檢查與擁有者相關<T>從 c + + 核心指引](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **Const 規則**強制[const 相關檢查從 c + + 核心指引](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
+  - **Const 規則**強制[const 相關檢查從 c + + 核心指引](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。  
 
   - **原始指標規則**強制[資源管理會檢查從 c + + 核心指導方針的相關原始指標](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
@@ -98,11 +97,14 @@ C + + 核心指導方針，會有幫助您撰寫更好且更安全的程式碼�
 
   **Visual Studio 2017 15.5 版**：
   - **類別規則**焦點放在適當的特殊方法，以及虛擬規格使用的一些規則。 這是建議用於檢查子集[類別和類別階層架構](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)。 
-  - **並行規則**攔截 badlyly 宣告成立條件物件的單一規則。 如需詳細資訊，請參閱[並行存取相關指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
+  - **並行規則**攔截格式不宣告成立條件物件的單一規則。 如需詳細資訊，請參閱[並行存取相關指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
   - **宣告規則**的規則數[介面指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)哪些著重於如何全域變數宣告。  
   - **函式的規則**兩個檢查可協助完成採用`noexcept`規範。 這是一部分的指導方針[清除函式設計和實作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)。 
   - **共用指標規則**的一部份[資源管理](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)指導方針強制我們加入一些規則特有如何共用指標傳遞至函式或在本機使用。  
-  - **樣式規則**一個簡單但重要檢查哪些會禁止使用[goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)。 這是改善程式碼撰寫樣式和的運算式和陳述式，c + + 中的使用的第一個步驟。 
+  - **樣式規則**一個簡單但重要檢查，這樣會禁止使用[goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)。 這是改善程式碼撰寫樣式和的運算式和陳述式，c + + 中的使用的第一個步驟。  
+  
+  **Visual Studio 2017 版本 15.6**:
+  - **算術的規則**規則可偵測算術[溢位](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow)，[已簽署未簽署作業](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)和[位元操作](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)。
 
 
  您可以選擇限制的警告，只是一或數個群組。 **原生最小值**和**原生建議**規則集包含其他 PREfast 檢查除了 c + + 核心檢查的規則。 若要查看可用規則集，請開啟 [專案屬性] 對話方塊中，選取**程式碼 Analysis\General**，開啟下拉式清單中的**規則集**下拉式方塊中，並挑選**選擇多個規則集**. 如需有關使用 Visual Studio 中的規則集的詳細資訊，請參閱[使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)。
@@ -120,7 +122,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-這些巨集對應到規則集，然後展開並以空格分隔的警告編號清單。 藉由使用適當的 pragma 建構，您可以設定專案的有趣的規則集有效或一段程式碼。 在下列範例中，程式碼分析會警告只遺漏常數的修飾詞：
+這些巨集對應到規則集，然後展開並以空格分隔的警告編號清單。 藉由使用適當的 pragma 建構，您可以設定專案的有趣的規則集有效或一段程式碼。 在下列範例中，程式碼分析警告只遺漏常數的修飾詞：
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -129,8 +131,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
 ## <a name="attributes"></a>屬性
- Microsoft Visual c + + 編譯器具有有限的支援 GSL 隱藏屬性。
-它可以用來隱藏在運算式和函式內的區塊陳述式上的警告。
+ Microsoft Visual c + + 編譯器具有有限的支援 GSL 隱藏屬性。 它可以用來隱藏在運算式和函式內的區塊陳述式上的警告。
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -164,10 +165,10 @@ CPPCORECHECK_BOUNDS_WARNINGS
  您可以使用命令列選項，暫時停用所有的程式碼分析檔案，藉由指定`/analyze-`。 這會產生警告*D9025 覆寫 '/analyze' 與 ' /analyze-'*，這會提醒您稍後重新啟用程式碼分析。
 
  ## <a name="corecheck_per_file"></a>啟用特定的專案檔案 c + + 核心指導方針檢查
-有時可能會對已取得焦點的執行程式碼分析和仍然利用 Visual Studio IDE 很實用。 以下是可以用於大型專案以儲存建置時間，並讓您更輕鬆地篩選結果的範例案例：
+有時可能會對已取得焦點的執行程式碼分析和仍然使用 Visual Studio IDE 很實用。 下列範例案例可用於大型專案儲存建置時間，並且更輕鬆地篩選結果：
 
 1.  在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
-2.  啟動 Visual Studio，從命令殼層繼承這些變數。
+2.  若要繼承這些變數，請從命令殼層中啟動 Visual Studio。 
 3.  載入您的專案，並開啟其內容。
 4.  啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析擴充功能。
 5.  移至您想要使用 c + + 核心指導方針檢查分析，並開啟其內容的檔案。
@@ -212,13 +213,13 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>非 MSBuild 專案
-如果您使用不依賴 MSBuild 的建置系統您仍然可以執行檢查，但您必須熟悉的程式碼分析引擎設定某些內部資訊。 請注意，這些內部項目無法保證未來支援。
+如果您使用不依賴 MSBuild 的建置系統仍然可以執行檢查，但您需要以熟悉的程式碼分析引擎設定某些內部資訊。 不保證在未來支援這些內部項目。
 
 您必須設定幾個環境變數，並使用適當的命令列選項的編譯器。 最好是 「 Native Tools 命令提示字元 」 環境下工作，以便您不必來搜尋特定編譯器的路徑，包含目錄等。
 
 1.  **環境變數**
   - `set esp.extensions=cppcorecheck.dll`這會告訴引擎載入 c + + 核心指導方針模組。
-  - `set esp.annotationbuildlevel=ignore`這會停用處理 SAL 註釋的邏輯。 註解不會影響程式碼分析，在 c + + 核心指導方針檢查程式，但其處理花費的時間 （有時候很多時間）。 選用但強烈建議使用此設定。
+  - `set esp.annotationbuildlevel=ignore`這會停用處理 SAL 註釋的邏輯。 註解不會影響程式碼分析，在 c + + 核心指導方針檢查程式，但其處理時間 （有時候很長的時間）。 選用但強烈建議使用此設定。
   - `set caexcludepath=%include%`我們強烈建議您停用警告發生時引發標準標頭。 您可以加入更多的路徑，例如您的專案中的通用標頭的路徑。
 2.  **命令列選項**
   - `/analyze`啟用程式碼分析 (分析 / 考慮也使用： 只和 /analyze: quiet)。
@@ -227,7 +228,7 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 
 ## <a name="use-the-guideline-support-library"></a>使用指導方針支援程式庫  
- 導線支援程式庫被設計來協助您遵守核心。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`組參數與`span<T>`型別。 GSL 位於[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或 「 參與 」。 您可以在找到專案[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)。
+ 導線支援程式庫被設計來協助您遵守核心。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`組參數與`span<T>`型別。 GSL 位於[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，所以您可以檢視的來源、 註解，或者 「 參與 」。 您可以在找到專案[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)。
 
  ## <a name="vs2015_corecheck"></a>在 Visual Studio 2015 的專案中使用 c + + 核心檢查指導方針  
   如果您使用 Visual Studio 2015，預設不會安裝 c + + 核心檢查的程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用 Visual Studio 2015 中的 c + + 核心檢查程式碼分析工具。 Microsoft 透過支援的 Visual Studio 2015 的專案使用 Nuget 封裝。 封裝名為 Microsoft.CppCoreCheck，且可在[http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此套件需要有至少安裝 Visual Studio 2015 Update 1。  

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating workbooks
 - workbooks, creating
-ms.assetid: be0196fe-7dc5-4811-b0cd-3c219731a3ff
-caps.latest.revision: "48"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89fb10f850a082bcbad5a98763102a866fd55f92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1a1ed1679b5a50616219ef7f398261c72053c9a0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>如何：以程式設計方式建立新活頁簿
   當您以程式設計方式建立活頁簿時，它就是原生的 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件，不是 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。  

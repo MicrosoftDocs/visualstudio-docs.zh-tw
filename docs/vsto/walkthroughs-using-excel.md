@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Excel
 - Excel [Office development in Visual Studio], walkthroughs
-ms.assetid: 0a113292-02e2-4156-b5a2-9bb252f788cd
-caps.latest.revision: "29"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3c72ef641a9a60024448908d68ce9c77d2fc0618
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7bca253827fbbb7c559f698bc29df1c32f7a53f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthroughs-using-excel"></a>使用 Excel 的逐步解說
   下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Excel 以及自訂使用者介面 (UI) 的方式。  

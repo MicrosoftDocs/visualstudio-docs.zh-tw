@@ -16,17 +16,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: 2b34c8d9-c975-4fe9-b8e0-52db4a6014ea
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 41fbe935bb6bde5a57e6277ffcf5e357cc53a391
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e74ac8cef88319a54df0c08cd91fb2654d390cb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：新增與移除功能相依性
   您的 SharePoint 功能仍取決於其他功能的功能或資料。 在這些情況下，您可以將這些其他功能做為相依性標示為您的功能。 如此一來，可確保在 SharePoint 伺服器之前您功能已啟用,，就會啟動相依的功能。  

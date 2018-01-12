@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
@@ -109,7 +109,7 @@ ms.lasthandoff: 01/05/2018
      ![暫停、 繼續、 結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作  
- 您可以使用 [偵錯已安裝的應用程式] 對話方塊，載入已安裝在偵錯工具中的應用程式。 比方說，您可能已從 Microsoft 市集安裝的應用程式進行偵錯或有原始程式檔，應用程式中，但沒有應用程式的 Visual Studio 專案時，偵錯應用程式。 [偵錯已安裝的應用程式] 對話方塊可讓您在 Visual Studio 電腦或遠端裝置以偵錯模式啟動應用程式，或是將應用程式設定成以偵錯模式執行而不啟動。 如需詳細資訊，請參閱 **如何啟動偵錯工作階段** 之 [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) 或 [Visual C++、Visual C# 和 Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) 版本中的 **在偵錯工具中啟動已安裝的應用程式** 一節。  
+ 您可以使用 [偵錯已安裝的應用程式] 對話方塊，載入已安裝在偵錯工具中的應用程式。 比方說，您可能已從 Microsoft 市集安裝的應用程式進行偵錯或有原始程式檔，應用程式中，但沒有應用程式的 Visual Studio 專案時，偵錯應用程式。 [偵錯已安裝的應用程式] 對話方塊可讓您在 Visual Studio 電腦或遠端裝置以偵錯模式啟動應用程式，或是將應用程式設定成以偵錯模式執行而不啟動。 請參閱**在偵錯工具中啟動已安裝的應用程式**區段[的 UWP 應用程式啟動偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger)。
   
  將應用程式載入至偵錯工具後，您就能使用上述任何程序。  
   

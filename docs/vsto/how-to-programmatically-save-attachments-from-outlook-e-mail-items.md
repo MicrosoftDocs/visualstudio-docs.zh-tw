@@ -16,17 +16,15 @@ helpviewer_keywords:
 - saving e-mail attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-ms.assetid: 2f05e2bb-ae4f-407c-a6da-a3b1a4c31ab3
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0c00b625c9e06152d64892f59582ec3c2e0f2866
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f87b05b45fafab3ad28a6da6a98391b8d121be7e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-e-mail-items"></a>如何：以程式設計方式從 Outlook 電子郵件項目儲存附件
   這個範例會在收件匣中收到郵件時，將電子郵件附件儲存至指定的資料夾。  

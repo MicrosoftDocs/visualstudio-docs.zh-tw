@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
@@ -232,7 +232,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="export-and-import-breakpoints"></a>匯出和匯入中斷點  
  您可以將中斷點匯出至 XML 檔案，方法是以滑鼠右鍵按一下此中斷點，然後選取 [匯出] 。 根據預設，該檔案會儲存在此方案目錄中。 若要匯入中斷點，請開啟 [中斷點]  視窗 (**CTRL + ALT + B**)，然後在工具列上按一下向右的箭頭 (工具提示為 [從檔案匯入中斷點] )。  
   
-## <a name="troubleshoot-breakpoints"></a>進行中斷點疑難排解  
+## <a name="troubleshoot"></a>進行中斷點疑難排解 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點  
  如果您在偵錯時刪除了中斷點，則在某些情況下，您會在下次啟動偵錯時再次叫用此中斷點。 若要停止叫用此中斷點，請確定所有中斷點的執行個體都已從 [中斷點]  視窗中移除。  

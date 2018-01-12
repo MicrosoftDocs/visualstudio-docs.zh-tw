@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。  
@@ -54,7 +54,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  `Expansion`類型會決定程式碼片段顯示當您叫用**插入程式碼片段**命令。 `SurroundsWith`類型會決定程式碼片段顯示當您叫用**包圍與**命令。  
   
@@ -72,7 +72,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  `Code` 項目包含三個變數。  
   
@@ -88,7 +88,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  將名稱項目的值標記為可編輯區域。  
   
@@ -100,7 +100,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  常值亦可參考函式。 XML 編輯器包括名為函式**LookupPrefix**。 **LookupPrefix**函式會從 XML 文件會從叫用此程式碼片段，並傳回如果有的話，會將該命名空間，定義的命名空間前置詞和它包含冒號 （:） 中的位置指定的命名空間 URI在該名稱。 以下是範例`Literal`項目，會使用**LookupPrefix**函式。  
   
@@ -109,7 +109,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  $prefix$ 變數即可在 XML 片段中的其他位置使用。  
   

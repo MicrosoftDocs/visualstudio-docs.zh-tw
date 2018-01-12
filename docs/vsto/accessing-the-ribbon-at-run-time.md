@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Globals class, Ribbon
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
-ms.assetid: 8a7c7c6d-1a18-4d6b-98ee-e483d41f0cd8
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 347659ce577a532604835f57c4b509553f438dea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c0f3e4d20cbb04cbcfac5123a71b3fdf03d2a26
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessing-the-ribbon-at-run-time"></a>Accessing the Ribbon at Run Time
   您可以撰寫程式碼以顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。  

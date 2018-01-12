@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -35,15 +35,15 @@ ms.lasthandoff: 12/22/2017
 |情節|連結|
 |-|-|-|
 |ASP.NET|[遠端偵錯 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# 或 Visual Basic|[遠端偵錯 C# 或 Visual Basic 專案](remote-debugging-csharp.md)|
-|C++|[對 C++ 專案進行遠端偵錯](remote-debugging-cpp.md)|
-|通用 Windows 應用程式 (UWP)|[對已安裝的應用程式套件進行偵錯](debug-installed-app-package.md)|
+|C# 或 Visual Basic|[遠端偵錯 C# 或 Visual Basic 專案](../debugger/remote-debugging-csharp.md)|
+|C++|[對 C++ 專案進行遠端偵錯](../debugger/remote-debugging-cpp.md)|
+|通用 Windows 應用程式 (UWP)|[在遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)和[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)|
 |Azure|[在 Azure 上的遠端偵錯 ASP.NET](remote-debugging-azure.md)|
 |Azure Service Fabric|[遠端 Service Fabric 應用程式進行偵錯](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。|
 
 如果您只想要下載及安裝遠端偵錯工具，而且不需要任何額外的指示針對您的案例，請遵循本文章中的步驟。
   
-## <a name="download-and-install-the-remote-tools"></a>下載及安裝遠端工具  
+## <a name="download-and-install-the-remote-tools"></a>下載並安裝遠端工具  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

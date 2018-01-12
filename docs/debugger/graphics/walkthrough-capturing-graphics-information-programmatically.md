@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 您可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 -   擷取圖形資訊  
   
 > [!NOTE]
->  先前的程式設計擷取實作依賴 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 遠端工具來提供擷取功能，但是 Windows 8.1 透過 DirectX 11.2 支援直接擷取。 因此，在 Windows 8.1 上進行程式設計擷取，已經不再需要安裝遠端工具。  
+>  先前的程式設計擷取實作依賴的 Visual studio 遠端工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]來提供擷取功能，Windows 8.1 支援直接透過 Direct3D 11.2 的擷取。 如此一來，您不再需要安裝 Visual studio 遠端工具，供 Windows 8.1 上進行程式設計擷取。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>準備應用程式以使用程式設計擷取  
  若要在應用程式中使用程式設計擷取，它必須包括必要的標頭。 這些標頭是 Windows 8.1 SDK 的一部分。  
@@ -183,10 +183,10 @@ ms.lasthandoff: 12/22/2017
   
      如果您未執行此步驟，則檔案名稱為 default.vsglog。 如果您未定義 `DONT_SAVE_VSGLOG_TO_TEMP`，則檔案的位置是與暫存目錄相對的位置；否則，它是與工作目錄相對的位置，或在另一個位置中 (如果您已指定絕對檔案名稱)。  
   
- 如[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]應用程式，暫存目錄的位置屬於每個使用者和應用程式，而且通常位於 C:\users 之類的位置\\*username*\AppData\Local\Packages\\ *套件系列名稱*\TempState\\。 針對桌面應用程式，暫存目錄的位置是每位使用者特有而且通常位於 C:\Users 之類的位置\\*username*\AppData\Local\Temp\\。  
+ Uwp 和[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]應用程式，暫存目錄的位置屬於每個使用者和應用程式，而且通常位於 C:\users 之類的位置\\*username*\AppData\Local\Packages\\ *套件系列名稱*\TempState\\。 針對桌面應用程式，暫存目錄的位置是每位使用者特有而且通常位於 C:\Users 之類的位置\\*username*\AppData\Local\Temp\\。  
   
 > [!NOTE]
->  若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住，在寫入資料的位置方面， [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] 應用程式的限制多於桌面應用程式，而且可能需要進行額外設定才能寫入至特定位置。  
+>  若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住該 UWP 和[!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)]應用程式的限制多於桌面應用程式，其中可以寫入資料，而可能需要額外設定才能寫入至特定位置有關。  
   
 ### <a name="capturing-the-graphics-information"></a>擷取圖形資訊  
  準備好應用程式，以供進行程式設計擷取，並選擇性地設定圖形記錄檔的位置和名稱之後，請建置應用程式，然後執行它，或對它進行偵錯以擷取資料；當您使用程式設計擷取 API 時，請勿從 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動圖形診斷。 圖形記錄會寫入至您指定的位置。 如果您想要保留這版的記錄檔，請將它移至另一個位置；否則，將會於再次執行應用程式時遭到覆寫。  

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-ms.assetid: 3b2dd058-66dd-4a21-ac15-0f09a84c939f
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d868e69a1c7bbeeb7c25deb78acf90fe36af2e2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 方案逐步解說中的資料
   下列逐步解說示範如何處理 Microsoft Office Word 和 Microsoft Office Excel 文件層級自訂和 VSTO 增益集中的資料。  

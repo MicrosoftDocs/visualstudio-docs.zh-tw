@@ -18,23 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>偵錯通用 Windows 應用程式 (UWP)
-Visual Studio 偵錯工具進行偵錯 UWP 應用程式提供完整的支援。  
-  
-如需偵錯通用 Windows 應用程式的資訊，請參閱[部署和偵錯 UWP 應用程式](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)。  
+Visual Studio 偵錯工具偵錯 UWP 和 Windows 8.1 的應用程式提供完整的支援。  
   
 若要偵錯 Windows Phone 8 應用程式，請參閱[偵錯應用程式 Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx)。  
   
 |||  
 |-|-|  
-|[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)|在應用程式模擬器或模擬器中，或在遠端裝置上的本機機器上執行 UWP 應用程式。|  
-|[偵錯 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)|尋找和修正 bug UWP 應用程式中，使用 Visual Studio 偵錯工具。|  
+|[啟動 UWP 應用程式的偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|在本機電腦、 應用程式模擬器或模擬器中，或在遠端裝置上的連線裝置上執行 UWP 應用程式。|  
 |[對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)|偵錯已部署應用程式，本機和遠端。|
 |[UWP 應用程式的預先擷取內容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 ContentPrefetcher 類別對 UWP 應用程式的影響。|  
   

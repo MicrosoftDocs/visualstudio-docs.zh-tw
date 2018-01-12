@@ -14,17 +14,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-ms.assetid: f09f6664-196d-46d6-819f-3c6500f23536
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e990896720916048ab449c7ccb5a927577861256
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-sharepoint-project-items"></a>擴充 SharePoint 專案項目
   建立專案項目擴充功能，當您想要將功能加入至已安裝 Visual Studio 中的 SharePoint 專案項目的型別。 例如，您可以建立擴充功能為內建**事件接收器**或**清單定義**專案項目在 Visual Studio 中，或者您可以建立自訂專案項目類型的擴充功能。 您也可以建立適用於所有類型的 SharePoint 專案項目延伸模組。  

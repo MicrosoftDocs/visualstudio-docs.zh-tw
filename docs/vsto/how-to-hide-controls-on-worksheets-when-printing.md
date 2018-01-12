@@ -15,17 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], hiding while printing
 - printing [Office development in Visual Studio], hiding controls
 - worksheets, hiding controls when printing
-ms.assetid: a637fe9a-9de1-4162-8ff6-fe28ccd62389
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 17ebd691120d1d5aba2623f8178d95c3fc142dee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 32a967371cb247139285d5db5d3cf88a2a7cc8f9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：列印時隱藏工作表的控制項
   當您列印 Windows Form 控制項的 Microsoft Office Excel 文件時，控制項也會顯示在列印的工作表上。 列印工作表時，您可以隱藏控制項。  

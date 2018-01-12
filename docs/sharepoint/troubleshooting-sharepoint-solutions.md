@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, troubleshooting
-ms.assetid: d3c8a01c-8fac-40d0-bf9e-476901f1490a
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱[偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -99,7 +97,7 @@ ms.lasthandoff: 12/22/2017
  如果欄位的來源 XML 格式錯誤或者不是有效的 XML 檔案，或出現其他問題，則會發生「無法剖析檔案」錯誤。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英文網站定義未部署之後出現在站台建立頁面  
- 您建立並使用在非英文版的部署網站定義之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇**方塊和新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
+ 您建立並使用在非英文版的部署網站定義之後[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](也就是地區設定版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，則**SharePoint 自訂** 索引標籤不會出現在**範本選擇**方塊和新的網站範本不會出現在**新的 SharePoint 網站**頁面。  
   
 ### <a name="error-message"></a>錯誤訊息  
  無。  

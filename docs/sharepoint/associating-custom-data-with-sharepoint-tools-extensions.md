@@ -16,17 +16,15 @@ helpviewer_keywords:
 - SharePoint project items, associating custom data
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
-ms.assetid: cfc87272-85a1-4c36-89e4-2662417d59ea
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 24525e553fabfd05972cbe2ee59fa1260d3b855b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8868300375d34664ba267b473f24d2c6a91ddd55
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>讓自訂資料與 SharePoint 工具擴充功能產生關聯
   您可以加入自訂資料中 SharePoint 工具擴充功能的特定物件。 當您想要從您的擴充功能中的其他程式碼供稍後存取的擴充功能的一個部分中有資料時，這非常有用。 而是實作自訂的方式來儲存及存取資料，您可以關聯物件中的資料，在您的擴充功能，然後稍後從相同的物件擷取資料。  

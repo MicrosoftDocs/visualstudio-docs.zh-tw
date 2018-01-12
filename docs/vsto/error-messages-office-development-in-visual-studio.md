@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: error messages, Office development in Visual Studio
-ms.assetid: 7f74b826-8770-40d2-939b-4a4f20373f5a
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c8edebe902332145351bb85a274b8e17ef4db14c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f10aefc928b0f9a102250e65399fb33b33ad87db
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>錯誤訊息 (Visual Studio 中的 Office 程式開發)
   每個錯誤訊息主題都涵蓋一個訊息，並提供可能產生錯誤的原因和可行的解決方式或替代方式來解決問題。  

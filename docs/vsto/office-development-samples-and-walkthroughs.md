@@ -20,17 +20,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], samples
 - sample applications [Office development in Visual Studio]
 - examples [Office development in Visual Studio]
-ms.assetid: 6c59604d-7e14-41c0-bc51-851355100726
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6e8af98ecf48c01a7c81afad54398afdfdc8456b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 程式開發範例和逐步解說
   本節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建立 Microsoft Office 方案的技術。  

@@ -9,17 +9,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 dev_langs: 
 helpviewer_keywords: 
-ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2158
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>開發的 COM、 VSTO 和 VBA 的增益 Office 中的最佳作法
   如果您正在開發 Office COM 的 VBA VSTO 增益集，請遵循本文中所述的開發最佳作法。   這將有助於確保：

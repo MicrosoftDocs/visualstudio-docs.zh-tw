@@ -15,17 +15,15 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-ms.assetid: 56d5894b-4823-42f4-8c7e-d8739b859c52
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 671618479b1be55fcf08d93b2a398c27348b9878
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4794f1cde57f365ec4ec98251763e8d0e839ae0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：公開程式碼給 Visual C# 專案中的 VBA
   如果您想要與彼此互動的程式碼的兩個類型，您可以公開的 Visual C# 專案給 Visual Basic for Applications (VBA) 程式碼中的程式碼。  
