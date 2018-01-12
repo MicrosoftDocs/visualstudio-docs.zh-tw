@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Bookmark control, events
 - shortcut menus, Word
 - menus, creating in Office applications
-ms.assetid: 86dbf3ff-ba75-42f9-8df6-abfc19b3cf6b
-caps.latest.revision: "57"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>逐步解說：建立書籤的快速鍵功能表
   本逐步解說示範如何建立快顯功能表<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文件層級自訂中的控制項。 當使用者以滑鼠右鍵按一下書籤中的文字時，快顯功能表隨即出現，並提供用來格式化文字的使用者選項。  

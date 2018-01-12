@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>偵錯 HTML 和 CSS UWP 和 Windows 8.1 應用程式中
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 應用程式，並使用 Visual Studio Tools for Apache Cordova 所建立應用程式。  
+ Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援用於 UWP 應用程式， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 應用程式，並使用 Visual Studio Tools for Apache Cordova 所建立應用程式。  
   
  使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  如需範例，示範如何使用選取項目**Select 元素**按鈕，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
 ##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
- 下列平台都支援 Visual Studio Tools for JavaScript、DOM 總管和 [JavaScript 主控台] 視窗：  
+ [DOM 總管] 和 [JavaScript 主控台] 視窗會支援下列平台：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]與使用 JavaScript 和 HTML 的 Windows Phone 應用程式  
+-   UWP 應用程式，[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]與使用 JavaScript 和 HTML 的 Windows Phone 應用程式  
   
 -   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上執行的 Internet Explorer 11  
   
