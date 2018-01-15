@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 在 Visualization and Modeling SDK，您可以定義存放區將變更傳播至儲存區，例如非存放區變數、 檔案、 模型中其他存放區，或其他外部資源的事件處理常式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能。 儲存的事件處理常式會執行觸發的事件發生所在的交易結束之後。 它們也會在復原或取消復原作業中執行。 因此，不同於存放區規則存放區事件是最適合用於更新儲存區以外的值中。 不同於.NET 事件存放區的事件處理常式已登錄到接聽的類別： 您沒有註冊個別的處理常式，每個執行個體。 如需如何選擇不同的方式處理變更的詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
     -   `ElementDeleted`-觸發模型項目之後，關聯性、 圖形或連接器已刪除。 您仍然可以存取屬性值的項目，但有其他項目的任何關聯性。  
   
-2.  加入的部分類別定義*YourDsl***DocData**的不同程式碼檔案中**DslPackage**專案。  
+2.  加入的部分類別定義*YourDsl * * * DocData** 的不同程式碼檔案中**DslPackage**專案。  
   
 3.  事件的程式碼撰寫為一種方法，如下列範例所示。 它可以是`static`，除非您想要存取`DocData`。  
   

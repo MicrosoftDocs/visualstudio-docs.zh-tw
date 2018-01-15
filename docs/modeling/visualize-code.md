@@ -11,17 +11,15 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
-caps.latest.revision: "47"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3272195d1099ea851cbabf32c845ce2d46a697c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 您可以使用 Visual Studio 的視覺化和模型工具，以利了解現有的程式碼，並描述您的應用程式。 這可讓您以視覺化方式了解變更會如何影響程式碼，並幫助您評估因這些變更所導致的工作和風險。 例如：  

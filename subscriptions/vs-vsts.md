@@ -1,40 +1,36 @@
 ---
-title: "Visual Studio Team Services 權益"
+title: "VSTS for Visual Studio 訂閱者"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
+Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c2545855f7e5226a1a679d5d8b558f1964fe72b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶的 Visual Studio Team Services (VSTS) 權益
 
-大部分的 Visual Studio 訂用帳戶都可以存取 Visual Studio Team Services (VSTS)。  提供任何語言的免費 Git 存放庫、Agile 規劃工具和已裝載的組建，最後能夠與您的 IDE 完美互補。  
+當您使用和啟動 Visual Studio 訂用帳戶所用的相同身分識別登入 VSTS 時，我們會自動辨識此身分識別。 這適用於您登入訂閱者入口網站時使用的主要身分識別，以及設定供 Visual Studio 訂用帳戶使用的任何其他身分識別。 VSTS 支援 Microsoft 帳戶 (例如 @outlook.com) 和工作或學校帳戶 (其使用由貴組織管理的 Azure Active Directory)。 您可以在 VSTS 中使用主要及其他身分識別，而且可以加入任意數目的 VSTS 帳戶作為成員。
 
-若要使用 VSTS，您需要帳戶。 您可以使用現有帳戶登入，或建立新帳戶。  建立新帳戶：
-1.  按一下權益磚底部的 [開始使用] 連結。   
+# <a name="vsts-features-included-by-visual-studio-subscription-level"></a>Visual Studio 訂用帳戶層級包含的 VSTS 功能
 
-    ![VSTS 權益磚](_img\vs-vsts\vs-vsts-tile.png)
+這些 VSTS 功能包含在下列訂用帳戶中： 
+- Visual Studio Enterprise：[基本](https://www.visualstudio.com/team-services/compare-features/)、[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)、[套件管理](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Visual Studio Professional：[基本](https://www.visualstudio.com/team-services/compare-features/)
+- MSDN 平台：[基本](https://www.visualstudio.com/team-services/compare-features/)、[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- Visual Studio Test Professional：[基本](https://www.visualstudio.com/team-services/compare-features/)、[Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
-2.  輸入 VSTS 專案網站的名稱。  
-3.  選擇您是要使用 **Git** 還是 **Team Foundation 版本控制 (TFVC)** 來管理專案。  這是您建立的每個 Team 專案的永久選擇，不過，您可以在同一個 Team 專案集合中同時使用 TFVC 和 Git Team 專案。  不確定要使用哪一個嗎？ 
-- Git：Git 是非集中式版本控制系統。 每位開發人員的開發電腦上有整個來源儲存機制的複本。 開發人員可以在其開發電腦上認可每一組變更，以及執行版本控制作業 (例如記錄和比較)，而不需要連接網路。  [深入了解 Git](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- TFVC：Team Foundation 版本控制 (TFVC) 是集中式版本控制系統。 一般而言，小組成員的開發電腦上只有每個檔案的一個版本。 只在伺服器上維護記錄資料。 分支以路徑為基礎，在伺服器上建立。 [深入了解](https://www.visualstudio.com/en-us/docs/tfvc/overview) Team Foundation 版本控制。
- 
-4.  按一下 [變更詳細資料] 以自訂下列項目的選項：專案名稱、工作組織方式 (Agile、Scrum、CMMI)、專案裝載位置，以及與其他人共用工作的方式。  按一下 [繼續]。
+所有付費訂用帳戶都包含這些 VSTS 功能：[雲端和標準](https://www.visualstudio.com/vs/pricing/)二者，以及提供啟動 [BizSpark 方案](https://bizspark.microsoft.com/)和具有 Microsoft 合作夥伴網路[認證](https://partner.microsoft.com/membership/competencies)之合作夥伴的訂用帳戶。 [Microsoft Action Pack](https://partner.microsoft.com/membership/action-pack) 或針對學生和學術機構的 [Imagine 方案](https://imagine.microsoft.com/)就不包含 VSTS，雖然任何人都可以建立免費的 VSTS 帳戶與最多 5 個小組成員。
 
-    ![VSTS 權益專案詳細資料](_img\vs-vsts\vs-vsts-project-details.png)
+# <a name="create-your-vsts-account"></a>建立 VSTS 帳戶
 
-5.  建立您的帳戶需要一些時間，然後您會看到使用所指定名稱之第一個專案的 VSTS 頁面。  您現在已經準備好開始使用 Visual Studio Team Services！
+若要使用 VSTS，您需要建立一個帳戶，或新增為其他人所擁有帳戶的成員。 建立 VSTS 帳戶是免費的，而且您可以建立多個 VSTS 帳戶。 
 
-您也會收到一封電子郵件，確認您已成功建立帳戶。  它也會列出您的帳戶 URL 和登入以及慣用的電子郵件地址。  
-
-![VSTS 權益歡迎電子郵件](_img\vs-vsts\vs-vsts-welcome.png)
+[如何註冊 VSTS](https://docs.microsoft.com/vsts/accounts/index)

@@ -9,20 +9,18 @@ ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
-caps.latest.revision: "51"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
-A*文字範本**主機*提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*需要的檔案或組件可從主機要求的資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
+A*文字範本 * * 主機*提供環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*需要的檔案或組件可從主機要求的資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
  您可以撰寫自訂主機如果您想要使用*文字範本轉換*功能從外部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或如果您想要將這個功能整合到自訂工具。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   

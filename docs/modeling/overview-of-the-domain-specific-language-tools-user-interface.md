@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.editor
 helpviewer_keywords: Domain-Specific Language Tools, user interface
-ms.assetid: 81ae6b35-6819-41d0-953b-6b4ed81f9227
-caps.latest.revision: "25"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 416c7f399ce8ce23eceee4ccf8891dd657d5836a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次開啟中的特定領域語言工具 （DSL 工具） 解決方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，使用者介面會類似下列圖片。  

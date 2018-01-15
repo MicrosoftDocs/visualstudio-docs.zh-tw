@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0106c63a967e8780c56245d461231f7df47f5b35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在您自己的電腦或其他電腦上，您可以安裝的網域特定定義域語言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必須安裝在目標電腦上。  

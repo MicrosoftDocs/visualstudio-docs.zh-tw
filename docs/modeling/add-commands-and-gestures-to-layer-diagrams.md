@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡加入至相依性圖表
 您可以定義內容功能表命令和軌跡處理常式，在 Visual Studio 中的相依性圖表。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。  
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  若要測試此擴充功能，請按下 **CTRL+F5** 或 **F5**。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即啟動。 在本例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
+     啟動 Visual studio 的實驗執行個體。 在本例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
   
 4.  關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱[巡覽和更新分層中的程式碼模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
      [定義軌跡處理常式](#gesture)  
   
-6.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+6.  若要安裝此擴充功能的 Visual Studio，或在另一部電腦上的主要執行個體，找出**.vsix**檔案**bin\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX  
  如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。
@@ -104,9 +102,9 @@ ms.lasthandoff: 12/22/2017
   
      另請參閱[巡覽和更新分層中的程式碼模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-2.  若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本例中，建立或開啟相依性圖表。  
+2.  若要測試此功能，請按下 CTRL+F5 或 F5。 Visual Studio 的實驗執行個體隨即開啟。 在本例中，建立或開啟相依性圖表。  
   
-3.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
+3.  若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體，尋找**.vsix**檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。  
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   

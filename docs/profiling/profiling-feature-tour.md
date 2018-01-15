@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -147,7 +147,8 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 
 ![效能總管工具](../profiling/media/prof-tour-performance-explorer.png "效能總管")
 
-## <a name="which-tool-should-i-use"></a>應該使用哪一種工具？  
+## <a name="tool_support_info"></a>應該使用哪一種工具？  
+
 以下資料表列出 Visual Studio 提供的各種工具和您可以用它們處理的不同專案類型︰
   
 |效能工具|Windows 桌面|Windows 通用/市集|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|  
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|  
 |[效能總管](../profiling/performance-explorer.md)|是|否|是 (對 ASP.NET Core 則否)|  
-|[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET Enterprise|僅限 .NET Enterprise|僅限 .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 和 Visual Studio Enterprise|僅限 .NET 和 Visual Studio Enterprise|僅限 .NET 和 Visual Studio Enterprise|
 |[網路使用量](../profiling/network-usage.md)|否|是|否| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|  
 |[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|  

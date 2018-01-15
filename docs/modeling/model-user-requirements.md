@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達到其目標所扮演的角色，幫助您了解、討論和溝通使用者需求。 需求模型是這些圖表的其中一組，各著重於使用者需求的不同層面。 如需視訊示範，請參閱︰ [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(模型化商務網域)。  
@@ -61,7 +59,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。  
   
- 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態**商務規則*做為與相關概念的類別圖上類別相關聯的註解。 例如:   
+ 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態 * * 商務規則*做為與相關概念的類別圖上類別相關聯的註解。 例如:   
   
  ![註解附加至 Order 類別中的規則。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

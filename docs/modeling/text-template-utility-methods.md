@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, utility methods
-ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
-caps.latest.revision: "50"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: cff244ea8b3ba8e6dd25af06d51bf5b80b51aa06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 有數種方法，當您撰寫程式碼時，就一律可供您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字範本。 這些方法會定義在<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。  

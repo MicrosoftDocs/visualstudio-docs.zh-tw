@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -32,43 +31,86 @@ EditorConfig 檔案中的設定可讓您在程式碼基底中維持一致的編�
 
 因為設定是包含在程式碼基底的檔案中，所以它們會隨著該程式碼基底四處移動。 只要您在符合 EditorConfig 規範的編輯器中開啟程式碼檔案，便會實作文字編輯器設定。 如需 EditorConfig 檔案的詳細資訊，請參閱 [EditorConfig.org](http://editorconfig.org/) 網站。
 
-## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
-
-當您將 .editorconfig 檔案新增到檔案階層中的資料夾時，其設定會套用到該層級 (含) 以下的所有適用檔案。 若要覆寫特定專案或程式碼基底的 EditorConfig 設定，使其使用與最上層 .editorconfig 檔案不同的慣例，只要將 .editorconfig 檔案新增到程式碼基底的存放庫或專案目錄的根目錄即可。 請務必將 ```root=true``` 屬性放入檔案中，讓 Visual Studio 不會在目錄結構中進一步尋找 .editorconfig 檔案。 新的 EditorConfig 檔案設定會套用到相同層級和任何子目錄中的檔案。
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
-
-EditorConfig 檔案是由上往下讀取，而且最接近的 EditorConfig 檔案最後才讀取。 會以讀取順序套用相符 EditorConfig 區段的慣例，因此最接近之檔案的慣例優先。
-
 ## <a name="supported-settings"></a>支援的設定
 
-Visual Studio 中的編輯器支援一組核心 [EditorConfig 屬性](http://editorconfig.org/#supported-properties)中的下列項目：
+Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.org/#supported-properties)的核心集：
 
 - indent_style
 - indent_size
 - tab_width
 - end\_of_line
 - 字元集
+- trim\_trailing_whitespace
+- insert\_final_newline
 - 根
 
 除了 XML 以外的所有 Visual Studio 支援語言都支援 EditorConfig 編輯器設定。 此外，EditorConfig 支援 C# 及 Visual Basic 的[程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)及[命名](../ide/editorconfig-naming-conventions.md)慣例。
-
-## <a name="editing-editorconfig-files"></a>編輯 EditorConfig 檔案
-
-Visual Studio 提供一些 IntelliSense 以供編輯 .editorconfig 檔案。 如果您編輯許多 .editorconfig 檔案，可能會發現 [EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) (EditorConfig 語言服務) 延伸模組很有幫助。
-
-在編輯您的 EditorConfig 檔案後，您必須重新載入程式碼檔，新的設定才會生效。
 
 ## <a name="adding-and-removing-editorconfig-files"></a>新增及移除 EditorConfig 檔案
 
 將 EditorConfig 檔案新增至您的專案或程式碼基底，並不會將現有的樣式轉換為新的樣式。 例如，如果您在檔案中有使用定位字元設定格式的縮排，而且您新增了以空格縮排的 EditorConfig 檔案，縮排字元就不會轉換為空格。 但是，新的程式碼會依照 EditorConfig 檔案設定格式。
 
 如果您從專案或程式碼基底移除了 EditorConfig 檔案，就必須關閉並重新開啟任何開啟的程式碼檔案，以還原為新程式碼的全域編輯器設定。
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>將 EditorConfig 檔案新增至專案或解決方案
+
+1. 在 Visual Studio 中開啟專案或解決方案。 選取專案或解決方案節點，視您的 .editorconfig 設定應套用至解決方案中的所有專案或僅只一個專案而定。 您也可以選取專案或解決方案中的資料夾，將 .editorconfig 檔案新增到此資料夾。
+
+1. 從功能表列選擇 [專案] > [新增項目...]，或按 **Ctrl**+**Shift**+**A**。
+
+   [新增項目] 對話方塊隨即開啟。
+
+1. 在左側的類別中，選擇 [一般]，然後選擇 [文字檔] 範本。 在 [名稱] 文字方塊中輸入 `.editorconfig`，然後選擇 [新增]。
+
+   .editorconfig 檔案隨即出現在方案總管中，並在編輯器中開啟。
+
+   ![方案總管中的 .editorconfig 檔案](media/editorconfig-in-solution-explorer.png)
+
+1. 依需要編輯檔案，例如：
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+或者，您也可以安裝 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)。 安裝此延伸模組之後，只要在解決方案節點、專案節點，或方案總管中的任何資料夾上，按一下滑鼠右鍵或從操作功能表選擇 [新增] > [.editorconfig 檔案] 即可。
+
+![新增具有延伸模組的 .editorconfig 檔案](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
+
+當您將 .editorconfig 檔案新增到檔案階層中的資料夾時，其設定會套用到該層級 (含) 以下的所有適用檔案。 您也可以覆寫特定專案、程式碼基底，或程式碼基底組件的 EditorConfig 設定，這樣它就會使用和其他程式碼基底組件不同的慣例。 當您納入來自其他地方的程式碼，但不想變更其慣例時，這非常有用。
+
+若要覆寫部分或全部的 EditorConfig 設定，請將 .editorconfig 檔案新增至您想要套用這些覆寫設定的檔案階層層級。 新的 EditorConfig 檔案設定會套用到相同層級和任何子目錄中的檔案。
+
+![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
+
+如果只要覆寫部分而不是全部設定，只需在 .editorconfig 檔案中指定這些設定即可。 只有明確列在較低層級檔案中的屬性才會被覆寫。 較高層級 .editorconfig 檔案中的其他設定仍繼續套用。 如果想要確保_不_套用_任何_較高層級 .editorconfig 檔案的設定到此程式碼基底組件，請在較低層級的 .editorconfig 檔案中新增 ```root=true``` 屬性：
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+EditorConfig 檔案是由上往下讀取，而且最接近的 EditorConfig 檔案最後才讀取。 會以讀取順序套用相符 EditorConfig 區段的慣例，因此最接近之檔案的慣例優先。
+
+## <a name="editing-editorconfig-files"></a>編輯 EditorConfig 檔案
+
+Visual Studio 提供一些 IntelliSense 以供編輯 .editorconfig 檔案。
+
+![.editorconfig 檔案中的 IntelliSense](media/editorconfig-intellisense-no-extension.png)
+
+在編輯您的 EditorConfig 檔案後，您必須重新載入程式碼檔，新的設定才會生效。
+
+如果您編輯許多 .editorconfig 檔案，可能會發現 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) 很有幫助。 這項延伸模組有部分功能包括語法反白顯示、 改善的 IntelliSense、驗證和程式碼格式化。
+
+![具有 EditorConfig 語言服務延伸模組的 IntelliSense](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>範例
 
@@ -82,7 +124,7 @@ Visual Studio 提供一些 IntelliSense 以供編輯 .editorconfig 檔案。 如
 
 我們會將稱為 .editorconfig 的新檔案新增到專案中，其中包含下列內容。 `[*.cs]` 設定表示這項變更只會套用到此專案中的 C# 程式碼檔案。
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ indent_style = tab
 
 您可以透過開啟命令提示字元，並從包含專案的磁碟根目錄中執行下列命令，在父目錄中尋找任何 .editorconfig 檔案：
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -56,7 +55,7 @@ IntelliTest 會尋找與所測試程式相關的輸入，這表示您可以使�
 
 以下範例會在名為 **value** 的參數上建立兩個條件約束，以便 IntelliTest 產生必要的字串。
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -84,10 +83,9 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
-移到[這裡](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0)來了解所產生測試的儲存位置。
-產生的測試程式碼應該包含如下測試：
+請參閱[使用 IntelliTest 產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)來了解所產生測試的儲存位置。 產生的測試程式碼應該包含如下測試：
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -99,8 +97,7 @@ public void HelloWorldThrowsException167()
 
 就是這麼簡單！
 
-<a name="limitations"></a>
-## <a name="limitations"></a>限制
+## <a name="limitations"></a> 限制
 
 本節描述 IntelliTest 的限制：
 
@@ -165,7 +162,7 @@ IntelliTest 會使用自動[條件約束規劃求解](input-generation.md#constr
 ## <a name="further-reading"></a>進一步閱讀
 
 * MSDN 上的[簡介部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/)。
-* [使用 IntelliTest 為程式碼產生單元測試](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [使用 IntelliTest 為程式碼產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 

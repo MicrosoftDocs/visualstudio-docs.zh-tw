@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ba5ff03f-d2e3-4188-a706-3eb68ffb5f9e
-caps.latest.revision: "7"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbb91d73c0e73a7adb5839997395fe60d1a7c35a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。  

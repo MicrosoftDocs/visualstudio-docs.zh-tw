@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
-若要在任何電腦上的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用自訂指示詞處理器，您必須透過本主題中所述的其中一個方法進行註冊。  
+若要使用 Visual Studio 中的自訂指示詞處理器，在任何電腦上，您必須在本主題中所述的方法之一來註冊。  
   
  可供選擇的方法為：  
   
@@ -30,7 +28,7 @@ ms.lasthandoff: 12/22/2017
   
 -   設定登錄機碼： 使用這個方法時，您會加入指示詞處理器的登錄項目。  
   
- 只有當您想要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中轉換文字範本時，才需要使用上述其中一個方法。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
+ 您必須使用其中一種方法，只有當您想要轉換文字範本在 Visual Studio 或[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器  
  您可以加入自訂的指示詞處理器給[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>若要在 VSIX 專案中開發自訂指示詞處理器  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中建立 VSIX 專案。  
+1.  Visual Studio 中建立 VSIX 專案。  
   
     -   在**新專案**對話方塊方塊中，展開  **Visual Basic**或**Visual C#**，然後展開**擴充性**。 按一下**VSIX 專案**。  
   
@@ -104,19 +102,19 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-install-the-custom-directive-processor"></a>若要安裝自訂指示詞處理器  
   
-1.  在 [Windows 檔案總管 (Windows 8 中的檔案總管)] 中，開啟組建目錄 (通常是 bin\Debug 或 bin\Release)。  
+1.  在 Windows 檔案總管 中開啟組建目錄 （通常是 bin\Debug 或 bin\Release）。  
   
 2.  如果您想要在另一台電腦上安裝指示詞處理器，請將 .vsix 檔複製到該電腦。  
   
-3.  按兩下 .vsix 檔。 [[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充功能安裝程式] 隨即出現。  
+3.  按兩下 .vsix 檔。 Visual Studio 擴充功能安裝程式會出現。  
   
-4.  重新啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 您現在可以執行包含參考自訂指示詞處理器之指示詞的文字範本。 每個指示詞的格式如下：  
+4.  重新啟動 Visual Studio。 您現在可以執行包含參考自訂指示詞處理器之指示詞的文字範本。 每個指示詞的格式如下：  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>若要解除安裝或暫時停用自訂指示詞處理器  
   
-1.  在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**工具**功能表上，按一下 **擴充管理員**。  
+1.  在 Visual Studio**工具**功能表上，按一下 **擴充管理員**。  
   
 2.  選取包含指示詞處理器的 VSIX，然後按一下**解除安裝**或**停用**。  
   
@@ -169,7 +167,7 @@ ms.lasthandoff: 12/22/2017
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     如果您想要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗版本中安裝指示詞處理器，請在 "11.0" 後面插入 "Exp"。  
+     如果您想要在 Visual Studio 的實驗版本中安裝指示詞處理器，插入"Exp 表示"在"11.0"之後。  
   
 3.  加入與指示詞處理器相同名稱的登錄機碼。  
   

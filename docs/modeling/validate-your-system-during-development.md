@@ -8,17 +8,15 @@ ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams
-ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
-caps.latest.revision: "37"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e05574ba51a690621d57b6f32017d1eb359675eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f843817e41485b1cc487afc0827c473431f658b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。  

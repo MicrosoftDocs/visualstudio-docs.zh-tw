@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords: Domain-Specific Language, compartment shape
-ms.assetid: 9a9e112d-210d-413b-a44f-0e976a4a78bc
-caps.latest.revision: "24"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e1ff5e6233d04f5dff35e96660dacf319c014a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecec7f30df607400eaf333a21ae2746a30f1a41d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-compartment-shapes"></a>區間圖案的屬性
 區間圖案是其中一種您可以使用以網域特定語言顯示網域類別的圖形。 您可以展開和摺疊區間。  

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -48,7 +48,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 ![[Python 環境] 視窗中的互動式視窗連結](media/interactive-window-opening.png)
 
-第二種方式：在 [檢視] > [其他視窗] 功能表底部附近，有您預設環境的 **Python 互動式視窗** 命令，以及要切換至環境視窗的命令：
+第二種方式：在 [檢視] > [其他視窗] 功能表底部附近，有您預設環境的 **Python 互動式視窗**命令，以及切換至環境視窗的命令：
 
 ![[檢視] > [其他視窗] 中的互動式視窗功能表項目](media/interactive-window-menu.png)
 

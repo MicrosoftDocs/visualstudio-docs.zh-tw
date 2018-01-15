@@ -10,17 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
-ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: "77"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5452adbe6c6aecec3c043b8047a6d8202dfaf6ee
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大的模型為基礎的開發工具，可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  

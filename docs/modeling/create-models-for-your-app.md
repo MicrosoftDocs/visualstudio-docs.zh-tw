@@ -21,17 +21,15 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
-caps.latest.revision: "58"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3f4a6e3ba2eafa281fda8557f48c0886aff89105
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。

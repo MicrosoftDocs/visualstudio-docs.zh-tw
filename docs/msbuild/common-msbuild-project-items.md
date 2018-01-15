@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
-在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些檔案會在 microsoft.build.commontypes.xsd 中定義。  
+在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 Microsoft.Build.CommonTypes.xsd 檔案中定義。  
   
 ## <a name="common-items"></a>共同項目  
  下列是所有共同專案項目的清單。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="reference"></a>參考資料  
  代表專案中的組件 (受管理) 參考。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |提示路徑|選擇性字串。 組件的相對或絕對路徑。|  
 |名稱|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|  
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="comreference"></a>COM 參考  
  代表專案中的 COM (未受管理) 元件參考。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |名稱|選擇性字串。 元件的顯示名稱。|  
 |Guid|選擇性字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
@@ -59,14 +59,14 @@ ms.lasthandoff: 12/22/2017
 ### <a name="comfilereference"></a>COM 檔案參考  
  代表饋送至 ResolvedComreference 目標的類型程式庫清單。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|  
   
 ### <a name="nativereference"></a>原生參考  
  代表原生的資訊清單檔案或是這類檔案的參考。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |名稱|必要的字串。 資訊清單檔案的基底名稱。|  
 |提示路徑|必要的字串。 資訊清單檔案的相對路徑。|  
@@ -74,16 +74,16 @@ ms.lasthandoff: 12/22/2017
 ### <a name="projectreference"></a>專案參考  
  代表另一個專案的參考。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |名稱|選擇性字串。 參考的顯示名稱。|  
-|Project|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
+|專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
 |Package|選擇性字串。 所參考的專案檔路徑。|  
   
 ### <a name="compile"></a>編譯  
  代表編譯器的原始程式檔。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |自動產生|選擇性布林值。 指出是否已透過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 為專案產生檔案。|  
@@ -94,7 +94,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="embeddedresource"></a>內嵌資源  
  代表要內嵌於所產生組件中的資源。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  
@@ -105,10 +105,10 @@ ms.lasthandoff: 12/22/2017
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
 |邏輯名稱|必要的字串。 內嵌資源的邏輯名稱。|  
   
-### <a name="content"></a>Content  
+### <a name="content"></a>內容  
  代表不會編譯到專案中，但可能內嵌或一起發行的檔案。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="none"></a>無  
  代表在建置流程中應該沒有任何角色的檔案。  
   
-|項目名稱|描述|  
+|項目中繼資料名稱|描述|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  

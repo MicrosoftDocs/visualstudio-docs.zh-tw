@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的 Python 選項 | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -40,6 +40,8 @@ ms.lasthandoff: 12/22/2017
 - [診斷選項](#diagnostics-options)
 - [互動式視窗選項](#interactive-windows-options)
 - [進階 Python 編輯器選項](#advanced-python-editor-options)
+
+請注意，**實驗**群組包含的功能選項仍在開發中，此處不予記錄。 它們通常見於 [Microsoft 部落格 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)的討論文章中。
 
 ## <a name="general-options"></a>一般選項
 
@@ -69,7 +71,6 @@ ms.lasthandoff: 12/22/2017
 | 啟用 Python 標準程式庫的偵錯 | Off | 可在偵錯時逐步執行標準程式庫原始程式碼，但會增加啟動偵錯工具所花費的時間。|
 
 ![Python 選項對話方塊、偵錯索引標籤](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>診斷選項
 

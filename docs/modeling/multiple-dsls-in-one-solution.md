@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3c024fc6be841f5329f133ece35ed0ef7517eb3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 您可以將數個 DSL 封裝成單一方案的一部分，以便能夠一起安裝。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  合併 DSL 的 VSIX 資訊清單：  
   
-    1.  開啟*YourVsixProject***\source.extension.manifest**。  
+    1.  開啟 * YourVsixProject ***\source.extension.manifest**。  
   
     2.  針對每個 DSL 選擇**將內容加入**並加入：  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  建置方案。  
   
- 產生的 VSIX 會同時安裝這兩個 DSL。 您可以測試它們，使用 F5，或部署*YourVsixProject***\bin\Debug\\\*.vsix**。  
+ 產生的 VSIX 會同時安裝這兩個 DSL。 您可以測試它們，使用 F5，或部署 * YourVsixProject ***\bin\Debug\\\*.vsix**。  
   
 ## <a name="see-also"></a>請參閱  
  [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

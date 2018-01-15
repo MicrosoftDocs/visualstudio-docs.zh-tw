@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords: Domain-Specific Language, serialization
-ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: "17"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 當使用者儲存工作執行個體，或*模型*中的特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或更新的 XML 檔案。 檔案追縱可以重新建立存放區中的模型。  
@@ -139,7 +137,7 @@ ms.lasthandoff: 12/22/2017
   
 -   設定**是 Moniker 索引鍵**現有網域類別的網域屬性。 屬性的型別必須是`string`。  
   
-    1.  在 DSL 總管 中，依序展開**Xml 序列化 Behavior\Class 資料\\***\<網域類別 >***\Element 資料**，然後選取網域屬性。  
+    1.  在 DSL 總管] 中，依序展開**Xml 序列化 Behavior\Class 資料\\***\<網域類別 >***\Element 資料**，然後選取 [定義域屬性。  
   
     2.  在 [屬性] 視窗中，設定**是 Moniker 索引鍵**至`true`。  
   

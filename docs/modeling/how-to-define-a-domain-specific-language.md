@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義網域指定的語言 (DSL)，請從範本建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
 -   根類別會出現在左上角的 DSL 定義圖表中，在**類別和關聯性**。 將它重新命名為 DSL 以外的名稱。 例如，名為 DSL **MusicLibrary**可能具有名為根類別**音樂**。  
   
--   圖表類別在右下角 DSL 定義圖表中，會出現在**圖表項目**資料行。 您可能必須捲動到右側才能看到它。 它通常會命名為*YourDsl***圖表**。  
+-   圖表類別在右下角 DSL 定義圖表中，會出現在**圖表項目**資料行。 您可能必須捲動到右側才能看到它。 它通常會命名為 * YourDsl ***圖表**。  
   
 -   如果您使用**工作流程**範本，而且您想要使用泳道建立圖表、 保留和重新命名動作項目領域類別和 ActorSwimlane 圖形。  
   
@@ -223,11 +221,11 @@ ms.lasthandoff: 12/22/2017
   
 2.  **建置並執行 DSL。** 按 F5 或 CTRL + F5 執行的新執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]實驗模式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體中，開啟或建立具有您 DSL 之副檔名的檔案。  
   
-3.  **開啟 [總管] 中。** 在圖表的側邊是 「 語言總管 視窗，通常名為*YourLanguage*總管。 如果您沒有看到這個視窗，可能是在 [方案總管] 下方的索引標籤上。 如果您上找不到它，**檢視**功能表上，指向**其他視窗**，然後按一下  *YourLanguage***總管**。  
+3.  **開啟 [總管] 中。** 在圖表的側邊是 「 語言總管 視窗，通常名為*YourLanguage*總管。 如果您沒有看到這個視窗，可能是在 [方案總管] 下方的索引標籤上。 如果您上找不到它，**檢視**功能表上，指向**其他視窗**，然後按一下 * YourLanguage ***總管**。  
   
      您的總管隨即呈現模型的樹狀檢視。  
   
-4.  **建立新的項目。** 以滑鼠右鍵按一下根節點的上方，然後按一下**加入新***YourClass*。  
+4.  **建立新的項目。** 以滑鼠右鍵按一下根節點的上方，然後按一下 **加入新 * * * YourClass*。  
   
      您的語言總管中隨即出現類別的新執行個體。  
   
@@ -623,7 +621,7 @@ ms.lasthandoff: 12/22/2017
 |在 [DSL Explorer] 中，我無法加入集合。 例如，當我以滑鼠右鍵按一下 [工具] 時，功能表中沒有 [加入工具] 命令。<br /><br /> 在我的 DSL 總管中，我無法將項目加入清單。|以滑鼠右鍵按一下您正在嘗試之節點上方的項目。 當您想要加入清單時，[加入] 命令不在清單節點中，而是在其擁有者中。|  
 |我建立了網域類別，但是無法在語言總管中建立執行個體。|每個網域類別 (根類別除外) 都必須是一個內嵌關聯性的目標。|  
 |在我的 DSL 總管中，項目只會與其類型名稱一起顯示。|DSL 定義中，選取 網域屬性的類別，然後在 屬性 視窗中，將**是項目名稱**為 true。|  
-|My DSL 一律在 XML 編輯器中開啟。|這種情況的發生原因是在讀取檔案時所發生的錯誤。 然而，即使在修正該錯誤之後，您都必須明確地將編輯器重設為 DSL 設計工具。<br /><br /> 以滑鼠右鍵按一下專案項目中，按一下**開啟**選取*YourLanguage***設計工具 （預設值）**。|  
+|My DSL 一律在 XML 編輯器中開啟。|這種情況的發生原因是在讀取檔案時所發生的錯誤。 然而，即使在修正該錯誤之後，您都必須明確地將編輯器重設為 DSL 設計工具。<br /><br /> 以滑鼠右鍵按一下專案項目中，按一下**開啟**選取 * YourLanguage ***設計工具 （預設值）**。|  
 |變更組件名稱之後未出現 DSL 的工具箱。|檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[如何： 變更命名空間的特定領域語言](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
 |DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。|重設實驗執行個體，然後重建方案。<br /><br /> 1.在 Windows 啟動 功能表底下**所有程式**，依序展開[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然後**工具**，然後按一下**重設 Microsoft Visual Studio 實驗執行個體**。<br />2.在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**建置**功能表上，按一下 **重建方案**。|  
   

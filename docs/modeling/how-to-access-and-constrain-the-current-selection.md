@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, accessing the current selection
-ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
 當您為特定領域語言撰寫的命令或軌跡處理常式時，您可以判斷哪些使用者以滑鼠右鍵按一下的項目。 您也可以防止某些圖形或欄位被選取。 例如，您可以排列，當使用者按一下圖示裝飾項目，包含該圖形會改為選取。 限制以這種方式選取範圍減少，您必須撰寫處理常式的數目。 它也讓更方便使用者，使用者可以按一下任何位置圖形中而不需要避免裝飾項目。  

@@ -13,17 +13,15 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
-caps.latest.revision: "81"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 925c61e2fa8ebf8c53e8170c7563031b4bbcb18b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 155477b643224a98194babc8f99c416188d1f867
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 指示詞會提供指令給文字範本轉換引擎。  

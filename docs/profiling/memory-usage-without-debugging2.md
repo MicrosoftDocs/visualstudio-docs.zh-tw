@@ -12,19 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="memory-usage-without-the-debugger"></a>記憶體使用量 (不使用偵錯工具)
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
   
 -   在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  

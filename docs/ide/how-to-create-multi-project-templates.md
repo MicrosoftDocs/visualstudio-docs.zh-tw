@@ -1,184 +1,179 @@
 ---
-title: "如何：建立多專案範本 | Microsoft Docs"
+title: "建立 Visual Studio 的多專案範本 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual Studio templates, creating multi-project templates
-- project templates, creating multi-project templates
+- Visual Studio templates, creating multi-project
+- project templates, multi-project
 - multi-project templates
-ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac7701e3e4dc11bc5634436c3e6f831f6711e514
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 86952d3b742abf3b73b22e17d695717ca8dac9bd
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
-多專案範本是做為兩個以上專案的容器使用。 從 [新增專案] 對話方塊建立，根據多專案範本的專案時，範本中的每個專案都會新增至解決方案。  
+# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
 
- 多專案範本是兩個以上之專案範本與類型 `ProjectGroup` 的根範本。
+多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本從 [新增專案] 對話方塊建立專案時，範本中的每個專案都會新增至解決方案。
 
- 多專案範本的行為也與一般範本不同。 多專案範本具有下列獨特的特性：  
-  
--   多專案範本中的個別專案不能由 [新增專案] 對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
-  
--   多專案範本可以包含以不同語言撰寫的專案，但整個範本本身只能使用 `ProjectType` 項目放在一個分類。  
-  
-### <a name="to-create-a-multi-project-template"></a>建立多專案範本  
-  
-1.  建立要包含在多專案範本中的專案：
-    1.  建立專案。  
-  
-    > [!NOTE]
-    >  在命名將會是範本來源的專案時，請您只使用有效的識別項字元。 從名稱含有無效字元之專案所匯出的範本，可能會導致未來根據該範本的專案發生編譯錯誤。 如需有效識別項字元的詳細資訊，請參閱[宣告項目名稱](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names)。  
-  
-    2.  編輯專案，直到它準備好匯出成範本。  
-  
-    3.  適當地編輯程式碼檔案，指出要執行參數取代的地方。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
-  
-    4.  按一下 [專案] 功能表上的 [匯出範本]。 [匯出範本精靈] 隨即開啟。  
-  
-    5.  按一下 [專案範本]。  
-  
-    6.  如果您目前的方案中有多個專案，請選取您想要匯出至範本的專案。  
-  
-    7.  按 [ **下一步**]。  
-  
-    8.  選取範本的圖示和預覽影像。 這些會出現在 [新增專案] 對話方塊。  
-  
-    9. 輸入範本名稱及描述。  
-  
-    10. 按一下 [ **完成**]。 您的專案會匯出成 .zip 檔案並放在指定的輸出位置，且如果選取，則會匯入到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
-  
-2.  將 .vstemplate 檔案從產生的 ZIP 檔案解壓縮到與用來匯出範本之專案檔相同的目錄。
+多專案範本包含兩個或更多的專案範本，以及一個 `ProjectGroup` 類型的根範本。
 
-3.  建立根 .vstemplate 檔案來包含多專案範本的中繼資料。 如需詳細資訊，請參閱下節的第一個範例。  
-  
-4.  選取要包含在範本中的檔案和資料夾，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案和資料夾即會壓縮成 .zip 檔案。  
-  
-> [NOTE!] 多專案範本必須包含下列項目，且壓縮成 .zip 檔案：  
->   
-> -   整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
->   
-> -   包含完整專案範本所需之檔案的一或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。  
->   
-> 例如，有兩個專案的多專案範本 .zip 檔，可能有下列檔案和目錄：  
->   
->  MultiProjectTemplate.vstemplate  
->   
->  \Project1\Project1.vstemplate  
->   
->  \Project1\Project1.vbproj  
->   
->  \Project1\Class.vb  
->   
->  \Project2\Project2.vstemplate  
->   
->  \Project2\Project2.vbproj  
->   
->  \Project2\Class.vb  
->   
->  多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：  
->   
-> -   `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如：  
->   
->     ```  
->     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
->         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
->     ```  
->   
-> -   `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如:   
->   
->     ```  
->     <TemplateContent>  
->         <ProjectCollection>  
->             <ProjectTemplateLink>  
->                 Project1\Project1.vstemplate  
->             </ProjectTemplateLink>  
->             <ProjectTemplateLink>  
->                 Project2\Project2.vstemplate  
->             </ProjectTemplateLink>  
->         </ProjectCollection>  
->     </TemplateContent>  
->     ```  
->   
-  
-5.  將 .zip 範本檔放在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本目錄中。 此目錄預設為 \My Documents\Visual Studio <版本>\Templates\ProjectTemplates\\。  
-  
-## <a name="example"></a>範例  
- 這個範例將示範基本的多專案根 .vstemplate 檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectName` 項目的 `ProjectTemplateLink` 屬性會設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的名稱，以指派此專案。 如果 `ProjectName` 屬性不存在，則 .vstemplate 檔案的名稱會做為專案名稱。  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink ProjectName="My Windows Application">  
-                WindowsApp\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink ProjectName="My Class Library">  
-                ClassLib\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="example"></a>範例  
- 這個範例會使用 `SolutionFolder` 項目將專案分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <SolutionFolder Name="Math Classes">  
-                <ProjectTemplateLink ProjectName="MathClassLib1">  
-                    MathClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="MathClassLib2">  
-                    MathClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-            <SolutionFolder Name="Graphics Classes">  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib1">  
-                    GraphicsClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib2">  
-                    GraphicsClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
- [ProjectTemplateLink 元素 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+多專案範本的行為與單一專案範本不同。 它們具有下列獨特的特性：
+
+- 多專案範本中的個別專案不能在 [新增專案] 對話方塊中指派名稱。 在 .vstemplate 檔案中請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性，指定每個專案的名稱。
+
+- 多專案範本可以包含不同語言的專案，但整個範本本身只能放在一個類別中。 在 .vstemplate 檔案的 `ProjectType` 項目中指定範本類別。
+
+多專案範本必須包含下列項目，且壓縮成 .zip 檔案：
+
+- 整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。
+
+- 包含完整專案範本所需之檔案的兩個或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。
+
+例如，有兩個專案的多專案範本 .zip 檔，可能有下列檔案和目錄：
+
+- MultiProjectTemplate.vstemplate
+- \Project1\Project1.vstemplate
+- \Project1\Project1.vbproj
+- \Project1\Class.vb
+- \Project2\Project2.vstemplate
+- \Project2\Project2.vbproj
+- \Project2\Class.vb
+
+多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：
+
+- `VSTemplate` 項目的 `Type` 屬性有值 `ProjectGroup`，而不是 `Project`。 例如: 
+
+    ```xml
+    <VSTemplate Version="2.0.0" Type="ProjectGroup"
+        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    ```
+
+- `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如: 
+
+    ```xml
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink>
+                Project1\Project1.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                Project2\Project2.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+    ```
+
+## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>從現有的解決方案中建立多專案範本
+
+1. 建立解決方案並新增兩個或多個專案。
+
+1. 自訂專案，直到它們可以匯出成範本為止。
+
+1. 選擇 [專案] 功能表上的 [匯出範本]。
+
+   [匯出範本精靈] 隨即開啟。
+
+1. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取您想要匯出至範本的專案，然後選擇 [下一步]。
+
+1. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]。
+
+   專案會匯出為 .zip 檔案，放在指定的輸出位置。
+
+   > [!NOTE]
+   > 每個專案必須分別匯出成範本，所以請在解決方案中為每個專案重複上述的這些步驟。
+
+1. 建立範本目錄，每個專案都有子目錄。
+
+1. 將每個專案的 .zip 檔案內容解壓縮至您剛才建立的對應子目錄。
+
+1. 在基底目錄中，建立檔案副檔名為 **.vstemplate** 的 XML 檔案。 此檔案包含多專案範本的中繼資料。 請參閱接下來的檔案結構範例。 請務必指定每個專案的 .vstemplate 檔案相對路徑。
+
+1. 選取基底目錄，按一下滑鼠右鍵或從操作功能表中選擇 [Send to] (傳送至) > [壓縮的 (zipped) 資料夾]。
+
+   檔案和資料夾即會壓縮成 .zip 檔案。
+
+1. 將 .zip 檔案複製到使用者專案範本目錄中。 此目錄預設為 %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates。
+
+1. 在 Visual Studio 中開啟 [新增專案] 對話方塊，確認範本是否出現。
+
+## <a name="two-project-example"></a>雙專案範例
+
+這個範例將示範基本的多專案根 .vstemplate 檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性會指定要提供給專案的名稱。
+
+> [!TIP]
+> 如未指定 `ProjectName` 屬性，則使用 .vstemplate 檔案的名稱作為專案名稱。
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="My Windows Application">
+                WindowsApp\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="My Class Library">
+                ClassLib\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="example-with-solution-folders"></a>具有解決方案資料夾的範例
+
+這個範例會使用 `SolutionFolder` 項目將專案分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Math Classes">
+                <ProjectTemplateLink ProjectName="MathClassLib1">
+                    MathClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="MathClassLib2">
+                    MathClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+            <SolutionFolder Name="Graphics Classes">
+                <ProjectTemplateLink ProjectName="GraphicsClassLib1">
+                    GraphicsClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="GraphicsClassLib2">
+                    GraphicsClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>另請參閱
+
+[建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
+[如何：建立專案範本](../ide/how-to-create-project-templates.md)  
+[Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)  
+[SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
+[ProjectTemplateLink 項目 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, diagram
-ms.assetid: 259836b0-783c-46a0-b7c7-dc4b2f7b4a81
-caps.latest.revision: "31"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1742e157b987cf7ce25eb60dfa44ce6dad64d84d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>自訂圖表上的展示
 圖表是網域指定的語言設計工具的主要簡報區域。 使用者通常會使用圖表來建構其模型。 您可以如下列主題中所述來自訂圖表。  

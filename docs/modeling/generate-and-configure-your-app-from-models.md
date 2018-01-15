@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
-caps.latest.revision: "7"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d6d64a094923e3f7f1f4bb5778404ffcc1587e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。

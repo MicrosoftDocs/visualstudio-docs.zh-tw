@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 本主題說明在定義和使用 Visual studio 使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。  
@@ -143,7 +141,7 @@ ms.lasthandoff: 12/22/2017
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>模型的內容  
- DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型**元素*和*連結*的項目之間。 DSL 定義指定的模型項目類型，可以存在於模型中的連結。 例如，在 DSL 基本語言範本所建立的沒有一種類型的模型項目和一種連結類型。  
+ DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型 * * 元素*和*連結*的項目之間。 DSL 定義指定的模型項目類型，可以存在於模型中的連結。 例如，在 DSL 基本語言範本所建立的沒有一種類型的模型項目和一種連結類型。  
   
  DSL 定義可以指定在模型圖表上顯示的方式。 您可以選擇各種不同的圖形和連接器的樣式。 您可以指定某些圖形出現在其他圖形。  
   

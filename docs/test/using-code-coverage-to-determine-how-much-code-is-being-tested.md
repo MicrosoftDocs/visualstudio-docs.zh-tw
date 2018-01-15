@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>在程式碼涵蓋範圍結果中排除項目  
  如果程式碼是從文字範本產生的，您可能會想要將程式碼中的特定項目從排除涵蓋範圍分數中排除。 將 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 屬性加入至下列任一程式碼項目：類別、結構、方法、屬性、屬性 setter 或 getter、事件。 請注意，排除類別並不會排除其衍生類別。  
   
- 例如:  
+ 例如:   
   
 ```csharp  
   
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  組建執行後會將程式碼涵蓋範圍結果附加至測試回合，而且結果會出現在組建摘要。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>在命令列中分析程式碼涵蓋範圍  
- 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](/devops-test-docs/test/vstest-console-exe-command-line-options)。  
+
+若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是 vstest.console.exe 公用程式的選項。
+
+1.  啟動 Visual Studio Developer 命令提示字元：
   
-1.  啟動 Visual Studio Developer 命令提示字元：  
+    在 Windows 的 [開始] 功能表上，選擇 **Visual Studio 2017** > **VS 2017 開發人員命令提示字元**。  
   
-     在 Windows 的 [開始] 功能表上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools]、[開發人員命令提示字元]。  
+2.  執行下列命令：
   
-2.  執行：  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>疑難排解  
  如果您沒有看見程式碼涵蓋範圍結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。  

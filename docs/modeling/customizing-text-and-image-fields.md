@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a7259fc0-5afa-4356-b27e-5641e01628a9
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9699c36e83a984885853725a599570c19b528f7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6bd4686565b24306d9c9565a5c4eddc65914f85
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義的文字裝飾項目時，則為代表 TextField。 有關 TextFields 和其他 ShapeFields 初始化的詳細資訊，請檢查 Dsl\GeneratedCode\Shapes.cs DSL 方案中。  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, deployment
-ms.assetid: 160a9022-ab2f-47db-9d04-4c63fef0ee7d
-caps.latest.revision: "27"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5f830880b936fbc70d0bdc0e103c4b128570b74a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6f816f7881d98ba285b84996fa5bf11c72d78d3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>部署網域指定的語言方案
 在您自己的電腦或其他電腦上，您可以安裝的網域特定定義域語言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必須安裝在目標電腦上。  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: models, versions of Visual Studio
-ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
-caps.latest.revision: "20"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f42cccacee8b46b5bc3d637ad8f7153d704f8441
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1483fe7d62baf5d81865897308fb9d25947213c3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 在不支援模型建立的 Visual Studio 版本中開啟模型時，會以唯讀模式開啟模型。 在此模式中，您可以變更圖表的版面配置，但是無法變更模型。  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 -   兩個圖表的圖表，例如，想要讀取的檔案**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
-    >  如需相依性圖表，您也應該擁有名為的檔案*MyDiagram***。 layerdiagram.suppressions**。  
+    >  如需相依性圖表，您也應該擁有名為的檔案 * MyDiagram ***。 layerdiagram.suppressions**。  
   
 -   模型專案檔案 (**MyModel.modelproj**)  
   

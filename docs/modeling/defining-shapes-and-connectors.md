@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e29b7c5a3aa9b19147020e5a954f7379e161ce55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1bb0fe255af16e517d31f159de1e4581f8ec9589
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。  

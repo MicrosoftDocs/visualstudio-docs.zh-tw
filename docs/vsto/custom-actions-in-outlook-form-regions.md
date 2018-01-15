@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-ms.assetid: 583fd5f0-aafa-4858-9c54-38a9fdf3bede
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作顯示按鈕，可讓使用者回應的 Microsoft Office Outlook 項目。 例如，若要回應的郵件項目，使用者按一下**回覆**，**全部回覆**，或**向前**動作按鈕。 每個動作會建立新的郵件項目，並使用來自原始項目的資訊填入的項目欄位。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## <a name="adding-custom-actions-to-a-form-region"></a>將自訂動作加入至表單區域  
- 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管中**展開**資訊清單**節點，選取**CustomActions**屬性，然後按一下省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
+ 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管中**展開**資訊清單**] 節點，選取**CustomActions**屬性，然後按一下 [省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
   
  您可以使用**自訂動作**對話方塊來指定*目標表單*。 目標表單是使用者執行自訂動作時出現的表單。  
   

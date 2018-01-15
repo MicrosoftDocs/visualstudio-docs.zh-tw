@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language
-ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7bdd5f6f9561e3479d173a1e182ffa07649bc776
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07d27b9b30d5305cc9c30db14e102d07ed55c519
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 與一般用途的程式語言，例如 C# 或 UML，不同的網域特定定義域語言 (DSL) 被為了 express 特定問題空間或網域中的陳述式。  

@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
+
 根據預設，Visual Studio 程式碼涵蓋範圍工具會分析在單元測試期間載入的所有方案組件 (.exe/.dll)。 我們建議您保持此預設值，因為大部分時間都可以運作良好。 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
- 在自訂程式碼涵蓋範圍行為之前，請考慮某些替代作法：  
+在自訂程式碼涵蓋範圍行為之前，請考慮某些替代作法：  
   
 -   *我想要從程式碼涵蓋範圍結果中排除測試程式碼，並只包含應用程式程式碼。*  
   
@@ -31,10 +31,11 @@ ms.lasthandoff: 12/22/2017
   
      取得這些組件的 .pdb 檔案，並將這些檔案複製到組件 .dll 檔案所在的資料夾。  
   
- 若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試] 功能表上依序選擇 [測試設定] 和 [選取測試設定] 檔案。 本主題的其餘部分將深入說明此程序。  
+若要自訂程式碼涵蓋範圍行為，請複製[本主題結尾處的範例](#sample)，然後使用副檔名 .runsettings 將範例新增至方案。 根據您的需求編輯範例，然後在 [測試] 功能表上依序選擇 [測試設定] 和 [選取測試設定] 檔案。 本主題的其餘部分將深入說明此程序。  
   
-## <a name="the-runsettings-file"></a>.runsettings 檔案  
- .runsettings 檔案中會指定進階的程式碼涵蓋範圍設定。 這是單元測試工具所使用的組態檔。 我們建議您複製[本主題結尾處的範例](#sample)，然後根據您自己的需求進行編輯。  
+## <a name="the-runsettings-file"></a>.runsettings 檔案
+
+.runsettings 檔案中會指定進階的程式碼涵蓋範圍設定。 這是單元測試工具所使用的組態檔。 我們建議您複製[本主題結尾處的範例](#sample)，然後根據您自己的需求進行編輯。  
   
 -   *我在 Visual Studio 2010 中使用的 .testsettings 檔案有何問題？*  
   
@@ -58,8 +59,9 @@ ms.lasthandoff: 12/22/2017
   
  您可以在同一個 .runsettings 檔案中設定單元測試的其他設定。 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
   
-### <a name="specifying-symbol-search-paths"></a>指定符號搜尋路徑  
- 程式碼涵蓋範圍要求必須要有組件的符號 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 但是在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。  
+### <a name="specifying-symbol-search-paths"></a>指定符號搜尋路徑
+
+程式碼涵蓋範圍要求必須要有組件的符號 (.pdb 檔案)。 在您的方案所建置的組件中，符號檔案通常會和二進位檔一起出現，而且程式碼涵蓋範圍會自動運作。 但是在某些情況下，您可以在程式碼涵蓋範圍分析中加入參考的組件。 在此類情況下，.pdb 檔案不可以和二進位檔同時出現，不過您可以在 .runsettings 檔案中指定符號搜尋路徑。  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ ms.lasthandoff: 12/22/2017
 > [!WARNING]
 >  符號解析可能需要一些時間，特別是在使用具有大量組件的遠端檔案位置時。 因此，請考慮將遠端 .pdb 檔案複製到二進位 (.dll 和 .exe) 檔案在本機中的位置。  
   
-### <a name="excluding-and-including"></a>排除和包含  
- 您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：  
+### <a name="excluding-and-including"></a>排除和包含
+
+您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如:   
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ ms.lasthandoff: 12/22/2017
   
  在`Include` 的處理順序在 `Exclude` 之前。  
   
-### <a name="regular-expressions"></a>規則運算式  
- 包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式和萬用字元不同。 特別之處在於：  
+### <a name="regular-expressions"></a>規則運算式
+
+包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式和萬用字元不同。 特別之處在於：  
   
 1.  **.\*** 會比對任何字元的字串  
   
@@ -116,7 +120,7 @@ ms.lasthandoff: 12/22/2017
   
  所有相符項目皆不區分大小寫。  
   
- 例如：  
+ 例如:   
   
 ```xml  
 <ModulePaths>  
@@ -154,7 +158,7 @@ ms.lasthandoff: 12/22/2017
   
  **比對函式名稱**  
   
- 您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：  
+ 您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如，套用至物件的  
   
 -   C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -178,43 +182,47 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>執行測試時如何指定 .runsettings 檔案  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>在 Visual Studio 測試中執行 runsettings  
- 依序選擇 [測試]、[測試設定] 和 [選取測試設定檔]，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定 ]功能表中，您可以加以選取或取消。 選取該檔案時，無論何時只要使用 [分析程式碼涵蓋範圍] 就會套用您的 runsettings 檔案。  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>自訂命令列測試中的回合設定  
- 若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](/devops-test-docs/test/using-vstest-console-from-the-command-line)。  
-  
-1.  啟動 Visual Studio Developer 命令提示字元：  
-  
-     在 Windows 的 [開始] 上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools] 和 [開發人員命令提示字元]。  
-  
-2.  執行：  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>在組建定義中自訂回合設定  
- 您可以從 Team Build 取得程式碼涵蓋範圍資料。  
-  
- ![在組建定義中指定回合設定](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>在 Visual Studio 測試中執行 runsettings
+
+選擇 [測試] > [測試設定] > [選取測試設定檔]，然後選取 .runsettings 檔案。 該檔案隨即出現在 [測試設定 ]功能表中，您可以加以選取或取消。 選取該檔案時，無論何時只要使用 [分析程式碼涵蓋範圍] 就會套用您的 runsettings 檔案。
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>自訂命令列測試中的回合設定
+
+若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。
+
+1.  啟動 Visual Studio Developer 命令提示字元：
+
+    在 Windows 的 [開始] 功能表上，選擇 **Visual Studio 2017** > **VS 2017 開發人員命令提示字元**。
+
+2.  執行下列命令：
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>在組建定義中自訂回合設定
+
+您可以從 Team Build 取得程式碼涵蓋範圍資料。
+
+![在組建定義中指定回合設定](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+
 1.  請務必簽入您的 .runsettings 檔案。  
   
 2.  在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
   
-3.  在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
+3.  在 [流程] 頁面上，展開 [自動化測試] > [測試來源] > [回合設定]。 選取 **.runsettings** 檔案。
   
     -   *但是會出現 **[測試組件]** 而非 **[測試來源]**。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
   
          在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
   
- 結果會顯示在組建報告的摘要區段。  
+結果會顯示在組建報告的摘要區段。
   
-##  <a name="sample"></a> 範例 .runsettings 檔案  
- 複製此程式碼並根據您自己的需求進行編輯。 這是預設的 .runsettings 檔案。  
-  
- (如需 .runsettings 檔案的其他用法，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md))。  
-  
-```xml  
+##  <a name="sample"></a> 範例 .runsettings 檔案
+
+複製此程式碼並根據您自己的需求進行編輯。 這是預設的 .runsettings 檔案。
+
+(如需 .runsettings 檔案的其他用法，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md))。
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>另請參閱
+
+[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[對程式碼進行單元測試](../test/unit-test-your-code.md)

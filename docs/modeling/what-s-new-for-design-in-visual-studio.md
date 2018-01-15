@@ -11,17 +11,15 @@ helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
 - modeling software [Visual Studio ALM], What's New
-ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
-caps.latest.revision: "32"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 137ca47d83e0540a7d0b3959d7d806dbf3d5f3a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 94f00e808df433279128a0241ffd3ab376ebc5b3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>什麼 &#39; s Visual Studio 中設計的新功能
 

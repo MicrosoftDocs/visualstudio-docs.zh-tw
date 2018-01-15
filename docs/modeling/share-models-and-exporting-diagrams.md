@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
-caps.latest.revision: "14"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49c6ea6eff4abbd8b0863bc04a07b8c912f35c64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45665147d3c086bfeea443d6203ac490888107b4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。  

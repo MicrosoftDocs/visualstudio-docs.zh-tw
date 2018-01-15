@@ -7,31 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: "22"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 782a68e61786121095d3bf730dbd053564bad1cf
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
-如果您實作自動程式化 UI 測試架構的支援，就可以更輕鬆地測試您的控制項。 您可以用累加方式加入不斷增加的支援層級。 您可以從支援錄製和播放以及屬性驗證開始。 您可以依此為建置基礎，讓自動程式化 UI 測試產生器能夠辨識控制項的自訂屬性，並提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。  
-  
- **本主題內容：**  
-  
-1.  [藉由實作協助工具，支援錄製和播放以及屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
-  
-2.  [藉由實作屬性提供者，支援自訂屬性驗證](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
-  
-3.  [藉由實作類別來存取自訂屬性，支援程式碼產生](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
-  
-4.  [藉由實作動作篩選，支援意圖感知動作](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
-  
- ![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")  
+如果您實作自動程式化 UI 測試架構的支援，就可以更輕鬆地測試您的控制項。 您可以用累加方式加入不斷增加的支援層級。 您可以從支援錄製和播放以及屬性驗證開始。 您可以依此為建置基礎，讓自動程式化 UI 測試產生器能夠辨識控制項的自訂屬性，並提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。
+
+![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> 藉由實作協助工具，支援錄製和播放以及屬性驗證  
  自動程式化 UI 測試產生器會擷取它在錄製期間遇到之控制項的相關資訊，然後產生程式碼，以重新執行該工作階段。 如果您的控制項不支援協助工具，自動程式碼 UI 測試產生器將會使用螢幕座標來擷取動作 (例如滑鼠點按)。 播放測試時，所產生的程式碼就會在相同的螢幕座標中發出這些滑鼠點按動作。 如果在播放測試時，您的控制項出現在螢幕上的不同位置，所產生的程式碼將無法在您的控制項上執行該動作。 如果是在不同的螢幕組態上、在不同環境中，或是在 UI 配置有所變更之後播放測試，這樣會導致失敗。  
@@ -86,10 +75,11 @@ ms.lasthandoff: 12/22/2017
   
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
-### <a name="to-support-custom-property-validation"></a>支援自訂屬性驗證  
- ![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")  
-  
-1.  覆寫曲線圖例可存取物件的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 屬性，以描述字串來傳遞豐富的屬性值 (以分號 (;) 將其與主要描述分隔，如果您要實作多個屬性，也是以分號將彼此分隔)。  
+### <a name="to-support-custom-property-validation"></a>支援自訂屬性驗證
+
+![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+
+1. 覆寫曲線圖例可存取物件的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 屬性，以描述字串來傳遞豐富的屬性值 (以分號 (;) 將其與主要描述分隔，如果您要實作多個屬性，也是以分號將彼此分隔)。  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,99 +96,87 @@ ms.lasthandoff: 12/22/2017
         }  
     }  
     ```  
-  
-2.  藉由建立類別庫專案來建立控制項的 UI 測試擴充套件，並將參考加入協助工具、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common 和 Microsoft.VisualStudio.TestTools.Extension。 將協助工具的 [內嵌 Interop 類型] 變更為 **False**。  
-  
-3.  新增衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 的屬性提供者類別。  
-  
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Accessibility;  
-    using Microsoft.VisualStudio.TestTools.UITesting;  
-    using Microsoft.VisualStudio.TestTools.UITest.Extension;  
-    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    using Microsoft.VisualStudio.TestTools.UITest.Common;  
-  
-    namespace ChartControlExtensionPackage  
-    {  
-        public class ChartControlPropertyProvider : UITestPropertyProvider  
-        {  
-        }  
-    }  
-    ```  
-  
-4.  在 <xref:System.Collections.Generic.Dictionary%602> 中放置屬性名稱和屬性描述元，以實作屬性提供者。  
-  
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
-5.  覆寫 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName>，以指出您的組件為您的控制項及其子系提供控制項特定的支援。  
-  
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-6.  覆寫 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName> 的其餘抽象方法。  
-  
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-7.  新增衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的延伸模組套件類別。  
-  
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
-8.  定義組件的 `UITestExtensionPackage` 屬性。  
-  
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
-9. 在擴充套件類別中，覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName>，以在要求屬性提供者時，傳回屬性提供者類別。  
-  
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
-10. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的其餘抽象方法和屬性。  
-  
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-11. 建置您的二進位檔，並將其複製到 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**。  
-  
+
+1. 藉由建立類別庫專案來建立控制項的 UI 測試擴充套件，並將參考加入協助工具、Microsoft.VisualStudio.TestTools.UITesting、Microsoft.VisualStudio.TestTools.UITest.Common 和 Microsoft.VisualStudio.TestTools.Extension。 將協助工具的 [內嵌 Interop 類型] 變更為 **False**。
+
+1. 新增衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 的屬性提供者類別：
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using Accessibility;
+    using Microsoft.VisualStudio.TestTools.UITesting;
+    using Microsoft.VisualStudio.TestTools.UITest.Extension;
+    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
+    using Microsoft.VisualStudio.TestTools.UITest.Common;
+
+    namespace ChartControlExtensionPackage
+    {
+        public class ChartControlPropertyProvider : UITestPropertyProvider
+        {
+        }
+    }
+    ```
+
+1. 在 <xref:System.Collections.Generic.Dictionary%602> 中放置屬性名稱和屬性描述元，以實作屬性提供者。
+
+1. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName>，以指出您的組件為您的控制項及其子系提供控制項特定的支援。
+
+1. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName> 的其餘抽象方法
+
+1. 新增衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的延伸模組套件類別。
+
+1. 定義組件的 `UITestExtensionPackage` 屬性。
+
+1. 在擴充套件類別中，覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName>，以在要求屬性提供者時，傳回屬性提供者類別。
+
+1. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的其餘抽象方法和屬性。
+
+1. 建置您的二進位檔，並將其複製到 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**。  
+
 > [!NOTE]
->  這個延伸模組套件將會套用至 "Text" 類型的任何控制項。 如果您要測試多個相同類型的控制項，您必須個別進行測試，並管理當您錄製測試時所要部署的延伸模組套件。  
-  
-##  <a name="codegeneration"></a> 藉由實作類別來存取自訂屬性，支援程式碼產生  
- 當自動程式碼 UI 測試產生器從工作階段錄製作業產生程式碼時，它會使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> 類別來存取您的控制項。  
-  
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
- 如果您已實作屬性提供者來提供控制項自訂屬性的存取權，您可以新增用來存取這些屬性的特定類別，如此可簡化所產生的程式碼。  
-  
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
-### <a name="to-add-a-specialized-class-to-access-your-control"></a>加入用來存取控制項的特定類別  
- ![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
-  
-1.  實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> 的類別，並將控制項的類型新增至建構函式中的搜尋屬性集合。  
-  
-<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
-2.  實作控制項的自訂屬性，以作為類別的屬性。  
-  
-<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
-3.  覆寫屬性提供者的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> 方法，以針對曲線圖例子控制項，傳回新類別的類型。  
-  
-<CodeContentPlaceHolder>14</CodeContentPlaceHolder>  
-4.  覆寫屬性提供者的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> 方法，以傳回新類別之 PropertyNames 方法的類型。  
-  
-<CodeContentPlaceHolder>15</CodeContentPlaceHolder>  
+> 這個延伸模組套件將會套用至 "Text" 類型的任何控制項。 如果您要測試多個相同類型的控制項，您必須個別進行測試，並管理當您錄製測試時所要部署的延伸模組套件。
+
+##  <a name="codegeneration"></a> 藉由實作類別來存取自訂屬性，支援程式碼產生
+
+當自動程式碼 UI 測試產生器從工作階段錄製作業產生程式碼時，它會使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> 類別來存取您的控制項。
+
+如果您已實作屬性提供者來提供控制項自訂屬性的存取權，您可以新增用來存取這些屬性的特定類別，如此可簡化所產生的程式碼。
+
+### <a name="to-add-a-specialized-class-to-access-your-control"></a>加入用來存取控制項的特定類別
+
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
+
+1. 實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> 的類別，並將控制項的類型新增至建構函式中的搜尋屬性集合。  
+
+1. 實作控制項的自訂屬性，以作為類別的屬性。  
+
+1. 覆寫屬性提供者的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> 方法，以針對曲線圖例子控制項，傳回新類別的類型。  
+
+1. 覆寫屬性提供者的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> 方法，以傳回新類別之 PropertyNames 方法的類型。
+
 ##  <a name="intentawareactions"></a> 藉由實作動作篩選，支援意圖感知動作  
  當 Visual Studio 錄製測試時，它會擷取每個滑鼠和鍵盤事件。 不過，在某些情況下，動作的意圖可能會在一系列的滑鼠和鍵盤事件中遺失。 比方說，如果您的控制項支援自動完成，在不同的環境中播放測試時，同一組滑鼠和鍵盤事件可能會導致不同的值。 您可以加入動作篩選外掛程式，將一系列鍵盤和滑鼠事件取代成單一動作。 如此一來，您就可以將導致選取某個值的一系列滑鼠和鍵盤事件，取代成設定該值的單一動作。 這麼做可防止自動程式碼 UI 測試在不同環境之間所產生的自動完成差異。  
   
-### <a name="to-support-intent-aware-actions"></a>支援意圖感知動作  
- ![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
-  
-1.  實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 的動作篩選類別，覆寫下列屬性：<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>。  
-  
-<CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
-2.  覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>。 此範例會將按兩下動作取代成按一下動作。  
-  
-<CodeContentPlaceHolder>17</CodeContentPlaceHolder>  
-3.  將動作篩選加入擴充套件的 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> 方法。  
-  
-<CodeContentPlaceHolder>18</CodeContentPlaceHolder>  
-4.  建置您的二進位檔，並將其複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。  
-  
+### <a name="to-support-intent-aware-actions"></a>支援意圖感知動作
+
+![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
+
+1. 實作衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 的動作篩選類別，覆寫下列屬性：<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>。 
+
+1. 覆寫 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>。 此範例會將按兩下動作取代成按一下動作。
+
+1. 將動作篩選加入擴充套件的 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> 方法。
+
+1. 建置您的二進位檔，並將其複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。
+
 > [!NOTE]
->  動作篩選與協助工具實作或屬性提供者沒有相依關係。  
-  
-## <a name="debug-your-property-provider-or-action-filter"></a>偵錯屬性提供者或動作篩選  
- 內容提供者和動作篩選會在一個擴充套件中實作，自動程式碼 UI 測試產生器會在不同於您的應用程式的個別處理序中，載入及執行此擴充套件。  
-  
+> 動作篩選與協助工具實作或屬性提供者沒有相依關係。
+
+## <a name="debug-your-property-provider-or-action-filter"></a>偵錯屬性提供者或動作篩選
+
+內容提供者和動作篩選會在一個擴充套件中實作，自動程式碼 UI 測試產生器會在不同於您的應用程式的個別處理序中，載入及執行此擴充套件。
+
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>偵錯內容提供者或動作篩選  
   
 1.  建置延伸模組套件的偵錯版本，將 .dll 和.pdb 檔案複製到 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages。  

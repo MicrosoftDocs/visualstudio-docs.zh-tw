@@ -16,37 +16,35 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
-caps.latest.revision: "85"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fafb9bc38aca51db6baf6cace6dc887db60ed8c8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
+
 驅動應用程式通過其使用者介面 (UI) 的自動化測試稱為「自動程式化 UI 測試」(CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。  
-  
- 如下圖所示，一般的開發體驗可能是一開始您只是建置應用程式 (F5) 並按一下 UI 控制項確認所有項目都正確運作。 然後，您可能決定建立自動程式碼測試，因此不需要繼續手動測試應用程式。 根據您應用程式中測試的特定功能，您可以撰寫程式碼來進行功能測試或者也許包括 UI 層級測試的整合測試。 如果您只想要直接存取某個商務邏輯，則可以編寫單元測試。 不過，在特定情況下，也可能對測試您應用程式中的各種 UI 控制項有所助益。 自動程式化 UI 測試可以自動化初始 (F5) 情節，確認程式碼變換不會影響您應用程式的功能。  
-  
- ![在應用程式開發時進行測試](../test/media/cuit_overview.png "CUIT_Overview")  
-  
- 建立自動程式化 UI 測試十分簡單。 您只要在背景執行 CUIT 測試產生器時手動執行測試即可。 您也可以指定特定欄位中應該出現的值。 CUIT 測試產生器會錄製您的動作，並透過這些動作產生程式碼。 建立測試之後，即可使用特殊編輯器來編輯該測試，以讓您修改動作的順序。  
-  
- 或者，如果您在 Microsoft 測試管理員中錄製測試案例，則可以透過該測試案例產生程式碼。 如需詳細資訊，請參閱[記錄和播放手動測試](/devops-test-docs/test/record-and-play-back-manual-tests)。  
-  
- 特殊 CUIT 測試產生器和編輯器可以輕鬆地建立與編輯自動程式化 UI 測試，即使您的主要技能是在測試，而非編寫程式碼也是一樣。 但是，如果您是開發人員，而且想要使用更進階的方式擴充測試，請讓程式碼更具結構性，以直接複製和調整。 例如，您可能錄製一個在網站上購買某項東西的測試，接著編輯產生的程式碼以加入購買許多項目的迴圈。  
-  
- **需求**  
-  
--   Visual Studio 企業版  
-  
- 如需自動程式化 UI 測試支援哪些平台和組態的詳細資訊，請參閱[支援的組態和平台自動程式化 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
-  
- **本主題內容**  
+
+如下圖所示，一般的開發體驗可能是一開始您只是建置應用程式 (F5) 並按一下 UI 控制項確認所有項目都正確運作。 然後，您可能決定建立自動程式碼測試，因此不需要繼續手動測試應用程式。 根據您應用程式中測試的特定功能，您可以撰寫程式碼來進行功能測試或者也許包括 UI 層級測試的整合測試。 如果您只想要直接存取某個商務邏輯，則可以編寫單元測試。 不過，在特定情況下，也可能對測試您應用程式中的各種 UI 控制項有所助益。 自動程式化 UI 測試可以自動化初始 (F5) 情節，確認程式碼變換不會影響您應用程式的功能。  
+
+![在應用程式開發時進行測試](../test/media/cuit_overview.png "CUIT_Overview")  
+
+建立自動程式化 UI 測試十分簡單。 您只要在背景執行 CUIT 測試產生器時手動執行測試即可。 您也可以指定特定欄位中應該出現的值。 CUIT 測試產生器會錄製您的動作，並透過這些動作產生程式碼。 建立測試之後，即可使用特殊編輯器來編輯該測試，以讓您修改動作的順序。
+
+特殊 CUIT 測試產生器和編輯器可以輕鬆地建立與編輯自動程式化 UI 測試，即使您的主要技能是在測試，而非編寫程式碼也是一樣。 但是，如果您是開發人員，而且想要使用更進階的方式擴充測試，請讓程式碼更具結構性，以直接複製和調整。 例如，您可能錄製一個在網站上購買某項東西的測試，接著編輯產生的程式碼以加入購買許多項目的迴圈。  
+
+**需求**
+
+- Visual Studio 企業版
+
+如需自動程式化 UI 測試支援哪些平台和組態的詳細資訊，請參閱[支援的組態和平台自動程式化 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
+
+**本主題內容**
   
 -   [建立自動程式化 UI 測試](#VerifyingCodeUsingCUITCreate)  
   
@@ -155,7 +153,7 @@ ms.lasthandoff: 12/22/2017
   
  本主題中的其餘各節提供此程序中各步驟的更多詳細資料。  
   
- 如需更詳細的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。  
+ 如需更詳細的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
   
 ###  <a name="starting"></a> 啟動和停止受測試的應用程式  
  *我不想要分別針對每個測試啟動和停止應用程式、瀏覽器或資料庫。我要如何避免這麼做？*  
@@ -192,17 +190,17 @@ ms.lasthandoff: 12/22/2017
  加入您測試的所有判斷提示之後，請選擇 [確定]。  
   
  若要產生您判斷提示的程式碼，並將控制項加入至 UI 對應，請選擇 [產生程式碼] 圖示。 輸入您自動程式化 UI 測試方法的名稱以及該方法的描述，這些將加入為該方法的註解。 選擇 [加入並產生]。 接下來，選擇 [關閉] 圖示關閉 [自動程式化 UI 測試產生器]。 這樣會產生與下列程式碼類似的程式碼。 例如，如果您輸入的名稱是 `AssertForAddTwoNumbers`，則程式碼會與此範例類似：  
-  
--   將判斷提示方法 AssertForAddTwoNumbers 呼叫加入至您自動程式碼 UI 測試檔案中的測試方法：  
-  
-    ```  
+
+-   將判斷提示方法 AssertForAddTwoNumbers 呼叫加入至您自動程式碼 UI 測試檔案中的測試方法：
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         this.UIMap.AddTwoNumbers();  
         this.UIMap.AssertForAddTwoNumbers();  
     }  
-    ```  
+    ```
   
      您可以編輯此檔案以變更步驟和判斷提示的順序，或是建立新的測試方法。 若要加入更多程式碼，請將游標放在測試方法上，並在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]。  
   
@@ -214,7 +212,7 @@ ms.lasthandoff: 12/22/2017
   
      您也可以檢視 UIMap.Designer.cs 中針對判斷提示方法產生的程式碼。 不過，您不應該編輯此檔案。 如果您想要建立程式碼的調整版本，請將方法複製至另一個檔案 (例如 UIMap.cs)，並重新命名方法，然後在那裏進行編輯。  
   
-    ```  
+    ```csharp
     public void AssertForAddTwoNumbers()  
     {  
         ...  
@@ -264,13 +262,12 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  在組態檔中，變更 `HoverKeyModifier` 和 `HoverKey` 索引鍵的值，以修改鍵盤指派：  
   
-```  
+```
 <!-- Begin : Background Recorder Settings -->  
 <!-- HoverKey to use. -->  
 <add key="HoverKeyModifier" value="Control, Shift"/>  
 <add key="HoverKey" value="R"/>  
-  
-```  
+```
   
  *我在網站上錄製滑鼠停留時發生問題。這個問題有修正方法嗎？*  
  **設定網頁瀏覽器的隱含滑鼠停留**  
@@ -413,7 +410,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   使用衍生自 T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl 的控制項 (例如 T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList 或 T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)，您可以直接取得或設定其屬性值，如下所示：  
   
-    ```  
+    ```csharp
     int i = myHtmlList.ItemCount;  
     myWinCheckBox.Checked = true;  
     ```  
@@ -452,13 +449,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [如何：在建置應用程式之後設定和執行已排程的測試](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
   
--   [在建置流程中執行測試](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
+-   [在建置流程中執行測試](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
   
--   [從命令列執行自動化測試](/devops-test-docs/test/running-automated-tests-from-the-command-line)  
-  
--   [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)  
-  
--   [&#91;已停用&#93;在負載測試中使用自動程式化 UI 測試](/devops-test-docs/test_notintoc/using-coded-ui-tests-in-load-tests)  
+-   [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
   
  **加入自訂控制項的支援：**自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的 UI 建立自動程式碼 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。  
   
@@ -466,7 +459,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- 自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引，請參閱[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[&#91;已停用&#93;使用 Microsoft Test Manager 建立手動測試案例](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。  
+ 自動程式化 UI 測試經常用來自動化手動測試。 如需其他指引，請參閱[使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)。 如需手動測試的詳細資訊，請參閱[使用 Microsoft Test Manager 執行手動測試](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager)。 如需自動化系統測試的詳細資訊，請參閱[使用 Microsoft Test Manager 建立自動化測試](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0)。  
   
 ## <a name="external-resources"></a>外部資源  
   
@@ -493,5 +486,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [升級 Visual Studio 2010 的自動程式化 UI 測試](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
- [從現有的動作記錄產生自動程式化 UI 測試](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+ [升級 Visual Studio 2010 的自動程式化 UI 測試](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, escape sequences
-ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
-caps.latest.revision: "29"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1806b6aa1b6c6d4ac233e4a9d5785fe903d42221
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bbb970124f84e07275f8ea1b326a6feca02de8e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
 您可以使用逸出序列，在文字範本產生文字範本的標籤和 （在 C# 僅限程式碼） 來逸出控制字元和引號。  

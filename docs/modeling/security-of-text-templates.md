@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, security
-ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8827357ed3612dd47aca296719ace281839b0e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 327d56447d434f1122a16b9c3edf6a4d3b66c97f
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字範本具有下列安全性考量：  

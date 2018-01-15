@@ -21,17 +21,15 @@ helpviewer_keywords:
 - Visual Studio ALM, graph documents
 - Visual Studio Ultimate, graph documents
 - dependency graphs, browsing
-ms.assetid: 08f65f77-6ca7-4b25-b060-3f6c9f5847a4
-caps.latest.revision: "91"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2870f057f34299a41dcb090f97bb13316cb28387
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2ac958d6033408ab509cfca7372dec0f7360b48c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 重新排列 Code Map 上的項目，使其更容易閱讀與提升其效能。  

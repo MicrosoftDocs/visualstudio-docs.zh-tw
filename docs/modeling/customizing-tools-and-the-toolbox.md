@@ -11,17 +11,15 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selecticondialog
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords: Domain-Specific Language, toolbox
-ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8f9d26b727281c3443549bd38afce5d9da043334
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e7ce422f22a2420e3972477bfe9513b88a5861f1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。  

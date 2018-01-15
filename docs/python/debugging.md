@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -31,7 +31,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 - [基本偵錯](#basic-debugging)
 - [專案偵錯選項](#project-debugging-options)
-- [偵錯互動式視窗](#the-debug-interactive-window)
+- [即時運算視窗和互動式視窗](#immediate-and-interactive-windows)
 
 另請參閱下列特定狀況的偵錯主題︰
 
@@ -163,6 +163,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | 環境變數 | 在這個多行文字方塊中，加入表單 `NAME=VALUE` 的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以使用它來手動覆寫那些其他變數中的任一項。 |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>[即時運算 (Immediate)] 和 [互動式 (Interactive)] 視窗
 
 偵錯工作階段期間有兩個可用的互動式視窗︰ 標準的 Visual Studio [即時運算 (Immediate)] 視窗，與 [Python 偵錯互動式 (Python Debug Interactive)] 視窗。

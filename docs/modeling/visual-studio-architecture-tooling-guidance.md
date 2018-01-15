@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
-caps.latest.revision: "10"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dcedff359d3f602096508c2123988cd31453e471
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d45bc500004c0014e2d2d27a427198eef888ecaa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 本架構工具指南是使用 Visual Studio 2010 中的模型工具的相關資訊的實用指南的可下載的套件。 它提供如何整合的方式，以使用所有的模型工具的高階檢視，並討論工具使用的常見案例。  

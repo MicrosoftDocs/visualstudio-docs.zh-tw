@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8136bd3e694ae544b176b8da6bfc2b721eb0c89
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
 
-針對 Visual Studio 2015 和更早版本，您也需要另外安裝您所選的 Python 解譯器 (Python 3.5 和更早版本；不支援 3.6)。 如需詳細資料，請參閱 [Python 環境](python-environments.md)。 相同的頁面也會包含將現有 Python 解譯器新增至 Visual Studio 2017 的指示。
+若為 Visual Studio 2015 和更早版本，也需要另外安裝您所選的 Python 解譯器 (Python 3.5 和更早版本；不支援 3.6 且會產生「不支援的 Python 3.6 版」訊息)。 如需詳細資料，請參閱 [Python 環境](python-environments.md)。 相同的頁面也會包含將現有 Python 解譯器新增至 Visual Studio 2017 的指示。
 
 在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 Alt-I 開啟 Python Interactive 視窗，並輸入 `2+2`。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
 
@@ -60,10 +60,10 @@ ms.lasthandoff: 12/22/2017
 
     ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
 
-    | 選項 | 描述 | 
+    | 選項 | 描述 |
     | --- | --- |
     | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種套件的開放型資料科學平台  (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。 |
-    | Cookiecutter 範本支援 | 安裝 Cookicutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](cookiecutter.md)。 |
+    | Cookiecutter 範本支援 | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](cookiecutter.md)。 |
     | Python Web 支援 | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](template-web.md)。 |
     | Python IoT 支援 | 使用 Python 支援 Windows IoT Core 開發。 |
     | Python 原生開發工具 | 安裝 C++ 編譯器和其他必要元件，以開發 Python 的原生延伸模組。 請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md)。 |
@@ -83,7 +83,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 選取 [程式語言] > [適用於 Visual Studio 的 Python 工具]，然後選取 [下一步]：
 
-    ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)    
+    ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)
 
 1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。 如果您已安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 
@@ -114,11 +114,11 @@ ms.lasthandoff: 12/22/2017
 
 其中：
 
-- &lt;VS_ver&gt;：    
-    - 針對 Visual Studio 2015 為 14.0
-    - 針對 Visual Studio 2013 為 12.0
-    - 針對 Visual Studio 2012 為 11.0
-    - 針對 Visual Studio 2010 為 10.0
+- &lt;VS_ver&gt;：
+  - 針對 Visual Studio 2015 為 14.0
+  - 針對 Visual Studio 2013 為 12.0
+  - 針對 Visual Studio 2012 為 11.0
+  - 針對 Visual Studio 2010 為 10.0
 - &lt;PTVS_ver&gt; 為版本號碼，如 2.2、2.1、2.0、1.5、1.1 或 1.0。
 
 ### <a name="user-specific-installations-15-and-earlier"></a>使用者特定安裝 (1.5 和更早版本)

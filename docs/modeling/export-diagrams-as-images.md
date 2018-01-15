@@ -10,17 +10,15 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
-caps.latest.revision: "15"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 253f6292331bd3a67a5f57ab6a0936928dedcf77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbb21a2f8d126feb90e3c19eded6496949b992bd
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。  

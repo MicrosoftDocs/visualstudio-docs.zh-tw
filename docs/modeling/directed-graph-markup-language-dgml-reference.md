@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
-caps.latest.revision: "8"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1d4c70d319e80eea95af6f71180b8ef4a37cad45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0e0bffe7db51da8ccf73bc73e294c102b597d338
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 有向圖形標記語言 (DGML) 描述用於視覺化以及執行複雜度分析的資訊，而且是用來在 Visual Studio 中保存 Code Map 的格式。 它使用簡單的 XML 來描述循環與非循環的有向圖形。 有向圖形是一組用連結或邊緣相連的節點。 節點和連結可用來表示網路結構，例如軟體專案中的項目。  

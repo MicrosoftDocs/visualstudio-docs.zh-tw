@@ -11,17 +11,15 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
-caps.latest.revision: "64"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從程式碼中建立相依性圖表
 若要以視覺化方式檢視您的軟體系統高層級的邏輯架構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持一致與這個設計中，以驗證程式碼相依性圖表。 您可以建立適用於 Visual C#.NET 和 Visual Basic.NET 專案的相依性圖表。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  

@@ -22,17 +22,15 @@ helpviewer_keywords:
 - modeling projects
 - UML diagrams
 - projects, modeling
-ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
-caps.latest.revision: "48"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3aa3531b9c784b84309475e9a06dbc04b5f37fe8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ad5dff3e5df06a00133800acaf6e48276c9af66
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 

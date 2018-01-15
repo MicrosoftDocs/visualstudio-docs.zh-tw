@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Python 環境
 
@@ -53,7 +53,7 @@ Visual Studio 中的 Python 可讓您輕鬆管理多個 Python 環境，以及�
 | 解譯器 | 描述 |
 | --- | --- |
 | [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](http://ipython.org/) 的互通性。 另請參閱：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (我應該使用 Python 2 還是 Python 3？) 請注意，Visual Studio 2015 及更早版本不支援 Python 3.6，因此可能會出現「不支援 python 3.6 版」的錯誤。 請改用 Python 3.5 或更早版本。 |
-| [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 |
 | [Anaconda](https://www.continuum.io) | 由 Python 提供技術支援的開放式資料科學平台，它包含最新版的 CPython 和大多數難以安裝的套件。 如果您無法決定要使用哪一個解譯器，建議您使用此解譯器。 |
 | [PyPy](http://www.pypy.org/) | Python 的高效能追蹤 JIT 實作，適合用來處理長時間執行的程式，以及您找出效能問題但找不到其他解決方案的情況。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |
 | [Jython](http://www.jython.org/) | 「Java 虛擬機器」(JVM) 上的 Python 實作。 與 IronPython 類似，在 Jython 中執行的程式碼可以與 Java 類別和程式庫進行互動，但可能無法使用許多適用於 CPython 的程式庫。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |
@@ -73,7 +73,7 @@ Visual Studio 中的 Python 可讓您輕鬆管理多個 Python 環境，以及�
 
 ![[Python Environments (Python 環境)] 視窗](media/environments-default-view.png)
 
-上例顯示 Python 3.4 (32 位元 CPython) 已隨 32 位元和 64 位元版本的 IronPython 2.7 安裝。 在本例中，以粗體顯示的預設環境是 Python 3.4，用於所有新的專案。 如果未看到列出任何環境，即表示您已安裝 Visual Studio 2015 或更舊版本的 Python Tools for Visual Studio，但尚未安裝 Python 解譯器 (請參閱上述的[選取並安裝 Python 解譯器](#selecting-and-installing-python-interpreters))。 
+上例顯示 Python 3.4 (32 位元 CPython) 已隨 32 位元和 64 位元版本的 IronPython 2.7 安裝。 在本例中，以粗體顯示的預設環境是 Python 3.4，用於所有新的專案。 如果未看到列出任何環境，即表示您已安裝 Visual Studio 2015 或更舊版本的 Python Tools for Visual Studio，但尚未安裝 Python 解譯器 (請參閱上述的[選取並安裝 Python 解譯器](#selecting-and-installing-python-interpreters))。
 
 > [!Tip]
 > 當 [Python 環境] 視窗變窄時 (如上所示)，環境會列在上方，而各種索引標籤會列在下方。 不過，將視窗展開到足夠的寬度，會變更為可能較方便您使用的寬型檢視。
@@ -161,7 +161,7 @@ Visual Studio 通常會透過檢查登錄來找出安裝的 Python 解譯器 (�
 
 [立即提高權限] 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續] 會嘗試安裝套件，但在嘗試建立包含「錯誤: 無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 權限遭拒」這類輸出的資料夾時，pip 會失敗。
 
-選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。 
+選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。
 
 在這個相同的選項索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](options.md#general-options)。
 
@@ -247,13 +247,13 @@ Visual Studio 會針對所有新專案使用預設環境，來執行、偵錯、
 
     ![更新 requirements.txt 選項](media/environments-requirements-txt-replace.png)
 
-    - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
-    - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
-    - [Update and add entries (更新及新增項目)] 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
+  - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
+  - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
+  - [Update and add entries (更新及新增項目)] 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
 
 由於 `requirements.txt` 檔案的用意是要固定住您專案的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-新增虛擬環境時，如果 ` requirements.txt` 檔案已經存在，則 [新增虛擬環境] 對話方塊就會顯示自動安裝套件的選項，讓您能夠輕鬆在另一部電腦上重新建立環境：
+新增虛擬環境時，如果 `requirements.txt` 檔案已經存在，則 [新增虛擬環境] 對話方塊就會顯示自動安裝套件的選項，讓您能夠輕鬆在另一部電腦上重新建立環境：
 
 ![使用 requirements.txt 來建立虛擬環境](media/environments-requirements-txt.png)
 

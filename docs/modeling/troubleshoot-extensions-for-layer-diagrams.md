@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, extension errors
 - dependency diagrams, troubleshooting extensions
-ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
-caps.latest.revision: "25"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f5cb41ab9a68e567d7c6b64243c6cec017835088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b9a13da8d987304831a3ce8e8311a9e7cf36b4e8
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>相依性圖表的擴充功能疑難排解
 本主題說明當您建立圖層模型擴充功能時可能遇到的一些問題。  

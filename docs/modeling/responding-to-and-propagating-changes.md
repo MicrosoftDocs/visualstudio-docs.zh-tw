@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, events
-ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
-caps.latest.revision: "24"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3923579e180439c3d08680f6e67149901214245
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫傳播變更給模型的其他組件或外部的資源，例如檔案、 資料庫或其他元件的程式碼。  

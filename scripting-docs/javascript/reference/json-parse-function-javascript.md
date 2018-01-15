@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse 函式 (JavaScript)
 將以 JavaScript 物件標記法 (JavaScript Object Notation，JSON) 表示的字串轉換成物件。  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   請確定已透過 JSON 相容實作 (例如 `text` ) 來序列化 `JSON.stringify`引數。  
   
--   在 JSON 驗證程式 (例如 `text` JSLint [) 中執行](http://www.jslint.com/) 引數來協助識別語法錯誤。  
+-   執行`text`引數，在 JSON 驗證程式，例如[JSLint](http://www.jslint.com/)或[JSON，將 CSV](https://json-csv.com)來協助識別語法錯誤。  
   
 ## <a name="example"></a>範例  
  下面範例會使用 `JSON.parse` 將 JSON 字串轉換為物件。  
@@ -131,7 +131,7 @@ function dateReviver(key, value) {
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JSON.stringify 函式](../../javascript/reference/json-stringify-function-javascript.md)   
  [toJSON 方法 （日期）](../../javascript/reference/tojson-method-date-javascript.md)   
  [中樞範本範例應用程式 （Windows 市集）](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)

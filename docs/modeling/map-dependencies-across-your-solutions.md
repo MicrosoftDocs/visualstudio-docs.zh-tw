@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
-當您想要了解程式碼之間的相依性時，請建立 Code Map 來將其視覺化。 這可協助您查看程式碼如何搭配運用，而無須閱讀所有檔案和程式碼行。  
-  
- ![檢視方案之間的相依性](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **部分影片如下**：  
-  
--   [透過視覺化了解程式碼相依性](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [以圖形呈現變更的影響](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [使用 Code Map 了解複雜的程式碼](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> 開始使用 Code Map  
- **若要使用 code map，您將需要**:  
+
+當您想要了解程式碼之間的相依性時，請建立 Code Map 來將其視覺化。 這可協助您查看程式碼如何搭配運用，而無須閱讀所有檔案和程式碼行。
+
+![檢視方案之間的相依性](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**部分影片如下**：
+
+- [了解透過視覺化程式碼相依性](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [以視覺化方式檢視變更的影響](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [了解複雜的程式碼，使用 code map](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> 開始使用 Code Map
+
+**若要使用 code map，您將需要**:
   
 -   Visual Studio Enterprise：從程式碼編輯器、方案總管、類別檢視或物件瀏覽器建立 Code Map。  
   
@@ -171,7 +171,7 @@ ms.lasthandoff: 12/22/2017
   
 10. 專注於複雜方案對應的另一個方法是產生新的對應，其中包含來自現有對應的選取項目。 選取您想要專注的項目時按住 **CTRL** ，開啟捷徑功能表，然後選擇 [從選取範圍新增圖形] 。  
   
-     ![新的 code map 上顯示選取的項目](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![新的 code map 上顯示選取的項目](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. 包含的內容會轉至新的對應。 隱藏方案資料夾和您不想要查看使用的其他容器**篩選**窗格。  
   

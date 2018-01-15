@@ -10,17 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-ms.assetid: 83fca301-b008-485a-87eb-218050e71451
-caps.latest.revision: "39"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 477c51d4172f893e4506eff1b2a11b626993b327
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 076964379f0903945767110a3c19edb87d3c7092
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="extend-dependency-diagrams"></a>擴充相依性圖表
 您可以撰寫程式碼來建立和更新相依性圖表，並驗證您的程式碼，針對 Visual Studio 中的相依性圖表的結構。 您可以加入出現在圖表的捷徑 (操作) 功能表中的命令、自訂拖放軌跡，以及從文字範本存取圖層模型。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，以及將這些整合擴充功能散發給其他 Visual Studio 使用者。  

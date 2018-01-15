@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Python 專案
 
-定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 為了協助管理此複雜性，您可以針對 Python 應用程式建立 Visual Studio 專案。 Python 專案 (`.pyproj` 檔案) 會識別與您專案關聯的所有來源和內容檔案、包含每個檔案的建置資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式組織成邏輯元件。
+定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (`.pyproj` 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
 此外，您一律是在 Visual Studio 的「方案」內管理專案，方案中可以包含任意數目、可能彼此參考的專案。 例如，Python 專案可以參考延伸模組的 C++ 專案，如此一來，當您開始對 Python 專案進行偵錯時，Visual Studio 會自動建置 C++ 專案 (如有必要)。 (如需一般的討論，請參閱 [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md))。
 
@@ -38,7 +38,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 <a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> 即使在沒有專案的情況下，Visual Studio 也能夠與 Python 程式碼順暢搭配運作，您可以單獨開啟 Python 檔案來享用自動完成、IntellSense 及偵錯功能 (透過在編輯器中按一下滑鼠右鍵，然後選取 [開始偵錯] 或 [啟動但不偵錯])。 不過，因為這類程式碼一律會使用預設全域環境，所以如果程式碼是針對不同的環境，則您可能就會看到不正確的完成或錯誤。 此外，Visual Studio 還會分析您從中開啟單一檔案之資料夾中的所有檔案和套件，這可能會耗費相當多的 CPU 時間。
+> 即使在沒有專案的情況下，Visual Studio 也能夠與 Python 程式碼順暢搭配運作，您可以單獨開啟 Python 檔案來使用自動完成、IntelliSense 及偵錯功能 (透過在編輯器中按一下滑鼠右鍵，然後選取 [開始偵錯] 或 [啟動但不偵錯])。 不過，因為這類程式碼一律會使用預設全域環境，所以如果程式碼是針對不同的環境，則您可能就會看到不正確的完成或錯誤。 此外，Visual Studio 還會分析您從中開啟單一檔案之資料夾中的所有檔案和套件，這可能會耗費相當多的 CPU 時間。
 >
 > 從現有的程式碼建立 Visual Studio 專案相當簡單，如下面的[從現有的檔案建立專案](#creating-a-project-from-existing-files)所述。
 
@@ -62,15 +62,16 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 ![啟用 Python 專案的環境](media/projects-activate-environment.png)
 
 <a name="project-types"</a>
+
 ## <a name="project-templates"></a>專案範本
 
-Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 若要使用範本，請選取 [檔案] > [新增] > [專案] 功能表命令，或在 [方案總管] 中的方案上按一下滑鼠右鍵，然後選取 [新增] > [新增專案]，這兩種方式都會顯示以下的 [新增專案] 對話方塊。 若要查看 Python 特定的範本，請依據 "Python" 進行搜尋或選取 [範本] > [其他語言] > [Python] 節點：
+Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 若要使用範本，請選取 [檔案] > [新增] > [專案] 功能表命令，或在 [方案總管] 中的方案上按一下滑鼠右鍵，然後選取 [新增] > [新增專案]，這兩種方式都會顯示以下的 [新增專案] 對話方塊。 若要查看 Python 特定的範本，請依據 "Python" 進行搜尋或選取 [已安裝] > [Python] 節點：
 
 ![含有 Python 範本的 [新增專案] 對話方塊](media/projects-new-project-dialog.png)
 
 下表摘要說明 Visual Studio 2017 中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
-| 範本 | 描述 | 
+| 範本 | 描述 |
 | --- | --- |
 | [從現有 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](python-environments.md#project-specific-environments)來變更此環境。 |

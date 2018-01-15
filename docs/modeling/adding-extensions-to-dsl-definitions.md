@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77a631d7f245dfe6d324e2b392349b559447212f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3abe11e747db81579fb3851a1d05562d3f2fd11
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>在 DSL 定義中加入擴充功能
 DSL 定義延伸模組可讓您建立擴充功能的網域特定定義域語言 (DSL) 來封裝。 DSL 擴充功能，包含在 Visual Studio 整合擴充功能 (VSIX)，可以在使用者的電腦上安裝在 DSL 相同的方式。 額外的功能可以動態啟用和停用在執行階段。 Dsl 不必明確地針對延伸模組，設計和延伸模組可以設計之後，或由協力廠商而不會變更延伸的 DSL。  

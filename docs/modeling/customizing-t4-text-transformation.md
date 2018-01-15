@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56eb5c11984e60e16374853ef1911ae831476d64
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-t4-text-transformation"></a>自訂 T4 文字轉換
 文字範本是的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可讓您產生程式碼或其他文字檔案，完成轉換程序。 使用[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]，您可以自訂文字範本指示詞處理器或文字範本主應用程式來延伸預設範本轉換流程。  

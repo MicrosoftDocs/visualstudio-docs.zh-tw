@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這個行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 >  DSL 定義中加入程式碼，請建立不同的程式碼檔案中**Dsl**專案，並寫入加強產生的程式碼資料夾中的類別的部分定義。 如需詳細資訊，請參閱[以自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 ##  <a name="closure"></a>定義 Delete Closure  
- 刪除作業會使用類別*YourModel***DeleteClosure**來判斷要刪除指定的初始的選取範圍的項目。 它重複呼叫 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，查核關聯性的圖形。 您可以覆寫這些方法。 ShouldVisitRolePlayer 隨附的其中一個角色連結的項目和連結的識別。 它應傳回下列其中一個值：  
+ 刪除作業會使用類別*YourModel * * * DeleteClosure** 若要判斷要刪除指定的初始的選取範圍的項目。 它重複呼叫 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，查核關聯性的圖形。 您可以覆寫這些方法。 ShouldVisitRolePlayer 隨附的其中一個角色連結的項目和連結的識別。 它應傳回下列其中一個值：  
   
 -   **VisitorFilterResult.Yes**-應刪除的項目並查核器應該嘗試繼續元素的其他連結。  
   

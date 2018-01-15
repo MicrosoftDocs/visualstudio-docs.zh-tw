@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>相依性圖表中加入自訂架構驗證
 在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，以便他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
-5.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+5.  若要安裝此擴充功能的 Visual Studio，或在另一部電腦上的主要執行個體，找出**.vsix**檔案**bin\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>將圖層驗證程式加入個別的 VSIX 中  
  如果您想要建立一個包含圖層驗證程式、命令和其他擴充功能的 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對處理常式建立個別專案。 
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
-8.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。 (Windows 8 中為檔案總管。)  
+8.  若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體，尋找**.vsix**檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
@@ -150,7 +148,7 @@ ms.lasthandoff: 12/22/2017
   
  當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：  
   
--   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案的圖層模型，在圖形中以節點和連結表示。  
+-   圖層模型的 Visual Studio 方案圖形中以節點和連結表示。  
   
 -   定義在方案中並以節點表示的程式碼、專案項目和其他成品，以及代表分析程序所探索到之相依性的連結。  
   
@@ -190,7 +188,7 @@ ms.lasthandoff: 12/22/2017
  從圖層到程式碼中之項目的連結具有「代表」的類別。  
   
 ##  <a name="debugging"></a> 驗證偵錯  
- 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。  
+ 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 Visual Studio 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>測試包含相依性的方案  
  除非有下列特性，否則不會執行驗證：  
@@ -199,7 +197,7 @@ ms.lasthandoff: 12/22/2017
   
 -   在模型中有與程式碼項目相關聯的圖層。  
   
- 第一次啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體測試驗證擴充功能時，請開啟或建立具有下列特性的方案。  
+ 第一次您啟動測試驗證擴充功能，Visual studio 的實驗執行個體開啟或建立具有下列特性的方案。  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>在驗證架構之前執行清除方案  
  每當您更新驗證程式碼時，請使用實驗性方案中 [建置]  功能表上的 [清除方案]  命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您未更新測試相依性圖表或其程式碼，將不會執行驗證方法。  
@@ -207,9 +205,9 @@ ms.lasthandoff: 12/22/2017
 ### <a name="launch-the-debugger-explicitly"></a>明確地啟動偵錯工具  
  驗證會在個別的處理序中執行。 因此，不會觸發驗證方法中的中斷點。 驗證開始時，您必須明確地將偵錯工具附加到處理序。  
   
- 若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體。  
+ 若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 Visual studio 的主要執行個體。  
   
- 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的主要執行個體，並在 [偵錯]  功能表上，按一下 [附加至處理序] 。 選取名為 **Graphcmd.exe**的處理序。  
+ 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至的主要執行個體的 Visual Studio，然後在**偵錯**功能表上，按一下**附加至處理序**。 選取名為 **Graphcmd.exe**的處理序。  
   
  一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。  
   

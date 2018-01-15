@@ -11,17 +11,15 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2bbc9fb84ae2487d3c90efcecf9d48c43c28df32
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 您也可以使用應用程式在執行階段中產生的文字字串[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]執行階段文字範本。 應用程式執行所在的電腦不需要有[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 執行階段範本有時也稱為 「 前置處理過的文字範本 」 因為在編譯時期，範本會產生在執行階段執行的程式碼。  

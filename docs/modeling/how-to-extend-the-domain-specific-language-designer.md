@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: "9"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9eaa07b0fdf0055ea4ba2849f6438882a22cf85e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8db29f57c05f1bc9c80c3dc658c23a7c7e109edd
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 您可以對您用來編輯 DSL 定義設計工具的擴充功能。 類型的擴充功能，可讓您加入功能表命令加入處理常式拖放軌跡，以及觸發特定類型的值或關聯性變更時的規則，連按兩下。 的擴充功能可以封裝成 Visual Studio 整合擴充功能 (VSIX)，並散發給其他使用者。  

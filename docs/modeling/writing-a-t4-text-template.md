@@ -10,17 +10,15 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c37e092f2caa39807760bd04a22587d684a6998d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含"\<html > …"以及所有其他標準部分的 HTML 網頁。 插入至範本是*控制區塊*，其為程式碼片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。  

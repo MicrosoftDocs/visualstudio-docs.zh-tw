@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
-caps.latest.revision: "13"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebfb92bb316cc8c4dc192192c1a00ea42420bcff
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供強大的方式，來從表示模型中的資料產生程式碼、 文件、 組態檔和其他成品。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，您可以建立一組類別，代表您的資料，您可以撰寫文字範本的類別名稱和屬性會反映該資料。  

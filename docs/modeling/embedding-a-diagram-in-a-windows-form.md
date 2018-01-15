@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa6cd040-7c88-4329-b9c3-2a80b312610f
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a19aef7cc11e7db1e04a6f54e4438f74227a55ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5f77fe45fd4289a442f151ff8d1174e68b353bc
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗。  

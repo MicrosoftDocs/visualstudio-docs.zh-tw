@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof 運算子 (JavaScript)
 傳回的布林值將說明物件是否為某個特定類別的執行個體。  
@@ -37,16 +37,16 @@ result = object instanceof class
   
 ## <a name="parameters"></a>參數  
  `result`  
- 必要項。 任何變數。  
+ 必要。 任何變數。  
   
  `object`  
- 必要項。 任何物件運算式。  
+ 必要。 任何物件運算式。  
   
  `class`  
- 必要項。 任何定義的物件類別。  
+ 必要。 任何定義的物件類別。  
   
 ## <a name="remarks"></a>備註  
- 如果 `instanceof` 是 `true` 的執行個體，`object` 運算子會傳回 `class`。 如果 `true` 存在於物件的原型鏈結中，則傳回 `true` (如果為 `class`)。 如果 `false` 不是 `object` 的執行個體，或者如果 `class` 為 `object`，則會傳回 `null`。  
+ 如果 `instanceof` 是 `true` 的執行個體，`object` 運算子會傳回 `class`。 它會傳回`true`如果`class`存在於物件的原型鏈結中。 如果 `false` 不是 `object` 的執行個體，或者如果 `class` 為 `object`，則會傳回 `null`。  
   
 ## <a name="example"></a>範例  
  下面範例會示範如何使用 `instanceof` 運算子。  
@@ -81,6 +81,6 @@ document.write(objTest(obj));
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)   
  [運算子摘要 (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

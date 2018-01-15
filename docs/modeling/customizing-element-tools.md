@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec997cfe101c5148f901c23356592016b72d4791
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-element-tools"></a>自訂項目工具
 在一些 DSL 定義，您一組項目代表單一的概念。 例如，如果您建立的模型，其中一個元件都有一組固定的通訊埠，您一定想要在其父元件的同時間建立的連接埠。 因此，您必須自訂項目建立工具，讓它會建立一組項目，而不是其中一個。 若要達成此目的，您可以自訂如何初始化項目建立工具。  

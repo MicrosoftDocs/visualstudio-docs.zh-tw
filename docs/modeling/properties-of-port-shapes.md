@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.port
 helpviewer_keywords: Domain-Specific Language, port shape
-ms.assetid: 9d69c4c1-4f72-4876-96b6-9b846e0495a4
-caps.latest.revision: "21"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cc8f57b0615be6255425e396f0fc4ea3e763810
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e61d746c1c7e77cb1ec296bfeb6957281be7f2f
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-port-shapes"></a>通訊埠圖案的屬性
 您可以使用連接埠圖形來表示產生的設計工具中的網域類別。  

@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
-ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7f2b46b615c80e2455823ee63262f17f08d307c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2d8646866794a1a09c3f1e1e1f84011093dfc7c5
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立將變更傳播會在項目到另一個 Visualization and Modeling SDK (VMSDK) 中的存放區規則。 存放區中的任何項目變更時，規則排程時所要執行，通常就會認可最外層的交易。 有不同類型的不同類型的事件，例如加入新項目，或刪除它的規則。 您可以將規則附加到特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保模型變更時，會更新圖表。 您可以自訂特定領域語言，加入您自己的規則。  

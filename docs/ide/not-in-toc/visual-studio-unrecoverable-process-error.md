@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 20d3072e1813ff0c94a6479401249681c3481ccd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 703e27a95d6a0f4b680ad6a729dc974dfe98fc11
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # Visual Studio 無法復原的程序錯誤
 
@@ -41,6 +41,7 @@ Visual Studio 2017 會使用多個跨處理序的程序執行所需的背景工�
 - ServiceHub.SettingsHost.exe
 - ServiceHub.Host.CLR.x86.exe
 - ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.RoslynCodeAnalysisService.exe
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe

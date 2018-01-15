@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
-caps.latest.revision: "7"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e117b6fad7a558d002bf0e8689c56dbc2947644f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecff3cb7585d9c80037ff8cdbd087b39a584f2aa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
 交易確認至存放區所做的變更會被視為一個群組。 變更群組可加以認可或回復，當做單一單位。  

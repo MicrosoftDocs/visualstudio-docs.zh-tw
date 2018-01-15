@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: "10"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 845c7168aff8232bab8c9320c48b538c114752f1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改**剪下**，讓它不包含機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  

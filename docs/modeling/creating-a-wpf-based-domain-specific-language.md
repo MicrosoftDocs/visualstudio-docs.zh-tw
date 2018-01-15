@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 917519ad-138f-4869-8158-243014c7ca1d
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 906e00aae6666c994a1ead11584c1f5e48772c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac14bc402d4ca99aa9eddd0e0db150d3d43825ee
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>建立 WPF 架構之網域指定的語言
 您可以建立有 WPF 設計工具，而不是圖形化設計工具的特定領域語言。  

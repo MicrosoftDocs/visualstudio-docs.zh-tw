@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, transformation process
-ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 69f0285746709bd34914362912332d46731179c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 469d2460bab93c73c227b08aeb763e6bfe18261e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字範本轉換流程接受文字範本檔做為輸入，並產生新的文字檔，做為輸出。 例如，您可以使用文字範本產生 Visual Basic 或 C# 程式碼，或您可以產生 HTML 報表。  

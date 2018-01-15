@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
-ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0338425d1812f7638feac01a3e804435cd0ae278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字範本中設定中斷點。 偵錯設計階段文字範本，請儲存文字範本檔，，然後選擇**偵錯 T4 範本**快顯功能表的 [方案總管] 中的檔案。 若要偵錯執行階段文字範本，只要偵錯它所屬的應用程式。  

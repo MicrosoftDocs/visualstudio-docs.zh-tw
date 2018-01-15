@@ -7,24 +7,19 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30c2d7fe3562221c2238a6b12a3eed37318ea504
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="analyze-memory-usage"></a>分析記憶體使用量
-當您進行偵錯時，您可以使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取 Managed 和原生記憶體堆積的一個或多個 *「快照」* (Snapshot)。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  
-  
--   您可以分析一份快照，了解物件類型對於記憶體使用的相對影響，並找出應用程式中無效率使用記憶體的程式碼。  
-  
--   您也可以比較 (差異比對) 應用程式的兩個快照，找出造成記憶體使用量隨著時間逐漸增加的程式碼部分。  
+# <a name="profile-memory-usage-in-visual-studio"></a>分析 Visual Studio 中的記憶體使用量
+當您進行偵錯時，您可以使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取受控 原生之記憶體堆積的一或多個「快照」，以利了解物件類型的記憶體使用量影響。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  
   
  下圖顯示 [診斷工具] 視窗 (於 Visual Studio 2015 Update 1 及更新版本中提供)：  
   
@@ -161,13 +156,14 @@ ms.lasthandoff: 12/22/2017
  ![原生類型差異檢視](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>部落格和影片  
- [Visual Studio 2015 中的診斷工具偵錯工具視窗](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+
+|         |         |
+|---------|---------|
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何在 Visual Studio 2017 中分析記憶體使用量和 CPU 使用量。 |
+
+ [Analyze CPU and Memory While Debugging](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/) (偵錯時分析 CPU 與記憶體)  
   
- [部落格：在 Visual Studio 2015 偵錯時的記憶體使用量工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
-  
- [Visual C++ 部落格：VS2015 Preview 中的原生記憶體診斷](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
-  
- [Visual C++ 部落格：Visual Studio 2015 CTP 的原生記憶體診斷工具](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/) (Visual C++ 部落格：Visual C++ 2015 中的記憶體分析)  
 
 ## <a name="see-also"></a>請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
