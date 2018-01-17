@@ -14,12 +14,13 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c484eb92ecc163cfddc101ea2bc7b25dafa3a2f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>適用於 Python 和 Azure 的遠端偵錯疑難排解工具
 

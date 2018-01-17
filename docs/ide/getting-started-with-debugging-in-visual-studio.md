@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: "5"
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 29fe0104a79dc4f627f910cd60ceb1f17bb94c56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Visual Studio 中的使用者偵錯入門
 Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在本主題中，可了解如何開始使用最基本的偵錯 UI 功能。  

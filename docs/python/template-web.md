@@ -12,12 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 專案範本
 
@@ -31,7 +33,7 @@ Visual Studio 不包含這些架構本身。 您必須以滑鼠右鍵按一下�
 
 Bottle、Flask 和 Django 範本各自都包含一個含有一些頁面及靜態檔案的起始網站。 此程式碼足以用來在本機 (其中某些設定需要從環境取得) 執行伺服器並進行偵錯，以及部署至 Microsoft Azure (其中必須提供 [WSGI 應用程式 (英文)](http://www.python.org/dev/peps/pep-3333/) 物件)。
 
-從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](python-environments.md#virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
+從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](python-environments.md#global-and-virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
 
 ![安裝專案範本所需之封裝的對話方塊](media/template-web-requirements-txt-wizard.png)
 

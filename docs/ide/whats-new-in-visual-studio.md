@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
@@ -127,7 +127,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 *   轉換 if-to-switch
 *   移除未使用的變數
 
-如需詳細資訊，請參閱[快速動作](../ide/quick-actions.md#common-quick-actions)。
+如需詳細資訊，請參閱[快速動作](../ide/common-quick-actions.md)。
 
 #### <a name="interact-with-git"></a>與 Git 互動
 當您在 Visual Studio 中處理專案時，可以設定您的程式碼，然後快速認可並發行到 Git 服務。 您也可以從 IDE 右下角的按鈕中使用功能表點選，來管理您的 Git 儲存機制。

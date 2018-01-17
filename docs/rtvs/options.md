@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 
@@ -34,8 +34,8 @@ ms.lasthandoff: 12/22/2017
 
 - 程式碼格式設定選項 (請參閱[編輯器選項](code-editing.md#editor-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [格式設定]
 - Linting 選項 (請參閱 [Linting](code-linting.md))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [Lint]
-- 進階編輯器選項 (在[此主題中描述](#text-editor-r-advanced-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [進階]
-- 行為選項 (在[此主題中描述](#r-tools-advanced-options))：[R 工具] > [選項] 功能表，或 [工具] > [選項]，然後捲動至 [R 工具]。
+- 進階編輯器選項 (在[此主題中描述](#text-editor-r--advanced-options))：[工具] > [選項] 功能表，然後選取 [文字編輯器] > [R] > [進階]
+- 行為選項 (在[此主題中描述](#r-tools--advanced-options))：[R 工具] > [選項] 功能表，或 [工具] > [選項]，然後捲動至 [R 工具]。
 
 [R 工具] > [資料科學設定] 命令整體上也會影響幾個 Visual Studio 的不同設定。 下一節將描述此命令。
 

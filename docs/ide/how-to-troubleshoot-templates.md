@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：針對範本進行疑難排解
 
@@ -47,20 +47,6 @@ ms.lasthandoff: 01/05/2018
 1. 將新的 .zip 檔放在與舊 .zip 檔相同的目錄中。
 
 1. 刪除已解壓縮的樣板檔案和舊樣板 .zip 檔案。
-
-## <a name="monitor-the-event-log"></a>監視事件記錄檔
-
-處理範本 .zip 檔案時遇到 Visual Studio 記錄錯誤。 如果 [新增專案] 對話方塊中未如預期顯示範本，您可以使用 [事件檢視器] 針對此問題進行疑難排解。
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>在事件檢視器中找出範本錯誤
-
-1. 在 Windows 中，從 [開始] 功能表中選擇 [Windows 系統管理工具] > [事件檢視器]。
-
-1. 在左窗格中，選擇 [Windows 記錄檔] > [應用程式]。
-
-1. 尋找 **Source** 值為 `Visual Studio - VsTemplate` 的事件。
-
-1. 若要檢視錯誤，請按兩下範本事件。
 
 ## <a name="enable-diagnostic-logging"></a>啟用診斷記錄
 

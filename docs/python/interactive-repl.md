@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
-ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 

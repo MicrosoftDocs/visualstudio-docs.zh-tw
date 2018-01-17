@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -48,7 +48,6 @@ ms.lasthandoff: 12/22/2017
 .NET 專案管理資源的方式和其他專案類型不同。 如需下列資源的詳細資訊：
 
 - 通用 Windows 平台 (UWP) 應用程式，請參閱[應用程式資源和資源管理系統](/windows/uwp/app-resources/)
-- Windows 8.x 應用程式，請參閱[定義應用程式資源 (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - C++ 專案，請參閱[使用資源檔](/cpp/windows/working-with-resource-files)和[如何：建立資源](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>另請參閱

@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 
@@ -62,8 +62,6 @@ ms.lasthandoff: 01/05/2018
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   若為 Windows 8.1 C# 專案，請在 .vstemplate 檔的開頭和結尾 `<TemplateData>` 標記內，新增下列 XML：`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`。 若為 Windows 8.1 C++ 專案，請使用 `WinRT-Native-6.3` 值。 若為 Windows 10 及其他專案類型，請參閱 [TemplateGroupID 項目 (擴充性)](../extensibility/templategroupid-element-visual-studio-templates.md)。 如需完整的 .vstemplate 參考，請參閱[範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)。
 
 1. 在 Visual Studio 中，儲存並關閉 .vstemplate 檔案。
 

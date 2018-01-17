@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: quickstart
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6e26a67c8333b343fa00e25540933223b92172dd
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b400e8a8c9c69b0c18204c55522d287d55d845ab
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：在 Visual Studio 中從現有程式碼建立 Python 專案
 

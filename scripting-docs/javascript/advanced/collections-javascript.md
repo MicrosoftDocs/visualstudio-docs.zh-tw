@@ -17,11 +17,11 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa14730fffbf7c2747f15243590be89dc01a7ceb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab554f50f6d2fcdac92c562333e625dc0eb32f6
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="collections-javascript"></a>集合 (JavaScript)
 您可以使用集合物件 [Map](../../javascript/reference/map-object-javascript.md)、[Set](../../javascript/reference/set-object-javascript.md) 和 [WeakMap](../../javascript/reference/weakmap-object-javascript.md) 來儲存值和物件。 這些物件可提供簡便的方法讓您使用索引鍵或值 (而非使用索引) 來加入和擷取成員。 若要使用索引來存取集合的成員，請使用 `Array` 物件。 如需詳細資訊，請參閱[使用陣列](../../javascript/advanced/using-arrays-javascript.md)。  
@@ -47,7 +47,7 @@ document.write(m.get(2));
 document.write("<br />");  
   
 m.forEach(function (value, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+    document.write(value.toString() + "<br />");  
 });  
   
 // Output:  
@@ -71,7 +71,7 @@ s.add(1776);
 s.add("founding father");  
   
 s.forEach(function (value) {  
-    document.write(item.toString() + ", ");  
+    document.write(value.toString() + ", ");  
 });  
   
 // Output:  
@@ -79,5 +79,5 @@ s.forEach(function (value) {
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階 JavaScript](../../javascript/advanced/advanced-javascript.md)
