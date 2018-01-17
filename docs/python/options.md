@@ -18,12 +18,14 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 

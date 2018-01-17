@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概觀
 
@@ -76,7 +76,7 @@ Visual Studio 還可協助您進行更多的工作。 如需更完整的清單�
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 
-若要開始，請下載 Visual Studio 並將它安裝在您的系統上。 您可以從 [Visual Studio 2017](https://www.visualstudio.com/vs/visual-studio-2017/) 下載它。
+若要開始，請下載 Visual Studio 並將它安裝在您的系統上。 您可以從 [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 下載它。
 
 Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 此策略有助於將 Visual Studio 安裝項的資源使用量降到比以往低，這意謂著它的安裝和更新速度也更快。
 
