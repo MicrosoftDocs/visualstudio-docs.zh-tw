@@ -12,9 +12,6 @@
         - name: 跨平台
           tocHref: /visualstudio/cross-platform/
           topicHref: /visualstudio/cross-platform/index
-        - name: 'C# IDE'
-          tocHref: /visualstudio/csharp-ide/
-          topicHref: /visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp
         - name: 資料工具
           tocHref: /visualstudio/data-tools/
           topicHref: /visualstudio/data-tools/index
@@ -82,9 +79,6 @@
         - name: 測試
           tocHref: /visualstudio/test/
           topicHref: /visualstudio/test/improve-code-quality
-        - name: Visual Basic IDE
-          tocHref: /visualstudio/vb-ide/
-          topicHref: /visualstudio/vb-ide/refactoring-vb
         - name: 工作流程設計工具
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
