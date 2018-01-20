@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用與 Visual Studio 的傾印檔案
 使用或不含堆積; 傾印檔案建立傾印檔案;開啟傾印檔案;尋找二進位檔、 pdb 的傾印檔案的原始程式檔。
@@ -56,11 +56,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Visual Studio 可以對來自 ARM 裝置的原生應用程式傾印檔案進行偵錯。 Visual Studio 也可以對來自 ARM 裝置之 Managed 應用程式的應用程式傾印檔案進行偵錯，不過只能使用原生偵錯工具。  
   
--   若要偵錯[核心模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，在 Visual Studio 2013，請下載[Windows 8.1 版本的 Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 請參閱[Visual Studio 中的核心偵錯](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
+-   若要偵錯[核心模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，請下載適用於屬於 Windows 的 偵錯工具[Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit)。 
   
 -   Visual Studio 無法偵錯傾印檔案儲存在較舊的傾印格式稱為[完整使用者模式傾印](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 請注意，完整使用者模式傾印與含有堆積的傾印並不相同。  
   
--   使用偵錯[SOS.dll （SOS 偵錯擴充功能）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，您必須安裝 Debugging Tools for Windows 的是 Windows Driver Kit (WDK) 的一部分。 請參閱[Windows 8.1 Preview： 下載套件、 位元，以及工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+-   使用偵錯[SOS.dll （SOS 偵錯擴充功能）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，您必須安裝偵錯工具，適用於屬於 Windows [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>建立傾印檔案  
  若要使用 Visual Studio 建立傾印檔案：  

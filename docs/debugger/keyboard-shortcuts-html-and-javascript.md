@@ -18,14 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1d40167e8d7510e719fa55c534feb44ac877182a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e87e51e1e2969a8256ae805d60f5b53663b446e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
-![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  鍵盤快速鍵在 Visual Studio 中偵錯使用 HTML 和 JavaScript UWP 應用程式。  
   

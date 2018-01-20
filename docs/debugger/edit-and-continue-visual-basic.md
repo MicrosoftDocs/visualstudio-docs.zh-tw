@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 「編輯後繼續」是 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 偵錯的一個功能，當程式碼在中斷模式中執行時，這項功能可讓您變更程式碼。 套用程式碼編輯之後，您可以繼續以新的編輯執行程式碼，並查看其效果。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
  適用於 Windows 10 UWP 應用程式和.NET Framework 4.6 為目標的 x86 和 x64 應用程式中支援 編輯後繼續 （.NET Framework 是僅限桌面版本） 的桌面或更新版本。
 
  > [!NOTE]
- > 不支援的應用程式與平台包括 ASP.NET 5、 Silverlight 5、 Windows Phone 和 Windows Phone 模擬器和 Windows 8.1。
+ > 不支援的應用程式與平台包括 ASP.NET 5、 Silverlight 5 和 Windows 8.1。
   
  編輯後繼續時，不支援在開始偵錯使用**附加至處理序**。 編輯後繼續不支援最佳化程式碼或混合的 managed 和原生程式碼。 如需詳細資訊，請參閱[支援程式碼變更 (C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)。
   

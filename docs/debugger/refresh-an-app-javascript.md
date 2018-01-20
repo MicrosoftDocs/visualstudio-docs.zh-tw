@@ -1,5 +1,5 @@
 ---
-title: "重新整理 UWP 或 Windows 8.1 應用程式 |Microsoft 文件"
+title: "重新整理的 UWP 應用程式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>重新整理 UWP 或 Windows 8.1 應用程式
-![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>重新整理 Visual Studio 中的 UWP 應用程式
   
- 您可以變更您的程式碼偵錯，然後重新整理使用 JavaScript 所選擇的 UWP 應用程式時**重新整理 Windows 應用程式**按鈕**偵錯**工具列。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 和 Windows 8.1 的應用程式支援這項功能。  
+ 您可以變更您的程式碼偵錯，然後重新整理使用 JavaScript 所選擇的 UWP 應用程式時**重新整理 Windows 應用程式**按鈕**偵錯**工具列。 選擇此按鈕隨即會重新載入應用程式，而不需要停止並重新開始偵錯工具。 重新整理功能可讓您修改 HTML、CSS 和 JavaScript 程式碼，並且快速查看結果。 UWP 應用程式支援這項功能。  
   
  重新整理不會維護您的應用程式狀態，也不會將下列變更反映給應用程式：  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>若要重新整理應用程式  
   
-1.  在 Visual Studio 中，使用巡覽應用程式專案範本建立新的專案。  
-  
-     這可以是 UWP 應用程式或 Windows 8.1 應用程式。  
-  
-2.  在 Visual Studio 中開啟範本，並選取偵錯目標。  
-  
-     如果 Windows Phone 專案是您目前的啟始專案，請選取偵錯目標的 Windows Phone 模擬器。 否則，請選取**模擬器**或**本機**。  
+1.  在 Visual Studio 中開啟 UWP 專案，然後選取 **本機**做為偵錯目標。
   
      ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  請按 F5 以偵錯模式執行應用程式。  
   
-4.  切換至 Visual Studio。 (按 F12。)  
+4.  切換至 Visual Studio。 
   
-5.  在**方案總管 中**，請在**頁面** > **家用**資料夾中，開啟 home.html。  
-  
-6.  變更頁面標題文字  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     為其他項目，如下所示：  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  在 UWP 應用程式的首頁上，編輯某些 HTML。
   
 7.  按一下**重新整理 Windows 應用程式**按鈕時，哪些看起來像這樣：![重新整理 Windows 應用程式按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。  
   
-8.  切換至應用程式。 應用程式隨即重新載入而不重新啟動偵錯工具，且會顯示新的頁面標題。  
+8.  切換至應用程式。 應用程式會重新載入，並用來呈現應用程式更新的 HTML。
   
 ## <a name="see-also"></a>請參閱  
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

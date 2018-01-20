@@ -12,22 +12,20 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: b4481fef-3ebf-4f7d-9748-d43821a0ebac
 caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f98867a5420755ca2eb4e2fb5e75070759a1a91b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a0555e2a3ea600a1f5b11eaf95a48f4cfd7df3e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>偵錯使用 Visual Studio 中的預先擷取的內容的 UWP 應用程式
-![僅適用於 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
- 若要讓 UWP 應用程式更能有效回應，您可以要求 Windows 將在應用程式預先載入某些 web 內容，例如網頁或影像[WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)快取。 這項功能稱為預先擷取。 它是特別為啟動時所使用的內容有效，但可以預先擷取其他經常使用的內容太。 方法的[Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx)類別可讓您指定您想要預先載入內容 Uri。 請參閱 Windows SDK[內容預先擷取範例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)如需如何將 ContentPrefetcher 功能加入至您的應用程式的範例。  
+ 若要讓 UWP 應用程式更能有效回應，您可以要求 Windows 將在應用程式預先載入某些 web 內容，例如網頁或影像[WinINet](http://msdn.microsoft.com/library/0a06f2af-957a-4dff-a8cc-187370181b5c)快取。 這項功能稱為預先擷取。 它是特別為啟動時所使用的內容有效，但可以預先擷取其他經常使用的內容太。 方法的[Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher)類別可讓您指定您想要預先載入內容 Uri。 請參閱 Windows SDK[內容預先擷取範例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)如需如何將 ContentPrefetcher 功能加入至您的應用程式的範例。  
   
  Windows 會使用啟發學習法，判斷預先擷取的發生時機、是否要預先擷取以及要下載的資源。 啟發學習法會將系統網路和電源狀況、使用者應用程式使用歷程記錄，以及先前嘗試預先擷取的結果都納入考量。 在 Visual Studio 中，您可以使用**觸發 Windows 市集應用程式預先擷取**命令強制 Windows 忽略 ContentPrefetcher 啟發學習法並預先載入所有指定的 web 內容。 如果您要測試應用程式的行為或效能，並且要在已知的狀態 (已載入或未載入) 下預先擷取內容，這個命令就很有用。  
   

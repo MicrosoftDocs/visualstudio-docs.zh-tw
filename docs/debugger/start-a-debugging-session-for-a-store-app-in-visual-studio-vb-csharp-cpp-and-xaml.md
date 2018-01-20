@@ -27,22 +27,23 @@ f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.Authentication
 - VC.Project.IVCAppHostRemoteDebugPageObject.DebuggerType
 - VC.Project.IVCAppHostSimulatorDebugPageObject.BreakpointBehavior
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 66ec0e79-8261-4c19-a618-3fd1b3f71bbd
 caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 367fc334d0268a73e8ad1a33ebdc6e74036ddc86
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio 中啟動的 UWP 應用程式的偵錯工作階段
   
@@ -73,10 +74,10 @@ ms.lasthandoff: 01/10/2018
 |||  
 |-|-|  
 |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。|  
-|**模擬器**|為 UWP 偵錯 Visual Studio 模擬器中的應用程式和[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。 模擬器是可讓您偵錯裝置功能的桌面視窗 — 例如觸控筆勢與裝置旋轉 —，可能無法使用本機電腦上。 這個選項才可用如果您的應用程式**目標平台最小。版本**小於或等於您的開發電腦上的作業系統。 請參閱[在模擬器中執行的 UWP 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
+|**模擬器**|偵錯用於 UWP 應用程式的 Visual Studio 模擬器中的應用程式。 模擬器是可讓您偵錯裝置功能的桌面視窗 — 例如觸控筆勢與裝置旋轉 —，可能無法使用本機電腦上。 這個選項才可用如果您的應用程式**目標平台最小。版本**小於或等於您的開發電腦上的作業系統。 請參閱[在模擬器中執行的 UWP 應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
 |**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，Visual Studio 遠端工具必須是遠端裝置上安裝並執行。 請參閱[遠端電腦上執行的 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
 |**裝置**|USB 連接的裝置上的應用程式進行偵錯。 裝置必須是開發人員解除鎖定，並具有已解除鎖定螢幕。|  
-|**行動裝置的模擬器**|模擬器啟動模擬器名稱中指定的設定、 部署應用程式，並開始偵錯。 只有在執行 Windows 8.1 或更新版本的 HYPER-V 機器上使用模擬器。|  
+|**行動裝置的模擬器**|模擬器啟動模擬器名稱中指定的設定、 部署應用程式，並開始偵錯。 只有在啟用 HYPER-V 機器上使用模擬器。|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>選擇 其他偵錯選項  
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 01/10/2018
   
 -   針對 Visual C# 與 Visual Basic 應用程式，請在 [ **偵錯** ] 屬性頁上選取 [ **不啟動，但在我的程式碼啟動時進行偵錯** ]。  
   
--   針對 Visual c + + 和 JavaScript 的應用程式，選擇**是**從**啟動應用程式**清單**偵錯**屬性頁。  
+-   針對 Visual c + + 和 JavaScript 的應用程式，選擇**否**從**啟動應用程式**清單**偵錯**屬性頁。  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (選擇性) 停用網路回送  
   
@@ -169,7 +170,7 @@ ms.lasthandoff: 01/10/2018
   
  應用程式會以偵錯模式啟動。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。  
   
- 。 如需有關偵錯背景工作的詳細資訊，請參閱[觸發程序暫停、 繼續及背景事件用於 UWP 應用程式)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+ 如需有關偵錯背景工作的詳細資訊，請參閱[觸發程序暫停、 繼續及背景事件用於 UWP 應用程式)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
   
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 在偵錯工具中啟動已安裝的應用程式  
 使用 F5 開始偵錯時，Visual Studio 會建置並部署應用程式、將應用程式設定成以偵錯模式執行，然後再啟動應用程式。 若要啟動已安裝在裝置的應用程式，使用**偵錯已安裝的應用程式套件** 對話方塊。 當您需要偵錯已安裝來自 Microsoft Store 的應用程式，或者有應用程式中，原始程式檔，但沒有應用程式的 Visual Studio 專案時，此程序會很有用。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。  
@@ -177,9 +178,6 @@ ms.lasthandoff: 01/10/2018
 應用程式可以安裝在本機裝置，也可以安裝在遠端裝置上。  您可以立即啟動應用程式，也可以設定應用程式，使其藉由其他處理序或方式啟動 (例如從 [開始] 功能表或透過啟用合約) 後再於偵錯工具中執行。如果您只希望偵錯背景處理程序而不啟動應用程式，還可以將應用程式設定成以偵錯模式執行。 如需詳細資訊，請參閱[觸發程序暫停、 繼續及背景事件用於 UWP 應用程式)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
   
 若要啟動已安裝的應用程式偵錯工具中，選擇**偵錯**，然後**其他偵錯目標**，然後**偵錯已安裝的應用程式套件**。 如需其他指示，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
-
-> [!NOTE]
-> 針對 Windows 8.1 中，選擇 **偵錯**，然後選擇 **偵錯已安裝的應用程式套件**。
 
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>將偵錯工具附加至執行的 UWP 應用程式  
 

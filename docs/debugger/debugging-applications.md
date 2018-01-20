@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。  
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|[偵錯 UWP 和 Windows 8.1 應用程式](../debugger/debugging-windows-store-and-windows-universal-apps.md)|描述如何偵錯 UWP 應用程式。|  
+|[對 UWP App 進行偵錯](../debugger/debugging-windows-store-and-windows-universal-apps.md)|描述如何偵錯 UWP 應用程式。|  
 |[對 Managed 程式碼進行偵錯](../debugger/debugging-managed-code.md)|說明如何對 Managed 程式碼 (Visual C#、Visual Basic 及 F3) 進行偵錯。|  
 |[對機器碼進行偵錯](../debugger/debugging-native-code.md)|說明如何對不同種類的原生 C++ 應用程式進行偵錯。|  
 |[對 GPU 程式碼進行偵錯](../debugger/debugging-gpu-code.md)|說明如何對圖形處理器 (GPU) 上執行的 C++ 程式碼進行偵錯。|  

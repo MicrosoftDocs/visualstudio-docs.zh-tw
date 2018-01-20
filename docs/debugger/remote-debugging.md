@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -34,12 +34,11 @@ ms.lasthandoff: 01/10/2018
 
 |情節|連結|
 |-|-|-|
+|Azure|[偵錯 Azure 應用程式服務 （快照集偵錯工具） 上的 ASP.NET](../debugger/debug-live-azure-applications.md)，[遠端偵錯在 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)，或[偵錯 Azure Service Fabric 應用程式](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[遠端偵錯 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# 或 Visual Basic|[遠端偵錯 C# 或 Visual Basic 專案](../debugger/remote-debugging-csharp.md)|
 |C++|[對 C++ 專案進行遠端偵錯](../debugger/remote-debugging-cpp.md)|
 |通用 Windows 應用程式 (UWP)|[在遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)和[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)|
-|Azure|[在 Azure 上的遠端偵錯 ASP.NET](remote-debugging-azure.md)|
-|Azure Service Fabric|[遠端 Service Fabric 應用程式進行偵錯](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。|
 
 如果您只想要下載及安裝遠端偵錯工具，而且不需要任何額外的指示針對您的案例，請遵循本文章中的步驟。
   
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 
 1. 尋找**msvsmon.exe**比對您的 Visual Studio 版本的目錄中。 Visual Studio 企業版 2017年:
 
-      **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
       **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 

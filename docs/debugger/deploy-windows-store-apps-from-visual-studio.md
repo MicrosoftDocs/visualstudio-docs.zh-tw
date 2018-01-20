@@ -1,7 +1,7 @@
 ---
 title: "從 Visual Studio 的 UWP 應用程式部署 |Microsoft 文件"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>部署 Visual Studio 從 UWP 應用程式
-![僅適用於 Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Visual Studio 部署功能建置和註冊的目標裝置上使用 Visual Studio 所建立的 UWP 應用程式。 應用程式的確切註冊方式取決於目標裝置是本機還是遠端：  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 在 Windows 10 的遠端裝置，您必須啟用[開發人員模式下](/windows/uwp/get-started/enable-your-device-for-development)。 在執行建立者的更新的 Windows 10 裝置上或更新版本中，遠端工具會自動安裝時部署您的應用程式。 如需詳細資訊，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
 
 > [!NOTE]
-> 在 Windows 8.1 和 Windows 10 的 pre-建立者的更新版本，適用於 Visual Studio 遠端工具必須安裝在遠端裝置上，必須執行遠端偵錯工具。 在 Windows 8.1，您也必須安裝開發人員授權。
+> 在 Windows 10 的 pre-建立者的更新版本中，適用於 Visual Studio 遠端工具必須安裝在遠端裝置上，，必須執行遠端偵錯工具。
   
 部署使用遠端偵錯工具網路通道，將應用程式檔案傳送至遠端裝置。  
   
@@ -117,5 +115,6 @@ ms.lasthandoff: 01/10/2018
 -   在 [JavaScript 偵錯] 屬性頁上，將 [啟動應用程式]  值設定為 [是] 。  
   
 ## <a name="see-also"></a>請參閱  
- [偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。   
+ [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)   
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)

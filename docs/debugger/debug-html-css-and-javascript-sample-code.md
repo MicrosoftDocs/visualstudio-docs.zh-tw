@@ -1,5 +1,5 @@
 ---
-title: "偵錯 HTML、 CSS 和 JavaScript 範例程式碼 |Microsoft 文件"
+title: "偵錯 HTML 和 CSS 程式碼範例 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -18,14 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bad0d2641fd829149d29d4c82815c14436c3e72f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1fc92029910b49692e055f165cdf8b93d13e3a05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-css-and-javascript-sample-code"></a>偵錯 HTML、CSS 和 JavaScript 範例程式碼
-![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-sample-code"></a>偵錯 HTML 和 CSS 程式碼範例
   
  本主題中的程式碼是範例檔案[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。  
   
@@ -64,7 +63,7 @@ ms.lasthandoff: 12/22/2017
     var activation = Windows.ApplicationModel.Activation;  
   
     var myData = [];  
-    for (var x = 0; x < 4; x++) {  
+    for (var x = 0; x < 3; x++) {  
         myData[x] = { flipImg: "/images/logo.png" }  
     };  
   
@@ -86,9 +85,9 @@ ms.lasthandoff: 12/22/2017
   
     function updateImages() {  
   
-        pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-        pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-        pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+        pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+        pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+        pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     };  
   
     app.oncheckpoint = function (args) {  

@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS 和 Visual Studio 2017 在 Azure 上的遠端偵錯 ASP.NET Core
-您可以部署到 Windows Server 電腦與 IIS，ASP.NET Web 應用程式，並將它設定為遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
+Azure 應用程式服務，我們建議您偵錯使用[快照偵錯工具](../debugger/debug-live-azure-applications.md)也可以遵循本主題中的指示從 Visual Studio 附加偵錯工具。 如果您正在 Windows Server IIS 與 Azure VM 上，您也可以設定它進行遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
 
 > [!WARNING]
 > 請務必刪除您已完成的步驟，在本教學課程時，您建立的 Azure 資源。 這樣一來，您可以避免產生不必要的費用。
@@ -184,7 +184,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 2. 在 Visual Studio 中，按一下 **偵錯 > 附加至處理序**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017，您可以重新連接至您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。 
+    > 在 Visual Studio 2017，您可以重新連接至您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift+Alt+P). 
 
 3. [限定詞] 欄位設定為**\<遠端電腦名稱 >: 4022**。
 4. 按一下**重新整理**。

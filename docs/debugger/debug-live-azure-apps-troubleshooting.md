@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照集，則在 Visual Studio 中偵錯的疑難排解和已知問題
 
@@ -71,6 +71,17 @@ ms.lasthandoff: 01/05/2018
 - 特殊變數，例如*$FUNCTION*或*$CALLER*，無法評估在條件陳述式或 logpoints ASP.NET Core 專案。
 - 偵錯快照集不會對此應用程式服務具有[本機快取](/azure/app-service/app-service-local-cache)開啟。
 - 目前不支援偵錯應用程式開發介面應用程式的快照集。
+
+## <a name="site-extension-upgrade"></a>網站擴充功能升級
+
+快照集偵錯和 Application Insights 取決於 ICorProfiler 載入網站處理序，並在升級期間造成檔案鎖定問題。 我們建議此程序，確保沒有任何停機時間生產網站。
+
+- 建立[部署位置](/azure/app-service/web-sites-staged-publishing)應用程式服務中，您的網站部署至該位置。
+- 交換生產位置，從 Visual Studio 中的 Cloud Explorer 中，或從 Azure 入口網站。
+- 停止位置站台。 這需要幾秒鐘關閉站台 w3wp.exe 處理程序，從所有執行個體終止的時間。
+- 升級從 Kudu 網站或 Azure 入口網站的位置的網站擴充功能 (*應用程式服務刀鋒視窗 > 開發工具 > 延伸模組 > 更新*)。
+- 啟動位置站台。 我們建議您瀏覽再次準備網站。
+- 交換生產位置。
 
 ## <a name="see-also"></a>另請參閱
 

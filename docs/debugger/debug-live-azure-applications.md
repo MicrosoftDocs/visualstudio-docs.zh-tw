@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
@@ -47,9 +47,12 @@ Snappoints 和 logpoints 的類似於中斷點。 不同於中斷點、 snappoin
 
    ![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png "啟動快照集偵錯工具")
 
-    您選取第一次**附加偵錯工具的快照集**，當系統提示您安裝在您的 Azure 應用程式服務上的快照集偵錯工具。 此安裝需要重新啟動您的 Azure 應用程式服務。 
+    您選取第一次**附加偵錯工具的快照集**，當系統提示您安裝在您的 Azure 應用程式服務上的快照集偵錯工具的網站擴充功能。 此安裝需要重新啟動您的 Azure 應用程式服務。 
 
    Visual Studio 現在為偵錯模式的快照集。
+
+    > [!NOTE]
+    > Application Insights 的網站擴充功能也支援偵錯快照集。 如果您遇到的 「 網站過期的擴充功能 」 錯誤訊息，請參閱[疑難排解秘訣和已知的問題進行偵錯快照集](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
 
    ![偵錯模式的快照集](../debugger/media/snapshot-message.png "快照集偵錯模式")
 
@@ -130,7 +133,7 @@ Snappoint 開啟時，它會擷取快照集，每當該行程式碼放置 snappo
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要了解如何在檢視快照集時，檢查變數，請參閱[Debbuger 功能導覽](../debugger/debugger-feature-tour.md)。
+- 若要了解如何在檢視快照集時，檢查變數，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
 - 檢視[常見問題集的快照集偵錯](../debugger/debug-live-azure-apps-faq.md)。
 - 檢視[疑難排解秘訣和已知的問題進行偵錯快照集](../debugger/debug-live-azure-apps-troubleshooting.md)。
 - 如果您想要檢視在 Application Insights 中的快照集，當您的應用程式叫用例外狀況，您可以的。 如需詳細資訊，請參閱[偵錯.NET 應用程式中的例外狀況的快照集](/azure/application-insights/app-insights-snapshot-debugger)。 Application Insights 支援除了 Azure App Service 的 Service Fabric 應用程式。

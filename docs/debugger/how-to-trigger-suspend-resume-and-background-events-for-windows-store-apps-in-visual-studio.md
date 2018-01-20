@@ -1,7 +1,7 @@
 ---
 title: "如何觸發暫止、 繼續及背景事件 UWP 應用程式進行偵錯時 |Microsoft 文件"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
@@ -31,19 +30,6 @@ ms.lasthandoff: 01/10/2018
  本主題也將說明如何對 **背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 (即使您的應用程式並未執行也無妨)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。  
   
  程序生命週期管理和背景工作的詳細資訊請參閱[正在啟動，繼續執行，並多工](/windows/uwp/launch-resume/index)。  
-  
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
- [觸發處理程序生命週期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [觸發背景工作](#BKMK_Trigger_background_tasks)  
-  
--   [從標準偵錯工作階段中觸發背景工作](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [在應用程式未執行時觸發背景工作](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [診斷背景工作啟用錯誤](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 觸發處理程序生命週期管理事件  
  當使用者切換離開您的應用程式，或當 Windows 進入低電力狀態時，Windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「 **暫停** 」狀態繼續時，它會進入「 **執行中** 」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。  
@@ -88,7 +74,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。  
   
-     若是 C++ 專案，您可能必須展開 [ **組態屬性** ]，然後選擇 [ **偵錯**]。  
+     針對 c + + 和 JavaScript 專案中，展開**組態屬性**，然後選擇 **偵錯**。  
   
 3.  執行下列任一步驟：  
   
@@ -109,12 +95,12 @@ ms.lasthandoff: 01/10/2018
      ![暫停、 繼續、 結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作  
- 您可以使用 [偵錯已安裝的應用程式] 對話方塊，載入已安裝在偵錯工具中的應用程式。 比方說，您可能已從 Microsoft 市集安裝的應用程式進行偵錯或有原始程式檔，應用程式中，但沒有應用程式的 Visual Studio 專案時，偵錯應用程式。 [偵錯已安裝的應用程式] 對話方塊可讓您在 Visual Studio 電腦或遠端裝置以偵錯模式啟動應用程式，或是將應用程式設定成以偵錯模式執行而不啟動。 請參閱**在偵錯工具中啟動已安裝的應用程式**區段[的 UWP 應用程式啟動偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger)。
+ 使用**偵錯已安裝的應用程式套件**載入偵錯工具已安裝的應用程式 對話方塊。 比方說，您可能已從 Microsoft 市集安裝的應用程式進行偵錯或有原始程式檔，應用程式中，但沒有應用程式的 Visual Studio 專案時，偵錯應用程式。 **偵錯已安裝的應用程式套件**對話方塊可讓您在 Visual Studio 電腦或遠端裝置，或是將設定成偵錯模式執行，而不是啟動應用程式的偵錯模式中啟動應用程式。 如需詳細資訊，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
   
  將應用程式載入至偵錯工具後，您就能使用上述任何程序。  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 診斷背景工作啟用錯誤  
- Windows 事件檢視器中背景基礎結構的診斷記錄包含詳細資訊，您可以用來診斷和疑難排解背景工作錯誤。 若要檢視記錄檔：  
+ Windows 事件檢視器中背景基礎結構的診斷記錄包含詳細的資訊，您可以用來診斷和疑難排解背景工作錯誤。 若要檢視記錄檔：  
   
 1.  開啟 [事件檢視器] 應用程式。  
   
@@ -127,5 +113,5 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>請參閱  
  [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [應用程式生命週期](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [啟動、 繼續及多工作業](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)   
+ [啟動、 繼續及多工作業](/windows/uwp/launch-resume/index)
