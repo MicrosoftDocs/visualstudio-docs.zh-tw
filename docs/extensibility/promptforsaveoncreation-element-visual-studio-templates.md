@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 項目 (Visual Studio 範本)
 指定是否會提示使用者輸入的儲存位置透過專案**新專案**對話方塊建立專案時。 如果這個項目設定為`true`，則會提示使用者輸入新的儲存位置; 如果`false`，則它們不會提示您。 （也就是會建立暫存的專案）。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>語法  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>備註  
  `PromptForSaveOnCreation` 是選擇性項目。 預設值是 `false`。  
   
- 暫存專案是您可以建立和修改，而不將該專案的內容儲存在磁碟上。 如需詳細資訊，請參閱[NIB 暫存專案](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+ 暫存專案是您可以建立和修改，而不將該專案的內容儲存在磁碟上。  
   
 ## <a name="example"></a>範例  
  下列範例會設定的值`PromptForSaveOnCreation`等於`false`，指定允許要建立為暫存專案的專案。  

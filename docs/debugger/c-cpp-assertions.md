@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示陳述式會指定您希望為您程式中的點，則為 true 的條件。 如果該條件不成立，判斷提示會失敗，中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   MFC 程式的 MFC 判斷提示。  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)使用 ATL 的程式  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)使用 ATL 的程式  
   
 -   使用 C 執行階段程式庫的程式的 CRT 判斷提示。  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- 因為`ASSERT`您程式中，發行版本中不會評估運算式`nM`將偵錯和發行版本中有不同的值。 若要避免這個問題，在 MFC 中的，您可以使用[確認](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)巨集，而不是`ASSERT`。  `VERIFY`評估所有版本中的運算式，但不會檢查發行版本中的結果。  
+ 因為`ASSERT`您程式中，發行版本中不會評估運算式`nM`將偵錯和發行版本中有不同的值。 若要避免這個問題，在 MFC 中的，您可以使用[確認](/cpp/mfc/reference/diagnostic-services#verify)巨集，而不是`ASSERT`。  `VERIFY`評估所有版本中的運算式，但不會檢查發行版本中的結果。  
   
  要特別小心在判斷提示陳述式中使用函式呼叫相關的因為評估函式可能會有未預期的副作用。  
   
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  如果引數的 MFC`ASSERT`巨集判斷值為零或為 false，巨集中止程式執行並提醒使用者; 否則會繼續執行。  
   
- 當判斷提示失敗時，訊息對話方塊顯示的原始程式檔和行號判斷提示的名稱。 如果您在對話方塊中選擇 [重試] 方塊中，呼叫[AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30)會偵錯工具中斷執行。 此時，您可以檢查呼叫堆疊和使用其他偵錯工具設施，來判斷 判斷提示失敗的原因。 如果您已啟用[恰好在時間偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)，而且已經沒有執行偵錯工具，對話方塊可以啟動偵錯工具。  
+ 當判斷提示失敗時，訊息對話方塊顯示的原始程式檔和行號判斷提示的名稱。 如果您在對話方塊中選擇 [重試] 方塊中，呼叫[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)會偵錯工具中斷執行。 此時，您可以檢查呼叫堆疊和使用其他偵錯工具設施，來判斷 判斷提示失敗的原因。 如果您已啟用[恰好在時間偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)，而且已經沒有執行偵錯工具，對話方塊可以啟動偵錯工具。  
   
  下列範例示範如何使用`ASSERT`檢查函式的傳回值：  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- `ASSERT`巨集產生的發行版本中沒有程式碼。 如果您要評估的運算式中的發行版本，請使用[確認](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96)取代 ASSERT 巨集。  
+ `ASSERT`巨集產生的發行版本中沒有程式碼。 如果您要評估的運算式中的發行版本，請使用[確認](/cpp/mfc/reference/diagnostic-services#verify)取代 ASSERT 巨集。  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 和 CObject::AssertValid  
  [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid)方法可讓您提供執行階段檢查的內部狀態的物件。 雖然您不需要覆寫`AssertValid`當您衍生您的類別，從`CObject`，您可以讓您的類別更可靠執行此動作。 `AssertValid`應該在所有物件的成員變數，以確認其包含有效的值上都執行判斷提示。 例如，它應該檢查指標成員變數不是 NULL。  

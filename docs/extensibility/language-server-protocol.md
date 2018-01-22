@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 12/22/2017
 
 大約在同一時間，Microsoft 會啟動具有支援 TypeScript 像 Emacs 和適的文字編輯器中的想法的 TypeScript 語言伺服器上運作。 在此實作中，編輯器通訊透過 stdin/stdout 與 TypeScript 伺服器處理序，並要求和回應使用 JSON 裝載 V8 偵錯工具通訊協定所啟發。 TypeScript 伺服器已經整合的 TypeScript 適外掛程式和 VS Code 的豐富的 TypeScript 編輯。
 
-在整合式的兩個不同的語言伺服器之後，VS Code 小組來開始探索一般的語言伺服器通訊協定用於編輯器和 Ide。 常見的通訊協定可讓您建立可由不同的 Ide 使用單一語言伺服器語言提供者。 語言 server 取用者只需要實作通訊協定的用戶端一次。 這會導致 win win 情況語言提供者和語言取用者。
+之後整合兩個不同的語言伺服器之後，VS Code 小組來開始探索一般的語言伺服器通訊協定的編輯器和 Ide。 常見的通訊協定可讓您建立可由不同的 Ide 使用單一語言伺服器語言提供者。 語言 server 取用者只需要實作通訊協定的用戶端一次。 這會導致 win win 情況語言提供者和語言取用者。
 
-開始使用的 TypeScript 伺服器所使用的語言通訊協定，它是多個一般和語言無關。 通訊協定是用於靈感 VS Code 語言應用程式開發介面的更多語言功能。 通訊協定本身受到 JSON RPC 與遠端的引動過程，因為其簡化和支援的程式庫適用於許多程式語言。
+語言伺服器通訊協定啟動 TypeScript 伺服器，展開與啟發 VS Code 語言應用程式開發介面的更多語言功能所使用的通訊協定。 由於其簡易性和現有的程式庫的遠端叫用的通訊協定支援 JSON rpc。
 
-VS Code 小組 dogfooded 藉由實作數個 linter 語言伺服器的通訊協定。 Linter 語言伺服器會回應要求 lint （掃描） 檔案，並傳回一組偵測到的警告和錯誤。 目標是為了 lint 檔案做為使用者編輯文件，這表示編輯器工作階段期間將會多 linting 要求中。 它沒有任何意義，讓註冊的伺服器和執行，讓新的 linting 程序並不需要啟動的每個使用者編輯。 實作數個 linter 伺服器，包括 VS Code ESLint 和 TSLint 延伸模組。 這兩部 linter 伺服器會同時實作 TypeScript/javascript 和 Node.js 上執行。 它們共用實作通訊協定的用戶端和伺服器部分的程式庫。
+在 VS 程式碼的小組原型 lint （掃描） 要求的通訊協定，藉由實作數個 linter 語言伺服器回應檔案，並傳回一組的偵測到的警告和錯誤。 目標是為了 lint 檔案做為使用者編輯文件，這表示編輯器工作階段期間將會多 linting 要求中。 它沒有任何意義，讓註冊的伺服器和執行，讓新的 linting 程序不需要啟動的每個使用者編輯。 實作數個 linter 伺服器，包括 VS Code ESLint 和 TSLint 延伸模組。 這兩部 linter 伺服器會同時實作 TypeScript/javascript 和 Node.js 上執行。 它們共用實作通訊協定的用戶端和伺服器部分的程式庫。
 
 ## <a name="how-the-lsp-works"></a>LSP 的運作方式
 

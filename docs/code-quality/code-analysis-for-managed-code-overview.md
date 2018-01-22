@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: b705abb680276faf9d4311cd21cae1b103c4a09d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>程式碼分析 managed 程式碼的概觀
 

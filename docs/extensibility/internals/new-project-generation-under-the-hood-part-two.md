@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生： 在幕後，第二部分
 中[產生新的專案： 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新專案**對話方塊方塊會填入。 讓我們假設您已選取**Visual C# Windows 應用程式**、 填寫**名稱**和**位置**文字方塊中，並按下 [確定]。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="generating-the-solution-files"></a>產生方案檔  
  選擇應用程式範本會指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]才能解壓縮及開啟對應的.vstemplate 檔案，並啟動來解譯此檔案中的 XML 命令的範本。 這些命令會建立新的或現有方案中的專案和專案項目。  
   
- 範本會解壓縮到來源檔案，稱為.zip 資料夾儲存.vstemplate 檔案的項目範本。 範本會將這些檔案複製到新的專案，並據此自訂的方法。 如需專案範本和項目範本的概觀，請參閱[NIB: Visual Studio 範本](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)。  
+ 範本會解壓縮到來源檔案，稱為.zip 資料夾儲存.vstemplate 檔案的項目範本。 範本會將這些檔案複製到新的專案，並據此自訂的方法。  
   
 ### <a name="template-parameter-replacement"></a>取代範本參數  
  當範本複製到新的專案項目範本時，會取代任何範本參數來自訂此檔案的字串。 樣板參數是特殊的語彙基元，前面有貨幣符號，後面接著例如、 $date$。  

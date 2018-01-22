@@ -1,4 +1,5 @@
 ---
+redirect_url: shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file
 title: "使用修改 Isolated 的 Shell。Pkgdef 檔案 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
@@ -13,8 +14,7 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 37c517792055c1d4a2026eef5171325622fec661
+ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/22/2018
   
  您可以將註解加入至.pkgdef 檔。 單行註解會有兩個斜線為前兩個字元。  
   
- 如需替代字串的清單，請參閱[中使用的替代字串。Pkgdef 和。Pkgundef 檔案](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md)。  
+ 如需替代字串的清單，請參閱[中使用的替代字串。Pkgdef 和。Pkgundef 檔案](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md)。  
   
  下列章節說明影響行為的 Visual Studio shell 隔離模式中的特定登錄值。 您也可以在這個檔案中定義應用程式的其他登錄的值。  
   
@@ -68,12 +68,12 @@ ms.lasthandoff: 01/22/2018
 |AppName|字串|應用程式的名稱。 應用程式視窗的標題列中出現的名稱。<br /><br /> 預設值是應用程式方案檔的名稱。|  
 |CommandLineLogo|字串|在主控台視窗中執行應用程式時的橫幅文字。 這個設定會影響支援命令列建置作業的應用程式。<br /><br /> 預設值是"*companyName * * solutionName* 1.0 版。"，其中*companyName*是安裝 Windows 時，所提供的公司名稱和*solutionName*是應用程式方案檔的名稱。|  
 |DefaultDebugEngine|字串|預設 GUID 偵錯引擎使用應用程式。<br /><br /> 注意： 空的 GUID （全部為零） 表示應用程式未指定預設偵錯引擎。 這可讓偵錯工具若要選取要使用的偵錯引擎。<br /><br /> 預設值是"{00000000-0000-0000-0000-000000000000}"。|  
-|DefaultHomePage|字串|內部的網頁瀏覽器視窗預設首頁 URL。<br /><br /> 如果**首頁**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是已安裝 Windows 時所提供的公司的 URL。|  
+|DefaultHomePage|字串|內部的網頁瀏覽器視窗預設首頁 URL。<br /><br /> 如果**首頁**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是已安裝 Windows 時所提供的公司的 URL。|  
 |DefaultProjectsLocation|字串|預設專案資料夾的完整路徑。 例如，套用至物件的<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 專案位置**選項可用在應用程式，則此設定也會影響選項的預設狀態。 <br /><br /> 預設值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是應用程式方案檔的名稱。|  
-|DefaultSearchPage|字串|內部的網頁瀏覽器視窗的預設搜尋網頁 URL。<br /><br /> 如果**搜尋頁面**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是"http://search.live.com"。|  
+|DefaultSearchPage|字串|內部的網頁瀏覽器視窗的預設搜尋網頁 URL。<br /><br /> 如果**搜尋頁面**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[網頁瀏覽器、 環境、 選項對話方塊](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 預設值是"http://search.live.com"。|  
 |DefaultUserFilesFolderRoot|字串|[使用者] 資料夾中，相對於目前的使用者名稱的 [我的文件] 資料夾。<br /><br /> 預設值是應用程式方案檔的名稱。|  
 |DisableOutputWindow|dword|指出是否在 isolated 的 shell 應該將 [輸出] 視窗為已停用。<br /><br /> 如果此值設為 true，Visual Studio 不會顯示方案建置管理員輸出中的**輸出**視窗，並且隱藏**建置開始時顯示輸出視窗**中核取方塊**專案和方案**類別目錄中的**選項** 對話方塊。<br /><br /> 預設值為 false。|  
-|HideMiscellaneousFilesByDefault|dword|True 會隱藏**其他檔案**資料夾預設會在**方案總管 中**; 否則為 false。<br /><br /> 如果**方案總管 中的顯示其他檔案**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[選項對話方塊、 環境、 文件](../../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 預設值為 false。|  
+|HideMiscellaneousFilesByDefault|dword|True 會隱藏**其他檔案**資料夾預設會在**方案總管 中**; 否則為 false。<br /><br /> 如果**方案總管 中的顯示其他檔案**選項可用在應用程式，則此設定也會影響選項的預設狀態。 如需詳細資訊，請參閱[選項對話方塊、 環境、 文件](../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 預設值為 false。|  
 |HideSolutionConcept|dword|建立所有獨立專案和專案預設值，來隱藏的方案和獨立專案與方案相關的命令，則為 true否則為 false。<br /><br /> 如果**永遠顯示方案**選項可用在應用程式，則此設定也會影響選項的預設狀態。<br /><br /> 預設值為 false。|  
 |NewProjDlgInstalledTemplatesHdr|字串|中的 Visual Studio 的快速範本標頭的名稱**範本**清單中**新專案** 對話方塊。 這是字串或從應用程式 UI 封裝載入可當地語系化的資源識別碼。<br /><br /> 預設值是"*solutionName*安裝的範本 」，其中*solutionName*是應用程式方案檔的名稱。|  
 |NewProjDlgSlnTreeNodeTitle|字串|名稱**Visual Studio 方案**節點**專案類型**樹狀目錄中**新專案** 對話方塊。 這是字串或從應用程式 UI 封裝載入可當地語系化的資源識別碼。<br /><br /> 預設值是"*solutionName*安裝的範本 」，其中*solutionName*是應用程式方案檔的名稱。|  
@@ -122,12 +122,12 @@ ms.lasthandoff: 01/22/2018
 ## <a name="package-menu-item-settings"></a>封裝的功能表項目設定  
  [$RootKey$ \Menus] 登錄機碼中定義之應用程式的 UI 資源檔案。  
   
- 功能表項目值有格式"{*vsUiPackageGuid*}"=" *resourceId*， *versionNumber*"，其中*vsUiPackageGuid*的 guid應用程式 UI 的套件， *resourceId*是包含 UI 項目 CTMENU 資源的資源識別碼和*versionNumber* CTMENU 是虛擬的版本號碼資源。 如需詳細資訊，請參閱[註冊的 Interop 組件命令處理常式](../internals/registering-interop-assembly-command-handlers.md)。  
+ 功能表項目值有格式"{*vsUiPackageGuid*}"=" *resourceId*， *versionNumber*"，其中*vsUiPackageGuid*的 guid應用程式 UI 的套件， *resourceId*是包含 UI 項目 CTMENU 資源的資源識別碼和*versionNumber* CTMENU 是虛擬的版本號碼資源。 如需詳細資訊，請參閱[註冊的 Interop 組件命令處理常式](../extensibility/internals/registering-interop-assembly-command-handlers.md)。  
   
  根據預設，應用程式 UI 封裝在.pkgdef 檔中建立的功能表項目項目。  
   
  每個套件提供功能表項目就會發佈應用程式的一部分，加入封裝的功能表項目項目。  
   
 ## <a name="see-also"></a>請參閱  
- [自訂 Isolated 的 Shell](customizing-the-isolated-shell.md)   
- [.Pkgundef 檔案](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [自訂 Isolated 的 Shell](../extensibility/customizing-the-isolated-shell.md)   
+ [.Pkgundef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)

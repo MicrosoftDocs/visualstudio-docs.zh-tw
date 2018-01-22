@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性**是 COM 和 COM + 元件的通用屬性瀏覽器視窗，並支援所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產品。 **屬性**視窗搭配`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  
   
- **屬性**視窗，可以藉由在鍵盤上，按 F4 或選取開啟**屬性] 視窗**上**檢視**功能表，用來檢視和編輯組態無關的設計階段屬性和事件的 [選取的物件。 方案和專案，與相關聯的組態相關屬性會顯示在[屬性頁](../../extensibility/internals/property-pages.md)。 如需詳細資訊，請參閱[NIB： 專案屬性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理組態選項](../../extensibility/internals/managing-configuration-options.md)，和[NIB： 項目管理專案中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ **屬性**視窗，可以藉由在鍵盤上，按 F4 或選取開啟**屬性] 視窗**上**檢視**功能表，用來檢視和編輯組態無關的設計階段屬性和事件的 [選取的物件。 方案和專案，與相關聯的組態相關屬性會顯示在[屬性頁](../../extensibility/internals/property-pages.md)。 如需詳細資訊，[管理組態選項](../../extensibility/internals/managing-configuration-options.md)。  
   
  ![屬性視窗概觀](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 屬性視窗  

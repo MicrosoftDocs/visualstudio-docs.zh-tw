@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bec52fc091186aa660e10f1887f98bfdab5acc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 請使用 Visual Studio 中的視覺化與模型工具，確定您的軟體系統符合使用者的需求。
@@ -252,7 +252,7 @@ ms.lasthandoff: 01/13/2018
   
 -   [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [建置應用程式](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [建置及發行](/vsts/build-release/index)  
   
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne 及 Dinner Now 必須整合其付款系統。 下列各節將示範 Visual Studio 中的模型圖表如何協助其執行這項工作：  

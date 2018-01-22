@@ -1,5 +1,5 @@
 ---
-title: "IDebugMessageEvent2 |Microsoft 文件"
+title: IDebugMessageEvent2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 偵錯引擎 (DE) 會使用此介面將訊息傳送至 Visual Studio 需要使用者回應。  
@@ -44,21 +44,21 @@ IDebugMessageEvent2 : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|取得要顯示的訊息。|  
-|[Responsemanager](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|設定回應，如果有，從訊息方塊。|  
+|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|設定回應，如果有，從訊息方塊。|  
   
 ## <a name="remarks"></a>備註  
  DE 會使用此介面，則當需要使用者的特定回應的特定訊息。 例如，如果 DE 嘗試從遠端將其附加至程式之後取得 「 拒絕存取 」 訊息，DE 此特定將訊息傳送至 Visual Studio 在`IDebugMessageEvent2`事件的訊息方塊樣式`MB_RETRYCANCEL`。 這可讓使用者重試或取消在附加作業。  
   
- DE 指定如何將這個訊息是由下列的 Win32 函式的慣例來處理`MessageBox`(請參閱[AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)如需詳細資訊)。  
+ DE 指定如何將這個訊息是由下列的 Win32 函式的慣例來處理`MessageBox`(請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)如需詳細資訊)。  
   
  使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)介面，將訊息傳送至 Visual Studio 不需要使用者回應。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

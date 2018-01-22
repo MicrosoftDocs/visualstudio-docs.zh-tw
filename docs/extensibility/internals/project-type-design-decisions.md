@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須決定數個設計有關您的專案類型。 您必須決定您將使用哪些類型的專案將包含的項目、 如何將保存專案檔，以及哪一種承諾模型。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  在專案中的項目可以是檔案，或在網際網路上可以更抽象物件，例如資料庫儲存機制或資料連接中的物件。 如果項目檔案，專案可以參考為基礎或目錄為基礎的專案。  
   
- 在參考專案中，項目可以出現在多個專案。 不過，實際項目表示的檔案位於中只有一個目錄。 在目錄為基礎的專案中，所有專案項目存都在於目錄結構。 如需詳細資訊，請參閱[NIB： 項目管理專案中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ 在參考專案中，項目可以出現在多個專案。 不過，實際項目表示的檔案位於中只有一個目錄。 在目錄為基礎的專案中，所有專案項目存都在於目錄結構。  
   
  本機項目會儲存在應用程式安裝所在的相同電腦上。 遠端的項目可以儲存在本機網路中，不同的伺服器上或網際網路上其他位置。  
   
@@ -62,7 +62,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>請參閱  
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB： 項目管理專案中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [開啟並儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
  [專案持續性](../../extensibility/internals/project-persistence.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   

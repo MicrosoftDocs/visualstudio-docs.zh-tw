@@ -1,5 +1,5 @@
 ---
-title: "IDebugMessageEvent2::GetMessage |Microsoft 文件"
+title: IDebugMessageEvent2::GetMessage | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: e350b3dfcf6b36cc93450affa34ae7bf5ac26330
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2cb6db61048765ec577a0d14ff4079f78e013219
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 取得要顯示的訊息。  
@@ -56,7 +56,7 @@ int GetMessage(
  [out]傳回訊息。  
   
  `pdwType`  
- [out]傳回的訊息，使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)函式，如需詳細資訊。  
+ [out]傳回的訊息，使用 Win32 的慣例類型`MessageBox`函式。 請參閱[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函式，如需詳細資訊。  
   
  `pbstrHelpFileName`  
  [in、 out]傳回說明檔名稱。 如果沒有說明檔可能是 null （c + +） 或空值 (C#)。  
@@ -69,5 +69,5 @@ int GetMessage(
   
 ## <a name="see-also"></a>請參閱  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
- [訊息類型](../../../extensibility/debugger/reference/messagetype.md)   
- [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
+ [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

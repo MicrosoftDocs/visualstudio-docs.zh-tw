@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 02c983fb7cd797be377f8821c46b2d7dc38450f9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -218,7 +218,7 @@ ms.lasthandoff: 01/13/2018
   
  如需有關驗證錯誤的詳細資訊，請參閱[了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的詳細資訊，請參閱：  
   
--   [建置應用程式](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [建置及發行](/vsts/build-release/index)  
   
 -   [您的建置流程中使用預設範本](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)  
   

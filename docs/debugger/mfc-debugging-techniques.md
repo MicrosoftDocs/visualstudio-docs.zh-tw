@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/22/2017
     -   [以選取的模組之偵錯資訊來建置 MFC 應用程式](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC 提供了一個特殊的 [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 函式，可在原始程式碼中直接撰寫 (硬式編碼) 中斷點：  
+ MFC 提供了一個特殊[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)硬式編碼的中斷點，在原始程式碼中的函式：  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|  
     |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|  
-    |**checkAlwaysMemDF**|每一次記憶體配置或釋放時都會呼叫 [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 。|  
+    |**checkAlwaysMemDF**|呼叫[AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory)每次配置或釋放記憶體。|  
   
      這些值可以藉由執行邏輯 OR 操作用於結合，如下所示：  
   

@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 您可以變更的專案設定[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]偵錯組態中的**屬性頁**視窗中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁**視窗。  
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 |設定|描述|  
 |-------------|-----------------|  
 |**組態**|設定應用程式的編譯模式。 選擇**現用 （偵錯）**，**偵錯**，**發行**，**所有組態**。|  
-|**起始動作**|這個控制項群組會指定當您從 [偵錯] 功能表選擇 [啟動] 時會發生的動作。<br /><br /> -   **啟動專案**是預設值，並啟動偵錯的啟始專案。 如需詳細資訊，請參閱[NIB 如何： 設定啟始專案](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970)。<br />-   **啟動外部程式**可讓您啟動並附加至不是程式的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 如需詳細資訊，請參閱[附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   **以 URL 啟動瀏覽器**可讓您偵錯 Web 應用程式。|  
+|**起始動作**|這個控制項群組會指定當您從 [偵錯] 功能表選擇 [啟動] 時會發生的動作。<br /><br /> -   **啟動專案**是預設值，並啟動偵錯的啟始專案。 <br />-   **啟動外部程式**可讓您啟動並附加至不是程式的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 如需詳細資訊，請參閱[附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   **以 URL 啟動瀏覽器**可讓您偵錯 Web 應用程式。|  
 |**命令列引數**|指定要偵錯的程式之命令列引數。 命令名稱是在 [啟動外部程式] 指定的程式名稱。 如果將 [啟動動作] 設為 [起始 URL]，便會忽略命令列引數。|  
 |**工作目錄**|指定為程式偵錯時的工作目錄。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，工作目錄為啟動應用程式的目錄。 預設工作目錄為 \bin\Debug 或 \bin\Release，視目前組態而定。|  
 |**使用遠端機器**|選取核取方塊時，即啟用遠端偵錯。 在文字方塊中，您可以輸入名稱來進行偵錯的遠端電腦執行應用程式所在或[Msvsmon 伺服器名稱](../debugger/remote-debugging.md)。 遠端機器上的 EXE 位置可在 [建置] 索引標籤的 [輸出路徑] 屬性中指定。其位置必須是遠端電腦上的可共用目錄。|  
