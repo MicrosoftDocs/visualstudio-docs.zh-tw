@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>精靈
 建立精靈之後，您通常想要將它加入至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 加入的精靈則會出現在**加入新的專案**或**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，開啟的方案中以滑鼠右鍵按一下**方案總管 中**，指向 **新增**，和然後按一下 **新專案**或**新項目**。  
@@ -50,9 +50,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-sections"></a>相關章節  
  [專案類型](../../extensibility/internals/project-types.md)  
  提供額外的主題提供有關如何設計新的專案類型的資訊連結。  
-  
- [逐步解說： 建立精靈](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- 說明如何建立精靈。  
   
  [擴充專案](../../extensibility/extending-projects.md)  
  描述如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。

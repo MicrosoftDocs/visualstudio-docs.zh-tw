@@ -1,5 +1,5 @@
 ---
-title: "偵錯 HTML 和 CSS （適用 UWP 和 Windows 8.1 應用程式） |Microsoft 文件"
+title: "在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft 文件"
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>偵錯 HTML 和 CSS UWP 和 Windows 8.1 應用程式中
-![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
   
- Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援用於 UWP 應用程式， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]，Windows Phone 應用程式，並使用 Visual Studio Tools for Apache Cordova 所建立應用程式。  
+ Visual Studio 針對 JavaScript 應用程式提供完整的偵錯體驗，所包含的功能對於 Internet Explorer 和 Visual Studio 開發人員而言是很熟悉的。 這些功能支援用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立應用程式。  
   
  使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Visual Studio 中建立新的方案，藉由選擇**檔案** > **新專案**。  
   
-2.  選擇**JavaScript** > **存放區**，選擇  **Windows 應用程式**或**Windows Phone 應用程式**，然後選擇  **空白應用程式**。  
+2.  選擇**JavaScript** > **Windows 通用**，然後選擇  **WinJS 應用程式**。  
   
 3.  輸入專案的名稱，例如 `FlipViewApp`，然後選擇 [確定]  建立應用程式。  
   
-4.  在 default.html 的 BODY 項目中，加入此段程式碼：  
+4.  在 index.html 的 BODY 項目，加入下列程式碼：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     下圖顯示當我們在 Phone 模擬器中執行此應用程式時，所希望看到的樣子 (與在模擬器中看到的相似)。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。  
+     下圖顯示我們想要查看我們執行此應用程式。 但是，要讓應用程式變成這樣，我們必須先修正一些 Bug。  
   
      ![顯示預期的結果的 FlipView 應用程式](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  在 [ **偵錯** ] 工具列上，選取 [ **開始偵錯** ] 按鈕旁邊下拉式清單中的 [ **模擬器** ] 或 [ **Emulator 8.1 WVGA 4 英吋 512MB** ]：  
+7.  選擇**本機**旁的下拉式清單**開始偵錯**按鈕**偵錯**工具列：  
   
      ![選取偵錯目標清單](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  選擇 [JavaScript] **Emulator 8.1 WVGA 4 英吋 512MB** > **模擬器**，或按 F5，以偵錯模式執行您的應用程式。  
   
-     接下來會在模擬器或 Phone 模擬器中執行應用程式，不過您看到的主要是空白畫面，因為樣式有幾個 Bug。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
-  
-9. 如果您是在 [模擬器] 中執行應用程式，請選擇 [模擬器] 右邊的 [變更解析度]  工具列命令，將螢幕解析度設定為 1280 x 800。 如此即可確保下列步驟中顯示的值與您在模擬器中看到的都完全相同。  
+     執行應用程式，不過您會看到主要是空白畫面，因為樣式有幾個 bug 中。 第一個 `FlipView` 影像出現在螢幕中央附近的小方形中。  
   
 10. 切換至 Visual Studio 並選擇 [ **DOM 總管** ] 索引標籤。  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 （向右鍵可讓您檢視項目的子系）。  
   
-     ![DOM 總管](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  您也可以選取在 [JavaScript 主控台] 視窗的左下角的 DIV 項目，輸入`select(fView)`在 >> 輸入提示字元，然後按 enter。  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. 在主要 [DOM 總管] 視窗中，按兩下 `fView` DIV 元素的高度和寬度內嵌樣式。 您現在可以在這裡編輯值。 在這個案例中，我們要完全移除它們。  
   
-15. 選取 `width: 100px;height: 100px;`然後按 Delete 鍵，再按 Enter。 在您按下 Enter 之後，新值就會立即反映在模擬器或 Phone 模擬器中，即使尚未停止偵錯工作階段也是如此。  
+15. 在主視窗中，按兩下`width: 100px;height: 100px;`，按**刪除**索引鍵，然後按下**Enter**。 您按下 Enter 之後，新值會立即反映在應用程式時，即使尚未停止偵錯工作階段。  
   
     > [!IMPORTANT]
     >  您可以更新 [DOM 總管] 視窗中的屬性，也可以更新 [樣式] 、[計算] 和 [配置]  索引標籤中出現的值。 如需詳細資訊，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)和[偵錯使用 DOM 總管 的版面配置](../debugger/debug-layout-using-dom-explorer.md)。  
   
-16. 藉由選取 [模擬器] 或 [Phone 模擬器] 或是使用 Alt+Tab，切換至應用程式。  
+16. 藉由選取它，或是使用 Alt + Tab，切換至應用程式。  
   
      現在 `FlipView` 控制項看起來比 [模擬器] 或 [Phone 模擬器] 的螢幕還大。 這不是預期的結果。 若要調查，請切換回 Visual Studio。  
   
-17. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 fView 項目仍然顯示值為 100%，如預期的 CSS 值，但計算值卻等於模擬器螢幕的高度 (例如 800px 或 667.67px)，這不是我們想要的結果。 若要調查，您可以移除 `fView` DIV 項目的高度和寬度。  
+17. 在 [DOM 總管] 中，再選取 [ **計算** ] 索引標籤並開啟高度規則。 FView 元素仍然顯示值為 100%，如預期的 CSS，但計算的值卻等於應用程式的螢幕高度 (例如 800px 667.67 p x 或其他值)，這是不是我們想要為此應用程式。 若要調查，接下來的步驟我們移除高度和寬度`fView`DIV 項目。  
   
 18. 在 [樣式]  索引標籤中，取消核取 `#fView` CSS 選取器的高度和寬度屬性。  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. 若要調查，切換至 Visual Studio 並選擇**配置**索引標籤，查看項目的方塊模型。  
   
-     在 [配置]  索引標籤中，您將看到下列值：  
+     在**配置**索引標籤上，您會看到下列訊息：  
   
-    -   適用於模擬器的是 320px (Offset) 和 320px (Margin)。  
+    -   255px (Offset) 和 255px (Margin) 或類似的值，根據裝置解析度而定。 
   
-    -   適用於 Phone 模擬器的是 100px (Offset) 和 100px (Margin)。  
-  
-     下圖顯示當我們使用 [Phone 模擬器] (100px 位移和邊界) 時的 [配置]  外觀。  
+     下圖顯示如何**配置**標籤看起來，如果您使用模擬器與 100px 位移和邊界)。  
   
      ![DOM 總管配置 索引標籤](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
   
- 如需範例，示範如何使用選取項目**Select 元素**按鈕，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
-  
-##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
- [DOM 總管] 和 [JavaScript 主控台] 視窗會支援下列平台：  
-  
--   UWP 應用程式，[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]與使用 JavaScript 和 HTML 的 Windows Phone 應用程式  
-  
--   在 [!INCLUDE[win81](../debugger/includes/win81_md.md)]上執行的 Internet Explorer 11  
-  
--   在 [!INCLUDE[win8](../debugger/includes/win8_md.md)]上執行的 Internet Explorer 10  
-  
- 移至 [這裡](http://go.microsoft.com/fwlink/?LinkID=232448) 下載 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 Visual Studio。  
-  
 ## <a name="see-also"></a>請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [偵錯使用 DOM 總管 的 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)   
- [偵錯使用 DOM 總管 的版面配置](../debugger/debug-layout-using-dom-explorer.md)   
- [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
