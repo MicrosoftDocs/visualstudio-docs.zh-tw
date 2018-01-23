@@ -7,11 +7,11 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: d0a35aefbf9bcf7866112bd77bb345d0da12f6c4
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8e4b17a5f7c7e7bc6795cd595308bd4d4de9d2a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 
@@ -258,7 +258,7 @@ src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span>
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt=""
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/python/vs-tutorial-01-01"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt=""
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/rtvs/getting-started-with-r"><img width="48" height="48" alt=""
 src="https://docs.microsoft.com/media/logos/logo_R.svg"><span>R</span></a></div>
