@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
@@ -61,13 +61,13 @@ ms.lasthandoff: 01/05/2018
 
 ### <a name="extension-sdk-references"></a>延伸模組 SDK 參考
 
-Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式可以參考以 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 為目標的延伸模組 SDK，前提是這些延伸模組 SDK 不使用 Windows 10 中已淘汰的 API。 請檢查延伸模組 SDK 廠商網站，確定是否可 UWP 應用程式參考。
+Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式可以參考以 Windows 8.1 為目標的延伸模組 SDK，前提是這些延伸模組 SDK 不使用 Windows 10 中已淘汰的 API。 請檢查延伸模組 SDK 廠商網站，確定是否可 UWP 應用程式參考。
 
 如果您判定不支援您的應用程式所參考的擴充功能 SDK，則需要執行下列步驟：
 
-1. 查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如， **MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 [!INCLUDE[win81](../debugger/includes/win81_md.md)]。
+1. 查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如，**MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 Windows 8.1。
 
-2. 移至擁有不受支援之延伸模組 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的延伸模組 SDK 版本。
+1. 移至擁有不受支援之延伸模組 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的延伸模組 SDK 版本。
 
     > [!NOTE]
     > 找出延伸模組 SDK 是否有其他延伸模組 SDK 相依性的一種方法，是在**參考管理員**中尋找。 重新啟動 Visual Studio、建立新的 C# UWP 應用程式專案，然後以滑鼠右鍵按一下專案並選擇 [新增參考]。 依序移至 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然選取延伸模組 SDK。 在**參考管理員**的右窗格中尋找。 如果有相依性，則會在那裡列出。
@@ -75,13 +75,13 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
     > [!IMPORTANT]
     > 如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的延伸模組 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0，並隨著 Visual Studio 一起安裝。
 
-3. 如果您在先前步驟中安裝的延伸模組 SDK 具有其他延伸模組 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。
+1. 如果您在先前步驟中安裝的延伸模組 SDK 具有其他延伸模組 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。
 
-4. 重新啟動 Visual Studio，然後開啟您的應用程式。
+1. 重新啟動 Visual Studio，然後開啟您的應用程式。
 
-5. 在導致錯誤專案中的 [參考] 節點上按右鍵，然後選擇 [新增參考]。
+1. 在導致錯誤專案中的 [參考] 節點上按右鍵，然後選擇 [新增參考]。
 
-6. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定 **Deploying Office Solutions**]。
+1. 依序按一下 [Windows] 索引標籤和 [延伸模組] 子索引標籤，然後針對舊延伸模組 SDK 取消核取方塊，並核取新延伸模組 SDK 的核取方塊。 按一下 [確定 **Deploying Office Solutions**]。
 
 ## <a name="adding-a-reference-at-design-time"></a>在設計階段新增參考
 

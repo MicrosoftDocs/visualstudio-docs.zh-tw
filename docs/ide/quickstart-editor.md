@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>快速入門：在編輯器中編碼
 
@@ -135,7 +135,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 ## <a name="refactoring-a-name"></a>重構名稱
 
-沒有人第一次就取得正確的程式碼，而且您可能想要變更的其中一個項目就是變數或方法的名稱。 讓我們來試試看 Visual Studio 的[重構](../ide/refactoring-code-generation-quick-actions.md#refactoring)功能，以將 `_words` 變數重新命名為 `words`。
+沒有人第一次就取得正確的程式碼，而且您可能想要變更的其中一個項目就是變數或方法的名稱。 讓我們來試試看 Visual Studio 的[重構](../ide/refactoring-in-visual-studio.md)功能，以將 `_words` 變數重新命名為 `words`。
 
 1. 將資料指標放在 `words` 變數定義上方，然後從右鍵功能表或操作功能表中選擇 [重新命名]，或按 **Ctrl**+**R**、**Ctrl**+**R**。
 
@@ -157,9 +157,9 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
 [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
-[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)  
+[快速入門：專案和方案](../ide/quickstart-projects-solutions.md)  
 [程式碼片段](../ide/code-snippets.md)  
 [大綱](../ide/outlining.md)  
 [移至定義和查看定義](../ide/go-to-and-peek-definition.md)  
-[重構](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[使用 IntelliSense](../ide/using-intellisense.md)  
+[重構](../ide/refactoring-in-visual-studio.md)  
+[使用 IntelliSense](../ide/using-intellisense.md)

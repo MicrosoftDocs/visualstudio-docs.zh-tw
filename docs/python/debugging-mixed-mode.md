@@ -12,16 +12,23 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b1a36b387ad9fd8a2212cfaceefbd454edf33dde
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
-多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是需要能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用 (如需範例，請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md))。 載入 Python 專案之後，Visual Studio 為 Python 和原生 (C/C++) 提供整合式的同步混合模式偵錯，包含合併的呼叫堆疊、可在 Python 和原生程式碼及任一類型的程式碼中斷點之間逐步執行、可在原生框架查看物件的 Python 表示法，反之亦然︰
+多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用。 (如需範例，請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md)。)當載入 Python 專案時，Visual Studio 會提供適用於 Python 和原生 C/C++ 的整合式、同步混合模式偵錯，包括：
+
+- 合併的呼叫堆疊
+- 在 Python 和機器碼之間逐步執行
+- 這兩種類型程式碼中的中斷點
+- 請參閱原生框架中 Python 的物件表示法 (反之亦然)
 
 ![混合模式偵錯](media/mixed-mode-debugging.png) 
 
@@ -34,31 +41,38 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="enabling-mixed-mode-debugging"></a>啟用混合模式偵錯
 
-1. 在 [方案總管 (Solution Explorer)] 中以滑鼠右鍵按一下專案，選取 [屬性 (Properties)]，選取 [偵錯 (Debug)] 索引標籤，然後開啟 [啟用原生程式碼偵錯 (Enable native code debugging)] 的選項。 這個選項會啟用所有偵錯工作階段的混合模式。
+1. 在方案總管中以滑鼠右鍵按一下 Python 專案，依序選取 [屬性]、[偵錯] 索引標籤，然後選取 [啟用機器碼偵錯]。 這個選項會啟用所有偵錯工作階段的混合模式。
 
     ![啟用原生程式碼偵錯](media/mixed-mode-debugging-enable-native.png)
 
-    > [!Tip]    
+    > [!Tip]
     > 當您啟用機器碼偵錯時，Python 的輸出視窗可能會在程式完成時立即消失，而不給您平常的「按任意鍵繼續...」暫停。 若要強制暫停，當您啟用機器碼偵錯時，請將 `-i` 選項加入 [偵錯] 索引標籤上的 [執行] > [解譯器引數] 欄位。 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，等候您按下 Ctrl + Z、Enter 以結束。
 
-1. 將混合模式偵錯工具附加至現有的處理序 ([偵錯 (Debug)] > [附加至處理序 (Attach to Process)]) 時，選取 [選取 (Select)] 按鈕以開啟 [選取程式碼類型 (Select Code Type)] 對話方塊、設定 [偵錯這些程式碼類型 (Debug these code types)] 選項，然後同時選取清單中的 [原生 (Native)] 和 [Python]︰
+1. 將混合模式偵錯工具附加至現有的處理序 ([偵錯] > [附加至處理序]) 時，請選取 [選取] 按鈕以開啟 [選取程式碼類型] 對話方塊。 然後設定 [偵錯這些程式碼類型] 選項，並同時選取清單中的 [原生] 和 [Python]：
 
     ![選取原生和 Python 程式碼類型](media/mixed-mode-debugging-code-type.png)
 
-    程式碼類型設定為持續性；因此，如果您之後附加至其他處理序時想停用混合模式偵錯，請重複這些步驟，並清除 Python 程式碼類型。
+    程式碼類型設定會為持不變。因此，如果您之後附加至其他處理序時想停用混合模式偵錯，請清除 Python 程式碼類型。
 
-    除了選取 (或不選取) [原生 (Native)] 以外，您還可以選取其他程式碼類型。 例如，如果某個受管理的應用程式裝載 CPython，而 CPython 又使用原生延伸模組，您想對這三個進行偵錯，您可以同時核取 [Python]、[原生 (Native)] 及 [受管理 (Managed)**] 以提供整合的偵錯體驗，包括合併的呼叫堆疊，以及在這三個執行階段之間逐步執行。
+    除了選取 (或不選取) [原生] 以外，您還可以選取其他程式碼類型。 例如，如果某個受控應用程式裝載 CPython，而 CPython 又使用原生延伸模組，且您想對這三者進行偵錯，則可以同時核取 [Python]、[原生] 及 [受控] 以提供整合的偵錯體驗，包括合併的呼叫堆疊，以及在這三個執行階段之間逐步執行。
 
-1. 當您首次在混合模式開始偵錯時，您可能會看到 [需要 Python 符號] 對話方塊。 如需詳細資訊，請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode.md)。 針對任何指定的 Python 環境，符號只需安裝一次。 請注意，如果您透過 Visual Studio 2017 安裝程式安裝 Python 支援，會自動包含符號。
+1. 當您首次在混合模式開始偵錯時，可能會看到 [需要 Python 符號] 對話方塊 (請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode.md))。 針對任何指定的 Python 環境，符號只需安裝一次。 如果您透過 Visual Studio 2017 安裝程式來安裝 Python 支援，就會自動包含符號。
 
-1. 您可能也想要手邊擁有 Python 原始碼本身。 對於標準的 Python，原始碼取自 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)。 下載適用於您版本的封存檔，並將它解壓縮到資料夾。 每當提示您時，請將 Visual Studio 指向該資料夾中的特定檔案。
+1. 您可能也需要備妥 Python 本身的原始碼。 針對標準 Python，請造訪 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)、下載適用於您版本的封存，並將它解壓縮至資料夾。 每當提示您時，請將 Visual Studio 指向該資料夾中的特定檔案。
 
-> [!Note]
-> 只有當 Python 專案已經載入到 Visual Studio 時，才會啟用這裡所述的混合模式偵錯。 該專案會決定 Visual Studio 偵錯模式，此模式會讓混合模式選項成為可用。 不過，如果您載入了 C++ 專案 (如同 [python.org 上所述，在另一個應用程式中內嵌 Python](https://docs.python.org/3/extending/embedding.html) 時會做的)，則 Visual Studio 會使用原生 C++ 偵錯工具，它並不支援混合模式偵錯。
->
-> 在此情況下，請啟動 C++ 專案但不進行偵錯 ([偵錯] > [啟動但不偵錯] 或 Ctrl + F5)，然後使用 [偵錯] > [附加至處理序]。在出現的對話方塊中，選取適當的處理序，然後使用 [選取] 按鈕來開啟 [選取程式碼類型] 對話方塊，在其中您可以選取 [Python]，如下所示。 選取 [確定] 關閉該對話方塊，然後選取 [附加] 啟動偵錯工具。 請注意，您可能需要在 C++ 應用程式中加入適合的暫停或延遲，以確保它不會在您可以附加偵錯工具之前就呼叫您要偵錯的 Python。
->
-> ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)
+### <a name="enable-mixed-mode-debugging-in-a-c-project"></a>在 C++ 專案中啟用混合模式偵錯
+
+只有當 Python 專案已經載入到 Visual Studio 時，才會啟用本文中所述的混合模式偵錯。 該專案會決定 Visual Studio 偵錯模式，此模式會讓混合模式選項成為可用。
+
+不過，如果您載入了 C++ 專案 (如同 [python.org 上所述，在另一個應用程式中內嵌 Python](https://docs.python.org/3/extending/embedding.html) 時會做的)，則 Visual Studio 會使用原生 C++ 偵錯工具，它並不支援混合模式偵錯。 不過，您可以分別附加偵錯工具：
+
+1. 啟動 C++ 專案但不進行偵錯 ([偵錯] > [啟動但不偵錯] 或 Ctrl + F5)。
+1. 選取 [偵錯] > [附加至處理序]。在出現的對話方塊中，選取適當的處理序，然後使用 [選取] 按鈕來開啟 [選取程式碼類型] 對話方塊，在其中您可以選取 [Python]：
+
+    ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)
+
+1. 選取 [確定] 關閉該對話方塊，然後選取 [附加] 啟動偵錯工具。 
+1. 您可能需要在 C++ 應用程式中加入適合的暫停或延遲，以確保它不會立即呼叫您要偵錯的 Python 程式碼，讓您有機會可以附加偵錯工具。
 
 ## <a name="mixed-mode-specific-features"></a>混和模式的特定功能
 
@@ -73,8 +87,7 @@ ms.lasthandoff: 12/22/2017
 
 ![合併的呼叫堆疊](media/mixed-mode-debugging-call-stack.png)
 
-> [!Note]
-> 如果設定 [工具] > [選項] > [偵錯] > [一般] > [啟用 Just My Code] 選項，轉換會顯示為「外部程式碼」，而不指定轉換的方向。
+如果設定 [工具] > [選項] > [偵錯] > [一般] > [啟用 Just My Code] 選項，轉換會顯示為「外部程式碼」，而不指定轉換的方向。
 
 按兩下任一呼叫框架會讓它成為使用中，可能的話，會開啟適當的原始程式碼。 如果沒有原始程式碼，框架仍會是使用中，並可檢查區域變數。
 
@@ -94,7 +107,7 @@ ms.lasthandoff: 12/22/2017
 
 會顯示 [Python 檢視 (Python View)] 節點 (如果啟用) 的 C 類型：
 
-- `PyObject `
+- `PyObject`
 - `PyVarObject`
 - `PyTypeObject`
 - `PyByteArrayObject`
@@ -109,12 +122,11 @@ ms.lasthandoff: 12/22/2017
 - `PyStringObject`
 - `PyUnicodeObject`
 
-針對您自行撰寫的類型，不會自動顯示 [Python 檢視 (Python View)]。 撰寫 Python 3.x 的延伸模組時，這通常不是問題，因為所有物件最終都會有上述其中一個類型的 `ob_base` 欄位，因而導致 [Python 檢視 (Python View)] 顯示。 
+針對您自行撰寫的類型，不會自動顯示 [Python 檢視 (Python View)]。 撰寫 Python 3.x 的延伸模組時，這通常不是問題，因為所有物件最終都會有上述其中一個類型的 `ob_base` 欄位，因而導致 [Python 檢視 (Python View)] 顯示。
 
 不過，針對 Python 2.x，每個物件類型通常會將其標頭宣告為內嵌欄位的集合，而且自訂的撰寫類型和 C/C++ 程式碼中類型系統層級的 `PyObject` 之間沒有關聯。 若要啟用這種自訂類型的 [Python 檢視 (Python View)] 節點，請編輯 [Python 工具安裝目錄](installation.md#install-locations)中的 `PythonDkm.natvis`，然後直接在 C 結構或 C++ 類別的 XML 中新增另一個元素。
 
 有一個替代 (也是更好) 的選項是依循 [PEP 3123 (英文)](http://www.python.org/dev/peps/pep-3123/) 並使用明確的 `PyObject ob_base;` 欄位 (而非`PyObject_HEAD`)，然而基於回溯相容性的理由，不一定總是可行。
-
 
 ### <a name="native-values-view-in-python-code"></a>Python 程式碼中的原生值檢視
 

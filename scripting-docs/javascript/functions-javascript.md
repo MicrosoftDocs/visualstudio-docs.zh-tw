@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>函式 (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 函式會執行動作。它們也可以傳回值。 有時候這些是計算或比較的結果。 函式也稱為「全域方法」。  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>剩餘參數  
- 剩餘參數 (由 spread 運算子 () 所指定) 可讓您將函式呼叫中連續的引數轉為陣列。  
+ 剩餘參數 (由 spread 運算子 `...` 所指定) 可讓您將函式呼叫中連續的引數轉為陣列。  
   
  剩餘參數不需要 `arguments` 物件。 剩餘參數與 `arguments` 物件有數點不同，例如：  
   
@@ -260,5 +260,5 @@ console.log(f(3, "hello", true));
   
  如需 spread 運算子的其他用法，請參閱 [Spread 運算子](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 語言參考](../javascript/javascript-language-reference.md)

@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
 Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端服務。
 
-[雲端服務](http://go.microsoft.com/fwlink/?LinkId=306052)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 就 Python 來說，任何支援 WSGI 的 Web 架構都可用來撰寫這類應用程式 (如 [Web 專案範本](template-web.md)所支援)。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會利用[資料](http://go.microsoft.com/fwlink/?LinkId=401571)和[應用程式服務](http://go.microsoft.com/fwlink/?LinkId=401572)程式庫 (可使用 `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) 安裝)。
+[雲端服務](http://go.microsoft.com/fwlink/?LinkId=306052)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 就 Python 來說，任何支援 WSGI 的 Web 架構都可用來撰寫這類應用程式 (如 [Web 專案範本](template-web.md)所支援)。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會利用[資料](http://go.microsoft.com/fwlink/?LinkId=401571)和[應用程式服務](http://go.microsoft.com/fwlink/?LinkId=401572)程式庫 (可使用 [`pip install azure`](http://pypi.org/project/azure) 安裝)。
 
 本主題包含 Visual Studio 2017 中的專案範本和其他支援 (與舊版類似，但有一些差異) 的詳細資料。 如需搭配 Python 使用 Azure 的詳細資訊，請瀏覽 [Azure Python 開發人員中心](http://go.microsoft.com/fwlink/?linkid=254360)。
 
@@ -80,7 +81,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 發佈程序牽涉到兩個階段。 首先，Visual Studio 會建立包含雲端服務之所有角色的單一封裝。 此封裝是要部署至 Azure 的項目，它會為每個角色初始化一或多部虛擬機器並部署來源。
 
-當每部虛擬機器啟動時，它會執行 `ConfigureCloudService.ps1` 指令碼並安裝任何相依性。 此指令碼預設會從 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 安裝 Python 的最新版本，以及 `requirements.txt` 檔案中指定的所有套件。 
+當每部虛擬機器啟動時，它會執行 `ConfigureCloudService.ps1` 指令碼並安裝任何相依性。 此指令碼預設會從 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 安裝 Python 的最新版本，以及 `requirements.txt` 檔案中指定的所有套件。
 
 最後，背景工作角色會執行 `LaunchWorker.ps1`，這會開始執行您的 Python 指令碼；Web 角色會初始化 IIS 並開始處理 Web 要求。
 
@@ -90,7 +91,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 延伸模組的所有程式庫都必須提供預先編譯的二進位檔。
 
-PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](python-environments.md#managing-required-packages)，以取得管理 `requirements.txt` 檔案的詳細資料。
+PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](python-environments.md#managing-required-packages-requirementstxt)，以取得管理 `requirements.txt` 檔案的詳細資料。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -98,9 +99,9 @@ PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動�
 
 - 您的 Python 專案包含 bin\ 資料夾，並 (至少) 含有：
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1` (針對背景工作角色)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1` (針對背景工作角色)
+  - `ps.cmd`
 
 - 您的 Python 專案包含列出所有相依性的 `requirements.txt` 檔案 (或是一組 wheel 檔案集合)。
 - 在雲端服務上啟用遠端桌面，並調查記錄檔。

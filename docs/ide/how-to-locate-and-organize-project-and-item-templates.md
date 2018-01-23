@@ -16,19 +16,31 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 167ffa269ea8051a4791000d96a86cb5788af60d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c58bda5570be9cdb7fba7a8f90a282df7b7167a2
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 
-範本檔案必須放在 Visual Studio 可以辨識的位置，所以範本要出現在 [新增專案] 和 [新增項目] 對話方塊中。 您可以建立範本的自訂子類別，它們也會出現在對話方塊中。
+範本檔案必須放在 Visual Studio 可以辨識的位置，這樣範本才會出現在 [新增專案] 和 [新增項目] 對話方塊中。 您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案] 和 [新增項目] 對話方塊中。
 
-## <a name="locating-templates"></a>尋找範本
+## <a name="locate-templates"></a>尋找範本
 
-已安裝的範本和使用者範本會儲存在兩個不同的位置。 如果包含 .vstemplate 檔案的壓縮檔存在於這些位置中，範本將出現在 [新增專案] 或 [新增項目] 對話方塊中。
+已安裝的範本和使用者範本會儲存在兩個不同的位置。
+
+### <a name="user-templates"></a>使用者範本
+
+如果您將包含 .vstemplate 檔案的壓縮檔 (.zip) 新增到使用者範本目錄，範本將出現在 [新增專案] 或 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
+
+- %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates
+
+- %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates
+
+例如，下列目錄包含 C# 的使用者專案範本：
+
+   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
 
 > [!TIP]
 > 您可以在 [工具] > [選項] > [專案和方案] >  [位置] 中設定使用者範本的位置。
@@ -45,38 +57,14 @@ ms.lasthandoff: 01/05/2018
 
    C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
-### <a name="user-templates"></a>使用者範本
+## <a name="organize-templates"></a>組織範本
 
-根據預設，自訂範本位於：
-
-- %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates
-
-- %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates
-
-例如，下列目錄包含 C# 的使用者專案範本：
-
-   C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#\
-
-> [!NOTE]
-> 使用者範本位置不包含當地語系化範本的地區設定子目錄。
-
-您可以在 [選項] 對話方塊的 [專案和方案] > [位置] 中變更使用者範本的預設目錄。
-
-## <a name="organizing-templates"></a>整理範本
-
-[新增專案] 和 [新增項目] 對話方塊中的類別，反映已安裝範本和使用者範本位置中的目錄結構。 您可以修改這些目錄結構，以對您有意義的方式組織範本。
+[新增專案] 和 [新增項目] 對話方塊中的類別，反映已安裝範本和使用者範本位置中的目錄結構。 在使用者範本目錄新增資料夾，可將使用者範本組織成專屬類別。 [新增專案] 和 [新增項目] 對話方塊會反映出您對使用者範本類別所做的任何變更。
 
 > [!NOTE]
 > 您無法在程式設計語言層級建立新的類別。 只能在每一種語言內建立新的類別。
 
-> [!NOTE]
-> 如果特定語言的已安裝和使用者範本目錄結構不一樣 (亦即一個資料夾下有目錄而另一個沒有)，則所有類別都會顯示在 [新增專案] 對話方塊中。
-
-### <a name="organizing-user-templates"></a>整理使用者範本
-
-在使用者範本位置新增資料夾，可將使用者範本整理成專屬類別。 [新增專案] 對話方塊會反映您對範本類別所做的任何變更。
-
-#### <a name="to-create-new-user-project-template-categories"></a>建立新的使用者專案範本類別
+### <a name="to-create-new-user-project-template-categories"></a>建立新的使用者專案範本類別
 
 1. 在使用者專案範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 專案範本建立 **HelloWorld** 類別，請建立下列目錄：
 
@@ -88,7 +76,7 @@ ms.lasthandoff: 01/05/2018
 
    **HelloWorld** 類別隨即出現在 [新增專案] 對話方塊下的 [已安裝] > [Visual C#] 中。
 
-#### <a name="to-create-new-user-item-template-categories"></a>建立新的使用者項目範本類別
+### <a name="to-create-new-user-item-template-categories"></a>建立新的使用者項目範本類別
 
 1. 在使用者項目範本目錄的程式設計語言資料夾中建立資料夾。 例如，若要為 C# 項目範本建立 **HelloWorld** 類別，請建立下列目錄：
 
@@ -100,7 +88,7 @@ ms.lasthandoff: 01/05/2018
 
    **HelloWorld** 類別隨即出現在 [新增項目] 對話方塊下的 [已安裝] > [Visual C# 項目] 中。
 
-### <a name="displaying-templates-in-parent-categories"></a>在父類別中顯示範本
+### <a name="display-templates-in-parent-categories"></a>在父類別中顯示範本
 
 您可以使用 .vstemplate 檔案中的 `NumberOfParentCategoriesToRollUp` 項目，讓子類別中的範本可以顯示在其父類別中。 對於專案範本和項目範本而言，這些步驟都相同。
 

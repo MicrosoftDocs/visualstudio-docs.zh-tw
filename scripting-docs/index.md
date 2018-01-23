@@ -1,17 +1,53 @@
 ---
 layout: LandingPage
 title: "指令碼 | Microsoft Docs"
-ms.openlocfilehash: 0ab2cac300313488bd50bebb451dfd7aa42425c1
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 859e542900af91e88ae6792740a539bb6de5dd0c
+ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="scripting-technologies"></a>指令碼技術
 
-本頁提供 JavaScript、TypeScript 及其他 ECMAScript 相關技術的連結。
+此頁面會提供 JavaScript、TypeScript、ECMAScript 參考文件的連結，以及可讓您使用這些語言撰寫應用程式之 Visual Studio 技術的連結。
 
 <ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>了解 Node.js 工具</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>開始使用通用 Windows app (UWP)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
     <li>
         <a href="http://www.typescriptlang.org/docs/tutorial.html">
         <div class="cardSize">
@@ -49,6 +85,60 @@ ms.lasthandoff: 12/14/2017
         </a>
     </li>
     <li>
+        <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-get-started">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>開始使用 Azure 與 Node.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_cordova.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Apache Cordova 工具</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/aspnet/core/client-side/angular">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>開始使用 ASP.NET 及 AngularJS 等架構</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
@@ -77,7 +167,7 @@ ms.lasthandoff: 12/14/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 Windows 指令碼介面</h3>
+                        <h3>Windows 指令碼的介面 (封存)</h3>
                     </div>
                 </div>
             </div>
@@ -103,5 +193,37 @@ ms.lasthandoff: 12/14/2017
         </a>
     </li>
 </ul>
+
+<hr>
+<h2>參考資料</h2>
+
+<p><ul class="panelContent cardsW">
+    <li>
+        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>JavaScript 語言參考</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/scripting/chakra-hosting/javascript-runtime-hosting">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>JavaScript 執行階段裝載</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul><p>
 
 ---

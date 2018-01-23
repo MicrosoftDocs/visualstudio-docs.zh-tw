@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 12/22/2017
 本文件並不會授權在外部轉散發軟體，或將建置環境提供給第三方。  
   
 > 免責聲明<br /><br /> 本文件係依「原樣」提供。 雖然我們已測試過所述的步驟，但無法徹底測試每一種組態。 我們將試圖以學到的任何其他資訊，確保文件處於最新狀態。 本文件中所述之資訊與檢視 (包括 URL 及其他網站參考) 可能會隨時變更，恕不另行通知。 Microsoft 對本文提供之資訊，不作任何明示或暗示之保證。 貴用戶須自行承擔使用風險。<br /><br /> 本文件不提供　貴用戶任何 Microsoft 產品之智慧財產權的法定權利。 貴用戶可以複製本文件供內部參考之用。<br /><br /> 貴用戶沒有義務提供與本文件相關的任何建議、意見或其他意見反應 (「意見反應」) 給 Microsoft。 不過，貴用戶自願提供的任何意見反應可能會用於 Microsoft 產品以及相關規格或其他文件 (統稱為「Microsoft 供應項目」)，之後可能會由其他第三方用來開發自己的產品。 因此，如果　貴用戶針對本文件的任何版本提供 Microsoft 意見反應或套用意見反應的 Microsoft 供應項目，即表示　貴用戶同意：(a) Microsoft 可以在任何 Microsoft 供應項目中，自由地使用、重製、授權、散發或商業化意見反應；(b) 貴用戶也免費授權給第三方，這些權利僅限於讓其他產品使用或連接到納入意見反應的 Microsoft 產品之任何特定部分所需的專利權；以及 (c) 在下列情況下，貴用戶不會提供 Microsoft 任何意見反應，以授權或分享給任何第三方：(i) 貴用戶合理相信這些意見反應受限於任何第三方的任何專利、著作權或其他智慧財產權宣告或權利；或是 (ii) 受限於試圖要求納入或衍生自這類意見反應之任何 Microsoft 供應項目的授權條款，或其他 Microsoft 智慧財產權。
-
 
 本逐步解說已藉由在命令列上執行 MSBuild 及使用 Team Foundation Build，完成對下列作業系統的驗證。  
   
@@ -47,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
  您無法使用多電腦環境來建置下列應用程式類型：  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式。 若要建置 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式，您必須在組建電腦上安裝 Visual Studio。  
+-   UWP 應用程式。 若要建置 UWP 應用程式，您必須在建置電腦上安裝 Visual Studio。  
   
 -   以 .NET Framework 4 (含) 以前版本為目標的傳統型應用程式。 若要建置這些應用程式類型，您必須在組建電腦上安裝 Visual Studio 或 .NET 參考組件和工具 (從 Windows 7.1 SDK)。  
   
@@ -290,8 +289,8 @@ ms.lasthandoff: 12/22/2017
     |Vcvarsall.bat 引數|編譯器|組建電腦架構|組建輸出架構|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (預設)|32 位元 Native|x86、x64|x86|  
-    |x86_amd64|x64 Cross|x86、x64|x64|  
-    |amd64|x64 Native|x64|X64|  
+    |x86_amd64|x64 Cross|x86、x64|X64|  
+    |amd64|x64 Native|X64|X64|  
   
      如果 vcvarsall.bat 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 一節。  
   

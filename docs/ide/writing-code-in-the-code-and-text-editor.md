@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>在程式碼編輯器中撰寫程式碼
 Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管理程式碼和文字。 您可以使用大綱，展開及摺疊程式碼的不同區塊。 您可以使用 IntelliSense、[物件瀏覽器] 及呼叫階層，進一步了解程式碼。 您可以使用 [移至]、[移至定義] 和 [尋找所有參考] 這類功能，找到程式碼。 您可以將程式碼片段插入程式碼區塊，並使用像是 [從使用量產生] 的功能來產生程式碼。 如果您從未使用過 Visual Studio 編輯器，請參閱[編輯程式碼](https://www.visualstudio.com/features/ide-vs) ，以取得快速概觀。  
@@ -130,9 +130,10 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 ## <a name="customize-the-editor"></a>自訂編輯器  
 您可以與另一位開發人員共用 Visual Studio 設定、讓設定符合標準，或使用 [工具] 功能表上的 [匯入和匯出設定精靈] 命令，將其回復為 Visual Studio 預設設定。 在 [匯入和匯出設定精靈] 中，您可以變更所選取的一般設定或語言以及專案特定設定。
 
-若要定義新的熱鍵或重新定義現有熱鍵，請移至 [工具]、[選項]、[環境] 和 [鍵盤]。 如需快速鍵的詳細資訊，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
+若要定義新的熱鍵或重新定義現有熱鍵，請移至 [工具]、[選項]、[環境] 和 [鍵盤]。 如需快速鍵的詳細資訊，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-如需自訂編輯器的詳細資訊，請參閱[自訂編輯器](../ide/customizing-the-editor.md)。 如需語言特定編輯器選項的資訊，請參閱[使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)和[選項、文字編輯器、JavaScript、格式](../ide/reference/options-text-editor-javascript-formatting.md)。
+如需自訂編輯器的詳細資訊，請參閱[自訂編輯器](../ide/customizing-the-editor.md)。 如需 JavaScript 特定的編輯器選項，請參閱[選項、文字編輯器、JavaScript、格式](../ide/reference/options-text-editor-javascript-formatting.md)。
 
-## <a name="see-also"></a>請參閱  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>另請參閱
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)
