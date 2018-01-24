@@ -23,11 +23,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 並行存取例外狀況 (<xref:System.Data.DBConcurrencyException>) 兩位使用者試圖同時變更資料庫中相同的資料時，會引發。 在本逐步解說中，您可以建立 Windows 應用程式示範如何攔截<xref:System.Data.DBConcurrencyException>，找出造成錯誤之資料列，並了解如何處理它的策略。  
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>必要條件  
 本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
-1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
   
 2.  安裝 Northwind 範例資料庫執行下列步驟：  
 

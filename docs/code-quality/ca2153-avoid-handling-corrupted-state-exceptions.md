@@ -7,28 +7,28 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 92fa57068a760fc8168fa46cf32a5660293b2e9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d46b1c9e87b0bf5b8c0b12cfe10ac4cd85a4741c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
+
 |||  
 |-|-|  
 |TypeName|AvoidHandlingCorruptedStateExceptions|  
 |CheckId|CA2153|  
 |分類|Microsoft.Security|  
 |中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
- [損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。  
+
+## <a name="cause"></a>原因
+
+[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指出記憶體損毀存在於您的處理序。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。
   
 ## <a name="rule-description"></a>規則描述  
  CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的案例中，如果以適當的 `HandleProcessCorruptedStateExceptions` 屬性標示方法，一般的處理常式只會攔截例外狀況。 根據預設， [Common Language Runtime (CLR)](/dotnet/standard/clr)不會叫用 catch 處理常式的 Cse。  

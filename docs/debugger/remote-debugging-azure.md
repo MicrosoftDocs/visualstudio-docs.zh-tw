@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS 和 Visual Studio 2017 在 Azure 上的遠端偵錯 ASP.NET Core
-Azure 應用程式服務，我們建議您偵錯使用[快照偵錯工具](../debugger/debug-live-azure-applications.md)也可以遵循本主題中的指示從 Visual Studio 附加偵錯工具。 如果您正在 Windows Server IIS 與 Azure VM 上，您也可以設定它進行遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
+
+本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
+
+在 Azure 上的遠端偵錯的建議的方式取決於您的案例：
+
+* 若要偵錯 ASP.NET Core Azure App Service 上，請參閱[使用快照集偵錯工具的偵錯 Azure 應用程式](../debugger/debug-live-azure-applications.md)。 這是建議的方法。
+* 若要偵錯 ASP.NET Core 上使用較傳統的偵錯功能的 Azure 應用程式服務，請遵循本主題中的步驟 (請參閱節[遠端偵錯 Azure App Service 上](#remote_debug_azure_app_service))。
+
+    在此案例中，您必須將您的應用程式從 Visual Studio Azure 部署，但您不需要手動安裝或設定 IIS 或遠端偵錯工具 （這些元件與虛線表示），如下圖所示。
+
+    ![遠端偵錯工具元件](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* 若要偵錯在 Azure VM 上的 IIS，請遵循本主題中的步驟 (請參閱節[Azure VM 上的遠端偵錯](#remote_debug_azure_vm))。 這可讓您使用自訂的 IIS 設定，但更複雜的安裝和部署步驟。
+
+    為 Azure VM，您必須將您的應用程式從 Visual Studio Azure 部署，您也需要手動安裝 IIS 角色和遠端偵錯工具，如下圖所示。
+
+    ![遠端偵錯工具元件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* 若要偵錯在 Azure Service Fabric ASP.NET Core 時，請參閱[遠端 Service Fabric 應用程式進行偵錯](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 > [!WARNING]
 > 請務必刪除您已完成的步驟，在本教學課程時，您建立的 Azure 資源。 這樣一來，您可以避免產生不必要的費用。
 
-本主題說明如何：
-
-* 遠端偵錯在 Azure 應用程式服務的 ASP.NET Core
-
-* 遠端偵錯在 Azure VM 上的 ASP.NET Core
-
-Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure 部署，但您不需要手動安裝或設定 IIS 或遠端偵錯工具 （這些元件與虛線表示），如下圖所示。
-
-![遠端偵錯工具元件](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-為 Azure VM，您必須將您的應用程式從 Visual Studio Azure 部署，您也需要手動安裝 IIS 角色和遠端偵錯工具，如下圖所示。
-
-![遠端偵錯工具元件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> 若要偵錯在 Azure Service Fabric ASP.NET Core 時，請參閱[遠端 Service Fabric 應用程式進行偵錯](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 ### <a name="requirements"></a>需求
 
@@ -61,11 +63,11 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 4. 開啟 About.cshtml.cs 檔案，並在設定的中斷點`OnGet`方法 (在較舊的範本，開啟 HomeController.cs 改為和設定中斷點`About()`方法)。
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Azure App Service 上的遠端偵錯 ASP.NET Core
+## <a name="remote_debug_azure_app_service"></a>Azure App Service 上的遠端偵錯 ASP.NET Core
 
 從 Visual Studio 中，您可以快速發行及偵錯應用程式完整佈建的 IIS 執行個體。 不過，預先設定的 IIS 設定，而且您不能加以自訂。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 的功能，請試著偵錯在[Azure VM](#BKMK_azure_vm)。) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>若要部署的應用程式和遠端偵錯
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署應用程式，然後使用 [伺服器總管] 的遠端偵錯
 
 1. 在 Visual Studio 中，以滑鼠右鍵按一下專案節點，然後選擇 **發行**。
 
@@ -73,7 +75,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
     如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
-3. 在**伺服器總管**，以滑鼠右鍵按一下應用程式服務執行個體，然後選擇 **附加偵錯工具**。
+3. 開啟**伺服器總管**(**檢視** > **伺服器總管**)，以滑鼠右鍵按一下應用程式服務執行個體，然後選擇 **附加偵錯工具**.
 
 4. 在執行的 ASP.NET 應用程式，按一下連結以**有關**頁面。
 
@@ -81,7 +83,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
     就這麼容易！ 本主題中步驟的其餘部分適用於 Azure VM 上的遠端偵錯。
 
-## <a name="BKMK_azure_vm"></a>Azure VM 上的遠端偵錯 ASP.NET Core
+## <a name="remote_debug_azure_vm"></a>Azure VM 上的遠端偵錯 ASP.NET Core
 
 您可以建立伺服器的 Azure VM 的 Windows，再安裝及設定 IIS 和其他必要的軟體元件。 這會花費的時間比部署到 Azure 應用程式服務，並且需要您在本教學課程執行其餘的步驟。
 

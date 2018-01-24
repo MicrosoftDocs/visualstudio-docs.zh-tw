@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c5e59b34a1093b90320bfdd05989913e72600a8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc3ebe35c7b9697921e50a9ea310723128b494be
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Form 使用者控制項
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 
 本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。
 
-1. 如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。
+1. 如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。
 
 1. 安裝 Northwind 範例資料庫執行下列步驟：
 
@@ -68,9 +68,9 @@ ms.lasthandoff: 12/22/2017
 
        查詢編輯器視窗隨即開啟。
 
-    2. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。
+    1. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。
 
-    3. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
+    1. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
 
        在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。
 

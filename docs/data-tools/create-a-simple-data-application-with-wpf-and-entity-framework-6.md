@@ -7,29 +7,29 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs: CSharp
-ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
+
 此 walkthough 示範如何使用 SQL Server LocalDB，Northwind 資料庫中，Entity Framework 6 和 Windows Presentation Foundation 的 Visual Studio 中建立基本 「 資料表單 」 應用程式。 它會顯示如何執行基本的資料繫結的主版詳細資料檢視，而且也有自訂 「 繫結導覽 」 與 「 移動下一步] 按鈕，「 移到上一個""將移至 [開始時，「"Move 若要結束，"「 更新 」 和 「 刪除 」。  
   
  本文著重於在 Visual Studio 中使用資料的工具，並不會嘗試說明中任意深度的基礎技術。 它會假設您有基本的認識 XAML、 Entity Framework 和 SQL。 此範例中也不會示範 WPF 應用程式的標準的模型檢視 View Model (MVVM) 架構。 不過，您可以將這段程式碼複製到您自己的 MVVM 應用程式，具有極少數的修改。  
   
-## <a name="install-and-connect-to-northwind"></a>安裝並連接到 Northwind  
+## <a name="install-and-connect-to-northwind"></a>安裝並連接到 Northwind
+
 這個範例會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。 它應搭配其他 SQL 資料庫產品一樣，如果該產品的 ADO.NET 資料提供者支援 Entity Framework。  
-  
-1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**.NET 桌面開發**工作負載，或做為個別的元件。  
-  
+
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**.NET 桌面開發**工作負載，或做為個別的元件。
+
 2.  安裝 Northwind 範例資料庫執行下列步驟：  
 
     1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中安裝的一部份**資料儲存和處理**在 Visual Studio 安裝程式工作負載。)展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢...**.  
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  [加入新連接](../data-tools/add-new-connections.md)northwind。  
   
-## <a name="configure-the-project"></a>設定專案  
+## <a name="configure-the-project"></a>設定專案
   
 1.  在 Visual Studio 中，選擇 **檔案**，**新增**，**專案...** ，然後建立新 C# WPF 應用程式。  
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  現在我們可以使用 Visual Studio 來建立模型，根據 Northwind 資料庫。  
   
-## <a name="create-the-model"></a>建立模型  
+## <a name="create-the-model"></a>建立模型
   
 1.  以滑鼠右鍵按一下方案總管] 中的專案節點，然後選擇 [**新增**，**新項目...**.在左窗格中，C#] 節點下，選擇 [**資料**，然後在中間窗格選擇**ADO.NET 實體資料模型**。  
   
@@ -92,8 +92,9 @@ ms.lasthandoff: 12/22/2017
   
 現在我們已經準備好連結至 XAML 頁面此模型，讓我們可以檢視、 瀏覽並修改的資料。  
   
-## <a name="databind-the-model-to-the-xaml-page"></a>資料繫結至 XAML 頁面模型  
- 它為撰寫您自己的資料繫結程式碼，但更輕鬆地讓您的 Visual Studio。  
+## <a name="databind-the-model-to-the-xaml-page"></a>資料繫結至 XAML 頁面模型
+
+它為撰寫您自己的資料繫結程式碼，但更輕鬆地讓您的 Visual Studio。  
   
 1.  從主要功能表選擇**專案 > 加入新的資料來源**啟動**資料來源組態精靈**。 選擇**物件**因為我們要繫結的模型類別，不是針對資料庫：  
   
@@ -144,8 +145,9 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]  
 
 8.  請按 **F5**。 第一個客戶所擷取至 CollectionViewSource 應該會看到詳細資料。 您也應該會看到他們在資料格中的訂單。 格式不太好，因此讓我們先修正。 我們也將建立檢視的其他記錄，並執行基本 CRUD 作業的方式。  
-  
-## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>調整頁面設計並新增新的客戶和訂單的方格  
+
+## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>調整頁面設計並新增新的客戶和訂單的方格
+
 Visual Studio 所產生的預設排列方式不適合我們的應用程式，因此我們會在 XAML 中，以手動方式進行一些變更。 我們也會需要某些 「 表單 」 （也就是實際方格） 可讓使用者加入新的客戶或訂單。 為了加入新的客戶和訂單，我們需要一組個別的文字方塊不是資料繫結至`CollectionViewSource`。 我們會控制哪些設定 Visible 屬性處理常式方法中，使用者會看到任何給定時間的方格。 最後，我們將刪除 按鈕，讓使用者來刪除個別訂單的訂單方格中的每個資料列。  
   
 首先，加入下列樣式給 MainWindow.xaml Windows.Resources 元素：  
@@ -350,11 +352,12 @@ Visual Studio 所產生的預設排列方式不適合我們的應用程式，因
 ```  
   
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>加入按鈕，瀏覽、 加入、 更新及刪除  
- 在 Windows Forms 應用程式，則會以按鈕 BindingNavigator 物件瀏覽資料庫中的資料列和執行基本 CRUD 作業。 WPF 不提供 BindingNavigator，但它很容易建立一個。 我們將按鈕內水平 StackPanel，這麼做，而且我們會關聯至背後的程式碼中的方法繫結的命令按鈕。  
+
+在 Windows Forms 應用程式，則會以按鈕 BindingNavigator 物件瀏覽資料庫中的資料列和執行基本 CRUD 作業。 WPF 不提供 BindingNavigator，但它很容易建立一個。 我們將按鈕內水平 StackPanel，這麼做，而且我們會關聯至背後的程式碼中的方法繫結的命令按鈕。  
   
- 有慵命令邏輯部分: （1） 的命令、 （2） 的繫結、 （3) 按鈕，以及 （4） 命令中的處理常式程式碼後置。  
+有慵命令邏輯部分: （1） 的命令、 （2） 的繫結、 （3) 按鈕，以及 （4） 命令中的處理常式程式碼後置。  
   
-#### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中新增命令、 繫結和按鈕  
+### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中新增命令、 繫結和按鈕
   
 1.  首先，我們將命令加入我們 Windows.Resources 元素內的 MainWindow.xaml 檔案中：  
   
@@ -414,7 +417,7 @@ Visual Studio 所產生的預設排列方式不適合我們的應用程式，因
     </StackPanel>  
     ```  
   
-#### <a name="add-command-handlers-to-the-mainwindow-class"></a>將命令處理常式加入至 MainWindow 類別  
+### <a name="add-command-handlers-to-the-mainwindow-class"></a>將命令處理常式加入至 MainWindow 類別  
   
 程式碼後置很低的加入和刪除方法除外。 瀏覽執行的 CollectionViewSource 檢視屬性上呼叫方法。 DeleteOrderCommandHandler 示範如何對訂單的串聯刪除。 我們必須先刪除與它相關聯的訂單明細。 UpdateCommandHandler 將新的客戶或訂單加入至集合中，或是只使用使用者在文字方塊中所做的變更來更新現有客戶或順序。  
   
@@ -423,8 +426,10 @@ Visual Studio 所產生的預設排列方式不適合我們的應用程式，因
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>執行應用程式
+
 若要開始偵錯，請按 **F5**。 您應該會看到客戶和訂單資料，填入在方格中，並瀏覽按鈕應該可正常運作。 按一下 「 認可 」 會將新客戶或訂單加入至模型，在您輸入的資料之後。 按一下 「 取消 」 返回用完新客戶或新的訂單表單而不儲存資料。 您可以對現有的客戶和訂單直接在文字方塊中編輯，而且這些變更會自動寫入至模型。  
   
 ## <a name="see-also"></a>另請參閱
+
 [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)  
-[Entity Framework 文件](https://msdn.microsoft.com/en-us/data/ee712907.aspx)
+[Entity Framework 文件](/ef/)

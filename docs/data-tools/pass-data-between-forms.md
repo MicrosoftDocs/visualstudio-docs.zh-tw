@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用 customers 和 orders 資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二種形式會顯示所選取的客戶的訂單。 本逐步解說示範如何建立第一個表單接收資料的第二個表單上的方法。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>必要條件  
 本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
-1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
   
 2.  安裝 Northwind 範例資料庫執行下列步驟：  
 

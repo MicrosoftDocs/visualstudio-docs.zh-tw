@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
-**設定服務參考**對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服務。  
-  
+
+**設定服務參考**對話方塊可讓您設定 Windows Communication Foundation (WCF) 服務的行為。
+
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
-  
- 若要存取**設定服務參考**中參考的對話方塊中，以滑鼠右鍵按一下服務**方案總管 中**選擇**設定服務參考**。 您也可以存取對話方塊中，依序按一下**進階**按鈕**加入服務參考對話方塊**。  
-  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+
+若要存取**設定服務參考**中參考的對話方塊中，以滑鼠右鍵按一下服務**方案總管 中**選擇**設定服務參考**。 您也可以存取對話方塊中，依序按一下**進階**按鈕**加入服務參考對話方塊**。
+
 ## <a name="task-list"></a>工作清單  
   
 -   若要變更裝載 WCF 服務的位址，請輸入中的新位址**位址**欄位。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 -   若要停用類型共用，請清除**重複使用參考組件中的型別**核取方塊。 若要啟用類型共用參考的組件的子集，請選取**重複使用參考組件中的型別**核取方塊，選取**重複使用指定參考的組件中的型別**，並選取所需在參考**參考組件清單**。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
- **地址**  
+ **Address**  
  用於更新網址，服務參考會在這個網址查詢服務。 例如在開發期間，可能會在開發伺服器上裝載服務，稍後再將服務移至實際伺服器，並強迫變更位址。  
   
 > [!NOTE]
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **參考組件清單**  
  包含專案或網站的參考組件清單。 當**重複使用指定參考的組件中的型別**選取時，可以選取或清除個別組件。  
   
- **加入 Web 參考**  
- 顯示[加入 Web 參考對話方塊](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx)。  
-  
-> [!NOTE]
->  只有針對以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 版為目標的專案，才應使用這個選項。  
-  
-> [!NOTE]
->  **加入 Web 參考**按鈕是只有**設定服務參考**對話方塊會顯示從**加入服務參考對話方塊**。  
-  
-## <a name="see-also"></a>請參閱  
+ **加入 Web 參考**會顯示 [加入 Web 參考] 對話方塊。
 
- [如何： 將參考加入至 Web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> 只有針對以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 版為目標的專案，才應使用這個選項。
+
+> [!NOTE]
+> **加入 Web 參考**按鈕是只有**設定服務參考**對話方塊會顯示從**加入服務參考對話方塊**。
+
+## <a name="see-also"></a>另請參閱
+
+[如何： 將參考加入至 Web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/configure-service-reference-dialog-box.md)

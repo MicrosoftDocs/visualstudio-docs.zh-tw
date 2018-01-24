@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>遠端偵錯遠端 IIS 電腦上的 ASP.NET
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET MVC 4.5.2 應用程式、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET Core，請參閱[遠端偵錯 ASP.NET Core IIS 電腦上](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 您也可以部署和使用 Azure 在 IIS 上偵錯。 如需詳細資訊，請參閱[遠端偵錯在 Azure 上](../debugger/remote-debugging-azure.md)。
+本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET MVC 4.5.2 應用程式、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET Core，請參閱[遠端偵錯 ASP.NET Core IIS 電腦上](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 Azure 應用程式服務，您可以輕鬆地部署和偵錯 IIS 使用的預先設定執行個體上[快照偵錯工具](../debugger/debug-live-azure-applications.md)(.NET 4.6.1 需要) 或由[附加偵錯工具從 伺服器總管](../debugger/remote-debugging-azure.md)。
 
 這些伺服器設定過這些程序：
 * Windows Server 2012 R2 和 IIS 8 （Windows Server 2008 R2，則伺服器步驟會不同）
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]
     > 如果您使用 Windows Server 2008 R2，請安裝 ASP.NET 4，改為使用這個命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 重新啟動系統 (或執行**net stop was /y**後面**net 啟動 w3svc**挑選變更到系統路徑的命令提示字元)。
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 01/10/2018
 2. 在 Visual Studio 中，按一下 **偵錯 > 附加至處理序**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 您可以在 Visual Studio 2017，重新附加您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。 
+    > 您可以在 Visual Studio 2017，重新附加您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift+Alt+P). 
 
 3. [限定詞] 欄位設定為**\<遠端電腦名稱 >: 4022**。
 4. 按一下**重新整理**。

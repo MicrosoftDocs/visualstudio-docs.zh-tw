@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 12/22/2017
 
 可以從.NET 應用程式存取，並會顯示在 Visual Studio 資料工具視窗的資料庫系統，它必須有 ADO.NET 資料提供者。 如果您打算使用實體資料模型中的.NET 應用程式，提供者必須特別支援 Entity Framework。 許多提供者會提供 NuGet 封裝管理員，或透過 Visual Studio Marketplace。
 
-如果您使用 Azure 儲存體 Api，安裝的 Azure 儲存體模擬器在本機電腦上在開發期間才能避免產生費用，直到您準備好要部署到生產環境。 如需詳細資訊，請參閱[使用 Azure 儲存體模擬器進行開發和測試](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)。
+如果您使用 Azure 儲存體 Api，安裝的 Azure 儲存體模擬器在本機電腦上在開發期間才能避免產生費用，直到您準備好要部署到生產環境。 如需詳細資訊，請參閱[使用 Azure 儲存體模擬器進行開發和測試](/azure/storage/common/storage-use-emulator)。
 
 下列清單包含常見可用的資料庫系統的某些 Visual Studio 專案中。 清單未全部列出。 如需第三方廠商，提供可讓 Visual Studio 工具與深度整合 ADO.NET 資料提供者的清單，請參閱[ADO.NET 資料提供者](/dotnet/framework/data/adonet/data-providers)。
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server 是 Microsoft 頭號資料庫供應項目。 SQL Server 2016 提供突破性的效能、 進階的安全性，和豐富、 整合式報告和分析。 它隨附在專為使用不同的各種版本： 從高度可調整且高效能商業分析，在單一電腦上使用。 SQL Server Express 是專供轉散布與內嵌的 SQL 伺服器的全功能版本。  LocalDB 是簡化的版本的 SQL Server Express，不需要設定您的應用程式處理序中執行。 您可以下載或兩個產品[的 SQL Server Express 下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)。 許多 SQL 範例，本節中使用 SQL Server LocalDB。 SQL Server Management Studio (SSMS) 是有更多的功能比 Visual Studio SQL Server 物件總管 中所提供的獨立資料庫管理應用程式。 您可以取得 SSMS，先前的連結。
+SQL Server 是 Microsoft 頭號資料庫供應項目。 SQL Server 2016 提供突破性的效能、 進階的安全性，和豐富、 整合式報告和分析。 它隨附在專為使用不同的各種版本： 從高度可調整且高效能商業分析，在單一電腦上使用。 SQL Server Express 是專供轉散布與內嵌的 SQL 伺服器的全功能版本。  LocalDB 是簡化的版本的 SQL Server Express，不需要設定您的應用程式處理序中執行。 您可以下載或兩個產品[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。 許多 SQL 範例，本節中使用 SQL Server LocalDB。 SQL Server Management Studio (SSMS) 是有更多的功能比 Visual Studio SQL Server 物件總管 中所提供的獨立資料庫管理應用程式。 您可以取得 SSMS，先前的連結。
 
 ## <a name="oracle"></a>Oracle
 
