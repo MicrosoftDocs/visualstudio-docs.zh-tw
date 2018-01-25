@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Python Web 專案範本
 
@@ -33,7 +33,7 @@ Visual Studio 不包含這些架構本身。 您必須以滑鼠右鍵按一下�
 
 Bottle、Flask 和 Django 範本各自都包含一個含有一些頁面及靜態檔案的起始網站。 此程式碼足以用來在本機 (其中某些設定需要從環境取得) 執行伺服器並進行偵錯，以及部署至 Microsoft Azure (其中必須提供 [WSGI 應用程式 (英文)](http://www.python.org/dev/peps/pep-3333/) 物件)。
 
-從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](python-environments.md#global-and-virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
+從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](managing-python-environments-in-visual-studio.md#global-and-virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
 
 ![安裝專案範本所需之封裝的對話方塊](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ Microsoft Azure 雲端服務「確實」支援 `requirements.txt` 檔案。 如�
 
 ### <a name="sample-pyramid-configuration"></a>範例 Pyramid 設定
 
-Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建立應用程式之後，即可使用[從現有 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
+Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建立應用程式之後，即可使用[從現有 Python 程式碼](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
 
 - [偵錯] 群組：
   - **伺服器連接埠**：6543 (或是 .ini 檔案中設定的值)

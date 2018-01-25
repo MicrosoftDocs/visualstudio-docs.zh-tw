@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 753c3d78ff3da45213ea7cb9625d765e564a88e1
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b9a6c3240075107edfc5109fa6c62aaf6c23d92b
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
@@ -45,7 +45,7 @@ Visual Studio 也針對 Django 專案提供完整的[偵錯支援](debugging.md)
 
 ![中斷點](media/template-django-debugging.png)
 
-Django 專案一般是透過其 `manage.py` 檔案進行管理，而此檔案是 Visual Studio 所遵循的假設。 如果您停止使用該檔案作為進入點，則會中斷專案檔。 在該情況下，您需要[從現有檔案重新建立專案](python-projects.md#creating-a-project-from-existing-files)，而不要將它標示為 Django 專案。
+Django 專案一般是透過其 `manage.py` 檔案進行管理，而此檔案是 Visual Studio 所遵循的假設。 如果您停止使用該檔案作為進入點，則會中斷專案檔。 在該情況下，您需要[從現有檔案重新建立專案](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)，而不要將它標示為 Django 專案。
 
 ## <a name="django-management-console"></a>Django 管理主控台
 

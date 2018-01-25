@@ -24,8 +24,8 @@
 8. 如有需要，請按 Ctrl+F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
 
 > [!div class="nextstepaction"]
-> [教學課程：在 Visual Studio 中使用 Python](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [教學課程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [建立現有 Python 解譯器的環境](https://docs.microsoft.com/visualstudio/python/python-environments#creating-an-environment-for-an-existing-interpreter)

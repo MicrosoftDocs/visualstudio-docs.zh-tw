@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>在 Visual Studio 中建立 R 專案
 
@@ -119,6 +119,6 @@ Visual Studio 解決方案提供一個方便的位置，讓您在同一個邏輯
 以粗體反白顯示的專案是解決方案的「啟動」專案。若要變更它，請以滑鼠右鍵按一下不同的專案，然後選取 [設定為啟始專案]。
 
 > [!Note]
-> 目前，C#/C++ 語言整合沒有任何就緒的明確 R (如為 Python，請參閱[建立適用於 Python 的 C++ 延伸模組](../python/cpp-and-python.md))。  不過有一些可用的文件庫為 R 提供 C# 和 C++ 橋接器。
+> 目前，C#/C++ 語言整合沒有任何就緒的明確 R (如為 Python，請參閱[建立適用於 Python 的 C++ 延伸模組](../python/working-with-c-cpp-python-in-visual-studio.md))。  不過有一些可用的文件庫為 R 提供 C# 和 C++ 橋接器。
 
 如需一般管理專案和方案的詳細資訊，請參閱 [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。

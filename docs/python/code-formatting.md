@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>格式化 Python 程式碼
 
@@ -30,7 +30,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式化] 及其巢狀索引標籤可設定選項，且依預設會設為符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 [一般] 索引標籤決定何時套用格式，本主題說明其他三個索引標籤的設定。
 
-此外，[Visual Studio 中的 Python 支援](installation.md)也將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表，如下文所述。
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表，如下文所述。
 
 ## <a name="spacing"></a>間距
 

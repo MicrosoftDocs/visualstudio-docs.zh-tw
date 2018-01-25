@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 0d7c6644dc3f52629ff91d2f6b5dd44dbdba6b3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -38,7 +38,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 - 執行 Python 的遠端電腦，作業系統為 Mac OS 或 Linux。
 - 已開啟上述電腦的防火牆連接埠 5678 (輸入)，其為遠端偵錯的預設值。
 
-您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)上的清單，以取得其他的 Python 下載位置。
+您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters)上的清單，以取得其他的 Python 下載位置。
 
 如需建立 Azure VM 防火牆規則的詳細資訊，請參閱[使用 Azure 入口網站對 Azure 中的 VM 開啟連接埠](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 

@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
-[在 Visual Studio 2017 中安裝 Python 支援](installation.md)之後，就可以使用各種範本輕鬆地建立新的 Python 專案。
+[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以使用各種範本輕鬆地建立新的 Python 專案。
 
 1. 啟動 Visual Studio。
 
-1. 選取 [檔案] > [新增] > [專案] (Ctrl+Shift+N)。 在 [新增專案] 對話方塊中，搜尋 "Python"，然後選取您想要的範本。 請注意，選取範本時會顯示範本所提供項目的簡短描述  (另請參閱 [Python 專案](python-projects.md#project-templates))。
+1. 選取 [檔案] > [新增] > [專案] (Ctrl+Shift+N)。 在 [新增專案] 對話方塊中，搜尋 "Python"，然後選取您想要的範本。 請注意，選取範本時會顯示範本所提供項目的簡短描述  (另請參閱 [Python 專案](managing-python-projects-in-visual-studio.md#project-templates))。
 
     ![含 Python 範本的 VS2017 [新增專案] 對話方塊](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ ms.lasthandoff: 01/12/2018
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [教學課程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
+> [教學課程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立現有 Python 解譯器的環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md)。
-- [安裝位置](installation.md#install-locations)。
+- [建立現有 Python 解譯器的環境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。

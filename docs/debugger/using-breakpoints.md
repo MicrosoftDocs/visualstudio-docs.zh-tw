@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
@@ -160,6 +160,9 @@ ms.lasthandoff: 01/10/2018
  如果使用無效的語法設定中斷點條件，警告訊息便會出現。 如果使用有效的語法，但是無效的語意指定中斷點條件，在第一次叫用中斷點時，則會出現警告訊息。 在任一情況下，當叫用無效的中斷點時，偵錯工具便會中斷執行。 只有在條件是有效的並且判斷值為 `false`時，才會略過中斷點。  
   
  這個條件可以是偵錯工具所能辨識的任何有效運算式。 如需有效運算式的詳細資訊，請參閱 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
+
+> [!NOTE]
+> 您可以使用**CTRL + Enter**關閉**中斷點設定**視窗。
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在中斷點條件中使用物件 ID (C# 和 F#)  
  有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C# 和 F# 中，您可以針對 [參考類型](/dotnet/csharp/language-reference/keywords/reference-types) 的特定執行個體建立物件 ID，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
@@ -232,20 +235,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="export-and-import-breakpoints"></a>匯出和匯入中斷點  
  您可以將中斷點匯出至 XML 檔案，方法是以滑鼠右鍵按一下此中斷點，然後選取 [匯出] 。 根據預設，該檔案會儲存在此方案目錄中。 若要匯入中斷點，請開啟 [中斷點]  視窗 (**CTRL + ALT + B**)，然後在工具列上按一下向右的箭頭 (工具提示為 [從檔案匯入中斷點] )。  
   
-## <a name="troubleshoot"></a>進行中斷點疑難排解 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點  
- 如果您在偵錯時刪除了中斷點，則在某些情況下，您會在下次啟動偵錯時再次叫用此中斷點。 若要停止叫用此中斷點，請確定所有中斷點的執行個體都已從 [中斷點]  視窗中移除。  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>偵錯工具找不到中斷點原始程式檔的正確版本  
- 如果原始程式檔已變更，且來源不再符合您要偵錯的程式碼，則即使原始程式檔存在，偵錯工具可能仍會尋找對應中斷點的原始程式檔。  
-  
-1.  如果您要顯示不符合版本的原始程式碼的 Visual Studio 正在偵錯，請選擇**偵錯 > 選項和設定**。 在 [偵錯] / [一般]  頁面上，清除 [原始程式檔必須完全符合原始版本]  選項。  
-  
-2.  您也可以將中斷點繫結至原始程式檔。 選取中斷點，並選擇內容功能表上的 [條件]  。 在 [中斷點設定]  視窗中核取 [允許原始程式碼與原始版本不同]  。  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>中斷點在 DLL 中無法運作  
- 在偵錯工具尚未載入有關程式碼所在模組的偵錯資訊之前，您無法在原始程式檔中設定中斷點。 問題徵兆可能包含 [無法設定中斷點] 這類訊息。 警告中斷點圖像 (Glyph) 會出現在中斷點的位置。 不過，這些警告中斷點在程式碼載入時會成為實際的中斷點。 如需載入符號的詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
-  
 ## <a name="see-also"></a>請參閱  
- [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)
+[疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)  
+[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)

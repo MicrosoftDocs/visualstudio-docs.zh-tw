@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
-[在 Visual Studio 2017 中安裝 Python 支援](installation.md)之後，就可以輕鬆地複製 Python 程式碼的存放庫，並從中建立專案。
+[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以輕鬆地複製 Python 程式碼的存放庫，並從中建立專案。
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ ms.lasthandoff: 01/12/2018
 14. 重新執行程式，以確認第一次檢查通過，而且程式停止於下一個 Koan。 繼續更正錯誤，並視需要重新執行程式。
 
 > [!Important]
-> 在本快速入門中，您已在 GitHub 上建立 *python_koans* 存放庫的直接複製品。 這類存放庫是由其作者保護無法直接變更，因此嘗試將變更認可至存放庫會失敗。 在實務上，開發人員會改為將這類存放庫分叉到其專屬 GitHub 帳戶，並在該處進行變更，然後建立提取要求，將這些變更提交至原始存放庫。 [教學課程步驟 6 - 使用 Git](vs-tutorial-01-06.md) 會描述下列步驟。
+> 在本快速入門中，您已在 GitHub 上建立 *python_koans* 存放庫的直接複製品。 這類存放庫是由其作者保護無法直接變更，因此嘗試將變更認可至存放庫會失敗。 在實務上，開發人員會改為將這類存放庫分叉到其專屬 GitHub 帳戶，並在該處進行變更，然後建立提取要求，將這些變更提交至原始存放庫。 [教學課程步驟 6 - 使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md) 會描述下列步驟。
 
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [教學課程：在 Visual Studio 中使用 Python](vs-tutorial-01-01.md)
+> [教學課程：在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立現有 Python 解譯器的環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md)。
-- [安裝位置](installation.md#install-locations)。
+- [建立現有 Python 解譯器的環境](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)。
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+- [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。

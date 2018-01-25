@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 使用者入門
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在您這麼做時探索 Visual Studio [整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
@@ -53,7 +53,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
-1. 按一下 [新增專案] 對話方塊的左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+1. 按一下 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vs-open-visual-studio-installer-generic.png)
 
@@ -82,11 +82,11 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
      Console.ReadKey(True)
     ```
 
-    此程式碼會取代現有的 [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1)、[Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) 和 [Console.ReadKey]() 陳述式。
+    此程式碼取代現有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 陳述式。
 
  ![程式碼視窗顯示 What Is Your Name 程式碼](../ide/media/vb-codewindow-what-name.png)
 
-3. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：       
+3. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
    ![主控台視窗顯示 What Is Your Name、時間和日期，以及「請按任意鍵繼續」訊息](../ide/media/vb-console-what-name.png)
 

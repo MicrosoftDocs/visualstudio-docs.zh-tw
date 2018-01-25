@@ -16,11 +16,11 @@ dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -70,7 +70,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 如需 Falcon 的詳細資訊，請前往 [falconframework.org](https://falconframework.org/)。
 
-請注意，開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 中有許多 Python 專案範本包含 `requirements.txt` 檔案，它會列出範本相依的程式庫。 從這些範本之一建立專案，會觸發建立程式庫安裝所在的虛擬環境。 如需詳細資訊，請參閱 [Python 環境 - 虛擬環境](../python/python-environments.md#creating-virtual-environments)。
+請注意，開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 中有許多 Python 專案範本包含 `requirements.txt` 檔案，它會列出範本相依的程式庫。 從這些範本之一建立專案，會觸發建立程式庫安裝所在的虛擬環境。 如需詳細資訊，請參閱 [Python 環境 - 虛擬環境](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
@@ -144,7 +144,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 恭喜您完成本快速入門，了解到有關 Visual Studio IDE 與 Python 的一些內容。 若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請選取下方的按鈕。
 
 > [!div class="nextstepaction"]
-> [教學課程：Visual Studio 中的 Python 使用者入門](../python/vs-tutorial-01-01.md)。
+> [教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
 - 了解 [Visual Studio 中的 Python Web 應用程式範本](../python/template-web.md)
 - 深入了解 [Python 偵錯](../python/debugging.md)

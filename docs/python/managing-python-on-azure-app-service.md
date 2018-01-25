@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
@@ -200,7 +200,7 @@ HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Pytho
     建議使用 `requirements.txt`，因為它可以輕鬆重現您在本機和伺服器上設定的確切套件。 將任何變更部署至 `requirements.txt` 之後，請務必前往主控台，然後再次執行命令。
 
 > [!Note]
-> 您的 App Service 上沒有 C 編譯器，因此您需要針對任何含原生延伸模組的套件安裝 Wheel。 許多熱門的套件都會提供自己的滾輪。 如果是未提供的套件，請在本機開發電腦上使用 `pip wheel <package_name>`，然後將滾輪上傳至您的網站。 如需範例，請參閱[管理必要套件](python-environments.md#managing-required-packages-requirementstxt)。
+> 您的 App Service 上沒有 C 編譯器，因此您需要針對任何含原生延伸模組的套件安裝 Wheel。 許多熱門的套件都會提供自己的滾輪。 如果是未提供的套件，請在本機開發電腦上使用 `pip wheel <package_name>`，然後將滾輪上傳至您的網站。 如需範例，請參閱[管理必要套件](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt)。
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 

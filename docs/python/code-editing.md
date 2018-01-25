@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
-開發人員大部分的時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installation.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。 
+開發人員大部分的時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。 
 
 本主題內容：
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/12/2018
 
 如需在 Visual Studio 中編輯程式碼的一般文件，請參閱[在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱 [Visual Studio 中的大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。 Python 支援可讓您使用 Visual Studio 物件瀏覽器 ([檢視] > [其他視窗] > [物件瀏覽器] 或 Ctrl + W、J) 來檢查每個模組中定義的類別，以及這些類別中定義的函式。 
 
-編輯器也與 Visual Studio 中的互動式視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](vs-tutorial-01-03.md)和[使用互動式視窗 - 將程式碼傳送至互動式命令](interactive-repl.md#send-code-to-interactive-command)。
+編輯器也與 Visual Studio 中的互動式視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 將程式碼傳送至互動式命令](interactive-repl.md#send-code-to-interactive-command)。
 
 如需 Python 程式碼的編輯簡介，請觀看 [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (編輯 Python 程式碼，Microsoft Virtual Academy，2 分 30秒)：
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 為了改善效能，IntelliSense 仰賴為您專案中的每個 Python 環境所產生的自動完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱 [Python 環境](python-environments.md))。 
+IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 為了改善效能，IntelliSense 仰賴為您專案中的每個 Python 環境所產生的自動完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱 [Python 環境](managing-python-environments-in-visual-studio.md))。 
 
 ### <a name="completions"></a>自動完成
 
