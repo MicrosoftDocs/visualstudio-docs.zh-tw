@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET 4.5.2，請參閱[IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您也可以部署和使用 Azure 在 IIS 上偵錯。 Azure 應用程式服務，您可以輕鬆地部署和偵錯 IIS 使用的預先設定執行個體上[快照偵錯工具](../debugger/debug-live-azure-applications.md)或[附加偵錯工具從 伺服器總管](../debugger/remote-debugging-azure.md)。
+本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET 4.5.2，請參閱[IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您也可以部署和使用 Azure 在 IIS 上偵錯。 Azure 應用程式服務，您可以輕鬆地部署和偵錯的 IIS 和遠端偵錯工具，並使用預先設定的執行個體上[快照偵錯工具](../debugger/debug-live-azure-applications.md)或[附加偵錯工具從 伺服器總管](../debugger/remote-debugging-azure.md)。
 
 這些伺服器設定過這些程序：
 * Windows Server 2012 R2 和 IIS 8

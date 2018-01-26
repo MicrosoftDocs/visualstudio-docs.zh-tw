@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 不變性 API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 可讓程式鎖定部分或全部的特定領域語言 (DSL) 模型，讓它可以讀取但不是會變更。 無法使用此唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/13/2018
 > [!NOTE]
 >  可以使用反映來規避鎖定原則。 它適用於協力廠商開發人員，提供清楚的界限，但不提供增強式安全性。  
   
- 詳細資訊和範例可用在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128)網站。  
+ 詳細資訊和範例可用在 Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)網站。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   

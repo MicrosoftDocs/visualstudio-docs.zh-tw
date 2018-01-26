@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 本逐步解說示範如何將追蹤屬性新增至網域模型。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/13/2018
   
  比方說，在特定領域語言工具 （DSL 工具），網域類別的屬性具有預設值的計算方式是使用的領域類別，而是使用者名稱的顯示名稱可以在設計階段變更的值，或其重設為導出值。  
   
- 在本逐步解說，您會建立有追蹤都有預設值，根據模型的預設命名空間屬性的屬性命名空間的特定領域語言 (DSL)。 如需追蹤 屬性的詳細資訊，請參閱[定義追蹤之屬性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ 在本逐步解說，您會建立有追蹤都有預設值，根據模型的預設命名空間屬性的屬性命名空間的特定領域語言 (DSL)。 如需追蹤 屬性的詳細資訊，請參閱[定義追蹤之屬性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
 -   追蹤屬性描述元 DSL 工具支援。 不過，DSL 設計工具無法用來將追蹤的屬性加入一種語言。 因此，您必須加入自訂程式碼來定義並實作追蹤屬性。  
   
@@ -253,7 +253,7 @@ ms.lasthandoff: 01/13/2018
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 ExampleModel 網域類別的類型描述元  
   
 1.  TypeDescriptor.cs 檔案中加入下列程式碼。  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

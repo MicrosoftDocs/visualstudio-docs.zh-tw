@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
+
 若要使用 Visual Studio 中的自訂指示詞處理器，在任何電腦上，您必須在本主題中所述的方法之一來註冊。  
   
- 可供選擇的方法為：  
+可供選擇的方法為：  
   
--   [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
+-   [Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
   
 -   [VSPackage](../extensibility/internals/vspackages.md)。 如果您要定義除了指示詞處理器之外還包含其他功能的 VSPackage，有個便利的方法可以註冊指示詞處理器。  
   
 -   設定登錄機碼： 使用這個方法時，您會加入指示詞處理器的登錄項目。  
   
- 您必須使用其中一種方法，只有當您想要轉換文字範本在 Visual Studio 或[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
+您需要使用其中一種方法，只有當您想要轉換文字範本在 Visual Studio 或 MSBuild。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器  
- 您可以加入自訂的指示詞處理器給[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器
+
+您可以加入自訂的指示詞處理器給[Visual Studio 擴充功能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md)。
   
  您必須確認 .vsix 檔是否包含下列兩個項目：  
   
@@ -39,10 +41,10 @@ ms.lasthandoff: 01/13/2018
   
 -   註冊指示詞處理器的 .pkgdef 檔。 檔案的主檔名必須與組件相同。 例如，您的檔案可以命名為 CDP.dll 和 CDP.pkgdef。  
   
- 若要檢查或變更 .vsix 檔案的內容，請將副檔名變更為 .zip，然後開啟檔案。 編輯內容之後，再將檔名變更回 .vsix。  
-  
- 有數個建立 .vsix 檔的方法。 下列程序將說明其中一個方法。  
-  
+若要檢查或變更 .vsix 檔案的內容，請將副檔名變更為 .zip，然後開啟檔案。 編輯內容之後，再將檔名變更回 .vsix。  
+
+有數個建立 .vsix 檔的方法。 下列程序將說明其中一個方法。  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>若要在 VSIX 專案中開發自訂指示詞處理器  
   
 1.  Visual Studio 中建立 VSIX 專案。  
@@ -53,7 +55,7 @@ ms.lasthandoff: 01/13/2018
   
     1.  在 VSIX 資訊清單編輯器 中，在**資產**索引標籤上，選擇**新增**並設定新的項目屬性：  
   
-         **內容類型** = **VSPackage**  
+         **Content Type** = **VSPackage**  
   
          **來源專案** = \<*目前的專案*>  
   
@@ -90,11 +92,11 @@ ms.lasthandoff: 01/13/2018
   
 5.  將下列參考加入至專案：  
   
-    -   **Microsoft.VisualStudio.TextTemplating。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost。\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  將自訂指示詞處理器類別加入至專案。  
   
@@ -197,5 +199,6 @@ ms.lasthandoff: 01/13/2018
 |類別|REG_SZ|\<**完整的類別名稱**>|  
 |Assembly|REG_SZ|\<**在 GAC 中組件名稱**>|  
   
-## <a name="see-also"></a>請參閱  
- [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>另請參閱
+
+[建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

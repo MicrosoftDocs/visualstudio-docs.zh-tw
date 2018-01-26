@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c9c9fbaaed7375cffd581efca34465effd48d33c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7380d4bcade2e93b7e9ab7302201b67df629e041
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以變更的外觀和行為的 [總管] 中您的網域特定語言設計工具，如下所示：  
@@ -111,5 +111,6 @@ ms.lasthandoff: 01/13/2018
   
      總管 中應該只顯示**執行者** 節點，並不應該顯示**註解**節點。  
   
-## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>另請參閱
+
+[特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

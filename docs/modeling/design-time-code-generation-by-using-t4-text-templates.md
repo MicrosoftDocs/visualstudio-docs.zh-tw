@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓這些變更的程式碼，它們會根據從資料產生*模型*。 模型是檔案或資料庫包含您的應用程式需求重要資訊。  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  如果來源模型變更，則您應該重新執行方案中的所有範本。 若要手動執行此作業，選擇 **轉換所有範本**上**建置**功能表。  
   
- 如果您已安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK，則可以在執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：  
+ 如果您已安裝 Visual Studio Modeling SDK，您可以讓您執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
 
+> [!NOTE]
+> 在 Visual Studio 2017，文字範本轉換 SDK 及 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

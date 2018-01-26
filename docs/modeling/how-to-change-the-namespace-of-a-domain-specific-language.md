@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9fb477876f149e9e410e2dac34171e7581405524
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: fac213be46e86aab8767b71a8dff7dc10202321c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更網域指定的語言命名空間
 您可以變更特定領域語言命名的空間。 您必須進行的變更**DSL 總管**、 Dsl 封裝專案中，屬性和組件資訊。  
@@ -52,5 +52,6 @@ ms.lasthandoff: 01/13/2018
   
 11. 在**建置**功能表上，選擇**重建方案**。  
   
-## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>另請參閱
+
+[特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

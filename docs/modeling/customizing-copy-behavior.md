@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49a410ef816f2e77713b65b33a2ad8bc59b5b116
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a9a17cba8e1ff1cca66f82c1d3934ff179b04fd9
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。  
@@ -561,11 +561,11 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>請參閱  
- [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
- [如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [自訂刪除行為](../modeling/customizing-deletion-behavior.md)   
- [範例： VMSDK 循環圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>另請參閱
+
+[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
+[如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+[自訂刪除行為](../modeling/customizing-deletion-behavior.md)   
+[範例： VMSDK 循環圖範例](http://go.microsoft.com/fwlink/?LinkId=213879)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
- 

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 91f1143e593ae63d41e15beb74612f192ec736d1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8e73b12b1ca3fa3760bf1b074eb42370130534b6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是特殊的屬性，可以加入至定義域項目、 圖形、 連接器及圖表。 您可以新增任何屬性繼承自`System.Attribute`類別。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/13/2018
   
      **自訂屬性**屬性現在顯示的屬性，以下列格式：  
   
-     `[`*AttributeName* `(` *ParameterName* `=` *類型*`)]`  
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

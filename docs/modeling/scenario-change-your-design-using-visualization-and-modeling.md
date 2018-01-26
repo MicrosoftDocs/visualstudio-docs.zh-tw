@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 請使用 Visual Studio 中的視覺化與模型工具，確定您的軟體系統符合使用者的需求。
@@ -485,11 +485,10 @@ ms.lasthandoff: 01/22/2018
 |------------------|---------------|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>請參閱  
- [將程式碼視覺化](../modeling/visualize-code.md)   
- [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
- [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>另請參閱
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[將程式碼視覺化](../modeling/visualize-code.md)   
+[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)   
+[在敏捷式開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
  

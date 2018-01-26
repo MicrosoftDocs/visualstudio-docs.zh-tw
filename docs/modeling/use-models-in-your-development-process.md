@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 08517439e2b99ca9ceba29ad3c7558494cf6bb47
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片： 透過模型改進架構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
@@ -130,12 +130,13 @@ ms.lasthandoff: 01/13/2018
 |**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>請參閱  
- [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
- [模型使用者需求](../modeling/model-user-requirements.md)   
- [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
- [開發模型中的測試](../modeling/develop-tests-from-a-model.md)   
- [建構模型方案](../modeling/structure-your-modeling-solution.md)
+## <a name="see-also"></a>另請參閱
+
+[在敏捷式開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
+[模型使用者需求](../modeling/model-user-requirements.md)   
+[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
+[開發模型中的測試](../modeling/develop-tests-from-a-model.md)   
+[建構模型方案](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

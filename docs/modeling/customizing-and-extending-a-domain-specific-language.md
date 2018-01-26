@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以定義模型工具：  
@@ -55,7 +55,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 |刪除、 重設父代，或刪除項目時，請重新連結相關的項目。|設定**傳播刪除**關係角色的值。 對於更複雜的影響，覆寫`ShouldVisitRelationship`和`ShouldVisitRolePlayer`方法`MyDslDeleteClosure`中定義的類別**DomainModel.cs**<br /><br /> 請參閱[自訂刪除行為](../modeling/customizing-deletion-behavior.md)|  
 |保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至複製`ElementGroupPrototype`。 若要覆寫最方便的方法是`ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
 |在選擇的位置貼上圖形，例如目前的游標位置。|覆寫`ClipboardCommandSet.ProcessOnCopy()`要使用的特定位置的新版`ElementOperations.Merge().`看到[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
-|貼上建立其他連結|覆寫 ClipboardCommandSet.ProcessOnPasteCommand()|  
+|貼上建立其他連結|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |啟用從拖放此圖中，其他 Dsl 和 Windows 項目|請參閱[如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |允許圖形或工具，以將它們拖曳至 「 子 」 圖形，例如連接埠，如同它已拖曳至父代。|定義目標物件類別，已卸除的物件轉送給父項目合併指示詞。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|  
 |允許圖形或將它們拖曳至圖形，並讓其他連結的工具或建立的物件。 例如，若要允許註解可以放到它為連結的項目。|項目合併指示詞在類別上定義目標網域，並定義要產生連結。 在複雜的情況下，您可以加入自訂程式碼。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|  
@@ -70,10 +70,10 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 |將數個 Dsl 整合，讓它們能夠做為一個應用程式的一部分。|請參閱[整合的模型，使用 Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。|  
 |可讓您擴充第三方的 DSL 和控制擴充功能。|[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [使用 DSL 程式庫共用 DSL 之間的類別](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [定義鎖定原則來建立唯讀區段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>請參閱  
- [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
- [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>另請參閱
+
+[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
+[撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含"\<html > …"以及所有其他標準部分的 HTML 網頁。 插入至範本是*控制區塊*，其為程式碼片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。  
@@ -258,9 +258,10 @@ Content of MyFile.txt is:
   
 ```  
   
- 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱[存取 Visual Studio 或其他主機從範本](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
-  
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行  
+您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱[存取 Visual Studio 或其他主機從範本](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
+
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行
+
  您應該注意，[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)主應用程式不同的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API   
   
  (這不適[執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)，這樣會提供您的程式碼的其餘部分一起編譯的程式碼。)  

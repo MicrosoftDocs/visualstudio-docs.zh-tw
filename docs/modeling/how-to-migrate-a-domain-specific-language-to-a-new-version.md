@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
 您可以移轉專案定義及使用以網域特定語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]可散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/13/2018
   
     -   您可以按兩下 Windows 檔案總管 （或檔案總管） 中的工具，或從命令提示字元啟動工具。 此工具是在這個位置：  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  選擇包含方案和您想要轉換的專案的資料夾。  
   
@@ -76,7 +76,7 @@ ms.lasthandoff: 01/13/2018
     2.  按一下**轉換所有範本**方案總管 中的標頭中的按鈕。  
   
         > [!NOTE]
-        >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱[如何自動化轉換的所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+        >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱[如何自動化轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 6.  更新已轉換的專案中自訂程式碼。  
   

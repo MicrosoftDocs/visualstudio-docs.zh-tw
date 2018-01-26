@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d2d6d4ebfa8ca86179afb8d88b59dca6b42d9e26
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用網域指定的語言總管
 **DSL 總管**樹狀檢視顯示數種類型的資訊。 大部分的 DSL 總管 中的項目有關的詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
@@ -43,4 +43,4 @@ ms.lasthandoff: 01/13/2018
 -   **Xml 序列化行為**。 模型的序列化設定。 如需序列化的詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

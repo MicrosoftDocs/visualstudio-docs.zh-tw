@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 本主題描述 DslDefinition.dsl 檔案的 Dsl 專案中的結構[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解決方案，它會定義*網域特定領域語言*。 DslDefinition.dsl 檔案描述的類別和關聯性的特定領域語言，以及圖表、 圖形、 連接器、 序列化格式和**工具箱**的特定領域語言及其編輯工具。 在網域指定的語言方案中，會根據 DslDefinition.dsl 檔中的資訊產生定義那些工具的程式碼。  
@@ -151,15 +151,15 @@ ms.lasthandoff: 01/13/2018
   
  每個網域類別 (包括關聯性、圖形、連接器和圖表) 都可以有下列屬性和子節點：  
   
--   **識別碼。**這個屬性是 GUID。 如果您沒有在檔案中提供值，則「網域指定的語言設計工具」將建立一個值。 (在此文件的圖中，通常會忽略此屬性以節省空間。)  
+-   **Id.**這個屬性是 GUID。 如果您沒有在檔案中提供值，則「網域指定的語言設計工具」將建立一個值。 (在此文件的圖中，通常會忽略此屬性以節省空間。)  
   
 -   **名稱和命名空間。** 這些屬性會指定產生的程式碼中的名稱和命名空間的類別。 它們在網域指定的語言內必須都是唯一的。  
   
--   **InheritanceModifier。** 這個屬性是 「 抽象 」、 「 密封 」 或 none。  
+-   **InheritanceModifier.** 這個屬性是 「 抽象 」、 「 密封 」 或 none。  
   
--   **顯示名稱。** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。  
+-   **DisplayName.** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。  
   
--   **GeneratesDoubleDerived。** 如果這個屬性設為 true，將會產生兩個類別，且其中一個其他的子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。  
+-   **GeneratesDoubleDerived.** 如果這個屬性設為 true，將會產生兩個類別，且其中一個其他的子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。  
   
 -   **HasCustomConstructor**。 如果此屬性設為 true，則會從產生的程式碼中省略建構函式，讓您可以撰寫您自己的版本。  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  連接器對應也可以包含裝飾項目對應。  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

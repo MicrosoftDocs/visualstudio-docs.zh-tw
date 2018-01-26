@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de3c25f54bcfbf89ec5f4482a67741f9834222e0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio 版本支援的視覺效果&amp;Modeling SDK
 以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。  
@@ -46,4 +46,4 @@ ms.lasthandoff: 01/13/2018
 >  若要讓 DSL 殼層產品上執行，您必須設定**支援 VS Edition**中延伸模組資訊清單的欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

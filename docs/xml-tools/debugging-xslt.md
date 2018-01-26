@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 您可以使用 Visual Studio 偵錯工具來偵錯 XSLT。 偵錯工具支援設定中斷點、檢視 XSLT 執行狀態等。 XSLT 偵錯在 Visual Studio Team System 及 Professional Edition 中可用。  
@@ -57,5 +57,5 @@ ms.lasthandoff: 12/22/2017
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)  
  簡介 Visual Studio 偵錯工具。  
   
- [XSLT 參考](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT 參考](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  提供 XSLT 項目及函數的參考材料。

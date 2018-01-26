@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用網域指定的語言方案
 使用建立的網域特定定義域語言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 此區段是有關如何設定及自訂方案。  
@@ -47,5 +47,5 @@ ms.lasthandoff: 01/13/2018
  [如何︰ 擴充網域指定的語言設計工具](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  您可以自訂與功能表命令的 DSL 設計工具。  
   
- [如何自動轉換所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [如何自動轉換所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  若要避免按一下轉換所有範本，您可讓自動組建的一部分。

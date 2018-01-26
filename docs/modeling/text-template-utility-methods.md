@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
-有數種方法，當您撰寫程式碼時，就一律可供您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字範本。 這些方法會定義在<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。  
-  
+
+有數種方法，都可供您使用，當您在 Visual Studio 文字範本撰寫程式碼。 這些方法會定義在<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>。
+
 > [!TIP]
->  您也可以使用其他方法和規則 （不前置處理過後） 的文字範本中的主機環境所提供的服務。 例如，解決檔案路徑、 記錄錯誤，和取得服務所提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和載入任何套件。  如需詳細資訊，請參閱[從文字範本存取 Visual Studio](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+> 您也可以使用其他方法和規則 （不前置處理過後） 的文字範本中的主機環境所提供的服務。 比方說，您可以解決檔案路徑、 記錄錯誤，和 Visual Studio 和任何所提供的服務載入封裝。 如需詳細資訊，請參閱[從文字範本存取 Visual Studio](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
   
-## <a name="write-methods"></a>撰寫方法  
- 您可以使用`Write()`和`WriteLine()`將標準的程式碼區塊中，而不是使用運算式的程式碼區塊的文字附加的方法。 下列兩個程式碼區塊的功能相同。  
+## <a name="write-methods"></a>撰寫方法
+
+您可以使用`Write()`和`WriteLine()`將標準的程式碼區塊中，而不是使用運算式的程式碼區塊的文字附加的方法。 下列兩個程式碼區塊的功能相同。  
   
-##### <a name="code-block-with-an-expression-block"></a>搭配運算式區塊的程式碼區塊  
+### <a name="code-block-with-an-expression-block"></a>搭配運算式區塊的程式碼區塊  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>程式碼區塊使用 WriteLine()  
+### <a name="code-block-using-writeline"></a>程式碼區塊使用 WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>縮排方法  
+## <a name="indentation-methods"></a>縮排方法
+
  您可以使用縮排方法文字範本輸出的格式。 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>類別具有`CurrentIndent`字串顯示目前的縮排文字範本中的屬性和`indentLengths`欄位也就是已加入縮排的清單。 您可以加入與縮排`PushIndent()`方法加號和減號縮排與`PopIndent()`方法。 如果您想要移除所有的縮排，使用`ClearIndent()`方法。 下列程式碼區塊顯示使用這些方法：  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>錯誤和警告方法  
- 您可以使用 錯誤和警告的公用程式方法新增訊息至[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]錯誤清單。 例如，下列程式碼會加入錯誤訊息 錯誤清單。  
+ 您可以使用錯誤和警告公用程式方法，以將訊息加入至 Visual Studio 錯誤清單。 例如，下列程式碼會加入錯誤訊息 錯誤清單。  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- 型別`this.Host`範本正在執行的所在的主機類型而定。 在執行中的範本中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以轉型`this.Host`至`IServiceProvider`來存取服務，例如 IDE。 例如:   
+ 型別`this.Host`範本正在執行的所在的主機類型而定。 在範本中執行 Visual Studio 中，您可以轉型`this.Host`至`IServiceProvider`來存取服務，例如 IDE。 例如:   
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

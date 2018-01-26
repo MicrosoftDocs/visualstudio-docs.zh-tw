@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說： 發行 Visual Studio 擴充功能
 
@@ -70,9 +70,7 @@ ms.lasthandoff: 12/22/2017
 
   ![上傳至 Marketplace](media/upload-to-marketplace.png)
 
-6. 選擇您要用來上傳您的擴充功能的發行者。  您可以變更 「 發行者 」，按一下左上角的發行者名稱。
-
-  ![變更 Marketplace 發行者](media/change-marketplace-publisher.png)
+6. 選擇您要用來上傳您的擴充功能的發行者。  您可以變更 「 發行者 」 上所列左側的發行者名稱即可。  按一下**新的延伸模組**選取**Visual Studio**。
 
 7. 在**1： 上傳副檔名**，您可以選擇直接上傳 VSIX 檔案到 Visual Studio Marketplace 或只新增您自己的網站的連結。 在此情況下，我們會將上傳擴充功能，TestPublish.vsix。  拖放您的擴充功能，或使用**按一下**連結以瀏覽檔案。  您的擴充功能可以找到專案的 \bin\Release 資料夾中。  按一下 [ **繼續**]。
 
@@ -86,7 +84,7 @@ ms.lasthandoff: 12/22/2017
     
     * **VSIX ID**是 Visual Studio 會使用您的擴充功能的唯一識別碼。  如果您想要有您的擴充功能會自動更新，這是必要的。  這是自動填入 source.extension.vsixmanifest 檔案。
     
-    * **標誌**，將使用您的擴充功能。  這將會自動填入如果提供 source.extension.vsixmanifest 檔案。
+   * **標誌**，將使用您的擴充功能。  這將會自動填入如果提供 source.extension.vsixmanifest 檔案。
     
     * **簡短描述**的擴充功能的用途。  這將會自動填入 source.extension.vsixmanifest 檔案。
     
@@ -108,12 +106,32 @@ ms.lasthandoff: 12/22/2017
     
     * **您的擴充功能允許問與答**可讓使用者離開您的延伸模組項目頁面上的問題。
 
-9. 按一下**儲存並上傳**。 這會帶您回到您的發行者管理頁面。  您的擴充功能尚未發行。  發行擴充停留擴充功能的項目，然後按一下  **...**然後**讓公用**。  您可以檢視您的擴充功能的外觀類似 Marketplace 上選取**檢視詳細資料**。  擷取的數字，按一下**報表**。  若要變更您的擴充功能，請按一下 **編輯*。
+9. 按一下**儲存並上傳**。 這會帶您回到您的發行者管理頁面。  您的擴充功能尚未發行。  若要發行您的擴充功能，以滑鼠右鍵按一下您的擴充功能，並選取**設為公用**。  您可以檢視您的擴充功能的外觀類似 Marketplace 上選取**檢視延伸**。  擷取的數字，按一下**報表**。  若要變更您的擴充功能，請按一下 **編輯*。
 
   ![延伸項目功能表](media/extension-entry-menu.png)
 
 10. 按一下後**設為公用**，您的擴充功能現在是公用。  搜尋 Visual Studio Marketplace 您的擴充功能。
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>新增其他使用者管理您的 「 發行者 」 帳戶
+
+Marketplace 支援授與其他使用者的權限來存取和管理 「 發行者 」 帳戶。
+
+1. 瀏覽至您想要加入其他使用者的 「 發行者 」 帳戶。
+
+2. 選取**成員**，然後按一下 **新增**
+
+  ![加入額外的使用者](media/add-users.png)
+
+3. 然後，您可以指定您想要新增並正確等級的存取權授與使用者的電子郵件地址**選取角色**。  您可以從下列項目中選擇：
+
+  * **建立者**： 使用者可以發行擴充功能，但是您無法檢視或管理其他使用者所發行的擴充功能。
+  
+  * **讀取器**： 使用者可以檢視的擴充功能，但是您無法發行或管理擴充功能。
+  
+  * **參與者**： 使用者可以發佈和管理擴充功能，但是您無法編輯 發行者設定或管理存取權。
+  
+  * **擁有者**： 使用者可以發行和管理擴充功能中，編輯 發行者設定並管理存取權。
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝擴充功能
 
 現在已發行的擴充功能，將它安裝在 Visual Studio 並測試其存在。
@@ -126,7 +144,7 @@ ms.lasthandoff: 12/22/2017
 
 4. 若要完成安裝，請關閉 Visual Studio 的所有執行個體。
 
-## <a name="removing-the-extension"></a>移除延伸模組
+## <a name="remove-the-extension"></a>移除擴充功能
 
 從 Visual Studio Marketplace 並從您的電腦，您可以移除擴充功能。
 
@@ -136,7 +154,7 @@ ms.lasthandoff: 12/22/2017
 
 2. 按一下右上角**發行**擴充功能。  選擇您用來發行 TestPublish 「 發行者 」。  TestPublish 的清單隨即顯示。
 
-3. 將滑鼠停留在延伸模組項目，然後按一下**...**和**移除...**系統會要求您確認要移除該擴充功能。  按一下 [確定 **Deploying Office Solutions**]。
+3. 延伸模組項目上按一下滑鼠右鍵，然後按一下**移除**會要求您確認要移除該擴充功能。  按一下 [確定 **Deploying Office Solutions**]。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 

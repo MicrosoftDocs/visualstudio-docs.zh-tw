@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次開啟中的特定領域語言工具 （DSL 工具） 解決方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，使用者介面會類似下列圖片。  
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/13/2018
   
  下表說明一些網域模型圖表的項目。  
   
-|**詞彙**|**定義**|  
+|**Term**|**定義**|  
 |--------------|--------------------|  
 |領域類別|網域類別是您的模型中的項目類型。<br /><br /> 領域類別可以出現一次在圖表中，如果它是一個以上的關聯性的目標。<br /><br /> 若要加入網域類別，將從網域類別工具拖曳**工具箱**至**類別和關聯性**圖表的側邊。|  
 |網域關聯性|網域關聯性是您的模型中的項目之間的連結類型。<br /><br /> *內嵌關聯性*指出目標項目是擁有或包含的來源項目，而且會以實線。 在模型中的每個項目應該是一個內嵌關聯性的目標，讓模型形成樹狀結構。 A*參考關聯性*指示一般的連結模型項目，並會顯示為虛線。 任何項目可以有任意數目的參考連結。<br /><br /> 此工具，即可建立關聯性**工具箱**、 來源網域類別，然後按一下 目標類別。|  
@@ -48,5 +48,5 @@ ms.lasthandoff: 01/13/2018
   
 ## <a name="see-also"></a>請參閱  
  [特定領域語言工具的概觀](../modeling/overview-of-domain-specific-language-tools.md)   
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

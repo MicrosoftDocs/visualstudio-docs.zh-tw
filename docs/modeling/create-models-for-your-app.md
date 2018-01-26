@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
+
 模型圖表可幫助您了解、釐清和溝通程式碼和軟體必須支援之使用者需求的想法。
-  
- 若要查看哪些 Visual Studio 版本支援每種類型的圖表，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
-  
- 若要將系統或現有程式碼的架構視覺化，請建立下列圖表：  
-  
+
+若要查看哪些 Visual Studio 版本支援每種類型的圖表，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+
+若要將系統或現有程式碼的架構視覺化，請建立下列圖表：  
+
 |**圖表**|**顯示**|  
 |-----------------|---------------|  
 |[相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)<br /><br /> [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)|系統的高階架構|  
@@ -52,11 +53,10 @@ ms.lasthandoff: 01/13/2018
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|  
 |[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|使用模型描述系統的整體結構和行為，以及確保其符合使用者的需求。|  
 |[在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)|確認您的軟體符合使用者的需求以及系統的整體架構。|  
-|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型可幫助您在開發期間了解和變更系統。|  
+|[在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷式開發中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型可幫助您在開發期間了解和變更系統。|  
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|組織大型或中型專案中的模型。|  
   
-## <a name="external-resources"></a>外部資源  
-  
-|**分類**|**Links**|  
-|------------------|---------------|  
-|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>資源
+
+[Visual Studio Visualization & Modeling 工具論壇](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Visual Studio 擴充性論壇](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

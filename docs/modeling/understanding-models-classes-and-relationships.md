@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 定義其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼。 大部分的 DSL 方案中的程式碼會產生這個檔案中。  
@@ -150,4 +150,4 @@ ms.lasthandoff: 01/13/2018
  在衍生的關聯性，指定其基底關聯性。 在網域類別連結應該衍生自它，或連結的基底關聯性的類別相同。 在模型中建立衍生關聯性的連結時，它是衍生和基底關聯性的執行個體。 您可以在程式碼中，巡覽至使用基底或衍生的類別產生的屬性連結的另一端。  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

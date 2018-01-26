@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5da1da2b7c74f6c95651eeb0120b213ad1e1d394
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 713d7d3598e56ceb4e5a339facb948d6d222a32d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 圖表[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定義是重要的工具來定義特定領域語言。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。  
@@ -73,4 +73,4 @@ ms.lasthandoff: 01/13/2018
  如果網域關聯性衍生關聯性，或者如果有與其他網域關聯性的內嵌或參考關聯性，您可以用滑鼠右鍵按一下關聯性，然後按一下做為類別顯示的關聯性**顯示類別**. 會顯示關聯性**定義域屬性**區間，而且會顯示在繼承和關聯性樹狀結構。  
   
 ## <a name="see-also"></a>請參閱  
- [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
