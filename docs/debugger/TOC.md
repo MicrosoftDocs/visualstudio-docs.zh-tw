@@ -18,6 +18,7 @@
 # 作法指南
 ## [使用偵錯工具巡覽程式碼](navigating-through-code-with-the-debugger.md)
 ## [使用中斷點](using-breakpoints.md)
+### [進行中斷點疑難排解](troubleshooting-breakpoints.md)
 ## [檢查資料](debugger-windows.md)
 ### [檢查變數](autos-and-locals-windows.md)
 ### [在變數上設定監看式](watch-and-quickwatch-windows.md)
