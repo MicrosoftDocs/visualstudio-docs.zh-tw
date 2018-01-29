@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -21,11 +22,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -51,10 +52,10 @@ ms.lasthandoff: 01/12/2018
 | --- | --- | --- |
 | 建立虛擬環境時顯示輸出視窗| 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | 安裝或移除套件時顯示輸出視窗 | 開啟 |  清除即可防止 [輸出] 視窗出現。 |
-| 一律以系統管理員身分執行 pip | Off | 一律提高所有環境的 `pip install` 作業。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 `c:\Program Files`)，則 Visual Studio 會提示需要系統管理員權限。 在該提示中，您可以選擇一律只提高該環境的 `pip install`。 請參閱 [Python 環境 - pip 索引標籤](python-environments.md#pip-tab)。 |
+| 一律以系統管理員身分執行 pip | Off | 一律提高所有環境的 `pip install` 作業。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 `c:\Program Files`)，則 Visual Studio 會提示需要系統管理員權限。 在該提示中，您可以選擇一律只提高該環境的 `pip install`。 請參閱 [Python 環境 - pip 索引標籤](managing-python-environments-in-visual-studio.md#pip-tab)。 |
 | 第一次使用時自動產生完成 DB | 開啟 | 若要讓程式庫的 [IntelliSense 完成](code-editing.md#intellisense)運作，Visual Studio 必須產生該程式庫的完成資料庫。 安裝程式庫時，會在背景建置資料庫，但開始撰寫程式碼時可能不會完成。 如果選取此選項，則當您撰寫使用資料庫的程式碼時，Visual Studio 會優先完成程式庫的資料庫。 |
-| 略過全系統的 PYTHONPATH 變數 | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱 [Python 環境 - 搜尋路徑](python-environments.md#search-paths)。 |
-| 新增連結的檔案時更新搜尋路徑 | 開啟 | 設定時，將[連結的檔案](python-projects.md#linked-files)新增至專案更新[搜尋路徑](python-environments.md#search-paths)，讓 IntelliSense 可以將所連結檔案之資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
+| 略過全系統的 PYTHONPATH 變數 | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱 [Python 環境 - 搜尋路徑](managing-python-environments-in-visual-studio.md#search-paths)。 |
+| 新增連結的檔案時更新搜尋路徑 | 開啟 | 設定時，將[連結的檔案](managing-python-projects-in-visual-studio.md#linked-files)新增至專案更新[搜尋路徑](managing-python-environments-in-visual-studio.md#search-paths)，讓 IntelliSense 可以將所連結檔案之資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | 找不到匯入的模組時發出警告 | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |
 | 回報不一致的縮排為 | 警告 | 因為 Python 解譯器大量取決於正確的縮排來判斷範圍，所以 Visual Studio 預設會在偵測到可能指出程式碼錯誤的不一致縮排時發出警告。 設定為 Errors 甚至更為嚴格，在這類情況下會結束程式。 若要完全停用此行為，請選取 [不]。 |
 | 查看是否有問卷/新聞 | 一週一次 | 設定您允許 Visual Studio 開啟所含網頁具有 Python 相關問卷和新聞項目 (如果有的話) 之視窗的頻率。 選項為 [永不]、[一天一次]、[一週一次] 和 [一個月一次]。 |
@@ -88,7 +89,7 @@ ms.lasthandoff: 01/12/2018
 
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
-| 指令碼 | N/A | 指定啟動指令碼的一般資料夾，以套用至所有環境的互動式視窗。 請參閱[啟動指令碼](python-environments.md#startup-scripts)。 不過，請注意，這項功能目前無法運作。 |
+| 指令碼 | N/A | 指定啟動指令碼的一般資料夾，以套用至所有環境的互動式視窗。 請參閱[啟動指令碼](managing-python-environments-in-visual-studio.md#startup-scripts)。 不過，請注意，這項功能目前無法運作。 |
 | 按向上鍵/向下鍵巡覽歷程記錄 | 開啟 | 使用方向鍵，在互動式視窗中巡覽歷程記錄。 清除此設定，可改為使用方向鍵在互動式視窗的輸出中進行巡覽。 |
 | 完成模式 | 只評估沒有函式呼叫的運算式 | 決定互動式視窗中運算式可用成員的程序，可能需要評估目前未完成的運算式，這樣可能會導致副作用或多次呼叫函式。 預設設定 [只評估沒有函式呼叫的運算式] 會排除呼叫函式的運算式，但會評估其他運算式。 例如，它會評估 `a.b`，但不會評估 `a().b`。  [一律不評估運算式] 可防止所有副作用，並建議僅使用標準 IntelliSense 引擎。 [評估所有運算式] 會評估整個運算式來取得建議，不論副作用為何。 |
 | 隱藏靜態分析建議 | Off | 設定時，只會顯示評估運算式所取得的建議。 如果與完成模式 [一律不評估運算式] 合併使用，則互動式視窗中不會出現任何有用的完成。 |
