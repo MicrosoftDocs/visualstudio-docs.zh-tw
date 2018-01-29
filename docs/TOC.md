@@ -74,7 +74,6 @@
 ##### [使用 NuGet 新增參與使用延伸模組 SDK 新增參考的比較](ide/adding-references-using-nuget-versus-an-extension-sdk.md)
 ##### [新增或移除匯入的命名空間 (Visual Basic)](ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 ##### [疑難排解參考中斷的問題](ide/troubleshooting-broken-references.md)
-#### [應用程式屬性](ide/application-properties.md)
 #### [管理應用程式資源 (.NET)](ide/managing-application-resources-dotnet.md)
 #### [管理應用程式設定 (.NET)](ide/managing-application-settings-dotnet.md)
 ##### [將應用程式設定檔新增到 C# 專案](ide/how-to-add-app-config-file.md)
