@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.remote.projnotconfigured
+f1_keywords:
+- vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "22"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 
@@ -39,7 +43,7 @@ ms.lasthandoff: 01/05/2018
 
     如果 web 應用程式已複製到不同的電腦、 手動重新命名或移動，可能不正確的實體路徑。 重設 IIS，然後重試。
 
-3. 在 Visual Studio 中，確認已選取正確的伺服器，內容中。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。 Web Form 專案中，開啟**屬性頁 > 起始選項 > 伺服器**)。
+3. 如果您是在本機偵錯 Visual Studio 中，確認已選取正確的伺服器，內容中。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。 Web Form 專案中，開啟**屬性頁 > 起始選項 > 伺服器**)。
 
     如果您使用的 IIS，例如外部 （自訂） 伺服器必須正確的 URL。 否則，請選取 IIS Express，然後重試。
 

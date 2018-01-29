@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -84,8 +86,10 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="server_error"></a>遠端伺服器傳回錯誤
 
-請檢查訊息，找出問題的原因傳回的錯誤碼。 以下是一些常見的錯誤碼。
-- (403) 禁止。 請確認您已連接到正確的伺服器類型和 URL (在**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型)。 此外，請確認伺服器的 web.config，包含`debug=true`compilation 項目中。 如果這些設定已經正確，請確認您 Web 應用程式的資料夾具有正確的資料夾權限。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
+請檢查您[IIS 記錄檔](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0)用於錯誤子代碼的詳細資訊，以及此 IIS 7[部落格文章](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)。
+
+此外，以下是一些常見的錯誤代碼和一些建議。
+- (403) 禁止。 有許多可能的原因造成此錯誤，因此請查看記錄檔和網站的 IIS 安全性設定。 請確定伺服器的 web.config 包含`debug=true`compilation 項目中。 請確定您 Web 應用程式的資料夾具有正確的權限，而且您的應用程式集區設定正確 （密碼可能已變更）。 請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。 如果這些設定已正確，並在本機偵錯，也請確認您要連接到正確的伺服器類型和 URL (在**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**，根據您的專案類型）。
 - 無法使用 (503) 伺服器。 由於發生錯誤或組態變更，可能已停止應用程式集區。 重新啟動應用程式集區。
 - (404) 找不到。 請確定應用程式集區已設定為正確的 ASP.NET 版本。
 
@@ -125,7 +129,7 @@ ms.lasthandoff: 01/05/2018
     
 * 請檢查您的 Web 應用程式的資料夾具有正確的權限。
 
-    請確定您授與 IIS_IUSRS、 IUSR 或特定使用者相關聯的應用程式集區讀取，並執行 Web 應用程式資料夾的權限。 修正問題，然後重新啟動您的應用程式集區。
+    請確定您授與 IIS_IUSRS，IUSR，或特定使用者相關聯[應用程式集區](/iis/manage/configuring-security/application-pool-identities)讀取和執行 Web 應用程式資料夾的權限。 修正問題，然後重新啟動您的應用程式集區。
 
 * 請確定已在 IIS 上安裝正確的 ASP.NET 版本。
 

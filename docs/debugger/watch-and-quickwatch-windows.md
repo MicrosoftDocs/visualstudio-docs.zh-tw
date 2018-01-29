@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>使用監看式和 Visual Studio 中的 快速監看式視窗變數上設定監看式
-當您偵錯時，您可以使用**監看式**(**偵錯 > Windows > 監看式 > 監看式 （1、 2、 3、 4）**) 和**快速監看式**(以滑鼠右鍵按一下變數 / **偵錯 > 快速監看式**) windows 監看變數和運算式。  其差異在於 [監看式]  視窗可以顯示數個變數，而 [快速監看式]  視窗一次僅可顯示單一變數。
+當您偵錯時，您可以使用**監看式**和**快速監看式**windows 監看變數和運算式。  其差異在於 [監看式]  視窗可以顯示數個變數，而 [快速監看式]  視窗一次僅可顯示單一變數。 
 
-在 偵錯工作階段期間，才可以使用 windows。 
+在 偵錯工作階段期間，才可以使用 windows。 若要開啟**監看式**視窗中，選擇**偵錯 > Windows > 監看式 > 監看式 （1、 2、 3、 4）**)。 若要開啟**快速監看式**視窗，請以滑鼠右鍵按一下變數，並選擇 **快速監看式**或選擇**偵錯 > 快速監看式**。
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用 [快速監看式] 觀察單一變數  
  您可以使用 [快速監看式]  視窗觀察單一變數。 例如，如果您有下列的程式碼：  
@@ -54,11 +55,11 @@ static void Main(string[] args)
   
 2.  開始偵錯。 執行會在中斷點停止。  
   
-3.  開啟**快速監看式**視窗 (以滑鼠右鍵按一下，然後選擇 **快速監看式**，或**SHIFT + F9**)。
+3.  開啟**快速監看式**視窗 (以滑鼠右鍵按一下`a`，然後選擇 **快速監看式**，或選取`a`按**SHIFT + F9**)。
 
     您應該會看到中的變數**值**視窗中的，值為 1。
 
-    ![快速監看式運算式](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     如果您想要評估的運算式，使用變數，將運算式例如`a + b`至**運算式**視窗，然後按一下**重新評估**。 
   

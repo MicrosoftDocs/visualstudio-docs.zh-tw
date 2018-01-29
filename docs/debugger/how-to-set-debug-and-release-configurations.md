@@ -4,10 +4,12 @@ ms.custom: H1HackMay2017
 ms.date: 04/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.builds
+f1_keywords:
+- vs.debug.builds
 dev_langs:
 - CSharp
 - VB
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 設定偵錯和發行 Visual Studio 中的組態
 Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 依照名稱提示，您可以建置用來偵錯的偵錯版本，和最後發行散發的發行版本。  
@@ -119,5 +122,4 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
  [C + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
- [偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)
+ [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)
