@@ -1,25 +1,26 @@
 ---
 title: "在低頻寬或不可靠的網路環境安裝 | Microsoft Docs"
 description: "描述 Visual Studio 安裝程式如何在不可靠的網路情況下運作，並說明如何在開始安裝之前下載安裝檔案。"
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低頻寬或不可靠的網路環境安裝 Visual Studio 2017
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 不過，如果您的網際網路連線無法使用或不可靠，您可以使用命令列來建立完成離線安裝所需之檔案的本機快取。 方式如下：
 
 > [!NOTE]
-> 如果您是企業系統管理員，而且想要從網際網路對啟用防火牆的用戶端工作站網路執行 Visual Studio 2017 部署，請參閱[建立 Visual Studio 2017 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)和[在離線環境中安裝 Visual Studio 的特殊考量](../install/install-visual-studio-in-offline-environment.md)頁面。
+> 如果您是企業系統管理員，而且想要將Visual Studio 2017 部署至已啟用網際網路防火牆的用戶端工作站網路，請參閱[建立 Visual Studio 2017 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)和[安裝 Visual Studio 離線安裝所需的憑證](../install/install-certificates-for-visual-studio-offline.md)頁面。
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>步驟 1 - 下載 Visual Studio 啟動載入器
 
@@ -84,8 +85,8 @@ ms.lasthandoff: 12/22/2017
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > 如果您收到錯誤指出簽章不正確，您必須安裝更新的憑證。 開啟離線快取中的 [憑證] 資料夾。 按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]。 如果要求您輸入密碼，請保留空白。
+> [!NOTE]
+> 如果您收到錯誤指出簽章不正確，您必須安裝更新的憑證。 開啟離線快取中的 [憑證] 資料夾。 按兩下每個憑證檔案，然後點選完成 [憑證管理員精靈]。 如果要求您輸入密碼，請保留空白。
 
 ## <a name="list-of-language-locales"></a>語言地區設定清單
 

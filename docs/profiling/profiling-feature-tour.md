@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -32,9 +35,9 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 ![診斷工具摘要檢視](../profiling/media/prof-tour-cpu-and-memory-graph.gif "診斷工具摘要")
 
-若要分析您的應用程式，通常的慣用方法是使用 [診斷工具] 視窗，但您也可以改為執行應用程式的事後剖析分析。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+若要分析您的應用程式，通常的慣用方法是使用 [診斷工具] 視窗，但您也可以針對發行組建改為執行應用程式的事後剖析分析。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要查看針對不同應用程式類型的分析工具支援，請參閱[應該使用哪一種工具？](#tool_support_info)
 
-## <a name="analyze-cpu-usage"></a>分析 CPU 使用
+## <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
 CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 [CPU 使用量] 工具的詳細逐步解說，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
 
@@ -119,13 +122,13 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="analyze-performance-javascript"></a>分析效能 (JavaScript)
 
-針對 Windows 通用 HTML 應用程式，您可以使用 JavaScript 記憶體工具與 HTML UI 回應性工具。
+針對 UWP 應用程式，您可以使用 JavaScript 記憶體工具與 HTML UI 回應性工具。
 
 JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量工具很類似。 您可以使用這項工具來了解記憶體使用量，並找出應用程式的記憶體流失情況。 如需此工具的詳細資訊，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md)。
 
 ![JavaScript 記憶體分析工具](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-若要診斷 Windows 通用 HTML 應用程式中的 UI 回應性、慢速載入時間，以及慢速視覺效果更新等問題，請使用 HTML UI 回應性工具。 其使用方式類似於其他應用程式類型的應用程式時間軸工具。 如需詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。
+若要診斷 UWP 應用程式中的 UI 回應性、慢速載入時間，以及慢速視覺效果更新等問題，請使用 HTML UI 回應性工具。 其使用方式類似於其他應用程式類型的應用程式時間軸工具。 如需詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。
 
 ![HTML UI 回應性分析工具](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +154,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 
 以下資料表列出 Visual Studio 提供的各種工具和您可以用它們處理的不同專案類型︰
   
-|效能工具|Windows 桌面|Windows 通用/市集|ASP.NET/ASP.NET Core|  
+|效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|  
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是 (對 .NET Core/ASP.NET Core 則否)|  

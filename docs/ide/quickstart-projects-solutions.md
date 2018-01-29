@@ -10,14 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>快速入門：專案和解決方案
+# <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
 
 在這個 10 分鐘的快速入門中，我們將探討在 Visual Studio 中建立解決方案和專案的意義。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立第二個專案的參考。
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 12/22/2017
    名為 "QuickDate" 的專案隨即出現在方案總管中該解決方案的下方。 它目前包含稱為 **App.config** 的單一檔案。
 
    > [!NOTE]
-   > 如果您在對話方塊的左窗格中看不到 [Visual C#]，則需要安裝 **.NET 桌面開發** 工作負載。 簡單的作法是按一下該左窗格底端的 [開啟 Visual Studio 安裝程式] 連結。 [Visual Studio 安裝程式] 隨即開啟，而且您可以在這裡選擇正確的工作負載，然後選擇 [修改] 按鈕。
+   > 如果您在對話方塊的左窗格中看不到 [Visual C#]，則需要安裝 **.NET 桌面開發** 工作負載。 簡單的作法是選擇對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 **Visual Studio Installer** 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
 
    ![開啟 Visual Studio 安裝程式連結](media/quickstart-projects-open-installer.png)
 
@@ -184,7 +185,7 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
 [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
-[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
+[快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)  
 [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)  
 [管理專案中的參考](../ide/managing-references-in-a-project.md)  
 [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  

@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -51,16 +51,16 @@ ms.lasthandoff: 01/10/2018
 
 `options_name = false|true : none|suggestion|warning|error`
 
-每個語言慣例規則必須指定 [true] (慣用此樣式) 或 [false] (不喜此樣式) 和 [嚴重性]。 嚴重性會指定該樣式的強制層級。
+每個語言慣例規則必須指定 [true] (偏好此樣式) 或 [false] (不偏好此樣式) 和 [嚴重性]。 嚴重性會指定該樣式的強制層級。
 
 下表列出可能的嚴重性值及其效果：
 
-嚴重性 | 作用
+嚴重性 | 效果
 :------- | ------
-無或無訊息 | 違反這項規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。
+無或無訊息 | 違反這個規則時，不向使用者顯示任何內容。 但程式碼產生功能會以此樣式產生程式碼。
 建議 | 當違反這個樣式規則時，會向使用者顯示建議。 建議會顯示為前兩個字元下的三個灰點。
-warning | 違反此樣式規則時，顯示編譯器警告。
-個錯誤 | 違反此樣式規則時，顯示編譯器錯誤。
+警告 | 違反此樣式規則時，顯示編譯器警告。
+錯誤 | 違反此樣式規則時，顯示編譯器錯誤。
 
 下列清單顯示允許的語言慣例規則：
 
@@ -304,7 +304,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | 15.5 |
@@ -388,7 +388,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 下表顯示規則名稱、規則識別碼、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
 | dotnet_style_object_initializer | IDE0017 | C# 和 Visual Basic | true:suggestion | 初次發行 |
 | dotnet_style_collection_initializer | IDE0028 | C# 和 Visual Basic | true:suggestion | 初次發行 |
@@ -593,7 +593,7 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 **csharp\_style\_var\_for\_built\_in_types**
 
 - 當此規則設定為 **true** 時，希望使用 `var` 宣告變數與內建系統類型，例如 `int`。
-- 當此規則設定為 **false** 時，希望使用明確類型不要使用 `var` 宣告變數與內建系統類型，例如 `int`。
+- 當此規則設定為 **false** 時，希望使用明確類型而不要使用 `var` 宣告變數與內建系統類型，例如 `int`。
 
 程式碼範例：
 
@@ -608,7 +608,7 @@ int x = 5;
 **csharp\_style\_var\_when\_type\_is_apparent**
 
 - 當此規則設定為 **true** 時，在宣告運算式右側已提到類型時希望使用 `var`。
-- 當此規則設定為 **false** 時，在宣告運算式右側已提到類型時，希望使用明確類型不要使用 `var`。
+- 當此規則設定為 **false** 時，在宣告運算式右側已提到類型時，希望使用明確類型而不要使用 `var`。
 
 程式碼範例：
 
@@ -622,8 +622,8 @@ Customer obj = new Customer();
 
 **csharp\_style\_var_elsewhere**
 
-- 當此規則設定為 **true** 時，除非為另一個程式碼樣式規則覆寫，否則所有情況都希望是 `var` 不要是明確類型。
-- 當此規則設定為 **false** 時，除非為另一個程式碼樣式規則覆寫，否則所有情況都希望是明確類型不要是 `var`。
+- 當此規則設定為 **true** 時，除非為另一個程式碼樣式規則覆寫，否則所有情況都希望是 `var` 而不要是明確類型。
+- 當此規則設定為 **false** 時，除非被另一個程式碼樣式規則覆寫，否則所有情況都希望是明確類型而不要是 `var`。
 
 程式碼範例：
 
@@ -651,7 +651,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | 15.3 |
@@ -824,7 +824,7 @@ if (o is int) {var i = (int)o; ... }
 **csharp\_style\_pattern\_matching\_over\_as\_with\_null_check**
 
 - 當此規則設定為 **true** 時，希望是模式比對，而非具有 null 檢查的 `as` 運算式，以判斷是否為特定類型。
-- 當此規則設定為 **false** 時，希望是具有 null 檢查的 `as` 運算式，而非模式比對，以判斷是否為特定類型。
+- 當此規則設定為 **false** 時，希望是具有 Null 檢查的 `as` 運算式，而非模式比對，以判斷是否為特定類型。
 
 程式碼範例：
 
@@ -886,7 +886,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | 15.5 |
@@ -896,8 +896,8 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 此樣式規則關於在編譯器能推斷運算式類型時，使用[預設值運算式的 `default` 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
 
-- 當此規則設定為 **true** 時，希望是 `default` 不要是 `default(T)`。
-- 當此規則設定為 **false** 時，希望是 `default(T)` 不要是 `default`。
+- 當此規則設定為 **true** 時，希望是 `default` 而不要是 `default(T)`。
+- 當此規則設定為 **false** 時，希望是 `default(T)` 而不要是 `default`。
 
 程式碼範例：
 
@@ -977,8 +977,8 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 **csharp\_style\_throw_expression**
 
-- 當此規則設定為 **true** 時，希望使用 `throw` 運算式，不要使用 `throw` 陳述式。
-- 當此規則設定為 **false** 時，希望使用 `throw` 陳述式，不要使用 `throw` 運算式。
+- 當此規則設定為 **true** 時，希望使用 `throw` 運算式而不是 `throw` 陳述式。
+- 當此規則設定為 **false** 時，希望使用 `throw` 陳述式而不是 `throw` 運算式。
 
 程式碼範例：
 
@@ -993,8 +993,8 @@ this.s = s;
 
 **csharp\_style\_conditional\_delegate_call**
 
-- 當此規則設定為 **true** 時，希望叫用 lambda 運算式時，使用條件式聯合運算子 (`?.`) 不要執行 null 檢查。
-- 當此規則設定為 **false** 時，希望先執行 Null 檢查，再叫用 Lambda 運算式，不要使用條件式聯合運算子 (`?.`)。
+- 當此規則設定為 **true** 時，希望叫用 lambda 運算式時，使用條件式聯合運算子 (`?.`) 而不要執行 null 檢查。
+- 當此規則設定為 **false** 時，希望先執行 Null 檢查，再叫用 Lambda 運算式，而不要使用條件式聯合運算子 (`?.`)。
 
 程式碼範例：
 
@@ -1021,14 +1021,14 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
 
 **csharp\_prefer\_braces**
 
 - 當此規則設定為 **true** 時，希望使用大括弧，即使只有一行程式碼。
-- 當此規則設定為 **false** 時，如果可以，請不要使用大括弧。
+- 當此規則設定為 **false** 時，如果可以，不要使用大括弧。
 
 程式碼範例：
 
@@ -1094,14 +1094,14 @@ csharp_prefer_braces = true:none
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# 和 Visual Basic | true | 15.3  |
 
 **dotnet\_sort\_system\_directives_first**
 
-- 當此規則設定為 **true** 時，依字母順序排序 System.* using 指示詞，並將它們放在其他的 using 之前。
-- 當此規則設定為 **false** 時，請勿將 System.* using 指示詞放置在其他 using 指示詞之前。
+- 當此規則設定為 **true** 時，依字母順序排序 System.* using 指示詞，並將它們放在其他 using 之前。
+- 當此規則設定為 **false** 時，不將 System.* using 指示詞放置在其他 using 指示詞之前。
 
 程式碼範例：
 
@@ -1135,9 +1135,9 @@ dotnet_sort_system_directives_first = true
 
 下表顯示「新行」規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | 全部 | 15.3  |
+| csharp_new_line_before_open_brace |  C# | all | 15.3  |
 | csharp_new_line_before_else |  C# | true | 15.3  |
 | csharp_new_line_before_catch |  C# | true | 15.3  |
 | csharp_new_line_before_finally |  C# | true | 15.3  |
@@ -1147,13 +1147,13 @@ dotnet_sort_system_directives_first = true
 
 **csharp\_new\_line\_before\_open_brace**
 
-此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 此規則不指定 **true** 或 **false**。 請改為指定 [全部]、[無] 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 下表顯示允許變數的完整清單：
+此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 此規則不指定 **true** 或 **false**。 請改為指定 [all]、[none] 或一或多個程式碼元素，例如**方法**或**屬性**，來定義應於何時套用此規則。 下表顯示允許變數的完整清單：
 
 | 值 | 描述
 | ------------- |:-------------|
-| accessors、anonymous_methods、anonymous_types、control_blocks、events、indexers、lambdas、local_functions、methods、object_collection、properties、types。<br>(請以 ',' 分隔多種類型)。 | 指定的程式碼項目 (也稱為 "Allman" 樣式) 在新行需有括弧 |
-| 全部 | 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式) |
-| 無 | 針對所有運算式要求大括弧位於同一行上 ("K&R") |
+| accessors、anonymous_methods、anonymous_types、control_blocks、events、indexers、lambdas、local_functions、methods、object_collection、properties、types。<br>(請以 ',' 分隔多種類型)。 | 指定的程式碼元素 (也稱為 "Allman" 樣式) 在新行需有括弧 |
+| all | 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式) |
+| none | 針對所有運算式要求大括弧位於同一行上 ("K&R") |
 
 程式碼範例：
 
@@ -1334,7 +1334,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_indent_case_contents |  C# | true | 15.3  |
 | csharp_indent_switch_labels |  C# | true | 15.3  |
@@ -1479,13 +1479,13 @@ csharp_indent_labels = flush_left
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | False | 15.3  |
+| csharp_space_after_cast |  C# | false | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_parentheses |  C# | False | 15.3  |
+| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | 15.3  |
+| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
+| csharp_space_between_parentheses |  C# | false | 15.3  |
 
 **csharp\_space\_after_cast**
 
@@ -1588,7 +1588,7 @@ csharp_space_between_parentheses = control_flow_statements, type_casts
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：
 
-| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_preserve_single_line_statements |  C# | true | 15.3  |
 | csharp_preserve_single_line_blocks |  C# | true | 15.3  |

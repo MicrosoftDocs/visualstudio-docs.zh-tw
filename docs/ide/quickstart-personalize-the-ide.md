@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef88495e4251376a7b2f297293ce865f3917c7e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e5195693a4ef2ba3aeec1f2d5751e56b70f19e57
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
@@ -25,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 
 Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變更為 [深色]。
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具]、[選項]。
 
 1. 在 [環境] 的 [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
@@ -99,8 +101,8 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 ## <a name="see-also"></a>另請參閱
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
-[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
-[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)  
+[快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)  
+[快速入門：專案和方案](../ide/quickstart-projects-solutions.md)  
 [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
 [自訂編輯器](../ide/customizing-the-editor.md)  
 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

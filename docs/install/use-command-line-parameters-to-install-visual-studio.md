@@ -1,10 +1,11 @@
 ---
 title: "使用命令列參數安裝 Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,12 +16,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 當您從命令提示字元安裝 Visual Studio 2017 時，可以使用各種命令列參數來控制或自訂安裝。 您可以從命令列執行下列動作：
@@ -40,7 +42,10 @@ ms.lasthandoff: 12/22/2017
 
 > 語法：`vs_enterprise.exe [command] <options>...`
 
-(根據您要安裝的產品版本，適當地取代 `vs_enterprise.exe`。 如需範例，請參閱[命令列參數範例](command-line-parameter-examples.md)頁面)。
+(根據您要安裝的產品版本，適當地取代 `vs_enterprise.exe`)。
+
+>[!TIP]
+> 如需如何使用命令列安裝 Visual Studio 2017 的更多範例，請參閱[命令列參數範例](command-line-parameter-examples.md)頁面)。
 
 | **命令** | **描述** |
 | ----------------------- | --------------- |
@@ -143,7 +148,6 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>另請參閱
 
- * [安裝 Visual Studio 2017](install-visual-studio.md)
- * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
  * [Visual Studio 2017 安裝的命令列參數範例](command-line-parameter-examples.md)
+ * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
  * [使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)

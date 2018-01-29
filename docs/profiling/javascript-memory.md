@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -48,36 +46,14 @@ ms.lasthandoff: 12/22/2017
   
      不是直接由應用程式程式碼建立的物件都將被自動篩選掉。您也可以根據物件名稱來篩選資料。  
   
- 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
-  
- 本主題內容：  
-  
- [執行 JavaScript 記憶體分析器](#Run)   
- [檢查記憶體使用量](#Check)   
- [Isolate a memory leak](#Isolate)   
- [檢視即時記憶體使用量摘要](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [檢視快照詳細資料](#SnapshotDetails)   
- [檢視快照差異](#SnapshotDiff)   
- [依主導者檢視物件](#FoldObjects)   
- [根據識別項來篩選資料](#Filter)   
- [在物件樹狀結構中尋找物件](#ShowInRootsView)   
- [檢視共用物件參考](#References)   
- [顯示內建物件](#BuiltInValues)   
- [儲存診斷工作階段檔案](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [識別記憶體問題的提示](#Tips)  
-  
 ##  <a name="Run"></a> 執行 JavaScript 記憶體分析器  
- 當您在 Visual Studio 中開啟執行中的 UWP App 或在執行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本的電腦上安裝這些應用程式時，可以使用記憶體分析器。  
+ 在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用記憶體分析器。
   
 #### <a name="to-run-the-memory-analyzer"></a>若要執行記憶體分析器  
   
 1.  開啟 Visual Studio。  
   
-2.  如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇專案的偵錯目標：Windows Phone 模擬器或是 (針對 UWP App) [本機電腦]、[模擬器]或 [遠端電腦]。  
-  
-     如需這些選項的詳細資訊，請參閱 [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇專案的偵錯目標：[本機電腦] 或 [裝置]。  
   
 3.  在功能表列上，依序選擇 [偵錯] 和 [效能分析工具]。  
   
@@ -400,6 +376,3 @@ if (performance && performance.mark) {
          您可以使用上述命令，協助隔離無法藉由擷取堆積快照來隔離的問題。  
   
     -   建立測試物件並在 JavaScript 記憶體分析器的檢視 (例如類型檢視) 中追蹤此物件。 例如，您可以將大型物件附加至其他物件，查看特定物件或項目是否已進行記憶體回收。  
-  
-## <a name="see-also"></a>請參閱  
- [逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

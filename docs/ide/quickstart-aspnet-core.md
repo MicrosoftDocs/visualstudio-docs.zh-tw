@@ -10,15 +10,16 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
+dev_langs:
+- CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -30,21 +31,21 @@ ms.lasthandoff: 12/22/2017
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，依序選擇 [檔案]、[新增] 和 [專案]。
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
 1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。
 
-     如果您看不到 **.NET Core** 專案範本，請取消 [新增專案] 對話方塊，然後從頂端功能表列中依序選擇 [工具] 和 [Get Tools and Features] (取得工具和功能)。Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
+     如果您看不到 [.NET Core] 專案範本類別，請選擇左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定]。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/quickstart-aspnet-core20.png)
 
 ## <a name="explore-the-ide"></a>探索 IDE
 
-1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中予以開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。
+1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。
 
 1. 在編輯器中，選擇 `AboutModel`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 `AboutModel` C# 類別的定義。
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  }
  ```
 
-1. 您會看到兩個波浪底線出現在 [環境] 和 [字串] 下方，因為這些類型不在範圍內。 開啟 [錯誤清單] 工具列，以查看該處所列的相同錯誤  (如果您看不到 [錯誤清單] 工具列，請從頂端功能表列中選擇 [檢視] 和 [錯誤清單])。
+1. 您會看到兩個波浪底線出現在 [環境] 和 [字串] 下方，因為這些類型不在範圍內。 開啟 [錯誤清單] 工具列，以查看該處所列的相同錯誤  (如果您看不到 [錯誤清單] 工具列，請從頂端功能表列中選擇 [檢視] > [錯誤清單])。
 
    ![錯誤清單](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 按 **Ctrl+F5** 執行應用程式，並在網頁瀏覽器中開啟它。
+1. 按 **Ctrl**+**F5** 執行應用程式，並在網頁瀏覽器中開啟它。
 
 1. 在網站頂端，選擇 [關於]，以查看您在 [關於] 頁面的 `OnGet()` 方法中新增目錄訊息。
 
@@ -85,5 +86,6 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>另請參閱
 
+[Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)  
 [使用 Visual Studio 的 C# 和 Visual Basic 使用者入門](getting-started-with-visual-csharp-and-visual-basic.md)  
 [開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)

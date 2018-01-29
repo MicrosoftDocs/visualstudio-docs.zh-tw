@@ -1,36 +1,41 @@
 ---
 title: "使用 Visual Studio R 工具進行 Linting | Microsoft Docs"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 01/15/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
-f1_keywords: vs.toolsoptionspages.text_editor.r.lint
+f1_keywords:
+- vs.toolsoptionspages.text_editor.r.lint
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: b7fcd958c1bed744f40c1a726e6bec4f86d307df
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>在 Visual Studio 中對 R 程式碼進行 Linting
 
-Linting 是一種分析程式碼以揭露潛在錯誤、格式問題，以及程式碼檔案中其他雜訊 (例如假性空白) 的過程。 Linting 也有助於鼓勵特定程式碼撰寫慣例，例如如何命名識別碼。這在小組和其他共同作業的情況下很有幫助。
+Linting 是一種分析程式碼以揭露潛在錯誤、格式問題，以及其他程式碼雜訊 (例如假性空白) 的程序。 Linting 也有助於鼓勵特定程式碼撰寫慣例，例如如何命名識別碼。這在小組和其他共同作業的情況下很有幫助。
 
-Visual Studio R 工具 (RTVS) 可為 R 提供內建的 Linting，其行為可透過各種選項控制。 這些選項可在 [工具] > [選項] > [文字編輯器] > [R] > [Lint] 中找到。
+Visual Studio R 工具 (RTVS) 可為 R 提供內建的 Linting，其行為可透過一系列於本文中所述的選項做出控制。 這些選項可在 [工具] > [選項] > [文字編輯器] > [R] > [Lint] 中找到。
 
-根據預設，Linting 為停用。 若要啟用 Linting，請將 [所有設定] > [Enable lint] (啟用 Lint) 選項設為 [True]。 跟隨此主題的其他章節會描述所有其他 Linting 選項：
+根據預設，Linting 為停用。 若要啟用 Linting，請將 [所有設定] > [Enable lint] (啟用 Lint) 選項設為 [True]。
 
 當啟用時，Linting 會在您於編輯器中鍵入時套用。 問題會以綠色波浪線的形式顯示。 例如，在下圖中，RTVS 發現了六個 Linting 問題，包括使用 `=` 進行指派而非 `<-`、在函式引數周圍缺少間距、使用 Pascal 命名法及大寫識別碼，以及使用分號。 將滑鼠游標在問題上暫留會顯示問題的描述。
 
 ![R 程式碼 Linting 的範例](media/linting-01.png)
+
+您通常會根據專案或檔案的需求變更 Linting 選項。 例如，來自線上課程的範例程式碼可能會使用 `=` 而非 `<-` 來搭配 Pascal 大小寫識別項。 這種程式碼會頻繁顯示 Linting 警告，因為預設的 Linting 選項會標記此類情況。 因此在處理這種程式碼時，您可以直接停用那些選項，而不需要花費時間修正每個執行個體。
 
 ## <a name="assignment-group"></a>指派群組
 

@@ -10,15 +10,17 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.workload: multiple
-ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
+ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>快速入門：在編輯器中編碼
+# <a name="quickstart-coding-in-the-editor"></a>快速入門：在編輯器中撰寫程式碼
 
 在這個 10 分鐘的編輯器簡介中，我們會將程式碼新增至檔案，以查看 Visual Studio 更輕鬆進行撰寫、導覽和了解程式碼的一些方式。
 

@@ -1,10 +1,11 @@
 ---
-title: "Visual Studio Tools for Unity Azure 逐步解說 | Microsoft Docs"
+title: "使用 Visual Studio Tools for Unity 和 Azure 進行程式設計 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 12/18/2017
 ms.reviewer: crdun
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
@@ -14,46 +15,29 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: d5242dd873591abee15f528d09b6f588ea12f5ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a66e78063b100740ef271480e76daae2fd99a3fe
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="using-azure-easy-tables-with-unity-walkthrough"></a>搭配使用 Azure 簡易表和 Unity 逐步解說
+# <a name="programming-with-unity-and-azure"></a>使用 Unity 與 Azure 進行程式設計
 
-![範例遊戲螢幕擷取畫面](media/vstu_azure-test-sample-game-image2.png)
+Azure 提供可調整規模的解決方案，將遙測和其他遊戲資料儲存在雲端。 Unity 2017 推出之後，Unity 針對 .NET 4.6 所推出的實驗性支援，讓使用者可以透過 Azure .NET SDK 來輕鬆進行 Azure 整合。
 
-## <a name="introduction"></a>簡介
-
-Azure 提供可調整規模的解決方案，將遙測和其他遊戲資料儲存在雲端。 在 Unity 2017 版中，由於 Unity 的 .NET 4.6 支援允許使用 Azure Mobile Client SDK，因此 Azure 整合比過去更容易。
-
-這些步驟將逐步完成使用 Azure 將遙測和排行榜資料儲存在雲端之 Unity 專案的設定程序。
+## <a name="experimental-azure-sdks"></a>實驗性 Azure SDK
 
 > [!NOTE]
-> 此專案需要 Unity 2017 中的「實驗性」.NET 4.6 Mono 指令碼執行階段。 [Unity 指出不久這將成為預設值](https://forum.unity3d.com/threads/future-plans-for-the-mono-runtime-upgrade.464327/)，但目前它仍標示為「實驗性」，而且您可能會遇到問題。
+> 這些 SDK 尚未受到支援，其提供目的是為了協助客戶嘗試 Unity 的實驗性 .NET 4.6 支援。
 
-> 本逐步解說示範如何從 Unity PC 組建連線到 Azure 行動應用程式後端。 在撰寫本文件時，已知有使得此專案無法在 Mac 和 Android 平台上運作的問題。 雖然這些已知問題未來將獲得修正，但何時修正並不確定。 如需詳細資訊，請前往 Unity [實驗性指令碼論壇](https://forum.unity3d.com/forums/experimental-scripting-previews.107/)。
+請造訪[沙箱](/sandbox/)以搭配 Unity 嘗試下列實驗性 Azure SDK：
 
-## <a name="download-the-completed-project"></a>下載已完成的專案
+* [適用於 Unity 的 Azure 儲存體 SDK](https://aka.ms/azstoragegamedev) \(英文\)
+* [適用於 Unity 的 Azure 事件中樞 SDK](https://aka.ms/azeventhubsgamedev) \(英文\)
+* [適用於 Unity 的 Azure 行動應用程式 SDK](https://aka.ms/azmobileappsgamedev) \(英文\)
 
-GitHub 上提供已完成的專案。 不過，本逐步解說假設您從空的新專案開始，並將視需要提供下載資產的連結。
+## <a name="azure-sdk-sample"></a>Azure SDK 範例
 
-## <a name="walkthrough-steps"></a>逐步解說步驟
+還有一個使用 Azure 簡易表 SDK 及 Unity 的[簡易範例遊戲](https://aka.ms/azmobileappsracer) \(英文\)。 該遊戲是使用 Azure 簡易表資料儲存區來追蹤高分排行榜並儲存遊戲內遙測，並可供[從 GitHub 下載](https://aka.ms/azsamples-unity)(英文\)。
 
-1. [在 Azure 中設定簡易表](visual-studio-tools-for-unity-azure-configure.md)
-2. [建立簡易表](visual-studio-tools-for-unity-azure-setup.md)
-3. [準備開發環境](visual-studio-tools-for-unity-azure-prepare.md)
-4. [建立資料模型類別](visual-studio-tools-for-unity-azure-data.md)
-5. [實作 Azure MobileServiceClient](visual-studio-tools-for-unity-azure-mobile-client.md)
-6. [更新 Unity Mono 安全性憑證存放區](visual-studio-tools-for-unity-azure-security.md)
-7. [測試用戶端連線](visual-studio-tools-for-unity-azure-connection.md)
-7. [匯入範例遊戲資產](visual-studio-tools-for-unity-azure-game-assets.md)
-8. [測試範例遊戲](visual-studio-tools-for-unity-azure-game.md)
-9. [RaceScene 說明](visual-studio-tools-for-unity-azure-racescene.md)
-10. [HeatmapScene 說明](visual-studio-tools-for-unity-azure-heatmapscene.md)
-11. [LeaderboardScene 說明](visual-studio-tools-for-unity-azure-leaderboardscene.md)
-
-
-## <a name="next-step"></a>後續步驟
-* [在 Azure 中設定簡易表](visual-studio-tools-for-unity-azure-configure.md)
+![範例遊戲螢幕擷取畫面](media/vstu_azure-test-sample-game-image2.png)

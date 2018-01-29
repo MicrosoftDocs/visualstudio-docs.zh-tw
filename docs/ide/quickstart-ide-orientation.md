@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -45,9 +47,9 @@ ms.lasthandoff: 12/22/2017
 
 ![底下提供說明，包括方案總管](media/quickstart-IDE-solution-explorer.png)
 
-## <a name="menus"></a>Menus
+## <a name="menus"></a>功能表
 
-IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能表會包含您正在處理的專案相關命令。 在 [工具] 功能表上，您可以選取 [選項] 來自訂 IDE，或選取 [取得工具與功能] 來將功能新增到您的安裝。
+IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能表會包含您正在處理之專案的相關命令。 在 [工具] 功能表上，您可以選取 [選項] 來自訂 IDE，或選取 [取得工具與功能] 來將功能新增到您的安裝。
 
 ![功能表列](media/quickstart-IDE-menu-bar.png)
 
@@ -63,7 +65,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 [輸出] 視窗顯示來自「建置」和「原始檔控制」的輸出訊息。
 
-讓我們建置專案以查看一些輸出記錄。 從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。 [輸出] 視窗會自動取得焦點並顯示成功建置訊息。
+讓我們建置專案以查看一些輸出記錄。 從 [建置] 功能表中，選擇 [建置方案]。 [輸出] 視窗會自動取得焦點並顯示成功建置訊息。
 
 ![輸出視窗](media/quickstart-IDE-output.png)
 
@@ -100,5 +102,5 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 ## <a name="see-also"></a>另請參閱
 
 [快速入門：將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
-[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
-[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)  
+[快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)  
+[快速入門：專案和方案](../ide/quickstart-projects-solutions.md)

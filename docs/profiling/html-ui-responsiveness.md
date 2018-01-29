@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供通用 Windows App 使用。  
@@ -42,11 +40,11 @@ ms.lasthandoff: 12/22/2017
 -   視覺效果更新比預期較不頻繁。 如果 UI 執行緒太忙碌而無法保持順暢的畫面播放速率，就會發生這種情況。 例如，如果 UI 執行緒忙碌，畫面格可能會被捨棄。 某些非 UI 執行緒工作也可能會限制如網路要求、影像解碼和繪製的視覺效果更新頻率 (並非所有繪製都是在 UI 執行緒上執行)。  
   
 ##  <a name="RunningProfiler"></a> 執行 HTML UI 回應性工具  
- 當您在 Visual Studio 中有開啟的運作中 UWP 或 Windows 8.1 應用程式，或在執行 Windows 8 或更新版本的電腦上安裝這些應用程式時，便可以使用 HTML UI 回應性工具。  
+ 在 Visual Studio 中開啟您開發的 UWP 應用程式時，就可以使用 HTML UI 回應性工具。  
   
-1.  如果您是從 Visual Studio 執行應用程式，請在 [ **標準** ] 工具列上的 [ **開始偵錯** ] 清單中選擇部署目標，例如其中一個 Windows Phone 模擬器、[ **本機電腦**]、[ **模擬器**] 或 [ **遠端電腦**]。  
+1.  如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇部署目標，例如 [本機電腦] 或 [裝置]。  
   
-2.  在 [偵錯]  功能表上選擇 [效能分析工具...] 。  
+2.  在 [偵錯] 功能表上選擇 [效能分析工具]。  
   
      如果您要變更分析工具的分析目標，請選擇 [變更目標]。  
   
@@ -331,21 +329,21 @@ if (performance.mark && performance.measure) {
   
  下表顯示事件及其描述：  
   
-|事件|事件分類|發生於|  
+|Event - 事件|事件分類|發生於|  
 |-----------|--------------------|-----------------|  
 |CSS 剖析中|正在載入|遇到新的 CSS 內容，而且嘗試剖析 CSS 內容。|  
 |HTML 剖析中|載入中|遇到新的 HTML 內容，而且嘗試將內容剖析成節點和將內容插入至 DOM 樹狀目錄。|  
-|HTTP 要求|載入中|在 DOM 中找到遠端資源，或因建立 XMLHttpRequest 而產生 HTTP 要求。|  
-|理論式下載|載入中|在頁面的 HTML 內容中搜尋所需的資源，以便資源的後續 HTTP 要求可以迅速排程。|  
-|動畫畫面格回呼函式|指令碼|瀏覽器即將要呈現另一個畫面格，因此觸發應用程式提供的回呼函式。|  
-|DOM 事件|指令碼|已發生且執行 DOM 事件。<br /><br /> DOM 事件 (例如 `context` 或  `DOMContentLoaded` ) 的 `click`屬性顯示在括號中。|  
-|事件接聽程式|指令碼|已呼叫且執行事件接聽程式。|  
+|HTTP 要求|正在載入|在 DOM 中找到遠端資源，或因建立 XMLHttpRequest 而產生 HTTP 要求。|  
+|理論式下載|正在載入|在頁面的 HTML 內容中搜尋所需的資源，以便資源的後續 HTTP 要求可以迅速排程。|  
+|動畫畫面格回呼函式|正在處理指令碼|瀏覽器即將要呈現另一個畫面格，因此觸發應用程式提供的回呼函式。|  
+|DOM 事件|正在處理指令碼|已發生且執行 DOM 事件。<br /><br /> DOM 事件 (例如 `context` 或  `DOMContentLoaded` ) 的 `click`屬性顯示在括號中。|  
+|事件接聽程式|正在處理指令碼|已呼叫且執行事件接聽程式。|  
 |媒體查詢接聽程式|正在處理指令碼|已註冊的媒體查詢失效，因而會執行其相關聯的接聽程式。|  
 |變動觀察者|正在處理指令碼|一或多個受觀察的 DOM 項目已修改，因而會執行 MutationObserver 的關聯回呼。|  
-|指令碼評估|指令碼|在 DOM 中找到新的 SCRIPT 項目，而且嘗試剖析和執行指令碼。|  
-|計時器|指令碼|排程計時器已過，這會導致執行其關聯的回呼函式。|  
+|指令碼評估|正在處理指令碼|在 DOM 中找到新的 SCRIPT 項目，而且嘗試剖析和執行指令碼。|  
+|計時器|正在處理指令碼|排程計時器已過，這會導致執行其關聯的回呼函式。|  
 |Windows 執行階段非同步回呼函式|指令碼|觸發 `Promise` 回呼函式的非同步作業，已經由 Windows 執行階段物件完成。|  
-|Windows 執行階段錯誤|指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|  
+|Windows 執行階段錯誤|正在處理指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|  
 |記憶體回收|GC|花費時間收集不再使用之物件的記憶體。|  
 |CSS 計算|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的樣式屬性。|  
 |配置|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的大小和 (或) 位置。|  

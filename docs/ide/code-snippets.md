@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 在 Visual Studio 中，有兩種類型的程式碼片段：擴充程式碼片段，這會在指定的插入點加入，而且可能會取代程式碼片段捷徑，以及範圍陳述式程式碼片段 (僅限 C# 和 C++)，可在選取的程式碼區塊前後加入。
 
-插入程式碼片段的範例：在 C# 中，使用捷徑 tryf 來插入 try-finally 區塊：
+擴充程式碼片段的範例：在 C# 中，捷徑 tryf 可用來插入 try-finally 區塊：
 
 ```csharp
 try
@@ -48,9 +49,9 @@ finally
 }
 ```
 
-插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並鍵入 `tryf`，然後按 **Tab** 鍵，也可以鍵入 `tryf`，然後按兩次 **Tab** 鍵。
+插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並輸入 `tryf`，然後按 **Tab**，也可以輸入 `tryf`，然後按兩次 **Tab**。
 
-範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [Surround With] (範圍陳述式) 和 [if]，程式碼片段隨即在此行周圍展開：
+範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [範圍陳述式] 和 [if]，程式碼片段隨即在此行周圍展開：
 
 ```cpp
 if (true)
@@ -77,7 +78,7 @@ Public Property NewProperty() As String
 End Property
 ```
 
-如果您變更 `newPropertyValue` 為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中變更 `String` 為 `Int`，則已設定方法中的值也會變更為 `Int`。
+如果您將 `newPropertyValue` 變更為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中將 `String` 變更為 `Int`，則 set 方法中的值也會變更為 `Int`。
 
 ## <a name="code-snippet-manager"></a>程式碼片段管理員
 
@@ -89,7 +90,7 @@ End Property
 
 [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)  
 [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)  
-[使用程式碼片段的最佳作法](../ide/best-practices-for-using-code-snippets.md)  
+[使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)  
 [針對程式碼片段進行疑難排解](../ide/troubleshooting-snippets.md)  
 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)  
 [Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)  
