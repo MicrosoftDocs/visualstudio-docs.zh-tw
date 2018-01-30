@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用 [快速監看式] 觀察單一變數  
  您可以使用 [快速監看式]  視窗觀察單一變數。 例如，如果您有下列的程式碼：  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a> 重新整理已過期的監看值  
  在某些情況下，您可能會看到重新整理圖示 （循環的箭頭） 中評估運算式時**監看式**視窗。  例如，如果您關閉屬性評估 (**工具 > 選項 > 偵錯 > 啟用屬性評估及其他隱含函式呼叫**)，而且您有下列的程式碼：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  在下列程式碼，其中一種方法會建立`Person`使用區域變數，但您想要找出`Person`的名稱是在不同的方法：  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

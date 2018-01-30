@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>巡覽程式碼與 Visual Studio 偵錯工具
 熟悉命令和快速鍵來巡覽偵錯工具中的程式碼，也會讓更快且更容易尋找和解決您的應用程式中的問題。 當您巡覽程式碼偵錯工具中的時，您可以檢查您的應用程式的狀態，或深入了解它的執行流程。  
@@ -32,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
  綠色箭號也會啟動偵錯工具 (與相同**F5**)。  
   
- ![DBG &#95;基本概念 &#95;開始 &#95; 偵錯](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  您可以附加偵錯工具啟動應用程式的其他幾種方式包含**F11** ([逐步執行程式碼](#BKMK_Step_into__over__or_out_of_the_code))， **F10** ([不進入函式程式碼](#BKMK_Step_over_Step_out))，或由使用**執行至游標處**。  有關這些選項執行之操作，請參閱本主題的資訊的其他章節。  
   
  當您偵錯時，黃色列會顯示您接下來執行的程式碼。  
   
- ![DBG &#95;基本概念 &#95;中斷 &#95;模式](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  偵錯時，您可以切換等命令**F5**， **F11**及使用其他功能 （例如中斷點） 本主題說明若要快速取得您想要查看程式的碼。  
   
@@ -56,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 -   偵錯工具實際上逐步執行程式碼陳述式，而不是實際程式碼行。 例如 `if` 子句可撰寫在一行上：  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ ms.lasthandoff: 12/22/2017
 |鍵盤命令|功能表命令|描述|  
 |----------------------|------------------|-----------------|  
 |**F10**|**不進入函式**|如果目前的行包含函式呼叫，**不進入函式**執行的程式碼，然後之後暫止執行的程式碼的第一行呼叫的函式傳回。|  
-|**Shift + F11**|**跳離函式**|**跳離函式**仍然會繼續執行程式碼和目前的函式會傳回 （偵錯工具會略過透過目前的函式） 時，暫停執行。|  
+|**Shift+F11**|**跳離函式**|**跳離函式**仍然會繼續執行程式碼和目前的函式會傳回 （偵錯工具會略過透過目前的函式） 時，暫停執行。|  
   
 > [!TIP]
 >  如果您需要找出應用程式的進入點，以啟動**F10**或**F11**。 當您檢查應用程式狀態或嘗試了解有關其執行流程的詳細資訊，這些命令通常是很有幫助。  
