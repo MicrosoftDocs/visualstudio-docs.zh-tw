@@ -20,6 +20,7 @@
 ## [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)
 ### [以 64 位元處理序的形式執行單元測試](run-a-unit-test-as-a-64-bit-process.md)
 ### [逐步解說：針對 UWP App 建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [測試清單編輯器常見問題集](test-explorer-faq.md)
 ## [使用 .runsettings 檔案設定單元測試](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [撰寫受控碼的單元測試](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [逐步解說：針對 Managed 程式碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
