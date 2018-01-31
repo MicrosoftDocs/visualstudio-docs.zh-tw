@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>編輯器、對話方塊和工具視窗  
  根據預設，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的對話方塊和工具視窗使用與作業系統相同的字型大小和色彩。 IDE 框架、對話方塊、工具列和工具視窗的色彩設定，是以色彩配置為基礎：淡或暗。 您可以在[一般、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)變更目前的色彩佈景主題。  
 
- 您也可以在編輯器的 [程式碼] 檢視中顯示快顯視窗。 這些視窗可以提示您目前物件上的可用成員和參數，以便完成函式或陳述式。 如果您不方便鍵入，這些視窗會很有用。 不過，它們會干擾程式碼編輯器中的焦點，可能會對某些使用者造成問題。 您可以關閉這些視窗，方法是開啟 [選項] 對話方塊，並在 [選項] 對話方塊的 [文字編輯器]、[所有語言]、[一般] 頁面中，清除 [自動列出成員] 和 [參數資訊]。 如需詳細資訊，請參閱[如何：設定一般編輯器選項](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+ 您也可以在編輯器的 [程式碼] 檢視中顯示快顯視窗。 這些視窗可以提示您目前物件上的可用成員和參數，以便完成函式或陳述式。 如果您不方便鍵入，這些視窗會很有用。 不過，它們會干擾程式碼編輯器中的焦點，可能會對某些使用者造成問題。 您可以關閉這些視窗，方法是開啟 [選項] 對話方塊，並在 [選項] 對話方塊的 [文字編輯器]、[所有語言]、[一般] 頁面中，清除 [自動列出成員] 和 [參數資訊]。
 
  您可以在整合式開發環境 (IDE) 中重新排列視窗，以符合您的工作方式。 您可以停駐、浮動、隱藏或自動隱藏每個工具視窗。  
 

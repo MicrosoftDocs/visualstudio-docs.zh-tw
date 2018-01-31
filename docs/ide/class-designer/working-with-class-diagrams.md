@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用類別圖表 (類別設計工具)
 類別圖表可幫助您了解其他人撰寫 (或是您很久以前撰寫) 之專案的類別結構。 您可以使用這些類別圖表來自訂專案資訊、與其他人共用，以及向其他人展示。  
@@ -39,6 +41,7 @@ ms.lasthandoff: 12/22/2017
 >  類別設計工具不會追蹤原始程式檔的位置，因此，變更您的專案結構或移動專案中的原始程式檔，可能會導致類別設計工具遺失類型的追蹤，特別是 typedef、基底類別或關聯類型的來源類型。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。
   
 ## <a name="see-also"></a>另請參閱
-[檢視類型與關聯性](viewing-types-and-relationships.md)   
-[如何：自訂類別圖表](how-to-customize-class-diagrams.md)   
-[如何：從類別圖表移除類型圖形](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[檢視類型與關聯性](viewing-types-and-relationships.md)  
+[如何：自訂類別圖表](how-to-customize-class-diagrams.md)  
+[如何：從類別圖表移除類型圖形](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

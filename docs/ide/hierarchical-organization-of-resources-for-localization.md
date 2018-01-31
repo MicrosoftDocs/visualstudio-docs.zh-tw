@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cc663c02d3151e6dd55c1c35388ac7b33f049bb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 在 Visual Studio 中，當地語系化資源 (例如適用於各文化的字串和影像資料) 會儲存在不同的檔案中，並根據 UI 文化特性設定載入。 若要了解當地語系化資源載入的方式，最好將它們視為以階層方式組織而成。  
@@ -50,10 +52,9 @@ ms.lasthandoff: 12/22/2017
   
  ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>請參閱  
- [當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)   
- [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)   
- [當地語系化應用程式](../ide/localizing-applications.md)   
- [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)   
- [如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [如何：為 ASP.NET 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>另請參閱
+
+[當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)  
+[安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)  
+[當地語系化應用程式](../ide/localizing-applications.md)  
+[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

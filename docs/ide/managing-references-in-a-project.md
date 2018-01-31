@@ -4,14 +4,15 @@ ms.custom:
 ms.date: 10/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - referencing objects, project references
 - external component references
 - referencing namespaces
@@ -24,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.workload:
+- multiple
+ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 

@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9609f902c11291cd6892cf663ec8a343952ebaab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b43e285c35601cb0d50536a5f4c499d09ae9bbad
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 啟用裝載處理序時，可能會影響特定 API 呼叫。 在這些情況下，必須停用裝載處理序來傳回正確的結果。  
@@ -45,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
 -   部分信任偵錯無法使用。  
   
-## <a name="see-also"></a>請參閱  
- [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
- [裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [在應用程式開發期間建置](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>另請參閱
+
+[偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
+[裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)

@@ -3,21 +3,24 @@ title: "Visual Studio 效能祕訣和訣竅 | Microsoft Docs"
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -32,7 +35,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
     如果您將系統從 32 位元版本的 Windows 升級至 64 位元版本，請將 Visual Studio 可用的虛擬記憶體數量從 2 GB 擴充為 4 GB。 這可讓 Visual Studio 處理更大量的工作負載，即使它是 32 位元處理序也是一樣。
 
-    如需詳細資訊，請參閱[記憶體限制](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
+    如需詳細資訊，請參閱[記憶體限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和 [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
 
 ## <a name="configure-solution-and-projects"></a>設定方案和專案
 
@@ -47,6 +50,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
     您可以將您的方案分割成數個包含常用專案的較小方案檔。 這項重構應該可以大幅降低您工作流程的記憶體使用量。 較小方案的載入速度也會較快。
 
 ## <a name="configure-debugging-options"></a>設定偵錯選項
+
 如果您在偵錯工作階段期間通常會記憶體不足，則可以進行一或多個組態變更來最佳化效能。
 
 - **啟用 Just My Code**
@@ -74,6 +78,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
     如需詳細資訊，請參閱 [Profiling Tools](../profiling/profiling-tools.md) (分析工具)。
 
 ## <a name="disable-tools-and-extensions"></a>停用工具和延伸模組
+
 若要改善效能，則可能需要關閉一些工具或延伸模組。
 
 > [!TIP]
@@ -123,7 +128,8 @@ CLR 使用記憶體回收記憶體管理系統。 在此系統中，有時不再
 
 如果可靠地強制執行記憶體回收可讓您的案例運作，請透過 Visual Studio 意見反應工具提出報表，因為這種行為可能是 Bug。
 
-如需 CLR 記憶體回收行程的詳細描述，請參閱 [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx) (記憶體回收基礎)。
+如需 CLR 記憶體回收行程的詳細描述，請參閱 [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (記憶體回收基礎)。
 
-## <a name="see-also"></a>請參閱  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>另請參閱
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

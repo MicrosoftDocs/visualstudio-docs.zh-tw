@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedServices
-helpviewer_keywords: Advanced Settings for Services dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedServices
+helpviewer_keywords:
+- Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77f2f55d142f87e43f2bd3848c8dcd0b352c197e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 264f90329bfbf969f50dbc38073bdda26987fd26
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
 用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。  
@@ -28,14 +32,14 @@ ms.lasthandoff: 12/22/2017
   
  若要存取 [服務的進階設定] 對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [專案設計工具] 出現時，請按一下 [服務] 索引標籤，然後按一下 [進階] 按鈕。 在您啟用用戶端應用程式服務之前，此按鈕會維持停用狀態。  
   
-## <a name="task-list"></a>工作清單  
- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
- [如何：使用用戶端應用程式服務離線工作](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
-  
-## <a name="uielement-list"></a>UIElement 清單  
+## <a name="task-list"></a>工作清單
+
+- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
+## <a name="uielement-list"></a>UIElement 清單
+
  **在本機儲存密碼雜湊以啟用離線登入**  
- 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務離線工作](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)。 預設會選取這個選項。  
+ 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 預設會選取這個選項。
   
  **要求使用者在伺服器 Cookie 過期時必須再次登入**  
  指定當應用程式存取角色或設定檔服務時，若伺服器驗證 Cookie 已過期，是否會自動重新驗證先前已驗證過的使用者。 選取此選項可拒絕存取應用程式服務，並要求在 Cookie 過期後進行明確重新驗證。 您可以針對部署在公用位置的應用程式，使用這個選項來確保使用應用程式後讓應用程式繼續執行的使用者，不會無限期地保持已驗證的狀態。 預設會清除這個選項。  
@@ -48,8 +52,8 @@ ms.lasthandoff: 12/22/2017
  **使用自訂連接字串**  
  指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。  
   
-## <a name="see-also"></a>請參閱  
- [用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)   
- [專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)   
- [如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
- [如何：使用用戶端應用程式服務離線工作](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
+## <a name="see-also"></a>另請參閱
+
+[用戶端應用程式服務](/dotnet/framework/common-client-technologies/client-application-services)  
+[專案設計工具、服務頁面](../../ide/reference/services-page-project-designer.md)  
+[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

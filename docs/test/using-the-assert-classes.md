@@ -14,13 +14,14 @@ helpviewer_keywords:
 - unit tests, Assert classes
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: f2d0e0020ae26a3a2331643f74f436441612b9fc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 01d41202f49a61a1ae2ba0f926b5c5b563ab351c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
 使用 UnitTestingFramework 命名空間的 Assert 類別來驗證特定功能。 單元測試方法會執行開發程式碼中方法的程式碼，但是只有在加入 Assert 陳述式時，才會報告程式碼行為的正確性。  
@@ -59,6 +60,7 @@ ms.lasthandoff: 01/09/2018
   
  當您想要測試方法確認您預期由開發程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 ExpectedExceptionAttribute 屬性裝飾測試方法。  
   
-## <a name="see-also"></a>請參閱  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>另請參閱
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
+[對程式碼進行單元測試](../test/unit-test-your-code.md)

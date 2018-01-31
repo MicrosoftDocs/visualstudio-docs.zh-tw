@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 1. 在方案總管中選擇專案節點，然後依序選擇 [新增] 和 [已連接服務]。 [新增已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。
 
     > [!WARNING]
-    > 如果這是您第一次在特定電腦的 Visual Studio 中建立 UWP 應用程式，系統會提示您前往電腦上的 [設定] &#124; [更新與安全性] &#124; [適用於開發人員] 來啟用裝置的開發模式。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。
+    > 如果這是您第一次在特定電腦的 Visual Studio 中建立 UWP 應用程式，系統會提示您前往電腦上的 [設定] &#124; [更新與安全性] &#124; [適用於開發人員] 來啟用裝置的開發模式。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。
 
 ### <a name="access_azure"></a> 在 Web 專案中存取 Azure Active Directory
 

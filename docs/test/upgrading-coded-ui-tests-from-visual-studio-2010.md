@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 包含建立於 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中之自動程式化 UI 測試的測試專案在 Visual Studio 2012 或更新版本中開啟時，會以無訊息模式修復。 如果已將測試專案簽入原始檔控制，則專案檔會簽出此修復。 一旦修復，這些包含自動程式碼 UI 測試的測試專案可以再次用於 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
@@ -25,7 +26,7 @@ ms.lasthandoff: 01/09/2018
 -   Visual Studio 企業版  
   
 > [!NOTE]
->  Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。  
+> Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。
   
 > [!WARNING]
 >  當您在[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 或 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 連同 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]個測試專案。  
@@ -66,6 +67,5 @@ ms.lasthandoff: 01/09/2018
 ## <a name="see-also"></a>另請參閱
 
 [移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  
 [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

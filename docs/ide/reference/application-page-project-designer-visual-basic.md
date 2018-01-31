@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c0683e9c619352c6d3f7d0cb431d3e2c973b6270
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
+
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。  
   
 若要存取 [應用程式] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇功能表列上的 [專案]、[屬性]。 [專案設計工具] 出現時，請按一下 [應用程式] 索引標籤。  
@@ -111,7 +112,7 @@ ms.lasthandoff: 12/22/2017
  [Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 後續區段描述 Windows Presentation Foundation (WPF) 應用程式的 [Windows 應用程式架構屬性] 設定。  
   
  **啟用 XP 視覺化樣式**  
- 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。 如需 Windows XP 視覺化樣式的詳細資訊，請參閱 [Windows XP 功能和 Windows Form 控制項](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0))。  
+ 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。
   
  **建立單一執行個體應用程式**  
  選取此核取方塊，來防止使用者執行應用程式的多個執行個體。 此核取方塊的預設設定會予以清除。 此設定允許執行應用程式的多個執行個體。  
@@ -157,7 +158,4 @@ ms.lasthandoff: 12/22/2017
  **檢視應用程式事件**  
  按一下此按鈕，以在程式碼編輯器中顯示 `Application` 部分類別檔案 (Application.xaml.vb)。 如果檔案不存在，則 [專案設計工具] 會建立一個具有適當類別名稱和命名空間的檔案。  
   
- 特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。  
-  
-## <a name="see-also"></a>請參閱  
-[管理應用程式屬性](../../ide/application-properties.md)[撰寫 Office 方案中的程式碼](/office-dev/office-dev/writing-code-in-office-solutions)
+ 特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。

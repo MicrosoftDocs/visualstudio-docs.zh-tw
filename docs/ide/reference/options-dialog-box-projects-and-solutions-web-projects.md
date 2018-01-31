@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords:
+- VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1cf6798a8870834b97693845c1e39870863a66e4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內進行開發的 Web 伺服器。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和解決方案]，然後選取 [Web 專案]。
 
-根據預設，在 Visual Studio 中執行 Web 專案會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  
+根據預設，在 Visual Studio 中執行 Web 專案會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。
 
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 42d412e576ddf9ca53f79b7349d99b87b9ef3238
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0fe2ab7f174f71933d474aa4737dc713c6540492
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
 在 Visual Basic 中的建置事件可以用來執行指令碼、巨集或編譯處理程序當中的其他動作。 編譯之前發生的是建置前事件；編譯之後發生的則是建置後事件。  
@@ -165,9 +167,9 @@ ms.lasthandoff: 12/22/2017
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>請參閱  
- [管理編譯屬性](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [專案設計工具、編譯頁 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [專案設計工具、發行頁](../ide/reference/publish-page-project-designer.md)   
- [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)
+## <a name="see-also"></a>另請參閱
+
+[專案設計工具、編譯頁 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+[專案設計工具、發行頁](../ide/reference/publish-page-project-designer.md)   
+[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
+[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)

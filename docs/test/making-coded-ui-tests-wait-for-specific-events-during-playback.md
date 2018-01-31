@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 4a6c7ae9f0438d440471bc9e049b539e96e63e13
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: d28182eb626bb937e8d1e1d0e3cc39bd62233df7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
+
 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。  
   
  **需求**  
@@ -103,18 +105,15 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  您可以使用  <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> 屬性以修改睡眠的持續時間。 根據預設，此變數是 1，但是您可以增加或減少以變更整個程式碼的等候時間。 例如，如果您要特意透過慢速網路測試，或處於某些效能較慢的情況中，您可以在某個位置上將這個變數 (或甚至在組態檔中) 變為 1.5，在所有位置額外增加 50%。  
   
  檢查使用者取消\中斷作業時，Playback.Wait() 會在 for 迴圈的較小區塊中內部呼叫 Thread.Sleep() (在上述計算後)。 換句話說，Playback.Wait() 可讓您在等候結束，且睡眠無法或擲回例外狀況之前，取消播放。  
-  
+
 > [!TIP]
->  自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。  
-  
- **指引**  
-  
- 如需詳細資訊，請參閱 [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試)。  
-  
-## <a name="see-also"></a>請參閱  
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+> 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+
+## <a name="see-also"></a>另請參閱
+
+[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  
+[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)  
+[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)  
+[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)  
+[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
