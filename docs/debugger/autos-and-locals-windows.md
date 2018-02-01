@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗
 **自動變數**視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > [自動變數]**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > [區域變數]**) 會相當實用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是在不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
@@ -31,16 +33,16 @@ ms.lasthandoff: 12/22/2017
 如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看 [自動變數] 和 [區域變數] 視窗中的物件  
-陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 **[區域變數]**  視窗中的 [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) 物件範例：  
+陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 [[區域變數]](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) 視窗中的 **FileStream** 物件範例：  
   
-![[區域變數] &#45;FileStream](../debugger/media/locals-filestream.png "區域變數 FileStream")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a> [自動變數] 視窗中出現哪些變數？  
  您可以在 C#、Visual Basic 和 C++ 程式碼中使用 [自動變數]  視窗。 [自動變數]  視窗不支援 JavaScript 或 F#。  
   
  在 C# 和 Visual Basic 中，[自動變數]  視窗會顯示目前或先前一行使用的任何變數。 例如，如果您宣告四個變數並設定如下：
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 
  如果您在 `c = 3`行上設定中斷點並執行偵錯工具，當停止執行時，[自動變數]  視窗看起來像這樣：  
 
- ![[自動變數] &#45;CSharp](../debugger/media/autos-csharp.png "自動變數 CSharp")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  請注意， `c` 值為 0，因為尚未執行 `c = 3` 這行。  
 
@@ -73,7 +75,7 @@ ms.lasthandoff: 12/22/2017
 
  如果您在 `e = 5;` 行上設定中斷點並執行偵錯工具，當停止執行時，[自動變數]  視窗看起來像這樣：  
   
- ![[自動變數] &#45;Cplus](../debugger/media/autos-cplus.png "自動變數 Cplus")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  請注意，變數 e 因為在 `e = 5;` 行的程式碼尚未執行而未初始化。  
   
@@ -84,7 +86,7 @@ ms.lasthandoff: 12/22/2017
   
  下列 C# 程式碼會加入兩個函式的傳回值：  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>開始使用 Visual Studio 偵錯工具
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 這裡我們會示範一個簡單的 C# 程式，偵錯，但您可以將相同的步驟套用至 c + + 及 JavaScript 等其他語言中的程式碼。
@@ -27,7 +29,7 @@ Visual Studio 偵錯工具在任何語言都中都很容易使用。 這裡我�
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>基本的 C# 專案進行偵錯  
  讓我們從簡單 C# 主控台應用程式開始 (**檔案 > 新增 > 專案**，然後選取**Visual C#**然後**主控台應用程式**)。 如果您從未使用過 Visual Studio 過，請參閱[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只要將 1 加入至整數變數 10 次，並會列印到主控台的結果：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  您可以將滑鼠停留在**testInt**變數，以檢視資料提示中的目前值。  
   
- ![DBG &#95;基本概念 &#95; 資料 &#95;提示](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  您應該只在程式碼視窗下方會看到**自動變數**，**區域變數**，和**監看式**windows。 這些視窗會顯示執行時變數目前的值。 這兩個**自動變數**和**區域變數**windows 顯示**testInt**值是**10**。  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  若要查看之間的差異**逐步執行**和**不進入函式**，我們需要加入另一個方法呼叫的方法。 將方法加入 C# 應用程式，並從 Main 方法呼叫該方法。 此程式碼應該類似下列所示：  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

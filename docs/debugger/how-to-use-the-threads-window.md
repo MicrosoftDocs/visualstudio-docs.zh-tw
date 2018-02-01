@@ -4,7 +4,8 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 253798cdde2a40a70496dbe2ed89f9d0a9316640
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.workload:
+- multiple
+ms.openlocfilehash: 367bade1041012670ae47937c21be42e38157dca
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>逐步解說： 偵錯 Visual Studio 中使用 [執行緒] 視窗中的多執行緒應用程式
 Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您偵錯多執行緒應用程式的項目。 本教學課程示範如何使用**執行緒**視窗和**偵錯位置**工具列。 如需其他工具的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。   
@@ -61,7 +63,7 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
     Console.WriteLine()
     ```  
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     Console.WriteLine();  
     ```  
@@ -89,7 +91,7 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
     Thread.Sleep(5000)   
     ```  
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     ```  
   

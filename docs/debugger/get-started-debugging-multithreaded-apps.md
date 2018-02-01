@@ -4,7 +4,8 @@ ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
@@ -199,7 +201,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
 -   在原始碼程式碼編輯器中，尋找下列程式碼： 
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     Console.WriteLine();  
     ```  
@@ -228,7 +230,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
 4.  在原始碼程式碼編輯器中，找出包含中斷點的那一行：  
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     ```  
   
