@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 01/22/2018
   
 -   在您的 Team Foundation Build 伺服器的 Visual Studio 使用 Team Foundation Build 自動驗證程式碼  
   
--   具有相依性圖表的模型專案的方案。 此相依性圖表必須連結到您想要驗證的 Visual C#.NET 或 Visual Basic.NET 專案中的成品。 請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
+-   具有相依性圖表的模型專案的方案。 此相依性圖表必須連結到您想要驗證的 C# 或 Visual Basic 專案中的成品。 請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -120,7 +121,7 @@ ms.lasthandoff: 01/22/2018
 2.  若要檢視每個錯誤的來源，請按兩下中的錯誤**錯誤清單**視窗。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能會顯示 Code Map，而非錯誤來源。 會發生這種情況是當程式碼會具有相依性的相依性圖表中，未指定的組件，或是程式碼遺失相依性圖表所指定相依性。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能會顯示 code map，而不是錯誤的來源。 會發生這種情況是當程式碼會具有相依性的相依性圖表中，未指定的組件，或是程式碼遺失相依性圖表所指定相依性。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
 3.  若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
   

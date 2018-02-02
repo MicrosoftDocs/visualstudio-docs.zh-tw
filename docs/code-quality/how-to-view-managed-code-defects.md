@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - code analysis, viewing managed code defects
 - code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 4b509a1943419e9e12f13575da2fb7f9991c7ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="how-to-view-managed-code-defects"></a>如何：檢視 Managed 程式碼的缺失
 在程式碼分析，錯誤、 警告和訊息會報告程式碼分析 視窗中。 當您執行程式碼分析專案或方案時，會自動出現的程式碼分析 視窗。  

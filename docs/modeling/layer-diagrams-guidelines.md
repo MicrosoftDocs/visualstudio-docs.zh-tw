@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 藉由建立描述您的應用程式架構以高層級*相依性圖表*Visual Studio 中。 確定您的程式碼保持一致與這個設計來驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/13/2018
  請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
   
 ##  <a name="CreateLayers"></a>定義圖層以代表功能區域或元件  
- 圖層代表的邏輯群組*成品*，例如專案、 程式碼檔案、 命名空間、 類別和方法。 您可以從 Visual C# .NET 和 Visual Basic.NET 專案的成品中建立圖層，或可以透過連結文件 (例如 Word 檔案或 PowerPoint 簡報) 將規格或計劃附加至圖層。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。  
+ 圖層代表的邏輯群組*成品*，例如專案、 程式碼檔案、 命名空間、 類別和方法。 您可以從 Visual C# 和 Visual Basic 專案的成品建立圖層，或您可以附加規格或計劃至圖層連結文件，例如 Word 檔案或 PowerPoint 簡報。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。  
   
  一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要深入了解圖層模式，請造訪 「 模式和實務 」 網站[http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   

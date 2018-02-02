@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - DoNotDeclareVirtualMembersInSealedTypes
 - CA1048
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cb13b2b74ca86101949275e418968e577ca2b7c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c1d0b2ee7180dae53d591daba0019ad4eb6e25af
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048：不要在密封類型中宣告 virtual 成員
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>規則描述  
  類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據定義，您無法繼承自密封類型，讓密封類型上的虛擬方法沒有任何意義。  
   
- 在 Visual Basic.NET 和 C# 編譯器不允許違反此規則的型別。  
+ Visual Basic 和 C# 編譯器不允許違反此規則的型別。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，讓非虛擬方法，或讓繼承類型。  

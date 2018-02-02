@@ -5,20 +5,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Visual Studio shell, isolated mode, .pkgdef file
+helpviewer_keywords:
+- Visual Studio shell, isolated mode, .pkgdef file
 ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>使用修改 Isolated 的 Shell。Pkgdef 檔案
 .Pkgdef 檔支援，您可以用來自訂 isolated 的 shell 應用程式的設定。 它會指定應用程式的電腦上安裝並啟動應用程式時，Visual Studio shell 所參考之時所建立的值。 設定會組織適用的登錄機碼為基礎的檔案中。  

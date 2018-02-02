@@ -4,26 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.remote.unable2attach
+ms.topic: reference
+f1_keywords:
+- vs.debug.remote.unable2attach
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 691d0352b327dd2665b3a6daf22b3542929d3ca3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 15acb250c561cb1c7d414784f355a9239ead53ef
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 無法附加至處理序。 當連接至這部電腦時，伺服器上的偵錯工具元件會收到拒絕存取。  

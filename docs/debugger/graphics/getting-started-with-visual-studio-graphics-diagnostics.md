@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。  
@@ -31,13 +31,6 @@ ms.lasthandoff: 12/22/2017
  選擇性 Windows 功能*圖形工具*提供 Windows 10 上圖形診斷所需的擷取和播放基礎結構。  
   
  如需安裝圖形工具的詳細資訊，請參閱[安裝圖形工具適用於 Windows 10](#InstallGraphicsTools)。  
-  
-### <a name="windows-81-prerequisites"></a>Windows 8.1 必要條件  
- 適用於 Windows 8.1 的 Windows 軟體開發套件 (SDK) 提供 Windows 8.1 上圖形診斷所需的擷取和播放基礎結構，並且支援 Windows 8.1 和 Windows 8 的開發。  
-  
- [下載 Windows 8.1 的 Windows 軟體開發套件 (SDK)](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- 若要從執行 Windows 8.1 的開發電腦使用執行 Windows 10 的遠端播放電腦，您必須在開發電腦上安裝 Windows 10 SDK，並在播放電腦上安裝選擇性圖形工具功能。  
   
 ##  <a name="InstallGraphicsTools"></a>安裝適用於 Windows 10 的圖形工具  
  在 Windows 10 中，圖形診斷基礎結構由稱為 Windows 的選用功能*圖形工具*。 不論所擷取應用程式的目標設為舊版 Windows 還是它所使用的 Direct3D 版本，都需要有這項功能，才能在 Windows 10 上擷取和播放圖形資訊。 您可以選擇事先安裝圖形工具功能；否則它會在第一次從 Visual Studio 啟動圖形診斷工作階段時視需要安裝。  
@@ -66,9 +59,7 @@ ms.lasthandoff: 12/22/2017
  如果您已經有專屬 Direct3D 應用程式來瀏覽圖形診斷，很好 ！ 否則，請使用下列其中一項：
 
 - **DirectX 11 應用程式 (通用 Windows)**或**DirectX 12 應用程式 (通用 Windows)** for Windows 10 專案範本。
-- **DirectX 應用程式 (Windows 8.1)**用於 Windows 8.1 專案範本。
 - [Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)for Windows 10。  
-- [DirectX 彈珠迷宮遊戲範例](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)針對 Windows 8.1。  
   
  繼續前請先確定您可以建置應用程式。  
   

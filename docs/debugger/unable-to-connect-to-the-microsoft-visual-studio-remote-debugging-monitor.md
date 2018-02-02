@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 08/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
 - vs.debug.error.firewall.remotemachine
@@ -15,17 +16,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 345dbfd982c2e80fadc0f4c3d9484c662b6090ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6efbb27052dc837ab10a74d8f43e949dfb816190
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 此訊息可能是因為遠端偵錯監視已不正確設定遠端電腦上或遠端電腦因為網路問題或防火牆的存在而無法存取。

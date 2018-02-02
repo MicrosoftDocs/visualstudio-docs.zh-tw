@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 
@@ -63,13 +64,13 @@ ms.lasthandoff: 01/13/2018
   
  **您可以針對這些語言的程式碼對應相依性**：  
   
--   方案或組件 (.dll 或 .exe) 中的 Visual C# .NET 或 Visual Basic .NET  
+-   Visual C# 或 Visual Basic 中的方案或組件 （.dll 或.exe）  
   
 -   Visual C++ 專案、標頭檔 (.h 或 `#include`) 或二進位檔案中的原生或 Managed C 或 C++ 程式碼  
   
 -   由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件  
   
- **附註：** 針對 C# 或 Visual Basic.NET 以外的專案，啟動 Code Map 或是將項目加入現有的 Code Map 之選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
+ **注意：**以外 C# 或 Visual Basic 專案中，有較少的選項，啟動 code map 或是將項目加入至現有的 code map。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>查看方案之間的整體相依性  
   
@@ -286,7 +287,7 @@ ms.lasthandoff: 01/13/2018
 ##  <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性  
  如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 此時，您可能無法建立標頭 (.h 或 `#include`) 檔案的 Code Map，直到 IntelliSense 資料庫完成更新。 您可以在 Visual Studio 狀態列中監視更新進度。 若要解決因為某些 IntelliSense 設定停用而發生的問題或訊息，請參閱 [C 和 C++ 程式碼對應疑難排解](#Troubleshooting)。  
   
@@ -310,7 +311,7 @@ ms.lasthandoff: 01/13/2018
 |**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|  
-|當您嘗試從 [架構][!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  **功能表產生 Code Map 時，** 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  功能表。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|  
 |IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能會停用在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**選項** 對話方塊。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C/c + +、 進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
 |[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。|  
 ||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。|  

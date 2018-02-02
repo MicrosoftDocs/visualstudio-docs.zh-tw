@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -147,37 +148,32 @@ ms.lasthandoff: 12/22/2017
 ### <a name="gpu-counters"></a>GPU 計數器  
  GPU 硬體計數器支援會因硬體而異。  
   
- 因為 Intel、AMD 或 nVidia 目前提供的電腦 GPU 無法可靠地支援 GPU 硬體計數器，所以畫面格分析不會收集其計數器。 不過，畫面格分析確實會從這些 GPU 收集能夠可靠支援它們的硬體計數器：  
+ 因為 Intel、AMD 或 nVidia 目前提供的電腦 GPU 無法可靠地支援 GPU 硬體計數器，所以畫面格分析不會收集其計數器。 不過，畫面格分析並收集來自下列的 GPU 可靠支援它們的硬體計數器：  
   
--   Qualcomm SOC (全部支援 Windows Phone)  
-  
--   nVidia T40 (Tegra4)。  
+-   nVidia T40 (Tegra4)
   
  支援畫面格分析的其他平台都不會收集 GPU 硬體計數器。  
   
 > [!NOTE]
 >  因為 GPU 硬體計數器是硬體資源，所以可能需要好幾個階段來為每個呈現變異收集一組完整的硬體計數器。 因此不會指定收集 GPU 計數器的順序。  
   
-### <a name="windows-phone"></a>Windows Phone  
- 最初隨附於 Windows Phone 8.1 或 Windows Phone 10 的 Windows Phone 話筒才支援時間戳記、 阻擋查詢和 GPU 硬體計數器。 畫面格分析需要它們，才能播放圖形記錄檔。 隨附 Windows Phone 8 的 Windows Phone 話筒不支援畫面格分析，即使已更新為 Windows Phone 8.1 或 Windows Phone 10 的話筒。  
-  
 ## <a name="unsupported-scenarios"></a>不支援的情節  
  畫面格分析的特定使用方式不受支援，或只是不好的主意。  
-  
-### <a name="warp"></a>WARP  
- 畫面格分析的目的是用來分析和改善實際硬體的呈現效能。 不禁止在 WARP 裝置上執行畫面格分析 (Windows Phone 模擬器是在 WARP 上執行)，但是通常不值得進行，原因是在高端 CPU 上執行的 WARP 會比功能最少的現代 GPU 慢，而且 WARP 效能可能會因為它在其上執行的特定 CPU 而大幅不同。  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>下層裝置上的高功能層級擷取播放  
  在圖形分析器中，如果您播放的圖形記錄檔所使用的功能層級高於播放電腦所支援的功能層級，則會自動回到 WARP。 在畫面格分析中，則明確地不會回到 WARP，且會產生錯誤；WARP 適用於檢查 Direct3D 應用程式的正確性，但不適用於檢查其效能。  
   
 > [!NOTE]
->  但是記住功能層級問題仍然十分重要，這使您可以在不同的硬體組態和裝置上，擷取和播放圖形記錄檔。 例如，您可以擷取 Windows Phone 上的圖形資訊，並在桌上型電腦上予以播放，反之亦然。 在這兩種情況下，只要記錄檔未包含 API 或未使用播放電腦不支援的功能層級，就可以播放圖形記錄。  
+>  但是記住功能層級問題仍然十分重要，這使您可以在不同的硬體組態和裝置上，擷取和播放圖形記錄檔。 可以只要記錄檔未包含 Api 或使用播放電腦不支援的功能層級來播放圖形記錄檔。  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 和以下版本  
  如果您的應用程式呼叫 Direct3D 10 API，則畫面格分析將無法辨識或分析它們，即使其他圖形分析器工具可以辨識到和使用它們也是一樣。
   
 > [!NOTE]
 >  這只適用於您正在使用的 Direct3D API 呼叫，而非功能層級。
+
+### <a name="warp"></a>WARP  
+ 畫面格分析的目的是用來分析和改善實際硬體的呈現效能。 不禁止在 WARP 裝置上執行畫面格分析，但通常不值得追求因為 CPU 上執行的 WARP 會比甚至支援最少的現代 Gpu 慢，而且 WARP 效能有極大差異的特定 CPU上正在執行。  
   
 ##  <a name="Variants"></a>變異  
  每個畫面格分析對畫面格呈現在播放期間的方式的變更稱為*variant*。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
@@ -185,9 +181,9 @@ ms.lasthandoff: 12/22/2017
 |變異|描述|  
 |-------------|-----------------|  
 |**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱[1x1 Viewport 大小變異](1x1-viewport-size-variant.md)|  
-|**0 msaa**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
-|**2 msaa**|啟用所有呈現目標上的 2x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
-|**4 msaa**|啟用所有呈現目標上的 4x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|啟用所有呈現目標上的 2x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|啟用所有呈現目標上的 4x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**點紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_POINT` (點紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**雙線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (雙線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**三線性紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (三線性紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  

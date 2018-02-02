@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.debug.remote.dcom_access_denied
+ms.topic: reference
+f1_keywords:
+- vs.debug.remote.dcom_access_denied
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +21,17 @@ helpviewer_keywords:
 - remote DCOM access denied error
 - DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e0d64aef8fd571032959eb8c3ea2e622a8233620
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a861d3af9ae02fbbfc4fac2b38cc76058c8a3caf
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：  

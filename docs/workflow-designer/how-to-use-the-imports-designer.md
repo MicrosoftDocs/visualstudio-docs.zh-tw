@@ -6,21 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Presentation.View.ImportDesigner.UI
+f1_keywords:
+- System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>HOW TO：使用匯入設計工具
-匯入設計工具可讓您輸入要用於運算式之型別的命名空間。 就像是**匯入**或**使用**關鍵字在 Visual Basic.NET 和 C# 中，匯入設計工具中指定命名空間可讓您只要在您的運算式，而非完整輸入型別名稱型別名稱。  
+匯入設計工具可讓您輸入要用於運算式之型別的命名空間。 就像是**匯入**或**使用**Visual Basic 和 C# 中，匯入設計工具中指定命名空間中的關鍵字可讓您只要在您的運算式，而非完整輸入型別名稱型別名稱。  
   
  匯入設計工具皆可與 UI 變更和儲存工作流程時所做的變更互動。 儲存工作流程時，會自動將命名空間加入匯入設計工具。 這些需求包括下列各項：  
   

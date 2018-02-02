@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - CA2121
 - StaticConstructorsShouldBePrivate
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f21f736baae082257b736c21057634a5a2b6b2ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 33770496c5d7585979d0be4198155982068957cf
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121：靜態建構函式應為私用
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>規則描述  
  靜態建構函式，也稱為類別建構函式，用來初始化型別。 系統會在建立類型的第一個執行個體或參考任何靜態成員之前呼叫靜態建構函式。 使用者已無法控制當呼叫靜態建構函式。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。  
   
- 此規則會強制執行的 C# 和 Visual Basic.NET 編譯器。  
+ 此規則會強制執行的 C# 和 Visual Basic 編譯器。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  通常被造成違規的下列動作之一：  

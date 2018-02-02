@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio 的 visual 語言字典
 Visual Studio 會使用通用 visual 語言說明是其遙控器和其他圖像的建置組塊的概念。 在設計新的圖示時，使用此字典來識別您想要傳遞自己的映像中的概念。  
@@ -448,7 +450,7 @@ Visual Studio 會使用通用 visual 語言說明是其遙控器和其他圖像�
 | **動作狀態： 暫停** | ![動作狀態： 暫停圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![伺服器已暫停圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />伺服器已暫停 |
 | **動作狀態： 正在播放，執行** | ![動作狀態： 播放中、 執行圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![伺服器已啟動圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />伺服器已啟動<br />![永不執行圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />從未執行 |
 | **動作狀態： 已停止** | ![動作狀態： 已停止圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![伺服器已停止圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />停止伺服器 |
-| **警示** | ![警示圖示](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![連結的資料表有錯誤 索引標籤提示圖示](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />使用 [錯誤] 索引標籤提示連結的資料表<br />![程式碼分析視窗圖示](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />程式碼分析視窗 |
+| **警示** | ![警示圖示](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![連結的資料表有錯誤 索引標籤提示圖示](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />使用 [錯誤] 索引標籤提示連結的資料表 |
 | **中斷點： 已停用進階** | ![中斷點： 進階已停用的圖示](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **中斷點： 進階已啟用**  |![中斷點： 已啟用進階圖示](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **中斷點： 繫結** | ![中斷點： 已繫結的圖示](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

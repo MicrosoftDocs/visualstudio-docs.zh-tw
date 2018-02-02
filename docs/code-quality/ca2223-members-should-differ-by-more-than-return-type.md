@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - CA2223
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5c8c0d70085f4f27dbaf26b412888415d9af666d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c72475c76a85216499a389d12f090ef302fc143
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223：成員不應該只有在傳回型別上不同
 |||  
@@ -46,7 +48,7 @@ ms.lasthandoff: 12/22/2017
  請勿隱藏此規則的警告。  
   
 ## <a name="example"></a>範例  
- 下列範例中，Microsoft intermediate language (MSIL)，顯示違反此規則的類型。 請注意，不能使用 C# 或 Visual Basic.NET 違反此規則。  
+ 下列範例中，Microsoft intermediate language (MSIL)，顯示違反此規則的類型。 請注意，不能使用 C# 或 Visual Basic 違反此規則。  
   
 ```  
   

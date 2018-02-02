@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>在 Visual Studio Enterprise 中偵錯時建立的視覺效果對應呼叫堆疊
 建立 code map 以視覺方式追蹤呼叫堆疊偵錯時。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
@@ -46,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Visual Studio 企業版](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   可以偵錯的程式碼，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++  
+-   您可以偵錯，例如 Visual C#、 Visual Basic、 c + +、 JavaScript 或 X + + 的程式碼  
 
 以下是快速查看 code map:
   
@@ -95,7 +98,7 @@ ms.lasthandoff: 12/22/2017
  ![使用下一個堆疊呼叫來更新程式碼對應](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>將相關程式碼加入至對應  
- 現在您已經有對應的什麼接下來？ 如果您使用 Visual C#.NET 或 Visual Basic.NET，加入項目，例如欄位、 屬性和其他方法，以追蹤程式碼中的情況。  
+ 現在您已經有對應的什麼接下來？ 如果您正在使用 Visual C# 或 Visual Basic 中，加入項目，例如欄位、 屬性和其他方法，以追蹤程式碼中的情況。  
   
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤： 選取的方法上的地圖和按**F12**)  
   

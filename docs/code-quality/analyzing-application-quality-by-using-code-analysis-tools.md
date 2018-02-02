@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.analysisresults
+f1_keywords:
+- vs.codeanalysis.analysisresults
 helpviewer_keywords:
 - application quality, analyzing
 - code analysis
 - team-based development, analyzing application quality
 ms.assetid: 21680516-ddb5-446d-90d4-19d94f6ec699
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4c07bfffff891e0dbe4ed77ada2682660c74b673
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>使用程式碼分析工具進行應用程式品質分析
 ## <a name="in-this-section"></a>本節內容  

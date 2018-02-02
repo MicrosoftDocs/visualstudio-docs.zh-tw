@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從程式碼中建立相依性圖表
-若要以視覺化方式檢視您的軟體系統高層級的邏輯架構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持一致與這個設計中，以驗證程式碼相依性圖表。 您可以建立適用於 Visual C#.NET 和 Visual Basic.NET 專案的相依性圖表。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![建立相依性圖表](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- 相依性圖表，可讓您將 Visual Studio 方案項目組織成邏輯的抽象群組稱為*層*。 您可以使用圖層來說明這些成品所執行的工作，或系統的主要元件。 每個圖層都可以包含其他圖層以描述更詳細的工作。 您也可以指定預定或現有*相依性*圖層之間。 這些表示為箭號的相依性，顯示哪些圖層可以使用或目前使用其他圖層代表的功能。 若要維持程式碼的架構控制，請在圖表上顯示預期的相依性，然後根據圖表驗證程式碼。  
-  
- [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>建立相依性圖表  
- 建立相依性圖表之前，請確定您的方案具有模型專案。 
-  
+
+若要以視覺化方式檢視您的軟體系統高層級的邏輯架構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持一致與這個設計中，以驗證程式碼相依性圖表。 您可以建立 Visual C# 和 Visual Basic 專案的相依性圖表。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+
+![建立相依性圖表](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+相依性圖表，可讓您將 Visual Studio 方案項目組織成邏輯的抽象群組稱為*層*。 您可以使用圖層來說明這些成品所執行的工作，或系統的主要元件。 每個圖層都可以包含其他圖層以描述更詳細的工作。 您也可以指定預定或現有*相依性*圖層之間。 這些表示為箭號的相依性，顯示哪些圖層可以使用或目前使用其他圖層代表的功能。 若要維持程式碼的架構控制，請在圖表上顯示預期的相依性，然後根據圖表驗證程式碼。
+
+[影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>建立相依性圖表
+
+建立相依性圖表之前，請確定您的方案具有模型專案。
+
 > [!IMPORTANT]
->  不要加入、 拖曳，或從模型專案複製現有的相依性圖表，另一個模型專案或方案中的另一個位置。 即使您變更圖表，此方式仍會保存原始圖表的參考。 這樣也會導致圖層驗證無法正確執行，同時可能會造成其他問題，例如項目遺失或嘗試開啟圖表時發生其他錯誤。  
->   
->  相反地，將新的相依性圖表加入至模型專案。 將來源圖表中的項目複製到新圖表。 儲存模型專案和新的相依性圖表。  
-  
+> 不要加入、 拖曳，或從模型專案複製現有的相依性圖表，另一個模型專案或方案中的另一個位置。 即使您變更圖表，此方式仍會保存原始圖表的參考。 這樣也會導致圖層驗證無法正確執行，同時可能會造成其他問題，例如項目遺失或嘗試開啟圖表時發生其他錯誤。
+>
+> 相反地，將新的相依性圖表加入至模型專案。 將來源圖表中的項目複製到新圖表。 儲存模型專案和新的相依性圖表。
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>若要將新的相依性圖表加入至模型專案  
   
 1.  在**架構**功能表上，選擇**新的相依性圖表**。  

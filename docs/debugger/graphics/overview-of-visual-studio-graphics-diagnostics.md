@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
-Visual Studio*圖形診斷*是一組的記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。  
+Visual Studio*圖形診斷*是一組的記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦或遠端電腦或裝置上本機執行的應用程式上。  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用圖形診斷偵錯轉譯問題  
  在具有豐富圖形的應用程式中偵錯轉譯問題，並不像啟動偵錯工具和逐步執行某些程式碼一樣簡單。 在每個框架中會根據狀態、資料、參數和程式碼的複雜來產生數十個唯一的像素，其中可能只有一些像素會出現您嘗試診斷的問題。 讓問題更複雜的情況是，產生各個像素的程式碼是在平行處理數百個像素的特殊硬體上執行。 傳統偵錯工具和技術 (即使在輕量的執行緒程式碼中也難以充分利用) 在面臨大量資料時的效果不佳。  
@@ -33,10 +33,7 @@ Visual Studio*圖形診斷*是一組的記錄並分析 Direct3D 應用程式中�
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 和 Direct3D 12  
  Windows 10 導入*Direct3D 12*，這是本質上與 Direct3D 10 和 Direct3D 11 不同。 這些差異讓 DirectX 回復為符合現代圖形硬體，並釋放其所有潛力，但也帶來大量 API 變更，並讓程式設計人員對管理資源存留期和競爭負有更大的責任。 儘管有所差異，具有 Direct3D 12 的圖形診斷還是會維護具有 Direct3D 11.2 之圖形診斷功能同位。
   
- Windows 10 也支援舊版 Direct3D 以及依賴它們的遊戲和應用程式。 在 Visual Studio 圖形診斷會繼續在 Windows 10 和 Windows 8.1 上支援 Direct3D 10 和 Direct3D 11。  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 和 Direct3D 11.2  
- 在 [!INCLUDE[win81](../includes/win81_md.md)] 中，DirectX 11.2 引進支援透過其執行階段擷取圖形資訊的新功能。 [!INCLUDE[win81](../includes/win81_md.md)]使用新的執行階段型擷取 — 稱為*穩固擷取*— 專用的所有版本的 DirectX，[!INCLUDE[win81](../includes/win81_md.md)]支援。 穩固擷取也支援 Direct3D 11.2 的新功能。  
+ Windows 10 也支援舊版 Direct3D 以及依賴它們的遊戲和應用程式。 在 Visual Studio 圖形診斷會繼續支援 Windows 10 上的 Direct3D 10 和 Direct3D 11。
   
 ### <a name="limited-direct2d-support"></a>有限的 Direct2D 支援  
  由於 Direct2D 是一個建置於 Direct3D 之上的使用者模式 API，您可以使用圖形診斷協助偵錯 Direct2D 應用程式中的呈現問題。 不過，由於只會記錄基礎 Direct3D 事件，而不會記錄較高層級的 Direct2D 事件，所以 Direct2D 事件不會出現在圖形事件清單。 此外，由於 Direct2D 事件與產生 Direct3D 事件之間的關聯性並不一定是明確的，因此對 Direct2D 應用程式使用圖形診斷並不簡單。 儘管如此，您可以使用圖形診斷取得那些使用 Direct2D 應用程式的低階轉譯問題的資訊。  

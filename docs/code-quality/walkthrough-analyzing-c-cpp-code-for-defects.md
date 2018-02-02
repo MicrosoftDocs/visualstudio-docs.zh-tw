@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 本逐步解說示範如何使用 C/c + + 程式碼的程式碼分析工具分析 C/c + + 程式碼有潛在的程式碼缺失。  
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="prerequisites"></a>必要條件  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。  
   
 -   一份[示範範例](../code-quality/demo-sample.md)。  
   
@@ -85,9 +87,9 @@ ms.lasthandoff: 12/22/2017
   
 3.  使用 SUCCEEDED 巨集，以更正這個警告。 您的程式碼應該類似下列程式碼：  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  在**錯誤清單**，按兩下下列警告：  
   
@@ -95,17 +97,17 @@ ms.lasthandoff: 12/22/2017
   
 5.  更正這個警告，藉由測試相等。 您的程式碼看起來應該類似下列程式碼：  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>若要將警告視為錯誤  
   
 1.  在 Bug.cpp 檔案中，加入下列`#pragma`要視為錯誤的警告 C6001 檔案開頭的陳述式：  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  重建 CodeDefects 專案。  
   
@@ -141,17 +143,14 @@ ms.lasthandoff: 12/22/2017
   
 8.  若要修正這個警告，使用的 'if' 陳述式測試傳回的值。 您的程式碼應該類似下列程式碼：  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. 重建專案註解。  
   
@@ -161,15 +160,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  標註型式參數和傳回值的函式`AddTail`使用前置和後置條件，在此範例所示：  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  重建註釋的專案。  
   
@@ -181,19 +178,21 @@ ms.lasthandoff: 12/22/2017
   
 4.  若要修正這個警告，使用的 'if' 陳述式測試傳回的值。 您的程式碼應該類似下列程式碼：  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  重建註釋的專案。  
   
      專案建置時沒有任何警告或錯誤訊息。  
   
-## <a name="see-also"></a>請參閱  
- [逐步解說：分析 Managed 程式碼中的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>另請參閱
+
+[逐步解說：分析 Managed 程式碼中的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[C/c + + 程式碼分析](../code-quality/code-analysis-for-c-cpp-overview.md)
