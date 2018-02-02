@@ -84,6 +84,7 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
+        "live-sxs": "live",
         "master": "master"
       }
     },
