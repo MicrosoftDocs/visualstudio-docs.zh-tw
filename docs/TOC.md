@@ -39,6 +39,7 @@
 ### 參考資料
 #### [Visual Studio 工作負載與元件識別碼](install/workload-and-component-ids.md)
 #### [Visual Studio 組建編號和發行日期](install/visual-studio-build-numbers-and-release-dates.md)
+## [從 Azure 虛擬機器使用 Visual Studio](install/using-visual-studio-vm.md)
 ## [將建置工具安裝至容器](install/build-tools-container.md)
 ### [容器的進階範例](install/advanced-build-tools-container.md)
 ### [容器的已知問題](install/build-tools-container-issues.md)
