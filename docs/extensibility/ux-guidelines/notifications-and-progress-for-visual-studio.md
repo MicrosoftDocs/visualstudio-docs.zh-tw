@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和 Visual Studio 的進度
 ##  <a name="BKMK_NotificationSystems"></a>通知系統  
@@ -101,14 +103,14 @@ ms.lasthandoff: 12/22/2017
   
  [通知] 視窗不是目前可延伸的。  
   
- ![Visual Studio 通知視窗](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901年 06_VSNotificationsWindow")  
+ ![Visual Studio Notifications window](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901-06_VSNotificationsWindow")  
   
  **Visual Studio 通知工具視窗**  
   
 ####  <a name="BKMK_ErrorList"></a>錯誤清單  
  錯誤清單中的通知會指出錯誤和警告發生在編譯期間，或建置程序，並可讓使用者瀏覽至該特定程式碼錯誤的程式碼中。  
   
- ![錯誤清單](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901年 08_ErrorList")  
+ ![Error list](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")  
   
  **在 Visual Studio 中的錯誤清單**  
   
@@ -238,8 +240,6 @@ ms.lasthandoff: 12/22/2017
   
  ![在視窗內的資訊列](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903年 06_InfoBarInWindow")  
   
- **[程式碼分析] 視窗內的資訊列**  
-  
 ##### <a name="inline"></a>內嵌  
  內嵌進度指示可以透過任何進度載入器型別表示。 進度列指示器通常搭配訊息，但這並非必要條件。  
   
@@ -292,7 +292,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>總覽  
  資訊列授與使用者靠近注意其位置的指標，並使用共用的資訊列控制項，以確保一致的視覺外觀和互動。  
   
- ![資訊列](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904年 01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **在 Visual Studio 中的資訊列**  
   
@@ -488,7 +488,7 @@ public interface IVsInfoBarUIEvents
   
  ![欄位驗證來搭配 [必要] 標籤](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905年 02_FieldValidationRequired")  
   
- 程式可以判斷控制項是否處於的狀態為*輸入無效的內容*當焦點移到另一個控制項，或當使用者按一下 [確定] 認可按鈕，或當使用者儲存文件或表單。  
+ 程式可以判斷控制項是否處於的狀態為*輸入無效的內容*當焦點移到另一個控制項，或當使用者按一下 [確定] 認可 按鈕，或當使用者儲存文件或表單。  
   
  決定無效的內容狀態後，在控制項內，或只旁邊會出現一個圖示。 描述錯誤的工具提示應該會出現暫留時顯示的圖示或控制項。 此外，用來建立無效的狀態控制項周圍的 1 像素框線應該會出現。  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>浮水印  
  有時整個控制項或視窗會處於錯誤狀態。 在此情況下，使用浮水印以指出錯誤。  
   
- ![浮水印](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905年 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **浮水印欄位驗證**
