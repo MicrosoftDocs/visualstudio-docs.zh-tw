@@ -1,5 +1,5 @@
 # [部署文件](index.md)
-# 概觀
+# 總覽
 ## [部署概觀](deploying-applications-services-and-components.md)
 # 快速入門
 ## [部署到本機資料夾](quickstart-deploy-to-local-folder.md)
@@ -24,7 +24,7 @@
 ## Node.js
 ### [使用 Web Deploy 發行到 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [發佈至 Azure App Service](/visualstudio/python/publishing-to-azure)
+### [發佈至 Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # 作法指南
 ## [ClickOnce 安全性和部署](clickonce-security-and-deployment.md)
 ### [選擇 ClickOnce 部署策略](choosing-a-clickonce-deployment-strategy.md)

@@ -1,5 +1,6 @@
 # [Visual Studio 文件](ide/index.md)
 # [概觀](ide/visual-studio-ide.md)
+## [新功能](ide/whats-new-in-visual-studio.md)
 # 安裝
 ## [安裝 Visual Studio](install/install-visual-studio.md)
 ## [登入 Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [全域 Windows Forms 和 Web Forms 的文化特性特定類別](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [使用雙向語言建立應用程式](ide/creating-applications-in-bi-directional-languages.md)
 # 參考資料
-## [新功能](ide/whats-new-in-visual-studio.md)
-### 專案與項目範本
+## 專案與項目範本
 ### [範本參數](ide/template-parameters.md)
 ### [範本結構描述參考 (擴充性)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## 一般使用者介面項目
