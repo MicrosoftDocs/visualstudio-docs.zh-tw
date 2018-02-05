@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a5a8aeec2421b92057ba414b5cf23b1770b1f761
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 您可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。  
@@ -96,7 +96,7 @@ ms.lasthandoff: 02/01/2018
   
 ##### <a name="to-capture-graphics-information"></a>擷取圖形資訊  
   
--   若要開始擷取圖形資訊，請使用 `BeginCapture`：  
+- 若要開始擷取圖形資訊，請使用 `BeginCapture`：  
   
     ```  
     ...  
@@ -111,6 +111,8 @@ ms.lasthandoff: 02/01/2018
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
+
+- 若要在呼叫之後`EndCapture`，釋出的圖形物件。 
   
 ## <a name="next-steps"></a>後續步驟  
  此逐步解說示範如何透過程式設計方式擷取圖形資訊。 下一步是考慮此選項：  

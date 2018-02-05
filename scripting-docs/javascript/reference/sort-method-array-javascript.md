@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort 方法 (陣列) (JavaScript)
 排序`Array`。  
@@ -37,10 +38,10 @@ arrayobj.sort(sortFunction)
   
 ## <a name="parameters"></a>參數  
  `arrayObj`  
- 必要項。 任何 `Array` 物件。  
+ 必要。 任何 `Array` 物件。  
   
  `sortFunction`  
- 選擇項。 用來判斷項目的順序的函數名稱。 如果省略，則元素以遞增，ASCII 字元順序排序。  
+ 選擇性。 用來判斷項目的順序的函數名稱。 如果省略，則元素以遞增，ASCII 字元順序排序。  
   
 ## <a name="return-value"></a>傳回值  
  已排序的陣列。  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>備註  
  `sort`方法來排序`Array`就地物件; 否新`Array`執行期間建立物件。  
   
- 如果您提供的函式`sortFunction`引數，它必須傳回下列值之一：  
+ `sortFunction`會採用兩個引數，而且必須傳回下列值之一：  
   
--   如果傳遞的第一個引數是一個負數值小於第二個引數。  
+-   負值 （小於 0） 的第一個引數傳遞是否小於第二個引數比。  較低的索引來排序第一個引數。
   
--   如果是相等的兩個引數為零。  
+-   零 (0) (如果是相等的兩個引數。  兩個引數排序相對於陣列中其他項目，但不是會相對於其他排序。
   
--   如果第一個引數大於第二個引數的正數值。  
+-   （大於 0） 的第一個引數是否大於第二個引數的正數值。  第二個引數排序較低的索引。
   
 ## <a name="example"></a>範例  
  下列範例會示範如何使用 `sort` 方法。  
