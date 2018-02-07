@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 |ShowAllMembers|Get/Set (布林值)|決定偵錯工具是否針對非使用者物件，在 [變數] 視窗中顯示所有物件成員。 除非啟用 Just My Code，否則此選項沒有任何作用。|  
 |WarnIfNoUserCode|Get/Set (布林值)|決定當使用者嘗試附加至沒有使用者程式碼的處理程序時，偵錯工具是否發出警告。 除非啟用 Just My Code，否則此選項沒有任何作用。|  
 |EnablePropertyEvaluation|Get/Set (布林值)|決定偵錯工具是否自動評估 Managed 程式碼中的屬性和隱含函式呼叫。|  
-|CallStringConversion|Get/Set (布林值)|決定偵錯工具是否對 [變數] 視窗中的物件隱含呼叫字串轉換函式。 此選項僅適用於 C# 和 JScript 程式碼。|  
+|CallStringConversion|Get/Set (布林值)|決定偵錯工具是否對 [變數] 視窗中的物件隱含呼叫字串轉換函式。|  
 |EnableSourceServer|Get/Set (布林值)|決定偵錯工具是否可存取來源伺服器的程式碼。|  
 |PrintSourceServerDiagnostics|Get/Set (布林值)|決定 [輸出] 視窗是否顯示與來源伺服器相關的診斷訊息。 除非啟用來源伺服器存取，否則此選項沒有任何作用。|  
 |HighlightEntireLine|Get/Set (布林值)|決定偵錯工具是否反白顯示中斷點整行和目前的陳述式。|  

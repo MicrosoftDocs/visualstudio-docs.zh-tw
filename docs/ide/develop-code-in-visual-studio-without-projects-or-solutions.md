@@ -5,12 +5,7 @@ ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
@@ -18,12 +13,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.workload:
+- multiple
+ms.openlocfilehash: 40995be9ee5d5da5a3219dd8badcb13e4b3f6e62
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 

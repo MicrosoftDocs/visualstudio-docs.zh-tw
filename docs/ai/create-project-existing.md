@@ -1,6 +1,6 @@
 # <a name="create-an-ai-project-from-existing-code"></a>從現有程式碼建立 AI 專案
 
-在[安裝適用於 AI 的 Visual Studio Tools](installation.md) 之後，您就可以輕鬆的將現有的 Python 程式碼帶入 Visual Studio 專案中。 
+在[安裝適用於 AI 的 Visual Studio Tools](installation.md) 之後，您就可以輕鬆的將現有的 Python 程式碼帶入 Visual Studio 專案中。
 
 > [!Important]
 >
@@ -14,18 +14,17 @@
 
 1. 在出現的精靈中，設定您現有程式碼的路徑、設定檔案類型的篩選條件，並指定您專案所需的任何搜尋路徑，然後選取 [確定]。 如果您不知道搜尋路徑為何，請將該欄位留白。
 
-
 ![從現有程式碼新增專案 - 步驟 2](media\create-project-existing\azurebatch-newproject.png)
 
 > 若您現有的程式碼是 Azure Machine Learning 專案的一部分，請勾選 [Is Azure Machine Learning folder] (此為 Azure Machine Learning 資料夾) 以確保重要的 Azure Machine Learning 設定詳細資料，例如要使用的實驗帳戶、工作區及計算內容等可成功轉換。
 
 1. 若要設定啟動檔案，請在方案總管中找到檔案，並按一下滑鼠右鍵，然後選取 [設定為啟動檔案]。
 
-8. 如有需要，請按 Ctrl+F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
+1. 如有需要，請按 Ctrl+F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。
 
 > [!div class="nextstepaction"]
 > [教學課程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>請參閱
 
-- [建立現有 Python 解譯器的環境](https://docs.microsoft.com/visualstudio/python/python-environments#creating-an-environment-for-an-existing-interpreter)
+- [建立現有 Python 解譯器的環境](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)

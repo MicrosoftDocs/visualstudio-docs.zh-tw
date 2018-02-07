@@ -1,24 +1,21 @@
 ---
 title: "Visual Studio 測試工具 | Microsoft Docs"
-ms.custom: na
-ms.date: 02/17/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/31/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ad98bfedbccabd5b02059151ce3a5c510fecd83b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 

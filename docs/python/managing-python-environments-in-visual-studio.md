@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Python 環境
 
@@ -123,7 +123,7 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 | --- | --- |
 | 將此環境設為新專案的預設值 | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
 | 前往散發者的網站 | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
-| 開啟互動式視窗 | 在 Visual Studio 內開啟此環境的[互動式 (REPL) 視窗](interactive-repl.md)，並套用任何[啟動指令碼 (請參閱下面)](#startup-scripts)。 |
+| 開啟互動式視窗 | 在 Visual Studio 內開啟此環境的[互動式 (REPL) 視窗](python-interactive-repl-in-visual-studio.md)，並套用任何[啟動指令碼 (請參閱下面)](#startup-scripts)。 |
 | 探索互動式指令碼 | 請參閱[啟動指令碼](#startup-scripts)。 |
 | 使用 IPython 互動模式 | 設定時，預設會開啟 IPython 的互動式視窗。 此已啟用的內嵌繪圖和擴充的 IPython 語法，例如 `name?` 檢視說明，而 `!command` 適用於殼層命令。 使用需要額外套件的 Anaconda 發佈時，建議使用此選項。 如需詳細資訊，請參閱[在互動式視窗中使用 IPython](interactive-repl-ipython.md)。 |
 | 在 PowerShell 中開啟 | 在 PowerShell 命令視窗中啟動解譯器。 |
@@ -137,7 +137,7 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 
 1. 當您安裝環境時，Visual Studio 會建立資料夾 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment&gt' 符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的互動式視窗時，只要依字母順序在這裡找到 `.py` 檔案，就會載入並執行互動式視窗。
 
-1. [工具] > [選項] > [Python 工具] > [互動式視窗] 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](options.md#interactive-windows-options)) 是用來指定所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
+1. [工具] > [選項] > [Python 工具] > [互動式視窗] 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
 ### <a name="configure-tab"></a>Configure (設定) 索引標籤
 
@@ -172,7 +172,7 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 
 選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。
 
-在這個相同的選項索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](options.md#general-options)。
+在這個相同的選項索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](python-support-options-and-settings-in-visual-studio.md#general-options)。
 
 ### <a name="intellisense-tab"></a>IntelliSense 索引標籤
 
@@ -232,7 +232,7 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 
 ## <a name="managing-required-packages-requirementstxt"></a>管理必要套件 (requirements.txt)
 
-如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](template-azure-cloud-service.md)，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
+如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](python-azure-cloud-service-project-template.md)，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (藉由在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 `requirements.txt` 提供了專屬支援：
 

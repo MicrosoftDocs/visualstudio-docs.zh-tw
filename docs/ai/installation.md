@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>安裝
 
@@ -117,7 +118,7 @@ Python 一直是深度學習應用程式的主要程式設計語言。
 ### <a name="python-on-visual-studio"></a>Visual Studio 上的 Python
 
 Visual Studio 透過延伸模組來完全支援 Python。
-如需詳細資訊，請深入了解如何安裝[適用於 Visual Studio 的 Python 工具](https://docs.microsoft.com/visualstudio/python/installation)。
+如需詳細資訊，請深入了解如何安裝[適用於 Visual Studio 的 Python 工具](../python/installing-python-support-in-visual-studio.md)。
 
 ### <a name="numpy-and-scipy"></a>NumPy 和 SciPy
 

@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 01/22/2018
 
 1. 在 Visual Studio 中建立新的 Python 專案，方法是選取 [檔案] > [新增] > [專案]。 搜尋 Python、選取 [Python 應用程式] 範本、提供適合的名稱和位置，並選取 [確定]。
 
-1. 在專案的 `.py` 檔案中，貼上下列程式碼，以為雙曲線正切函數的計算進行基準測試 (實作時不使用數學程式庫，以方便比較)。 您可以隨意以手動方式輸入程式碼，來體驗一些 [Python 編輯功能](code-editing.md)。
+1. 在專案的 `.py` 檔案中，貼上下列程式碼，以為雙曲線正切函數的計算進行基準測試 (實作時不使用數學程式庫，以方便比較)。 您可以隨意以手動方式輸入程式碼，來體驗一些 [Python 編輯功能](editing-python-code-in-visual-studio.md)。
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。
 
     ![在 C++ 程式碼的中斷點處停止](media/cpp-debugging.png)
 
-1. 此時您可以逐步執行 C++ 程式碼、檢查變數等等。 [同時偵錯 Python 和 C++ 程式碼](debugging-mixed-mode.md)中有詳述這些功能。
+1. 此時您可以逐步執行 C++ 程式碼、檢查變數等等。 [同時偵錯 Python 和 C++ 程式碼](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)中有詳述這些功能。
 
 ## <a name="alternative-approaches"></a>替代方法
 

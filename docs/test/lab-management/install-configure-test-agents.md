@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>安裝和設定測試代理程式
 
@@ -81,7 +83,7 @@ ms.lasthandoff: 01/09/2018
 | Agents for Visual Studio 2013 所支援的案例 | TFS 和 TS 中的替代方案 |
 | --- | --- |
 | Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建定義](https://www.visualstudio.com/team-services/continuous-integration/) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
-| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller/Test Agents 2013 Update 5 在內部部署執行負載測試。 [詳細資訊](https://msdn.microsoft.com/en-us/library/ff400223.aspx)。 |
+| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller/Test Agents 2013 Update 5 在內部部署執行負載測試。 [詳細資訊](https://msdn.microsoft.com/library/ff400223.aspx)。 |
 | 使用實驗室環境從 Microsoft Test Manager 進行的自動化測試遠端執行 | 此案例目前沒有替代方案。 建議您在組建和發行定義 (而非 XAML 組建) 中使用「執行功能測試」工作，以從遠端執行測試。 |
 | 在 Visual Studio 中執行遠端測試的開發人員 | 不再受支援。 |
 

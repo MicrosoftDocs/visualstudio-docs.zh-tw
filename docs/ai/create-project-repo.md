@@ -34,7 +34,7 @@
 
     ![Pytho MNIST 程式的第一次輸出結果](media\create-project-repo\tensorflow-mnist-running.png)
 
-> 若您使用的是 Anaconda 並收到了一個錯誤訊息，告知您關於遺漏的 numpy，您可能需要[變更您的 Python 環境，將其設為使用 Anaconda](https://docs.microsoft.com/visualstudio/python/python-environments) 
+> 若您使用的是 Anaconda 並收到了一個錯誤訊息，告知您關於遺漏的 numpy，您可能需要[變更您的 Python 環境，將其設為使用 Anaconda](../python/managing-python-environments-in-visual-studio.md)
 
 11. 您可以使用 TensorBoard 來視覺化進度。 以滑鼠右鍵按一下您的專案，按一下 [Run TensorBoard] (執行 TensorBoard)，然後選取您輸出 TensorBoard 記錄檔的目錄。
 

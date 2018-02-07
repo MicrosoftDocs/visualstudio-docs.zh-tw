@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="securing-applications"></a>設定應用程式的安全性
 雖然大部分的應用程式都有共通的安全性挑戰，但每個應用程式定義域擁有自己的安全性挑戰。  
@@ -31,19 +33,19 @@ ms.lasthandoff: 12/22/2017
  [安全性最佳做法](/cpp/top/security-best-practices-for-cpp)  
  在 Visual C++ 中工作時，提供資訊的安全性功能和可用的做法。  
   
- [安全性和程式設計 (C# 和 Visual Basic)](https://msdn.microsoft.com/en-us/library/ms233782(v=vs.100).aspx)  
+ [安全性和程式設計 (C# 和 Visual Basic)](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx)  
  提供適用於 Visual Basic 和 C# 開發人員最重要的三個安全性考量之相關資訊：權限、網路應用程式和 Visual Studio 安裝程式。  
   
 ## <a name="securing-mobile-applications"></a>保護行動裝置應用程式  
  隨著行動裝置的熱門程度增加，這些裝置上的資訊和資料之安全性日趨重要。  
   
- [裝置的安全性考量](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
+ [裝置的安全性考量](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87)  
  描述幾個影響裝置安全性原則的因素。  
   
- [.NET Compact Framework 的安全性目標](http://msdn.microsoft.com/en-us/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
+ [.NET Compact Framework 的安全性目標](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
  描述.NET Compact Framework 安全性的目標。  
   
- [設計安全的 Mobile Web 表單網頁](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
+ [設計安全的 Mobile Web 表單網頁](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f)  
  討論規劃、實作和支援無線網路與行動裝置的安全性。  
   
 ## <a name="securing-web-applications"></a>偵錯網路應用程式  
@@ -55,10 +57,7 @@ ms.lasthandoff: 12/22/2017
  [ASP.NET Web 應用程式安全性](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8)  
  詳細說明如何解決在 ASP.NET 中的授權和驗證問題。  
   
- [JScript 的安全性考量](http://msdn.microsoft.com/en-us/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
- 詳細說明 JScript 程式設計人員可能會遇到的一些安全性陷阱。  
-  
- [如何：使用傳輸安全性](http://msdn.microsoft.com/en-us/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [如何：使用傳輸安全性](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  描述當您連接到 WCF 服務時，如何使用傳輸安全性進行驗證。  
   
 ## <a name="securing-desktop-applications"></a>部署桌面應用程式  
