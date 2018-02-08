@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
-類別設計工具支援 C++ 類別，並以視覺化 Visual Basic 和 Visual C# 類別圖形的方式來視覺化原生 C++ 類別，差異在於 C++ 類別可以有多重繼承關聯性。 您可以展開類別圖形，以顯示類別中的更多欄位和方法，或將它摺疊以節省空間。  
+類別設計工具支援 C++ 類別，並以視覺化 Visual Basic 和 C# 類別圖形的方式來視覺化原生 C++ 類別，差異在於 C++ 類別可以有多重繼承關聯性。 您可以展開類別圖形，以顯示類別中的更多欄位和方法，或將它摺疊以節省空間。  
   
 > [!NOTE]
 >  類別設計工具不支援等位 (配置的記憶體僅足以供等位的最大資料成員使用之類別的特殊類型)。  
@@ -53,7 +57,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  [顯示衍生類別] 命令不支援用於 C++ 程式碼。 您可以移至 [類別檢視]、展開類型節點、展開 [衍生類型] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。  
   
-如需多重類別繼承的詳細資訊，請參閱[多重繼承](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)和[多重基底類別](/cpp/cpp/multiple-base-classes)。  
+如需多重類別繼承的詳細資訊，請參閱[多重繼承](https://msdn.microsoft.com/library/6td5yws2.aspx)和[多重基底類別](/cpp/cpp/multiple-base-classes)。  
   
 ## <a name="abstract-classes"></a>抽象類別  
 類別設計工具支援抽象類別 (也稱為「抽象基底類別」)。 這些是您永遠不會具現化的類別，而是從中衍生其他類別的類別。 使用本文件稍早＜多重繼承＞中的範例，您可能會將 `Bird` 類別具現化為個別物件，如下所示︰  
@@ -166,11 +170,12 @@ typedef struct
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 類別<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 類別<br /><br /> `C<T>`<br /><br /> 範本類別<br /><br /> `D`<br /><br /> 類別<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
-  
+
 ## <a name="see-also"></a>另請參閱
-[使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)   
-[類別和結構](/cpp/cpp/classes-and-structs-cpp)   
-[匿名類別類型](/cpp/cpp/anonymous-class-types)   
-[多重繼承](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[多重基底類別](/cpp/cpp/multiple-base-classes)   
+
+[使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)  
+[類別和結構](/cpp/cpp/classes-and-structs-cpp)  
+[匿名類別類型](/cpp/cpp/anonymous-class-types)  
+[多重繼承](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[多重基底類別](/cpp/cpp/multiple-base-classes)  
 [範本](/cpp/cpp/templates-cpp)

@@ -11,17 +11,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
+
 這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
   
 -   建立 app.config 檔案。  
@@ -35,7 +37,7 @@ ms.lasthandoff: 01/09/2018
 -   使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要完成這個逐步解說，您將需要：  
+ 若要完成這個逐步解說，您需要：  
   
 -   Visual Studio 企業版  
   
@@ -148,20 +150,20 @@ ms.lasthandoff: 01/09/2018
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- `microsoft.visualstudio.testtools` 項目應該看起來像這樣：  
-  
-```  
+`microsoft.visualstudio.testtools` 項目應該看起來像這樣：
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- 最終的 app.config 檔案看起來應該像這樣：  
-  
-```  
+```
+
+最終的 app.config 檔案看起來應該像這樣：
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +219,11 @@ ms.lasthandoff: 01/09/2018
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>若要使用 app.config 中所定義的資料來源建立單元測試  
   
-1.  在測試專案中加入單元測試。  
-  
-     如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)。  
+1.  在測試專案中加入單元測試。
   
 2.  以下列程式碼取代自動產生的單元測試內容：  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +264,11 @@ ms.lasthandoff: 01/09/2018
 3.  檢查 DataSource 屬性。 請注意 app.config 檔案的設定名稱。  
   
 4.  建置您的方案，然後執行 MyTestMethod 和 MyTestMethod2 測試。  
-  
+
 > [!IMPORTANT]
->  部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。  
-  
+> 部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。
+
 ## <a name="see-also"></a>請參閱
 
 [對程式碼進行單元測試](../test/unit-test-your-code.md)  
-[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)

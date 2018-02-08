@@ -1,5 +1,5 @@
 ---
-title: Visual C# IntelliSense | Microsoft Docs
+title: C# IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-在編輯器中撰寫程式碼，以及在 [[即時模式]](../ide/reference/immediate-window.md) 命令視窗中偵錯時，有 Visual C# IntelliSense 可供使用。
+在編輯器中撰寫程式碼，以及在 [[即時模式]](../ide/reference/immediate-window.md) 命令視窗中偵錯時，有 C# IntelliSense 可供使用。
 
 ## <a name="completion-lists"></a>自動完成清單
 
-Visual C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字等的語彙基元。 它可以讓您快速存取：
+C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字等的語彙基元。 它可以讓您快速存取：
 
 - 類型或命名空間的成員
 
@@ -42,15 +43,15 @@ C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元�
 
 ## <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段
 
-Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。 如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。
+C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。 如需 C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [C# 程式碼片段清單](../ide/visual-csharp-code-snippets.md)。
 
 ## <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字
 
-Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](/dotnet/csharp/language-reference/keywords/index)。
+C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](/dotnet/csharp/language-reference/keywords/index)。
 
 ## <a name="extension-methods-in-completion-lists"></a>完成清單中的擴充方法
 
-Visual C# 的完成清單包含範圍內的擴充方法。
+C# 的完成清單包含範圍內的擴充方法。
 
 > [!NOTE]
 > 完成清單不會顯示 <xref:System.String> 物件的所有擴充方法 。
@@ -59,9 +60,9 @@ Visual C# 的完成清單包含範圍內的擴充方法。
 
 ## <a name="filtered-completion-lists"></a>篩選後的完成清單
 
-IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。 Visual C# 會篩選針對下列項目所顯示的完成清單：
+IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。 C# 會篩選針對下列項目所顯示的完成清單：
 
-- **介面與基底類別**：在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。
+- **介面與基底類別**：在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。
 
 - **屬性**：當您將屬性套用至類型時，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。
 

@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
-顯示您可以新增至 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 設計工具的元件。 除了 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 隨附的 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。如需詳細資訊，請參閱[如何：操作工具箱索引標籤](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+
+顯示您可以新增至 Visual Basic 和 C# 設計工具的元件。 除了 Visual Studio隨附的 .NET Framework 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。
   
  若要顯示這個索引標籤，請從 [檢視] 功能表中選取 [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。  
   

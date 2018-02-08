@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.diagram
+f1_keywords:
+- vs.classdesigner.diagram
 helpviewer_keywords:
 - Class Designer [Visual Studio]
 - Class Designer, about Class Designer
@@ -15,19 +17,20 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d589c4f9fabefbc141d96b233c55a1fd9fc10eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3c3a3de1126eec1d20603257463fecc6ab59eaa8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>設計和檢視類別與類型
-在 Visual Studio 中，使用類別設計工具來設計、視覺化及重構程式碼中的類別和其他類型。 使用類別圖表來建立和編輯 Visual C# .NET、Visual Basic .NET 或 C++ 專案中的類別、進一步了解您的專案結構，或重新組織您的程式碼。  
+在 Visual Studio 中，使用類別設計工具來設計、視覺化及重構程式碼中的類別和其他類型。 使用類別圖表來建立和編輯 C#、Visual Basic 或 C++ 專案中的類別、進一步了解您的專案結構，或重新組織您的程式碼。  
   
  以下是您可以使用類別圖表來執行之工作的相關資訊：  
   

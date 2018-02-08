@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords: Class Designer [Visual Studio], typedefs
+helpviewer_keywords:
+- Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96d7e8cee6ce024040184aca50b5f5cb6facf388
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 typedef 陳述式會在名稱與其基礎類型之間建立一或多層間接取值。 類別設計工具支援 C++ typedef 類型，其使用 `typedef` 關鍵字所宣告，例如：  
@@ -48,10 +51,10 @@ typedef class coord
    unsigned x;  
    unsigned y;  
 };  
-```  
-  
-如需使用 `typedef` 類型的詳細資訊，請參閱 [typedef 指定名稱](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)。  
-  
+```
+
+如需使用 `typedef` 型別的詳細資訊，請參閱 [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)。
+
 C++ typedef 圖形具有 typedef 中所指定類型的圖形。 例如，如果來源宣告 `typedef class`，則圖形具有圓角和標籤 **Class**。 針對 `typedef struct`，圖形會有方角和標籤「結構」。  
   
 類別和結構其內可以宣告巢狀 typedef；因此，類別和結構圖形可以將巢狀 typedef 宣告顯示為巢狀圖形。  
@@ -201,5 +204,6 @@ typedef
 -> MyIntVect  
   
 ## <a name="see-also"></a>另請參閱
-[使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)   
-[typedef 指定名稱](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)
+
+[使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)  
+[Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)

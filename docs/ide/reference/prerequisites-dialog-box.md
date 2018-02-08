@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 01/22/2018
 
 |元素|描述|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5] 的 Visual Basic 和 Visual C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 Visual C# 專案，都需要 .NET Framework 3.5  (不支援 IA64)。請注意，根據預設，Visual Basic 和 Visual C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)、[轉散發 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) 和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|
+|**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5] 的 Visual Basic 和 C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 C# 專案，都需要 .NET Framework 3.5。 (不支援 IA64)。請注意，根據預設，Visual Basic 和 C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|
 |**Microsoft .NET Framework 4.x**|這個套件會在 x86 和 x64 平台安裝 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此套件會安裝適用於 x64 或 x86 SQL Server 2014 的 Microsoft System CLR Types。|
 |**SQL Server 2008 R2 Express**|此套件會安裝 Microsoft SQL Server 2008 R2 Express (Microsoft SQL Server 2008 R2 的免費版本)，這是適用於小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 R2 Express 時，必須要有免費的[註冊](http://go.microsoft.com/fwlink/?LinkId=130380)。|
@@ -60,6 +60,5 @@ ms.lasthandoff: 01/22/2018
 
 [專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)  
 [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)  
-[轉散發 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)

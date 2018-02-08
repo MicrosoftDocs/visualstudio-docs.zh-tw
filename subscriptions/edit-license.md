@@ -1,5 +1,5 @@
 ---
-title: "在系統管理員入口網站編輯訂用帳戶 | Visual Studio Marketplace"
+title: "在管理入口網站編輯訂用帳戶 | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 
@@ -29,13 +29,15 @@ ms.lasthandoff: 12/01/2017
 
    ![編輯訂閱者詳細資料](_img\edit-license\edit-subscriber.png)
 
-注意：如果需要變更訂閱者的訂用帳戶層級，您必須從入口網站刪除使用者，然後再次新增他們。 訂用帳戶層級不可編輯。
+> [!NOTE]
+> 如果需要變更訂閱者的訂用帳戶層級，您必須從入口網站刪除使用者，然後再次新增他們。 訂用帳戶層級不可編輯。
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>使用大量編輯編輯多名訂閱者
 
 您可以使用大量編輯程序一次編輯多名訂閱者。 這項功能主要用於公司電子郵件地址變更過的組織，或已決定限制下載存取的組織。 
 
-**重要事項：**訂用帳戶層級 (即 Enterprise、Professional 等等) 和訂用帳戶 GUID 皆無法變更。  如果嘗試上傳這些變更的項目，上傳作業會失敗。  
+> [!IMPORTANT]
+> 訂用帳戶層級 (即 Enterprise、Professional 等等) 和訂用帳戶 GUID 皆無法變更。  如果嘗試上傳這些變更的項目，上傳作業會失敗。  
 
 1.  若要一次編輯多名訂閱者，請巡覽 [訂閱者] 索引標籤。在上方功能區中，按一下 [大量編輯]。 
 

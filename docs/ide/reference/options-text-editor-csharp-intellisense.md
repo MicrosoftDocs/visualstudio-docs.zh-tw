@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,19 +18,20 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 322ae48b1ded8dfef7e25a80937da957e50f756f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
-使用 [IntelliSense] 屬性頁修改影響 Visual C# 之 IntelliSense 行為的設定。 您可以存取 [IntelliSense] 屬性頁，方法是按一下 [工具] 功能表上的 [選項]，並按一下 [文字編輯器] 資料夾中的 [C#]，然後按一下 [IntelliSense]。  
+使用 [IntelliSense] 屬性頁修改影響 C# 之 IntelliSense 行為的設定。 您可以存取 [IntelliSense] 屬性頁，方法是按一下 [工具] 功能表上的 [選項]，並按一下 [文字編輯器] 資料夾中的 [C#]，然後按一下 [IntelliSense]。  
   
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
@@ -44,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  選取這個選項時，IntelliSense 會將 C# 關鍵字 (例如 [class](/dotnet/csharp/language-reference/keywords/class)) 新增至完成清單。  
   
  **將程式碼片段置於完成清單中**  
- 選取這個選項時，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單。 如果程式碼片段別名與關鍵字相同 (例如 [class](/dotnet/csharp/language-reference/keywords/class))，則會將關鍵字取代為快速鍵。 如需詳細資訊，請參閱 [Visual C# 程式碼片段](../../ide/visual-csharp-code-snippets.md)。  
+ 選取這個選項時，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單。 如果程式碼片段別名與關鍵字相同 (例如 [class](/dotnet/csharp/language-reference/keywords/class))，則會將關鍵字取代為快速鍵。 如需詳細資訊，請參閱 [C# 程式碼片段](../../ide/visual-csharp-code-snippets.md)。  
   
 ## <a name="selection-in-completion-lists"></a>完成清單中的選取範圍  
  **輸入下列字元予以認可:**  

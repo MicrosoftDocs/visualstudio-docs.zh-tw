@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 
@@ -56,7 +58,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ## <a name="parameter-info"></a>參數資訊
 
-[參數資訊] 會提供方法、屬性泛型類型參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。
+[參數資訊] 會提供方法、屬性泛型型別參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。
 
 粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用向上鍵和向下鍵檢視函式多載的替代參數資訊。
 
@@ -109,7 +111,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>另請參閱
 
 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)

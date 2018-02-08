@@ -12,20 +12,23 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
-您可以產生泛型方法的單元測試，就像您為其他方法所進行的測試一樣，如同[如何：建立及執行單元測試](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
-  
-## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束  
- 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 產生泛型類別 (例如 `MyList<T>`) 的單元測試時，會產生兩個方法：一個泛型協助程式方法和一個測試方法。 如果 `MyList<T>` 具有一個或多個類型條件約束，則此類型引數必須滿足所有類型條件約束。 為了確定待測泛型程式碼是否如預期般適用於允許的所有輸入，測試方法會使用您想測試的所有條件約束來呼叫泛型協助程式方法。  
-  
+
+您可以產生泛型方法的單元測試，就像您為其他方法所進行的測試一樣。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。
+
+## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束
+
+在 Visual Studio 產生泛型類別 (例如 `MyList<T>`) 的單元測試時，會產生兩個方法：一個泛型協助程式方法和一個測試方法。 如果 `MyList<T>` 具有一個或多個類型條件約束，則此類型引數必須滿足所有類型條件約束。 為了確定待測泛型程式碼是否如預期般適用於允許的所有輸入，測試方法會使用您想測試的所有條件約束來呼叫泛型協助程式方法。
+
 ## <a name="examples"></a>範例  
  下列範例說明泛型的單元測試：  
   
@@ -197,6 +200,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
- [單元測試的結構](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+## <a name="see-also"></a>另請參閱
+
+[對程式碼進行單元測試](../test/unit-test-your-code.md)

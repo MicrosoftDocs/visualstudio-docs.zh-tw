@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。  
@@ -33,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **Microsoft .NET Speech Technologies** (Microsoft .NET 語音技術)：Microsoft .NET 語音 SDK 是 Microsoft 的一組 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 控制項、Microsoft Internet Explorer 語音增益集、範例應用程式和文件，可讓 Web 開發人員建立、偵錯和部署啟用語音的 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 應用程式。 工具會順暢地整合至 Microsoft Visual Studio 中，允許開發人員運用熟悉的開發環境。 如需詳細資訊，請參閱 [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx)。  
   
--   **Understanding SAMI 1.0** (了解 SAMI 1.0)：Microsoft Synchronized Accessible Media Interchange (SAMI) 技術可讓開發人員為電腦多媒體製作音訊內容的標題。 如需詳細資訊，請參閱 [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx)。  
+-   **Understanding SAMI 1.0** (了解 SAMI 1.0)：Microsoft Synchronized Accessible Media Interchange (SAMI) 技術可讓開發人員為電腦多媒體製作音訊內容的標題。 如需詳細資訊，請參閱[了解 SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx)。  
   
 ## <a name="windows-applications"></a>Windows 應用程式  
   
@@ -45,13 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="web-sites"></a>網站  
   
--   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (逐步解說︰使用圖像控制項、功能表控制項和 AutoPostBack 的協助工具指導方針)：本主題提供逐步指示，在網頁範例中包含可存取的控制項，以及 Web 的一些協助工具設計祕訣。  
+-   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (逐步解說︰使用圖像控制項、功能表控制項和 AutoPostBack 的協助工具指導方針)：本主題提供逐步指示，在網頁範例中包含可存取的控制項，以及 Web 的一些協助工具設計祕訣。
   
--   **Making Web Pages More Accessible** (讓網頁更容易存取)：此技術文章列出可存取的 HTML 3.2 項目，以及可在網站開發中存取使用的項目。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
-  
--   **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 項目以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。  
-  
--   **Text Alternatives to Inaccessible Web Pages** (無法存取之網頁的文字替代項目)：本技術文章說明如何使用 XML 和 XSLT 來提供相同網頁的多個檢視，例如純文字版本。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx)。  
+-   **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 項目以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。
   
 ### <a name="third-party-resources"></a>協力廠商資源  
   

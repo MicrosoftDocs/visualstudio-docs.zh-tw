@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -31,7 +34,7 @@ Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並
 您可以使用 [ **擴充功能和更新** ] 對話方塊來安裝 Visual Studio 擴充功能和來自網站及其他位置的範例，然後啟用、停用、更新或將它們解除安裝。 ([工具/擴充功能和更新]，或在 [快速啟動]  視窗中輸入 **擴充功能** )。 對話方塊也會顯示已安裝的範例和擴充功能的更新。 您也可以從網站下載擴充功能，或從其他開發人員取得。
 
 > [!NOTE]
-> 從 Visual Studio 2015 開始，在 Visual Studio Marketplace 託管的延伸模組將自動更新。  您可以透過 [擴充功能和更新]  對話方塊變更此設定。  如需詳細資訊，請參閱下方〈自動更新擴充功能〉  的章節。
+> 從 Visual Studio 2015 開始，在 Visual Studio Marketplace 託管的延伸模組會自動更新。 您可以透過 [擴充功能和更新]  對話方塊變更此設定。  如需詳細資訊，請參閱下方〈自動更新擴充功能〉  的章節。
 
 ## <a name="finding-visual-studio-extensions"></a>尋找 Visual Studio 擴充功能
 
@@ -66,24 +69,26 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新個別使用
 > [!NOTE]
 > 從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新] 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。
 
-## <a name="extension-crash-notifications"></a>延伸模組當機通知
+## <a name="extension-crashunresponsiveness-notifications"></a>延伸模組的當機/無回應通知
 
-在 Visual Studio 2017 (15.3 版 - Preview) 中，如果 Visual Studio 懷疑延伸模組與前一個工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會使用下列這類訊息通知您：
+Visual Studio 2017 15.3 版中的新功能，如果 Visual Studio 懷疑延伸模組與前一個工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會顯示通知。
 
-「上一個工作階段意外終止。 停用延伸模組 'extension_name' 可有助於避免發生類似問題。」
+**Visual Studio 15.6 版 Preview 3** 中的新功能，如果 Visual Studio 懷疑某延伸模組造成 UI 無回應，則它也會通知您。
 
-您可以略過此通知，或採取下列其中一個動作：
+當顯示這些通知時，您可以略過此通知，或採取下列其中一個動作：
 
 - 選擇 [停用此延伸模組]。 Visual Studio 會停用延伸模組，並可讓您知道是否需要重新啟動系統，以讓停用生效。 想要的話，您可以在 [延伸模組和更新] 對話方塊中重新啟用延伸模組。
 
-- 選擇 [不要再針對此延伸模組顯示]。 IDE 將不再顯示這個延伸模組相關當機的通知，但會顯示其他延伸模組相關當機的通知。
+- 選擇 [一律不再顯示此訊息]。 
+  - 如果是有關前一個工作階段中當機的通知，當發生與此延伸模組相關的當機時，Visual Studio 將不再顯示通知。 當無回應可能與此延伸模組相關聯，或者當機或無回應可能與其他延伸模組相關聯時，Visual Studio 仍將顯示通知。 
+  - 如果通知與無回應有關，則當此延伸模組於無回應相關聯時，IDE 將不再顯示通知。 Visual Studio 仍將顯示此延伸模組的當機相關通知，以及其他延伸模組的當機與無回應相關通知。 
 
-- 選擇 [深入了解]，以在預設瀏覽器中檢視此說明主題。
+- 選擇 [深入了解] 返回此頁面。
 
-- 選擇通知結尾的 [X] 按鈕，以關閉通知。 如果同一個延伸模組與未來工作階段中的當機有關，則會再次出現此通知。
+- 選擇通知結尾的 [X] 按鈕，以關閉通知。 未來與當機或 UI 無回應相關聯之延伸模組的執行個體，將會顯示新的通知。
 
 > [!NOTE]
-> 當機通知只表示其中一個延伸模組的模組位在當機的堆疊上。 不一定表示延伸模組本身造成當機。 延伸模組可能呼叫為 Visual Studio 一部分的程式碼，而且該程式碼造成當機。 不過，如果導致當機的案例對您而言不重要，則此通知可能仍然十分有用。 在此情況下，停用延伸模組可避免未來發生相同的當機，而且不會影響產能。
+> UI 無回應或當機通知表示當 UI 無回應或者發生當機時，延伸模組的其中一個模組是在堆疊上。 這不一定表示延伸模組本身為問題。 有可能是延伸模組呼叫屬於 Visual Studio 一部分的程式碼，而該程式碼會反過來造成無回應 UI 或當機。 不過，如果導致 UI 無回應或當機的延伸模組對您而言不重要，則此通知可能仍然十分有用。 在此情況下，停用延伸模組可避免未來發生 UI 無回應或損毀，而且不會影響產能。 
 
 ## <a name="sample-master-copies-and-working-copies"></a>範例主複本與工作複本
 

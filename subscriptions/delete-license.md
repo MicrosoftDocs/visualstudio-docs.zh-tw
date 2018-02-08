@@ -1,5 +1,5 @@
 ---
-title: "刪除指派 | Visual Studio Marketplace"
+title: "刪除指派 | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can delete subscription assignments
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 84fde21cd3cd54258d4c77a9cf16ac8f008d3937
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: e774eb24037275e87f9549d419804d12ab67dd39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: e3589707f07564bbcd84151b0eedeb1c0029428b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 093457cf2aea3951db89e6fa677ec03fe55df89a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。  
@@ -136,12 +137,12 @@ string ValueAsNumber
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> 進度列  
  **進度列控制項：**進度列是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。  
-  
+
  ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
-  
-## <a name="see-also"></a>請參閱  
- [HTML 項目](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [自訂您的自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+## <a name="see-also"></a>另請參閱
+
+[HTML 元素](http://go.microsoft.com/fwlink/?LinkID=232441)  
+[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  
+[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)  
+[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

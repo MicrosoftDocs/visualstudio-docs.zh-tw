@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。  
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/09/2018
   
      [UIMap - 自動程式化 UI 測試產生器] 隨即顯示，並將 Visual Studio 視窗最小化。  
   
-     如需對話方塊選項的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+     如需對話方塊選項的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)。  
   
 8.  選擇 [UIMap - 自動程式化 UI 測試產生器] 上的 [開始錄製]。  
   
@@ -368,26 +369,20 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="external-resources"></a>外部資源  
   
-### <a name="videos"></a>視訊  
- ![視訊連結](../data-tools/media/playvideo.gif "PlayVideo") [自動程式化 UI Tests-DeepDive-Episode1-GettingStarted (英文)](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>視訊
+
+![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [開始使用自動程式化 UI 測試](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![視訊連結](../data-tools/media/playvideo.gif "PlayVideo") [自動程式化 UI Tests-DeepDive-Episode2-MaintainenceAndDebugging (英文)](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [自動程式化 UI 測試的維護與偵錯](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![視訊連結](../data-tools/media/playvideo.gif "PlayVideo") [自動程式化 UI Tests-DeepDive-Episode3-HandCoding (英文)](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [手動撰寫自動程式化 UI 測試的程式碼](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>實習課程  
- [MSDN 虛擬實驗室：使用 Visual Studio 2010 建立自動程式碼 UI 測試簡介](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>常見問題集
+
+[自動程式化 UI 測試常見問題集](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>常見問題集  
- [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [自動程式碼 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>論壇  
- [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>請參閱  
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [WPF 設計工具快速入門](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>另請參閱
+
+[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  
+[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -4,11 +4,12 @@ ms.custom:
 ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - Visual Basic projects, references
 - troubleshooting references
 - referencing files from projects
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b7046240f711d640b8143afddb667e2726eb35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ecca7ee3d9d5ae6a4f347df7438cb38718d702b4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 
@@ -61,7 +63,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 如果使用 Visual Basic，請選取 [參考] 頁面，然後按一下 [參考路徑] 按鈕。 在 [參考路徑] 對話方塊的 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。
 
-    如果使用 Visual C#，請選取 [參考路徑] 頁面。 在 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。
+    如果使用 C#，請選取 [參考路徑] 頁面。 在 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。
 
 ## <a name="referenced-file-has-been-deleted"></a>參考的檔案已被刪除
 

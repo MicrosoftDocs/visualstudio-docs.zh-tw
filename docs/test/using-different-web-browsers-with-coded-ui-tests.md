@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 自動程式化 UI 測試可以使用 Internet Explorer 錄製測試，以自動測試 Web 應用程式。 之後，您可以自訂測試再使用 Internet Explorer 或其他瀏覽器類型的 Web 應用程式進行播放。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 01/09/2018
     > [!TIP]
     >  您也可以在[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。  
   
- 如需建立和使用自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
+ 如需建立和使用自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md)。  
   
 ### <a name="enable-debugging"></a>啟用偵錯  
  若要啟用偵錯 Web 應用程式的功能，您必須完成下列組態選項：  
@@ -101,9 +102,9 @@ ms.lasthandoff: 01/09/2018
  *我還應該知道什麼？*  
  **備註**  
   
--   ![必要條件](../test/media/prereq.png "Prereq") 不支援 Apple Safari 網頁瀏覽器。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 不支援 Apple Safari 瀏覽器。  
   
--   ![必要條件](../test/media/prereq.png "Prereq") 自動程式碼 UI 測試必須包含啟動網頁瀏覽器的動作。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 啟動網頁瀏覽器的動作必須包含在自動程式化 UI 測試中。  
   
      如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。  
   

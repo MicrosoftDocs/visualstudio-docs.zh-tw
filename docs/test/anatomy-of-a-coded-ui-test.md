@@ -7,18 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests
+helpviewer_keywords:
+- coded UI tests
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 928caef1cdad112e794bd7ac9317d8f8dbf03117
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: c449c0e23fa3effa693059ed6d0b6c4a61b8470c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
+
 當您在自動程式化 UI 測試專案中建立自動程式碼 UI測試時，有數個檔案會加入至您的方案。 在本主題中，我們將使用範例自動程式化 UI 測試來探索這些檔案。  
   
  **需求**  
@@ -62,25 +65,25 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 ####  <a name="UIMapClass"></a> UIMap 類別  
  檔案的下一個區段是 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別。  
   
-```  
+```csharp
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]  
 public partial class UIMap  
-```  
+```
   
- 類別程式碼以套用至類別的 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭，而類別宣告為部分類別。 您會發現該屬性也會套用到此檔案中的每個類別。 另一個可能包含這個類別的其他程式碼的檔案是 `UIMap.cs`，稍後再討論。  
-  
- 產生的 `UIMap` 類別包含錄製測試時所指定的每個方法的程式碼。  
-  
-```  
+類別程式碼以套用至類別的 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭，而類別宣告為部分類別。 您會發現該屬性也會套用到此檔案中的每個類別。 另一個可能包含這個類別的其他程式碼的檔案是 `UIMap.cs`，稍後再討論。  
+
+產生的 `UIMap` 類別包含錄製測試時所指定的每個方法的程式碼。  
+
+```csharp
 public void LaunchCalculator()  
 public void AddItems()  
 public void VerifyTotal()  
 public void CleanUp()  
-```  
-  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別的這部分也包含針對方法所需的每個屬性而產生的程式碼。  
-  
-```  
+```
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別的這部分也包含針對方法所需的每個屬性而產生的程式碼。
+
+```csharp
 public virtual LaunchCalculatorParams LaunchCalculatorParams  
 public virtual AddItemsParams AddItemsParams  
 public virtual VerifyTotalExpectedValues VerifyTotalExpectedValues  
@@ -92,12 +95,12 @@ public UIRunWindow UIRunWindow
 public UICalculatorWindow UICalculatorWindow  
 public UIStartWindow UIStartWindow  
 public UIMathApplicationWindow UIMathApplicationWindow  
-```  
+```
   
 #####  <a name="UIMapMethods"></a> UIMap 方法  
- 每個方法的結構都類似 `AddItems()` 方法。 程式碼下方有更詳細的說明，同時加上換行以更清楚顯示。  
-  
-```  
+ 每個方法的結構都類似 `AddItems()` 方法。 程式碼下方有更詳細的說明，同時加上換行以更清楚顯示。
+
+```csharp
 /// <summary>  
 /// AddItems - Use 'AddItemsParams' to pass parameters into this method.  
 /// </summary>  
@@ -119,10 +122,10 @@ public void AddItems()
     Keyboard.SendKeys(uIItemEdit,   
         this.AddItemsParams.UIItemEditSendKeys,   
         ModifierKeys.None);  
-}  
-```  
-  
- 每個方法定義的摘要註解指出哪一個類別用於該方法的參數值。 在此例子中是 `AddItemsParams` 類別，這在稍後的 `UIMap.cs` 檔案中定義，也是 `AddItemsParams` 屬性傳回的實值型別。  
+}
+```
+
+每個方法定義的摘要註解指出哪一個類別用於該方法的參數值。 在此例子中是 `AddItemsParams` 類別，這在稍後的 `UIMap.cs` 檔案中定義，也是 `AddItemsParams` 屬性傳回的實值型別。  
   
  方法程式碼的頂端是`Variable Declarations`區域，定義方法將使用的 UI 物件的區域變數。  
   
@@ -131,20 +134,20 @@ public void AddItems()
  接下來的幾行使用 `AddItemsParams` 物件的屬性，將鍵盤的文字傳送至小算盤應用程式。  
   
  `VerifyTotal()` 方法有非常類似的結構，且包含下列判斷提示程式碼。  
-  
-```  
+
+```csharp
 // Verify that 'Unknown Name' text box's property 'Text' equals '9. '  
 Assert.AreEqual(  
     this.VerifyTotalExpectedValues.UIItemEditText,   
     uIItemEdit.Text);  
-```  
-  
+```
+
  文字方塊的名稱列為未知，因為 Windows 小盤盤應用程式的開發人員未提供公開可用的控制項名稱。 當實際值不等於預期值時，<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> 方法會失敗，導致測試失敗。 也請注意，預期的值包含小數點，後面接著一個空格。 如果您曾經修改此特定測試的功能，則必須允許該小數點和空格。  
   
 #####  <a name="UIMapProperties"></a> UIMap 屬性  
  在整個類別中，每一個屬性的程式碼也非常標準。 `AddItemsParams` 屬性的下列程式碼用於 `AddItems()` 方法中。  
   
-```  
+```csharp
 public virtual AddItemsParams AddItemsParams  
 {  
     get  
@@ -155,14 +158,14 @@ public virtual AddItemsParams AddItemsParams
         }  
         return this.mAddItemsParams;  
     }  
-}  
-```  
-  
+}
+```
+
  請注意，此屬性在傳回值之前，先使用名為 `mAddItemsParams` 的私用區域變數來保留值。 它傳回的物件有相同的屬性名稱和類別名稱。 此類別在稍後的 `UIMap.cs` 檔案中定義。  
   
  屬性所傳回的每個類別有類似的結構。 以下是 `AddItemsParams` 類別。  
-  
-```  
+
+```csharp
 /// <summary>  
 /// Parameters to be passed into 'AddItems'  
 /// </summary>  
@@ -180,11 +183,11 @@ public class AddItemsParams
     /// </summary>  
     public string UIItemEditSendKeys = "{Add}{NumPad2}{Enter}";  
     #endregion  
-}  
-```  
-  
- 如同 `UIMap.cs` 檔案中的所有類別，這個類別也是以 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭。 這個小類別中有一個 `Fields` 區域，定義字串做為 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 方法的參數，此方法在先前討論的 `UIMap.AddItems()` 方法中使用。 在呼叫使用這些參數的方法之前，您可以撰寫程式碼來取代這些字串欄位中的值。  
-  
+}
+```
+
+如同 `UIMap.cs` 檔案中的所有類別，這個類別也是以 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 開頭。 這個小類別中有一個 `Fields` 區域，定義字串做為 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 方法的參數，此方法在先前討論的 `UIMap.AddItems()` 方法中使用。 在呼叫使用這些參數的方法之前，您可以撰寫程式碼來取代這些字串欄位中的值。  
+
 ###  <a name="UIMapCS"></a> UIMap.cs  
  根據預設，此檔案包含一個部分 `UIMap` 類別，沒有方法或屬性。  
   
@@ -196,40 +199,41 @@ public class AddItemsParams
 ###  <a name="CodedUITestCS"></a> CodedUITest1.cs  
  這個檔案由**自動程式碼 UI 測試產生器**產生，但不會在每次修改測試時重新建立，因此您可以修改這個檔案中的程式碼。 此檔案的名稱是從您建立測試時所指定的名稱產生。  
   
-#### <a name="codeduitest1-class"></a>CodedUITest1 類別  
- 根據預設，此檔案只包含一個類別的定義。  
-  
-```  
+#### <a name="codeduitest1-class"></a>CodedUITest1 類別
+
+根據預設，此檔案只包含一個類別的定義。
+
+```csharp
 [CodedUITest]  
 public class CodedUITest1  
-```  
-  
- T:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute 會自動套用至類別，可讓測試架構將它辨識為測試擴充功能。 也請注意，這不是部分類別。 此檔案包含整個類別程式碼。  
+```
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> 會自動套用至類別，可讓測試架構將它辨識為測試擴充功能。 也請注意，這不是部分類別。 此檔案包含整個類別程式碼。  
   
 #####  <a name="CodedUITestProperties"></a> CodedUITest1 屬性  
  此類別包含位於檔案最下方的兩個預設屬性。 不得修改。  
   
-```  
+```csharp
 /// <summary>  
 /// Gets or sets the test context which provides  
 /// information about and functionality for the current test run.  
 ///</summary>  
 public TestContext TestContext  
 public UIMap UIMap  
-```  
+```
   
 #####  <a name="CodedUITestMethods"></a> CodedUITest1 方法  
  根據預設，此類別只包含一個方法。  
-  
-```  
+
+```csharp
 public void CodedUITestMethod1()  
-```  
-  
+```
+
  這個方法會呼叫您記錄測試時所指定的每個 `UIMap` 方法；[UIMap 類別](#UIMapClass)一節中有相關說明。  
   
  標題為 `Additional test attributes` 的區域 (如果取消註解) 包含兩個選擇性方法。  
   
-```  
+```csharp
 // Use TestInitialize to run code before running each test   
 [TestInitialize()]  
 public void MyTestInitialize()  
@@ -254,9 +258,9 @@ public void MyTestCleanup()
   
     // You could move this line from the CodedUITestMethod1() method  
     this.UIMap.CloseCalculator();  
-}  
-```  
-  
+}
+```
+
  `MyTestInitialize()` 方法套用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>，向測試架構表示在任何其他測試方法之前呼叫這個方法。 同樣地，`MyTestCleanup()` 方法套用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>，向測試架構表示在呼叫任何其他測試方法之後呼叫這個方法。 使用這些方法是選擇性的。 對於此測試，`UIMap.LaunchCalculator()` 方法可以從 `MyTestInitialize()` 呼叫，而 `UIMap.CloseCalculator()` 方法可以從 `MyTestCleanup()` 而不是從 `CodedUITest1Method1()` 呼叫。  
   
  如果您使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> 將其他方法加入至此類別，測試架構會在測試時呼叫每個方法。  
@@ -266,19 +270,20 @@ public void MyTestCleanup()
   
  不可直接編輯 `UIMap.uitest` 檔案。 不過，您可以使用自動程式碼 UI 產生器來修改測試，進而自動修改 `UIMap.uitest` 檔案和 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案。  
   
-## <a name="see-also"></a>請參閱  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>   
- <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>   
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
- [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>另請參閱
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>   
+<xref:System.CodeDom.Compiler.GeneratedCodeAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>   
+[使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
+[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)   
+[自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
+[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)   
+[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

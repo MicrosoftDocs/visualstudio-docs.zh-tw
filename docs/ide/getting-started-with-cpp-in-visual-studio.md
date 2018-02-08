@@ -8,13 +8,15 @@ ms.topic: get-started-article
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-dev_langs: CPP
-ms.workload: cplusplus
-ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -152,7 +154,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 ## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
 [使用 Visual Studio 提高產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
 [Visual Studio 範例](../ide/visual-studio-samples.md)  
 [Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)

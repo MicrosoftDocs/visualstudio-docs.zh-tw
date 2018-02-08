@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -49,9 +49,9 @@ finally
 }
 ```
 
-插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並輸入 `tryf`，然後按 **Tab**，也可以輸入 `tryf`，然後按兩次 **Tab**。
+插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並鍵入 `tryf`，然後按 **Tab** 鍵，也可以鍵入 `tryf`，然後按兩次 **Tab** 鍵。
 
-範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [範圍陳述式] 和 [if]，程式碼片段隨即在此行周圍展開：
+範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後依序按一下 [Surround With] (範圍陳述式) 和 [if]，程式碼片段隨即在此行周圍展開：
 
 ```cpp
 if (true)
@@ -78,7 +78,7 @@ Public Property NewProperty() As String
 End Property
 ```
 
-如果您將 `newPropertyValue` 變更為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中將 `String` 變更為 `Int`，則 set 方法中的值也會變更為 `Int`。
+如果您變更 `newPropertyValue` 為 `m_property`，則會變更每個 `newPropertyValue` 的執行個體。 如果您在屬性宣告中變更 `String` 為 `Int`，則已設定方法中的值也會變更為 `Int`。
 
 ## <a name="code-snippet-manager"></a>程式碼片段管理員
 
@@ -90,8 +90,8 @@ End Property
 
 [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)  
 [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)  
-[使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)  
+[使用程式碼片段的最佳作法](../ide/best-practices-for-using-code-snippets.md)  
 [針對程式碼片段進行疑難排解](../ide/troubleshooting-snippets.md)  
-[Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)  
+[C# 程式碼片段](../ide/visual-csharp-code-snippets.md)  
 [Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)  
 [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

@@ -4,33 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedCompile
-helpviewer_keywords: Advanced Compiler Settings dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedCompile
+helpviewer_keywords:
+- Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3dd72236cf23131d510f9d512ea1dcd2a4dd15a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b2e8661fb7984fd5b04b64211bf209827683ee0a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
+
 使用 [專案設計工具] 的 [進階編譯器設定] 對話方塊，以指定專案的進階組建組態屬性。 此對話方塊只適用於 Visual Basic 專案。  
   
-### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊  
+### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
   
 1.  在方案總管中，選擇專案節點 (而不是 [方案] 節點)。  
   
 2.  在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。  
   
-3.  在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+3.  在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
   
 4.  按一下 [進階編譯選項]。  
   
@@ -65,9 +70,11 @@ ms.lasthandoff: 12/22/2017
  **自訂常數**  
  在此文字方塊中為您的應用程式輸入任何自訂常數。 項目應該使用這種形式以逗號分隔：**Name1="Value1",Name2="Value2",Name3="Value3"**。  
   
-## <a name="other-settings"></a>其他設定  
+## <a name="other-settings"></a>其他設定
+
  **產生序列化組件**  
  此設定指定編譯器是否會建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項預設為 [自動]，指定只有您已在程式碼中使用 <xref:System.Xml.Serialization.XmlSerializer> 將類型編碼為 XML 時，才會產生序列化組件。 [關閉] 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。  
-  
-## <a name="see-also"></a>請參閱  
- [專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+
+## <a name="see-also"></a>另請參閱
+
+[專案設計工具、編譯頁面 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

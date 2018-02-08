@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 您可以使用 Visual Studio 來建立應用程式，以正確顯示由右至左撰寫的語言文字，包括阿拉伯文和希伯來文。 針對某些功能，您可以直接設定屬性， 若為其他情況，則必須在程式碼中實作功能。  
@@ -80,15 +82,16 @@ ms.lasthandoff: 12/22/2017
 -   程式碼和常值文字。 在程式碼編輯器 (亦即文字編輯器) 中，您可以使用阿拉伯文或希伯來文命名類別、函式、變數、屬性、字串常值、屬性等等。 不過，編輯器不支援由右至左的讀取順序；文字一律從左邊界開始。  
   
     > [!TIP]
-    >  建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Forms 當地語系化](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)。
   
     > [!NOTE]
-    >  您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
+    > 您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
   
 -   程式碼註解。 您可以使用阿拉伯文或希伯來文建立註解。 您也可以在註解產生器工具中使用這些語言。  
   
-## <a name="see-also"></a>請參閱  
- [對 Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [全球化應用程式](../ide/globalizing-applications.md)   
- [當地語系化應用程式](../ide/localizing-applications.md)
+## <a name="see-also"></a>另請參閱
+
+[對 Windows Forms 應用程式的雙向支援](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[全球化應用程式](../ide/globalizing-applications.md)  
+[當地語系化應用程式](../ide/localizing-applications.md)

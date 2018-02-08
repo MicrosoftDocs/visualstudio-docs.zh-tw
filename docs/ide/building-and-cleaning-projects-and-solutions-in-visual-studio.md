@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)。  
@@ -58,11 +60,11 @@ ms.lasthandoff: 12/22/2017
   
 1.  在方案總管中，選擇或開啟專案。  
   
-2.  在功能表列上選擇 [建置]，然後選擇 [建置 <專案名稱>] 或 [重建 <專案名稱>]。  
+2.  在功能表列上選擇 [建置]，然後選擇 [**建置***專案名稱*] 或 [ **重建***專案名稱*]。  
   
-    -   選擇 [建置 <專案名稱>]，只編譯自從最近建置後已變更的那些專案元件。  
+    -   選擇 [**建置***專案名稱*]，只編譯自從最近建置後已變更的那些專案元件。  
   
-    -   選擇 [重建 <專案名稱>] 以「清除」專案，然後建置專案檔和所有專案元件。  
+    -   選擇 [**重建***專案名稱*] 以「清除」專案，然後建置專案檔和所有專案元件。  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>僅建置啟始專案和其相依性  
   
@@ -111,11 +113,12 @@ ms.lasthandoff: 12/22/2017
     -   選擇 Ctrl + Break 鍵。  
   
 ## <a name="see-also"></a>另請參閱
-[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
-[了解組建組態](../ide/understanding-build-configurations.md)   
-[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)   
-[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
+
+[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)  
+[了解組建組態](../ide/understanding-build-configurations.md)  
+[如何：設定偵錯和發行設定](../debugger/how-to-set-debug-and-release-configurations.md)  
+[C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)  
+[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)  
 [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)

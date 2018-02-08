@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 0dce2cfd041b3fe0be3ecd4061e3447190d5e448
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: fb46a6d739e06f980b13cd2b643946b47b6661e3
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 我們建議您建立單元測試，以便讓您的程式碼在經歷許多漸進的開發步驟後仍然能夠正確運作。 有數種架構都可以用來撰寫單元測試，包含由協力廠商所開發的架構。 某些測試架構是專門讓您使用不同的語言或平台來進行測試。 [測試總管] 提供單一介面，讓您使用任一種架構來進行單元測試。 目前已有適用於最常用架構的配接器可供使用，而您也可以自己撰寫適用於其他架構的配接器。  
@@ -147,15 +148,15 @@ ms.lasthandoff: 01/09/2018
   
      ![顯示成功之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>加入測試以擴充輸入的範圍  
-  
-1.  若要提高您對於程式碼在任何情況下都能運作的信心，您可以加入嘗試各種輸入值的測試。  
-  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>加入測試以擴充輸入的範圍
+
+1.  若要提高您對於程式碼在任何情況下都能運作的信心，您可以加入嘗試各種輸入值的測試。
+
     > [!TIP]
-    >  避免改變已經成功的現有測試， 而改為加入新的測試。 只有在使用者的需求改變時，才變更現有的測試。 這個原則可協助您確保在擴充程式碼時不會失去現有的功能。  
-  
-     在您的測試類別中加入下面測試，該測試會嘗試某個範圍的輸入值：  
-  
+    >  避免改變已經成功的現有測試， 而改為加入新的測試。 只有在使用者的需求改變時，才變更現有的測試。 這個原則可協助您確保在擴充程式碼時不會失去現有的功能。
+
+     在您的測試類別中加入下面測試，該測試會嘗試某個範圍的輸入值：
+
     ```csharp  
     [TestMethod]  
     public void RooterValueRange()  

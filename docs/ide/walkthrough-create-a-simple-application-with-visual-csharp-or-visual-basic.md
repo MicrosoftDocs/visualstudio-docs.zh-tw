@@ -1,5 +1,5 @@
 ---
-title: "逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式 | Microsoft Docs"
+title: "逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式 | Microsoft Docs"
 ms.custom: 
 ms.date: 10/03/2017
 ms.reviewer: 
@@ -11,18 +11,19 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: b33816e074cf63826c931bcda0978ebdb5bb8bbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式
 藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您了解整合式開發環境 (IDE) 的運作時，您將會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
   
 ##  <a name="BKMK_ConfigureIDE"></a> 設定 IDE  

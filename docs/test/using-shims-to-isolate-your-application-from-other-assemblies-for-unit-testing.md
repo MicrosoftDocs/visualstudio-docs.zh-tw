@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 3a0d2932e4fc14070759906ad27c36f63132559b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: d9df35f6ace396d1f2859ea7f5a16033c1739b16
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 **填充碼類型**是 Microsoft Fakes 架構兩項技術的其中一個，讓您輕鬆地隔離受測元件與環境。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更容易撰寫測試。  
@@ -414,7 +415,7 @@ public class ShimMyBase : ShimBase<MyBase> {
 ```  
   
 ###  <a name="BKMK_Static_constructors"></a> 靜態建構函式  
- 填充碼類型會公開靜態方法 `StaticConstructor`，藉此填充類型的靜態建構函式。 因為靜態建構函式只能執行一次，您必須在存取該類型的任何成員之前，確認已設定填充碼。  
+ 填充碼類型會公開靜態方法 `StaticConstructor`，藉此填充類型的靜態建構函式。 因為靜態建構函式只能執行一次，您必須確保在存取該類型的任何成員之前，已設定填充碼。  
   
 ###  <a name="BKMK_Finalizers"></a> 完成項  
  完成項在 Fakes 中並不支援。  

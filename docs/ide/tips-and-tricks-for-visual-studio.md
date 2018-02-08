@@ -12,21 +12,21 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5aca783500b27e6b292b82304eb14d0fba7d32
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>適用於 Visual Studio 的鍵盤祕訣
 
-您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
+您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
 
 ## <a name="window-management"></a>視窗管理
 
 |||
 |-|-|
-|將浮動索引標籤井拖曳出來|Ctrl+按一下以選取多個項目|
+|將浮動索引標籤井拖曳出來|多重選取的 Ctrl+按一下|
 |最大化浮動視窗|按兩下標題列|
 |重新停駐浮動視窗|Ctrl+按兩下標題列|
 |關閉使用中的文件|Ctrl+F4|
@@ -79,7 +79,7 @@ ms.lasthandoff: 01/23/2018
 |以此環繞|Ctrl+K、S||
 |顯示快速諮詢|Ctrl+K、I||
 |巡覽至|Ctrl+,||
-|巡覽反白顯示的參考|Ctrl+Shift+Up (上一個)、Ctrl+Shift+Down (下一個)||
+|巡覽反白顯示的參考|Ctrl+Shift+Up (上一步)、Ctrl+Shift+Down (下一步)||
 |編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)||
 |區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵||
 |將行上移/下移|Alt+向上鍵 / Alt+向下鍵||
@@ -101,7 +101,7 @@ ms.lasthandoff: 01/23/2018
 |-|-|
 |加入按鈕|按一下工具列溢位按鈕|
 |尋找標準工具列中的下拉式方塊|Ctrl+D|
-|尋找文字方塊命令模式|輸入 ">"|
+|尋找文字方塊命令模式|鍵入 ">"|
 |建立新別名|>alias NewAlias 命令|
 
 ## <a name="debugging"></a>偵錯
@@ -119,14 +119,15 @@ ms.lasthandoff: 01/23/2018
 |設定和切換中斷點|F9|
 |停用中斷點|Ctrl+F9|
 |即時運算視窗|CTRL+ALT+I|
-|即時運算視窗命令模式|輸入 ">"|
+|即時運算視窗命令模式|鍵入 ">"|
 |即時運算視窗清除緩衝區|>cls|
 |即時運算視窗列印值|?varname|
 
 ## <a name="see-also"></a>另請參閱
 
+[鍵盤快速鍵 (VSTS 和 TFS)](/vsts/collaborate/keyboard-shortcuts)  
 [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)  
-[Visual Studio 祕訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)  
+[Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)  
 [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
 [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio Connect Bug](http://connect.microsoft.com/VisualStudio)
+[Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)

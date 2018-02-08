@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5db8c070b5e0796e64071a8c28d4d36715cd8fc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 198ce949913dc7d35052e50c4bd13a559e8336e5
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="step-9-try-other-features"></a>步驟 9：嘗試其他功能
 若要了解詳細資訊，請試著變更圖示和色彩、加入遊戲計時器，以及加入音效。 若要讓遊戲更具挑戰性，請試著使戲局變大並調整計時器。  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 -   加入當玩家找到配對項目時的音效、當玩家發現不相符的兩個圖示時的另一種音效，以及當程式再次隱藏圖示時的第三種音效。  
   
     > [!TIP]
-    >  若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (在 Windows Forms 應用程式中播放音效 (C# .NET)) 或 [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (如何在 Visual Basic 中播放音訊)。  
+    >  若要播放音效，您可以使用 System.media 命名空間。 如需詳細資訊，請參閱 [Play Sounds in Windows Forms App (C#)](http://youtu.be/qOh4ooHg1UU) (在 Windows Forms 應用程式中播放音效 (C#)) 或 [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (如何在 Visual Basic 中播放音訊)。  
   
 -   使戲局變大，可讓遊戲變得更困難。  
   

@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 在 SharePoint 應用程式中包含自動程式碼 UI 測試，可讓您驗證整個應用程式 (包括其 UI 控制項) 是否正常運作。 自動程式碼 UI 測試也可以驗證使用者介面中的值和邏輯。  
@@ -31,10 +32,10 @@ ms.lasthandoff: 01/09/2018
   
 -   ![必要條件](../test/media/prereq.png "Prereq") 只有 SharePoint 2010 才支援 SharePoint 應用程式的自動程式化 UI 測試。  
   
--   ![必要條件](../test/media/prereq.png "Prereq") SharePoint 應用程式中不支援 Visio 和 PowerPoint 2010 控制項。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 在 SharePoint 應用程式中不支援 Visio 和 PowerPoint 2010 控制項。  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>建立 SharePoint 應用程式的自動程式碼 UI 測試  
- 為您的 SharePoint 2010 應用程式[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。  
+ 為您的 SharePoint 2010 應用程式[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md) 的方式，與為其他類型應用程式建立測試的方式相同。 所有控制項都可在 Web 編輯介面上錄製和播放。 選取分類和 Web 組件的介面都是標準的 Web 控制項。  
   
  ![SharePoint 網頁組件](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

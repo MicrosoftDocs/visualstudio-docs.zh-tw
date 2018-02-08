@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單] 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具] 功能表中選取 [選項]，並展開 [環境] 資料夾，然後選擇 [工作清單]。  
@@ -51,7 +53,7 @@ ms.lasthandoff: 12/22/2017
  如果您在程式碼中插入的註解文字開頭是 [語彙基元清單] 中的語彙基元，則只要開啟檔案進行編輯，[工作清單] 就會將註解顯示為新項目。 您可以按一下這個 [工作清單] 項目，直接跳到程式碼中的註解行。 如需詳細資訊，請參閱[使用工作清單](../../ide/using-the-task-list.md)。  
   
  語彙基元清單  
- 顯示語彙基元清單，並讓您加入或移除自訂語彙基元。 註解語彙基元在 Visual C# 和 Visual C++ 中是區分大小寫的，但在 Visual Basic 中則不區分。  
+ 顯示語彙基元清單，並讓您加入或移除自訂語彙基元。 註解語彙基元在 C# 和 Visual C++ 中是區分大小寫的，但在 Visual Basic 中則不區分。  
   
 > [!NOTE]
 >  如果您鍵入的語彙基元未與 [工作清單] 中所顯示的語彙基元完全相符，則註解工作將不會顯示在 [工作清單] 中。  

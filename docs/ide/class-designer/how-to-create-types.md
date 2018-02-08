@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.Clr.ClrAttributesDialog
+f1_keywords:
+- VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
 - custom attributes, applying
 - class diagrams, creating types
@@ -16,19 +18,20 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe4eaf38f20ed358263bb6cc07d4be5c9632cd5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db46a4fa0faa568597deccddb528d8765e048e22
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
-若要為 Visual C# .NET 和 Visual Basic .NET 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。  
+若要為 C# 和 Visual Basic 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。  
   
 -   [建立新的類型](#CreateType)  
   
@@ -70,7 +73,7 @@ ms.lasthandoff: 12/22/2017
     |Class、Abstract Class、Structure 或 Struct|定義類別的方法、屬性、欄位、事件、建構函式 (方法)、解構函式 (方法) 和常數。|  
     |列舉|構成列舉的欄位值|  
     |介面|構成介面的方法、屬性和事件|  
-    |委派|定義委派的參數|  
+    |Delegate - 委派|定義委派的參數|  
     |Module|定義模組的方法、屬性、欄位、事件、建構函式 (方法) 和常數|  
   
      請參閱[建立成員](creating-and-configuring-type-members.md#CreateMembers)。  

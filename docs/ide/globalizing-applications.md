@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], international applications
-- Visual C#, international applications
+- C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dc3da69cd89421ed3f8b04f5c47a190d8453411d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3654b68f3ba12160947c465f8511127136b3103
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="globalizing-applications"></a>全球化應用程式
 「全球化」是針對多種文化特性，設計和開發軟體產品的程序。 本節同時適用於 Windows Forms 和 Web Forms 頁面。  
@@ -38,7 +40,7 @@ ms.lasthandoff: 12/22/2017
  提供全球化 Web Forms 的 [說明] 頁連結。  
   
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- 探討使用 Visual Basic 或 Visual C# 針對國際市場開發軟體的基本概念。  
+ 探討使用 Visual Basic 或 C# 針對國際市場開發軟體的基本概念。  
   
  [開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

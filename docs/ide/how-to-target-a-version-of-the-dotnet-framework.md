@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 12/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: f648f07923117b89278ba0e5f44e351b923f7c26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：以 .NET Framework 版本為目標
 
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="changing-the-target-version"></a>變更目標版本
 
-您可以遵循下列順序變更 Visual Basic、Visual C# 或 Visual F# 專案中的目標 .NET Framework 版本。
+您可以遵循下列順序變更 Visual Basic、C# 或 Visual F# 專案中的目標 .NET Framework 版本。
 
 如需如何變更 C++ 專案之目標版本的詳細資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 

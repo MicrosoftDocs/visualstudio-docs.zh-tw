@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>管理訂閱
 ## <a name="signing-in-to-the-portal"></a>登入入口網站
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/01/2017
 #### <a name="workschool-accounts"></a>公司帳戶/學校帳戶
 如果您的訂閱是由公司/學校提供，則您會收到一封歡迎電子郵件。  
 1.  前往[訂閱者入口網站](https://my.visualstudio.com/)
-2.  輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者的**歡迎郵件**中識別這個地址。 如果沒有收到「歡迎郵件」，請檢查垃圾郵件資料夾。
+2.  輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者歡迎郵件中識別這個地址。 如果沒有收到歡迎郵件，請檢查垃圾郵件資料夾。
 3.  按一下 [繼續]。
 4.  系統會將您重新導向至公司登入頁面。
 5.  請輸入您的密碼。
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 1.  請前往[訂閱者入口網站](https://my.visualstudio.com)
 2.  輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者的**歡迎郵件**中識別這個地址。  如果您未收到歡迎電子郵件，請檢查垃圾郵件資料夾。
 3.  按一下 [繼續]。
-4.  系統會將您重新導向至**決策頁面**。   如果您的訂閱已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的**公司或學校**帳戶，請選取 [公司或學校帳戶]。  如果您的訂閱與**公司**電子郵件地址建立關聯，但已經轉換成**個人** Microsoft 帳戶 (MSA)，請選取 [個人]
+4.  系統會將您重新導向至**決策頁面**。   如果您的訂用帳戶已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的**公司或學校**帳戶，請選取 [公司或學校帳戶]。  如果您的訂用帳戶與**公司**電子郵件地址建立關聯，但已經轉換成**個人** Microsoft 帳戶 (MSA)，請選取 [個人]
 5.  輸入您的密碼
 6.  按一下 [登入] 
 

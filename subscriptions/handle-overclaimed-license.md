@@ -1,5 +1,5 @@
 ---
-title: "處理過度領取的授權 | Visual Studio Marketplace"
+title: "處理過度領取的授權 | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5d2f2c3eed2c4d617e5e6bc8eb2ba0cc09f6bd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>處理「過度領取」的訂閱
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 發生這種情況時，[訂閱者] 索引標籤會顯示警示，並提供進一步資訊。 

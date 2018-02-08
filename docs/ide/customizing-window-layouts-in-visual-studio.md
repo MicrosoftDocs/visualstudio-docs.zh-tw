@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 在 Visual Studio 中，您可自訂視窗的位置、大小和行為，以建立最適合各種開發工作流程的視窗版面配置。 IDE 會記住您自訂的版面配置。 例如，若您變更 [方案總管]  的固定位置，然後再關閉 Visual Studio，則下次啟動時即使您在另一台電腦上操作，[方案總管]  亦會固定於相同位置。 您亦可命名和儲存自訂配置，然後使用單一命令切換各個配置。 例如，您可以建立一個編輯配置和一個偵錯配置，然後使用 [視窗] &#124; [套用視窗配置] 功能表命令在兩者間切換。  
@@ -134,7 +136,7 @@ ms.lasthandoff: 12/22/2017
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>建立 UI 專案，並自訂配置。  
 
-1.  在 [新增專案]  對話方塊中，建立 Visual C# WPF 桌面應用程式，並為它任意命名。 假設這是我們要在使用者介面上進行的專案，因此我們想要將設計工具視窗的空間最大化，並將造成妨礙的其他工具視窗移開。  
+1.  在 [新增專案] 對話方塊中，建立 C# WPF 桌面應用程式，並為它任意命名。 假設這是我們要在使用者介面上進行的專案，因此我們想要將設計工具視窗的空間最大化，並將造成妨礙的其他工具視窗移開。  
 
 2.  如果您有多個監視器，請將 [方案總管]  視窗和 [屬性]  視窗拉到第二個監視器。 在單一監視器系統上，嘗試關閉設計工具以外的所有視窗。  
 

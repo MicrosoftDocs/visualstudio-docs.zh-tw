@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,23 +16,24 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88f3ec2d9e8c682511c87cbcf5a5690ae797d8c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>選項對話方塊, 專案和方案, 建置和執行
 
-在此對話方塊中，您可以指定可同時建置的 Visual C++ 或 Visual C# 專案最大數目、特定的預設建置行為，和一些建置記錄檔設定。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後選取 [建置並執行]。
+在此對話方塊中，您可以指定可同時建置的 Visual C++ 或 C# 專案最大數目、特定的預設建置行為，和一些建置記錄檔設定。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後選取 [建置並執行]。
   
 **平行專案組建的最大數目**  
-指定可同時建置的 Visual C++ 和 Visual C# 專案的最大數目。 若要最佳化建置程序，平行專案組建的最大數目會自動設定為您電腦的 CPU 數目。 最大值是 32。  
+指定可同時建置的 Visual C++ 和 C# 專案的最大數目。 若要最佳化建置程序，平行專案組建的最大數目會自動設定為您電腦的 CPU 數目。 最大值是 32。  
 
 **僅在執行時建置啟始專案和相依性**  
 當您使用 F5 鍵，再選取 [偵錯] > [開始] 功能表命令，或使用 [建置] 功能表上的適用命令時，只會建置啟始檔案及其相依性。 如果清除，就會建置所有專案和相依性。 

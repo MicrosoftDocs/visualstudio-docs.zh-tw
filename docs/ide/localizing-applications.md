@@ -4,26 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], localizing applications
-- Visual C#, international applications
+- C#, international applications
 - applications [Visual Studio], localizing
 - localization [.NET Framework], applications
 ms.assetid: 879c20e0-8301-4f44-b520-97283848c965
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 92a7e56d05d0f9d71d51aa80fcc5d545b3baf061
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 「當地語系化」是針對指定文化特性或地區設定自訂應用程式的程序。 當地語系化工作主要是翻譯使用者介面。  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="related-sections"></a>相關章節  
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- 探討使用 Visual Basic 或 Visual C# 開發國際市場軟體的基本概念。  
+ 探討使用 Visual Basic 或 C# 開發國際市場軟體的基本概念。  
   
  [全球化 Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  提供建立支援多種文化特性之 Windows 應用程式的相關頁面連結。  

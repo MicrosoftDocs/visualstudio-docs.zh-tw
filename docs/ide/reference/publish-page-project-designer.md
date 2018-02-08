@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。  
@@ -44,16 +47,16 @@ ms.lasthandoff: 12/22/2017
  針對 WPF Web 瀏覽器應用程式，停用 [應用程式也可以在離線時使用]  選項，因為這類應用程式只能在上線時使用。  
   
  **應用程式檔案**  
- 開啟 [[應用程式檔案] 對話方塊](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，以用來指定個別檔案的安裝方式和位置。  
+ 開啟 [應用程式檔案] 對話方塊，以用來指定個別檔案的安裝方式和位置。  
   
  **必要條件**  
- 開啟 [[必要條件] 對話方塊](../../ide/reference/prerequisites-dialog-box.md)，以用來指定將必備元件 (例如 .NET Framework) 和應用程式安裝在一起。  
+ 開啟 [必要條件] 對話方塊，以用來指定將必備元件 (例如 .NET Framework) 和應用程式安裝在一起。  
   
  **更新**  
- 開啟 [[應用程式更新] 對話方塊](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
+ 開啟 [應用程式更新] 對話方塊，以用來指定應用程式的更新行為。 選取 [應用程式只能在線上時使用]  時無法使用。  
   
  **選項**  
- 開啟 [[發行選項] 對話方塊](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，以用來指定其他進階發行選項。  
+ 開啟 [發行選項] 對話方塊，以用來指定其他進階發行選項。  
   
  **發行版本**  
  設定應用程式的發行版本號碼；當版本號碼變更時，會以更新形式發行應用程式。 發行版本的每個部分 (**主要**、**次要**、**組建**、**修訂**) 最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，這是 <xref:System.Version> 允許的最大值。  
@@ -64,7 +67,7 @@ ms.lasthandoff: 12/22/2017
  選擇性。 選取此選項時 (預設)，每次發行應用程式時，發行版本號碼的 [修訂]  部分都會加一。 這樣會以更新形式發行應用程式。  
   
  **發行精靈**  
- 開啟 [[發行精靈]](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
+ 開啟 [發行精靈]。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
   
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。  

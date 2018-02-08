@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中建立方案和專案 | Microsoft Docs"
+title: "在 Visual Studio 中建立解決方案和專案 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/16/2017
 ms.reviewer: 
@@ -21,19 +21,19 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
-「專案」是 Visual Studio 中的邏輯容器，用以保存建置您應用程式所需的項目，例如原始程式碼檔、點陣圖、圖示，以及元件和服務參考。 當您建立新的專案時，Visual Studio 會建立一個包含該專案的「方案」。 接著可以視需要將新的或現有專案新增至方案。 方案也可以包含未連線至任何特定專案的檔案。
+「專案」是 Visual Studio 中的邏輯容器，用以保存建置您應用程式所需的項目，例如原始程式碼檔、點陣圖、圖示，以及元件和服務參考。 當您建立新的專案時，Visual Studio 會建立一個包含該專案的「解決方案」。 接著可以視需要將新的或現有專案新增至解決方案。 解決方案也可以包含未連線至任何特定專案的檔案。
 
 ![方案/專案階層架構](./media/vside-proj-soln.png)
 
-您可以在稱為**方案總管**的工具視窗中檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例方案 (BikeSharing.Xamarin-UWP)，它包含兩個專案：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每個專案都包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
+您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例方案 (BikeSharing.Xamarin-UWP) 包含兩個專案：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
 
 ![內含專案的方案總管](./media/vside-solution-explorer-projects.png)
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="to-create-a-project-from-a-project-template"></a>從專案範本建立專案
 
-1. 在 Visual Studio 中建立新的專案有多種方式。 在起始頁上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案]、[新增]、[專案]，或選擇工具列上的 [新增專案] 按鈕。
+1. 在 Visual Studio 中建立新的專案有多種方式。 在起始頁上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案]、[新增]、[專案...]，或選擇工具列上的 [新增專案] 按鈕。
 
   ![起始頁](./media/vside-newproject1.png)
 
@@ -69,11 +69,11 @@ ms.lasthandoff: 01/22/2018
 
 1. 選擇 [確定] 按鈕以建立方案和專案。
 
-1. 如果您想要將其他專案新增至方案，請選擇方案總管中的方案節點，然後在功能表列上選擇 [專案]、[新增項目]。
+1. 如果您想要將其他專案新增至解決方案，請選擇方案總管中的解決方案節點，然後在功能表列上選擇 [專案]、[新增項目]。
 
 ## <a name="create-a-project-from-existing-code-files"></a>從現有程式碼檔案建立專案
 
-如果您有程式碼來源檔案的集合，您可以輕鬆地將它們新增至專案。
+如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
 1. 在功能表上，選擇 [檔案]、[新增]、[現有程式碼中的專案]。
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 01/22/2018
 1. 在精靈中，瀏覽至檔案的位置，然後在 [名稱] 方塊中輸入新專案的名稱。 當您完成時，選擇 [完成] 按鈕。
 
 > [!NOTE]
-> 這個選項最適合用於相對簡單的檔案集合。 目前，只支援 Visual C++、Apache Cordova、Visual Basic 和 Visual C# 專案類型。
+> 這個選項最適合用於相對簡單的檔案集合。 目前，只支援 Visual C++、Apache Cordova、Visual Basic 和 C# 專案類型。
 
 ## <a name="add-files-to-a-solution"></a>將檔案新增至方案
 
@@ -118,20 +118,20 @@ ms.lasthandoff: 01/22/2018
 
 建立空的方案之後，您可以在 [專案] 功能表上，選擇 [新增項目] 或 [新增現有項目]，將新專案或項目或是現有專案或項目新增至該方案。
 
-如前所述，您也可以開啟程式碼檔案而不需要專案或方案。 若要了解如何以此方式開發程式碼，請參閱[在 Visual Studio 中不使用專案或解決方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
+如前所述，您也可以開啟程式碼檔案而不需要專案或解決方案。 若要了解以此方式開發程式碼，請參閱[在 Visual Studio 中不使用專案或解決方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>建立暫存的專案 (C# 和 Visual Basic)
 
 如果您建立 .NET 專案而不指定磁碟位置，它會是暫存專案。 暫存專案可讓您試驗 .NET 專案。 使用暫存專案時，隨時都可以選擇儲存或捨棄它。
 
-若要建立暫存專案，請先移至 [工具]、[選項]、[專案和方案]、[一般]，並取消選取 [建立時儲存新專案] 核取方塊。 然後像往常一樣開啟 [新增專案] 對話方塊。
+若要建立暫存專案，請先移至 [工具]、[選項]、[專案和方案]、[一般]，並取消核取 [建立時儲存新專案] 核取方塊。 然後像往常一樣開啟 [新增專案] 對話方塊。
 
 ## <a name="delete-a-solution-project-or-item"></a>刪除方案、專案或項目
 
 您可以永久刪除方案及其內容，但不使用 Visual Studio IDE。 刪除 Visual Studio 中的項目只會將這些項目從目前的方案或專案移除。 若要從系統永久刪除方案或其他元件，請使用檔案總管來刪除包含 .sln 和 .suo 方案檔的資料夾。 不過，在永久刪除方案之前，建議您備份任何專案或檔案，以免再次需要。
 
 > [!NOTE]
-> .suo 檔案是隱藏檔案，在預設檔案總管設定下不會顯示。 若要顯示隱藏的檔案，請在檔案總管的 [檢視] 功能表中，選取 [隱藏的項目] 核取方塊。
+> .suo 檔案是隱藏檔案，不會顯示在預設檔案總管設定下。 若要顯示隱藏的檔案，請在檔案總管的 [檢視] 功能表中，選取 [隱藏的項目] 核取方塊。
 
 ### <a name="to-permanently-delete-a-solution"></a>永久刪除方案
 
@@ -139,7 +139,7 @@ ms.lasthandoff: 01/22/2018
 
 1. 在 [檔案總管] 中，瀏覽上一層。
 
-1. 選擇包含方案的資料夾，然後選擇 **Delete** 鍵。
+1. 選擇包含解決方案的資料夾，然後選擇 **DELETE** 鍵。
 
 ## <a name="see-also"></a>另請參閱
 

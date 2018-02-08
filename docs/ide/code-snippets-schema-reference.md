@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的應用程式。 您可以提供程式碼片段來縮短輸入重複程式碼或搜尋範例所花費的時間，藉此提高產能。 您可以使用 IntelliSense 程式碼片段 XML 結構描述，建立自己的程式碼片段，並新增至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已包含的程式碼片段中。  
@@ -240,7 +242,7 @@ $selected$ is a great color. I love $selected$.
  指定常值或物件在 Visual Studio 中得到焦點時要執行的函式。  
   
 > [!NOTE]
->  只有 Visual C# 程式碼片段支援 `Function` 項目。  
+>  只有 C# 程式碼片段支援 `Function` 元素。  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ $selected$ is a great color. I love $selected$.
   
 -   `Expansion`：允許在游標所在位置插入程式碼片段。  
   
--   `Refactoring`：指定在 Visual C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。  
+-   `Refactoring`：指定在 C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。  
   
 ##  <a name="snippettypes"></a> SnippetTypes 項目  
  將個別 `SnippetType` 項目設為群組。 如果沒有 `SnippetTypes` 項目，程式碼片段就可以插入程式碼中的任何位置。  

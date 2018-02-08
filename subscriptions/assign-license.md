@@ -1,5 +1,5 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions
+Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,28 +9,29 @@ Description: Learn how administrators can assign licenses to subscribers
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d9d26c9519ec5cca1f7127f93d9d1ab60378ad3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
+
 ## <a name="assigning-a-single-user"></a>指派單一使用者
 如果您有可用的 Visual Studio 訂用帳戶授權，則可以將這些授權指派給新使用者，讓他們可以存取其訂用帳戶權益。 
 1.  若要指派單一 Visual Studio 訂閱者，請按一下資料表頂端的 [新增]。
 
     ![新增訂閱者](_img\assign-license-add\assign-license-add.png)
 
-2.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，則此欄位作為搜尋函式來尋找您目前目錄中的人員，因此您可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
+2.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
 
 如果您的組織用來接收電子郵件的電子郵件與登入的電子郵件不同，則可以選擇在這裡輸入它。 選取超連結，指出「進行通訊的電子郵件與登入的電子郵件不同嗎」？ 
 
-如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https:/my.visualstudio.com)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 完成後，請按一下 [新增]。
+如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 完成後，請按一下 [新增]。
 
-  ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-1.png)
+   ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-1.png)
 
-  ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-2.png)
+   ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-2.png)
 
 3.  新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 12/01/2017
 
 2. 大量指派會使用 Microsoft Excel 範本來上傳訂閱者。 在 [Upload Multiple Subscribers] (上傳多位訂閱者)　對話方塊中，按一下 [下載] 來下載範本。 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 
-![上傳多位訂閱者](_img\assign-license-add\bulk-assign-upload.png)
+    ![上傳多位訂閱者](_img\assign-license-add\bulk-assign-upload.png)
 
 3.  在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 參考是選擇性欄位。 如果您已正確填入範本的任何部分，則應該會看到描述問題的錯誤訊息。 完成時，請將檔案儲存至硬碟。
 **為了協助確保順利上傳，請觀察下列最佳做法：**
@@ -51,7 +52,7 @@ ms.lasthandoff: 12/01/2017
     - 移除表單欄位 (例如使用者名稱) 前後的空格。
     - 請確定使用者名稱未包含兩部分名字或姓氏之間的額外空格 (例如，兩部分名字 (例如 "Maggie May") 不應該鍵入為 "Maggie  May"，因為系統不會修剪額外空格)
 
-    ![大量新增範本](_img\assign-license-add\bulk-template.png)
+   ![大量新增範本](_img\assign-license-add\bulk-template.png)
 
 4.  返回 Visual Studio 訂用帳戶管理入口網站，並在 [Upload Multiple Subscribers] (上傳多位訂閱者) 對話方塊中按一下 [瀏覽]。 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]。 您會在螢幕上看到上傳進度。 
 

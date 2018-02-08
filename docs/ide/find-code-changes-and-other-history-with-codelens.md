@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -40,9 +42,9 @@ ms.lasthandoff: 12/22/2017
 
 -  Visual Studio Enterprise 或 Visual Studio Professional
 
--  Visual C# .NET 或 Visual Basic .NET 程式碼
+-  C# 或 Visual Basic 程式碼
 
-請選擇 [參考]  指標 (**[Alt+2]**)。 如果您看到 [0 個參考] ，代表您沒有來自 Visual C# 或 Visual Basic 程式碼的參考。 這不包含來自其他項目的參考，例如 XAML 和 ASPX 檔案。
+請選擇 [參考]  指標 (**[Alt+2]**)。 如果您看到 [0 個參考]，代表您沒有來自 C# 或 Visual Basic 程式碼的參考。 這不包含來自其他項目的參考，例如 XAML 和 ASPX 檔案。
 
 ![CodeLens &#45; 選擇參考指標](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -66,9 +68,9 @@ ms.lasthandoff: 12/22/2017
 
 - Team Foundation Server 2013 或更新版本、Visual Studio Team Services 或 Git
 
-- [Lync 2010 或更新版本或是商務用 Skype](http://technet.microsoft.com/en-us/lync)，以從程式碼編輯器連絡您的小組  
+- [Lync 2010 或更新版本或是商務用 Skype](https://technet.microsoft.com/office/dn788773)，以從程式碼編輯器連絡您的小組
 
-針對 Team Foundation 版本控制 (TFVC) 或 Git 儲存的 Visual C# .NET 或 Visual Basic .NET，您將在類別與方法層級取得 CodeLens 詳細資訊 (*程式碼項目層級* 指標)。 如果您的 Git 儲存機制裝載在 TfGit 中，您也會取得 TFS 工作項目的連結。  
+針對 Team Foundation 版本控制 (TFVC) 或 Git 儲存的 C# 或 Visual Basic 程式碼，您將在類別與方法層級取得 CodeLens 詳細資訊 (「程式碼元素層級」指標)。 如果您的 Git 儲存機制裝載在 TfGit 中，您也會取得 TFS 工作項目的連結。  
 
 ![程式碼項目&#45;層級指標](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ ms.lasthandoff: 12/22/2017
 
 ![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更這項限制。  
+預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/vsts/tfs-server/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更這項限制。
 
 若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更] 。  
 
@@ -193,7 +195,7 @@ ms.lasthandoff: 12/22/2017
 
 -   Visual Studio Enterprise 或 Visual Studio Professional  
   
--   Visual C# .NET 或 Visual Basic .NET 程式碼  
+-   C# 或 Visual Basic 程式碼  
   
 -   [單元測試專案](../test/unit-test-your-code.md) ，其中具有應用程式程式碼的單元測試  
   
@@ -233,15 +235,15 @@ ms.lasthandoff: 12/22/2017
   
 ###  <a name="NoIndicators"></a> 問：CodeLens 在哪裡？
 
-**答：** CodeLens 顯示在方法、類別、索引子和屬性層級的 Visual C# .NET 和 Visual Basic .NET 程式碼中。 CodeLens 會顯示在所有其他類型檔案的檔案層級。
+**答：** CodeLens 顯示在方法、類別、索引子和屬性層級的 C# 和 Visual Basic 程式碼中。 CodeLens 會顯示在所有其他類型檔案的檔案層級。
 
 - 請確定 CodeLens 已開啟。 請依序移至 [工具] 、[選項] 、[文字編輯器] 、[所有語言] 和 [CodeLens] 。  
-  
-- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)，確定程式碼索引已開啟。  
 
-- 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 [確認您擁有小組成員權限。](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
 
-- 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 ([**Ctrl + Shift + B**])。  
+- 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 [確認您擁有小組成員權限](/vsts/work/scale/multiple-teams)。
+
+- 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 ([**Ctrl + Shift + B**])。
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>問：為什麼看不到認可的工作項目詳細資料？
 
@@ -301,11 +303,11 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ###  <a name="LocalVersion"></a> 問：什麼是「本機版本」？
 
-**答：** [ **本機版本** ] 箭頭指向這個檔案的本機版本的最新變更集。 當伺服器有更新的變更集時，它們會顯示在 [ **本機版本** ] 箭頭上方或下方 (根據變更集的排列順序而定)。  
+**答：** [ **本機版本** ] 箭頭指向這個檔案的本機版本的最新變更集。 當伺服器有更新的變更集時，它們會顯示在 [ **本機版本** ] 箭頭上方或下方 (根據變更集的排列順序而定)。
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>問：我是否可以管理 CodeLens 處理程式碼的方式，以顯示記錄和連結項目？
 
-**答：** 可以，如果您的程式碼儲存於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)。
+**答：** 可以，如果您的程式碼儲存於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
 
 ## <a name="see-also"></a>另請參閱
 

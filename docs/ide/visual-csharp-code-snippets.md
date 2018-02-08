@@ -1,30 +1,32 @@
 ---
-title: "Visual C# 程式碼片段 | Microsoft Docs"
+title: "C# 程式碼片段 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Visual C# 程式碼片段
+# <a name="c-code-snippets"></a>C# 程式碼片段
 程式碼片段是可快速插入程式碼的現成程式碼片段。 例如，`for` 程式碼片段會建立空白 `for` 迴圈。 部分程式碼片段是範圍陳述式程式碼片段，可讓您選取程式碼行，然後選擇包含所選取程式碼行的程式碼片段。 例如，如果您選取程式碼行，然後啟用 `for` 程式碼片段，則會建立迴圈區塊內包含這些程式碼行的 `for` 迴圈。 程式碼片段可以更快速、更輕鬆且更可靠地撰寫程式碼。  
 
  您可以在游標位置插入程式碼片段，或在目前選取的程式碼周圍插入範圍陳述式程式碼片段。 程式碼片段插入器的叫用方式是透過 **IntelliSense** 功能表上的 [插入程式碼片段] 或 [範圍陳述式] 命令，或分別依序使用鍵盤快速鍵 CTRL+K 和 X 或是 CTRL+K 和 S。  

@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # 適合我的發行選項為何？
 
@@ -31,26 +34,22 @@ ms.lasthandoff: 12/22/2017
 
 在 [發行] 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。
 
-## Azure App Service
+## Azure App Service Web Apps
 
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) 可協助開發人員快速建立各種可調整的 Web 應用程式和服務，而不需要維護基礎結構。
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (或稱為 Web Apps) 可協助開發人員快速建立各種可調整的 Web 應用程式和服務，而不需要維護基礎結構。
 
-具體來說，針對 Web 應用程式，App Service 是 [Web 應用程式](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/)的容器，這是最符合您視為傳統 Web 主機的容器。 即，Web 應用程式提供必要計算資源，這些計算資源可以執行伺服器端程式碼，並可在網際網路中使用它。
-
-您可以透過為上層 App Service 選擇[定價層或方案](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/)，來決定 Web 應用程式計算能力的強弱。 您可以讓多個 Web 應用程式 (及其他應用程式類型) 共用相同的 App Service，而不需變更定價層。 例如，您可以在相同的 App Service 上同時裝載開發、預備和實際執行 Web 應用程式。
+您可以透過為上層 App Service 選擇[定價層或方案](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)，來決定 Web 應用程式計算能力的強弱。 您可以讓多個 Web 應用程式 (及其他應用程式類型) 共用相同的 App Service，而不需變更定價層。 例如，您可以在相同的 App Service 上同時裝載開發、預備和實際執行 Web 應用程式。
 
 App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管理這些虛擬機器。 App Service 中的每個 Web 應用程式都會獲指派唯一的 \*.azurewebsites.net URL；「免費」以外的所有定價層都允許為網站指派自訂網域名稱。
 
-### 選擇 Azure App Service 的時機
+### 選擇 Azure App Service Web Apps 的時機
 
 - 您想要部署可透過網際網路存取的 Web 應用程式。
 - 您想要依據需求自動調整 Web 應用程式，而不需要重新部署。
 - 您不想要維護伺服器基礎結構 (包括軟體更新)。
 - 您不需要在裝載 Web 應用程式的伺服器上進行任何電腦層級自訂。
 
-
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure App Service，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
-
 
 ## Azure 虛擬機器
 

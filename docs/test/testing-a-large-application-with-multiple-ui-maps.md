@@ -10,24 +10,26 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: ca9114dfe601f523878749593a213b36465bd0a7
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
+
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。  
   
  **需求**  
   
 -   Visual Studio 企業版  
   
- 當您建立新的自動程式化 UI 測試時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。  
+ 當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。  
   
  為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。  
   
@@ -67,24 +69,25 @@ ms.lasthandoff: 01/09/2018
   
 4.  選擇 [新增]。  
   
-     [[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]] 視窗會最小化，而 [自動程式碼 UI 測試產生器] 對話方塊隨即顯示。  
+     [Visual Studio] 視窗會最小化，而 [自動程式化 UI 測試產生器] 對話方塊隨即顯示。  
   
 5.  錄製第一個方法的動作，然後選擇 [產生程式碼]。  
   
 6.  當您已錄製第一個元件或頁面的所有動作和判斷提示，並將它們群組在方法中之後，請關閉 [自動程式碼 UI 測試產生器] 對話方塊。  
   
 7.  繼續建立 UI 對應。 錄製動作和判斷提示，將它們群組在每個元件的方法中，然後產生程式碼。  
-  
- 在許多情況下，應用程式的最上層視窗對所有精靈、表單和頁面會保持固定。 雖然每個 UI 對應都有最上層視窗的類別，但所有對應可能都會參考應用程式所有元件執行所在的同一個最上層視窗。 自動程式碼 UI 測試會以階層方式由上而下，從最上層視窗開始搜尋控制項，因此在複雜應用程式中，實際的最上層視窗可能會重複出現在每個 UI 對應中。 如果實際的最上層視窗會重複，當該視窗變更時可能會需要多個修改。 當您在 UI 對應之間切換時，這可能會造成效能問題。  
-  
- 若要將這個影響降至最低，可以使用 `CopyFrom()` 方法，確定該 UI 對應中新的最上層視窗與主要最上層視窗相同。  
-  
-## <a name="example"></a>範例  
- 下列範例是公用程式類別的一部分，此公用程式類別可用來存取在各種 UI 對應中產生之類別所代表的每個元件及其子控制項。  
-  
- 在這個範例中，名為 `Contoso` 的 Web 應用程式有首頁、產品網頁和購物車網頁。 上述每個網頁共用通用的最上層視窗，也就是瀏覽器視窗。 每個網頁都有 UI 對應，而且公用程式類別的程式碼類似如下：  
-  
-```  
+
+ 在許多情況下，應用程式的最上層視窗對所有精靈、表單和頁面會保持固定。 雖然每個 UI 對應都有最上層視窗的類別，但所有對應可能都會參考應用程式所有元件執行所在的同一個最上層視窗。 自動程式碼 UI 測試會以階層方式由上而下，從最上層視窗開始搜尋控制項，因此在複雜應用程式中，實際的最上層視窗可能會重複出現在每個 UI 對應中。 如果實際的最上層視窗會重複，當該視窗變更時可能會需要多個修改。 當您在 UI 對應之間切換時，這可能會造成效能問題。
+
+ 若要將這個影響降至最低，可以使用 `CopyFrom()` 方法，以確保該 UI 對應中新的最上層視窗與主要最上層視窗相同。
+
+## <a name="example"></a>範例
+
+下列範例是公用程式類別的一部分，此公用程式類別可用來存取在各種 UI 對應中產生之類別所代表的每個元件及其子控制項。
+
+在這個範例中，名為 `Contoso` 的 Web 應用程式有首頁、產品網頁和購物車網頁。 上述每個網頁共用通用的最上層視窗，也就是瀏覽器視窗。 每個網頁都有 UI 對應，而且公用程式類別的程式碼類似如下：
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +138,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>請參閱  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>另請參閱
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)  
+[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)  
+[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)

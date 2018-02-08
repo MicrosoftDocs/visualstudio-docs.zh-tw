@@ -9,15 +9,15 @@ Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>存取 Visual Studio 訂用帳戶管理入口網站
 ## <a name="for-mpsa"></a>針對 MPSA
-若要存取 Visual Studio 訂閱的管理入口網站，您必須是 Microsoft Business Center 入口網站或 BCP 的系統管理員。 
+若要存取 Visual Studio 訂用帳戶管理入口網站，您必須是 Microsoft 商務中心入口網站或 BCP 的系統管理員。 
 
 如需如何成為系統管理員的資訊，請參閱 [Manage User Quick Start Guide](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf) (管理使用者快速入門指南)。 如果您已具備系統管理員的身分，就可以直接前往 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)
 

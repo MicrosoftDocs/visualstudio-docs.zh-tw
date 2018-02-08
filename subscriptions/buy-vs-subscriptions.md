@@ -1,5 +1,5 @@
 ---
-title: "如何購買訂用帳戶 |Visual Studio Marketplace"
+title: "如何購買訂用帳戶 | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,25 +9,49 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ba92b84695bcd22405db56b739102bb33180b002
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
-#   <a name="how-to-buy-a-subscription"></a>如何購買訂用帳戶
+# <a name="how-to-buy-a-subscription"></a>如何購買訂用帳戶
 Visual Studio 訂用帳戶有兩大類型：雲端和標準，請見 [Visual Studio 定價網頁](https://www.visualstudio.com/vs/pricing/)的說明。
 
-# <a name="buy-visual-studio-cloud-subscription-either-monthly-or-annual"></a>購買 Visual Studio (雲端訂用帳戶，月繳或年繳) 
+## <a name="buy-visual-studio-cloud-subscriptions-either-monthly-or-annual"></a>購買 Visual Studio 雲端訂用帳戶 (月繳或年繳) 
 
-[如何購買 Visual Studio 訂用帳戶](https://docs.microsoft.com/vsts/billing/vs-subscriptions/buy-vs-subscriptions)
-[指派和管理您已購買的 Visual Studio 訂用帳戶](https://docs.microsoft.com/vsts/billing/vs-subscriptions/manage-vs-subscriptions)
+[如何購買 Visual Studio 訂用帳戶](/vsts/billing/vs-subscriptions/buy-vs-subscriptions)
+[指派和管理您已購買的 Visual Studio 訂用帳戶](/vsts/billing/vs-subscriptions/manage-vs-subscriptions)
 
-# <a name="buy-visual-studio-standard-subscription"></a>購買 Visual Studio (標準訂用帳戶)
+## <a name="buy-visual-studio-standard-subscriptions"></a>購買 Visual Studio 標準訂用帳戶
 您需要連絡軟體轉銷商購買標準的 Visual Studio 訂用帳戶，或請前往 [Microsoft Store](https://www.microsoft.com/store) 線上。
 
-# <a name="for-visual-studio-subscribers"></a>Visual Studio 訂閱者
-若要檢視訂閱者權益，請移至 Visual Studio 訂閱者入口網站 [(https://my.visualstudio.com)](https://my.visualstudio.com) 或按一下 [檢視我的訂用帳戶]。
+*   若要註冊您的 Azure 訂用帳戶，並從 Visual Studio Marketplace 進行購買，您將需要「個人」[Microsoft 帳戶](https://www.microsoft.com/account)，如果您要為組織購買，則需要[「公司或學校帳戶」](/azure/active-directory/sign-up-organization)，而帳戶會使用 Azure Active Directory (Azure AD) 管理身分識別。
+
+> [!WARNING]
+> 如果您使用 Azure 訂用帳戶購買 Visual Studio 雲端訂用帳戶，這些費用將會顯示為超額部分，且不會計算在您的 Azure 保證金中。 若要深入了解 Azure 帳單，請參閱[常見問題集](/vsts/billing/faq-azure-billing)。  
+
+### <a name="buy-subscriptions"></a>購買訂用帳戶
+
+
+1.  登入 [Visual Studio Marketplace > Subscriptions](https://marketplace.visualstudio.com/subscriptions) (Visual Studio Marketplace > 訂用帳戶)。
+
+2.  選擇您想要購買的訂用帳戶，例如：
+
+    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+
+3.  選取要用於計費的 Azure 訂用帳戶。
+或者，如果您沒有訂用帳戶，請註冊一個新的訂用帳戶。
+
+    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+
+4.  選取要購買的訂用帳戶數目。
+
+    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+
+    如果您不想將訂用帳戶指派給自己，請清除**將這個訂用帳戶指派給我**。
+
+5.  確認及完成購買程序。 若要立即檢視您的訂用帳戶權益，請移至 Visual Studio [訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)或按一下 [檢視我的訂用帳戶]。
 
 
 ### <a name="activating-subscriptions-purchased-through-the-microsoft-store"></a>啟動透過 Microsoft 市集購買的訂用帳戶
@@ -36,7 +60,7 @@ Visual Studio 訂用帳戶有兩大類型：雲端和標準，請見 [Visual Stu
 
 啟動您的訂用帳戶： 
 
-1. 按一下 [按一下這裡登入]。 系統會將您重新導向至 [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate)
+1. 按一下 [按一下這裡登入]。 系統會將您重新導向至 [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)
 
 2. 輸入您將用來存取 Visual Studio 訂用帳戶的電子郵件地址，然後按一下 [繼續]。
 
@@ -46,4 +70,4 @@ Visual Studio 訂用帳戶有兩大類型：雲端和標準，請見 [Visual Stu
 5. 成功登入後，[啟動您 Visual Studio 訂用帳戶] 視窗即會出現。
 6. 輸入從付款確認頁面或確認電子郵件取得的 [產品金鑰] 資訊，然後按一下 [啟動]。
 
-7. 您的訂用帳戶現在應該顯示在 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions) 上。
+7. 您的訂用帳戶現在應該顯示在 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 上。

@@ -4,30 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d550b5b6df7b799f00b0043846be387cb6e6322
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e9d1b0dca7c8e9d152a84273410e4bd7d768508
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>如何：將類別分割成部分類別 (類別設計工具)
-您可以使用 `Partial` 關鍵字 (在 Visual Basic 中) 或使用 `partial` 關鍵字 (在 Visual C# 中)，將類別或結構的宣告分割成數個宣告。 您可以在任意數目的不同原始程式檔或在一個原始程式檔中，使用任意數目的部分宣告。 不過，所有宣告都必須位於相同的組件和相同的命名空間中。  
+您可以使用 `Partial` 關鍵字 (在 Visual Basic 中) 或使用 `partial` 關鍵字 (在 C# 中)，將類別或結構的宣告分割成數個宣告。 您可以在任意數目的不同原始程式檔或在一個原始程式檔中，使用任意數目的部分宣告。 不過，所有宣告都必須位於相同的組件和相同的命名空間中。  
   
 部分類別適用於數種情況。 例如在處理大型專案時，將類別分割成多個檔案，可讓多位程式設計師同時處理該專案。 當您使用 Visual Studio 產生的程式碼時，不必重新建立原始程式檔即可變更類別  (Visual Studio 產生的程式碼範例包括 Windows Forms 和 Web 服務包裝函式程式碼)。因此，您可以建立使用自動產生類別的程式碼，而不必修改 Visual Studio 建立的檔案。  
   
-部分方法有兩種。 在 Visual C# 中，稱為 declaring (宣告) 和 implementing (實作)；在 Visual Basic 中則稱為 declaration (宣告) 和 implementation (實作)。  
+部分方法有兩種。 在 C# 中，稱為 declaring (宣告) 和 implementing (實作)；在 Visual Basic 中則稱為 declaration (宣告) 和 implementation (實作)。  
   
 類別設計工具支援部分類別和方法。 類別圖表中的類型圖形即為部分方法的單一宣告位置。 如果部分類別在多個檔案中定義，您可以指定類別設計工具要使用哪個宣告位置，方法是設定 [屬性] 視窗中 [新的成員位置] 屬性。 也就是說，當您按兩下類別圖形時，類別設計工具會導向依 [新的成員位置] 屬性識別、包含類別宣告的原始程式檔。 當您按兩下類別圖形中的部分方法時，類別設計工具會導向部分方法宣告。 另外，在 [屬性] 視窗中，[檔案名稱] 屬性是指宣告位置。 若是部分類別，[檔案名稱] 會列出所有包含該類別宣告和實作程式碼的檔案。 但若是部分方法，[檔案名稱] 只會列出包含部分方法宣告的檔案。  
   
@@ -56,7 +58,7 @@ End Class
 ```  
 
 ## <a name="example"></a>範例  
-若要分割 Visual C# 中的類型定義，請使用 `partial` 關鍵字，如下列範例所示。  
+若要分割 C# 中的類型定義，請使用 `partial` 關鍵字，如下列範例所示。  
   
 ```csharp  
 // First part of class definition.  
