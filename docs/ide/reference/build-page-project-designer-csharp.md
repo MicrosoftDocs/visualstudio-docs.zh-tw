@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cs.ProjectPropertiesBuild
+f1_keywords:
+- cs.ProjectPropertiesBuild
 helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 233bb7516678888a2c7c4e6ec0b1b4f7d21b1393
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 您可以使用 [專案設計工具] 的 [建置] 頁面，來指定專案的組建組態屬性。 此頁面只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。  
@@ -34,7 +37,7 @@ ms.lasthandoff: 12/22/2017
 下列選項可讓您選取要顯示或修改的組態和平台。  
 
 > [!NOTE]
->  使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](/debugger/how-to-set-debug-and-release-configurations.md)。
 
 **組態**  
 指定要顯示或修改的組態設定。 設定可以是 [使用中 (偵錯)] (這是預設值)、[偵錯]、[發行] 或 [所有組態]。  
@@ -104,9 +107,9 @@ ms.lasthandoff: 12/22/2017
 您可以使用下列設定，為建置流程設定輸出選項。  
 
 **輸出路徑**  
-指定此專案組態的輸出檔案位置。 在此方塊中輸入建置輸出的路徑，或選擇 [瀏覽] 按鈕以指定路徑。 請注意，路徑是相對的；如果您輸入絕對路徑，它會儲存為相對路徑。 預設路徑為 bin\Debug 或 bin\Release\\。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+指定此專案組態的輸出檔案位置。 在此方塊中輸入建置輸出的路徑，或選擇 [瀏覽] 按鈕以指定路徑。 請注意，路徑是相對的；如果您輸入絕對路徑，它會儲存為相對路徑。 預設路徑為 bin\Debug 或 bin\Release\\。
 
-使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，[偵錯] 功能表 (F5) 中的 [建置] 命令都會將組建放在偵錯位置。 不過，[建置] 功能表中的 [建置] 命令卻會將其放在您指定的位置。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，[偵錯] 功能表 (F5) 中的 [建置] 命令都會將組建放在偵錯位置。 不過，[建置] 功能表中的 [建置] 命令卻會將其放在您指定的位置。 如需詳細資訊，請參閱[了解組建組態](../../ide/understanding-build-configurations.md)。
 
 **XML 文件檔案**  
 指定將要在其中處理文件註解之檔案的名稱。 如需詳細資訊，請參閱 [/doc (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。  
