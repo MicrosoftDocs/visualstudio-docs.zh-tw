@@ -29,12 +29,14 @@
       }
     ],
     "overwrite": [],
-    "externalReference": [],
+   "externalReference": [],
     "globalMetadata": {
+      "bilingual_type": "hover over",
             "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
-            "ms.author": "",
+            "bilingual_type": "hover over",
+             "ms.author": "",
             "manager": "ghogen",
             "ms.date": "3/7/2017",
             "ms.topic": "article",
@@ -46,11 +48,13 @@
     "fileMetadata": {},
     "template": [],
     "xref": [
-      "../dotnet-xref/_zip/msdn.4.5.2.zip",
-      "../dotnet-xref/_zip/namespaces.4.5.2.zip",
-      "../dotnet-xref/_zip/vs.110.zip",
-      "../dotnet-xref/_zip/vs.140.zip",
-      "../dotnet-xref/_zip/office15.zip"
+      "dotnet-xref/_zip/dotnet.zip",
+      "dotnet-xref/_zip/vs.110.zip",
+      "dotnet-xref/_zip/vs.140.zip",
+      "dotnet-xref/_zip/office15.zip",
+      "dotnet-xref/_zip/missingapi.yml",
+      "dotnet-xref/_zip/msdnsmallset.yml",
+      "dotnet-xref/_zip/roslyn.yml"
     ],
     "dest": "scripting-docs"
   }
