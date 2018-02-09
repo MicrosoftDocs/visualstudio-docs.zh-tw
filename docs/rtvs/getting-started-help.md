@@ -1,23 +1,26 @@
 ---
 title: "Visual Studio R 工具中的 [說明] 視窗 | Microsoft Docs"
+description: "R 說明已直接整合至 Visual Studio 的互動式視窗。 方塊。"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Visual Studio R 工具中的說明
 
@@ -28,7 +31,7 @@ R 說明已直接整合至 Visual Studio 的互動式視窗。 每當您使用 `
 > [!Tip]
 > [說明] 視窗就像 Visual Studio 的所有其他視窗，可以讓您隨心所欲地排列和停駐。 請參閱[在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)。
 >
-> 若要在瀏覽器中開啟說明結果，請選取 [R 工具] > [選項] 功能表，並將 **R 說明瀏覽器**屬性設為 `External`。 請參閱[選項](options.md)。
+> 若要在瀏覽器中開啟說明結果，請選取 [R 工具] > [選項] 功能表，並將 **R 說明瀏覽器**屬性設為 `External`。 請參閱[選項](options-for-r-tools-in-visual-studio.md)。
 
 若要搜尋說明，請使用 `??` 命令，後面接著搜尋詞彙。 如果搜尋條件包含空格，請使用引號括住：
 
@@ -52,7 +55,7 @@ R 說明已直接整合至 Visual Studio 的互動式視窗。 每當您使用 `
     ![透過以滑鼠右鍵按一下的操作功能表叫用說明](media/help-right-click.png)
 
 > [!Tip]
-> 若要在瀏覽器中開啟整合式說明，請選取 [R 工具] > [選項]，並將 [F1 網頁瀏覽器] 設定為 `External`。 請參閱[選項](options.md)。
+> 若要在瀏覽器中開啟整合式說明，請選取 [R 工具] > [選項]，並將 [F1 網頁瀏覽器] 設定為 `External`。 請參閱[選項](options-for-r-tools-in-visual-studio.md)。
 
 ## <a name="integrated-stackoverflow-search"></a>整合式 StackOverflow 搜尋
 
@@ -64,4 +67,4 @@ R 說明已直接整合至 Visual Studio 的互動式視窗。 每當您使用 `
 
 ![變更 F1 網路搜尋字串選項](media/options-dialog.png)
 
-如果您想要在瀏覽器中顯示結果，請變更 [F1 網頁瀏覽器] 選項，如[選項](options.md)中所述。
+如果您想要在瀏覽器中顯示結果，請變更 [F1 網頁瀏覽器] 選項，如[選項](options-for-r-tools-in-visual-studio.md)中所述。

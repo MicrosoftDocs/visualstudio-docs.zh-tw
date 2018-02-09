@@ -11,21 +11,23 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
-如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下是如何回報問題，讓我們能夠加以診斷並修正。  
+如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下是如何回報問題，讓我們能夠加以診斷並修正的方式。  
 
 ## <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 如果您尚未登入，請先登入 Visual Studio，再回報問題。 如此一來，您不僅可以回報所遇到的問題，還可以針對問題進行投票或評論。 此外，您甚至可以針對所看到任何其他問題的貼文進行投票或評論。
 
-1.  按一下位於工具右邊的 [登入]，如以下螢幕擷取畫面所示。
-2.  依照畫面上的指示操作來登入。
+1.  在 Visual Studio 中，選取 [說明] > [傳送意見反應] > [回報問題]。
+2.  如有需要，請選取位於工具右邊的 [登入]，如以下螢幕擷取畫面所示。
+3.  依照畫面上的指示操作來登入。
 
  ![登入以回報問題](../ide/media/sign-in-new-ux.png "登入以回報問題")  
 
@@ -47,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>提供螢幕擷取畫面和附件 (選擇性)
 ###  <a name="provide_screenshots"></a>
- 選擇將目前螢幕傳送給 Microsoft。 您可按一下 [附加其他檔案]  按鈕，即可附加其他螢幕擷取畫面或檔案。  
+ 選擇將目前螢幕傳送給 Microsoft。 您可以按一下 [附加其他檔案]  按鈕，以附加其他螢幕擷取畫面或檔案。  
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供追蹤和堆積傾印 (選擇性)  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  
@@ -65,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="submit-the-report"></a>提交報告  
 ###  <a name="submit_the_report"></a>  
- 按一下 [提交] 按鈕，連同任何影像、追蹤檔案或傾印檔案送出您的報表 (如果 [提交] 按鈕呈現灰色，請確定您已提供報表的標題與描述)。  
+ 按一下 [提交] 按鈕，連同任何影像、追蹤檔案或傾印檔案送出您的報告 (如果 [提交] 按鈕呈現灰色，請確定您已提供報告的標題與描述)。  
 
 ## <a name="alternate-reporting"></a>其他回報方式
 ###  <a name="alternate_reporting"></a>  
@@ -73,5 +75,5 @@ ms.lasthandoff: 12/22/2017
 
  ![您也可以按 Tab 移至 Visual Studio 安裝程式中的 [提供意見反應] 按鈕，以開啟意見反應工具](../install/media/report-a-problem.png)
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [告訴我們](../ide/talk-to-us.md)

@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
-Visual Studio [建立單元測試] 命令可讓您建立單元測試方法虛設常式。 此功能允許輕鬆設定測試專案、測試類別，以及其內的測試方法虛設常式。 
+Visual Studio [建立單元測試] 命令可讓您建立單元測試方法虛設常式。 此功能允許輕鬆設定測試專案、測試類別，以及其內的測試方法虛設常式。
 
 ## <a name="availability-and-extensions"></a>可用性和延伸模組
 
@@ -63,8 +65,7 @@ Visual Studio Marketplace 提供測試架構延伸模組︰
 
 不過，這項功能也同樣適用於這種情況；其中，開發人員會開始撰寫某個程式碼，並使用該程式碼來啟動單元測試專業領域。 在編碼流程內，開發人員可能想要快速建立特定程式碼部分的單元測試方法虛設常式 (具有適當的測試類別，以及適當的測試專案)。 
 
-## <a name="more-information"></a>詳細資訊
+## <a name="see-also"></a>另請參閱
 
-請參閱部落格文章 [Creating unit test method stubs with "Create Unit Tests"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) (使用 [建立單元測試] 建立單元測試方法虛設常式)。
-
-在[這裡](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)可以找到更多單元測試部落格文章。
+[使用 [建立單元測試] 來建立單元測試方法虛設常式](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)  
+[單元測試部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/) \(英文\)

@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中對 UWP 應用程式執行單元測試 | Microsoft Docs"
+title: "在 Visual Studio 中執行單元測試 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>在 Visual Studio 中對 UWP 應用程式執行單元測試
-本主題說明如何使用 Microsoft Visual Studio 的 [測試總管] 執行單元測試。  
-  
-> [!NOTE]
->  本節各項主題會說明 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise 及 Professional 均提供針對單元測試的額外功能。  
->   
->  -   請使用任何協力廠商或開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析和顯示測試的程式碼涵蓋範圍資訊。  
-> -   每次建置後都執行測試。 您也可以使用 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，以將測試焦點放在自己的程式碼上。  
->   
->  如需詳細資訊，請參閱 MSDN Library 中的[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
-  
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
- [單元測試架構和測試專案](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [在 [測試總管] 中執行測試](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [執行測試](#BKMK_Running_tests)  
-  
- [檢視測試結果](#BKMK_Viewing_test_results)  
-  
--   [檢視測試詳細資料](#BKMK_Viewing_test_details)  
-  
--   [檢視測試方法的原始程式碼](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [組織測試清單](#BKMK_Organizing_the_test_list)  
-  
--   [將測試分組](#BKMK_Grouping_tests)  
-  
--   [搜尋和篩選測試清單](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [偵錯單元測試](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案  
- 適用於 UWP 應用程式的 Visual Studio Express，包括用於 Managed 和原生 C++ 程式碼的 Microsoft 單元測試架構。 [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以是 Visual C++ 或 Visual C# 和 Visual Basic 單元測試架構的任意組合。 只要寫好 .NET Framework 的待測程式碼，不論目標程式碼語言為何，就可使用任何 .NET Framework 語言撰寫測試專案。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>在 Visual Studio 中執行單元測試
+
+本主題描述如何使用 Microsoft Visual Studio 的 [測試總管] 來執行單元測試。
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案
+
+Visual Studio 包含受控碼和原生 C++ 程式碼皆適用的 Microsoft 單元測試架構。 [測試總管] 可以從方案中的多個測試專案來執行測試，以及從屬於實際執行程式碼專案的測試類別來執行測試。 測試專案可以是 Visual C++ 或 Visual C# 和 Visual Basic 單元測試架構的任意組合。 只要寫好 .NET Framework 的待測程式碼，不論目標程式碼語言為何，就可使用任何 .NET Framework 語言撰寫測試專案。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>在 [測試總管] 中執行測試  
  在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。  
   
@@ -117,7 +91,7 @@ ms.lasthandoff: 01/13/2018
 1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
   
     > [!NOTE]
-    >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
+    > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
   
 2.  在 [測試總管] 中，選取測試方法，然後選擇捷徑功能表上的 [偵錯選取的測試]。  
   

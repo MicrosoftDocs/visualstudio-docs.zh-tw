@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio 中使用 Python (Windows)
 
@@ -32,7 +32,7 @@ Windows 上的 Visual Studio 可透過 Python 開發與資料科學工作負載 
 若要開始使用：
 
 - 請遵循[安裝指示](installing-python-support-in-visual-studio.md)，以設定 Python 工作負載。
-- 完整瀏覽一或多份快速入門，以建立專案。 如果您不確定從何處著手，請先[從範本建立專案](quickstart-02-project-from-template.md)。
+- 完整瀏覽一或多份快速入門，以建立專案。 如果您不確定從何處著手，請先[從範本建立專案](quickstart-02-python-in-visual-studio-project-from-template.md)。
 - 請遵循[在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 的教學課程，以取得完整的端對端體驗。
 - 接著，請使用下表中的連結，探索 Python 相關功能與 Visual Studio 本身的功能。
 
@@ -42,11 +42,11 @@ Windows 上的 Visual Studio 可透過 Python 開發與資料科學工作負載 
 | [專案範本](managing-python-projects-in-visual-studio.md#project-templates) | 快速建立主控台、Web、Azure、資料科學及其他類型專案的專案結構 | [Visual Studio 範本](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | 多重解譯器支援 | 支援各種版本的 CPython 和 IronPython。 | N/A |
 | IPython 支援 | 包含對內嵌繪圖、.NET 及 Windows Presentation Foundation (WPF) 之 REPL 中 IPython/Jupyter 的支援。 | N/A |
-| [豐富的編輯、 IntelliSense 及程式碼理解](code-editing.md) | 包含語法色彩標示、所有程式碼和程式庫的自動完成、[程式碼格式設定](code-formatting.md)、簽章說明、類別檢視、移至定義、尋找所有參考、程式碼片段、[重構](code-refactoring.md)、[PyLint](code-pylint.md) 等。 | [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [互動式視窗](interactive-repl.md) | 提供 Python 的快速 REPL 體驗，可讓您輕鬆地醒目提示部分程式碼並將它傳送到 [Interactive Window (互動式視窗)]。 | N/A |
-| [功能完整的偵錯](debugging.md) | 可在使用或不使用 Visual Studio 專案的情況下進行偵錯，包括能夠針對現有的可執行檔進行偵錯、進行 [Python/C++ 混合模式偵錯](debugging-mixed-mode.md)、針對 Windows/Linux/Mac 進行[遠端偵錯](debugging-cross-platform-remote.md)、[針對 Azure 進行遠端偵錯](debugging-azure-remote.md)，以及在 [互動式視窗] 內進行偵錯。 | [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md) |
-| [具備完整報告的分析工具](profiling.md) | 探索您應用程式內時間的使用情況，包括可讓您比較不同分析執行回合間的效能。 | [分析工具](../profiling/profiling-tools.md) (並非所有 Visual Studio 分析功能都可供 Python 使用) |
-| [單元測試工具](unit-testing.md) | 在 Visual Studio [測試總管] 中探索、執行及管理測試，並輕鬆針對單元測試進行偵錯。 | [對程式碼進行單元測試](../test/unit-test-your-code.md) |
+| [豐富的編輯、 IntelliSense 及程式碼理解](editing-python-code-in-visual-studio.md) | 包含語法色彩標示、所有程式碼和程式庫的自動完成、[程式碼格式設定](formatting-python-code.md)、簽章說明、類別檢視、移至定義、尋找所有參考、程式碼片段、[重構](refactoring-python-code.md)、[PyLint](linting-python-code.md) 等。 | [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [互動式視窗](python-interactive-repl-in-visual-studio.md) | 提供 Python 的快速 REPL 體驗，可讓您輕鬆地醒目提示部分程式碼並將它傳送到 [Interactive Window (互動式視窗)]。 | N/A |
+| [功能完整的偵錯](debugging-python-in-visual-studio.md) | 可在使用或不使用 Visual Studio 專案的情況下進行偵錯，包括能夠針對現有的可執行檔進行偵錯、[進行 Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)、針對 Windows/Linux/Mac [在 Linux 上進行遠端偵錯](debugging-python-code-on-remote-linux-machines.md)、[在 Azure 上進行遠端偵錯](debugging-remote-python-code-on-azure.md)，以及在 [互動式視窗] 內進行偵錯。 | [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md) |
+| [具備完整報告的分析工具](profiling-python-code-in-visual-studio.md) | 探索您應用程式內時間的使用情況，包括可讓您比較不同分析執行回合間的效能。 | [分析工具](../profiling/profiling-tools.md) (並非所有 Visual Studio 分析功能都可供 Python 使用) |
+| [單元測試工具](unit-testing-python-in-visual-studio.md) | 在 Visual Studio [測試總管] 中探索、執行及管理測試，並輕鬆針對單元測試進行偵錯。 | [對程式碼進行單元測試](../test/unit-test-your-code.md) |
 
 Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，此 SDK 可簡化從 Windows、Mac OS X 和 Linux 應用程式使用 Azure 服務。
 

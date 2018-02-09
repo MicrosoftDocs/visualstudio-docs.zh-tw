@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>如何測試 UWP app 的 Visual C++ DLL 
+# <a name="how-to-test-a-visual-c-dll"></a>如何測試 Visual C++ DLL
+
 本主題提供一種方式，說明如何使用適用於 C++ 的 Microsoft 單元測試架構，來為通用 Windows 平台 (UWP) app 的 C++ DLL 建立單元測試。 RooterLib DLL 會藉由實作計算某數值的平方根估計數函式，示範微積分中極限理論的模糊記憶。 接著可將這個 DLL 包含在 UWP 應用程式中，以向使用者顯示可利用數學完成的有趣運算。  
   
  本主題示範如何使用單元測試做為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。  
   
- 本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 .DLL 建立個別方案。 如需使用何種結構的秘訣，請參閱[將單元測試新增至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。  
-  
-##  <a name="In_this_topic"></a>本主題內容  
-
- [建立方案和單元測試專案](#Create_the_solution_and_the_unit_test_project)  
-  
- [確認測試在測試總管中執行](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [將 DLL 專案加入方案](#Add_the_DLL_project_to_the_solution)  
-  
- [讓測試程式碼能夠看到 DLL 函式](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [反覆擴大測試範圍並使其通過](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [對失敗的測試進行偵錯](#Debug_a_failing_test)  
-  
- [重構程式碼，但不變更測試](#Refactor_the_code_without_changing_tests)  
+ 本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 .DLL 建立個別方案。 如需使用何種結構的秘訣，請參閱[將單元測試新增至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> 建立方案和單元測試專案  
   
-1.  選擇 [檔案] 功能表上的 [新增]，然後選擇 [新專案]。  
+1.  在 [檔案] 功能表上，選擇 [新增] > [新專案]。
   
-2.  在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C++]，並選擇 [UWP]。 接著從專案範本清單中選擇 [單元測試程式庫 (UWP app)]。  
-  
-     ![建立 C&#43;&#43; 單元測試程式庫](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  在 [新增專案] 對話方塊中，展開 [已安裝] > [Visual C++]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試應用程式 (通用 Windows)]。
   
 3.  將專案命名為 `RooterLibTests`；指定位置；將方案命名為 `RooterLib`；並確定已核取 [為方案建立目錄]。  
   

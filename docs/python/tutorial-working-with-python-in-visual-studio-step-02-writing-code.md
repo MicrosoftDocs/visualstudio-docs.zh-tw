@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>第 2 步：撰寫和執行程式碼
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/22/2018
     ```
 
     > [!Tip]
-    > 當您輸入時，自動完成選項會與子字串搭配使用，比對部分字組、字組開頭的字母，甚至是略過的字元。 如需詳細資料，請參閱[編輯程式碼 - 自動完成](code-editing.md#completions)。
+    > 當您輸入時，自動完成選項會與子字串搭配使用，比對部分字組、字組開頭的字母，甚至是略過的字元。 如需詳細資料，請參閱[編輯程式碼 - 自動完成](editing-python-code-in-visual-studio.md#completions)。
 
 1. 新增更多一些的程式碼來列印 360 度的餘弦值：
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/22/2018
 
 ## <a name="going-deeper"></a>繼續探討
 
-- [編輯程式碼](code-editing.md)
-- [格式化程式碼](code-formatting.md)
-- [重構程式碼](code-refactoring.md)
-- [使用 PyLint](code-pylint.md)
+- [編輯程式碼](editing-python-code-in-visual-studio.md)
+- [格式化程式碼](formatting-python-code.md)
+- [重構程式碼](refactoring-python-code.md)
+- [使用 PyLint](linting-python-code.md)

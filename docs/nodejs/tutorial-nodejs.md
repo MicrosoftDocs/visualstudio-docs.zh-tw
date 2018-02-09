@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 使用者入門
 在使用 Visual Studio 進行 Node.js 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
@@ -31,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 
 3. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式] ()，然後選擇 [確定]。   
 
-     如果您看不到 [B基本的 Azure Node.js Express 4 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。 
+     如果您看不到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。 
 
     Visual Studio 會建立新的方案，並開啟專案。 **app.js** 專案檔會在編輯器 (左窗格) 中開啟。 如果您不熟悉 Visual Studio 方案和專案，請參閱[快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式](../ide/quickstart-nodejs.md)。
 
@@ -84,7 +87,7 @@ ms.lasthandoff: 12/22/2017
     });
     ```
 
-1. 在 `data` 後面，鍵入 `: get`，而 IntelliSense 將會顯示 getData 顯示。 選取 `getData`。
+1. 在 `data` 後面，輸入 `: get`，而 IntelliSense 將會顯示 getData 函式。 選取 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -126,13 +129,15 @@ ms.lasthandoff: 12/22/2017
 
     ![檢查變數](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. 按 **F5** 繼續。
+1. 按 **F5** 以繼續。
 
     應用程式會在瀏覽器中開啟。
 
     在瀏覽器視窗中，您會看到標題為 "Express"，而第一個段落中有 "Welcome to Express"。
 
 1. 按一下按鈕，以顯示不同的影像。
+
+    ![瀏覽器中執行的應用程式](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
 1. 選取 [檢視] > [其他視窗] > [Node.js 互動式視窗]，以開啟 Node.js 互動式視窗。
 
@@ -144,7 +149,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 關閉網頁瀏覽器。  
 
-## <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
+## <a name="optional-publish-to-azure-app-service"></a>(選擇性) 發行至 Azure App Service
 
 1. 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。
 

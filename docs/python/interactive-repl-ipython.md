@@ -1,29 +1,31 @@
 ---
 title: "Visual Studio 中的 IPython REPL | Microsoft Docs"
+description: "在 IPython 模式中使用 Visual Studio 互動式視窗，以便有易於使用的互動式開發環境，並具有「互動式平行計算」功能。"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33765a2c70f6c58759e2722b04d770b6f8822a6
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d084731c821bf31743e8c4dce5f31881f19a56f4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
-IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的互動式開發環境，且具有「互動式平行計算」功能。 本主題引導在 Visual Studio 互動式視窗中使用 IPython，其中所有的一般[互動式視窗](interactive-repl.md)功能也都可使用。
+IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的互動式開發環境，且具有「互動式平行計算」功能。 本主題引導在 Visual Studio 互動式視窗中使用 IPython，其中所有的一般[互動式視窗](python-interactive-repl-in-visual-studio.md)功能也都可使用。
 
 針對此逐步解說，您需要安裝 [Anaconda](https://www.continuum.io) 環境，其中包含 IPython 和必要的程式庫。
 
@@ -64,14 +66,14 @@ IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的
         xs = np.arange(20)
         ys = np.random.rand(20)
         # You can provide either a single color or an array. To demonstrate this,
-        # the first bar of each set will be colored cyan.
-        cs = [c] * len(xs) 
-        cs[0] = 'c' 
+        # the first bar of each set is colored cyan.
+        cs = [c] * len(xs)
+        cs[0] = 'c'
         ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
 
-    ax.set_xlabel('X') 
-    ax.set_ylabel('Y') 
-    ax.set_zlabel('Z') 
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
     plt.show()
     ```
 

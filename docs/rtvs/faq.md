@@ -1,23 +1,26 @@
 ---
 title: "適用於 Visual Studio 的 R 工具常見問題集 | Microsoft Docs"
+description: "在 Visual Studio 中有關 R 的常見問題。"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -67,7 +70,7 @@ ms.lasthandoff: 12/22/2017
 
 **問：我可以從何處下載這些解譯器？**
 
-答： 請參閱[安裝](installation.md)。
+答： 請參閱[安裝](installing-r-tools-for-visual-studio.md)。
 
 問：**什麼是 Microsoft R Server？**
 
@@ -89,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 
 問： **什麼是 Visual Studio 中的遠端服務？**
 
-答： Visual Studio 的遠端 R 服務可讓您設定 Windows 或 Linux 電腦，並從 RTVS 連線到該服務。 請參閱[設定遠端工作區](workspaces-remote-setup.md)。
+答： Visual Studio 的遠端 R 服務可讓您設定 Windows 或 Linux 電腦，並從 RTVS 連線到該服務。 請參閱[設定遠端工作區](setting-up-remote-r-workspaces.md)。
 
 問： **RTVS 可以連線到 Microsoft R Server 嗎？**
 
@@ -101,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 
 問：**RTVS 可以連線到安裝 R 的遠端電腦嗎？**
 
-若要在遠端電腦上執行 R 程式碼，必須有些服務接聽要求、接收程式碼，並將結果傳回用戶端電腦。 這就是 Visual Studio 的遠端 R 服務功能。 請參閱[設定遠端工作區](workspaces-remote-setup.md)。
+若要在遠端電腦上執行 R 程式碼，必須有些服務接聽要求、接收程式碼，並將結果傳回用戶端電腦。 這就是 Visual Studio 的遠端 R 服務功能。 請參閱[設定遠端工作區](setting-up-remote-r-workspaces.md)。
 
 問： **什麼是遠端工作階段？**
 

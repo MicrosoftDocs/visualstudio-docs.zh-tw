@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/22/2018
 
 1. 繼續使用 [逐步執行]，直到您再次到達 `make_dot_string`。 然後使用 [跳離函式]，並注意到，您回到 `for` 迴圈。 使用 [跳離函式]，偵錯工具會執行函式的其餘部分，然後在要呼叫的程式碼中自動暫停。 如果您逐步執行您想要偵錯之較長函式的某個部分，但不需要逐步執行其餘部分，也不想要在要呼叫的程式碼中設定明確的中斷點，則這十分有用。
 
-1. 若要繼續執行程式，直到達到下一個中斷點，請使用 [繼續] (F5)。 因為您在 `for` 迴圈中有中斷點，將會在下一個反覆項目中斷。
+1. 若要繼續執行程式，直到達到下一個中斷點，請使用 [繼續] (F5)。 因為您在 `for` 迴圈中有中斷點，所以會在下一個反覆項目中斷。
 
 1. 逐步執行迴圈中的數百個反覆項目可能十分冗長，因此 Visual Studio 可讓您將「條件」新增至中斷點。 偵錯工具接著只會在符合條件時，將程式暫停於中斷點。 例如，您可以在 `for` 陳述式上使用含中斷點的條件，讓它只在 `i` 的值超過 1600 時暫停。 若要設定此條件，請以滑鼠右鍵按一下中斷點紅點，然後選取 [條件] (Alt+F9,C)。 在出現的 [中斷點設定] 快顯視窗中，輸入 `i > 1600` 作為運算式，然後選取 [關閉]。 按 F5 繼續執行，並觀察程式在下一個中斷之前反覆執行多次。
 
@@ -114,5 +114,5 @@ ms.lasthandoff: 01/22/2018
 
 ### <a name="going-deeper"></a>繼續探討
 
-- [偵錯](debugging.md)。
+- [偵錯](debugging-python-in-visual-studio.md)
 - [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)提供 Visual Studio 偵錯功能的完整文件。

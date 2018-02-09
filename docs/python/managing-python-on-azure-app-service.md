@@ -1,14 +1,16 @@
 ---
-title: "管理 Azure App Service 上的 Python | Microsoft Docs"
+title: "在 Azure App Service 上安裝 Python 解譯器和程式庫 | Microsoft Docs"
+description: "如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。"
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
@@ -131,7 +133,7 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 - `WSGI_HANDLER` 必須指向可從應用程式匯入的 WSGI 應用程式。
 - `WSGI_LOG` 是選擇性的，但建議用於偵錯應用程式。 
 
-如需 Bottle、Flask 以及 Django Web 應用程式的 `web.config` 內容詳細資料，請參閱[發行至 Azure](publishing-to-azure.md)。
+如需 Bottle、Flask 以及 Django Web 應用程式的 `web.config` 內容詳細資料，請參閱[發行至 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ### <a name="configuring-the-httpplatform-handler"></a>設定 HTTP 平台處理常式
 
@@ -170,7 +172,7 @@ HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Pytho
 | --- | --- |
 | [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
 | [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |
-| 應用程式套件組合 | 直接將套件安裝到您的專案中，然後將其部署到 App Service，如同套件就是應用程式的一部分。 根據更新它們的相依性數目和頻率，這個方法可能是讓工作中部署進行的最簡單方式。 請務必注意，這些程式庫必須符合伺服器上的 Python 版本，否則您在部署之後會看到難以理解的錯誤。 儘管如此，由於 App Service 網站延伸模組中的 Python 版本與 python.org 上發行的版本完全相同，因此您可以輕鬆取得適用於本機開發的相容版本。 |
+| 應用程式套件組合 | 直接將套件安裝到您的專案中，然後將其部署到 App Service，如同套件就是應用程式的一部分。 根據更新它們的相依性數目和頻率，這個方法可能是讓工作中部署進行的最簡單方式。 請務必注意，這些程式庫必須符合伺服器上的 Python 版本，否則您在部署之後會看到奇怪的錯誤。 儘管如此，由於 App Service 網站延伸模組中的 Python 版本與 python.org 上發行的版本完全相同，因此您可以輕鬆取得適用於本機開發的相容版本。 |
 | 虛擬環境 | 不支援。 請改為使用套件組合，並設定 `PYTHONPATH` 環境變數以指向套件的位置。 |
 
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service 的 Kudu 主控台

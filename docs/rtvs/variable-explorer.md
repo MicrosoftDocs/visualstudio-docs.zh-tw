@@ -1,27 +1,30 @@
 ---
 title: "Visual Studio R 工具中的變數總管 | Microsoft Docs"
+description: "Visual Studio 中的 [變數總管] 會顯示目前 R 工作階段中指定範圍內的所有變數。"
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 1d766d3ad6a48a46c3f781b8a87e5f388de93e74
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="variable-explorer"></a>變數總管
 
-使用 [R 工具] > [Windows] > [變數總管] (如果曾使用 [R 工具] > [資料科學設定] 則為 Ctrl+8) 開啟的 [變數總管] 視窗，會在目前的 R 工作階段中顯示指定範圍內的所有變數。 例如，如果您要開啟變數總管，並在[互動視窗](interactive-repl.md)中輸入下列行：
+使用 [R 工具] > [Windows] > [變數總管] (如果曾使用 [R 工具] > [資料科學設定] 則為 Ctrl+8) 開啟的 [變數總管] 視窗，會在目前的 R 工作階段中顯示指定範圍內的所有變數。 例如，如果您要開啟變數總管，並在[互動視窗](interactive-repl-for-r-in-visual-studio.md)中輸入下列行：
 
 ```R
 x <- 42

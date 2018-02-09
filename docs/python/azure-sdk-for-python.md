@@ -1,14 +1,16 @@
 ---
 title: "Azure SDK for Python |Microsoft 文件"
+description: "適用於 Python 的 Azure SDK 可讓您更輕鬆地從在任何平台上執行的 Python 應用程式取用 Microsoft Azure 服務。"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 01/22/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: fa18c4a0b29b9f9dc05dae3093b4432e38635154
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: f4f42f80bef2548c8caaff84df0d9a0118bfeac7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -30,7 +32,7 @@ Azure SDK for Python 可讓您更輕鬆地從 Windows、Mac OSX 和 Linux 上執
 
 Azure SDK 是從 [Python 封裝索引 (英文)](https://pypi.python.org/pypi/azure) 安裝。
 
-安裝**最新的穩定版本** (支援 Python 2.7 與 3.3 或更新版本)，如下所示：
+如下所示安裝**最新的穩定版本** (支援 Python 2.7 與 3.x 或更新版本)：
 
 ```command
 pip install azure
@@ -42,7 +44,7 @@ pip install azure
 
 您可以在 [azure-sdk-for-python.readthedocs.org (英文)](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html) 找到文件。
 
-[Azure SDK for Python 開發人員中心](http://azure.microsoft.com/develop/python/)也有一些實用的資源，包括教學課程，例如：
+[適用於 Python 的 Azure SDK 開發人員中心](http://azure.microsoft.com/develop/python/)也有一些實用的資源，其中包括數個教學課程：
 
 - 使用 [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
 - [Blob 儲存體](/azure/storage/storage-python-how-to-use-blob-storage)

@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 01/17/2018
+ms.date: 01/31/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,17 +13,20 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dee8cbd037fc1b4dda7f420e9a2cbff925d9a23
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: b6724896790d6fd3c6356bf63c6119f856640531
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 下表列出 Visual Studio 2017 迄今為止的組建編號和發行日期。
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.6 | 發行 | 2018/1/29 | 15.5.27130.2027 |
+| 15.5.5 | 發行 | 2018/1/25 | 15.5.27130.2026 |
+| 15.6.0 Preview 3.0 | 預覽 | 2018/1/25 | 15.6.27323.2 |
 | 15.5.4 | 發行 | 2018/1/16 | 15.5.27130.2024 |
 | 15.6.0 Preview 2.0 | 預覽 | 2018/1/10 | 15.6.27309.0 |
 | 15.5.3 | 發行 | 2018/1/9 | 15.5.27130.2020 |
@@ -96,7 +99,7 @@ ms.lasthandoff: 01/22/2018
 | 15.0.0 | 發行 | 3/7/2017 | 15.0.26228.4 |
 
 ## <a name="get-support"></a>取得支援
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
 
 以下是一些支援選項：
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
@@ -104,7 +107,7 @@ ms.lasthandoff: 01/22/2018
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [Visual Studio 2017 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

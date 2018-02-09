@@ -1,23 +1,26 @@
 ---
 title: "歡迎使用 Visual Studio R 工具 | Microsoft Docs"
+description: "適用於已安裝 Visual Studio R 工具之開發人員的摘要資訊。"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 747744ca3a0d01b09cbba53a499902f13f3e8b51
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 55cadf3d02f6b0713a315c374b7979495b3ab01e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>歡迎使用 Visual Studio R 工具
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="resources"></a>資源
 
 - [文件 (英文)](index.md)
-- [安裝步驟](installation.md)
+- [安裝步驟](installing-r-tools-for-visual-studio.md)
 - [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues) (在 GitHib 上提交並瀏覽錯誤和功能要求)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE) (探索和參與程式原始碼)
 - 若要傳送意見反應，而不使用 Github (這是慣用作業)，請使用 Visual Studio 中的 [R 工具] > [意見反應] 功能表。

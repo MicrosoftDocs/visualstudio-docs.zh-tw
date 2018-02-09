@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -12,19 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
+# <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在錯誤清單或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以透過在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在錯誤清單或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
 在 .editorconfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。
 
@@ -34,7 +32,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="symbols"></a>Symbol
 
-首先，請先識別欲套用命名規則的符號群組。 此屬性具有下列格式：
+首先，請先識別要套用命名規則的符號群組。 此屬性具有下列格式：
 
 `dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`
 
@@ -49,26 +47,26 @@ ms.lasthandoff: 01/17/2018
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
 - \*(請使用此值來指定所有符號)
-- Class - 類別
+- Class
 - struct
 - interface
 - enum
-- 屬性
-- 方法
-- Field - 欄位
-- Event - 事件
-- Delegate - 委派
-- 參數
+- property
+- method
+- field
+- event
+- delegate
+- parameter
 
 ### <a name="accessibility-levels-of-symbols"></a>符號的存取層級
 
-描述您欲套用命名規則之符號的存取層級。請使用下列格式來指定一個屬性名稱：
+描述您要套用命名規則之符號的存取層級。請使用下列格式來指定一個屬性名稱：
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
 以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
 
-- \* (請使用此值來指定所有存取層級)
+- \* (使用此值來指定所有存取層級)
 - public
 - internal 或 friend
 - private
@@ -100,7 +98,7 @@ ms.lasthandoff: 01/17/2018
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
-藉由將 **<styleTitle\>** 的值取代為具描述性的標題來給予樣式一個名稱。例如：`first_word_upper_case_style`。 您將會在描述命名樣式 (前置詞、後置詞、文字分隔符號字元，以及大寫) 的屬性名稱中使用 **<styleTitle\>** 的值。 請使用一或多個屬性來描述您的樣式。
+透過將 **<styleTitle\>** 的值取代為具描述性的標題來給予樣式一個名稱。例如：`first_word_upper_case_style`。 您將會在描述命名樣式 (前置詞、後置詞、文字分隔符號字元，以及大寫) 的屬性名稱中使用 **<styleTitle\>** 的值。 使用一或多個屬性來描述您的樣式。
 
 ### <a name="require-a-prefix"></a>需要前置詞
 
@@ -149,7 +147,7 @@ ms.lasthandoff: 01/17/2018
 ------------ | -------------
 無或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
-warning | 當未遵循此樣式時，在錯誤清單中顯示編譯器警告。
+警告 | 當未遵循此樣式時，在錯誤清單中顯示編譯器警告。
 個錯誤 | 當未遵循此樣式時，在錯誤清單中顯示編譯器錯誤。
 
 > [!NOTE]

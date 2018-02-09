@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中管理 Python 專案 | Microsoft Docs"
+title: "在 Visual Studio 中管理 Python 應用程式的專案 | Microsoft Docs"
 description: "說明 Visual Studio 中專案的用途、示範如何建立及管理適用於 Python 程式碼的專案，以及摘要說明可供 Python 使用的各種專案範本。"
 ms.custom: 
 ms.date: 01/16/2018
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Python 專案
 
@@ -73,8 +73,8 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | --- | --- |
 | [從現有 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)來變更此環境。 |
-| [Azure 雲端服務](template-azure-cloud-service.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
-| [Web 專案](template-web.md) | 以各種架構 (包括 Bottle、Django、Flask 及 Flask/Jade) 為基礎的 Web 伺服器專案。 |
+| [Azure 雲端服務](python-azure-cloud-service-project-template.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
+| [Web 專案](python-web-application-project-templates.md) | 以各種架構 (包括 Bottle、Django、Flask 及 Flask/Jade) 為基礎的 Web 伺服器專案。 |
 | IronPython 應用程式 | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
 | IronPython WPF 應用程式 | 一種針對應用程式的使用者介面使用 IronPython 搭配 Windows Presentation Foundation XAML 檔案的專案結構。 Visual Studio 會提供 XAML UI 設計工具、程式碼後置可以用 Python 來撰寫，應用程式則會在不顯示主控台的情況下執行。 |
 | IronPython Silverlight 網頁 | 一種使用 Silverlight 在瀏覽器中執行的 IronPython 專案。 應用程式的 Python 程式碼會以指令碼的形式包含在網頁中。 重複使用指令碼標記會向下拖曳出一些 JavaScript 程式碼，這些程式碼會將在 Silverlight 內部執行的 IronPython 初始化，而您的 Python 程式碼便可從中與 DOM 互動。 |

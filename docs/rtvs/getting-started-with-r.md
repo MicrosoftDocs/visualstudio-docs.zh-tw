@@ -1,33 +1,30 @@
 ---
 title: "Visual Studio 中的 R 使用者入門 | Microsoft Docs"
+description: "在 Visual Studio 中使用 R 的逐步解說，包括專案建立、互動式視窗、程式碼編輯和偵錯。"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: cf8df86322e10054dee5dbcee95839506f690306
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
-一旦安裝了 Visual Studio R 工具 (RTVS) (請參閱[安裝](installation.md))，便可以快速體驗一下這些工具提供的體驗。 下列各節將引導您完成簡短的教學課程︰
-
-- [建立 R 專案](#create-an-r-project)
-- [瀏覽 Interactive 視窗和 IntelliSense](#explore-the-interactive-window-and-intellisense)
-- [體驗程式碼編輯功能](#experience-code-editing-features)
-- [偵錯您的程式碼](#debugging-your-code)
-- [後續步驟](#next-steps)
+一旦安裝了 Visual Studio R 工具 (RTVS) (請參閱[安裝](installing-r-tools-for-visual-studio.md))，便可以快速體驗一下這些工具提供的體驗。 
 
 ## <a name="create-an-r-project"></a>建立 R 專案
 
@@ -39,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 建立專案之後，您會看到下列視窗︰
 
-    - 右邊為 Visual Studio 方案總管，您會在此看到專案，位於包含的「解決方案」內。 (解決方案可以包含任意數目且不同類型的專案，如需詳細資料，請參閱[專案](projects.md)。
+    - 右邊為 Visual Studio 方案總管，您會在此看到專案，位於包含的「解決方案」內。 (解決方案可以包含任意數目且不同類型的專案，如需詳細資料，請參閱[專案](r-projects-in-visual-studio.md)。
     - 左上方是新的 R 檔案 (`script.R`)，您可以在其中使用 Visual Studio 所有的編輯功能來編輯原始程式碼。
     - 左下方是 [R 互動] 視窗，您可以在其中以互動方式開發及測試程式碼。
 
@@ -74,13 +71,13 @@ ms.lasthandoff: 12/22/2017
 
     ![在 Visual Studio 中顯示繪圖](media/getting-started-07-plot-window.png)
 
-互動式視窗也可讓您檢閱您的歷程記錄、載入和儲存工作區、附加至偵錯工具，並與原始程式碼檔案互動，而不使用複製貼上。 如需詳細資料，請參閱[使用 R 互動視窗](interactive-repl.md)。
+互動式視窗也可讓您檢閱您的歷程記錄、載入和儲存工作區、附加至偵錯工具，並與原始程式碼檔案互動，而不使用複製貼上。 如需詳細資料，請參閱[使用 R 互動視窗](interactive-repl-for-r-in-visual-studio.md)。
 
 ## <a name="experience-code-editing-features"></a>體驗程式碼編輯功能
 
 簡短地使用互動式視窗，示範了也適用於程式碼編輯器的基本編輯功能，例如 IntelliSense。 如果您如同之前一樣輸入相同的程式碼，您會看到相同的自動完成和 IntelliSense 提示，但輸出不會相同。
 
-在 `.R` 檔案中撰寫程式碼可讓您一次看到所有程式碼，並且能較輕鬆地進行細微變更，然後快速在互動式視窗中執行程式碼，以查看結果。 您也可以在專案中有任意數目的檔案。 當程式碼在檔案中時，您也可以在偵錯工具中逐步執行它 (在本主題中稍後討論)。 當您開發計算演算法並撰寫程式碼來管理一或多個資料集時，尤其是當您想要檢查所有中繼結果時，這些功能很有幫助。
+在 `.R` 檔案中撰寫程式碼可讓您一次看到所有程式碼，並且能較輕鬆地進行細微變更，然後快速在互動式視窗中執行程式碼，以查看結果。 您也可以在專案中有任意數目的檔案。 當程式碼在檔案中時，您也可以在偵錯工具中逐步執行程式碼 (在本文中稍後討論)。 當您開發計算演算法並撰寫程式碼來管理一或多個資料集時，尤其是當您想要檢查所有中繼結果時，這些功能很有幫助。
 
 舉例來說，下列步驟會建立一些程式碼來探索 [Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem) (中央限制理論) (Wikipedia)。 (這個範例取自於 Paul Teetor 的 *R Cookbook*。)
 
@@ -109,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ ms.lasthandoff: 12/22/2017
 
     ![Visual Studio 中的更新雙重繪圖，比例正確](media/getting-started-10-plot3.png)
 
-您在編輯器中還可以做其他事。 如需詳細資訊，請參閱[編輯程式碼](code-editing.md)、[IntelliSense](code-intellisense.md)和[程式碼片段](code-snippets.md)。
+您在編輯器中還可以做其他事。 如需詳細資訊，請參閱[編輯程式碼](editing-r-code-in-visual-studio.md)、[IntelliSense](r-intellisense.md)和[程式碼片段](code-snippets-for-r.md)。
 
 ## <a name="debugging-your-code"></a>偵錯您的程式碼
 
@@ -169,14 +166,14 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
 1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。
 
-若要深入資訊，請參閱[偵錯](debugging.md)和[變數總管](variable-explorer.md)。
+若要深入資訊，請參閱[偵錯](debugging-r-in-visual-studio.md)和[變數總管](variable-explorer.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-在此逐步解說中，您已了解 R 專案的基本概念、使用互動式視窗、程式碼編輯，以及在 Visual Studio 中偵錯。 若要繼續探索更多的功能，請參閱下列主題，以及目錄中所示的主題︰
+在此逐步解說中，您已了解 R 專案的基本概念、使用互動式視窗、程式碼編輯，以及在 Visual Studio 中偵錯。 若要繼續探索更多的功能，請參閱下列文章，以及目錄中所示的文章︰
 
 - [範例專案](getting-started-samples.md)
-- [編輯程式碼](code-editing.md)
-- [偵錯](debugging.md)
-- [工作區](workspaces.md)
-- [視覺化資料](visualizing-data.md)
+- [編輯程式碼](editing-r-code-in-visual-studio.md)
+- [偵錯](debugging-r-in-visual-studio.md)
+- [工作區](r-workspaces-in-visual-studio.md)
+- [視覺化資料](visualizing-data-with-r-in-visual-studio.md)

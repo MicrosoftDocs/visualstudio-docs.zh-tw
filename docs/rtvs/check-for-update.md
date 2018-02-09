@@ -1,23 +1,26 @@
 ---
 title: "Visual Studio R 工具的目前版本 | Microsoft Docs"
+description: "如何檢查 Visual Studio R 工具的版本和安裝更新。"
 ms.custom: 
-ms.date: 12/12/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 11bad9be7d64d0760b1e7a3d138b8770f0459899
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: dbc268eba8822c2df38ca5b4363a47116eaf5152
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
@@ -31,6 +34,6 @@ ms.lasthandoff: 12/22/2017
 
 針對 Visual Studio 2015，最新的安裝程式可從 [aka.ms/rtvs-current](https://aka.ms/rtvs-current) 取得 (直接下載)。
 
-請參閱[安裝](installation.md)以取得 Visual Studio 和 Windows 的需求。
+請參閱[安裝](installing-r-tools-for-visual-studio.md)以取得 Visual Studio 和 Windows 的需求。
 
 如需 Microsoft R Open 和 Microsoft R Server 的更新，請參閱︰[Microsoft R 產品。](http://aka.ms/rtvs-msft-r)
