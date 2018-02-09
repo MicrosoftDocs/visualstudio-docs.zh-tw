@@ -10,19 +10,7 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-	"sharepoint/**",
-	"vsto/**",
-	"code-quality/**",
-	"csharp-ide/**",
-	"data-tools/**",
-	"debugger/**",
-	"deployment/**",
-	"extensibility/**",
-	"misc/**",
-	"modeling/**",
-	"vb-ide/**",
-	"workflow-designer/**",
-	"xml-tools/**"
+          "missingapi.yml"
         ]
       }
     ],
@@ -44,28 +32,46 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
-            "ROBOTS": "INDEX,FOLLOW",
-            "author": "",
-            "ms.author": "",
-            "manager": "ghogen",
-            "ms.date": "11/16/2016",
-            "ms.topic": "article",
-            "audience": "developer",
-            "ms.reviewer": "",
-            "ms.prod": "visual-studio-dev15",
-            "ms.technology": "vs-ide-general",
-            "ms.tgt_pltfrm": "dotnet",
-            "searchScope": ["VS IDE"]},
-    "fileMetadata": {},
-    "template": [],
+      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "ROBOTS": "INDEX,FOLLOW",
+      "author": "",
+      "bilingual_type": "hover over",
+      "ms.author": "",
+      "manager": "ghogen",
+      "ms.date": "11/16/2016",
+      "ms.topic": "article",
+      "audience": "developer",
+      "ms.reviewer": "",
+      "ms.prod": "visual-studio-dev15",
+      "ms.technology": "vs-ide-general",
+      "ms.tgt_pltfrm": "dotnet",
+      "searchScope": ["VS IDE"],
+      "featureFlags": ["productfeedback"],
+      "product_feedback_link_url1": "https://developercommunity.visualstudio.com/",
+      "product_feedback_link_text_key1": "reportAProductIssue",
+      "product_feedback_link_url2": "https://visualstudio.uservoice.com",
+      "product_feedback_link_text_key2": "suggestionProduct"
+    },
+    "fileMetadata": {
+      "product_feedback_link_url3": {
+        "extensibility/**/*.md": "https://gitter.im/Microsoft/extendvs",
+        "install/**/*.md": "https://gitter.im/Microsoft/VisualStudio"
+        
+      },
+      "product_feedback_link_text_key3": {
+        "extensibility/**/*.md": "askQuestion",
+        "install/**/*.md": "askQuestion"
+      }
+    },
+   "template": [],
     "xref": [
-      "../dotnet-xref/_zip/missingapi.yml",
-      "../dotnet-xref/_zip/dotnet.zip",
-      "../dotnet-xref/_zip/namespaces.4.5.2.zip",
-      "../dotnet-xref/_zip/vs.110.zip",
-      "../dotnet-xref/_zip/vs.140.zip",
-      "../dotnet-xref/_zip/office15.zip"
+      "dotnet-xref/_zip/dotnet.zip",
+      "dotnet-xref/_zip/vs.110.zip",
+      "dotnet-xref/_zip/vs.140.zip",
+      "dotnet-xref/_zip/office15.zip",
+      "dotnet-xref/_zip/missingapi.yml",
+      "dotnet-xref/_zip/msdnsmallset.yml",
+      "dotnet-xref/_zip/roslyn.yml"
     ],
     "dest": "vsdocsdocs"
   }
