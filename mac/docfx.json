@@ -33,7 +33,8 @@
     "globalMetadata": {
       "contributors_to_exclude": ["conceptdev","meganbradley"],
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
-      "manager": "crdun",
+      "bilingual_type": "hover over",
+     "manager": "crdun",
       "ms.topic": "article",
       "audience": "developer",
       "ms.prod": "visual-studio-mac",
@@ -41,7 +42,7 @@
       "searchScope": ["Mac"]
     },
     "fileMetadata": {},
-    "template": [],
+   "template": [],
     "dest": "mac"
   }
 }
