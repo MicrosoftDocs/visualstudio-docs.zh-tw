@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.deletebehavior
-helpviewer_keywords: Domain-Specific Language, deletion
+f1_keywords:
+- vs.dsltools.dsldesigner.deletebehavior
+helpviewer_keywords:
+- Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這個行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。  
@@ -285,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>取消合併  
+##  <a name="unmerge"></a> UnMerge  
  附加至其父代的子元素的作業稱為*合併*。 從工具箱建立一個或一組新項目，從模型的另一個部分移動一個或一組新項目，或是從剪貼簿複製一個或一組新項目時，就會發生該動作。 除了在父系與其新子系之間建立和內嵌關聯性之外，合併作業還可以設定其他關聯性、建立輔助項目，以及在項目中設定屬性值。 合併作業封裝在項目合併指示詞 (EMD) 中。  
   
  EMD 也會封裝互補*取消合併*或`MergeDisconnect`作業。 如果您有使用合併所建構的項目叢集，而且您想要使其餘的項目保持一致的狀態，建議您使用相關聯的取消合併從中移除項目。 取消合併作業通常會使用先前的章節所述的技巧。  

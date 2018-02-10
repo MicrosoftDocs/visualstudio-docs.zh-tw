@@ -6,23 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: "80025080"
+f1_keywords:
+- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: "100"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -86,11 +88,9 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 在.NET 中，您具有模型及管理記憶體中的資料之後您從資料來源擷取它, 的三個選項：
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
-慣用的 Microsoft ORM 技術。 您可以針對關聯式資料的程式使用它做為第一級的.NET 物件。 對於新的應用程式，它應該是預設第一個選擇當模型是必要。 它需要自訂支援從基礎 ADO.NET 提供者。
+[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)慣用的 Microsoft ORM 技術。 您可以針對關聯式資料的程式使用它做為第一級的.NET 物件。 對於新的應用程式，它應該是預設第一個選擇當模型是必要。 它需要自訂支援從基礎 ADO.NET 提供者。
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-先前產生的物件關聯式對應程式。 它適用於較不複雜的案例，但不再處於使用中的開發。
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)先前產生的物件關聯式對應工具。 它適用於較不複雜的案例，但不再處於使用中的開發。
 
 [資料集](../data-tools/dataset-tools-in-visual-studio.md)  
 最舊的三種模型技術。 它主要被針對快速開發 「 資料表單 」 應用程式中不是處理大量的資料或執行複雜的查詢或轉換。 DataTable 和 DataRow 邏輯上更多.NET 物件類似於 SQL 資料庫物件的物件所組成的資料集物件。 對於 SQL 資料來源為基礎的應用程式相當簡單，資料集仍然可能是不錯的選擇。
@@ -115,39 +115,31 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 ## <a name="python"></a>Python
 
-安裝[Python Tools for Visual Studio](http://microsoft.github.io/PTVS/)以及您最愛的 Python 架構來建立 CPython 或 IronPython (.NET) 的應用程式。 適用於 Visual Studio 網站的 Python 工具已連接至資料，包括幾個教學課程[如 Django 和 azure SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure)，[如 Django 和 Azure 上 MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure)和[Bottle 和 MongoDB 上Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)。
+安裝[Python 支援 Visual Studio 中](../python/python-in-visual-studio.md)建立 Python 應用程式。 Azure 文件已在連接到資料，包括下列幾個教學課程：
+- [如 Django 和 Azure 上的 SQL 資料庫](/azure/app-service/app-service-web-get-started-python)
+- [如 Django 和 Azure 上 MySQL](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- 使用[blob](/azure/storage/blobs/storage-quickstart-blobs-python)，[檔案](/azure/storage/files/storage-python-how-to-use-file-storage)，[佇列](/azure/storage/queues/storage-python-how-to-use-queue-storage)，和[資料表 (Cosmo DB)](/azure/cosmos-db/table-storage-how-to-use-python)。
 
 ## <a name="related-topics"></a>相關主題
 
-[資料、 裝置和分析](https://msdn.microsoft.com/data-and-devices)  
-介紹 Microsoft 智慧型雲端，包括 Cortana Analytics suite 這套和物聯網的支援。
+[資料、 裝置和分析](https://msdn.microsoft.com/data-and-devices)介紹 Microsoft 智慧型雲端，包括 Cortana Analytics suite 這套和物聯網的支援。
 
-[Microsoft Azure 儲存體](https://azure.microCsoft.com/documentation/services/storage/)  
-描述 Azure 儲存體，以及如何使用 Azure blob、 資料表、 佇列和檔案建立應用程式。
+[Microsoft Azure 儲存體](https://azure.microCsoft.com/documentation/services/storage/)描述 Azure 儲存體，以及如何使用 Azure blob、 資料表、 佇列和檔案建立應用程式。
 
-[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/)  
-描述如何連接到 Azure SQL Database 的關聯式資料庫做為服務。
+[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/)描述如何連接到 Azure SQL Database、 關聯式資料庫做為服務。
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
-說明的工具可簡化設計中，瀏覽、 測試和部署的資料連接的應用程式和資料庫。
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)說明的工具可簡化設計中，瀏覽、 測試和部署的資料連接的應用程式和資料庫。
 
-[ADO.NET](/dotnet/framework/data/adonet/index)  
-描述 ADO.NET 架構以及如何使用 ADO.NET 類別來管理應用程式資料並與其互動的資料來源和 XML。
+[ADO.NET](/dotnet/framework/data/adonet/index)描述 ADO.NET 架構以及如何使用 ADO.NET 類別來管理應用程式資料並與其互動的資料來源和 XML。
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
-描述如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)說明如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
-描述如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[開放式資料通訊協定 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
+[WCF 資料服務 4.5](/dotnet/framework/data/wcf/index)描述如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[開放式資料通訊協定 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 
-[Office 方案的資料](../vsto/data-in-office-solutions.md)  
-包含說明資料在 Office 方案中的運作方式的主題連結。 這包括結構描述導向的程式設計、 資料快取，以及伺服器端資料存取的相關資訊。
+[在 Office 方案中的資料](../vsto/data-in-office-solutions.md)包含說明資料在 Office 方案中的運作方式的主題連結。 這包括結構描述導向的程式設計、 資料快取，以及伺服器端資料存取的相關資訊。
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
-描述 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合內建查詢功能。
+[LINQ (Language-Integrated Query ()](/dotnet/csharp/linq/)說明內建 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的查詢功能。
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)  
-討論使用 XML 資料，偵錯 XSLT，.NET Framework XML 功能，以及 XML 查詢的架構。
+[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)討論使用 XML 資料，偵錯 XSLT，.NET Framework XML 功能，以及 XML 查詢的架構。
 
-[XML 文件和資料](/dotnet/standard/data/xml/index)  
-提供用於 .NET Framework 中 XML 文件和資料的全面性整合類別集合的概觀。
+[XML 文件和資料](/dotnet/standard/data/xml/index)提供完整且整合組類別使用的 XML 文件和.NET Framework 中的資料的概觀。

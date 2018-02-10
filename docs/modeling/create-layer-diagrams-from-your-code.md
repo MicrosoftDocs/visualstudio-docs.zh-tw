@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - architecture, dependency diagrams
@@ -16,11 +15,12 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從程式碼中建立相依性圖表
 

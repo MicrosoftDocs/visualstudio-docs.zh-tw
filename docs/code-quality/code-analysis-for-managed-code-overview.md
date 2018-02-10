@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>程式碼分析 managed 程式碼的概觀
 
@@ -39,11 +41,11 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 
 Managed 程式碼的程式碼分析規則分組為*規則集*。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
 
-## <a name="in-source-suppression"></a>在來源隱藏
+## <a name="suppress-warnings"></a>隱藏警告
 
 最大的用途是指出某個警告不適用。 這會通知程式開發人員和其他稍後可能會檢閱程式碼的人員，指出您已經調查此警告並且隱藏或忽略它。
 
-在來源中的警告隱藏項目被實作透過自訂屬性。 若要隱藏警告，請將 `SuppressMessage` 屬性加入至原始程式碼，如下列範例所示：
+在原始程式檔的警告的隱藏項目是透過自訂屬性來實作。 若要隱藏警告，請將 `SuppressMessage` 屬性加入至原始程式碼，如下列範例所示：
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-如需詳細資訊，請參閱[使用 SuppressMessage 屬性所隱藏的警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。
+如需詳細資訊，請參閱[隱藏的警告，](../code-quality/in-source-suppression-overview.md)。
+
+> [!NOTE]
+> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨著產生大量的程式碼分析警告。 如果您不可以修正警告，並想要暫時關閉程式碼分析，請開啟專案屬性頁 (**專案** > ***專案*屬性...**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同的小型規則集執行程式碼。 請記得在當您準備好修正警告的程式碼分析。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>執行程式碼分析做為簽入原則的一部分
 

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 
@@ -53,7 +55,7 @@ DSL 的一般應用程式是要產生程式碼或其他成品。 當您定義 DS
   
 一般而言，開發團隊必須撰寫類似的程式碼適用於數個產品時，會建立特定領域語言。 比方說，專門用來在行李處理系統中的公司可能會定義可從中產生每個安裝的程式碼部分的行李追蹤 DSL。 DSL 的好處是，它可以了解他們的客戶，從它產生的程式碼相當可靠，因此，系統可以快速更新客戶的需求變更時。  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]可讓您建立的網域特定定義域語言具有自己的圖形設計工具和您自己的圖表標記法，並接著使用的語言來產生適當的原始程式碼，每個專案。  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 可讓您建立的網域特定定義域語言具有自己的圖形設計工具和您自己的圖表標記法，並接著使用的語言來產生適當的原始程式碼，每個專案。  
   
 ## <a name="domain-specific-development"></a>特定領域開發
 

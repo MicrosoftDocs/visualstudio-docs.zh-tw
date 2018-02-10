@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
-helpviewer_keywords: Domain-Specific Language, image shape
+helpviewer_keywords:
+- Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 953be16c3bf48a865acf131a2fd8fe02085b0637
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: d4e2c06252659c126fc2e73b7a90973d3d624636
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 設定以定義影像圖形`Image`預先定義的映像檔案類別的屬性。 支援下列格式：  

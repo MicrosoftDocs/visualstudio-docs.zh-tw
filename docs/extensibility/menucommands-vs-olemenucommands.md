@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-caps.latest.revision: "46"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 1153d35c022f4734488e71c38f4dbc34418610f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -212,7 +212,7 @@ ms.lasthandoff: 10/27/2017
   
 1.  針對有效的命令傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
-2.  設定 `cmdf` 參數的 `prgCmds` 項目。  
+2.  設定 `prgCmds` 參數的 `cmdf` 項目。  
   
      `cmdf` 項目的值是來自 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 列舉值的邏輯聯集，藉由使用邏輯 OR (`|`) 運算子合併。  
   
@@ -240,7 +240,7 @@ ms.lasthandoff: 10/27/2017
   
          `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   如果命令使用 `TEXTCHANGES` 旗標，請將 `rgwz` 參數的 `pCmdText` 項目設為命令的新文字，並將 `cwActual` 參數的 `pCmdText` 項目設為命令字串的大小。  
+    -   如果命令使用 `TEXTCHANGES` 旗標，請將 `pCmdText` 參數的 `rgwz` 項目設為命令的新文字，並將 `pCmdText` 參數的 `cwActual` 項目設為命令字串的大小。  
   
      對於錯誤狀況， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法必須處理下列錯誤情況：  
   
@@ -258,6 +258,6 @@ ms.lasthandoff: 10/27/2017
   
 -   如果 `GUID` 和命令 ID 符合 .vsct 檔中的命令所使用的 GUID:ID 配對，會執行與命令相關聯的程式碼並傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)   
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)

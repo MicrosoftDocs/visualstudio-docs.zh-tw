@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4a746d3b2c913025bb9fc84b4f3fec34fe2bc7cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 您可以使用 Managed Extensibility Framework (MEF) 擴充您的特定領域語言 (DSL)。 您或其他開發人員能夠撰寫 dsl 的擴充功能，而不需要變更 DSL 定義和程式碼。 這類延伸包括功能表命令、 拖放的處理常式，以及驗證。 使用者可以安裝 DSL，然後再選擇性地為其安裝擴充功能。  

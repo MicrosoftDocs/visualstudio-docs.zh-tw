@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, in application or VS extension
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d3eabfb846b6b488c99202037ebea90c4f9f04db
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: af3e5b50095b30a912f6de7b67ba8a40f99127f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 *文字範本轉換*處理採用*文字範本*做為輸入和產生的文字檔做為輸出的檔案。 您可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充功能，或從執行於已安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之電腦的獨立應用程式中，呼叫文字轉換引擎。 不過，您必須提供*文字範本化主機*。 這個類別會將範本連接至環境、尋找資源 (例如組件和 Include 檔)，以及處理輸出和錯誤訊息。  

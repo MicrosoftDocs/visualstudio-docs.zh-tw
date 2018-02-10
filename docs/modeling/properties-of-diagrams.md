@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.dsldiagram
-helpviewer_keywords: Domain-Specific Language, diagram
+f1_keywords:
+- vs.dsltools.dsldesigner.dsldiagram
+helpviewer_keywords:
+- Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定指定如何圖表會顯示在設計工具中產生的屬性。 例如，您可以指定文字的預設色彩在圖表中。  

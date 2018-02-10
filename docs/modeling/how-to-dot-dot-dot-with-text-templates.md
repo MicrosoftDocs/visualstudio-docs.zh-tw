@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fdbed997737b772b22d88b0542d212214e2b808f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 文字範本中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供有用的方式產生任何類型的文字。 您可以使用文字範本產生的文字，做為您的應用程式的一部分的執行階段，並在設計階段產生的專案程式碼部分。 本主題摘要說明最常要求 「 如何？...」 問題。  

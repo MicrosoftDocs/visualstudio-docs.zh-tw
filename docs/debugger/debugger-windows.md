@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具視窗
-您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 **偵錯 > Windows**。  
+
+您可以在偵錯程式時開啟大部分偵錯工具視窗。 若要查看偵錯工具視窗的清單，請設定中斷點並開始偵錯。 當您叫用中斷點且執行停止時，按一下 **偵錯 > Windows**。
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ ms.lasthandoff: 02/01/2018
 |平行堆疊|CTR:+SHIFT+D, S|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|
 |平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[取得啟動偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)|
 |執行緒|CTRL+ALT+H|[使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)|
-|模組|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)| 
+|模組|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)|
 |GPU 執行緒|-|[如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)|
-|工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)| 
-|Python 互動式偵錯|SHIFT+ALT+I|[PTVS 快速入門：互動式 Python](../python/python-interactive-repl-in-visual-studio.md)
+|工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|
+|Python 互動式偵錯|SHIFT+ALT+I|[Python 互動式 REPL](../python/interactive-repl.md)|
 |JavaScript 主控台|CTRL+ALT+V, C|[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)|
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ ms.lasthandoff: 02/01/2018
 |反組譯碼|CTRL+ALT+D|[如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)|
 |暫存器|CTRL+ALT+G|[如何：使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>請參閱  
- [偵錯工具基礎](../debugger/debugger-basics.md)
+## <a name="see-also"></a>請參閱
+
+[偵錯工具基礎](../debugger/debugger-basics.md)

@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.explorerbehavior
-helpviewer_keywords: Domain-Specific Language Tools, Domain-Specific Language Explorer
+f1_keywords:
+- vs.dsltools.dsldesigner.explorerbehavior
+helpviewer_keywords:
+- Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7380d4bcade2e93b7e9ab7302201b67df629e041
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: eac91df1a07e54b80e88538695b1cc22353396d6
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以變更的外觀和行為的 [總管] 中您的網域特定語言設計工具，如下所示：  

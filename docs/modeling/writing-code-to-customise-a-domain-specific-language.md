@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, programming
+helpviewer_keywords:
+- Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 960fb3f3c3eabe4dd110fb6fe0deb2464c7062ec
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 81d0608189d45ed4ef9770a8fecdc61c7ebb118c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>撰寫程式碼來自訂網域指定的語言
 本節說明如何使用自訂程式碼存取、 修改或建立特定領域語言的模型。  

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: dependency diagrams, adding custom validation
+helpviewer_keywords:
+- dependency diagrams, adding custom validation
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>相依性圖表中加入自訂架構驗證
 在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，以便他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。  
@@ -90,7 +92,7 @@ ms.lasthandoff: 01/13/2018
   
     2.  在 [加入新的資產]  對話方塊中，設定：  
   
-         **型別** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。  
   
           =   
   

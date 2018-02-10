@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
@@ -13,12 +12,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5452adbe6c6aecec3c043b8047a6d8202dfaf6ee
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 1edb30221d85f8e634a9d618d50cd1e0b772b69a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大的模型為基礎的開發工具，可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  

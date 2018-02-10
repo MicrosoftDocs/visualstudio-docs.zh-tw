@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, accessing models
+helpviewer_keywords:
+- text templates, accessing models
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1d338c62a6241a0ae77d22c7712ee7449aa5973
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔和其他特定領域語言模型為基礎的文字檔。 基本文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本時進行偵錯 DSL，以實驗模式運作，並有部署 DSL 所在的電腦上也能運作。  

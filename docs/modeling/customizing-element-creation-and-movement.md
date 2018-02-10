@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 您可以允許的項目拖曳出來，放到另一個，從 [工具箱] 中或貼上或移動作業。 您可以移動的項目連結至目標項目中，使用您指定的關聯性。  
@@ -37,7 +40,7 @@ ms.lasthandoff: 01/13/2018
   
  EMD 的責任是決定如何物件群組應該合併至模型中的特定位置。 特別是，它會決定哪些關聯性應該具現化合併的群組連結至模型。 您也可以自訂，以設定屬性，並建立其他物件。  
   
- ![DSL &#45;EMD &#95;合併](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 角色的項目合併指示詞  
   
  當您定義內嵌的關聯性時，會自動產生 EMD。 EMD 這個預設值建立關聯性的執行個體，當使用者將新的子系執行個體加入父代。 您可以將自訂程式碼，例如修改這些預設 EMDs。  
@@ -47,7 +50,7 @@ ms.lasthandoff: 01/13/2018
 ## <a name="defining-an-element-merge-directive"></a>定義的項目合併指示詞  
  您可以將項目合併指示詞加入網域類別、 網域關聯性、 圖形、 連接器和圖表。 您可以新增或接收的網域類別下 DSL 總管 中找到它們。 接收類別是領域類別已經在模型中，並拖曳至新的或複製的項目合併的項目。  
   
- ![DSL &#45;EMD &#95; 詳細資料](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  **索引類別**是領域類別必須合併接收類別成員的項目。 子索引類別的執行個體將也由這個 EMD，合併，除非您將設定**子類別適用於**為 False。  
   

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 264953ec2044aae7069af72d74a5abbfdcacce51
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: b506957c80b1e678bab75afedb8a50621d611220
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 您可以撰寫自己的主機處理文字範本。 示範基本的自訂主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  建立具有下列特性的特定領域語言方案：  
   
-    -   名稱： DSLMinimalTest  
+    -   Name: DSLMinimalTest  
   
     -   方案範本： 最少的語言  
   

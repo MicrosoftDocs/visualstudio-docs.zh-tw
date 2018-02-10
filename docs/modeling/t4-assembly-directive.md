@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d40e8627527328e30e0f31194a794dfee2e33e8
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 設計階段文字範本中，`assembly` 指示詞會載入組件，因此範本程式碼可以使用它的類型。 這種效果類似在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中加入組件參考。  

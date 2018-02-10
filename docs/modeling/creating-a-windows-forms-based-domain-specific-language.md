@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示的特定領域語言 (DSL) 模型，而不是使用 DSL 圖表狀態。 本主題會引導您繫結至 DSL 的 Windows Form 中，使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK。  
   
- ![DSL &#45;Wpf &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。  
   
 ## <a name="creating-a-windows-forms-dsl"></a>建立 Windows Form DSL  
@@ -70,7 +71,7 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
 ## <a name="updating-the-dsl-definition"></a>DSL 定義的更新  
  DSL 定義用於這個逐步解說下列。  
   
- ![DSL &#45;Wpf &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定義  
   
@@ -123,13 +124,13 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
   
 2.  選擇**物件**，**下一步**。  
   
-     展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇**完成**。  
+     展開**Dsl**， **Company.FarmApp**，然後選取**伺服陣列**，這是您的模型的根類別。 選擇 [完成]。  
   
      在 方案總管**UI**專案現在會包含**Properties\DataSources\Farm.datasource**  
   
      屬性和關聯性的模型類別會出現在 [資料來源] 視窗。  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf 3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>您的模型連接至表單  
   
@@ -304,7 +305,7 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
   
      您應該能夠編輯的資料格檢視中的項目名稱。 您也可以從那裡刪除它。  
   
- ![DSL &#45;Wpf &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>關於程式碼中新增項目  
  新的項目按鈕，如下列替代程式碼則稍微簡單一些。  

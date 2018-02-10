@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 860fd5d60d35e5649b172a784a931ce413c7616e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 程式碼產生可讓您產生強類型的程式碼，而且可以在來源模型變更時輕鬆地進行變更。 這與撰寫可接受組態檔的完全泛型程式的替代技術相反，它更具彈性，但不容易讀取和變更程式碼，也不會有這樣的良好效能。 本逐步解說示範這項優點。  

@@ -4,18 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], custom - in-place view activation
+helpviewer_keywords:
+- editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: "26"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 16c091dc6d5602e4d19b8679794ef2794b29d7ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="in-place-activation"></a>就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/27/2017
   
  實作來建立就地啟用編輯器的所有介面，顯示在單一 `CYourEditorDocument` 物件上，但這項組態只支援文件資料的單一檢視。 如需支援文件資料之多個檢視的詳細資訊，請參閱 [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
   
-|介面|物件的類型|用法|  
+|介面|物件的類型|使用|  
 |---------------|--------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>|檢視|讓就地 VSPackage 物件能使用 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務，作為完整整合的 IDE 元件來運作。 這項服務將物件的功能表、工具列和命令整合到 IDE，並發出狀態變更的通知。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|檢視|內嵌的物件提供基本功能給其容器並與其通訊的主要方式。|  

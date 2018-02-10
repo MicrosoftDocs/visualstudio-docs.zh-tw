@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
@@ -14,12 +13,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 94f00e808df433279128a0241ffd3ab376ebc5b3
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: c3fe70c36daf9d137e77acf75b9bd712ecf556c7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>什麼 &#39; s Visual Studio 中設計的新功能
 
@@ -72,7 +72,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 
 Visual Studio 有數個版本。 並非所有版本都提供 Architecture and Modeling Tools 的支援。 下表顯示每個工具的可用性。  
   
-|**功能**|**企業版**|**專業版**|**Community**|**Express**|  
+|**功能**|**Enterprise**|**Professional**|**Community**|**Express**|  
 |-----------------|--------------------|----------------------|-------------------|-----------------|  
 |**Code Map**|[是]|請參閱附註 (1)|-|-|  
 |**相依性圖表**|[是]|請參閱附註 (2)|請參閱附註 (2)|-|  

@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a2ae5a5e017980a6f7a5310ea3c76e49253249d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 49539aea007a14eab68ad3f28d92d2e960618690
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 下表中的屬性與相關聯的網域角色。 網域角色的相關資訊，請參閱[了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 01/13/2018
 |分類|產生的屬性出現在類別目錄**屬性**產生的設計工具視窗中。 如果這個屬性是空的則產生的屬性會出現在**其他**類別|< 無\>|  
 |描述|描述用來說明程式碼，並使用產生的設計工具的 UI 中。<br /><br /> 描述會出現在 Intellisense 工具提示上的角色 player 類別的產生屬性。|`Description for`*角色的完整名稱*|  
 |顯示名稱|顯示產生的網域角色設計工具中的名稱。|Name 屬性調整過的值。|  
-|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<無 >|  
+|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<none>|  
 |內容顯示名稱|顯示在產生的設計工具產生的角色屬性的名稱。|屬性名稱屬性調整過的值。|  
   
 > [!NOTE]

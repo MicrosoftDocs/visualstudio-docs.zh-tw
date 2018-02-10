@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: get-started-article
 f1_keywords:
 - vs.progression.codemap
@@ -31,11 +30,12 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f5fd14ba1a2cdad08996b1494c0510f85b929006
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 

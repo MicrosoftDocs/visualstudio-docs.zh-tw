@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.progression.dgmlgraph.layouthelp
@@ -26,11 +25,12 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: ce25077610d285cba59a6d379a68fd3be6c10bcf
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0cf2bb7618be6c18b4702f8bed636cf91f2863db
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 重新排列 Code Map 上的項目，使其更容易閱讀與提升其效能。  

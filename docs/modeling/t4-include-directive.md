@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a048fbd28b6993791e0f2475829a1aeede3f879
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的文字範本中，您可以使用 `<#@include#>` 指示詞來納入另一個檔案的文字。 您可以將 `include` 指示詞放在文字範本中第一個 `<#+ ... #>` 類別功能區塊之前的任何位置。 被納入的檔案也包含 `include` 指示詞和其他指示詞。 如此可讓您在範本之間共用範本程式碼和重複使用文字。  

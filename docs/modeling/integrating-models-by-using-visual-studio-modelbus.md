@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 提供方法來建立模型的模型之間，與從其他工具的連結。 例如，您無法連結特定領域語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，與從其他工具的連結。 例如，您無法連結特定領域語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。  
   
  ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個參考可以儲存在模型外，例如儲存在另一個模型的項目中。 在此情況下，工具需要取得項目的存取權，模型匯流排基礎結構會載入適當的模型並傳回項目。 如有需要，您可以向使用者顯示模型。 如果無法從先前的位置存取檔案，ModelBus 會請使用者尋找檔案。 如果使用者找到檔案，ModelBus 會修正該檔案的所有參考。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  `ModelBusAdapters\bin\*` 資料夾包含 `Dsl` 專案和 `ModelBusAdapters` 專案建置的組件。 若要從另一個 DSL 參考這個 DSL，您應該匯入這些組件。  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>確定可參考項目  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 配接器預設會使用項目 GUID 來識別項目。 因此，這些 ID 必須保存在模型檔中。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 配接器會使用項目的 guid 來識別它，預設值。 因此，這些 ID 必須保存在模型檔中。  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>確定保存項目 ID  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。  
   
     > [!NOTE]
-    >  只有在模型是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只可以解析參考項目，在相同的模型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。  
   
 4.  在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。  
   

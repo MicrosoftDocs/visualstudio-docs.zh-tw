@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.swimlane
-helpviewer_keywords: Domain-Specific Language, swimlane
+f1_keywords:
+- vs.dsltools.dsldesigner.swimlane
+helpviewer_keywords:
+- Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 84107514e728dbfa79b7dfdaee6c3febaee21274
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 39bb6be4146cf7e9e163b6da5ada6f447a930bc8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-swimlanes"></a>泳道的屬性
 您可以加入圖表的泳道。 泳道分成垂直或水平區域的圖表。 您可以定義其他的圖形會顯示在泳道內部。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  

@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, domain path
+helpviewer_keywords:
+- Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e30d3af95db29b7e69b670e29a2cd1c925e3c6b4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: fb2b1dfa13bf00c29452798253198b2ad0e72e97
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。  
@@ -24,7 +26,7 @@ DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
   
  網域路徑的格式如下：  
   
- *RelationshipName.PropertyName/ ！角色*  
+ *RelationshipName.PropertyName/!Role*  
   
  ![CommentReferencesSubjects 參考關聯性](../modeling/media/dsl_reference.png "dsl_reference")  
   

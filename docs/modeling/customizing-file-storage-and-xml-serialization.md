@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
-helpviewer_keywords: Domain-Specific Language, serialization
+f1_keywords:
+- vs.dsltools.dsldesigner.xmlbehavior
+helpviewer_keywords:
+- Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 當使用者儲存工作執行個體，或*模型*中的特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或更新的 XML 檔案。 檔案追縱可以重新建立存放區中的模型。  

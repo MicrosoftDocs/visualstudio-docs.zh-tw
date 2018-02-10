@@ -1,5 +1,5 @@
 ---
-title: "隱藏程式碼分析警告在 Visual Studio 中使用 SuppressMessage 屬性 |Microsoft 文件"
+title: "隱藏在 Visual Studio 中的程式碼分析警告 |Microsoft 文件"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -34,6 +34,9 @@ ms.lasthandoff: 02/01/2018
 
 > [!NOTE]
 > 您不應該使用原始檔中隱藏項目上的發行組建，以避免不小心傳送的原始檔中隱藏項目中繼資料。 此外，因為在來源隱藏的處理成本，而可能降低應用程式的效能。
+
+> [!NOTE]
+> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨著產生大量的程式碼分析警告。 如果您不可以修正警告，並想要暫時關閉程式碼分析，請開啟專案屬性頁 (**專案** > ***專案*屬性...**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同的小型規則集執行程式碼。 請記得在當您準備好修正警告的程式碼分析。
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性
 
@@ -95,7 +98,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 隱藏項目屬性可以套用至方法，但不可以內嵌在方法主體。 這表示會抑制所有特定規則的違規，如果您將加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性加入方法。
 
-在某些情況下，您可能想要隱藏的違規情形，例如特定執行個體，以便未來的程式碼不會自動受程式碼分析規則。 某些程式碼分析規則可讓您利用`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 一般情況下，傳統規則違規 （本機變數或參數） 的特定符號尊重`MessageId`屬性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)是這類規則的範例。 不過，傳統規則違規的可執行程式碼 （非符號） 不受影響`MessageId`屬性。 此外，Roslyn 分析器不受影響`MessageId`屬性。
+在某些情況下，您可能想要隱藏的違規情形，例如特定執行個體，以便未來的程式碼不會自動受程式碼分析規則。 某些程式碼分析規則可讓您利用`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 一般情況下，傳統規則違規 （本機變數或參數） 的特定符號尊重`MessageId`屬性。 [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)是這類規則的範例。 不過，傳統規則違規的可執行程式碼 （非符號） 不受影響`MessageId`屬性。 此外，.NET 編譯器平台 ("Roslyn") 分析器不受影響`MessageId`屬性。
 
 若要隱藏特定符號規則的違規情形，指定的符號名稱`MessageId`屬性<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性。 下列範例示範具有兩個違規的程式碼[CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;另一個用於`name`變數，另一個用於`age`變數。 僅違反`age`符號會隱藏。
 

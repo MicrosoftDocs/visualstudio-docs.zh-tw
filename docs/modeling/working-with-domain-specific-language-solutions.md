@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 2a003a7497efb437ef84104d1b757f5650607fe8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用網域指定的語言方案
 使用建立的網域特定定義域語言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 此區段是有關如何設定及自訂方案。  

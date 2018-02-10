@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, overriding event handlers
+helpviewer_keywords:
+- Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e85bcb3545cc35b42723290601aff39b50ba3dc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f874cd26e2c6fd3d4726284ba25454ac7de50d66
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 網域指定的語言中，當網域屬性值變更時，會叫用網域屬性處理常式中的 `OnValueChanging()` 和 `OnValueChanged()` 方法。 若要回應變更，您可以覆寫這些方法。  

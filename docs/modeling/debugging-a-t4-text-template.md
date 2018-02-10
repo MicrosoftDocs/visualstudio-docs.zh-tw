@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字範本中設定中斷點。 偵錯設計階段文字範本，請儲存文字範本檔，，然後選擇**偵錯 T4 範本**快顯功能表的 [方案總管] 中的檔案。 若要偵錯執行階段文字範本，只要偵錯它所屬的應用程式。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/13/2018
 |路徑 '{0}' 必須是這台電腦的本機或信任區域的一部分。|發生於指示詞或組件指示詞參考了不在本機電腦或網路的受信任的區域上的檔案。|請確定指示詞或組件指示詞的所在位置的目錄是受信任的區域。 您可以將網路目錄加入您透過 Internet Explorer 信任的區域。|  
 |例如，「 無效語彙基元 ' catch'"或"命名空間不能直接包含成員 」 的多個語法錯誤|太多右大括號範本程式碼中。 編譯器會令人困惑它以標準的產生程式碼。|檢查右大括號和方括號內的程式碼分隔字元的數目。|  
 |迴圈或條件未編譯或正確執行。 例如：`<#if (i>10)#> Number is: <#= i #>`。<br /><br /> 此程式碼一律會輸出的值我。 只有"數目是: 「 條件式。|在 C# 中，一律使用大括號括住內嵌在控制陳述式中的文字區塊。|將大括號： `<#if (i>10) { #>    Number is: <#= i #><# } #>`。|  
-|「 運算式太複雜 」 時處理的設計階段範本，或編譯執行階段 （前置處理過後） 的範本。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會停止運作時嘗試以檢查執行階段範本產生的程式碼。|文字區塊名稱太長。 T4 將文字區塊轉換成具有一個字串常值的每個範本列字串串連運算式。 很長的文字區塊可以逾越編譯器的大小限制。|分割與這類運算式區塊的長文字區塊：<br /><br /> `<#= "" #>`|  
+|「 運算式太複雜 」 時處理的設計階段範本，或編譯執行階段 （前置處理過後） 的範本。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會停止運作時嘗試以檢查執行階段範本產生的程式碼。|文字區塊名稱太長。 T4 將文字區塊轉換成具有一個字串常值的每個範本列字串串連運算式。 很長的文字區塊可以逾越編譯器的大小限制。|分割與這類運算式區塊的長文字區塊：<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>警告的說明和修正程式  
  下表列出最常見的警告，以及修正程式，如果有的話。  

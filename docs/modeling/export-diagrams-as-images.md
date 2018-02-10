@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - modeling diagrams, saving
@@ -13,12 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bbb21a2f8d126feb90e3c19eded6496949b992bd
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5bbe67a270305dfb9f8e73d869963908502348b7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。  

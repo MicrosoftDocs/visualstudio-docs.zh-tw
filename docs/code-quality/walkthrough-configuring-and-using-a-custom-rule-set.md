@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 02/01/2018
   
 2.  在 錯誤清單 視窗中，按一下 **警告**，然後按一下 **描述**行標頭以便排序警告文數字順序。  
   
-     在真實世界應用程式中，您修正值得此時，修正任何規則違規或選擇性地關閉或隱藏的規則，如果您決定不需要處理。 如需詳細資訊，請參閱[使用 SuppressMessage 屬性所隱藏的警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
+     在真實世界應用程式中，您修正值得此時，修正任何規則違規或選擇性地關閉或隱藏的規則，如果您決定不需要處理。 如需詳細資訊，請參閱[隱藏的警告，](../code-quality/in-source-suppression-overview.md)。
   
 3.  請注意 CA1704 警告。 這些違規這個規則表示，您應該 「 請考慮提供更有意義的名稱，參數。 」 您無法更正問題，您的程式碼中或下一個程序中所述，您可以停用規則。  
   

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Preprocessed Text Template project item
@@ -14,12 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2bbc9fb84ae2487d3c90efcecf9d48c43c28df32
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 4f2681f3be13e98ff3b9dbf411b03ea9f3fc054a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 您也可以使用應用程式在執行階段中產生的文字字串[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]執行階段文字範本。 應用程式執行所在的電腦不需要有[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 執行階段範本有時也稱為 「 前置處理過的文字範本 」 因為在編譯時期，範本會產生在執行階段執行的程式碼。  

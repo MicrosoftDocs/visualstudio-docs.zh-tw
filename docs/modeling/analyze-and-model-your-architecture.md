@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: get-started-article
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -33,12 +32,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d32064dfcf11ade79e8630d84084349db88182e9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: d1bcac24b0d0a5b14cbfbc082d8272ea846a1d54
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 請確定您的應用程式可以使用 Visual Studio architecture and modeling 工具來設計和模型化應用程式符合架構需求。 

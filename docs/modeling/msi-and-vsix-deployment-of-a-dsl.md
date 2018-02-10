@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在您自己的電腦或其他電腦上，您可以安裝的網域特定定義域語言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已必須安裝在目標電腦上。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  設定`InstalledByMsi`擴充功能資訊清單中。 這會讓 VSX 安裝和解除安裝 MSI 除外。 這很重要，如果您將會包含其他元件在 MSI。  
   
-    1.  開啟 DslPackage\source.extension.tt  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  插入下列這行之前`<SupportedProducts>`:  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 01/13/2018
   
 5.  新增**CreateMsiSetupProject.tt** Dsl 專案。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]將會建立名為**CreateMsiSetupProject.vdproj**。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將會建立名為**CreateMsiSetupProject.vdproj**。  
   
 6.  在 Windows 檔案總管中，複製 Dsl\\*.vdproj 到新的資料夾，名為 「 安裝程式。  
   

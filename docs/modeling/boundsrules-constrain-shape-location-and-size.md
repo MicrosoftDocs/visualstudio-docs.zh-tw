@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, events
+helpviewer_keywords:
+- Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7600f71cc7203b48a6a20da98f59846a0b62bc13
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: c672cbc25c28bf4d74f01160212584875b51ba1a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
 A*範圍規則*是類別，定義限制的大小和圖形的位置。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。  

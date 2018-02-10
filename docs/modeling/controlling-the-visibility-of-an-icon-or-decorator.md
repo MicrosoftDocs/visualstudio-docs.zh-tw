@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b090a2f17ad41bb46675f5e170dcbf733b7f8977
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 的文字行。 您可以設裝飾項目會出現，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可以有不同的圖示會出現取決於該人員的性別的子系數目等等。  
@@ -66,7 +67,7 @@ A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 
   
      **名稱**例如**DecoratorControl**  
   
-     **型別** = `Boolean`  
+     **Type** = `Boolean`  
   
      如需詳細資訊，請參閱[計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
   

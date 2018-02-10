@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 在 Visualization and Modeling SDK，您可以定義存放區將變更傳播至儲存區，例如非存放區變數、 檔案、 模型中其他存放區，或其他外部資源的事件處理常式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充功能。 儲存的事件處理常式會執行觸發的事件發生所在的交易結束之後。 它們也會在復原或取消復原作業中執行。 因此，不同於存放區規則存放區事件是最適合用於更新儲存區以外的值中。 不同於.NET 事件存放區的事件處理常式已登錄到接聽的類別： 您沒有註冊個別的處理常式，每個執行個體。 如需如何選擇不同的方式處理變更的詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
