@@ -1,3 +1,5 @@
+---
+---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 
 您可以瀏覽位於遠端電腦或 Azure 檔案共用上的所有儲存體，來啟用上傳資料或下載模型及記錄檔。 若您想要存取特定作業的記錄檔和作業輸出，您也可以在作業瀏覽器中進行

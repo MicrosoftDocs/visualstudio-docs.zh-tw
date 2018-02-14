@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,16 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 144b8b82209b63262db8b7a25f2478b9a4c89edb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f279d3e22f0af72a718bf0646a1ffa81b943076b
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 工作
 此工作接受檔案清單，並新增 `<TargetPath>` 屬性 (如果尚未指定)。  

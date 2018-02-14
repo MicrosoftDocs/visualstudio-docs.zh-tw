@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +16,17 @@ helpviewer_keywords:
 - MSBuild, CreateCSharpManifestResourceName task
 - CreateCSharpManifestResourceName task [MSBuild]
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 417330a53bba50aa38bdea200f95aa10b6171416
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0b178ce637c53f01ca53df89f82995dfdcfc8258
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 工作
 從指定的 .resx 檔案名稱或其他資源，建立 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 樣式的資訊清單名稱。  

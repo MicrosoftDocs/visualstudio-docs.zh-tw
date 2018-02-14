@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
@@ -44,12 +44,13 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 26e212b10f426bd3a5af0845cc5212ceaa747eb8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 

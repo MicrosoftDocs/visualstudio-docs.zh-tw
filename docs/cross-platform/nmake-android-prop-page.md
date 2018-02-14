@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d901c572-16c4-402a-b230-7ae59ce9fad4
@@ -19,12 +19,13 @@ f1_keywords:
 - VC.Project.VCNMakeTool.PreprocessorDefinitions
 - VC.Project.VCNMakeTool.IncludeSearchPath
 - VC.Project.VCNMakeTool.ForcedIncludes
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 0479f14ea73e1fda1297ea85b4d6c21e6a855b63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 9f39aaaa17f48f832210ca26c1e255ae4b054514
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++) 
 

@@ -7,15 +7,15 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: quickstart
-ms.technology: visual studio
 ms.devlang: python
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 133c6c29bed581a478fa6127fa69cee1b00b2c44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 395340bbaaafb1a990590ab50e3b0257c221e355
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型 
 

@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 您可以建置 iOS、Android 和 Windows 裝置的原生 C++ 應用程式，以及使用跨平台行動裝置開發的 Visual C++，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。 這是為共用程式庫和原生應用程式的跨平台開發工具安裝了所需 SDK 和工具的 Visual Studio 2015 提供的選項。 安裝好後，您就可以使用 Visual C++ 建立程式碼，除了 Windows、Windows Phone 和 Xbox 之外，還可在 iOS 和 Android 裝置及平台上執行。  

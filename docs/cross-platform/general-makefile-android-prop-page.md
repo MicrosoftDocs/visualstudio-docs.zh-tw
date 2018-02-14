@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f76d717c-56ed-4373-8cf9-9bd1a053a4cd
@@ -16,12 +16,13 @@ f1_keywords:
 - VC.Project.VCConfiguration.IntermediateDirectory
 - VC.Project.VCConfiguration.BuildLogFile
 - VC.Project.VCConfiguration.ConfigurationType
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 95d420d57fbf37ae511d92ce32ea03b9f7c5fcad
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: fa380209cb18862eb9bf782141d62befd79c5644
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="general-project-properties-android-c-makefile"></a>一般專案屬性 (Android C++ Makefile)
 

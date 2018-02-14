@@ -9,20 +9,19 @@ ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-ms.devlang: python
+dev_langs:
+- python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs:
-- python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a28c124ae560edca6451ed70d13c28b4138772d1
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 

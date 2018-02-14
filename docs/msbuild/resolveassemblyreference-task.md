@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,16 +20,17 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 工作
 判斷相依於指定組件的所有組件。 這包括第二和第 `n`順序的相依性。  
@@ -50,10 +51,10 @@ ms.lasthandoff: 12/22/2017
 |`CopyLocalDependenciesWhenParentReferenceInGac`|選擇性的 <xref:System.Boolean> 參數。<br /><br /> 如果為 true，表示要判斷是否應該在本機複製相依性，其中一項完成的檢查就是確認專案檔中的父參考是否已設定 Private 中繼資料。 若已設定，則會使用 Private  值做為相依性。<br /><br /> 若未設定中繼資料，則相依性會接受和父代參考相同的檢查。 其中一個檢查是為了查看參考是否在 GAC 中。 若參考在 GAC 中，則會假設其在目標電腦上的 GAC 中，因此不會在本機複製。 這只會套用於特定的參考，且不會套用於其相依性。<br /><br /> 例如，GAC 中專案檔的參考不會在本機複製，但其相依性因為不在 GAC 中所以會在本機複製。<br /><br /> 如果為 false，會檢查專案檔案的參考，以查看其是否在 GAC 中，且會視需要在本機複製。<br /><br /> 相依性會經過檢查以確認其是否位在 GAC 中，並確認專案檔中的父參考是否也位在 GAC 中。<br /><br /> 若來自專案檔案的父代參考在 GAC 中，就不會在本機複製相依性。<br /><br /> 不論此參數為 true 或 false，若有多個父代參考，且其中任何一個不在 GAC 中，則會在本機複製全部的父代參考。|  
 |`CopyLocalFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 傳回 `ResolvedFiles`、 `ResolvedDependencyFiles`、 `RelatedFiles`、 `SatelliteFiles`及 `ScatterFiles` 參數中的每個檔案，這些檔案具有值為 `CopyLocal` true `true`。|  
 |`FilesWritten`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含寫入磁碟的項目。|  
-|`FindDependencies`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到相依性。 否則，只會找到主要參考。 預設值是 `true`。|  
-|`FindRelatedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到 .pdb 檔案和 .xml 檔案等相關檔案。 預設值是 `true`。|  
+|`FindDependencies`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到相依性。 否則，只會找到主要參考。 預設值為 `true`。|  
+|`FindRelatedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到 .pdb 檔案和 .xml 檔案等相關檔案。 預設值為 `true`。|  
 |`FindSatellites`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會找到附屬組件。 預設值為 `true.`|  
-|`FindSerializationAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會搜尋序列化組件。 預設值是 `true`。|  
+|`FindSerializationAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，工作會搜尋序列化組件。 預設值為 `true`。|  
 |`FullFrameworkAssemblyTables`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定具有 "FrameworkDirectory" 中繼資料的項目，以建立可轉散發清單與特定架構目錄的關聯。 如果未建立關聯，則將記錄錯誤。 若未設定 FrameworkDirectory，解析組件參考 (RAR) 邏輯會使用目標 Framework 目錄。|  
 |`FullFrameworkFolders`|選擇性的 <xref:System.String?displayProperty=fullName>`[]` 參數。<br /><br /> 指定包含 RedistList 目錄的資料夾集合。 此目錄代表指定用戶端設定檔的完整架構，例如：%programfiles%\reference assemblies\microsoft\framework\v4.0。|  
 |`FullTargetFrameworkSubsetNames`|選擇性的 `String[]` 參數。<br /><br /> 包含目標 Framework 子集的名稱清單。 若清單中的子集名稱符合 `TargetFrameworkSubset` 命名屬性中的其中一個名稱，則系統會在建置階段排除特定的目標 Framework 子集。|  

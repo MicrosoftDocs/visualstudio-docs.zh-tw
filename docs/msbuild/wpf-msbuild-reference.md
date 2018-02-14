@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +16,17 @@ helpviewer_keywords:
 - build support [WPF]
 - MSBuild [WPF]
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d9af538203f5705e89b2c9492bbc2b2b4658ebfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c059d22b5b29e524f4c230b7fd9fb5a20ab2fbb3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) 增加建置支援，本節會加以說明。  

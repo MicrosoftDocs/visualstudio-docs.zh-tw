@@ -8,23 +8,21 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
-- vs.startpage
-- VS.StartPage.HowDoI
 - vs.ToolsOptionsPages.Startup
 helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
-- Visual Studio Start page
-caps.latest.revision: "45"
+- Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6bf05e014ff70b221d1ec77c4ee5677764142ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ecc22bd23b5b245173321ed3a12379c6fe5622af
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 

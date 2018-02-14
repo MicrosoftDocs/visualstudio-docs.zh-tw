@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 10/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
@@ -23,12 +23,13 @@ f1_keywords:
 - VC.Project.VCConfiguration.DeleteExtensionsOnClean
 - VC.Project.VCConfiguration.UseOfSTL
 - VC.Project.VCConfiguration.ThumbMode
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: e18fffbe0eb3104ec445fca7d791d74f5bf02bf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 6ec191d4f5deefd959c4647ae98a1626a0bd1d36
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="general-project-properties-android-c"></a>一般專案屬性 (Android C++)
 

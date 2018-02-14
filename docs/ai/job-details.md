@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>檢視最近的作業效能和詳細資料
 提交作業之後，您可以檢視作業清單，以查看它們的狀態、期間及其他資訊。
 

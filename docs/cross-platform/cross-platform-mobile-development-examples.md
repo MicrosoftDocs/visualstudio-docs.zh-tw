@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 8a6c2ba508afdd209713c8c1a514377e8e322868
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動開發範例
 數個 Visual C++ for Cross-Platform Mobile Development 所安裝的範本會產生完整的範例，可讓您從中學習。 此外，Windows 開發人員中心有數個範例應用程式，您可以下載並在 Visual Studio 中試用。  
