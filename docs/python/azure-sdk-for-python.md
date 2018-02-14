@@ -7,10 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f4f42f80bef2548c8caaff84df0d9a0118bfeac7
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -38,7 +38,7 @@ Azure SDK 是從 [Python 封裝索引 (英文)](https://pypi.python.org/pypi/azu
 pip install azure
 ```
 
-您也可以遵循 Azure 文件中的[安裝 Python 和 SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/)。
+您也可以遵循 Azure 文件中的[安裝 Python 和 SDK](https://docs.microsoft.com/azure/python-how-to-install/)。
 
 ## <a name="documentation"></a>文件
 

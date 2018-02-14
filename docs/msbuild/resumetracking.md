@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: ResumeTracking
-apilocation: filetracker.dll
+apiname:
+- ResumeTracking
+apilocation:
+- filetracker.dll
 apitype: COM
-helpviewer_keywords: ResumeTracking
+helpviewer_keywords:
+- ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ae79812a700f8444002ae3b8c04c0ea816970eea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: af99ba7e34de4db27f503ba4a7608373fee7d4cc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resumetracking"></a>ResumeTracking
 在目前的內容中繼續追蹤。  

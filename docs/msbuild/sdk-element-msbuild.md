@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/25/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +22,11 @@ ms.author: jeffkl
 manager: angerlic
 ms.workload:
 - multiple
-ms.openlocfilehash: 34db4807b3ab373c2a5b3c32fd9ef310263c3f7c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e82a66835ca3b104df325009f7253fafbc429eab
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。  

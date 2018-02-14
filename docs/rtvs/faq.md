@@ -7,20 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-r
-ms.devlang: r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 8abdaa1e156cf2be07f08f6cebcf67031bf91c2f
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 5d6ede092549a3f055c15b1f7deafe0421797c44
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 

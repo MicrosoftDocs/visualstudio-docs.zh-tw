@@ -7,20 +7,20 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-r
-ms.devlang: r
+dev_langs:
+- R
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 18b65727f387bf69688bd605ce4d390972a5ed73
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: de74bd82efc3a0ecc07d31fc830ffabb1d45093c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="intellisense"></a>IntelliSense
 

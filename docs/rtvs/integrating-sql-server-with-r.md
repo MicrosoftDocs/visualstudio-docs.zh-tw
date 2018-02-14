@@ -7,20 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-r
-ms.devlang: r
+dev_langs:
+- R
+- SQL
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 233f03334231323ac0332da466bd1dec565106a5
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>使用 SQL Server 和 R
 

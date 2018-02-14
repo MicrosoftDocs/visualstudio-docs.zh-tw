@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: SetThreadCount
-apilocation: filetracker.dll
+apiname:
+- SetThreadCount
+apilocation:
+- filetracker.dll
 apitype: COM
-helpviewer_keywords: SetThreadCount
+helpviewer_keywords:
+- SetThreadCount
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
-caps.latest.revision: "4"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 53b4d68cfd664e5b9b3385bbbbc9228fe57e566d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c45b32ad965bd3b01becf5cb99b1e1366607d13d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 設定全域執行緒計數，並將該計數指派給目前的執行緒。  

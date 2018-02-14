@@ -7,16 +7,15 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: article
-ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 85513f908421f4eee5411b5d394b378e66fa31fd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="installation"></a>安裝
 
