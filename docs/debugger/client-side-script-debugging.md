@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +17,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], client-side scripts
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 401ee40e2d296cbef041cb56568b639d05835f04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f1d0073f1623c96c86f3c43b6992385eca38193
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  
   
 ## <a name="opening-script-documents"></a>開啟指令碼文件  
- 您可以在 [方案總管]  查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
+您可以查看清單中的伺服器端和用戶端指令碼文件的**方案總管 中**檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>中斷點對應  
  在 Visual Studio 中，您無法直接對伺服器端程式碼進行偵錯，但是可以在伺服器端檔案內設定中斷點。 Visual Studio 會自動將中斷點對應至用戶端檔案內對應的位置，並且在用戶端程式碼中建立對應的中斷點。  
