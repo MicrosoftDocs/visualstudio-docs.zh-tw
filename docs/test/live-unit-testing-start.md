@@ -1,6 +1,6 @@
 ---
 title: "了解如何在 Visual Studio 2017 中使用 Live Unit Test 來測試程式碼 | Microsoft Docs"
-ms.date: 2017-08-31
+ms.date: 08/31/2017
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
@@ -10,12 +10,13 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2f2c8ba68419b23d2e74b82e23640c68a6f534aa
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 

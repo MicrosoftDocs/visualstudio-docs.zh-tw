@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 35d96fbb25c4d317c91b6ae0a8141ab5b780c5ab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/16/2018
 ---
 # <a name="buying-visual-studio-cloud-subscriptions---buying-additional-subscriptions"></a>購買 Visual Studio 雲端訂閱 - 購買額外訂閱
 

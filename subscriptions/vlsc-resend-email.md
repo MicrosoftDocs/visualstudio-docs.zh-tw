@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 338ae08ee1f3e6a819a1faea7bd095c9acd8ecd2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/16/2018
 ---
 # <a name="how-to-resend-subscription-assignment-emails-from-within-volume-license-service-center-vlsc"></a>如何從大量授權服務中心 (VLSC) 內重新傳送訂閱指派電子郵件
 

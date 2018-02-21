@@ -11,18 +11,19 @@ helpviewer_keywords:
 - code access security, coding errors
 - security [.NET Framework], about security
 ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
-caps.latest.revision: "20"
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 995ac17cd99c395dcf1c69f0d05e1b273ac72f1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c9d546d4020cb9a8e73efdea77fdb85d77d6146d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="security-in-visual-studio"></a>Visual Studio 中的安全性
+
 開發應用程式時，從設計到部署的所有層面都應該考慮到安全性。 從一開始就應盡可能安全地執行 Visual Studio。 請參閱[使用者權限](../ide/user-permissions-and-visual-studio.md)。  
   
  為了協助您有效開發安全的應用程式，您應該對安全性概念和開發平台的安全性功能有基本了解， 而且也應該了解安全性編碼技術。  

@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>比較 Visual Studio 訂用帳戶選項
 
@@ -39,10 +39,10 @@ Visual Studio 訂用帳戶將最全面的一組開發人員工具、雲端服務
 
 **方案** – 除了標準和雲端訂用帳戶之外，Microsoft 還透過不同的特殊方案提供訂用帳戶。
 
-- [Imagine](https://imagine.microsoft.com/en-us/about) -- 為學生免費提供專業級的開發人員工具和軟體，其具備建立遊戲、應用程式和網站所需的一切項目。
+- [Imagine](https://imagine.microsoft.com/about) -- 為學生免費提供專業級的開發人員工具和軟體，其具備建立遊戲、應用程式和網站所需的一切項目。
 - [BizSpark](https://bizspark.microsoft.com/About/Offers) - 提供可用於啟動的免費產品和服務。  BizSpark 成員可免費存取所有的 Microsoft 開發和測試軟體，包括 Azure、Windows、Visual Studio、Office 和 SQL Server。 
-- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/en-us) – 根據您在 MPN 中的等級，可能會收到最多 10 個企業訂用帳戶 
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) - 可為您量身訂做以提供資源的獨佔存取，協助您進一步開發您的技術專業能力和訓練技能。
+- [Microsoft Partner Network (MPN)](https://partner.microsoft.com/) – 根據您在 MPN 中的等級，可能會收到最多 10 個企業訂用帳戶 
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx) - 可為您量身訂做以提供資源的獨佔存取，協助您進一步開發您的技術專業能力和訓練技能。 對於 MCT Software & Services 及 MCT Developer Software & Services 訂用帳戶，請參考 [Microsoft 認證講師網站](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA)以取得您的訂用帳戶所提供的訓練課程使用權利。 
 
 ## <a name="visual-studio-licensing"></a>Visual Studio 授權
 Visual Studio 訂用帳戶依使用者授權。 單一個人可以在任意數量的裝置上使用軟體來設計、開發、測試或示範其程式。 Visual Studio 訂用帳戶也允許授權使用者評估軟體並模擬客戶環境，以診斷與其程式相關的問題。
@@ -62,4 +62,4 @@ Visual Studio 訂用帳戶授權也會允許您的終端使用者存取軟體，
 
 [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare/).
 
-對於 MCT Software & Services 及 MCT Developer Software & Services 訂用帳戶，請參考 [Microsoft 認證講師網站](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA)以取得您的訂用帳戶所提供的訓練課程使用權利。  
+ 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -29,9 +29,9 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
 
 使用 ptvsd 時，進行偵錯的 Python 程式碼會裝載 Visual Studio 可以附加到的偵錯伺服器。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
 
-如需遠端偵錯簡介，請參閱適用於 Visual Studio 2015 和 2017 的[深入探討︰跨平台遠端偵錯](https://youtu.be/y1Qq7BrV6Cc) (youtube.com，6 分 22 秒)。
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需遠端偵錯簡介，請參閱適用於 Visual Studio 2015 和 2017 的[深入探討︰跨平台遠端偵錯](https://youtu.be/y1Qq7BrV6Cc) (youtube.com，6 分 22 秒)。 |
 
 ## <a name="setting-up-a-linux-computer"></a>設定 Linux 電腦
 

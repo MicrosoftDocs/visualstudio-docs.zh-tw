@@ -5,7 +5,8 @@ ms.custom:
 ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +18,13 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方
 

@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 09/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e33e0e2896ccb3a5f7fe6d6da57f509af30d77fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 
