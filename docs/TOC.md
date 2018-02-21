@@ -23,10 +23,9 @@
 ### 安裝於網路上
 #### [建立 Visual Studio 的網路型安裝](install/create-a-network-installation-of-visual-studio.md)
 #### [更新 Visual Studio 的網路型安裝](install/update-a-network-installation-of-visual-studio.md)
-#### [將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [校正 Proxy 授權錯誤](ide/reference/proxy-authorization-required.md)
-#### [將私人網路中的 URL 置於白名單中](ide/whitelisting-urls-in-a-private-network.md)
-### 部署於企業中
+#### [在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [疑難排解安裝或使用 Visual Studio 時發生的網路錯誤](install/troubleshooting-network-related-errors-in-visual-studio.md)
+### 部署在企業中
 #### [使用回應檔自動安裝 Visual Studio](install/automated-installation-with-response-file.md)
 #### [部署 Visual Studio 時會自動套用產品金鑰](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
 #### [設定 Visual Studio 企業部署的預設值](install/set-defaults-for-enterprise-deployments.md)
@@ -188,6 +187,7 @@
 ### [Office 和 SharePoint 程式開發](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [使用 XML 與 XSLT 檔案](xml-tools/xml-tools-in-visual-studio.md)
 ### 其他教學課程
+#### [使用 C# 或 Visual Basic 建立 WPF 應用程式](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [教學課程 1：建立圖片檢視器 (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [步驟 1：建立 Windows Forms 應用程式專案](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [步驟 2：執行您的程式](ide/step-2-run-your-program.md)
