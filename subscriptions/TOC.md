@@ -1,48 +1,75 @@
-# [Visual Studio 訂閱](index.md)
-# 概觀
-## [比較訂閱選項](compare-subscriptions.md)
-
-# 作法指南
-##  訂閱者
-### [購買訂閱](buy-vs-subscriptions.md)
-### [管理您的訂閱](manage-vs-subscriptions.md)
-### [使用訂閱者下載](subscriber-downloads.md)
-### [使用產品金鑰](product-keys.md)
-### 如何啟用權益
-#### 工具
-##### [Visual Studio IDE](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security](vs-ems.md)
-##### [Windows 開發人員帳戶](vs-windows-dev.md)
-##### [Office 365 開發人員](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Microsoft Azure 預付型方案](vs-azure-payg.md) 
-#### 教育
-##### [DataCamp](vs-datacamp.md)
-##### [LinkedIn Learning](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Xamarin University 訓練課程](vs-xamarin.md)
-##### [Microsoft E-learning](vs-elearn.md)
-##### [MSDN Magazine 訂閱](vs-msdn.md)
-#### 支援
-##### [技術支援](vs-tech-support.md)
-
-## 系統管理員
-### [系統管理員概觀](admin-responsibilities.md)
-### [存取系統管理員入口網站](access-admin-portal.md)
-### [使用系統管理員入口網站](using-admin-portal.md)
-### [指派訂閱](assign-license.md)
-### [編輯訂閱](edit-license.md)
-### [刪除訂閱](delete-license.md)
-### [搜尋訂閱](search-license.md)
-### [處理過度領取的訂閱](handle-overclaimed-license.md)
-### [處理過期的訂閱](handle-expired-license.md)
-
+# [Visual Studio 訂閱](index.md) 
+## 訂閱者體驗
+### [使用訂閱者入口網站](using-the-subscriber-portal.md)
+#### [啟動零售訂閱](activate-store-subscriptions.md)
+#### [登入](signing-in.md)
+##### [使用別名登入](aliasing.md)
+#### [管理訂閱](manage-vs-subscriptions.md)
+### [下載軟體](subscriber-downloads.md)
+#### [可用軟體下載的清單](software-download-list.md)
+### [取得與管理產品金鑰](product-keys.md)
+### Visual Studio Dev Essentials
+#### [加入 Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [選擇退出 Visual Studio Dev Essentials](leave-vsde.md)
+### [訂閱者權益](subscriber-benefits.md)
+## 使用訂閱者權益
+### 工具
+#### [Visual Studio IDE ](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure 點數](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility + Security](vs-ems.md)
+#### [Windows 開發人員帳戶](vs-windows-dev.md)
+#### [Office 365 開發人員訂閱](vs-office-dev.md)
+#### [Power BI Pro](vs-pbi.md)
+#### [Modern Requirements4TFS](vs-modernreq.md)
+#### [Azure 隨用隨付](vs-azure-payg.md)
+### 專業開發
+#### [LinkedIn Learning](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Xamarin University 訓練課程](vs-xamarin.md)
+#### [Microsoft E-Learning](vs-elearn.md)
+#### [MSDN Magazine 訂閱](vs-msdn.md)
+### 支援權益
+#### [Azure 諮詢對談](vs-azure-advisory-chat.md)
+#### [Azure 社群](vs-azure-community.md)
+#### [技術支援](vs-tech-support.md)
+#### [優先論壇支援](vs-priority-support.md)
+#### [指引支援](vs-concierge-chat.md)
+## 管理訂閱
+### 總覽
+#### [了解訂閱管理](subscription-management-info.md)
+#### [系統管理員責任](admin-responsibilities.md)
+#### [管理系統管理員](managing-admins.md)
+#### [存取入口網站](access-admin-portal.md)
+#### 協助組織上線
+##### [尋找您的 PCN](find-pcn.md)
+##### [管理多個 PCN](multiple-pcns.md)
+##### [尋找您的主要連絡人](find-primary-contact.md)
+##### [尋找訂閱識別碼](find-subscription-id.md)
+### 使用管理入口網站
+#### [指派訂閱](assign-license.md)
+#### [重新傳送指派電子郵件](resend-assignment-email.md)
+#### [編輯訂閱](edit-license.md)
+#### [刪除訂閱](delete-license.md)
+#### [搜尋訂閱](search-license.md)
+#### [過度分派](handle-overclaimed-license.md)
+#### [過期的訂閱](handle-expired-license.md)
+#### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
+## 取得 Visual Studio 訂閱
+### [比較訂閱](compare-subscriptions.md)
+### 購買雲端訂閱
+#### [概觀](vscloud-overview.md)
+#### [第一次購買](vscloud-first-purchase.md)
+#### [續約](vscloud-renewals.md)
+#### [購買更多](vscloud-buy-more.md)
+#### [取消](vscloud-cancel.md)
 ## 資源
-### [使用條款](vs-license-terms.md)
-### [訂閱支援](https://www.visualstudio.com/subscriptions/support/)
+### [Visual Studio 授權條款](vs-license-terms.md)
+### [Visual Studio 授權白皮書](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d) \(英文\)
+### [比較訂閱選項和定價](https://www.visualstudio.com/vs/pricing)
+### [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
