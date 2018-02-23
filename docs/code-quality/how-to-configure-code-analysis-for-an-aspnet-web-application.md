@@ -15,17 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3d8d9b544b8cb4489ebfdfda8c6a237cb73c118f
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：設定 ASP.NET Web 應用程式的程式碼分析
 
 在 Visual Studio 中，您可以從清單中選取的程式碼分析*規則集*要套用至[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 應用程式。 預設規則集是 Microsoft 最小建議規則。 您可以選取另一個規則集套用至網站。
-
-## <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>若要設定 ASP.NET 網頁架構專案的規則集
 
 1. 選取網站中**方案總管 中**。
 
