@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -52,9 +52,9 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 另請參閱[常見問題集](faq.md)。
 
-下列影片也提供 R 工具功能的簡短 (5 分 48 秒) 檢閱：
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看影片 (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) 以概覽 Visual Studio R 工具 (12 分 36 秒)。 另請觀看[其他 R 工具影片](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)。 |
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
