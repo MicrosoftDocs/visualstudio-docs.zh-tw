@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>加入語言伺服器通訊協定的延伸
 
@@ -136,7 +136,7 @@ LSP 不包含有關如何提供文字的顏色標示語言規格。 若要提供
 
 1. 建立一個稱為 「 文法 」 在您的擴充功能資料夾 （或它可以是任何您所選擇的名稱）。
 
-2. 在 「 文法 」 資料夾，資料夾會包含您想要提供自訂的顏色標示 *.tmlanguage 或 *.tmtheme 檔案。
+2. 在 「 文法 」 資料夾，資料夾包含任何 *.tmlanguage、 *.plist、 *.tmtheme 或您想要提供自訂的顏色標示 *.json 檔案。
 
 3. 以滑鼠右鍵按一下檔案，然後選取**屬性**。 變更的建置動作**內容**和**包含在 VSIX 中的**屬性設定為 true。
 
