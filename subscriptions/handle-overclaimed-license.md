@@ -3,21 +3,22 @@ title: "處理過度領取的授權 | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
 Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d01474a410e2c2b115e5026da5e4d3e5b6783ad5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>處理「過度領取」的訂閱
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 發生這種情況時，[訂閱者] 索引標籤會顯示警示，並提供進一步資訊。 
-**注意：Open License 方案不允許過度領取的情況。**
+> [!NOTE] 
+> Open License 方案不允許過度領取的情況。
 
 ![過度領取的訂閱通知](_img\over-claimed\over-claimed-alert.png)
 

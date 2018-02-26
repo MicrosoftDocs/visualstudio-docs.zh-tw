@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中管理 Python 應用程式的專案 | Microsoft Docs"
 description: "說明 Visual Studio 中專案的用途、示範如何建立及管理適用於 Python 程式碼的專案，以及摘要說明可供 Python 使用的各種專案範本。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Python 專案
 
@@ -40,11 +40,10 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 >
 > 如[從現有的檔案建立專案](#creating-a-project-from-existing-files)中所述，從現有的程式碼建立 Visual Studio 專案相當簡單。
 
-如需 Visual Studio 中 Python 專案的簡介，請觀看 [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (取得 Python 程式碼) 影片 (Microsoft Virtual Academy，2 分 17 秒)。
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-另請觀看 [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (深度剖析：使用原始檔控制搭配 Python 專案) 舊影片 (youtube.com，8 分 55 秒)。
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Python 專案簡介的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) \(英文\) (2 分 17 秒)。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱[深度剖析：使用原始檔控制搭配 Python 專案](https://youtu.be/Aq8eqApnugM) \(英文\) (youtube.com，8 分 55 秒)。 |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>新增檔案、指派啟動檔案及設定環境
 

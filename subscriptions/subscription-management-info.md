@@ -9,11 +9,11 @@ Description: Find More Information About Subscription Management?
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ed2b39a7660f7e4307c142b801ba8d43014c4726
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="where-can-i-find-more-information-about-subscription-management"></a>何處可以找到訂用帳戶管理的相關詳細資訊？
 
@@ -21,5 +21,5 @@ ms.lasthandoff: 01/29/2018
 
 指定不同的購買通道，務必讓訂用帳戶管理員了解其訂閱購買方式，這樣才能利用適當的權限和使用者指南。 
 
-Visual Studio 訂用帳戶小組最近已建立 [Visual Studio 訂用帳戶系統管理入口網站](https://www.visualstudio.com/subscriptions-administration/)。  此入口網站的目標，是協助訂用帳戶管理員快速了解他們必須指派並管理組織內訂用帳戶的工具和功能。 
+Visual Studio 訂用帳戶小組已建立「Visual Studio [訂用帳戶系統管理入口網站](https://www.visualstudio.com/subscriptions-administration/)」。  此入口網站的目標，是協助訂用帳戶管理員快速了解他們必須指派並管理組織內訂用帳戶的工具和功能。 
 

@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 01/05/2018
 |您可以使用符號套件進行偵錯支援。|Y|如果您將 .pdb 檔案放在 SDK 中，檔案會自動被挑選。|Y||
 |機制支援套件管理員自動更新。|N/A|SDK 因 MSBuild 而修改。|Y||
 |機制支援輕量的資訊清單格式。|Y|SDKManifest.xml 支援許多屬性，但通常只有一小部分為必要。|Y||
-|機制可供所有 Visual Studio 版本使用。|Y|SDK 支援所有 Visual Studio 版本，從 Visual Studio Express 直至 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。|Y|NuGet 支援所有 Visual Studio 版本，從 Express 直至 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。|
+|機制可供所有 Visual Studio 版本使用。|Y|SDK 支援所有 Visual Studio 版本。|Y|NuGet 支援所有 Visual Studio 版本。|
 |機制適用於所有專案類型。|N|從 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 開始，SDK 支援 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式。|N|您可以檢閱允許專案的清單。|
 
 ## <a name="see-also"></a>另請參閱

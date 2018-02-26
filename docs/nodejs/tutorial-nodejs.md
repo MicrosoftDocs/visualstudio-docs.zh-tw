@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 使用者入門
 在使用 Visual Studio 進行 Node.js 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
@@ -32,15 +32,19 @@ ms.lasthandoff: 02/01/2018
 
 2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式] ()，然後選擇 [確定]。   
+3. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。   
 
-     如果您看不到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。 
+     如果您看不到 [B基本的 Azure Node.js Express 4 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。 
 
     Visual Studio 會建立新的方案，並開啟專案。 **app.js** 專案檔會在編輯器 (左窗格) 中開啟。 如果您不熟悉 Visual Studio 方案和專案，請參閱[快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式](../ide/quickstart-nodejs.md)。
 
+4. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) \(英文\) 網站安裝它。
+
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考已安裝的執行階段。
+
 ## <a name="add-some-code"></a>新增一些程式碼
 
-1. 在方案總管 (右窗格) 中，開啟 views 資料夾，然後開啟 index.pug。`
+1. 在方案總管 (右窗格) 中，開啟 views 資料夾，然後開啟 index.pug。
 
 1. 將內容取代為下列標記。
 
@@ -87,7 +91,7 @@ ms.lasthandoff: 02/01/2018
     });
     ```
 
-1. 在 `data` 後面，輸入 `: get`，而 IntelliSense 將會顯示 getData 函式。 選取 `getData`。
+1. 在 `data` 後面，輸入 `: get`，而 IntelliSense 將會顯示 getData 顯示。 選取 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -121,7 +125,7 @@ ms.lasthandoff: 02/01/2018
 
     ![選取偵錯目標](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. 按 **Ctrl+F5** 執行應用程式。
+1. 按 **F5** ([偵錯] > [開始偵錯]) 以執行應用程式。
 
     偵錯工具會在您設定的中斷點處暫停。 現在，您可以檢查您的應用程式狀態。
 
@@ -129,7 +133,7 @@ ms.lasthandoff: 02/01/2018
 
     ![檢查變數](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. 按 **F5** 以繼續。
+1. 按 **F5** ([偵錯] > [繼續]) 以繼續。
 
     應用程式會在瀏覽器中開啟。
 

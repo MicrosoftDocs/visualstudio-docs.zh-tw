@@ -17,18 +17,18 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2edd75f87a3c70fc3a8190fb2fdab39c3c31be6e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ca3dccf8a30bb4e1132c0bbc7ea8d8e660ae0f8e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 
 > [!Note]
 > 目前在 Visual Studio for Windows 中沒有 Python 支援；但在 Mac 和 Linux 上，Python 支援可透過 Visual Studio Code 取得。 請參閱[問與答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
 
-1. 下載並執行適用於 Windows 的最新版 Visual Studio 2017 安裝程式 (Python 支援存在於 15.2 版和更新版本)。
+1. 下載並執行適用於 Windows 的最新版 Visual Studio 2017 安裝程式 (Python 支援存在於 15.2 版和更新版本)。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式並跳到步驟 2。
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">安裝 Visual Studio 2017 Community</a>

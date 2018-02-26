@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中對 Python 程式碼進行偵錯 | Microsoft Docs"
 description: "在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c3b4bf4c08f9ecd13a313c717b4da9c0a5d5a45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -34,9 +34,9 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 - [混合模式 Python/C++ 偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
-如需偵錯的概觀，請觀看 [Debugging Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (偵錯 Python，Microsoft Virtual Academy，3 分 32 秒)。
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 偵錯的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) \(英文\) (3 分 32 秒)。|
 
 <a name="debugging-without-a-project"></a>
 

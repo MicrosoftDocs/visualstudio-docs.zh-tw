@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # 適合我的發行選項為何？
 
@@ -50,6 +50,8 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 - 您不需要在裝載 Web 應用程式的伺服器上進行任何電腦層級自訂。
 
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure App Service，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
+
+如需發佈 ASP.NET Core 應用程式的詳細資訊，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式發行到 Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 ## Azure 虛擬機器
 
@@ -83,7 +85,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 - 您只需要本機測試部署。
 - 您想要個別檢查並可能修改應用程式檔案，再將它們傳送至另一個部署目標。
 
-
+如需部署 .NET Core 應用程式的詳細資訊，請參閱[使用 Visual Studio 部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs)。
 
 ## 自訂目標
 
@@ -103,3 +105,5 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 - 您是在非 Azure 且可透過 URL 存取的提供者上使用雲端服務。
 - 您想要使用認證進行部署，但這些認證不是您在 Visual Studio 內使用的認證或直接繫結至 Azure 帳戶的認證。
 - 您想要在每次部署時刪除目標中的檔案。
+
+如需發佈到 IIS 的詳細資訊，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) 和[在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。

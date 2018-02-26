@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: javascript
@@ -12,13 +13,15 @@ ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 12c848797b167038b02106ca3392cac50171f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 Node.js Web 應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
@@ -37,6 +40,10 @@ ms.lasthandoff: 12/22/2017
      ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)  
 
     Visual Studio 會建立新的方案並開啟專案。 **server.js** 會在編輯器中開啟。
+
+4. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) \(英文\) 網站安裝它。
+
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考已安裝的執行階段。
 
 ## <a name="explore-the-ide"></a>探索 IDE  
 
@@ -62,11 +69,11 @@ ms.lasthandoff: 12/22/2017
 
     `res.end('Hello World\n' + res.connection.`
 
-    如果您鍵入 `connection.`，則 IntelliSense 會提供自動完成程式碼項目的選項。
+    如果您輸入 `connection.`，則 IntelliSense 會提供自動完成程式碼項目的選項。
 
    ![IntelliSense 自動完成](../ide/media/quickstart-nodejs-intellisense.png)  
 
-1. 選擇 [localPort]，然後鍵入 `);` 以完成陳述式，讓它看起來如下：
+1. 選擇 [localPort]，然後輸入 `);` 以完成陳述式，讓它看起來如下：
 
     `res.end('Hello World\n' + res.connection.localPort);`
 

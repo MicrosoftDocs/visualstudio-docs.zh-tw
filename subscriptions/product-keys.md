@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -90,7 +90,8 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 ### <a name="exporting-your-claimed-keys"></a>匯出已領取的金鑰
 您可以匯出所有已領取金鑰的清單，以及許多自動標示為您「已領取」的靜態和其他金鑰選項。  
 
-**重要事項：如果訂用帳戶到期，您就不能再索取新的金鑰，或匯出已領取的金鑰。** 
+> [!IMPORTANT] 
+> 如果訂用帳戶到期，您就不能再索取新的金鑰或匯出已領取的金鑰。** 
 
 若要匯出金鑰，按一下 [產品金鑰] 頁面最右邊的 [匯出所有金鑰] 連結即可。  即會建立標題為 KeysExport.xml 的 .xml 檔案，而您可以選擇開啟或儲存檔案。  您必須使用可以處理 .xml 檔案的應用程式開啟檔案。  例如，您可以使用 Excel 將檔案開啟為唯讀活頁簿。  
 

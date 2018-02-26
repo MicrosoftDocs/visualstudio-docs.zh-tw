@@ -9,11 +9,11 @@ Description: Learn how to renew your Visual Studio subscriptions acquired throug
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: f4f2bcdd999a008334a56d95024393d21db15e32
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>我要如何更新透過 Microsoft Store 取得的訂閱？
 概觀：零售訂閱通常是從 Microsoft Store 購買，並可以藉由檢閱訂閱資訊識別為「零售」。訂閱資訊可於 https://my.visualstudio.com/subscriptions 取得。 
@@ -29,9 +29,9 @@ ms.lasthandoff: 01/29/2018
 
 
 ## <a name="activate-your-subscription"></a>啟用您的訂用帳戶： 
-您可以從付款「確認頁面」或「確認電子郵件」啟動您的訂閱。  (如果未看見您的確認電子郵件，請務必檢查垃圾郵件資料夾)。   
+您可以從付款「確認頁面」或「確認電子郵件」啟用您的訂用帳戶。  (如果未看見您的確認電子郵件，請務必檢查垃圾郵件資料夾)。   
 1. 按一下 [按一下這裡登入]。  系統會帶您前往 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)。
 2. 登入訂用帳戶。  (取得有關[登入](/visualstudio/subscriptions/signing-in)的說明)。
-3. 輸入從付款「確認頁面」或「確認電子郵件」取得的 [產品金鑰] 資訊，然後按一下 [啟動]。
+3. 輸入從付款「確認頁面」或「確認電子郵件」取得的 [產品金鑰] 資訊，然後按一下 [啟用]。
     ![輸入產品金鑰](_img//buy-retail/enter-product-key.png)
 4. 該訂閱現在應該顯示在 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) 上。

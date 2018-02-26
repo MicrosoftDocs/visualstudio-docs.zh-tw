@@ -1,5 +1,5 @@
 ---
-title: "逐步解說：我的第一個 WPF 桌面應用程式 | Microsoft Docs"
+title: "逐步解說：我的第一個 WPF 傳統型應用程式 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,15 +15,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 傳統型應用程式
 
-本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 桌面應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。
+本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 傳統型應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。
 
 ## <a name="creating-the-application-project"></a>建立應用程式專案
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在 [新增專案]  視窗中，展開 [通用] **Common** 分類節點並選擇 [標題]  屬性，然後輸入 `ExpenseIt` 按下 **Enter** 鍵。
   
-     請注意，XAML 視窗中的 [標題]  元素會變更以符合新的值。 您可以在 XAML 視窗或 [屬性]  視窗中修改 XAML 屬性，變更會同步處理。
+     請注意，XAML 視窗中的 [標題] 屬性會變更以符合新的值。 您可以在 XAML 視窗或 [屬性]  視窗中修改 XAML 屬性，變更會同步處理。
 
 1. 在 XAML 視窗中，將 [高度] 項目的值設為 `375`，將 [寬度] 屬性的值設為 `500`。
   
@@ -116,7 +116,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在設計工具中，如果 [ExpenseItHome.xaml] 索引標籤還不是使用中的設計工具索引標籤，請選擇它。
 
-1. 選擇 `<Title>` 項目，並將標題變更為 **ExpenseIt - 首頁**。
+1. 選擇 `Title` 屬性並將其值變更為 **ExpenseIt - 首頁**。
   
      **ExpenseItHome.xaml** 檔案現在在 C# 中看起來應該像這樣：  
   
@@ -178,7 +178,7 @@ ms.lasthandoff: 01/25/2018
 
 1. 在設計工具中，如果 [ExpenseReportPage.xaml] 索引標籤還不是使用中的設計工具索引標籤，請選擇它。
 
-1. 選擇 `<Title>` 項目，並將標題變更為 **ExpenseIt - 檢視費用**。
+1. 選擇 `Title` 屬性並將其值變更為 **ExpenseIt - 檢視費用**。
   
      ExpenseReportPage.xaml 檔案現在在 C# 中看起來應該像這樣：  
   
@@ -860,7 +860,7 @@ ms.lasthandoff: 01/25/2018
   
 -   安全性： [Windows Presentation Foundation 安全性](/dotnet/framework/wpf/security-wpf)  
   
--   當地語系化： [WPF 全球化和當地語系化概觀](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
+-   當地語系化：[WPF 全球化和當地語系化概觀](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
 -   效能： [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
@@ -894,4 +894,4 @@ ms.lasthandoff: 01/25/2018
   
 ## <a name="see-also"></a>另請參閱
 
-[使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[使用 Windows Presentation Foundation 建立新式傳統型應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -93,27 +94,31 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b5353009e2fbfc26898f4163aaad98dd8651c5b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。  
-  
+
 ## <a name="knowledge-base-articles"></a>知識庫文章  
  您可以搜尋線上知識庫 (KB) 中有關產品問題的文章。 並非所有問題都有對應的 KB 文章，但一般會記錄大量客戶遇到的錯誤。 您可以在 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站存取 KB 文章。  
-  
+
 ## <a name="the-developer-community"></a>開發人員社群  
  論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。  
-  
+
  您可以在 [Microsoft 技術社群](http://go.microsoft.com/fwlink/?LinkID=144922)網站存取論壇、部落格、聊天室和其他資源。  
-  
+
 ## <a name="product-support"></a>產品支援  
  如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../../ide/talk-to-us.md)。
+
+ ## <a name="see-also"></a>另請參閱
+ * [針對 Proxy 錯誤進行疑難排解](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -28,11 +28,11 @@ ms.lasthandoff: 01/23/2018
 
 您可以使用下列功能，更快速地撰寫程式碼。
 
-- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，在 **Visual Studio 2017 15.6 版 Preview 2** 及更新版本中，您可以選擇一個命令來複製一行程式碼，而不用先複製程式碼，然後調整游標位置，再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 和 [縮小選取範圍]，或者按 **Ctrl**+**W** 和 **Ctrl**+**Shift**+**W** (適用於 **Visual Studio 2017 15.5 版** 和更新版本)。
+- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，在 **Visual Studio 2017 15.6 版 Preview 2** 及更新版本中，您可以選擇一個命令來複製一行程式碼，而不用先複製程式碼，然後調整游標位置，再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 或 [編輯] > [進階] > [縮小選取範圍]，或按 **Shift**+**Alt**+**=** 或 **Shift**+**Alt**+**-** (適用於 **Visual Studio 2017 15.5 版**和更新版本)。
 
 - **使用 IntelliSense**。 當您在編輯器中輸入程式碼時，將會顯示 IntelliSense 資訊，例如列出成員、參數資訊、快速諮詢、簽章說明和自動完成文字。 這些功能支援文字的模糊比對。例如，列出成員的結果清單不僅會包含以您所輸入的字母為開頭的項目，同時也會包含名稱中包含該字母組合的項目。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
-- **在您輸入程式碼時變更 IntelliSense 選項的自動插入**。 透過將 IntelliSense 切換至建議模式，您可以規定只有在明確選擇 IntelliSense 選項時，才可以將該選項插入。
+- **在您輸入程式碼時變更 IntelliSense 選項的自動插入**。 藉由切換 IntelliSense 至建議模式，您可以規定只有在明確選擇 IntelliSense 選項時，才可以將該選項插入。
 
      若要啟用建議模式，請選擇 **Ctrl**+**Alt**+**空格**鍵，或在功能表列上選擇 [編輯] > [IntelliSense] > [切換完成模式]。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 01/23/2018
 
      若要插入程式碼片段，請在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段] 或 [範圍陳述式]，或是開啟檔案中的捷徑功能表，然後選擇 [程式碼片段] > [插入程式碼片段] 或 [範圍陳述式]。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
-- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 您可以使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Alt**+**Enter** 或 **Ctrl**+**.** 來套用這些動作。 (當您的游標位於適當的程式碼行時)。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
+- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 您可以使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Alt**+**Enter** 或 **Ctrl**+**.** 來套用這些動作。 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
 
 - **顯示和編輯程式碼項目的定義**。 您可以快速顯示和編輯定義程式碼項目 (例如成員、變數或區域) 的模組。
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/23/2018
 
     若要設定書籤，請在功能表列上選擇 [編輯] > [書籤] > [切換書籤]。 您可以在 [書籤] 視窗中檢視方案的所有書籤。 如需詳細資訊，請參閱[在程式碼中設定書籤](../ide/setting-bookmarks-in-code.md)。
 
-- **搜尋檔案中的符號定義**。 您可以在方案中搜尋並找出符號定義和檔案名稱，不過搜尋結果並不會包含名稱空間或區域變數。
+- **搜尋檔案中的符號定義**。 您可以在方案中搜尋並找出符號定義和檔名，不過搜尋結果並不會包含名稱空間或區域變數。
 
    若要存取此功能，請在功能表列上選擇 [編輯] > [巡覽至]。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/23/2018
 
 - **只顯示您要處理的錯誤**。 如果您選擇 [錯誤清單] 工具列上的 [篩選] 按鈕，則可以減少 [錯誤清單] 視窗中出現的錯誤數目。 您可以選擇顯示只在目前編輯器開啟之檔案中的錯誤、只在目前檔案中的錯誤或只在目前專案中的錯誤。 您也可以在 [錯誤清單] 視窗中搜尋以找出特定錯誤。
 
-- **尋找對話方塊、功能表命令和選項**。 在[快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)方塊中，輸入您嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
+- **尋找對話方塊、功能表命令和選項**。 在 [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md) 方塊中，輸入您嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
 
     !['new project' 的快速啟動結果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/23/2018
 
 偵錯可能會耗用大量的時間，但是下列的技巧可協助您加快處理它們。
 
-- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您針對程式碼進行偵錯時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認在偵錯或檢視頁面時要使用哪一個瀏覽器。
+- **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認在偵錯或檢視頁面時要使用哪一個瀏覽器。
 
     ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 01/23/2018
 
     若要使用這個功能，請選擇 **Ctrl**+**F10** 鍵，或為您要設定中斷點的該行程式碼開啟捷徑功能表，然後選擇 [執行至游標處]。
 
-- **在偵錯期間移動執行點**。 您可以移動目前的執行點至程式碼的其他部分，並從該點重新啟動偵錯。 對於只要針對某一區段的程式碼進行偵錯，而不重新建立抵達該部分所需的所有步驟，這個技術非常有用。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
+- **在偵錯期間移動執行點**。 您可以移動目前的執行點至程式碼的其他部分，並從該點重新啟動偵錯。 對於只要偵錯某一區段的程式碼，而不重新建立抵達該部分所需的所有步驟，這個技術非常有用。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
      若要移動執行點，將黃色箭頭拖曳至同一個原始程式檔中，您想要設定下一個陳述式的位置，並選擇 **F5** 鍵以繼續偵錯。
 
@@ -120,11 +120,11 @@ ms.lasthandoff: 01/23/2018
 
      您也可以建立另一個方案總管執行個體並移至其他監視器，更輕鬆地管理檔案。 若要建立另一個方案總管執行個體，請開啟方案總管中的捷徑功能表，然後選擇 [新增方案總管檢視]。
 
-- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼元素自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在編輯器中變更字型和顏色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-[常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+- [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

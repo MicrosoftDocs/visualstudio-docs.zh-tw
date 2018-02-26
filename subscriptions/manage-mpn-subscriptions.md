@@ -9,11 +9,11 @@ Description: Managing Visual Studio subscriptions included with Microsoft Partne
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9866b018d93e1a7b9612f65107f978ecd15bc9de
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>管理 Microsoft 合作夥伴網路 (MPN) 成員資格包含的 Visual Studio 訂用帳戶
 
@@ -28,7 +28,8 @@ Visual Studio 訂用帳戶的數目與層級視您的 Microsoft 合作夥伴網�
 - Microsoft 合作夥伴網路[方案系統管理員軟體與線上服務權益指南]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) )
     - 第 6 頁 - 針對行動套件指派連絡人角色與 Visual Studio 訂用帳戶
 
-      **注意：**Visual Studio 訂用帳戶需要技術連絡人角色
+> [!NOTE]
+> Visual Studio 訂用帳戶需要技術連絡人角色
     - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
 
 

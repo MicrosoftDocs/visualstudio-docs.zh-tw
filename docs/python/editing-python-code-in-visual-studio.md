@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中編輯 Python 程式碼 | Microsoft Docs"
 description: "在 Visual Studio 中編輯 Python 可提供 IntelliSense、程式碼片段及巡覽功能，還有格式設定、Linting 和重構。"
 ms.custom: 
-ms.date: 07/10/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2bbf7169e7d60d5dac1119f543cbcfe61e922ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
-開發人員大部分的時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。 
+開發人員大部分的時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。
 
 編輯器也與 Visual Studio 中的互動式視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 將程式碼傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)。
 
-如需 Python 程式碼的編輯簡介，請觀看 [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (編輯 Python 程式碼，Microsoft Virtual Academy，2 分 30秒)：
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範編輯 Python 程式碼的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) \(英文\) (2 分 30 秒)。|
 
 如需在 Visual Studio 中編輯程式碼的一般文件，請參閱[在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱 [Visual Studio 中的大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。
 
@@ -57,11 +57,11 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ![具篩選的成員自動完成](media/code-editing-completion-filtering.png)
 
-當您在變數或值之後鍵入句點時，會自動顯示成員自動完成內容，並顯示可能類型的方法和屬性。 如果某個變數可以是多個類型，此清單會包含所有類型的所有可能值，以及指出哪些類型支援每項自動完成的額外資訊。 當所有可能的類型都支援自動完成時，將顯示為無註解。
+當您在變數或值之後輸入句點時，會自動顯示成員自動完成內容，並顯示可能類型的方法和屬性。 如果某個變數可以是多個類型，此清單會包含所有類型的所有可能值，以及指出哪些類型支援每項自動完成的額外資訊。 當所有可能的類型都支援自動完成時，將顯示為無註解。
 
 ![多個類型時的成員自動完成](media/code-editing-completion-types.png)
 
-預設不顯示 "dunder" 成員 (開頭和結尾是雙底線的成員)。 一般情況下，這類成員應該不能直接存取。 但如果您需要這樣的成員，鍵入前置雙底線就會將這些自動完成的內容新增至清單：
+預設不顯示 "dunder" 成員 (開頭和結尾是雙底線的成員)。 一般情況下，這類成員應該不能直接存取。 但如果您需要這樣的成員，輸入前置雙底線就會將這些自動完成的內容新增至清單：
 
 ![私用成員自動完成](media/code-editing-completion-dunder.png)
 
@@ -82,7 +82,7 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ### <a name="signature-help"></a>簽章說明
 
-撰寫呼叫函式的程式碼時，簽章說明會在您鍵入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您也可使用 Ctrl + Shift + 空格鍵，讓它出現在函式呼叫中。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
+撰寫呼叫函式的程式碼時，簽章說明會在您輸入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您也可使用 Ctrl + Shift + 空格鍵，讓它出現在函式呼叫中。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
 
 ![簽章說明](media/code-editing-signature-help.png)
 
@@ -110,7 +110,7 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ## <a name="code-snippets"></a>程式碼片段
 
-程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab 或使用 [編輯] > [IntelliSense] > [插入程式碼片段範圍陳述式]  命令插入到檔案。 例如，在 Tab 鍵之後鍵入 `class` 會產生類別的其餘部分。 您可以在名稱和基底清單上輸入、使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 開始輸入主體。
+程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab 或使用 [編輯] > [IntelliSense] > [插入程式碼片段範圍陳述式]  命令插入到檔案。 例如，在 Tab 鍵之後輸入 `class` 會產生類別的其餘部分。 您可以在名稱和基底清單上輸入、使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 開始輸入主體。
 
 ![程式碼片段](media/code-editing-code-snippets.png)
 

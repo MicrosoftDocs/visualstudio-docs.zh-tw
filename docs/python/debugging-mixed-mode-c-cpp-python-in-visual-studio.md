@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
 多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用。 (如需逐步解說，請參閱[建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md))。
 
 Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模式偵錯，前提是您必須在 Visual Studio 安裝程式中針對「Python 開發」工作負載選取 [Python 原生開發工具] 選項。
+
+> [!Note]
+> Visual Studio 2015 和更早版本中適用於 Visual Studio 1.x 的 Python 工具不支援混合模式偵錯。
 
 混合模式偵錯包括下列於本文所述的功能：
 
@@ -40,12 +43,9 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 
 ![混合模式偵錯](media/mixed-mode-debugging.png)
 
-如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的影片簡介，請參閱[深入探討︰建立原生模組 (英文)](https://youtu.be/D9RlT06a1EI) (youtube.com，9 分 9 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> 適用於 Visual Studio 1.x 的 Python 工具不提供混合模式偵錯。
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱[深入探討︰建立原生模組](https://youtu.be/D9RlT06a1EI) \(英文\) (youtube.com，9 分 09 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。 |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>在 Python 專案中啟用混合模式偵錯
 

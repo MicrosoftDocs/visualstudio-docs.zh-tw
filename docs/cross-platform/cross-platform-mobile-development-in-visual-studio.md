@@ -14,37 +14,25 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
+
 您可以使用 Visual Studio 建置 Android、iOS 和 Windows 裝置的應用程式。  設計應用程式時，請使用 Visual Studio 中的工具，輕鬆地加入已連線的服務，例如 Office 365、Azure App Service 和 Application Insights。
 
- 使用 C# 和 .NET Framework、HTML 和 JavaScript 或 C++ 建置您的應用程式。 共用程式碼、字串、影像，甚至在某些情況下，共用使用者介面。
+使用 C# 和 .NET Framework、HTML 和 JavaScript 或 C++ 建置您的應用程式。 共用程式碼、字串、影像，甚至在某些情況下，共用使用者介面。
 
- 如果您要建置遊戲或沈浸式圖形化應用程式，請安裝 Visual Studio Tools for Unity，並享受搭配 Unity 提供的各種功能強大且具生產力的 Visual Studio 功能，這個熱門的跨平台遊戲/圖形引擎與開發環境適用於在 iOS、Android、Windows 及其他平台上執行的應用程式。
+如果您要建置遊戲或沈浸式圖形化應用程式，請安裝 Visual Studio Tools for Unity，並享受搭配 Unity 提供的各種功能強大且具生產力的 Visual Studio 功能，這個熱門的跨平台遊戲/圖形引擎與開發環境適用於在 iOS、Android、Windows 及其他平台上執行的應用程式。
 
- **本文內容：**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>建置 Android、iOS 和 Windows 的應用程式 (.NET Framework)
 
--   [建置 Android、iOS 和 Windows 的應用程式 (.NET Framework)](#NET)
+![裝置](../cross-platform/media/homedevices.png "HomeDevices")
 
-    -   [以 Android、iOS 和 Windows 為目標的單一程式碼基底](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [以 Windows 10 裝置為目標](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [建置 Android、iOS 和 Windows 的應用程式 (HTML/JavaScript)](#HTML)
-
--   [建置 Android 和 Windows 的應用程式 (C++)](#CPP)
-
--   [使用 Visual Studio Tools for Unity 建置 Android、iOS 和 Windows 的跨平台遊戲](#Unity)
-
-##  <a name="NET"></a> 建置 Android、iOS 和 Windows 的應用程式 (.NET Framework)
- ![裝置](../cross-platform/media/homedevices.png "HomeDevices")
-
- 利用 Xamarin，您可以在同一個方案中將目標設為 Android、iOS 及 Windows，來共用程式碼，甚至共用 UI。
+利用 Xamarin，您可以在同一個方案中將目標設為 Android、iOS 及 Windows，來共用程式碼，甚至共用 UI。
 
 |**深入了解**|
 |--------------------|
@@ -52,7 +40,7 @@ ms.lasthandoff: 02/09/2018
 |[了解 Visual Studio 中的 Xamarin](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN Library)|
 |[應用程式生命週期管理 (ALM) 與 Xamarin 應用程式](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN Library)|
-|[了解 Visual Studio 中的通用 Windows 應用程式](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[了解 Visual Studio 的通用 Windows app](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 與 C# 之間的相似性](http://aka.ms/scposter) (download.microsoft.com)|
 |[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
@@ -172,7 +160,7 @@ ms.lasthandoff: 02/09/2018
 |[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
 |[了解 Unity](http://unity3d.com/) (Unity 網站)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  - [將 Office 365 API 新增至 Visual Studio 專案](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
  - [Azure App Service - Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/)
  - [適用於行動裝置的 HockeyApp](https://azure.microsoft.com/en-us/services/hockeyapp/)

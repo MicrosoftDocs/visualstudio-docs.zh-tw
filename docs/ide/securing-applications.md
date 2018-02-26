@@ -1,30 +1,29 @@
 ---
-title: "設定應用程式的安全性 | Microsoft Docs"
+title: "在 Visual Studio 中保護應用程式 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 4fcc188195a084169813d67a7d2e8680beab1f08
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="securing-applications"></a>設定應用程式的安全性
+# <a name="securing-applications"></a>保護應用程式
+
 雖然大部分的應用程式都有共通的安全性挑戰，但每個應用程式定義域擁有自己的安全性挑戰。  
   
 ## <a name="general-security-considerations"></a>一般安全性考量  
@@ -60,11 +59,12 @@ ms.lasthandoff: 02/01/2018
  [如何：使用傳輸安全性](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  描述當您連接到 WCF 服務時，如何使用傳輸安全性進行驗證。  
   
-## <a name="securing-desktop-applications"></a>部署桌面應用程式  
- 設計桌面應用程式的安全性是應用程式開發的必要步驟。  
+## <a name="securing-desktop-applications"></a>部署傳統型應用程式  
+ 設計傳統型應用程式的安全性是應用程式開發的必要步驟。  
   
  [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)  
  提供 Windows Form 安全性實作的概觀。  
   
-## <a name="see-also"></a>請參閱  
- [安全性](../ide/security-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+
+- [安全性](../ide/security-in-visual-studio.md)
