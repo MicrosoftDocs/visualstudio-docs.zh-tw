@@ -34,6 +34,7 @@
       "contributors_to_exclude": ["conceptdev","meganbradley"],
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "bilingual_type": "hover over",
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
      "manager": "crdun",
       "ms.topic": "article",
       "audience": "developer",
