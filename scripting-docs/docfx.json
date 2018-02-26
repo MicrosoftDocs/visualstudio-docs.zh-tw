@@ -43,7 +43,8 @@
             "audience": "developer",
             "ms.reviewer": "",
             "searchScope": ["Scripting"],
-            "hideScope": true
+            "hideScope": true,
+      "uhfHeaderId": "MSDocsHeader-VisualStudio"
     },
     "fileMetadata": {},
     "template": [],
