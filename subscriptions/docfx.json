@@ -31,7 +31,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/_breadcrumb/toc.yml"
+      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "uhfHeaderId": "MSDocsHeader-VisualStudio"
     },
     "fileMetadata": {},
     "template": [],
