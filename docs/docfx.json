@@ -47,6 +47,7 @@
       "ms.tgt_pltfrm": "dotnet",
       "searchScope": ["VS IDE"],
       "featureFlags": ["productfeedback"],
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "product_feedback_link_url1": "https://developercommunity.visualstudio.com/",
       "product_feedback_link_text_key1": "reportAProductIssue",
       "product_feedback_link_url2": "https://visualstudio.uservoice.com",
