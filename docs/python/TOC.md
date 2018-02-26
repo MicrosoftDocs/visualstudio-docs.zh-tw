@@ -1,5 +1,6 @@
 # [概觀](overview-of-python-tools-for-visual-studio.md)
 # [安裝](installing-python-support-in-visual-studio.md)
+## [安裝 Python 解譯器](installing-python-interpreters.md)
 # 快速入門
 ## [從現有程式碼建立專案](quickstart-01-project-from-existing.md)
 ## [從範本建立專案](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5 - 安裝套件和管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6 - 使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # 概念
-## [Python 環境](managing-python-environments-in-visual-studio.md)
 ## [Python 專案](managing-python-projects-in-visual-studio.md)
 ### [Web 專案範本](python-web-application-project-templates.md)
 ### [Django Web 專案範本](python-django-web-application-project-template.md)
 ### [Azure 雲端服務範本](python-azure-cloud-service-project-template.md)
 ## [Azure SDK for Python](azure-sdk-for-python.md)
 # 作法指南
+## [管理環境](managing-python-environments-in-visual-studio.md)
+### [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
+### [將 requirements.txt 用於相依性](managing-required-packages-with-requirements-txt.md)
+### [搜尋路徑](search-paths.md)
+### [環境視窗參考](python-environments-window-tab-reference.md)
 ## [編輯程式碼](editing-python-code-in-visual-studio.md)
 ### [格式化程式碼](formatting-python-code.md)
 ### [重構程式碼](refactoring-python-code.md)

@@ -45,7 +45,7 @@
 ### [逐步解說：撰寫 C/C++ DLL 的單元測試](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [適用於 C++ 的 Microsoft 單元測試架構 API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [建立及執行 UWP 應用程式的單元測試](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [對 UWP App 的 Visual C++ DLL 進行單元測試](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [對 C++ UWP DLL 進行單元測試](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [對 UWP 應用程式中的 Visual C# 程式碼進行單元測試](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [執行 UWP 應用程式的單元測試](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [使用程式碼涵蓋範圍來決定所測試的程式碼數量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
