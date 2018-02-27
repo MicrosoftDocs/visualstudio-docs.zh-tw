@@ -11,20 +11,20 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017
 
 ## <a name="smart-code-editor"></a>智慧型程式碼編輯器
 
-[文件：使用 IntelliSense](using-intellisense.md)  
-[文件：智慧型編輯器功能](writing-code-in-the-code-and-text-editor.md)
+- [文件：使用 IntelliSense](using-intellisense.md)
+- [文件：智慧型編輯器功能](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio 透過 Roslyn 編譯器來深入了解您的程式碼，為您提供語法顏色標示、程式碼完成、誤輸入變數拼字檢查、未匯入的類型解析、大綱、結構視覺化檢視、[CodeLens](find-code-changes-and-other-history-with-codelens.md)，呼叫階層、可暫留的快速諮詢、參數說明等智慧型編輯功能，以及用於重構、套用快速動作和產生程式碼的工具。
+Visual Studio 透過 .NET ("Roslyn") 編譯器來深入了解您的程式碼，提供您語法顏色標示、程式碼完成、拼字檢查輸入錯誤變數、未匯入的類型解析、大綱、結構視覺化檢視、[CodeLens](find-code-changes-and-other-history-with-codelens.md)，呼叫階層、可暫留的快速資訊、參數說明等智慧型編輯功能，以及用於重構、套用快速動作和產生程式碼的工具。
 
 ![Visual Studio 智慧型程式碼編輯器](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 
@@ -50,14 +50,14 @@ Visual Studio 的即時程式碼診斷藉由偵測錯誤和可能有問題的程
 
 [文件：Visual Studio 中的單元測試](../test/improve-code-quality.md)
 
-針對以 .NET Framework、.NET Standard 或 .NET Core 為目標的任何應用程式，執行以 MSTest、NUnit 或 XUnit 測試架構為基礎的單元測試並進行偵錯。 探索並檢閱您在「測試總管」中的測試，或使用 *Live Unit Testing* (僅限企業版 SKU) 在編輯器中立即查看程式碼變更如何影響您的單元測試。 
+針對以 .NET Framework、.NET Standard 或 .NET Core 為目標的任何應用程式，執行以 MSTest、NUnit 或 XUnit 測試架構為基礎的單元測試並進行偵錯。 探索並檢閱您在「測試總管」中的測試，或使用 *Live Unit Testing* (僅限企業版 SKU) 在編輯器中立即看到程式碼變更如何影響您的單元測試。
 
 ![Visual Studio 中的 Live Unit Testing](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>程式碼一致性和樣式
 
-[文件：可攜式自訂編輯器選項](create-portable-custom-editor-options.md)  
-[文件：EditorConfig 的 .NET 程式碼樣式設定](editorconfig-code-style-settings-reference.md)
+- [文件：可攜式自訂編輯器選項](create-portable-custom-editor-options.md)
+- [文件：EditorConfig 的 .NET 程式碼樣式設定](editorconfig-code-style-settings-reference.md)
 
 Visual Studio 啟用程式碼慣例設定、偵測程式碼樣式違規，並透過 **Ctrl+.** 快速鍵提供快速修正來補救樣式問題 。 使用 *EditorConfig*，在存放庫中設定和強制執行您小組的格式化、命名和程式碼樣式慣例，並允許覆寫專案和檔案層級的值。
 
@@ -67,7 +67,7 @@ Visual Studio 啟用程式碼慣例設定、偵測程式碼樣式違規，並透
 
 [文件：Visual Studio 偵錯](../debugger/index.md)
 
-Visual Studio 包含最佳的偵錯工具，可讓您針對以 .NET Framework、.NET Standard 和 .NET Core 為目標的 .NET 應用程式進行偵錯。 切換並設定條件中斷點 (**F9**)、逐步執行方法呼叫、評估 LINQ 和 Lambda 運算式、設定監看變數、重新附加至處理序、檢查您的呼叫堆疊，甚至是使用 [編輯後繼續] 一面進行偵錯一面進行即時程式碼編輯。
+Visual Studio 包含最佳的偵錯工具，可讓您偵錯以 .NET Framework、.NET Standard 和 .NET Core 為目標的 .NET 應用程式。 切換並設定條件中斷點 (**F9**)、逐步執行方法呼叫、評估 LINQ 和 Lambda 運算式、設定監看變數、重新附加至處理序、檢查您的呼叫堆疊，甚至是使用 [編輯後繼續] 一面進行偵錯一面進行即時程式碼編輯。
 
 如果您的服務是在 Azure 中執行，使用「快照集偵錯」可即時診斷部署在 Visual Studio 2017 Enterprise 中之雲端應用程式的問題。
 
@@ -97,7 +97,7 @@ Visual Studio 具有豐富的延伸模組生態系統，可供您視需要加以
 - [Visual Studio 的快速鍵 (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-以下是常用的 Visual Studio 快速鍵。 請注意，有些延伸模組會解除預設 Visual Studio 按鍵繫結關係，您必須還原按鍵繫結關係才能使用下列命令。 若要將按鍵繫結關係還原為 Visual Studio 的預設值，請移至 [工具] > [匯入和匯出設定] > [重設所有設定]。
+以下是常用的 Visual Studio 快速鍵。 請注意，有些延伸模組會解除預設 Visual Studio 按鍵繫結關係，您必須還原按鍵繫結關係才能使用下列命令。 若要將按鍵繫結關係還原為 Visual Studio 的預設，請移至 [工具] > [匯入和匯出設定...] > [重設所有設定]。
 
 | 快速鍵 (所有設定檔) | 命令 | 描述 |
 |-|-|-|
@@ -107,10 +107,8 @@ Visual Studio 具有豐富的延伸模組生態系統，可供您視需要加以
 | **Shift+F12** | 尋找所有參考 | 查看所有符號或常值參考 |
 | **Ctrl+.** (在 C# 設定檔中為 **Alt+Enter**) | 快速動作及重構 | 查看您游標位置或選取的程式碼有哪些程式碼修正、程式碼產生動作、重構或其他快速動作可供使用 |
 | **Ctrl**+**E**、**V** | 重複行 | 重製游標所在行的程式碼 (適用於 **Visual Studio 2017 15.6 版 Preview 2** 和更新版本) |
-| **Ctrl**+**W** | 展開選取範圍 | 將目前的選取範圍展開一個結構單位 (適用於 **Visual Studio 2017 15.5 版**) |
-| **Ctrl**+**Shift**+**W** | 縮小選取範圍 | 將目前的選取範圍縮小 (減少) 一個結構單位 (適用於 **Visual Studio 2017 15.5 版**) |
 | **Ctrl+Q** | 快速啟動 | 搜尋所有 Visual Studio 設定 |
-| **F5** | 開始偵錯 | 開始針對應用程式進行偵錯 |
+| **F5** | 開始偵錯 | 開始偵錯應用程式 |
 | **Ctrl+F5** | 執行而不偵錯 | 在本機執行應用程式而不偵錯 |
 | **Ctrl+K、D** (預設設定檔) 或 **Ctrl+E、D** (C# 設定檔) | 格式化文件 | 根據您的新行字元、間距和縮排設定，來清除您檔案中的格式違規 |
 | **Ctrl+\\、E** (預設設定檔) 或 **Ctrl+W、E** (C# 設定檔) | 檢視錯誤清單 | 查看您文件、專案或方案中的所有錯誤 |
