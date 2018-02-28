@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Debug.ListSource
+f1_keywords:
+- Debug.ListSource
 helpviewer_keywords:
 - Debug.ListSource command
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bb3f3e6cb441697fb8546fcec485d292e979690b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.xmldesigner
+f1_keywords:
+- vb.xmldesigner
 helpviewer_keywords:
 - XML [Visual Studio], resources
 - Enterprise Templates, XML and
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 38d933199c85bee3fa85a533f9c61c08bee898ea
 ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT

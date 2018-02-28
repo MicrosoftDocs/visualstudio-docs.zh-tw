@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.StartPage.WhatsNew
+f1_keywords:
+- VS.StartPage.WhatsNew
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,7 +17,8 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT

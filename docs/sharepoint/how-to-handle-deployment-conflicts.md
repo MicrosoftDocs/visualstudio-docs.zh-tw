@@ -4,14 +4,17 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: SharePoint development in Visual Studio, extending deployment
+helpviewer_keywords:
+- SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c3bbd5bc7d69fbc48d2c754151a3ec6b5fcb612c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

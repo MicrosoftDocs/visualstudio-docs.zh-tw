@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.Pick.UI
+f1_keywords:
+- System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ab9ef5504b8785e31446d51f517e8ac41c27d579
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

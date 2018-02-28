@@ -7,11 +7,13 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: refactoring [Visual Studio]
+helpviewer_keywords:
+- refactoring [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 6f8b88d0bc275d16394fafd559702667b35dbaad
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT

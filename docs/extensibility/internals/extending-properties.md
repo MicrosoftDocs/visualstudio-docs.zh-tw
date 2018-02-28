@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Properties window, providing support
+helpviewer_keywords:
+- Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT

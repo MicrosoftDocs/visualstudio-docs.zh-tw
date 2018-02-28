@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。  
@@ -34,10 +34,8 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置**  
- 指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`)、FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`) 或網站 (`http://www.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 (**...**) 按鈕運作。  
-  
- 根據預設，如果您已安裝 IIS，發行位置為 `http://localhost/<projectname>/` ；如果未安裝 IIS，則為 `publish\` 目錄。 如果您的電腦執行 Windows Vista，則不論是否安裝 IIS，預設值一律都會是 `publish\` 目錄。  
-  
+ 指定應用程式的發行位置。 可以是磁碟機路徑 (`C:\deploy\myapplication`)、檔案共用 (`\\server\myapplication`) 或 FTP 伺服器 (`ftp://ftp.microsoft.com/myapplication`)。 請注意，文字必須出現在 [發行位置]  方塊中才能讓瀏覽 (**...**) 按鈕運作。  
+   
  **安裝資料夾 URL**  
  選擇性。 指定使用者前往以安裝應用程式的網站。 只有在它與 [發行位置] 不同時 (例如，將應用程式發行至預備伺服器時) 才是必要項目。  
   

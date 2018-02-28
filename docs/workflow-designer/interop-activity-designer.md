@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.Interop.UI
+f1_keywords:
+- System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 726bc2fa995d819b0e554e11439c85f9fdf19243
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

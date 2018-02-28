@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.CommandWindow
+f1_keywords:
+- VS.CommandWindow
 helpviewer_keywords:
 - IDE, Command window
 - Mark mode in Command window
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

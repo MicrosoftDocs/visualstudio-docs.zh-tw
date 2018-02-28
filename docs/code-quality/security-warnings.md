@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.securityrules
+f1_keywords:
+- vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
 - security warnings
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
 ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT

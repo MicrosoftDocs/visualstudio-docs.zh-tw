@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>步驟 6：使用 Git
 
@@ -35,7 +35,7 @@ Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 Git
 
   ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-1. 透過選取存放庫標頭，也會顯示 [Team Explorer] 視窗與各種可用的 Git 選項。 顯示的 [同步] 窗格提供用於發行至遠端存放庫的選項。
+1. 透過選取存放庫標頭，也會顯示 [Team Explorer] 視窗與各種可用的 Git 選項。 如同選取 [推送] 標題時所示，[同步] 窗格會提供用於發行至遠端存放庫的選項。
 
   ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 Git
 
   ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
 
-1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您已連線至遠端存放庫，請選取 [同步] 推送您的本機認可。
+1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的命令。
 
 ## <a name="going-deeper"></a>繼續探討
 

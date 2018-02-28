@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Office development in Visual Studio, reference
+helpviewer_keywords:
+- Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

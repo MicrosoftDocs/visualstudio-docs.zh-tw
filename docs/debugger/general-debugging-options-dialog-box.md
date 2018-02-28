@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 **工具 > 選項 > 偵錯 > 一般**頁面可讓您設定下列選項：  
@@ -115,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 關閉所有物件結構檢視自訂。 如需檢視自訂的詳細資訊，請參閱[建立.managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。  
   
 **隱藏 JIT 最佳化，在模組載入 (僅限 Managed)**  
-在附加偵錯工具時若已載入模組且已編譯 JIT，便停用 Managed 程式碼的 JIT 最佳化。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。
+在附加偵錯工具時若已載入模組且已編譯 JIT，便停用 Managed 程式碼的 JIT 最佳化。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。 如需詳細資訊，請參閱[JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)。
 
 **啟用 ASP.NET （Chrome 和 IE） 的偵錯 JavaScript**可讓 ASP.NET 應用程式的指令碼偵錯工具。 在 Chrome 中的第一次使用，您可能需要登入第一次使用啟用已安裝的 Chrome 擴充功能上的瀏覽器。 停用此選項以還原到舊版的行為。    
 

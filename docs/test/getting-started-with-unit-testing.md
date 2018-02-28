@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit test plans
+helpviewer_keywords:
+- unit testing, create unit test plans
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: e6789c3a8ddb9b0aa317df0d2362d39946069cbd
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

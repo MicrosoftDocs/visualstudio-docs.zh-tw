@@ -4,10 +4,12 @@ ms.custom: H1HackMay2017
 ms.date: 03/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.crashdump
+f1_keywords:
+- vs.debug.crashdump
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - dump files
 - dumps
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
-caps.latest.revision: "53"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

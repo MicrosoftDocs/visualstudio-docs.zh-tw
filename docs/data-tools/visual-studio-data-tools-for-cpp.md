@@ -6,7 +6,8 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: CPP
+dev_langs:
+- CPP
 author: gewarren
 ms.author: gewarren
 manager: ghogen

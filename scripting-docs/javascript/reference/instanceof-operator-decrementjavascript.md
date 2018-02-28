@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: instanceof_JavaScriptKeyword
+f1_keywords:
+- instanceof_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: instanceOf operator
+helpviewer_keywords:
+- instanceOf operator
 ms.assetid: 92467bdc-56b5-42dc-adbd-a219776454d2
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

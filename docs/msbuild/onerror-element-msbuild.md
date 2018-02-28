@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#OnError
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - OnError Element [MSBuild]
 - <OnError Element [MSBuild]
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
-caps.latest.revision: "14"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ed8d48fe390f5a5990506a6b7eeab3d1efe8b5ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="onerror-element-msbuild"></a>OnError 項目 (MSBuild)
 如果失敗工作的 `ContinueOnError` 屬性是 `false`，則會執行一或多個目標。  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 ```  
 
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+ 下列各節描述屬性、子項目和父項目。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -57,12 +59,12 @@ ms.lasthandoff: 12/22/2017
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的容器元素。|  
 
 ## <a name="remarks"></a>備註  
- 如果其中一個 `Target` 元素的工作失敗，且 `ContinueOnError` 屬性設為 `ErrorAndStop` (或 `false`)，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 便會執行 `OnError` 元素。 工作失敗時，便會執行 `ExecuteTargets` 屬性指定的目標。 如果目標中有多個 `OnError` 元素，則工作失敗時會依序執行 `OnError` 元素。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如果其中一個 `Target` 元素的工作失敗，且 `ContinueOnError` 屬性設為 `ErrorAndStop` (或 `false`)，便會執行 `OnError` 元素。 工作失敗時，便會執行 `ExecuteTargets` 屬性指定的目標。 如果目標中有多個 `OnError` 元素，則工作失敗時會依序執行 `OnError` 元素。  
 
  如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 項目 (MSBuild)](../msbuild/task-element-msbuild.md)。 如需目標的詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。  
 

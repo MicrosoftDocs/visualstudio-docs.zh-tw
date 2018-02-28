@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: contacts [Office development in Visual Studio], creating
+helpviewer_keywords:
+- contacts [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 6197970a4d3ff8d1f1cdd2e949d816d5eb4d6338
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

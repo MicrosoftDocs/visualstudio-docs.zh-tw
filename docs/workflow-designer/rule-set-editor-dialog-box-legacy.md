@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
-helpviewer_keywords: Rule Set Editor dialog box
+f1_keywords:
+- System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
+helpviewer_keywords:
+- Rule Set Editor dialog box
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

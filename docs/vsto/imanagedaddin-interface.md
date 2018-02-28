@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: IManagedAddin interface
+helpviewer_keywords:
+- IManagedAddin interface
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: ce339bb56368ab5c7e88d1cc8956a3b19a7e89b3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

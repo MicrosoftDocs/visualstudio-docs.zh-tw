@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,13 +17,15 @@ dev_langs:
 - CSharp
 - JScript
 - VB
-helpviewer_keywords: app package, debug
+helpviewer_keywords:
+- app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

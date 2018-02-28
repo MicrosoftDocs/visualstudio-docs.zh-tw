@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
 ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
-caps.latest.revision: "27"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dbb673b263cc7cf4931a07b968a763faf057fad4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單透過定義部署的唯一識別、識別例如安裝或線上模式的部署特性、指定應用程式更新設定和更新位置，以及指出對應的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單，來描述應用程式部署。  
@@ -42,7 +44,7 @@ ms.lasthandoff: 12/22/2017
 |`DeploymentUrl`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的更新位置。 如果未指定此參數，就不會為應用程式定義任何更新位置。 不過，如果 `UpdateEnabled` 參數是 `true`，則必須指定更新位置。 指定的值應該是完整的 URL 或 UNC 路徑。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的選擇性描述。|  
 |`DisallowUrlActivation`|選擇性的 `Boolean` 參數。<br /><br /> 指定當應用程式透過 URL 開啟時，是否應該自動執行。 如果此參數為 `true`，應用程式只能從 [開始] 功能表啟動。 此參數的預設值為 `false`。 只有當 `Install` 參數值為 `true` 時，此輸入才適用。|  
-|`EntryPoint`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指出所產生資訊清單組件的進入點。 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單，此輸入會指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。<br /><br /> 在 [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] 中，[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)需要 `EntryPoint` 來產生應用程式資訊清單 (組件或原生資訊清單不需要 `EntryPoint`)。這個需求會搭配建置錯誤：「MSB3185: 未指定資訊清單的 EntryPoint。」強制執行。<br /><br /> 未指定 `EntryPoint` 工作參數時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 不會發出此錯誤。 但是 \<customHostSpecified> 標記會插入做為 \<entryPoint> 標記的子系，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 您可以使用下列步驟，將 DLL 相依性加入至應用程式資訊清單︰<br /><br /> 1.藉由呼叫 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析組件參考。<br />2.將上一個工作和組件本身的輸出傳遞至 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 參數將相依性傳遞至 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|  
+|`EntryPoint`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指出所產生資訊清單組件的進入點。 對於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單，此輸入會指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。<br /><br /> 在 [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] 中，[GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)需要 `EntryPoint` 來產生應用程式資訊清單 (組件或原生資訊清單不需要 `EntryPoint`)。這個需求會搭配建置錯誤：「MSB3185: 未指定資訊清單的 EntryPoint。」強制執行。<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 未指定 `EntryPoint` 工作參數時，不會發出此錯誤。 但是 \<customHostSpecified> 標記會插入做為 \<entryPoint> 標記的子系，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 您可以使用下列步驟，將 DLL 相依性加入至應用程式資訊清單︰<br /><br /> 1.藉由呼叫 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析組件參考。<br />2.將上一個工作和組件本身的輸出傳遞至 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 參數將相依性傳遞至 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|  
 |`ErrorReportUrl`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定在 ClickOnce 安裝期間顯示在對話方塊中的網頁 URL。|  
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這能讓結構化資料 (例如自訂資訊清單定義) 反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|  
 |`Install`|選擇性的 `Boolean` 參數。<br /><br /> 指定應用程式是已安裝的應用程式或是線上專用應用程式。 如果此參數為 `true`，應用程式將會安裝在使用者的 [開始] 功能表上，並可以使用 [新增或移除程式] 對話方塊來移除。 如果此參數為 `false`，應用程式僅供從網頁線上使用。 此參數的預設值為 `true`。|  

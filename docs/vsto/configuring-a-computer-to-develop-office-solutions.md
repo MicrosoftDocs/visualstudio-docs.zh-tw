@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Office development in Visual Studio, installing tools
+helpviewer_keywords:
+- Office development in Visual Studio, installing tools
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c3e0ab446cb2aa65d0ec90aea596308ec4dcafec
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/10/2018
 ---

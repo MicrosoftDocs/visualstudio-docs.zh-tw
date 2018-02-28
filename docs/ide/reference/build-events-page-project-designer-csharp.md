@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cs.ProjectPropertiesBuildEvents
+f1_keywords:
+- cs.ProjectPropertiesBuildEvents
 helpviewer_keywords:
 - build events
 - Project Designer, Build Events page
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 245172c76ac5c62e80183a9e09e9787f311dca24
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.ServiceModel.Activities.Send.UI
+f1_keywords:
+- System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 6b3e4d7b00691d7ea2c86a81d0d2880b9f7366bd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

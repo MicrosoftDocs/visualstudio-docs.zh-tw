@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
--   使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如：  
+-   使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
   
     ```xml  
     <Target Name="Build"  

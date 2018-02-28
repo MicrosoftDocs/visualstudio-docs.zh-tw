@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VST.ProjectProperties.Publish.2007System
+f1_keywords:
+- VST.ProjectProperties.Publish.2007System
 dev_langs:
 - VB
 - CSharp
@@ -18,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: WFDShellFeatures.UI
+f1_keywords:
+- WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f2df04273936f84c8bf371ecb053a7bb22f82147
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

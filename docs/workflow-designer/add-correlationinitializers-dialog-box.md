@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: AddCorrelationInitializers.UI
+f1_keywords:
+- AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4c4d8e07aa172aef524b4d85bda5ad8efdfb509f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

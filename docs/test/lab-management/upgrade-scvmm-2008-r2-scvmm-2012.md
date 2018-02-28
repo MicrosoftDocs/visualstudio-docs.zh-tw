@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Upgrade SCVMM 2008 R2 to SCVMM 2012, test lab
+helpviewer_keywords:
+- Upgrade SCVMM 2008 R2 to SCVMM 2012, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 51d907dfe25d8f27065b2a4d8bbecaa3e98e42a1
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

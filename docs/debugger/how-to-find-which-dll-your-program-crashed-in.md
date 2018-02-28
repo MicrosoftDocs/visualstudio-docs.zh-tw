@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.dll
+f1_keywords:
+- vs.debug.dll
 dev_langs:
 - CSharp
 - VB
@@ -21,26 +23,27 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLL crashes
 - DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95ad4f9c028b9b40bf5104539a608453c9d6f9dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: df872ea52d716b4eaedc9414bc7234ba7c6294d3
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>如何：尋找程式損毀時所在的 DLL
-> [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
  如果您的應用程式在呼叫系統 DLL 或其他程式碼時損毀，您就必須找出發生損毀時作用中的 DLL。 如果您遇到損毀的 dll 程式以外，您可以識別位置使用**模組**視窗。  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>若要使用模組視窗來尋找毀損之處  
   
-1.  記下發生毀損的位址。  
+1.  記下發生毀損的位址。
+
+    如果位址不會顯示錯誤訊息中，您可能需要使用替代方法來找出的 DLL。 如果您懷疑系統 DLL，您可以[載入符號](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)從偵錯時，才會進行 Microsoft 符號伺服器。 否則，您可能需要[建立傾印檔案](../debugger/using-dump-files.md)與堆積資訊改為。 各種[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用來建立傾印檔案。
   
 2.  在**偵錯**功能表上，選擇**Windows**，然後按一下**模組**。  
   

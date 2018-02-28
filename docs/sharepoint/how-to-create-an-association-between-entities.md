@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: AssociationGroupTool
+f1_keywords:
+- AssociationGroupTool
 dev_langs:
 - VB
 - CSharp
@@ -25,7 +27,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 49b4d68a8d957462954c998d96e9309944cdb9f5
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

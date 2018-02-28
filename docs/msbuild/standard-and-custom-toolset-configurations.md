@@ -1,55 +1,52 @@
 ---
 title: "標準和自訂工具組的組態 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的組態
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
 ## <a name="standard-toolset-configurations"></a>標準工具組組態  
- MSBuild 12.0 包含下列標準工具組：  
+ MSBuild 15.0 包含下列標準工具組：  
   
 |ToolsVersion|工具組路徑 (如 MSBuildToolsPath 或 MSBuildBinPath 組建屬性中所指定)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Windows 安裝路徑*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Windows 安裝路徑*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Windows 安裝路徑*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|Visual Studio 安裝路徑\MSBuild\15.0\bin|  
   
- `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 中，預設值是 "12.0" (不論專案檔中指定何種版本)，但您可以在命令提示字元使用 **/toolsversion** 參數覆寫該屬性。 如需此屬性的相關資訊以及指定 `ToolsVersion` 的其他方式，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
+ `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 Visual Studio 2017 中，預設值是 "15.0" (不論專案檔中指定何種版本)，但您可以在命令提示字元使用 **/toolsversion** 參數覆寫該屬性。 如需此屬性的相關資訊以及指定 `ToolsVersion` 的其他方式，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。  
   
- 如未指定 `ToolsVersion`，則登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<版本號碼\>\DefaultToolsVersion** 會定義 `ToolsVersion`，一律為 2.0。  
-  
- 下列登錄機碼會指定 MSBuild.exe 的安裝路徑。  
+ Visual Studio 2017 不會使用登錄機碼作為 MSBuild 的路徑。 若為與 Visual Studio 2017 一同安裝，且為 15.0 版之前的 MSBuild，下列登錄機碼會指定 MSBuild.exe 的安裝路徑。  
   
 |登錄機碼|索引鍵名稱|字串索引鍵值|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|.NET Framework 2.0 安裝路徑|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|.NET Framework 3.5 安裝路徑|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|.NET Framework 4 安裝路徑|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|MSBuild 安裝路徑|  
   
 ### <a name="sub-toolsets"></a>子工具組  
- 如果前一份資料表中的登錄機碼有子機碼，MSBuild 會使用它來判斷子工具組的路徑可否覆寫父工具組中的路徑。 以下列子機碼為例：  
+ 如果前一份資料表中的登錄機碼有子機碼，MSBuild 會將其用以判斷覆寫父工具組中路徑的子工具組路徑。 以下列子機碼為例：  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -63,11 +60,11 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 ## <a name="custom-toolset-definitions"></a>自訂工具組定義  
  當標準工具組無法滿足您的組建需求時，您可以建立自訂的工具組。 例如，您可能有個組建置實驗室案例，必須使用個別的系統組建 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案。 使用自訂工具組，您就可以在建立專案或執行 MSBuild.exe 時，將自訂值指派給 `ToolsVersion` 屬性。 這樣做，也可以使用 `$(MSBuildToolsPath)` 屬性匯入該目錄的 .targets 檔案，以及定義您自己的自訂工具組屬性，這些屬性可用於使用該工具組的任何專案。  
   
- 在 MSBuild.exe (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 組態檔中指定自訂的工具組。 例如，如果您想要覆寫 ToolsVersion 12.0 的預設行為，MSBuild.exe 的組態檔可能包含下列工具組定義。  
+ 在 MSBuild.exe (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 組態檔中指定自訂的工具組。 例如，如果您想要覆寫 ToolsVersion 15.0 的預設行為，MSBuild.exe 的組態檔可能包含下列工具組定義。  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
@@ -80,7 +77,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

@@ -1,40 +1,31 @@
 ---
-title: "使用 IntelliSense | Microsoft Docs"
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>在 Visual Studio 中使用 Intellisense
 
 IntelliSense 是一些功能的概括詞彙：列出成員、參數資訊，快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼，追蹤所輸入的參數，以及幾個按鍵即可加入屬性和方法呼叫。
 
@@ -86,7 +77,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ## <a name="complete-word"></a>自動完成文字
 
-在您輸入足夠的字元可清楚識別詞彙之後，[自動完成文字] 就會輸入變數、命令或函式名稱的其餘部分。 您可以選擇 [編輯] > [IntelliSense] > [自動完成文字]、按 **Ctrl** + **空格鍵**，或選擇編輯器工具列上的 [自動完成文字] 按鈕，叫用 [自動完成文字]。
+在您輸入足夠的字元可清楚識別詞彙之後，[自動完成文字] 就會輸入變數、命令或函式名稱的其餘部分。 您可以選擇 [編輯] > [IntelliSense] > [自動完成文字]、按 **Ctrl**+**空格鍵**，或選擇編輯器工具列上的 [自動完成文字] 按鈕，叫用 [自動完成文字]。
 
 ## <a name="intellisense-options"></a>IntelliSense 選項
 
@@ -110,7 +101,7 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
 [C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  

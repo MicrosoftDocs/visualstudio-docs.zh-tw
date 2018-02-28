@@ -6,12 +6,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: CSharp
+dev_langs:
+- CSharp
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
 ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT

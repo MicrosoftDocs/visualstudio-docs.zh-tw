@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c420381e9fa0451bee846ea5fb9de5c74ddbf8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 97f21f75020e77cf6780fa71c21eae827940d9ec
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 載入 Vspackage 在背景中
 正在載入和初始化 VS 套件可能會導致磁碟 I/O。 如果這類 I/O 情況發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓封裝載入背景執行緒上的。  
@@ -106,6 +106,6 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;   
   
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
-IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
+IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
   

@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.error.background_task_activate_failure
+f1_keywords:
+- vs.debug.error.background_task_activate_failure
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

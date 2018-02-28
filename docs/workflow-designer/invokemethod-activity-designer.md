@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.InvokeMethod.UI
+f1_keywords:
+- System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1fe242e3e4fd2a885373d776f79f50071fa83c1f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

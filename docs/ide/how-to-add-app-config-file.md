@@ -7,12 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: CSharp
-helpviewer_keywords: app.config files, adding to C# projects
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- app.config files, adding to C# projects
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: d77e86599670ef04b813381da84a03ab1f238af3
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT

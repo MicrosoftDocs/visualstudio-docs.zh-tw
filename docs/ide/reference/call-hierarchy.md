@@ -7,12 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.CallHierarchy
-helpviewer_keywords: Call Hierarchy
+f1_keywords:
+- VS.CallHierarchy
+helpviewer_keywords:
+- Call Hierarchy
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 15323f5e70d56cc6bdd30afee3671443d039f95f
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs: JavaScript
+f1_keywords:
+- VS.WebClient.JavaScriptConsole
+dev_langs:
+- JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: templates [Visual Studio], troubleshooting
+helpviewer_keywords:
+- templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen

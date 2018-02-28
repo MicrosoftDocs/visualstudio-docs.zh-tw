@@ -6,18 +6,20 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msvse_wcf.dlg.ConfigureServiceReference
+f1_keywords:
+- msvse_wcf.dlg.ConfigureServiceReference
 helpviewer_keywords:
 - WCF services, Configure Service Reference dialog box
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
 ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT

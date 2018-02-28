@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -31,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 
 - 在 [編輯/IntelliSense] 功能表中，選取 [插入程式碼片段]
 
-- 使用快速鍵：**CTRL + K + X**
+- 使用快速鍵：**Ctrl**+**K**+**X**
 
 您應該會看到開頭為 **#if** 的選擇清單。 當您選取 [#if] 時，應該會看到下列程式碼已新增至檔案：
 
@@ -47,11 +50,11 @@ ms.lasthandoff: 12/22/2017
 
 若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：
 
-1. 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]
+- 按一下滑鼠右鍵以取得操作功能表，然後選取 [範圍陳述式]
 
-2. 在 [編輯/IntelliSense] 功能表中，選取 [範圍陳述式]
+- 在 [編輯] > [IntelliSense] 功能表中，選取 [範圍陳述式]
 
-3. 使用快速鍵：**CTRL + K + S**
+- 從鍵盤按：**Ctrl**+**K**+**X**
 
 選取 [#if]。 您應該會看到類似下面的內容：
 

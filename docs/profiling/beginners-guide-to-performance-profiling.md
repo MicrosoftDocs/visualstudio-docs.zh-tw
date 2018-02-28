@@ -4,21 +4,24 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.performance.wizard.intropage
+f1_keywords:
+- vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bacc4e9ebb0b0125b22089ec53a97248e9e1f4e9
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT

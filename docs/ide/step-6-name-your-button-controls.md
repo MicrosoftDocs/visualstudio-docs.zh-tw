@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 表單上只有一個 PictureBox。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 CheckBox，名為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。  
@@ -74,7 +76,7 @@ ms.lasthandoff: 01/13/2018
   
      為控制項加入事件處理常式之後，您隨時可以從 [Windows Forms 設計工具] 回到此控制項，方法是按兩下控制項，或是在功能表列上選擇 [檢視] 、[程式碼] 。  
   
-     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 如需詳細資訊，請參閱[重新命名重構 (C#)](../ide/reference/rename-csharp.md) 或[重新命名重構 (Visual Basic)](../ide/reference/rename-vb.md)。
+     當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 請參閱[重新命名重構](../ide/reference/rename.md)以取得詳細資訊。
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   

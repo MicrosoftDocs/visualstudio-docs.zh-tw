@@ -9,38 +9,30 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 7740fcea4ac944242f4284382cf26544d9ea95b5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- dotnet
+ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio 中的程式碼產生功能
 
-有多種方法可讓 Visual Studio 在編輯器中為您產生程式碼。 您可以使用這些程式碼產生功能，以節省時間與鍵盤輸入、減少語法錯誤，並且改善程式碼整體的一致性。
+Visual Studio 可透過多種方式協助您產生、修正和重構程式碼。
 
-Visual Studio 中為您產生程式碼的功能包括：[程式碼片段](../ide/code-snippets.md)和[快速動作](../ide/quick-actions.md) ![小燈泡圖示](media/vs2015_lightbulbsmall.png)。
+- 您可以使用 [程式碼片段](../ide/code-snippets.md) 插入範本，例如 [切換](/dotnet/csharp/language-reference/keywords/switch) 區塊或 [列舉](/dotnet/csharp/language-reference/keywords/enum) 宣告。
 
-下列是透過[快速動作](../ide/quick-actions.md)可執行的一些常見程式碼產生工作：
+- 您可以使用 [快速動作](../ide/quick-actions.md) 來產生程式碼，例如類別和屬性，或引進本機變數。 您也可以使用快速動作來 [改善程式碼](../ide/common-quick-actions.md)；例如，用來移除不必要的轉換和未使用的變數，或是新增 Null 檢查，再存取變數。
 
-* 產生類別、方法、屬性等等
+- 您可以 [重構程式碼](../ide/refactoring-in-visual-studio.md) 以重新命名變數、重新排列方法參數、或以檔案名稱來同步類型等等。
 
-* 實作抽象類別或介面
-
-* 將區域變數導入複雜運算式中
-
-此外，您可以輸入某些字元，以執行下列動作：
-
-* 為程式碼產生 [XML 格式的註解區塊]()，以便於稍後進行處理以自動產生文件
-
-* 產生[方法覆寫]()簽章
-
-由於程式碼產生的邏輯與語言語法緊密相關，Visual Studio 中的每個語言服務會提供它自己的程式碼產生功能。
+> [!NOTE]
+> Visual Studio 中的每個語言服務提供自己的程式碼產生功能，因此某些功能僅適用於 C#，某些則可用於 C# 和 Visual Basic 兩者。
 
 ## <a name="see-also"></a>另請參閱
 
-[快速動作](../ide/quick-actions.md)  
 [程式碼片段](../ide/code-snippets.md)  
-[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)  
-[重構](../ide/refactoring-in-visual-studio.md)
+[快速動作](../ide/quick-actions.md)  
+[重構](../ide/refactoring-in-visual-studio.md)  
+[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)

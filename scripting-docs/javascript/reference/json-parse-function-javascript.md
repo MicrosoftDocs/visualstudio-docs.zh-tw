@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: JSON.parse
+f1_keywords:
+- JSON.parse
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - parse JSON method
 - JSON.parse method
 ms.assetid: 20f00d31-5ab5-4c3c-ab49-2534fc39a9b4
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

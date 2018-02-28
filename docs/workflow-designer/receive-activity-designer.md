@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.ServiceModel.Activities.Receive.UI
+f1_keywords:
+- System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7c02cf726cbf575eae9c389186846855ee1206c4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

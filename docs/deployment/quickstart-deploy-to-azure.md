@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: deployment, website
+helpviewer_keywords:
+- deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: azure
+ms.workload:
+- azure
 ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

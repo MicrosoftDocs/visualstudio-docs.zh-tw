@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.PickBranch.UI
+f1_keywords:
+- System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d583c662de31b990982b78d876bc0046e89089d7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

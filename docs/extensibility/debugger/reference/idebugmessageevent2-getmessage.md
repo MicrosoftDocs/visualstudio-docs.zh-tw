@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugMessageEvent2::GetMessage
+f1_keywords:
+- IDebugMessageEvent2::GetMessage
 helpviewer_keywords:
 - GetMessage method
 - IDebugMessageEvent2::GetMessage method
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2cb6db61048765ec577a0d14ff4079f78e013219
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT

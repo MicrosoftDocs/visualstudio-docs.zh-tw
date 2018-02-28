@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vbProjectPropertiesDebug
+f1_keywords:
+- vbProjectPropertiesDebug
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - project configurations, debug
 - debug configurations, Visual Basic
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT

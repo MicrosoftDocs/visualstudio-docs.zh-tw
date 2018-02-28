@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.performance.cvcollectioncmd
+f1_keywords:
+- vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

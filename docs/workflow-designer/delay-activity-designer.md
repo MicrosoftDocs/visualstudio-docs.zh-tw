@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.Delay.UI
+f1_keywords:
+- System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 24ca658650c3b0eeb28261753b06082214cdb838
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -7,14 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesServices
+f1_keywords:
+- vb.ProjectPropertiesServices
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT

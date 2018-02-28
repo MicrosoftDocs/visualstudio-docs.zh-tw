@@ -3,16 +3,19 @@ title: "疑難排解和已知問題進行偵錯快照集 |Microsoft 文件"
 ms.date: 11/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

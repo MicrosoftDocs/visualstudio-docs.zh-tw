@@ -6,12 +6,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editor
+helpviewer_keywords:
+- editor
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 703e27a95d6a0f4b680ad6a729dc974dfe98fc11
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT

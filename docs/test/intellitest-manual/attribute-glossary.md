@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Attribute glossary
+helpviewer_keywords:
+- IntelliTest, Attribute glossary
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 0eab751276537de30de095d200fc0f0ffcb4ad43
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

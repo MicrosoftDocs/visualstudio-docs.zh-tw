@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
+f1_keywords:
+- Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
 dev_langs:
 - VB
 - CSharp
@@ -28,7 +30,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: cab4a223f8e2d33185f37bc6ad90397ace1d56e1
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

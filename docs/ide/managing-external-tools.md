@@ -4,31 +4,35 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.externaltools
-helpviewer_keywords: external tools [Visual Studio]
+f1_keywords:
+- vs.externaltools
+helpviewer_keywords:
+- external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 78a3e1ee549a42681d6f15b432d0c6bb608976fd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
 您可以使用 [工具]，從 Visual Studio 內部呼叫外部工具。 [工具] 功能表中有提供一些預設的工具，且您可以另外自行加入可執行檔來自訂該功能表。
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio [工具] 功能表上提供的工具
+## <a name="tools-available-on-the-tools-menu"></a>[工具] 功能表上提供的工具
 
 [工具] 功能表包含數個內建命令，例如：
 
 * [延伸模組和更新] 可用來[管理 Visual Studio 延伸模組](finding-and-using-visual-studio-extensions.md)
-* [程式碼片段管理員...] 可用來[組織程式碼片段](code-snippets.md#code-snippet-manager)
+* [程式碼片段管理員...] 可用來[組織程式碼片段](code-snippets.md)
 * [PreEmptive Protection - Dotfuscator] 可用來啟動 [Dotfuscator Community Edition (CE)](dotfuscator/index.md) (若[已安裝](dotfuscator/install.md)的話)
 * [自訂...] 可用來[自訂功能表和工具列](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [選項...] 可用來[設定各種不同的 Visual Studio IDE 和其他工具選項](reference/options-dialog-box-visual-studio.md)
@@ -37,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 
 您可加入外部工具，讓它顯示在 [工具] 功能表。
 
-1. 依序選擇 [工具]、[外部工具]，以開啟 [外部工具] 對話方塊。
+1. 依序選擇 [工具] > [外部工具]，以開啟 [外部工具] 對話方塊。
 
 1. 按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 Windows 檔案總管的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：
 

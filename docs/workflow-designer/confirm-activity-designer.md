@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.Confirm.UI
+f1_keywords:
+- System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 51e44d98aaec929f1194420227a6a3871dc4f2ad
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

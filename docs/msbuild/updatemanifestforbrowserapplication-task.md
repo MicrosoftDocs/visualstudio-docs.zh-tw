@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: be3b239381b7b1f0afe0b284694ef18d851b313a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fcc1c9fe8b28b2055c73cad626cc02ef8a56aa98
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 工作
 會執行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 工作，以便在建置 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  

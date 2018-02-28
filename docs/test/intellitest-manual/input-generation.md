@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Dynamic symbolic execution
+helpviewer_keywords:
+- IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: c8d72ad4e5b84802f3c8f2eba426f98ed5477468
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -31,13 +32,15 @@ f1_keywords:
 - vs.debug.data
 - vs.debug.func
 - vs.debug.breakpt.location.file
-helpviewer_keywords: breakpoints, about breakpoints
+helpviewer_keywords:
+- breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: "57"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
 ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT

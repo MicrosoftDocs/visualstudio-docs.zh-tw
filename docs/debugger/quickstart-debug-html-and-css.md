@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.WebClient.DomExplorer
-dev_langs: JavaScript
+f1_keywords:
+- VS.WebClient.DomExplorer
+dev_langs:
+- JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: "101"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
 ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT

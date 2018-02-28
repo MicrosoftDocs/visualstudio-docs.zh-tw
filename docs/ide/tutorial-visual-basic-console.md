@@ -4,15 +4,18 @@ ms.custom:
 ms.date: 12/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-dev_langs: vb
-ms.workload: multiple
+dev_langs:
+- vb
+ms.workload:
+- multiple
 ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT

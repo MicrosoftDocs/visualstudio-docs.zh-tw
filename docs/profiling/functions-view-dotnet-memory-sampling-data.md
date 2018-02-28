@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Functions view
+helpviewer_keywords:
+- Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

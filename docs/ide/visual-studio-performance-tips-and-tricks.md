@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -86,7 +86,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
 ### <a name="managed-language-services-roslyn"></a>Managed 語言服務 (Roslyn)
 
-如需 Roslyn 效能考量的資訊，請參閱 [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions) (大型方案的效能考量)。
+如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱 [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions) (大型解決方案的效能考量)。
 
 - **停用完整解決方案分析**
 

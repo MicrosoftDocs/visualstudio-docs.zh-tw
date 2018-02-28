@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests, extensions for Excel
+helpviewer_keywords:
+- coded UI tests, extensions for Excel
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 4986d833807f5566b74d0879b13f74e3e9e68b07
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

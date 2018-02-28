@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cvmakers/CvCreateMarkerSeriesWithCodePageA
-helpviewer_keywords: CvCreateMarkerSeriesWithCodePageA method
+f1_keywords:
+- cvmakers/CvCreateMarkerSeriesWithCodePageA
+helpviewer_keywords:
+- CvCreateMarkerSeriesWithCodePageA method
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d40f895133ce4fc36a40292d7931c47dd166e8e4
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT

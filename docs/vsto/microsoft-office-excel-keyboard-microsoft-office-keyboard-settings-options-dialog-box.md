@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,11 +15,13 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
+helpviewer_keywords:
+- keyboard shortcuts, Office development in Visual Studio
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: d52b7baf1283f986ee378c800114836da606eca8
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

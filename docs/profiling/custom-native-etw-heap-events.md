@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: C++
-ms.workload: cplusplus
+dev_langs:
+- C++
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
 ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT

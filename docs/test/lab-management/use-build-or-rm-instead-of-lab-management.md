@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build and Release Management 而非 Lab Management 進行自動化測試
 
@@ -26,7 +28,7 @@ ms.lasthandoff: 01/09/2018
 
 * [SCVMM 環境的自助管理](#managescvmm)
 
-Build and Release Management 不支援自助服務建立網路隔離的 SCVMM 環境，而且沒有計劃在未來提供這項支援。 但有一些[建議的替代項目](#isolatedenvir)。
+* [建立網路隔離環境](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>建置、部署、測試自動化
@@ -74,14 +76,15 @@ XAML 組建依賴各種以 MTM 建立的建構，例如實驗室環境、測試�
 | 接受環境檢查點，或將環境還原到乾淨的檢查點。 | 在環境檢視器中開啟實驗室環境。 選取接受檢查點的選項，或還原到上一個檢查點。 | 直接使用 SCVMM 管理主控台，在虛擬機器上執行這些作業。 或者，將這些步驟執行為大型自動化過程的一部分，包括在版本定義中屬於環境的 [SCVMM 整合延伸模組](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)檢查點工作。 |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>自助建立網路隔離環境
+## <a name="creation-of-network-isolated-environments"></a>建立網路隔離環境
 
 網路隔離的實驗室環境是可以安全複製，卻不會造成網路衝突的 SCVMM 虛擬機器群組。 在 MTM 中使用一連串指示即可完成這項作業：使用一組網路介面卡在私人網路中設定虛擬機器，然後用另一組網路介面卡在公用網路中設定虛擬機器。
 
-隨著公用和私人雲端管理系統的巨大改變，如 [Microsoft Azure](https://azure.microsoft.com/) 和 [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/)，您可以放心直接依賴有類似功能的雲端管理工具。 Build and Release Management 中沒有對等方法可完成此目標。
+但是，VSTS 和 TFS 搭配在 SCVMM 組建和部署工作，可用來管理 SCVMM 環境、佈建隔離的虛擬網路、以及實作建置-部署-測試案例。 例如，您可以使用此工作來：
 
-如果需要網路隔離，歡迎您多加考慮下列的替代方案：
+* 建立、還原和刪除檢查點
+* 使用範本來建立新的虛擬機器
+* 啟動和停止虛擬機器
+* 對 SCVMM 執行自訂 PowerShell 指令碼
 
-* 隔離網路的動機之一，曾是容易設定的多個複製品。 因為每個複製品都確實是和原版完全一樣的複本，所以電腦名稱和組態設定會保留原狀，這讓設定新環境變得更容易。 不過，相同的優點在稍後的生命週期 (例如，生產環境) 中也引起了很多問題，因為最後部署應用程式的方式不相同。 所以，請**改為**考慮以設定生產環境的相同方式設定新環境，避免使用網路隔離。
-
-* 請針對您的測試需求使用公用雲端基礎結構，如 [Microsoft Azure](https://azure.microsoft.com/)。 您可以輕鬆使用[Azure Resource Manager 範本](https://azure.microsoft.com/documentation/templates/)，從 [Azure Marketplace](https://azure.microsoft.com/marketplace/) 或從 [Azure 快速入門範本](https://azure.microsoft.com/documentation/templates/)設定透過私人網路連線的虛擬機器群組，並只使用 Proxy 或 'jumpbox' 公開至公用網路。
+如需詳細資訊，請參閱[建立虛擬網路隔離環境的建置-部署-測試案例](/vsts/build-release/actions/virtual-networks/create-virtual-network)。

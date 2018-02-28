@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.historicaldebug.norepro
+f1_keywords:
+- vs.historicaldebug.norepro
 helpviewer_keywords:
 - iTrace files
 - IntelliTrace, log files
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: "106"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT

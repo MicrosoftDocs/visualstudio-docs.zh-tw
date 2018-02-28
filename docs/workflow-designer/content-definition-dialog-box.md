@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: MessageContent.UI
+f1_keywords:
+- MessageContent.UI
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: c87180f1f1c0b2c578977021b6a9511e629d10bd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

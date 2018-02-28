@@ -7,8 +7,10 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ExportTemplateWizard
-helpviewer_keywords: project templates [Visual Studio], creating
+f1_keywords:
+- VS.ExportTemplateWizard
+helpviewer_keywords:
+- project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen

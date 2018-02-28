@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Statements.ParallelForEach`1.UI
+f1_keywords:
+- System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 56a20f6e29f0f1bd6e071e6d3b48442c0bf02e77
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

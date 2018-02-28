@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>在 Visual Studio 中從範本建立 AI 專案
 
-[安裝 Visual Studio Tools for AI](installation.md) 後，您就可以使用各種範本輕鬆地建立新的 Python 專案。
+[安裝 Visual Studio Tools for AI](installation.md) 後，您就可以使用各種範本輕鬆地建立新的 AI 專案。
 
 1. 啟動 Visual Studio。
 

@@ -4,23 +4,27 @@ ms.custom: remotedebugging
 ms.date: 08/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-f1_keywords: vs.debug.remote.overview
+f1_keywords:
+- vs.debug.remote.overview
 dev_langs:
 - C++
 - FSharp
 - CSharp
 - JScript
 - VB
-helpviewer_keywords: remote debugging, setup
+helpviewer_keywords:
+- remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: "65"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
 ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT

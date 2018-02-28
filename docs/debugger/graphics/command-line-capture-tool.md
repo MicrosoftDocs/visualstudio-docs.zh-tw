@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame` `frames`  
  在擷取模式下，`frames` 指定您想要擷取的框架。 第一個框架為 1。 您可以使用逗號和範圍來指定多個框架。 例如，如果`frames`是`2, 5, 7-9, 15`，然後框架`2`， `5`， `7`， `8`， `9`，和`15`所擷取。  
+
+> [!TIP]
+> 使用`-frame``manual`指定框架將會手動擷取，請按 Print Screen 鍵。 應用程式啟動時，就可以擷取框架；若要停止擷取框架，請返回到命令列介面並按下 Enter 鍵。  
   
  `-period` `periods`  
  在擷取模式下，`periods` 指定您要擷取框架的時間範圍，以秒為單位。 您可以使用逗號和範圍來指定多個期間。 例如如果`periods`是`2.1-5, 7.0-9.3`，然後之間呈現的畫面格`2.1`和`5`秒，以及`7`和`9.3`擷取秒數。  
-  
- `-manual`  
- 在擷取模式下`-manual`指定框架將會手動擷取，請按 Print Screen 鍵。 應用程式啟動時，就可以擷取框架；若要停止擷取框架，請返回到命令列介面並按下 Enter 鍵。  
   
  `-c` `app` [`args...`]  
  擷取模式。 在擷取模式下，`app` 指定您想要從其中擷取圖形資訊的應用程式名稱；`args...` 指定該應用程式的其他命令列參數。  
@@ -165,15 +167,15 @@ DXCap.exe -e map
  上述命令會列舉符合"map"; UWP 應用程式輸出如下：  
   
  **封裝 「 Microsoft.BingMaps":**  
- **Installdirectory 出現： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **名稱： Microsoft.BingMaps**  
- **發行者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = 華盛頓州，C = US**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **版本： 2.1.2914.1734**  
  **可啟動的應用程式：**  
  **Id: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA： 否**  
  * * AppSpec （以啟動）： **DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** 最後一行的每個列舉應用程式的輸出顯示可用來從其擷取圖形資訊的命令。  
   

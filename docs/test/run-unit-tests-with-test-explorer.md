@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.unittesting.testexplorer.overview
+f1_keywords:
+- vs.unittesting.testexplorer.overview
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: bf466db15c30a9763c6d7be363041ee3bfa14f7d
 ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f

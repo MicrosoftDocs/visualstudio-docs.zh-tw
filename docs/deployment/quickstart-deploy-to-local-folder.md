@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: deployment, local folder
+helpviewer_keywords:
+- deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

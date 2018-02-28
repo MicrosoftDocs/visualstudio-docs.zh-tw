@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 msbuild.exe，就可以在未安裝 Visual Studio 的環境中組織及建置產品。  
@@ -142,7 +141,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  工作的執行邏輯是以 Managed 程式碼撰寫，並使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目對應到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 若想撰寫自己的工作，您可以撰寫一個實作 <xref:Microsoft.Build.Framework.ITask> 介面的 Managed 類型。 如需如何撰寫工作的詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含您可以依據自己的需求修改的一般工作。  範例包括用於複製檔案的 [Copy](../msbuild/copy-task.md)、用於建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及用於編譯 Visual C# 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 如需可用工作的清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含您可以依據自己需求修改的一般工作。  範例包括用於複製檔案的 [Copy](../msbuild/copy-task.md)、用於建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及用於編譯 Visual C# 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 如需可用工作的清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
  在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中執行工作的方式就是建立一個具有工作名稱的項目，做為 [Target](../msbuild/target-element-msbuild.md) 項目的子系。 工作通常會接受參數，而這些參數會當做項目的屬性傳遞。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性和項目都可當做參數使用。 例如，下列程式碼會呼叫 [MakeDir](../msbuild/makedir-task.md) 工作，並將前面範例中宣告的 `BuildDir` 屬性值傳遞給此工作。  
   
@@ -171,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  您可以將建置錯誤、警告和訊息記錄至主控台或另一個輸出裝置。 如需詳細資訊，請參閱[取得建置記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)和 [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)。  
   
 ##  <a name="BKMK_VisualStudio"></a> 在 Visual Studio 中使用 MSBuild  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔格式儲存 Managed 專案的建置資訊。 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 介面加入或變更的專案設定，會反映在針對每個專案產生的 .*proj 檔案中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的裝載執行個體 (Hosted Instance) 來建置 Managed 專案。 這表示 Managed 專案可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或是於命令提示字元 (即使未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]) 建置，其結果完全相同。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔格式儲存受控專案的組建資訊。 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 介面加入或變更的專案設定，會反映在針對每個專案產生的 .*proj 檔案中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的裝載執行個體 (Hosted Instance) 來建置 Managed 專案。 這表示 Managed 專案可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或是於命令提示字元 (即使未安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]) 建置，其結果完全相同。  
   
  如需如何在 Visual Studio 中使用 MSBuild 的教學課程，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   

@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：  
@@ -60,45 +61,33 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
      該專案檔隨即出現在程式碼編輯器中。  
   
 ## <a name="targets-and-tasks"></a>目標和工作  
- 專案檔是含有根節點 [Project](../msbuild/project-element-msbuild.md) 的 XML 格式檔案。  
+專案檔是含有根節點 [Project](../msbuild/project-element-msbuild.md) 的 XML 格式檔案。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 您必須在 Project 項目中指定 xmlns 命名空間。  
+您必須在 Project 項目中指定 xmlns 命名空間。 若新專案中存在 `ToolsVersion`，其必須為 "15.0"。
   
- 建置應用程式的工作是利用 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 項目來完成。  
+建置應用程式的工作是利用 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 項目來完成。  
   
 -   工作 (Task) 是工作 (Work) 的最小單位，也就是組建的「元素」。 工作是獨立的可執行檔元件，其中可能會有輸入和輸出。 專案檔中沒有任何目前參考或定義的工作。 您會在下列各節中將工作加入至專案檔。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md) 主題。  
   
--   目標是一連串具名的工作。 專案檔結尾有兩個目標目前包含於 HTML 註解中：BeforeBuild 和 AfterBuild。  
+-   目標是一連串具名的工作。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)主題。  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)主題。  
-  
- Project 節點具有選擇性的 DefaultTargets 屬性，可選取要建置的預設目標，在這個案例中為 Build。  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Build 目標並非定義於專案檔中。 而是使用 [Import](../msbuild/import-element-msbuild.md) 項目，從 Microsoft.CSharp.targets 檔中匯入。  
+預設目標並未在專案檔中定義。 而是在匯入的專案中指定。 [Import](../msbuild/import-element-msbuild.md) 元素會指定匯入的專案。 例如，在 C# 專案中，預設目標會從檔案 Microsoft.CSharp.targets 匯入。 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- 只要參考到它們，就能有效地將匯入的檔案插入至專案檔。  
+只要參考到它們，就能有效地將匯入的檔案插入至專案檔。  
+
+> [!NOTE]
+> .NET Core 等部分專案類型會使用具 `Sdk` 屬性而非 `ToolsVersion` 屬性的簡化結構描述。 這些專案均具有隱含的匯入與不同的預設屬性值。
   
- MSBuild 會持續追蹤組建的目標，並保證每個目標的建置不會超過一次。  
+MSBuild 會持續追蹤組建的目標，並保證每個目標的建置不會超過一次。  
   
 ## <a name="adding-a-target-and-a-task"></a>加入目標和工作  
  將目標加入至專案檔。 將工作加入至會印出訊息的目標。  
@@ -158,9 +147,6 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
  藉由交替使用程式碼編輯器和命令視窗，您可以變更專案檔，並快速查看結果。  
   
-> [!NOTE]
->  如果您執行 msbuild 時未搭配使用 /t 命令參數，則 msbuild 會建置由 Project 項目的 DefaultTarget 屬性所指定的目標，在此案例中為 "Build"。 這會建置 Windows Form 應用程式 BuildApp.exe。  
-  
 ## <a name="build-properties"></a>組建屬性  
  組建屬性是會引導組建的名稱/值組。 專案檔頂端已經定義了數個組建屬性：  
   
@@ -175,13 +161,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 </PropertyGroup>  
 ```  
   
- 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如：  
+ 所有屬性都是 PropertyGroup 項目的子項目。 屬性的名稱是子項目的名稱，而屬性的值是子項目的文字項目。 例如，套用至物件的  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- 定義名為 TargetFrameworkVersion 的屬性，並賦予它字串值 "v12.0"。  
+ 會定義名為 TargetFrameworkVersion 的屬性，並賦予其字串值 "v15.0"。  
   
  您隨時都能重新定義組建屬性。 如果  
   
@@ -223,14 +209,14 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]
 >  如果您未看見這幾行，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。  
   
 ### <a name="conditional-properties"></a>條件式屬性  
- 有條件地定義許多屬性 (例如 Configuration)，也就是 Condition 屬性會出現在屬性項目中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如：  
+ 有條件地定義許多屬性 (例如 Configuration)，也就是 Condition 屬性會出現在屬性項目中。 只有當條件評估為 "true" 時，才能定義或重新定義條件式屬性。 請注意，未定義屬性的預設值是空字串。 例如，套用至物件的  
   
 ```xml  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -297,7 +283,7 @@ $(PropertyName)
 ## <a name="build-items"></a>組建項目  
  項目是一種資訊，通常是檔案名稱，可用來做為建置系統的輸入。 例如，可能會將代表原始程式檔的項目集合傳遞至名為 Compile 的工作，以便將它們編譯為組件。  
   
- 所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如：  
+ 所有項目 (Item) 都是 ItemGroup 項目 (Element) 的子項目 (Element)。 項目 (Item) 名稱是子項目 (Element) 的名稱，而項目 (Item) 值是子項目 (Element) 的 Include 屬性值。 系統會將名稱相同的項目值收集到該名稱的項目類型。  例如，套用至物件的  
   
 ```xml  
 <ItemGroup>  
@@ -404,7 +390,7 @@ $(PropertyName)
   
  將映像資料夾及其所有子資料夾中所有副檔名為 ".jpeg" 的檔案加入至 Photos 項目類型。 如需更多範例，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
   
- 請注意，宣告項目時，會將它們加入至項目類型。 例如：  
+ 請注意，宣告項目時，會將它們加入至項目類型。 例如，套用至物件的  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -417,7 +403,7 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如：  
+ 您可以使用 Exclude 屬性，從項目類型中排除項目。 例如，套用至物件的  
   
 ```xml  
 <Compile Include="*.cs" Exclude="*Designer*">  
@@ -425,7 +411,7 @@ $(PropertyName)
   
  將副檔名為 ".cs" 的所有檔案加入至 Compile 項目類型，但名稱包含 "Designer" 字串的檔案除外。 如需更多範例，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
- Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如：  
+ Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的  
   
 ```xml  
 <Compile Include="*.cs" />  

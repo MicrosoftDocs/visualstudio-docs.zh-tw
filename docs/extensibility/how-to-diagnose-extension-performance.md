@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量延伸模組中啟動的影響
 
@@ -30,6 +32,9 @@ ms.lasthandoff: 12/22/2017
 ![管理 Visual Studio 效能](media/manage-performance.png)
 
 本文旨在協助擴充功能開發人員透過描述擴充功能影響計算的方式以及它可以分析方式在本機以測試擴充功能可能會顯示為效能，從而影響擴充功能。
+
+> [!NOTE]
+> 本文件著重於在啟動和方案載入擴充功能的影響。 擴充功能也會影響 Visual Studio 效能時，會變得沒有回應 UI。 如需本主題的詳細資訊，請參閱[如何： 擴充功能所造成的診斷 UI 延遲](how-to-diagnose-ui-delays-caused-by-extensions.md)。
 
 ## <a name="how-extensions-can-impact-startup"></a>擴充功能可能會如何影響啟動
 

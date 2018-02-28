@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: "9"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4411b82fc5a86e4f3eeae965fefd65e2c38d207e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後針對每個批次一次執行一個目標或工作。  

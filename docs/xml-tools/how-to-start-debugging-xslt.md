@@ -10,8 +10,10 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.workload: multiple
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
 ms.openlocfilehash: 88e7019870adf2e7d301d0c3d9f69b725a54820b
 ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT

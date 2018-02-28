@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest Reference Manual, IntelliTest
+helpviewer_keywords:
+- IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

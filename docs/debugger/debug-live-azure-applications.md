@@ -3,12 +3,14 @@ title: "偵錯即時 ASP.NET Azure 應用程式的 Visual Studio |Microsoft 文�
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,11 +13,13 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords: SharePoint development in Visual Studio, walkthroughs
+helpviewer_keywords:
+- SharePoint development in Visual Studio, walkthroughs
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: bb8980a5f17e38e802e90014781c80a1cf0f6adb
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
