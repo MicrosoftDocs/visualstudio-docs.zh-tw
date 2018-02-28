@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: APPBREAKFLAGS
-apilocation: scrobj.dll
-helpviewer_keywords: APPBREAKFLAGS constants
+apiname:
+- APPBREAKFLAGS
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- APPBREAKFLAGS constants
 ms.assetid: ea8ed80f-2ddb-4800-bb3b-52b76ba6c7a0
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

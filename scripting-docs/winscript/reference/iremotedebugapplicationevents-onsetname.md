@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnSetName
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnSetName
+apiname:
+- IRemoteDebugApplicationEvents.OnSetName
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnSetName
 ms.assetid: 524dcff3-fb48-4d8f-8989-73eb539454fb
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

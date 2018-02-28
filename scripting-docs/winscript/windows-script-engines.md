@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Windows script engines
+helpviewer_keywords:
+- Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

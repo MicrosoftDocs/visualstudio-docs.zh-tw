@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugCodeContext.GetDocumentContext
-apilocation: jscript.dll
-helpviewer_keywords: IDebugCodeContext::GetDocumentContext
+apiname:
+- IDebugCodeContext.GetDocumentContext
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugCodeContext::GetDocumentContext
 ms.assetid: 9fe17b65-3a8c-4d21-9b66-0e4ff303af72
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

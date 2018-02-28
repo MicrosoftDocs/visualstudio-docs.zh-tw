@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsSetRuntimeMemoryAllocationCallback
-helpviewer_keywords: JsSetRuntimeMemoryAllocationCallback function
+f1_keywords:
+- jsrt/JsSetRuntimeMemoryAllocationCallback
+helpviewer_keywords:
+- JsSetRuntimeMemoryAllocationCallback function
 ms.assetid: 6aa7d58d-6456-4df1-815f-1ba36fb4ae14
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplication110::CallableWaitForHandles
+helpviewer_keywords:
+- IDebugApplication110::CallableWaitForHandles
 ms.assetid: 02e79b60-0d67-47f9-bf78-b65a02c9c014
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

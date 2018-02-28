@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationNodeEvents interface
+helpviewer_keywords:
+- IDebugApplicationNodeEvents interface
 ms.assetid: 02e0bb17-84ce-458b-bae6-608a9899e535
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

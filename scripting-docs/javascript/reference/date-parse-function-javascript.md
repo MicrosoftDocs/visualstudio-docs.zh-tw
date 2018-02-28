@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: parse
+f1_keywords:
+- parse
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - parse function [JavaScript]
 - Date.parse function [JavaScript]
 ms.assetid: ed737e50-6398-4462-8779-2af3c03f8325
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

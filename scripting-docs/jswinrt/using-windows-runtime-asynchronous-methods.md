@@ -5,12 +5,14 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: javascript
+ms.technology:
+- javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: JavaScript, Windows Runtime asynchronous methods
+helpviewer_keywords:
+- JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

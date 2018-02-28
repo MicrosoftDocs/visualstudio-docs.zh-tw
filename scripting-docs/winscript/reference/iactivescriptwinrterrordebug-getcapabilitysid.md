@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptWinRTErrorDebug::GetCapabilitySid
+helpviewer_keywords:
+- IActiveScriptWinRTErrorDebug::GetCapabilitySid
 ms.assetid: 469463d2-5e73-4c53-9ffd-d0ca7460aa5c
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

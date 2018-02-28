@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEx:SetLocale
-apilocation: scrobj.dll
-helpviewer_keywords: IRemoteDebugApplicationEx:SetLocale
+apiname:
+- IRemoteDebugApplicationEx:SetLocale
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEx:SetLocale
 ms.assetid: cd19f725-f4cd-453a-95e1-0bad676451da
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

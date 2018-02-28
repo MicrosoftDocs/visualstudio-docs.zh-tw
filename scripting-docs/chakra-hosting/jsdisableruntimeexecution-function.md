@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsDisableRuntimeExecution
-helpviewer_keywords: JsDisableRuntimeExecution function
+f1_keywords:
+- jsrt/JsDisableRuntimeExecution
+helpviewer_keywords:
+- JsDisableRuntimeExecution function
 ms.assetid: 4bd4670a-a9da-4f8c-b3fd-1fd366d915c3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

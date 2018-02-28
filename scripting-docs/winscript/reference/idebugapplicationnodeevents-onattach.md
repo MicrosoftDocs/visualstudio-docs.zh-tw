@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplicationNodeEvents.onAttach
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugApplicationNodeEvents::onAttach
+apiname:
+- IDebugApplicationNodeEvents.onAttach
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugApplicationNodeEvents::onAttach
 ms.assetid: b610c7e4-1c96-47ee-958e-3a1f5f621af3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

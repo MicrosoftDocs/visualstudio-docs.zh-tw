@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.GetMemberName
-apilocation: scrobj.dll
-helpviewer_keywords: GetMemberName method
+apiname:
+- IDispatchEx.GetMemberName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- GetMemberName method
 ms.assetid: 5e59b63c-b781-4b90-88fd-40603a379a2d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

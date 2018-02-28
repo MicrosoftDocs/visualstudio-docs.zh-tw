@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptEntry.SetSignature
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptEntry::SetSignature
+apiname:
+- IScriptEntry.SetSignature
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptEntry::SetSignature
 ms.assetid: 8513587d-9df2-4621-afe7-56eacbb5e688
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '>>'
+f1_keywords:
+- '>>'
 dev_langs:
 - JavaScript
 - TypeScript
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - '>> operator, bitsets'
 - bitwise operators, right shift operator
 ms.assetid: 89dc57e0-0b0d-49a4-a8ed-56d8bb20f3e3
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

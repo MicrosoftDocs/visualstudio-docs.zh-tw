@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptErrorDebug110 Interface
+helpviewer_keywords:
+- IActiveScriptErrorDebug110 Interface
 ms.assetid: 5c1a4993-4cad-4ccf-89c2-53abfddfe1f2
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

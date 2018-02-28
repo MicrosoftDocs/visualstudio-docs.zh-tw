@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScript.GetScriptThreadID
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScript_GetScriptThreadID
+apiname:
+- IActiveScript.GetScriptThreadID
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScript_GetScriptThreadID
 ms.assetid: 2595d76e-30b5-429f-88b4-1d026645dd9b
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

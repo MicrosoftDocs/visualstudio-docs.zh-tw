@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: getTime
+f1_keywords:
+- getTime
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - GetTime method
 - time method
 ms.assetid: f0da1d4e-337c-497d-9205-093defbc6d3d
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

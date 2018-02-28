@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.BringDocumentToTop
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::BringDocumentToTop
+apiname:
+- IDebugDocumentHelper.BringDocumentToTop
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::BringDocumentToTop
 ms.assetid: 91bdbb05-6f79-4b07-a707-838cb75a770f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

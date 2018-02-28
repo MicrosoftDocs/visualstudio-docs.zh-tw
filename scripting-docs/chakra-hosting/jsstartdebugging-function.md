@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsStartDebugging
-helpviewer_keywords: JsStartDebugging function
+f1_keywords:
+- jsrt/JsStartDebugging
+helpviewer_keywords:
+- JsStartDebugging function
 ms.assetid: c48ba02d-6d47-466f-a970-02f087d525f3
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

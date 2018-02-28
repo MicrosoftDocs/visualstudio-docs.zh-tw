@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsRunSerializedScript
-helpviewer_keywords: JsRunSerializedScript function
+f1_keywords:
+- jsrt/JsRunSerializedScript
+helpviewer_keywords:
+- JsRunSerializedScript function
 ms.assetid: 3fd3f6f1-eb3e-4751-92a5-c93b1035f3b2
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugPropertyEnumType_All.GetName
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugPropertyEnumType_All::GetName
+apiname:
+- IDebugPropertyEnumType_All.GetName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugPropertyEnumType_All::GetName
 ms.assetid: 24bbe4d5-4263-48d0-8e8d-bff957ffcad2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

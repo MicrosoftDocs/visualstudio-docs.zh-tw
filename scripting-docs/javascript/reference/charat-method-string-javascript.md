@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: charAt
+f1_keywords:
+- charAt
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - charAt method
 - characters, returning part of
 ms.assetid: 63173e15-17f6-47c5-8f94-98ef1eb04c1a
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

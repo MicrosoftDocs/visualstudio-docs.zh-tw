@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsDoubleToNumber
-helpviewer_keywords: JsDoubleToNumber function
+f1_keywords:
+- jsrt/JsDoubleToNumber
+helpviewer_keywords:
+- JsDoubleToNumber function
 ms.assetid: 43eb2ee1-2789-4302-954e-c4087e1ee786
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

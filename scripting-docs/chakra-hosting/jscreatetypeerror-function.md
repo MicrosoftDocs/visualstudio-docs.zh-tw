@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateTypeError
-helpviewer_keywords: JsCreateTypeError function
+f1_keywords:
+- jsrt/JsCreateTypeError
+helpviewer_keywords:
+- JsCreateTypeError function
 ms.assetid: 8ef7bb77-2c98-482a-bccb-1f0fe2b826f5
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

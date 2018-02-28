@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IRemoteDebugApplication110::GetMainThread
+helpviewer_keywords:
+- IRemoteDebugApplication110::GetMainThread
 ms.assetid: 9982acc9-3d35-4dcf-8ca9-662469de4072
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

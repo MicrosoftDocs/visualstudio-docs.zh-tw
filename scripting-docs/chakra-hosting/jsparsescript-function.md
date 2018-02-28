@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsParseScript
-helpviewer_keywords: JsParseScript function
+f1_keywords:
+- jsrt/JsParseScript
+helpviewer_keywords:
+- JsParseScript function
 ms.assetid: e9d0e363-7cbe-43eb-9dc0-1f47e586c9ab
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

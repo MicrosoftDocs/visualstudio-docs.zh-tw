@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsConvertValueToString
-helpviewer_keywords: JsConvertValueToString function
+f1_keywords:
+- jsrt/JsConvertValueToString
+helpviewer_keywords:
+- JsConvertValueToString function
 ms.assetid: a97aca04-b2ce-446a-acf4-49cd6777a85c
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

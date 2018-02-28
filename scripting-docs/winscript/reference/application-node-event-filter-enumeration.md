@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: APPLICATION_NODE_EVENT_FILTER Constants
+helpviewer_keywords:
+- APPLICATION_NODE_EVENT_FILTER Constants
 ms.assetid: dccb2cf7-0598-46f8-b3eb-16b752815e96
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

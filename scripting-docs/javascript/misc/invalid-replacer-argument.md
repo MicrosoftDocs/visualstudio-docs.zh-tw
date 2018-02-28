@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: javascript
+ms.technology:
+- javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.WebClient.Help.SCRIPT5035
+f1_keywords:
+- VS.WebClient.Help.SCRIPT5035
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 4727186f-facd-4aa6-9447-bbefbae83f07
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

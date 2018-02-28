@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.HandleBreakPoint
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::HandleBreakPoint
+apiname:
+- IDebugApplication.HandleBreakPoint
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::HandleBreakPoint
 ms.assetid: 97219bdf-a39a-4e69-81ac-4ca2afe77ce5
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

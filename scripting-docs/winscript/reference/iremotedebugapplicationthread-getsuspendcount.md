@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThread.GetSuspendCount
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplicationThread::GetSuspendCount
+apiname:
+- IRemoteDebugApplicationThread.GetSuspendCount
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThread::GetSuspendCount
 ms.assetid: 37f9936c-fd7c-412d-9a7f-628ca3a90438
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

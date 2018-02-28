@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumRemoteDebugApplications.Clone
-apilocation: scrobj.dll
-helpviewer_keywords: IEnumRemoteDebugApplications::Clone
+apiname:
+- IEnumRemoteDebugApplications.Clone
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IEnumRemoteDebugApplications::Clone
 ms.assetid: 762f6dac-1be4-49ec-afda-68c1b29f7a4b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

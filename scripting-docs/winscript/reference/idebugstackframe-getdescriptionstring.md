@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugStackFrame.GetDescriptionString
-apilocation: jscript.dll
-helpviewer_keywords: IDebugStackFrame::GetDescriptionString
+apiname:
+- IDebugStackFrame.GetDescriptionString
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugStackFrame::GetDescriptionString
 ms.assetid: a2ddc069-c440-4dee-98dc-ab7c78773b94
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

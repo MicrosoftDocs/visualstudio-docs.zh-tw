@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptProperty interface
+helpviewer_keywords:
+- IActiveScriptProperty interface
 ms.assetid: 18a0049a-c817-4c9a-8cec-64ad5de96ff7
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

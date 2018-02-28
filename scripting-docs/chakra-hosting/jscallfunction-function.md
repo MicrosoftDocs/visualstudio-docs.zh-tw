@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCallFunction
-helpviewer_keywords: JsCallFunction function
+f1_keywords:
+- jsrt/JsCallFunction
+helpviewer_keywords:
+- JsCallFunction function
 ms.assetid: 8a1dca72-d720-4a28-a86e-6809465006fe
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

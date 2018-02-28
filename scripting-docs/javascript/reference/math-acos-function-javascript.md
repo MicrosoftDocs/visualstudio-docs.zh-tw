@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: acos
+f1_keywords:
+- acos
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - acos method
 - arcosine method
 ms.assetid: 828cb3c3-bdf7-4bb7-97ae-3617ce4b2d62
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumRemoteDebugApplicationThreads.Clone
-apilocation: pdm.dll
-helpviewer_keywords: IEnumRemoteDebugApplicationThreads::Clone
+apiname:
+- IEnumRemoteDebugApplicationThreads.Clone
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IEnumRemoteDebugApplicationThreads::Clone
 ms.assetid: d016e7cf-ae73-48ff-aee7-810222e0b05c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

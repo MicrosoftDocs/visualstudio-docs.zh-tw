@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentTextExternalAuthor.NotifyChanged
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentTextExternalAuthor::NotifyChanged
+apiname:
+- IDebugDocumentTextExternalAuthor.NotifyChanged
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentTextExternalAuthor::NotifyChanged
 ms.assetid: f0de7984-3a15-49e2-bd29-f768f34d2a4d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

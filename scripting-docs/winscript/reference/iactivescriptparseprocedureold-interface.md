@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptParseProcedureOld
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptParseProcedureOld interface
+apiname:
+- IActiveScriptParseProcedureOld
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptParseProcedureOld interface
 ms.assetid: d94b391e-4c24-46da-a01f-2c134ca4f041
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

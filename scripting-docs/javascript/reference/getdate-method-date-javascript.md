@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: getDate
+f1_keywords:
+- getDate
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - dates, returning day of the month
 - getDate method
 ms.assetid: 67e7f07c-dd46-4b42-82d6-e53e4bd33703
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

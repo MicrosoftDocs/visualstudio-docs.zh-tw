@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsRuntimeAttributes
-helpviewer_keywords: JsRuntimeAttributes enumeration
+f1_keywords:
+- jsrt/JsRuntimeAttributes
+helpviewer_keywords:
+- JsRuntimeAttributes enumeration
 ms.assetid: f76d82e9-a695-4d6a-96c1-b3a4d27fed68
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

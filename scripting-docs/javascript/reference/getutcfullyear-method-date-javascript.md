@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: getUTCFullYear
+f1_keywords:
+- getUTCFullYear
 dev_langs:
 - JavaScript
 - TypeScript
@@ -22,7 +24,7 @@ helpviewer_keywords:
 - Full Year method
 - UTC dates, getting
 ms.assetid: f11e5363-ef8a-48dd-9d56-4ee7290c7c48
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

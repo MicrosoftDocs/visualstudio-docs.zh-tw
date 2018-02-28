@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: ConditionalComp_JavaScript
+f1_keywords:
+- ConditionalComp_JavaScript
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - conditional compilation, overview
 - conditional compilation
 ms.assetid: a843de4e-3aae-43cd-ad64-477dd00814a2
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

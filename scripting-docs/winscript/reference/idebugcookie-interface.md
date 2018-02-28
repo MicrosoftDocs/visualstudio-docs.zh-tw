@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugCookie interface
+helpviewer_keywords:
+- IDebugCookie interface
 ms.assetid: 0dbc75d9-6f33-400f-a5bf-9122cf534082
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

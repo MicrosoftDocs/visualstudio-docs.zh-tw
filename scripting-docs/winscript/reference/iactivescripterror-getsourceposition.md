@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptError.GetSourcePosition
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptError_GetSourcePosition
+apiname:
+- IActiveScriptError.GetSourcePosition
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptError_GetSourcePosition
 ms.assetid: ae9b26b1-82a7-4645-9686-3261d8248664
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

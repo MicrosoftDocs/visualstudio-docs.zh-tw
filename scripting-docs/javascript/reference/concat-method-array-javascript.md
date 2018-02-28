@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: concat
+f1_keywords:
+- concat
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - concat method (array)
 - Concat method
 ms.assetid: bc2b4a6a-209e-4d59-8c24-59db01d53b1e
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

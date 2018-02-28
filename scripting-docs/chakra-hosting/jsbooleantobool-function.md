@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsBooleanToBool
-helpviewer_keywords: JsBooleanToBool function
+f1_keywords:
+- jsrt/JsBooleanToBool
+helpviewer_keywords:
+- JsBooleanToBool function
 ms.assetid: ab16ac71-fe47-475d-a7ee-46e4643dee60
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

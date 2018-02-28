@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IRemoteDebugApplication110::SetDebuggerOptions
+helpviewer_keywords:
+- IRemoteDebugApplication110::SetDebuggerOptions
 ms.assetid: 58e9fd18-3e0d-47fa-8893-f316146bde84
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

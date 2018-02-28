@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpressionContext.ParseLanguageText
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpressionContext::ParseLanguageText
+apiname:
+- IDebugExpressionContext.ParseLanguageText
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpressionContext::ParseLanguageText
 ms.assetid: 650cb016-7d80-4011-b264-780f871a3466
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

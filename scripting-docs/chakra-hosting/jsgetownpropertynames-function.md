@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetOwnPropertyNames
-helpviewer_keywords: JsGetOwnPropertyNames function
+f1_keywords:
+- jsrt/JsGetOwnPropertyNames
+helpviewer_keywords:
+- JsGetOwnPropertyNames function
 ms.assetid: 0c17ea06-b17f-4ea3-ad04-1259a4d1b6de
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

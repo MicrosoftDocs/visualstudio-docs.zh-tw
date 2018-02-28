@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: setUTCDate
+f1_keywords:
+- setUTCDate
 dev_langs:
 - JavaScript
 - TypeScript
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - UTC dates, setting
 - setUTCDate method
 ms.assetid: e6c3b876-70fe-4103-b197-6c84c078ce10
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

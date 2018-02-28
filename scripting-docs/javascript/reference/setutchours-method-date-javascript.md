@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: setUTCHours
+f1_keywords:
+- setUTCHours
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - UTC times, setting
 - setUTCHours method
 ms.assetid: 257e36fd-fb06-4a4d-8634-d66a020a1511
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

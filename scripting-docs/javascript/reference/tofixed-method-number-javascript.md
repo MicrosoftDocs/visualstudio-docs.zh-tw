@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: toFixed
+f1_keywords:
+- toFixed
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: toFixed method
+helpviewer_keywords:
+- toFixed method
 ms.assetid: b5f03400-865e-4ab2-818c-f734c0f6d6f0
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

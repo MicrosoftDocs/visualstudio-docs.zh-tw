@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: WeakMap
+f1_keywords:
+- WeakMap
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 4682d2dc-caf9-4fa8-8313-a0a0b804fd1d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

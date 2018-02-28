@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IProcessDebugManager.CreateDebugDocumentHelper
-apilocation: pdm.dll
-helpviewer_keywords: IProcessDebugManager::CreateDebugDocumentHelper
+apiname:
+- IProcessDebugManager.CreateDebugDocumentHelper
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IProcessDebugManager::CreateDebugDocumentHelper
 ms.assetid: d644e192-1bcc-4768-a91e-239cd920adcd
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

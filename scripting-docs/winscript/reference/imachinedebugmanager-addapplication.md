@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IMachineDebugManager.AddApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManager::AddApplication
+apiname:
+- IMachineDebugManager.AddApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManager::AddApplication
 ms.assetid: 7cd591b6-718c-4e77-acb7-a6dd147ddf57
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

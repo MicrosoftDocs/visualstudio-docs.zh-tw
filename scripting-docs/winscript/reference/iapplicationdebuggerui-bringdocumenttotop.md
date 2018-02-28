@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IApplicationDebuggerUI.BringDocumentToTop
-apilocation: scrobj.dll
-helpviewer_keywords: IApplicationDebuggerUI::BringDocumentToTop
+apiname:
+- IApplicationDebuggerUI.BringDocumentToTop
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IApplicationDebuggerUI::BringDocumentToTop
 ms.assetid: ef5fe1e7-4381-4409-a0d7-58f993abe84e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

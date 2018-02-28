@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptProfilerControl2 interface
+helpviewer_keywords:
+- IActiveScriptProfilerControl2 interface
 ms.assetid: 89455276-5c23-420b-a7e0-804a32635291
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

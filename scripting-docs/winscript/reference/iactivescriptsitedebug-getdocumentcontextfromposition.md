@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSiteDebug.GetDocumentContextFromPosition
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebug::GetDocumentContextFromPosition
+apiname:
+- IActiveScriptSiteDebug.GetDocumentContextFromPosition
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebug::GetDocumentContextFromPosition
 ms.assetid: ba5f7348-0107-4b12-b949-79a012476cf7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetPropertyIdFromName
-helpviewer_keywords: JsGetPropertyIdFromName function
+f1_keywords:
+- jsrt/JsGetPropertyIdFromName
+helpviewer_keywords:
+- JsGetPropertyIdFromName function
 ms.assetid: 1674906f-746a-4c62-99cd-023276683a86
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

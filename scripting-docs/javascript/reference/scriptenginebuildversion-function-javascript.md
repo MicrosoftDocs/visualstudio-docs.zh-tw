@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: ScriptEngineBuildVersion
+f1_keywords:
+- ScriptEngineBuildVersion
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: ScriptEngineBuildVersion function
+helpviewer_keywords:
+- ScriptEngineBuildVersion function
 ms.assetid: 7e255030-b0a3-420b-9c96-bb3e93c9333f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

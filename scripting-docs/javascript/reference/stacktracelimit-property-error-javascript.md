@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: Error.stackTraceLimit
+f1_keywords:
+- Error.stackTraceLimit
 dev_langs:
 - JavaScript
 - TypeScript
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - error stack [JavaScript]
 - JavaScript stack trace limit
 ms.assetid: 127ef8e8-892e-4263-9ebc-03364af01212
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: DateTimeFormat
+f1_keywords:
+- DateTimeFormat
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: cc555ac2-f31c-4239-a612-b84c08e3a37f
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

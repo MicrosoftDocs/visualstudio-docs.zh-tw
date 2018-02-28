@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IMachineDebugManagerCookie.RemoveApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManagerCookie::RemoveApplication
+apiname:
+- IMachineDebugManagerCookie.RemoveApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManagerCookie::RemoveApplication
 ms.assetid: af8f4a52-ec5e-48fa-87de-234d5e6528d0
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

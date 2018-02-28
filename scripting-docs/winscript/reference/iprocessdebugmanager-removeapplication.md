@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IProcessDebugManager.RemoveApplication
-apilocation: pdm.dll
-helpviewer_keywords: IProcessDebugManager::RemoveApplication
+apiname:
+- IProcessDebugManager.RemoveApplication
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IProcessDebugManager::RemoveApplication
 ms.assetid: 334e869d-81ae-4d30-9e89-89763ad4f184
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

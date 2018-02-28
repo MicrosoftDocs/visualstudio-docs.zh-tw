@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateExternalObject
-helpviewer_keywords: JsCreateExternalObject function
+f1_keywords:
+- jsrt/JsCreateExternalObject
+helpviewer_keywords:
+- JsCreateExternalObject function
 ms.assetid: 6bcef506-93fb-429b-b06a-a971ff0b71f3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

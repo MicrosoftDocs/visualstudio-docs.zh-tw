@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: getUTCDate
+f1_keywords:
+- getUTCDate
 dev_langs:
 - JavaScript
 - TypeScript
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - UTC dates, returning
 - getUTCDate method
 ms.assetid: 9e4c763f-c94c-44c9-9684-cb632d75b62e
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

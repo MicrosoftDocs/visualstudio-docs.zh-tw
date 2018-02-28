@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '>>='
+f1_keywords:
+- '>>='
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - right shift operators [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: 8c1f7f90-e3ac-42ee-94f2-5ccc47d7aef6
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentText.GetLineOfPosition
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentText::GetLineOfPosition
+apiname:
+- IDebugDocumentText.GetLineOfPosition
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentText::GetLineOfPosition
 ms.assetid: fe8d4802-ea16-49ca-8973-89dcaf6c915b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

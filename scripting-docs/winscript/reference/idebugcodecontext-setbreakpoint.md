@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugCodeContext.SetBreakPoint
-apilocation: jscript.dll
-helpviewer_keywords: IDebugCodeContext::SetBreakPoint
+apiname:
+- IDebugCodeContext.SetBreakPoint
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugCodeContext::SetBreakPoint
 ms.assetid: ecd42eae-66fa-40d3-9e47-08b826784108
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

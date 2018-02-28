@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.FCanJitDebug
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::FCanJitDebug
+apiname:
+- IDebugApplication.FCanJitDebug
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::FCanJitDebug
 ms.assetid: d7ddac65-4864-411f-bf66-34a46c03f239
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

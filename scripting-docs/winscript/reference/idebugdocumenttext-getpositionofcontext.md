@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentText.GetPositionOfContext
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentText::GetPositionOfContext
+apiname:
+- IDebugDocumentText.GetPositionOfContext
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentText::GetPositionOfContext
 ms.assetid: 90fec730-c3fb-45fb-92ef-05ecc90dca38
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

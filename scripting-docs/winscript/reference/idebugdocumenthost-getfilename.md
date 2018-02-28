@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHost.GetFileName
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentHost::GetFileName
+apiname:
+- IDebugDocumentHost.GetFileName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentHost::GetFileName
 ms.assetid: b814a848-8a3d-468d-9282-c5c0354b22a1
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

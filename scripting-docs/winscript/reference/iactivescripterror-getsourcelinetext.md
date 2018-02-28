@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptError.GetSourceLineText
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptError_GetSourceLineText
+apiname:
+- IActiveScriptError.GetSourceLineText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptError_GetSourceLineText
 ms.assetid: 64f7f37f-7288-4dbe-b626-a35d90897f36
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

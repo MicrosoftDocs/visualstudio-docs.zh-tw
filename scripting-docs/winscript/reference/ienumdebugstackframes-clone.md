@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumDebugStackFrames.Clone
-apilocation: jscript.dll
-helpviewer_keywords: IEnumDebugStackFrames::Clone
+apiname:
+- IEnumDebugStackFrames.Clone
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IEnumDebugStackFrames::Clone
 ms.assetid: 9d9e01a3-0be3-4336-832a-f065af388571
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptProperty.SetProperty
-apilocation: scrobj.dll
-helpviewer_keywords: SetProperty method, IActiveScriptProperty interface
+apiname:
+- IActiveScriptProperty.SetProperty
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- SetProperty method, IActiveScriptProperty interface
 ms.assetid: 0ba429c5-04a3-4505-bc5f-69c505dfca91
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

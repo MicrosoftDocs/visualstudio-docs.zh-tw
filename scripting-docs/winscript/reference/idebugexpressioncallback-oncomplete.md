@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpressionCallBack.onComplete
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugExpressionCallBack::onComplete
+apiname:
+- IDebugExpressionCallBack.onComplete
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugExpressionCallBack::onComplete
 ms.assetid: d0b89db3-38e7-44e0-93fe-60205f9149dd
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

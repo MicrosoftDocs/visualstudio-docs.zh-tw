@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.GetCurrentThread
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::GetCurrentThread
+apiname:
+- IDebugApplication.GetCurrentThread
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::GetCurrentThread
 ms.assetid: 15128e77-6fc6-42a2-8c04-20e22ef03f29
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IMachineDebugManagerEvents interface
+helpviewer_keywords:
+- IMachineDebugManagerEvents interface
 ms.assetid: 468de2f4-49e0-4f6f-ba0c-0f5f6832c092
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

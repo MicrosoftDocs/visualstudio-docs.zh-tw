@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThread.GetSystemThreadId
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplicationThread::GetSystemThreadId
+apiname:
+- IRemoteDebugApplicationThread.GetSystemThreadId
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThread::GetSystemThreadId
 ms.assetid: 6a6d5f62-4f60-4e87-9206-3c6f2e026d11
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: conditional compilation, variables
+helpviewer_keywords:
+- conditional compilation, variables
 ms.assetid: d6f9827d-c558-412c-8e68-de04c19c3d9d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

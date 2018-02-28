@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugStackFrameSnifferEx.EnumStackFramesEx
-apilocation: jscript.dll
-helpviewer_keywords: IDebugStackFrameSnifferEx::EnumStackFramesEx
+apiname:
+- IDebugStackFrameSnifferEx.EnumStackFramesEx
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugStackFrameSnifferEx::EnumStackFramesEx
 ms.assetid: b656b581-aff0-4984-8d8a-a1c7a8e6558a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

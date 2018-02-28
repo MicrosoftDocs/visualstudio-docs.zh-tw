@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScript.InterruptScriptThread
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScript_InterruptScriptThread
+apiname:
+- IActiveScript.InterruptScriptThread
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScript_InterruptScriptThread
 ms.assetid: 2304d035-6d39-4811-acd3-8a9640fdbef6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

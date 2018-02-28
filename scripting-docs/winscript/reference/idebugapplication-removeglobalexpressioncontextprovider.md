@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.RemoveGlobalExpressionContextProvider
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::RemoveGlobalExpressionContextProvider
+apiname:
+- IDebugApplication.RemoveGlobalExpressionContextProvider
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::RemoveGlobalExpressionContextProvider
 ms.assetid: ace638a3-ed34-4d20-8404-45c684aaaf1a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

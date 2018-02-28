@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplication110 Interface
+helpviewer_keywords:
+- IDebugApplication110 Interface
 ms.assetid: ae943133-eb65-4ddc-a29f-9280a82dd8d6
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

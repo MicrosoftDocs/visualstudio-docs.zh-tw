@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: split
+f1_keywords:
+- split
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: split method
+helpviewer_keywords:
+- split method
 ms.assetid: 7f093336-c887-4efb-b91f-819b6d18a181
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

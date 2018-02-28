@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: BREAKRESUMEACTION
-apilocation: scrobj.dll
-helpviewer_keywords: BREAKRESUMEACTION enumeration
+apiname:
+- BREAKRESUMEACTION
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- BREAKRESUMEACTION enumeration
 ms.assetid: b39fcc82-7776-4caa-8155-b398de68df03
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

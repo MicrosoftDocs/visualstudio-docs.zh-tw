@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IApplicationDebuggerUI interface
+helpviewer_keywords:
+- IApplicationDebuggerUI interface
 ms.assetid: b8828817-ca24-4012-802c-7dcaeea65dc8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

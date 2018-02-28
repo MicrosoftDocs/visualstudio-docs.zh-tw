@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentText.GetSize
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentText::GetSize
+apiname:
+- IDebugDocumentText.GetSize
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentText::GetSize
 ms.assetid: 9da53856-613a-44b2-a84c-99454a2a1548
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

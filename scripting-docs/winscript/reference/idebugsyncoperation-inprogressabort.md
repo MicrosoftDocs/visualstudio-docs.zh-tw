@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugSyncOperation.InProgressAbort
-apilocation: jscript.dll
-helpviewer_keywords: IDebugSyncOperation::InProgressAbort
+apiname:
+- IDebugSyncOperation.InProgressAbort
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugSyncOperation::InProgressAbort
 ms.assetid: bfd0889c-b627-4843-b1c6-b6b918f42d61
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

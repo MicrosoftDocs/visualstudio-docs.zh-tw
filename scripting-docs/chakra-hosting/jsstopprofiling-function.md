@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsStopProfiling
-helpviewer_keywords: JsStopProfiling function
+f1_keywords:
+- jsrt/JsStopProfiling
+helpviewer_keywords:
+- JsStopProfiling function
 ms.assetid: 3639c04f-a0f9-418b-be39-92f64b4e7ef8
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

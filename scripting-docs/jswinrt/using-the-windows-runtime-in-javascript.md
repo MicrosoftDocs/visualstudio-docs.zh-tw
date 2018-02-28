@@ -5,12 +5,14 @@ ms.date: 02/03/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: javascript
+ms.technology:
+- javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: JavaScript, Windows Runtime
+helpviewer_keywords:
+- JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

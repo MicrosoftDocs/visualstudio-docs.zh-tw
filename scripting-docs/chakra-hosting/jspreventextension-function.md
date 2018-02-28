@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsPreventExtension
-helpviewer_keywords: JsPreventExtension function
+f1_keywords:
+- jsrt/JsPreventExtension
+helpviewer_keywords:
+- JsPreventExtension function
 ms.assetid: 8da07e20-d076-4ae4-9fb0-3f3c141518c2
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

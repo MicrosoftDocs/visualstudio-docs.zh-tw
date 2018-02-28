@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetFalseValue
-helpviewer_keywords: JsGetFalseValue function
+f1_keywords:
+- jsrt/JsGetFalseValue
+helpviewer_keywords:
+- JsGetFalseValue function
 ms.assetid: 621a584c-4ca8-4ba0-b19a-6cb50cf830b6
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

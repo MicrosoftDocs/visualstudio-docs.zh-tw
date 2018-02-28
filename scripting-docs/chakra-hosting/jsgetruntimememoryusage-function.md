@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetRuntimeMemoryUsage
-helpviewer_keywords: JsGetRuntimeMemoryUsage function
+f1_keywords:
+- jsrt/JsGetRuntimeMemoryUsage
+helpviewer_keywords:
+- JsGetRuntimeMemoryUsage function
 ms.assetid: b9bd4146-bfbc-4cb1-a0e9-a0ded7fb09bd
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

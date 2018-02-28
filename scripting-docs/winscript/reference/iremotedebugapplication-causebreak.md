@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.CauseBreak
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::CauseBreak
+apiname:
+- IRemoteDebugApplication.CauseBreak
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::CauseBreak
 ms.assetid: 6a2c27bb-dca0-475c-9918-bdbb70a50d26
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

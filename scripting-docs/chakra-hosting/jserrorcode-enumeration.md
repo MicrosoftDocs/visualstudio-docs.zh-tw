@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsErrorCode
-helpviewer_keywords: JsErrorCode enumeration
+f1_keywords:
+- jsrt/JsErrorCode
+helpviewer_keywords:
+- JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

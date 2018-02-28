@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptProfilerCallback2::OnFunctionExitByName
+helpviewer_keywords:
+- IActiveScriptProfilerCallback2::OnFunctionExitByName
 ms.assetid: a6ddead4-e66d-4789-b778-84e5c343f908
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

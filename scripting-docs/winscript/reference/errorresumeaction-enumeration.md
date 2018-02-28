@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: ERRORRESUMEACTION
-apilocation: scrobj.dll
-helpviewer_keywords: ERRORRESUMEACTION enumeration
+apiname:
+- ERRORRESUMEACTION
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- ERRORRESUMEACTION enumeration
 ms.assetid: a68293c8-056b-439f-83e7-69e4a38f4976
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

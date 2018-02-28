@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: function_JavaScriptKeyword
+f1_keywords:
+- function_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - function statement
 - declaring functions
 ms.assetid: cc9cfd43-1305-41c8-ad67-545d20f4fafe
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

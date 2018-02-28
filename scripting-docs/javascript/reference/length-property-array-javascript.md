@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: length Property
+f1_keywords:
+- length Property
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - Length property
 - length property (array)
 ms.assetid: e1c6377c-2e84-440a-9660-f1f512e4a938
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

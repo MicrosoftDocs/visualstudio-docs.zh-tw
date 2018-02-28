@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -27,9 +28,10 @@ dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: reserved keywords (JavaScript)
+helpviewer_keywords:
+- reserved keywords (JavaScript)
 ms.assetid: 570de156-8e5c-413c-ac04-51120bdbb634
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

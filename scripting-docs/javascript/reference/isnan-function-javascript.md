@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: isNaN
+f1_keywords:
+- isNaN
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: isNaN method
+helpviewer_keywords:
+- isNaN method
 ms.assetid: 5af4eb29-72f6-484f-93bd-04ae1261f849
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

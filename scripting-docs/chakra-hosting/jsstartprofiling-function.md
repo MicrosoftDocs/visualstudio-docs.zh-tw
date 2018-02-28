@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsStartProfiling
-helpviewer_keywords: JsStartProfiling function
+f1_keywords:
+- jsrt/JsStartProfiling
+helpviewer_keywords:
+- JsStartProfiling function
 ms.assetid: 638da395-42dd-4fc5-b581-819e647e887d
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

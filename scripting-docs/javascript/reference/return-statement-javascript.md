@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: return_JavaScriptKeyword
+f1_keywords:
+- return_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - return statement, syntax
 - return statement, exiting functions in script
 ms.assetid: a9130d90-11fb-43f5-a819-7e5435f74c05
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

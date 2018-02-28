@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: GetObject
+f1_keywords:
+- GetObject
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: GetObject function
+helpviewer_keywords:
+- GetObject function
 ms.assetid: 62efcdbc-8b86-491d-9000-ef38aa9942a9
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

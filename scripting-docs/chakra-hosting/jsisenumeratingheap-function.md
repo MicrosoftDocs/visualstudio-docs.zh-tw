@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsIsEnumeratingHeap
-helpviewer_keywords: JsIsEnumeratingHeap function
+f1_keywords:
+- jsrt/JsIsEnumeratingHeap
+helpviewer_keywords:
+- JsIsEnumeratingHeap function
 ms.assetid: 5d14518e-3153-43f2-9a9c-068580cbd54f
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

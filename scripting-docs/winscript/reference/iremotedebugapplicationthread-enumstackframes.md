@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThread.EnumStackFrames
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplicationThread::EnumStackFrames
+apiname:
+- IRemoteDebugApplicationThread.EnumStackFrames
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThread::EnumStackFrames
 ms.assetid: 605ce83d-43d2-47ea-b066-ec8f0da50ca6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptStringCompare.StrComp
-apilocation: scrobj.dll
-helpviewer_keywords: StrComp method, IActiveScriptStringCompare interface
+apiname:
+- IActiveScriptStringCompare.StrComp
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- StrComp method, IActiveScriptStringCompare interface
 ms.assetid: 124d1281-8037-4766-a2a1-61244ac1f114
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

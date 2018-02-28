@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IApplicationDebugger.onDebugOutput
-apilocation: scrobj.dll
-helpviewer_keywords: IApplicationDebugger::onDebugOutput
+apiname:
+- IApplicationDebugger.onDebugOutput
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IApplicationDebugger::onDebugOutput
 ms.assetid: 978d8bcf-16dc-4f24-a6bc-206adee2b2e9
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

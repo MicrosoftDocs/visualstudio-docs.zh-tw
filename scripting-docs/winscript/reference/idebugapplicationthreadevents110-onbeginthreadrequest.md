@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
+helpviewer_keywords:
+- IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
 ms.assetid: 6a88a3e7-f097-40ce-8333-6800204806da
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IBindEventHandler interface
+helpviewer_keywords:
+- IBindEventHandler interface
 ms.assetid: 76ee65f1-7d4c-4ca3-ade7-e467d67a0989
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

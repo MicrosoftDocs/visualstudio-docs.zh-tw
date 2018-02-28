@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IMachineDebugManagerCookie.EnumApplications
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManagerCookie::EnumApplications
+apiname:
+- IMachineDebugManagerCookie.EnumApplications
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManagerCookie::EnumApplications
 ms.assetid: 03f863cf-fa7f-4ec4-b1a1-1ae0ad296c39
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

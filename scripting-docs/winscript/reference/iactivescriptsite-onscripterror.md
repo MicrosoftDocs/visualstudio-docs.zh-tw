@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSite.OnScriptError
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSite_OnScriptError
+apiname:
+- IActiveScriptSite.OnScriptError
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSite_OnScriptError
 ms.assetid: 5c9c85cc-21ad-4232-be83-a24cc7570108
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

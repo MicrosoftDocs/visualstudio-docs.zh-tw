@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSiteWindow.EnableModeless
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteWindow_EnableModeless
+apiname:
+- IActiveScriptSiteWindow.EnableModeless
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteWindow_EnableModeless
 ms.assetid: 83fe4f62-8e97-4f03-bc6f-d90aa888657d
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Windows Script Host, implementing hosts
+helpviewer_keywords:
+- Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

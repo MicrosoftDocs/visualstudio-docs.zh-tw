@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsConstructObject
-helpviewer_keywords: JsConstructObject function
+f1_keywords:
+- jsrt/JsConstructObject
+helpviewer_keywords:
+- JsConstructObject function
 ms.assetid: b07d2440-db55-4a6a-8376-56b40a8039a1
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

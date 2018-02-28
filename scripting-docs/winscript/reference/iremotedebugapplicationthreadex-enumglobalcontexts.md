@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThreadEx:EnumGlobalContexts
-apilocation: scrobj.dll
-helpviewer_keywords: IRemoteDebugApplicationThreadEx:EnumGlobalContexts
+apiname:
+- IRemoteDebugApplicationThreadEx:EnumGlobalContexts
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThreadEx:EnumGlobalContexts
 ms.assetid: a6c0bc3f-4afc-41e1-b734-06e252c5b171
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

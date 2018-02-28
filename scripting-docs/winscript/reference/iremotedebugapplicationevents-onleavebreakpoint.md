@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnLeaveBreakPoint
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnLeaveBreakPoint
+apiname:
+- IRemoteDebugApplicationEvents.OnLeaveBreakPoint
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnLeaveBreakPoint
 ms.assetid: 00449a23-1f67-4078-ad06-4c426abf7587
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

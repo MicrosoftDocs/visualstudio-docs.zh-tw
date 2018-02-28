@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: exp
+f1_keywords:
+- exp
 dev_langs:
 - JavaScript
 - TypeScript
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - logarithms
 - Euler's constant
 ms.assetid: a36845a8-2c15-45be-83f1-b33914423201
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

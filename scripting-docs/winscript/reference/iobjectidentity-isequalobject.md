@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IObjectIdentity.IsEqualObject
-apilocation: scrobj.dll
-helpviewer_keywords: IsEqualObject method
+apiname:
+- IObjectIdentity.IsEqualObject
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IsEqualObject method
 ms.assetid: 78c5c5c2-d299-4036-986c-7c1d87cbe7cd
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

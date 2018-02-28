@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.EnumGlobalExpressionContexts
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::EnumGlobalExpressionContexts
+apiname:
+- IRemoteDebugApplication.EnumGlobalExpressionContexts
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::EnumGlobalExpressionContexts
 ms.assetid: 61598a34-f409-42a2-810d-a9e92e2f4861
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

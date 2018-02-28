@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugAsyncOperation.Abort
-apilocation: pdm.dll
-helpviewer_keywords: IDebugAsyncOperation::Abort
+apiname:
+- IDebugAsyncOperation.Abort
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugAsyncOperation::Abort
 ms.assetid: 232541c6-81b8-4eb7-96a7-a8e5fe087b31
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.AddStackFrameSniffer
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::AddStackFrameSniffer
+apiname:
+- IDebugApplication.AddStackFrameSniffer
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::AddStackFrameSniffer
 ms.assetid: a7a9684a-14c5-415a-ae63-a17397d58d07
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

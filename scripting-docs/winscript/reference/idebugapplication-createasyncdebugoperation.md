@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.CreateAsyncDebugOperation
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::CreateAsyncDebugOperation
+apiname:
+- IDebugApplication.CreateAsyncDebugOperation
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::CreateAsyncDebugOperation
 ms.assetid: bc32b101-6364-4498-8458-bd5f3ab5ad94
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

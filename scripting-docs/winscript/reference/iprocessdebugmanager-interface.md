@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IProcessDebugManager interface
+helpviewer_keywords:
+- IProcessDebugManager interface
 ms.assetid: b6ecb2bd-a4d1-4857-9232-036c154d0cb1
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

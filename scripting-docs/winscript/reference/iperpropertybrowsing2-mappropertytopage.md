@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IPerPropertyBrowsing2.MapPropertyToPage
-apilocation: scrobj.dll
-helpviewer_keywords: IPerPropertyBrowsing2::MapPropertyToPage
+apiname:
+- IPerPropertyBrowsing2.MapPropertyToPage
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IPerPropertyBrowsing2::MapPropertyToPage
 ms.assetid: e6418a8e-500b-42e1-9b5a-52e6f7567f99
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

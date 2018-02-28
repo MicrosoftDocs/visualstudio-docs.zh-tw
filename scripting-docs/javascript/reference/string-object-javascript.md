@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: String_JavaScript
+f1_keywords:
+- String_JavaScript
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - String object
 - String object, overview
 ms.assetid: 8063ecd5-5778-4e87-b985-b21420171914
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

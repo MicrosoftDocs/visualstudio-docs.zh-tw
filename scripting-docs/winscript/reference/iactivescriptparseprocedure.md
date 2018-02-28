@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptParseProcedure interface
+helpviewer_keywords:
+- IActiveScriptParseProcedure interface
 ms.assetid: 741a35bb-5b92-489e-ba8a-a406b42125fc
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

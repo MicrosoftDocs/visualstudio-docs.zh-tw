@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.Detach
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::Detach
+apiname:
+- IDebugDocumentHelper.Detach
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::Detach
 ms.assetid: 820b9a8c-9a88-479a-b095-daea99394f9c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

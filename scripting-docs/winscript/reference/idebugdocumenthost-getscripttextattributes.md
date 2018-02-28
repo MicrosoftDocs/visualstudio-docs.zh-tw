@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHost.GetScriptTextAttributes
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentHost::GetScriptTextAttributes
+apiname:
+- IDebugDocumentHost.GetScriptTextAttributes
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentHost::GetScriptTextAttributes
 ms.assetid: fe459d0d-937f-4176-be81-99d5cca121a1
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

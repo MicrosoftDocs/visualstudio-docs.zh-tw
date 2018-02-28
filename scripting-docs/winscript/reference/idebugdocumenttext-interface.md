@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugDocumentText interface
+helpviewer_keywords:
+- IDebugDocumentText interface
 ms.assetid: 242bad79-9c0a-4a30-879a-9f43db4e022b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugStackFrame.GetThread
-apilocation: jscript.dll
-helpviewer_keywords: IDebugStackFrame::GetThread
+apiname:
+- IDebugStackFrame.GetThread
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugStackFrame::GetThread
 ms.assetid: ece24728-a6b2-4b01-a6f0-0a82b15be39b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

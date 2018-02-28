@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetTrueValue
-helpviewer_keywords: JsGetTrueValue function
+f1_keywords:
+- jsrt/JsGetTrueValue
+helpviewer_keywords:
+- JsGetTrueValue function
 ms.assetid: c2a56d48-344b-492b-90b8-f570710f8310
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

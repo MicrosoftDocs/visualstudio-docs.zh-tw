@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsHasProperty
-helpviewer_keywords: JsHasProperty function
+f1_keywords:
+- jsrt/JsHasProperty
+helpviewer_keywords:
+- JsHasProperty function
 ms.assetid: 26c94c3d-aae6-4257-8644-df63c7e714fb
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

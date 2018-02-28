@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsDefineProperty
-helpviewer_keywords: JsDefineProperty function
+f1_keywords:
+- jsrt/JsDefineProperty
+helpviewer_keywords:
+- JsDefineProperty function
 ms.assetid: b2cf48d6-eb40-457c-aa8b-b16a50dc5d6a
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

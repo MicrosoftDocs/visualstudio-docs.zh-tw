@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugAsyncOperationCallBack interface
+helpviewer_keywords:
+- IDebugAsyncOperationCallBack interface
 ms.assetid: ccbe12fe-2aac-4d9f-9e70-601003f1a34d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

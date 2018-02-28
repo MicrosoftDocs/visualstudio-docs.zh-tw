@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: callee
+f1_keywords:
+- callee
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: callee property
+helpviewer_keywords:
+- callee property
 ms.assetid: ad9d4d21-73f0-44f6-8bec-502f3456cd23
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

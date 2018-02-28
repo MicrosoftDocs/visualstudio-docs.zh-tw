@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsRunScript
-helpviewer_keywords: JsRunScript function
+f1_keywords:
+- jsrt/JsRunScript
+helpviewer_keywords:
+- JsRunScript function
 ms.assetid: 8d6b8c9a-af3a-4e21-a330-5a6b535423a3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

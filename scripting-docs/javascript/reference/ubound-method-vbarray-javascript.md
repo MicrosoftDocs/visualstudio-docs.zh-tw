@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: ubound
+f1_keywords:
+- ubound
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: ubound method
+helpviewer_keywords:
+- ubound method
 ms.assetid: 761811c5-9a3d-4cb3-bfe0-0a8749f34496
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

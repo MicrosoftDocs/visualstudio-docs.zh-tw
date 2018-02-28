@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: DebugStackFrameDescriptor
-apilocation: scrobj.dll
-helpviewer_keywords: DebugStackFrameDescriptor structure
+apiname:
+- DebugStackFrameDescriptor
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- DebugStackFrameDescriptor structure
 ms.assetid: a86bcb99-41e4-4a26-a1dd-e1458fb73139
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

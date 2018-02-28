@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: ICanHandleException interface
+helpviewer_keywords:
+- ICanHandleException interface
 ms.assetid: 32df7f81-557d-40cf-a844-06a6eaa292f3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

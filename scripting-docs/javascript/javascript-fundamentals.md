@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: JavaScript, fundamentals
+helpviewer_keywords:
+- JavaScript, fundamentals
 ms.assetid: 0441e1e5-34e4-4d32-b188-f7fc35613478
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

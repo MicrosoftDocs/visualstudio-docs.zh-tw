@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IApplicationDebugger.CreateInstanceAtDebugger
-apilocation: scrobj.dll
-helpviewer_keywords: IApplicationDebugger::CreateInstanceAtDebugger
+apiname:
+- IApplicationDebugger.CreateInstanceAtDebugger
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IApplicationDebugger::CreateInstanceAtDebugger
 ms.assetid: 6763afac-c86a-4e88-9580-77108fb242fb
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

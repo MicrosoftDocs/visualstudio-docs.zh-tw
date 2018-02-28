@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: pop
+f1_keywords:
+- pop
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Pop method
+helpviewer_keywords:
+- Pop method
 ms.assetid: 4fae7f98-29f1-4041-ba43-601f2e5145ec
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

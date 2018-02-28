@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationNode100::SetFilterForEventSink
+helpviewer_keywords:
+- IDebugApplicationNode100::SetFilterForEventSink
 ms.assetid: cfb34efe-c6e1-4692-8ffd-3ede3a24cd4b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

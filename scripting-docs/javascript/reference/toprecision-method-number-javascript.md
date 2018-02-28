@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: toPrecision
+f1_keywords:
+- toPrecision
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: toPrecision method
+helpviewer_keywords:
+- toPrecision method
 ms.assetid: ac13c82f-1038-447a-823f-f755bba535ca
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

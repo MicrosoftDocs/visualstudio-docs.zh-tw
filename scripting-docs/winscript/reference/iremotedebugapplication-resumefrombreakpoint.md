@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.ResumeFromBreakPoint
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::ResumeFromBreakPoint
+apiname:
+- IRemoteDebugApplication.ResumeFromBreakPoint
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::ResumeFromBreakPoint
 ms.assetid: a613cc2b-1d69-4713-a235-64372c253b4a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

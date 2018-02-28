@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: localeCompare
+f1_keywords:
+- localeCompare
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: localeCompare method
+helpviewer_keywords:
+- localeCompare method
 ms.assetid: 66914079-12dd-4393-a84c-c05f58231c36
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsHasIndexedProperty
-helpviewer_keywords: JsHasIndexedProperty function
+f1_keywords:
+- jsrt/JsHasIndexedProperty
+helpviewer_keywords:
+- JsHasIndexedProperty function
 ms.assetid: 30436a3d-fda0-407e-aba2-142be2310372
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

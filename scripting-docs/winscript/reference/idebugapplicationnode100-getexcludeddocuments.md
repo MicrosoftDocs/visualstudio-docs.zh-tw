@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationNode100::GetExcludedDocuments
+helpviewer_keywords:
+- IDebugApplicationNode100::GetExcludedDocuments
 ms.assetid: d44583a7-0b0b-4799-b075-837ad1da1946
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

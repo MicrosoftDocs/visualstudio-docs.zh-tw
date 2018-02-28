@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
+helpviewer_keywords:
+- IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
 ms.assetid: 224245ac-2aa2-43ae-97ed-493afc3d0122
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

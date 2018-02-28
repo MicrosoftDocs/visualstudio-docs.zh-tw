@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.SetTextAttributes
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::SetTextAttributes
+apiname:
+- IDebugDocumentHelper.SetTextAttributes
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::SetTextAttributes
 ms.assetid: 31657738-9e4c-436a-be61-23f4185d452e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

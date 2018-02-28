@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Boolean data type, supported data types
+helpviewer_keywords:
+- Boolean data type, supported data types
 ms.assetid: c7a6bd3a-4b1c-4dbe-8505-106dbf483b41
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

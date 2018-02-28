@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -16,9 +17,10 @@ dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: switch statement
+helpviewer_keywords:
+- switch statement
 ms.assetid: 61f80e8b-3739-4146-a893-c2832d92b28c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

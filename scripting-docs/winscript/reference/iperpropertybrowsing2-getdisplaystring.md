@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IPerPropertyBrowsing2.GetDisplayString
-apilocation: scrobj.dll
-helpviewer_keywords: IPerPropertyBrowsing2::GetDisplayString
+apiname:
+- IPerPropertyBrowsing2.GetDisplayString
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IPerPropertyBrowsing2::GetDisplayString
 ms.assetid: 8f75c6a9-86a9-4e2d-8cb4-74e7b1c0a524
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

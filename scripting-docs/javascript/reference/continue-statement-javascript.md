@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: continue_JavaScriptKeyword
+f1_keywords:
+- continue_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - continue statement
 - loop structures, continue statement
 ms.assetid: f8a30d9f-e2de-4e1f-8668-4e4cf95f7df9
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

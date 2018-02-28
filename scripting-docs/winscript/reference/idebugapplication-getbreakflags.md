@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.GetBreakFlags
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::GetBreakFlags
+apiname:
+- IDebugApplication.GetBreakFlags
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::GetBreakFlags
 ms.assetid: 0532ba94-f791-46ad-88ae-5f6ba220b667
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

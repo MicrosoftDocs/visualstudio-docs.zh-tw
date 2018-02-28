@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IEnumDebugApplicationNodes interface
+helpviewer_keywords:
+- IEnumDebugApplicationNodes interface
 ms.assetid: 4fd38b44-3f9a-4d23-9a8f-7dc98f72725f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

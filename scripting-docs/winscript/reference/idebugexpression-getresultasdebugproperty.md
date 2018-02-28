@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpression.GetResultAsDebugProperty
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpression::GetResultAsDebugProperty
+apiname:
+- IDebugExpression.GetResultAsDebugProperty
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpression::GetResultAsDebugProperty
 ms.assetid: 9075bf2f-d5bb-464e-b6c2-3fa3215e9ae0
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

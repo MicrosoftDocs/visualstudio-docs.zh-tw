@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.GetNameSpaceParent
-apilocation: scrobj.dll
-helpviewer_keywords: GetNameSpaceParent method
+apiname:
+- IDispatchEx.GetNameSpaceParent
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- GetNameSpaceParent method
 ms.assetid: 0b077d39-2fd6-4390-8cd5-128d9b8dc90c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

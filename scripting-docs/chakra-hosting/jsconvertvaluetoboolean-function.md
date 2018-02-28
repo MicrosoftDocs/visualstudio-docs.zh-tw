@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsConvertValueToBoolean
-helpviewer_keywords: JsConvertValueToBoolean function
+f1_keywords:
+- jsrt/JsConvertValueToBoolean
+helpviewer_keywords:
+- JsConvertValueToBoolean function
 ms.assetid: 7298ec72-a388-4334-b81b-1691ab4cecf0
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

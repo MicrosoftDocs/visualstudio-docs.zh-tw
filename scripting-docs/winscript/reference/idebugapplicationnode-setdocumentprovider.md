@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplicationNode.SetDocumentProvider
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplicationNode::SetDocumentProvider
+apiname:
+- IDebugApplicationNode.SetDocumentProvider
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplicationNode::SetDocumentProvider
 ms.assetid: 7cb587ca-d84e-4b5e-9b94-e973cca55a03
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Object.defineProperties function [JavaScript]
+helpviewer_keywords:
+- Object.defineProperties function [JavaScript]
 ms.assetid: 2dae6658-a1c9-495f-bf06-bb3e964e6762
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

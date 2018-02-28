@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumDebugApplicationNodes.Next
-apilocation: pdm.dll
-helpviewer_keywords: IEnumDebugApplicationNodes::Next
+apiname:
+- IEnumDebugApplicationNodes.Next
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IEnumDebugApplicationNodes::Next
 ms.assetid: 925511c8-4f11-423d-ba2d-01589457050c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

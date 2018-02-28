@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSiteDebug.GetRootApplicationNode
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebug::GetRootApplicationNode
+apiname:
+- IActiveScriptSiteDebug.GetRootApplicationNode
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebug::GetRootApplicationNode
 ms.assetid: 2393f566-6b97-47c0-8041-4dd7e3b1d3a3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHost.OnCreateDocumentContext
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentHost::OnCreateDocumentContext
+apiname:
+- IDebugDocumentHost.OnCreateDocumentContext
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentHost::OnCreateDocumentContext
 ms.assetid: 080c8604-cfd7-484e-a337-15040870e683
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

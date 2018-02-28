@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptProfilerControl2::CompleteProfilerStart
+helpviewer_keywords:
+- IActiveScriptProfilerControl2::CompleteProfilerStart
 ms.assetid: e14d94a2-39d3-40a1-84d9-6300fbe2b339
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

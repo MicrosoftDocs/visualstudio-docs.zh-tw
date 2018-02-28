@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsVariantToValue
-helpviewer_keywords: JsVariantToValue function
+f1_keywords:
+- jsrt/JsVariantToValue
+helpviewer_keywords:
+- JsVariantToValue function
 ms.assetid: e8f9eb8b-55b3-4b65-927e-cad5b482edee
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

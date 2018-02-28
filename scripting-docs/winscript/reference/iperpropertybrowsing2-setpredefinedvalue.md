@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IPerPropertyBrowsing2.SetPredefinedValue
-apilocation: scrobj.dll
-helpviewer_keywords: IPerPropertyBrowsing2::SetPredefinedValue
+apiname:
+- IPerPropertyBrowsing2.SetPredefinedValue
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IPerPropertyBrowsing2::SetPredefinedValue
 ms.assetid: 3aff5300-c5a4-4d9b-9d47-a75b64014ac4
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

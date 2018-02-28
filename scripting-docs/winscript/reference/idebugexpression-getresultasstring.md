@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpression.GetResultAsString
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpression::GetResultAsString
+apiname:
+- IDebugExpression.GetResultAsString
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpression::GetResultAsString
 ms.assetid: edadd2ad-9369-4878-bf87-cea15be9f363
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSiteDebug.OnScriptErrorDebug
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebug::OnScriptErrorDebug
+apiname:
+- IActiveScriptSiteDebug.OnScriptErrorDebug
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebug::OnScriptErrorDebug
 ms.assetid: 87f201da-36eb-49a2-b000-e1e1e8c4cdb7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

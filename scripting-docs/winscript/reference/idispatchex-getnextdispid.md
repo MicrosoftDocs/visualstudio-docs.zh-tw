@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.GetNextDispID
-apilocation: scrobj.dll
-helpviewer_keywords: GetNextDispID method
+apiname:
+- IDispatchEx.GetNextDispID
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- GetNextDispID method
 ms.assetid: 8263d441-85ee-47f4-bdba-fbf2ad07e85f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

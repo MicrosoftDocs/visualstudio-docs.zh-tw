@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHost.GetDeferredText
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentHost::GetDeferredText
+apiname:
+- IDebugDocumentHost.GetDeferredText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentHost::GetDeferredText
 ms.assetid: 527da666-fef5-4db3-a319-e68d466a7721
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

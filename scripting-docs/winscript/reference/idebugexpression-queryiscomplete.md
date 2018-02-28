@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpression.QueryIsComplete
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpression::QueryIsComplete
+apiname:
+- IDebugExpression.QueryIsComplete
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpression::QueryIsComplete
 ms.assetid: 510d62e5-a316-46fb-b23f-d3ba902b295c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugAsyncOperationCallBack.onComplete
-apilocation: jscript.dll
-helpviewer_keywords: IDebugAsyncOperationCallBack::onComplete
+apiname:
+- IDebugAsyncOperationCallBack.onComplete
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugAsyncOperationCallBack::onComplete
 ms.assetid: d4023f5a-41f9-4948-b0dc-3317d61bb783
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

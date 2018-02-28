@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationThread110::GetActiveThreadRequestCount
+helpviewer_keywords:
+- IDebugApplicationThread110::GetActiveThreadRequestCount
 ms.assetid: 025d2072-1d7f-4448-8aa3-38a014313570
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

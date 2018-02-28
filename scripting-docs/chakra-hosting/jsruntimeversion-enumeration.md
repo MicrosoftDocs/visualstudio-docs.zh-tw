@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsRuntimeVersion
-helpviewer_keywords: JsRuntimeVersion enumeration
+f1_keywords:
+- jsrt/JsRuntimeVersion
+helpviewer_keywords:
+- JsRuntimeVersion enumeration
 ms.assetid: 3de69423-3bee-4d20-8ae7-2cf56c848be7
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IMachineDebugManagerCookie.AddApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManagerCookie::AddApplication
+apiname:
+- IMachineDebugManagerCookie.AddApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManagerCookie::AddApplication
 ms.assetid: 4d5503c5-aca9-4cf7-9900-f77bf5f3263d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

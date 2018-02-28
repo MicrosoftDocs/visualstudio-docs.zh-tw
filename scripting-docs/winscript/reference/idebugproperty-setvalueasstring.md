@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugProperty.SetValueAsString
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugProperty::SetValueAsString
+apiname:
+- IDebugProperty.SetValueAsString
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugProperty::SetValueAsString
 ms.assetid: cad8d7b2-19a5-4a29-9000-cafdecdc238b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

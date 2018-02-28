@@ -5,16 +5,18 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: getOwnPropertyDescriptor method [JavaScript]
+helpviewer_keywords:
+- getOwnPropertyDescriptor method [JavaScript]
 ms.assetid: 8f0e1c90-c4f9-44c4-bf76-726bacecbc14
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

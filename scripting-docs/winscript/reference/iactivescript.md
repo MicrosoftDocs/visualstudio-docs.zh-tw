@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScript interface
+helpviewer_keywords:
+- IActiveScript interface
 ms.assetid: d8acee11-7f0d-4999-b97a-66774af16f71
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

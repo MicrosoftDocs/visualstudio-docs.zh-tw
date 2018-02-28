@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScript.AddNamedItem
-apilocation: scrobj.dll
-helpviewer_keywords: AddNamedItem method, IActiveScript interface
+apiname:
+- IActiveScript.AddNamedItem
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- AddNamedItem method, IActiveScript interface
 ms.assetid: a7c6317d-948f-4bb3-b169-1bbe5b7c7cc5
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptErrorDebug.GetStackFrame
-apilocation: jscript.dll
-helpviewer_keywords: IActiveScriptErrorDebug::GetStackFrame
+apiname:
+- IActiveScriptErrorDebug.GetStackFrame
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IActiveScriptErrorDebug::GetStackFrame
 ms.assetid: a6f43102-68c5-46f5-a4df-fa3aaf53a967
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.CreateInstanceAtApplication
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::CreateInstanceAtApplication
+apiname:
+- IRemoteDebugApplication.CreateInstanceAtApplication
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::CreateInstanceAtApplication
 ms.assetid: d669ec80-2182-400d-87cc-7c1753315e5c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetAndClearException
-helpviewer_keywords: JsGetAndClearException function
+f1_keywords:
+- jsrt/JsGetAndClearException
+helpviewer_keywords:
+- JsGetAndClearException function
 ms.assetid: 6aec8a88-41ee-47f6-b5f4-32f3cae6bb7b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

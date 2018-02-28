@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetNullValue
-helpviewer_keywords: JsGetNullValue function
+f1_keywords:
+- jsrt/JsGetNullValue
+helpviewer_keywords:
+- JsGetNullValue function
 ms.assetid: 132a1496-8dfe-4d3c-a8f8-389f5b0b50d2
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

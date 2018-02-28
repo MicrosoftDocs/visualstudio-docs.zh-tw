@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentTextAuthor.InsertText
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentTextAuthor::InsertText
+apiname:
+- IDebugDocumentTextAuthor.InsertText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentTextAuthor::InsertText
 ms.assetid: ef4e6a5b-8efa-4290-b498-c0f8a6aac09b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplicationThread.SynchronousCallIntoThread
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplicationThread::SynchronousCallIntoThread
+apiname:
+- IDebugApplicationThread.SynchronousCallIntoThread
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplicationThread::SynchronousCallIntoThread
 ms.assetid: 8a91157f-dade-418a-ad02-5607ce12c95c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

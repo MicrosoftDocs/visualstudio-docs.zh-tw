@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.SetDocumentAttr
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::SetDocumentAttr
+apiname:
+- IDebugDocumentHelper.SetDocumentAttr
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::SetDocumentAttr
 ms.assetid: bd7ffdbd-de51-477d-bd3f-760db020fe70
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

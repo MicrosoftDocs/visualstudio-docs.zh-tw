@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IProcessDebugManager.AddApplication
-apilocation: pdm.dll
-helpviewer_keywords: IProcessDebugManager::AddApplication
+apiname:
+- IProcessDebugManager.AddApplication
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IProcessDebugManager::AddApplication
 ms.assetid: 73828299-11eb-4c58-ad70-f80f2d0eede8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

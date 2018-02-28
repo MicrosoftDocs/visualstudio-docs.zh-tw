@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnEnterBreakPoint
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnEnterBreakPoint
+apiname:
+- IRemoteDebugApplicationEvents.OnEnterBreakPoint
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnEnterBreakPoint
 ms.assetid: e92a56a3-c462-4a76-8ae8-4b2e6836a711
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

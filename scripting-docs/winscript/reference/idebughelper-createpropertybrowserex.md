@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugHelper.CreatePropertyBrowserEx
-apilocation: pdm.dll
-helpviewer_keywords: IDebugHelper::CreatePropertyBrowserEx
+apiname:
+- IDebugHelper.CreatePropertyBrowserEx
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugHelper::CreatePropertyBrowserEx
 ms.assetid: 87ad322f-09da-4ce8-bb68-0b0bbeec645b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

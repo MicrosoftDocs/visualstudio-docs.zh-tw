@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptStats.ResetStats
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptStats::ResetStats
+apiname:
+- IActiveScriptStats.ResetStats
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptStats::ResetStats
 ms.assetid: d98276fc-ad47-4e7b-aae4-254d63aece77
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

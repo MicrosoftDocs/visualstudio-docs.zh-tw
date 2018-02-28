@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: lbound
+f1_keywords:
+- lbound
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: lbound method
+helpviewer_keywords:
+- lbound method
 ms.assetid: 30ff5e8a-8165-494b-bce8-0a562ec2eec3
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

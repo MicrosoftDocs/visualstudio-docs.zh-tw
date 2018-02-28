@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.FireDebuggerEvent
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::FireDebuggerEvent
+apiname:
+- IDebugApplication.FireDebuggerEvent
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::FireDebuggerEvent
 ms.assetid: fd1f602e-fc15-4158-a6e7-497ff5b4a509
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

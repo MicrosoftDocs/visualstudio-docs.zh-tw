@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnClose
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnClose
+apiname:
+- IRemoteDebugApplicationEvents.OnClose
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnClose
 ms.assetid: 57ef69e0-1ced-480a-a1bf-c91d8d5dd2d2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

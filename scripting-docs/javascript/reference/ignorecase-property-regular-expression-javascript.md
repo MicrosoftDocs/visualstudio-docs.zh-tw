@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: ignoreCase
+f1_keywords:
+- ignoreCase
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: IgnoreCase property
+helpviewer_keywords:
+- IgnoreCase property
 ms.assetid: 816f0df5-5a82-44a5-a4ab-dbc91fa76e61
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

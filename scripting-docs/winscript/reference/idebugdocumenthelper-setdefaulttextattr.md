@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.SetDefaultTextAttr
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::SetDefaultTextAttr
+apiname:
+- IDebugDocumentHelper.SetDefaultTextAttr
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::SetDefaultTextAttr
 ms.assetid: 019a4191-0019-4376-bf70-89b33e7369de
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

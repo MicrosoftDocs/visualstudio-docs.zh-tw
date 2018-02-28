@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '-'
+f1_keywords:
+- '-'
 dev_langs:
 - JavaScript
 - TypeScript
@@ -21,7 +23,7 @@ helpviewer_keywords:
 - arithmetic operators, subtraction
 - operators, subtraction
 ms.assetid: cd0681d3-15cd-49fe-b4dd-e087de55d778
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

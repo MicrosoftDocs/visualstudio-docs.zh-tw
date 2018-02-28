@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThread.Suspend
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplicationThread::Suspend
+apiname:
+- IRemoteDebugApplicationThread.Suspend
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThread::Suspend
 ms.assetid: fd5cc874-2970-4092-b1cd-e638775b0e20
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

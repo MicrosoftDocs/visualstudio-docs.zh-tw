@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumDebugExpressionContexts.Clone
-apilocation: jscript.dll
-helpviewer_keywords: IEnumDebugExpressionContexts::Clone
+apiname:
+- IEnumDebugExpressionContexts.Clone
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IEnumDebugExpressionContexts::Clone
 ms.assetid: c8070ae1-120c-4b5d-bd3d-ae8fca6f9277
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

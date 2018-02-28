@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumDebugPropertyInfo.Next
-apilocation: scrobj.dll
-helpviewer_keywords: IEnumDebugPropertyInfo::Next
+apiname:
+- IEnumDebugPropertyInfo.Next
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IEnumDebugPropertyInfo::Next
 ms.assetid: 052837ac-1599-49cc-9a5a-ba90f992eeff
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateFunction
-helpviewer_keywords: JsCreateFunction function
+f1_keywords:
+- jsrt/JsCreateFunction
+helpviewer_keywords:
+- JsCreateFunction function
 ms.assetid: b298a96a-5ef7-4203-a8c8-55f9bfc6d2bb
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsStringToPointer
-helpviewer_keywords: JsStringToPointer function
+f1_keywords:
+- jsrt/JsStringToPointer
+helpviewer_keywords:
+- JsStringToPointer function
 ms.assetid: c7aa7a09-489d-4435-8f8a-aeb62f8875ae
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.InvokeEx
-apilocation: scrobj.dll
-helpviewer_keywords: InvokeEx method
+apiname:
+- IDispatchEx.InvokeEx
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- InvokeEx method
 ms.assetid: d90783e6-4b89-4423-8a56-a9c8b4b2c813
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IEnumDebugPropertyInfo interface
+helpviewer_keywords:
+- IEnumDebugPropertyInfo interface
 ms.assetid: c5eea4da-8414-408a-a8f6-6a9ca8745868
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

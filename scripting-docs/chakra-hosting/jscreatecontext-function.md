@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateContext
-helpviewer_keywords: JsCreateContext function
+f1_keywords:
+- jsrt/JsCreateContext
+helpviewer_keywords:
+- JsCreateContext function
 ms.assetid: aceca043-2c73-4029-a06c-8ad6695109cf
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsAddRef
-helpviewer_keywords: JsAddRef function
+f1_keywords:
+- jsrt/JsAddRef
+helpviewer_keywords:
+- JsAddRef function
 ms.assetid: a7f3ed49-6a86-489a-abdf-c99428e79cae
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

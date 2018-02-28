@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsDeleteIndexedProperty
-helpviewer_keywords: JsDeleteIndexedProperty function
+f1_keywords:
+- jsrt/JsDeleteIndexedProperty
+helpviewer_keywords:
+- JsDeleteIndexedProperty function
 ms.assetid: cc876839-2ecd-41a8-82d0-c19b3de944e3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

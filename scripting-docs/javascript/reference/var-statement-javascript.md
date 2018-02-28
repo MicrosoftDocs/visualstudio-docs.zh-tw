@@ -5,10 +5,12 @@ ms.date: 01/22/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: var_JavaScriptKeyword
+f1_keywords:
+- var_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - declaring variables, var statement
 - var statement
 ms.assetid: 56f900af-a5c4-4667-9664-5956d30f0aae
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

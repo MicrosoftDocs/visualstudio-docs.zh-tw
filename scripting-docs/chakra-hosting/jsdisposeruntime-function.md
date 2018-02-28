@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsDisposeRuntime
-helpviewer_keywords: JsDisposeRuntime function
+f1_keywords:
+- jsrt/JsDisposeRuntime
+helpviewer_keywords:
+- JsDisposeRuntime function
 ms.assetid: 0aefde3f-7250-48be-afc5-53ea85c12f30
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

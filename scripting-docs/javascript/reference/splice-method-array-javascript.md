@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: splice
+f1_keywords:
+- splice
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: splice method
+helpviewer_keywords:
+- splice method
 ms.assetid: 85fdfb13-e3d9-4c89-b524-3ccee7001c93
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

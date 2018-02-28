@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateRangeError
-helpviewer_keywords: JsCreateRangeError function
+f1_keywords:
+- jsrt/JsCreateRangeError
+helpviewer_keywords:
+- JsCreateRangeError function
 ms.assetid: 0ab05de7-57af-4cfd-9aa5-0a69a893cc97
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

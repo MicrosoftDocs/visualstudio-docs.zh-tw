@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.AddDeferredText
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::AddDeferredText
+apiname:
+- IDebugDocumentHelper.AddDeferredText
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::AddDeferredText
 ms.assetid: 9463cfb0-76cc-45ee-b32c-f37dce2b2e0e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

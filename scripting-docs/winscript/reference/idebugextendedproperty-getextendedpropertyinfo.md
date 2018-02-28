@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExtendedProperty.GetExtendedPropertyInfo
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugExtendedProperty::GetExtendedPropertyInfo
+apiname:
+- IDebugExtendedProperty.GetExtendedPropertyInfo
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugExtendedProperty::GetExtendedPropertyInfo
 ms.assetid: 56edf538-5082-4653-82b6-e6640d6f61ba
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

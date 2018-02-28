@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptDebug.EnumCodeContextsOfPosition
-apilocation: jscript.dll
-helpviewer_keywords: IActiveScriptDebug::EnumCodeContextsOfPosition
+apiname:
+- IActiveScriptDebug.EnumCodeContextsOfPosition
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IActiveScriptDebug::EnumCodeContextsOfPosition
 ms.assetid: 19f44420-bcc8-4c10-8c38-378d96044117
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

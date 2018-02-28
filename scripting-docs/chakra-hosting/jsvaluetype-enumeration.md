@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsValueType
-helpviewer_keywords: JsValueType enumeration
+f1_keywords:
+- jsrt/JsValueType
+helpviewer_keywords:
+- JsValueType enumeration
 ms.assetid: 6645e723-e554-41fc-b622-ab54ee044b3d
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

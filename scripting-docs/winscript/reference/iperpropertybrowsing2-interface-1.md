@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IPerPropertyBrowsing2
-apilocation: scrobj.dll
-helpviewer_keywords: IPerPropertyBrowsing2 interface
+apiname:
+- IPerPropertyBrowsing2
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IPerPropertyBrowsing2 interface
 ms.assetid: 1e50b3f7-cc1c-495a-93c7-3ee03aea0b8a
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

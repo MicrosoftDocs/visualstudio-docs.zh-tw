@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsSetExternalData
-helpviewer_keywords: JsSetExternalData function
+f1_keywords:
+- jsrt/JsSetExternalData
+helpviewer_keywords:
+- JsSetExternalData function
 ms.assetid: 94e0ad34-67d7-4f7f-88a3-3b057ef5e4b9
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

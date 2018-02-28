@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplicationNodeEvents.onRemoveChild
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugApplicationNodeEvents::onRemoveChild
+apiname:
+- IDebugApplicationNodeEvents.onRemoveChild
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugApplicationNodeEvents::onRemoveChild
 ms.assetid: 2e025d29-b8c0-4793-a2d3-c20d548d6386
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

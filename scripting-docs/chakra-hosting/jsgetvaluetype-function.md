@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetValueType
-helpviewer_keywords: JsGetValueType function
+f1_keywords:
+- jsrt/JsGetValueType
+helpviewer_keywords:
+- JsGetValueType function
 ms.assetid: f403cf7c-c8c0-4a17-bfa9-0302d00e760e
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

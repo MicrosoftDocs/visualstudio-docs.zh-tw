@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: DOCUMENTNAMETYPE
-apilocation: scrobj.dll
-helpviewer_keywords: DOCUMENTNAMETYPE enumeration
+apiname:
+- DOCUMENTNAMETYPE
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- DOCUMENTNAMETYPE enumeration
 ms.assetid: d36d550e-efb4-493d-8971-4de267005654
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

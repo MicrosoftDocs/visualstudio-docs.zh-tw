@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IRemoteDebugApplication110 Interface
+helpviewer_keywords:
+- IRemoteDebugApplication110 Interface
 ms.assetid: 785ab46a-8827-41cb-806a-132e6b2c8f47
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

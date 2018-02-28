@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugDocumentTextEvents interface
+helpviewer_keywords:
+- IDebugDocumentTextEvents interface
 ms.assetid: 341b20fd-994c-4030-a06b-6c66ad38c35d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: toLocaleUpperCase
+f1_keywords:
+- toLocaleUpperCase
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: toLocaleUpperCase method
+helpviewer_keywords:
+- toLocaleUpperCase method
 ms.assetid: e927adb6-475e-44b2-91f7-cedda10a39b0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

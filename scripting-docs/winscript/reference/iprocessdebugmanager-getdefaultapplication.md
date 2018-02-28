@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IProcessDebugManager.GetDefaultApplication
-apilocation: pdm.dll
-helpviewer_keywords: IProcessDebugManager::GetDefaultApplication
+apiname:
+- IProcessDebugManager.GetDefaultApplication
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IProcessDebugManager::GetDefaultApplication
 ms.assetid: 6c991faa-ea40-4d18-a1b8-6e7d0de6dd43
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

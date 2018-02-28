@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Active Script Profiling
+helpviewer_keywords:
+- Active Script Profiling
 ms.assetid: eec2f413-6605-4df4-a86f-4919755e9358
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

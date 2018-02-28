@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetCurrentContext
-helpviewer_keywords: JsGetCurrentContext function
+f1_keywords:
+- jsrt/JsGetCurrentContext
+helpviewer_keywords:
+- JsGetCurrentContext function
 ms.assetid: dd5fe0fa-d1e5-4af6-809e-e655a27519b5
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

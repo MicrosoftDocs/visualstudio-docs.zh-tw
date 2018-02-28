@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: Enumerator
+f1_keywords:
+- Enumerator
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Enumerator object
+helpviewer_keywords:
+- Enumerator object
 ms.assetid: 63f03c21-d58c-47db-a728-4d8d88b0a422
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

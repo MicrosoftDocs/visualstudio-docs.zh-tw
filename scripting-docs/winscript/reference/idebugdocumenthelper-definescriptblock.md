@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.DefineScriptBlock
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::DefineScriptBlock
+apiname:
+- IDebugDocumentHelper.DefineScriptBlock
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::DefineScriptBlock
 ms.assetid: e4120377-f04f-44b1-950b-2beba06c9c12
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

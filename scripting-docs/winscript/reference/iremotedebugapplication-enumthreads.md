@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.EnumThreads
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::EnumThreads
+apiname:
+- IRemoteDebugApplication.EnumThreads
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::EnumThreads
 ms.assetid: b4d7294c-1f15-4f7e-bdfd-700e3bf98cea
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

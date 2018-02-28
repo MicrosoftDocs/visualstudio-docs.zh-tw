@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IPerPropertyBrowsing2.GetPredefinedStrings
-apilocation: scrobj.dll
-helpviewer_keywords: IPerPropertyBrowsing2::GetPredefinedStrings
+apiname:
+- IPerPropertyBrowsing2.GetPredefinedStrings
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IPerPropertyBrowsing2::GetPredefinedStrings
 ms.assetid: d2fa30f7-a566-4dbd-8b47-ffdc00419771
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

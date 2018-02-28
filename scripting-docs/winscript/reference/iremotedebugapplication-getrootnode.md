@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplication.GetRootNode
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplication::GetRootNode
+apiname:
+- IRemoteDebugApplication.GetRootNode
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplication::GetRootNode
 ms.assetid: 6c043aba-1dc5-41de-9711-96cde5e040f6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

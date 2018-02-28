@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentContext.GetDocument
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentContext::GetDocument
+apiname:
+- IDebugDocumentContext.GetDocument
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentContext::GetDocument
 ms.assetid: 32db2fea-4938-4644-b39a-8fae05960d1d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

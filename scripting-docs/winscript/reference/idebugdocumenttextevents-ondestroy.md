@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentTextEvents.onDestroy
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentTextEvents::onDestroy
+apiname:
+- IDebugDocumentTextEvents.onDestroy
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentTextEvents::onDestroy
 ms.assetid: 1b7eb341-6bad-403f-9821-19112f8732f3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

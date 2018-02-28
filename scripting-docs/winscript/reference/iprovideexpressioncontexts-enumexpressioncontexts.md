@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IProvideExpressionContexts.EnumExpressionContexts
-apilocation: jscript.dll
-helpviewer_keywords: IProvideExpressionContexts::EnumExpressionContexts
+apiname:
+- IProvideExpressionContexts.EnumExpressionContexts
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IProvideExpressionContexts::EnumExpressionContexts
 ms.assetid: ec5f0065-00df-41e6-b480-4c04ba464872
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

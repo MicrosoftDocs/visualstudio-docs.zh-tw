@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptAuthor.GetLanguageFlags
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptAuthor::GetLanguageFlags
+apiname:
+- IActiveScriptAuthor.GetLanguageFlags
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptAuthor::GetLanguageFlags
 ms.assetid: eb244452-62f7-4a73-b48f-1aa05cbcc32d
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

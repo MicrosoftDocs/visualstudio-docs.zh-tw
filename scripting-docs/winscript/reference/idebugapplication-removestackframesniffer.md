@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.RemoveStackFrameSniffer
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::RemoveStackFrameSniffer
+apiname:
+- IDebugApplication.RemoveStackFrameSniffer
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::RemoveStackFrameSniffer
 ms.assetid: 00304b88-e435-4b87-a331-44e7492eb32d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

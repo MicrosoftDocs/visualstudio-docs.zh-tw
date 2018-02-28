@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
+helpviewer_keywords:
+- IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
 ms.assetid: d901e049-fb1b-4101-a04a-1395d657f1cf
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

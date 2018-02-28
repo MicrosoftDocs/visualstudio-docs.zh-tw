@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEx:RevokeBreak
-apilocation: scrobj.dll
-helpviewer_keywords: IRemoteDebugApplicationEx:RevokeBreak
+apiname:
+- IRemoteDebugApplicationEx:RevokeBreak
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEx:RevokeBreak
 ms.assetid: 1f077860-0a39-4ec9-b676-ae0712819c7b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

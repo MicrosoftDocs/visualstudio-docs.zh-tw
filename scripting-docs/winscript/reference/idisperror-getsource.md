@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispError.GetSource
-apilocation: scrobj.dll
-helpviewer_keywords: IDispError::GetSource
+apiname:
+- IDispError.GetSource
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDispError::GetSource
 ms.assetid: 20def54c-a67c-4102-babf-6f0704e5fc5c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

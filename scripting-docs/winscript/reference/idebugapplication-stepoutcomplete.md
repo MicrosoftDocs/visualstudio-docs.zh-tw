@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.StepOutComplete
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::StepOutComplete
+apiname:
+- IDebugApplication.StepOutComplete
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::StepOutComplete
 ms.assetid: 9675b214-7be5-4cf7-a63f-7865f3c54371
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

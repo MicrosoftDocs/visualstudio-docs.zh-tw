@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentTextEvents.onUpdateTextAttributes
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentTextEvents::onUpdateTextAttributes
+apiname:
+- IDebugDocumentTextEvents.onUpdateTextAttributes
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentTextEvents::onUpdateTextAttributes
 ms.assetid: 24a6d409-3137-4a7a-ac24-0955c109902f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

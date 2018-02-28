@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: Array
+f1_keywords:
+- Array
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - Array object
 - constructor property
 ms.assetid: 08e5f552-0797-4b48-8164-609582fc18c9
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

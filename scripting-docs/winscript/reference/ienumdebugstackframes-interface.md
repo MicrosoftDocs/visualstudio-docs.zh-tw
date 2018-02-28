@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IEnumDebugStackFrames interface
+helpviewer_keywords:
+- IEnumDebugStackFrames interface
 ms.assetid: 13484429-0140-4f4f-8502-3ca2a0553ed4
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEx:GetHostPid
-apilocation: scrobj.dll
-helpviewer_keywords: IRemoteDebugApplicationEx:GetHostPid
+apiname:
+- IRemoteDebugApplicationEx:GetHostPid
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEx:GetHostPid
 ms.assetid: 4cf9f46c-29cf-4201-87f0-5b1ddbed2f2b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

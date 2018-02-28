@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.HandleRuntimeError
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::HandleRuntimeError
+apiname:
+- IDebugApplication.HandleRuntimeError
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::HandleRuntimeError
 ms.assetid: f8f3bbaf-09e5-4d01-8a35-f380bc7ff8ed
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

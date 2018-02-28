@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IEnumDebugExpressionContexts.Reset
-apilocation: jscript.dll
-helpviewer_keywords: IEnumDebugExpressionContexts::Reset
+apiname:
+- IEnumDebugExpressionContexts.Reset
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IEnumDebugExpressionContexts::Reset
 ms.assetid: b471954f-d3b5-4c99-88e1-1de3e3f72c7f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

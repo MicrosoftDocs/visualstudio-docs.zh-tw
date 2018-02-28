@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentTextEvents.onInsertText
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentTextEvents::onInsertText
+apiname:
+- IDebugDocumentTextEvents.onInsertText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentTextEvents::onInsertText
 ms.assetid: 775881de-497a-47a9-86ab-823d77745a72
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

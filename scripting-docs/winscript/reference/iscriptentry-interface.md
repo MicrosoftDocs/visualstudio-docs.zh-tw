@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IScriptEntry interface
+helpviewer_keywords:
+- IScriptEntry interface
 ms.assetid: 86da3bc1-58b7-4d73-87ab-bc3ce34e3f41
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

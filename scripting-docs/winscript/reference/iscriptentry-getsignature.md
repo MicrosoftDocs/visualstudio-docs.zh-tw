@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptEntry.GetSignature
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptEntry::GetSignature
+apiname:
+- IScriptEntry.GetSignature
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptEntry::GetSignature
 ms.assetid: 8cbf37ac-b14c-4e15-a613-06f34857da9b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.DeleteMemberByName
-apilocation: scrobj.dll
-helpviewer_keywords: DeleteMemberByName method
+apiname:
+- IDispatchEx.DeleteMemberByName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- DeleteMemberByName method
 ms.assetid: a01b4e6a-d989-4b29-bb3f-04554f8c39f7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptProfilerCallback2 interface
+helpviewer_keywords:
+- IActiveScriptProfilerCallback2 interface
 ms.assetid: 8f2e62e4-c232-4dc3-a2c0-54dd06298306
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

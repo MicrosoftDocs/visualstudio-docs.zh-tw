@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptNode. CreateChildEntry
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptNode::CreateChildEntry
+apiname:
+- IScriptNode. CreateChildEntry
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptNode::CreateChildEntry
 ms.assetid: b9682505-4457-40e9-8691-235843637506
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

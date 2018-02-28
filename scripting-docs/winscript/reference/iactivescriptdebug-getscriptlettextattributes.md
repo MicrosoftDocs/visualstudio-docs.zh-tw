@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptDebug.GetScriptletTextAttributes
-apilocation: jscript.dll
-helpviewer_keywords: IActiveScriptDebug::GetScriptletTextAttributes
+apiname:
+- IActiveScriptDebug.GetScriptletTextAttributes
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IActiveScriptDebug::GetScriptletTextAttributes
 ms.assetid: b3990d86-5fdf-4c9f-9678-3f4b808c7ca8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

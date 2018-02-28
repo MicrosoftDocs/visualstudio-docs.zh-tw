@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugFormatter.GetStringForVarType
-apilocation: jscript.dll
-helpviewer_keywords: IDebugFormatter::GetStringForVarType
+apiname:
+- IDebugFormatter.GetStringForVarType
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugFormatter::GetStringForVarType
 ms.assetid: 1c1a0499-ca57-47e0-8367-fdb4c902bca3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetExtensionAllowed
-helpviewer_keywords: JsGetExtensionAllowed function
+f1_keywords:
+- jsrt/JsGetExtensionAllowed
+helpviewer_keywords:
+- JsGetExtensionAllowed function
 ms.assetid: 839054a1-d643-47d9-89db-6a015bba0d91
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

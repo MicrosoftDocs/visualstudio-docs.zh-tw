@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: RegularExpression_JavaScript
+f1_keywords:
+- RegularExpression_JavaScript
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - regular expressions, RegExp object
 - RegExp object, overview
 ms.assetid: 346aa83e-a045-47ea-acae-b42c7b121534
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

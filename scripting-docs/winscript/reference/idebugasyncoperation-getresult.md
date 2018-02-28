@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugAsyncOperation.GetResult
-apilocation: pdm.dll
-helpviewer_keywords: IDebugAsyncOperation::GetResult
+apiname:
+- IDebugAsyncOperation.GetResult
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugAsyncOperation::GetResult
 ms.assetid: 56d43365-6b12-4213-a97c-953c40d7b7f6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

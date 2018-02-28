@@ -7,12 +7,16 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: DBGPROP_ATTRIB_FLAGS
-apilocation: scrobj.dll
-f1_keywords: DBGPROP_ATTRIB_FLAGS
-helpviewer_keywords: DBGPROP_ATTRIB_FLAGS
+apiname:
+- DBGPROP_ATTRIB_FLAGS
+apilocation:
+- scrobj.dll
+f1_keywords:
+- DBGPROP_ATTRIB_FLAGS
+helpviewer_keywords:
+- DBGPROP_ATTRIB_FLAGS
 ms.assetid: 90314496-527b-4357-9df8-125a360bf216
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

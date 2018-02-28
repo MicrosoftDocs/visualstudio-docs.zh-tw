@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.SetLongName
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::SetLongName
+apiname:
+- IDebugDocumentHelper.SetLongName
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::SetLongName
 ms.assetid: b6199e5d-9b54-43a2-9775-214b8d022607
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

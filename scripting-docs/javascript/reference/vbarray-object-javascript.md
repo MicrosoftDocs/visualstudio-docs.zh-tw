@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: VBArray
+f1_keywords:
+- VBArray
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: VBArray object constant
+helpviewer_keywords:
+- VBArray object constant
 ms.assetid: f0b767f1-ea8a-4726-962b-2708d4742518
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JS_INVALID_REFERENCE
-helpviewer_keywords: JS_INVALID_REFERENCE constant
+f1_keywords:
+- jsrt/JS_INVALID_REFERENCE
+helpviewer_keywords:
+- JS_INVALID_REFERENCE constant
 ms.assetid: 4fade195-bd4f-4f97-a56e-6b987a7bf729
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

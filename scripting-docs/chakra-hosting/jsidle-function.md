@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsIdle
-helpviewer_keywords: JsIdle function
+f1_keywords:
+- jsrt/JsIdle
+helpviewer_keywords:
+- JsIdle function
 ms.assetid: 372d1c62-8e19-4886-aa33-364cabc09bba
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

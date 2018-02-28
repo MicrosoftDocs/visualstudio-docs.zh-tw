@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: ^=
+f1_keywords:
+- ^=
 dev_langs:
 - JavaScript
 - TypeScript
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - XOR operator
 - ^= operator
 ms.assetid: a6ded216-27b6-4fc4-a51b-7d10cc6f820c
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

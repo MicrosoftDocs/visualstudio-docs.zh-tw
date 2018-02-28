@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsEnableRuntimeExecution
-helpviewer_keywords: JsEnableRuntimeExecution function
+f1_keywords:
+- jsrt/JsEnableRuntimeExecution
+helpviewer_keywords:
+- JsEnableRuntimeExecution function
 ms.assetid: daa2036b-aef6-497d-a8ce-5a006b6ed13f
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: toDateString
+f1_keywords:
+- toDateString
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: toDateString method
+helpviewer_keywords:
+- toDateString method
 ms.assetid: 87d713aa-fd55-4f90-9a30-6df8abdfebe0
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

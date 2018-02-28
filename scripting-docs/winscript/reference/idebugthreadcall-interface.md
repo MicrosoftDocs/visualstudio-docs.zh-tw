@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugThreadCall interface
+helpviewer_keywords:
+- IDebugThreadCall interface
 ms.assetid: 9a9a9892-f310-4ef3-8db2-4f868be52d7e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

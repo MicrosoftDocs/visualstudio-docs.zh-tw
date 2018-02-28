@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsSetRuntimeBeforeCollectCallback
-helpviewer_keywords: JsSetRuntimeBeforeCollectCallback function
+f1_keywords:
+- jsrt/JsSetRuntimeBeforeCollectCallback
+helpviewer_keywords:
+- JsSetRuntimeBeforeCollectCallback function
 ms.assetid: 7b2fb911-6007-4ed9-a307-66cefe590ea4
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

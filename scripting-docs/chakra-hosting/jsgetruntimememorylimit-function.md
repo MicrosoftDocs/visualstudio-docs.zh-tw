@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetRuntimeMemoryLimit
-helpviewer_keywords: JsGetRuntimeMemoryLimit function
+f1_keywords:
+- jsrt/JsGetRuntimeMemoryLimit
+helpviewer_keywords:
+- JsGetRuntimeMemoryLimit function
 ms.assetid: ed81ca60-99fd-46b0-89ae-f6ac07926904
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

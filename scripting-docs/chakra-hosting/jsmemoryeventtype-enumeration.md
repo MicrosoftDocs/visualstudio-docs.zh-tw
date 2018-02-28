@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsMemoryEventType
-helpviewer_keywords: JsMemoryEventType enumeration
+f1_keywords:
+- jsrt/JsMemoryEventType
+helpviewer_keywords:
+- JsMemoryEventType enumeration
 ms.assetid: b4b176b6-b536-472e-8999-95b681a1df55
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugCookie.SetDebugCookie
-apilocation: pdm.dll
-helpviewer_keywords: IDebugCookie::SetDebugCookie
+apiname:
+- IDebugCookie.SetDebugCookie
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugCookie::SetDebugCookie
 ms.assetid: 9cba3b05-ff81-4fb0-9382-e9338cb9192d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

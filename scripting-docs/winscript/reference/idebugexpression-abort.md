@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugExpression.Abort
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpression::Abort
+apiname:
+- IDebugExpression.Abort
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpression::Abort
 ms.assetid: dbdb63c1-6c4a-4cef-bb40-1843495ae167
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

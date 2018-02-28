@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsIsRuntimeExecutionDisabled
-helpviewer_keywords: JsIsRuntimeExecutionDisabled function
+f1_keywords:
+- jsrt/JsIsRuntimeExecutionDisabled
+helpviewer_keywords:
+- JsIsRuntimeExecutionDisabled function
 ms.assetid: 77490280-fb84-4614-a1f0-6ac31e3bd607
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

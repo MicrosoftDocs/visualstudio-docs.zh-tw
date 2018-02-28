@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDispatchEx interface methods
+helpviewer_keywords:
+- IDispatchEx interface methods
 ms.assetid: b6ef88ac-0b95-463f-ad72-3a0dee315356
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

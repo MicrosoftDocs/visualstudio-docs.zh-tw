@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplicationNode.Close
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplicationNode::Close
+apiname:
+- IDebugApplicationNode.Close
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplicationNode::Close
 ms.assetid: ea8db480-2344-4c7b-960c-4fa97fa6c1b7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

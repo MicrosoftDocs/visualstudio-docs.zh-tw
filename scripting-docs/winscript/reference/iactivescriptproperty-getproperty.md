@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptProperty.GetProperty
-apilocation: scrobj.dll
-helpviewer_keywords: GetProperty method, IActiveScriptProperty interface
+apiname:
+- IActiveScriptProperty.GetProperty
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- GetProperty method, IActiveScriptProperty interface
 ms.assetid: a43383db-b148-4d76-83bd-4f0e899b7cb1
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

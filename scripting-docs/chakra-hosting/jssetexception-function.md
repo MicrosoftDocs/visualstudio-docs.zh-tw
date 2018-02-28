@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsSetException
-helpviewer_keywords: JsSetException function
+f1_keywords:
+- jsrt/JsSetException
+helpviewer_keywords:
+- JsSetException function
 ms.assetid: c528793a-2e1b-4ee1-bd2e-e63fd547dc40
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

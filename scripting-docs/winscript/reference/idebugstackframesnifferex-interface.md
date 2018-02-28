@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugStackFrameSnifferEx interface
+helpviewer_keywords:
+- IDebugStackFrameSnifferEx interface
 ms.assetid: fd6cf744-dee7-45f2-9a90-355b90372923
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

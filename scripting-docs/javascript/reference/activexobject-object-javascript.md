@@ -5,10 +5,12 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: ActiveXObject
+f1_keywords:
+- ActiveXObject
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - ActiveXObject object
 - Automation objects, ActiveXObject objects
 ms.assetid: 9c7bed07-853f-48aa-92db-3131324746ec
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

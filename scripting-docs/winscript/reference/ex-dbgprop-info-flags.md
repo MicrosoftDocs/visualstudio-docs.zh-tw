@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: EX_DBGPROP_INFO_FLAGS
-apilocation: scrobj.dll
-helpviewer_keywords: EX_DBGPROP_INFO_FLAGS
+apiname:
+- EX_DBGPROP_INFO_FLAGS
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- EX_DBGPROP_INFO_FLAGS
 ms.assetid: ee309dfe-9432-4dff-8756-7a8d677f9dcc
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

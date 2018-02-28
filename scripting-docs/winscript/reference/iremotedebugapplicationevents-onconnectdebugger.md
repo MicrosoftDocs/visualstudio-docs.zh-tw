@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnConnectDebugger
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnConnectDebugger
+apiname:
+- IRemoteDebugApplicationEvents.OnConnectDebugger
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnConnectDebugger
 ms.assetid: 8c9c19b8-5426-4643-83e6-b68803ff69c4
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

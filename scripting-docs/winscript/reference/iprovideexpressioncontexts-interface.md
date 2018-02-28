@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IProvideExpressionContexts interface
+helpviewer_keywords:
+- IProvideExpressionContexts interface
 ms.assetid: e4c70f2c-7d86-4fdc-a1cb-f5a0bb8ed037
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

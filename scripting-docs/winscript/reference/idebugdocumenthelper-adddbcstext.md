@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugDocumentHelper.AddDBCSText
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::AddDBCSText
+apiname:
+- IDebugDocumentHelper.AddDBCSText
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::AddDBCSText
 ms.assetid: 5e5011b2-bbb4-491b-9a11-eb2846be44aa
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

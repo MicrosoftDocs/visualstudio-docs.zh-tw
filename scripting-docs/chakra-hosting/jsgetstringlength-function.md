@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetStringLength
-helpviewer_keywords: JsGetStringLength function
+f1_keywords:
+- jsrt/JsGetStringLength
+helpviewer_keywords:
+- JsGetStringLength function
 ms.assetid: e9f9f28c-e644-439c-aee5-7ce362f71347
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

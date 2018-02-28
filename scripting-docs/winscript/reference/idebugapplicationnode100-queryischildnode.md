@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationNode100::QueryIsChildNode
+helpviewer_keywords:
+- IDebugApplicationNode100::QueryIsChildNode
 ms.assetid: 4f36f435-0f34-4f9e-bba3-e75285fd7bbb
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

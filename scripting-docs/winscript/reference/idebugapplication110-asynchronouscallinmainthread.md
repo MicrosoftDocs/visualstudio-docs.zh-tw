@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplication110::AsynchronousCallInMainThread
+helpviewer_keywords:
+- IDebugApplication110::AsynchronousCallInMainThread
 ms.assetid: 13b80ff0-4bed-48c1-8031-d4147b51bf6c
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

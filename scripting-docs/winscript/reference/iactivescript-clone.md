@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScript.Clone
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScript_Clone
+apiname:
+- IActiveScript.Clone
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

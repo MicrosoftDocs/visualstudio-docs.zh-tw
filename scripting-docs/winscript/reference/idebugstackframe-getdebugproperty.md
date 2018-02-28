@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugStackFrame.GetDebugProperty
-apilocation: jscript.dll
-helpviewer_keywords: IDebugStackFrame::GetDebugProperty
+apiname:
+- IDebugStackFrame.GetDebugProperty
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugStackFrame::GetDebugProperty
 ms.assetid: e03c7504-bce4-4a44-81e4-db8c0216538d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

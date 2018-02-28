@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IEnumRemoteDebugApplications interface
+helpviewer_keywords:
+- IEnumRemoteDebugApplications interface
 ms.assetid: ceb5fbe7-d131-4352-9dd1-af80acd3f3f7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCollectGarbage
-helpviewer_keywords: JsCollectGarbage function
+f1_keywords:
+- jsrt/JsCollectGarbage
+helpviewer_keywords:
+- JsCollectGarbage function
 ms.assetid: 995c79a5-6e18-45be-81ff-2a5d3348edb8
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

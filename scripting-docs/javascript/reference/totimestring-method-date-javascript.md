@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: toTimeString
+f1_keywords:
+- toTimeString
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: toTimeString method
+helpviewer_keywords:
+- toTimeString method
 ms.assetid: a4a8c0f2-55a9-4e84-94c3-f0a547fb04b5
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

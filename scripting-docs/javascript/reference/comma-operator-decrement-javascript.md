@@ -5,17 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '%2C'
+f1_keywords:
+- '%2C'
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: comma operator
+helpviewer_keywords:
+- comma operator
 ms.assetid: 699fa0bf-cd0a-45ee-a291-2fbed4ecd470
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

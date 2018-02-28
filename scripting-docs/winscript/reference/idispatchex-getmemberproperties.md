@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDispatchEx.GetMemberProperties
-apilocation: scrobj.dll
-helpviewer_keywords: GetMemberProperties method
+apiname:
+- IDispatchEx.GetMemberProperties
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- GetMemberProperties method
 ms.assetid: 20d43209-12e2-472a-9bf3-81eced137b71
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsGetRuntime
-helpviewer_keywords: JsGetRuntime function
+f1_keywords:
+- jsrt/JsGetRuntime
+helpviewer_keywords:
+- JsGetRuntime function
 ms.assetid: 5b62e940-a885-405a-9fdd-0495fb391b95
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

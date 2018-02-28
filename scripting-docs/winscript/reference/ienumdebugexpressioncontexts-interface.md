@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IEnumDebugExpressionContexts interface
+helpviewer_keywords:
+- IEnumDebugExpressionContexts interface
 ms.assetid: 1c11f9ff-c5a6-48b8-a287-0d782513ba55
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

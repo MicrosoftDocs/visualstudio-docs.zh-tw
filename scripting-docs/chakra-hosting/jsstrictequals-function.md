@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsStrictEquals
-helpviewer_keywords: JsStrictEquals function
+f1_keywords:
+- jsrt/JsStrictEquals
+helpviewer_keywords:
+- JsStrictEquals function
 ms.assetid: b35bc655-7ff8-496a-b678-8950bb976047
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

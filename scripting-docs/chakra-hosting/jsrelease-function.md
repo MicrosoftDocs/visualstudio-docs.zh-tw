@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsRelease
-helpviewer_keywords: JsRelease function
+f1_keywords:
+- jsrt/JsRelease
+helpviewer_keywords:
+- JsRelease function
 ms.assetid: 8714fd0b-5b66-48e0-927e-7b93af6cde7b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

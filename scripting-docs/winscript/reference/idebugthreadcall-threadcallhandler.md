@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugThreadCall.ThreadCallHandler
-apilocation: jscript.dll
-helpviewer_keywords: IDebugThreadCall::ThreadCallHandler
+apiname:
+- IDebugThreadCall.ThreadCallHandler
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugThreadCall::ThreadCallHandler
 ms.assetid: c6d5d9db-bfed-44ec-90bc-46637f7de0ab
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

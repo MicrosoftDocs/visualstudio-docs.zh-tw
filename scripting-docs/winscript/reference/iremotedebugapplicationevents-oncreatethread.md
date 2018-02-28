@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnCreateThread
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnCreateThread
+apiname:
+- IRemoteDebugApplicationEvents.OnCreateThread
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnCreateThread
 ms.assetid: 0b7c5181-eda6-4303-b4ae-d45962e8a3d3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

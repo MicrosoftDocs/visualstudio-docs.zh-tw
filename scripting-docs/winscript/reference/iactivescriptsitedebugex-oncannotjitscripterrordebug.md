@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
+apiname:
+- IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 ms.assetid: 83f81476-bf12-47f2-897d-1d37d21137d4
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

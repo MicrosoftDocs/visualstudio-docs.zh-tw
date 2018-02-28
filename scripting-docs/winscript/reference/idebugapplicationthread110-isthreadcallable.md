@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationThread110::IsThreadCallable
+helpviewer_keywords:
+- IDebugApplicationThread110::IsThreadCallable
 ms.assetid: 2a75a366-801d-47e0-bba3-51aa669e03a7
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,10 +7,12 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: jsrt/JsCreateRuntime
-helpviewer_keywords: JsCreateRuntime function
+f1_keywords:
+- jsrt/JsCreateRuntime
+helpviewer_keywords:
+- JsCreateRuntime function
 ms.assetid: 92d09b89-6593-4d73-a562-88f9fec10228
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

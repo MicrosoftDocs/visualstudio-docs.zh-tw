@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: ICanHandleException.CanHandleException
-apilocation: scrobj.dll
-helpviewer_keywords: ICanHandleException::CanHandleException
+apiname:
+- ICanHandleException.CanHandleException
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- ICanHandleException::CanHandleException
 ms.assetid: 0fc703bf-9518-487e-af20-00e073b640f1
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

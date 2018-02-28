@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IDebugApplication.QueryCurrentThreadIsDebuggerThread
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::QueryCurrentThreadIsDebuggerThread
+apiname:
+- IDebugApplication.QueryCurrentThreadIsDebuggerThread
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::QueryCurrentThreadIsDebuggerThread
 ms.assetid: e22ad8a4-a8be-423d-80f2-28256a7448ed
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

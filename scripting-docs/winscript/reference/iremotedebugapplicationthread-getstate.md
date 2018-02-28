@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationThread.GetState
-apilocation: pdm.dll
-helpviewer_keywords: IRemoteDebugApplicationThread::GetState
+apiname:
+- IRemoteDebugApplicationThread.GetState
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationThread::GetState
 ms.assetid: 44503a78-efa9-4fbf-98be-a5dcfa329c5a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

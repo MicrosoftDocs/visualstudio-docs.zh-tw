@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IDebugApplication110::SynchronousCallInMainThread
+helpviewer_keywords:
+- IDebugApplication110::SynchronousCallInMainThread
 ms.assetid: 57475ae5-1520-45ef-800d-ccfc6235a5d1
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

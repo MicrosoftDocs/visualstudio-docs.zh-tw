@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IActiveScriptErrorDebug interface
+helpviewer_keywords:
+- IActiveScriptErrorDebug interface
 ms.assetid: e5d50427-c033-4138-ac6e-3b2dfb3b750a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

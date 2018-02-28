@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptEntry.GetBody
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptEntry::GetBody
+apiname:
+- IScriptEntry.GetBody
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptEntry::GetBody
 ms.assetid: 419c8c11-a1f8-4b97-ab00-e8af2b2f9bfc
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

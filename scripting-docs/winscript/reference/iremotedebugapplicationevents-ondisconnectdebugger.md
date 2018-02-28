@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnDisconnectDebugger
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnDisconnectDebugger
+apiname:
+- IRemoteDebugApplicationEvents.OnDisconnectDebugger
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnDisconnectDebugger
 ms.assetid: ea11cde0-1484-4181-a5dd-a1f6cf788892
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
