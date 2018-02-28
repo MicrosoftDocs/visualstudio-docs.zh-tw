@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IScriptNode interface
+helpviewer_keywords:
+- IScriptNode interface
 ms.assetid: cfa76c4a-6543-48e8-a946-d212cd0bf934
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

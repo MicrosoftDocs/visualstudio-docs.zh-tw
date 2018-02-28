@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IWebAppDiagnosticsObjectInitialization::Initialize
+helpviewer_keywords:
+- IWebAppDiagnosticsObjectInitialization::Initialize
 ms.assetid: 7ccfac28-9f65-4e1c-a0fb-a8a6c7f75b63
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

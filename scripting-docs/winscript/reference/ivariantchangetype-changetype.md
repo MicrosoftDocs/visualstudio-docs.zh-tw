@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IVariantChangeType.ChangeType
-apilocation: scrobj.dll
-helpviewer_keywords: IVariantChangeType::ChangeType
+apiname:
+- IVariantChangeType.ChangeType
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IVariantChangeType::ChangeType
 ms.assetid: 52374764-c42e-49af-a219-ee00c535a118
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

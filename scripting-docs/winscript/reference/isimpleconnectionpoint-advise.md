@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: ISimpleConnectionPoint.Advise
-apilocation: pdm.dll
-helpviewer_keywords: ISimpleConnectionPoint::Advise
+apiname:
+- ISimpleConnectionPoint.Advise
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- ISimpleConnectionPoint::Advise
 ms.assetid: 59ded60d-b938-4110-aca3-e69ba234ca9a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

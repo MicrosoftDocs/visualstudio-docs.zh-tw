@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptScriptlet.GetSubItemName
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptScriptlet::GetSubItemName
+apiname:
+- IScriptScriptlet.GetSubItemName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptScriptlet::GetSubItemName
 ms.assetid: 9ad963fc-9ce8-4b77-92c1-fb90d6307801
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

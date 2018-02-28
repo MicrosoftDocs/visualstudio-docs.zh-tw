@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IWebAppDiagnosticsSetup::DiagnosticsSupported
+helpviewer_keywords:
+- IWebAppDiagnosticsSetup::DiagnosticsSupported
 ms.assetid: 5bbcd0d0-1460-4cf7-bbb1-f4f4a04f739a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

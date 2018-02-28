@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: SOURCE_TEXT_ATTR constants
+helpviewer_keywords:
+- SOURCE_TEXT_ATTR constants
 ms.assetid: 459384b0-1463-4841-a2b3-a993207163bf
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

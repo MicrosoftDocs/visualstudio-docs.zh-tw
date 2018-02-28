@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: TEXT_DOCUMENT_ARRAY Structure
+helpviewer_keywords:
+- TEXT_DOCUMENT_ARRAY Structure
 ms.assetid: 47c08f23-981b-4105-9240-6dfffc6cb91b
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

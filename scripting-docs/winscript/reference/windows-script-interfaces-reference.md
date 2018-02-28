@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: Windows Script interfaces
+helpviewer_keywords:
+- Windows Script interfaces
 ms.assetid: e87b6b8b-e1ec-4280-a1b8-a8ef2f26cf36
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

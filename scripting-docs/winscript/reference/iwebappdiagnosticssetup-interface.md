@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IWebAppDiagnosticsSetup Interface
+helpviewer_keywords:
+- IWebAppDiagnosticsSetup Interface
 ms.assetid: ec7359f2-633e-4d59-b64b-9cab0134dfd0
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

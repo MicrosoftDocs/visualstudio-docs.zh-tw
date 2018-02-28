@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: ISimpleConnectionPoint interface
+helpviewer_keywords:
+- ISimpleConnectionPoint interface
 ms.assetid: f632a82f-942d-4291-963e-e9fa2b162493
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

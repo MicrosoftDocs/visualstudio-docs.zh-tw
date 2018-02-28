@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: SCRIPTSTATE
-apilocation: scrobj.dll
-helpviewer_keywords: SCRIPTSTATE enum
+apiname:
+- SCRIPTSTATE
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- SCRIPTSTATE enum
 ms.assetid: 5f5deb05-c4bb-4964-8077-e624c6b2a14e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

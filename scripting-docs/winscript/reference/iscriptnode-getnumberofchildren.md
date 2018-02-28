@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptNode.GetNumberOfChildren
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptNode::GetNumberOfChildren
+apiname:
+- IScriptNode.GetNumberOfChildren
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptNode::GetNumberOfChildren
 ms.assetid: 3451c7e9-cb50-482e-9038-6e7d7ce1ecdf
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

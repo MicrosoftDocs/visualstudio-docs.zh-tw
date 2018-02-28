@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: SCRIPT_DEBUGGER_OPTIONS Enumeration
+helpviewer_keywords:
+- SCRIPT_DEBUGGER_OPTIONS Enumeration
 ms.assetid: aef41ec0-6f65-48e8-a69e-44b4e4fb929f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

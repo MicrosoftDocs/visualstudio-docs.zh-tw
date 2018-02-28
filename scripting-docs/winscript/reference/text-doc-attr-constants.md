@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: TEXT_DOC_ATTR
-apilocation: scrobj.dll
-helpviewer_keywords: TEXT_DOC_ATTR constants
+apiname:
+- TEXT_DOC_ATTR
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- TEXT_DOC_ATTR constants
 ms.assetid: fd9c53a4-8f73-4c6a-abe5-6b831ecd5b1e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IWebAppDiagnosticsObjectInitialization Interface
+helpviewer_keywords:
+- IWebAppDiagnosticsObjectInitialization Interface
 ms.assetid: 32847838-01d9-4205-a811-3043d8c7a917
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

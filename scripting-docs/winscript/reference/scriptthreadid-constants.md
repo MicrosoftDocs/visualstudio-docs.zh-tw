@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: SCRIPTTHREADID
-apilocation: scrobj.dll
-helpviewer_keywords: SCRIPTTHREADID
+apiname:
+- SCRIPTTHREADID
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- SCRIPTTHREADID
 ms.assetid: 1df9940c-ad0c-42d8-96b9-6a6abe2382e6
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

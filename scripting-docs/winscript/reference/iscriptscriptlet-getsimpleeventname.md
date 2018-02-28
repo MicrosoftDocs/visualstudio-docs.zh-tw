@@ -7,11 +7,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-apiname: IScriptScriptlet. GetSimpleEventName
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptScriptlet::GetSimpleEventName
+apiname:
+- IScriptScriptlet. GetSimpleEventName
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptScriptlet::GetSimpleEventName
 ms.assetid: 012eb555-b26c-4248-bbcc-fc30e6f2b308
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

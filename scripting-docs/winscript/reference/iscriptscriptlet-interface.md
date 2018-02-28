@@ -7,9 +7,10 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: IScriptScriptlet interface
+helpviewer_keywords:
+- IScriptScriptlet interface
 ms.assetid: b9981908-a337-4228-864c-c741f111ab2d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
