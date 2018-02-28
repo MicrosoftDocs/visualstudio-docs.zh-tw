@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.sqlde_sql_executed_but_not_debugged
+f1_keywords:
+- vs.debug.error.sqlde_sql_executed_but_not_debugged
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - SQL
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 793e516c334d39cd7befc82a15e793df44d22f3b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

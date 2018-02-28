@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.sqlde_cant_find_ssdebugps
+f1_keywords:
+- vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - SQL
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0e45c70d8186a178bafe6544bf83dcec1ed35d9d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

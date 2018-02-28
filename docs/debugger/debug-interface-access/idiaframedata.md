@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaFrameData interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaFrameData interface
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9ecbc6d6bd94c3b6ed58b1afe8f1c090aca82e36
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

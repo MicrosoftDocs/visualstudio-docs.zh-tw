@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_upperBoundId method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_upperBoundId method
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8f336c35f9b0f9301a5e61c271b25af2e6ecbd9f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

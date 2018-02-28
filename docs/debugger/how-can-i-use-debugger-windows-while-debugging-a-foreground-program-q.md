@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.background
+f1_keywords:
+- vs.debug.background
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - focus, debugging while observing foreground programs
 - debugging [Visual Studio], foreground programs
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ff822f88873ace2fe264a10dded5c0f0d252f5ef
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

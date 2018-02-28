@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.faq
+f1_keywords:
+- vs.debug.faq
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - debugging [MFC], FAQs
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

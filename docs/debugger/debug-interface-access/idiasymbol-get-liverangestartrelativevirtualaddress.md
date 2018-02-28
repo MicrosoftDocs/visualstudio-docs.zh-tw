@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a30b4d3c4c836737efe0f3de6a99151d4faecbe4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

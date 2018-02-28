@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_undecoratedNameEx method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

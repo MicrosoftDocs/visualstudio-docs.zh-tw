@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.parameters
+f1_keywords:
+- vs.debug.parameters
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - functions [debugger], detecting wrong parameter values
 - parameter values, troubleshooting
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 77c4953840c879a14406003f0bafffe98908cd95
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

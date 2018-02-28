@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.web_server_process_terminated
+f1_keywords:
+- vs.debug.error.web_server_process_terminated
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fb7a0220cf6650aeeb12ec6549d112a39918de3f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

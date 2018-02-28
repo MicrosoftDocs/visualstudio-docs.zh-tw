@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Font dialog box
+helpviewer_keywords:
+- Font dialog box
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7a080d6cff410c09b2efa685703e1195e7d31594
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.enc
+f1_keywords:
+- vs.debug.enc
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - debugging [Visual Studio], Edit and Continue
 - debugger, tools for debugging
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

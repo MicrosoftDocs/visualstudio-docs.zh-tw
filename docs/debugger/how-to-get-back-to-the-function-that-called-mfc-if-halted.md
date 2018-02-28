@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.mfc
+f1_keywords:
+- vs.debug.mfc
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - programs, halting
 - functions [debugger]
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 22ca8a71327f4d561d8fef2c0e2d6cbf82cd9061
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

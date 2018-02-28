@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: Thunk_Ordinal enumeration
+dev_langs:
+- C++
+helpviewer_keywords:
+- Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0911b01bf52bd73cd438be024dab2580c5a94d1f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

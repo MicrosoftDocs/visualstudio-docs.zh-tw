@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.webdbg_debug_verb_blocked
+f1_keywords:
+- vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "10"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d8d16d8fed99696cbefdb81e761d31d2427a20a7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

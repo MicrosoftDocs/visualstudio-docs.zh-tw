@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.stepping
+f1_keywords:
+- vs.debug.stepping
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - stepping, focus
 - windows, troubleshooting activation
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3e5661b3a2d1936b2fa8b0a089be86312fb29704
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

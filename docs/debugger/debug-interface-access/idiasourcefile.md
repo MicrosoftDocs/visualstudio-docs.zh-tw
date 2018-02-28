@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSourceFile interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bab6546336cc7d47c225f0b91d35944763543243
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Expanding and Collapsing Spy++ Trees
+helpviewer_keywords:
+- Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e419adef776c3973ae3d470e97c88483f0d7d0ea
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

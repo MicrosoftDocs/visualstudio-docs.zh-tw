@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.variables.failededit
+f1_keywords:
+- vs.debug.variables.failededit
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - coding, editing in break mode
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

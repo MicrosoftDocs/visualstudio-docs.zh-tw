@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - debugger, setting options
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

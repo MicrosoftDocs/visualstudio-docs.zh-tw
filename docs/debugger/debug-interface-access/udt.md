@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - SymTagUDT symbol
 - user-defined type (UDT) symbol
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - UDT symbol
 - structs [C++]
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a2892a72a07f11a9026b6c76c9e991729b16e1a6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

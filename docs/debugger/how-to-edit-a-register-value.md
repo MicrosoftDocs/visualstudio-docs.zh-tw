@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.register.edit
+f1_keywords:
+- vs.debug.register.edit
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - Registers window, editing register values
 - register values
 ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b9cc839b7829070f5d4c2e9db9da12b6522c21eb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

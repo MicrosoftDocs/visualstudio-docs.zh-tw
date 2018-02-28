@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.firewall.localmachine
+f1_keywords:
+- vs.debug.error.firewall.localmachine
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 160e71e357046b69019323ada5ff9cde006460bc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

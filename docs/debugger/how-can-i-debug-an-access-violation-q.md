@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.access
+f1_keywords:
+- vs.debug.access
 dev_langs:
 - CSharp
 - VB
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - access violation debugging
 - debugging [Visual Studio], access violations
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 24d3eed91a659dc8f0d114369bdba45dd2973375
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -6,12 +6,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.unsafe_func_eval_abort
-caps.latest.revision: "6"
+f1_keywords:
+- vs.debug.error.unsafe_func_eval_abort
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ff5dedb9bf0ffe44ec1a7c031d4c1d0eeeea08ec
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

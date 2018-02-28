@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_isSplitted method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_isSplitted method
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 82197c35a0fc20a2c8562e441c4098aacd495776
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

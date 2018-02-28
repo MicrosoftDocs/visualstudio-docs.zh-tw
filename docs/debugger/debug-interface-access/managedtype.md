@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - SymTagManagedType symbol
 - managed type symbol
 - ManagedType symbol
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 4ba534199433390adfd12babf5bd28449e838ffa
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

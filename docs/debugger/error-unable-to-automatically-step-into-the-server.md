@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.causality_no_server_response
+f1_keywords:
+- vs.debug.error.causality_no_server_response
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: remote debugging, notification error
-caps.latest.revision: "13"
+helpviewer_keywords:
+- remote debugging, notification error
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 890c3e650b656d3c69a574ba477b797ba120c0a6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

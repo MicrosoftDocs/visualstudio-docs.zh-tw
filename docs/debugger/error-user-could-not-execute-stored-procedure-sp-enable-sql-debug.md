@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.sqlde_accessdenied
+f1_keywords:
+- vs.debug.error.sqlde_accessdenied
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5da5a9aa6bc5f2bda382b69223b2b758f576ac29
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

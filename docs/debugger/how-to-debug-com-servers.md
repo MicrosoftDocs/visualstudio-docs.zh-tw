@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.com
+f1_keywords:
+- vs.debug.com
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - debugging [C++], ADI applications
 - container information
 ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

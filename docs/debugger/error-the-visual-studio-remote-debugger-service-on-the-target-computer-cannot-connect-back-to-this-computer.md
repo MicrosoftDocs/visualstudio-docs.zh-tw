@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.service_access_denied_oncallback
+f1_keywords:
+- vs.debug.error.service_access_denied_oncallback
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f4553bceb8757b49c6d21f4bbe85e47f90e5b4dc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
