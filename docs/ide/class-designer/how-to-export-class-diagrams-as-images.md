@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.exportdialog
-helpviewer_keywords: class diagrams, exporting as images
+f1_keywords:
+- vs.classdesigner.exportdialog
+helpviewer_keywords:
+- class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e91b350cf410bf0dcd0c124aad678292f059dbae
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

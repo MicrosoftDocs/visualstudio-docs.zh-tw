@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritanceline
+f1_keywords:
+- vs.classdesigner.inheritanceline
 helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b939da3ae4020cc6412f9b1767d5bef8bce05472
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.Encoding
+f1_keywords:
+- vs.Encoding
 helpviewer_keywords:
 - line breaks
 - encoding
@@ -16,11 +18,12 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8a472a09a4d4d67f59d7879d03b466932d1445e6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

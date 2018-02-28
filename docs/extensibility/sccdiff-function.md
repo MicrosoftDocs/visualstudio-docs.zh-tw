@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccDiff
-helpviewer_keywords: SccDiff function
+f1_keywords:
+- SccDiff
+helpviewer_keywords:
+- SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

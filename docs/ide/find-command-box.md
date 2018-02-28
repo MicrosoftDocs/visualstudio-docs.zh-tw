@@ -7,12 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.findcommandbox
-helpviewer_keywords: Find/Command box
+f1_keywords:
+- vs.findcommandbox
+helpviewer_keywords:
+- Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

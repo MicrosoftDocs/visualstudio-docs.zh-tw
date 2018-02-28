@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bb0922d0d3666d1bb00f01c0151dfa14c24a3931
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

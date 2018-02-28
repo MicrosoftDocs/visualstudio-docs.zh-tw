@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: language services [managed package framework], creating
+helpviewer_keywords:
+- language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

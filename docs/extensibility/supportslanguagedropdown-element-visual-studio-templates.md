@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: be21f7d98a897df6f44208c6224c1db5c56b70e2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

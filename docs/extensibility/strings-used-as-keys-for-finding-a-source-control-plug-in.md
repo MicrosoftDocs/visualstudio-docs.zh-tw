@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: source control plug-ins, strings used for finding
+helpviewer_keywords:
+- source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1acc753d2a02c3be88687a4e42d71d23e988af48
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

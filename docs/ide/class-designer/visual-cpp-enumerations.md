@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Class Designer [Visual Studio], enumerations
+helpviewer_keywords:
+- Class Designer [Visual Studio], enumerations
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ad55c68e16fcd340d69178dc24a4b92cada9e2f3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

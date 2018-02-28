@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.AssociationTypeNotFoundError
+f1_keywords:
+- vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
 - types [Visual Studio], inheritance
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 303e2a9a00804e13d1c6fe37d9e2fe0f659ae460
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

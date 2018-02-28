@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
 - <ProjectTemplateLink> element [Visual Studio Templates]
 - ProjectTemplateLink element [Visual Studio Templates]
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9e614b2ec8ef404ef21e665ac5ae26dd73253f55
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

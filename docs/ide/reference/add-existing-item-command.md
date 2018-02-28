@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: project.addexistingitem
+f1_keywords:
+- project.addexistingitem
 helpviewer_keywords:
 - File.AddExistingItem command
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a94546b8e480a661c175f946cc376fa92b30cbf8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

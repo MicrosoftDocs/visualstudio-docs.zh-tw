@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.associationline
+f1_keywords:
+- vs.classdesigner.associationline
 helpviewer_keywords:
 - types [Visual Studio], associations
 - association lines, defining (Class Designer)
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: aa4c994ffadf04c3205762d0018d18ad14ffd6c5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
 - jlca_Conversion_F1
-helpviewer_keywords: Convert dialog box
+helpviewer_keywords:
+- Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: febbc4e398fb2611a2968c2dbd9a922b12f45e5f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

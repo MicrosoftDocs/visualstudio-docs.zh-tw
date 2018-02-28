@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 192fd3725271e5cf4f68d0e502ea9207b7e89ebb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

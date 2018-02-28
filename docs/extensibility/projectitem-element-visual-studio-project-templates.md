@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], new - customizing the view
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

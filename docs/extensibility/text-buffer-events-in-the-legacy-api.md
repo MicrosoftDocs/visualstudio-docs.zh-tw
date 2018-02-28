@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - text buffer events
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
