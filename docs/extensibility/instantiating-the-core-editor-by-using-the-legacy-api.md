@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - instantiating editor
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e508bda0b22c798246b0f6abf4dfb03c41a92d6d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

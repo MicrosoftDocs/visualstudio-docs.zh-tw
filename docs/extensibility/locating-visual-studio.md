@@ -4,14 +4,17 @@ ms.custom:
 ms.date: 08/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: deployment, VSIX
+helpviewer_keywords:
+- deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

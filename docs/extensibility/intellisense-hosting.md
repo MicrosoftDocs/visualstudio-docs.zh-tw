@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - IntelliSense hosting
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

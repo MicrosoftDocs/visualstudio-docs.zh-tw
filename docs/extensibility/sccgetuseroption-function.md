@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SccGetUserOption
-helpviewer_keywords: SccGetUserOption function
+f1_keywords:
+- SccGetUserOption
+helpviewer_keywords:
+- SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5c23e1fd5614963d8f52edc019e99287187fd9a3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
