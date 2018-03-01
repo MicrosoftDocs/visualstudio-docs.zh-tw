@@ -6,16 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: VS.ToolsOptionsPages.WorkflowDesigner.Themes
+f1_keywords:
+- VS.ToolsOptionsPages.WorkflowDesigner.Themes
 helpviewer_keywords:
 - Options dialog box, workflow themes
 - themes, options
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bd90330c05d8395cf6b5b8dbdfce2c877b570afa
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
-helpviewer_keywords: Rule Condition dialog box
+f1_keywords:
+- System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
+helpviewer_keywords:
+- Rule Condition dialog box
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a4f38bed7fc164fd5283b98afe780bc81a6a7265
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

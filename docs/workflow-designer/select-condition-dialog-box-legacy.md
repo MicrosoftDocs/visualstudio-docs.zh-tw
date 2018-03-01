@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
-helpviewer_keywords: Select Condition dialog box
+f1_keywords:
+- System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
+helpviewer_keywords:
+- Select Condition dialog box
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

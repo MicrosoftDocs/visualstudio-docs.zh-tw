@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
@@ -93,7 +93,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 延伸模組的所有程式庫都必須提供預先編譯的二進位檔。
 
-PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt)，以取得管理 `requirements.txt` 檔案的詳細資料。
+PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](managing-required-packages-with-requirements-txt.md)，以取得管理 `requirements.txt` 檔案的詳細資料。
 
 ## <a name="troubleshooting"></a>疑難排解
 

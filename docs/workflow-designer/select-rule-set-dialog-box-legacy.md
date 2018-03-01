@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
-helpviewer_keywords: Select Rule Set dialog box
+f1_keywords:
+- System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
+helpviewer_keywords:
+- Select Rule Set dialog box
 ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ae62202bc1762cfcf893586291ee735af69d813c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

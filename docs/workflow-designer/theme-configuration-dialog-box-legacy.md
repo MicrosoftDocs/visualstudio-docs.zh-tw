@@ -6,16 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
+f1_keywords:
+- System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
 - themes, configuring
 - Theme Configuration dialog box
 ms.assetid: 9e6d182a-c4d9-4e71-b2b9-02f675fc2b29
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fad771da4643c68b3be08f778ca2db3b8e09c703
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
