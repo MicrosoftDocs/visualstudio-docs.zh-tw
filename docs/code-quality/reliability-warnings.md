@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.reliabilityrules
+f1_keywords:
+- vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
 - warnings, reliability
 - reliability warnings
 - managed code analysis warnings, reliability warnings
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 336548a51b6ee388f81602abca5a1d0421864c18
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

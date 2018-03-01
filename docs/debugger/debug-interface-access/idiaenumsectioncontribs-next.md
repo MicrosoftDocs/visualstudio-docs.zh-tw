@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaEnumSectionContribs::Next method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaEnumSectionContribs::Next method
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4580c677fa5d6757e1fffb28cdc021a3be1e5a58
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

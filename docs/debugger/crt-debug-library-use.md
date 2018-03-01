@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.debug.runtime
+f1_keywords:
+- c.debug.runtime
 dev_langs:
 - CSharp
 - VB
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - DEBUG linker option [C++]
 - /LDd compiler function [C++]
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

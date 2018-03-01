@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.globalizationrules
+f1_keywords:
+- vs.codeanalysis.globalizationrules
 helpviewer_keywords:
 - warnings, globalization
 - globalization warnings
 - globalization [Visual Studio], warnings
 - managed code analysis warnings, globalization warnings
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1de7a644cd22a05ab10001a61bb91b5374211915
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

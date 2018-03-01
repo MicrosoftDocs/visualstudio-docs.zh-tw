@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.Interoperabilityrules
+f1_keywords:
+- vs.codeanalysis.Interoperabilityrules
 helpviewer_keywords:
 - managed code analysis warnings, interoperability warnings
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9d8a0587bdfce2284f4767087c88faab573e04b7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

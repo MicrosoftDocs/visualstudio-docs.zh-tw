@@ -6,7 +6,8 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.datasource.howtoaddcustomcontrol
+f1_keywords:
+- vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
 - Data Sources Window, adding controls
 - controls [Visual Studio], adding to Data Sources Window
@@ -15,12 +16,13 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

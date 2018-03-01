@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.PortabilityRules
+f1_keywords:
+- vs.codeanalysis.PortabilityRules
 helpviewer_keywords:
 - portability warnings
 - managed code analysis warnings, portability warnings
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: efd2d56700c70b27771623e618f61675b174da01
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

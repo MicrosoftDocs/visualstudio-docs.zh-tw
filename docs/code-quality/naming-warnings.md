@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.namingrules
+f1_keywords:
+- vs.codeanalysis.namingrules
 helpviewer_keywords:
 - managed code analysis warnings, naming warnings
 - naming warnings
 - warnings, naming
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f09b82507fd9876f37233c5f2ee4b98aa3b44b88
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

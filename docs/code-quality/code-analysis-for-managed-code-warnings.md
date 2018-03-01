@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.project.vcfxcoptool.enablefxcop
+f1_keywords:
+- vc.project.vcfxcoptool.enablefxcop
 helpviewer_keywords:
 - managed code analyis, warnings
 - warnings, managed code analysis
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 689fe39cfb8a7719efbba15b412800d9dfa78361
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

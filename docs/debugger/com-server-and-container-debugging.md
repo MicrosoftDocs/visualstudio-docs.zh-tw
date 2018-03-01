@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.com
+f1_keywords:
+- vs.debug.com
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - COM [Visual Studio], debugging
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8d1e4ec34b55e9e24c33157446cd74262a640d4f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

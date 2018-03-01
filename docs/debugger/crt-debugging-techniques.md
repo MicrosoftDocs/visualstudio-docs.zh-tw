@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.runtime.debugging
+f1_keywords:
+- c.runtime.debugging
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - CRT, debugging
 - debugging [C++], CRT debug support
 ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 52f1847112741e90634ce0e68acbcfdd11b837db
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

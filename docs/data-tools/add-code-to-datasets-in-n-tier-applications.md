@@ -9,14 +9,16 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: n-tier applications, extending datasets
+helpviewer_keywords:
+- n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

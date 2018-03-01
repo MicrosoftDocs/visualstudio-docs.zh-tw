@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.designrules
+f1_keywords:
+- vs.codeanalysis.designrules
 helpviewer_keywords:
 - design warnings
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1ed7e9109e36255a8c8390d26455d6c3c568e550
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

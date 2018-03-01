@@ -6,7 +6,8 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.data.DataSet
+f1_keywords:
+- vs.data.DataSet
 helpviewer_keywords:
 - untyped datasets
 - datasets [Visual Basic], extended properties
@@ -45,12 +46,13 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
+ms.workload:
+- data-storage
 ms.openlocfilehash: a8c8660fbc489dd8c4926bb09b8b42006da0897a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

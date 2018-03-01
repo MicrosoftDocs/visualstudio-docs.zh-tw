@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.operators
+f1_keywords:
+- vs.debug.operators
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - debugging [C++], expressions
 - native expression evaluator
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1cae22698a0200dc0971f45dbcfd7b28005f8f0c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

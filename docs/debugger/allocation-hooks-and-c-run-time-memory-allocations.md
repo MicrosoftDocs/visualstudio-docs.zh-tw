@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.hooks
+f1_keywords:
+- vs.debug.hooks
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b123e0e03f33f54e6d4fe82313c9a017e3baafff
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,8 +1,8 @@
 ---
 title: "在 Visual Studio 中管理 Python 環境 | Microsoft Docs"
-description: "如何在 Visual Studio 中使用 Python 環境視窗，來針對 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。"
+description: "如何在 Visual Studio 中使用 [Python 環境] 視窗，來為 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,18 +10,17 @@ ms.technology:
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 6abf950f7af86bf65b14752bd1cd9df4a6e292e5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-environments"></a>Python 環境
 
@@ -50,7 +49,7 @@ Python 環境有兩種類型：全域和虛擬。
 
 ### <a name="selecting-and-installing-python-interpreters"></a>選取並安裝 Python 解譯器
 
-根據預設，在 Visual Studio 2017 中安裝 Python 開發工作負載，也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3。 您也可以手動安裝下表中所列出的任何解譯器。
+根據預設，在 Visual Studio 2017 中安裝 Python 開發工作負載，也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3。 您也可以手動安裝下表列出的任何解譯器，然後 Visual Studio 會予以偵測。 (例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。)
 
 針對 Visual Studio 2015 及更早版本，您必須安裝其中一個解譯器。
 
@@ -78,6 +77,9 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 
 上例顯示 Python 3.4 (32 位元 CPython) 已隨 32 位元和 64 位元版本的 IronPython 2.7 安裝。 以粗體顯示的預設環境是 Python 3.4，它會用於所有新專案。 如果未看到列出任何環境，即表示您已安裝 Visual Studio 2015 或更舊版本的 Python Tools for Visual Studio，但尚未安裝 Python 解譯器 (請參閱上述的[選取並安裝 Python 解譯器](#selecting-and-installing-python-interpreters))。 [+ 自訂] 命令可讓您[針對現有的解譯器建立環境](#create-an-environment-for-an-existing-interpreter)。
 
+> [!Tip]
+> Visual Studio 會偵測對現有解譯器的更新，例如使用 python.org 的安裝程式將 Python 2.7.11 升級至 2.7.14。在安裝過程中，較舊的環境會先從 **Python 環境**清單消失，然後更新才會顯示於該位置。
+
 在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 可能會出現另一個控制項，可用來重新整理該環境的 IntelliSense 資料庫。
 
 環境清單下方是本節稍後會說明的 [概觀]、[套件] 和 [IntelliSense] 選項下拉式選取器。 如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用：
@@ -87,9 +89,9 @@ Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄�
 > [!Note]
 > 雖然 Visual Studio 會遵守「系統-站台-套件」選項，但未提供從 Visual Studio 內變更它的方式。
 
-如需在 Visual Studio 中管理環境簡介的影片，請觀看 [管理 Python 環境](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) \(英文\) (Microsoft Virtual Academy，2 分 35 秒)。
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Visual Studio 中之 Python 環境的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (2 分 35 秒)。|
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>為現有的解譯器建立環境
 

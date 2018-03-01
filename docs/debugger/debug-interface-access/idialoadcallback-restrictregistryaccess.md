@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaLoadCallback::RestrictRegistryAccess method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaLoadCallback::RestrictRegistryAccess method
 ms.assetid: de4760c3-a746-4bab-8065-1388fed31b67
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 93c0de729331f4c7b12c55ed3e2a6ded0b4c248b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
-helpviewer_keywords: CA2102
+helpviewer_keywords:
+- CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

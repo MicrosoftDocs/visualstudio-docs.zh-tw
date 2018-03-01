@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 06/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: natvis
-dev_langs: C++
+f1_keywords:
+- natvis
+dev_langs:
+- C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

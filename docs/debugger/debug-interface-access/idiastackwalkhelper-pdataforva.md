@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaStackWalkHelper2::pdataByVA method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaStackWalkHelper2::pdataByVA method
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 251b54ca712078e5252a4a55c9237545e14a7536
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

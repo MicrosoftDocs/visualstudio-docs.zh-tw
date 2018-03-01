@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaEnumSymbolsByAddr::symbolByRVA method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaEnumSymbolsByAddr::symbolByRVA method
 ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d5a29f06cea1624b66dcd09ec78821446cce97b9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaStackWalkFrame::searchForReturnAddressStart method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaStackWalkFrame::searchForReturnAddressStart method
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: cf808f1ee5234fa3cedd7deb9989f7bc63b84dd4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

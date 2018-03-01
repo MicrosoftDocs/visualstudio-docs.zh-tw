@@ -2,26 +2,26 @@
 title: "Visual Studio 中的 Python 支援概觀 (Windows) | Microsoft Docs"
 description: "適用於 Visual Studio 中 Python 之功能 (也稱為「適用於 Visual Studio 的 Python 工具」或 PTVS) 的摘要，包括常見問題集，以及 Visual Studio 版本之間的功能支援對照表。"
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio 中使用 Python (Windows)
 
@@ -50,9 +50,10 @@ Windows 上的 Visual Studio 可透過 Python 開發與資料科學工作負載 
 
 Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，此 SDK 可簡化從 Windows、Mac OS X 和 Linux 應用程式使用 Azure 服務。
 
-如需影片介紹，請觀看 Microsoft Virtual Academy 上的 [Python Tools for Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (適用於 Visual Studio 的 Python 工具) 簡短課程 (共約 22 分鐘)。 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Visual Studio 中之 Python 簡介的影片系列 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (總長 22 分鐘)。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱下列在 Microsoft Virtual Academy 上的影片：<ul><li>[使用 Python 設計程式的簡介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初學者：字串和函式](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基本概念：清單和迴圈](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[前幾大 Python 問題](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>問與答
 
@@ -70,7 +71,7 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 
 ## <a name="features-matrix"></a>功能對照表
 
-您可以下列版本的 Visual Studio 中安裝 Python 支援，如[安裝指南 (英文)](installing-python-support-in-visual-studio.md) 所述：
+您可用下列版本的 Visual Studio 安裝 Python 功能，如[安裝指南](installing-python-support-in-visual-studio.md)所述：
 
 - [Visual Studio 2017 (所有版本)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (所有版本)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +82,8 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 - Visual Studio 2012 (Pro 版或更新版本)
 - Visual Studio 2010 SP1 (Pro 版或更新版本；需要 .NET 4.5)
 
-依 Visual Studio 版本 (Version 和 Edition) 分類的支援功能：
+> [!Important]
+> 只有最新版本的 Visual Studio 具備功能的完整支援與維護。 功能在較舊版本中依然可用，但不會主動維護。
 
 | Python 支援 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +168,8 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 | 遠端偵錯 (Windows、Mac OS X、Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | 偵錯互動式視窗 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | 程式碼剖析 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

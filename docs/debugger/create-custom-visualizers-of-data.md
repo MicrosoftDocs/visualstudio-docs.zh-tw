@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.visualizer.troubleshoot
+f1_keywords:
+- vs.debug.visualizer.troubleshoot
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - debugger, visualizers
 - visualizers
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 23985c56ba61e5a788232523611a48cfde902335
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

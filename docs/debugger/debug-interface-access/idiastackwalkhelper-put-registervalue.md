@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaStackWalkHelper2::put_registerValue method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaStackWalkHelper2::put_registerValue method
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: eec04b3ab02f10d6eb9d745c21d2d0872df0ab8b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

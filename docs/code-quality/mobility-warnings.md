@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codeanalysis.MobilityRules
+f1_keywords:
+- vs.codeanalysis.MobilityRules
 helpviewer_keywords:
 - managed code analysis warnings, mobility warnings
 - mobility warnings
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 36f6bddab2d53e4c76830cf0a88ff4f02dc23a75
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

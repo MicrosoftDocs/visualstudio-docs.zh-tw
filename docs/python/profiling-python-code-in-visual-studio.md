@@ -7,25 +7,25 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f9fb355d35a5c2dcebff6fc1c94c52234e672a0
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="profiling-python-code"></a>分析 Python 程式碼
 
-Visual Studio 支援在使用 CPython 型解譯器時分析 Python 應用程式。
+您可在使用 CPython 型解譯器時分析 Python 應用程式。 (請參閱[功能矩陣：分析](overview-of-python-tools-for-visual-studio.md#matrix-profiling)以了解這項功能在不同版本 Visual Studio 中的可用性。)
 
 若要進行分析，請執行 [分析] > [啟動 Python 分析] 功能表命令，這將會開啟設定對話方塊：
 
@@ -35,9 +35,9 @@ Visual Studio 支援在使用 CPython 型解譯器時分析 Python 應用程式�
 
 ![分析效能報告](media/profiling-results.png)
 
-如需示範，請參閱[分析 Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567) 影片 (Microsoft Virtual Academy，3 分 00 秒)。
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567]
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 分析的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) (3 分 00 秒)。|
 
 ## <a name="profiling-for-ironpython"></a>針對 IronPython 的分析
 
