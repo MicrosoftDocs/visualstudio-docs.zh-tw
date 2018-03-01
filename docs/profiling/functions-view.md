@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.functions
+f1_keywords:
+- vs.performance.view.functions
 helpviewer_keywords:
 - performance reports, functions view
 - Functions view
 - profiling tools reports, Functions view
 - profiling tools, Functions view
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 396b7e99e0850ce5d66436d8b56d21e69ae65ea6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

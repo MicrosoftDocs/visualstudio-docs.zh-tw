@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Visual Studio IntelliTest developer testing tool
+helpviewer_keywords:
+- IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 65f14d96bd495a1b3f8ca138176fbf805fdfeb67
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

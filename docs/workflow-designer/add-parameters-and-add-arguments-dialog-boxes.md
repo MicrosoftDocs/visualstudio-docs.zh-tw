@@ -6,12 +6,14 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: AddParameters.UI
+f1_keywords:
+- AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-caps.latest.revision: "7"
+caps.latest.revision: 
 ms.author: sdanie
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

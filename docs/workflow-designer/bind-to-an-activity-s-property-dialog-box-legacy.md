@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.ComponentModel.Design.ActivityBindForm.UI
-helpviewer_keywords: Bind to an Activity's Property dialog box
+f1_keywords:
+- System.Workflow.ComponentModel.Design.ActivityBindForm.UI
+helpviewer_keywords:
+- Bind to an Activity's Property dialog box
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ed372e54e0e40d06dbd1ecf818f507c1a425ad03
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

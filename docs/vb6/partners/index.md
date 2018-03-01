@@ -2,14 +2,17 @@
 title: "Visual Basic 6.0 合作夥伴優惠 | Microsoft Docs"
 description: "從 Visual Basic 6.0 移轉至 .NET 的合作夥伴優惠。"
 ms.date: 09/01/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 10db1f39ac362d64b0bf5b794695f6f2089f8aca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

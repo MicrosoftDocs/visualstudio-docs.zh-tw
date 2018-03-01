@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 10/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,12 +16,14 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: VB
-ms.workload: multiple
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

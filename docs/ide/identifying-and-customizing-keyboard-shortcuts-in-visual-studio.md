@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Environment.Keyboard
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.Keyboard
 helpviewer_keywords:
 - keyboard shortcuts [Visual Studio], customizing
 - importing shortcut keys [Visual Studio]
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7258a1ba99764fa7af7ce73874f447db99b8b168
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

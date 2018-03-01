@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-help-viewer
+ms.technology:
+- vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: hv_contents
+f1_keywords:
+- hv_contents
 helpviewer_keywords:
 - Help Viewer, table of contents filtering
 - Help Viewer, Contents tab
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesBuildEvents
+f1_keywords:
+- vb.ProjectPropertiesBuildEvents
 helpviewer_keywords:
 - build events
 - build events, specifying
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - Build Events dialog box
 - post-build events
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: da28d0858784a8e71006c0ec072c3aea5110037e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

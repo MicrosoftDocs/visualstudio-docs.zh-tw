@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VSTO.NewFormRegionWizard.OFSPropertyError
+f1_keywords:
+- VSTO.NewFormRegionWizard.OFSPropertyError
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 6ab0b36921911ac8c70501096868f47a40371f79
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

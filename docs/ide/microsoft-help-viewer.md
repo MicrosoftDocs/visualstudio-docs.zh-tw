@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-help-viewer
+ms.technology:
+- vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: hv_general
+f1_keywords:
+- hv_general
 helpviewer_keywords:
 - Microsoft Help Viewer Help
 - Help Viewer, printing a topic
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

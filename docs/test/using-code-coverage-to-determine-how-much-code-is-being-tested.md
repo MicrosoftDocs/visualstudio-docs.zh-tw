@@ -7,14 +7,16 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code coverage
+helpviewer_keywords:
+- code coverage
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

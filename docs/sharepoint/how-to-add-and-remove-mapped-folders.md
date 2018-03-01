@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.SharePointTools.Project.MappedFolder
+f1_keywords:
+- VS.SharePointTools.Project.MappedFolder
 dev_langs:
 - VB
 - CSharp
@@ -19,7 +21,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 29809344ee8a3f446589ba84f2fc47b1cf407582
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

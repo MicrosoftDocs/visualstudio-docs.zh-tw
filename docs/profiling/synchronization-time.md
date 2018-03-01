@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.threads.timeline.synchronization
-helpviewer_keywords: Concurrency Visualizer, Synchronization Time
+f1_keywords:
+- vs.cv.threads.timeline.synchronization
+helpviewer_keywords:
+- Concurrency Visualizer, Synchronization Time
 ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8252bc569ef17725570b5222afa12a59c387c278
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

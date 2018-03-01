@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.cpu.zoom
-helpviewer_keywords: Concurrency Visualizer, Zoom Control (CPU Utilization View)
+f1_keywords:
+- vs.cv.cpu.zoom
+helpviewer_keywords:
+- Concurrency Visualizer, Zoom Control (CPU Utilization View)
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e0a0ec9286131b7e1f9b02633dc782920a24a53e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

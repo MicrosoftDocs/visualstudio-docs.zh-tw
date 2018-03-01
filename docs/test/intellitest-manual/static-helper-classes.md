@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Static helper classes
+helpviewer_keywords:
+- IntelliTest, Static helper classes
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: fe4c855f9fad611dd1131997a86143523f51a80e
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

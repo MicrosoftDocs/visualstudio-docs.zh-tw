@@ -5,10 +5,12 @@ ms.custom:
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.about
+f1_keywords:
+- vs.about
 helpviewer_keywords:
 - install Visual Studio
 - dev15
@@ -18,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

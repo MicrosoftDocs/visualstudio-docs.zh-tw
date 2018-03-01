@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Exploration bounds
+helpviewer_keywords:
+- IntelliTest, Exploration bounds
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 6ddcaaac8d814b1f77351a54de121eb641e7fe49
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

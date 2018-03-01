@@ -6,13 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-helpviewer_keywords: Visual Studio 2005 Extensions for Windows Workflow Foundation
+helpviewer_keywords:
+- Visual Studio 2005 Extensions for Windows Workflow Foundation
 ms.assetid: b60aadee-3bf9-48c3-b2eb-4d5524e927ad
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 373dc0134326b590907d31ee9ab6cb31d534da0d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

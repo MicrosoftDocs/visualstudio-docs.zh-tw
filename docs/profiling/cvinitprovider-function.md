@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cvmarkers/CvInitProvider
-helpviewer_keywords: CvInitProvider method
+f1_keywords:
+- cvmarkers/CvInitProvider
+helpviewer_keywords:
+- CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 15abebb58382674bc7943d7949dfddbc62524c91
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

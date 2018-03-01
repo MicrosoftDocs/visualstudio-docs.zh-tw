@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: IntelliTest, Warnings and errors
+helpviewer_keywords:
+- IntelliTest, Warnings and errors
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 77f47c2d18b43c3ab08dac5fec6281892072ab36
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.lines
+f1_keywords:
+- vs.performance.view.lines
 helpviewer_keywords:
 - profiling tools reports, Line view
 - profiling tools, Line view
 - Lines view
 ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3b645a6cee08f1b27e353f01aaedcbc258d6d98f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

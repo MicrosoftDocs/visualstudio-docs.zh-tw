@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.threads.timeline.multicategory
-helpviewer_keywords: Concurrency Visualizer, Multiple Categories Are Present
+f1_keywords:
+- vs.cv.threads.timeline.multicategory
+helpviewer_keywords:
+- Concurrency Visualizer, Multiple Categories Are Present
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

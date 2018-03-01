@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-help-viewer
+ms.technology:
+- vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: hv_manage
+f1_keywords:
+- hv_manage
 helpviewer_keywords:
 - changing content installation source [Help Viewer]
 - updating local content [Help Viewer]
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

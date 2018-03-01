@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
-helpviewer_keywords: Browse and Select a .NET Type dialog box
+f1_keywords:
+- System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
+helpviewer_keywords:
+- Browse and Select a .NET Type dialog box
 ms.assetid: 1e66c9bc-94b2-46e2-bedf-871752e5f917
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

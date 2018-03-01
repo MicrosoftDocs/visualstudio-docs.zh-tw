@@ -4,18 +4,22 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VST.Project.TargetFrameworkWarning
+f1_keywords:
+- VST.Project.TargetFrameworkWarning
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
+helpviewer_keywords:
+- Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 8cb61186c7e8260578e9b69242c594c198f7e525
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT

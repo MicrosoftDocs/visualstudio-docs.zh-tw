@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.threads.jmc
-helpviewer_keywords: Concurrency Visualizer, Just My Code (Threads View)
+f1_keywords:
+- vs.cv.threads.jmc
+helpviewer_keywords:
+- Concurrency Visualizer, Just My Code (Threads View)
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9993e31b29e25b95d475d15bd8c1190d1ffae6c3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

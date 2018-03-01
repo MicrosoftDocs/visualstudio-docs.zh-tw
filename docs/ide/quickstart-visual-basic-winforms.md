@@ -4,15 +4,18 @@ ms.custom:
 ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-dev_langs: vb
-ms.workload: multiple
+dev_langs:
+- vb
+ms.workload:
+- multiple
 ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

@@ -7,10 +7,12 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: lab environment, test lab
+helpviewer_keywords:
+- lab environment, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: 227068197de1d953ae6f3729888a1b6d2dfc164c
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

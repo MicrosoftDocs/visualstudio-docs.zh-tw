@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/11/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,13 +13,15 @@ f1_keywords:
 - vs.cv.overview
 - vs.cv.performance.gettingstarted
 - vs.cv.gettingstarted
-helpviewer_keywords: Concurrency Visualizer, Concurrency Visualizer
+helpviewer_keywords:
+- Concurrency Visualizer, Concurrency Visualizer
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

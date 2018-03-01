@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.callercallee
+f1_keywords:
+- vs.performance.view.callercallee
 helpviewer_keywords:
 - profiling tools, reports, Caller/Callee view
 - profiling tools, Caller/Callee view
 - performance reports, Caller/Callee view
 - Caller/Callee view
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: edc4c8a497027e21b21b81ccf7943dab8379ab93
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

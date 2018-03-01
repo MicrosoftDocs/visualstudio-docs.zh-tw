@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Environment.Profiles
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.Profiles
 ms.assetid: 4e69f97b-2bd2-4619-a5f9-92ca2e814de3
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1b63f3c74a59630ea762cb1ba37bc192f53e5fcb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT

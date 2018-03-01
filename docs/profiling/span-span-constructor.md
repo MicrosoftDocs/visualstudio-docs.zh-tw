@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cvmarkersobj/Concurrency::diagnostic::span::span
-helpviewer_keywords: Concurrency::diagnostic::span constructor
+f1_keywords:
+- cvmarkersobj/Concurrency::diagnostic::span::span
+helpviewer_keywords:
+- Concurrency::diagnostic::span constructor
 ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d212e5185944bf63d032bd59f40a4a730af9ee6f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
