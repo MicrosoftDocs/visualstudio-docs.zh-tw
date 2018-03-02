@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,43 +15,48 @@ f1_keywords:
 helpviewer_keywords:
 - CA1062
 - ValidateArgumentsOfPublicMethods
-ms.assetid: db1f69ca-68f7-477e-94f3-d135cc5dfcbc
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eb659fa8bfd18d8caf4a7473f6cd53809d0a126b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3661a9475935dbe92dfd55f566170ce46d69f84
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
-|||  
-|-|-|  
-|TypeName|ValidateArgumentsOfPublicMethods|  
-|CheckId|CA1062|  
-|分類|Microsoft.Design|  
-|中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
- 外部可見的方法會對其中一個參考引數不需驗證該引數是否`null`(`Nothing`在 Visual Basic 中)。  
-  
-## <a name="rule-description"></a>規則描述  
- 所有傳遞至外部可見方法的參考引數應經過`null`。 如果可行，會擲回<xref:System.ArgumentNullException>引數是當`null`。  
-  
- 如果可以從未知的組件呼叫方法，因為它宣告為公用或受保護，您應該驗證方法的所有參數。 如果方法設計成只能由已知的組件呼叫中，您應該將方法設為內部，並套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性設定為包含方法的組件。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，驗證每個參考引數的`null`。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 如果您確定取值的參數已由另一個函式中的方法呼叫驗證，您可以隱藏此規則的警告。  
-  
-## <a name="example"></a>範例  
- 下列範例顯示違反規則的方法和滿足規則的方法。  
-  
+
+|||
+|-|-|
+|TypeName|ValidateArgumentsOfPublicMethods|
+|CheckId|CA1062|
+|分類|Microsoft.Design|
+|中斷變更|非中斷|
+
+## <a name="cause"></a>原因
+
+外部可見的方法會對其中一個參考引數不需驗證該引數是否`null`(`Nothing`在 Visual Basic 中)。
+
+## <a name="rule-description"></a>規則描述
+
+所有傳遞至外部可見方法的參考引數應經過`null`。 如果可行，會擲回<xref:System.ArgumentNullException>引數是當`null`。
+
+如果可以從未知的組件呼叫方法，因為它宣告為公用或受保護，您應該驗證方法的所有參數。 如果方法設計成只能由已知的組件呼叫中，您應該將方法設為內部，並套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性設定為包含方法的組件。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+
+若要修正此規則的違規情形，驗證每個參考引數的`null`。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+
+如果您確定取值的參數已由另一個函式中的方法呼叫驗證，您可以隱藏此規則的警告。
+
+## <a name="example"></a>範例
+
+下列範例顯示違反規則的方法和滿足規則的方法。
+
  ```csharp
  using System;
 
@@ -116,96 +122,64 @@ Namespace DesignLibrary
 
 End Namespace
 ```
-  
-## <a name="example"></a>範例  
- 在[!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)]，此規則不會偵測參數，會傳遞至另一個方法，會執行驗證。  
+
+## <a name="example"></a>範例
+
+填入欄位或屬性所參考物件的複製建構函式也可能會違反 CA1062 規則。 因為複製的物件傳遞至複製建構函式可能會發生違規`null`(`Nothing`在 Visual Basic 中)。 若要解決此違規情形，使用靜態 (在 Visual Basic 中的是 Shared) 方法來檢查複製的物件不是 null。
+
+在下列`Person`類別範例`other`物件傳遞至`Person`複製建構函式可能`null`。
 
 ```csharp
-public string Method(string value)
+public class Person
 {
-    EnsureNotNull(value);
+    public string Name { get; private set; }
+    public int Age { get; private set; }
 
-    // Fires incorrectly    
-    return value.ToString();
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+
+    // Copy constructor CA1062 fires because other is dereferenced
+    // without being checked for null
+    public Person(Person other)
+        : this(other.Name, other.Age)
+    {
+    }
+}
+```
+
+## <a name="example"></a>範例
+
+以下修訂`Person`範例中，`other`物件傳遞至複製建構函式，會先檢查中的 null`PassThroughNonNull`方法。
+
+```csharp
+public class Person
+{
+    public string Name { get; private set; }
+    public int Age { get; private set; }
+
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+
+    // Copy constructor
+    public Person(Person other)
+        : this(PassThroughNonNull(other).Name,
+          PassThroughNonNull(other).Age)
+    {
+    }
+
+    // Null check method
+    private static Person PassThroughNonNull(Person person)
+    {
+        if (person == null)
+            throw new ArgumentNullException("person");
+        return person;
+    }
 }
 
-private void EnsureNotNull(string value)
-{
-    if (value == null)
-        throw new ArgumentNullException("value");
-}
-```
-
-```vb
-Public Function Method(ByVal value As String) As String
-    EnsureNotNull(value)
-
-    ' Fires incorrectly    
-    Return value.ToString()
-End Function
-
-Private Sub EnsureNotNull(ByVal value As String)
-    If value Is Nothing Then
-        Throw (New ArgumentNullException("value"))
-    End If
-End Sub
-```
-
-## <a name="example"></a>範例  
- 填入欄位或屬性所參考物件的複製建構函式也可能會違反 CA1062 規則。 因為複製的物件傳遞至複製建構函式可能會發生違規`null`(`Nothing`在 Visual Basic 中)。 若要解決此違規情形，使用靜態 (在 Visual Basic 中的是 Shared) 方法來檢查複製的物件不是 null。  
-  
- 在下列`Person`類別範例`other`物件傳遞至`Person`複製建構函式可能`null`。  
-  
-```csharp  
-public class Person  
-{  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
-  
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
-  
-    // Copy constructor CA1062 fires because other is dereferenced  
-    // without being checked for null  
-    public Person(Person other)  
-        : this(other.Name, other.Age)  
-    {  
-    }  
-}  
-```
-  
-## <a name="example"></a>範例  
- 以下修訂`Person`範例中，`other`物件傳遞至複製建構函式，會先檢查中的 null`PassThroughNonNull`方法。  
-  
-```csharp  
-public class Person  
-{  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
-  
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
-  
-    // Copy constructor  
-    public Person(Person other)  
-        : this(PassThroughNonNull(other).Name,   
-          PassThroughNonNull(other).Age)  
-    {   
-    }  
-  
-    // Null check method  
-    private static Person PassThroughNonNull(Person person)  
-    {  
-        if (person == null)  
-            throw new ArgumentNullException("person");  
-        return person;  
-    }  
-}  
-  
 ```

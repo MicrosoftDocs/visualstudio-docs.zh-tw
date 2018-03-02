@@ -8,17 +8,17 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
-caps.latest.revision: 
+ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5dedb9bf0ffe44ec1a7c031d4c1d0eeeea08ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d0d03efbb844c29195eca7c13303a850c168e0f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤： 評估函式 &#39; 函式 &#39;逾時，需要中止不安全的方式
 
