@@ -43,7 +43,6 @@
 #### [操作說明：收集網站的效能資料](how-to-collect-performance-data-for-a-web-site.md)
 #### [操作說明：手動建立效能工作階段](how-to-manually-create-performance-sessions.md)
 #### [逐步解說：找出效能問題](walkthrough-identifying-performance-problems.md)
-#### [PeopleTrax 範例 (程式碼剖析工具)](peopletrax-sample-profiling-tools.md)
 ### [設定效能工作階段](configuring-performance-sessions.md)
 #### [操作說明：參考 Windows 符號資訊](how-to-reference-windows-symbol-information.md)
 #### [操作說明：選擇收集方法](how-to-choose-collection-methods.md)
