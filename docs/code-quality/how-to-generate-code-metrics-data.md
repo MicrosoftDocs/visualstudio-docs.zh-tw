@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何： 產生程式碼度量資料
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 - 在**程式碼度量結果**視窗中，選擇**計算方案的程式碼度量** 按鈕。
 
-   產生結果和**程式碼度量結果** 視窗隨即顯示。
+產生結果和**程式碼度量結果** 視窗隨即顯示。
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>若要產生程式碼度量結果的一個或多個選取的專案
 
@@ -49,8 +50,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="to-view-the-results-details"></a>若要檢視結果詳細資料
 
-- 在**程式碼度量結果**視窗中，展開樹狀目錄中的**階層**資料行。
+在**程式碼度量結果**視窗中，展開樹狀目錄中的**階層**資料行。
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼度量值](../code-quality/code-metrics-values.md)
+- [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)
+- [程式碼度量值](../code-quality/code-metrics-values.md)

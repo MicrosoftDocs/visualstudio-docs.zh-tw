@@ -1,13 +1,15 @@
 ---
-title: "程式碼在 Visual Studio 中的度量結果 |Microsoft 文件"
+title: "Visual Studio 中的程式碼度量結果視窗 |Microsoft 文件"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codemetrics.output
+f1_keywords:
+- vs.codemetrics.output
 helpviewer_keywords:
 - code metrics results
 - code metrics results window
@@ -15,14 +17,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>使用程式碼度量資料
+# <a name="using-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 
 **程式碼度量結果**視窗會顯示所產生的程式碼度量分析的資料。 如需程式碼度量資料值的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
 
@@ -38,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 
 - 在**檢視**功能表上，選擇**其他視窗** > **程式碼度量結果**。
 
-   **程式碼度量結果**視窗隨即顯示，即使它包含沒有結果。
+**程式碼度量結果**視窗隨即顯示，即使它包含沒有結果。
 
 ### <a name="to-view-code-metrics-details"></a>若要檢視程式碼度量詳細資料
 
@@ -70,7 +73,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 按一下**新增/移除欄位** 按鈕。
 
-     \-或-以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
+     \- 或-以滑鼠右鍵按一下任何欄標題，然後按一下**新增/移除欄位**。
 
 1. 在**新增/移除欄位**對話方塊中，清除核取方塊資料行，您想要移除，然後按一下 **確定**。
 
@@ -128,5 +131,5 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼度量值](../code-quality/code-metrics-values.md)  
-[如何：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)
+- [程式碼度量值](../code-quality/code-metrics-values.md)
+- [如何： 產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)

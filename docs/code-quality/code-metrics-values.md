@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code metrics [Visual Studio]
+helpviewer_keywords:
+- code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -24,9 +26,11 @@ ms.lasthandoff: 12/22/2017
 
 開發人員可以使用 Visual Studio 產生的量值的複雜度和維護的 managed 程式碼的程式碼度量資料。 可以產生整個方案或單一專案的程式碼度量資料。
 
+如需如何在 Visual Studio 中產生程式碼度量資料的資訊，請參閱[如何： 產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)。
+
 ## <a name="software-measurements"></a>軟體測量
 
-下列清單顯示程式碼度量結果[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]計算：
+下列清單顯示的程式碼度量結果，Visual Studio 計算：
 
 - **可維護性指數**-計算表示相對容易維護的程式碼的索引值 0 和 100 之間。 較高的值表示較佳的可維護性。 色彩編碼分級可用來快速找出您的程式碼中的問題點。 綠色的評等是介於 20 到 100 之間，並指出程式碼可維護性良好。 黃色等級介於 10 到 19 之間，並指出程式碼會比較容易維護。 紅色評等是介於 0 到 9 的等級，和表示低可維護性。
 
@@ -49,3 +53,8 @@ ms.lasthandoff: 12/22/2017
 某些軟體工具和編譯器會產生程式碼加入至專案和專案的開發人員看不到或不應隨意變更。 大部分程式碼度量資訊會忽略產生的程式碼計算的度量值時。 這可讓度量值，以反映哪些開發人員可以檢視和變更。
 
 產生適用於 Windows Form 程式碼不會進行忽略，因為它是開發人員可查看與變更的程式碼。
+
+## <a name="next-steps"></a>後續步驟
+
+- [如何： 產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)
+- [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)

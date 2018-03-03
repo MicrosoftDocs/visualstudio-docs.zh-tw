@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：以程式碼分析簽入原則強制程式碼的可維護性
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 強制執行維護的程式碼與程式碼分析簽入原則
 
-開發人員可以使用程式碼度量資訊工具來測量的複雜度和維護的程式碼，但您無法將程式碼度量叫用做為簽入原則的一部分。 不過，您可以啟用程式碼分析規則，以驗證您的程式碼與程式碼度量標準的相容性，並強制執行規則，透過簽入原則。 如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
+開發人員可以使用程式碼度量資訊工具來測量的複雜度和維護的程式碼，但您無法將程式碼度量叫用做為簽入原則的一部分。 不過，您可以啟用程式碼分析規則，以驗證您的程式碼的相容性程式碼度量資訊的標準，並強制執行規則，透過簽入原則。 如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。
 
 您可以啟用的繼承深度、 類別結合程度、 可維護性指數和複雜性規則來強制執行維護的程式碼，透過程式碼分析簽入原則。 這些規則的所有四個程式碼分析原則編輯器中，找到 [可維護性規則] 類別底下。
 
