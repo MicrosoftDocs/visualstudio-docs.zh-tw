@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 246f13b340c0acea519dccd323c1e7b2c28dd344
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3901e9df584ab9acd6bef86825a587026ae1a9e9
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。  
@@ -68,6 +68,6 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ## <a name="see-also"></a>請參閱  
-    [MSBuild ](../msbuild/msbuild.md)
-    [MSBuild Properties](../msbuild/msbuild-properties.md)
- [如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[MSBuild ](../msbuild/msbuild.md)  
+[MSBuild 屬性](../msbuild/msbuild-properties.md)  
+[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -219,7 +219,7 @@ ms.lasthandoff: 02/09/2018
 1. 將目標組態設定為 [發行]，重新建置 C++ 專案，以驗證您的程式碼。 如果發生錯誤，請檢查下列情況：
     - 找不到 Python.h：確認專案屬性中 [C/C++] > [一般] > [其他 Include 目錄] 的路徑指向您的 Python 安裝 `include` 資料夾。
     - 找不到 Python 程式庫：確認專案屬性中 [連結器] > [一般] > [其他程式庫目錄] 的路徑指向您的 Python 安裝 `libs` 資料夾。
-    - 與目標架構相關的連結器錯誤：變更 C++ 目標的專案結構使符合您的 Python 安裝結構。
+    - 與目標架構相關的連結器錯誤：變更 C++ 目標的專案結構使符合您的 Python 安裝結構。 例如，如果您的 C++ 專案以 x64 為目標，但是您的 Python 安裝為 x86，請將 C++ 專案變更為以 x86 為目標。
 
 ## <a name="test-the-code-and-compare-the-results"></a>測試程式碼，並比較結果
 

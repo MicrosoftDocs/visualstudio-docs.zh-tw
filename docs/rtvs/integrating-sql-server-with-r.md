@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
@@ -32,9 +32,9 @@ Visual Studio 對於 SQL Server 有絕佳的支援，可讓資料科學家建立
 > - Visual Studio 2017︰執行 Visual Studio 安裝程式，並選取資料儲存和處理工作負載，包括 SQL Server Data Tools。
 > - Visual Studio 2015：依[下載 SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 中的指示執行。
 
-下列影片 (3 分 03 秒) 簡介 SQL Server 和 R
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需 SQL Server 與 R 的概觀，[請觀看影片 (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) (3 分 03 秒)。 |
 
 ## <a name="creating-and-running-sql-queries"></a>建立和執行 SQL 查詢
 
@@ -65,9 +65,9 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 - [撰寫及測試 SQL 預存程序](#write-and-test-a-sql-stored-procedure)
 - [發行 SQL 預存程序](#publish-a-sql-stored-procedure)
 
-下列影片 (6 分 09 秒) 也會提供這些功能的概觀︰
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需 R 和 SQL 預存程序的概觀，[請觀看影片 (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) (6 分 09 秒). |
 
 ### <a name="add-a-database-connection"></a>新增資料庫連接
 

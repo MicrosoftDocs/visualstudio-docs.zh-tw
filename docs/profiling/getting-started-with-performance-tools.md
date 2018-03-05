@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c18d2ada5f150abe379d3cae7ad830392cb62ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具入門
 本節提供當您使用 Visual Studio 效能工具來收集、檢視和分析程式碼效能時將運用之概念和工作的概觀。  

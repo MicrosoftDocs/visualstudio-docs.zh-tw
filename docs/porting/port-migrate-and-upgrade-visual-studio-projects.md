@@ -1,7 +1,7 @@
 ---
 title: "移植、移轉及升級 Visual Studio 專案 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、移轉及升級 Visual Studio 專案
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 02/15/2018
 | .NET Core 專案 (xproj) | 以 Visual Studio 2015 建立的專案所使用的預覽工具，包含 xproj 專案檔。 當您使用 Visual Studio 2017 開啟 xproj 檔案時，系統會提示您將檔案移轉為 csproj 格式 (會建立 xproj 檔案的備份)。 Visual Studio 2015 和更早版本不支援這種 .NET Core 專案適用的 csproj 格式。  xproj 格式必須移轉為 csproj，才能在 Visual Studio 2017 中受到支援。 如需詳細資訊，請參閱[將 .NET Core 專案移轉至 csproj 格式](/dotnet/core/migration/#visual-studio-2017)。|
 | 已啟用 Application Insights 的 ASP.NET Web 應用程式和 ASP.NET Core Web 應用程式 | 對每位 Visual Studio 使用者來說，資源資訊會儲存在每個使用者執行個體的登錄中。 當使用者未開啟任何專案，而要搜尋 Azure Application Insights 資料時，就會使用此資訊。 Visual Studio 2015 使用的登錄位置和 Visual Studio 2017 不同，因此不會產生衝突。<br/><br/>在使用者建立 ASP.NET Web 應用程式或 ASP.NET Core Web 應用程式之後，資源就會存放在 .suo 檔案中。 只要 Visual Studio 支援在 Visual Studio 2015 和 Visual Studio 2017 中使用專案和解決方案，使用者即可在這兩個版本中開啟專案，資源資訊亦可用於這兩個版本。 使用者必須在每個產品上進行一次驗證。 例如，如果專案是以 Visual Studio 2015 建立並在 Visual Studio 2017 中開啟，則使用者也需要在 Visual Studio 2017 上進行驗證。 |
 | C#/Visual Basic Webform 或 Windows Form | 您可以在 Visual Studio 2017 和 Visual Studio 2015 中開啟專案。 |
-| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2017 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案]。 |
+| 資料庫單元測試專案 (csproj、vbproj) | Visual Studio 2017 可以載入舊版的資料單元測試專案，但會使用 GAC 版本的相依性。 若要升級單元測試專案以使用最新的相依性，請以滑鼠右鍵按一下方案總管，並選取 [轉換成 SQL Server 單元測試專案...]。 |
 | F# | Visual Studio 2017 可以開啟在 Visual Studio 2013 和 Visual Studio 2015 中建立的專案。 不過，若要在這些專案中啟用 Visual Studio 2017 的功能，請開啟專案屬性，並將目標 fsharp.core 變更為 F# 4.1。 另請注意，如果是 .NET 工作負載，則預設不會選取 Visual Studio 安裝程式中的 [F# 語言支援] 選項；您必須包括它，方法是針對工作負載選取該選項，或從 [開發活動] 的 [個別元件] 索引標籤中選取它。 |
 | InstallShield<br/>MSI 安裝程式 | 在 Visual Studio 2010 中建立的安裝程式專案，可以透過 [Visual Studio Installer Projects extension](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects) (Visual Studio 安裝程式專案延伸模組) 的協助在較新版本中開啟。 另請參閱 [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) (WiX 工具組 Visual Studio 2017 延伸模組)。 Visual Studio 不再隨附 InstallShield 限量版。 如需 Visual Studio 2017 的可用性，請參閱 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)。 |
 | LightSwitch | Visual Studio 2017 不再支援 LightSwitch。 在 Visual Studio 2013 或 Visual Studio 2015 中，如果開啟使用 Visual Studio 2012 和更早版本所建立的專案，系統會將該專案升級，並僅可在 Visual Studio 2013 或 Visual Studio 2015 之後的版本中開啟。 |
@@ -68,7 +68,7 @@ ms.lasthandoff: 02/15/2018
 | Silverlight | Visual Studio 2017 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
 | SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援是透過 Visual Studio 組件庫中的兩個延伸模組來提供：[Microsoft Analysis Services 模型專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 SSDT 支援也隨附於 Visual Studio 2017 中的資料儲存和處理工作負載。 |
 | SQL Server Integration Services (SSIS) | 透過 SQL Server Data Tools (SSDT) 可取得 Visual Studio 2017 的支援。 如需詳細資訊，請參閱 [SQL Server Integration Services 部落格](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)。 |
-| Visual C++ | 您可以使用 Visual Studio 2017 依現狀開啟在 Visual Studio 2015 中建立的解決方案和專案。 在舊版 Visual Studio 中建立的專案可能需要升級專案，或重定為較新的工具組，才能使用 Visual Studio 2017 來建置。 如需詳細資訊，請參閱 [Visual C++ 移植和升級指南](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)。 |
+| Visual C++ | 您可以使用 Visual Studio 2017 來處理在較早之前 Visual Studio 版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2017 不會修改專案檔，並且會使用較早 Visual Studio 安裝的工具組來建置您的專案。 這表示如果需要，您仍然可以在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio Lab Management | 您可以使用 Microsoft Test Manager 或 Visual Studio 2010 SP1 和更新版本，開啟在這些版本中建立的環境。 不過，若是 Visual Studio 2010 SP1，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。 |
 | Visual Studio Tools for Apache Cordova | 專案可以在 Visual Studio 2017 中開啟，但不具備回溯相容性。 從 Visual Studio 2015 中開啟專案時，系統會提示您允許對專案進行修改。 此修改會將專案升級為使用工具組 (而不是 `taco.json` 檔案) 來管理 Cordova 程式庫、其平台和外掛程式，以及其節點/npm 相依性的版本控制。 如需詳細資訊，請參閱[移轉指南](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)。 |

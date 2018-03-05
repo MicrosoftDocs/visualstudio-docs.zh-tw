@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.threadblocking
-helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords:
+- vs.performance.view.threadblocking
+helpviewer_keywords:
+- Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d2245ae466948122cbf39225043125b4feec8579
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
-執行緒檢視是並行視覺化檢視中最詳細且功能豐富的檢視。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
+[執行緒檢視] 是 [並行視覺化檢視] 中最詳細且功能最豐富的檢視 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
   
  在設定檔分析期間，並行視覺化檢視會檢查每個應用程式執行緒的所有作業系統內容切換事件。 發生內容切換的原因有很多，例如：  
   
@@ -38,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
  當執行緒正在執行時，並行視覺化檢視會收集範例。 在執行緒檢視中，您可以分析在執行區段期間，哪個程式碼是由一或多個執行緒執行。 您也可以檢查封鎖報表，以及剖析呼叫堆疊樹狀結構執行的報表。  
   
-## <a name="usage"></a>使用方式  
+## <a name="usage"></a>使用量  
  以下是一些您可以使用執行緒檢視的方法︰  
   
 -   找出應用程式的使用者介面 (UI) 在某些執行階段沒有回應的原因。  

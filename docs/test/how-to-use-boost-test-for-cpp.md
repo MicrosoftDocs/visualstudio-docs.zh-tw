@@ -1,7 +1,7 @@
 ---
 title: "如何在 Visual Studio 中使用 C++ 的 Boost.Test | Microsoft Docs"
 ms.custom: 
-ms.date: 01/05/2018
+ms.date: 01/29/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -10,12 +10,13 @@ ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Boost.Test
 
@@ -33,32 +34,40 @@ Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，�
 
 1. 安裝 Boost.Test 動態或靜態程式庫：
 
-    - 執行 `vcpkg install boost-test` 以安裝 Boost.Test 動態程式庫。
+    - 執行 **vcpkg install boost-test** 以安裝 Boost.Test 動態程式庫。
     
        -或-
        
-    - 執行 `vcpkg install boost-test:x86-windows-static` 以安裝 Boost.Test 靜態程式庫。
+    - 執行 **vcpkg install boost-test:x86-windows-static** 以安裝 Boost.Test 靜態程式庫。
 
-1. 執行 `vcpkg integrate install` 設定 Visual Studio 和程式庫，並包含 Boost 標頭和二進位檔的路徑。
+1. 執行 **vcpkg integrate install** 以設定 Visual Studio 和程式庫，並包含 Boost 標頭和二進位檔的路徑。
 
-## <a name="create-a-project-for-your-tests"></a>建立要測試的專案
+## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>加入項目範本 (Visual Studio 2017 15.6 版和更新版本)
 
-> [!NOTE]
-> 在 Visual Studio 2017 15.5 版中，沒有預先設定的測試專案或項目範本可供 Boost.Test 使用。 因此，您必須建立主控台應用程式專案來保存您的測試。 Visual Studio 的未來版本將加入 Boost.Test 的測試範本。
+1. 若要針對您的測試建立 .cpp 檔案，請在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增項目]。 
+ 
+![Boost.Test 項目範本](media/boost_test_item_template.png "Boost.Test 項目範本")
+
+1. 新的檔案包含範例測試方法。 建置您的專案，以便讓 [測試總管] 來探索方法。
+
+項目範本會使用 Boost.Test 的單一標頭變體，但是您可以修改 #include 路徑以使用獨立程式庫變體。 如需詳細資訊，請參閱[新增 include 指示詞](#add_include_directives)。
+
+## <a name="create-a-test-project-visual-studio-2017-version-155"></a>建立測試專案 (Visual Studio 2017 15.5 版)
+
+在 Visual Studio 2017 15.5 版中，沒有預先設定的測試專案或項目範本可供 Boost.Test 使用。 因此，您必須建立並設定主控台應用程式專案來保存您的測試。 
 
 1. 在**方案總管**中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增] > [新增專案]。
 
 1. 在左窗格中選擇 [Visual C++] > [Windows 桌面]，然後選擇 [Windows 主控台應用程式] 範本。
 
 1. 提供專案名稱，然後選擇 [確定]。
+1. 刪除 .cpp 檔案中的 `main` 函式。 
 
-## <a name="link-and-configuration-boost-static-library-only"></a>連結和組態 (僅限 Boost 靜態程式庫)
+1. 如果您是使用 Boost.Test 的單一標頭或動態程式庫版本，請移至[新增 include 指示詞](#add_include_directives)。 如果您是使用靜態程式庫版本，則必須執行一些額外的設定：
 
-設定執行 Boost.Test 測試的專案。
+   a. 若要編輯專案檔，請先卸載它。 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [卸載專案]。 然後，以滑鼠右鍵按一下專案節點，選擇 [編輯 <名稱\>.vcxproj]。
 
-1. 若要編輯專案檔，請先卸載它。 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [卸載專案]。 然後，以滑鼠右鍵按一下專案節點，選擇 [編輯 <名稱\>.vcxproj]。
-
-1. 在 **Globals** 屬性群組中新增兩行，如下所示：
+   b. 在 **Globals** 屬性群組中新增兩行，如下所示：
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -67,19 +76,17 @@ Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，�
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-1. 儲存並關閉 \*.vcxproj 檔案，然後重新載入專案。
+   c.  儲存並關閉 \*.vcxproj 檔案，然後重新載入專案。
 
-1. 若要開啟 [屬性頁]，請以滑鼠右鍵按一下專案節點，選擇 [屬性]。
+   d. 若要開啟 [屬性頁]，請以滑鼠右鍵按一下專案節點，選擇 [屬性]。
 
-1. 展開 [C/C++] > [程式碼產生]，然後選取 [執行階段程式庫]。 為偵錯靜態執行階段程式庫選取 `/MTd`，或為版本靜態執行階段程式庫選取 `/MT`。
+   d. 展開 [C/C++] > [程式碼產生]，然後選取 [執行階段程式庫]。 為偵錯靜態執行階段程式庫選取 **/MTd**，或為版本靜態執行階段程式庫選取 **/MT**。
 
-1. 展開 [連結器] > [系統]。 確認 [子系統] 設為 [主控台]。
+   f. 展開 [連結器] > [系統]。 確認 [子系統] 設為 [主控台]。
 
-1. 選擇 [確定] 關閉屬性頁。
+   g. 選擇 [確定] 關閉屬性頁。
 
 ## <a name="add-include-directives"></a>新增 include 指示詞
-
-1. 如果測試的 .cpp 檔案中有 `main` 函式，請刪除它。
 
 1. 在測試的 .cpp 檔中，新增任何需要的 `#include` 指示詞，以便測試程式碼可以看到程式的類型和函式。 一般而言，此程式會在資料夾階層中上移一層。 如果鍵入 `#include "../"`，即會出現 IntelliSense 視窗，讓您選取標頭檔的完整路徑。
 

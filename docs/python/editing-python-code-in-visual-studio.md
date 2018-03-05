@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 為了改善效能，IntelliSense 仰賴為您專案中的每個 Python 環境所產生的自動完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱 [Python 環境](managing-python-environments-in-visual-studio.md))。 
+IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 為了改善效能，IntelliSense 仰賴為您專案中的每個 Python 環境所產生的自動完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱 [Python 環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
 
 ### <a name="completions"></a>自動完成
 
@@ -57,11 +57,11 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ![具篩選的成員自動完成](media/code-editing-completion-filtering.png)
 
-當您在變數或值之後輸入句點時，會自動顯示成員自動完成內容，並顯示可能類型的方法和屬性。 如果某個變數可以是多個類型，此清單會包含所有類型的所有可能值，以及指出哪些類型支援每項自動完成的額外資訊。 當所有可能的類型都支援自動完成時，將顯示為無註解。
+當您在變數或值之後鍵入句點時，會自動顯示成員自動完成內容，並顯示可能類型的方法和屬性。 如果某個變數可以是多個類型，此清單會包含所有類型的所有可能值，以及指出哪些類型支援每項自動完成的額外資訊。 當所有可能的類型都支援自動完成時，將顯示為無註解。
 
 ![多個類型時的成員自動完成](media/code-editing-completion-types.png)
 
-預設不顯示 "dunder" 成員 (開頭和結尾是雙底線的成員)。 一般情況下，這類成員應該不能直接存取。 但如果您需要這樣的成員，輸入前置雙底線就會將這些自動完成的內容新增至清單：
+預設不顯示 "dunder" 成員 (開頭和結尾是雙底線的成員)。 一般情況下，這類成員應該不能直接存取。 但如果您需要這樣的成員，鍵入前置雙底線就會將這些自動完成的內容新增至清單：
 
 ![私用成員自動完成](media/code-editing-completion-dunder.png)
 
@@ -82,7 +82,7 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ### <a name="signature-help"></a>簽章說明
 
-撰寫呼叫函式的程式碼時，簽章說明會在您輸入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您也可使用 Ctrl + Shift + 空格鍵，讓它出現在函式呼叫中。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
+撰寫呼叫函式的程式碼時，簽章說明會在您鍵入左側 `(` 時顯示，並顯示可用的文件和參數資訊。 您也可使用 Ctrl + Shift + 空格鍵，讓它出現在函式呼叫中。 顯示的資訊取決於函式的原始程式碼中的文件字串，但會包括任何預設值。
 
 ![簽章說明](media/code-editing-signature-help.png)
 
@@ -110,7 +110,7 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ## <a name="code-snippets"></a>程式碼片段
 
-程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab 或使用 [編輯] > [IntelliSense] > [插入程式碼片段範圍陳述式]  命令插入到檔案。 例如，在 Tab 鍵之後輸入 `class` 會產生類別的其餘部分。 您可以在名稱和基底清單上輸入、使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 開始輸入主體。
+程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab 或使用 [編輯] > [IntelliSense] > [插入程式碼片段範圍陳述式]  命令插入到檔案。 例如，在 Tab 鍵之後鍵入 `class` 會產生類別的其餘部分。 您可以在名稱和基底清單上輸入、使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 開始輸入主體。
 
 ![程式碼片段](media/code-editing-code-snippets.png)
 

@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -44,7 +44,7 @@ Visual Studio for Mac 目前不支援 RTVS。
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>在 Visual Studio 2017 中安裝 RTVS
 
-1. 執行 Visual Studio 安裝程式。 (請參閱[下載](https://www.visualstudio.com/downloads/)，如果您還沒有安裝 Visual Studio。)在 Windows 7 上，請確定您的安裝程式已更新，顯示 Visual Studio 版本 *15.2 組建 26430.12* 或更新版本。
+1. 執行 Visual Studio 安裝程式。 (請參閱[下載](https://www.visualstudio.com/downloads/)，如果您還沒有安裝 Visual Studio。)在 Windows 7 上，請確定您的安裝程式已更新為顯示 Visual Studio 2017 15.2 版、組建 26430.12 或更新版本。
 
 1. 選取 [資料科學與分析應用程式] 工作負載：
 
@@ -81,12 +81,12 @@ RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual
 
 離線安裝適用於未連線到網際網路的電腦︰
 
-1. 遵循指示來建立 Visual Studio 版本的離線安裝程式： 
+1. 遵循指示來建立 Visual Studio 版本的離線安裝程式：
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. 針對 Visual Studio 2015，從 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下載離線 RTVS 安裝程式。 
+1. 針對 Visual Studio 2015，從 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下載離線 RTVS 安裝程式。
 
 1. 從離線安裝程式安裝 Visual Studio 和 RTVS。
 

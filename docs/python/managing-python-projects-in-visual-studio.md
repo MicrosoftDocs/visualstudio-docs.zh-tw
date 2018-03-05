@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Python 專案
 
@@ -54,7 +54,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 > [!Tip]
 > 如果您從專案移除選取的啟動檔案，且不選取新的啟動檔案，則執行專案會使得 Python 輸出視窗在出現後立即消失。 如果您遇到這個問題，請確認您已指派啟動檔案。 此外，若要在此情況下讓輸出視窗保持開啟，請以滑鼠右鍵按一下專案，依序選取 [屬性]**、**[偵錯] 索引標籤，然後將 `-i` 加入 [解譯器引數] 欄位。 此引數會導致解譯器在程式完成之後進入互動模式，並在您輸入 Ctrl+Z、Enter 以結束之前保持視窗開啟。
 
-新專案一律會與預設的全域 Python 環境關聯。 若要將專案與不同的環境 (包括虛擬環境) 建立關聯，請在專案中的 [Python Environments (Python 環境)] 節點上按一下滑鼠右鍵，選取 [Add/Remove Python Environments (新增/移除 Python 環境)]，然後選取您想要的環境。 若要變更使用中環境，請以滑鼠右鍵按一下想要的環境，然後選取 [啟用環境]，如下所示。 如需詳細資訊，請參閱 [Python 環境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)。
+新專案一律會與預設的全域 Python 環境關聯。 若要將專案與不同的環境 (包括虛擬環境) 建立關聯，請在專案中的 [Python 環境] 節點上按一下滑鼠右鍵，選取 [新增/移除 Python 環境]，然後選取您想要的環境。 若要變更使用中環境，請以滑鼠右鍵按一下想要的環境，然後選取 [啟用環境]，如下所示。 如需詳細資訊，請參閱[選取專案的環境](selecting-a-python-environment-for-a-project.md)。
 
 ![啟用 Python 專案的環境](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | 範本 | 描述 |
 | --- | --- |
 | [從現有 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
-| Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project)來變更此環境。 |
+| Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
 | [Azure 雲端服務](python-azure-cloud-service-project-template.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
 | [Web 專案](python-web-application-project-templates.md) | 以各種架構 (包括 Bottle、Django、Flask 及 Flask/Jade) 為基礎的 Web 伺服器專案。 |
 | IronPython 應用程式 | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
@@ -136,7 +136,7 @@ Visual Studio 專案支援新增對專案和擴充功能的參考，這些參考
 
 在任何時候，只要更新磁碟上的延伸模組，Visual Studio 就會在背景中重新分析該模組。 此動作不會影響執行階段行為，但在分析完成前，可能會無法使用某些完成。
 
-您可能也需要新增包含該模組之資料夾的[搜尋路徑](managing-python-environments-in-visual-studio.md#search-paths)。
+您可能也需要新增包含該模組之資料夾的[搜尋路徑](search-paths.md)。
 
 ### <a name="net-projects"></a>.NET 專案
 
