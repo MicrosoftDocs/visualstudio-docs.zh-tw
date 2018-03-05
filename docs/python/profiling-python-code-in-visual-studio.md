@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="profiling-python-code"></a>分析 Python 程式碼
 
@@ -38,6 +38,9 @@ ms.lasthandoff: 02/19/2018
 |   |   |
 |---|---|
 | ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 分析的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) (3 分 00 秒)。|
+
+> [!Note]
+> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [\[提供產品意見反應\] 按鈕](#feedback)。
 
 ## <a name="profiling-for-ironpython"></a>針對 IronPython 的分析
 
