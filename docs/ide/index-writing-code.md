@@ -3,33 +3,34 @@ layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "使用 Visual Studio 來撰寫和管理程式碼的文件 | Microsoft Docs"
+title: "使用 Visual Studio 來撰寫和管理程式碼 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 中的程式碼編輯器和其他工具來撰寫、瀏覽、管理及改善您的程式碼。"
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88550be8e6d2d7e226d591a5011da5d3affbb511
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="write-and-manage-code-using-visual-studio-documentation"></a>使用 Visual Studio 來撰寫和管理程式碼的文件
+# <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 
 了解如何使用 Visual Studio 中的程式碼編輯器和其他工具來撰寫、瀏覽、管理及改善您的程式碼。
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
+        <a href="/visualstudio/ide/solutions-and-projects-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
+                            <img src="/media/common/i_code-blocks.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解如何在程式碼編輯器中撰寫和瀏覽程式碼</h3>
+                        <h3>建立方案和專案</h3>
                     </div>
                 </div>
             </div>
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/22/2017
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/4glwwioCVjA?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/22/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>編輯和瀏覽您的程式碼</h3>
+                        <h3>使用程式碼編輯器</h3>
                     </div>
                 </div>
             </div>
@@ -55,89 +56,17 @@ ms.lasthandoff: 12/22/2017
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/pc9vX_4RGV4?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/navigating-code">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
+                            <img src="/media/common/i_agile.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>從原始檔控制開啟專案</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://www.visualstudio.com/docs/git/share-your-code-in-git-vs">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>使用 Git 搭配 Visual Studio 來管理您的程式碼</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/code-snippets">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-samples.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>建立程式碼片段</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/test/improve-code-quality">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-quality.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>提升您程式碼的品質</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/refactoring-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-automate.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>修訂和重組您的程式碼</h3>
+                        <h3>巡覽程式碼</h3>
                     </div>
                 </div>
             </div>
@@ -155,7 +84,43 @@ ms.lasthandoff: 12/22/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>讓 Visual Studio 為您產生一些程式碼</h3>
+                        <h3>產生及修正程式嗎</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_code-samples.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Visual Studio 而不使用專案或方案</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/git/share-your-code-in-git-vs-2017">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_git-mark.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Git 搭配 Visual Studio 來管理您的程式碼</h3>
                     </div>
                 </div>
             </div>
@@ -164,20 +129,117 @@ ms.lasthandoff: 12/22/2017
     </li>
 </ul>
 
----
+## <a name="get-started-with-programming-languages-in-visual-studio"></a>Visual Studio 中的程式設計語言使用者入門
 
-<h2>參考資料</h2>
-<ul class="panelContent cardsW">
+在 Visual Studio 中建立您的第一個應用程式。
+
+<ul class="panelContent cardsFTitle">
     <li>
+        <a href="/visualstudio/ide/tutorial-csharp-aspnet-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <p><a href="/visualstudio/ide/class-view-and-object-browser-icons">類別檢視和物件瀏覽器圖示</a></p>
-                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Visual Studio 參考</a></p>
+                        <h3>Visual Studio 中的 C# 和 ASP.NET 使用者入門</h3>
                     </div>
                 </div>
             </div>
         </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visual Studio 中的 C++ 使用者入門</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-python">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visual Studio 中的 Python 使用者入門</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-visual-basic-console">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Visual Basic 建立主控台應用程式</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>使用 Node.js 建立 Web 應用程式</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/rtvs/getting-started-with-r">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visual Studio R 工具使用者入門</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
     </li>
 </ul>

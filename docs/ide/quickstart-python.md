@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -71,7 +71,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 如需 Falcon 的詳細資訊，請前往 [falconframework.org](https://falconframework.org/)。
 
-請注意，開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 中有許多 Python 專案範本包含 `requirements.txt` 檔案，它會列出範本相依的程式庫。 從這些範本之一建立專案，會觸發建立程式庫安裝所在的虛擬環境。 如需詳細資訊，請參閱 [Python 環境 - 虛擬環境](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments)。
+請注意，開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 中有許多 Python 專案範本包含 `requirements.txt` 檔案，它會列出範本相依的程式庫。 從這些範本之一建立專案，會觸發建立程式庫安裝所在的虛擬環境。 如需詳細資訊，請參閱[使用虛擬環境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 

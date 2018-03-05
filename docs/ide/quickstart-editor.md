@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>快速入門：在編輯器中撰寫程式碼
+# <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
 
 在這個 10 分鐘的編輯器簡介中，我們會將程式碼新增至檔案，以查看 Visual Studio 更輕鬆進行撰寫、導覽和了解程式碼的一些方式。
+
+本快速入門假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/quickstart-cpp.md) 建立主控台應用程式。
 
 ## <a name="create-a-new-code-file"></a>建立新的程式碼檔
 
@@ -70,7 +72,7 @@ Visual Studio 提供有用的程式碼片段，讓您可以用來快速且輕鬆
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -157,11 +159,11 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 ## <a name="see-also"></a>另請參閱
 
-[快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
-[快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
-[快速入門：專案和方案](../ide/quickstart-projects-solutions.md)  
-[程式碼片段](../ide/code-snippets.md)  
-[大綱](../ide/outlining.md)  
-[移至定義和查看定義](../ide/go-to-and-peek-definition.md)  
-[重構](../ide/refactoring-in-visual-studio.md)  
-[使用 IntelliSense](../ide/using-intellisense.md)
+- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+- [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)
+- [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+- [程式碼片段](../ide/code-snippets.md)
+- [大綱](../ide/outlining.md)
+- [移至定義和查看定義](../ide/go-to-and-peek-definition.md)
+- [重構](../ide/refactoring-in-visual-studio.md)
+- [使用 IntelliSense](../ide/using-intellisense.md)

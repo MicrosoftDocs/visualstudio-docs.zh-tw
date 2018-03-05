@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -73,22 +73,22 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新個別使用
 
 Visual Studio 2017 15.3 版中的新功能，如果 Visual Studio 懷疑延伸模組與前一個工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會顯示通知。
 
-**Visual Studio 15.6 版 Preview 3** 中的新功能，如果 Visual Studio 懷疑某延伸模組造成 UI 無回應，則它也會通知您。
+**Visual Studio 2017 15.6 版 Preview 3** 中的新功能會在 Visual Studio 懷疑某擴充功能造成 UI 無回應時，一併通知您。
 
 當顯示這些通知時，您可以略過此通知，或採取下列其中一個動作：
 
 - 選擇 [停用此延伸模組]。 Visual Studio 會停用延伸模組，並可讓您知道是否需要重新啟動系統，以讓停用生效。 想要的話，您可以在 [延伸模組和更新] 對話方塊中重新啟用延伸模組。
 
-- 選擇 [一律不再顯示此訊息]。 
-  - 如果是有關前一個工作階段中當機的通知，當發生與此延伸模組相關的當機時，Visual Studio 將不再顯示通知。 當無回應可能與此延伸模組相關聯，或者當機或無回應可能與其他延伸模組相關聯時，Visual Studio 仍將顯示通知。 
-  - 如果通知與無回應有關，則當此延伸模組於無回應相關聯時，IDE 將不再顯示通知。 Visual Studio 仍將顯示此延伸模組的當機相關通知，以及其他延伸模組的當機與無回應相關通知。 
+- 選擇 [一律不再顯示此訊息]。
+  - 如果是有關前一個工作階段中當機的通知，當發生與此延伸模組相關的當機時，Visual Studio 將不再顯示通知。 當無回應可能與此延伸模組相關聯，或者當機或無回應可能與其他延伸模組相關聯時，Visual Studio 仍將顯示通知。
+  - 如果通知與無回應有關，則當此延伸模組於無回應相關聯時，IDE 將不再顯示通知。 Visual Studio 仍將顯示此延伸模組的當機相關通知，以及其他延伸模組的當機與無回應相關通知。
 
 - 選擇 [深入了解] 返回此頁面。
 
 - 選擇通知結尾的 [X] 按鈕，以關閉通知。 未來與當機或 UI 無回應相關聯之延伸模組的執行個體，將會顯示新的通知。
 
 > [!NOTE]
-> UI 無回應或當機通知表示當 UI 無回應或者發生當機時，延伸模組的其中一個模組是在堆疊上。 這不一定表示延伸模組本身為問題。 有可能是延伸模組呼叫屬於 Visual Studio 一部分的程式碼，而該程式碼會反過來造成無回應 UI 或當機。 不過，如果導致 UI 無回應或當機的延伸模組對您而言不重要，則此通知可能仍然十分有用。 在此情況下，停用延伸模組可避免未來發生 UI 無回應或損毀，而且不會影響產能。 
+> UI 無回應或當機通知表示當 UI 無回應或者發生當機時，延伸模組的其中一個模組是在堆疊上。 這不一定表示延伸模組本身為問題。 有可能是延伸模組呼叫屬於 Visual Studio 一部分的程式碼，而該程式碼會反過來造成無回應 UI 或當機。 不過，如果導致 UI 無回應或當機的延伸模組對您而言不重要，則此通知可能仍然十分有用。 在此情況下，停用延伸模組可避免未來發生 UI 無回應或損毀，而且不會影響產能。
 
 ## <a name="sample-master-copies-and-working-copies"></a>範例主複本與工作複本
 

@@ -14,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -80,8 +80,8 @@ ms.lasthandoff: 02/19/2018
 
 |**進一步了解**|
 |--------------------|
-|[了解通用 Windows 應用程式](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows 開發人員中心)|
-|[建置您的第一個應用程式](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows 開發人員中心)|
+|[通用 Windows 平台簡介](/windows/uwp/get-started/universal-application-platform-guide)|
+|[建立您的第一個應用程式](/windows/uwp/get-started/your-first-app)|
 |[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[將應用程式移轉至通用 Windows 平台 (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
@@ -160,7 +160,7 @@ ms.lasthandoff: 02/19/2018
 |[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
 |[了解 Unity](http://unity3d.com/) (Unity 網站)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  - [將 Office 365 API 新增至 Visual Studio 專案](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
  - [Azure App Service - Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/)
  - [適用於行動裝置的 HockeyApp](https://azure.microsoft.com/en-us/services/hockeyapp/)
