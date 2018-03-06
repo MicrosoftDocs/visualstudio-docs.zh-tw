@@ -1,5 +1,5 @@
 ---
-title: "模數指派運算子 (JavaScript) |Microsoft 文件"
+title: "餘數設定運算子 (JavaScript) |Microsoft 文件"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -17,20 +17,20 @@ dev_langs:
 - DHTML
 helpviewer_keywords:
 - '%= operator [JavaScript]'
-- modulus assignment operator [JavaScript]
+- remainder assignment operator [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: 9147ffbc-b598-4c44-b8f3-7b57914f6e9f
 caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61a0fda53b50146f25a8e9c2e04dba9490c494c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be7db43931374a71672c42ae059767585a9a5757
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="modulus-assignment-operator--javascript"></a>模數指派運算子 (JavaScript)
+# <a name="remainder-assignment-operator--javascript"></a>餘數設定運算子 (JavaScript)
 將變數值除以運算式的值，然後將餘數指派給變數。  
   
 ## <a name="syntax"></a>語法  
@@ -57,7 +57,7 @@ result = result % expression
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## <a name="see-also"></a>另請參閱  
- [模數運算子](../../javascript/reference/modulus-operator-decrementjavascript.md)   
+## <a name="see-also"></a>請參閱  
+ [餘數運算子](../../javascript/reference/modulus-operator-decrementjavascript.md)   
  [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)   
  [運算子摘要 (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

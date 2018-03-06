@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>JavaScript 版本資訊
 不同的 JavaScript 版本支援不同的 JavaScript 項目集。 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 應用程式與 Internet Explorer 支援的功能集略有不同。  
@@ -37,11 +37,11 @@ ms.lasthandoff: 10/27/2017
  下表列出支援特定語言項目的 Internet Explorer 文件模式 (以及代表 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 和 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]的市集應用程式)。 支援特定項目的文件模式會以字母 **Y**表示，而不支援特定項目的文件模式則會以字母 **N**表示。  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Windows 10 中的 Edge 瀏覽器) 不包含支援舊版文件模式。 從 Windows Phone 8.1 開始的 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] 應用程式支援這種模式。 實驗功能 (關於： flags) 以"exp 表示。  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] （在 Windows 10 中的 edge 瀏覽器） 不包含支援舊版文件模式。 從 Windows Phone 8.1 開始的 [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] 應用程式支援這種模式。 實驗功能 (關於： flags) 以"exp 表示。  
   
  此表格包含摘要資訊。 如需特定資訊，請參閱語言項目的文件。  
   
-|語言項目|Quirks、Internet Explorer 6 標準、Internet Explorer 7 標準|Internet Explorer 8 標準|Internet Explorer 9 標準|Internet Explorer 10 標準|Internet Explorer 11 標準|邊緣|市集應用程式|  
+|語言項目|Quirks、Internet Explorer 6 標準、Internet Explorer 7 標準|Internet Explorer 8 標準|Internet Explorer 9 標準|Internet Explorer 10 標準|Internet Explorer 11 標準|Edge|市集應用程式|  
 |----------------------|--------------------------------------------------------------------------|-----------------------------------|-----------------------------------|------------------------------------|------------------------------------|----------|----------------|  
 |[__proto\_ \_屬性 (Object)](../../javascript/reference/proto-property-object-javascript.md)|N|N|N|N|Y|Y|v8 (Win): N<br />v8.1 (Win): Y<br />v8.1 (Phone): Y|  
 |[$1...$9 Properties (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -262,8 +262,8 @@ ms.lasthandoff: 10/27/2017
 |[message 屬性](../../javascript/reference/message-property-error-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[min 函式](../../javascript/reference/math-min-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[MIN_VALUE 常數](../../javascript/reference/number-constants-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[模數指派運算子 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[模數運算子 (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[餘數設定運算子 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[餘數運算子 （%）](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveFirst 方法](../../javascript/reference/movefirst-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveNext 方法](../../javascript/reference/movenext-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[multiline 屬性](../../javascript/reference/multiline-property-regular-expression-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -412,7 +412,7 @@ ms.lasthandoff: 10/27/2017
 |[write 函式](../../javascript/reference/debug-write-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[writeln 函式](../../javascript/reference/debug-writeln-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
   
- \*支援 DOM 物件，但沒有使用者定義的物件。 `enumerable` 和 `configurable` 屬性都可以指定，但是不會使用。  
+ \* 支援 DOM 物件，但沒有使用者定義的物件。 `enumerable` 和 `configurable` 屬性都可以指定，但是不會使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Defining Document Compatibility (定義文件相容性)](http://go.microsoft.com/fwlink/?LinkId=208537)

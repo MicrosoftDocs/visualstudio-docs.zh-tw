@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27be497a62a21aa8dc222c96539a48f7e5d62425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e99ead2f921f5247757192bcb3330aa4ebca8d7
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-operators"></a>JavaScript 運算子
 下表列出 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 物件。  
@@ -67,8 +67,8 @@ ms.lasthandoff: 10/27/2017
 |針對兩個運算式執行邏輯結合運算。|[邏輯 AND 運算子 (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|  
 |在運算式上執行邏輯否定運算。|[邏輯 NOT 運算子 (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|  
 |針對兩個運算式執行邏輯分離。|[邏輯 OR 運算子 (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|  
-|將變數值除以運算式的值，然後將餘數指派給變數。|[模數指派運算子 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
-|兩數相除並傳回餘數。|[模數運算子 (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
+|將變數值除以運算式的值，然後將餘數指派給變數。|[餘數設定運算子 (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|  
+|兩數相除並傳回餘數。|[餘數運算子 （%）](../../javascript/reference/modulus-operator-decrementjavascript.md)|  
 |將變數值乘以運算式的值，然後將結果指派給此變數。|[乘法設定運算子 (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|  
 |將兩個數字相乘。|[乘法運算子 (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|  
 |建立新的物件。|[new 運算子](../../javascript/reference/new-operator-decrementjavascript.md)|  
@@ -83,5 +83,5 @@ ms.lasthandoff: 10/27/2017
 |在運算式中執行不帶正負號的位元右移。|[不帶正負號的右移運算子 (>>>)](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|  
 |避免運算式傳回值。|[void 運算子](../../javascript/reference/void-operator-decrementjavascript.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)
