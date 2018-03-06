@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -147,7 +150,7 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
 
 - 當在中斷點暫停時，將滑鼠停留在陳述式`c1.AddLast(20)`直到綠色**按一下執行**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")隨即出現，並再按下**按一下執行** 按鈕。
 
-    ![按一下 [執行](../debugger/media/dbg-qs-run-to-click-csharp.png "執行]，按一下")
+    ![按一下 \[執行](../debugger/media/dbg-qs-run-to-click-csharp.png "執行\]，按一下")
 
     在應用程式繼續執行時，呼叫`doWork`，並在您按下按鈕的程式碼行上暫停。
 

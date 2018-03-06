@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -179,7 +181,7 @@ ms.lasthandoff: 01/10/2018
 #####   
 1. 在 [ **方案總管**] 中，依序展開 [ **OfficeAddInSetup** ] 專案節點、[ **Specify Application Data** ] 節點，然後選擇 **Redistributables** 檔案，如下圖所示。  
   
-   ![在 [方案總管的可轉散發檔案](../vsto/media/installshield-redistributablesfile.png "方案總管] 中的可轉散發檔案")  
+   ![在 方案總管的可轉散發檔案](../vsto/media/installshield-redistributablesfile.png "方案總管 中的可轉散發檔案")  
   
 2. 在功能表列上選擇 [ **檢視**]、[ **開啟**]。  
   
