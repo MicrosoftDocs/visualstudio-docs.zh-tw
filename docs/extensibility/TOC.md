@@ -188,6 +188,7 @@
 ## [如何︰在背景中使用 AsyncPackage 載入 VSPackage](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [如何︰針對 Visual Studio 擴充功能使用合乎規則的 UI 內容](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [如何︰診斷擴充功能的效能](how-to-diagnose-extension-performance.md)
+## [如何：診斷延伸模組造成的 UI 延遲](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [針對 VSPackage 進行疑難排解](troubleshooting-vspackages.md)
 # [Shell (整合模式或獨立模式)](https://vspartner.com/pages/vsshells)
 # [推出 Visual Studio 擴充功能](shipping-visual-studio-extensions.md)

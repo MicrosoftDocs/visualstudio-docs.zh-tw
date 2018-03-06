@@ -25,7 +25,7 @@
 #### [更新 Visual Studio 的網路型安裝](install/update-a-network-installation-of-visual-studio.md)
 #### [在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 ##### [疑難排解安裝或使用 Visual Studio 時發生的網路錯誤](install/troubleshooting-network-related-errors-in-visual-studio.md)
-### 部署在企業中
+### 部署於企業中
 #### [使用回應檔自動安裝 Visual Studio](install/automated-installation-with-response-file.md)
 #### [部署 Visual Studio 時會自動套用產品金鑰](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
 #### [設定 Visual Studio 企業部署的預設值](install/set-defaults-for-enterprise-deployments.md)
@@ -33,6 +33,8 @@
 #### [控制 Visual Studio 部署的更新](install/controlling-updates-to-visual-studio-deployments.md)
 ### 管理安裝
 #### [用於偵測及管理 Visual Studio 執行個體的工具](install/tools-for-managing-visual-studio-instances.md)
+### 管理訂用帳戶
+#### [Visual Studio 訂用帳戶：系統管理員概觀](/visualstudio/subscriptions/admin-responsibilities) 
 ### [說明檢視器系統管理員指南](ide/help-viewer-administrator-guide.md)
 #### [Help Content Manager 的命令列引數](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Help Content Manager 覆寫設定](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # 快速入門
 ## [Visual Studio 簡介](ide/quickstart-ide-orientation.md)
 ## [專案和方案](ide/quickstart-projects-solutions.md)
-## [在編輯器中撰寫程式碼](ide/quickstart-editor.md)
+## [使用編輯器](ide/quickstart-editor.md)
 ## [個人化佈景主題與文字色彩](ide/quickstart-personalize-the-ide.md)
 ## [C++：建立主控台應用程式](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python：建立 Web 應用程式](ide/quickstart-python.md)
@@ -97,7 +99,8 @@
 ##### [替代範本中的參數](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Visual Studio IDE 64 位元支援](ide/visual-studio-ide-64-bit-support.md)
 ### [不使用專案或解決方案 ([開啟資料夾]) 進行開發](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-### [在編輯器中撰寫程式碼](ide/writing-code-in-the-code-and-text-editor.md)
+#### [自訂建置與偵錯工作](ide/customize-build-and-debug-tasks-in-visual-studio.md)
+### [使用編輯器](ide/writing-code-in-the-code-and-text-editor.md)
 #### [尋找及取代文字](ide/finding-and-replacing-text.md)
 ##### [使用規則運算式](ide/using-regular-expressions-in-visual-studio.md)
 ##### [尋找/命令方塊](ide/find-command-box.md)
