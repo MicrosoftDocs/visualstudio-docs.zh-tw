@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c15207a564a63f08d58c4f0164aae703d43daa9a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 339882fadba46dc0a42c6796d135e761a3554e9c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="calltarget-task"></a>CallTarget 工作
 叫用專案檔內指定的目標。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
   
 |參數|描述|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|選擇性的 `Boolean` 輸出參數。<br /><br /> 如果為 `true`，每個目標會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎。 如果為 `false`，會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎以建置所有目標。 預設值是 `false`。|  
+|`RunEachTargetSeparately`|選擇性 `Boolean` 輸入參數。<br /><br /> 如果為 `true`，每個目標會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎。 如果為 `false`，會呼叫一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎以建置所有目標。 預設值是 `false`。|  
 |`TargetOutputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含所有建置目標的輸出。|  
 |`Targets`|選擇性的 `String[]` 參數。<br /><br /> 指定要建置的一或多個目標。|  
 |`UseResultsCache`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即傳回快取的結果 (如果有的話)。<br /><br /> **注意**：執行 MSBuild 工作時，會在範圍 (ProjectFileName, GlobalProperties)[TargetNames] 內快取它的結果，當作組建項目清單。|  

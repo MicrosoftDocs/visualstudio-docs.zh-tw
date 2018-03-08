@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcdad47ebb8ecae9d943acd8e0db60c20ef8378
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 152b5f1c0bc3129078effb07cbe5aa36a4591f9d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
@@ -77,5 +77,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼產生](../code-generation-in-visual-studio.md)  
-[預覽變更](../../ide/preview-changes.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
+- [預覽變更](../../ide/preview-changes.md)

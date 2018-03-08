@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ccdab053e06efc11b6f9c42d391d4b4fc1f85f7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d66a0e41f0c68d3d5c4378a664ef36aba0d869b7
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 02/09/2018
 
    - **鍵盤**
      - 按 **CTRL+R**，再按 **CTRL+M**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取方法]。
    - **滑鼠**
      - 選取 [編輯] > [重構] > [擷取方法]。
      - 在程式碼上按一下滑鼠右鍵，然後選取 [重構] > [擷取] > [擷取方法]。
@@ -64,16 +64,16 @@ ms.lasthandoff: 02/09/2018
    > 您也可以使用出現在 IDE 右上角 [重新命名] 方塊中的核取方塊，以更新註解和其他字串來使用這個新名稱，以及在儲存前先[預覽變更](../../ide/preview-changes.md)。
 
    - C#: 
-   
+
     ![重新命名方法 - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic：
-   
+
     ![重新命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
 
 1. 當您對變更感到滿意時，請選擇 [套用] 按鈕或按 **ENTER**，便會認可變更。
 
 ## <a name="see-also"></a>另請參閱
 
-[重構](../refactoring-in-visual-studio.md)  
-[預覽變更](../../ide/preview-changes.md)
+- [重構](../refactoring-in-visual-studio.md)
+- [預覽變更](../../ide/preview-changes.md)

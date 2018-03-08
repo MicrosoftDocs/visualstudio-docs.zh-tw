@@ -1,4 +1,10 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 053ea5ad7579a040cdefbf7e519c852dc4fb7fe9
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>從現有程式碼建立 AI 專案
 

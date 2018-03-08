@@ -1,11 +1,17 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="view-recent-job-performance-and-details"></a>檢視最近的作業效能和詳細資料
 提交作業之後，您可以檢視作業清單，以查看它們的狀態、期間及其他資訊。
 
-1. 在 [伺服器總管] 中，展開特定的計算內容 
+1. 在 [伺服器總管] 中，展開特定的計算內容
 1. 在 [作業] 上按兩下
-1. 您會看到已提交到該計算內容的作業清單。 
+1. 您會看到已提交到該計算內容的作業清單。
 1. 在清單中選取特定的 [作業] 來檢視詳細資料
 
 ![監視作業](media\job-details\monitor-jobs.png)

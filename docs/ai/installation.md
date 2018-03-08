@@ -9,13 +9,14 @@ ms.date: 11/13/2017
 ms.topic: article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 85513f908421f4eee5411b5d394b378e66fa31fd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="installation"></a>安裝
 
@@ -23,11 +24,11 @@ Visual Studio Tools for AI 可以安裝在 Windows 64 位元作業系統上。
 
 ## <a name="installing-visual-studio-tools-for-ai"></a>安裝 Visual Studio Tools for AI
 
-此延伸模組適用於 [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015、2017、Community 版或更高版本。 
+此延伸模組適用於 [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015、2017、Community 版或更高版本。
 
-若要安裝，請從 [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) 或從 Visual Studio 內下載 
+若要安裝，請從 [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) 或從 Visual Studio 內下載
 
-1. **工具**> **延伸模組和更新** 
+1. **工具**> **延伸模組和更新**
 
 ![在 Windows 上安裝 CUDA](media\installation\extensions.png)
 

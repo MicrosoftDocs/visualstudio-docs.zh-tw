@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Boost.Test
 
@@ -35,18 +35,18 @@ Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，�
 1. 安裝 Boost.Test 動態或靜態程式庫：
 
     - 執行 **vcpkg install boost-test** 以安裝 Boost.Test 動態程式庫。
-    
+
        -或-
-       
+
     - 執行 **vcpkg install boost-test:x86-windows-static** 以安裝 Boost.Test 靜態程式庫。
 
 1. 執行 **vcpkg integrate install** 以設定 Visual Studio 和程式庫，並包含 Boost 標頭和二進位檔的路徑。
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>加入項目範本 (Visual Studio 2017 15.6 版和更新版本)
 
-1. 若要針對您的測試建立 .cpp 檔案，請在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增項目]。 
- 
-![Boost.Test 項目範本](media/boost_test_item_template.png "Boost.Test 項目範本")
+1. 若要針對您的測試建立 .cpp 檔案，請在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增項目]。
+
+   ![Boost.Test 項目範本](media/boost_test_item_template.png "Boost.Test 項目範本")
 
 1. 新的檔案包含範例測試方法。 建置您的專案，以便讓 [測試總管] 來探索方法。
 
@@ -54,14 +54,14 @@ Boost.Test 需要 [Boost](http://www.boost.org/)！ 如果您未安裝 Boost，�
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>建立測試專案 (Visual Studio 2017 15.5 版)
 
-在 Visual Studio 2017 15.5 版中，沒有預先設定的測試專案或項目範本可供 Boost.Test 使用。 因此，您必須建立並設定主控台應用程式專案來保存您的測試。 
+在 Visual Studio 2017 15.5 版中，沒有預先設定的測試專案或項目範本可供 Boost.Test 使用。 因此，您必須建立並設定主控台應用程式專案來保存您的測試。
 
 1. 在**方案總管**中，以滑鼠右鍵按一下解決方案節點，然後選擇 [新增] > [新增專案]。
 
 1. 在左窗格中選擇 [Visual C++] > [Windows 桌面]，然後選擇 [Windows 主控台應用程式] 範本。
 
 1. 提供專案名稱，然後選擇 [確定]。
-1. 刪除 .cpp 檔案中的 `main` 函式。 
+1. 刪除 .cpp 檔案中的 `main` 函式。
 
 1. 如果您是使用 Boost.Test 的單一標頭或動態程式庫版本，請移至[新增 include 指示詞](#add_include_directives)。 如果您是使用靜態程式庫版本，則必須執行一些額外的設定：
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
-您現在準備好撰寫及執行 Boost Test。 如需測試巨集的資訊，請參閱 [Boost Test Library 文件](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
+您現在準備好撰寫及執行 Boost Test。 如需測試巨集的資訊，請參閱 [Boost Test Library 文件](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>另請參閱
 [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)

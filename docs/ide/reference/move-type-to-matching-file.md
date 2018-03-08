@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62187c88fa2d2cf7ecf1b358fa0c03416be449a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 87619c7938afdf92da6ca1b03c3090ad7d72834c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 02/09/2018
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型移到 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型移到 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
    - **滑鼠**
      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [將類型移到 *TypeName*.cs]，其中 *TypeName* 是您所選類型的名稱。
 

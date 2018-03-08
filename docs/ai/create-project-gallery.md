@@ -9,33 +9,34 @@ ms.date: 11/13/2017
 ms.topic: how to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b45aa6b2ddfb37b99f7f1d92d4d2b205e905488
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1221459107a807c267583e46b6449dc63be094c1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案
 
-Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用它來提交機器學習作業給 Azure 虛擬機器、Spark 叢集等遠端計算目標。 深入了解 [Azure Machine Learning 測試](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用它來提交機器學習作業給 Azure 虛擬機器、Spark 叢集等遠端計算目標。 深入了解 [Azure Machine Learning 測試](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
 [安裝 Visual Studio Tools for AI](installation.md) 之後，您就可以使用 Azure Machine Learning 範例庫中預先製作的配方，輕鬆建立新的 Python 專案。
 
-> [!NOTE] 
-> 您必須安裝 Azure Machine Learning Workbench。 若要安裝，請參閱 [Azure Machine Learning 安裝快速入門](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+> [!NOTE]
+> 您必須安裝 Azure Machine Learning Workbench。 若要安裝，請參閱 [Azure Machine Learning 安裝快速入門](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)
 
-1. 啟動 Visual Studio。 開啟 [AI Tools] (AI 工具) 功能表，然後選擇 [選取叢集] 以開啟**伺服器總管**  
+1. 啟動 Visual Studio。 開啟 [AI Tools] (AI 工具) 功能表，然後選擇 [選取叢集] 以開啟**伺服器總管**
 
     ![叢集選擇器](media\create-project-gallery\select-cluster.png)
 
 1. 在伺服器總管中以滑鼠右鍵按一下 [Azure Machine Learning] 節點，然後選取 [登入] 並遵循指示進行，以登入您的 Azure Machine Learning 訂用帳戶。
 
     ![登入](media\create-project-gallery\azureml-login.png)
- 
-2. 選取 [AI Tools] (AI 工具) > [Azure Machine Learning 範例庫]。 
-    
+
+2. 選取 [AI Tools] (AI 工具) > [Azure Machine Learning 範例庫]。
+
     ![範例庫](media\create-project-gallery\gallery.png)
 
 1. 針對本快速入門，選取 [MNIST using TensorFlow] (使用 TensorFlow 的 MNIST) 範例，然後按一下 [安裝]。 提供下列項目：
@@ -47,14 +48,14 @@ Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用�
  - **至方案**：決定要新增至目前的 Visual Studio 方案，或建立並開啟新的方案
  - **專案路徑**：儲存程式碼的位置
  - **專案名稱**：鍵入 **TensorFlowMNIST**
-   
+
 ![使用 Python 應用程式範本時所產生的專案](media/create-project-gallery/new-AzureSampleProject.png)
 
 1. Visual Studio 會建立專案檔 (磁碟上的 `.pyproj` 檔) 及範例中定義的其他檔案。 使用 "MNIST" 範本時，專案會包含數個檔案。
 
     ![mnist](media\create-project-gallery\azml-mnist.png)
 
-1. 將作業提交至 Azure Machine Learning。 
+1. 將作業提交至 Azure Machine Learning。
 
     ![mnist](media\create-project-gallery\submit-azml.png)
 

@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -80,7 +80,7 @@ ms.lasthandoff: 02/09/2018
   
     <ItemGroup>  
         <TXTFile Include="*.txt"/>  
-        <XMLFile Include="\metadata\*.xml"/>  
+        <XMLFiles Include="\metadata\*.xml"/>  
     </ItemGroup>  
   
     <Target Name = "Convert"  
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/09/2018
   
         <BuildHelp  
             ContentFiles = "@(ContentFiles)"  
-            MetadataFiles = "@(XMLFile)"  
+            MetadataFiles = "@(XMLFiles)"  
             OutputFileName = "$(MSBuildProjectName).help"/>  
     </Target>  
 </Project>  

@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da2af4fd9ed552ad9e0232acfb6a7567718b5c6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15f34d6e512da839166b9c8bb9165a6cefbc9598
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 您可以使用 MSBuild 透過讓專案平行執行的方式，加快建置多個專案的速度。 若要平行執行組建，您可以使用多核心或多處理器電腦上的下列設定：  
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
  下列範例會指示 MSBuild 使用三個背景工作處理序。 如果您使用此組態，MSBuild 就可以同時建立三個專案。  
   
 ```  
-msbuild.exe myproj.proj /maxcpucount:3  
+msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel 工作參數  

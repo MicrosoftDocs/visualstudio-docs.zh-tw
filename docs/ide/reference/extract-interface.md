@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451b5ccddf6052eca3ae0a19b87076d2fd88a952
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e735b194da008de83fddac564194f8bb008c66bb
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 02/09/2018
 
    - **鍵盤**
      - 按 **CTRL+R**，再按 **CTRL+I**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
    - **滑鼠**
      - 選取 [編輯] > [重構] > [擷取介面]。
      - 在類別名稱上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 12/18/2017
 ms.reviewer: crdun
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
@@ -15,11 +14,11 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: a66e78063b100740ef271480e76daae2fd99a3fe
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: e7fab0df3f8f957c5c2b35fcf64c2e717358148f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="programming-with-unity-and-azure"></a>使用 Unity 與 Azure 進行程式設計
 

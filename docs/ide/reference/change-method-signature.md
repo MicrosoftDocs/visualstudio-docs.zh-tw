@@ -17,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8358e14ccf9570207b3e52a552990fd2a3a80d49
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c181eb27ccdbc2f1efb7294e1610a6055245241c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
 
    - **鍵盤**
      - 按 **CTRL+R**，再按 **CTRL+V**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
    - **滑鼠**
      - 選取 [編輯] > [重構] > [移除參數]。
      - 選取 [編輯] > [重構] > [重新排列參數]。
@@ -84,5 +84,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[重構](../refactoring-in-visual-studio.md)  
-[預覽變更](../../ide/preview-changes.md)
+- [重構](../refactoring-in-visual-studio.md)
+- [預覽變更](../../ide/preview-changes.md)

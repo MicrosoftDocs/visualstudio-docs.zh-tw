@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997220d3b1a7305f84f61ee5fd4c205d1157f1b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 1. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 按 **Ctrl+.** 以觸發 [快速動作與重構] 功能表。
+     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
      - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
@@ -73,5 +73,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼產生](../code-generation-in-visual-studio.md)  
-[預覽變更](../../ide/preview-changes.md)
+- [程式碼產生](../code-generation-in-visual-studio.md)
+- [預覽變更](../../ide/preview-changes.md)

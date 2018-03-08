@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -40,12 +42,12 @@ ms.lasthandoff: 01/10/2018
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 文件上的 Windows Forms 控制項概觀
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案中，您可以在設計階段將 Windows Forms 控制項加入文件或活頁簿，或是用程式設計方式在執行階段中加入這些控制項。 您可以用程式設計方式，在執行階段於 Excel 或 Word 的 VSTO 增益集將這些控制項加入任何開啟的文件或活頁簿。  
   
- 如需詳細資訊，請參閱 [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+ 如需詳細資訊，請參閱 [如何：將 Windows Form 控制項加入至 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="using-windows-forms-controls"></a>使用 Windows Forms 控制項  
- 您可以將 Windows Forms 控制項加入文件和可自訂的使用者介面 (UI) 項目，包括執行窗格、自訂工作窗格和 Windows Forms。 Windows Forms 控制項在文件上的行為通常與在這些其他 UI 項目上相同，但確實存在一些差異。 如需詳細資訊，請參閱 [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
+ 您可以將 Windows Forms 控制項加入文件和可自訂的使用者介面 (UI) 項目，包括執行窗格、自訂工作窗格和 Windows Forms。 Windows Forms 控制項在文件上的行為通常與在這些其他 UI 項目上相同，但確實存在一些差異。 如需詳細資訊，請參閱 [Office 文件上的 Windows Form 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
   
  決定是否要將 Windows Forms 控制項加入文件或某個其他 UI 項目，取決於許多因素。 在設計您的方案 UI 時，請考慮如下表所述來使用 Windows Forms 控制項。  
   
@@ -75,7 +77,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="adding-windows-forms-controls-programmatically"></a>以程式設計方式加入 Windows Forms 控制項  
  您可以在執行階段將 Windows Forms 控制項加入 Word 文件和 Excel 工作表。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供 Helper 方法，來加入最常見的 Windows Forms 控制項。 這些 Helper 方法可讓您快速將控制項加入 Office 文件，並存取這些控制項結合後的 Windows Forms 控制項功能和 Office 相關功能。  
   
- 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>在文件層級專案中使用 Windows Forms 控制項  
  在文件上使用 Windows Forms 控制項，某些層面對於文件層級專案而言是唯一的，這可讓您使用 Visual Studio 設計工具來設計文件的 UI。  
@@ -116,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="preventing-old-data-from-appearing-in-excel-workbooks-during-loading"></a>防止載入時舊資料出現在 Excel 活頁簿中  
  當您在設計階段將 Windows Forms 控制項加入文件或工作表時，如果使用者關閉文件，控制項仍然會留在文件中。 在設計階段加入的控制項也稱為 *靜態控制項*。  
   
- 開啟包含靜態控制項的 Excel 活頁簿時，活頁簿會在 ActiveX 控制項中顯示控制項的點陣圖，直到自訂程式碼執行並載入實際的控制項。 每次您儲存活頁簿，Excel 會建立此點陣圖並將它儲存在活頁簿中。 點陣圖顯示上次儲存活頁簿時，控制項的樣子，包括控制項當時顯示的任何資料。 如需有關包含 Windows Forms 控制項和點陣圖的 ActiveX 控制項詳細資訊，請參閱 [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
+ 開啟包含靜態控制項的 Excel 活頁簿時，活頁簿會在 ActiveX 控制項中顯示控制項的點陣圖，直到自訂程式碼執行並載入實際的控制項。 每次您儲存活頁簿，Excel 會建立此點陣圖並將它儲存在活頁簿中。 點陣圖顯示上次儲存活頁簿時，控制項的樣子，包括控制項當時顯示的任何資料。 如需有關包含 Windows Forms 控制項和點陣圖的 ActiveX 控制項詳細資訊，請參閱 [Office 文件上的 Windows Form 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
   
  在某些情況下，程式碼不會載入，並且只會顯示點陣圖，例如當使用者在設計模式中開啟活頁簿。 此外，如果使用者在沒有安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的電腦上開啟活頁簿，自訂無法執行以載入控制項，因此只能看到控制項的點陣圖。 您在儲存活頁簿並將它傳送給另一位使用者之前，應該務必從活頁簿上的控制項移除個人資訊，以確保您的個人資訊不會意外洩漏。  
   
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要將控制項加入為浮動的圖形，請使用可接受控制項左邊和頂端座標的多載。  
   
- 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  如果您在 Visual Studio 設計工具中開啟 Word 範本，可能看不到範本上的非內嵌控制項，因為 Visual Studio 會在 [一般]  檢視中開啟範本。 若要檢視控制項，請將檢視變更為 [整頁模式] 。  
   

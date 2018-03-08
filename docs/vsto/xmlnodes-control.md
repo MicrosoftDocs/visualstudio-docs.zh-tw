@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Visual Studio 建立的 XML 節點集合之後，您可以程式設計的控制項直接而不必周遊 Word 物件模型。 <xref:Microsoft.Office.Tools.Word.XMLNodes>可以刪除只能由文件中移除的項目對應的控制項。  
   
 > [!NOTE]  
->  如果您存取的子項目<xref:Microsoft.Office.Tools.Word.XMLNodes>透過控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>屬性，它會傳回<xref:Microsoft.Office.Interop.Word.XMLNode>物件而非<xref:Microsoft.Office.Tools.Word.XMLNode>控制項。 如需詳細資訊，請參閱 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+>  如果您存取的子項目<xref:Microsoft.Office.Tools.Word.XMLNodes>透過控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>屬性，它會傳回<xref:Microsoft.Office.Interop.Word.XMLNode>物件而非<xref:Microsoft.Office.Tools.Word.XMLNode>控制項。 如需詳細資訊，請參閱 [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ## <a name="binding-data-to-the-control"></a>將資料繫結至控制項  
  <xref:Microsoft.Office.Tools.Word.XMLNodes>控制項不支援資料繫結。 這是因為<xref:Microsoft.Office.Tools.Word.XMLNodes>控制項沒有複雜資料繫結功能，並不能代表簡單資料繫結重複資料。  

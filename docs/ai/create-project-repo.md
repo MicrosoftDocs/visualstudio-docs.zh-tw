@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中複製 Python 程式碼存放庫
 
 在[安裝適用於 AI 的 Visual Studio 工具](installation.md)之後，您可以輕易的複製 Python 程式碼存放庫並從中建立專案。
 
 1. 若要連線至 GitHub 存放庫，請執行 Visual Studio 安裝程式，並選取 [修改]，然後選取 [個別元件] 索引標籤。向下捲動至 [程式碼工具] 區段，並選取 [Visual Studio 的 GitHub 延伸模組]，然後選取 [修改]。
-    
+
     ![在 Visual Studio 安裝程式中選取 GitHub 延伸模組](media\create-project-repo\installation-github-extension.png)
-    
+
 2. 啟動 Visual Studio。
 
 3. 選取 [檢視] > [Team Explorer...] 以開啟 **Team Explorer** 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。
