@@ -30,11 +30,11 @@ ms.lasthandoff: 10/27/2017
   
  例如，如果目前的頁面是 https://employees.mycompany.com，您將無法從下列 URL 存取資料：  
   
--   http://data.contoso.com，因為此 URL 使用 HTTP 而非 HTTPS。  
+-   http://data.contoso.com ，因為此 URL 使用 HTTP 而非 HTTPS。  
   
--   https://somedatasource.com，因為這是不同的網域。  
+-   https://somedatasource.com ，因為這是不同的網域。  
   
--   https://employees.mycompany.com:8888，因為此 URL 使用不同的連接埠。  
+-   https://employees.mycompany.com:8888 ，因為此 URL 使用不同的連接埠。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
