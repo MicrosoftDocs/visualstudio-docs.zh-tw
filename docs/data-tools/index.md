@@ -5,12 +5,14 @@ ms.author: gewarren
 title: "使用 Visual Studio 中的資料工具來開發資料解決方案 | Microsoft Docs"
 description: "了解 Visual Studio 中適用於資料解決方案的工具。"
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 74a4d787439f8a615f7f9937438e19179630b9f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.topic: landing-page
+ms.workload:
+- data-storage
+ms.openlocfilehash: a3b0473237595dee29de024c7cbc04b6db82c93a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
