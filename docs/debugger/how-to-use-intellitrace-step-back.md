@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
@@ -107,5 +107,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
     因應措施：
     * 清除所有快照集結束偵錯工作階段。 
+
+* 其程序有大量的唯一記憶體區域，例如載入大量的 Dll，應用程式的應用程式進行偵錯時逐步執行快照集啟用的效能可能會受到影響。 將在未來的 Windows 版本中解決這個問題。 如果您遇到此問題，連接到我們stepback@microsoft.com。 
 
 * 儲存的檔案時**偵錯 > IntelliTrace > 儲存 IntelliTrace 工作階段**在事件和快照集模式下，從快照集擷取的其他資料沒有.itrace 檔中。 中斷點和步驟的事件，您會看到相同的資訊，如同您有用於 IntelliTrace 事件僅限模式來儲存檔案。 

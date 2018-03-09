@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 19bf2ca98c7ba6227e791a7df44b34aa125cc786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>加入功能表的子功能表
 本逐步解說是根據在示範[功能表加入 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)，以顯示如何新增至子功能表**TestMenu**功能表。  
@@ -96,7 +98,7 @@ ms.lasthandoff: 12/22/2017
 2.  加入子命令。 尋找命令的建構函式。 只在呼叫之後加入下列行`AddCommand`方法。  
   
     ```csharp  
-    CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
+    CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);  
     MenuCommand subItem = new MenuCommand(  
         new EventHandler(SubItemCallback), subCommandID);  
     commandService.AddCommand(subItem);  

@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何： 診斷 UI 延伸模組所造成的延遲
 
@@ -44,7 +44,7 @@ UI 變得沒有回應，Visual Studio 會檢查分葉開始，並朝向基底，
 
 ## <a name="identifying-the-trigger-scenario"></a>用來識別觸發程序案例
 
-若要執行診斷 UI 延遲，您首先要 idetify 哪些 （序列執行） 會導致 Visual Studio 以顯示通知。 這是為了讓您能夠以開啟記錄之後觸發通知。
+若要執行診斷 UI 延遲，您需要識別哪些 （序列執行） 會導致 Visual Studio 以顯示通知。 這是為了讓您能夠以開啟記錄之後觸發通知。
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>重新啟動 VS 與登入活動
 
@@ -158,3 +158,5 @@ PerfView 詳述可用來找出效能瓶頸，您的程式碼中的 [說明] 功�
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> 如果無法解決由於相依性一堆您沒有控制項上 (例如： 如果您的擴充功能必須在 UI 執行緒上呼叫同步 VS 服務)，我們想要了解它。 如果您是我們的 Visual Studio 協力廠商程式的成員，您可以與我們連絡所提交的開發人員支援。 否則，請使用 '回報問題 工具來提交您的意見反應並包含`"Extension UI Delay Notifications"`標題中。 請也包含您的分析的詳細的描述。
