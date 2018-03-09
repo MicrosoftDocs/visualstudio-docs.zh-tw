@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -59,7 +61,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  啟動 Microsoft Office Outlook。  
   
-2.  在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計表單] 。 如需詳細資訊，請參閱 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+2.  在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計表單] 。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在 [設計表單]  方塊中，按一下 [工作] ，然後按一下 [開啟] 。  
   
