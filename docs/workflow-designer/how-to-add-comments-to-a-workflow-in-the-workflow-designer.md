@@ -1,63 +1,61 @@
 ---
 title: "如何： 將註解加入至工作流程設計工具中的工作流程 |Microsoft 文件"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
-caps.latest.revision: "7"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: eb7825f79ee54b02d764e4ad8754ee1382b5d41f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
-為了方便建立更大型、更為複雜的工作流程，[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 讓開發人員可以在設計工具中將註釋加入到下列項目類型：  
-  
--   <xref:System.Activities.Activity>  
-  
--   <xref:System.Activities.Statements.State>  
-  
--   <xref:System.Activities.Statements.Transition>  
-  
--   衍生自 <xref:System.Activities.Statements.FlowNode> 的類別  
-  
--   <xref:System.Activities.Variable>  
-  
--   <xref:System.Activities.Argument>  
-  
+
+為了方便建立更大型、更為複雜的工作流程，[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 讓開發人員可以在設計工具中將註釋加入到下列項目類型：
+
+-   <xref:System.Activities.Activity>
+
+-   <xref:System.Activities.Statements.State>
+
+-   <xref:System.Activities.Statements.Transition>
+
+-   衍生自 <xref:System.Activities.Statements.FlowNode> 的類別
+
+-   <xref:System.Activities.Variable>
+
+-   <xref:System.Activities.Argument>
+
 > [!IMPORTANT]
->  註釋的內容會以純文字的格式儲存在與工作流程相關聯 XAML 檔中，並有可能被其他人讀取。 將敏感資訊輸入至註釋時要謹慎。  
-  
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>將註釋加入到設計工具中的活動  
-  
-1. 在工作流程設計工具中，以滑鼠右鍵按一下工作流程設計工具，並選取的項目**註解**，**加入註解**。  
-  
-1. 在提供的空間中加入註釋的文字。  
-  
+> 註釋的內容會以純文字的格式儲存在與工作流程相關聯 XAML 檔中，並有可能被其他人讀取。 將敏感資訊輸入至註釋時要謹慎。
+
+### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>將註釋加入到設計工具中的活動
+
+1. 在工作流程設計工具中，以滑鼠右鍵按一下工作流程設計工具，並選取的項目**註解**，**加入註解**。
+
+1. 在提供的空間中加入註釋的文字。
+
    此項目顯示註釋圖示。 註釋圖示上方註解的文字。
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活動的設計工具中顯示註釋  
-  
-1.  與活動設計工具的註釋顯示位於活動外部，按一下  **Pin**註釋裝飾項中的圖示。  
-  
-   註解會顯示在活動設計工具。 在下列螢幕擷取畫面中，註釋「工作流程中的開始活動」顯示在活動的設計工具中。  
-  
-   ![活動設計工具中顯示的註釋](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
-  
-1. 若要顯示註釋的活動設計工具外，將滑鼠停留在活動設計工具中的註釋區域，按一下**取消釘選**圖示  
-  
-   ![活動的設計工具外部顯示註釋](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
-  
+### <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活動的設計工具中顯示註釋
+
+1.  與活動設計工具的註釋顯示位於活動外部，按一下  **Pin**註釋裝飾項中的圖示。
+
+   註解會顯示在活動設計工具。 在下列螢幕擷取畫面中，註釋「工作流程中的開始活動」顯示在活動的設計工具中。
+
+   ![活動設計工具中顯示的註釋](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+
+1. 若要顯示註釋的活動設計工具外，將滑鼠停留在活動設計工具中的註釋區域，按一下**取消釘選**圖示
+
+   ![活動的設計工具外部顯示註釋](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+
 ### <a name="showing-or-hiding-all-annotations"></a>顯示或隱藏所有註釋
 
 1. 以滑鼠右鍵按一下具有註釋的活動。 選取**註解**，**顯示所有註釋**。

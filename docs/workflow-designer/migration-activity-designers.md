@@ -1,22 +1,18 @@
 ---
 title: "Migration 活動設計工具 |Microsoft 文件"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-caps.latest.revision: "5"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 86db81d54d332b8e28946e9577936e6738240b07
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="migration-activity-designers"></a>Migration 活動設計工具
 [移轉] 活動設計工具的用途，是從以 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] 為目標的工作流程呼叫工作流程 3.0/3.5 活動。 本節包含的主題會提供如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活動設計工具的指引。  
@@ -36,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
  [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)  
   
- [訊息處理](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [執行階段](../workflow-designer/runtime-activity-designers.md)  
   

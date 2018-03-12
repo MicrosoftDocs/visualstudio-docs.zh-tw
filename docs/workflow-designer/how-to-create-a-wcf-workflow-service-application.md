@@ -1,49 +1,47 @@
 ---
 title: "如何： 建立 WCF 工作流程服務應用程式 |Microsoft 文件"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
-caps.latest.revision: "14"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 8730b8f1611694ec7927b52fa4118cf3ca3801b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 03c7aed27c4dc092a1cf4d8ba51a10a4aac0741b
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>HOW TO：建立 WCF 工作流程服務應用程式
-[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 工作流程服務應用程式是分散式通訊服務，可在用戶端與服務本身之間傳遞訊息，並跨越處理序界限。 服務端的服務合約實作是採用類似 .NET Framework 3.5 舊版工作流程服務的方式，透過 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 中的工作流程活動來宣告完成。  
-  
-### <a name="to-create-a-wcf-workflow-service-application"></a>若要建立 WCF 工作流程服務應用程式  
-  
-1.  啟動 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。  
-  
-2.  在**檔案**功能表上，指向**新增**，然後選取**專案...**.  
-  
-     [ **新增專案** ] 對話方塊隨即開啟。  
-  
-3.  在**已安裝的範本**窗格中，選取**WCF**或**工作流程**從其中**Visual C#**或**Visual Basic**分組根據您所選擇的語言。  
-  
-4.  在中間窗格中，選取**WCF 工作流程服務應用程式**。  
-  
-5.  在**名稱**方塊中，輸入您的專案讓您輕鬆識別的描述性名稱。  
-  
-6.  在**位置**方塊中，輸入您要儲存您的專案，或按一下的目錄**瀏覽**來巡覽找到它。  
-  
-7.  在**方案**方塊中，選取 建立新的方案，然後按一下**確定**。  
-  
+
+[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 工作流程服務應用程式是分散式通訊服務，可在用戶端與服務本身之間傳遞訊息，並跨越處理序界限。 服務端的服務合約實作是採用類似 .NET Framework 3.5 舊版工作流程服務的方式，透過 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 中的工作流程活動來宣告完成。
+
+### <a name="to-create-a-wcf-workflow-service-application"></a>若要建立 WCF 工作流程服務應用程式
+
+1.  啟動 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
+
+2.  在**檔案**功能表上，指向**新增**，然後選取**專案...**.
+
+     [ **新增專案** ] 對話方塊隨即開啟。
+
+3.  在**已安裝的範本**窗格中，選取**WCF**或**工作流程**從其中**Visual C#**或**Visual Basic**分組根據您所選擇的語言。
+
+4.  在中間窗格中，選取**WCF 工作流程服務應用程式**。
+
+5.  在**名稱**方塊中，輸入您的專案讓您輕鬆識別的描述性名稱。
+
+6.  在**位置**方塊中，輸入您要儲存您的專案，或按一下的目錄**瀏覽**來巡覽找到它。
+
+7.  在**方案**方塊中，選取 建立新的方案，然後按一下**確定**。
+
     > [!NOTE]
-    >  如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...**開啟**新專案** 對話方塊。 依照本程序上面的說明繼續進行。  
-  
-8.  專案範本會以 XAML 格式建立服務定義。 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 會開啟設計檢視，其中有包含一組 <xref:System.Activities.Statements.Sequence> 和 <xref:System.ServiceModel.Activities.Receive> 活動的 <xref:System.ServiceModel.Activities.SendReply> 活動。  
-  
-## <a name="see-also"></a>請參閱  
- [如何： 建立活動](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
- [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)
+    > 如果您想要新增至現有的方案工作流程主控台應用程式，開啟該方案中的[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，以滑鼠右鍵按一下方案中的**方案總管 中**，然後選取**新增**，然後**新增專案...**開啟**新專案** 對話方塊。 依照本程序上面的說明繼續進行。
+
+8.  專案範本會以 XAML 格式建立服務定義。 Windows 工作流程設計工具會開啟至 [設計] 檢視<xref:System.Activities.Statements.Sequence>活動，其中包含一組<xref:System.ServiceModel.Activities.Receive>和<xref:System.ServiceModel.Activities.SendReply>活動。
+
+## <a name="see-also"></a>另請參閱
+
+- [如何：建立活動](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)
+- [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

@@ -1,25 +1,20 @@
 ---
 title: "如何： 使用匯入設計工具 |Microsoft 文件"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: 
-author: ErikRe
-ms.author: erikre
-manager: erikre
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3980b43b090a0a6321ee0133e2c0ad4f5cbbffde
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>HOW TO：使用匯入設計工具
 匯入設計工具可讓您輸入要用於運算式之型別的命名空間。 就像是**匯入**或**使用**Visual Basic 和 C# 中，匯入設計工具中指定命名空間中的關鍵字可讓您只要在您的運算式，而非完整輸入型別名稱型別名稱。  

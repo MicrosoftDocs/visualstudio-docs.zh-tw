@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何： 診斷 UI 延伸模組所造成的延遲
 
@@ -157,6 +157,8 @@ PerfView 詳述可用來找出效能瓶頸，您的程式碼中的 [說明] 功�
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+您也可以使用新的 Visual Studio 靜態分析器，延伸模組 (NuGet 封裝[這裡](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers))，提供指引的最佳作法撰寫有效率的延伸模組。 看到一份[VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md)和[執行緒分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)。
 
 > [!NOTE]
 > 如果無法解決由於相依性一堆您沒有控制項上 (例如： 如果您的擴充功能必須在 UI 執行緒上呼叫同步 VS 服務)，我們想要了解它。 如果您是我們的 Visual Studio 協力廠商程式的成員，您可以與我們連絡所提交的開發人員支援。 否則，請使用 '回報問題 工具來提交您的意見反應並包含`"Extension UI Delay Notifications"`標題中。 請也包含您的分析的詳細的描述。
