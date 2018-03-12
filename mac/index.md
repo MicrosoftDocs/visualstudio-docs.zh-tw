@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
-Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 它支援下列開發：
+Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 Visual Studio for Mac 支援下列開發：
 
 * 使用 .NET 的行動裝置：Android、iOS、tvOS、watchOS
 * Mac 桌面應用程式
@@ -22,9 +22,9 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌
 * ASP.NET Core Web 應用程式
 * 跨平台 Unity 遊戲
 
-它擁有許多功能，包含多功能編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，以及整合式原始檔控制等等，只是其眾多功能的一小部分。
+其支援多功能編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，以及整合式原始檔控制。
 
-本主題審視 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立跨平台應用程式的強大工具。
+本文審視 Visual Studio for Mac 的各個部分，帶您了解其具備哪些功能，使其得以成為建立跨平台應用程式的強力工具。
 
 ## <a name="installation"></a>安裝
 
@@ -36,11 +36,11 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌
 
 ### <a name="c"></a>C#
 
-C# 是在 Visual Studio for Mac 中建立跨平台應用程式最常用的語言。 這包括對所有 C# 7 功能的完整支援。
+C# 是在 Visual Studio for Mac 中建立跨平台應用程式最常用的語言。 IDE 具有所有 C# 7 功能的完整支援。
 
 ### <a name="f"></a>F#
 
-F# 是專為在 .NET 上執行所設計的強型別功能性程式設計語言。 它可供 Visual Studio for Mac 使用者在 Android、Mac 和 iOS 上作為程式設計語言之用。 如需使用 F# 的詳細資訊，以及檢視以該語言建立的範例，請瀏覽 [F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) 指南。
+F# 是專為在 .NET 上執行所設計的強型別功能性程式設計語言。 Android、Mac 及 iOS 上的 Visual Studio for Mac 使用者均能使用此程式設計語言。 如需使用 F# 的詳細資訊，以及檢視以該語言建立的範例，請瀏覽 [F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) 指南。
 
 ## <a name="platform-support"></a>平台支援
 
@@ -71,11 +71,11 @@ F# 是專為在 .NET 上執行所設計的強型別功能性程式設計語言�
 
 Visual Studio 有自己的整合式 Android SDK Manager。
 
-對於 Android 應用程式，Visual Studio for Mac 包括自己的設計工具，可使用 Android 的 `.axml` 檔案，以視覺化方式建構使用者介面。 Visual Studio for Mac 會在自己的 Android 設計工具中開啟這些檔案，如下所示：
+對於 Android 應用程式，Visual Studio for Mac 包括自己的設計工具，可使用 Android 的 `.axml` 檔案，以視覺化方式建構使用者介面。 Visual Studio for Mac 會在自己的 Android Designer 中開啟這些檔案，如下圖所示：
 
 ![](media/intro-image31.png)
 
-如需 Android 設計工具的詳細資訊，請參閱[設計工具概觀](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文件。
+如需 Android Designer 的詳細資訊，請參閱 [Designer 概觀](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文件。
 
 ### <a name="ios"></a>iOS
 
@@ -83,7 +83,7 @@ iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺�
 
 ![](media/intro-image30.png)
 
-如需使用 iOS 設計工具的詳細資訊，請參閱[設計工具](https://developer.xamarin.com/guides/ios/user_interface/designer)文件。
+如需使用 iOS Designer 的詳細資訊，請參閱 [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer)文件。
 
 ### <a name="mac"></a>Mac
 
@@ -112,13 +112,13 @@ Xamarin Inspector 為使用者提供互動式的 C# 主控台和工具。 檢查
 
 ![](media/intro-inspector.png)
 
-它包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，以及整合到 IDE 的偵錯工作流程中。
+其包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，並整合到 IDE 的偵錯工作流程中。
 
 如需詳細資訊，請參閱 [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) 指南。
 
 ## <a name="next-steps"></a>後續步驟
 
-* **了解全貌** - 若要概要了解 Visual Studio for Mac 中的主要功能，請參閱 Visual Studio for Mac [IDE 導覽](~/ide-tour.md)。
+* **了解全貌** - 若要大略了解 Visual Studio for Mac 中的主要功能，請參閱 Visual Studio for Mac [IDE 導覽](~/ide-tour.md)。
 * **安裝** - 若要了解如何下載並安裝 Visual Studio，請參閱[安裝](~/installation.md)指南。
 * **Xamarin 教學課程** - 若要深入了解如何使用 Xamarin 開發程式碼，請移至 Xamarin [開發人員中心](https://developer.xamarin.com)。
 * **影片** - 若要深入了解 Visual Studio for Mac 的其他功能和各種層面，請觀看 [Xamarin University](https://university.xamarin.com) (Xamarin 大學) 網站的影片。

@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。  訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。
@@ -137,14 +137,14 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
 ---
 
 <h2>優點</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>開發人員工具</h3>
-                        <p>在 PC 或 Mac 上存取最新版 Visual Studio、                         用於 Android、iOS、Windows、macOS、                         Web 與雲端應用程式開發的功能齊全 IDE                         及其他跨平台工具。</p>
+                        <p>在 PC 或 Mac 上存取最新版 Visual Studio、用於 Android、iOS、Windows、macOS、Web 與雲端應用程式開發的功能齊全 IDE 及其他跨平台工具。</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
