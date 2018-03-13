@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  若要決定哪些專案類型最適合您的方案，請考慮您是否只有在特定文件已開啟時才執行程式碼，或是否想要該程式碼在每次應用程式正執行時可供使用。 如需專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
- 您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ 您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ### <a name="document-level-customizations"></a>文件層級自訂  
  文件層級自訂是由與 Microsoft Office Word 或 Microsoft Office Excel 中的單一文件、活頁簿或範本關聯的組件所組成。 組件會在相關聯的文件開啟時載入。 只有在相關聯的文件開啟時，您才能使用自己建立之自訂中的功能。 自訂不能進行應用程式層範圍的變更，例如在任何文件開啟時顯示新的選單項目或功能區索引標籤。  

@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - WinRTError object [JavaScript]
 - JavaScript, WinRTError object
 ms.assetid: d75ab8e5-e729-4d86-90fd-ea228c30dd66
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -38,7 +39,7 @@ errorObj = new WinRTError();
 ```  
   
 ## <a name="remarks"></a>備註  
- WinRTError 錯誤類型僅用於源自 Windows 執行階段 API 的錯誤。.  
+ WinRTError 錯誤類型僅用於源自 Windows 執行階段 API 的錯誤。  
   
 ## <a name="example"></a>範例  
  下列範例顯示如何擲回和攔截 WinRTError。  

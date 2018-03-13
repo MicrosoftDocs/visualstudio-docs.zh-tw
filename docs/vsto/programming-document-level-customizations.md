@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -130,7 +132,7 @@ Globals.ThisDocument.Save();
 ## <a name="managing-documents-on-a-server"></a>管理伺服器上的文件  
  您可以在未安裝 Microsoft Office Word 或 Microsoft Office Excel 的伺服器上管理文件層級自訂的數個不同層面。 例如，您可以存取及修改文件之資料快取中的資料。 您也可以管理與文件相關聯的自訂組件。 例如，您可以用程式設計的方式從文件中移除組件，讓文件不再執行程式碼，或者用程式設計的方式將組件附加至文件。  
   
- 如需詳細資訊，請參閱 [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
+ 如需詳細資訊，請參閱 [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)。  
   
 ## <a name="customizing-the-user-interface-of-microsoft-office-applications"></a>自訂 Microsoft Office 應用程式的使用者介面  
  您可以使用文件層級自訂，透過下列方式自訂 Word 和 Excel 的 UI：  
@@ -165,7 +167,7 @@ Globals.ThisDocument.Save();
   
 -   如果您想要取得原生 Office 物件擴充的物件，請使用 GetVstoObject 方法。 如果指定的原生 Office 物件具有擴充物件，這個方法會傳回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 物件。 反之則傳回 GetVstoObject **null**。 GetVstoObject 方法會傳回例如<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文件專案中文件的基礎物件。  
   
- 在文件層級專案中，您無法使用 GetVstoObject 方法來建立新的<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>主項目，在執行階段。 您只能使用這個方法來存取在設計階段產生於專案中的現有主項目。 如果您想要在執行階段建立新的主項目，則必須開發 VSTO 增益集專案。 如需詳細資訊，請參閱 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 與 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在文件層級專案中，您無法使用 GetVstoObject 方法來建立新的<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>主項目，在執行階段。 您只能使用這個方法來存取在設計階段產生於專案中的現有主項目。 如果您想要在執行階段建立新的主項目，則必須開發 VSTO 增益集專案。 如需詳細資訊，請參閱 [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 與 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
  若要呼叫 HasVstoObject 和 GetVstoObject 方法時，使用的 Globals.Factory.GetVstoObject 或 Globals.Factory.HasVstoObject 方法並傳入原生 Word 或 Excel 物件 (例如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 您想要測試。  

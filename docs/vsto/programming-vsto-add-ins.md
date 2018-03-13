@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -124,7 +126,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |載入 VSTO 增益集時，執行程式碼以初始化 VSTO 增益集。|將程式碼加入 `ThisAddIn_Startup` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的預設事件處理常式。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。|  
 |卸載 VSTO 增益集之前，執行程式碼以清除 VSTO 增益集所使用的資源。|將程式碼加入 `ThisAddIn_Shutdown` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件的預設事件處理常式。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。 **注意：**在 Outlook 中，依預設`ThisAddIn_Startup`事件處理常式不一定會呼叫 VSTO 增益集卸載時。 如需詳細資訊，請參閱 [Deploying Office Solutions](../vsto/events-in-office-projects.md)。|  
 |顯示自訂工作窗格。|使用 `CustomTaskPanes` 欄位。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。|  
-|將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。|  
+|將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 如需詳細資訊，請參閱 [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。|  
 |實作擴充性介面來自訂 Microsoft Office system 中的功能。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以傳回實作介面的類別執行個體。 如需詳細資訊，請參閱 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。 **注意：**若要自訂功能區 UI，您也可以覆寫<xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A>方法。|  
   
 ### <a name="understanding-the-design-of-the-thisaddin-class"></a>了解 ThisAddIn 類別的設計  
@@ -139,12 +141,12 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
  如果您想要使用類別和設計工具不支援的方式，來自訂上述其中一項功能，您也可以透過在 VSTO 增益集中實作 *「擴充性介面」* (Extensibility Interface)，來自訂這些功能。 如需詳細資訊，請參閱 [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。  
   
- 此外，您也可以藉由產生可擴充文件和活頁簿行為的主項目，來修改 Word 文件和 Excel 活頁簿的 UI。 這可讓您將 Managed 控制項加入文件和工作表。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 此外，您也可以藉由產生可擴充文件和活頁簿行為的主項目，來修改 Word 文件和 Excel 活頁簿的 UI。 這可讓您將 Managed 控制項加入文件和工作表。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="calling-code-in-vsto-add-ins-from-other-solutions"></a>從其他方案呼叫 VSTO 增益集的程式碼  
  您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您的 Microsoft Office Excel VSTO 增益集會計算 Web 服務的財務資料，則其他方案可以在執行階段呼叫這個 Excel VSTO 增益集來執行這些計算。  
   
- 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ 如需詳細資訊，請參閱 [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

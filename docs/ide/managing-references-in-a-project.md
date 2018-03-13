@@ -37,7 +37,7 @@ ms.lasthandoff: 01/29/2018
 
 在您針對外部元件或已連線服務撰寫程式碼之前，您的專案首先必須包含所需的參考。 參考其實是在專案檔中的項目，包含 Visual Studio 找出該元件或該服務所需的資訊。
 
-若要加入參考，請在方案總管中的 [參考] 節點上按一下滑鼠右鍵，然後選擇 [加入參考] 。 如需詳細資訊，請參閱 [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要加入參考，請在方案總管中的 [參考] 節點上按一下滑鼠右鍵，然後選擇 [加入參考] 。 如需詳細資訊，請參閱 [如何：使用參考管理員新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
 ![在 Visual C&#43;&#43; 中新增參考](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
 

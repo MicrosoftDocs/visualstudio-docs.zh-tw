@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -65,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="application-files-dialog-box"></a>應用程式檔案對話方塊  
  您可利用這個對話方塊，指定專案中的檔案會如何分類以進行發行、動態下載與更新。 它包含的方格會列出預設未排除或有下載群組的專案檔案。  
   
- 若要排除的檔案，將檔案標示為資料檔案或先決條件，和 Visual Studio UI 中建立的條件式安裝的檔案群組，請參閱[How to： 指定的檔案是由 ClickOnce 發行](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 您也可以使用 Mage.exe 來標記資料檔。 如需詳細資訊，請參閱 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要排除的檔案，將檔案標示為資料檔案或先決條件，和 Visual Studio UI 中建立的條件式安裝的檔案群組，請參閱[How to： 指定的檔案是由 ClickOnce 發行](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 您也可以使用 Mage.exe 來標記資料檔。 如需詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 ### <a name="prerequisites-dialog-box"></a>必要條件對話方塊  
  這個對話方塊會指定安裝哪些必備元件，以及安裝這些元件的方法。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)和[必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。  

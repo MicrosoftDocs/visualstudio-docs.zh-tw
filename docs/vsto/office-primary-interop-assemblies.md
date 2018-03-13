@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -73,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="usingfeatures"></a> Using Features of Multiple Microsoft Office Applications in a Single Project  
  Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Microsoft Office 應用程式使用。 若要使用多個 Microsoft Office 應用程式中的功能，或是要使用未在 Visual Studio 中擁有專案之應用程式或元件中的功能，您必須加入所需 PIA 的參考。  
   
- 在大多數情況下，您應該加入由 Visual Studio 安裝在 %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\ 目錄下的 PIA 參考。 這些版本的組件會顯示在 [參考管理員]  對話方塊的 [架構]  索引標籤上。 如需詳細資訊，請參閱 [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+ 在大多數情況下，您應該加入由 Visual Studio 安裝在 %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\ 目錄下的 PIA 參考。 這些版本的組件會顯示在 [參考管理員]  對話方塊的 [架構]  索引標籤上。 如需詳細資訊，請參閱 [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
  如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。  
   
@@ -110,7 +112,7 @@ ms.lasthandoff: 01/10/2018
  當您在全域組件快取中安裝及註冊 Office PIA 時 (使用 Office 或是安裝 PIA 的可轉散發套件)，只會在全域組件快取中安裝繫結重新導向組件。 這些組件可確保執行階段載入的是正確版本的主要 Interop 組件。 例如，當參考 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 組件的方案會在具有相同主要 Interop 組件之 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的電腦上執行時，繫結重新導向組件會指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 執行階段載入 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主要 Interop 組件。 如需詳細資訊，請參閱[操作說明：啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
 ## <a name="see-also"></a>請參閱  
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [InfoPath 方案](../vsto/infopath-solutions.md)   
  [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)   

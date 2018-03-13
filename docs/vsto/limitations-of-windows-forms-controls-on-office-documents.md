@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
 |控制項調整大小|如果您調整使用其中一個八個調整大小控點的文件上的控制項，新的控制項維度不會反映在**屬性**直到則在重新選取控制項的視窗。|  
 |控制行為|Excel 工作表上的控制項可能會在工作表視窗分割時不正常的行為。 例如，若要存取<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>工作表上只可以在其中一個視窗中。|  
 |控制項命名|您無法使用保留的字名稱的控制項。 例如，如果您加入<xref:Microsoft.Office.Tools.Excel.Controls.Button>加入工作表並將名稱變更為**系統**，當您建置專案時，會發生錯誤。|  
-|以程式設計方式加入控制項|請勿將控制項加入文件，在執行階段使用控制項的建構函式。 相反地，使用所提供的協助程式方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法，將按鈕加入至工作表。 如果您想要加入的控制項不支援這些 helper 方法，您可以使用 AddControl 方法。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
+|以程式設計方式加入控制項|請勿將控制項加入文件，在執行階段使用控制項的建構函式。 相反地，使用所提供的協助程式方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法，將按鈕加入至工作表。 如果您想要加入的控制項不支援這些 helper 方法，您可以使用 AddControl 方法。 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。|  
 |複製控制項|如果您複製的 Windows Form 控制項，並將它貼到文件中，在執行階段，會將空的 ActiveX 控制項容器貼入文件。 不會顯示在 Windows Form 控制項，這是在新的位置，以及程式碼後置原始控制項不會複製到容器 ActiveX 控制項。|  
   
 ## <a name="limitations-in-document-level-projects"></a>在文件層級專案中的限制  

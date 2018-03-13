@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 4be05e4fb1b4fc74467f1607acaa3e84a6bdef95
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -79,7 +81,7 @@ ms.lasthandoff: 01/10/2018
 |**描述**|REG_SZ|必要。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項]  對話方塊的 [增益集]  窗格中選取 VSTO 增益集時，即會顯示這個描述。|  
 |**FriendlyName**|REG_SZ|必要。 這是 Microsoft Office 應用程式的 [COM 增益集]  對話方塊中，所顯示之 VSTO 增益集的描述性名稱。 預設值為 VSTO 增益集 ID。|  
 |**LoadBehavior**|REG_DWORD|必要。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱 [LoadBehavior 值](#LoadBehavior)。 **注意：**如果使用者停用 VSTO 增益集，該動作會修改**LoadBehavior** HKEY_CURRENT_USER 登錄區中的值。 每位使用者在 HKEY_CURRENT_USER 登錄區中的 **LoadBehavior** 值都會覆寫 HKEY_LOCAL_MACHINE 登錄區所定義的預設值 **LoadBehavior** 。|  
-|**Manifest**|REG_SZ|必要。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 也必須附加字串**&#124; vstolocal** (也就是縱線字元**（& s) #124;**後面**vstolocal**) 到這個路徑結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：**當您在開發電腦上建置 VSTO 增益集時，Visual Studio 會自動附加**&#124; vstolocal**字串為這個登錄項目。|  
+|**Manifest**|REG_SZ|必要。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 也必須附加字串**&#124; vstolocal** (也就是縱線字元**（& s) #124;**後面**vstolocal**) 到這個路徑結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱 [使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：**當您在開發電腦上建置 VSTO 增益集時，Visual Studio 會自動附加**&#124; vstolocal**字串為這個登錄項目。|  
   
 ###  <a name="OutlookEntries"></a> Outlook 表單區域登錄項目  
  如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中 *根目錄* 為 HKEY_CURRENT_USER 或 HKEY_LOCAL_MACHINE。  
