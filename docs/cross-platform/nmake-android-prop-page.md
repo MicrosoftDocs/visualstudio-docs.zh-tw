@@ -21,13 +21,13 @@ f1_keywords:
 - VC.Project.VCNMakeTool.ForcedIncludes
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9f39aaaa17f48f832210ca26c1e255ae4b054514
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 955e3f7dfbab3293a01392c52b82aa2b7dce25c2
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++) 
+# <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++)
 
 屬性 | 描述
 --- | ---
@@ -38,4 +38,4 @@ Clean 命令列 | 指定執行 'Clean' 命令的命令列。
 前置處理器定義 | 指定來源檔案所使用的前置處理器定義。
 Include 搜尋路徑 | 指定 Include 搜尋路徑以解析包含的檔案。
 強制內含 | 指定要強制內含的檔案。
-其他選項 | 指定在剖析 C++ 檔案時，Intellisense 所要使用的其他編譯器參數
+其他選項 | 指定在剖析 C++ 檔案時，IntelliSense 要使用的其他編譯器參數

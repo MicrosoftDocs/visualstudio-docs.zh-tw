@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -56,7 +56,7 @@ Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-type
 |使比對失效|(?!abc)|`real (?!ity)` 會比對 "realty" 和 "really" 中的 "real"，但不比對 "reality" 中的 "real"。 它也會在 "realityreal" 中找到第二個 "real" (但不是第一個 "real")。|
 |比對任何不在特定一組字元中的字元。|[^abc]|`be[^n-t]` 會比對 "before" 中的 "bef"、"behind" 中的 "beh" 和 "below" 中的 "bel"，但不比對 "beneath"。|
 |比對符號之前或之後的運算式。|&#124;|`(sponge&#124;mud) bath` 會比對 "sponge bath" 和 "mud bath"。|
-|逸出反斜線之後的字元|\\|`\^` 會比對字元 ^。|
+|逸出反斜線之後的字元| \\ |`\^` 會比對字元 ^。|
 |指定前置字元或群組的出現次數。|{x}，其中 x 是發生次數。|`x(ab){2}x` 會比對 "xababx"，而 `x(ab){2,3}x` 會比對 "xababx" 和 "xabababx"，但不比對 "xababababx"。|
 |比對 Unicode 字元類別中的文字，其中 "X" 是 Unicode 數字。 如需 Unicode 字元類別的詳細資訊，請參閱 <br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}|`\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。|
 |比對字邊界|`\b` (在字元類別之外 \b 會指定字邊界，在字元類別內則會指定退格鍵)。|`\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。|

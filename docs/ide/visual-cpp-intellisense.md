@@ -1,5 +1,5 @@
 ---
-title: Visual C++ Intellisense | Microsoft Docs
+title: Visual C++ IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C++ Intellisense
+# <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
 IntelliSense for C++ 適用於獨立檔案以及屬於 C++ 專案的檔案。 在跨平台專案中，某些 IntelliSense 功能可用於共用程式碼專案中的 .cpp 和 .c 檔案，即使您是在 Android 或 iOS 內容中亦然。
 

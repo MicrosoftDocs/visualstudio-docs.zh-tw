@@ -19,32 +19,38 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 03d1bbe55ed1b355742f9cd2d3dedc1b66812bbc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c48e9f22322cd5ebebeff0d987c32d369f98d03
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
-啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 並將環境變數載入到 [VC++ 目錄] 對話方塊。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-Devenv /useenv  
-```  
-  
-## <a name="example"></a>範例  
- 下列範例會啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 並將環境變數載入到 [VC++ 目錄] 對話方塊。  
-  
-```  
-Devenv.exe /useenv  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
+
+啟動 Visual Studio 並將環境變數載入 [VC++ 目錄] 對話方塊中。
+
+> [!NOTE]
+> 此參數的安裝包含 **使用 C++ 的桌面開發**工作負載。
+
+## <a name="syntax"></a>語法
+
+```shell
+Devenv /useenv
+```
+
+## <a name="example"></a>範例
+
+下列範例會啟動 Visual Studio 並將環境變數載入 [VC++ 目錄] 對話方塊中。
+
+```shell
+Devenv.exe /useenv
+```
+
+## <a name="see-also"></a>另請參閱
+
+* [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

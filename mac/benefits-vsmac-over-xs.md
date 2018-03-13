@@ -101,7 +101,7 @@ Azure 函式是用來在雲端中輕鬆執行少量程式碼片段或函式的�
 
 您現在可以將 ASP.NET Core 應用程式發行至 Docker 容器，並從 Azure 應用程式服務執行。 
 
-若要在專案中啟用 Docker 支援，請以滑鼠右鍵按一下 ASP.NET Core Web 應用程式，然後選取 [新增] > [Add Docker Support] (新增 Docker 支援)。 
+若要在專案中啟用 Docker 支援，請以滑鼠右鍵按一下 ASP.NET Core Web 應用程式，然後選取 [新增] > [Add Docker Support]\ (新增 Docker 支援)。 
 
 若要將 Web 應用程式發行至 Docker 容器，請使用 Visual Studio for Mac 中引進的 [發行] > [發行到 Azure] 工作流程。
 

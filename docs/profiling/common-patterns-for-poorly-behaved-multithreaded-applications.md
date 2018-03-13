@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/21/2018
 
 ![無效率 I/O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-過度使用或濫用 I/O 是應用程式缺乏效率的常見原因。 請參考上圖。 可見時間軸分析顯示 42% 的可見執行緒時間是由 I/O 使用。 時間軸顯示大量 I/O，表示分析的應用程式經常會被 I/O 所阻塞。 若要查看 I/O 種類和阻塞程式位置的詳細資料，請放大有問題的區域、檢查可見時間軸分析，然後按一下特定的 I/O 區塊以查看目前的呼叫堆疊。
+過度使用或濫用 I/O 是應用程式缺乏效率的常見原因。 請參考上圖。 可見時間軸分析顯示 I/O 使用了 44% 的可見執行緒時間。 時間軸顯示大量 I/O，表示分析的應用程式經常會被 I/O 所阻塞。 若要查看 I/O 種類和阻塞程式位置的詳細資料，請放大有問題的區域、檢查可見時間軸分析，然後按一下特定的 I/O 區塊以查看目前的呼叫堆疊。
 
 ## <a name="lock-convoys"></a>鎖定護送
 

@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>運算子 (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 具有完整範圍的運算子，包含算術、邏輯、位元、指派，以及一些雜項運算子。 如需說明和範例，請參閱特定運算子的主題。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |[遞減](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[乘法](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[除法](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[模數算術](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[算術餘數](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[加法](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[減法](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 10/27/2017
   
  基本字串、數字和布林值是依值進行比較。 如果它們的值相同，則相等。 物件 (包含 `Array`、`Function`、`String`、**Number**、`Boolean`、**Error**、`Date` 和 `RegExp` 物件) 是以傳址方式比較。 即使這些類型的兩個變數擁有相同的值，它們也只有在指向完全相同的物件時才會相等。  
   
- 例如：  
+ 例如:   
   
 ```JavaScript  
 // Two strings with the same value.  

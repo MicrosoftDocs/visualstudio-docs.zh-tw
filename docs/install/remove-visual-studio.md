@@ -5,7 +5,8 @@ ms.custom:
 ms.date: 09/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,7 +22,8 @@ ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: heaths
 manager: erickn
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a08a24be4f3f9e915a93c9beac7cf5e5c28eb7ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 
 1. 關閉 Visual Studio 安裝程式。
 2. 開啟系統管理員命令提示字元。 若要開啟系統管理員命令提示字元，請遵循下列步驟：
-   * 在 [開始] 功能表上，按一下 [執行] (開始 + R)。
+   * 在 [開始] 功能表上，按一下 [執行] \(開始 + R)。
    * 輸入 **cmd**。
    * 以滑鼠右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身分執行]。
 3. 輸入 `InstallCleanup.exe` 公用程式的完整路徑，並傳遞您想要的任何命令列參數。 根據預設，公用程式的路徑如下所示：

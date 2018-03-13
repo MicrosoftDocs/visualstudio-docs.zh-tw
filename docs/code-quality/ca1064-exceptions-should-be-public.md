@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - ExceptionsShouldBePublic
 - CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7779be831b32572addb6198b5a5be46616cdb1b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b376de69c288a084ff3bb33aba1e1b8a0bc881e5
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：例外狀況必須是公用
 |||  
@@ -39,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>規則描述  
  只有在它自己的內部範圍內顯示內部例外狀況。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>，外部的程式碼就沒有足夠的資訊可以知道該如何處理例外狀況。  
   
- 但是，如果程式碼可於稍後當做基底的內部例外狀況的公用例外狀況，它是合理假設在進一步的程式碼時將能夠做到智慧型與基底例外狀況。 公用例外狀況必須由 T:System.Exception、 T:System.SystemException 或 T:System.ApplicationException 所提供的詳細資訊。  
+ 但是，如果程式碼可於稍後當做基底的內部例外狀況的公用例外狀況，它是合理假設在進一步的程式碼時將能夠做到智慧型與基底例外狀況。 公用例外狀況將會在提供的方式<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  將例外狀況設為公用，或衍生不是公用例外狀況的內部例外狀況<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>。  
