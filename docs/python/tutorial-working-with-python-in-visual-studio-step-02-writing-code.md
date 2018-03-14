@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1ca877c08e336fb9b62e037f94fadcbb9380f29
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a6efed0adae6a321595af2e58c4db79f0da2f679
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>第 2 步：撰寫和執行程式碼
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 02/09/2018
 
     ```python
     import sys
-    from math import sin, cos, radians
+    from math import cos, radians
     ```
 
     > [!Tip]

@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 C# ASP.NET Core Web 應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 C# ASP.NET Core Web 應用程式。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -39,13 +41,13 @@ ms.lasthandoff: 01/23/2018
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定]。
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/quickstart-aspnet-core20.png)
 
 ## <a name="explore-the-ide"></a>探索 IDE
 
-1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。
+1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中予以開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。
 
 1. 在編輯器中，選擇 `AboutModel`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 `AboutModel` C# 類別的定義。
 
@@ -86,6 +88,5 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)  
-[使用 Visual Studio 的 C# 和 Visual Basic 使用者入門](getting-started-with-visual-csharp-and-visual-basic.md)  
-[開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)
+* [開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)

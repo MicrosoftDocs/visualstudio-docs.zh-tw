@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -39,7 +40,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -77,12 +79,12 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目不能做為具有使用者介面之控制項的容器。 相反地，這個主項目之設計工具的作用就像是元件匣，可讓您將 <xref:System.Data.DataSet>等元件拖曳至其設計介面上。 如需詳細資訊，請參閱 [Workbook Host Item](../vsto/workbook-host-item.md)。  
   
- 您無法在文件層級專案中以程式設計方式建立主項目。 請改用 Visual Studio 在設計階段於專案中自動產生的 `ThisDocument`、 `ThisWorkbook`或 `Sheet`*n* 類別。 這些產生的類別衍生自主項目，並且會提供程式碼的進入點。 如需詳細資訊，請參閱 [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+ 您無法在文件層級專案中以程式設計方式建立主項目。 請改用 Visual Studio 在設計階段於專案中自動產生的 `ThisDocument`、 `ThisWorkbook`或 `Sheet`*n* 類別。 這些產生的類別衍生自主項目，並且會提供程式碼的進入點。 如需詳細資訊，請參閱 [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>了解 VSTO 增益集專案中的主項目  
  當您建立 VSTO 增益集時，預設無法存取任何主項目。 不過，您可以在執行階段於 Word 和 Excel VSTO 增益集中產生 <xref:Microsoft.Office.Tools.Word.Document>、 <xref:Microsoft.Office.Tools.Excel.Workbook>和 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
   
- 產生主項目之後，您可以執行像是將控制項加入文件等工作。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 產生主項目之後，您可以執行像是將控制項加入文件等工作。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="host-controls"></a>主控制項  
  主控制項會擴充 Word 和 Excel 物件模型，例如 Microsoft.Office.Interop.Word.ContentControl 中的各種使用者介面 (UI) 物件和<xref:Microsoft.Office.Interop.Excel.Range>物件。  
@@ -127,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 -   將主控制項從 [資料來源]  視窗拖曳至文件和工作表上。 這可讓您加入已經繫結至資料的控制項。 如需詳細資訊，請參閱[資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 在文件層級和 VSTO 增益集專案中，您也可以在執行階段將某些主控制項加入文件。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 在文件層級和 VSTO 增益集專案中，您也可以在執行階段將某些主控制項加入文件。 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  如需如何將主控制項加入文件的詳細資訊，請參閱下列主題：  
   
@@ -158,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
  如果在設計階段將主控制項加入文件，則不應該在執行階段以程式設計方式將其移除，因為這麼做會使您下次嘗試使用程式碼中的控制項時，擲回例外狀況。 主控制項的 `Delete` 方法只會移除在執行階段加入文件的主控制項。 如果您呼叫在設計階段建立之主控制項的 `Delete` 方法，則會擲回例外狀況。  
   
- 例如，只有 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> 是以程式設計方式加入工作表時 (也稱為動態建立主控制項)， <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 方法才能成功刪除這個主控制項。 將控制項名稱傳遞至 `Remove` 或 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 屬性的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 方法，也可以移除動態建立的主控制項。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 例如，只有 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> 是以程式設計方式加入工作表時 (也稱為動態建立主控制項)， <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 方法才能成功刪除這個主控制項。 將控制項名稱傳遞至 `Remove` 或 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 屬性的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 方法，也可以移除動態建立的主控制項。 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  如果使用者在執行階段從文件刪除主控制項，方案可能會以無法預期的方式失敗。 您可以使用 Word 和 Excel 中的文件保護功能，防止主控制項遭到刪除。 如需詳細資訊，請參閱 [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)。  
   
@@ -172,7 +174,7 @@ ms.lasthandoff: 01/10/2018
 >  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 **false** ，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。  
   
 ## <a name="see-also"></a>請參閱  
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   

@@ -13,15 +13,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 96ae67eb895292e909e01471b329df6de587c75f
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，我們將簡介部分視窗、功能表和其他 UI 功能。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
 
 ## <a name="start-page"></a>起始頁
 
@@ -47,9 +49,9 @@ ms.lasthandoff: 01/23/2018
 
 ![底下提供說明，包括方案總管](media/quickstart-IDE-solution-explorer.png)
 
-## <a name="menus"></a>功能表
+## <a name="menus"></a>Menus
 
-IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能表會包含您正在處理之專案的相關命令。 在 [工具] 功能表上，您可以選取 [選項] 來自訂 IDE，或選取 [取得工具與功能] 來將功能新增到您的安裝。
+IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能表會包含您正在處理的專案相關命令。 在 [工具] 功能表上，您可以選取 [選項] 來自訂 IDE，或選取 [取得工具與功能] 來將功能新增到您的安裝。
 
 ![功能表列](media/quickstart-IDE-menu-bar.png)
 
@@ -65,7 +67,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 [輸出] 視窗顯示來自「建置」和「原始檔控制」的輸出訊息。
 
-讓我們建置專案以查看一些輸出記錄。 從 [建置] 功能表中，選擇 [建置方案]。 [輸出] 視窗會自動取得焦點並顯示成功建置訊息。
+讓我們建置專案以查看一些輸出記錄。 從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。 [輸出] 視窗會自動取得焦點並顯示成功建置訊息。
 
 ![輸出視窗](media/quickstart-IDE-output.png)
 

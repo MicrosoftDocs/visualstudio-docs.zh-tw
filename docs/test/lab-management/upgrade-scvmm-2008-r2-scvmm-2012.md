@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 51d907dfe25d8f27065b2a4d8bbecaa3e98e42a1
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="upgrade-scvmm-2008-r2-to-scvmm-2012"></a>將 SCVMM 2008 R2 升級至 SCVMM 2012
 

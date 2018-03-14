@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 |Edit.Delete|Delete [全域、Team Explorer]<br /><br /> 或 Shift+Delete [循序圖、UML 活動圖、分層圖]<br /><br /> 或 Ctrl+Delete [類別圖]|  
 |Edit.Find|Ctrl+F [全域]|  
 |Edit.FindAllReferences|Shift+F12 [全域]|  
-dit.FindinFiles|Ctrl+Shift+F [全域]|  
+|Edit.FindinFiles|Ctrl+Shift+F [全域]|  
 |Edit.FindNext|F3 [全域]|  
 |Edit.FindNextSelected|Ctrl+F3 [全域]|  
 |Edit.FormatDocument|Ctrl+K、Ctrl+D [文字編輯器]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|Ctrl+Shift+F [全域]|
 |Edit.LineDownExtendColumn|Shift+Alt+向下鍵 [文字編輯器]|  
 |Edit.LineOpenAbove|Ctrl+Enter [文字編輯器]|  
 |Edit.ListMembers|Ctrl+J [文字編輯器、工作流程設計工具]<br /><br /> 或 Ctrl+K、Ctrl+L [工作流程設計工具]<br /><br /> 或 Ctrl+K、L [工作流程設計工具]|  
-dit.NavigateTo|Ctrl+, [全域]|  
+|Edit.NavigateTo|Ctrl+, [全域]|  
 |Edit.OpenFile|Ctrl+Shift+G [全域]|  
 |Edit.OvertypeMode|Insert [文字編輯器]|  
 |Edit.ParameterInfo|Ctrl+Shift+空格鍵 [文字編輯器、工作流程設計工具]<br /><br /> 或 Ctrl+K、Ctrl+P [工作流程設計工具]<br /><br /> 或 Ctrl+K、P [工作流程設計工具]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|Ctrl+, [全域]|
 |Edit.SelectAll|Ctrl+A [全域]|  
 |Edit.SelectCurrentWord|Ctrl+W [文字編輯器]|  
 |Edit.SelectionCancel|Esc [文字編輯器、報表設計工具，設定設計工具、Windows Form 設計工具、Managed 資源編輯器]|  
-dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|  
+|Edit.SurroundWith|Ctrl+K、Ctrl+S [全域]|  
 |Edit.TabLeft|Shift+Tab [文字編輯器、報表設計工具、Windows Form 設計工具]|  
 |Edit.ToggleAllOutlining|Ctrl+M、Ctrl+L [文字編輯器]|  
 |Edit.ToggleBookmark|Ctrl+K、Ctrl+K [文字編輯器]|  
@@ -155,7 +157,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |View.ServerExplorer|Ctrl+Alt+S [全域]|  
 |View.ShowSmartTag|Ctrl+. [Global]<br /><br /> 或 Shift+Alt+F10 [全域、HTML 編輯器設計檢視]|  
 |View.SolutionExplorer|Ctrl+Alt+L [全域]|  
-iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|  
+|View.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|  
 |View.Toolbox|Ctrl+Alt+X [全域]|  
 |View.ViewCode|Enter [類別圖]<br /><br /> 或 F7 [設定設計工具]|  
 |View.ViewDesigner|Shift+F7 [HTML 編輯器原始碼檢視]|  

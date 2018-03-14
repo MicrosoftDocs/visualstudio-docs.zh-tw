@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>控制 R 程式碼以工作區執行的位置
 
@@ -31,17 +31,6 @@ Visual Studio R 工具 (RTVS) 的工作區可讓您設定 R 工作階段的執�
 ![Visual Studio R 工具的工作區視窗 (VS2017)](media/workspaces-window.png)
 
 在此視窗中，綠色的核取記號表示 RTVS 繫結所在的使用中工作區。 選取藍色箭頭可設定使用中的工作區。 每個工作區右邊的設定 (齒輪) 圖示可讓您變更其名稱、位置和命令列引數。 紅色 X 會移除以手動方式新增的工作區。
-
-本主題內容：
-
-- [儲存並重設工作區](#saving-and-resetting-a-workspace)
-- [本機工作區](#local-workspaces)
-- [遠端工作區](#remote-workspaces)
-- [遠端工作區登入](#remote-workspace-logon)
-- [切換工作區](#switching-between-workspaces)
-- [本機和遠端電腦上的目錄](#directories-on-local-and-remote-computers)
-- [將專案檔案複製到遠端工作區](#copying-project-files-to-remote-workspaces)
-- [從遠端工作區複製檔案](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>儲存並重設工作區
 

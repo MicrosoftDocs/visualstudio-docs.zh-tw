@@ -2,7 +2,7 @@
 title: "快速入門 - 在 Visual Studio 中使用範本來建立 Python 專案 | Microsoft Docs"
 description: "使用內建範本之一來建立 Visual Studio 專案，以快速開始使用 Python。"
 ms.custom: 
-ms.date: 09/25/2017
+ms.date: 03/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
@@ -66,14 +66,14 @@ ms.lasthandoff: 02/23/2018
             output += "%04d" % (carry + (total / scale))
             carry = total % scale
 
-        return output;
+        return output
 
     def test_py():
-        digits = 1000;
+        digits = 1000
 
         start = perf_counter()
-        output = pi_digits_Python(digits);
-        elapsed = perf_counter() - start;
+        output = pi_digits_Python(digits)
+        elapsed = perf_counter() - start
 
         print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 02/23/2018
         print(output.replace("3", "3.", 1))
 
     if __name__ == "__main__":
-        test_py();
+        test_py()
     ```
 
 1. 按 Ctrl+F5，或是選取功能表上的 [偵錯] > [啟動但不偵錯]，以執行程式。 結果會顯示在主控台視窗中。

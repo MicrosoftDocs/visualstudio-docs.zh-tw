@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -154,7 +154,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 `.targets` 檔案�
 | 引數 | Optional | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 `python.exe`。 若為 `code` TargetType 請予以略過。 |
 | ExecuteIn | [是] | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式視窗](interactive-repl.md)中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中執行命令的資料夾。 |
-| ErrorRegex<br>WarningRegEx | Optional | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單] 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單] 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expression)。 |
+| ErrorRegex<br>WarningRegEx | Optional | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單] 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單] 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | Optional | 命令的套件需求清單，格式與 [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io) 相同。 例如 [執行 PyLint] 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
 | 環境 | Optional | 可在執行命令前定義的環境變數字串。 每個變數的格式均為 NAME=VALUE 加上數個以分號分隔的變數。 具有多個值的變數須以單引號或雙引號括住，例如 'NAME=VALUE1;VALUE2'。 |
 

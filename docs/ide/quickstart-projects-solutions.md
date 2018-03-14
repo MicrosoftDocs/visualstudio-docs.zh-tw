@@ -12,15 +12,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
 
 在這個 10 分鐘的快速入門中，我們將探討在 Visual Studio 中建立解決方案和專案的意義。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立第二個專案的參考。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
 
 > [!TIP]
 > 我們將會在本快速入門中從頭建構解決方案和專案，作為教育練習以了解專案的概念。 在 Visual Studio 的一般使用中，您最可能在建立新專案時使用 Visual Studio 所提供的許多專案範本。
