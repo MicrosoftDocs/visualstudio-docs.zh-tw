@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/13/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>影像和 Visual Studio 的圖示
-##  <a name="BKMK_ImageUseInVisualStudio"></a>使用 Visual Studio 中的映像  
+##  <a name="BKMK_ImageUseInVisualStudio"></a> 使用 Visual Studio 中的映像  
  在之前建立圖檔，請考慮進行 1000 + 中的映像使用[Visual Studio 影像庫](http://www.microsoft.com/en-my/download/details.aspx?id=35825)。  
   
 ### <a name="types-of-images"></a>類型的映像  
@@ -37,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **資料指標。** 用來指出是否允許操作，使用的滑鼠，其中物件可能會中斷，依此類推。  
   
-##  <a name="BKMK_IconDesign"></a>設計圖示  
+##  <a name="BKMK_IconDesign"></a> 設計圖示  
   
 ### <a name="overview"></a>總覽  
  Visual Studio 會使用具有全新的幾何和正負數 （淡/濃） 50/50 平衡和使用直接、 容易了解象徵物的現代化樣式圖示。 重要圖示設計點清楚、 簡化主機，以及內容周圍的中心。  
@@ -86,22 +88,22 @@ ms.lasthandoff: 12/22/2017
   
 |||  
 |-|-|  
-|**[顯示]**|**「 檢視 」**|  
+|**"Show"**|**"View"**|  
 |![顯示圖示](../../extensibility/ux-guidelines/media/0404-07_show.png "0404年 07_Show")|![檢視圖示](../../extensibility/ux-guidelines/media/0404-08_view.png "0404年 08_View")|  
   
  向右放大玻璃圖示應該代表只會搜尋、 尋找和瀏覽。 加號或減號向左 variant 應該代表只有放大/縮小。  
   
 |||  
 |-|-|  
-|**「 搜尋 」**|**[縮放]**|  
-|![搜尋圖示](../../extensibility/ux-guidelines/media/0404-09_search.png "0404年 09_Search")|![顯示比例 圖示](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404年 10_Zoom")|  
+|**"Search"**|**"Zoom"**|  
+|![Search icon](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![顯示比例 圖示](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404年 10_Zoom")|  
   
  在樹狀結構檢視中，請勿使用資料夾圖示和修飾詞。 可用時，使用的修飾詞。  
   
 |||  
 |-|-|  
 |**正確的樹狀檢視圖示**|**不正確的樹狀檢視圖示**|  
-|![正確的樹狀檢視圖示 &#40; 1 &#41;] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404年 11_TreeViewCorrect1") ![更正樹狀檢閱圖示 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404年 12_TreeViewCorrect2")|![不正確的樹狀檢視圖示 &#40; 1 &#41;] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404年 13_TreeViewIncorrect1") ![不正確的樹狀檢視圖示 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404年 14_TreeViewIncorrect2")|  
+|![正確的樹狀檢視圖示&#40;1&#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404年 11_TreeViewCorrect1") ![正確的樹狀檢視圖示&#40;2&#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404年 12_TreeViewCorrect2")|![不正確的樹狀檢視圖示&#40;1&#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404年 13_TreeViewIncorrect1") ![不正確的樹狀檢視圖示&#40;2&#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404年 14_TreeViewIncorrect2")|  
   
 ### <a name="style-details"></a>樣式詳細資料  
   
@@ -147,7 +149,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**正確的負-正比例**|**不正確的負-正比率**|  
-|![正確視覺比例的圖示 &#40; 1 &#41;] (../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404年 26_VisualWeightCorrect1")<br /><br /> ![正確視覺比例的圖示 &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404年 27_VisualWeightCorrect2")<br /><br /> ![正確視覺比例的圖示 &#40; 3 &#41;] (../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404年 28_VisualWeightCorrect3")|![不正確的圖示視覺加權](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404年 29_VisualWeightIncorrect")|  
+|![更正的圖示視覺加權&#40;1&#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404年 26_VisualWeightCorrect1")<br /><br /> ![更正的圖示視覺加權&#40;2&#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404年 27_VisualWeightCorrect2")<br /><br /> ![更正的圖示視覺加權&#40;3&#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404年 28_VisualWeightCorrect3")|![不正確的圖示視覺加權](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404年 29_VisualWeightIncorrect")|  
   
  使用簡單、 比較圖形和互補角度而不必犧牲項目整合建置您的項目。 請盡可能使用 45 度或 90 度的角度。  
   
@@ -201,7 +203,7 @@ ms.lasthandoff: 12/22/2017
   
  **小型 (16 x 16) 專案**圖示應該有兩個以上的項目： 一個基底和一個修飾詞。  
   
- ![小型 (16 x 16) 的範例專案圖示](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404年 43_16x16Project1") ![16x16 專案圖示 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404年 44_16x16Project2") ![16x16 專案圖示 &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404年 45_16x16Project3")<br />小型 (16 x 16) 的範例專案圖示
+ ![小型 (16 x 16) 的範例專案圖示](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404年 43_16x16Project1") ![16x16 專案圖示&#40;2&#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404年 44_16x16Project2") ![16x16 專案圖示&#40;3&#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404年 45_16x16Project3")<br />小型 (16 x 16) 的範例專案圖示
   
  **大型 (32x32) 專案**圖示包含不超過四個下列項目： 一個基底、 一到兩個修飾詞和重疊的一種語言。  
   
@@ -248,7 +250,7 @@ ms.lasthandoff: 12/22/2017
   
  如需有關使用 Visual Studio 圖示色彩的詳細資訊，請參閱[映像中使用色彩](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)。  
   
-##  <a name="BKMK_UsingColorInImages"></a>使用映像中的色彩  
+##  <a name="BKMK_UsingColorInImages"></a> 使用映像中的色彩  
   
 ### <a name="overview"></a>總覽  
  在 Visual Studio 中的圖示是主要是單色。 保留色彩傳達的特定資訊並永遠不會為裝飾。 使用色彩：  
@@ -275,8 +277,8 @@ ms.lasthandoff: 12/22/2017
 |使用量|名稱|值 （淺色佈景主題）|樣本|範例|  
 |-----------|----------|---------------------------|------------|-------------|  
 |暗色調背景 /|VS BG|424242 / 66,66,66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基礎調色盤範例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405年 02_BasePaletteExample")|  
-|前景/輕|VS FG|F0EFF1 / 240,239,241|![樣本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
-|外框|VS 出|F6F6F6 / 246,246,246|![樣本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
+|前景/輕|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|外框|VS 出|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  除了基底的色彩，每個圖示可包含一種擴充調色盤中的其他色彩。  
   
@@ -287,17 +289,17 @@ ms.lasthandoff: 12/22/2017
   
 |使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
-|正|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|正|VS 動作綠色|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |負|VS 動作紅色|A1260D / 161,38,13|![樣本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|中性|VS 動作藍色|00539 C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|建立/新增|VS 動作橙色|C27D1A / 194,156,26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|中性|VS 動作藍色|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|建立/新增|VS 動作橙色|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>範例  
  綠色用於正向動作修飾詞，例如 「 新增 」，「 執行，"播放、 」 和 「 驗證 」。  
   
 |||||  
 |-|-|-|-|  
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />執行|![執行查詢圖示](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405年 04_ExecuteQuery")<br />執行查詢|![播放所有步驟圖示](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405年 05_PlayAllSteps")<br />播放所有步驟|![加入控制項圖示](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405年 06_AddControl")<br />加入控制項|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />執行|![執行查詢圖示](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405年 04_ExecuteQuery")<br />執行查詢|![播放所有步驟圖示](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405年 05_PlayAllSteps")<br />播放所有步驟|![加入控制項圖示](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405年 06_AddControl")<br />加入控制項|  
   
  紅色用於負動作修改像是"Delete"的 [停止]，[取消] 和 [關閉]。  
   
@@ -309,7 +311,7 @@ ms.lasthandoff: 12/22/2017
   
 |||||  
 |-|-|-|-|  
-|![移至欄位圖示](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405年 11_GoToField")<br />請移至欄位|![批次檢查 &#45; 在圖示](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405年 12_BatchedCheckIn")<br />批次簽入|![地址編輯器圖示](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405年 13_AddressEditor")<br />地址編輯器|![關聯編輯器圖示](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405年 14_AssociationEditor")<br />關聯編輯器|  
+|![移至欄位圖示](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405年 11_GoToField")<br />請移至欄位|![批次檢查&#45;圖示中](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405年 12_BatchedCheckIn")<br />批次簽入|![Address editor icon](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />地址編輯器|![關聯編輯器圖示](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405年 14_AssociationEditor")<br />關聯編輯器|  
   
  深色金級主要用於 「 新增 」 修飾詞。  
   
@@ -322,7 +324,7 @@ ms.lasthandoff: 12/22/2017
   
 ||||||  
 |-|-|-|-|-|  
-|![執行圖示](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405年 03_ActionModifierRun")<br />執行|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />刪除|![儲存圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />儲存|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />往回導覽|  
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />執行|![停止圖示](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405年 19_Stop")<br />停止|![刪除圖示](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405年 20_Delete")<br />刪除|![儲存圖示](../../extensibility/ux-guidelines/media/0405-21_save.png "0405年 21_Save")<br />儲存|![向後巡覽圖示](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405年 22_NavigateBack")<br />往回導覽|  
   
 ### <a name="code-hierarchy-palette"></a>程式碼階層架構調色盤  
   
@@ -330,39 +332,39 @@ ms.lasthandoff: 12/22/2017
   
 |使用量|名稱|值 （所有主題）|樣本|範例|  
 |-----------|----------|--------------------------|------------|-------------|  
-|資料夾|資料夾|DCB67A / 220,182,122|![樣本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
+|資料夾|資料夾|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![資料夾色彩圖示](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Visual Studio 語言  
  每個一般的 語言 或 Visual Studio 中提供的平台有相關聯的色彩。 這些色彩使用基底的圖示，或出現在複合圖示右上角的語言修飾詞。  
   
 |使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
-|ASP，HTML，WPF|ASP HTML WPF 藍色|0095D 7 / 0,149,215|![樣本 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
+|ASP，HTML，WPF|ASP HTML WPF 藍色|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP 紫色|9B4F96 / 155,79,150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|C#|CS 綠色 （VS 動作綠色）|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|CSS|CSS 紅色|BD1E2D / 189,30,45|![樣本 BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|FS 紫色|672878 / 103,40,120|![樣本 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
-|JavaScript|JS 橙色|F16421 / 241,100,33|![樣本 F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB 藍色 （VS 動作藍色）|00539 C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|TypeScript|TS 橙色|E04C06 / 224,76,6|![樣本 E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
-|Python|PY 綠色|879636 / 135,150,54|![樣本 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
+|C#|CS 綠色 （VS 動作綠色）|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|CSS|CSS 紅色|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
+|F#|FS 紫色|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|JavaScript|JS 橙色|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
+|VB|VB 藍色 （VS 動作藍色）|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|TypeScript|TS 橙色|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
+|Python|PY 綠色|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>圖示與語言修飾詞的範例  
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Visual Basic 圖示](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405年 25_VB")<br />VB|![& #35。圖示](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405年 26_CSharp")<br />C#|![C# 43; &#43;圖示](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405年 27_CPlusPlus")<br />C++|![& #35。圖示](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405年 28_FSharp")<br />F#|![JavaScript 圖示](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405年 29_JavaScript")<br />JavaScript|![Python 圖示](../../extensibility/ux-guidelines/media/0405-30_python.png "0405年 30_Python")<br />Python|  
-|![HTML 圖示](../../extensibility/ux-guidelines/media/0405-31_html.png "0405年 31_HTML")<br />HTML|![WPF 圖示](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405年 32_WPF")<br />WPF|![ASP 圖示](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405年 33_ASP")<br />ASP|![CSS 圖示](../../extensibility/ux-guidelines/media/0405-34_css.png "0405年 34_CSS")<br />CSS|![TypeScript 圖示](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405年 35_TypeScript")<br />TypeScript||  
+|![Visual Basic 圖示](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405年 25_VB")<br />VB|![C&#35;圖示](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405年 26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript icon](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Python icon](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|  
+|![HTML 圖示](../../extensibility/ux-guidelines/media/0405-31_html.png "0405年 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense 圖示使用獨佔的調色盤。 這些色彩可協助使用者快速區分 IntelliSense 快顯清單中的不同項目。  
   
 |使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
-|事件類別|VS 動作橙色|C27D1A / 194,125,26|![樣本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|擴充方法，方法中，模組中委派|VS 動作紫色|652 D 90 / 101,45,144|![樣本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|欄位、 列舉項目、 巨集、 結構、 等位的實值型別，運算子，介面|VS 動作藍色|00539 C / 0,83,156|![樣本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Object|VS 動作綠色|388A34 / 56,138,52|![樣本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|事件類別|VS 動作橙色|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|擴充方法，方法中，模組中委派|VS 動作紫色|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|欄位、 列舉項目、 巨集、 結構、 等位的實值型別，運算子，介面|VS 動作藍色|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Object|VS 動作綠色|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |常數，例外狀況、 列舉項目、 地圖、 地圖項目、 命名空間中，範本中，類型定義|背景 (VS BG)|424242 / 66,66,66|![樣本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense 圖示的範例  
@@ -378,11 +380,11 @@ ms.lasthandoff: 12/22/2017
 |使用量|名稱|值 （所有主題）|樣本|  
 |-----------|----------|--------------------------|------------|  
 |狀態： 中性|通知藍色 （與藍色）|1BA1E2 / 27,161,226|![樣本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|狀態： 正數|通知綠色 （VS 綠色）|339933 / 51,153,51|![樣本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
-|狀態： 負數|通知紅色 （VS 紅色）|E51400 / 229,20,0|![樣本 E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
-|狀態： 警告|通知黃色 （VS 橘色）|FFCC00 / 255,204,0|![樣本 FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
-|前景填滿|通知黑色 （黑色）|000000 / 0,0,0|![樣本 &#35; 000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
-|前景填滿|通知白色 （白色）|FFFFFF / 255,255,255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|狀態： 正數|通知綠色 （VS 綠色）|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|狀態： 負數|通知紅色 （VS 紅色）|E51400 / 229,20,0|![Swatch E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
+|狀態： 警告|通知黃色 （VS 橘色）|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
+|前景填滿|通知黑色 （黑色）|000000 / 0,0,0|![樣本&#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
+|前景填滿|通知白色 （白色）|FFFFFF / 255,255,255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>通知圖示的範例  
   
@@ -396,23 +398,23 @@ ms.lasthandoff: 12/22/2017
 |群組|使用量|名稱|值 （所有主題）|樣本|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|背景|TFSO BG|656565/ 101, 101, 101|![樣本 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
-|TFS|外框|TFSO 出|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Napa|背景|白色|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Monaco|背景|白色|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|背景|白色|FFFFFF / 255，255，255|![樣本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|TFS|外框|TFSO 出|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Napa|背景|白色|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Monaco|背景|白色|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|F12|背景|白色|FFFFFF / 255，255，255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|一般|F12 Grey_Primary|555555 / 85, 85, 85|![樣本 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
-|F12|暫留|F12 Blue_Hover|2279BF / 34,121,191|![樣本 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|已停用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![樣本 ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
-|F12|將滑鼠停留背景|將滑鼠停留 bg|D9EBF7 / 217,235,247|![樣本 D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
-|F12|已按下的背景|已按下的 bg|B2D7F0 / 178,215,240|![樣本 B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
-|F12|外框|VS 出|F6F6F6 / 246,246,246|![樣本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
-|F12|資訊|資訊|00BCF2 / 0,188,242|![樣本 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
-|F12|警告|警告|F28300 / 242,131,0|![樣本 F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
-|F12|錯誤 / 負數|Error_Negative|E81123 / 232,17,35|![樣本 E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
-|F12|啟動 / 正數|Start_Positive|009E49 / 0,158,73|![樣本 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
+|F12|暫留|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
+|F12|已停用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|將滑鼠停留背景|將滑鼠停留 bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
+|F12|已按下的背景|已按下的 bg|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
+|F12|外框|VS 出|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
+|F12|資訊|資訊|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
+|F12|警告|警告|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
+|F12|錯誤 / 負數|Error_Negative|E81123 / 232,17,35|![Swatch E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
+|F12|啟動 / 正數|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
 |F12|中斷類型|中斷類型|9B4F96 / 155,79,150|![樣本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|F12|事件標記|事件標記|A51F00 / 165,31,0|![樣本 A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
-|F12|使用者標記|使用者標記|F16220 / 241,98,32|![樣本 F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
+|F12|事件標記|事件標記|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
+|F12|使用者標記|使用者標記|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Visual Studio Online 圖示的範例  
   
@@ -422,11 +424,11 @@ ms.lasthandoff: 12/22/2017
   
 |Napa||||  
 |----------|-|-|-|  
-|![Napa 內容圖示](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />內容|![Napa 辦公室郵件圖示](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 郵件|![Napa SharePoint 圖示](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 工作窗格圖示](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />工作窗格|  
+|![Napa 內容圖示](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />內容|![Napa 辦公室郵件圖示](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 郵件|![Napa SharePoint icon](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Napa 工作窗格圖示](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />工作窗格|  
   
 |Monaco||||  
 |------------|-|-|-|  
-|![Monaco 檔案圖示](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405年 57_MonacoFiles")<br />檔案|![Monaco Git 圖示](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405年 58_MonacoGit")<br />Git|![Monaco 搜尋圖示](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405年 59_MonacoSearch")<br />搜尋|![Monaco 文字圖示](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405年 60_MonacoText")<br />Text|  
+|![Monaco 檔案圖示](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405年 57_MonacoFiles")<br />檔案|![Monaco Git icon](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Monaco 搜尋圖示](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405年 59_MonacoSearch")<br />搜尋|![Monaco 文字圖示](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405年 60_MonacoText")<br />Text|  
   
 |F12|||  
 |---------|-|-|  

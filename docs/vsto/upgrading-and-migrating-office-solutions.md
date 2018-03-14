@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -69,7 +71,7 @@ ms.lasthandoff: 01/10/2018
  Visual Studio 2013 中的 Office 專案只能以 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 應用程式為目標。 Visual Studio 會將專案的目標修改為目標已安裝的 Office 最新版本。 如未安裝這些版本的 Office，Visual Studio 就不會升級專案。  
   
 > [!NOTE]  
->  如果您在 VSTO 增益集專案升級至目標[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]或更新版本中，請確定`ThisAddIn_Startup`VSTO 增益集的事件處理常式不包含會存取應用程式中的文件的程式碼。 如需詳細資訊，請參閱 [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+>  如果您在 VSTO 增益集專案升級至目標[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]或更新版本中，請確定`ThisAddIn_Startup`VSTO 增益集的事件處理常式不包含會存取應用程式中的文件的程式碼。 如需詳細資訊，請參閱 [啟動 Office 應用程式時存取文件](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
   
  若是文件層級自訂， [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 會轉換具有二進位格式之專案中的文件，例如將副檔名為 .xls 或 .doc 的文件轉換為 Office Open XML 的格式。 如需 Open XML 的詳細資訊，請參閱 [新副檔名與 Office XML 格式簡介](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)。  
   
@@ -83,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  如果專案中的文件包含 Windows Form 控制項，則必須在升級專案之前，先安裝 Visual Studio 2005 Tools for Office Second Edition Runtime。 如果升級專案前未於開發電腦上安裝此版本的執行階段，則升級的專案可能會包含編譯或執行階段錯誤。 完成專案升級後，可以解除安裝開發電腦中的 Visual Studio 2005 Tools for Office Second Edition Runtime (如果沒有其他 Office 方案正在使用它)。 您可以從下列 Microsoft 下載中心，取得這個執行階段版本的可轉散發套件： [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](http://go.microsoft.com/fwlink/?linkid=49612)。  
   
 ### <a name="vsto-add-in-projects"></a>VSTO 增益集專案  
- 如果您原始專案的方案檔包含安裝程式或 InstallShield 限量版專案 (已設定為安裝 VSTO 增益集)，則 Visual Studio 會升級專案，但不會進一步變更專案。 如果想要繼續使用 Windows Installer 檔案來部署 VSTO 增益集，則必須將安裝程式或 InstallShield 限量版專案修改成安裝新的必要元件，例如 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、Visual Studio 2010 Tools for Office Runtime，以及 VSTO 增益集所參考的主要 Interop 組件 (選擇性)。 如需詳細資訊，請參閱 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 如果您原始專案的方案檔包含安裝程式或 InstallShield 限量版專案 (已設定為安裝 VSTO 增益集)，則 Visual Studio 會升級專案，但不會進一步變更專案。 如果想要繼續使用 Windows Installer 檔案來部署 VSTO 增益集，則必須將安裝程式或 InstallShield 限量版專案修改成安裝新的必要元件，例如 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、Visual Studio 2010 Tools for Office Runtime，以及 VSTO 增益集所參考的主要 Interop 組件 (選擇性)。 如需詳細資訊，請參閱 [使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
  如果要使用 ClickOnce 部署 VSTO 增益集，可以整個刪除安裝程式或 InstallShield 限量版專案。 如需有關如何使用 ClickOnce 部署 VSTO 增益集的詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   

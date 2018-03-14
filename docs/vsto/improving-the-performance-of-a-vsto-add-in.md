@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,7 +14,8 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -98,7 +100,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  這個方法如果不需要將您 VSTO 增益集部署到使用者的電腦上的安全位置。  
   
- 如需詳細資訊，請參閱 [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 如需詳細資訊，請參閱 [使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
 ##  <a name="Bypass"></a> Bypass Ribbon Reflection  
  如果使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]建置方案，當您部署方案時，請確定使用者已安裝最新版的 Visual Studio 2010 Tools for Office Runtime。 舊版的執行階段會反映到方案組件裡，以找出功能區自訂項目。 此程序會使得 VSTO 增益集載入的速度更加緩慢。  
