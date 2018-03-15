@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,7 +28,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -81,7 +83,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   您想要，藉由在文件中撰寫 VBA 程式碼，讓您在文件層級自訂中開發的服務，能供可以存取服務的使用者使用。  
   
- Visual Studio 中的 Office 開發工具為 VSTO 增益集提供類似的功能。如果您正在開發 VSTO 增益集，可以從其他 Microsoft Office 方案，在 VSTO 增益集中呼叫程式碼。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ Visual Studio 中的 Office 開發工具為 VSTO 增益集提供類似的功能。如果您正在開發 VSTO 增益集，可以從其他 Microsoft Office 方案，在 VSTO 增益集中呼叫程式碼。 如需詳細資訊，請參閱 [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 > [!NOTE]  
 >  這項功能無法用於 Word 範本專案。 它只能在 Word 文件、Excel 活頁簿或 Excel 範本專案中使用。  

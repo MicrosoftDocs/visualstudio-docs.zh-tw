@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,11 +24,12 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -58,9 +60,9 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
   
  從不同位置部署的應用程式會被授與不同層級的權限而不提示。 例如，從網際網路部署應用程式時，它就會獲得一組具有高度限制性的權限。 當從近端內部網路安裝時，它會獲得更多的權限，而從光碟安裝時，它會獲得完全信任權限。  
   
- 要開始設定權限時，您可以從 [安全性]  頁面上的 [區域]  清單選取安全性區域。 如果您的應用程式可能會從多個區域部署，請選取權限最低的區域。 如需詳細資訊，請參閱 [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
+ 要開始設定權限時，您可以從 [安全性]  頁面上的 [區域]  清單選取安全性區域。 如果您的應用程式可能會從多個區域部署，請選取權限最低的區域。 如需詳細資訊，請參閱 [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
   
- 可以設定的屬性會因權限集合而不同；並非所有的權限集合都具有可設定的屬性。 如需您的應用程式可以要求的完整權限清單的相關資訊，請參閱 <xref:System.Security.Permissions>。 如需如何設定自訂區域之權限的詳細資訊，請參閱 [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
+ 可以設定的屬性會因權限集合而不同；並非所有的權限集合都具有可設定的屬性。 如需您的應用程式可以要求的完整權限清單的相關資訊，請參閱 <xref:System.Security.Permissions>。 如需如何設定自訂區域之權限的詳細資訊，請參閱 [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>以受限制的權限偵錯應用程式  
  身為開發人員，您最可能以完全信任權限執行您的開發電腦。 因此，當您在偵錯應用程式時，看不到當使用者以受限制的權限執行時可能看到的相同安全性例外狀況。  
@@ -71,7 +73,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
   
  此外，當您撰寫程式碼，程式碼編輯器中的 IntelliSense 功能將會停用已設定之安全性權限中不包含的任何成員。  
   
- 如需詳細資訊，請參閱 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 如需詳細資訊，請參閱 [如何：以限制使用權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>瀏覽器裝載之應用程式的安全性權限  
  Visual Studio 針對 Windows Presentation Foundation (WPF) 應用程式提供下列專案類型：  

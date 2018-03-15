@@ -15,7 +15,8 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 author: gewarren
 ms.openlocfilehash: 6320f9730be9c47da11a43b57b64c86e46a42bf4
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b

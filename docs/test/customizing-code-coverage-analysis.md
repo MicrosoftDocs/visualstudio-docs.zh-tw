@@ -9,7 +9,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
 ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
 ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
