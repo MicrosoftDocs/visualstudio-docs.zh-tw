@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
  `ThisAddIn_Startup` 事件處理常式中的程式碼是第一個執行的使用者程式碼，除非您的增益集會覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在這個情況下， `ThisAddIn_Startup` 事件處理常式會在 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>之後呼叫。  
   
- 請勿將程式碼中的加入`ThisAdd-In_Startup`如果程式碼需要開啟的文件的事件處理常式。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如需詳細資訊，請參閱 [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+ 請勿將程式碼中的加入`ThisAdd-In_Startup`如果程式碼需要開啟的文件的事件處理常式。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如需詳細資訊，請參閱 [啟動 Office 應用程式時存取文件](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
   
  VSTO 增益集啟動順序的相關資訊，請參閱[架構的 VSTO 增益集](../vsto/architecture-of-vsto-add-ins.md)。  
   

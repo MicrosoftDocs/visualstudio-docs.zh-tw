@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> 了解類型和訊息類別名稱  
  Outlook 項目的類型與 Outlook 項目的訊息類別名稱不同。 例如，RSS 項目的型別名稱是 Microsoft.Office.Interop.Outlook.PostItem。 RSS 項目的訊息類別名稱是 IPM。Post.RSS。  
   
- 請使用類型名稱在程式碼中參考 Outlook 項目。 如需類型名稱的清單，請參閱 [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
+ 請使用類型名稱在程式碼中參考 Outlook 項目。 如需類型名稱的清單，請參閱 [讓表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
   
- 使用 [新的 Outlook 表單區域精靈]  中 Outlook 項目的訊息類別名稱，可產生項目與表單區域的關聯。 如需有效訊息類別名稱的清單，請參閱 [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
+ 使用 [新的 Outlook 表單區域精靈]  中 Outlook 項目的訊息類別名稱，可產生項目與表單區域的關聯。 如需有效訊息類別名稱的清單，請參閱 [讓表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  您可以使用 Outlook [讀取窗格] 預覽 Outlook 項目，而不需開啟該項目。 [讀取窗格] 的設計僅為用於讀取。 因此，當項目和表單區域在 [讀取窗格] 中開啟時，加入相鄰型表單區域的輸入控制項 (例如文字方塊) 可能不會如預期般運作。  

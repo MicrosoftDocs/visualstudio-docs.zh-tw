@@ -197,7 +197,7 @@ ms.lasthandoff: 01/25/2018
  *我還應該知道什麼？*  
  **備註**  
   
--   ![必要條件](../test/media/prereq.png "必要條件") 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼新增至測試方法。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
+-   ![必要條件](../test/media/prereq.png "必要條件") 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼新增至測試方法。 [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][讓自動程式碼 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
   
  **祕訣**  
   
