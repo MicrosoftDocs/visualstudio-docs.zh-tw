@@ -50,7 +50,6 @@
 ### [執行 UWP 應用程式的單元測試](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [使用程式碼涵蓋範圍來決定所測試的程式碼數量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [自訂程式碼涵蓋範圍分析](customizing-code-coverage-analysis.md)
-### [分析組建驗證測試中的程式碼涵蓋範圍](analyzing-code-coverage-in-build-verification-tests.md)
 ### [針對程式碼涵蓋範圍進行疑難排解](troubleshooting-code-coverage.md)
 ## [使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [即時單元測試](live-unit-testing-intro.md)
