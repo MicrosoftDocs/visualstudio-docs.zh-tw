@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -41,7 +42,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -170,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
  在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結至資料來源。 如果這樣做，請在字串中傳遞**文字**至*propertyName*參數<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文字**屬性是內容控制項的預設資料繫結屬性。  
   
- 內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱 [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
+ 內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱 [如何：從主控制項中使用資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 > [!NOTE]  
 >  內容控制項不支援複雜的資料繫結。 如果使用 Windows Form 資料模型將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 繫結到資料來源，當使用者按一下控制項就只會看到單一值。 如果您想要將這些控制項繫結至一組使用者可以從中選擇的資料值，您可以將這些控制項繫結至自訂 XML 組件中的元素。  

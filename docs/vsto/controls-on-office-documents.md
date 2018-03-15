@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 3a5ce9a160010d893a88f1ebc31b229597bba909
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  [Office 文件上的 Windows Forms 控制項概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  提供使用 Excel 和 Word 文件上的 Windows Forms 控制項和 Windows Forms 上的控制項有何差異的詳細資訊。  
   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [在執行階段將控制項新增至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)  
  描述如何加入 Windows Forms 控制項和主控制項至 Word 和 Excel 文件，並描述這些控制項如何在文件中保存的限制。  
   
 ## <a name="related-sections"></a>相關章節  

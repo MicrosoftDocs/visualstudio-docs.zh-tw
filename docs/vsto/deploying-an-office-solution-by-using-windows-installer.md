@@ -52,7 +52,7 @@ ms.lasthandoff: 01/10/2018
   
 - [設定相依元件為必要條件](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [指定您要在使用者電腦上部署方案的位置](#Location)  
   
 - [設定 VSTO 增益集](#ConfigureRegisitry)  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 在使用者電腦上執行方案之前，您必須透過下列任一個方式授與信任，否則使用者在安裝方案時必須回應信任提示。  
   
   
-- 使用確認為知名且受信任之發行者的憑證來簽署資訊清單。 如需詳細資訊，請參閱 [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+- 使用確認為知名且受信任之發行者的憑證來簽署資訊清單。 如需詳細資訊，請參閱[透過簽署應用程式和部署資訊清單，信任方案](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
 - 將方案安裝到使用者的電腦上的 Program Files 目錄。  
   
