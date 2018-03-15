@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a55b2a12c9a45c5a3952e3e6f4e1627bec8ba520
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 37963e1ee5b7eeb0d07c36e0abe42c98eb6436fe
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 1. 在**方案總管 中**，以滑鼠右鍵按一下專案節點，然後選取**發行**(Web form**發行 Web 應用程式**)。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 5. 從 Visual Studio 電腦複製 ASP.NET 專案目錄到 ASP.NET 應用程式設定的本機目錄 (在此範例中， **C:\Publish**) Windows Server 電腦上。 在本教學課程中，我們假設您要手動複製，但您可以使用其他工具，例如 PowerShell、 Xcopy 或 Robocopy。
 
     > [!CAUTION]
-    >  如果您需要對程式碼或重建的變更，您必須重新發佈，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。
+    >  如果您需要對程式碼或重建的變更，您必須重新發佈，並重複此步驟。 您複製到遠端電腦的可執行檔必須完全符合您的本機來源和符號。    如果您不要這樣將會收到`cannot find or open the PDB file`警告 Visual Studio 中，當您嘗試偵錯的處理序。
 
 6. 在 Windows Server 中，確認可以執行應用程式在您的瀏覽器中開啟應用程式的正確。
 

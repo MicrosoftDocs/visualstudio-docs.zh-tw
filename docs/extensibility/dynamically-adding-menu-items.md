@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>以動態方式加入功能表項目
 您可以在執行階段將功能表項目，藉由指定`DynamicItemStart`命令預留位置按鈕定義中，在 Visual Studio 命令表 (.vsct) 檔案中，旗標，然後定義 （在程式碼） 的數目功能表項目以顯示和處理命令。 當載入 VSPackage 時，動態功能表項目取代預留位置。  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 -   兩個命令群組、 一個包含功能表控制站，另一個包含下拉式清單中的功能表項目  
   
--   類型的一個功能表項目`MenuController`  
+-   類型的一個功能表項目 `MenuController`  
   
 -   兩個按鈕，將做為用於功能表項目，而另一個預留位置，顯示圖示，然後在工具列上的工具提示所提供的其中一個。  
   
@@ -209,7 +211,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="adding-the-command"></a>將命令加入  
  DynamicMenu 建構函式是設定功能表命令，包括動態功能表和功能表項目。  
   
-1.  在 DynamicMenuPackageGuids.cs，加入的命令集的 GUID 和命令 ID:  
+1.  在 DynamicMenuPackage.cs，加入的命令集的 GUID 和命令 ID:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
@@ -342,7 +344,7 @@ ms.lasthandoff: 12/22/2017
 [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
 [ProvideAutoLoad(UIContextGuids.SolutionHasMultipleProjects)]  
-[Guid(DynamicMenuPackageGuids.PackageGuidString)]  
+[Guid(DynamicMenuPackage.PackageGuidString)]  
 public sealed class DynamicMenuItemsPackage : Package  
 {}  
 ```  

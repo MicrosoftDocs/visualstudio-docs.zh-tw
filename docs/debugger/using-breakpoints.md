@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
   
-##  <a name="BKMK_Overview"></a>在原始程式碼中設定行中斷點的行  
+##  <a name="BKMK_Overview"></a> 在原始程式碼中設定行中斷點的行  
  設定行中斷點的原始程式碼中的原始程式碼檔案中，左邊界中按一下，或將游標放在一行程式碼程式，再按 F9。 中斷點會在左邊界中顯示為一個紅點，且該行程式碼也會標上色彩：  
   
  ![設定中斷點](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ ms.lasthandoff: 01/24/2018
   
  您可以在任何可執行程式碼行上設定中斷點。 例如，在上面的 C# 程式碼中，您可以在變數宣告、 `for` 迴圈或在 `for` 迴圈內部的任何程式碼設定中斷點，但是您無法在命名空間或類別宣告或方法簽章上設定中斷點。  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定其他種類的中斷點  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定函式中斷點  
+  函式呼叫時，您可以中斷執行。
+  
+1. 開啟**中斷點**視窗，然後選擇 **新增 > 函式中斷點**。
+
+2. 函式中輸入名稱**函式名稱**方塊。 
+
+   若要縮小函式規格：
+   
+   使用完整的函式名稱。 
+   範例： Namespace1.ClassX.MethodA()
+   
+   加入多載函式的參數類型。 
+   範例： MethodA （int，string）
+   
+   使用 '！' 指定模組的符號。
+   範例： App1.dll ！MethodA
+   
+   原生 c + + 中使用內容運算子。
+   {函式，[module]}[+&lt;從方法開頭的行位移&gt;] 範例: {MethodA，App1.dll}+2
+
+3. 在**語言**下拉式清單中，選擇您想要中斷的函式的特定語言。
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> 設定其他種類的中斷點  
  您也可以在呼叫堆疊中、在 [反組譯碼] 視窗中，以及在原生 C++ 程式碼中，以資料條件或記憶體位址設定中斷點。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> 在 [呼叫堆疊] 視窗中設定中斷點  
@@ -213,7 +236,7 @@ ms.lasthandoff: 01/24/2018
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點  
  追蹤點是將訊息列印至 [輸出] 視窗的中斷點。 追蹤點在程式語言中的行為可以像是暫存追蹤陳述式。  
   
- 在 [中斷點設定]  視窗中，核取 [動作]  方塊。 選擇 [動作]  群組中的 [將訊息記錄到輸出視窗]  。 您可以列印泛型字串，例如「這是測試」 。 若要包含變數或運算式的值，請將它置於大括號中。  
+ 在 [中斷點設定]  視窗中，核取 [動作]  方塊。 選擇 [動作]  群組中的 [將訊息記錄到輸出視窗]  。 您可以列印泛型字串，例如「這是測試」 。 若要包含變數或運算式的值，請將它置於大括號中。  您也可以使用格式規範 ([C#](../debugger/format-specifiers-in-csharp.md)和[c + +](../debugger/format-specifiers-in-cpp.md)) 包含在追蹤點的值。
   
  若要在叫用追蹤點時中斷執行，請清除 [繼續執行]  核取方塊。 若已核取 [繼續執行]  時，則不會暫止執行。 在這兩種情況下，都會列印訊息。  
   

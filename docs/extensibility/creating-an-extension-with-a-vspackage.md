@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cf4320ac20aae231eb2e824a7a948e2bd52672b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: df971bdf72ff52cfa6343b6237de072238087ac4
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>建立 VSPackage 擴充功能
 本逐步解說將示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得 UI Shell 服務才能顯示訊息方塊。  
@@ -46,7 +48,7 @@ ms.lasthandoff: 12/22/2017
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    [Guid(FirstPackageGuids.PackageGuidString)]  
+    [Guid(FirstPackage.PackageGuidString)]  
     public sealed class FirstPackage : Package  
     ```  
   

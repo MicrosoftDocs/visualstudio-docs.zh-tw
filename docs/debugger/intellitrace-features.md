@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 
@@ -55,7 +55,7 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 
 這不預設啟用，但 IntelliTrace 可以擷取每個中斷點和偵錯工具的步驟事件，在應用程式的快照集，您可以在歷程記錄偵錯工作階段中檢視這些快照集。 快照集可讓您完整的應用程式的狀態檢視。 若要啟用擷取的快照集，請移至**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 事件和快照集**。 如需詳細資訊，請參閱[檢視使用 IntelliTrace 步驟後的快照集](../debugger/how-to-use-intellitrace-step-back.md)
 
-快照集可用在 Visual Studio Enterprise 2017 版本 15.5 及更新版本，且其需要 Windows 10 年度更新或更新版本。  找不到目前適用於.NET Core 與 ASP.NET Core 應用程式的快照。
+快照集可用在 Visual Studio Enterprise 2017 版本 15.5 及更新版本，且其需要 Windows 10 年度更新或更新版本。  .NET Core 與 ASP.NET Core 應用程式，Visual Studio Enterprise 2017 版本 15.7 preview 1 是必要的。
 
 ## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和呼叫資訊
 

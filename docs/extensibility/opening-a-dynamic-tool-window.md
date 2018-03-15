@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>開啟動態工具視窗
-從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有時候，不過，您可能需要開啟特定 UI 內容會套用，且當 UI 內容不再適用時，關閉時的工具視窗。 這類的工具視窗呼叫*動態*或*自動可見*。  
+從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有時候，不過，您可能需要開啟特定 UI 內容會套用，且當 UI 內容不再適用時，關閉時的工具視窗。 工具視窗的這些型別稱為*動態*或*自動可見*。  
   
 > [!NOTE]
 >  如需預先定義的 UI 內容，請參閱<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>。 針對  
@@ -40,21 +40,21 @@ ms.lasthandoff: 12/22/2017
   
 1.  建立 VSIX 專案，名為**DynamicToolWindow**並新增名為的工具視窗項目範本**DynamicWindowPane.cs**。 如需詳細資訊，請參閱[建立工具視窗擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-2.  在 DynamicWindowPanePackage.cs 檔案中，尋找 DynamicWindowPanePackage 宣告。 新增<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和 T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute 屬性註冊工具視窗。  
+2.  在 DynamicWindowPanePackage.cs 檔案中，尋找 DynamicWindowPanePackage 宣告。 新增<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>註冊工具視窗的屬性。  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     如此會註冊為暫時性的視窗關閉後重新開啟 Visual Studio 時，不會保存，名為 DynamicWindowPane 工具視窗。 開啟 DynamicWindowPane 每當<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string>套用，且否則關閉。  
+     上面的屬性註冊為暫時性的視窗關閉後重新開啟 Visual Studio 時，不會保存，名為 DynamicWindowPane 工具視窗。 開啟 DynamicWindowPane 每當<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string>套用，且否則關閉。  
   
 3.  建置此專案並開始偵錯。 實驗執行個體應該會出現。 您不應該看到工具視窗。  
   

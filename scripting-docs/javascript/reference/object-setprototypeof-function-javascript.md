@@ -1,11 +1,12 @@
 ---
-title: "Object.setPrototypeOf 函式 (JavaScript) |Microsoft 文件"
+title: Object.setPrototypeOf Function (JavaScript) | Microsoft Docs
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
@@ -13,15 +14,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a2609f6e-aeee-4c13-b7cf-c31ddf58ff35
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 686fea255978b34af13fcf64785819f3d3afadbb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a2ae28420893cd49691c1a6ac50fe5896700947
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="objectsetprototypeof-function-javascript"></a>Object.setPrototypeOf 函式 (JavaScript)
 設定物件的原型。  
@@ -34,10 +35,10 @@ Object.setPrototypeOf(obj, proto);
   
 #### <a name="parameters"></a>參數  
  `obj`  
- 必要項。 您要為其設定原型的物件。  
+ 必要。 您要為其設定原型的物件。  
   
  `proto`  
- 必要項。 新的原型物件。  
+ 必要。 新的原型物件。  
   
 ## <a name="remarks"></a>備註  
   
@@ -54,9 +55,9 @@ function Rectangle() {
 var rec = new Rectangle();  
   
 if (console && console.log) {  
-    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
-    Object.getPrototypeOf(rec, Object.prototype);  
-    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
+    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
+    Object.setPrototypeOf(rec, Object.prototype);  
+    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
 }  
 ```  
   

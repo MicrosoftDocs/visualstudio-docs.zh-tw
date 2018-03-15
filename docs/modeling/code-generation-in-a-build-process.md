@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  這表示，您無法存取之類的專案檔案名稱相同的方式建置在 MSBuild 中的文字範本時。 不過，您可以[傳遞環境資訊至文字範本和指示詞處理器，使用組建參數](#parameters)。  
   
-##  <a name="buildserver"></a>設定您的電腦  
+##  <a name="buildserver"></a> 設定您的電腦  
  若要啟用建置工作，在開發電腦上的，安裝 Modeling SDK for Visual Studio。
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  若要指定必須覆寫唯讀檔案，請插入以下屬性：  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>將建置內容資料傳入範本  
+##  <a name="parameters"></a> 將建置內容資料傳入範本  
  您可以在專案檔中設定參數值。 例如，您可以傳遞[建置](../msbuild/msbuild-properties.md)屬性和[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  只有在您使用 MSBuild 時，`ResolveParameterValue` 才會從 `T4ParameterValues` 取得資料。 使用 Visual Studio 轉換範本時，參數會擁有預設值。  
   
-##  <a name="msbuild"></a>使用專案屬性中的組件和 include 指示詞  
+##  <a name="msbuild"></a> 使用專案屬性中的組件和 include 指示詞  
  Visual Studio 巨集，例如 $ （solutiondir） 不在 MSBuild 中運作。 您可以改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：  

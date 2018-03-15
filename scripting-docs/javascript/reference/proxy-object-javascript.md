@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
@@ -13,15 +14,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2b89abee-04fa-47e6-9676-980016cff5f8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 489d329528e88c27df03ca0e6d6d1608a39446e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ee75310f1d976e0a0896b1be34a80c594cdd054
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proxy-object-javascript"></a>Proxy 物件 (JavaScript)
 啟用物件的自訂行為。  
@@ -34,10 +35,10 @@ proxyObj = new Proxy(target, handler)
   
 #### <a name="parameters"></a>參數  
  `target`  
- 必要項。 Proxy 所要虛擬化的物件或函式。  
+ 必要。 Proxy 所要虛擬化的物件或函式。  
   
  `handler`  
- 必要項。 使用方法 (設陷) 來實作自訂行為的物件。  
+ 必要。 使用方法 (設陷) 來實作自訂行為的物件。  
   
 ## <a name="remarks"></a>備註  
  `Proxy` 物件可用來攔截另一個物件上的內部低階作業。 Proxy 物件可用於攔截、物件虛擬化、記錄/分析和其他用途。  
@@ -69,9 +70,9 @@ proxyObj = new Proxy(target, handler)
 ```JavaScript  
 var target = {};  
 var handler = {  
-  get: function (receiver, name) {  
+  get: function (target, property, receiver) {  
     // This example includes a template string.  
-    return `Hello, ${name}!`;  
+    return `Hello, ${property}!`;  
   }  
 };  
   

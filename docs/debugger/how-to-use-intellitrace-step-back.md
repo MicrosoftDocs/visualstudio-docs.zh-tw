@@ -1,13 +1,13 @@
 ---
 title: "檢視快照集使用 IntelliTrace 步驟後-Visual Studio |Microsoft 文件"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
 IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用程式的快照集步驟的事件。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
-IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15.5 及更新版本，而您需要 Windows 10 年度更新或更新版本。 目前支援偵錯 ASP.NET、 WinForms、 WPF、 受管理的主控台應用程式，與受管理的類別庫的功能。 目前不支援偵錯 ASP.NET Core、.NET Core 或 UWP 應用程式。 
+IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15.5 及更新版本，而您需要 Windows 10 年度更新或更新版本。 目前支援偵錯 ASP.NET、 WinForms、 WPF、 受管理的主控台應用程式，與受管理的類別庫的功能。 從 Visual Studio 2017 Enterprise 版本 15.7 preview 1 開始，此功能也支援 ASP.NET Core 和.NET 核心。 目前不支援偵錯 UWP 應用程式。
+
+在此教學課程中，您將：
+
+> [!div class="checklist"]
+> * 啟用 Intellitrace 事件和快照集
+> * 瀏覽使用命令的步驟後和步驟轉送的事件
+> * 檢視事件快照集
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>啟用 IntelliTrace 事件和快照集模式 
 
-1. 在 Visual Studio Enterprise 中，移至**工具 > 選項 > IntelliTrace**設定，然後選取選項**IntelliTrace 事件和快照集**。 
+1. 在 Visual Studio Enterprise 中開啟您的專案。
+
+1. 移至**工具 > 選項 > IntelliTrace**設定，然後選取選項**IntelliTrace 事件和快照集**。 
 
     ![啟用 IntelliTrace 事件和快照集模式](../debugger/media/intellitrace-enable-snapshots.png "啟用 IntelliTrace 事件和快照集模式")
 
-2. 在 Visual Studio 中開啟專案。
-
-3. 在您的專案中設定一或多個中斷點，並開始偵錯 (按**F5**)，或開始進行偵錯逐步執行程式碼 (**F10**或**F11**)。
+1. 在您的專案中設定一或多個中斷點，並開始偵錯 (按**F5**)，或開始進行偵錯逐步執行程式碼 (**F10**或**F11**)。
 
     IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷點的事件。 這些事件會記錄在**事件**索引標籤中**診斷工具**視窗中的，連同其他 IntelliTrace 事件。 若要開啟此視窗，請選擇**偵錯** > **Windows** > **顯示診斷工具**。
 
@@ -49,7 +56,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
 1. 使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])**中偵錯 工具列按鈕。
 
-    這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
+    這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 若要逐步向前或向事件自動啟動[歷程偵錯](../debugger/historical-debugging.md)上所選取的事件。
 
     ![向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png "步驟向後和向前步驟按鈕")
 
@@ -73,9 +80,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
     ![IntelliTrace 步驟後的概觀](../debugger/media/intellitrace-step-back-overview.png "概觀的 IntelliTrace 步驟回")
 
-## <a name="next-steps"></a>後續步驟  
- 若要了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具功能的教學課程](../debugger/debugger-feature-tour.md)  
- 如需歷程偵錯的概觀，請參閱[歷程偵錯](../debugger/historical-debugging.md)。  
+    若要深入了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具功能的教學課程](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -111,3 +116,10 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 * 其程序有大量的唯一記憶體區域，例如載入大量的 Dll，應用程式的應用程式進行偵錯時逐步執行快照集啟用的效能可能會受到影響。 將在未來的 Windows 版本中解決這個問題。 如果您遇到此問題，連接到我們stepback@microsoft.com。 
 
 * 儲存的檔案時**偵錯 > IntelliTrace > 儲存 IntelliTrace 工作階段**在事件和快照集模式下，從快照集擷取的其他資料沒有.itrace 檔中。 中斷點和步驟的事件，您會看到相同的資訊，如同您有用於 IntelliTrace 事件僅限模式來儲存檔案。 
+
+## <a name="next-steps"></a>後續步驟
+
+在本教學課程中，您學到如何使用 IntelliTrace 步驟後。 若要深入了解其他 IntelliTrace 功能。
+
+> [!div class="nextstepaction"]
+> [IntelliTrace 功能](../debugger/intellitrace-features.md)

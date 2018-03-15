@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -26,21 +28,22 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: "40"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C + + 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。  
   
- 您也可以在 [即時運算]  視窗、[命令]  視窗，甚至來源視窗中使用格式規範。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip (資料提示方塊)。 DataTip 顯示會反映格式規範。  
+ 您也可以使用中的格式規範**即時運算**視窗中，**命令**視窗，請在[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，甚至來源視窗中。 如果您在這些視窗中的某個運算式上暫停時，結果會出現在資料提示方塊。 DataTip 顯示會反映格式規範。  
   
 > [!NOTE]
 >  當 Visual Studio 原生偵錯工具變更為新的偵錯引擎時，已加入一些新的格式規範，並移除一些舊的。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。
@@ -59,7 +62,7 @@ int main() {
 }  
 ```  
   
- 新增`my_var1`變數設為**監看式**視窗 (偵錯時，**偵錯 > Windows > 監看式 > 監看式 1**) 並將顯示設定為十六進位 (在**觀賞**視窗中，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**)。 現在監看式視窗顯示它包含了值 0x0065。 若希望數值以字元顯示，而非整數，請在 [名稱] 欄位中變數名稱後面，加入字元格式規範 **, c**。 [值]  資料行現在出現時會帶有 **101 'e'**。  
+ 新增`my_var1`變數設為**監看式**視窗 (偵錯時，**偵錯 > Windows > 監看式 > 監看式 1**)，然後將顯示設定為十六進位 (在**觀賞**視窗中，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**)。 現在監看式視窗顯示它包含了值 0x0065。 若希望數值以字元顯示，而非整數，請在 [名稱] 欄位中變數名稱後面，加入字元格式規範 **, c**。 [值]  資料行現在出現時會帶有 **101 'e'**。  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -73,19 +76,19 @@ int main() {
 |x<br /><br /> **h**|十六進位整數|102|0xcccccccc|  
 |X<br /><br /> **H**|十六進位整數|102|0xcccccccc|  
 |c|單一字元|0x0065, c|101 'e'|  
-|秒|const char* 字串|\<位置 >"hello world"|"hello world"|  
-|**sb**|const char * 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
+|秒|const char* 字串|\<location> "hello world"|"hello world"|  
+|**sb**|const char * 字串 （沒有引號）|\<location> "hello world"|hello world|  
 |s8|UTF-8 字串|\<位置 >"This is utf-8 咖啡杯 â˜•"|"This is utf-8 咖啡杯 ☕"|
-|**s8b**|Utf-8 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
-|su|Unicode （utf-16 編碼） 字串|\<位置 > L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode （utf-16 編碼） 字串 （沒有引號）|\<位置 > L"hello world"|hello world|  
-|bstr|BSTR 字串|\<位置 > L"hello world"|L"hello world"|  
-|env|環境區塊 （雙 null 終止字串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32 字串|\<位置 > U"hello world"|u"hello world"|  
-|**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  
+|**s8b**|Utf-8 字串 （沒有引號）|\<location> "hello world"|hello world|  
+|su|Unicode （utf-16 編碼） 字串|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode （utf-16 編碼） 字串 （沒有引號）|\<location> L"hello world"|hello world|  
+|bstr|BSTR 字串|\<location> L"hello world"|L"hello world"|  
+|env|環境區塊 （雙 null 終止字串）|\<位置 > L"=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 字串|\<location> U"hello world"|u"hello world"|  
+|**s32b**|Utf-32 字串 (沒有引號)|\<location> U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
 |**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置 > {\<第一個成員 >}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
-|**na**|隱藏物件指標的記憶體位址。|\<位置 >，{成員 = 值...}|{成員 = 值...}|  
+|**na**|隱藏物件指標的記憶體位址。|\<位置 >，{成員 = 值...}|{member=value...}|  
 |**nd**|只顯示基底類別資訊，忽略衍生類別|`(Shape*) square` 包含基底類別和衍生類別資訊|只顯示基底類別資訊|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標|0x0010|WC_DEFAULTCHAR|  
@@ -117,11 +120,11 @@ int main() {
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|  
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
 |**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
-|c|單一字元|\<位置 >|101 'e'|  
-|秒|const char*|\<位置 >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<位置 >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<位置 >|hello world|  
-|s8|const char*|\<位置 >|"hello world"|  
+|c|單一字元|\<location>|101 'e'|  
+|秒|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|  
@@ -140,7 +143,7 @@ int main() {
 |**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>使用 C + interop 偵錯中做為陣列的指標大小規範 + CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C + interop 偵錯中做為陣列的指標大小規範 + CLI  
  如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
   
 |指定名稱|格式|運算式|顯示的值|  

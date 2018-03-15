@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 強制執行維護的程式碼與程式碼分析簽入原則
 
@@ -31,23 +31,23 @@ Team foundation 版本控制系統管理員可以加入程式碼分析可維護�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>若要開啟程式碼分析原則編輯器
 
-1.在**Team Explorer**、 team 專案上按一下滑鼠右鍵、 按一下**Team 專案設定**，然後按一下 **原始檔控制**。
+1. 在**Team Explorer**、 team 專案上按一下滑鼠右鍵、 按一下**Team 專案設定**，然後按一下 **原始檔控制**。
 
-     The **Source Control** dialog box appears.
+     **原始檔控制** 對話方塊隨即出現。
 
-2.在**簽入原則**索引標籤，然後按一下**新增**。
+2. 在**簽入原則**索引標籤，然後按一下**新增**。
 
-     The **Add Check-in Policy** dialog box appears.
+     **新增簽入原則** 對話方塊隨即出現。
 
-3.在**簽入原則**清單中，選取**程式碼分析**核取方塊，然後**確定**。
+3. 在**簽入原則**清單中，選取**程式碼分析**核取方塊，然後**確定**。
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     **程式碼分析原則編輯器** 對話方塊隨即出現。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>若要啟用程式碼分析可維護性規則
 
-1.在**程式碼分析原則編輯器**對話方塊的 **規則設定**，依序展開**可維護性規則**節點。
+1. 在**程式碼分析原則編輯器**對話方塊的 **規則設定**，依序展開**可維護性規則**節點。
 
-2.選取下列規則的核取方塊：
+2. 選取核取方塊，下列規則：
 
     -   繼承深度： **CA1501 AvoidExcessiveInheritance** -臨界值： 警告位於層級的深度超過 5
 
@@ -59,9 +59,9 @@ Team foundation 版本控制系統管理員可以加入程式碼分析可維護�
 
     此外，如果您想要阻礙建置成功對規則違規時，選取**將警告視為錯誤**規則說明旁邊的核取方塊。
 
-3.按一下**確定**。 新的簽入原則現在會套用至未來的簽入。
+3. 按一下 [確定 **Deploying Office Solutions**]。 新的簽入原則現在會套用至未來的簽入。
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼度量值](../code-quality/code-metrics-values.md)
-[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [程式碼度量值](../code-quality/code-metrics-values.md)
+- [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

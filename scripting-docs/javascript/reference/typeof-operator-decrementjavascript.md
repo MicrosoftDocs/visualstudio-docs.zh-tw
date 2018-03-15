@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>typeof 運算子 (JavaScript)
 傳回可識別運算式之資料類型的字串。  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>備註  
  *運算式*引數是任何類型資訊所要搜尋的運算式。  
   
- `typeof`運算子會傳回做為字串的類型資訊。 有六個可能值的`typeof`傳回: 「"數字、"字串，"「 布林 」，「 物件 」 [函式] 和"undefined"。  
+ `typeof`運算子會傳回做為字串的類型資訊。 有七個可能值的`typeof`傳回: 「"數字、"字串，""，則為 true，""物件、"[函式，]"未定義 」 和 「 未知 」。  
   
  括號中是選用的`typeof`語法。  
+
+ 物件可能會傳回為 XMLHTTPRequest 中未知的類型。 在 JavaScript 中的任何類比與 COM 物件也可能會傳回與未知的類型。
   
 ## <a name="example"></a>範例  
  下列範例會測試變數的資料類型。  
@@ -84,9 +86,9 @@ var result = (typeof obj.propNotDeclared === 'undefined');
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Array.isArray 函式](../../javascript/reference/array-isarray-function-javascript.md)   
- [Object.getPrototypeOf 函式](../../javascript/reference/object-getprototypeof-function-javascript.md)   
+ [Object.getPrototypeOf Function](../../javascript/reference/object-getprototypeof-function-javascript.md)   
  [undefined 的常數](../../javascript/reference/undefined-constant-javascript.md)   
  [比較運算子](../../javascript/reference/comparison-operators-javascript.md)   
  [資料類型](../../javascript/data-types-javascript.md)   

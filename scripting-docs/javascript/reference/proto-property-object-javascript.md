@@ -1,5 +1,5 @@
 ---
-title: "__proto__ 屬性 (Object) (JavaScript) |Microsoft 文件"
+title: "__proto__屬性 (Object) (JavaScript) |Microsoft 文件"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proto-property-object-javascript"></a>__proto__屬性 (Object) (JavaScript)
 包含指定之物件的內部原型的參考。  
+
+> [!WARNING]
+> `__proto__`屬性是舊版的功能。 使用[Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md)改為。
   
 ## <a name="syntax"></a>語法  
   
@@ -37,7 +40,7 @@ object.__proto__
   
 #### <a name="parameters"></a>參數  
  `object`  
- 必要項。 要設定的原型物件。  
+ 必要。 要設定的原型物件。  
   
 ## <a name="remarks"></a>備註  
  `__proto__`屬性可以用來設定物件的原型。  
@@ -111,5 +114,5 @@ if (console && console.log) {
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [原型和原型繼承](../../javascript/advanced/prototypes-and-prototype-inheritance.md)
