@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: af372b261b5d8527600d672c9017d7235385c170
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -55,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="understanding-worksheet-host-items-in-vsto-add-in-projects"></a>了解 VSTO 增益集專案中的 Worksheet 主項目  
  在應用程式層級專案中，您可以在執行階段為使用 Excel 開啟的任何工作表產生 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 您可以使用 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目將控制項加入相關聯的工作表，或處理 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件上沒有的事件。  
   
- 若要產生<xref:Microsoft.Office.Tools.Excel.Worksheet>主項目，請使用 GetVstoObject 方法。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 若要產生<xref:Microsoft.Office.Tools.Excel.Worksheet>主項目，請使用 GetVstoObject 方法。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
