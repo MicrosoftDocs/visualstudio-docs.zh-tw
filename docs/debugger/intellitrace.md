@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ ms.lasthandoff: 02/21/2018
 |||
 |-|-|
 |**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更高版本。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要偵錯 Microsoft Azure 應用程式，使用 IntelliTrace，請參閱[偵錯使用 IntelliTrace 和 Visual Studio 發行雲端服務](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支援**|.NET core 和 ASP.NET Core 應用程式支援只適用於事件<br />-F # 實驗基礎的應用程式<br />-支援只適用於事件 UWP 應用程式|
-|不支援|C + +、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|
+|**有限的支援**|.NET core 和 ASP.NET Core 應用程式支援特定事件只 MVC 控制器、 ADO.NET 和 HTTPClicent 」 在本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />-F # 實驗基礎的應用程式<br />-支援只適用於事件 UWP 應用程式|
+|**不支援**|C + +、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]應用程式|
 
 > [!NOTE]
 > 如果您想要偵錯已執行的處理序，您可以只收集 IntelliTrace 事件 （沒有呼叫資訊）。 您可以附加至本機電腦上的 32 位元或 64 位元處理序。 不會收集您附加至處理序之前發生的事件。

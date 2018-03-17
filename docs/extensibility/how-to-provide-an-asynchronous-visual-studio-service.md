@@ -7,19 +7,20 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c13a899e5c678040d6ffe5b1996fd3ee96e9cc09
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供非同步的 Visual Studio 服務
-如果您想要取得服務，而不封鎖 UI 執行緒，您應該建立非同步的服務，並載入背景執行緒上的套件。 您可以針對此用途使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而不是<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務  
+如果您想要取得服務，而不封鎖 UI 執行緒，您應該建立非同步的服務，並載入背景執行緒上的套件。 您可以針對此用途使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而不是<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務。
   
  如需提供同步的 Visual Studio 服務的資訊，請參閱[How to： 提供服務](../extensibility/how-to-provide-a-service.md)。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 7.  以下是非同步的服務實作。 請注意，您必須設定於建構函式的非同步服務提供者，而不是同步的服務提供者：  
   
-    ```  
+    ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
         private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
@@ -92,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 -   您必須新增**AllowsBackgroundLoading = true**欄位設為<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>。 如需 PackageRegistrationAttribute 的詳細資訊，請參閱[註冊和取消登錄 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
- 以下是範例的非同步服務登錄 AsyncPackage::  
+ 使用非同步服務註冊 AsyncPackage 的範例如下：
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
@@ -107,7 +108,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  在 TestAsyncPackage.cs，移除`Initialize()`方法，並覆寫`InitializeAsync()`方法。 加入服務，並加入要建立服務的回呼方法。 以下是範例的非同步加入服務的初始設定式：  
   
-    ```  
+    ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -146,7 +147,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync(<userpath>), "this is a test");  
+        await textService.WriteLineAsync(<userpath>), "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -164,7 +165,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 2.  自訂命令範本重新加入`Initialize()`TestAsyncPackage.cs 檔案，以便初始化命令的方法。 在 initialize （） 方法中，複製初始化命令列。 內容應該看起來如下：  
   
-    ```  
+    ```csharp
     TestAsyncCommand.Initialize(this);  
     ```  
   
@@ -182,7 +183,7 @@ public sealed class TestAsyncPackage : AsyncPackage
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
-        await writer.WriteLineAsync((<userpath>, "this is a test");  
+        await textService.WriteLineAsync((<userpath>, "this is a test");  
   
         await base.InitializeAsync(cancellationToken, progress);  
     }  
@@ -193,9 +194,9 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 4.  在 TestAsyncCommand.cs 檔案中，尋找`MenuItemCallback()`方法。 刪除方法主體。  
   
-5.  加入 using 陳述式：  
+5.  新增 using 陳述式：  
   
-    ```  
+    ```csharp 
     using System.IO;  
     ```  
   
@@ -208,14 +209,14 @@ public sealed class TestAsyncPackage : AsyncPackage
            this.ServiceProvider.GetService(typeof(STextWriterService))  
               as ITextWriterService;  
         // don't forget to change <userpath> to a local path  
-        await writer.WriteLineAsync((<userpath>),"this is a test");  
+        await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
   
     ```  
   
 7.  呼叫這個方法從`MenuItemCallback()`方法：  
   
-    ```  
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         GetAsyncService();  
@@ -225,5 +226,5 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 8.  建置方案並開始偵錯。 Visual Studio 的實驗執行個體出現時，請移至**工具**功能表並尋找**叫用 TestAsyncCommand**功能表項目。 當您按一下它時，TextWriterService 會寫入您指定的檔案。 （您不需要開啟的方案，因為叫用命令也會導致要載入之封裝。）  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用和提供服務](../extensibility/using-and-providing-services.md)
