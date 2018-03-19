@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Visual Studio 中的 Office 開發工具不支援共用活頁簿。  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 增益集專案中的 Workbook 主項目  
- 在 VSTO 增益集專案中，您可以在執行階段為使用 Excel 開啟的任何活頁簿產生 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。 若要產生<xref:Microsoft.Office.Tools.Excel.Workbook>主項目，請使用 GetVstoObject 方法。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 增益集專案中，您可以在執行階段為使用 Excel 開啟的任何活頁簿產生 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。 若要產生<xref:Microsoft.Office.Tools.Excel.Workbook>主項目，請使用 GetVstoObject 方法。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
