@@ -1,0 +1,15 @@
+- name: Node.js 文件
+- name: 快速入門
+  items:
+    - name: Node.js：建立 Web 應用程式...
+      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/nodejs/toc.json
+- name: 教學課程
+  items:
+    - name: 使用 Express 建立 Node.js 應用程式
+      href: tutorial-nodejs.md
+    - name: 使用 React 建立 Node.js 應用程式
+      href: tutorial-nodejs-with-react-and-jsx.md
+- name: 資源
+  items:
+    - name: 適用於 Visual Studio 的 Node.js 工具 (Wiki 站台)...
+      href: 'https://github.com/Microsoft/nodejstools'
