@@ -2,7 +2,7 @@
 title: "如何在 Visual Studio 中管理 Python 環境與解譯器 | Microsoft Docs"
 description: "如何在 Visual Studio 中使用 [Python 環境] 視窗，來為 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 環境
 
@@ -70,9 +70,9 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 上列影像顯示 Visual Studio 偵測到兩個版本的 Python 3.6 (32-bit) 安裝，以及 Anaconda 5.0.0。
 
-以粗體顯示的預設環境是 Python 3.6 (在此例中為 Anaconda 安裝的一部分)，Visual Studio 會將它用於所有的新專案。 視窗底部的命令適用於所選取的 Python 3.6 解譯器，如您所見，它們是 `C:\Python36-32` 中的特定安裝。 如果沒有看到您預期的環境，請參閱[手動識別現有的解譯器](#manually-identifying-an-existing-interpreter)。
+以粗體顯示的預設環境是 Python 3.6 (在此例中為 Anaconda 安裝的一部分)，Visual Studio 會將它用於所有的新專案。 視窗底部的命令適用於所選取的 Python 3.6 解譯器，如您所見，它們是 `C:\Python36-32` 中的特定安裝。 如果沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identifying-an-existing-environment)。
 
-在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 可能會出現另一個控制項，可用來重新整理該環境的 IntelliSense 資料庫。
+在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 另一個會針對環境重新整理 IntelliSense 資料庫的控制項也可能會顯示 (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab)以取得資料庫的相關詳細資料)。
 
 環境清單下方是 [概觀]、[套件] 和 [IntelliSense] 選項的下拉式選取器，如 [Python 環境視窗參考](python-environments-window-tab-reference.md)中所述。 此外，如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用：
 

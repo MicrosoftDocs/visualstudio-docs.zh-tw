@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
 ## <a name="project-build-configurations"></a>專案組建組態 
 
-專案可以有多個組態，在它們之間切換可在建置時產生不同的輸出。 例如，使用偵錯組態時，輸出會包含偵錯符號，可讓偵錯工具從已損毀應用程式的堆疊追蹤解析函式名稱、參數或變數。 不過，使用偵錯組態會導致檔案大小擴大，因此不適合用於散佈的應用程式。
+專案通常會有多個設定，在它們之間切換可在建置時產生不同的輸出。 例如，偵錯設定會輸出偵錯符號，可讓偵錯工具從已損毀應用程式的堆疊追蹤中解析函式名稱、參數或變數。 雖然在開發期間，這項額外資訊很有用，但它會導致檔案大小擴大，因而不適合用於發佈。
 
-每個平台都有其組建的特定組態。 Xamarin.Android 開發始終只有發行或偵錯組態。 Xamarin.iOS 則具有其他組態。 較新的 iOS 專案只有偵錯或發行組態，但可以為裝置或任何已安裝的模擬器設定這些組態。
+每個平台都有其組建的特定組態。 
 
 ## <a name="solution-configurations"></a>方案組態
 
-類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [組建] > [組態] 項目下的 [組態對應] 索引標籤，您可以為每個方案項目指派目標組態，如下所示：
+類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [設定對應] 索引標籤下的 [組建] > [設定] 項目，您可以為每個方案項目指派目標設定，如下圖所示：
 
 
  ![組態對應選項](media/projects-and-solutions-image3.png)
 
-如需詳細資訊，請參閱 James Montemagno 所建立的[組態管理員](https://www.youtube.com/watch?v=tjSdkqYh5Vg)影片。
+如需有關設定的詳細資訊，請參閱由 James Montemagno 所建立的[設定管理員](https://www.youtube.com/watch?v=tjSdkqYh5Vg) \(英文\) 影片。
 
 ## <a name="run-configuration"></a>回合組態
 
@@ -49,7 +49,7 @@ Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯
 
 ## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>回合組態中可能包含的資料範例
 
-下列清單提供一些可以包含在回合組態中的資料範例：
+下列清單提供一些可以包含在回合設定中的資料範例：
 
 * 一般 .NET 專案
     * 替代啟動應用程式

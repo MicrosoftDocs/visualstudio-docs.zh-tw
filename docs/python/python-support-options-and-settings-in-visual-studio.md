@@ -2,7 +2,7 @@
 title: "Visual Studio 中適用於 Python 的選項和設定 | Microsoft Docs"
 description: "Visual Studio 中與 Python 程式碼和專案相關的各種設定參考。"
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -36,19 +37,21 @@ ms.lasthandoff: 02/23/2018
 
 ![Python 選項對話方塊、一般索引標籤](media/options-general.png)
 
-在 [文字編輯器] > [Python] > [進階] 索引標籤上，還有其他 Python 特定選項。
+在 [文字編輯器] > [Python] > [進階] 索引標籤上，以及 [文字編輯器] 群組內的 [環境] > [字型和色彩] 索引標籤上，也有其他 Python 特定的選項。
 
 > [!Note]
 > **實驗**群組包含仍在開發中功能的選項，因此不在此處記錄。 它們通常見於 [Microsoft 部落格 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)的討論文章中。
 
 ## <a name="general-options"></a>一般選項
 
+([工具] > [選項] > [Python] 索引標籤)。
+
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 建立虛擬環境時顯示輸出視窗| 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | 安裝或移除套件時顯示輸出視窗 | 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | 一律以系統管理員身分執行 pip | Off | 一律提高所有環境的 `pip install` 作業。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 `c:\Program Files`)，則 Visual Studio 會提示需要系統管理員權限。 在該提示中，您可以選擇一律只提高該環境的 `pip install`。 請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。 |
-| 第一次使用時自動產生完成 DB | 開啟 | 若要讓程式庫的 [IntelliSense 完成](editing-python-code-in-visual-studio.md#intellisense)運作，Visual Studio 必須產生該程式庫的完成資料庫。 安裝程式庫時，會在背景建置資料庫，但開始撰寫程式碼時可能不會完成。 如果選取此選項，則當您撰寫使用資料庫的程式碼時，Visual Studio 會優先完成程式庫的資料庫。 |
+| 第一次使用時自動產生完成 DB | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱[環境視窗參考 - Intellisense 索引標籤](python-environments-window-tab-reference.md)。 |
 | 略過全系統的 PYTHONPATH 變數 | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱[搜尋路徑](search-paths.md)。 |
 | 新增連結的檔案時更新搜尋路徑 | 開啟 | 設定時，將[連結的檔案](managing-python-projects-in-visual-studio.md#linked-files)新增至專案更新[搜尋路徑](search-paths.md)，讓 IntelliSense 可以將所連結檔案資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | 找不到匯入的模組時發出警告 | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |
@@ -59,6 +62,8 @@ ms.lasthandoff: 02/23/2018
 ![Python 選項對話方塊、一般索引標籤](media/options-general.png)
 
 ## <a name="debugging-options"></a>偵錯選項
+
+([工具] > [選項] > [Python] > [偵錯] 索引標籤)。
 
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="diagnostics-options"></a>診斷選項
 
+([工具] > [選項] > [Python] > [診斷] 索引標籤)。
+
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
 | 包括分析記錄檔 | 開啟 | 使用按鈕將診斷儲存到檔案，或將它們複製到剪貼簿時，包含與已安裝 Python 環境分析相關的詳細記錄檔。 此選項可能會大幅增加所產生檔案的大小，但通常是診斷 IntelliSense 問題時所需的項目。 |
@@ -81,6 +88,8 @@ ms.lasthandoff: 02/23/2018
 ![Python 選項對話方塊、診斷索引標籤](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>互動式視窗選項
+
+([工具] > [選項] > [Python] > [互動式視窗] 索引標籤)。
 
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ ms.lasthandoff: 02/23/2018
 ![Python 選項對話方塊、互動式視窗索引標籤](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>進階 Python 編輯器選項
+
+([工具] > [選項] > [文字編輯器] > [Python] > [進階] 索引標籤)。
 
 ### <a name="completion-results"></a>完成結果
 
@@ -105,7 +116,7 @@ ms.lasthandoff: 02/23/2018
 
 | 選項 | 預設 | 描述 |
 | --- | --- | --- |
-| 輸入下列字元予以認可 | {}[]().,:;+-*/%&&#124;^~=<>#@\ | 這些字元一般會接在可從完成清單中選取的識別碼後面，因此只要鍵入字元就可以輕易地認可完成。 您可以視需要在清單中移除或新增特定字元。  |
+| 輸入下列字元予以認可 | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | 這些字元一般會接在可從完成清單中選取的識別碼後面，因此只要鍵入字元就可以輕易地認可完成。 您可以視需要在清單中移除或新增特定字元。  |
 | 按 Enter 認可目前的完成 | 開啟 | 設定時，Enter 鍵會選擇並套用目前選取的完成，與上面字元相同 (但，當然，沒有 Enter 的字元，因此無法直接進入該清單！)。 |
 | 在完整鍵入字的結尾處按 Enter 來新增新行 | Off | 根據預設，如果您鍵入完成快顯視窗中所顯示的整個單字，然後按 Enter，則會認可該完成。 設定此選項，即可在完成鍵入識別碼時有效地認可完成，因此 Enter 會插入新行。 |
 
@@ -118,3 +129,11 @@ ms.lasthandoff: 02/23/2018
 | 根據類型為名稱上色 | 開啟 | 啟用 Python 程式碼中的語法著色。 |
 
 ![Python 編輯器選項對話方塊、進階索引標籤](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>字型與色彩選項
+
+([文字編輯器] 群組內的 [環境] > [字型和色彩] 索引標籤)。
+
+Python 選項名稱的前面都會加上 "Python"，且能輕鬆透過名稱了解其功能。 所有 Visual Studio 色彩佈景主題都是 10pt Consolas regular (非粗體)。 預設色彩會因佈景主題而異。 一般而言，使用者會在無法順利閱讀預設設定的文字時，變更其字型或色彩。
+
+![Python 字型和色彩選項](media/options-fonts-and-colors.png)

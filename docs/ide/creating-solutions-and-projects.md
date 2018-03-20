@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中建立解決方案和專案 | Microsoft Docs"
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="to-create-a-project-from-a-project-template"></a>從專案範本建立專案
 
-1. 在 Visual Studio 中建立新的專案有多種方式。 在起始頁上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案]、[新增]、[專案...]，或選擇工具列上的 [新增專案] 按鈕。
+1. 在 Visual Studio 中建立新的專案有多種方式。 在起始頁上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案] > [新增] > [專案]，或選擇工具列上的 [新增專案] 按鈕。
 
   ![起始頁](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ ms.lasthandoff: 01/29/2018
 
 1. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
 
-  下列範例顯示適用於 Visual C# Web 專案的專案範本。
+  下列範例示範適用於 Visual C# .NET Core 專案的專案範本。
 
-  ![專案範本](./media/vside-newproject-projects-list.png)
+  ![專案範本](./media/new-project-dialog-net-core.png)
 
 1. 在 [名稱] 方塊中輸入新專案的名稱。 您可以選擇將專案儲存在系統上的預設位置，或選擇 [瀏覽] 按鈕以尋找其他位置。
 
@@ -69,13 +68,13 @@ ms.lasthandoff: 01/29/2018
 
 1. 選擇 [確定] 按鈕以建立方案和專案。
 
-1. 如果您想要將其他專案新增至解決方案，請選擇方案總管中的解決方案節點，然後在功能表列上選擇 [專案]、[新增項目]。
+1. 如果您想要將其他專案新增至方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [加入新項目]。
 
 ## <a name="create-a-project-from-existing-code-files"></a>從現有程式碼檔案建立專案
 
 如果您有程式碼來源檔案的集合，您可以輕鬆地將其新增至專案。
 
-1. 在功能表上，選擇 [檔案]、[新增]、[現有程式碼中的專案]。
+1. 在功能表上，選擇 [檔案] > [新增] > [現有程式碼中的專案]。
 
 1. 在 [從現有程式碼檔建立專案精靈] 的 [您要建立的專案類型為何?] 下拉式清單方塊中，選擇您想要的專案類型，然後選擇 [下一步] 按鈕。
 
@@ -86,21 +85,16 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="add-files-to-a-solution"></a>將檔案新增至方案
 
-如果您有一個套用至多個專案的檔案 (例如方案的讀我檔案)，或邏輯上位於方案層級而不是特定專案下的其他檔案，則可以將這些檔案新增至方案本身。 若要將項目新增至方案，請在**方案總管**中方案節點的操作 (右鍵) 功能表上，選擇 [新增]、[新增項目] 或 [新增]、[現有的項目]。
+如果您有一個套用至多個專案的檔案 (例如方案的讀我檔案)，或邏輯上位於方案層級而不是特定專案下的其他檔案，則可以將這些檔案新增至方案本身。 若要將項目新增至方案，請在 [方案總管] 中方案節點的操作 (滑鼠右鍵) 功能表上，選擇 [新增] > [新增項目] 或 [新增] > [現有的項目]。
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>建立以特定 .NET Framework 版本為目標的 .NET 專案
 
-當您建立專案時，您可以指定專案所要使用的特定 .NET Framework 版本。 若要指定 .NET Framework 版本，請選擇 [新增專案] 對話方塊中的 **.NET Framework** 版本下拉式功能表。
+當您建立專案時，您可以指定專案所要使用的特定 .NET Framework 版本。 若要指定 .NET Framework 版本，請選擇 [新增專案] 對話方塊中的 [Framework] 下拉式功能表。
 
-![.NET Framework 版本選取器](./media/vside-newproject-framework.png)
+![[新增專案] 對話方塊中的 [Framework] 下拉式清單](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> 如果您從 .NET Core 範本建立專案，則會忽略您在下拉式清單中所選取的 .NET Framework 版本。
-
-> [!TIP]
-> 如果您在選取專案範本之前設定 .NET Framework 版本，Visual Studio 將只會顯示與該 .NET Framework 版本相容的範本。
-
-您必須在系統上安裝 .NET Framework 3.5，才能存取早於 .NET Framework 4 的 .NET Framework 版本。
+> 您必須在系統上安裝 .NET Framework 3.5，才能存取早於 .NET Framework 4 的 .NET Framework 版本。
 
 ## <a name="create-empty-solutions"></a>建立空的方案
 
@@ -108,9 +102,9 @@ ms.lasthandoff: 01/29/2018
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表上，依序選擇 [檔案]、[新增]、[專案]。
+1. 在功能表上，選擇 [檔案] > [新增] > [專案...]。
 
-1. 在左窗格 ([範本]) 中，選擇 [其他專案類型]，然後從展開的清單中選擇 [Visual Studio 方案]。
+1. 在左側 ([範本]) 窗格中，在展開的清單中選擇 [其他專案類型] > [Visual Studio 方案]。
 
 1. 在中間窗格選擇 [空白方案]。
 
@@ -124,7 +118,7 @@ ms.lasthandoff: 01/29/2018
 
 如果您建立 .NET 專案而不指定磁碟位置，它會是暫存專案。 暫存專案可讓您試驗 .NET 專案。 使用暫存專案時，隨時都可以選擇儲存或捨棄它。
 
-若要建立暫存專案，請先移至 [工具]、[選項]、[專案和方案]、[一般]，並取消核取 [建立時儲存新專案] 核取方塊。 然後像往常一樣開啟 [新增專案] 對話方塊。
+若要建立暫存專案，請先移至 [工具] > [選項] > [專案和方案] > [一般]，並取消選取 [建立時儲存新專案] 核取方塊。 然後像往常一樣開啟 [新增專案] 對話方塊。
 
 ## <a name="delete-a-solution-project-or-item"></a>刪除方案、專案或項目
 
@@ -143,7 +137,7 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[專案和方案](../ide/solutions-and-projects-in-visual-studio.md)  
+[方案和專案](../ide/solutions-and-projects-in-visual-studio.md)  
 [GitHub 上的 Microsoft 開放原始碼存放庫](https://github.com/Microsoft)  
 [Visual Studio 範例](../ide/visual-studio-samples.md)  
-[開發人員程式碼範例](https://code.msdn.microsoft.com/)  
+[開發人員程式碼範例](https://code.msdn.microsoft.com/)

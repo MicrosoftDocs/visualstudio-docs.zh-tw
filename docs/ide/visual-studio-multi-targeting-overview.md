@@ -1,10 +1,11 @@
 ---
 title: "在 Visual Studio 中以 .NET Framework 為目標 | Microsoft Docs"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 
@@ -48,7 +50,7 @@ Framework 目標包括下列功能：
 
 當您使用以舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 為目標的專案時，Visual Studio 會動態變更開發環境，例如：
 
-- 它會篩選 [新增專案] 對話方塊、[加入新項目] 對話方塊、[加入新參考] 對話方塊和 [加入服務參考] 對話方塊中的項目，以省略目標版本中未提供的選項。
+- 它會篩選 [新增新項目] 對話方塊、[新增參考] 對話方塊，以及 [新增服務參考] 對話方塊中的項目，以省略目標版本中未提供的選項。
 
 - 它會在有多個控制項可供使用時，篩選 [工具箱] 中的自訂控制項，以移除目標版本中未提供的控制項，只顯示最新版控制項。
 
@@ -65,7 +67,11 @@ Framework 目標包括下列功能：
 
 ## <a name="selecting-a-target-framework-version"></a>選取目標 Framework 版本
 
-當您建立專案時，請在 [新增專案] 對話方塊中選取目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 可用的專案範本清單會根據選取項目進行篩選。 在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+當您建立專案時，請在 [新增專案] 對話方塊中選取目標 .NET Framework 版本。 可用架構的清單包含適用於所選取範本類型的已安裝之架構版本。 對於不需要 .NET Framework 的範本類型 (如 .NET Core 範本)，系統會隱藏 [Framework] 下拉式清單。
+
+![[新增專案] 對話方塊中的 [Framework] 下拉式清單](media/vside-newproject-framework.png)
+
+在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系統與使用者組件參考
 

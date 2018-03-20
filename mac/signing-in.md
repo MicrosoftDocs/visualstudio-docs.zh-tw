@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: c97e2216c8101c03c999b4f658dcd4b6e1dc4619
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5fa5a2479b7b04cd8ad9ec84287a30d801ff90ca
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
-第一次啟動 Visual Studio for Mac 時，系統會提示您使用 Microsoft 帳戶登入。 您應該使用連線至您想要使用之授權的 Microsoft 帳戶。 如果您沒有 Microsoft 帳戶，請參閱[註冊 Microsoft 帳戶](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)。 
+第一次啟動 Visual Studio for Mac 時，系統會提示您使用 Microsoft 帳戶登入。 請使用已連線至您想要使用之授權的 Microsoft 帳戶。 如果您沒有 Microsoft 帳戶，請參閱[註冊 Microsoft 帳戶](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)。 
 
 如果您決定不要立即登入，則可以使用 30 天的評估版。 您必須在 30 天後登入以繼續使用 Visual Studio for Mac 的複本 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 10/31/2017
 
 登入 Visual Studio for Mac 之前，請確定您已連線至網際網路。 訂用帳戶只能在線上啟用。
  
-若要登入 Visual Studio for Mac，請執行下列動作：
+若要登入 Visual Studio for Mac，請執行下列步驟：
 
 1. 按一下歡迎頁面上的 [登入] 連結來顯示 [帳戶] 對話方塊，然後按 [登入] 按鈕：
 
@@ -32,9 +32,9 @@ ms.lasthandoff: 10/31/2017
 
     ![](media/signing-in-image13.png)
 
-    請注意，您無法使用 Xamarin 認證來登入 Visual Studio for Mac。
+    您無法使用 Xamarin 認證來登入 Visual Studio for Mac。
 
-3. 1.   在您順利登入之後，就會看到授權類型。 在這個對話方塊中，您可以新增可能要使用的額外 Microsoft 帳戶：
+3.  在您順利登入之後，就會看到授權類型。 在這個對話方塊中，您可以新增可能要使用的額外 Microsoft 帳戶：
 
     ![](media/signing-in-image14.png)
 

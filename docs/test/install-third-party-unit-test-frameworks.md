@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
 Visual Studio 測試總管可以執行任何已針對總管開發配接器介面的單元測試架構。 架構的安裝程式會安裝二進位檔，並加入支援語言版本的 Visual Studio 專案範本。 當您使用範本來建立專案時，系統會向測試總管註冊架構。 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。 測試總管會全部一起執行。  
@@ -56,7 +57,24 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
   
 3.  在 [分類] 清單 (標示為 [正在顯示]) 中，展開 [工具] 節點，然後選擇 [測試]。  
   
-4.  在結果清單中選擇架構，以巡覽至工具的 [Visual Studio Marketplace] 頁面。  
-  
-## <a name="see-also"></a>請參閱  
- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+4.  在結果清單中選擇架構，以巡覽至工具的 [Visual Studio Marketplace] 頁面。 
+
+## <a name="update-to-the-latest-test-adapters"></a>更新至最新的測試配接器
+
+若要體驗最佳的測試探索和執行，請更新至最新穩定的測試配接器。 如需 MSTest、NUnit 和 xUnit 測試配接器的詳細資訊，請參閱 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/) \(英文\)。
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新至最新穩定的測試配接器版本
+
+1. 瀏覽至 [工具] > [NuGet 套件管理員] > [管理方案的 NuGet 套件]，開啟方案的 NuGet 套件管理員
+
+2. 按一下 [更新] 索引標籤並搜尋已安裝的 NUnit 或 xUnit 測試配接器。
+
+3. 選取每個測試配接器，然後選取下拉式功能表中最新穩定的版本。
+
+4. 選擇 [安裝] 按鈕。
+
+![升級測試配接器](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>另請參閱
+
+- [對程式碼進行單元測試](../test/unit-test-your-code.md)

@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 849b52cff3fa85bcfb0b10c43a490d1a5fb40760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5f9a128c1d69683421eb2dbcb351d8a107adeee
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>建置和清除專案與方案
 
-請遵循本主題中的步驟，以了解如何建置、重建和清除您的方案與專案。
+請遵循本文章中的步驟，以了解如何建置、重建和清除您的方案與專案。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>建置、重建或清除整個方案
 

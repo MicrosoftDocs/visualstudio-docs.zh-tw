@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -73,7 +73,7 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新個別使用
 
 Visual Studio 2017 15.3 版中的新功能，如果 Visual Studio 懷疑延伸模組與前一個工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會顯示通知。
 
-**Visual Studio 2017 15.6 版 Preview 3** 中的新功能會在 Visual Studio 懷疑某擴充功能造成 UI 無回應時，一併通知您。
+**Visual Studio 2017 15.6 版**中的新功能：Visual Studio 在懷疑某擴充功能造成 UI 無回應時也會通知您。
 
 當顯示這些通知時，您可以略過此通知，或採取下列其中一個動作：
 

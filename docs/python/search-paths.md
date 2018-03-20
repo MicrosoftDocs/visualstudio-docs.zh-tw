@@ -1,7 +1,7 @@
 ---
 title: "如何在 Visual Studio 中套用 Python 搜尋路徑 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 43e42bf246af0ea5df69a2960d9f13ae97784f6a
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 2135515859ea32c8d134ec6c5824195c554ee97e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/23/2018
 
 不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 實際上，之所以忽略它，確切說來是「因為」它是針對整個系統設定的，因此會導致產生某些無法自動回答的問題：所參考的模組是用於 Python 2.7 還是 Python 3.3？ 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
 
-因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查這些位置中的程式庫，並為它們建置 IntelliSense 資料庫 (視程式庫的數目而定，建構資料庫可能需要一些時間)。
+因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查那些位置中的程式庫，並視需要為它們建置 IntelliSense 資料庫 (Visual Studio 2017 15.5 版及較早版本；視程式庫的數目而定，建構資料庫可能需要一些時間)。
 
 若要新增搜尋路徑，請在 [方案總管] 中的 [Search Paths (搜尋路徑)] 項目上按一下滑鼠右鍵、選取 [Add Folder to Search Path (將資料夾新增到搜尋路徑)]，然後選取要包含的資料夾。 這個路徑會用於與該專案關聯的所有環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
 

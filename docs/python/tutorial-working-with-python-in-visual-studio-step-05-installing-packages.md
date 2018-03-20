@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中使用 Python，步驟 5：安裝套件 | Microsoft Docs"
 description: "在 Visual Studio 內使用 Python 之核心教學課程的步驟 5，示範用於在 Python 環境中管理套件的 Visual Studio 功能。"
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>第 5 步：在 Python 環境中安裝套件
 
@@ -44,19 +44,21 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
   ![在環境中安裝 matplotlib](media/environments-add-matplotlib1.png)
 
 1. 如果系統提示您提高權限，請同意這樣做。
- 
-1. 在安裝套件之後，它會顯示在 [Python 環境] 視窗中。 套件右側的 **X** 可用來進行解除安裝。 
+
+1. 在安裝套件之後，它會顯示在 [Python 環境] 視窗中。 套件右側的 **X** 可用來進行解除安裝。
 
   ![在環境中完成安裝 matplotlib](media/environments-add-matplotlib2.png)
 
   環境下的小型進度列表示 Visual Studio 正在為新安裝的套件建置其 IntelliSense 資料庫。 [IntelliSense] 索引標籤也會顯示更詳細的資訊。 請注意，在該資料庫完成之前，自動完成和語法檢查等 IntelliSense 功能不會在編輯器中針對該套件啟動。
 
+  請注意，**Visual Studio 2017 15.6 版**及更新版本會使用不同且較快的方法來搭配 IntelliSense 運作，並會在 [IntelliSense] 索引標籤上顯示訊息來指出這點。
+
 1. 使用 [檔案] > [新增] > [專案] 建立新的專案，並選取「Python 應用程式」範本。 在出現的程式碼檔案中，貼上下列程式碼，這會像先前的教學課程步驟一樣建立一個餘弦波，只是這次會以圖形方式繪製：
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

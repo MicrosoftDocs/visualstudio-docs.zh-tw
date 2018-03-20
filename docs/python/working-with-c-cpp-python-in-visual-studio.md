@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -231,7 +231,7 @@ ms.lasthandoff: 02/23/2018
 
 如果 Python 專案和 C++ 專案都在相同的解決方案中，第一種方法就會起作用。 請移至方案總管，以滑鼠右鍵按一下 Python 專案的 [參考] 節點，然後選取 [新增參考]。 在出現的對話方塊中，依序選取 [專案] 索引標籤、[superfastcode] 專案 (或您使用的任何名稱) 和 [確定]。
 
-在後續步驟中描述的另一種方法，會將模組安裝在全域 Python 環境中，將它也提供給其他 Python 專案使用。 (這樣做，通常需要您重新整理該環境的 IntelliSense 完成資料庫。 從環境移除模組時，也需要重新整理。)
+在後續步驟中描述的另一種方法，會將模組安裝在全域 Python 環境中，將它也提供給其他 Python 專案使用。 (這樣做，通常需要您在 Visual Studio 2017 15.5 版及較舊版本中重新整理該環境的 IntelliSense 完成資料庫。 從環境移除模組時，也需要重新整理。)
 
 1. 如果您使用 Visual Studio 2017，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 此步驟之所以必要，是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 來建置，因此在透過此處所述方法建置延伸模組時，Python 預期要能使用這些工具 。 (請注意，您可能需要安裝 32 位元版本的 Python 並將 DLL 的目標設成 Win32 而不是 x64。)
 

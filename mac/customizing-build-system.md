@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
-MSbuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft 組建引擎實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
+MSbuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft Build Engine 實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
 
 **MSbuild** 主要用作為 Visual Studio for Mac 中專案的組建系統。 
 
-MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)，然後藉由叫用編譯器等工具完成此輸出。 
+MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)。 它會透過叫用編譯器等工具來達成此輸出。 
 
 
 ## <a name="msbuild-file"></a>MSBuild 檔案
@@ -26,17 +26,18 @@ MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉�
 MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」 (例如影像資源)，以及建置專案所需的「屬性」。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。 
 
 ### <a name="viewing-the-msbuild-file"></a>檢視 MSBuild 檔案
-您可以在專案名稱上按一下滑鼠右鍵，然後選取 [在尋找工具中顯示 ]，來找到這個檔案。 這會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下所示：
+
+您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
 
 ![](media/customizing-build-system-image1.png)
 
-您也可以在專案名稱上按一下滑鼠右鍵，並瀏覽至 [工具] > [編輯檔案]，以在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`：
+若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]：
 
 ![](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>組合 MSBuild 檔案
 
-所有的 MSBuild 檔案包含必要的 `Project` 根項目，如下所示：
+所有的 MSBuild 檔案都包含必要的根 `Project` 元素，例如：
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,7 +45,7 @@ MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分�
 </Project>
 ```
 
-專案通常也會匯入 `.targets` 檔案，其中包含許多描述如何處理和建置各種檔案的規則。 這通常會顯示在 `proj` 檔案的底端，對於 C# 專案其內容如下所示：
+一般來說，專案也會匯入 `.targets` 檔案。 這個檔案包含許多描述如何處理和建置各種檔案的規則。 該匯入通常會顯示在 `proj` 檔案的底端，而對於 C# 專案其外觀則如下：
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,15 +55,15 @@ MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分�
 
 ### <a name="items-and-properties"></a>項目和屬性
 
-MSBuild 中有兩種基本資料類型：「項目」和「屬性」，其詳細說明如下。
+MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會詳細說明它們。
 
 #### <a name="properties"></a>屬性
 
 屬性是索引鍵/值組，用來儲存影響編譯的設定，例如編譯器選項。
 
-它們將使用 PropertyGroup 設定，並且可以包含任意數目的 PropertiesGroups，而 PropertiesGroups 可以包含任意數目的屬性。 
+它們是使用 PropertyGroup 設定，並且可以包含任意數目的 PropertiesGroups，而 PropertiesGroups 可以包含任意數目的屬性。 
 
-例如，簡單主控台應用程式的 PropertyGroup 可能如下所示：
+例如，簡單主控台應用程式的 PropertyGroup 看起來可能如下列 XML：
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ MSBuild 中有兩種基本資料類型：「項目」和「屬性」，其詳細
 
 項目是藉由宣告 `ItemGroup` 來建立。 可以有任意數目的 ItemGroup，而 ItemGroup 可以包含任何數目的項目。 
 
-例如，下列程式碼片段會建立 iOS 啟動畫面。 這些為 `BundleResource` 類型，並以影像的路徑作為其規格：
+例如，下列程式碼片段會建立 iOS 啟動畫面。 啟動畫面擁有組建類型 `BundleResource`，包含作為映像路徑的規格：
 
 ```
  <ItemGroup>

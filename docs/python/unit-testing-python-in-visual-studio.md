@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 55b99e2f572b075c1e9ab1658c8a02b3fdd5ea88
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/19/2018
 
 在設計程式時，Python 會廣泛地使用單元測試來驗證案例。 Visual Studio 中的 Python 支援包含在開發程序的內容內針對單元測試進行探索、執行及偵錯，而且不需要個別執行測試。
 
-本主題提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
+本文章提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
 |   |   |
 |---|---|
@@ -43,16 +43,16 @@ ms.lasthandoff: 02/19/2018
 
 1. 此動作會建立 `test1.py` 檔案，其中的程式碼會匯入標準 `unittest` 模組、從 `unittest.TestCase` 衍生測試類別，並在直接執行指令碼的情況下叫用 `unittest.main()`：
 
-  ```python
-  import unittest
+    ```python
+    import unittest
 
-  class Test_test1(unittest.TestCase):
-      def test_A(self):
-          self.fail("Not implemented")
+    class Test_test1(unittest.TestCase):
+        def test_A(self):
+            self.fail("Not implemented")
 
-  if __name__ == '__main__':
-      unittest.main()
-  ```
+    if __name__ == '__main__':
+        unittest.main()
+    ```
 
 1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟測試總管。
 

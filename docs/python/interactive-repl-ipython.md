@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
-IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的互動式開發環境，且具有「互動式平行計算」功能。 本主題引導在 Visual Studio 互動式視窗中使用 IPython，其中所有的一般[互動式視窗](python-interactive-repl-in-visual-studio.md)功能也都可使用。
+IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的互動式開發環境，且具有「互動式平行計算」功能。 本文章會引導使用者在 Visual Studio 互動式視窗中使用 IPython；該視窗也提供所有的一般[互動式視窗](python-interactive-repl-in-visual-studio.md)功能。
 
 針對此逐步解說，您需要安裝 [Anaconda](https://www.continuum.io) 環境，其中包含 IPython 和必要的程式庫。
 
@@ -83,7 +83,7 @@ IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的
 
 IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](http://ipython.org/documentation.html)。
 
-## <a name="related-topics"></a>相關主題
+## <a name="related-articles"></a>相關文章
 
 - 若要輕鬆使用 Jupyter，且不需安裝，請嘗試免費的 [Azure Notebooks 託管服務](https://notebooks.azure.com/)，可讓您保留並與其他人共用您的筆記。
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-6-working-with-git"></a>步驟 6：使用 Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
 
 Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 GitHub 和 Visual Studio Team Services 這類服務之存放庫的直接整合。 這項整合包含複製存放庫、認可變更，以及管理分支。
 
-本主題描述如何建立現有專案的本機 Git 存放庫。 如需從遠端 Git 存放庫建立專案的逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+本文章描述如何建立現有專案的本機 Git 存放庫。 如需從遠端 Git 存放庫建立專案的逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
 1. 在 Visual Studio 中開啟專案之後 (例如[上一個步驟](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的專案)，以滑鼠右鍵按一下方案，然後選取 [將方案新增至原始檔控制]。 Visual Studio 會建立包含您專案程式碼並顯示 Git 相關控制項的本機 Git 存放庫，也會出現在 Visual Studio 視窗底部。 這些控制項顯示擱置中認可、變更、存放庫名稱和分支。 將滑鼠指標停留在控制項上方，以查看其他資訊。
 

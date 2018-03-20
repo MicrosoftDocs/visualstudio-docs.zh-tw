@@ -2,7 +2,7 @@
 title: "Python 環境視窗參考 - Visual Studio | Microsoft Docs"
 description: "有關 Visual Studio [Python 環境] 視窗中所出現每個索引標籤的詳細資料。"
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/23/2018
 
 啟動指令碼包含互動式視窗所載入並自動執行的程式碼，包括匯入、函式定義，以及文字形式的任何其他項目。 這類指令碼是使用兩種方式進行參考：
 
-1. 當您安裝環境時，Visual Studio 會建立資料夾 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment&gt' 符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的互動式視窗時，只要依字母順序在這裡找到 `.py` 檔案，就會載入並執行互動式視窗。
+1. 當您安裝環境時，Visual Studio 會建立資料夾 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中的 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的互動式視窗時，只要依字母順序在這裡找到 `.py` 檔案，就會載入並執行互動式視窗。
 
 1. [工具] > [選項] > [Python 工具] > [互動式視窗] 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
@@ -80,9 +80,17 @@ ms.lasthandoff: 02/23/2018
 
 在舊版中，也標示為 "pip"。
 
-管理安裝在環境中的套件，讓您也能夠搜尋並安裝新的套件 (包括任何相依性)。 搜尋會篩選您目前已安裝的套件和 [PyPI](https://pypi.python.org)。 您也可以在搜尋方塊中直接輸入任何 `pip install` 命令，包括 `--user` 或 `--no-deps` 之類的旗標。
+管理安裝在環境中的套件，讓您也能夠搜尋並安裝新的套件 (包括任何相依性)。
 
-![Python 環境套件索引標籤](media/environments-pip-tab.png)
+已安裝的套件會和更新 (向上箭頭) 及解除安裝 (位於圓圈中的交叉) 該套件的控制項一起顯示：
+
+![Python 環境套件索引標籤](media/environments-pip-tab-controls.png)
+
+輸入搜尋詞彙能篩選已安裝的套件，以及可從 PyPI 安裝之套件的清單。
+
+![具有針對 "num" 之搜尋的 Python 環境套件索引標籤](media/environments-pip-tab.png)
+
+您也可以在搜尋方塊中直接輸入任何 `pip install` 命令，包括 `--user` 或 `--no-deps` 之類的旗標。
 
 安裝套件時會在環境於檔案系統的 `Lib` 資料夾內建立子資料夾。 例如，如果您已在 `c:\Python36` 中安裝 Python 3.6，則會將套件安裝在 `c:\Python36\Lib` 中；如果已在 `c:\Program Files\Anaconda3` 中安裝 Anaconda3，則會將套件安裝在 `c:\Program Files\Anaconda3\Lib` 中。
 
@@ -102,7 +110,9 @@ ms.lasthandoff: 02/23/2018
 
 ![Python 環境的 [IntelliSense] 索引標籤](media/environments-intellisense-tab.png)
 
-此資料庫包含環境所有程式庫的中繼資料，並可改善 IntelliSense 速度及降低記憶體使用量。 當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 (例如，Anaconda 隨附許多程式庫，因此就需要一些時間來編譯資料庫)。完成之後，您會獲得詳細的 IntelliSense，而在您安裝其他程式庫之前，就不需要再次重新整理資料庫 (使用 [Refresh DB] (重新整理資料庫) 按鈕)。
+在 **Visual Studio 2017 15.5 版**及較舊版本中，IntelliSense 完成取決於已針對該程式庫進行編譯的資料庫。 安裝程式庫時，系統會在背景建置資料庫，但這可能需要花費一些時間，且在您開始撰寫程式碼時可能尚未完成。 **Visual Studio 2017 15.6 版**及更新版本會使用較快速的方法，來在不仰賴資料庫的情況下 (除非您特別選擇啟用它) 提供完成。
+
+當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 (例如，Anaconda 隨附許多程式庫，因此就需要一些時間來編譯資料庫)。完成之後，您會獲得詳細的 IntelliSense，而在您安裝其他程式庫之前，就不需要再次重新整理資料庫 (使用 [Refresh DB] (重新整理資料庫) 按鈕)。
 
 資料尚未經過編譯的程式庫會標示 **!**；如果環境的資料庫尚未完成，則 **!** 也會出現在主要環境清單中該資料庫的旁邊。
 
@@ -110,5 +120,5 @@ ms.lasthandoff: 02/23/2018
 
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)
-- [將 requirements.txt 用於相依性](managing-required-packages-with-requirements-txt.md) 
+- [將 requirements.txt 用於相依性](managing-required-packages-with-requirements-txt.md)
 - [搜尋路徑](search-paths.md)

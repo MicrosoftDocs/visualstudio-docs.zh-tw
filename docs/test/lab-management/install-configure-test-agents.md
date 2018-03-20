@@ -1,56 +1,28 @@
 ---
-title: "安裝和設定測試代理程式 | Microsoft Docs"
-ms.custom: 
-ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
+title: "在 Visual Studio 中安裝和設定測試代理程式 | Microsoft Docs"
+ms.date: 03/02/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="install-and-configure-test-agents"></a>安裝和設定測試代理程式
 
-對於使用 Visual Studio 和 Visual Studio Team Services 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器，因為 Agents for Microsoft Visual Studio 會與 Team Services 或 TFS 通訊以處理協調流程。 例如，您要使用 Team Services 或 TFS 中的組建和發行工作流程來執行連續測試。
+對於使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 VSTS 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 VSTS 或 TFS 中執行建置和發行工作流程的持續測試。
 
-如果您需要測試代理程式或測試控制器以使用 TFS 2013，請使用 Agents for Visual Studio 2013 Update 5 並設定測試控制器。
+建議您也可考慮使用[建置或發行管理](use-build-or-rm-instead-of-lab-management.md)是否更為適合，而不是 Lab Management。
 
-也請考慮[改用組建或發行管理](use-build-or-rm-instead-of-lab-management.md)是否較為容易。
-
-## <a name="what-do-i-need"></a>我需要什麼？
-
-**在哪裡取得測試控制器和測試代理程式？**
-
-* 如果您要使用組建 vNext 工作執行測試，而且想要從本機目錄安裝代理程式 - 
-
-  * [下載 Agents for Microsoft Visual Studio 2015 RTM 和 Update 1](http://go.microsoft.com/fwlink/p/?LinkId=619266)。 
-
-  * [下載 Agents for Microsoft Visual Studio 2017 和 Visual Studio 2015 Update 2](https://www.visualstudio.com/downloads/download-visual-studio-vs) - 選擇 [Tools for Visual Studio 2015]，然後從左側的瀏覽列選取 [Agents for Visual Studio 2015]。
-
-* 如果您想要執行下列測試，請[下載 Agents for Microsoft Visual Studio 2013 Update 5](http://go.microsoft.com/fwlink/p/?LinkId=619264)：
-
-  * 使用內部部署遠端電腦的負載測試。
-
-  * 從遠端使用 Microsoft Test Manager 或 MSTest 及實驗室環境測試設定的連續測試。
-
-  * 使用 TFS 2013 的連續測試。
-
-這些安裝程式會以 ISO 檔案 (虛擬 CD) 提供，方便安裝在虛擬機器上。 
-
-[可以混合使用 TFS、Microsoft Test Manager、測試控制器和測試代理程式的版本嗎？](#MixedVersions)
-
-**安裝我的測試控制器和測試代理程式時有哪些系統需求？**
+## <a name="system-requirements"></a>系統需求
 
 | 項目 | 需求 |
 | ---- | ------------ |
@@ -58,37 +30,39 @@ ms.lasthandoff: 02/01/2018
 | **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2 Service Pack 1 |
 | **.NET Framework** | .NET Framework 4.5 |
 
-## <a name="q--a"></a>問與答
+## <a name="install-the-test-controller-and-test-agents"></a>安裝測試控制器和測試代理程式
 
-<!-- BEGINSECTION class="m-qanda" -->
+您可以從 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 下載 Agents for Visual Studio 2017。尋找 *Agents for Visual Studio 2017*，然後選取 [代理程式] 或 [控制器]。 您可以從[舊版下載](https://www.visualstudio.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
 
-<a name="MixedVersions"></a>
+這些安裝程式會以 ISO 檔案提供，方便安裝在虛擬機器上。
 
-####<a name="q-can-i-mix-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>問：可以混合使用 TFS、Microsoft Test Manager、測試控制器和測試代理程式的版本嗎？
+## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>TFS、Microsoft Test Manager、測試控制器和測試代理程式的相容版本
 
-答：可以，以下是支援的相容組合：
+您可以根據下表，混合使用不同版本的 TFS、Microsoft Test Manager (MTM)、測試控制器和測試代理程式：
 
-| TFS | 具有實驗室中心的 Microsoft Test Manager | 控制器 | 代理程式 |
+| TFS | MTM 與實驗室中心 | 控制器 | 代理程式 |
 | --- | -------------------------------------- | ---------- | ----- |
+| 2017：從 2015 升級或全新安裝 | 2017 | 2017 | 2017 |
+| 2017：從 2015 升級或全新安裝 | 2017 | 2013 Update 5 | 2013 Update 5 |
+| 2017：從 2015 升級或全新安裝 | 2015 | 2013 Update 5 | 2013 Update 5 |
 | 2015：從 2013 升級 | 2013 | 2013 |2013 |
 | 2015：全新安裝 | 2013 | 2013 | 2013 |
 | 2015：從 2013 升級或全新安裝 | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
 
-####<a name="q-will-the-test-agent-2015-support-all-the-scenarios-supported-by-test-controller-and-test-agent-of-visual-studio-2013"></a>問：Test Agent 2015 是否支援 Visual Studio 2013 的測試控制器和測試代理程式支援的所有案例？
+## <a name="upgrade-from-visual-studio-2013-test-agents"></a>從 Visual Studio 2013 測試代理程式升級
 
-答：建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建定義中的「部署測試代理程式」工作，以下載並在電腦上安裝測試代理程式。
-下表顯示 Agents for Visual Studio 2013 支援的案例，以及 Team Foundation Server (TFS) 2015 和 Team Services (TS) 的替代方案。
+建議您在所有新的自動化測試案例中使用 Agents for Visual Studio。 您可以使用組建定義中的「部署測試代理程式」工作，以下載並在電腦上安裝測試代理程式。
 
-| Agents for Visual Studio 2013 所支援的案例 | TFS 和 TS 中的替代方案 |
+下表顯示 Agents for Visual Studio 2013 支援的案例，以及 Team Foundation Server (TFS) 2015 和 VSTS 的替代方案：
+
+| Agents for Visual Studio 2013 所支援的案例 | TFS 和 VSTS 中的替代方案 |
 | --- | --- |
-| Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建定義](https://www.visualstudio.com/team-services/continuous-integration/) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
-| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller/Test Agents 2013 Update 5 在內部部署執行負載測試。 [詳細資訊](https://msdn.microsoft.com/library/ff400223.aspx)。 |
+| Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建定義](/vsts/build-release/) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
+| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller 和 Test Agents 2013 Update 5 在內部部署執行負載測試。 如需詳細資訊，請參閱[在負載測試中使用測試控制器和測試代理程式](https://msdn.microsoft.com/library/ff400223.aspx)。 |
 | 使用實驗室環境從 Microsoft Test Manager 進行的自動化測試遠端執行 | 此案例目前沒有替代方案。 建議您在組建和發行定義 (而非 XAML 組建) 中使用「執行功能測試」工作，以從遠端執行測試。 |
 | 在 Visual Studio 中執行遠端測試的開發人員 | 不再受支援。 |
 
-<!-- ENDSECTION -->
-
 ## <a name="see-also"></a>另請參閱
 
-* [使用測試設定設定電腦和收集診斷資訊](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)
+* [設定電腦和收集診斷資訊](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017
 
@@ -40,9 +40,9 @@ Visual Studio 透過 .NET ("Roslyn") 編譯器來深入了解您的程式碼，�
 
 [文件：重構和快速動作](refactoring-code-generation-quick-actions.md)
 
-Visual Studio 的即時程式碼診斷藉由偵測錯誤和可能有問題的程式碼，來協助您改善程式碼品質。 我們提供快速動作 (**Ctrl+.**) 來解決您文件、專案或方案中偵測到的問題。 即使您未在編輯器中開啟這些檔案，也可以啟用「完整解決方案分析」來尋找整個方案中的問題。
+Visual Studio 的即時程式碼診斷藉由偵測錯誤和可能有問題的程式碼，來協助您改善程式碼品質。 我們提供快速動作 (**Ctrl**+ ) 來解決在您文件、專案或解決方案中偵測到的問題。 即使您未在編輯器中開啟這些檔案，也可以啟用「完整解決方案分析」來尋找整個方案中的問題。
 
-此外，您可以透過 **Ctrl+.** 快速鍵使用程式碼建議來了解最佳做法、stub 或產生程式碼、重構程式碼，以及採用新的語言功能 。
+此外，您可以透過 **Ctrl**+**.** 使用程式碼建議來了解最佳做法、stub 或產生程式碼、重構程式碼，以及採用新的語言功能 。
 
 ![使用燈泡功能表套用快速修正和重構](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Visual Studio 的即時程式碼診斷藉由偵測錯誤和可能有問題的程
 - [文件：可攜式自訂編輯器選項](create-portable-custom-editor-options.md)
 - [文件：EditorConfig 的 .NET 程式碼樣式設定](editorconfig-code-style-settings-reference.md)
 
-Visual Studio 啟用程式碼慣例設定、偵測程式碼樣式違規，並透過 **Ctrl+.** 快速鍵提供快速修正來補救樣式問題 。 使用 *EditorConfig*，在存放庫中設定和強制執行您小組的格式化、命名和程式碼樣式慣例，並允許覆寫專案和檔案層級的值。
+Visual Studio 讓您能夠設定程式碼慣例、偵測違反程式碼樣式的情形，並透過 **Ctrl**+**.** 提供快速修正來補救樣式問題 。 使用 *EditorConfig*，在存放庫中設定和強制執行您小組的格式化、命名和程式碼樣式慣例，並允許覆寫專案和檔案層級的值。
 
 ![使用 EditorConfig 設定和強制執行程式碼慣例](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,8 +105,8 @@ Visual Studio 具有豐富的延伸模組生態系統，可供您視需要加以
 | **F12** (以及 **Ctrl+按一下滑鼠左鍵**) | 移至定義 | 巡覽至定義符號的位置 |
 | **Ctrl+F12** | 移至實作 | 從基底類型或成員巡覽至其各種實作 |
 | **Shift+F12** | 尋找所有參考 | 查看所有符號或常值參考 |
-| **Ctrl+.** (在 C# 設定檔中為 **Alt+Enter**) | 快速動作及重構 | 查看您游標位置或選取的程式碼有哪些程式碼修正、程式碼產生動作、重構或其他快速動作可供使用 |
-| **Ctrl**+**E**、**V** | 重複行 | 重製游標所在行的程式碼 (適用於 **Visual Studio 2017 15.6 版 Preview 2** 和更新版本) |
+| **Ctrl**+**.** (在 C# 設定檔中為 **Alt+Enter**) | 快速動作及重構 | 查看您游標位置或選取的程式碼有哪些程式碼修正、程式碼產生動作、重構或其他快速動作可供使用 |
+| **Ctrl**+**E**、**V** | 重複行 | 複製游標所在行的程式碼 (適用於 **Visual Studio 2017 15.6 版**和更新版本) |
 | **Ctrl+Q** | 快速啟動 | 搜尋所有 Visual Studio 設定 |
 | **F5** | 開始偵錯 | 開始偵錯應用程式 |
 | **Ctrl+F5** | 執行而不偵錯 | 在本機執行應用程式而不偵錯 |

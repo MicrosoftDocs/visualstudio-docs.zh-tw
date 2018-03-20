@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中編輯 Python 程式碼 | Microsoft Docs"
 description: "在 Visual Studio 中編輯 Python 可提供 IntelliSense、程式碼片段及巡覽功能，還有格式設定、Linting 和重構。"
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
@@ -39,7 +39,11 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 為了改善效能，IntelliSense 仰賴為您專案中的每個 Python 環境所產生的自動完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱 [Python 環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
+IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。
+
+為了改善效能，**Visual Studio 2017 15.5 版**及較早版本中的 IntelliSense 會仰賴為您專案中的每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤上的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
+
+**Visual Studio 2017 15.6 版**及更新版本會使用不同的方式，來在不仰賴資料庫的情況下為 IntelliSense 提供完成。
 
 ### <a name="completions"></a>自動完成
 
@@ -110,15 +114,41 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 ## <a name="code-snippets"></a>程式碼片段
 
-程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab 或使用 [編輯] > [IntelliSense] > [插入程式碼片段範圍陳述式]  命令插入到檔案。 例如，在 Tab 鍵之後鍵入 `class` 會產生類別的其餘部分。 您可以在名稱和基底清單上輸入、使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 開始輸入主體。
+程式碼片段是一個片段的程式碼，可透過輸入捷徑並按 Tab，或是使用 [編輯] > [IntelliSense] > [插入程式碼片段] 及 [以此環繞] 命令，選取 [Python]，然後選取所需的程式碼片段來插入到檔案。
 
-![程式碼片段](media/code-editing-code-snippets.png)
+例如，`class` 為插入類別定義之程式碼片段的捷徑。 您會在輸入 `class` 時，於自動完成清單中看見該程式碼片段：
 
-您可以在 [程式碼片段管理員] 中看到可用的程式碼片段 ([工具] > [程式碼片段管理員])，選取 [Python] 做為語言︰
+![適用於類別捷徑的程式碼片段](media/code-editing-code-snippet-class.png)
+
+按 Tab 便能產生剩餘的類別。 接著，您可以在名稱和基底清單上輸入，使用 Tab 在反白顯示的欄位之間移動，然後按 Enter 以開始輸入主體。
+
+![反白顯示待完成的程式碼片段區域](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>功能表命令
+
+當您使用 [編輯] > [IntelliSense] > [插入程式碼片段] 功能表命令時，必須先選取 [Python]，然後再選取程式碼片段：
+
+![透過 [插入程式碼片段] 命令選取程式碼片段](media/code-editing-code-snippet-insert.png)
+
+同樣地，[編輯] > [IntelliSense] > [以此環繞] 命令也會將目前的選取項目置於文字編輯器中指定的結構元素內。 例如，假設您有類似以下的程式碼：
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+選取此程式碼並選取 [以此環繞] 命令，將會顯示可用程式碼片段清單。 從清單中選擇 `def` 會將選取的程式碼置於函式定義內，且您可以使用 Tab 鍵來在反白顯示的函式名稱及引數之間瀏覽：
+
+![針對程式碼片段使用 [以此環繞] 命令](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>檢查可用的程式碼片段
+
+您可以在 [程式碼片段管理員] 中查看可用的程式碼片段。[程式碼片段管理員] 的開啟方式為使用 [工具] > [程式碼片段管理員] 功能表命令，並選取 [Python] 作為語言︰
 
 ![程式碼片段管理員](media/code-editing-code-snippets-manager.png)
 
-若要建立您自己的程式碼片段，請參閱[逐步解說︰建立程式碼片段 (英文)](../ide/walkthrough-creating-a-code-snippet.md)。 
+若要建立您自己的程式碼片段，請參閱[逐步解說︰建立程式碼片段 (英文)](../ide/walkthrough-creating-a-code-snippet.md)。
 
 如果您寫了出色的程式碼片段並想與人分享，請隨意張貼在 Gist 中並[聯絡我們](https://github.com/Microsoft/PTVS/issues)。 也許我們在未來的 Visual Studio 版本中可以納入這些片段。
 

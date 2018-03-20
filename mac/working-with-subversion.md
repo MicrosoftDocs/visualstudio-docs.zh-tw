@@ -6,41 +6,39 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 39f7407854b2ff74552209762565236adb403d84
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 
-如本文稍早所述，Subversion 是集中式版本控制系統，可讓您簽出集中式資料的單一主要複本。 與 Git 相較之下，簽出 Subversion 存放庫不會複製整個存放庫，而只會取得該時間點的快照集。
+Subversion 是集中式的版本控制系統，可讓您簽出集中式資料的單一主要複本。 與 Git 相較之下，簽出 Subversion 存放庫不會複製整個存放庫，而只會取得該時間點的快照集。
 
 Subversion 使用「複製-修改-合併」模型，允許使用者同時處理相同的存放庫。 這表示每位使用者都會建立集中式資料的本機或工作複本，接著就可以獨立處理它們。 會以時間形式合併使用者對工作複本的變更。
 
-例如，假設使用者 A 和使用者 B 都從遠端存放庫簽出複本，而且他們都會修改檔案。 使用者 A 完成修改，並遠端進行認可。 使用者 B 認可其工作之前，必須使用遠端中的變更來更新其工作複本，進而與使用者 A 的變更合併。
+例如，假設使用者 A 和使用者 B 都從遠端存放庫簽出複本，而且他們都會修改檔案。 使用者 A 完成修改，並遠端進行認可。 使用者 B 在認可其工作之前，必須將遠端中的變更更新至其工作複本，進而與使用者 A 的變更合併。
 
-在下列各節中，將探討如何在 Visual Studio for Mac 中使用 Subversion 進行版本控制。
+下列各節中將探討如何在 Visual Studio for Mac 中使用 Subversion 進行版本控制。
 
 下圖說明 Visual Studio for Mac 透過 [版本控制] 功能表項目所提供的選項：
 
 ![版本控制功能表項目](media/version-control-svnVersionControlMenu.png)
 
-下列各節將更詳細地說明每個選項。
-
 ## <a name="checkout"></a>簽出...
 
-開始使用遠端 Subversion 存放庫之前，您需要簽出存放庫，以在本機電腦上建立該目錄的本機或工作複本。
+開始使用遠端 Subversion 存放庫之前，請簽出存放庫，以在本機電腦上建立該目錄的工作複本。
 
 若要了解如何在 Visual Studio for Mac 中使用 [簽出] 功能，請遵循[設定 Subversion 存放庫](~/set-up-subversion-repository.md)一節中的步驟。
 
 ## <a name="update-solution"></a>更新方案
 
-使用遠端存放庫時，請務必記住，其他使用者可能正在修改檔案，導致工作複本過期。 在這項預期之下，一律建議先將任何變更從存放庫提取到您的方案，再開始工作以及進行認可。 若要這樣做，請選取 [版本控制] > [更新方案] 功能表項目。
+使用遠端存放庫時，請務必記住，其他使用者可能正在修改檔案，進而導致您的工作複本過期。 為了處理這項預期的衝突，我們建議在開始工作及認可之前，一律先將任何變更從存放庫提取到您的方案。 若要執行提取變更，請選取 [版本控制] > [更新方案] 功能表項目。
 
 ## <a name="review-solution-and-commit"></a>Review Solution and Commit (檢閱方案並認可)
 
-若要檢閱檔案中的變更，請使用每個文件上的 [變更]、[改動者]、[記錄] 和 [合併] 索引標籤，如下所示：
+若要檢閱檔案中的變更，請使用每個文件上的 [變更]、[改動者]、[記錄] 和 [合併] 索引標籤，如下圖中所示：
 
 ![版本控制索引標籤](media/version-control-vcTabs.png)
 

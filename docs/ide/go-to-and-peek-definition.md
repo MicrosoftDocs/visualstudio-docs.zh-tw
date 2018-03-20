@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -70,7 +71,7 @@ ms.lasthandoff: 01/13/2018
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>檢視反編譯的原始定義而不是中繼資料 (C#)
 
-**Visual Studio 2017 15.6 版 Preview 2** 中的新功能：您可以設定選項，以在檢視無法取得原始程式碼的 C# 型別或成員之定義時，顯示反編譯的原始程式碼。 若要開啟此功能，請選擇功能表列中的 [工具] > [選項]。 然後，展開 [文字編輯器] > [C#] > [進階]，再選取 [啟用巡覽至反編譯的原始碼]。
+**Visual Studio 2017 15.6 版**中的新功能：您可以設定選項，以在檢視無法取得原始程式碼的 C# 型別或成員之定義時，顯示反編譯的原始程式碼。 若要開啟此功能，請選擇功能表列中的 [工具] > [選項]。 然後，展開 [文字編輯器] > [C#] > [進階]，再選取 [啟用巡覽至反編譯的原始碼]。
 
 ![檢視反編譯的定義](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ ms.lasthandoff: 01/13/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[巡覽程式碼](../ide/navigating-code.md)  
-[如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[巡覽程式碼](../ide/navigating-code.md)
+[如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,7 +1,7 @@
 ---
 title: "RemoveDuplicates 工作 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 03/01/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b735b706ec7c258e168c75dcfd8b456df23a021e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ce3271b84d4d6bbb4f7905294d0c9fad678c1b8f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 從指定的項目集合中移除重複項目。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/09/2018
   
 |參數|描述|  
 |---------------|-----------------|  
-|`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。|  
+|`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|  
 |`Inputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|  
   
 ## <a name="remarks"></a>備註  
@@ -70,7 +70,30 @@ ms.lasthandoff: 02/09/2018
     </Target>  
 </Project>  
 ```  
+
+ 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 "MyFile2.cs"、"MyFile1.cs" 和 "MyFile3.cs" 項目。  
   
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+  
+    <ItemGroup>  
+        <MyItems Include="MyFile2.cs"/>  
+        <MyItems Include="MyFile1.cs" />  
+        <MyItems Include="MyFile3.cs" />  
+        <MyItems Include="myfile1.cs"/>  
+    </ItemGroup>  
+  
+    <Target Name="RemoveDuplicateItems">  
+        <RemoveDuplicates  
+            Inputs="@(MyItems)">  
+            <Output  
+                TaskParameter="Filtered"  
+                ItemName="FilteredItems"/>  
+        </RemoveDuplicates>  
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   

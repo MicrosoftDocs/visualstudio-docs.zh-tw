@@ -2,7 +2,7 @@
 title: "在 Visual Studio 中對 Python 程式碼進行偵錯 | Microsoft Docs"
 description: "在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。"
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
 Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處理序、在 [監看式] 和 [即時運算] 視窗中評估運算式、檢查區域變數、中斷點、逐步執行/跳離/不進入陳述式及設定下一個陳述式等。
 
-另請參閱下列特定狀況的偵錯主題︰
+另請參閱下列案例特定的偵錯文章︰
 
 - [Linux 遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
 - [Azure 遠端偵錯](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 基本偵錯工作流程包含設定中斷點、逐步執行程式碼、檢查值和處理例外狀況，如下列各節所述。 如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
 
-您可以透過 [偵錯 (Debug)] > [開始偵錯 (Start Debugging)] 命令、工具列上的 [開始] 按鈕或 F5 鍵開始偵錯工作階段。 這些動作會啟動您專案的啟動檔案 (在方案總管中以粗體顯示) 就會以專案的使用中環境和已在 [專案屬性] 中指定的任何命令列引數或搜尋路徑啟動 (請參閱[專案偵錯選項](#project-debugging-options))。 不過，如果基於某些原因沒有設定啟動檔，Python 輸出視窗會短暫出現，然後消失。 在此情況下，請在適當的檔案上按一下滑鼠右鍵，然後選取 [啟動檔案]。
+您可以透過 [偵錯 (Debug)] > [開始偵錯 (Start Debugging)] 命令、工具列上的 [開始] 按鈕或 F5 鍵開始偵錯工作階段。 這些動作會啟動您專案的啟動檔案 (在方案總管中以粗體顯示) 就會以專案的使用中環境和已在 [專案屬性] 中指定的任何命令列引數或搜尋路徑啟動 (請參閱[專案偵錯選項](#project-debugging-options))。 **Visual Studio 2017 15.6 版**及更新版本會在您沒有啟動檔案集的情況下警示您；較舊的版本可能會在 Python 解譯器執行的情況下開啟輸出視窗，或是該輸出視窗可能會短暫出現並消失。 無論情況為何，請以滑鼠右鍵按一下適當的檔案，然後選取 [設定為啟動檔案]。
 
 > [!Note]
 > 偵錯工具一律會以專案的使用中 Python 環境啟動。 若要變更環境，請將其他環境設為使用中，如[針對專案選取 Python 環境](selecting-a-python-environment-for-a-project.md)所述。
@@ -131,7 +131,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 每個例外狀況的核取方塊控制當此例外狀況引發時，是否*一律*中斷偵錯工具。 當您想更頻繁地針對特定例外狀況中斷時，請核取此方塊。
 
-根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任一例外狀況，然後選取或取消選取 [當使用者程式碼中未處理時繼續]。 當您想減少針對例外狀況中斷的頻率時，請清除此方塊。
+根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況都會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任一例外狀況，然後選取或取消選取 [當使用者程式碼中未處理時繼續]。 當您想減少針對例外狀況中斷的頻率時，請清除此方塊。
 
 若要設定未顯示在此清單中的例外狀況，請按一下 [新增 (Add)] 按鈕將其加入。 名稱必須符合例外狀況的完整名稱。
 
@@ -160,13 +160,13 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | 解譯器路徑 | 覆寫與目前環境相關聯的路徑。  使用非標準解譯器啟動您的指令碼時，此值會很有用。 |
 | 環境變數 | 在這個多行文字方塊中，加入表單 `NAME=VALUE` 的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以使用它來手動覆寫那些其他變數中的任一項。 |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>[即時運算 (Immediate)] 和 [互動式 (Interactive)] 視窗
 
 偵錯工作階段期間有兩個可用的互動式視窗︰ 標準的 Visual Studio [即時運算 (Immediate)] 視窗，與 [Python 偵錯互動式 (Python Debug Interactive)] 視窗。
 
-[即時運算 (Immediate)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [即時運算 (Immediate)]) 用於快速評估 Python 運算式和檢查或指派執行中程式內的變數。 如需詳細資訊，請參閱一般[即時運算視窗](../ide/reference/immediate-window.md)。
+[即時運算 (Immediate)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [即時運算 (Immediate)]) 用於快速評估 Python 運算式和檢查或指派執行中程式內的變數。 如需詳細資料，請參閱一般[即時運算視窗](../ide/reference/immediate-window.md)一文。
 
 [Python 偵錯互動式 (Python Debug Interactive)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [Python 偵錯互動式 (Python Debug Interactive)]) 更豐富，因為它可在偵錯時提供完整的[互動式 REPL](python-interactive-repl-in-visual-studio.md) 體驗，包括撰寫和執行程式碼。 它會使用標準 Python 啟動器自動連線到在偵錯工具中啟動的任一處理序 (包括透過 [偵錯] > [附加至處理序]  附加的處理序)。 不過，它在使用混合模式 C/C++ 偵錯時無法使用。
 

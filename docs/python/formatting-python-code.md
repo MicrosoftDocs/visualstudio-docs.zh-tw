@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>格式化 Python 程式碼
 
@@ -30,9 +30,13 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 - 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 Ctrl+E、F。
 - 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 Ctrl+E、D。
 
-透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式化] 及其巢狀索引標籤可設定選項，且依預設會設為符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 [一般] 索引標籤決定何時套用格式，本主題說明其他三個索引標籤的設定。
+選項是透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式] 及其巢狀索引標籤來設定。 您需要選取 [顯示所有設定] 來使這些選項出現：
 
-此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表，如下文所述。
+![Visual Studio 中的 Python 格式選項](media/options-editor-formatting.png)
+
+格式選項預設會設定成符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
+
+此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表中，如後續小節中所述。
 
 ## <a name="spacing"></a>間距
 

@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>自訂 IDE
 
-Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在效率與審美方面符合其需求的環境中開發應用程式。 本主題探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
+Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在效率與審美方面符合其需求的環境中開發應用程式。 本文章探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
 
 ## <a name="dark-theme"></a>暗色調佈景主題
 
 ![暗色調佈景主題檢視](media/customizing-the-ide-image7a.png)
 
-您可以瀏覽至 [Visual Studio] > [喜好設定...] > [環境] > [視覺化樣式]，然後從 [使用者介面佈景主題] 下拉式清單中選取所需的佈景主題，以在 Visual Studio for Mac 中切換佈景主題，如以下螢幕擷取畫面所示：
+您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]，然後從 [使用者介面佈景主題] 下拉式清單中選取所需的佈景主題，以在 Visual Studio for Mac 中切換佈景主題，如下圖中所示：
 
  ![暗色調佈景主題選取](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>當地語系化
 
-Visual Studio for Mac 以 13 種語言進行當地語系化，使它可供更多開發人員存取。 以下列出目前提供的語言：
+Visual Studio for Mac 以下列 13 種語言進行當地語系化，使它可供更多開發人員存取：
 
 * 簡體中文 - 中國
 * 繁體中文 - 台灣
@@ -42,29 +42,29 @@ Visual Studio for Mac 以 13 種語言進行當地語系化，使它可供更多
 * 西班牙文
 * 土耳其文
 
-若要變更 Visual Studio for Mac 所顯示的語言，請瀏覽至 [Visual Studio] > [喜好設定...] > [環境] > [視覺化樣式]，然後從 [使用者介面語言] 下拉式清單中選取所需的語言，如以下螢幕擷取畫面所示：
+若要變更 Visual Studio for Mac 所顯示的語言，請瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [視覺化樣式]，然後從 [使用者介面語言] 下拉式清單中選取所需的語言，如下圖所示：
 
 
 ![語言選擇](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>作者資訊
 
-作者資訊面板可讓您新增你自己的相關資訊，例如姓名、電子郵件地址、工作的版權擁有者、公司及商標，如下所示：
+作者資訊面板可讓您新增自己的相關資訊，例如姓名、電子郵件地址、作品的版權擁有者、公司及商標：
 
  ![編輯作者資訊區段](media/customizing-the-ide-image9a.png)
 
-這項資訊用來填入標準檔案標題 (例如授權)，您可能會將這些標題加入 Visual Studio for Mac 中所建立的新檔案：
+這項資訊用來填入標準檔案標題 (例如授權)，您可能會將這些標題加入新檔案：
 
  ![標準標題選項](media/customizing-the-ide-image8a.png)
 
 
-填入的 [名稱] 和 [電子郵件] 欄位用來將資訊新增至透過 Visual Studio for Mac 中的版本控制進行的任何認可。 如果未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
+填入的 [名稱] 和 [電子郵件] 欄位將在透過 Visual Studio for Mac 中的版本控制進行的任何認可中使用。 如果未填入這些欄位，Visual Studio for Mac 會在您嘗試使用版本控制時提示您這樣做。
 
 ## <a name="key-bindings"></a>按鍵繫結
 
 按鍵繫結可讓您調整您的開發環境，以便能夠在 Visual Studio for Mac 中更有效率地行動。 它提供了許多熱門 IDE 的常見按鍵繫結，例如 Visual Studio (Windows)、ReSharper、Visual Studio Code 和 Xcode。
 
-您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [按鍵繫結] 來設定按鍵繫結，如下所示：
+您可以瀏覽至 [Visual Studio] > [喜好設定] > [環境] > [按鍵繫結] 來設定按鍵繫結，如下圖所示：
 
  ![設定按鍵繫結](media/customizing-the-ide-image10a.png)
 
@@ -72,13 +72,13 @@ Visual Studio for Mac 以 13 種語言進行當地語系化，使它可供更多
 
 ## <a name="workspace-layout"></a>工作區版面配置
 
-Visual Studio for Mac 的工作區包含一個主要的文件區域 (通常是編輯器、設計工具介面或選項檔），周圍伴隨的「板」則包含用於存取和管理應用程式檔案、測試及偵錯的實用資訊。
+Visual Studio for Mac 的工作區包含一個主要的文件區域 (通常是編輯器、設計工具介面或選項檔)，周圍伴隨的「板」則包含用於存取和管理應用程式檔案、測試及偵錯的實用資訊。
 
  ![工作區版面配置](media/customizing-the-ide-image1a.png)
 
 ### <a name="viewing-and-arranging-pads"></a>檢視和排列板
 
-當您在 Visual Studio for Mac 中開啟任何新的方案或檔案時，應該注意到工作區中的某些「板」，包括 Solution Pad、文件大綱和錯誤，如下所示：
+當您在 Visual Studio for Mac 中開啟任何新的方案或檔案時，應該注意到工作區中存在一些「板」，包括 [Solution Pad]、[文件大綱] 和 [錯誤]：
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的�
 
 任何時候顯示的板都是取決於目前的內容。 例如，使用視覺化設計工具時，工具箱和屬性方格板最重要；偵錯時，最好有偵錯工具板來檢視堆疊和區域變數。
 
-「版面配置」代表已開啟板的狀態。 版面配置可如下所示透過 [檢視] 功能表手動切換，或者在您執行某個動作 (例如偵錯或開啟分鏡腳本) 時自動切換：
+「版面配置」代表已開啟板的狀態。 版面配置可透過 [檢視] 功能表手動切換 (如下圖所示)，或者在您執行某個動作 (例如偵錯或開啟分鏡腳本) 時自動切換：
 
 ![選取新的版面配置](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Visual Studio for Mac 提供包含其他資訊、工具和瀏覽輔助工具的�
 
 Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮動視窗顯示編輯器。
 
-2 欄模式可透過 [檢視] 功能表項目啟用，方法是選取 [檢視] > [編輯器資料行] > [2 欄]，或是將編輯器索引標籤拖曳到編輯器區域的其中一個邊緣，如下所示：
+2 欄模式可透過 [檢視] 功能表項目啟用，方法是選取 [檢視] > [編輯器資料行] > [2 欄]，或是將編輯器索引標籤拖曳到編輯器區域的其中一個邊緣：
 
  ![二欄的並行模式](media/customizing-the-ide-sbs.png)
 

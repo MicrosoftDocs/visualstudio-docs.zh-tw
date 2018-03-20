@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>發佈至 Azure App Service
 
@@ -74,7 +74,7 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 
 ## <a name="configure-python-on-azure-app-service"></a>設定 Azure App Service 上的 Python
 
-一旦您已開始執行 App Service 與空白 Web 應用程式 (不論執行於訂用帳戶或是免費網站中)，請安裝所選版本的 Python，如[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 所述。 若要從 Visual Studio 2017 進行發佈，請將與網站延伸模組一起安裝的 Python 解譯器確切路徑記錄下來，如該主題所述。
+一旦您已開始執行 App Service 與空白 Web 應用程式 (不論執行於訂用帳戶或是免費網站中)，請安裝所選版本的 Python，如[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 所述。 若要從 Visual Studio 2017 進行發佈，請將與網站延伸模組一起安裝的 Python 解譯器確切路徑記錄下來，如該文章所述。
 
 如有需要，您也可以使用這些指示中的程序安裝 `bottle` 套件，因為這個套件會在此逐步解說的其他步驟期間進行安裝。
 

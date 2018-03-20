@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8.階層架構檢視中的排序測試結果是如何運作的？
 
-  階層架構檢視會依字母順序排序排序結果，而不根據輸出。 其他分組依據設定通常會依序按照輸出及字母順序來排序測試結果。 下圖顯示各類分組依據選項以供比較。 您可在[此 GitHub 問題中](https://github.com/Microsoft/vstest/issues/1425)對設計提出意見反應。
+  階層架構檢視會依字母順序排序排序結果，而不根據輸出。 其他分組依據設定通常會依序按照輸出及字母順序來排序測試結果。 查看下圖中顯示各類分組依據選項以供比較。 您可在[此 GitHub 問題中](https://github.com/Microsoft/vstest/issues/1425)對設計提出意見反應。
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9.在階層檢視中，專案、命名空間和類別群組旁有已傳遞、已失敗、已略過和未執行的圖示。 這些圖示的意義為何？
+
+  專案、命名空間和類別群組旁的圖示，反映出該群組內的測試狀態。 請參閱下表。
+
+  ![測試總管階層圖示](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>功能
 

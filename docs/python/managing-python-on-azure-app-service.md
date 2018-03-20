@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 
-Azure App Service 是以一組 App Service「網站延伸模組」的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本主題所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
+Azure App Service 是以一組 App Service「網站延伸模組」的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本文章所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。
 
 > [!Tip]
-> 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本主題所述。
+> 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本文章所述。
 
 > [!Important]
 > 此處所述的程序得隨時變更，特別是改善。 變更宣告於 [Python Engineering at Microsoft blog](https://blogs.msdn.microsoft.com/pythonengineering/) (Microsoft 部落格的 Python 工程)。

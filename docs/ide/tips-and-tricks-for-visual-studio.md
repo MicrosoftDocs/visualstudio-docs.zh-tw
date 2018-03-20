@@ -1,26 +1,26 @@
 ---
 title: "Visual Studio 鍵盤快速鍵 | Microsoft Docs"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>適用於 Visual Studio 的鍵盤祕訣
 
-您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
+您可以使用本文中的快速鍵，來更輕鬆地在 Visual Studio 中巡覽。
+
+這裡列出的快速鍵只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
+如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
 
 ## <a name="window-management"></a>視窗管理
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/19/2018
 |編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)||
 |區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵||
 |將行上移/下移|Alt+向上鍵 / Alt+向下鍵||
-|重複行|Ctrl+E、V|Visual Studio 2017 15.6 版 Preview 2|
+|重複行|Ctrl+E、V|Visual Studio 2017 15.6 版|
 |展開選取範圍|**Shift**+**Alt**+**=**|Visual Studio 2017 15.5 版|
 |縮小選取範圍|**Shift**+**Alt**+**-**|Visual Studio 2017 15.5 版|
 |移至定義|F12||
@@ -101,7 +101,7 @@ ms.lasthandoff: 02/19/2018
 |-|-|
 |加入按鈕|按一下工具列溢位按鈕|
 |尋找標準工具列中的下拉式方塊|Ctrl+D|
-|尋找文字方塊命令模式|輸入 ">"|
+|尋找文字方塊命令模式|鍵入 ">"|
 |建立新別名|>alias NewAlias 命令|
 
 ## <a name="debugging"></a>偵錯
@@ -119,7 +119,7 @@ ms.lasthandoff: 02/19/2018
 |設定和切換中斷點|F9|
 |停用中斷點|Ctrl+F9|
 |即時運算視窗|CTRL+ALT+I|
-|即時運算視窗命令模式|輸入 ">"|
+|即時運算視窗命令模式|鍵入 ">"|
 |即時運算視窗清除緩衝區|>cls|
 |即時運算視窗列印值|?varname|
 
@@ -127,7 +127,7 @@ ms.lasthandoff: 02/19/2018
 
 - [鍵盤快速鍵 (VSTS 和 TFS)](/vsts/collaborate/keyboard-shortcuts)
 - [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)
-- [Visual Studio 祕訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
+- [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
 - [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
 - [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio Connect 錯誤 (Bug)](http://connect.microsoft.com/VisualStudio)
+- [Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)

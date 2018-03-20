@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 您可以使用下列功能，更快速地撰寫程式碼。
 
-- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，在 **Visual Studio 2017 15.6 版 Preview 2** 及更新版本中，您可以選擇一個命令來複製一行程式碼，而不用先複製程式碼，然後調整游標位置，再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 或 [編輯] > [進階] > [縮小選取範圍]，或按 **Shift**+**Alt**+**=** 或 **Shift**+**Alt**+**-** (適用於 **Visual Studio 2017 15.5 版**和更新版本)。
+- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，在 **Visual Studio 2017 15.6 版**及更新版本中，您可以選擇一個命令來輕鬆複製一行程式碼，而不必先複製程式碼，調整游標位置，然後再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 或 [編輯] > [進階] > [縮小選取範圍]，或按 **Shift**+**Alt**+**=** 或 **Shift**+**Alt**+**-** (適用於 **Visual Studio 2017 15.5 版**和更新版本)。
 
 - **使用 IntelliSense**。 當您在編輯器中輸入程式碼時，將會顯示 IntelliSense 資訊，例如列出成員、參數資訊、快速諮詢、簽章說明和自動完成文字。 這些功能支援文字的模糊比對。例如，列出成員的結果清單不僅會包含以您所輸入的字母為開頭的項目，同時也會包含名稱中包含該字母組合的項目。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
@@ -127,4 +127,4 @@ ms.lasthandoff: 02/19/2018
 - [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
-- [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+- [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/09/2018
 
 1. 在方案總管中以滑鼠右鍵按一下專案的 Python 環境 (例如較早圖形中顯示的 [Python 3.6 (32 位元)])，然後選取 [開啟互動式視窗]，以開啟互動式視窗。 您可以透過互動方式從 Visual Studio 主功能表選取 [檢視] > [其他視窗] > [Python 互動式視窗]。
 
-1. 使用一般 `>>>` Python REPL 提示字元，會在編輯器下方開啟互動式視窗。 您經常會想要讓互動式視窗變大，做法是拖曳兩個視窗之間的分隔符號：
+1. 互動式視窗會在編輯器下方搭配標準 `>>>` Python REPL 提示字元開啟。 [環境] 下拉式清單可讓您選取要使用的特定解譯器。 您通常也會想要讓互動式視窗變大，做法是拖曳兩個視窗之間的分隔符號：
 
     ![Python 互動式視窗並拖曳調整大小](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/09/2018
 > [!div class="nextstepaction"]
 > [在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>繼續探討
+## <a name="going-deeper"></a>繼續探討
 
 - [使用互動式視窗](python-interactive-repl-in-visual-studio.md)
 - [使用 IPython REPL](interactive-repl-ipython.md)
