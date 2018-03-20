@@ -1,32 +1,35 @@
 ---
 title: "Visual Studio 偵錯 ASP.NET-|Microsoft 文件"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具偵錯 ASP.NET
 
-Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供快速的方法，若要了解的一些基本功能。
+Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供了解一些基本功能的快速方法。
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
-1. 在 Visual Studio 中，選擇 **檔案 > 新的專案**。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 1. 在下**Visual C#**，選擇**Web**，然後在中間窗格選擇**ASP.NET Core Web 應用程式**。
 
@@ -38,7 +41,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
     ![選擇 Web 應用程式](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 
-    Visual Studio 建立專案。
+    Visual Studio 會建立專案。
 
 1. 在 方案總管開啟 About.cshtml.cs （下 Pages/About.cshtml)，並將下列程式碼
 
@@ -49,7 +52,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
     }
     ```
 
-    這個程式碼：
+    取代為此程式碼：
 
     ```c#
     public void OnGet()
@@ -91,19 +94,19 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
     ![叫用中斷點](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > 如果您有在迴圈或遞迴時，中斷點，或如果您有很多經常逐步執行，中斷點使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)以確定程式碼只在符合特定條件時暫停。 這可以節省時間，也可做讓更容易偵錯難以重現的問題。
+    > 如果您有在迴圈或遞迴時，中斷點，或如果您有很多經常逐步執行的中斷點使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)以確定程式碼只在符合特定條件時暫停。 這可以節省時間，也可做讓更容易偵錯難以重現的問題。
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-有不同的命令，以指示偵錯工具繼續。 我們將顯示新功能 Visual Studio 2017 的有用的程式碼瀏覽命令。
+有不同的命令，以指示偵錯工具繼續。 我們會顯示新功能 Visual Studio 2017 的有用的程式碼瀏覽命令。
 
-- 當在中斷點暫停時，將滑鼠停留在陳述式`return c2`直到綠色**按一下執行**按鈕![按一下執行](../debugger/media/dbg-tour-run-to-click.png)隨即出現，並再按**按一下執行**按鈕。
+當在中斷點暫停時，將滑鼠停留在陳述式`return c2`直到綠色**按一下執行**按鈕![按一下執行](../debugger/media/dbg-tour-run-to-click.png)隨即出現，並再按**按一下執行**按鈕。
 
-    ![按一下 [執行]](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![按一下 [執行]](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    應用程式會繼續執行，並在您按下按鈕的程式碼行上暫停。
+應用程式會繼續執行，並在您按下按鈕的程式碼行上暫停。
 
-    常見的鍵盤命令用來逐步執行程式碼包含**F10**和**F11**。 深入了解的詳細指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
+常見的鍵盤命令用來逐步執行程式碼包含**F10**和**F11**。 深入了解的詳細指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>檢查資料提示方塊中的變數
 
@@ -133,9 +136,7 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解偵錯工具，請參閱[啟動偵錯工具並瀏覽程式碼](../debugger/getting-started-with-the-debugger.md)。
-- 若要了解有關中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。
+在本教學課程中，您學到如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 您可能想要取得的高階偵錯工具功能，以及詳細資訊連結。
 
-## <a name="see-also"></a>請參閱  
- [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

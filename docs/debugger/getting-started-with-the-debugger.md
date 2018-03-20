@@ -1,7 +1,8 @@
 ---
-title: "了解如何使用 Visual Studio 偵錯 |Microsoft 文件"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "了解如何偵錯-Visual Studio |Microsoft 文件"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 偵錯
 
@@ -34,6 +35,15 @@ ms.lasthandoff: 01/04/2018
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)偵錯，會顯示類似的步驟。 |
 
 雖然此示範應用程式是 C#，功能也適用於 c + +、 Visual Basic、 JavaScript 和 Visual Studio （除非註明） 支援其他語言。
+
+在此教學課程中，您將：
+
+> [!div class="checklist"]
+> * 啟動偵錯工具，並叫用中斷點。
+> * 了解逐步執行程式碼偵錯工具的命令
+> * 檢查資料提示與偵錯工具視窗中的變數
+> * 檢查呼叫堆疊
+> * 使用例外狀況協助程式
 
 ## <a name="start-the-debugger"></a>開始偵錯工具 ！
 
@@ -82,11 +92,11 @@ ms.lasthandoff: 01/04/2018
 
 ## <a name="restart-your-app-quickly"></a>快速地重新啟動您的應用程式
 
-1. 按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯工具列 （Ctrl + Shift + F5） 按鈕。
+按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯 工具列 （Ctrl + Shift + F5） 按鈕。
 
-    當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
+當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
 
-    您設定，在中斷點再次停止偵錯工具`MainWindow`建構函式。
+您設定，在中斷點再次停止偵錯工具`MainWindow`建構函式。
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>巡覽偵錯工具使用步驟命令的程式碼
 
@@ -148,20 +158,20 @@ ms.lasthandoff: 01/04/2018
 
 ## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
 
-- 在暫停期間`Update`方法中，按一下 **呼叫堆疊**視窗中，這是預設在右下方的窗格中開啟。
+在暫停期間`Update`方法中，按一下 **呼叫堆疊**視窗中，這是預設在右下方的窗格中開啟。
 
-     ![檢查呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![檢查呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    **呼叫堆疊** 視窗會顯示方法和函式會取得呼叫所在的順序。 第一行會顯示目前的函式 (`Update`教學課程應用程式中的方法)。 第二行顯示`Update`呼叫`Path.set`屬性，依此類推。
+**呼叫堆疊** 視窗會顯示方法和函式會取得呼叫所在的順序。 第一行會顯示目前的函式 (`Update`教學課程應用程式中的方法)。 第二行顯示`Update`呼叫`Path.set`屬性，依此類推。
 
-    >  [!NOTE]
-    > **呼叫堆疊**視窗是類似於偵錯觀點來看，某些像 Eclipse Ide 中。
+>  [!NOTE]
+> **呼叫堆疊**視窗是類似於偵錯觀點來看，某些像 Eclipse Ide 中。
 
-    呼叫堆疊是很好的方式來檢查，並了解應用程式的執行流程。
+呼叫堆疊是很好的方式來檢查，並了解應用程式的執行流程。
 
-    您可以按兩下要查看原始程式碼的程式碼行並，也會變更目前正在檢查偵錯工具的範圍。 此動作不前移偵錯工具。
+您可以按兩下要查看原始程式碼的程式碼行並，也會變更目前正在檢查偵錯工具的範圍。 此動作不前移偵錯工具。
 
-    您也可以使用滑鼠右鍵功能表從**呼叫堆疊**視窗來執行其他動作。 例如，您可以在其中插入指定的函式的中斷點、 前進偵錯工具使用**執行至游標處**，並移檢查原始程式碼。 如需詳細資訊，請參閱[How to： 檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
+您也可以使用滑鼠右鍵功能表從**呼叫堆疊**視窗來執行其他動作。 例如，您可以在其中插入指定的函式的中斷點、 前進偵錯工具使用**執行至游標處**，並移檢查原始程式碼。 如需詳細資訊，請參閱[How to： 檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="step-out"></a>跳離函式
 
@@ -283,7 +293,9 @@ ms.lasthandoff: 01/04/2018
 
 若要深入了解偵錯工具的功能，請參閱[偵錯工具秘訣和訣竅](../debugger/debugger-tips-and-tricks.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-steps"></a>後續步驟
 
-[Visual Studio 偵錯](../debugger/index.md)  
-[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+在本教學課程中，您學到如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 您可能想要取得的高階偵錯工具功能，以及詳細資訊連結。
+
+> [!div class="nextstepaction"]
+> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

@@ -1,7 +1,7 @@
 ---
 title: "使用 c + + 使用 Visual Studio 偵錯工具進行偵錯 |Microsoft 文件"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf6aadc6b2debcb7423df589fb11739039c6476
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fce20f8c17b52b109b469bd439905e0edd66c9d3
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>使用 c + + 使用 Visual Studio 偵錯工具進行偵錯
 
-Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供快速的方法，若要了解的一些基本功能。
+Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供了解一些基本功能的快速方法。
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
-1. 在 Visual Studio 中，選擇 **檔案 > 新的專案**。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-2. 在下**Visual c + +**，選擇**Windows 桌面**，然後在中間窗格選擇**Windows 主控台應用程式**。
+2. 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。
 
     如果您沒有看到**Windows 主控台應用程式**專案範本，請按一下**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案** 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**的 c + + 桌面應用程式開發**工作負載，然後選擇 **修改**。
 
 3. 輸入的名稱，例如**MyDbgApp**按一下**確定**。
 
-    Visual Studio 建立專案。
+    Visual Studio 會建立專案。
 
-4. 在 MyDbgApp.cpp，取代下列程式碼
+4. 在 MyDbgApp.cpp 中，將下列程式碼
 
     ```c++
     int main()
@@ -48,7 +48,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
     }
     ```
 
-    這個程式碼 (請勿移除`#include "stdafx.h"`):
+    取代為此程式碼 (請不要移除 `#include "stdafx.h"`)：
 
     ```c++
     #include <list>  
@@ -92,21 +92,21 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
     偵錯工具暫停，您用來設定中斷點。 暫停偵錯工具和應用程式執行的所在的陳述式會以黃色箭號。 線條`doWork`函式呼叫尚未執行。
 
     > [!TIP]
-    > 如果您有在迴圈或遞迴時，中斷點，或如果您有很多經常逐步執行，中斷點使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)以確定程式碼只在符合特定條件時暫停。 這可以節省時間，也可做讓更容易偵錯難以重現的問題。
+    > 如果您有在迴圈或遞迴時，中斷點，或如果您有很多經常逐步執行的中斷點使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)以確定程式碼只在符合特定條件時暫停。 條件式中斷點可以節省時間，而且也可做讓更容易偵錯難以重現的問題。
 
     當您嘗試偵錯記憶體相關的失敗，c + + 中，您也可以使用中斷點來檢查位址值 （尋找 NULL） 和參考計數。 
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-有不同的命令，以指示偵錯工具繼續。 我們將顯示新功能 Visual Studio 2017 的有用的程式碼瀏覽命令。
+有不同的命令，以指示偵錯工具繼續。 我們會顯示新功能 Visual Studio 2017 的有用的程式碼瀏覽命令。
 
-- 當在中斷點暫停時，將滑鼠停留在陳述式`c1.push_back(20)`直到綠色**按一下執行**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")隨即出現，並再按下**按一下執行** 按鈕。
+當在中斷點暫停時，將滑鼠停留在陳述式`c1.push_back(20)`直到綠色**按一下執行**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")隨即出現，並再按下**按一下執行** 按鈕。
 
-    ![按一下 執行](../debugger/media/dbg-qs-run-to-click.png "執行，按一下")
+![按一下 執行](../debugger/media/dbg-qs-run-to-click.png "執行，按一下")
 
-    在應用程式繼續執行時，呼叫`doWork`，並在您按下按鈕的程式碼行上暫停。
+在應用程式繼續執行時，呼叫`doWork`，並在您按下按鈕的程式碼行上暫停。
 
-    常見的鍵盤命令用來逐步執行程式碼包含**F10**和**F11**。 深入了解的詳細指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
+常見的鍵盤命令用來逐步執行程式碼包含**F10**和**F11**。 深入了解的詳細指示，請參閱[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>檢查資料提示方塊中的變數
 
@@ -136,9 +136,7 @@ A*中斷點*會指出 Visual Studio 應暫停程式執行的地方的標記程�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解偵錯工具，請參閱[啟動偵錯工具並瀏覽程式碼](../debugger/getting-started-with-the-debugger.md)。
-- 若要了解有關中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。
+在本教學課程中，您學到如何啟動偵錯工具，逐步執行程式碼，並檢查變數。 您可能想要取得的高階偵錯工具功能，以及詳細資訊連結。
 
-## <a name="see-also"></a>請參閱  
- [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

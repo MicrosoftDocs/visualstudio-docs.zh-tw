@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
 Visual Studio SDK 是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。  
@@ -35,6 +35,6 @@ Visual Studio SDK 是 Visual Studio 安裝程式的選用功能。 您也可以�
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK  
-使用 Visual Studio 工作負載或元件，您也可以從命令列安裝項目。 請參閱[使用命令列參數來安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)如需詳細資訊，在適當的命令列參數，以及如何判斷工作負載或元件的識別碼。
+因為任何 Visual Studio 工作負載或元件，您也可以安裝**Visual Studio 擴充功能開發**工作負載 (識別碼： Microsoft.VisualStudio.Workload.VisualStudioExtension) 從命令列。 請參閱[使用命令列參數來安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)如需判斷工作負載或元件的識別項的一般指示與適當的命令列參數的詳細資訊。
   
  請注意，您必須使用符合您已安裝的 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您尚未在電腦上安裝 Visual Studio Enterprise，您必須執行 Visual Studio 企業版安裝程式 (vs_enterprise.exe)。
