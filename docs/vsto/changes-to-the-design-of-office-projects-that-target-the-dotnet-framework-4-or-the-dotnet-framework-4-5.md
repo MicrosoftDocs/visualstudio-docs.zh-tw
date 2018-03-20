@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  基底類別不屬於 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 可轉散發套件。 它們反而是定義在隨附於 Visual Studio 的公用程式組件中。 這些組件會在您建置 Office 專案時複製到輸出資料夾，而且必須與方案一起部署。 如需公用程式組件的詳細資訊，請參閱 [Assemblies in the Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)。  
   
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>重新以 .NET Framework 4 為目標的 Office 專案重大變更  
- 下表列出重新以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案中會出現的主要重大變更。 如需詳細資訊，請參閱 [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
+ 下表列出重新以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案中會出現的主要重大變更。 如需詳細資訊，請參閱[將 Office 方案移轉至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
   
 |重大變更|結果|  
 |---------------------|-----------------|  
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |主項目類別，例如`ThisWorkbook`， `Sheet`  *n* ， `ThisDocument`，和`ThisAddIn`，不再提供可以覆寫 Dispose 方法。|您必須將程式碼移在 Dispose 方法的覆寫主項目類別，關機事件處理常式，例如`ThisAddIn_Shutdown`，並移除從主項目類別的 Dispose 方法覆寫。|  
   
 ## <a name="see-also"></a>請參閱  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [將 Office 方案移轉至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [新的 Office 程式開發功能](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office Runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   

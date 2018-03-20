@@ -1,11 +1,7 @@
 ---
 title: "IntelliTest 參考手冊 | Microsoft 開發人員測試工具 | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
 
 ## <a name="contents"></a>內容
 
 * **[IntelliTest 概觀](introduction.md)**
-  - [IntelliTest 的 Hello World](introduction.md#hello-world)
+  - [IntelliTest 的 Hello World](introduction.md#the-hello-world-of-intellitest)
   - [限制](introduction.md#limitations)
     * [非決定性](introduction.md#nondeterminism)
     * [並行](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [平台](introduction.md#platform)
     * [Language](introduction.md#language)
     * [符號推理](introduction.md#symbolic-reasoning)
-    * [不正確的堆疊追蹤](introduction.md#incorrect-stack)
+    * [不正確的堆疊追蹤](introduction.md#incorrect-stack-traces)
   - [進一步閱讀](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[開始使用 IntelliTest](getting-started.md)**
   - [重要屬性](getting-started.md#important-attributes)
   - [重要靜態協助程式類別](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[測試產生](test-generation.md)**
   - [測試產生](test-generation.md#test-generators)
   - [參數化單元測試](test-generation.md#parameterized-unit-testing)

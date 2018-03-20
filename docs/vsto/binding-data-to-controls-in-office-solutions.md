@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 5892f77b335e26e5b907159c4a9da37a58d2ae19
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -100,7 +102,7 @@ ms.lasthandoff: 01/10/2018
   
  使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項執行複雜資料繫結時，不需要明確更新記憶體內部資料來源。 在該情況下，變更會自動傳送至記憶體內部資料來源，而不需要其他程式碼。  
   
- 如需詳細資訊，請參閱 [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
+ 如需詳細資訊，請參閱[如何：從主控制項中使用資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [如何：使用 Excel 中的資料庫資料](http://go.microsoft.com/fwlink/?LinkID=130287)   
