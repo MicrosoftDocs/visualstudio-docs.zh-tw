@@ -11,11 +11,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a65f2237b3fb28569a872c2e3926a2b88e11473
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab83ba64ff8b34c19e7f10aada74ca3eec1441f6
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗。  
@@ -42,7 +42,7 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
       panel1.Controls.Add(content);  
       this.docView = docView;  
     }  
-    private MyDSLDSLDocView docView;  
+    private MyDSLDocView docView;  
   
     ```  
   
@@ -152,6 +152,6 @@ DSL 圖表嵌入 Windows 控制項，它會出現在[!INCLUDE[vsprvs](../code-qu
   
      請注意，清單方塊會顯示在模型中，元素的清單，並確認它正確之後任何的新增或刪除，以及復原與取消復原之後。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
