@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。  
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/09/2018
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`Include`|必要屬性。<br /><br /> 要包含在項目清單中的檔案或萬用字元。|  
+|`Include`|選擇性屬性。<br /><br /> 要包含在項目清單中的檔案或萬用字元。|  
 |`Exclude`|選擇性屬性。<br /><br /> 要從項目清單中排除的檔案或萬用字元。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 |`Remove`|選擇性屬性。<br /><br /> 要從項目清單移除的檔案或萬用字元。<br /><br />|  

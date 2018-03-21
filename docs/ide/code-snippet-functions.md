@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fec5c2bbbf97bee5e0abb0725641a5c562997065
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cf35e77b5383f2da9dd8c735f216735f405d38ec
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
@@ -114,7 +114,7 @@ ms.lasthandoff: 01/29/2018
                     <Default>ClassNamePlaceholder</Default>   
                 </Literal>  
             </Declarations>  
-            <Code Language="vjsharp" Format="CData">  
+            <Code Language="csharp" Format="CData">  
                 <![CDATA[   
                     public $classname$ ($type$ $name$)  
                     {  

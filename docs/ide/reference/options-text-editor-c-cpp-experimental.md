@@ -18,11 +18,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38f6dfc375e776e4ad471fa8075b755dc3c31998
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 78fe2950a0d708b32d5e3f8f9415b2e51af9687b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -46,7 +46,7 @@ Visual Studio 2017 安裝提供這些功能。
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中的其他功能
 
-您可以瀏覽 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads) 中的其他文字編輯器功能。 [C++ 快速修正](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.CQuickFixes2017)即為一例，其支援下列項目：
+您可以瀏覽 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads) 中的其他文字編輯器功能。 [C++ 快速修正](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017)即為一例，其支援下列項目：
 
 - **加入遺漏的 #include** - 建議相關的 #include 來表示程式碼中的未知符號
 

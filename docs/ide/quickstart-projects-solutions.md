@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
 
@@ -185,10 +185,10 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 
 ## <a name="see-also"></a>另請參閱
 
-[快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
-[快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
-[快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)  
-[管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)  
-[管理專案中的參考](../ide/managing-references-in-a-project.md)  
-[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+- [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)
+- [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
+- [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)
+- [管理專案中的參考](../ide/managing-references-in-a-project.md)
+- [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

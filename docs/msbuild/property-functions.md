@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="property-functions"></a>屬性函式
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。  
@@ -211,7 +211,7 @@ ms.lasthandoff: 02/09/2018
  此屬性函式具有下列語法：  
 
 ```  
-$[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
+$([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
@@ -229,7 +229,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
  此屬性函式具有下列語法：  
 
 ```  
-$[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
+$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```  
 
  下列程式碼是此語法的範例。  
@@ -246,7 +246,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  此屬性函式具有下列語法：  
 
 ```  
-$([MSBuild]::GetPathOfFileAbove(dir.props)  
+$([MSBuild]::GetPathOfFileAbove(dir.props))  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue  
@@ -292,7 +292,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
  此屬性函式具有下列語法：  
 
 ```  
-$[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
+$([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```  
 
  下列程式碼是此語法的範例。  

@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ea735e5e300d2b2cde301a4cf52424cabbba934
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 01/29/2018
 |**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5] 的 Visual Basic 和 C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 C# 專案，都需要 .NET Framework 3.5。 (不支援 IA64)。請注意，根據預設，Visual Basic 和 C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|
 |**Microsoft .NET Framework 4.x**|這個套件會在 x86 和 x64 平台安裝 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此套件會安裝適用於 x64 或 x86 SQL Server 2014 的 Microsoft System CLR Types。|
-|**SQL Server 2008 R2 Express**|此套件會安裝 Microsoft SQL Server 2008 R2 Express (Microsoft SQL Server 2008 R2 的免費版本)，這是適用於小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 R2 Express 時，必須要有免費的[註冊](http://go.microsoft.com/fwlink/?LinkId=130380)。|
+|**SQL Server 2008 R2 Express**|此套件會安裝 Microsoft SQL Server 2008 R2 Express (Microsoft SQL Server 2008 R2 的免費版本)，這是適用於小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。|
 |**SQL Server 2012 Express**|此套件會安裝 Microsoft SQL Server 2012 Express。|
 |**SQL Server 2012 Express LocalDB**|此套件會安裝 Microsoft SQL Server 2012 Express LocalDB。|
 |**Visual C++ "14" 執行階段程式庫 (ARM)**|這個套件會安裝適用於 Itanium 架構的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](/cpp/c-runtime-library/c-run-time-library-reference)。|
@@ -58,7 +58,7 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)  
-[應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)  
-[64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-[Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)
+- [專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)
+- [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)
+- [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)

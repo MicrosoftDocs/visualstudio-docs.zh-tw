@@ -1,21 +1,18 @@
 ---
 title: "如何在 Visual Studio 中使用 C++ 的 Google Test | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 author: mikeblome
-ms.openlocfilehash: c7f7c9a4532175569fd32f964187eacab0a2017f
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 35cc31bbe7a1d83270035217dc36fce5f3a8ab6d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 在 **Visual Studio 2017 15.5 版**和更新版本中，Google Test 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 若要確認已安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 Google Test：
@@ -23,14 +20,14 @@ ms.lasthandoff: 01/09/2018
 ![安裝 Google Test](media/cpp-google-component.png "安裝 C++ 的 Google Test")
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>將 Google Test 專案新增至方案
-1. 在**方案總管**中，以滑鼠右鍵按一下方案節點，然後選擇 [新增] | [新增專案]。 
-2. 在左窗格中選擇 [Visual C++] | [測試]，然後在中間窗格中選擇 **Google Test 專案**。 
-3. 提供測試專案名稱，然後按一下 [確定]。 
+1. 在**方案總管**中，以滑鼠右鍵按一下方案節點，然後選擇 [新增] | [新增專案]。
+2. 在左窗格中選擇 [Visual C++] | [測試]，然後在中間窗格中選擇 **Google Test 專案**。
+3. 提供測試專案名稱，然後按一下 [確定]。
 
 ![新增 Google Test 專案](media/cpp-gtest-new-project.png "新增 Google Test 專案")
 
 ## <a name="configure-the-test-project"></a>設定測試專案
-在出現的 [測試專案組態] 對話方塊中，您可以選擇要測試的專案。 當您選擇專案時，Visual Studio 會加入所選專案的參考。 如果您未選擇任何專案，則需要以手動方式加入要測試之專案的參考。 在 Google Test 二進位檔的靜態和動態連結之間選擇時，所有 C++ 程式的考量都相同。 如需詳細資訊，請參閱 [Visual C++ 中的 DLL](/cpp/build/dlls-in-visual-cpp)。 
+在出現的 [測試專案組態] 對話方塊中，您可以選擇要測試的專案。 當您選擇專案時，Visual Studio 會加入所選專案的參考。 如果您未選擇任何專案，則需要以手動方式加入要測試之專案的參考。 在 Google Test 二進位檔的靜態和動態連結之間選擇時，所有 C++ 程式的考量都相同。 如需詳細資訊，請參閱 [Visual C++ 中的 DLL](/cpp/build/dlls-in-visual-cpp)。
 
  ![設定 Google Test 專案](media/cpp-gtest-config.png "設定 Google Test 專案")
 
@@ -47,11 +44,11 @@ ms.lasthandoff: 01/09/2018
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
 您現在準備好撰寫及執行 Google Test。 如需測試巨集的資訊，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
 
-  
+
 
 
 

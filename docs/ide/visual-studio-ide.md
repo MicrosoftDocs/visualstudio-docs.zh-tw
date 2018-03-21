@@ -10,15 +10,16 @@ author: gewarren
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
+- MSDNSTART
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2e7a3dcd800367ab54945cb0c406ce7afcf45a
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: dd54f6f26a76f750454db06c16c3b04c08a873eb
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概觀
 
@@ -206,7 +207,7 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
  ![CodeLens](../ide/media/codelensoverview.png)
 
-- [查看定義](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 視窗會顯示方法或類型的定義內嵌，而不用離開您目前的內容。
+- [[查看定義]](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 視窗會顯示方法或類型的定義內嵌，而不用離開您目前的內容。
 
  ![查看定義](../ide/media/VSIDE_peek_definition.png)
 

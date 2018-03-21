@@ -1,19 +1,18 @@
 ---
 title: "Visual Studio 中的 Visual C# 程式碼單元測試 | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 0d47d3902bc333ee354fdf7f7d6d489b0284f6e3
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 76fc58ff012a813358957ab060b684f8d7e2b5e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
 
