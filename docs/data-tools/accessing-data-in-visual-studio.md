@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中存取資料 |Microsoft 文件"
+title: 在 Visual Studio 中存取資料 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: article
 f1_keywords:
@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -33,7 +33,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 ||||
 |-|-|-|
-|SQL 資料庫|DocumentDB|儲存體 （blob、 資料表、 佇列、 檔案）|
+|SQL 資料庫|Azure Cosmos DB|儲存體 （blob、 資料表、 佇列、 檔案）|
 |SQL 資料倉儲|SQL Server Stretch Database|StorSimple|
 
 等等...

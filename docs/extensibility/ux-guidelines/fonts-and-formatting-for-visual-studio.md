@@ -1,26 +1,28 @@
 ---
-title: "字型及格式設定適用於 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 字型及格式設定適用於 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fcd6b5edd5d0c6724ca7ed1e393e32d657a4a29b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型及格式設定適用於 Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a>環境字型  
+##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
  在 Visual Studio 中的所有字型必須都公開給可自訂的使用者。 這主要透過完成**字型和色彩**頁面**工具 > 選項**對話方塊。 字型設定的三個主要類別如下：  
   
 -   **環境字型**-用於所有介面項目，包括對話方塊、 功能表、 工具視窗和文件視窗的主要字型 ide （整合式的開發環境）。 根據預設，環境字型繫結會顯示為 9 點 Segoe UI，在目前版本的 Windows 系統字型。 使用一種字型的所有介面項目有助於確保整個 IDE 的一致字型外觀。  
@@ -49,9 +51,9 @@ ms.lasthandoff: 12/22/2017
   
  為 Windows Presentation Foundation (WPF) 中，從介面衍生對話方塊視窗類別`DialogWindow`類別而不是 WPF 的`Window`類別。  
   
- 在 XAML 中，程式碼看起來像這樣：  
+ 在 XAML 中，程式碼看起來像這樣：
   
-```  
+```xaml
 <ui:DialogWindow  
     x:Class"MyNameSpace.MyWindow"  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
@@ -61,35 +63,37 @@ ms.lasthandoff: 12/22/2017
     WindowStartupLocation="CenterOwner"  
     Title="My Dialog">  
 </ui:DialogWindow>  
-  
-code behind:  
-  
+```
+
+程式碼後置：
+
+```csharp
 internal partial class WebConfigModificationWindow : DialogWindow  
 {  
 }  
-```  
+```
   
  (取代`Microsoft.VisualStudio.Shell.11.0`MPF dll 的目前版本。)  
   
- 若要顯示對話方塊，請呼叫 「`ShowModal()`」 透過在類別上`ShowDialog()`。 `ShowModal()`在介面中設定正確的強制回應狀態，可確保對話方塊置於父視窗等等。  
+ 若要顯示對話方塊，請呼叫 「`ShowModal()`」 透過在類別上`ShowDialog()`。 `ShowModal()` 在介面中設定正確的強制回應狀態，可確保對話方塊置於父視窗等等。  
   
  程式碼如下所示：  
   
-```  
+```csharp
 MyWindow window = new MyWindow();  
 window.ShowModal()  
-```  
+```
   
- `ShowModal`傳回 bool？ （可為 null 的布林值） 與`DialogResult`，必要時可使用。 如果關閉對話方塊時，如果有傳回值為 true**確定**。  
+ `ShowModal` 傳回 bool？ （可為 null 的布林值） 與`DialogResult`，必要時可使用。 如果關閉對話方塊時，如果有傳回值為 true**確定**。  
   
  如果您要顯示在它自己的某些 WPF UI，不是一個對話方塊，而裝載`HwndSource`，例如快顯視窗或 WPF 視窗的子視窗 Win32/WinForms 父視窗，您必須設定`FontFamily`和`FontSize`WPF e 根項目上lement。 (在 shell 主視窗中，根據設定的屬性，但不是會繼承過去`HWND`)。 此命令介面提供的資源的內容可以繫結，就像這樣：  
   
-```  
-<Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
-<Setter property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
-```  
+```xaml
+<Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
+<Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
+```
   
-###  <a name="BKMK_Formatting"></a>格式化 （調整/粗體） 參考  
+###  <a name="BKMK_Formatting"></a> 格式化 （調整/粗體） 參考  
  有些對話方塊則需要為粗體的特定文字或以外的環境字型的大小。 先前，大於環境字型的字型已編碼為"`environment font +2`」 或類似。 使用提供的程式碼片段，將支援高 DPI 顯示器，並確保顯示的文字一律會顯示在正確的大小和粗細 （像 Light 或半細體）。  
   
 > **注意： 您套用格式之前，請確定您要遵照中找到的指導方針[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**  
@@ -97,10 +101,10 @@ window.ShowModal()
  若要調整規模的環境字型，請設定樣式的 TextBlock 或指示的標籤。 每個正確使用，這些程式碼片段會產生正確的字型，包括適當的尺寸和重量變化。  
   
  其中"`vsui`」 是命名空間的參考`Microsoft.VisualStudio.Shell`:  
-  
-```  
+
+```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0" 
-```  
+```
   
 #### <a name="375-environment-font--light"></a>375%環境字型 + 細體  
  **會顯示為：** 34 pt Segoe UI Light  
@@ -108,19 +112,19 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示。  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="310-environment-font--light"></a>310%環境字型 + 細體  
  **會顯示為：** 28 pt Segoe UI Light   
@@ -128,19 +132,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示。  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
-```  
+```
   
 #### <a name="200-environment-font--semilight"></a>200%環境字型 + 半細體  
  **會顯示為：** 18 pt Segoe UI semilight 做    
@@ -148,19 +152,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤： 
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示：  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="155-environment-font"></a>155%環境字型  
  **會顯示為：** 14 pt Segoe UI    
@@ -168,19 +172,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示：  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="133-environment-font"></a>133%環境字型  
  **會顯示為：** 12 點 Segoe UI    
@@ -188,19 +192,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示：  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="122-environment-font"></a>122%環境字型  
  **會顯示為：** 11 pt Segoe UI    
@@ -208,19 +212,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示：  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="environment-font--bold"></a>環境字型 + 粗體  
  **會顯示為：**粗體 9 點 Segoe UI    
@@ -228,26 +232,26 @@ label.SetResourceReference(Label.StyleProperty,
   
  **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
-```  
+```
   
  **XAML:**設定樣式的 TextBlock 或標籤所示：  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
-```  
+```
   
 ### <a name="localizable-styles"></a>可當地語系化的樣式  
  在某些情況下，當地語系化人員將需要修改不同的地區設定，例如粗體移除東亞語言的文字的字型樣式。 若要進行當地語系化的字型樣式，這些樣式必須是.resx 檔案中。 若要完成這項作業，並仍然編輯 Visual Studio 表單設計工具中的字型樣式，最好是在設計階段中明確設定的字型樣式。 雖然這會建立完整的字型物件，並中斷繼承的父系字型可能不按照，只能使用 FontStyle 屬性用來設定字型。  
   
  解決方法是連接對話方塊表單`FontChanged`事件。 在`FontChanged`事件，查核所有控制項，並檢查是否要將它們的字型。 如果設定，請將它變更為根據表單的字型和前一個字型樣式的控制項的新字型。 這個範例中程式碼是：  
   
-```  
+```csharp
 private void Form1_FontChanged(object sender, System.EventArgs e)  
 {  
           SetFontStyles();  
@@ -279,7 +283,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
           }  
      }  
 }  
-```  
+```
   
  使用此程式碼，可保證，更新表單的字型時，會一併更新控制項的字型。 呼叫此方法也會從表單的建構函式，因為對話方塊可能無法取得的執行個體`IUIService`和`FontChanged`將永遠不會引發事件。 攔截`FontChanged`將允許動態收取新字型，即使對話方塊已開啟的對話方塊。  
   
@@ -296,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
  若要重設字型，請按一下 「 使用預設值"下**工具 > 選項 > 環境 > 字型和色彩**。  
   
-##  <a name="BKMK_TextStyle"></a>文字樣式  
+##  <a name="BKMK_TextStyle"></a> 文字樣式  
  文字樣式是指字型大小、 加權和大小寫。 如需實作指引，請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。  
   
 ### <a name="text-casing"></a>文字大小寫  
@@ -417,13 +421,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 規模較大的標題，在簽章對話方塊<br />-主報表標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用輕量<br /><br /> **不要：**<br /><br /> 使用 ui 以外簽章 UI，例如起始頁<br />-粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 28 pt Segoe UI Light<br /><br /> **Visual 範例：**<br /><br /> ![310%環境字型 &#43; 的範例淺色標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**使用方式：**<br /><br /> 規模較大的標題，在簽章對話方塊<br />-主報表標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用輕量<br /><br /> **不要：**<br /><br /> 使用 ui 以外簽章 UI，例如起始頁<br />-粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 28 pt Segoe UI Light<br /><br /> **Visual 範例：**<br /><br /> ![310%環境字型的範例&#43;淺色標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>200%環境字型 + 半細體  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> -子標題<br />的小型和中型 對話方塊中標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用半細體權數<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 18 pt Segoe UI Semillight<br /><br /> **Visual 範例：**<br /><br /> ![200%環境字型 &#43; 的範例半細體](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
+|**使用方式：**<br /><br /> -子標題<br />的小型和中型 對話方塊中標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用半細體權數<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 18 pt Segoe UI Semillight<br /><br /> **Visual 範例：**<br /><br /> ![200%環境字型的範例&#43;Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202 b_EF200")|  
   
 #### <a name="155-environment-font"></a>155%環境字型  
   
@@ -447,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> -標籤和子標頭中的簽章對話方塊<br />-標籤和子報表中的標頭<br />-標籤和子文件中的標頭以及 UI<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-使用粗體的加權<br /><br /> **不要：**<br /><br /> -斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：**粗體 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型 &#43; 的範例粗體標題](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
+|**使用方式：**<br /><br /> -標籤和子標頭中的簽章對話方塊<br />-標籤和子報表中的標頭<br />-標籤和子文件中的標頭以及 UI<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-使用粗體的加權<br /><br /> **不要：**<br /><br /> -斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：**粗體 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型的範例&#43;粗體標題](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
   
 #### <a name="environment-font"></a>環境字型  
   
@@ -464,6 +468,6 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 -   預設高度行距和填補，應遵循粗體字顯示環境字型的文字。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSDN： 字型 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
  [MSDN： 使用者介面文字 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
