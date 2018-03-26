@@ -112,7 +112,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  如需屬性的詳細資訊，請參閱 [MSBuild 屬性](../msbuild/msbuild-properties.md)。  
   
 ###  <a name="BKMK_Items"></a> 項目  
- 項目是建置系統的輸入內容，通常代表檔案。 項目會依據使定者定義的項目名稱分組為各個項目類型。 這些項目類型可以做為工作的參數，工作會使用個別項目來執行建置流程的步驟。  
+ 項目是建置系統的輸入內容，通常代表檔案。 項目會依據使用者定義的項目名稱分組為各個項目類型。 這些項目類型可以做為工作的參數，工作會使用個別項目來執行建置流程的步驟。  
   
  在專案檔中宣告項目 (Item) 的方式就是建立一個具有項目 (Item) 類型名稱的項目 (Element)，做為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目 (Element) 的子系。 例如，下列程式碼會建立名為 `Compile` 的項目 (Item) 類型，其中包含兩個檔案。  
   
