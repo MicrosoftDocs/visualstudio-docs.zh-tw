@@ -1,23 +1,23 @@
 ---
-title: "變更記錄 (Visual Studio Tools for Unity) | Microsoft Docs"
-ms.custom: 
+title: 變更記錄 (Visual Studio Tools for Unity) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: conceptdev
-ms.author: crdun
+author: dantogno
+ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4559632079c4577d6fa8b66e98c609965d1cc1bf
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity 變更記錄。
