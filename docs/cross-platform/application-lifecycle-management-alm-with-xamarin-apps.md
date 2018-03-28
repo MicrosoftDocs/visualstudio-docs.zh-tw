@@ -1,24 +1,24 @@
 ---
-title: "應用程式生命週期管理 (ALM) 與 Xamarin 應用程式 | Microsoft Docs"
-ms.custom: 
+title: 應用程式生命週期管理 (ALM) 與 Xamarin 應用程式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android、iOS 及 Windows 的跨平台行動裝置應用程式。 Xamarin 讓大部分的程式碼可在平台之間共用，只有極低比例的程式碼需要在特定平台上運作。 如需 Xamarin 本身的詳細資訊，請參閱 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  

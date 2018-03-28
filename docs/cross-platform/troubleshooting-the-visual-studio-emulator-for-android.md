@@ -1,24 +1,24 @@
 ---
-title: "進行 Android 版 Visual Studio 模擬器的疑難排解 | Microsoft Docs"
-ms.custom: 
+title: 進行 Android 版 Visual Studio 模擬器的疑難排解 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
+caps.latest.revision: ''
+author: mgmclemore
+ms.author: mamcle
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 本主題所包含的資訊，可協助您解決使用 Visual Studio 的 Android 模擬器時可能遇到的問題。  

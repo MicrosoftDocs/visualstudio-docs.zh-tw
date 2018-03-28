@@ -1,15 +1,15 @@
 ---
 layout: HubPage
-hide_bc: 
-title: "Visual Studio 文件 | Microsoft Docs"
-description: "了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。"
+hide_bc: ''
+title: Visual Studio 文件 | Microsoft Docs
+description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 910dc9db4ebdd1e2a5c9d5743b471a95ab15d407
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 86d19020a46c0aeb4d1d5a5d2c72e6881a04ef0c
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="Visual Studio" />
+                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Visual Studio Team Services" />
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -66,7 +66,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="Visual Studio Code" />
+                                                        <img data-scaleimage="./images/vs-code.svg" src="./images/vs-code.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -85,7 +85,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="Visual Studio for Mac" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -104,7 +104,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="Visual Studio App Center" />
+                                                        <img data-scaleimage="./images/vs-mobile-center.svg" src="./images/vs-mobile-center.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -123,7 +123,7 @@ ms.lasthandoff: 03/08/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="Visual Studio Subscriptions" />
+                                                        <img data-scaleimage="./images/vs-subscription-temp.svg" src="./images/vs-subscription-temp.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
