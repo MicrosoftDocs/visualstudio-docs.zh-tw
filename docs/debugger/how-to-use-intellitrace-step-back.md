@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
@@ -39,11 +39,11 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
 1. 在 Visual Studio Enterprise 中開啟您的專案。
 
-1. 移至**工具 > 選項 > IntelliTrace**設定，然後選取選項**IntelliTrace 事件和快照集**。 
+1. 開啟**工具** > **選項** > **IntelliTrace**設定，然後選取選項**IntelliTrace 事件和快照集**. 
 
     ![啟用 IntelliTrace 事件和快照集模式](../debugger/media/intellitrace-enable-snapshots.png "啟用 IntelliTrace 事件和快照集模式")
 
-1. 在您的專案中設定一或多個中斷點，並開始偵錯 (按**F5**)，或開始進行偵錯逐步執行程式碼 (**F10**或**F11**)。
+1. 在專案中，設定一或多個中斷點，並開始偵錯 (按**F5**)，或開始進行偵錯逐步執行程式碼 (**F10**或**F11**)。
 
     IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷點的事件。 這些事件會記錄在**事件**索引標籤中**診斷工具**視窗中的，連同其他 IntelliTrace 事件。 若要開啟此視窗，請選擇**偵錯** > **Windows** > **顯示診斷工具**。
 

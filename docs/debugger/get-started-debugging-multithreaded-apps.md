@@ -1,13 +1,13 @@
 ---
-title: "開始偵錯多執行緒應用程式 |Microsoft 文件"
+title: 開始偵錯多執行緒應用程式 |Microsoft 文件
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
@@ -319,7 +319,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 若要取消執行緒的旗標，您可以以滑鼠右鍵按一下一個或多個已標幟的執行緒，在**平行監看式**視窗，然後選擇 **取消旗標**。
 
-## <a name="bkmk_freeze"></a>凍結和解除凍結執行緒的執行 
+## <a name="bkmk_freeze"></a> 凍結和解除凍結執行緒的執行 
 
 > [!TIP]
 > 您可以凍結和解除凍結 （暫止和繼續） 控制執行緒執行工作順序的執行緒。 這可協助您解決並行存取問題，像是死結和競爭情形。
@@ -340,7 +340,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
     應用程式可能也會執行個體化一些新的執行緒。 請注意，任何新的執行緒是未標示，並不會凍結。
 
-## <a name="bkmk_follow_a_thread"></a>請依照下列單一執行緒，使用條件式中斷點
+## <a name="bkmk_follow_a_thread"></a> 請依照下列單一執行緒，使用條件式中斷點
 
 有時候，可能很有用的偵錯工具中的單一執行緒執行。 您可以執行的一種方法是凍結的執行緒，您不感興趣，但在某些情況下您可能想要在不凍結 （若要重現特定問題，例如） 的其他執行緒的情況下遵循單一執行緒。 若要依照沒有凍結的其他執行緒的執行緒，您必須避免中斷您感興趣的執行緒上的程式碼除外。 您可以藉由設定[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
 
@@ -382,6 +382,6 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 - 請參閱[How to： 使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)

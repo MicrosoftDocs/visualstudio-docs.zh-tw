@@ -1,29 +1,30 @@
 ---
-title: "偵錯工具功能的教學課程 |Microsoft 文件"
-ms.custom: H1HackMay2017
-ms.date: 05/19/2017
-ms.reviewer: 
-ms.suite: 
+title: Visual Studio 偵錯工具功能導覽-|Microsoft 文件
+description: Visual Studio 偵錯工具導覽
+ms.custom: mvc
+ms.date: 03/27/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio 偵錯工具的功能導覽
+# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>快速入門： 第一次查看 Visual Studio 偵錯工具
 
 本主題將介紹 Visual Studio 偵錯工具的功能。 如果您想要跟著做 Visual Studio 中開啟您自己的應用程式，您可以這樣做，或您可以依照範例應用程式使用[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
@@ -115,7 +116,7 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 ## <a name="restart-your-app-quickly"></a>快速地重新啟動您的應用程式
 
-按一下**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式")中偵錯工具列按鈕 (**Ctrl + Shift + F5**)。
+按一下**重新啟動** ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式")中偵錯 工具列按鈕 (**Ctrl + Shift + F5**)。
 
 當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
 
@@ -233,5 +234,5 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 -   [偵錯介面存取 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK)。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)

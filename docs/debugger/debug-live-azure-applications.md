@@ -1,29 +1,29 @@
 ---
-title: "偵錯即時 ASP.NET Azure 應用程式的 Visual Studio |Microsoft 文件"
+title: 偵錯即時 ASP.NET Azure 應用程式的 Visual Studio |Microsoft 文件
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d313dea17700d4e64d3156ee72ee15521111329b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0382f720e73504147c5f38ba61b5407db039a487
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
