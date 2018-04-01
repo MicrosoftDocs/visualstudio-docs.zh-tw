@@ -1,24 +1,27 @@
 ---
-title: "如何： 檢視指令碼文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 檢視指令碼文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: Script Explorer
+helpviewer_keywords:
+- Script Explorer
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7daecd0974abd5be733e7cec3426045c1f859eb8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

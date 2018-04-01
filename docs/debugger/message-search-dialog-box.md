@@ -1,19 +1,22 @@
 ---
-title: "訊息搜尋對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 訊息搜尋對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: message options, Search
+helpviewer_keywords:
+- message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ec48c0a0c07fd7ab9ec2606c110667cc9bb12f69
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

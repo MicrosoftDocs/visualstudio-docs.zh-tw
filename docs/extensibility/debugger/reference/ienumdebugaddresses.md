@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugAddresses |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugAddresses |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugAddresses
-helpviewer_keywords: IEnumDebugAddresses interface
+f1_keywords:
+- IEnumDebugAddresses
+helpviewer_keywords:
+- IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 839d6d23e358cc3a35085d90abfa2efae11b22eb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IEEDataStorage::GetData |Microsoft 文件"
-ms.custom: 
+title: IEEDataStorage::GetData |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEEDataStorage::GetData
-helpviewer_keywords: IEEDataStorage::GetData
+f1_keywords:
+- IEEDataStorage::GetData
+helpviewer_keywords:
+- IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e18b51c20d2eaf324782574bf007ce32fdc6df2e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "Idiaframedata:: Get_systemexceptionhandling |Microsoft 文件"
-ms.custom: 
+title: 'Idiaframedata:: Get_systemexceptionhandling |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaFrameData::get_systemExceptionHandling method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaFrameData::get_systemExceptionHandling method
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 00f16f6d916d14319c9ec4d8d009188952fe9e13
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "PDB_TYPE |Microsoft 文件"
-ms.custom: 
+title: PDB_TYPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: PDB_TYPE
-helpviewer_keywords: PDB_TYPE structure
+f1_keywords:
+- PDB_TYPE
+helpviewer_keywords:
+- PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f1c08df8cf56d81ebb22fbdf17f3d20084599b51
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

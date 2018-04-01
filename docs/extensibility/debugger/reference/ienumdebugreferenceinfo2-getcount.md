@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugReferenceInfo2::GetCount |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugReferenceInfo2::GetCount |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugReferenceInfo2::GetCount
-helpviewer_keywords: IEnumDebugReferenceInfo2::GetCount
+f1_keywords:
+- IEnumDebugReferenceInfo2::GetCount
+helpviewer_keywords:
+- IEnumDebugReferenceInfo2::GetCount
 ms.assetid: e62706e0-d2cd-48fb-8fdf-444463c651ab
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f94148845d23407477b10053cc5f9ef9128b6aac
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

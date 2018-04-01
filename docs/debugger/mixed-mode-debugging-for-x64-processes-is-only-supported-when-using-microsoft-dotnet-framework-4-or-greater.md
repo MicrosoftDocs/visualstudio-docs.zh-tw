@@ -1,24 +1,27 @@
 ---
-title: "偵錯適用於 x64 處理序，才支援使用 Microsoft.NET Framework 4 或更新版本的混合的模式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯適用於 x64 處理序，才支援使用 Microsoft.NET Framework 4 或更新版本的混合的模式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.error.interop_unsupported_x64
+f1_keywords:
+- vs.debug.error.interop_unsupported_x64
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

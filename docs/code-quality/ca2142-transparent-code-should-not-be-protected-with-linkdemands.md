@@ -1,19 +1,22 @@
 ---
-title: "CA2142： 透明程式碼不應使用 linkdemand 加以保護 |Microsoft 文件"
-ms.custom: 
+title: CA2142： 透明程式碼不應使用 linkdemand 加以保護 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2142
+f1_keywords:
+- CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5d0094d8afa2dcf59efe0aace8514979d73ac921
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

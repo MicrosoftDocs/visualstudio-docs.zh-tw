@@ -1,13 +1,15 @@
 ---
-title: "在 Visual Studio 偵錯工具中檢視呼叫堆疊 |Microsoft 文件"
+title: 在 Visual Studio 偵錯工具中檢視呼叫堆疊 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.callstack
+f1_keywords:
+- vs.debug.callstack
 dev_langs:
 - CSharp
 - VB
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

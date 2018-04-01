@@ -1,19 +1,22 @@
 ---
-title: "特定的命令所使用的位元旗標 |Microsoft 文件"
-ms.custom: 
+title: 特定的命令所使用的位元旗標 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control plug-ins, bitflags used by specific commands
+helpviewer_keywords:
+- source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

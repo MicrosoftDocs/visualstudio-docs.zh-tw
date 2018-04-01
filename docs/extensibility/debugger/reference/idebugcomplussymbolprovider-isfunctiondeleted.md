@@ -1,19 +1,22 @@
 ---
-title: "IDebugComPlusSymbolProvider::IsFunctionDeleted |Microsoft 文件"
-ms.custom: 
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionDeleted
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bef7b69ea15fbf0bc756f5f99040b763d62e7ded
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

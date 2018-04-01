@@ -1,20 +1,24 @@
 ---
-title: "DEBUG_ADDRESS_UNION |Microsoft 文件"
-ms.custom: 
+title: DEBUG_ADDRESS_UNION |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DEBUG_ADDRESS_UNION
-helpviewer_keywords: DEBUG_ADDRESS_UNION union
+f1_keywords:
+- DEBUG_ADDRESS_UNION
+helpviewer_keywords:
+- DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fc4e5c4bf075c69f4549e34185d407ba9fb95cd5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

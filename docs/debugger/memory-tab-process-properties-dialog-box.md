@@ -1,19 +1,22 @@
 ---
-title: "記憶體索引標籤，處理序屬性對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 記憶體索引標籤，處理序屬性對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: Process properties for Windows NT
+helpviewer_keywords:
+- Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f846b66378f73239adf025d017e3553aaf6046a8
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

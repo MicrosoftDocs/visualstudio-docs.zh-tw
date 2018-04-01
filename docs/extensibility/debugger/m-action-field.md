@@ -1,19 +1,22 @@
 ---
-title: "m_action 欄位 |Microsoft 文件"
-ms.custom: 
+title: m_action 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: m_action field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- m_action field, Task class [.NET Framework debug engines]
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c9d5a55f7e91b22a5b9a867991acbfe404a660fe
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "SetNotificationForWaitCompletion 方法 |Microsoft 文件"
-ms.custom: 
+title: SetNotificationForWaitCompletion 方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f5e35933e59fb4d8ff9f13db4bef8c23891bac2f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

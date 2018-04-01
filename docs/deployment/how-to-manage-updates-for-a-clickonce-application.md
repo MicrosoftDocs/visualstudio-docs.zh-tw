@@ -1,13 +1,15 @@
 ---
-title: "如何： 管理 ClickOnce 應用程式的更新 |Microsoft 文件"
-ms.custom: 
+title: 如何： 管理 ClickOnce 應用程式的更新 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
 - VB
 - CSharp
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

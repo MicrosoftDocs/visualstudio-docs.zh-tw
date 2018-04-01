@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::EnumFrameInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::EnumFrameInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::EnumFrameInfo
-helpviewer_keywords: IDebugThread2::EnumFrameInfo
+f1_keywords:
+- IDebugThread2::EnumFrameInfo
+helpviewer_keywords:
+- IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a906cb23432c9b51d80ee6e0ff97cc5d30f2a665
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

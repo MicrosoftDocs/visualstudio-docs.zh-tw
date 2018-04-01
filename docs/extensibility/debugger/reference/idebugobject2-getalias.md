@@ -1,20 +1,24 @@
 ---
-title: "IDebugObject2::GetAlias |Microsoft 文件"
-ms.custom: 
+title: IDebugObject2::GetAlias |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugObject2::GetAlias
-helpviewer_keywords: IDebugObject2::GetAlias method
+f1_keywords:
+- IDebugObject2::GetAlias
+helpviewer_keywords:
+- IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a487043d6c046a9c117c4845d56db2f18bf51896
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

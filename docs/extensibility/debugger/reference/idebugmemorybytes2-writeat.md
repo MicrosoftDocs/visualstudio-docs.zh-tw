@@ -1,22 +1,25 @@
 ---
-title: "IDebugMemoryBytes2::WriteAt |Microsoft 文件"
-ms.custom: 
+title: IDebugMemoryBytes2::WriteAt |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMemoryBytes2::WriteAt
+f1_keywords:
+- IDebugMemoryBytes2::WriteAt
 helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8f10efd1e9a06ca8425d972f43736b49e6ef4a83
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

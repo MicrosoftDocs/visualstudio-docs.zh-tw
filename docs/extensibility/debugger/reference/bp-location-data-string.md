@@ -1,20 +1,24 @@
 ---
-title: "BP_LOCATION_DATA_STRING |Microsoft 文件"
-ms.custom: 
+title: BP_LOCATION_DATA_STRING |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_LOCATION_DATA_STRING
-helpviewer_keywords: BP_LOCATION_DATA_STRING structure
+f1_keywords:
+- BP_LOCATION_DATA_STRING
+helpviewer_keywords:
+- BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 98be0e0eec66d1829569f88b38f710ddc616be85
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

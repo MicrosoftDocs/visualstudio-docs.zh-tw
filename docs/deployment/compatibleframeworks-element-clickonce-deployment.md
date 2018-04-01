@@ -1,23 +1,26 @@
 ---
-title: "&lt;w&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;w&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <compatibleFrameworks> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <compatibleFrameworks> element [ClickOnce deployment manifest]
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 955e29add1990793711dd69fffbd2306ce61407d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

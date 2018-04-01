@@ -1,19 +1,22 @@
 ---
-title: "IDebugCodeContext3 |Microsoft 文件"
-ms.custom: 
+title: IDebugCodeContext3 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugCodeContext3 interface
+helpviewer_keywords:
+- IDebugCodeContext3 interface
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 364b7d1480449601b211e5ac1736d0d85a87da5d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty3::GetCustomViewerCount |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty3::GetCustomViewerCount |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty3::GetCustomViewerCount
-helpviewer_keywords: IDebugProperty3::GetCustomViewerCount
+f1_keywords:
+- IDebugProperty3::GetCustomViewerCount
+helpviewer_keywords:
+- IDebugProperty3::GetCustomViewerCount
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 720049d864c2124d824a9ac4c5fb905ed4120c3e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

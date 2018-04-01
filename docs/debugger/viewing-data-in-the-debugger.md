@@ -1,13 +1,15 @@
 ---
-title: "在 偵錯工具中建立資料的自訂檢視 |Microsoft 文件"
-ms.custom: 
+title: 在 偵錯工具中建立資料的自訂檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - debugging [Visual Studio], inspecting programs
 - debugger, viewing data
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e8f008ba3cde911ed5c21f281d30fda2a77bf824
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

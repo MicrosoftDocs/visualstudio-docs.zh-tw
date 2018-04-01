@@ -1,20 +1,24 @@
 ---
-title: "Idialoadcallback2:: Restrictdbgaccess |Microsoft 文件"
-ms.custom: 
+title: 'Idialoadcallback2:: Restrictdbgaccess |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaLoadCallback2::RestrictDBGAccess method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaLoadCallback2::RestrictDBGAccess method
 ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fa90825f837341a0ad221317d1a83be090b8774f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "s_taskIdCounter 欄位 |Microsoft 文件"
-ms.custom: 
+title: s_taskIdCounter 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: m_taskIdCounter field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 46a1fbde513f1ec6f11dfeb2d11b252fb6e4aad1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

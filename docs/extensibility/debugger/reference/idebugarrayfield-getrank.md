@@ -1,20 +1,24 @@
 ---
-title: "IDebugArrayField::GetRank |Microsoft 文件"
-ms.custom: 
+title: IDebugArrayField::GetRank |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugArrayField::GetRank
-helpviewer_keywords: IDebugArrayField::GetRank method
+f1_keywords:
+- IDebugArrayField::GetRank
+helpviewer_keywords:
+- IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 786f765e684f720c8c29b91331259e772bd5a007
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

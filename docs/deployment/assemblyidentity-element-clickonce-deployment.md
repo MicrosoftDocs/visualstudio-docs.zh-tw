@@ -1,24 +1,28 @@
 ---
-title: "&lt;assemblyIdentity&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;assemblyIdentity&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#assemblyIdentity
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <assemblyIdentity> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <assemblyIdentity> element [ClickOnce deployment manifest]
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 51643b8db91c9f8c2961b319d47cdfb7789f6a4d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

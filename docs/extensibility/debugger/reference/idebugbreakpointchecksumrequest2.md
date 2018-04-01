@@ -1,19 +1,22 @@
 ---
-title: "IDebugBreakpointChecksumRequest2 |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointChecksumRequest2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugBreakpointChecksumRequest2 interface
+helpviewer_keywords:
+- IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 51fbcd168500c2ba2cd508b2a9b282896613dd64
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

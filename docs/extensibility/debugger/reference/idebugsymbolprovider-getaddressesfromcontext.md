@@ -1,20 +1,24 @@
 ---
-title: "IDebugSymbolProvider::GetAddressesFromContext |Microsoft 文件"
-ms.custom: 
+title: IDebugSymbolProvider::GetAddressesFromContext |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugSymbolProvider::GetAddressesFromContext
-helpviewer_keywords: IDebugSymbolProvider::GetAddressesFromContext method
+f1_keywords:
+- IDebugSymbolProvider::GetAddressesFromContext
+helpviewer_keywords:
+- IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3d8776ee9e00aebbe3c33021c160c8f7f3677743
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

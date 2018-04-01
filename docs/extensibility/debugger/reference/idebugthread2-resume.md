@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::Resume |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::Resume |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::Resume
-helpviewer_keywords: IDebugThread2::Resume
+f1_keywords:
+- IDebugThread2::Resume
+helpviewer_keywords:
+- IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5de844c3b07a509f266e2f9d278d1f78bea2b089
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

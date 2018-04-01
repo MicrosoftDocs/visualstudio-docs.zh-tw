@@ -1,19 +1,22 @@
 ---
-title: "EnableEditOfLocationField 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: EnableEditOfLocationField 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
+helpviewer_keywords:
+- EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9981be12fb93073c1b4e635c4c1c6d91b59e6f21
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

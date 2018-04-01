@@ -1,20 +1,24 @@
 ---
-title: "IDebugStackFrame2::GetDocumentContext |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame2::GetDocumentContext |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugStackFrame2::GetDocumentContext
-helpviewer_keywords: IDebugStackFrame2::GetDocumentContext
+f1_keywords:
+- IDebugStackFrame2::GetDocumentContext
+helpviewer_keywords:
+- IDebugStackFrame2::GetDocumentContext
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7e22cb6bd28cfd2f566287192f15cc7a7838abd4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

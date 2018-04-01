@@ -1,20 +1,24 @@
 ---
-title: "EncUnavailableReason |Microsoft 文件"
-ms.custom: 
+title: EncUnavailableReason |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: EncUnavailableReason
-helpviewer_keywords: EncUnavailableReason enumeration
+f1_keywords:
+- EncUnavailableReason
+helpviewer_keywords:
+- EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c057b01c07bd3a2ae9466dc394676fe553fe14d0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,22 +1,25 @@
 ---
-title: "IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft 文件"
-ms.custom: 
+title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBoundBreakpoint2::GetBreakpointResolution
+f1_keywords:
+- IDebugBoundBreakpoint2::GetBreakpointResolution
 helpviewer_keywords:
 - GetBreakpointResolution method
 - IDebugBoundBreakpoint2::GetBreakpointResolution method
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 19f668c9e71a5c5b31870b1a0d23a76a41b2d6b0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "分頁檔索引標籤程序屬性對話方塊、 |Microsoft 文件"
-ms.custom: 
+title: 分頁檔索引標籤程序屬性對話方塊、 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: Process properties for Windows NT
+helpviewer_keywords:
+- Process properties for Windows NT
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 12cf35a2043764a4b174b5e45fcbe1bc83a72a52
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

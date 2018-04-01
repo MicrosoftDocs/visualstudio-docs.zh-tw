@@ -1,20 +1,24 @@
 ---
-title: "程式碼分析原則錯誤 |Microsoft 文件"
-ms.custom: 
+title: 程式碼分析原則錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.codeanalysis.policyfailures
-helpviewer_keywords: policy errors, code analysis
+f1_keywords:
+- vs.codeanalysis.policyfailures
+helpviewer_keywords:
+- policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 268940f39d3d74e7dd701f9c458d7dd08ff6c1f7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

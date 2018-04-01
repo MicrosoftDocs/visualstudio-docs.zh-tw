@@ -1,20 +1,24 @@
 ---
-title: "BP_LOCATION_TYPE |Microsoft 文件"
-ms.custom: 
+title: BP_LOCATION_TYPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_LOCATION_TYPE
-helpviewer_keywords: BP_LOCATION_TYPE structure
+f1_keywords:
+- BP_LOCATION_TYPE
+helpviewer_keywords:
+- BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 919cef75834c6606cf4980b3a0e861302f29b73a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

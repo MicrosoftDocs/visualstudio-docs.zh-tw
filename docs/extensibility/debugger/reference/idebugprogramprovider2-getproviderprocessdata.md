@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramProvider2::GetProviderProcessData |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramProvider2::GetProviderProcessData |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramProvider2::GetProviderProcessData
-helpviewer_keywords: IDebugProgramProvider2::GetProviderProcessData
+f1_keywords:
+- IDebugProgramProvider2::GetProviderProcessData
+helpviewer_keywords:
+- IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e94e0606256eda3fb8cdcade90979342d078e125
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

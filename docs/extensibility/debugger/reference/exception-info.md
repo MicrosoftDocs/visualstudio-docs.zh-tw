@@ -1,20 +1,24 @@
 ---
-title: "EXCEPTION_INFO |Microsoft 文件"
-ms.custom: 
+title: EXCEPTION_INFO |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: EXCEPTION_INFO
-helpviewer_keywords: EXCEPTION_INFO structure
+f1_keywords:
+- EXCEPTION_INFO
+helpviewer_keywords:
+- EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6ae273934cc3224a189c94f371fdbe1e3bcc1c68
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

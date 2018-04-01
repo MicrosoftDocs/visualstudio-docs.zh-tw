@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentTextEvents2 |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentTextEvents2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentTextEvents2
-helpviewer_keywords: IDebugDocumentTextEvents2 interface
+f1_keywords:
+- IDebugDocumentTextEvents2
+helpviewer_keywords:
+- IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugReference2::SetValueAsReference |Microsoft 文件"
-ms.custom: 
+title: IDebugReference2::SetValueAsReference |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugReference2::SetValueAsReference
-helpviewer_keywords: IDebugReference2::SetValueAsReference
+f1_keywords:
+- IDebugReference2::SetValueAsReference
+helpviewer_keywords:
+- IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0de3b3330bac567e1db09025c8d701b0f431d525
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

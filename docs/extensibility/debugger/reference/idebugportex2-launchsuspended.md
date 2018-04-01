@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortEx2::LaunchSuspended |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEx2::LaunchSuspended |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEx2::LaunchSuspended
-helpviewer_keywords: IDebugPortEx2::LaunchSuspended
+f1_keywords:
+- IDebugPortEx2::LaunchSuspended
+helpviewer_keywords:
+- IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f78561bed8170d71ed608183543a487b765f792b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

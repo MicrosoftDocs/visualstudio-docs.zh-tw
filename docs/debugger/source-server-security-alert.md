@@ -1,24 +1,27 @@
 ---
-title: "來源伺服器安全性警示 |Microsoft 文件"
-ms.custom: 
+title: 來源伺服器安全性警示 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.sourceserver.enablewarning
+f1_keywords:
+- vs.debug.sourceserver.enablewarning
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 8451c281-6914-469c-b80c-6271cc3f3d17
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 1bce9b20e6787ae6234ba308c29f512ba47986d4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

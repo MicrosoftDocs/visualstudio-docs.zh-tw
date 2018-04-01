@@ -1,20 +1,24 @@
 ---
-title: "IDebugBinder::Bind |Microsoft 文件"
-ms.custom: 
+title: IDebugBinder::Bind |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBinder::Bind
-helpviewer_keywords: IDebugBinder::Bind method
+f1_keywords:
+- IDebugBinder::Bind
+helpviewer_keywords:
+- IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 83b1697d2f10cc656e4c7daa2599f7754cef9466
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

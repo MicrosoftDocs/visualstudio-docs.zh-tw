@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugPortSuppliers2 |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugPortSuppliers2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugPortSuppliers2
-helpviewer_keywords: IEnumDebugPortSuppliers2
+f1_keywords:
+- IEnumDebugPortSuppliers2
+helpviewer_keywords:
+- IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1fff85e5cb76293327138bf6382c8e0f4da06c25
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

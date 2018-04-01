@@ -1,13 +1,15 @@
 ---
-title: "在 Visual Studio 偵錯工具中檢視暫存器值 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 偵錯工具中檢視暫存器值 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.registers
+f1_keywords:
+- vs.debug.registers
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - debugging [Visual Studio], Registers window
 - Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

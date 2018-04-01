@@ -1,22 +1,25 @@
 ---
-title: "IDebugModule3::GetSymbolInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugModule3::GetSymbolInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugModule3::GetSymbolInfo
+f1_keywords:
+- IDebugModule3::GetSymbolInfo
 helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8648e591e545db73b636c6b21fcbcaa1d1afb640
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

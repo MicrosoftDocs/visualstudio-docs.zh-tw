@@ -1,20 +1,24 @@
 ---
-title: "IDebugProcess2::EnumPrograms |Microsoft 文件"
-ms.custom: 
+title: IDebugProcess2::EnumPrograms |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProcess2::EnumPrograms
-helpviewer_keywords: IDebugProcess2::EnumPrograms
+f1_keywords:
+- IDebugProcess2::EnumPrograms
+helpviewer_keywords:
+- IDebugProcess2::EnumPrograms
 ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fd0f240e22636286a23d6c5772e54de4a5c087e0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

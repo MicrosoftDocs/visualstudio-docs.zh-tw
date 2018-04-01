@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::GetDisassemblyStream |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::GetDisassemblyStream |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::GetDisassemblyStream
-helpviewer_keywords: IDebugProgram2::GetDisassemblyStream
+f1_keywords:
+- IDebugProgram2::GetDisassemblyStream
+helpviewer_keywords:
+- IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: db2f0855ecb22a711fa525a6a85e3f445af28d0c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

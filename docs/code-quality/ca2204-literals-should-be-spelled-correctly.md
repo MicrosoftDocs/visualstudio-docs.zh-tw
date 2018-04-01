@@ -1,23 +1,26 @@
 ---
-title: "CA2204： 常值應該使用正確的拼字 |Microsoft 文件"
-ms.custom: 
+title: CA2204： 常值應該使用正確的拼字 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Literals should be spelled correctly
 - CA2204
 - LiteralsShouldBeSpelledCorrectly
-helpviewer_keywords: CA2204
+helpviewer_keywords:
+- CA2204
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ad1fb951f17d223f248c678738070d1c5b70ae7d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "CA2145： 透明方法不應該使用 SuppressUnmanagedCodeSecurityAttribute 裝飾 |Microsoft 文件"
-ms.custom: 
+title: CA2145： 透明方法不應該使用 SuppressUnmanagedCodeSecurityAttribute 裝飾 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2145
+f1_keywords:
+- CA2145
 ms.assetid: 81970700-b438-4b3b-9239-16887e16f7b7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2c6fcfc32dc8ab8a90ea555f43c253a5d93e72a3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

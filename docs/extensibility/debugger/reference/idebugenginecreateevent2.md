@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngineCreateEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugEngineCreateEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngineCreateEvent2
-helpviewer_keywords: IDebugEngineCreateEvent2 interface
+f1_keywords:
+- IDebugEngineCreateEvent2
+helpviewer_keywords:
+- IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5a49af7e9cec830ae3ecfb94ac07dfba68fe8344
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

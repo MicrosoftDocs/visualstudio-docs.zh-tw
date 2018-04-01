@@ -1,13 +1,15 @@
 ---
-title: "解決語意模糊對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 解決語意模糊對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.Disambig
+f1_keywords:
+- vs.debug.Disambig
 dev_langs:
 - CSharp
 - VB
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - debugger, Resolve Ambiguity dialog box
 - debugging [C++], resolving ambiguity
 ms.assetid: d9f47455-a116-4c84-8bad-2dfbf4d77f74
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 62b41d5345d1a17781e4e9490abedbd0c169f393
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

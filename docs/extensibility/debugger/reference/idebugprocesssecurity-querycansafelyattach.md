@@ -1,19 +1,22 @@
 ---
-title: "IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft 文件"
-ms.custom: 
+title: IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugProcessSecurity::QueryCanSafelyAttach
+helpviewer_keywords:
+- IDebugProcessSecurity::QueryCanSafelyAttach
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5315281b904a6a4144f8e06780048e25cd5e0221
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

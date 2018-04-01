@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::EnumModules |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::EnumModules |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::EnumModules
-helpviewer_keywords: IDebugProgram2::EnumModules
+f1_keywords:
+- IDebugProgram2::EnumModules
+helpviewer_keywords:
+- IDebugProgram2::EnumModules
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3b5dcc6c2384116494f4e95896328fc06bff71bc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

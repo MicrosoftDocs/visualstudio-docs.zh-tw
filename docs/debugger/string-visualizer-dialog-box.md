@@ -1,13 +1,15 @@
 ---
-title: "字串視覺化檢視 中檢視字串 |Microsoft 文件"
-ms.custom: 
+title: 字串視覺化檢視 中檢視字串 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.stringviewer
+f1_keywords:
+- vs.debug.stringviewer
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - string visualizer
 - visualizers, string
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 801618c900f11a562b42e610c56dfa7855dfaf39
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

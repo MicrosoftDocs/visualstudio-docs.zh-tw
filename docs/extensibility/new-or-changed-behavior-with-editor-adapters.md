@@ -1,19 +1,22 @@
 ---
-title: "新增或變更的行為，與編輯器介面卡 |Microsoft 文件"
-ms.custom: 
+title: 新增或變更的行為，與編輯器介面卡 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - adapter behavior
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c24b8c5520befcc204b59609b116d9d16ee26281
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

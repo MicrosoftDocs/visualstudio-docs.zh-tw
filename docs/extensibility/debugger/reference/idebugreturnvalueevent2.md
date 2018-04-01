@@ -1,20 +1,24 @@
 ---
-title: "IDebugReturnValueEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugReturnValueEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugReturnValueEvent2
-helpviewer_keywords: IDebugReturnValueEvent2
+f1_keywords:
+- IDebugReturnValueEvent2
+helpviewer_keywords:
+- IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0ad57acd6218158b1dd10b0f18e421bcd397a2d6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

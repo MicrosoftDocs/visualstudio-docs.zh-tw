@@ -1,20 +1,24 @@
 ---
-title: "IDiaPropertyStorage::ReadULONGLONG |Microsoft 文件"
-ms.custom: 
+title: IDiaPropertyStorage::ReadULONGLONG |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaPropertyStorage::ReadULONGLONG
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaPropertyStorage::ReadULONGLONG
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 6468fde1a2822a660a6e15b73c0c5102fcc704bf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

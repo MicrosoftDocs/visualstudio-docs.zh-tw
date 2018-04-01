@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugBoundBreakpoints2::Skip |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugBoundBreakpoints2::Skip |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugBoundBreakpoints2::Skip
-helpviewer_keywords: IEnumDebugBoundBreakpoints2::Skip
+f1_keywords:
+- IEnumDebugBoundBreakpoints2::Skip
+helpviewer_keywords:
+- IEnumDebugBoundBreakpoints2::Skip
 ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f445524aaf424b95d6a73905a0044400a2f59eba
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

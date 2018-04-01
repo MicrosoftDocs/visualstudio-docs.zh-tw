@@ -1,20 +1,24 @@
 ---
-title: "IDebugPropertyField |Microsoft 文件"
-ms.custom: 
+title: IDebugPropertyField |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPropertyField
-helpviewer_keywords: IDebugPropertyField interface
+f1_keywords:
+- IDebugPropertyField
+helpviewer_keywords:
+- IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 53b89624e1f3b929845411df0261e644191a2db5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

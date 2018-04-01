@@ -1,20 +1,24 @@
 ---
-title: "AD_PROCESS_ID |Microsoft 文件"
-ms.custom: 
+title: AD_PROCESS_ID |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: AD_PROCESS_ID
-helpviewer_keywords: AD_PROCESS_ID union
+f1_keywords:
+- AD_PROCESS_ID
+helpviewer_keywords:
+- AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e402e0ae8d8d4376cd41de14fb7654a2dc7a5d0b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

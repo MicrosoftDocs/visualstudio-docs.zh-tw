@@ -1,20 +1,24 @@
 ---
-title: "Idiasession:: Get_globalscope |Microsoft 文件"
-ms.custom: 
+title: 'Idiasession:: Get_globalscope |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSession::get_globalScope method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSession::get_globalScope method
 ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 20708f60ebe2ae1e055cef6dcce43d3e7316c77f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

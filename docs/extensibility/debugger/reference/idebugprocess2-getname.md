@@ -1,20 +1,24 @@
 ---
-title: "IDebugProcess2::GetName |Microsoft 文件"
-ms.custom: 
+title: IDebugProcess2::GetName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProcess2::GetName
-helpviewer_keywords: IDebugProcess2::GetName
+f1_keywords:
+- IDebugProcess2::GetName
+helpviewer_keywords:
+- IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b6434d8a06e776c31e944eead27a4f83dc04a32b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

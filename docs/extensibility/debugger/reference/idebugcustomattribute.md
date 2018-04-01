@@ -1,20 +1,24 @@
 ---
-title: "IDebugCustomAttribute |Microsoft 文件"
-ms.custom: 
+title: IDebugCustomAttribute |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCustomAttribute
-helpviewer_keywords: IDebugCustomAttribute interface
+f1_keywords:
+- IDebugCustomAttribute
+helpviewer_keywords:
+- IDebugCustomAttribute interface
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 48aeab8a09d4916c31c5e2b781427988cf352b25
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

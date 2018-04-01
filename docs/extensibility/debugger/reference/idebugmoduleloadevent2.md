@@ -1,20 +1,24 @@
 ---
-title: "IDebugModuleLoadEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugModuleLoadEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugModuleLoadEvent2
-helpviewer_keywords: IDebugModuleLoadEvent2 interface
+f1_keywords:
+- IDebugModuleLoadEvent2
+helpviewer_keywords:
+- IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 640c759398e7898455cd977a240fe63c7af5b487
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

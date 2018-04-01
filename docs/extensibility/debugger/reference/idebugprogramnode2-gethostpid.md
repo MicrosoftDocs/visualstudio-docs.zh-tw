@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramNode2::GetHostPid |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramNode2::GetHostPid |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramNode2::GetHostPid
-helpviewer_keywords: IDebugProgramNode2::GetHostPid
+f1_keywords:
+- IDebugProgramNode2::GetHostPid
+helpviewer_keywords:
+- IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: eae4760575d88d89d501517f23b96d0d420320c8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

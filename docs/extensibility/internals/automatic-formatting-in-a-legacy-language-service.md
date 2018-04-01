@@ -1,19 +1,22 @@
 ---
-title: "在舊版語言服務的自動格式設定 |Microsoft 文件"
-ms.custom: 
+title: 在舊版語言服務的自動格式設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: language services, automatic formatting
+helpviewer_keywords:
+- language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 43d9c59beaddfc6992e7b9e16e0e778be2a6d30f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

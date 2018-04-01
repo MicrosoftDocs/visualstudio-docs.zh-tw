@@ -1,20 +1,24 @@
 ---
-title: "IEEVisualizerDataProvider |Microsoft 文件"
-ms.custom: 
+title: IEEVisualizerDataProvider |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEEVisualizerDataProvider
-helpviewer_keywords: IEEVisualizerDataProvider interface
+f1_keywords:
+- IEEVisualizerDataProvider
+helpviewer_keywords:
+- IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: edf2cfe689caa58e1c0402a91fa31237cb2c7215
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

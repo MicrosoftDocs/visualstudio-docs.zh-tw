@@ -1,19 +1,22 @@
 ---
-title: "如何： 更新狀態列 |Microsoft 文件"
-ms.custom: 
+title: 如何： 更新狀態列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - update status bar
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 76801810aafa3bd4048776ca38385ad1cf508d94
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,24 +1,27 @@
 ---
-title: "&lt;命令&gt;元素 （啟動載入器） |Microsoft 文件"
-ms.custom: 
+title: '&lt;命令&gt;元素 （啟動載入器） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - FSharp
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <Commands> element [bootstrapper]
+helpviewer_keywords:
+- <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

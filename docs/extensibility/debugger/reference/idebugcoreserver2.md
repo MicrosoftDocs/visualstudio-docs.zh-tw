@@ -1,20 +1,24 @@
 ---
-title: "IDebugCoreServer2 |Microsoft 文件"
-ms.custom: 
+title: IDebugCoreServer2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCoreServer2
-helpviewer_keywords: IDebugCoreServer2 interface
+f1_keywords:
+- IDebugCoreServer2
+helpviewer_keywords:
+- IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 31961d62c2ef7a253a16a5384dfa6b5e69209a97
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

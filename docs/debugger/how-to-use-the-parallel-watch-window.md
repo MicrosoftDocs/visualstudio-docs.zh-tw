@@ -1,25 +1,29 @@
 ---
-title: "平行執行緒中的變數上設定監看式 |Microsoft 文件"
-ms.custom: 
+title: 平行執行緒中的變數上設定監看式 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.parallelwatch
+f1_keywords:
+- vs.debug.parallelwatch
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, parallel watch window
+helpviewer_keywords:
+- debugger, parallel watch window
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

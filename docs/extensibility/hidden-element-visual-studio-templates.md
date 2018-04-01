@@ -1,20 +1,24 @@
 ---
-title: "隱藏項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: 隱藏項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
-helpviewer_keywords: Hidden element [Visual Studio project template]
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
+helpviewer_keywords:
+- Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: aa824571b682d2c5654a4909becb0374bf987df1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

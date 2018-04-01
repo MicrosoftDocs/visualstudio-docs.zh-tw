@@ -1,20 +1,24 @@
 ---
-title: "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface |Microsoft 文件"
-ms.custom: 
+title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-helpviewer_keywords: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+f1_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+helpviewer_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c0f09d5b5fb1d420eef6b91ea596adbcab665ded
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

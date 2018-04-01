@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortSupplier2::AddPort |Microsoft 文件"
-ms.custom: 
+title: IDebugPortSupplier2::AddPort |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortSupplier2::AddPort
-helpviewer_keywords: IDebugPortSupplier2::AddPort
+f1_keywords:
+- IDebugPortSupplier2::AddPort
+helpviewer_keywords:
+- IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6f77b0dd072c0e1acdbe642a0ded64a554f809f1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

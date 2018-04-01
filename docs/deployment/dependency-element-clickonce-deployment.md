@@ -1,11 +1,12 @@
 ---
-title: "&lt;相依性&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;相依性&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -22,13 +23,15 @@ dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <dependency> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

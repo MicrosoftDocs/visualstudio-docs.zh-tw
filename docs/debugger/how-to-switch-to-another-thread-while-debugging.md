@@ -1,24 +1,27 @@
 ---
-title: "如何： 偵錯時切換至另一個執行緒 |Microsoft 文件"
-ms.custom: 
+title: 如何： 偵錯時切換至另一個執行緒 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/27/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: threads, switching [debugging]
+helpviewer_keywords:
+- threads, switching [debugging]
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
 ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT

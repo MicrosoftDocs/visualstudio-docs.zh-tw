@@ -1,20 +1,24 @@
 ---
-title: "DISASSEMBLY_STREAM_SCOPE |Microsoft 文件"
-ms.custom: 
+title: DISASSEMBLY_STREAM_SCOPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DISASSEMBLY_STREAM_SCOPE
-helpviewer_keywords: DISASSEMBLY_STREAM_SCOPE enumeration
+f1_keywords:
+- DISASSEMBLY_STREAM_SCOPE
+helpviewer_keywords:
+- DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ff793f5d84b21d6c521a3b70b1a553177c95f75c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "將屬性加入專案項目 |Microsoft 文件"
-ms.custom: 
+title: 將屬性加入專案項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: attributes [Visual Studio], adding to a project item
+helpviewer_keywords:
+- attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 011c6dbf74f12921b0458db9990b9f1e0e807c48
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

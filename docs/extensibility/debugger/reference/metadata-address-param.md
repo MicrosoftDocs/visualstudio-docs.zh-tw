@@ -1,20 +1,24 @@
 ---
-title: "METADATA_ADDRESS_PARAM |Microsoft 文件"
-ms.custom: 
+title: METADATA_ADDRESS_PARAM |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: METADATA_ADDRESS_PARAM
-helpviewer_keywords: METADATA_ADDRESS_PARAM structure
+f1_keywords:
+- METADATA_ADDRESS_PARAM
+helpviewer_keywords:
+- METADATA_ADDRESS_PARAM structure
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9a23718981a8e7d467dcf41979e1801a3d855df6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

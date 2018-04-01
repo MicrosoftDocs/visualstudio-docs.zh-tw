@@ -1,20 +1,24 @@
 ---
-title: "IDebugSymbolProvider::GetLanguage |Microsoft 文件"
-ms.custom: 
+title: IDebugSymbolProvider::GetLanguage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugSymbolProvider::GetLanguage
-helpviewer_keywords: IDebugSymbolProvider::GetLanguage method
+f1_keywords:
+- IDebugSymbolProvider::GetLanguage
+helpviewer_keywords:
+- IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: cd5cf44f56b91d5e6c04b220e36c7f0e82d3159c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

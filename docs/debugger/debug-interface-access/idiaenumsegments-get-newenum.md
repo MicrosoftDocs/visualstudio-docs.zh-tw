@@ -1,20 +1,24 @@
 ---
-title: "Idiaenumsegments:: Get__newenum |Microsoft 文件"
-ms.custom: 
+title: 'Idiaenumsegments:: Get__newenum |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaEnumSegments::get__NewEnum method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaEnumSegments::get__NewEnum method
 ms.assetid: 504505fa-b35c-402f-a440-8972c589cc5b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 98b2dc988fdbf56af6a003e01a7e4423d31ba42a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

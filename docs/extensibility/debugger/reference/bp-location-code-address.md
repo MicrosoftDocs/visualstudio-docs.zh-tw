@@ -1,20 +1,24 @@
 ---
-title: "BP_LOCATION_CODE_ADDRESS |Microsoft 文件"
-ms.custom: 
+title: BP_LOCATION_CODE_ADDRESS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_LOCATION_CODE_ADDRESS
-helpviewer_keywords: BP_LOCATION_CODE_ADDRESS structure
+f1_keywords:
+- BP_LOCATION_CODE_ADDRESS
+helpviewer_keywords:
+- BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0c7c2378fd9735f097bf0762cf41804862041db9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

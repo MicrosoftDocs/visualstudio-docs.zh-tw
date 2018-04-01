@@ -1,20 +1,24 @@
 ---
-title: "FRAMEINFO_FLAGS |Microsoft 文件"
-ms.custom: 
+title: FRAMEINFO_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: FRAMEINFO_FLAGS
-helpviewer_keywords: FRAMEINFO_FLAGS enumeration
+f1_keywords:
+- FRAMEINFO_FLAGS
+helpviewer_keywords:
+- FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9efeaee3ab2a2f7762c1ae3b95ae7548091dfe0b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

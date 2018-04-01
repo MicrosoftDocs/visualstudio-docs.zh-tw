@@ -1,13 +1,15 @@
 ---
-title: "選擇中斷點對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 選擇中斷點對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.breakpt.choose
+f1_keywords:
+- vs.debug.breakpt.choose
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - breakpoints, Choose Breakpoints dialog box
 - Choose Breakpoints dialog box
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 2503109d7c044dbd44b1b400b748ef5ba2dcee41
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

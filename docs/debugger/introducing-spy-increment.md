@@ -1,19 +1,22 @@
 ---
-title: "Spy + + 簡介 |Microsoft 文件"
-ms.custom: 
+title: Spy + + 簡介 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Spy++
+helpviewer_keywords:
+- Spy++
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

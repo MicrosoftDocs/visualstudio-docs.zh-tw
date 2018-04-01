@@ -1,13 +1,15 @@
 ---
-title: "如何： 使用原生執行階段檢查 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用原生執行階段檢查 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: c.runtime.errorchecks
+f1_keywords:
+- c.runtime.errorchecks
 dev_langs:
 - CSharp
 - VB
@@ -36,11 +38,12 @@ helpviewer_keywords:
 - stack pointers
 - arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a36edb5901f8ab67360e276f6a8ff5a2a8d51530
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

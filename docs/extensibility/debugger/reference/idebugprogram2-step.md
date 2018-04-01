@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::Step |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::Step |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::Step
-helpviewer_keywords: IDebugProgram2::Step
+f1_keywords:
+- IDebugProgram2::Step
+helpviewer_keywords:
+- IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a7142f79f4406611eb4ab3cbb6695cb2d0305bed
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

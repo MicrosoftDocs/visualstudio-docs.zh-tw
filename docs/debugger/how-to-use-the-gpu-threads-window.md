@@ -1,11 +1,12 @@
 ---
-title: "在 偵錯工具中檢視 GPU 執行緒 |Microsoft 文件"
-ms.custom: 
+title: 在 偵錯工具中檢視 GPU 執行緒 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug.gputthreads
@@ -15,13 +16,15 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, GPU threads window
+helpviewer_keywords:
+- debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

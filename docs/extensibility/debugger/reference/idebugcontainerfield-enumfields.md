@@ -1,20 +1,24 @@
 ---
-title: "IDebugContainerField::EnumFields |Microsoft 文件"
-ms.custom: 
+title: IDebugContainerField::EnumFields |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugContainerField::EnumFields
-helpviewer_keywords: IDebugContainerField::EnumFields method
+f1_keywords:
+- IDebugContainerField::EnumFields
+helpviewer_keywords:
+- IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a262d2f4aa90bc9ae638fb6cfbfe8af605f2446a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

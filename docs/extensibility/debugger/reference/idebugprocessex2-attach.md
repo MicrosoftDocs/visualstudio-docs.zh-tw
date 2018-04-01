@@ -1,20 +1,24 @@
 ---
-title: "IDebugProcessEx2::Attach |Microsoft 文件"
-ms.custom: 
+title: IDebugProcessEx2::Attach |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProcessEx2::Attach
-helpviewer_keywords: IDebugProcessEx2::Attach method
+f1_keywords:
+- IDebugProcessEx2::Attach
+helpviewer_keywords:
+- IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: da89be65f4b02fa0db254dd85463e422d17fe589
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

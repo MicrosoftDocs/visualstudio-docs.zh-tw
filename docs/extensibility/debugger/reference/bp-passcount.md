@@ -1,20 +1,24 @@
 ---
-title: "BP_PASSCOUNT |Microsoft 文件"
-ms.custom: 
+title: BP_PASSCOUNT |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_PASSCOUNT
-helpviewer_keywords: BP_PASSCOUNT structure
+f1_keywords:
+- BP_PASSCOUNT
+helpviewer_keywords:
+- BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 62c523ee3d65a7149f8e25304e0b719470242685
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

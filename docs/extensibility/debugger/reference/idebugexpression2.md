@@ -1,20 +1,24 @@
 ---
-title: "IDebugExpression2 |Microsoft 文件"
-ms.custom: 
+title: IDebugExpression2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugExpression2
-helpviewer_keywords: IDebugExpression2 interface
+f1_keywords:
+- IDebugExpression2
+helpviewer_keywords:
+- IDebugExpression2 interface
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: caa523004d07a9721f7a6f738622dce9484c9821
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

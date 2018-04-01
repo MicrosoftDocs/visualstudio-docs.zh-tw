@@ -1,19 +1,22 @@
 ---
-title: "如何： 加入標準文字標記 |Microsoft 文件"
-ms.custom: 
+title: 如何： 加入標準文字標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - standard text markers
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bdcdbabae26a9116b1e00910ecef2f83f4075551
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

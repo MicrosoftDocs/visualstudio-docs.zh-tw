@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty2::GetDerivedMostProperty |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty2::GetDerivedMostProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty2::GetDerivedMostProperty
-helpviewer_keywords: IDebugProperty2::GetDerivedMostProperty
+f1_keywords:
+- IDebugProperty2::GetDerivedMostProperty
+helpviewer_keywords:
+- IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4e9efd498485340b49dbd385a6a94fa6cf7fcedd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

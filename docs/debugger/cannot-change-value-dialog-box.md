@@ -1,13 +1,15 @@
 ---
-title: "無法變更值對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 無法變更值對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.variables.failededit
+f1_keywords:
+- vs.debug.variables.failededit
 dev_langs:
 - CSharp
 - VB
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - Cannot Change Value dialog box
 - variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 7a6b5cc2c1a5317009225d8e86fd497dc4367787
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

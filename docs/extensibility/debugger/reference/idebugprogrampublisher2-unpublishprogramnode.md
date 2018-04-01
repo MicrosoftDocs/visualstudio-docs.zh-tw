@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramPublisher2::UnpublishProgramNode |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramPublisher2::UnpublishProgramNode
-helpviewer_keywords: IDebugProgramPublisher2::UnpublishProgramNode
+f1_keywords:
+- IDebugProgramPublisher2::UnpublishProgramNode
+helpviewer_keywords:
+- IDebugProgramPublisher2::UnpublishProgramNode
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 58431059c3afdf392e6ebc5eb9c3d1b3c6f93ddc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

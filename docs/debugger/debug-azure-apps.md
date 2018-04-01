@@ -1,18 +1,21 @@
 ---
-title: "Azure 服務進行偵錯 |Microsoft 文件"
+title: Azure 服務進行偵錯 |Microsoft 文件
 ms.date: 09/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: azure
+ms.workload:
+- azure
 ms.openlocfilehash: 5f1102a0d882056ed55e0355d182c5de2b6dc924
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

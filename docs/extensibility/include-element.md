@@ -1,22 +1,25 @@
 ---
-title: "包含項目 |Microsoft 文件"
-ms.custom: 
+title: 包含項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Include
+f1_keywords:
+- Include
 helpviewer_keywords:
 - Include element (VSCT XML schema)
 - VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: de947d7d6bf6688381f5026d68d4a007dd40e026
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

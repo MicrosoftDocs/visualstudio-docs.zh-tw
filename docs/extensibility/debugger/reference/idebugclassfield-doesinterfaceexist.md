@@ -1,20 +1,24 @@
 ---
-title: "IDebugClassField::DoesInterfaceExist |Microsoft 文件"
-ms.custom: 
+title: IDebugClassField::DoesInterfaceExist |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugClassField::DoesInterfaceExist
-helpviewer_keywords: IDebugClassField::DoesInterfaceExist method
+f1_keywords:
+- IDebugClassField::DoesInterfaceExist
+helpviewer_keywords:
+- IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8d0e4535417f80198f06cb6b4255fea209b701e8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

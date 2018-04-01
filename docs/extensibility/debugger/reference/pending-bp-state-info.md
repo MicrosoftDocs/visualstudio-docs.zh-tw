@@ -1,20 +1,24 @@
 ---
-title: "PENDING_BP_STATE_INFO |Microsoft 文件"
-ms.custom: 
+title: PENDING_BP_STATE_INFO |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: PENDING_BP_STATE_INFO
-helpviewer_keywords: PENDING_BP_STATE_INFO structure
+f1_keywords:
+- PENDING_BP_STATE_INFO
+helpviewer_keywords:
+- PENDING_BP_STATE_INFO structure
 ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dae98128d6f56399a2228fd00ec5a5402cd07f33
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

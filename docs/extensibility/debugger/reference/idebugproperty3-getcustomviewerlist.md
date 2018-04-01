@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty3::GetCustomViewerList |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty3::GetCustomViewerList |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty3::GetCustomViewerList
-helpviewer_keywords: IDebugProperty3::GetCustomViewerList
+f1_keywords:
+- IDebugProperty3::GetCustomViewerList
+helpviewer_keywords:
+- IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1cd719891b4c0baec4d143c4a848e0c1d31ad6e3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

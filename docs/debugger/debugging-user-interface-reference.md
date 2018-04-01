@@ -1,26 +1,30 @@
 ---
-title: "偵錯使用者介面參考 |Microsoft 文件"
-ms.custom: 
+title: 偵錯使用者介面參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.uiref
+f1_keywords:
+- vs.debug.uiref
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: debugger, user interface reference
+helpviewer_keywords:
+- debugger, user interface reference
 ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: fedc9da2fc51648b6d29477906fa122b54a0abc8
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

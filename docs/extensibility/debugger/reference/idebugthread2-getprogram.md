@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::GetProgram |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::GetProgram |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::GetProgram
-helpviewer_keywords: IDebugThread2::GetProgram
+f1_keywords:
+- IDebugThread2::GetProgram
+helpviewer_keywords:
+- IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1fff62ec1f84b6574d9c4b2d1f1e648644173360
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

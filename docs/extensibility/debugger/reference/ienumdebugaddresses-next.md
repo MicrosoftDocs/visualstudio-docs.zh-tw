@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugAddresses::Next |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugAddresses::Next |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugAddresses::Next
-helpviewer_keywords: IEnumDebugAddresses::Next method
+f1_keywords:
+- IEnumDebugAddresses::Next
+helpviewer_keywords:
+- IEnumDebugAddresses::Next method
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c1af74bb556c6250d3df4a32603ab323bffe6da2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

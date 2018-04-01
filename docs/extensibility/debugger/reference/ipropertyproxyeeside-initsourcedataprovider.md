@@ -1,20 +1,24 @@
 ---
-title: "IPropertyProxyEESide::InitSourceDataProvider |Microsoft 文件"
-ms.custom: 
+title: IPropertyProxyEESide::InitSourceDataProvider |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IPropertyProxyEESide::InitSourceDataProvider
-helpviewer_keywords: IPropertyProxyEESide::InitSourceDataProvider
+f1_keywords:
+- IPropertyProxyEESide::InitSourceDataProvider
+helpviewer_keywords:
+- IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b5c52e78359b4cce4a92717801cce65f183578d3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

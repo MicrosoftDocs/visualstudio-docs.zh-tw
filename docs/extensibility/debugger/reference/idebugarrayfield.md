@@ -1,20 +1,24 @@
 ---
-title: "IDebugArrayField |Microsoft 文件"
-ms.custom: 
+title: IDebugArrayField |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugArrayField
-helpviewer_keywords: IDebugArrayField interface
+f1_keywords:
+- IDebugArrayField
+helpviewer_keywords:
+- IDebugArrayField interface
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: da01a196201e579ae11e2a73d55740c0935ef9e7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

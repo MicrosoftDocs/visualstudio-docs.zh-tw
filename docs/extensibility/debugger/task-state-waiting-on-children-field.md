@@ -1,19 +1,22 @@
 ---
-title: "TASK_STATE_WAITING_ON_CHILDREN 欄位 |Microsoft 文件"
-ms.custom: 
+title: TASK_STATE_WAITING_ON_CHILDREN 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c1ae1216e8d954d3dde9a8693c3b6ad6fd3e16e6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

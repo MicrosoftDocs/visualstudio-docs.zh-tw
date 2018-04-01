@@ -1,20 +1,24 @@
 ---
-title: "IDebugParsedExpression::EvaluateSync |Microsoft 文件"
-ms.custom: 
+title: IDebugParsedExpression::EvaluateSync |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugParsedExpression::EvaluateSync
-helpviewer_keywords: IDebugParsedExpression::EvaluateSync method
+f1_keywords:
+- IDebugParsedExpression::EvaluateSync
+helpviewer_keywords:
+- IDebugParsedExpression::EvaluateSync method
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 261359ae3dc82f8544d0f48cf0e8f1103ccedd5b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

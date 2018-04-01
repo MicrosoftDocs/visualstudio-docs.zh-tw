@@ -1,20 +1,24 @@
 ---
-title: "IDebugSymbolProvider::GetTypeByName |Microsoft 文件"
-ms.custom: 
+title: IDebugSymbolProvider::GetTypeByName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugSymbolProvider::GetTypeByName
-helpviewer_keywords: IDebugSymbolProvider::GetTypeByName method
+f1_keywords:
+- IDebugSymbolProvider::GetTypeByName
+helpviewer_keywords:
+- IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 02ebe899354c0b9e98aa15adb9a59273fa9ff8cd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

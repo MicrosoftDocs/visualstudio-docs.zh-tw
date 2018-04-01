@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortRequest2::GetPortName |Microsoft 文件"
-ms.custom: 
+title: IDebugPortRequest2::GetPortName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortRequest2::GetPortName
-helpviewer_keywords: IDebugPortRequest2::GetPortName
+f1_keywords:
+- IDebugPortRequest2::GetPortName
+helpviewer_keywords:
+- IDebugPortRequest2::GetPortName
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5906560574836390656254055130af3275fa4f76
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

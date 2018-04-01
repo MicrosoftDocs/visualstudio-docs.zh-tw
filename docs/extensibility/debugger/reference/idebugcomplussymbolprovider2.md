@@ -1,19 +1,22 @@
 ---
-title: "IDebugComPlusSymbolProvider2 |Microsoft 文件"
-ms.custom: 
+title: IDebugComPlusSymbolProvider2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugComPlusSymbolProvider2 interface
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 70b9803d175f1f9d01e868e692eeb12dd01da861
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

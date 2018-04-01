@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentContext2 |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentContext2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentContext2
-helpviewer_keywords: IDebugDocumentContext2
+f1_keywords:
+- IDebugDocumentContext2
+helpviewer_keywords:
+- IDebugDocumentContext2
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b7184b722d0331efbfcb83e2d63563ea1ae13acc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

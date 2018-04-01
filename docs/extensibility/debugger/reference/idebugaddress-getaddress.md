@@ -1,20 +1,24 @@
 ---
-title: "IDebugAddress::GetAddress |Microsoft 文件"
-ms.custom: 
+title: IDebugAddress::GetAddress |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugAddress::GetAddress
-helpviewer_keywords: IDebugAddress:GetAddress method
+f1_keywords:
+- IDebugAddress::GetAddress
+helpviewer_keywords:
+- IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3fdaf96f0026a6ef89bf9eb234c97ee7bdff700a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

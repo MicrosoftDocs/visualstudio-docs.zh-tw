@@ -1,20 +1,24 @@
 ---
-title: "METADATA_ADDRESS_METHOD |Microsoft 文件"
-ms.custom: 
+title: METADATA_ADDRESS_METHOD |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: METADATA_ADDRESS_METHOD
-helpviewer_keywords: METADATA_ADDRESS_METHOD structure
+f1_keywords:
+- METADATA_ADDRESS_METHOD
+helpviewer_keywords:
+- METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ad71db9784a3e245aae50a6767c32eaaac0bb3c8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,22 +1,25 @@
 ---
-title: "CA1012： 抽象類型不應具有建構函式 |Microsoft 文件"
-ms.custom: 
+title: CA1012： 抽象類型不應具有建構函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
 - CA1012
-helpviewer_keywords: CA1012
+helpviewer_keywords:
+- CA1012
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 42c0309181dbea76826aafb67b33579e2bd3ae78
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

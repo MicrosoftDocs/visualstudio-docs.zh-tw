@@ -1,19 +1,22 @@
 ---
-title: "CA2135： 層級 2 組件不應該包含 Linkdemand |Microsoft 文件"
-ms.custom: 
+title: CA2135： 層級 2 組件不應該包含 Linkdemand |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2135
+f1_keywords:
+- CA2135
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ea4d0adf3573410c9f8a25e6b5d3abf2615c8ad3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

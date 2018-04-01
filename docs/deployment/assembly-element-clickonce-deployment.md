@@ -1,24 +1,28 @@
 ---
-title: "&lt;組件&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;組件&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <assembly> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <assembly> element [ClickOnce deployment manifest]
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: c19312b005a1f8dfeefa766ed3a5e6a8ab1c566c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

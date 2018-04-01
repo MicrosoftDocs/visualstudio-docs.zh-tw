@@ -1,20 +1,24 @@
 ---
-title: "IDebugProcessEx2::AddImplicitProgramNodes |Microsoft 文件"
-ms.custom: 
+title: IDebugProcessEx2::AddImplicitProgramNodes |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProcessEx2::AddImplicitProgramNodes
-helpviewer_keywords: IDebugProcessEx2::AddImplicitProgramNodes method
+f1_keywords:
+- IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords:
+- IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: adc3f54188e57bd5453703c0aa68fe281fd2ca5e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

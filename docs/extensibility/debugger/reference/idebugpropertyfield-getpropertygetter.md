@@ -1,20 +1,24 @@
 ---
-title: "IDebugPropertyField::GetPropertyGetter |Microsoft 文件"
-ms.custom: 
+title: IDebugPropertyField::GetPropertyGetter |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPropertyField::GetPropertyGetter
-helpviewer_keywords: IDebugPropertyField::GetPropertyGetter method
+f1_keywords:
+- IDebugPropertyField::GetPropertyGetter
+helpviewer_keywords:
+- IDebugPropertyField::GetPropertyGetter method
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 591de43d06f172ae4b4f5015ecb2d858ce9423cf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

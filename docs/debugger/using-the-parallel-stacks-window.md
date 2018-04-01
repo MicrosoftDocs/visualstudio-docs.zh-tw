@@ -1,25 +1,29 @@
 ---
-title: "檢視使用 [平行堆疊] 視窗的執行緒 |Microsoft 文件"
-ms.custom: 
+title: 檢視使用 [平行堆疊] 視窗的執行緒 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.parallelstacks
+f1_keywords:
+- vs.debug.parallelstacks
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, parallel tasks window
+helpviewer_keywords:
+- debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

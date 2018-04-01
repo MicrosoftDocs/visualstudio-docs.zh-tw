@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugAddresses::Skip |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugAddresses::Skip |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugAddresses::Skip
-helpviewer_keywords: IEnumDebugAddresses::Skip method
+f1_keywords:
+- IEnumDebugAddresses::Skip
+helpviewer_keywords:
+- IEnumDebugAddresses::Skip method
 ms.assetid: ed9a8e71-30ef-414b-9da5-c9a2a251b84e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: be85a2a24c55c37ae3e30a38e45695ca4f98d607
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

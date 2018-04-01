@@ -1,20 +1,24 @@
 ---
-title: "Idiaenuminjectedsources:: Get_count |Microsoft 文件"
-ms.custom: 
+title: 'Idiaenuminjectedsources:: Get_count |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaEnumInjectedSources::get_Count method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaEnumInjectedSources::get_Count method
 ms.assetid: 659c415b-9f7b-470d-90e2-b4c0087f8dd3
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3a46b11ab518c818704c73ea762256382426100f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

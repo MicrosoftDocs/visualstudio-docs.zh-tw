@@ -1,13 +1,15 @@
 ---
-title: "偵錯 Visual Studio 中的多執行緒應用程式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Visual Studio 中的多執行緒應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 09/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.gputthreads
+f1_keywords:
+- vs.debug.gputthreads
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
 ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "DISASSEMBLY_STREAM_FIELDS |Microsoft 文件"
-ms.custom: 
+title: DISASSEMBLY_STREAM_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DISASSEMBLY_STREAM_FIELDS
-helpviewer_keywords: DISASSEMBLY_STREAM_FIELDS enumeration
+f1_keywords:
+- DISASSEMBLY_STREAM_FIELDS
+helpviewer_keywords:
+- DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1629e2665d3b02bebba35583561df49d6fdac221
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointErrorEvent2::GetErrorBreakpoint |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-helpviewer_keywords: IDebugBreakpointErrorEvent2::GetErrorBreakpoint
+f1_keywords:
+- IDebugBreakpointErrorEvent2::GetErrorBreakpoint
+helpviewer_keywords:
+- IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0d4989fb601c45ad6e44e976b2c68756335ecf9b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

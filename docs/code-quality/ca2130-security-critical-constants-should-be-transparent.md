@@ -1,19 +1,22 @@
 ---
-title: "CA2130： 安全性關鍵常數應該是透明 |Microsoft 文件"
-ms.custom: 
+title: CA2130： 安全性關鍵常數應該是透明 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2130
+f1_keywords:
+- CA2130
 ms.assetid: 344c7f7b-9130-4675-ae7f-9fa260cc9789
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ddd6e768f0c5311d6ca8ea19f43f4155f6168b5f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

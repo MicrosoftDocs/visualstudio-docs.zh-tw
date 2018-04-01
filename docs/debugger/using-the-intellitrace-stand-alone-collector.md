@@ -1,20 +1,24 @@
 ---
-title: "使用 IntelliTrace 獨立收集器 |Microsoft 文件"
-ms.custom: 
+title: 使用 IntelliTrace 獨立收集器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.historicaldebug.collectdataoutsideVS
-helpviewer_keywords: IntelliTrace, debugging applications in production
+f1_keywords:
+- vs.historicaldebug.collectdataoutsideVS
+helpviewer_keywords:
+- IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: "105"
+caps.latest.revision: 105
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

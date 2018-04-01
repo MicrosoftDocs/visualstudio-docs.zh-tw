@@ -1,19 +1,22 @@
 ---
-title: "傳送事件 |Microsoft 文件"
-ms.custom: 
+title: 傳送事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], sending events
+helpviewer_keywords:
+- debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2bfdefc3202a026516edb3f9221e0626e1a83b4b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,12 @@
 ---
-title: "&lt;RelatedProducts&gt;元素 （啟動載入器） |Microsoft 文件"
-ms.custom: 
+title: '&lt;RelatedProducts&gt;元素 （啟動載入器） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -18,13 +19,15 @@ dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <RelatedProducts> element [bootstrapper]
+helpviewer_keywords:
+- <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

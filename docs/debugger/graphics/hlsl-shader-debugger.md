@@ -1,19 +1,22 @@
 ---
-title: "HLSL 著色器偵錯工具 |Microsoft 文件"
-ms.custom: 
+title: HLSL 著色器偵錯工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.graphics.shaderviewer
+f1_keywords:
+- vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9c1aeeb2da6817375e0327dba385037dccdc58cf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

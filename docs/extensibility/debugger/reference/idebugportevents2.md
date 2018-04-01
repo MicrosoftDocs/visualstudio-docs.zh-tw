@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortEvents2 |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEvents2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEvents2
-helpviewer_keywords: IDebugPortEvents2 interface
+f1_keywords:
+- IDebugPortEvents2
+helpviewer_keywords:
+- IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

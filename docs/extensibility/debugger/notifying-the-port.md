@@ -1,19 +1,22 @@
 ---
-title: "通知連接埠 |Microsoft 文件"
-ms.custom: 
+title: 通知連接埠 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: ports, notification
+helpviewer_keywords:
+- ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

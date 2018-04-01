@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty3::CreateObjectID |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty3::CreateObjectID |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty3::CreateObjectID
-helpviewer_keywords: IDebugProperty3::CreateObjectID
+f1_keywords:
+- IDebugProperty3::CreateObjectID
+helpviewer_keywords:
+- IDebugProperty3::CreateObjectID
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 337e1a4025e71a637e73b258df41828b7ddf1f43
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

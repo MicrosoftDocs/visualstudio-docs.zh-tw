@@ -1,13 +1,15 @@
 ---
-title: "來源檔案、 通用屬性、 方案屬性頁對話方塊偵錯 |Microsoft 文件"
-ms.custom: 
+title: 來源檔案、 通用屬性、 方案屬性頁對話方塊偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.options.FindSource
+f1_keywords:
+- vs.debug.options.FindSource
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - source files, specifying in debugger
 - debugger, source files
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

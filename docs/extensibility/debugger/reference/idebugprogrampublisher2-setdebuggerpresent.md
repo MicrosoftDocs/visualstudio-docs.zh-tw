@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramPublisher2::SetDebuggerPresent |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramPublisher2::SetDebuggerPresent |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramPublisher2::SetDebuggerPresent
-helpviewer_keywords: IDebugProgramPublisher2::SetDebuggerPresent
+f1_keywords:
+- IDebugProgramPublisher2::SetDebuggerPresent
+helpviewer_keywords:
+- IDebugProgramPublisher2::SetDebuggerPresent
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 61ad9f9fe19de17d1dc21c4f9f9be24ffce2900a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

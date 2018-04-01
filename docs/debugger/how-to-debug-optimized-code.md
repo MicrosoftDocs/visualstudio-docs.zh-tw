@@ -1,13 +1,15 @@
 ---
-title: "如何： 偵錯最佳化程式碼 |Microsoft 文件"
-ms.custom: 
+title: 如何： 偵錯最佳化程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - debug builds, optimizing
 - optimized code, debugging
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 16d0bdea3f9fd40985574b6ab5a3bc9f0ea7a59f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

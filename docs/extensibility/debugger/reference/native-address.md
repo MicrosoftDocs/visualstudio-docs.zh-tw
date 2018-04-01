@@ -1,20 +1,24 @@
 ---
-title: "NATIVE_ADDRESS |Microsoft 文件"
-ms.custom: 
+title: NATIVE_ADDRESS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: NATIVE_ADDRESS
-helpviewer_keywords: NATIVE_ADDRESS structure
+f1_keywords:
+- NATIVE_ADDRESS
+helpviewer_keywords:
+- NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fab648d80bb1207454ab03b6427dfc3ac9cc1f78
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,13 +1,15 @@
 ---
-title: "呼叫函式好幾百次時，如何判斷是哪一個呼叫失敗？ | Microsoft Docs"
-ms.custom: 
+title: 呼叫函式好幾百次時，如何判斷是哪一個呼叫失敗？ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.functions
+f1_keywords:
+- vs.debug.functions
 dev_langs:
 - CSharp
 - VB
@@ -26,11 +28,12 @@ helpviewer_keywords:
 - functions [debugger]
 - Skip Count
 ms.assetid: 66cfac86-f5be-4d3a-9329-d44cd74bc586
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f36e482f7c5028f5a6e81d8fba21bb78763cb01a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

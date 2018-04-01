@@ -1,20 +1,24 @@
 ---
-title: "IDebugPropertyCreateEvent2::GetDebugProperty |Microsoft 文件"
-ms.custom: 
+title: IDebugPropertyCreateEvent2::GetDebugProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPropertyCreateEvent2::GetDebugProperty
-helpviewer_keywords: IDebugPropertyCreateEvent2::GetDebugProperty
+f1_keywords:
+- IDebugPropertyCreateEvent2::GetDebugProperty
+helpviewer_keywords:
+- IDebugPropertyCreateEvent2::GetDebugProperty
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d633c034bf7060cd3a0876d69f65259a55e05458
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

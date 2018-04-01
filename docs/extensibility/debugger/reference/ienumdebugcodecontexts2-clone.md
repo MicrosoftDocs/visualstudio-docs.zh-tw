@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugCodeContexts2::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugCodeContexts2::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugCodeContexts2::Clone
-helpviewer_keywords: IEnumDebugCodeContexts2::Clone
+f1_keywords:
+- IEnumDebugCodeContexts2::Clone
+helpviewer_keywords:
+- IEnumDebugCodeContexts2::Clone
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 028ee486a7ceaf916a4cfda1915043f4b378e35f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

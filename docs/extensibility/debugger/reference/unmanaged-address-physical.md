@@ -1,20 +1,24 @@
 ---
-title: "UNMANAGED_ADDRESS_PHYSICAL |Microsoft 文件"
-ms.custom: 
+title: UNMANAGED_ADDRESS_PHYSICAL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: UNMANAGED_ADDRESS_PHYSICAL
-helpviewer_keywords: UNMANAGED_ADDRESS_PHYSICAL structure
+f1_keywords:
+- UNMANAGED_ADDRESS_PHYSICAL
+helpviewer_keywords:
+- UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d2737b3282ef96d693fd939a41b7d795954fae31
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

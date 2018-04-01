@@ -1,23 +1,26 @@
 ---
-title: "&lt;簽章&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;簽章&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <Signature> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <Signature> element [ClickOnce deployment manifest]
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ffcc04808916d8ef31fb77cab72f54c1e22e924c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

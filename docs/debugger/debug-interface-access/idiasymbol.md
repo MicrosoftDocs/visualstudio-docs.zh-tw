@@ -1,20 +1,24 @@
 ---
-title: "IDiaSymbol |Microsoft 文件"
-ms.custom: 
+title: IDiaSymbol |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "查功能表命令 |Microsoft 文件"
-ms.custom: 
+title: 查功能表命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Spy menu commands
+helpviewer_keywords:
+- Spy menu commands
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 892802b71997dd090561b9eb49d1e6065e4f28af
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

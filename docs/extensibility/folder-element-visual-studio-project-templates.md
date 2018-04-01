@@ -1,20 +1,24 @@
 ---
-title: "資料夾項目 （Visual Studio 專案範本） |Microsoft 文件"
-ms.custom: 
+title: 資料夾項目 （Visual Studio 專案範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Folder
-helpviewer_keywords: Folder element [Visual Studio project templates]
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#Folder
+helpviewer_keywords:
+- Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "處理序檢視 |Microsoft 文件"
-ms.custom: 
+title: 處理序檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.externaltools.spyplus.processesview
-helpviewer_keywords: Processes view
+f1_keywords:
+- vs.externaltools.spyplus.processesview
+helpviewer_keywords:
+- Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

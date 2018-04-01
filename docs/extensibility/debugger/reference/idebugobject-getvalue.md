@@ -1,20 +1,24 @@
 ---
-title: "IDebugObject::GetValue |Microsoft 文件"
-ms.custom: 
+title: IDebugObject::GetValue |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugObject::GetValue
-helpviewer_keywords: IDebugObject::GetValue method
+f1_keywords:
+- IDebugObject::GetValue
+helpviewer_keywords:
+- IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1c96a9224d77f8693226b4474bfed2893b39e27f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

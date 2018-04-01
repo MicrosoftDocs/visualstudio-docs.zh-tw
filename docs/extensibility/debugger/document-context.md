@@ -1,19 +1,22 @@
 ---
-title: "文件內容 |Microsoft 文件"
-ms.custom: 
+title: 文件內容 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], contexts
+helpviewer_keywords:
+- debugging [Debugging SDK], contexts
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b121259f9be23d235386d7156ca8d326c5847f87
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

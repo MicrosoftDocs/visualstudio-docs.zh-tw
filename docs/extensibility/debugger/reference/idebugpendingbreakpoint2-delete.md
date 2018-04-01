@@ -1,22 +1,25 @@
 ---
-title: "IDebugPendingBreakpoint2::Delete |Microsoft 文件"
-ms.custom: 
+title: IDebugPendingBreakpoint2::Delete |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPendingBreakpoint2::Delete
+f1_keywords:
+- IDebugPendingBreakpoint2::Delete
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::Delete method
 - Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a925aa64ed557985d7a451a5d6756db82f40691d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

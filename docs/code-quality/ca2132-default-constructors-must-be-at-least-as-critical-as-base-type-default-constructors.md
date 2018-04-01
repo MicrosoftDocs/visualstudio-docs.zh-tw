@@ -1,19 +1,22 @@
 ---
-title: "CA2132： 預設建構函式必須至少和基底類型的預設建構函式一樣關鍵 |Microsoft 文件"
-ms.custom: 
+title: CA2132： 預設建構函式必須至少和基底類型的預設建構函式一樣關鍵 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2132
+f1_keywords:
+- CA2132
 ms.assetid: e758afa1-8bde-442a-8a0a-bd1ea7b0ce4d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 752103825a25c4352ccc21730b8d2b7265f8f41b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,22 +1,25 @@
 ---
-title: "CreateInPlace （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: CreateInPlace （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 05b4e7640a1d42c2796c7e41afe51dfac3da254a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

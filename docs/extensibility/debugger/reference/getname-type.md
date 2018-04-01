@@ -1,20 +1,24 @@
 ---
-title: "GETNAME_TYPE |Microsoft 文件"
-ms.custom: 
+title: GETNAME_TYPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: GETNAME_TYPE
-helpviewer_keywords: GETNAME_TYPE enumeration
+f1_keywords:
+- GETNAME_TYPE
+helpviewer_keywords:
+- GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bb73d39aec7f364ce27ab06ef426d1c4a622878a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

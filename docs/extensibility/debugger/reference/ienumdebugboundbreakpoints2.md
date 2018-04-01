@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugBoundBreakpoints2 |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugBoundBreakpoints2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugBoundBreakpoints2
-helpviewer_keywords: IEnumDebugBoundBreakpoints2
+f1_keywords:
+- IEnumDebugBoundBreakpoints2
+helpviewer_keywords:
+- IEnumDebugBoundBreakpoints2
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6e3dbd26764716add45d71600176278c92e0d69b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

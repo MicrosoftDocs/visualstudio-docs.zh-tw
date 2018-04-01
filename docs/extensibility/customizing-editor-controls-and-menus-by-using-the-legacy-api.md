@@ -1,19 +1,22 @@
 ---
-title: "使用舊版 API 自訂編輯器控制項及功能表 |Microsoft 文件"
-ms.custom: 
+title: 使用舊版 API 自訂編輯器控制項及功能表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - controls and menus
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - controls and menus
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

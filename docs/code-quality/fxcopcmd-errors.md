@@ -1,19 +1,22 @@
 ---
-title: "FxCopCmd 錯誤 |Microsoft 文件"
-ms.custom: 
+title: FxCopCmd 錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 10/19/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: FxCopCmd errors
+helpviewer_keywords:
+- FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-caps.latest.revision: "12"
+caps.latest.revision: 12
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

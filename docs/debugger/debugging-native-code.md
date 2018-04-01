@@ -1,13 +1,15 @@
 ---
-title: "偵錯原生程式碼 |Microsoft 文件"
-ms.custom: 
+title: 偵錯原生程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - debugging [Visual Studio], native code
 - native code, debugging
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 94f3d0cfd57f4d907bab758e52e0499b63941236
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

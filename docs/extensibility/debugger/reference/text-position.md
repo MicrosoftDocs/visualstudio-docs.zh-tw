@@ -1,20 +1,24 @@
 ---
-title: "TEXT_POSITION |Microsoft 文件"
-ms.custom: 
+title: TEXT_POSITION |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: TEXT_POSITION
-helpviewer_keywords: TEXT_POSITION structure
+f1_keywords:
+- TEXT_POSITION
+helpviewer_keywords:
+- TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b2bdfe3431465ff1ceb5771fa3c24642e6aa2354
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

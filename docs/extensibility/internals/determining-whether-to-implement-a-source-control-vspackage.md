@@ -1,19 +1,22 @@
 ---
-title: "決定是否要實作原始檔控制 VSPackage |Microsoft 文件"
-ms.custom: 
+title: 決定是否要實作原始檔控制 VSPackage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control packages, about source control packages
+helpviewer_keywords:
+- source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "Windows 索引標籤，訊息選項對話方塊 |Microsoft 文件"
-ms.custom: 
+title: Windows 索引標籤，訊息選項對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: message options, Windows
+helpviewer_keywords:
+- message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9c3795d26a8bd7bf4f4eb0ce9147ff081afa826e
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

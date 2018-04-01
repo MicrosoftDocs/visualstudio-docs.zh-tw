@@ -1,22 +1,25 @@
 ---
-title: "介面 （偵錯介面存取 SDK） |Microsoft 文件"
-ms.custom: 
+title: 介面 （偵錯介面存取 SDK） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - interfaces [DIA SDK]
 - DIA SDK, interfaces
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e128aa0a4cbb30106981b152252ff308e21669b7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

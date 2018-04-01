@@ -1,20 +1,24 @@
 ---
-title: "IDebugCoreServer2::GetPortSupplier |Microsoft 文件"
-ms.custom: 
+title: IDebugCoreServer2::GetPortSupplier |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCoreServer2::GetPortSupplier
-helpviewer_keywords: IDebugCoreServer2::GetPortSupplier
+f1_keywords:
+- IDebugCoreServer2::GetPortSupplier
+helpviewer_keywords:
+- IDebugCoreServer2::GetPortSupplier
 ms.assetid: acf181d4-ef42-4aa5-86f9-95fd5467ea31
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a6bd1502ad68e274880dadc195208c6174d1ab57
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

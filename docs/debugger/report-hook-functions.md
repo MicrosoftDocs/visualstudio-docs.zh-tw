@@ -1,13 +1,15 @@
 ---
-title: "報告攔截函式 |Microsoft 文件"
-ms.custom: 
+title: 報告攔截函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.hooks
+f1_keywords:
+- vs.debug.hooks
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - _CrtSetReportHook function
 - report hook functions
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 958c33c623830af509185b3d35ef8a8b5956aaae
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

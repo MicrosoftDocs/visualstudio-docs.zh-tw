@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugBoundBreakpoints2::Reset |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugBoundBreakpoints2::Reset |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugBoundBreakpoints2::Reset
-helpviewer_keywords: IEnumDebugBoundBreakpoints2::Reset
+f1_keywords:
+- IEnumDebugBoundBreakpoints2::Reset
+helpviewer_keywords:
+- IEnumDebugBoundBreakpoints2::Reset
 ms.assetid: 0f0522a5-6a97-4c4e-859b-cc4476e6c527
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7348cc4b6589cea7744162ab7870be6ddb2e3ade
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,23 +1,26 @@
 ---
-title: "&lt;customErrorReporting&gt;元素 （ClickOnce 部署） |Microsoft 文件"
-ms.custom: 
+title: '&lt;customErrorReporting&gt;元素 （ClickOnce 部署） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <customErrorReporting> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <customErrorReporting> element [ClickOnce deployment manifest]
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b6b6726ebf45522834d916897f456952b66a3605
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

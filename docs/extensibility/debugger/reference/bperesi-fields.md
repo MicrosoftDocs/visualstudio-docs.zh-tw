@@ -1,20 +1,24 @@
 ---
-title: "BPERESI_FIELDS |Microsoft 文件"
-ms.custom: 
+title: BPERESI_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BPERESI_FIELDS
-helpviewer_keywords: BPERESI_FIELDS enumeration
+f1_keywords:
+- BPERESI_FIELDS
+helpviewer_keywords:
+- BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 36ac591940acaed2ac8b8f92c701580d9d45f94a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

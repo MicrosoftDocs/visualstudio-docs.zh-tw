@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugPorts2::Next |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugPorts2::Next |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugPorts2::Next
-helpviewer_keywords: IEnumDebugPorts2::Next
+f1_keywords:
+- IEnumDebugPorts2::Next
+helpviewer_keywords:
+- IEnumDebugPorts2::Next
 ms.assetid: 3f43d18c-6bd1-4ddd-95ef-9550abd2ad09
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ccf55ae0d815525d0de8b21ddc3e639c69e120a6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "PROVIDER_FIELDS |Microsoft 文件"
-ms.custom: 
+title: PROVIDER_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: PROVIDER_FIELDS
-helpviewer_keywords: PROVIDER_FIELDS enumeration
+f1_keywords:
+- PROVIDER_FIELDS
+helpviewer_keywords:
+- PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5fa01ee5eefcd8cc476abe0ce5fc512dd2191403
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "管理組態選項 |Microsoft 文件"
-ms.custom: 
+title: 管理組態選項 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: configuration options
+helpviewer_keywords:
+- configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

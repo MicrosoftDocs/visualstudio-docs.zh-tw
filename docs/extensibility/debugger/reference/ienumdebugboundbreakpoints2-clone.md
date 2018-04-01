@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugBoundBreakpoints2::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugBoundBreakpoints2::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugBoundBreakpoints2::Clone
-helpviewer_keywords: IEnumDebugBoundBreakpoints2::Clone
+f1_keywords:
+- IEnumDebugBoundBreakpoints2::Clone
+helpviewer_keywords:
+- IEnumDebugBoundBreakpoints2::Clone
 ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d264aea3918f7e6d36e112cd3b7d0568214838c3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

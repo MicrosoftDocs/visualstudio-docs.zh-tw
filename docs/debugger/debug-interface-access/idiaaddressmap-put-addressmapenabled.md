@@ -1,20 +1,24 @@
 ---
-title: "Idiaaddressmap:: Put_addressmapenabled |Microsoft 文件"
-ms.custom: 
+title: 'Idiaaddressmap:: Put_addressmapenabled |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaAddressMap::put_addressMapEnabled method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaAddressMap::put_addressMapEnabled method
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: caf138a951b2857bee4f56bf6b8713f98bf4c1b4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

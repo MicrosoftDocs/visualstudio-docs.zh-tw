@@ -1,20 +1,24 @@
 ---
-title: "IDebugObject2::GetBackingFieldForProperty |Microsoft 文件"
-ms.custom: 
+title: IDebugObject2::GetBackingFieldForProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugObject2::GetBackingFieldForProperty
-helpviewer_keywords: IDebugObject2::GetBackingFieldForProperty method
+f1_keywords:
+- IDebugObject2::GetBackingFieldForProperty
+helpviewer_keywords:
+- IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f8833e3d2b686e1c350e1094aaa9bdfe925586a7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

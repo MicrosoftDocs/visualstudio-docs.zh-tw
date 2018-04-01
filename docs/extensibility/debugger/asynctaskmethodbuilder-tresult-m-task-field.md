@@ -1,19 +1,22 @@
 ---
-title: "AsyncTaskMethodBuilder&lt;TResult&gt;.m_task 欄位 |Microsoft 文件"
-ms.custom: 
+title: AsyncTaskMethodBuilder&lt;TResult&gt;.m_task 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
+helpviewer_keywords:
+- m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2b658795221aa2a9acb680a10eeda628aad85fb5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

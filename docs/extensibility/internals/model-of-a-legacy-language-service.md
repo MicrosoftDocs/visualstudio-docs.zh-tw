@@ -1,19 +1,22 @@
 ---
-title: "舊版語言服務模型 |Microsoft 文件"
-ms.custom: 
+title: 舊版語言服務模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: language services, model
+helpviewer_keywords:
+- language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

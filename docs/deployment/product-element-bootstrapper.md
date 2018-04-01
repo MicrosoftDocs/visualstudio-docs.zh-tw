@@ -1,24 +1,27 @@
 ---
-title: "&lt;產品&gt;元素 （啟動載入器） |Microsoft 文件"
-ms.custom: 
+title: '&lt;產品&gt;元素 （啟動載入器） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - FSharp
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <product> element [bootstrapper]
+helpviewer_keywords:
+- <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: af40da0690bd8b6cc9cc12dd16fe9e11045b0624
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

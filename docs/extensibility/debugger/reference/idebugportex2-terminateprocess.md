@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortEx2::TerminateProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEx2::TerminateProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEx2::TerminateProcess
-helpviewer_keywords: IDebugPortEx2::TerminateProcess
+f1_keywords:
+- IDebugPortEx2::TerminateProcess
+helpviewer_keywords:
+- IDebugPortEx2::TerminateProcess
 ms.assetid: bf8fa94c-6d9d-4e4f-ac08-3b44ba5ace68
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e173e9ba6ae26086aae086eae5bd59530fb161cd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

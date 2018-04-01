@@ -1,20 +1,24 @@
 ---
-title: "BUILT_TYPE |Microsoft 文件"
-ms.custom: 
+title: BUILT_TYPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BUILT_TYPE
-helpviewer_keywords: BUILT_TYPE structure
+f1_keywords:
+- BUILT_TYPE
+helpviewer_keywords:
+- BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 34a426853952325f2d1911b7fca55a8f94a6d40f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

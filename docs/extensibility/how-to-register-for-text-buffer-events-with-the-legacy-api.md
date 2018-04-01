@@ -1,19 +1,22 @@
 ---
-title: "如何： 註冊使用舊版 API 的文字緩衝區事件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 註冊使用舊版 API 的文字緩衝區事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - register for text buffer events
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 94f2e781c316f3891fdef0c324d54fa2f9742222
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

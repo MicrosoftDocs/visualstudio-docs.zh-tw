@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::EnumCodeContexts |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::EnumCodeContexts |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::EnumCodeContexts
-helpviewer_keywords: IDebugProgram2::EnumCodeContexts
+f1_keywords:
+- IDebugProgram2::EnumCodeContexts
+helpviewer_keywords:
+- IDebugProgram2::EnumCodeContexts
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b1bf8039d9602bee59ff31996d2a424de28ae9bf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugFunctionObject::CreatePrimitiveObject |Microsoft 文件"
-ms.custom: 
+title: IDebugFunctionObject::CreatePrimitiveObject |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugFunctionObject::CreatePrimitiveObject
-helpviewer_keywords: IDebugFunctionObject::CreatePrimitiveObject method
+f1_keywords:
+- IDebugFunctionObject::CreatePrimitiveObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c72dd6d804c37496d2615ccd086ee095c75510d6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
