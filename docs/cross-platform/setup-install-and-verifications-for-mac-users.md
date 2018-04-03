@@ -1,23 +1,23 @@
 ---
-title: "針對 Mac 使用者的設定、安裝和驗證 | Microsoft Docs"
-ms.custom: 
+title: 針對 Mac 使用者的設定、安裝和驗證 | Microsoft Docs
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5590e2a66fe2b6bdec192343f22338f257a8e5ba
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 本主題適用於主要在 Mac 上工作的開發人員，這些開發人員會選擇性地在 Mac 上的 Windows 虛擬機器中使用 Visual Studio。 如果您是主要在 Windows 電腦上工作的開發人員，並且需要設定以 iOS 為目標的次要 Mac，請參閱主要的[設定和安裝](../cross-platform/setup-and-install.md)主題。
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/28/2018
 
 1.  如果您還沒有 Apple ID，請在[我的 Apple ID](https://appleid.apple.com/) 免費建立一個 ID。 安裝及登入 Xcode 時需要這個 ID。
 
-2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)下載並安裝 Xcode。
+2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode。
 
 3.  遵循 [安裝和設定 Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) 上的指示，下載並安裝 Xamarin。
 

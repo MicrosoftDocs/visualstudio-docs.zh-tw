@@ -1,11 +1,11 @@
 ---
-title: "專案和方案檔類型 | Microsoft Docs"
-ms.custom: 
+title: 專案和方案檔類型 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 
@@ -50,7 +51,7 @@ Visual Studio 使用兩種檔案類型 (.sln 和 .suo) 來儲存方案的設定�
 
 專案可以包含許多不同的檔案類型。 例如，C# 程式碼檔案的副檔名為 **.cs**，而 C++ 檔案的副檔名為 **.cpp**。 資源儲存在 **.resx** 檔案中，而 XAML 儲存在 **.xaml** 檔案中。 [App.config](../../ide/managing-application-settings-dotnet.md) 檔案包含不應包含在應用程式程式碼中的應用程式資訊，例如連接字串。
 
-如需 C++ 專案中檔案類型的詳細資訊，請參閱[為 Visual C++ 專案建立的檔案類型](/cpp/ide/file-types-created-for-visual-cpp-projects)和 [MFC 程式庫中的 Unicode](/cpp/mfc/unicode-in-mfc)
+如需 C++ 專案檔案類型的詳細資訊，請參閱[為 Visual C++ 專案建立的檔案類型](/cpp/ide/file-types-created-for-visual-cpp-projects)。
 
 ## <a name="see-also"></a>另請參閱
 

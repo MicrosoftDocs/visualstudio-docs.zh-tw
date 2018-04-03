@@ -1,7 +1,7 @@
 ---
 title: 變更記錄 (Visual Studio Tools for Unity) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 03/23/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-unity-tools
@@ -13,14 +13,33 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4559632079c4577d6fa8b66e98c609965d1cc1bf
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6670f346f4834807296f6385bf23e573400f96a3
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="3605"></a>3.6.0.5
+ 發行日期：2018 年 3 月 13 日
+
+### <a name="new-features"></a>新功能
+
+-   **Project Generation:**
+
+    -   Unity 2018.1 之新專案產生器的新增支援
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   已修正處理自訂專案的損毀狀態。
+
+-   **偵錯工具：**
+
+    -   已修正設定下一個陳述式。
 
 ## <a name="3604"></a>3.6.0.4
  發行日期：2018 年 3 月 5 日

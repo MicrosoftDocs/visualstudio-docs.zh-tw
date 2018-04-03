@@ -1,24 +1,24 @@
 ---
-title: "使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 在您完成[設定與安裝](../cross-platform/setup-and-install.md)和[驗證您的 Xamarin 環境](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說將示範如何建立具有原生 UI 層的基本 Xamarin 應用程式 (如下所示)。 使用原生 UI，共用程式碼會位於可攜式類別庫 (PCL) 中，而個別的平台專案會包含 UI 定義。  
@@ -101,7 +101,7 @@ ms.lasthandoff: 02/09/2018
   
  下列步驟接著會將程式碼新增至 PCL，以存取並儲存該天氣服務的資料：  
   
-1.  若要執行此範例，您必須先在 [http://openweathermap.org/appid](http://openweathermap.org/appid)註冊免費 API 金鑰。  
+1.  若要執行此範例，您必須先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 註冊免費的 API 金鑰。  
   
 2.  以滑鼠右鍵按一下 **WeatherApp** 專案，然後選取 [新增] > [類別...]。在 [加入新項目]  對話方塊中，將檔案命名為 **Weather.cs**。 您將使用此類別儲存天氣資料服務的資料。  
   
@@ -261,7 +261,7 @@ ms.lasthandoff: 02/09/2018
     > [!TIP]
     >  請注意，有許多屬性不包含可供您選取之值的下拉式清單。  所以可能會很難知道指定的屬性要使用什麼字串值。 如需建議，請嘗試在 [R.attr](http://developer.android.com/reference/android/R.attr.html) 類別頁面中搜尋屬性的名稱。  
     >   
-    >  此外，直接在網路上搜尋常被導向 [http://stackoverflow.com/](http://stackoverflow.com/) 上的頁面，在其中，其他人已使用了相同的屬性。  
+    >  此外，直接在網路上搜尋常被導向至 [http://stackoverflow.com/](http://stackoverflow.com/) 上的頁面；在其中，其他人已使用了相同的屬性。  
   
      基於參考的目的，如果您切換到 [原始碼] 檢視，應該會看到下列適用於此項目的程式碼：  
   

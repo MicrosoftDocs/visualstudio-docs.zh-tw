@@ -1,11 +1,11 @@
 ---
-title: "逐步解說：我的第一個 WPF 桌面應用程式 | Microsoft Docs"
-ms.custom: 
+title: 逐步解說：我的第一個 WPF 桌面應用程式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
 
@@ -320,7 +320,7 @@ ms.lasthandoff: 03/02/2018
 
     1. 找到行 `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`。 將 `Grid.Column="0"` 變更為 `Grid.Column="1"` ，並將 `Grid.Row="2"` 變更為 `Grid.Row="3"`。
 
-1. 在 `<Border` 項目前加入下列 XAML 程式碼以顯示標題：
+1. 在 `<Border` 項目前新增下列 XAML 程式碼以顯示標題：
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ ms.lasthandoff: 03/02/2018
 
     -   `listHeaderTextStyle`：格式化清單標頭 [標籤] 。
 
-    -   `buttonStyle`：格式化 `Button` ExpenseItHome.xaml **頁面上的** 。
+    -   `buttonStyle`：格式化 **ExpenseItHome.xaml** 頁面上的 `Button`。
 
 1. 開啟 **ExpenseItHome.xaml**，並以下列 XAML 取代 `<Grid>` 與 `</Grid>` 項目之間的所有內容：
 

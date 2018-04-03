@@ -1,12 +1,12 @@
 ---
-title: "Visual Studio 中的預設鍵盤快速鍵 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的預設鍵盤快速鍵 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
-如需鍵盤協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需鍵盤存取範圍的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
-只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設快速鍵，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
+只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
 如需常用鍵盤快速鍵的清單和其他生產力資訊，請參閱 [Visual Studio 中常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[鍵盤祕訣](../ide/tips-and-tricks-for-visual-studio.md)和[提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)。
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/23/2018
 
 |||||  
 |-|-|-|-|  
-|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[專案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[編輯](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[測試](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[架構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[編輯器操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[專案及方案操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[建置](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[檔案](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
 |[類別檢視操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[說明](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  
@@ -44,15 +44,15 @@ ms.lasthandoff: 01/23/2018
 |[偵錯工具操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[診斷中樞](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
-下表中每一節包含的鍵盤快速鍵命令是適用於該節名稱的內容功能表。
+下表中每個區塊包含的鍵盤快速鍵命令是適用於該區段名稱的內容功能表。
 
 |||||  
 |-|-|-|-|  
 |[ADO.NET 實體資料模型設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[分層圖](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[設定設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[VC 影像編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[受控資源編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字串編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
+|[類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Managed 資源編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字串編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[自動程式化 UI 測試編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[合併編輯器視窗](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[檢視表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[資料集編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools，結構描述比較](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build 詳細資料編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
-|[差異檢視器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools，資料表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Forms 設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
+|[差異檢視器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools，資料表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Form 設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
 |[DOM 總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools，T-SQL 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[文字編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[工作項目編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools，T-SQL PDW 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML 活動圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[工作項目查詢檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[圖形文件編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML 類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[工作項目結果檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.Replace|Ctrl+H|  
 |Edit.ReplaceinFiles|Ctrl+Shift+H|  
 |Edit.SelectAll|Ctrl+A|  
-|Edit.SelectNextControl|Tab|  
+|Edit.SelectNextControl|索引標籤|  
 |Edit.SelectPreviousControl|Shift + Tab|  
 |Edit.ShowTileGrid|Enter|  
 |Edit.SizeControlDown|Ctrl+Shift+向下鍵|  
@@ -417,7 +417,7 @@ ms.lasthandoff: 01/23/2018
 |View.ZoomIn|Ctrl+Shift+.|  
 |View.ZoomOut|Ctrl+Shift+,|  
 
-###  <a name="bkmk_window"></a> 視窗  
+###  <a name="bkmk_window"></a> Window  
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -479,8 +479,8 @@ ms.lasthandoff: 01/23/2018
 |Edit.Delete|Ctrl+Del|  
 |Edit.ExpandCollapseBaseTypeList|Shift+Alt+B|  
 |Edit.NavigateToLollipop|Shift+Alt+L|  
-|Edit.RemovefromDiagram|Delete|  
-|View.ViewCode|Enter|  
+|Edit.RemovefromDiagram|刪除|  
+|View.ViewCode|Enter 鍵|  
 
 ##  <a name="bkmk_codedUItest"></a> 自動程式化 UI 測試編輯器  
 
@@ -540,7 +540,7 @@ ms.lasthandoff: 01/23/2018
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|I|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|O|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Shift+K<br /><br /> 或<br /><br /> Ctrl+E、C|  
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Delete|  
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|刪除|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|  
 
 ##  <a name="bkmk_graphicsDebugger"></a> 圖形診斷  
@@ -607,9 +607,9 @@ ms.lasthandoff: 01/23/2018
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |Edit.EditCell|F2|  
-|Edit.Remove|Delete|  
+|Edit.Remove|刪除|  
 |Edit.RemoveRow|Ctrl+Delete|  
-|Edit.SelectionCancel|Escape|  
+|Edit.SelectionCancel|逸出字元|  
 |Resources.Audio|Ctrl+4|  
 |Resources.Files|Ctrl+5|  
 |Resources.Icons|Ctrl+3|  
@@ -719,7 +719,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.CharLeftExtend|Shift+向左鍵|  
 |Edit.CharRight|向右鍵|  
 |Edit.CharRightExtend|Shift+向右鍵|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|索引標籤|  
 |Edit.LineDown|向下鍵|  
 |Edit.LineDownExtend|Shift+向下鍵|  
 |Edit.LineUp|向上鍵|  
@@ -762,7 +762,7 @@ ms.lasthandoff: 01/23/2018
 
 |命令|鍵盤快速鍵|  
 |-------------|-----------------------|  
-|Edit.Delete|Delete|  
+|Edit.Delete|刪除|  
 |File.Rename|F2|  
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|Alt+Home|  
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|Alt+向下鍵|  
@@ -831,18 +831,18 @@ ms.lasthandoff: 01/23/2018
 |Edit.HideSelection|Ctrl+M、Ctrl+H|  
 |Edit.IncreaseFilterLevel|Alt+.|  
 |Edit.IncrementalSearch|Ctrl+I|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|索引標籤|  
 |Edit.LineCut|Ctrl+L|  
 |Edit.LineDelete|Ctrl+Shift+L|  
 |Edit.LineDown|向下鍵|  
 |Edit.LineDownExtend|Shift+向下鍵|  
 |Edit.LineDownExtendColumn|Shift+Alt+向下鍵|  
-|Edit.LineEnd|End|  
+|Edit.LineEnd|End - 結束|  
 |Edit.LineEndExtend|Shift+End|  
 |Edit.LineEndExtendColumn|Shift+Alt+End|  
 |Edit.LineOpenAbove|Ctrl+Enter|  
 |Edit.LineOpenBelow|Ctrl+Shift+Enter|  
-|Edit.LineStart|Home|  
+|Edit.LineStart|首頁|  
 |Edit.LineStartExtend|Shift+Home|  
 |Edit.LineStartExtendColumn|Shift+Alt+Home|  
 |Edit.LineTranspose|Shift+Alt+T|  
@@ -871,7 +871,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.ScrollLineDown|Ctrl+向下鍵|  
 |Edit.ScrollLineUp|Ctrl+向上鍵|  
 |Edit.SelectCurrentWord|Ctrl+W|  
-|Edit.SelectionCancel|Escape|  
+|Edit.SelectionCancel|逸出字元|  
 |Edit.SelectToLastGoBack|Ctrl+=|  
 |Edit.ShowCodeLensMenu|Alt+`|  
 |Edit.StopHidingCurrent|Ctrl+M、Ctrl+U|  
@@ -1046,11 +1046,11 @@ ms.lasthandoff: 01/23/2018
 |Edit.CharLeftExtend|Shift+向左鍵|  
 |Edit.CharRight|向右鍵|  
 |Edit.CharRightExtend|Shift+向右鍵|  
-|Edit.DocumentEnd|End|  
+|Edit.DocumentEnd|End - 結束|  
 |Edit.DocumentEndExtend|Shift+End|  
-|Edit.DocumentStart|Home|  
+|Edit.DocumentStart|首頁|  
 |Edit.DocumentStartExtend|Shift+Home|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|索引標籤|  
 |Edit.LineDown|向下鍵|  
 |Edit.LineDownExtend|Shift+向上鍵|  
 |Edit.LineUp|向上鍵|  
@@ -1059,7 +1059,7 @@ ms.lasthandoff: 01/23/2018
 |Edit.MoveControlLeft|Ctrl+向左鍵|  
 |Edit.MoveControlRight|Ctrl+向右鍵|  
 |Edit.MoveControlUp|Ctrl+向上鍵|  
-|Edit.SelectionCancel|Escape|  
+|Edit.SelectionCancel|逸出字元|  
 |Edit.SizeControlDown|Ctrl+Shift+向下鍵|  
 |Edit.SizeControlLeft|Ctrl+Shift+向左鍵|  
 |Edit.SizeControlRight|Ctrl+Shift+向右鍵|  
@@ -1134,6 +1134,7 @@ ms.lasthandoff: 01/23/2018
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|設計工具選項|Ctrl+Shift+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|Ctrl+Shift+R|  
 |執行專案程式碼|Ctrl+F9|  
@@ -1162,7 +1163,7 @@ ms.lasthandoff: 01/23/2018
 |GraphView.LefttoRight|Alt+向右鍵|  
 |GraphView.RighttoLeft|Alt+向左鍵|  
 |GraphView.ToptoBottom|Alt+向下鍵|  
-|OtherContextMenus.GraphView.RemovefromWorkspace|Delete|  
+|OtherContextMenus.GraphView.RemovefromWorkspace|刪除|  
 |XsdDesigner.ShowContentModelView|Ctrl+2|  
 |XsdDesigner.ShowGraphView|Ctrl+3|  
 |XsdDesigner.ShowStartView|Ctrl+1|  
