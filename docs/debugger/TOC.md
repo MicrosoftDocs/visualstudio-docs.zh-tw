@@ -1,7 +1,7 @@
 # [偵錯工具文件](index.md)
-# 總覽
-## [偵錯工具功能導覽](debugger-feature-tour.md)
+# [概觀](debugger-overview.md)
 # 快速入門
+## [偵錯工具簡介](debugger-feature-tour.md)
 ## [偵錯受控應用程式](quickstart-debug-with-managed.md)
 ## [偵錯原生應用程式](quickstart-debug-with-cplusplus.md)
 ## [偵錯 ASP.NET 應用程式](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [在視覺化檢視中檢視字串值](string-visualizer-dialog-box.md)
 ### [檢視反組譯程式碼](how-to-use-the-disassembly-window.md)
 #### [如何：在記憶體中向上或向下翻頁](how-to-page-up-or-down-in-memory.md)
-### [檢視呼叫堆疊](how-to-use-the-call-stack-window.md)
-#### [呼叫堆疊視窗內的混合程式碼和遺失的資訊](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [如何：在原生框架於呼叫堆疊視窗遺失時跳離 Managed 程式碼](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [檢視暫存器值](how-to-use-the-registers-window.md)
 #### [關於暫存器視窗](debugging-basics-registers-window.md)
 #### [如何：顯示和隱藏暫存器群組](how-to-display-and-hide-register-groups.md)
