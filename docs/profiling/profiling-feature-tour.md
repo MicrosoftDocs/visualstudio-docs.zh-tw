@@ -1,27 +1,27 @@
 ---
-title: "分析功能導覽 | Microsoft Docs"
+title: 分析功能導覽 | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -154,18 +154,21 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 
 以下資料表列出 Visual Studio 提供的各種工具和您可以用它們處理的不同專案類型︰
   
-|效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[記憶體使用量](../profiling/memory-usage.md)|是|是|是|  
-|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是 (對 .NET Core/ASP.NET Core 則否)|  
-|[GPU 使用量](../debugger/gpu-usage.md)|是|是|no|  
-|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|  
-|[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|  
-|[效能總管](../profiling/performance-explorer.md)|是|否|是 (對 ASP.NET Core 則否)|  
-|[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 和 Visual Studio Enterprise|僅限 .NET 和 Visual Studio Enterprise|僅限 .NET 和 Visual Studio Enterprise|
-|[網路使用量](../profiling/network-usage.md)|否|是|否| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|  
-|[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|  
+|效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
+|----------------------|---------------------|-------------|-------------|  
+|[記憶體使用量](../profiling/memory-usage.md)|是|是|是| 
+|[CPU 使用量](../profiling/cpu-usage.md)|是 (請參閱「注意」)|是|是 (請參閱「注意」)|
+|[GPU 使用量](../debugger/gpu-usage.md)|是|是|no| 
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
+|[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
+|[效能總管](../profiling/performance-explorer.md)|是|否|是|
+|[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
+|[網路使用量](../profiling/network-usage.md)|否|是|否|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否| 
+|[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|
+
+> [!NOTE]
+> 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
 
 ## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)

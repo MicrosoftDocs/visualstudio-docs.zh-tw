@@ -1,7 +1,7 @@
 ---
-title: "在 Visual Studio 中安裝和設定測試代理程式 | Microsoft Docs"
+title: 安裝 Visual Studio 的測試代理程式和測試控制器 | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>安裝和設定測試代理程式
+# <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
 對於使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的測試案例，您不需要測試控制器。 Agents for Visual Studio 能夠與 VSTS 或 TFS 通訊來處理協調流程。 一種可能的案例是您在 VSTS 或 TFS 中執行建置和發行工作流程的持續測試。
 
@@ -32,7 +32,9 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安裝測試控制器和測試代理程式
 
-您可以從 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 下載 Agents for Visual Studio 2017。尋找 *Agents for Visual Studio 2017*，然後選取 [代理程式] 或 [控制器]。 您可以從[舊版下載](https://www.visualstudio.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
+您可以從 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 下載 Agents for Visual Studio 2017。捲動到頁面底部，然後尋找 *Agents for Visual Studio 2017*。 選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
+
+您可以從[舊版下載](https://www.visualstudio.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
 
 這些安裝程式會以 ISO 檔案提供，方便安裝在虛擬機器上。
 
@@ -59,10 +61,6 @@ ms.lasthandoff: 03/08/2018
 | Agents for Visual Studio 2013 所支援的案例 | TFS 和 VSTS 中的替代方案 |
 | --- | --- |
 | Visual Studio 中的建置-部署-測試工作流程 | 使用者可以使用[組建定義](/vsts/build-release/) (而非 XAML 組建) 來建置、部署和測試 TFS 中的案例。 |
-| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller 和 Test Agents 2013 Update 5 在內部部署執行負載測試。 如需詳細資訊，請參閱[在負載測試中使用測試控制器和測試代理程式](https://msdn.microsoft.com/library/ff400223.aspx)。 |
+| 使用內部部署遠端電腦的負載測試 (效能測試) | 使用 Test Controller 和 Test Agents 2013 Update 5 在內部部署執行負載測試。 |
 | 使用實驗室環境從 Microsoft Test Manager 進行的自動化測試遠端執行 | 此案例目前沒有替代方案。 建議您在組建和發行定義 (而非 XAML 組建) 中使用「執行功能測試」工作，以從遠端執行測試。 |
 | 在 Visual Studio 中執行遠端測試的開發人員 | 不再受支援。 |
-
-## <a name="see-also"></a>另請參閱
-
-* [設定電腦和收集診斷資訊](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

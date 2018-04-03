@@ -1,11 +1,12 @@
 ---
-title: "選項對話方塊、環境、一般 | Microsoft Docs"
-ms.custom: 
+title: 選項對話方塊、環境、一般 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 
@@ -49,7 +51,7 @@ ms.lasthandoff: 12/22/2017
 
 選擇 IDE 的 [藍色]、[淺色] 或 [深色] 色彩佈景主題。
 
-您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor) 下載和安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。
+您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 下載和安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。
 
 **將字首大寫套用至功能表列**
 
@@ -69,22 +71,17 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="other"></a>其他
 
-**個項目顯示在 [視窗] 功能表中**  
-自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 與 24 之間的數字。 數字預設為 10。
+**[視窗] 功能表中顯示的項目** 自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 與 24 之間的數字。 數字預設為 10。
 
-**顯示在最近使用的清單中的項目數**  
-自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 與 24 之間的數字。 數字預設為 10。 這是擷取最近使用的專案和檔案的簡單方法。
+**最近使用的清單中顯示的項目** 自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 與 24 之間的數字。 數字預設為 10。 這是擷取最近使用的專案和檔案的簡單方法。
 
-**顯示狀態列**  
-顯示狀態列。 狀態列位於 IDE 視窗底部，並顯示進行中作業的進度資訊。
+**顯示狀態列** 顯示此狀態列。 狀態列位於 IDE 視窗底部，並顯示進行中作業的進度資訊。
 
-**[關閉] 按鈕只影響作用中的工具視窗**  
-指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
+**[關閉] 按鈕只影響作用中的工具視窗** 指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
 
-**自動隱藏 按鈕只影響作用中的工具視窗**  
-指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
+**[自動隱藏] 按鈕只影響作用中的工具視窗** 指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 
 ## <a name="see-also"></a>另請參閱
 
-[環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)  
-[自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)
+[環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
+[自訂視窗配置](../../ide/customizing-window-layouts-in-visual-studio.md)

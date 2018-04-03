@@ -1,11 +1,11 @@
 ---
-title: "使用 Visual Studio Tools for Unity | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio Tools for Unity | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: conceptdev
@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 在本節中，您將了解如何使用 Visual Studio Tools for Unity 的整合和產能功能，以及如何針對 Unity 開發使用 Visual Studio 偵錯工具。
@@ -134,6 +134,12 @@ ms.lasthandoff: 02/28/2018
 
 > [!IMPORTANT]
 >  由於 Visual Studio Tools for Unity 是透過 UDP 網路通訊端與 Unity 執行個體通訊，因此您的防火牆可能會要求這項資訊。 如果發生這種情況，您必須授權連接，VSTU 和 Unity 才能通訊。
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>針對 Unity 與 Visual Studio 之間的連線進行疑難排解
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
+
+在 Unity 功能表中，選取 編輯 > 喜好設定，然後選取 外部工具 索引標籤。確認已啟用 編輯器附加 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a> 在 Unity 播放器中為專案偵錯
  如果沒有執行 Unity Editor，您可以將 Visual Studio Tools for Unity 直接連接到在獨立播放器中執行的 Unity 應用程式，您也可以透過這個方式來偵錯平台特定的問題。

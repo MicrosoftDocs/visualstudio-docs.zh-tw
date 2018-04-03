@@ -1,27 +1,27 @@
 ---
-title: "使用 MSBuild 取得組建記錄檔 | Microsoft Docs"
-ms.custom: 
+title: 使用 MSBuild 取得組建記錄檔 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: 27
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/09/2018
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>將建置記錄儲存至檔案  
  您可以使用 **/fileLogger** (**fl**) 參數，將組建資料儲存至檔案。 下列範例會將組建資料儲存至名為 `msbuild.log` 的檔案。  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  如需詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
-  
+
+## <a name="saving-a-binary-log"></a>儲存二進位記錄檔
+
+您可以使用 **/binaryLogger** (**bl**) 切換，將記錄檔儲存為壓縮的二進位格式。 此記錄檔包含建置程序的詳細描述，並可以由特定的記錄分析工具讀取。
+
+在下列範例中，會建立具有名稱 `binarylogfilename` 的二進位記錄檔。
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+如需詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
+
 ## <a name="using-a-custom-logger"></a>使用自訂記錄器  
  若要撰寫自己的記錄器，請編寫可實作 <xref:Microsoft.Build.Framework.ILogger> 介面的 Managed 類型。 例如，您可以使用自訂記錄器，透過電子郵件傳送建置錯誤、將其記錄至資料庫，或將其記錄至 XML 檔案。 如需詳細資訊，請參閱[組建記錄器](../msbuild/build-loggers.md)。  
   

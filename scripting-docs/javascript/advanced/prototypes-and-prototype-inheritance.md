@@ -1,12 +1,13 @@
 ---
-title: "原型和原型繼承 | Microsoft Docs"
-ms.custom: 
+title: 原型和原型繼承 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>原型和原型繼承
 在 JavaScript 中，`prototype` 是函式的屬性，也是由建構函式所建立之物件的屬性。 函式的原型就是物件。 當函式本身就是建構函式時，原型就會派上用場。  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  `bicycle` 物件具有 `wheels`、`engine`、`color` 和 `pedals` 屬性，而且其原型為 `Vehicle.prototype`。 JavaScript 引擎會在 `pedals` 上找到 `bicycle` 屬性，然後再透過查詢原型鏈結，找到 `wheels` 上的 `engine`、`color` 和 `Vehicle` 屬性。  
   
 ### <a name="changing-an-objects-prototype"></a>變更物件的原型  
- 在 Internet Explorer 11 中，您可以使用 [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md) 屬性以新的原型來取代物件或函式的內部原型。 當您使用這個屬性時，就會繼承新原型的屬性和方法以及它的原型鏈結中的其他屬性和方法。  
+在 Internet Explorer 11 中，您可以使用 [__proto__](../../javascript/reference/proto-property-object-javascript.md) 屬性以新的原型來取代物件或函式的內部原型。 當您使用這個屬性時，就會繼承新原型的屬性和方法以及它的原型鏈結中的其他屬性和方法。  
+
+> [!WARNING]
+> `__proto__` 屬性是舊版功能。 請改用 [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md)。
   
- 下面範例會示範如何變更物件的原型。 這個範例會示範當您變更物件的原型時，該物件所繼承的屬性是如何變更的。  
+下面範例會示範如何變更物件的原型。 這個範例會示範當您變更物件的原型時，該物件所繼承的屬性是如何變更的。  
   
 ```JavaScript  
 function Friend() {  

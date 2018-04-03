@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中安裝 Python 支援 | Microsoft Docs"
-description: "詳細說明在 Visual Studio 2017、2015、2013、2012 及 2010 中安裝適用於 Visual Studio 的 Python 工具 (PTVS) 的方式，包括可用選項及安裝位置。"
-ms.custom: 
+title: 在 Visual Studio 中安裝 Python 支援 | Microsoft Docs
+description: 詳細說明在 Visual Studio 2017、2015、2013、2012 及 2010 中安裝適用於 Visual Studio 的 Python 工具 (PTVS) 的方式，包括可用選項及安裝位置。
+ms.custom: ''
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. 下載並執行最新的 Visual Studio 2017 安裝程式。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式並移至步驟 2。
+1. 下載並執行最新的 Visual Studio 2017 安裝程式。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式，選取 [修改] 選項 (請參閱[修改 Visual Studio](../install/modify-visual-studio.md)) 並移至步驟 2。
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">安裝 Visual Studio 2017 Community</a>

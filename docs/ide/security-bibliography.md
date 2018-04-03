@@ -1,11 +1,11 @@
 ---
-title: "安全性參考書目 | Microsoft Docs"
-ms.custom: 
+title: 安全性參考書目 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], additional information
@@ -15,22 +15,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8d3db09285e0a7bb76a38e03a1fee467a9891843
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="security-bibliography"></a>安全性參考書目
 
-有關開發安全應用程式以及設定安全環境的主題，以下是選取的資源可在線上和書面上使用：  
-  
-## <a name="microsoft-web-sites"></a>Microsoft 網站  
- [Microsoft 安全性](http://go.microsoft.com/fwlink/?LinkId=55529)  
- 了解 Microsoft 運作方式，協助您使用 IT 專業人員、開發人員和家庭使用者安全性資源連結來保護應用程式和系統安全 (範圍從桌面到網路層級系統)。  
-  
- [MSDN 上的安全性資源](http://go.microsoft.com/fwlink/?LinkID=25440)  
- 引導您前往用於開發安全應用程式的開發人員導向文件、程式碼範例、技術文件和其他資源。  
-  
- [Microsoft TechNet 安全性](http://go.microsoft.com/fwlink/?LinkId=67991)  
- 包含資訊技術專家和 "Power Users" 的最重要安全性技術資訊指標。
+以下是包含開發安全應用程式及設定安全環境相關資訊的所選取資源：
+
+[Microsoft 安全性](https://www.microsoft.com/security/default.aspx)&mdash;了解 Microsoft 運作方式，協助您使用 IT 專業人員、開發人員和家庭使用者安全性資源連結來保護應用程式和系統安全 (範圍從桌面到網路層級系統)。
+
+[MSDN 上的安全性資源](https://technet.microsoft.com/security/)&mdash;引導您前往用於開發安全應用程式的開發人員導向文件、程式碼範例、技術文章和其他資源。

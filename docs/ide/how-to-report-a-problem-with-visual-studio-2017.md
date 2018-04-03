@@ -1,10 +1,10 @@
 ---
-title: "如何回報 Visual Studio 2017 的問題 | Microsoft Docs"
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: 如何回報 Visual Studio 2017 的問題 | Microsoft Docs
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/28/2018
 
  選擇 [提交] 按鈕，連同任何影像、追蹤檔案或傾印檔案送出您的報表。 (如果 [提交] 按鈕呈現灰色，請確定您已提供報表的標題與描述。)
 
-## 其他回報方式 <a name="alternate_reporting"></a>
+## 回報替代方法 <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式回報問題
 
@@ -77,9 +77,9 @@ ms.lasthandoff: 02/28/2018
 
  ![您也可以按 Tab 移至 Visual Studio 安裝程式中的 [提供意見反應] 按鈕，以開啟意見反應工具](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>直接回報問題給 Visual Studio 開發人員社群
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>使用 Visual Studio 開發人員社群來搜尋問題和解決方案
 
-如果您不想要或無法使用 Visual Studio 來回報問題，您可以改為直接向 Visual Studio 開發人員社群回報問題。 如需詳細資訊，請參閱 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)頁面。
+如果您不想要或無法使用 Visual Studio 來回報問題，也可能是已回報該問題，且解決方案已張貼在 Visual Studio 開發人員社群中。 如需詳細資訊，請參閱 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)頁面。
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>提供產品意見反應或建議
 

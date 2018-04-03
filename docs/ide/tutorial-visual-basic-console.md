@@ -1,12 +1,12 @@
 ---
-title: "Visual Studio 中的 Visual Basic 使用者入門 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的 Visual Basic 使用者入門 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/08/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 使用者入門
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在您這麼做時探索 Visual Studio [整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
@@ -125,9 +125,9 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
     ![主控台視窗顯示 CaluculateThis 應用程式，其中包含提示要採取的動作。](../ide/media/vb-console-calculate-this.png)
 
-恭喜您完成此教學課程！
+## <a name="next-steps"></a>後續步驟
+恭喜您完成此教學課程！ 若要更深入了解 Visual Basic 和 Visual Studio IDE，請參閱下列頁面。
 
-## <a name="see-also"></a>另請參閱
 * [Visual Basic 指南](/dotnet/visual-basic/index)
 * [Visual Basic 的新功能](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense for Visual Basic 程式碼檔案](visual-basic-specific-intellisense.md)

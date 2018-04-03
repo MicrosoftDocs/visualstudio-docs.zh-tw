@@ -1,9 +1,7 @@
 ---
-title: "Live Unit Testing 常見問題集 | Microsoft Docs"
+title: Live Unit Testing 常見問題集 | Microsoft Docs
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **答：**
 
 若要了解從 Visual Studio 2017 15.3 版開始對 Live Unit Testing 進行的新功能和增強功能，請參閱 [Live Unit Testing 中的新功能](live-unit-testing-whats-new.md)。
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Live Unit Testing 支援哪些測試架構，而且支援的最低版本為何？
 
@@ -58,8 +55,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您的舊型 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，而且您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版。
 
-在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要執行此動作，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] 和 [重建方案])，或是在方案中還原封裝 (以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 封裝])。
-
+在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要還原套件，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] 和 [重建方案])，或是以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件])。
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Live Unit Testing 是否可以與 .NET Core 搭配使用？
 
@@ -73,11 +69,11 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 [輸出] 視窗 (選取 Live Unit Testing 下拉式清單時) 應該會告訴您為什麼 Live Unit Testing 不會運作。 Live Unit Testing 不會運作的可能原因如下：
 
-- 如果方案中之專案所參考的 NuGet 封裝尚未還原，Live Unit Testing 將不會運作。 在開啟 Live Unit Testing 之前明確地建置方案，或是還原方案中的 NuGet 封裝，應該就能解決此問題。
+- 如果方案中之專案所參考的 NuGet 封裝尚未還原，Live Unit Testing 將不會運作。 在開啟 Live Unit Testing 之前明確地建置方案，或是還原方案中的 NuGet 套件，應該就能解決此問題。
 
-- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 套件的參考，`MSTest.TestAdapter` (至少需要版本 1.1.11) 和 `MSTest.TestFramework` (至少需要版本 1.1.11)。 如需詳細資訊，請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 主題中的＜支援的測試架構＞一節。
+- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 套件的參考，`MSTest.TestAdapter` (至少需要版本 1.1.11) 和 `MSTest.TestFramework` (至少需要版本 1.1.11)。 如需詳細資訊，請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 文章中的＜支援的測試架構＞一節。
 
-- 您的方案中應該至少要有一個專案含有參考 xUnit、NUnit 或 MSTest 測試架構的 NuGet 參考或直接參考。 此專案應該也要參考對應的 Visual Studio 測試配接器 NuGet 封裝。 Visual Studio 測試配接器也可以透過 `.runsettings` 檔案來參考。 `.runsettings` 檔案必須具有類似下列項目的項目：
+- 您的方案中應該至少要有一個專案含有參考 xUnit、NUnit 或 MSTest 測試架構的 NuGet 參考或直接參考。 此專案應該也要參考對應的 Visual Studio 測試配接器 NuGet 封裝。 Visual Studio 測試配接器也可以透過 `.runsettings` 檔案來參考。 `.runsettings` 檔案必須具有類似下列範例的項目：
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>為什麼您將 Visual Studio 專案中參考的測試配接器升級到支援版本之後，Live Unit Testing 顯示不正確的涵蓋範圍？
 
@@ -174,7 +170,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 **答：**
 
-請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) 主題中的＜包含和排除測試專案與測試方法＞一節，以了解使用者特定的設定。 若您想要針對特定的編輯工作階段執行一組特定的測試，或保存您個人的喜好設定，這非常有用。
+請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) 文章中的＜包含和排除測試專案與測試方法＞一節，以了解使用者特有的設定。 若您想要針對特定的編輯工作階段執行一組特定的測試，或保存您個人的喜好設定，這非常有用。
  
 針對方案特定的設定，您可以以程式設計方式套用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 屬性，以排除方法、屬性、類別或結構，使 Live Unit Testing 不會檢測它們。 此外，您也可以在專案檔中將 `<ExcludeFromCodeCoverage>` 屬性設為 `true`，以排除對整個專案的檢測。 Live Unit Testing 仍然會執行尚未檢測的測試，但不會將它們的涵蓋範圍視覺化。
 
@@ -203,7 +199,7 @@ public class Class1
 
 **答：**
 
-此問題已修正，而且不存在於 Visual Studio 2017 版本 15.3 中。 請升級為這版的 Visual Studio。
+此問題已修正，且已不存在於 Visual Studio 2017 15.3 版中。 請升級至此版本的 Visual Studio。
 
 在舊版 Visual Studio 2017 中，有一個已知 Bug 可能會造成 Live Unit Testing 組建無法內嵌下列 Win32 PE 標頭資料：
 
