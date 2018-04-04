@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Test Agent 2017 工作負載和元件識別碼 | Microsoft Docs"
-description: "使用 Visual Studio 工作負載和元件識別碼，遠端執行自動化測試和負載測試"
-keywords: 
+title: Visual Studio Test Agent 2017 工作負載和元件識別碼 | Microsoft Docs
+description: 使用 Visual Studio 工作負載和元件識別碼，遠端執行自動化測試和負載測試
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1cff04fcfb117c1b387ab1b16c5494fb561e86
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: d72e80ecdb0be54f653fd2f89deee3bc8a882356
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 元件目錄
 

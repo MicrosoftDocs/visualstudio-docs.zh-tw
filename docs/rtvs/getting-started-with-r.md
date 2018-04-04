@@ -1,26 +1,26 @@
 ---
-title: "Visual Studio 中的 R 使用者入門 | Microsoft Docs"
-description: "在 Visual Studio 中使用 R 的逐步解說，包括專案建立、互動式視窗、程式碼編輯和偵錯。"
-ms.custom: 
+title: Visual Studio 中的 R 使用者入門 | Microsoft Docs
+description: 在 Visual Studio 中使用 R 的逐步解說，包括專案建立、互動式視窗、程式碼編輯和偵錯。
+ms.custom: ''
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 202fd9d7d644eabf9962d68f83d3daa0ab854005
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1a76b5df7a85fa86d6f0597be2f0316a4960b6ec
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 

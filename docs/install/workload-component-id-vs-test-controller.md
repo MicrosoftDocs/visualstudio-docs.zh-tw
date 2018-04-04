@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Test Controller 2017 工作負載和元件識別碼 | Microsoft Docs"
-description: "使用 Visual Studio 工作負載和元件識別碼將自動化測試散發到多部電腦"
-keywords: 
+title: Visual Studio Test Controller 2017 工作負載和元件識別碼 | Microsoft Docs
+description: 使用 Visual Studio 工作負載和元件識別碼將自動化測試散發到多部電腦
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 762965614ba96c33d73c1243f2e8f1f80b96b1d2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 8b2787042e39653017013d07d5ff5f9153627297
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 元件目錄
 

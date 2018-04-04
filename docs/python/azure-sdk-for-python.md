@@ -10,7 +10,7 @@ ms.technology:
 dev_langs:
 - python
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 3f03ca08dddb90f6eb86a439f7f92307df3b4335
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 

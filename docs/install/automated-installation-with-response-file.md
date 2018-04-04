@@ -1,26 +1,28 @@
 ---
-title: "使用回應檔自動安裝 Visual Studio | Microsoft Docs"
-description: "了解如何建立可協助您自動化 Visual Studio 安裝的 JSON 回應檔"
+title: 使用回應檔自動安裝 Visual Studio | Microsoft Docs
+description: 了解如何建立可協助您自動化 Visual Studio 安裝的 JSON 回應檔
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8bb0cfca6efe913b38a94daf0ed846699f0266cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 部署 Visual Studio 的系統管理員可以使用 `--in` 參數指定回應檔，如下列範例所示：

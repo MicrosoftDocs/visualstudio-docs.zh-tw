@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Build Tools 2017 工作負載和元件識別碼 | Microsoft Docs"
-description: "使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式"
-keywords: 
+title: Visual Studio Build Tools 2017 工作負載和元件識別碼 | Microsoft Docs
+description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 415ad88d9ef51a5002c7e64dcd4abf76f97167c3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 元件目錄
 
@@ -68,7 +68,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27
 
 **識別碼：** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**描述：**使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。 
+**描述：**使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

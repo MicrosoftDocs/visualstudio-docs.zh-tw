@@ -1,6 +1,6 @@
 ---
 title: 在 Visual Studio 中使用規則運算式 | Microsoft Docs
-ms.custom: 03/26/2018
+ms.date: 03/26/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,8 +17,8 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 37d8dca622fd5af546971b1c8d3451b27c183584
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/28/2018

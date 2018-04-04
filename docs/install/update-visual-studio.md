@@ -1,27 +1,27 @@
 ---
-title: "更新 Visual Studio 2017 | Microsoft Docs"
-description: "了解如何逐步更新 Visual Studio。"
+title: 更新 Visual Studio 2017 | Microsoft Docs
+description: 了解如何逐步更新 Visual Studio。
 ms.date: 03/06/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - update Visual Studio
 - change visual studio
 - changing Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fc3df0806bf703385099647d2f92cfa2236051
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: aa2e4e46fb2e4d51c83a559bbb9cda58d636e69a
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 

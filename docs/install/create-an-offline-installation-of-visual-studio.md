@@ -1,14 +1,14 @@
 ---
-title: "建立 Visual Studio 的離線安裝 | Microsoft Docs"
-description: "了解如何離線安裝 Visual Studio。"
-ms.custom: 
+title: 建立 Visual Studio 的離線安裝 | Microsoft Docs
+description: 了解如何離線安裝 Visual Studio。
+ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
 - offline install [Visual Studio]
@@ -16,14 +16,14 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9badba3247846ce63b79d48da7482ff0c58b693
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 116e1821575b1a5e4e95e43eed0f175d85e9278f
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
 
