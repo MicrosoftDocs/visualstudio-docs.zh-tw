@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  裝置或伺服器電腦，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的版本的遠端工具。
 
     |版本|連結|注意|
     |-|-|-|
-    |Visual Studio 2017 （最新版）|[遠端工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|一律會下載符合您的裝置作業系統 （x86 或 x64） 的版本。 如果已啟用增強式的安全性模式 (Windows Server)，您必須加入新的受信任站台，如果出現提示。|
+    |Visual Studio 2017 （最新版）|[遠端工具](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|一律會下載符合您的裝置作業系統 （x86 或 x64） 的版本。 如果已啟用增強式的安全性模式 (Windows Server)，您必須加入新的受信任站台，如果出現提示。|
     |Visual Studio 2017 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|My.VisualStudio.com 遠端工具的 Visual Studio 2017 較早的版本可用。如果出現提示，聯結的免費 Visual Studio Dev Essentials 群組或使用 Visual Studio 訂用帳戶登入識別碼。 如果已啟用增強式的安全性模式 (Windows Server)，您必須加入新的受信任站台，如果出現提示。|
     |Visual Studio 2015 Update 3|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，聯結的免費 Visual Studio Dev Essentials 群組或使用 Visual Studio 訂用帳戶登入識別碼。 如果已啟用增強式的安全性模式 (Windows Server)，您必須加入新的受信任站台，如果出現提示。|
     |Visual Studio 2015 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，聯結的免費 Visual Studio Dev Essentials 群組或使用 Visual Studio 訂用帳戶登入識別碼。 如果已啟用增強式的安全性模式 (Windows Server)，您必須加入新的受信任站台，如果出現提示。|

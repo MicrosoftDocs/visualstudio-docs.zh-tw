@@ -1,9 +1,6 @@
 ---
-title: "隱藏在 Visual Studio 中的程式碼分析警告 |Microsoft 文件"
-ms.custom: 
+title: 隱藏在 Visual Studio 中的程式碼分析警告 |Microsoft 文件
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>隱藏程式碼分析警告
+# <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
 通常會很有用，表示警告不適用。 這表示此程式碼的檢閱，而且可以隱藏警告的小組成員。 來源隱藏項目 (ISS) 使用<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性來隱藏的警告。 屬性可以放接近產生警告的程式碼片段。 您可以加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性設定為原始程式檔中，輸入您可以使用捷徑功能表中的警告或**錯誤清單**自動將它加入。
 
@@ -94,7 +91,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 為了可維護性，不建議省略規則名稱。
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>隱藏方法主體中的選擇性違規
+## <a name="suppress-selective-violations-within-a-method-body"></a>隱藏方法主體中的選擇性違規
 
 隱藏項目屬性可以套用至方法，但不可以內嵌在方法主體。 這表示會抑制所有特定規則的違規，如果您將加入<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>屬性加入方法。
 
@@ -160,7 +157,7 @@ Managed 程式碼分析工具會檢查`SuppressMessage`會套用到組件、 模
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`一定會包含完整項目名稱。
+> `Target` 一定會包含完整項目名稱。
 
 ## <a name="global-suppression-file"></a>全域隱藏項目檔
 
@@ -168,4 +165,5 @@ Managed 程式碼分析工具會檢查`SuppressMessage`會套用到組件、 模
 
 ## <a name="see-also"></a>另請參閱
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)

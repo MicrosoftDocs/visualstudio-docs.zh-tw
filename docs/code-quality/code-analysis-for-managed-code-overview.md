@@ -1,12 +1,8 @@
 ---
-title: "程式碼分析，Managed 程式碼的概觀 |Microsoft 文件"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: 程式碼分析在 Visual Studio 中的 managed 程式碼 |Microsoft 文件
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>程式碼分析 managed 程式碼的概觀
+# <a name="overview-of-code-analysis-for-managed-code"></a>Managed 程式碼的程式碼分析概觀
+
+Visual Studio 2017 分析 managed 程式碼有兩種： 與舊版*FxCop*靜態分析 managed 組件，並使用.NET 編譯器平台*分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要了解有關使用.NET 編譯器平台分析器來分析程式碼的詳細資訊，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組件的資訊，例如是否違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
 
@@ -76,5 +74,6 @@ Public class MyClass
 
 ## <a name="see-also"></a>另請參閱
 
-[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Roslyn 分析器的概觀](../code-quality/roslyn-analyzers-overview.md)
+- [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
