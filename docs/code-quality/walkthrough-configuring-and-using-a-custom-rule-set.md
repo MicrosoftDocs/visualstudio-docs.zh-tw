@@ -1,9 +1,9 @@
 ---
-title: "逐步解說： 設定及使用自訂規則集 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 設定及使用自訂規則集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -15,10 +15,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 
