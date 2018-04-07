@@ -1,10 +1,11 @@
 ---
-title: 如何： 設定 Managed 程式碼專案的程式碼分析 |Microsoft 文件
-ms.date: 11/04/2016
+title: 設定 Visual Studio 中的程式碼分析 |Microsoft 文件
+ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
+- vs.codeanalysis.propertypages.solution
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46d41b09f0f6639195613c8a4d9a08f952c79525
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: daac3af3a6d5d5fba4d6e8dbb652821583769762
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：設定 Managed 程式碼專案的程式碼分析
 
@@ -49,9 +50,28 @@ ms.lasthandoff: 04/03/2018
 
     - 選取**\<瀏覽 >** ，尋找現有的自訂規則集不在清單中。
 
-    - 定義自訂規則集。 如需詳細資訊，請參閱[建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。
+    - 定義[自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)。
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>在方案中指定多個專案的規則集
+
+根據預設，會指派方案的所有 managed 的專案*Microsoft 最小建議規則*程式碼分析規則集。 您可以變更指派給專案的方案中的規則集**屬性**解決方案的對話方塊。
+
+1. 在 Visual Studio 中開啟方案。
+
+2. 在**分析**功能表上，選取**設定方案的程式碼分析**。
+
+3. 如果有必要，請展開**通用屬性**，然後選取**程式碼分析設定**。
+
+4. 您可以指定規則集的一個或多個專案：
+
+    - 若要指定個別的專案中設定的規則，請選取專案名稱。
+
+    - 若要指定規則集的多個專案，請按住**Ctrl**和選取的專案名稱。
+
+    - 若要指定方案中的所有專案，請按住**Shift** ，然後按一下 [專案] 清單中。
+
+5. 選取**規則集**專案時，欄位，然後選取設定您想要套用規則的名稱。
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：設定和使用自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
 - [如何：設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

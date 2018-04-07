@@ -2,7 +2,7 @@
 title: 在 Visual Studio 中的程式碼分析規則集 |Microsoft 文件
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -12,19 +12,54 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 837ba95fc50ac32855889c4eca9010712906e646
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
-當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集是識別目標的問題和的特定狀況的程式碼分析規則的邏輯群組。 比方說，您可以將套用的規則集是設計用來掃描程式碼公開可用的應用程式開發介面，或您可以套用包含只有最小建議規則規則集。 您也可以套用的規則集包含的所有規則。
+當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集套用至專案，並是一群的程式碼分析規則，識別目標的問題以及該專案的特定條件。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或最小建議規則。 您也可以套用的規則集包含的所有規則。
 
-您可以自訂規則集中加入或刪除規則，或變更規則的重要性顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足特定的開發環境的需要。 當您自訂規則集時，規則設定頁面會提供搜尋和篩選工具，可協助您在程序中。
+您可以自訂規則集中加入或刪除規則，或變更規則的重要性顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足特定的開發環境的需要。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序中。
+
+## <a name="rule-set-format"></a>規則集格式
+
+中的 XML 格式中指定的規則集*.ruleset*檔案。 包含識別碼的規則和*動作*，依分析器 ID 和檔案中的命名空間加以分組。
+
+XML 內容*.ruleset*檔案看起來類似這樣：
+
+```xml
+<RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="HelloWorldRules_Name" />
+    <Description Resource="HelloWorldRules_Description" />
+  </Localization>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1009" Action="Warning" />
+    <Rule Id="CA1016" Action="Warning" />
+    <Rule Id="CA1033" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1802" Action="Error" />
+    <Rule Id="CA1814" Action="Info" />
+    <Rule Id="CA1823" Action="None" />
+    <Rule Id="CA2217" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+> [!TIP]
+> 更輕鬆地[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)圖形**規則集編輯器**比以手動方式。
+
+規則集的專案由指定`CodeAnalysisRuleSet`Visual Studio 專案檔中的屬性。 例如: 
+
+```xml
+<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+```
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 設定自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-- [程式碼分析規則集參考](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)
+- [程式碼分析規則集參考](../code-quality/rule-set-reference.md)
