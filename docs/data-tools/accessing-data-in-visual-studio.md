@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -109,7 +109,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 ## <a name="python"></a>Python
 
-安裝[Python 支援 Visual Studio 中](../python/python-in-visual-studio.md)建立 Python 應用程式。 Azure 文件已在連接到資料，包括下列幾個教學課程：
+安裝[Python 支援 Visual Studio 中](../python/overview-of-python-tools-for-visual-studio.md)建立 Python 應用程式。 Azure 文件已在連接到資料，包括下列幾個教學課程：
 
 - [如 Django 和 Azure 上的 SQL 資料庫](/azure/app-service/app-service-web-get-started-python)
 - [如 Django 和 Azure 上 MySQL](/azure/app-service-web/web-sites-python-ptvs-django-mysql)

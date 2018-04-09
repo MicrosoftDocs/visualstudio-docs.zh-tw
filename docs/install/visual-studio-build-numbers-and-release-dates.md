@@ -4,20 +4,20 @@ description: 已發行的 Visual Studio 2017 版本和組建編號清單 (依日
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
 ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: bd209ce81800bd289a36e469fb23e6eec0dd008e
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: d036abe3aa3b6e348eae7f0045b30144900255fd
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 

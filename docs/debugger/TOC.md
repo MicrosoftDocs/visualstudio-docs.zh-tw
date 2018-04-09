@@ -7,7 +7,7 @@
 ## [偵錯 ASP.NET 應用程式](quickstart-debug-aspnet.md)
 # 教學課程
 ## [了解使用 Visual Studio 進行偵錯](getting-started-with-the-debugger.md)
-## [在偵錯工具中執行 Python 程式碼...](../python/vs-tutorial-01-04.md)
+## [在偵錯工具中執行 Python 程式碼...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [對即時 Azure 應用程式進行偵錯](debug-live-azure-applications.md)
 ## [使用 IntelliTrace 倒退檢視快照](how-to-use-intellitrace-step-back.md)
 # 作法指南
