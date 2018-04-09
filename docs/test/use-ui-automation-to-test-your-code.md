@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 992bd55fdc83757f9edacb00f31580f7efaab8cb
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 4424db170240714ad3a74c84107e7a794a9dad54
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -45,26 +45,29 @@ ms.lasthandoff: 03/19/2018
 
 ## <a name="create-coded-ui-tests"></a>建立自動程式化 UI 測試
 
+1. 安裝**自動程式化 UI 測試**元件。
+
+   如果尚未安裝，請安裝 Visual Studio 的**自動程式化 UI 測試**元件。 選擇 [工具] > [取得工具和功能] 以啟動 **Visual Studio 安裝程式**。 在 **Visual Studio 安裝程式**中，選擇 [個別元件] 索引標籤，然後向下捲動至 [偵錯和測試] 區段。 選取 [自動程式化 UI 測試]元件，並選擇 [修改]。
+
+   ![自動程式化 UI 測試元件](media/coded-ui-test-component.png)
+
 1. 建立自動程式化 UI 測試專案
 
-   自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 在 [方案總管] 的方案捷徑功能表上，依序選擇 [新增] > [新增專案]，然後選取 [Visual Basic] 或 [Visual C#]。 接著，依序選擇 [測試] > [自動程式化 UI 測試]。
+   自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 選擇 [檔案] > [新增] > [專案] 以開啟 [新增專案] 對話方塊。 在左邊的 [類別] 窗格中，依序展開 [已安裝] > [Visual Basic] 或者 [Visual C#] > [測試]。 選取 [自動程式化 UI 測試專案] 範本，然後選擇 [確定]。
 
-   > [!TIP]
-   > 如果您看不到 [自動程式化 UI 測試] 專案範本，您使用的 Visual Studio 版本可能不支援自動程式化 UI 測試。 若要建立自動程式化 UI 測試，您必須使用 Visual Studio Enterprise 版。
+   ![[新增專案] 對話方塊中的 [自動程式化 UI 測試專案] 範本](media/coded-ui-test-project-template.png)
 
 2. 加入自動程式化 UI 測試檔案。
 
-     如果您剛剛建立自動程式碼 UI 專案，則自動加入第一個 CUIT 檔案。 若要加入另一個測試檔案，請在自動程式化 UI 測試專案上開啟捷徑功能表，並指向 [加入]，然後選擇 [自動程式化 UI 測試]。
-
-     ![建立自動程式化 UI 測試](../test/media/codedui_create.png "CodedUI_Create")
+     如果您剛剛建立自動程式碼 UI 專案，則自動加入第一個 CUIT 檔案。 若要加入另一個測試檔案，請在 [方案總管] 中的自動程式化 UI 測試專案上開啟捷徑功能表，然後選擇 [新增] > [自動程式化 UI 測試]。
 
      在 [產生自動程式化 UI 測試的程式碼] 對話方塊中，選擇 [錄製動作、編輯 UI 對應或加入判斷提示]。
 
-     ![選取錄製動作](../test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")
+     ![[產生自動程式化 UI 測試的程式碼] 對話方塊](media/generate-code-for-coded-ui-test.png)
 
-     [自動程式化 UI 測試產生器] 隨即顯示，並將 Visual Studio 最小化。
+     自動程式化 UI 測試產生器隨即出現。
 
-     ![自動程式化 UI 測試產生器](../test/media/codedui_testbuilder.png "CodedUI_TestBuilder")
+     ![自動程式化 UI 測試產生器](../test/media/codedui_testbuilder.png)
 
 3. 錄製一連串的動作。
 
@@ -168,7 +171,7 @@ ms.lasthandoff: 03/19/2018
 
 若要產生您判斷提示的程式碼，並將控制項加入至 UI 對應，請選擇 [產生程式碼] 圖示。 輸入您自動程式化 UI 測試方法的名稱以及該方法的描述，這些將加入為該方法的註解。 選擇 [加入並產生]。 接下來，選擇 [關閉] 圖示關閉 [自動程式化 UI 測試產生器]。 這樣會產生與下列程式碼類似的程式碼。 例如，如果您輸入的名稱是 `AssertForAddTwoNumbers`，則程式碼會與此範例類似：
 
--   將判斷提示方法 AssertForAddTwoNumbers 呼叫加入至您自動程式碼 UI 測試檔案中的測試方法：
+- 將判斷提示方法 AssertForAddTwoNumbers 呼叫加入至您自動程式碼 UI 測試檔案中的測試方法：
 
     ```csharp
     [TestMethod]
@@ -181,7 +184,7 @@ ms.lasthandoff: 03/19/2018
 
      您可以編輯此檔案以變更步驟和判斷提示的順序，或是建立新的測試方法。 若要加入更多程式碼，請將游標放在測試方法上，並在捷徑功能表上選擇 [產生自動程式化 UI 測試的程式碼]。
 
--   將稱為 `AssertForAddTwoNumbers` 的方法加入至 UI 對應 (UIMap.uitest)。 此檔案會在自動程式化 UI 測試編輯器中開啟，而您可以在此編輯器中編輯判斷提示。
+- 將稱為 `AssertForAddTwoNumbers` 的方法加入至 UI 對應 (UIMap.uitest)。 此檔案會在自動程式化 UI 測試編輯器中開啟，而您可以在此編輯器中編輯判斷提示。
 
      ![使用自動程式化 UI 測試編輯器編輯判斷提示](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")
 
@@ -226,7 +229,7 @@ ms.lasthandoff: 03/19/2018
 Mouse.Hover(uIItem1Text, new Point(87, 9));
 ```
 
-#### <a name="configuring-mouse-hover-keyboard-assignments"></a>設定滑鼠停留鍵盤指派
+#### <a name="configure-mouse-hover-keyboard-assignments"></a>設定滑鼠停留鍵盤指派
 
 如果在我環境的其他位置中正在使用用於擷取滑鼠停留事件的按鍵指派：
 
@@ -269,35 +272,35 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 在您建立自動程式化 UI 測試之後，就可以在 Visual Studio 中使用下列任何工具對其進行編輯：
 
--   **自動程式化 UI 測試產生器：**使用自動程式化 UI 測試產生器，將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
+- **自動程式化 UI 測試產生器：**使用自動程式化 UI 測試產生器，將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
 
--   **自動程式化 UI 測試編輯器：**自動程式化 UI 測試編輯器可讓您輕鬆地修改自動程式化 UI 測試。 您可以使用自動程式化 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+- **自動程式化 UI 測試編輯器：**自動程式化 UI 測試編輯器可讓您輕鬆地修改自動程式化 UI 測試。 您可以使用自動程式化 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
--   **程式碼編輯器：**
+- **程式碼編輯器：**
 
-    -   手動加入您測試中控制項的程式碼 (如本主題的[編寫 UI 控制項動作和屬性的程式碼](#VerifyingCodeCUITActionsandProperties)小節所述)。
+    - 手動加入您測試中控制項的程式碼 (如本主題的[編寫 UI 控制項動作和屬性的程式碼](#VerifyingCodeCUITActionsandProperties)小節所述)。
 
-    -   在您建立自動程式化 UI 測試之後，就可以將它修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
+    - 在您建立自動程式化 UI 測試之後，就可以將它修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    -   在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+    - 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
-    -   自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
+    - 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
 
-    -   **自動程式化 UI 測試編寫指導：**
+    - 自動程式化 UI 測試編寫指導：
 
-        -   [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
+       - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
 
-        -   [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+       - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-        -   [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        -   [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>產生的程式碼
 
 當您選擇 [產生程式碼] 時，會建立數段程式碼：
 
--   **測試方法中的行。**
+- **測試方法中的行。**
 
     ```csharp
     [CodedUITest]
@@ -316,7 +319,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
      您也可以加入新的測試方法，以及使用相同的方式在其中加入程式碼。 每種測試方法都必須要有 `[TestMethod]` 屬性。
 
--   **UIMap.uitest 中的方法**
+- **UIMap.uitest 中的方法**
 
      此方法包括您所錄製的動作或所驗證值的詳細資料。 您可以開啟 UIMap.uitest 來編輯此程式碼。 它會在特殊編輯器中開啟，而您可以在其中刪除或重構所錄製動作。
 
@@ -335,9 +338,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     ```
 
     > [!WARNING]
-    >您不應該編輯此檔案，因為它會在您建立其他測試時重新產生。
+    > 您不應該編輯此檔案，因為它會在您建立其他測試時重新產生。
 
-     您可以將這些方法複製至 UIMap.cs，以建立這些方法的調整版本。 例如，您可以建立可從測試方法呼叫的參數化版本：
+     您可以將這些方法複製至 *UIMap.cs*，以建立這些方法的調整版本。 例如，您可以建立可從測試方法呼叫的參數化版本：
 
     ```csharp
     // File: UIMap.cs
@@ -352,33 +355,33 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     }
     ```
 
--   **UIMap.uitest 中的宣告**
+- **UIMap.uitest 中的宣告**
 
-     這些宣告代表您測試所使用之應用程式的 UI 控制項。 產生的程式碼會使用它們來操作控制項以及存取其屬性。
+    這些宣告代表您測試所使用之應用程式的 UI 控制項。 產生的程式碼會使用它們來操作控制項以及存取其屬性。
 
-     如果您撰寫專屬程式碼，則也可以使用它們。 例如，您可以讓測試方法選擇 Web 應用程式中的超連結、在文字方塊中輸入值，或分出分支，並根據欄位中的值採取不同的測試動作。
+    如果您撰寫專屬程式碼，則也可以使用它們。 例如，您可以讓測試方法選擇 Web 應用程式中的超連結、在文字方塊中輸入值，或分出分支，並根據欄位中的值採取不同的測試動作。
 
-     您可以加入多個自動程式化 UI 測試以及多個 UI 對應物件和檔案，以促進測試大型應用程式。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
+    您可以加入多個自動程式化 UI 測試以及多個 UI 對應物件和檔案，以促進測試大型應用程式。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
- 如需產生的程式碼的詳細資訊，請參閱[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
+如需產生的程式碼的詳細資訊，請參閱[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
 ### <a name="code-ui-control-actions-and-properties"></a>程式碼 UI 控制項動作和屬性
 
 當您在自動程式化 UI 測試中使用 UI 測試控制項時，UI 測試控制項分成兩個部分：動作和屬性。
 
--   第一個部分包含您可以對 UI 測試控制項執行的動作。 例如，自動程式碼 UI 測試可以在 UI 測試控制項上模擬按一下滑鼠，或模擬在鍵盤上鍵入的按鍵來影響 UI 測試控制項。
+- 第一個部分包含您可以對 UI 測試控制項執行的動作。 例如，自動程式碼 UI 測試可以在 UI 測試控制項上模擬按一下滑鼠，或模擬在鍵盤上鍵入的按鍵來影響 UI 測試控制項。
 
--   第二個部分包含可讓您在 UI 測試控制項上取得和設定屬性。 例如，自動程式碼 UI 測試可以取得 `ListBox` 中的項目計數，或將 `CheckBox` 設定為選取的狀態。
+- 第二個部分包含可讓您在 UI 測試控制項上取得和設定屬性。 例如，自動程式碼 UI 測試可以取得 `ListBox` 中的項目計數，或將 `CheckBox` 設定為選取的狀態。
 
 **存取 UI 測試控制項的動作**
 
 若要對 UI 測試控制項執行動作 (例如按一下滑鼠或鍵盤動作)，請在 <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> 類別中使用方法：
 
--   若要執行滑鼠導向的動作 (例如按一下滑鼠)，請在 UI 測試控制項上使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>。
+- 若要執行滑鼠導向的動作 (例如按一下滑鼠)，請在 UI 測試控制項上使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>。
 
      `Mouse.Click(buttonCancel);`
 
--   若要執行滑鼠導向的動作 (例如按一下滑鼠)，請在 UI 測試控制項上使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>。
+- 若要執行滑鼠導向的動作 (例如按一下滑鼠)，請在 UI 測試控制項上使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>。
 
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`
 
@@ -390,7 +393,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 #### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>直接從 UI 測試控制項取得或設定屬性
 
-使用衍生自 T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl 的控制項 (例如 T:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList 或 T:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)，您可以直接取得或設定其屬性值，如下所示：
+您可以使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> 的控制項 (例如 [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) 或 [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx))，直接取得或設定其屬性值。 下列程式碼提供了一些範例：
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -399,11 +402,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 #### <a name="to-get-properties-from-ui-test-controls"></a>從 UI 測試控制項取得屬性
 
--   若要從控制項取得屬性值，請使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>。
+- 若要從控制項取得屬性值，請使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>。
 
--   若要指定要取得的控制項的屬性，請將來自每個控制項中 `PropertyNames` 類別的適當字串當成 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> 的參數使用。
+- 若要指定要取得的控制項的屬性，請將來自每個控制項中 `PropertyNames` 類別的適當字串當成 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> 的參數使用。
 
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> 會傳回適當的資料類型，但是此傳回值會轉換為 <xref:System.Object>。 傳回 <xref:System.Object> 接著必須轉換為適當的類型。
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> 會傳回適當的資料類型，但是此傳回值會轉換為 <xref:System.Object>。 傳回 <xref:System.Object> 接著必須轉換為適當的類型。
 
      範例：
 
@@ -411,9 +414,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 #### <a name="to-set-properties-for-ui-test-controls"></a>設定 UI 測試控制項的屬性
 
--   若要設定控制項中的屬性，請使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>。
+- 若要設定控制項中的屬性，請使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>。
 
--   若要指定要設定的控制項的屬性，請將來自 `PropertyNames` 類別的適當字串當成 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> 的第一個參數使用，而屬性值當成第二個參數使用。
+- 若要指定要設定的控制項的屬性，請將來自 `PropertyNames` 類別的適當字串當成 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> 的第一個參數使用，而屬性值當成第二個參數使用。
 
      範例：
 
@@ -427,17 +430,17 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 **執行自動程式化 UI 測試的其他選項：**您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您也可以從 Microsoft Test Manager，或從 Team Foundation Build 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
 
--   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
+- [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 
--   [在建置流程中執行測試](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [在建置流程中執行測試](/vsts/build-release/test/getting-started-with-continuous-testing)
 
--   [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **加入自訂控制項的支援：**自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
 
--   [啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)
+- [啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)
 
--   [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
 自動程式化 UI 測試經常用來自動化手動測試。 如需手動測試的詳細資訊，請參閱[使用 Microsoft Test Manager 執行手動測試](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager)。 如需自動化測試的詳細資訊，請參閱 [Visual Studio 中的測試工具](../test/improve-code-quality.md)。
 

@@ -8,11 +8,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/19/2018
 
 測試執行時，視訊資料收集器會擷取螢幕錄製。 這份錄製可用於 UI 測試的疑難排解。 視訊資料收集器在 **Visual Studio 2017 15.5** 版及更新版本中提供。
 
-若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。
+若要自訂任何其他類型的診斷資料配接器，您必須使用[測試設定檔](../test/collect-diagnostic-information-using-test-settings.md)。
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
