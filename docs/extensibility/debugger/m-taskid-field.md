@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3b32a56ed4a9e9c80618e52ff185b26aca1f7a4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mtaskid-field"></a>m_taskId 欄位
 支援欄位的<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。  
   
- **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll)  
   
@@ -40,5 +40,5 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

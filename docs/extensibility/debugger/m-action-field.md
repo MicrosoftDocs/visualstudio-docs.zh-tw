@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: c9d5a55f7e91b22a5b9a867991acbfe404a660fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="maction-field"></a>m_action 欄位
 委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。  
   
- **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll)  
   
@@ -41,5 +41,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="remarks"></a>備註  
  這是`action`中的參數<xref:System.Threading.Tasks.Task.%23ctor%2A>建構函式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

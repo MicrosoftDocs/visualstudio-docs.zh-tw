@@ -22,10 +22,10 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 Windows Form 的應用程式設定可讓您輕鬆地建立、 儲存和維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件說明應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及如何 ClickOnce 移轉設定時使用者升級至下一個版本。  
@@ -58,7 +58,7 @@ Windows Form 的應用程式設定可讓您輕鬆地建立、 儲存和維護自
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce 和漫遊設定  
  ClickOnce 不適用於漫遊設定，可讓您遵循您在電腦之間網路上的設定檔。 如果您需要漫遊設定，您必須要實作應用程式設定提供者儲存設定，透過網路或開發您自己的自訂設定類別，在遠端電腦上儲存設定。 如需設定提供者中的詳細資訊，請參閱[應用程式設定架構](/dotnet/framework/winforms/advanced/application-settings-architecture)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [應用程式設定概觀](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce 快取概觀](../deployment/clickonce-cache-overview.md)   

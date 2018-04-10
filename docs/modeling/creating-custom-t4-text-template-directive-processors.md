@@ -1,9 +1,9 @@
 ---
-title: "建立自訂 T4 文字範本指示詞處理器 |Microsoft 文件"
-ms.custom: 
+title: 建立自訂 T4 文字範本指示詞處理器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -14,17 +14,17 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 *文字範本轉換流程*採用*文字範本*做為輸入和產生的文字檔做為輸出的檔案。 *文字範本轉換引擎*控制項與文字範本轉換主應用程式和一個或多個文字範本互動的處理程序和引擎*指示詞處理器*完成程序。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
  若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。  
   
- 在這兩者之間的差異在於<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>實作取得使用者的參數，並產生產生範本輸出檔案的程式碼所需的最低介面。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>實作要求/提供設計模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>處理特殊的兩個參數，`requires`和`provides`。  例如，自訂指示詞處理器可能會接受來自使用者開啟的檔案名稱讀取的檔案，然後儲存檔案的文字中的變數，名為`fileText`。 子類別<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>類別可能需要從使用者檔案名稱的值為`requires`參數，以及用來儲存文字做為值的變數名稱`provides`參數。 此處理器會開啟和讀取檔案，然後將檔案的文字儲存在指定的變數。  
+ 在這兩者之間的差異在於<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>實作取得使用者的參數，並產生產生範本輸出檔案的程式碼所需的最低介面。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 實作要求/提供設計模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 處理特殊的兩個參數，`requires`和`provides`。  例如，自訂指示詞處理器可能會接受來自使用者開啟的檔案名稱讀取的檔案，然後儲存檔案的文字中的變數，名為`fileText`。 子類別<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>類別可能需要從使用者檔案名稱的值為`requires`參數，以及用來儲存文字做為值的變數名稱`provides`參數。 此處理器會開啟和讀取檔案，然後將檔案的文字儲存在指定的變數。  
   
  在呼叫自訂指示詞處理器中的文字範本之前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您必須註冊它。  
   
@@ -50,17 +50,17 @@ ms.lasthandoff: 02/09/2018
   
  最重要`DirectiveProcessor`必須實作的方法是，如下所示。  
   
--   `bool IsDirectiveSupported(string directiveName)`-傳回`true`如果具名指示詞可處理指示詞處理器。  
+-   `bool IsDirectiveSupported(string directiveName)` -傳回`true`如果具名指示詞可處理指示詞處理器。  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-範本引擎會呼叫這個方法，針對每個範本中的指示詞。 結果應該儲存您的處理器。  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -範本引擎會呼叫這個方法，針對每個範本中的指示詞。 結果應該儲存您的處理器。  
   
  只有將所有呼叫之後，範本化引擎會呼叫這些方法：  
   
--   `string[] GetReferencesForProcessingRun()`-傳回範本程式碼所需的組件的名稱。  
+-   `string[] GetReferencesForProcessingRun()` -傳回範本程式碼所需的組件的名稱。  
   
--   `string[] GetImportsForProcessingRun()`-傳回可用的命名空間中的範本程式碼。  
+-   `string[] GetImportsForProcessingRun()` -傳回可用的命名空間中的範本程式碼。  
   
--   `string GetClassCodeForProcessingRun()`-傳回碼的方法、 屬性和範本程式碼可以使用其他宣告。 若要這樣做最簡單的方式是建立包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您為 CodeDom 樹狀結構建構陳述式，然後傳回結果的序列化範本所使用的語言中的樹狀結構。  
+-   `string GetClassCodeForProcessingRun()` -傳回碼的方法、 屬性和範本程式碼可以使用其他宣告。 若要這樣做最簡單的方式是建立包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您為 CodeDom 樹狀結構建構陳述式，然後傳回結果的序列化範本所使用的語言中的樹狀結構。  
   
 -   如需詳細資訊，請參閱[逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   

@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags 欄位 |Microsoft 文件
+title: m_stateFlags Field | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -18,15 +18,15 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 90fd3f602e94379f1f2031cb53a5c9508df1d191
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 欄位
 儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。  
   
- **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll)  
   
@@ -53,5 +53,5 @@ ms.lasthandoff: 12/22/2017
   
 -   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

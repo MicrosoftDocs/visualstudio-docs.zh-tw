@@ -1,12 +1,12 @@
 ---
-title: "Ca1036： 必須覆寫方法在 comparable 類型 |Microsoft 文件"
-ms.custom: 
+title: Ca1036： 必須覆寫方法在 comparable 類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - CA1036
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: 
+caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：必須在 Comparable 類型中覆寫方法
 |||  
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/01/2018
   
  [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IComparable?displayProperty=fullName>   
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
  [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

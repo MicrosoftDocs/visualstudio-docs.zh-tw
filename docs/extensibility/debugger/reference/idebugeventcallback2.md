@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 偵錯引擎 (DE) 會使用此介面，將偵錯事件傳送至工作階段的偵錯管理員 (SDM)。  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者注意事項  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]實作這個介面來接收事件，從 偵錯引擎。  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 實作這個介面來接收事件，從 偵錯引擎。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  偵錯引擎通常會接收這個介面，當呼叫 SDM[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。 偵錯引擎將事件傳送到 SDM 藉由呼叫[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
@@ -57,9 +57,9 @@ IDebugEventCallback2 : IUnknown
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   

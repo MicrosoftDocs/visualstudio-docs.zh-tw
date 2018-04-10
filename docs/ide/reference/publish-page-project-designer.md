@@ -1,12 +1,12 @@
 ---
-title: "發佈頁面、專案設計工具 | Microsoft Docs"
-ms.custom: 
+title: 發佈頁面、專案設計工具 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 02/12/2018
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 複製檔案的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

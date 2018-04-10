@@ -1,12 +1,12 @@
 ---
-title: "在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft 文件"
-ms.custom: 
+title: 在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft 文件
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
   
@@ -165,7 +165,7 @@ ms.lasthandoff: 01/19/2018
   
 11. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 （向右鍵可讓您檢視項目的子系）。  
   
-     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM 總管](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  您也可以選取在 [JavaScript 主控台] 視窗的左下角的 DIV 項目，輸入`select(fView)`在 >> 輸入提示字元，然後按 enter。  
@@ -246,7 +246,7 @@ ms.lasthandoff: 01/19/2018
   
  當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
   
- ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+ ![在 [DOM 總管] 中選取項目 按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
  按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
   
@@ -259,7 +259,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 >  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   

@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。  
@@ -100,7 +100,7 @@ ms.lasthandoff: 12/22/2017
   
         1.  從下列資料夾複製 IntelliTraceCollection.cab：  
   
-             **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
         2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如： **C:\IntelliTraceCollector**  
   
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如:   
   
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >*`":F`  
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`  
   
 3.  收集 Web App 或 SharePoint 應用程式的資料：  
   
@@ -131,7 +131,7 @@ ms.lasthandoff: 12/22/2017
   
          例如:   
   
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID >*`":F`  
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`  
   
     2.  將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。  
   
@@ -217,7 +217,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  若要開始收集資料，請以系統管理員身分開啟 PowerShell 命令視窗，然後執行此命令：  
   
-     `Start-IntelliTraceCollection``"` *\<應用程式集區 >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*  
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*  
   
     > [!IMPORTANT]
     >  執行這個命令之後，請輸入 **Y** ，確認您想要開始收集資料。  
@@ -229,7 +229,7 @@ ms.lasthandoff: 12/22/2017
     |||  
     |-|-|  
     |*應用程式集區*|在其中執行應用程式的應用程式集區名稱|  
-    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Web App 和 SharePoint 應用程式：<br /><br /> -collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件和 SharePoint 事件 (包括例外狀況、資料庫呼叫和 Web 伺服器要求)。<br />-collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：**預設.iTrace 檔案的大小上限是 100 MB。 .ITrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目。 若要變更此限制，請編輯收集計劃的`MaximumLogFileSize`屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|  
+    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Web App 和 SharePoint 應用程式：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件和 SharePoint 事件 (包括例外狀況、資料庫呼叫和 Web 伺服器要求)。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：**預設.iTrace 檔案的大小上限是 100 MB。 .ITrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目。 若要變更此限制，請編輯收集計劃的`MaximumLogFileSize`屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|  
     |*iTrace 檔案目錄的完整路徑*|.iTrace 檔案目錄的完整路徑。 **安全性注意事項：**提供完整路徑，而非相對路徑。|  
   
      收集器會附加至應用程式集區，並開始收集資料。  
@@ -240,7 +240,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  若要取得 .iTrace 檔案的快照，請使用此語法：  
   
-     `Checkpoint-IntelliTraceCollection``"` *\<應用程式集區 >*`"`  
+     `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
 4.  若要檢查收集狀態，請使用此語法：  
   
@@ -248,7 +248,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  若要停止收集資料，請使用此語法：  
   
-     `Stop-IntelliTraceCollection``"` *\<應用程式集區 >*`"`  
+     `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`  
   
     > [!IMPORTANT]
     >  執行這個命令之後，請輸入 **Y** ，確認您想要停止收集資料。 否則，收集器可能會繼續收集資料、.iTrace 檔案會保留鎖定，或檔案可能未包含任何有用的資料。  
@@ -259,7 +259,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  若要同時啟動 App 並收集資料，請使用此語法：  
   
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\<FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*  
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*  
   
      例如，從名稱為 **MyApp**的 App 收集資料：  
   
@@ -268,7 +268,7 @@ ms.lasthandoff: 12/22/2017
     |||  
     |-|-|  
     |*收集器可執行檔 IntelliTrace 的完整路徑*|收集器可執行檔 IntelliTraceSC.exe 的完整路徑|  
-    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Managed App：<br /><br /> -collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件，包括例外狀況、資料庫呼叫和 Web 伺服器要求。<br />-collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：**預設.iTrace 檔案的大小上限是 100 MB。 .ITrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目。 若要變更此限制，請編輯收集計劃的`MaximumLogFileSize`屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|  
+    |*收集計劃的路徑*|收集計劃 (可進行收集器設定的 .xml 檔案) 的路徑。<br /><br /> 您可以指定收集器所隨附的計劃。 下列計劃適用於 Managed App：<br /><br /> -   collection_plan.ASP.NET.default.xml<br />     僅收集 IntelliTrace 事件，包括例外狀況、資料庫呼叫和 Web 伺服器要求。<br />-   collection_plan.ASP.NET.trace.xml<br />     收集函式呼叫和 collection_plan.ASP.NET.default.xml 中的所有資料。 這個計劃適用於進行詳細分析，但可能會讓 App 變得比 collection_plan.ASP.NET.default.xml 更慢。<br /><br /> 若要避免讓 App 變慢，請自訂這些計劃，或建立自己的計劃。 基於安全考量，請將任何自訂計劃與收集器檔案放在相同的安全位置。 請參閱 [建立和自訂 IntelliTrace 收集計劃](http://go.microsoft.com/fwlink/?LinkId=227871) 和 [如何取得大部分的資料，而不會讓 App 變慢？](#Minimizing) **注意：**預設.iTrace 檔案的大小上限是 100 MB。 .ITrace 檔案達到這個限制時，收集器會刪除檔案的最早項目，以挪出空間供較新的項目。 若要變更此限制，請編輯收集計劃的`MaximumLogFileSize`屬性。 <br /><br /> *我可以在哪裡找到這些收集計劃的當地語系化版本？*<br /><br /> 您可以在收集器的子資料夾中找到當地語系化計劃。|  
     |*.iTrace 檔案目錄及檔案名稱的完整路徑*|.iTrace 檔案目錄以及副檔名為 **.itrace** 之 .iTrace 檔案名稱的完整路徑。 **安全性注意事項：**提供完整路徑，而非相對路徑。|  
     |*應用程式可執行檔案及檔案名稱的完整路徑*|Managed App 的路徑和檔案名稱|  
   

@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼視窗
 程式碼視窗會支援一或多個文字檢視文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/22/2017
  [如何： 引發事件，當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  說明如何將文件檢視附加至文件資料物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   

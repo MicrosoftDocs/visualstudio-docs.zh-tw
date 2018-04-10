@@ -27,13 +27,13 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 應用程式中的更新
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有許多彈性，指定何時以及如何執行更新檢查、 是否強制、 更新和應用程式應該檢查更新。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有許多彈性，指定何時以及如何執行更新檢查、 是否強制、 更新和應用程式應該檢查更新。  
   
  您可以設定要在應用程式啟動後檢查更新自動在應用程式啟動之前，或在設定間隔的應用程式。 此外，您可以指定最小必要的版本。如果使用者的版本低於所需的版本，也就是已安裝更新。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新檔**選取核取方塊。  
   
-5.  在**更新位置**欄位中，輸入具有完整的 URL，使用格式 http://Hostname/ApplicationName 或使用格式的 UNC 路徑的更新位置\\\Server\ApplicationName，或按一下**瀏覽**按鈕來瀏覽的更新位置。  
+5.  在**更新位置**欄位中，輸入具有完整的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路徑\\\Server\ApplicationName 或按一下**瀏覽**按鈕來瀏覽的更新位置。  
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以程式設計方式檢查更新  
   
@@ -105,13 +105,13 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**應用程式更新**對話方塊方塊中，請確定**應用程式應該檢查更新檔**核取方塊。 （或者，您可以選取此核取方塊，以檢查有更新，以程式設計的方式，也讓 ClickOnce 執行階段自動檢查更新。）  
   
-5.  在**更新位置**欄位中，輸入具有完整的 URL，使用格式 http://Hostname/ApplicationName 或使用格式的 UNC 路徑的更新位置\\\Server\ApplicationName，或按一下**瀏覽**按鈕來瀏覽的更新位置。 更新位置是應用程式將在其中尋找本身的更新版本。  
+5.  在**更新位置**欄位中，輸入具有完整的 URL，使用格式的更新位置http://Hostname/ApplicationName，或使用格式的 UNC 路徑\\\Server\ApplicationName 或按一下**瀏覽**按鈕來瀏覽的更新位置。 更新位置是應用程式將在其中尋找本身的更新版本。  
   
 6.  建立使用者將會選取檢查更新的 Windows Form 上的按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到這種方法在 Visual Basic 和 Visual C# 程式碼範例[How to： 檢查是否有應用程式更新以程式設計方式使用 ClickOnce 部署 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
   
 7.  建置您的應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>   
  [應用程式更新對話方塊](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   

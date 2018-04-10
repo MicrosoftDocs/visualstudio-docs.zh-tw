@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>變更檢視設定，以使用舊版 API
 設定核心編輯器功能，例如自動換行、 選取範圍邊界和虛擬空間，可以藉由使用者變更**選項** 對話方塊。 不過，您也可變更這些設定以程式設計的方式。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
  若要一次移除核心編輯器的所有已變更的值，指定 VSEDITPROPID_ViewComposite_AllCodeWindowDefaults，如 vt 值`idprop`參數。 在這個呼叫，vt 是變數類型為 VT_BOOL，vt.boolVal 為 VARIANT_TRUE。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心編輯器內](../extensibility/inside-the-core-editor.md)   
  [使用舊版 API 存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)

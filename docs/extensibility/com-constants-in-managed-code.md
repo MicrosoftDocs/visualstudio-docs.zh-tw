@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: ca950fb5be94dc75ca038db4c109f5a46c6b2c0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="com-constants-in-managed-code"></a>在 Managed 程式碼的 COM 常數
 Managed Package Framework (MPF) 提供一些標準的 COM 常數至 managed 程式碼。 以下列出這些常數供您參考。  
@@ -132,5 +132,5 @@ Managed Package Framework (MPF) 提供一些標準的 COM 常數至 managed 程�
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [錯誤處理和傳回值](../extensibility/error-handling-and-return-values.md)

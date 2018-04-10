@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>建立選項頁面
 這個逐步解說會建立使用屬性方格中檢查和設定屬性的簡單工具/選項頁面。  
@@ -246,7 +246,7 @@ ms.lasthandoff: 12/22/2017
   
     ```  
   
-     此程式碼會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>建立或擷取`OptionPageGrid`執行個體。 `OptionPageGrid`呼叫<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>載入它的選項，也就是公用屬性。  
+     此程式碼會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>建立或擷取`OptionPageGrid`執行個體。 `OptionPageGrid` 呼叫<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>載入它的選項，也就是公用屬性。  
   
 2.  現在，加入名為的自訂命令項目範本**MyToolsOptionsCommand**来顯示的值。 在**加入新項目**對話方塊中，移至**Visual C# / 擴充性**選取**自訂命令**。 在**名稱**視窗的底部欄位中，將命令檔名稱變更為**MyToolsOptionsCommand.cs**。  
   
@@ -267,5 +267,5 @@ ms.lasthandoff: 12/22/2017
   
      訊息方塊會顯示目前的值`OptionInteger`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選項和選項頁](../extensibility/internals/options-and-options-pages.md)

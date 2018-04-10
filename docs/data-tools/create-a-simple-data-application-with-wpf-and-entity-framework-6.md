@@ -1,10 +1,10 @@
 ---
-title: "建立簡單資料應用程式與 WPF 和 Entity Framework 6 |Microsoft 文件"
-ms.custom: 
+title: 建立簡單資料應用程式與 WPF 和 Entity Framework 6 |Microsoft 文件
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 01/23/2018
         </Grid.RowDefinitions>
     ```
 
-5.  現在開啟 MainWindow.xaml，讓您在設計工具中檢視它。 這會導致資料來源 視窗，顯示為 Visual Studio 視窗旁邊的邊界 工具箱 選項。 若要開啟視窗，否則按 [] 索引標籤上按一下**Shift + Alt + D**或選擇**檢視 &#124;其他視窗 &#124;資料來源**。 我們將在客戶類別在它自己的個別文字 方塊中顯示每個屬性。 第一次按一下客戶下拉式方塊中的箭號，然後選擇**詳細資料**。 使設計工具可讓您知道您想要在中間的資料列，然後拖曳到設計介面的中間部分節點。  如果您找不到它時，您可以稍後以手動方式在 XAML 中指定的資料列。 根據預設，控制項將垂直放置方格項目中，但此時您可以加以排列您要在表單上。  例如，可能會更有意義名稱 文字方塊中放置在最上層，上述的位址。 這個發行項的範例應用程式重新排列欄位，然後重新加以排列成兩個資料行。  
+5.  現在開啟 MainWindow.xaml，讓您在設計工具中檢視它。 這會導致資料來源 視窗，顯示為 Visual Studio 視窗旁邊的邊界 工具箱 選項。 若要開啟視窗，否則按 [] 索引標籤上按一下**Shift + Alt + D**或選擇**檢視&#124;其他視窗&#124;資料來源**。 我們將在客戶類別在它自己的個別文字 方塊中顯示每個屬性。 第一次按一下客戶下拉式方塊中的箭號，然後選擇**詳細資料**。 使設計工具可讓您知道您想要在中間的資料列，然後拖曳到設計介面的中間部分節點。  如果您找不到它時，您可以稍後以手動方式在 XAML 中指定的資料列。 根據預設，控制項將垂直放置方格項目中，但此時您可以加以排列您要在表單上。  例如，可能會更有意義名稱 文字方塊中放置在最上層，上述的位址。 這個發行項的範例應用程式重新排列欄位，然後重新加以排列成兩個資料行。  
   
      ![客戶資料來源繫結至個別控制項](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata 客戶資料來源繫結至個別控制項")  
   

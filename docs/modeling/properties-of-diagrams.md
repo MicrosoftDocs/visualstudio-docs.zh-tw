@@ -1,9 +1,9 @@
 ---
-title: "圖表屬性 |Microsoft 文件"
-ms.custom: 
+title: 圖表屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定指定如何圖表會顯示在設計工具中產生的屬性。 例如，您可以指定文字的預設色彩在圖表中。  
@@ -48,5 +48,5 @@ ms.lasthandoff: 02/09/2018
 |顯示名稱|會產生這個圖表設計工具中顯示的名稱。|\<none>|  
 |說明關鍵字|用於檢索這個圖表 F1 說明關鍵字。|\<none>|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

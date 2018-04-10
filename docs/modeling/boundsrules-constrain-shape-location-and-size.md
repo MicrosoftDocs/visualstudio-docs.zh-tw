@@ -1,9 +1,9 @@
 ---
-title: "BoundsRules 限制圖形的位置和大小 |Microsoft 文件"
-ms.custom: 
+title: BoundsRules 限制圖形的位置和大小 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c672cbc25c28bf4d74f01160212584875b51ba1a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
 A*範圍規則*是類別，定義限制的大小和圖形的位置。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。  
@@ -66,6 +66,6 @@ public class BarBoundsRule: BoundsRules
   
  請注意，位置和大小可以限制是否您想要。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
