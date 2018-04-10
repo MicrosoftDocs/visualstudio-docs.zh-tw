@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017 生產力指南
 
@@ -31,12 +31,7 @@ ms.lasthandoff: 03/28/2018
 - [Visual Studio 的快速鍵 (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Visual Studio 延伸模組庫](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-以下是常用的 Visual Studio 快速鍵。 
-
-> [!NOTE]
-> 有些延伸模組會解除預設 Visual Studio 按鍵繫結關係，因此您必須還原按鍵繫結關係，才能使用下列命令。 請將按鍵繫結關係還原為 Visual Studio 的預設值，方法為移至 [工具] > [匯入和匯出設定...] > [重設所有設定] 或 [工具] > [選項] > [鍵盤] > [重設]。
+以下是常用的 Visual Studio 快速鍵： 
 
 | 快速鍵 (所有設定檔) | 命令 | 描述 |
 |-|-|-|
@@ -52,6 +47,9 @@ ms.lasthandoff: 03/28/2018
 | **Ctrl+F5** | 執行而不偵錯 | 在本機執行應用程式而不偵錯 |
 | **Ctrl+K、D** (預設設定檔) 或 **Ctrl+E、D** (C# 設定檔) | 格式化文件 | 根據您的新行字元、間距和縮排設定，來清除您檔案中的格式違規 |
 | **Ctrl+\\、E** (預設設定檔) 或 **Ctrl+W、E** (C# 設定檔) | 檢視錯誤清單 | 查看您文件、專案或方案中的所有錯誤 |
+
+> [!NOTE]
+> 有些擴充功能會將預設的 Visual Studio 按鍵繫結關係解除繫結。 若要使用下列命令，請將按鍵繫結關係還原為 Visual Studio 的預設值，方法為移至 [工具] > [匯入和匯出設定...] > [重設所有設定] 或 [工具] > [選項] > [鍵盤] > [重設]。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要快速巡覽至檔案或類型的方法。
 Visual Studio 2017 有一項稱為 [移至全部] (**Ctrl+T**) 的功能。 [移至全部] 可讓您快速跳到任何檔案、類型、成員或符號宣告。
