@@ -1,12 +1,13 @@
 ---
-title: "變數 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 變數 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>變數 (JavaScript)
 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，變數包含值，例如 "hello" 或 5。 當您使用變數時，您要參考它代表的資料，例如 `NumberOfDaysLeft = EndDate - TodaysDate`。  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>命名變數  
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 是區分大小寫的語言。 這表示 **myCounter** 的變數名稱不同於變數名稱 **MYCounter**。 變數名稱可以是任何長度。 建立合法變數名稱的規則如下：  
   
--   第一個字元必須是 ASCII 字母 (大寫或小寫)，或底線 (_) 字元。 請注意，數字不能用作第一個字元。  
+-   第一個字元必須是 ASCII 字母 (大寫或小寫)、符合 Unicode 準變數命名慣例的字母，或底線 (_) 字元。 請注意，數字不能用作第一個字元。  
   
 -   後續的字元必須是字母、數字或底線 (_)。  
   
