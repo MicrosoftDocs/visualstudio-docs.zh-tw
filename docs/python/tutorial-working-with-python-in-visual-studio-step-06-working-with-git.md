@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中使用 Python，步驟 6：使用 Git | Microsoft Docs"
-description: "在 Visual Studio 內使用 Python 之核心教學課程的步驟 6，涵蓋 Visual Studio 與 Git 相關的功能。"
-ms.custom: 
+title: 使用 Python，步驟 6：使用 Git | Microsoft Docs
+description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 6，涵蓋 Visual Studio 與 Git 相關的功能。
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,41 +17,51 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: ec8534e7fd3121510a05e201e8bdea2e9a7fce1c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-6-working-with-git"></a>步驟 6：使用 Git
 
 **上一個步驟：[安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 GitHub 和 Visual Studio Team Services 這類服務之存放庫的直接整合。 這項整合包含複製存放庫、認可變更，以及管理分支。
+Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，提供與本機 Git 存放庫和遠端儲存庫的直接整合。 這個整合包含複製存放庫、認可變更，以及管理分支。
 
-本文章描述如何建立現有專案的本機 Git 存放庫。 如需從遠端 Git 存放庫建立專案的逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+本文提供為現有專案建立本機 Git 存放庫的基本概觀，以及讓您熟悉一些 Visual Studio 的 Git 相關功能。
 
-1. 在 Visual Studio 中開啟專案之後 (例如[上一個步驟](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的專案)，以滑鼠右鍵按一下方案，然後選取 [將方案新增至原始檔控制]。 Visual Studio 會建立包含您專案程式碼並顯示 Git 相關控制項的本機 Git 存放庫，也會出現在 Visual Studio 視窗底部。 這些控制項顯示擱置中認可、變更、存放庫名稱和分支。 將滑鼠指標停留在控制項上方，以查看其他資訊。
+1. 在 Visual Studio 中開啟專案之後 (例如[上一個步驟](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)中的專案)，以滑鼠右鍵按一下方案，然後選取 [將方案新增至原始檔控制]。 Visual Studio 會建立包含您的專案程式碼的本機 Git 存放庫。
 
-  ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
+1. 當 Visual Studio 偵測到於 Git 存放庫管理的專案時，Git 相關的控制項會出現在 Visual Studio 視窗右下角。 這些控制項顯示擱置中認可、變更、存放庫名稱和分支。 將滑鼠指標停留在控制項上方，以查看其他資訊。
 
-1. 透過選取存放庫標頭，也會顯示 [Team Explorer] 視窗與各種可用的 Git 選項。 如同選取 [推送] 標題時所示，[同步] 窗格會提供用於發行至遠端存放庫的選項。
+    ![將滑鼠指標停留在 Visual Studio 視窗的 Git 控制項上方時，會顯示其他資訊](media/working-with-git-01.png)
 
-  ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
+1. 當您建立新的存放庫或選取任何 Git 控制項時，Visual Studio 會開啟 [Team Explorer] 視窗。 (您隨時可以使用 [檢視] > [Team Explorer] 功能表命令開啟該視窗。)視窗有三個主要窗格，您可以使用 **Team Explorer** 標題上的下拉式清單在之間切換。 提供發行作業的 [同步] 窗格，也會在您選取 [推送] 控制項 (向上箭頭圖示) 時出現：
 
-1. 選取 [變更] 檢閱未認可的變更，並在需要時進行認可。
+    ![Visual Studio 中建立本機存放庫之後的 Team Explorer](media/working-with-git-02.png)
 
-  ![Visual Studio 中顯示未認可變更的 Team Explorer](media/working-with-git-03.png)
+1. 選取 [變更] (或具有鉛筆圖示的 Git 控制項) 檢閱未認可的變更，並在需要時進行認可。
 
-1. 選取 [分支] 以檢查分支，並執行合併和重訂基底作業：
+    ![Visual Studio 中顯示未認可變更的 Team Explorer](media/working-with-git-03.png)
 
-  ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
+    按兩下 [變更] 清單中的檔案，以開啟該檔案的差異檢視：
 
-1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的命令。
+    ![檔案的變更差異檢視](media/working-with-git-05.png)
+
+1. 選取 [分支] (或具有分支名稱的 Git 控制項) 以檢查分支，並執行合併和重訂基底作業：
+
+    ![Visual Studio 中顯示分支的 Team Explorer](media/working-with-git-04.png)
+
+1. 選取具有存放庫名稱 (先前影像中的 "CosineWave") 的 Git 控制項，[Team Explorer] 會顯示 [連線] 介面，可讓您快速地完全切換至另一個存放庫。
+
+1. 使用本機存放庫時，已認可的變更會直接進入存放庫。 如果您連線至遠端存放庫，請選取 [Team Explorer] 中的下拉式標題，再選擇 [同步] 以切換至 [同步處理] 區段，然後使用其中顯示的提取與擷取命令。
 
 ## <a name="going-deeper"></a>繼續探討
 
-如需使用 Git 的更廣泛教學課程，請參閱[與 Visual Studio 2017 和 VSTS Git 共用程式碼](/vsts/git/share-your-code-in-git-vs-2017)
+如需從遠端 Git 存放庫建立專案的簡短逐步解說，請參閱[快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫](quickstart-03-python-in-visual-studio-project-from-repository.md)。
+
+如需包括處理合併衝突、檢閱含有提取要求的程式碼、重定基底，以及揀選分支之間的變更等更完整的教學課程，請參閱 [Git 與 VSTS 使用者入門](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
 
 ## <a name="tutorial-review"></a>教學課程檢閱
 
@@ -64,7 +74,7 @@ Visual Studio 提供與本機 Git 存放庫的直接整合，以及與位在 Git
 - 安裝套件以及管理 Python 環境
 - 使用 Git 存放庫中的程式碼
 
-在這裡，瀏覽概念和做法指南，包含下列項目：
+在這裡，瀏覽概念和作法指南，包含下列文章：
 
 - [建立適用於 Python 的 C++ 延伸模組](working-with-c-cpp-python-in-visual-studio.md)
 - [發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

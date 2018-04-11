@@ -1,32 +1,34 @@
 ---
-title: "在 Visual Basic 中設定警告 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Basic 中設定警告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中設定警告
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器會包含一組警告，這組警告與可能會造成執行階段錯誤的程式碼有關。 您可以使用該項資訊，來撰寫更簡潔、更快速、更好且錯誤更少的程式碼。 例如，當使用者嘗試叫用未指派之物件變數的成員時、從未設定傳回值的函式傳回時，或執行 `Try` 區塊但攔截例外狀況的邏輯有錯誤時，編譯器就會產生警告。  
   
- 編譯器有時會替使用者提供額外的邏輯，讓使用者能將重心放在手邊的工作，而不是放在預期可能的錯誤。 在舊版的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，`Option Strict` 是用於限制 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器所提供的額外邏輯。 設定警告可讓您在個別警告層級上，以更細微的方式限制這個邏輯。  
+ 編譯器有時會替使用者提供額外的邏輯，讓使用者能將重心放在手邊的工作，而不是放在預期可能的錯誤。 在舊版的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，**Option Strict** 是用於限制 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器所提供的額外邏輯。 設定警告可讓您在個別警告層級上，以更細微的方式限制這個邏輯。  
   
  您可能會想要自訂專案，關閉與應用程式無關的某些警告，並將其他警告變成錯誤。 本頁將說明如何開啟和關閉個別警告。  
   
@@ -75,22 +77,22 @@ ms.lasthandoff: 12/22/2017
   
  識別碼︰42017  
   
-### <a name="operands-of-type-object-warnings"></a>Object 類型運算元的警告  
- 當出現 `Object` 類型的運算元時，就會產生此警告，此情況在 `Option Strict On` 下會發生錯誤。 新專案的預設值為開啟。  
+### <a name="operands-of-type-object-warnings"></a>'Object' 類型運算元的警告  
+ 當出現 `Object` 類型的運算元時，就會產生此警告，在 [Option Strict 為 On] 的情況下會發生錯誤。 新專案的預設值為開啟。  
   
  識別碼︰42018 和 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>宣告需要 'As' 子句的警告  
- 當變數、函式或屬性宣告缺少 `As` 子句時，就會產生此警告，此情況在 `Option Strict On` 下會發生錯誤。 未指派類型的變數會假設為 `Object` 類型。 新專案的預設值為開啟。  
+ 當變數、函式或屬性宣告缺少 `As` 子句時，就會產生此警告，在 [Option Strict 為 On] 的情況下會發生錯誤。 未指派類型的變數會假設為 `Object` 類型。 新專案的預設值為開啟。  
   
  識別碼︰42020 (變數宣告)、42021 (函式宣告) 和 42022 (屬性宣告)。  
   
-### <a name="possible-null-reference-exception-warnings"></a>可能的 Null 參考例外狀況的警告  
+### <a name="possible-null-reference-exception-warnings"></a>可能發生 Null 參考例外狀況的警告  
  當變數在未指派值前便已使用時，就會產生此警告。 新專案的預設值為開啟。  
   
  識別碼：42104、42030  
   
-### <a name="unused-local-variable-warning"></a>未使用之區域變數的警告  
+### <a name="unused-local-variable-warning"></a>未使用區域變數的警告  
  當宣告了某個區域變數但從未參考到此變數時，就會產生此警告。 預設為開啟。  
   
  識別碼︰42024  
@@ -120,7 +122,7 @@ ms.lasthandoff: 12/22/2017
   
  識別碼：42029、42031  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [錯誤類型](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try...Catch...Finally 陳述式](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   

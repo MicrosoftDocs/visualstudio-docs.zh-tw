@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   專案、命名空間和類別群組旁的圖示，反映出該群組內的測試狀態。 請參閱下表。
 
   ![測試總管階層圖示](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10.在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。
+
+已在 Visual Studio 2017 的 15.7 版 Preview 3 將 [測試總管] 搜尋方塊中的檔案路徑篩選條件移除。 此功能的使用量低，而且排除這項功能，[測試總管] 可以更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="features"></a>功能
 

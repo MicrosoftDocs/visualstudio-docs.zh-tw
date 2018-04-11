@@ -1,16 +1,16 @@
 ---
-title: "Visual Studio 中適用於 Python 的選項和設定 | Microsoft Docs"
-description: "Visual Studio 中與 Python 程式碼和專案相關的各種設定參考。"
-ms.custom: 
+title: 適用於 Python 的選項和設定 | Microsoft Docs
+description: Visual Studio 中與 Python 程式碼和專案相關的各種設定參考。
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 71c6e3424d93af2b3696f19193498ed6940cbc7a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 

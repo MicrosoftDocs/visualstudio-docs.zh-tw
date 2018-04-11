@@ -1,9 +1,9 @@
 ---
-title: "網域屬性的屬性 |Microsoft 文件"
-ms.custom: 
+title: 網域屬性的屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7d964eb9f0dcabdb8050074121d094245aca9bb7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
@@ -51,5 +51,5 @@ A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person
 |**Setter 的存取修飾詞**|Setter 的存取修飾詞。 此修飾詞可控制程式碼設定屬性的範圍。|`public`|  
 |**Type**|屬性的類型。 若要加入至可用類型清單，以滑鼠右鍵按一下的 DSL 總管 中，在 DSL 根目錄，然後按一下**加入外部類型**。|`String`|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

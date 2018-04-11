@@ -1,8 +1,8 @@
 ---
 title: 快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式 | Microsoft Docs
-description: 在 Visual Studio 中以 Python 來建置使用 Falcon 架構之簡易 Web 應用程式的扼要簡介。
-ms.custom: ''
-ms.date: 03/14/2018
+description: 在此快速入門中，您會使用 Visual Studio 在使用 Flask 架構的 Python 中建立簡單 Web 應用程式。
+ms.custom: mvc
+ms.date: 03/21/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,29 +13,31 @@ dev_langs:
 - python
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您要建立簡單的 Python Web 應用程式。 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+在這個 5-10 分鐘將 Visual Studio 當成 Python IDE 的簡介中，您會根據 Flask 架構 建立簡單的 Python Web 應用程式。 您會透過離散步驟建立可協助您了解 Visual Studio 基本功能的專案。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
 
 ## <a name="create-the-project"></a>建立專案
+
+下列步驟會建立空「專案」，做為應用程式的容器：
 
 1. 開啟 Visual Studio 2017。
 
 1. 從頂端功能表列，依序選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [已安裝]，然後選取 [Python]。
-
-1. 在中間窗格中，選擇 [Web 專案]，將專案命名為如 "HelloPython"，然後選擇 [確定]。
+1. 在 [新增專案] 對話方塊右上角的搜尋欄位中輸入 "Python Web Project"，選擇中間清單中的 [Web 專案]，提供像是 "HelloPython" 的專案名稱，然後選擇 [確定]。
 
     ![已選取 Python Web專案的 [新增專案] 對話方塊](media/quickstart-python-00-web-project.png)
 
@@ -49,104 +51,118 @@ ms.lasthandoff: 03/17/2018
 
 **問題：在 Visual Studio 中為 Python 應用程式建立專案的優點為何？**
 
-解答：定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (`.pyproj` 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
+**解答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (`.pyproj` 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
-## <a name="install-the-falcon-library"></a>安裝 Falcon 程式庫
+**問題： 什麼是顯示在 [方案總管] 中的「解決方案」？**
 
-Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫之一來處理低階的詳細資料，例如路由 Web 要求和成形回應。 基於此目的，Visual Studio 為使用 Bottle、Flask 和 Django 架構的 Web 應用程式提供各式各樣的範本。
+**解答**：Visual Studio「解決方案」是容器，可協助您以群組的方式管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
 
-但在本快速入門中，您要使用 Falcon 程式庫，體驗安裝套件以及從頭開始建立 Web 應用程式的過程。 (Visual Studio 目前不包括 Falcon 特定範本。)為求簡便，下列步驟會將 Falcon 安裝到預設的全域環境。
+## <a name="install-the-flask-library"></a>安裝 Flask 程式庫
+
+Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫之一來處理低階的詳細資料，例如路由 Web 要求和成形回應。 基於此目的，Visual Studio 為 Web 應用程式提供各式各樣的「範本」，您稍後會在此快速入門中使用其中之一。
+
+在這裡，您會使用下列步驟將 Flask 程式庫安裝在 Visual Studio 用於此專案的預設「全域環境」。
 
 1. 請展開專案的 [Python 環境] 節點，以查看專案的預設環境。
 
     ![顯示預設環境的方案總管](media/quickstart-python-02-default-environment.png)
 
-1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件...]。此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。在 [搜尋] 欄位中輸入 "falcon"，並選取 ["pip install falcon" from PyPI] (PyPI 的 "pip 安裝 falcon")。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，如 `c:\program files` 時，就會提示提高權限。)
+1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件]。此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。
 
-    ![安裝 Falcon 程式庫](media/quickstart-python-03-install-package.png)
+1. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI] \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，如 `c:\program files` 時，就會提示提高權限。)
+
+    ![安裝 Flask 程式庫](media/quickstart-python-03-install-package.png)
 
 1. 安裝之後，程式庫會出現在**方案總管**的環境中，這表示您可以在 Python 程式碼中使用它。
 
-    ![已安裝 Falcon 程式庫](media/quickstart-python-04-package-installed.png)
+    ![已安裝 Flask 程式庫](media/quickstart-python-04-package-installed.png)
 
-如需 Falcon 的詳細資訊，請前往 [falconframework.org](https://falconframework.org/)。
+> [!Note]
+> 開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 範本一般都會提供此選項，如[快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)中所述。
 
-請注意，開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 中有許多 Python 專案範本包含 `requirements.txt` 檔案，它會列出範本相依的程式庫。 從這些範本之一建立專案，會觸發建立程式庫安裝所在的虛擬環境。 如需詳細資訊，請參閱[使用虛擬環境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+**問題：哪裡可以深入了解其他可用的 Python 套件？**
+
+**解答**：瀏覽 [Python 套件索引](https://pypi.python.org/pypi) (pypi.python.org) \(英文\)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
 您現在準備好可新增一些 Python 程式碼來實作基本的 Web 應用程式。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案，然後依序選取 [新增] > [新增項目]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後依序選取 [新增] > [新增項目]。
 
-1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將其命名為 `hello.py`，然後選擇 [新增]。 Visual Studio 會自動在編輯器視窗中開啟檔案。 (一般而言，[新增] > [新增項目] 命令是將不同種類的檔案新增至專案中的好方法，因為項目範本通常會提供有用的未定案程式碼。)
+1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將它命名為 `app.py`，然後選擇 [新增]。 Visual Studio 會自動在編輯器視窗中開啟檔案。
 
-1. 將下列程式碼複製並貼入 `hello.py`：
+1. 將下列程式碼複製並貼入 `app.py`：
 
     ```python
-    import falcon
+    from flask import Flask
 
-    # In Falcon, define a class for each resource and define on_* methods
-    # where * is any standard HTTP methods in lowercase, such as on_get.
+    # Create an instance of the Flask class that is the WSGI application.
+    # The first argument is the name of the application module or package,
+    # typically __name__ when using a single module.
+    app = Flask(__name__)
 
-    class HelloResource:
-        # In this application, the single HelloResource responds to only GET
-        # requests, so it has only an on_get method.
+    # Flask route decorators map / and /hello to the hello function.
+    # To add other resources, create functions that generate the page contents
+    # and add decorators to define the appropriate resource locators for them.
 
-        def on_get(self, req, resp):
-            resp.status = falcon.HTTP_200  # 200 is the default
-            resp.body = "Hello, Python!"
+    @app.route('/')
+    @app.route('/hello')
+    def hello():
+        # Render the page
+        return "Hello Python!"
 
-    # Resources are represented by long-lived class instances
-    hello = HelloResource()
-
-    # Instruct Falcon to route / and /hello to HelloResource. If you add
-    # other resources, use api.add_route to define the desired
-    # resource locators for them.
-    api = falcon.API()
-    api.add_route('/', hello)
-    api.add_route('/hello', hello)
-
-    if __name__ == "__main__":
-        # Use Python's built-in WSGI reference implementation to run
-        # a web server for the application.
-        from wsgiref.simple_server import make_server
-
-        # Run the web server on localhost:8080
-        print("Starting web app server")
-        srv = make_server('localhost', 8080, api)
-        srv.serve_forever()
+    if __name__ == '__main__':
+        # Run the app server on localhost:4449
+        app.run('localhost', 4449)
     ```
 
-1. 貼上這段程式碼之後，Visual Studio 可能會在第一行的 `falcon` 下方和第 20 行的 `wsgiref.simple.server` 下方顯示波浪線。 當 Visual Studio 仍在建置這些模組的 IntelliSense 資料庫時，會出現這些指標。
+1. 您可能已經注意到 [新增] > [新增項目] 對話方塊顯示您可新增至 Python 專案的許多其他類型的檔案，包括 Python 類別、Python 套件、Python 單元測試、web.config 檔案等等。 一般而言，這些「項目範本」 顧名思義是使用實用的未定案程式碼建立檔案的好方法。
 
-如需 Falcon 的詳細資訊，請參閱 [Falcon Quickstart](https://falcon.readthedocs.io/en/stable/user/quickstart.html) (Falcon 快速入門) (falcon.readthedocs.io)。
+**問題：哪裡可以深入了解 Flask？**
+
+**解答**：請參閱 Flask 文件，從 [Flask 快速入門](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org) \(英文\) 開始。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 以滑鼠右鍵按一下**方案總管**中的 `hello.py`，並選取 [設定為啟動檔案]。 執行應用程式時，命令會找出在 Python 中啟動的程式碼檔案。
+1. 以滑鼠右鍵按一下 [方案總管] 中的 `app.py`，並選取 [設定為啟動檔案]。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
 
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file.png)
 
-1. 以滑鼠右鍵按一下**方案總管**中的 "Hello Python" 並選取 [屬性]。 然後選取 [偵錯] 索引標籤，將 [連接埠號碼] 屬性設定為 `8080`。 這個步驟可確保 Visual Studio 以 `localhost:8080` 啟動瀏覽器，而不是使用隨機的連接埠。
+1. 以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [屬性]。 然後選取 [偵錯] 索引標籤，將 [連接埠號碼] 屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
 
-1. 選取 [偵錯] > [啟動但不偵錯](Ctrl+F5) 將變更儲存至檔案並執行應用程式。
+1. 選取 [偵錯] > [啟動但不偵錯] (Ctrl+F5)，可將變更儲存至檔案並執行應用程式。
 
-1. 命令視窗隨即出現並顯示訊息「正在啟動 Web 應用程式伺服器」，然後瀏覽器視窗應會在 `localhost:8080` 開啟，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中。
+1. 命令視窗隨即出現並顯示訊息「* 在 https://localhost:4449/ 中執行」，然後瀏覽器視窗應會開啟到 `localhost:4449`，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中，狀態為 200。
 
-    如果瀏覽器未自動開啟，請啟動您選擇的瀏覽器並巡覽至 `localhost:8080`。)
+    如果瀏覽器未自動開啟，請啟動您選擇的瀏覽器並瀏覽到 `localhost:4449`。
 
-    如果您在命令視窗中只看到 Python 互動式殼層，或該視窗短暫顯示在畫面上，請確定您已在前文的步驟 1 中將 `hello.py` 設定為啟動檔案。
+    如果您在命令視窗中只看到 Python 互動式殼層，或該視窗短暫顯示在畫面上，請確定您已在前文的步驟 1 中將 `app.py` 設定為啟動檔案。
+
+1. 瀏覽到 `localhost:4449/hello` 以測試 `/hello` 資源的裝飾項目也適用。 GET 要求再次出現在命令視窗中，狀態為 200。 您可視需要自行嘗試一些其他 URL，查看它們在命令視窗中顯示 404 狀態碼。
 
 1. 關閉命令視窗以停止應用程式，然後關閉瀏覽器視窗。
 
+**問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
+
+**解答**：您使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的環境中執行應用程式，可讓您設定中斷點、檢查變數，以及一行一行地逐步執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
+
 ## <a name="next-steps"></a>後續步驟
 
-恭喜您完成本快速入門，了解到有關 Visual Studio IDE 與 Python 的一些內容。 若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請選取下方的按鈕。
+恭喜您從 Visual Studio 執行第一個 Python 應用程式，您已了解將 Visual Studio 當成 Python IDE 使用的一些內容！
+
+因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio「專案範本」負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請選取下面的按鈕。
 
 > [!div class="nextstepaction"]
-> [教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
+> [快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
 
-- 了解 [Visual Studio 中的 Python Web 應用程式範本](../python/python-web-application-project-templates.md)
+若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請選取下方的按鈕。
+
+> [!div class="nextstepaction"]
+> [教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+
+若要深入探索 Visual Studio 所提供的各項功能，請選取下列連結。
+
+- 了解 [Visual Studio 中的 Python Web 應用程式範本](../python/python-web-application-project-templates.md)。
 - 深入了解 [Python 偵錯](../python/debugging-python-in-visual-studio.md)
-- 深入了解 [Visual Studio IDE](../ide/visual-studio-ide.md)
+- 深入了解一般的 [Visual Studio IDE](../ide/visual-studio-ide.md)。

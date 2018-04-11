@@ -1,27 +1,27 @@
 ---
-title: "在 Visual Studio 中格式化 Python 程式碼 | Microsoft Docs"
-description: "如何在 Visual Studio 中自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。"
-ms.custom: 
+title: 格式化 Python 程式碼 | Microsoft Docs
+description: 如何在 Visual Studio 中自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 6b43ad38f3fc1b09f96e751b8b244ac1e52735b1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="formatting-python-code"></a>格式化 Python 程式碼
 

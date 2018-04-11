@@ -1,26 +1,26 @@
 ---
-title: "如何在 Visual Studio 中管理 Python 環境與解譯器 | Microsoft Docs"
-description: "如何在 Visual Studio 中使用 [Python 環境] 視窗，來為 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。"
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+title: 如何管理 Python 環境與解譯器 | Microsoft Docs
+description: 如何在 Visual Studio 中使用 [Python 環境] 視窗，來為 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 環境
 
@@ -35,6 +35,8 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 另請注意，針對僅開啟為資料夾 (使用 [檔案] > [開啟] > [資料夾] 命令) 的 Python 程式碼，您無法管理其環境。 您可以改為[從現有的程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)，即可享受 Visual Studio 的環境功能。
 
+如果您想要在環境中安裝套件，請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。
+
 ## <a name="types-of-environments"></a>環境的類型
 
 ### <a name="global-environments"></a>全域環境
@@ -47,7 +49,7 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 由於安裝到全域環境中的套件可供使用該環境的所有專案使用，因此當兩個專案所需的套件不相容，或所需的是相同套件的不同版本時，就可能發生衝突。 虛擬環境會使用全域環境的解譯器和標準程式庫，但是在隔離的資料夾中自行保有套件存放區，藉此避免類似的衝突。
 
-在 Visual Studio 中，您可以針對特定專案建立一個虛擬環境，它會儲存在專案的子資料夾中 (請參閱[建立虛擬環境](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment))。 專案檔也會識別虛擬環境。 Visual Studio 也會在專案的 `requirements.txt` 檔案中，記錄您安裝到虛擬環境中的任何套件。 之後如果您共用專案，且其他開發人員在其電腦上開啟該專案，則 Visual Studio 會提供重新建立虛擬環境的選項。
+在 Visual Studio 中，您可以針對特定專案建立一個虛擬環境，它會儲存在專案的子資料夾中。 Visual Studio 提供的命令可從虛擬環境生產 `requirements.txt` 檔案，方便您在其他電腦上重新建立環境。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ### <a name="conda-environments"></a>Conda 環境
 
@@ -87,7 +89,7 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 ### <a name="what-if-no-environments-appear"></a>如果沒有環境出現怎麼辦？
 
-如果沒有環境出現，表示 Visual Studio 無法在標準安裝位置中偵測到任何 Python 安裝。 例如，您可能已安裝 Visual Studio 2017，但清除了 Python 工作負載安裝程式中的所有解譯器選項。 同樣地，您可能已安裝 Visual Studio 2015 或更早版本，但未手動安裝解譯器 (請參閱[選取並安裝 Python 解譯器](installing-python-interpreters.md))。
+如果沒有環境出現，表示 Visual Studio 無法在標準安裝位置中偵測到任何 Python 安裝。 例如，您可能已安裝 Visual Studio 2017，但清除了 Python 工作負載安裝程式中的所有解譯器選項。 同樣地，您可能已安裝 Visual Studio 2015 或更早版本，但未手動安裝解譯器 (請參閱[安裝 Python 解譯器](installing-python-interpreters.md))。
 
 如果您知道電腦上已安裝 Python 解譯器，但 Visual Studio (任何版本) 沒有偵測到它，請使用 [+ 自訂] 命令來手動指定它的位置。 請參閱下一節[手動識別現有的環境](#manually-identifying-an-existing-environment)。
 

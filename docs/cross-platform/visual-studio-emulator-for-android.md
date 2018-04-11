@@ -1,36 +1,36 @@
 ---
-title: "Visual Studio 的 Android 模擬器 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 的 Android 模擬器 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: de44978f60b42ccd91c6d362738981adffb05de9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。  
+
+> [!IMPORTANT]
+> 在大部分情況下，建議使用 Google Android 模擬器，而不是 Visual Studio 的 Android 模擬器：
+> - 當您需要包含 Android 7.0 或更新版本的模擬器映像時，因為沒有計畫發行 6.0 版以後用於 Visual Studio 的 Android 模擬器中的 Android 映像。
+> - 使用 Visual Studio Tools for Apache Cordova 時。 如需詳細資訊，請參閱[在 Android 上執行您的 Apache Cordova 應用程式](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
   
  Visual Studio Emulator for Android 的設計目的，是為了提供與實際裝置相當的效能。 不過，建議您先在實體裝置上測試應用程式，再發行應用程式。  
   
  您可以透過唯一的裝置設定檔，針對每個 Android 平台、螢幕解析度，以及 Visual Studio Emulator for Android 支援的其他硬體內容來測試應用程式。
-
-> [!NOTE]
-> 建議在以下案例中使用 Google Android 模擬器：
-> - 使用 Visual Studio Tools for Apache Cordova 時。 如需詳細資訊，請參閱[在 Android 上執行您的 Apache Cordova 應用程式](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
-> - 當需要包含 Android 7.0 或更新版本的模擬器映像時，因為沒有計畫發行 6.0 版以後用於 Visual Studio 的 Android 模擬器中的 Android 映像。
   
 ##  <a name="Installing"></a> 安裝及解除安裝  
  安裝  
@@ -102,6 +102,6 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
 -   使用 Visual Studio 或模擬器管理員中的 [傳送笑臉] 工具回報問題。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
