@@ -1,9 +1,9 @@
 ---
-title: "使用 Visual Studio Modelbus 整合模型 |Microsoft 文件"
-ms.custom: 
+title: 使用 Visual Studio Modelbus 整合模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，與從其他工具的連結。 例如，您無法連結特定領域語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>提供存取的 DSL  
+##  <a name="provide"></a> 提供存取的 DSL  
  您必須定義用於 DSL 的 ModelBusAdapter，才能建立模型或其項目的 ModelBus 參考。 執行這項操作的最簡單方式是使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型匯流排擴充功能，將命令加入至 DSL 設計工具。  
   
-###  <a name="expose"></a>若要公開 （expose） 至模型匯流排 DSL 定義  
+###  <a name="expose"></a> 若要公開 （expose） 至模型匯流排 DSL 定義  
   
 1.  除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  `ModelBusAdapters\bin\*` 資料夾包含 `Dsl` 專案和 `ModelBusAdapters` 專案建置的組件。 若要從另一個 DSL 參考這個 DSL，您應該匯入這些組件。  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>確定可參考項目  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 配接器會使用項目的 guid 來識別它，預設值。 因此，這些 ID 必須保存在模型檔中。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 配接器預設會使用項目 GUID 來識別項目。 因此，這些 ID 必須保存在模型檔中。  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>確定保存項目 ID  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   覆寫 `ResolveElementReference` 以從模型匯流排參考中找到正確項目。  
   
-##  <a name="editRef"></a>從另一個 DSL 存取 DSL  
+##  <a name="editRef"></a> 從另一個 DSL 存取 DSL  
  您可以在 DSL 的網域屬性中儲存模型匯流排參考，以及撰寫自訂程式碼來使用這些參考。 您也可以讓使用者選擇模型檔和模型內的某個項目，藉此建立模型匯流排參考。  
   
  若要啟用的 DSL 來使用另一個 DSL 的參考，您應該先製作它*消費者*的模型匯流排參考。  
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只可以解析參考項目，在相同的模型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。  
+    >  只有在模型是相同 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。  
   
 4.  在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。  
   
@@ -510,7 +510,7 @@ private const string INVALID_REF_FORMAT =
   
 -   在**DslPackage\source.extention.tt**，`|ModelBusAdapter|`加入做為 MEF 元件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [使用文字範本中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

@@ -1,9 +1,9 @@
 ---
-title: "文字範本中使用 Visual Studio ModelBus |Microsoft 文件"
-ms.custom: 
+title: 文字範本中使用 Visual Studio ModelBus |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>使用文字範本中的 Visual Studio ModelBus
 如果您撰寫文字範本讀取模型，其中包含[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus 參考時，您可能想要解析的參考來存取目標模型。 在此情況下，您必須調整文字範本和參考的特定領域語言 (Dsl):  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  使用最少的語言方案範本建立新的 DSL。 命名 MBConsumer 的語言，並設定要 「.consume"副檔名。  
   
-2.  在 [DSL] 專案中，加入 MBProvider DSL 的組件的參考。 以滑鼠右鍵按一下`MBConsumer\Dsl\References`，然後按一下 **加入參考**。 在**瀏覽**索引標籤上，找出`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  在 [DSL] 專案中，加入 MBProvider DSL 的組件的參考。 以滑鼠右鍵按一下`MBConsumer\Dsl\References`，然後按一下 **加入參考**。 在**瀏覽**索引標籤上，找出 `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      這可讓您建立使用其他 DSL 的程式碼。 如果您想要建立數個 Dsl 的參考，也將其加入。  
   
@@ -408,7 +408,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      如果您已經設定 MBR 該項目上，開啟 參考的模型，並選取參考的項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)
  

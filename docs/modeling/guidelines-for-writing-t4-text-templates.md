@@ -1,9 +1,9 @@
 ---
-title: "撰寫 T4 文字範本的方針 |Microsoft 文件"
-ms.custom: 
+title: 撰寫 T4 文字範本的方針 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: accf32ad313cbbfe11c2e85fdfe3101ab428c4a4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 下列一般指導方針可能有幫助您在產生程式碼或其他應用程式資源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它們不被固定的規則。  
@@ -153,6 +153,6 @@ Team Members:
   
  您也可以為特定領域語言 (DSL) 來設計您自己的圖表類型。 從 UML 和 Dsl，可以產生程式碼。 如需詳細資訊，請參閱[分析和模組化架構](../modeling/analyze-and-model-your-architecture.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)

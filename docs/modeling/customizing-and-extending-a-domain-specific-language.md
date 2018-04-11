@@ -1,9 +1,9 @@
 ---
-title: "自訂和擴充的網域特定定義域語言 |Microsoft 文件"
-ms.custom: 
+title: 自訂和擴充的網域特定定義域語言 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以定義模型工具：  
@@ -33,7 +33,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 > [!NOTE]
 >  當您有更新的 DSL 定義檔時，請務必按一下**轉換所有範本**後再重建您的方案的 [方案總管] 工具列中。  
   
-##  <a name="customShapes"></a>本章節內容  
+##  <a name="customShapes"></a> 本章節內容  
   
 |若要達成這個效果|請參閱本主題|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 |啟用複製、 剪下和貼上|設定**啟用複製貼上**屬性**編輯器**DSL 總管中的節點。|  
 |只要項目會複製其目標與複製參考的連結。 例如，複製附加至項目註解。|設定**傳播複製**來源角色 （位於網域中的關聯性 DSL 定義圖表的一端之行以表示） 的屬性。<br /><br /> 撰寫程式碼來覆寫 ProcessOnCopy 以達到更複雜的影響。<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
 |刪除、 重設父代，或刪除項目時，請重新連結相關的項目。|設定**傳播刪除**關係角色的值。 對於更複雜的影響，覆寫`ShouldVisitRelationship`和`ShouldVisitRolePlayer`方法`MyDslDeleteClosure`中定義的類別**DomainModel.cs**<br /><br /> 請參閱[自訂刪除行為](../modeling/customizing-deletion-behavior.md)|  
-|保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至複製`ElementGroupPrototype`。 若要覆寫最方便的方法是`ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
+|保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至複製`ElementGroupPrototype`。 若要覆寫最方便的方法是 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
 |在選擇的位置貼上圖形，例如目前的游標位置。|覆寫`ClipboardCommandSet.ProcessOnCopy()`要使用的特定位置的新版`ElementOperations.Merge().`看到[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
 |貼上建立其他連結|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |啟用從拖放此圖中，其他 Dsl 和 Windows 項目|請參閱[如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

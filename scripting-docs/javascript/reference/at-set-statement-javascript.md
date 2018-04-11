@@ -1,13 +1,13 @@
 ---
-title: "@set陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: '@set 陳述式 (JavaScript) |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@set陳述式 (JavaScript)
+# <a name="set-statement-javascript"></a>@set 陳述式 (JavaScript)
 建立用於條件式編譯陳述式的變數。  
   
 > [!WARNING]
@@ -44,10 +44,10 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="parameters"></a>參數  
  *varname*  
- 必要項。 有效的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 變數名稱。 任何時候前面都必須有一個 "@" 字元。  
+ 必要。 有效的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 變數名稱。 任何時候前面都必須有一個 "@" 字元。  
   
  `term`  
- 必要項。 零或多個一元運算子，後面接著一個常數、條件式編譯變數或括號運算式。  
+ 必要。 零或多個一元運算子，後面接著一個常數、條件式編譯變數或括號運算式。  
   
 ## <a name="remarks"></a>備註  
  條件式編譯可支援數值和布林變數， 但不支援字串。 使用 `@set` 建立的變數通常用於條件式編譯陳述式，但是也可以在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 程式碼中的任何位置使用。  
@@ -96,5 +96,5 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>另請參閱  
  [條件式編譯](../../javascript/advanced/conditional-compilation-javascript.md)   
  [條件式編譯變數](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on陳述式](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on 陳述式](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if 陳述式](../../javascript/reference/at-if-statement-javascript.md)

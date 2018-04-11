@@ -1,12 +1,12 @@
 ---
-title: "全球化和當地語系化的 Excel 解決方案 |Microsoft 文件"
-ms.custom: 
+title: 全球化和當地語系化的 Excel 解決方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 66c997dd8de6801d790b7653ca414cac0996ddc9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 方案的全球化與當地語系化
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)。  
@@ -100,7 +100,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>使用外部資料的應用程式  
  任何開啟或使用外部資料的程式碼，例如包含從舊有系統匯出的以逗號分隔值的檔案 (CSV 檔案)，如果使用 en-US 以外的任何格式匯出，也可能受到影響。 因為所有值應該都是二進位格式，所以資料庫存取可能不受影響；除非資料庫將日期儲存為字串，或執行了不使用二進位格式的作業。 此外，如果您使用 Excel 資料建構 SQL 查詢，您可能需要確保其為 en-US 格式，視所用函數而定。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 為目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

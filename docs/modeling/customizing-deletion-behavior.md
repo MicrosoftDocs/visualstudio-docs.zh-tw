@@ -1,9 +1,9 @@
 ---
-title: "自訂刪除行為 |Microsoft 文件"
-ms.custom: 
+title: 自訂刪除行為 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 刪除項目通常會導致相關項目也被刪除。 會刪除與它連接的所有關聯性以及任何子項目。 這個行為稱為*刪除傳播*。 您可以自訂刪除傳播以 (舉例而言) 安排刪除其他相關項目。 藉由撰寫程式碼，您可以根據模型的狀態執行刪除傳播。 您也可以促使其他變更因回應刪除而發生。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [UnMerge](#unmerge) -使用 UnMerge 作業來復原至其父代附加的子元素合併作業。  
   
-##  <a name="default"></a>預設刪除行為  
+##  <a name="default"></a> 預設刪除行為  
  根據預設，下列規則管理刪除傳播：  
   
 -   如果刪除了某個項目，也會刪除所有內嵌的項目。 內嵌的項目為內嵌關聯性的目標，而內嵌關聯性的來源是此項目。 例如，如果沒有從內嵌關聯性**專輯**至**歌曲**，則也會刪除特定專輯時，它的所有歌曲都刪除。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
   
 -   每個連接到項目 (無論位於來源或目標角色) 的關聯性都會被刪除。 位於相反角色之項目的角色屬性將不再包含刪除的項目。  
   
-##  <a name="property"></a>設定角色的傳播刪除選項  
+##  <a name="property"></a> 設定角色的傳播刪除選項  
  您可以讓刪除沿著參考關聯性傳播，或是從內嵌子系傳播到其父系。  
   
 #### <a name="to-set-delete-propagation"></a>設定刪除傳播  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  DSL 定義中加入程式碼，請建立不同的程式碼檔案中**Dsl**專案，並寫入加強產生的程式碼資料夾中的類別的部分定義。 如需詳細資訊，請參閱[以自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
-##  <a name="closure"></a>定義 Delete Closure  
+##  <a name="closure"></a> 定義 Delete Closure  
  刪除作業會使用類別*YourModel * * * DeleteClosure** 若要判斷要刪除指定的初始的選取範圍的項目。 它重複呼叫 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，查核關聯性的圖形。 您可以覆寫這些方法。 ShouldVisitRolePlayer 隨附的其中一個角色連結的項目和連結的識別。 它應傳回下列其中一個值：  
   
 -   **VisitorFilterResult.Yes**-應刪除的項目並查核器應該嘗試繼續元素的其他連結。  
@@ -131,7 +131,7 @@ partial class MusicLibDeleteClosure
   
  不過，此技術假設刪除僅影響關聯性圖形中的相鄰項目：您無法使用此方法刪除模型另一個部分中的項目。 如果您要加入項目或是進行其他變更以回應刪除，則無法使用它。  
   
-##  <a name="ondeleting"></a>使用 OnDeleting 和 OnDeleted  
+##  <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
  您可以在網域類別或網域關聯性中覆寫 `OnDeleting()` 或 `OnDeleted()`。  
   
 1.  當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。  
@@ -198,7 +198,7 @@ partial class Artist
   
  當您對某個項目執行 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> 時，將會呼叫 OnDeleting 和 OnDeleted。 這些方法都執行的內嵌-也就是立即之前和之後實際刪除。 如果您的程式碼刪除兩個或多個項目，將會在所有項目上輪流呼叫 OnDeleting 和 OnDeleted。  
   
-##  <a name="rules"></a>刪除規則和事件  
+##  <a name="rules"></a> 刪除規則和事件  
  OnDelete 處理常式的替代方法是，您可以定義刪除規則和刪除事件。  
   
 1.  **刪除**和**刪除**只在交易中，而不是在復原或重做便會觸發規則。 您可以將它們排入佇列，在進行刪除的異動結尾處執行規則。 Deleting 規則的執行一律會早於在佇列中的任何 Deleted 規則。  
@@ -295,7 +295,7 @@ partial class NestedShapesSampleDocData
   
  如需詳細資訊，請參閱[自訂項目建立及移動](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂複本的行為](../modeling/customizing-copy-behavior.md)   
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

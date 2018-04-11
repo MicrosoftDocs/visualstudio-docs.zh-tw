@@ -1,11 +1,11 @@
 ---
-title: "RC 工作 | Microsoft Docs"
-ms.custom: 
+title: RC 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -22,17 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="rc-task"></a>RC 工作
 包裝 Microsoft Windows 資源編譯器工具 (rc.exe)。 **RC** 工作會將資料指標、圖示、點陣圖、對話方塊和字型這類資源編譯為資源 (.res) 檔案。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜資源編譯器＞。  
@@ -46,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列 optionsor 範例清單：**"***/option1 /option2 /option#*"。 使用此參數，來指定任何其他 **RC** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的選項。|  
 |**文化特性**|選擇性的 **String** 參數。<br /><br /> 指定代表資源中所使用文化特性 (Culture) 的地區設定識別碼。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/l** 選項。|  
 |**IgnoreStandardIncludePath**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，可防止資源編譯器在搜尋標題檔或資源檔時檢查 INCLUDE 環境變數。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/x** 選項。|  
-|**NullTerminateStrings**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，null 會終止字串資料表中的所有字串。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/n** 選項。|  
+|**NullTerminateStrings**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，null 會終止字串資料表中的所有字串。<br /><br /> 如需詳細資訊，請參閱**/n**選項[使用 RC （RC 命令列）](http://go.microsoft.com/fwlink/?LinkId=155730) MSDN 網站上。|  
 |**PreprocessorDefinitions**|選擇性的 **String[]** 參數。<br /><br /> 定義資源編譯器的一或多個前置處理器符號。 指定巨集符號清單。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/d** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions**。|  
 |**ResourceOutputFileName**|選擇性的 **String** 參數。<br /><br /> 指定資源檔的名稱。 指定資源檔名稱。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/fo** 選項。|  
 |**ShowProgress**|選擇性的 **Boolean** 參數。<br /><br /> 如果 `true`，則會顯示報告編譯器進度的訊息。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/v** 選項。|  
@@ -57,5 +57,5 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

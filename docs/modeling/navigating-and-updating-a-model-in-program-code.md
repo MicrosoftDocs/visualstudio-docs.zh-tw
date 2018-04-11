@@ -1,9 +1,9 @@
 ---
-title: "巡覽和更新的模型中的程式碼 |Microsoft 文件"
-ms.custom: 
+title: 巡覽和更新的模型中的程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3e5b76c384f92e1b943e0e9e6a522d16b6a6cadc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 您可以撰寫程式碼，以建立和刪除模型項目、 設定其屬性，以及建立和刪除項目之間的連結。 在交易內，就必須進行的所有變更。 如果項目會在圖表檢視，圖表將會 「 」 自動修正交易的結尾。  
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/09/2018
   
  [重新排列關聯性的連結](#reorder)  
   
- [鎖定](#locks)  
+ [Locks](#locks)  
   
  [複製和貼上](#copy)  
   
@@ -53,10 +53,10 @@ ms.lasthandoff: 02/09/2018
   
  [DocView 和 DocData](#docdata)  
   
-##  <a name="example"></a>DSL 定義範例  
+##  <a name="example"></a> DSL 定義範例  
  這是本主題中的範例如 DslDefinition.dsl 的主要部分：  
   
- ![DSL 定義圖表 &#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
  此模型是此 DSL 的執行個體：  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/09/2018
   
  此外，如果您要從 DSL 定義所在的一個不同的專案中撰寫程式碼，您應該匯入 Dsl 專案所建置的組件。  
   
-##  <a name="navigation"></a>瀏覽模型  
+##  <a name="navigation"></a> 瀏覽模型  
   
 ### <a name="properties"></a>屬性  
  DSL 定義中定義的網域屬性會變成屬性，您可以在程式碼中存取：  
@@ -140,7 +140,7 @@ ms.lasthandoff: 02/09/2018
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a>存取類別資訊  
+##  <a name="metadata"></a> 存取類別資訊  
  您可以從中取得資訊的類別、 關聯性和 DSL 定義的其他層面。 例如:   
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
@@ -161,7 +161,7 @@ ms.lasthandoff: 02/09/2018
   
 -   ElementLink-所有關聯性都 ElementLinks  
   
-##  <a name="transaction"></a>執行交易內的變更  
+##  <a name="transaction"></a> 執行交易內的變更  
  每當您的程式碼變更存放區中的任何項目時，它必須在交易內執行。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
   
  管理交易的最方便的方法是使用`using`陳述式括住`try...catch`陳述式：  
@@ -194,7 +194,7 @@ catch (Exception ex)
   
  若要進行永久變更，您應該`Commit`交易之前加以處置。 如果未攔截到在交易內發生的例外狀況，存放區將會重設為所做的變更之前的狀態。  
   
-##  <a name="elements"></a>建立模型項目  
+##  <a name="elements"></a> 建立模型項目  
  這個範例會將元素加入至現有的模型：  
   
 ```  
@@ -227,7 +227,7 @@ using (Transaction t =
   
  當您建立項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會顯示在自動指派的位置，與預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形出現的位置和方式，請參閱[建立項目和其圖形](#merge)。  
   
-##  <a name="links"></a>建立關聯性連結  
+##  <a name="links"></a> 建立關聯性連結  
  有兩個範例 DSL 定義中定義的關聯性。 每個關聯性定義*角色屬性*每一端的關聯性類別上。  
   
  有三種方式，您可以在其中建立關聯性的執行個體。 每種方法具有相同的效果：  
@@ -258,7 +258,7 @@ using (Transaction t =
   
  當您以這種方式建立項目時，自動建立在圖表上的連接器，但它有預設圖形、 色彩和其他功能。 若要控制相關聯的連接器的建立方式，請參閱[建立項目和其圖形](#merge)。  
   
-##  <a name="deleteelements"></a>刪除項目  
+##  <a name="deleteelements"></a> 刪除項目  
  刪除的項目，藉由呼叫`Delete()`:  
   
  `henry.Delete();`  
@@ -281,7 +281,7 @@ using (Transaction t =
   
  在某些情況下，因鎖定項目上，或是會刪除傳播的項目上存在而無法刪除。 您可以使用`element.CanDelete()`來檢查是否可以刪除項目。  
   
-##  <a name="deletelinks"></a>刪除關聯性的連結  
+##  <a name="deletelinks"></a> 刪除關聯性的連結  
  您可以藉由從角色屬性中移除項目刪除關聯性的連結：  
   
  `henry.Children.Remove(edward); // or:`  
@@ -296,11 +296,11 @@ using (Transaction t =
   
  如果角色有 0..1 或 1..1 的多重性，您就可以將它設定為`null`，或為另一個值：  
   
- `edward.FamilyTreeModel = null;`或：  
+ `edward.FamilyTreeModel = null;` 或：  
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a>重新排序的關聯性的連結  
+##  <a name="reorder"></a> 重新排序的關聯性的連結  
  取得資料來源或在特定模型項目為目標的特定關聯性的連結，會有特定的順序。 它們會出現在已加入的順序。 例如，此陳述式一定會產生相同的順序中的子系：  
   
  `foreach (Person child in henry.Children) ...`  
@@ -317,12 +317,12 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a>鎖定  
+##  <a name="locks"></a> 鎖定  
  鎖定可能會阻止您的變更。 個別項目、 資料分割，以及在存放區，可以設定鎖定。 如果任何這些層級鎖定來防止您想要的變更種類，當您嘗試它時可能會擲回例外狀況。 您可以探索是否鎖定使用設定的項目。GetLocks()，這是定義在命名空間的擴充方法<xref:Microsoft.VisualStudio.Modeling.Immutability>。  
   
  如需詳細資訊，請參閱[鎖定原則，以建立唯讀區段定義](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。  
   
-##  <a name="copy"></a>複製和貼上  
+##  <a name="copy"></a> 複製和貼上  
  您可以複製項目或群組的項目<xref:System.Windows.Forms.IDataObject>:  
   
 ```  
@@ -345,9 +345,9 @@ using (Transaction t = targetDiagram.Store.
 }  
 ```  
   
- `Merge ()`可以接受`PresentationElement`或`ModelElement`。 如果您提供`PresentationElement`，您也可以做為第三個參數的目標圖表上指定的位置。  
+ `Merge ()` 可以接受`PresentationElement`或`ModelElement`。 如果您提供`PresentationElement`，您也可以做為第三個參數的目標圖表上指定的位置。  
   
-##  <a name="diagrams"></a>巡覽和更新圖表  
+##  <a name="diagrams"></a> 巡覽和更新圖表  
  DSL，在網域模型項目，它代表的概念，例如人或歌曲，則是分開的圖形元素，代表圖表上看到的內容項目。 網域模型項目儲存的重要屬性和關聯性的概念。 圖形元素儲存大小、 位置和色彩在圖表上的物件的檢視以及其元件部分的配置。  
   
 ### <a name="presentation-elements"></a>簡報項目  
@@ -369,7 +369,7 @@ using (Transaction t = targetDiagram.Store.
   
  圖形可以有兩個集合中的子圖形。 中的圖形`NestedChildShapes`組僅限於其父系的週框方塊。 中的圖形`RelativeChildShapes`清單會顯示外部或部分的父-例如標籤或連接埠範圍之外。 圖表沒有任何`RelativeChildShapes`，而且沒有`Parent`。  
   
-###  <a name="views"></a>圖案和項目之間巡覽  
+###  <a name="views"></a> 圖案和項目之間巡覽  
  網域模型項目和圖形元素以相關<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>關聯性。  
   
 ```csharp  
@@ -441,22 +441,22 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a>圖形和連接器的內容  
+###  <a name="shapeProperties"></a> 圖形和連接器的內容  
  在大部分情況下，不需要對圖形進行明確的變更。 當您變更模型項目時，「 修復 」 規則更新圖形和連接器。 如需詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
   
  不過，很有用明確變更屬性的模型項目中的圖形。 例如，您可以變更這些屬性：  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A>-決定圖形的寬度與高度。  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -決定圖形的寬度與高度。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A>-相對於父圖形或圖表的位置  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -相對於父圖形或圖表的位置  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A>-畫筆和筆刷用來繪製圖形或連接器的集合  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -畫筆和筆刷用來繪製圖形或連接器的集合  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A>為使圖形不可見  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> 為使圖形不可見  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A>為使圖形可見之後`Hide()`  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> 為使圖形可見之後 `Hide()`  
   
-###  <a name="merge"></a>建立項目和其圖形  
+###  <a name="merge"></a> 建立項目和其圖形  
  當您建立一個項目，並將它連結到的內嵌關聯性樹狀結構時，圖形會自動建立並與它相關聯。 做法是在交易結束執行的 「 修復 」 規則。 不過，圖形會在自動指派的位置，且其形狀、 色彩和其他功能，則會有預設值。 若要控制圖形的建立方式，您可以使用 merge 函式。 您必須先加入您想要加入至 ElementGroup，項的目，然後再合併到圖表的群組。  
   
  這個方法：  
@@ -509,13 +509,13 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>使用交易  
  圖形、 連接器和圖表會的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>和即時存放區中。 因此，您必須進行這些變更只在交易內。 如需詳細資訊，請參閱[How to： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
-##  <a name="docdata"></a>文件檢視和文件資料  
+##  <a name="docdata"></a> 文件檢視和文件資料  
  ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
 ## <a name="store-partitions"></a>儲存資料分割  
  當載入模型時，同時載入隨附的圖表。 一般而言，模型載入 Store.DefaultPartition，而且圖表內容載入至另一個磁碟分割。 通常，每個資料分割的內容會載入，並儲存至個別檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [中的網域特定定義域語言的驗證](../modeling/validation-in-a-domain-specific-language.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   

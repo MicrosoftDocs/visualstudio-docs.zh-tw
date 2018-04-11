@@ -1,9 +1,9 @@
 ---
-title: "T4 組件指示詞 |Microsoft 文件"
-ms.custom: 
+title: T4 組件指示詞 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 設計階段文字範本中，`assembly` 指示詞會載入組件，因此範本程式碼可以使用它的類型。 這種效果類似在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中加入組件參考。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
 -   包含 DSL 的組件。  
   
-##  <a name="msbuild"></a>使用 MSBuild 和 Visual Studio 中的專案屬性  
+##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  Visual Studio 巨集，例如 $ （solutiondir） 不在 MSBuild 中運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：  
@@ -91,5 +91,5 @@ ms.lasthandoff: 02/09/2018
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [T4 包含指示詞](../modeling/t4-include-directive.md)

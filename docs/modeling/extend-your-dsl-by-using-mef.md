@@ -1,9 +1,9 @@
 ---
-title: "使用 MEF 擴充 DSL |Microsoft 文件"
-ms.custom: 
+title: 使用 MEF 擴充 DSL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 您可以使用 Managed Extensibility Framework (MEF) 擴充您的特定領域語言 (DSL)。 您或其他開發人員能夠撰寫 dsl 的擴充功能，而不需要變更 DSL 定義和程式碼。 這類延伸包括功能表命令、 拖放的處理常式，以及驗證。 使用者可以安裝 DSL，然後再選擇性地為其安裝擴充功能。  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  建立新的資料夾，名為**MefExtension**內**DslPackage**專案。 將下列檔案：  
   
-     檔案名稱：`CommandExtensionVSCT.tt`  
+     檔案名稱： `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  將 GUID 設定此檔案中以 DslPackage\GeneratedCode\Constants.tt 中會定義 GUID CommandSetId 相同  
@@ -44,21 +44,21 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     檔案名稱：`CommandExtensionRegistrar.tt`  
+     檔案名稱： `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     檔案名稱：`ValidationExtensionEnablement.tt`  
+     檔案名稱： `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     檔案名稱：`ValidationExtensionRegistrar.tt`  
+     檔案名稱： `ValidationExtensionRegistrar.tt`  
   
      如果您將加入這個檔案，您必須啟用 DSL 的驗證使用中的交換器其中**EditorValidation** DSL 總管 中。  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     檔案名稱：`PackageExtensionEnablement.tt`  
+     檔案名稱： `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ ms.lasthandoff: 02/09/2018
   
 2.  建立新的資料夾，名為**MefExtension**內**Dsl**專案。 將下列檔案：  
   
-     檔案名稱：`DesignerExtensionMetaDataAttribute.tt`  
+     檔案名稱： `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     檔案名稱：`GestureExtensionEnablement.tt`  
+     檔案名稱： `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     檔案名稱：`GestureExtensionController.tt`  
+     檔案名稱： `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/09/2018
 ### <a name="menu-commands"></a>功能表命令  
  若要撰寫功能表命令，定義一個類別，實作<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>和前置詞的類別與屬性定義於 DSL，名為*YourDsl*`CommandExtension`。 您可以撰寫一個以上的功能表命令類別。  
   
- `QueryStatus()`每當使用者以滑鼠右鍵按一下圖表會呼叫。 它應該檢查目前的選取範圍，並設定`command.Enabled`指出命令適用。  
+ `QueryStatus()` 每當使用者以滑鼠右鍵按一下圖表會呼叫。 它應該檢查目前的選取範圍，並設定`command.Enabled`指出命令適用。  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -373,7 +373,7 @@ namespace MefExtension
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed 的 Extensibility Framework (MEF)](/dotnet/framework/mef/index)   
  [如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   

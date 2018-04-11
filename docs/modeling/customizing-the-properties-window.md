@@ -1,9 +1,9 @@
 ---
-title: "自訂屬性 視窗 |Microsoft 文件"
-ms.custom: 
+title: 自訂屬性 視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 您可以在您的特定領域語言 (DSL) 自訂的外觀和行為的 [屬性] 視窗，在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定義中，您網域屬性類別上定義每個網域。 根據預設，當您選取類別，在圖表或模型總管 中的執行個體的每個網域屬性列在 屬性 視窗中。 這可讓您查看和編輯網域屬性值，即使您尚未對應這些圖形在圖表上的欄位。  
@@ -317,5 +317,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

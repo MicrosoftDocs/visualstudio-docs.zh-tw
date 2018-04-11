@@ -1,9 +1,9 @@
 ---
-title: "了解 DSL 程式碼 |Microsoft 文件"
-ms.custom: 
+title: 了解 DSL 程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="generated-files-in-dsl"></a>在 DSL 中產生的檔案  
  下列產生的檔案會出現在**Dsl**專案。  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  包含您的 DSL 執行個體的檔案結構描述。 這個檔案會複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
@@ -347,7 +347,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
   
  這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)   
  [自訂和擴充的網域特定定義域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)   

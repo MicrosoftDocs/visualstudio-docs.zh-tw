@@ -1,9 +1,9 @@
 ---
-title: "T4 參數指示詞 |Microsoft 文件"
-ms.custom: 
+title: T4 參數指示詞 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f44e25f9256cd37692970e92744d7564bc3abd19
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-parameter-directive"></a>T4 參數指示詞
 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文字範本`parameter`指示詞會宣告樣板程式碼中初始化自從外部內容傳入值的屬性。 如果您撰寫程式碼會叫用文字轉換，您可以設定這些值。  

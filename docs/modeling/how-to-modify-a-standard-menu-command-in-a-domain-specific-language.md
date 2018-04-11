@@ -1,9 +1,9 @@
 ---
-title: "如何： 修改標準功能表中的命令的網域特定定義域語言 |Microsoft 文件"
-ms.custom: 
+title: 如何： 修改標準功能表中的命令的網域特定定義域語言 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
 您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改**剪下**，讓它不包含機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  如果您想要建立您自己的功能表命令，請參閱[如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
-##  <a name="what"></a>您可以修改哪些命令？  
+##  <a name="what"></a> 您可以修改哪些命令？  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。  
   
-##  <a name="extend"></a>擴充適當的命令組類別  
+##  <a name="extend"></a> 擴充適當的命令組類別  
  建立包含命令集類別之部分宣告的新檔案。  
   
 #### <a name="to-extend-the-command-set-class"></a>擴充命令集類別  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
   
      **請注意**如果您使用的類別檔案範本來建立新的檔案，您必須更正命名空間和類別名稱。  
   
-##  <a name="override"></a>覆寫命令的方法  
+##  <a name="override"></a> 覆寫命令的方法  
  大部分的命令有兩個相關聯的方法： 具有名稱的方法類似`ProcessOnStatus`...判斷命令是否應為可見並已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上  
@@ -137,7 +137,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
   
--   `this.IsDiagramSelected()` - `true`如果使用者按一下圖表的空白部分。  
+-   `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
@@ -149,7 +149,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
  如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
