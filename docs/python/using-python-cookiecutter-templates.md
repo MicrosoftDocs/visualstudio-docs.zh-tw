@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio 中適用於 Python 的 Cookiecutter 延伸模組 | Microsoft Docs"
-description: "Visual Studio 支援圖形 Cookiecutter 延伸模組來探索適用於 Python 程式碼的範本，並從這些範本建立專案。"
-ms.custom: 
+title: 適用於 Python 的 Cookiecutter 延伸模組 | Microsoft Docs
+description: Visual Studio 支援圖形 Cookiecutter 延伸模組來探索適用於 Python 程式碼的範本，並從這些範本建立專案。
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
@@ -35,7 +35,7 @@ Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anac
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter 工作流程
 
-使用 Cookiecutter 是瀏覽和選取範本、複製到本機電腦、設定選項、然後從該範本建立程式碼的程序，如下列各節所述。
+Cookiecutter 的使用程序包含瀏覽和選取範本、將其複製到本機電腦、設定選項，然後從該範本建立程式碼，如下列各節所述。
 
 ### <a name="browsing-templates"></a>瀏覽範本
 
@@ -43,7 +43,7 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
 | 群組 | 描述 |
 | --- | --- |
-| 已安裝 | 已安裝到您本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 `~/.cookiecutters` 的子資料夾。 您可以藉由按下 **Del** 來刪除選取的已安裝範本。 |
+| 已安裝 | 已安裝到本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 `~/.cookiecutters` 的子資料夾。 您可以藉由按下 **Del** 來刪除選取的已安裝範本。 |
 | 建議 | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
 | GitHub | Cookiecutter 關鍵字的 GitHub 搜尋結果。 從 GitHub 傳回的結果會經過重新編頁，如果還有其他結果，[載入更多 (Load More)] 會出現在清單的結尾。 |
 | 自訂 | 在搜尋方塊中輸入自訂位置時，它會顯示在此群組。 您可以輸入 GitHub 存放庫的完整路徑，或輸入本機磁碟上的資料夾完整路徑。 |
@@ -52,7 +52,7 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
 當您選取一個範本並按 [下一步 (Next)] 時，Cookiecutter 會建立工作用的本機複本。
 
-如果您從 [建議] 或 [GitHub] 群組選取範本，或在搜尋方塊中輸入自訂 URL 並選取該範本，它會複製並安裝到您的本機電腦上。 如果在先前的 Visual Studio 工作階段中已安裝該範本，則會自動刪除它並複製最新版本。
+如果您從 [建議] 或 [GitHub] 群組選取範本，或在搜尋方塊中輸入自訂 URL 並選取該範本，系統即會將其複製並安裝到您的本機電腦上。 如果在先前的 Visual Studio 工作階段中已安裝該範本，則會自動刪除它並複製最新版本。
 
 如果您從 [已安裝] 群組選取範本，或在搜尋方塊中輸入自訂資料夾路徑並選取該範本，Visual Studio 會載入該範本而不複製。
 
@@ -207,7 +207,7 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows 上不支援 Hook 指令碼
 
-如果後置指令碼為 `.sh`，它可能未與您 Windows 電腦上的應用程式關聯。 您可能會看到 Windows 對話方塊，要求您在 Windows 市集尋找相容的應用程式。
+如果後置指令碼為 `.sh`，它可能未與您 Windows 電腦上的應用程式建立關聯。 您可能會看到 Windows 對話方塊，要求您在 Windows 市集尋找相容的應用程式。
 
 ### <a name="templates-with-known-issues"></a>含有已知問題的範本
 

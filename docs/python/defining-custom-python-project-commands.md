@@ -1,27 +1,27 @@
 ---
-title: "如何在 Visual Studio 中定義 Python 專案的自訂功能表命令 | Microsoft Docs"
-description: "示範如何在 Visual Studio 中編輯專案及 .targets 檔案，以將自訂命令新增至 Python 專案操作功能表。 命令可叫用可執行程式、指令碼、模組、內嵌程式碼片段及 PIP。"
-ms.custom: 
+title: 如何定義 Python 專案的自訂功能表命令 | Microsoft Docs
+description: 示範如何在 Visual Studio 中編輯專案及 .targets 檔案，以將自訂命令新增至 Python 專案操作功能表。 命令可叫用可執行程式、指令碼、模組、內嵌程式碼片段及 PIP。
+ms.custom: ''
 ms.date: 02/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 

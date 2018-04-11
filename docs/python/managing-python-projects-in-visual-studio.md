@@ -1,27 +1,27 @@
 ---
-title: "在 Visual Studio 中管理 Python 應用程式的專案 | Microsoft Docs"
-description: "說明 Visual Studio 中專案的用途、示範如何建立及管理適用於 Python 程式碼的專案，以及摘要說明可供 Python 使用的各種專案範本。"
-ms.custom: 
+title: 管理 Python 應用程式專案 | Microsoft Docs
+description: 說明 Visual Studio 中專案的用途、示範如何建立及管理適用於 Python 程式碼的專案，以及摘要說明可供 Python 使用的各種專案範本。
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: dccac11e0ffedf90b72812806b1161f7c270571b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="python-projects"></a>Python 專案
 

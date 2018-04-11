@@ -1,26 +1,28 @@
 ---
-title: "在 Visual Studio 中編譯與建置 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中編譯與建置 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
@@ -42,7 +44,7 @@ Visual Studio 產品系列中，您可採用三種方式建置應用程式：Vis
 
 ## <a name="overview-of-building-from-the-ide"></a>從 IDE 建置的概觀  
 
-當您建立專案時，Visual Studio 為專案及包含該專案的解決方案建立了預設組建組態。  這些組態定義了解決方案和專案建置及部署的方式。 對於目標平台 (例如 Windows 或 Linux) 和組建類型 (例如偵錯或發行)，專案組態更是獨特。 您可以自由編輯這些組態，也可視需要建立自己的組態。
+當您建立專案時，Visual Studio 為專案及包含該專案的解決方案建立了預設組建組態。  這些組態定義了解決方案和專案建置及部署的方式。 針對目標平台 (例如 Windows 或 Linux) 和組建類型 (例如偵錯或發行)，專案組態更必須具備唯一性。 您可以自由編輯這些組態，也可視需要建立自己的組態。
 
 若要了解在 IDE 中建置的初步簡介，請參閱[逐步解說：建置應用程式](walkthrough-building-an-application.md)。  
 
@@ -51,11 +53,11 @@ Visual Studio 產品系列中，您可採用三種方式建置應用程式：Vis
 您可以從中探索其他各種工作：
 - [了解建置組態](understanding-build-configurations.md)
 - [了解建置平台](understanding-build-platforms.md)
-- [管理專案和解決方案屬性](managing-project-and-solution-properties.md)。  
+- [管理專案及解決方案屬性](managing-project-and-solution-properties.md)。  
 - 使用 [C#](how-to-specify-build-events-csharp.md) 和 [Visual Basic](how-to-specify-build-events-visual-basic.md) 指定建置事件。 
 - [設定建置選項](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [平行建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
 - [建置 (編譯) 網站專案](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

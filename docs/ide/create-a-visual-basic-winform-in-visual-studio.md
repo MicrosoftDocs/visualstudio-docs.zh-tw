@@ -1,13 +1,13 @@
 ---
-title: "使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式 | Microsoft Docs"
-description: "了解如何使用 Visual Basic 在 Visual Studio 中逐步建立 Windows Forms 應用程式。"
-ms.custom: 
+title: 使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式 | Microsoft Docs
+description: 了解如何使用 Visual Basic 在 Visual Studio 中逐步建立 Windows Forms 應用程式。
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式
 在這個針對 Visual Studio 整合式開發環境 (IDE) 的簡短簡介中，您將建立具有 Windows 型使用者介面 (UI) 的簡單 Visual Basic 應用程式。
@@ -50,31 +50,31 @@ ms.lasthandoff: 03/09/2018
 
      ![按一下 [工具箱] 開啟 [工具箱] 視窗](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (如果看不到 [工具箱] 飛出視窗選項，則可以從功能表列開啟它。 若要這樣做，請按一下 [檢視] > [工具箱]。 或按 **Ctrl**+**Alt**+**X**)。
+     (如果未顯示 [工具箱] 快顯選項，您可以從功能表列開啟。 若要這樣做，請按一下 [檢視] > [工具箱]。 或按 **Ctrl**+**Alt**+**X**)。
 
-2. 按一下**固定**圖示，以固定 [工具箱] 視窗。
+2. 按一下**釘選**圖示，以固定 [工具箱] 視窗。
 
      ![按一下固定圖示，以將 [工具箱] 視窗固定到 IDE](../ide/media/vb-pin-the-toolbox-window.png)  
 3. 按一下 [按鈕] 控制項，然後將它拖曳至表單。
 
      ![將按鈕新增至表單](../ide/media/vb-add-a-button-to-form1.png)
 
-4. 在 [屬性] 視窗的 [外觀] 區段中，鍵入 "Click this"，然後按 **Enter** 鍵。
+4. 在 [屬性] 視窗的 [外觀] 區段中，鍵入 `Click this`，然後按 **Enter** 鍵。
 
      ![新增表單上按鈕的文字](../ide/media/vb-button-control-text.png)  
 
-     (如果看不到 [屬性] 視窗，則可以從功能表列開啟它。 若要這樣做，請按一下 [檢視] > [屬性視窗]。 或按 **F4** 鍵)。
+     (如果未顯示 [屬性] 視窗，您可以從功能表列開啟。 若要這樣做，請按一下 [檢視] > [屬性視窗]。 或按 **F4** 鍵)。
 
-5. 在 [屬性] 視窗的 [設計] 區段中，將名稱從 "Button1" 變更為 "btnClickThis"，然後按 **Enter** 鍵。
+5. 在 [屬性] 視窗的 [設計] 區段中，將名稱從 **Button1** 變更為 `btnClickThis`，然後按 **Enter** 鍵。
 
      ![新增表單上按鈕的函式](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>將標籤新增至表單
 既然我們已新增可建立動作的按鈕控制項，讓我們新增可將文字傳送至其中的標籤控制項。
 
-1. 從 [工具箱] 視窗中選取 [標籤] 控制項，然後將它拖放至表單的 [Click this] 按鈕下方。
+1. 從 [工具箱] 視窗中選取 [標籤] 控制項，然後將它拖放至表單的 [按一下這裡] 按鈕下方。
 
-2. 在 [屬性] 視窗的 [設計] 區段中，將名稱從 "Label1" 變更為 "lblHelloWorld"，然後按 **Enter** 鍵。
+2. 在 [屬性] 視窗的 [設計] 區段中，將名稱從 **Label1** 變更為 `lblHelloWorld`，然後按 **Enter** 鍵。
 
 ### <a name="add-code-to-the-form"></a>將程式碼新增至表單
 
@@ -91,9 +91,9 @@ ms.lasthandoff: 03/09/2018
 
      ![按一下 [啟動] 偵錯和執行應用程式](../ide/media/vb-click-start-hello-world.png)
 
-   會發生數種情況。 在 Visual Studio IDE 中，將會開啟 [診斷工具] 視窗，也會開啟 [輸出] 視窗。 但在 IDE 外部，會出現 [Form1] 對話方塊。 它將包含您的 [Click this] 按鈕，以及指出 "Label1" 的文字。
+   會發生數種情況。 在 Visual Studio IDE 中，會開啟 [診斷工具] 視窗和 [輸出] 視窗。 但在 IDE 外部，會出現 **Form1** 對話方塊。 其中包含您的 [按一下這裡] 按鈕，以及顯示 **Label1** 的文字。
 
-2. 按一下 [Form1] 對話方塊中的 [Click this] 按鈕。 請注意，"Label1" 文字會變更為 "Hello World!"。
+2. 按一下 [Form1] 對話方塊中的 [Click this] 按鈕。 請注意，**Label1** 文字會變更為 **Hello World!**。
 
     ![包含 Label1 文字的 Form1 對話方塊 ](../ide/media/vb-form1-dialog-hello-world.png)
 

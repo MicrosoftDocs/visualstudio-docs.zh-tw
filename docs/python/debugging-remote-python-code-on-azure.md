@@ -1,27 +1,27 @@
 ---
-title: "在 Visual Studio 中使用 Python 進行 Azure 遠端偵錯 | Microsoft Docs"
-description: "如何設定 Azure App Service 以使用 Visual Studio 來為 Python 應用程式進行遠端偵錯。"
-ms.custom: 
+title: 使用 Python 進行 Azure 遠端偵錯 | Microsoft Docs
+description: 如何設定 Azure App Service 以使用 Visual Studio 來為 Python 應用程式進行遠端偵錯。
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0bf21ef477b334dccf872d3ca405c0ac4fa1c1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d74e4425bfcaefbd1bb13e368ee719acaa3bae80
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>對 Azure 上的 Python 程式碼進行遠端偵錯
 

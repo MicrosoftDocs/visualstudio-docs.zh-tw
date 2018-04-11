@@ -1,15 +1,15 @@
 ---
-title: "在 Visual Studio 中使用 Python，步驟 0：安裝 | Microsoft Docs"
-description: "在 Visual Studio 內使用 Python 之核心教學課程的步驟 0 (必要條件)，涵蓋在 Visual Studio 中安裝 Python 支援的方式。"
-ms.custom: 
+title: 使用 Python 的步驟 0：安裝 | Microsoft Docs
+description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 0 (必要條件)，涵蓋在 Visual Studio 中安裝 Python 支援的方式。
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 
