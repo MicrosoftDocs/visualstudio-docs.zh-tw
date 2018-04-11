@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -201,4 +201,4 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 ## <a name="see-also"></a>另請參閱
 
-如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
+如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)。

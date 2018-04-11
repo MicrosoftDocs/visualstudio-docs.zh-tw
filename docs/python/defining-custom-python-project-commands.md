@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -50,7 +50,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 `.targets` 檔案�
 
 為了讓您更熟悉自訂命令，本節將透過使用 python.exe 直接執行專案設定檔的簡單範例為您進行逐步解說。 (此命令與使用 [偵錯] > [啟動但不偵錯] 的效果相同。)
 
-1. 使用「Python 應用程式」範本建立名為 "Python-CustomCommands" 的新專案。 (若仍對程序不熟悉，請參閱[快速入門：從範本建立 Python 專案](quickstart-02-project-from-template.md)的說明。)
+1. 使用「Python 應用程式」範本建立名為 "Python-CustomCommands" 的新專案。 (若仍對程序不熟悉，請參閱[快速入門：從範本建立 Python 專案](quickstart-02-python-in-visual-studio-project-from-template.md)的說明。)
 
 1. 在 `Python_CustomCommands.py` 中新增程式碼 `print("Hello custom commands")`。
 
@@ -152,7 +152,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 `.targets` 檔案�
 | TargetType | [是] | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 `python.exe`，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
 | 目標 | [是] | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
 | 引數 | Optional | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 `python.exe`。 若為 `code` TargetType 請予以略過。 |
-| ExecuteIn | [是] | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式視窗](interactive-repl.md)中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
+| ExecuteIn | [是] | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式視窗](python-interactive-repl-in-visual-studio.md)中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中執行命令的資料夾。 |
 | ErrorRegex<br>WarningRegEx | Optional | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單] 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單] 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | Optional | 命令的套件需求清單，格式與 [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io) 相同。 例如 [執行 PyLint] 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |

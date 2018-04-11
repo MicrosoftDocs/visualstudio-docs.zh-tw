@@ -5,19 +5,19 @@ ms.date: 03/11/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 809f9121be867785e6d92966ccf92b012740daab
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 

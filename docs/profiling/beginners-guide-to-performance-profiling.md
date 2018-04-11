@@ -7,7 +7,7 @@ ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -43,6 +43,12 @@ ms.lasthandoff: 03/15/2018
 
 > [!NOTE]
 > 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
+
+在本教學課程中，您將進行下列作業：
+
+> [!div class="checklist"]
+> * 收集 CPU 使用量資料
+> * 分析 CPU 使用量資料
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料 
   
@@ -55,7 +61,7 @@ ms.lasthandoff: 03/15/2018
   
 3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
 
-4.  您可以透過工具列上的 **[Select Tools (選取工具)]** 設定來選擇是否要查看 **[CPU Usage (CPU 使用量)]**、[[Memory Usage (記憶體使用量)]](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
+4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
 
      ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
@@ -155,9 +161,10 @@ ms.lasthandoff: 03/15/2018
 
 > [!TIP]
 > 如果您剖析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
-  
-## <a name="see-also"></a>請參閱  
- [記憶體使用量](../profiling/memory-usage.md)  
- [CPU 使用量](../profiling/cpu-usage.md)  
- [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>後續步驟
+
+在本教學課程中，您已了解如何收集並分析 CPU 使用量資料。 如果您已完成[分析工具導覽](../profiling/profiling-feature-tour.md)，建議您快速查看如何分析應用程式的記憶體使用量。
+
+> [!div class="nextstepaction"]
+> [分析記憶體使用量](../profiling/memory-usage.md) 
