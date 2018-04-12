@@ -1,14 +1,14 @@
 ---
-title: "將私人網路中的 URL 置於白名單中 | Microsoft Docs"
-ms.custom: 
+title: 將私人網路中的 URL 置於允許清單中 | Microsoft Docs
+ms.custom: ''
 ms.date: 09/19/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/15/2018
 ---
-# <a name="whitelisting-urls-in-a-private-network"></a>將私人網路中的 URL 置於白名單中
+# <a name="whitelisting-urls-in-a-private-network"></a>將私人網路中的 URL 置於允許清單中
 
 如果您在使用安全性設備 (例如防火牆) 的私人網路中使用 Visual Studio，Visual Studio 可能無法連線到某些網路資源。 這些資源包括用於登入和授權的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服務。 如果 Visual Studio 無法連線到這些資源的其中一項，您會看到以下錯誤訊息：
 

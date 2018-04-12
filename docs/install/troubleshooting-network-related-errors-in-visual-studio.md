@@ -38,7 +38,7 @@ ms.lasthandoff: 04/03/2018
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中依提示輸入您的認證。
 
-- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於白名單上，以解除封鎖 Visual Studio 中的所有登入案例：
+- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於允許清單上，以解除封鎖 Visual Studio 中的所有登入案例：
 
     - &#42;.windows.net
 
