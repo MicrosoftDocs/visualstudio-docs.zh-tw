@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/10/2018
   
  若要部署的擴充功能的主要[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他電腦，請遵循下列步驟：  
   
-1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\\\*.vsix  
+1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix  
   
 2.  將這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。  
   
