@@ -1,5 +1,5 @@
 ---
-title: "型別集合編輯器對話方塊 |Microsoft 文件"
+title: 型別集合編輯器對話方塊 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f873ef2f2f30e307c7f9ec16a612eb76d09633c9
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 77de1cdcffc1303a439afe743cdfd52b121779d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 

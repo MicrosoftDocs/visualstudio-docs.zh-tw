@@ -1,12 +1,10 @@
 ---
-title: "如何： 使用快取資料，離線或伺服器上 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用快取資料，離線或伺服器上 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 44130744af5d09e8582e2589bcefb7aca11b5ce2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 91b50684e18aaf4b7b6d95d24c81ecb56bdefc4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：快取資料供離線使用或於伺服器上使用
   您可以標示資料項目，快取中的文件，以便提供離線。 這也使得資料中操作其他程式碼時，文件儲存在伺服器上的文件。  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**屬性**視窗中，將**修飾詞**屬性**公用**(根據預設，它是**內部**)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快取資料](../vsto/caching-data.md)   
  [如何： 以程式設計方式快取中的 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

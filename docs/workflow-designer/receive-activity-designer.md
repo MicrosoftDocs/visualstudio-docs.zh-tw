@@ -1,5 +1,5 @@
 ---
-title: "Receive 活動設計工具 |Microsoft 文件"
+title: Receive 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 **接收**活動設計工具用來建立及設定<xref:System.ServiceModel.Activities.Receive>活動。 <xref:System.ServiceModel.Activities.Receive> 活動是接收訊息的活動，該訊息可能是內建的型別 (例如 <xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream> 或 <xref:System.Xml.Linq.XElement>)，或是應用程式定義的資料合約、訊息合約或可序列化的 XML 類別。
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|指定這個 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之已知型別的集合。 這個屬性應該搭配 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 屬性 (設定為 <xref:System.Runtime.Serialization.DataContractSerializer>) 使用。 如果使用 <xref:System.Xml.Serialization.XmlSerializer>，則會忽略此項。<br /><br /> 按一下旁邊的橢圓形按鈕**KnownTypes**欄位在屬性方格中顯示**型別集合編輯器**對話方塊中，您可以加入相關型別。 如需使用此方塊的詳細資訊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|指定訊息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>表示僅有驗證。<br />2。<xref:System.Net.Security.ProtectionLevel>表示簽署資料以協助確保傳輸之資料的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>表示加密並簽署資料以協助確保傳輸資料的完整性與機密性。|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|指定 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之序列化程式的型別。 預設值是 <xref:System.Runtime.Serialization.DataContractSerializer>，這會使用提供的資料合約，將型別的執行個體序列化及還原序列化，成為 XML 資料流或文件。 如果 XML 需要更多控制，也可以使用 <xref:System.Xml.Serialization.XmlSerializer>。|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|指定訊息的動作標頭。 如果它未明確設定，其值會預設為： https://tempuri.org/ {服務合約命名空間} / {服務合約名稱} / {作業名稱}。|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|指定訊息的動作標頭。 如果它未明確設定，其值會預設為：https://tempuri.org/{service合約命名空間} / {服務合約名稱} / {作業名稱}。|
 
 ## <a name="see-also"></a>另請參閱
 

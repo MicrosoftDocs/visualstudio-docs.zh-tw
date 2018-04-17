@@ -1,5 +1,5 @@
 ---
-title: "如何： 建立循序工作流程主控台應用程式 （舊版） |Microsoft 文件"
+title: 如何： 建立循序工作流程主控台應用程式 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 9f7be7fa-551f-42c6-a9bb-f5ae8ab83625
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211c750dd0baa1dad0a365310b3636c0d0922882
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 26b479fb5f926d6dff0e1db05fe36fc4354ec89d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>HOW TO：建立循序工作流程主控台應用程式 (舊版)
 請遵循下列步驟來建立循序工作流程主控台應用程式專案使用舊版所提供的 Windows 工作流程設計工具[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  啟動 Visual Studio。
 
-2.  在**檔案**功能表上，指向**新增**，然後選取**專案**。
+2.  在 [檔案] 功能表上，指向 [新增]，然後選取 [專案]。
 
      [ **新增專案** ] 對話方塊隨即開啟。
 

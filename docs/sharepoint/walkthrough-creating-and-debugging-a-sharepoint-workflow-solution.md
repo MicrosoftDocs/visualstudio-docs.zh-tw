@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立和 SharePoint 工作流程方案進行偵錯 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立和 SharePoint 工作流程方案進行偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 687116b1fc7f3ad935583b41ff9c19d2d5d13613
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 90015dce107eb15859fcb707cc265b84840ca546
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>逐步解說：建立並偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫來判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。  
@@ -292,7 +291,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要了解有關 Windows Workflow Foundation 活動的詳細資訊，請參閱[.net 命名空間](http://go.microsoft.com/fwlink/?LinkId=178993)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

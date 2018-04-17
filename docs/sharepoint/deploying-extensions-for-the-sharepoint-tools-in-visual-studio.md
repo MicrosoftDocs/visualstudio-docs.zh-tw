@@ -1,13 +1,10 @@
 ---
-title: "部署的 Visual Studio 中的 SharePoint 工具擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 部署的 Visual Studio 中的 SharePoint 工具擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中 SharePoint 工具的擴充功能
   若要部署的 SharePoint 工具擴充功能，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝，其中包含延伸模組組件和任何其他您想要發佈副檔名的檔案。 VSIX 封裝是壓縮的檔案，會遵循開放封裝慣例 (OPC) 標準。 VSIX 封裝具有.vsix 副檔名。  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**方案總管 中**，開啟您專案範本或項目範本專案的捷徑功能表，然後選擇**卸載專案**。  
   
-7.  同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯***YourTemplateProjectName***.csproj**或**編輯***YourTemplateProjectName***.vbproj**。  
+7.  同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯***YourTemplateProjectName***.csproj**或**編輯***YourTemplateProjectName***。vbproj**。  
   
 8.  找出下列`VSTemplate`專案檔中的項目。  
   
@@ -263,7 +260,7 @@ ms.lasthandoff: 01/10/2018
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   

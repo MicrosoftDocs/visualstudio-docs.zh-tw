@@ -1,13 +1,10 @@
 ---
-title: "文件層級自訂的架構 |Microsoft 文件"
-ms.custom: 
+title: 文件層級自訂的架構 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：  
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 如需建立文件層級自訂的一般資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)， [word 文件層級自訂程式設計入門](../vsto/getting-started-programming-document-level-customizations-for-word.md)，和[適用於 Excel 的文件層級自訂程式設計入門](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
+ 如需建立文件層級自訂的一般資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)，[取得啟動文件層級自訂程式設計 word](../vsto/getting-started-programming-document-level-customizations-for-word.md)，和[適用於 Excel 的文件層級自訂程式設計入門](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
   
 ##  <a name="UnderstandingCustomizations"></a> Understanding Customizations  
  當您使用 Visual Studio 中的 Office Developer Tools 建置文件層級自訂時，會建立與特定文件相關聯的 Managed 程式碼組件。 文件或活頁簿中若是有連結的組件就稱為具有 Managed 程式碼擴充。 如需詳細資訊，請參閱 [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)。  
   
  當使用者開啟文件時，Microsoft Office 應用程式會載入組件。 載入組件之後，自訂就能回應開啟文件時的事件。 自訂還可以呼叫物件模型，以在開啟文件時自動化及擴充應用程式，而且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何類別。  
   
- 組件會透過應用程式的主要 Interop 組件與應用程式的 COM 元件進行通訊。 如需詳細資訊，請參閱[Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)和[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 組件會透過應用程式的主要 Interop 組件與應用程式的 COM 元件進行通訊。 如需詳細資訊，請參閱[Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)和[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  如果使用者同時開啟多個文件層級自訂，每個組件會在不同的應用程式定義域中載入。 這表示如果某個方案運作失常，並不會導致其他方案失敗。 文件層級自訂設計成搭配單一應用程式定義域中的單一文件使用， 而不是設計成跨文件進行通訊。 如需應用程式定義域的詳細資訊，請參閱[應用程式定義域](/dotnet/framework/app-domains/application-domains)。  
   
@@ -146,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]呼叫**啟動**自訂組件中的事件處理常式。 如需詳細資訊，請參閱 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

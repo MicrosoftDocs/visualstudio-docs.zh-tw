@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 使用按鈕在文件中的文字方塊中顯示文字 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用按鈕在文件中的文字方塊中顯示文字 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - text boxes, displaying text in documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 803dcbe27eedc4b93443a6389b4acf7ee2dc08cf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 086137debfa35cb08dfa3b315208ce3686d74153
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：使用按鈕在文件的文字方塊中顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。  
@@ -114,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 -   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說： 更新文件使用選項按鈕中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   

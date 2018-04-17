@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 簡單資料繫結在 VSTO 增益集專案 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 簡單資料繫結在 VSTO 增益集專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d3f9d4f097d33f08133af4d1c42c140a6b7c04a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7288cf17f7870747399116a1b779c2fa3b67205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說：VSTO 增益集專案中的簡單資料繫結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件，以及在執行階段將控制項繫結至資料。  
@@ -149,7 +146,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  按 [ **下一個** ] 和 [ **前一個** ] 按鈕，即可捲動資料庫記錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   

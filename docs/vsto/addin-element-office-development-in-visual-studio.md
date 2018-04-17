@@ -1,12 +1,10 @@
 ---
-title: "&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - <addin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b362894449670a7c672d36fa5b7421a9efb0976b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5795c15b4e7ecaa29a26d942fb09122aae6a579f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `addin` 命名空間的 `vstav3` 項目包含 Microsoft Office VSTO 增益集和使用 Visual Studio 開發之文件層級自訂的特定資訊。  
-  
+
 ## <a name="syntax"></a>語法  
-  
+
 ```  
 <addIn>  
   <entryPointsCollection>  
@@ -50,33 +49,33 @@ ms.lasthandoff: 01/10/2018
   </application  
 </addIn>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>項目和屬性  
  `addin` 命名空間的 `vstav3` 項目包含 Office 方案和 Microsoft Office 應用程式的相關資訊。 此項目必須位於下列命名空間： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子項目也必須在這個命名空間中。  
-  
+
  `addin` 項目沒有任何屬性。  
-  
+
  `addin` 項目具有下列子項目。  
-  
+
 ### <a name="entrypoints"></a>entryPoints  
- 必要。 `entryPoints`項目述[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
-  
+ 必要。 `entryPoints`項目述[&#60;進入點&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
+
 ### <a name="update"></a>更新  
- 必要。 `update`項目述[&#60; update &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/update-element-office-development-in-visual-studio.md).  
-  
+ 必要。 `update`項目述[&#60;更新&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
+
 ### <a name="postactions"></a>postActions  
- 選擇性。 `postActions`項目述[&#60; postActions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactions-element-office-development-in-visual-studio.md).  
-  
+ 選擇性。 `postActions`項目述[ &#60;postActions&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。  
+
 ### <a name="application"></a>應用程式  
- 必要。 `application`項目述[&#60; 應用程式 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/application-element-office-development-in-visual-studio.md).  
-  
+ 必要。 `application`項目述[&#60;應用程式&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
+
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
-  
+
 ### <a name="description"></a>描述  
  下列程式碼範例說明使用 `addin` 部署之文件層級 Office 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
-  
+
 ### <a name="code"></a>程式碼  
-  
+
 ```  
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
@@ -133,14 +132,14 @@ ms.lasthandoff: 01/10/2018
   </vstav3:application>  
 </vstav3:addIn>  
 ```  
-  
+
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
-  
+
 ### <a name="description"></a>描述  
  下列程式碼範例說明使用 `addin` 部署之應用程式層級 Office 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
-  
+
 ### <a name="code"></a>程式碼  
-  
+
 ```  
 <vstav3:addIn   
   xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">  
@@ -191,10 +190,8 @@ ms.lasthandoff: 01/10/2018
   </vstav3:application>  
 </vstav3:addIn>  
 ```  
-  
-## <a name="see-also"></a>請參閱  
+
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  

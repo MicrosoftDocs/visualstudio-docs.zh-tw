@@ -1,23 +1,21 @@
 ---
-title: "XML 結構描述設計工具 |Microsoft 文件"
-ms.custom: 
+title: XML 結構描述設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8847f079646f2c90d50c7a7f3c8ecbd5c510150
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 500350673e8392491d07202b2a38197546a1f8ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 結構描述設計工具
 本章節描述如何使用 XML 結構描述設計工具完成一般工作。  
@@ -56,5 +54,5 @@ ms.lasthandoff: 12/22/2017
  [範例 XSD 檔案](../xml-tools/sample-xsd-files.md)  
  提供用於工作範例之範例 XSD 文件的程式碼清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 結構描述設計工具](../xml-tools/xml-schema-designer.md)

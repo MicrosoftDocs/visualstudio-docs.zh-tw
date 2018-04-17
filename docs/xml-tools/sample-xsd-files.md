@@ -1,23 +1,21 @@
 ---
-title: "範例 XSD 檔案 |Microsoft 文件"
-ms.custom: 
+title: 範例 XSD 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 6a3d0ab6-825e-42fa-8df0-37fbc5da9e73
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 98783b05d531f41583bbd3843e50a808f655ba2b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ae8689d1896920add4adb043057c575e3ad4d80d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-xsd-files"></a>範例 XSD 檔案
 XSD 結構描述設計工具文件中使用下列範例檔案。  

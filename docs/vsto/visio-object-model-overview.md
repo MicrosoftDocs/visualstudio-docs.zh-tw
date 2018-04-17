@@ -1,12 +1,10 @@
 ---
-title: "Visio 物件模型概觀 |Microsoft 文件"
-ms.custom: 
+title: Visio 物件模型概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Visio object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e829842f4e530b014a19f69c567a91dc49bd78e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0e77256d800cb23b61a6680cdf59e60a39c7b57e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visio-object-model-overview"></a>Visio 物件模型概觀
   若要開發 Microsoft Office Visio 的 Office 方案，您可以與 Visio 物件模型互動。 此物件模型是由類別和介面，提供 Visio 主要 interop 組件，而且 Microsoft.Office.Interop.Visio 命名空間中定義所組成。  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
   
  如需詳細資訊，請參閱 [Office 主要 Interop 組件中的類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=189592) 和 [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [使用 Visio 文件](../vsto/working-with-visio-documents.md)   
  [使用 Visio 圖形](../vsto/working-with-visio-shapes.md)  

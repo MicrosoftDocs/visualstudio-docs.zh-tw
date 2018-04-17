@@ -1,23 +1,21 @@
 ---
-title: "編輯 XSLT 樣式表 |Microsoft 文件"
-ms.custom: 
+title: 編輯 XSLT 樣式表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c2e405c988f07a373538e723b44acccc9838d853
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a228c83972c31875b9c8923922d36c9bc638380f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-xslt-style-sheets"></a>編輯 XSLT 樣式表
 XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器功能，如 IntelliSense、大綱、XML 片段等。 此外，還有可讓您在 XSLT 中更輕鬆地進行開發的新功能。  
@@ -40,5 +38,5 @@ XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器
  **偵錯 XSLT**  
  您可以從 XML 編輯器中的 XSLT 檔案，啟動 XSLT 偵錯工具。 偵錯工具支援在 XSLT 檔案中設定中斷點、檢視 XSLT 執行狀態等。 停留在 XSLT 變數上，即會出現具有變數值的工具提示。 偵錯工具可用於偵錯樣式表，或偵錯從另一個應用程式叫用的已編譯 XSL 轉換。 如需詳細資訊，請參閱[偵錯 XSLT](../xml-tools/debugging-xslt.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 在文件層級專案中的簡單資料繫結 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在文件層級專案中的簡單資料繫結 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：文件層級專案中的簡單資料繫結
   本逐步解說示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的之單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也會示範如何加入控制項，可讓您捲動資料表中的所有記錄。  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  確認第一筆記錄會出現在資料格中**A1**和**B1**。  
   
-3.  按一下 **>**  (`Button3`) 按鈕，然後確認 下一筆記錄顯示在儲存格中**A1**和**B1**。  
+3.  按一下**>** (`Button3`) 按鈕，然後確認 下一筆記錄顯示在儲存格中**A1**和**B1**。  
   
 4.  按一下 其他捲軸按鈕，以確認變更如預期般記錄。  
   
@@ -194,7 +193,7 @@ ms.lasthandoff: 01/10/2018
   
 -   使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[How to： 使用 Windows Form BindingNavigator 控制項的瀏覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [逐步解說：文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  

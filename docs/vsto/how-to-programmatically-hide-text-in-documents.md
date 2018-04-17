@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式隱藏文件中的文字 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式隱藏文件中的文字 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], hiding in documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 252a6356955af9e1529dff046448efbc57d9638f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b8e2ea2f5f8af3876fe64d90d5f2d77874ebb252
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以程式設計方式在文件中隱藏文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="compiling-the-code"></a>編譯程式碼  
  這個程式碼範例假設文件包含名為 <xref:Microsoft.Office.Tools.Word.Bookmark> 的 <xref:Microsoft.Office.Interop.Word.Bookmark> 控制項 (文件層級自訂) 或 `bookmark1`控制項 (VSTO 增益集)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)   
  [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [如何： 以程式設計方式在 Word 中重設範圍的文件](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   

@@ -1,12 +1,10 @@
 ---
-title: "使用 ClickOnce 部署 Office 解決方案 |Microsoft 文件"
-ms.custom: 
+title: 使用 ClickOnce 部署 Office 解決方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，如果同一部電腦上有多位使用者將執行您的方案，您應該考慮使用 Windows Installer (.msi)。  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  如需如何建立 Windows Installer 檔案來部署 Office 方案的詳細資訊，請參閱[部署 Office 方案使用 Windows installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
-##  <a name="Publish"></a>發行方案  
- 您可以使用，以發行您的方案**發行精靈**或**專案設計工具**。 在此程序，您將使用**專案設計工具**因為它提供一組完整的發行選項。 請參閱[發行精靈 &#40; 的 Office 程式開發 Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
+##  <a name="Publish"></a> 發行方案  
+ 您可以使用，以發行您的方案**發行精靈**或**專案設計工具**。 在此程序，您將使用**專案設計工具**因為它提供一組完整的發行選項。 請參閱[發行精靈&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
   
 #### <a name="to-publish-the-solution"></a>若要發行方案  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. 將方案檔複製到您在本程序前段指定的安裝位置。  
   
-##  <a name="Trust"></a>決定您要授與信任給方案的方式  
+##  <a name="Trust"></a> 決定您要授與信任給方案的方式  
  在使用者電腦上執行方案之前，您必須先授與信任，或是使用者必須在安裝方案時回應信任提示。 若要對方案授與信任，請使用確認為知名且受信任之發行者的憑證來簽署資訊清單。 請參閱[信任方案透過簽署應用程式和部署資訊清單](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
  如果您要部署文件層級自訂，而且您想要在文件放在使用者電腦上的資料夾或 SharePoint 網站上提供文件，請確定 Office 信任文件的位置。 請參閱[授與信任給文件](../vsto/granting-trust-to-documents.md)。  
   
-##  <a name="Helping"></a>協助使用者安裝方案  
+##  <a name="Helping"></a> 協助使用者安裝方案  
  使用者能夠安裝方案的方式包括：執行安裝程式、開啟部署資訊清單，或是在文件層級自訂的情況下直接開啟文件。 最理想的做法是使用者應使用安裝程式安裝您的方案。 另外兩個方法都無法保證能夠安裝的先決條件軟體。 如果使用者想要從安裝位置開啟文件，則必須將文件加入至 Office 應用程式的 [信任中心] 中信任的位置清單。  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>開啟文件層級自訂的文件  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。 然後您必須清除瀏覽器的磁碟快取，並嘗試再次開啟 .vsto 檔案。  
   
-##  <a name="Put"></a>將方案文件放置到終端使用者的電腦 （文件層級自訂）  
+##  <a name="Put"></a> 將方案文件放置到終端使用者的電腦 （文件層級自訂）  
  您可以為其複製到終端使用者電腦上將方案文件，藉由建立部署後動作。 這樣一來，在使用者不需要他們的電腦從安裝位置以手動方式複製文件之後安裝您的方案。 您必須建立定義部署後動作的類別、 建置及發行方案、 修改應用程式資訊清單，及重新簽署應用程式和部署資訊清單。  
   
  下列程序假設您的專案名稱是**ExcelWorkbook**您發行至方案和**C:\publish**目錄電腦上。  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  將 ExcelWorkbook.vsto 檔案複製**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目錄。  
   
-##  <a name="SharePoint"></a>將方案文件放置到執行 SharePoint （文件層級自訂） 伺服器  
+##  <a name="SharePoint"></a> 將方案文件放置到執行 SharePoint （文件層級自訂） 伺服器  
  您可以使用 SharePoint 將文件層級自訂發行至終端使用者。 當使用者前往 SharePoint 網站並開啟文件時，執行階段會自動將共用網路資料夾中的方案安裝到使用者的本機電腦。 方案安裝到本機上之後，即使文件是複製到其他地方 (例如桌面)，自訂仍舊會執行。  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>若要將文件放置到執行 SharePoint 的伺服器上  
@@ -330,7 +329,7 @@ ms.lasthandoff: 01/10/2018
   
         3.  選取**（不建議使用） 網路上允許之信任位置**核取方塊，，然後選擇 [**加入新的位置**] 按鈕。  
   
-        4.  在**路徑**方塊中，輸入包含您上傳的文件的 SharePoint 文件庫 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
+        4.  在**路徑**方塊中，輸入包含您上傳的文件的 SharePoint 文件庫 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*)。  
   
              請勿將加入預設網頁上，例如 default.aspx 或 AllItems.aspx 的名稱。  
   
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              當使用者從 SharePoint 網站開啟文件時，文件隨即開啟，而且會安裝自訂。 使用者可以將文件複製到桌面。 自訂仍舊會執行，因為文件中的屬性是指向文件的網路位置。  
   
-##  <a name="Custom"></a>建立自訂安裝程式  
+##  <a name="Custom"></a> 建立自訂安裝程式  
  您可以建立自訂安裝程式為 Office 方案，而不是使用當您發行方案時，為您建立的安裝程式。 例如，您可以使用登入指令檔開始進行安裝，或使用批次檔安裝方案而無須與使用者互動。 使用者電腦上已安裝必要條件時，下列情境可獲得最佳效果。  
   
  在自訂安裝過程中，呼叫 Office 方案安裝程式工具 (VSTOInstaller.exe)，這個工具的預設安裝位置如下：  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|無法解除安裝方案。|  
 |-500|作業已取消，因為無法安裝或解除安裝方案，或是無法下載部署資訊清單。|  
   
-##  <a name="Update"></a>發行更新  
+##  <a name="Update"></a> 發行更新  
  若要更新方案，您將它發行一次使用**專案設計工具**或**發行精靈**，然後將更新的方案複製到安裝位置。 將檔案複製到安裝位置時，務必覆寫先前的檔案。  
   
  在下一次方案檢查更新時，它會尋找並自動載入新版本。  
   
-##  <a name="Location"></a>變更方案的安裝位置  
+##  <a name="Location"></a> 變更方案的安裝位置  
  您可以在發行方案之後，加入或變更安裝路徑。 基於下列其中一個或多個原因，您可能會想要變更安裝路徑：  
   
 -   在知道安裝路徑之前就已編譯安裝程式。  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  執行不含 /url 參數的安裝程式，在指定的位置安裝方案。  
   
-##  <a name="Roll"></a>將方案復原為舊版  
+##  <a name="Roll"></a> 將方案復原為舊版  
  當您復原方案時，可以將使用者還原為該方案的舊版。  
   
 #### <a name="to-roll-back-a-solution"></a>若要復原方案  
@@ -459,7 +458,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [發行 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   

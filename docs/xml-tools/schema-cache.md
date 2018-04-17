@@ -1,23 +1,21 @@
 ---
-title: "結構描述快取 |Microsoft 文件"
-ms.custom: 
+title: 結構描述快取 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>結構描述快取
 XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。  
@@ -29,22 +27,22 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
 |Filename|描述|  
 |--------------|-----------------|  
 |catalog.xsd|XML 編輯器結構描述目錄檔案的結構描述。 如需結構描述目錄的詳細資訊，請參閱下方。|  
-|DotNetConfig.xsd|Web.Config 檔的結構描述，網址為 http://schemas.microsoft.com/.NETConfiguration/v2.0。|  
-|msbuild.xsd|MSBuild make 檔的結構描述，網址為 http://schemas.microsoft.com/developer/msbuild/2003。|  
+|DotNetConfig.xsd|Web.Config 檔案的結構描述 」http://schemas.microsoft.com/.NETConfiguration/v2.0"。|  
+|msbuild.xsd|MSBuild make 檔中，結構描述 」http://schemas.microsoft.com/developer/msbuild/2003"。|  
 |msdata.xsd|<xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。|  
 |msxsl.xsd|Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。|  
 |SnippetFormat.xsd|程式碼片段 XML 檔案的結構描述。 例如，請參閱 %InstallDir%\VC#\Expansions。|  
-|Soap1.1.xsd|簡易物件存取通訊協定 (SOAP) 1.1 的結構描述，網址為 http://schemas.xmlsoap.org/soap/envelope/。|  
+|Soap1.1.xsd|簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述http://schemas.xmlsoap.org/soap/envelope/。|  
 |Soap1.2.xsd|簡易物件存取通訊協定 1.2 的結構描述。|  
-|SiteMapSchema.xsd|ASP.NET SiteMap XML 檔案的結構描述，網址為 http://schemas.microsoft.com/AspNet/SiteMap-File-1.0。|  
-|wsdl.xsd|Web 服務描述語言的結構描述，網址為 http://schemas.xmlsoap.org/wsdl/。|  
-|xenc.xsd|XML 加密的結構描述，網址為 http://www.w3.org/2000/09/xmldsig#。|  
-|xhtml.xsd|XHTML 的結構描述，網址為 http://www.w3.org/1999/xhtml。|  
-|xlink.xsd|XLink1.0 的結構描述，網址為 http://www.w3.org/1999/xlink。|  
-|xml.xsd|說明 xml:space 及 xml:lang 屬性的結構描述，網址為 http://www.w3.org/XML/1998/namespace。|  
-|xmlsig.xsd|XML 數位簽章的結構描述，網址為 http://www.w3.org/2000/09/xmldsig#。|  
-|xsdschema.xsd|說明 XSD 本身的結構描述，網址為 http://www.w3.org/2001/XMLSchema。|  
-|xslt.xsd|XML 轉換的結構描述，網址為 http://www.w3.org/1999/XSL/Transform。|  
+|SiteMapSchema.xsd|ASP.NET sitemap XML 檔案的結構描述 」http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|  
+|wsdl.xsd|結構描述的 Web 服務描述語言， http://schemas.xmlsoap.org/wsdl/。|  
+|xenc.xsd|XML 加密的結構描述http://www.w3.org/2000/09/xmldsig#。|  
+|xhtml.xsd|XHTML 的結構描述http://www.w3.org/1999/xhtml。|  
+|xlink.xsd|XLink1.0，結構描述http://www.w3.org/1999/xlink。|  
+|xml.xsd|架構中描述的 xml: space 及 xml: lang 屬性http://www.w3.org/XML/1998/namespace。|  
+|xmlsig.xsd|XML 數位簽章的結構描述http://www.w3.org/2000/09/xmldsig#。|  
+|xsdschema.xsd|架構中描述的 XSD 本身當中， http://www.w3.org/2001/XMLSchema。|  
+|xslt.xsd|轉換的 XML 結構描述， http://www.w3.org/1999/XSL/Transform。|  
   
 ## <a name="updating-schemas-in-the-cache"></a>更新快取中的結構描述  
  編輯器會在載入 XML 編輯器封裝時，載入結構描述快取目錄，並於執行期間監看是否發生任何變更。 如果已加入結構描述，則會將其自動載入已知結構描述的記憶體中索引。 如果已移除結構描述，則會將其自動從記憶體中索引移除。 如果已更新結構描述，則會自動讓此結構描述的記憶體中快取失效。  
@@ -128,5 +126,5 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
   
      目錄會自動重新載入。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

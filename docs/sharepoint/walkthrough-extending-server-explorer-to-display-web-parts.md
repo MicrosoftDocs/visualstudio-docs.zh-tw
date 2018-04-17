@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 擴充伺服器總管 以顯示 Web 組件 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 擴充伺服器總管 以顯示 Web 組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 Web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連接**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，使其顯示 Web 組件庫上每個連線的 SharePoint 網站。  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  選擇**VSIX 專案**範本，將專案**WebPartNode**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNode**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNode**專案加入**方案總管 中**。  
   
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartNodeExtension**，然後選擇 [ **[確定]** ] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 5.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartCommands**，然後選擇 [ **[確定]** ] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 6.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  選擇箭號旁**新增**按鈕，然後再選擇**加入做為連結**中出現的功能表。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將程式碼檔案加入至 WebPartCommands 專案中，做為連結。 如此一來，在程式碼檔案位於 WebPartNodeExtension 專案，但檔案中的程式碼也會編譯 WebPartCommands 專案中。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將程式碼檔案加入至 WebPartCommands 專案中，做為連結。 如此一來，在程式碼檔案位於 WebPartNodeExtension 專案，但檔案中的程式碼也會編譯 WebPartCommands 專案中。  
   
 5.  開啟快顯功能表**WebPartCommands**同樣地，專案，選擇**加入參考**。  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  選擇**資源**索引標籤，然後選擇 **這個專案未包含預設的資源檔。按一下這裡可建立一個**連結。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立資源檔，並在設計工具中開啟。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立資源檔，並在設計工具中開啟。  
   
 4.  在設計工具的頂端，選擇箭號旁**加入資源**功能表命令，然後再選擇**加入新圖示**中出現的功能表。  
   
@@ -374,10 +373,10 @@ ms.lasthandoff: 01/10/2018
   
 4.  關閉 Visual Studio （實驗性執行個體和 WebPartNode 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [逐步解說： 呼叫 SharePoint 用戶端物件模型，在伺服器總管擴充功能](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
- [建立圖示或其他影像 &#40; 影像編輯器的圖示 &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

@@ -1,13 +1,10 @@
 ---
-title: "Office 主要 Interop 組件 |Microsoft 文件"
-ms.custom: 
+title: Office 主要 Interop 組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
   若要從 Office 專案使用 Microsoft Office 應用程式的功能，您必須使用應用程式的主要 Interop 組件 (PIA)。 PIA 可讓 Managed 程式碼與 Microsoft Office 應用程式的 COM 物件模型互動。  
@@ -111,7 +108,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="binding-redirect-assemblies"></a>繫結重新導向組件  
  當您在全域組件快取中安裝及註冊 Office PIA 時 (使用 Office 或是安裝 PIA 的可轉散發套件)，只會在全域組件快取中安裝繫結重新導向組件。 這些組件可確保執行階段載入的是正確版本的主要 Interop 組件。 例如，當參考 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 組件的方案會在具有相同主要 Interop 組件之 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的電腦上執行時，繫結重新導向組件會指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 執行階段載入 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主要 Interop 組件。 如需詳細資訊，請參閱[操作說明：啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [InfoPath 方案](../vsto/infopath-solutions.md)   
@@ -120,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [專案的方案](../vsto/project-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
- [一般參考 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [一般參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 剖析 SharePoint 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 剖析 SharePoint 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>逐步解說：剖析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您尋找並消除成本最高 （最慢執行） 專案的一部分，也稱為*最忙碌路徑*。  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  選擇**完成** 按鈕。 專案會出現在**方案總管 中**。  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>加入功能和功能事件接收器  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> 加入功能和功能事件接收器  
  接下來，在專案中加入功能與功能的事件接收器。 這個事件接收器會包含要分析的程式碼。  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>若要加入功能和功能事件接收器  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. 儲存專案。  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>設定和部署 SharePoint 應用程式  
+##  <a name="BKMK_ConfigSharePointApp"></a> 設定和部署 SharePoint 應用程式  
  現在 SharePoint 專案已就緒，請設定它並將它部署至 SharePoint 伺服器。  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>若要設定和部署 SharePoint 應用程式  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      此精靈可讓您在伺服器上的應用程式程式碼剖析，會顯示**效能總管**視窗中，然後建置、 部署和執行 SharePoint 應用程式。  
   
-##  <a name="BKMK_RunSPApp"></a>執行 SharePoint 應用程式  
+##  <a name="BKMK_RunSPApp"></a> 執行 SharePoint 應用程式  
  啟用 SharePoint 中的功能，觸發 `FeatureActivation` 事件程式碼使其執行。  
   
 #### <a name="to-run-the-sharepoint-application"></a>若要執行 SharePoint 應用程式  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      分析工具在您關閉 SharePoint 之後，建立並顯示樣本分析報告，然後將其儲存在.vsp 檔為**ProfileTest**專案的資料夾。  
   
-##  <a name="BKMK_ViewResults"></a>檢視及解譯分析結果  
+##  <a name="BKMK_ViewResults"></a> 檢視及解譯分析結果  
  現在您已執行並分析 SharePoint 應用程式，接下來要檢視測試結果。  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>若要檢視和解譯分析結果  
@@ -275,7 +274,7 @@ ms.lasthandoff: 01/10/2018
   
      現在功能啟動的速度應該加快許多，因為已消除呼叫閒置迴圈。 樣本分析報告應該會反映這種情況。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](/visualstudio/profiling/performance-explorer)   
  [效能工作階段概觀](/visualstudio/profiling/performance-session-overview)   
  [效能分析的初級開發人員指南](/visualstudio/profiling/beginners-guide-to-performance-profiling)   

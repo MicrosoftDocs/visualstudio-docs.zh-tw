@@ -1,23 +1,21 @@
 ---
-title: "範例 XSD 檔案： 簡單的結構描述 |Microsoft 文件"
-ms.custom: 
+title: 範例 XSD 檔案： 簡單的結構描述 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 328e1f69d8d48f04a3762f7639613ec400b68080
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ec7a88703439161eeeb99f0d1916d3f8306f4104
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是簡單的採購單結構描述。  

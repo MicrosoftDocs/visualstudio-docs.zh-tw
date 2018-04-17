@@ -1,23 +1,21 @@
 ---
-title: "其他、 XML、 文字編輯器、 選項對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 其他、 XML、 文字編輯器、 選項對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4773bf87e89bd504b477d9a1a31dfe961a3f29ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ccbdfae65792fb6816a0604db6339a9d63fa2ccb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、XML、文字編輯器、選項對話方塊
 此對話方塊可讓您變更 XML 編輯器的自動完成及結構描述設定。 您可以存取**選項**對話方塊從**工具**功能表。  
@@ -62,6 +60,6 @@ ms.lasthandoff: 12/22/2017
  **結構描述**  
  指定結構描述快取的位置。 瀏覽按鈕 (**...**) 開啟**目錄瀏覽**對話方塊在目前的結構描述快取位置。 您可以選取不同的目錄，或您可以在對話方塊中，選取資料夾按一下滑鼠右鍵，然後選擇 **開啟**查看目錄中的功能。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)

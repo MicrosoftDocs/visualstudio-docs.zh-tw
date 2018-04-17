@@ -1,13 +1,10 @@
 ---
-title: "Office 方案開發概觀 (VSTO) |Microsoft 文件"
-ms.custom: 
+title: Office 方案開發概觀 (VSTO) |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發概觀 (VSTO)
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。  
@@ -90,8 +87,8 @@ ms.lasthandoff: 01/10/2018
 ### <a name="security"></a>安全性  
  VSTO Office 方案的安全性是透過 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在安裝和載入方案時進行的一系列檢查來強制執行。 這些檢查包括確認是否信任部署資訊清單的位置，或是否信任用於簽署部署資訊清單的憑證。 如需詳細資訊，請參閱 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
-## <a name="see-also"></a>請參閱  
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [適用於 Excel 的文件層級自訂程式設計入門](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

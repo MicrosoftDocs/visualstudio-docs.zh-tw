@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立網站資料行、 內容類型，以及 sharepoint 清單 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立網站資料行、 內容類型，以及 sharepoint 清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程序示範如何建立自訂 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立使用新的內容類型的清單。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio。  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>建立自訂網站資料行  
+##  <a name="BKMK_CreatingCustSiteCols"></a> 建立自訂網站資料行  
  這個範例會建立管理中醫院病患的清單。 首先，您必須建立 SharePoint 專案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，如下所示，新增站台的資料行。  
   
 #### <a name="to-create-the-project"></a>若要建立專案  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  使用相同的程序，將兩個多站台的資料行加入至專案：**病患識別碼**(類型 = 「 整數 」) 和**醫生名稱**(類型 ="Text")。 將其群組值設定為**診所網站資料行**。  
   
-##  <a name="BKMK_CreateCustContType"></a>建立自訂的內容類型  
+##  <a name="BKMK_CreateCustContType"></a> 建立自訂的內容類型  
  接下來，建立內容類型，根據連絡人內容類型 — 包含您在上一個程序中建立的網站資料行。 由現有的內容類型為基礎的內容類型，您可以節省時間，因為基底內容類型提供數個站台的資料行用於新的內容類型。  
   
 #### <a name="to-create-a-custom-content-type"></a>若要建立自訂的內容類型  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 在功能表列上選擇 **檔案**，**全部儲存**，然後關閉 內容類型設計工具。  
   
-##  <a name="BKMK_CreateList"></a>建立清單  
+##  <a name="BKMK_CreateList"></a> 建立清單  
  現在，建立使用新內容型別和站台的資料行的清單。  
   
 #### <a name="to-create-a-list"></a>若要建立清單  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. 在**資料行名稱**清單中，選擇**病患名稱**，請確定**排序**資料行設為**遞增**，然後選擇 [ **確定**] 按鈕。  
   
-##  <a name="BKMK_TestApp"></a>測試應用程式  
+##  <a name="BKMK_TestApp"></a> 測試應用程式  
  既然自訂網站資料行、 內容類型和清單準備好時，將其部署至 SharePoint，並執行應用程式進行測試。  
   
 #### <a name="to-test-the-application"></a>若要測試應用程式  
@@ -226,7 +225,7 @@ ms.lasthandoff: 01/10/2018
   
      新的記錄會出現在清單中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint 的網站資料行、 內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [如何： 建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)   

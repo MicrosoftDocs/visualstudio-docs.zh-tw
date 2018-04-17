@@ -1,12 +1,10 @@
 ---
-title: "發行精靈 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: 發行精靈 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 (Visual Studio 中的 Office 程式開發)
   使用**發行精靈**將方案檔複製到指定的位置，建立資訊清單檔案，並建立安裝程式。  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
   
 -   通用命名慣例 (UNC) 路徑，例如\\\ServerName\MyApplication\\。  
   
--   例如 http://www.microsoft.com/MyApplication 網站的 URL。  
+-   URL 的 web 站台，例如http://www.microsoft.com/MyApplication。  
   
- 根據預設，如果您已安裝 IIS，發行位置為 *http://localhost/projectname/* ；如果未安裝 IIS，則為 publish\ 目錄。  
+ 根據預設，發行位置是*http://localhost/projectname/*是否已安裝了 IIS，則為 publish\ 目錄如果您未安裝 IIS。  
   
 > [!NOTE]  
 >  如果目標電腦執行 Windows Vista，則需要有多個考量。 您必須是 Windows Vista 電腦上的系統管理員，才能使用本機發行選項。 此外的預設位置是一律*發行\\*目錄下，不論您是否已安裝 IIS。  
@@ -68,9 +67,9 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio 不會不燒錄 CD 或 DVD。 您必須手動將輸出複製到 CD 或 DVD。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [發行頁面、 專案設計工具 &#40; 的 Office 程式開發 Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [專案設計工具、 發行頁&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   
   

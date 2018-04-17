@@ -1,23 +1,21 @@
 ---
-title: "XML 文件屬性，屬性視窗 |Microsoft 文件"
-ms.custom: 
+title: XML 文件屬性，屬性視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d6529d936515c23c193a38861f1f13b71002566
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性 (屬性視窗)
 **屬性**視窗會提供有關使用 XML 編輯器中的文件的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。  
@@ -48,6 +46,6 @@ ms.lasthandoff: 12/22/2017
   
  編輯 XSLT 檔時，這個屬性可用來指定應該在不同的樣式表時使用**顯示 XSLT 輸出**或**偵錯 XSLT**選取命令。 例如，當編輯包含在父樣式表中的樣式表時，您可能想要這樣做。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)

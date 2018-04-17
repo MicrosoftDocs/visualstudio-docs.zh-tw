@@ -1,13 +1,10 @@
 ---
-title: "必要的變更來執行您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案 |Microsoft 文件"
-ms.custom: 
+title: 必要的變更來執行您要移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee90d5c205f58736f7ccb6536e29b2fd6d16b152
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5df72bcf36907dbb556e8d7fffd30cb224bfd41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>移轉至 .NET Framework 4 或 .NET Framework 4.5 的 Office 專案在執行前所必須進行的變更
   如果 Office 專案的目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或稍後從.NET Framework 的較早版本，您必須執行下列工作，以確保解決方案可以在開發電腦和終端使用者電腦上執行：  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-solutions-on-end-user-computers"></a>在終端使用者電腦上重新安裝解決方案  
  如果您使用 ClickOnce 部署以 .NET Framework 3.5 為目標的 Office 解決方案，然後又將專案目標重定為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，則使用者必須解除安裝解決方案，並在您重新發行後再重新安裝解決方案。 如果您重新發行重定目標的解決方案，而使用者電腦上又更新了解決方案，則使用者會在執行更新的解決方案時收到 <xref:System.Runtime.InteropServices.COMException>。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將 Office 方案移轉至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
   
   

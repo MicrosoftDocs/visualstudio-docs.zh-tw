@@ -1,18 +1,18 @@
 ---
-title: "基本活動設計工具 |Microsoft 文件"
+title: 基本活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ebb0f80cd763a24ebffb2a5f5889e43d2db997
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: aba571ebb30b04cc1b7aab4bc46b0e8f5ff8493c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 
  [流程圖](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [訊息處理](../workflow-designer/messaging-activity-designers.md)
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 

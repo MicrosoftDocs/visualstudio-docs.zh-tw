@@ -1,25 +1,24 @@
 ---
-title: "逐步解說： 使用專案範本建立網站欄專案項目，第 2 部分 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用專案範本建立網站欄專案項目，第 2 部分 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)
   定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈在使用您的範本建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   偵錯和測試的精靈。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要執行本逐步解說，您必須先建立 SiteColumnProjectItem 解決方案完成[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱[資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
-##  <a name="wizardcomponents"></a>了解精靈元件  
+##  <a name="wizardcomponents"></a> 了解精靈元件  
  精靈在此逐步解說示範包含數個元件。 下表說明這些元件。  
   
 |元件|描述|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在專案範本清單中選擇**WPF 使用者控制項程式庫**，將專案命名**ProjectTemplateWizard**，然後選擇 [ **[確定]** ] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ProjectTemplateWizard**專案加入方案，並開啟預設 UserControl1.xaml 檔案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ProjectTemplateWizard**專案加入方案，並開啟預設 UserControl1.xaml 檔案。  
   
 6.  從專案刪除 UserControl1.xaml 檔案。  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  選擇**類別庫**專案範本，將專案命名**SharePointCommands**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 5.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. 如果您正在開發的 Visual Basic 專案，ProjectTemplateWizard 命名空間匯入您的專案使用**專案設計工具**。  
   
-     如需詳細資訊，請參閱[如何： 加入或移除已匯入命名空間 &#40;Visual Basic &#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     如需詳細資訊，請參閱[如何： 加入或移除已匯入命名空間&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointCommands 專案  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  選擇箭號旁**新增**按鈕，然後再選擇**加入做為連結**上出現的功能表選項。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]加入程式碼檔案， **SharePointCommands**為連結的專案。 程式碼檔案位於**ProjectTemplateWizard**中的專案，但是檔案中的程式碼也編譯**SharePointCommands**專案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 加入程式碼檔案， **SharePointCommands**為連結的專案。 程式碼檔案位於**ProjectTemplateWizard**中的專案，但是檔案中的程式碼也編譯**SharePointCommands**專案。  
   
 5.  在**SharePointCommands**專案中，加入另一個名為命令的程式碼檔案。  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     如需有關`WizardExtension`項目，請參閱[WizardExtension 項目 &#40;Visual Studio 範本 &#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     如需有關`WizardExtension`項目，請參閱[WizardExtension 項目&#40;Visual Studio 範本&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。  
   
 3.  儲存並關閉檔案。  
   
@@ -541,7 +540,7 @@ ms.lasthandoff: 01/10/2018
   
      如需有關如何部署資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能，請參閱[傳送 Visual Studio 擴充功能](/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立網站欄專案項目以專案範本，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

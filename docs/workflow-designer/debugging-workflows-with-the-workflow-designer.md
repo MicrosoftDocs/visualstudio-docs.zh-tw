@@ -1,5 +1,5 @@
 ---
-title: "偵錯工作流程與工作流程設計工具 |Microsoft 文件"
+title: 偵錯工作流程與工作流程設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf339fcc3555167351cedf8b2b34c446fe3b67ba
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 27e5811634e8c4cc5f14eb7ac0ee37e0c3273cdb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>使用工作流程設計工具偵錯工作流程
 

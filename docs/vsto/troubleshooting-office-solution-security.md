@@ -1,13 +1,10 @@
 ---
-title: "Office 方案安全性疑難排解 |Microsoft 文件"
-ms.custom: 
+title: Office 方案安全性疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ab3571da02fa56cd905369ee44e372aedea4e36
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-security"></a>Office 方案安全性疑難排解
   本主題包含當您使用保護 Office 方案時，可能會遇到的常見問題的解決提示。  
@@ -53,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
  管理使用 ieesc 時，Internet Explorer 7 的效果和更新版本中，找出網站和通用命名慣例 (UNC) 路徑，您信任並將其加入至其中一個信任的安全性區域 （近端內部網路或信任的網站）。如需如何管理區域相關資訊，請參閱[設定 ClickOnce 信任的發行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

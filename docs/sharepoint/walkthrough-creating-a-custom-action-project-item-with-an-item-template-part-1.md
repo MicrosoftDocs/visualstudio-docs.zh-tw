@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立自訂動作專案項目包含項目範本，第 1 部分 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立自訂動作專案項目包含項目範本，第 1 部分 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以藉由建立您自己的專案項目類型擴充 Visual Studio 中的 SharePoint 專案系統。 在本逐步解說，您將建立可加入至 SharePoint 專案，在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**網站動作**功能表的 SharePoint 網站。  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  這是獨立的逐步解說。 完成此逐步解說之後，您可以將項目範本的精靈增強專案項目。 如需詳細資訊，請參閱[逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說在開發電腦上：  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名稱**方塊中，輸入**CustomActionProjectItem**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**CustomActionProjectItem**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**CustomActionProjectItem**專案加入**方案總管 中**。  
   
 #### <a name="to-create-the-item-template-project"></a>若要建立專案項目範本  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名稱**方塊中，輸入**ItemTemplate**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ItemTemplate**專案加入方案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ItemTemplate**專案加入方案。  
   
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名稱**方塊中，輸入**ProjectItemDefinition**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ProjectItemDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ProjectItemDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 5.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -430,7 +429,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  如果**指令碼偵錯已停用**對話方塊出現時，選擇 **是**按鈕以繼續進行偵錯專案。  
   
-4.  在**網站動作**功能表上，選擇**SharePoint 開發人員中心**，確認 瀏覽器中開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，，然後關閉網頁瀏覽器。  
+4.  上**網站動作**功能表上，選擇**SharePoint 開發人員中心**，請確認瀏覽器會開啟網站http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉網頁瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
  在您完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  
@@ -452,13 +451,13 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>後續步驟  
  完成此逐步解說之後，精靈可以加入項目範本。 當使用者加入自訂動作專案項目加入 SharePoint 專案時，精靈會收集資訊的動作 （例如其位置和選擇的動作時，瀏覽至 URL） 並將這項資訊加入至 Elements.xml 檔案，在新的專案項目。 如需詳細資訊，請參閱[逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立自訂動作專案項目包含項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   
  [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
- [建立圖示或其他影像 &#40; 影像編輯器的圖示 &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

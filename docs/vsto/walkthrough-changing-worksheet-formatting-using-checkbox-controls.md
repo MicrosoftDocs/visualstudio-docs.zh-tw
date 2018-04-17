@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 變更工作表使用 CheckBox 控制項 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 變更工作表使用 CheckBox 控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項來變更工作表格式
   本逐步解說示範使用 Microsoft Office Excel 工作表上的核取方塊變更格式的基本概念。 您將使用 Visual Studio 中的 Office 程式開發工具建立，並將程式碼加入至您的專案。 若要查看結果為已完成的範例，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
     |屬性|值|  
     |--------------|-----------|  
     |**名稱**|**applyUnderlineFont**|  
-    |**Text**|**加上底線**|  
+    |**Text**|**底線**|  
   
 7.  按住 CTRL 鍵同時選取所有的三個核取方塊控制項。  
   
@@ -164,7 +163,7 @@ ms.lasthandoff: 01/10/2018
   
 -   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說： 在工作表使用按鈕的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

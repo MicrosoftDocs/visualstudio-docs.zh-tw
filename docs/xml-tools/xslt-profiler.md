@@ -1,20 +1,20 @@
 ---
-title: "XSLT 分析工具 |Microsoft 文件"
-ms.custom: 
+title: XSLT 分析工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95bad7dfdf38b4b8a8f2aa1a307cf7512732ae9c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: a2960052bbeac80506b35a58a107d1d38f23fb99
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xslt-profiler"></a>XSLT 分析工具
 

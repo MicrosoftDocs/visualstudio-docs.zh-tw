@@ -2,9 +2,10 @@
 title: Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017, 保護, 免費"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017, 保護, 免費
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: "了解如何使用 Visual Studio 2017 中免費的 Dotfuscator Community Edition 保護您的 .NET 應用程式。"
+description: 了解如何使用 Visual Studio 2017 中免費的 Dotfuscator Community Edition 保護您的 .NET 應用程式。
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 59510eeb4bc0b7a8636a14b8c2ca0a597b7c93b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: e8e7fb56580e3b0b5a9db8e46d9b98b7c157f9f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 

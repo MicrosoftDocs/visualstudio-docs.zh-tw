@@ -1,12 +1,10 @@
 ---
-title: "使用郵件項目 |Microsoft 文件"
-ms.custom: 
+title: 使用郵件項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], about mail items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e1299c7296a7308d7fb8367d0cae0e6803239613
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b6eef48686332231d08397780b481f6770bdad0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-mail-items"></a>使用郵件項目
   <xref:Microsoft.Office.Interop.Outlook.MailItem>類別包含的方法和您用於執行工作的電子郵件訊息的屬性。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱 [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用連絡人項目](../vsto/working-with-contact-items.md)   
  [使用資料夾](../vsto/working-with-folders.md)   
  [使用行事曆項目](../vsto/working-with-calendar-items.md)   

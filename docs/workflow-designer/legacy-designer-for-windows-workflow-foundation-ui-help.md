@@ -1,5 +1,5 @@
 ---
-title: "舊版的 Windows Workflow Foundation UI 說明的設計工具 |Microsoft 文件"
+title: 舊版的 Windows Workflow Foundation UI 說明的設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: b3a0104f-4485-45ac-9794-82d54e45fb09
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1eca03c08776206de3ba6706205736a52dfc9e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>舊版 Windows Workflow Foundation UI 設計工具的說明
 此章節包含舊版的 Windows 工作流程設計工具中的即時線上說明主題[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 當您需要以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標時，請使用舊版設計工具。

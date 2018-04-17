@@ -1,5 +1,5 @@
 ---
-title: "偵錯舊版工作流程 |Microsoft 文件"
+title: 偵錯舊版工作流程 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: e6097b47-760a-4b30-a92c-ae70cdbda49f
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4898e8f720143bd60337c9fe6bed20a7489c0d04
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-legacy-workflows"></a>偵錯舊版工作流程
 

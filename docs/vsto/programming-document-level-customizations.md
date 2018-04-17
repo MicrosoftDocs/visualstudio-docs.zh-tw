@@ -1,13 +1,10 @@
 ---
-title: "文件層級自訂程式設計 |Microsoft 文件"
-ms.custom: 
+title: 文件層級自訂程式設計 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>文件層級自訂程式設計
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：  
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  在文件層級專案中撰寫程式碼時，某些方面會與 Visual Studio 中其他類型的專案不同。 其中有許多差異的原因來自於將 Office 物件模型公開給 Managed 程式碼的方式。 如需詳細資訊，請參閱 [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)。  
   
- 一般您可以使用 Visual Studio 中的 Office 開發工具建立文件層級自訂和其他類型方案的相關資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 一般您可以使用 Visual Studio 中的 Office 開發工具建立文件層級自訂和其他類型方案的相關資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>使用文件層級專案中產生的類別  
  當您建立文件層級專案時，Visual Studio 會自動在專案中產生類別，供您開始撰寫程式碼。 Visual Studio 會針對 Word 和 Excel 產生不同的類別：  
@@ -84,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`：衍生自 <xref:Microsoft.Office.Tools.Excel.WorkbookBase>。  
   
--   `Sheet` *n*：衍生自 <xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
+-   `Sheet` *n*： 衍生自<xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
   
  這些基底類別會將所有成員的呼叫重新導向至 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中與其對應之主項目介面的內部實作。 例如，如果呼叫 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 類別的 `ThisDocument` 方法， <xref:Microsoft.Office.Tools.Word.DocumentBase> 類別會將此呼叫重新導向至 <xref:Microsoft.Office.Tools.Word.Document> 中 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]介面的內部實作。  
   
@@ -172,9 +169,9 @@ Globals.ThisDocument.Save();
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
  若要呼叫 HasVstoObject 和 GetVstoObject 方法時，使用的 Globals.Factory.GetVstoObject 或 Globals.Factory.HasVstoObject 方法並傳入原生 Word 或 Excel 物件 (例如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 您想要測試。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   

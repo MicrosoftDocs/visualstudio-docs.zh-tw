@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 Word 的第一個 VSTO 增益集 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 Word 的第一個 VSTO 增益集 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>逐步解說：為您的 Word 建立第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstWordAddIn**專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立**FirstWordAddIn**專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>撰寫程式碼以將文字加入儲存的文件  
  接著，將程式碼加入 ThisAddIn 程式碼檔。 新程式碼會使用 Word 物件模型，將未定案文字加入每份儲存的文件中。 根據預設，ThisAddIn 程式碼檔包含下列產生的程式碼：  
@@ -136,8 +135,8 @@ ms.lasthandoff: 01/10/2018
   
 -   部署 Word 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+## <a name="see-also"></a>另請參閱  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word 方案](../vsto/word-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   

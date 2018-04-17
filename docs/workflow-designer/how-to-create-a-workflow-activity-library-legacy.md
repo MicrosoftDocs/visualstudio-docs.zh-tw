@@ -1,5 +1,5 @@
 ---
-title: "如何： 建立工作流程活動程式庫 （舊版） |Microsoft 文件"
+title: 如何： 建立工作流程活動程式庫 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6fb1aebc6810a271eda8806fe6ac83060f73f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 18fa570f732f71336ce5a2f5e8e56d1185366afa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>HOW TO：建立工作流程活動程式庫 (舊版)
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  啟動 Visual Studio。
 
-2.  在**檔案**功能表上，指向**新增**，然後選取**專案**。
+2.  在 [檔案] 功能表上，指向 [新增]，然後選取 [專案]。
 
      [ **新增專案** ] 對話方塊隨即開啟。
 

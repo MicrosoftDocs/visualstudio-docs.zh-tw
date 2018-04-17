@@ -1,23 +1,21 @@
 ---
-title: "如何： 建立 XML 片段 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立 XML 片段 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f98d0cccdbd530ea20c01369860c15186487a234
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。  
@@ -113,7 +111,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
   
  $prefix$ 變數即可在 XML 片段中的其他位置使用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 片段](../xml-tools/xml-snippets.md)   
  [如何： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)   
  [如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -1,13 +1,10 @@
 ---
-title: "Office 方案移轉至.NET Framework 4 或更新版本 |Microsoft 文件"
-ms.custom: 
+title: Office 方案移轉至.NET Framework 4 或更新版本 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.TargetFrameworkWarning
 dev_langs:
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cb61186c7e8260578e9b69242c594c198f7e525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 830dcdb9e42472aa712c86ddb117b3b8003ac4d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migrating-office-solutions-to-the-net-framework-4-or-later"></a>將 Office 方案移轉至 .NET Framework 4 或更新版本
   如果 Office 專案的目標 Framework 從舊版的 .NET Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，可能需要一些額外的步驟，才能繼續在開發和使用者電腦上執行解決方案。 如需詳細資訊，請參閱[需要變更執行 Office 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。  
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  如需有關為什麼 Office 專案中的某些功能有不同程式設計模型為目標時[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，請參閱[設計 Office 專案的目標.NET Framework 4 或.NET Framework 4.5變更](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)和[Visual Studio Tools for Office Runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [疑難排解 Office 方案中的錯誤](../vsto/troubleshooting-errors-in-office-solutions.md)   

@@ -1,5 +1,5 @@
 ---
-title: "工作流程 （舊版） 中使用佈景主題 |Microsoft 文件"
+title: 工作流程 （舊版） 中使用佈景主題 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 752b25ba03df813bf3255af5f6c8b84f56ef5ed7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 0297426568e9b15d668490becfd2ae0b2da86ab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-themes-in-workflows-legacy"></a>在工作流程中使用佈景主題 (舊版)
 本主題描述如何使用中的主題[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]使用舊版 Windows 工作流程設計工具為目標時[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。

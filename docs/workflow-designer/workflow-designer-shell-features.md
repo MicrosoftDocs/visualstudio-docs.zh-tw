@@ -1,5 +1,5 @@
 ---
-title: "工作流程設計工具殼層功能 |Microsoft 文件"
+title: 工作流程設計工具殼層功能 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fa46d9d70ad69f4d3e0ccfc55f85ade331feb4
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 

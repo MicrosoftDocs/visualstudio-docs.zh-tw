@@ -1,12 +1,10 @@
 ---
-title: "如何： 在 Visual Studio 中建立 Office 專案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 在 Visual Studio 中建立 Office 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
 - VST.SelectDocWizard.Http
@@ -23,16 +21,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 60addb19ba78734237e6ccf888cdb69f2629f98c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中建立 Office 專案
-  您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -149,7 +148,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  如果您要使用 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 專案中的現有文件，則只能使用在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 中建立的文件，或必須轉換為此種文件才能使用。 同樣地，如果您要使用 Word 2010 專案中的現有文件，則只能使用在 Word 2010 中建立的文件，或必須轉換為此種文件才能使用。 如果您使用舊版 Word 中所建立的文件，文件中的特定功能將會停用。 如果您嘗試撰寫會用到這些功能的程式碼，專案可能會發生錯誤。 若要轉換的文件，開啟該[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]或 Word 2010 上**檔案**索引標籤功能區上，選擇**資訊**，**轉換**。  
   
-8.  選擇**完成**。  
+8.  選擇 [完成]。  
   
 9. 如有下列情況，請至 Word 的 [信任中心]，將專案資料夾及其子資料夾加入信任位置：  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
      如需有關如何將文件新增至信任位置的詳細資訊，請參閱 Microsoft Office Online 網站[建立、 移除或變更檔案的信任位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [Office 方案的共同開發](../vsto/collaborative-development-of-office-solutions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

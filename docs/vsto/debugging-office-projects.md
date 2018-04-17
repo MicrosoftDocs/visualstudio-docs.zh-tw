@@ -1,12 +1,10 @@
 ---
-title: "偵錯 Office 專案 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Office 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c3a3b4d3eebd5b20c4e9eb56b30a8980ceafb8bf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8080e1ffacff73592517e5c1b2cb3d06c3654f15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-office-projects"></a>偵錯 Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 當您偵錯 Office 專案時，也可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能，例如可以插入中斷點，以及在 [區域變數]  視窗中檢視變數。 如需 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具的詳細資訊，請參閱 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)。  
@@ -101,7 +100,7 @@ ms.lasthandoff: 01/10/2018
   
  若要將錯誤寫入記錄檔，請建立名為 `VSTO_LOGALERTS` 的環境變數，並將其設定為 1 (一)。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在包含 VSTO 增益集之部署資訊清單的資料夾中，或在包含與自訂關聯之文件或活頁簿的資料夾中，建立記錄檔。 如果失敗， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在本機 %TEMP% 資料夾中建立記錄檔。 若是應用程式層級 VSTO 增益集，預設名稱為 *增益集名稱*.vsto.log。 若是文件層級專案，記錄檔的名稱為 *文件名稱*.*副檔名*.log，例如 ExcelWorkbook1.xlsx.log。 若要停止記錄錯誤，請刪除環境變數或將其設定為 0 (零)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [如何： 重新啟用已停用的 VSTO 增益集](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

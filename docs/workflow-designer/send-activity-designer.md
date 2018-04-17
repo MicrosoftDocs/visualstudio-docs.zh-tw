@@ -1,5 +1,5 @@
 ---
-title: "Send 活動設計工具 |Microsoft 文件"
+title: Send 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad913623480599f8d299cba438b108a4511ae7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 
@@ -46,8 +46,8 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Send.KnownTypes%2A>|False|這個 <xref:System.ServiceModel.Activities.Send> 活動要呼叫之服務作業之已知型別的集合。 這個屬性應該搭配 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 屬性 (設定為 <xref:System.Runtime.Serialization.DataContractSerializer>) 使用。 如果使用 <xref:System.Xml.Serialization.XmlSerializer>，則會忽略此項。<br /><br /> 按一下旁邊的橢圓形按鈕**KnownTypes**欄位在屬性方格中顯示**型別集合編輯器**對話方塊用來加入相關型別。<br /><br /> 按一下旁邊的橢圓形按鈕**KnownTypes**欄位在屬性方格中顯示**型別集合編輯器**對話方塊中，您可以加入相關型別。 如需使用此方塊的詳細資訊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。|
 |<xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A>|True|指定訊息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>表示僅有驗證。<br />2。<xref:System.Net.Security.ProtectionLevel>表示簽署資料以協助確保傳輸之資料的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>表示加密並簽署資料以協助確保傳輸資料的完整性與機密性。|
 |<xref:System.ServiceModel.Activities.Send.SerializerOption%2A>|True|<xref:System.ServiceModel.Activities.Send> 活動要呼叫之服務作業所要使用的序列化程式。 預設值是 <xref:System.Runtime.Serialization.DataContractSerializer>，這會使用提供的資料合約，將型別的執行個體序列化及還原序列化，成為 XML 資料流或文件。|
-|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|指定訊息的動作標頭。 如果它未明確設定，其值會預設為： https://tempuri.org/ {服務合約命名空間} / {服務合約名稱} / {作業名稱}。 如果在 <xref:System.ServiceModel.Activities.Send> 活動上指定，則接收訊息的 <xref:System.ServiceModel.Activities.Receive> 活動必須與要正確傳遞的訊息具有相同的值。|
-|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||訊息的接收者允許的 <xref:System.Security.Principal.TokenImpersonationLevel>。 它會定義安全性模擬等級管理的伺服器處理序可以代表用戶端處理序的程度。<xref:System.Security.Principal.TokenImpersonationLevel>指出不指派模擬等級。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序無法取得用戶端的識別資訊，也無法模擬用戶端。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可以取得關於用戶端的資訊，例如安全識別項和權限，但無法模擬用戶端。 對於匯出其自己的物件之伺服器 (例如匯出資料表和檢視表的資料庫產品) 而言，這將會很有用。 藉由使用所擷取的用戶端安全性資訊，伺服器便可做出存取驗證決策，而不用具備使用其他服務的能力，這些服務使用用戶端的安全性內容。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可在其本機系統上模擬用戶端的安全性內容。 伺服器無法在遠端系統上模擬用戶端。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可在遠端系統上模擬用戶端的安全性內容。|
+|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|指定訊息的動作標頭。 如果它未明確設定，其值會預設為：https://tempuri.org/{service合約命名空間} / {服務合約名稱} / {作業名稱}。 如果在 <xref:System.ServiceModel.Activities.Send> 活動上指定，則接收訊息的 <xref:System.ServiceModel.Activities.Receive> 活動必須與要正確傳遞的訊息具有相同的值。|
+|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||訊息的接收者允許的 <xref:System.Security.Principal.TokenImpersonationLevel>。 它會定義安全性模擬等級管理的伺服器處理序可以代表用戶端處理序的程度。<xref:System.Security.Principal.TokenImpersonationLevel> 表示不會指派模擬等級。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序無法取得用戶端的識別資訊，也無法模擬用戶端。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可以取得關於用戶端的資訊，例如安全識別項和權限，但無法模擬用戶端。 對於匯出其自己的物件之伺服器 (例如匯出資料表和檢視表的資料庫產品) 而言，這將會很有用。 藉由使用所擷取的用戶端安全性資訊，伺服器便可做出存取驗證決策，而不用具備使用其他服務的能力，這些服務使用用戶端的安全性內容。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可在其本機系統上模擬用戶端的安全性內容。 伺服器無法在遠端系統上模擬用戶端。 <xref:System.Security.Principal.TokenImpersonationLevel> 表示伺服器處理序可在遠端系統上模擬用戶端的安全性內容。|
 |<xref:System.ServiceModel.Activities.Send.Endpoint%2A>||<xref:System.ServiceModel.Endpoint> 活動傳送訊息的目標 <xref:System.ServiceModel.Activities.Send>。 如果這個屬性設定<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>屬性應該是**null**。|
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||訊息傳送至的 <xref:System.ServiceModel.EndpointAddress>。|
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||端點組態的名稱。 這個屬性會在您設定組態檔中的端點時設定。 這個屬性應該設定為指定的名稱**\<端點 >**組態檔中的項目。 如果設定這個屬性，<xref:System.ServiceModel.Activities.Send.Endpoint%2A>屬性應該是**null**。|
@@ -57,6 +57,6 @@ ms.lasthandoff: 03/12/2018
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [接收](../workflow-designer/receive-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

@@ -1,13 +1,10 @@
 ---
-title: "如何： 對應至 Visual Studio 內的工作表的結構描述 |Microsoft 文件"
-ms.custom: 
+title: 如何： 對應至 Visual Studio 內的工作表的結構描述 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed0da1c2ac181db93105a93dd2269be55f0379a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b2d0caadfc08d7fa1d2ea29d04e84a5d954a42fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：在 Visual Studio 內將結構描述對應至工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用相同的 Microsoft Office Excel 工具，您可以使用 Visual Studio 外部開啟活頁簿時。 將結構描述對應至工作表之前或之後建立 Excel 方案的 Office 專案會建立相同的物件。  
@@ -68,7 +65,7 @@ ms.lasthandoff: 01/10/2018
   
      如果您將重複的結構描述項目時，Office 專案會產生<xref:Microsoft.Office.Tools.Excel.ListObject>不會自動繫結至資料來源的控制項。 如需詳細資訊，請參閱[XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 將結構描述對應至 Visual Studio 內的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [文件層級自訂中的 XML 結構描述和資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   

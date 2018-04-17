@@ -1,18 +1,18 @@
 ---
-title: "如何： 建立活動設計工具程式庫 |Microsoft 文件"
+title: 如何： 建立活動設計工具程式庫 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5b62e092-63b3-462d-9d77-fb112482f45d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f257aabb4b1c2c1b1dce05e34273dc303a8f7da
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c0dc336db00f8a638cf20e6af79f2cf7ec030a5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>HOW TO：建立活動設計工具程式庫
 自訂活動設計工具可讓您建立標準或自訂活動的使用者介面。 您可以控制使用者介面的複雜性，並且能為活動建立多個設計工具。 這個案例可讓您建立專為多個對象量身訂做的設計工具。

@@ -1,13 +1,10 @@
 ---
-title: "限制的 Windows Form Office 文件上的控制項 |Microsoft 文件"
-ms.custom: 
+title: 限制的 Windows Form Office 文件上的控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c3180de49b1ede89e6eb5e66d786247ce2700888
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項限制
   有一些 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中，加入 Windows Form 控制項和 Windows Form 控制項加入至 Windows Form 之間的差異。 例如，當您將加入<xref:Microsoft.Office.Tools.Word.Controls.Button>這類控制項加入文件中，屬性<xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>， <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>，和<xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A>未如您預期運作。  
@@ -194,7 +191,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="support-for-legacy-activex-controls"></a>支援的舊版 ActiveX 控制項  
  如果您建立使用現有的 Word 文件或包含 ActiveX 控制項的 Excel 活頁簿的文件層級 Office 專案時，ActiveX 控制項的功能不會遺失。不過，沒有您從 Visual Studio 中的文件中加入新的 ActiveX 控制項的支援。 例如，如果您的 Word 文件有一個按鈕，從**控制項**工具箱 中執行 Visual Basic for Applications (VBA) 巨集，它會繼續已在 Office 專案中使用文件之後，執行巨集。 不過，建議您移除 ActiveX 控制項和 VBA 巨集和取代 Windows Form 控制項和 managed 程式碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

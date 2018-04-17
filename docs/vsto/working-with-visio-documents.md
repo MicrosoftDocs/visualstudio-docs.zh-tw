@@ -1,12 +1,10 @@
 ---
-title: "使用 Visio 文件 |Microsoft 文件"
-ms.custom: 
+title: 使用 Visio 文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c34703e2897475a168215194c0dfb30000551021
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3c9d5f3ad8344e2ae231a5c3680226fa945f4c46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-visio-documents"></a>使用 Visio 文件
   此章節的主題提供使用 Microsoft Office Visio 物件模型處理文件在 Office 專案中的逐步程序和程式碼範例。  
@@ -35,9 +34,9 @@ ms.lasthandoff: 01/10/2018
 |以相同的名稱或新的名稱儲存文件。|[如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)|  
 |列印整份文件或指定的頁面。|[如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

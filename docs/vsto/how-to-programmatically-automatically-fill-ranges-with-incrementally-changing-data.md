@@ -1,13 +1,10 @@
 ---
-title: "如何： 以程式設計的方式自動填滿範圍與以累加方式變更資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計的方式自動填滿範圍與以累加方式變更資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6634fea629358368d3b61c5b505e5eec7ec0186
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e358869dea101d0c0ca012acd46b7822e6cf5873
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以程式設計方式用遞增 (減) 變化的資料自動填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您自動填入工作表中的範圍值。 通常，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用來儲存以累加方式增加或減少值的範圍內。 您可以藉由提供從選擇性常數指定行為<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列舉型別。  
@@ -56,12 +53,12 @@ ms.lasthandoff: 01/10/2018
   
 -   資料行 D 是包含一系列的數字遞增每個資料列的兩個。 做為初始值輸入**4**儲存格 D1 和**6**在儲存格 D2。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用範圍](../vsto/working-with-ranges.md)   
  [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [如何： 以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

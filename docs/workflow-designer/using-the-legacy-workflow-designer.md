@@ -1,5 +1,5 @@
 ---
-title: "使用舊版工作流程設計工具 |Microsoft 文件"
+title: 使用舊版工作流程設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 7af53077-afd7-465f-9c1d-b387e9d4f216
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a042d98019b7f618792f7a9104d262362a4e6e3d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 700434451d8390b9875a290b428c2173953cbb8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-workflow-designer"></a>使用舊版工作流程設計工具
 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 可用來以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。

@@ -1,13 +1,10 @@
 ---
-title: "疑難排解 Office 方案中的錯誤 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解 Office 方案中的錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Office 方案的錯誤疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [偵錯專案](#debugging)  
   
-##  <a name="creating"></a>建立、 升級和開啟專案  
+##  <a name="creating"></a> 建立、 升級和開啟專案  
  當您建立或開啟 Office 專案時，可能會遇到下列錯誤。  
   
 ### <a name="the-project-cannot-be-created"></a>無法建立專案  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  完成專案升級後，可以解除安裝開發電腦中的 Visual Studio 2005 Tools for Office Second Edition Runtime (如果沒有其他 Office 方案正在使用它)。  
   
-##  <a name="designers"></a>使用設計工具  
+##  <a name="designers"></a> 使用設計工具  
  當您在文件層級專案中使用文件、活頁簿或工作表設計工具時，可能會遇到下列錯誤。  
   
 ### <a name="designer-failed-to-load-correctly"></a>無法正確載入設計工具  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  即使您已匯入的 Word 或 Excel 命名空間，而且能夠在它之內的所有類別的存取權，您必須完整限定所有與 Word 或 Excel，以移除命名空間模稜兩可的類型。  
   
-##  <a name="building"></a>建置專案  
+##  <a name="building"></a> 建置專案  
  當您建置 Office 專案時，可能會遇到下列錯誤。  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>無法建立以含有限制權限之文件為基礎的文件層級專案  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>在刪除 NamedRange 控制項之後發生編譯器錯誤  
  如果您從工作表刪除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項，而該工作表並非設計工具的現用工作表，則自動產生的程式碼可能不會從專案中移除，而且可能會發生編譯器錯誤。 為了確定將移式碼移除，請務必選取包含 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的工作表，在刪除控制項之前讓它成為現用工作表。 如果刪除控制項時沒有刪除自動產生的程式碼，您可以啟動工作表並進行變更，讓系統將該工作表標示為已修改，從而讓設計工具刪除該程式碼。 當您重建此專案時，便會移除程式碼。  
   
-##  <a name="debugging"></a>偵錯專案  
+##  <a name="debugging"></a> 偵錯專案  
  當您偵錯 Office 專案時，可能會遇到下列錯誤。  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>當您在開發電腦上發佈和安裝方案時，會出現解除安裝的提示  
@@ -218,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  不論您按一下**是**或**否**在對話方塊中，Visual Studio 終止 Excel 或 Word 處理序，並停止偵錯工具。 若要停止專案偵錯而不顯示此對話方塊，請直接結束 Excel 或 Word，而不是在 Visual Studio 中停止偵錯工具。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 方案疑難排解](../vsto/troubleshooting-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  

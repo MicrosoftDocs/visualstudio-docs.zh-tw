@@ -1,5 +1,5 @@
 ---
-title: "使用工作流程設計工具開發應用程式 |Microsoft 文件"
+title: 使用工作流程設計工具開發應用程式 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75a6fb6eef1f5e8e174607ac141646ab237dd285
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 9c48e7b43b23e7bfe8887f437cc17e6db077c0e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 

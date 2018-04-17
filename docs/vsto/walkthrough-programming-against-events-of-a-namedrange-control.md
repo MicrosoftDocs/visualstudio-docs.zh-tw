@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 針對 NamedRange 控制項的事件進行程式設計 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 針對 NamedRange 控制項的事件進行程式設計 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - worksheets, automating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a06e8aa544cdaff2e75d8af942f8aea68e7bc960
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 623177120d58b7abd29b57d55db22b8490057bab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說示範如何加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入 Microsoft Office Excel 工作表並對其使用 Visual Studio 中的 Office 程式開發工具所使用的事件進行程式設計。  
@@ -158,13 +157,13 @@ ms.lasthandoff: 01/10/2018
   
 -   部署專案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+## <a name="see-also"></a>另請參閱  
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)  
   
   

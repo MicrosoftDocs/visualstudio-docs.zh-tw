@@ -1,12 +1,10 @@
 ---
-title: "Excel 用法逐步解說 |Microsoft 文件"
-ms.custom: 
+title: Excel 用法逐步解說 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], walkthroughs
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f7bca253827fbbb7c559f698bc29df1c32f7a53f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d780ec0df36e9c8dcab1c711df8fb8c09d7d326
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthroughs-using-excel"></a>使用 Excel 的逐步解說
   下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Excel 以及自訂使用者介面 (UI) 的方式。  

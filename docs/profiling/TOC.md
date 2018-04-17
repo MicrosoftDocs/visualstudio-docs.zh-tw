@@ -1,6 +1,6 @@
 
 # [分析文件](index.md)
-# 總覽
+# [概觀](profiling-overview.md)
 # 快速入門
 ## [分析簡介](profiling-feature-tour.md)
 ## [分析 CPU 使用量 (受控)](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [使用 VSPerfASPNETCmd 快速進行網站分析](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [從命令列使用分析工具取樣方法收集 ASP.NET Web 應用程式的應用程式統計資料](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [操作說明：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集應用程式統計資料](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [從命令列使用分析工具檢測方法以收集 ASP.NET Web 應用程式的詳細計時資料](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [從命令列使用分析工具檢測方法以收集 ASP.NET Web 應用程式的詳細計時資料](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [操作說明：使用命令列以分析工具檢測靜態編譯的 ASP.NET Web 應用程式並收集詳細計時資料](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [操作說明：使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [操作說明：使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [使用分析工具命令列收集 ASP.NET Web 應用程式的並行資料](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [操作說明：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [使用分析工具命令列收集 ASP.NET Web 應用程式的記憶體資料](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [操作說明：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [操作說明：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [操作說明：使用分析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [操作說明：使用分析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [操作說明：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [服務的命令列分析](command-line-profiling-of-services.md)
 ##### [使用分析工具取樣方法收集服務的應用程式統計資料](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)

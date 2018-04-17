@@ -1,27 +1,25 @@
 ---
-title: "加入 最近使用的子功能表清單 |Microsoft 文件"
-ms.custom: 
+title: 加入 最近使用的子功能表清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 67eb08feff5d8edd1251c8fcff09d8f148b51b96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>最近加入的大部分用到子功能表清單
 本逐步解說是根據在示範[加入功能表的子功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。  
@@ -82,7 +80,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  建置專案並開始偵錯測試新命令的顯示。  
   
-     上**TestMenu**功能表上，按一下 新增 子功能表 **子功能表**，以顯示新的命令**MRU 預留位置**。 實作命令的動態 MRU 清單中下一個程序之後，此命令標籤將被取代該清單所每次開啟子功能表。  
+     上**TestMenu**功能表上，按一下 [新增] 子功能表**子功能表**，以顯示新的命令**MRU 預留位置**。 實作命令的動態 MRU 清單中下一個程序之後，此命令標籤將被取代該清單所每次開啟子功能表。  
   
 ## <a name="filling-the-mru-list"></a>填滿 MRU 清單  
   
@@ -207,5 +205,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  再次開啟子功能表。 請注意，**項目 3**現在位於清單頂端和其他項目已推入向下移動一個位置。 按一下**項目 3**一次，並注意，訊息方塊仍然會顯示 「 選取項目 3 」，表示文字都已正確地移到新位置，以及命令標籤。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [以動態方式加入功能表項目](../extensibility/dynamically-adding-menu-items.md)

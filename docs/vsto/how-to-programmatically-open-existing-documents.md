@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式開啟現有文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式開啟現有文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], opening documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 151571ace6790f05c067f8dff641988301bc1b0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0c7542b2222839afc75b3b5b1b84fc5afe56f523
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以程式設計方式開啟現有文件
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法會開啟完整的路徑和檔案名稱所指定的現有 Microsoft Office Word 文件。 這個方法會傳回<xref:Microsoft.Office.Interop.Word.Document>表示開啟的文件。  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   名為 NewDocument.doc 文件必須位於 c 磁碟機上名為測試目錄  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式建立新文件](../vsto/how-to-programmatically-create-new-documents.md)   
  [如何： 以程式設計方式關閉文件](../vsto/how-to-programmatically-close-documents.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

@@ -1,27 +1,23 @@
 ---
-title: "移轉舊版語言服務 |Microsoft 文件"
-ms.custom: 
+title: 移轉舊版語言服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5f7cff29dd368acbbc3f599ec0cf623343031f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 412b09016a3f889e0d6c5e40ff75895d5ae8ff48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 您可以移轉至較新版的 Visual Studio 的舊版語言服務更新專案，並將 source.extension.vsixmanifest 檔案加入專案。 語言服務本身將會繼續如往常一般，運作，因為 Visual Studio 編輯器會調整它。  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
     -   在**應用程式**索引標籤上，變更**目標 framework**至**4.6.1**。  
   
-    -   在**偵錯**索引標籤的**啟動外部程式**方塊中，輸入 **\<Visual Studio 安裝路徑 > \Common7\IDE\devenv.exe。**。  
+    -   在**偵錯**索引標籤的**啟動外部程式**方塊中，輸入 **\<Visual Studio 安裝路徑 > \Common7\IDE\devenv.exe**。  
   
          在**命令列引數**方塊中，輸入 /**rootsuffix Exp**。  
   
@@ -113,5 +109,5 @@ ms.lasthandoff: 12/22/2017
   
 12. 開始偵錯。 開啟 Visual Studio 的第二個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

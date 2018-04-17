@@ -1,13 +1,10 @@
 ---
-title: "如何： 變更功能區上的索引標籤的位置 |Microsoft 文件"
-ms.custom: 
+title: 如何： 變更功能區上的索引標籤的位置 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5016651a6cc4f1316536c22d555a65aaba64b788
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 65a610ac75af4fe6e29070b83286fb3b4f8b91cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：變更功能區索引標籤的位置
   您可以使用，以變更功能區上的自訂索引標籤的順序**索引標籤集合編輯器**。 在功能區上的內建索引標籤的前後，您可以將自訂索引標籤。 內建索引標籤是已在 Microsoft Office 應用程式的功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。  
@@ -61,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      如需控制項 Id 的清單，請參閱[Office 2010 說明檔： Office Fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

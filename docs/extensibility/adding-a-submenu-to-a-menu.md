@@ -1,30 +1,26 @@
 ---
-title: "加入功能表的子功能表 |Microsoft 文件"
-ms.custom: 
+title: 加入功能表的子功能表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus
 - submenus, cascading
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19bf2ca98c7ba6227e791a7df44b34aa125cc786
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f6998c275aead7b12b107f700e699f5a82edd84e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>加入功能表的子功能表
 本逐步解說是根據在示範[功能表加入 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)，以顯示如何新增至子功能表**TestMenu**功能表。  
@@ -85,7 +81,7 @@ ms.lasthandoff: 03/08/2018
   
 6.  建置方案並開始偵錯。 您應該會看到實驗執行個體。  
   
-7.  按一下**TestMenu**以查看新的子功能表，名為 **子功能表**。 按一下 **子功能表**開啟子功能表，並查看新的命令**測試子命令**。 請注意，按一下**測試子命令**不做任何動作。  
+7.  按一下**TestMenu**以查看新的子功能表，名為**子功能表**。 按一下**子功能表**開啟子功能表，並查看新的命令**測試子命令**。 請注意，按一下**測試子命令**不做任何動作。  
   
 ## <a name="adding-a-command"></a>加入命令  
   
@@ -158,8 +154,8 @@ ms.lasthandoff: 03/08/2018
   
 4.  建置此專案並開始偵錯。 實驗執行個體應該會出現。  
   
-5.  在**TestMenu**功能表上，按一下   **子功能表**，然後按一下 **測試子命令**。 訊息方塊應該會出現並顯示文字，也就是 「 第命令頁，內部 TestCommand.SubItemCallback() 測試 」。  
+5.  在**TestMenu**功能表上，按一下 **子功能表**，然後按一下 **測試子命令**。 訊息方塊應該會出現並顯示文字，也就是 「 第命令頁，內部 TestCommand.SubItemCallback() 測試 」。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將功能表加入至 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,23 +1,21 @@
 ---
-title: "XML 編輯器工作 |Microsoft 文件"
-ms.custom: 
+title: XML 編輯器工作 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: d069ba3a-266c-45ac-8f9f-7833a72c5a27
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c770de8513d5e04c9c30654216382a0650363818
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 212aaee290fb1bb494072ad79528562813a3bcf5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-tasks"></a>XML 編輯器工作
 本節描述如何使用 XML 編輯器完成一般工作。  
