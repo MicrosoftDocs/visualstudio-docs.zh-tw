@@ -1,12 +1,10 @@
 ---
-title: "如何： 建立事件接收器的特定清單執行個體 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立事件接收器的特定清單執行個體 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66801e82f64e23ee24e66c63a62dd895c58389dc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單執行個體建立事件接收器
   清單執行個體的事件接收器會回應在清單中定義的任何執行個體中發生的事件。 雖然事件接收器範本不會啟用目標的特定清單執行個體，您可以修改事件接收器，以便以回應事件中的特定清單執行個體的清單定義為範圍。  
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
   
      請注意，事件接收器將不會在新的 announcement 因為收件者已設定為只回應中的自訂公告清單執行個體中，事件才會觸發**TestAnnouncements**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

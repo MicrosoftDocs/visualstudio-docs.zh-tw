@@ -1,21 +1,19 @@
 ---
-title: "建構模型方案 |Microsoft 文件"
-ms.custom: 
+title: 建構模型方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d8839b28fcfa67612bd28405984a4d99119e59c5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: da05bef4f69c5cb29aca00713bd777f910ab094e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 若要在開發專案中有效使用模型，小組成員必須能夠同時處理不同專案部分的模型。 本主題建議的配置，是將應用程式分割成不同部分，其對應到整個分層圖的圖層。  
@@ -108,5 +106,5 @@ ms.lasthandoff: 02/09/2018
   
  [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)的進一步指引管理小組中的模型  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)

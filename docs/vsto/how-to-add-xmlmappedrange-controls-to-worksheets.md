@@ -1,12 +1,10 @@
 ---
-title: "如何： 將 XMLMappedRange 控制項加入工作表 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將 XMLMappedRange 控制項加入工作表 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 90050da5f5105ab3be4c42bedb1751d9f1664958
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fa0e6d6249ea9b7da3fb0ab57640b61fb38e7fe5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：將 XMLMappedRange 控制項加入至工作表
   當您將 XML 元素對應至 Microsoft Office Excel 中的資料格時，Visual Studio 會自動加入<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項加入工作表。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 3.  在**開發人員**索引標籤上，按一下 **來源**。  
   
     > [!NOTE]  
-    >  如果**開發人員** 索引標籤沒有顯示功能區上，您必須啟用它。 如需詳細資訊，請參閱 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果**開發人員** 索引標籤沒有顯示功能區上，您必須啟用它。 如需詳細資訊，請參閱 [如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
      **XML 來源**工作窗格會顯示。  
   
@@ -63,11 +62,11 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  如果您將從父項目拖曳**XML 來源**工作窗格<xref:Microsoft.Office.Tools.Excel.ListObject>建立控制項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [如何：在 Visual Studio 內將結構描述對應至工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

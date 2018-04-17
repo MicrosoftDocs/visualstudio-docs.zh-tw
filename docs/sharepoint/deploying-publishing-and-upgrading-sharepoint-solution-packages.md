@@ -1,12 +1,10 @@
 ---
-title: "部署、 發佈和升級 SharePoint 方案套件 |Microsoft 文件"
-ms.custom: 
+title: 部署、 發佈和升級 SharePoint 方案套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5990ab0f6ff6ec02131921f54197dd28e7f4e6ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aac96c7954a52a3277b08efcd89fa24a743117be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>部署、發行和升級 SharePoint 方案套件
   開發 Visual Studio 中的 SharePoint 方案之後，可以將其套件 (.wsp) 檔案部署至本機 SharePoint 伺服器或將它發行到遠端或本機 SharePoint 伺服器。 如果您部署的檔案，您可以自訂部署套件檔案 (.wsp) 的方式。  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="upgrading-published-packages"></a>升級發佈的封裝  
  如果在 Visual Studio 中的 SharePoint 專案發行後進行任何變更，已發佈的封裝必須升級包含的變更。 若要成功升級，封裝必須有唯一的名稱。 如果具有相同名稱的封裝上找到的 SharePoint 網站-您要更新現有的應用程式時可能發生的錯誤警示您的檔案名稱發生衝突，並可讓您重新命名封裝。 之後重新發行，新的封裝會出現在 SharePoint 網站上，可以升級。 升級的封裝會使用資料從較舊的封裝，來更新方案，然後啟動 SharePoint 中的方案。 如需詳細資訊，請參閱[如何： 發行，並在遠端伺服器上升級 SharePoint 方案部署](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

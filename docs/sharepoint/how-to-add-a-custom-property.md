@@ -1,13 +1,10 @@
 ---
-title: "如何： 加入自訂屬性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 加入自訂屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], custom properties
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d616a18850e9635dc580a3a09845640a793ac284
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ecc7bba2cd33f0c7f4d78ef8607d078eb7f752a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：加入自訂屬性
   您可以將自訂屬性加入至模型使用**屬性編輯器**。 您可以存取這些屬性中擷取資訊，例如連接字串和其他資料在執行階段程式碼。  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  如**值**欄位的自訂屬性，指定值，然後選擇 [**確定**] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

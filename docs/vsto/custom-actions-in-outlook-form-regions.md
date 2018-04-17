@@ -1,12 +1,10 @@
 ---
-title: "自訂動作，在 Outlook 表單區域 |Microsoft 文件"
-ms.custom: 
+title: 自訂動作，在 Outlook 表單區域 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作顯示按鈕，可讓使用者回應的 Microsoft Office Outlook 項目。 例如，若要回應的郵件項目，使用者按一下**回覆**，**全部回覆**，或**向前**動作按鈕。 每個動作會建立新的郵件項目，並使用來自原始項目的資訊填入的項目欄位。  
@@ -31,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## <a name="adding-custom-actions-to-a-form-region"></a>將自訂動作加入至表單區域  
- 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管中**展開**資訊清單**] 節點，選取**CustomActions**屬性，然後按一下 [省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
+ 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管 中**展開**資訊清單** 節點，選取**CustomActions**屬性，然後按一下省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
   
  您可以使用**自訂動作**對話方塊來指定*目標表單*。 目標表單是使用者執行自訂動作時出現的表單。  
   
@@ -54,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-a-custom-action-at-run-time"></a>自訂執行階段的自訂動作  
  您也可以使用程式碼的自訂動作來新增行為。 例如，您可以加入接受的電子郵件收件者名稱，並將這些名稱在新的約會項目出席者的程式碼。 若要這樣做，請處理[CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx)事件[MailItem 物件](http://msdn.microsoft.com/library/office/ff861332.aspx)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [讓表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  

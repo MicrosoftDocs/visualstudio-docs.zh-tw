@@ -1,26 +1,23 @@
 ---
-title: "具型別與具型別 |Microsoft 文件"
-ms.custom: 
+title: 具型別與具型別 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7c55b160012997281cd5e7551ea07178b63f0fca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="typed-vs-untyped-datasets"></a>具型別與具型別
 具類型資料集是第一次衍生自基底的資料集<xref:System.Data.DataSet>類別，並接著會使用從資訊**Dataset 設計工具**，其會儲存於.xsd 檔案，以產生新的強類型 dataset 類別。 從結構描述 （資料表、 資料行，等等） 的資訊會產生，並編譯成這個新的資料集類別，當做第一級物件和屬性的一組。 因為具類型資料集繼承自基底<xref:System.Data.DataSet>類別，型別的類別假設所有的功能<xref:System.Data.DataSet>類別，並可以搭配這些方法會採用的執行個體<xref:System.Data.DataSet>類別做為參數。  

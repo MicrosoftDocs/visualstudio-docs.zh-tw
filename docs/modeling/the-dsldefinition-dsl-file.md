@@ -1,23 +1,21 @@
 ---
-title: "DslDefinition.dsl 檔案 |Microsoft 文件"
-ms.custom: 
+title: DslDefinition.dsl 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 本主題描述 DslDefinition.dsl 檔案的 Dsl 專案中的結構[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解決方案，它會定義*網域特定領域語言*。 DslDefinition.dsl 檔案描述的類別和關聯性的特定領域語言，以及圖表、 圖形、 連接器、 序列化格式和**工具箱**的特定領域語言及其編輯工具。 在網域指定的語言方案中，會根據 DslDefinition.dsl 檔中的資訊產生定義那些工具的程式碼。  
@@ -157,9 +155,9 @@ ms.lasthandoff: 02/09/2018
   
 -   **名稱和命名空間。** 這些屬性會指定產生的程式碼中的名稱和命名空間的類別。 它們在網域指定的語言內必須都是唯一的。  
   
--   **InheritanceModifier.** 這個屬性是 「 抽象 」、 「 密封 」 或 none。  
+-   **InheritanceModifier。** 這個屬性是 「 抽象 」、 「 密封 」 或 none。  
   
--   **DisplayName.** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。  
+-   **顯示名稱。** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。  
   
 -   **GeneratesDoubleDerived.** 如果這個屬性設為 true，將會產生兩個類別，且其中一個其他的子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。  
   
@@ -547,7 +545,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
   
  連接器對應也可以包含裝飾項目對應。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

@@ -1,13 +1,10 @@
 ---
-title: "一般參考 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: 一般參考 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>一般參考 (Visual Studio 中的 Office 程式開發)
   本章節包含有關 Visual Studio 中的 Microsoft Office 專案的技術詳細資料。  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)  
  描述部署資訊清單如何使用的 Office 方案。  
   
- [使用者介面參考 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [使用者介面參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  列出這些主題說明的各種對話方塊、 視窗和其他使用者介面顯示的選項。  
   
- [錯誤訊息 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [錯誤訊息&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  列出主題，說明 Office 專案的錯誤訊息。  
   
 ## <a name="related-sections"></a>相關章節  
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供安裝、 專案範本，Office 主要的 interop 組件和新的 Office 程式開發功能的相關資訊的連結。  
   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  

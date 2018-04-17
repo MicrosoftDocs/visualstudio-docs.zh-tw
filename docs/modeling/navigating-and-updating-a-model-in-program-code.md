@@ -2,22 +2,20 @@
 title: 巡覽和更新的模型中的程式碼 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e5b76c384f92e1b943e0e9e6a522d16b6a6cadc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: c3438f57086a40e58ca384bc8814165fc2b76585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 您可以撰寫程式碼，以建立和刪除模型項目、 設定其屬性，以及建立和刪除項目之間的連結。 在交易內，就必須進行的所有變更。 如果項目會在圖表檢視，圖表將會 「 」 自動修正交易的結尾。  
@@ -41,7 +39,7 @@ ms.lasthandoff: 04/10/2018
   
  [重新排列關聯性的連結](#reorder)  
   
- [Locks](#locks)  
+ [鎖定](#locks)  
   
  [複製和貼上](#copy)  
   

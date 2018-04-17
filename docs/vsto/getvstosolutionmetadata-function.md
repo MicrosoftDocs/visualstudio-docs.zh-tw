@@ -1,24 +1,23 @@
 ---
-title: "GetVstoSolutionMetadata 函式 |Microsoft 文件"
-ms.custom: 
+title: GetVstoSolutionMetadata 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a102c0a0849240b60b6e1e728bb4e252c94ab43e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c024d97d13c2794dd4fdaee6cfcd53d24c2e668
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函式
   這個 API 支援 Office 基礎結構，並不適合直接從您的程式碼使用。  

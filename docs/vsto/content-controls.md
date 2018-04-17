@@ -1,13 +1,10 @@
 ---
-title: "內容控制項 |Microsoft 文件"
-ms.custom: 
+title: 內容控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -41,14 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  
@@ -130,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |因為取消復原或復原作業而文件中加入內容控制項之後，執行程式碼。|處理控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> 事件。|  
 |就在刪除文件中的內容控制項之前，執行程式碼。|處理控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> 事件。|  
   
-##  <a name="Protection"></a>使用內容控制項保護文件的部分  
+##  <a name="Protection"></a> 使用內容控制項保護文件的部分  
  當您保護文件的某個部分時，使用者即無法變更或刪除該部分文件的內容。 使用內容控制項有多種方法可以保護文件的組件。  
   
  如果要保護的區域在內容控制項內，您可以使用內容控制項的屬性，防止使用者編輯或刪除控制項：  
@@ -146,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  如需如何使用內容控制項保護文件的組件的詳細資訊，請參閱[How to： 保護的文件組件使用內容控制項](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
-##  <a name="DataBinding"></a>資料繫結至內容控制項  
+##  <a name="DataBinding"></a> 資料繫結至內容控制項  
  將內容控制項繫結至資料來源，即可在文件中顯示資料。 當資料來源更新時，內容控制項就會反映變更。 您也可以將變更儲存回資料來源。  
   
  內容控制項提供下列資料繫結選項：  
@@ -233,13 +230,13 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  若要判斷使用者何時編輯內容控制項的內容，您可以將控制項繫結至自訂 XML 組件，接著處理 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 事件。 在使用者變更繫結至自訂 XML 組件控制項的內容時，會引發這個事件。 如需示範如何將內容控制項繫結至自訂 XML 組件的逐步解說，請參閱[逐步解說： 將內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。  
   
-###  <a name="checkbox"></a>在 Word 專案中的核取方塊內容控制項  
+###  <a name="checkbox"></a> 在 Word 專案中的核取方塊內容控制項  
  Word 2010 導入了表示核取方塊的新型別內容控制項。 不過，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不提供讓您在 Office 專案中使用對應的 CheckBoxContentControl 型別。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 專案中建立核取方塊內容控制項，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件，並將 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值傳遞給方法，以指定核取方塊內容控制項。 下列程式碼範例會示範如何執行這項操作。  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [逐步解說： 使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   

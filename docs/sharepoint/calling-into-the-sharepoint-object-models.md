@@ -1,12 +1,10 @@
 ---
-title: "呼叫 SharePoint 物件模型 |Microsoft 文件"
-ms.custom: 
+title: 呼叫 SharePoint 物件模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +15,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cbb1b8f573c6dd28280e30fd5602dff2dc30ae02
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具擴充功能時，您可能需要呼叫 SharePoint Api 來執行特定工作。 比方說，如果您建立 SharePoint 專案的自訂部署步驟，您可能需要呼叫 SharePoint Api 來執行一些工作來部署解決方案。  
   
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]提供您可以使用 SharePoint 工具擴充功能中的兩個不同的物件模型： 伺服器物件模型和用戶端物件模型。 每個物件模型中的 SharePoint 工具擴充功能的內容中有優點和缺點。  
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]提供您可以使用 SharePoint 工具擴充功能中的兩個不同的物件模型： 伺服器物件模型和用戶端物件模型。 每個物件模型中的 SharePoint 工具擴充功能的內容中有優點和缺點。  
   
  如需 SharePoint 物件模型的概觀，請參閱[程式設計模型的 SharePoint 工具擴充功能的概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。  
   
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-how-sharepoint-commands-are-executed"></a>了解如何 SharePoint 命令會執行  
  定義 SharePoint 命令的組件會在名為 vssphost4.exe 64 位元主控件程序中載入的。 中的 SharePoint 工具擴充功能呼叫 SharePoint 命令之後，而不是 32 位元 Visual Studio 處理序 (devenv.exe) vssphost4.exe 執行命令。 您可以控制如何在登錄中設定值執行 SharePoint 命令的某些層面。 如需詳細資訊，請參閱[偵錯 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [如何： 執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [SharePoint 工具延伸模組的程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  

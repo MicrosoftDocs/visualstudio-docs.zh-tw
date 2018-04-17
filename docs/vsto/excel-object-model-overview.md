@@ -1,12 +1,10 @@
 ---
-title: "Excel 物件模型概觀 |Microsoft 文件"
-ms.custom: 
+title: Excel 物件模型概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Deploying Office Solutions
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  本主題提供 Excel 物件模型的簡短概觀。 如需其中您可以進一步了解整個 Excel 物件模型的資源，請參閱[使用 Excel 物件模型文件](#ExcelOMDocumentation)。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 使用事件處理常式在 Excel 2007 增益集？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何執行 i： 使用圖形，以建立泡泡圖在 Excel 中的圖表嗎？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 使用事件處理常式在 Excel 2007 增益集？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何執行 i： 使用圖形以建立泡泡圖在 Excel 嗎？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>存取 Excel 專案中的物件  
  當您建立 Excel 的新 VSTO 增益集專案時，Visual Studio 會自動建立 ThisAddIn.vb 或 ThisAddIn.cs 程式碼檔。 您可以使用 `Me.Application` 或 `this.Application`，來存取 Application 物件。  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- 您可以在專案中使用 `Globals` 類別，從個別的類別之外存取 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 如需詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。 下列範例會呼叫<xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法`Sheet1`不論程式碼放在其中`Sheet`  *n* 類別或`ThisWorkbook`類別。  
+ 您可以在專案中使用 `Globals` 類別，從個別的類別之外存取 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 如需詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。 下列範例會呼叫<xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>方法`Sheet1`不論程式碼放在其中`Sheet` *n*類別或`ThisWorkbook`類別。  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio 會藉由提供 <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 類型，來擴充 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些類型具有與 <xref:Microsoft.Office.Interop.Excel.Range> 物件相同的大部分功能，以及新功能 (例如資料繫結功能和新事件)。 如需詳細資訊，請參閱[NamedRange 控制項](../vsto/namedrange-control.md)和[XmlMappedRange 控制項](../vsto/xmlmappedrange-control.md)。  
   
-##  <a name="ExcelOMDocumentation"></a>使用 Excel 物件模型文件  
+##  <a name="ExcelOMDocumentation"></a> 使用 Excel 物件模型文件  
  如需 Excel 物件模型的完整資訊，您可以參閱 Excel 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
   
 ### <a name="primary-interop-assembly-reference"></a>主要 Interop 組件參考  

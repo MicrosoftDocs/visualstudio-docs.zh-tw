@@ -1,21 +1,19 @@
 ---
-title: "導向圖形標記語言 (DGML) 參考 |Microsoft 文件"
-ms.custom: 
+title: 導向圖形標記語言 (DGML) 參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 有向圖形標記語言 (DGML) 描述用於視覺化以及執行複雜度分析的資訊，而且是用來在 Visual Studio 中保存 Code Map 的格式。 它使用簡單的 XML 來描述循環與非循環的有向圖形。 有向圖形是一組用連結或邊緣相連的節點。 節點和連結可用來表示網路結構，例如軟體專案中的項目。  
@@ -25,7 +23,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱[色彩類別](http://go.microsoft.com/fwlink/?LinkId=182345)。  
   
-##  <a name="DGML"></a>DGML 語法  
+##  <a name="DGML"></a> DGML 語法  
  下表說明 DGML 中所使用的項目種類：  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ ms.lasthandoff: 02/09/2018
   
      下列清單會描述一些您可以加入的選擇性屬性：  
   
-     `Label`的節點顯示名稱。  
+     `Label` 的節點顯示名稱。  
   
      樣式屬性。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
@@ -301,7 +299,7 @@ ms.lasthandoff: 02/09/2018
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>常用路徑的別名  
+###  <a name="AddAlias"></a> 常用路徑的別名  
  以別名取代常用路徑，有助於縮減 .dgml 檔案的大小以及載入或儲存檔案所需的時間。 若要建立別名，請在 .dgml 檔案的結尾加入 `<Paths></Paths>` 區段。 在這個區段加入 `<Path/>` 項目，以定義路徑的別名：  
   
 ```xml  
@@ -321,7 +319,7 @@ ms.lasthandoff: 02/09/2018
 </Properties>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   
  [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)

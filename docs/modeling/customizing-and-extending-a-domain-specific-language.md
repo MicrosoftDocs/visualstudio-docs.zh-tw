@@ -2,22 +2,20 @@
 title: 自訂和擴充的網域特定定義域語言 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4c1c0301f48997e834e9a707f660db42580ae203
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以定義模型工具：  
@@ -57,7 +55,7 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以�
 |刪除、 重設父代，或刪除項目時，請重新連結相關的項目。|設定**傳播刪除**關係角色的值。 對於更複雜的影響，覆寫`ShouldVisitRelationship`和`ShouldVisitRolePlayer`方法`MyDslDeleteClosure`中定義的類別**DomainModel.cs**<br /><br /> 請參閱[自訂刪除行為](../modeling/customizing-deletion-behavior.md)|  
 |保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至複製`ElementGroupPrototype`。 若要覆寫最方便的方法是 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
 |在選擇的位置貼上圖形，例如目前的游標位置。|覆寫`ClipboardCommandSet.ProcessOnCopy()`要使用的特定位置的新版`ElementOperations.Merge().`看到[自訂複製行為](../modeling/customizing-copy-behavior.md)。|  
-|貼上建立其他連結|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|貼上建立其他連結|覆寫 ClipboardCommandSet.ProcessOnPasteCommand()|  
 |啟用從拖放此圖中，其他 Dsl 和 Windows 項目|請參閱[如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |允許圖形或工具，以將它們拖曳至 「 子 」 圖形，例如連接埠，如同它已拖曳至父代。|定義目標物件類別，已卸除的物件轉送給父項目合併指示詞。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|  
 |允許圖形或將它們拖曳至圖形，並讓其他連結的工具或建立的物件。 例如，若要允許註解可以放到它為連結的項目。|項目合併指示詞在類別上定義目標網域，並定義要產生連結。 在複雜的情況下，您可以加入自訂程式碼。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|  

@@ -1,13 +1,10 @@
 ---
-title: "如何： 將現有的 BDC 模型檔案加入至 SharePoint 專案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將現有的 BDC 模型檔案加入至 SharePoint 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.ImportDialog
 dev_langs:
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], remove a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5f13377211a6b8a7a2035d85e1423be9d2bbb72
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a8a6b42a9cff28cc57365081bc4a041524ece7fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>如何：將現有的 BDC 模型檔案加入至 SharePoint 專案
   您可以自訂封裝，及使用 Visual Studio 將模型檔案 (.bdcm) 新增至任何 SharePoint 伺服器陣列的專案重新部署商務資料連線 (BDC) 模型。 如需詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
   
      **商務資料連接模型**項目加入至專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
  [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   

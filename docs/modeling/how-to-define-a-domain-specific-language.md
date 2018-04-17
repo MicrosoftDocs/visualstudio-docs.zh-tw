@@ -1,10 +1,8 @@
 ---
-title: "如何定義特定領域語言 |Microsoft 文件"
-ms.custom: 
+title: 如何定義特定領域語言 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,22 +14,22 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 57ae6465ec8d9fbbe85ff1f040d69b227c6a76fe
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5cff720949f6b521b35fb68154ff3b3b43f14a8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義的網域特定定義域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
 如果您是 Dsl 的新手，我們建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a>選取範本解決方案  
+##  <a name="templates"></a> 選取範本解決方案  
  若要定義 DSL，您必須已安裝下列元件：  
   
 |||  
@@ -123,7 +121,7 @@ ms.lasthandoff: 02/09/2018
   
  刪除或重新命名其他類別以符合您的需求。  
   
-##  <a name="patterns"></a>用於定義 DSL 模式  
+##  <a name="patterns"></a> 用於定義 DSL 模式  
  建議您一次加入或調整一或多個功能來開發 DSL。 加入功能，執行 DSL 並測試它，然後再多加入一兩個功能。 DSL 的一般功能可能是：  
   
 -   網域類別、將項目連接到模型的內嵌關聯性、將該類別的項目顯示在圖表上所需的圖型，以及可讓使用者建立項目的項目工具。  
@@ -150,7 +148,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  「模型」是指使用者建立的 DSL 執行個體，通常會顯示為圖表。 本主題同時討論 DSL 定義圖以及使用 DSL 時出現的模型圖表。  
   
-##  <a name="classes"></a>定義網域類別  
+##  <a name="classes"></a> 定義網域類別  
  網域類別代表 DSL 的概念。 執行個體*模型項目*。 例如在**MusicLibrary** DSL 可能具有名為的網域類別**專輯**和**歌曲**。  
   
  若要建立網域類別，您可以從拖曳**名為網域類別**工具圖表，，然後重新命名的類別。  
@@ -232,7 +230,7 @@ ms.lasthandoff: 02/09/2018
   
 7.  **儲存檔案、 關閉，然後重新開啟**。 在展開節點之後，總管中應該會看到您所建立的所有執行個體。  
   
-##  <a name="shapes"></a>在圖表上定義圖形  
+##  <a name="shapes"></a> 在圖表上定義圖形  
  您可以將圖表上顯示的項目類別定義為矩形、橢圓形或圖示。  
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定義在圖表上顯示為圖形的項目類別  
@@ -328,7 +326,7 @@ ms.lasthandoff: 02/09/2018
   
  先測試圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
-##  <a name="references"></a>定義參考關聯性  
+##  <a name="references"></a> 定義參考關聯性  
  您可以在任何來源網域類別與任何目標網域類別之間定義參考關聯性。 參考關聯性通常在圖表上顯示為連接器，做為圖形之間的線條。  
   
  例如，如果音樂 Album 和 Artist 顯示為圖表上的圖形，您可以定義名為 ArtistsAppearedOnAlbums 的關聯性，該關聯性會將 Artist 連結到他們已工作的 Album。 請參閱圖中的範例。  
@@ -410,7 +408,7 @@ ms.lasthandoff: 02/09/2018
   
  先測試連接器之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
-##  <a name="compartments"></a>定義包含清單的圖形： 區間圖案  
+##  <a name="compartments"></a> 定義包含清單的圖形： 區間圖案  
  區間圖形包含一或多個項目清單。 例如，在音樂庫 DSL 中，您可以使用區間圖形來代表音樂 Album。 在每一個 Album 中都有一份 Song 清單。  
   
  ![區間圖案](../modeling/media/compartmentshape.png "CompartmentShape")  
@@ -538,7 +536,7 @@ ms.lasthandoff: 02/09/2018
   
 7.  選取區間圖形中的連結或項目。 這時連結和項目應該都會消失。  
   
-##  <a name="ports"></a>定義在另一個圖形的邊界上的連接埠  
+##  <a name="ports"></a> 定義在另一個圖形的邊界上的連接埠  
  連接埠是位於另一個圖形界限上的圖形。  
   
  連接埠也可用來提供另一個圖形上的固定連接點，使用者可繪製連接器到其中。 在此情況下，您可以使連接埠圖形透明。  
@@ -561,7 +559,7 @@ ms.lasthandoff: 02/09/2018
   
  如需詳細資訊，請參閱[屬性的連接埠圖形](../modeling/properties-of-port-shapes.md)。  
   
-##  <a name="swimlanes"></a>定義具有泳道的 DSL  
+##  <a name="swimlanes"></a> 定義具有泳道的 DSL  
  泳道是圖表的水平或垂直分割。 每一個泳道都對應於模型項目。 您的 DSL 定義需要一個網域類別做為泳道項目。  
   
  若要建立具有泳道的 DSL，最佳的方式是建立新的 DSL 方案並選擇 [工作流程] 方案範本。 在 DSL 定義中，Actor 類別是對應到泳道的網域類別。 請重新命名此類別和其他類別以符合專案。  
@@ -572,7 +570,7 @@ ms.lasthandoff: 02/09/2018
   
  如需詳細資訊，請參閱[屬性的泳道](../modeling/properties-of-swimlanes.md)。  
   
-##  <a name="addTypes"></a>加入屬性的型別  
+##  <a name="addTypes"></a> 加入屬性的型別  
   
 ### <a name="domain-enumerations-and-literals"></a>網域列舉和常值  
  網域列舉是具有數個常數值的類型。  
@@ -588,7 +586,7 @@ ms.lasthandoff: 02/09/2018
   
  若要加入型別，以滑鼠右鍵按一下在 DSL 總管] 中，模型的根，然後按一下 [**加入新的外部類型**。 在 [屬性] 視窗中，將名稱設定為**色彩**和命名空間加入**System.Drawing**。 此類型現在會出現在底下的 DSL 總管**網域類型**。 每當設定網域屬性的類型時，您都可以選擇它。  
   
-##  <a name="custom"></a>自訂 DSL  
+##  <a name="custom"></a> 自訂 DSL  
  利用本主題中所述的技巧，您可以使用圖表標記法、可讀取的 XML 表單，以及產生程式碼和其他成品所需的基本工具，即可快速建立 DSL。  
   
  擴充 DSL 定義的方法有兩種：  
@@ -608,7 +606,7 @@ ms.lasthandoff: 02/09/2018
   
  另請參閱[如何： 變更命名空間的網域特定定義域語言](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。  
   
-##  <a name="trouble"></a>疑難排解  
+##  <a name="trouble"></a> 疑難排解  
  下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 建議位於[視覺效果工具 Extensibililty 論壇](http://go.microsoft.com/fwlink/?LinkId=186074)。  
   
 |問題|建議|  
@@ -622,7 +620,7 @@ ms.lasthandoff: 02/09/2018
 |變更組件名稱之後未出現 DSL 的工具箱。|檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[如何： 變更命名空間的特定領域語言](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|  
 |DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。|重設實驗執行個體，然後重建方案。<br /><br /> 1.在 Windows 啟動 功能表底下**所有程式**，依序展開[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然後**工具**，然後按一下**重設 Microsoft Visual Studio 實驗執行個體**。<br />2.在 Visual Studio**建置**功能表上，按一下 **重建方案**。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開始使用的特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)   
  [建立 Windows Form 特定領域語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [建立 WPF 架構的特定領域語言](../modeling/creating-a-wpf-based-domain-specific-language.md)

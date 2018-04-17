@@ -1,13 +1,10 @@
 ---
-title: "SharePoint 封裝和部署疑難排解 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 封裝和部署疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>SharePoint 封裝和部署疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  若要在 Visual Studio、SharePoint 和其他圖層之間進行診斷，您可以使用 EnableDiagnostics 登錄機碼來檢視堆疊追蹤。 如需詳細資訊，請參閱[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。
 
 ## <a name="adding-project-output-to-the-solution-package"></a>將專案輸出加入至方案套件
- 您可以透過 [封裝設計工具] 將專案輸出加入至套件。 然而，當您加入專案輸出時，要確定專案的平台與 SharePoint 方案的平台相符。 我們建議您改用**任何 CPU**平台目標，您想要部署到 SharePoint 伺服器之組件。 如需詳細資訊，請參閱[編譯的頁面、 專案設計工具 &#40;Visual Basic &#41;](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)和[進階編譯器設定對話方塊 &#40;Visual Basic &#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ 您可以透過 [封裝設計工具] 將專案輸出加入至套件。 然而，當您加入專案輸出時，要確定專案的平台與 SharePoint 方案的平台相符。 我們建議您改用**任何 CPU**平台目標，您想要部署到 SharePoint 伺服器之組件。 如需詳細資訊，請參閱[專案設計工具、 編譯頁&#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)和[進階編譯器設定對話方塊&#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)。
 
 ## <a name="validation-warnings-and-errors"></a>驗證警告和錯誤
  Visual Studio 中的 SharePoint 開發工具會執行驗證步驟，來驗證方案套件的格式是否正確。 您也可以為您的「功能」和套件建立自訂驗證步驟。 如需詳細資訊，請參閱[How to： 建立自訂功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
@@ -115,7 +112,7 @@ ms.lasthandoff: 03/02/2018
 
  若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請清除**偵錯後自動撤銷** 核取方塊**SharePoint**  索引標籤的 專案屬性 對話方塊。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
 

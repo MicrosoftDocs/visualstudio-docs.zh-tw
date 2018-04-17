@@ -1,12 +1,10 @@
 ---
-title: "沙箱化方案考量 |Microsoft 文件"
-ms.custom: 
+title: 沙箱化方案考量 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *沙箱化方案*是 Microsoft SharePoint 2010，可讓網站集合的使用者上傳自己的自訂程式碼的方案中的功能。 常見的沙箱化方案已上傳自己的 Web 組件的使用者。  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  沙箱的 SharePoint 應用程式會執行安全、 受監控的處理序具有存取有限的組件的 Web 伺服陣列中。 Microsoft SharePoint 2010 會使用功能，方案組件庫、 監視、 解決方案和驗證架構的組合，讓沙箱化方案。  
   
 ## <a name="specifying-project-trust-level"></a>指定專案的信任層級  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]支援透過布林專案屬性的沙箱化方案稱為*沙箱化方案*。 這個屬性可以設定在任何時間，在專案中，或可以指定當您建立的專案中**SharePoint 自訂精靈**。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 支援透過布林專案屬性的沙箱化方案稱為*沙箱化方案*。 這個屬性可以設定在任何時間，在專案中，或可以指定當您建立的專案中**SharePoint 自訂精靈**。  
   
 > [!NOTE]  
 >  變更*沙箱化方案*專案建立後的屬性可能會造成驗證錯誤。  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   衍生自的所有網頁組件的支援`System.Web.UI.WebControls.WebParts.WebPart`  
+-   衍生自的所有網頁組件的支援 `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Web 組件  
   
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
 -   程式碼的工作流程  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [差異沙箱化方案與伺服器陣列方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

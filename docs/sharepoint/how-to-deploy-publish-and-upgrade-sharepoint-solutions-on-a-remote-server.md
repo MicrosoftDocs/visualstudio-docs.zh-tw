@@ -1,12 +1,10 @@
 ---
-title: "如何： 部署、 發行和升級遠端伺服器上的 SharePoint 方案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 部署、 發行和升級遠端伺服器上的 SharePoint 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：在遠端伺服器部署、發行和升級 SharePoint 方案
   除了將 SharePoint 方案部署到本機系統，您可以發行至遠端站台或本機 SharePoint 網站的沙箱化 SharePoint 方案。 在遠端發佈程序將.wsp 檔案複製到 SharePoint 伺服器、 安裝方案，然後可讓您啟用方案。 任何變更之後，您也可以升級遠端 SharePoint 方案安裝。  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在**方案總管] 中**，開啟您想要發行，然後選擇 [沙箱化 SharePoint 專案的捷徑功能表**發行**。  
   
-2.  在**發行**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，然後再輸入一個線上發行網站，例如以下範例 URL: **https://mytestsite.sharepoint.microsoftonline.com**。  
+2.  在**發行**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，然後再輸入一個線上發行網站，例如以下範例 URL: **https://mytestsite.sharepoint.microsoftonline.com**.  
   
 3.  選擇**瀏覽器中開啟方案庫頁面上，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。  
   
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
      停用舊的版本的方案、 新版本的方案，會升級舊的方案，從保留的資料和新的方案會在 SharePoint 中啟動。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 部署和發行至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   

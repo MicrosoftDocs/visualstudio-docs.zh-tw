@@ -2,22 +2,20 @@
 title: 自訂屬性 視窗 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 6ccd6e64b33bd83a7a67b0d04270d8a6802311c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 您可以在您的特定領域語言 (DSL) 自訂的外觀和行為的 [屬性] 視窗，在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定義中，您網域屬性類別上定義每個網域。 根據預設，當您選取類別，在圖表或模型總管 中的執行個體的每個網域屬性列在 屬性 視窗中。 這可讓您查看和編輯網域屬性值，即使您尚未對應這些圖形在圖表上的欄位。  

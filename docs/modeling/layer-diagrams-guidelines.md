@@ -1,10 +1,8 @@
 ---
-title: "相依性圖表： 指導方針 |Microsoft 文件"
-ms.custom: 
+title: 相依性圖表： 指導方針 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 840758b0b370c452ac4428c6bfdad525662ed420
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 30631a64ce8407e78120cb1cb7a4d9384ee4a384
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 藉由建立描述您的應用程式架構以高層級*相依性圖表*Visual Studio 中。 確定您的程式碼保持一致與這個設計來驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
@@ -30,7 +28,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="what-is-a-dependency-diagram"></a>什麼是相依性圖表？  
  傳統架構圖表，例如相依性圖表識別主要元件或功能的設計和其相依性的單位。 在圖表上的每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)。  
   
-##  <a name="Update"></a>如何設計使用或更新您的應用程式相依性圖表  
+##  <a name="Update"></a> 如何設計使用或更新您的應用程式相依性圖表  
  下列步驟提供如何使用在開發程序內的相依性圖表的概觀。 本主題稍後的章節會描述每個步驟的更多相關詳細資料。 如果您正在開發新的設計，請略過參考現有程式碼的步驟。  
   
 > [!NOTE]
@@ -54,7 +52,7 @@ ms.lasthandoff: 02/09/2018
   
 9. [在建置流程中包含圖層驗證](#BuildValidation)以確保程式碼繼續依照您的設計。  
   
-##  <a name="Create"></a>建立相依性圖表  
+##  <a name="Create"></a> 建立相依性圖表  
  必須在模型專案內建立相依性圖表。 您可以將新的相依性圖表加入至現有的模型專案、 建立新模型專案相依性圖表，或複製在相同的模型專案中現有的相依性圖表。  
   
 > [!IMPORTANT]
@@ -62,10 +60,10 @@ ms.lasthandoff: 02/09/2018
   
  請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
   
-##  <a name="CreateLayers"></a>定義圖層以代表功能區域或元件  
+##  <a name="CreateLayers"></a> 定義圖層以代表功能區域或元件  
  圖層代表的邏輯群組*成品*，例如專案、 程式碼檔案、 命名空間、 類別和方法。 您可以從 Visual C# 和 Visual Basic 專案的成品建立圖層，或您可以附加規格或計劃至圖層連結文件，例如 Word 檔案或 PowerPoint 簡報。 每個圖層都會顯示為圖表上的矩形，並顯示連結到圖層的成品數目。 圖層可以包含巢狀圖層以描述更特定的工作。  
   
- 一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要深入了解圖層模式，請造訪 「 模式和實務 」 網站[http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+ 一般來說，會根據圖層的函式 (例如，「簡報」或「服務」) 來為圖層命名。 如果成品具有密切相依性，請將它們放在同一圖層。 如果成品可以個別更新或用於個別應用程式，請將它們放在不同的圖層中。 若要深入了解圖層模式，請造訪 「 模式和實務 」 網站[ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
 > [!TIP]
 >  某些類型的成品可以連結至圖層，但不是支援針對相依性圖表進行驗證。 若要查看成品是否支援驗證，請開啟**圖層總管**檢查**支援驗證**成品連結的屬性。 請參閱[探索現有圖層之間的相依性](#Generate)。  
@@ -80,7 +78,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)  
   
-##  <a name="Generate"></a>探索現有圖層之間的相依性  
+##  <a name="Generate"></a> 探索現有圖層之間的相依性  
  只要與某個圖層關聯的成品參考到與另一個圖層關聯的成品，相依性便會存在。 例如，某個圖層中的類別會宣告在另一個圖層中具有類別的變數。 您可以讓相依性進行反向工程以找出現有的相依性。  
   
 > [!NOTE]
@@ -92,7 +90,7 @@ ms.lasthandoff: 02/09/2018
   
  通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
   
-##  <a name="EditArchitecture"></a>編輯圖層與相依性以顯示預定的設計  
+##  <a name="EditArchitecture"></a> 編輯圖層與相依性以顯示預定的設計  
  若要描述您打算對您的系統或預期的架構進行的變更，請使用下列步驟編輯相依性圖表。 您也可以考慮先進行一些重構變更來改善程式碼結構，然後再擴充。 請參閱[改善程式碼結構](#Improving)。  
   
 |**若要**|**執行這些步驟**|  
@@ -104,14 +102,14 @@ ms.lasthandoff: 02/09/2018
 |指定與圖層關聯的成品不可屬於指定的命名空間|輸入命名空間中的圖層**Forbidden Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
 |指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入命名空間中的圖層**Required Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
   
-###  <a name="Improving"></a>改善程式碼的結構  
+###  <a name="Improving"></a> 改善程式碼的結構  
  重構變更屬於改良功能，不會影響應用程式的行為，但是可協助讓程式碼變得更容易變更和在日後進行擴充。 結構完善的程式碼具有易於抽象至相依性圖表的設計。  
   
  例如，如果您為程式碼中每個命名空間建立圖層，然後對相依性進行反向工程，則圖層之間應該會有最小一組的單向相依性。 如果您使用類別或方法做為圖層來建立更詳細的圖表，則結果應該也會有相同的特性。  
   
  如果這不是大小寫，程式碼將會更難在其生命變更，且將較不適合使用相依性圖表進行驗證。  
   
-##  <a name="NewAreas"></a>設計您的應用程式的新區域  
+##  <a name="NewAreas"></a> 設計您的應用程式的新區域  
  當您著手開發新專案或新專案的新區域時，可以繪製圖層與相依性，以便有助您先識別主要元件，再著手開發程式碼。  
   
 -   **顯示可識別的架構模式**相依性圖表，盡可能中。 例如，描述桌面應用程式的相依性圖表可能包括簡報、 網域邏輯和資料存放區等圖層。 涵蓋應用程式內單一功能的相依性圖表可能具有例如模型、 檢視和控制器等的圖層。 如需這類模式的詳細資訊，請參閱[模式和實務： 應用程式架構](http://go.microsoft.com/fwlink/?LinkId=145794)。  
@@ -124,7 +122,7 @@ ms.lasthandoff: 02/09/2018
   
      在建置應用程式時，會針對整體圖表和更詳細的功能圖表來驗證您的程式碼。  
   
-##  <a name="EditLayout"></a>編輯版面配置以便展示和討論  
+##  <a name="EditLayout"></a> 編輯版面配置以便展示和討論  
  若要協助您識別圖層與相依性，或與小組成員進行討論，請以下列方式編輯圖表的外觀和版面配置：  
   
 -   變更圖層的大小、圖形和位置。  
@@ -133,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
     -   選取一或多個圖層或相依性、 按一下滑鼠右鍵，然後按一下**屬性**。 在**屬性**視窗中，編輯**色彩**屬性。  
   
-##  <a name="Validate"></a>根據圖表驗證程式碼  
+##  <a name="Validate"></a> 根據圖表驗證程式碼  
  若已編輯圖表，您可以隨時手動針對程式碼驗證圖表，或在每次執行本機組建或 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 時自動驗證。  
   
  請參閱：  
@@ -142,7 +140,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [在建置流程中包含圖層驗證](#BuildValidation)  
   
-##  <a name="UpdateCode"></a>更新程式碼以符合新的架構  
+##  <a name="UpdateCode"></a> 更新程式碼以符合新的架構  
  通常，錯誤會出現您驗證針對更新的相依性圖表的程式碼的第一次。 這些錯誤可以有數個原因：  
   
 -   成品指派給錯誤的圖層。 在此情況下，請移動成品。  
@@ -156,9 +154,9 @@ ms.lasthandoff: 02/09/2018
   
  在開發過程中，您可以隱藏驗證期間已報告過的某些衝突。 例如，您可能會想要隱藏已經處理的錯誤，或是與特定情節無關的錯誤。 當您隱藏錯誤時，最好在 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中記錄工作項目。 若要執行這項工作，請參閱[使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
   
-##  <a name="BuildValidation"></a>在建置流程中包含圖層驗證  
+##  <a name="BuildValidation"></a> 在建置流程中包含圖層驗證  
  若要確保在程式碼的日後變更符合相依性圖表，包含您的方案標準建置流程的圖層驗證。 其他小組成員會建置此方案，只要任何程式碼中的相依性和相依性圖表的差異將會報告為建置錯誤。 如需在建置程序中包含圖層驗證的詳細資訊，請參閱[使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
  [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)

@@ -1,12 +1,10 @@
 ---
-title: "將資料儲存在 SharePoint 專案系統擴充功能的 |Microsoft 文件"
-ms.custom: 
+title: 將資料儲存在 SharePoint 專案系統擴充功能的 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
 - project items [SharePoint development in Visual Studio], saving string data
@@ -14,13 +12,14 @@ helpviewer_keywords:
 - SharePoint projects, saving string data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 56cdfb95de6f0e5f8644ea3c73daacbf90e33a97
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5efc6a11852c0f843415623f4a5ac94f9d3e392b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>儲存 SharePoint 專案系統擴充功能的資料
   當您擴充 SharePoint 專案系統時，您可以儲存 SharePoint 專案關閉後持續發生的字串資料。 通常與特定的專案項目或專案本身相關聯的資料。  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [關聯自訂資料與 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [在 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  

@@ -1,10 +1,8 @@
 ---
-title: "藉由編輯 DGML 檔案自訂 code map |Microsoft 文件"
-ms.custom: 
+title: 藉由編輯 DGML 檔案自訂 code map |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2a23bc9b82941fda5a771f49a2aaf5c944a210bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 若要自訂 Code Map，您可以編輯對應的有向圖形標記語言 (.dgml) 檔案。 例如，您可以編輯項目來指定自訂樣式、指派節點和連結的屬性與分類，或將文件或 URL 連結至程式碼項目或連結。 如需 DGML 項目，請參閱[導向圖形標記語言 (DGML) 參考](../modeling/directed-graph-markup-language-dgml-reference.md)。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  若要建立 Code Map，您必須擁有 Visual Studio Enterprise。 當您在 Visual Studio 中編輯 Code Map 時，它會在您儲存此 .dgml 檔案時刪除任何未使用的 DGML 項目和屬性，藉此予以清除。 它也會在您手動加入新的連結時自動建立程式碼項目。 當您儲存 .dgml 檔案時，任何加入至項目的屬性可能會自行按照字母順序重新排列。  
   
-##  <a name="OrganizeNodes"></a>群組的程式碼項目  
+##  <a name="OrganizeNodes"></a> 群組的程式碼項目  
  您可以加入新的群組，或將現有的節點轉換成群組。  
   
 1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
@@ -79,7 +77,7 @@ ms.lasthandoff: 02/09/2018
   
      如需有關`Category`屬性，請參閱[將類別指派給程式碼項目和連結](#AssignCategories)。  
   
-##  <a name="ChangeGraphStyle"></a>變更地圖的樣式  
+##  <a name="ChangeGraphStyle"></a> 變更地圖的樣式  
  您可以編輯此對應的 .dgml 檔案，變更圖形的背景色彩和框線色彩。 若要變更的程式碼項目和連結的樣式，請參閱[變更程式碼項目和連結的樣式](#Highlight)。  
   
 1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。  
@@ -107,7 +105,7 @@ ms.lasthandoff: 02/09/2018
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a>變更程式碼項目和連結的樣式  
+##  <a name="Highlight"></a> 變更程式碼項目和連結的樣式  
   
 ###  <a name="CreateCustomStyles"></a>   
  您可以將自訂樣式套用至下列程式碼項目：  
@@ -294,7 +292,7 @@ ms.lasthandoff: 02/09/2018
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+     <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; 「 或 」 &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -302,15 +300,15 @@ ms.lasthandoff: 02/09/2018
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = 識別碼  
+     <PropertyGet> :: = 識別碼  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
      <Identifier> ::= [^. ]*  
   
-     <Literal>:: = 單引號或雙引號括住字串常值  
+     <Literal> :: = 單引號或雙引號括住字串常值  
   
-     <Number>:: = 選擇小數點的數字的字串  
+     <Number> :: = 選擇小數點的數字的字串  
   
      您可以指定多個`<Condition/>`項目，則必須全部為 true 才能套用樣式。  
   
@@ -437,7 +435,7 @@ ms.lasthandoff: 02/09/2018
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a>將屬性指派給程式碼項目和連結  
+##  <a name="AssignProperties"></a> 將屬性指派給程式碼項目和連結  
  您可以指派屬性給程式碼項目和連結，對其組合管理。 例如，您可以選取具有特定屬性的程式碼項目，以便組成群組、變更樣式或予以隱藏。  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>將屬性指派給程式碼項目  
@@ -482,7 +480,7 @@ ms.lasthandoff: 02/09/2018
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a>將類別指派給程式碼項目和連結  
+##  <a name="AssignCategories"></a> 將類別指派給程式碼項目和連結  
  下列章節示範如何將分類指派給程式碼項目，藉以組合管理，並示範您可以如何建立階層式分類，幫助您使用繼承來組合管理程式碼項目和將屬性加入子分類。  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>將分類指派給程式碼項目  
@@ -553,7 +551,7 @@ ms.lasthandoff: 02/09/2018
   
      在本範例中，`MyFirstNode` 的背景為綠色，這是因為其 `Category` 屬性繼承了 `Background` 的 `MyParentCategory` 屬性。  
   
-##  <a name="AddReferences"></a>將文件或 Url 連結至程式碼項目和連結  
+##  <a name="AddReferences"></a> 將文件或 Url 連結至程式碼項目和連結  
  您可以編輯此對應的 .dgml 檔案，並將 `Reference` 屬性加入程式碼項目的 `<Node/>` 項目或連結的 `<Link/>` 項目，藉此將文件或 URL 連結至程式碼項目或連結。 然後，您就可以從程式碼項目或連結開啟和檢視該內容。 `Reference` 屬性會指定該內容的路徑。 此路徑可以是相對於 .dgml 檔案位置的路徑，或是絕對路徑。  
   
 > [!CAUTION]
@@ -640,7 +638,7 @@ ms.lasthandoff: 02/09/2018
   
 5.  若要檢視參考的程式碼項目或來自此對應的程式碼項目，請開啟該程式碼項目或連結的捷徑功能表。 選擇**移至參考**，然後程式碼項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   
  [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)   

@@ -1,13 +1,10 @@
 ---
-title: "如何： 加入和移除功能相依性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 加入和移除功能相依性 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e74ac8cef88319a54df0c08cd91fb2654d390cb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: eeda1b63132de49785b2f2ba5743dbd683504a71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：新增與移除功能相依性
   您的 SharePoint 功能仍取決於其他功能的功能或資料。 在這些情況下，您可以將這些其他功能做為相依性標示為您的功能。 如此一來，可確保在 SharePoint 伺服器之前您功能已啟用,，就會啟動相依的功能。  
@@ -71,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在功能設計工具中，依序展開**功能啟用相依性** 節點，選擇您想要移除，然後選擇功能名稱**移除** 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：新增與移除 SharePoint 功能中的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

@@ -1,12 +1,10 @@
 ---
-title: "如何： 管理執行窗格控制項配置 |Microsoft 文件"
-ms.custom: 
+title: 如何： 管理執行窗格控制項配置 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7b70bf12ee608b28e462f022fae15b3be6336545
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0831740c612e4e9d4eddd47a0648302e9460f060
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理執行窗格的控制項配置
   動作窗格停駐右邊的文件或工作表的預設值;不過，它可以停駐於左方、 top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼上適當堆疊使用者控制項 [動作] 窗格。 如需詳細資訊，請參閱 [Actions Pane Overview](../vsto/actions-pane-overview.md)。  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 -   控制與包含多個使用者控制項的執行窗格或巢狀的動作 窗格中的 Word 文件層級專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   

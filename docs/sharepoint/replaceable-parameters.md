@@ -1,12 +1,10 @@
 ---
-title: "可置換的參數 |Microsoft 文件"
-ms.custom: 
+title: 可置換的參數 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa002f58ffd749cef9a4cbf9b536a36d7901b105
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 其功能類似於標準 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 範本語彙基元。 如需詳細資訊，請參閱[範本參數](/visualstudio/ide/template-parameters)。  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
  或者，您可以加入擴充功能直接.targets 檔案。 不過，如此一來改變不只是封裝在本機系統上，所有 SharePoint 專案擴充功能清單自己。 當您在系統上唯一的開發人員，或大部分的專案需要它，這可能是很方便。 不過，因為它是特定系統，此方法不是高度可攜性，因此，建議您將任何擴充功能加入專案檔改為。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

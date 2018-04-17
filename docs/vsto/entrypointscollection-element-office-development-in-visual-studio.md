@@ -1,12 +1,10 @@
 ---
-title: "&lt;entryPointsCollection&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;entryPointsCollection&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 478731cde6c1ac08ca0d197f918e2fee4a8673ee
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 357e2b4d7aedb82b63676055f1ad1215171a25cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPointsCollection` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoints` 項目。  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPointsCollection` 具有下列項目。  
   
 ### <a name="entrypoints"></a>entryPoints  
- 必要。 角色`entryPoints`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 必要。 角色`entryPoints`中的項目`vstav3`命名空間中定義[&#60;進入點&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -178,7 +177,7 @@ ms.lasthandoff: 01/10/2018
     </vstav3:entryPointsCollection>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

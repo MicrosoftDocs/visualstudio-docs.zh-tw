@@ -1,12 +1,10 @@
 ---
-title: "擴充 SharePoint 專案 |Microsoft 文件"
-ms.custom: 
+title: 擴充 SharePoint 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>擴充 SharePoint 專案
   當您想要自訂 SharePoint 專案的專案層級功能，請建立專案擴充功能。 例如，您可以新增自訂的專案屬性中，或回應使用者開發的 Visual Studio 中的 SharePoint 方案時所引發的專案層級事件。  
@@ -39,11 +38,11 @@ ms.lasthandoff: 01/10/2018
  如需示範如何建立、 部署和測試專案擴充功能的逐步解說，請參閱[逐步解說： 建立 SharePoint 專案擴充功能](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)。  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>了解專案擴充功能和專案的執行個體之間的關聯性  
- 當您建立專案擴充功能時，延伸模組會載入任何一種 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含數個 SharePoint 專案範本，例如清單定義、 內容類型和事件接收器。 不過，沒有一個 SharePoint 專案類型。 會出現在專案類型**新專案**對話方塊會連結在一起的一或多個 SharePoint 專案項目時，相同的範本。 因為只有一個 SharePoint 專案類型，建立一個專案的延伸模組會套用至所有 SharePoint 專案。 例如，無法建立擴充功能，僅適用於**內容類型**專案。  
+ 當您建立專案擴充功能時，延伸模組會載入任何一種 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含數個 SharePoint 專案範本，例如清單定義、 內容類型和事件接收器。 不過，沒有一個 SharePoint 專案類型。 會出現在專案類型**新專案**對話方塊會連結在一起的一或多個 SharePoint 專案項目時，相同的範本。 因為只有一個 SharePoint 專案類型，建立一個專案的延伸模組會套用至所有 SharePoint 專案。 例如，無法建立擴充功能，僅適用於**內容類型**專案。  
   
  若要存取的特定專案的執行個體，處理其中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>事件*projectService*的實作中的參數<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。 例如，若要判斷 SharePoint 專案加入至方案時，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件。 如需詳細資訊，請參閱[How to： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [如何： 將捷徑功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   

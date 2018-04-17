@@ -2,20 +2,18 @@
 title: T4 範本指示詞 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c4e53c4d123a5a5de493059c68ef09685c903a8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: c39783b9ca8be2f9e406782258befecce416f551
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文字範本的開頭通常是 `template` 指示詞，用於指定範本的處理方式。 文字範本和其所包含之任何檔案中的 template 指示詞不得超過一個。  

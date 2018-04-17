@@ -1,12 +1,10 @@
 ---
-title: "Office 方案錯誤的其他支援 |Microsoft 文件"
-ms.custom: 
+title: Office 方案錯誤的其他支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.MSBuild.errAppInfoTaskInsertCtlFailed
 - VST.MSBuild.errAppInfoTaskDeleteCtlFailed
@@ -58,13 +56,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 225595120af920dc7cb89015024d88ed7bf20580
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9a9a4c0d4df2e97d151b6a6a310848812b02d77d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
   您可以使用下列資源可協助您尋找 Visual Studio 中建立 Office 方案時遇到的常見問題的解答。  
@@ -91,7 +90,7 @@ ms.lasthandoff: 01/10/2018
  [用於開發 Office 方案的其他資源](../vsto/additional-resources-for-developing-office-solutions.md)  
  提供進一步了解開發 Office 方案和 Visual Studio 中的 Office 程式開發的其他資源的連結。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [疑難排解 Office 方案中的錯誤](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [Office 方案部署疑難排解](../vsto/troubleshooting-office-solution-deployment.md)   

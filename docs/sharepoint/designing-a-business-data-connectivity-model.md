@@ -1,12 +1,10 @@
 ---
-title: "設計商務資料連接模型 |Microsoft 文件"
-ms.custom: 
+title: 設計商務資料連接模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>設計商務資料連接模型
   您可以將實體和方法加入至模型檔案來開發商務資料連線 (BDC) 服務的型號。 實體會描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法執行的工作，例如加入、 刪除或更新實體將代表的資料。 如需詳細資訊，請參閱[整合至 SharePoint 的商務資料](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio 可讓您複製模型中的參數之間的類型描述元。 例如，您可以定義名為的類型描述元`CustomerTD`的傳回參數`GetCustomer`方法。 您可以複製`CustomerTD`類型描述元中的**BDC 總管**，然後貼上的輸入參數的類型描述元`CreateCustomer`方法。 這可讓您不必一次以上定義的相同的類型描述元。  
   
-##  <a name="MethodInstances"></a>方法執行個體  
+##  <a name="MethodInstances"></a> 方法執行個體  
  當您建立的方法時，Visual Studio 會加入預設方法執行個體。 方法執行個體是一種方法，再加上參數的預設值的參考。 單一方法可以有多個方法的執行個體。 每個執行個體是方法簽章的組合和一組預設值。 如需詳細資訊，請參閱[如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  當您執行專案時，方法執行個體出現在 SharePoint 清單上方的下拉式清單。 使用者可以選擇以檢視資料的方法執行個體。  

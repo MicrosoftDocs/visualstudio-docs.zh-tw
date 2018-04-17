@@ -1,12 +1,10 @@
 ---
-title: "文件保護文件層級方案中的 |Microsoft 文件"
-ms.custom: 
+title: 文件保護文件層級方案中的 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 815bd65f9e1a0182736b2cc68d06c5f289fd4f68
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-protection-in-document-level-solutions"></a>文件層級方案的文件保護
   您可以使用文件層級專案中的 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者變更受保護的文件部分。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="setting-the-password"></a>設定密碼  
  Visual Studio 會自動啟用保護，但根據預設會提供任何密碼。 如果您想要有密碼保護文件時，您必須新增它，才能在您部署方案。 新增密碼可讓授權的使用者文件; 移除保護沒有密碼便無法輕易移除保護。 如需設定密碼的詳細資訊，請參閱特定 Office 應用程式中的說明。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式保護文件及部分的文件](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   

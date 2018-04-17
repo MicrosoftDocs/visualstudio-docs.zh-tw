@@ -1,12 +1,10 @@
 ---
-title: "如何： 允許程式碼在具有限制權限的文件背後執行 |Microsoft 文件"
-ms.custom: 
+title: 如何： 允許程式碼在具有限制權限的文件背後執行 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09336e72cc9e1e1bc0a407314d4fa9fd6bc2a2c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允許程式碼在具有限制使用權限的文件背後執行
   若要限制的文件或活頁簿的權限，您可以使用 Microsoft Office 的資訊版權管理 (IRM) 功能。 根據預設，受限制的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿背後的程式碼不允許執行。 您可以變更預設值，使您的 managed 程式碼擴充功能可以存取的物件模型，您的方案可以。  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Word 或 Excel 會允許以程式設計方式存取物件模型。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   

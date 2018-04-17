@@ -1,13 +1,10 @@
 ---
-title: "如何： 自訂 SharePoint 方案套件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 自訂 SharePoint 方案套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
 - VS.SharePointTools.RAD.PackageDesigner.Manifest
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 277ceea1b908c5819608a1bdf1d6be97c2f6ce77
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9ffe532653abf58e4af6297e69c1049a916144cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自訂 SharePoint 方案套件
   您可以使用封裝設計工具建立和自訂套件 (.wsp)。 例如，您可以加入 SharePoint 專案項目和功能、 指定 Web 伺服器重設部署方案時，以及設定部署伺服器類型。  
@@ -96,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
      範本會以原始的文字，重新整理，而且 XML 的任何變更都會遺失。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

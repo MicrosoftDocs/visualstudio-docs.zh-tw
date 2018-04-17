@@ -1,12 +1,10 @@
 ---
-title: "建立 SharePoint 方案套件 |Microsoft 文件"
-ms.custom: 
+title: 建立 SharePoint 方案套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ee3da66dd8e683748198992041bec5a8139cb7e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e67073d1a12a9412b153adc0c06471c4d39ff15a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   使用封裝設計工具，您可以建立並自訂部署套件。 例如，您可以加入 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟動範圍，以及識別功能依存性。 在設計工具也會產生資訊清單描述每個封裝的 XML 檔案。  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="package-folder-structure"></a>封裝的資料夾結構  
  當您封裝您的 SharePoint 專案時，.wsp 檔案會為您建立在 SolutionFolder\bin\\*BuildConfiguration*資料夾。 例如，如果您的方案處於*磁碟機*: \Visual Studio 2013\Projects\ListDefinition1 和組建組態設為 發行、.wsp 檔案位於*磁碟機*: \Visual Studio 2013 \Projects\ListDefinition1\bin\Release。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [如何： 新增與移除功能和封裝的項目使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [如何： 建立 SharePoint 套件](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   

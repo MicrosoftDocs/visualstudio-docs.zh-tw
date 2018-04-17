@@ -1,13 +1,10 @@
 ---
-title: "程式碼剖析 SharePoint 應用程式的效能 |Microsoft 文件"
-ms.custom: 
+title: 程式碼剖析 SharePoint 應用程式的效能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Profiling.SilverlightWebPartOnly
 - VS.SharePointTools.Profiling.DotNetTrustLevel
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44c2566a722794fea176100db144f09c6c010f6e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 5ecae69e83e86e851705bd990d5e5887400a7104
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>剖析 SharePoint 應用程式的效能
  

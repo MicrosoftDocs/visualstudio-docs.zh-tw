@@ -1,12 +1,10 @@
 ---
-title: "CA1502： 避免過度複雜 |Microsoft 文件"
-ms.custom: 
+title: CA1502： 避免過度複雜 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AvoidExcessiveComplexity
 - CA1502
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1502
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
-caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a643d71e334d7a9228afbb9ba95df2f4cbb558c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 990a1336019325313c2152b38b7fa8525d52720a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
 |||  
@@ -58,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 -   分支的數目 (例如`if`， `while`，和`do`)  
   
--   數目`case`中的陳述式`switch`  
+-   數目`case`中的陳述式 `switch`  
   
  下列範例顯示具有不同的循環複雜度的方法。  
   
@@ -93,5 +91,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1501：避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -1,25 +1,23 @@
 ---
-title: "將追蹤屬性加入至網域特定領域語言定義 |Microsoft 文件"
-ms.custom: 
+title: 將追蹤屬性加入至網域特定領域語言定義 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c0d6231882e8c7412248022abd2e8c578bbfad9f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aba86947c9f7e4f34e5175dd3760891e4e6c023f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 本逐步解說示範如何將追蹤屬性新增至網域模型。  
@@ -758,7 +756,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="next-steps"></a>後續步驟  
  如果您想要使用多個追蹤屬性，或在一個以上的 DSL 中實作追蹤屬性，您可以建立文字範本產生一般的程式碼，以支援每個追蹤的屬性。 如需文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   

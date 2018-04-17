@@ -1,12 +1,10 @@
 ---
-title: "使用模組來包含方案中的檔案 |Microsoft 文件"
-ms.custom: 
+title: 使用模組來包含方案中的檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>使用模組來包含方案中的檔案
   有時候可能何時您可能想要將檔案部署到 SharePoint 伺服器，不論他們的檔案類型，例如新的主版頁面。 若要這樣做，您可以使用*模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]程式碼模組)。 模組是 SharePoint 方案中檔案的容器。 部署方案時，此模組中的檔案會複製到 SharePoint 伺服器上指定的資料夾。  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
  您想要部署的每個檔案都需要個別的`<File>`Elements.xml 中的項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 使用模組中包含的檔案](../sharepoint/how-to-include-files-by-using-a-module.md)   
  [如何： 佈建檔案](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   

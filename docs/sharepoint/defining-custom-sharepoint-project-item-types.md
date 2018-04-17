@@ -1,12 +1,10 @@
 ---
-title: "定義自訂 SharePoint 專案項目類型 |Microsoft 文件"
-ms.custom: 
+title: 定義自訂 SharePoint 專案項目類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271cc2227e7bfca38f98a7424a18b314d01c92c6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1d212b81e74ba05cd482ab0e2c31e6cd8a4ea697
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-custom-sharepoint-project-item-types"></a>定義自訂 SharePoint 專案項目類型
   當您想要建立一種新的 SharePoint 專案項目，定義新的 SharePoint 專案項目類型。 例如，Visual Studio 不包含 SharePoint 專案項目加入欄位或 SharePoint 網站的自訂動作。 您可以定義自己的欄位、 自訂動作或其他類型的 SharePoint 元件建立 SharePoint 專案項目類型。  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
  若要存取您的專案項目類型的特定執行個體，處理其中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>事件*projectItemTypeDefinition*的實作中的參數<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 例如，若要判斷您的自訂類型的專案項目加入至專案時，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>事件。 如需詳細資訊，請參閱[如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
  [如何： 將屬性加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
  [如何： 將捷徑功能表項目加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   

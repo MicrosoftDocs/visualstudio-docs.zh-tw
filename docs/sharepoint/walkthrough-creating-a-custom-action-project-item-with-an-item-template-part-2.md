@@ -1,25 +1,24 @@
 ---
-title: "逐步解說： 建立自訂動作專案項目包含項目範本，第 2 部分 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立自訂動作專案項目包含項目範本，第 2 部分 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)
   定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈來使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  選擇**WPF 使用者控制項程式庫**專案範本，將專案命名**ItemTemplateWizard**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ItemTemplateWizard**專案加入方案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ItemTemplateWizard**專案加入方案。  
   
 6.  從專案刪除 UserControl1 項目。  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     如需有關`WizardExtension`項目，請參閱[WizardExtension 項目 &#40;Visual Studio 範本 &#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     如需有關`WizardExtension`項目，請參閱[WizardExtension 項目&#40;Visual Studio 範本&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。  
   
 3.  儲存並關閉檔案。  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **清單設定**頁面隨即出現。  
   
-4.  在下**通訊**接近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器中開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，，然後關閉瀏覽器。  
+4.  在下**通訊**接近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
  在您完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  
@@ -344,7 +343,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  關閉 Visual Studio （實驗性執行個體和 CustomActionProjectItem 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

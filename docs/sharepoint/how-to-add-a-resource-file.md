@@ -1,12 +1,10 @@
 ---
-title: "如何： 將資源檔 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將資源檔 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 47cae5fac3ddbcbc34535176701d0293ae4f66ba
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 132a5b5933b1bc96244238570091e522f8af91d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：新增資源檔
   將資源檔加入的命令所在的方案節點，在 [方案總管] 功能節點的捷徑功能表。 如需詳細資訊，請參閱[當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。  
   
-     這個步驟會將全域資源檔案加入至您的方案，請以格式資源*x***。***文化特性***。**例如，Resource1.en US.resx resx。  
+     這個步驟會加入至您的方案中使用的格式，資源的全域資源檔案 * x***。***文化特性 ***。**例如，Resource1.en US.resx resx。  
   
 5.  當**資源編輯器**中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源加入至資源檔。  
   
@@ -51,11 +50,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  在**方案總管 中**，開啟快顯功能表下的功能名稱**功能** 節點，然後選擇 **加入功能資源**。  
   
-     這個步驟會加入資源檔格式，功能*ResourceFileName***。***文化特性***。**例如，Feature1.en US.resx resx。  
+     這個步驟會加入資源檔格式，功能 * ResourceFileName***。***文化特性 ***。**例如，Feature1.en US.resx resx。  
   
 3.  當**資源編輯器**中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源加入至資源檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "： Ca1027 以 flagsattribute 標記列舉 |Microsoft 文件"
-ms.custom: 
+title: ： Ca1027 以 flagsattribute 標記列舉 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkEnumsWithFlags
 - CA1027
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1027
 - MarkEnumsWithFlags
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c80b90e1b1fe0ba89717a175666a68c3812665c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 702bc45001f1d545fab6e6a3d54d58b552408402
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027：必須以 FlagsAttribute 標記列舉
 |||  
@@ -55,5 +53,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.FlagsAttribute?displayProperty=fullName>

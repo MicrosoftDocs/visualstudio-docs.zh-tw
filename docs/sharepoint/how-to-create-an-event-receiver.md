@@ -1,13 +1,10 @@
 ---
-title: "如何： 建立事件接收器 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立事件接收器 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b00d82679388c50d6d111209a9a206bd9587a3a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ead81e01022c8f389ad6010c89d0e433b82c542e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：建立事件接收器
   藉由建立*事件接收器*，您可以回應使用者互動 SharePoint 項目，例如清單或清單項目時。 比方說，當使用者變更行事曆，或刪除連絡人清單的名稱，會觸發的事件接收器中的程式碼。 您可以遵循本主題，來學習如何將事件接收器加入至清單執行個體。  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
      選擇之後**儲存** 按鈕，**病患名稱**Scott Brown 的名稱會自動更新資料行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   
