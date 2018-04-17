@@ -1,13 +1,10 @@
 ---
-title: "SharePoint 程式開發的逐步解說 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 程式開發的逐步解說 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb8980a5f17e38e802e90014781c80a1cf0f6adb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: db3b3e1d6700640e26a46244f7db3d7f22d421c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 程式開發的逐步解說
   下列逐步解說示範如何開發和部署 SharePoint 方案使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -100,7 +97,7 @@ ms.lasthandoff: 01/10/2018
 |[逐步解說：擴充伺服器總管以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|示範如何加入新的節點會顯示在伺服器總管 中的 SharePoint 網站中顯示 Web 組件。 本逐步解說也會示範如何建立 SharePoint 命令來呼叫 SharePoint 伺服器物件模型。|  
 |[逐步解說：在伺服器總管延伸模組中呼叫 SharePoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|示範如何加入新的節點會顯示在伺服器總管 中的 SharePoint 網站中顯示 Web 組件。 本逐步解說也會示範如何使用 SharePoint 用戶端物件模型。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SharePoint 程式開發範例和逐步解說](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)  
   
   

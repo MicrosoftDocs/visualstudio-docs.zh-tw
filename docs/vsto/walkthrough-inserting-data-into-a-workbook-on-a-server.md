@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 將資料插入到之伺服器上的活頁簿 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將資料插入到之伺服器上的活頁簿 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>逐步解說：在伺服器的活頁簿中插入資料
   本逐步解說示範如何將資料插入的資料集，在 Microsoft Office Excel 活頁簿中快取不會啟動 Excel 使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**AdventureWorksDataSet**專案加入**方案總管 中**並開啟**Class1.cs**或**Class1.vb**程式碼檔案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**AdventureWorksDataSet**專案加入**方案總管 中**並開啟**Class1.cs**或**Class1.vb**程式碼檔案。  
   
 9. 在**方案總管] 中**，以滑鼠右鍵按一下**Class1.cs**或**Class1.vb**，然後按一下 [**刪除**。 這個逐步解說不需要此檔案。  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  請確認**建立新的文件**已選取，然後按一下**確定**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟**AdventureWorksReport**設計工具中的活頁簿，並將**AdventureWorksReport**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 開啟**AdventureWorksReport**設計工具中的活頁簿，並將**AdventureWorksReport**專案加入**方案總管 中**。  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>將資料集加入至 Excel 活頁簿專案中的資料來源  
  您可以在 Excel 活頁簿中顯示資料集之前，您必須先將資料集加入 Excel 活頁簿專案中的資料來源。  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**DataWriter**專案加入**方案總管 中**並開啟**Program.cs**或**Module1.vb**程式碼檔案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**DataWriter**專案加入**方案總管 中**並開啟**Program.cs**或**Module1.vb**程式碼檔案。  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>使用主控台應用程式，將資料加入至快取的資料集  
  使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別中的主控台應用程式，以填入資料的活頁簿中的快取資料集。  
@@ -294,7 +293,7 @@ ms.lasthandoff: 01/10/2018
   
 -   變更中快取的資料集的資料，而不啟動 Excel。 如需詳細資訊，請參閱[逐步解說： 變更伺服器上的活頁簿中快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 變更伺服器上的活頁簿中快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
  [連接至 Windows Forms 應用程式中的資料](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)  
   

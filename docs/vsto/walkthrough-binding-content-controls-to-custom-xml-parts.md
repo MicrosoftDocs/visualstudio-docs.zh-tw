@@ -1,13 +1,10 @@
 ---
-title: "逐步解說: 內容控制項繫結至自訂 XML 組件 |Microsoft 文件"
-ms.custom: 
+title: '逐步解說: 內容控制項繫結至自訂 XML 組件 |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>逐步解說：將內容控制項繫結至自訂 XML 組件
   本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。  
@@ -66,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  建立 Word 文件專案名稱**EmployeeControls**。 建立方案的新文件。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在設計工具中開啟新的 Word 文件，並將**EmployeeControls**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 文件，並將**EmployeeControls**專案加入**方案總管 中**。  
   
 ## <a name="adding-content-controls-to-the-document"></a>將內容控制項新增至文件  
  建立包含三種不同類型之內容控制項的資料表，使用者可以使用這些內容控制項來檢視或編輯員工相關資訊。  
@@ -321,13 +318,13 @@ ms.lasthandoff: 01/10/2018
   
 -   使用內容控制項保護文件的組件。 如需詳細資訊，請參閱 [如何：使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [內容控制項](../vsto/content-controls.md)   
  [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [如何： 使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [在執行階段將控制項新增至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

@@ -1,13 +1,10 @@
 ---
-title: "指導方針建立 Outlook 表單區域 |Microsoft 文件"
-ms.custom: 
+title: 指導方針建立 Outlook 表單區域 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>建立 Outlook 表單區域的方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
   
  **視窗** 圖示會出現在顯示取代型或全部取代型表單區域之開啟項目的通知區域和 ALT+TAB 對話方塊中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   

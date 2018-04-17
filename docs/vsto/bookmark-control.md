@@ -1,13 +1,10 @@
 ---
-title: "書籤控制項 |Microsoft 文件"
-ms.custom: 
+title: 書籤控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
 dev_langs:
@@ -20,21 +17,21 @@ helpviewer_keywords:
 - Bookmark control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38e3286d24f0591ca4ced3339118b6d0d4bfe1d7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f70fa1016762e0811da0e4850eda0428278c463e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 在文件層級的專案中，您可以在設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱 [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+ 在文件層級的專案中，您可以在設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱 [如何：將書籤控制項加入至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
 ## <a name="binding-data-to-the-control"></a>將資料繫結至控制項  
  <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項支援簡單資料繫結。 書籤應該使用 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性繫結至資料來源。 書籤的預設資料繫結屬性是 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 屬性。  
@@ -111,9 +108,9 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：將書籤控制項加入至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [逐步解說： 建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

@@ -1,12 +1,10 @@
 ---
-title: "依 Office 應用程式和專案類型提供的功能 |Microsoft 文件"
-ms.custom: 
+title: 依 Office 應用程式和專案類型提供的功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   VSTO 增益集。  
   
- 並非所有應用程式都可以使用每個專案類型。 例如，文件層級專案僅用於 Microsoft Office Word 和 Microsoft Office Excel。 同樣地，某些功能僅用於特定類型的專案或應用程式。 例如，執行窗格只用於文件層級專案，而功能區擴充功能只用於某些應用程式。 如需不同專案類型的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 並非所有應用程式都可以使用每個專案類型。 例如，文件層級專案僅用於 Microsoft Office Word 和 Microsoft Office Excel。 同樣地，某些功能僅用於特定類型的專案或應用程式。 例如，執行窗格只用於文件層級專案，而功能區擴充功能只用於某些應用程式。 如需不同專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 > [!NOTE]  
 >  Office 專案範本只用於某些版本的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -68,13 +67,13 @@ ms.lasthandoff: 01/10/2018
 |功能區自訂。|文件層級專案。<br /><br /> 下列應用程式的 VSTO 增益集專案：<br /><br /> Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />Outlook<br />-PowerPoint<br />專案<br />Visio<br />字組|[功能區概觀](../vsto/ribbon-overview.md)|  
 |視覺文件設計工具。|文件層級專案。|[在 Visual Studio 環境下的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
-## <a name="see-also"></a>請參閱  
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [在文件層級自訂中快取的資料](../vsto/cached-data-in-document-level-customizations.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   

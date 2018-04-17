@@ -1,12 +1,10 @@
 ---
-title: "適用於 Excel 的文件層級自訂程式設計入門 |Microsoft 文件"
-ms.custom: 
+title: 適用於 Excel 的文件層級自訂程式設計入門 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fdf4afeb260d94b9e121628163c760244ac5f6e1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5f10e0c2d3dc7a561b4fff7ad74081e9a26570b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Excel 文件層級自訂的程式設計入門
   如果您剛開始使用 Visual Studio 建立 Microsoft Office excel 的文件層級自訂，以下是您需要知道。  
@@ -66,7 +65,7 @@ ms.lasthandoff: 01/10/2018
   
  如需引導您完成一些 Excel 專案中的一般工作的主題，請參閱[Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [Excel 方案](../vsto/excel-solutions.md)   

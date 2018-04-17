@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 建立 SharePoint 應用程式頁面 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 SharePoint 應用程式頁面 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33c718707ce284179b69e33677d5b29f0d4433c7
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 21191ec585b83099aefad4f1c43949ba94cfc4ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
  

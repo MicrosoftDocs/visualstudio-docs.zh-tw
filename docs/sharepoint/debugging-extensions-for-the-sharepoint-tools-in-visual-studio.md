@@ -1,13 +1,10 @@
 ---
-title: "在 Visual Studio 中 SharePoint 工具的偵錯擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 中 SharePoint 工具的偵錯擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ead91600a4f62899f2b7182f2d7248afa77651d3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯 Visual Studio 中 SharePoint 工具的擴充功能
   您可以偵錯在實驗執行個體或規則的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要疑難排解延伸模組的行為，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 如何執行 SharePoint 命令。  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
 |MaxReceivedMessageSize|指定允許的大小上限，以位元組為單位，Visual Studio 和 vssphost4.exe 之間傳遞的 WCF 訊息的 REG_DWORD。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
 |MaxStringContentLength|REG_DWORD 指定允許的大小上限，單位為位元組的 Visual Studio 和 vssphost4.exe 之間傳遞的字串。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [部署 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

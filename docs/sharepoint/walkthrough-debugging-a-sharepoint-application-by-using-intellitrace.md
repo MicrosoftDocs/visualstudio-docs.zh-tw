@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 在 SharePoint 應用程式使用 IntelliTrace 偵錯 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 SharePoint 應用程式使用 IntelliTrace 偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式
 
@@ -56,9 +53,9 @@ ms.lasthandoff: 02/21/2018
 
 - 支援的 Windows 版本和 SharePoint。 請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
 
-- Visual Studio Enterprise.
+- Visual Studio 企業版。
 
-## <a name="BKMK_CreateReceiver">建立功能接收器</a>
+## <a name="BKMK_CreateReceiver"></a> 建立功能接收器
 
 首先，您會建立空白的 SharePoint 專案的功能接收器。
 
@@ -76,7 +73,7 @@ ms.lasthandoff: 02/21/2018
 
 4. 如 Feature1.feature，開啟捷徑功能表，然後選擇**加入事件接收器**来加入的程式碼模組的功能。
 
-## <a name="BKMK_AddCode">將程式碼加入至功能接收器</a>
+## <a name="BKMK_AddCode"></a> 將程式碼加入至功能接收器
 
 接下來，將程式碼加入至功能接收器中的兩個方法：`FeatureActivated`和`FeatureDeactivating`。 啟用或停用在 SharePoint 中，分別功能時，觸發程序這些方法。
 
@@ -250,7 +247,7 @@ ms.lasthandoff: 02/21/2018
     }
     ```
 
-## <a name="BKMK_Test1">測試專案</a>
+## <a name="BKMK_Test1"></a> 測試專案
 
 現在，程式碼會加入至功能接收器，並執行資料收集器，部署和執行 SharePoint 方案來測試是否運作正常。
 
@@ -277,7 +274,7 @@ ms.lasthandoff: 02/21/2018
 
      FeatureDeactivating() 事件處理常式擲回錯誤。
 
-## <a name="BKMK_CollectDiagnosticData">使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料</a>
+## <a name="BKMK_CollectDiagnosticData"></a> 使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料
 
 如果您執行 SharePoint 的系統上安裝 Microsoft Monitoring Agent，您可以使用 IntelliTrace 傳回的一般資訊比更特定的資料來偵錯 SharePoint 方案。 代理程式適用於 Visual Studio 之外，使用 PowerShell cmdlet 來擷取您的 SharePoint 方案執行時偵錯資訊。
 
@@ -302,7 +299,7 @@ ms.lasthandoff: 02/21/2018
 
      **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">偵錯和修正 SharePoint 方案</a>
+## <a name="BKMK_DebugSolution"></a> 偵錯和修正 SharePoint 方案
 
 現在您可以在 Visual Studio 中尋找和修正 SharePoint 方案中的錯誤檢視 IntelliTrace 記錄檔。
 

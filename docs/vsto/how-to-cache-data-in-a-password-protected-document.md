@@ -1,12 +1,10 @@
 ---
-title: "如何： 快取受密碼保護的文件中的資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 快取受密碼保護的文件中的資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：快取受密碼保護文件中的資料
   如果您將資料加入至文件或受密碼保護的活頁簿中的資料快取時，快取的資料變更會不會自動儲存。 您可以覆寫專案中的兩個方法，快取的資料儲存變更。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>以密碼保護的 Excel 活頁簿中的快取資料  
   
-1.  在`ThisWorkbook`類別或其中一個`Sheet`  *n* 類別，將標記以公用欄位或快取的屬性。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。  
+1.  在`ThisWorkbook`類別或其中一個`Sheet` *n*類別，將標記以公用欄位或快取的屬性。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。  
   
 2.  覆寫<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>方法中的`ThisWorkbook`類別，並移除活頁簿的保護。  
   
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="compiling-the-code"></a>編譯程式碼  
  將此程式碼加入`ThisWorkbook`專案中的類別。 此程式碼會假設密碼儲存在名為的欄位`securelyStoredPassword`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快取資料](../vsto/caching-data.md)   
  [如何： 使用快取資料，離線或伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何：以程式設計方式快取 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  

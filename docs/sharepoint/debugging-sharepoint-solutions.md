@@ -1,13 +1,10 @@
 ---
-title: "偵錯 SharePoint 方案 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 SharePoint 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
 - VS.SharePointTools.Project.DebuggingNotEnabled
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>對 SharePoint 方案進行偵錯
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您開始偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將專案檔案部署到 SharePoint 伺服器，然後開啟網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [啟用增強型偵錯資訊](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a>啟用偵錯  
+##  <a name="EnableDebug"></a> 啟用偵錯  
  當您第一次偵錯 SharePoint 方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，對話方塊會警示您的 web.config 檔案未設定以啟用偵錯。 （當您安裝 SharePoint server 時，會建立 web.config 檔案。 如需詳細資訊，請參閱[使用 Web.config 檔案](http://go.microsoft.com/fwlink/?LinkID=149266)。)對話方塊可讓您選擇任一個執行專案，偵錯，或修改的 web.config 檔案，以啟用偵錯。 如果您選擇第一個選項，專案將會正常執行。 如果您選擇第二個選項，則 web.config 檔案會設定為：  
   
 -   開啟 呼叫堆疊 (`CallStack="true"`)  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   停用編譯偵錯 (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a>F5 偵錯和部署程序  
+##  <a name="Deployment"></a> F5 偵錯和部署程序  
  當您在偵錯模式執行您的 SharePoint 專案時，SharePoint 部署程序會執行下列工作：  
   
 1.  執行可自訂的預先部署命令。  
@@ -118,16 +115,16 @@ ms.lasthandoff: 01/10/2018
   
 12. 在 Web 瀏覽器中顯示適當的程式庫、 清單或網站頁面。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]每個工作完成後，請在 [輸出] 視窗中顯示狀態訊息。 如果無法完成工作， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [錯誤清單] 視窗中顯示的錯誤訊息。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每個工作完成後，請在 [輸出] 視窗中顯示狀態訊息。 如果無法完成工作， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [錯誤清單] 視窗中顯示的錯誤訊息。  
   
-##  <a name="Features"></a>SharePoint 專案功能  
+##  <a name="Features"></a> SharePoint 專案功能  
  功能是功能的可攜性和模組化單位，簡化修改站台使用站台定義。 它也是一個封裝的[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 項目，可以啟用用於特定範圍，這樣可以協助您完成特定目標或工作的使用者。 範本會部署為功能。  
   
  當您在偵錯模式中執行專案時，部署程序會建立在資料夾*功能*在 %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES 目錄。 功能名稱的格式*專案名稱*_Feature*x*，例如 TestProject_Feature1。  
   
  功能目錄中的方案的資料夾包含*功能定義*檔案和*工作流程定義*檔案。 功能的定義檔 （這個） 描述的檔案中的專案功能專案定義檔案 (Elements.xml) 描述的專案範本。 位於 Elements.xml**方案總管 中**，但是建立方案套件時，會產生這個。 如需有關這些檔案的詳細資訊，請參閱[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。  
   
-##  <a name="Workflow"></a>偵錯工作流程  
+##  <a name="Workflow"></a> 偵錯工作流程  
  當您偵錯工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]文件庫或清單加入工作流程範本 （取決於其類型）。 您可以開始將工作流程範本或藉由手動新增或更新項目。 然後您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工作流程。  
   
 > [!NOTE]  
@@ -137,12 +134,12 @@ ms.lasthandoff: 01/10/2018
   
  例如，如果您指定可以手動啟動工作流程，請直接從程式庫或清單中的項目啟動工作流程。 如需如何以手動方式啟動工作流程的詳細資訊，請參閱[手動啟動工作流程上的文件項目](http://go.microsoft.com/fwlink/?LinkID=79938)。  
   
-##  <a name="FeatureEvents"></a>偵錯功能事件接收器  
+##  <a name="FeatureEvents"></a> 偵錯功能事件接收器  
  根據預設，當您執行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 應用程式，其功能時會自動為您啟用 SharePoint 伺服器上。 不過，這會造成問題時進行偵錯功能事件接收器，因為當啟動功能[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，它會比偵錯工具在不同處理序中執行。 這表示，某些偵錯功能，例如中斷點，將無法正常運作。  
   
  若要停用自動啟用 SharePoint 中的功能，並允許適當偵錯功能事件接收器，將專案值**現用部署組態**屬性**無啟用**之前偵錯。 接著，您在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開始對 SharePoint 應用程式進行偵錯之後，請手動啟用 SharePoint 中的功能。 若要啟用的功能，請開啟**網站動作**功能表在 SharePoint 中，選擇 **站台設定**，選擇**管理網站功能**連結，，然後選擇  **Activate**繼續偵錯正常功能旁的按鈕。  
   
-##  <a name="EnhancedDebug"></a>啟用增強型偵錯資訊  
+##  <a name="EnhancedDebug"></a> 啟用增強型偵錯資訊  
  由於之間有時複雜的互動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]程序 (devenv.exe)， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 主機處理序 (vssphost4.exe)、 SharePoint 和 WCF 層，可以是診斷建置、 部署和其他等等時，會發生的錯誤挑戰。 為了協助您解決這類錯誤，您可以啟用增強型偵錯資訊。 若要這樣做，請移至下列登錄機碼，在 Windows 登錄中：  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
@@ -153,7 +150,7 @@ ms.lasthandoff: 01/10/2018
   
  如需有關其他 SharePoint 登錄機碼的詳細資訊，請參閱[偵錯 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [針對 SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
   

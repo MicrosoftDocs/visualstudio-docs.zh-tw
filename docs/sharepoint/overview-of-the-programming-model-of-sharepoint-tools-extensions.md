@@ -1,12 +1,10 @@
 ---
-title: "工具擴充功能的 SharePoint 程式撰寫模型概觀 |Microsoft 文件"
-ms.custom: 
+title: 工具擴充功能的 SharePoint 程式撰寫模型概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式撰寫模型概觀
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個物件模型的用途，並了解如何使用它們彼此建立 SharePoint 工具擴充功能。  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>藉由實作擴充性介面來擴充 SharePoint 工具  
- Visual Studio 使用 .NET Framework 4 中的 Managed Extensibility Framework (MEF)，為 SharePoint 工具提供擴充性模型。 MEF 是 API (在 System.ComponentModel.Composition 組件中實作)，可讓應用程式公開擴充性點，並在執行階段探索及載入擴充功能。 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework &#40;MEF &#41;](/dotnet/framework/mef/index).  
+ Visual Studio 使用 .NET Framework 4 中的 Managed Extensibility Framework (MEF)，為 SharePoint 工具提供擴充性模型。 MEF 是 API (在 System.ComponentModel.Composition 組件中實作)，可讓應用程式公開擴充性點，並在執行階段探索及載入擴充功能。 如需 MEF 的詳細資訊，請參閱[Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index)。  
   
  若要擴充 SharePoint 工具，請實作 Visual Studio 所公開的一個或多個擴充性介面。 您也必須視需要對您的介面實作套用 <xref:System.ComponentModel.Composition.ExportAttribute> 和其他 SharePoint 工具特定屬性。 下表列出您可以實作以擴充 SharePoint 工具的介面。  
   
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
 |伺服器物件模型|伺服器物件模型提供 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 以程式設計的方式公開的所有功能的存取權。 此物件模型的設計是要由 SharePoint 伺服器上執行的 SharePoint 方案所使用。 此物件模型大部分是在 Microsoft.SharePoint.dll 組件中定義。 如需伺服器物件模型的詳細資訊，請參閱[使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。|  
 |用戶端物件模型|用戶端物件模型是可以用來從遠端用戶端或伺服器與 SharePoint 資料交互操作的伺服器物件模型的子集。 其設計是為了將必須執行以執行一般工作的往返次數降到最低。 大部分的用戶端物件模型是在 Microsoft.SharePoint.Client.dll 和 Microsoft.SharePoint.Client.Runtime.dll 組件中定義。 如需有關用戶端物件模型的詳細資訊，請參閱[管理用戶端物件模型](http://go.microsoft.com/fwlink/?LinkId=177797)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)  

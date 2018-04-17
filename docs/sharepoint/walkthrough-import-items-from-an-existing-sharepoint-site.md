@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 從現有的 SharePoint 網站匯入的項目 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 從現有的 SharePoint 網站匯入的項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b9d1bcc72bd22e7c528b2a3d8752d15b7005fea5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acd471ca33b0b3dc5057744e22c9d7e5a4c25980
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入的項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -145,7 +144,7 @@ ms.lasthandoff: 01/10/2018
   
      請注意您從第一個 SharePoint 網站匯入的自訂網站資料行出現在清單中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  

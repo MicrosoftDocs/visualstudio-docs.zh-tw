@@ -1,13 +1,10 @@
 ---
-title: "開始使用 VSTO 增益集程式設計 |Microsoft 文件"
-ms.custom: 
+title: 開始使用 VSTO 增益集程式設計 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
 dev_langs:
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f395ce7fb85d71ed6e8c3f7dfb10726907832873
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fb257a709f2f81f124e2510403a9d6853180a56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Getting Started Programming VSTO Add-ins
-  您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集與其他類型 Office 方案的系統相比較您可以使用 Visual Studio 建立，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集與其他類型 Office 方案的系統相比較您可以使用 Visual Studio 建立，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-user-interface-of-applications"></a>自訂應用程式的使用者介面  
  使用 VSTO 增益集自訂主應用程式 UI 的方法有很多：  
   
--   對於 Excel 和 Word，您可以將 Managed 控制項加入文件。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+-   對於 Excel 和 Word，您可以將 Managed 控制項加入文件。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 -   如果應用程式支援的話，您可以自訂功能區。 如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
   
@@ -91,9 +88,9 @@ ms.lasthandoff: 01/10/2018
   
  如需引導您完成一些常見的工作，在 Office 專案中的主題，請參閱[Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

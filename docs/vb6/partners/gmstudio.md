@@ -1,11 +1,10 @@
 ---
-title: "絕佳移轉 Studio (gmStudio) |Microsoft 文件"
-description: "絕佳可擴充、 自訂 VB6/ASP/COMM 給.NET 升級方案的移轉工具"
+title: 絕佳移轉 Studio (gmStudio) |Microsoft 文件
+description: 絕佳可擴充、 自訂 VB6/ASP/COMM 給.NET 升級方案的移轉工具
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8e44bf6d4287ff1a82aec3342f089e44e776da6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="great-migrations-studio-gmstudio"></a>絕佳移轉 Studio (gmStudio)
 

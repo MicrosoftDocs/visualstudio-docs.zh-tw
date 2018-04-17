@@ -1,13 +1,10 @@
 ---
-title: "Windows Form 控制項，在 Office 文件概觀 |Microsoft 文件"
-ms.custom: 
+title: Windows Form 控制項，在 Office 文件概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], Windows Forms
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2693c31d06edc621f355749f76caf04e44fb28e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office 文件上的 Windows Forms 控制項概觀
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案中，您可以在設計階段將 Windows Forms 控制項加入文件或活頁簿，或是用程式設計方式在執行階段中加入這些控制項。 您可以用程式設計方式，在執行階段於 Excel 或 Word 的 VSTO 增益集將這些控制項加入任何開啟的文件或活頁簿。  
@@ -150,10 +147,10 @@ ms.lasthandoff: 01/10/2018
 ### <a name="adding-components-at-design-time"></a>在設計階段加入元件  
  有些控制項或元件不會出現在文件，而會顯示在元件匣。 Visual Studio 針對每個文件視窗提供元件匣。 只有當元件存在於文件上時，畫面上才會出現元件匣。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [Windows Form 控制項](/dotnet/framework/winforms/controls/index)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   

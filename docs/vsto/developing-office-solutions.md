@@ -1,12 +1,10 @@
 ---
-title: "開發 Office 方案 |Microsoft 文件"
-ms.custom: 
+title: 開發 Office 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], developing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bb3727d95fab03d2485c26f5858e0dbea7fe7543
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b84334ac4454760c7457f131a9cd438f715a78ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |[Office 中的執行緒支援](../vsto/threading-support-in-office.md)|提供在 Office 方案中使用多個執行緒的概觀。|  
 |[Office 專案中的協助工具](../vsto/accessibility-in-office-projects.md)|描述在 Office 方案中可用的協助工具功能。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
  [如何： 讀取和寫入文件屬性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
  [如何： 為目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   

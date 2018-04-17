@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 匯入自訂主版頁面和網站上的映像 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 匯入自訂主版頁面和網站上的映像 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面及包含影像的網站頁面
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面和網站頁面，其中包含影像變成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>必要條件  
  您必須擁有下列元件才能完成此逐步解說：  
   
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   Visual Studio。  
   
@@ -177,9 +176,9 @@ ms.lasthandoff: 01/10/2018
   
 7.  開啟 SharePoint 網站檢視已部署的項目。  
   
- 檔案匯入的替代方式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署到 SharePoint 會將檔案新增至模組中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][How to： 匯入的主版頁面或佈景主題](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+ 檔案匯入的替代方式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署到 SharePoint 會將檔案新增至模組中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [如何： 匯入的主版頁面或佈景主題](../sharepoint/how-to-import-a-master-page-or-theme.md)和[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  

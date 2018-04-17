@@ -1,12 +1,10 @@
 ---
-title: "快取文件層級自訂中的資料 |Microsoft 文件"
-ms.custom: 
+title: 快取文件層級自訂中的資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文件層級自訂中的快取資料
   文件層級自訂的主要目標是將資料從 Office 文件中的檢視。 資料是指儲存在文件，包括數字和文字中的資訊。 檢視是指使用者介面和 Microsoft Office Word 和 Microsoft Office Excel 物件模型。  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 如需文件層級自訂的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)和[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。  
+ 如需文件層級自訂的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)和[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>了解快取的資料程式設計模型  
  資料島可以包含任何符合特定需求的方案中的物件。 這些物件包括<xref:System.Data.DataSet>物件<xref:System.Data.DataTable>物件和任何其他物件可以序列化的<xref:System.Xml.Serialization.XmlSerializer>類別。 如需詳細資訊，請參閱 < 請參閱[快取資料](../vsto/caching-data.md)。  
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |您可以儲存的資料類型？|您符合特定需求的自訂組件中的任何公用物件。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。|任何 XML 資料。|  
 |您可以存取的資料而不啟動 Microsoft Office 應用程式嗎？|是，透過使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別所提供[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|是，使用中的類別來<xref:System.IO.Packaging>命名空間，或使用 Open XML 格式 SDK。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   

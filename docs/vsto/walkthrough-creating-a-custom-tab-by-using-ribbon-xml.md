@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 使用功能區 XML 建立自訂索引標籤 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用功能區 XML 建立自訂索引標籤 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1b736ace651854b3b6a527685e150f6f1ec7194c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 759aee9692ee905e33ce55ff068b74d4a289c78a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>GetCustomUI
   本逐步解說示範如何建立自訂功能區索引標籤使用**功能區 (XML)**項目。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
      如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟**ThisAddIn.cs**或**ThisAddIn.vb**程式碼檔案並將**MyRibbonAddIn**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 開啟**ThisAddIn.cs**或**ThisAddIn.vb**程式碼檔案並將**MyRibbonAddIn**專案加入**方案總管 中**。  
   
 ## <a name="creating-the-vsto-add-ins-tab"></a>建立 VSTO 增益集索引標籤  
  若要建立**增益集**索引標籤上，新增**功能區 (XML)**至您的專案項目。 稍後在本逐步解說中，您將會加入一些按鈕到此索引標籤中。  
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在**方案總管] 中**，以滑鼠右鍵按一下**MyRibbon.xml** ，然後按一下 [**開啟**。  
   
-2.  取代內容 **索引標籤**具有下列 XML 項目。 這段 XML 會變更預設控制項群組的標籤**內容**，並將兩個新的按鈕標籤**插入文字**和**插入表格**。  
+2.  取代內容** 索引標籤**具有下列 XML 項目。 這段 XML 會變更預設控制項群組的標籤**內容**，並將兩個新的按鈕標籤**插入文字**和**插入表格**。  
   
     ```  
     <tab idMso="TabAddIns">  
@@ -157,7 +156,7 @@ ms.lasthandoff: 01/10/2018
   
 -   使用 Outlook 表單區域自訂 Microsoft Office Outlook 的 UI。 如需詳細資訊，請參閱[逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  

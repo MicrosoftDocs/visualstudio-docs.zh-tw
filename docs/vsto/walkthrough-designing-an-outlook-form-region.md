@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 設計 Outlook 表單區域 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 設計 Outlook 表單區域 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
@@ -159,7 +156,7 @@ ms.lasthandoff: 01/10/2018
     |地址類型|地址|  
     |------------------|-------------|  
     |**商務**|**4567 Main St.北市**|  
-    |**首頁**|**1234 North St.北市**|  
+    |**Home**|**1234 North St.北市**|  
     |**其他**|**3456 Main St.西雅圖，華盛頓州**|  
   
 4.  儲存並關閉連絡人項目。  
@@ -175,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要了解如何自訂 Outlook 項目的功能區，請參閱 [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   

@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 複雜資料繫結在 VSTO 增益集專案 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 複雜資料繫結在 VSTO 增益集專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 95f8d2d30bb5d8bedfe70f0b15f9e956d91f4345
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 46225b8010ade4eaa7188f50ed7c31775e49b39d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說：VSTO 增益集專案中的複雜資料繫結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Form 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。  
@@ -133,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
      工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 會繫結至 <xref:System.Windows.Forms.BindingSource>，而後者則繫結至資料集物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   

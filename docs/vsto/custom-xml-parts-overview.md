@@ -1,12 +1,10 @@
 ---
-title: "自訂 XML 組件概觀 |Microsoft 文件"
-ms.custom: 
+title: 自訂 XML 組件概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,20 +23,21 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8dc3e4b1abc5f60f9ca63e374ab8870df6bb0d41
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 672be641d34f524f1be1972542e89d1e97a1b3d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-xml-parts-overview"></a>Custom XML Parts Overview
   您可以將 XML 資料嵌入某些 Microsoft Office 應用程式的文件中。 當您將 XML 資料嵌入文件時，資料會命名為*自訂 XML 組件*。  
   
  您可以使用 Visual Studio 中的 VSTO 增益集或文件層級方案，建立和修改文件中的自訂 XML 組件。 您不必啟動 Microsoft Office 應用程式，即可建立和修改自訂 XML 組件。  
   
- **適用於：**本主題資訊適用於文件層級專案及 VSTO 增益集專案中 Excel、 PowerPoint 和 Word。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：**本主題資訊適用於文件層級專案及 VSTO 增益集專案中 Excel、 PowerPoint 和 Word。 如需詳細資訊，請參閱＜[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)＞。  
   
 > [!NOTE]  
 >  Visual Studio 也可讓您快取文件層級自訂中的資料物件。 雖然這項功能與自訂 XML 組件有些類似，但兩者卻不相同。 如需詳細資訊，請參閱[文件層級自訂中的快取資料](../vsto/cached-data-in-document-level-customizations.md)。  
@@ -81,7 +80,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="binding-custom-xml-parts-to-word-content-controls"></a>將自訂 XML 組件繫結至 Word 內容控制項  
  您可以將 Word 方案中的內容控制項繫結至自訂 XML 組件中的項目。 當內容控制項繫結至自訂 XML 組件時，自訂 XML 組件中的資料會顯示在內容控制項的使用者介面 (UI) 中。 如果使用者編輯控制項中的文字，對應的 XML 項目就會自動更新。 同樣地，如果自訂 XML 組件中的項目值變更，繫結至該 XML 項目的內容控制項就會顯示新的資料。 如需詳細資訊，請參閱 [Content Controls](../vsto/content-controls.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
  [如何： 將自訂 XML 組件加入至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [如何： 使用 VSTO 增益集將自訂 XML 組件加入文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   

@@ -1,12 +1,10 @@
 ---
-title: "如何： 從資料庫的資料填入文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 從資料庫的資料填入文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data, adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0a5a88cf34e0710869aaf4ac82d78cb79b37ffde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bfbdb5b71a84ea2f3ab9a86cc2d2df33213e5a98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>如何：將資料庫的資料填入文件
   您可以用存取 Windows Form 專案資料的相同方式，存取 Microsoft Office 文件層級專案的資料。 使用相同的工具和程式碼，可從資料庫將資料帶入您的解決方案，而且可以使用 Windows Form 控制項顯示資料。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  如需如何將更新傳送至具類型資料集和資料庫資訊，請參閱[How to： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [加入新的資料來源](/visualstudio/data-tools/add-new-data-sources)   
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   

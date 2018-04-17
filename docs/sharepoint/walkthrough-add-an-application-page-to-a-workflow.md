@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 將應用程式頁面加入至工作流程 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將應用程式頁面加入至工作流程 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 86b402e1f8b8be3adf477d67eb11387fa3091afd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面新增到工作流程
   本逐步解說示範如何將應用程式頁面會顯示在工作流程專案從工作流程衍生的資料。 它是在專案中的主題描述基礎[逐步解說： 建立工作流程關聯與初始化表單與](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -337,7 +336,7 @@ ms.lasthandoff: 01/10/2018
   
 14. 重複步驟 11 – 13 與共用文件清單中的其他文件。 （文件的確切數目並不重要）。  
   
-15. 在網頁瀏覽器中開啟下列 URL 顯示經費支出報表摘要的應用程式頁面上： **http://***系統名稱***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. 在網頁瀏覽器中開啟下列 URL 顯示經費支出報表摘要的應用程式頁面上： **http://***系統名稱***/_layouts/ExpenseReport/ApplicationPage1.aspx**。  
   
      費用報表的 [摘要] 頁面會列出所有超過配置的量的費用報表、 它，超過的數量和所有報表的總金額。  
   
@@ -350,7 +349,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)   
  [建立 SharePoint 應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   
