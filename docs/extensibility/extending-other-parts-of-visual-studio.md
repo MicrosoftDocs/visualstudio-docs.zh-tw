@@ -1,19 +1,22 @@
 ---
-title: "擴充 Visual Studio 的其他組件 |Microsoft 文件"
-ms.custom: 
+title: 擴充 Visual Studio 的其他組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: user interfaces
+helpviewer_keywords:
+- user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bce4fe32dc53904dec901736d7d02e3f7ac21b69
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

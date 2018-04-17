@@ -1,20 +1,24 @@
 ---
-title: "IDebugSymbolSearchEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugSymbolSearchEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugSymbolSearchEvent2
-helpviewer_keywords: IDebugSymbolSearchEvent2
+f1_keywords:
+- IDebugSymbolSearchEvent2
+helpviewer_keywords:
+- IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a931768dd13f2ced30f329b54c1fe6eb9333eb9c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

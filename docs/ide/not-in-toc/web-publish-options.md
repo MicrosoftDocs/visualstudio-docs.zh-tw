@@ -1,27 +1,27 @@
 ---
-title: "適合我的發行選項為何？ | Microsoft Docs"
-ms.custom: 
+title: 適合我的發行選項為何？ | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # 適合我的發行選項為何？
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/19/2018
 - [檔案系統](#file-system)
 - [自訂目標 (IIS、FTP 等)](#custom-targets)，包含所有任意 Web 伺服器。
 
-在 [發行] 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。
+在 [發行] 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。 若要了解 IDE 中不同應用程式類型的發佈選項，請參閱[部署簡介](../../deployment/deploying-applications-services-and-components.md)。
 
 ## Azure App Service Web Apps
 

@@ -1,20 +1,24 @@
 ---
-title: "IDebugMethodField::IsCustomAttributeDefined |Microsoft 文件"
-ms.custom: 
+title: IDebugMethodField::IsCustomAttributeDefined |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMethodField::IsCustomAttributeDefined
-helpviewer_keywords: IDebugMethodField::IsCustomAttributeDefined method
+f1_keywords:
+- IDebugMethodField::IsCustomAttributeDefined
+helpviewer_keywords:
+- IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: af96453bf10ee8031464341b65ad0e8b09b30cce
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,11 @@
 ---
-title: "MSBuild 參考 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 參考 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 9315229eb5d1f157c412fe0307249e45b8e66539
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。  

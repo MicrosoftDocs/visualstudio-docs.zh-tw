@@ -1,19 +1,22 @@
 ---
-title: "IDebugArrayObject2 |Microsoft 文件"
-ms.custom: 
+title: IDebugArrayObject2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugArrayObject2 interface
+helpviewer_keywords:
+- IDebugArrayObject2 interface
 ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 13e522497a0046ebfc99c60c7c3d771acfd4fbca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

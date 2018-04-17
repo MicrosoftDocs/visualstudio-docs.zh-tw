@@ -1,12 +1,10 @@
 ---
-title: "如何： 將功能區設計工具功能區匯出至功能區 XML |Microsoft 文件"
-ms.custom: 
+title: 如何： 將功能區設計工具功能區匯出至功能區 XML |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - exporting Ribbon
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 44aea70f386127b9a3e58a3fac38d516aac8113b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7aff56d1d7ee3533a83ef3edbdd8ba9271efd862
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：將功能區設計工具的功能區匯出到功能區 XML
   **功能區 （視覺化設計工具）**項目不支援所有可能的功能區自訂類型。 若要進階方式自訂功能區，您可以從設計工具的功能區匯出至功能區 XML，並直接編輯 XML。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
      如需撰寫回呼方法與使用 RibbonX 程式設計模型的資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

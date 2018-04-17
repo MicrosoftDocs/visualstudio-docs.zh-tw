@@ -1,13 +1,14 @@
 ---
-title: "修改 Visual Studio 2017 | Microsoft Docs"
-description: "了解如何逐步修改 Visual Studio。"
+title: 修改 Visual Studio 2017 | Microsoft Docs
+description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -16,13 +17,14 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8278b138e8cf7a8780ad83d591a823fdb85f2b08
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio 2017
 我們不僅讓您可以更輕鬆地將 Visual Studio 個人化以配合您要完成的工作，也讓您可以更輕鬆地自訂 Visual Studio。 這已不再是從 [控制台] 中執行，而是改為透過啟動新的 Visual Studio 安裝程式來進行所需的變更。

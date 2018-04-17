@@ -1,23 +1,21 @@
 ---
-title: "如何： 使用圖表檢視的結構描述集概觀 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用圖表檢視的結構描述集概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d9499e9972f32998b66be23d60acb8c585776d62
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 145a55312d042811b0d51d46136078657d10fee1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：使用圖表檢視取得結構描述集的概觀
 本主題描述如何使用[圖表檢視](../xml-tools/graph-view.md)查看結構描述以及節點之間的關聯性中之節點的高階檢視。  

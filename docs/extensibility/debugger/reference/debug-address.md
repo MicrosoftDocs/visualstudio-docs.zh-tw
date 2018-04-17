@@ -1,20 +1,24 @@
 ---
-title: "DEBUG_ADDRESS |Microsoft 文件"
-ms.custom: 
+title: DEBUG_ADDRESS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DEBUG_ADDRESS
-helpviewer_keywords: DEBUG_ADDRESS structure
+f1_keywords:
+- DEBUG_ADDRESS
+helpviewer_keywords:
+- DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1985fcf51e6d5ce02cf582257f5a3a142334faf1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,11 @@
 ---
-title: "MT 工作 | Microsoft Docs"
-ms.custom: 
+title: MT 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -24,17 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 mt.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。  
@@ -75,5 +75,5 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

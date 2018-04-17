@@ -1,19 +1,22 @@
 ---
-title: "如何： 將擴充性專案移轉至 Visual Studio 2015 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將擴充性專案移轉至 Visual Studio 2015 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Visual Studio SDK, upgrading
+helpviewer_keywords:
+- Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
 ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT

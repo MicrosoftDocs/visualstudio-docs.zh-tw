@@ -1,19 +1,22 @@
 ---
-title: "Visual Studio 圖形診斷 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 圖形診斷 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.graphics
+f1_keywords:
+- vs.graphics
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

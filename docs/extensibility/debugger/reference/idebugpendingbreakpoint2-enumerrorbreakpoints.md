@@ -1,22 +1,25 @@
 ---
-title: "IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft 文件"
-ms.custom: 
+title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPendingBreakpoint2::EnumErrorBreakpoints
+f1_keywords:
+- IDebugPendingBreakpoint2::EnumErrorBreakpoints
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f02ec57d9e0008197da97d640579fb7f7acd000a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

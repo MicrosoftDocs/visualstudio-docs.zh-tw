@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentContext2::Compare |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentContext2::Compare |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentContext2::Compare
-helpviewer_keywords: IDebugDocumentContext2::Compare
+f1_keywords:
+- IDebugDocumentContext2::Compare
+helpviewer_keywords:
+- IDebugDocumentContext2::Compare
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 550695aa52f1c913b25fc56975eb5c6e36b4c091
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

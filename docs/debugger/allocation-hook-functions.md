@@ -1,13 +1,15 @@
 ---
-title: "配置攔截函式 |Microsoft 文件"
-ms.custom: 
+title: 配置攔截函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.hooks
+f1_keywords:
+- vs.debug.hooks
 dev_langs:
 - CSharp
 - VB
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

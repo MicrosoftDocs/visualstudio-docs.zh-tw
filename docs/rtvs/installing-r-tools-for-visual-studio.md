@@ -1,13 +1,13 @@
 ---
-title: "安裝 Visual Studio R 工具 | Microsoft Docs"
-description: "如何在 Visual Studio 2017 和 Visual Studio 2015 中安裝 Visual Studio R 工具 (包括離線安裝)。"
-ms.custom: 
+title: 安裝 Visual Studio R 工具 | Microsoft Docs
+description: 如何在 Visual Studio 2017 和 Visual Studio 2015 中安裝 Visual Studio R 工具 (包括離線安裝)。
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 dev_langs:
 - R
 ms.topic: article
@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="supported-versions-of-visual-studio"></a>支援的 Visual Studio 版本
 
-在 Windows 上，Community (免費)、Professional 和 Enterprise 版本的 [Visual Studio 2017](https://www.visualstudio.com/downloads/) 和 [Visual Studio 2015 Update 3 (或更高版本)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接下載) 支援 Visual Studio R 工具 (RTVS)。
+在 Windows 上，Community (免費)、Professional 和 Enterprise 版本的 [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 和 [Visual Studio 2015 Update 3 (或更高版本)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接下載) 支援 Visual Studio R 工具 (RTVS)。
 
 Visual Studio for Mac 目前不支援 RTVS。
 
@@ -44,7 +44,7 @@ Visual Studio for Mac 目前不支援 RTVS。
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>在 Visual Studio 2017 中安裝 RTVS
 
-1. 執行 Visual Studio 安裝程式。 (請參閱[下載](https://www.visualstudio.com/downloads/)，如果您還沒有安裝 Visual Studio。)在 Windows 7 上，請確定您的安裝程式已更新為顯示 Visual Studio 2017 15.2 版、組建 26430.12 或更新版本。
+1. 執行 Visual Studio 安裝程式，並選取 [修改] 選項 (如需詳細資料，請參閱[修改 Visual Studio](../install/modify-visual-studio.md))。 如果您還沒有安裝 Visual Studio，請參閱[安裝 Visual Studio](../install/install-visual-studio.md)。 在 Windows 7 上，請確定您的安裝程式已更新為顯示 Visual Studio 2017 15.2 版、組建 26430.12 或更新版本。
 
 1. 選取 [資料科學與分析應用程式] 工作負載：
 
@@ -86,7 +86,7 @@ RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. 針對 Visual Studio 2015，從 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下載離線 RTVS 安裝程式。
+1. 如果是 Visual Studio 2015，請從 [https://aka.ms/rtvs-current-zip ](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip ](https://aka.ms/rtvs-remote-zip)下載離線 RTVS 安裝程式。
 
 1. 從離線安裝程式安裝 Visual Studio 和 RTVS。
 

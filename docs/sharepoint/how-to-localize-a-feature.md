@@ -1,12 +1,10 @@
 ---
-title: "如何： 當地語系化功能 |Microsoft 文件"
-ms.custom: 
+title: 如何： 當地語系化功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>如何：當地語系化功能
   根據預設，功能標題和描述使用硬式編碼的字串值。 若要當地語系化的功能標題和描述，請使用參考的當地語系化的資源的運算式取代字串。  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  若要當地語系化**標題**和**描述**欄位在功能中，使用下列格式的方塊中輸入值：  
   
-     `$Resources:`*字串識別碼*  
+     `$Resources:` *字串 ID*  
   
      例如，輸入 $Resources:**標題**中**功能標題** 方塊中和 $Resources:**描述**中**功能描述**方塊.  
   
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
   
      當地語系化的功能標題和描述會出現在應用程式。 若要顯示當地語系化的資源，請在 SharePoint 伺服器必須符合資源檔的文化特性的語言套件安裝。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)   
  [如何： 將資源檔](../sharepoint/how-to-add-a-resource-file.md)   
  [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   

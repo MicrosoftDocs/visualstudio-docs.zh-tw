@@ -1,19 +1,22 @@
 ---
-title: "IDebugSettingsCallback2::EnumEEs |Microsoft 文件"
-ms.custom: 
+title: IDebugSettingsCallback2::EnumEEs |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugSettingsCallback2::EnumEEs
+helpviewer_keywords:
+- IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0572de1ab5909be2026df57a79f593a72860c876
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

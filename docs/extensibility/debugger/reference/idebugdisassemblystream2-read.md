@@ -1,20 +1,24 @@
 ---
-title: "IDebugDisassemblyStream2::Read |Microsoft 文件"
-ms.custom: 
+title: IDebugDisassemblyStream2::Read |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDisassemblyStream2::Read
-helpviewer_keywords: IDebugDisassemblyStream2::Read
+f1_keywords:
+- IDebugDisassemblyStream2::Read
+helpviewer_keywords:
+- IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: edc41da40c4f0c292523ed338419fbc4a7253dcf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

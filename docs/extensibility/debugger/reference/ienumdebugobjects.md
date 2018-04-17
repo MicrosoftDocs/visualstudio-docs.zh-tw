@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugObjects |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugObjects |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugObjects
-helpviewer_keywords: IEnumDebugObjects interface
+f1_keywords:
+- IEnumDebugObjects
+helpviewer_keywords:
+- IEnumDebugObjects interface
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c8f62f4a153ac5c5966721578313245fc02f7d04
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

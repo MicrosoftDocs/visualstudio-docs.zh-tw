@@ -1,25 +1,23 @@
 ---
-title: "自訂檔案儲存體和 XML 序列化 |Microsoft 文件"
-ms.custom: 
+title: 自訂檔案儲存體和 XML 序列化 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 當使用者儲存工作執行個體，或*模型*中的特定領域語言 (DSL) 的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，建立或更新的 XML 檔案。 檔案追縱可以重新建立存放區中的模型。  
@@ -53,7 +51,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="the-default-serialization-scheme"></a>預設的序列化配置  
  若要建立本主題的範例，使用下列的 DSL 定義。  
   
- ![DSL 定義圖表 &#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
  此 DSL 用來建立具有下列外觀螢幕的模型。  
   
@@ -275,7 +273,7 @@ ms.lasthandoff: 02/09/2018
 |是 Custom|將此設**True**如果您想要撰寫您自己這個網域類別的序列化和還原序列化程式碼。<br /><br /> 建置方案，並調查要探索的詳細的指示的錯誤。|  
 |領域類別|這個類別的資料節點適用於網域類別。 唯讀。|  
 |元素名稱|這個類別的項目 Xml 節點名稱。 預設值是小寫版本的網域類別名稱。|  
-|Moniker 屬性名稱|Moniker 元素中用來包含參考屬性的名稱。 如果空白，則會使用索引鍵屬性或識別碼的名稱。<br /><br /> 在此範例中，它可以是"name":`<personMoniker name="/Mike Nash"/>`|  
+|Moniker 屬性名稱|Moniker 元素中用來包含參考屬性的名稱。 如果空白，則會使用索引鍵屬性或識別碼的名稱。<br /><br /> 在此範例中，它可以是"name":  `<personMoniker name="/Mike Nash"/>`|  
 |Moniker 項目名稱|用於參考此類別的項目之 moniker 的 xml 項目名稱。<br /><br /> 預設值是小寫版本的後置字元為"Moniker"的類別名稱。 例如，`personMoniker`。|  
 |Moniker 型別名稱|針對 moniker 至這個類別的項目產生的 xsd 型別的名稱。 XSD 處於**Dsl\Generated 程式碼\\\*Schema.xsd**|  
 |序列化識別碼|如果為 True，在檔案中包含 GUID 的項目。 這必須為 true，如果沒有屬性標示**是 Moniker 索引鍵**和 DSL 這個類別定義參考關聯性。|  
@@ -306,6 +304,6 @@ ms.lasthandoff: 02/09/2018
 |角色項目名稱|指定的名稱衍生自來源角色的 XML 項目。 預設值是角色屬性名稱。|  
 |使用完整的表單|如果為 true，每個目標項目或 moniker 會括住，代表關聯性的 XML 節點。 這應該設定為 true，如果關聯性有自己的網域屬性。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)

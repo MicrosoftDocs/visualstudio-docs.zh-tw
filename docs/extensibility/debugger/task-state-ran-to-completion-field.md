@@ -1,19 +1,22 @@
 ---
-title: "TASK_STATE_RAN_TO_COMPLETION 欄位 |Microsoft 文件"
-ms.custom: 
+title: TASK_STATE_RAN_TO_COMPLETION 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d70f57629cb051ed3241e9ade33e84390ff55e4c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,12 +1,10 @@
 ---
-title: "應用程式和部署資訊清單在 Office 方案中 |Microsoft 文件"
-ms.custom: 
+title: 應用程式和部署資訊清單在 Office 方案中 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], updating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe801405795b3ca0fcb28f024a69d0a9c9c22d8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7c828a4ff5b4b54836f67b208dd0188db765fd71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office 方案中的應用程式和部署資訊清單
   應用程式資訊清單是提供資訊讓 Office 方案用來尋找及更新其組件的 XML 檔案。 應用程式資訊清單可以搭配部署資訊清單使用，部署資訊清單是伺服器上儲存的 XML 檔案，可提供尋找最新版應用程式資訊清單和組件所需的資訊。  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  如需詳細資訊清單和 Office 方案的工作，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

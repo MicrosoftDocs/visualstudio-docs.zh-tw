@@ -1,13 +1,10 @@
 ---
-title: "開發 SharePoint 方案 |Microsoft 文件"
-ms.custom: 
+title: 開發 SharePoint 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  將功能加入 SharePoint 專案時，它會顯示為 [方案總管]  中的節點，並使用預設節點名稱：Feature*x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。  
   
 #### <a name="package-node"></a>套件節點  
- [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案，稱為*方案**封裝*，是。封包為主，少。WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 **封裝**節點一定會包含名為 Package.wspdef，檔案[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]封裝定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
+ [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案，稱為*方案 * * 封裝*，是。封包為主，少。WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 **封裝**節點一定會包含名為 Package.wspdef，檔案[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]封裝定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
   
  您可以檢視或變更套件的內容，在封裝設計工具中，按兩下 [套件] 節點或開啟其捷徑功能表，然後選擇**開啟**。 如需詳細資訊，請參閱[建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)。  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[如何：新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)|說明如何將對應的資料夾加入專案，以提供更容易存取 SharePoint 資源。|  
 |[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)|說明與沙箱化方案相關聯的問題。|  
 |[SharePoint 方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|說明在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開發 SharePoint 方案的安全性考量。|  
-|[URL 選擇器對話方塊 &#40;Visual Studio &#41; 中的 SharePoint 開發](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|說明可用來在您的專案或本機 SharePoint 伺服器上新增資源路徑參考的對話方塊。|  
+|[URL 選擇器對話方塊&#40;Visual Studio 中的 SharePoint 開發&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|說明可用來在您的專案或本機 SharePoint 伺服器上新增資源路徑參考的對話方塊。|  
   
-## <a name="see-also"></a>請參閱  
- [開始使用 &#40;Visual Studio &#41; 中的 SharePoint 開發](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用者入門&#40;Visual Studio 中的 SharePoint 開發&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [使用 伺服器總管瀏覽 SharePoint 連接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

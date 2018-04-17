@@ -1,20 +1,24 @@
 ---
-title: "CODE_PATH |Microsoft 文件"
-ms.custom: 
+title: CODE_PATH |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CODE_PATH
-helpviewer_keywords: CODE_PATH structure
+f1_keywords:
+- CODE_PATH
+helpviewer_keywords:
+- CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dd2cd5de0d415e133beb6b72b63b9d42eb61c947
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,11 @@
 ---
-title: "GetAssemblyIdentity 工作 | Microsoft Docs"
-ms.custom: 
+title: GetAssemblyIdentity 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, GetAssemblyIdentity task
 - GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2316fcc11915b707c4634cc8ef109e840e3950
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 995f77fac8e62e963207408a1e127a557906d10e
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 工作
 從指定的檔案擷取組件識別，並輸出識別資訊。  
@@ -55,18 +55,16 @@ ms.lasthandoff: 02/09/2018
     <ItemGroup>  
         <MyAssemblies Include="File1.dll;File2.dll" />  
     </ItemGroup>  
-  
-    <Target Name="RetrieveIdentities>  
+    <Target Name="RetrieveIdentities">  
         <GetAssemblyIdentity  
             AssemblyFiles="@(MyAssemblies)"  
             <Output  
                 TaskParameter="Assemblies"  
                 ItemName="MyAssemblyIdentities"  
     </Target>  
-  
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

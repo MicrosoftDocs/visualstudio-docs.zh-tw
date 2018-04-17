@@ -1,22 +1,25 @@
 ---
-title: "命令項目 |Microsoft 文件"
-ms.custom: 
+title: 命令項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Commands
+f1_keywords:
+- Commands
 helpviewer_keywords:
 - Commands element (VSCT XML schema)
 - VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

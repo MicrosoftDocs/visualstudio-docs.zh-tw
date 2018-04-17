@@ -1,23 +1,21 @@
 ---
-title: "XML 編輯器 IntelliSense 功能 |Microsoft 文件"
-ms.custom: 
+title: XML 編輯器 IntelliSense 功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc4a0e9cc3da9d2cfad86d1891514a68dd2b87fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio 中提供的其他語言編輯器。 本節說明如何使用 IntelliSense (XSLT) 搭配 XML 結構定義語言 (XSD) 與 XSLT 文件。  
@@ -53,7 +51,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
  `<book>`  
   
- XML 編輯器會填入結束標記，並將游標置於開啟標記後面。 以下是這類範例 ("&#124;"表示游標位置):  
+ XML 編輯器會填入結束標記，並將游標置於開啟標記後面。 以下是這類範例 (「&#124;"表示游標位置):  
   
  `<book>`&#124;`</book>`  
   
@@ -119,7 +117,7 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 3.  若要變更任何**自動插入**區段，然後按一下**確定**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   
  [逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

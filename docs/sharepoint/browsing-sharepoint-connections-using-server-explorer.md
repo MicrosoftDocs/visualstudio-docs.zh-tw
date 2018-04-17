@@ -1,13 +1,10 @@
 ---
-title: "瀏覽 SharePoint 連線使用伺服器總管 |Microsoft 文件"
-ms.custom: 
+title: 瀏覽 SharePoint 連線使用伺服器總管 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ea474f2439b6da519563f08ffe4ddc2f6dcef30
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ca6e7ff8d046ae94d6016c01b346bce592b2fcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>使用伺服器總管瀏覽 SharePoint 連線
   您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 網站元件，例如清單定義和內容類型，會出現在節點名為**SharePoint 連接**的樹狀檢視中**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視**，**伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 |-----------|-----------------|  
 |[如何：新增或移除 SharePoint 連線](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|描述會新增至新的 SharePoint 網站需要的步驟**SharePoint 連接**節點**伺服器總管**。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

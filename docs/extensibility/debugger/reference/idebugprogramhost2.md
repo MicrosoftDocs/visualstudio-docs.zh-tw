@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramHost2 |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramHost2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramHost2
-helpviewer_keywords: IDebugProgramHost2 interface
+f1_keywords:
+- IDebugProgramHost2
+helpviewer_keywords:
+- IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6b431ac941d61742536798ed217abafe057874e8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IEEDataStorage |Microsoft 文件"
-ms.custom: 
+title: IEEDataStorage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEEDataStorage
-helpviewer_keywords: IEEDataStorage interface
+f1_keywords:
+- IEEDataStorage
+helpviewer_keywords:
+- IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7a28b738c757924f2a3c588d52ea896dc6301384
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

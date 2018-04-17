@@ -1,13 +1,10 @@
 ---
-title: "&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f20c4c8e6d44c62282f68173ce980f650da2692
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8550b5374bde5d18d3f645c08f89902250ae5f2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  `application` 項目具有下列項目。  
   
 ### <a name="customization"></a>自訂  
- 角色`customization`中的項目`vstov3`命名空間中定義[&#60; 自訂 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/customization-element-office-development-in-visual-studio.md).  
+ 角色`customization`中的項目`vstov3`命名空間中定義[&#60;自訂&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -123,7 +120,7 @@ ms.lasthandoff: 01/10/2018
 </vstav3:application>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

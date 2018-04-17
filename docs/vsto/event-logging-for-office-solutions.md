@@ -1,12 +1,10 @@
 ---
-title: "Office 方案的事件記錄 |Microsoft 文件"
-ms.custom: 
+title: Office 方案的事件記錄 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, event viewer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0c8a304b314fe09536e2659f88bfdbf53c58552c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。  
@@ -99,7 +98,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  
   

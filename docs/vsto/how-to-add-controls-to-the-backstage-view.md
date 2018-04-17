@@ -1,12 +1,10 @@
 ---
-title: "如何： 將控制項加入 Backstage 檢視 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將控制項加入 Backstage 檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a58b9b59dd3625b3b9b7d8e9e3e77964eb0f2a5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cdda3960363ba87e9434cd14077c7182a9f56c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：將控制項加入至 Backstage 檢視
   您可以使用功能區設計工具將控制項加入後按一下開啟功能表**檔案** 索引標籤，當您執行應用程式中，您將加入的控制項**檔案**索引標籤會出現一個名為群組**增益集**。  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  拖曳，將它們移至新的位置在功能表上的控制項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

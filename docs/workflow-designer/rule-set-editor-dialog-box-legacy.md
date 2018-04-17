@@ -1,5 +1,5 @@
 ---
-title: "規則集編輯器對話方塊 （舊版） |Microsoft 文件"
+title: 規則集編輯器對話方塊 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
@@ -45,11 +45,11 @@ ms.lasthandoff: 03/12/2018
 |**名稱：**|輸入規則名稱。|
 |**優先順序：**|輸入規則的優先權。 預設優先權為 0。|
 |**重新評估：**|指定規則要使用哪一種規則重新評估。 可用的選項如下：<br /><br /> -   **一律**，因而導致要視需要重新評估規則。<br />-   **永遠不會**，讓規則永不重新評估。 在此狀況下，規則只執行一次。|
-|**Active**|核取可讓規則成為作用中。|
+|**使用中**|核取可讓規則成為作用中。|
 |**條件：**|輸入規則條件的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
 |**Then 動作：**|輸入 Then 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
 |**Else 動作：**|輸入 Else 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|
-|**OK**|按一下將規則集儲存為 .rules 檔案。|
+|**[確定]**|按一下將規則集儲存為 .rules 檔案。|
 
  如需規則集的詳細資訊，請參閱[使用 PolicyActivity 活動](http://go.microsoft.com/fwlink?LinkID=65004)。
 

@@ -1,12 +1,10 @@
 ---
-title: "如何： 將屬性加入至自訂 SharePoint 專案項目類型 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將屬性加入至自訂 SharePoint 專案項目類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa11cdfa8b46b6dcba889e00068676af5bdd5450
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2da3ebd75ef8b195b0e4c6117b28a6bc294ac050
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：將屬性加入至自訂 SharePoint 專案項目類型
   當您定義自訂 SharePoint 專案項目類型時，您可以將屬性加入專案項目。 屬性會出現在**屬性**視窗中選取專案項目時**方案總管 中**。  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
   
  若要部署專案項目，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件、 範本和您想要與專案項目一起散發的任何其他檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
  [如何： 將捷徑功能表項目加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)  

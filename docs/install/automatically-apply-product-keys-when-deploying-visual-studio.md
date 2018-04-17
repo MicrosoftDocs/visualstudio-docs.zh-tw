@@ -1,22 +1,24 @@
 ---
-title: "在部署 Visual Studio 時自動套用產品金鑰 | Microsoft Docs"
-ms.custom: 
+title: 在部署 Visual Studio 時自動套用產品金鑰 | Microsoft Docs
+ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
 您能以程式設計方式套用您的產品金鑰，作為用來自動化部署 Visual Studio 的一部分指令碼。 您可以在 Visual Studio 安裝期間或完成安裝後，以程式設計方式在裝置上設定產品金鑰。

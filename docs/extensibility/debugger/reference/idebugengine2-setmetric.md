@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngine2::SetMetric |Microsoft 文件"
-ms.custom: 
+title: IDebugEngine2::SetMetric |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngine2:::SetMetric
-helpviewer_keywords: IDebugEngine2:::SetMetric
+f1_keywords:
+- IDebugEngine2:::SetMetric
+helpviewer_keywords:
+- IDebugEngine2:::SetMetric
 ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 49208b4ef01d3f1a8cc22abe6d9a926089febed1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

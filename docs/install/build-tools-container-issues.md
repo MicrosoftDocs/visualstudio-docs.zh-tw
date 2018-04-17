@@ -1,22 +1,24 @@
 ---
-title: "容器的已知問題 | Microsoft Docs"
-ms.custom: 
+title: 容器的已知問題 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
-ms.author: heaths
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: tglee
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c433716b0a5623fa9b4f098952b4c951d8b52e12
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 

@@ -1,5 +1,5 @@
 ---
-title: "ReceiveAndSendReply 範本設計工具 |Microsoft 文件"
+title: ReceiveAndSendReply 範本設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1236f8c3f86362ba49aa4b985dcc601a66c476
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 81edeb04abacedb81ad52da17369759ba9f1f222
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 樣板設計工具
 
@@ -48,14 +48,14 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.SendReply.Request%2A>|True|參考到與這個 <xref:System.ServiceModel.Activities.Receive> 活動成對的 <xref:System.ServiceModel.Activities.SendReply> 活動。 這個屬性不能**null**。 伺服器會同時使用 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活動，以製作要求/回應傳訊模式的模型。 這個屬性會指定哪個 <xref:System.ServiceModel.Activities.Send> 活動為成對的活動。 在設計工具中，您不能編輯這個屬性，因為這個屬性自動繫結至您先前建立 <xref:System.ServiceModel.Activities.Send> 活動的來源 <xref:System.ServiceModel.Activities.SendReply> 活動。|
 |<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|指定要接收的訊息或參數內容。 這可以是 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活動或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活動。 編輯這個屬性旁邊的橢圓形按鈕，即可**內容**在屬性方格，或按一下欄位**定義...**按鈕**內容**上加上標籤**接收**活動設計工具介面。 兩者都顯示**內容定義**對話方塊。 如需如何使用此方塊的詳細資訊，請參閱[內容定義對話方塊](../workflow-designer/content-definition-dialog-box.md)主題。|
 |<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 物件的集合，這些物件會初始化多個 <xref:System.ServiceModel.Activities.CorrelationHandle> 物件，用來設定工作流程內的這個 <xref:System.ServiceModel.Activities.Receive> 活動。 按一下省略符號按鈕旁的 [<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>屬性以開啟 [屬性] 方格中的**加入相互關聯初始設定式**] 對話方塊。 如需使用此方塊的詳細資訊，請參閱[加入 CorrelationInitializers 對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)主題。|
-|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|指定訊息的動作標頭。 如果沒有明確設定，其值會預設為：<br /><br /> **https://tempuri.org/ {服務合約命名空間} / {服務合約名稱} / {作業名稱}**|
+|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|指定訊息的動作標頭。 如果沒有明確設定，其值會預設為：<br /><br /> **https://tempuri.org/{service 合約命名空間} / {服務合約名稱} / {作業名稱}**|
 |<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|指定傳送回覆訊息前是否要保存工作流程執行個體。 預設值為 **false**。|
 
 ## <a name="see-also"></a>另請參閱
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [接收](../workflow-designer/receive-activity-designer.md)
 - [傳送](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

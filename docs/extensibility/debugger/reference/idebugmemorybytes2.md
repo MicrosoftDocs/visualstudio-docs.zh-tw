@@ -1,20 +1,24 @@
 ---
-title: "IDebugMemoryBytes2 |Microsoft 文件"
-ms.custom: 
+title: IDebugMemoryBytes2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMemoryBytes2
-helpviewer_keywords: IDebugMemoryBytes2 interface
+f1_keywords:
+- IDebugMemoryBytes2
+helpviewer_keywords:
+- IDebugMemoryBytes2 interface
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9a6377ff5ba61427269df683b34a20292c441632
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

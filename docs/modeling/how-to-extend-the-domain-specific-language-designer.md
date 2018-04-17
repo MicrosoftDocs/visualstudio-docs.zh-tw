@@ -1,9 +1,9 @@
 ---
-title: "如何： 擴充網域特定語言設計工具 |Microsoft 文件"
-ms.custom: 
+title: 如何： 擴充網域特定語言設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: MT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
 您可以對您用來編輯 DSL 定義設計工具的擴充功能。 類型的擴充功能，可讓您加入功能表命令加入處理常式拖放軌跡，以及觸發特定類型的值或關聯性變更時的規則，連按兩下。 的擴充功能可以封裝成 Visual Studio 整合擴充功能 (VSIX)，並散發給其他使用者。  
@@ -65,12 +65,12 @@ ms.lasthandoff: 02/09/2018
   
      System.Windows.Forms  
   
-## <a name="testing-and-deployment"></a>測試和部署  
+## <a name="testing-and-deployment"></a>建置和部署  
  若要測試本主題中的任何擴充功能，建置並執行方案。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本例中，開啟 DSL 方案。 編輯 DslDefinition 圖表。 可以看到延伸模組行為。  
   
  若要部署的擴充功能的主要[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他電腦，請遵循下列步驟：  
   
-1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\\\*.vsix  
+1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\*\\\*.vsix  
   
 2.  將這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。  
   

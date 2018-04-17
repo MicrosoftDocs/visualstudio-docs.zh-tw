@@ -1,20 +1,24 @@
 ---
-title: "MACHINE_INFO_FIELDS |Microsoft 文件"
-ms.custom: 
+title: MACHINE_INFO_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: MACHINE_INFO_FIELDS
-helpviewer_keywords: MACHINE_INFO_FIELDS enumeration
+f1_keywords:
+- MACHINE_INFO_FIELDS
+helpviewer_keywords:
+- MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 65d6be8d22955bfd07dfbe40fed723221c60f689
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

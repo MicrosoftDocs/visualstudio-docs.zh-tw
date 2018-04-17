@@ -1,23 +1,23 @@
 ---
-title: "設定 Visual Studio 中的色彩佈景主題和字型 | Microsoft Docs"
-ms.custom: 
+title: 設定 Visual Studio 中的色彩佈景主題和字型 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 2098540adda6de1ab003a6a9d526519d1d753730
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
@@ -29,22 +29,22 @@ ms.lasthandoff: 03/09/2018
 
 Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變更為 [深色]。
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具] > [選項]。
 
-1. 在 [環境] 的 [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
+1. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
    整個 IDE 的色彩佈景主題會變更為 [深色]。
 
    ![深色佈景主題的 VS](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor) \(英文\) 安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝額外的預先定義佈景主題。 安裝此工具之後，[色彩佈景主題] 下拉式清單中便會出現額外的色彩佈景主題。
+> 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) \(英文\) 安裝 **Visual Studio 色彩佈景主題編輯器**，以安裝額外的預先定義佈景主題。 安裝此工具之後，[色彩佈景主題] 下拉式清單中便會出現額外的色彩佈景主題。
 
 ## <a name="change-text-color"></a>變更文字色彩
 
 現在我們將自訂編輯器的部分文字色彩。 首先，讓我們開啟 XML 檔案來查看預設色彩。
 
-1. 在功能表列上，選擇 [檔案]、[新增]、[檔案]。
+1. 從功能表列中選擇 [檔案] > [新增] > [檔案...]。
 
 1. 在 [新增檔案] 對話方塊中的 [一般] 類別下，選擇 [XML 檔案]，然後選擇 [開啟]。
 
@@ -80,7 +80,7 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
    ![XML 檔案的字型色彩](media/quickstart-personalize-xml-file.png)
 
-1. 若要開啟 [選項] 對話方塊，請從功能表列選擇 [工具]、[選項]。
+1. 若要開啟 [選項] 對話方塊，請從功能表列中選擇 [工具] > [選項]。
 
 1. 在 [環境] 底下，選擇 [字型和色彩] 類別。
 
@@ -102,9 +102,9 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
 ## <a name="see-also"></a>另請參閱
 
-[快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
-[快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)  
-[快速入門：專案和方案](../ide/quickstart-projects-solutions.md)  
-[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
-[自訂編輯器](../ide/customizing-the-editor.md)  
-[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+- [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
+- [快速入門：專案和方案](../ide/quickstart-projects-solutions.md)
+- [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
+- [自訂編輯器](../ide/customizing-the-editor.md)
+- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

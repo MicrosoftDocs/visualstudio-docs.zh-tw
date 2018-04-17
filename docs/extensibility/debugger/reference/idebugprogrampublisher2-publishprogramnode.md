@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramPublisher2::PublishProgramNode |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramPublisher2::PublishProgramNode |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramPublisher2::PublishProgramNode
-helpviewer_keywords: IDebugProgramPublisher2::PublishProgramNode
+f1_keywords:
+- IDebugProgramPublisher2::PublishProgramNode
+helpviewer_keywords:
+- IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 594f891f71c866c3157ce7a636db5453c592422d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,22 +1,25 @@
 ---
-title: "IDebugCustomAttributeQuery2 |Microsoft 文件"
-ms.custom: 
+title: IDebugCustomAttributeQuery2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCustomAttributeQuery2
+f1_keywords:
+- IDebugCustomAttributeQuery2
 helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 - IDebugCustomAttributeQuery2 interface
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 31df907fe13cd171da8e443d3b8af876adaf3c3f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

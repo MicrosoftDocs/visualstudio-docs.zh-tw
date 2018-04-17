@@ -1,13 +1,10 @@
 ---
-title: "如何： 簽署 Office 方案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 簽署 Office 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 31b5e1fc3c78aecf518af0941a4a2dd0ab7e57c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：簽署 Office 方案
   如果您登入方案時，可以授與信任給方案以辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有方案將都會信任。  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>若要使用憑證來簽署 Office 方案  
   
-1.  在**專案**功能表上，按一下  *SolutionName***屬性**。  
+1.  在**專案**功能表上，按一下 * SolutionName ***屬性**。  
   
 2.  按一下 [簽署]索引標籤。  
   
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  若要確認正在使用正確的憑證，請按一下**更多詳細資料**檢視憑證資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [專案設計工具、簽署頁面](/visualstudio/ide/reference/signing-page-project-designer)  

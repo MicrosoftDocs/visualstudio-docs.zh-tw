@@ -1,12 +1,10 @@
 ---
-title: "如何： 將參數加入至方法 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將參數加入至方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method parameters
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 388ce91d8500cf21c4a4989b8db9106a4d19693d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4e005152aa7a5b7c1905e768da878e72051bbdb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：將參數加入至方法
   若要將資訊傳遞至方法，或從方法傳回的資訊，請使用參數。 所有方法必須都有至少一個參數。 如需如何設計來支援您想要建立的方法的型別參數的詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  修改參數的類型描述元。 如需詳細資訊，請參閱[如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   

@@ -1,11 +1,11 @@
 ---
-title: "ResolveNativeReference 工作 | Microsoft Docs"
-ms.custom: 
+title: ResolveNativeReference 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNativeReference task
 - ResolveNativeReference task [MSBuild]
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
-caps.latest.revision: 
+caps.latest.revision: 9
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a150d36c8bc48d6705b9f3ff1e3cfea0f7c01972
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 工作
 解析原生參考。 實作 <xref:Microsoft.Build.Tasks.ResolveNativeReference> 類別。 此類別支援的 .NET Framework 結構不適合直接從程式碼使用。  
@@ -50,6 +50,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

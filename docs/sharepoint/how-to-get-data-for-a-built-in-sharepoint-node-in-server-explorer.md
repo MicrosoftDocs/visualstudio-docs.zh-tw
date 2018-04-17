@@ -1,12 +1,10 @@
 ---
-title: "如何： 取得伺服器總管 中的內建 SharePoint 節點資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 取得伺服器總管 中的內建 SharePoint 節點資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f448ec8d7cfe22495aa3f7b2ce9191f106205c33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：取得伺服器總管的內建 SharePoint 節點資料
   在每個內建 SharePoint 節點**伺服器總管**，取得基礎 SharePoint 元件，則節點代表的資料。 如需詳細資訊，請參閱[擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="deploying-the-extension"></a>部署擴充功能  
  若要部署**伺服器總管**延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要發佈副檔名的檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   

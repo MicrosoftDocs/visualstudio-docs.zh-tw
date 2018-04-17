@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Test Professional 2017 工作負載和元件識別碼 | Microsoft Docs"
-description: "使用 Visual Studio 工作負載和元件識別碼為通用測試人員提供整合式測試工具"
-keywords: 
+title: Visual Studio Test Professional 2017 工作負載和元件識別碼 | Microsoft Docs
+description: 使用 Visual Studio 工作負載和元件識別碼為通用測試人員提供整合式測試工具
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 46714a42363bfad0c984c085ab79174f59664116
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 31f7d8d811ea45eaa56f8659cb00dd4292ed4f18
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 元件目錄
 

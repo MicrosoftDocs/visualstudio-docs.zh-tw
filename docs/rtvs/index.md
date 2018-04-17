@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio R 工具 | Microsoft Docs"
-description: "Visual Studio R 工具 (RTVS) 是免費的開放原始碼延伸模組，提供許多語言功能，包括 IntelliSense、偵錯及遠端工作區。"
-ms.custom: 
+title: 適用於 Visual Studio 的 R 工具
+description: Visual Studio R 工具 (RTVS) 是免費的開放原始碼延伸模組，提供許多語言功能，包括 IntelliSense、偵錯及遠端工作區。
+ms.custom: ''
 ms.date: 11/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ec4eb7c0b8eb00667283e9e7051ff03fcd5b2791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 

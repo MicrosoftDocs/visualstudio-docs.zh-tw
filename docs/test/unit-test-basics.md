@@ -1,11 +1,7 @@
 ---
-title: "單元測試基本概念 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的單元測試基本概念 | Microsoft Docs
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -30,7 +26,7 @@ ms.lasthandoff: 03/02/2018
 
 [測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
-## <a name="quick-starts"></a>快速入門
+## <a name="getting-started"></a>使用者入門
 
 如需單元測試的簡介以便直接參考編碼，請參閱下列其中一個主題：
 
@@ -113,7 +109,7 @@ public void Withdraw(double amount)
 3.  若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
 
     > [!WARNING]
-    >  並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。
+    > 並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。
 
 4.  在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。
 

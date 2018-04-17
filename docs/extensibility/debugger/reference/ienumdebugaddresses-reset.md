@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugAddresses::Reset |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugAddresses::Reset |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugAddresses::Reset
-helpviewer_keywords: IEnumDebugAddresses::Reset method
+f1_keywords:
+- IEnumDebugAddresses::Reset
+helpviewer_keywords:
+- IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e38329fd8f6e460111b9052264c92c189a7f5454
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

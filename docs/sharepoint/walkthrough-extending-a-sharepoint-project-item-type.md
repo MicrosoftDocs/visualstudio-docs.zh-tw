@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 擴充 SharePoint 專案項目類型 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 擴充 SharePoint 專案項目類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案項目類型
   您可以使用**商務資料連接模型**專案項目在 SharePoint 中建立商務資料連線 (BDC) 服務的型號。 根據預設，當您建立模型時使用此專案項目中，模型中的資料不是顯示給使用者。 您也必須建立一個外部清單，在 SharePoint 中，讓使用者可以檢視資料。  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名稱**方塊中，輸入**GenerateExternalDataLists**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**GenerateExternalDataLists**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**GenerateExternalDataLists**專案加入**方案總管 中**。  
   
 7.  如果未自動開啟 source.extension.vsixmanifest 檔案中，在 GenerateExternalDataLists 專案中，開啟其捷徑功能表，然後選擇**開啟**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名稱**方塊中，輸入**BdcProjectItemExtension**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**BdcProjectItemExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**BdcProjectItemExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 6.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -295,7 +294,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  關閉 Visual Studio （實驗性執行個體和 GenerateExternalDataLists 方案已開啟的執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  

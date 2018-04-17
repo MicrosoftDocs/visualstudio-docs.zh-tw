@@ -1,20 +1,24 @@
 ---
-title: "IDebugExpressionEvaluator::GetMethodProperty |Microsoft 文件"
-ms.custom: 
+title: IDebugExpressionEvaluator::GetMethodProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugExpressionEvaluator::GetMethodProperty
-helpviewer_keywords: IDebugExpressionEvaluator::GetMethodProperty method
+f1_keywords:
+- IDebugExpressionEvaluator::GetMethodProperty
+helpviewer_keywords:
+- IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9b99c1bf5dd194558cdb9f2b9419e7864a89ddd5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

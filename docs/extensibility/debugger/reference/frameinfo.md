@@ -1,20 +1,24 @@
 ---
-title: "FRAMEINFO |Microsoft 文件"
-ms.custom: 
+title: FRAMEINFO |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: FRAMEINFO
-helpviewer_keywords: FRAMEINFO structure
+f1_keywords:
+- FRAMEINFO
+helpviewer_keywords:
+- FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5b3fd52fb80cd2bd588951b6a921ca157935a3a2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

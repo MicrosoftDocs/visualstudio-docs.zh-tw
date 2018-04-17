@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugReferenceInfo2::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugReferenceInfo2::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugReferenceInfo2::Clone
-helpviewer_keywords: IEnumDebugReferenceInfo2::Clone
+f1_keywords:
+- IEnumDebugReferenceInfo2::Clone
+helpviewer_keywords:
+- IEnumDebugReferenceInfo2::Clone
 ms.assetid: 49c5a301-a33a-428f-b83b-e734c71af4ef
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 536b47f81d595817f365003616e80ec42e62e623
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

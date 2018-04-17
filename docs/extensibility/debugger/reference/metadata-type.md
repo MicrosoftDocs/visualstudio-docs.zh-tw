@@ -1,20 +1,24 @@
 ---
-title: "METADATA_TYPE |Microsoft 文件"
-ms.custom: 
+title: METADATA_TYPE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: METADATA_TYPE
-helpviewer_keywords: METADATA_TYPE structure
+f1_keywords:
+- METADATA_TYPE
+helpviewer_keywords:
+- METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 15f284a99c6382423bfb61cab105ff8e91129ac9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

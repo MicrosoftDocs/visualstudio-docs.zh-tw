@@ -1,20 +1,24 @@
 ---
-title: "IDebugStackFrame3::InterceptCurrentException |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame3::InterceptCurrentException |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugStackFrame3::InterceptCurrentException
-helpviewer_keywords: IDebugStackFrame3::InterceptCurrentException
+f1_keywords:
+- IDebugStackFrame3::InterceptCurrentException
+helpviewer_keywords:
+- IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9842527f90d9b2df7308f1e80e337de2848d9179
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

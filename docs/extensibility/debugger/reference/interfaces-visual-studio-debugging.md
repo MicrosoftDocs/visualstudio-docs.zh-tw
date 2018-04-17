@@ -1,19 +1,22 @@
 ---
-title: "介面 （Visual Studio 偵錯） |Microsoft 文件"
-ms.custom: 
+title: 介面 （Visual Studio 偵錯） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], interfaces
+helpviewer_keywords:
+- debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 13951a42b5a0fe6874c713bea3025e232b259b6d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio 2017 的新功能 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 2017 的新功能 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 5bddaec413e1a0b0a9e2096a614d7b5a574e0e7e
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.6 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
@@ -265,7 +265,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 
 如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
-### <a name="net-core"></a>.NET 核心
+### <a name="net-core"></a>.NET Core
 .NET Core 是 .NET Standard 的一般用途、模組化、跨平台和開放原始碼實作，並且包含許多與 .NET Framework 相同的 API。
 
 .NET Core 平台是由幾個元件所組成，其中包含 Managed 編譯器、執行階段、基底類別庫，以及許多應用程式模型 (例如 ASP.NET Core)。 .NET Core 支援三個主要作業系統：Windows、Linux 和 macOS。 您可以在裝置、雲端和內嵌/IoT 案例中使用 .NET Core。

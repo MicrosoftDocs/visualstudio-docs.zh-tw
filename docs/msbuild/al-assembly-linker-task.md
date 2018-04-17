@@ -1,11 +1,11 @@
 ---
-title: "AL (組件連結器) 工作 | Microsoft Docs"
-ms.custom: 
+title: AL (組件連結器) 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。  
@@ -57,13 +57,13 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 |`LinkResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將指定的資源檔連結至組件。 資源會變成組件的一部分，但不會複製檔案。 傳遞給這個參數的項目可能具有已附加到它們的選擇性中繼資料，稱為 `LogicalName`、`Target` 及 `Access`。 `LogicalName` 中繼資料可用來指定資源的內部識別項。 `Target` 中繼資料可以指定工作要將檔案複製到其中的路徑和檔案名稱，之後它會將這個新檔案編譯成組件。 您可以將 `Access` 中繼資料設為 `private`，以便讓其他組件無法看見資源。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/link[resource]` 選項的說明文件。|  
 |`MainEntryPoint`|選擇性的 `String` 參數。<br /><br /> 指定將模組轉換成可執行檔時，用來作為進入點之方法的完整名稱 (*class.method*)。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/main` 選項。|  
 |`OutputAssembly`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定此工作產生的檔案名稱。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/out` 選項。|  
-|`Platform`|選擇性的 `String` 參數。<br /><br /> 限制可以執行這個程式碼的平台，這個平台必須為下列其中之一：`x86`、`Itanium`、`x64` 或 `anycpu`。 預設為 `anycpu`。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/platform` 選項。|  
+|`Platform`|選擇性的 `String` 參數。<br /><br /> 限制可以執行這個程式碼的平台，這個平台必須為下列其中之一：`x86`、`Itanium`、`x64` 或 `anycpu`。 預設值為 `anycpu`。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/platform` 選項。|  
 |`ProductName`|選擇性的 `String` 參數。<br /><br /> 為組件中的 [`Product`] 欄位指定字串。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/prod[uct]` 選項的說明文件。|  
 |`ProductVersion`|選擇性的 `String` 參數。<br /><br /> 為組件中的 [`ProductVersion`] 欄位指定字串。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/productv[ersion]` 選項的說明文件。|  
 |`ResponseFiles`|選擇性的 `String[]` 參數。<br /><br /> 指定包含要傳遞至組件連結器之其他選項的回應檔。|  
 |`SdkToolsPath`|選擇性的 `String` 參數。<br /><br /> 指定 SDK 工具 (例如 resgen.exe) 的路徑。|  
 |`SourceModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 一或多個要編譯到組件的模組。 模組將列在所產生組件的資訊清單中，且仍需依序散發和提供，才能載入組件。 傳遞到此參數的項目可能具有名為 `Target` 的其他中繼資料，以指定工作要將檔案複製到其中的路徑和檔案名稱，之後它會將這個新檔案編譯成組件。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 的說明文件。 此參數 (Parameter) 對應到傳遞至 Al.exe 的模組清單，但不含特定參數 (Switch)。|  
-|`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式：`library` (程式碼程式庫)、`exe` (主控台應用程式) 或 `win` (Windows 應用程式)。 預設為 `library`。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/t[arget]` 選項。|  
+|`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式：`library` (程式碼程式庫)、`exe` (主控台應用程式) 或 `win` (Windows 應用程式)。 預設值為 `library`。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/t[arget]` 選項。|  
 |`TemplateFile`|選擇性的 `String` 參數。<br /><br /> 指定要從其中繼承所有組件中繼資料的組件，但不包括 [文化特性] 欄位。 指定的組件必須具有強式名稱。<br /><br /> 使用 `TemplateFile` 參數建立的組件會是附屬組件。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/template` 選項。|  
 |`Timeout`|選擇性的 `Int32` 參數。<br /><br /> 指定時間量 (以毫秒為單位)，在此時間量之後會終止工作可執行檔。 預設值是 `Int.MaxValue`，表示沒有逾時期間。|  
 |`Title`|選擇性的 `String` 參數。<br /><br /> 為組件中的 [`Title`] 欄位指定字串。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/title` 選項的說明文件。|  
@@ -96,6 +96,6 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 </AL>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

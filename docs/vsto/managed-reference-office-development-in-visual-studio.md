@@ -1,12 +1,10 @@
 ---
-title: "Managed 參考 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: Managed 參考 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3304d104a0ccf308c02a770f3e79fb08f6d06049
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Managed 參考 (Visual Studio 中的 Office 程式開發)
-  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的應用程式開發介面參考文件，請參閱 Visual Studio 文件中的下列參考章節： [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)。  
+  本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需命名空間和類型，在.NET Framework 3.5 為目標的 Office 專案中可用的 API 參考文件，請參閱 Visual Studio 文件中的下列參考章節： [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
 > [!NOTE]  
 >  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
@@ -63,9 +62,9 @@ ms.lasthandoff: 01/10/2018
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>  
  包含用於建置 Office 專案的 MSBuild 工作類別。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   

@@ -1,13 +1,10 @@
 ---
-title: "專案設計工具 （Visual Studio 中的 Office 程式開發）、 發行頁 |Microsoft 文件"
-ms.custom: 
+title: 專案設計工具 （Visual Studio 中的 Office 程式開發）、 發行頁 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>專案設計工具、發行頁 (Visual Studio 中的 Office 程式開發)
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 這個路徑可以是本機 (*c:\foldername\publishfolder*)、 相對 (*發行\\*)，或完整的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。  
   
- 根據預設，如果您已安裝 IIS，發行位置為 *http://localhost/projectname/* ；如果未安裝 IIS，則為 publish\ 目錄。  
+ 根據預設，發行位置是*http://localhost/projectname/*是否已安裝了 IIS，則為 publish\ 目錄如果您未安裝 IIS。  
   
  **安裝資料夾 URL**  
  選擇性。  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈]  中的 [完成] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Office 方案的部署必要條件](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  

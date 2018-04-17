@@ -65,15 +65,7 @@
       }
     },
    "template": [],
-    "xref": [
-      "dotnet-xref/_zip/dotnet.zip",
-      "dotnet-xref/_zip/vs.110.zip",
-      "dotnet-xref/_zip/vs.140.zip",
-      "dotnet-xref/_zip/office15.zip",
-      "dotnet-xref/_zip/missingapi.yml",
-      "dotnet-xref/_zip/msdnsmallset.yml",
-      "dotnet-xref/_zip/roslyn.yml"
-    ],
+    "xref": ["missingapi.yml", "vs.140.zip"],
     "dest": "vsdocsdocs"
   }
 }

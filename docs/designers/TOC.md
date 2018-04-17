@@ -20,6 +20,7 @@
 #### [協助工具產品和服務 (Blend)](accessibility-products-and-services-blend.md)
 ### [XAML 設計工具的鍵盤快速鍵](keyboard-shortcuts-for-xaml-designer.md)
 ### [偵錯或停用 XAML 設計工具的專案程式碼](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [XAML 錯誤和警告](xaml-errors-warnings.md)
 ## [使用 Windows Presentation Foundation 建立新式桌面應用程式](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [WPF 使用者入門](getting-started-with-wpf.md)
 #### [WPF 簡介](introduction-to-wpf.md)

@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugFields::Skip |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugFields::Skip |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugFields::Skip
-helpviewer_keywords: IEnumDebugFields::Skip method
+f1_keywords:
+- IEnumDebugFields::Skip
+helpviewer_keywords:
+- IEnumDebugFields::Skip method
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dbe41f3624e744084f7d3e9d51ee57f737d2bec8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

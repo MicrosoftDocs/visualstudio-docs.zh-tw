@@ -1,12 +1,10 @@
 ---
-title: "在 Visual Studio 中的 Office 方案的架構 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 中的 Office 方案的架構 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 021d080cd37044f0365b8535f1df99c1669cf092
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b62fc532ba2caeaaf07bb4069aaa5a41820f804
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Office 方案在 Visual Studio 中的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  
@@ -47,16 +46,16 @@ ms.lasthandoff: 01/10/2018
  說明自訂文件屬性在文件層級自訂中的運作方式。  
   
 ## <a name="related-sections"></a>相關章節  
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  提供將 Microsoft Office 當成平台來開發商務方案的簡介。  
   
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供有關設定開發電腦以建立 Office 方案、如何開始建立方案，以及自 Visual Studio 中的舊版 Office Developer Tools 以來的變更資訊連結。  
   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
  提供有關建立 Office 方案的資訊連結。  
   
- [一般參考 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [一般參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  提供有關 Office 專案中的使用者介面項目、Office 專案的應用程式和部署資訊清單，以及 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的應用程式開發介面的資訊連結。  
   
   

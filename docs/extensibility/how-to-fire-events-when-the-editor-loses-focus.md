@@ -1,19 +1,22 @@
 ---
-title: "如何： 引發事件，當編輯器失去焦點時 |Microsoft 文件"
-ms.custom: 
+title: 如何： 引發事件，當編輯器失去焦點時 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - fire events on losing focus
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bb20adf3950e87c37e2ca64bcd78913839f89d01
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,18 +1,18 @@
 ---
-title: "如何： 使用階層連結巡覽 |Microsoft 文件"
+title: 如何： 使用階層連結巡覽 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7392ca650ca171b6f9d9090333c0837eb0f627a
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 97c88a8c47bfaa2e1ccd135baec95f19a49c4e5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>HOW TO：使用階層連結巡覽
 

@@ -1,19 +1,22 @@
 ---
-title: "IDebugPortSupplierLocale2::SetLocale |Microsoft 文件"
-ms.custom: 
+title: IDebugPortSupplierLocale2::SetLocale |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugPortSupplierLocale2::SetLocale
+helpviewer_keywords:
+- IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 35ea8109ddecc2b756c2fc094f468920f6d46bcd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

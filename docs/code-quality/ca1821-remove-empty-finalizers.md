@@ -1,22 +1,25 @@
 ---
-title: "CA1821： 移除空的完成項 |Microsoft 文件"
-ms.custom: 
+title: CA1821： 移除空的完成項 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
-helpviewer_keywords: CA1821
+helpviewer_keywords:
+- CA1821
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 98aebdcc889cdd3bd2bbe124b00a572e066b0e4a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

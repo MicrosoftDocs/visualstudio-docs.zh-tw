@@ -1,23 +1,24 @@
 ---
-title: "開發最佳做法 COM、 VSTO 和 VBA 的增益集在辦公室 |Microsoft 文件"
-ms.custom: 
+title: 開發最佳做法 COM、 VSTO 和 VBA 的增益集在辦公室 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>開發的 COM、 VSTO 和 VBA 的增益 Office 中的最佳作法
   如果您正在開發 Office COM 的 VBA VSTO 增益集，請遵循本文中所述的開發最佳作法。   這將有助於確保：
@@ -62,7 +63,7 @@ ms.lasthandoff: 01/10/2018
 
 若要提供 Office 用戶端應用程式 （例如，Word 或 Excel） 的支援聲明，先確認您的增益集執行在目前 Office 版本中，然後認可如果增益集線的未來版本中提供的更新。 您沒有 Microsoft 發行新版本或 Office 的更新時，測試您的增益集。 Microsoft 不常變更 office 中的 COM、 VSTO 和 VBA 擴充平台，這些變更將會完整記錄。
 
->重要事項： Microsoft 維護一份支援增益集的整備報表和 ISV 連絡資訊。 若要取得增益集所列，請參閱[https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)。
+>重要事項： Microsoft 維護一份支援增益集的整備報表和 ISV 連絡資訊。 若要取得增益集所列，請參閱[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用處理序監視協助偵錯安裝或載入問題
 如果增益集具有 相容性問題在安裝或載入期間，它們可能相關的檔案或登錄存取問題。 使用[處理序監視](/sysinternals/downloads/procmon)或類似的偵錯工具，來記錄和比較行為，找出問題的工作環境。

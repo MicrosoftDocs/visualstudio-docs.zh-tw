@@ -1,9 +1,9 @@
 ---
-title: "將自訂屬性加入至相依性圖表 |Microsoft 文件"
-ms.custom: 
+title: 將自訂屬性加入至相依性圖表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性加入至相依性圖表
 當您撰寫相依性圖表的延伸模組程式碼時，您可以儲存與任何項目值的相依性圖表。 當分層圖儲存並重新開啟時，值會保存下來。 您也可以讓這些屬性會出現在**屬性**視窗，讓使用者可以看到並加以編輯。 例如，您可以讓使用者為每個圖層指定規則運算式，並且撰寫驗證程式碼驗證每個圖層中類別的名稱符合使用者指定的模式。  
@@ -161,5 +161,5 @@ namespace MyNamespace
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充相依性圖表](../modeling/extend-layer-diagrams.md)

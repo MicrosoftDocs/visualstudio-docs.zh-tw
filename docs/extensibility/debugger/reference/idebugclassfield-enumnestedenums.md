@@ -1,20 +1,24 @@
 ---
-title: "IDebugClassField::EnumNestedEnums |Microsoft 文件"
-ms.custom: 
+title: IDebugClassField::EnumNestedEnums |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugClassField::EnumNestedEnums
-helpviewer_keywords: IDebugClassField::EnumNestedEnums method
+f1_keywords:
+- IDebugClassField::EnumNestedEnums
+helpviewer_keywords:
+- IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8bdf03df64b88673404de9b6129569822c4aa31f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,19 +1,22 @@
 ---
-title: "COMPUTER_INFO |Microsoft 文件"
-ms.custom: 
+title: COMPUTER_INFO |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: COMPUTER_INFO structure
+helpviewer_keywords:
+- COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8f212f8064218bd4aaf975b1c412a965b76c21c5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

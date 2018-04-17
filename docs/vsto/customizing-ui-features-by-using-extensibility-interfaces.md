@@ -1,12 +1,10 @@
 ---
-title: "使用擴充性介面自訂 UI 功能 |Microsoft 文件"
-ms.custom: 
+title: 使用擴充性介面自訂 UI 功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 404b54ea189c00b26f43a39274dfaf44ef37773a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 59a2eb15dcb21158df33b2f4a8ae138c424795cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

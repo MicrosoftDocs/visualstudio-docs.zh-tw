@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio 中 CPU 取樣的初級開發人員指南 | Microsoft Docs"
+title: Visual Studio 中 CPU 取樣的初級開發人員指南 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - performance tools, wizard
 - Performance Wizard
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3113a04ba6f6f893c285cf02f6f23cb5979dad1
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。

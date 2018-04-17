@@ -1,12 +1,10 @@
 ---
-title: "如何： 從文件移除 Managed 程式碼擴充 |Microsoft 文件"
-ms.custom: 
+title: 如何： 從文件移除 Managed 程式碼擴充 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c83f9794cdce71db9f51a6adca69fbeabc8c7a8e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7a5e70db36c0cd1b99a670e13a353e15f7558e7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：從文件移除 Managed 程式碼擴充
   您可以透過程式設計方式移除自訂組件的文件或 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂一部分的活頁簿。 使用者可以開啟文件並檢視其內容，但是不會出現您加入文件任何自訂使用者介面 (UI)，而且將不會執行您的程式碼。  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  建置專案，並執行您要移除自訂應用程式的電腦上。 電腦必須有 Visual Studio 2010 Tools for Office Runtime 安裝。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [如何：將 Managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   

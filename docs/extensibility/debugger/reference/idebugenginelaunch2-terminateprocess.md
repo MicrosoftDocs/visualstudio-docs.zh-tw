@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngineLaunch2::TerminateProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugEngineLaunch2::TerminateProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngineLaunch2::TerminateProcess
-helpviewer_keywords: IDebugEngineLaunch2::TerminateProcess
+f1_keywords:
+- IDebugEngineLaunch2::TerminateProcess
+helpviewer_keywords:
+- IDebugEngineLaunch2::TerminateProcess
 ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 87531db8930e4ca977b2d7dbe48a4afeb5affa7d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

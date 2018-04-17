@@ -1,19 +1,22 @@
 ---
-title: "如何： 搜尋執行緒 檢視中執行緒 |Microsoft 文件"
-ms.custom: 
+title: 如何： 搜尋執行緒 檢視中執行緒 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: threads, searching
+helpviewer_keywords:
+- threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a6aa48e8a83263ed31a36c97020a0f495a7a50f0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

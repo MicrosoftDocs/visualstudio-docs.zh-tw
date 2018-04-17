@@ -1,13 +1,10 @@
 ---
-title: "使用 Windows Installer 部署 Office 解決方案 |Microsoft 文件"
-ms.custom: 
+title: 使用 Windows Installer 部署 Office 解決方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]以了解如何為 Office 方案建立 Windows Installer。  
@@ -227,7 +224,7 @@ ms.lasthandoff: 01/10/2018
   
 4. 在 [記事本] 中，貼上 GUID 以取代文字 **Your GUID goes here** 。  
   
-    **&lt;properties&gt;** 項目與下列範例類似。  
+   **&lt;properties&gt;** 項目與下列範例類似。  
   
   
    ```xml  
@@ -239,7 +236,7 @@ ms.lasthandoff: 01/10/2018
   
 6. 在 [ **另存新檔** ] 對話方塊中，瀏覽至 [ **桌面** ] 資料夾。  
   
-7. 在**存檔類型**清單中，選擇**所有檔案 (&#42;。&#42;)**。  
+7. 在**存檔類型**清單中，選擇**所有檔案 (&#42;。&#42;)**.  
   
 8. 在 [ **檔案名稱** ] 方塊中，輸入 **Visual Studio 2010 Tools for Office Runtime.prq**，然後選擇 [ **儲存** ] 按鈕。  
   
@@ -533,10 +530,10 @@ ms.lasthandoff: 01/10/2018
   
 9. 在功能表列上，選擇 [ **建置**]、[ **建置 OfficeAddInSetup**]。  
   
-   在建置完成之後，您可以找到的 setup.exe 檔案**OfficeAddInSetup**專案的下列位置： *OfficeAddInSetupProjectRoot***\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   在建置完成之後，您可以找到的 setup.exe 檔案**OfficeAddInSetup**專案的下列位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [Office 解決方案的部署必要條件](http://msdn.microsoft.com/en-us/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  

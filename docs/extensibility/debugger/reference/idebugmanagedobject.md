@@ -1,20 +1,24 @@
 ---
-title: "IDebugManagedObject |Microsoft 文件"
-ms.custom: 
+title: IDebugManagedObject |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugManagedObject
-helpviewer_keywords: IDebugManagedObject interface
+f1_keywords:
+- IDebugManagedObject
+helpviewer_keywords:
+- IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e096d7c11e044f62f82fb8162aac5553e38b3a29
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

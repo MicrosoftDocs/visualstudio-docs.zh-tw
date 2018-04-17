@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 在文件層級專案中的複雜資料繫結 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在文件層級專案中的複雜資料繫結 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3ee0dc3da505807a572b646c4c286132cc45ca81
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a46a0f30fe3ab0cfc44a4cdb9121c4f39f3c417f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：文件層級專案中的複雜資料繫結
   本逐步解說示範在文件層級專案中的複雜資料繫結的基本概念。 您可以結合多個 Microsoft Office Excel 工作表中的資料格至 Northwind SQL Server 資料庫中的欄位。  
@@ -226,7 +225,7 @@ ms.lasthandoff: 01/10/2018
   
 -   建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱[逐步解說： 建立主版詳細資料的關聯使用快取的資料集](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [逐步解說：文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

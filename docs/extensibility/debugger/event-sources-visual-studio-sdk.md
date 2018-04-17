@@ -1,19 +1,22 @@
 ---
-title: "事件來源 (Visual Studio SDK) |Microsoft 文件"
-ms.custom: 
+title: 事件來源 (Visual Studio SDK) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], event sources
+helpviewer_keywords:
+- debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

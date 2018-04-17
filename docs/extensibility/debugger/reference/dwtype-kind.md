@@ -1,20 +1,24 @@
 ---
-title: "dwTYPE_KIND |Microsoft 文件"
-ms.custom: 
+title: dwTYPE_KIND |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: dwTYPE_KIND
-helpviewer_keywords: dwTYPE_KIND enumeration
+f1_keywords:
+- dwTYPE_KIND
+helpviewer_keywords:
+- dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 97136c781fa0ba6b3eb79250a4ecbe0bd2e4e694
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

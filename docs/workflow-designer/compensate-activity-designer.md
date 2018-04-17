@@ -1,5 +1,5 @@
 ---
-title: "Compensate 活動設計工具 |Microsoft 文件"
+title: Compensate 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aee48f5fa8b8452b5e80bd53002fe3c6f7f2fe7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活動設計工具
 **補償**活動設計工具用來建立及設定<xref:System.Activities.Statements.Compensate>活動。
@@ -42,5 +42,5 @@ ms.lasthandoff: 03/12/2018
 - [異動](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate 活動設計工具](../workflow-designer/compensate-activity-designer.md)
-- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [確認](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

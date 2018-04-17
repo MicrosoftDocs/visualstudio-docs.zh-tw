@@ -1,13 +1,10 @@
 ---
-title: "如何： 在 BDC 功能中包含自訂組件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 在 BDC 功能中包含自訂組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Add_Assemblies_Dialog
 dev_langs:
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32554a0456c34a3c8b1d96c471fd7ae8e9221943
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ab104ee31246a524e2c34c513a66a5f5143d5f55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自訂組件
   您的專案可以參考組件從相同方案中其他專案。 不過，您必須加入這些組件的功能檔案的專案使用**指派參考組件 Lobsystem 加入** 對話方塊。  
@@ -54,7 +51,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  偵錯自訂組件中的程式碼，您必須將組件加入至方案套件。 如需詳細資訊，請參閱[如何： 加入和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [如何： 將現有的 BDC 模型檔案加入至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   

@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointUnboundEvent2::GetReason |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointUnboundEvent2::GetReason |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointUnboundEvent2::GetReason
-helpviewer_keywords: IDebugBreakpointUnboundEvent2::GetReason
+f1_keywords:
+- IDebugBreakpointUnboundEvent2::GetReason
+helpviewer_keywords:
+- IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1364ea90b31e296426452289933f7cacd719b8c8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

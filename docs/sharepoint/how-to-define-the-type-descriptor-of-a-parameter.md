@@ -1,12 +1,10 @@
 ---
-title: "如何： 定義參數的類型描述元 |Microsoft 文件"
-ms.custom: 
+title: 如何： 定義參數的類型描述元 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 78df43a5d5614c175c5134ee638a75034ced8a5d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6ebdd8e968d631cf1d53515449c7e705c2978087
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定義參數的類型描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱[TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)。  
@@ -122,7 +121,7 @@ ms.lasthandoff: 01/10/2018
   
      新的類型描述元便會做為子類型描述元加入集合類型描述元。 將此類型描述元設定為實體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

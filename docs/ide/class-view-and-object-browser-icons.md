@@ -1,11 +1,12 @@
 ---
-title: "類別檢視和物件瀏覽器圖示 | Microsoft Docs"
-ms.custom: 
+title: 類別檢視和物件瀏覽器圖示 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 
@@ -46,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |![對應符號](../ide/media/vxmap_icon.gif "vxMap_Icon")|對應|![錯誤驚嘆號符號](../ide/media/vxerror_icon.gif "vxError_Icon")|不明|  
 |![類型轉送符號](../ide/media/ob_type_forward.gif "ob_type_forward")|類型轉送|||  
 
-## <a name="signal-icons"></a>信號圖示
+## <a name="signal-icons"></a>訊號圖示
 
 下列訊號圖示套用至所有先前的圖示，並指出其存取範圍。
 

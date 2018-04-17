@@ -1,19 +1,22 @@
 ---
-title: "登錄的自訂偵錯引擎 |Microsoft 文件"
-ms.custom: 
+title: 登錄的自訂偵錯引擎 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debug engines, registering
+helpviewer_keywords:
+- debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

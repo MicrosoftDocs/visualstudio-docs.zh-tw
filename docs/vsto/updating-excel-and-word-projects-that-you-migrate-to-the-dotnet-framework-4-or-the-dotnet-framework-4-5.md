@@ -1,13 +1,10 @@
 ---
-title: "更新 Excel 和 Word 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5 |Microsoft 文件"
-ms.custom: 
+title: 更新 Excel 和 Word 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 974071c68edd685bd23b29d6d37c520f50a78078
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8a1c7022af6a02a036476e55bdfc57becbd9d7f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您要移轉至 .NET Framework 4 或 .NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：  
@@ -125,7 +122,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
   
- 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ##  <a name="generatedclasses"></a> 在文件層級專案中更新使用產生的類別執行個體的程式碼  
  在以 .NET Framework 3.5 為目標的文件層級專案中，專案中的產生的類別衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的下列類別：  
@@ -199,7 +196,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  在目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，這些方法是擴充方法所提供的控制項屬性。 若要使用這些擴充方法，方法使用所在的程式碼檔中必須有 **N:Microsoft.Office.Tools.Excel** 或 **N:Microsoft.Office.Tools.Word** 命名空間的 <xref:Microsoft.Office.Tools.Excel> 或 <xref:Microsoft.Office.Tools.Word> 陳述式。 以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的新專案中，會自動產生這個陳述式。 不過，以 .NET Framework 3.5 為目標的專案不會自動加入這個陳述式，所以您必須在重定專案目標時將其加入。  
   
- 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ##  <a name="ccevents"></a> 更新處理 Word 內容控制項事件的程式碼  
  在以 .NET Framework 3.5 為目標的專案中，Word 內容控制項的事件是由泛型 <xref:System.EventHandler%601> 委派所處理。 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些事件是由其他委派處理。  
@@ -220,7 +217,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中， <xref:Microsoft.Office.Tools.Excel.ControlSite> 和 <xref:Microsoft.Office.Tools.Word.ControlSite> 介面已取代這些類別。 您必須修改程式碼，係指 Microsoft.Office.Tools.Excel.OLEObject 及 Microsoft.Office.Tools.Word.OLEControl 改為參考<xref:Microsoft.Office.Tools.Excel.ControlSite>和<xref:Microsoft.Office.Tools.Word.ControlSite>。 除了新名稱以外，這些控制項的行為方式和它們在以 .NET Framework 3.5 為目標的專案中一樣。  
   
- 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ##  <a name="itemproperty"></a> 更新使用 Controls.Item(Object) 屬性的程式碼  
  在.NET Framework 3.5 為目標的專案中，您可以使用 Microsoft.Office.Tools.Word.Document.Controls 或 Microsoft.Office.Tools.Excel.Worksheet.Controls 集合 Item(Object) 屬性來判斷是否將文件或工作表指定的控制項。  
@@ -234,8 +231,8 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些集合類型現在是非衍生自 <xref:System.Collections.CollectionBase>的介面。 這些集合類型也不再提供某些成員，例如 <xref:System.Collections.CollectionBase.Capacity%2A>、 <xref:System.Collections.CollectionBase.List%2A>和 <xref:System.Collections.CollectionBase.InnerList%2A>。  
   
-## <a name="see-also"></a>請參閱  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+## <a name="see-also"></a>另請參閱  
+ [將 Office 方案移轉至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [內容控制項](../vsto/content-controls.md)   
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

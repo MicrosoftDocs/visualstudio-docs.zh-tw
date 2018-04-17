@@ -1,20 +1,24 @@
 ---
-title: "IDebugCoreServer2::GetMachineUtilities_V7 |Microsoft 文件"
-ms.custom: 
+title: IDebugCoreServer2::GetMachineUtilities_V7 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCoreServer2::GetMachineUtilities_V7
-helpviewer_keywords: IDebugCoreServer2::GetMachineUtilities_V7
+f1_keywords:
+- IDebugCoreServer2::GetMachineUtilities_V7
+helpviewer_keywords:
+- IDebugCoreServer2::GetMachineUtilities_V7
 ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bf5881dabea216d7226e731c169dd97d1460c7fb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

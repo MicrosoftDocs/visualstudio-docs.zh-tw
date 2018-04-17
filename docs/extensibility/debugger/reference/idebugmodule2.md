@@ -1,20 +1,24 @@
 ---
-title: "IDebugModule2 |Microsoft 文件"
-ms.custom: 
+title: IDebugModule2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugModule2
-helpviewer_keywords: IDebugModule2 interface
+f1_keywords:
+- IDebugModule2
+helpviewer_keywords:
+- IDebugModule2 interface
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4ffa4044e6490f8de8228541787b7bf8ab80285a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

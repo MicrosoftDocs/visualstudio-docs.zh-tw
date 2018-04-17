@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 將控制項加入工作表，在執行階段，在 VSTO 增益集專案 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將控制項加入工作表，在執行階段，在 VSTO 增益集專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f32db4aa6b547f1555fbccc9cb03c00998169eaa
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>逐步解說：在執行階段於 VSTO 增益集專案中，將控制項加入工作表中
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -191,7 +188,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要深入了解如何將控制項儲存至工作表，請參閱 Excel VSTO 增益集動態控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Excel 方案](../vsto/excel-solutions.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   

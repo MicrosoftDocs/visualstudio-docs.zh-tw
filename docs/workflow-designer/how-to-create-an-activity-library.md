@@ -1,18 +1,18 @@
 ---
-title: "如何： 建立活動程式庫 |Microsoft 文件"
+title: 如何： 建立活動程式庫 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>HOW TO：建立活動程式庫
 自訂活動是用來將工作流程中特定的商務程序模型化。 中的活動程式庫範本[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]已提供可讓您建立這類自訂活動，以視覺化方式使用 Windows 工作流程設計工具。

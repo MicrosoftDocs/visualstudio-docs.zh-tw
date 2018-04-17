@@ -1,23 +1,21 @@
 ---
-title: "圖形檢視 |Microsoft 文件"
-ms.custom: 
+title: 圖形檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5ee2965fab52915ec3f9651edd3dc51b2ed1c491
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7ee4165f6aaccc08b8d1578ebec50634a07a9682
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graph-view"></a>圖形檢視
 圖表檢視會以圖形表示全域結構描述節點以及節點之間的關聯性。 請注意，圖表檢視無法讓您在設計介面上改變結構描述集的配置。 圖表檢視還包含 XML 結構描述設計工具工具列和階層連結列。  
@@ -138,5 +136,5 @@ ms.lasthandoff: 12/22/2017
   
  如果您在 XML 編輯器中變更結構描述集，圖表檢閱也會同步進行變更。 如需詳細資訊，請參閱[使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計介面](../xml-tools/xml-schema-designer-workspace.md)

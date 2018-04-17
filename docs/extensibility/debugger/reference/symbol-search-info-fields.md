@@ -1,20 +1,24 @@
 ---
-title: "SYMBOL_SEARCH_INFO_FIELDS |Microsoft 文件"
-ms.custom: 
+title: SYMBOL_SEARCH_INFO_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: SYMBOL_SEARCH_INFO_FIELDS
-helpviewer_keywords: SYMBOL_SEARCH_INFO_FIELDS enumeration
+f1_keywords:
+- SYMBOL_SEARCH_INFO_FIELDS
+helpviewer_keywords:
+- SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3d34cb1c991ccc28d724fa0652204c527147f68c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

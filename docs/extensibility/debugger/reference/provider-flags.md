@@ -1,20 +1,24 @@
 ---
-title: "PROVIDER_FLAGS |Microsoft 文件"
-ms.custom: 
+title: PROVIDER_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: PROVIDER_FLAGS
-helpviewer_keywords: PROVIDER_FLAGS enumeration
+f1_keywords:
+- PROVIDER_FLAGS
+helpviewer_keywords:
+- PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f6f2a1b57c627425ebf63c6068f358cb8be0d3c1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

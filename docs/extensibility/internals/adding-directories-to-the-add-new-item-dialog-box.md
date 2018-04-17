@@ -1,19 +1,22 @@
 ---
-title: "新增目錄，以加入新項目對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 新增目錄，以加入新項目對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Add New Item dialog box, extending
+helpviewer_keywords:
+- Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 878c06e1965b5a96510df0e1b28175972546e227
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

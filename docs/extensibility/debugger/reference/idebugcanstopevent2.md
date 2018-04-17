@@ -1,20 +1,24 @@
 ---
-title: "IDebugCanStopEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugCanStopEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCanStopEvent2
-helpviewer_keywords: IDebugBreakpointRequest2 interface
+f1_keywords:
+- IDebugCanStopEvent2
+helpviewer_keywords:
+- IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 59e601e828fd3dad1487925c649972efc7b019a9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

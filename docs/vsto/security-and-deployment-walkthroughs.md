@@ -1,12 +1,10 @@
 ---
-title: "安全性和部署的逐步解說 |Microsoft 文件"
-ms.custom: 
+title: 安全性和部署的逐步解說 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a4b8fa57868e0631e528fd73e199b5c6a017c08
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署的逐步解說
   下列主題示範如何設定安全性原則，讓您執行方案，以及如何部署 Office 方案。  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Office 方案的資料逐步解說](../vsto/data-in-office-solutions-walkthroughs.md)  
  列出逐步指示，說明如何使用您的方案中的資料。  
   
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供安裝、 專案範本，Office 主要的 interop 組件和新的 Office 程式開發功能的相關資訊的連結。  
   
  [Office 程式設計中的常見工作](../vsto/common-tasks-in-office-programming.md)  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
  提供有關您的方案中建立 Word 和 Excel 解決方案和組件的角色資訊的連結。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

@@ -1,13 +1,13 @@
 ---
-title: "全域物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 全域物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Global
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Global object
 ms.assetid: 81a40cad-9354-4e38-8ad0-83fc4257baee
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

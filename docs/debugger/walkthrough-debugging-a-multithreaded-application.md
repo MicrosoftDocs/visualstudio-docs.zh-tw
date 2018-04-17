@@ -1,13 +1,15 @@
 ---
-title: "在 偵錯工具中檢視執行緒 |Microsoft 文件"
-ms.custom: 
+title: 在 偵錯工具中檢視執行緒 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.threads
+f1_keywords:
+- vs.debug.threads
 dev_langs:
 - CSharp
 - VB
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - '@TIB'
 - debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

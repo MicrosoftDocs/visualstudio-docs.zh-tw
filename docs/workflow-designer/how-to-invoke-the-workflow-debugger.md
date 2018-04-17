@@ -1,18 +1,18 @@
 ---
-title: "如何： 叫用工作流程偵錯工具 |Microsoft 文件"
+title: 如何： 叫用工作流程偵錯工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 34c592af-f4f6-4d02-99f6-63a94698e48b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84fad1bd0daf1f7163a06683f8c41ff0257a2e4
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f4865956c0c5929c817f55bf2bfa5aea76f4ef6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>HOW TO：叫用工作流程偵錯工具
 一般而言，偵錯工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以利用下列方式啟動工作流程偵錯工具：

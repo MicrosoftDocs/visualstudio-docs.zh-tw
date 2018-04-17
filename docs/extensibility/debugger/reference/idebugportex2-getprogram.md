@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortEx2::GetProgram |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEx2::GetProgram |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEx2::GetProgram
-helpviewer_keywords: IDebugPortEx2::GetProgram
+f1_keywords:
+- IDebugPortEx2::GetProgram
+helpviewer_keywords:
+- IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0d0912ae89e95ee03fbe5ca2ec77b5504b81f713
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

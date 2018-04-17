@@ -1,19 +1,22 @@
 ---
-title: "CA2144： 透明程式碼不可以載入的組件從位元組陣列 |Microsoft 文件"
-ms.custom: 
+title: CA2144： 透明程式碼不可以載入的組件從位元組陣列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2144
+f1_keywords:
+- CA2144
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: acc2b60d0099d09f9aaba7ad77fd82c26ccd22ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

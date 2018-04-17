@@ -1,20 +1,24 @@
 ---
-title: "IDebugProcess3::Step |Microsoft 文件"
-ms.custom: 
+title: IDebugProcess3::Step |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProcess3::Step
-helpviewer_keywords: IDebugProcess3::Step
+f1_keywords:
+- IDebugProcess3::Step
+helpviewer_keywords:
+- IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 25f8816ab73ae5db402ded81ec26f108621cd405
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

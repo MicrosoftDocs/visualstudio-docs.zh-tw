@@ -1,20 +1,24 @@
 ---
-title: "UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft 文件"
-ms.custom: 
+title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: UNMANAGED_ADDRESS_THIS_RELATIVE
-helpviewer_keywords: UNMANAGED_ADDRESS_THIS_RELATIVE structure
+f1_keywords:
+- UNMANAGED_ADDRESS_THIS_RELATIVE
+helpviewer_keywords:
+- UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2b8c3088b4bfabb3eec00357d6bc1e9306bd42ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

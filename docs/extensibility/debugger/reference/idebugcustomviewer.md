@@ -1,20 +1,24 @@
 ---
-title: "IDebugCustomViewer |Microsoft 文件"
-ms.custom: 
+title: IDebugCustomViewer |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCustomViewer
-helpviewer_keywords: IDebugCustomViewer interface
+f1_keywords:
+- IDebugCustomViewer
+helpviewer_keywords:
+- IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9bbe546ffb3c6e61b251e8afbfc7fa9018ffa1b0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

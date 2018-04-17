@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortEx2::ResumeProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEx2::ResumeProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEx2::ResumeProcess
-helpviewer_keywords: IDebugPortEx2::ResumeProcess
+f1_keywords:
+- IDebugPortEx2::ResumeProcess
+helpviewer_keywords:
+- IDebugPortEx2::ResumeProcess
 ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: cbcab0922e9c8bbb8e41f7d409668890d2cae616
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

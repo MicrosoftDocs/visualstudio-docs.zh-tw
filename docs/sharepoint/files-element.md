@@ -1,13 +1,10 @@
 ---
-title: "檔案項目 |Microsoft 文件"
-ms.custom: 
+title: 檔案項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Files element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 609bd9e590362efefbabcc79fd910eef3653ff92
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d75041c1b0202eecd5769773efbcfce9c53ec4ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="files-element"></a>Files 項目
   指定要部署的 SharePoint 專案項目，例如功能項目檔案，以及相依的非 SharePoint 專案的輸出檔案。  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/10/2018
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

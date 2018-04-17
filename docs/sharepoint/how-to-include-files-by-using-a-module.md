@@ -1,12 +1,10 @@
 ---
-title: "如何： 使用模組中包含的檔案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用模組中包含的檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ebefc0420eba48fdc53e68482a96a575111e536f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6af9ef6114a3ac187c50d17f16c39c89b08370dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模組來包含檔案
   *模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 是容器，可讓您將部署到 SharePoint 的檔案，例如 ASPX 主版頁面、 文字檔或影像。  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
      將檔案複製到 SharePoint 中的指定位置。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   

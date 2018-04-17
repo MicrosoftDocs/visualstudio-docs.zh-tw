@@ -1,12 +1,10 @@
 ---
-title: "如何： 建立應用程式頁面 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立應用程式頁面 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9429f2834997ce5ad2c3359fb04c164995dd2e12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a95a7e08a52ff2b6d20f3e84f7456c37e8901ab2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-application-page"></a>如何：建立應用程式頁面
   您可以為一個或多個 SharePoint 網站建立 ASP.NET 網頁。 在 SharePoint 中，這些頁面會呼叫應用程式頁面。 不同於網站頁面上，應用程式頁面上會包含程式碼執行後置頁面。 如需詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      如果您展開 ASP.NET 網頁檔案的節點，程式碼檔案就會出現，且根據專案語言而定，其副檔名會是 .cs 或 .vb。 如何建立應用程式頁面上的端對端範例，請參閱[逐步解說： 建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint 應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
   

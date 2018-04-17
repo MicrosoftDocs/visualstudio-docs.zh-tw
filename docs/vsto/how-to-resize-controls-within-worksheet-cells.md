@@ -1,13 +1,10 @@
 ---
-title: "如何： 調整工作表儲存格內的控制項的大小 |Microsoft 文件"
-ms.custom: 
+title: 如何： 調整工作表儲存格內的控制項的大小 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b145d4435cdb295c94897424b318d328f995c340
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：在工作表儲存格中調整控制項的大小
   當您調整資料行或工作表上的資料列時，會自動包含在資料格中任何主控制項調整大小，以高度或寬度調整過大小的儲存格。 Windows Form 控制項不調整大小會自動根據預設。  
@@ -78,7 +75,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [如何： 列印時隱藏工作表上的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   

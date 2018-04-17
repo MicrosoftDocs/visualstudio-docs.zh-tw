@@ -1,20 +1,24 @@
 ---
-title: "IPropertyProxyProvider |Microsoft 文件"
-ms.custom: 
+title: IPropertyProxyProvider |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IPropertyProxyProvider
-helpviewer_keywords: IPropertyProxyProvider interface
+f1_keywords:
+- IPropertyProxyProvider
+helpviewer_keywords:
+- IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 671c80de705ffafc5a3e0040aee0de7f750e28af
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

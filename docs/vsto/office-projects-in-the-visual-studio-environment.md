@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio 環境中的 office 專案 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 環境中的 office 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>在 Visual Studio 環境下的 Office 專案
   開發 Microsoft Office 專案的方式與在 Visual Studio 中開發其他類型的專案 (例如 Windows Forms 專案) 類似。 在您建立或開啟 Office 專案時，專案項目會顯示在 [ **方案總管**] 中。 就文件層級專案而言，文件 (亦即 Word 文件或 Excel 活頁簿) 會在 Visual Studio 中開啟，並以如同視覺化設計工具的方式運作。  
@@ -121,7 +120,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="data-sources-window"></a>資料來源視窗  
  您可以使用文件層級 Office 專案中的 [ **資料來源** ] 視窗，將資料來源拖曳至您的文件，並建立繫結至資料來源的控制項。 如需詳細資訊，請參閱[控制項繫結至 Visual Studio 中的資料](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   

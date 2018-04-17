@@ -1,12 +1,13 @@
 ---
-title: "Visual Studio 中的 Node.js 使用者入門 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: 建立 Node.js 和 Express 應用程式 - Visual Studio | Microsoft Docs
+description: 在本教學課程中，您會在 Visual Studio 中建立 Node.js 和 Express 應用程式
+ms.custom: ''
+ms.date: 03/13/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: 
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -16,35 +17,65 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Visual Studio 中的 Node.js 使用者入門
-在使用 Visual Studio 進行 Node.js 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
+在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
+
+在本教學課程中，您將了解如何：
+> [!div class="checklist"]
+> * 建立 Node.js 專案
+> * 新增一些程式碼
+> * 使用 IntelliSense
+> * 執行應用程式
+> * 叫用中斷點
+
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
+
+    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+
+    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+
+* 您必須安裝 Node.js 執行階段。
+
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+
+    本教學課程使用 Node.js 8.10.0 來進行測試。
 
 ## <a name="create-a-project"></a>建立專案
 首先，您將建立 Node.js Web 應用程式專案。
 
 1. 開啟 Visual Studio 2017。  
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。   
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選取 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。   
 
-     如果您看不到 [B基本的 Azure Node.js Express 4 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。 
+     如果沒有看到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，您必須先安裝 [Node.js 開發] 工作負載。 
 
-    Visual Studio 會建立新的方案，並開啟專案。 **app.js** 專案檔會在編輯器 (左窗格) 中開啟。 如果您不熟悉 Visual Studio 方案和專案，請參閱[快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式](../ide/quickstart-nodejs.md)。
+    Visual Studio 會建立新的方案，並開啟專案。 *app.js* 專案檔會在編輯器 (左窗格) 中開啟。
 
-4. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) \(英文\) 網站安裝它。
+    - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
 
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考已安裝的執行階段。
+    - 最上層是方案，預設其名稱會與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。
+
+    - npm 節點會顯示任何已安裝的 npm 套件。 您可以使用滑鼠右鍵按一下 npm 節點，以使用對話方塊來搜尋並安裝 npm 套件。
+
+    - *app.js* 之類的專案檔會顯示在專案節點下。 *app.js* 是專案啟動檔案。
+
+1. 開啟 **npm** 節點，並確定所有必要的 npm 套件都存在。
+
+    如果遺漏任何項目 (驚嘆號圖示)，您可以用滑鼠右鍵按一下 **npm** 節點，然後選擇 [安裝遺漏的 npm 套件]。
 
 ## <a name="add-some-code"></a>新增一些程式碼
 
-1. 在方案總管 (右窗格) 中，開啟 views 資料夾，然後開啟 index.pug。
+1. 在 [方案總管] (右窗格) 中，開啟 views 資料夾，然後開啟 *index.pug*。
 
 1. 將內容取代為下列標記。
 
@@ -68,7 +99,7 @@ ms.lasthandoff: 02/19/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-1. 在 routes 資料夾中，開啟 index.js。
+1. 在 routes 資料夾中，開啟 *index.js*。
 
 1. 在 `router.get` 呼叫前面，新增下列程式碼：
 
@@ -91,7 +122,13 @@ ms.lasthandoff: 02/19/2018
     });
     ```
 
-1. 在 `data` 後面，輸入 `: get`，而 IntelliSense 將會顯示 getData 顯示。 選取 `getData`。
+    包含 `res.render` 的程式碼行中有錯誤。 我們需要修正此錯誤，才能執行應用程式。 我們將在下節修正該錯誤。
+
+## <a name="use-intellisense"></a>使用 IntelliSense
+
+1. 在 *index.js* 中，移至包含 `res.render` 的行。
+
+1. 在 `data` 字串後面鍵入 `: get`，而 IntelliSense 將會顯示 `getData` 函式。 選取 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -111,7 +148,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="set-a-breakpoint"></a>設定中斷點
 
-1. 在 index.js 中，按一下下列程式碼行前面的左裝訂邊，以設定中斷點：
+1. 在 *index.js* 中，按一下下列程式碼行前面的左裝訂邊，以設定中斷點：
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -143,14 +180,6 @@ ms.lasthandoff: 02/19/2018
 
     ![瀏覽器中執行的應用程式](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. 選取 [檢視] > [其他視窗] > [Node.js 互動式視窗]，以開啟 Node.js 互動式視窗。
-
-   ![開啟 Node.js 互動式視窗](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    互動式視窗支援您可以使用程式碼進行的所有事項，包含使用 `require()` 陳述式。 下列螢幕擷取畫面中的程式碼定義變數，並顯示 Node.js 解譯器的位置。
-
-   ![Node.js 互動式視窗](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. 關閉網頁瀏覽器。  
 
 ## <a name="optional-publish-to-azure-app-service"></a>(選擇性) 發行至 Azure App Service
@@ -175,5 +204,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="next-steps"></a>後續步驟 
 
-- 深入了解[適用於 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools/wiki)  
-- 深入了解 [Visual Studio IDE](../ide/visual-studio-ide.md)  
+在本教學課程中，您已了解如何使用 Express 建立和執行 Node.js 應用程式，以及使用偵錯工具叫用中斷點。
+
+> [!div class="nextstepaction"]
+> [適用於 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools)

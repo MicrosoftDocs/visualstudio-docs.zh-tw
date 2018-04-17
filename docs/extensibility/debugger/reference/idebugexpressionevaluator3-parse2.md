@@ -1,19 +1,22 @@
 ---
-title: "IDebugExpressionEvaluator3::Parse2 |Microsoft 文件"
-ms.custom: 
+title: IDebugExpressionEvaluator3::Parse2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugExpressionEvaluator3::Parse2
+helpviewer_keywords:
+- IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c4c5e2a62cfbe44fe6a68da703df6ff81a89d07e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

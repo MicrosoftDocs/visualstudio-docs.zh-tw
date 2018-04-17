@@ -1,11 +1,11 @@
 ---
-title: "ResolveNonMSBuildProjectOutput 工作 | Microsoft Docs"
-ms.custom: 
+title: ResolveNonMSBuildProjectOutput 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNonMSBuildProjectOutput task
 - ResolveNonMSBuildProjectOutput task [MSBuild]
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e451f301aa7a5bb4ac8f176d9ebe59fa66b0f662
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 工作
 決定非 MSBuild 專案參考的輸出檔。  
@@ -44,6 +44,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="remarks"></a>備註  
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

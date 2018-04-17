@@ -4,9 +4,9 @@ description: 使用工作負載和元件識別碼透過命令列安裝 Visual St
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
@@ -17,11 +17,11 @@ ms.technology:
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 967fdb78d603998ac992b3e3609bc607dc4ea0ff
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 46450ab0b4c98f6d8155e71433a40e61464d792b
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 工作負載和元件識別碼
 按一下下表中的版本名稱，以查看使用命令列來安裝 Visual Studio 或是在 VSIX 資訊清單中指定為相依性時，將會需要的可用工作負載和元件識別碼。

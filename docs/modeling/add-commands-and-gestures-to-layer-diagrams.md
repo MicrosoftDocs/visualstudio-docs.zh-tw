@@ -1,24 +1,22 @@
 ---
-title: "將命令和軌跡加入至相依性圖表 |Microsoft 文件"
-ms.custom: 
+title: 將命令和軌跡加入至相依性圖表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 276098a2c288f98441e8a111ed8807e22d5cfda2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡加入至相依性圖表
 您可以定義內容功能表命令和軌跡處理常式，在 Visual Studio 中的相依性圖表。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。  
@@ -262,6 +260,6 @@ namespace MyLayerExtensions // change to your preference
 -   針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將項目從方案總管 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。  
   
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [將自訂架構驗證加入至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

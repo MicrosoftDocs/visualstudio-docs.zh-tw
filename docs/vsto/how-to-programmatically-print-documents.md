@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式列印文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式列印文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9aa3e4b21aedff239aabde616b12a4f59281ec0a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a5364bd2cf0f0ea6d5e7ceb7c8a427c5aea301d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-print-documents"></a>如何：以程式設計方式列印文件
   您可以將整個 Microsoft Office Word 文件，或文件的一部分，列印到預設印表機。  
@@ -60,7 +59,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

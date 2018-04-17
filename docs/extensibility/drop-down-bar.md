@@ -1,19 +1,22 @@
 ---
-title: "下拉式清單列 |Microsoft 文件"
-ms.custom: 
+title: 下拉式清單列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - drop-down bar
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

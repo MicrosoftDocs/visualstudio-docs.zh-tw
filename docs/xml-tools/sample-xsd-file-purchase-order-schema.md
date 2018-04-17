@@ -1,23 +1,21 @@
 ---
-title: "範例 XSD 檔案： 採購單結構描述 |Microsoft 文件"
-ms.custom: 
+title: 範例 XSD 檔案： 採購單結構描述 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db428de03bc30a447d6f20f18dfbc2a21db06e48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daf711a2f31e4df6ebe8831d83bb067c3d30eb7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>範例 XSD 檔案：採購單結構描述
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是採購單結構描述。  

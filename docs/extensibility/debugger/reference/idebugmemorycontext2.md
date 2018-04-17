@@ -1,20 +1,24 @@
 ---
-title: "IDebugMemoryContext2 |Microsoft 文件"
-ms.custom: 
+title: IDebugMemoryContext2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMemoryContext2
-helpviewer_keywords: IDebugMemoryContext2 interface
+f1_keywords:
+- IDebugMemoryContext2
+helpviewer_keywords:
+- IDebugMemoryContext2 interface
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d3219c5618fbb59438ec6d7ad0aa54e2fbbb1213
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

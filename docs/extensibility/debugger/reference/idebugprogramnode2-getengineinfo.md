@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramNode2::GetEngineInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramNode2::GetEngineInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramNode2::GetEngineInfo
-helpviewer_keywords: IDebugProgramNode2::GetEngineInfo
+f1_keywords:
+- IDebugProgramNode2::GetEngineInfo
+helpviewer_keywords:
+- IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 02eaa45746b50da76702e724c700bac166f03017
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,21 +1,19 @@
 ---
-title: "自訂複製行為 |Microsoft 文件"
-ms.custom: 
+title: 自訂複製行為 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c46291a2827a673eaf597a8bb9fa738c3ab79b0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。  
@@ -216,7 +214,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **可讓使用者拖曳項目。**  
  請參閱[如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
-##  <a name="customizeLinks"></a>自訂連結複製行為  
+##  <a name="customizeLinks"></a> 自訂連結複製行為  
  當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 DSL 定義中，選取 [在關聯性和設定屬性] 視窗中的某一端的角色**傳播複製**值。  
   
  ![網域角色的 propagates Copy 屬性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  

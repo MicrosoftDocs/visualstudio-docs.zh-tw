@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 將文字插入文件從執行窗格 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將文字插入文件從執行窗格 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>逐步解說：從執行窗格將文字插入文件
   本逐步解說示範如何在 Microsoft Office Word 文件中建立執行窗格。 [動作] 窗格包含收集輸入，然後將文字傳送至文件的兩個控制項。  
@@ -114,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
     |屬性|值|  
     |--------------|-----------|  
-    |**名稱**|**getName**|  
+    |**名稱**|**GetName**|  
     |**Size**|**130, 20**|  
   
 5.  新增第二個**標籤**控制項加入執行窗格控制項，並變更**文字**屬性**位址**。  
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
     |屬性|值|  
     |--------------|-----------|  
-    |**名稱**|**getAddress**|  
+    |**名稱**|**GetAddress**|  
     |**接受傳回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  
@@ -182,7 +181,7 @@ ms.lasthandoff: 01/10/2018
   
 -   資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱[逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [如何： 將執行窗格加入至 Excel 活頁簿](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   

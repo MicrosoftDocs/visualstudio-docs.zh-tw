@@ -1,5 +1,5 @@
 ---
-title: "TransactedReceiveScope 活動設計工具 |Microsoft 文件"
+title: TransactedReceiveScope 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76dfb7002c200f0dc920c4c3aae20b1d97faa6e2
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 71d825f8f68606cd4b28fe7da34106dd1a642e75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活動設計工具
 **TransactedReceiveScope**設計工具會用來建立及設定<xref:System.ServiceModel.Activities.TransactedReceiveScope>活動。
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/12/2018
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [接收](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [傳送](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

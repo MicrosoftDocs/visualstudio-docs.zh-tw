@@ -1,20 +1,24 @@
 ---
-title: "IDebugCoreServer3::GetConnectionProtocol |Microsoft 文件"
-ms.custom: 
+title: IDebugCoreServer3::GetConnectionProtocol |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCoreServer3::GetConnectionProtocol
-helpviewer_keywords: IDebugCoreServer3::GetConnectionProtocol
+f1_keywords:
+- IDebugCoreServer3::GetConnectionProtocol
+helpviewer_keywords:
+- IDebugCoreServer3::GetConnectionProtocol
 ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dfa1b8c335d871c83aaf27e3929dd70e981450da
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 在 Outlook 中設計表單區域匯入 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 Outlook 中設計表單區域匯入 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>逐步解說：匯入在 Outlook 中設計的表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈]  將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。  
@@ -257,7 +254,7 @@ ms.lasthandoff: 01/10/2018
   
 -   若要深入了解如何將自訂工作窗格加入 Outlook，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   

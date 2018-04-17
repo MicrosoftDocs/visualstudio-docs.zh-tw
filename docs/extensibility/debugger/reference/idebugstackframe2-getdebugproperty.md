@@ -1,20 +1,24 @@
 ---
-title: "IDebugStackFrame2::GetDebugProperty |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame2::GetDebugProperty |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugStackFrame2::GetDebugProperty
-helpviewer_keywords: IDebugStackFrame2::GetDebugProperty
+f1_keywords:
+- IDebugStackFrame2::GetDebugProperty
+helpviewer_keywords:
+- IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4d4e26c0008cb52fd5bafda45e33dbbe9b395237
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

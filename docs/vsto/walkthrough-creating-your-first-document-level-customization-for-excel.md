@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 Excel 的第一個文件層級自訂 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 Excel 的第一個文件層級自訂 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>逐步解說：建立 Excel 的第一個文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的文件層級自訂。 只有在特定的活頁簿開啟時，才能使用您在這種方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何活頁簿開啟時顯示新功能區索引標籤。  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  選取**建立新的文件**，然後按一下**確定**。  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstWorkbookCustomization**專案，然後將下列檔案加入專案。  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立**FirstWorkbookCustomization**專案，然後將下列檔案加入專案。  
   
     -   *FirstWorkbookCustomization*.xlsx： 代表專案中的 Excel 活頁簿。 包含所有工作表和圖表。  
   
@@ -169,8 +168,8 @@ ms.lasthandoff: 01/10/2018
   
 -   部署適用於 Excel 的文件層級自訂：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+## <a name="see-also"></a>另請參閱  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 方案](../vsto/excel-solutions.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   

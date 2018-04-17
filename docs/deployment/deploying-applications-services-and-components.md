@@ -1,12 +1,14 @@
 ---
-title: "部署概觀-Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 部署概觀-Visual Studio |Microsoft 文件
+description: 深入了解您的選項，以部署應用程式，從 Visual Studio。
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +23,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>在 Visual Studio 中的部署概觀
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 第一次查看 Visual Studio 中的部署
 
 透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 （許多應用程式類型支援此處未描述其他部署工具命令列部署或 NuGet 等）。
 
@@ -40,7 +43,7 @@ ms.lasthandoff: 01/10/2018
 
 ### <a name="deploy-to-local-folder"></a>將部署到本機資料夾
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 使用發行工具部署到本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 使用發行工具來部署至本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇發行](../deployment/media/quickstart-publish.png)
 

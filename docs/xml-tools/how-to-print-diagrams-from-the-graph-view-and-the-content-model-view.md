@@ -1,23 +1,21 @@
 ---
-title: "如何： 從圖表檢視和內容模型檢視列印圖表 |Microsoft 文件"
-ms.custom: 
+title: 如何： 從圖表檢視和內容模型檢視列印圖表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c88f2efd3e7494fdec5d0cfaee8ecb492c43603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 86f36e09e691acd0a94a27f1cc7d4b510e2b1dbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從圖表檢視和內容模型檢視列印圖表
 本主題描述如何從圖表檢視或內容模型檢視列印圖表。  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  使用 XPS 檢視器列印儲存在 XPS 檔中的影像。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [圖表檢視](../xml-tools/graph-view.md)   
  [內容模型檢視](../xml-tools/content-model-view.md)   
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

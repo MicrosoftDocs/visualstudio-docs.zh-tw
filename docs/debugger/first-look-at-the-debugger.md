@@ -1,32 +1,32 @@
 ---
-title: "開始使用 Visual Studio 中偵錯工具 |Microsoft 文件"
+title: 開始使用 Visual Studio 中偵錯工具 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>開始使用 Visual Studio 偵錯工具
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 這裡我們會示範一個簡單的 C# 程式，偵錯，但您可以將相同的步驟套用至 c + + 及 JavaScript 等其他語言中的程式碼。
 
 若要觀看視訊，其中顯示類似的功能，請參閱[偵錯工具使用者入門](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)。
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>基本的 C# 專案進行偵錯  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的 C# 專案進行偵錯  
  讓我們從簡單 C# 主控台應用程式開始 (**檔案 > 新增 > 專案**，然後選取**Visual C#**然後**主控台應用程式**)。 如果您從未使用過 Visual Studio 過，請參閱[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只要將 1 加入至整數變數 10 次，並會列印到主控台的結果：  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  如需有關中斷點的詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
   
-##  <a name="BKMK_Inspect_Variables"></a>檢查變數  
+##  <a name="BKMK_Inspect_Variables"></a> 檢查變數  
  偵錯通常包括找出不包含您預期在特定時間點值的變數。 我們將示範一些您可以檢查變數的方式。  
   
  開始再次偵錯。 在 `Console.WriteLine` 程式碼執行之前停止執行。 您可以讓它繼續逐步執行 (按一下**偵錯 > 不進入函式**或**F10**)。 在此情況下您可能已選擇**逐步執行**(**F11**) 並收到相同的結果，我們將在稍後說明的差異。 方法中最後一個大括號所括起的行，應該會轉為黃色。 檢視主控台視窗 您應該會看到**10**。  

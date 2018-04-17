@@ -1,20 +1,24 @@
 ---
-title: "IDebugObject2::IsEncOutdated |Microsoft 文件"
-ms.custom: 
+title: IDebugObject2::IsEncOutdated |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugObject2::IsEncOutdated
-helpviewer_keywords: IDebugObject2::IsEncOutdated method
+f1_keywords:
+- IDebugObject2::IsEncOutdated
+helpviewer_keywords:
+- IDebugObject2::IsEncOutdated method
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 757e533f855ab1bc276e484d46d6866b0dd6ca40
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

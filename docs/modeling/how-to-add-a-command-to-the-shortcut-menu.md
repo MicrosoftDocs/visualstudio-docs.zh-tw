@@ -1,24 +1,22 @@
 ---
-title: "如何： 新增命令至捷徑功能表 |Microsoft 文件"
-ms.custom: 
+title: 如何： 新增命令至捷徑功能表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2317f41b3361bdffc0a9549ab920c0b3509b2d64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。  
@@ -51,7 +49,7 @@ ms.lasthandoff: 02/09/2018
   
  否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱[使用 MEF 擴充 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
-##  <a name="VSCT"></a>宣告中 Commands.Vsct 命令  
+##  <a name="VSCT"></a> 宣告中 Commands.Vsct 命令  
  功能表命令在 DslPackage\Commands.vsct 中宣告。 這些定義指定功能表項目的標籤以及它們在功能表上的顯示位置。  
   
  從數個位於目錄中的.h 檔案的檔案進行編輯，Commands.vsct，匯入的定義*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。它還包括從 DSL 定義產生的 GeneratedVsct.vsct。  
@@ -131,7 +129,7 @@ ms.lasthandoff: 02/09/2018
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>更新封裝中的版本 Package.tt  
+##  <a name="version"></a> 更新封裝中的版本 Package.tt  
  每當您加入或變更命令時，請先更新套用到套件類別的 `version` 之 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 參數，然後再發行網域指定語言的新版本。  
   
  由於套件類別定義於產生的檔案，因此請更新文字範本檔案中產生 Package.cs 檔的屬性。  
@@ -146,7 +144,7 @@ ms.lasthandoff: 02/09/2018
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>定義命令行為  
+##  <a name="CommandSet"></a> 定義命令行為  
  您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
   
  命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
@@ -224,7 +222,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。  
   
--   `this.IsDiagramSelected()` - `true`如果使用者按一下圖表的空白部分。  
+-   `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
@@ -358,7 +356,7 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 -   確定已解除安裝舊版套件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)   

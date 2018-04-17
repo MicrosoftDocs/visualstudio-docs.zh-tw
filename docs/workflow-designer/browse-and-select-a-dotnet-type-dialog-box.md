@@ -1,5 +1,5 @@
 ---
-title: "瀏覽並選取.NET 類型對話方塊 |Microsoft 文件"
+title: 瀏覽並選取.NET 類型對話方塊 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33e2ba5ff213c2bdd2684d72f411b172c0437c99
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
 

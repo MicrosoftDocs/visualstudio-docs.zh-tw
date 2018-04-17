@@ -1,10 +1,8 @@
 ---
-title: "使用相依性圖表驗證程式碼 |Microsoft 文件"
-ms.custom: 
+title: 使用相依性圖表驗證程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, validating
 - validation, dependency diagrams
@@ -19,15 +17,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd799e5114c64b075592ddbe35670907fc81fa9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -92,21 +90,21 @@ ms.lasthandoff: 02/09/2018
 
 * 加入新的相依性驗證專案觸發專案更新。 
   
-##  <a name="SupportsValidation"></a>查看項目是否支援驗證  
+##  <a name="SupportsValidation"></a> 查看項目是否支援驗證  
  您可以將圖層連結到網站、Office 文件、純文字檔以及跨多個應用程式共用之專案中的檔案，不過，驗證流程不包含這些檔案。 對於連結至個別圖層之專案或組件的參考，如果這些圖層之間沒有任何相依性，則不會出現驗證錯誤。 除非程式碼使用這些參考，否則不會考量此類參考的相依性。  
   
 1.  相依性圖表中，選取一或多個圖層，以滑鼠右鍵按一下您的選擇，然後按一下**檢視連結**。  
   
 2.  在**圖層總管**，看看**支援驗證**資料行。 如果值為 false，則這個項目不支援驗證。  
   
-##  <a name="IncludeReferences"></a>包含其他.NET 組件和專案來進行驗證  
+##  <a name="IncludeReferences"></a> 包含其他.NET 組件和專案來進行驗證  
  當您將項目拖曳到相依性圖表時，參考對應的.NET 組件或專案會自動加入至**圖層參考**模型專案中的資料夾。 這個資料夾包含組件的參考以及驗證期間分析的專案。 您可以包含其他.NET 組件和專案來進行驗證，而不用手動拖曳到相依性圖表。  
   
 1.  在**方案總管 中**，以滑鼠右鍵按一下模型專案或**圖層參考**資料夾，然後再按一下**加入參考**。  
   
 2.  在**加入參考**對話方塊中，選取的組件或專案，然後按一下**確定**。  
   
-##  <a name="ValidateManually"></a>手動驗證程式碼  
+##  <a name="ValidateManually"></a> 手動驗證程式碼  
  如果您有已連結至方案項目開啟相依性圖表，您可以執行**驗證**從圖表的捷徑命令。 您也可以使用命令提示字元執行**msbuild**命令搭配**/p:ValidateArchitecture**自訂屬性設定為**True**。 例如，在您變更程式碼時定期執行圖層驗證，以便早期攔截相依性衝突。  
   
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>若要從開啟的相依性圖表驗證程式碼   
@@ -121,7 +119,7 @@ ms.lasthandoff: 02/09/2018
 2.  若要檢視每個錯誤的來源，請按兩下中的錯誤**錯誤清單**視窗。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能會顯示 code map，而不是錯誤的來源。 會發生這種情況是當程式碼會具有相依性的相依性圖表中，未指定的組件，或是程式碼遺失相依性圖表所指定相依性。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可能會顯示 Code Map，而非錯誤來源。 會發生這種情況是當程式碼會具有相依性的相依性圖表中，未指定的組件，或是程式碼遺失相依性圖表所指定相依性。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
 3.  若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
   
@@ -163,7 +161,7 @@ ms.lasthandoff: 02/09/2018
   
  如需有關驗證錯誤的詳細資訊，請參閱[了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。  
   
-###  <a name="ManageErrors"></a>管理驗證錯誤  
+###  <a name="ManageErrors"></a> 管理驗證錯誤  
  在開發過程中，您可以隱藏驗證期間已報告過的某些衝突。 例如，您可能會想要隱藏已經處理的錯誤，或是與特定情節無關的錯誤。 當您隱藏錯誤時，最好在 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中記錄工作項目。  
   
 > [!WARNING]
@@ -182,7 +180,7 @@ ms.lasthandoff: 02/09/2018
 |還原所有隱藏的錯誤**錯誤清單**視窗|中的任何位置按一下滑鼠右鍵**錯誤清單**] 視窗中，指向**管理驗證錯誤**，然後按一下 [**顯示所有隱藏的錯誤**。|  
 |隱藏所有隱藏的錯誤**錯誤清單**視窗|中的任何位置按一下滑鼠右鍵**錯誤清單**] 視窗中，指向**管理驗證錯誤**，然後按一下 [**隱藏所有隱藏的錯誤**。|  
   
-##  <a name="ValidateAuto"></a>自動驗證程式碼  
+##  <a name="ValidateAuto"></a> 自動驗證程式碼  
  您可以在每次執行本機組建時執行圖層驗證。 如果您的小組使用 Team Foundation Build，可以閘道簽入來執行圖層驗證，其中您可以藉由建立自訂 MSBuild 工作來指定，以及使用組建報告收集驗證錯誤。 若要建立閘道的簽入建置，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本機組建執行期間自動驗證程式碼  
@@ -229,14 +227,14 @@ ms.lasthandoff: 02/09/2018
   
 -   [監視建置進度的執行](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a>疑難排解圖層驗證問題  
+##  <a name="TroubleshootingValidation"></a> 疑難排解圖層驗證問題  
  下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱[了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。  
   
 |**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
 |發生非預期的驗證錯誤。|驗證不適用於相依性圖表，會複製從方案總管 中的其他相依性圖表，以及屬於相同的模型專案中。 相依性圖表，如此一來會複製包含相同的參考與原始的相依性圖表。|將新的相依性圖表加入至模型專案。<br /><br /> 將來源的相依性圖表中的項目複製到新的圖表。|  
   
-##  <a name="UnderstandingValidationErrors"></a>了解並解決圖層驗證錯誤  
+##  <a name="UnderstandingValidationErrors"></a> 了解並解決圖層驗證錯誤  
  當您驗證相依性圖表的程式碼時，程式碼設計發生衝突時，也會發生驗證錯誤。 例如，下列條件可能造成圖層驗證發生錯誤：  
   
 -   成品指派給錯誤的圖層。 在此情況下，請移動成品。  
@@ -264,6 +262,6 @@ ms.lasthandoff: 02/09/2018
 |DV9001:**架構分析發現內部錯誤**|結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。|如需詳細資訊，請參閱建置事件記錄檔或輸出視窗。|  
 
  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
  [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   

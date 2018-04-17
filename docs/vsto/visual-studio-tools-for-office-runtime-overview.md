@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio Tools for Office Runtime 概觀 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio Tools for Office Runtime 概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office Runtime 概觀
   若要在 Visual Studio 中執行使用 Microsoft Office 開發人員工具所建立的方案，則必須先在使用者電腦上安裝 Visual Studio 2010 Tools for Office Runtime。 如需詳細資訊，請參閱 [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office Runtime 包含兩個主要元件：  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="repairing-the-visual-studio-2010-tools-for-office-runtime"></a>準備 Visual Studio 2010 Tools for Office Runtime  
  如果您需要修復此執行階段，請在 [控制台] 開啟 [程式和功能]  或 [新增或移除程式]  ，選取程式清單中的 [Microsoft Visual Studio 2010 Tools for Office Runtime]  ，然後按一下 [解除安裝] 。 執行的安裝程式可讓您修復此執行階段。 如果您按一下 [ **變更**]，則系統不會提供修復執行階段的選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [中的 Visual Studio Tools for Office Runtime 的組件](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   

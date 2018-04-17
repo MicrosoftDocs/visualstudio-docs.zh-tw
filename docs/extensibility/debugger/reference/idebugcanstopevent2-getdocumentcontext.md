@@ -1,20 +1,24 @@
 ---
-title: "IDebugCanStopEvent2::GetDocumentContext |Microsoft 文件"
-ms.custom: 
+title: IDebugCanStopEvent2::GetDocumentContext |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCanStopEvent2::GetDocumentContext
-helpviewer_keywords: IDebugCanStopEvent2::GetDocumentContext
+f1_keywords:
+- IDebugCanStopEvent2::GetDocumentContext
+helpviewer_keywords:
+- IDebugCanStopEvent2::GetDocumentContext
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9d3f906c1dc1c019040f314204d3a4a423e1b8bf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

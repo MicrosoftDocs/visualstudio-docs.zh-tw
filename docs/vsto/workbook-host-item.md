@@ -1,13 +1,10 @@
 ---
-title: "Workbook 主項目 |Microsoft 文件"
-ms.custom: 
+title: Workbook 主項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c1e6de8313b3e7b94ac88627ef3cdc463c92906
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a5cf1281e084a5ffc51f06b35e3b1c68b2745c43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workbook-host-item"></a>Workbook 主項目
   <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Workbook> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件相同的所有屬性、方法和事件之外，也會提供其他功能。  
@@ -59,10 +56,10 @@ ms.lasthandoff: 01/10/2018
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 增益集專案中的 Workbook 主項目  
  在 VSTO 增益集專案中，您可以在執行階段為使用 Excel 開啟的任何活頁簿產生 <xref:Microsoft.Office.Tools.Excel.Workbook> 主項目。 若要產生<xref:Microsoft.Office.Tools.Excel.Workbook>主項目，請使用 GetVstoObject 方法。 如需詳細資訊，請參閱 [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

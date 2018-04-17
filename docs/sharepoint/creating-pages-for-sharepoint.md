@@ -1,12 +1,10 @@
 ---
-title: "建立 SharePoint 的網頁 |Microsoft 文件"
-ms.custom: 
+title: 建立 SharePoint 的網頁 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - page layouts[SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4b65c601d36dd04d95466fc8f8dff7a95b70c44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f484c0501cbeede5600a4831d3d872ac81b3b5c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-pages-for-sharepoint"></a>建立 SharePoint 的網頁
   您可以建立應用程式頁面、 網站頁面、 主版頁面和 SharePoint 網站的頁面配置。  

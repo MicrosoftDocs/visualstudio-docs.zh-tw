@@ -1,25 +1,29 @@
 ---
-title: "IDebugPortEvents2 |Microsoft 文件"
-ms.custom: 
+title: IDebugPortEvents2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortEvents2
-helpviewer_keywords: IDebugPortEvents2 interface
+f1_keywords:
+- IDebugPortEvents2
+helpviewer_keywords:
+- IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 這個介面通知程序和程式建立和解構的特定連接埠上接聽的程式 （通常是工作階段偵錯管理員 [SDM] 或偵錯引擎）。 這項資訊可以用來呈現的程序和程式的連接埠上執行的即時檢視。  
@@ -44,7 +48,7 @@ IDebugPortEvents2 : IUnknown
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|傳送說明建立和解構的處理序和程式的連接埠上的事件。|  
   
 ## <a name="remarks"></a>備註  
- `IDebugPortEvents2`也會使用 SDM 偵錯已經在偵錯處理序中執行的程式。  
+ `IDebugPortEvents2` 也會使用 SDM 偵錯已經在偵錯處理序中執行的程式。  
   
  這個介面會將連接埠事件給 SDM。  
   
@@ -53,8 +57,8 @@ IDebugPortEvents2 : IUnknown
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -1,19 +1,22 @@
 ---
-title: "附加至程式直接 |Microsoft 文件"
-ms.custom: 
+title: 附加至程式直接 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debug engines, attaching to programs
+helpviewer_keywords:
+- debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

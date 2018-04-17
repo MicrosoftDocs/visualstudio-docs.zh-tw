@@ -1,21 +1,19 @@
 ---
-title: "建立 Windows Form 特定領域語言 |Microsoft 文件"
-ms.custom: 
+title: 建立 Windows Form 特定領域語言 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 23fe0d582f92d5025049974ccd64357203e4845a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示的特定領域語言 (DSL) 模型，而不是使用 DSL 圖表狀態。 本主題會引導您繫結至 DSL 的 Windows Form 中，使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK。  
@@ -53,9 +51,9 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
   
  主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，請注意下列有關 DSL 方案的重點：  
   
--   `DslDefinition.dsl`不包含任何圖表項目。 這是因為您不會使用 DSL 圖表來檢視此 DSL 的執行個體模型。 相反地，您會將 Windows Form 繫結至模型，並在表單上的項目會顯示模型。  
+-   `DslDefinition.dsl` 不包含任何圖表項目。 這是因為您不會使用 DSL 圖表來檢視此 DSL 的執行個體模型。 相反地，您會將 Windows Form 繫結至模型，並在表單上的項目會顯示模型。  
   
--   除了`Dsl`和`DslPackage`專案的方案包含名為的第三個專案`UI.` **UI**專案包含 Windows Form 控制項的定義。 `DslPackage`取決於`UI`，和`UI`取決於`Dsl`。  
+-   除了`Dsl`和`DslPackage`專案的方案包含名為的第三個專案`UI.` **UI**專案包含 Windows Form 控制項的定義。 `DslPackage` 取決於`UI`，和`UI`取決於`Dsl`。  
   
 -   在`DslPackage`專案，`UI\DocView.cs`包含顯示 Windows Form 控制項中所定義的程式碼`UI`專案。  
   
@@ -88,9 +86,9 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
   
 4.  使用**名為網域類別**工具來建立下列網域類別：  
   
-    -   `Field`-為提供此其他網域屬性名為`Size`。  
+    -   `Field` -為提供此其他網域屬性名為`Size`。  
   
-    -   `Animal`-在 [屬性] 視窗中，設定**繼承修飾詞**至**抽象**。  
+    -   `Animal` -在 [屬性] 視窗中，設定**繼承修飾詞**至**抽象**。  
   
 5.  使用**網域類別**工具來建立下列類別：  
   
@@ -223,7 +221,7 @@ DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
   
 3.  在**FarmApp 總管**，開啟捷徑功能表上**伺服陣列**根節點，然後選擇 **新增新 Goat**。  
   
-     `Goat1`會出現在**動物**檢視。  
+     `Goat1` 會出現在**動物**檢視。  
   
     > [!WARNING]
     >  您必須使用捷徑功能表上**伺服陣列** 節點，不**動物**節點。  
@@ -326,7 +324,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
  因此我們建議您改用<xref:Microsoft.VisualStudio.Modeling.ElementOperations>建立新的項目。 如需詳細資訊，請參閱[自訂項目建立及移動](../modeling/customizing-element-creation-and-movement.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

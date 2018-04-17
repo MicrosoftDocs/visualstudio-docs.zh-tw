@@ -1,5 +1,5 @@
 ---
-title: "Assign 活動設計工具 |Microsoft 文件"
+title: Assign 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 875a05866a85084b58236ab6bf918201d1848b1d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e5992420bb83323525e0b36bbc7d3b383ca9a3a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 **指派**活動設計工具用來建立及設定<xref:System.Activities.Statements.Assign>活動。
@@ -39,6 +39,6 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>另請參閱
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [Delay](../workflow-designer/delay-activity-designer.md)
+- [延遲](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

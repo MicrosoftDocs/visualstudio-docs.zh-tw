@@ -1,18 +1,18 @@
 ---
-title: "使用 *.runsettings* 檔案在 Visual Studio 中設定單元測試 | Microsoft Docs"
+title: 使用 .runsettings 檔案在 Visual Studio 中設定單元測試 | Microsoft Docs
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ ms.lasthandoff: 03/08/2018
 
 測試執行時，視訊資料收集器會擷取螢幕錄製。 這份錄製可用於 UI 測試的疑難排解。 視訊資料收集器在 **Visual Studio 2017 15.5** 版及更新版本中提供。
 
-若要自訂任何其他類型的診斷資料配接器，您必須使用測試設定檔。 如需詳細資訊，請參閱[指定 Visual Studio 測試的測試設定](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)。
+若要自訂任何其他類型的診斷資料配接器，您必須使用[測試設定檔](../test/collect-diagnostic-information-using-test-settings.md)。
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>另請參閱
 
-[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)
+- [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)

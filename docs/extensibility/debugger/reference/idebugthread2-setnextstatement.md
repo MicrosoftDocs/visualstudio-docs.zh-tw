@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::SetNextStatement |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::SetNextStatement |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::SetNextStatement
-helpviewer_keywords: IDebugThread2::SetNextStatement
+f1_keywords:
+- IDebugThread2::SetNextStatement
+helpviewer_keywords:
+- IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6c70c1c1d3e525ccc676554d3b40df224423e313
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

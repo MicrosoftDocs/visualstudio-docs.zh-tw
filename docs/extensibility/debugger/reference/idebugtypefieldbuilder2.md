@@ -1,19 +1,22 @@
 ---
-title: "IDebugTypeFieldBuilder2 |Microsoft 文件"
-ms.custom: 
+title: IDebugTypeFieldBuilder2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugTypeFieldBuilder2 interface
+helpviewer_keywords:
+- IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0f671087c5d7a97340ff47cee2954426f35a7170
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

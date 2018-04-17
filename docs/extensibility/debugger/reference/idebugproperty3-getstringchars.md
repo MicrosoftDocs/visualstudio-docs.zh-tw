@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty3::GetStringChars |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty3::GetStringChars |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty3::GetStringChars
-helpviewer_keywords: IDebugProperty3::GetStringChars
+f1_keywords:
+- IDebugProperty3::GetStringChars
+helpviewer_keywords:
+- IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 6af447a8d22881ebb0b970863aaa5ede7a7ddf26
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

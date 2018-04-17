@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式建立範圍時排除段落標記 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式建立範圍時排除段落標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - paragraphs, controlling structure
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 37af64898686da4f09730f5b46fbbfa0936ddd0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以程式設計方式在建立範圍時排除段落標記
   每當您根據段落建立 <xref:Microsoft.Office.Interop.Word.Range> 物件時，所有的非列印字元 (如段落標記) 都會包含在範圍中。 您可以將文字從來源段落插入目的段落。 如果您不想將目的段落分割成個別段落，則必須先移除來源段落的段落標記。 此外，因為段落格式化資訊儲存在段落標記內，所以在將範圍插入現有段落時，您可能不想包含該資訊。  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [如何： 以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   

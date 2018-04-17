@@ -1,12 +1,10 @@
 ---
-title: "擴充物件自動化 Excel 使用 |Microsoft 文件"
-ms.custom: 
+title: 擴充物件自動化 Excel 使用 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 85f1d3b869d98f12bff1c7bb3ca1be5d2ea0a090
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 63c200a3d3a6a64dfc100cc9365f142a8dddae4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>使用擴充物件自動化 Excel
   在 Visual Studio 中開發 Excel 方案時，您可以在方案中使用 *「主項目」* (host items) 和 *「主控制項」*(host controls)。 這些物件可以擴充 Excel 物件模型 (也就是 Excel 的主要 Interop 組件公開的物件模型) 中某些常用的物件，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些擴充物件的行為與它們所根據的 Excel 物件一樣，但是這些物件會將額外的功能 (例如新事件和資料繫結功能) 加入物件中 。  
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [XMLMappedRange 控制項](../vsto/xmlmappedrange-control.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 填入 ListObject 控制項的資料](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

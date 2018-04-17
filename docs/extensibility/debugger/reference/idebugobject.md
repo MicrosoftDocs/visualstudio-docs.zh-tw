@@ -1,20 +1,24 @@
 ---
-title: "IDebugObject |Microsoft 文件"
-ms.custom: 
+title: IDebugObject |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugObject
-helpviewer_keywords: IDebugObject interface
+f1_keywords:
+- IDebugObject
+helpviewer_keywords:
+- IDebugObject interface
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1122b427b6678d7f097d424aca0420642fecdbb2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

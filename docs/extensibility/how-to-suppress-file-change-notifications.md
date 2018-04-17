@@ -1,19 +1,22 @@
 ---
-title: "如何： 隱藏檔案變更通知 |Microsoft 文件"
-ms.custom: 
+title: 如何： 隱藏檔案變更通知 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - suppress file change notification
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 209006129bcb2cfaaf88233768df1d9597cd09a5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

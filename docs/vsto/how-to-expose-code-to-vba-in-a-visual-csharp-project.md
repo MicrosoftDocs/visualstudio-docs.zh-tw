@@ -1,13 +1,10 @@
 ---
-title: "如何： 公開程式碼給 Visual C# 專案中的 VBA |Microsoft 文件"
-ms.custom: 
+title: 如何： 公開程式碼給 Visual C# 專案中的 VBA |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7564d64763549f2fefe8e0a8b9813fdef9a16b6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：公開程式碼給 Visual C# 專案中的 VBA
   如果您想要與彼此互動的程式碼的兩個類型，您可以公開的 Visual C# 專案給 Visual Basic for Applications (VBA) 程式碼中的程式碼。  
@@ -37,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>Visual C# 專案中公開程式碼  
  若要啟用 Visual C# 專案中呼叫程式碼的 VBA 程式碼，修改的程式碼，所以為 COM 可見，並將**ReferenceAssemblyFromVbaProject**屬性**True**設計工具中。  
   
- 如需示範如何從 VBA 呼叫 Visual C# 專案中的一種方法的逐步解說，請參閱[逐步解說： 從 VBA 在 Visual C# 35; 呼叫的程式碼專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
+ 如需示範如何從 VBA 呼叫 Visual C# 專案中的一種方法的逐步解說，請參閱[逐步解說： 呼叫 Visual C 中的 VBA 程式碼&#35;專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>若要公開給 VBA 的 Visual C# 專案中的程式碼  
   
@@ -105,11 +102,11 @@ ms.lasthandoff: 02/09/2018
   
 12. 建置專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [逐步解說： 呼叫 Visual C# 35; 中的 VBA 程式碼專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
+ [逐步解說： 從 Visual C 中的 VBA 呼叫程式碼&#35;專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [如何：公開程式碼給 Visual Basic 專案中的 VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

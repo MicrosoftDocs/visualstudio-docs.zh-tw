@@ -1,12 +1,10 @@
 ---
-title: "保護 Office 方案 |Microsoft 文件"
-ms.custom: 
+title: 保護 Office 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>保護 Office 方案
   Office 方案的安全性模型牽涉到數種技術： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限制的網站區域中 信任中心。 下列各節說明不同安全性功能的運作方式：  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>授與信任給 Office 方案  
+##  <a name="GrantingTrustToSolutions"></a> 授與信任給 Office 方案  
  授與信任給 Office 方案表示修改每位終端使用者的安全性原則，以根據下列的辨識項信任 Office 方案：  
   
 -   用來簽署部署資訊清單的憑證。  
@@ -50,16 +49,16 @@ ms.lasthandoff: 01/10/2018
   
  如需詳細資訊，請參閱[授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
   
-##  <a name="GrantingTrustToDocuments"></a>授與信任給文件  
+##  <a name="GrantingTrustToDocuments"></a> 授與信任給文件  
  文件層級自訂要求文件必須在指定為信任位置的目錄中。 如需詳細資訊，請參閱 [Granting Trust to Documents](../vsto/granting-trust-to-documents.md)。  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>使用 Windows 安裝程式時，授與信任  
+##  <a name="GrantingTrustWindowsInstaller"></a> 使用 Windows 安裝程式時，授與信任  
  您可以使用 Windows 安裝程式建立 MSI 檔案，將 Office 方案安裝到 Program Files 目錄中，這需要系統管理權限。 對於 Program Files 目錄中的 Office 方案，Visual Studio 2010 Tools for Office Runtime 會考慮要信任這些 Office 方案，並不會顯示 ClickOnce 信任提示。  
   
-##  <a name="Security"></a>指定 Office 方案的安全性考量  
+##  <a name="Security"></a> 指定 Office 方案的安全性考量  
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 Microsoft Office 所提供的安全性功能，有助於在 Office 方案中防範各種可能的安全性威脅。 如需詳細資訊，請參閱 [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md)。  
   
-##  <a name="SecurityDuringDeployment"></a>在開發期間的安全性  
+##  <a name="SecurityDuringDeployment"></a> 在開發期間的安全性  
  為了簡化您的開發程序，Visual Studio 每次建置專案時都會在您的電腦上設定執行和偵錯方案所需的安全性原則。 在某些情況下，您可能需要採取額外的安全性步驟來開發專案。  
   
 ### <a name="document-level-solutions"></a>文件層級方案  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  一段時間之後可能有許多的暫時憑證，因此您應該偶爾清除暫時憑證。  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools for Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office Runtime  
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]功能可驗證的 「 發行者 」 與的權限授與給自訂身分識別。 它會透過一系列的安全性驗證這些權限。  
   
 ### <a name="security-during-customization-loading"></a>載入自訂時的安全性  
@@ -103,7 +102,7 @@ ms.lasthandoff: 01/10/2018
   
  ![VSTO 安全性-使用安裝程式安裝](../vsto/media/setup-vstoinstaller.png "VSTO 安全性-使用安裝程式進行安裝")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [授與信任給文件](../vsto/granting-trust-to-documents.md)   
  [使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   

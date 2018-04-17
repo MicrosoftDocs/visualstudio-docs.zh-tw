@@ -1,10 +1,8 @@
 ---
-title: "如何： 建立特定領域語言方案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立特定領域語言方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5adfe90d88f46f4a3c31c1ddb6eb860403d57fe4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c2b14b407a6274e444ff50a6693b20b7ec763e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 特定領域語言 (DSL) 由使用特殊[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。  
@@ -81,7 +79,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  如果您看到訊息，提醒您不受信任來源執行文字範本，請按一下**確定**。 您可以設定此訊息不會再出現。  
   
-##  <a name="settings"></a>DSL 設計工具的精靈頁面  
+##  <a name="settings"></a> DSL 設計工具的精靈頁面  
  您可以保留不變，從其預設值的欄位數。 不過，請確定您設定檔案延伸模組欄位。  
   
 ### <a name="solution-settings-page"></a>方案 [設定] 頁面  

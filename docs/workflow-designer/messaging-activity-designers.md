@@ -1,18 +1,18 @@
 ---
-title: "傳訊活動設計工具 |Microsoft 文件"
+title: 傳訊活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e805fed01aa3dcb90d11f7f48c0fc1056d573add
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 傳訊活動設計工具會用來建立及設定從 [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] 應用程式內部傳送與接收 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 訊息的傳訊活動。 [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]導入了五個傳訊活動和 Windows 工作流程設計工具提供兩個新範本設計工具可讓您管理工作流程內的訊息。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 活動與範本設計工具的指引。

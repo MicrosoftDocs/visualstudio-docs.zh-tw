@@ -1,20 +1,24 @@
 ---
-title: "IEEVisualizerServiceProvider |Microsoft 文件"
-ms.custom: 
+title: IEEVisualizerServiceProvider |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEEVisualizerServiceProvider
-helpviewer_keywords: IEEVisualizerServiceProvider interface
+f1_keywords:
+- IEEVisualizerServiceProvider
+helpviewer_keywords:
+- IEEVisualizerServiceProvider interface
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0d778ba9038a9d14c7bb107f239adbc0d9bab2b2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

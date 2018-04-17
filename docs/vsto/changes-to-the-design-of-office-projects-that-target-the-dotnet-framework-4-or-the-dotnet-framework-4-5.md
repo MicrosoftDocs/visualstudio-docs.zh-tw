@@ -1,13 +1,10 @@
 ---
-title: ".NET Framework 4 或.NET Framework 4.5 為目標的 Office 專案的設計變更 |Microsoft 文件"
-ms.custom: 
+title: .NET Framework 4 或.NET Framework 4.5 為目標的 Office 專案的設計變更 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>變更以 .NET Framework 4 或 .NET Framework 4.5 為目標的 Office 專案設計
   從 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]開始，Visual Studio 導入了一些以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案的設計變更。 如果您熟悉舊版 Visual Studio 中的 Office 專案，在您開發以 .NET Framework 4.0 或更新版本為目標的 Office 專案之前，就該意識到這些變更。 使用 Visual Studio 2013 或更新版本建立的所有專案，預設目標都是 .NET Framework 4.0 或更新版本。  
@@ -59,9 +56,9 @@ ms.lasthandoff: 01/10/2018
 |GetVstoObject 和 HasVstoObject 方法的語法已變更|當原生物件的主要 interop 組件 (Pia)，從上存取它們，或者也可以存取專案中的 Globals.Factory 屬性所傳回的物件上的這些方法時，您必須將 Globals.Factory 物件傳遞給這些方法中。 如需詳細資訊，請參閱[更新 Excel 和 Word 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |Word 內容控制項的事件與新的委派相關聯。|您必須修改處理 Word 內容控制項事件的所有程式碼，以指定新的委派。 如需詳細資訊，請參閱[更新 Excel 和 Word 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |OLEObject 和 OLEControl 類別已重新命名。|您必須修改使用這些類別執行個體的所有程式碼，以改用 <xref:Microsoft.Office.Tools.Excel.ControlSite> 或 <xref:Microsoft.Office.Tools.Word.ControlSite> 物件。 如需詳細資訊，請參閱[更新 Excel 和 Word 專案，您要移轉至.NET Framework 4 或.NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
-|主項目類別，例如`ThisWorkbook`， `Sheet`  *n* ， `ThisDocument`，和`ThisAddIn`，不再提供可以覆寫 Dispose 方法。|您必須將程式碼移在 Dispose 方法的覆寫主項目類別，關機事件處理常式，例如`ThisAddIn_Shutdown`，並移除從主項目類別的 Dispose 方法覆寫。|  
+|主項目類別，例如`ThisWorkbook`， `Sheet` *n*， `ThisDocument`，和`ThisAddIn`，不再提供可以覆寫 Dispose 方法。|您必須將程式碼移在 Dispose 方法的覆寫主項目類別，關機事件處理常式，例如`ThisAddIn_Shutdown`，並移除從主項目類別的 Dispose 方法覆寫。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將 Office 方案移轉至 .NET Framework 4 或更新版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [新的 Office 程式開發功能](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office Runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)  

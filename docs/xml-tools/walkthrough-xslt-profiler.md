@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： XSLT 分析工具 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： XSLT 分析工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: be03e554bbdf55c447437116373cc60b15df391e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3338360e0acbcd9d4caea256074b892575c7bc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估並解決 XSLT 程式碼中與效能相關的問題。 XSLT 分析工具包含 XSL 和 XSLT 樣式表最佳化的實用提示。 就需要最大效能的 XSLT 應用程式而言，此工具是非常基本的。  
@@ -109,5 +107,5 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
   
 4.  處理序檢視會顯示包含表格**處理序識別碼**，**處理序名稱**，**開始時間**，而**結束時間**。 按一下資料行名稱即可排序資料。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)

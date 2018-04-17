@@ -1,19 +1,22 @@
 ---
-title: "Description 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: Description 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Description element [Visual Studio project templates]
+helpviewer_keywords:
+- Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7e58ee9b351acaeaabb842abd1c9e4d04ec1a189
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

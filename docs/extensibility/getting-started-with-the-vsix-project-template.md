@@ -1,19 +1,22 @@
 ---
-title: "開始使用 VSIX 專案範本 |Microsoft 文件"
-ms.custom: 
+title: 開始使用 VSIX 專案範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Visual Studio SDK, VSIX project template
+helpviewer_keywords:
+- Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c87fd485a0d682dc21de21dfe32b83cfc29b520a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

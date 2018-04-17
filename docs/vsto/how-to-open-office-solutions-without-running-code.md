@@ -1,12 +1,10 @@
 ---
-title: "如何： 開啟 Office 方案，但不執行程式碼 |Microsoft 文件"
-ms.custom: 
+title: 如何： 開啟 Office 方案，但不執行程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bd7a401ab96cbb196d97b2e210b3ede0a624deb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86a44d2a6c82f65d91c558c76743a8fbbd2fa1e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：以不執行程式碼的方式開啟 Office 方案
   建立具有 managed 程式碼擴充的 Microsoft Office 方案時仍會執行使用者的 Office 應用程式中的安全性設定設定為高。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office 管理。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      如果方案由多人使用，這個方法會防止執行所有這些方案。 如果問題位於程式碼或參考的伺服器，而且您想要停止執行它的所有使用者，這可能會很有用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

@@ -1,19 +1,22 @@
 ---
-title: "圖形事件清單 |Microsoft 文件"
-ms.custom: 
+title: 圖形事件清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.graphics.eventlist
+f1_keywords:
+- vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

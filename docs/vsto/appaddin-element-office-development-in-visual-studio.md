@@ -1,13 +1,10 @@
 ---
-title: "&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27f286f9bde8db68a7190796f1d154a402fb208d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9def97d044af74f02a2064703691333ec9f176aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `appAddin` 命名空間的 `vstov4` 項目會儲存自訂 VSTO 增益集特定的資訊。  
@@ -54,13 +51,13 @@ ms.lasthandoff: 01/10/2018
  `appAddin` 項目具有下列子項目。  
   
 ### <a name="friendlyname"></a>friendlyName  
- 選擇性。 `friendlyName`項目中會說明[&#60; friendlyName &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ 選擇性。 `friendlyName`項目中會說明[ &#60;friendlyName&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)。  
   
 ### <a name="description"></a>描述  
- 選擇性。 `description`項目中會說明[&#60; 描述 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/description-element-office-development-in-visual-studio.md).  
+ 選擇性。 `description`項目中會說明[&#60;描述&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/description-element-office-development-in-visual-studio.md)。  
   
 ### <a name="formregions"></a>formRegions  
- 只有包含表單區域的 Outlook VSTO 增益集才需要。 `formRegions`項目中會說明[&#60; formRegions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ 只有包含表單區域的 Outlook VSTO 增益集才需要。 `formRegions`項目中會說明[ &#60;formRegions&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)。  
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
 </vstov4:appAddIn>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

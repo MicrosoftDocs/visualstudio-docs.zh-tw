@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式保護活頁簿 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式保護活頁簿 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - workbooks, protecting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1799366258786bafb3b24b5580ccf29be1d59927
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 03cab4591bbca62c237877e39dabf40328768ccf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>如何：以程式設計方式保護活頁簿
   您可以保護 Microsoft Office Excel 活頁簿，以便讓使用者無法加入或刪除工作表，並也以程式設計方式活頁簿的保護。 （選擇性），您可以指定密碼，指出您是否要保護 （讓使用者無法移動工作表），這個結構，並指出您是否想保護的活頁簿的視窗。  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   

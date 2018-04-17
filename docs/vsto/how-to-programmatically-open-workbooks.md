@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式開啟活頁簿 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式開啟活頁簿 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 11fe801cf80c15953056f4f6fdd50c5c4fadd3c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a243e4972bcee77aa9d76957ab5cce289e30e120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>如何：以程式設計方式開啟活頁簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合可讓您將使用的所有開啟的活頁簿並開啟活頁簿。  
@@ -40,13 +39,13 @@ ms.lasthandoff: 01/10/2018
   
 -   名為活頁簿`YourWorkbook.xls`必須存在於一個名為目錄`Test`上磁碟機 c。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [如何： 以程式設計方式文字檔開啟為活頁簿](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
  [如何： 以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
  [如何： 以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)   
  [如何： 以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
   

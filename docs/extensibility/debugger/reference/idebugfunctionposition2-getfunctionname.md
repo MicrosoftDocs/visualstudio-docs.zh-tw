@@ -1,20 +1,24 @@
 ---
-title: "IDebugFunctionPosition2::GetFunctionName |Microsoft 文件"
-ms.custom: 
+title: IDebugFunctionPosition2::GetFunctionName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugFunctionPosition2::GetFunctionName
-helpviewer_keywords: IDebugFunctionPosition2::GetFunctionName
+f1_keywords:
+- IDebugFunctionPosition2::GetFunctionName
+helpviewer_keywords:
+- IDebugFunctionPosition2::GetFunctionName
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c972085dee7f4eb684e364a07f75ed5913853503
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

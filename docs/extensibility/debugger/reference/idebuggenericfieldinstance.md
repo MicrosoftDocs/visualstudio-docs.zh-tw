@@ -1,19 +1,22 @@
 ---
-title: "IDebugGenericFieldInstance |Microsoft 文件"
-ms.custom: 
+title: IDebugGenericFieldInstance |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugGenericFieldInstance interface
+helpviewer_keywords:
+- IDebugGenericFieldInstance interface
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3d5ee0d66f1248ec3770dd9402baaa1dc8066e96
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

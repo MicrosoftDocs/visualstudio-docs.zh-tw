@@ -1,13 +1,10 @@
 ---
-title: "SharePoint 工具擴充功能的程式設計概念和功能 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 工具擴充功能的程式設計概念和功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f4ebe2b4233cb42822f0614477dbfec006e37a8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 67aa5bcb83b1ab820286ad70a74cd36c101dbe86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具擴充功能的程式設計概念和功能
   有數個重要的程式設計概念和相關 Visual Studio 中 SharePoint 工具的功能。 這些概念和功能扮演著重要角色，在大部分的 SharePoint 工具擴充功能。  
@@ -37,7 +34,7 @@ ms.lasthandoff: 01/10/2018
  [讓自訂資料與 SharePoint 工具延伸模組產生關聯](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
  描述如何將自訂資料與特定類型的 SharePoint 工具擴充功能中的物件產生關聯。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   

@@ -1,12 +1,10 @@
 ---
-title: "安全的部署 |Microsoft 文件"
-ms.custom: 
+title: 安全的部署 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f52c6d26132490defafdf87639e0f1731ea90640
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1efc8087476cbe879a647288c35a7e7f329100a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-deployment"></a>安全的部署
   當您建立 Office 方案時，會自動允許之程式碼執行的專案中更新您的開發電腦。 不過，當您部署方案時，您必須提供的簽署憑證，使用的方案，或使用基礎信任決策的辨識項[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示金鑰。 如需詳細資訊，請參閱[授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
  若要啟用 Office 方案執行程式碼，將這兩個`Disabled`項目為 0 （零），或刪除的登錄項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [若要執行或裝載 Office 方案的電腦進行準備工作](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  

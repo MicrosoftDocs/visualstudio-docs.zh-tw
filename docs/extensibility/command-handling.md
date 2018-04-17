@@ -1,19 +1,22 @@
 ---
-title: "命令處理 |Microsoft 文件"
-ms.custom: 
+title: 命令處理 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - command handling
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3ecbff62570067b25aae9ad525138687eb281c9f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

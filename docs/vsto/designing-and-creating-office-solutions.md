@@ -1,12 +1,10 @@
 ---
-title: "設計和建立 Office 方案 |Microsoft 文件"
-ms.custom: 
+title: 設計和建立 Office 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Designing and Creating Office Solutions
   Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專案範本。 文件的本節描述此專案範本，並提供有關建立 Office 專案的指引。 如需如何建立專案之後實作自訂程式碼和使用者介面的資訊，請參閱[開發 Office 方案](../vsto/developing-office-solutions.md)。  
@@ -94,13 +93,13 @@ ms.lasthandoff: 01/10/2018
 ## <a name="referenced-assemblies"></a>參考的組件  
  組件可以參考列入專案參考中的其他組件。 不過，一個文件層級的專案組件不能參考另一個文件層級的專案組件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio 環境中的 office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Office 專案中的屬性](../vsto/properties-in-office-projects.md)   
  [在不同版本的 Microsoft Office 中執行方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [應用程式和 Office 方案中的部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
  [如何： 設定 Office 方案的組態資訊](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [使用在 Visual Studio 內的 Office 功能](../vsto/using-office-functionality-inside-of-visual-studio.md)   

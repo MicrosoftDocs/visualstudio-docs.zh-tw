@@ -1,20 +1,24 @@
 ---
-title: "IDebugCoreServer3::DiagnoseWebDebuggingError |Microsoft 文件"
-ms.custom: 
+title: IDebugCoreServer3::DiagnoseWebDebuggingError |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCoreServer3::DiagnoseWebDebuggingError
-helpviewer_keywords: IDebugCoreServer3::DiagnoseWebDebuggingError
+f1_keywords:
+- IDebugCoreServer3::DiagnoseWebDebuggingError
+helpviewer_keywords:
+- IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4b93a82bfd79abe6400e8e1bb213b00154fbbf16
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

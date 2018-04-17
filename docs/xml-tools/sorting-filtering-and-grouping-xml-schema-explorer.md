@@ -1,23 +1,21 @@
 ---
-title: "排序、 篩檢與群組 （XML 結構描述總管） |Microsoft 文件"
-ms.custom: 
+title: 排序、 篩檢與群組 （XML 結構描述總管） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b8fe3daa1c95169623a908307d4d6c81044d378f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ad8225ae325c453836f5c7bcf7fb6ac0c5fb04a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩檢與群組 (XML 結構描述總管)
 本主題描述的選項，可透過**排序、 篩選與分組選項**XML 結構描述總管工具列上的功能表。  

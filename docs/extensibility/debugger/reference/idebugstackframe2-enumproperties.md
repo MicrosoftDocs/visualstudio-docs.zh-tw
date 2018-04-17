@@ -1,20 +1,24 @@
 ---
-title: "IDebugStackFrame2::EnumProperties |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame2::EnumProperties |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugStackFrame2::EnumProperties
-helpviewer_keywords: IDebugStackFrame2::EnumProperties
+f1_keywords:
+- IDebugStackFrame2::EnumProperties
+helpviewer_keywords:
+- IDebugStackFrame2::EnumProperties
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 676a66d692ba0392152b02e8a9a4c929f074bb98
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

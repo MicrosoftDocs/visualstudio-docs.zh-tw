@@ -1,12 +1,10 @@
 ---
-title: "如何： 加入刪除者方法 |Microsoft 文件"
-ms.custom: 
+title: 如何： 加入刪除者方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5e2ac47b315189dc2f0f7196db46aeb17ed08480
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4a0607bcd05fcb0d63fcc9bff40dfffeb2c45b8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：加入刪除者方法
   您可以讓使用者從 SharePoint 網站上的一個外部清單刪除資料錄，藉由新增*刪除者*模型的方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -71,7 +70,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
      [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

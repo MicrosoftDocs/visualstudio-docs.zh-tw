@@ -1,23 +1,21 @@
 ---
-title: "操作功能表 （XML 結構描述總管） |Microsoft 文件"
-ms.custom: 
+title: 操作功能表 （XML 結構描述總管） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 739dff217b59bd9424594c4049c765ad5145d634
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 07ce9b5cc1c390d9bad108df417855a733d5dcef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 (XML 結構描述總管)
 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。  
@@ -114,6 +112,6 @@ ms.lasthandoff: 12/22/2017
 |**顯示所有成員**|尋找並反白顯示具名群組的所有成員。|  
 |**顯示所有參考**|尋找並反白顯示所選群組的所有參考 (具有 `ref="selectedGroup"` 的群組)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)   
  [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)

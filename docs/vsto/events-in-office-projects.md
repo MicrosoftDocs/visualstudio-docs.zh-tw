@@ -1,13 +1,10 @@
 ---
-title: "Office 專案中的事件 |Microsoft 文件"
-ms.custom: 
+title: Office 專案中的事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -35,14 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 3136bf1ac0937b60b5f0dec1b0be673e3127a470
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。  
@@ -157,7 +154,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱 [關閉 Outlook 2010 的變更](http://go.microsoft.com/fwlink/?LinkID=184614)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   

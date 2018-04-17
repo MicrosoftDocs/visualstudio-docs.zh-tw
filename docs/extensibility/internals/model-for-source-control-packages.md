@@ -1,19 +1,22 @@
 ---
-title: "模型的原始檔控制套件 |Microsoft 文件"
-ms.custom: 
+title: 模型的原始檔控制套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control [Visual Studio SDK], model
+helpviewer_keywords:
+- source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

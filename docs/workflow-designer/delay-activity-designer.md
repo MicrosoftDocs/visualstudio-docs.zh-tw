@@ -1,5 +1,5 @@
 ---
-title: "延遲活動設計工具 |Microsoft 文件"
+title: 延遲活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf4be42d05ebfc3c2df3e64f011b93673eead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delay-activity-designer"></a>Delay 活動設計工具
 **延遲**活動設計工具用來建立及設定<xref:System.Activities.Statements.Delay>活動。
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>另請參閱
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [Assign](../workflow-designer/assign-activity-designer.md)
+- [指派](../workflow-designer/assign-activity-designer.md)
 - [Delay 活動設計工具](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

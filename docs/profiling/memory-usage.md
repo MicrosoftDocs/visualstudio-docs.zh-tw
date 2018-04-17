@@ -1,22 +1,24 @@
 ---
-title: "在 Visual Studio 中分析記憶體使用量 | Microsoft Docs"
+title: 在 Visual Studio 中分析記憶體使用量 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>分析 Visual Studio 中的記憶體使用量
 當您進行偵錯時，您可以使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取受控 原生之記憶體堆積的一或多個「快照」，以利了解物件類型的記憶體使用量影響。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  
@@ -33,6 +35,12 @@ ms.lasthandoff: 01/04/2018
 >  **自訂配置器支援** 原生記憶體分析工具的運作方式是收集在執行階段所發出的配置 [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。  如果您正在撰寫自己的配置器，則針對任何將指標傳回最新配置之堆積記憶體的函式，都可以使用 [__declspec](/cpp/cpp/declspec)(allocator) 來裝飾，如本範例中針對 myMalloc 所示：  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+在本教學課程中，您將進行下列作業：
+
+> [!div class="checklist"]
+> * 擷取記憶體的快照
+> * 分析記憶體使用量資料
 
 ## <a name="collect-memory-usage-data"></a>收集記憶體使用量資料
 
@@ -165,6 +173,9 @@ ms.lasthandoff: 01/04/2018
   
  [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/) (Visual C++ 部落格：Visual C++ 2015 中的記憶體分析)  
 
-## <a name="see-also"></a>請參閱
- [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>後續步驟
+
+在本教學課程中，您已了解如何收集並分析記憶體使用量資料。 如果您已完成[分析工具的教學課程](../profiling/profiling-feature-tour.md)，建議您快速查看如何分析應用程式的 CPU 使用量。
+
+> [!div class="nextstepaction"]
+> [分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md) 

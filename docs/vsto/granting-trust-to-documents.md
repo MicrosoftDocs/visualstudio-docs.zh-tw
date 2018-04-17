@@ -1,12 +1,10 @@
 ---
-title: "授與信任給文件 |Microsoft 文件"
-ms.custom: 
+title: 授與信任給文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5c8cb7bc19c4668c9315c516430ffe8a8ff30ddc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="granting-trust-to-documents"></a>Granting Trust to Documents
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
   
 -   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱[How to： 將文件層級 Office 方案發行至 SharePoint 伺服器使用 clickonce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  

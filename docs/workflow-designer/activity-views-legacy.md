@@ -1,5 +1,5 @@
 ---
-title: "活動檢視 （舊版） |Microsoft 文件"
+title: 活動檢視 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10661aa3f12b83a383defaa204b5bba0b93e236a
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="activity-views-legacy"></a>活動檢視 (舊版)
 活動所提供的許多[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]，從哪一個工作流程所組成，有幾個舊版的 Windows 工作流程設計工具中可用的設計檢視。 當您拖曳的活動設計工具**工具箱**拖曳至設計介面，以及此後每次選取活動時，您可以在使用不同的設計檢視之間切換**工作流程**功能表或以滑鼠右鍵按一下選取的活動。 此外，當您將指標移至選取活動的名稱上方時，會顯示一組下拉式索引標籤，可用來在不同的檢視之間切換。

@@ -1,13 +1,10 @@
 ---
-title: "&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e1c2c21fe5cf3a038066a47f50fe4b813b277e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customization` 命名空間的 `vstov4` 項目描述特定的 Office 方案。 文件層級自訂與 VSTO 增益集的子項目不同。  
@@ -68,13 +65,13 @@ ms.lasthandoff: 01/10/2018
  `customization` 項目具有下列子項目。  
   
 #### <a name="document"></a>文件  
- `document`中的項目`vstov4`命名空間中定義[&#60; 文件 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/document-element-office-development-in-visual-studio.md).  
+ `document`中的項目`vstov4`命名空間中定義[&#60;文件&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/document-element-office-development-in-visual-studio.md)。  
   
 ### <a name="vsto-add-ins"></a>VSTO 增益集  
  `customization` 項目具有下列子項目。  
   
 #### <a name="appaddin"></a>appAddin  
- `appAddin`中的項目`vstov4`命名空間中定義[&#60; appAddin &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/appaddin-element-office-development-in-visual-studio.md).  
+ `appAddin`中的項目`vstov4`命名空間中定義[ &#60;appAddin&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文件層級自訂的範例  
   
@@ -122,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 </vstov4:customization>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

@@ -1,9 +1,9 @@
 ---
-title: "如何： 使用異動來更新模型 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用異動來更新模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ecd9645bfb202d83bf672d03d3c6903a889677f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
 交易確認至存放區所做的變更會被視為一個群組。 變更群組可加以認可或回復，當做單一單位。  

@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c806ed3b93bc79e2ea732905b2ff5c7827e43e6a
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 

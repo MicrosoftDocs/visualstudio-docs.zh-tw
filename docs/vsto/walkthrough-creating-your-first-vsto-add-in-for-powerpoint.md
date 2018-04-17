@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eec0f2eaf7cc415e026a8427f7a881cd7ed15160
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>逐步解說：為您的 PowerPoint 建立第一個 VSTO 增益集
-  本逐步解說示範如何建立 Microsoft Office PowerPoint 的 VSTO 增益集。 不論開啟哪一份簡報，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  本逐步解說示範如何建立 Microsoft Office PowerPoint 的 VSTO 增益集。 不論開啟哪一份簡報，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstPowerPointAddIn**專案，並開啟**ThisAddIn**編輯器中的程式碼檔案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立**FirstPowerPointAddIn**專案，並開啟**ThisAddIn**編輯器中的程式碼檔案。  
   
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>撰寫可將文字加入每張新投影片的程式碼  
  接著，將程式碼加入 ThisAddIn 程式碼檔。 新的程式碼會使用 PowerPoint 的物件模型，將文字方塊加入每張新投影片。 根據預設，ThisAddIn 程式碼檔包含下列產生的程式碼：  
@@ -132,7 +131,7 @@ ms.lasthandoff: 01/10/2018
   
 -   部署 PowerPoint VSTO 增益集。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [PowerPoint 方案](../vsto/powerpoint-solutions.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   

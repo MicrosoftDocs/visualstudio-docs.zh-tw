@@ -1,5 +1,5 @@
 ---
-title: "ExistsInCollection&lt;T&gt;活動設計工具 |Microsoft 文件"
+title: ExistsInCollection&lt;T&gt;活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aed1488f8549624c50ce96c088440616217b58
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt;活動設計工具
 **ExistsInCollection\<T >**活動設計工具用來建立及設定<xref:System.Activities.Statements.ExistsInCollection%601>活動。
@@ -41,6 +41,6 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>另請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
+- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)
+- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
 - [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: "佈景主題、 工作流程設計工具、 選項對話方塊 （舊版） |Microsoft 文件"
+title: 佈景主題、 工作流程設計工具、 選項對話方塊 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47916c854c2d0e30173442188419c723e5d170a3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>選項對話方塊、工作流程設計工具、佈景主題 (舊版)
 本主題描述如何使用**佈景主題、 工作流程設計工具，選項**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/12/2018
 |UI 項目|描述|
 |----------------|-----------------|
 |**新增**|按一下以開啟[主題組態對話方塊 （舊版）](../workflow-designer/theme-configuration-dialog-box-legacy.md)來建立新的佈景主題。|
-|**Modify...**|按一下以開啟[主題組態對話方塊 （舊版）](../workflow-designer/theme-configuration-dialog-box-legacy.md)修改選取的佈景主題。|
+|**修改...**|按一下以開啟[主題組態對話方塊 （舊版）](../workflow-designer/theme-configuration-dialog-box-legacy.md)修改選取的佈景主題。|
 |**瀏覽**|按一下以瀏覽工作流程主題檔案，其副檔名為 .wtm。|
 |**選取的佈景主題**|主題清單的主題名稱資料行標題。 從清單中選取的佈景主題，請按一下**修改**編輯，或按一下**確定**工作流程中使用選取的佈景主題。|
 |**描述**|主題清單的主題描述資料行標題。|

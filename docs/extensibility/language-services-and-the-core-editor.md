@@ -1,17 +1,17 @@
 ---
-title: "語言服務及核心編輯器 |Microsoft 文件"
-ms.custom: 
+title: 語言服務及核心編輯器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen

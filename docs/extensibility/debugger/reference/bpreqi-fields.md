@@ -1,20 +1,24 @@
 ---
-title: "BPREQI_FIELDS |Microsoft 文件"
-ms.custom: 
+title: BPREQI_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BPREQI_FIELDS
-helpviewer_keywords: BPREQI_FIELDS enumeration
+f1_keywords:
+- BPREQI_FIELDS
+helpviewer_keywords:
+- BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1e7c0206ca5834b281447e9a00c4ce3cad0c247c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

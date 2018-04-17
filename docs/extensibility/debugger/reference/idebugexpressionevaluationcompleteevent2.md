@@ -1,20 +1,24 @@
 ---
-title: "IDebugExpressionEvaluationCompleteEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugExpressionEvaluationCompleteEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugExpressionEvaluationCompleteEvent2
-helpviewer_keywords: IDebugExpressionEvaluationCompleteEvent2
+f1_keywords:
+- IDebugExpressionEvaluationCompleteEvent2
+helpviewer_keywords:
+- IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 42dfc3ed4a4bff3e0c32d7155a74d74c1c6d0503
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugPortSupplier2 |Microsoft 文件"
-ms.custom: 
+title: IDebugPortSupplier2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPortSupplier2
-helpviewer_keywords: IDebugPortSupplier2 interface
+f1_keywords:
+- IDebugPortSupplier2
+helpviewer_keywords:
+- IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 257bbf334adbdfd3a93cf172de0b15bf63cb3217
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

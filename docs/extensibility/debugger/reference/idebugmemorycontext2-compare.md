@@ -1,22 +1,25 @@
 ---
-title: "IDebugMemoryContext2::Compare |Microsoft 文件"
-ms.custom: 
+title: IDebugMemoryContext2::Compare |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMemoryContext2::Compare
+f1_keywords:
+- IDebugMemoryContext2::Compare
 helpviewer_keywords:
 - IDebugMemoryContext2::Compare method
 - Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f96ac8409a5aff3868f33f7ed987a6cc237ba5ea
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

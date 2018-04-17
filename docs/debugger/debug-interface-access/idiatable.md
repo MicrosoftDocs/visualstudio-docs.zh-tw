@@ -1,20 +1,24 @@
 ---
-title: "IDiaTable |Microsoft 文件"
-ms.custom: 
+title: IDiaTable |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaTable interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

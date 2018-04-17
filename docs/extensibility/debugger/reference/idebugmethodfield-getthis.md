@@ -1,20 +1,24 @@
 ---
-title: "IDebugMethodField::GetThis |Microsoft 文件"
-ms.custom: 
+title: IDebugMethodField::GetThis |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMethodField::GetThis
-helpviewer_keywords: IDebugMethodField::GetThis method
+f1_keywords:
+- IDebugMethodField::GetThis
+helpviewer_keywords:
+- IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: af534ee57a68158e3f909ba69a1771a5073320e1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

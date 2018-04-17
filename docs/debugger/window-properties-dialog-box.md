@@ -1,19 +1,22 @@
 ---
-title: "視窗屬性對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 視窗屬性對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: Window Properties dialog box
+helpviewer_keywords:
+- Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5c6a2608490bcecf7c4eb61b1541eec355cd41c3
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

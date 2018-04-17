@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointBoundEvent2::EnumBoundBreakpoints |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-helpviewer_keywords: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
+f1_keywords:
+- IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
+helpviewer_keywords:
+- IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 18972ad99400ff8f52d84cbef1cfd98389cdeaed
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

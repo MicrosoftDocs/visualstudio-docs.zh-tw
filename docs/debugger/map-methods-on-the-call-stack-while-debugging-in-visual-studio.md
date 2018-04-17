@@ -1,13 +1,13 @@
 ---
-title: "建立呼叫堆疊的視覺效果對應 |Microsoft 文件"
-ms.custom: 
+title: 建立呼叫堆疊的視覺效果對應 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>在 Visual Studio Enterprise 中偵錯時建立的視覺效果對應呼叫堆疊
 建立 code map 以視覺方式追蹤呼叫堆疊偵錯時。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/01/2018
   
  如需命令和使用 code map 時，您可以使用的動作的詳細資訊，請參閱[瀏覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)。  
   
-##  <a name="MapStack"></a>對應呼叫堆疊  
+##  <a name="MapStack"></a> 對應呼叫堆疊  
   
 1.  開始偵錯。 (鍵盤： **F5**)  
   
@@ -87,17 +87,17 @@ ms.lasthandoff: 02/01/2018
   
      當您繼續偵錯時，對應會自動更新。 請參閱[下一個呼叫堆疊更新對應圖](#UpdateMap)。  
   
-##  <a name="MakeNotes"></a>做有關程式碼的筆記  
+##  <a name="MakeNotes"></a> 做有關程式碼的筆記  
  加入註解以追蹤程式碼中的情況。 若要加入新的一行的註解，請按**Shift + Return**。  
   
  ![堆疊呼叫 code map 上加入註解](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>使用下一個呼叫堆疊更新對應  
+##  <a name="UpdateMap"></a> 使用下一個呼叫堆疊更新對應  
  執行應用程式到下一個中斷點或逐步執行函式。 對應圖中就會加入新的呼叫堆疊。  
   
  ![使用下一個堆疊呼叫來更新程式碼對應](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>將相關程式碼加入至對應  
+##  <a name="AddRelatedCode"></a> 將相關程式碼加入至對應  
  現在您已經有對應的什麼接下來？ 如果您正在使用 Visual C# 或 Visual Basic 中，加入項目，例如欄位、 屬性和其他方法，以追蹤程式碼中的情況。  
   
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤： 選取的方法上的地圖和按**F12**)  
@@ -121,7 +121,7 @@ ms.lasthandoff: 02/01/2018
   
  ![堆疊呼叫 code map 使用欄位的方法](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>使用對應圖尋找 bug  
+##  <a name="FindBugs"></a> 使用對應圖尋找 bug  
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖程式中的 bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。  
   
  因此您在 `clear`、`undo` 和 `Repaint` 方法中設定中斷點、開始偵錯，並建置一個如下所示的對應圖：  
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/01/2018
   
 -   **如何避免加入新的呼叫堆疊會自動讓對應圖？**  
   
-     選擇![按鈕 &#45;自動在 code map 上顯示呼叫堆疊](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** + **`**。  
+     選擇![按鈕&#45;顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** + **`**。  
   
      地圖會繼續偵錯時，反白顯示在地圖上現有的呼叫堆疊。  
   
@@ -194,7 +194,7 @@ ms.lasthandoff: 02/01/2018
   
 -   [使用對應圖尋找 bug](#FindBugs)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)   
  [使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)   
  [使用 code map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)   

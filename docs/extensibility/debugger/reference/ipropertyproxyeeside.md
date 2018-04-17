@@ -1,20 +1,24 @@
 ---
-title: "IPropertyProxyEESide |Microsoft 文件"
-ms.custom: 
+title: IPropertyProxyEESide |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IPropertyProxyEESide
-helpviewer_keywords: IPropertyProxyEESide interface
+f1_keywords:
+- IPropertyProxyEESide
+helpviewer_keywords:
+- IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 90f34e954945f6b557f8c5e1f5ac0b0802e1e663
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

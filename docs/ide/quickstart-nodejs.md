@@ -1,12 +1,13 @@
 ---
-title: "快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式 | Microsoft Docs"
-ms.custom: 
+title: 快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式 | Microsoft Docs
+description: 在此快速入門中，您會在 Visual Studio 中建立 Node.js 應用程式
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 Node.js Web 應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
@@ -29,21 +30,21 @@ ms.lasthandoff: 02/19/2018
 ## <a name="create-a-project"></a>建立專案
 首先，您將建立 Node.js Web 應用程式專案。
 
+1. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。
+
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考已安裝的執行階段。
+
 1. 開啟 Visual Studio 2017。  
 
-2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
 
-3. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。   
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。   
 
      如果您看不到 [Blank Node.js Web application] (空白的 Node.js Web 應用程式) 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。  
 
      ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)  
 
-    Visual Studio 會建立新的方案並開啟專案。 **server.js** 會在編輯器中開啟。
-
-4. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) \(英文\) 網站安裝它。
-
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果它沒有偵測到已安裝的執行階段，您可以將專案設定為參考已安裝的執行階段。
+    Visual Studio 會建立新的方案並開啟專案。 *server.js* 會在左窗格的編輯器中開啟。
 
 ## <a name="explore-the-ide"></a>探索 IDE  
 
@@ -61,19 +62,19 @@ ms.lasthandoff: 02/19/2018
 
    ![Node.js 命令提示字元](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. 在編輯器 (左窗格) 的 **server.js** 檔案中，選擇 `http.createServer`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 index.d.ts 中 `createServer` 函式的定義。  
+1. 在編輯器 (左窗格) 的 *server.js* 檔案中，選擇 `http.createServer`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 index.d.ts 中 `createServer` 函式的定義。  
 
    ![移至定義操作功能表](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. 將游標置於 `res.end('Hello World\n');` 這行程式碼的字串結尾，並進行修改，讓它看起來如下：
+1. 移回至 *server.js*，然後將游標置於 `res.end('Hello World\n');` 這行程式碼的字串結尾，並進行修改，讓它看起來如下：
 
     `res.end('Hello World\n' + res.connection.`
 
-    如果您輸入 `connection.`，則 IntelliSense 會提供自動完成程式碼項目的選項。
+    如果您鍵入 `connection.`，則 IntelliSense 會提供自動完成程式碼項目的選項。
 
    ![IntelliSense 自動完成](../ide/media/quickstart-nodejs-intellisense.png)  
 
-1. 選擇 [localPort]，然後輸入 `);` 以完成陳述式，讓它看起來如下：
+1. 選擇 [localPort]，然後鍵入 `);` 以完成陳述式，讓它看起來如下：
 
     `res.end('Hello World\n' + res.connection.localPort);`
 
@@ -88,6 +89,5 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="next-steps"></a>後續步驟 
 
-- 逐步進行 [Node.js 教學課程](../nodejs/tutorial-nodejs.md)  
-- 深入了解 [Visual Studio IDE](../ide/visual-studio-ide.md)  
-- 深入了解[適用於 Visual Studio 的 Node.js 工具](https://github.com/Microsoft/nodejstools/wiki)
+- 逐步進行 [Node.js 和 Express 的教學課程](../nodejs/tutorial-nodejs.md)  
+- 逐步進行 [Node.js 和 React 的教學課程](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

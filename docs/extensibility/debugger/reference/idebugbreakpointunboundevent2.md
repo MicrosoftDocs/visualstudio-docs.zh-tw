@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointUnboundEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointUnboundEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointUnboundEvent2
-helpviewer_keywords: IDebugBreakpointUnboundEvent2
+f1_keywords:
+- IDebugBreakpointUnboundEvent2
+helpviewer_keywords:
+- IDebugBreakpointUnboundEvent2
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 148840222521e85c5cf71991eb5acc3823b74331
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,11 +1,11 @@
 ---
-title: "FormatUrl 工作 | Microsoft Docs"
-ms.custom: 
+title: FormatUrl 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, FormatUrl task
 - FormatUrl task [MSBuild]
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
-caps.latest.revision: 
+caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b353984812b8ce586054771355f023d433312b3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="formaturl-task"></a>FormatUrl 工作
 將 URL 轉換為正確的 URL 格式。  
@@ -42,6 +42,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="remarks"></a>備註  
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

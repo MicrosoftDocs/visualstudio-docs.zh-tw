@@ -1,5 +1,5 @@
 ---
-title: "規則條件編輯器對話方塊 （舊版） |Microsoft 文件"
+title: 規則條件編輯器對話方塊 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3e4c54dff4bded0bcc07fb5e8891162cc12ea8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>規則條件編輯器對話方塊 (舊版)
 
@@ -43,11 +43,11 @@ ms.lasthandoff: 03/12/2018
 |UI 項目|描述|
 |----------------|-----------------|
 |**條件：**|輸入規則條件的運算式。|
-|**OK**|按一下以儲存規則條件。|
+|**[確定]**|按一下以儲存規則條件。|
 
 ## <a name="entering-condition-expressions"></a>輸入條件運算式
 
-輸入條件運算式為文字。 您可以輸入**這。** 至編輯器，以參考欄位、 屬性和工作流程中使用的方法，使用 IntelliSense 型的功能表。 或者您可以直接輸入工作流程成員名稱。 您可以將邏輯運算子新增至條件中，如 AND、OR 和 NOT。 您也可以新增述詞 (Predicate)。 述詞是二元 (Binary) 運算子和兩個運算元。 支援的二元運算子會 **==** ，  **>** ，  **\<** ，  **>=** ，和 **<=** 。 支援的運算元有常數值、算術函式和有範圍的 Public 成員。
+輸入條件運算式為文字。 您可以輸入**這。** 至編輯器，以參考欄位、 屬性和工作流程中使用的方法，使用 IntelliSense 型的功能表。 或者您可以直接輸入工作流程成員名稱。 您可以將邏輯運算子新增至條件中，如 AND、OR 和 NOT。 您也可以新增述詞 (Predicate)。 述詞是二元 (Binary) 運算子和兩個運算元。 支援的二元運算子會**==**， **>**， **\<**， **>=**，和**<=**。 支援的運算元有常數值、算術函式和有範圍的 Public 成員。
 
 您可以指定的類型比較，而且您可以比較與**null**或空字串。 您可以對包含複雜型別之變數上的成員進行巢狀呼叫，例如 `this.Address.State == "WA"`。
 

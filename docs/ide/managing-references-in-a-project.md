@@ -1,12 +1,12 @@
 ---
-title: "管理專案中的參考 | Microsoft Docs"
-ms.custom: 
+title: 管理專案中的參考 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
@@ -108,7 +108,7 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 您可以建立參考目標為不同 .NET Framework 版本之專案或組件的應用程式。 例如，您可以建立目標為 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] (參考目標為 [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)] 的組件) 的應用程式。 如果您建立之專案的目標是舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，則無法在該專案中設定目標為新版之專案或組件的參考。
 
-如需詳細資訊，請參閱[以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)。
+如需詳細資訊，請參閱 [多目標概觀](../ide/visual-studio-multi-targeting-overview.md)。
 
 ## <a name="project-to-project-references"></a>專案對專案參考
 
@@ -125,5 +125,5 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 應用程式�
 
 ## <a name="see-also"></a>另請參閱
 
-[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)  
+[中斷參考的疑難排解](../ide/troubleshooting-broken-references.md)
 [如何：使用參考管理員新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

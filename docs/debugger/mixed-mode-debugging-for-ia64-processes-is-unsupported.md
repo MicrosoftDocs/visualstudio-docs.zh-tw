@@ -1,24 +1,27 @@
 ---
-title: "不支援 IA64 處理序的混合模式偵錯。 | Microsoft Docs"
-ms.custom: 
+title: 不支援 IA64 處理序的混合模式偵錯。 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.error.interop_unsupported_ia64
+f1_keywords:
+- vs.debug.error.interop_unsupported_ia64
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 193d469666d9aaa012187500de063470df77c823
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

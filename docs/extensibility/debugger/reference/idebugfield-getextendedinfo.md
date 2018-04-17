@@ -1,25 +1,29 @@
 ---
-title: "IDebugField::GetExtendedInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugField::GetExtendedInfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugField::GetExtendedInfo
-helpviewer_keywords: IDebugField::GetExtendedInfo method
+f1_keywords:
+- IDebugField::GetExtendedInfo
+helpviewer_keywords:
+- IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c6b2aaa953e47366e7a99fb5a821f530d37ed66e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 這個方法取得擴充欄位的相關資訊。  
@@ -63,5 +67,5 @@ int GetExtendedInfo(
 ## <a name="remarks"></a>備註  
  目前，這個方法只會傳回型別或常數的值。 呼叫端必須釋放中傳回的緩衝區`prgBuffer`藉由呼叫 COM 的`CoTaskMemFree`函式 （c + +） 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

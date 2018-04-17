@@ -1,25 +1,23 @@
 ---
-title: "建立模型，您的應用程式 &#39; s 架構 |Microsoft 文件"
-ms.custom: 
+title: 您的應用程式&#39;s 架構 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3d77abff4595502ab27f56be10cb973361eef413
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 65a49873056878be9651aa7580618e778f217651
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="model-your-app39s-architecture"></a>建立模型，您的應用程式 &#39; s 架構
+# <a name="model-your-app39s-architecture"></a>您的應用程式&#39;s 架構
 為了協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，為您的整體結構描述與軟體系統或應用程式行為的一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -35,7 +33,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [設計模式](#Patterns)和元件的設計中使用的慣例。 模式會描述達成程式設計目標的特定方式。 只要在整個設計中使用相同的模式，您的小組就可以降低進行變更和開發新軟體的成本。  
   
-##  <a name="Structure"></a>高層級設計  
+##  <a name="Structure"></a> 高層級設計  
  高階設計會描述您系統的主要元件以及它們如何彼此互動以達成設計的目標。 下列清單中的活動與高階設計的開發有關，但是不一定有特定順序。  
   
  如果您正在更新現有的程式碼，可能要從描述主要元件開始。 請確定您了解對使用者需求所做的任何變更，然後再加入或修改元件之間的互動。 如果您正在開發新的系統，請從了解使用者需求的主要功能開始。 然後，您可以探勘主要使用案例的互動順序，然後將這些順序合併到元件設計中。  
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
   
 -   資料模型的元件和介面。 您可以繪製類別圖來描述在元件之間傳遞以及儲存在元件內部的資訊。  
   
-##  <a name="Requirements"></a>了解需求  
+##  <a name="Requirements"></a> 了解需求  
  在搭配需求模型或使用者需求之其他描述的情況下，開發完整應用程式的高階設計最為有效。 如需需求模型的詳細資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
   
  如果您正在開發的系統是較大系統中的元件，您的部分或所有需求可能會包含在程式設計介面中。  
@@ -67,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
  您應該要放入需求或架構模型的詳細資料量取決於專案的規模以及小組的大小和分佈。 對簡短專案的小型小組而言，頂多只要簡述商務概念和某些設計模式的類別圖即可；而分散在多個區域的大型專案可能會更加需要詳細資料。  
   
-##  <a name="BigDecisions"></a>架構模式  
+##  <a name="BigDecisions"></a> 架構模式  
  在開發初期，您必須選擇此設計所仰賴的主要技術和項目。 進行這些選擇的區域包含下列各項：  
   
 -   基本技術的選擇，例如在資料庫與檔案系統之間選擇，以及在網路應用程式和網頁用戶端之間選擇等等。  
@@ -80,7 +78,7 @@ ms.lasthandoff: 02/09/2018
   
  您所做的選擇會影響您使用及解譯此架構模型的方式。 例如，在使用資料庫的系統中，類別圖中的關聯可能代表資料庫中的關聯或外部索引鍵，而在以 XML 檔案為基礎的系統中，關聯可能表示使用 XPath 的交互參考。 在分散式系統中，循序圖中的訊息可以代表連線上的訊息，而在獨立的應用程式中，它們可以代表函式呼叫。  
   
-##  <a name="Patterns"></a>設計模式  
+##  <a name="Patterns"></a> 設計模式  
  設計模式會概述如何設計此軟體的特定層面，特別是在系統不同部分中重複出現的層面。 您可以藉由在整個專案中採用統一的方式，降低設計成本、確保使用者介面的一致性，並且降低了解和變更程式碼的成本。  
   
  某些一般設計模式 (例如「觀察器」) 是已知且廣泛適用的設計模式。 此外，也有僅適用於您專案的模式。 例如，在 Web 銷售系統程式碼中會有一些作業，其中的客戶訂單受到變更。 為了確保此訂單的狀態會精確地顯示在每個階段中，這些作業全部都必須遵循特定的通訊協定來更新該資料庫。  
@@ -105,7 +103,7 @@ ms.lasthandoff: 02/09/2018
   
 -   開發人員能夠採用之變化的描述。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將程式碼視覺化](../modeling/visualize-code.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [開發模型中的測試](../modeling/develop-tests-from-a-model.md)   

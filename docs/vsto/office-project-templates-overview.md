@@ -1,12 +1,10 @@
 ---
-title: "Office 專案範本概觀 |Microsoft 文件"
-ms.custom: 
+title: Office 專案範本概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [VSTO 增益集](#AppLevel)  
   
- 這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 這些類型的 Office 方案的詳細比較，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  Office 專案範本位於 [ **新增專案** ] 對話方塊之 [ **Visual C#** ] 和 [ **Visual Basic** ] 語言節點的 [ **Office** ] 節點底下。 每個範本都會根據目標應用程式產生具有適當組態的專案，包括組件參考和偵錯設定。  
   
@@ -169,7 +168,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="excel-add-ins-xla-files"></a>Excel 增益集 (.xla 檔)  
  目前沒有可建立 Excel VSTO 增益集 (.xla 檔案) 的 Office 專案。 雖然可以將活頁簿存成 .xla 檔案，但這不是支援的作業，不建議這樣做。 如果將具有 managed 程式碼擴充，為活頁簿**Microsoft Office Excel 增益集 (\*.xla)**檔案中，您可以選取在**增益集**套用至另一個活頁簿的對話方塊。 在某些情況下，套用 VSTO 增益集以後，程式碼會在目標活頁簿中執行，但是目前並不支援這樣使用 Office 方案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   

@@ -1,12 +1,10 @@
 ---
-title: "自訂工作窗格 |Microsoft 文件"
-ms.custom: 
+title: 自訂工作窗格 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  當 VSTO 增益集卸載時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動清除自訂工作窗格使用的資源。 請勿呼叫<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>或<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>方法`ThisAddIn_Shutdown`專案中的事件處理常式。 因為 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在呼叫 `ThisAddIn_Shutdown` 之前先清除 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件使用的資源，所以這些方法會擲回 <xref:System.ObjectDisposedException>。 如需有關`ThisAddIn_Shutdown`，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>管理多個應用程式視窗中的自訂工作窗格  
+##  <a name="Managing"></a> 管理多個應用程式視窗中的自訂工作窗格  
  在使用多重視窗的應用程式中建立自訂工作窗格以顯示文件和其他項目時，需要採取額外步驟以確保工作窗格能夠在使用者需要時顯示。  
   
  所有應用程式中的自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢視。 顯示相關聯的視窗時才能顯示工作窗格。 但是，並非所有應用程式都以相同方式來使用文件框架視窗。  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 管理工作窗格在 Word VSTO 增益集？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 [總管] 視窗可顯示資料夾內容，而 [檢查] 視窗則會顯示電子郵件訊息或工作之類的項目。  
   
  如果要在多個 [總管] 或 [檢查] 視窗中顯示自訂工作窗格，您需要在 [總管] 或 [檢查] 視窗開啟時，建立自訂工作窗格的新執行個體。 若要這麼做，請在建立 [總管] 或 [檢查] 視窗時處理引發的事件，然後在事件處理常式中建立工作窗格。 您也可以處理 [總管] 與 [檢查] 事件，依據可見的視窗來隱藏或顯示工作窗格。  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  如果您沒有明確移除自訂工作窗格，Outlook 視窗可能會顯示自訂工作窗格的多個執行個體。 Outlook 有時會回收視窗，而回收的視窗會保留對其附加之任何自訂工作窗格的參考。  
   
-##  <a name="WordAndInfoPath"></a>Word、 InfoPath 和 PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word、 InfoPath 和 PowerPoint  
  Word、InfoPath 和 PowerPoint 會顯示不同文件框架視窗中的每份文件。 當您建立這些應用程式的自訂工作窗格時，自訂工作窗格只會與特定文件相關聯。 如果使用者開啟不同的文件，則自訂工作窗格會等到先前的文件重新顯示之後才會取消隱藏。  
   
  如果要在多份文件中顯示自訂工作窗格，可以在使用者建立新文件或開啟現有文件時，建立自訂工作窗格的新執行個體。 若要這麼做，請在建立或開啟文件時處理引發的事件，然後在事件處理常式中建立工作窗格。 您也可以處理文件事件，依據可見的文件來隱藏或顯示工作窗格。  
@@ -225,7 +224,7 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [逐步解說： 自動化從自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [逐步解說： 使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   

@@ -1,27 +1,27 @@
 ---
-title: "在 Visual Studio 中對 Python 程式碼進行偵錯 | Microsoft Docs"
-description: "在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。"
-ms.custom: 
+title: 偵錯 Python 程式碼 | Microsoft Docs
+description: 在 Visual Studio 中針對 Python 程式碼的偵錯功能逐步解說，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -49,7 +49,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 ## <a name="basic-debugging"></a>基本偵錯
 
-基本偵錯工作流程包含設定中斷點、逐步執行程式碼、檢查值和處理例外狀況，如下列各節所述。 如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
+基本偵錯工作流程包含設定中斷點、逐步執行程式碼、檢查值和處理例外狀況，如下列各節所述。
 
 您可以透過 [偵錯 (Debug)] > [開始偵錯 (Start Debugging)] 命令、工具列上的 [開始] 按鈕或 F5 鍵開始偵錯工作階段。 這些動作會啟動您專案的啟動檔案 (在方案總管中以粗體顯示) 就會以專案的使用中環境和已在 [專案屬性] 中指定的任何命令列引數或搜尋路徑啟動 (請參閱[專案偵錯選項](#project-debugging-options))。 **Visual Studio 2017 15.6 版**及更新版本會在您沒有啟動檔案集的情況下警示您；較舊的版本可能會在 Python 解譯器執行的情況下開啟輸出視窗，或是該輸出視窗可能會短暫出現並消失。 無論情況為何，請以滑鼠右鍵按一下適當的檔案，然後選取 [設定為啟動檔案]。
 
@@ -198,3 +198,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 [互動式偵錯] 視窗有自己的一組選項，您可以透過 [工具] > [選項] > [Python 工具] > [互動式偵錯視窗] 來存取。 不同於一般 [Python 互動式 (Python Interactive)] 視窗針對各個 Python 環境有不同的執行個體，[偵錯互動式視窗 (Debug Interactive Window)] 只有一個，而且一律使用 Python 解譯器進行處理序偵錯。 請參閱[選項 - 偵錯選項](python-support-options-and-settings-in-visual-studio.md#debugging-options)。
 
 ![[偵錯互動式視窗 (Debug Interactive Window)] 選項](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>另請參閱
+
+如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugger-feature-tour.md)。

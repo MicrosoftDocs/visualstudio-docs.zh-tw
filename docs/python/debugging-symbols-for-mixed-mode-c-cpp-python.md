@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio 中的 Python/C++ 混和模式符號偵錯 | Microsoft Docs"
-description: "Visual Studio 如何針對完全混合模式的 C++ 和 Python 偵錯提供載入符號的功能。"
-ms.custom: 
+title: Python/C++ 混和模式符號偵錯 | Microsoft Docs
+description: Visual Studio 如何針對完全混合模式的 C++ 和 Python 偵錯提供載入符號的功能。
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2f309e50337195dc0e4057ce34f56e2575ec1b61
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 02c7465df84776f57ef7748b9838acbb54f5be9b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 

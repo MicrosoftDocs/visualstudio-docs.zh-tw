@@ -1,25 +1,23 @@
 ---
-title: "撰寫 T4 文字範本 |Microsoft 文件"
-ms.custom: 
+title: 撰寫 T4 文字範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含"\<html > …"以及所有其他標準部分的 HTML 網頁。 插入至範本是*控制區塊*，其為程式碼片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  如需詳細資訊，請參閱[T4 匯入指示詞](../modeling/t4-import-directive.md)。  
   
-###  <a name="Include"></a>包括程式碼和文字  
+###  <a name="Include"></a> 包括程式碼和文字  
  `include` 指示詞會插入另一個範本檔中的文字。 例如，此指示詞會插入 `test.txt` 的內容。  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **將檔案載入為可巡覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)建立一組類別，您可以讀取 XML 資料。  
   
- **編輯圖表或表單中的模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供工具，可讓您編輯模型圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
+ **編輯圖表或表單中的模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供工具，可讓您編輯模型圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>設計階段範本中的相對檔案路徑  
  在[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，如果您想要參考與文字範本，使用相對之位置中的檔案`this.Host.ResolvePath()`。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：  

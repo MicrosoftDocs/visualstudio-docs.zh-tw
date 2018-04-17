@@ -1,26 +1,26 @@
 ---
-title: "目標建置順序 | Microsoft Docs"
-ms.custom: 
+title: 目標建置順序 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="target-build-order"></a>目標建置順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
@@ -113,7 +113,7 @@ ms.lasthandoff: 02/09/2018
   
 2.  執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
   
-3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
+3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。
   
 4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
   

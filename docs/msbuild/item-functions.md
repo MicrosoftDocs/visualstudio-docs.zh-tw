@@ -1,26 +1,26 @@
 ---
-title: "Item 函式 | Microsoft Docs"
-ms.custom: 
+title: Item 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 
+caps.latest.revision: 28
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca0ed4d1f895216e9fb3a015796a2f9e4f95087
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="item-functions"></a>Item 函式
 從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式來取得專案中項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。  
@@ -104,5 +104,5 @@ ms.lasthandoff: 02/09/2018
   -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [項目](../msbuild/msbuild-items.md)

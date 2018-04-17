@@ -1,20 +1,18 @@
 ---
-title: "逐步解說： 使用 XSLT 階層 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用 XSLT 階層 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e36ebaec08d09cbf006f4c20e743b5c2a909169
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.openlocfilehash: a4259a06d79588983e3591510c40e119bc4fcb3b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 

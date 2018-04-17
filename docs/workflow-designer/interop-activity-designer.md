@@ -1,5 +1,5 @@
 ---
-title: "Interop 活動設計工具 |Microsoft 文件"
+title: Interop 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ddc9cddbd8101932860bd2a2525186ff9ff36b6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bbac122e2e12844249be8dad37d6bed65b90ddc3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 **Interop**活動設計工具用來建立及設定<xref:System.Activities.Statements.Interop>活動。

@@ -1,11 +1,11 @@
 ---
-title: "AssignCulture 工作 | Microsoft Docs"
-ms.custom: 
+title: AssignCulture 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 40fb47caea1b9fcb0d25d45495cf3e3c1d3e04fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture 工作
 這項工作接受項目清單檔案名稱中包含有效的 .NET 文化特性識別碼字串，而產生的項目有包含對應的文化特性識別碼中繼資料，名為 `Culture`。 例如，檔案名稱 Form1.fr-fr.resx 有內嵌的文化特性識別碼 "fr-fr"，所以此工作會產生中繼資料 `Culture` 等於 `fr-fr` 的同檔名項目。 工作也會產生檔名移除了文化特性的檔案名稱清單。  
@@ -82,6 +82,6 @@ ms.lasthandoff: 02/09/2018
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (沒有其他的中繼資料)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (` (沒有其他的中繼資料)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

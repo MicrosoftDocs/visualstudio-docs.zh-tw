@@ -1,26 +1,26 @@
 ---
-title: "選取並安裝 Python 解譯器 | Microsoft Docs"
-description: "Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。"
-ms.custom: 
+title: 選取並安裝 Python 解譯器 | Microsoft Docs
+description: Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>安裝 Python 解譯器
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。
 
-針對 Visual Studio 2015 及更早版本，您必須安裝其中一個解譯器。
+針對 **Visual Studio 2015 及更早版本**，您必須安裝其中一個解譯器。
 
 Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄中的 Python 註冊](https://www.python.org/dev/peps/pep-0514/) \(英文\))，以自動偵測每個安裝的 Python 解譯器與其環境。
 

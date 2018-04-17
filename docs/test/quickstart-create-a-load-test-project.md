@@ -1,0 +1,93 @@
+---
+title: 在 Visual Studio 中建立 Web 效能和負載測試專案 | Microsoft Docs
+ms.date: 03/14/2018
+ms.topic: quickstart
+helpviewer_keywords:
+- load testing, quickstart
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-ide-test
+ms.openlocfilehash: be2a60cad77f2806c3be59e86509ff96d9c416ed
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/19/2018
+---
+# <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
+
+在此 10 分鐘的快速入門中，您將了解如何在 Visual Studio 中建立及執行 Web 效能和負載測試專案。 負載測試可執行 Web 效能或單元測試，以模擬同時存取某部伺服器的多位使用者。
+
+> [!IMPORTANT]
+> 只有 Visual Studio 2017 Enterprise 版中可以使用 Web 效能和負載測試專案。
+
+## <a name="install-the-load-testing-component"></a>安裝負載測試元件
+
+如果您尚未安裝 Web 效能與負載測試工具元件，您需要透過 Visual Studio 安裝程式來安裝它。
+
+1. 從 Windows 的 [開始] 功能表開啟 Visual Studio 安裝程式。 您也可以在 Visual Studio 中，從 [新增專案] 對話方塊，或從功能表選擇 [工具] > [取得工具與功能...] 來存取它。
+
+1. 在 Visual Studio 安裝程式中，選擇 [個別元件] 索引標籤，然後向下捲動至 [偵錯和測試] 區段。 選取 [Web 效能與負載測試工具]。
+
+   ![Web 效能與負載測試工具元件](media/web-perf-load-testing-tools-component.png)
+
+1. 選擇 [修改] 按鈕。
+
+   Web 效能與負載測試工具元件隨即安裝。
+
+## <a name="create-a-load-test-project"></a>建立負載測試專案
+
+在本節中，我們將建立 C# 負載測試專案。 如果您想要的話，您也可以建立 Visual Basic 負載測試專案。
+
+1. 開啟 Visual Studio，然後從功能表列選擇 [檔案] > [新增] > [專案...]。
+
+   [ **新增專案** ] 對話方塊隨即開啟。
+
+1. 在 [新增專案] 對話方塊中，依序展開 [已安裝的] 和 [Visual C#]，然後選取 [測試] 分類。 選擇 [Web 效能和負載測試專案] 範本。
+
+   ![Web 效能和負載測試專案範本](media/web-perf-load-test-project-template.png)
+
+1. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [確定]。
+
+   Visual Studio 會建立專案，並在 [方案總管] 中顯示檔案。 專案一開始只會包含一個名為 *WebTest1.webtest* 的 Web 測試檔案。
+
+## <a name="add-a-load-test-to-the-project"></a>將負載測試新增至專案
+
+1. 從 [方案總管] 之專案節點的右鍵功能表或操作功能表，選擇 [新增] > [負載測試...]。
+
+   [新增負載測試精靈] 隨即開啟。
+
+1. 選取 [內部部署負載測試] 選項，然後選擇 [下一步]。 您可以在[這裡](/vsts/load-test/get-started-simple-cloud-load-test)深入了解雲端式負載測試。
+
+   ![新增負載測試精靈 - 第一頁](media/load-test-wizard-page-1.png)
+
+1. 選擇 [下一步] 逐步執行精靈，直到您到達 [將測試新增至負載測試情節，並且編輯測試混合] 頁面。 選擇 [ **加入** ] 按鈕。
+
+   [新增測試] 對話方塊隨即開啟。
+
+1. 在 [可用的測試] 底下選取 **WebTest1**，然後選擇向右箭號，將它移至 [選取的測試] 方塊。 選擇 [確定]  按鈕。
+
+   ![[新增測試] 對話方塊](media/add-tests-dialog-box.png)
+
+1. 回到 [新增負載測試精靈]，選擇 [完成] 按鈕。
+
+   這會將負載測試新增至專案，並在編輯器視窗中開啟負載測試檔案。
+
+## <a name="run-the-load-test"></a>執行負載測試
+
+我們已建立負載測試，雖然功能不多，但讓我們繼續執行。
+
+從編輯器中開啟之負載測試的右鍵功能表或操作功能表，選擇 [執行負載測試]。
+
+![[執行負載測試] 功能表](media/run-load-test.png)
+
+負載測試開始執行。 [測試結果] 視窗會顯示測試正在進行，並在編輯器視窗中顯示負載測試分析器。 測試完成之後 (如果您接受預設值則應為 5 分鐘之後)，摘要會顯示在編輯器中。 您可以選擇 [圖形]、[資料表] 或 [詳細資料]，來取得有關負載測試結果的不同資訊。
+
+![負載測試分析器視窗](media/load-test-analyzer.png)
+
+## <a name="next-steps"></a>後續步驟
+
+現在您已建立簡單的負載測試專案，下一個步驟是設定情節、計數器集合與回合設定。
+
+> [!div class="nextstepaction"]
+> [編輯測試設定](edit-load-tests.md)

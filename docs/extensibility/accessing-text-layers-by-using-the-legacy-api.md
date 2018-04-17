@@ -1,24 +1,27 @@
 ---
-title: "使用舊版 API 存取文字層 |Microsoft 文件"
-ms.custom: 
+title: 使用舊版 API 存取文字層 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - text layers
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
 文字層通常會封裝文字配置的某些層面。 比方說，「 函式-一次 「 圖層會隱藏的文字之前和之後包含插入號 （文字插入點） 的函式。  
@@ -48,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
 -   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，文字層必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>引發的事件和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>介面。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂編輯器中著色的語法](../extensibility/syntax-coloring-in-custom-editors.md)   
  [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [使用舊版 API 自訂編輯器控制項和功能表](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

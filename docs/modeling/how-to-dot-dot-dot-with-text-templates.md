@@ -1,21 +1,19 @@
 ---
-title: "如何 … with 文字範本 |Microsoft 文件"
-ms.custom: 
+title: 如何 … with 文字範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef3440e9b330860c8438b997c9c0e8b3c4fe0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 文字範本中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供有用的方式產生任何類型的文字。 您可以使用文字範本產生的文字，做為您的應用程式的一部分的執行階段，並在設計階段產生的專案程式碼部分。 本主題摘要說明最常要求 「 如何？...」 問題。  
@@ -79,7 +77,7 @@ ms.lasthandoff: 02/09/2018
   
      如需詳細資訊，請參閱[開始使用的特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)和[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>要從取得資料[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>要從取得資料 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  若要使用所提供的服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，由組`hostSpecific`屬性，並載入`EnvDTE`組件。 例如:   
   
 ```csharp  
@@ -101,7 +99,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>一般問題  
   
-###  <a name="starting"></a>若要開始撰寫文字範本的最佳方式為何？  
+###  <a name="starting"></a> 若要開始撰寫文字範本的最佳方式為何？  
   
 1.  寫入所產生檔案的特定範例。  
   

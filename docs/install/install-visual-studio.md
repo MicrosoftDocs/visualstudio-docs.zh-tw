@@ -19,14 +19,14 @@ helpviewer_keywords:
 - Visual Studio installer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1291e2ca304ed770eeee28c4996f68d2d07adb
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 歡迎使用安裝 Visual Studio 的新方式！ 在這個最新的版本之中，您將能更輕鬆地選取和安裝所需的功能。 我們也已經減少 Visual Studio 的最少使用量，使它能以更快的速度完成安裝，並對系統產生較少的影響。

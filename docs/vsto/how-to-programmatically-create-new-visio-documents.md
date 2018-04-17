@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式建立新的 Visio 文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式建立新的 Visio 文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 072a279bd342f60f8ebfb307a880c39bdc8b2d51
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e2dd64b2996df4ed75cd45cd741619658f9b3654
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以程式設計方式建立新的 Visio 文件
   當您建立新的 Microsoft Office Visio 繪圖文件時，您會將它加入 Microsoft.Office.Interop.Visio.Documents 開啟 Visio 文件的集合。 因此，Microsoft.Office.Interop.Visio.Documents.Add 方法會建立新的 Visio 繪圖文件。 如需詳細資訊，請參閱 Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](http://msdn.microsoft.com/library/office/ff766868.aspx) 方法的 VBA 參考文件。  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [我的文件] 資料夾 (Windows XP 及更早版本) 或 [文件] 資料夾 (Windows Vista) 中，名為 `myTemplate.vst` 的目錄中必須有名為 `Test` 的 Visio 文件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [如何： 以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)   

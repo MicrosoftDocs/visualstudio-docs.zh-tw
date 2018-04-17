@@ -1,11 +1,11 @@
 ---
-title: "使用程式碼片段的最佳做法 | Microsoft Docs"
-ms.custom: 
+title: 使用程式碼片段的最佳做法 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/09/2018
 
 當您調整應用程式的檔案位置時，請考慮下列事項：
 
-- 尋找可存取的位置。 使用者可能無法存取電腦的 Program Files 資料夾，因此儲存檔案和應用程式檔案的作業可能無法正常運作。
+- 尋找可存取的位置。 使用者可能無法存取電腦的 *Program Files* 資料夾，因此應用程式檔案的存檔作業可能無法正常運作。
 
 - 尋找安全位置。 將檔案儲存在根資料夾 (*C:\\*) 並不安全。 若是應用程式資料，建議儲存在 *Application Data* 資料夾。 若是個別使用者資料，應用程式可以在 *Documents* 資料夾中為每位使用者建立檔案。
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 02/09/2018
 
 - 將資料傳遞至指令碼技術
 
-如需詳細資訊，請參閱[設定應用程式的安全性](../ide/securing-applications.md)。
+如需詳細資訊，請參閱[保護應用程式](../ide/securing-applications.md)。
 
 ## <a name="downloaded-code-snippets"></a>已下載的程式碼片段
 
@@ -74,5 +74,5 @@ Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性�
 ## <a name="see-also"></a>另請參閱
 
 [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[設定應用程式的安全性](../ide/securing-applications.md)  
+[保護應用程式](../ide/securing-applications.md)  
 [程式碼片段](../ide/code-snippets.md)

@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::GetMemoryBytes |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::GetMemoryBytes |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::GetMemoryBytes
-helpviewer_keywords: IDebugProgram2::GetMemoryBytes
+f1_keywords:
+- IDebugProgram2::GetMemoryBytes
+helpviewer_keywords:
+- IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c92d29fcf78b5a945662538cc3c41c7c8a625ca7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie |Microsoft 文件"
-ms.custom: 
+title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-helpviewer_keywords: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+f1_keywords:
+- IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+helpviewer_keywords:
+- IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c0fa2d9d863877f63f69e93e18e67baaac74408b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

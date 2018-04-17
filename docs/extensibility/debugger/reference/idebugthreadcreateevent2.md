@@ -1,20 +1,24 @@
 ---
-title: "IDebugThreadCreateEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugThreadCreateEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThreadCreateEvent2
-helpviewer_keywords: IDebugThreadCreateEvent2
+f1_keywords:
+- IDebugThreadCreateEvent2
+helpviewer_keywords:
+- IDebugThreadCreateEvent2
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1fe8de545d8d9f3c2f5fa3778d1df759844ad1ee
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,13 +1,10 @@
 ---
-title: "疑難排解 SharePoint 解決方案 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解 SharePoint 解決方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱[偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -217,7 +214,7 @@ ms.lasthandoff: 01/10/2018
  如果您重新命名匯入的清單執行個體，然後將它設為執行中，就會發生這個問題[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 ### <a name="error-message"></a>錯誤訊息  
- 建置錯誤： 部署步驟啟用功能時發生錯誤： 檔案 Template\Features\\[*匯入專案**功能**名稱*] \Files\Lists\\[*舊**清單名稱*] \Schema.xml 不存在。  
+ 建置錯誤： 部署步驟啟用功能時發生錯誤： 檔案 Template\Features\\[*匯入專案**功能**名稱*] \Files\Lists\\[*舊 * * 清單名稱*] \Schema.xml 不存在。  
   
 ### <a name="resolution"></a>解決方式  
  當您匯入的清單執行個體時，就會名為 CustomSchema 屬性加入至清單執行個體的 Elements.xml 檔案中。 Elements.xml 包含自訂 schema.xml 清單執行個體的路徑。 當您重新命名的清單執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 自訂 schema.xml 的部署路徑變更，但 CustomSchema 屬性的路徑值不會更新。 如此一來，清單執行個體中找不到 schema.xml 檔案舊啟用此功能時，會將 CustomSchema 屬性所指定的路徑。  
@@ -282,7 +279,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="resolution"></a>解決方式  
  若要解決此問題，請確定 Visual Studio 中 SharePoint 專案的 [網站 URL] 屬性值符合指派給 Web 應用程式之備用存取對應預設區域的 URL。 使用另一個區域 (例如內部網路) 做為 URL 無法解決此錯誤。 專案的網站 URL 和預設區域中的 URL 必須相符。 若要存取備用存取對應，開啟 SharePoint 2010 管理中心公用程式中，選擇**應用程式管理**連結，然後在**Web 應用程式**，選擇**設定備用存取對應**連結。 如需詳細資訊，請參閱[建立 Web 應用程式的區域](http://go.microsoft.com/fwlink/?LinkId=192274)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SharePoint 封裝和部署疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Visual Studio 偵錯](/visualstudio/debugger/debugging-in-visual-studio)  

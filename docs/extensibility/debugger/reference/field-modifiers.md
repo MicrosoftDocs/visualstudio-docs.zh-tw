@@ -1,20 +1,24 @@
 ---
-title: "FIELD_MODIFIERS |Microsoft 文件"
-ms.custom: 
+title: FIELD_MODIFIERS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: FIELD_MODIFIERS
-helpviewer_keywords: FIELD_MODIFIERS enumeration
+f1_keywords:
+- FIELD_MODIFIERS
+helpviewer_keywords:
+- FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 98f6e4d3f187261bcf9c0d1ad3959093d864e222
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,23 +1,21 @@
 ---
-title: "如何： 從 XML 編輯器執行 XSLT 轉換 |Microsoft 文件"
-ms.custom: 
+title: 如何： 從 XML 編輯器執行 XSLT 轉換 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2ce56195d0bc9750af3b869cb3e8bb0a780fdcde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>HOW TO：從 XML 編輯器執行 XSLT 轉換
 XML 編輯器可讓您將 XSLT 樣式表與 XML 文件相關聯、執行轉換，以及檢閱輸出。 XSLT 轉換的結果輸出會顯示在新文件視窗中。  
@@ -66,5 +64,5 @@ XML 編輯器可讓您將 XSLT 樣式表與 XML 文件相關聯、執行轉換�
   
      XSLT 轉換結果的輸出會顯示在新的文件視窗和 [輸出] 視窗中使用的編輯器取決於檔案的副檔名您**輸出**文件屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)

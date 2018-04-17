@@ -1,12 +1,10 @@
 ---
-title: "建立項目範本和專案範本之 SharePoint 專案項目的 |Microsoft 文件"
-ms.custom: 
+title: 建立項目範本和專案範本之 SharePoint 專案項目的 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>為 SharePoint 專案項目建立項目範本和專案範本
   當您定義自訂 SharePoint 專案項目類型時，您可以將它與項目範本或專案範本，讓其他開發人員可以使用 Visual Studio 中的專案項目。 您也可以建立範本的精靈。  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  項目範本和專案範本是.zip 檔案，其中包含由 Visual Studio 用來建立專案項目或專案的檔案。 如需項目範本和專案範本的基本概念的詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
   
-##  <a name="creatingitemtemplates"></a>建立項目範本  
+##  <a name="creatingitemtemplates"></a> 建立項目範本  
  當您建立 SharePoint 專案項目的項目範本時，還有一些檔案，永遠是必要的和的特定類型的專案項目可能會使用的選擇性檔案。 如需示範如何定義 SharePoint 專案項目類型，並為其建立的項目範本的逐步解說，請參閱[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  下表列出必要的檔案，以建立 SharePoint 專案項目的項目範本。  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
  如需示範如何建立項目範本和專案範本的精靈的逐步解說，請參閱[逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)和[逐步解說： 建立站台資料行專案項目，使用專案範本，第 2 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [逐步解說： 建立自訂動作專案項目包含項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   

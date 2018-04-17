@@ -1,12 +1,10 @@
 ---
-title: "功能區概觀 |Microsoft 文件"
-ms.custom: 
+title: 功能區概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b7effa41d667a33d43159df4688403321f24eeea
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: dcd53d1b5d38ff144536f0dea62e441cb2b23072
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區可組織相關的命令，以便輕鬆找到它們。 命令會顯示為功能區上的控制項。 控制項會組織成*群組*沿著在應用程式視窗的頂端邊緣的水平區域。 相關的群組會組織在索引標籤上。  

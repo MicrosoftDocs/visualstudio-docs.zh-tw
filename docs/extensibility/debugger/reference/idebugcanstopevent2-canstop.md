@@ -1,20 +1,24 @@
 ---
-title: "IDebugCanStopEvent2::CanStop |Microsoft 文件"
-ms.custom: 
+title: IDebugCanStopEvent2::CanStop |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCanStopEvent2::CanStop
-helpviewer_keywords: IDebugCanStopEvent2::CanStop
+f1_keywords:
+- IDebugCanStopEvent2::CanStop
+helpviewer_keywords:
+- IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7c5fe4c0ab03e6f0683fff3d43658fde5bc90bf0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

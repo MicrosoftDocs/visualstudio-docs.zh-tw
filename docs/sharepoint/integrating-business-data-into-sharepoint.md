@@ -1,12 +1,10 @@
 ---
-title: "將商業資料整合至 SharePoint |Microsoft 文件"
-ms.custom: 
+title: 將商業資料整合至 SharePoint |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c054049c09f13c224ee4f0bb3021af1121f5cea8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 91524d979d345da3ccbfd71ba07ce51f6e1c17c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>將商業資料整合至 SharePoint
   您可以將商業資料整合至 SharePoint。 商務資料可以來自後端伺服器應用程式，例如[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]、 Siebel 和 SAP，或 Web 服務。 使用者可以檢視、 新增、 更新或刪除外部清單或商務資料 Web 組件在 SharePoint 中使用的商務資料。  使用者也可以存取此資料離線的 Microsoft Office 應用程式，例如 Microsoft Outlook。 如需詳細資訊，請參閱[其中可以您顯示外部資料](http://go.microsoft.com/fwlink/?LinkId=169295)。  

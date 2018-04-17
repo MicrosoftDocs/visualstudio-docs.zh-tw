@@ -1,13 +1,10 @@
 ---
-title: "Visio 方案 |Microsoft 文件"
-ms.custom: 
+title: Visio 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], Visio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 558ddc7a9c0fee5305052143edaca2b88b097723
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a5cf82776989d21be60c38aff280d7f9613327c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visio-solutions"></a>Visio 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Visio 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Visio、擴充 Visio 功能，或自訂 Visio 的使用者介面 (UI)。  
   
- 如需 VSTO 增益集的詳細資訊，請參閱下列主題： [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) 和 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。如果您不熟悉使用 Microsoft Office 進行程式設計，請參閱[入門 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)。  
+ 如需 VSTO 增益集的詳細資訊，請參閱下列主題： [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) 和 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。如果您不熟悉使用 Microsoft Office 進行程式設計，請參閱[入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)。  
   
  **適用對象：** 本主題資訊適用於 Visio 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
   
  若要存取 VSTO 增益集中的 Visio 物件模型，請使用專案中 `Application` 類別的 `ThisAddIn` 欄位。 `Application`欄位傳回 Microsoft.Office.Interop.Visio.Application 物件，代表 Visio 目前執行個體。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
- 呼叫 Visio 物件模型時，您使用的類型是由 Visio 的主要 Interop 組件 (PIA) 所提供。 PIA 的作用，如同 VSTO 增益集中 Managed 程式碼與 Visio 中 COM 物件模型之間的橋樑。 Visio PIA 中的所有類型都定義 Microsoft.Office.Interop.Visio 命名空間中。 如需主要 interop 組件的詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)和[Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)。  
+ 呼叫 Visio 物件模型時，您使用的類型是由 Visio 的主要 Interop 組件 (PIA) 所提供。 PIA 的作用，如同 VSTO 增益集中 Managed 程式碼與 Visio 中 COM 物件模型之間的橋樑。 Visio PIA 中的所有類型都定義 Microsoft.Office.Interop.Visio 命名空間中。 如需主要 interop 組件的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)和[Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="visio-object-model-overview"></a>Visio 物件模型概觀  
  您可以在 [Visio Object Model Overview](../vsto/visio-object-model-overview.md)中找到 Visio 物件模型的概觀，其包含 Visio 物件模型參考和 SDK 的連結。  
@@ -70,9 +67,9 @@ ms.lasthandoff: 01/10/2018
   
  如需 Visio 自訂 UI 的相關資訊，請參閱 VBA 參考文件的 [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) 類別。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   

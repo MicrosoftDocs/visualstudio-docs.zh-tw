@@ -1,19 +1,22 @@
 ---
-title: "IDebugCodeContext3::GetProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugCodeContext3::GetProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugCodeContext3::GetProcess
+helpviewer_keywords:
+- IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4689a8fb1cb546187d33cc2aefcbb9d8141fa42f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

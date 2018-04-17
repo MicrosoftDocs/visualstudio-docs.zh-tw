@@ -1,24 +1,22 @@
 ---
-title: "中的特定領域語言驗證 |Microsoft 文件"
-ms.custom: 
+title: 中的特定領域語言驗證 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 94be1947136d2e118cf4a015e6c962eb45e94eae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 身為網域指定的語言 (DSL) 的作者，您可以定義驗證條件約束，以驗證使用者建立的模型是否有意義。 例如，如果您的 DSL 允許使用者繪製人們與其祖先的家譜，您可以撰寫條件約束，確保孩子的出生日期晚於父母的出生日期。  
@@ -142,7 +140,7 @@ public partial class ParentsHaveChildren
   
  此範例會套用至下列網域模型。 ParentsHaveChildren 關聯性具有名為 Child 和 Parent 的角色。  
   
- ![DSL 定義圖表 &#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>驗證分類  
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 屬性中，您可以指定何時應執行驗證方法。  
@@ -303,7 +301,7 @@ namespace Company.FamilyTree
   
  在影響連結或項目的復原或取消復原作業之後，也會呼叫處理常式。  
   
-##  <a name="custom"></a>自訂驗證類別  
+##  <a name="custom"></a> 自訂驗證類別  
  除了標準驗證分類 (例如功能表和開啟) 之外，您還可以定義自己的分類。 您可以從程式碼叫用這些分類。 使用者無法直接叫用這些分類。  
   
  自訂分類的一般用法是，定義一個分類以測試模型是否滿足特定工具的前置條件。  
@@ -331,7 +329,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>驗證的替代方案  
+##  <a name="alternatives"></a> 驗證的替代方案  
  驗證條件約束會報告錯誤，但不會變更模型。 如果您想避免模型無效，可以使用其他方法。  
   
  但是，不建議使用這些方法。 通常比較好的做法是，讓使用者決定如何修正無效的模型。  
@@ -343,6 +341,6 @@ validationController.ValidateCustom
 > [!WARNING]
 >  確定使用者知道已調整或已復原變更。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)

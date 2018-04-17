@@ -1,10 +1,7 @@
 ---
-title: "測試總管常見問題集 | Microsoft Docs"
+title: Visual Studio 測試總管常見問題集 | Microsoft Docs
 ms.date: 1/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Test Explorer
@@ -18,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 
@@ -73,6 +70,10 @@ ms.lasthandoff: 03/12/2018
   專案、命名空間和類別群組旁的圖示，反映出該群組內的測試狀態。 請參閱下表。
 
   ![測試總管階層圖示](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10.在 [測試總管] 搜尋方塊中，已無「檔案路徑」篩選條件。
+
+已在 Visual Studio 2017 的 15.7 版 Preview 3 將 [測試總管] 搜尋方塊中的檔案路徑篩選條件移除。 此功能的使用量低，而且排除這項功能，[測試總管] 可以更快速地擷取測試方法。 如果此變更中斷您的開發流程，請在[開發人員社群](https://developercommunity.visualstudio.com/)提交意見反應來告訴我們。
 
 ## <a name="features"></a>功能
 
@@ -90,10 +91,10 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > 您可以使用相同的命令來關閉旗標，方法是在 dword 之後使用 0 作為值而不是 1。
-  
+
 ## <a name="see-also"></a>另請參閱
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>  
-[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
-[對程式碼進行單元測試](unit-test-your-code.md)
-[即時單元測試常見問題集](live-unit-testing-faq.md)
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
+- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [對程式碼進行單元測試](unit-test-your-code.md)
+- [即時單元測試常見問題集](live-unit-testing-faq.md)

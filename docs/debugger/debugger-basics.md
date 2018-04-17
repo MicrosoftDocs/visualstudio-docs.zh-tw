@@ -1,11 +1,12 @@
 ---
-title: "偵錯工具基本概念 |Microsoft 文件"
-ms.custom: 
+title: 偵錯工具基本概念 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - debugger, about debugger
 - debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="debugger-basics"></a>偵錯工具基礎
 Visual Studio 偵錯工具讓您能夠觀察程式的執行階段行為，並找出邏輯錯誤。 偵錯工具可以與所有 Visual Studio 程式設計語言及其相關程式庫搭配使用。 藉助此偵錯工具，您可以中斷執行，以便逐步執行程式碼和評估應用程式中的變數。  
@@ -66,5 +68,5 @@ Visual Studio 偵錯工具讓您能夠觀察程式的執行階段行為，並找
  [偵錯工具安全性](../debugger/debugger-security.md)  
  描述偵錯工具的安全性做法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

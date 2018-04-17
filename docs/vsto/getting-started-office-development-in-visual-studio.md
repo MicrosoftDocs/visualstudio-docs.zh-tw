@@ -1,13 +1,10 @@
 ---
-title: "使用者入門 （Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: 使用者入門 （Visual Studio 中的 Office 程式開發） |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04be00558cd3dd22cb9aa7546d6797778b1bae2c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e0c945667f99fdd6df431413e3f1f96d06eca4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-office-development-in-visual-studio"></a>使用者入門 (Visual Studio 中的 Office 程式開發)
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。  
@@ -31,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 >  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
   
 ## <a name="in-this-section"></a>本節內容  
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  提供在 Visual Studio 中開發 Office 方案所需的背景資訊。  
   
  [變更以 .NET Framework 4 或 .NET Framework 4.5 為目標的 Office 專案設計](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  

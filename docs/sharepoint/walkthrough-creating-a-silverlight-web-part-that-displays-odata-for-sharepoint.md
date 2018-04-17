@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 建立 Silverlight Web 組件會顯示 for SharePoint 的 OData |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 Silverlight Web 組件會顯示 for SharePoint 的 OData |Microsoft 文件
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c2c66490e0eb46508fce0f346fe44563548b407
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說：建立可顯示 SharePoint 之 OData 的 Silverlight Web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是服務所實作的 RESTful ListData.svc。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會使用 ListData.svc 顯示 SharePoint 公告清單資訊。 如需詳細資訊，請參閱[SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)和[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -32,7 +29,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   支援的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支援的 Microsoft Windows 和 SharePoint 版本。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  在網址方塊中的**加入服務參考**對話方塊方塊中，輸入您的 SharePoint 網站的 URL，例如**http://MySPSite**，然後選擇 [**移**] 按鈕。  
   
-     當 Silverlight 找出 SharePoint OData 服務 ListData.svc 時，它會取代位址的完整服務 URL。 例如，http://myserver 會變成 http://myserver/_vti_bin/ListData.svc。  
+     當 Silverlight 找出 SharePoint OData 服務 ListData.svc 時，它會取代位址的完整服務 URL。 例如，http://myserver變成http://myserver/_vti_bin/ListData.svc。  
   
 4.  選擇**確定**; 按鈕以加入服務參考加入專案，並使用預設服務名稱 ServiceReference1。  
   
@@ -234,7 +231,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  存取資料時在 Silverlight 中跨網域，Silverlight 會防範可用來利用 web 應用程式的安全性弱點。 如果您在存取 Silverlight 中的遠端資料時遇到問題，請參閱[讓服務提供跨網域界限](http://go.microsoft.com/fwlink/?LinkId=223276)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [部署、發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   

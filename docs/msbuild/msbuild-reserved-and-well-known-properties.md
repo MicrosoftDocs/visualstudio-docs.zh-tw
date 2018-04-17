@@ -1,11 +1,11 @@
 ---
-title: "MSBuild 保留和已知屬性 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 保留和已知屬性 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 
+caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一組預先定義的屬性，用來儲存專案檔和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二進位檔的相關資訊。 這些屬性的評估方式與其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性相同。 例如，若要使用 `MSBuildProjectFile` 屬性，請輸入 `$(MSBuildProjectFile)`。  
   
- MSBuild 會使用下表中的值預先定義保留和已知的屬性。 保留的屬性不能覆寫，但是已知的屬性可以使用同名的環境屬性、全域屬性或專案檔中宣告的屬性加以覆寫。  
+ MSBuild 會使用下表中的值預先定義保留和已知的屬性。 保留的屬性不能覆寫，但是已知的屬性可以使用同名的環境屬性、全域屬性或專案檔中宣告的屬性加以覆寫。
   
 ## <a name="reserved-and-well-known-properties"></a>保留和已知屬性  
  下表將描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 預先定義的屬性。  
@@ -61,6 +61,23 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildThisFileName`|`MSBuildThisFileFullPath` 的檔案名稱部分，不包含副檔名。|保留|  
 |`MSBuildToolsPath`|與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的值相關聯之 `MSBuildToolsVersion` 版本的安裝路徑。<br /><br /> 不要在路徑中包含結尾的反斜線。<br /><br /> 這個屬性無法覆寫。|保留|  
 |`MSBuildToolsVersion`|用來建置專案的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具組版本。<br /><br /> 注意：[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 csc.exe 和 vbc.exe。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 及[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
-  
-## <a name="see-also"></a>請參閱  
+
+## <a name="names-that-conflict-with-msbuild-elements"></a>與 MSBuild 項目發生衝突的名稱
+
+除了上述項目，對應至 MSBuild 語言項目的名稱也無法用於使用者定義的屬性、項目或項目中繼資料：
+
+* VisualStudioProject
+* 目標
+* PropertyGroup
+* 輸出
+* ItemGroup
+* UsingTask
+* ProjectExtensions
+* OnError
+* ImportGroup
+* 選擇
+* When
+* Otherwise
+
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md) [MSBuild 屬性](../msbuild/msbuild-properties.md)

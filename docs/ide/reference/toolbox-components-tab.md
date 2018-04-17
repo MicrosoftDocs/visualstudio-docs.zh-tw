@@ -1,12 +1,12 @@
 ---
-title: "元件索引標籤、工具箱 | Microsoft Docs"
-ms.custom: 
+title: 元件索引標籤、工具箱 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Components tab
@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91db706d7e1236162ef69e6fd31e791ed44dbb
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
 

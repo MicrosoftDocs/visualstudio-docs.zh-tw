@@ -1,20 +1,24 @@
 ---
-title: "IDebugFunctionObject::CreateArrayObject |Microsoft 文件"
-ms.custom: 
+title: IDebugFunctionObject::CreateArrayObject |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugFunctionObject::CreateArrayObject
-helpviewer_keywords: IDebugFunctionObject::CreateArrayObject method
+f1_keywords:
+- IDebugFunctionObject::CreateArrayObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5dfe24252ce2ce51ff86fa680d94964b86d09365
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

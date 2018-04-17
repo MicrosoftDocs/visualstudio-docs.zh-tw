@@ -1,20 +1,20 @@
 ---
-title: "將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方 | Microsoft Docs"
-description: 
-ms.custom: 
+title: 將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方 | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 08/01/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方
 
-Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載檔案。 此頁面會列出您可能想要在部署指令碼中列入受信任「白名單」的網域 URL。
+Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載檔案。 此頁面會列出您可能想要在部署指令碼中列入受信任「允許清單」的網域 URL。
 
 如果您的環境許可，請考慮同時以 HTTP 和 HTTPS 通訊協定版本新增下列網域。
 

@@ -1,12 +1,10 @@
 ---
-title: "Office 方案逐步解說中的資料 |Microsoft 文件"
-ms.custom: 
+title: Office 方案逐步解說中的資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 方案逐步解說中的資料
   下列逐步解說示範如何處理 Microsoft Office Word 和 Microsoft Office Excel 文件層級自訂和 VSTO 增益集中的資料。  
@@ -61,13 +60,13 @@ ms.lasthandoff: 01/10/2018
  [逐步解說：變更伺服器上的活頁簿快取資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  示範如何在不啟動 Excel 的情況下，修改 Microsoft Office Excel 活頁簿中快取的資料集。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office UI 自訂逐步解說](../vsto/office-ui-customization-walkthroughs.md)   
  [安全性和部署的逐步解說](../vsto/security-and-deployment-walkthroughs.md)   
  [Office 程式開發範例](../vsto/office-development-samples.md)   
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   

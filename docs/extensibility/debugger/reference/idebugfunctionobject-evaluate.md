@@ -1,20 +1,24 @@
 ---
-title: "IDebugFunctionObject::Evaluate |Microsoft 文件"
-ms.custom: 
+title: IDebugFunctionObject::Evaluate |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugFunctionObject::Evaluate
-helpviewer_keywords: IDebugFunctionObject::Evaluate method
+f1_keywords:
+- IDebugFunctionObject::Evaluate
+helpviewer_keywords:
+- IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a665f5db26955db2d3879e0d37c07efd3856bf68
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

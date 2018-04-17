@@ -1,22 +1,25 @@
 ---
-title: "IDebugPendingBreakpoint2::SetPassCount |Microsoft 文件"
-ms.custom: 
+title: IDebugPendingBreakpoint2::SetPassCount |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPendingBreakpoint2::SetPassCount
+f1_keywords:
+- IDebugPendingBreakpoint2::SetPassCount
 helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ab9a8ceec8c0f3a1b8d6c3c18fcf9c5c2a5b0b91
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

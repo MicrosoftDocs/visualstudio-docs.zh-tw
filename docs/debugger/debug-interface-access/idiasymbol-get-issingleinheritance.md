@@ -1,15 +1,17 @@
 ---
-title: "IDiaSymbol::get_isSingleInheritance |Microsoft 文件"
-ms.custom: 
+title: IDiaSymbol::get_isSingleInheritance |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

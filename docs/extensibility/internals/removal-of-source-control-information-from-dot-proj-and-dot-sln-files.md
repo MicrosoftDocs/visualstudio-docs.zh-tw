@@ -1,19 +1,22 @@
 ---
-title: "從原始檔控制資訊移除。Proj 和。Sln 檔案 |Microsoft 文件"
-ms.custom: 
+title: 從原始檔控制資訊移除。Proj 和。Sln 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control plug-ins, .sln and .proj files
+helpviewer_keywords:
+- source control plug-ins, .sln and .proj files
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

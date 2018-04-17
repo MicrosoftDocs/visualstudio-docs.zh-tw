@@ -1,12 +1,10 @@
 ---
-title: "如何： 執行窗格加入 Word 文件或 Excel 活頁簿 |Microsoft 文件"
-ms.custom: 
+title: 如何： 執行窗格加入 Word 文件或 Excel 活頁簿 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d259442104cfbd6b072d0068ab5f2b4f182f027f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：將執行窗格加入至 Word 文件或 Excel 活頁簿
   若要加入 Microsoft Office Word 文件或 Microsoft Excel 活頁簿的 [動作] 窗格，請先建立 Windows Form 使用者控制項。 然後，將使用者控制項加入<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>屬性`ThisDocument.ActionsPane`欄位 (Word) 或`ThisWorkbook.ActionsPane`您的專案中的欄位 (Excel)。  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [逐步解說： 將文字插入文件中從 [動作] 窗格](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [如何： 管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   

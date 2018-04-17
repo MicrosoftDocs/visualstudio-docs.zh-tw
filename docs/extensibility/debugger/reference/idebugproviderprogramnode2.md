@@ -1,20 +1,24 @@
 ---
-title: "IDebugProviderProgramNode2 |Microsoft 文件"
-ms.custom: 
+title: IDebugProviderProgramNode2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProviderProgramNode2
-helpviewer_keywords: IDebugProviderProgramNode2
+f1_keywords:
+- IDebugProviderProgramNode2
+helpviewer_keywords:
+- IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8c083d9b054ecde18d1e1fff8ca5bb8cbb6be659
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

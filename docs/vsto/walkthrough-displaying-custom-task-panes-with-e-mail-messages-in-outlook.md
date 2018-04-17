@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 在 Outlook 中顯示的電子郵件訊息的自訂工作窗格 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 Outlook 中顯示的電子郵件訊息的自訂工作窗格 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>逐步解說：在 Outlook 中的電子郵件訊息顯示自訂工作窗格
   本逐步解說示範如何針對每則已建立或開啟的電子郵件訊息，顯示唯一的自訂工作窗格執行個體。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。  
@@ -273,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 -   在 Excel 中，建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱 [逐步解說：使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂工作窗格](../vsto/custom-task-panes.md)   
  [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [逐步解說： 自動化從自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   

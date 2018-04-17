@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio 測試工具 | Microsoft Docs"
-ms.date: 01/31/2018
-ms.technology: vs-devops-test
+title: Visual Studio 測試工具 | Microsoft Docs
+ms.date: 03/16/2018
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -11,30 +11,32 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a4f662761c58595ae40a2bf82913978bcfbb68db
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 
 Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準程式碼表現。
 
+- [測試總管] 視窗可讓您輕鬆地將[單元測試](../test/unit-test-your-code.md)整合在開發實務中。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。
+
+- [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 會自動產生受控碼的單元測試和測試資料。
+
+- [程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)會判斷單元測試這類自動程式化測試所實際測試的專案程式碼比例。
+
+- [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 會以虛設常式或填充碼取代應用程式的其他部分，協助您隔離要測試的程式碼。
+
+- [Live Unit Testing](../test/live-unit-testing.md) 會自動在背景執行單元測試，並在 Visual Studio 程式碼編輯器中以圖形方式顯示程式碼涵蓋範圍和測試結果。
+
+- [自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)讓您能透過其使用者介面測試您的應用程式。
+
+- [負載測試](../test/quickstart-create-a-load-test-project.md)會執行單元測試和 Web 效能測試，模擬伺服器應用程式的負載。
+
 > [!NOTE]
 > 所有版本的 Visual Studio 都提供單元測試。 只有 Visual Studio Enterprise edition 才提供其他測試工具 (例如 Live Unit Testing、IntelliTest 和自動程式化 UI 測試)。 如需版本的詳細資訊，請參閱[比較 Visual Studio 2017 IDE](https://www.visualstudio.com/vs/compare/)。
-
-## <a name="in-this-section"></a>本節內容
-
-|||
-|-|-|
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|測試總管可讓您輕鬆地將單元測試整合在開發實務中。 您可以使用 Microsoft 單元測試架構，或使用多種協力廠商架構和開放原始碼架構的其中一種。|
-|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest 會自動產生受控碼的單元測試和測試資料。|
-|[程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|程式碼涵蓋範圍會判斷單元測試這類自動程式化測試所實際測試的專案程式碼比例。|
-|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes 會以虛設常式或填充碼取代應用程式的其他部分，協助您隔離要測試的程式碼。|
-|[即時單元測試](../test/live-unit-testing.md)|Live Unit Testing 會自動在背景執行單元測試，並在 Visual Studio 程式碼編輯器中以圖形方式顯示程式碼涵蓋範圍和測試結果。|
-|[UI 自動化](../test/use-ui-automation-to-test-your-code.md)|使用自動程式化 UI 測試，透過使用者介面推動您的應用程式。|
-|[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|實驗室環境是一個虛擬機器和實體電腦的集合，可用來開發和測試應用程式。|
 
 ## <a name="related-scenarios"></a>相關案例
 

@@ -1,12 +1,10 @@
 ---
-title: "Office 文件上的密碼保護 |Microsoft 文件"
-ms.custom: 
+title: Office 文件上的密碼保護 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 52cadcec85580a9214da844bf887323227490f22
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文件上的密碼保護
   很可能您的 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿上設定密碼，使其無法開啟不知道密碼的人。 此選項會稱為**密碼開啟**。  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  第一次您開啟 Word 文件在具有 Visual Studio**密碼開啟**啟用，Word 會提示您輸入密碼。 在您成功輸入密碼之後,**密碼開啟**從文件中移除並開啟文件並不會再將要求輸入密碼。 如果您要在方案中的文件可以開啟要求密碼前的，您必須啟用**密碼開啟**在最後一個組建之後和您部署方案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [如何： 允許程式碼在具有限制權限的文件背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   

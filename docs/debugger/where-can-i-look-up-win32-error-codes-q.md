@@ -1,13 +1,15 @@
 ---
-title: "哪裡可以查看 Win32 錯誤碼？ | Microsoft Docs"
-ms.custom: 
+title: 哪裡可以查看 Win32 錯誤碼？ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vc.errors
+f1_keywords:
+- vc.errors
 dev_langs:
 - CSharp
 - VB
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - error codes, Win32
 - Win32, error codes
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f48f3fbff8f7f18fa745df7ac9571c69038651e6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty2::GetReference |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty2::GetReference |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty2::GetReference
-helpviewer_keywords: IDebugProperty2::GetReference method
+f1_keywords:
+- IDebugProperty2::GetReference
+helpviewer_keywords:
+- IDebugProperty2::GetReference method
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f8b8a5e5ba359f60d80c30e73645f3fe121c82e5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

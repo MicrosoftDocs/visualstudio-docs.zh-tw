@@ -1,12 +1,10 @@
 ---
-title: "SharePoint 錯誤的其他資訊 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 錯誤的其他資訊 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.errors.general
 - VS.SharePointTools.Project.Errors.General
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45bf01c0d153eca484a480fa4aff25bb2e68769a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
   您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具疑難排解主題和 Microsoft Developer Network (MSDN) 公共論壇中錯誤和警告。  
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
  如果仍然找不到您需要的答案，您可以存取線上支援的選項，例如連絡 Microsoft 產品支援服務，或搜尋知識庫文章。 如需詳細資訊，請參閱[Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=155371)頁面。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

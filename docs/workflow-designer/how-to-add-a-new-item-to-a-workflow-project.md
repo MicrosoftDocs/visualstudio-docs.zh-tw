@@ -1,18 +1,18 @@
 ---
-title: "如何： 將新的項目加入至工作流程專案 |Microsoft 文件"
+title: 如何： 將新的項目加入至工作流程專案 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b1351f515e3c482da77db63bca3c38d0623488
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: cb3024573a9ca4732066610c2c29c05fa1d73891
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目加入至工作流程專案
 在建立工作流程專案後，可以將工作流程活動、設計工具和其他熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 項目加入至專案。

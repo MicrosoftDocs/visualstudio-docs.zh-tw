@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式使用 Word 中的內建對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式使用 Word 中的內建對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - dialog boxes, Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 961f6ac2aa9852170ecce35aa18ce4c39d7a9983
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80406a8048529f811cf9cbeadc8d185577a114f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以程式設計方式使用 Word 中的內建對話方塊
   與 Microsoft Office Word 時，有您需要顯示使用者輸入的對話方塊。 雖然您可以建立您自己，可能也想要使用的內建對話方塊在 Word 中，會公開在方法<xref:Microsoft.Office.Interop.Word.Dialogs>集合<xref:Microsoft.Office.Interop.Word.Application>物件。 這可讓您存取超過 200 的內建對話方塊方塊中，會以列舉型別表示。  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式使用 Word 對話方塊在隱藏模式中](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   

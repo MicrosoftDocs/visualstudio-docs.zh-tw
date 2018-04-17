@@ -1,16 +1,16 @@
 ---
-title: "在 Azure App Service 上安裝 Python 解譯器和程式庫 | Microsoft Docs"
-description: "如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。"
-ms.custom: 
+title: 在 Azure App Service 上安裝 Python 解譯器和程式庫 | Microsoft Docs
+description: 如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。
+ms.custom: ''
 ms.date: 09/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f48a8040203f50970aa16d511f94222bf1578bb1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
@@ -217,4 +217,4 @@ HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Pytho
 
 如需命令和驗證的資訊，請參閱 [Kudu 文件](https://github.com/projectkudu/kudu/wiki/REST-API)。
 
-您也可以透過 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令 (請參閱 [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles) (az webapp 部署)) 以查看認證。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上也提供用於發佈 Kudu 命令的協助程式庫。
+您也可以透過 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令 (請參閱 [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles) (az webapp 部署)) 以查看認證。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上也提供用於發佈 Kudu 命令的協助程式庫。

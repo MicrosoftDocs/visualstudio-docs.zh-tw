@@ -1,24 +1,27 @@
 ---
-title: "&lt;請為 PackageFiles&gt;元素 （啟動載入器） |Microsoft 文件"
-ms.custom: 
+title: '&lt;請為 PackageFiles&gt;元素 （啟動載入器） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - FSharp
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <PackageFiles> element [bootstrapper]
+helpviewer_keywords:
+- <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

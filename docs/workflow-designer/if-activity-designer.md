@@ -1,5 +1,5 @@
 ---
-title: "如果活動設計工具 |Microsoft 文件"
+title: 如果活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38315b493bd1349efcea5c511378d38eb05ca97d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 948359e0c6458fb0ad03d0d032676439d8062ca4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="if-activity-designer"></a>If 活動設計工具
 <xref:System.Activities.Statements.If> 活動會評估條件，並且根據該評估的結果執行某個活動。 這個活動最適合用於使用程式設計的程序模型樣式時。 例如，<xref:System.Activities.Statements.If> 活動可巢狀置入 <xref:System.Activities.Statements.Sequence> 活動或 <xref:System.Activities.Statements.Parallel> 活動內部。 如果您要使用 <xref:System.Activities.Statements.Flowchart> 活動，可以考慮改用 <xref:System.Activities.Statements.FlowDecision> 活動。
@@ -30,6 +30,6 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [順序](../workflow-designer/sequence-activity-designer.md)
 - [平行](../workflow-designer/parallel-activity-designer.md)
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)

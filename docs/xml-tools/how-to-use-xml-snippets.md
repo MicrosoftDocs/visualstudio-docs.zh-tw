@@ -1,19 +1,19 @@
 ---
-title: "如何使用 Microsoft Visual Studio 中的 XML 片段 |Microsoft 文件"
+title: 如何使用 Microsoft Visual Studio 中的 XML 片段 |Microsoft 文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8e94b799db6572b3aafcbd6bacf826b4a22861
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 5751293124edab5c8415cd60d79aba9947fb94bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-xml-snippets"></a>如何： 使用 XML 片段
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/02/2018
 
    會顯示可用 XML 片段的清單。
 
-3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段 **索引標籤**或**Enter**。
+3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段** 索引標籤**或**Enter**。
 
 ### <a name="to-insert-snippets-using-the-intellisense-menu"></a>使用 IntelliSense 功能表插入片段
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 03/02/2018
 
    會顯示可用 XML 片段的清單。
 
-3. 從清單中使用滑鼠，或輸入的程式碼片段和按名稱選取片段 **索引標籤**或**Enter**。
+3. 從清單中使用滑鼠，或輸入的程式碼片段和按名稱選取片段** 索引標籤**或**Enter**。
 
 ### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>透過 IntelliSense 自動完成清單插入片段
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 03/02/2018
 
 3. 從自動完成清單中選取 XML 片段。
 
-4. 按 **索引標籤**，  **索引標籤**以叫用 XML 片段。
+4. 按** 索引標籤**， ** 索引標籤**以叫用 XML 片段。
 
 > [!NOTE]
 > 有時可能無法叫用 XML 片段。 例如，如果您嘗試在 `xs:complexType` 節點內插入 `xs:element` 項目，則編輯器不會產生 XML 片段。 在 `xs:complexType` 節點內使用 `xs:element` 項目時，因為沒有必要的屬性或項目子系，所以編輯器並無任何要插入的資料。
@@ -69,7 +69,7 @@ ms.lasthandoff: 03/02/2018
 
 3. 按**Esc**關閉 IntelliSense 自動完成文字清單。
 
-4. 輸入捷徑名稱，程式碼片段，然後按 **索引標籤**以叫用 XML 片段。
+4. 輸入捷徑名稱，程式碼片段，然後按** 索引標籤**以叫用 XML 片段。
 
 ## <a name="surround-with"></a>以此環繞
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 03/02/2018
 
    會顯示可用以此環繞 XML 片段的清單。
 
-3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段 **索引標籤**或**Enter**。
+3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段** 索引標籤**或**Enter**。
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要透過 IntelliSense 功能表使用以此環繞
 
@@ -96,13 +96,13 @@ ms.lasthandoff: 03/02/2018
 
    會顯示可用以此環繞 XML 片段的清單。
 
-3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段 **索引標籤**或**Enter**。
+3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段** 索引標籤**或**Enter**。
 
 ## <a name="using-xml-snippets"></a>使用 XML 片段
 
 一旦選擇了 XML 片段，程式碼片段的文字便會自動插入游標位置。 會反白顯示片段中任何可編輯的欄位，並自動選取第一個可編輯的欄位。 目前選取的欄位為 boxed。
 
-選取欄位後，您可以為該欄位鍵入新值。 按下 **索引標籤**循環的程式碼片段可編輯欄位; 按**Shift**+ **索引標籤**以反向順序逐一循環。 按一下欄位便會將游標置於該欄位中，而按兩下欄位便會選取它。 反白顯示欄位後，可能會顯示提供欄位說明的工具提示。
+選取欄位後，您可以為該欄位鍵入新值。 按下** 索引標籤**循環的程式碼片段可編輯欄位; 按**Shift**+** 索引標籤**以反向順序逐一循環。 按一下欄位便會將游標置於該欄位中，而按兩下欄位便會選取它。 反白顯示欄位後，可能會顯示提供欄位說明的工具提示。
 
 只有給定欄位的第一個執行個體才是可編輯的。 反白顯示該欄位時，會為欄位之其他執行個體加上外框。 當您變更可編輯欄位的值時，該片段中任何位置所使用的這個欄位均會變更。
 

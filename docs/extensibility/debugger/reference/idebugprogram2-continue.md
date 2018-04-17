@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::Continue |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::Continue |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::Continue
-helpviewer_keywords: IDebugProgram2::Continue
+f1_keywords:
+- IDebugProgram2::Continue
+helpviewer_keywords:
+- IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5c90c456c4825ea9da054f7e78621493cc90a648
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngineLaunch2::ResumeProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugEngineLaunch2::ResumeProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngineLaunch2::ResumeProcess
-helpviewer_keywords: IDebugEngineLaunch2::ResumeProcess
+f1_keywords:
+- IDebugEngineLaunch2::ResumeProcess
+helpviewer_keywords:
+- IDebugEngineLaunch2::ResumeProcess
 ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b7462a13c5c2df3849a5f44d2f110eddf43ee7d9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

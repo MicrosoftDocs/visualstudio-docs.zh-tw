@@ -1,13 +1,8 @@
 ---
-title: "使用規則集分組程式碼分析規則 |Microsoft 文件"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+title: 在 Visual Studio 中的程式碼分析規則集 |Microsoft 文件
+ms.date: 04/02/2018
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -17,24 +12,54 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 265ca57904cb47c52ecaf6ba260e726da9b8a063
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
-當您在 Visual Studio 中設定程式碼分析時，您可以選擇從 Microsoft 內建的清單*規則集*。 規則集是識別目標的問題和的特定狀況的程式碼分析規則的邏輯群組。 比方說，您可以將套用的規則集是設計用來掃描程式碼公開可用的應用程式開發介面，或您可以套用包含只有最小建議規則規則集。 您也可以套用的規則集包含的所有規則。
+當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集套用至專案，並是一群的程式碼分析規則，識別目標的問題以及該專案的特定條件。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或最小建議規則。 您也可以套用的規則集包含的所有規則。
 
-您可以自訂規則集中新增或刪除規則，或變更規則才會出現在**錯誤清單**為警告或錯誤視窗。 自訂的規則集可滿足特定的開發環境的需要。 當您自訂規則集時，規則設定頁面會提供搜尋和篩選工具，可協助您在程序中。
+您可以自訂規則集中加入或刪除規則，或變更規則的重要性顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足特定的開發環境的需要。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序中。
 
-## <a name="common-tasks"></a>一般工作
+## <a name="rule-set-format"></a>規則集格式
 
-|工作|相關內容|
-|----------|---------------------|
-|**進行實際操作練習：**使用程式碼分析工具，來指定自訂的規則已設定為找出並修正簡單的.NET Framework 應用程式中的問題。|- [逐步解說： 設定及使用自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|
-|**設定專案的程式碼分析：**選擇現有規則設定的專案、 Web 站台或解決方案。|- [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />- [使用指定要執行的 c + + 規則規則集](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />- [如何： 設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />- [如何： 指定規則集的多個專案方案中](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|
-|**自訂規則集：**指定規則来套用至您的專案。|- [建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)|
-|**了解內建規則集：**檢視組成的內建規則集的程式碼分析規則。|- [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)|
-|**與 Team Foundation Server 整合程式碼分析：** [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]簽入原則，可讓開發團隊，以確定所有的程式碼簽入符合一組常用的程式碼分析的標準。|- [如何： 同步處理具有 Team 專案簽入原則的程式碼專案規則集](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|
+中的 XML 格式中指定的規則集*.ruleset*檔案。 包含識別碼的規則和*動作*，依分析器 ID 和檔案中的命名空間加以分組。
+
+XML 內容*.ruleset*檔案看起來類似這樣：
+
+```xml
+<RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="HelloWorldRules_Name" />
+    <Description Resource="HelloWorldRules_Description" />
+  </Localization>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1009" Action="Warning" />
+    <Rule Id="CA1016" Action="Warning" />
+    <Rule Id="CA1033" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1802" Action="Error" />
+    <Rule Id="CA1814" Action="Info" />
+    <Rule Id="CA1823" Action="None" />
+    <Rule Id="CA2217" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+> [!TIP]
+> 更輕鬆地[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)圖形**規則集編輯器**比以手動方式。
+
+規則集的專案由指定`CodeAnalysisRuleSet`Visual Studio 專案檔中的屬性。 例如: 
+
+```xml
+<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+```
+
+## <a name="see-also"></a>另請參閱
+
+- [程式碼分析規則集參考](../code-quality/rule-set-reference.md)

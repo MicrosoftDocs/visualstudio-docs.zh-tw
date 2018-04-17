@@ -1,19 +1,22 @@
 ---
-title: "核心介面 |Microsoft 文件"
-ms.custom: 
+title: 核心介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], core interfaces
+helpviewer_keywords:
+- debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

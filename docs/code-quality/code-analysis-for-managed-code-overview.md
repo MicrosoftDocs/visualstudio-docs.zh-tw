@@ -1,12 +1,8 @@
 ---
-title: "程式碼分析，Managed 程式碼的概觀 |Microsoft 文件"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: 程式碼分析在 Visual Studio 中的 managed 程式碼 |Microsoft 文件
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>程式碼分析 managed 程式碼的概觀
+# <a name="overview-of-code-analysis-for-managed-code"></a>Managed 程式碼的程式碼分析概觀
+
+Visual Studio 2017 分析 managed 程式碼有兩種： 與舊版*FxCop*靜態分析 managed 組件，並使用.NET 編譯器平台*分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要了解有關使用.NET 編譯器平台分析器來分析程式碼的詳細資訊，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組件的資訊，例如是否違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
 
@@ -35,11 +33,11 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 
 若要建立專案時，您每次執行程式碼分析，選取**建置時啟用程式碼分析**專案屬性頁上。 如需詳細資訊，請參閱[How to： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
-若要手動執行程式碼分析的專案上，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析<project>** . 如需詳細資訊，請參閱[How to： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要手動執行程式碼分析的專案上，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案>**。
 
 ## <a name="rule-sets"></a>規則集
 
-Managed 程式碼的程式碼分析規則分組為*規則集*。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。
+Managed 程式碼的程式碼分析規則分組為[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用其中一個 Microsoft 標準規則集，或您可以[建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)來滿足特定需求。
 
 ## <a name="suppress-warnings"></a>隱藏警告
 
@@ -58,7 +56,7 @@ Public class MyClass
 如需詳細資訊，請參閱[隱藏的警告，](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨著產生大量的程式碼分析警告。 如果您不可以修正警告，並想要暫時關閉程式碼分析，請開啟專案屬性頁 (**專案** > ***專案*屬性...**)，並移至**程式碼分析** 索引標籤。取消選取**建置時啟用程式碼分析**，然後重建您的專案。 或者，您可以選取不同的小型規則集執行程式碼。 請記得在當您準備好修正警告的程式碼分析。
+> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨著大量的程式碼分析警告。 如果您不可以修正警告，而且想要立即上手，您可以*基準*分析狀態，您的專案。 從**分析**功能表上，選取**執行程式碼分析並隱藏作用中問題**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>執行程式碼分析做為簽入原則的一部分
 
@@ -76,5 +74,6 @@ Public class MyClass
 
 ## <a name="see-also"></a>另請參閱
 
-[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Roslyn 分析器的概觀](../code-quality/roslyn-analyzers-overview.md)
+- [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

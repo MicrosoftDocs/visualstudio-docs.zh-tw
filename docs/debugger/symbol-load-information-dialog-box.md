@@ -1,24 +1,27 @@
 ---
-title: "符號載入資訊對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 符號載入資訊對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.symbols.loadinfo
+f1_keywords:
+- vs.debug.symbols.loadinfo
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 37e945b39074c87e17634ee8b063306f9bd9991d
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

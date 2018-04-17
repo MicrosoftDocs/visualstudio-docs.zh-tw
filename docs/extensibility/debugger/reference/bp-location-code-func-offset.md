@@ -1,20 +1,24 @@
 ---
-title: "BP_LOCATION_CODE_FUNC_OFFSET |Microsoft 文件"
-ms.custom: 
+title: BP_LOCATION_CODE_FUNC_OFFSET |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_LOCATION_CODE_FUNC_OFFSET
-helpviewer_keywords: BP_LOCATION_CODE_FUNC_OFFSET structure
+f1_keywords:
+- BP_LOCATION_CODE_FUNC_OFFSET
+helpviewer_keywords:
+- BP_LOCATION_CODE_FUNC_OFFSET structure
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 603022e2497992369b834906099942b6c2053cdd
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

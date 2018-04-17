@@ -1,19 +1,22 @@
 ---
-title: "一般索引標籤視窗屬性對話方塊、 |Microsoft 文件"
-ms.custom: 
+title: 一般索引標籤視窗屬性對話方塊、 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: Window Properties dialog box, General Tab
+helpviewer_keywords:
+- Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5aea8d5eb998280d6602f4ea28eb0b52d5f86da3
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

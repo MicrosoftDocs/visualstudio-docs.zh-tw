@@ -1,20 +1,24 @@
 ---
-title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft 文件"
-ms.custom: 
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-helpviewer_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+f1_keywords:
+- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+helpviewer_keywords:
+- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: da6b9c27667ca0960b43ba6e14f0fd4b1fab2634
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

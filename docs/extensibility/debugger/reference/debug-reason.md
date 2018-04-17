@@ -1,20 +1,24 @@
 ---
-title: "DEBUG_REASON |Microsoft 文件"
-ms.custom: 
+title: DEBUG_REASON |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DEBUG_REASON
-helpviewer_keywords: DEBUG_REASON enumeration
+f1_keywords:
+- DEBUG_REASON
+helpviewer_keywords:
+- DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fda733db5a70d88d5029c4001c632c234d32a823
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

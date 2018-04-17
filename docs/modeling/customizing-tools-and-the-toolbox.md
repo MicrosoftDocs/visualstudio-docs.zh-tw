@@ -1,10 +1,8 @@
 ---
-title: "自訂工具和 [工具箱] |Microsoft 文件"
-ms.custom: 
+title: 自訂工具和 [工具箱] |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。  
@@ -36,7 +34,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [自訂連接工具](#connections)  
   
-##  <a name="ToolboxDef"></a>工具箱 中的定義方式  
+##  <a name="ToolboxDef"></a> 工具箱 中的定義方式  
  在 [DSL 總管] 中，展開 [編輯器] 節點和下方節點。 一般而言，您會看到類似如下的階層架構：  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      如果工具未出現，請停止實驗 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 Windows 中**啟動**功能表上，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**建置**功能表上，按一下 **重建方案**。 然後再測試一次 DSL。  
   
-##  <a name="customizing"></a>自訂項目工具  
+##  <a name="customizing"></a> 自訂項目工具  
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：  
   
 -   定義其他類別的 Element Merge 指示詞，讓這些類別接受這個類別的新執行個體，並讓這些類別在建立新項目時建立其他連結。 例如，您可以允許使用者將一個註解拖曳到另一個項目上，藉此建立兩者之間的參考連結。  
@@ -104,7 +102,7 @@ Editor
   
 -   撰寫程式碼來自訂此工具，使其可以建立項目群組。 此工具是由您可以覆寫之 ToolboxHelper.cs 中的方法初始化。 如需詳細資訊，請參閱[建立群組的項目從工具](#groups)。  
   
-##  <a name="groups"></a>從工具中建立項目群組  
+##  <a name="groups"></a> 從工具中建立項目群組  
  每個項目工具包含該工具應建立的項目原型。 根據預設，每個項目工具會建立一個項目，但也可能透過一個工具來建立一組相關的物件。 若要執行這項操作，您可以使用內含相關項目的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 來初始化工具。  
   
  下列範例取自內含電晶體類型的 DSL。 每個電晶體有三個具名端子。 電晶體的項目工具會儲存內含四個模型項目和三個關聯性連結的原型。 當使用者將工具拖曳至圖表上時，原型會具現化並連結至模型根。  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>自訂連接工具  
+##  <a name="connections"></a> 自訂連接工具  
  您通常會在建立新的連接線類別時，建立項目工具。 或者，您可以允許由兩個端點類型來決定關聯性類型，藉此多載一個工具。 例如，您可以定義一個連接工具，該工具可建立人與人的關聯性，以及人與鄉鎮的關聯性。  
   
  連接工具會叫用連接產生器。 使用連接產生器可指定使用者在產生的設計工具中連結項目的方式。 連接產生器指定可連結的項目，以及在項目之間建立的連結類型。  
@@ -247,7 +245,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  您使用自訂程式碼來套用 「 硬性 」 條件約束，但您應該考慮使用者是否應該可以暫時將無效的連接。 如果應該，您可以修改條件約束，在使用者嘗試儲存變更之前都不會驗證連接。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
  [自訂複本的行為](../modeling/customizing-copy-behavior.md)   
  [如何： 加入拖放的處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Office UI 自訂 |Microsoft 文件"
-ms.custom: 
+title: Office UI 自訂 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], UI customization
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c0556bdee18ac7dd207f1664b0aeb9de2532c90d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9a35ca6a868aa1fff2a4bd4bfbd3ec466d5a2107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂
   您可以使用 Visual Studio 中的 Office 程式開發人員工具，自訂 Microsoft Office 應用程式的使用者介面 (UI)。 本主題在下列各節中描述您可以自訂的 UI 功能：  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [快顯功能表](#Shortcut)  
   
-##  <a name="Comparison"></a>UI 功能的比較  
+##  <a name="Comparison"></a> UI 功能的比較  
  下表比較在 Microsoft Office 專案中，您可以自訂的主要 UI 功能。  
   
 |功能|支援的專案類型|支援的 Microsoft Office 應用程式|  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 |文件上的控制項|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> 字組|  
 |快顯功能表|文件層級自訂<br /><br /> VSTO 增益集|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> 字組<br /><br /> Visio<br /><br /> Excel|  
   
-##  <a name="Actions"></a>執行窗格和自訂工作窗格  
+##  <a name="Actions"></a> 執行窗格和自訂工作窗格  
  工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 幾乎所有的 Microsoft Office 應用程式都包括內建的工作窗格。 工作窗格的範例是在 Word 中的 [說明] 工作窗格。  
   
  Visual Studio 中的 Office 開發工具提供兩種不同的方式，可自訂工作窗格：  
@@ -69,36 +68,36 @@ ms.lasthandoff: 01/10/2018
   
  如需執行窗格的詳細資訊，請參閱[執行窗格概觀](../vsto/actions-pane-overview.md)。 如需自訂工作窗格的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
-##  <a name="Ribbon"></a>自訂功能區 UI  
+##  <a name="Ribbon"></a> 自訂功能區 UI  
  您可以自訂功能區 UI 以公開您在 Office 中加入應用程式的功能。 功能區可組織相關的命令 (以控制項的形式)，以便能輕鬆找到它們。 您可以建立自己的功能區索引標籤和群組，讓使用者存取您在方案中提供的功能。 在較舊版本的 Microsoft Office 系統中，使用功能表和工具列存取的大多數功能，現在可以使用功能區來存取。  
   
  如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
   
-##  <a name="Backstage"></a>Backstage 檢視  
+##  <a name="Backstage"></a> Backstage 檢視  
  在 Office 應用程式，按一下**檔案**索引標籤會開啟 Backstage 檢視。 Backstage 檢閱提供 UI，它會合併檔案層級工作和動作，並取代可從  2007 Microsoft Office system 的 Microsoft Office 按鈕使用的類似功能。 Backstage 檢視完全可使用 XML 延伸。  
   
  Visual Studio 不提供設計工具或 API 來自訂 Backstage 檢視。 不過，如果您將加入**功能區 (XML)**項目加入 Office 專案，您可以將 XML 加入功能區 XML 檔案，以自訂 Backstage 檢視。 如需有關**功能區 (XML)**項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
   
  如需自訂 Backstage 檢視的詳細資訊，請參閱[開發人員的 Office 2010 Backstage 檢視簡介](http://go.microsoft.com/fwlink/?LinkId=182189)和[自訂 Office 2010 Backstage 檢視適用於開發人員](http://go.microsoft.com/fwlink/?LinkId=182188)。  
   
-##  <a name="FormRegion"></a>Outlook 表單區域  
+##  <a name="FormRegion"></a> Outlook 表單區域  
  使用表單區域，將自訂功能加入標準的 Microsoft Office Outlook 表單中。 您可以建立表單區域，以額外的欄位或控制項擴充任何現有的表單。 如果您在 Visual Studio 中使用 Office 開發工具建立新的表單區域，您在表單區域上只能使用 Windows Form 控制項。 如果您匯入在 Outlook 中設計的表單區域，則只能使用原生 Outlook 控制項。  
   
  您可以建立表單區域，佔用 Outlook UI 的不同區域。 例如，相鄰表單區域會顯示在表單中的第一頁底部，而每個相鄰的表單區域都可摺疊。 您也可以加入另一個表單區域，顯示為完整的額外表單頁面，而且可以出現在任何現有的標準表單或自訂表單上。  
   
  如需詳細資訊，請參閱 [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)。  
   
-##  <a name="Controls"></a>文件上的控制項  
+##  <a name="Controls"></a> 文件上的控制項  
  您可以將各種控制項加入 Word 文件和 Excel 工作表。 例如，您可能想要將日期選擇器控制項加入文件，讓使用者可以用標準格式輸入日期，或在工作表上放置一個按鈕，將資料傳送至資料庫。  
   
  當您開發 Excel 或 Word 的文件層級專案時，可以在設計階段使用 Visual Studio 設計工具將控制項加入專案中的文件或活頁簿，或是在執行階段以程式設計方式加入控制項。 當您為 Excel 或 Word 開發 VSTO 增益集專案時，您可以用程式設計方式在執行階段將控制項加入任何開啟的文件或活頁簿。  
   
  如需詳細資訊，請參閱 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) 與 [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
-##  <a name="Shortcut"></a>快顯功能表  
+##  <a name="Shortcut"></a> 快顯功能表  
  在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您將加入**功能區 (XML)**項目加入 Office 專案，您可以將 XML 加入功能區 XML 檔案，以建立快顯功能表。 如需有關使用 XML 來建立快顯功能表的詳細資訊，請參閱[如何： 新增命令至捷徑功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [執行窗格概觀](../vsto/actions-pane-overview.md)   

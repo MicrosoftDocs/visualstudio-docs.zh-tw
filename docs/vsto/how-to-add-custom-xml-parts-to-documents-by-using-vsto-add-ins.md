@@ -1,12 +1,10 @@
 ---
-title: "如何： 使用 VSTO 增益集將自訂 XML 組件加入文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 VSTO 增益集將自訂 XML 組件加入文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], custom XML parts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b2c9fec7370e5b4f9bab8ac7773ba1a18f36d261
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 增益集將自訂 XML 組件加入文件中
   您可以將 XML 資料儲存在下列類型的文件中，方法是在 VSTO 增益集中建立自訂 XML 組件：  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  如需詳細資訊，請參閱 [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)。  
   
- **適用對象：** 本主題資訊適用於 Excel、PowerPoint 和 Word 應用程式層級專案。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用對象：** 本主題資訊適用於 Excel、PowerPoint 和 Word 應用程式層級專案。 如需詳細資訊，請參閱＜[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)＞。  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>將自訂 XML 組件加入至 Excel 活頁簿  
   
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="robust-programming"></a>穩固程式設計  
  為了簡單起見，這個範例使用定義為方法中區域變數的 XML 字串。 通常，您應從外部來源取得 XML，例如檔案或資料庫。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
  [如何：將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   

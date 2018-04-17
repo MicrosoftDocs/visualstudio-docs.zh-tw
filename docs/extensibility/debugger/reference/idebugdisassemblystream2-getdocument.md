@@ -1,20 +1,24 @@
 ---
-title: "IDebugDisassemblyStream2::GetDocument |Microsoft 文件"
-ms.custom: 
+title: IDebugDisassemblyStream2::GetDocument |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDisassemblyStream2::GetDocument
-helpviewer_keywords: IDebugDisassemblyStream2::GetDocument
+f1_keywords:
+- IDebugDisassemblyStream2::GetDocument
+helpviewer_keywords:
+- IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7483ab7fdcc66cef0becbc9e4e42e35c310fdd14
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

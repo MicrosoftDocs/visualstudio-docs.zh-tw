@@ -1,13 +1,10 @@
 ---
-title: "如何： 使用 MSBuild 目標自訂 SharePoint 方案套件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 MSBuild 目標自訂 SharePoint 方案套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目標自訂 SharePoint 方案套件
   您可以在命令提示字元中使用 MSBuild 目標，自訂 Visual Studio 建立 SharePoint 封裝檔案 (.wsp) 的方式。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。  
@@ -86,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
  當您發行專案時，BeforeLayout 訊息會在封裝開始之前顯示，而 AfterLayout 訊息會在封裝完成之後顯示。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

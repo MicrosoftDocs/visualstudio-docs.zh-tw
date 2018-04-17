@@ -1,19 +1,22 @@
 ---
-title: "編輯器 Factory |Microsoft 文件"
-ms.custom: 
+title: 編輯器 Factory |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - editor factories
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e0fb464d3eb9d7b39b853593c9458fe800296321
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

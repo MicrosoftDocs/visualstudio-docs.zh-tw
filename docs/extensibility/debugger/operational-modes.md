@@ -1,19 +1,22 @@
 ---
-title: "作業模式 |Microsoft 文件"
-ms.custom: 
+title: 作業模式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debug engines, modes
+helpviewer_keywords:
+- debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: dfeb9f4465d4e3db18bd1332ffd0d19fecbbf861
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

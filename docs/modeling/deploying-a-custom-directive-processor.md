@@ -1,23 +1,21 @@
 ---
-title: "部署自訂指示詞處理器 |Microsoft 文件"
-ms.custom: 
+title: 部署自訂指示詞處理器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c3eab9958dc39b2d567e3d803c2716ea3d80431
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0380815393f3f99b2752c0d7d86ff6bb6754b167
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -57,7 +55,7 @@ ms.lasthandoff: 02/09/2018
   
     1.  在 VSIX 資訊清單編輯器 中，在**資產**索引標籤上，選擇**新增**並設定新的項目屬性：  
   
-         **Content Type** = **VSPackage**  
+         **內容類型** = **VSPackage**  
   
          **來源專案** = \<*目前的專案*>  
   

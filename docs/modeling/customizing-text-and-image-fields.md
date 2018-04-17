@@ -1,9 +1,9 @@
 ---
-title: "自訂文字和影像欄位 |Microsoft 文件"
-ms.custom: 
+title: 自訂文字和影像欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f577669c685d6f42b73c80f947e8edad0c7b9088
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 當您在圖形中定義的文字裝飾項目時，則為代表 TextField。 有關 TextFields 和其他 ShapeFields 初始化的詳細資訊，請檢查 Dsl\GeneratedCode\Shapes.cs DSL 方案中。  
@@ -268,7 +268,7 @@ partial class ExampleShape
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [定義圖形和連接器](../modeling/defining-shapes-and-connectors.md)   
  [在圖表上設定的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

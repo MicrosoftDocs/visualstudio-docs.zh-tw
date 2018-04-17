@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式快取的資料來源中的 Office 文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式快取的資料來源中的 Office 文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09d4b46aaa68a92ffb9ddfe70f329e97a1b7526d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 29451bab5caeeaf3f9de0b9344ae52430ec045a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以程式設計方式快取 Office 文件的資料來源
   您可以程式設計方式加入資料物件的文件中的資料快取藉由呼叫`StartCaching`方法的主機項目，例如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 移除資料快取中的資料物件，藉由呼叫`StopCaching`將主項目的的方法。  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  請勿呼叫`StopCaching`的事件處理常式從`Shutdown`文件或工作表的事件。 依時間`Shutdown`、 已經太遲了修改資料快取，會引發事件。 如需有關`Shutdown`事件，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快取資料](../vsto/caching-data.md)   
  [如何： 使用快取資料，離線或伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   

@@ -1,10 +1,8 @@
 ---
-title: "從程式碼中建立相依性圖表 |Microsoft 文件"
-ms.custom: 
+title: 從程式碼中建立相依性圖表 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, dependency diagrams
 - dependency diagrams
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18477479255ff7af8216d093830c6c0d60fa50dc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9acc63c676463743ad598736f1d095f0ced0b388
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從程式碼中建立相依性圖表
 
@@ -32,7 +30,7 @@ ms.lasthandoff: 02/09/2018
 
 [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
 
-##  <a name="CreateDiagram"></a>建立相依性圖表
+##  <a name="CreateDiagram"></a> 建立相依性圖表
 
 建立相依性圖表之前，請確定您的方案具有模型專案。
 
@@ -78,7 +76,7 @@ ms.lasthandoff: 02/09/2018
 
 ![產生程式碼對應的相依性圖表](media/dependency-validation-01.png)
   
-##  <a name="CreateLayers"></a>從成品建立圖層  
+##  <a name="CreateLayers"></a> 從成品建立圖層  
  您可以從 Visual Studio 方案項目 (例如，專案、程式碼檔、命名空間、類別和方法) 建立圖層。 這樣會自動建立這些圖層和項目之間的連結，將這些項目納入圖層驗證程序中。  
   
  您也可以將圖層連結至不支援驗證的項目，例如 Word 文件或 PowerPoint 簡報，使您可以將圖層與規格或計劃連結。 您也可以將圖層連結至多個應用程式所共用的專案檔案，但驗證程序不會包含這些以泛型名稱顯示的圖層，例如「Layer 1」和「Layer 2」。  
@@ -107,7 +105,7 @@ ms.lasthandoff: 02/09/2018
   
 -   如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。  
   
-##  <a name="Managing"></a>管理圖層與成品之間的連結  
+##  <a name="Managing"></a> 管理圖層與成品之間的連結  
   
 1.  相依性圖表中，開啟圖層的捷徑功能表，然後選擇 **檢視連結**。  
   
@@ -123,7 +121,7 @@ ms.lasthandoff: 02/09/2018
 |從現有的成品連結建立新的圖層|將成品連結拖曳至圖表上的空白區域。|  
 |確認連結的成品支援針對相依性圖表進行驗證。|查看**支援驗證**成品連結的資料行。|  
   
-##  <a name="Discovering"></a>現有相依性反向工程  
+##  <a name="Discovering"></a> 現有相依性反向工程  
  只要與某個圖層關聯的成品參考到與另一個圖層關聯的成品，相依性便會存在。 例如，某個圖層中的類別會宣告在另一個圖層中具有類別的變數。 對於連結到圖表上之圖層的成品，您可以就其現有相依性進行反向工程。  
   
 > [!NOTE]
@@ -133,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  通常，您會看到一些不應該存在的相依性。 您可以編輯這些相依性，以便與預期的設計保持一致。  
   
-##  <a name="EditDependencies"></a>編輯圖層與相依性以顯示預定的設計  
+##  <a name="EditDependencies"></a> 編輯圖層與相依性以顯示預定的設計  
  若要描述您打算對您的系統或預期的架構進行的變更，編輯 相依性圖表：  
   
 |**若要**|**執行這些步驟**|  
@@ -144,10 +142,10 @@ ms.lasthandoff: 02/09/2018
 |指定與圖層關聯的成品不可屬於指定的命名空間|輸入命名空間中的圖層**Forbidden Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
 |指定與圖層關聯的成品必須屬於其中一個指定的命名空間|輸入命名空間中的圖層**Required Namespaces**屬性。 請使用分號 (**;**) 來分隔命名空間。|  
   
-##  <a name="EditLayout"></a>變更項目出現在圖表上的方式  
+##  <a name="EditLayout"></a> 變更項目出現在圖表上的方式  
  您可以藉由編輯屬性的方式，變更圖層的大小、圖形、色彩和位置，或相依性的色彩。  
   
-##  <a name="Codemaps"></a>探索模式和 code map 上的相依性  
+##  <a name="Codemaps"></a> 探索模式和 code map 上的相依性  
  在建立相依性圖表，您也可以建立**code map**。 這些圖表可協助您在瀏覽程式碼時探索模式和相依性。 使用 [方案總管]、[類別檢視] 或 [物件瀏覽器] 瀏覽組件、命名空間和類別 (這通常會正確對應至現有的圖層)。 如需 Code Map 的詳細資訊，請參閱：  
   
 -   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)  
@@ -156,7 +154,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
  [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
  [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)   

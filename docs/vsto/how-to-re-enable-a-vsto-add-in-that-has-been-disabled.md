@@ -1,13 +1,10 @@
 ---
-title: "如何： 重新啟用已停用的 VSTO 增益集 |Microsoft 文件"
-ms.custom: 
+title: 如何： 重新啟用已停用的 VSTO 增益集 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2f86906db578987ec81e35aa8c49abd62b5e88f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 25344d23e0c9f1d6d237d008b0f6b18372490d04
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新啟用已停用的 VSTO 增益集
   Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 如果應用程式在您嘗試進行偵錯時並未載入 VSTO 增益集，表示應用程式可能已經強制停用或非強制停用 VSTO 增益集。  
@@ -78,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [偵錯 Office 專案](../vsto/debugging-office-projects.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

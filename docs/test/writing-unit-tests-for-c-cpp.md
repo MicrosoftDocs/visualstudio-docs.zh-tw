@@ -1,22 +1,18 @@
 ---
-title: "在 Visual Studio 中撰寫 C/C++ 的單元測試 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中撰寫 C/C++ 的單元測試 | Microsoft Docs
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -36,12 +32,11 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 **Visual Studio 2017 15.5 版**
 
-1) **Google Test 配接器**隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它具有可透過**方案總管**中 [方案] 節點上的 [加入新的專案] 操作功能表新增至方案的專案範本，以及可透過 [工具] | [選項] 設定的選項。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
+- **Google Test 配接器**隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它具有可透過**方案總管**中 [方案] 節點上的 [加入新的專案] 操作功能表新增至方案的專案範本，以及可透過 [工具] | [選項] 設定的選項。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
-2) **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
+- **Boost.Test** 隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它與**測試總管**整合但目前沒有專案範本，因此必須手動設定。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
-3) **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
-
+- **CTest** 支援隨附於 [使用 C++ 的桌面開發] 工作負載一部分的[適用於 Visual Studio 的 CMake 工具](/cpp/ide/cmake-tools-for-cpp)元件。 不過，CTest 尚未與**測試總管**完全整合。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 和更早版本**
 
@@ -96,16 +91,16 @@ TEST_METHOD 傳回 void。 若要產生測試結果，請使用 `Assert` 類別�
 
 ### <a name="run-the-tests"></a>執行測試
 
-1.  在 [測試] 功能表上，選擇 [Windows]、**測試總管**。 下圖顯示其測試尚未執行的測試專案。
+1. 在 [測試] 功能表上，選擇 [Windows] > [測試總管]。 下圖顯示其測試尚未執行的測試專案。
 
-![執行測試前的測試總管](media/cpp-test-explorer.png "C++ 測試總管 ")
+   ![執行測試前的測試總管](media/cpp-test-explorer.png "C++ 測試總管 ")
 
-> [!NOTE]
-> 目前無法將 CTest 與**測試總管**整合。 從 CMake 主功能表執行 CTest 測試。
+   > [!NOTE]
+   > 目前無法將 CTest 與**測試總管**整合。 從 CMake 主功能表執行 CTest 測試。
 
-2. 如果視窗中未顯示您所有的測試，請建置測試專案，方法是在**方案總管**中，以滑鼠右鍵按一下其節點，然後選擇 [建置] 或 [重建]。
+1. 如果視窗中未顯示您所有的測試，請建置測試專案，方法是在**方案總管**中，以滑鼠右鍵按一下其節點，然後選擇 [建置] 或 [重建]。
 
-3.  在測試總管中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。 執行所有測試之後，視窗會顯示哪些測試成功及哪些測試失敗：
+1. 在測試總管中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。 執行所有測試之後，視窗會顯示哪些測試成功及哪些測試失敗：
 
 ![執行測試後的測試總管](media/cpp-test-explorer-passed.png "執行測試後的 C++ 測試總管")
 

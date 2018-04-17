@@ -1,23 +1,21 @@
 ---
-title: "XML 常值與 XML 結構描述總管的整合 |Microsoft 文件"
-ms.custom: 
+title: XML 常值與 XML 結構描述總管的整合 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dad11fa10e7c61845ac0d4ea5663e6f2c7bc88ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: da088320639cbf9b663d4bc4eef8037d4321fc12
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>整合 XML 常值與 XML 結構描述總管
 Visual Basic 支援 XML 常值，這表示您可以將 XML 片段直接合併 Visual Basic 程式碼。 如需詳細資訊，請參閱[XML 常值概觀](http://go.microsoft.com/fwlink/?LinkId=140325)。  

@@ -1,13 +1,10 @@
 ---
-title: "Office 程式設計的一般工作 |Microsoft 文件"
-ms.custom: 
+title: Office 程式設計的一般工作 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 程式設計的一般工作
   本主題旨在協助您找出下列類別之使用 Visual Studio 進行 Office 方案程式設計的相關常見問題解答。  
@@ -235,8 +232,8 @@ ms.lasthandoff: 01/10/2018
   
 -   [如何：變更 Office 方案的安裝路徑](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
-## <a name="see-also"></a>請參閱  
- [開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
   

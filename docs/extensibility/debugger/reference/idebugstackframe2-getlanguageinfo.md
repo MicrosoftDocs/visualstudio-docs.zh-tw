@@ -1,20 +1,24 @@
 ---
-title: "IDebugStackFrame2::GetLanguageInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugStackFrame2::GetLanguageInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugStackFrame2::GetLanguageInfo
-helpviewer_keywords: IDebugStackFrame2::GetLanguageInfo
+f1_keywords:
+- IDebugStackFrame2::GetLanguageInfo
+helpviewer_keywords:
+- IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 12e27e744d13ce24f90a4c97ea242cecf8a843d5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

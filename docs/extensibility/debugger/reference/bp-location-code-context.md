@@ -1,20 +1,24 @@
 ---
-title: "BP_LOCATION_CODE_CONTEXT |Microsoft 文件"
-ms.custom: 
+title: BP_LOCATION_CODE_CONTEXT |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_LOCATION_CODE_CONTEXT
-helpviewer_keywords: BP_LOCATION_CODE_CONTEXT structure
+f1_keywords:
+- BP_LOCATION_CODE_CONTEXT
+helpviewer_keywords:
+- BP_LOCATION_CODE_CONTEXT structure
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: afe1d63a5496f44e9d55112f0fedf5f4c1822aa0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugLoadCompleteEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugLoadCompleteEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugLoadCompleteEvent2
-helpviewer_keywords: IDebugLoadCompleteEvent2
+f1_keywords:
+- IDebugLoadCompleteEvent2
+helpviewer_keywords:
+- IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9ef666b3f7bbcaf75305cec10954df3355304515
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

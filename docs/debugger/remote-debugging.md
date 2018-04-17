@@ -1,13 +1,13 @@
 ---
-title: "Visual Studio 遠端偵錯 |Microsoft 文件"
+title: Visual Studio 遠端偵錯 |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -52,7 +52,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>（選擇性）若要從檔案共用執行遠端偵錯工具
+### <a name="fileshare_msvsmon"></a> （選擇性）若要從檔案共用執行遠端偵錯工具
 
 您可以找到遠端偵錯工具 (**msvsmon.exe**) 與 Visual Studio Community、 Professional 或 Enterprise 已經安裝在電腦上。 某些情況下，設定遠端偵錯最簡單的方式是從檔案共用執行遠端偵錯工具 (msvsmon.exe)。 使用方式的限制，請參閱遠端偵錯工具的 [說明] 頁面 (**協助 > 使用量**遠端偵錯工具中)。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>設定遠端偵錯工具  
+### <a name="configure_msvsmon"></a> 設定遠端偵錯工具  
 在您第一次啟動遠端偵錯工具後，可以變更其組態的某些部分。
   
 -   如果您需要連線到遠端偵錯工具，請選擇其他使用者的權限加入**工具 > 權限**。 您必須具有系統管理員權限才能授與或拒絕使用權限。
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/23/2018
      > [!WARNING]
      >  您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在這個模式下執行時，不具網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
-##  <a name="bkmk_configureService"></a>（選擇性）設定遠端偵錯工具當做服務
+##  <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具當做服務
 偵錯 ASP.NET 和其他伺服器環境中，您必須請系統管理員身分執行遠端偵錯工具，或是如果您想要一直執行，以服務方式執行遠端偵錯工具。
   
  如果您想要設定遠端偵錯工具為服務，請遵循下列步驟。  
@@ -123,7 +123,7 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)   

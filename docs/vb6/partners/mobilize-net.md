@@ -1,11 +1,10 @@
 ---
-title: "動員.Net 的 Visual Basic 升級小幫手 (VBUC) |Microsoft 文件"
-description: "動員從 Visual Basic 6 移轉至 Visual Basic.NET 和 C#.Net 的工具"
+title: 動員.Net 的 Visual Basic 升級小幫手 (VBUC) |Microsoft 文件
+description: 動員從 Visual Basic 6 移轉至 Visual Basic.NET 和 C#.Net 的工具
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>動員.Net 的 Visual Basic 升級小幫手 (VBUC)
 
@@ -87,7 +86,7 @@ Visual Basic 升級附屬包含大量的強大功能與自訂/擴充性選項，
 如需更新、 更詳細的功能清單，請瀏覽[VBUC 的技術網站](http://www.vbtonet.com/?msdn)。
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>進一步了解和試試看吧
-深入了解 VBUC、 讀取客戶辨識項，存取技術白皮書、 視訊及網路廣播或下載位於 http://www.mobilize.net/solution/msdn 免費試用版。
+深入了解 VBUC、 讀取客戶辨識項、 存取白色白皮書、 影片和網路廣播或下載免費的試用版，在http://www.mobilize.net/solution/msdn。
 
 ## <a name="additional-resources"></a>其他資源
 

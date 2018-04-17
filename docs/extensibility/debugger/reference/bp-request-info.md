@@ -1,20 +1,24 @@
 ---
-title: "BP_REQUEST_INFO |Microsoft 文件"
-ms.custom: 
+title: BP_REQUEST_INFO |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_REQUEST_INFO
-helpviewer_keywords: BP_REQUEST_INFO structure
+f1_keywords:
+- BP_REQUEST_INFO
+helpviewer_keywords:
+- BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 87239c69d4d23f321dba4549f39724d48422a49f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

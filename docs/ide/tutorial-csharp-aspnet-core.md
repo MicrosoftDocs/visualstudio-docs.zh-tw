@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio 中的 C# 和 ASP.NET Core 使用者入門 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0835c2e33dcd3c8ffa2556a406cdbd8e2d2ff265
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 使用者入門
 在利用使用 Visual Studio 的 ASP.NET Core 進行 C# 開發的這個教學課程中，您將建立 C# ASP.NET Core Web 應用程式、新增其程式碼、探索 IDE 的一些功能，以及執行應用程式。
@@ -167,12 +167,9 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
  ![按一下工具列上的 [停止偵錯] 按鈕](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>後續步驟
 
-恭喜您完成此教學課程！
+恭喜您完成此教學課程！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要更深入了解，請繼續下列教學課程。
 
-## <a name="see-also"></a>另請參閱
-* [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [C# 的新功能](/dotnet/csharp/whats-new)
-* [C# 語言參考](/dotnet/csharp/language-reference/index)
-* [適合無基礎新手參加的 C# 基礎課程](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)視訊課程
+ > [!div class="nextstepaction"]
+ > [ASP.NET Core MVC 與 Visual Studio 使用者入門](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

@@ -1,12 +1,10 @@
 ---
-title: "建立 SharePoint 的站台定義 |Microsoft 文件"
-ms.custom: 
+title: 建立 SharePoint 的站台定義 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>建立 SharePoint 的站台定義
   中的 SharePoint 網站定義專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可讓您建立*網站定義*，做為新的 SharePoint 網站的基礎。 這些定義不只會決定的外觀和行為的 SharePoint 網站，但也其預設內容和功能。 在定義中，您可以將預先設定的清單、 內容類型、 事件接收器、 影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您建立部落格網站定義為基礎的站台時，此網站包含清單、 Web 組件和部落格網站需要的其他項目。  
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |[程式設計 ASP.NET Web 網頁](http://go.microsoft.com/fwlink/?LinkId=178728)|提供有關如何建立事件處理常式中的資訊[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]頁面，以及如何使用用戶端指令碼。|  
 |[在 Windows SharePoint Services 中程式設計](http://go.microsoft.com/fwlink/?LinkId=178729)|描述如何使用受管理的物件模型中所提供[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

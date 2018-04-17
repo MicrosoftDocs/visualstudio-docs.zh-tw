@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty3::GetStringCharLength |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty3::GetStringCharLength |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty3::GetStringCharLength
-helpviewer_keywords: IDebugProperty3::GetStringCharLength
+f1_keywords:
+- IDebugProperty3::GetStringCharLength
+helpviewer_keywords:
+- IDebugProperty3::GetStringCharLength
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 1f692d490b50b22a1e43567045dd7359cccde081
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

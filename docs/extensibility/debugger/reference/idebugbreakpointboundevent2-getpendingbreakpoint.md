@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointBoundEvent2::GetPendingBreakpoint |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-helpviewer_keywords: IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+f1_keywords:
+- IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+helpviewer_keywords:
+- IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 99bd8171919931f1a4514d9db702a6b26dce255d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

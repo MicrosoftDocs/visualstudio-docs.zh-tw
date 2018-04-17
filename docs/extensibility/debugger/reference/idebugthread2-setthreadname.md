@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::SetThreadName |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::SetThreadName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::SetThreadName
-helpviewer_keywords: IDebugThread2::SetThreadName
+f1_keywords:
+- IDebugThread2::SetThreadName
+helpviewer_keywords:
+- IDebugThread2::SetThreadName
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9a342ade56414c7b2acf16adfe6edc4f61403b8d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

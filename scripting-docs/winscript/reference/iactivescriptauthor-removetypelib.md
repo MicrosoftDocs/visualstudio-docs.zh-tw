@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthor::RemoveTypeLib |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.RemoveTypeLib
@@ -14,15 +14,15 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::RemoveTypeLib
 ms.assetid: 232c3698-024d-4549-8fbc-cb0d3ac17dc5
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
 從指令碼撰寫引擎命名空間中移除類型程式庫。  
@@ -50,7 +50,7 @@ HRESULT RemoveTypeLib(
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

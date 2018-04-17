@@ -1,21 +1,19 @@
 ---
-title: "如何： 加入拖放的處理常式 |Microsoft 文件"
-ms.custom: 
+title: 如何： 加入拖放的處理常式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61eff22f3a666f067f4a1eddd8ecab84429fea21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b87a2e8a87721217f4c8e5442c25d9c4efd0236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式，即為*軌跡處理常式*。  
@@ -36,7 +34,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [使用滑鼠動作： 將區間項目拖曳](#mouseActions)。 此範例將示範如何攔截滑鼠動作圖形的欄位上的較低層級處理常式。 這個範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
   
-##  <a name="overrideShapeElement"></a>定義軌跡處理常式覆寫 ShapeElement 方法  
+##  <a name="overrideShapeElement"></a> 定義軌跡處理常式覆寫 ShapeElement 方法  
  將新的程式碼檔案加入至您的 DSL 專案。 在軌跡處理常式中，您通常必須至少有下列 `using` 陳述式：  
   
 ```csharp  
@@ -64,7 +62,7 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-如果使用者放開滑鼠按鈕時滑鼠指標停留在此圖形或圖表中，如果呼叫這方法`OnDragOver(DiagramDragEventArgs e)`先前設定`e.Effect`以外的值來`None`。  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -如果使用者放開滑鼠按鈕時滑鼠指標停留在此圖形或圖表中，如果呼叫這方法`OnDragOver(DiagramDragEventArgs e)`先前設定`e.Effect`以外的值來`None`。  
   
     ```csharp  
     public override void OnDragDrop(DiagramDragEventArgs e)  
@@ -81,13 +79,13 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-當使用者按兩下的圖形或圖表時，會呼叫此方法。  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -當使用者按兩下的圖形或圖表時，會呼叫此方法。  
   
      如需詳細資訊，請參閱[如何： 攔截按一下圖形或 Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
  定義 `IsAcceptableDropItem(e)` 以決定是否可接受拖曳的項目，並定義 ProcessDragDropItem(e) 以在放置項目時更新模型。 這些方法必須先從事件引數擷取項目。 如需如何進行這項資訊，請參閱[如何取得拖曳的項目參考](#extracting)。  
   
-##  <a name="MEF"></a>使用 MEF 所定義軌跡處理常式  
+##  <a name="MEF"></a> 使用 MEF 所定義軌跡處理常式  
  MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的元件。 如需詳細資訊，請參閱 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>定義 MEF 軌跡處理常式  
@@ -130,22 +128,22 @@ using System.Linq;
   
 3.  加入目標圖形、連接線或圖表類別的部分類別定義，並定義 `IsAcceptableDropItem()` 和 `ProcessDragDropItem()` 方法。 這些方法一開始必須先從事件引數擷取拖曳的項目。 如需詳細資訊，請參閱[如何取得拖曳的項目參考](#extracting)。  
   
-##  <a name="extracting"></a>如何解碼拖曳的項目  
+##  <a name="extracting"></a> 如何解碼拖曳的項目  
  當使用者將項目拖曳到您的圖表上，或從圖表的某個部分拖曳到另一個部分時，`DiagramDragEventArgs` 中會提供拖曳項目的相關資訊。 由於拖曳作業可能在畫面上的任何物件上啟動，因此提供的資料可以是任何一種格式。 您的程式碼必須辨識這些格式，並且能夠處理這些格式。  
   
  若要探索拖曳來源資訊的可用格式，請在偵錯模式中執行程式碼，並在 `OnDragOver()` 或 `CanDragDrop()` 的進入點設定中斷點。 檢查 `DiagramDragEventArgs` 參數的值。 這項資訊提供下列兩種格式：  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data`-這個屬性通常會序列化的版本，一個來源的物件，有一個以上的格式。 其最有用的函式包括：  
+-   <xref:System.Windows.Forms.IDataObject>  `Data` -這個屬性通常會序列化的版本，一個來源的物件，有一個以上的格式。 其最有用的函式包括：  
   
     -   diagramEventArgs.Data.GetDataFormats()-列出您可以在其中解碼拖曳之物件的格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。  
   
-    -   `diagramEventArgs.Data.GetData(format)`-將解碼拖曳之物件中指定的格式。 將物件轉換成適當的類型。 例如：  
+    -   `diagramEventArgs.Data.GetData(format)` -將解碼拖曳之物件中指定的格式。 將物件轉換成適當的類型。 例如：  
   
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
          您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱[如何在拖曳和卸除傳送模型匯流排參考](#mbr)。  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype` -使用這個屬性，如果您要讓使用者從 DSL 或 UML 模型拖曳項目。 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：  
+-   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -如果您要讓使用者從 DSL 或 UML 模型拖曳項目，請使用這個屬性。 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：  
   
     ```csharp  
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
@@ -162,7 +160,7 @@ using System.Linq;
   
  `DiagramDragEventArgs` 也具有屬性，指出目前的滑鼠指標位置，以及使用者是否按下 CTRL、ALT 或 SHIFT 鍵。  
   
-##  <a name="getOriginal"></a>如何取得原始被拖曳的項目  
+##  <a name="getOriginal"></a> 如何取得原始被拖曳的項目  
  事件引數的 `Data` 和 `Prototype` 屬性只包含拖曳圖形的參考。 通常，如果您要在衍生自原型的目標 DSL 中以特定方式建立物件，您需要取得原始拖曳項目的存取權，例如讀取檔案內容，或巡覽至圖形所表示的模型項目。  您可以使用 Visual Studio 模型匯流排來協助達成此目標。  
   
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>為模型匯流排準備 DSL 專案  
@@ -175,7 +173,7 @@ using System.Linq;
   
     3.  按一下**轉換所有範本**並重建方案。  
   
-###  <a name="mbr"></a>若要讓物件從來源 DSL  
+###  <a name="mbr"></a> 若要讓物件從來源 DSL  
   
 1.  在您的 ElementOperations 子類別中，覆寫 `Copy()`，將模型匯流排參考 (MBR) 編碼成 IDataObject。 當使用者從來源圖表開始拖曳時，會呼叫這個方法。 接著在使用者放入目標圖表中時，IDataObject 中會提供編碼的 MBR。  
   
@@ -335,7 +333,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a>使用滑鼠動作： 將區間項目  
+##  <a name="mouseActions"></a> 使用滑鼠動作： 將區間項目  
  您可以撰寫會攔截滑鼠動作圖形的欄位上的處理常式。 下列範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
   
  若要建置此範例中，建立方案使用**類別圖表**方案範本。 加入程式碼檔案並加入下列程式碼。 將命名空間調整成與您自己的程式碼相同的命名空間。  
@@ -586,7 +584,7 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂複本的行為](../modeling/customizing-copy-behavior.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
  

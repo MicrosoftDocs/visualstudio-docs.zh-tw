@@ -1,20 +1,24 @@
 ---
-title: "IDiaPropertyStorage::ReadBOOL |Microsoft 文件"
-ms.custom: 
+title: IDiaPropertyStorage::ReadBOOL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaPropertyStorage::ReadBOOL
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaPropertyStorage::ReadBOOL
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e7f146222e76ff0f4de9f30140064e7bdd08a358
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

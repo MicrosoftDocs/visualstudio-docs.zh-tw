@@ -1,13 +1,15 @@
 ---
-title: "在 Visual Studio 中偵錯工具中檢視反組譯碼的程式碼 |Microsoft 文件"
+title: 在 Visual Studio 中偵錯工具中檢視反組譯碼的程式碼 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug.disassembly
+f1_keywords:
+- vs.debug.disassembly
 dev_langs:
 - CSharp
 - VB
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - Disassembly window
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,26 +1,26 @@
 ---
-title: "選取專案的環境 | Microsoft Docs"
-description: "在 Visual Studio 方案總管中，您可以指派特定的 Python 解譯器 (環境) 以一律用於任何指定的專案而忽略預設環境。 您也可以建立和管理虛擬環境。"
-ms.custom: 
-ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+title: 選取專案的環境 | Microsoft Docs
+description: 在 Visual Studio 方案總管中，您可以指派特定的 Python 解譯器 (環境) 以一律用於任何指定的專案而忽略預設環境。 您也可以建立和管理虛擬環境。
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f422cc60638b7eed4a5b42516e7496c4a6f6209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>選取要用於專案中的 Python 解譯器和環境
 
@@ -30,11 +30,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 ![顯示在 [方案總管] 中的全域預設 Python 環境](media/environments-project.png)
 
-您可以讓專案使用其他環境，包括虛擬環境。 在任何指定的時間，都只能啟用一個環境。
-
-## <a name="using-global-environments"></a>使用全域環境
-
-若要讓專案使用特定的全域環境 (包括[以手動方式識別](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)的 Conda 環境)，請以滑鼠右鍵按一下 [Python 環境] 節點，並選取 [新增/移除 Python 環境]。從顯示的清單中，選取所需的環境：
+若要變更專案的環境，請以滑鼠右鍵按一下 [Python 環境] 節點，然後選取 [新增/移除 Python 環境...]。在含有全域、虛擬和 Conda 環境的顯示清單中，選取您想要出現在 [Python 環境] 節點底下的所有項目：
 
 ![[Add/Remove Python Environments (新增/移除 Python 環境)] 對話方塊](media/environments-add-remove.png)
 
@@ -42,29 +38,33 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 ![顯示在 [方案總管] 中的多個 Python 環境](media/environments-project-multiple.png)
 
-若要啟用不同的環境，請在該環境名稱上按一下滑鼠右鍵，然後選取 [啟用環境]。 您的選擇會與專案一起儲存，日後每當您開啟專案時，都會啟用該環境。
+若要快速啟用不同的環境，請在該環境名稱上按一下滑鼠右鍵，然後選取 [啟用環境]。 您的選擇會與專案一起儲存，日後每當您開啟專案時，都會啟用該環境。 如果您清除 [新增/移除 Python 環境] 對話方塊中的所有選項，則 Visual Studio 會啟用全域預設環境。
 
-如果您清除 [新增/移除 Python 環境] 對話方塊中的所有選項，則 Visual Studio 會啟用全域預設環境。
+[Python 環境] 節點上的操作功能表也會提供其他命令：
+
+| 命令 | 描述 |
+| --- | --- |
+| 新增虛擬環境... | 開始在專案中新建虛擬環境的程序。 請參閱[建立虛擬環境](#create-a-virtual-environment)。 |
+| 新增現有虛擬環境... | 提示您選取包含虛擬環境的資料夾，並將它新增至 [Python 環境] 底下的清單，但不會加以啟用。 請參閱[啟用現有的虛擬環境](#activate-an-existing-virtual-environment)。 |
+| 建立 Conda 環境... | 切換至 [Python 環境] 視窗，您可在其中輸入環境名稱並指定其基底解譯器。 |
 
 ## <a name="using-virtual-environments"></a>使用虛擬環境
 
-虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 當您在專案中有特定需求，又不想修改其他環境來滿足那些需求時，通常就會使用虛擬環境。
+虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 `pyvenv.cfg` 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。 
 
-將虛擬環境新增到您的專案中之後，它會顯示在 [Python Environments (Python 環境)] 視窗中，您可以像啟用任何其他環境一樣啟用它，並且可以管理其套件。
+使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 (反之，共用全域環境則會包含任意數目的程式庫，不論您是否在專案中使用這些程式庫)。如此一來，您即可輕鬆從虛擬環境建立 `requirements.txt` 檔案，然後用來在其他的開發或生產電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
 
-請注意，虛擬環境有一個缺點，就是其中包含硬式編碼檔案路徑，因此無法輕易共用或傳輸到其他開發電腦。 幸運的是，您可以使用 `requirements.txt` 檔案，讓您的專案接收者可以輕鬆地還原環境。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
+當您在 Visual Studio 中開啟的專案包含 `requirements.txt` 檔案時，Visual Studio 會自動提示可讓您重新建立虛擬環境的選項。 在未安裝 Visual Studio (例如 Azure App Service) 的電腦上，您可以使用 `pip install -r requirements.txt` 以還原套件 ([管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 中有描述此程序)。
 
-### <a name="activating-an-existing-virtual-environment"></a>啟用現有的虛擬環境
+由於虛擬環境包含基底解譯器的硬式編碼路徑，而且您可以使用 `requirements.txt` 重新建立環境，所以一般來說，您可以省略來自原始檔控制的整個虛擬環境資料夾。
 
-如果您已在其他位置建立虛擬環境，則可以依照下列方式為專案啟用虛擬環境：
+下列各節說明如何啟用專案中的現有虛擬環境，以及如何建立新的虛擬環境。
 
-1. 在 [方案總管] 中的 [Python 環境] 上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]。
+在 Visual Studio 中，專案的虛擬環境啟用方式與任何其他項目一樣，都是透 過[方案總管] 的 [Python 環境] 節點來進行。
 
-1. 在顯示的 [瀏覽] 對話方塊中，瀏覽至包含虛擬環境的資料夾並加以選取，然後選取 [確定]。 如果 Visual Studio 在該環境中偵測到 `requirements.txt` 檔案，便會詢問是否要安裝那些套件。
+一旦虛擬環境新增至專案，即會出現在 [Python 環境] 視窗中。 接著，您可以像任何其他環境一樣將其啟用，並管理其套件。
 
-1. 在幾分鐘之後，虛擬環境會出現在 [方案總管] 的 [Python 環境] 節點下方。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]。
-
-### <a name="creating-a-virtual-environment"></a>建立虛擬環境
+### <a name="create-a-virtual-environment"></a>建立虛擬環境
 
 您可以依照下列方式直接從 Visual Studio 建立新的虛擬環境：
 
@@ -87,13 +87,23 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 >
 > 無論使用哪個方法，結果都會和您使用 [新增現有虛擬環境] 命令的結果相同。
 
+### <a name="activate-an-existing-virtual-environment"></a>啟用現有的虛擬環境
+
+如果您已在其他位置建立虛擬環境，則可以依照下列方式為專案啟用虛擬環境：
+
+1. 在 [方案總管] 中的 [Python 環境] 上按一下滑鼠右鍵，然後選取 [新增現有虛擬環境]。
+
+1. 在顯示的 [瀏覽] 對話方塊中，瀏覽至包含虛擬環境的資料夾並加以選取，然後選取 [確定]。 如果 Visual Studio 在該環境中偵測到 `requirements.txt` 檔案，便會詢問是否要安裝那些套件。
+
+1. 在幾分鐘之後，虛擬環境會出現在 [方案總管] 的 [Python 環境] 節點下方。 根據預設不會啟用虛擬環境，因此請以滑鼠右鍵按一下虛擬環境並選取 [啟用環境]。
+
 ### <a name="remove-a-virtual-environment"></a>移除虛擬環境
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下虛擬環境然後選取 [移除]。
 
 1. Visual Studio 會詢問是否要移除或刪除虛擬環境。 選取 [移除] 會使專案無法使用環境，但環境仍保留在檔案系統上。 選取 [刪除] 則會將環境從專案中移除，並從檔案系統中刪除它。 基底解譯器不會受到影響。
 
-## <a name="viewing-installed-packages"></a>檢視已安裝的套件
+## <a name="view-installed-packages"></a>檢視安裝的套件
 
 在 [方案總管] 中，展開任何特定環境的節點便可快速檢視在該環境中已安裝的套件 (表示當環境為作用中時，您可以在程式碼中匯入和使用那些套件)：
 

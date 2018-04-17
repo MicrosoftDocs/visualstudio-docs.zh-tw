@@ -1,12 +1,10 @@
 ---
-title: "如何： 將捷徑功能表項目加入至 SharePoint 專案項目擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將捷徑功能表項目加入至 SharePoint 專案項目擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26158159015a9d4e6b76845341903aa8c25af0e4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b2ac26672e7df8cc01fbca862df5867787e5283c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>如何：將捷徑功能表項目加入至 SharePoint 專案項目擴充功能
   您可以使用專案項目擴充功能，至現有的 SharePoint 專案項目加入快顯功能表項目。 當使用者以滑鼠右鍵按一下專案項目中的，會出現的功能表項目**方案總管 中**。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="deploying-the-extension"></a>部署擴充功能  
  若要部署延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要發佈副檔名的檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [如何： 將屬性加入 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   

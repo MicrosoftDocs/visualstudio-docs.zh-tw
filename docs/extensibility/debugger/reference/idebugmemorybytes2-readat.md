@@ -1,22 +1,25 @@
 ---
-title: "IDebugMemoryBytes2::ReadAt |Microsoft 文件"
-ms.custom: 
+title: IDebugMemoryBytes2::ReadAt |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugMemoryBytes2::ReadAt
+f1_keywords:
+- IDebugMemoryBytes2::ReadAt
 helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f4c71da3152394442d63c937b77e4f6538fcc1ae
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio Team Explorer 2017 工作負載和元件識別碼 | Microsoft Docs"
-description: "使用 Visual Studio 工作負載和元件識別碼為通用測試人員提供整合式測試工具"
-keywords: 
+title: Visual Studio Team Explorer 2017 工作負載和元件識別碼 | Microsoft Docs
+description: 使用 Visual Studio 工作負載和元件識別碼為通用測試人員提供整合式測試工具
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 180e7d96e88e1b8868fffbd6157fbcb901a8010c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: ab7bd672fdafb8a94904153278ca415294e94642
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 元件目錄
 

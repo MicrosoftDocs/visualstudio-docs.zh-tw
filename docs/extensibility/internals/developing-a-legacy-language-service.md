@@ -1,11 +1,12 @@
 ---
-title: "開發舊版語言服務 |Microsoft 文件"
-ms.custom: 
+title: 開發舊版語言服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -13,13 +14,15 @@ f1_keywords:
 - vs.vsip.LangServWiz.langSpec
 - vs.vsip.LangServWiz.langInfo
 - vs.vsip.LangServWiz.langServOpts
-helpviewer_keywords: language services, developing
+helpviewer_keywords:
+- language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b7a88c00e980cb86764958886d737d5113dfe1fc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

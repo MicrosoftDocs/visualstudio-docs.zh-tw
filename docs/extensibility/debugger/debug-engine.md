@@ -1,19 +1,22 @@
 ---
-title: "偵錯引擎 |Microsoft 文件"
-ms.custom: 
+title: 偵錯引擎 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debug engines
+helpviewer_keywords:
+- debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,16 +1,16 @@
 ---
-title: "在 Visual Studio for Mac 中設定 Git 存放庫 | Microsoft Docs"
-description: "在 Visual Studio for Mac 中使用 Git 和 Subversion。"
+title: 在 Visual Studio for Mac 中設定 Git 存放庫 | Microsoft Docs
+description: 在 Visual Studio for Mac 中使用 Git 和 Subversion。
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -43,11 +43,15 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 ## <a name="publishing-an-existing-project"></a>發行現有專案
 
-4. 返回 Visual Studio for Mac 中已開啟的專案。 
+如果您有尚「未」在版本控制中的現有專案，請使用下列步驟在 Git 中進行設定：
+
+4.  從 Visual Studio for Mac 的 Solution Pad 中選取方案名稱。 
 
 5. 在功能表列中，選取 [版本控制] > [在版本控制中發行] 以顯示 [選取存放庫] 對話方塊：
 
     ![在 Visual Studio for Mac 中開始簽出](media/version-control-git4-sml.png)
+
+    如果此功能表項目在功能表中呈現灰色，請確定您已選取方案名稱。  
 
 6. 選擇 [已註冊的存放庫] 索引標籤，然後按 [新增] 按鈕：
 

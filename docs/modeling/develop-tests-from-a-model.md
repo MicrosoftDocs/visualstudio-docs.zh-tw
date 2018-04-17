@@ -1,23 +1,21 @@
 ---
-title: "開發模型從測試 |Microsoft 文件"
-ms.custom: 
+title: 開發模型從測試 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  從測試的觀點，需求模型可以視為測試的縮寫。 因此，務必維護測試與整個專案中模型之間的關聯性。  
   
-##  <a name="Attaching"></a>附加至模型項目測試案例  
+##  <a name="Attaching"></a> 附加至模型項目測試案例  
  如果您的專案使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，則可以將測試連結至模型中的項目。 這可讓您快速找出需求中變更所影響的測試，並協助您追蹤已實現需求的範圍。  
   
  您可以將測試連結至所有類型的項目。 以下是一些範例：  
@@ -158,7 +156,7 @@ Assert (countAfter == countBefore = 1);
   
 3.  加入測試套件 (驗證模型項目中所表示的需求的測試案例)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   

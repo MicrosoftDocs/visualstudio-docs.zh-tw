@@ -1,12 +1,10 @@
 ---
-title: "如何： 建立 SharePoint Web 組件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立 SharePoint Web 組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 27826859d2bac9b247132e7fcb2c3721b6d38092
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 708a1b1a0b64dbed5c02e6fcaf7da9e8892f5664
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：建立 SharePoint Web 組件
   您可以建立並自訂 web 組件加入**Web 組件**至任何 SharePoint 專案項目，然後編輯 web 組件，或使用設計工具的程式碼檔。 如需詳細資訊，請參閱[How to： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      如需範例，請參閱[逐步解說： 建立 SharePoint Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [如何： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
  [逐步解說： 建立 SharePoint Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   

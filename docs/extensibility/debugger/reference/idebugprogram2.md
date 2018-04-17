@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2 |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2
-helpviewer_keywords: IDebugProgram2 interface
+f1_keywords:
+- IDebugProgram2
+helpviewer_keywords:
+- IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngine3::SetJustMyCodeState |Microsoft 文件"
-ms.custom: 
+title: IDebugEngine3::SetJustMyCodeState |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngine3::SetJustMyCodeState
-helpviewer_keywords: IDebugEngine3::SetJustMyCodeState
+f1_keywords:
+- IDebugEngine3::SetJustMyCodeState
+helpviewer_keywords:
+- IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 08d396d378f168b9a54e3b640e69dfeb3f6c9ba1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

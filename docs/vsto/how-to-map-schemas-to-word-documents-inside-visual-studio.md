@@ -1,13 +1,10 @@
 ---
-title: "如何： 將結構描述對應至 Visual Studio 內的 Word 文件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將結構描述對應至 Visual Studio 內的 Word 文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], mapping XML schemas
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65ecd3adbeb6f554a901345c2fa5dbf8359a1428
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 629149eab19dbd717cdc663a58a53659ae18a4af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：在 Visual Studio 內將結構描述對應至 Word 文件
   **重要**本主題有關 Microsoft Word 中設定的資訊是呈現專用的效益和使用個人和組織使用者位於美國和其領域之外或人員使用，或開發在執行的程式，已由 Microsoft 授權年 1 月 2010、 Microsoft 實作的特定功能中移除時之前的 Microsoft Word 產品與自訂 XML 從 Microsoft Word。 不能讀取或由個人或組織在美國或其領域人員使用，或是在開發已由 Microsoft 授權，2010 年 1 月 10 日之後的 Microsoft Word 產品執行的程式中使用這項資訊有關 Microsoft Word;這些產品無法運作此日期之前的授權或購買與授權在美國以外的產品相同。  
@@ -66,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 10. 拖曳項目從**XML 結構**視窗到文件中您想要建立對應的控制項的位置。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [文件層級自訂中的 XML 結構描述和資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   

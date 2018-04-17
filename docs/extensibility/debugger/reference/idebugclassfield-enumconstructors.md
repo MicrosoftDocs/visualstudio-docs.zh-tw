@@ -1,20 +1,24 @@
 ---
-title: "IDebugClassField::EnumConstructors |Microsoft 文件"
-ms.custom: 
+title: IDebugClassField::EnumConstructors |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugClassField::EnumConstructors
-helpviewer_keywords: IDebugClassField::EnumConstructors method
+f1_keywords:
+- IDebugClassField::EnumConstructors
+helpviewer_keywords:
+- IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f0a9e4197f61d01d7d2054055b219b724c04fd0f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

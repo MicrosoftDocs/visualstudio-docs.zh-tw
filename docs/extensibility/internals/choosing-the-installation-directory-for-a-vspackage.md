@@ -1,19 +1,22 @@
 ---
-title: "VSPackage 所選擇的安裝目錄 |Microsoft 文件"
-ms.custom: 
+title: VSPackage 所選擇的安裝目錄 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: VSPackages, installation directory
+helpviewer_keywords:
+- VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 085c3bea9b9edc726fa09dd5d7658aff4a55e568
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugCodeContexts2 |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugCodeContexts2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugCodeContexts2
-helpviewer_keywords: IEnumDebugCodeContexts2
+f1_keywords:
+- IEnumDebugCodeContexts2
+helpviewer_keywords:
+- IEnumDebugCodeContexts2
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: cd6ead902a65a9f3e5e392b1b9dbeed135f326b4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

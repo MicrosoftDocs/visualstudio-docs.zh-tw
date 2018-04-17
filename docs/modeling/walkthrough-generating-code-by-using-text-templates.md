@@ -1,24 +1,22 @@
 ---
-title: "逐步解說： 使用文字範本產生程式碼 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用文字範本產生程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7099edb08216cd91858a20e65c7bb2fede786977
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 程式碼產生可讓您產生強類型的程式碼，而且可以在來源模型變更時輕鬆地進行變更。 這與撰寫可接受組態檔的完全泛型程式的替代技術相反，它更具彈性，但不容易讀取和變更程式碼，也不會有這樣的良好效能。 本逐步解說示範這項優點。  
@@ -419,6 +417,6 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>對文字範本進行疑難排解  
  如果您在 [錯誤清單] 中看到範本轉換或編譯錯誤，或未正確地產生輸出檔案，則可以使用[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技術對文字範本進行疑難排解。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)

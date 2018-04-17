@@ -1,12 +1,10 @@
 ---
-title: "SharePoint 專案和專案項目範本 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 專案和專案項目範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.FirstWizardPage
 - VS.SharePointTools.SPE.ListInstance
@@ -24,13 +22,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3890d7678fdc50a867e254edbbb7503acbebcd76
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d671c397f139cfaa51bd664e5324a32cce671361
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本和使用方式。 
@@ -145,7 +144,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="web-part"></a>網頁組件  
  A *web 組件*是一種特殊的頁面稱為網頁組件內執行的伺服器端控制項。 它們會出現在 SharePoint 網站的頁面的建置組塊。 Web 組件項目會提供可讓您設計的 SharePoint 網站的 web 組件的檔案。 如需詳細資訊，請參閱[How to： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [SharePoint 產品與技術](http://go.microsoft.com/fwlink/?LinkId=178818)  
   

@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugProcesses2::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugProcesses2::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugProcesses2::Clone
-helpviewer_keywords: IEnumDebugProcesses2::Clone
+f1_keywords:
+- IEnumDebugProcesses2::Clone
+helpviewer_keywords:
+- IEnumDebugProcesses2::Clone
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: da9503dbce1e08d3171f60218f0006090c712511
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentContext2::GetName |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentContext2::GetName |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentContext2::GetName
-helpviewer_keywords: IDebugDocumentContext2::GetName
+f1_keywords:
+- IDebugDocumentContext2::GetName
+helpviewer_keywords:
+- IDebugDocumentContext2::GetName
 ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a0350336f9ca13fe4302ada8100912799b326de4
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,12 +1,10 @@
 ---
-title: "建立 SharePoint Web 組件 |Microsoft 文件"
-ms.custom: 
+title: 建立 SharePoint Web 組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>建立 SharePoint 的 Web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀和行為的 SharePoint 網站的頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們出現在 SharePoint 網站的頁面的建置組塊。 請參閱[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  如需有關沙箱化方案的詳細資訊，請參閱[沙箱之間的差異與伺服器陣列方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>建立舊版樣式 Sharepoint Web 組件  
- 您可以在 Visual Studio 中使用範本來建立自訂[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]for SharePoint web 組件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]web 組件最上層的內建[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 組件基礎結構，並會建議針對新的專案類型。  
+ 您可以在 Visual Studio 中使用範本來建立自訂[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]for SharePoint web 組件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web 組件最上層的內建[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 組件基礎結構，並會建議針對新的專案類型。  
   
  在極少數的情況下，您可能必須使用 sharepoint web 組件的舊樣式建立的 web 組件。 您可以使用 Visual Studio 來建立這些類型的 web 組件，但 Visual Studio 不提供任何專門設計來協助您建立的範本。  
   

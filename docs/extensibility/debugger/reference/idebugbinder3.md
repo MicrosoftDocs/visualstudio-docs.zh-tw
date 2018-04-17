@@ -1,20 +1,24 @@
 ---
-title: "IDebugBinder3 |Microsoft 文件"
-ms.custom: 
+title: IDebugBinder3 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBinder3
-helpviewer_keywords: IDebugBinder3 interface
+f1_keywords:
+- IDebugBinder3
+helpviewer_keywords:
+- IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 43465f919806f16154b8f3328aad7496c83ec235
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

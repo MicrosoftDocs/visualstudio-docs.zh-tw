@@ -1,22 +1,25 @@
 ---
-title: "Thunk |Microsoft 文件"
-ms.custom: 
+title: Thunk |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - thunk properties [DIA SDK]
 - thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 2dc847378510a6c7b0c07834a7658874f94b764e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

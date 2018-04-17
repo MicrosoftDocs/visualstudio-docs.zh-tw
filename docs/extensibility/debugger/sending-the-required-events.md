@@ -1,19 +1,22 @@
 ---
-title: "傳送所需的事件 |Microsoft 文件"
-ms.custom: 
+title: 傳送所需的事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], required events
+helpviewer_keywords:
+- debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f2fa28a3429c52e3d4eb8b5fc9faefbd86ee04d9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

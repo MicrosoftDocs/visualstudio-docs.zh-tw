@@ -1,5 +1,5 @@
 ---
-title: "如何： 使用運算式編輯器 |Microsoft 文件"
+title: 如何： 使用運算式編輯器 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>HOW TO：使用運算式編輯器
 運算式編輯器是 Windows 工作流程設計工具控制項做為輸入及評估這些運算式用於許多工作流程活動。 [運算式編輯器] 提供完整功能的 IDE 編輯經驗，包括 IntelliSense、顏色標示、ParamInfo、錯誤不規則曲線等等。 編譯器在運算式輸入之後會加以驗證。 如果運算式無效，就會顯示錯誤圖示。 編輯器也可做為開啟**運算式編輯器** 對話方塊。

@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty2::EnumChildren |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty2::EnumChildren |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty2::EnumChildren
-helpviewer_keywords: IDebugProperty2::EnumChildren
+f1_keywords:
+- IDebugProperty2::EnumChildren
+helpviewer_keywords:
+- IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8bd006cd2391acde9743d660b7cf154098e286c7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

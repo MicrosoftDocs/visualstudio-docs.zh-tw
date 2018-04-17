@@ -1,19 +1,22 @@
 ---
-title: "TASK_STATE_CANCELED 欄位 |Microsoft 文件"
-ms.custom: 
+title: TASK_STATE_CANCELED 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a6f37c397ec7dab6095cb03e2b93cb8f65892091
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

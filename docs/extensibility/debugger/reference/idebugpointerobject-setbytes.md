@@ -1,20 +1,24 @@
 ---
-title: "IDebugPointerObject::SetBytes |Microsoft 文件"
-ms.custom: 
+title: IDebugPointerObject::SetBytes |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPointerObject::SetBytes
-helpviewer_keywords: IDebugPointerObject::SetBytes method
+f1_keywords:
+- IDebugPointerObject::SetBytes
+helpviewer_keywords:
+- IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9bab2459d2de40fdc3ea44fe7e5e92c138a5f006
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

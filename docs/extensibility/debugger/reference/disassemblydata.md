@@ -1,20 +1,24 @@
 ---
-title: "DisassemblyData |Microsoft 文件"
-ms.custom: 
+title: DisassemblyData |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DisassemblyData
-helpviewer_keywords: DisassemblyData structure
+f1_keywords:
+- DisassemblyData
+helpviewer_keywords:
+- DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0e97d2cc15e3b613fa56d2d4df1d5df8c68f9b06
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

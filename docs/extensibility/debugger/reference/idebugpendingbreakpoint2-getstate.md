@@ -1,22 +1,25 @@
 ---
-title: "IDebugPendingBreakpoint2::GetState |Microsoft 文件"
-ms.custom: 
+title: IDebugPendingBreakpoint2::GetState |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPendingBreakpoint2::GetState
+f1_keywords:
+- IDebugPendingBreakpoint2::GetState
 helpviewer_keywords:
 - GetState method
 - IDebugPendingBreakpoint2::GetState method
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7a9f420bfd36fed7fcc3f239e5610a34e63b52a6
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

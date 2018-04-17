@@ -1,11 +1,11 @@
 ---
-title: "MSBuild 回應檔 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 回應檔 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -18,23 +18,27 @@ helpviewer_keywords:
 - MSBuild, .rsp files
 - .rsp files
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
-caps.latest.revision: 
+caps.latest.revision: 3
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7520a9f51f0d9420039728a75e84d4ed16583738
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 40a9f7b6e1456c511e70937ac6a1cff23dad30d0
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="msbuild-response-files"></a>MSBuild 回應檔
 回應檔 (.rsp) 是包含 MSBuild.exe 命令列參數的文字檔。 每個參數可位於單獨一行，或所有參數可位於同一行。 註解行前面會加上 **#** 符號。 **@** 參數可用來將其他回應檔案傳遞給 MSBuild.exe。  
   
- 自動回應檔是 MSBuild.exe 在建置專案時會自動使用的特殊 .rsp 檔案。 MSBuild.rsp 必須與 MSBuild.exe 位於相同目錄中，否則系統會找不到這個檔案。 您可以編輯此檔案以指定 MSBuild.exe 的預設命令列參數。 好比說，如果您每次建置專案時都使用相同的記錄器，則可以將 **/logger** 參數新增至 MSBuild.rsp，MSBuild.exe 即會在每次建置專案時使用這個記錄器。  
-  
+## <a name="msbuildrsp"></a>MSBuild.rsp
+自動回應檔是 MSBuild.exe 在建置專案時會自動使用的特殊 .rsp 檔案。 MSBuild.rsp 必須與 MSBuild.exe 位於相同目錄中，否則系統會找不到這個檔案。 您可以編輯此檔案以指定 MSBuild.exe 的預設命令列參數。 好比說，如果您每次建置專案時都使用相同的記錄器，則可以將 **/logger** 參數新增至 MSBuild.rsp，MSBuild.exe 即會在每次建置專案時使用這個記錄器。  
+
+## <a name="directorybuildrsp"></a>Directory.Build.rsp
+在 15.6 版和更新版本中，MSBuild 會在專案的父目錄中，搜尋名為 `Directory.Build.rsp` 的檔案。  這有助於原始程式碼儲存機制在命令列建置期間提供預設引數。  它也可用來指定裝載之組建的命令列引數。
+
 ## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)

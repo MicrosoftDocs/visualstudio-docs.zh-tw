@@ -1,20 +1,24 @@
 ---
-title: "IDebugQueryEngine2::GetEngineInterface |Microsoft 文件"
-ms.custom: 
+title: IDebugQueryEngine2::GetEngineInterface |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugQueryEngine2::GetEngineInterface
-helpviewer_keywords: IDebugQueryEngine2::GetEngineInterface
+f1_keywords:
+- IDebugQueryEngine2::GetEngineInterface
+helpviewer_keywords:
+- IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 65f40bf3e0e110a6d945921d06443f0c8a608d20
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

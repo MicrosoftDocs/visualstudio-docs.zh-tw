@@ -1,12 +1,10 @@
 ---
-title: "&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - postAction element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63e15e2a02ac58ee385e38d5ed2d435c0e80dddb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2934b0ad761dcd512b21e2424515c06fb896dda5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `postAction` 命名空間的 `vstav3` 項目包含 `entrypoint` 項目和所有 `postActionData` 項目，這些項目與安裝 Office 方案後執行的部署後動作相關。  
@@ -46,10 +45,10 @@ ms.lasthandoff: 01/10/2018
  `postAction` 具有下列項目。  
   
 ### <a name="entrypoint"></a>entrypoint  
- 選擇性。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ 選擇性。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60;進入點&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
   
 ### <a name="postactiondata"></a>postActionData  
- 選擇性。 角色`postActionData`中的項目`vstav3`命名空間中定義[&#60; postActionData &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ 選擇性。 角色`postActionData`中的項目`vstav3`命名空間中定義[ &#60;postActionData&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)。  
   
 ## <a name="post-deployment-action-example"></a>部署後動作範例  
   
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
 </vstav3:postAction>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

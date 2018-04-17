@@ -1,18 +1,18 @@
 ---
-title: "控制流程活動設計工具 |Microsoft 文件"
+title: 控制流程活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c68c94e5209a16caedb184cae515503ab87eaa9f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7b464f141dcda624c293a5abd5065a3263738932
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 
@@ -50,7 +50,7 @@ Windows 工作流程設計工具包含數個系統供應的活動可讓您建構
 
  [流程圖](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [訊息處理](../workflow-designer/messaging-activity-designers.md)
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 

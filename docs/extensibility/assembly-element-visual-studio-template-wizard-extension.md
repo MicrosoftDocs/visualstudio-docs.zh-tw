@@ -1,22 +1,25 @@
 ---
-title: "Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件"
-ms.custom: 
+title: Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

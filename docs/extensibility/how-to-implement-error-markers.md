@@ -1,19 +1,22 @@
 ---
-title: "如何： 實作錯誤標記 |Microsoft 文件"
-ms.custom: 
+title: 如何： 實作錯誤標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - error markers
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d41c1bf063ea074df217934a00f73291a10e051d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,10 +1,10 @@
 ---
-title: "Visual Studio 中的 C++ 使用者入門 | Microsoft Docs"
+title: Visual Studio 中的 C++ 使用者入門 | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
 manager: ghogen
@@ -12,11 +12,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 

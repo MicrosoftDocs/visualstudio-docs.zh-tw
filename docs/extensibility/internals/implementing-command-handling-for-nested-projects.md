@@ -1,19 +1,22 @@
 ---
-title: "實作命令處理巢狀專案 |Microsoft 文件"
-ms.custom: 
+title: 實作命令處理巢狀專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: nested projects, implementing command handling
+helpviewer_keywords:
+- nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: e4ed9efab34a51bdfaacea1773a33637437b2ced
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

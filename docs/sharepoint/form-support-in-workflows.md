@@ -1,12 +1,10 @@
 ---
-title: "在工作流程中形成支援 |Microsoft 文件"
-ms.custom: 
+title: 在工作流程中形成支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2544bbe60ea014ee873342f06ce285c809b42eb6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="form-support-in-workflows"></a>工作流程中的表單支援
   表單的四種可用工作流程中： 關聯、 初始化、 工作及修改。 這些表單類型可以根據 ASPX 表單或表單。 支援層級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供特定的格式取決於許多因素下, 表所述。 如需工作流程表單類型的詳細資訊，請參閱[Workflow Form 概觀](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 網站上。  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |工作|-表單是在工作流程的 Elements.xml 檔案中參考。<br />-無法重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。 **注意：**規則和屬性必須新增並變更此案例要能運作。|  
 |修改|不適用。 無法在 SharePoint Designer 中建立 ASPX 修改表單。|不適用。 除了內建的 SharePoint 伺服器工作流程，後者不包含.wsp 檔案中匯出的工作流程時，無法在 SharePoint Designer 中建立 InfoPath 修改表單。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  

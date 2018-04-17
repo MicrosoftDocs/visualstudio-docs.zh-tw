@@ -1,12 +1,10 @@
 ---
-title: "如何： 在功能區顯示開發人員索引標籤 |Microsoft 文件"
-ms.custom: 
+title: 如何： 在功能區顯示開發人員索引標籤 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0a4793de32956e3aa3de2965eef15623785716d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤在 Office 應用程式的功能區，您必須將它顯示此索引標籤，因為它不會出現預設設定。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      ![Outlook 2013 Preview 中的 [選項] 按鈕](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview 中的 [選項] 按鈕")  
   
-3.  在*ApplicationName***選項**對話方塊方塊中，選擇**自訂功能區** 按鈕。  
+3.  在*ApplicationName * * * 選項** 對話方塊方塊中，選擇**自訂功能區** 按鈕。  
   
      下圖顯示**選項**對話方塊和**自訂功能區**Excel 2010 中的按鈕。 在本主題頂端附近的「適用於」一節中所列的所有其他應用程式中，此按鈕的位置類似。  
   
@@ -66,7 +65,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  選擇**確定**按鈕以關閉**選項** 對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)  
   
   

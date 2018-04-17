@@ -42,22 +42,25 @@
 #### [優先論壇支援](vs-priority-support.md)
 #### [指引支援](vs-concierge-chat.md)
 ## 管理訂閱
-### 總覽
-#### [了解訂閱管理](subscription-management-info.md)
-#### [系統管理員責任](admin-responsibilities.md)
-#### [管理系統管理員](managing-admins.md)
-#### [存取入口網站](access-admin-portal.md)
-#### 協助組織上線
-##### [尋找您的 PCN](find-pcn.md)
-##### [管理多個 PCN](multiple-pcns.md)
-##### [尋找您的主要連絡人](find-primary-contact.md)
-##### [尋找訂閱識別碼](find-subscription-id.md)
-### 使用管理入口網站
+### [系統管理員責任](admin-responsibilities.md)
+### [了解訂閱管理](subscription-management-info.md)
+### 存取入口網站與管理系統管理員
+#### [針對大量授權](volume-license-admins.md)
+##### [VLSC 管理移轉常見問題集](vlsc-admin-faq.md)
+##### 協助組織上線
+###### [上線電子郵件通訊](volume-license-onboarding-email.md)
+###### [尋找您的 PCN](find-pcn.md)
+###### [尋找您的主要連絡人](find-primary-contact.md)
+#### [針對 MPSA](mpsa.md)
+#### [針對雲端訂閱](cloud-admin.md)
+#### [上線影片](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+### [使用管理入口網站](using-admin-portal.md)
 #### [指派訂閱](assign-license.md)
 #### [重新傳送指派電子郵件](resend-assignment-email.md)
 #### [編輯訂閱](edit-license.md)
 #### [刪除訂閱](delete-license.md)
 #### [搜尋訂閱](search-license.md)
+#### [匯出訂閱](exporting-subscriptions.md)
 #### [過度分派](handle-overclaimed-license.md)
 #### [過期的訂閱](handle-expired-license.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
@@ -76,3 +79,6 @@
 ### [Visual Studio 授權白皮書](http://aka.ms/vslicensing) \(英文\)
 ### [比較訂閱選項和定價](https://www.visualstudio.com/vs/pricing)
 ### [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
+### [Visual Studio 管理與訂閱支援](https://www.visualstudio.com/support/support-overview-vs)
+### [大量授權和產品使用權限 (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Microsoft 產品和服務合約 (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

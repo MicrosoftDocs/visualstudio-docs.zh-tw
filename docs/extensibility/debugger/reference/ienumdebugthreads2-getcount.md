@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugThreads2::GetCount |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugThreads2::GetCount |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugThreads2::GetCount
-helpviewer_keywords: IEnumDebugThreads2::GetCount
+f1_keywords:
+- IEnumDebugThreads2::GetCount
+helpviewer_keywords:
+- IEnumDebugThreads2::GetCount
 ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 86baa7d30e77b772c65044623ac6874ea3ebc287
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugThread2::GetThreadId |Microsoft 文件"
-ms.custom: 
+title: IDebugThread2::GetThreadId |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThread2::GetThreadId
-helpviewer_keywords: IDebugThread2::GetThreadId
+f1_keywords:
+- IDebugThread2::GetThreadId
+helpviewer_keywords:
+- IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: cca4dd4fb659b8abcc1ba39f8aaf8fd9300362b8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

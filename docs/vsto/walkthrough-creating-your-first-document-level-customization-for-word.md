@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 Word 的第一個文件層級自訂 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 Word 的第一個文件層級自訂 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Word 的文件層級自訂。 只有在特定的文件開啟時，才能使用您在這種解決方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何文件開啟時顯示新功能區索引標籤。  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  選取**建立新的文件**，然後按一下**確定**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立**FirstDocumentCustomization**專案，並將**FirstDocumentCustomization**文件和 ThisDocument 程式碼檔案加入專案中。 **FirstDocumentCustomization**設計工具中自動開啟文件。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立**FirstDocumentCustomization**專案，並將**FirstDocumentCustomization**文件和 ThisDocument 程式碼檔案加入專案中。 **FirstDocumentCustomization**設計工具中自動開啟文件。  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>在設計工具中關閉並重新開啟文件  
  如果您在開發專案時故意或不小心關閉了設計工具中的文件，您都可以重新開啟它。  
@@ -157,8 +156,8 @@ ms.lasthandoff: 01/10/2018
   
 -   部署 Word 的文件層級自訂：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+## <a name="see-also"></a>另請參閱  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Word 方案](../vsto/word-solutions.md)   
  [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   

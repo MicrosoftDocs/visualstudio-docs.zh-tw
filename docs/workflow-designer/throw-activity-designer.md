@@ -1,5 +1,5 @@
 ---
-title: "Throw 活動設計工具 |Microsoft 文件"
+title: Throw 活動設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b41fb8fcbbb80f2f99558f07c5e5a4f9e4a85b
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 82080c7ebc03b863dcd1fbebe9eb9923ba4fae3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="throw-activity-designer"></a>Throw 活動設計工具
 **擲回**活動設計工具用來建立及設定<xref:System.Activities.Statements.Throw>活動。

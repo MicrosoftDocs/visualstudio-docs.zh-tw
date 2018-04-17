@@ -1,11 +1,7 @@
 ---
-title: "開發人員測試工具、案例和功能 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的開發人員測試工具 | Microsoft Docs
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,31 +10,21 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0da910ddf48d0f270aa5e624628d0d6b937e9ae1
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: ae3b475cb6f50f9c6ec623b7dfc588ada9b27163
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
 維護單元測試的程式碼健康狀態。 Visual Studio 提供各種功能強大的工具和技術，供開發人員在測試應用程式時使用：
 
-**案例和功能：**
-
-* [使用 IntelliTest 避免迴歸並達到程式碼涵蓋範圍](#intellitest)
-* [使用自動程式碼 UI 和 Selenium 執行使用者介面測試](#ui-testing)
-* [Visual Studio Code 涵蓋範圍的有效單元測試](#unit-testing)
-* [使用高效能測試總管執行任何架構的單元測試](#test-explorer)
-* [開始使用單元測試](getting-started-with-unit-testing.md)
-
-<a name="intellitest"></a>
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>使用 IntelliTest 避免迴歸並達到程式碼涵蓋範圍
 
 在傳統的單元測試套件中，每個測試案例都代表示範性使用案例，而且判斷提示會體現輸入與輸出之間的關聯性。  驗證一些這類案例可能就已足夠，但當正確但未經測試的輸入引發錯誤回應時，資深開發人員知道即使經過完整測試的程式碼還是潛伏著 Bug。
 
-使用 IntelliTest 改善涵蓋範圍並避免迴歸。
-IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測試的力氣。 
+使用 IntelliTest 改善涵蓋範圍並避免迴歸。 IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測試的力氣。
 
 ![IntelliTest 作用中](media/devtest-intellitest.png)
 
@@ -48,14 +34,13 @@ IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測�
 * [開始使用 IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 參考手冊](intellitest-manual/index.md)
 
-<a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>使用自動程式碼 UI 和 Selenium 執行使用者介面測試
 
 使用最佳品種或社群核准的 UI 測試來測試使用者介面 (UI)。
 自動程式碼 UI 測試提供一種方式，可建立完全自動化的測試來驗證您應用程式之使用者介面的功能和行為。
 它們可以跨各種技術 (包括以 XAML 為基礎的 UWP 應用程式、瀏覽器應用程式和 SharePoint 應用程式) 將 UI 測試自動化。
 
-不論您選擇最佳品種自動程式碼 UI 測試還是 Selenium 的一般瀏覽器 UI 測試，Visual Studio 都會提供您需要的所有工具。 
+不論您選擇最佳品種自動程式碼 UI 測試還是 Selenium 的一般瀏覽器 UI 測試，Visual Studio 都會提供您需要的所有工具。
 
 ![使用自動程式碼 UI 執行 UI 測試](media/devtest-codeduitest.png)
 
@@ -66,12 +51,11 @@ IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測�
 * [使用自動程式碼 UI 測試來測試 SharePoint 應用程式](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction to Coded UI Tests with Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx) (Visual Studio Enterprise 的自動程式碼 UI 測試簡介 (實驗室))
 
-<a name="unit-testing"></a>
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Visual Studio Code 涵蓋範圍的有效單元測試
 
 若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。
 
-程式碼涵蓋範圍分析適用於 Managed 程式碼 (CLI) 和 Unmanaged (機器碼)。
+程式碼涵蓋範圍分析適用於受控碼和未受控碼 (機器碼)。
 
 當您使用 [測試總管] 執行測試方法程式時，可以選擇程式碼涵蓋範圍。 結果表會顯示程式碼在每個組件、類別和方法中執行的百分比。 此外，原始檔編輯器會顯示已測試的程式碼。
 
@@ -81,7 +65,6 @@ IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測�
 * [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Visual Studio 的單元測試、程式碼涵蓋範圍和重複程式碼分析 (實驗室))
 * [自訂程式碼涵蓋範圍分析](customizing-code-coverage-analysis.md)
 
-<a name="test-explorer"></a>
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>使用高效能測試總管執行任何架構的單元測試
 
 測試總管可協助開發人員建立、管理和充分發揮單元測試的優點。
@@ -100,6 +83,6 @@ Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力
 ## <a name="see-also"></a>另請參閱
 
 * [開始使用單元測試](getting-started-with-unit-testing.md)
-* [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (加速 Team Foundation Server 中的單元測試執行)
+* [Speed up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (加速 Team Foundation Server 中的單元測試執行)
 * [Parallel and Context Sensitive Unit Test Execution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/) (平行和內容區分的單元測試執行)
 * [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Visual Studio 的單元測試、程式碼涵蓋範圍和重複程式碼分析 (實驗室))

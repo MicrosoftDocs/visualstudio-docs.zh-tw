@@ -1,11 +1,12 @@
 ---
-title: "&lt;字串&gt;元素 （啟動載入器） |Microsoft 文件"
-ms.custom: 
+title: '&lt;字串&gt;元素 （啟動載入器） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -15,13 +16,15 @@ dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <Strings> element [bootstrapper]
+helpviewer_keywords:
+- <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

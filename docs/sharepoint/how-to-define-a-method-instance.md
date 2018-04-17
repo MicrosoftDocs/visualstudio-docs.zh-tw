@@ -1,12 +1,10 @@
 ---
-title: "如何： 定義方法執行個體 |Microsoft 文件"
-ms.custom: 
+title: 如何： 定義方法執行個體 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: aa5f1adcaacacd2b9e08d4c12cdcafbd5f561200
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 44a31af455b09db5fb359339cee8da7b3ca0c77e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定義方法執行個體
   在模型中，您必須定義至少一個的方法執行個體的每個方法。  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**屬性**視窗中，將方法執行個體的屬性。 如需有關每一個屬性的詳細資訊，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

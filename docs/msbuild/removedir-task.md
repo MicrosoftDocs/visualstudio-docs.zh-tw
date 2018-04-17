@@ -1,11 +1,11 @@
 ---
-title: "RemoveDir 工作 | Microsoft Docs"
-ms.custom: 
+title: RemoveDir 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - RemoveDir task [MSBuild]
 - MSBuild, RemoveDir task
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
-caps.latest.revision: 
+caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6183f244483eba46f729bad2880a3bab4c72a6a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="removedir-task"></a>RemoveDir 工作
 移除指定的目錄及其所有檔案和子目錄。  
@@ -63,6 +63,6 @@ ms.lasthandoff: 02/09/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

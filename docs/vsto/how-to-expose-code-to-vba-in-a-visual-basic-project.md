@@ -1,12 +1,10 @@
 ---
-title: "如何： 公開程式碼給 Visual Basic 專案中的 VBA |Microsoft 文件"
-ms.custom: 
+title: 如何： 公開程式碼給 Visual Basic 專案中的 VBA |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3d007024cdca160c194285da8f0a741100253d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>How to: Expose Code to VBA in a Visual Basic Project
   您的程式碼中的公開[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要與彼此互動的程式碼的兩個類型，專案加入 Visual Basic for Applications (VBA) 程式碼。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic 處理序會與 Visual C# 處理序不同。 如需詳細資訊，請參閱[如何： 公開程式碼給 Visual C# 35; 中的 VBA專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
+ Visual Basic 處理序會與 Visual C# 處理序不同。 如需詳細資訊，請參閱[如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
  比其他類別中的程式碼用於不同的主項目類別中的程式碼為處理程序：  
   
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 呼叫 VSTO 程式碼從 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
   
-##  <a name="HostItemCode"></a>公開主項目類別中的程式碼  
+##  <a name="HostItemCode"></a> 公開主項目類別中的程式碼  
  若要啟用 Visual Basic 程式碼呼叫的主項目類別中的 VBA 程式碼，將**EnableVbaCallers**屬性主項目的**True**。  
   
  如需示範如何公開主項目類別的方法，然後將它從 VBA 呼叫的逐步解說，請參閱[逐步解說： 從 VBA 在 Visual Basic 專案中呼叫的程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。 如需主項目的詳細資訊，請參閱 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  建置專案。  
   
-##  <a name="NonHostItem"></a>公開不是主項目類別中的程式碼  
+##  <a name="NonHostItem"></a> 公開不是主項目類別中的程式碼  
  若要啟用 VBA 程式碼呼叫不是主項目類別中的 Visual Basic 程式碼，請修改程式碼，因此它會顯示給 VBA。  
   
 #### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>若要公開給 VBA 之主項目類別不是程式碼  
@@ -120,11 +119,11 @@ ms.lasthandoff: 01/10/2018
   
 9. 建置專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [逐步解說： 從 Visual Basic 專案中的 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [如何： 公開程式碼給 Visual C# 35; 中的 VBA專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

@@ -1,20 +1,24 @@
 ---
-title: "BPRESI_FIELDS |Microsoft 文件"
-ms.custom: 
+title: BPRESI_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BPRESI_FIELDS
-helpviewer_keywords: BPRESI_FIELDS enumeration
+f1_keywords:
+- BPRESI_FIELDS
+helpviewer_keywords:
+- BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 560080231de78d60e3d7c1e56c5b1c46bbfe6155
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

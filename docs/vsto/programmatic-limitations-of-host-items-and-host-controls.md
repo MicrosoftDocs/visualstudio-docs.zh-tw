@@ -1,13 +1,10 @@
 ---
-title: "主項目和主控制項的程式設計限制 |Microsoft 文件"
-ms.custom: 
+title: 主項目和主控制項的程式設計限制 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -33,14 +30,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96c027730553c8dd51774d1ff64c6552b4e5905b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c47b1158eefda91e83ce85a5a7403f3f8f0249a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主項目和主控制項的程式設計限制
   每個主項目和主控制項的行為，都已設計成像是對應的原生 Microsoft Office Word 或 Microsoft Office Excel 物件一樣，同時還具備額外的功能。 不過，主項目和主控制項在執行階段的行為，還是與原生 Office 物件有些基本差異。  
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
  Word 和 Excel 物件模型包含在文件和工作表上公開原生控制項集合的屬性。 您無法使用這些屬性來存取 Managed 控制項。 例如，您無法使用 <xref:Microsoft.Office.Tools.Word.Bookmark> 的 <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> 屬性或 <xref:Microsoft.Office.Interop.Word.Document> 的 <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> 屬性，來列舉文件中的每個 <xref:Microsoft.Office.Tools.Word.Document>主控制項。 這些屬性只會包含文件中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 控制項，而不會包含文件中的 <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   

@@ -1,19 +1,22 @@
 ---
-title: "使用編輯器項目範本建立擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 使用編輯器項目範本建立擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], new - extensions
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

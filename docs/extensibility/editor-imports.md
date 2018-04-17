@@ -1,19 +1,22 @@
 ---
-title: "編輯器匯入 |Microsoft 文件"
-ms.custom: 
+title: 編輯器匯入 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], new - services
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

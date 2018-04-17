@@ -1,24 +1,22 @@
 ---
-title: "偵錯 T4 文字範本 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 T4 文字範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 您可以在文字範本中設定中斷點。 偵錯設計階段文字範本，請儲存文字範本檔，，然後選擇**偵錯 T4 範本**快顯功能表的 [方案總管] 中的檔案。 若要偵錯執行階段文字範本，只要偵錯它所屬的應用程式。  
@@ -72,7 +70,7 @@ ms.lasthandoff: 02/09/2018
 |檔案 '{0}' 的 include 指示詞會造成無限迴圈。|顯示循環 include 指示詞會指定 （例如檔案 A 包含檔案 B，其中包含檔案的）。|未指定循環 include 指示詞。|  
 |執行轉換：|前面加上此程式所有的錯誤或警告時執行轉換所產生的字串。|不適用。|  
 |在區塊內找不到未預期的開始或結束標記。 請確定，您未正確輸入開始或結束標記，而且您不需要任何巢狀的區塊中的範本。|當您有未預期時，顯示\<# >。 也就是說，如果您有\<# 之後，尚未關閉，另一個開啟標記，或有 #> 之前沒有未封閉開啟標記時。 訊息會提供不相符的標記的行號。|請移除不相符的開始或結束標記，或使用逸出字元。|  
-|指定指示詞格式錯誤。 指示詞會被忽略。 請以格式指定指示詞`<#@ name [parametername="parametervalue"]*  #>`|顯示由剖析器指示詞未指定正確的格式。 訊息會提供不正確的指示詞的行號。|確定所有指示詞會在表單中`<#@ name [parametername="parametervalue"]*  #>`。 如需詳細資訊，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。|  
+|指定指示詞格式錯誤。 指示詞會被忽略。 請以格式指定指示詞 `<#@ name [parametername="parametervalue"]*  #>`|顯示由剖析器指示詞未指定正確的格式。 訊息會提供不正確的指示詞的行號。|確定所有指示詞會在表單中`<#@ name [parametername="parametervalue"]*  #>`。 如需詳細資訊，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。|  
 |無法載入組件 '{0}' 已註冊的指示詞處理器 '{1}'<br /><br /> {2}|無法載入指示詞處理器，由主機時發生。 訊息會識別組件提供指示詞處理器和指示詞處理器的名稱。|請確定已正確註冊指示詞處理器，並有組件。|  
 |找不到類型 '{0}' 組件 '{1}' 中已註冊的指示詞處理器 '{2}'<br /><br /> {3}|發生於指示詞處理器的類型無法載入組件。 訊息會提供類型、 組件，以及指示詞處理器的名稱。|Vshost 登錄中，尋找指示詞處理器資訊 （名稱、 組件和類型）。 請確定正確，註冊指示詞處理器，且型別有組件中。|  
 |無法載入組件 '{0}'|載入的組件問題時，就會發生。 訊息會提供組件名稱。|您可以指定要載入的組件\<@# assembly #> 指示詞，以及指示詞處理器。 後面這個字串的錯誤訊息應該提供更多資料組件載入失敗的原因。|  

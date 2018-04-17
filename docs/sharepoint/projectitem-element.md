@@ -1,13 +1,10 @@
 ---
-title: "ProjectItem 項目 |Microsoft 文件"
-ms.custom: 
+title: ProjectItem 項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectItem element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 949aef0655db4536c8690080870a03f52f09fdf4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ea55cbba9115b88ab9bbf763ec489dce7ad7556e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。  
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 |**SupportedDeploymentScopes**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的部署範圍。 這個值是以逗號分隔的字串，包含一或多個下列字串： 伺服器陣列、 網站、 Web、 WebApplication 或封裝。 例如，「 Web，站台 」。<br /><br /> 在自訂 SharePoint 專案項目類型中，這個屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性。|  
 |**Type**|需要**xs: string**屬性。<br /><br /> SharePoint 專案項目識別項。 自訂 SharePoint 專案項目類型中的識別碼是您傳遞給字串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 如需詳細資訊，請參閱[如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> 如需 Visual Studio 隨附的內建 SharePoint 專案項目識別碼的清單，請參閱[擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -80,7 +77,7 @@ ms.lasthandoff: 01/10/2018
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

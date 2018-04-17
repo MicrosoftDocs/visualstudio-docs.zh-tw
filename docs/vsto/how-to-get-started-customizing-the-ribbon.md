@@ -1,12 +1,10 @@
 ---
-title: "如何： 開始自訂功能區 |Microsoft 文件"
-ms.custom: 
+title: 如何： 開始自訂功能區 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6856ca88f6f8d0b6d0c983da2ee068e5618964b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 304cf3e9d445bcb655e27e8e35605549f489155c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>如何：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，新增**功能區 （視覺化設計工具）**或**功能區 (XML)**項目加入 Office 專案。  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
  功能區項目會出現在**方案總管 中**。 下一個步驟的詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   

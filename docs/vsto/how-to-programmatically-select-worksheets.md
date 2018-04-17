@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式選取工作表 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式選取工作表 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel projects, selecting worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dfd3c56ab51cc0e1d1fb1521640497f4748195cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5d0862f83d77365e07df1e61b7063a9e5ecd4f37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>如何：以程式設計方式選取工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法會選取指定的物件，將使用者選取的項目移到新物件。 如果您要將焦點置於這個物件而不變更使用者的選取範圍，請使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [如何： 以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)   
  [如何： 以程式設計方式從活頁簿刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
  [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
   

@@ -1,12 +1,10 @@
 ---
-title: "使用內含清單信任 Office 方案 |Microsoft 文件"
-ms.custom: 
+title: 使用內含清單信任 Office 方案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fd73ddef389ba1f97aed46a41e1e6972135fd21
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4e8b26ef4c262f830cd2c6444b56e05f128316c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="trusting-office-solutions-by-using-inclusion-lists"></a>使用內含清單信任 Office 方案
   內含清單可讓使用者將信任授與使用可識別發行者的憑證所簽署的 Office 方案。 內含清單是使用者專屬的，可以用於文件層級自訂和 VSTO 增益集。  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="structure-of-the-inclusion-list"></a>內含清單的結構  
  有效的內含清單項目有兩個部分：部署資訊清單的路徑，和用以簽署方案的公開金鑰。 方案加入至內含清單之後，就會被視為信任的方案。 當執行 Office 方案時，Office 應用程式會比較內含清單中的公開金鑰與部署資訊清單中的簽署金鑰，以確認目前執行的方案與原始信任的版本相同。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   

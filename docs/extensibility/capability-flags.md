@@ -1,19 +1,22 @@
 ---
-title: "功能旗標 |Microsoft 文件"
-ms.custom: 
+title: 功能旗標 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control plug-ins, capability flags
+helpviewer_keywords:
+- source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

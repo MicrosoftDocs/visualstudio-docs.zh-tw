@@ -8,7 +8,7 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
@@ -21,14 +21,14 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 409a1c83f0acbb32848a46e9df2f7eb2b3750e24
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 3234dad8a68e4a6ac5560122a971f26e90158ce4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="remove-visual-studio"></a>移除 Visual Studio
 

@@ -1,12 +1,10 @@
 ---
-title: "從現有的 SharePoint 網站匯入的項目 |Microsoft 文件"
-ms.custom: 
+title: 從現有的 SharePoint 網站匯入的項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入項目
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="item-name-character-limit"></a>項目名稱字元限制  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 對於專案和專案項目名稱，包括路徑，具有總計 260 個字元的限制。 在匯入方案時，如果項目名稱超出此限制，您會收到錯誤：  
   
- **指定的路徑、 檔案名稱，或兩者都太長。完整的檔案名稱必須少於 260 個字元，以及目錄名稱必須少於 248 個字元。**  
+ **指定的路徑、 檔案名稱，或兩者都太長。**完整的檔名必須少於 260 個字元，並且目錄名稱必須少於 248 個字元。」  
   
  當您收到這個錯誤時，不會建立項目。 匯入的模組最常發生此問題。 若要避免這個問題，請執行下列作業：  
   
@@ -138,7 +137,7 @@ ms.lasthandoff: 01/10/2018
   
  當您將 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] 專案匯入至 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]時，缺少指令碼管理員控制項可能會是一個問題，因為所有新專案的 SharePointProductVersion 屬性都設定為 14.0。 如果您部署的已升級專案中，具有沒有指令碼管理員的 Web 表單，表單將不會顯示在 SharePoint 中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 從現有的 SharePoint 網站匯入的項目](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [匯入可重複使用的工作流程的指導方針](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
  [逐步解說： 將 SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   

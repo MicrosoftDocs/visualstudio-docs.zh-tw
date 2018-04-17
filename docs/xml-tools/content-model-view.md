@@ -1,23 +1,21 @@
 ---
-title: "內容模型檢視 |Microsoft 文件"
-ms.custom: 
+title: 內容模型檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ee6860702fe672df5bebca38002ff7a8388cddd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-model-view"></a>內容模型檢視
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型檢視包含兩個面板：**工作區**包含中的節點清單的面板[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)，與設計介面，您可以在其中檢視結構描述的內容模型在選取的節點**工作區**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。  
@@ -116,5 +114,5 @@ ms.lasthandoff: 12/22/2017
   
  如果您在 XML 編輯器中變更結構描述集，內容模型檢閱也會同步進行變更。 如需詳細資訊，請參閱[使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)

@@ -1,12 +1,12 @@
 ---
-title: "如何： 個方案中的多個專案指定 Managed 程式碼規則集 |Microsoft 文件"
-ms.custom: 
+title: 如何： 個方案中的多個專案指定 Managed 程式碼規則集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.codeanalysis.propertypages.solution
@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - dotnet
 ms.openlocfilehash: e0b6a2864340f87702b765f49605ebdb3aaa555c
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>如何：對方案中的多個專案指定 Managed 程式碼規則集
 

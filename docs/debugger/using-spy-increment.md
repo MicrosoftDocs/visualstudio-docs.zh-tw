@@ -1,19 +1,22 @@
 ---
-title: "使用 Spy + + |Microsoft 文件"
-ms.custom: 
+title: 使用 Spy + + |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Using Spy++
+helpviewer_keywords:
+- Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b450fc3720ba199b833ed2fbd98a748c71b8d74f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

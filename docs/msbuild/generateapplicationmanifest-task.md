@@ -1,11 +1,11 @@
 ---
-title: "GenerateApplicationManifest 工作 | Microsoft Docs"
-ms.custom: 
+title: GenerateApplicationManifest 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 
+caps.latest.revision: 24
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
@@ -354,7 +354,7 @@ ms.lasthandoff: 02/09/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 工作](../msbuild/signfile-task.md)   

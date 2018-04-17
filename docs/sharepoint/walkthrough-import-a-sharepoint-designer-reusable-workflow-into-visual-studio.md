@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 將 SharePoint Designer 可重複使用工作流程匯入 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將 SharePoint Designer 可重複使用工作流程匯入 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05428f2e702643b88415663249e9f29a9f7d46bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 443502fdb6b018772e4dde833c5d53d27a68dbe8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立的可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。  
@@ -267,7 +264,7 @@ ms.lasthandoff: 01/10/2018
   
      請注意，兩個動作都是透過工作流程： 您的名稱會出現在工作的**指派給**資料行，則宣告會出現在**公告**清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  

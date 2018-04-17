@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugModules2::Next |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugModules2::Next |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugModules2::Next
-helpviewer_keywords: IEnumDebugModules2::Next
+f1_keywords:
+- IEnumDebugModules2::Next
+helpviewer_keywords:
+- IEnumDebugModules2::Next
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: bad3089be8699f2eb97d4f7cd1a067f1bf30123d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,16 +1,16 @@
 ---
-title: "從 Visual Studio 將 Python 應用程式發佈至 Azure App Service | Microsoft Docs"
-description: "如何從 Visual Studio 將 Python Web 應用程式直接發佈到 Azure App Service，且包含 web.config 檔案的必要內容。"
-ms.custom: 
+title: 將 Python 應用程式發佈至 Azure App Service | Microsoft Docs
+description: 如何從 Visual Studio 將 Python Web 應用程式直接發佈到 Azure App Service，且包含 web.config 檔案的必要內容。
+ms.custom: ''
 ms.date: 09/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 110ae4660f81766b5e9fb93afc96f606b0549ec3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>發佈至 Azure App Service
 

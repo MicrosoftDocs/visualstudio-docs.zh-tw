@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugPropertyInfo2::Next |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugPropertyInfo2::Next |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugPropertyInfo2::Next
-helpviewer_keywords: IEnumDebugPropertyInfo2::Next
+f1_keywords:
+- IEnumDebugPropertyInfo2::Next
+helpviewer_keywords:
+- IEnumDebugPropertyInfo2::Next
 ms.assetid: 4eb8c7c3-aadf-4187-abee-c0620308a3eb
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c235e64a015dc853935cfa49f924618b12e3f184
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

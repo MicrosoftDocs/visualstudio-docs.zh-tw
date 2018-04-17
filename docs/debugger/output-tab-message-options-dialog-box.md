@@ -1,19 +1,22 @@
 ---
-title: "輸出索引標籤，訊息選項對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 輸出索引標籤，訊息選項對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: message options, Output
+helpviewer_keywords:
+- message options, Output
 ms.assetid: 22dd48c2-6d17-41b1-b84c-9ddeaef68411
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: eb005e859f818e6fe8b97c755996d6e14a4ccbc3
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

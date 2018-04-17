@@ -1,25 +1,29 @@
 ---
-title: "錯誤： 偵錯失敗，因為並未啟用整合式的 Windows 驗證 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 偵錯失敗，因為並未啟用整合式的 Windows 驗證 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.error.webdbg_ntlm_authn_not_enabled
+f1_keywords:
+- vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 - aspx
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "19"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

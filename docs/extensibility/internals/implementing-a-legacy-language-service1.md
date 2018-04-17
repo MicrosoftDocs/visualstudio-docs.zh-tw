@@ -1,19 +1,22 @@
 ---
-title: "實作舊版語言 Service1 |Microsoft 文件"
-ms.custom: 
+title: 實作舊版語言 Service1 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: language services, managed
+helpviewer_keywords:
+- language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 304d99c1ddd5fdfddba0c4df88fc4eeeb9dcb7ac
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

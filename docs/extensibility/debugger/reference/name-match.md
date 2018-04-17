@@ -1,20 +1,24 @@
 ---
-title: "NAME_MATCH |Microsoft 文件"
-ms.custom: 
+title: NAME_MATCH |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: NAME_MATCH
-helpviewer_keywords: NAME_MATCH enumeration
+f1_keywords:
+- NAME_MATCH
+helpviewer_keywords:
+- NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9599e6ff59352c19ab327c9d3e9e21188d413508
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

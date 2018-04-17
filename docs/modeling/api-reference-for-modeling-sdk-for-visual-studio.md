@@ -1,9 +1,9 @@
 ---
-title: "Modeling SDK for Visual Studio 的 API 參考 |Microsoft 文件"
-ms.custom: 
+title: Modeling SDK for Visual Studio 的 API 參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 043ed310c3b0958a407246a4789d089096bb811d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 Visual Studio Visualization and Modeling SDK 提供您的特定領域語言 (DSL) 工具內建的平台。  
@@ -44,5 +44,5 @@ Visual Studio Visualization and Modeling SDK 提供您的特定領域語言 (DSL
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|可讓您定義捷徑 （操作） 功能表命令。|  
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|可讓您定義驗證條件約束。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)

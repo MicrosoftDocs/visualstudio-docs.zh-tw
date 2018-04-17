@@ -1,24 +1,22 @@
 ---
-title: "巡覽及更新程式碼中的圖層模型 |Microsoft 文件"
-ms.custom: 
+title: 巡覽及更新程式碼中的圖層模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d827a77608efac4d08f2698d8c9b6519b0ec632
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需從使用者的觀點來看的相依性圖表的詳細資訊，請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)和[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。  
@@ -124,7 +122,7 @@ public void ... (...)
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 也用來顯示 UML 模型。 
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將命令和軌跡加入至相依性圖表](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [相依性圖表中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)   

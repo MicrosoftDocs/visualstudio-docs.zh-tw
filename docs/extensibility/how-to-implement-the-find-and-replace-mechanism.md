@@ -1,19 +1,22 @@
 ---
-title: "如何： 實作 尋找和取代機制 |Microsoft 文件"
-ms.custom: 
+title: 如何： 實作 尋找和取代機制 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - find and replace
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - find and replace
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

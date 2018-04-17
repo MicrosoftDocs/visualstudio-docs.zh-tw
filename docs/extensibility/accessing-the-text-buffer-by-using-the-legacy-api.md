@@ -1,24 +1,27 @@
 ---
-title: "使用舊版 API 存取文字緩衝區 |Microsoft 文件"
-ms.custom: 
+title: 使用舊版 API 存取文字緩衝區 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], legacy - text buffers
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取文字緩衝區
 文字是負責管理文字資料流和檔案的持續性。 雖然緩衝區可以讀取或寫入其他格式，使用 Unicode 來執行所有一般與緩衝區通訊。 在舊版的 Api，文字緩衝區可以使用一段或二維座標系統來找出緩衝區中的字元位置。  
@@ -40,5 +43,5 @@ ms.lasthandoff: 12/22/2017
  [使用文字管理員監控全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
  說明如何使用文字管理員監視通用設定...  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心編輯器內](../extensibility/inside-the-core-editor.md)

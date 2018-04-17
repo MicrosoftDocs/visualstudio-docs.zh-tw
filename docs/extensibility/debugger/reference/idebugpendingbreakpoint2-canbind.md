@@ -1,22 +1,25 @@
 ---
-title: "IDebugPendingBreakpoint2::CanBind |Microsoft 文件"
-ms.custom: 
+title: IDebugPendingBreakpoint2::CanBind |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPendingBreakpoint2::CanBind
+f1_keywords:
+- IDebugPendingBreakpoint2::CanBind
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5cd81f18e67418bdc3bf15dae46d1751b76c8584
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

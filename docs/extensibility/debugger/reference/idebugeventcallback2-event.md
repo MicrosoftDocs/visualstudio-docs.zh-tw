@@ -1,20 +1,24 @@
 ---
-title: "IDebugEventCallback2::Event |Microsoft 文件"
-ms.custom: 
+title: IDebugEventCallback2::Event |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEventCallback2::Event
-helpviewer_keywords: IDebugEventCallback2::Event
+f1_keywords:
+- IDebugEventCallback2::Event
+helpviewer_keywords:
+- IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0a7e5d4d20ae7e4409599a77250986b759f152fb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

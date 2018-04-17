@@ -1,13 +1,10 @@
 ---
-title: "如何： 新增與移除對應的資料夾 |Microsoft 文件"
-ms.custom: 
+title: 如何： 新增與移除對應的資料夾 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29809344ee8a3f446589ba84f2fc47b1cf407582
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 43ec8b7c18d99880b1ab932ea28a371a7604b636
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何：新增與移除對應的資料夾
   某些常用的資料夾，在 SharePoint 中，例如影像和配置、 深度內嵌檔案階層中。 您可以將這些資料夾對應到 SharePoint 專案中做更輕易地進行存取。 對應的資料夾是 SharePoint 專案中對應至實體位置中的 SharePoint 伺服器安裝檔案的資料夾。  
@@ -86,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  若要從專案移除對應的資料夾，開啟其捷徑功能表，選擇 **刪除**，然後選擇 **確定**按鈕在對話方塊中，確認移除。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計的方式排序工作表中的資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計的方式排序工作表中的資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - sorting data, in worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6049cd6ce5a42a410b98e19b354ed4f9ea2da826
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d53baac81bc3a2e583743a61635560b1486a76e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>如何：以程式設計方式在工作表中排序資料
   您可以在執行階段排序工作表範圍和清單中包含的資料。 下列程式碼會先按第一個資料行的資料，再按第二個資料行的資料，排序名為 `Fruits` 的多欄範圍。  
@@ -64,7 +63,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [如何： 以程式設計的方式自動填滿範圍與以累加方式變更資料](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
  [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   

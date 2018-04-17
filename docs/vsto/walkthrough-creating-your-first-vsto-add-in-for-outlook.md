@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 Outlook 的第一個 VSTO 增益集 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 Outlook 的第一個 VSTO 增益集 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3f92c898b6eb8ba0f143e0a2069e35c70cc6e6b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>逐步解說：為您的 Outlook 建立第一個 VSTO 增益集
-  本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -138,7 +137,7 @@ ms.lasthandoff: 01/10/2018
   
 -   部署 Outlook VSTO 增益集。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Outlook 方案](../vsto/outlook-solutions.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   

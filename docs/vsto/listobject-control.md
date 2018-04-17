@@ -1,13 +1,10 @@
 ---
-title: "ListObject 控制項 |Microsoft 文件"
-ms.custom: 
+title: ListObject 控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2100a1c30fda5981d3d7e58f2f5077e0cdf87a2d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ed8a11a62487e47cd86ae86b9f4126cb99b37159
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="listobject-control"></a>ListObject 控制項
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是可公開事件及繫結至資料的清單。 當您將清單加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項，以便您直接對這個控制項進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
  在文件層級專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表。 在 VSTO 增益集專案中，您只能於執行階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表。 如需詳細資訊，請參閱 [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
 > [!NOTE]  
->  根據預設，當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+>  根據預設，當工作表關閉時，動態建立的清單物件不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ## <a name="binding-data-to-the-control"></a>將資料繫結至控制項  
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項支援簡單和複雜資料繫結。 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項可在設計階段使用 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 和 <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> 屬性，或在執行階段使用 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法繫結至資料來源。  
@@ -112,7 +109,7 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [如何： 調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   

@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 使用專案範本建立網站欄專案項目，第 1 部分 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用專案範本建立網站欄專案項目，第 1 部分 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後將它們產生關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後您將建立的專案範本，可用來建立新的專案，其中包含網站欄專案項目。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  這是獨立的逐步解說。 完成此逐步解說之後，您可以將精靈加入專案範本來增強專案項目。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說在開發電腦上：  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名稱**方塊中，輸入**SiteColumnProjectItem**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SiteColumnProjectItem**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**SiteColumnProjectItem**專案加入**方案總管 中**。  
   
 #### <a name="to-create-the-project-template-project"></a>若要建立專案範本  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名稱**方塊中，輸入**SiteColumnProjectTemplate**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SiteColumnProjectTemplate**專案加入方案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**SiteColumnProjectTemplate**專案加入方案。  
   
 6.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  在**名稱**方塊中，輸入**ProjectItemTypeDefinition** ，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ProjectItemTypeDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**ProjectItemTypeDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 5.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   新增`ProjectItem`filethat 每個元素的包含在每個專案的執行個體。  
   
-    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005"。 這個方案中的其他專案檔案會使用 「 http://schemas.microsoft.com/developer/msbuild/2003"命名空間。 因此，將會產生 XML 結構描述警告訊息，但是您可以忽略這些在本逐步解說。  
+    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005"。 其他專案檔案，在此解決方案使用 「http://schemas.microsoft.com/developer/msbuild/2003"命名空間。 因此，將會產生 XML 結構描述警告訊息，但是您可以忽略這些在本逐步解說。  
   
      這個.vstemplate 檔案的內容的相關資訊，請參閱[Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。  
   
@@ -757,7 +756,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>後續步驟  
  完成此逐步解說之後，精靈可以加入的專案範本。 當使用者建立網站欄專案時，精靈會要求使用者輸入要用於偵錯，以及是否沙箱，新方案的網站 URL 和精靈設定新的專案，這項資訊。 精靈也會收集的資料行 （例如基底類型和要列出站台的資料行組件庫中的資料行中的群組） 的相關資訊，並將這項資訊加入至新的專案中的 Elements.xml 檔案。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   

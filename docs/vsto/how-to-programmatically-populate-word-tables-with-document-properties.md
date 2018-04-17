@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式填入 Word 表格的文件屬性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式填入 Word 表格的文件屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document properties
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b305196b9dd05ebf411c4c68e869f5c9c5cbffc5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何：以程式設計方式將文件屬性填入 Word 表格
   下列範例會在文件的頂端建立 Microsoft Office Word 表格，並用主文件的屬性填入這個表格。  
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)   
  [如何： 以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [如何： 以程式設計方式將資料列和資料行加入至 Word 表格](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   

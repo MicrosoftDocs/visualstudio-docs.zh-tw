@@ -1,19 +1,22 @@
 ---
-title: "CA2137： 透明方法必須包含可驗證的 IL |Microsoft 文件"
-ms.custom: 
+title: CA2137： 透明方法必須包含可驗證的 IL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: CA2137
+f1_keywords:
+- CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3ec0dda4db164f4bd3368f1bb90c782f4aee6024
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

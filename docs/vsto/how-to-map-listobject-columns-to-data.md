@@ -1,12 +1,10 @@
 ---
-title: "如何： 將 ListObject 欄對應到資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將 ListObject 欄對應到資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ListObject control, mapping data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c8def85e851ac6a51eef59e3f0538025f0e7ce6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 370f82c6a167a9747a3a41ac3720bc4f679fb8d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>如何：將 ListObject 欄對應到資料
   當您將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項繫結到 <xref:System.Data.DataTable>時，您可能不想在清單中顯示所有資料行，或可能有某些資料行未繫結至資料。 當您呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法時，您可以對應想要顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 的資料行。  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="compiling-the-code"></a>編譯程式碼  
  這個程式碼範例假設在這個程式碼出現的工作表中已有名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `list1` 。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

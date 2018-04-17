@@ -1,12 +1,10 @@
 ---
-title: "XmlMappedRange 控制項 |Microsoft 文件"
-ms.custom: 
+title: XmlMappedRange 控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f4b78da11efafff45f34b3dc4ab9e7f1349a2e8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1bc4516f0ca14427e5e63a40ae58ddd60436dfd6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項為非重複結構描述元素會對應到 Microsoft Office Excel 中的資料格時，才會建立一個範圍。 例如，當`maxOccurs`屬性結構描述元素等於 1。 Visual Studio 會建立對應的 XML 範圍之後，您可以針對它程式直接而不必周遊 Excel 物件模型。 您只能刪除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>內時就會移除項目對應的 Excel 控制項。  
@@ -60,7 +59,7 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   

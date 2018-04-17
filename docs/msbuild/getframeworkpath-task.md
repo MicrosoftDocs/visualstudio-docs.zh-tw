@@ -1,11 +1,11 @@
 ---
-title: "GetFrameworkPath 工作 | Microsoft Docs"
-ms.custom: 
+title: GetFrameworkPath 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-caps.latest.revision: 
+caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d672a204411c58b4a164db2ff02701544f4594bf
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 工作
 擷取 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 組件的路徑。  
@@ -65,6 +65,6 @@ ms.lasthandoff: 02/09/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -1,13 +1,10 @@
 ---
-title: "如何： 使用內容控制項保護文件的部分 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用內容控制項保護文件的部分 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - GroupContentControl
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 444fd63ecfe1fc74161920b17a3c7caead5a434a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0a72603f71395bbbf8e167b6a2361f7d8b2a30a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用內容控制項保護文件的部分
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a>保護內容控制項  
+##  <a name="EditDeleteControl"></a> 保護內容控制項  
  您可以透過文件層級專案，於設計階段或執行階段設定該控制項的屬性，以防止使用者編輯或刪除內容控制項。  
   
  此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱[How to： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
@@ -107,11 +104,11 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [內容控制項](../vsto/content-controls.md)   
  [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [在執行階段將控制項新增至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)  
    

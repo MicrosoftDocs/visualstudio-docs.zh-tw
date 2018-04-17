@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugProcesses2::Reset |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugProcesses2::Reset |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugProcesses2::Reset
-helpviewer_keywords: IEnumDebugProcesses2::Reset
+f1_keywords:
+- IEnumDebugProcesses2::Reset
+helpviewer_keywords:
+- IEnumDebugProcesses2::Reset
 ms.assetid: 31cbde4f-0bba-497a-9969-d2c342ef4a7b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f9d960e07076fd10ea10f1eb9462736219103db9
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

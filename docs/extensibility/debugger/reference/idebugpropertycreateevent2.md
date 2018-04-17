@@ -1,20 +1,24 @@
 ---
-title: "IDebugPropertyCreateEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugPropertyCreateEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugPropertyCreateEvent2
-helpviewer_keywords: IDebugPropertyCreateEvent2 interface
+f1_keywords:
+- IDebugPropertyCreateEvent2
+helpviewer_keywords:
+- IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0557fd39d21415dfddb1a571c4f9e6ee69badf10
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

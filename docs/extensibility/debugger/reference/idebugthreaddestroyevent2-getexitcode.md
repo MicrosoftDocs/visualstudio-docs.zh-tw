@@ -1,20 +1,24 @@
 ---
-title: "IDebugThreadDestroyEvent2::GetExitCode |Microsoft 文件"
-ms.custom: 
+title: IDebugThreadDestroyEvent2::GetExitCode |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugThreadDestroyEvent2::GetExitCode
-helpviewer_keywords: IDebugThreadDestroyEvent2::GetExitCode
+f1_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
+helpviewer_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f959d0b38fd9fd7ec5d1e2ac9b564beba3f85188
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

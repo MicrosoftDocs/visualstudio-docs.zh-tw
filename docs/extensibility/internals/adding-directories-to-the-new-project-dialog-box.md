@@ -1,19 +1,22 @@
 ---
-title: "將目錄加入至新的 [專案] 對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 將目錄加入至新的 [專案] 對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: New Project dialog box, extending
+helpviewer_keywords:
+- New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

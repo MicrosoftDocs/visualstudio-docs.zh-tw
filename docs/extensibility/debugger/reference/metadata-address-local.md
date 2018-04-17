@@ -1,20 +1,24 @@
 ---
-title: "METADATA_ADDRESS_LOCAL |Microsoft 文件"
-ms.custom: 
+title: METADATA_ADDRESS_LOCAL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: METADATA_ADDRESS_LOCAL
-helpviewer_keywords: METADATA_ADDRESS_LOCAL structure
+f1_keywords:
+- METADATA_ADDRESS_LOCAL
+helpviewer_keywords:
+- METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 74d59fb19d130ad53ddbf200e96cdf04e958e239
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

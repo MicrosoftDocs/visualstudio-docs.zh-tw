@@ -1,23 +1,26 @@
 ---
-title: "用法警告 |Microsoft 文件"
-ms.custom: 
+title: 用法警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.codeanalysis.usagerules
+f1_keywords:
+- vs.codeanalysis.usagerules
 helpviewer_keywords:
 - warnings, usage
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 740907b94611a0de4566260b5fd644048463178c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

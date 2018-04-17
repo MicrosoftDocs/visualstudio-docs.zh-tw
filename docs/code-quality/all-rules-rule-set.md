@@ -1,23 +1,20 @@
 ---
-title: "所有規則都規則集 |Microsoft 文件"
-ms.custom: 
+title: 所有規則都規則集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f6df7ab6fb4bf4500148cb911f3a9e75af5959
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 78db12ffd03027f4683177770e7e754b324465b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

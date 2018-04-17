@@ -1,9 +1,9 @@
 ---
-title: "從文字範本存取模型 |Microsoft 文件"
-ms.custom: 
+title: 從文字範本存取模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔和其他特定領域語言模型為基礎的文字檔。 基本文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本時進行偵錯 DSL，以實驗模式運作，並有部署 DSL 所在的電腦上也能運作。  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   雖然程式碼片段語言是 C#，您可以產生任何類型的文字。 您也可以撰寫程式碼[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]加屬性`language="VB"`至`template`指示詞。  
   
--   若要偵錯範本，加入`debug="true"`至`template`指示詞。 範本會在另一個執行個體中開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]發生的例外狀況。 如果您想要中斷偵錯程式碼中的某一點，insert 陳述式`System.Diagnostics.Debugger.Break();`  
+-   若要偵錯範本，加入`debug="true"`至`template`指示詞。 範本會在另一個執行個體中開啟[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]發生的例外狀況。 如果您想要中斷偵錯程式碼中的某一點，insert 陳述式 `System.Diagnostics.Debugger.Break();`  
   
      如需詳細資訊，請參閱[偵錯 T4 文字範本](../modeling/debugging-a-t4-text-template.md)。  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  如果找到錯誤，在錯誤視窗中，將會回報，而且結果檔案會包含錯誤訊息。  
   
-##  <a name="Multiple"></a>從文字範本存取多個模型  
+##  <a name="Multiple"></a> 從文字範本存取多個模型  
   
 > [!NOTE]
 >  這個方法可讓您讀取相同的範本中的多個模型，但不支援 ModelBus 參照。 若要讀取模型互連 ModelBus 參考的是，請參閱[文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`叫用`LoopTemplate.t4`，然後為其區段分割所產生的檔案。 請注意，此範本並沒有要模型化的範本，因為它不會讀取模型。  
+ `LoopSplitter.tt` 叫用`LoopTemplate.t4`，然後為其區段分割所產生的檔案。 請注意，此範本並沒有要模型化的範本，因為它不會讀取模型。  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

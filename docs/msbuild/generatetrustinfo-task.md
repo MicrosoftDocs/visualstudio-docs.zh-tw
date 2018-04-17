@@ -1,11 +1,11 @@
 ---
-title: "GenerateTrustInfo 工作 | Microsoft Docs"
-ms.custom: 
+title: GenerateTrustInfo 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, GenerateTrustInfo task
 - GenerateTrustInfo task [MSBuild]
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 35b31cbf81f1f740ca66a05b05e384adbddf397b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 工作
 從基底資訊清單，以及從 `TargetZone` 與 `ExcludedPermissions` 參數產生應用程式信任。  
@@ -45,6 +45,6 @@ ms.lasthandoff: 02/09/2018
 ## <a name="remarks"></a>備註  
  除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

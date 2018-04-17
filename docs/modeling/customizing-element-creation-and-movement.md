@@ -1,25 +1,23 @@
 ---
-title: "自訂項目建立和移動 |Microsoft 文件"
-ms.custom: 
+title: 自訂項目建立和移動 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 900011925ff92e5994cd3a82ece621386d63c85b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 您可以允許的項目拖曳出來，放到另一個，從 [工具箱] 中或貼上或移動作業。 您可以移動的項目連結至目標項目中，使用您指定的關聯性。  
@@ -316,7 +314,7 @@ ms.lasthandoff: 02/09/2018
   
      您不應該會看到無法使用的指標，以及您應該能夠將新**輸入連接埠**上現有的我的最愛。 選取新**輸入連接埠**並將它拖曳至另一個點**元件**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自訂工具和 [工具箱]](../modeling/customizing-tools-and-the-toolbox.md)   
  [DSL 的循環圖範例](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

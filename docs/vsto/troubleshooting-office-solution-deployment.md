@@ -1,13 +1,10 @@
 ---
-title: "Office 方案部署疑難排解 |Microsoft 文件"
-ms.custom: 
+title: Office 方案部署疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Office 方案部署疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  您可以將 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主要 interop 組件加入安裝套件當做與 Office 解決方案一起部署的必要條件。 如需如何安裝主要 interop 組件資訊，請參閱[設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)和[如何： 安裝 Office 主要 Interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>使用 'Localhost' 發行會導致安裝問題  
- 當您使用 "http://localhost" 當做文件層級解決方案的發佈或安裝位置時，[發佈精靈]  不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
+ 當您使用 「http://localhost"做為發行或安裝位置的文件層級解決方案**發行精靈**不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>載入快取的組件，不載入更新的組件  
  當專案輸出路徑位於網路檔案共用時、組件以強式名稱簽署時，以及自訂的組件版本未改變時，Fusion (.NET Framework 組件載入器) 會載入組件的快取複本。 如果您更新的組件符合這些條件，因為已載入了快取的複本，所以下次執行專案時，更新就不會出現。  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下載組件，不載入快取複本  
   
-1.  在功能表列上選擇 **專案**， *ProjectName***屬性**。  
+1.  在功能表列上選擇 **專案**，* ProjectName ***屬性**。  
   
 2.  在 [應用程式]  頁面上選擇 [組件資訊] 。  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>重新安裝 Office 解決方案導致引數超出範圍的例外狀況  
  當您重新安裝 Office 解決方案時，可能會出現 <xref:System.ArgumentOutOfRangeException> 例外狀況及下列錯誤訊息：指定的引數超出有效值的範圍。  
   
- 如果安裝位置的 URL 大小寫不同，就會發生這種情況。 例如，如果第一次是從 [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) 安裝 Office 解決方案，然後第二次從 [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) ，就會出現這個錯誤。  
+ 如果安裝位置的 URL 大小寫不同，就會發生這種情況。 例如，如果您安裝 Office 方案中的就會出現此錯誤[ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto)第一次，然後使用[ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto)第二次。  
   
  若要防止訊息出現，請在安裝 Office 解決方案時使用相同的大小寫。  
   
@@ -129,7 +126,7 @@ ms.lasthandoff: 01/10/2018
   
  將副檔名設為 **.vsto** ，MIME 類型設為 **application/x-ms-vsto**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](/visualstudio/deployment/troubleshooting-clickonce-deployments)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   

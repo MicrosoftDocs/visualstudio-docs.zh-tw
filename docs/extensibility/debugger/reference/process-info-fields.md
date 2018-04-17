@@ -1,20 +1,24 @@
 ---
-title: "PROCESS_INFO_FIELDS |Microsoft 文件"
-ms.custom: 
+title: PROCESS_INFO_FIELDS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: PROCESS_INFO_FIELDS
-helpviewer_keywords: PROCESS_INFO_FIELDS enumeration
+f1_keywords:
+- PROCESS_INFO_FIELDS
+helpviewer_keywords:
+- PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b733bceec1b6408ba11be0e04a15e2d917b3f61a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

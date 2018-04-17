@@ -1,13 +1,10 @@
 ---
-title: "VSTO 增益集程式設計 |Microsoft 文件"
-ms.custom: 
+title: VSTO 增益集程式設計 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -35,14 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>VSTO 增益集程式設計
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  撰寫 VSTO 增益集專案中的程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因來自於將 Office 物件模型公開給 Managed 程式碼的方式。 如需詳細資訊，請參閱 [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)。  
   
- 一般您可以使用 Visual Studio 中的 Office 開發工具建立 VSTO 增益集和其他類型方案的相關資訊，請參閱[Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ 一般您可以使用 Visual Studio 中的 Office 開發工具建立 VSTO 增益集和其他類型方案的相關資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="using-the-thisaddin-class"></a>使用 ThisAddIn 類別  
  您可以在 `ThisAddIn` 類別中開始撰寫 VSTO 增益集程式碼。 Visual Studio 會在 VSTO 增益集專案的 ThisAddIn.vb ( [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或 ThisAddIn.cs (C#) 程式碼檔中，自動產生這個類別。 當 Microsoft Office 應用程式載入您的 VSTO 增益集時， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動為您具現化這個類別。  
@@ -148,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
  如需詳細資訊，請參閱 [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [在 VSTO 增益集中呼叫程式碼，從其他 Office 方案](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   

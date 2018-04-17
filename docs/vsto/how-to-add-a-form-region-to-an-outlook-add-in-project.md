@@ -1,13 +1,10 @@
 ---
-title: "如何： 在 Outlook 增益集專案中加入表單區域 |Microsoft 文件"
-ms.custom: 
+title: 如何： 在 Outlook 增益集專案中加入表單區域 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
 - VSTO.NewFormRegionWizard.Page3
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2029b154ca97f2e856a9e6af8ef58b82f4438df6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b8a02070bf76a1c4220c56afc397abb3b7fd3e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>如何：在 Outlook 增益集專案中加入表單區域
   使用 [新的 Outlook 表單區域精靈]  建立表單區域，以擴充標準或自訂的 Microsoft Office Outlook 表單。 您可以建立新的表單區域並且在 Visual Studio 中設計使用者介面，或者匯入在 Outlook 中設計的表單區域並加入 Visual Basic 或 C# 程式碼。  
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 11. 在 [識別將顯示此表單區域的訊息類別]  頁面上，選取標準的 Outlook 訊息類別，或輸入一個或多個自訂訊息類別的名稱，然後按一下 [完成] 。 如需詳細資訊，請參閱 [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [Outlook 方案](../vsto/outlook-solutions.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   

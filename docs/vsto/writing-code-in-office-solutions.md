@@ -1,13 +1,10 @@
 ---
-title: "在 Office 方案中撰寫程式碼 |Microsoft 文件"
-ms.custom: 
+title: 在 Office 方案中撰寫程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>撰寫 Office 方案中的程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-primary-interop-assemblies"></a>了解主要 Interop 組件  
  Microsoft Office 應用程式將其許多功能公開給自動化。 不過，您無法直接使用 Managed 程式碼 (例如 Visual Basic 或 C#) 來自動化 Office 應用程式。 若要使用 Managed 程式碼自動化 Office 應用程式，您必須使用 Office 主要 Interop 組件 (PIA)。 主要 Interop 組件可讓 Managed 程式碼與 Office 應用程式的 COM 物件模型互動。  
   
- 每個 Microsoft Office 應用程式都有 PIA。 當您在 Visual Studio 中建立 Office 專案時，適當的 PIA 的參考會自動加入專案。 若要自動化專案中的其他 Office 應用程式功能，您必須手動加入適當的 PIA 的參考。 如需詳細資訊，請參閱 [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+ 每個 Microsoft Office 應用程式都有 PIA。 當您在 Visual Studio 中建立 Office 專案時，適當的 PIA 的參考會自動加入專案。 若要自動化專案中的其他 Office 應用程式功能，您必須手動加入適當的 PIA 的參考。 如需詳細資訊，請參閱 [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>在設計階段和執行階段使用主要 Interop 組件  
  您必須在開發電腦的全域組件快取內安裝並註冊 Office PIA，才能執行大部分的開發工作。 如需詳細資訊，請參閱 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  如需詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Office 方案的命名空間考量  
- 建立專案之後，您無法變更 Office 專案的 *「預設命名空間」* (default namespace) (或 Visual Basic 中的 *「根命名空間」* (root namespace))。 預設命名空間會永遠符合您在建立專案時指定的專案名稱。 如果您重新命名您的專案，不會變更預設命名空間。 如需專案中的預設命名空間的詳細資訊，請參閱[應用程式頁面、 專案設計工具 &#40;C# 35; &#41;](/visualstudio/ide/reference/application-page-project-designer-csharp)和[應用程式頁面、 專案設計工具 &#40;Visual Basic &#41;](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ 建立專案之後，您無法變更 Office 專案的 *「預設命名空間」* (default namespace) (或 Visual Basic 中的 *「根命名空間」* (root namespace))。 預設命名空間會永遠符合您在建立專案時指定的專案名稱。 如果您重新命名您的專案，不會變更預設命名空間。 如需專案中的預設命名空間的詳細資訊，請參閱[專案設計工具、 應用程式頁面&#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp)和[專案設計工具、 應用程式頁面&#40;Visual Basic&#41;](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>在 C# 專案中變更主項目類別的命名空間  
  主項目類別 (例如 `ThisAddIn`、 `ThisWorkbook`或 `ThisDocument` 類別) 在 Visual C# Office 專案中有自己的命名空間。 根據預設，專案中主項目的命名空間會符合您在建立專案時指定的專案名稱。  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |功能|描述|Visual Basic 支援|Visual C# 支援|  
 |-------------|-----------------|--------------------------|------------------------|  
 |選擇性參數|許多 Microsoft Office 方法有在您呼叫方法時非必要的參數。 如果針對參數不傳遞任何值，會使用預設值。|Visual Basic 支援選擇性參數。|Visual C# 在大部分情況下支援選擇性參數。 如需詳細資訊，請參閱[Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。|  
-|以傳址方式傳遞參數|大部分的 Microsoft Office 主要 Interop 組件中的選擇性參數可以傳值方式傳遞。 不過，在某些主要 Interop 組件中，接受參考類型的選擇性參數必須以傳址方式傳遞。<br /><br /> 如需值和參考型別參數的詳細資訊，請參閱[傳遞引數傳值和依參考 &#40;Visual Basic &#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （適用於 Visual Basic) 和[傳遞參數 &#40;& #35。程式設計手冊 &#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|以傳址方式傳遞參數不需要額外工作。 Visual Basic 編譯器會在必要時自動以傳址方式傳遞這些參數。|在大部分情況下，Visual C# 編譯器會在必要時自動以傳址方式傳遞這些參數。 如需詳細資訊，請參閱[Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。|  
+|以傳址方式傳遞參數|大部分的 Microsoft Office 主要 Interop 組件中的選擇性參數可以傳值方式傳遞。 不過，在某些主要 Interop 組件中，接受參考類型的選擇性參數必須以傳址方式傳遞。<br /><br /> 如需值和參考型別參數的詳細資訊，請參閱[傳遞引數傳值和傳址&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （適用於 Visual Basic) 和[傳遞參數&#40;C&#35;程式設計手冊&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。|以傳址方式傳遞參數不需要額外工作。 Visual Basic 編譯器會在必要時自動以傳址方式傳遞這些參數。|在大部分情況下，Visual C# 編譯器會在必要時自動以傳址方式傳遞這些參數。 如需詳細資訊，請參閱[Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)。|  
 |參數化屬性|某些屬性接受參數，並做為唯讀的函式。|Visual Basic 支援接受參數的屬性。|Visual C# 支援接受參數的屬性。|  
 |晚期繫結|晚期繫結牽涉到在執行階段判斷物件的屬性，而不是在設計階段將變數轉型為物件類型。|Visual Basic 會在 **Option Strict** 關閉時執行晚期繫結。 當 **Option Strict** 開啟時，您必須明確轉換物件並在 <xref:System.Reflection> 命名空間中使用類型來存取晚期繫結成員。 如需詳細資訊，請參閱 [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)。|Visual C# 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的專案中執行晚期繫結。 如需詳細資訊，請參閱 [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)。|  
   
@@ -119,13 +116,13 @@ ms.lasthandoff: 01/10/2018
   
 |功能|描述|Visual Basic 和 Visual C# 支援|  
 |-------------|-----------------|-----------------------------------------|  
-|陣列索引|Microsoft Office 應用程式中的集合的較低陣列界限從 1 開始。 Visual Basic 和 Visual C# 使用以 0 為基礎的陣列。 如需詳細資訊，請參閱[陣列 &#40;& #35。程式設計手冊 &#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的陣列](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要存取 Microsoft Office 應用程式物件模型中的集合的第一個項目，請使用索引 1，而不是 0。|  
+|陣列索引|Microsoft Office 應用程式中的集合的較低陣列界限從 1 開始。 Visual Basic 和 Visual C# 使用以 0 為基礎的陣列。 如需詳細資訊，請參閱[陣列&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/arrays/index)和[Visual Basic 中的陣列](/dotnet/visual-basic/programming-guide/language-features/arrays/index)。|若要存取 Microsoft Office 應用程式物件模型中的集合的第一個項目，請使用索引 1，而不是 0。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 專案中的事件](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：透過主要 Interop 組件以 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [如何： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [在 Office 方案中的晚期繫結](../vsto/late-binding-in-office-solutions.md)   
  [Office 方案的共同開發](../vsto/collaborative-development-of-office-solutions.md)  

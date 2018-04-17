@@ -1,10 +1,8 @@
 ---
-title: "使用 T4 文字範本在設計階段程式碼產生 |Microsoft 文件"
-ms.custom: 
+title: 使用 T4 文字範本在設計階段程式碼產生 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓這些變更的程式碼，它們會根據從資料產生*模型*。 模型是檔案或資料庫包含您的應用程式需求重要資訊。  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。  
   
-##  <a name="Regenerating"></a>自動重新產生程式碼  
+##  <a name="Regenerating"></a> 自動重新產生程式碼  
  通常，會使用一個輸入模型來產生 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中的數個檔案。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。  
   
  如果來源模型變更，則您應該重新執行方案中的所有範本。 若要手動執行此作業，選擇 **轉換所有範本**上**建置**功能表。  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>將現有檔案轉換為範本  
+##  <a name="Converting"></a> 將現有檔案轉換為範本  
  範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 先建立一般檔案做為原型，例如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]檔案，然後逐漸引進讓產生的檔案不同的產生程式碼。  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本  
@@ -372,5 +370,5 @@ Warning("A warning message");
 |以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)

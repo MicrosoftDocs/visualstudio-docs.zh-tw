@@ -1,13 +1,10 @@
 ---
-title: "&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
-ms.custom: 
+title: '&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de60c2164bfbb0f7f8f483ab937fed23ecea9195
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。  
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  `entryPoints` 具有下列項目。  
   
 ### <a name="entrypoint"></a>entryPoint  
- 必要。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ 必要。 角色`entryPoint`中的項目`vstav3`命名空間中定義[ &#60;entryPoint&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)。  
   
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
@@ -174,7 +171,7 @@ ms.lasthandoff: 01/10/2018
 </vstav3:entryPoints>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  

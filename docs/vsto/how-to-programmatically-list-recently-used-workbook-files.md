@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式列出最近使用之活頁簿檔案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式列出最近使用之活頁簿檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - recent file list, Excel
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8a64f8a934e8cd7cdbbed11a87d15e795d19d0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c2d9c333b6d96329abec3fd52ecaa5da1cf97c74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以程式設計方式列出最近使用的活頁簿檔案
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>屬性會傳回集合，其中包含出現在 Microsoft Office Excel 檔案清單中最近使用的所有檔案的名稱。 清單的長度會根據使用者選取要保留的檔案數目而有所不同。 您可以在範圍中顯示結果。  
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

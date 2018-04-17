@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngineLaunch2::CanTerminateProcess |Microsoft 文件"
-ms.custom: 
+title: IDebugEngineLaunch2::CanTerminateProcess |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngineLaunch2::CanTerminateProcess
-helpviewer_keywords: IDebugEngineLaunch2::CanTerminateProcess
+f1_keywords:
+- IDebugEngineLaunch2::CanTerminateProcess
+helpviewer_keywords:
+- IDebugEngineLaunch2::CanTerminateProcess
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f4c4157d0c3fcdd3e0de4be4fa2fcf39c16ba67a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

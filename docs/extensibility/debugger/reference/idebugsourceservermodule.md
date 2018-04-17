@@ -1,19 +1,22 @@
 ---
-title: "IDebugSourceServerModule |Microsoft 文件"
-ms.custom: 
+title: IDebugSourceServerModule |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: IDebugSourceServerModule interface
+helpviewer_keywords:
+- IDebugSourceServerModule interface
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: caf51056af3172e5dd13c551bf61d9780e407b1e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

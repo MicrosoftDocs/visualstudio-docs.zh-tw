@@ -1,19 +1,22 @@
 ---
-title: "其他原始檔控制專案和方針編輯器 |Microsoft 文件"
-ms.custom: 
+title: 其他原始檔控制專案和方針編輯器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: source control [Visual Studio SDK], guidelines for projects and editors
+helpviewer_keywords:
+- source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

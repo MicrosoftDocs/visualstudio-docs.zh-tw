@@ -1,19 +1,22 @@
 ---
-title: "專案型別架構 |Microsoft 文件"
-ms.custom: 
+title: 專案型別架構 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: projects [Visual Studio SDK], architecture
+helpviewer_keywords:
+- projects [Visual Studio SDK], architecture
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 34402ae0b998d4ae534507e23ffa31e0d7cef9bb
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

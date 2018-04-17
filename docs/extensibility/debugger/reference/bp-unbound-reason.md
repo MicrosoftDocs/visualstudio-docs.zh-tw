@@ -1,20 +1,24 @@
 ---
-title: "BP_UNBOUND_REASON |Microsoft 文件"
-ms.custom: 
+title: BP_UNBOUND_REASON |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: BP_UNBOUND_REASON
-helpviewer_keywords: BP_UNBOUND_REASON enumeration
+f1_keywords:
+- BP_UNBOUND_REASON
+helpviewer_keywords:
+- BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fa824f71a4b468a131b1ebf31b3dba21bc83032c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

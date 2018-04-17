@@ -1,22 +1,25 @@
 ---
-title: "IDebugBoundBreakpoint2::SetCondition |Microsoft 文件"
-ms.custom: 
+title: IDebugBoundBreakpoint2::SetCondition |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBoundBreakpoint2::SetCondition
+f1_keywords:
+- IDebugBoundBreakpoint2::SetCondition
 helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 88cfedfd31532750d9db4fd00f43e507e6812e2b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

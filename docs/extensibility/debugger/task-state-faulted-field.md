@@ -1,19 +1,22 @@
 ---
-title: "TASK_STATE_FAULTED 欄位 |Microsoft 文件"
-ms.custom: 
+title: TASK_STATE_FAULTED 欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
+helpviewer_keywords:
+- TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: de1175f4f7b6de363674b7d90009d9fb1a819561
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

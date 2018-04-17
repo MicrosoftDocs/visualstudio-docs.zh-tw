@@ -1,19 +1,22 @@
 ---
-title: "如何： 顯示視窗屬性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 顯示視窗屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: window properties
+helpviewer_keywords:
+- window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: b933bbaeb3a4bcfb616250df7e190fea71fea209
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

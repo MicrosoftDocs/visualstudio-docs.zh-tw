@@ -1,5 +1,5 @@
 ---
-title: "系統活動索引標籤中，選擇工具箱項目對話方塊 |Microsoft 文件"
+title: 系統活動索引標籤中，選擇工具箱項目對話方塊 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>系統活動索引標籤，選擇工具箱項目對話方塊
 此索引標籤的**選擇工具箱項目**對話方塊會顯示一份[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]活動、 範本和項目可供您使用。 若要顯示這份清單，請選取**選擇工具箱項目**從**工具**功能表或以滑鼠右鍵按一下**工具箱**，然後選取**選擇的項目**顯示**選擇工具箱項目**對話方塊，然後選取其**System.Activities**  索引標籤。根據預設，此清單包含 System.Activities、 System.ServiceModel.Activities 及 System.Activities.Core.Presentation 組件; 的工作流程活動不過，只有系統提供所顯示的活動和活動中顯示其他組件透過新增**工具箱**依預設都會被勾選。 新加入的活動會自動核取和會出現在**工具箱**當您按一下**確定**在對話方塊中。 此外，這些項目會出現在**工具箱**下對應到活動/項目/範本所在的命名空間的新類別。

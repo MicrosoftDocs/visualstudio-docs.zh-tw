@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 使用功能區設計工具建立自訂索引標籤 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用功能區設計工具建立自訂索引標籤 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說：使用功能區設計工具建立自訂的索引標籤
   您可以使用功能區設計工具，建立自訂索引標籤，然後在其上加入和放置控制項。  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio 設計工具中開啟新的活頁簿，並將**MyExcelRibbon**專案加入**方案總管 中**。  
   
-##  <a name="BKMK_CreateActionsPanes"></a>建立執行窗格  
+##  <a name="BKMK_CreateActionsPanes"></a> 建立執行窗格  
  將兩個自訂的執行窗格加入至專案。 您稍後會將兩個用來顯示和隱藏這些執行窗格的按鈕加入至自訂索引標籤。  
   
 #### <a name="to-create-actions-panes"></a>建立執行窗格  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  重複步驟 1 到 5，建立第二個執行窗格和標籤。 設定**文字**屬性的第二個標籤**Actions Pane 2**。  
   
-##  <a name="BKMK_CreateCustomTab"></a>建立自訂索引標籤  
+##  <a name="BKMK_CreateCustomTab"></a> 建立自訂索引標籤  
  其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 若要為執行窗格加入這個功能，您可以加入顯示和隱藏功能區上自訂索引標籤的每個執行窗格的按鈕。 若要建立自訂索引標籤，加入**功能區 （視覺化設計工具）**項目加入專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。  
   
 #### <a name="to-create-a-custom-tab"></a>建立自訂索引標籤  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. 設定**標籤**屬性**Hide Actions Pane**。  
   
-##  <a name="BKMK_HideShowActionsPane"></a>隱藏和顯示執行窗格所使用的自訂索引標籤上的按鈕  
+##  <a name="BKMK_HideShowActionsPane"></a> 隱藏和顯示執行窗格所使用的自訂索引標籤上的按鈕  
  最後一個步驟是加入回應使用者的程式碼。 針對兩個按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件和切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件加入事件處理常式。 將程式碼加入至這些事件處理常式以啟用隱藏和顯示執行窗格。  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>使用自訂索引標籤中的按鈕隱藏和顯示執行窗格  
@@ -161,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
 -   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱[逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   

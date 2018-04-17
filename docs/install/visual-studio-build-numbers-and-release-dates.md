@@ -1,23 +1,23 @@
 ---
-title: "Visual Studio 2017 組建編號和發行日期 | Microsoft Docs"
-description: "已發行的 Visual Studio 2017 版本和組建編號清單 (依日期排序)。"
-keywords: 
+title: Visual Studio 2017 組建編號和發行日期 | Microsoft Docs
+description: 已發行的 Visual Studio 2017 版本和組建編號清單 (依日期排序)。
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.date: 03/08/2018
-ms.topic: article
-helpviewer_keywords: 
+manager: douge
+ms.date: 03/22/2018
+ms.topic: reference
+helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
-ms.service: 
+ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: d036abe3aa3b6e348eae7f0045b30144900255fd
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 03/12/2018
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.4 | 發行 | 2018 年 3 月 22 日 | 15.6.27428.2015 |
+| 15.7.0 Preview 2.0 | 預覽 | 2018 年 3 月 21 日 | 15.7.27520.0 |
+| 15.6.3 | 發行 | 2018 年 3 月 19 日 | 15.6.27428.2011 |
+| 15.7.0 Preview 1.0 | 預覽 | 2018 年 3 月 13 日 | 15.7.27512.0 |
+| 15.6.2 | 發行 | 2018 年 3 月 13 日 | 15.6.27428.2005 |
+| 15.0.11 | 發行 | 2018 年 3 月 13 日 | 15.0.26228.29 |
 | 15.6.1 | 發行 | 2018 年 3 月 8 日 | 15.6.27428.2002 |
 | 15.6.1 Preview 1.0 | 預覽 | 2018 年 3 月 8 日 | 15.6.27428.2002 |
 | 15.6.0 | 發行 | 2018 年 3 月 5 日 | 15.6.27428.1 |
@@ -120,7 +126,7 @@ ms.lasthandoff: 03/12/2018
 * 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
 * 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2017 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)

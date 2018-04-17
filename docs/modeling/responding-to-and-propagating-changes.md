@@ -1,9 +1,9 @@
 ---
-title: "回應，且將變更傳播 |Microsoft 文件"
-ms.custom: 
+title: 回應，且將變更傳播 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫傳播變更給模型的其他組件或外部的資源，例如檔案、 資料庫或其他元件的程式碼。  
@@ -52,6 +52,6 @@ ms.lasthandoff: 02/09/2018
   
 -   **事件引數傳遞至規則和事件**這兩個事件和傳遞規則`EventArgs`參數的相關資訊的模型變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 攔截按一下圖形或裝飾項目](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

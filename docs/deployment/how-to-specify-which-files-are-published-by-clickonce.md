@@ -1,13 +1,15 @@
 ---
-title: "如何： 指定哪些檔案由 ClickOnce 發行 |Microsoft 文件"
-ms.custom: 
+title: 如何： 指定哪些檔案由 ClickOnce 發行 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
+f1_keywords:
+- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
 - VB
 - CSharp
@@ -16,11 +18,12 @@ helpviewer_keywords:
 - ClickOnce deployment, file exclusion
 - files, publishing via ClickOnce
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: eee0e88b23a26ae7a89005ff304b565dd3d84c34
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

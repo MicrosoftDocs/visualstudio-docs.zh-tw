@@ -1,30 +1,30 @@
 ---
-title: "效能工具入門 | Microsoft Docs"
-ms.custom: 
+title: 效能工具使用者入門 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="getting-started-with-performance-tools"></a>效能工具入門
+# <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 本節提供當您使用 Visual Studio 效能工具來收集、檢視和分析程式碼效能時將運用之概念和工作的概觀。  
   
  這些工具提供數種方式供您收集和分析效能資料。 但在許多情況下，開始的最佳方式是使用 [效能精靈] 的預設設定，它可讓您收集應用程式統計資料，協助您找出程式碼中的效能問題。  
@@ -39,9 +39,8 @@ ms.lasthandoff: 02/27/2018
 |----------|---------------------|  
 |**快速剖析應用程式或網站：**使用「效能精靈」針對 Visual Studio 方案或網站設定及執行程式碼剖析工作階段。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**在不使用精靈的情況下對應用程式進行程式碼剖析：**了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**試作︰**對範例應用程式進行程式碼剖析以取得實際操作經驗。|-   [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)   

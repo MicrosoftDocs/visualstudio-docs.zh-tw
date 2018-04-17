@@ -1,12 +1,10 @@
 ---
-title: "如何： 設定內含清單的安全性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 設定內含清單的安全性 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：設定內含清單的安全性
   如果您有系統管理員權限，您可以設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以儲存至內含清單信任決策，藉以安裝 Office 方案的選項。 關於內含清單的資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -210,7 +209,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  建置並執行應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   

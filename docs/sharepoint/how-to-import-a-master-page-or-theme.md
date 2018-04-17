@@ -1,12 +1,10 @@
 ---
-title: "如何： 匯入的主版頁面或佈景主題 |Microsoft 文件"
-ms.custom: 
+title: 如何： 匯入的主版頁面或佈景主題 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：匯入主版頁面或佈景主題
-  您可以提供網頁 SharePoint 網站上一致的外觀建立並使用主版頁面和佈景主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]未提供範本，針對這些項目，但您可以在 SharePoint Designer 中建立它們，然後再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  
+  您可以提供網頁 SharePoint 網站上一致的外觀建立並使用主版頁面和佈景主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未提供範本，針對這些項目，但您可以在 SharePoint Designer 中建立它們，然後再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  
   
 ### <a name="to-import-a-master-page-or-theme"></a>若要匯入的主版頁面或佈景主題  
   
@@ -92,7 +91,7 @@ ms.lasthandoff: 01/10/2018
   
      主版頁面或佈景主題的清單隨即出現，並包含的主版頁面或佈景主題，您匯入。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [主版頁面](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [從現有的 SharePoint 網站匯入的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [建立 SharePoint 的網頁](../sharepoint/creating-pages-for-sharepoint.md)   

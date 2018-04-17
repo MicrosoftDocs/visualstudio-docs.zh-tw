@@ -1,9 +1,9 @@
 ---
-title: "更新圖形和連接器，以反映模型 |Microsoft 文件"
-ms.custom: 
+title: 更新圖形和連接器，以反映模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 以網域特定語言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以進行反映基礎模型的狀態圖形的外觀。  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  同時針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。  
   
-##  <a name="OnAssociatedProperty"></a>若要更新圖形的其他功能使用 Associatevaluewith  
+##  <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith  
  某些功能的圖形，例如是否具有陰影或連接器的箭頭樣式沒有公開的功能，做為網域屬性的內建方法。  這類功能的變更並不在交易系統的控制權。 因此，不將其更新適當使用規則，因為規則不會叫用使用者對執行 [復原] 命令時。  
   
  相反地，您可以藉由更新這類功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式是連接器所顯示的關聯性中的網域屬性值所控制：  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`應該呼叫一次針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中的任何圖形都呈現屬性的模型項目。  
+ `AssociateValueWith()` 應該呼叫一次針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中的任何圖形都呈現屬性的模型項目。  
   
  不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次只能針對每個圖形 」 類別。

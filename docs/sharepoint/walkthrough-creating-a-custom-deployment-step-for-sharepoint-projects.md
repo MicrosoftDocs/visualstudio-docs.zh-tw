@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 建立 SharePoint 專案的自訂部署步驟 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 SharePoint 專案的自訂部署步驟 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會執行一系列的部署步驟，以特定順序。 Visual Studio 包含許多的內建部署步驟，但您也可以建立您自己。  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  選擇**VSIX 專案**範本，將專案**UpgradeDeploymentStep**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**UpgradeDeploymentStep**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**UpgradeDeploymentStep**專案加入**方案總管 中**。  
   
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  選擇**類別庫**專案範本，將專案命名**DeploymentStepExtension**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**DeploymentStepExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**DeploymentStepExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 5.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  選擇**完成** 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 EmployeesListDefinition 專案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 EmployeesListDefinition 專案。  
   
 8.  開啟 EmployeesListDefinition 專案的捷徑功能表，選擇 **新增**，然後選擇 **新項目**。  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **預設值 （空白）**中選擇**建立自訂的清單為基礎：**清單。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立員工清單項目的標題欄與單一的空執行個體，並開啟清單設計工具。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立員工清單項目的標題欄與單一的空執行個體，並開啟清單設計工具。  
   
 12. 在清單設計工具上**資料行**索引標籤上，選擇**輸入新的或現有的資料行名稱**資料列，然後再加入下列資料行中的**資料行的顯示名稱**清單：  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      屬性編輯器/設計工具隨即開啟。  
   
-4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇   **<** 移動從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
+4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇  **<**移動從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
   
      這個動作會移除這些欄位的預設檢視從**員工**SharePoint 網站上的清單。  
   
@@ -488,7 +487,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  關閉 Visual Studio （實驗性執行個體和 UpgradeDeploymentStep 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

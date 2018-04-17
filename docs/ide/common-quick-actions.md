@@ -1,11 +1,7 @@
 ---
-title: "一般的快速動作 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: 一般的快速動作 | Microsoft Docs
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
-本主題中的此章節列出一些同時適用於 C# 和 Visual Basic 程式碼的一般快速動作。
+本主題中的此章節列出一些同時適用於 C# 和 Visual Basic 程式碼的一般快速動作。 這些動作是 Visual Studio 中內建[分析器規則](../code-quality/roslyn-analyzers-overview.md)的「程式碼修正」。
 
 ## <a name="actions-that-fix-errors"></a>修正錯誤的動作
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>移除不必要程式碼的動作
 
-### <a name="remove-unnecesary-usingsimports"></a>移除不必要的 using/Import
+### <a name="remove-unnecessary-usingsimports"></a>移除不必要的 using/Import
 
 **移除不必要的 using/Import** 快速動作將會移除目前檔案中任何未使用的 `using` 和 `Import` 陳述式。  當您選取此項目時，將會立即移除未使用的命名空間匯入。
 
@@ -239,7 +235,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219、BC42024 | C# 和 Visual Basic | Visual Studio 2017 15.3 版 |
 
-### <a name="remove-type-from-default-value-expression"></a>從 **default** 值運算式中移除類型
+### <a name="remove-type-from-default-value-expression"></a>從預設值運算式中移除類型
 
 這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用[ default 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
 
@@ -260,7 +256,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 ## <a name="actions-that-add-missing-code"></a>新增遺漏程式碼的動作
 
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>針對參考組件的類型、NuGet 套件的類型或您方案中的其他類型新增 using/Import
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>針對參考組件的類型、NuGet 套件的類型或您方案中的其他類型新增 using/import
 
 使用位於您方案中其他專案的類型會自動顯示快速動作，但是其他則需要從 [工具] > [選項] > [C#] 或 [基本] > [進階] 索引標籤啟用︰
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>程式碼轉換
 
-### <a name="convert-if-construct-to-switch"></a>將 **if** 建構轉換為 **switch**
+### <a name="convert-if-construct-to-switch"></a>將 'if' 建構轉換為 'switch'
 
 這個快速動作可讓您將 **if-then-else** 建構轉換為 **switch** 建構。
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>將 `ReferenceEquals` 轉換為 `is null`
+### <a name="convert-referenceequals-to-is-null"></a>將 'ReferenceEquals' 轉換成 'is null'
 
 |  診斷識別碼 | 適用語言 |  支援版本 |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>另請參閱
 
-[快速動作](../ide/quick-actions.md)  
+[快速動作](../ide/quick-actions.md)

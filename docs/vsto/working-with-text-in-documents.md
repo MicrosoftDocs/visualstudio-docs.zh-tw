@@ -1,12 +1,10 @@
 ---
-title: "處理文件中的文字 |Microsoft 文件"
-ms.custom: 
+title: 處理文件中的文字 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 39894ff15d6c5d9f3bc3f1e725d93d52e7321c9d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 795bd5d60feb287a60cad31aa5a6e59191f0e76a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-text-in-documents"></a>處理文件中的文字
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文字，提供逐步程序和程式碼範例。  
@@ -49,8 +48,8 @@ ms.lasthandoff: 01/10/2018
 |在列印文件之前隱藏書籤中的文字。|[如何：以程式設計方式在文件中隱藏文字](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
 |加入文字的註解。|[如何：以程式設計方式為文件中的文字新增註解](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
- [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

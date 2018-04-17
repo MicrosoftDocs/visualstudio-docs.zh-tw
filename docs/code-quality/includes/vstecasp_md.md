@@ -14,9 +14,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 901c9e77aa94a2e18e8200b7a62c269d53e2363c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
 ASP.NET

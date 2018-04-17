@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 建立 sharepoint Web 組件，使用設計工具 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立 sharepoint Web 組件，使用設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 54902d93dac10ed06103932a87157e8b5a2a2a22
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint 的 Web 組件
 

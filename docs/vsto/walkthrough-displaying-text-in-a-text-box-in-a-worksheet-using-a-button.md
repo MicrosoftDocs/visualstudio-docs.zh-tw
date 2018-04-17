@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7b88940aa1329bc330e5d8bb7d114c21fac3dacb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說：使用按鈕在工作表的文字方塊中顯示文字
   本逐步解說示範使用 Microsoft Office Excel 工作表，以及如何建立 Excel 專案中使用 Visual Studio 中的 Office 程式開發工具的按鈕和文字方塊的基本概念。 若要查看結果為已完成的範例，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -113,7 +112,7 @@ ms.lasthandoff: 01/10/2018
   
 -   使用核取方塊變更格式。 如需詳細資訊，請參閱[逐步解說： 變更工作表格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  

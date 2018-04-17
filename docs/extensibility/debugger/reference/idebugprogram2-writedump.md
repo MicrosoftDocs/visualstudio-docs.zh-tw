@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::WriteDump |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::WriteDump |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::WriteDump
-helpviewer_keywords: IDebugProgram2::WriteDump
+f1_keywords:
+- IDebugProgram2::WriteDump
+helpviewer_keywords:
+- IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 40fcd345a2a07a0ebdcf9e984b060cc81e946fc3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

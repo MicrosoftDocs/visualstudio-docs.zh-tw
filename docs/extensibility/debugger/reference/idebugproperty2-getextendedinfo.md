@@ -1,20 +1,24 @@
 ---
-title: "IDebugProperty2::GetExtendedInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugProperty2::GetExtendedInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProperty2::GetExtendedInfo
-helpviewer_keywords: IDebugProperty2::GetExtendedInfo
+f1_keywords:
+- IDebugProperty2::GetExtendedInfo
+helpviewer_keywords:
+- IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2d3dfd2111533896db2a3b298ff294ff180d4a70
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

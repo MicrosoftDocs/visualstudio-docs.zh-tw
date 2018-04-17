@@ -1,20 +1,24 @@
 ---
-title: "IEnumDebugProcesses2::Skip |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugProcesses2::Skip |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumDebugProcesses2::Skip
-helpviewer_keywords: IEnumDebugProcesses2::Skip
+f1_keywords:
+- IEnumDebugProcesses2::Skip
+helpviewer_keywords:
+- IEnumDebugProcesses2::Skip
 ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: be1a34628fa6a7efae6c4d14f62ab2d265e7f428
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

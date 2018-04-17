@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgramEngines2::EnumPossibleEngines |Microsoft 文件"
-ms.custom: 
+title: IDebugProgramEngines2::EnumPossibleEngines |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgramEngines2::EnumPossibleEngines
-helpviewer_keywords: IDebugProgramEngines2::EnumPossibleEngines
+f1_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 81765959c0735080141ba8974387d592a461df25
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

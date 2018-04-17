@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 變更文件格式使用 CheckBox 控制項 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 變更文件格式使用 CheckBox 控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b99f1a5d05d1eac173c40e7cc0c3b989f7c0cd3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項來變更文件格式
   本逐步解說示範如何使用 Microsoft Office Word 的文件層級自訂的 Windows Form 控制項，變更文字格式。  
@@ -91,7 +90,7 @@ ms.lasthandoff: 01/10/2018
     |屬性|值|  
     |--------------|-----------|  
     |**名稱**|**applyUnderlineFont**|  
-    |**Text**|**加上底線**|  
+    |**Text**|**底線**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>若要加入文字和書籤控制項  
   
@@ -161,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
 -  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   

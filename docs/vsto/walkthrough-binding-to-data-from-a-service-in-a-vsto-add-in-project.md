@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 繫結至資料服務中的 VSTO 增益集專案 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 繫結至資料服務中的 VSTO 增益集專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,18 +14,19 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中繫結至服務資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。  
   
- **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱＜[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)＞。  
   
  這個逐步解說將說明下列工作：  
   
@@ -117,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
      資訊會從 MTPS 內容服務下載並顯示在內容控制項內。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

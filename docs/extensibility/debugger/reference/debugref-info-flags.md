@@ -1,20 +1,24 @@
 ---
-title: "DEBUGREF_INFO_FLAGS |Microsoft 文件"
-ms.custom: 
+title: DEBUGREF_INFO_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: DEBUGREF_INFO_FLAGS
-helpviewer_keywords: DEBUGREF_INFO_FLAGS enumeration
+f1_keywords:
+- DEBUGREF_INFO_FLAGS
+helpviewer_keywords:
+- DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0ccdf97b532c014636ff19f7416a656ac062f411
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

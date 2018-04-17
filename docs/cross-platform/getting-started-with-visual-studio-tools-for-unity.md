@@ -1,23 +1,23 @@
 ---
-title: "Visual Studio Tools for Unity 使用者入門 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Tools for Unity 使用者入門 | Microsoft Docs
+ms.custom: ''
 ms.date: 04/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 009dc69f1c21cc984ce7eb79e5a0ce69ad026382
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 3cac4d31611ae1facdf7ac2ba628e06622f10b59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。

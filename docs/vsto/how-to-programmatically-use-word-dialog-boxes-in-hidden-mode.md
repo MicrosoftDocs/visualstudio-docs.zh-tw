@@ -1,12 +1,10 @@
 ---
-title: "如何： 以程式設計方式使用 Word 對話方塊在隱藏模式中的 |Microsoft 文件"
-ms.custom: 
+title: 如何： 以程式設計方式使用 Word 對話方塊在隱藏模式中的 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - dialog boxes, hidden mode in Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 08427d6310421135032bb3517cda1eefc1122358
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7b9d9b49783e3070e91291460e3f4aa7a4667620
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以程式設計方式在隱藏模式中使用 Word 對話方塊
   您可以藉由叫用 Microsoft Office Word 中的內建對話方塊，而不會向使用者顯示這些執行複雜的作業，包含一個方法呼叫。 您可以使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>物件而不需呼叫<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式使用 Word 中的內建對話方塊](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [在 Office 方案中的晚期繫結](../vsto/late-binding-in-office-solutions.md)   

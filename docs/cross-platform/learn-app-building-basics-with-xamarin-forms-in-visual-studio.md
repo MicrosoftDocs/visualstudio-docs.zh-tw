@@ -1,23 +1,23 @@
 ---
-title: "了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念 | Microsoft Docs"
-ms.custom: 
+title: 了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: charlespetzold
+ms.author: chape
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6c0659e63feb685f002b7be969ee827e5e047cdd
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 02/28/2018
 
 您可以在 **WeatherApp** 專案中撰寫 .NET Standard 程式庫程式碼，進而跨所有平台共用。 系統會自動依據 iOS、Android 和 Windows 專案，將此程式庫包含在應用程式套件中。  
   
-若要執行此範例，您必須先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) \(英文\) 註冊免費 API 金鑰。  
+若要執行此範例，您必須先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 註冊免費的 API 金鑰。  
   
 下列步驟接著會將程式碼新增至 .NET Standard 程式庫，以存取並儲存該天氣服務的資料：  
   

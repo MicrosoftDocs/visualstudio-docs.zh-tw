@@ -1,20 +1,24 @@
 ---
-title: "IDebugBreakpointRequest3::GetRequestInfo2 |Microsoft 文件"
-ms.custom: 
+title: IDebugBreakpointRequest3::GetRequestInfo2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugBreakpointRequest3::GetRequestInfo2
-helpviewer_keywords: IDebugBreakpointRequest3::GetRequestInfo2
+f1_keywords:
+- IDebugBreakpointRequest3::GetRequestInfo2
+helpviewer_keywords:
+- IDebugBreakpointRequest3::GetRequestInfo2
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7aad8e271074a24ad6a4f386f4f756ea5cfaf1a7
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentPosition2 |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentPosition2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentPosition2
-helpviewer_keywords: IDebugDocumentPosition2 interface
+f1_keywords:
+- IDebugDocumentPosition2
+helpviewer_keywords:
+- IDebugDocumentPosition2 interface
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ba9aaf9b0d23aed99397a6c52ca443a9477bc20a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

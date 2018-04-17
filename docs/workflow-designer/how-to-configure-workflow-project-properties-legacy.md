@@ -1,5 +1,5 @@
 ---
-title: "如何： 設定工作流程專案屬性 （舊版） |Microsoft 文件"
+title: 如何： 設定工作流程專案屬性 （舊版） |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 645e08914bb91b7fcb88cbfa8a79366c41a4f12e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 43f7ca9271b8f7585e232ca636dcb5e13de3a6eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>HOW TO：設定工作流程專案屬性 (舊版)
 

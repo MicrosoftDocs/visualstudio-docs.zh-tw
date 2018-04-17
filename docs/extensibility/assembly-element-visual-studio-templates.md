@@ -1,22 +1,25 @@
 ---
-title: "Assembly 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: Assembly 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+f1_keywords:
+- http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5202d7468ecefe9de1754f592eef826f0390b869
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

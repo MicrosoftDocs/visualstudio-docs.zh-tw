@@ -1,20 +1,24 @@
 ---
-title: "IEnumCodePaths2::Clone |Microsoft 文件"
-ms.custom: 
+title: IEnumCodePaths2::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IEnumCodePaths2::Clone
-helpviewer_keywords: IEnumCodePaths2::Clone
+f1_keywords:
+- IEnumCodePaths2::Clone
+helpviewer_keywords:
+- IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c732b90a0bd931ceb775e61eb8a0bb7feb27e15d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

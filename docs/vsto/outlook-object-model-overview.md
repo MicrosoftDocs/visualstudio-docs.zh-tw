@@ -1,13 +1,10 @@
 ---
-title: "Outlook 物件模型概觀 |Microsoft 文件"
-ms.custom: 
+title: Outlook 物件模型概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 481a18d40f17aa5488afabf1dd04f3cf6ed345b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  

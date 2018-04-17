@@ -1,22 +1,25 @@
 ---
-title: "Ca1726： 建議使用慣用的詞彙 |Microsoft 文件"
-ms.custom: 
+title: Ca1726： 建議使用慣用的詞彙 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - UsePreferredTerms
 - CA1726
-helpviewer_keywords: UsePreferredTerms
+helpviewer_keywords:
+- UsePreferredTerms
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 63a27c62f46343ac840a550ccbefd30f20e9f06a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

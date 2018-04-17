@@ -1,20 +1,24 @@
 ---
-title: "IDebugExpression2::EvaluateAsync |Microsoft 文件"
-ms.custom: 
+title: IDebugExpression2::EvaluateAsync |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugExpression2::EvaluateAsync
-helpviewer_keywords: IDebugExpression2::EvaluateAsync
+f1_keywords:
+- IDebugExpression2::EvaluateAsync
+helpviewer_keywords:
+- IDebugExpression2::EvaluateAsync
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: aaaf66616722739ad51b07e75470f6edfde5c1b5
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

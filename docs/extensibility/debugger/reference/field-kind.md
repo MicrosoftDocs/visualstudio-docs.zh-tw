@@ -1,20 +1,24 @@
 ---
-title: "FIELD_KIND |Microsoft 文件"
-ms.custom: 
+title: FIELD_KIND |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: FIELD_KIND
-helpviewer_keywords: FIELD_KIND enumeration
+f1_keywords:
+- FIELD_KIND
+helpviewer_keywords:
+- FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 095a02edb0a462e2fdbdca0f7f92018861b3d6bf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

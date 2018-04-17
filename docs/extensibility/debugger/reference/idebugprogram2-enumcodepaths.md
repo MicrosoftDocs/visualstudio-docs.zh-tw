@@ -1,20 +1,24 @@
 ---
-title: "IDebugProgram2::EnumCodePaths |Microsoft 文件"
-ms.custom: 
+title: IDebugProgram2::EnumCodePaths |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugProgram2::EnumCodePaths
-helpviewer_keywords: IDebugProgram2::EnumCodePaths
+f1_keywords:
+- IDebugProgram2::EnumCodePaths
+helpviewer_keywords:
+- IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c9e87e3435f5902e277a2c80c68ab2dab891bd38
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

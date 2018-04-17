@@ -1,11 +1,11 @@
 ---
-title: "MSBuild 工作參考 | Microsoft Docs"
-ms.custom: 
+title: MSBuild 工作參考 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: 
+caps.latest.revision: 32
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d3bd0cb011dd99183e3d7318693261e19e01791
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -227,7 +227,7 @@ ms.lasthandoff: 02/09/2018
  [XslTransformation 工作](../msbuild/xsltransformation-task.md)  
  使用「可延伸樣式表語言轉換」(XSLT) 或編譯的 XSLT 轉換 XML 輸入，並輸出到輸出裝置或檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作撰寫](../msbuild/task-writing.md)   
  [工作](../msbuild/msbuild-tasks.md)

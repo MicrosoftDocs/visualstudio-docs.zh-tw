@@ -1,19 +1,22 @@
 ---
-title: "控制事件 |Microsoft 文件"
-ms.custom: 
+title: 控制事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: debugging [Debugging SDK], events
+helpviewer_keywords:
+- debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 15f9eff023fa875499881eb05a0795b0eaa83842
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

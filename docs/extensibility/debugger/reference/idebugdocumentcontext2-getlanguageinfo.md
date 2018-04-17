@@ -1,20 +1,24 @@
 ---
-title: "IDebugDocumentContext2::GetLanguageInfo |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentContext2::GetLanguageInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugDocumentContext2::GetLanguageInfo
-helpviewer_keywords: IDebugDocumentContext2::GetLanguageInfo
+f1_keywords:
+- IDebugDocumentContext2::GetLanguageInfo
+helpviewer_keywords:
+- IDebugDocumentContext2::GetLanguageInfo
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3ef815ecde171819fd32ae4a3874fd035492c885
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

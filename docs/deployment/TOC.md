@@ -1,7 +1,8 @@
 # [部署文件](index.md)
 # 總覽
-## [部署概觀](deploying-applications-services-and-components.md)
+## [部署概觀](deploying-applications-services-and-components-resources.md)
 # 快速入門
+## [第一眼部署](deploying-applications-services-and-components.md)
 ## [部署到本機資料夾](quickstart-deploy-to-local-folder.md)
 ## [部署到網站](quickstart-deploy-to-a-web-site.md)
 ## [部署到 Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature> 項目 (ClickOnce 部署)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting> 項目 (ClickOnce 部署)](customerrorreporting-element-clickonce-deployment.md)
 ### [ClickOnce Unmanaged API 參考](clickonce-unmanaged-api-reference.md)
-# 資源
-## [部署應用程式、服務和元件](deploying-applications-services-and-components-resources.md)
 

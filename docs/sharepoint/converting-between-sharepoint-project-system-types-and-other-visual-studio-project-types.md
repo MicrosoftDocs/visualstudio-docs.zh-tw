@@ -1,13 +1,10 @@
 ---
-title: "SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換 |Microsoft 文件"
-ms.custom: 
+title: SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint project service
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 837907172d4e093dec231e6b21b92da050dcbd19
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>在 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
   在某些情況下您可能會有物件 SharePoint 專案系統中，而且您想要使用 Visual Studio 自動化物件模型或整合物件模型中對應物件的功能，反之亦然。 在這些情況下，您可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>SharePoint 專案服務，將物件轉換成不同的物件模型的方法。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   暫存器的程式碼`projectService_ProjectAdded`方法以處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。 如需範例，請參閱[How to： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   
  [如何： 擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [SharePoint 工具延伸模組的程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  

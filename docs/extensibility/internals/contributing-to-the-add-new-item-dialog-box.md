@@ -1,19 +1,22 @@
 ---
-title: "提供給加入新項目對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 提供給加入新項目對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: Add New Item dialog box, contributing to
+helpviewer_keywords:
+- Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

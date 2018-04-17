@@ -1,12 +1,10 @@
 ---
-title: "BDC 模型設計工具的概觀 |Microsoft 文件"
-ms.custom: 
+title: BDC 模型設計工具的概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 89b497221e17402567970588a5b55a49fec3d705
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具概觀
   您可以使用 BDC 設計工具來設計商務資料連線 (BDC) 模型**BDC 方法詳細資料**視窗中，而**BDC 總管**。  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  如需詳細資訊，請參閱[如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
  [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   

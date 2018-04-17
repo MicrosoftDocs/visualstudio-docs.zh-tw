@@ -1,11 +1,11 @@
 ---
-title: "UnregisterAssembly 工作 | Microsoft Docs"
-ms.custom: 
+title: UnregisterAssembly 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, UnregisterAssembly task
 - UnregisterAssembly task [MSBuild]
 ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
-caps.latest.revision: 
+caps.latest.revision: 21
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f859137722c2715f81276a02a311dcbb40ec06e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [RegisterAssembly 工作](../msbuild/registerassembly-task.md)   
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

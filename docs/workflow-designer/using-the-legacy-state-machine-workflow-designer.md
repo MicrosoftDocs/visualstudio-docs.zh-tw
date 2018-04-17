@@ -1,5 +1,5 @@
 ---
-title: "使用舊版狀態機器工作流程設計工具 |Microsoft 文件"
+title: 使用舊版狀態機器工作流程設計工具 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf214ce8e65ba65127d82686770b00cfd8d3f90
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用舊版狀態機器工作流程設計工具
 您可以在建立新的狀態機器工作流程中的專案時[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]為目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，您可以選擇使用**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 舊版狀態機器專案範本的相關資訊，請參閱[How to： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).

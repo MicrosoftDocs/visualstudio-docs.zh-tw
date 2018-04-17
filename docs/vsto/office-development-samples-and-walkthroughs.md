@@ -1,12 +1,10 @@
 ---
-title: "Office 程式開發範例和逐步解說 |Microsoft 文件"
-ms.custom: 
+title: Office 程式開發範例和逐步解說 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 程式開發範例和逐步解說
   本節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建立 Microsoft Office 方案的技術。  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |主題|描述|  
 |-----------|-----------------|  
-|[開始使用 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/getting-started-office-development-in-visual-studio.md)|提供安裝、 專案範本，Office 主要的 interop 組件和新的 Office 程式開發功能的相關資訊的連結。|  
+|[使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|提供安裝、 專案範本，Office 主要的 interop 組件和新的 Office 程式開發功能的相關資訊的連結。|  
 |[Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)|從開發人員和終端使用者的觀點說明 managed 程式碼如何 Office 方案的工作並包括如何 managed 程式碼適用於 Office 文件，且應用程式的相關資訊。|  
 |[Office 程式設計中的常見工作](../vsto/common-tasks-in-office-programming.md)|列出有關在 Visual Studio 中的 Office 程式開發的程式設計常見問題，並提供可協助解決常見問題的主題連結。|  
 |[設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)|提供有關如何建立 Microsoft Office 方案和您的方案中的組件的角色連結。|  

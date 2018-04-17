@@ -1,20 +1,24 @@
 ---
-title: "IDebugEngine2::CauseBreak |Microsoft 文件"
-ms.custom: 
+title: IDebugEngine2::CauseBreak |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: IDebugEngine2::CauseBreak
-helpviewer_keywords: IDebugEngine2::CauseBreak
+f1_keywords:
+- IDebugEngine2::CauseBreak
+helpviewer_keywords:
+- IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c6fc6558ded5ab68f54170c07e2482ab2357475b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

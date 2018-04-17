@@ -1,13 +1,10 @@
 ---
-title: "逐步解說： 使用商務資料在 SharePoint 中建立外部清單 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用商務資料在 SharePoint 中建立外部清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,14 +21,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 49c43e3add54b3ba3f584af6feda630a8d1ad526
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 09606f3ca61abd747451f92d4ecf8ee43010e669
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -194,7 +191,7 @@ ms.lasthandoff: 02/28/2018
     |FirstName|System.String|
     |LastName|System.String|
     |電話|System.String|
-    |EmailAddress|System.String|
+    |emailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
@@ -281,7 +278,7 @@ ms.lasthandoff: 02/28/2018
 - [如何： 加入 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。
 - [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
 [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)  

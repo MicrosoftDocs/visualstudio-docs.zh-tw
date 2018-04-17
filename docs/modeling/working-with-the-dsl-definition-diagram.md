@@ -1,10 +1,8 @@
 ---
-title: "DSL 定義圖表使用 |Microsoft 文件"
-ms.custom: 
+title: DSL 定義圖表使用 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 603189cdc4ac65c4b12fae0e736025b622765c81
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d9f0f89345b7c6ee024e3df2ea9f0dca58449cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 圖表[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定義是重要的工具來定義特定領域語言。 您可以將項目加入至網域模型，並定義圖表上的關聯性；也可以修改圖表配置，讓圖表更容易讀取。  
@@ -73,5 +71,5 @@ ms.lasthandoff: 02/09/2018
 ### <a name="show-as-class"></a>Show As Class  
  如果網域關聯性衍生關聯性，或者如果有與其他網域關聯性的內嵌或參考關聯性，您可以用滑鼠右鍵按一下關聯性，然後按一下做為類別顯示的關聯性**顯示類別**. 會顯示關聯性**定義域屬性**區間，而且會顯示在繼承和關聯性樹狀結構。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [特定領域語言工具詞彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

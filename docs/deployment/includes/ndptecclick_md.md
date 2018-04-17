@@ -14,9 +14,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 893ce4d5b8441ddadeafd61579d05f51d96b5eff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
 ClickOnce

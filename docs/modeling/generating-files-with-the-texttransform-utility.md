@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 

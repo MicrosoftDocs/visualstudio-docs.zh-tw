@@ -1,26 +1,23 @@
 ---
-title: "提升 VSTO 增益集的效能 |Microsoft 文件"
-ms.custom: 
+title: 提升 VSTO 增益集的效能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>提升 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：  
@@ -84,9 +81,9 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     如需如何在 C# 專案中建立建置後事件的資訊，請參閱[How to： 指定建置事件 &#40;C# 35; &#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     如需如何在 C# 專案中建立建置後事件的資訊，請參閱[How to： 指定建置事件&#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp)。  
   
-     如需如何在 Visual Basic 專案中建立建置後事件的資訊，請參閱[How to： 指定建置事件 &#40;Visual Basic &#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     如需如何在 Visual Basic 專案中建立建置後事件的資訊，請參閱[How to： 指定建置事件&#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic)。  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
  如果使用 Windows Installer 發行方案，在載入 VSTO 增益集時，Visual Studio 2010 Tools for Office Runtime 會略過下列步驟。  
@@ -118,7 +115,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  所有呼叫 Office 物件模型的程式碼，都必須在主執行緒中執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [視需要載入 VSTO 增益集](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
  [延遲載入 CLR Office 增益集](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
  [VSTO 效能： 延遲載入與您 (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   

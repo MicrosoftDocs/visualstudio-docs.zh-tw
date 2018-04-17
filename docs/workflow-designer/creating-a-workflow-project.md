@@ -1,5 +1,5 @@
 ---
-title: "建立工作流程專案 |Microsoft 文件"
+title: 建立工作流程專案 |Microsoft 文件
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e3afe9926fbb45738016d312d094af5c8fab2ee
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-workflow-project"></a>建立工作流程專案
 

@@ -1,12 +1,10 @@
 ---
-title: "關聯自訂資料與 SharePoint 工具擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 關聯自訂資料與 SharePoint 工具擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8868300375d34664ba267b473f24d2c6a91ddd55
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>讓自訂資料與 SharePoint 工具擴充功能產生關聯
   您可以加入自訂資料中 SharePoint 工具擴充功能的特定物件。 當您想要從您的擴充功能中的其他程式碼供稍後存取的擴充功能的一個部分中有資料時，這非常有用。 而是實作自訂的方式來儲存及存取資料，您可以關聯物件中的資料，在您的擴充功能，然後稍後從相同的物件擷取資料。  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [逐步解說： 擴充伺服器總管 以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   

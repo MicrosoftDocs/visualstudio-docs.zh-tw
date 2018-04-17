@@ -1,23 +1,26 @@
 ---
-title: "維護性警告 |Microsoft 文件"
-ms.custom: 
+title: 維護性警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.codeanalysis.maintainabilityrules
+f1_keywords:
+- vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
 - warnings, maintainability
 - managed code analysis warnings, maintainability warnings
 - maintainability warnings
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8d432dab79d5cd88d398a74c352cc9d34c8b4f2e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

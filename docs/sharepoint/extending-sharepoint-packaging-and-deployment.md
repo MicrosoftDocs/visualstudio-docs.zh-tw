@@ -1,13 +1,10 @@
 ---
-title: "擴充 SharePoint 封裝和部署 |Microsoft 文件"
-ms.custom: 
+title: 擴充 SharePoint 封裝和部署 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>擴充 SharePoint 封裝和部署
   您可以擴充 SharePoint 專案的封裝和部署程序。
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  如需示範如何建立部署步驟的逐步解說，請參閱[逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   
 ##  <a name="creating-deployment-configurations"></a>建立部署組態  
- 部署組態是一組部署步驟，系統會針對指定的專案執行，但可能會影響所有 SharePoint 專案項目。 每個部署組態包括一組部署專案時所執行的步驟，和專案遭到撤銷時所執行的另一組步驟。 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]包含兩個內建的部署組態，但您也可以建立您自己。 當您建立部署組態時，您可以包含內建的部署步驟與您建立的部署步驟。  
+ 部署組態是一組部署步驟，系統會針對指定的專案執行，但可能會影響所有 SharePoint 專案項目。 每個部署組態包括一組部署專案時所執行的步驟，和專案遭到撤銷時所執行的另一組步驟。 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 包含兩個內建的部署組態，但您也可以建立您自己。 當您建立部署組態時，您可以包含內建的部署步驟與您建立的部署步驟。  
   
  如需示範如何建立部署組態的逐步解說，請參閱[逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   
@@ -57,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="customizing-validation-rules"></a>自訂驗證規則  
  部署方案套件 (.wsp) 之前，您可以建立自訂的功能和封裝驗證規則來驗證功能或封裝是否有效。 比方說，您可以向開發人員報告資訊、警告或錯誤以協助修正驗證問題。 如需詳細資訊，請參閱[How to： 建立自訂功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 執行程式碼時部署步驟](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
  [逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
  [如何： 建立 SharePoint 方案的自訂功能和封裝驗證規則](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)   
