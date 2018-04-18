@@ -1,12 +1,10 @@
 ---
-title: "逐步解說： 呼叫 SharePoint 用戶端物件模型，在伺服器總管擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 呼叫 SharePoint 用戶端物件模型，在伺服器總管擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：在伺服器總管擴充功能中呼叫 SharePoint 用戶端物件模型
   本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連接**節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  在**名稱**方塊中，輸入**WebPartNode**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNode**專案加入**方案總管 中**。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNode**專案加入**方案總管 中**。  
   
 #### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  在**名稱**方塊中，輸入**WebPartNodeExtension**，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
 6.  從專案刪除 Class1 的程式碼檔案。  
   
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  在**專案設計工具**WebPartNodeExtension 專案，選擇 [**資源**] 索引標籤。  
   
-2.  選擇連結**這個專案未包含預設的資源檔。**。  
+2.  選擇連結**這個專案未包含預設的資源檔。按一下這裡可建立一個。**  
   
      Visual Studio 建立資源檔，並在設計工具中開啟。  
   
@@ -282,11 +281,11 @@ ms.lasthandoff: 01/10/2018
   
 5.  關閉 Visual Studio （實驗性執行個體和 WebPartNode 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [逐步解說： 擴充伺服器總管 以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
- [建立圖示或其他影像 &#40; 影像編輯器的圖示 &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

@@ -1,13 +1,10 @@
 ---
-title: "功能區物件模型概觀 |Microsoft 文件"
-ms.custom: 
+title: 功能區物件模型概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型概觀
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公開強類型的物件模型可讓您取得和設定在執行階段的功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏控制項內容。 您也可以加入索引標籤、 群組和控制項的功能區中，但只能由 Office 應用程式載入功能區前。 如需資訊，請參閱[設定變成唯讀的屬性](#SettingReadOnlyProperties)。  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  此功能區物件模型中主要在於[功能區類別](#RibbonClass)，[功能區事件](#RibbonEvents)，和[功能區控制項類別](#RibbonControlClasses)。  
   
-##  <a name="RibbonClass"></a>功能區類別  
+##  <a name="RibbonClass"></a> 功能區類別  
  當您新增新**功能區 （視覺化設計工具）**項目加入專案，Visual Studio 會加入**功能區**類別至您的專案。 **功能區**類別繼承自<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>類別。  
   
  這個類別會顯示為功能區程式碼檔案之間的功能區設計工具程式碼檔案分割成部分類別。  
   
-##  <a name="RibbonEvents"></a>功能區事件  
+##  <a name="RibbonEvents"></a> 功能區事件  
  **功能區**類別包含下列三個事件：  
   
 |Event - 事件|描述|  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|可讓您快取映像，在功能區自訂功能區載入時。 如果您撰寫程式碼快取中這個事件處理常式的功能區映像，您可以取得輕微的效能改善。 如需詳細資訊，請參閱<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|功能區執行個體關閉時引發。|  
   
-##  <a name="RibbonControlClasses"></a>功能區控制項  
+##  <a name="RibbonControlClasses"></a> 功能區控制項  
  <xref:Microsoft.Office.Tools.Ribbon>命名空間包含您在中看見每個控制項的型別**Office 功能區控制項**群組**工具箱**。  
   
  下表顯示每個型別`Ribbon`控制項。 如需每個控制項的說明，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**下拉式清單**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**編輯方塊**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**組件庫**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**圖庫**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**群組**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
@@ -87,14 +84,14 @@ ms.lasthandoff: 01/10/2018
 |取得出現在控制項的影像。|使用 [影像] 屬性。|  
 |變更控制項的標籤。|使用標籤屬性。|  
 |將使用者定義的資料加入至控制項。|使用標記屬性。|  
-|取得的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>， <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>，或<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>控制項。|使用項目屬性。|  
+|取得的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>， <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>，或<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> 控制項。|使用項目屬性。|  
 |將項目加入<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>，或<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>控制項。|使用項目屬性。|  
 |將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>。|使用項目屬性。<br /><br /> 若要將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>區載入至 Office 應用程式之後，您必須設定<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>屬性**true**區載入至 Office 應用程式之前。 如需資訊，請參閱[設定變成唯讀的屬性](#SettingReadOnlyProperties)。|  
 |取得選取的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 或 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|使用 SelectedItem 屬性。 如<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>屬性。|  
 |取得的群組<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>。|請使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> 屬性。|  
 |指定的資料列和資料行中出現的數目<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>。|使用<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>和<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>屬性。|  
   
-##  <a name="SettingReadOnlyProperties"></a>設定會變成唯讀的屬性  
+##  <a name="SettingReadOnlyProperties"></a> 設定會變成唯讀的屬性  
  某些屬性只能在功能區載入之前設定。 有三個位置，來設定這些屬性：  
   
 -   在 Visual Studio**屬性**視窗。  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>會變成唯讀的屬性  
+###  <a name="ReadOnlyProperties"></a> 會變成唯讀的屬性  
  下表顯示只能在功能區載入之前設定的屬性。  
   
 > [!NOTE]  
@@ -142,14 +139,14 @@ ms.lasthandoff: 01/10/2018
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**欄數**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**controlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**動態**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**群組**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**名稱**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**位置**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -189,7 +186,7 @@ ms.lasthandoff: 01/10/2018
 |*寄件者*|<xref:System.Object>表示引發事件的控制項。|  
 |*e*|A<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>包含<xref:Microsoft.Office.Core.IRibbonControl>。 這個控制項用來存取所提供的功能區物件模型中沒有任何屬性[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
