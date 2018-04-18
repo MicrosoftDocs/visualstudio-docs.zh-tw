@@ -1,25 +1,27 @@
 ---
-title: "如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」？ | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate your Public Customer Number (PCN) or Authorization Number
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8e315776bde1f68ab4fd0dd9b75faf1e54671ebe
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」？ | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/29/2017
+ms.topic: Get-Started-Article
+description: 了解如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 224cb02d2ffdeceb4c2288175968324badd0911c
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>如何尋找我的「公開客戶號碼」(PCN) 或「授權編號」？
 
-## <a name="to-locate-your-pcn-or-authorization-number"></a>若要尋找您的 PCN 或授權編號：
+為了完成讓您的組織在訂用帳戶管理入口網站上線，您將需要公開客戶號碼 (PCN) 或授權編號。 本文章提供針對您的組織找出那些數字的步驟。  
 
-1.  登入大量授權服務中心：https://www.Microsoft.com/licensing/servicecenter。
+## <a name="to-locate-your-pcn-or-authorization-number"></a>尋找您的 PCN 或授權編號
+
+1.  登入大量授權服務中心：[https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter)。
 
     ![登入 VLSC](_img/vlsc/vlsc-login.png)
 
@@ -33,3 +35,6 @@ ms.lasthandoff: 01/29/2018
 
 如果您沒有看到上述的頁面，並被重新導向至 Visual Studio 登入頁面，請複製下列連結並在您的瀏覽器中貼上：https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch。
 
+## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>如果我有多個 PCN，應該使用哪一個？
+
+如果您有一個以上的公開客戶號碼 (PCN)，您將會收到一封電子郵件，其中包含每個 PCN 的唯一登入 URL。 每個唯一 URL 僅能搭配對應的 PCN 使用，PCN 的末三位數字也會在同一封電子郵件中提供。 您必須針對每個 PCN，透過每封電子郵件中的唯一連結完成登入程序。 

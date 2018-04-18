@@ -1,39 +1,44 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can assign licenses to subscribers
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 指派 Visual Studio 訂用帳戶的授權 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解系統管理員如何指派訂閱者授權
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
+身為 Visual Studio 訂用帳戶系統管理員，您可以使用 Visual Studio 訂用帳戶系統管理員入口網站，將訂用帳戶指派給個別使用者。  
+您可以一次指派一個訂用帳戶，或者使用 [大量新增] 功能，快速輕鬆地上傳訂閱者清單與其訂用帳戶資訊。 
+
 ## <a name="assigning-a-single-user"></a>指派單一使用者
 如果您有可用的 Visual Studio 訂用帳戶授權，則可以將這些授權指派給新使用者，讓他們可以存取其訂用帳戶權益。 
-1.  若要指派單一 Visual Studio 訂閱者，請按一下資料表頂端的 [新增]。
+1.  登入[系統管理員入口網站](https://manage.visualstudio.com)
+
+2.  若要指派單一 Visual Studio 訂閱者，請按一下資料表頂端的 [新增]。
 
     ![新增訂閱者](_img\assign-license-add\assign-license-add.png)
 
-2.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
+3.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
 
-如果您的組織用來接收電子郵件的電子郵件與登入的電子郵件不同，則可以選擇在這裡輸入它。 選取超連結，指出「進行通訊的電子郵件與登入的電子郵件不同嗎」？ 
+    如果您的組織用來接收電子郵件的電子郵件與登入的電子郵件不同，則可以選擇在這裡輸入它。 選取超連結，指出「進行通訊的電子郵件與登入的電子郵件不同嗎」？ 
 
-如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 完成後，請按一下 [新增]。
+    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 完成後，請按一下 [新增]。
 
-   ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-1.png)
+    ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-1.png)
 
-   ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-2.png)
+    ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-2.png)
 
-3.  新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
+4.  新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
 
     ![已新增訂閱者](_img\assign-license-add\add-subscriber-complete.png)
 
@@ -52,7 +57,7 @@ ms.lasthandoff: 01/29/2018
     - 移除表單欄位 (例如使用者名稱) 前後的空格。
     - 請確定使用者名稱未包含兩部分名字或姓氏之間的額外空格 (例如，兩部分名字 (例如 "Maggie May") 不應該鍵入為 "Maggie  May"，因為系統不會修剪額外空格)
 
-   ![大量新增範本](_img\assign-license-add\bulk-template.png)
+    ![大量新增範本](_img\assign-license-add\bulk-template.png)
 
 4.  返回 Visual Studio 訂用帳戶管理入口網站，並在 [Upload Multiple Subscribers] (上傳多位訂閱者) 對話方塊中按一下 [瀏覽]。 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]。 您會在螢幕上看到上傳進度。 
 

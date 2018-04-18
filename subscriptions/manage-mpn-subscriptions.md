@@ -1,23 +1,22 @@
 ---
 title: 管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶 | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to assign Visual Studio subscriptions to your end users, for MPN partners.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 308b682215556c645eeaf0257292e40fba35a9c1
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給您的使用者。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 
-## <a name="overview"></a>總覽
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
 
 如需詳細資料，請參閱 [Microsoft 合作夥伴網路 (MPN) 中向合作夥伴提供的 Visual Studio 訂用帳戶](program-mpn.md)。

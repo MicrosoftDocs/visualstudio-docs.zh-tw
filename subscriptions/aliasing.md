@@ -1,21 +1,21 @@
 ---
-title: "登入 Visual Studio 訂用帳戶可能會因為別名而失敗 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: 登入可能會因為使用別名或易記名稱而失敗
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為別名而失敗
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
 視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。 
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/29/2018
 ## <a name="as-an-administrator-what-options-do-i-have"></a>身為系統管理員，我有哪些選項？
 
 身為系統管理員，[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上有兩個選項可確保您的訂閱者可獲得成功的登入體驗。 
-1. 第一個選項 (建議使用) 是利用目錄帳戶作為大量授權服務中心 (VLSC) 中的已指派地址。 如需詳細資訊，請參閱此文章中的[將訂閱者指派到目錄帳戶](#assigning-subscribers-to-a-directory-account)一節。
-2. 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資訊，請參閱此文章中的[將公司或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account )一節。
+- 第一個選項 (建議使用) 是利用目錄帳戶作為大量授權服務中心 (VLSC) 中的已指派地址。 如需詳細資訊，請參閱此文章中的[將訂閱者指派到目錄帳戶](#assigning-subscribers-to-a-directory-account)一節。
+- 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資訊，請參閱此文章中的[將公司或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account )一節。
 
 > [!NOTE]
 > 一旦您的公司移轉到新的 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)，您將可以獲得新系統管理體驗的優點，此體驗允許使用者提供目錄與電子郵件地址作為訂閱者設定檔的一部分。  深入了解[移轉](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
@@ -42,21 +42,21 @@ ms.lasthandoff: 01/29/2018
 
 在所有案例中，大量授權服務中心 (VLSC) 中的訂閱管理員都必須使用新訂閱者的目錄地址，或更新「現有」訂閱者的電子郵件地址。  請務必了解使用目錄地址表示任何新的訂閱者都不會收到歡迎電子郵件，系統管理員將必須通知訂閱者訂閱已被指派給他們。  依照下面的步驟執行之後，您也可以使用電子郵件[範本](#notifying-your-subscribers-with-directory-addresses)來通知您的訂閱者，並協助他們完成登入程序。
 
-### <a name="adding-new-subscribers"></a>指派新的訂閱者
+### <a name="adding-new-subscribers"></a>加入新的訂閱者
 請依照這些步驟使用目錄帳戶新增訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂閱]。
 
-    ![[ 訂用帳戶] 功能表](_img//vlsc/vlsc-subscriptions.png)
+    ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
 
 3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
 
     ![選取合約](_img/vlsc/vlsc-agreement.png)
 
-4. 按一下 [指派訂用帳戶]。
+4. 按一下 [指派訂閱]。
 
-    ![指派訂用帳戶](_img/vlsc/vlsc-assign.png)
+    ![指派訂閱](_img/vlsc/vlsc-assign.png)
 
 5. 選取想要的 [訂用帳戶層級]。
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 01/29/2018
 
 6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]。
 
-7. 按一下 [編輯]。
+7. 按一下 [編輯] 。
 
 8. 將 [電子郵件地址] 欄位變更為想要的目錄地址，然後按一下 [儲存]。
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 01/29/2018
 
 您已被指派 Visual Studio 訂用帳戶。  請瀏覽 https://my.visualstudio.com 並使用您的 %DIRECTORY ADDRESS% 地址登入，以啟用並存取您的訂用帳戶。 
 
-若您有任何問題，請連絡支援小組 (https://www.visualstudio.com/subscriptions/support/)。
+如果您持續遇到問題，請連絡支援小組 (https://www.visualstudio.com/subscriptions/support/)。
 
 在頁面底部，選取下列項目：
    - [帳戶]、[訂用帳戶] 與 [計費支援]
@@ -120,7 +120,7 @@ ms.lasthandoff: 01/29/2018
 > Microsoft 建議您不要將「公司或學校」身分識別與「個人」身分識別結合。  此動作會使得組織失去帳戶擁有權與控制能力，而且即使員工離開公司，仍可存取特定產品或服務。  如需詳細資訊，請參閱來自 Microsoft Identity 小組的此[部落格文章](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/)。
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>將電子郵件地址定義為個人帳戶
-在訂閱指派給訂閱者之後，他們將會收到要求他們瀏覽 https://my.visualstudio.com 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先依照這些步驟執行再登入 https://my.visualstudio.com experience。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
+在訂用帳戶指派給訂閱者之後，他們將會收到要求他們瀏覽 https://my.visualstudio.com 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先依照這些指示執行再登入 https://my.visualstudio.com。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
 
 1. 瀏覽 https://my.visualstudio.com，然後按一下 [建立新的 Microsoft 帳戶]。
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/29/2018
 
 %SUBSCRIBER NAME%，您好
 
-您已被指派 Visual Studio 訂用帳戶，而且根據您的歡迎電子郵件，您可能被要求登入 https://my.visualstudio.com。  雖然這是取用權益的正確網站，但我們的組織要求您執行一些額外步驟以存取網站。  請依照下面的指示執行，以建立與我們的公司電子郵件地址繫結的「Microsoft 帳戶」。  一旦完成這些步驟，您就可以使用您的電子郵件地址來存取訂用帳戶權益。
+您已被指派 Visual Studio 訂用帳戶，而且可能會根據歡迎電子郵件來導向以登入 https://my.visualstudio.com。  雖然這是取用權益的正確網站，但我們的組織要求您執行一些額外步驟以存取網站。  請依照下面的指示執行，以建立與我們的公司電子郵件地址繫結的「Microsoft 帳戶」。  一旦完成這些步驟，您就可以使用您的電子郵件地址來存取訂用帳戶權益。
 1. 瀏覽 https://my.visualstudio.com
 
 2. 按一下右邊的 [建立新的 Microsoft 帳戶]
@@ -163,7 +163,7 @@ ms.lasthandoff: 01/29/2018
 
 注意：未來瀏覽 https://my.visualstudio.com 時，系統可能會提示您選取要使用的帳戶 (例如「公司或學校帳戶」或「個人帳戶」)。  依照上面的步驟執行之後，您將需要選擇 [個人帳戶] 選項。
 
-若您有任何問題，請連絡支援小組 (https://www.visualstudio.com/subscriptions/support/)。
+如果您持續遇到問題，請連絡支援小組 (https://www.visualstudio.com/subscriptions/support/)。
 
 在頁面底部，選取下列項目：
    - [帳戶]、[訂用帳戶] 與 [計費支援]

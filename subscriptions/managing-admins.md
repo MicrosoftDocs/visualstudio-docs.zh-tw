@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 訂用帳戶系統管理員入口網站中管理系統管理員權限"
+title: 在 Visual Studio 訂用帳戶系統管理員入口網站中管理系統管理員權限
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,17 +10,17 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中管理系統管理員權限
 
-## <a name="overview"></a>概觀 
-在 Visual Studio 訂用帳戶系統管理員入口網站 (https://manage.visualstudio.com) 中，有兩個管理角色：
+## <a name="overview"></a>總覽 
+在 Visual Studio 訂用帳戶系統管理員入口網站 (https://manage.visualstudio.com)) 中，有兩個管理角色：
 
-**超級系統管理員：**第一次設定組織時，主要或通知連絡人預設會成為超級系統管理員。 主要或通知連絡人可以選擇指派其他的超級系統管理員或系統管理員。 除了管理個別訂閱者的訂用帳戶之外，超級系統管理員還可以新增或移除其他系統管理員與其他超級系統管理員。 如果系統中有兩個以上的超級系統管理員，則超級系統管理員可以刪除所有超級系統管理員，但最後必須保留兩個以策安全。 
+**超級系統管理員：**第一次設定組織時，主要或通知連絡人預設會成為超級系統管理員。 主要或通知連絡人可以選擇指派其他的超級管理員或系統管理員。 除了管理個別訂閱者的訂用帳戶之外，超級系統管理員還可以新增或移除其他系統管理員與其他超級系統管理員。 如果系統中有兩個以上的超級系統管理員，則超級系統管理員可以刪除所有超級系統管理員，但最後必須保留兩個以策安全。 
 
 **系統管理員：**系統管理員可以管理超級系統管理員在合約中指派給他們的訂閱者。  他們可以將訂用帳戶指派給個人、編輯訂用帳戶，以及新增或移除訂用帳戶。   (系統管理員是由超級系統管理員指派。)  
 

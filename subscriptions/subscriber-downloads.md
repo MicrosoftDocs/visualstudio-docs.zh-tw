@@ -1,19 +1,19 @@
 ---
-title: "使用 Visual Studio 訂用帳戶的訂閱者下載 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 使用 Visual Studio 訂用帳戶的訂閱者下載 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 Microsoft 產品。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。  
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="what-do-i-get"></a>該怎麼做？
 下載的數量及類型取決於您的訂用帳戶層級和方案成員資格。  例如，使用 Visual Studio Enterprise 標準訂用帳戶的訂閱者，和透過 Microsoft 合作夥伴網路或 BizSpark 方案訂用帳戶的訂閱者，兩者能取得的下載不同。  若要深入了解各訂用帳戶層級有哪些下載可用，請下載[依權益層級排序的產品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)清單。
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在訂閱者入口網站尋找下載？ 
 [下載](https://my.visualstudio.com/downloads/featured)頁面只會顯示您的訂用帳戶所包含的下載。  如果您有多個訂用帳戶或方案成員資格，就會顯示您持有的**最高訂用帳戶**的下載，即使您目前使用不同的訂用帳戶檢視。  例如，如果您有 Visual Studio Professional 訂用帳戶和 Visual Studio Dev Essentials 成員資格，它們與同一登入識別碼建立關聯，即使您目前是以 Dev Essentials 權益檢視，顯示的下載項目也會是 Professional 層級訂用帳戶所包含的項目。  

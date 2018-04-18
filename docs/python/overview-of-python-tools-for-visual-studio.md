@@ -1,65 +1,165 @@
 ---
-title: "Visual Studio 中的 Python 支援概觀 (Windows) | Microsoft Docs"
-description: "適用於 Visual Studio 中 Python 之功能 (也稱為「適用於 Visual Studio 的 Python 工具」或 PTVS) 的摘要，包括常見問題集，以及 Visual Studio 版本之間的功能支援對照表。"
-ms.custom: 
-ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+title: Windows 上 Visual Studio 中的 Python 支援概觀 | Microsoft Docs
+description: Visual Studio 中功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))
+ms.custom: ''
+ms.date: 04/06/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio 中使用 Python (Windows)
 
-Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 Python 支援所有形式的開發，包括 Web 應用程式、Web 服務傳統型應用程式、指令碼及科學計算，並且許多大學、科學家、業餘開發人員及專業開發人員等都使用它。 您可以從 [python.org (英文)](https://www.python.org) 和[適用於初學者的 Python (英文)](https://www.python.org/about/gettingstarted/) 深入了解此語言。
+Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 Python 支援各式各樣的開發，包括 Web 應用程式、Web 服務、傳統型應用程式、指令碼及科學計算，並且許多大學、科學家、業餘開發人員及專業開發人員等都使用它。 您可以從 [python.org (英文)](https://www.python.org) 和[適用於初學者的 Python (英文)](https://www.python.org/about/gettingstarted/) 深入了解此語言。
 
-Windows 上的 Visual Studio 可透過 Python 開發與資料科學工作負載 (Visual Studio 2017) 和免費的「適用於 Visual Studio 的 Python 工具」延伸模組 (Visual Studio 2015 和更舊的版本)，針對 Python 語言提供[開放原始碼](https://github.com/Microsoft/ptvs)支援。 Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上使用 (請參閱[問與答](#questions-and-answers))。
+Visual Studio 是 Windows 上功能強大的 Python IDE。 Visual Studio 可透過「Python 開發與資料科學工作負載」(Visual Studio 2017) 和免費的「適用於 Visual Studio 的 Python 工具」延伸模組 (Visual Studio 2015 和更舊的版本)，針對 Python 語言提供[開放原始碼](https://github.com/Microsoft/ptvs)支援。
+
+Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上使用 (請參閱[問與答](#questions-and-answers))。
 
 若要開始使用：
 
-- 請遵循[安裝指示](installing-python-support-in-visual-studio.md)，以設定 Python 工作負載。
-- 完整瀏覽一或多份快速入門，以建立專案。 如果您不確定從何處著手，請先[從範本建立專案](quickstart-02-python-in-visual-studio-project-from-template.md)。
+- 依照[安裝指示](installing-python-support-in-visual-studio.md)設定 Python 工作負載。
+- 透過本文中的各節熟悉 Visual Studio 的 Python 功能。 您也可以[觀看 Visual Studio 中的 Python 簡介影片系列 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (總長 22 分鐘)。
+- 完整瀏覽一或多份快速入門，以建立專案。 如果您不確定從何處著手，請從[使用 Flask 來建立 Web 應用程式](../ide/quickstart-python.md?context=visualstudio/python/default)開始著手。
 - 請遵循[在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 的教學課程，以取得完整的端對端體驗。
-- 接著，請使用下表中的連結，探索 Python 相關功能與 Visual Studio 本身的功能。
 
-| 功能 | 描述 | 一般 Visual Studio 文件 |
-| --- | --- | --- |
-| [Visual Studio 專案系統](managing-python-projects-in-visual-studio.md) | 既能夠以隱含方式讀取 Python 程式碼的資料夾結構，又允許採用明確的控制來識別應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等。 | [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md) |
-| [專案範本](managing-python-projects-in-visual-studio.md#project-templates) | 快速建立主控台、Web、Azure、資料科學及其他類型專案的專案結構 | [Visual Studio 範本](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
-| 多重解譯器支援 | 支援各種版本的 CPython 和 IronPython。 | N/A |
-| IPython 支援 | 包含對內嵌繪圖、.NET 及 Windows Presentation Foundation (WPF) 之 REPL 中 IPython/Jupyter 的支援。 | N/A |
-| [豐富的編輯、 IntelliSense 及程式碼理解](editing-python-code-in-visual-studio.md) | 包含語法色彩標示、所有程式碼和程式庫的自動完成、[程式碼格式設定](formatting-python-code.md)、簽章說明、類別檢視、移至定義、尋找所有參考、程式碼片段、[重構](refactoring-python-code.md)、[PyLint](linting-python-code.md) 等。 | [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [互動式視窗](python-interactive-repl-in-visual-studio.md) | 提供 Python 的快速 REPL 體驗，可讓您輕鬆地醒目提示部分程式碼並將它傳送到 [Interactive Window (互動式視窗)]。 | N/A |
-| [功能完整的偵錯](debugging-python-in-visual-studio.md) | 可在使用或不使用 Visual Studio 專案的情況下進行偵錯，包括能夠針對現有的可執行檔進行偵錯、[進行 Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)、針對 Windows/Linux/Mac [在 Linux 上進行遠端偵錯](debugging-python-code-on-remote-linux-machines.md)、[在 Azure 上進行遠端偵錯](debugging-remote-python-code-on-azure.md)，以及在 [互動式視窗] 內進行偵錯。 | [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md) |
-| [具備完整報告的分析工具](profiling-python-code-in-visual-studio.md) | 探索您應用程式內時間的使用情況，包括可讓您比較不同分析執行回合間的效能。 | [分析工具](../profiling/profiling-tools.md) (並非所有 Visual Studio 分析功能都可供 Python 使用) |
-| [單元測試工具](unit-testing-python-in-visual-studio.md) | 在 Visual Studio [測試總管] 中探索、執行及管理測試，並輕鬆針對單元測試進行偵錯。 | [對程式碼進行單元測試](../test/unit-test-your-code.md) |
+## <a name="support-for-multiple-interpreters"></a>支援多重解譯器
 
-Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，此 SDK 可簡化從 Windows、Mac OS X 和 Linux 應用程式使用 Azure 服務。
+Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢視) 提供您一個單一位置來管理所有全域 Python 環境、Conda 環境及虛擬環境。 Visual Studio 會自動偵測標準位置中的 Python 安裝，並允許您設定自訂安裝。 針對每個環境，您可以輕鬆管理套件、開啟該環境的互動式視窗，以及存取環境資料夾。
+
+![[Python 環境] 視窗的展開檢視](media/environments-expanded-view.png)
+
+如需詳細資訊：
+
+- 影片 (2 分 35 秒)：[管理 Python 環境](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- 文件：[管理 Python 環境](managing-python-environments-in-visual-studio.md)
+- 文件：[Python 環境視窗參考](python-environments-window-tab-reference.md)
+
+## <a name="rich-editing-intellisense-and-code-comprehension"></a>豐富的編輯功能、IntelliSense 及程式碼理解
+
+Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、所有程式碼和程式庫的自動完成、程式碼格式設定、簽章說明、重構、類型提示及 Lint 處理 (下方顯示 Lint 處理)。 Visual Studio 也提供獨一無二的功能，例如類別檢視、[移至 定義]、[尋找所有參考] 及程式碼片段。 與[互動式視窗](#interactive-window)的整合可協助您快速開發已經儲存在檔案中的 Python 程式碼。
+
+![Visual Studio 中 Python 程式碼的程式碼完成](media/code-editing-completions-simple.png)
+
+如需詳細資訊：
+
+- 應面 (2 分 30 秒)：[編輯 Python 程式碼](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- 文件：[編輯 Python 程式碼](editing-python-code-in-visual-studio.md)
+- 文件：[程式碼格式設定](formatting-python-code.md)
+- 文件：[重構](refactoring-python-code.md)
+- 文件：[Lint 處理](linting-python-code.md)
+- 一般 Visual Studio 功能文件：[在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+
+## <a name="interactive-window"></a>互動式視窗
+
+針對 Visual Studio 已知的每個 Python 環境，您可以直接從 Visual Studio 內輕鬆開啟相同的 Python 解譯器互動式 (REPL) 環境，而無須使用個別的命令提示字元。 您也可以在環境之間輕鬆切換。
+
+![Visual Studio 中的 Python 互動式視窗](media/interactive-window.png)
+
+Visual Studio 也提供 Python 程式碼編輯器與互動式視窗之間的緊密整合。 **Ctrl+Enter** 鍵盤快速鍵可方便您將編輯器中目前的程式碼行 (或程式碼區塊) 傳送至互動式視窗，然後移至下一行 (或區塊)。 **Ctrl+Enter** 可讓您輕鬆逐步執行程式碼，而無須執行偵錯工具。 您也可以使用相同的按鍵將選取的程式碼傳送至互動式視窗，以及輕鬆地將程式碼從互動式視窗貼到編輯器中。 這些功能一起搭配可讓您在互動式視窗中發展出某個程式碼區段的詳細資料，然後在編輯器中輕鬆地將結果儲存在檔案中。
+
+Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 及 Windows Presentation Foundation (WPF)。
+
+如需詳細資訊：
+
+- 影片 (2 分 22 秒)：[Python 互動式視窗](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- 文件：[互動式視窗](python-interactive-repl-in-visual-studio.md)
+- 文件：[Visual Studio 中的 IPython](interactive-repl-ipython.md)
+
+## <a name="project-system-and-project-and-item-templates"></a>專案系統以及專案和項目範本
+
+Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 專案遠比資料夾結構複雜：它包括了解不同檔案的使用方式，以及它們之間的關聯性。 Visual Studio 可協助您區別應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等，這些會接著啟用檔案適當的功能。 此外，Visual Studio 方案還可協助您管理多個相關的專案，例如 Python 專案和 C++ 延伸模組專案。
+
+![同時包含 Python 和 C++ 專案的 Visual Studio 方案](media/projects-solution-explorer-two-projects.png)
+
+專案和項目範本可將設定不同類型專案和檔案的流程自動化，不僅可節省您寶貴的時間，還能讓您不必再管理錯綜複雜又容易出錯的細節。 Visual Studio 提供適用於 Web、Azure、資料科學、主控台及其他類型專案的範本，還提供適用於檔案的範本，例如 Python 類別、單元測試、Azure Web 設定、HTML 及甚至是 Django 應用程式。
+
+[![Visual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+
+如需詳細資訊：
+
+- 文件：[管理 Python 專案](managing-python-projects-in-visual-studio.md)
+- 文件：[Python 專案範本](managing-python-projects-in-visual-studio.md#project-templates)
+- 文件：[使用 C++ 和 Python](working-with-c-cpp-python-in-visual-studio.md)
+- 一般 Visual Studio 功能文件：[專案和項目範本](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- 一般 Visual Studio 功能文件：[Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+
+## <a name="full-featured-debugging"></a>功能完整的偵錯
+
+Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是針對 Python，Visual Studio 包括可進行 Python/C++ 混合模式偵錯、對 Linux 進行遠端偵錯、對 Azure 進行遠端偵錯、在「互動式視窗」內進行偵錯，以及對 Python 單元測試進行偵錯。
+
+![顯示例外狀況快顯的 Visual Studio Python 偵錯工具](media/debugging-exception-popup.png)
+
+如需詳細資訊：
+
+- 影片 (3 分 32 秒)：[對 Python 進行偵錯](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- 文件：[對 Python 進行偵錯](debugging-python-in-visual-studio.md)
+- 文件：[Python/C++ 混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- 文件：[對 Linux 進行遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
+- 文件：[對 Azure 進行遠端偵錯](debugging-remote-python-code-on-azure.md)
+- 一般 Visual Studio 功能文件：[Visual Studio 偵錯工具的功能導覽](../debugger/debugger-feature-tour.md)
+
+## <a name="profiling-tools-with-comprehensive-reporting"></a>具備完整報告功能的分析工具
+
+分析功能會探索您應用程式中的時間使用情況。 Visual Studio 支援使用 CPython 型解譯器來進行分析，並且包含了可比較不同分析執行回合之間效能的功能。
+
+[![Python 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png)
+
+如需詳細資訊：
+
+- 影片 (3 分 00 秒)：[分析 Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- 文件：[Python 分析工具](profiling-python-code-in-visual-studio.md)
+- 一般 Visual Studio 功能文件：[分析功能導覽](../profiling/profiling-feature-tour.md)。 (並非所有 Visual Studio 分析功能都可供 Python 使用)。
+
+## <a name="unit-testing-tools"></a>單元測試工具
+
+在 Visual Studio [測試總管] 中探索、執行及管理測試，並輕鬆針對單元測試進行偵錯。
+
+![在 Visual Studio 中進行 Python 單元測試偵錯](media/unit-test-debugging.png)
+
+如需詳細資訊：
+
+- 影片 (2 分 31 秒)：[測試 Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- 文件：[適用於 Python 的單元測試工具](unit-testing-python-in-visual-studio.md)
+- 一般 Visual Studio 功能文件：[對您的程式碼進行單元測試](../test/unit-test-your-code.md)。
+
+## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>發佈至 Azure 和適用於 Python 的 Azure SDK
+
+Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發佈至 Azure。 Visual Studio 包含適用於動態和靜態內容的必要 `web.config` 項目範本。 Python 工作負載也包含「適用於 Python 的 Azure SDK」，此 SDK 可簡化從 Windows、Mac OS X 及 Linux 應用程式使用 Azure 服務的流程。
+
+![在 Visual Studio 中將 Python 應用程式發佈至 Azure](media/azure-publish-dialog.png)
+
+如需詳細資訊：
+
+- 文件：[發佈至 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- 文件：[適用於 Python 的 Azure SDK](azure-sdk-for-python.md)
+
+## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy 上的 Python 訓練
 
 |   |   |
 |---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Visual Studio 中之 Python 簡介的影片系列 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (總長 22 分鐘)。 |
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱下列在 Microsoft Virtual Academy 上的影片：<ul><li>[使用 Python 設計程式的簡介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初學者：字串和函式](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基本概念：清單和迴圈](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[前幾大 Python 問題](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | <ul><li>[使用 Python 設計程式的簡介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初學者：字串和函式](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基本概念：清單和迴圈](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[前幾大 Python 問題](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>問與答
 
 **問：Visual Studio for Mac 提供 Python 支援嗎？**
 
-答： 目前未提供，但已在 [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac) 上要求。 [Visual Studio for Mac](/visualstudio/mac/) 文件可識別它確實支援的目前開發類型。 同時，Windows、Mac 和 Linux 上的 Visual Studio Code [透過可用的延伸模組與 Python 搭配運作良好](https://code.visualstudio.com/docs/languages/python)。
+答： 目前沒有提供，但您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac) 上對該要求投贊成票。 [Visual Studio for Mac](/visualstudio/mac/) 文件可識別它確實支援的目前開發類型。 同時，Windows、Mac 和 Linux 上的 Visual Studio Code [透過可用的延伸模組與 Python 搭配運作良好](https://code.visualstudio.com/docs/languages/python)。
 
 **問：建置 UI 時，我可以使用什麼功能來搭配 Python？**
 
@@ -74,7 +174,7 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 您可用下列版本的 Visual Studio 安裝 Python 功能，如[安裝指南](installing-python-support-in-visual-studio.md)所述：
 
 - [Visual Studio 2017 (所有版本)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (所有版本)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
+- [Visual Studio 2015 (所有版本)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web (Update 2 或更新版本)
 - Visual Studio 2013 Express for Desktop (Update 2 或更新版本)
@@ -87,7 +187,7 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 
 | Python 支援 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| 多重解譯器管理 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+| 管理多重解譯器 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | 自動偵測熱門的解譯器 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | 新增自訂解譯器 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | 虛擬環境 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -149,7 +249,7 @@ Python 工作負載也包含 [Azure SDK for Python](azure-sdk-for-python.md)，�
 | 部署至背景工作角色 | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | 在 Azure 模擬器中執行 | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | 遠端偵錯 | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
-| 伺服器總管附加 | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
+| 附加伺服器總管 | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
 <br/>
 
 | Django 範本 | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |

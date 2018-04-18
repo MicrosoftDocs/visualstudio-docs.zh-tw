@@ -1,21 +1,21 @@
 ---
-title: "顯示於 VLSC 中的個人電子郵件"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/23/2018
-Ms.topic: Get-Started-Article
-Description: "Visual Studio Subscriptions – Why Am I Seeing Hotmail or Gmail Addresses for My Subscribers?"
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2bfe2f39d432be5fc6ff7b24be2a218d02fce961
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 顯示於 VLSC 中的個人電子郵件
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/23/2018
+ms.topic: Get-Started-Article
+description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cfe035d82976e3df683f4e3a35bd9d7f3c8cf9e2
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？ 
+# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio 訂用帳戶 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？ 
 
 隨著公司從大量授權服務中心 (VLSC) 移轉至新的 Visual Studio [訂閱管理入口網站](https://manage.visualstudio.com)，系統管理員可能會對於部分訂閱者的「登入電子郵件地址」是顯示為第三方電子郵件地址 (例如 Hotmail、Gmail 或 Yahoo) 感到訝異。
 
@@ -25,10 +25,7 @@ ms.lasthandoff: 01/29/2018
 1. 系統管理員使用個別訂閱者的公司或學校電子郵件地址，將訂閱「指派」給他們。
 2. 該訂閱者「啟動」訂閱。
 
-在訂閱者啟動程序期間：
-1. 需要使用 Microsoft 帳戶 (MSA) 來登入。
-2. 若訂閱者沒有嘗試將其公司或學校帳戶 (例如 John@contoso.com) 轉換成 MSA，他們則可以建立新的 MSA 或使用現有的 MSA。
-3. 這導致其「登入電子郵件地址」和「指派電子郵件地址」有所不同。
+訂閱者啟用程序期間：需要 Microsoft 帳戶 (msA) 才能登入。 若訂閱者沒有嘗試將其公司或學校帳戶 (例如 John@contoso.com) 轉換成 MSA，他們則可以建立新的 MSA 或使用現有的 MSA。 這導致其「登入電子郵件地址」和「指派電子郵件地址」有所不同。
 
 > [!NOTE] 
 > [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上的新訂閱者體驗，同時支援公司/學校帳戶及 Microsoft 帳戶 (MSA) 身分識別類型。

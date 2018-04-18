@@ -1,19 +1,19 @@
 ---
-title: "登入 Visual Studio 訂用帳戶 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 登入 Visual Studio 訂用帳戶 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: 如何登入 Visual Studio 訂用帳戶
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>登入您的 Visual Studio 訂用帳戶
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 01/29/2018
    > [!NOTE]
    > 您也可以在您收到的訂閱者歡迎郵件中找到這個地址。 若找不到您的歡迎電子郵件，請檢查您的垃圾郵件資料夾。 
 
-3. 按一下 [繼續]。
+3. 按一下 [ **繼續**]。
 4. 系統會將您重新導向至公司登入頁面。
 5. 請輸入您的密碼。
 6. 按一下 [登入] 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/29/2018
    > [!NOTE]
    > 您也可以在訂閱者的歡迎郵件中找到這個地址。 如果沒有收到「歡迎郵件」，請檢查垃圾郵件資料夾
 
-3. 按一下 [繼續]。
+3. 按一下 [ **繼續**]。
 4. 系統會將您重新導向至決策頁面。
     - 如果您的訂閱已指派給與 Azure Active Directory (AAD) 租用戶建立關聯的「公司或學校」帳戶，請選取 [公司或學校帳戶]。
     - 如果您的訂閱與「公司」電子郵件地址建立關聯，但已經轉換成「個人」Microsoft 帳戶 (MSA)，請選取 [個人]。
