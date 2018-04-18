@@ -1,12 +1,10 @@
 ---
-title: "CA1023： 索引子不應該使用多維 |Microsoft 文件"
-ms.custom: 
+title: CA1023： 索引子不應該使用多維 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
 - CA1023
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1023
 - IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2a3cf9ecfc25fc14fafceb1f36d8a02756e739b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e6d729c6aae9f328af5268bd6e03cb56c40b1b54
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：不應該使用多維索引子
 |||  

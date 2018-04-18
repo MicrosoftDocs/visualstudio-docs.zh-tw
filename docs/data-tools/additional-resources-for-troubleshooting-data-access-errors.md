@@ -1,11 +1,8 @@
 ---
-title: "疑難排解資料的其他資源存取錯誤 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解資料的其他資源存取錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -223,18 +220,18 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 04d7d9922e15ae61709e21f3b220564c64ec6e08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用於疑難排解資料存取錯誤的其他資源
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出在 MSDN 上的資料相關論壇。  
@@ -262,5 +259,5 @@ ms.lasthandoff: 12/22/2017
   
  如需如何疑難排解 SQL Server 的連線資訊，請參閱[如何疑難排解連接到 SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkID=246151)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

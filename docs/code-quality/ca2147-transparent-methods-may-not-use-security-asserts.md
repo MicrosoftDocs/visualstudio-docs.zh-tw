@@ -1,12 +1,10 @@
 ---
-title: "CA2147： 透明方法不能使用安全性判斷提示 |Microsoft 文件"
-ms.custom: 
+title: CA2147： 透明方法不能使用安全性判斷提示 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SecurityTransparentCodeShouldNotAssert
 - CA2147
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - CA2128
 - SecurityTransparentCodeShouldNotAssert
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 75d841da0c738ff7504e95b372ecd4e06f9c77f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明的方法不可以使用安全性判斷提示
 |||  
@@ -64,5 +62,5 @@ ms.lasthandoff: 12/22/2017
   
  另一個選項是從程式碼移除判斷提示，並讓任何後續的檔案 I/O 的權限要求流程超出 SecurityTransparentMethod 給呼叫者。 這可讓安全性檢查。 在此情況下，沒有安全性稽核通常需要，因為權限要求會流動至呼叫端和 （或） 應用程式定義域。 裝載環境和程式碼來源的權限授與的安全性原則，透過密切控制的權限要求。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [安全性警告](../code-quality/security-warnings.md)

@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_scoped |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_scoped |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_scoped method
 ms.assetid: 588163f7-958e-4072-bf66-db5c5f07d3cb
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3447f828b15e8f755758ee309d148754ebba17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f2b94154ad5c12d8f9f6b94ecee220c1cc57aba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 擷取指定的使用者定義資料類型是否會出現在非全域的語彙範圍中的旗標。  
@@ -46,5 +42,5 @@ HRESULT get_scoped (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

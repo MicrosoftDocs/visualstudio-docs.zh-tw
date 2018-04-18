@@ -1,12 +1,10 @@
 ---
-title: "CA2201： 不要引發保留的例外狀況類型 |Microsoft 文件"
-ms.custom: 
+title: CA2201： 不要引發保留的例外狀況類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |參數描述|例外|  
 |---------------------------|---------------|  
-|`null`參考|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` 參考|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |允許範圍之外的值 （例如集合或清單的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |無效`enum`值|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |包含不符合方法的參數規格的格式 (例如的格式字串`ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |否則將會無效|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- 作業無效時的目前狀態的物件擲回<xref:System.InvalidOperationException?displayProperty=fullName>  
+ 作業無效時的目前狀態的物件擲回 <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- 已處置的物件上執行作業時擲回<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ 已處置的物件上執行作業時擲回 <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- 不支援的作業時 (例如在覆寫**Stream.Write**開啟來讀取資料流中) 會擲回<xref:System.NotSupportedException?displayProperty=fullName>  
+ 不支援的作業時 (例如在覆寫**Stream.Write**開啟來讀取資料流中) 會擲回 <xref:System.NotSupportedException?displayProperty=fullName>  
   
- 當轉換導致溢位 （例如在明確轉型運算子多載） 時擲回<xref:System.OverflowException?displayProperty=fullName>  
+ 當轉換導致溢位 （例如在明確轉型運算子多載） 時擲回 <xref:System.OverflowException?displayProperty=fullName>  
   
  對於所有其他情況下，請考慮建立您自己的類型衍生自<xref:System.Exception>，則會擲回。  
   

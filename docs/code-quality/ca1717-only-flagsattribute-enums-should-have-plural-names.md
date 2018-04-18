@@ -1,12 +1,10 @@
 ---
-title: "： 只有 FlagsAttribute 列舉 ca1717 應該使用複數名稱 |Microsoft 文件"
-ms.custom: 
+title: ： 只有 FlagsAttribute 列舉 ca1717 應該使用複數名稱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1717
 - OnlyFlagsEnumsShouldHavePluralNames
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OnlyFlagsEnumsShouldHavePluralNames
 - CA1717
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 203ee8af0f28f272ece784f086f7aeba7341dfc4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a6305ea0c7de06f5e81a0d4b673df03cb852819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
 |||  
@@ -56,6 +54,6 @@ ms.lasthandoff: 12/22/2017
   
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
  [列舉設計](/dotnet/standard/design-guidelines/enum)

@@ -1,12 +1,10 @@
 ---
-title: "CA2001： 避免呼叫有問題的方法 |Microsoft 文件"
-ms.custom: 
+title: CA2001： 避免呼叫有問題的方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2001
 - AvoidCallingProblematicMethods
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2001
 - AvoidCallingProblematicMethods
 ms.assetid: 19db8edb-31ce-441c-b0de-a0f2746155b7
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da5da213d400f846f634a98dbdbe919cedf03bcd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d26009b91e8459c6f17e717fae060d1f857e8fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001：避免呼叫有問題的方法
 |||  
@@ -55,5 +53,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  僅有問題的方法沒有其他替代可用時，您應該隱藏此規則的訊息。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [可靠性警告](../code-quality/reliability-warnings.md)

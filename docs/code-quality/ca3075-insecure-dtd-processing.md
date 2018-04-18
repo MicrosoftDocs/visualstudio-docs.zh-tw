@@ -1,23 +1,21 @@
 ---
-title: "CA3075： 不安全的 DTD 處理 |Microsoft 文件"
-ms.custom: 
+title: CA3075： 不安全的 DTD 處理 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b15c358c80a60b4ff91fd9c741fbddf2467ae8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 |||  
@@ -37,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 -   XML 中有設定 <xref:System.Xml.XmlNode.InnerXml%2A> 屬性。  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>屬性設定為 Parse。  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 屬性設定為 Parse。  
   
 -   使用 <xref:System.Xml.XmlResolver> 來處理未受信任的輸入，而不是 <xref:System.Xml.XmlSecureResolver> 。  
   
--   使用不安全的<xref:System.Xml.XmlReader.Create%2A> 執行個體或未使用任何執行個體，來叫用 XmlReader. <xref:System.Xml.XmlReaderSettings> 方法。  
+-   XmlReader。<xref:System.Xml.XmlReader.Create%2A> 方法會叫用不安全<xref:System.Xml.XmlReaderSettings>執行個體或所有執行個體。  
   
--   <xref:System.Xml.XmlReader>會透過不安全的預設值或值。  
+-   <xref:System.Xml.XmlReader> 會透過不安全的預設值或值。  
   
  上述每個案例皆會造成一樣的結果：如果內容是來自處理 XML 之電腦的檔案系統或網路共用，這些內容就會公開給攻擊者，而被用來當做 DoS 向量。  
   

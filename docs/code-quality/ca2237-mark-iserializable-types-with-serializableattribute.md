@@ -1,12 +1,10 @@
 ---
-title: "Ca2237： 必須以 SerializableAttribute 標記 ISerializable 類型 |Microsoft 文件"
-ms.custom: 
+title: Ca2237： 必須以 SerializableAttribute 標記 ISerializable 類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2237
 - MarkISerializableTypesWithSerializable
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - MarkISerializableTypesWithSerializable
 - CA2237
 ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75f16ce8a3158e9340c3215968f8df0170ab2c44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b9b4c0d05e972b4cf9a84677ccbc7d15d117c3f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237：必須以 SerializableAttribute 標記 ISerializable 類型
 |||  

@@ -1,12 +1,10 @@
 ---
-title: "CA1304： 指定 CultureInfo |Microsoft 文件"
-ms.custom: 
+title: CA1304： 指定 CultureInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - SpecifyCultureInfo
 - CA1304
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 932ac7e8f731974896991cea5ae504e452e9a036
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee1a90d2499cc0a22f695cdf0840bd1c9b50b941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304：指定 CultureInfo
 |||  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  它可以安全地隱藏此規則的警告，確定預設文化特性/格式提供者是正確的選擇，並在程式碼維護性不是重要的開發優先順序。  
   
 ## <a name="example"></a>範例  
- 在下列範例中，`BadMethod`會導致兩個違反此規則。 `GoodMethod`更正 System.String.Compare，來傳遞文化特性而異的第一個違規，而且藉由傳遞至目前的文化特性以修正第二個違規<xref:System.String.ToLower%2A>因為`string3`顯示給使用者。  
+ 在下列範例中，`BadMethod`會導致兩個違反此規則。 `GoodMethod` 更正 System.String.Compare，來傳遞文化特性而異的第一個違規，而且藉由傳遞至目前的文化特性以修正第二個違規<xref:System.String.ToLower%2A>因為`string3`顯示給使用者。  
   
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]  
   
@@ -78,5 +76,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1305：指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#Cultures)  

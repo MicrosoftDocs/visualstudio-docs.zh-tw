@@ -1,28 +1,26 @@
 ---
-title: "偵錯 HTML 和 CSS 程式碼範例 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 HTML 和 CSS 程式碼範例 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1fc92029910b49692e055f165cdf8b93d13e3a05
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4581e35e13849072aff355348c8dcdbd008a4f21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-html-and-css-sample-code"></a>偵錯 HTML 和 CSS 程式碼範例
   
@@ -104,5 +102,5 @@ ms.lasthandoff: 01/19/2018
 })();  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

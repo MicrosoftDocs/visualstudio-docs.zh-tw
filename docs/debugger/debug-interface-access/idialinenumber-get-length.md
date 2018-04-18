@@ -1,29 +1,25 @@
 ---
-title: "Idialinenumber:: Get_length |Microsoft 文件"
-ms.custom: 
+title: 'Idialinenumber:: Get_length |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLineNumber::get_length method
 ms.assetid: 2c55a6f7-4ef5-45fb-9fd1-d72deaaa2829
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2daf6f342f2e344dd11d02aef4da1344b3b84381
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14e338958020bc085dd725f39b30d5a99935ce53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 擷取在區塊中的位元組數目。  
@@ -46,5 +42,5 @@ HRESULT get_length (
 ## <a name="remarks"></a>備註  
  區塊長度的來源行程式碼所表示的[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,12 +1,10 @@
 ---
-title: "CA1500： 變數名稱不應符合欄位名稱 |Microsoft 文件"
-ms.custom: 
+title: CA1500： 變數名稱不應符合欄位名稱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - VariableNamesShouldNotMatchFieldNames
 - CA1500
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - VariableNamesShouldNotMatchFieldNames
 - CA1500
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b88d0fec56e16dfdb047aa06a5526526f362a7d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2dc3e217d0645d4acc5afaf416c40f2f16f81bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
 |||  

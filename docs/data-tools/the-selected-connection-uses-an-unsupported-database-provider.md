@@ -1,23 +1,20 @@
 ---
-title: "所選的連接使用不支援的資料庫提供者 |Microsoft 文件"
-ms.custom: 
+title: 所選的連接使用不支援的資料庫提供者 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: abd7ba49b3a9bb449f4f323deee588c3942d37a4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 199bd6ba18f9ac2e7eecbc13868c8c4bc8e829f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選取的連接使用不支援的資料提供者
 當您拖曳項目不使用 SQL server 的.NET Framework Data Provider 時，會出現此訊息**伺服器總管**/**資料庫總管**到[LINQ to SQLVisual Studio 中的工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。  

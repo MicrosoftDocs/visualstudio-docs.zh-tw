@@ -1,12 +1,10 @@
 ---
-title: "CA1307： 指定 StringComparison |Microsoft 文件"
-ms.custom: 
+title: CA1307： 指定 StringComparison |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1307
 - SpecifyStringComparison
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1307
 - SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7087cfe23f7911ec33891a70cd88cf47ee9e4a7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b8d51d55c1528af38c142c115165278503bc50fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307：指定 StringComparison
 |||  
@@ -47,6 +45,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  它可以安全地隱藏此規則的警告，當程式庫或應用程式適用於有限制的本機使用者，並因此不會當地語系化。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [全球化警告](../code-quality/globalization-warnings.md)   
  [CA1309：使用循序的 StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

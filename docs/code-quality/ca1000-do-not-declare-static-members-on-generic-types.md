@@ -1,12 +1,10 @@
 ---
-title: "CA1000： 不要在泛型類型上宣告靜態成員 |Microsoft 文件"
-ms.custom: 
+title: CA1000： 不要在泛型類型上宣告靜態成員 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1000
 - DoNotDeclareStaticMembersOnGenericTypes
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotDeclareStaticMembersOnGenericTypes
 - CA1000
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11bef403ffedee1a22ba615ee1744a7e93f8c1b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc48a0f00e772648bd24758844450d58d461f031
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000：不要在泛型類型上宣告靜態成員
 |||  
@@ -78,5 +76,5 @@ someObject.GenericMethod<int>();
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

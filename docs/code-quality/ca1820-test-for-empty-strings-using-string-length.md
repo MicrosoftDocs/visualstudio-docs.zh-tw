@@ -1,12 +1,10 @@
 ---
-title: "Ca1820： 應該測試空白字串時，使用字串長度 |Microsoft 文件"
-ms.custom: 
+title: Ca1820： 應該測試空白字串時，使用字串長度 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d044f09ca26b65506bcfb7466f59da73acfad1e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0b70f2579a7c5afb0baa24cf1c6ad9b33ec5a47d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820：應該使用字串長度測試空白字串
 |||  

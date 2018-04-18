@@ -1,12 +1,10 @@
 ---
-title: "CA2210： 組件應該具有有效的強式名稱 |Microsoft 文件"
-ms.custom: 
+title: CA2210： 組件應該具有有效的強式名稱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
 ms.assetid: 8ed33d1c-8ec6-4b47-a692-e22dc8693088
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 066c78158b688db8164a5ebf23dbe957c7c324ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6533ce94d6f73dab9b6b7f3a8a4bb0125accc00c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：組件應包含有效的強式名稱
 |||  
@@ -95,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  只有隱藏此規則的警告，如果組件的環境中使用其中竄改的內容不是問題。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>   
  <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>   
  [如何：使用強式名稱簽署組件](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   

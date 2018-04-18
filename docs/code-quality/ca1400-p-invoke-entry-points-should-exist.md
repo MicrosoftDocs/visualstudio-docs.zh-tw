@@ -1,12 +1,10 @@
 ---
-title: "CA1400: P Invoke 進入點應該要存在 |Microsoft 文件"
-ms.custom: 
+title: 'CA1400: P Invoke 進入點應該要存在 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1400
 - PInvokeEntryPointsShouldExist
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - PInvokeEntryPointsShouldExist
 - CA1400
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95e4b0841cfed5ae5ba2428a9a38da2ab43b8527
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 53e677308d5dcb5e89b410e4ab06a33a6c0caab4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400：P/Invoke 進入點應該要存在
 |||  
@@ -50,5 +48,5 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

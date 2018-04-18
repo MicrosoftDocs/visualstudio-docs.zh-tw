@@ -1,12 +1,10 @@
 ---
-title: "CA1030： 建議在適當時使用事件 |Microsoft 文件"
-ms.custom: 
+title: CA1030： 建議在適當時使用事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1030
 - UseEventsWhereAppropriate
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 616c79e67662407562f735f5cddd2c0bf2796797
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 644e8c32c3c827431d347966d8bbecdc13585c5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030：建議在適當時使用事件
 |||  

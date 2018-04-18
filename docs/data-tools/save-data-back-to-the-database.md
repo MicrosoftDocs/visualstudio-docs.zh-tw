@@ -1,11 +1,8 @@
 ---
-title: "將資料儲存回資料庫 |Microsoft 文件"
-ms.custom: 
+title: 將資料儲存回資料庫 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 資料集是記憶體中資料的複本。 如果您修改該資料時，它會是最好的作法是將這些變更儲存回資料庫。 您可以執行這三種方式之一：  
@@ -158,7 +155,7 @@ ms.lasthandoff: 12/22/2017
   
  您可以建立使用變更資料錄子集`GetChanges`資料資料表的方法 (<xref:System.Data.DataTable.GetChanges%2A>) 或資料集 (<xref:System.Data.DataSet.GetChanges%2A>) 本身。 如果您呼叫的方法資料表，它會傳回與已變更的記錄資料表的副本。 同樣地，如果您的資料集上呼叫方法，您就會取得已變更的記錄與新的資料集。  
   
- `GetChanges`單獨使用時傳回所有已變更的記錄。 相反地，藉由傳遞所需<xref:System.Data.DataRowState>當做參數`GetChanges`方法，您可以指定您想要變更資料錄的哪些子集： 新加入的記錄，記錄標示為刪除，卸離的記錄，或修改記錄。  
+ `GetChanges` 單獨使用時傳回所有已變更的記錄。 相反地，藉由傳遞所需<xref:System.Data.DataRowState>當做參數`GetChanges`方法，您可以指定您想要變更資料錄的哪些子集： 新加入的記錄，記錄標示為刪除，卸離的記錄，或修改記錄。  
   
  取得已變更的記錄的子集時，您想要的記錄傳送到另一個元件進行處理。 而不是傳送整個資料集，您可以減少取得元件所需的記錄與其他元件通訊額外的負荷。   
   

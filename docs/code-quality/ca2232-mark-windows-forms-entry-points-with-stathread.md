@@ -1,12 +1,10 @@
 ---
-title: "CA2232： 標記 Windows Form 進入點以 stathread 標記 |Microsoft 文件"
-ms.custom: 
+title: CA2232： 標記 Windows Form 進入點以 stathread 標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232：以 STAThread 標記 Windows Form 進入點
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  組件參考<xref:System.Windows.Forms>命名空間，而它的進入點不標記為<xref:System.STAThreadAttribute?displayProperty=fullName>屬性。  
   
 ## <a name="rule-description"></a>規則描述  
- <xref:System.STAThreadAttribute>表示的 COM 執行緒模型應用程式是單一執行緒 apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，應用程式會使用多執行緒的 apartment 模式，不支援的 Windows Form。  
+ <xref:System.STAThreadAttribute> 表示的 COM 執行緒模型應用程式是單一執行緒 apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 如果屬性不存在，應用程式會使用多執行緒的 apartment 模式，不支援的 Windows Form。  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]使用應用程式架構的專案不會將標示**Main**以 stathread 標記的方法。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]編譯器會自動運作。  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 使用應用程式架構的專案不會將標示**Main**以 stathread 標記的方法。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]編譯器會自動運作。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，加入<xref:System.STAThreadAttribute>屬性的進入點。 如果<xref:System.MTAThreadAttribute?displayProperty=fullName>屬性，則將它移除。  

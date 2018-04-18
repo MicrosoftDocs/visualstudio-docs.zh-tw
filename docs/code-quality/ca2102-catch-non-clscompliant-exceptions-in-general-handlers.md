@@ -1,30 +1,26 @@
 ---
-title: "CA2102： 在一般處理常式中攔截非 CLSCompliant 的例外狀況 |Microsoft 文件"
-ms.custom: 
+title: CA2102： 在一般處理常式中攔截非 CLSCompliant 的例外狀況 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
 helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cff8d36cd80a31cf05ca461730d51703afc106ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
 |||  
@@ -42,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
 -   C#: `catch {}`  
   
--   C + +:`catch(...) {}`或`catch(Object^) {}`  
+-   C + +:`catch(...) {}`或 `catch(Object^) {}`  
   
  在 catch 區塊中移除先前允許的使用權限時，未處理不符合 CLS 標準的例外狀況就會成為安全性問題。 由於不符合 CLS 標準的例外狀況並不會遭到攔截，惡意的方法會擲回不符合 CLS 標準的例外狀況無法執行提高權限。  
   
@@ -84,7 +80,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>相關的規則  
  [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [例外狀況和例外狀況處理](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe (IL 組譯工具)](/dotnet/framework/tools/ilasm-exe-il-assembler)   
  [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

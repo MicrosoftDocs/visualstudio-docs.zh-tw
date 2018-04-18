@@ -1,12 +1,10 @@
 ---
-title: "CA1802： 建議在適當時使用常值 |Microsoft 文件"
-ms.custom: 
+title: CA1802： 建議在適當時使用常值 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseLiteralsWhereAppropriate
 - CA1802
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseLiteralsWhereAppropriate
 - CA1802
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c2e7841091d3ad5ca093b35b62cca1fdbe6b6a69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f8bd2d28b7bc43c1bfa6ce941d7601b956d8f487
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802：建議在適當時使用常值
 |||  

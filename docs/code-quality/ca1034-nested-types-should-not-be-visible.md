@@ -1,12 +1,10 @@
 ---
-title: "CA1034： 巢狀的類型不應該為可見 |Microsoft 文件"
-ms.custom: 
+title: CA1034： 巢狀的類型不應該為可見 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - NestedTypesShouldNotBeVisible
 - CA1034
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - NestedTypesShouldNotBeVisible
 - CA1034
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dc35514eab2344c086305ec88435ff8a32285e4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: db5983dff8bf100c3215fd457f4dfbc5170c2d30
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034：巢狀類型不應為可見
 |||  

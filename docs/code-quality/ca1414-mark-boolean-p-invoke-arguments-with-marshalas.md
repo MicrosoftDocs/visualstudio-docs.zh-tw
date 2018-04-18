@@ -1,12 +1,10 @@
 ---
-title: "CA1414： 標記布林值的 P 叫用引數，以 MarshalAs |Microsoft 文件"
-ms.custom: 
+title: CA1414： 標記布林值的 P 叫用引數，以 MarshalAs |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 16e561e04444fba7200c00f299cc775978829100
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  平台叫用方法宣告中包含<xref:System.Boolean?displayProperty=fullName>參數或傳回值，但<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName>屬性不會套用至參數或傳回值。  
   
 ## <a name="rule-description"></a>規則描述  
- 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute>指定用於 managed 和 unmanaged 程式碼之間轉換資料類型的封送處理行為。 許多的簡單資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一表示法，而且不需要其封送處理行為的規格，則 common language runtime 會自動提供正確的行為。  
+ 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用於 managed 和 unmanaged 程式碼之間轉換資料類型的封送處理行為。 許多的簡單資料類型，例如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 unmanaged 程式碼中有單一表示法，而且不需要其封送處理行為的規格，則 common language runtime 會自動提供正確的行為。  
   
  <xref:System.Boolean>資料類型在 unmanaged 程式碼中有多種表示。 當<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，預設封送處理行為的<xref:System.Boolean>資料類型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 這是 32 位元整數，但不適合所有情況。 應該決定，對應到適當的布林值表示所需的 unmanaged 方法<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 類型，它一律是 4 個位元組。 UnmanagedType.U1 適用於 c + +`bool`或其他 1 個位元組類型。  
   
@@ -59,6 +57,6 @@ ms.lasthandoff: 12/22/2017
   
  [Ca2101： 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

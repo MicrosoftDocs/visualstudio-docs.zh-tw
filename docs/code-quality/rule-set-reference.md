@@ -7,14 +7,14 @@ helpviewer_keywords:
 - code analysis, rule sets reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f9a66cae477ada0a6167ef7ffd4a0df1c64feae
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 119054fbdf45d21317d5613355b024f125b97c6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 

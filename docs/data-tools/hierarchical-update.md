@@ -1,11 +1,8 @@
 ---
-title: "階層式更新 |Microsoft 文件"
-ms.custom: 
+title: 階層式更新 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>階層式更新
 *階層式更新*指儲存回資料庫的更新的資料 （從兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是提供資料庫中的條件約束來控制插入、 更新和刪除相關的記錄行為的一致性規則。 比方說，它會建立客戶記錄，才能允許該客戶的訂單建立強制執行參考完整性。  如需在資料集中的關聯性的詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)  
@@ -121,5 +118,5 @@ ms.lasthandoff: 12/22/2017
 |*tableName* `TableAdapter`屬性|代表`TableAdapter`。 產生`TableAdapterManager`屬性包含每個`TableAdapter`其所管理。 例如，與客戶和訂單資料表的資料集就會產生含有`TableAdapterManager`包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|  
 |`UpdateOrder` 屬性|控制個別 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設**InsertUpdateDelete**。 這表示它會插入，則會更新，然後刪除執行中的資料集的所有資料表。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

@@ -1,22 +1,21 @@
 ---
-title: "C + + 核心指導方針警告 |Microsoft 文件"
-ms.custom: 
+title: C + + 核心指導方針警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: ghogen
-ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.technology:
+- vs-ide-code-analysis
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1c7e5e9ee55785c1053a3d5c416529710b0b1c65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
@@ -152,14 +151,14 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
  您可以使用命令列選項，暫時停用所有的程式碼分析檔案，藉由指定`/analyze-`。 這會產生警告*D9025 覆寫 '/analyze' 與 ' /analyze-'*，這會提醒您，稍後重新啟用程式碼分析。
 
- ## <a name="corecheck_per_file"></a>啟用特定的專案檔案 c + + 核心指導方針檢查
+ ## <a name="corecheck_per_file"></a> 啟用特定的專案檔案 c + + 核心指導方針檢查
 有時可能會對已取得焦點的執行程式碼分析和仍然利用 Visual Studio IDE 很實用。 以下是範例案例可用於大型專案以儲存建置時間，並讓您更輕鬆地篩選結果。
 1.  在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
 2.  啟動 Visual Studio，從命令殼層繼承這些變數。
 3.  載入您的專案，並開啟其內容。
 4.  啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析擴充功能。
 5.  移至您想要使用 c + + 核心指導方針檢查分析，並開啟其內容的檔案。
-6.  選擇**C / C + + \Command 列選項**並加入`/analyze:plugin EspXEngine.dll`
+6.  選擇**C / C + + \Command 列選項**並加入 `/analyze:plugin EspXEngine.dll`
 7.  停用的先行編譯標頭 (**C / C + + 標頭 \Precompiled**)。 這是必要的因為擴充功能引擎可能會嘗試從先行編譯標頭讀取其內部的資訊，後者以編譯專案的預設選項，則將無法相容。
 8.  重建專案。 常見的 PREFast 檢查應該執行的所有檔案。 因為預設不啟用 c + + 核心指導方針檢查程式，它應該只執行上已設定為使用它的檔案。
 
@@ -205,22 +204,22 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 您必須設定幾個環境變數，並使用適當的命令列選項的編譯器。 最好是 「 Native Tools 命令提示字元 」 環境下工作，以便您不必來搜尋特定編譯器的路徑，包含目錄等。
 
 1.  **環境變數**
-  - `set esp.extensions=cppcorecheck.dll`這會告訴引擎載入 c + + 核心指導方針模組。
-  - `set esp.annotationbuildlevel=ignore`這會停用邏輯會處理 SAL 註釋。 註解不會影響程式碼分析，在 c + + 核心指導方針檢查程式，但其處理花費的時間 （有時候很多時間）。 選用但強烈建議使用此設定。
-  - `set caexcludepath=%include%`我們強烈建議您停用警告發生時引發標準標頭。 您可以加入更多的路徑，例如您的專案中的通用標頭的路徑。
+  - `set esp.extensions=cppcorecheck.dll` 這會告訴引擎載入 c + + 核心指導方針模組。
+  - `set esp.annotationbuildlevel=ignore` 這會停用邏輯會處理 SAL 註釋。 註解不會影響程式碼分析，在 c + + 核心指導方針檢查程式，但其處理花費的時間 （有時候很多時間）。 選用但強烈建議使用此設定。
+  - `set caexcludepath=%include%` 我們強烈建議您停用警告發生時引發標準標頭。 您可以加入更多的路徑，例如您的專案中的通用標頭的路徑。
 2.  **命令列選項**
-  - `/analyze`啟用程式碼分析 (分析 / 考慮也使用： 只和 /analyze: quiet)。
-  - `/analyze:plugin EspXEngine.dll`此選項會將程式碼分析擴充引擎載入 PREfast。 此引擎，接著載入 c + + 核心指導方針檢查程式。
+  - `/analyze`  啟用程式碼分析 (分析 / 考慮也使用： 只和 /analyze: quiet)。
+  - `/analyze:plugin EspXEngine.dll` 此選項會將程式碼分析擴充引擎載入 PREfast。 此引擎，接著載入 c + + 核心指導方針檢查程式。
 
 
 
 ## <a name="use-the-guideline-support-library"></a>使用指導方針支援程式庫  
- 導線支援程式庫被設計來協助您遵守核心。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`組參數與`span<T>`型別。 GSL 位於[http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或 「 參與 」。 您可以在找到專案[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)。
+ 導線支援程式庫被設計來協助您遵守核心。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`組參數與`span<T>`型別。 GSL 位於[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或 「 參與 」。 您可以在找到專案[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- ## <a name="vs2015_corecheck"></a>在 Visual Studio 2015 的專案中使用 c + + 核心檢查指導方針  
-  如果您使用 Visual Studio 2015，預設不會安裝 c + + 核心檢查的程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用 Visual Studio 2015 中的 c + + 核心檢查程式碼分析工具。 Microsoft 透過支援的 Visual Studio 2015 的專案使用 Nuget 封裝。 封裝名為 Microsoft.CppCoreCheck，且可在[http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此套件需要有至少安裝 Visual Studio 2015 Update 1。  
+ ## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 的專案中使用 c + + 核心檢查指導方針  
+  如果您使用 Visual Studio 2015，預設不會安裝 c + + 核心檢查的程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用 Visual Studio 2015 中的 c + + 核心檢查程式碼分析工具。 Microsoft 透過支援的 Visual Studio 2015 的專案使用 Nuget 封裝。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此套件需要有至少安裝 Visual Studio 2015 Update 1。  
   
- 套件也會安裝為相依性，僅限標頭導線支援程式庫 (GSL) 另一個封裝。 GSL 也會提供在 GitHub 上[https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)。  
+ 套件也會安裝為相依性，僅限標頭導線支援程式庫 (GSL) 另一個封裝。 GSL 也會提供在 GitHub 上[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。  
 
  由於載入程式碼分析規則的方式，您必須安裝 Microsoft.CppCoreCheck NuGet 封裝到您想要在 Visual Studio 2015 中檢查每個 c + + 專案。  
   

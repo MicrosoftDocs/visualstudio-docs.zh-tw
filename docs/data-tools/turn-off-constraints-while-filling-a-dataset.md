@@ -1,11 +1,8 @@
 ---
-title: "填入 dataset 時關閉條件約束 |Microsoft 文件"
-ms.custom: 
+title: 填入 dataset 時關閉條件約束 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: e32aecbe10c9c02fec62240977b3f4e3a3338791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入 dataset 時關閉條件約束
 如果資料集包含條件約束 （例如外部索引鍵條件約束），它們可以引發順序對資料集執行的作業相關的錯誤。 例如，載入之前載入的子記錄相關的父資料錄可能違反條件約束，而且會導致錯誤。 您載入子記錄，如條件約束檢查有相關的父記錄，並引發錯誤。  
@@ -52,6 +49,6 @@ ms.lasthandoff: 12/22/2017
   
 2.  在**屬性**視窗中，將<xref:System.Data.DataSet.EnforceConstraints%2A>屬性`false`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [資料集中的關聯性](../data-tools/relationships-in-datasets.md)

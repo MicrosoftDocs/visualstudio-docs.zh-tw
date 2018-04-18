@@ -1,12 +1,10 @@
 ---
-title: "CA2116: APTCA 方法應該只呼叫 APTCA 方法 |Microsoft 文件"
-ms.custom: 
+title: 'CA2116: APTCA 方法應該只呼叫 APTCA 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法應該只呼叫 APTCA 方法
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  當 APTCA 屬性完全受信任的組件，並且組件中不允許部分信任呼叫端的另一個組件中執行程式碼時，就可以 安全性弱點攻擊。 如果兩個方法`M1`和`M2`符合下列條件，惡意呼叫端可以使用此方法`M1`略過隱含完全信任的連結要求保護`M2`:  
   
--   `M1`具有 APTCA 屬性的完全信任組件中宣告的公用方法。  
+-   `M1` 具有 APTCA 屬性的完全信任組件中宣告的公用方法。  
   
--   `M1`呼叫的方法`M2`外`M1`的組件。  
+-   `M1` 呼叫的方法`M2`外`M1`的組件。  
   
 -   `M2`組件沒有 APTCA 屬性，因此，不應執行的身分或代表部分信任的呼叫端。  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA2117：APTCA 類型應該只擴充 APTCA 基底類型](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [從部分受信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
  [連結要求](/dotnet/framework/misc/link-demands)   

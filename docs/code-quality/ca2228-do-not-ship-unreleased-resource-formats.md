@@ -1,12 +1,10 @@
 ---
-title: "CA2228： 不要格式建置的資源 |Microsoft 文件"
-ms.custom: 
+title: CA2228： 不要格式建置的資源 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
 - CA2228
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2228
 - DoNotShipUnreleasedResourceFormats
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dcbd6627e17a4dfe179f485a2439aaf04c1a01ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b244dda388e5044b910259a4e92266671722e562
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228：不要使用尚未發行版本所支援的格式建置資源
 |||  

@@ -1,12 +1,10 @@
 ---
-title: "Ca2004： 必須移除 gc。KeepAlive |Microsoft 文件"
-ms.custom: 
+title: Ca2004： 必須移除 gc。KeepAlive |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - RemoveCallsToGCKeepAlive
 - CA2004
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - RemoveCallsToGCKeepAlive
 - CA2004
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dd6cc8b51ddd8f9e8813229cf66b9facb52e4668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d25c42202f7df2214295af4e3d1a448266cfa6cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004：必須移除對 GC.KeepAlive 的呼叫
 |||  

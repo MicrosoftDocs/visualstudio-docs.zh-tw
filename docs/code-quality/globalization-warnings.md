@@ -1,13 +1,10 @@
 ---
-title: "全球化警告 |Microsoft 文件"
-ms.custom: 
+title: 全球化警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.globalizationrules
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - globalization [Visual Studio], warnings
 - managed code analysis warnings, globalization warnings
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de7a644cd22a05ab10001a61bb91b5374211915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07f53a5d975b679d8431481f152b2655f097822d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支援全球化程式庫和應用程式。  

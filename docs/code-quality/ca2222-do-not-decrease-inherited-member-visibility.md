@@ -1,12 +1,10 @@
 ---
-title: "CA2222： 請勿降低繼承的成員的可視性 |Microsoft 文件"
-ms.custom: 
+title: CA2222： 請勿降低繼承的成員的可視性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotDecreaseInheritedMemberVisibility
 - CA2222
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotDecreaseInheritedMemberVisibility
 - CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac62bc901629e65d5104bede66046711dd879930
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: de96b199adf5b282f70207478e4d9ae38c4d00f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222：請勿降低繼承成員的可視性
 |||  

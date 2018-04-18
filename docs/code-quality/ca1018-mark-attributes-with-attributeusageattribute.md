@@ -1,12 +1,10 @@
 ---
-title: "CA1018： 以 AttributeUsageAttribute 標記屬性 |Microsoft 文件"
-ms.custom: 
+title: CA1018： 以 AttributeUsageAttribute 標記屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b94cb7c11c803e713609036db12c47e2027cb61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d40b97ee7637b5f742caee71b23cd9d384a1ecc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：以 AttributeUsageAttribute 標記屬性
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  您應該修正而不是訊息但不包括此規則的違規情形。 即使屬性繼承<xref:System.AttributeUsageAttribute>，屬性應該會出現以簡化程式碼維護。  
   
 ## <a name="example"></a>範例  
- 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute`不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`正確實作本節稍早描述之屬性。 請注意，屬性`DeveloperName`設計規則所需[ca1019 必須： 定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)和隨附的完整性。  
+ 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`正確實作本節稍早描述之屬性。 請注意，屬性`DeveloperName`設計規則所需[ca1019 必須： 定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)和隨附的完整性。  
   
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  
@@ -58,5 +56,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [屬性](/dotnet/standard/design-guidelines/attributes)

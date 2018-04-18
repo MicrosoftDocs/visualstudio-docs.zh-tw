@@ -1,24 +1,21 @@
 ---
-title: "計算在 Visual Studio 中的程式碼度量 |Microsoft 文件"
-ms.custom: 
+title: 計算在 Visual Studio 中的程式碼度量 |Microsoft 文件
+ms.custom: ''
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 1ff82bba5a3126d4904efb01dfd7fd9d1141684b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 

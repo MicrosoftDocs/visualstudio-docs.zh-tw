@@ -1,30 +1,26 @@
 ---
-title: "Ca2242： 必須正確測試 NaN |Microsoft 文件"
-ms.custom: 
+title: Ca2242： 必須正確測試 NaN |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - TestForNaNCorrectly
 - CA2242
 helpviewer_keywords:
 - CA2242
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b79c2d180bab62239dcace4bcf5b49195d339946
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a782c0b3f32c9733b47ded29852e006f8ba7c1aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242：必須正確測試 NaN
 |||  

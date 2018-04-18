@@ -1,12 +1,10 @@
 ---
-title: "CA1725： 參數名稱應該符合基底宣告 |Microsoft 文件"
-ms.custom: 
+title: CA1725： 參數名稱應該符合基底宣告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
 - CA1725
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1725
 - ParameterNamesShouldMatchBaseDeclaration
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0953e2c4f05e8ba01998893b2d790df832af3fef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d269d1f7bf373c9a0faedfe0f70b5192771fc4e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725：參數名稱應該符合基底宣告
 |||  

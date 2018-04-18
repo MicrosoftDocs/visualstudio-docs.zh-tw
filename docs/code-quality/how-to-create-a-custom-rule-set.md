@@ -9,14 +9,14 @@ helpviewer_keywords:
 - Development Edition, rule sets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a094b6c59eb4e1d95949dc35a5c0479edb4d5a76
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 57800f36c3a81e021c1fb40bab1c07bbed3e7f9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-rule-sets"></a>自訂規則集
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 04/06/2018
 
 若要建立自訂規則集，您可以開啟內建規則集**規則集編輯器**。 從該處，您可以新增或移除的特定規則，而且您可以變更違反規則時所發生的動作&mdash;比方說，顯示警告或錯誤。
 
-1. 在**方案總管 中**，以滑鼠右鍵按一下專案，然後選取**屬性**。
+1. 在**方案總管] 中**，以滑鼠右鍵按一下專案，然後選取**屬性**。
 
-2. 在**屬性**頁面，選取**程式碼分析** 索引標籤。
+2. 在**屬性**頁面，選取**程式碼分析**] 索引標籤。
 
 3. 在**執行此規則集**下拉式清單中，執行下列其中一項：
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/06/2018
 
 1. 選取**檔案** > **新增** > **檔案**，或按**Ctrl**+**N**.
 
-2. 在**新檔案**對話方塊中，選取**一般**在左側的類別目錄，然後選取 **程式碼分析規則集**。
+2. 在**新檔案**對話方塊中，選取**一般**在左側的類別目錄，然後選取 [**程式碼分析規則集**。
 
 3. 選取 [開啟] 。
 
@@ -52,9 +52,9 @@ ms.lasthandoff: 04/06/2018
 
 ### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>建立自訂規則集從多個規則集
 
-1. 在方案總管 中，以滑鼠右鍵按一下專案，然後選取**屬性**。
+1. 在方案總管] 中，以滑鼠右鍵按一下專案，然後選取**屬性**。
 
-2. 在**屬性**頁面，選取**程式碼分析** 索引標籤。
+2. 在**屬性**頁面，選取**程式碼分析**] 索引標籤。
 
 3. 選取**\<選擇多個規則的設定...>**從**執行此規則集**。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/06/2018
 
 ## <a name="name-and-description"></a>名稱和描述
 
-若要變更編輯器中開啟的規則集的顯示名稱，請開啟**屬性**視窗選取**檢視** > **屬性 視窗**功能表列上。 輸入中的顯示名稱**名稱**方塊。 您也可以輸入規則集的描述。
+若要變更編輯器中開啟的規則集的顯示名稱，請開啟**屬性**視窗選取**檢視** > **屬性] 視窗**功能表列上。 輸入中的顯示名稱**名稱**方塊。 您也可以輸入規則集的描述。
 
 ## <a name="next-steps"></a>後續步驟
 

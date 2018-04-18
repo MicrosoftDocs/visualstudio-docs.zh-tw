@@ -1,12 +1,10 @@
 ---
-title: "關於暫存器視窗 |Microsoft 文件"
-ms.custom: 
+title: 關於暫存器視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Registers window, about Registers window
 - debugging [Visual Studio], Registers window
 ms.assetid: ab354047-053e-4f94-8ac1-26e761442b6f
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 82d8c547885021d83e272bcd3ab1a5d560c73a39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 97f3ab95d44981c6fb0f002a7c756810c9d6b941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>關於 Visual Studio 中的暫存器視窗
 **註冊**視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。  
@@ -56,6 +54,6 @@ EAX = 003110D8
 ## <a name="register-groups"></a>暫存器群組  
  若要減少雜亂，**註冊**視窗會將暫存器組織成群組。 如果您以滑鼠右鍵按一下**註冊**視窗中，您會看到包含清單的群組，您可以顯示或隱藏您可視快顯功能表。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

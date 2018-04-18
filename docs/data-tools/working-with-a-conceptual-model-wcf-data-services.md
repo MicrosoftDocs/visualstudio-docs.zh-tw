@@ -1,27 +1,24 @@
 ---
-title: "使用概念模型 (WCF Data Services) |Microsoft 文件"
-ms.custom: 
+title: 使用概念模型 (WCF Data Services) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], querying a service
 - data [Visual Studio], LINQ to Entities
 - data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 86a7a4c253aa9bdd2d311d72f40e8b9374a37ff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: aef81f949d52c3aba9fadf3871fe1b6cd624d536
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services)
 當您使用的概念模型以描述在資料庫中的資料時，您可以查詢資料，透過您的物件，而不必將資料庫結構描述和物件模型之間來回轉譯。  
@@ -48,6 +45,6 @@ ms.lasthandoff: 12/22/2017
 |[如何：新增、修改和刪除實體](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|示範如何建立、 更新和刪除資料服務中的實體資料。|  
 |[如何：定義實體關聯性](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|示範如何建立或變更的資料服務中的關聯性。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
  [查詢資料服務](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

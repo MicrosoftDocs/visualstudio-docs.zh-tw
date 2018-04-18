@@ -1,12 +1,10 @@
 ---
-title: "Ca2236： 必須呼叫 ISerializable 類型上的基底類別方法 |Microsoft 文件"
-ms.custom: 
+title: Ca2236： 必須呼叫 ISerializable 類型上的基底類別方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2236
 - CallBaseClassMethodsOnISerializableTypes
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2236
 - CallBaseClassMethodsOnISerializableTypes
 ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c2e4db6ac698dba6a24bf0f485deb8b1d2e1488a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1679772ea95fbaf0a13a91572ad81f0b987a2e31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236：必須呼叫 ISerializable 類型上的基底類別方法
 |||  

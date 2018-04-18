@@ -1,12 +1,10 @@
 ---
-title: "Ca1900： 實值類型欄位應該為可移植 |Microsoft 文件"
-ms.custom: 
+title: Ca1900： 實值類型欄位應該為可移植 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ValueTypeFieldsShouldBePortable
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f023749c16a1c4fed36654036813007a83b21a72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 669f52b3255559dec2ac90eea90356c2bb886c9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900：實值類型欄位應該為可移植的
 |||  

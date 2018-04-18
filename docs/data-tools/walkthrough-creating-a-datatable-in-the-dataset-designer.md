@@ -1,11 +1,8 @@
 ---
-title: "逐步解說： 在 Dataset 設計工具建立 DataTable |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 Dataset 設計工具建立 DataTable |Microsoft 文件
+ms.custom: ''
 ms.date: 10/19/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - DataTable objects, creating
 - Dataset Designer, creating data tables
@@ -13,14 +10,15 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 7df2579f5556e0e35b4203c700ca3f96f46a7d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 535dc8a0cc992d83523f14f491adc5925bc1c05d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立 DataTable
 

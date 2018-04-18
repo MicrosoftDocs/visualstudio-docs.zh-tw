@@ -1,11 +1,8 @@
 ---
-title: "Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services |Microsoft 文件"
-ms.custom: 
+title: Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -34,26 +31,26 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e1e44eeff16277b21a530bf4c5debcb02de7633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]檢視方塊。 如需完整的文件，請參閱[WCF 資料服務 4.5](/dotnet/framework/data/wcf/index)。  
   
 ## <a name="what-is-wcf"></a>WCF 是什麼？  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]是一個整合的架構，建立安全、 可靠、 交易，以及可互通的分散式應用程式。 它會取代舊的處理序間通訊技術，例如 ASMX Web 服務、.NET 遠端處理、 企業服務 (DCOM) 及 MSMQ。 WCF 結合了統一的程式設計模式下的所有這些技術的功能。 這樣可簡化開發分散式應用程式的體驗。  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 是一個整合的架構，建立安全、 可靠、 交易，以及可互通的分散式應用程式。 它會取代舊的處理序間通訊技術，例如 ASMX Web 服務、.NET 遠端處理、 企業服務 (DCOM) 及 MSMQ。 WCF 結合了統一的程式設計模式下的所有這些技術的功能。 這樣可簡化開發分散式應用程式的體驗。  
   
 #### <a name="what-are-wcf-data-services"></a>WCF 資料服務有哪些？  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]是標準的開放式資料 (OData) 通訊協定的實作。  WCF 資料服務可讓您將表格式資料公開為一組 REST Api，可讓您傳回資料，例如使用標準 HTTP 動詞 GET、 POST、 PUT 或 DELETE。 在伺服器端，WCF Data Services 正在取代的[ASP.NET Web API](http://www.asp.net/web-api)建立新的 OData 服務。 WCF 資料服務用戶端程式庫將繼續使用.NET 應用程式，從 Visual Studio 中的 OData 服務的理想選擇 (**專案 &#124;加入服務參考**)。 如需詳細資訊，請參閱[WCF 資料服務 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 是標準的開放式資料 (OData) 通訊協定的實作。  WCF 資料服務可讓您將表格式資料公開為一組 REST Api，可讓您傳回資料，例如使用標準 HTTP 動詞 GET、 POST、 PUT 或 DELETE。 在伺服器端，WCF Data Services 正在取代的[ASP.NET Web API](http://www.asp.net/web-api)建立新的 OData 服務。 WCF 資料服務用戶端程式庫將繼續使用.NET 應用程式，從 Visual Studio 中的 OData 服務的理想選擇 (**專案&#124;加入服務參考**)。 如需詳細資訊，請參閱[WCF 資料服務 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。  
   
 ### <a name="wcf-programming-model"></a>WCF 程式設計模型  
  WCF 程式設計模型根據兩個實體之間的通訊： WCF 服務和 WCF 用戶端。 程式設計模型會封裝在<xref:System.ServiceModel>命名空間中的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
@@ -86,7 +83,7 @@ Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供可協助您建立 WCF 服務和 WCF 用戶端工具。 如需示範這些工具的逐步解說，請參閱[逐步解說： 在 Windows Form 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供可協助您建立 WCF 服務和 WCF 用戶端工具。 如需示範這些工具的逐步解說，請參閱[逐步解說： 在 Windows Form 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。  
   
 ### <a name="creating-and-testing-wcf-services"></a>建立及測試 WCF 服務  
  您可以使用 WCF[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]做為基礎，快速建立您自己的服務範本。 您可以接著使用 WCF 服務自動主機以及 WCF 測試用戶端偵錯及測試服務。 這些工具一起提供快速且方便偵錯和測試週期，以及排除在早期階段認可裝載模型的需求。  
@@ -113,7 +110,7 @@ Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!
  若要深入了解 WCF 測試用戶端，請參閱[WCF 測試用戶端 (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe)。  
   
 ### <a name="accessing-wcf-services-in-visual-studio"></a>存取 Visual Studio 中的 WCF 服務  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用新增的服務端點的工作**加入服務參考** 對話方塊。 所有必要的組態資訊會加入至 app.config 檔案。 大部分的情況下，您必須先執行所有是具現化服務才能使用它。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用新增的服務端點的工作**加入服務參考** 對話方塊。 所有必要的組態資訊會加入至 app.config 檔案。 大部分的情況下，您必須先執行所有是具現化服務才能使用它。  
   
  **加入服務參考** 對話方塊可讓您輸入服務的位址，或搜尋您的方案中定義的服務。 對話方塊是傳回服務與這些服務所提供的作業的清單。 它也可讓您定義將參照的服務程式碼中的命名空間。  
   
@@ -252,5 +249,5 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可以同步�
   
  <xref:System.Data.Services>  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

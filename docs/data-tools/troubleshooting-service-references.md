@@ -1,11 +1,8 @@
 ---
-title: "疑難排解服務參考 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解服務參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 827533f76f8807cca146b9ea0b7483cb8fb84caf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-service-references"></a>服務參考的疑難排解
 本主題列出常見的問題，當您正在使用時，可能會發生[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]或[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]參考[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -33,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="error-returning-data-from-a-service"></a>傳回從服務的資料時發生錯誤  
  當您傳回`DataSet`或`DataTable`從服務中，您可能會收到 「 已超過傳入訊息的大小上限配額 」 的例外狀況。 根據預設，`MaxReceivedMessageSize`某些繫結的屬性設定為相對較小的值來限制暴露於阻絕服務攻擊。 您可以增加此值，以避免這個例外狀況。 如需詳細資訊，請參閱<xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>。  
   
- 若要修正這個錯誤：  
+ 修正這個錯誤：  
   
 1.  在**方案總管 中**，按兩下 app.config 檔案，將它開啟。  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 12/22/2017
 ## <a name="cannot-find-a-service-in-my-solution"></a>在 我的方案中找不到服務  
  當您按一下**探索**按鈕**加入服務參考**對話方塊中，方案中的一個或多個 WCF 服務程式庫專案不會出現在 [服務] 清單中。 如果服務程式庫已加入至方案，但尚未編譯，這可能會發生。  
   
- 若要修正這個錯誤：  
+ 修正這個錯誤：  
   
 -   在**方案總管 中**，以滑鼠右鍵按一下 WCF 服務程式庫專案，然後按一下**建置**。  
   
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取服務時發生錯誤  
  當使用者存取的 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，則使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息: 「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭 'NTLM'。 」  
   
- 若要修正這個錯誤：  
+ 修正這個錯誤：  
   
 1.  在網站專案中，開啟**屬性**頁面。  
   
@@ -99,5 +96,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  按一下**確定**關閉**網際網路選項** 對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

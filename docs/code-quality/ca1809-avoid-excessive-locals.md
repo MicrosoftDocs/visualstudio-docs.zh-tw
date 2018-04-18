@@ -1,12 +1,10 @@
 ---
-title: "CA1809： 避免使用過多區域變數 |Microsoft 文件"
-ms.custom: 
+title: CA1809： 避免使用過多區域變數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1809
 - AvoidExcessiveLocals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AvoidExcessiveLocals
 - CA1809
 ms.assetid: 5c81ea43-cb49-448f-980f-a1dd9764043c
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a21f6f7b24151bc1696c409c940cf8e017f9569
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 63bdcf0ea8363e6deb16034011d0a4446594171f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809：避免使用過多區域變數
 |||  

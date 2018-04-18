@@ -1,12 +1,10 @@
 ---
-title: "Ca2118： 必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法 |Microsoft 文件"
-ms.custom: 
+title: Ca2118： 必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  公用或受保護的類型或成員具有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>屬性。  
   
 ## <a name="rule-description"></a>規則描述  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>執行使用 COM interop 或平台引動過程的 unmanaged 程式碼的成員，變更系統的預設安全性行為。 一般而言，系統會進行[資料與模型化](/dotnet/framework/data/index)unmanaged 程式碼權限。 此要求會在每次叫用的成員，執行階段，並且檢查權限的呼叫堆疊中每個呼叫端。 當屬性存在時，系統會進行[連結要求](/dotnet/framework/misc/link-demands)權限： 當呼叫端是 JIT 編譯時，會檢查立即呼叫者的權限。  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 執行使用 COM interop 或平台引動過程的 unmanaged 程式碼的成員，變更系統的預設安全性行為。 一般而言，系統會進行[資料與模型化](/dotnet/framework/data/index)unmanaged 程式碼權限。 此要求會在每次叫用的成員，執行階段，並且檢查權限的呼叫堆疊中每個呼叫端。 當屬性存在時，系統會進行[連結要求](/dotnet/framework/misc/link-demands)權限： 當呼叫端是 JIT 編譯時，會檢查立即呼叫者的權限。  
   
  這個屬性主要是用於增加效能，不過，效能提升會伴隨顯著的安全性風險。 如果您將屬性放在呼叫原生方法的公用成員上，呼叫端 （非直接呼叫端） 的呼叫堆疊中不需要執行 unmanaged 程式碼的 unmanaged 程式碼權限。 根據 public 成員的動作和輸入的處理，它可能會允許存取功能的一般限制為可信任的程式碼不受信任呼叫端。  
   
@@ -72,7 +70,7 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [資料與模型化](/dotnet/framework/data/index)  

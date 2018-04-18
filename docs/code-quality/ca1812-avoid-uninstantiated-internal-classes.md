@@ -1,12 +1,10 @@
 ---
-title: "CA1812： 避免使用未執行個體化的內部類別 |Microsoft 文件"
-ms.custom: 
+title: CA1812： 避免使用未執行個體化的內部類別 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AvoidUninstantiatedInternalClasses
 - CA1812
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 705abf4785676cf673ff8c4c26fa951dc72e8e6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 47ddd32dd590523fa4b3bfe4ab2d63951ccf503a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免使用未執行個體化的內部類別
 |||  

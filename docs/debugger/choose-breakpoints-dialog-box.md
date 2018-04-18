@@ -2,11 +2,8 @@
 title: 選擇中斷點對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - breakpoints, Choose Breakpoints dialog box
 - Choose Breakpoints dialog box
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2503109d7c044dbd44b1b400b748ef5ba2dcee41
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 71f0c0b7fef9c5d7fb85290eb166bd00fe7b3c4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[選擇中斷點] 對話方塊
 **選擇中斷點**對話方塊隨即開啟，當您嘗試從模稜兩可的輸入中設定中斷點**新增中斷點** 對話方塊。 模稜兩可的常見範例是輸入的多載函式名稱。  
@@ -46,5 +42,5 @@ ms.lasthandoff: 01/04/2018
  **無**  
  清除所有中斷點中所列**中斷點**方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用中斷點](../debugger/using-breakpoints.md)

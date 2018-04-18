@@ -1,11 +1,8 @@
 ---
-title: "將 WPF 控制項繫結至資料集 |Microsoft 文件"
-ms.custom: 
+title: 將 WPF 控制項繫結至資料集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 這些控制項會繫結至封裝於資料集中的產品記錄。 您也要加入按鈕，以瀏覽產品，並將變更儲存至產品記錄。  
@@ -183,11 +180,11 @@ ms.lasthandoff: 12/22/2017
 7.  在**屬性**視窗中，選取旁的核取方塊**IsReadOnly**屬性。  
   
 ## <a name="navigating-product-records"></a>巡覽產品記錄  
- 加入程式碼，可讓使用者捲動產品記錄的使用 **\<** 和 **>** 按鈕。  
+ 加入程式碼，可讓使用者捲動產品記錄的使用**\<**和**>**按鈕。  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>讓使用者巡覽產品記錄  
   
-1.  在設計師中，按兩下 **<** 視窗介面上的按鈕。  
+1.  在設計師中，按兩下**<**視窗介面上的按鈕。  
   
      Visual Studio 會開啟程式碼後置檔案，並建立新`backButton_Click`事件處理常式<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
   
@@ -201,7 +198,7 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  回到設計工具，然後按兩下 **>**   按鈕。  
+4.  回到設計工具，然後按兩下**>**  按鈕。  
   
 5.  將下列程式碼加入至 `nextButton_Click` 事件處理常式：  
   
@@ -236,7 +233,7 @@ ms.lasthandoff: 12/22/2017
   
     -   文字方塊會從具有相片的第一個產品記錄顯示資料。 此產品具有產品 ID 713，以及名稱**Long-sleeve Logo Jersey，S**。  
   
-    -   您可以按一下 **>** 或 **<** 按鈕，巡覽其他產品記錄。  
+    -   您可以按一下**>**或**<**按鈕，巡覽其他產品記錄。  
   
 2.  在其中一個產品記錄，變更**大小**值，然後按一下 **儲存變更**。  
   

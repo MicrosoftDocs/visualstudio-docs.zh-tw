@@ -1,13 +1,10 @@
 ---
-title: "COM 偵錯工具 |Microsoft 文件"
-ms.custom: 
+title: COM 偵錯工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - debugging [C++], COM
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73d6a3d8b5635a041a089eacc8e4abced71d020c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 本主題列出可幫助您進行測試和檢驗 COM 程式的工具。  
@@ -43,7 +39,7 @@ ms.lasthandoff: 12/22/2017
  MFC 範例  
  MFC ActiveX 範例 OCLIENT 和 SUPERPAD 也可以用來測試您的應用程式。 這些範例的完整原始程式碼都包含在內。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
  [COM 偵錯工具](../debugger/com-debugging-tools.md)  
  [Visual Studio 偵錯](../debugger/index.md)  

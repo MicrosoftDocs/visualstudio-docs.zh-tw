@@ -1,11 +1,8 @@
 ---
-title: "將驗證加入至 n-tier 資料集 |Microsoft 文件"
-ms.custom: 
+title: 將驗證加入至 n-tier 資料集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: addcbd4640acd86cc40097742dcdfd515308f256
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證加入至 n-tier 資料集
 將驗證加入至資料集分成多層式架構方案，基本上是相同的單一檔案的資料集 （單一專案中的資料集） 中加入驗證。 在資料上執行驗證的建議的位置是在<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。  
@@ -62,7 +59,7 @@ End Sub
 2.  按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。  
   
     > [!NOTE]
-    >  Dataset 設計工具不會自動建立 C# 事件的事件處理常式。 需要 C# 中處理事件的程式碼隨附於下一節。 `SampleColumnChangingEvent`建立並繫結多達<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。  
+    >  Dataset 設計工具不會自動建立 C# 事件的事件處理常式。 需要 C# 中處理事件的程式碼隨附於下一節。 `SampleColumnChangingEvent` 建立並繫結多達<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。  
   
 3.  加入程式碼可讓您確認`e.ProposedValue`包含符合您的應用程式需求的資料。 如果無法接受建議的值，表示它包含錯誤資料行的設定。  
   
@@ -168,7 +165,7 @@ End Sub
     }  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
  [逐步解說： 建立 N-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
