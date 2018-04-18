@@ -1,93 +1,94 @@
 ---
 title: 安裝 Xamarin for Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 04/13/2017
+ms.date: 03/30/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: asb3993
-ms.author: amburns
+author: charlespetzold
+ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 4dcd83ffb1076211f8d23aa4491f853d2b7d316f
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="setup-and-install"></a>設定和安裝
 
-若要建置 Xamarin 從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，您需要下列項目：
+若要使用 Xamarin 從通用 C#/.NET 程式碼基底建置原生的 iOS、Android 和 Windows 應用程式，您會需要以下硬體和軟體：
 
--   若要使用 Windows 和 Android 應用程式：一部已安裝 Visual Studio 2017 或 2015 和 Xamarin 的 Windows 開發電腦。 您也可以遵循[直接安裝 Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示使用 Visual Studio 2013。
+-   對於 Windows 和 Android 應用程式：已安裝 Visual Studio 2017 (含 Xamarin 開發功能) 的 Windows 開發電腦 (非虛擬機器)。  
 
--   若要使用 iOS 應用程式：具有 macOS Sierra 10.12 或更新版本的 Mac，並已安裝 XCode 和 Xamarin。
+-   對於 iOS 應用程式：已安裝 Xcode 的 macOS Sierra 10.12 或更新版本的 Mac，且已安裝 Visual Studio for Mac。
 
- 您可以同時設定 Windows 和 Mac 電腦，並在安裝程式執行期間瀏覽[了解 Xamarin 的行動裝置開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)，以閱讀並留意必要的背景資料。
+使用 Xamarin 平台不需要個別的授權。
+ 
+您可以同時設定 Windows 和 Mac 電腦，並在安裝程式執行期間瀏覽[了解 Xamarin 的行動裝置開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)，以閱讀並留意必要的背景資料。
 
-如果您在執行此設定和安裝之後遇到使用 Xamarin 的問題，請在 [forums.xamarin.com](http://forums.xamarin.com/) 上提出您的問題。
+如果您在執行此設定和安裝之後有使用 Xamarin 平台的問題，請在 [forums.xamarin.com](http://forums.xamarin.com/) \(英文\) 上張貼您的問題。
 
-> [!NOTE]
-> 截至 2016 年 3 月 31 日，所有 Visual Studio 版本中都會免費隨附所有的 Xamarin，不需要個別授權。 適用於 Mac 的 Xamarin Studio 社群也是對於學生、OSS 開發人員和小型團隊而言，也是一項免費資源。 請注意，如果您目前安裝的 Visual Studio 是以較早的 Xamarin 授權所設定，則您必須將 Xamarin 更新到版本 4.0.3.214 或更高版本。 若要執行此動作，移至 [工具] > [選項] > [Xamarin] > [其他]、按一下 [立即檢查] 連結，然後下載 4.0.3.214 更新。 當您重新啟動 Visual Studio 時，移至 [工具] > [Xamarin 帳戶...]，您應該會看到更新的狀態。
+<a name="prereq" /> 
 
-##  <a name="prereq"></a> 必要條件
+## <a name="pre-requisites"></a>必要條件
 
 ###  <a name="for-targeting-windows-and-android"></a>以 Windows 和 Android 為目標
 
-1.  建議︰執行 Windows 8 或更新版本的實體 Windows 電腦 (不是 VM)，以取得最佳的 Android 模擬器效能。 (我們是否曾提到您需要實體電腦，而不是 VM？)
+如需安裝 Visual Studio 2017 的詳細必要條件，請參閱 [Visual Studio 2017 產品系列系統需求](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)。
 
-2.  您可以使用 Windows 7 或舊版電腦，在此情況下，您將使用 Android 版的 Xamarin Player 作為模擬器。
-
-3. 不論是何種組態，您一律都能在連接的實體裝置上直接執行應用程式。
+在執行 Windows 10 且已安裝所有更新的實體 Windows 電腦 (非虛擬機器) 上安裝 Visual 2017。 
 
 ### <a name="for-targeting-ios"></a>以 iOS 為目標
 
-1.  具有 macOS Sierra 並執行 macOS 10.12 或更新版本 (需要 Xcode 8.3) 的已連網 Mac 或 Mac mini。
+在 Windows 電腦上，若要以 iOS 模擬器和裝置為目標，則也需要連上網路且執行 macOS 10.12 或更新版本的 Mac 或 Mac mini，以及 Xcode 8.3。 如需詳細必要條件，請參閱[設定與安裝 Visual Studio for Mac](/visualstudio/mac/installation.md)。
 
-2.  在 Windows (7+) 電腦上使用 Visual Studio 做為主要開發環境時，只有在編譯和偵錯 iOS 應用程式、連接到 iOS 模擬器或行動網卡，以及在 Visual Studio 中使用分鏡腳本設計工具來設計使用者介面時，才需要用到網路上的 Mac。 舊版 Mac 模型就能完全滿足這個次要角色。
+<a name="windows" /> 
 
-##  <a name="windows"></a> Windows 設定 (Visual Studio 和 Xamarin)
+##  <a name="windows-setup-visual-studio-and-xamarin"></a>Windows 設定 (Visual Studio 和 Xamarin)
 
-> [!TIP]
-> 這些指示適用於 Visual Studio 2017。 若為 Visual Studio 2015，請參閱 [MSDN](setup-and-install.md)。 若要使用 Xamarin 搭配 Visual Studio 2013 (必須有 Update 2)，請遵循[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示。
+如果您尚未安裝 Visual Studio 2017，請執行以下步驟：
 
-1.  [下載並啟動任何 Visual Studio 2017 版本的安裝程式](https://www.visualstudio.com/downloads/) (Community、Professional 或 Enterprise)。 Visual Studio 2017 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天，之後您必須購買授權。
+1.  [下載並啟動任何 Visual Studio 2017 版本的安裝程式](https://www.visualstudio.com/downloads/) (Community、Professional 或 Enterprise)。 Visual Studio 2017 Community 是免費的版本。 Professional 和 Enterprise 版本提供 30 天的試用期，過了之後就需要授權。
 
-    - 如已安裝 Visual Studio 2017，請從 [開始] 功能表執行 **Visual Studio 安裝程式**。
+2.  當 [正在安裝] 對話方塊出現時，請選取以下方塊：    
+
+    - [行動裝置與遊戲] > [使用 .NET 進行行動開發]。 此選項也會自動選取各種 Android 工具和軟體開發套件。 
+
+        ![選取 [遊戲與行動開發] 下的 [行動開發] 選項](../cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 設定 2")
+
+    - (選擇性) [Windows] > [通用 Windows 平台開發]。 
+
+如果您已安裝 Visual Studio 2017，但尚未安裝 Xamarin 平台，請執行以下步驟：
+
+1. 從 [開始] 功能表執行 [Visual Studio 安裝程式]。
 
 2.  在安裝程式中，按一下 [更多] 按鈕，然後選擇 [修改]：
 
     ![在 Visual Studio 安裝中選擇 [修改] 選項](../cross-platform/media/cross-plat-xamarin-setup-1a.png "跨平台 Xamarin 設定 1")
 
-3.  核取下列方塊：
+3.  當 [正在安裝] 對話方塊出現時，請選取 [行動裝置與遊戲] > [使用 .NET 進行行動開發]，以及 (選擇性) [Windows] > [通用 Windows 平台開發]。 [使用 .NET 進行行動開發] 選項也會更新任何現有的 Xamarin 安裝。
 
-    - [行動裝置與遊戲] > [使用 .NET 進行行動開發]。 這樣做也會自動選取 [常用工具及軟體開發套件] 下的各種 Android 工具。 此選項應該也會更新任何現有的 Xamarin 安裝。
+當安裝正在執行時，您可以繼續閱讀 Mac 設定指示，並詳閱[了解 Xamarin 的行動應用程式開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
 
-        ![選取 [遊戲與行動開發] 下的 [行動開發] 選項](../cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 設定 2")
+5.  一旦安裝完成後，請啟動 Visual Studio 並登入您的 Microsoft 帳戶 (如果出現提示)。 此帳戶和您用於 Windows 的帳戶相同。
 
-    - (選擇性) [Windows] > [通用 Windows 平台開發]。 這包括安裝模擬器映像的選項，需要較長的時間下載；您可以稍後隨時返回 Visual Studio 安裝程式以新增這些選項。
+6.  如需測試 Android 應用程式但沒有實體 Android 裝置，請使用 [Android SDK 模擬器](/xamarin/android/get-started/installation/android-emulator/)。 
 
-4.  按一下 [修改] 按鈕，允許處理序執行。 同樣地，這需要一些時間才能完成，在這段期間，您可以繼續進行 Mac 設定指示，並瀏覽[了解 Xamarin 的行動裝置開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
+<a name="mac" />
 
-5.  安裝完成之後，請啟動 Visual Studio，並在出現提示時，以您的 Microsoft 帳戶進行登入 (這是您用於 Windows 的相同帳戶)。
+##  <a name="mac-setup-apple-id-xcode-and-xamarin"></a>Mac 設定 (Apple ID、Xcode 和 Xamarin)
 
-6.  若要測試 Android 應用程式但沒有實體裝置，請使用 [Android SDK 模擬器](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)。 請參閱下列注意事項。
+1.  如果您還沒有 Apple 識別碼，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple 識別碼。 必須使用此 Apple ID 來安裝和登入 Xcode。
 
-> [!NOTE]
-> **Windows 電腦上的模擬器**：由於 CPU 一次只支援一種虛擬化技術，因此建議在開發電腦上只使用一種技術。 虛擬化技術主要有三種：Hyper-V (供 Android 版 Visual Studio 模擬器和 Windows Phone 模擬器使用)、Virtual Box (供 Genymotion 使用) 和 Intel HAXM (供 Android SDK 模擬器使用)。 由於 Hyper-V 和 Virtual Box 之間有各種問題，最好是在任何指定的電腦上只使用一種模擬器類型，因此上述建議在 Windows 8 (含) 以上版本的電腦上使用 Hyper-V，但在 Windows 7 (含) 以前版本上以及在 Mac 上執行 Windows 時，則使用 Intel HAXM 模擬器。
+2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) \(英文\) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) \(apple.com\) \(英文\) 中所述以新增您的 Apple ID。
 
-##  <a name="mac"></a> Mac 設定 (Apple ID、Xcode 和 Xamarin)
+3.  按照[設定與安裝 Visual Studio for Mac](/visualstudio/mac/installation.md) 中的指示下載並安裝 Visual Studio for Mac。
 
-1.  如果您還沒有 Apple 識別碼，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple 識別碼。 安裝及登入 Xcode 時需要這個 ID。
+4.  當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請遵循[連線到 Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 來使用 iOS 和 Mac。
 
-2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述，新增您的 Apple 識別碼。
-
-3.  遵循 [安裝和設定 Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) 上的指示，下載並安裝 Xamarin。
-
-4.  當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請遵循[連線到 Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。
-
-    請注意，這兩部電腦必須位於相同的區域網路中。
+兩部電腦必須位在相同的區域網路上。

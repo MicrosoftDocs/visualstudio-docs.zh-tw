@@ -1,25 +1,28 @@
 ---
-title: "在管理入口網站編輯訂用帳戶 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 在管理入口網站編輯訂用帳戶 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: 了解系統管理員如何編輯訂用帳戶指派。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 
+如果您是訂用帳戶管理員，就可以變更指派給組織內個人的訂用帳戶。  本文章討論您可以進行變更的類型，並提供必要的步驟。 
+
 ## <a name="making-changes-to-subscriber-information"></a>變更訂閱者資訊
 您可以編輯訂閱者資訊，以更正錯誤或更新資訊。 
-**請注意，編輯訂閱者的電子郵件地址即會重設任何現有的權益。**
+> [!NOTE]
+> 編輯訂閱者的電子郵件地址即會重設任何現有的權益。
 
 若要編輯訂閱者，請選取滑鼠停留在訂閱者電子郵件地址上時，旁邊出現的省略符號 (…)。 隨即顯示下拉式清單。  選取 [編輯] 修改訂閱者的詳細資料。 您也可以按兩下格線中的訂閱者資料列，開啟 [編輯] 視窗。
 
@@ -53,7 +56,7 @@ ms.lasthandoff: 01/29/2018
 
     ![編輯授權 - 大量編輯檔案上傳](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  上傳檔案後，您會看到通知，讓您知道作業已順利完成。 
+5.  上傳檔案後，您會看到通知，讓您知道作業已順利完成。 此時，您的編輯會反映在訂閱者資訊中。 
 
     ![編輯授權 - 大量編輯上傳完成](_img\edit-license\edit-license-bulk-upload-complete.png)
 

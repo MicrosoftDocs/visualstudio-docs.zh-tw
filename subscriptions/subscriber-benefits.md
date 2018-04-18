@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio 訂用帳戶 - 訂閱者權益"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Visual Studio 訂用帳戶 - 訂閱者權益
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
@@ -22,7 +22,7 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 權益分為三個類別：
 
 ## <a name="tools"></a>工具
-「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](/vs-ide-benefit)、[Visual Studio Team Services](/vs-vsts) 和 [Azure](/vs-azure) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
+「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](/vs-ide-benefit/)、[Visual Studio Team Services](/vs-vsts/) 和 [Azure](/vs-azure/) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
 
 ## <a name="professional-development"></a>專業開發
 為了協助您持續增強技能集，並跟上最新的技術，我們提供一些來自業界先驅的最佳線上訓練課程的存取權。 所提供絕佳內容的範例包括：

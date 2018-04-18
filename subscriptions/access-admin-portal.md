@@ -1,5 +1,5 @@
 ---
-title: "存取系統管理員入口網站 | Visual Studio Marketplace"
+title: 存取系統管理員入口網站 | Visual Studio Marketplace
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>存取 Visual Studio 訂用帳戶管理入口網站
 ## <a name="for-mpsa"></a>針對 MPSA
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="for-cloud-subscriptions"></a>針對雲端訂閱
 當您購買 Visual Studio 雲端訂閱時，即會自動將您設為這些訂閱的系統管理員。  如果您已購買這些產品，即可在 [https://manage.visualstudio.com](https://manage.visualstudio.com) 中進行管理。
 
-若要購買 Visual Studio 雲端訂閱，請前往 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions) 的 Visual Studio Marketplace。
+若要購買 Visual Studio 雲端訂用帳戶，請瀏覽 Visual Studio Marketplace，網址是 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions)。
 
 
 ## <a name="for-programs-subscriptions"></a>針對方案訂閱
