@@ -184,7 +184,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+-   [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
 
 -   [執行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)找出程式碼中的潛在問題。  
 
@@ -328,7 +328,7 @@ ms.lasthandoff: 04/16/2018
 
 -   使用 Code Map 工具列上的 [包含父代]  按鈕，關閉自動加入父項目。  
 
--   編輯 Code Map，直接移除您不需要的節點和連結。 變更對應不會影響基礎程式碼。 請參閱 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+-   編輯 Code Map，直接移除您不需要的節點和連結。 變更對應不會影響基礎程式碼。 請參閱 [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
 
  ![略過建置] 和 [包含父代按鈕](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
@@ -384,4 +384,4 @@ ms.lasthandoff: 04/16/2018
 
 -   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+-   [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
