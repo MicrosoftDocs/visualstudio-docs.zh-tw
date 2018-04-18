@@ -1,12 +1,10 @@
 ---
-title: "Ca2230： 必須使用 params 做為變數引數 |Microsoft 文件"
-ms.custom: 
+title: Ca2230： 必須使用 params 做為變數引數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseParamsForVariableArguments
 - CA2230
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2230
 - UseParamsForVariableArguments
 ms.assetid: bf98b733-4855-4110-9f16-eba5a9e79421
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3bd98c7dd1874617a8f6d6937c56c742a511f0de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b227f4eeb769f81a07a9a065df214722876a4b50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
 |||  
@@ -52,6 +50,6 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Reflection.CallingConventions?displayProperty=fullName>   
  [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

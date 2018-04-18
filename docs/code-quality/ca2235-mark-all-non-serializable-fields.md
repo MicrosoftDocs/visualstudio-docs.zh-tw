@@ -1,12 +1,10 @@
 ---
-title: "Ca2235： 必須標記所有不可序列化的欄位 |Microsoft 文件"
-ms.custom: 
+title: Ca2235： 必須標記所有不可序列化的欄位 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2235
 - MarkAllNonSerializableFields
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2235
 - MarkAllNonSerializableFields
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de8f0c035689edda0757ecffb027069aee83a65b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d08d13bd6bd42ab18c7c415391969b7a0e15943e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235：必須標記所有不可序列化的欄位
 |||  

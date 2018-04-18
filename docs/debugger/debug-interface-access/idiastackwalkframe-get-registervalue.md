@@ -2,28 +2,24 @@
 title: 'Idiastackwalkframe:: Get_registervalue |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkFrame::get_registerValue method
 ms.assetid: ca3c20a9-934a-4b2c-a7f6-7d06e8611ff2
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac07808a920ddbe3336fc3711e5379821fe47662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e0ee6868b09e3a6c90d80091c05d34ea32c7ca49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 擷取暫存器的值。  
@@ -47,6 +43,6 @@ HRESULT get_registerValue (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

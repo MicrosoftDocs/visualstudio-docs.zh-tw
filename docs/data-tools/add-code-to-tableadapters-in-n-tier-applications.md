@@ -1,11 +1,8 @@
 ---
-title: "在多層式架構應用程式中，加入至 Tableadapter 的程式碼 |Microsoft 文件"
-ms.custom: 
+title: 在多層式架構應用程式中，加入至 Tableadapter 的程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 54df2144511e847988c6f11212e9c9a4941d0b38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 52c732842f5a98bfb1c78a125830f730aeeb5321
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>在多層式架構應用程式中，加入至 Tableadapter 的程式碼
 您可以透過建立 tableadapter 的部分類別檔案，並加入程式碼擴充 TableAdapter 的功能 (而不是加入程式碼以*DatasetName*。DataSet.Designer 檔案）。 部分類別可讓分割為多個實體檔案的特定類別的程式碼。 如需詳細資訊，請參閱[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。  

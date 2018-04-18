@@ -1,12 +1,10 @@
 ---
-title: "CA1017： 標記以 ComVisibleAttribute 的組件 |Microsoft 文件"
-ms.custom: 
+title: CA1017： 標記以 ComVisibleAttribute 的組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1017
 - MarkAssembliesWithComVisible
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - MarkAssembliesWithComVisible
 - CA1017
 ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1cf713e2c177a24938c44c4577da88d8943e4fef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5aa835d06dc081445673bc3a92dff1184d329d51
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017：以 ComVisibleAttribute 標記組件
 |||  
@@ -52,6 +50,6 @@ ms.lasthandoff: 12/22/2017
  [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)   
  [限定互通的 .NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

@@ -1,27 +1,25 @@
 ---
-title: "UWP 應用程式的 Visual Studio 偵錯 |Microsoft 文件"
-ms.custom: 
+title: UWP 應用程式的 Visual Studio 偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: de37ef22b9b8ebe8dbcfde9abae4d2acaab2cc2d
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b178f66257082bc837e2dfa0835bab3d21a8071e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>偵錯 Visual Studio 中的通用 Windows 應用程式 (UWP)
 
@@ -35,5 +33,5 @@ Visual Studio 偵錯工具進行偵錯 UWP 應用程式提供完整的支援。
 |[對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)|偵錯已部署應用程式，本機和遠端。|
 |[UWP 應用程式的預先擷取內容](../debugger/prefetch-content-for-windows-store-apps.md)|分析 ContentPrefetcher 類別對 UWP 應用程式的影響。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用靜態程式碼分析來分析程式碼品質](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

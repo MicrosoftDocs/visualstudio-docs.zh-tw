@@ -1,29 +1,25 @@
 ---
-title: "Idiaenumframedata:: Framebyrva |Microsoft 文件"
-ms.custom: 
+title: 'Idiaenumframedata:: Framebyrva |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumFrameData::frameByRVA method
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbfadc19b1da36ce7e1fc261e48d0fe5d5ecf200
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: df14e29d1bd1af5589a91c42e309d8a7f6fc316a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 傳回框架依相對虛擬位址 (RVA)。  
@@ -47,6 +43,6 @@ HRESULT frameByRVA(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`。 傳回`S_FALSE`如果沒有畫面格的資料符合指定的位址。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

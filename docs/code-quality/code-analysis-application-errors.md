@@ -1,28 +1,26 @@
 ---
-title: "程式碼分析應用程式錯誤 |Microsoft 文件"
-ms.custom: 
+title: 程式碼分析應用程式錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7e1e0f504c9d813b2dbcacca1689475ec42aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6b6fc0566e4db7ed55f4fbf7abb379cbfe8720df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 此區段是由 managed 程式碼分析工具所產生的錯誤訊息的參考。 若要取得特定的錯誤訊息的說明，請輸入中的錯誤號碼**尋找**方塊中的索引。  

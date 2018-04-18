@@ -1,12 +1,10 @@
 ---
-title: "CA1405: COM 可見類型的基底類型應該是 COM 可見 |Microsoft 文件"
-ms.custom: 
+title: 'CA1405: COM 可見類型的基底類型應該是 COM 可見 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1405
 - ComVisibleTypeBaseTypesShouldBeComVisible
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1405
 - ComVisibleTypeBaseTypesShouldBeComVisible
 ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 86e12b30f27478ec8426dc152dbbfd784edad412
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f8c1216d66ee6cb9218949547dfd33a189593f14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405：COM 可見類型的基底類型應該是 COM 可見
 |||  
@@ -51,6 +49,6 @@ ms.lasthandoff: 12/22/2017
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>   
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

@@ -1,12 +1,10 @@
 ---
-title: "Ca2240： 必須實作 ISerializable 正確 |Microsoft 文件"
-ms.custom: 
+title: Ca2240： 必須實作 ISerializable 正確 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2240
 - ImplementISerializableCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2240
 - ImplementISerializableCorrectly
 ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b60f145d31b966ebdc05af975baf5c862cc76251
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d8ea8d7be9dd208dcafc7ad9d6f9890401d521d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240：必須正確實作 ISerializable
 |||  

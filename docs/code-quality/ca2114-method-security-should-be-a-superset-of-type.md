@@ -1,12 +1,10 @@
 ---
-title: "CA2114： 方法安全性應該是類型的超集 |Microsoft 文件"
-ms.custom: 
+title: CA2114： 方法安全性應該是類型的超集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MethodSecurityShouldBeASupersetOfType
 - CA2114
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2114
 - MethodSecurityShouldBeASupersetOfType
 ms.assetid: 663f7aa4-8be5-4bd5-be92-4e9444f07077
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3ff1a6be01b51f45b0ca5b5417ead2195d023bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a4924a6306b99fe2d2ead83442bca2ee1edb5219
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114：方法安全性應該是類型的超集
 |||  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
  **[所有的權限]個人資訊： 6/16/1964年 12:00:00 AM**  
 **[（型別所要求） 沒有的寫入權限]個人資訊： 6/16/1964年 12:00:00 AM**  
 **[（要求的方法） 沒有讀取權限]無法存取個人資訊： 要求失敗。**   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [連結要求](/dotnet/framework/misc/link-demands)   
  [資料與模型化](/dotnet/framework/data/index)

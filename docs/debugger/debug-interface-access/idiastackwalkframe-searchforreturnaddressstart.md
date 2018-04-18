@@ -1,29 +1,25 @@
 ---
-title: "Idiastackwalkframe:: Searchforreturnaddressstart |Microsoft 文件"
-ms.custom: 
+title: 'Idiastackwalkframe:: Searchforreturnaddressstart |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkFrame::searchForReturnAddressStart method
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf808f1ee5234fa3cedd7deb9989f7bc63b84dd4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2fdad02e2f0eb526ae90f8b623a25c5eaef9a5b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 搜尋指定的堆疊框架的回覆地址或接近指定的位址。  
@@ -51,6 +47,6 @@ HRESULT searchForReturnAddressStart (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

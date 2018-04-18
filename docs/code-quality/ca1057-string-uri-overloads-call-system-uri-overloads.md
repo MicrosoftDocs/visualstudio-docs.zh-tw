@@ -1,12 +1,10 @@
 ---
-title: "CA1057： 字串 URI 多載呼叫 System.Uri 多載 |Microsoft 文件"
-ms.custom: 
+title: CA1057： 字串 URI 多載呼叫 System.Uri 多載 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1057
 - StringUriOverloadsCallSystemUriOverloads
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - StringUriOverloadsCallSystemUriOverloads
 - CA1057
 ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: afc7f989cc8b1ff04e5b7b6207663365246b6626
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 18b38dab9ad7a2a3065b78a1d73bbadee2c28f28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057：字串 URI 多載呼叫 System.Uri 多載
 |||  

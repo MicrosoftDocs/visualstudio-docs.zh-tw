@@ -1,12 +1,10 @@
 ---
-title: "CA1020： 避免在命名空間與一些類型，|Microsoft 文件"
-ms.custom: 
+title: CA1020： 避免在命名空間與一些類型，|Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1020
 - AvoidNamespacesWithFewTypes
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1020
 - AvoidNamespacesWithFewTypes
 ms.assetid: 9cb272f6-a3ff-45af-b35d-70dea620b074
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ae5f1693fc00bca0068d66c20e64655b5f7ea106
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a90f43735092591ad019fd2a46569e9302cf0c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020：避免在命名空間中包含過少的類型
 |||  

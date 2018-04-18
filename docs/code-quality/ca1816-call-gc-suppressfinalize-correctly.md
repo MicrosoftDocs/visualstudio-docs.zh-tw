@@ -1,12 +1,10 @@
 ---
-title: "CA1816： 呼叫 GC。SuppressFinalize 正確 |Microsoft 文件"
-ms.custom: 
+title: CA1816： 呼叫 GC。SuppressFinalize 正確 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正確呼叫 GC.SuppressFinalize
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   方法會呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>並傳遞非 this (Me 在 Visual Basic 中)。  
   
 ## <a name="rule-description"></a>規則描述  
- <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可讓使用者在任何時間變得可用的記憶體回收的物件之前釋出資源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼叫方法時，它會釋出物件的資源。 這使得最終處理不需要。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>讓記憶體回收行程不會呼叫物件的完成項。  
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可讓使用者在任何時間變得可用的記憶體回收的物件之前釋出資源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼叫方法時，它會釋出物件的資源。 這使得最終處理不需要。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>讓記憶體回收行程不會呼叫物件的完成項。  
   
  若要防止具有完成項的衍生的類型不必重新實作<xref:System.IDisposable>並呼叫它，而不完成項的非密封的類型仍應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。  
   
@@ -75,5 +73,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA2216：可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

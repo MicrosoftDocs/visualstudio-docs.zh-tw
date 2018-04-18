@@ -1,12 +1,10 @@
 ---
-title: "偵錯 64 位元應用程式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 64 位元應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], 64-bit
 - 64-bit debugging
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
-caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5c3840cc7d43c3e30dda0317674ffb8cd664a262
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0b90658a5ab54c936dfabd84878e0567508c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
 -   您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 如需回報問題的資訊，請參閱 [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [為 64 位元設定程式](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)   

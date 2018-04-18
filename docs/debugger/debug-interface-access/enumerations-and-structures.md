@@ -2,12 +2,9 @@
 title: 列舉和結構 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - structures [DIA SDK]
 - DIA SDK, structures
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7b4d4a42c15398b1817c06ec0193aef16e865b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de739d715b57a70007a84a798b8a8e659f59488f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 這些是列舉型別和結構 DIA SDK 使用。  
@@ -87,5 +83,5 @@ ms.lasthandoff: 12/22/2017
  [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  指定常數，DIA SDK 中提供。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

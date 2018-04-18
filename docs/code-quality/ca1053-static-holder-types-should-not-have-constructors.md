@@ -1,12 +1,10 @@
 ---
-title: "CA1053： 靜態預留位置類型不應該有建構函式 |Microsoft 文件"
-ms.custom: 
+title: CA1053： 靜態預留位置類型不應該有建構函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 - CA1053
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1053
 - StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d482c715e3f93df5fb26f0c88c6b0665b3dee506
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a0a17b60cd88170a1df2ace72b8a4ee5206fe6d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053：靜態預留位置類型不應包含建構函式
 |||  

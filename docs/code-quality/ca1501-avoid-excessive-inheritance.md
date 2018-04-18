@@ -1,12 +1,10 @@
 ---
-title: "CA1501： 避免過度繼承 |Microsoft 文件"
-ms.custom: 
+title: CA1501： 避免過度繼承 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1501
 - AvoidExcessiveInheritance
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AvoidExcessiveInheritance
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 05d54c668ee6e21932d766272044bd3a7e0aa0e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b0f91c762a283f53970e600ff081ffa5e7b74298
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501：避免過度繼承
 |||  

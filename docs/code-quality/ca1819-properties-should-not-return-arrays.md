@@ -1,12 +1,10 @@
 ---
-title: "CA1819： 屬性不可以傳回陣列 |Microsoft 文件"
-ms.custom: 
+title: CA1819： 屬性不可以傳回陣列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PropertiesShouldNotReturnArrays
 - CA1819
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - PropertiesShouldNotReturnArrays
 - CA1819
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cc11a71b9f6a68db2d795694af0326561b235f8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a80f70c8aa61a404597de512e7cbee2da959b166
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819：屬性不應傳回陣列
 |||  

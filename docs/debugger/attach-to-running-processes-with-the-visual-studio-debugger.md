@@ -1,12 +1,10 @@
 ---
-title: "附加至執行中處理程序與 Visual Studio 中偵錯工具 |Microsoft 文件"
+title: 附加至執行中處理程序與 Visual Studio 中偵錯工具 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
 - vs.debug.process
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], attaching to processes
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
-caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 處理序執行之後，請按一下**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**) 若要開啟**附加至處理序** 對話方塊。
@@ -46,7 +44,7 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 不確定是否需要使用**附加至處理序**偵錯情節？ 請參閱[常見偵錯情節](#BKMK_Scenarios)。 如果您想要偵錯 ASP.NET 應用程式已部署至 IIS，請參閱[遠端 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a>附加至本機電腦上執行的處理序  
+##  <a name="BKMK_Attach_to_a_running_process"></a> 附加至本機電腦上執行的處理序  
  為了附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯情節](#BKMK_Scenarios)幾個一般程序名稱)。
   
 1.  在 Visual Studio 中，選取**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**)。
@@ -71,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  按一下 [附加] 。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加至遠端電腦上的處理序  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理序  
  為了附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯情節](#BKMK_Scenarios)幾個一般程序名稱)。 如需更完整的已部署至 IIS 的 ASP.NET 應用程式的詳細指引，請參閱[遠端 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 若為其他應用程式，您或許可在 [工作管理員] 中找到處理序名稱。
   
  使用 [附加至處理序]  對話方塊時，您可以選取已針對遠端偵錯設定的其他電腦。 如需詳細資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。 當您選取了遠端電腦時，您可以檢視該電腦上正在執行的可使用處理序清單，並附加至其中一個或多個處理序進行偵錯。
@@ -112,7 +110,7 @@ ms.lasthandoff: 01/10/2018
      
 5.  按一下 [附加] 。
 
-## <a name="BKMK_reattach"></a>重新附加至處理程序
+## <a name="BKMK_reattach"></a> 重新附加至處理程序
 
 您可以快速地重新附加至您先前選擇附加至處理程序**偵錯 > 重新附加至處理序...**(**Shift + Alt + P**)。 當您選擇此命令時，偵錯工具將會立即嘗試附加到最後一個處理程序，您附加至使用**附加至處理序** 對話方塊。
 
@@ -129,7 +127,7 @@ ms.lasthandoff: 01/10/2018
   
 在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序]  清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序]  清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，來解決這個問題。 如果這些解決方法都沒有效，第三個方法就是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId* 以連結至流程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](http://go.microsoft.com/fwlink/?LinkId=168279)來下載並安裝 Debugging Tools for Windows。
 
-## <a name="BKMK_Scenarios"></a>常見的偵錯案例
+## <a name="BKMK_Scenarios"></a> 常見的偵錯案例
 
 若要可協助您找出您需要使用**附加至處理序**和附加什麼程序如下所示為一些常見的偵錯案例 （清單未全部列出）。 中可用的詳細指示，我們會提供連結。
 
@@ -160,7 +158,7 @@ ms.lasthandoff: 01/10/2018
 
 在本機偵錯案例，您可以偵錯 Visual Studio 中而無法存取來源如果與應用程式沒有正確的符號檔 （根據預設，這需要偵錯組建）。 如需詳細資訊，請參閱[指定符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>疑難排解附加錯誤  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> 疑難排解附加錯誤  
  當偵錯工具附加至執行中的處理序時，該處理序可以包含一種或多種程式碼類型。 偵錯工具可附加的程式碼類型會在 [選取程式碼類型]  對話方塊中顯示並供您選取。  
   
  有時候，偵錯工具可以成功附加至一種程式碼類型，而無法附加至另一種程式碼類型。 如果您嘗試附加至遠端電腦上正在執行的處理序，可能會發生這種狀況。 遠端電腦可能為某些程式碼類型安裝了遠端偵錯元件，但沒有安裝其他程式碼類型的遠端偵錯元件。 如果您嘗試附加至兩個或多個處理序以進行直接的資料庫偵錯，也可能會發生這種狀況。 (SQL 偵錯僅支援附加至單一處理序)。  
@@ -189,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
      這時，該附加將完全失敗，您將取得特定的錯誤訊息。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多個處理序](../debugger/debug-multiple-processes.md)   
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

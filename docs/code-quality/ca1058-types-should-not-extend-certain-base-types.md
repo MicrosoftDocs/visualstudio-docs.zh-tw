@@ -1,12 +1,10 @@
 ---
-title: "CA1058： 類型不應該擴充特定基底類型 |Microsoft 文件"
-ms.custom: 
+title: CA1058： 類型不應該擴充特定基底類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 - CA1058
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1058
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c042c854e535f764fe4e0eac01a0e66aa5b49f20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 70d7ec2767542db8e38d60198b5f00554897e4ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
 |||  

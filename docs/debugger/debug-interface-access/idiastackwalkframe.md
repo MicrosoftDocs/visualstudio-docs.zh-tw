@@ -1,29 +1,25 @@
 ---
-title: "IDiaStackWalkFrame |Microsoft 文件"
-ms.custom: 
+title: IDiaStackWalkFrame |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkFrame interface
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb683afe63880af9d1a666436739140519f7339b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e532323923aaa3c50e00fc685fb39eaf8bfed80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 會維護的引動過程之間的堆疊內容[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。  
@@ -58,6 +54,6 @@ IDiaStackWalkFrame : IUnknown
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

@@ -2,26 +2,22 @@
 title: CA2138： 透明方法不可以呼叫方法，使用 SuppressUnmanagedCodeSecurity 屬性 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2138
 ms.assetid: a14c4d32-f079-4f3a-956c-a1657cde0f66
-caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cef17ce232582cd23f961850bd52c048479e849
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd12cf43425c863b72c7a77b8ccd8884c0ad7d2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138：透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法
 |||  

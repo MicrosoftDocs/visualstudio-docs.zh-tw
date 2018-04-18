@@ -1,12 +1,10 @@
 ---
-title: "Ca2238： 請正確實作序列化方法 |Microsoft 文件"
-ms.custom: 
+title: Ca2238： 請正確實作序列化方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
 ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e3fa59585a5233bbebde7df0d074d303285c616
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 615d465ad6e8846c1960c45b0a60e99f5a7f9bfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：請正確實作序列化方法
 |||  

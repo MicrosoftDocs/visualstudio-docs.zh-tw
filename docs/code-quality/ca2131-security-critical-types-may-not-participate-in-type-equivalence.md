@@ -2,26 +2,22 @@
 title: CA2131： 安全性關鍵類型可能未參與類型等價 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
-caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1ba8aa4584d0d0505c7916d05e7c9bd6f446da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 551c0bd73abb2d42f2673dfcc57153b957bcbcbc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131：安全性關鍵類型可能未參與類型等價
 |||  
@@ -48,5 +44,5 @@ ms.lasthandoff: 12/22/2017
   
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [安全性透明的程式碼，層級 2](/dotnet/framework/misc/security-transparent-code-level-2)

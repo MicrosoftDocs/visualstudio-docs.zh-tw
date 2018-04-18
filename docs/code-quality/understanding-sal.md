@@ -1,23 +1,21 @@
 ---
-title: "了解 SAL |Microsoft 文件"
-ms.custom: 
+title: 了解 SAL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋可讓您描述函式如何使用它的參數、 建立與其，相關的假設和完成時，它可保證。 標頭檔中定義的註解`<sal.h>`。 C + + 的 visual Studio 程式碼分析會使用 SAL 註釋，來修改其分析的函式。 用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。  
@@ -47,7 +45,7 @@ void * memcpy(
   
  文件包含的資訊，建議您的程式碼必須維護特定的屬性，以確保程式的正確性的位元數：  
   
--   `memcpy`複製`count`從來源緩衝區到目的緩衝區的位元組。  
+-   `memcpy` 複製`count`從來源緩衝區到目的緩衝區的位元組。  
   
 -   目的緩衝區必須至少與來源緩衝區一樣大。  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   呼叫端必須提供緩衝區，並將它初始化。  
   
--   `_In_`指定 「 唯讀 」。 常見的錯誤，將套用`_In_`參數應該具有`_Inout_`註解改為。  
+-   `_In_` 指定 「 唯讀 」。 常見的錯誤，將套用`_In_`參數應該具有`_Inout_`註解改為。  
   
--   `_In_`但會忽略非指標純量上的分析器所允許的。  
+-   `_In_` 但會忽略非指標純量上的分析器所允許的。  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  如果您使用 Visual Studio 程式碼分析，在此範例中，它會驗證呼叫端傳遞初始化緩衝區的非 Null 指標`pInt`。 在此情況下，`pInt`指標不能是 NULL。  
   
 ### <a name="example-the-inopt-annotation"></a>範例： _In_opt\_註釋  
- `_In_opt_`等同於`_In_`，但輸入的參數可為 NULL，因此，此函式應該檢查此。  
+ `_In_opt_` 等同於`_In_`，但輸入的參數可為 NULL，因此，此函式應該檢查此。  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Visual Studio 程式碼分析會驗證它存取緩衝區之前的函式將會檢查為 NULL。  
   
 ### <a name="example-the-out-annotation"></a>範例： _Out\_註釋  
- `_Out_`支援常見的案例中傳入的項目緩衝區所指向的非 NULL 指標和函式會初始化項目。 呼叫端沒有呼叫; 之前將緩衝區初始化若要將它初始化，再傳回承諾呼叫的函式。  
+ `_Out_` 支援常見的案例中傳入的項目緩衝區所指向的非 NULL 指標和函式會初始化項目。 呼叫端沒有呼叫; 之前將緩衝區初始化若要將它初始化，再傳回承諾呼叫的函式。  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Visual Studio 程式碼分析工具會驗證呼叫端會將非 NULL 指標傳遞來的緩衝區`pInt`，再傳回，緩衝區由函式來初始化。  
   
 ### <a name="example-the-outopt-annotation"></a>範例： _Out_opt\_註釋  
- `_Out_opt_`等同於`_Out_`，只不過參數可為 NULL，因此，此函式應該檢查此。  
+ `_Out_opt_` 等同於`_Out_`，只不過參數可為 NULL，因此，此函式應該檢查此。  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Visual Studio 程式碼分析會驗證這個函數會檢查之前的 null`pInt`已取值，而且如果`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
 ### <a name="example-the-inout-annotation"></a>範例： _Inout\_註釋  
- `_Inout_`用來標註函式可能會變更的指標參數。 滑鼠指標必須指向有效的初始化資料呼叫前，而且即使監視變更時，它必須在傳回時，仍然必須是有效的值。 註解會指定函式可能自由地從讀取與寫入一個項目緩衝區。 呼叫端必須提供緩衝區，並將它初始化。  
+ `_Inout_` 用來標註函式可能會變更的指標參數。 滑鼠指標必須指向有效的初始化資料呼叫前，而且即使監視變更時，它必須在傳回時，仍然必須是有效的值。 註解會指定函式可能自由地從讀取與寫入一個項目緩衝區。 呼叫端必須提供緩衝區，並將它初始化。  
   
 > [!NOTE]
 >  像`_Out_`，`_Inout_`必須套用至可修改的值。  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Visual Studio 程式碼分析會驗證呼叫端傳遞非 NULL 指標，以初始化緩衝區`pInt`，而且，在傳回時之前,`pInt`仍然是非 null 緩衝區初始化。  
   
 ### <a name="example-the-inoutopt-annotation"></a>範例： _Inout_opt\_註釋  
- `_Inout_opt_`等同於`_Inout_`，但輸入的參數可為 NULL，因此，此函式應該檢查此。  
+ `_Inout_opt_` 等同於`_Inout_`，但輸入的參數可為 NULL，因此，此函式應該檢查此。  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Visual Studio 程式碼分析會驗證此函式檢查 null 存取緩衝區之前，以及是否`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
 ### <a name="example-the-outptr-annotation"></a>範例： _Outptr\_註釋  
- `_Outptr_`用來標註的參數，要傳回的指標。  參數本身不能為 NULL，並呼叫的函式中傳回非 NULL 指標，該指標指向已初始化的資料。  
+ `_Outptr_` 用來標註的參數，要傳回的指標。  參數本身不能為 NULL，並呼叫的函式中傳回非 NULL 指標，該指標指向已初始化的資料。  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Visual Studio 程式碼分析會驗證呼叫端傳遞非 NULL 指標， `*pInt`，並在傳回緩衝區初始化函式。  
   
 ### <a name="example-the-outptropt-annotation"></a>範例： _Outptr_opt\_註釋  
- `_Outptr_opt_`等同於`_Outptr_`，只不過是選擇性參數，呼叫端可以為 NULL 指標中傳遞的參數。  
+ `_Outptr_opt_` 等同於`_Outptr_`，只不過是選擇性參數，呼叫端可以為 NULL 指標中傳遞的參數。  
   
 ```cpp  
   
@@ -412,7 +410,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

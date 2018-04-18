@@ -1,21 +1,19 @@
 ---
-title: "CA3076： 不安全的 XSLT 指令碼執行 |Microsoft 文件"
-ms.custom: 
+title: CA3076： 不安全的 XSLT 指令碼執行 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076：不安全的 XSLT 指令碼執行
 
@@ -34,11 +32,11 @@ ms.lasthandoff: 01/23/2018
 
 **XSLT**是全球資訊網協會 (W3C) 標準，來轉換 XML 資料。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
-為了保障您不會公開受攻擊面，每當 XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 收到可執行惡意指令碼的 <xref:System.Xml.Xsl.XsltSettings> 和 <xref:System.Xml.XmlResolver>不安全組合執行個體時，即會觸發此規則。
+若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
-- 將不安全的 XsltSettings 引數取代為 XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或取代為已停用文件功能與指令碼執行的執行個體。
+- 不安全的 XsltSettings 引數取代為 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或執行個體的已停用文件函式和指令碼執行。
 
 - 將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。
 
@@ -48,7 +46,7 @@ ms.lasthandoff: 01/23/2018
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;uses XsltSettings.TrustedXslt
+### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>違規&mdash;使用 XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;  
@@ -69,7 +67,7 @@ namespace TestNamespace
 } 
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Solution&mdash;use XsltSettings.Default
+### <a name="solutionmdashuse-xsltsettingsdefault"></a>方案&mdash;使用 XsltSettings.Default
 
 ```csharp
 using System.Xml;

@@ -2,12 +2,9 @@
 title: Ca1036： 必須覆寫方法在 comparable 類型 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA1036
 - OverrideMethodsOnComparableTypes
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: a0a1517f497cc7fc1bd67261ce75b478f27d1df7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：必須在 Comparable 類型中覆寫方法
 |||  

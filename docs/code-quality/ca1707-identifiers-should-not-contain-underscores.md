@@ -1,12 +1,10 @@
 ---
-title: "CA1707： 識別項不應包含底線 |Microsoft 文件"
-ms.custom: 
+title: CA1707： 識別項不應包含底線 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1707
 - IdentifiersShouldNotContainUnderscores
 ms.assetid: 5fb539ef-c304-4323-90c0-b14386da9774
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 582b7c95663633a4aada6a479a17306354c16b7f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 22c911f90e4da45ce847654f0c89455375ea478e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707：識別項不應包含底線
 |||  

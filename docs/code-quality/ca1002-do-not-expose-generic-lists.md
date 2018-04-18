@@ -1,12 +1,10 @@
 ---
-title: "CA1002： 不要公開泛型清單 |Microsoft 文件"
-ms.custom: 
+title: CA1002： 不要公開泛型清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotExposeGenericLists
 - CA1002
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1002
 - DoNotExposeGenericLists
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d98b088b663eca89b04ea264a582a062d324a473
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aa12ea2d611d2e60e46665368b668e9c578db5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002：不要公開泛型清單
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  包含的類型是外部可見成員<xref:System.Collections.Generic.List%601?displayProperty=fullName>傳回型別，<xref:System.Collections.Generic.List%601?displayProperty=fullName>類型或簽章包含<xref:System.Collections.Generic.List%601?displayProperty=fullName>參數。  
   
 ## <a name="rule-description"></a>規則描述  
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>已針對效能與非繼承所設計的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName>不包含可讓您更輕鬆地變更繼承的類別行為的虛擬成員。 下列的泛型集合專為繼承，且應該公開 (expose) 而不是<xref:System.Collections.Generic.List%601?displayProperty=fullName>。  
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> 已針對效能與非繼承所設計的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 不包含可讓您更輕鬆地變更繼承的類別行為的虛擬成員。 下列的泛型集合專為繼承，且應該公開 (expose) 而不是<xref:System.Collections.Generic.List%601?displayProperty=fullName>。  
   
 -   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>  
   
@@ -66,5 +64,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

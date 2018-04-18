@@ -1,12 +1,10 @@
 ---
-title: "： Ca1715 識別項應該正確的前置詞 |Microsoft 文件"
-ms.custom: 
+title: ： Ca1715 識別項應該正確的前置詞 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IdentifiersShouldHaveCorrectPrefix
 - CA1715
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
-caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8a87359b0a4d1ac45199e4f233a7bf3174ba2bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8c6d744022c6be599d0df57f86c0d67b1f6a72dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：識別項名稱應該使用正確的前置字元
 |||  

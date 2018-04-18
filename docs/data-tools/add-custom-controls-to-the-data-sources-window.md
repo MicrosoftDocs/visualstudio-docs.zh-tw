@@ -1,11 +1,8 @@
 ---
-title: "將自訂控制項加入至資料來源視窗 |Microsoft 文件"
-ms.custom: 
+title: 將自訂控制項加入至資料來源視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 當您拖曳的項目**資料來源**至設計介面來建立資料繫結控制項視窗中的，您可以選取您建立的控制項類型。 在視窗中的每個項目有會顯示您可以選擇從控制項下拉式清單。 項目的資料類型所決定的每個項目相關聯的控制項集合。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
@@ -37,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-##  <a name="customizinglist"></a>自訂繫結控制項的資料類型的清單  
+##  <a name="customizinglist"></a> 自訂繫結控制項的資料類型的清單  
  若要加入或移除控制項，從可用的控制項清單中的項目**資料來源**視窗具有特定資料類型，請執行下列步驟。  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>若要選取要列出的資料類型的控制項  
@@ -71,7 +67,7 @@ ms.lasthandoff: 12/22/2017
   
      您在選取的控制項**相關聯控制項**方塊現在會出現在下拉式清單項目的功能表。  
   
-##  <a name="addingcontrols"></a>將控制項加入至相關聯控制項的資料類型清單  
+##  <a name="addingcontrols"></a> 將控制項加入至相關聯控制項的資料類型清單  
  如果您想要將控制項與資料型別產生關聯，但是控制項不在**相關聯控制項** 方塊中，您必須將控制項加入至清單。 控制項必須位於目前的方案中，或參考的組件。 它也必須用於**工具箱**，並具有指定控制項的資料繫結行為的屬性。  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>將控制項加入至相關聯的控制項的清單  
@@ -93,5 +89,5 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  只有位於目前的方案內，或參考的組件的控制項可以加入至相關聯的控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結中沒有的自訂控制項**資料來源**視窗中，拖曳控制項**工具箱**拖曳至設計介面，然後拖曳的項目，從繫結至**資料來源**視窗拖曳至控制項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

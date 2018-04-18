@@ -1,11 +1,8 @@
 ---
-title: "如何： 連接到服務中的資料 |Microsoft 文件"
-ms.custom: 
+title: 如何： 連接到服務中的資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], connecting to Web services
 - data sources, creating from Web services
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - Web services, as data sources
 - Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 58d22a756edd625a9c664862d05de5fe405fd9f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6e85af7411da7ff9f7912c4127d51db100f82063
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：連接至服務中的資料
 您應用程式連接至服務執行所傳回的資料[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，然後選取**服務**上**選擇資料來源類型**頁面。  
@@ -62,6 +59,6 @@ ms.lasthandoff: 12/22/2017
   
 -   選取的項目中**資料來源**視窗並將它拖曳至表單，以建立繫結的控制項。 如需詳細資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

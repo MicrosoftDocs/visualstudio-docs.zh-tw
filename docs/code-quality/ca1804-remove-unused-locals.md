@@ -1,12 +1,10 @@
 ---
-title: "Ca1804： 必須移除未使用的區域變數 |Microsoft 文件"
-ms.custom: 
+title: Ca1804： 必須移除未使用的區域變數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1804
 - RemoveUnusedLocals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - RemoveUnusedLocals
 - CA1804
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d75bc10407e9eae1c23ad06fdc2bd9515bdd505f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3eb04f7b8e804bc776ee3d8beaf02b65cee75051
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804：必須移除未使用的區域變數
 |||  

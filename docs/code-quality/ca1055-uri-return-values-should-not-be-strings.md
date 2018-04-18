@@ -1,12 +1,10 @@
 ---
-title: "CA1055: URI 傳回值不應該為字串 |Microsoft 文件"
-ms.custom: 
+title: 'CA1055: URI 傳回值不應該為字串 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1055
 - UriReturnValuesShouldNotBeStrings
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UriReturnValuesShouldNotBeStrings
 - CA1055
 ms.assetid: 40e39873-7872-4988-8195-9eb0ade9ece0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c66796ec8a3856dd9fbcf38d7299a6dab3ead2da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fe6473c6307651c91e279c44d5c2644d3b44fff1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055：URI 傳回值不應該為字串
 |||  

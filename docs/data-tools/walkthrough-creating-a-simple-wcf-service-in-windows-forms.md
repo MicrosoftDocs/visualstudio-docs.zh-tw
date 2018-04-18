@@ -1,11 +1,8 @@
 ---
-title: "逐步解說： 在 Windows Form 中建立簡單的 WCF 服務 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 Windows Form 中建立簡單的 WCF 服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c45ea549f17d71fd524a96e7d019c2b0d86bc628
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cacd1e15d2b20c4c24056416df4f9d25ea87474e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>逐步解說： 在 Windows Form 中建立簡單的 WCF 服務
 本逐步解說示範如何建立簡單的 [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 服務、予以測試，然後從 Windows Form 應用程式加以存取。  
@@ -79,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  在**WCF 測試用戶端**表單中，按兩下**getdata （)**下的方法**IService1**。 **GetData**索引標籤會顯示。  
   
-     ![GetData &#40; &#41;方法](../data-tools/media/wcf4.png "wcf4")  
+     ![GetData&#40; &#41;方法](../data-tools/media/wcf4.png "wcf4")  
   
 3.  在**要求**方塊中，選取**值**欄位，然後輸入`Hello`。  
   
@@ -130,5 +127,5 @@ ms.lasthandoff: 12/22/2017
   
      ![結果的顯示格式](../data-tools/media/wcf10.png "wcf10")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

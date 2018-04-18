@@ -1,23 +1,20 @@
 ---
-title: "無法建立關聯&lt;關聯名稱&gt;-屬性列出兩次 |Microsoft 文件"
-ms.custom: 
+title: 無法建立關聯&lt;關聯名稱&gt;-屬性列出兩次 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 2e712f04bda918e9a73d6053b743963a52417f7a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1005adf88771ad1fa1c31f50e1369a9fed97b901
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;-屬性列出兩次
 無法建立關聯\<關聯名稱 >。 相同的屬性已列出一次以上：\<屬性名稱 >。  

@@ -2,26 +2,22 @@
 title: 類別索引標籤，視窗屬性對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb10cf8a571d37f27244398e6c957c46cee87f8b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 573eb3f9cbcaedddc67524e81b2508df2112de04
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、類別索引標籤
 使用**類別**索引標籤，以顯示在選取的視窗類別資訊。 若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，焦點移至[視窗檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗中的任何節點，然後選擇 **屬性**從**檢視**功能表。  

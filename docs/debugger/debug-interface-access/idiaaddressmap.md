@@ -2,28 +2,24 @@
 title: IDiaAddressMap |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaAddressMap interface
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cdd8c9d2e581df3e7b0ebeba092a212fb7a89f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07083ce54496992156103c58c5428cedbd321b83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 可控制 DIA SDK 會以偵錯物件的虛擬和相對虛擬位址的計算。  
@@ -61,7 +57,7 @@ IDiaAddressMap : IUnknown
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

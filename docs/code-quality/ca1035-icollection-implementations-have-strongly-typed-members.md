@@ -1,12 +1,10 @@
 ---
-title: "CA1035: ICollection 實作包含強類型成員 |Microsoft 文件"
-ms.custom: 
+title: 'CA1035: ICollection 實作包含強類型成員 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ICollectionImplementationsHaveStronglyTypedMembers
 - CA1035
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1035
 - ICollectionImplementationsHaveStronglyTypedMembers
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 82703b6572b1c491fba118360fc07ddda1b0c61f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035：ICollection 實作包含強類型成員
 |||  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
  [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   

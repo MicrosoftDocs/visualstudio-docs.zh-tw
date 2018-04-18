@@ -1,13 +1,10 @@
 ---
-title: "CA1062： 驗證公用方法的引數 |Microsoft 文件"
-ms.custom: 
+title: CA1062： 驗證公用方法的引數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA1062
 - ValidateArgumentsOfPublicMethods
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - ValidateArgumentsOfPublicMethods
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3661a9475935dbe92dfd55f566170ce46d69f84
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6a14017c63c9012609f91005378f44a5e4a8401e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 

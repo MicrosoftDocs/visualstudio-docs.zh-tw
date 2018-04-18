@@ -1,12 +1,10 @@
 ---
-title: "CA1300： 指定 MessageBoxOptions |Microsoft 文件"
-ms.custom: 
+title: CA1300： 指定 MessageBoxOptions |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyMessageBoxOptions
 - CA1300
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - SpecifyMessageBoxOptions
 - CA1300
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b47c5f2297d9b13e33dc064a203bfd84ce2d196f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 914654c5e2eee601ee2b314f15f5dfadb686c047
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300：指定 MessageBoxOptions
 |||  
@@ -51,6 +49,6 @@ ms.lasthandoff: 12/22/2017
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
  [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
  [桌面應用程式中的資源](/dotnet/framework/resources/index)

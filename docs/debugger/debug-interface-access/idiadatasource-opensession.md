@@ -1,29 +1,25 @@
 ---
-title: "Idiadatasource:: Opensession |Microsoft 文件"
-ms.custom: 
+title: 'Idiadatasource:: Opensession |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaDataSource::openSession method
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b7cfaf3e2cf7331576ca79b9820bafb761fc44c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 701b3dda0341544e5d94a2b0a9e8ddf8f55d33f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟查詢符號的工作階段。  
@@ -52,7 +48,7 @@ HRESULT openSession (
 ## <a name="remarks"></a>備註  
  這個方法會開啟[IDiaSession](../../debugger/debug-interface-access/idiasession.md)資料來源的物件。  
   
- `IDiaSession`物件會實作查詢到的資料來源。 工作階段會管理針對每個偵錯符號集的一個位址空間。 描述的資料來源符號的.exe 或.dll 檔案是否作用中多個位址範圍 （例如，因為多個處理序已經載入它），則應該用於每個位址範圍的一個工作階段。  
+ `IDiaSession` 物件會實作查詢到的資料來源。 工作階段會管理針對每個偵錯符號集的一個位址空間。 描述的資料來源符號的.exe 或.dll 檔案是否作用中多個位址範圍 （例如，因為多個處理序已經載入它），則應該用於每個位址範圍的一個工作階段。  
   
 ## <a name="example"></a>範例  
   
@@ -65,7 +61,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

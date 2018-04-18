@@ -1,26 +1,23 @@
 ---
-title: "將資料集和 TableAdapters 分成不同的專案 |Microsoft 文件"
-ms.custom: 
+title: 將資料集和 TableAdapters 分成不同的專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: af4e082bfa3e1b7669eb43218977b03a47c2f0bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 304fa17ab036f868b8653efe64a59f68f0452723
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>個別的資料集和 TableAdapters 分成不同的專案
 具類型資料集已經過加強，以便[Tableadapter](create-and-configure-tableadapters.md)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層級，並產生多層式架構資料應用程式。  

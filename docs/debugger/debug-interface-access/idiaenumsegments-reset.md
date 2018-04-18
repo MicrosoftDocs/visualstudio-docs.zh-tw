@@ -1,29 +1,25 @@
 ---
-title: "Idiaenumsegments:: Reset |Microsoft 文件"
-ms.custom: 
+title: 'Idiaenumsegments:: Reset |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSegments::Reset method
 ms.assetid: 5eabca3c-6023-4474-a545-a3bec7521e4d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97eb28ce200717083b3967063271ac2d49d34ec3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553296a0832e62dffcb0556084c8ef5b4aed082e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
 列舉序列重設為開頭。  
@@ -37,5 +33,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

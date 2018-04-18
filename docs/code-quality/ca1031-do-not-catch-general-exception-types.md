@@ -1,12 +1,10 @@
 ---
-title: "CA1031： 不要攔截一般例外狀況類型 |Microsoft 文件"
-ms.custom: 
+title: CA1031： 不要攔截一般例外狀況類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1031
 - DoNotCatchGeneralExceptionTypes
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1031
 - DoNotCatchGeneralExceptionTypes
 ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d1b11db50a4e6104c09a65ebe9e7616d223ef3ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ab2b235037e68d7c824d144d29dfb58ac8c5c066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031：不要攔截一般例外狀況類型
 |||  

@@ -1,13 +1,10 @@
 ---
-title: "程式碼分析 C/c + + 的概觀 |Microsoft 文件"
-ms.custom: 
+title: 程式碼分析 C/c + + 的概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
 - build integration, code analysis
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 90b586a9a131e6c1ef19f591f1348ff5125e9701
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>程式碼分析 C/c + + 的概觀
 

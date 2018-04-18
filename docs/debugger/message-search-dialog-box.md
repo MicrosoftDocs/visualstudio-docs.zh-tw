@@ -2,26 +2,22 @@
 title: 訊息搜尋對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec48c0a0c07fd7ab9ec2606c110667cc9bb12f69
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 65639b25cccc88d8159d1e91eddb0b99c06c19bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
 使用此對話方塊，即可尋找並選取的節點中的特定訊息[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，將焦點移至 [訊息] 檢視視窗。 然後選擇 **尋找訊息**從**搜尋**功能表。  

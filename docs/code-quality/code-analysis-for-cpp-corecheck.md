@@ -2,25 +2,22 @@
 title: Visual Studio c + + 核心指導方針檢查參考 |Microsoft 文件
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C + + 核心指導方針檢查程式參考
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 03/22/2018
 > [!NOTE]
 > 有些警告屬於多個群組，且並非所有警告都都是完整的參考主題。
 
-## <a name="ownerpointer-group"></a>OWNER_POINTER Group
+## <a name="ownerpointer-group"></a>OWNER_POINTER 群組
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)是否移動建構函式會傳回已設定領域的物件，而非堆積配置。 請參閱[c + + 核心指導方針 R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)。
 
@@ -49,7 +46,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26431 DONT_TEST_NOTNULL](C26431.md)運算式 '%expr%' 的型別已 gsl::not_null。 不會測試它 nullness。 請參閱[c + + 核心指導方針 F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value)。
 
-## <a name="rawpointer-group"></a>RAW_POINTER Group
+## <a name="rawpointer-group"></a>RAW_POINTER 群組
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)與擁有者未指派的配置或函式呼叫結果\<T > 值傳回至原始指標; 使用擁有者\<T > 改為。 請參閱[c + + 核心指導方針 I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)。
 
@@ -72,7 +69,7 @@ ms.lasthandoff: 03/22/2018
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)。
 運算式 '%expr%': 沒有陣列至指標衰退。 請參閱[c + + 核心指導方針 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)。
 
-## <a name="uniquepointer-group"></a>UNIQUE_POINTER Group
+## <a name="uniquepointer-group"></a>UNIQUE_POINTER 群組
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md)參數 '%參數 %' 是參考`const`唯一的指標使用 const T * 或 const T & 改為。 請參閱[c + + 核心指導方針 R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam)。
 
@@ -82,7 +79,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)智慧型指標參數 '%符號 %' 只會用於存取所包含的指標。 使用 T * 或 T & 改為。 請參閱[c + + 核心指導方針 R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam)。
 
-## <a name="sharedpointer-group"></a>SHARED_POINTER Group
+## <a name="sharedpointer-group"></a>SHARED_POINTER 群組
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md)移動、 複製、 重新指派，或重設本機智慧型指標 '%符號 %'。 請參閱[c + + 核心指導方針 R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped)。
 
@@ -199,7 +196,7 @@ ms.lasthandoff: 03/22/2018
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)運算式 '%expr%': 沒有陣列至指標衰退。 請參閱[c + + 核心指導方針 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-## <a name="gsl-group"></a>GSL Group
+## <a name="gsl-group"></a>GSL 群組
 
 [C26445 NO_SPAN_REF](c26445.md)參考`gsl::span`或`std::string_view`可能存留期問題的表示。
 請參閱[c + + 核心指導方針 GSL.view： 檢視](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)

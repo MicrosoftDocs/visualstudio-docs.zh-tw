@@ -1,11 +1,9 @@
 ---
-title: "Ca1063： 必須實作 IDisposable 正確 |Microsoft 文件"
-ms.custom: 
+title: Ca1063： 必須實作 IDisposable 正確 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -15,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29a2fbb82fd2795c675bfa249e213488913745a9
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 993e3f01d040c6576c497b43442f9c348c3b4521
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
 

@@ -1,13 +1,10 @@
 ---
-title: "COM 和 ActiveX 的偵錯 |Microsoft 文件"
-ms.custom: 
+title: COM 和 ActiveX 的偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - debugging COM containers
 - ActiveX controls, debugging
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2854a74bd8da32db5d954a0e68a33a484b7eb493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0351d3f0d020f86c3c3c10ff830999772ca0780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。  
@@ -51,7 +47,7 @@ ms.lasthandoff: 12/22/2017
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [COM 簡介](/cpp/atl/introduction-to-com)   
  [ActiveX 控制項](/cpp/mfc/activex-controls)   

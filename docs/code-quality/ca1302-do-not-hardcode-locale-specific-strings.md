@@ -1,12 +1,10 @@
 ---
-title: "CA1302： 請勿地區設定特定字串 |Microsoft 文件"
-ms.custom: 
+title: CA1302： 請勿地區設定特定字串 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
 - CA1302
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotHardcodeLocaleSpecificStrings
 - CA1302
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9fc94331b95f70f5ee73eae24172f1930d0ab8bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f01bcbf0d717ff8728d87b55f2cfd1c7c5af34d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302：請勿於程式中定義地區設定專屬的字串
 |||  

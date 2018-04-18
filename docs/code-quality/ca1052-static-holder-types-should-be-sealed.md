@@ -1,12 +1,10 @@
 ---
-title: "CA1052： 靜態預留位置類型應該為密封 |Microsoft 文件"
-ms.custom: 
+title: CA1052： 靜態預留位置類型應該為密封 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
 - CA1052
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1052
 - StaticHolderTypesShouldBeSealed
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d9ce807aca8b28a279a3a423802196e710f63dea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6fc3954c4c446ff578790e92bc60dd97e42a0d8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：靜態預留位置類型應該為密封的
 |||  

@@ -1,12 +1,10 @@
 ---
-title: "註釋函式行為 |Microsoft 文件"
-ms.custom: 
+title: 註釋函式行為 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _On_failure_
 - _Return_type_success_
@@ -20,16 +18,16 @@ f1_keywords:
 - _Check_return_
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
-caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 60cebdd015263ac5d05045e168d3f1063e0527a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9c061c12e7c34a67692af41b72ea7b04b6f06e07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 除了標註[函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)，您可以標註整體函式的屬性。  
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
 |註釋|描述|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|這個述詞不適合單獨使用，而是要搭配 `_When_` 註釋使用。 如需詳細資訊，請參閱[指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。<br /><br /> `name`參數是任意字串，也會出現在`_Function_class_`的某些函式宣告中的註解。  `_Called_from_function_class_`傳回非零，如果目前分析的函式使用標註`_Function_class_`具有相同的值`name`，否則會傳回零。|  
+|`_Called_from_function_class_(name)`|這個述詞不適合單獨使用，而是要搭配 `_When_` 註釋使用。 如需詳細資訊，請參閱[指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。<br /><br /> `name`參數是任意字串，也會出現在`_Function_class_`的某些函式宣告中的註解。  `_Called_from_function_class_` 傳回非零，如果目前分析的函式使用標註`_Function_class_`具有相同的值`name`，否則會傳回零。|  
 |`_Check_return_`|標註傳回值，並指出呼叫端應檢查該值。 如果函式是在 void 內容中呼叫，則檢查程式會報告錯誤。|  
 |`_Function_class_(name)`|`name` 參數是使用者指定的任意字串。  它會存在彼此不同的命名空間中。 函式、函式指標或最常見的函式指標類型都可以指定為屬於一個或多個函式類別。|  
 |`_Raises_SEH_exception_`|標註一定會引發結構化例外狀況處理常式 (SEH) 例外狀況的函式 (受 `_When_` 和 `_On_failure_` 條件所限制)。 如需詳細資訊，請參閱[指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 |`_Return_type_success_(expr)`|可套用至 typedef。 指出傳回該類型且未明確擁有 `_Success_` 的所有函式，都會標註為如同擁有 `_Success_(expr)`。 `_Return_type_success_` 無法在函式或函式指標 typedef 上使用。|  
 |`_Success_(expr)`|`expr` 是產生右值的運算式。 當 `_Success_` 註釋出現在函式宣告或定義上時，函式上和後置條件中每個註釋 (`anno`) 的行為就如同撰寫為 `_When_(expr, anno)` 程式碼一樣。 `_Success_` 註釋只能在函式上使用，而不能在其參數或傳回類型上使用。 函式上最多只能有一個 `_Success_` 註釋，而且不能在任何 `_When_`、`_At_` 或 `_Group_` 中。 如需詳細資訊，請參閱[指定時，並在註釋套用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   

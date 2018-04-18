@@ -1,28 +1,26 @@
 ---
-title: "偵錯 WebView 控制項 (UWP) |Microsoft 文件"
-ms.custom: 
+title: 偵錯 WebView 控制項 (UWP) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: bf7d7055983fbe1a61377dfede1761a9184ca6d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>偵錯 WebView 控制項的 UWP 應用程式
   
@@ -86,5 +84,5 @@ ms.lasthandoff: 01/19/2018
   
 6.  檢視和修改您的應用程式中的變數，或使用主控台命令中所述[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)和[JavaScript 主控台命令](../debugger/javascript-console-commands.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

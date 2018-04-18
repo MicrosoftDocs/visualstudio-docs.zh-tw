@@ -1,30 +1,26 @@
 ---
-title: "使用者入門 （偵錯介面存取 SDK） |Microsoft 文件"
-ms.custom: 
+title: 使用者入門 （偵錯介面存取 SDK） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - .dbg files
 - DBG files
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 偵錯介面存取 (DIA) SDK 會提供您與指示文件說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 來開發自訂應用程式開啟的.pdb 和.dbg 檔案，搜尋其內容中的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供 c + + 應用程式中找到的符號相關聯的屬性參考資料表。  
@@ -54,5 +50,5 @@ ms.lasthandoff: 12/22/2017
  [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  提供逐步指示如何使用 DIA API 來查詢.pdb 檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

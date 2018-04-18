@@ -2,28 +2,24 @@
 title: 'Idiaenumsegments:: Get__newenum |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSegments::get__NewEnum method
 ms.assetid: 504505fa-b35c-402f-a440-8972c589cc5b
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b2dc988fdbf56af6a003e01a7e4423d31ba42a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf35e6aa8441f93a4bf7d7e9c336b85308f3b2d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsegmentsgetnewenum"></a>IDiaEnumSegments::get__NewEnum
 擷取<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。  
@@ -43,5 +39,5 @@ HRESULT get__NewEnum (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

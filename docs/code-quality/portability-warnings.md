@@ -1,13 +1,10 @@
 ---
-title: "可攜性警告 |Microsoft 文件"
-ms.custom: 
+title: 可攜性警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.PortabilityRules
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - managed code analysis warnings, portability warnings
 - warnings, portability
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efd2d56700c70b27771623e618f61675b174da01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 80323aff144bde0cd2f21b0ff3ced376c18b1a33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="portability-warnings"></a>可攜性警告
 可攜性警告跨不同的作業系統支援可攜性。  

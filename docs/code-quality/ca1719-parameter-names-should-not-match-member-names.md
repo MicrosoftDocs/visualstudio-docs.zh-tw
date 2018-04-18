@@ -1,12 +1,10 @@
 ---
-title: "CA1719： 參數名稱不應符合成員名稱 |Microsoft 文件"
-ms.custom: 
+title: CA1719： 參數名稱不應符合成員名稱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
 - CA1719
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1719
 - ParameterNamesShouldNotMatchMemberNames
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1fd1d1af9287b73d9d1f44143e6673d2a67b690c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 402744debf3ad94ff303a5d27a39b67d41faa341
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719：參數名稱不應符合成員名稱
 |||  

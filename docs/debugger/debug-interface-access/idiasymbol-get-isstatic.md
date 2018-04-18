@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol:: Get_isstatic |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_isstatic |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isStatic method
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecb091f1314961cf94f4d0ad7acbb6b6f938fc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: da0c5f27e8855dc8809bebf193a1910887ae9f19
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 擷取旗標，指定是否函式或 thunk 層已標示為靜態。  
@@ -53,5 +49,5 @@ HRESULT get_isStatic(
 |標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

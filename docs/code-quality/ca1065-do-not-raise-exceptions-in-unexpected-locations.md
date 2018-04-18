@@ -2,7 +2,7 @@
 title: CA1065： 不要引發例外狀況中的非預期的位置 |Microsoft 文件
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 4e1bade4-4ca2-4219-abc3-c7b2d741e157
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c81e2c7d54c8efdb1af2782c4b4937270e87d66b
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 946a729fc3ffd99c4c0b3c435b093a97986d68b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 

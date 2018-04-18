@@ -1,29 +1,25 @@
 ---
-title: "CV_CPU_TYPE_e |Microsoft 文件"
-ms.custom: 
+title: CV_CPU_TYPE_e |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CV_CPU_TYPE_e enumeration
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8b5ba35bda24f33461d740d5ec0d1591113e43d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 055e6715d0bff905bdd81bd8c50a0b19a8e3fb5e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目標處理器。  
@@ -106,6 +102,6 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

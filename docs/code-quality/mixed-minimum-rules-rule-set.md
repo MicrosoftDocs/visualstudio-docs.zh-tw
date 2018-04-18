@@ -1,23 +1,21 @@
 ---
-title: "混合最小規則規則集 |Microsoft 文件"
-ms.custom: 
+title: 混合最小規則規則集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 430984d0f34c7596e78408d4138cd7506fdc7ba3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 783e88e22456f4babffa8d6f1748385c6dac819e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的 c + + 專案中最關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立這個規則集的任何自訂規則集。  
@@ -154,7 +152,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|  
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|  
 |[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|  
-|[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|應該處置可處置欄位的類型|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|應該處置可處置欄位的類型|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|移除空的完成項|  
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|應該處置可處置的欄位|  
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|多載覆寫 ValueType.Equals 的等號比較運算子|

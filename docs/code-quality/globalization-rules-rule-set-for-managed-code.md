@@ -1,23 +1,21 @@
 ---
-title: "Managed 程式碼的全球化規則規則集 |Microsoft 文件"
-ms.custom: 
+title: Managed 程式碼的全球化規則規則集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 07a2e8da87eb486f8247a79263ec371a8fd4afc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 54e1df6f8c49112747ccd7254f01a57d33dccf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 您可以使用 Microsoft 全球化規則規則集的重點在於可能會讓您正確出現在不同的語言、 地區設定中和文化特性的應用程式中資料的問題。 您應該包含這個規則集，如果您的應用程式當地語系化，全球化，或兩者。  
@@ -34,4 +32,4 @@ ms.lasthandoff: 12/22/2017
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|指定 StringComparison|  
 |[CA1308 必須](../code-quality/ca1308-normalize-strings-to-uppercase.md)|將字串標準化為大寫字母|  
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|使用循序的 StringComparison|  
-|[CA2101 必須](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|指定 P/Invoke 字串引數的封送處理|
+|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|指定 P/Invoke 字串引數的封送處理|

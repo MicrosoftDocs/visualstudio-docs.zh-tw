@@ -1,12 +1,10 @@
 ---
-title: "CA1026： 應該不使用預設參數 |Microsoft 文件"
-ms.custom: 
+title: CA1026： 應該不使用預設參數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 43f83bf88e017da06ee3653019aa91807229d55e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b3bc307b0c82400a209d09b490ba0882e6474db3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不應使用預設參數
 |||  
@@ -55,5 +53,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1025：必須以參數陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

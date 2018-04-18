@@ -1,12 +1,10 @@
 ---
-title: "Ca1308： 必須將字串標準化為大寫字母 |Microsoft 文件"
-ms.custom: 
+title: Ca1308： 必須將字串標準化為大寫字母 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1308
 - NormalizeStringsToUppercase
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - NormalizeStringsToUppercase
 - CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9064ca9861f609499971b9f5188f5b0006458c15
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 979b6d0bbd14d6432ea376622ce61f6329f708fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308：必須將字串標準化為大寫字母
 |||  
@@ -45,5 +43,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  它可安全地隱藏警告訊息，當您不會進行安全性決策 （例如，當您要將它顯示在 UI 中） 的結果。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [全球化警告](../code-quality/globalization-warnings.md)

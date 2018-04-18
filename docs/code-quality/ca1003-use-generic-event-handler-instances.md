@@ -1,12 +1,10 @@
 ---
-title: "Ca1003： 必須使用一般事件處理常式執行個體 |Microsoft 文件"
-ms.custom: 
+title: Ca1003： 必須使用一般事件處理常式執行個體 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseGenericEventHandlerInstances
 - CA1003
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1003
 - UseGenericEventHandlerInstances
 ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66f18e0b62d5dc2526d97109949c0dda21ad4e71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c6804adbaa360f6523d9cc3d98d555fb13142dd8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：必須使用一般事件處理常式執行個體
 |||  
@@ -71,5 +69,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

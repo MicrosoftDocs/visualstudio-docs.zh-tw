@@ -1,11 +1,8 @@
 ---
-title: "使用 TableAdapter 更新資料 |Microsoft 文件"
-ms.custom: 
+title: 使用 TableAdapter 更新資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], updating
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c5188f56e440f7ec00f7537602aff10723441c3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 修改資料集的資料並驗證之後，您可以藉由呼叫回資料庫傳送更新的資料`Update`方法[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。 `Update`方法更新單一資料表，並執行正確的命令 （INSERT、 UPDATE 或 DELETE） 根據<xref:System.Data.DataRow.RowState%2A>的資料表中每個資料列。 當資料集有連結的資料表時，Visual Studio 會產生 TableAdapterManager 類別用來進行更新。 TableAdapterManager 類別可確保以正確的順序，根據資料庫所定義的外部索引鍵條件約束會進行更新。 當您使用資料繫結控制項時，資料繫結架構會建立稱為 tableAdapterManager TableAdapterManager 類別的成員變數。 
@@ -53,5 +50,5 @@ ms.lasthandoff: 12/22/2017
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

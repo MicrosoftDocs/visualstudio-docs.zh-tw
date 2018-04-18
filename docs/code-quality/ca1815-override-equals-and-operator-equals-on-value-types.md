@@ -1,12 +1,10 @@
 ---
-title: "Ca1815： 覆和實值類型上等號比較運算子 |Microsoft 文件"
-ms.custom: 
+title: Ca1815： 覆和實值類型上等號比較運算子 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1815
 - OverrideEqualsAndOperatorEqualsOnValueTypes
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideEqualsAndOperatorEqualsOnValueTypes
 - CA1815
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 927e13266bf308096592fb5714e1247f4b596ca8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c4f5667977ed25da03d5d651e28c5ae3c3f4a3e0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815：覆寫實值類型上的等號和等號比較運算子
 |||  
@@ -68,5 +66,5 @@ ms.lasthandoff: 12/22/2017
   
  [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

@@ -1,23 +1,21 @@
 ---
-title: "如何： 隱藏所產生的程式碼的程式碼分析警告 |Microsoft 文件"
-ms.custom: 
+title: 如何： 隱藏所產生的程式碼的程式碼分析警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bd917c8c9a3b66dc1fe34e089e14481c2b7df5a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a44dae0dce544a4783be3068cbd52d7b9825e4bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 Managed 程式碼編譯器通常會產生程式碼加入至專案，以便快速的程式碼開發。 此外，開發人員通常會使用第三方工具可協助您快速地開發應用程式。 這些工具也會產生程式碼加入至專案。  
@@ -31,7 +29,7 @@ Managed 程式碼編譯器通常會產生程式碼加入至專案，以便快速
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要隱藏所產生的程式碼專案中的警告  
   
-1.  以滑鼠右鍵按一下方案總管 中的專案，然後按一下**屬性**。  
+1.  以滑鼠右鍵按一下方案總管] 中的專案，然後按一下**屬性**。  
   
 2.  按一下**程式碼分析**。  
   

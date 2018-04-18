@@ -1,12 +1,10 @@
 ---
-title: "如何： 為 C/c + + 專案設定程式碼分析屬性 |Microsoft 文件"
-ms.custom: 
+title: 如何： 為 C/c + + 專案設定程式碼分析屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 89671da363d6079ad7a81dc41f1c6f82b713d32d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
 您可以設定使用哪些規則程式碼分析工具來分析專案的每個組態中的程式碼。 此外，您可以將程式碼分析，隱藏警告的程式碼與產生及協力廠商工具加入至您的專案。  
@@ -53,6 +51,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-sets"></a>規則集  
  如果您的專案包含 managed 程式碼，您可以選取要藉由選取規則集的程式碼分析中套用的規則**執行此規則集**清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

@@ -1,29 +1,25 @@
 ---
-title: "在 偵錯工具中建立原生物件的自訂檢視 |Microsoft 文件"
-ms.custom: 
+title: 在 偵錯工具中建立原生物件的自訂檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立原生物件的自訂檢視
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視窗中顯示原生類型的方式 (例如，**監看式**視窗中，**區域變數**視窗中，然後在**資料提示方塊**。
@@ -464,7 +460,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
 -   `ValueNode` 可以保留空白，或使用 `this` 來參考連結清單節點本身。  
   
 #### <a name="customlistitems-expansion"></a>CustomListItems 展開  
- `CustomListItems` 展開可讓您撰寫周遊資料結構 (例如雜湊表) 的自訂邏輯。 您應該使用`CustomListItems`來視覺化資料結構中的所有項目，您必須評估為可以 c + + 運算式表示，但不完全符合一切`ArrayItems`， `TreeItems`，或`LinkedListItems.`  
+ `CustomListItems` 展開可讓您撰寫周遊資料結構 (例如雜湊表) 的自訂邏輯。 您應該使用`CustomListItems`來視覺化資料結構中的所有項目，您必須評估為可以 c + + 運算式表示，但不完全符合一切`ArrayItems`， `TreeItems`，或 `LinkedListItems.`  
   
  CAtlMap 的視覺化檢視為 `CustomListItems` 適用時機的絕佳範例。  
   
@@ -542,7 +538,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem 展開  
  `ExpandedItem` 項目可用來產生彙總子檢視，方法是將基底類別或資料成員的屬性當做視覺化類型的子系來顯示。 系統會評估指定的運算式，並將結果的子節點附加至視覺化類型的子清單。 例如，假設我們具有智慧型指標類型`auto_ptr<vector<int>>`，這通常會顯示為：  
   
- ![自動 &#95; ptr &#60; 向量 &#60; int &#62; &#62;預設展開](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![自動&#95;ptr&#60;向量&#60;int&#62; &#62;預設展開](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  若要查看向量的值，您必須在變數視窗中通過 _Myptr 成員，向下切入兩個層級。 藉由加入 `ExpandedItem` 項目，您可以從階層架構中排除 `_Myptr` 變數，並直接檢視向量項目：  
   
@@ -555,7 +551,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
 </Type>  
 ```  
   
- ![自動 &#95; ptr &#60; 向量 &#60; int &#62; &#62;ExpandedItem 展開](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![自動&#95;ptr&#60;向量&#60;int&#62; &#62; ExpandedItem 展開](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  下列範例會示範如何從衍生類別中的基底類別彙總屬性。 假設 `CPanel` 類別衍生自 `CFrameworkElement`。 `CFrameworkElement` 節點不會重複來自基底 `ExpandedItem` 類別的屬性，而是允許將這些屬性附加至 `CPanel` 類別的子清單。 **Nd**格式規範，則會關閉視覺效果比對衍生的類別，以下是必要。 否則，運算式`*(CFrameworkElement*)this`導致`CPanel`視覺效果，因為預設視覺化類型比對規則，重新套用至其視為最適當的一個。 使用**nd**格式規範會指示使用基底類別視覺化或基底類別預設展開基底類別沒有視覺化偵錯工具。  
   

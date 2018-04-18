@@ -1,22 +1,22 @@
 ---
-title: "在 Visual Studio 中使用 ADO.NET 建立簡單資料應用程式 |Microsoft 文件"
+title: 在 Visual Studio 中使用 ADO.NET 建立簡單資料應用程式 |Microsoft 文件
 ms.date: 08/23/2017
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab9c63e3601fb58bd2c25f84cf7ac8cda34f5b91
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 8bde01870a4511b261759cc7dd5dca04b211f2bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/15/2018
 
 -   Visual Studio。
 
--   SQL Server Express LocalDB. 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
+-   SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
 本主題假設您熟悉 Visual Studio IDE 的基本功能，可以建立 Windows Forms 應用程式，將表單加入至專案，將按鈕和其他控制項在表單上的放置設定控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用 Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)開始本逐步解說之前的主題。
 

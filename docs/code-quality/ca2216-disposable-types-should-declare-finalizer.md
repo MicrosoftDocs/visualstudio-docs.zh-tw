@@ -1,12 +1,10 @@
 ---
-title: "CA2216： 可處置類型應該宣告完成項 |Microsoft 文件"
-ms.custom: 
+title: CA2216： 可處置類型應該宣告完成項 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DisposableTypesShouldDeclareFinalizer
 - CA2216
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2216
 - DisposableTypesShouldDeclareFinalizer
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 65332b37da874ce3475bb166b29c47ccc5a5870d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3023967091c09610791f5032731772aa15b8bf6c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216：可處置類型應該宣告完成項
 |||  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
   
  [CA1049：具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IDisposable?displayProperty=fullName>   
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   

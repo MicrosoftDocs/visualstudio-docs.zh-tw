@@ -1,29 +1,25 @@
 ---
-title: "DataKind |Microsoft 文件"
-ms.custom: 
+title: DataKind |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fecbec475aee44efd9a91a24ec933dbbbcb17e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 508058a85d60645fca5e50bc1e6c456da7df7b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="datakind"></a>DataKind
 指出特定範圍的資料值。  
@@ -82,6 +78,6 @@ enum DataKind {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

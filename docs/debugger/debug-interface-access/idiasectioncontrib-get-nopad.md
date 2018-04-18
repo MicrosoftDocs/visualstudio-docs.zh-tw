@@ -1,29 +1,25 @@
 ---
-title: "Idiasectioncontrib:: Get_nopad |Microsoft 文件"
-ms.custom: 
+title: 'Idiasectioncontrib:: Get_nopad |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_nopad method
 ms.assetid: f5c08603-0b3e-4e81-acf1-1b95a6a83bed
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd0e9d760c7438a9d5d2c8c3081b763c837a09b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6bf648e44a857d938bbfecbe202d8a7c8f5d5d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
 擷取旗標，指出是否應不到下一個記憶體界限填補一節。  
@@ -46,5 +42,5 @@ HRESULT get_nopad(
 ## <a name="remarks"></a>備註  
  這是通常只能在較舊的檔案上出現的屬性。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

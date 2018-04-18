@@ -1,27 +1,24 @@
 ---
-title: "建立資料庫檔案，並在 Visual Studio 中使用資料表設計工具 |Microsoft 文件"
-ms.custom: 
+title: 建立資料庫檔案，並在 Visual Studio 中使用資料表設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中加入資料表
 您可以使用 Visual Studio 建立及更新 SQL Server Express LocalDB 中的本機資料庫檔案。 您也可以藉由執行 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。 本主題中，我們將建立的.mdf 檔案，並使用資料表設計工具中加入資料表和索引鍵。
@@ -57,7 +54,7 @@ ms.lasthandoff: 12/22/2017
 
 10. 在**連接字串儲存到應用程式組態檔**頁面上，選擇**下一步**。
 
-11. 一個**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇**完成**。
+11. 一個**選擇您的資料庫物件** 頁面上，您會看到訊息指出資料庫不包含任何物件。 選擇 [完成]。
 
 ### <a name="to-view-properties-of-the-data-connection"></a>若要檢視的資料連線屬性
 您可以開啟資料連接屬性 視窗來檢視 SampleDatabase.mdf 檔案的連接字串：

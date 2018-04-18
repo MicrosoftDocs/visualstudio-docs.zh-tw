@@ -1,11 +1,8 @@
 ---
-title: "逐步解說： 以 Dataset 設計工具建立資料集 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 以 Dataset 設計工具建立資料集 |Microsoft 文件
+ms.custom: ''
 ms.date: 09/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], walkthroughs
 - XML schemas, creating datasets
@@ -14,14 +11,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 35f98e7442c6600baa1afcc38642abf8e7aeb3ba
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 31383f3dc2c966e8f2ec1cf3b39ebecb086ac7fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立資料集
 

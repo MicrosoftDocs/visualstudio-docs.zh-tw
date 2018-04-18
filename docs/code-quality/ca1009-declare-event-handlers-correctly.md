@@ -1,12 +1,10 @@
 ---
-title: "CA1009： 正確宣告事件處理常式 |Microsoft 文件"
-ms.custom: 
+title: CA1009： 正確宣告事件處理常式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8e72f10ef44c784af98628f4b0c1ed3b72814977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d207bff88129cb9cc6769cc47ae6e70cbe74d1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009：正確宣告事件處理常式
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  請勿隱藏此規則的警告。  
   
 ## <a name="example"></a>範例  
- 下列範例示範適用於處理事件的委派。 設計指導方針中指定的簽章符合可以叫用此事件處理常式的方法。 `AlarmEventHandler`是委派的型別名稱。 `AlarmEventArgs`衍生自事件資料的基底類別<xref:System.EventArgs>，並保留警示的事件資料。  
+ 下列範例示範適用於處理事件的委派。 設計指導方針中指定的簽章符合可以叫用此事件處理常式的方法。 `AlarmEventHandler` 是委派的型別名稱。 `AlarmEventArgs` 衍生自事件資料的基底類別<xref:System.EventArgs>，並保留警示的事件資料。  
   
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA2109：必須檢閱可見的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.EventArgs?displayProperty=fullName>   
  <xref:System.Object?displayProperty=fullName>   
  [處理和引發事件](/dotnet/standard/events/index)  

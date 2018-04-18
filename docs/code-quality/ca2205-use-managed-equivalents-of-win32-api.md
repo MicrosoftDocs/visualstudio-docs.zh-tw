@@ -1,12 +1,10 @@
 ---
-title: "Ca2205： 必須使用受管理的 Win32 API 的對等項目 |Microsoft 文件"
-ms.custom: 
+title: Ca2205： 必須使用受管理的 Win32 API 的對等項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - UseManagedEquivalentsOfWin32Api
 - CA2205
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseManagedEquivalentsOfWin32Api
 - CA2205
 ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ea1c408e524614009c8c12bda85afad397faf607
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 54c21ea55b1679e05c46c9cb0105c0418133a3cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205：必須使用 Win32 API 的 Managed 對應項
 |||  

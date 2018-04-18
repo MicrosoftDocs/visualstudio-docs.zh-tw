@@ -1,27 +1,23 @@
 ---
-title: "CA2134： 覆寫基底方法時方法必須保持一致的透明度 |Microsoft 文件"
-ms.custom: 
+title: CA2134： 覆寫基底方法時方法必須保持一致的透明度 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62438b49d91f680ae360f1d32f7cfe3b0efa2b75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebf59948d48e922449ffa4455c39b17e5d0bb208
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134：覆寫基底方法時，方法必須保持一致的透明度
 |||  
@@ -52,5 +48,5 @@ ms.lasthandoff: 12/22/2017
 ### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [安全性透明的程式碼，層級 2](/dotnet/framework/misc/security-transparent-code-level-2)

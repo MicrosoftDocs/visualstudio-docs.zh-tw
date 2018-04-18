@@ -1,52 +1,50 @@
 ---
-title: "為 managed 程式碼的 managed 建議規則規則設定 |Microsoft 文件"
-ms.custom: 
+title: 為 managed 程式碼的 managed 建議規則規則設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: a3ce64d9573013ad1fe1e76b50cfc5da940347e5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: e0216858df5f94eaf2371005ba3526d6144fc060
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的 Managed 建議規則規則集
 您可以使用 Microsoft Managed 建議規則規則集將焦點放在您的 managed 程式碼，包括潛在的安全性漏洞、 應用程式當機，以及其他重要邏輯和設計錯誤中最關鍵的問題。 您應該包含這個規則集在您建立專案的任何自訂規則集。  
   
 |規則|描述|  
 |----------|-----------------|  
-|[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|應該處置可處置欄位的類型|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|應該處置可處置欄位的類型|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|  
 |[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|以 AssemblyVersionAttribute 標記組件|  
 |[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|介面方法應該要可以由子類型呼叫|  
 |[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|原生資源的類型應該是可處置|  
 |[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|將 P/Invokes 移到 NativeMethods 類別|  
 |[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|不要隱藏基底類別方法|  
-|[CA1063 必須](../code-quality/ca1063-implement-idisposable-correctly.md)|正確實作 IDisposable|  
+|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|正確實作 IDisposable|  
 |[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|不會引發例外狀況中的非預期的位置|  
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免重複的快速鍵|  
 |[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke 進入點應該要存在|  
 |[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes 不應該為可見|  
 |[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|自動配置類型不應該是 COM 可見|  
-|[CA1404 必須](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|在 P/Invoke 之後立即呼叫 GetLastError|  
+|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|在 P/Invoke 之後立即呼叫 GetLastError|  
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|  
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該符合 COM 註冊方法|  
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|移除空的完成項|  
-|[CA1900 實](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植|  
+|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植|  
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植|  
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|請勿鎖定具有弱式識別的物件|  
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|檢閱 SQL 查詢有安全性弱點|  
-|[CA2101 必須](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|指定 P/Invoke 字串引數的封送處理|  
+|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|指定 P/Invoke 字串引數的封送處理|  
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|檢閱實值類型的宣告式安全性|  
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見|  
 |[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|受保護的類型不應該公開欄位|  
@@ -84,5 +82,5 @@ ms.lasthandoff: 12/22/2017
 |[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable 類型必須標記 serializableattribute|  
 |[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|正確實作序列化方法|  
 |[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|正確實作 ISerializable|  
-|[CA2241 必須](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|提供格式化方法的正確引數|  
+|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|提供格式化方法的正確引數|  
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|正確測試 NaN|

@@ -1,12 +1,10 @@
 ---
-title: "註釋函式參數和傳回值 |Microsoft 文件"
-ms.custom: 
+title: 註釋函式參數和傳回值 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文章說明簡單的函式參數的註解一般用法： 純量和結構和類別的指標，和大部分的緩衝區類型。  本文也會顯示常見的使用模式的附註。 功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ ms.lasthandoff: 12/22/2017
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     在此範例中，呼叫端提供的緩衝區`size`元素`p1`。  `MyStringCopy`會使這些項目的有效。 更重要的是，`_Null_terminated_`上的註解`PWSTR`表示`p1`後的狀態是以 null 結束。  如此一來，有效的項目數目是仍然完整定義，但不需要特定的項目計數。  
+     在此範例中，呼叫端提供的緩衝區`size`元素`p1`。  `MyStringCopy` 會使這些項目的有效。 更重要的是，`_Null_terminated_`上的註解`PWSTR`表示`p1`後的狀態是以 null 結束。  如此一來，有效的項目數目是仍然完整定義，但不需要特定的項目計數。  
   
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`variant 類似函式時，才會使用`wchar_t`會。  
   
@@ -496,7 +494,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   
