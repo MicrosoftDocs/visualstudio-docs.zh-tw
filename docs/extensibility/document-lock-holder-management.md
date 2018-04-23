@@ -1,27 +1,23 @@
 ---
-title: "鎖定擁有者管理的文件 |Microsoft 文件"
-ms.custom: 
+title: 鎖定擁有者管理的文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65f5a38f5d4da0986b7f95c9287a94e657efa9c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 執行文件資料表 (RDT) 維護的計數為開啟的文件和它們的任何編輯鎖定。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件。 修改多個檔案的圖形化使用者介面的設計工具通常會使用這項功能。  
@@ -45,6 +41,6 @@ ms.lasthandoff: 12/22/2017
   
  多次 UI 設計工具，以程式設計方式修改程式碼檔會對多個檔案進行變更。 在此情況下<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>方法會處理一或多個文件，藉由儲存**您要將變更儲存到下列項目嗎？**  對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行中的文件表格](../extensibility/internals/running-document-table.md)   
  [持續性與執行中的文件資料表](../extensibility/internals/persistence-and-the-running-document-table.md)

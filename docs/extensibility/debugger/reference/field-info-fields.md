@@ -2,28 +2,24 @@
 title: FIELD_INFO_FIELDS |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - FIELD_INFO_FIELDS
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95812aa634e799b5594c0cae9f4d2c3d397ca945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d74f39ce8e9e350c791371f20b7401d685fb1d18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 指定要擷取的相關資訊[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
@@ -78,9 +74,9 @@ public enum enum_FIELD_INFO_FIELDS {
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

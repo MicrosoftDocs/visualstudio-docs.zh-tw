@@ -1,28 +1,26 @@
 ---
-title: "什麼 &#39;的新原始檔控制外掛程式 API 版本 1.2 |Microsoft 文件"
-ms.custom: 
+title: 什麼&#39;s 來源中的新控制的外掛程式 API 版本 1.2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.2
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7f9272f034e8f8679fe832ecd628e64ab64af515
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 409c862244b47970629ab57c6417dfc7f3b10a1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什麼 &#39; s 原始檔控制外掛程式 API 版本 1.2 的新功能
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什麼&#39;s 來源中的新控制的外掛程式 API 版本 1.2
 本章節強調原始檔控制外掛程式 API 1.2 版中的進階原始檔控制功能。 以下列出 1.2 版中的新功能：  
   
 ## <a name="changes"></a>變更  
@@ -41,5 +39,5 @@ ms.lasthandoff: 12/22/2017
  [從 .Proj 和 .Sln 檔案移除原始檔控制資訊](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
  說明如何原始檔控制外掛程式 API 版本 1.2 儲存專案和方案的相關資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

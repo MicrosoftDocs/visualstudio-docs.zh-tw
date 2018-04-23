@@ -1,27 +1,25 @@
 ---
-title: "儲存自訂的文件 |Microsoft 文件"
-ms.custom: 
+title: 儲存自訂的文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, saving custom documents
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2b19c6ba222644bc9d5fb97874f50bf6a6aa59d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5425a1c35816fd85847915029e3b6f2da1ed75a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂的文件
 環境控制代碼**儲存**，**存**，和**全部儲存**命令。 當使用者按一下**儲存**，**存**，**或 全部儲存**上**檔案**功能表或關閉方案，導致 全部儲存，下列程序。  
@@ -46,6 +44,6 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  如果您實作您自己的持續性，請務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法，以節省時間。 這個方法會檢查並確定它是安全儲存檔案 （例如，檔案不是唯讀）。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)

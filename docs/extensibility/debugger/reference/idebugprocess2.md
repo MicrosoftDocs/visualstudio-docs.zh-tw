@@ -2,28 +2,24 @@
 title: IDebugProcess2 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 77adecb0f3aef5a9c9d0fc8a05e6b44016dd9ae6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此介面代表連接埠上執行的處理序。 如果連接埠是本機連接埠，則`IDebugProcess2`通常表示本機電腦上的實體程序。  
@@ -72,9 +68,9 @@ IDebugProcess2 : IUnknown
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   

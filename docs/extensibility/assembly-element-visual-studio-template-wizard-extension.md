@@ -2,29 +2,25 @@
 title: Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>組件項目 (Visual Studio 範本精靈擴充)
 指定的名稱或實作的組件的強式名稱`IWizard`介面。  
@@ -45,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -93,7 +89,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -1,12 +1,10 @@
 ---
-title: "專案 |Microsoft 文件"
-ms.custom: 
+title: 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - custom tools [Visual Studio SDK]
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b2ca4edabcee9f561dea51ea4b579ce194d13fa8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projects"></a>專案
 在 Visual Studio 專案是容器，開發人員用來組織原始程式碼檔和其他資源，會出現在**方案總管 中**。 一般而言，專案是檔案 （例如，C# 專案.csproj 檔案），儲存原始程式檔和資源，例如點陣圖檔案的參考。 專案可讓您組織、 建置、 偵錯及部署原始程式碼，請參考 Web 服務、 資料庫和其他資源。 Vspackage 可以擴充 Visual Studio 專案系統的三個層面：*專案類型*，*專案子類型*，和*自訂工具*。  

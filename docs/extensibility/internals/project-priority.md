@@ -2,26 +2,22 @@
 title: 專案優先順序 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae692249ea952970b096825c8f6968158eb2f17f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-priority"></a>專案優先順序
 專案項目通常是在方案中只能有一個專案的成員。 因此，在 IDE 可以輕易地判斷哪一個專案用來開啟項目中。 不過，如果項目是多個專案的成員，IDE 會使用優先順序配置來判斷最佳的專案開啟的項目。  
@@ -38,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   指定的最高優先順序的專案會指定要開啟的文件的內容。 如果兩個專案會傳回相同的優先順序值，請在作用中專案是慣用。 如果方案中沒有專案回應，它可以開啟文件，IDE 會將文件放在其他檔案專案中。 如需詳細資訊，請參閱[其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)   
  [如何： 開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

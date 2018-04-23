@@ -1,23 +1,21 @@
 ---
-title: "常見問題集： 將增益集轉換為 VSPackage 擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 常見問題集： 將增益集轉換為 VSPackage 擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是有關如何將 Visual Studio 增益集轉換為 VSIX 擴充功能的一些常見問題集問題的答案。  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>可以轉換我增益集的專案加入 VSIX 專案嗎？  
  無法直接加入 VSIX 專案轉換的增益集專案，因為在 VSIX 專案中使用的機制不是在增益集專案中的相同。 VSIX 專案範本，再加上正確的專案項目範本有大量程式碼，讓它相當容易，才能啟動、 執行做為 VSIX 擴充功能。  
   
-##  <a name="BKMK_StartDeveloping"></a>如何開始開發 VSIX 擴充功能？  
+##  <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？  
  以下是讓 VSIX 的功能表命令的方式：  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要建立 VSIX 擴充功能有功能表命令  
@@ -56,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
      在**工具**功能表 （在實驗執行個體中） 您應該會看到名為按鈕**我命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**內 TestVSPackagePackage.MenuItemCallback()**。  
   
-##  <a name="BKMK_RunAddin"></a>如何在 VSPackage 中執行我的增益集程式碼？  
+##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  
   
 -   由功能表命令觸發 (程式碼在 `IDTCommandTarget.Exec` 方法中)  

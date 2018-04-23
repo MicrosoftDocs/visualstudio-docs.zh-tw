@@ -1,36 +1,32 @@
 ---
-title: "BuildProjectOnLoad （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: BuildProjectOnLoad （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Visual Studio 樣板)
 指定是否會在建立之後立即建置專案。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>語法  
@@ -45,7 +41,7 @@ ms.lasthandoff: 02/01/2018
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -60,7 +56,7 @@ ms.lasthandoff: 02/01/2018
  此文字必須`true`或`false`，指出是否會在建立之後立即建置專案。  
   
 ## <a name="remarks"></a>備註  
- `BuildProjectOnLoad`是選擇性屬性。 預設值是 `false`。  
+ `BuildProjectOnLoad` 是選擇性屬性。 預設值是 `false`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  
@@ -90,7 +86,7 @@ ms.lasthandoff: 02/01/2018
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [TemplateContent 項目 （Visual Studio 範本）](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

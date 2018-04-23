@@ -1,26 +1,24 @@
 ---
-title: "運算式評估工具實作策略 |Microsoft 文件"
-ms.custom: 
+title: 運算式評估工具實作策略 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 48b871eeccb5ff561ef4b95689f12a9f58302bc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e67b2496c2e30428cd4cc830526e53cf0cc61fdd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具實作策略
 > [!IMPORTANT]
@@ -31,8 +29,8 @@ ms.lasthandoff: 12/22/2017
 ## <a name="discussion"></a>討論  
  可能的實作順序開頭實作[IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)。 [剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)和[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)方法需要實作，以顯示 [區域變數]。 呼叫`IDebugExpressionEvaluator::GetMethodProperty`傳回`IDebugProperty2`物件，代表一種方法： 也就是[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 方法本身不會顯示在**區域變數**視窗。  
   
- [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)接下來應該實作方法。 偵錯引擎 (DE) 呼叫此方法來取得本機變數和引數的清單傳遞`IDebugProperty2::EnumChildren``guidFilter`引數的`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren`呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，結合在單一的列舉中的結果。 請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊。  
+ [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)接下來應該實作方法。 偵錯引擎 (DE) 呼叫此方法來取得本機變數和引數的清單傳遞`IDebugProperty2::EnumChildren``guidFilter`引數的`guidFilterLocalsPlusArgs`。 `IDebugProperty2::EnumChildren` 呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)和[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)，結合在單一的列舉中的結果。 請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [實作運算式評估工具](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)

@@ -2,29 +2,25 @@
 title: IDebugBoundBreakpoint2::Enable |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugBoundBreakpoint2::Enable
 helpviewer_keywords:
 - Enable method
 - IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0372595eb0848167bcc8baac307cd6d4bd5fc01f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cd5b36d8985ef36b67d5983113989a2f60bf588
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。  
@@ -100,6 +96,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

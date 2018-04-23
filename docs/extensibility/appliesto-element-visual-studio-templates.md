@@ -1,23 +1,21 @@
 ---
-title: "AppliesTo 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: AppliesTo 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 項目 (Visual Studio 樣板)
 指定用於比對一個或多個功能的選擇性運算式  (請參閱 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>)。 專案類型會透過階層架構將功能公開為 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> 屬性。 如此一來，範本就可以在具有通用功能的多個專案類型之間共用。  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -56,9 +54,9 @@ ms.lasthandoff: 12/22/2017
   
  有效的運算式語法定義如下：  
   
--   功能運算式，例如"(VisualC &#124;CSharp) + (MSTest &#124;NUnit)"。  
+-   功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   "&#124;"是 OR 運算子。  
+-   「&#124;"是 OR 運算子。  
   
 -   "&" 和 "+" 字元都是 AND 運算子。  
   
@@ -68,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Null 或空白運算式會判斷值為相符項目。  
   
--   專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~ &#124; & %$@^()={} [] <> 嗎？ \t\b\n\r  
+-   專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^()={} [] <> 嗎？ \t\b\n\r  
   
 ## <a name="example"></a>範例  
  下列範例將示範三個不同的範本。 `Template1` 適用於所有 C# 專案類型，或是任何支援 `WindowsAppContainer` 功能的其他專案類型。 `Template2` 適用於任何類型的所有 C# 專案。 `Template3` 適用於不是 `WindowsAppContainer` 專案的 C# 專案。  
@@ -100,6 +98,6 @@ ms.lasthandoff: 12/22/2017
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
