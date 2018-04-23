@@ -1,29 +1,25 @@
 ---
-title: "以動態方式加入功能表項目 |Microsoft 文件"
-ms.custom: 
+title: 以動態方式加入功能表項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: bf7c9f8da800e827ac4b1993c55d4d96c8ca9d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>以動態方式加入功能表項目
 您可以在執行階段將功能表項目，藉由指定`DynamicItemStart`命令預留位置按鈕定義中，在 Visual Studio 命令表 (.vsct) 檔案中，旗標，然後定義 （在程式碼） 的數目功能表項目以顯示和處理命令。 當載入 VSPackage 時，動態功能表項目取代預留位置。  
@@ -362,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
   
 4.  當您關閉方案，或開啟含有只能執行一個專案的方案時，工具列圖示應該就會消失。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
  [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

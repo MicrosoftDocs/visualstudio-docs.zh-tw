@@ -1,12 +1,10 @@
 ---
-title: "偵錯 SDK Helper |Microsoft 文件"
-ms.custom: 
+title: 偵錯 SDK Helper |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK 進行偵錯的協助程式
 這些函式和宣告是 c + + 中實作偵錯引擎，運算式評估工具，符號提供者的全域 helper 函式。  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  儲存所有的 Guid，格式為`{GUID}`。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>偵錯引擎  
- 以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine`偵錯引擎的度量的類型名稱，且對應至*[公制 type]*上述登錄樹狀子目錄中。  
+ 以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 偵錯引擎的度量的類型名稱，且對應至*[公制 type]*上述登錄樹狀子目錄中。  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[連接埠供應商 guid]*|如果有的話，連接埠供應商的 GUID。 許多偵錯引擎會使用預設連接埠供應商，並因此不會指定自己的供應商。 在此情況下，子機碼`PortSupplier`將不會。|  
   
 ### <a name="port-suppliers"></a>連接埠供應商  
- 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier`是一個連接埠的供應商的度量的類型名稱，而對應*[公制 type]*。  
+ 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 是一個連接埠的供應商的度量的類型名稱，而對應*[公制 type]*。  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[類別 guid]*|實作此連接埠供應商類別 GUID|  
   
 ### <a name="symbol-providers"></a>符號提供者  
- 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider`是的符號提供者的度量的類型名稱，而對應*[公制 type]*。  
+ 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 是的符號提供者的度量的類型名稱，而對應*[公制 type]*。  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[類別 guid]*|類別會實作這個符號提供者的 GUID|  
   
 ### <a name="expression-evaluators"></a>運算式評估工具  
- 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator`運算式評估工具的度量的類型名稱，且對應至*[公制 type]*。  
+ 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的度量的類型名稱，且對應至*[公制 type]*。  
   
 > [!NOTE]
 >  指標類型`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設運算式評估工具的所有度量的變更將會移到適當的運算式評估工具度量函式 (的版面配置`ExpressionEvaluator`子機碼有點複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[偵錯引擎 guid]*|這個運算式評估工具的運作方式與偵錯引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>運算式評估工具擴充功能  
- 以下是標準的運算式評估工具擴充功能中登錄的組織。 `EEExtensions`是度量的型別名稱的運算式評估工具擴充功能，而對應*[公制 type]*。  
+ 以下是標準的運算式評估工具擴充功能中登錄的組織。 `EEExtensions` 是度量的型別名稱的運算式評估工具擴充功能，而對應*[公制 type]*。  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[延伸模組 guid]*|運算式評估工具延伸模組的 GUID|  
   
 ### <a name="exceptions"></a>例外狀況  
- 以下是在登錄中的例外狀況度量資訊的組織。 `Exception`例外狀況的度量的類型名稱，且對應至*[公制 type]*。  
+ 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量的類型名稱，且對應至*[公制 type]*。  
   
  `Exception`\  
   
@@ -428,5 +426,5 @@ HRESULT EnumMetricSections(
   
  程式庫： libs\ad2de.lib、 libs\dbgmetric.lib  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

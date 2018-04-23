@@ -2,23 +2,20 @@
 title: 在 Visual Studio 中編製索引的工作區 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3163e98c-1c79-48a7-813f-7923be894ba1
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf3a094184e2d57b4a066234d84a6ab6380510b
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 5004db0d895d1fdc697c18606c346c24cd484527
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workspace-indexing"></a>工作區的索引
 

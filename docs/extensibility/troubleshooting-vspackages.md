@@ -1,26 +1,24 @@
 ---
-title: "疑難排解 Vspackage |Microsoft 文件"
-ms.custom: 
+title: 疑難排解 Vspackage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73c754de72238671dd10235e792c43fb6d0a1b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage
 以下是常見的問題，您可能有與您的 VSPackage，並解決問題的秘訣。  
@@ -127,5 +125,5 @@ ms.lasthandoff: 12/22/2017
   
  請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

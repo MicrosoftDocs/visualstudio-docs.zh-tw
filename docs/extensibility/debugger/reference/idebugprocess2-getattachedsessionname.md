@@ -2,28 +2,24 @@
 title: IDebugProcess2::GetAttachedSessionName |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::GetAttachedSessionName
 helpviewer_keywords:
 - IDebugProcess2::GetAttachedSessionName
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca045a1fee17891fbe053d1d072a4affa41c787
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 34e404fe33858c1db7d9dfb103df7b4e0bb9fb91
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 取得正在偵錯此處理程序之工作階段的名稱。 這項資訊可以顯示一個 IDE 正在偵錯特定電腦上的特定處理程序的使用者。  
@@ -45,5 +41,5 @@ HRESULT GetAttachedSessionName(
 ## <a name="return-value"></a>傳回值  
  這個方法一律會傳回`E_NOTIMPL`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

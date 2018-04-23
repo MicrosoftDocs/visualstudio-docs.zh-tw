@@ -1,26 +1,24 @@
 ---
-title: "註冊的運算式評估工具 |Microsoft 文件"
-ms.custom: 
+title: 註冊的運算式評估工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9a8aa71d6c529aa4d06acf1d887f10a58cd8367e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-an-expression-evaluator"></a>註冊的運算式評估工具
 > [!IMPORTANT]
@@ -117,7 +115,7 @@ namespace EEMC
   
     |度量|描述|  
     |------------|-----------------|  
-    |`metricCLSID`|`CLSID`EE class factory 的|  
+    |`metricCLSID`|`CLSID` EE class factory 的|  
     |`metricName`|可顯示的字串為 EE 的名稱|  
     |`metricLanguage`|評估旨在 EE 是語言的名稱|  
     |`metricEngine`|`GUID`偵錯引擎 (DE) 可搭配此 EE 的 s|  
@@ -214,6 +212,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [適用於偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

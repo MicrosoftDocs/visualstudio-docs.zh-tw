@@ -1,12 +1,10 @@
 ---
-title: "工作階段偵錯 Manager |Microsoft 文件"
-ms.custom: 
+title: 工作階段偵錯 Manager |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - session debug manager, unifying session views
 - session debug manager, broadcasting
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d7acd147fd8d2b73b2172900baf7e1f49808e9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 001c0b954cd47b9825a6982f2474d6fd6d415e23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
 工作階段的偵錯管理員 (SDM) 會管理任何數目的偵錯引擎 (DE) 偵錯任意數目的任意數目的機器上的多個處理程序中的程式。 除了多工器偵錯引擎，SDM 會提供 ide 偵錯工作階段的統一的檢視。  
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
  SDM 不會追蹤目前的處理序、 執行緒或堆疊框架。 處理程序、 程式和執行緒資訊傳送給特定的偵錯事件搭配 SDM。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

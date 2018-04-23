@@ -2,28 +2,24 @@
 title: IDebugCoreServer3::DiagnoseWebDebuggingError |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 helpviewer_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
-caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b93a82bfd79abe6400e8e1bb213b00154fbbf16
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d0facdbd5da7d17061039e0a9e7faed2be3bbe4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 嘗試判斷為何 auto-attach 失敗。  
@@ -55,5 +51,5 @@ int DiagnoseWebDebuggingError(
 |`S_WEBDBG_DEBUG_VERB_BLOCKED`|無法偵錯在遠端伺服器上，可能是因為權限不足，或因為未啟用偵錯動詞命令。|  
 |`E_WEBDBG_DEBUG_VERB_BLOCKED`|網頁伺服器已經鎖定，並且封鎖 DEBUG 動詞命令，才能啟用偵錯。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

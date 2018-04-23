@@ -1,26 +1,24 @@
 ---
-title: "相關的服務和介面 (原始檔控制 VSPackage) |Microsoft 文件"
-ms.custom: 
+title: 相關的服務和介面 (原始檔控制 VSPackage) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1f9e8e90fdda61524a9af107df452bc2b13cd90c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
 此區段會列出所有的原始檔控制中的 VSPackage 相關介面[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 原始檔控制 VSPackage 實作這些介面部分，並使用其他人來完成原始檔控制工作。  
@@ -65,5 +63,5 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>|這個介面用來儲存方案的選項 (.suo) 檔案中的原始檔控制設定。 這可能包括使用者專屬的原始檔控制設定，例如目前使用者的登錄位置。|原始檔控制 VSPackage|建議|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>|這個介面用來監視事件中，才能執行作業，例如簽入之前關閉方案，或開啟專案時，取得新的檔案從原始檔控制的專案檔案。|原始檔控制 VSPackage|建議|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)

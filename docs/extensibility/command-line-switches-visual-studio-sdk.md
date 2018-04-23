@@ -1,27 +1,25 @@
 ---
-title: "命令列參數 (Visual Studio SDK) |Microsoft 文件"
-ms.custom: 
+title: 命令列參數 (Visual Studio SDK) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, command-line switches
 - command-line switches
 - command line, switches
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 62ec48106915f43ace3aed370e652e036e97baa0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3680163c4b61313c1bbc3b64b39640e9dcc88afa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>命令列參數 (Visual Studio SDK)
 Devenv.exe、 可執行檔啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)，支援專門用來開發 Vspackage 的命令列參數。 Vspackage 也可以提供自己的參數在 Devenv 命令列。 下列主題提供如何在 IDE 中使用命令列參數的相關資訊。  

@@ -2,28 +2,24 @@
 title: IDebugFunctionObject::CreatePrimitiveObject |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72dd6d804c37496d2615ccd086ee095c75510d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 477bdb12cef6711c6b946b3ddd8d9550e48c01b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 建立基本資料的物件，例如簡單的整數。  
@@ -57,5 +53,5 @@ int CreatePrimitiveObject(
 ## <a name="remarks"></a>備註  
  呼叫這個方法來建立物件，表示的基本物件是由表示的函式的參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。 例如，如果運算式字串為"myString(5)"，這個方法會用於建立物件，表示 5 的整數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

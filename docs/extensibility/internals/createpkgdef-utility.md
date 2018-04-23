@@ -1,28 +1,26 @@
 ---
-title: "CreatePkgDef 公用程式 |Microsoft 文件"
-ms.custom: 
+title: CreatePkgDef 公用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package definition
 - create pkgdef
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 採用.dll 檔案，以做為參數的 Visual Studio 擴充功能，並建立.dll 伴隨著.pkgdef 檔。 .Pkgdef 檔包含會否則被寫入系統登錄時安裝擴充功能的所有資訊。  
@@ -57,5 +55,5 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 > [!NOTE]
 >  **擴充功能和更新**工具無法用來存取擴充功能，除非它會安裝為 VSIX 套件的一部分。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [CreateExpInstance 公用程式](../../extensibility/internals/createexpinstance-utility.md)

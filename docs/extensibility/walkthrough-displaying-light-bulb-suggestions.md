@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 顯示燈泡建議 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 顯示燈泡建議 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 97ab32d4bfe0772d7b50ea1ca5a0b0ec143ed536
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 750e3b0915478b4249ce8db1ac294c1f2a3006f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說： 顯示燈泡建議
 燈泡是 Visual Studio 編輯器中使用的圖示會展開以顯示一組動作，例如內建的程式碼分析器或重構程式碼來識別問題的修正。  

@@ -1,27 +1,23 @@
 ---
-title: "網站支援 |Microsoft 文件"
-ms.custom: 
+title: 網站支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d3da310c6695598eef36998cc562f6d477eff29
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support"></a>網站支援
 網站專案系統會建立 Web 專案的專案系統。 Web 專案建立 Web 應用程式。 網站專案會產生一個可執行檔，每個具有相關聯的程式碼的網頁。 從原始程式碼檔案 /App_Code 資料夾中產生其他可執行檔。  

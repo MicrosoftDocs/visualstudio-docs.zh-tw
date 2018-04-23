@@ -1,26 +1,24 @@
 ---
-title: "測試區域 8： 外掛程式切換 |Microsoft 文件"
-ms.custom: 
+title: 測試區域 8： 外掛程式切換 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 534bd9338181c5b682779b62a9c118a5ccaf8cda
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8： 外掛程式切換
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 具有使用者介面 (UI)，若要變更目前的原始檔控制外掛程式。 這個測試區域會提供挑選的外掛程式用於原始檔控制方案的程序中的測試案例。  
@@ -56,5 +54,5 @@ ms.lasthandoff: 12/22/2017
 |------------|----------------|--------------------------------|  
 |外掛程式之方案的變更|1.選取外掛程式在測試為目前 (**工具** -> **選項** -> **原始檔控制** -> **外掛程式選取項目**)。<br />2.建立新的專案和方案。<br />3.將方案加入原始檔控制。<br />4.從原始檔控制方案解除繫結 (使用**變更原始檔控制**對話方塊)。<br />5.選取另一個外掛程式 (例如， [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />6.如果已卸載，請重新載入解決方案從磁碟。<br />7.將方案加入原始檔控制。<br />8.從原始檔控制方案解除繫結 (使用**變更原始檔控制**對話方塊)。<br />9.選取 下一次測試外掛程式。<br />10.如果卸載，請重新載入解決方案的磁碟。<br />11.將方案繫結至原始位置 (使用**變更原始檔控制**對話方塊)。|使用所選方案加入至原始檔控制外掛程式。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

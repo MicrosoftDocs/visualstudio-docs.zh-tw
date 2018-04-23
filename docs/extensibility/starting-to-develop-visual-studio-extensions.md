@@ -1,26 +1,24 @@
 ---
-title: "開始開發 Visual Studio 擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 開始開發 Visual Studio 擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 如果您永遠不會編寫 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**本頁很有幫助？**螢幕的底部) 以取得您想要。  
@@ -60,7 +58,7 @@ ms.lasthandoff: 01/05/2018
   
 -   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>VSSDK 提供何種專案範本？  
+##  <a name="BKMK_ProjectTemplate"></a> VSSDK 提供何種專案範本？  
  兩個主要類型的擴充功能是 Vspackage 和 MEF 擴充功能。 一般情況下，VSPackage 擴充功能可用的擴充功能的使用或擴充命令、 工具視窗和專案。 MEF 擴充功能可用來擴充或自訂 Visual Studio 編輯器。  
   
  針對 Visual C# 和 Visual Basic 的擴充功能，VSSDK 提供空的 VSIX 專案範本，就可以將新的項目範本建立功能表命令、 工具視窗，以及編輯器延伸模組搭配使用。 您也可以使用此範本封裝專案範本、 程式碼片段和其他成品以散發給其他使用者。  

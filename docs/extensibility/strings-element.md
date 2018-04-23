@@ -1,26 +1,24 @@
 ---
-title: "字串項目 |Microsoft 文件"
-ms.custom: 
+title: 字串項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c5994144f07b8af84f61d7833737f45593c551b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strings-element"></a>字串的項目
 字串元素必須包含至少一個**ButtonText**子項目。 所有其他子項目是選擇性的。 無效的 XML 字元，例如 '&' 和 '<' 必須編碼為實體 ('&amp;'和'&lt;' 等)。  
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |語言|選擇性。 語言 ="。"。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -64,5 +62,5 @@ ms.lasthandoff: 12/22/2017
 |[Menu 元素](../extensibility/menu-element.md)|定義單一功能表項目。|  
 |[Combo 元素](../extensibility/combo-element.md)|定義了出現在下拉式方塊中的命令。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

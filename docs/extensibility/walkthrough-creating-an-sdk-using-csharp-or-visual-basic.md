@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 建立使用 C# 或 Visual Basic SDK |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立使用 C# 或 Visual Basic SDK |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic 的 SDK
 在本逐步解說，您將學習如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 為 Visual Studio 擴充功能 (VSIX)。 您將完成下列程序：  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createClassLibrary"></a>若要建立 SimpleMath Windows 執行階段元件  
+##  <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件  
   
 1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 9. 在**方案總管 中**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**建置**。  
   
-##  <a name="createVSIX"></a>若要建立 SimpleMathVSIX 擴充功能專案  
+##  <a name="createVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能專案  
   
 1.  在捷徑功能表上**方案 'SimpleMath'**  節點，選擇**新增**，**新專案**。  
   
@@ -154,7 +152,7 @@ ms.lasthandoff: 12/22/2017
   
 30. 選擇**安裝**按鈕，等候安裝完成，然後再重新啟動 Visual Studio。  
   
-##  <a name="createSample"></a>若要建立範例應用程式使用的類別庫  
+##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
 1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
@@ -168,7 +166,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  在 詳細資料 窗格中，選擇 **簡單數學 SDK**延伸模組。  
   
-     您的 SDK 的其他資訊隨即顯示。 您可以選擇**更多資訊**開啟 http://www.msdn.microsoft.com，為您稍早在本逐步解說 SDKManifest.xml 檔案中所指定的連結。  
+     您的 SDK 的其他資訊隨即顯示。 您可以選擇**更多資訊**連結可開啟http://www.msdn.microsoft.com，如您在稍早在本逐步解說 SDKManifest.xml 檔案中指定。  
   
 7.  在**參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇 [**確定**] 按鈕。  
   
@@ -237,13 +235,13 @@ ms.lasthandoff: 12/22/2017
   
 12. 選擇 F5 鍵執行應用程式。  
   
-13. 在應用程式中輸入任何兩個數字，選擇一項運算，然後選擇 **=**   按鈕。  
+13. 在應用程式中輸入任何兩個數字，選擇一項運算，然後選擇**=**  按鈕。  
   
      正確的結果會出現。  
   
  您已成功建立和使用擴充功能 SDK。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [逐步解說： 建立使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

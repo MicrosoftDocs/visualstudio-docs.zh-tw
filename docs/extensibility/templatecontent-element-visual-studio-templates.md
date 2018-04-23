@@ -1,29 +1,25 @@
 ---
-title: "TemplateContent 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: TemplateContent 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0be1f5cdbd5fb4770724c53be2d939e68a0d9bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 01391248aee2fdb6eb8605be30056cf424a9f4d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 項目 (Visual Studio 範本)
 指定範本的內容。  
@@ -48,7 +44,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|指定是否要建置此方案，從範本建立專案。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -65,7 +61,7 @@ ms.lasthandoff: 12/22/2017
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本或入門套件的所有中繼資料。|  
   
 ## <a name="remarks"></a>備註  
- `TemplateContent`是必要項目。  
+ `TemplateContent` 是必要項目。  
   
 ## <a name="example"></a>範例  
  下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
@@ -94,6 +90,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

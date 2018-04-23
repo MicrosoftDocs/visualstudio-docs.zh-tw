@@ -1,12 +1,10 @@
 ---
-title: "Guid 和 Id 的 Visual Studio 工具列 |Microsoft 文件"
-ms.custom: 
+title: Guid 和 Id 的 Visual Studio 工具列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具列
 本主題列舉的 GUID 和 ID 值的 Visual Studio 整合式的開發環境 (IDE) 中包含的工具列和包含的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -138,7 +136,7 @@ ms.lasthandoff: 12/22/2017
 |記憶體 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1...4<br /><br /> IDG_MEMORY_COLUMNS1...4|  
 |處理序|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [新增工具列加入工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

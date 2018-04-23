@@ -2,24 +2,20 @@
 title: 色彩和樣式設定適用於 Visual Studio |Microsoft 文件
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的色彩
@@ -79,7 +75,7 @@ Visual Studio 原始程式碼包含數個封裝定義檔包含的語彙基元名
 
 有時候，您會想要允許使用者自訂 UI，例如當您建立程式碼編輯器或設計介面。 可自訂的 UI 元件位於**字型和色彩**區段**工具&gt;選項**對話方塊中，使用者可以選擇變更的前景色彩、 背景色彩，或兩者。
 
-![Tools &gt; Options dialog](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />工具&gt;選項 對話方塊
+![工具&gt;選項 對話方塊](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />工具&gt;選項 對話方塊
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor 服務
 Visual Studio 提供的環境色彩服務，也稱為 VSColor 服務或 shell 色彩服務。 此服務可讓您繫結至集，其中包含每個佈景主題色彩的名稱 / 值色彩的 UI 元素的色彩值。 VSColor 服務必須用於所有 UI 項目，使色彩會自動變更以反映目前使用者選取的佈景主題，並使 UI 繫結至環境色彩服務將會整合新的佈景主題在未來版本的 Visual Studio。
@@ -302,7 +298,7 @@ Windows 會使用數種高對比系統層級主題增加文字、 背景和影�
 | ControlLight |-自動隱藏 索引標籤框線<br />下拉式方塊和下拉式清單的框線<br />-停駐目標背景和框線 |
 | ControlLightLight | -已選取，已取得焦點的暫時框線 |
 | ControlText | 下拉式方塊和下拉式清單中的字符<br />工具視窗取消選取索引標籤文字 |
-| GrayText |的框線、 下拉式清單圖像 （glyph）、 文字和功能表項目文字下拉式方塊和下拉式清單中已停用<br />-已停用功能表文字<br />搜尋控制項 '搜尋選項' 標頭文字<br />搜尋控制項區段分隔符號 |
+| Graytext'> |的框線、 下拉式清單圖像 （glyph）、 文字和功能表項目文字下拉式方塊和下拉式清單中已停用<br />-已停用功能表文字<br />搜尋控制項 '搜尋選項' 標頭文字<br />搜尋控制項區段分隔符號 |
 | 反白顯示 | -所有暫留和已按下的背景和框線，除了下拉式方塊下拉式按鈕背景和文件以及溢位按鈕框線<br />-選取的項目背景 |
 | HighlightText | -所有和已按下的 foregrounds （文字和字符）<br />-具有焦點的工具視窗與文件 索引標籤視窗控制項的前景<br />-具有焦點的工具視窗標題列框線<br />-已取得焦點，選取暫時性索引標籤前景<br />暫留，然後按上的文件以及溢位按鈕框線<br />-選取的圖示框線|
 | HotTrack | -捲軸拇指背景和按上的框線<br />-捲軸箭號圖像上按下 |

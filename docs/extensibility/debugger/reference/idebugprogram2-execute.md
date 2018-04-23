@@ -2,28 +2,24 @@
 title: IDebugProgram2::Execute |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Execute
 helpviewer_keywords:
 - IDebugProgram2::Execute
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e53f13aea93de8f39c5802dd2a12598ad938f64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7f4e26a5c892e1c796a2b6e2f9371898db21f68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 會繼續執行此程式從已停止的狀態。 清除任何先前的執行狀態 （例如步驟），並在程式啟動重新執行。  
@@ -52,7 +48,7 @@ int Execute();
 > [!WARNING]
 >  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

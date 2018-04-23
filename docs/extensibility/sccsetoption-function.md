@@ -1,29 +1,25 @@
 ---
-title: "SccSetOption 函式 |Microsoft 文件"
-ms.custom: 
+title: SccSetOption 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式設定選項可控制行為的原始檔控制外掛程式。  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  如果`nOption`是`SCC_OPT_EVENTQUEUE`，IDE 會停用 （或重新啟用） 背景處理。 比方說，期間編譯，IDE 可能會指示原始檔控制外掛程式，以停止在閒置處理的任何類型。 之後在編譯中，它會重新啟用背景處理來保持最新的隨插即用中的事件佇列中。 對應至`SCC_OPT_EVENTQUEUE`值`nOption`，有兩個可能的值為`dwVal`，也就是`SCC_OPT_EQ_ENABLE`和`SCC_OPT_EQ_DISABLE`。  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- 如果值`nOption`是`SCC_OPT_HASCANCELMODE`，IDE，可讓使用者取消長時間作業。 設定`dwVal`至`SCC_OPT_HCM_NO`（預設值） 表示 IDE 有無取消 5d; 模式。 如果想要能夠取消使用者原始檔控制外掛程式必須提供自己的 [取消] 按鈕。 `SCC_OPT_HCM_YES`指出 IDE 提供取消作業，因此 SCC 外掛程式不需要它自己的 [取消] 按鈕，顯示的能力。 如果在 IDE 設定`dwVal`至`SCC_OPT_HCM_YES`，則已準備好回應`SCC_MSG_STATUS`和`DOCANCEL`訊息傳送至`lpTextOutProc`回呼函式 (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md))。 如果在 IDE 未設定這個變數，外掛程式不應該傳送這兩則訊息。  
+ 如果值`nOption`是`SCC_OPT_HASCANCELMODE`，IDE，可讓使用者取消長時間作業。 設定`dwVal`至`SCC_OPT_HCM_NO`（預設值） 表示 IDE 有無取消 5d; 模式。 如果想要能夠取消使用者原始檔控制外掛程式必須提供自己的 [取消] 按鈕。 `SCC_OPT_HCM_YES` 指出 IDE 提供取消作業，因此 SCC 外掛程式不需要它自己的 [取消] 按鈕，顯示的能力。 如果在 IDE 設定`dwVal`至`SCC_OPT_HCM_YES`，則已準備好回應`SCC_MSG_STATUS`和`DOCANCEL`訊息傳送至`lpTextOutProc`回呼函式 (請參閱[LPTEXTOUTPROC](../extensibility/lptextoutproc.md))。 如果在 IDE 未設定這個變數，外掛程式不應該傳送這兩則訊息。  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  如果 nOption 設`SCC_OPT_NAMECHANGEPFN`，和原始檔控制外掛程式及 IDE 讓它，外掛程式可以實際重新命名或移動檔案在原始檔控制作業期間。 `dwVal`會設定為型別的函式指標[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)。 在原始檔控制作業時，外掛程式可以呼叫此函式，在三個參數中傳遞。 這些是舊名稱 （以完整路徑） 的檔案，該檔案，以及一個指向具有 ide 的相關資訊的新名稱 （以完整路徑）。 在 IDE 中這個最後一個指標會傳送藉由呼叫`SccSetOption`與`nOption`設`SCC_OPT_USERDATA`，與`dwVal`指向資料。 此函式的支援是選擇性的。 VSSCI 隨-使用這項功能必須初始化的至其函式指標和使用者資料變數`NULL`，而且它必須呼叫重新命名函式，除非它具有其中一個。 它應該也準備，無法保留已授與它的值，或變更至新的呼叫，以回應`SccSetOption`。 這將不會進行原始檔控制命令的作業，但它可能會發生命令之間。  
@@ -86,7 +82,7 @@ SCCRTN SccSetOption(
 ## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
  如果`nOption`設`SCC_OPT_SHARESUBPROJ`，IDE 會測試是否從原始檔控制新增檔案時，原始檔控制外掛程式可以使用指定的本機資料夾。 值`dwVal`在此情況下並不重要參數。 如果使用這個外掛程式來指定檔案來源中的加入其中的本機目的資料夾 IDE 負責控制何時[SccAddFromScc](../extensibility/sccaddfromscc-function.md)呼叫時，則必須傳回外掛程式`SCC_I_SHARESUBPROJOK`時`SccSetOption`函式呼叫。 接著會使用 IDE`lplpFileNames`參數`SccAddFromScc`傳遞目的地資料夾中的函式。 外掛程式會使用該目的地資料夾將加入從原始檔控制的檔案。 如果外掛程式不會傳回`SCC_I_SHARESUBPROJOK`時`SCC_OPT_SHARESUBPROJ`設定選項時，IDE 會假設外掛程式無法將檔案加入只在目前的本機資料夾。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

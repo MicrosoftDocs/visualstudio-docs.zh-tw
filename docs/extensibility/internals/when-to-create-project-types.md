@@ -1,27 +1,23 @@
 ---
-title: "當建立專案類型 |Microsoft 文件"
-ms.custom: 
+title: 當建立專案類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f766619054ed1912d677ac08fad511cfd3a3dcb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 732d71e09d00cd5dbaa077b8a62e240fe401540b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自訂項目。 下列指導方針有助於您判斷是否為您的案例需要新的專案類型。  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="create-a-project-subtype"></a>建立專案子類型  
  您可以使用專案子類型，而不需要建立新的專案類型擴充的 managed 的專案類型。 專案子類型使用 COM 彙總，來擴充 Microsoft 以撰寫的 managed 的專案[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]。 COM 彙總，您可以重複使用的 managed 的專案的系統實作，並仍然自訂透過彙總，以及使用支援介面的特定案例。 如需專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [文件視窗和編輯器](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

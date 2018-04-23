@@ -1,26 +1,24 @@
 ---
-title: "支援專案和組態屬性 |Microsoft 文件"
-ms.custom: 
+title: 支援專案和組態屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 **屬性**視窗[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可顯示專案和組態屬性。 讓使用者可以設定您的應用程式的內容，您可以提供您自己的專案類型 屬性頁。  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>專案範本和組態屬性的持續性  
  專案和組態屬性會保存在專案檔中有任何檔案名稱副檔名，例如相關聯的專案類型、.csproj、.vbproj 和.myproj。 語言專案通常會使用範本檔案產生專案檔。 不過，有很多種實際專案類型和範本建立關聯。 如需詳細資訊，請參閱[範本目錄的描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- 將項目加入至範本檔案建立專案和組態屬性。 這些屬性便可使用的專案類型，會使用此範本建立的任何專案。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案和都使用 MPFProj[不在組建中： MSBuild 概觀](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)範本檔案的結構描述。 這些檔案具有每個組態的 PropertyGroup 區段。 專案的屬性通常會保存在有設定引數設定為 null 字串的第一個 PropertyGroup 區段中。  
+ 將項目加入至範本檔案建立專案和組態屬性。 這些屬性便可使用的專案類型，會使用此範本建立的任何專案。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案和都使用 MPFProj[不在組建中： MSBuild 概觀](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)範本檔案的結構描述。 這些檔案具有每個組態的 PropertyGroup 區段。 專案的屬性通常會保存在有設定引數設定為 null 字串的第一個 PropertyGroup 區段中。  
   
  下列程式碼會示範基本的 MSBuild 專案檔的開頭。  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage`類別和`Microsoft.VisualStudio.Package.ProjectNode`類別提供這些方法來保存 專案 和 組態屬性：  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保存專案屬性。  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`保存專案屬性。  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保存組態屬性。  
   
     > [!NOTE]
     >  實作`Microsoft.VisualStudio.Package.SettingsPage`和`Microsoft.VisualStudio.Package.ProjectNode`類別會使用`Microsoft.Build.BuildEngine`(MSBuild) 方法來取得及設定專案和組態屬性，從專案檔。  
@@ -94,7 +92,7 @@ ms.lasthandoff: 01/22/2018
   
  `MyConfigProp`組態屬性會出現在 [組態] 屬性頁面，為**我的組態屬性**分類中**我類別**。 如果選取此選項，則描述**我描述**，會出現在 [描述] 面板。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [加入和移除屬性頁](../../extensibility/adding-and-removing-property-pages.md)   
  [專案](../../extensibility/internals/projects.md)   
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

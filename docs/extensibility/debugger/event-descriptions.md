@@ -2,26 +2,22 @@
 title: 事件描述 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 600d9576d72dbd36b5ff7c2a0d9f0333f72dfafa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-descriptions"></a>事件描述
 每種類型的事件有特定的用途。  
@@ -50,5 +46,5 @@ ms.lasthandoff: 12/22/2017
 |執行緒名稱變更事件|當使用者變更執行緒的名稱時，就會傳送。|  
 |程式名稱變更事件|當使用者變更程式的名稱時，就會傳送。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [傳送事件](../../extensibility/debugger/sending-events.md)

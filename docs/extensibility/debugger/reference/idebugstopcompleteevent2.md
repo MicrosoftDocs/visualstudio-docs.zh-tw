@@ -1,25 +1,22 @@
 ---
-title: "IDebugStopCompleteEvent2 |Microsoft 文件"
-ms.custom: 
+title: IDebugStopCompleteEvent2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8941decfb4e64906c57b719df711ce8779df9c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ed73821021d3a993507db9925c512119fbb98ca1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -43,6 +40,6 @@ IDebugStopCompleteEvent2 : IUnknown
 
 標頭： msdbg.h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+命名空間： Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

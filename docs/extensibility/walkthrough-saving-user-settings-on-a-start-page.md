@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 在 [開始] 頁面上儲存使用者設定 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 [開始] 頁面上儲存使用者設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8ea4d4a07ed9f61f20ca2b3f79b99d3a2ebfa0b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說： 在 [開始] 頁面上儲存使用者設定
 您可以保存使用者設定起始頁。 依循這個逐步解說，您可以建立將設定儲存至登錄中，當使用者按一下按鈕時，並接著會擷取該設定，每次在開始頁面載入的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設起始頁 XAML 會呼叫該控制項，您不必修改本身的起始頁。  
@@ -203,6 +201,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="next-steps"></a>後續步驟  
  您可以修改這個使用者控制項，以儲存並擷取任何數目的自訂設定來取得及設定使用不同的值，從不同的事件處理常式`SettingsStore`屬性。 只要您使用不同`propertyName`參數，每次呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>，值不會覆寫彼此的登錄中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
  [將 Visual Studio 命令加入至起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

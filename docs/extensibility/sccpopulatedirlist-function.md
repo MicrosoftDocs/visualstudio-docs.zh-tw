@@ -1,29 +1,25 @@
 ---
-title: "SccPopulateDirList 函式 |Microsoft 文件"
-ms.custom: 
+title: SccPopulateDirList 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccPopulateDirList
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6e63df26d3c4a9b6539276aa97f69e349b83c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5315f3156f71310c92069ec3743232e98818b9a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 此函式判斷哪一個目錄以及 （選擇性） 檔案會儲存在原始檔控制，指定要檢查的目錄清單。  
@@ -71,7 +67,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>備註  
  只有目錄和 （選擇性） 實際上是在原始檔控制儲存機制的檔案名稱會傳遞至回呼函式中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   

@@ -1,26 +1,24 @@
 ---
-title: "程式 |Microsoft 文件"
-ms.custom: 
+title: 程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 03b4885e653d879e3aaec1d9a68bc9be144cb676
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dd3d1c1e72524c393fdb3adc4477ea9ae374fbfa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programs"></a>Programs
 偵錯工具就架構而言，**程式**:  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 -   由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)介面，建立程式已連接之前，或做為附加的處理序，視實作而定的一部分。 根據對應時的連接埠列舉處理序的程式，會建立每個程式[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)傳遞做為引數的介面[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 雖然偵錯引擎也會產生`IDebugProgram2`介面來代表程式，這些程式不會建立符合程式節點。 `IDebugProgramNode2` DE 所建立的介面可用來實際偵錯時所建立的連接埠僅適用於探索處理程序中執行的程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [處理程序](../../extensibility/debugger/processes.md)   
  [程式節點](../../extensibility/debugger/program-nodes.md)   
  [模組](../../extensibility/debugger/modules.md)   

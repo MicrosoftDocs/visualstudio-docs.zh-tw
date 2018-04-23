@@ -2,26 +2,22 @@
 title: 開始使用 VSIX 專案範本 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
-caps.latest.revision: 25
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87fd485a0d682dc21de21dfe32b83cfc29b520a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c96c0f66792f6a7a190fb5ea69ec5727ea4f2db1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 若要建立擴充功能或封裝部署的現有擴充功能，您可以使用 VSIX 專案範本。 此 VSIX 專案範本具有 Visual Basic 和 Visual C# 版本中，而且已安裝 Visual Studio SDK 的一部分。  

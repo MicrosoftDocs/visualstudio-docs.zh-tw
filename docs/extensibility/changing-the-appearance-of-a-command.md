@@ -1,27 +1,25 @@
 ---
-title: "變更的命令外觀 |Microsoft 文件"
-ms.custom: 
+title: 變更的命令外觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, changing appearance
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a19793f16991bc61636a929822757823728a926
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changing-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更的命令外觀，對使用者提供意見反應。 例如，您可以命令無法使用時的外觀不同。 您可以使用或無法使用，讓命令、 隱藏或顯示它們，或檢查或取消核取功能表上。  
@@ -88,7 +86,7 @@ ms.lasthandoff: 12/22/2017
   
 8.  在**工具**您現在應該會看到的功能表**新文字**。 按一下**新文字**。 此命令應該現在會變成灰色。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   

@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 顯示簽章說明 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 顯示簽章說明 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a714fdb268f44fd2a65d04184d899ced3de53bb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-signature-help"></a>逐步解說： 顯示簽章說明
 簽章說明 (也稱為*參數資訊*) 時，顯示在方法簽章工具提示使用者輸入的參數清單開頭字元 （通常是左括號）。 當具有類型的參數和參數分隔符號 （通常是逗號），工具提示會更新以顯示下一個參數以粗體顯示。 您可以定義的語言服務內容中的 「 簽章說明您可以定義您自己的檔案名稱副檔名和內容類型，並顯示只要該類型的簽章說明或現有的內容類型 （例如，「 文字 」） 可以顯示 簽章說明。 本逐步解說示範如何顯示簽章說明 「 文字 」 內容類型。  
@@ -250,5 +246,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  輸入左括號之後，您應該會看到工具提示會顯示一份兩個簽章`add()`方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

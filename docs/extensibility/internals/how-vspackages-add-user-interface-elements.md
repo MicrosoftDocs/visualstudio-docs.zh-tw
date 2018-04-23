@@ -1,27 +1,25 @@
 ---
-title: "Vspackage 如何新增使用者介面項目 |Microsoft 文件"
-ms.custom: 
+title: Vspackage 如何新增使用者介面項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面項目
 VSPackage 可以加入使用者介面 (UI) 項目，例如，功能表、 工具列和工具視窗，來透過.vsct 檔的 Visual Studio。  
@@ -64,7 +62,7 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如，功能表、 工具
 </Symbols>  
 ```  
   
- 最上層元素`Symbols`區段是[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol`元素會對應至 Guid IDE 所用來識別封裝和其元件部分的名稱。  
+ 最上層元素`Symbols`區段是[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素會對應至 Guid IDE 所用來識別封裝和其元件部分的名稱。  
   
 > [!NOTE]
 >  在 Visual Studio 封裝範本所自動產生的 Guid。 您也可以按一下來建立唯一的 GUID**建立 GUID**上**工具**功能表。  
@@ -192,14 +190,14 @@ priority="0x0100" type="Menu">
 ### <a name="parenting"></a>父代  
  下列規則可控制如何項目可以呼叫另一個做為其父系的項目。  
   
-|元素|在本節中的命令資料表定義|可能包含 (父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （稱為父代）|  
+|項目|在本節中的命令資料表定義|可能包含 (父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （稱為父代）|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |群組|[群組項目](../../extensibility/groups-element.md)、 IDE、 其他 Vspackage|功能表上，為群組，請在項目本身|功能表、 群組和命令|  
-|功能表|[功能表項目](../../extensibility/menus-element.md)、 IDE、 其他 Vspackage|1 到 *n* 群組|0 到 *n* 群組|  
-|工具列|[功能表項目](../../extensibility/menus-element.md)、 IDE、 其他 Vspackage|在項目本身|0 到 *n* 群組|  
-|功能表項目|[按鈕項目](../../extensibility/buttons-element.md)、 IDE、 其他 Vspackage|1 到 *n* 群組、 項目本身|-0 以 *n* 群組|  
-|按鈕|[按鈕項目](../../extensibility/buttons-element.md)、 IDE、 其他 Vspackage|1 到 *n* 群組、 項目本身||  
-|組合|[組合的項目](../../extensibility/combos-element.md)、 IDE、 其他 Vspackage|1 到 *n* 群組、 項目本身||  
+|功能表|[功能表項目](../../extensibility/menus-element.md)、 IDE、 其他 Vspackage|1 到*n*群組|0 到*n*群組|  
+|工具列|[功能表項目](../../extensibility/menus-element.md)、 IDE、 其他 Vspackage|在項目本身|0 到*n*群組|  
+|功能表項目|[按鈕項目](../../extensibility/buttons-element.md)、 IDE、 其他 Vspackage|1 到*n*群組、 項目本身|-0 以*n*群組|  
+|按鈕|[按鈕項目](../../extensibility/buttons-element.md)、 IDE、 其他 Vspackage|1 到*n*群組、 項目本身||  
+|組合|[組合的項目](../../extensibility/combos-element.md)、 IDE、 其他 Vspackage|1 到*n*群組、 項目本身||  
   
 ### <a name="menu-command-and-group-placement"></a>功能表、 命令和群組放置  
  功能表、 群組或命令可以出現在 IDE 中的多個位置中。 對於多個位置中出現的項目，它必須新增至`CommandPlacements`區段為[CommandPlacement 元素](../../extensibility/commandplacement-element.md)。 可以加入任何功能表、 群組或命令當做命令位置。 不過，工具列無法定位，以這種方式因為它們不能出現在多個內容相關性的位置。  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>可見性條件約束  
  可見性條件約束設定為[VisibilityItem 元素](../../extensibility/visibilityitem-element.md)中`VisibilityConstraints`> 一節。 可見性條件約束定義的目標項目會顯示特定 UI 內容。 功能表或包含本節中的命令可見時才會定義內容的其中一個使用中。 如果這一節中未參考的功能表或命令，則永遠預設為可見。 本節不適用於群組。  
   
- `VisibilityItem`項目必須有三種屬性，如下所示：`guid`和`id`目標 UI 項目和`context`。 `context`屬性會指定當目標項目會顯示，而且會當做其值的任何有效 UI 內容。 適用於 Visual Studio UI 內容常數屬於<xref:Microsoft.VisualStudio.VSConstants>類別。 每個`VisibilityItem`項目可接受一個內容值。 若要套用的第二個內容，建立第二個`VisibilityItem`指向相同的項目，如下列範例所示的項目。  
+ `VisibilityItem` 項目必須有三種屬性，如下所示：`guid`和`id`目標 UI 項目和`context`。 `context`屬性會指定當目標項目會顯示，而且會當做其值的任何有效 UI 內容。 適用於 Visual Studio UI 內容常數屬於<xref:Microsoft.VisualStudio.VSConstants>類別。 每個`VisibilityItem`項目可接受一個內容值。 若要套用的第二個內容，建立第二個`VisibilityItem`指向相同的項目，如下列範例所示的項目。  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  即使它沒有任何群組或按鈕時，會建立功能表。  
   
- 適用於：`Menu`  
+ 適用於： `Menu`  
   
  CommandWellOnly  
  這個旗標，如果套用命令未出現在最上層功能表上，而且您想要使其可供其他殼層自訂，比方說，繫結至索引鍵。 VSPackage 安裝之後，使用者可以自訂這些命令開啟**選項**對話方塊，然後編輯下的命令位置**鍵盤環境**類別目錄。 不會影響在快顯功能表、 工具列、 功能表控制器或子功能表上的位置。  
   
- 適用於： `Button`，`Combo`  
+ 適用於： `Button`， `Combo`  
   
  DefaultDisabled  
  根據預設，如果尚未載入 VSPackage 實作命令，或尚未呼叫 QueryStatus 方法，會停用的命令。  
   
- 適用於： `Button`，`Combo`  
+ 適用於： `Button`， `Combo`  
   
  DefaultInvisible  
  根據預設，此命令為不可見的如果 VSPackage 實作命令就不會載入或尚未呼叫 QueryStatus 方法。  
   
  應與結合`DynamicVisibility`旗標。  
   
- 適用於： `Button`， `Combo`，`Menu`  
+ 適用於： `Button`， `Combo`， `Menu`  
   
  DynamicVisibility  
  命令的可見性可以透過使用 QueryStatus 方法或內容中隨附的 GUID 被變更`VisibilityConstraints`> 一節。  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  應與結合`DefaultInvisible`旗標。  
   
- 適用於： `Button`， `Combo`，`Menu`  
+ 適用於： `Button`， `Combo`， `Menu`  
   
  NoShowOnMenuController  
  如果具有此旗標的命令位於功能表控制站上，命令就不會出現在下拉式清單。  
   
- 適用於：`Button`  
+ 適用於： `Button`  
   
  如需命令旗標的詳細資訊，請參閱[命令旗標的項目](../../extensibility/command-flag-element.md)文件。  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>介面項目外觀  
  以下是考量選擇及定位命令項目：  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供許多 UI 項目顯示的方式會視位置而定。  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供許多 UI 項目顯示的方式會視位置而定。  
   
 -   定義所使用的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是 顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或在特定 UI 內容相關聯`VisibilityConstraints`> 一節。  
   
@@ -303,5 +301,5 @@ priority="0x0100" type="Menu">
   
 -   若要讓特定的 UI 項目顯示在 IDE 中，您必須實作一或多個介面，或撰寫一些程式碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

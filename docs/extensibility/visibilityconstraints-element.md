@@ -1,30 +1,26 @@
 ---
-title: "VisibilityConstraints 項目 |Microsoft 文件"
-ms.custom: 
+title: VisibilityConstraints 項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946fc12ab7a77aa72d5d09f7ba9522723f8e18b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f81ddd40a6de287fb40840c0473e5702d385793d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 項目
 VisibilityConstraints 元素決定的命令和工具列群組的靜態可見性。 由第一次控制可見性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]而不必載入 VSPackage 的整合式的開發環境 (IDE)。  
@@ -47,7 +43,7 @@ VisibilityConstraints 元素決定的命令和工具列群組的靜態可見性�
 |---------------|-----------------|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -69,6 +65,6 @@ VisibilityConstraints 元素決定的命令和工具列群組的靜態可見性�
 </VisibilityConstraints>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VisibilityItem 項目](../extensibility/visibilityitem-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

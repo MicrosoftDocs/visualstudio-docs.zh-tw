@@ -1,29 +1,25 @@
 ---
-title: "SccEnumChangedFiles 函式 |Microsoft 文件"
-ms.custom: 
+title: SccEnumChangedFiles 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 762bda21f8480224347bd0c8c202c282298e07cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 指定本機檔案的清單，此函式，判斷哪些檔案會從原始程式碼控制資料庫中對應的版本不同。  
@@ -64,5 +60,5 @@ SCCRTN SccEnumChangedFiles(
 |SCC_OK|作業已順利完成。|  
 |SCC_UNSPECIFIEDERROR|發生一般錯誤。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

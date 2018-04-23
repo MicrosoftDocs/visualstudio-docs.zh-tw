@@ -1,30 +1,26 @@
 ---
-title: "SortOrder 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: SortOrder 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6473e867655974f42f41a276b8becfd12fbab7a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 項目 (Visual Studio 範本)
 指定值，用於排列次序相同分類中的其他範本中所顯示的樣子**新專案**或**加入新項目** 對話方塊。  
@@ -45,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -88,6 +84,6 @@ ms.lasthandoff: 12/22/2017
   
  在此範例中，`SortOrder`項目是相當高。 可能是其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目範本會有`SortOrder`值低於`290`和會出現在此範本中**新項目** 對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

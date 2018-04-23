@@ -1,30 +1,26 @@
 ---
-title: "支援原始檔控制 |Microsoft 文件"
-ms.custom: 
+title: 支援原始檔控制 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9ae3590a5d02c2b3f1d4b67f724d0177f671f7d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-source-control"></a>支援的原始檔控制
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援的檔案簽出、 簽入和其他原始檔控制作業，您的專案或編輯器。 做為原始檔控制用戶端，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設計來與原始檔控制封裝中，例如互動[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，可保存、 版本控制和一組動態定義檔案的存取控制等機能。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援的檔案簽出、 簽入和其他原始檔控制作業，您的專案或編輯器。 做為原始檔控制用戶端，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]設計來與原始檔控制封裝中，例如互動[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，可保存、 版本控制和一組動態定義檔案的存取控制等機能。  
   
 ## <a name="in-this-section"></a>本節內容  
  [原始檔控制套件的模型](../../extensibility/internals/model-for-source-control-packages.md)  

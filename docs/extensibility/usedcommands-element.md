@@ -1,30 +1,26 @@
 ---
-title: "UsedCommands 項目 |Microsoft 文件"
-ms.custom: 
+title: UsedCommands 項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - UsedCommands
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35b8821a76926da6ea9cab8ca61ef8f62e5ec72d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aa2dd8bbcfaaa84905f60e2f4ae984f3269c7095
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。  
@@ -48,7 +44,7 @@ UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。
 |---------------|-----------------|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -70,6 +66,6 @@ UsedCommands 項目群組 UsedCommand 項目和其他 UsedCommands 群組。
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [UsedCommand 項目](../extensibility/usedcommand-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

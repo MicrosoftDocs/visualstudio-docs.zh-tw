@@ -1,29 +1,25 @@
 ---
-title: "SccQueryInfo 函式 |Microsoft 文件"
-ms.custom: 
+title: SccQueryInfo 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 此函式會取得一組選取原始檔控制下的檔案狀態資訊。  
@@ -69,14 +65,14 @@ SCCRTN SccQueryInfo(
   
  使用這個函數時簽出檔案，請注意下列`MSSCCI`狀態需求：  
   
--   `SCC_STATUS_OUTBYUSER`目前的使用者已簽出檔案時設定。  
+-   `SCC_STATUS_OUTBYUSER` 目前的使用者已簽出檔案時設定。  
   
--   `SCC_STATUS_CHECKEDOUT`無法設定，除非`SCC_STATUS_OUTBYUSER`設定。  
+-   `SCC_STATUS_CHECKEDOUT` 無法設定，除非`SCC_STATUS_OUTBYUSER`設定。  
   
--   `SCC_STATUS_CHECKEDOUT`時才會設定檔案已簽出到指定的工作目錄。  
+-   `SCC_STATUS_CHECKEDOUT` 時才會設定檔案已簽出到指定的工作目錄。  
   
 -   如果檔案已簽出目前的使用者所到工作目錄，以外的目錄`SCC_STATUS_OUTBYUSER`設定但`SCC_STATUS_CHECKEDOUT`不是。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

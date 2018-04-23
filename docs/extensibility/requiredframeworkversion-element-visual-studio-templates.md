@@ -2,27 +2,23 @@
 title: RequiredFrameworkVersion 項目 （Visual Studio 範本） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6490c75f7ca57dbb287da818dacd02574025f00f
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: adc1a138c50c0fe13962f6601449eb3498d90398
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 項目 (Visual Studio 範本)
 
@@ -31,7 +27,7 @@ ms.lasthandoff: 03/22/2018
 > [!IMPORTANT]
 > 從 Visual Studio 2017 版本 15.6，**目標 Framework 版本**下拉式清單中不再顯示範本中的篩選**範本**區段**新的專案**對話方塊。 相反地，下拉式清單中做為架構的選擇器選取的範本。
 
- \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
+ \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
 
 ## <a name="syntax"></a>語法
 

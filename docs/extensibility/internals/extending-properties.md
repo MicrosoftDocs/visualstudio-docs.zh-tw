@@ -1,27 +1,23 @@
 ---
-title: "擴充屬性 |Microsoft 文件"
-ms.custom: 
+title: 擴充屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: d1a34edfbc6cede24f3238068549412d630827cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性**是 COM 和 COM + 元件的通用屬性瀏覽器視窗，並支援所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產品。 **屬性**視窗搭配`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  

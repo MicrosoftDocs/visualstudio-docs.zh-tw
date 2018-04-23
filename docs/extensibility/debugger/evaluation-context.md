@@ -1,26 +1,24 @@
 ---
-title: "評估內容 |Microsoft 文件"
-ms.custom: 
+title: 評估內容 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9a490ef7c4ea42fe85c291ee913d7ad5e1cda1bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 266fe85bedeea2c7e3dae7726d113d66a4b2b1e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluation-context"></a>評估內容
 > [!IMPORTANT]
@@ -36,9 +34,9 @@ ms.lasthandoff: 12/22/2017
 |`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)介面，可指定目前執行點。 這可以用來尋找包含正在執行的程式碼的方法。|  
 |`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)可用來尋找的值和指定之名稱的符號類型的介面。|  
   
- `IDebugParsedExpression::EvaluateSync`傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表所產生的值和其類型的介面。  
+ `IDebugParsedExpression::EvaluateSync` 傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表所產生的值和其類型的介面。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [索引鍵運算式評估工具介面](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
  [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)   
  [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   

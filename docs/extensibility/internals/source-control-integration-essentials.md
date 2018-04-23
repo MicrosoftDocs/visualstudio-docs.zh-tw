@@ -1,30 +1,28 @@
 ---
-title: "原始檔控制整合 Essentials |Microsoft 文件"
-ms.custom: 
+title: 原始檔控制整合 Essentials |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合 Essentials
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援兩種類型的原始檔控制整合： 原始檔控制外掛程式，提供基本功能，並會使用原始檔控制外掛程式 API （之前稱為 MSSCCI API） 和 VSPackage 為基礎的原始檔控制整合方案所建置的提供更強固的功能。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合： 原始檔控制外掛程式，提供基本功能，並會使用原始檔控制外掛程式 API （之前稱為 MSSCCI API） 和 VSPackage 為基礎的原始檔控制整合方案所建置的提供更強固的功能。  
   
 ## <a name="source-control-plug-in"></a>原始檔控制外掛程式  
  原始檔控制外掛程式會寫入做為實作原始檔控制外掛程式 API 的 DLL。 註冊和原始檔控制整合功能是透過 API 來提供。 這個方法會比原始檔控制 VSPackage，容易實作，並使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]大部分的原始檔控制作業的使用者介面 (UI)。  
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
  如需詳細資訊，請參閱[建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../../extensibility/internals/source-control-integration-overview.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

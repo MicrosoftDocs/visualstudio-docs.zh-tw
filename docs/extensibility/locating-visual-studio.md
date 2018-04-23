@@ -1,25 +1,22 @@
 ---
-title: "尋找 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 尋找 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 08/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed6125c69b9068ebfb3d776ccbefaf88043f83a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locating-visual-studio"></a>尋找 Visual Studio
 
@@ -44,6 +41,6 @@ ms.lasthandoff: 12/22/2017
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell 指令程式支援 2.0 及更新版本中，傳回可用來尋找做為相同的準則為基礎的執行個體做為物件豐富的資訊_vswhere_以及探索更多執行個體的相關屬性。 請參閱[wiki](https://github.com/Microsoft/vssetup.powershell/wiki)範例。 |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 會自動找到_VSIXInstaller_並將透過命令列傳遞至安裝_*.vsix_檔案。 這可以是不需要直接查詢 Api 支援的安裝中很有用。 請參閱[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)範例。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2017 安裝程式的變更](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)

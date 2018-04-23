@@ -1,21 +1,18 @@
 ---
-title: "如何： 使用 Visual Studio 擴充功能以規則為基礎的 UI 內容 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 Visual Studio 擴充功能以規則為基礎的 UI 內容 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 擴充功能以規則為基礎的 UI 內容
 Visual Studio 可讓載入 Vspackage 時，某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不是非常精細的更細緻，離開延伸模組作者沒有其他選擇，但挑選可用的 UI 內容點之前啟動他們真的想載入 VSPackage。 如需已知 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
@@ -137,7 +134,7 @@ Visual Studio 可讓載入 Vspackage 時，某些已知<xref:Microsoft.VisualStu
 |ConfigSettingsStoreQuery:\<查詢 >|「 查詢 」 代表完整路徑到組態設定存放區必須評估為非零值。 查詢分割成"collection"和"propertyName"，在最後一個斜線。|  
 |ActiveProjectFlavor:\<projectTypeGuid >|每當目前選取的專案具備一詞是否會為 true （彙總） 和的類別，比對指定的專案類型的 GUID。|  
 |ActiveEditorContentType:\<contentType >|文字編輯器，具有給定的內容類型選取的文件時，將會成立一詞。|  
-|ActiveProjectCapability:\<運算式 >|使用中的專案功能符合提供的運算式時，該詞彙就為 true。 運算式可以是像是 VB &#124;CSharp|  
+|ActiveProjectCapability:\<運算式 >|使用中的專案功能符合提供的運算式時，該詞彙就為 true。 運算式可以是類似 VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<運算式 >|與上述類似，但是詞彙也是方案中有任何運算式比對的載入的專案。|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|每當有具備 （彙總） 的專案和的類別，比對指定的專案類型 GUID 的解決方案，將會成立一詞。|
 

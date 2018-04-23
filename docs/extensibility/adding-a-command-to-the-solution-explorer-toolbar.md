@@ -1,27 +1,25 @@
 ---
-title: "將命令加入至 [方案總管] 工具列 |Microsoft 文件"
-ms.custom: 
+title: 將命令加入至 [方案總管] 工具列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d38f2347009d75c5e06365c757d2d51339bf06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f6f732900ff3e73decb1dc01d5c131e26ba50669
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何新增按鈕**方案總管 中**工具列。  
@@ -120,5 +118,5 @@ ms.lasthandoff: 12/22/2017
   
  按鈕的可見性由[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]直到載入 VSPackage。 在載入 VSPackage 之後，由 VSPackage 控制按鈕可見。  如需詳細資訊，請參閱[MenuCommands Vs。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

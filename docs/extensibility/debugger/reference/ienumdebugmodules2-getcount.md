@@ -2,28 +2,24 @@
 title: IEnumDebugModules2::GetCount |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugModules2::GetCount
 helpviewer_keywords:
 - IEnumDebugModules2::GetCount
 ms.assetid: f4def3d2-7cc9-4cd2-9649-3b7e00a76220
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e3915dcbcb9fb96c4bae1d5b44fbbbfc3a59f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3a270c824086cb6d8e7d8e78dbcebf0d89ea83c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 列舉中傳回的項目數。  
@@ -52,5 +48,5 @@ int GetCount(
 ## <a name="remarks"></a>備註  
  這個方法不是指定的自訂 COM 列舉介面的一部分`Next`， `Clone`， `Skip`，和`Reset`必須實作的方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

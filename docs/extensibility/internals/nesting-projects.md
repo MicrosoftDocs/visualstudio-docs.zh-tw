@@ -1,28 +1,26 @@
 ---
-title: "巢狀專案 |Microsoft 文件"
-ms.custom: 
+title: 巢狀專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project nesting
 - nested projects
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 35d0f4f8906acc08733894d1c24b6d8c2199e1f7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="nesting-projects"></a>巢狀專案
 企業應用程式開發人員使用您的 VS 套件可以輕鬆地群組類似類型的專案中一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*專案巢狀*。 例如，企業樣板專案會使用巢狀的專案與群組專案組成各種分類。 商務外觀專案、 Web UI 專案等等中群組在一起一個類別目錄。  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  ![巢狀專案方案](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 巢狀的專案範例  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 實作巢狀的專案](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [卸載並重新載入巢狀專案的考量](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [巢狀專案的精靈支援](../../extensibility/internals/wizard-support-for-nested-projects.md)   

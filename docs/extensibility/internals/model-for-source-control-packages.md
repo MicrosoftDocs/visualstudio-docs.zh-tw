@@ -2,31 +2,27 @@
 title: 模型的原始檔控制套件 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表來源控制項實作的範例。 在模型中，您會看到您必須實作的介面和環境服務，您必須呼叫。 如同所有的服務，您實際上會呼叫您透過服務所取得的特定介面的方法。 若要更輕鬆地查看原始檔控制會實行識別的類別名稱。  
   
- ![SCC &#95;TUP 範例](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+ ![SCC&#95;TUP 範例](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
 範例原始檔控制專案  
   
 ## <a name="interfaces"></a>介面  
@@ -40,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|呼叫專案與原始檔控制封裝註冊並取得原始檔控制狀態的詳細資訊。 這個介面使用存取<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>服務。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|藉由專案，以回應檔案的相關資訊的來源控制要求，並取得原始檔控制專案檔案所需的設定。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>   

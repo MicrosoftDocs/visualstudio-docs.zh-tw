@@ -1,12 +1,10 @@
 ---
-title: "方案使用者選項 (。Suo) 檔案 |Microsoft 文件"
-ms.custom: 
+title: 方案使用者選項 (。Suo) 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
 - suo files, VSPackages
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bca2eef930b871d5728ff1c85742a28f4b51a7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0b96e3ad2ec29402dddc7354df46293b99bac3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項 (。Suo) 檔案
 方案使用者選項 (.suo) 檔案包含每個使用者方案選項。 這個檔案不應該簽入原始程式碼控制項中。  
@@ -40,6 +38,6 @@ ms.lasthandoff: 12/22/2017
   
  這兩種方法，`SaveUserOptions`和`WriteUserOptions`，會針對每個資料流的資訊儲存到.suo 檔案中，傳入的指標呼叫以遞迴方式`IVsSolutionPersistence`。 呼叫以遞迴方式，以允許進行的.suo 檔案的多個資料流寫入。 如此一來，使用者資訊與方案一起保存，一定會有的下次開啟方案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  [方案](../../extensibility/internals/solutions.md)

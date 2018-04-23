@@ -1,26 +1,24 @@
 ---
-title: "工具視窗顯示組態 |Microsoft 文件"
-ms.custom: 
+title: 工具視窗顯示組態 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示設定
 中的選擇性值會指定當 VSPackage 註冊工具視窗、 的預設位置、 大小、 停駐樣式，以及其他可見性資訊。 如需有關工具視窗登錄的詳細資訊，請參閱[登錄中的工具視窗](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |名稱|REG_SZ|[簡短名稱到這裡]|描述工具視窗的簡短名稱。 僅適用於在登錄中的參考。|  
 |浮動|REG_SZ|"X1，Y1，X2，Y2"|四個以逗號分隔值。 X1，Y1 是工具視窗的左上角的座標。 X2，Y2 是右下角的座標。 所有值都都在螢幕座標。|  
 |樣式|REG_SZ|「 MDI"<br /><br /> 「 浮動 」<br /><br /> 「 連結 」<br /><br /> 「 索引 」<br /><br /> 「 AlwaysFloat"|指定初始的關鍵字會顯示工具視窗的狀態。<br /><br /> 「 MDI"= MDI 視窗停駐。<br /><br /> 「 浮動 」 = 浮點數。<br /><br /> 「 連結 」 = 連結到另一個視窗 （在視窗項目中指定）。<br /><br /> 「 索引標籤式"= 加上另一個工具視窗。<br /><br /> 「 AlwaysFloat"= 無法停駐。<br /><br /> 如需詳細資訊，請參閱下方的註解區段。|  
-|視窗|REG_SZ|*\<GUID >*|要在工具視窗可以連結或索引標籤式視窗的 GUID。 GUID 可能屬於其中一個您自己的視窗或其中一個在 windows [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。|  
+|視窗|REG_SZ|*\<GUID &GT;*|要在工具視窗可以連結或索引標籤式視窗的 GUID。 GUID 可能屬於其中一個您自己的視窗或其中一個在 windows [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。|  
 |方向|REG_SZ|「 左 」<br /><br /> 「 右 」<br /><br /> "Top"<br /><br /> 「 下 」|請參閱下方的註解區段。|  
 |DontForceCreate|REG_DWORD|0 或 1|當這個項目存在，並且其值不是零時，視窗會載入，但不是會立即顯示。|  
   
@@ -91,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |(預設值)|REG_SZ|無|保留空白。|  
-|*\<GUID >*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 此值通常是`reg_dword`設為 0。|  
+|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 此值通常是`reg_dword`設為 0。|  
   
 ### <a name="example"></a>範例  
   
@@ -110,5 +108,5 @@ HKEY_LOCAL_MACHINE\
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

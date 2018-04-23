@@ -1,27 +1,25 @@
 ---
-title: "使用 開啟檔案命令顯示檔案 |Microsoft 文件"
-ms.custom: 
+title: 使用 開啟檔案命令顯示檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6b84992dc1803f1eee4fc36d477db1708eb90904
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用 開啟檔案命令顯示檔案
 下列步驟描述 IDE 如何處理**開啟檔案**命令，可用於**檔案**功能表[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。  
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  專案然後沒有使用特定專案編輯器或標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱[如何： 開啟專案的特定編輯器](../../extensibility/how-to-open-project-specific-editors.md)和[如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 [開啟] 命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [開啟並儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 開啟專案的特定編輯器](../../extensibility/how-to-open-project-specific-editors.md)   

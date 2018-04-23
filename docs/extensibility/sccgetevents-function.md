@@ -1,29 +1,25 @@
 ---
-title: "SccGetEvents 函式 |Microsoft 文件"
-ms.custom: 
+title: SccGetEvents 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
 - SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2e9a22d0340774087fab8dd7dc564f415d9d9aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 79e517d87acd61eafcd2eb0a12f5a8978912db81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函式
 此函式會擷取佇列的狀態事件。  
@@ -66,6 +62,6 @@ SCCRTN SccGetEvents (
   
  如果沒有更新狀態報表，原始檔控制外掛程式會儲存空字串所指向之緩衝區中`lpFileName`。 否則，外掛程式儲存檔案的完整路徑名稱的狀態資訊已變更，並傳回適當的狀態碼為 (其中一個值中詳述[檔案狀態碼](../extensibility/file-status-code-enumerator.md))。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

@@ -1,26 +1,24 @@
 ---
-title: "撰寫的 Windows Installer 封裝 |Microsoft 文件"
-ms.custom: 
+title: 撰寫的 Windows Installer 封裝 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-a-windows-installer-package"></a>撰寫的 Windows Installer 封裝
 資料磁碟機的 Windows Installer 模型。 不用撰寫程序的指令碼，將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。  
@@ -49,9 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 -   Windows Installer XML Toolset  
   
-     工具組會建置 XML 來源檔案從 Windows Installer 封裝。 工具組是 Microsoft 的開放原始碼專案。 您可以下載的原始程式碼和可執行檔從[http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix)。  
+     工具組會建置 XML 來源檔案從 Windows Installer 封裝。 工具組是 Microsoft 的開放原始碼專案。 您可以下載的原始程式碼和可執行檔從[ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix)。  
   
- 適用於整合到商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[http://visualstudiogallery.com](http://visualstudiogallery.com/)。  
+ 適用於整合到商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

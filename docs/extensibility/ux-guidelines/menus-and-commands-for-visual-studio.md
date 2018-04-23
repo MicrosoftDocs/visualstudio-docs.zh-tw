@@ -1,23 +1,21 @@
 ---
-title: "功能表和命令適用於 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 功能表和命令適用於 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ce4e297b698952135ef9f771243577789719dbae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 16f67faf7ffe3a3fd119b7ddf002ab463822a830
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>功能表和 Visual Studio 的命令
 ## <a name="command-usage"></a>命令使用方式  

@@ -1,27 +1,23 @@
 ---
-title: "屬性視窗概觀 |Microsoft 文件"
-ms.custom: 
+title: 屬性視窗概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 **屬性**視窗用來顯示在 windows 中提供的兩個主要類型中選取物件的屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 這兩種 windows 類型如下：  
@@ -44,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供的類別清單**屬性**視窗，並將每一個屬性對應至類別目錄。|  
 |[IDispatch 介面](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|公開物件的方法與屬性，以程式設計的工具和其他支援自動化的應用程式。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供省略符號 （...） 按鈕，稱為*建造商*，開啟強制回應對話方塊視窗物件本身所實作。 使用者在文字欄位中不容易輸入值時使用。 例如，可能會用來開啟 色彩選擇器，為您決定的 RGB 值。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供用來更新中所顯示資訊的物件的存取權**屬性**視窗。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>是由 Vspackage 實作每個視窗，其中包含要顯示的相關屬性與可選取物件。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供用來更新中所顯示資訊的物件的存取權**屬性**視窗。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是由 Vspackage 實作每個視窗，其中包含要顯示的相關屬性與可選取物件。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供介面和結構的欄位類型的物件，例如使用方法的相關的資訊。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|可讓 Vspackage 接收通知的選取範圍的事件，並擷取目前的專案階層架構、 項目、 項目值和命令 UI 內容的相關資訊。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|提供存取多重選取的環境。|  
@@ -54,6 +50,6 @@ ms.lasthandoff: 12/22/2017
   
  如需進一步資訊`IDispatch`，請參閱 MSDN library。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)   
  [屬性視窗中的欄位和介面](../../extensibility/internals/properties-window-fields-and-interfaces.md)

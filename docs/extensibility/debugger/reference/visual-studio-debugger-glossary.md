@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio 偵錯工具詞彙 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 偵錯工具詞彙 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 088f5d5a6b1edfc218b5dbe291d957d903f79702
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具詞彙
 以下是使用的字彙[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯 sdk 》。  
@@ -88,5 +86,5 @@ ms.lasthandoff: 12/22/2017
  警告中斷點  
  描述在暫止中斷點警告抽象概念。 警告中斷點描述為何暫止中斷點具有尚未繫結至程式碼位置的原因。 這可能是，有未載入程式碼尚未暫止中斷點，所描述的位置，或因其他原因。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯工具的擴充性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

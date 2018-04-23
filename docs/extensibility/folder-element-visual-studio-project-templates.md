@@ -2,28 +2,24 @@
 title: 資料夾項目 （Visual Studio 專案範本） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>資料夾項目 (Visual Studio 專案範本)
 指定將會加入至專案的資料夾。  
@@ -52,11 +48,11 @@ ms.lasthandoff: 12/22/2017
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|  
 |`TargetFolderName`|選擇性屬性。<br /><br /> 指定要從範本建立專案時，提供給資料夾的名稱。 這個屬性可用於使用取代參數建立的資料夾名稱或命名的資料夾有國際字串不能直接在.zip 檔案。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|`Folder`|指定要加入至專案的資料夾。 `Folder`項目可以包含子`Folder`項目。|  
+|`Folder`|指定要加入至專案的資料夾。 `Folder` 項目可以包含子`Folder`項目。|  
 |[專案項目](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
   
 ### <a name="parent-elements"></a>父項目  
@@ -66,7 +62,7 @@ ms.lasthandoff: 12/22/2017
 |[Project](../extensibility/project-element-visual-studio-templates.md)|選擇性子項目[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)。|  
   
 ## <a name="remarks"></a>備註  
- `Folder`是選擇性的子系的`Project`。  
+ `Folder` 是選擇性的子系的`Project`。  
   
  您可以使用任何下列方法，以將專案項目組織成範本中的資料夾：  
   
@@ -133,7 +129,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 元素 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

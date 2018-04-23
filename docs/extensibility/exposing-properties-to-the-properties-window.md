@@ -1,27 +1,25 @@
 ---
-title: "公開屬性，以 [屬性] 視窗 |Microsoft 文件"
-ms.custom: 
+title: 公開屬性，以 [屬性] 視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12dcb30374250ca7aa917cf19b3a01ba57862c6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>公開屬性，以 [屬性] 視窗
 本逐步解說會公開公用屬性物件與**屬性**視窗。 您對這些屬性的變更會反映在**屬性**視窗。  
@@ -270,5 +268,5 @@ ms.lasthandoff: 12/22/2017
   
  Visual Studio 工具視窗將 Visual Studio 工作階段之間保存。 如需有關保存工具視窗狀態的詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)

@@ -1,29 +1,25 @@
 ---
-title: "SccPopulateList 函式 |Microsoft 文件"
-ms.custom: 
+title: SccPopulateList 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26e7bbb4a99c3cd649eedb7638feb5b6170b3b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式更新的特定來源控制命令的檔案清單，並提供所有指定檔案的原始檔控制狀態。  
@@ -87,7 +83,7 @@ SCCRTN SccPopulateList (
 > [!NOTE]
 >  原始檔控制外掛程式一律會有選項可只會立即傳回從這個函式，因為它是保留的清單。 如果外掛程式會實作此函式，這可能表示這藉由設定`SCC_CAP_POPULATELIST`功能位元旗標的第一個呼叫中[SccInitialize](../extensibility/sccinitialize-function.md)。 根據預設，外掛程式應該永遠假設傳入的所有項目是檔案。 不過，如果在 IDE 設定`SCC_PL_DIR`加上旗標`fOptions`參數，傳遞的所有項目都被視為目錄。 外掛程式應該在目錄中加入隸屬的所有檔案。 IDE 永遠不會將傳入檔案和目錄的混合。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   

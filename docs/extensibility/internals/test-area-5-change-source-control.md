@@ -1,26 +1,24 @@
 ---
-title: "測試區域 5： 變更原始檔控制 |Microsoft 文件"
-ms.custom: 
+title: 測試區域 5： 變更原始檔控制 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e7fd014bf520ee2f0515e284f2fb5430961cd407
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-5-change-source-control"></a>測試區域 5： 變更原始檔控制
 變更原始檔控制，透過此原始檔控制外掛程式的測試區域涵蓋了**變更原始檔控制**命令。  
@@ -76,5 +74,5 @@ ms.lasthandoff: 12/22/2017
 |只需關閉方案重新繫結**變更原始檔控制**對話方塊|1.建立專案。<br />2.只有方案加入原始檔控制使用 (**檔案**，**原始檔控制**，**加入所選專案加入原始檔控制**。<br />3.開啟**變更原始檔控制** 對話方塊。<br />4.只有方案解除繫結 (請不要關閉**變更原始檔控制** 對話方塊。)<br />5.繫結僅解決方案。<br />6.按一下 [確定]  關閉對話方塊。<br />7.簽出方案和方案項目 （如果有的話）|解決方案會保持受控制的。<br /><br /> 專案會維持未受控制的。|  
 |只有當相同的目錄中的方案/專案重新繫結|1.建立專案。<br />2.只有這個專案加入原始檔控制使用 (**檔案**，**原始檔控制**，**加入所選專案加入原始檔控制**。<br />3.關閉方案。<br />4.使用至少兩個專案中建立新的方案。<br />5.將方案加入原始檔控制。<br />6.加入在步驟 1 中建立從原始檔控制的專案。<br />7.如果出現提示，請接受簽出的方案。<br />8.請檢查整個方案中。<br />9.開啟**變更原始檔控制** 對話方塊。<br />10.選取 （從步驟 6) 加入的專案，然後按一下**解除繫結**。<br />11.按一下 [確定]  關閉對話方塊。<br />12.如果出現提示，請接受簽出。<br />13.重新開啟**變更原始檔控制** 對話方塊。<br />14.選取 （從步驟 6) 加入的專案，然後按一下**繫結**。<br />15.選取的原始位置。|方案和專案保持控制。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

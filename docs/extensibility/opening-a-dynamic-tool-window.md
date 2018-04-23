@@ -1,27 +1,23 @@
 ---
-title: "開啟動態工具視窗 |Microsoft 文件"
-ms.custom: 
+title: 開啟動態工具視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: bdd3a4a8d85ed7d0f5884e7f11b8778eb3b420a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>開啟動態工具視窗
 從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有時候，不過，您可能需要開啟特定 UI 內容會套用，且當 UI 內容不再適用時，關閉時的工具視窗。 工具視窗的這些型別稱為*動態*或*自動可見*。  

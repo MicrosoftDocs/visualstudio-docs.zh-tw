@@ -1,26 +1,24 @@
 ---
-title: "支援舊版語言服務中的 [自動變數] 視窗 |Microsoft 文件"
-ms.custom: 
+title: 支援舊版語言服務中的 [自動變數] 視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a1a2627bd36e6047db00afaada231dc49cde2cc3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支援舊版語言服務中的 [自動變數] 視窗
 **自動變數**視窗會顯示運算式，例如變數和參數的範圍內時進行偵錯的程式已暫停 （可能是因為中斷點或例外狀況）。 運算式可以包含變數，本機或全域和區域範圍中已變更的參數。 **自動變數**視窗也可以包含的類別、 結構或其他類型具現化。 任何可以評估的運算式評估工具的項目可能會顯示在**自動變數**視窗。  

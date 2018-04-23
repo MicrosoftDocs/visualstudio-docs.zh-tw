@@ -2,24 +2,20 @@
 title: 字型及格式設定適用於 Visual Studio |Microsoft 文件
 ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 22e765916a19caeff643e25f97f4d0d4f91669c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型及格式設定適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型

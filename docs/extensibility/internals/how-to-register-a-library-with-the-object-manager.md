@@ -1,12 +1,10 @@
 ---
-title: "如何： 註冊程式庫物件管理員與 |Microsoft 文件"
-ms.custom: 
+title: 如何： 註冊程式庫物件管理員與 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 30bf2775c358b107fe299f0d60bc00a2030465e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 註冊物件管理員與程式庫
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**和**尋找符號結果**，讓您檢視外部元件或專案中的符號。 符號包含命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，以及將它們以公開[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會填入資料的工具。  
@@ -168,7 +166,7 @@ ms.lasthandoff: 12/22/2017
   
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [支援的符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

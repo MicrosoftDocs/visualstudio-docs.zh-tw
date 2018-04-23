@@ -1,27 +1,23 @@
 ---
-title: "使用舊版應用程式開發介面中的文字標記 |Microsoft 文件"
-ms.custom: 
+title: 使用舊版應用程式開發介面中的文字標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用文字標記與舊版應用程式開發介面
 文字標記是文字的浮動範圍中的緩衝區，可能會影響顯示和文字的區域的行為。 標記包含中斷點、 書籤，波浪底線和唯讀區域。 文字標記會基本上不同的語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面上，通常被要求語法著色。 語法著色可變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並在套用特殊的行為和著色。  

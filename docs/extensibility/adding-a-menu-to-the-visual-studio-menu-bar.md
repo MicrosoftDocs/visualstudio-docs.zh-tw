@@ -1,26 +1,24 @@
 ---
-title: "將功能表加入至 Visual Studio 功能表列 |Microsoft 文件"
-ms.custom: 
+title: 將功能表加入至 Visual Studio 功能表列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3a391da85c38176d79a1c77ce8836ce510e8d27e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>將功能表加入至 Visual Studio 功能表列
 本逐步解說示範如何將功能表加入 Visual Studio 整合式的開發環境 (IDE) 的功能表列。 IDE 的功能表列包含功能表類別，例如**檔案**，**編輯**，**檢視**，**視窗**，和**協助**.  
@@ -97,5 +95,5 @@ ms.lasthandoff: 12/22/2017
   
      訊息方塊應該會出現並顯示 「 第封裝頁，內部 TopLevelMenu.TestCommand.MenuItemCallback() TestCommand 」 的訊息。 這表示，適用於新的命令。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

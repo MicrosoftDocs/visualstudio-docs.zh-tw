@@ -1,36 +1,34 @@
 ---
-title: "Visual Studio 範本結構描述參考 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 範本結構描述參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb289f6ca65887433cbdb7dee65333ea31060097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08e0758638bbb73cb999fb6b8aba2f195b603b42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 範本結構描述參考
 本節包含 .vstemplate 檔案中 XML 項目的相關資訊，這些是用來儲存專案範本、項目範本和入門套件中繼資料的檔案。  
   
  您可以使用 vstemplate.xsd 驗證自訂 .vstemplate 檔。 這個檔案位於...\\ *Visual Studio 安裝資料夾*\Xml\Schemas\1033\vstemplate.xsd。  
   
-|元素|子元素|屬性|  
+|項目|子項目|屬性|  
 |-------------|--------------------|----------------|  
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|  
+|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|  
 |[Assembly （範本）](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Assembly （精靈副檔名）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -70,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|名稱|  
-|[排序方式](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|  
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
@@ -83,6 +81,6 @@ ms.lasthandoff: 12/22/2017
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|名稱|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立入門套件](../ide/how-to-create-starter-kits.md)

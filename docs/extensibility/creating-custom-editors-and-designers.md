@@ -1,26 +1,24 @@
 ---
-title: "建立自訂編輯器和設計工具 |Microsoft 文件"
-ms.custom: 
+title: 建立自訂編輯器和設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
-caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4c0dbc0db9d5116e372d96b43059a393ac8f4b5d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型：  
@@ -102,5 +100,5 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型�
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
  說明如何建立符合的其餘部分的 UI 項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

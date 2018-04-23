@@ -1,23 +1,21 @@
 ---
-title: "安裝 VSIX v3 與擴充功能資料夾之外 |Microsoft 文件"
-ms.custom: 
+title: 安裝 VSIX v3 與擴充功能資料夾之外 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 970d823265fc25c7248b9953602f50f19c54bc95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8476b300974d66efc60f647c897ec6892191e7fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installing-outside-the-extensions-folder"></a>安裝擴充功能資料夾外
 

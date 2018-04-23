@@ -1,27 +1,25 @@
 ---
-title: "取得一份已安裝的程式碼片段 （舊版） |Microsoft 文件"
-ms.custom: 
+title: 取得一份已安裝的程式碼片段 （舊版） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 53d0a4fc5abc43bc446b3523cc7e8075eb7d4aa9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7ec48ee8ec7beffd66cec4266bc038b17a08a202
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>逐步解說： 取得一份已安裝的程式碼片段 （舊版實作）
 程式碼片段是一段程式碼，可以插入來源緩衝區 （可選擇安裝的程式碼片段的清單） 的功能表命令或藉由從 IntelliSense 完成清單中選取程式碼片段捷徑。  
@@ -180,5 +178,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務中對程式碼片段的支援](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

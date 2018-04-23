@@ -1,12 +1,10 @@
 ---
-title: "簽署 VSIX 封裝 |Microsoft 文件"
-ms.custom: 
+title: 簽署 VSIX 封裝 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - signature
 - signing
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 封裝
 延伸模組組件不需要經過簽署才能在 Visual Studio 中，可以執行，但它是不錯的作法，若要這樣做。  
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/05/2018
   
 1.  將您的 VSIX，加入專案。  
   
-2.  以滑鼠右鍵按一下專案節點，在 [方案總管] 中，選取**新增 &#124;管理 NuGet 封裝**。  如需 NuGet 並加入 NuGet 套件，請參閱詳細資訊，請參閱[NuGet 文件](/NuGet)和[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)主題。  
+2.  以滑鼠右鍵按一下專案節點，在 [方案總管] 中，選取**新增&#124;管理 NuGet 封裝**。  如需 NuGet 並加入 NuGet 套件，請參閱詳細資訊，請參閱[NuGet 文件](/NuGet)和[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)主題。  
   
 3.  搜尋從 VisualStudioExtensibility VSIXSignTool 並安裝 NuGet 套件。  
   
@@ -50,5 +48,5 @@ ms.lasthandoff: 01/05/2018
   
  VSIXSignTool.exe 登 /f\<憑證檔案 >/p\<密碼 > \<VSIXfile >  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

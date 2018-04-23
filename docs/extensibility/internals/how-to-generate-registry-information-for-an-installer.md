@@ -1,27 +1,25 @@
 ---
-title: "如何： 產生的安裝程式的登錄資訊 |Microsoft 文件"
-ms.custom: 
+title: 如何： 產生的安裝程式的登錄資訊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dc3236397dd8a9d0f10927ba3e8fe23d2c4ba78f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c125ce9b7b8feb27bd8568e52cd363e3d451bd40
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 產生的安裝程式的登錄資訊
 RegPkg.exe 公用程式，可以用來產生 managed VSPackage 的登錄資訊清單。 資訊清單可以併入 Windows Installer 安裝程式套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。  
@@ -184,6 +182,6 @@ RegPkg.exe 公用程式，可以用來產生 managed VSPackage 的登錄資訊�
     </Include>  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [註冊 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [VSPackage](../../extensibility/internals/vspackages.md)

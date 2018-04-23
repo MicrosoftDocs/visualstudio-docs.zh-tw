@@ -1,26 +1,24 @@
 ---
-title: "適用於 Visual Studio 的通用控制項模式 |Microsoft 文件"
-ms.custom: 
+title: 適用於 Visual Studio 的通用控制項模式 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
-##  <a name="BKMK_CommonControls"></a>通用控制項  
+##  <a name="BKMK_CommonControls"></a> 通用控制項  
   
 ### <a name="overview"></a>總覽  
 通用控制項便會產生大部分的 Visual Studio 中的使用者介面。 在 Visual Studio 介面中使用的最常見的控制項應該遵循[Windows 桌面互動的指導方針](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)。 本主題旨在說明 Visual Studio，並涵蓋了特殊的情況或加強這些 Windows 指導方針的詳細資料。  
@@ -52,10 +50,10 @@ ms.lasthandoff: 12/22/2017
   
 -   **工具視窗、 文件編輯器，設計介面和佈景主題對話方塊：**使用特殊佈景主題的外觀，使用色彩服務。  
   
-###  <a name="BKMK_Scrollbars"></a>捲軸  
+###  <a name="BKMK_Scrollbars"></a> 捲軸  
  捲軸應該遵循[常見的互動模式適用於 Windows 捲軸](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx)除非它們夾帶內容資訊時，要在程式碼編輯器。  
   
-###  <a name="BKMK_InputFields"></a>輸入的欄位  
+###  <a name="BKMK_InputFields"></a> 輸入的欄位  
  典型的互動行為，請遵循[文字方塊中的 Windows 桌面方針](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
      ![更正的輸入的欄位長度： 輸入的欄位是合理預期的內容的寬度。] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正的輸入的欄位長度： 輸入的欄位是合理預期的內容的寬度。
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>下拉式方塊和下拉式清單  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 下拉式方塊和下拉式清單  
 典型的互動行為，請遵循[下拉式清單和下拉式方塊的 Windows 桌面方針](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -94,7 +92,7 @@ ms.lasthandoff: 12/22/2017
   
 ![正確： 在下拉式清單會調整成允許轉譯成長，但不是必要的長度。] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正確： 在下拉式清單會調整成允許轉譯成長，但不是必要的長度。 
   
-###  <a name="BKMK_CheckBoxes"></a>核取方塊  
+###  <a name="BKMK_CheckBoxes"></a> 核取方塊  
 典型的互動行為，請遵循[核取方塊的 Windows 桌面方針](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -113,7 +111,7 @@ ms.lasthandoff: 12/22/2017
   
      ![正確： 核取方塊對齊文字的第一行。] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正確： 核取方塊對齊文字的第一行。
   
-###  <a name="BKMK_RadioButtons"></a>選項按鈕  
+###  <a name="BKMK_RadioButtons"></a> 選項按鈕  
 典型的互動行為，請遵循[選項按鈕的 Windows 桌面方針](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -122,7 +120,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="specialized-interactions"></a>特製化的互動  
 您不需要使用群組框括住選項的選擇，除非您需要維護群組區分緊密配置中。  
   
-###  <a name="BKMK_GroupFrames"></a>群組框架  
+###  <a name="BKMK_GroupFrames"></a> 群組框架  
 典型的互動行為，請遵循[Windows 桌面的指導方針群組框架](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -136,7 +134,7 @@ ms.lasthandoff: 12/22/2017
   
 -   有時候是使用水平規則而不是群組框架容器可接受的。  
   
-##  <a name="BKMK_TextControls"></a>文字控制項
+##  <a name="BKMK_TextControls"></a> 文字控制項
 
 ### <a name="static-text-fields"></a>靜態文字欄位
 
@@ -217,7 +215,7 @@ ms.lasthandoff: 12/22/2017
 
 如果您想要使用者能夠複製資訊的能力，動態文字應該是唯讀的文字欄位中。
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>按鈕和超連結  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> 按鈕和超連結  
   
 ### <a name="overview"></a>總覽  
 按鈕和連結控制項 （超連結） 應該遵循[超連結的基本 Windows 桌面指引](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx)使用量、 字詞、 調整大小，和間距。  
@@ -331,11 +329,11 @@ Visual Studio 中的大部分按鈕會出現在公用程式的對話方塊，而
   
 -   底線不應該出現在 hover 上。 相反地，連結是作用中使用者的意見反應也有些微的色彩變更適當的連結資料指標。  
   
-##  <a name="BKMK_TreeViews"></a>樹狀檢視  
+##  <a name="BKMK_TreeViews"></a> 樹狀檢視  
   
 樹狀結構檢視會提供一種方式組織複雜列出成父系-子系群組。 使用者可以展開或摺疊來顯示或隱藏基礎的子系項目的父群組。 可以選取樹狀檢視中的每個項目，以提供進一步的動作。  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>樹狀結構檢視的視覺化樣式  
+###  <a name="BKMK_TreeViewVisualStyle"></a> 樹狀結構檢視的視覺化樣式  
   
 #### <a name="expanders"></a>展開器  
 Windows 和 Visual Studio 所使用之 expander 設計應該符合樹狀檢視控制項。 每個節點都使用 expander 控制項來顯示或隱藏基礎項目。 使用展開器控制項可能會遇到 Windows 和 Visual Studio 中的不同的樹狀結構檢視的使用者提供一致的。  
@@ -359,7 +357,7 @@ Windows 和 Visual Studio 所使用之 expander 設計應該符合樹狀檢視�
   
 ![因為內容已經超過限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因為內容已經超過限制的樹狀檢視控制項，則會顯示這兩個垂直和水平捲軸。
   
-###  <a name="BKMK_TreeViewInteractions"></a>樹狀結構檢視互動  
+###  <a name="BKMK_TreeViewInteractions"></a> 樹狀結構檢視互動  
   
 #### <a name="context-menus"></a>操作功能表  
 在樹狀檢視節點可以顯示內容功能表中的子功能表選項。 一般而言，這就會發生當使用者以滑鼠右鍵按一下項目，或在與所選取項目的 Windows 鍵盤上按下功能表鍵。 請務必取得焦點節點，並已選取。 這可協助使用者識別哪一個項目所屬的子功能表。  

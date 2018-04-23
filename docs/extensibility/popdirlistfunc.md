@@ -1,29 +1,25 @@
 ---
-title: "POPDIRLISTFUNC |Microsoft 文件"
-ms.custom: 
+title: POPDIRLISTFUNC |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8503afb26ec8dc244db39dff5bddcc6d3b733896
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 這是提供給回呼函式[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函式來更新目錄以及 （選擇性） 若要找出哪些是原始檔控制下的檔案名稱的集合。  
@@ -62,7 +58,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>備註  
  如果`fOptions`參數`SccPopulateDirList`函式包含`SCC_PDL_INCLUDEFILES`旗標，清單可能包含檔案名稱，以及目錄名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [錯誤碼](../extensibility/error-codes.md)

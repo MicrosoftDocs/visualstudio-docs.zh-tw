@@ -1,34 +1,30 @@
 ---
-title: "服務 Essentials |Microsoft 文件"
-ms.custom: 
+title: 服務 Essentials |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>服務的基本資訊
-服務是兩個 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的另一個 VSPackage 也可以使用的介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
+服務是兩個 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的另一個 VSPackage 也可以使用的介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
  例如，您可以使用 SVsActivityLog 服務以取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱[How to： 使用活動記錄檔](../../extensibility/how-to-use-the-activity-log.md)。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也提供一些內建的服務未登錄。 Vspackage 可以藉由提供服務覆寫來取代內建或其他服務。 只有一個服務覆寫允許任何服務。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也提供一些內建的服務未登錄。 Vspackage 可以藉由提供服務覆寫來取代內建或其他服務。 只有一個服務覆寫允許任何服務。  
   
  服務會有任何可搜尋性。 因此，您必須知道您想要使用，服務的服務識別項 (SID)，而且您必須知道它所提供的介面。 服務的參考文件提供這項資訊。  
   
@@ -70,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 您可以藉由呼叫靜態取得大部分的 Visual Studio 服務<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>依賴設置上快取的服務提供者，它會初始化任何 VSPackage 衍生自封裝第一次。 您必須保證確認此條件符合時，否則先備妥，null 的服務。  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 依賴設置上快取的服務提供者，它會初始化任何 VSPackage 衍生自封裝第一次。 您必須保證確認此條件符合時，否則先備妥，null 的服務。  
   
 幸運的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>運作正常，大部分的時間。  
   
@@ -97,7 +93,7 @@ ms.lasthandoff: 12/22/2017
     
     這段程式碼會取得 SVsActivityLog 服務，並將其轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to： 使用活動記錄檔](../../extensibility/how-to-use-the-activity-log.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
  [使用並提供服務](../../extensibility/using-and-providing-services.md)   
  [轉型和類型轉換](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   

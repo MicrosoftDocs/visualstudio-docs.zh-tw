@@ -1,12 +1,10 @@
 ---
-title: "擴充屬性、 工作清單、 輸出和選項 Windows |Microsoft 文件"
-ms.custom: 
+title: 擴充屬性、 工作清單、 輸出和選項 Windows |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 Windows
 您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說示範如何整合至新的工具視窗資訊**選項**頁面和新的設定上**屬性** 頁面上，以及如何將寫入**工作清單**和**輸出**windows。  
@@ -150,7 +148,7 @@ ms.lasthandoff: 12/22/2017
   
      工具視窗可供使用者使用時，將由 TodoItems 表示清單方塊中的項目。 當使用者選取其中一個項目在清單方塊中，**屬性**視窗會顯示項目的資訊。  
   
-     若要讓資料在**屬性**視窗中，您將資料轉換成具有兩個特殊的屬性的公用屬性`Description`和`Category`。 `Description`會出現在底部的文字**屬性**視窗。 `Category`決定屬性應該會出現時**屬性**視窗會顯示在**分類**檢視。 在下圖中**屬性**視窗會處於**分類** 檢視中，**名稱**屬性**ToDo 欄位**類別選取，而描述為**名稱**屬性會顯示在視窗底部。  
+     若要讓資料在**屬性**視窗中，您將資料轉換成具有兩個特殊的屬性的公用屬性`Description`和`Category`。 `Description` 會出現在底部的文字**屬性**視窗。 `Category` 決定屬性應該會出現時**屬性**視窗會顯示在**分類**檢視。 在下圖中**屬性**視窗會處於**分類** 檢視中，**名稱**屬性**ToDo 欄位**類別選取，而描述為**名稱**屬性會顯示在視窗底部。  
   
      ![屬性視窗](../extensibility/media/t5properties.png "T5Properties")  
   

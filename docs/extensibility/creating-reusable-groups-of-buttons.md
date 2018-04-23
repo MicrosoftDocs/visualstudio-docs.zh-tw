@@ -1,27 +1,25 @@
 ---
-title: "建立可重複使用的按鈕群組 |Microsoft 文件"
-ms.custom: 
+title: 建立可重複使用的按鈕群組 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 命令群組是一律會出現在一起的功能表或工具列的命令集合。 任何命令群組可以藉由指派至不同的父功能表.vsct 檔的 CommandPlacements 區段中重複使用。  
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
     </GuidSymbol>  
     ```  
   
-     根據預設，命令項目範本建立名為群組**MyGroup**和按鈕所提供，以及每個 IDSymbol 項目名稱。  
+     根據預設，命令項目範本建立名為群組**MyMenuGroup**和按鈕所提供，以及每個 IDSymbol 項目名稱。  
   
 5.  在 [群組] 區段中，建立具有相同的 GUID 和 ID 屬性為 [符號] 區段中指定的項目組成群組元素。 您也可以使用現有的群組，或使用命令範本，如下列範例所提供的項目。 此群組會出現在**工具**功能表  
   

@@ -2,28 +2,24 @@
 title: IEEVisualizerDataProvider::SetObjectForVisualizer |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feb48452b466301f7987db613997158aed160bac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d1a6272f8a04316c8695f301d5c45512b05f2d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化檢視表示的物件。  
@@ -62,6 +58,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>備註  
  這是由實作器決定如何傳回錯誤資訊。 不過，它可能會有些呼叫端可能僅以查看例外狀況物件是否已傳回有知道查詢時，發生錯誤，因此如果發生錯誤，這個方法一律會傳回例外狀況物件。 如果呼叫端想要進行，應該也提供錯誤字串使用它。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

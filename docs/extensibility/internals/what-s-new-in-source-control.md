@@ -1,32 +1,30 @@
 ---
-title: "什麼 &#39; 原始檔控制中的新 s |Microsoft 文件"
-ms.custom: 
+title: 什麼&#39;s 原始檔控制的新功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>什麼 &#39; s 原始檔控制的新功能
+# <a name="what39s-new-in-source-control"></a>什麼&#39;s 原始檔控制的新功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]您可以藉由實作 VSPackage 的原始檔控制提供緊密整合式原始檔控制方案。 本節描述原始檔控制 Vspackage 的功能，並提供實作步驟的概觀。  
   
 ## <a name="the-source-control-vspackage"></a>原始檔控制 VSPackage  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援兩種類型的原始檔控制的解決方案。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您仍然可以整合原始檔控制外掛程式 API 為基礎外掛程式。 您也可以建立 VSPackage 的原始檔控制提供深層整合[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]適用於需要高層級的複雜度，以及自主的原始檔控制方案的路徑。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制的解決方案。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您仍然可以整合原始檔控制外掛程式 API 為基礎外掛程式。 您也可以建立 VSPackage 的原始檔控制提供深層整合[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]適用於需要高層級的複雜度，以及自主的原始檔控制方案的路徑。  
   
  VSPackage 可以加入幾乎任何類型的功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 原始檔控制 VSPackage 提供的完整原始檔控制功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，從 UI 呈現給使用者與原始檔控制系統的後端通訊。  
   
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  您的原始檔控制 VSPackage 必須接聽事件，例如實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>介面以及追蹤專案文件 (TPD) 事件 (由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面)，並採取必要動作。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   

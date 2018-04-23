@@ -1,27 +1,25 @@
 ---
-title: "在舊版語言服務的自訂文件屬性 |Microsoft 文件"
-ms.custom: 
+title: 在舊版語言服務的自訂文件屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d1159ccc35f47b34069461b27239173c1860b18a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在舊版語言服務的自訂文件屬性
 文件屬性可顯示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。 程式設計語言通常不需要個別的來源檔案相關聯的屬性。 不過，XML 支援會影響編碼方式、 結構描述和樣式表的文件屬性。  
@@ -401,5 +399,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)

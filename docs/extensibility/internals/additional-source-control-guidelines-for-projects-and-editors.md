@@ -2,26 +2,22 @@
 title: 其他原始檔控制專案和方針編輯器 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e39c8fcc78712f0f8d9b799789751c16f343ada6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>其他原始檔控制專案和方針編輯器
 有許多的專案和編輯器應該遵守才能支援原始檔控制的指導方針。  
@@ -39,5 +35,5 @@ ms.lasthandoff: 12/22/2017
 |可預測的順序保存物件和屬性|X|X|保存您的可預測的順序，例如依字母順序排列的順序，以便合併檔案。|  
 |重新載入|X|X|當磁碟上的檔案變更時，您的編輯器必須能夠重新載入它。 當您參與原始檔控制中時，環境會重新載入資料，藉由呼叫您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>實作。 您已呼叫 IVsQueryEditQuerySave 時發生簽出時，最困難的重新載入案例::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>和處理資訊。 不過，您重新載入的程式碼必須能夠在此情況下執行。<br /><br /> 環境會自動重新載入專案檔。 不過，專案必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>如果有巢狀階層，才能支援重新載入巢狀專案檔案。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [支援原始檔控制](../../extensibility/internals/supporting-source-control.md)

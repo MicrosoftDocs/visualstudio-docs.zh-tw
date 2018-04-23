@@ -1,27 +1,25 @@
 ---
-title: "舊版語言服務中的大綱 |Microsoft 文件"
-ms.custom: 
+title: 舊版語言服務中的大綱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b899f53ba6b2a0b58997cc51a83a0d9ca8480e63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>舊版語言服務中的大綱
 大綱，讓可以摺疊成概觀或外框的複雜的程式。 比方說，在 C# 中的所有方法可摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示結構和類別名稱。 在單一方法，複雜的邏輯可摺疊來顯示陳述式的第一行，例如顯示的整體流程`foreach`， `if`，和`while`。  
@@ -121,6 +119,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)

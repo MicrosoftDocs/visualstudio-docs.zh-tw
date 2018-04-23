@@ -1,26 +1,24 @@
 ---
-title: "檢查清單： 建立新的專案類型 |Microsoft 文件"
-ms.custom: 
+title: 檢查清單： 建立新的專案類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ea9c2ebd295fe463192c50da402240e0b1df1304
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 11707e62e99dd6a7920ad627d02e6e418c002e80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="checklist-creating-new-project-types"></a>檢查清單： 建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引。  
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 8.  建立 Microsoft Installer (.msi) 檔案安裝您的 Vspackage。 如需詳細資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)，[註冊專案類型](../../extensibility/internals/registering-a-project-type.md)，和[Vspackage](../../extensibility/internals/vspackages.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [建立專案類型的時機](../../extensibility/internals/when-to-create-project-types.md)   
  [建立專案類型](../../extensibility/internals/creating-project-types.md)

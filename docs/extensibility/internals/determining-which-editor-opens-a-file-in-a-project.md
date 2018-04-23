@@ -1,28 +1,26 @@
 ---
-title: "判斷哪一個編輯器在專案中開啟的檔案 |Microsoft 文件"
-ms.custom: 
+title: 判斷哪一個編輯器在專案中開啟的檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f7c69bc08d0f1bb72a37b76fca2d402d73036deb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8fe054fa8e630b2f6c54cb78ef75b6c10ff74d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>決定編輯器開啟的專案中的檔案
 當使用者開啟檔案的專案中時，環境會經歷輪詢程序，最後開啟適當的編輯器或設計工具，該檔案。 初始環境所採用的程序是相同的標準和自訂編輯器。 輪詢要用來開啟檔案時，環境會使用各種不同的準則，VSPackage 必須與環境協調在這個程序。  
@@ -43,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
  環境時，現在重新檢查已註冊的編輯器，以尋找新註冊的 editor factory.rtf 檔案的內部清單。 環境呼叫您的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，傳入要建立的檔案名稱及檢視類型。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>   
  <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   

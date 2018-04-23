@@ -1,23 +1,21 @@
 ---
-title: "SDKReference 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: SDKReference 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2929e53dc3459c1699a0bc09cb235971ba02f90f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 64008bb473a64fece6ce1430f743148496633058
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 指定項目範本使用 SDK 參考。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
 ...  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [References 項目 （Visual Studio 範本）](../extensibility/references-element-visual-studio-templates.md)   
  [Reference 項目 （Visual Studio 範本）](../extensibility/reference-element-visual-studio-templates.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   

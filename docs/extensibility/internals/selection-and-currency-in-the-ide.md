@@ -1,28 +1,26 @@
 ---
-title: "選取項目及在 IDE 中的貨幣 |Microsoft 文件"
-ms.custom: 
+title: 選取項目及在 IDE 中的貨幣 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>選取項目及在 IDE 中的貨幣
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可讓您維護使用者的資訊目前選取物件，使用選取*內容*。 與選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  
@@ -34,11 +32,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="selection-context"></a>選取項目內容  
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 全域追蹤的 IDE 貨幣，在它自己的全域選取範圍內容物件。 下表顯示組成的選取項目內容的項目。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |目前的階層|通常是目前的專案。NULL 目前的階層表示整個方案是最新。|  
 |目前的項目識別碼|選取的項目內目前的階層。[專案] 視窗中的多個選取項目時，可以有多個目前的項目。|  
-|目前的`SelectionContainer`|保留 [屬性] 視窗應該顯示屬性的一或多個物件。|  
+|目前的 `SelectionContainer`|保留 [屬性] 視窗應該顯示屬性的一或多個物件。|  
   
  此外，環境會維護兩個全域清單：  
   
@@ -66,6 +64,6 @@ ms.lasthandoff: 12/22/2017
   
 -   變更項目追蹤的視窗框架選取項目內容中的事件。 範例包括變更選取範圍內 DocObject 或變更在專案類型 視窗中的選取範圍。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選擇內容物件](../../extensibility/internals/selection-context-objects.md)   
  [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)

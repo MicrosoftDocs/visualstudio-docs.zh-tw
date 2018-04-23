@@ -2,26 +2,22 @@
 title: 舊版語言服務模型 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 語言服務定義的項目和功能特定的語言，並用來提供該語言的特定資訊的編輯器。 例如，編輯器必須知道的項目和語言的關鍵字，以支援的語法著色。  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |程式碼視窗|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|文件視窗包含一個或多個文字檢視。 當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在多重文件介面 (MDI) 模式中，程式碼視窗是 MDI 子系。|  
 |文字檢視|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|可讓使用者瀏覽，並使用鍵盤和滑鼠來檢視文字視窗中。 做為編輯器，對使用者顯示的文字檢視。 您可以使用一般的編輯器視窗、 [輸出] 視窗和即時運算視窗中的文字檢視。 此外，您可以設定程式碼視窗中的一個或多個文字檢視。|  
 |文字管理員|受<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服務，而從中您取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指標|維護常用資訊先前所述的所有元件都共用的元件。|  
-|語言服務|實作而定;實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|物件，提供特定語言資訊，例如語法反白顯示、 陳述式完成和大括號比對的編輯器。|  
+|語言服務|實作而定;實作 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|物件，提供特定語言資訊，例如語法反白顯示、 陳述式完成和大括號比對的編輯器。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂編輯器中的文件資料和文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)

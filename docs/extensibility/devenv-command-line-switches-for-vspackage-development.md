@@ -1,12 +1,10 @@
 ---
-title: "Devenv 命令列參數為 VSPackage 開發 |Microsoft 文件"
-ms.custom: 
+title: Devenv 命令列參數為 VSPackage 開發 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv 命令列參數為 VSPackage 開發的
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可讓開發人員執行 devenv.exe，會啟動 Visual Studio 整合式的開發環境 (IDE) 的檔案時，從命令列的工作自動化。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓開發人員執行 devenv.exe，會啟動 Visual Studio 整合式的開發環境 (IDE) 的檔案時，從命令列的工作自動化。  
   
  工作包括：  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 -   載入的 IDE 中特定組態中，所有在 IDE 之外。 此外，您可以自訂在啟動 IDE。  
   
 ## <a name="guidelines-for-switches"></a>參數的指導方針  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文件說明了使用者層級 devenv 命令列參數。 如需詳細資訊，請參閱[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 Devenv 也會支援可用的 VSPackage 開發、 部署和偵錯的其他命令列參數。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文件說明了使用者層級 devenv 命令列參數。 如需詳細資訊，請參閱[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 Devenv 也會支援可用的 VSPackage 開發、 部署和偵錯的其他命令列參數。  
   
 |命令列參數|描述|  
 |--------------------------|-----------------|  
@@ -49,6 +47,6 @@ ms.lasthandoff: 12/22/2017
 |/rootsuffix|啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用替代位置。 執行下列命令所建立的捷徑[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安裝程式：<br /><br /> devenv /RootSuffix exp<br /><br /> 在此情況下，exp 識別特定的尾碼，例如 10.0Exp，而不是 10.0 的位置。 實驗執行個體可讓您偵錯分開的執行個體 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]您撰寫程式碼使用。<br /><br /> 這個參數會識別您已建立使用 VSRegEx.exe 位置的任何字串。 如需詳細資訊，請參閱[實驗執行個體的](../extensibility/the-experimental-instance.md)。|  
 |/splash|顯示[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如往常般啟動顯示畫面，並顯示訊息方塊顯示主要的 IDE 之前。 訊息方塊，可讓您研究啟動顯示畫面，例如檢查 VSPackage 產品圖示。<br /><br /> 此參數不需使用引數。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [加入命令列參數](../extensibility/adding-command-line-switches.md)   
  [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)

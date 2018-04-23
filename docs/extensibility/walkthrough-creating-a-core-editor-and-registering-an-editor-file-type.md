@@ -1,27 +1,23 @@
 ---
-title: "建立核心編輯器和註冊編輯器檔案類型 |Microsoft 文件"
-ms.custom: 
+title: 建立核心編輯器和註冊編輯器檔案類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace475cb94920a5c0470c1d16265349edfa441f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6bb9b9443a60e54d875d6e3992a18ac1f0691244
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說： 建立核心編輯器和登錄編輯程式檔案類型
 本逐步解說示範如何建立啟動的 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .myext 副檔名的檔案時，核心編輯器會載入。  
@@ -399,6 +395,6 @@ ms.lasthandoff: 12/22/2017
   
  如需有關核心編輯器的詳細資訊，請參閱[核心編輯器內](../extensibility/inside-the-core-editor.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心編輯器內](../extensibility/inside-the-core-editor.md)   
  [執行個體化使用舊版 API 的核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)

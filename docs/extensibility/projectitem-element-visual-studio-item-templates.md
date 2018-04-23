@@ -1,30 +1,26 @@
 ---
-title: "ProjectItem 項目 （Visual Studio 項目範本） |Microsoft 文件"
-ms.custom: 
+title: ProjectItem 項目 （Visual Studio 項目範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe9abece45efdc206e775bc8f5e79666e334001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 886fc57258b4ccafaa4ab8d522fad632de455e17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 (Visual Studio 項目範本)
 指定項目範本中所包含的檔案。  
@@ -62,7 +58,7 @@ ms.lasthandoff: 12/22/2017
 |`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
 |`TargetFileName`|選擇性屬性。<br /><br /> 指定從範本建立的項目名稱。 這個屬性可用於建立項目名稱中使用參數取代。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -77,7 +73,7 @@ ms.lasthandoff: 12/22/2017
  A`string`代表範本的.zip 檔中的檔案名稱。  
   
 ## <a name="remarks"></a>備註  
- `ProjectItem`是選擇性的子系的`TemplateContent`。  
+ `ProjectItem` 是選擇性的子系的`TemplateContent`。  
   
  `TargetFileName`屬性可用來重新命名檔案使用的參數。 例如，如果檔案`MyFile.vb`存在於根目錄的樣板的.zip 檔案，但您想根據在使用者所提供的檔案名稱的檔案命名為**加入新項目**對話方塊中，您可以使用下列 XML:  
   
@@ -106,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)   

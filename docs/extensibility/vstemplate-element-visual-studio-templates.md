@@ -1,29 +1,25 @@
 ---
-title: "VSTemplate 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: VSTemplate 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#VSTemplate
 helpviewer_keywords:
 - VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c9fe87ae48c705e447b4fc5bd2834a417c4e8d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 項目 (Visual Studio 範本)
 包含有關專案範本、 項目範本或入門套件的所有中繼資料。  
@@ -48,7 +44,7 @@ ms.lasthandoff: 12/22/2017
 |`Type`|識別做為專案範本或項目範本的範本。 這個屬性可以具有值為`Project`或`Item`。|  
 |`Version`|指定範本的版本號碼。 中的範本[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]和[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]有`Version`屬性值為`3.0.0`。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -90,6 +86,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,23 +1,21 @@
 ---
-title: "建立軟體開發套件 |Microsoft 文件"
-ms.custom: 
+title: 建立軟體開發套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是的 Api，您可以參考做為 Visual Studio 中的單一項目集合。 **參考管理員**對話方塊會列出與專案相關的所有 Sdk。 當您將 SDK 加入至專案時，應用程式開發介面是 Visual Studio 中提供。  
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [擴充功能 Sdk](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>平台 Sdk  
+##  <a name="PlatformSDKs"></a> 平台 Sdk  
  平台 Sdk，才能開發平台應用程式。 例如， [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK，才能開發的應用程式[!INCLUDE[win81](../debugger/includes/win81_md.md)]。  
   
 ### <a name="installation"></a>安裝  
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 |架構資料夾|可以存在的任何支援的架構資料夾。 Visual Studio 支援在下列架構： x86、 x64、 ARM 和 neutral。 注意： 為 x86，對應的 Win32 和 AnyCPU map 中性。<br /><br /> 平台 Sdk 下 \CommonConfiguration\neutral 只會尋找 MSBuild。|  
 |SDKManifest.xml|此檔案描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:**物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:**這個屬性的存在告知 Visual Studio 和 MSBuild 的 SDK 是平台 SDK 和從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:**這個屬性可由 Visual Studio 來確保，只會目標相同的架構中的值所指定的專案屬性可能會耗用 SDK。<br /><br /> **MinVSVersion:**這個屬性可由 Visual Studio 來使用套用至該 Sdk。<br /><br /> **參考：**這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，請參閱下文。|  
   
-##  <a name="ExtensionSDKs"></a>擴充功能 Sdk  
+##  <a name="ExtensionSDKs"></a> 擴充功能 Sdk  
  下列各節說明您需要如何部署擴充功能 SDK。  
   
 ### <a name="installation"></a>安裝  
@@ -173,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson： 最大目標平台版本應該用來指定擴充功能 SDK 將無法運作所在的平台版本。 例如，Microsoft Visual c + + Runtime Package v11.0 應該只能由 Windows 8 專案參考。 因此，Windows 8 專案的 MaxPlatformVersion 為 8.0。 也就是說，針對 Windows 8.1 專案，參考管理員會篩選出 Microsoft Visual c + + Runtime Package，MSBuild 會擲回的錯誤時[!INCLUDE[win81](../debugger/includes/win81_md.md)]專案參考它。 注意： 這個項目開始便支援[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]。  
   
-7.  AppliesTo： 指定指定適用的 Visual Studio 專案類型都可以在 [參考管理員] 中的 Sdk。 會辨識九個值： WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 JavaScript、 受管理，與原生。 SDK 作者可以使用和 ("+')，或 ("&#124;")，不 ("！")若要指定完全 SDK 適用於專案類型的範圍運算子。  
+7.  AppliesTo： 指定指定適用的 Visual Studio 專案類型都可以在 [參考管理員] 中的 Sdk。 會辨識九個值： WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 JavaScript、 受管理，與原生。 SDK 作者可以使用和 ("+')，或 (「&#124;")，而非 ("！")若要指定完全 SDK 適用於專案類型的範圍運算子。  
   
      WindowsAppContainer 識別專案[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。  
   
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. 檔案參考： 指定包含控制項或原生 Winmd 這些參考。 如需如何指定參考是否包含控制項相關的資訊，請參閱[指定工具箱項目的位置](#ToolboxItems)下方。  
   
-##  <a name="ToolboxItems"></a>指定工具箱項目的位置  
+##  <a name="ToolboxItems"></a> 指定工具箱項目的位置  
  ToolBoxItems SDKManifest.xml 結構描述項目會指定平台和擴充功能 Sdk 中的類別和工具箱項目的位置。 下列範例會示範如何指定不同的位置。 這是適用於 WinMD 或 DLL 的參考。  
   
 1.  將控制項放在 [工具箱] 的預設分類。  
@@ -266,7 +264,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     </File>  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [逐步解說： 建立使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [管理專案中的參考](../ide/managing-references-in-a-project.md)

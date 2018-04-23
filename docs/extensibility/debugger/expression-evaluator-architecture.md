@@ -1,27 +1,25 @@
 ---
-title: "運算式評估工具架構 |Microsoft 文件"
-ms.custom: 
+title: 運算式評估工具架構 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  DE 建立該物件會實作[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面，將`IDebugParsedExpression`物件插入`IDebugExpression2`物件，並傳回`IDebugExpression2`物件從`IDebugExpressionContext2::ParseText`。  
   
 ### <a name="evaluating-the-expression"></a>評估運算式  
- Visual Studio 會呼叫  [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)評估剖析的運算式。 這兩種方法呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync`呼叫的方法，立即而`IDebugExpression2::EvaluateAsync`呼叫的方法，透過背景執行緒) 來評估剖析的運算式，並傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面代表的值和類型的已剖析的運算式。 `IDebugParsedExpression::EvaluateSync`使用提供的 SH、 位址和繫結器將剖析的運算式轉換成實際值，由`IDebugProperty2`介面。  
+ Visual Studio 會呼叫  [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)評估剖析的運算式。 這兩種方法呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync`呼叫的方法，立即而`IDebugExpression2::EvaluateAsync`呼叫的方法，透過背景執行緒) 來評估剖析的運算式，並傳回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)介面代表的值和類型的已剖析的運算式。 `IDebugParsedExpression::EvaluateSync` 使用提供的 SH、 位址和繫結器將剖析的運算式轉換成實際值，由`IDebugProperty2`介面。  
   
 ### <a name="for-example"></a>如需範例  
  在執行中的程式遇到中斷點後，使用者選擇檢視中的變數**快速監看式** 對話方塊。 這個對話方塊會顯示變數的名稱，其值與它的型別。 使用者通常可以變更值。  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  [主要的運算式評估工具介面](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  說明撰寫 EE，以及評估內容時所需的重要介面。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [顯示 [區域變數]](../../extensibility/debugger/displaying-locals.md)   
  [變更區域變數的值](../../extensibility/debugger/changing-the-value-of-a-local.md)

@@ -1,22 +1,19 @@
 ---
-title: "Hello World |Microsoft 文件"
-ms.custom: 
+title: Hello World |Microsoft 文件
+ms.custom: ''
 ms.date: 07/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1b7d695f2211f01ce374ee41404d5ab49abde70a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7c531d8acddfebcd2656d6dca05b95244f54ec01
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-your-first-extension-hello-world"></a>建立您的第一個延伸模組： Hello World
 

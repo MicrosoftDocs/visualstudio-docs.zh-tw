@@ -1,26 +1,24 @@
 ---
-title: "顯示 [區域變數] |Microsoft 文件"
-ms.custom: 
+title: 顯示 [區域變數] |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, displaying locals
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8566baec58e2dd95b42be8916b7d48131370e65e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03a3f08498e8b046b02defd32083677b7f39e7e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="displaying-locals"></a>顯示 [區域變數]
 > [!IMPORTANT]
@@ -43,5 +41,5 @@ ms.lasthandoff: 12/22/2017
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  說明當偵錯引擎 (DE) 呼叫運算式評估工具 (EE) 時，它會傳遞三個引數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

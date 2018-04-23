@@ -1,29 +1,25 @@
 ---
-title: "SccInitialize 函式 |Microsoft 文件"
-ms.custom: 
+title: SccInitialize 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函式
 此函式初始化原始檔控制外掛程式，並提供整合式的開發環境 (IDE) 的限制及功能。  
@@ -85,11 +81,11 @@ SCCRTN SccInitialize (
   
  `lpCallerName`和`lpSccName`參數可讓在 IDE 和原始檔控制外掛程式交換名稱。 這些名稱可能只用來區別多個執行個體，或它們可能實際上會出現在功能表或對話方塊。  
   
- `lpAuxPathLabel`參數是以註解用來識別儲存的方案檔，並傳遞至原始檔控制外掛程式的呼叫中的輔助專案路徑的字串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]會使用字串"SourceSafe 專案:";其他原始檔控制外掛程式應該避免使用這個特定的字串。  
+ `lpAuxPathLabel`參數是以註解用來識別儲存的方案檔，並傳遞至原始檔控制外掛程式的呼叫中的輔助專案路徑的字串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 會使用字串"SourceSafe 專案:";其他原始檔控制外掛程式應該避免使用這個特定的字串。  
   
  `lpSccCaps`參數可讓原始檔控制外掛程式位置以儲存位元旗標，指出 「 隨插即用單元的功能。 (如需完整的功能位元旗標清單，請參閱[功能旗標](../extensibility/capability-flags.md))。 比方說，如果將結果寫入到呼叫端提供的回呼函式，此外掛程式會設定功能的外掛程式計劃位元 SCC_CAP_TEXTOUT。 這會通知 IDE 來建立版本控制結果的視窗。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   

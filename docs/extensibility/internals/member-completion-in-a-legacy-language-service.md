@@ -1,27 +1,25 @@
 ---
-title: "在舊版語言服務中的成員完成 |Microsoft 文件"
-ms.custom: 
+title: 在舊版語言服務中的成員完成 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0cc22190c9228d2e166be94ed0d5cc78105e2404
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>在舊版語言服務中的成員完成
 IntelliSense 成員完成會顯示一份可能的成員，例如類別、 結構、 列舉型別或命名空間的特定範圍的工具提示。 例如，在 C# 中，如果使用者輸入"this"，後面接著句號，類別或結構目前範圍的所有成員的清單會以清單，使用者可以從中選取。  

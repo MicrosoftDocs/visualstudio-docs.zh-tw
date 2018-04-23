@@ -1,12 +1,10 @@
 ---
-title: "參數資訊，以舊版語言 Service1 |Microsoft 文件"
-ms.custom: 
+title: 參數資訊，以舊版語言 Service1 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>在舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊工具提示提供使用者有關的語言建構中的提示。  
@@ -40,7 +38,7 @@ IntelliSense 的 參數資訊工具提示提供使用者有關的語言建構中
   
  透過命令攔截語言服務不會起始參數資訊工具提示。 若要攔截使用者的字元，您的語言服務物件必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，並將 [文字] 檢視的指標您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>實作中的，藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>方法中的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。 命令篩選器會攔截在程式碼視窗中輸入的命令。 監視命令的資訊可以知道何時要向使用者顯示參數資訊。 您可以使用相同的命令篩選陳述式完成、 錯誤標記和其他等等。  
   
- 當您輸入的關鍵字，語言服務可以提供提示時，然後語言服務建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>物件並呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>方法中的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>通知 IDE，才能顯示一個提示的介面。 建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>物件使用`VSLocalCreateInstance`並指定 coclass `CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance`是函式中呼叫標頭檔 vsdoc.h 定義`QueryService`本機登錄和呼叫`CreateInstance`為此物件上`CLSID_VsMethodTipWindow`。  
+ 當您輸入的關鍵字，語言服務可以提供提示時，然後語言服務建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>物件並呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>方法中的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>通知 IDE，才能顯示一個提示的介面。 建立<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>物件使用`VSLocalCreateInstance`並指定 coclass `CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance` 是函式中呼叫標頭檔 vsdoc.h 定義`QueryService`本機登錄和呼叫`CreateInstance`為此物件上`CLSID_VsMethodTipWindow`。  
   
 ## <a name="providing-a-method-tip"></a>提供方法秘訣  
  若要提供方法秘訣，請呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>方法中的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>介面，將傳遞給它的實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>介面。  

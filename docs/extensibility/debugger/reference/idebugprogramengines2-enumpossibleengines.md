@@ -2,28 +2,24 @@
 title: IDebugProgramEngines2::EnumPossibleEngines |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81765959c0735080141ba8974387d592a461df25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d30eb28398569aa3d14b4a7dd363abac785f352c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 傳回所有可能的偵錯引擎 (DE) 可以偵錯此程式的 Guid。  
@@ -62,5 +58,5 @@ int EnumPossibleEngines(
 ## <a name="remarks"></a>備註  
  若要判斷有多少引擎，可以呼叫這個方法一次使用`celtBuffer`參數設為 0 和`rgguidEngines`參數設定為 null 的值。 這會傳回`HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`(0x8007007A C#) 和`pceltEngines`參數會傳回所需的緩衝區大小。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

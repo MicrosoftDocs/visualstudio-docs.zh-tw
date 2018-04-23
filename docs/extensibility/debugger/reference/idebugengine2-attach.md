@@ -2,28 +2,24 @@
 title: IDebugEngine2::Attach |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 將偵錯引擎 (DE) 附加至程式或程式。 工作階段的偵錯管理員 (SDM) 執行同處理序以 SDM DE 時呼叫。  
@@ -72,11 +68,11 @@ int Attach(
 ## <a name="remarks"></a>備註  
  有三個理由附加至程式中，如下：  
   
--   `ATTACH_REASON_LAUNCH`指出 DE 附加到程式，因為使用者已啟動包含該處理序。  
+-   `ATTACH_REASON_LAUNCH` 指出 DE 附加到程式，因為使用者已啟動包含該處理序。  
   
--   `ATTACH_REASON_USER`表示使用者已明確要求 DE 附加至程式 （或包含程式的處理序）。  
+-   `ATTACH_REASON_USER` 表示使用者已明確要求 DE 附加至程式 （或包含程式的處理序）。  
   
--   `ATTACH_REASON_AUTO`指出 DE 附加到特定的程式，因為它已經偵錯其他程式的特定處理程序。 這也稱為自動附加。  
+-   `ATTACH_REASON_AUTO` 指出 DE 附加到特定的程式，因為它已經偵錯其他程式的特定處理程序。 這也稱為自動附加。  
   
  呼叫這個方法時，DE 必須傳送這些事件順序：  
   
@@ -92,7 +88,7 @@ int Attach(
   
  所給定陣列中呼叫程式節點的方法之前`pProgram`或`rgpProgramNodes`，模擬，如果需要上, 應該啟用`IDebugProgram2`代表程式節點的介面。 一般來說，不過，這個步驟並非必要。 如需詳細資訊，請參閱[安全性問題](../../../extensibility/debugger/security-issues.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

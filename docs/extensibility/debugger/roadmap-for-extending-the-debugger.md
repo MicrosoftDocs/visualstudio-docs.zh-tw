@@ -1,31 +1,29 @@
 ---
-title: "用於擴充偵錯工具藍圖 |Microsoft 文件"
-ms.custom: 
+title: 用於擴充偵錯工具藍圖 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 46c5a8a995644d6876457836674152eb3b3ccad7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>用於擴充偵錯工具藍圖
 這份文件提供用於擴充的指南和參考資訊[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]偵錯工具與[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯文件包含範例、 完整的參考及示範自訂偵錯工具的一般方法的幾個代表性案例。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 偵錯文件包含範例、 完整的參考及示範自訂偵錯工具的一般方法的幾個代表性案例。  
   
  編譯器和其輸出決定您需要如何做以您的產品中實作偵錯。 如果您的編譯器：  
   
@@ -53,5 +51,5 @@ ms.lasthandoff: 12/22/2017
   
      [範例](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

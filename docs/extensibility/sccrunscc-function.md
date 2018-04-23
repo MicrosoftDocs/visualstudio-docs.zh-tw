@@ -1,29 +1,25 @@
 ---
-title: "SccRunScc 函式 |Microsoft 文件"
-ms.custom: 
+title: SccRunScc 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ad179325c4f34cd206a3c5e6b0840a69dd46037
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 322ebe148144260106fb895273b66e1b9f5696f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用的原始檔控制系統管理工具。  
@@ -72,7 +68,7 @@ SCCRTN SccRunScc(
   
  此函式通常叫用使用者選取時**啟動\<原始檔控制伺服器 >**從**檔案** -> **原始檔控制**功能表。 這**啟動**功能表選項可一律停用，或甚至隱藏設定登錄項目。 請參閱[如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需詳細資訊，這和其他功能的位元)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [功能旗標](../extensibility/capability-flags.md)   

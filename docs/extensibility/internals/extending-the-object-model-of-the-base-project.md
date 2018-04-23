@@ -3,24 +3,22 @@ title: 擴充的基底的專案物件模型 |Microsoft 文件
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - automation object model, extending
 - project subtypes, extending automation object model
 - automation object model
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0fdda35744aaddf8789818afd1f938897470147
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9cffbecf585f6f8be4174531a91e466f65ab9a72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>擴充基底的專案物件的模型
 

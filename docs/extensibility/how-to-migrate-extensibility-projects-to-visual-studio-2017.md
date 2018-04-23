@@ -1,23 +1,21 @@
 ---
-title: "如何： 將擴充性專案移轉至 Visual Studio 2017 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將擴充性專案移轉至 Visual Studio 2017 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d49ff89f38b0279c60f49ee7d5856d21fd5fc4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 93f5d663a31d43dc7a52cbd11261ca78134c682a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 將擴充性專案移轉至 Visual Studio 2017
 
@@ -122,7 +120,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 * 建立 VSIX 專案。
 * 將解壓縮產生的 VSIX。
-  * 藉由預設值，VSIX 檔案生活 bin/Debug 內或者 [YourCustomExtension].vsix 為的 bin/Release。
+  * 藉由預設值，VSIX 檔案生活 bin/Debug 內 或者 [YourCustomExtension].vsix 為的 bin/Release。
   * 將.vsix 重新命名為.zip，以輕鬆地檢視內容。
 * 檢查有三個檔案存在：
   * extension.vsixmanifest

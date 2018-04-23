@@ -2,26 +2,22 @@
 title: Description 項目 （Visual Studio 範本） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e58ee9b351acaeaabb842abd1c9e4d04ec1a189
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 471633a4c786a879b333a09a4d7975739a56ccfa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="description-element-visual-studio-templates"></a>描述項目 (Visual Studio 範本)
 指定範本描述出現在**新專案**或**加入新項目** 對話方塊。  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |`Package`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 封裝的 GUID 識別碼。|  
 |`ID`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 的資源 id。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -96,6 +92,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

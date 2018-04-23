@@ -1,27 +1,23 @@
 ---
-title: "網站支援屬性 |Microsoft 文件"
-ms.custom: 
+title: 網站支援屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e9dcfd511a95ce1ea27af64a3a7f8302fe2827
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: b312322c1d707f13c5121f1fd159f3fd7736886c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案可以擴充來支援 Web 程式設計語言。 語言必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，讓專案範本可以出現在**新網站**時選取語言 對話方塊。
@@ -60,5 +56,5 @@ public class PythonPackage : Package, IOleComponent
 
  IVsIntellisenseProject 實作處理的參考，並以程式碼的網頁要求，但不快取時所呼叫的語言編譯器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [網站支援](../../extensibility/internals/web-site-support.md)

@@ -1,27 +1,25 @@
 ---
-title: "巢狀專案的精靈支援 |Microsoft 文件"
-ms.custom: 
+title: 巢狀專案的精靈支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add Item wizard
 - nested projects, wizard support
 - New Project wizard
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 757968aabfc256cda37a103d48c8d12f1fc16fa5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14e8a32db2542ae1729a7fdc87cc2ab32845f8ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 IDE 執行兩個精靈，可實作用於巢狀專案父專案：**新專案**精靈和**加入項目**精靈。  
@@ -32,6 +30,6 @@ IDE 執行兩個精靈，可實作用於巢狀專案父專案：**新專案**精
   
  如需有關精靈的詳細資訊，請參閱[精靈 (。Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)，[內容參數](../../extensibility/internals/context-parameters.md)和[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [巢狀專案](../../extensibility/internals/nesting-projects.md)

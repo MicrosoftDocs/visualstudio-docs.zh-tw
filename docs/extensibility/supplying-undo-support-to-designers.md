@@ -1,27 +1,23 @@
 ---
-title: "提供復原設計工具支援 |Microsoft 文件"
-ms.custom: 
+title: 提供復原設計工具支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>提供給設計工具的復原支援
 設計工具，如編輯器，通常需要支援復原作業，因此使用者就可以反轉最近的變更時修改程式碼項目。  
@@ -30,7 +26,7 @@ ms.lasthandoff: 12/22/2017
   
  設計工具的實作必須提供復原功能的支援：  
   
--   藉由實作抽象基底類別提供復原管理<xref:System.ComponentModel.Design.UndoEngine>  
+-   藉由實作抽象基底類別提供復原管理 <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   藉由實作提供持續性和 codedom 之間支援<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>類別。  
   
@@ -73,7 +69,7 @@ ms.lasthandoff: 12/22/2017
   
  環境 SDK 提供 CodeDOM 和持續性支援藉由提供：  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>為實作<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 為實作 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  A<xref:System.ComponentModel.Design.IComponentChangeService>提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]' 設計主應用程式。  
   
@@ -100,13 +96,13 @@ ms.lasthandoff: 12/22/2017
   
 -   屬性變更都會經過<xref:System.ComponentModel.TypeDescriptor>物件。  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>認可復原變更時，會以手動方式產生事件。  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> 認可復原變更時，會以手動方式產生事件。  
   
 -   修改設計工具上的內容中建立<xref:System.ComponentModel.Design.DesignerTransaction>。  
   
 -   在設計工具選擇明確建立的實作所提供的標準復原單位使用的復原單位<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 特定實作<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，其衍生自<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>也會提供兩者的實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
  [擴充設計階段支援](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

@@ -1,22 +1,19 @@
 ---
-title: "資訊清單的程式碼 |Microsoft 文件"
-ms.custom: 
+title: 資訊清單的程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>資訊清單的程式碼
 程式碼工具的資訊清單是主控台應用程式的 Visual Studio 映像服務接受.imagemanifest 檔案，並產生的包裝函式的檔案或檔案參考 c + +、 C#、 VB 或 Visual Studio 擴充功能的.vsct 檔案中的影像資訊清單的值。 此工具會產生包裝函式可以用於要求的映像，從 Visual Studio 映像服務直接管理，或傳遞到應用程式開發介面的資訊清單的值，如果程式碼不會處理任何自己的 UI 和轉譯的檔案。  

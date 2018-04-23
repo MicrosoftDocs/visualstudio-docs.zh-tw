@@ -1,26 +1,24 @@
 ---
-title: "新增工具列 |Microsoft 文件"
-ms.custom: 
+title: 新增工具列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f7b837a620a1e116b9bb8a11ff8a4edab7bfabfb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c4a9a28ef3fced7cc2dab1f14b2854f2ca27d362
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-toolbar"></a>新增工具列
 本逐步解說示範如何將工具列新增至 Visual Studio IDE。  
@@ -93,5 +91,5 @@ ms.lasthandoff: 12/22/2017
   
 7.  您現在應該看到您的工具列右邊的 [檔案] 圖示中尋找圖示。 當您按一下圖示時，您應該會看到訊息方塊，表示**ToolbarTestCommandPackage。內部 IDEToolbar.ToolbarTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

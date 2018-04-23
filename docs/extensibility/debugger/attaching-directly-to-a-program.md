@@ -2,26 +2,22 @@
 title: 附加至程式直接 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528925e323e4cff5784365e3097cc7f5f414963
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6885cb0dea801ab95e2e88e3f8168c139fea0e0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attaching-directly-to-a-program"></a>直接附加程式
 使用者想要偵錯程式已在通常執行的處理序中遵循這個程序：  
@@ -46,6 +42,6 @@ ms.lasthandoff: 12/22/2017
   
  第二個例外情況是，附加到已在執行中的程式 DE 所傳送的啟動事件不通常包含項目點事件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在啟動後傳送啟動事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

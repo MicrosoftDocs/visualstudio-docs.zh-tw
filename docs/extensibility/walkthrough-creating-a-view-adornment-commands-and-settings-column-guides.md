@@ -1,23 +1,21 @@
 ---
-title: "建立檢視裝飾、 命令和設定 |Microsoft 文件"
-ms.custom: 
+title: 建立檢視裝飾、 命令和設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （資料行指南）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。  本主題會示範如何開始使用常見的延伸模組功能，資料行的指南。  資料行的輔助線是以視覺化方式淺色文字編輯器的檢視，可協助您管理您的程式碼的特定資料行寬度上繪製的直線。  特別是格式化程式碼可能很重要的範例包含在文件，部落格文章，或錯誤報告。  
@@ -54,13 +52,13 @@ ms.lasthandoff: 12/22/2017
   
 -   沒有`ColumnGuideCommands`.vsct 檔中宣告可實作使用者命令和命令的命令處理常式連結的物件。  
   
- **VSIX**。  使用**檔案 &#124;新...**命令，以建立專案。  在左側瀏覽窗格中選擇 C# 下的 擴充性 節點，選擇  **VSIX 專案**右窗格中。  輸入 ColumnGuides 的名稱，然後選擇**確定**建立專案。  
+ **VSIX**。  使用**檔案&#124;新...**命令，以建立專案。  在左側瀏覽窗格中選擇 C# 下的 擴充性 節點，選擇  **VSIX 專案**右窗格中。  輸入 ColumnGuides 的名稱，然後選擇**確定**建立專案。  
   
- **檢視裝飾**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增 &#124;新增項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性 &#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區裝飾**右窗格中。  輸入名稱 ColumnGuideAdornment 做為項目名稱，然後選擇**新增**，將它加入。  
+ **檢視裝飾**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區裝飾**右窗格中。  輸入名稱 ColumnGuideAdornment 做為項目名稱，然後選擇**新增**，將它加入。  
   
  您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案： ColumnGuideAdornment.cs 和 ColumnGuideAdornmentTextViewCreationListener.cs。  範本只會在檢視上繪製一個紫色的矩形。  下面將變更幾行中的檢視建立接聽程式，並取代 ColumnGuideAdornment.cs 的內容。  
   
- **命令**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增 &#124;新增項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性 &#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。  輸入名稱 ColumnGuideCommands 做為項目名稱，然後選擇**新增**，將它加入。  數個參考，除了新增的命令和封裝新增 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面，您將會取代來定義並實作命令的第一個和最後一個檔案的內容。  
+ **命令**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。  輸入名稱 ColumnGuideCommands 做為項目名稱，然後選擇**新增**，將它加入。  數個參考，除了新增的命令和封裝新增 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面，您將會取代來定義並實作命令的第一個和最後一個檔案的內容。  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>設定文字檢視建立接聽程式  
  在編輯器中開啟 ColumnGuideAdornmentTextViewCreationListener.cs。  這段程式碼會實作一個處理常式，每當 Visual Studio 建立文字檢視。  沒有屬性，以控制當呼叫此處理常式是根據檢視的特性。  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`若要取得稍微有<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>檢視程式碼。  如果是透過追蹤`GetActiveTextView`， `GetActiveView`，和`GetTextViewFromVsTextView`，您可以了解如何執行此作業。  以下是相關的程式碼區隔，從目前的選取範圍，再取得選取範圍的範圍內，然後取得做為框架 DocView <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>，然後取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>在 IVsTextView 和 快速入門 檢視主機和最後 IWpfTextView:  
+ `GetCurrentEditorColumn` 若要取得稍微有<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>檢視程式碼。  如果是透過追蹤`GetActiveTextView`， `GetActiveView`，和`GetTextViewFromVsTextView`，您可以了解如何執行此作業。  以下是相關的程式碼區隔，從目前的選取範圍，再取得選取範圍的範圍內，然後取得做為框架 DocView <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>，然後取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>在 IVsTextView 和 快速入門 檢視主機和最後 IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  與目前的資料行手其中使用者已按下，程式碼只會呼叫設定管理員来新增或移除資料行上。  設定管理員就會引發事件以所有`ColumnGuideAdornment`物件接聽。  當事件引發時，這些物件會以新的資料行指南設定更新及其相關聯的文字檢視。  
   
 ## <a name="invoking-command-from-the-command-window"></a>叫用的命令，從命令視窗  
- 資料行指南範例可讓使用者叫用做為一種擴充性的兩個命令，從命令視窗。  如果您使用**檢視 &#124;其他視窗 &#124;命令視窗**命令時，您可以看到 [命令] 視窗。  您可以互動命令視窗中輸入 「 編輯 」，並使用命令名稱完成，並提供引數 120，您需要下列：  
+ 資料行指南範例可讓使用者叫用做為一種擴充性的兩個命令，從命令視窗。  如果您使用**檢視&#124;其他視窗&#124;命令視窗**命令時，您可以看到 [命令] 視窗。  您可以互動命令視窗中輸入 「 編輯 」，並使用命令名稱完成，並提供引數 120，您需要下列：  
   
 ```  
 > Edit.AddColumnGuide 120  
@@ -1352,7 +1350,7 @@ private int GetApplicableColumn(EventArgs e)
   
  您可以試用版本與這個 Visual Studio 組件庫的資料行指南功能[延伸](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在編輯器](../extensibility/inside-the-editor.md)   
  [擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)   
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)   

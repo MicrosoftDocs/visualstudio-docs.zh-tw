@@ -2,26 +2,22 @@
 title: 在啟動後傳送啟動事件 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e05d7da2acf5bd3eaf8dab1e3781d3d5b244a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6ffd1a47f4d1d82feecb35110151a8b32d7d245
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 在偵錯引擎 (DE) 會附加至程式之後，它會傳送一系列的啟動事件至偵錯工作階段。  
@@ -49,6 +45,6 @@ ms.lasthandoff: 12/22/2017
   
  當程式碼會載入並準備好執行，但 DE 任何程式碼執行之前，傳送 SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)載入完成事件。 最後，如果尚未執行程式，DE 傳送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)項目點事件，通知程式已達到其主要進入點，而且可供偵錯。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制執行](../../extensibility/debugger/control-of-execution.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)

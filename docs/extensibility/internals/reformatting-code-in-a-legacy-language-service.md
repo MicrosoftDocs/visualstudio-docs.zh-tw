@@ -1,26 +1,24 @@
 ---
-title: "在舊版語言服務的程式碼重新格式化 |Microsoft 文件"
-ms.custom: 
+title: 在舊版語言服務的程式碼重新格式化 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a2ff6152d5c9b5108dff00d9b17cb4fb2471ac4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 392afbafc2ce15dbf7ee347efdf24ce1f7fe2301
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>重新格式化舊版語言服務中的程式碼
 
@@ -186,6 +184,6 @@ namespace MyLanguagePackage
 }  
 ```  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [舊版語言服務功能](legacy-language-service-features1.md)

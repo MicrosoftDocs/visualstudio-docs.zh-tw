@@ -1,27 +1,25 @@
 ---
-title: "傳送 Visual Studio 擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 傳送 Visual Studio 擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX deployment
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3c646ec2c5159e6c3551776761baa9328e3d62bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shipping-visual-studio-extensions"></a>傳送 Visual Studio 擴充功能
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 共用與朋友或同事，或發行 Visual Studio Marketplace 上。 本節中，我們說明您需要執行動作以發行和維護您的擴充功能的所有事情：.vsix 檔案時，發佈、 當地語系化，以及更新工作。  

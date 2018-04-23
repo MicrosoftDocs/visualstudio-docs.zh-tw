@@ -1,23 +1,21 @@
 ---
-title: "Visual Studio 的 UX Essentials |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 的 UX Essentials |Microsoft 文件
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的 UX Essentials
 ## <a name="best-practices"></a>最佳作法  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 強制使用者讀取之前解除 UI 的說明文字是在 Visual Studio 中的反向模式。 正確地設計、 視訊連結應該會顯示具有其他資訊的工具提示上暫留，然後按一下 「&times;"應該關閉訊息而需要進一步互動。
 
 
- ![說明文字反 &#45; 模式 &#45;不正確](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />不正確的視訊連結模式
+ ![說明文字反&#45;模式&#45;正確](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />不正確的視訊連結模式
   
 #### <a name="result"></a>結果  
  而不是簡單關閉 按鈕 （按一下），強制使用者只需關閉視訊的連結會出現在每個位置中的 UI 使用兩次按一下。  
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="alternatives"></a>替代項目  
  正確的設計，這種情況下會遵循一般模式 Internet Explorer、 Office 及 Visual Studio： 停留的情況下，使用者可以看到工具提示描述，並按一下隱藏 UI。  
   
- ![說明文字反 &#45; 模式 &#45;正確](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti 模式更正")<br />正確的視訊連結模式
+ ![說明文字反&#45;模式&#45;正確](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti 模式更正")<br />正確的視訊連結模式
   
 ### <a name="using-command-bars-for-settings"></a>使用命令列設定  
  **圖 A**代表此反面模式： 放以外的更多的命令適用於命令按鈕下方的設定。 在此草圖，有命令除了開始偵錯 — 想檢視在瀏覽器、 啟動但不偵錯，以及逐步執行 —，會使用選取的設定。  

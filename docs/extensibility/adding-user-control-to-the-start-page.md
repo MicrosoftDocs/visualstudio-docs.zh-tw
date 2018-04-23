@@ -1,27 +1,25 @@
 ---
-title: "將使用者控制項加入至 [開始] 頁面 |Microsoft 文件"
-ms.custom: 
+title: 將使用者控制項加入至 [開始] 頁面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2bec2b4ab834eb55bd34a80f9e6a30931e3cd325
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面
 本逐步解說示範如何加入自訂起始頁的 DLL 參考。 範例會將使用者控制項加入方案，建置使用者控制項，然後參考起始頁.xaml 檔建置的組件。 新的索引標籤裝載使用者控制項，可當做基本 Web 瀏覽器。  
@@ -178,7 +176,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
   
-2.  如果您的起始頁參考任何控制項或在 Visual Studio 不會安裝的組件中的類型，將組件複製和貼在*Visual Studio 安裝資料夾***\Common7\IDE\在 PrivateAssemblies\\**。  
+2.  如果您的起始頁參考任何控制項或在 Visual Studio 不會安裝的組件中的類型，將組件複製和貼在 * Visual Studio 安裝資料夾 ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**若要開啟的 Visual Studio 的實驗執行個體。  
   
@@ -188,6 +186,6 @@ ms.lasthandoff: 12/22/2017
   
      應該會顯示自訂起始頁。 如果您想要變更的任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗執行個體，以檢視變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [WPF 控制項](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
  [逐步解說︰將自訂的 XAML 加入至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

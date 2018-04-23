@@ -1,26 +1,24 @@
 ---
-title: "字符控制項 (原始檔控制 VSPackage) |Microsoft 文件"
-ms.custom: 
+title: 字符控制項 (原始檔控制 VSPackage) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e41fc2a7d09f50d70caca939e3fdd691b1d05c9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c3787b0afad7f89743950a922d5b19c2d204bdd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制項 (原始檔控制 VSPackage)
 加入原始檔控制 Vspackage 可用的深度整合的一部分是能夠顯示自己圖像來表示的原始檔控制下的項目狀態。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>方法由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]若要取得一份映像顯示各種原始檔控制狀態。 原始檔控制 VSPackage IDE 傳回其自訂圖像的影像清單控制代碼。 IDE 此時會建立一份影像清單，並稍後再使用它來選擇要顯示的圖像。 如果不支援新的介面或`IVsSccGlyphs::GetCustomGlyphList`方法會傳回 E_NOTIMPL，則 IDE 圖像 （glyph） 所提供的預設清單中取得其圖像[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

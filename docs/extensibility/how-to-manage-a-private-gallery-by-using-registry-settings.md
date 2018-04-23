@@ -1,26 +1,24 @@
 ---
-title: "如何： 使用登錄設定來管理私人組件庫 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用登錄設定來管理私人組件庫 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d88c4b440f61e87792210e8a0844b6b622e8f05
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c9631ffa4bce25752b838a78f306ddd3c2313a20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用登錄設定來管理私人組件庫
 如果您是系統管理員或開發人員的 Isolated Shell 擴充功能，您可以控制存取控制項、 範本和 Visual Studio 組件庫、 範例庫或私用組件庫中的工具。 若要讓組件庫可用或無法使用，建立描述的已修改的登錄機碼和其值的.pkgdef 檔。  
@@ -71,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [私用組件庫](../extensibility/private-galleries.md)

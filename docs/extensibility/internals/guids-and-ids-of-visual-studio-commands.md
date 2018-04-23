@@ -1,12 +1,10 @@
 ---
-title: "Guid 和 Id 的 Visual Studio 命令 |Microsoft 文件"
-ms.custom: 
+title: Guid 和 Id 的 Visual Studio 命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - id
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 44ae5ff7e9095d6c88d753342da30983b30b7364
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1566b7e252867779e2bf7cbf26e2a6cbcb8b009f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 和 Id 的 Visual Studio 命令
 會安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 GUID 和 ID 的值包含在 Visual Studio 整合式的開發環境 (IDE) 中的命令。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -64,7 +62,7 @@ ms.lasthandoff: 12/22/2017
   
      沒有可靠的方式可搜尋的動態文字。 相反地，尋找裝載查閱所需的命令群組[Guid 和 Id 的 Visual Studio 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，並搜尋該群組的識別碼。 如果命令不需要定義群組做為其[父項目](../../extensibility/parent-element.md)，搜尋 SharedCmdPlace.vsct 和 ShellCmdPlace.vsct （或偵錯工具命令的 VsDbgCmdPlace.vsct）`<CommandPlacement>`設定的父系的項目命令。 SharedCmdPlace.vsct，ShellCmdPlace.vsct，andVsDbgCmdPlace.vsct 位於*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\ 資料夾。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MenuCommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)

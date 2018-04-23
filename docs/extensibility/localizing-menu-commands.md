@@ -1,12 +1,10 @@
 ---
-title: "當地語系化 功能表命令 |Microsoft 文件"
-ms.custom: 
+title: 當地語系化 功能表命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 77bd698149ca4e73b462fc3ada9256ba5911177e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d4fd8f2b42464b31c71b2983dd3e5c66f4a03351
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-menu-commands"></a>當地語系化 功能表命令
 您可以提供當地語系化的文字的功能表和工具列命令藉由建立當地語系化的.vsct 檔案，並為您的 VSPackage，然後更新專案檔的變更當地語系化的.resx 檔。  
@@ -157,7 +155,7 @@ ms.lasthandoff: 12/22/2017
   
      這樣會建立主要組件，以及每種語言的資源組件。 當地語系化的部署程序的資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommand 對比OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

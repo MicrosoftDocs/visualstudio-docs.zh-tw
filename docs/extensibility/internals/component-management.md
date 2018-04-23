@@ -1,26 +1,24 @@
 ---
-title: "元件管理 |Microsoft 文件"
-ms.custom: 
+title: 元件管理 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 398986499732a36819808b07f05f7d6b46787a94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2798d820249f0a1c4310569d22d8510710ca13ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="component-management"></a>管理元件
 Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 識別每個 WIC，也就是安裝和參考計數，若是使用 Windows Installer 的設定的基本單位。  
@@ -51,6 +49,6 @@ Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有�
   
      如果您這樣做，共用的金鑰會覆寫已安裝另一個版本的 VSPackage。 第二個版本中移除之後，索引鍵指向的檔案會消失。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選擇 共用和版本建立 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage 安裝案例](../../extensibility/internals/vspackage-setup-scenarios.md)

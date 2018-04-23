@@ -1,26 +1,24 @@
 ---
-title: "MSSCCPRJ。SCC 檔案 |Microsoft 文件"
-ms.custom: 
+title: MSSCCPRJ。SCC 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 檔案
 當 Visual Studio 方案或專案放置在原始檔控制使用 IDE 時，IDE 會從原始檔控制外掛程式在字串的形式接收兩項重要的資訊。 這些字串"AuxPath"和"ProjName 」，並不清楚在 IDE 中，但是會使用由外掛程式版本控制中找出方案或專案。 IDE 通常會取得這些字串第一次呼叫[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然後未來呼叫的方案或專案檔中儲存[SccOpenProject](../extensibility/sccopenproject-function.md)。 內嵌在此方案和專案檔時，「 AuxPath"和"ProjName"字串不會自動更新使用者分支中，就會分岔，或複製會在版本控制中的方案和專案檔時。 若要確定方案和專案檔會指向其正確的位置，在版本控制中，使用者必須手動更新的字串。 字串可當做不透明，因為它不一定清楚如何他們應該更新。  
@@ -46,23 +44,23 @@ ms.lasthandoff: 12/22/2017
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 的圖例。SCC 檔案格式  
  以下是 MSSCCPRJ 的範例。SCC 檔案格式 （行號做為指南，僅提供和不應該包含在檔案內文）：  
   
- [第 1 行]`SCC = This is a Source Code Control file`  
+ [第 1 行] `SCC = This is a Source Code Control file`  
   
  [第 2 行]  
   
- [第 3]`[TestApp.sln]`  
+ [第 3] `[TestApp.sln]`  
   
- [行 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [行 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 5 行]`SCC_Project_Name = "$/TestApp"`  
+ [第 5 行] `SCC_Project_Name = "$/TestApp"`  
   
  [第 6 行]  
   
- [Line 7]`[TestApp.csproj]`  
+ [Line 7] `[TestApp.csproj]`  
   
- [第 8 行]`SCC_Aux_Path = "\\server\vss\"`  
+ [第 8 行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [第 9 行]`SCC_Project_Name = "$/TestApp"`  
+ [第 9 行] `SCC_Project_Name = "$/TestApp"`  
   
  第一行狀態檔案的目的，且可做為此類型的所有檔案的簽章。 這一行應該會出現在所有 MSSCCPRJ 一模一樣。SCC 檔案：  
   
@@ -76,6 +74,6 @@ ms.lasthandoff: 12/22/2017
   
  沒有任何結尾分隔符號至這個區段。 Scc.h 標頭檔中定義的檔案，為所有出現在檔案中的常值的名稱。 如需詳細資訊，請參閱[字串做為索引鍵來尋找原始檔控制外掛程式](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [用來做為索引鍵以尋找原始檔控制外掛程式的字串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

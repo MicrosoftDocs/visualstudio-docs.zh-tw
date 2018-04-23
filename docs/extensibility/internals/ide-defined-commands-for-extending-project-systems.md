@@ -1,26 +1,24 @@
 ---
-title: "IDE 定義的命令，以擴充專案系統 |Microsoft 文件"
-ms.custom: 
+title: IDE 定義的命令，以擴充專案系統 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3b450a55de29e112d158cb783ad366eb4fbcaca7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4941f5d842f311f078594ee9a9deef02219ea05d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE 定義的命令，以擴充專案系統
 當您想要擴充的專案系統時，您可以使用命令和命令所提供的群組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
@@ -73,7 +71,7 @@ ms.lasthandoff: 12/22/2017
 |IDG_VS_CTXT_PROJECT_TRANSFER|命令進行剪下、 複製和貼上作業。|  
 |IDG_VS_CTXT_PROJECT_PROPERTIES|命令可提供存取**專案屬性** 對話方塊。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommand 對比OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [建立可重複使用的按鈕群組](../../extensibility/creating-reusable-groups-of-buttons.md)

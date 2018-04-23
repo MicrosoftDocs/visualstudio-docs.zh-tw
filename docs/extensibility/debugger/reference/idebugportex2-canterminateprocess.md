@@ -2,28 +2,24 @@
 title: IDebugPortEx2::CanTerminateProcess |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortEx2::CanTerminateProcess
 helpviewer_keywords:
 - IDebugPortEx2::CanTerminateProcess
 ms.assetid: 111f65d8-5a1a-42b3-9de3-dd9bb03a33fd
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 023611e20f8df50a3d07086d6600b1622f1b69be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f44df279cd8ad4721a6b4559af1dc3defb94714a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 決定是否可以終止處理程序。  
@@ -49,6 +45,6 @@ HRESULT CanTerminateProcess(
 ## <a name="return-value"></a>傳回值  
  傳回`S_OK`可以終止處理程序; 否則傳回`S_FALSE`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

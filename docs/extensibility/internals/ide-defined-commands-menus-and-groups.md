@@ -1,27 +1,25 @@
 ---
-title: "IDE 定義命令、 功能表和群組 |Microsoft 文件"
-ms.custom: 
+title: IDE 定義命令、 功能表和群組 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, environment-defined
 - .vsct files, environment-defined constants
 - command groups, environment-defined
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 34e0e95475457e2a5f206ad4ecb0d7e42e2bb9ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b65266ad3367df5cebeabc251bc8bceb6cda7075
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義命令、 功能表和群組
 許多的功能表、 命令和命令群組已經定義以供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 當您擴充時，還有可供您使用這些命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -49,7 +47,7 @@ ms.lasthandoff: 12/22/2017
  [Visual Studio 命令的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
  提供的 GUID 和 ID 值的 Visual Studio IDE 所定義的命令。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [IDE 定義的命令，以擴充專案系統](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,27 +1,23 @@
 ---
-title: "註冊副檔名的指令動詞 |Microsoft 文件"
-ms.custom: 
+title: 註冊副檔名的指令動詞 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 692b94cc9bba5bf200d71f4356bef849ec2f3aae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊副檔名的指令動詞
 與應用程式的檔案名稱副檔名關聯通常會有發生於使用者按兩下檔案時的慣用的動作。 這建議動作連結至一個動詞命令，例如開啟時，都會對應至動作。  
@@ -117,5 +113,5 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  如果您想要變更預設的並存部署中的延伸模組的動詞命令，請考慮對安裝與移除的影響。 在安裝期間會覆寫原始的預設值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)

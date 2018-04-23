@@ -1,13 +1,10 @@
 ---
-title: "VSIX 資訊清單設計工具 |Microsoft 文件"
-ms.custom: 
+title: VSIX 資訊清單設計工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔案設定 Visual Studio 擴充功能的安裝行為。  
@@ -154,6 +150,6 @@ ms.lasthandoff: 12/22/2017
   
  識別碼必須相符`ID`的相依性套件中繼資料屬性。 來源可以是目前的方案、 目前已安裝的擴充功能或檔案中的專案。 **的相依性解析方式**設定可以是巢狀的封裝相對路徑或相依性的下載位置的 URL。 識別碼、 版本和相依性套件的解析度對應至`Id`， `Version`，和`Location`屬性相關聯的`Dependency`項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSIX 擴充功能 2.0 結構描述參考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)

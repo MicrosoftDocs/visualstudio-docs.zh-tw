@@ -1,23 +1,21 @@
 ---
-title: "VSIX v3 Ngen 支援 |Microsoft 文件"
-ms.custom: 
+title: VSIX v3 Ngen 支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 15277f0a1038e43bb316d604cbc415da4a5d80bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 146df23bff14bd93558c645521f99f6099a49bde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Ngen VSIX v3 支援
 

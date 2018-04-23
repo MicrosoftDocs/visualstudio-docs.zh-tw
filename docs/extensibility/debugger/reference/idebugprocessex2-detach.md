@@ -2,28 +2,24 @@
 title: IDebugProcessEx2::Detach |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcessEx2::Detach
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40176b654f1a108e995a778eb4c7495b062f6114
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0423ae28bfee6e9acf10e2a9682e58a973c37d70
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知處理程序工作階段不會再偵錯程序。  
@@ -52,5 +48,5 @@ int Detach(
 ## <a name="remarks"></a>備註  
  在傳遞介面`pSession`是被視為只有 cookie，值可唯一識別這原本偵錯工作階段管理員附加至這個處理序; 提供的介面上的方法都是的功能。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -1,12 +1,10 @@
 ---
-title: "執行文件表格 |Microsoft 文件"
-ms.custom: 
+title: 執行文件表格 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>執行中的文件表格
 IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 這份清單包括在記憶體中，不論是否目前正在編輯這些文件的所有開啟的文件。 文件是會保存，包括檔案的專案或主要專案檔 （例如，.vcxproj 檔案） 中的任何項目。  
@@ -31,12 +29,12 @@ IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前
 ## <a name="elements-of-the-running-document-table"></a>執行文件表格的項目  
  執行中文件資料表包含下列項目。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |文件 moniker|字串，可唯一識別文件資料物件。 這會是專案系統所管理的檔案 (例如，C:\MyProject\MyFile) 的絕對檔案路徑。 這個字串也用於儲存在檔案系統，例如資料庫中的預存程序以外的存放區中的專案。 在此情況下，專案系統可以自創唯一的字串，它可以辨識和可能剖析以判斷如何儲存文件。|  
 |階層的擁有者|擁有文件中，所表示的階層物件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面。|  
 |項目識別碼|在階層內的特定項目的項目識別項。 這個值是擁有這份文件的階層中的所有文件中的唯一性，但此值不保證是唯一的不同階層。|  
-|文件資料物件|這是最小值，`IUnknown`<br /><br /> 物件。 IDE 不需要任何特定的介面之外`IUnknown`自訂編輯器的文件資料物件的介面。 不過，對於標準編輯器中，編輯器的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>介面，才能處理檔案從專案的持續性呼叫。 如需詳細資訊，請參閱[儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)。|  
+|文件資料物件|這是最小值， `IUnknown`<br /><br /> 物件。 IDE 不需要任何特定的介面之外`IUnknown`自訂編輯器的文件資料物件的介面。 不過，對於標準編輯器中，編輯器的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>介面，才能處理檔案從專案的持續性呼叫。 如需詳細資訊，請參閱[儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)。|  
 |旗標|RDT 中加入項目時，可以指定旗標，以控制是否套用讀取或編輯鎖定時，是否已儲存的文件等等。 如需詳細資訊，請參閱 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列舉。|  
 |編輯鎖定計數|編輯的計數鎖定。 編輯鎖定表示某些編輯器已開啟進行編輯的文件。 當編輯鎖定的計數轉換為零時，會提示使用者儲存文件，如果已修改。 例如，每當您在使用編輯器中開啟文件**新視窗**命令時，該文件 RDT 加入編輯鎖定。 為了要設定之編輯鎖定，或文件必須有階層項目識別碼。|  
 |讀取鎖定計數|讀取鎖定的計數。 讀取的鎖定表示文件閱讀一些機制，例如精靈。 讀取的鎖定會保留文件存留在 RDT 同時表示無法編輯的文件。 您可以設定的讀取的鎖定，即使文件沒有階層或項目識別碼。 這項功能可讓您在記憶體中開啟文件，並進入 RDT 中沒有任何階層所擁有的文件。 很少使用這項功能。|  
@@ -60,6 +58,6 @@ IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前
   
 -   用於向專案系統要求的完整文件路徑，然後接著 RDT 中查閱項目階層或項目識別碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [RDT_ReadLock 使用量](../../extensibility/internals/rdt-readlock-usage.md)   
  [持續性與執行中的文件資料表](../../extensibility/internals/persistence-and-the-running-document-table.md)

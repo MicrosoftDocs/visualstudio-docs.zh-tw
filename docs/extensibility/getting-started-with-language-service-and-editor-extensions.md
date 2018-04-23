@@ -1,27 +1,23 @@
 ---
-title: "語言服務及編輯器延伸模組入門 |Microsoft 文件"
-ms.custom: 
+title: 語言服務及編輯器延伸模組入門 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e36f4a6b0f8cb37a5ede782c24c7593285b7705
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務與編輯器延伸模組
 您可以使用編輯器延伸模組，將語言服務功能，例如，大綱、 括號對稱、 IntelliSense 和燈泡您自己的程式語言，或任何內容型別。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如文字著色、 邊界、 裝飾和其他視覺化項目。 您也可以定義您自己的內容，類型，並指定的外觀和行為的文字檢視您的內容隨即出現。  
@@ -92,5 +88,5 @@ ms.lasthandoff: 12/22/2017
   
 -   [逐步解說︰搭配編輯器擴充功能使用快速鍵](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

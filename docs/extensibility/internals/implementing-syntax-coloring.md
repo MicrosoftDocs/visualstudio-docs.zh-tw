@@ -1,32 +1,30 @@
 ---
-title: "實作語法著色 |Microsoft 文件"
-ms.custom: 
+title: 實作語法著色 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
-當語言服務提供語法顏色標示時，剖析器將一行文字轉換成色彩項目的陣列，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應傳回語彙基元的型別屬於色彩的項目清單。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在程式碼視窗中，根據指派給適當的權杖類型的色彩標示器物件的屬性，會顯示每個色彩的項目。  
+當語言服務提供語法顏色標示時，剖析器將一行文字轉換成色彩項目的陣列，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應傳回語彙基元的型別屬於色彩的項目清單。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 在程式碼視窗中，根據指派給適當的權杖類型的色彩標示器物件的屬性，會顯示每個色彩的項目。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]未指定的剖析器介面，和剖析器實作是完全由您決定。 不過，預設的剖析器實作是專案所提供的 Visual Studio 語言套件。 Managed 程式碼，managed 的封裝架構 (MPF) 提供完整支援文字的色彩標示。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 未指定的剖析器介面，和剖析器實作是完全由您決定。 不過，預設的剖析器實作是專案所提供的 Visual Studio 語言套件。 Managed 程式碼，managed 的封裝架構 (MPF) 提供完整支援文字的色彩標示。  
   
  舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新方法是使用 MEF 擴充功能。 若要了解有關實作語法著色的新方法的詳細資訊，請參閱[逐步解說： 反白顯示文字](../../extensibility/walkthrough-highlighting-text.md)。  
   
@@ -66,7 +64,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="managed-package-framework-colorizer"></a>Managed 的封裝架構色彩標示器  
  Managed 的 package framework (MPF) 提供實作的色彩標示器所需的所有類別。 您的語言服務類別應該繼承<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作需要的方法。 您必須提供掃描器和剖析器藉由實作<xref:Microsoft.VisualStudio.Package.IScanner>介面，並傳回該介面從執行個體<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (其中一個方法中必須實作<xref:Microsoft.VisualStudio.Package.LanguageService>類別)。 如需詳細資訊，請參閱[語法色彩標示在舊版語言服務](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 使用內建的色彩項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自訂色彩項目](../../extensibility/internals/custom-colorable-items.md)   
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   

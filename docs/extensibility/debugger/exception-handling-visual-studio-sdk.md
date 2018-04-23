@@ -2,26 +2,22 @@
 title: 例外狀況處理 (Visual Studio SDK) |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a862c26dad97eecdb5f372f41a76d7886f32be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 646479184061b093d5d84f81827a4106bd3cda47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外狀況處理 (Visual Studio SDK)
 以下描述擲回例外狀況時，就會發生的程序。  
@@ -54,5 +50,5 @@ ms.lasthandoff: 12/22/2017
   
 10. 如果這個方法會傳回 S_OK 時，會呼叫`IDebugExceptionEvent2::PassToDebuggee`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

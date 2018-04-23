@@ -1,26 +1,24 @@
 ---
-title: "驗證舊版語言服務中的中斷點 |Microsoft 文件"
-ms.custom: 
+title: 驗證舊版語言服務中的中斷點 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>驗證舊版語言服務中的中斷點
 中斷點會指出偵錯工具中正在執行時，應該在特定時間點停止執行程式。 使用者可以在原始程式檔中的任一行上放置中斷點，因為編輯器並不知道何者構成中斷點的有效位置。 啟動偵錯工具時，所有標記 （稱為暫止中斷點） 的中斷點繫結至執行中的程式中的適當位置。 在同一時間中斷點驗證，以確保它們標示的有效的程式碼位置。 例如，註解上的中斷點無效，因為在原始程式碼中該位置沒有程式碼。 偵錯工具會停用無效的中斷點。  
@@ -102,5 +100,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)

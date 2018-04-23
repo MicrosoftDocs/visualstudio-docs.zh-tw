@@ -1,26 +1,24 @@
 ---
-title: "IDebugPointerObject3::GetPointerAddress |Microsoft 文件"
-ms.custom: 
+title: IDebugPointerObject3::GetPointerAddress |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7c761c9d74c88d8b3c3d6ee9a8c067aaa735e6db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d21d797ca1370edee6eb1e664f3eb3ece35093fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 擷取指標的位址。  
@@ -46,5 +44,5 @@ int GetPointerAddress (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

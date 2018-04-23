@@ -1,26 +1,24 @@
 ---
-title: "命令路由演算法 |Microsoft 文件"
-ms.custom: 
+title: 命令路由演算法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: aba7ddcdda4dd4eabbb9266e0fa89c916bb028f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-routing-algorithm"></a>命令路由演算法
 在 Visual Studio 中多個不同的元件會處理命令。 命令會從最內部的內容中，根據目前的選取範圍，路由傳送到最外層 （也稱為通用） 的內容。 如需詳細資訊，請參閱[可用性](../../extensibility/internals/command-availability.md)。  
@@ -46,5 +44,5 @@ ms.lasthandoff: 12/22/2017
   
 8.  全域： 如果命令尚未處理的先前所述的內容中，Visual Studio 會嘗試傳送至擁有命令實作 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 如果 VSPackage 尚未已經載入，它時不會載入 Visual Studio 會呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。 只有當載入 VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法呼叫。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令設計](../../extensibility/internals/command-design.md)

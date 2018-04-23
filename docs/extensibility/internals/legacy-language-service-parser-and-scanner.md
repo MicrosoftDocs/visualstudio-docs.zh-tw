@@ -1,26 +1,24 @@
 ---
-title: "舊版語言服務剖析器與掃描器 |Microsoft 文件"
-ms.custom: 
+title: 舊版語言服務剖析器與掃描器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務剖析器與掃描器
 剖析器為語言服務的核心。 Managed Package Framework (MPF) 語言類別，需要選取要顯示的程式碼的相關資訊的語言剖析器。 剖析器會將文字分隔為語彙基元，並再識別這些語彙基元的類型和功能。  
@@ -135,7 +133,7 @@ namespace MyNamespace
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>物件的一部分傳遞給剖析器<xref:Microsoft.VisualStudio.Package.ParseRequest>物件和新<xref:Microsoft.VisualStudio.Package.AuthoringSink>物件是每次建立新<xref:Microsoft.VisualStudio.Package.ParseRequest>建立物件。 此外，<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法必須傳回<xref:Microsoft.VisualStudio.Package.AuthoringScope>物件，用來處理各種 IntelliSense 作業。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>物件會維護宣告的清單和清單的方法，可能是其中已填入，根據剖析的原因。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>類別必須實作。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)   
  [語法色彩標示在舊版語言服務](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   

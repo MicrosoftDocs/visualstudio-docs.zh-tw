@@ -2,26 +2,22 @@
 title: How to： 裝載在其他編輯器中的編輯器 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685ad1d619fdf9f04fe1a9cd1122a9e6ed3ba025
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 351d66a9ab9b24c53dac4ed070c80f0e51e5e31f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>How to： 裝載在其他編輯器中的編輯器
 在 Visual Studio 中您可以藉由主控視窗指定為父視窗來裝載一個編輯器內的另一個。 若要這樣做，請設定參數<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>子視窗框架上。  

@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 顯示 QuickInfo 工具提示 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 顯示 QuickInfo 工具提示 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81974967094d238f12141ad7cd31bcc8015b9633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說： 顯示 QuickInfo 工具提示
 QuickInfo 會顯示方法簽章的 IntelliSense 功能，並描述當使用者將指標移方法名稱。 您可以實作以語言為基礎的功能，例如 QuickInfo 定義您要提供 QuickInfo 描述的識別碼，然後再建立要顯示的內容中的工具提示。 您可以定義 QuickInfo 中的內容語言服務，或您可以定義您自己的檔案名稱副檔名和內容類型，並顯示 QuickInfo，只要該類型，或對於現有的內容類型 （例如"text")，您可以顯示 QuickInfo。 本逐步解說示範如何顯示 QuickInfo 「 文字 」 內容類型。  
@@ -180,5 +176,5 @@ QuickInfo 會顯示方法簽章的 IntelliSense 功能，並描述當使用者�
   
 4.  將指標放在一個 「 加入 」 的項目。 簽章，而描述為`add`方法應該會顯示。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

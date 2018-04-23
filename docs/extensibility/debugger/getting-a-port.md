@@ -1,26 +1,24 @@
 ---
-title: "取得連接埠 |Microsoft 文件"
-ms.custom: 
+title: 取得連接埠 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5f6065c91845df020325e279a1fa3858a4f75505
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6c20b3e3bdc2644e7af7d9a35de06af7f96d7680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-a-port"></a>取得連接埠
 連接埠代表處理程序執行所在電腦的連接。 該電腦可能會在本機電腦或遠端電腦 (其中可能可能執行非 windows 作業系統，請參閱 <<c0> [ 連接埠](../../extensibility/debugger/ports.md)如需詳細資訊)。  
@@ -100,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [註冊程式](../../extensibility/debugger/registering-the-program.md)   
  [啟用要進行偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [連接埠供應商](../../extensibility/debugger/port-suppliers.md)   
