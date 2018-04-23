@@ -2,12 +2,8 @@
 title: 警告： 指令碼偵錯已停用 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0cbd7cb594314e98422789f6ec70fd63198fc4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
 在 Internet Explorer 中，目前停用指令碼偵錯功能  
@@ -49,5 +44,5 @@ ms.lasthandoff: 12/22/2017
   
      新的設定目前已經生效。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：附加至指令碼](../debugger/how-to-attach-to-script.md)
