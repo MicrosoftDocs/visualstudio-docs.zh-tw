@@ -2,26 +2,22 @@
 title: 在啟動後附加 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 69f9f9cde76c5fa66294fd2cdbdc5252169e0183
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 已啟動程式之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
  DE 現在已附加到程式並準備好要傳送的任何啟動事件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [直接附加程式](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [通知連接埠](../../extensibility/debugger/notifying-the-port.md)   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)   

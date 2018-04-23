@@ -1,27 +1,25 @@
 ---
-title: "支援使用者設定 |Microsoft 文件"
-ms.custom: 
+title: 支援使用者設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de3fc9b6edb3b916162a1beb34fb716d5c2adaa4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cf2ba79cc8bff57de1fd410f8a2780825d693181
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 VSPackage 可能會定義一或多個設定分類，也就是群組的保存在使用者選擇時的狀態變數**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用設定應用程式開發介面中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

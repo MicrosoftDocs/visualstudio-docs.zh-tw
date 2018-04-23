@@ -1,27 +1,23 @@
 ---
-title: "準備 Windows Installer 部署的擴充功能 |Microsoft 文件"
-ms.custom: 
+title: 準備 Windows Installer 部署的擴充功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b72fc46d64034ddc22e929fb1a1eff26115cce70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef51b3cb0f84a470f104ff688c1149e607d16f71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
 若要部署的 VSIX 封裝，您無法使用 Windows Installer 封裝 (MSI)。 不過，您可以將 MSI 部署的 VSIX 套件的內容解壓縮。 本文件說明如何準備的預設輸出，則為 VSIX 封裝，以包含在安裝專案的專案。  
@@ -60,6 +56,6 @@ ms.lasthandoff: 12/22/2017
   
 5.  將其餘的檔案加入至安裝專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 安裝程式部署](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
  [逐步解說： 建立自訂動作](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)

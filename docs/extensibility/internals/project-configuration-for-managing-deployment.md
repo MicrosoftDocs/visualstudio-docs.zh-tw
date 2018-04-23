@@ -1,31 +1,29 @@
 ---
-title: "管理部署的專案組態 |Microsoft 文件"
-ms.custom: 
+title: 管理部署的專案組態 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4859e47f8a7ade34a920e4d8e2fac3be58508de3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 723edd078636eb324fc2d5dfca2ae81ef3249a43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指實際建置程序從輸出項目移至期望位置進行偵錯和安裝。 例如，Web 應用程式可能會在本機電腦上建置，並將其放在伺服器上。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援兩種方式可以在部署中牽涉到專案：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種方式可以在部署中牽涉到專案：  
   
 -   為部署程序主題。  
   
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  設定可以指定會影響其組建或部署作業的相依性。 建置或部署的相依性都必須為內建或部署之前或之後建立本身的組態或部署的專案。 建置專案之間的相依性的說明<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>介面，並部署相依性與<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>介面。 如需詳細資訊，請參閱[建置的專案組態](../../extensibility/internals/project-configuration-for-building.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [管理組態選項](../../extensibility/internals/managing-configuration-options.md)   
  [建置專案組態](../../extensibility/internals/project-configuration-for-building.md)   
  [輸出的專案組態](../../extensibility/internals/project-configuration-for-output.md)

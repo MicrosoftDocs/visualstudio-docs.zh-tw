@@ -2,28 +2,24 @@
 title: IDebugPortSupplier3::CanPersistPorts |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cb364ca40c42a3f392a5944169b7dd97075ab9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 這個方法會判斷是否連接埠供應商可以保存連接埠 （藉由將它們寫入至磁碟） 的偵錯工具的引動過程之間。  
@@ -42,10 +38,10 @@ int CanPersistPorts();
  無。  
   
 ## <a name="return-value"></a>傳回值  
- `S_OK`如果可以保存連接埠，或`S_FALSE`表示不保留該連接埠。  
+ `S_OK` 如果可以保存連接埠，或`S_FALSE`表示不保留該連接埠。  
   
 ## <a name="remarks"></a>備註  
  如果連接埠供應商可以保存連接埠，應該這樣做，終結時並再重新載入它們時再次具現化。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
