@@ -1,27 +1,23 @@
 ---
-title: "指定副檔名的檔案處理常式 |Microsoft 文件"
-ms.custom: 
+title: 指定副檔名的檔案處理常式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定副檔名的檔案處理常式
 有數種方式可判斷應用程式會處理具有特定副檔名的檔案。 OpenWithList 和 OpenWithProgids 動詞命令是兩種方式指定之副檔名的登錄項目下的檔案處理常式。  
@@ -53,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.extension|產品名稱。 extension.versionMajor.versionMinor|  
   
- 您可以註冊不同的應用程式能夠開啟特定的副檔名，將建立版本的 Progid 做為值加入至 HKEY_CLASSES_ROOT\\*\<副檔名 >*\OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的副檔名的清單。 列出的 Progid 相關聯的應用程式出現在**開啟***產品名稱*子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會合併重複的項目。  
+ 您可以註冊不同的應用程式能夠開啟特定的副檔名，將建立版本的 Progid 做為值加入至 HKEY_CLASSES_ROOT\\*\<副檔名 >*\OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的副檔名的清單。 列出的 Progid 相關聯的應用程式出現在 **開啟 * * * 產品名稱*子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會合併重複的項目。  
   
 > [!NOTE]
 >  `OpenWithProgids`金鑰僅適用於在 Windows XP。 因為其他作業系統會忽略這個索引鍵，請勿使用它做為唯一的註冊檔案處理常式。 使用此金鑰，以提供在 Windows XP 中的較佳使用者體驗。  
@@ -83,6 +79,6 @@ HKEY_CLASSES_ROOT\
   
  如果舊 ProgID 具有與它相關聯的動詞命令，則這些動詞命令也會出現在**開啟***產品名稱*快顯功能表中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [關於檔案名稱副檔名](../extensibility/about-file-name-extensions.md)   
  [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

@@ -1,22 +1,19 @@
 ---
-title: "在 Visual Studio 中診斷延伸模組 UI 延遲 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 中診斷延伸模組 UI 延遲 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: ghogen
+manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b63f9538c916b74874031704a1f60d0646f8d032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何： 診斷 UI 延伸模組所造成的延遲
 

@@ -1,27 +1,23 @@
 ---
-title: "Visual Studio SDK 詞彙 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio SDK 詞彙 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 詞彙
 僅提供所用的詞彙定義[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]文件。  
@@ -76,7 +72,7 @@ ms.lasthandoff: 12/22/2017
  用來參考以一般方式整個文件，同時`DocData`和`DocView`。 例如，包含 DocumentFrame `DocView`，但它也會保留的參考`DocData`處理持續性。  
   
  DocView  
- DocObject/內嵌/Windowpane> 與使用者互動檢視和管理基礎`DocData`。 請注意，使用者執行不會利用是一部分的文件/檢視區隔`DocObject`介面設計。 使用者用來做為檢視，而不要使用更抽象的 （和較正式） 的概念稱為基礎資料的整個 DocObject `DocData`。 `DocView`物件永遠會內嵌在 IDE 的文件框架物件 （MDI 子視窗）。  
+ DocObject/內嵌/Windowpane> 與使用者互動檢視和管理基礎`DocData`。 請注意，使用者執行不會利用是一部分的文件/檢視區隔`DocObject`介面設計。 使用者用來做為檢視，而不要使用更抽象的 （和較正式） 的概念稱為基礎資料的整個 DocObject `DocData`。 `DocView` 物件永遠會內嵌在 IDE 的文件框架物件 （MDI 子視窗）。  
   
  DTE  
  `DTE` （開發工具擴充性） 的物件是 Visual Studio automation 模型，可讓您以程式設計的方式自動化和擴充 IDE 的最高的存取點。  

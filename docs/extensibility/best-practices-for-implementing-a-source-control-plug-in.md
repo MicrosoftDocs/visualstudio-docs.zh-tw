@@ -1,27 +1,25 @@
 ---
-title: "實作原始檔控制外掛程式的最佳作法 |Microsoft 文件"
-ms.custom: 
+title: 實作原始檔控制外掛程式的最佳作法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, best practices
 - best practices, source control plug-ins
 - source control [Visual Studio SDK], plug-ins
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e406bc0cd5d7e4cb082e1f5e34fa6645538d02ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d5e9972b28d435f5cba360b2328ecdd6d18eb52e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳作法
 下列技術詳細資料可協助您能夠可靠地實作原始檔控制外掛程式[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -61,6 +59,6 @@ ms.lasthandoff: 12/22/2017
   
  最使用者可設定的設定選項中未定義這種方式，因為它們廣泛異原始檔控制外掛程式。因此，建議的機制是**進階** 按鈕。 例如，在**取得**對話方塊中，IDE 會顯示其了解，但它也會顯示資訊**進階**如果外掛程式都具有此命令的選項按鈕。 當使用者按一下**進階**按鈕，IDE 呼叫[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)啟用原始檔控制外掛程式，以提示使用者輸入資訊，例如位元旗標或日期/時間。 外掛程式會傳回這項資訊傳遞時所傳回的結構中`SccGet`命令。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [建立原始檔控制外掛程式](../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,26 +1,24 @@
 ---
-title: "實作運算式評估工具 |Microsoft 文件"
-ms.custom: 
+title: 實作運算式評估工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9f18e2e131b6baa325bd7e0b65babee4c3679ed8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-an-expression-evaluator"></a>實作運算式評估工具
 > [!IMPORTANT]
@@ -50,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- 實作 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2`提供描述結果的運算式評估，例如本機變數、 基本型別或物件，Visual studio，然後顯示中的相關資訊的機制**區域變數**， **監看式**，或**即時運算**視窗。  
+ 實作 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供描述結果的運算式評估，例如本機變數、 基本型別或物件，Visual studio，然後顯示中的相關資訊的機制**區域變數**， **監看式**，或**即時運算**視窗。  
   
  預存程序是指定給 EE DE 時，它會要求的資訊。 預存程序會實作說明位址和欄位，例如下列介面和其衍生的介面：  
   
@@ -66,5 +64,5 @@ ms.lasthandoff: 12/22/2017
  [運算式評估工具的實作策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
  定義運算式評估工具 (EE) 實作策略的三個步驟程序。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

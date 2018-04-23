@@ -1,27 +1,25 @@
 ---
-title: "VSIX 套件的剖析 |Microsoft 文件"
-ms.custom: 
+title: VSIX 套件的剖析 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e728fbe2a9e430224a3da822cbcae45745eeb29e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d811c1539dde655657331b7ca3511bbd4e80063f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的結構
 VSIX 封裝是.vsix 檔，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 會使用分類，並安裝擴充功能的中繼資料。 在 VSIX 資訊清單和 [Content_Types].xml 檔案中包含的中繼資料。 VSIX 封裝，也可能包含一或多個 Extension.vsixlangpack 檔案，提供當地語系化的安裝文字，而且可能包含其他 VSIX 封裝，以安裝相依項目。  

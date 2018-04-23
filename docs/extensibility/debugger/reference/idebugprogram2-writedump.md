@@ -2,28 +2,24 @@
 title: IDebugProgram2::WriteDump |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::WriteDump
 helpviewer_keywords:
 - IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40fcd345a2a07a0ebdcf9e984b060cc81e946fc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0b17d75ace19ac53cbcd229d7c15de573c1ecb8b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 寫入傾印至檔案。  
@@ -57,5 +53,5 @@ int WriteDump(
 ## <a name="remarks"></a>備註  
  目前的堆疊框架，本身的堆疊、 執行中的程式，可能是由程式擁有的任何記憶體的執行緒清單，通常會包含程式傾印。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

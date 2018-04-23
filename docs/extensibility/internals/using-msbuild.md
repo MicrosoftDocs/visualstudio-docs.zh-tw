@@ -1,27 +1,25 @@
 ---
-title: "使用 MSBuild |Microsoft 文件"
-ms.custom: 
+title: 使用 MSBuild |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, compiling with MSBuild
 - MSBuild, extensibility
 - packages, compiling with MSBuild
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3b9d05b85cacfcdf90a883ffd08d4dec316eaafc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4115d6f1b368734631acf3ee4395d71dbe418c07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的完整描述可建置、 建置工作，與組建組態的專案項目。  
@@ -52,12 +50,12 @@ MSBuild 提供妥善定義、 可延伸的 XML 格式，來建立專案檔案的
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|  
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|  
   
- `Microsoft.VisualStudio.Package.ProjectElement`類別是 MSBuild 項目包裝函式。  
+ `Microsoft.VisualStudio.Package.ProjectElement` 類別是 MSBuild 項目包裝函式。  
   
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>單一檔案產生器與MSBuild 工作  
  單一檔案產生器是可存取在執行階段，但 MSBuild 工作可用來在設計階段和建置時間。 最大的彈性，因此，使用 MSBuild 工作來轉換，並產生程式碼。 如需詳細資訊，請參閱[自訂工具](../../extensibility/internals/custom-tools.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../../msbuild/msbuild-reference.md)   
  [MSBuild](../../msbuild/msbuild.md)   
  [自訂工具](../../extensibility/internals/custom-tools.md)

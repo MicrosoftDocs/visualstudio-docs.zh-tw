@@ -1,29 +1,25 @@
 ---
-title: "SccWillCreateSccFile 函式 |Microsoft 文件"
-ms.custom: 
+title: SccWillCreateSccFile 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a0344177d50d7121b1116e80983db80233dac90
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af6da09badf0ffea4846d35fe00b4ca146243d64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
 此函式判斷原始檔控制外掛程式是否支援 MSSCCPRJ 的建立。SCC 檔案，每個指定的檔案。  
@@ -64,6 +60,6 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="remarks"></a>備註  
  一份檔案，以決定是否原始檔控制外掛程式在提供支援 MSSCCPRJ 呼叫此函式。SCC 檔案，每個指定的檔案 （如需有關 MSSCCPRJ 的詳細資訊。SCC 檔案，請參閱[MSSCCPRJ。SCC 檔案](../extensibility/mssccprj-scc-file.md))。 原始檔控制外掛程式可以宣告它們是否具備建立 MSSCCPRJ 的功能。SCC 檔案，藉由宣告`SCC_CAP_SCCFILE`初始化期間。 外掛程式傳回`TRUE`或`FALSE`為每個檔案`pbSccFiles`陣列來指出指定的檔案必須有 MSSCCPRJ。SCC 支援。 如果外掛程式從函式傳回成功碼，傳回陣列中的值都會被接受。 如果失敗，陣列會被忽略。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

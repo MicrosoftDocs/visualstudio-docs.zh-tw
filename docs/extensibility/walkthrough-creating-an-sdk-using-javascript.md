@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 建立使用 JavaScript SDK |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立使用 JavaScript SDK |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說： 建立使用 JavaScript SDK
 本逐步解說將說明如何使用 JavaScript 建立簡單的數學 SDK 為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分成下列部分：  
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createSimpleMathVSIX"></a>若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
+##  <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
   
 1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**名稱**文字方塊中，指定`SimpleMathVSIX`選擇**確定** 按鈕。  
   
-4.  如果**Visual Studio 封裝精靈**出現時，選擇**下一步**按鈕**歡迎** 頁面上，然後在**第 1 頁的 7**，選擇**完成** 按鈕。  
+4.  如果**Visual Studio 封裝精靈**出現時，選擇**下一步**按鈕**褖畫惎**頁面上，然後在**第 1 頁的 7**，選擇**完成**按鈕。  
   
      雖然**資訊清單設計工具**隨即開啟，我們會保留此逐步解說簡單直接修改資訊清單檔案。  
   
@@ -142,7 +140,7 @@ ms.lasthandoff: 12/22/2017
   
 21. 重新啟動 Visual Studio。  
   
-##  <a name="createSampleApp"></a>若要建立範例應用程式使用 SDK  
+##  <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK  
   
 1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
@@ -315,7 +313,7 @@ ms.lasthandoff: 12/22/2017
   
 11. 選擇 F5 鍵建置並執行應用程式。  
   
-12. 在 建立應用程式 UI 中，輸入任何兩個數字選取作業，，然後選擇   **=**   按鈕。 正確的結果會出現。  
+12. 在 建立應用程式 UI 中，輸入任何兩個數字選取作業，，然後選擇  **=**  按鈕。 正確的結果會出現。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

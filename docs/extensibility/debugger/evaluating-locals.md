@@ -1,26 +1,24 @@
 ---
-title: "評估 [區域變數] |Microsoft 文件"
-ms.custom: 
+title: 評估 [區域變數] |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bad0f751f6f772643f38d4f20b2765affd561fb9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 82910e5ab128ced43131445d237925ccb85bee55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-locals"></a>評估 [區域變數]
 > [!IMPORTANT]
@@ -81,7 +79,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Unmanaged 程式碼  
- 這是擷取本機 unmanaged 程式碼中的值的函式的實作。 `FieldGetType`如下所示[取得本機值](../../extensibility/debugger/getting-local-values.md)。  
+ 這是擷取本機 unmanaged 程式碼中的值的函式的實作。 `FieldGetType` 如下所示[取得本機值](../../extensibility/debugger/getting-local-values.md)。  
   
 ```cpp  
 HRESULT FieldGetPrimitiveValue(  
@@ -193,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [範例實作的區域變數](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [取得本機值](../../extensibility/debugger/getting-local-values.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)

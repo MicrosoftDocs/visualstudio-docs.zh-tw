@@ -1,29 +1,25 @@
 ---
-title: "OPTNAMECHANGEPFN |Microsoft 文件"
-ms.custom: 
+title: OPTNAMECHANGEPFN |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - OPTNAMECHANGEPFN
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d067d5dd150dd026a2bd29a8933e8d9f72222b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3ecb80b1ac0b71de935da59d29a3f5c39f85bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 這是在呼叫中指定的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_NAMECHANGEPFN`) 和用於進行通訊所做的原始檔控制外掛程式傳回給 IDE 的名稱變更。  
@@ -56,6 +52,6 @@ typedef void (*OPTNAMECHANGEPFN)(
   
  如果在 IDE 中不支援此回呼，它不會呼叫[SccSetOption](../extensibility/sccsetoption-function.md)指定它。 如果外掛程式不支援此回呼，它會傳回`SCC_E_OPNOTSUPPORTED`從`SccSetOption`當 IDE 嘗試設定回呼函式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

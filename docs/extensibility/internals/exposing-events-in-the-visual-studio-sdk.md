@@ -1,29 +1,27 @@
 ---
-title: "公開事件，在 Visual Studio SDK |Microsoft 文件"
-ms.custom: 
+title: 公開事件，在 Visual Studio SDK |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 02ddcf0c2321f6f4c07170117c6474b993c340f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>公開 Visual Studio SDK 中的事件
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可讓您使用自動化來源的事件。 我們建議您來源專案和專案項目的事件。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來源的事件。 我們建議您來源專案和專案項目的事件。  
   
  從自動化取用者會擷取事件<xref:EnvDTE.DTEClass.Events%2A>物件或<xref:EnvDTE.DTEClass.GetObject%2A>(「 EventObjectName")。 環境呼叫`IDispatch::Invoke`使用`DISPATCH_METHOD`或`DISPATCH_PROPERTYGET`旗標，以傳回事件。  
   
@@ -113,6 +111,6 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
   
  事件物件會從相同的中央位置，擷取`DTE.Events`物件。 如此一來，所有事件物件會都群組在一起，讓使用者不必瀏覽整個物件模型來尋找特定的事件。 這也可讓您提供您特定的 VSPackage 物件，而不需要您實作您自己的全系統事件的程式碼。 不過，一般使用者，使用者必須尋找事件，以供您`ProjectItem`介面，不立即清除該事件物件擷取的位置。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [VSSDK 範例](http://aka.ms/vs2015sdksamples)

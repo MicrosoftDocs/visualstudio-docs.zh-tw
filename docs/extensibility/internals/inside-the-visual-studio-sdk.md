@@ -1,27 +1,25 @@
 ---
-title: "在 Visual Studio SDK |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio SDK |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。  
@@ -94,7 +92,7 @@ Visual Studio 架構一般化的檢視
   
  如需詳細資訊，請參閱[專案](../../extensibility/internals/projects.md)和[解決方案](../../extensibility/internals/solutions.md)。  
   
-## <a name="project-and-item-templates"></a>專案和項目範本  
+## <a name="project-and-item-templates"></a>專案與項目範本  
  Visual Studio 包含預先定義的專案範本和專案項目範本。 您可以也會使您自己的範本或取得來自社群的範本，並再將它們整合到 Visual Studio。 [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)是範本和擴充功能的地方。  
   
  範本中包含的專案結構和建立特定種類的應用程式、 控制項、 程式庫或類別所需的基本檔案。 當您想要開發軟體，類似於其中一個範本時，建立範本為基礎的專案，然後修改 該專案中的檔案。  

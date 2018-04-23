@@ -2,26 +2,22 @@
 title: VSPackage 所選擇的安裝目錄 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085c3bea9b9edc726fa09dd5d7658aff4a55e568
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 564a184e8b3907f5a61bccc26cfbafa8d2cf8e67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>VSPackage 所選擇的安裝目錄
 VSPackage，以及其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否受管理或不受管理，您的並存版本控制配置和使用者選擇。  
@@ -65,7 +61,7 @@ VSPackage，以及其支援的檔案必須是使用者的檔案系統上。 位�
   
  如果您的 VSPackage DLL 包含資源和 SatelliteDll\DllName 登錄進入點，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試以上述順序載入它們。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選擇 共用和版本建立 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
  [Managed 的封裝註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

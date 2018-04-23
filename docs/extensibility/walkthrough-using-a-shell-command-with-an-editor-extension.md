@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 使用編輯器延伸模組中的 Shell 命令 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用編輯器延伸模組中的 Shell 命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a7f9426297ef28bdf4b829bd6697543f5aab55f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 112e78e6143d0a3bd67ff2a65814f2d77b85cdc1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說： 使用 Shell 命令的編輯器延伸模組
 VSPackage，您可以加入至編輯器功能，例如功能表命令。 本逐步解說示範如何將裝飾文字在編輯器中檢視，藉由叫用功能表命令。  
@@ -727,5 +723,5 @@ VSPackage，您可以加入至編輯器功能，例如功能表命令。 本逐�
   
      Fourscore...  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

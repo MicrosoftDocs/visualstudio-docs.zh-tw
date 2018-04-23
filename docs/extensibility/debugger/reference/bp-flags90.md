@@ -2,26 +2,22 @@
 title: BP_FLAGS90 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af59e06ad31b56c04127ca89b43a903db36d3615
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f8153f3fb2419e26f7e7d3a741ae4c79c9272a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 列舉有效的選擇性旗標值。 選擇性旗標可能會用來指定當您設定中斷點的其他資訊。 這個列舉型別擴充[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列舉型別。  
@@ -73,7 +69,7 @@ public enum enum_BP_FLAGS90
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

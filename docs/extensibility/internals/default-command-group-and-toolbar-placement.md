@@ -1,12 +1,10 @@
 ---
-title: "預設命令、 群組及工具列位置 |Microsoft 文件"
-ms.custom: 
+title: 預設命令、 群組及工具列位置 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0753a29e323f18ad40bcc62a70cf8e9b1123b728
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設的命令、 群組及工具列位置
 產品的一致性與穩定性，UI 預設會顯示特定命令的群組，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令和命令群組提供定義。 Vspackage 也可以使用標準命令和命令群組。  
@@ -44,6 +42,6 @@ ms.lasthandoff: 12/22/2017
   
  IDE 和產品工具列下方應放編輯器工具列。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDE 定義命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,27 +1,23 @@
 ---
-title: "支援的網站範本 |Microsoft 文件"
-ms.custom: 
+title: 支援的網站範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8be16e2bf1532b99f0c9c594394c3f0cbf8b1f75
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: af8e0d845157b475e4a5527443f55286828023cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-site-support-templates"></a>支援的網站範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和項目範本提供可重複使用且可自訂的網站專案和項目 stub，不需要從頭開始建立新的網站專案和項目，以加速開發程序。 如需有關[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。
@@ -86,7 +82,7 @@ ms.lasthandoff: 03/02/2018
 
      新的 Web 服務的 HTML 頁面。 Language 屬性會指定程式碼後置語言和程式碼後置屬性指定的相依檔案，其中包含與此服務相關聯的程式碼後置程式碼。
 
--   服務。 *extension*
+-   服務。 *擴充功能*
 
      服務類別會實作相依檔案。 程式碼後置語言會決定*延伸*這個檔案。
 
@@ -119,7 +115,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="new-class"></a>新的類別
  此範本會建立新的來源檔案，定義空類別，以回應**加入新類別**命令。
 
--   類別。 *extension*
+-   類別。 *擴充功能*
 
      空的類別會實作原始程式檔。 程式碼後置語言會決定*延伸*這個檔案。
 
@@ -153,7 +149,7 @@ ms.lasthandoff: 03/02/2018
 
      起始網頁的內容。 這個 Web 網頁會有相關聯的程式碼後置相依檔案。
 
--   程式碼後置。 *extension*
+-   程式碼後置。 *擴充功能*
 
      會實作 webform 類別相依檔案。 程式碼後置語言會決定*延伸*這個檔案。
 
@@ -190,5 +186,5 @@ ms.lasthandoff: 03/02/2018
 
      範本檔案會決定新的主版頁面和其相依檔案的內容，如果有的話。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [網站支援](../../extensibility/internals/web-site-support.md)

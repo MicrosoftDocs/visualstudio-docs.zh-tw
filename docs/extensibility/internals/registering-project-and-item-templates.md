@@ -1,12 +1,10 @@
 ---
-title: "註冊專案和項目範本 |Microsoft 文件"
-ms.custom: 
+title: 註冊專案和項目範本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
-專案類型必須登錄其專案和專案項目範本目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用您的專案類型相關聯的登錄資訊來決定要顯示在**加入新的專案**和**加入新項目**對話方塊。  
+專案類型必須登錄其專案和專案項目範本目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的登錄資訊來決定要顯示在**加入新的專案**和**加入新項目**對話方塊。  
   
  如需範本的詳細資訊，請參閱[加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   
@@ -120,7 +118,7 @@ ms.lasthandoff: 12/22/2017
   
  \WizardFiles  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [精靈](../../extensibility/internals/wizards.md)   
  [當地語系化應用程式](../../ide/localizing-applications.md)   

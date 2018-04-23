@@ -1,27 +1,23 @@
 ---
-title: "在編輯器內 |Microsoft 文件"
-ms.custom: 
+title: 在編輯器內 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-editor"></a>在編輯器
 編輯器 是由不同子系統，設計用來將編輯器 中 文字 檢視和使用者介面文字模型分開的數字。  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a>子系統的概觀  
+##  <a name="overview"></a> 子系統的概觀  
   
 ### <a name="text-model-subsystem"></a>文字模型子系統  
  文字模型子系統負責表示文字，並啟用其操作。 文字模型子系統包含<xref:Microsoft.VisualStudio.Text.ITextBuffer>介面，其中描述要編輯器所顯示的字元序列。 此文字可以修改、 追蹤，而且有許多方式操作。 文字模型也會提供類型的下列層面：  
@@ -80,7 +76,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>進一步瞭解文字模型與文字檢視  
   
-###  <a name="textmodel"></a>文字模型  
+###  <a name="textmodel"></a> 文字模型  
  文字模型子系統所組成的文字型別不同群組。 其中包括文字緩衝區、 文字快照集，以及文字範圍。  
   
 #### <a name="text-buffers-and-text-snapshots"></a>文字緩衝區和文字快照集  
@@ -135,7 +131,7 @@ abXefYj
   
  只有一個<xref:Microsoft.VisualStudio.Text.ITextEdit>可以具現化物件的文字緩衝區在任何時間，和必須擁有文字緩衝區 （如果宣告的擁有權） 的執行緒上執行所有的文字編輯內容。 可以在放棄藉由呼叫的文字編輯其`Cancel`方法或其`Dispose`方法。  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer>也提供`Insert()`， `Delete()`，和`Replace()`類似的方法上找到<xref:Microsoft.VisualStudio.Text.ITextEdit>介面。 這些呼叫已建立相同的效果<xref:Microsoft.VisualStudio.Text.ITextEdit>物件，進行類似的呼叫，然後將套用編輯。  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer> 也提供`Insert()`， `Delete()`，和`Replace()`類似的方法上找到<xref:Microsoft.VisualStudio.Text.ITextEdit>介面。 這些呼叫已建立相同的效果<xref:Microsoft.VisualStudio.Text.ITextEdit>物件，進行類似的呼叫，然後將套用編輯。  
   
 #### <a name="tracking-points-and-tracking-spans"></a>追蹤點和追蹤範圍  
  <xref:Microsoft.VisualStudio.Text.ITrackingPoint>代表文字緩衝區中的字元位置。 如果緩衝區的編輯，則會造成要移位的字元位置的方式，也會隨著它轉移追蹤點。 例如，如果在追蹤點是指位置 10 在緩衝區中，緩衝區開頭就會插入五個字元，追蹤點然後是指位置 15。 如果插入發生在精確地表示追蹤點的位置，其行為取決於其<xref:Microsoft.VisualStudio.Text.PointTrackingMode>，這可以是`Positive`或`Negative`。 如果追蹤模式是正數，追蹤點是指相同的字元現在是在插入點; 結尾如果追蹤模式為負數，追蹤點是指到原始位置插入的第一個字元。 如果刪除的追蹤點所表示之位置處的字元，則追蹤點會轉移之後已刪除的範圍內的第一個字元。 例如，如果追蹤點是指 5，位置處的字元位置 3 到 6 個字元會被刪除，追蹤點是指位置 3 的字元。  
@@ -153,7 +149,7 @@ abXefYj
   
  開發人員可以定義自己的內容類型，並使用註冊它們<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>。 許多編輯器功能，可以使用來定義特定的內容類型方面<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>。 例如，編輯器邊界、 裝飾和滑鼠處理常式可以定義，讓它們只適用於顯示特定內容類型的編輯器。  
   
-###  <a name="textview"></a>文字檢視  
+###  <a name="textview"></a> 文字檢視  
  模型檢視控制器 (MVC) 模式的檢視部分定義文字檢視中，檢視、 圖形元素，例如捲軸，以及插入號的格式。 在 Visual Studio 編輯器中的所有簡報項目是以 WPF 為都基礎。  
   
 #### <a name="text-views"></a>文字檢視  
@@ -181,7 +177,7 @@ abXefYj
 #### <a name="formatted-text"></a>格式化的文字  
  顯示文字檢視中的文字組成<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>物件。 每一行文字檢視對應至一行文字檢視中的文字。 長行基礎文字緩衝區中的可以被部分遮蔽 （如果未啟用自動換行） 或折成多個文字檢視行。 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>介面包含方法和屬性對應座標之間的字元，以及裝飾時，可能會產生關聯的程式行的屬性。  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>物件可由使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>介面。 如果您只關心目前檢視中顯示的文字時，您可以忽略格式設定的來源。 如果您想要以不同的文字格式顯示在檢視 （例如，若要支援 rtf 文字剪下並貼上），您可以使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>來格式化文字緩衝區中的文字。  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 物件可由使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>介面。 如果您只關心目前檢視中顯示的文字時，您可以忽略格式設定的來源。 如果您想要以不同的文字格式顯示在檢視 （例如，若要支援 rtf 文字剪下並貼上），您可以使用<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>來格式化文字緩衝區中的文字。  
   
  文字檢視格式一<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>一次。  
   
@@ -202,7 +198,7 @@ abXefYj
   
 -   IntelliSense  
   
-###  <a name="tagsandclassifiers"></a>標記和分類器  
+###  <a name="tagsandclassifiers"></a> 標記和分類器  
  標記是一段文字相關聯的標記。 它們可以呈現不同的方式，例如，使用文字著色、 底線、 圖形或快顯視窗。 分類器是一種標記。  
   
  其他類型的標記則<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>反白顯示文字，<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>的大綱，和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>編譯錯誤。  
@@ -234,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>是從分類類型對應至一組文字格式設定屬性。 在編輯器中的格式對應的實作會處理分類格式的所有的匯出。  
   
-###  <a name="adornments"></a>裝飾  
+###  <a name="adornments"></a> 裝飾  
  裝飾會直接與無關的字型和色彩的文字檢視中的字元的圖形效果。 比方說，用來標記非編譯程式碼以在許多程式設計語言中的紅色波浪線底線是內嵌的裝飾，而工具提示快顯的裝飾。 裝飾衍生自<xref:System.Windows.UIElement>並實作<xref:Microsoft.VisualStudio.Text.Tagging.ITag>。 裝飾標記的兩個特製化的型別是<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>，如佔據相同的空間，以在檢視中，文字的裝飾和<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>的波浪線底線。  
   
  內嵌的裝飾會形成格式化的文字檢視部分的圖形。 組織在不同的疊置順序圖層。 有三個內建的層級的如下所示： 文字、 插入號和選取項目。 不過，開發人員可以定義多個圖層，並將它們放在彼此相對順序。 內嵌裝飾的三種為相對文字的裝飾 （其中移動時文字會移動，而且已刪除時刪除的文字）、 檢視相對裝飾 （這是要檢視的非文字部份） 和擁有者控制的裝飾 (開發人員必須管理它們的位置）。  
   
  快顯裝飾會出現在上述 [文字] 檢視中，例如工具提示的小視窗中的圖形。  
   
-###  <a name="projection"></a>投影  
+###  <a name="projection"></a> 投影  
  投射是一項技術建構的不同種類的文字緩衝區不會實際儲存的文字，但改為結合其他文字緩衝區中的文字。 例如，投影緩衝區可用來串連兩個其他緩衝區中的文字，並呈現結果，如同它是在只有一個緩衝區，或是隱藏的同一個緩衝區中的文字部分。 投影緩衝區可做為另一個投影緩衝區的來源緩衝區。 可以建構一組相關的投影的緩衝區，以許多不同的方式重新排列的文字。 (這類集合就是所謂*緩衝區圖形*。)Visual Studio 文字的大綱功能藉由使用投影緩衝區，以隱藏摺疊的文字，並適用於 ASP.NET 網頁的 Visual Studio 編輯器使用投影來支援內嵌的 Visual Basic 和 C# 等語言。  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>建立使用<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>。 投影緩衝區由已排序的序列<xref:Microsoft.VisualStudio.Text.ITrackingSpan>物件稱為*來源範圍*。 這些範圍的內容會顯示為字元序列。 會命名為來源範圍會從中繪製的文字緩衝區*來源緩衝區*。 投影緩衝區的用戶端並沒有要注意，不同於一般文字緩衝區。  
@@ -275,22 +271,22 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>事件和投影緩衝區  
  修改投影緩衝區時，就會從投影緩衝區所做的修改傳送至依賴它的緩衝區。 所有緩衝區時，會都修改之後，會引發緩衝區變更事件，從最深的緩衝區。  
   
-###  <a name="outlining"></a>大綱  
+###  <a name="outlining"></a> 大綱  
  大綱是文字的展開或摺疊的不同文字檢視中區塊的能力。 大綱定義為一種的<xref:Microsoft.VisualStudio.Text.Tagging.ITag>，在相同的方式與定義裝飾。 A<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>是定義的文字區域可以展開或摺疊的標記。 若要使用大綱，您必須匯入<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>取得<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>。 大綱管理員列舉、 摺疊，並展開不同的區塊，以表示<xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible>物件，並據以引發事件。  
   
-###  <a name="mousebindings"></a>滑鼠繫結  
+###  <a name="mousebindings"></a> 滑鼠繫結  
  滑鼠繫結連結滑鼠移動至不同的命令。 使用已定義滑鼠繫結<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>，並使用已定義的索引鍵繫結<xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>。 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>自動具現化的所有繫結並連接到檢視中的滑鼠事件。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor>介面包含不同的滑鼠事件的預先處理序和後置處理的事件處理常式。 其中一個事件的控點，您可以覆寫的部分中的方法<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>。  
   
-###  <a name="editoroperations"></a>編輯器作業，  
+###  <a name="editoroperations"></a> 編輯器作業，  
  編輯器作業，可以用來自動化互動編輯器中的，以編寫指令碼或其他用途。 您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>上的存取作業指定<xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 您接著可以使用這些物件修改選取項目、 捲動檢視，或將插入號移至不同的檢視部分。  
   
-###  <a name="intellisense"></a>IntelliSense  
+###  <a name="intellisense"></a> IntelliSense  
  IntelliSense 支援陳述式完成、 簽章說明 （也稱為參數資訊）、 快速諮詢和燈泡。  
   
  陳述式完成提供方法名稱、 XML 項目，和其他程式碼撰寫或標記的項目可能完成快顯的清單。 一般情況下，使用者筆勢會叫用完成的工作階段。 工作階段會顯示可能的完成的清單，使用者可以選取其中一個，或關閉的清單。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>負責建立及觸發<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>計算<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>的工作階段的完成項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)   
  [編輯器匯入](../extensibility/editor-imports.md)

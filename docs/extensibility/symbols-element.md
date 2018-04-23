@@ -1,26 +1,24 @@
 ---
-title: "符號項目 |Microsoft 文件"
-ms.custom: 
+title: 符號項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 87e9159e1e392ff242407b105589f4f33341b45b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbols-element"></a>符號的項目
 會定義 Guid 和其他 VSCT 項目所使用的識別碼。 對於 unmanaged 程式碼，這項資訊通常是由所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼使用的符號項目來定義這項資訊的子元素。  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |無||  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -73,5 +71,5 @@ ms.lasthandoff: 12/22/2017
 </Symbols>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

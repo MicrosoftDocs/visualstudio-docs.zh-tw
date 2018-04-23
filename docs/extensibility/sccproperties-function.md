@@ -1,29 +1,25 @@
 ---
-title: "SccProperties 函式 |Microsoft 文件"
-ms.custom: 
+title: SccProperties 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccProperties
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: efaa2877743fcf69a61a79633108d203442489e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1d126a4691332f1121ebfc99a84b180d1e99f3d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccproperties-function"></a>SccProperties 函式
 此函式會顯示檔案或專案的原始檔控制屬性。  
@@ -65,5 +61,5 @@ SCCRTN SccProperties (
   
  屬性由原始檔控制外掛程式所定義，而且可能會有所不同外掛程式外掛程式。 如果外掛程式可讓使用者變更原始檔控制的內容檔案，它應該傳回`SCC_I_RELOAD`來表示此檔案或專案需要重新載入在 IDE。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

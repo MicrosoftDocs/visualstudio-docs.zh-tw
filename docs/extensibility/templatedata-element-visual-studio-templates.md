@@ -1,29 +1,25 @@
 ---
-title: "TemplateData 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: TemplateData 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
 helpviewer_keywords:
 - TemplateData element [Visual Studio project templates]
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85dba252eedaeafbffdc58eadac91386ff6cac98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbf5b4c26b46c0be6038651a41c751afc39e4da5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -60,7 +56,7 @@ ms.lasthandoff: 12/22/2017
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將專案範本分類，使它顯示在指定的子類別目錄之下**新專案** 對話方塊。|  
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本 id。|  
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本的群組識別碼。|  
-|[排序方式](../extensibility/sortorder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定值，用於排列次序相同分類中的其他範本中所顯示的樣子**新專案**或**加入新項目** 對話方塊。|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定值，用於排列次序相同分類中的其他範本中所顯示的樣子**新專案**或**加入新項目** 對話方塊。|  
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否要包含的資料夾建立在具現化的專案。|  
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 在建立時，請指定 Visual Studio 專案系統將產生的專案或項目的名稱。|  
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定在建立時，Visual Studio 專案系統是否會產生預設名稱為專案或項目。|  
@@ -83,7 +79,7 @@ ms.lasthandoff: 12/22/2017
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本或入門套件的所有中繼資料。|  
   
 ## <a name="remarks"></a>備註  
- `TemplateData`是必要項目。  
+ `TemplateData` 是必要項目。  
   
  如果您未包含選擇性的項目，該元素會使用預設值。  
   
@@ -114,6 +110,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,27 +1,25 @@
 ---
-title: "符號提供者介面 |Microsoft 文件"
-ms.custom: 
+title: 符號提供者介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interfaces, symbol handler
 - symbol handler, interfaces
 - symbol handler, evaluating variables
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f2b3ec92ce76a3218c646c51ccb28d99322baf93
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 798334058a89199e1e40e023e0b7f46d13c36997
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbol-provider-interfaces"></a>符號提供者介面
 以下是符號處理介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -62,5 +60,5 @@ ms.lasthandoff: 12/22/2017
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|代表集合[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)物件。|  
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|代表集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

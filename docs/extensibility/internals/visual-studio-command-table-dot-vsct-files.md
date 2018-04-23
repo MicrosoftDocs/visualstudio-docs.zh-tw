@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio 命令表 (。Vsct) 檔案 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 命令表 (。Vsct) 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 71a202bdb71469e4d6b46eb537147092b1ea9013
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3407c21f242cf45337ddad2ff19993d9e0130fbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表 (。Vsct) 檔案
 命令資料表的組態檔是文字檔，描述一組之 VSPackage 所包含的命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令資料表 (VSCT) 編譯器會以 XML 為基礎的組態檔 （.vsct 檔案） 編譯成二進位的命令資料表輸出 (.cto) 檔案。 結果.cto 檔是與所建立所使用的命令資料表 (CTC) 編譯器來編譯.ctc 組態檔相同。 不過，XML.vsct 檔案有一些優點，例如 XML 編輯器和 XML IntelliSense。  

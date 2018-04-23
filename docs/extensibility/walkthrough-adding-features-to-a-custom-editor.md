@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 加入功能與自訂編輯器 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 加入功能與自訂編輯器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>逐步解說： 加入功能與自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。  
@@ -148,7 +144,7 @@ ms.lasthandoff: 12/22/2017
   
 -   若要避免過度擁擠 UI 中的功能表命令，您應該在 IDE 中使用現有的命令之前 ¬ 新命令。 SharedCmdDef.vsct 和 ShellCmdDef.vsct 中定義共用的命令。 這些檔案的 VisualStudioIntegration\Common\Inc 子目錄中的預設會安裝您[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安裝。  
   
--   `ISelectionContainer`可以用來表示單一和多重選取項目。 每個選取的物件會實作為`IDispatch`物件。  
+-   `ISelectionContainer` 可以用來表示單一和多重選取項目。 每個選取的物件會實作為`IDispatch`物件。  
   
 -   IDE 會實作`IOleUndoManager`以從可存取服務<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或為物件，可以透過執行個體化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 編輯器實作`IOleUndoUnit`每個介面`Undo`動作。  
   
@@ -158,6 +154,6 @@ ms.lasthandoff: 12/22/2017
   
     -   `Window.Object`  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [參與 Automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   
  [如何： 提供的內容編輯器](../extensibility/how-to-provide-context-for-editors.md)

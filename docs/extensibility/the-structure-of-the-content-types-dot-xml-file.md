@@ -1,28 +1,26 @@
 ---
-title: "[Content_types].xml 檔案的結構 |Microsoft 文件"
-ms.custom: 
+title: '[Content_types].xml 檔案的結構 |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 檔案的結構
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 會使用 [Content_Types].xml 檔案來安裝封裝，但不會安裝該檔案本身。  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="root-element"></a>根項目  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |`Types`|包含列舉 VSIX 封裝中的檔案類型的子項目。|  
   
@@ -51,10 +49,10 @@ ms.lasthandoff: 12/22/2017
 |-----------|-----------------|  
 |http://schemas.openformats.org/package/2006/content-types|內容類型結構描述的位置。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  `Types`項目可以包含任意數目的`Default`項目。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |`Default`|描述 VSIX 封裝中的內容型別。 每個封裝中的檔案類型必須有它自己`Default`項目。|  
   
@@ -103,7 +101,7 @@ ms.lasthandoff: 12/22/2017
 </Types>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 擴充功能的結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC： 新的標準來包裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)

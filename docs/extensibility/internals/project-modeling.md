@@ -1,31 +1,29 @@
 ---
-title: "專案模型 |Microsoft 文件"
-ms.custom: 
+title: 專案模型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: adb0204afd889ab487070578d136aea736bb63a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-modeling"></a>專案模型
 您的專案實作標準專案物件，提供自動化的下一個步驟：<xref:EnvDTE.Projects>和`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>物件; 並且您的實作唯一剩餘的物件。 Dteinternal.h 檔案中，會定義這些標準的物件。 BscPrj 範例中提供的標準物件實作。 您也可以為模型使用這些類別，建立您自己獨立的並排的標準專案物件與從其他專案類型的專案物件。  
   
- 自動化取用者會假設要能夠呼叫<xref:EnvDTE.Solution>(「`<UniqueProjName>")`和<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是取得特定方案的專案中的索引編號。 進行此自動化呼叫導致環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>上適當的專案階層架構，傳遞 VSITEMID_ROOT 做 VSHPROPID_ExtObject VSHPROPID 參數做為項目識別碼參數。 `IVsHierarchy::GetProperty`傳回`IDispatch`提供核心的 automation 物件的指標`Project`您已實作的介面。  
+ 自動化取用者會假設要能夠呼叫<xref:EnvDTE.Solution>(「`<UniqueProjName>")`和<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是取得特定方案的專案中的索引編號。 進行此自動化呼叫導致環境呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>上適當的專案階層架構，傳遞 VSITEMID_ROOT 做 VSHPROPID_ExtObject VSHPROPID 參數做為項目識別碼參數。 `IVsHierarchy::GetProperty` 傳回`IDispatch`提供核心的 automation 物件的指標`Project`您已實作的介面。  
   
  以下是語法`IVsHierarchy::GetProperty`。  
   
@@ -57,7 +55,7 @@ Projects
   
  如果您沒有實作`Project`物件時，環境仍會傳回泛型`Project`物件，其中包含專案的名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:EnvDTE.Projects>   
  <xref:EnvDTE.ProjectItem>   
  <xref:EnvDTE.ProjectItems>

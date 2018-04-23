@@ -1,22 +1,19 @@
 ---
-title: "從資源資訊清單 |Microsoft 文件"
-ms.custom: 
+title: 從資源資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 514135e5c6ba932d7b3b4319dd39c1df4e8cb212
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-from-resources"></a>從資源資訊清單
 從資源工具資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔，好讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可以用來將影像加入至現有的.imagemanifest。 此工具可用於加入至 Visual Studio 擴充功能的映像支援的高 DPI 與主題。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。  

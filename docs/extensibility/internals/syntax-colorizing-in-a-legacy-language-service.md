@@ -1,28 +1,26 @@
 ---
-title: "語法色彩標示在舊版語言服務 |Microsoft 文件"
-ms.custom: 
+title: 語法色彩標示在舊版語言服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8ec6641859653d9f16137353ee2571006ae592c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d82a85958fd979a3d9d44375656b08356ef09d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>語法色彩標示在舊版語言服務
 語法顏色標示是會導致不同的項目要顯示不同的色彩和樣式原始程式檔中的程式語言的功能。 若要支援這項功能，您需要提供剖析器或掃描器可以識別語彙項目或檔案中的語彙基元的類型。 許多語言來標示它們色彩不同的方式區分關鍵字、 分隔符號 （例如括號或大括號） 和註解。  
@@ -148,7 +146,7 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [舊版語言服務剖析器與掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)

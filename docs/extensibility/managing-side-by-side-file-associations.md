@@ -1,27 +1,23 @@
 ---
-title: "管理並行的檔案關聯 |Microsoft 文件"
-ms.custom: 
+title: 管理並行的檔案關聯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9144125786e7aa5f2a70823a033d49ac3fa2990
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理並行的檔案關聯
 如果您的 VSPackage 提供的檔案關聯，您必須決定如何處理的並行安裝所在的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該被叫用以開啟檔案。 不相容的檔案格式複合問題。  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
     -   Visual Studio.NET 2003年是最新版本，只有當存在和[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]不存在。  
   
-    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如果它是僅有的版本，是最新版本。  
+    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如果它是僅有的版本，是最新版本。  
   
      最後結果就是 DEVENV_EXE_LATEST 包含 devenv.exe 的最新版本的路徑。  
   
@@ -88,6 +84,6 @@ ms.lasthandoff: 12/22/2017
   
 -   提供組態選項的頁面或對話方塊方塊，可讓使用者選擇檔案關聯，以便回收遺失的關聯。 指示使用者解除安裝後執行它。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [註冊檔案名稱擴充功能-並存部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)

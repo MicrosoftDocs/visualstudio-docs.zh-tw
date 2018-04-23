@@ -1,27 +1,25 @@
 ---
-title: "取得本機值 |Microsoft 文件"
-ms.custom: 
+title: 取得本機值 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 284821c9c1a31105f865333a45944a23792cd33a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4b38b346b8429ba04fb3730ea4c5fef0b2b6da1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-local-values"></a>取得本機值
 > [!IMPORTANT]
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 4.  傳回所有要求的內容中[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
- 這個範例會示範實作`IDebugProperty2::GetPropertyInfo`方法的 managed 程式碼中的本機。 它也會顯示 helper 函式， `Field.GetType`，也就是用來取得欄位的類型。 `Field.GetValue`如下所示[評估 [區域變數]](../../extensibility/debugger/evaluating-locals.md)。 Helper 函式`Field.MapModifiersToAttributes`（未顯示） 只是將欄位的轉換[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)旗標，用於[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
+ 這個範例會示範實作`IDebugProperty2::GetPropertyInfo`方法的 managed 程式碼中的本機。 它也會顯示 helper 函式， `Field.GetType`，也就是用來取得欄位的類型。 `Field.GetValue` 如下所示[評估 [區域變數]](../../extensibility/debugger/evaluating-locals.md)。 Helper 函式`Field.MapModifiersToAttributes`（未顯示） 只是將欄位的轉換[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)旗標，用於[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  
   
 ```csharp  
 namespace EEMC  
@@ -442,7 +440,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [範例實作的區域變數](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [取得本機屬性](../../extensibility/debugger/getting-local-properties.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)

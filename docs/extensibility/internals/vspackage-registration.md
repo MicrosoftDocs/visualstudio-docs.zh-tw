@@ -1,26 +1,24 @@
 ---
-title: "VSPackage 註冊 |Microsoft 文件"
-ms.custom: 
+title: VSPackage 註冊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1405fbeba34f3e3aa9c645f6eaffe90fe6ac9036
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 348010982b015eaf19ba4de559eca66bb24930a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-registration"></a>VSPackage 註冊
 Vspackage 必須告知可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]確認他們已安裝，且應該會載入。 此程序被透過將資訊寫入登錄中。 這是安裝程式的典型的作業。  
@@ -59,6 +57,6 @@ Vspackage 必須告知可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
   
 -   存取網路資源，例如類型程式庫中，如果元件是同時指定為從來源執行而且列於 SelfReg 資料表中，自我登錄程式碼可能會遭到拒絕。 這可能會導致元件失敗的系統管理安裝期間安裝。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Managed 的封裝註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

@@ -1,26 +1,24 @@
 ---
-title: "註冊程式 |Microsoft 文件"
-ms.custom: 
+title: 註冊程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-the-program"></a>註冊程式
 偵錯引擎取得連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，啟用偵錯程式下一步是註冊該連接埠。 註冊之後，程式會用於偵錯由下列方式的其中一個：  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  呼叫[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)連接埠所實作的方法。  
   
-     `IDebugPortNotify2::AddProgramNode`需要指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
+     `IDebugPortNotify2::AddProgramNode` 需要指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
      一般而言，當作業系統或執行階段環境載入程式，它會建立程式節點。 如果偵錯引擎 (DE) 會要求載入程式 DE 建立並註冊程式節點。  
   
@@ -108,6 +106,6 @@ ms.lasthandoff: 12/22/2017
   
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [取得連接埠](../../extensibility/debugger/getting-a-port.md)   
  [啟用要偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

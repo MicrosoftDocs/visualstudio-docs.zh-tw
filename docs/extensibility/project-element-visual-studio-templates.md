@@ -1,30 +1,26 @@
 ---
-title: "專案項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: 專案項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>專案項目 (Visual Studio 範本)
 指定要加入至專案目錄的檔案。  
@@ -57,9 +53,9 @@ ms.lasthandoff: 12/22/2017
 |`TargetFileName`|選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案檔的名稱。|  
 |`IgnoreProjectParameter`|選擇性屬性。<br /><br /> 指定是否應該將專案加入至目前的方案。 如果自訂的參數的值"$*myCustomParameter*$」 存在專案已在參數取代檔案中，建立，但不是會加入做為目前開啟的方案的一部分。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|  
 |[專案項目](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|  
@@ -75,9 +71,9 @@ ms.lasthandoff: 12/22/2017
   
  `Project`元素是用來指定專案，並因此，這只適用於專案範本。  
   
- `Project`項目可以有[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)子系項目或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子系項目，但兩者的混合`Folder`和`ProjectItem`子系項目。  
+ `Project` 項目可以有[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)子系項目或[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)子系項目，但兩者的混合`Folder`和`ProjectItem`子系項目。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會自動重新命名專案檔案名稱中的使用者輸入的名稱為基礎**新專案** 對話方塊。 使用`TargetFileName`屬性如果您想要提供使用範本建立的專案檔的替代檔案名稱。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會自動重新命名專案檔案名稱中的使用者輸入的名稱為基礎**新專案** 對話方塊。 使用`TargetFileName`屬性如果您想要提供使用範本建立的專案檔的替代檔案名稱。  
   
 ## <a name="example"></a>範例  
  下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
@@ -106,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)   

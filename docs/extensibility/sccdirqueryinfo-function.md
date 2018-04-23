@@ -1,29 +1,25 @@
 ---
-title: "SccDirQueryInfo 函式 |Microsoft 文件"
-ms.custom: 
+title: SccDirQueryInfo 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccDirQueryInfo
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7a930c0fcdffbc76bba431012d76dd6d13686d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1de32b8502e40c953bd7080d64e56047e6bb5ce9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函式
 此函式會檢查完整的目錄清單及其目前狀態。  
@@ -70,6 +66,6 @@ LPLONG  lpStatus
 > [!NOTE]
 >  如果原始檔控制外掛程式選擇實作一個或多個狀態的值，未實作的 bits 應該設定為零。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [目錄的狀態碼](../extensibility/directory-status-code-enumerator.md)

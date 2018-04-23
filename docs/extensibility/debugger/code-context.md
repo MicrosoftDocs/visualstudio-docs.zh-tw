@@ -2,26 +2,22 @@
 title: 程式碼內容 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a4c8f8a9a710fab70760d9cb6eabb61de7a26f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a84596246ae930cdffc0265f2f2e09652661819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-context"></a>程式碼內容
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**程式碼內容**:  
@@ -36,6 +32,6 @@ ms.lasthandoff: 12/22/2017
   
 -   由實作[IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md)介面。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [文件內容](../../extensibility/debugger/document-context.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

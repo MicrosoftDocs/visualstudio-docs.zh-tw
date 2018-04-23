@@ -1,27 +1,25 @@
 ---
-title: "將圖示加入至功能表命令 |Microsoft 文件"
-ms.custom: 
+title: 將圖示加入至功能表命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8591c55a176493ace23df2de61ba26d58a3155e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-icons-to-menu-commands"></a>將圖示加入至功能表命令
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （為了節省空間） 時功能表上顯示命令通常會顯示圖示和文字的命令。  
@@ -85,6 +83,6 @@ ms.lasthandoff: 12/22/2017
   
 8.  測試您的圖示。 建置此專案並開始偵錯。 在實驗性執行個體中，找到的命令。 它應該會顯示圖示您加入。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)

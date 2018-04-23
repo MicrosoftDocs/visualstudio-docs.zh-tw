@@ -1,24 +1,24 @@
 ---
-title: "Visual Studio 的色彩值參考 |Microsoft 文件"
-description: "建立新的 Visual Studio 色彩語彙基元的參考： 十六進位碼"
-keywords: "色彩、 十六進位碼、 色調佈景主題 UI 中，設定主題"
+title: Visual Studio 的色彩值參考 |Microsoft 文件
+description: 建立新的 Visual Studio 色彩語彙基元的參考： 十六進位碼
+keywords: 色彩、 十六進位碼、 色調佈景主題 UI 中，設定主題
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 本主題是建立新的色彩語彙基元的參考。 當您要建立新的 UI 時，您可以使用類似的色彩，從現有的 UI 來選擇每個主要佈景主題色彩和高對比佈景主題的該項目的系統色彩名稱。 
@@ -162,9 +162,9 @@ ms.lasthandoff: 12/22/2017
 | 背景： 按下 | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | 前景： 停用 | ![#FFA2A4A5 樣本](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 樣本")<br />`#FFA2A4A5` | ![#FF656565 樣本](../../extensibility/ux-guidelines/media/656565.png "#FF656565 樣本")<br />`#FF656565` | ![#FFA2A4A5 樣本](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 樣本")<br />`#FFA2A4A5` | ![Graytext'> 樣本](../../extensibility/ux-guidelines/media/HCGrayText.png "Graytext'> 樣本")<br />`GrayText` |
 | 背景： 停用 | ![#FFF5F5F5 樣本](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 樣本")<br />`#FFF5F5F5` | ![#FF252526 樣本](../../extensibility/ux-guidelines/media/252526.png "#FF252526 樣本")<br />`#FF252526` | ![#FFF6F6F6 樣本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![視窗樣本](../../extensibility/ux-guidelines/media/HCWindow.png "視窗樣本")<br />`Window` |
-| 框線： 暫留 | ![#FFC9DEF5 樣本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 樣本")<br />`#FFC9DEF5` | ![#FF3E3E40 樣本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` |![#FFFEFEFE 樣本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br /> `#FFFEFEFE` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
-| 框線： 按下 | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` |![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br /> `#FF007ACC` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
-| 框線： 停用 | ![#FFCCCEDB 樣本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 樣本](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 樣本](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 樣本")<br />`#FFC6C6C6` | ![WindowFrame 樣本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
+| 框線： 暫留 | ![#FFC9DEF5 樣本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 樣本")<br />`#FFC9DEF5` | ![ #FF3E3E40 樣本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` |![#FFFEFEFE 樣本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br /> `#FFFEFEFE` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
+| 框線： 按下 | ![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![ #FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` |![#FF007ACC 樣本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br /> `#FF007ACC` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
+| 框線： 停用 | ![#FFCCCEDB 樣本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![ #FF434346 樣本](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 樣本](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 樣本")<br />`#FFC6C6C6` | ![WindowFrame 樣本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>屬性方格控制項項目
 
@@ -309,7 +309,7 @@ ms.lasthandoff: 12/22/2017
 | 前景 （文字）： 暫留 | ![#FF1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 | 背景： 暫留 | ![#FFC9DEF5 樣本](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 樣本")<br />`#FFC9DEF5` | ![#FF606060 樣本](../../extensibility/ux-guidelines/media/606060.png "#FF606060 樣本")<br />`#FF606060` | ![#FFFDF4BF 樣本](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF 樣本")<br />`#FFFDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | 前景 （文字）： 已按下 | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
-| 背景： 按下 | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
+| 背景： 按下 | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![ #FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | 前景 （文字）： 選取 | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 樣本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![HighlightText 樣本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 | 背景： 選取 | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![#FF3399FF 樣本](../../extensibility/ux-guidelines/media/3399FF.png "#FF3399FF 樣本")<br />`#FF3399FF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ ms.lasthandoff: 12/22/2017
 | 背景 | ![#FEFEFE 樣本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 樣本")<br />`#FEFEFE` | ![#252526 樣本](../../extensibility/ux-guidelines/media/252526.png "#252526 樣本")<br />`#252526` | ![#FEFEFE 樣本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 樣本")<br />`#FEFEFE` | ![控制樣本](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | Border | ![#717171 樣本](../../extensibility/ux-guidelines/media/717171.png "#717171 樣本")<br />`#717171` | ![#999999 樣本](../../extensibility/ux-guidelines/media/999999.png "#999999 樣本")<br />`#999999` | ![#717171 樣本](../../extensibility/ux-guidelines/media/717171.png "#717171 樣本")<br />`#717171` | ![ControlDark 樣本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 | Text | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 樣本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
-| 圖像 | ![樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 樣本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
+| 圖像 | ![ 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 樣本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 樣本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 樣本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 
 ### <a name="disabled"></a>已停用
 

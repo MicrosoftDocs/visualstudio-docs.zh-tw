@@ -1,29 +1,25 @@
 ---
-title: "SccCheckout 函式 |Microsoft 文件"
-ms.custom: 
+title: SccCheckout 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccCheckout
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 671e4ecebb44f0910eba3bb835a6da6f9a7f3903
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於所有簽出的檔案。註解引數可以是`null`字串。  
@@ -79,6 +75,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|另一位使用者完成獨佔簽出這個檔案。|  
 |SCC_I_OPERATIONCANCELED|作業已完成前取消。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)

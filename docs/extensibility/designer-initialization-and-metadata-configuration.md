@@ -1,26 +1,24 @@
 ---
-title: "設計工具的初始設定和中繼資料組態 |Microsoft 文件"
-ms.custom: 
+title: 設計工具的初始設定和中繼資料組態 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 61624d9926f4d984386f1a8b3fe8a575ce465331
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a6334f65b942b2eab3543d866ae1b98a186569ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具的初始設定和中繼資料組態
 管理與設計工具或設計工具元件相關聯的中繼資料和篩選條件屬性提供機制，以定義特定的設計工具所使用的工具來處理不同的應用程式<xref:System.Type>物件 （例如資料結構類別或圖形化的實體），在設計工具時，以及如何設定 Visual Studio IDE，以支援在設計工具 (如執行個體的**工具箱**類別目錄或索引標籤可供使用)。  
@@ -97,7 +95,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  在現階段，設計介面只支援建立的元件，因此只元件可以有本機中繼資料。 在上述範例中，我們已嘗試修改屬性，例如`Color`物件的屬性。 如果`false`傳入的全域旗標，`CustomBrowser`會永遠不會出現在設計工具不會實際建立的執行個體因為`Color`。 若要設定全域旗標`false`適用於元件，例如控制項、 計時器和對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   

@@ -1,27 +1,25 @@
 ---
-title: "將專案升級 |Microsoft 文件"
-ms.custom: 
+title: 將專案升級 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>升級專案
 變更從一個版本的專案模型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]下可能需要的專案和方案升級，讓它們可以在較新版本上執行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可用來實作您自己的專案中的升級支援的介面。  
@@ -57,7 +55,7 @@ ms.lasthandoff: 12/22/2017
   
  如需備份及將專案升級的詳細資訊，請參閱 < 註解的 IVsProjectUpgrade vsshell2.idl 中。  
   
-## <a name="upgrading-custom-projects"></a>升級自訂專案
+## <a name="upgrading-custom-projects"></a> 升級自訂專案
 若您變更保存於產品不同 Visual Studio 版本間的專案檔資訊，則需要支援將舊版專案檔升級為新版。 若要支援升級，可讓您參與**Visual Studio 轉換精靈**，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>介面。 此介面包含僅適用於複本升級的機制。 專案升級會在解決方案開啟時發生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>介面實作由 project factory，或應該至少需要從 project factory。  
   
  使用的舊機制<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>介面仍支援，但在概念上開啟專案的一部分會升級專案系統。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>介面因此會呼叫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境即使<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>介面已呼叫或實作。 這種方法可讓您使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>實作複製專案僅部分升級，並委派進行就地升級 （可能是在新的位置） 工作的其餘部分<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>介面。  
@@ -92,7 +90,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>張貼升級相關的使用者使用 Visual Studio 移轉精靈 」 的訊息。  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>介面用來實作任何一種檔案升級所需進行專案升級的一部分。 這個介面不會從呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>，但會用作升級檔案屬於的專案系統，但主要專案系統的機制可能不會直接察覺。 比方說，若處理編譯器相關檔案和內容的開發小組與處理其餘專案系統的開發小組不同，就會發生此狀況。  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> 介面用來實作任何一種檔案升級所需進行專案升級的一部分。 這個介面不會從呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>，但會用作升級檔案屬於的專案系統，但主要專案系統的機制可能不會直接察覺。 比方說，若處理編譯器相關檔案和內容的開發小組與處理其餘專案系統的開發小組不同，就會發生此狀況。  
   
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade 實作  
  如果您的專案系統實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>，它不能參與**Visual Studio 轉換精靈**。 不過，即使您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>介面，您可以仍然檔案升級委派給<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>實作。  
@@ -176,5 +174,5 @@ ms.lasthandoff: 12/22/2017
   
 2.  在您的專案項目取得的專案升級時，通知**Visual Studio 轉換精靈**仍會顯示。 因此，您應該使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>介面，以提供精靈使用者介面來升級的訊息。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案](../../extensibility/internals/projects.md)   

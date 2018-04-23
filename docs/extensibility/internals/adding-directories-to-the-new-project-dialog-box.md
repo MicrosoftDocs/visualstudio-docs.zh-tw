@@ -2,26 +2,22 @@
 title: 將目錄加入至新的 [專案] 對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>將目錄加入至新的 [專案] 對話方塊
 當您建立新的專案類型時，您也可以註冊新的目錄中**新專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也就是節點。 在範例中，會註冊 VSPackage CLSID_Package 所公開的範本。 如此一來，左邊**新專案**對話方塊提供 [加入] 節點，取決於 Folder_Label_ResID 資源的名稱。 此資源是從 VSPackage 附屬 DLL 載入。  
@@ -51,7 +47,7 @@ NoRemove NewProjectTemplates
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [將目錄新增至加入新項目對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

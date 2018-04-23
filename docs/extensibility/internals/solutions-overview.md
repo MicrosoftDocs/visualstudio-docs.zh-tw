@@ -1,27 +1,23 @@
 ---
-title: "方案概觀 |Microsoft 文件"
-ms.custom: 
+title: 方案概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d64175c570c4fbca26bae0aa587b66e04cbee2be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solutions-overview"></a>方案概觀
 方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個不同的方案檔。 方案 (.sln) 檔案是以文字為基礎和可以是放在原始檔控制之下，而且使用者之間共用。 方案使用者選項 (.suo) 檔案是二進位檔案。 如此一來，.suo 檔案不能放在原始檔控制之下，並包含使用者特定資訊。  
@@ -50,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  如果您想要建立組成兩個專案組態，並從組建排除第三個新方案組態時，您需要使用屬性頁 UI 或 automation。 您無法直接變更方案建置 manager 組態和其屬性，但您可以使用操作使用的方案組建管理員`SolutionBuild`從 DTE automation 模型中的類別。 如需有關設定解決方案的詳細資訊，請參閱[方案組態](../../extensibility/internals/solution-configuration.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   

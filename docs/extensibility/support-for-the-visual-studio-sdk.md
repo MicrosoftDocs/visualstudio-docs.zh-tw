@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio SDK 支援 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio SDK 支援 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, support options
 - support, Visual Studio SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - newsgroups, Visual Studio SDK support
 - Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ccbbc6652fd4918c88bf8c3728b85e17e5b9213d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3a4fdd1831736861c0de1e6ac1d156ae085e7faf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 支援
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。  
@@ -68,5 +66,5 @@ ms.lasthandoff: 12/22/2017
   
  個別支援要求的相關資訊，請參閱[個別的支援要求](http://go.microsoft.com/fwlink/?LinkID=82385)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [告訴我們](../ide/talk-to-us.md)

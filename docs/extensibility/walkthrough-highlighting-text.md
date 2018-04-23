@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 反白顯示文字 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 反白顯示文字 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 90bf22bfe65b1120f5cc149d95eea25357b8ffa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-highlighting-text"></a>逐步解說： 反白顯示文字
 您可以加入不同的視覺效果編輯器所建立 Managed Extensibility Framework (MEF) 元件組件。 本逐步解說示範如何以反白顯示每個出現的文字檔案中目前字組。 如果 word 中文字檔案時，發生一次以上，而且您將插入號放一個出現項目，每個出現反白顯示。  
@@ -411,5 +407,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  將游標放置於其中出現的"hello"。 每個出現應該以藍色反白顯示。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,27 +1,25 @@
 ---
-title: "評估 監看式視窗運算式 |Microsoft 文件"
-ms.custom: 
+title: 評估 監看式視窗運算式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: beb632b484659c3bc901142b35ab52d25b8067fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluating-a-watch-window-expression"></a>監看式視窗運算式評估
 > [!IMPORTANT]
@@ -35,13 +33,13 @@ ms.lasthandoff: 12/22/2017
   
 2.  在 [監看式] 清單中每一個運算式，Visual Studio 會呼叫[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)將運算式文字轉換成剖析的運算式。  
   
-3.  `IDebugExpressionContext2::ParseText`呼叫[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)要剖析的文字和產生的實際工作[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件。  
+3.  `IDebugExpressionContext2::ParseText` 呼叫[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)要剖析的文字和產生的實際工作[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件。  
   
-4.  `IDebugExpressionContext2::ParseText`建立[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件並將`IDebugParsedExpression`到其中的物件。 此我`DebugExpression2`物件傳回至 Visual Studio。  
+4.  `IDebugExpressionContext2::ParseText` 建立[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件並將`IDebugParsedExpression`到其中的物件。 此我`DebugExpression2`物件傳回至 Visual Studio。  
   
 5.  Visual Studio 呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)評估剖析的運算式。  
   
-6.  `IDebugExpression2::EvaluateSync`傳遞至呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)執行實際的評估，並產生[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)會傳回到 Visual Studio 的物件。  
+6.  `IDebugExpression2::EvaluateSync` 傳遞至呼叫[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)執行實際的評估，並產生[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)會傳回到 Visual Studio 的物件。  
   
 7.  Visual Studio 呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)取得即會顯示在 監看清單運算式的值。  
   
@@ -62,5 +60,5 @@ ms.lasthandoff: 12/22/2017
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  提供偵錯引擎 (DE) 呼叫運算式評估工具 (EE) 時，會傳遞的引數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

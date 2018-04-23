@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 建立使用 c + + SDK |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立使用 c + + SDK |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>逐步解說： 建立使用 c + + SDK
 本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 為 Visual Studio 擴充功能 (VSIX)，並再用它來建立應用程式。 本逐步解說分成下列步驟：  
@@ -31,7 +29,7 @@ ms.lasthandoff: 01/09/2018
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createClassLibrary"></a>若要建立原生和 Windows 執行階段程式庫  
+##  <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫  
   
 1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/09/2018
   
 9. 在功能表列上，選擇 [建置] 、[建置方案] 。  
   
-##  <a name="createVSIX"></a>若要建立 NativeMathVSIX 擴充功能專案  
+##  <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案  
   
 1.  在**方案總管] 中**，開啟捷徑功能表**方案 'NativeMath'**，然後選擇 [**新增**，**新專案**。  
   
@@ -143,7 +141,7 @@ ms.lasthandoff: 01/09/2018
   
 18. 選擇**安裝**按鈕，等候安裝完成，然後再啟動 Visual Studio。  
   
-##  <a name="createSample"></a>若要建立範例應用程式使用的類別庫  
+##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
 1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
@@ -171,7 +169,7 @@ ms.lasthandoff: 01/09/2018
   
 9. 選擇 F5 鍵執行應用程式。  
   
-10. 應用程式中輸入任何兩個數字選取作業，然後選擇 [  **=**  ] 按鈕。  
+10. 應用程式中輸入任何兩個數字選取作業，然後選擇 [ **=** ] 按鈕。  
   
      正確的結果會出現。  
   
@@ -179,6 +177,6 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="next-steps"></a>後續步驟  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

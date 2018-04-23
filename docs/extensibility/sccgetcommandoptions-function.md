@@ -1,29 +1,25 @@
 ---
-title: "SccGetCommandOptions 函式 |Microsoft 文件"
-ms.custom: 
+title: SccGetCommandOptions 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bce2922c961bf29f320f047a91057a638fe708a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 60245b7fab3c2a0b313ccbe1d7393b0783962a37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函式會提示使用者輸入指定之命令的進階選項。  
@@ -81,6 +77,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 >  此命令`SCC_COMMAND_OPTIONS`IDE 會顯示時，會使用**選項**對話方塊，讓使用者設定控制整合的運作方式的喜好設定。 如果原始檔控制外掛程式想要提供它自己喜好設定 對話方塊中，它可以顯示從**進階**IDE 喜好設定 對話方塊中的按鈕。 外掛程式就是只負責取得並保存這項資訊;IDE 不使用它，或修改它。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [指令碼](../extensibility/command-code-enumerator.md)

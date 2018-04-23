@@ -1,26 +1,24 @@
 ---
-title: "取得專案屬性 |Microsoft 文件"
-ms.custom: 
+title: 取得專案屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project propeties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 58a24a37de7986ef47acb916d488bd4661c5a4d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d93e941c98293ca1d28f92bce1bc8c21f5ca2121
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-project-properties"></a>取得專案屬性
 本逐步解說示範如何在工具視窗中顯示專案內容。  

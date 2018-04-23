@@ -1,26 +1,24 @@
 ---
-title: "私用組件庫 |Microsoft 文件"
-ms.custom: 
+title: 私用組件庫 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5226ff7a4ed77333d2a6f9287f129c6a6d754cac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: baf810f644ed45433d77ddff75bf8aec93f76f1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="private-galleries"></a>Private Galleries
 控制項、 範本和公佈到您開發的工具，您可以共用*私用組件庫*內部為您的組織，如下所示：  
@@ -93,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 3.  在右窗格中，選取 [擴充功能，，然後選擇**更新**] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)   
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

@@ -1,29 +1,25 @@
 ---
-title: "SccRemove 函式 |Microsoft 文件"
-ms.custom: 
+title: SccRemove 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccRemove
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71a79ac1b61b3f8f69d0698ead6fa3284fe37ce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。  
@@ -81,5 +77,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>備註  
  此函式會從原始檔控制系統中移除的檔案，但不會刪除它們從使用者的本機硬碟。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

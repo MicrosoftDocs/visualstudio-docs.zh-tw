@@ -1,25 +1,21 @@
 ---
-title: "加入語言伺服器通訊協定的延伸 |Microsoft 文件"
-ms.custom: 
+title: 加入語言伺服器通訊協定的延伸 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>加入語言伺服器通訊協定的延伸
 
@@ -55,18 +51,18 @@ LSP 支援下列功能在 Visual Studio 中為止：
 初始化 | 是
 關機 | 是
 結束 | 是
-$/cancelRequest | 是
-window/showMessage | 是
+$/ cancelRequest | 是
+視窗/區隔名稱 | 是
 window/showMessageRequest | 是
-window/logMessage | 是
+視窗/logMessage | 是
 遙測/事件 |
-client/registerCapability |
-client/unregisterCapability |
+用戶端/registerCapability |
+用戶端/unregisterCapability |
 workspace/didChangeConfiguration | 是
 workspace/didChangeWatchedFiles | 是
-workspace/symbol | 是
+工作區/符號 | 是
 workspace/executeCommand | 是
-workspace/applyEdit | 是
+工作區/applyEdit | 是
 textDocument/publishDiagnostics | 是
 textDocument/didOpen | 是
 textDocument/didChange | 是
@@ -74,14 +70,14 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | 是
 textDocument/didClose | 是
-textDocument/completion | 是
-completion/resolve | 是
+textDocument/完成 | 是
+完成或解決衝突 | 是
 textDocument/hover | 是
 textDocument/signatureHelp | 是
 textDocument/references | 是
 textDocument/documentHighlight |
 textDocument/documentSymbol | 是
-textDocument/formatting | 是
+textDocument/格式化 | 是
 textDocument/rangeFormatting | 是
 textDocument/onTypeFormatting |
 textDocument/definition | 是
@@ -114,7 +110,7 @@ textDocument/rename | 是
 
 * **來源**： 手動定義
 * **名稱**： 語言伺服器通訊協定用戶端預覽
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
+* **識別項**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **版本範圍**: [1.0,2.0)
 * **相依性解析方式**： 使用者安裝
 * **下載 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
@@ -336,7 +332,7 @@ namespace MockLanguageExtension
 
   ![編輯 vspackage 資產](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
+  * **型別**: Microsoft.VisualStudio.VsPackage
   * **來源**： 在檔案系統上的檔案
   * **路徑**: [pkgdef 檔案的路徑]
 

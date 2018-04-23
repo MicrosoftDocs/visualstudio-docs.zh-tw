@@ -1,24 +1,23 @@
 ---
-title: IDE GUIDs | Microsoft Docs
+title: IDE Guid |Microsoft 文件
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>IDE 的 Guid
 

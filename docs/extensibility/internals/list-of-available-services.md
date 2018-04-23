@@ -1,29 +1,27 @@
 ---
-title: "可用服務清單 |Microsoft 文件"
-ms.custom: 
+title: 可用服務清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f2caeaee433fc0c47d8332c4443d104e26a7ee7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-of-available-services"></a>可用服務清單
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和 Visual Studio SDK 支援下列服務。 有些封裝提供它們自己這裡未列出的服務 — 例如，語言服務並沒有單一的服務 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支援下列服務。 有些封裝提供它們自己這裡未列出的服務 — 例如，語言服務並沒有單一的服務 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  
   
  若要取得的主要介面或介面顯示與每個服務使用此處所列，或來自其他來源 （例如，語言服務） 所取得的服務 Guid。  
   
@@ -161,6 +159,6 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>|[是]|[是]|可讓 VSPackage 也可以取得視窗框架中的封裝的一部分可能平均分攤工作量。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|[是]|[是]|提供特定的中繼資料檔案與相關聯的 XML 格式的文件檔案的存取權。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [COM 和受管理的服務](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
  [使用和提供服務](../../extensibility/using-and-providing-services.md)

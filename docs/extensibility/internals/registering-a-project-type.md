@@ -1,27 +1,25 @@
 ---
-title: "註冊專案類型 |Microsoft 文件"
-ms.custom: 
+title: 註冊專案類型 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案建立這些登錄項目。  
@@ -85,7 +83,7 @@ ms.lasthandoff: 12/22/2017
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`（預設值）|REG_SZ|`FigPrj Project VSPackage`|可當地語系化的名稱，這個登錄 VSPackage （專案類型）。|  
+|`@` （預設值）|REG_SZ|`FigPrj Project VSPackage`|可當地語系化的名稱，這個登錄 VSPackage （專案類型）。|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|專案類型 DLL 的路徑。 IDE 載入此 DLL，並將傳遞至 VSPackage CLSID`DllGetClassObject`取得<xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory>建構<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>物件。|  
 |`CompanyName`|REG_SZ|`Microsoft`|開發專案類型的公司名稱。|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|專案類型的名稱。|  
@@ -268,7 +266,7 @@ ms.lasthandoff: 12/22/2017
   
  這表示如果您包含 PROJECT_TYPE = EF.vsz 檔案中，環境會發現您.vsz 檔案中指定先前的 ProductDir 目錄中的項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

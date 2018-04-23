@@ -1,12 +1,10 @@
 ---
-title: "繫結至功能表項目的鍵盤快速鍵 |Microsoft 文件"
-ms.custom: 
+title: 繫結至功能表項目的鍵盤快速鍵 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ceae0f2ea69ce0340565abb85bb002713010407d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: db02cf763ee4bf171d862129c88687accab00cc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>繫結之功能表項目的的鍵盤快速鍵
 要繫結的自訂功能表命令鍵盤快速鍵，只要加入.vsct 檔以取得封裝的項目。 本主題說明如何將鍵盤快速鍵對應至自訂按鈕、 功能表項目或工具列命令，以及如何套用的預設編輯器中的鍵盤對應，或將它限制為自訂編輯器。  
@@ -109,5 +107,5 @@ ms.lasthandoff: 12/22/2017
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)

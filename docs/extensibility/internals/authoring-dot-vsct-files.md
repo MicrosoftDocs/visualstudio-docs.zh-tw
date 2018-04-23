@@ -1,27 +1,23 @@
 ---
-title: "撰寫。Vsct 檔案 |Microsoft 文件"
-ms.custom: 
+title: 撰寫。Vsct 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 本文件示範如何撰寫.vsct 檔加入 Visual Studio 整合式的開發環境 (IDE) 中的功能表項目、 工具列和其他使用者介面 (UI) 項目。 UI 項目加入 Visual Studio Package (VSPackage) 已經沒有.vsct 檔時，請使用下列步驟。  
@@ -234,12 +230,12 @@ ms.lasthandoff: 12/22/2017
  某些功能表和按鈕的型別包含特殊的行為。 下表描述一些特殊的功能表和按鈕類型。 對於其他類型，請參閱`types`屬性中的描述[功能表項目](../../extensibility/menu-element.md)，[按鈕項目](../../extensibility/button-element.md)，和[下拉式項目](../../extensibility/combo-element.md)。  
   
  下拉式方塊  
- 下拉式方塊是可以使用工具列的下拉式清單。 若要加入至 UI 的下拉式方塊，建立[組合](../../extensibility/combos-element.md)中的項目`Commands`項目。 將新增到`Combos`元素`Combo`新增每個下拉式方塊項目。 `Combo`項目擁有相同的屬性和子系為`Button`項目，也有`DefaultWidth`和`idCommandList`屬性。 `DefaultWidth`屬性設定的寬度，以像素和`idCommandList`屬性指向用來填入下拉式方塊的命令識別碼。 如需詳細資訊，請參閱`Combo`項目文件。  
+ 下拉式方塊是可以使用工具列的下拉式清單。 若要加入至 UI 的下拉式方塊，建立[組合](../../extensibility/combos-element.md)中的項目`Commands`項目。 將新增到`Combos`元素`Combo`新增每個下拉式方塊項目。 `Combo` 項目擁有相同的屬性和子系為`Button`項目，也有`DefaultWidth`和`idCommandList`屬性。 `DefaultWidth`屬性設定的寬度，以像素和`idCommandList`屬性指向用來填入下拉式方塊的命令識別碼。 如需詳細資訊，請參閱`Combo`項目文件。  
   
  MenuController  
  功能表控制器是具有旁邊的箭頭的按鈕。 按一下箭頭，即可開啟清單。 若要將功能表控制器加入至 UI 中，建立`Menu`項目並設定其`type`屬性**MenuController**或**MenuControllerLatched**，取決於您想要的行為。 若要填入功能表控制器，將它設為父代`Group`項目。 功能表控制器將會顯示該群組的所有子系的下拉式清單上。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)

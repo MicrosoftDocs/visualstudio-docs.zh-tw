@@ -2,28 +2,24 @@
 title: IDebugObject2::IsUserData |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsUserData
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-caps.latest.revision: 7
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cd56e2b83411710fa110c7abd65d965d828083d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c20b4e531284156b8790b1ca65b32c85d1db997
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。  
@@ -52,5 +48,5 @@ int IsUserData(
 ## <a name="remarks"></a>備註  
  使用者資料指定為 JustMyCode （使用者可設定選項將模組標記為使用者程式碼，並因此可使用的堆疊追蹤） 模組的一部分的任何物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

@@ -1,29 +1,25 @@
 ---
-title: "SccGetVersion 函式 |Microsoft 文件"
-ms.custom: 
+title: SccGetVersion 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aef7ed21124c2e3555442819461f1989388ab22
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函式
 此函式可取得原始檔控制外掛程式 API 支援原始檔控制外掛程式的版本號碼。  
@@ -48,5 +44,5 @@ LONG SccGetVersion(void);
 ## <a name="remarks"></a>備註  
  例如，如果原始檔控制外掛程式支援 1.3 版的原始檔控制外掛程式 API，此函式會傳回 0x0103。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

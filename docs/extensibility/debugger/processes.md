@@ -2,26 +2,22 @@
 title: 處理序 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e69270c5d90c26cf653ee31b81bcb9f453b814e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 75230740e84bb6660629b38e84df56fa8e5c1856
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="processes"></a>處理序
 偵錯工具就架構而言，**程序**:  
@@ -40,7 +36,7 @@ ms.lasthandoff: 12/22/2017
   
  偵錯封裝可以附加至處理序的偵錯引擎 (DE) 藉由呼叫[附加](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 這表示 DE 附加所有可能的程式，它可以處理程序中執行。 例如，如果 common language runtime DE 附加至處理序，它會將附加，才能執行 managed 程式碼中的程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式](../../extensibility/debugger/programs.md)   
  [執行緒](../../extensibility/debugger/threads.md)   
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   

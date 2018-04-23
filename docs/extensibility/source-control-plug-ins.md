@@ -1,27 +1,23 @@
 ---
-title: "原始檔控制外掛程式 |Microsoft 文件"
-ms.custom: 
+title: 原始檔控制外掛程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3395275938d78178f6f39ccd0f67dca01194bcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考章節包含完整的介面規格，可讓原始檔控制系統整合與[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會指定的語法和語意的原始檔控制外掛程式必須實作介面以各種函式和資料類型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  

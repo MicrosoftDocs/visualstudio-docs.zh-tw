@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 建立自訂編輯器 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立自訂編輯器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e8ea75cb96b36f885a55cbf9f174394379dc05a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ecc70112dc89a1866a4688fd39d8a2aae129387b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>逐步解說： 建立自訂編輯器
 VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPackage 專案範本已不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -52,5 +48,5 @@ VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPacka
   
      此編輯器支援剪下和貼上、 尋找和取代和開啟負載作業。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

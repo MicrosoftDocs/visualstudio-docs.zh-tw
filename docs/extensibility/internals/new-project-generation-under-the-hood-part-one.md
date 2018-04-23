@@ -1,26 +1,24 @@
 ---
-title: "新的專案產生： 在幕後，第一部 |Microsoft 文件"
-ms.custom: 
+title: 新的專案產生： 在幕後，第一部 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ac31f2866c6b69587f70775d5ed1245b1a2bb0a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生： 在幕後，第一部
 您曾經想過有關如何建立您自己的專案類型嗎？ 不知道實際發生的狀況時建立新的專案？ 讓我們看一下實際上並查看實際狀況。  
@@ -216,5 +214,5 @@ devenv /installvstemplates
   
  **MyProjectNode**會顯示為子節點的 Visual C# 中的 Windows 節點的下方。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產生新專案︰深入探討，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

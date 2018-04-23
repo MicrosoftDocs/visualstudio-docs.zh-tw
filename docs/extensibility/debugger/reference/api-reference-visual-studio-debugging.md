@@ -2,26 +2,22 @@
 title: API 參考 （Visual Studio 偵錯） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3c9007d679e36e2aa6dbab41074338395434be42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 （Visual Studio 偵錯）
 參考章節包含的 api，顯示的語法和使用方式，針對所有應用程式開發介面項目，指南概念性概觀和程式碼範例的分類。 依類別目錄依字母順序列出所有參考。  
@@ -48,7 +44,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  無效或`NULL`[out] 參數可能會造成損毀 IDE。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

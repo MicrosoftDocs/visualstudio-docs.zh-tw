@@ -1,27 +1,23 @@
 ---
-title: "在舊版 API 中的文字緩衝區事件 |Microsoft 文件"
-ms.custom: 
+title: 在舊版 API 中的文字緩衝區事件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版 API 中的文字緩衝區事件
 文字緩衝區物件發出數個不同的事件可讓您回應不同的情況。  
@@ -52,9 +48,9 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|通知用戶端的基礎文字緩衝區一維座標中的變更。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|通知用戶端的基礎文字緩衝區二維座標中的變更。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|通知用戶端的使用者資料的變更。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsPreliminaryTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsPreliminaryTextChangeCommitEvents`引發之前其他事件，例如美化，若要確定其他事件認可變更之前不要變更文字。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsFinalTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsFinalTextChangeCommitEvents`適用於只能由語言服務或其他擁有完整控制權編輯的物件。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsPreliminaryTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsPreliminaryTextChangeCommitEvents` 引發之前其他事件，例如美化，若要確定其他事件認可變更之前不要變更文字。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供文字已變更的範圍。 `IVsFinalTextChangeCommitEvents`介面不會引發以回應復原或取消復原命令。 針對已復原管理員的緩衝區只引發事件。 `IVsFinalTextChangeCommitEvents` 適用於只能由語言服務或其他擁有完整控制權編輯的物件。 VSPackage 必須監視 `IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用舊版 API 存取文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
  [如何： 文字緩衝區使用註冊事件舊版應用程式開發介面](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -1,12 +1,10 @@
 ---
-title: "選項與選項 頁面 |Microsoft 文件"
-ms.custom: 
+title: 選項與選項 頁面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>選項與選項 頁面
 按一下**選項**上**工具**功能表開啟**選項** 對話方塊。 在此對話方塊中的選項合稱為 [選項] 頁。 樹狀目錄控制項導覽窗格中的包含的選項類別，而且每個類別目錄選項頁面。 當您選取的頁面時，它的選項會出現在右窗格中。 這些頁面可讓您變更判斷 VSPackage 的狀態選項的值。  
@@ -56,11 +54,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="option-attributes-and-layout"></a>選項屬性和配置  
  頁面會提供使用者介面 (UI) 外觀的自訂選項頁面中的選項。 版面配置、 標記和描述的一般選項 頁面中的選項會決定下列屬性：  
   
--   <xref:System.ComponentModel.CategoryAttribute>決定的選項類別。  
+-   <xref:System.ComponentModel.CategoryAttribute> 決定的選項類別。  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>決定選項的顯示名稱。  
+-   <xref:System.ComponentModel.DisplayNameAttribute> 決定選項的顯示名稱。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>決定選項的描述。  
+-   <xref:System.ComponentModel.DescriptionAttribute> 決定選項的描述。  
   
     > [!NOTE]
     >  對等的屬性、 SRCategory、 LocDisplayName，SRDescription，字串資源的當地語系化和使用中定義[受管理的專案範例](http://go.microsoft.com/fwlink/?LinkId=122774)。  

@@ -1,26 +1,24 @@
 ---
-title: "VSCT XML 結構描述參考 |Microsoft 文件"
-ms.custom: 
+title: VSCT XML 結構描述參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e02d4ad31a4877dd88dca941c06e38f7eeac82f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e8b8b796f4b5740f90a8755bdf158735387eaa90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 提供的命令資料表編譯器結構描述項目，允許子元素和屬性每個。  
@@ -76,6 +74,6 @@ ms.lasthandoff: 12/22/2017
   
  [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [在 VSPackage 中路由傳送命令](../extensibility/internals/command-routing-in-vspackages.md)

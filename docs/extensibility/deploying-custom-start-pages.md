@@ -1,26 +1,24 @@
 ---
-title: "部署自訂起始頁 |Microsoft 文件"
-ms.custom: 
+title: 部署自訂起始頁 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c52a71ebb521f84f96bead09502389f6b395e90c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6110be404ec7de9b52aef23fc9d1d77d1ae7e2c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-custom-start-pages"></a>部署自訂起始頁
 使用 VSIX 部署，或將檔案複製到目標電腦上的正確位置，您可以部署自訂起始頁。  
@@ -96,6 +94,6 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**自訂起始頁**清單**啟動**選項頁面上，選取新起始頁。 如需詳細資訊，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
  [將使用者控制項加入至起始頁](../extensibility/adding-user-control-to-the-start-page.md)

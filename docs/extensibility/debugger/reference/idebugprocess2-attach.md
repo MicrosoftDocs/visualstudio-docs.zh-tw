@@ -2,28 +2,24 @@
 title: IDebugProcess2::Attach |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::Attach
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47b14c3de6b5b9980e2ad420596a1243e84c8882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56f14b399a904c2584e81c2b6c8f344654b69a18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 將工作階段的偵錯管理員 (SDM) 附加至處理程序。  
@@ -75,6 +71,6 @@ int Attach(
   
  處理序中發生的所有偵錯事件傳送至給定[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)物件。 這`IDebugEventCallback2`SDM 呼叫這個方法時，提供物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

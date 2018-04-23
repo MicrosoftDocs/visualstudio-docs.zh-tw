@@ -1,29 +1,25 @@
 ---
-title: "SccGet 函式 |Microsoft 文件"
-ms.custom: 
+title: SccGet 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，以檢視及編譯，但不是用於編輯的複本。 在大多數系統中，檔案會標記為唯讀。  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`旗標可以結合`SCC_GET_RECURSIVE`旗標來擷取指定的目錄中的所有檔案和所有的子目錄。  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`永遠不會傳遞而且`SCC_GET_ALL`。 另外請注意，是否目錄 C:\A 和 C:\A\B 同時傳遞遞迴上取得，C:\A\B 和其所有子目錄會實際擷取兩次。 負責在 IDE — 並不是原始檔控制外掛程式，以確定這類的重複項目會保留從陣列。  
+>  `SCC_GET_RECURSIVE` 永遠不會傳遞而且`SCC_GET_ALL`。 另外請注意，是否目錄 C:\A 和 C:\A\B 同時傳遞遞迴上取得，C:\A\B 和其所有子目錄會實際擷取兩次。 負責在 IDE — 並不是原始檔控制外掛程式，以確定這類的重複項目會保留從陣列。  
   
  最後，即使原始檔控制外掛程式指定`SCC_CAP_GET_NOUI`上初始化時，指出它並沒有 Get 命令的使用者介面，以擷取檔案 IDE 仍可能會呼叫此函式的旗標。 旗標就是指，IDE 不會顯示 Get 功能表項目以及，外掛程式不提供任何 UI。  
   
@@ -106,6 +102,6 @@ SCCRTN SccGet(
   
     6.  更新的 b.txt 檔案現在可以簽入。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [特定命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)

@@ -2,28 +2,24 @@
 title: IDebugProgramEx2::Attach |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEx2::Attach
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 440a4ce6b008efe541187d1d99d886f4c7c5f9ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 附加至程式的工作階段。  
@@ -66,5 +62,5 @@ int Attach(
 > [!NOTE]
 >  在傳遞介面`pSession`cookie，可唯一識別附加到此程式; 的偵錯工作階段管理員值僅被視為是提供的介面上的方法都是的功能。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

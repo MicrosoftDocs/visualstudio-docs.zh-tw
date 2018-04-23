@@ -2,23 +2,20 @@
 title: 工作區和 Visual Studio 中的語言服務 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59cf2936311bb94c2db1ada6a7a3d5ccf994f027
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 551a621ab97c232970d6ef67da14379c5cdfbd46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workspaces-and-language-services"></a>工作區和語言服務
 

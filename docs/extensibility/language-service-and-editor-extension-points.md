@@ -2,26 +2,22 @@
 title: 語言服務及編輯器擴充點 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供擴充點，您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分語言服務功能。 這些是主要的擴充點分類：  
@@ -47,9 +43,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="extending-content-types"></a>擴充內容的類型  
  內容類型是由編輯器，例如文字、 「 文字 」、 「 程式碼 」 或"CSharp"種類的定義。 您定義新的內容類型所宣告的型別變數<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>並提供新的內容類型的唯一名稱。 若要註冊的內容類型的編輯器，請將它匯出與下列屬性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>是內容類型的名稱。  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 是內容類型的名稱。  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>是這個內容類型衍生的內容類型名稱。 內容類型可以繼承自多個內容的類型。  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> 是這個內容類型衍生的內容類型名稱。 內容類型可以繼承自多個內容的類型。  
   
  因為<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>密封的類別，您可以將它匯出沒有類型參數。  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 這會導致出現在 UI 中的格式  
   
- 在建構函式，您會定義顯示名稱和標記的外觀。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>定義填滿色彩，以及<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定義的框線色彩。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>格式定義的當地語系化名稱。  
+ 在建構函式，您會定義顯示名稱和標記的外觀。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 定義填滿色彩，以及<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定義的框線色彩。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>格式定義的當地語系化名稱。  
   
  格式定義的範例如下：  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 裝飾的有效內容 （例如，「 文字 」 或 「 程式碼 」） 的類型。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 這個裝飾是有效的文字檢視的類型。 類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>擁有預先定義的文字檢視角色的集合。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要做為檔案的文字檢視。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>適用於文字檢視，使用者可以編輯，或使用滑鼠和鍵盤巡覽。 範例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>檢視是編輯器的 [文字] 檢視和**輸出**視窗。  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 這個裝飾是有效的文字檢視的類型。 類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>擁有預先定義的文字檢視角色的集合。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要做為檔案的文字檢視。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 適用於文字檢視，使用者可以編輯，或使用滑鼠和鍵盤巡覽。 範例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>檢視是編輯器的 [文字] 檢視和**輸出**視窗。  
   
  下列範例會顯示匯出屬性裝飾之提供者上。  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 您裝飾的有效內容 （例如，「 文字 」 或 「 程式碼 」） 的類型。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 這個文字檢視種標記或裝飾是否有效。 類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>擁有預先定義的文字檢視角色的集合。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要做為檔案的文字檢視。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>適用於文字檢視，使用者可以編輯，或使用滑鼠和鍵盤巡覽。 範例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>檢視是編輯器的 [文字] 檢視和**輸出**視窗。  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 這個文字檢視種標記或裝飾是否有效。 類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>擁有預先定義的文字檢視角色的集合。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要做為檔案的文字檢視。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 適用於文字檢視，使用者可以編輯，或使用滑鼠和鍵盤巡覽。 範例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>檢視是編輯器的 [文字] 檢視和**輸出**視窗。  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 的標籤或您已定義的裝飾種類。 您必須新增第二個<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>如<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>。  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>已被取代之喜好<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代之喜好<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
  此外，您必須實作相同類型的提供者：  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>已被取代之喜好<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代之喜好<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
   
  您必須將匯出的提供者，以及下列屬性：  
   

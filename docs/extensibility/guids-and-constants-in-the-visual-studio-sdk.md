@@ -1,26 +1,24 @@
 ---
-title: "Guid 和 Visual Studio SDK 中的常數 |Microsoft 文件"
-ms.custom: 
+title: Guid 和 Visual Studio SDK 中的常數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631ffac458cd5f7d29051cdd53431bf7f7e4ccb8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 604fe4a8cb007c89ae9d287c1077737cd4854ce5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 和 Visual Studio SDK 中的常數
 <xref:Microsoft.VisualStudio.VSConstants>類別會提供存取的環境 Guid 和常數的選取項目。  

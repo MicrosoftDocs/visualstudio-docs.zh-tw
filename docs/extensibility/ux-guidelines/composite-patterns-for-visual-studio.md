@@ -1,23 +1,21 @@
 ---
-title: "複合模式適用於 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 複合模式適用於 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合截然不同的設定中的互動和設計元素。 在 Visual Studio 中關於一致性的最重要複合模式的部分包括：  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [觸控輸入](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>資料視覺效果  
+##  <a name="BKMK_DataVisualization"></a> 資料視覺效果  
   
 ### <a name="overview"></a>總覽  
  圖是視覺化的方式，來彙總，並將資料視覺化以加強決策。 它們可以協助使用者面臨大量資料，但很少表示什麼值得注意，以及可能需要的動作，請參閱。  
@@ -85,7 +83,7 @@ ms.lasthandoff: 12/22/2017
 |![樣本 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|# 79D7F2|121,215,242|  
 |![樣本 B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|# B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>物件在 UI 中和其內  
+##  <a name="BKMK_OnObjectUI"></a> 物件在 UI 中和其內  
  本節提供內容來窺視，也稱為程式碼查看檢視中，類型的物件上 UI 特有 Visual Studio。  
   
 ### <a name="overview"></a>總覽  
@@ -251,7 +249,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **永遠不會**暫留，似乎是可編輯或邀請使用者互動的顯示內容。 此行為可以讓使用者不耐煩，如果使用者嘗試將游標移詳細內容，因為工具提示的標準行為是，立即關閉資料指標時不會再透過主要產生它的內容。  
   
-##  <a name="BKMK_SelectionModels"></a>選擇模型  
+##  <a name="BKMK_SelectionModels"></a> 選擇模型  
   
 ### <a name="overview"></a>總覽  
  選取模型是用來表示，並確認使用者介面中感興趣的一或多個物件上作業的機制。 本主題討論在 Visual Studio 文件編輯器中的選取項目互動模式： 文字編輯器、 設計介面和模型化介面。  
@@ -309,7 +307,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="region-selection-box-selection"></a>地區選取項目 （方塊選取項目）  
  Visual Studio 支援地區選取項目在文字編輯器中，而這就叫做方塊選取項目。 方塊選取項目可讓使用者選取不符合規則的文字資料流的文字區域。 如同標準文字選取範圍中，選取項目必須是連續的。 拖曳滑鼠時，按住 Alt 鍵起始方塊選取項目。 也可以使用方向鍵，表示選取範圍的區域時按住 alt 鍵和 Shift 鍵起始方塊選取項目。 方塊選取項目會使用反白顯示的一般的選取範圍，並顯示插入點游標閃爍的選取範圍結尾。  
   
- ![地區 &#40; 方塊 &#41;Visual Studio 中的選取](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713年 04_BoxSelection")  
+ ![地區&#40;方塊&#41;Visual Studio 中的選取](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713年 04_BoxSelection")  
   
  **Visual Studio 中的區域 （方塊） 選取**  
   
@@ -394,19 +392,19 @@ ms.lasthandoff: 12/22/2017
   
  **兩個次要選取範圍的主要選取項目**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>圖形物件選取項目外觀  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> 圖形物件選取項目外觀  
  選取控點會以矩形模式物件的週框方塊周圍繪製的平方。 下圖顯示圖形化的物件可以有控制代碼、 調整大小，以及在就地編輯的外觀的各種狀態的範例。 控點大小應該繫結至視窗的框線和邊緣度量使用**GetSystemMetrics**應用程式開發介面。  
   
 |狀況|外觀|視覺化詳細資料|  
 |-----------|----------------|--------------------|  
 |**未選取**|預設|![預設按鈕狀態](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713年 10_DefaultState")||  
-|**主要選取項目**|可調整大小|![使用主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize")|![使用主要選取項目調整大小控點 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713年 12_PrimaryResizeZoom")|  
-|**主要選取項目**|不能調整大小|![不含主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713年 13_PrimaryNoResize")|![主要選取項目，而不會調整大小控點 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713年 14_PrimaryNoResizeZoom")|  
-|**主要選取項目**|鎖定|![已鎖定主要選取範圍](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713年 15_PrimaryLocked")|![已鎖定主要選取範圍 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713年 16_PrimaryLockedZoom")|  
-|**次要選取範圍**|可調整大小|![次要的選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713年 17_SecondaryResize")|![次要的選取項目調整大小控點 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713年 18_SecondaryResizeZoom")|  
-|**次要選取範圍**|不能調整大小|![不使用的次要選取範圍調整大小控點](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713年 19_SecondaryNoResize")|![不使用調整大小 &#40; 的次要選取範圍放大 &#41;] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713年 20_SecondaryNoResizeZoom")|  
-|**次要選取範圍**|鎖定|![已鎖定次要選取範圍](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713年 21_SecondaryLocked")|![已鎖定次要選取範圍 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713年 22_SecondaryLockedZoom")|  
-|**UI 作用中**|預設|![UI 作用狀態](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713年 23_UIActive")|![UI 作用狀態 &#40; 已縮放 &#41;] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713年 24_UIActiveZoom")|  
+|**主要選取項目**|可調整大小|![使用主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize")|![使用主要選取項目調整大小控點&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713年 12_PrimaryResizeZoom")|  
+|**主要選取項目**|不能調整大小|![不含主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713年 13_PrimaryNoResize")|![不含主要選取項目調整大小控點&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713年 14_PrimaryNoResizeZoom")|  
+|**主要選取項目**|鎖定|![已鎖定主要選取範圍](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713年 15_PrimaryLocked")|![已鎖定主要選取範圍&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713年 16_PrimaryLockedZoom")|  
+|**次要選取範圍**|可調整大小|![次要的選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713年 17_SecondaryResize")|![次要的選取項目調整大小控點&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713年 18_SecondaryResizeZoom")|  
+|**次要選取範圍**|不能調整大小|![不使用的次要選取範圍調整大小控點](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713年 19_SecondaryNoResize")|![不使用調整大小的次要選取範圍&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713年 20_SecondaryNoResizeZoom")|  
+|**次要選取範圍**|鎖定|![已鎖定次要選取範圍](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713年 21_SecondaryLocked")|![已鎖定次要選取範圍&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713年 22_SecondaryLockedZoom")|  
+|**UI 作用中**|預設|![UI 作用狀態](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713年 23_UIActive")|![UI 作用狀態&#40;放大&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713年 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>檢視選取項目模型  
   
@@ -475,7 +473,7 @@ ms.lasthandoff: 12/22/2017
   
 -   F2 鍵會啟動就地編輯目前所選取的儲存格。  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>持續性和儲存設定  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> 持續性和儲存設定  
   
 ### <a name="overview"></a>總覽  
  雖然 Visual Studio 中的每個軟體元件，通常負責它自己的狀態和持續性的 Visual Studio 會自動儲存設定，在某些情況下，例如與視窗大小和位置。 下表會自動儲存的設定和設定需要明確的使用者或程式設計所要採取動作的組合。  
@@ -510,7 +508,7 @@ ms.lasthandoff: 12/22/2017
 #### <a name="profile-specific-layouts"></a>設定檔特有的版面配置  
  每個設定檔包含的工具視窗配置等方式組織熟悉特定開發人員角色 (Visual c + + 開發人員可以預期會看見**方案總管 中**時預期會看見C#開發人員在IDE的左側**方案總管 中**右邊)。 使用者選擇的設定檔，在啟動後載入設定檔特有的視窗版面配置。 封裝作者應該判斷最適合在他們的客戶體驗的視窗版面配置知道然後會保存使用者對視窗組態的變更。  
   
-##  <a name="BKMK_TouchInput"></a>觸控輸入  
+##  <a name="BKMK_TouchInput"></a> 觸控輸入  
  使用者逐漸觸控裝置上使用 Microsoft 開發產品。 不過，有一些障礙，讓您難以使用觸控式裝置上的開發工具。 使用者將預期我們的產品提供可靠且精確地觸控體驗。 這些指導方針的目的是要告知的觸控功能，以併入並鼓勵一致的點觸控體驗，跨 Visual Studio 和相關的產品。  
   
 ### <a name="levels-of-experience"></a>層級的體驗  

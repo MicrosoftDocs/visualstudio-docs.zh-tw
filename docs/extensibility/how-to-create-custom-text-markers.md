@@ -1,27 +1,23 @@
 ---
-title: "如何： 建立自訂文字標記 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立自訂文字標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30ad5b61f59e6183067ddcc789b2fc796c7aef9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f5c44a507cc291b203fc9ba330b248a854f61b81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 建立自訂文字標記
 如果您想要建立自訂文字標記強調或組織程式碼，您必須採取下列步驟：  
@@ -59,13 +55,13 @@ ms.lasthandoff: 12/22/2017
   
     -   Package  
   
-    -   `Default`是類型為 REG_SZ 的選擇性項目。 設定時，項目的值是字串，包含的一些實用識別資訊，例如 「 自訂文字標記 」。  
+    -   `Default` 是類型為 REG_SZ 的選擇性項目。 設定時，項目的值是字串，包含的一些實用識別資訊，例如 「 自訂文字標記 」。  
   
-    -   `Service`這類型為 REG_SZ 的項目包含透過 proffering 提供自訂文字標記服務的 GUID 字串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 此格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+    -   `Service` 這類型為 REG_SZ 的項目包含透過 proffering 提供自訂文字標記服務的 GUID 字串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 此格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
-    -   `DisplayName`這類型為 REG_SZ 的項目包含自訂文字標記名稱的資源識別碼。 此格式為 #YYYY。  
+    -   `DisplayName` 這類型為 REG_SZ 的項目包含自訂文字標記名稱的資源識別碼。 此格式為 #YYYY。  
   
-    -   `Package`項目類型 REG_SZ 含有`GUID`服務底下所列的 VSPackage 提供服務。 此格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+    -   `Package` 項目類型 REG_SZ 含有`GUID`服務底下所列的 VSPackage 提供服務。 此格式為 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
 ### <a name="to-create-a-custom-text-marker"></a>若要建立自訂文字標記  
   
@@ -93,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
      唯一識別您的服務會傳回的 cookie。 您稍後可以使用此 cookie 來撤銷您的自訂標記類型服務藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>介面，指定此 cookie 值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 加入標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   

@@ -2,29 +2,25 @@
 title: CommandTable 項目 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CommandTable
 helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe68f25748df171ec6695554903b37854e7d8c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f2dd2ebd076d4225adc86e5ba0cdc9af6ca40df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commandtable-element"></a>CommandTable 項目
 CommandTable 是.vsct 檔的根項目。 這是定義的實際配置和 ide 提供 VSPackage 的命令類型的檔案。 命令可能會包含功能表項目、 功能表、 工具列和下拉式方塊。 如需詳細資訊，請參閱 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
@@ -55,7 +51,7 @@ CommandTable 是.vsct 檔的根項目。 這是定義的實際配置和 ide 提�
 |xmlns|必要。 XML 命名空間：<br /><br /> xmlns ="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs ="http://www.w3.org/2001/XMLSchema"|  
 |語言|選擇性。 Language 屬性可能用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定的語言，將使用目前的處理序的語言：<br /><br /> 語言 ="en-我們"|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -75,5 +71,5 @@ CommandTable 是.vsct 檔的根項目。 這是定義的實際配置和 ide 提�
 |-------------|-----------------|  
 |無||  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

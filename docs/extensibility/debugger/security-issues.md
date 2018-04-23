@@ -1,26 +1,24 @@
 ---
-title: "安全性問題 |Microsoft 文件"
-ms.custom: 
+title: 安全性問題 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
 - debugging [Debugging SDK], security
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 753f916d148675afd7313afc8673232f22280b7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d45ebd8c4d80b84749838c2034d72159c9e39627
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-issues"></a>安全性問題
 偵錯使用 Visual Studio 的程式，所需的唯一權限是相同的開發人員必須在執行程式。 這包括大部分的情況下 （與其他服務，例如網際網路資訊服務，某些情況下可能需要較高的層級的權限） 的遠端偵錯。  
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/22/2017
   
  這表示開發人員可以偵錯的程式他或她入門任何特殊權限。 開發人員甚至可以偵錯的其他人是否相同的安全性群組的成員，其他人來啟動處理序。 若要啟用遠端偵錯，就必須只將必要的複製檔案至遠端電腦並啟動 msvsmon.exe，(請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)   
  [處理序偵錯管理員](../../extensibility/debugger/process-debug-manager.md)   
  [遠端偵錯](../../debugger/remote-debugging.md)

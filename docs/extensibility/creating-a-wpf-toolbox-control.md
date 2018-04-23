@@ -2,28 +2,24 @@
 title: 建立 WPF 工具箱控制項 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 0b8bfbde2459998f13b8b19b17cfecba172538aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 (Windows Presentation Framework) WPF 工具箱控制項範本可讓您建立會自動加入至 WPF 控制項**工具箱**時安裝擴充功能。 本主題示範如何使用範本來建立**工具箱**可以散發給其他使用者的控制。  

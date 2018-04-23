@@ -1,26 +1,24 @@
 ---
-title: "擴充專案 |Microsoft 文件"
-ms.custom: 
+title: 擴充專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bdfa33417002b58e1c1c9718637438cb1210b5af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-projects"></a>擴充專案
 專案和方案是 Visual Studio 會將程式碼和資源檔組織成編譯和部署的單位的方式。 您可以找到詳細資訊中的專案[專案 (Visual Studio SDK)](../extensibility/extending-projects.md)。  

@@ -1,27 +1,25 @@
 ---
-title: "消除 ~ SAK 檔案 |Microsoft 文件"
-ms.custom: 
+title: 消除 ~ SAK 檔案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在原始檔控制外掛程式 API 1.2 ~ SAK 檔案已由功能旗標和偵測原始檔控制外掛程式支援 MSSCCPRJ 檔案，並在共用簽出的新函式取代。  
@@ -54,5 +52,5 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  如果這個登錄機碼設定為 dword: 00000000，它相當於索引鍵不存在，要與 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為 dword: 00000001，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援 MSSCCPRJ。SCC 檔案並不支援共用簽出。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

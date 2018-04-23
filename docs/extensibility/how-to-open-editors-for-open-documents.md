@@ -2,26 +2,22 @@
 title: 如何： 開啟編輯器開啟的文件 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 621ed4436160b6f491abb34d8194c75595d9a54c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 開啟編輯器開啟的文件
 開啟文件視窗的專案之前，專案首先必須決定檔案是否已開啟另一個編輯器的文件視窗中。 可以在專案特定的編輯器中，請開啟檔案，或是其中一個標準的編輯器向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -58,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  如果尚未開啟文件，然後完成中的步驟[如何： 開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開啟並儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何： 開啟專案的特定編輯器](../extensibility/how-to-open-project-specific-editors.md)   
  [如何︰開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)

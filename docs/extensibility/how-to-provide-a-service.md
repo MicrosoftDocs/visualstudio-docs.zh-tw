@@ -1,27 +1,23 @@
 ---
-title: "如何： 提供服務 |Microsoft 文件"
-ms.custom: 
+title: 如何： 提供服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 70d16085bc6cbc7f01a991a1eca731b8abed2b0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
 VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須使用 Visual Studio 註冊服務，然後加入服務。  
@@ -144,7 +140,7 @@ VSPackage 可以提供其他 Vspackage 可以使用的服務。 若要提供服�
   
      值`helloString`應該是"Hello"。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
  [使用並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

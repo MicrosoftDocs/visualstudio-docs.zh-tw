@@ -2,26 +2,22 @@
 title: 如何： 使用管理的已連結的復原 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a025cdfc14eb39dad7ea2bc72a69f1f260fb583
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用已連結的復原管理
 已連結的復原可讓使用者同時復原多個檔案中相同的編輯。 比方說，跨多個程式檔，例如標頭檔和 Visual c + + 檔案，同時文字變更為已連結的復原交易。 連結的復原功能已內建復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 可以連結在一起，以被視為單一復原單位個別復原堆疊父復原單位來執行的已連結的復原。 下一節會詳細說明使用的已連結的復原的程序。  
@@ -37,7 +33,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  若要實作的已連結的復原管理在編輯器中，新增復原管理。 如需實作的已連結的復原管理的詳細資訊，請參閱[How to： 實作復原管理](../extensibility/how-to-implement-undo-management.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   

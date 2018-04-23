@@ -1,30 +1,26 @@
 ---
-title: "ProjectItem 項目 （Visual Studio 專案範本） |Microsoft 文件"
-ms.custom: 
+title: ProjectItem 項目 （Visual Studio 專案範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 (Visual Studio 專案範本)
 指定專案範本中所包含的檔案。  
@@ -65,7 +61,7 @@ ms.lasthandoff: 12/22/2017
 |`OpenInHelpBrowser`|選擇性屬性。<br /><br /> 布林值，指定是否開啟項目應該會說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，使用這個屬性。<br /><br /> 預設值是 `false`。|  
 |`OpenOrder`|選擇性屬性。<br /><br /> 指定數字的值，表示項目，會在其各自的編輯器中開啟的順序。 所有的值必須是 10 的倍數。 具有更高項目`OpenOrder`值第一次開啟。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -80,7 +76,7 @@ ms.lasthandoff: 12/22/2017
  A `string` ，表示範本的.zip 檔中的檔案的名稱或路徑。  
   
 ## <a name="remarks"></a>備註  
- `ProjectItem`是選擇性的子系的`Project`。  
+ `ProjectItem` 是選擇性的子系的`Project`。  
   
  `TargetFileName`屬性可以用來建立範本的.zip 檔案中的目錄結構與不同的目錄結構。 例如，如果檔案`MyFile.vb`存在根目錄中的範本的.zip 檔案，但您想要放置在目錄中名為的檔案`CustomFiles`在從範本建立的所有專案，您會使用下列 XML:  
   
@@ -143,7 +139,7 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   

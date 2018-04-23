@@ -1,27 +1,25 @@
 ---
-title: "在舊版語言服務的快速諮詢 |Microsoft 文件"
-ms.custom: 
+title: 在舊版語言服務的快速諮詢 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ffdfe9bfb9063828a90dd9cdf3452ca3684ff0a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>在舊版語言服務的快速諮詢
 IntelliSense 快速諮詢 會顯示在來源中的識別項的相關資訊時使用者識別項中將插入號，選取**快速諮詢**從**IntelliSense**功能表或保存滑鼠資料指標的識別碼上方。 這會導致識別項的相關資訊會出現工具提示。 這項資訊通常包含識別項類型。 使用偵錯引擎時，這項資訊可能包含目前的值。 語言服務會處理只有識別碼時，偵錯引擎會提供運算式值。  

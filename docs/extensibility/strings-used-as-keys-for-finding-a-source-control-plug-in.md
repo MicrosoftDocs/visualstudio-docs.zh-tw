@@ -1,27 +1,23 @@
 ---
-title: "字串做為索引鍵來尋找原始檔控制外掛程式 |Microsoft 文件"
-ms.custom: 
+title: 字串做為索引鍵來尋找原始檔控制外掛程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1acc753d2a02c3be88687a4e42d71d23e988af48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a42eebe67ce1f611cf6e48883bc09139f241e658
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>字串做為索引鍵來尋找原始檔控制外掛程式
 下列字串是索引鍵來存取此登錄來尋找資訊的原始檔控制外掛程式。  
@@ -52,7 +48,7 @@ ms.lasthandoff: 12/22/2017
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
  [如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

@@ -1,26 +1,24 @@
 ---
-title: "專案模型的核心元件 |Microsoft 文件"
-ms.custom: 
+title: 專案模型的核心元件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 在專案模型上，展開下列資料表。 這些表格顯示介面，而且模型的介面和特定物件相關聯的服務中識別的服務的簡短的描述。 此外，資料表會詳細說明中的專案建立和維護，根據您的特定專案類型的需求是選用的其他介面。  
@@ -101,9 +99,9 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|提供基本的 UI 相關 IDE 功能，例如建立和列舉工具視窗或文件視窗，或是向使用者回報錯誤。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|提供 IDE 的 [狀態] 列的存取。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|用來實作 automation 模型。 在專案模式中，您將傳回的內容物件，可讓您建立該物件的執行個體。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|用於剪貼簿事件物件上實作專案階層架構中。 `SVsUIHierWinClipboardHelper`可讓您正確地控制代碼剪下、 複製和貼上作業。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|用於剪貼簿事件物件上實作專案階層架構中。 `SVsUIHierWinClipboardHelper` 可讓您正確地控制代碼剪下、 複製和貼上作業。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [不在組建中： 使用 HierUtil7 專案類別來實作的專案型別 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   

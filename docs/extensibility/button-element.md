@@ -1,26 +1,24 @@
 ---
-title: "按鈕項目 |Microsoft 文件"
-ms.custom: 
+title: 按鈕項目 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5af5dce3edf1ac2910af5f8d593ed8e316cff721
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 78b5abd8762669db4e225a68817f2c9823a49267
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="button-element"></a>Button 項目
 定義使用者可以與之互動的項目。 按鈕可以屬於不同類型： 按鈕、 MenuButton 和 SplitDropDown。  
@@ -49,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |類型|選擇性。 列舉的值，指定按鈕類型。<br /><br /> 如果沒有指定，會使用按鈕。<br /><br /> 按鈕<br /> 標準命令，會出現在工具列上 （通常為圖示的按鈕），功能表和操作功能表。<br /><br /> MenuButton<br /> 功能表項目不會執行命令，但會產生另一個功能表。<br /><br /> SplitDropDown<br /> 控制項，例如 Microsoft Word 中的 [標準] 工具列上的復原與取消復原按鈕。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -80,5 +78,5 @@ ms.lasthandoff: 12/22/2017
 </Button>
  ```
  
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

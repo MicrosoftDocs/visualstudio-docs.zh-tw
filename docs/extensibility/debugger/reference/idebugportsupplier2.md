@@ -2,28 +2,24 @@
 title: IDebugPortSupplier2 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 257bbf334adbdfd3a93cf172de0b15bf63cb3217
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4aa26aa37b40c0e483342e6eb93cbac15bbbfc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 這個介面會提供工作階段的偵錯管理員 (SDM) 連接埠。  
@@ -59,7 +55,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)傳回此介面，代表建立連接埠的連接埠供應商。  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)代表清單`IDebugPortSupplier`介面 (`IEnumDebugPortSuppliers`介面取自[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)，代表所有連接埠供應商註冊[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)代表清單`IDebugPortSupplier`介面 (`IEnumDebugPortSuppliers`介面取自[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)，代表所有連接埠供應商向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
   
  偵錯引擎通常不會互動與連接埠供應商。  
   
@@ -84,9 +80,9 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
   
  命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   

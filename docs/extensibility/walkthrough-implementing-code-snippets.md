@@ -1,23 +1,21 @@
 ---
-title: "逐步解說： 實作程式碼片段 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 實作程式碼片段 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a9ef9fcce1a02820b2855b6e39c5da2d3a7cc48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ae260951160bc3d4ed3bb1535f47eb1f33649957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說： 實作程式碼片段
 您可以建立程式碼片段，及它們包含在編輯器延伸模組，以便擴充功能的使用者可以將它們加入自己的程式碼。  

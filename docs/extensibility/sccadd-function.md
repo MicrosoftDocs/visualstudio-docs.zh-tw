@@ -1,29 +1,25 @@
 ---
-title: "SccAdd 函式 |Microsoft 文件"
-ms.custom: 
+title: SccAdd 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52137da9d14920a2fd5213f1110a74d895e51c7f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2933d00b7450f946a5fd5409bcaeecc2527a9f64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 此函式會將新檔案加入至原始檔控制系統。  
@@ -99,5 +95,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|將檔案視為 Unicode 文字中 UTF16 Little Endian 格式。|  
 |SCC_FILETYPE_UTF16BE|0x40|將檔案以在 UTF16 Big Endian Unicode 文字格式化。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

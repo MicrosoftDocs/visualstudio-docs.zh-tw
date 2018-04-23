@@ -1,27 +1,25 @@
 ---
-title: "註冊舊版語言 Service2 |Microsoft 文件"
-ms.custom: 
+title: 註冊舊版語言 Service2 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -33,9 +31,9 @@ ms.lasthandoff: 12/22/2017
   
 |名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
-|(預設值)|REG_SZ|*\<GUID >*|語言服務的 GUID。|  
+|(預設值)|REG_SZ|*\<GUID &GT;*|語言服務的 GUID。|  
 |LangResID|REG_DWORD|0x0-0xffff|資源識別元 (ResID) 語言的當地語系化的文字名稱的字串。|  
-|Package|REG_SZ|*\<GUID >*|VSPackage 的 GUID。|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage 的 GUID。|  
 |ShowCompletion|REG_DWORD|0-1|指定是否**陳述式完成**中選項**選項**對話方塊的 已啟用。|  
 |ShowSmartIndent|REG_DWORD|0-1|指定是否可以選取**智慧**中縮排**選項**對話方塊的 已啟用。|  
 |RequestStockColors|REG_DWORD|0-1|指定是否自訂或色彩關鍵字使用的預設色彩。|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|編輯器在作用中時，進行預設 [工具箱] 索引標籤的名稱。|  
 |DisplayName|REG_SZ|resID|要顯示在 [名稱**開啟**] 對話方塊。 名稱是標準格式字串資源識別碼或名稱。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|用於**開啟**功能表命令。 如果您不想要列出可用的編輯器，為特定檔案類型清單中的預設文字編輯器，設定此值為 1。|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|用於可以開啟檔案與字碼頁支援任何語言服務。 例如，當您開啟.txt 檔使用**開啟**命令時，提供使用原始程式碼編輯器，逾時或無編碼的選項。<br /><br /> 指定名稱之子機碼 GUID 為字碼頁編輯器 factory。這個特定的登錄項目中指定的連結的 GUID 是規則編輯器 factory。 此項目的是，如果在 IDE 不會使用預設編輯器開啟檔案，IDE 會嘗試使用清單中的下一個編輯器。 這個下一個編輯器應該不是字碼頁編輯器 factory，因為這個編輯器 factory 基本上是 editor factory 失敗的相同。|  
-|Package|REG_SZ|*\<GUID >*|顯示名稱 ResID VSPackage GUID。|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|用於可以開啟檔案與字碼頁支援任何語言服務。 例如，當您開啟.txt 檔使用**開啟**命令時，提供使用原始程式碼編輯器，逾時或無編碼的選項。<br /><br /> 指定名稱之子機碼 GUID 為字碼頁編輯器 factory。這個特定的登錄項目中指定的連結的 GUID 是規則編輯器 factory。 此項目的是，如果在 IDE 不會使用預設編輯器開啟檔案，IDE 會嘗試使用清單中的下一個編輯器。 這個下一個編輯器應該不是字碼頁編輯器 factory，因為這個編輯器 factory 基本上是 editor factory 失敗的相同。|  
+|Package|REG_SZ|*\<GUID &GT;*|顯示名稱 ResID VSPackage GUID。|  
   
 ### <a name="example"></a>範例  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ||未使用。|  
-|*\<GUID >*|REG_SZ|""|支援的邏輯檢視的索引鍵。 您可以視需要有最大數量的這些。 登錄項目名稱會是很重要的不是值，都是空字串。|  
+|*\<GUID &GT;*|REG_SZ|""|支援的邏輯檢視的索引鍵。 您可以視需要有最大數量的這些。 登錄項目名稱會是很重要的不是值，都是空字串。|  
   
 ### <a name="example"></a>範例  
   
@@ -241,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -2,26 +2,22 @@
 title: 運算式評估內容 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4e57f500c2dfbfe673713c784cbc93ff52a73d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d1fade5bb18e59a1b9b9e2655ce01b0b5559484e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**運算式評估內容**:  
@@ -34,6 +30,6 @@ ms.lasthandoff: 12/22/2017
   
      指定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面，可以建立偵錯引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)藉由剖析運算式的介面。 指定`IDebugExpression2`介面，DE 可以取得透過同步或非同步的運算式評估的值。 顯示此值的名稱和類型的變數或引數，以及傳送給 IDE。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

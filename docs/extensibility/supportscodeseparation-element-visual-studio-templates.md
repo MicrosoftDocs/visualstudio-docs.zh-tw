@@ -1,30 +1,26 @@
 ---
-title: "SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft 文件"
-ms.custom: 
+title: SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: affe4d6c73271bea467e373bd8100b3b7f06c0ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
 指定是否**程式碼置於個別檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
@@ -45,7 +41,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -64,7 +60,7 @@ ms.lasthandoff: 12/22/2017
   
  `SupportsCodeSeparation`項目只適用於 Web 項目範本。  
   
- 程式碼分離或程式碼後置頁面模型，可讓您將標記放在一個檔案，將程式碼放在另一個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]與其他.NET 語言都會使用此模型。  
+ 程式碼分離或程式碼後置頁面模型，可讓您將標記放在一個檔案，將程式碼放在另一個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 與其他.NET 語言都會使用此模型。  
   
 ## <a name="example"></a>範例  
  下列範例會指定要顯示**程式碼置於個別檔案**選項。  
@@ -91,6 +87,6 @@ ms.lasthandoff: 12/22/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

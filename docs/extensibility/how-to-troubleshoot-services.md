@@ -2,26 +2,22 @@
 title: 如何： 疑難排解服務 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9efe3c1c7032f1db41272a03cf689e015a79522
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 疑難排解服務問題
 有幾個常見的問題，當您嘗試取得服務可能會發生：  
@@ -62,7 +58,7 @@ if (log == null) return;
   
     2.  GUID 不明確指派給介面。 因此，系統會建立物件所需的預設 GUID。  
   
-3.  請確定已設置 VSPackage 服務要求。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]之後它建構，以及呼叫之前，站台 VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
+3.  請確定已設置 VSPackage 服務要求。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之後它建構，以及呼叫之前，站台 VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
   
      如果您需要服務 VSPackage 建構函式中的程式碼，請將它移至初始化方法。  
   
@@ -72,7 +68,7 @@ if (log == null) return;
   
      如果工具視窗裝載使用者控制項或任何其他控制項容器，容器會設置在 Windows 元件模型，而且沒有任何存取權[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服務。 您可以呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>取得 VSPackage 服務提供者從控制項容器中的。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [可用服務清單](../extensibility/internals/list-of-available-services.md)   
  [使用並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

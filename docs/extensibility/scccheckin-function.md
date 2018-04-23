@@ -1,29 +1,25 @@
 ---
-title: "SccCheckin 函式 |Microsoft 文件"
-ms.custom: 
+title: SccCheckin 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f95377f79d02952c63b673d50569fac058a8573c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bf8c8d23a89e55b272657dde0c2374c78e63bfaf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 此函式簽入原始檔控制系統，儲存所做的變更和建立新的版本先前會在簽出檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。  
@@ -87,5 +83,5 @@ SCCRTN SccCheckin (
   
  `fOptions`引數可以指定值為`SCC_KEEP_CHECKEDOUT`旗標，表示檢查檔案，而且一次簽出該使用者的意圖。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

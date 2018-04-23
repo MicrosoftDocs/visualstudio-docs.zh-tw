@@ -1,33 +1,29 @@
 ---
-title: "原始檔控制整合的概觀 |Microsoft 文件"
-ms.custom: 
+title: 原始檔控制整合的概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 本節將比較兩種方式整合到 Visual Studio 的原始檔控制。原始檔控制外掛程式與提供原始檔控制方案，並反白顯示新的原始檔控制功能的 VSPackage。 Visual Studio 可讓您手動切換原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動解決方案為基礎的切換。  
   
 ## <a name="source-control-integration"></a>原始檔控制整合  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援兩種類型的原始檔控制整合選項。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您仍然可以將整合為外掛程式，根據原始檔控制外掛程式 API （先前也稱為 MSSCCI API），可提供基本的原始檔控制功能，同時使用 Visual Studio 原始檔控制使用者介面 （UI)。 原始檔控制 VSPackage，相反地，提供新的、 深層整合[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]適合需求的複雜度，以及在其原始檔控制模型中的自主高層級的原始檔控制整合的路徑。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合選項。 在所有版本的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您仍然可以將整合為外掛程式，根據原始檔控制外掛程式 API （先前也稱為 MSSCCI API），可提供基本的原始檔控制功能，同時使用 Visual Studio 原始檔控制使用者介面 （UI)。 原始檔控制 VSPackage，相反地，提供新的、 深層整合[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]適合需求的複雜度，以及在其原始檔控制模型中的自主高層級的原始檔控制整合的路徑。  
   
  ![原始檔控制概觀](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 -   很容易實作原始檔控制外掛程式比原始檔控制 VSPackage。  
   
 ## <a name="source-control-vspackage"></a>原始檔控制 VSPackage  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]可讓深層整合到 Visual Studio 的 Visual Studio 提供的原始檔控制使用者介面完全取代與原始檔控制功能的完整控制權。 原始檔控制 VSPackage 註冊使用 Visual Studio，並提供原始檔控制功能。 雖然可以使用 Visual Studio 中註冊數個原始檔控制的 Vspackage，只有一個可以是作用中一次。 原始檔控制 VSPackage 有 Visual Studio 中的原始檔控制功能和外觀的完整控制權，作用中時。 所有其他原始檔控制系統中可能會註冊的 Vspackage 處於非使用狀態，而且不會完全顯示任何 UI。  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 可讓深層整合到 Visual Studio 的 Visual Studio 提供的原始檔控制使用者介面完全取代與原始檔控制功能的完整控制權。 原始檔控制 VSPackage 註冊使用 Visual Studio，並提供原始檔控制功能。 雖然可以使用 Visual Studio 中註冊數個原始檔控制的 Vspackage，只有一個可以是作用中一次。 原始檔控制 VSPackage 有 Visual Studio 中的原始檔控制功能和外觀的完整控制權，作用中時。 所有其他原始檔控制系統中可能會註冊的 Vspackage 處於非使用狀態，而且不會完全顯示任何 UI。  
   
  實作 VSPackage 的原始檔控制需要 「 所有或執行任何動作 」 的策略。 原始檔控制 VSPackage 的建立者必須投資花費相當大量的心力實作幾個原始檔控制的介面和新的 UI 項目 （對話方塊、 功能表和工具列） 來涵蓋整個原始檔控制功能。 請參閱[建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)如需詳細資訊。  
   
@@ -79,7 +75,7 @@ ms.lasthandoff: 12/22/2017
   
 -   VSPackage 不會侷限於特定來源控制模型。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制](../../extensibility/internals/source-control.md)   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)   

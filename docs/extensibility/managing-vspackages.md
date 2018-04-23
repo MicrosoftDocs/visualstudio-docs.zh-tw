@@ -1,28 +1,26 @@
 ---
-title: "管理 Vspackage |Microsoft 文件"
-ms.custom: 
+title: 管理 Vspackage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-vspackages"></a>管理 Vspackage
 在大部分情況下，您不必擔心管理 Vspackage，因為專案和項目範本的註冊，並自動載入封裝。 不過，在某些情況下，您可能需要了解更多的位元，以管理您的封裝。  
@@ -48,5 +46,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="troubleshooting-vspackages"></a>疑難排解 Vspackage  
  了解 Vspackage 不會載入或發生錯誤的疑難排解的技術：[疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)

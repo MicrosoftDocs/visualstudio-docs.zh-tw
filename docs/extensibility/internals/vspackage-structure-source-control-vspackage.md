@@ -1,26 +1,24 @@
 ---
-title: "VSPackage 結構 (來源控制 VSPackage) |Microsoft 文件"
-ms.custom: 
+title: VSPackage 結構 (來源控制 VSPackage) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 13b811b504259bf10440419b3cb4029a4c239c5e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (來源控制 VSPackage)
 原始檔控制封裝 SDK 提供的指導方針建立 VSPackage，允許將他或她原始檔控制功能與整合原始檔控制實施者[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。 VSPackage 是 COM 元件，通常會視需要而載入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 為基礎的服務，其登錄項目中的封裝會通告。 每個 VSPackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常會使用所提供的服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 和 proffers 自己的某些服務。  
@@ -76,6 +74,6 @@ ms.lasthandoff: 12/22/2017
   
  原始檔控制 VSPackage 必須考量的介面的完整清單，請參閱[相關服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)   
  [相關的服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

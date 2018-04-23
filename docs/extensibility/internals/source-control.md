@@ -1,27 +1,23 @@
 ---
-title: "原始檔控制 |Microsoft 文件"
-ms.custom: 
+title: 原始檔控制 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 672ce7f47dc8478343f336ed06757af109a5ecce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f68108bf2967ba0084581c3a6247e22f53a5af6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control"></a>原始檔控制
 本章節將討論的整合功能，以及實作原始檔控制的選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，透過原始檔控制外掛程式或原始檔控制 VSPackage。  

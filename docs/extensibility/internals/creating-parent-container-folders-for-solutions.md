@@ -1,26 +1,24 @@
 ---
-title: "為方案建立的父容器資料夾 |Microsoft 文件"
-ms.custom: 
+title: 為方案建立的父容器資料夾 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>建立方案的父容器的資料夾
 在原始檔控制外掛程式 API 1.2 版，使用者可以指定針對方案中的所有 Web 專案的單一根來源控制目的地。 此單一根稱為超級統一的根 （南下）。  
@@ -64,9 +62,9 @@ ms.lasthandoff: 12/22/2017
   
  南下資料夾和子資料夾會建立不論作業已取消或因錯誤而失敗。 它們不會自動移除在取消或錯誤的情況。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]預設為 1.1 版的行為，如果原始檔控制外掛程式不會傳回`SCC_CAP_CREATESUBPROJECT`和`SCC_CAP_GETPARENTPROJECT`功能旗標。 此外，使用者的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以選擇要還原的下列索引鍵的值設為 dword: 00000001 1.1 版的行為：  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 預設為 1.1 版的行為，如果原始檔控制外掛程式不會傳回`SCC_CAP_CREATESUBPROJECT`和`SCC_CAP_GETPARENTPROJECT`功能旗標。 此外，使用者的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以選擇要還原的下列索引鍵的值設為 dword: 00000001 1.1 版的行為：  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 版本 1.2 的新功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

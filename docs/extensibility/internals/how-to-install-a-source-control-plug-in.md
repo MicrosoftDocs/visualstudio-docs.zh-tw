@@ -1,26 +1,24 @@
 ---
-title: "如何： 安裝原始檔控制外掛程式 |Microsoft 文件"
-ms.custom: 
+title: 如何： 安裝原始檔控制外掛程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包括三個步驟：  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 3.  藉由適當的登錄項目中註冊的 DLL。  
   
 ## <a name="integration-with-visual-studio"></a>與 Visual Studio 整合  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援原始檔控制外掛程式符合原始檔控制外掛程式 API。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援原始檔控制外掛程式符合原始檔控制外掛程式 API。  
   
 ### <a name="registering-the-source-control-plug-in"></a>註冊原始檔控制外掛程式  
  原始檔控制系統可以呼叫執行的整合式的開發環境 (IDE) 之前，它必須先找到原始檔控制外掛程式 API 會將匯出的 DLL。  
@@ -120,5 +118,5 @@ ms.lasthandoff: 12/22/2017
   
  如果這些條件都符合，就可以呼叫支援 1.2 和 1.3 版的新函數。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -1,26 +1,24 @@
 ---
-title: "應用程式模式適用於 Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 應用程式模式適用於 Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的應用程式模式
-##  <a name="BKMK_WindowInteractions"></a>視窗互動  
+##  <a name="BKMK_WindowInteractions"></a> 視窗互動  
   
 ### <a name="overview"></a>總覽  
 使用 Visual Studio 中的兩個主要視窗型別是文件編輯器和工具視窗。 少見，但可能，是大型的非強制回應對話方塊。 雖然這些是在介面中所有非強制回應，但是其模式是本質上不同。 本章節涵蓋文件視窗中，工具視窗和非強制回應對話方塊的差異。 強制回應對話方塊模式將會涵蓋[對話方塊](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)。  
@@ -42,7 +40,7 @@ A**工具視窗**通常會顯示為針對 IDE 邊緣摺疊的個別較小視窗�
 | **執行個體** | *多個執行個體*<br /><br /> 某些編輯器也可讓多個編輯器中開啟相同的檔案，數個編輯器可同時開啟相同的時間和編輯不同的檔案 (使用**視窗&gt;新視窗**命令)。<br /><br /> 單一編輯器可能編輯一個或多個檔案在相同的時間 （專案設計工具）。 | *單一或多重 instance*<br /><br /> 內容變更以反映內容 （如同在屬性瀏覽器），或將焦點/內容推送到其他視窗 （方案總管 中的 工作清單）。<br /><br /> 除非有充足的理由不為單一執行個體和多重執行個體工具視窗應該與主動式文件視窗產生關聯。 | *單一執行個體* |  
 | **範例** | **文字編輯器**，例如程式碼編輯器<br /><br /> **設計介面**： 如表單設計工具或模型介面<br /><br /> **控制配置給對話方塊類似**，例如資訊清單設計工具 | **方案總管 中**提供方案和專案包含方案中<br /><br /> **伺服器總管**提供的伺服器和資料連接的使用者選擇要開啟的視窗階層式檢視。 從資料庫，在階層的查詢中，開啟物件時，會開啟文件視窗，並可讓使用者編輯查詢。<br /><br /> **屬性瀏覽器**會顯示在文件視窗或另一個工具視窗中所選物件的屬性。 屬性會出現在方格的階層式檢視中，或在類似對話方塊的複雜控制項中，而讓使用者設定這些屬性的值。 | |  
   
-##  <a name="BKMK_ToolWindows"></a>工具視窗  
+##  <a name="BKMK_ToolWindows"></a> 工具視窗  
   
 ### <a name="overview"></a>總覽  
 工具視窗支援文件視窗中發生的使用者的工作。 它們可以用來顯示代表 Visual Studio 提供，且可以操作的基本根物件的階層。  
@@ -149,7 +147,7 @@ Visual Studio 工具視窗有不同的狀態，其中有些是使用者啟動 �
 | 暫存器 ||  
 | 執行緒 ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>文件編輯器慣例  
+##  <a name="BKMK_DocumentEditorConventions"></a> 文件編輯器慣例  
   
 ### <a name="document-interactions"></a>文件的互動  
 「 文件格式 」 是在 IDE 中的最大空間，其中使用者通常著重注意若要完成其工作，補充的工具視窗的輔助。 文件編輯器代表工作的使用者開啟並儲存在 Visual Studio 中的基本單位。 它們會保留的強式的意義上，繫結至 [方案總管] 或其他使用中的階層架構視窗選取範圍。 使用者應該能夠指向其中一個這些階層視窗並且知道所在文件和其關聯性的方案、 專案或 Visual Studio 封裝所提供的另一個根物件。  
@@ -257,7 +255,7 @@ Visual Studio 工具視窗有不同的狀態，其中有些是使用者啟動 �
   
 -   使用者必須能夠與使用鍵盤，啟動編輯器 中，並按 tab 鍵經過控制項或使用標準的助憶鍵控制項互動。  
   
-##  <a name="BKMK_Dialogs"></a>對話方塊  
+##  <a name="BKMK_Dialogs"></a> 對話方塊  
   
 ### <a name="introduction"></a>簡介  
 在 Visual Studio 中的對話方塊通常應該支援的使用者工作的一不連續單位，然後關閉。  
@@ -313,12 +311,12 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
   
 -   [精靈](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards)有用來引導使用者進行一連串的步驟朝完成工作的邏輯。 提供一系列選項循序面板，有時也導入不同的工作流程 （「 分支 」） 是在上一個面板中所做的選擇而定。  
   
-####  <a name="BKMK_SimpleDialogs"></a>簡單對話方塊  
+####  <a name="BKMK_SimpleDialogs"></a> 簡單對話方塊  
 簡單對話方塊是單一的強制回應視窗中控制項的呈現。 這個展示檔可能包含複雜的控制項模式，例如欄位選擇器的變化。 簡單的對話，請遵循標準的一般配置，以及任何所需的複雜控制項群組的特定配置。
   
 ![> 建立強式名稱金鑰是簡單的對話方塊，在 Visual Studio 中的範例。] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704年 01_CreateStrongNameKey")<br />建立強式名稱金鑰是簡單的對話方塊，在 Visual Studio 中的範例。
   
-####  <a name="BKMK_LayeredDialogs"></a>多層式的對話方塊  
+####  <a name="BKMK_LayeredDialogs"></a> 多層式的對話方塊  
 分層的對話方塊包含索引標籤、 儀表板和內嵌的樹狀結構。 它們可用來最大化不動產，當有多個群組的單一 UI 段中提供的控制項。 群組的分層，讓使用者選擇哪一個群組，以查看一次。  
   
 在最簡單的情況下，群組之間切換的機制是索引標籤控制項。 沒有可用的多個替代方案。 請參閱 Prioritizing 和圖層如何選擇最適當的樣式。  
@@ -327,7 +325,7 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
   
 ![工具 > 選項，是 Visual Studio 中的分層對話方塊的範例。] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704年 02_ToolsOptions")<br />工具 > 選項，是 Visual Studio 中的分層對話方塊的範例。
   
-####  <a name="BKMK_Wizards"></a>精靈  
+####  <a name="BKMK_Wizards"></a> 精靈  
 精靈會引導使用者已透過邏輯的一連串的步驟中完成工作有用。 循序面板中所提供的一系列選項，使用者必須繼續進行到下每個步驟才能繼續。 一旦有足夠的預設值可供使用，**完成**按鈕啟用。  
   
  強制回應的精靈可用於工作的：  
@@ -408,7 +406,7 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 #### <a name="imagery"></a>圖像  
 在對話方塊中，謹慎地使用映像。 不使用大圖示 對話方塊中只使用空間。 使用映像，才會傳達給使用者，例如警告圖示或狀態動畫訊息很重要的一部分。  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>設定優先順序和分層  
+###  <a name="BKMK_PrioritizingAndLayering"></a> 設定優先順序和分層  
   
 #### <a name="prioritizing-your-ui"></a>設定您的 UI  
 它可能需要讓 forefront 特定 UI 項目，並將更多進階的行為和到對話方塊選項 （包括晦澀難懂的命令）。 留出空間，並讓它預設會在具有文字標籤 UI 對話方塊顯示時，則您可以將 forefront 常用的功能。  
@@ -423,7 +421,7 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 | 切換機制 | 優點和適當的使用 | 缺點，並使用不當 |  
 | --- | --- | --- |  
 | 索引標籤控制項 | 以邏輯方式分組相關的設定的對話方塊頁面<br /><br />適用於少於五個 （或對話方塊上容納一個資料列中的標籤數目） 相關的控制項在對話方塊的頁面<br /><br />索引標籤必須簡短： 可以輕鬆地識別內容的一個或兩個字<br /><br />常見的系統對話方塊樣式<br /><br />範例：**檔案總管&gt;項目屬性** | 簡短的描述性標籤可能難以<br /><br />通常不超過五個索引標籤，在一個對話方塊中調整<br /><br />如果您有一個資料列 （使用替代的圖層項技術） 太多索引標籤不適當<br /><br />不是可延伸 |  
-| 提要欄位巡覽 | 簡單的切換裝置可以容納更多的類別，比索引標籤<br /><br />類別目錄 （沒有階層） 的一般清單<br /><br />可延伸<br /><br />範例：**自訂...&gt;將命令加入** | 不適合用於水平間距，如果有少於三個群組<br /><br />工作可能是更適合下拉式清單 |  
+| 提要欄位巡覽 | 簡單的切換裝置可以容納更多的類別，比索引標籤<br /><br />類別目錄 （沒有階層） 的一般清單<br /><br />可延伸<br /><br />範例：**自訂...&gt; 將命令加入** | 不適合用於水平間距，如果有少於三個群組<br /><br />工作可能是更適合下拉式清單 |  
 | 樹狀控制項 | 允許無限制的類別<br /><br />允許群組和/或階層架構的分類<br /><br />可延伸<br /><br />範例：**工具&gt;選項** | 有很大的巢狀階層，可能會導致過多的水平捲軸<br /><br />Visual Studio 的農民的樹狀檢視 |  
 | 精靈 | 透過引導使用者完成以工作為基礎的循序步驟有助於工作完成： 精靈代表高層級的工作，個別面板代表完成整個任務所需的子工作<br /><br />當工作跨 Ui 界限，做為當使用者原本必須使用多個編輯器和工具視窗來完成工作時很有用<br /><br />當此工作需要分支時很有用<br /><br />當工作包含步驟之間的相依性時很有用<br /><br />當一個對話方塊，以減少不同類似的對話方塊數目可以呈現一個決策分岔與幾個類似的工作時很有用 | 不適用於任何不需要的循序工作流程的工作<br /><br />使用者只能成為爆滿困擾及困惑太多步驟的精靈<br /><br />精靈本質上具有有限的實際螢幕面積 |  
   
@@ -437,7 +435,7 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 ##### <a name="adaptive-ui"></a>自動調整的 UI  
 根據使用方式顯示或隱藏 UI，或自我報告的使用者體驗是必要的 UI 呈現時隱藏其他部分的另一種。 這不是建議在 Visual Studio 中，因為決定何時要顯示或隱藏 UI 的演算法可能很困難，而且規則將永遠為錯誤的情況下，某些集。  
   
-##  <a name="BKMK_Projects"></a>專案  
+##  <a name="BKMK_Projects"></a> 專案  
   
 ### <a name="projects-in-the-solution-explorer"></a>在 [方案總管] 中的專案  
 大部分的專案會歸類為參考為基礎、 目錄為基礎，或混合。 在 [方案總管] 中同時支援所有的三種類型的專案。 使用專案中的使用者經驗的根目錄會發生在這個視窗內。 雖然不同的專案節點的參考、 目錄或混合模式類型的專案，但沒有常見的互動模式應該做為起點套用之前為分散到專案特定的使用者模式。  
@@ -508,19 +506,19 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 | 任何修飾詞 | 動作 | Move | 連結 |  
 | 任何修飾詞 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
 | 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 會保留原始的項目 |  
-| 任何修飾詞 | 結果 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
+| 任何修飾詞 | 結果 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
 | Shift + 拖曳 | 動作 | Move | 不卸除 |  
 | Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 不卸除 |  
 | Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 不卸除 |  
-| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
+| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
 | Ctrl + 拖曳 | 動作 | 複製 | 不卸除 |  
 | Ctrl + 拖曳 | 目標 | 將參考加入至原始項目 | 不卸除 |  
 | Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 不卸除 |  
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
+| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
 | Ctrl + Shift + 拖曳 | 動作 | 連結 | 連結 |  
 | Ctrl + Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
 | Ctrl + Shift + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |  
-| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_LINK`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
+| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_LINK` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
 | Ctrl + Shift + 拖曳 | 注意事項 | Windows 檔案總管 中的快速鍵的拖放行為相同。 ||  
 | 剪下/貼上 | 動作 | Move | 連結 |  
 | 剪下/貼上 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
@@ -538,15 +536,15 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 | --- | --- | --- | --- |  
 | 任何修飾詞 | 動作 | Move | Move |  
 | 任何修飾詞 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |  
-| 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 刪除原始項目的參考 | | 任何修飾詞 | 結果 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
+| 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 刪除原始項目的參考 | | 任何修飾詞 | 結果 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
 | Shift + 拖曳 | 動作 | Move | Move |  
 | Shift + 拖曳 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |  
 | Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |
-| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
+| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
 | Ctrl + 拖曳 | 動作 | 複製 | 複製 |  
 | Ctrl + 拖曳 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |  
 | Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始項目的參考 |  
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_COPY`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
+| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_COPY` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |  
 | Ctrl + Shift + 拖曳 | | 不卸除 | 不卸除 |  
 | 剪下/貼上 | 動作 | Move | Move |  
 | 剪下/貼上 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |  
@@ -565,19 +563,19 @@ Specialty 「 簽章 」 對話方塊可能已設定佈景主題。 佈景主題
 | 任何修飾詞 | 動作 | Move | Move |
 | 任何修飾詞 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
 | 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 刪除原始項目的參考 |
-| 任何修飾詞 | 結果 | `DROPEFFECT_ MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE`傳回動作為`::Drop`和從儲存體中的原始位置刪除項目 |
+| 任何修飾詞 | 結果 | `DROPEFFECT_ MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE` 傳回動作為`::Drop`和從儲存體中的原始位置刪除項目 |
 | Shift + 拖曳 | 動作 | Move | Move |
 | Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
 | Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 | 
-| Shift + 拖曳 | 結果 | `DROPEFFECT_ MOVE`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE`傳回動作為`::Drop`和從儲存體中的原始位置刪除項目 |
+| Shift + 拖曳 | 結果 | `DROPEFFECT_ MOVE` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE` 傳回動作為`::Drop`和從儲存體中的原始位置刪除項目 |
 | Ctrl + 拖曳 | 動作 | 複製 | 複製 |
 | Ctrl + 拖曳 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
 | Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_ COPY`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ COPY`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |
+| Ctrl + 拖曳 | 結果 | `DROPEFFECT_ COPY` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ COPY` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |
 | Ctrl + Shift + 拖曳 | 動作 | 連結 | 連結 |
 | Ctrl + Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 將參考加入至原始的來源項目 |
 | Ctrl + Shift + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
-| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_ LINK`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ LINK`傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |
+| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_ LINK` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ LINK` 傳回動作為`::Drop`和項目會保留在儲存體中的原始位置 |
 | 剪下/貼上 | 動作 | Move | Move |
 | 剪下/貼上 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
 | 剪下/貼上 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |

@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 使用快速鍵編輯器延伸模組與 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用快速鍵編輯器延伸模組與 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60cfb35e2c3acbe3b52f460b040dd5c220e6b045
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說： 使用快速鍵編輯器延伸模組與
 在您的編輯器延伸模組，您可以回應快速鍵。 下列逐步解說示範如何使用快速鍵將檢視裝飾加入文字檢視。 本逐步解說根據檢視區裝飾編輯器範本，並可讓您使用新增裝飾 + 字元。  

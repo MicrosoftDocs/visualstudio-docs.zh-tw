@@ -1,28 +1,26 @@
 ---
-title: "適用於 Visual Studio 的版面配置 |Microsoft 文件"
-ms.custom: 
+title: 適用於 Visual Studio 的版面配置 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 Visual Studio 對話方塊多數[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話遵循標準[Windows 桌面對話方塊版面配置原則](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)。 隨著 Visual Studio 會移到重新整理其 UI，一些更重要的對話方塊會有新的設計，以建立它們，產品定義體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>公用程式的對話方塊版面配置  
+##  <a name="BKMK_UtilityDialogLayout"></a> 公用程式的對話方塊版面配置  
   
 -   公用程式 對話方塊中的所有控制項應該在左上角中啟動，並向下傳送。  
   
@@ -104,7 +102,7 @@ Visual Studio 對話方塊多數[公用程式對話方塊版面配置](../../ext
   
 -   行的長度必須是剖析，並讀取使用者的舒適的寬度。 中度對話方塊應該超過 550 像素寬。  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>內部的命令按鈕  
+####  <a name="BKMK_InteriorCommandButtons"></a> 內部的命令按鈕  
  在更複雜的對話，內部的控制項可能有它自己相關的按鈕，可能會影響對話方塊的 [認可] 按鈕位於何處。  
   
 -   使用內部的垂直對齊方式 （資料行） 的按鈕時**確定**/**取消**在右下角的水平方向。  
@@ -124,7 +122,7 @@ Visual Studio 對話方塊多數[公用程式對話方塊版面配置](../../ext
 #### <a name="browse-button"></a>[瀏覽...]按鈕  
  **[瀏覽...]**依照文字方塊中的按鈕應該完整拼法 [瀏覽] 以完整模式，包括省略符號。 如果空間緊密，或有多個**[瀏覽...]**在畫面中，按鈕的按鈕可縮減為的省略符號。  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>佈景主題對話方塊版面配置  
+##  <a name="BKMK_ThemedDialogLayout"></a> 佈景主題對話方塊版面配置  
  在 Visual Studio 佈景主題對話方塊具有較淡的外觀，並提供更多的泛空白字元。 印刷樣式提供強調越來越感興趣，提供更開啟行距和各式各樣的字型大小和加權。 如果可行，chrome 和標題列已減少或移除。 這些對話方塊的版面配置應該遵循這個基本模式：  
   
 1.  對話方塊的背景是白色。  
@@ -158,7 +156,7 @@ Visual Studio 對話方塊多數[公用程式對話方塊版面配置](../../ext
   
  **圖 08.01-k： 佈景主題對話方塊色彩**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 的應用程式模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
  [控制項 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
  [對話方塊 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)

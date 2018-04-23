@@ -1,27 +1,23 @@
 ---
-title: "專案子類型設計 |Microsoft 文件"
-ms.custom: 
+title: 專案子類型設計 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>專案子類型設計
 專案子類型可讓 Vspackage 延伸 Microsoft Build Engine (MSBuild) 為基礎的專案。 使用彙總可讓您重複使用的核心管理專案系統中實作大量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]卻仍然來自訂特定案例的行為。  
@@ -63,7 +59,7 @@ ms.lasthandoff: 12/22/2017
  多層級專案子類型彙總包含三個層級，基底的專案，專案子類型、 依彙總，然後進一步彙總進階的專案子類型。 圖例著重在某些支援介面的一部分提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案子類型的架構。  
   
 ##### <a name="deployment-mechanisms"></a>部署機制  
- 基底專案系統的許多功能增強專案子類型，包括部署機制。 藉由實作介面組態專案子類型會影響的部署機制 (例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>)，藉由呼叫 QueryInterface 上擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>。 在此案例中的專案子類型和進階的專案子類型加入不同的設定實作，呼叫基底專案`QueryInterface`進階的專案子類型上`IUnknown`。 如果內部專案子類型包含基底的專案要求的設定實作，進階的專案子類型會委派給內部專案子類型所提供的實作。 做為保存到另一個彙總層級狀態的機制，實作的專案子類型的所有層級<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>保存非組建將 XML 資料相關的專案檔。 如需詳細資訊，請參閱[MSBuild 專案檔中的保存資料](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。 <xref:EnvDTE80.IInternalExtenderProvider>會實作為擷取專案子類型從 automation 擴充項的機制。  
+ 基底專案系統的許多功能增強專案子類型，包括部署機制。 藉由實作介面組態專案子類型會影響的部署機制 (例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>)，藉由呼叫 QueryInterface 上擷取<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>。 在此案例中的專案子類型和進階的專案子類型加入不同的設定實作，呼叫基底專案`QueryInterface`進階的專案子類型上`IUnknown`。 如果內部專案子類型包含基底的專案要求的設定實作，進階的專案子類型會委派給內部專案子類型所提供的實作。 做為保存到另一個彙總層級狀態的機制，實作的專案子類型的所有層級<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>保存非組建將 XML 資料相關的專案檔。 如需詳細資訊，請參閱[MSBuild 專案檔中的保存資料](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。 <xref:EnvDTE80.IInternalExtenderProvider> 會實作為擷取專案子類型從 automation 擴充項的機制。  
   
  下圖著重於 automation 擴充項實作，專案設定瀏覽物件特別的是，用來擴充基底專案系統專案子類型。  
   
@@ -93,6 +89,6 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|允許將專案檔 （.vbproj 或.csproj） 任意結構化的 XML 資料保存的專案子類型。 這項資料看不到 MSBuild。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|可讓專案子類型：<br /><br /> 新增新的 MSBuild 屬性，以保存。<br />-從 MSBuild 中移除不必要的屬性。<br />MSBuild 屬性的目前值的查詢。<br />-變更 MSBuild 屬性的目前值。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

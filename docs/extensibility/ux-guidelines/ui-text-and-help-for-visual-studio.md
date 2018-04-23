@@ -1,26 +1,24 @@
 ---
-title: "UI 文字和 Visual Studio 的說明 |Microsoft 文件"
-ms.custom: 
+title: UI 文字和 Visual Studio 的說明 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 697c794d17f3004b0f37e668ff67afb703490e18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字和 Visual Studio 的說明
-##  <a name="BKMK_UITextAndTerminology"></a>UI 文字和術語  
+##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
  易於文字是有效的 UI 很重要的。 軟體使用者傾向於讀取標籤第一次，也就是那些最相關的完成工作的必要性。 靜態文字會讀取較少的頻率。 規劃使用者以他們工作的工作階段開頭後面接著這個按大致順序 UI 讀取整個視窗的快速掃描：  
   
 1.  在中央互動式控制項  
@@ -428,7 +426,7 @@ public class HelpForm : Form
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [字型及格式設定適用於 Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [適用於 Visual Studio 的版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
  [適用於 Visual Studio 的通知和進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

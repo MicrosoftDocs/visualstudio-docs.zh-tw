@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 將內容類型連結至檔案的副檔名 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 將內容類型連結至檔案的副檔名 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df3bab0a453f4f8edcff3be86e5a767065b59da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至檔案的副檔名
 您可以定義您自己的內容類型，然後連結它透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能檔案的副檔名。 在某些情況下，檔案名稱的副檔名已經定義語言服務;不過，使用 MEF 您仍必須將它連結至內容類型。  
@@ -107,5 +103,5 @@ ms.lasthandoff: 12/22/2017
     [ContentType("hid")]  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

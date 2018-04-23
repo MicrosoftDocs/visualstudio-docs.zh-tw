@@ -1,27 +1,25 @@
 ---
-title: "實驗執行個體 |Microsoft 文件"
-ms.custom: 
+title: 實驗執行個體 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a656baf951e573a5913960b19c1b583797de090f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c80c071866e46528fe7edd287e082df3af166973
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 為了保護您的 Visual Studio 開發環境，從未經測試的應用程式，可能會變更，VSSDK 會提供您可用來試用實驗空間。 您像往常一樣，使用 Visual Studio 來開發新的應用程式，但您執行使用此實驗執行個體。  

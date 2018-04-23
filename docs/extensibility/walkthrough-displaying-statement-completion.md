@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 顯示陳述式完成 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 顯示陳述式完成 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdc79275dd99c502533c82665741b84620be928
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>逐步解說： 顯示陳述式完成
 您可以實作以語言為基礎的陳述式完成定義您要提供完成的識別項，然後觸發完成的工作階段。 您可以定義的語言服務內容中的陳述式完成、 定義您自己檔案的副檔名和內容類型，然後顯示 完成，只要該類型，或完成現有的內容類型的觸發程序 — 例如，「 純文字 」。 本逐步解說示範如何觸發陳述式完成，「 純文字"內容型別，也就是文字檔案的內容類型。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  
@@ -207,5 +203,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  當您第一次輸入"a"，然後"d 的"，應該會顯示包含 「 加法 」 和 「 調整 」 的清單。 請注意已選取 新增。 當您輸入另一個"d"時，此清單應包含只有 「 加法 」，其中已選取。 您可以按下空格鍵、 Tab 或 Enter 鍵，認可 「 加法 」，或輸入任何其他索引鍵或 Esc 來關閉清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

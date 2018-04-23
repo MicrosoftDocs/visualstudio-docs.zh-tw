@@ -1,29 +1,25 @@
 ---
-title: "SccOpenProject 函式 |Microsoft 文件"
-ms.custom: 
+title: SccOpenProject 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 此函式開啟現有的原始檔控制專案，或建立一個新。  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in]從原始檔控制外掛程式輸出的文字顯示選擇性的回呼函式。  
   
  將 dwFlags  
- [in]訊號是否需要如果專案是未知來源建立新的專案控制外掛程式。 值可以是組合`SCC_OP_CREATEIFNEW`和`SCC_OP_SILENTOPEN.`  
+ [in]訊號是否需要如果專案是未知來源建立新的專案控制外掛程式。 值可以是組合`SCC_OP_CREATEIFNEW`和 `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>傳回值  
  此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  第一個 IDE 可能需要執行的動作可能會呼叫`SccOpenProject`函式或[SccGetProjPath](../extensibility/sccgetprojpath-function.md)。 基於這個理由，兩者都有相同`lpUser`參數。  
   
- `lpAuxProjPath`和`lpProjName`會讀取方案檔，或從呼叫傳回`SccGetProjPath`函式。 這些參數包含原始檔控制外掛程式將與專案相關聯的字串，並只對外掛程式都具有意義。 如果沒有這類字串中的方案檔，而且不瀏覽提示使用者 (這會傳回字串，以透過`SccGetProjPath`函式)，IDE 會將空字串傳遞兩個`lpAuxProjPath`和`lpProjName`，並且預期會更新這些值根據外掛程式時，此函式會傳回。  
+ `lpAuxProjPath` 和`lpProjName`會讀取方案檔，或從呼叫傳回`SccGetProjPath`函式。 這些參數包含原始檔控制外掛程式將與專案相關聯的字串，並只對外掛程式都具有意義。 如果沒有這類字串中的方案檔，而且不瀏覽提示使用者 (這會傳回字串，以透過`SccGetProjPath`函式)，IDE 會將空字串傳遞兩個`lpAuxProjPath`和`lpProjName`，並且預期會更新這些值根據外掛程式時，此函式會傳回。  
   
- `lpTextOutProc`為原始檔控制外掛程式用來顯示命令的結果輸出至 IDE 所提供的回呼函式的指標。 此回呼函式中將詳細說明[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
+ `lpTextOutProc` 為原始檔控制外掛程式用來顯示命令的結果輸出至 IDE 所提供的回呼函式的指標。 此回呼函式中將詳細說明[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。  
   
 > [!NOTE]
 >  如果原始檔控制外掛程式想要利用這一點，它必須有設定`SCC_CAP_TEXTOUT`加上旗標[SccInitialize](../extensibility/sccinitialize-function.md)。 如果未設定該旗標，或 IDE 不支援這項功能，`lpTextOutProc`將`NULL`。  
@@ -111,7 +107,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  `SCC_CAP_REENTRANT`位元原始檔控制外掛程式 API 1.1 版中引進。 未設定，或在 1.0 版中，會被忽略，並假設為 nonreentrant 所有 1.0 版原始檔控制外掛程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCloseProject](../extensibility/scccloseproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)   

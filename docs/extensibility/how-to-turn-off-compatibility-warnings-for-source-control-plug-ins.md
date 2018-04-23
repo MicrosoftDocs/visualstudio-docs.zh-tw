@@ -1,26 +1,24 @@
 ---
-title: "關閉原始檔控制外掛程式的相容性警告 |Microsoft 文件"
-ms.custom: 
+title: 關閉原始檔控制外掛程式的相容性警告 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 622c0d4a75289e5025051b339b959a6b0b56442d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2d3cffbd6a8b6c21aa6e958495b88eb51a5724a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉原始檔控制外掛程式的相容性警告
 使用原始檔控制中的時，使用者可能會看到幾個相容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 顯示的警告取決於原始檔控制外掛程式的功能，而且可以停用，詳細資料如下。  
@@ -45,5 +43,5 @@ ms.lasthandoff: 12/22/2017
   
      建議您最好支援重新進入 (`SCC_CAP_REENTRANT`功能); 這樣做將會移除這個警告。 不過，如果這項支援不可行，可以設定這些登錄項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [功能旗標](../extensibility/capability-flags.md)

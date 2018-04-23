@@ -2,18 +2,18 @@
 title: 開始使用 Roslyn 分析器 |Microsoft 文件
 ms.date: 04/02/2018
 ms.technology: vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0546604c60a310531fb101515b08bf18ed3d98e6
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 7b887703343dab10f9cc1f0cbf8e2e2b37b0065b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 

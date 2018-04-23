@@ -1,27 +1,23 @@
 ---
-title: "逐步解說： 顯示對稱的括號 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 顯示對稱的括號 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 370340246cd75e53580d1ac2b6c591f0854cb23e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>逐步解說： 顯示對稱的括號
 您可以實作語言為基礎的功能，例如定義您想要比對，在大括的號，然後將文字標記標記加入至對稱的括號，當插入號位於其中一個大括號比對的大括號。 您可以定義大括號中的內容語言，或您可以定義您自己的檔案名稱副檔名和內容類型，並將標籤套用到僅該型別，或您可以將標籤套用到現有的內容類型 （例如"text")。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對括號。  
@@ -128,5 +124,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  當您開啟的大括號前面插入號時，該括號和關閉對稱的大括號應該會反白顯示。 當您將游標放只在關閉的大括號之後時，該括號和相符的左大括號應該會反白顯示。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

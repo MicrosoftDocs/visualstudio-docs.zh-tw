@@ -1,27 +1,23 @@
 ---
-title: "加入項目來加入新項目對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 加入項目來加入新項目對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>加入項目來加入新項目對話方塊
 新增項目到的程序**加入新項目**對話方塊開頭的登錄機碼。 AddItemTemplates > 一節中所示的下列登錄項目，包含可在哪些項目中的目錄名稱與路徑**加入新項目**放 對話方塊。  
@@ -69,7 +65,7 @@ ms.lasthandoff: 12/22/2017
  例如，在 Visual Basic 專案中，您可能會有 Web 專案和用戶端專案。 Web form 不實用的項目新增至用戶端專案，而 windows form 不實用的項目加入至 Web 伺服器專案。 因此，您可以建立一個包含所有的這兩種類型的專案檔案的範本目錄。 然後藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>，您可以隱藏的項目不會顯示根據專案或專案中的專案設定的類型。  
   
 ## <a name="filtering-project-items"></a>篩選的專案項目  
- `IVsFilterAddProjectItemDlg2`提供下列方式篩選的樹狀目錄 （左窗格） 專案檔 （右窗格） 中的項目：  
+ `IVsFilterAddProjectItemDlg2` 提供下列方式篩選的樹狀目錄 （左窗格） 專案檔 （右窗格） 中的項目：  
   
 -   所提供的當地語系化名稱 （包含在.vsdir 檔案對話方塊中顯示的標題） `IVsFilterAddProjectItemDlg`。  
   
@@ -81,7 +77,7 @@ ms.lasthandoff: 12/22/2017
   
  如果您實作此篩選器功能時，您沒有對應的每個項目應該隱藏資料表。 您只可以將項目分類為類型，並置於.vsdir 或多個檔案的分類。 然後您可以隱藏任何實作介面中有某個特定分類的項目。 如此一來，您可以在中的項目**加入新項目**對話方塊方塊動態根據專案中的狀態。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
  [物件，通常會用來擴充專案項 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   

@@ -1,26 +1,24 @@
 ---
-title: "輸入視覺化檢視和自訂檢視器 |Microsoft 文件"
-ms.custom: 
+title: 輸入視覺化檢視和自訂檢視器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 91aa122c96230c7fd34ce2b65925b9166883def6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d419130cd93c6cc2f7dcff132fdafc8986bfd30a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>類型的視覺化檢視和自訂檢視器
 類型的視覺化檢視是非常特定的格式顯示一段資料的元件。 這種格式是完全由實作者的視覺化檢視，是使用者或協力廠商供應商的視覺化檢視。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>自訂檢視器中的運算式評估工具支援  
  EE 也支援自訂檢視器中 EE 本身提供的程式碼檢視的資料類型。 自訂檢視器會實作[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)想要使用介面，用來處理的任何格式顯示資料的所有責任; 檢視器顯示的完整控制權，而且甚至可以允許資料修改。 EE 所提供的任何自訂檢視器隨附 EE 時隨附產品。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [運算式評估工具](../../extensibility/debugger/expression-evaluator.md)   
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   

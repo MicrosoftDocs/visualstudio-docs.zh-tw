@@ -1,29 +1,25 @@
 ---
-title: "SccDirDiff 函式 |Microsoft 文件"
-ms.custom: 
+title: SccDirDiff 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccDirDiff
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d2bea7816375da1131f557ebcbe206056f347f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示目前的本機目錄上的用戶端磁碟 」 和 「 原始檔控制下對應的專案之間的差異。  
@@ -86,5 +82,5 @@ SCCRTN SccDirDiff(
 > [!NOTE]
 >  此函式會使用相同的命令旗標，表示[SccDiff](../extensibility/sccdiff-function.md)。 不過，可以選擇原始檔控制外掛程式不支援目錄的 「 快速差異 」 作業。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,29 +1,25 @@
 ---
-title: "SccCreateSubProject 函式 |Microsoft 文件"
-ms.custom: 
+title: SccCreateSubProject 函式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97993833d08479fbf518fb5b4852f46cc34f9bc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa87be4c9d22aca46814e8fa284fda9d587386a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 這個函式具有指定名稱所指定的現有父專案下建立子專案`lpParentProjPath`引數。  
@@ -97,7 +93,7 @@ SCCRTN SccCreateSubProject(
   
  如果登錄項目設為 dword: 00000001，Visual Studio 不會嘗試使用這些新的函式，並加入原始檔控制中的這些操作可在舊版的 Visual Studio 中所顯示的一樣。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

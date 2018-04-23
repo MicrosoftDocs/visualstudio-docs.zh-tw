@@ -2,26 +2,22 @@
 title: 在舊版語言服務中的大綱和隱藏文字 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining, supporting in native code
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
-caps.latest.revision: 5
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0435225f30f5f596aed4631f0130b94cd3b273ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 509b2a27444847fd5ae20dbf0ecee89e05357456
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>在舊版語言服務中的大綱和隱藏文字
 大綱可以讓單一資料行摺疊的文字行的順序。 例如，c + + 中的所有方法可摺都疊至單一行中顯示方法簽章。 隱藏的文字是的可顯示或隱藏的文字行的順序。  

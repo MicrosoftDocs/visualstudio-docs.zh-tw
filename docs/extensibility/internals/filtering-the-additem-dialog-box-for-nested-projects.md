@@ -1,26 +1,24 @@
 ---
-title: "篩選巢狀專案 AddItem 對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 篩選巢狀專案 AddItem 對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - filtering, nested projects
 - nested projects, AddItem dialog box filtering
 ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e1f5fc7695df028330d0e53faebefc178f499da1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50a9491dad92e4f1dd090a6de1ebf48ef1b88085
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>篩選巢狀專案 AddItem 對話方塊
 當您顯示**AddItem**巢狀專案中，父專案 對話方塊可以控制哪些項目會顯示在對話方塊中。  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
  `IVsFilterAddProjectItemDlg`介面也可以實作依類別篩選。 如需詳細資訊，請參閱[將項目加入新項目 對話方塊加入](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)和[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [加入項目來加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   

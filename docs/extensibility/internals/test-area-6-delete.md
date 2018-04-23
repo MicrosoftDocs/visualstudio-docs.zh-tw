@@ -1,26 +1,24 @@
 ---
-title: "測試區域 6： 刪除 |Microsoft 文件"
-ms.custom: 
+title: 測試區域 6： 刪除 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97fc6ab9746e7ef2188c78dc77ec357f7d415a42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-6-delete"></a>測試區域 6： 刪除
 這個原始檔控制外掛程式的測試區域涵蓋刪除動作。  
@@ -56,5 +54,5 @@ ms.lasthandoff: 12/22/2017
 |刪除檔案系統的 Web 專案|1.建立檔案系統的 Web 專案 （使用瀏覽按鈕，以指定的 UNC 路徑）。<br />2.將方案加入原始檔控制。<br />3.從方案中移除整個專案。<br />4.本機 Web 專案重複步驟 1 到 3 （執行整個程式碼的不同路徑但具有相同的外部介面和行為）。|常見的預期的行為。|  
 |從檔案系統網站專案刪除檔案|1.建立檔案系統的 Web 專案。<br />2.將方案加入原始檔控制。<br />3.從專案刪除檔案。<br />4.本機 Web 專案重複步驟 1 到 3 （執行整個程式碼的不同路徑但具有相同的外部介面和行為）。|常見的預期的行為。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式測試指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,27 +1,23 @@
 ---
-title: "語言服務內容，使用提供的舊版應用程式開發介面 |Microsoft 文件"
-ms.custom: 
+title: 語言服務內容，使用提供的舊版應用程式開發介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dbee7d2998170277369f48c3b912307d2c7e414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3556fcce3d14d5069854c64d81cb780123a979d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>語言服務內容，使用提供的舊版應用程式開發介面
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供的文字標記的內容，或提供所有的使用者內容。 此處所述每之間的差異。  

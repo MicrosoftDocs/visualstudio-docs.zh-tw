@@ -1,28 +1,26 @@
 ---
-title: "使用者的意見反應 |Microsoft 文件"
-ms.custom: 
+title: 使用者的意見反應 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user model feedback
 - environment, context
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3a5e31eb2acb50d9803bedd77e48d0821cbaea61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 629d12974a52bca30c0db96e838c5c731ae1abf7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="feedback-to-the-user"></a>意見反應給使用者
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 中，有關可用的功能根據使用者的目前選取範圍和全域選取範圍內容的視覺化回饋。 下表列出可在不同的選取項目內容中的功能。  
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 -   使用中階層視窗中，通常是**方案總管 中**，和其標題列更新，以反映目前的內容和即時線上**專案**功能表命令現在會套用至使用中的 Web應用程式專案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [選擇內容物件](../../extensibility/internals/selection-context-objects.md)   
  [階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)

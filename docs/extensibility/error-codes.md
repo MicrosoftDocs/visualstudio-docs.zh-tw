@@ -1,27 +1,25 @@
 ---
-title: "錯誤代碼 |Microsoft 文件"
-ms.custom: 
+title: 錯誤代碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6feb9bfa3b2adb437fd03b5c0b8d4448df4b6f50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-codes"></a>錯誤碼
 原始檔控制外掛程式 API 函式會傳回錯誤，預期為下列錯誤碼。 所有的錯誤是負數，警告或參考用錯誤代碼是正數，以及成功是 0。  
@@ -83,5 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
   
  原始檔控制外掛程式應該在工作資料夾中進行任何假設檔案的權限，即使外掛程式有唯讀檔案的某些作業期間。 可以移動、 刪除及隨插即用中的控制之外變更過的工作資料夾中的檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

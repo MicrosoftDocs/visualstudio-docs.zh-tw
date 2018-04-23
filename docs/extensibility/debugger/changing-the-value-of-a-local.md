@@ -1,26 +1,24 @@
 ---
-title: "變更本機值 |Microsoft 文件"
-ms.custom: 
+title: 變更本機值 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 422d1702f319db6da21892bcaa1bd50adad7909d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changing-the-value-of-a-local"></a>變更本機值
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  使用者輸入新值之後，Visual Studio 會呼叫[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)本機與相關聯的物件。  
   
-2.  `IDebugProperty2::SetValueAsString`會執行下列工作：  
+2.  `IDebugProperty2::SetValueAsString` 會執行下列工作：  
   
     1.  會評估用來產生值的字串。  
   
@@ -50,6 +48,6 @@ ms.lasthandoff: 12/22/2017
  [變更值的範例實作](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  使用 MyCEE 範例逐步變更值的程序。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)

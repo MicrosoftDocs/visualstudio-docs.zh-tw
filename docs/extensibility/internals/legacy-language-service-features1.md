@@ -1,27 +1,23 @@
 ---
-title: "舊版語言服務 Features1 |Microsoft 文件"
-ms.custom: 
+title: 舊版語言服務 Features1 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12acd0690c11e61baedf358dec193e4f6da601e8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c931147d20454a920e20cec61e1f6000a9b043d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 Managed 的封裝架構 (MPF) 語言服務可支援一或多個[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能，例如語法反白顯示、 IntelliSense 和中斷點驗證。 每項功能可以獨立於其他實作，但所有需要的剖析器和除了語法反白顯示，這需要掃描程式的掃描器。  

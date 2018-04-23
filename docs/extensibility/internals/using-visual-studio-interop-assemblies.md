@@ -1,27 +1,25 @@
 ---
-title: "使用 Visual Studio Interop 組件 |Microsoft 文件"
-ms.custom: 
+title: 使用 Visual Studio Interop 組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，提供 Visual Studio 擴充性。 有一些直線的 COM 介面和其 interop 的版本之間的差異。 例如，Hresult 通常會表示為 int 值需要處理的例外狀況，以相同的方式和參數 (特別是 out 參數） 的處理方式不同。  
@@ -32,7 +30,7 @@ Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，�
  根據預設，<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>傳遞的值小於零的 HRESULT 時擲回例外狀況。 在這類 Hresult 是可接受的值，應該擲回任何例外狀況的情況下，其他 hresult 值應該傳遞至<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>測試值之後。 如果正在測試的 HRESULT 符合明確傳遞至任何 HRESULT 值<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>，擲回任何例外狀況。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants>類別包含常數的常見的 HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.S_OK>和<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants>也提供<xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A>和<xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>方法，其對應至在 COM 中的 SUCCEEDED 和 FAILED 巨集  
+>  <xref:Microsoft.VisualStudio.VSConstants>類別包含常數的常見的 HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.S_OK>和<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]HRESULT，比方說，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 也提供<xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A>和<xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>方法，其對應至在 COM 中的 SUCCEEDED 和 FAILED 巨集  
   
  例如，請考慮下列函式呼叫，其中<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>是可接受的傳回值，但任何其他 HRESULT 小於零代表發生錯誤。  
   
@@ -47,7 +45,7 @@ Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，�
 ## <a name="returning-hresults-to-com-from-managed-code"></a>透過 Managed 程式碼將 HRESULT 傳回給 COM  
  如果沒有發生例外狀況，管理程式碼傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>至呼叫它的 COM 函式。 COM Interop 支援透過 Managed 程式碼進行強類型處理的常見例外狀況。 例如，收到無法接受方法`null`引數會擲回<xref:System.ArgumentNullException>。  
   
- 如果您不確定哪個例外狀況擲回，但您知道 HRESULT 您想要傳回至 COM，您可以使用<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>方法會擲回適當的例外狀況。 這甚至適用於非標準的錯誤，例如<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>。 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>嘗試的 HRESULT 對應傳送給強類型例外狀況。 如果失敗，則會改為擲回一般 COM 例外狀況。 最終的結果會是 HRESULT 您傳遞至<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>從 managed 程式碼會傳回給呼叫它的 COM 函式。  
+ 如果您不確定哪個例外狀況擲回，但您知道 HRESULT 您想要傳回至 COM，您可以使用<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>方法會擲回適當的例外狀況。 這甚至適用於非標準的錯誤，例如<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>。 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 嘗試的 HRESULT 對應傳送給強類型例外狀況。 如果失敗，則會改為擲回一般 COM 例外狀況。 最終的結果會是 HRESULT 您傳遞至<xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>從 managed 程式碼會傳回給呼叫它的 COM 函式。  
   
 > [!NOTE]
 >  例外狀況會危害效能並用來指出異常程式狀況。 經常發生的狀況應該透過內嵌方式處理，而不是擲回例外狀況。  
@@ -134,5 +132,5 @@ else
   
  呼叫此類型的介面的 managed 的方法應該提取從 [out] 陣列的第一個項目。 可以處理這個項目，就好像`retval`從對應的 COM 介面傳回值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

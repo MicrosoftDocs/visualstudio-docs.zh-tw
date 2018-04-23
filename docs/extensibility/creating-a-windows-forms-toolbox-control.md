@@ -1,27 +1,25 @@
 ---
-title: "建立 Windows Forms 工具箱控制項 |Microsoft 文件"
-ms.custom: 
+title: 建立 Windows Forms 工具箱控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6a7d5bae07d3596902f94417cda20c3d40feed2f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 隨附於 Visual Studio 擴充性工具 (VS SDK) 的 Windows Forms 工具箱控制項項目範本可讓您建立的控制項，會自動加入至**工具箱**時安裝擴充功能。 本主題示範如何使用範本來建立可散發給其他使用者的簡單的計數器控制項。  
@@ -212,7 +210,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="next-steps"></a>後續步驟  
  當您建置 [工具箱]  控制項時，Visual Studio 會在專案的 \bin\debug\ 資料夾中建立名為 *ProjectName*.vsix 的檔案。 您可以將 .vsix 檔案上傳到到網路或網站以部署控制項。 控制當使用者開啟.vsix 檔案時，會安裝並加入至 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳.vsix 檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，讓使用者可以在瀏覽來尋找它**工具 / 擴充功能和更新**對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 的其他組件](../extensibility/extending-other-parts-of-visual-studio.md)   
  [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)   
  [擴充 Visual Studio 的其他組件](../extensibility/extending-other-parts-of-visual-studio.md)   

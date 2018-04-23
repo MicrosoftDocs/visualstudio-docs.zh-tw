@@ -1,26 +1,24 @@
 ---
-title: "RegPkg 公用程式 |Microsoft 文件"
-ms.custom: 
+title: RegPkg 公用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c4a4a3481b6ff1a5b8af0581e2c04602073adeae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d677aaf155e533c27a775f3995b53dd59b65385
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="regpkg-utility"></a>RegPkg 公用程式
 > [!NOTE]
@@ -39,7 +37,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /root:root  
  執行指定之下註冊  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根節點。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根節點。  
   
  /regfile:FileName  
  建立的.reg 檔案，而不會更新登錄。  不能與 /vrgfile 或 /rgsfile /wixfile。  
@@ -67,6 +65,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  /regfile 或 /vrgfile 或 /rgsfile 或 /wixfile。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPackage](../../extensibility/internals/vspackages.md)  
  [對 RegPkg 封裝註冊進行疑難排解](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
