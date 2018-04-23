@@ -1,12 +1,9 @@
 ---
-title: "程式碼編輯器中檢視資料提示方塊中的資料值 |Microsoft 文件"
-ms.custom: 
+title: 程式碼編輯器中檢視資料提示方塊中的資料值 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b260cd8a4cd102683c4342d5f199102660cfbe90
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊程式碼編輯器中的檢視資料值
 資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。
@@ -75,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>若要展開變數以檢視項目  
   
--   在資料提示方塊中，將滑鼠指標放 **+** 前面的變數名稱的符號。  
+-   在資料提示方塊中，將滑鼠指標放**+**前面的變數名稱的符號。  
   
     變數就會展開並以樹狀目錄格式來顯示項目。
 
@@ -139,7 +136,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  使用對話方塊來尋找您想要開啟，然後按一下的 XML 檔案**確定**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   

@@ -2,12 +2,8 @@
 title: 格式規範，在偵錯工具 （c + +） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +24,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C + + 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。  
@@ -76,18 +71,18 @@ int main() {
 |x<br /><br /> **h**|十六進位整數|102|0xcccccccc|  
 |X<br /><br /> **H**|十六進位整數|102|0xcccccccc|  
 |c|單一字元|0x0065, c|101 'e'|  
-|秒|const char* 字串|\<location> "hello world"|"hello world"|  
-|**sb**|const char * 字串 （沒有引號）|\<location> "hello world"|hello world|  
+|秒|const char* 字串|\<位置 >"hello world"|"hello world"|  
+|**sb**|const char * 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
 |s8|UTF-8 字串|\<位置 >"This is utf-8 咖啡杯 â˜•"|"This is utf-8 咖啡杯 ☕"|
-|**s8b**|Utf-8 字串 （沒有引號）|\<location> "hello world"|hello world|  
-|su|Unicode （utf-16 編碼） 字串|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode （utf-16 編碼） 字串 （沒有引號）|\<location> L"hello world"|hello world|  
-|bstr|BSTR 字串|\<location> L"hello world"|L"hello world"|  
+|**s8b**|Utf-8 字串 （沒有引號）|\<位置 >"hello world"|hello world|  
+|su|Unicode （utf-16 編碼） 字串|\<位置 > L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode （utf-16 編碼） 字串 （沒有引號）|\<位置 > L"hello world"|hello world|  
+|bstr|BSTR 字串|\<位置 > L"hello world"|L"hello world"|  
 |env|環境區塊 （雙 null 終止字串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32 字串|\<location> U"hello world"|u"hello world"|  
-|**s32b**|Utf-32 字串 (沒有引號)|\<location> U"hello world"|hello world|  
+|**s32**|UTF-32 字串|\<位置 > U"hello world"|u"hello world"|  
+|**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
-|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<location>{\<first member>}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
+|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置 > {\<第一個成員 >}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
 |**na**|隱藏物件指標的記憶體位址。|\<位置 >，{成員 = 值...}|{member=value...}|  
 |**nd**|只顯示基底類別資訊，忽略衍生類別|`(Shape*) square` 包含基底類別和衍生類別資訊|只顯示基底類別資訊|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
