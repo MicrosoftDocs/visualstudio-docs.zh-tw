@@ -1,12 +1,9 @@
 ---
-title: "&lt;檔案&gt;元素 （ClickOnce 應用程式） |Microsoft 文件"
-ms.custom: 
+title: '&lt;檔案&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;元素 （ClickOnce 應用程式）
 識別所有非組件檔案下載和使用的應用程式。  
@@ -95,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 |`name`|必要。 識別檔案的名稱。|  
 |`size`|必要。 指定的大小，以位元組為單位的檔案。|  
 |`group`|選擇性的如果`optional`屬性沒有指定或設為`false`; 若`optional`是`true`。 這個檔案所屬的群組名稱。 此名稱可以是，開發人員所選擇的任何 Unicode 字串值，而且用於下載檔案的要求<xref:System.Deployment.Application.ApplicationDeployment>類別。|  
-|`optional`|選擇性。 指定這個檔案必須下載第一個應用程式時執行，或是否檔案應該位於只能在伺服器上的應用程式依需求要求之前。 如果`false`或未定義，下載檔案時第一次執行或安裝應用程式。 如果`true`、`group`必須指定有效的應用程式資訊清單。 `optional`不可為 true 如果`writeableType`指定值的`applicationData`。|  
+|`optional`|選擇性。 指定這個檔案必須下載第一個應用程式時執行，或是否檔案應該位於只能在伺服器上的應用程式依需求要求之前。 如果`false`或未定義，下載檔案時第一次執行或安裝應用程式。 如果`true`、`group`必須指定有效的應用程式資訊清單。 `optional` 不可為 true 如果`writeableType`指定值的`applicationData`。|  
 |`writeableType`|選擇性。 指定這個檔案是一個資料檔案。 目前唯一有效的值是`applicationData`。|  
   
 ## <a name="typelib"></a>型別程式庫  
@@ -160,7 +157,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="hash"></a>雜湊  
  `hash`項目是選擇性的子系`file`項目。 `hash`項目沒有任何屬性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性檢查時，使用應用程式中的所有檔案的演算式雜湊，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安全性檢查時，使用應用程式中的所有檔案的演算式雜湊，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
   
  如果資訊清單包含沒有雜湊的檔案，該資訊清單不能以數位方式簽署，因為使用者無法驗證未雜湊檔案的內容。  
   
@@ -202,5 +199,5 @@ ms.lasthandoff: 12/22/2017
 </file>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)
