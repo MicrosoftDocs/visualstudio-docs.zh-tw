@@ -1,10 +1,8 @@
 ---
-title: CA1052： 靜態預留位置類型應該為密封 |Microsoft 文件
-ms.custom: ''
+title: CA1052：靜態預留位置類型應該為密封的
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
 - CA1052
@@ -17,49 +15,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc3954c4c446ff578790e92bc60dd97e42a0d8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3866b303414b63cb073d7b548243cede1be1cea7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：靜態預留位置類型應該為密封的
-|||  
-|-|-|  
-|TypeName|StaticHolderTypesShouldBeSealed|  
-|CheckId|CA1052|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 公用或受保護的類型只包含靜態成員宣告，且不使用[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾詞。  
-  
-## <a name="rule-description"></a>規則描述  
- 這項規則假設，只包含靜態成員的類型不是繼承，因為類型不提供任何會覆寫衍生類型中的功能。 不是繼承的型別應該用來標記`sealed`修飾詞，以禁止使用它做為基底類型。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，將這個類型做為標記`sealed`。 如果您的目標[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更新版本，較佳的方法是標示為型別`static`。 這種方式，您可以避免必須宣告以防止建立類別的私用建構函式。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 只有型別設計為繼承，則隱藏此規則的警告。 如果沒有`sealed`修飾詞建議的類型是有用的基底類型。  
-  
-## <a name="example-of-a-violation"></a>發生違規的範例  
-  
-### <a name="description"></a>描述  
- 下列範例顯示違反規則的類型。  
-  
-### <a name="code"></a>程式碼  
+|||
+|-|-|
+|TypeName|StaticHolderTypesShouldBeSealed|
+|CheckId|CA1052|
+|分類|Microsoft.Design|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 公用或受保護的類型只包含靜態成員宣告，且不使用[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾詞。
+
+## <a name="rule-description"></a>規則描述
+ 這項規則假設，只包含靜態成員的類型不是繼承，因為類型不提供任何會覆寫衍生類型中的功能。 不是繼承的型別應該用來標記`sealed`修飾詞，以禁止使用它做為基底類型。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，將這個類型做為標記`sealed`。 如果您的目標[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更新版本，較佳的方法是標示為型別`static`。 這種方式，您可以避免必須宣告以防止建立類別的私用建構函式。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 只有型別設計為繼承，則隱藏此規則的警告。 如果沒有`sealed`修飾詞建議的類型是有用的基底類型。
+
+## <a name="example-of-a-violation"></a>發生違規的範例
+
+### <a name="description"></a>描述
+ 下列範例顯示違反規則的類型。
+
+### <a name="code"></a>程式碼
  [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
  [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
- [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]  
-  
-## <a name="fix-with-the-static-modifier"></a>修正 Static 修飾詞  
-  
-### <a name="description"></a>描述  
- 下列範例示範如何修正此規則的違規情形來標記的型別與`static`修飾詞。  
-  
-### <a name="code"></a>程式碼  
- [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]  
-  
-## <a name="related-rules"></a>相關的規則  
+ [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
+
+## <a name="fix-with-the-static-modifier"></a>修正 Static 修飾詞
+
+### <a name="description"></a>描述
+ 下列範例示範如何修正此規則的違規情形來標記的型別與`static`修飾詞。
+
+### <a name="code"></a>程式碼
+ [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
+
+## <a name="related-rules"></a>相關的規則
  [CA1053：靜態預留位置類型不應該包含建構函式](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

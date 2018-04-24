@@ -1,12 +1,9 @@
 ---
-title: "受信任的應用程式部署概觀 |Microsoft 文件"
-ms.custom: 
+title: 受信任的應用程式部署概觀 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - trusted application deployment
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
-caps.latest.revision: "31"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 34e83d6b035ba6ea91190fa89b9e1a63366e7907
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
@@ -105,6 +102,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="limitations-of-trusted-application-deployment"></a>信任的應用程式部署的限制  
  您可以使用信任的應用程式部署，授與提高的信任給透過 Web 或企業共用部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您不必針對在 CD 上散發的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式使用信任的應用程式部署，因為依預設，這些應用程式便已被授與完全信任。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

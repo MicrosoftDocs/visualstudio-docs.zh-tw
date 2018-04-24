@@ -1,6 +1,5 @@
 ---
-title: 如何： 建立或更新標準程式碼分析簽入原則 |Microsoft 文件
-ms.custom: ''
+title: 如何：建立或更新標準程式碼分析簽入原則
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -50,10 +49,10 @@ ms.lasthandoff: 04/16/2018
 
 選取或清除下列選項：
 
-    |選項|描述|  
-    |------------|-----------------|  
-    |**強制執行簽入以僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可確保分析的所有程式碼都是方案的一部分。|  
-    |**強制執行 C/c + + 程式碼分析 (/analyze)**|需要所有的 C 或 c + + 專案，以建置 / analyze 編譯器選項，簽入之前執行程式碼分析。|  
+    |選項|描述|
+    |------------|-----------------|
+    |**強制執行簽入以僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可確保分析的所有程式碼都是方案的一部分。|
+    |**強制執行 C/c + + 程式碼分析 (/analyze)**|需要所有的 C 或 c + + 專案，以建置 / analyze 編譯器選項，簽入之前執行程式碼分析。|
     |**針對 Managed 程式碼強制執行程式碼分析**|需要所有的 managed 的專案執行程式碼分析，並建置簽入之前。|
 
 ### <a name="to-specify-a-managed-rule-set"></a>若要指定受管理的規則集

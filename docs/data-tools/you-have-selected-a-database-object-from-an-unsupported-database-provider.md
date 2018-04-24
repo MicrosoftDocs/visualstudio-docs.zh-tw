@@ -1,8 +1,7 @@
 ---
-title: 您已選取的資料庫物件不支援的資料庫提供者從 |Microsoft 文件
-ms.custom: ''
+title: 您已從不支援的資料提供者選取資料庫物件
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 author: gewarren
 ms.author: gewarren
@@ -10,30 +9,32 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5dfb475cdb1b63e4dfcaaebcda4b5d2dc3a7f070
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0646f153149d887ce87f2688d9c28b3da502ba1c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您已從不支援的資料提供者選取資料庫物件
-O/R 設計工具支援的 SQL Server 的.NET Framework 資料提供者 (<xref:System.Data.SqlClient>)。 雖然您可以按一下**確定** 繼續使用來自不受支援的資料庫提供者的物件，您可能會在執行階段遇到未預期的行為。  
-  
+
+O/R 設計工具支援的 SQL Server 的.NET Framework 資料提供者 (<xref:System.Data.SqlClient>)。 雖然您可以按一下**確定** 繼續使用來自不受支援的資料庫提供者的物件，您可能會在執行階段遇到未預期的行為。
+
 > [!NOTE]
->  只支援使用 .NET Framework Data Provider for SQL Server 的資料連接。  
-  
-### <a name="to-correct-this-error"></a>更正這個錯誤  
-  
+> 只支援使用 .NET Framework Data Provider for SQL Server 的資料連接。
+
+## <a name="to-correct-this-error"></a>更正這個錯誤
+
 - 按一下 [確定 **Deploying Office Solutions**]。
 
-   您可以繼續設計實體類別對應至使用不支援的資料庫提供者的連接。 如果使用不支援的資料庫提供者，則可能會發生非預期的行為。  
-  
-     -或-  
-  
+   您可以繼續設計實體類別對應至使用不支援的資料庫提供者的連接。 如果使用不支援的資料庫提供者，則可能會發生非預期的行為。
+
+    -或-
+
 - 按一下**取消**。
 
-   會停止動作。 請建立或使用 .NET Framework Provider for SQL Server 提供的資料連接。  
-  
+   會停止動作。 請建立或使用 .NET Framework Provider for SQL Server 提供的資料連接。
+
 ## <a name="see-also"></a>另請參閱
-[O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
-[LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+
+- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
+- [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

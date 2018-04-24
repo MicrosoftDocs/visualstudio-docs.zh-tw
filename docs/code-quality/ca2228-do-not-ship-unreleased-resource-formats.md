@@ -1,10 +1,8 @@
 ---
-title: CA2228： 不要格式建置的資源 |Microsoft 文件
-ms.custom: ''
+title: CA2228：不要使用尚未發行版本所支援的格式建置資源
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
 - CA2228
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b244dda388e5044b910259a4e92266671722e562
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1928cb4626ea5d5af15ecf800a8842d66f3e244d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228：不要使用尚未發行版本所支援的格式建置資源
-|||  
-|-|-|  
-|TypeName|DoNotShipUnreleasedResourceFormats|  
-|CheckId|CA2228|  
-|分類|Microsoft.Usage|  
-|中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
- 資源檔所使用的版本建立[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，目前不支援。  
-  
-## <a name="rule-description"></a>規則描述  
- 使用發行前版本所建置的資源檔[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能不支援的.NET framework 版本。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，建置使用的支援的版本的資源[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+|||
+|-|-|
+|TypeName|DoNotShipUnreleasedResourceFormats|
+|CheckId|CA2228|
+|分類|Microsoft.Usage|
+|中斷變更|非中斷|
+
+## <a name="cause"></a>原因
+ 資源檔所使用的版本建立[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，目前不支援。
+
+## <a name="rule-description"></a>規則描述
+ 使用發行前版本所建置的資源檔[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能不支援的.NET framework 版本。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，建置使用的支援的版本的資源[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

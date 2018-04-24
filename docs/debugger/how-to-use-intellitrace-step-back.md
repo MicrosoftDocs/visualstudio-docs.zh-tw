@@ -3,24 +3,19 @@ title: 檢視快照集使用 IntelliTrace 步驟後-Visual Studio |Microsoft 文
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
@@ -28,7 +23,7 @@ IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用�
 
 IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15.5 及更新版本，而您需要 Windows 10 年度更新或更新版本。 目前支援偵錯 ASP.NET、 WinForms、 WPF、 受管理的主控台應用程式，與受管理的類別庫的功能。 從 Visual Studio 2017 Enterprise 版本 15.7 preview 1 開始，此功能也支援 ASP.NET Core 和.NET 核心。 目前不支援偵錯 UWP 應用程式。
 
-在此教學課程中，您將：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟用 Intellitrace 事件和快照集
@@ -55,7 +50,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
 ## <a name="navigate-and-view-snapshots"></a>瀏覽和檢視的快照集
 
-1. 使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])**中偵錯 工具列按鈕。
+1. 使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])** 中偵錯 工具列按鈕。
 
     這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 若要逐步向前或向事件自動啟動[歷程偵錯](../debugger/historical-debugging.md)上所選取的事件。
 
@@ -69,7 +64,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
     ![使用快照集的事件上啟用歷程記錄模式](../debugger/media/intellitrace-historical-mode-with-snapshot.png "啟用快照集的事件的歷程記錄模式")
 
-2. 若要返回即時執行，請選擇**繼續 (F5)**或按一下**返回即時偵錯**資訊列中的連結。 
+2. 若要返回即時執行，請選擇**繼續 (F5)** 或按一下**返回即時偵錯**資訊列中的連結。 
 
 3. 您也可以檢視從快照集**事件** 索引標籤。若要這樣做，請選取具有快照集的事件，然後按一下**啟用歷程偵錯**。
 

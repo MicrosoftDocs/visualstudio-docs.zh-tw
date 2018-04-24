@@ -1,12 +1,9 @@
 ---
-title: "限制指令碼偵錯 |Microsoft 文件"
-ms.custom: 
+title: 限制指令碼偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f6679e781e564a58d6a98b7d0190f2f2b4e9fa74
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援用戶端指令碼偵錯，但受限於本主題所述的限制。  
@@ -36,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 -   中斷點必須在 `<script>` 區塊內部設定。 內嵌指令碼或 `<% %>` 區塊內的中斷點無法對應。  
   
--   頁面的瀏覽器 URL 必須包含頁面名稱。 例如，http://microsoft.com/default.apsx。 中斷點對應無法辨識來自像是 http://microsoft.com 這類位址到預設頁面的重新導向。  
+-   頁面的瀏覽器 URL 必須包含頁面名稱。 例如，http://microsoft.com/default.apsx。 中斷點對應無法辨識來自位址重新導向例如http://microsoft.com至預設頁面。  
   
 -   中斷點必須在瀏覽器 URL 中指定的頁面中設定，而不是在 ASPX 控制項 (ascx) 檔、主版頁面或該頁面包含的其他檔案中設定。 在所包含頁面中設定的中斷點無法對應。  
   

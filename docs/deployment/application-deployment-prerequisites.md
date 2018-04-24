@@ -1,12 +1,9 @@
 ---
-title: "應用程式部署必要條件 |Microsoft 文件"
-ms.custom: 
+title: 應用程式部署必要條件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 為了確保應用程式順利安裝及執行，您必須先確認目標電腦上已安裝與應用程式相依的所有元件。 例如，使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立的大多數應用程式都與 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 具相依性；在安裝應用程式之前，目的地電腦上必須存在正確的 Common Language Runtime 版本。  
@@ -48,10 +45,10 @@ ms.lasthandoff: 12/22/2017
   
 -   您必須在全域組件快取 (GAC) 中預先安裝所有組件的最小版本，如組件資訊清單中的組件相依性宣告所指定。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以偵測遺漏的必要條件，然後您可以使用啟動載入器安裝必要元件。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器安裝必要元件。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 等工具所產生之資訊清單中的值，您需要在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何： 重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 等工具所產生之資訊清單中的值，您需要在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱 [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
  如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 不過，如果您變更目標.NET Framework 版本，您必須更新中的選項**必要條件對話方塊**手動。  
   
@@ -78,13 +75,13 @@ ms.lasthandoff: 12/22/2017
 |---------------------------|-----------------|  
 |**-？，-h、-說明**|顯示 [說明] 對話方塊。|  
 |**--componentsurl 的 url**|顯示此安裝程式的儲存 URL 和元件 URL。|  
-|**-url =**`location`|設定 Setup.exe 將在其中尋找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的 URL。|  
-|**-componentsurl =**`location`|設定 Setup.exe 將在其中尋找相依性 (例如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) 的 URL。|  
-|**-homesite =** `true` **&#124;**`false`|當`true`，從廠商的網站上的偏好位置下載相依性。 這會覆寫**-componentsurl**設定。 當`false`，從所指定的 URL 下載相依性**-componentsurl**。|  
+|**-url =** `location`|設定 Setup.exe 將在其中尋找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的 URL。|  
+|**-componentsurl =** `location`|設定 Setup.exe 將在其中尋找相依性 (例如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) 的 URL。|  
+|**-homesite =** `true`**&#124;** `false`|當`true`，從廠商的網站上的偏好位置下載相依性。 這會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載相依性 **-componentsurl**。|  
   
 ## <a name="operating-system-support"></a>作業系統支援  
  Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core 提供具有有限功能的低維護伺服器環境，因此不支援 Visual Studio 啟動載入器。 例如，Server Core 安裝選項只支援 .NET Framework 3.5 Server Core 設定檔，因此無法執行與完整 .NET Framework 相依的 Visual Studio 功能。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

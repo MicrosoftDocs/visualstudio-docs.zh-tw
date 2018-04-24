@@ -1,12 +1,9 @@
 ---
-title: "如何： 自訂 ClickOnce 應用程式的預設 Web 網頁 |Microsoft 文件"
-ms.custom: 
+title: 如何： 自訂 ClickOnce 應用程式的預設 Web 網頁 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], publishing
 - publishing, ClickOnce
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
-caps.latest.revision: "14"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4927a5909ba4b09e796d52d81cc9821a5a9c4820
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 743d7f259da4129eda578808d1ce04619104a3f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自訂 ClickOnce 應用程式的預設 Web 網頁
 當發行 ClickOnce 應用程式 web，網頁上自動產生及發行以及應用程式。 預設頁面包含的應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。  
@@ -51,7 +48,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  選擇性。 若要防止 Visual Studio 無法覆寫自訂的發行網頁，取消核取**自動產生部署網頁之後, 每個發行**發行選項 對話方塊中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   

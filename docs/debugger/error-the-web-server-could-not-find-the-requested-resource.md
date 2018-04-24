@@ -1,13 +1,9 @@
 ---
-title: "錯誤： 在 Web 伺服器找不到要求的資源 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 在 Web 伺服器找不到要求的資源 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -15,17 +11,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5cc83d8d2d0b37d3bb7203e1a20c93478fb96b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 基於安全性考量，IIS 已傳回泛型錯誤。  
@@ -36,6 +31,6 @@ ms.lasthandoff: 12/22/2017
   
  如需有關對 IIS 進行疑難排解的詳細資訊，請參閱[IIS 管理](http://go.microsoft.com/fwlink/?LinkId=255872)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [UrlScan 安全工具](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

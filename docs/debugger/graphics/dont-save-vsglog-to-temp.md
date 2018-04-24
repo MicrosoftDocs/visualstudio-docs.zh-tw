@@ -1,23 +1,20 @@
 ---
-title: "DONT_SAVE_VSGLOG_TO_TEMP |Microsoft 文件"
-ms.custom: 
+title: DONT_SAVE_VSGLOG_TO_TEMP |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a98081aa73d11d9a2edea9293804d6c83a211d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b70ddf2933b8bd2d96db1636612cb35a6a759a1a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。  
@@ -48,5 +45,5 @@ ms.lasthandoff: 12/22/2017
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

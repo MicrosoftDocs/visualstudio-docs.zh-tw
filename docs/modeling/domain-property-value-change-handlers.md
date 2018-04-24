@@ -1,20 +1,20 @@
 ---
-title: 網域屬性值變更處理常式在 Visual Studio |Microsoft 文件
+title: 網域屬性值變更處理常式在 Visual Studio 中
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c806ed3b93bc79e2ea732905b2ff5c7827e43e6a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 53a5640ea48ab19e599d69a8096d1a73fe1d8fde
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 

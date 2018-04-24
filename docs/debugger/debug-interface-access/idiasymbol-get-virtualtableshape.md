@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_virtualtableshape |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_virtualtableshape |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtualTableShape method
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b13a6a1be38c657d8f85a706e152d07222a330c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa0a7d238b72ea6f3137aad9b5d5ff8a31659f8e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 擷取的符號介面之類型的使用者定義類型的虛擬資料表。  
@@ -46,5 +41,5 @@ HRESULT get_virtualTableShape (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

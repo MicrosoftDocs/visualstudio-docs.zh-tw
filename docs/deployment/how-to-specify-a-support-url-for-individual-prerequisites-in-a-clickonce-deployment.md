@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft 文件"
-ms.custom: 
+title: 如何： 指定 ClickOnce 部署中的個別必要條件的支援 URL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, prerequisites
 - ClickOnce deployment, URLs
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：在 ClickOnce 部署中指定個別必要條件的支援 URL
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以測試數目的用戶端電腦必須要有的必要條件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]執行應用程式。 這些包括必要的最小版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，作業系統，必須預先安裝在全域組件快取 (GAC) 中的任何組件的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不過，無法安裝這些必要條件的任何本身;如果找不到必要元件，它只是中止安裝，並顯示對話方塊，說明安裝失敗的原因。  
@@ -85,7 +82,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  支援 URL 不會顯示在對話方塊中，如果應用程式標示為在部分信任中執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<w > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   

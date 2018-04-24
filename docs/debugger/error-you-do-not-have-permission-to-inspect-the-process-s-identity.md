@@ -1,29 +1,26 @@
 ---
-title: "錯誤： 您沒有權限檢查處理程序 &#39; s 識別 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 您沒有檢查處理程序的權限&#39;s 識別 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤： 您沒有權限檢查處理程序 &#39; s 的身分識別
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤： 您沒有檢查處理程序的權限&#39;s 身分識別
 您沒有檢查此處理序識別的權限。 這很可能是因為系統組態所造成。  
   
  偵錯工具無法檢查處理序識別，而這是進行偵錯的必要資訊。 最可能的原因是已停用終端機服務 (Terminal Service)。 預設狀況下會啟用終端機服務。 請依照下列步驟重新啟用終端機服務。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  按一下**啟動**然後以滑鼠右鍵按一下**我的電腦**。  
   
-2.  選擇**屬性**。  
+2.  選擇 [屬性]。  
   
      **系統屬性** 視窗隨即顯示。  
   
@@ -66,5 +63,5 @@ ms.lasthandoff: 12/22/2017
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

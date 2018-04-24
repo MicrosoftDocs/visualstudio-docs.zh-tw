@@ -1,12 +1,9 @@
 ---
-title: "偵錯和裝載處理序 |Microsoft 文件"
-ms.custom: 
+title: 偵錯和裝載處理序 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], hosting process
 - hosting process
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 04d6500ba45b10a4cc6a309e7f60872febc19736
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-and-the-hosting-process"></a>偵錯和裝載處理序
 Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯工具功能，例如部分信任偵錯和設計階段運算式評估。 如果需要的話可以停用裝載處理序。 如需詳細資訊，請參閱 [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)。 下列章節描述使用或不使用裝載處理序進行偵錯之間的一些差異。  
@@ -42,7 +39,7 @@ Visual Studio 裝載處理序改進偵錯工具的效能並且啟用新的偵錯
 ## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly().FullName 差異  
  `Assembly.GetCallingAssembly().FullName` 會根據是否啟用裝載處理序傳回不同的結果。 如果在啟用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName` ，它會傳回 `mscorlib`。 如果在停用裝載處理序的情況下呼叫 `Assembly.GetCallingAssembly().FullName` ，其會傳回應用程式名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [如何： 偵錯部分信任應用程式](../debugger/how-to-debug-a-partial-trust-application.md)   
  [如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)

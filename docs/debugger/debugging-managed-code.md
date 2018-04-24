@@ -1,13 +1,9 @@
 ---
-title: "偵錯 Managed 程式碼 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Managed 程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,14 +15,14 @@ helpviewer_keywords:
 - managed code, debugging
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6710f5065622161b60e7a40cc136cdb2ba2b0b72
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 227dfcf82a179a83428900f75d0b5c9b85248479
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 

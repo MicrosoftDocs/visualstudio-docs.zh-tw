@@ -2,12 +2,8 @@
 title: 安全性警告： 偵錯工具必須執行未受信任的命令 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.securityalert
 dev_langs:
@@ -16,17 +12,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: e5c004b3-b364-4098-ac98-770076ca9981
-caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8749cea92e0ee16a14ecbaa3cc8732131c5a7f51
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 77554795772a5a9e2ce5d9bbe9f620923bc20184
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
 這個警告對話方塊會在您使用來源伺服器時出現。 它會指出，偵錯工具需要執行以取得原始程式碼的命令不在 srcsvr.ini 檔中所包含來源伺服器的受信任命令清單中。 如果這是有效的命令，您可將它加入至 srcsvr.ini 檔。 否則，您不應該執行該命令。 如需詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/22/2017
  不執行  
  停止執行命令並停止從來源伺服器下載檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [來源伺服器](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

@@ -1,12 +1,9 @@
 ---
-title: "如何： 建立套件資訊清單 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立套件資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - prerequisites, custom bootstrapper package
 - dependencies, custom bootstrapper packages
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
-caps.latest.revision: "12"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 463286eb8360b728b3b7e3ce9396c9f4b7e11305
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 54c2e6a231ce597e2ec6a3e04cf74521b6c10d2e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：建立封裝資訊清單
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但卻封裝資訊清單的每個地區設定。 產品資訊清單都應在不同的當地語系化版本的共用的功能。  
@@ -102,5 +99,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

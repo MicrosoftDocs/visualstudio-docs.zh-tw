@@ -1,12 +1,9 @@
 ---
-title: "將 COM 元件使用 ClickOnce 部署 |Microsoft 文件"
-ms.custom: 
+title: 將 COM 元件使用 ClickOnce 部署 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +15,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 傳統 COM 元件的部署一直困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用重疊的應用程式之間。 這種情況通常不是.NET Framework 應用程式中的問題因為彼此完全隔離的應用程式或元件的並存相容。 Visual Studio 可讓您部署獨立的 COM 元件，Windows XP 或更高版本的作業系統上。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]提供簡單而安全機制，可將.NET 應用程式部署。 不過，如果您的應用程式使用傳統 COM 元件，您必須採取其他步驟，才能將其部署。 本主題描述如何部署獨立的 COM 元件和參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供簡單而安全機制，可將.NET 應用程式部署。 不過，如果您的應用程式使用傳統 COM 元件，您必須採取其他步驟，才能將其部署。 本主題描述如何部署獨立的 COM 元件和參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
   
- 如需部署獨立的 COM 元件的詳細資訊，請參閱 「 簡化應用程式部署與[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]和免註冊 COM"在[http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
+ 如需部署獨立的 COM 元件的詳細資訊，請參閱 「 簡化應用程式部署與[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]和免註冊 COM"在[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
   
 ## <a name="registration-free-com"></a>免註冊 COM  
  免註冊 COM 是用於部署和啟動獨立的 COM 元件的新技術。 其運作方式是將所有元件的類型程式庫和註冊資訊，通常會安裝成在系統登錄中稱為資訊清單是 XML 檔案儲存在與應用程式相同的資料夾中。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
  資訊清單產生器遇到隔離的 COM 參考時，會列舉所有`CoClass`項目中的元件類型程式庫，比對每個項目取代為其對應的登錄資料，並產生資訊清單的所有 COM 定義類型程式庫檔案中的類別。  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>免註冊 COM 元件使用 ClickOnce 部署  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署技術非常適合用來部署隔離的 COM 元件，因為兩者[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]和免註冊 COM 需要元件有資訊清單，才能進行部署。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署技術非常適合用來部署隔離的 COM 元件，因為兩者[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]和免註冊 COM 需要元件有資訊清單，才能進行部署。  
   
  通常，元件作者應該提供資訊清單。 如果沒有，不過，Visual Studio 是能夠產生資訊清單會自動針對 COM 元件。 資訊清單產生期間，會執行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]發行處理序; 如需詳細資訊，請參閱[發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。 這項功能也可讓您充分利用您先前的開發環境，例如 Visual Basic 6.0 中撰寫的舊版元件。  
   
@@ -175,5 +172,5 @@ ms.lasthandoff: 12/22/2017
   
  即使應用程式的部署不需要註冊，則需要有數種案例中的 COM 開發人員在電腦，必須註冊。 `Isolated`屬性需要開發人員的電腦上註冊 COM 元件，以自動產生資訊清單在建置期間。 沒有註冊擷取功能，可以在建置期間叫用自我登錄。 此外，任何未明確定義類型程式庫中的類別不會反映在資訊清單中。 當使用預先存在的資訊清單，例如原生參考的 COM 元件，元件可能不需要註冊在開發階段。 不過，如果就需要註冊元件是一個 ActiveX 控制項，而且您想要將它併入**工具箱**和 Windows Form 設計工具。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

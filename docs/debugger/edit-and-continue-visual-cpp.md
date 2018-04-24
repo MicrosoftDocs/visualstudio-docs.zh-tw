@@ -1,12 +1,9 @@
 ---
-title: "編輯後繼續 （Visual c + +） |Microsoft 文件"
-ms.custom: 
+title: 編輯後繼續 （Visual c + +） |Microsoft 文件
+ms.custom: ''
 ms.date: 05/31/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugging [C++], Edit and Continue
 - C/C++, Edit and Continue
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d1b9326aa862bd03bb989a4d6863e94dae7bddef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5d5195dd92e53a6657747758c03c87ee5463c1d5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)的編輯後繼續的限制相關資訊。
@@ -53,7 +50,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  在 [編輯後繼續]  群組中，選取或清除 [啟用原生編輯後繼續]  核取方塊。  
   
- 修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 如果您建置應用程式從命令列或 makefile，但您在 Visual Studio 環境中偵錯，您仍然可以使用 [編輯後繼續] 如果您設定**/ZI**選項。  
+ 修改這個設定會影響您處理的所有專案。 變更這個設定之後不需要重建應用程式。 如果您建置應用程式從命令列或 makefile，但您在 Visual Studio 環境中偵錯，您仍然可以使用 [編輯後繼續] 如果您設定 **/ZI**選項。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何明確套用程式碼變更  
  在 Visual C++ 中，[編輯後繼續] 會以兩種方式套用程式碼變更。 當您選擇執行命令時，會隱含地套用程式碼變更，而您使用 [ **套用程式碼變更** ] 命令時，則會明確套用程式碼變更。  
@@ -83,5 +80,5 @@ ms.lasthandoff: 12/22/2017
   
  在上述情形中，偵錯工具會繼續執行原始的程式碼直到套用變更為止。 過時程式碼會在不同的來源視窗中顯示為暫時原始程式檔視窗，並使用像是 `enc25.tmp`的標題。 已編輯的來源會繼續出現在原始來源視窗中。 如果您嘗試編輯過時程式碼，就會出現警告訊息。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)

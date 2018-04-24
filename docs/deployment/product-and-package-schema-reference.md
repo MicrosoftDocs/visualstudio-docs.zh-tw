@@ -1,12 +1,9 @@
 ---
-title: "產品和封裝結構描述參考 |Microsoft 文件"
-ms.custom: 
+title: 產品和封裝結構描述參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,23 +22,23 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
 A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化的組件、 授權合約和文件的文化特性相關元件。  
   
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。  
   
-|元素|描述|屬性|  
+|項目|描述|屬性|  
 |-------------|-----------------|----------------|  
 |[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|必要的產品檔案的最上層項目。|無|  
 |[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的套件檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
@@ -54,7 +51,7 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
 ## <a name="remarks"></a>備註  
  封裝結構描述是由包含它自己的小硬式編碼的邏輯 MS 建置啟動載入工作所產生的虛設常式程式的 Setup.exe，取用。 結構描述磁碟機的安裝程序的各個層面。  
   
- `InstallChecks`測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles`列出所有安裝程序可能需要安裝，應指定的測試失敗的封裝。 每個命令下的項目命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行應該測試失敗。 您可以使用`Strings`當地語系化產品名稱和錯誤訊息，好讓您可以使用一個單一的安裝二進位檔案安裝應用程式的各種語言的項目。  
+ `InstallChecks` 測試該 setup.exe 應該執行給定的封裝存在。 `PackageFiles` 列出所有安裝程序可能需要安裝，應指定的測試失敗的封裝。 每個命令下的項目命令執行測試所描述的其中一個`InstallChecks`，並指定其`PackageFile`執行應該測試失敗。 您可以使用`Strings`當地語系化產品名稱和錯誤訊息，好讓您可以使用一個單一的安裝二進位檔案安裝應用程式的各種語言的項目。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何安裝完整的產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
@@ -161,6 +158,6 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
 </Product>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

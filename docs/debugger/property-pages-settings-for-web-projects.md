@@ -1,12 +1,9 @@
 ---
-title: "Web 專案的屬性頁設定 |Microsoft 文件"
-ms.custom: 
+title: Web 專案的屬性頁設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - debugging Web applications, project settings
 - debug configurations, Web projects
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4e58541c5ab0c7a38773740343349880aa5297e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 您可以變更網站偵錯組態中的屬性設定**屬性頁** 對話方塊中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁** 對話方塊。  
@@ -55,5 +52,5 @@ ms.lasthandoff: 12/22/2017
 |**SQL Server 偵錯**|允許 SQL Server 資料庫物件偵錯。|  
 |**Silverlight 偵錯**|允許偵錯 Silverlight 元件。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

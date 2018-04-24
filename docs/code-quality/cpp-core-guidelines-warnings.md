@@ -1,85 +1,83 @@
 ---
-title: C + + 核心指導方針警告 |Microsoft 文件
-ms.custom: ''
+title: C + + 核心指導方針警告
 ms.date: 08/10/2017
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: douge
-ms.technology:
-- vs-ide-code-analysis
+manager: wpickett
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c7e5e9ee55785c1053a3d5c416529710b0b1c65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da68b1ea4783ca1bd35d29218960e1c616f7c32f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
-  
-## <a name="the-c-core-guidelines-project"></a>專案的 c + + 核心指導方針  
- Bjarne Stroustrup 和其他人所建立，c + + 核心指導方針是安全且有效地使用現代 c + + 的指引。 指導方針強調靜態型別安全和資源的安全。 這些識別的方式來消除或是減少最容易出錯的組件的語言，而且可靠的方式會建議如何簡化您的程式碼和更好的效能。 標準 c + + Foundation 會維護這些指導方針。 若要進一步了解，請參閱文件， [c + + 核心指導方針](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，存取在 c + + 核心指導方針文件專案檔和[GitHub](https://github.com/isocpp/CppCoreGuidelines)。  
-  
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用程式碼分析的 c + + 核心檢查指導方針  
- 您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**中的核取方塊**程式碼分析**區段**屬性頁**對話方塊您的專案。  
-  
- ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")  
-  
- C + + 核心檢查 」 規則是預設的規則集時已啟用程式碼分析執行的擴充功能。 由於 c + + 核心檢查規則開發，全都堅實的某些規則和某些可能不是可供使用的所有程式碼，但仍有幫助。 規則分成兩個群組： 已釋放及實驗。 您可以選擇是否要為您的專案屬性中執行已釋出或實驗性規則。  
-  
- ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
-  
- 若要啟用或停用 c + + 核心檢查規則集，請開啟**屬性頁**為您的專案 對話方塊。 在下**組態屬性**，依序展開**程式碼分析**，**延伸**。 旁邊的下拉式清單中控制**檢查 （發行） 啟用 c + + 核心**或**檢查 （實驗） 啟用 c + + 核心**，選擇**是**或**否**。 選擇**確定**或**套用**以儲存變更。  
-  
-## <a name="examples"></a>範例  
- 以下是範例的 c + + 核心檢查規則可以找到的問題：  
-  
-```cpp  
-// CoreCheckExample.cpp  
-// Add CppCoreCheck package and enable code analysis in build for warnings.  
-  
-int main()  
-{  
-    int arr[10];           // warning C26494  
-    int* p = arr;          // warning C26485  
-  
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1  
-    {  
-        int* q = p + 1;    // warning C26481 (suppressed)  
-        p = q++;           // warning C26481 (suppressed)  
-    }  
-  
-    return 0;  
-}  
-```  
-  
- 這個範例會示範幾個可以找到的 c + + 核心檢查 」 規則的警告：  
-  
--   C26494 是規則 Type.5： 一律初始化物件。  
-  
--   C26485 是規則 Bounds.3： 沒有陣列至指標衰退。  
-  
--   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span`。  
-  
- 如果安裝和編譯此程式碼前, 兩個警告就是輸出，但是第三個隱藏時啟用 c + + 核心檢查程式碼分析規則集。 以下是範例程式碼的組建輸出：  
-  
+
+## <a name="the-c-core-guidelines-project"></a>專案的 c + + 核心指導方針
+ Bjarne Stroustrup 和其他人所建立，c + + 核心指導方針是安全且有效地使用現代 c + + 的指引。 指導方針強調靜態型別安全和資源的安全。 這些識別的方式來消除或是減少最容易出錯的組件的語言，而且可靠的方式會建議如何簡化您的程式碼和更好的效能。 標準 c + + Foundation 會維護這些指導方針。 若要進一步了解，請參閱文件， [c + + 核心指導方針](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，存取在 c + + 核心指導方針文件專案檔和[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
+
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用程式碼分析的 c + + 核心檢查指導方針
+ 您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**中的核取方塊**程式碼分析**區段**屬性頁**對話方塊您的專案。
+
+ ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+
+ C + + 核心檢查 」 規則是預設的規則集時已啟用程式碼分析執行的擴充功能。 由於 c + + 核心檢查規則開發，全都堅實的某些規則和某些可能不是可供使用的所有程式碼，但仍有幫助。 規則分成兩個群組： 已釋放及實驗。 您可以選擇是否要為您的專案屬性中執行已釋出或實驗性規則。
+
+ ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+
+ 若要啟用或停用 c + + 核心檢查規則集，請開啟**屬性頁**為您的專案 對話方塊。 在下**組態屬性**，依序展開**程式碼分析**，**延伸**。 旁邊的下拉式清單中控制**檢查 （發行） 啟用 c + + 核心**或**檢查 （實驗） 啟用 c + + 核心**，選擇**是**或**否**。 選擇**確定**或**套用**以儲存變更。
+
+## <a name="examples"></a>範例
+ 以下是範例的 c + + 核心檢查規則可以找到的問題：
+
+```cpp
+// CoreCheckExample.cpp
+// Add CppCoreCheck package and enable code analysis in build for warnings.
+
+int main()
+{
+    int arr[10];           // warning C26494
+    int* p = arr;          // warning C26485
+
+    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    {
+        int* q = p + 1;    // warning C26481 (suppressed)
+        p = q++;           // warning C26481 (suppressed)
+    }
+
+    return 0;
+}
+```
+
+ 這個範例會示範幾個可以找到的 c + + 核心檢查 」 規則的警告：
+
+-   C26494 是規則 Type.5： 一律初始化物件。
+
+-   C26485 是規則 Bounds.3： 沒有陣列至指標衰退。
+
+-   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span`。
+
+ 如果安裝和編譯此程式碼前, 兩個警告就是輸出，但是第三個隱藏時啟用 c + + 核心檢查程式碼分析規則集。 以下是範例程式碼的組建輸出：
+
 ```Output
-1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------  
-1>  CoreCheckExample.cpp  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)  
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
-```  
-  
-C + + 核心指導方針，會有幫助您撰寫更好且更安全的程式碼。 不過，如果您有位置不應該套用的規則或設定檔的執行個體時，很容易隱藏直接在程式碼中。 您可以使用`gsl::suppress`屬性，以避免 c + + 核心檢查偵測和報告的下列程式碼區塊中的規則的任何違規。 您可以將標記個別的陳述式，以隱藏特定規則。 您甚至可以隱藏整個 「 範圍 」 設定檔寫入`[[gsl::suppress(bounds)]]`不包括特定的規則數目。  
+1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
+1>  CoreCheckExample.cpp
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```
+
+C + + 核心指導方針，會有幫助您撰寫更好且更安全的程式碼。 不過，如果您有位置不應該套用的規則或設定檔的執行個體時，很容易隱藏直接在程式碼中。 您可以使用`gsl::suppress`屬性，以避免 c + + 核心檢查偵測和報告的下列程式碼區塊中的規則的任何違規。 您可以將標記個別的陳述式，以隱藏特定規則。 您甚至可以隱藏整個 「 範圍 」 設定檔寫入`[[gsl::suppress(bounds)]]`不包括特定的規則數目。
 
 ## <a name="supported-rule-sets"></a>支援的規則集
-當新的規則加入至 c + + 核心指導方針檢查程式，可能會增加預先存在的程式碼會在產生的警告數目。 您可以使用預先定義的規則集來篩選要啟用的規則類型。 自 Visual Studio 2017 版本 15.3，支援的規則集是： 
+當新的規則加入至 c + + 核心指導方針檢查程式，可能會增加預先存在的程式碼會在產生的警告數目。 您可以使用預先定義的規則集來篩選要啟用的規則類型。 自 Visual Studio 2017 版本 15.3，支援的規則集是：
   - **擁有者指標規則**強制[資源管理會檢查與擁有者相關<T>從 c + + 核心指引](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
   - **Const 規則**強制[const 相關檢查從 c + + 核心指引](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
@@ -126,8 +124,8 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 // Supress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
-{ 
-    new int; 
+{
+    new int;
 }
 
 // Suppress only one specific warning number.
@@ -138,11 +136,11 @@ CPPCORECHECK_BOUNDS_WARNINGS
 {
     int *p = new int;
 }
-```  
+```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>使用命令列選項來隱藏分析
  而不是 #pragmas，您可以使用命令列選項的檔案屬性頁中，隱藏警告的專案或單一檔案。 例如，若要停用警告 26400 檔案：
- 
+
  1) 中的檔案，以滑鼠右鍵按一下**方案總管**
 
  2) 選擇**屬性 |C / C + + |命令列**
@@ -213,25 +211,25 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 
 
-## <a name="use-the-guideline-support-library"></a>使用指導方針支援程式庫  
+## <a name="use-the-guideline-support-library"></a>使用指導方針支援程式庫
  導線支援程式庫被設計來協助您遵守核心。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`組參數與`span<T>`型別。 GSL 位於[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或 「 參與 」。 您可以在找到專案[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- ## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 的專案中使用 c + + 核心檢查指導方針  
-  如果您使用 Visual Studio 2015，預設不會安裝 c + + 核心檢查的程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用 Visual Studio 2015 中的 c + + 核心檢查程式碼分析工具。 Microsoft 透過支援的 Visual Studio 2015 的專案使用 Nuget 封裝。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此套件需要有至少安裝 Visual Studio 2015 Update 1。  
-  
- 套件也會安裝為相依性，僅限標頭導線支援程式庫 (GSL) 另一個封裝。 GSL 也會提供在 GitHub 上[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。  
+ ## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 的專案中使用 c + + 核心檢查指導方針
+  如果您使用 Visual Studio 2015，預設不會安裝 c + + 核心檢查的程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用 Visual Studio 2015 中的 c + + 核心檢查程式碼分析工具。 Microsoft 透過支援的 Visual Studio 2015 的專案使用 Nuget 封裝。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此套件需要有至少安裝 Visual Studio 2015 Update 1。
 
- 由於載入程式碼分析規則的方式，您必須安裝 Microsoft.CppCoreCheck NuGet 封裝到您想要在 Visual Studio 2015 中檢查每個 c + + 專案。  
-  
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>若要將 Microsoft.CppCoreCheck 封裝加入至 Visual Studio 2015 中的專案  
-  
-1.  在**方案總管 中**，以滑鼠右鍵按一下您想要將此封裝加入方案中開啟您專案的內容功能表。 選擇**管理 NuGet 封裝**開啟**NuGet 套件管理員**。  
-  
-2.  在**NuGet 套件管理員**視窗中，搜尋 Microsoft.CppCoreCheck。  
-  
-     ![Nuget 套件管理員 視窗會顯示 CppCoreCheck 封裝](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")  
-  
-3.  選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝**按鈕，將規則加入至您的專案。  
-  
- NuGet 封裝將其他的 MSBuild.targets 檔案加入專案時啟用程式碼分析您的專案上叫用。 這個.targets 檔案會將 c + + 核心檢查規則做為額外的擴充加入至 Visual Studio 程式碼分析工具。 安裝封裝時，您可以使用 [屬性頁] 對話方塊啟用或停用發行和實驗性規則。  
-  
+ 套件也會安裝為相依性，僅限標頭導線支援程式庫 (GSL) 另一個封裝。 GSL 也會提供在 GitHub 上[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
+
+ 由於載入程式碼分析規則的方式，您必須安裝 Microsoft.CppCoreCheck NuGet 封裝到您想要在 Visual Studio 2015 中檢查每個 c + + 專案。
+
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>若要將 Microsoft.CppCoreCheck 封裝加入至 Visual Studio 2015 中的專案
+
+1.  在**方案總管 中**，以滑鼠右鍵按一下您想要將此封裝加入方案中開啟您專案的內容功能表。 選擇**管理 NuGet 封裝**開啟**NuGet 套件管理員**。
+
+2.  在**NuGet 套件管理員**視窗中，搜尋 Microsoft.CppCoreCheck。
+
+     ![Nuget 套件管理員 視窗會顯示 CppCoreCheck 封裝](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+
+3.  選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝**按鈕，將規則加入至您的專案。
+
+ NuGet 封裝將其他的 MSBuild.targets 檔案加入專案時啟用程式碼分析您的專案上叫用。 這個.targets 檔案會將 c + + 核心檢查規則做為額外的擴充加入至 Visual Studio 程式碼分析工具。 安裝封裝時，您可以使用 [屬性頁] 對話方塊啟用或停用發行和實驗性規則。
+

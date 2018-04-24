@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 在 Visual Basic 中撰寫視覺化檢視 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 在 Visual Basic 中撰寫視覺化檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。  
@@ -62,7 +59,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**方案總管] 中**，以滑鼠右鍵按一下**My First Visualizer**，捷徑功能表上，按一下 [**加入參考**。  
   
-4.  在**加入參考**對話方塊**.NET**索引標籤上，按一下 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
+4.  在**加入參考**對話方塊 **.NET**索引標籤上，按一下 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -108,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  在**方案總管] 中**，以滑鼠右鍵按一下**參考**，捷徑功能表上，按一下 [**加入參考**。  
   
-2.  在**加入參考**對話方塊**.NET**索引標籤上，按一下  **System.Windows.Forms**。  
+2.  在**加入參考**對話方塊 **.NET**索引標籤上，按一下  **System.Windows.Forms**。  
   
 3.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -180,7 +177,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  在**方案總管] 中**，以滑鼠右鍵按一下**MyTestConsole**，捷徑功能表上，按一下 [**加入參考**。  
   
-2.  在**加入參考**對話方塊**.NET**索引標籤上，按一下 [microsoft.visualstudio.debuggervisualizers]。  
+2.  在**加入參考**對話方塊 **.NET**索引標籤上，按一下 [microsoft.visualstudio.debuggervisualizers]。  
   
 3.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -228,7 +225,7 @@ ms.lasthandoff: 12/22/2017
   
  如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢視，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢視。 如需詳細資訊，請參閱[如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
  [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

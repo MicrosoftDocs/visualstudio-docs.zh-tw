@@ -1,23 +1,20 @@
 ---
-title: "偵錯時檢查 XAML 屬性 |Microsoft 文件"
-ms.custom: 
+title: 偵錯時檢查 XAML 屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 03/06/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: fcb2877a79afc310985102972d870caae560b393
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 您可以取得與您執行的 XAML 程式碼的即時檢視**即時視覺化樹狀結構**和**即時屬性總管**。 這些工具提供您執行中之 XAML 應用程式 UI 項目的樹狀檢閱，並且顯示任何您所選取之 UI 項目的執行階段屬性。  
@@ -85,7 +82,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  回到應用程式視窗並再加入一些項目。 您應該會看到更多的清單方塊項目，會出現在**即時視覺化樹狀結構**。  
   
- 現在讓我們看看其中一個清單方塊項目的屬性。 選取第一個清單方塊項目中的**即時視覺化樹狀結構**按一下**顯示屬性**工具列上的圖示。 **即時屬性總管**應該會出現。 請注意，**內容**欄位是"Item1"，而**背景**欄位是**#FFFFFFE0** （淺黃色）。 請返回**即時視覺化樹狀結構**並選取第二個清單方塊項目。 **即時屬性總管**應該會顯示**內容**欄位是"Item2"，而**背景**欄位是**#FFD3D3D3** （淺灰色).  
+ 現在讓我們看看其中一個清單方塊項目的屬性。 選取第一個清單方塊項目中的**即時視覺化樹狀結構**按一下**顯示屬性**工具列上的圖示。 **即時屬性總管**應該會出現。 請注意，**內容**欄位是"Item1"，而**背景**欄位是 **#FFFFFFE0** （淺黃色）。 請返回**即時視覺化樹狀結構**並選取第二個清單方塊項目。 **即時屬性總管**應該會顯示**內容**欄位是"Item2"，而**背景**欄位是 **#FFD3D3D3** （淺灰色).  
   
  XAML 的實際結構有許多您可能不是直接興趣的項目，如果您不熟悉程式碼您可能會很難在巡覽樹狀結構時找到您要尋找的。 所以**即時視覺化樹狀結構**有好幾種方式可讓您使用應用程式的 UI 來協助您找出您想要檢查的項目。  
   
@@ -93,7 +90,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **在執行中應用程式顯示版面配置提示**。 只要選取緊鄰 [啟用選取範圍] 按鈕右邊的按鈕時，即可啟用此模式。 當**顯示版面配置提示**已開啟，它會導致應用程式視窗以顯示所選物件的界限沿著水平和垂直線條，好讓您可以看到什麼其向何處對齊，以及顯示此邊界的矩形。 例如，同時開啟**啟用選取**和**顯示版面配置**，並選取**加入項目**應用程式中的文字區塊。 您應該會看到中的文字區塊節點**即時視覺化樹狀結構**和中的文字區塊屬性**即時屬性檢閱器**，以及文字區塊界限內的水平和垂直線條。  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
+ ![在 DisplayLayout LivePropertyViewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
   
  **預覽選取範圍**。 只要選取 [即時視覺化樹狀] 工具列上從左邊數來的第三個按鈕，即可啟用這個模式。 如果您可存取該應用程式的原始程式碼，則此模式會顯示宣告此項目的 XAML。 選取**啟用選取**和**預覽選取範圍**，然後在測試應用程式中選取 [] 按鈕。 MainWindow.xaml 檔案會在 Visual Studio 中開啟，而且游標會置於定義按鈕位置的那一行。  
   

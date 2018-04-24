@@ -1,5 +1,5 @@
 ---
-title: 程式碼在 Visual Studio 中建置流程中的產生 |Microsoft 文件
+title: 在 Visual Studio 中建置流程中的程式碼產生
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9c3a7d67b4e3652ea1e0a474aed174c9596012e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9895e0cc6cb0b65df51af4ff165d7aa34960763d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 

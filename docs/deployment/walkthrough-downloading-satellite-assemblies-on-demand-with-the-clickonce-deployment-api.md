@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 下載 ClickOnce 部署 API 的要求附屬組件 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 下載 ClickOnce 部署 API 的要求附屬組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +18,16 @@ helpviewer_keywords:
 - localization, ClickOnce deployment
 - ClickOnce deployment, localization
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
-caps.latest.revision: "11"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: daa6b9b61083f61d631c6dd55265c338c08ff7f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b686feb370ff522b2b26866990cc8069b465d96
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依 ClickOnce 部署 API 的要求下載附屬組件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。  
@@ -69,5 +66,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="next-steps"></a>後續步驟  
  在生產環境中，因為用戶端電腦上會有正確的預設值，所以您可能需要移除行程式碼範例中，將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的行。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署您的應用程式之前，以程式設計方式設定這個值以測試附屬組件，是個好方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)

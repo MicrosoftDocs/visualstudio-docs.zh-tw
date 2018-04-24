@@ -1,13 +1,9 @@
 ---
-title: "如何： 將執行緒加上旗標和取消 |Microsoft 文件"
-ms.custom: 
+title: 如何： 將執行緒加上旗標和取消 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - treads, switching [debugging]
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 489403e4ce5052cb526a361e4548ab8823a20b18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 052c9d65e833152c0d3d3f67eda41742119eccaf
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：將執行緒加上旗標和取消旗標
 您可以加上旗標的執行緒，您想要特別注意標記中的圖示與**執行緒**，**平行堆疊**（執行緒檢視）**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。  
@@ -65,7 +60,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)  
  [逐步解說： 偵錯多執行緒應用程式使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)

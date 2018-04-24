@@ -1,5 +1,5 @@
 ---
-title: 實作自訂程式碼分析簽入原則，針對 Managed Visual Studio 中的程式碼 |Microsoft 文件
+title: 在 Visual Studio 中的 Managed 程式碼實作自訂程式碼分析簽入原則
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -10,14 +10,14 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7d79d0117adc48a476b4e4d8a534dc755f057fd
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: c50daf82a5dc5774cae75ecab54f1455c1a1c251
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 

@@ -1,12 +1,9 @@
 ---
-title: "如何： 自我裝載的 WCF 服務進行偵錯 |Microsoft 文件"
-ms.custom: 
+title: 如何： 自我裝載的 WCF 服務進行偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - WCF, self-hosted service
 - WCF, debugging
 ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 004e4685af33a33248d3fab7c39504300de2ed95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 19ce90effca21f6079cc7b569fa6e58f94553627
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
 A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]啟動用戶端和伺服器，當您選擇**開始偵錯**上**偵錯**功能表。  
@@ -57,7 +54,7 @@ A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服
   
     6.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   
  [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)

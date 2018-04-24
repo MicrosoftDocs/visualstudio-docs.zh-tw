@@ -1,34 +1,30 @@
 ---
-title: "在 Visual Studio 中的 JavaScript 主控台命令 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 中的 JavaScript 主控台命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
   
  您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式。 如需 Cordova 應用程式支援的主控台命令的資訊，請參閱[偵錯應用程式](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果 [JavaScript 主控台] 視窗已關閉，您可以開啟它偵錯時 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
+ 如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中偵錯時，透過選擇 [偵錯]  >  > 。  
   
 > [!NOTE]
 >  如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
@@ -89,7 +85,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>檢查 JavaScript 主控台視窗中的物件  
  當您使用 JavaScript 主控台視窗時，可以與範圍內的任何物件互動。 若要在主控台視窗中檢查超出範圍的物件，請從您的程式碼使用 `console.log` 、 `console.dir`或其他命令。 或者，當物件在範圍內時，可以在程式碼中設定中斷點 ([中斷點] > **Insert**)，即可從主控台視窗與物件互動。  
   
-##  <a name="ConsoleLog"></a>格式化 console.log 輸出  
+##  <a name="ConsoleLog"></a> 格式化 console.log 輸出  
  如果您將多個引數傳遞至 `console.log`，主控台會將這些引數視為陣列處理並串連輸出。  
   
 ```javascript  
@@ -133,6 +129,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

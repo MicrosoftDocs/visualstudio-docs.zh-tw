@@ -1,27 +1,22 @@
 ---
-title: "說明功能表命令 |Microsoft 文件"
-ms.custom: 
+title: 說明功能表命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8736054902a4c9bfc59d67732e670710fc7c6d43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
 **協助**功能表提供命令來開啟說明檔案。  

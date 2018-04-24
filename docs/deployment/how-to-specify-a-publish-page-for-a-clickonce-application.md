@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定 ClickOnce 應用程式的發行頁面 |Microsoft 文件"
-ms.custom: 
+title: 如何： 指定 ClickOnce 應用程式的發行頁面 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - publishing, ClickOnce
 - ClickOnce deployment, specifying publish page
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
-caps.latest.revision: "18"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 491ef29c955c5ab06b8539ec5089f2ed32feaf36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 應用程式的發行頁面
 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，產生並與應用程式發行預設網頁 (publish.htm)。 此頁面包含的應用程式、 安裝應用程式和/或任何必要條件，以及說明主題描述的連結名稱[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **發行頁**為您的專案屬性可讓您指定的網頁名稱您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -61,7 +58,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  在**發行選項**對話方塊中，清除**發行之後開啟部署網頁**核取方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何： 自訂 ClickOnce 預設 Web 網頁](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

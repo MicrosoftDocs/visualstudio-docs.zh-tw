@@ -1,32 +1,27 @@
 ---
-title: "檢視事件使用 IntelliTrace |Microsoft 文件"
-ms.custom: 
+title: 檢視事件使用 IntelliTrace |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 3fd43297dcf6a15e7d064809a5c4b5091f51ac63
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>檢視事件，Visual Studio 中的 IntelliTrace
 您可以使用 IntelliTrace 收集特定事件或事件分類的相關資訊，或是事件及個別函式呼叫的相關資訊。 下列程序說明如何執行此作業。  
   
  您可以在 Visual Studio Enterprise 版本，而非 Professional 或 Community 版本中使用 IntelliTrace。  
   
-##  <a name="GettingStarted"></a>設定 Intellitrace  
+##  <a name="GettingStarted"></a> 設定 Intellitrace  
  您可以嘗試只針對 IntelliTrace 事件進行偵錯。 IntelliTrace 事件是偵錯工具事件、例外狀況、.NET Framework 事件，以及其他系統事件。 您應在開始偵錯之前，先開啟或關閉特定事件，以控制 IntelliTrace 所記錄的事件。 如需詳細資訊，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
  - 開啟檔案存取的 IntelliTrace 事件。 移至**工具 > 選項 > IntelliTrace > IntelliTrace 事件**頁面，然後展開**檔案**類別目錄。 核取 [檔案]  事件分類。 這會核取所有的檔案事件 (存取、關閉、刪除)。
@@ -74,7 +69,7 @@ ms.lasthandoff: 01/29/2018
   
      下列螢幕擷取畫面來自 Visual Studio 2015 Update 1。  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
   
      您可以選擇路徑名稱連結來開啟該檔案。 如果無法使用完整路徑名稱，會顯示 [開啟檔案 ]  對話方塊。  
   
@@ -82,7 +77,7 @@ ms.lasthandoff: 01/29/2018
   
      下列螢幕擷取畫面來自 Visual Studio 2015 Update 1。  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging 更新 1")  
   
 4.  如果沒有發現 Bug，請嘗試檢查導致 Bug 的其他事件。 您也可以讓 IntelliTrace 記錄呼叫資訊，以便您能逐步執行函式呼叫。 
   

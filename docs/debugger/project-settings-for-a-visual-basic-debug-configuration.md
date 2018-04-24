@@ -1,13 +1,9 @@
 ---
-title: "Visual Basic 偵錯組態的專案設定 |Microsoft 文件"
-ms.custom: 
+title: Visual Basic 偵錯組態的專案設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vbProjectPropertiesDebug
 dev_langs:
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debug configurations, Visual Basic
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 76f9b469f4c404c543d6da0a3370fbf8f94ad799
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 您可以變更的專案設定[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]偵錯組態中的**屬性頁**視窗中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁**視窗。  
@@ -62,5 +57,5 @@ ms.lasthandoff: 01/22/2018
 |**定義 DEBUG 常數**|定義這個符號可以啟用條件式編譯的輸出函式，從[Debug 類別](/dotnet/api/system.diagnostics.debug)。 定義這個符號，Debug 類別方法會產生輸出[輸出 視窗](../ide/reference/output-window.md)。 如果沒有這個符號，Debug 類別方法便不會編譯，也不會產生輸出。 這個符號應該會定義在偵錯版本，且不會定義在發行版本中。 在發行版本定義這個符號會建立減慢程式速度的無用程式碼。|  
 |**定義 TRACE 常數**|定義這個符號可以啟用條件式編譯的輸出函式，從[Trace 類別](/dotnet/api/system.diagnostics.trace.aspx)。 定義這個符號，Trace 類別方法會產生輸出[輸出 視窗](../ide/reference/output-window.md)。 如果沒有這個符號，Trace 類別方法便不會編譯，且不會產生輸出。 根據預設，這個符號已定義於偵錯版本和發行版本中。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

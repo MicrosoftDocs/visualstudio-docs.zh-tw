@@ -1,23 +1,19 @@
 ---
-title: "開始使用 Visual Studio 圖形診斷 |Microsoft 文件"
-ms.custom: 
+title: 開始使用 Visual Studio 圖形診斷 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: c2804b07db0b7cf8d01c8578877d4b722d6ceb96
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。  
@@ -32,7 +28,7 @@ ms.lasthandoff: 02/01/2018
   
  如需安裝圖形工具的詳細資訊，請參閱[安裝圖形工具適用於 Windows 10](#InstallGraphicsTools)。  
   
-##  <a name="InstallGraphicsTools"></a>安裝適用於 Windows 10 的圖形工具  
+##  <a name="InstallGraphicsTools"></a> 安裝適用於 Windows 10 的圖形工具  
  在 Windows 10 中，圖形診斷基礎結構由稱為 Windows 的選用功能*圖形工具*。 不論所擷取應用程式的目標設為舊版 Windows 還是它所使用的 Direct3D 版本，都需要有這項功能，才能在 Windows 10 上擷取和播放圖形資訊。 您可以選擇事先安裝圖形工具功能；否則它會在第一次從 Visual Studio 啟動圖形診斷工作階段時視需要安裝。  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>安裝適用於 Windows 10 的圖形工具  
@@ -58,7 +54,7 @@ ms.lasthandoff: 02/01/2018
 ### <a name="1---create-a-direct3d-app"></a>1 - 建立 Direct3D 應用程式  
  如果您已經有專屬 Direct3D 應用程式來瀏覽圖形診斷，很好 ！ 否則，請使用下列其中一項：
 
-- **DirectX 11 應用程式 (通用 Windows)**或**DirectX 12 應用程式 (通用 Windows)** for Windows 10 專案範本。
+- **DirectX 11 應用程式 (通用 Windows)** 或**DirectX 12 應用程式 (通用 Windows)** for Windows 10 專案範本。
 - [Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)for Windows 10。  
   
  繼續前請先確定您可以建置應用程式。  
@@ -91,5 +87,5 @@ ms.lasthandoff: 02/01/2018
   
  若要深入了解如何搭配使用圖形分析器工具，請參閱[範例](graphics-diagnostics-examples.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Direct3D 12 的圖形](http://msdn.microsoft.com/en-us/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)

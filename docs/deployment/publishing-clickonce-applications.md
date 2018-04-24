@@ -1,13 +1,9 @@
 ---
-title: "發行 ClickOnce 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 發行 ClickOnce 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Options
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.PublishWizard.Help
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publishing-clickonce-applications"></a>發行 ClickOnce 應用程式
 首次發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，可以使用 [發行精靈] 來設定發行屬性。 這個精靈僅提供少數屬性；所有其他屬性都設為其預設值。  
@@ -106,6 +101,6 @@ ms.lasthandoff: 12/22/2017
 |[逐步解說：為 ClickOnce 應用程式建立自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|  
 |[如何：發行已啟用視覺樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 參考](../deployment/clickonce-reference.md)

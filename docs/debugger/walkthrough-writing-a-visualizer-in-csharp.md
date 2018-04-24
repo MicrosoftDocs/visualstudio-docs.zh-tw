@@ -2,29 +2,24 @@
 title: 逐步解說： 在 C# 中撰寫視覺化檢視 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 490c2c2b15eff701cee751b57bbf55024910beab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C# 中撰寫視覺化檢視 #
 本逐步解說示範如何使用 C# 撰寫簡單的視覺化檢視。 您將在本逐步解說中建立的視覺化檢視會顯示使用 Windows form 訊息方塊字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視其他資料類型時，必須遵循的基本步驟。  
@@ -42,7 +37,7 @@ ms.lasthandoff: 01/02/2018
   
 1.  在**檔案**功能表上，選擇**新增 > 專案**。  
   
-2.  在**新專案**對話方塊的  **Visual C#**，選取**.NET 標準**。  
+2.  在**新專案**對話方塊的  **Visual C#**，選取 **.NET 標準**。  
   
 3.  在中間窗格中，選擇 **類別庫**。  
   
@@ -59,11 +54,11 @@ ms.lasthandoff: 01/02/2018
 2.  將名稱從 Class1.cs 變更為有意義，例如 debuggerside.cs 中的項目。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]自動變更的類別宣告在 debuggerside.cs 中，以符合新的檔案名稱。  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動變更的類別宣告在 debuggerside.cs 中，以符合新的檔案名稱。  
   
 3.  在**方案總管 中**，以滑鼠右鍵按一下**參考**選擇**加入參考**快顯功能表。  
   
-4.  在**加入參考**對話方塊**.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
+4.  在**加入參考**對話方塊 **.NET**索引標籤上，選擇 Microsoft.VisualStudio.DebuggerVisualizers.DLL。  
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -89,7 +84,7 @@ ms.lasthandoff: 01/02/2018
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`有一個抽象方法 (`Show`)，您必須覆寫。  
+ `DialogDebuggerVisualizer` 有一個抽象方法 (`Show`)，您必須覆寫。  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>若要覆寫 DialogDebuggerVisualizer.Show 方法  
   
@@ -107,7 +102,7 @@ ms.lasthandoff: 01/02/2018
   
 1.  在**方案總管 中**，以滑鼠右鍵按一下**參考**選擇**加入參考**快顯功能表。  
   
-2.  在**加入參考**對話方塊**.NET**索引標籤上，選擇 System.Windows.Forms.DLL。  
+2.  在**加入參考**對話方塊 **.NET**索引標籤上，選擇 System.Windows.Forms.DLL。  
   
 3.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -237,7 +232,7 @@ ms.lasthandoff: 01/02/2018
   
 1.  在**檔案**功能表上，選擇**新增 > 專案**。  
   
-2.  在**新專案**對話方塊的  **Visual C#**，選取**.NET 標準**。  
+2.  在**新專案**對話方塊的  **Visual C#**，選取 **.NET 標準**。  
   
 3.  在中間窗格中，選擇 **類別庫**。   
   
@@ -261,7 +256,7 @@ ms.lasthandoff: 01/02/2018
   
  這是所有步驟。 查看 SecondVisualizer.cs 的檔案，並檢視範本新增為您的程式碼。 請繼續並實驗程式碼。 現在，您知道的基本概念，您會在您建立您自己的更複雜且實用的視覺化檢視。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
  [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

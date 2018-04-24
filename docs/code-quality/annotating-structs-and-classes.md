@@ -1,9 +1,7 @@
 ---
-title: 註釋結構和類別 |Microsoft 文件
-ms.custom: ''
+title: 註釋結構和類別
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -23,64 +21,57 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2735ae7ba6763a3006edce146df1b19cbaed2f2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005cbb77fa0c2bc7c1b788b5076b425a2a8e363e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
-您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。  
-  
-## <a name="struct-and-class-annotations"></a>結構和類別的附註  
-  
--   `_Field_range_(low, high)`  
-  
-     欄位是在範圍中 （含） 從`low`至`high`。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。  
-  
--   `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`  
-  
-     欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。  
-  
--   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
-  
-     欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。  
-  
--   `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)``_Field_size_bytes_full_opt_(size)`  
-  
-     具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。  
-  
--   `_Struct_size_bytes_(size)`  
-  
-     具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。  
-  
-     套用至結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:   
-  
-    ```cpp  
-  
-    typedef _Struct_size_bytes_(nSize)  
-    struct MyStruct {  
-        size_t nSize;  
-        ...  
-    };  
-  
-    ```  
-  
-     緩衝區大小，以位元組為單位的參數`pM`型別的`MyStruct *`便會進入是：  
-  
-    ```cpp  
-    min(pM->nSize, sizeof(MyStruct))  
-    ```  
-  
-## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [了解 SAL](../code-quality/understanding-sal.md)   
- [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
- [註釋函式行為](../code-quality/annotating-function-behavior.md)   
- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
- [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [內建函式](../code-quality/intrinsic-functions.md)   
- [最佳作法和範例](../code-quality/best-practices-and-examples-sal.md)
+您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。
+
+## <a name="struct-and-class-annotations"></a>結構和類別的附註
+
+-   `_Field_range_(low, high)`
+
+     欄位是在範圍中 （含） 從`low`至`high`。  相當於使用適當的前置或後置條件套用至已標註物件的 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`。
+
+-   `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)``_Field_size_bytes_opt_(size)`
+
+     欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定。
+
+-   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+
+     欄位，其可寫入的大小是由 `size` 以項目 (或位元組) 為單位指定，而且可以讀取這些項目 (位元組) 的 `count`。
+
+-   `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)``_Field_size_bytes_full_opt_(size)`
+
+     具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
+
+-   `_Struct_size_bytes_(size)`
+
+     具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。
+
+     套用至結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如: 
+
+    ```cpp
+
+    typedef _Struct_size_bytes_(nSize)
+    struct MyStruct {
+        size_t nSize;
+        ...
+    };
+
+    ```
+
+     緩衝區大小，以位元組為單位的參數`pM`型別的`MyStruct *`便會進入是：
+
+    ```cpp
+    min(pM->nSize, sizeof(MyStruct))
+    ```
+
+## <a name="see-also"></a>另請參閱
+ [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)[註釋函式行為](../code-quality/annotating-function-behavior.md)[註釋鎖定行為](../code-quality/annotating-locking-behavior.md)[指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)[內建函式](../code-quality/intrinsic-functions.md)[最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

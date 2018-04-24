@@ -1,13 +1,9 @@
 ---
-title: "管理 Visual Studio 偵錯工具例外 |Microsoft 文件"
-ms.custom: 
+title: 管理 Visual Studio 偵錯工具例外 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +29,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中偵錯工具的例外狀況
 
@@ -139,13 +134,13 @@ ms.lasthandoff: 01/29/2018
     }  
     ```  
   
-     如果您有**了 AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在 throwhandledexception`throw`在這兩行**Throwunhandledexception （)**和**Throwunhandledexception**。  
+     如果您有**了 AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在 throwhandledexception`throw`在這兩行**Throwunhandledexception （)** 和**Throwunhandledexception**。  
   
  如果您想要將例外狀況設定還原為預設值，您可以按一下工具列上的 [還原]  按鈕：  
   
  ![還原成預設值例外狀況設定](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>告知偵錯工具繼續處理使用者未處理的例外狀況  
+##  <a name="BKMK_UserUnhandled"></a> 告知偵錯工具繼續處理使用者未處理的例外狀況  
  如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
 1.  在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
@@ -156,7 +151,7 @@ ms.lasthandoff: 01/29/2018
   
  例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](http://www.asp.net/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
   
- ![使用者 &#45;符號，則為例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![在使用者中斷&#45;例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>加入及刪除例外狀況  
  您可以新增及刪除例外狀況。 您可以從任何類別目錄刪除任何類型的例外狀況，方法是選取此例外狀況，並按下 [例外狀況設定]  工具列上的 [刪除]  按鈕 (減號)，或以滑鼠右鍵按一下此例外狀況，然後從內容功能表選取 [刪除]  。 刪除例外狀況和未核取例外狀況有相同的效果，也就是偵錯工具並不會在其擲回時中斷。  
@@ -190,13 +185,13 @@ public class GenericException<T> : Exception
 您可以設定條件中的例外狀況上**例外狀況設定** 對話方塊。 目前支援的狀況包括要包含或排除例外狀況的模組名稱。 藉由設定模組名稱作為條件，您可以選擇只在特定的程式碼模組，例外狀況中斷，或可以避免在特定的模組上中斷。
 
 > [!NOTE]
-> 將條件加入至例外狀況的新功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> 將條件加入至例外狀況的新功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 若要加入條件式的例外狀況，請選擇**編輯條件**例外狀況設定 對話方塊中的圖示方塊或以滑鼠右鍵按一下 例外狀況，並選擇 **編輯條件**。
 
 ![例外狀況的條件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)   
  [如何： 在例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   

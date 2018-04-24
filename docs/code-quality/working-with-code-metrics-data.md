@@ -1,9 +1,7 @@
 ---
-title: Visual Studio 中的程式碼度量結果視窗 |Microsoft 文件
-ms.custom: ''
+title: Visual Studio 中的程式碼度量結果視窗
 ms.date: 12/12/2017
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
@@ -16,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8663b2c8d0fe4de4fa4b2073827175e7bc65a91a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0053bcc23d8bb56a052e8d9203c08ce3ed17f2f9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-code-metrics-results-window"></a>使用程式碼度量結果視窗
 

@@ -2,28 +2,23 @@
 title: IDiaTable |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e95c469bb3a1d8747a7f1dabfadec24dc991730c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiatable"></a>IDiaTable
 列舉 DIA 資料來源資料表。  
@@ -72,7 +67,7 @@ IDiaTable : IEnumUnknown
  第一個函式， `ShowTableNames`，工作階段中會顯示所有資料表的名稱。 第二個函式， `GetTable`，搜尋所有資料表，用於實作指定的介面的資料表。 第三個函式， `UseTable`，示範如何使用`GetTable`函式。  
   
 > [!NOTE]
->  `CDiaBSTR`是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
+>  `CDiaBSTR` 是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  
@@ -143,7 +138,7 @@ void UseTable(IDiaSession *pSession)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   

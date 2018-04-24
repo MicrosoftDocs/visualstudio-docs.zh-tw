@@ -1,28 +1,25 @@
 ---
-title: "在 Blend 中的 XAML 偵錯 |Microsoft 文件"
-ms.custom: 
+title: 在 Blend 中的 XAML 偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 您可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，任何錯誤都會顯示在**結果**面板。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果您需要更多工作空間，您可以隱藏**結果**按 F12 的面板。  
@@ -109,13 +106,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  按兩下清單中的第一個錯誤。 這個錯誤的描述是「值 '<' 不是有效的屬性」。 當您按兩下錯誤時，指標隨即找到程式碼中對應的位置。 `<` 前面的 `Button` 為有效字元，並非錯誤訊息中建議的屬性。 如果查看前一行程式碼，您會注意到 `Top` 屬性的右引號不見了。 請輸入右引號。 請注意，中的錯誤清單**結果**面板更新以反映您的變更。  
   
-2.  按兩下描述"'0' 不是有效名稱的開頭。 」 `Margin="0,149,0,0"`似乎格式正確。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 中的錯誤清單**結果**面板更新以反映您的變更。  
+2.  按兩下描述"'0' 不是有效名稱的開頭。 」 `Margin="0,149,0,0"` 似乎格式正確。 但是，請注意 `Margin` 的色彩標示與程式碼中的其他 `Margin` 執行個體不符。 由於這個 `VerticalAlignment="Top` 前方的名稱/值組少了右引號 (`Margin="`)，因此就被視為屬於前一個屬性的值，導致 0 被視為名稱/值組的開頭。 請輸入 `Top` 的右引號。 中的錯誤清單**結果**面板更新以反映您的變更。  
   
 3.  按兩下剩餘的錯誤 [關閉的 XML 標籤 "Button" 不相符]。 滑鼠指標位於結尾**方格**標記 (`</Grid>`)，建議錯誤發生在`Grid`物件。 請注意，第二個 `Button` 物件少了結尾標記。 您加入結尾之後`/`、**結果**面板清單也隨即更新。 我們現在已經解決一開始出現的錯誤，但是又出現了兩個錯誤。  
   
 4.  按兩下 [無法識別或無法存取成員 "content"。]， `c` 中的 `content` 應該是大寫才對。 請將小寫 "c" 改成大寫 "C"。  
   
-5.  按兩下 [屬性 "Mame" 不存在於 "http://schemas.microsoft.com/winfx/2006/xaml" 命名空間。]， "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
+5.  按兩下 「 屬性 'Mame' 不存在於 'http://schemas.microsoft.com/winfx/2006/xaml' 命名空間。 」 "Mame" 中的 "M" 應該是 "N" 才對。 請將 "M" 改成 "N"。 現在已經可以解析 XAML，應用程式也隨即顯示在設計介面上。  
   
      ![在 Blend for Visual Studio 中的 XAML 偵錯](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

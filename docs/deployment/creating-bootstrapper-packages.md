@@ -1,13 +1,9 @@
 ---
-title: "建立啟動載入器套件 |Microsoft 文件"
-ms.custom: 
+title: 建立啟動載入器套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 794d569504e46627c9387046b381fdb843a7818e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-bootstrapper-packages"></a>建立啟動載入器套件
 安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (.msi) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  
@@ -127,7 +122,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 </FileList>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)   

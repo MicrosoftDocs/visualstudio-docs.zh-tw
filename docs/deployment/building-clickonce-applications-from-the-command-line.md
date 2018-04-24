@@ -1,12 +1,9 @@
 ---
-title: "建立 ClickOnce 應用程式，從命令列 |Microsoft 文件"
-ms.custom: 
+title: 建立 ClickOnce 應用程式，從命令列 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只剩的另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在集中建置實驗室，或使用進階指令碼技術建置專案本身的範圍之外。  
@@ -112,7 +109,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  在控制發行內容[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從**發行**，**安全性**，和**簽署**屬性頁的**專案設計工具**. 以下是發行的內容，並指出每個應用程式的設計工具的各種屬性頁面中的設定方式的描述：  
   
--   `AssemblyOriginatorKeyFile`用來簽署的金鑰檔會決定您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 此相同金鑰也可用來將強式名稱指派給您的組件。 設定此屬性**簽署**頁面**專案設計工具**。  
+-   `AssemblyOriginatorKeyFile` 用來簽署的金鑰檔會決定您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 此相同金鑰也可用來將強式名稱指派給您的組件。 設定此屬性**簽署**頁面**專案設計工具**。  
   
  下列屬性會設**安全性**頁面：  
   
@@ -122,41 +119,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  下列屬性會設**發行**頁面：  
   
--   `PublishUrl`是其中的應用程式將會發行至 IDE 中的位置。 它會插入至[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單，如果沒有`InstallUrl`或`UpdateUrl`指定屬性。  
+-   `PublishUrl` 是其中的應用程式將會發行至 IDE 中的位置。 它會插入至[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單，如果沒有`InstallUrl`或`UpdateUrl`指定屬性。  
   
--   `ApplicationVersion`指定的版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這是四位數的版本號碼。 如果最後一個數字是"*"，則`ApplicationRevision`替換為在建立時期插入資訊清單的值。  
+-   `ApplicationVersion` 指定的版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這是四位數的版本號碼。 如果最後一個數字是"*"，則`ApplicationRevision`替換為在建立時期插入資訊清單的值。  
   
--   `ApplicationRevision`指定修訂版本。 這是為您在 IDE 中發行每次遞增的整數。 請注意，它不會自動累加建置在命令列執行。  
+-   `ApplicationRevision` 指定修訂版本。 這是為您在 IDE 中發行每次遞增的整數。 請注意，它不會自動累加建置在命令列執行。  
   
--   `Install`判斷應用程式是否已安裝的應用程式或執行從 Web 應用程式。  
+-   `Install` 判斷應用程式是否已安裝的應用程式或執行從 Web 應用程式。  
   
--   `InstallUrl`（未顯示） 是使用者安裝應用程式的位置。 如果指定，如果將這個值燒錄到 setup.exe 的啟動載入器`IsWebBootstrapper`屬性已啟用。 它也會插入至應用程式資訊清單 if`UpdateUrl`未指定。  
+-   `InstallUrl` （未顯示） 是使用者安裝應用程式的位置。 如果指定，如果將這個值燒錄到 setup.exe 的啟動載入器`IsWebBootstrapper`屬性已啟用。 它也會插入至應用程式資訊清單 if`UpdateUrl`未指定。  
   
--   `SupportUrl`（未顯示） 已位置連結，以**新增/移除程式**安裝的應用程式 對話方塊。  
+-   `SupportUrl` （未顯示） 已位置連結，以**新增/移除程式**安裝的應用程式 對話方塊。  
   
  下列屬性設定**應用程式更新**對話方塊中，從存取**發行**頁面。  
   
--   `UpdateEnabled`指出是否應該檢查更新的應用程式。  
+-   `UpdateEnabled` 指出是否應該檢查更新的應用程式。  
   
--   `UpdateMode`指定更新前景或背景更新。  
+-   `UpdateMode` 指定更新前景或背景更新。  
   
--   `UpdateInterval`指定應用程式應該要檢查更新的頻率。  
+-   `UpdateInterval` 指定應用程式應該要檢查更新的頻率。  
   
--   `UpdateIntervalUnits`指定是否`UpdateInterval`值是以小時、 天或週為單位。  
+-   `UpdateIntervalUnits` 指定是否`UpdateInterval`值是以小時、 天或週為單位。  
   
--   `UpdateUrl`（未顯示） 是應用程式將從其接收更新的位置。 如果指定，這個值會插入應用程式資訊清單中。  
+-   `UpdateUrl` （未顯示） 是應用程式將從其接收更新的位置。 如果指定，這個值會插入應用程式資訊清單中。  
   
 -   下列屬性設定**發行選項**對話方塊中，從存取**發行**頁面。  
   
--   `PublisherName`指定在安裝或執行應用程式時所顯示的提示中顯示 「 發行者 」 的名稱。 如果是已安裝的應用程式，它也用來指定資料夾名稱上**啟動**功能表。  
+-   `PublisherName` 指定在安裝或執行應用程式時所顯示的提示中顯示 「 發行者 」 的名稱。 如果是已安裝的應用程式，它也用來指定資料夾名稱上**啟動**功能表。  
   
--   `ProductName`指定在安裝或執行應用程式時所顯示的提示中顯示的產品名稱。 如果是已安裝的應用程式，它也用於指定捷徑名稱上**啟動**功能表。  
+-   `ProductName` 指定在安裝或執行應用程式時所顯示的提示中顯示的產品名稱。 如果是已安裝的應用程式，它也用於指定捷徑名稱上**啟動**功能表。  
   
 -   下列屬性設定**必要條件**對話方塊中，從存取**發行**頁面。  
   
--   `BootstrapperEnabled`決定是否要產生的 setup.exe 啟動載入器。  
+-   `BootstrapperEnabled` 決定是否要產生的 setup.exe 啟動載入器。  
   
--   `IsWebBootstrapper`決定 setup.exe 啟動載入器是否可透過網頁或以磁碟為基礎的模式。  
+-   `IsWebBootstrapper` 決定 setup.exe 啟動載入器是否可透過網頁或以磁碟為基礎的模式。  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL 和 UpdateURL  
  下表顯示四個 ClickOnce 部署的 URL 選項。  
@@ -168,7 +165,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |`SupportURL`|選擇性。 設定此 URL 選項，如果支援站台不同`PublishURL`。 例如，您可以設定`SupportURL`至貴公司的客戶支援的網站。|  
 |`UpdateURL`|選擇性。 設定此 URL 選項，如果不同的更新位置`InstallURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`UpdateURL`至網頁的 URL。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   

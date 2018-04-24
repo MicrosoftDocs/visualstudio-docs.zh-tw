@@ -2,26 +2,21 @@
 title: 使用 c + + 使用 Visual Studio 偵錯工具進行偵錯 |Microsoft 文件
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4625eed883cfd3a2f0c5db42588ce457ce16f2c2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: f591c4272dc50643dcb3c82f60d96fd218723405
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>使用 c + + 使用 Visual Studio 偵錯工具進行偵錯
 

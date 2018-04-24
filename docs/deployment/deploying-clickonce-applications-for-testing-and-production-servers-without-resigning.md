@@ -1,12 +1,9 @@
 ---
-title: "部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章 |Microsoft 文件"
-ms.custom: 
+title: 部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b4c71e1bd6f224fdd0198ce7850c92364126d7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章
 本主題討論 ClickOnce 引進.NET Framework 3.5 版可讓部署 ClickOnce 應用程式，從多個網路位置，而不需要重新簽署，或變更 ClickOnce 資訊清單中的新功能。  
@@ -54,17 +51,17 @@ ms.lasthandoff: 12/22/2017
   
  要記得的重點是，排除的應用程式`deploymentProvider`無法在更新期間變更其安裝位置，直到它們寄送包含的更新`deploymentProvider`標記一次。  
   
- 以下是兩個範例說明此點。 在第一個範例中，您可以發行 ClickOnce 應用程式沒有`deploymentProvider`標記，而且您要求使用者從 http://www.adatum.com/MyApplication/ 進行安裝。 如果您決定您想要發佈下一個 http://subdomain.adatum.com/MyApplication/ 從應用程式的更新，您必須表示這位於 http://www.adatum.com/MyApplication/ 部署資訊清單中的任何方法。 您可以執行下列任一步驟：  
+ 以下是兩個範例說明此點。 在第一個範例中，您可以發行 ClickOnce 應用程式沒有`deploymentProvider`標記，而且您要求使用者安裝從http://www.adatum.com/MyApplication/。 如果您決定您想要發佈的應用程式下次的更新http://subdomain.adatum.com/MyApplication/，您會有任何方式這表示在部署資訊清單位於http://www.adatum.com/MyApplication/。 您可以執行下列任一步驟：  
   
 -   告知使用者解除安裝先前的版本，並安裝新版本從新位置。  
   
--   包含在包含 http://www.adatum.com/MyApplication/ 更新`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/。  
+-   在 包含更新http://www.adatum.com/MyApplication/包含`deploymentProvider`指向http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向http://subdomain.adatum.com/MyApplication/。  
   
- 在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，和您決定將它移除。 一次新的版本不含`deploymentProvider`已下載至用戶端，您將無法用於更新，直到您發行的版本具有應用程式的路徑重新導向`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`參考 http://subdomain.adatum.com/MyApplication/，則下次的更新將會失敗。  
+ 在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，和您決定將它移除。 一次新的版本不含`deploymentProvider`已下載至用戶端，您將無法用於更新，直到您發行的版本具有應用程式的路徑重新導向`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`參考http://subdomain.adatum.com/MyApplication/下, 一次更新將會失敗。  
   
 ## <a name="creating-a-deployment"></a>建立部署  
  如需建立可從不同的網路位置部署的部署的逐步指引，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署，並會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (資訊清單產生和編輯工具、圖形用戶端)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

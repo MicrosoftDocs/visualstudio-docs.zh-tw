@@ -1,10 +1,8 @@
 ---
-title: ： Ca1722 識別項應該不正確的前置字元 |Microsoft 文件
-ms.custom: ''
+title: CA1722：識別項不應使用不正確的前置字元
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
 - CA1722
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e95ef8daa7ed7fc7da4de4b99c677ef92559acb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c67fef3e9c3b4186b491e624067c1928c2947102
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：識別項不應使用不正確的前置字元
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotHaveIncorrectPrefix|  
-|CheckId|CA1722|  
-|分類|Microsoft.Naming|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 識別項具有不正確的前置詞。  
-  
-## <a name="rule-description"></a>規則描述  
- 根據慣例，只有特定程式設計項目的名稱會以特定的前置字元做為開頭。  
-  
- 類型名稱不前面應該要有 'C'，就不需要特定的前置詞。 此規則會報告違規的型別名稱，例如 'CMyClass' 並不會報告違規的型別名稱，例如 '快取'。  
-  
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 識別項中移除前置詞。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 請勿隱藏此規則的警告。  
-  
-## <a name="related-rules"></a>相關的規則  
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
+|CheckId|CA1722|
+|分類|Microsoft.Naming|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 識別項具有不正確的前置詞。
+
+## <a name="rule-description"></a>規則描述
+ 根據慣例，只有特定程式設計項目的名稱會以特定的前置字元做為開頭。
+
+ 類型名稱不前面應該要有 'C'，就不需要特定的前置詞。 此規則會報告違規的型別名稱，例如 'CMyClass' 並不會報告違規的型別名稱，例如 '快取'。
+
+ 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 識別項中移除前置詞。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 請勿隱藏此規則的警告。
+
+## <a name="related-rules"></a>相關的規則
  [CA1715：識別項名稱應該使用正確的前置字元](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

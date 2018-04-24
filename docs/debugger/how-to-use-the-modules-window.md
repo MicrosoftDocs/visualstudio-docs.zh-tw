@@ -2,12 +2,8 @@
 title: 在 偵錯工具中檢視的 Dll 和可執行檔 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - DLLs, displaying while debugging
 - modules, displaying
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
-caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 772c252265e15c3c928fbcc47c756ceafd9e1362
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 46dc913b95396e16f208611bcfc926378609bef6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Dll 和可執行檔使用 Visual Studio 偵錯工具中的 [模組] 視窗檢視
  
@@ -78,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  指向**自動符號載入設定**，然後按一下 **永遠手動載入**或**預設**。 在重新啟動偵錯工作階段之前，變更不會生效。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [中斷執行](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

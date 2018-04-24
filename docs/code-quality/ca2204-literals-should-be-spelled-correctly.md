@@ -1,5 +1,5 @@
 ---
-title: CA2204： 常值應該使用正確的拼字 |Microsoft 文件
+title: CA2204：常值必須使用正確的拼字
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b57f4b30ffcebf6c51aa8741a21392ea29719a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81989ebce0319669a03d62a504f87a0500400cd9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204：常值必須使用正確的拼字
 

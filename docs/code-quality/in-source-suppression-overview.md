@@ -1,25 +1,25 @@
 ---
-title: 隱藏在 Visual Studio 中的程式碼分析警告 |Microsoft 文件
+title: 隱藏在 Visual Studio 中的程式碼分析警告
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 1b057b13697fe1ec41fdca1bef27ccb03637f696
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 

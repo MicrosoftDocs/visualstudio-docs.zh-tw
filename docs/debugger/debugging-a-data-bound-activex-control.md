@@ -1,12 +1,9 @@
 ---
-title: "偵錯資料繫結的 ActiveX 控制項 |Microsoft 文件"
-ms.custom: 
+title: 偵錯資料繫結的 ActiveX 控制項 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - controls [Visual Studio], ActiveX
 ms.assetid: 9f6e1f00-e25b-48a9-8484-7e67a1232461
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 32cbb7bee21b54c932e0c369c46c3b2c3dacd898
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: df11571bb1e37d458fd647ce1524f67432617b8f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>偵錯資料繫結的 ActiveX 控制項
 如果您正在開發一個將繫結至資料來源控制項的 ActiveX 控制項，您可建立自己的容器應用程式，並使用該容器來偵錯 ActiveX 控制項。  
@@ -38,6 +35,6 @@ ms.lasthandoff: 12/22/2017
   
  如果您在偵錯時，需要逐步執行容器的程式碼，請使用容器的偵錯版本，或使用 ActiveX 測試容器的偵錯版本。 如需詳細資訊，請參閱[TSTCON 範例： ActiveX 控制項測試容器](http://msdn.microsoft.com/en-us/72fa40ef-27d3-400c-813f-10b03236e600)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
  [ActiveX 控制項](/cpp/mfc/activex-controls)

@@ -1,27 +1,24 @@
 ---
-title: "秘訣與訣竅 Visual Studio 偵錯工具中 |Microsoft 文件"
-ms.custom: 
+title: 秘訣與訣竅 Visual Studio 偵錯工具中 |Microsoft 文件
+ms.custom: ''
 ms.date: 06/15/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 729ea8e59f0b6efd6006308719cba19fbc8b5690
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具的 產能的秘訣和訣竅
 
@@ -88,7 +85,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="view-return-values-for-functions"></a>檢視函式的傳回值
 
-若要檢視您的函式的傳回值，請查看出現在函式**自動變數**時您逐步執行程式碼 視窗。 若要查看函式的傳回值，請確定您有興趣的函式已經執行 (按**F10**一次，如果您目前已停止在函式呼叫)。 如果視窗已關閉，使用**偵錯 > Windows > [自動變數]**開啟**自動變數**視窗。
+若要檢視您的函式的傳回值，請查看出現在函式**自動變數**時您逐步執行程式碼 視窗。 若要查看函式的傳回值，請確定您有興趣的函式已經執行 (按**F10**一次，如果您目前已停止在函式呼叫)。 如果視窗已關閉，使用**偵錯 > Windows > [自動變數]** 開啟**自動變數**視窗。
 
 ![[自動變數] 視窗](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
@@ -167,5 +164,5 @@ ms.lasthandoff: 12/22/2017
 - [在 Visual Studio 中偵錯的較小者已知的 hack 7](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [在 Visual Studio 中的 7 隱藏的珍貴](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)

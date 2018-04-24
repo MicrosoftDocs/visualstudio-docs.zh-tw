@@ -1,26 +1,23 @@
 ---
-title: "如何： 回應在 Just-in-time 偵錯工具 |Microsoft 文件"
-ms.custom: 
+title: 如何： 回應在 Just-in-time 偵錯工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 回應在 Just-in-time 偵錯工具
 
@@ -49,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 
 2. （ASP.NET 和 IIS）如果您裝載在 IIS 中的 ASP.NET Web 應用程式，停用伺服器端偵錯。
 
-    在 IIS 管理員 中，以滑鼠右鍵按一下伺服器節點，然後選擇 **切換到功能檢視**。 在 [ASP.NET] 區段中，選擇**.NET 編譯**，並確定您選擇**False**做為偵錯行為 （步驟都在舊版 IIS 不同）。
+    在 IIS 管理員 中，以滑鼠右鍵按一下伺服器節點，然後選擇 **切換到功能檢視**。 在 [ASP.NET] 區段中，選擇 **.NET 編譯**，並確定您選擇**False**做為偵錯行為 （步驟都在舊版 IIS 不同）。
   
-## <a name="see-also"></a>請參閱    
+## <a name="see-also"></a>另請參閱    
  [偵錯工具基礎](../debugger/debugger-basics.md)   

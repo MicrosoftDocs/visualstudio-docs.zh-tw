@@ -2,12 +2,8 @@
 title: 在 Visual Studio 偵錯工具中檢視呼叫堆疊 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +25,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d20a1ac9f1a09b93f577c6aa90f550ccd6ff0def
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>檢視呼叫堆疊，並使用 Visual Studio 偵錯工具中 [呼叫堆疊] 視窗
 
@@ -71,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
 **[\<外部程式碼 >]**  
   
-## <a name="bkmk_switch"></a>切換至另一個堆疊框架 （變更偵錯工具內容）
+## <a name="bkmk_switch"></a> 切換至另一個堆疊框架 （變更偵錯工具內容）
   
 1.  在**呼叫堆疊**視窗中，以滑鼠右鍵按一下堆疊框架之程式碼和您想要檢視的資料。
 
@@ -113,9 +108,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="change-the-optional-information-displayed"></a>變更顯示的選擇性資訊  
   
--   以滑鼠右鍵按一下**呼叫堆疊**視窗並設定或清除**顯示\<** *您想要的資訊* **>** .  
+-   以滑鼠右鍵按一下**呼叫堆疊**視窗並設定或清除**顯示\<***您想要的資訊***>**。  
   
-## <a name="bkmk_symbols"></a>模組載入符號
+## <a name="bkmk_symbols"></a> 模組載入符號
 在**呼叫堆疊**視窗中，您可以載入偵錯目前沒有載入的符號的程式碼的符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。  
   
 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
@@ -142,7 +137,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  按一下 [確定] 關閉 [選項] 對話方塊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫堆疊視窗內的混合程式碼和遺失的資訊](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  
  [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

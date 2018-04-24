@@ -1,23 +1,20 @@
 ---
-title: "逐步解說： 遺漏的物件因裝置狀態而 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 遺漏的物件因裝置狀態而 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c036ccc3865c7ea97c37eda31d802bfc5acbd5a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 295177c6ea34923668b4751ac2c9f5e0fcf9aeb9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為裝置狀態設定不正確而遺漏的物件。  

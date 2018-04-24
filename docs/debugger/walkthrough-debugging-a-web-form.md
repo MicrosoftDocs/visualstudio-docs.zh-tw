@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 偵錯 Web Form |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 偵錯 Web Form |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, Web Forms
 - debugging [Visual Studio], Web Forms
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 842b52d063b5de701c74501410e3249da7358776
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web Form
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 它會顯示您如何啟動及停止執行、 設定中斷點，以及在中檢查變數**監看式**視窗。  
@@ -53,7 +50,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**位置**行中，按一下**HTTP**從清單中，並在文字方塊中，請輸入**http://localhost/WebSite**。  
   
-5.  在**語言**清單中，按一下**Visual C#**或**Visual Basic**。  
+5.  在**語言**清單中，按一下**Visual C#** 或**Visual Basic**。  
   
 6.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -169,5 +166,5 @@ ms.lasthandoff: 12/22/2017
   
 6.  是在完成時在偵錯**偵錯**功能表上，按一下 **停止偵錯**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -1,12 +1,9 @@
 ---
-title: "啟用 ASP.NET 應用程式的偵錯 |Microsoft 文件"
+title: 啟用 ASP.NET 應用程式的偵錯 |Microsoft 文件
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>偵錯 Visual Studio 中的 ASP.NET 應用程式
 
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/05/2018
   
 3.  如果 `compilation` 項目未包含 `debug` 屬性，請將屬性加入項目中。  
   
-4.  請確定`debug`屬性值設為`true`。  
+4.  請確定 `debug` 屬性值設定為 `true`。  
   
 Web.config 檔案應該看起來像下列的範例：
 
@@ -142,7 +139,7 @@ IIS express，您不需要設定網頁伺服器 （略過這一節）。 IIS Exp
     > [!NOTE]
     > 如果您使用 Windows Server 2008 R2，請安裝 ASP.NET 4，改為使用這個命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 開啟**Internet Information Services (IIS) 管理員**。 (在伺服器管理員 的左窗格中選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取**網際網路資訊服務 (IIS) 管理員**。)
 
@@ -224,7 +221,7 @@ IIS express，web 應用程式會自動進行部署時開始偵錯 （略過這�
 > [!IMPORTANT]
 > 啟用偵錯模式會大幅影響效能的程式[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]應用程式。 請務必先停用偵錯模式，再部署發行應用程式或進行效能度量。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [ASP.NET 偵錯： 系統需求](aspnet-debugging-system-requirements.md)   
 [如何： 執行背景工作處理序的使用者帳戶](how-to-run-the-worker-process-under-a-user-account.md)   
 [如何： 尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)   

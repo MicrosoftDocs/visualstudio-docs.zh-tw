@@ -2,28 +2,23 @@
 title: 使用 IntelliTrace 獨立收集器 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
 - IntelliTrace, debugging applications in production
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
-caps.latest.revision: 105
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 410b8a979334edd1c333a43851f996da2b69bd03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。  
@@ -100,7 +95,7 @@ ms.lasthandoff: 04/10/2018
   
         1.  從下列資料夾複製 IntelliTraceCollection.cab：  
   
-             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+             **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
         2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如： **C:\IntelliTraceCollector**  
   
@@ -161,7 +156,7 @@ ms.lasthandoff: 04/10/2018
   
             -   在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行] 。  
   
-            -   在 32 位元作業系統上，開啟 **Windows PowerShell (x86)**的捷徑功能表。 選擇 [以系統管理員身分執行] 。  
+            -   在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行] 。  
   
     2.  在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。  
   

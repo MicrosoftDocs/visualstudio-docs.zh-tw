@@ -1,13 +1,9 @@
 ---
-title: "使用儲存的 IntelliTrace 資料 |Microsoft 文件"
-ms.custom: 
+title: 使用儲存的 IntelliTrace 資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。  
@@ -167,11 +162,11 @@ ms.lasthandoff: 01/09/2018
   
      例如:   
   
-     ![IntelliTrace &#45;SharePoint 錯誤 &#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  開啟 .iTrace 檔案，然後移至 [分析]  並輸入 SharePoint 相互關聯識別碼，以檢閱相符的 Web 要求和所記錄的事件。  
   
-     ![IntelliTrace 記錄檔 &#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![IntelliTrace 記錄檔&#45;輸入 SharePoint 相互關聯識別碼](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  在 [要求事件] 下方，檢查事件。 事件會依其發生順序從最上方開始顯示。  
   
@@ -179,7 +174,7 @@ ms.lasthandoff: 01/09/2018
   
     2.  選擇 [開始偵錯]  以開始在發生事件的位置點上進行偵錯。  
   
-     ![IntelliTrace 記錄檔 &#45;檢視 web 要求 &#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![IntelliTrace 記錄檔&#45;檢視 web 要求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  您可以一併查看下面這些類型的 SharePoint 事件和 IntelliTrace 事件：  
   
@@ -209,7 +204,7 @@ ms.lasthandoff: 01/09/2018
   
 3.  選擇 [偵錯例外狀況]  開始在發生例外狀況的位置及時間點上進行偵錯。  
   
-     ![IntelliTrace 記錄檔 &#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  如需逐步解說，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄中，看到的資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   

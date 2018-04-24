@@ -1,12 +1,9 @@
 ---
-title: "偵錯 Web 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Web 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - debugging [ASP.NET], about debugging ASP.NET Web applications
 - ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 本節將說明如何偵錯數種類型的 Web 應用程式。  
@@ -40,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  [對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  說明啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式偵錯的必要步驟。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   

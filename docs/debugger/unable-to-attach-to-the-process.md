@@ -1,12 +1,8 @@
 ---
-title: "無法附加至處理程序 |Microsoft 文件"
-ms.custom: 
+title: 無法附加至處理程序 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.unable2attach
@@ -17,21 +13,21 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15acb250c561cb1c7d414784f355a9239ead53ef
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 7036210f47e99ca11edbdb86fdf1f44e40829237
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 無法附加至處理序。 當連接至這部電腦時，伺服器上的偵錯工具元件會收到拒絕存取。  
   
  有兩種常見的案例是造成此錯誤的原因：  
   
- **案例 1:**電腦 A 正在執行 Windows XP。 電腦 B 執行的是 Windows Server 2003。 電腦 B 上的登錄會包含下列 DWORD 值：  
+ **案例 1:** 電腦 A 正在執行 Windows XP。 電腦 B 執行的是 Windows Server 2003。 電腦 B 上的登錄會包含下列 DWORD 值：  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
@@ -39,7 +35,7 @@ ms.lasthandoff: 02/01/2018
   
  使用者 2，兩台電腦上的系統管理員身份登入電腦 a從該處，他或她嘗試附加至電腦 b 上執行工作階段 1 中的應用程式  
   
- **案例 2:**一位使用者登入兩部電腦，A 和 B，在相同群組中，兩台電腦上使用相同的密碼。 電腦 A 上執行偵錯工具，而且嘗試附加至電腦 b 上執行的受管理應用程式已**網路存取： 共用和安全性模式用於本機帳戶**設**客體**。  
+ **案例 2:** 一位使用者登入兩部電腦，A 和 B，在相同群組中，兩台電腦上使用相同的密碼。 電腦 A 上執行偵錯工具，而且嘗試附加至電腦 b 上執行的受管理應用程式已**網路存取： 共用和安全性模式用於本機帳戶**設**客體**。  
   
 ### <a name="to-solve-scenario-1"></a>解決案例 1  
   
@@ -64,5 +60,5 @@ ms.lasthandoff: 02/01/2018
   
 7.  關閉所有視窗。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

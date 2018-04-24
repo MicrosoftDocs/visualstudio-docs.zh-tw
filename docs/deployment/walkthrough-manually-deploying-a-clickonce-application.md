@@ -1,13 +1,9 @@
 ---
-title: "逐步解說： 手動部署 ClickOnce 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 手動部署 ClickOnce 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您無法使用 Visual Studio 來部署您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，或您需要使用進階的部署功能，例如受信任的應用程式部署，您應該使用 Mage.exe 命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單。 本逐步解說描述如何建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用命令列版本 (Mage.exe) 或資訊清單產生和編輯工具的圖形化的版本 (MageUI.exe) 的部署。  
@@ -70,7 +65,7 @@ ms.lasthandoff: 12/22/2017
   
 -   判斷應用程式是否需要用戶端電腦上的必要條件。  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]從 Visual Studio 部署的應用程式可以包含必要的安裝啟動載入器 (setup.exe) 與您的部署。 這個逐步解說會建立兩個所需的資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 您可以使用，以建立必要啟動載入器[GenerateBootstrapper 工作](../msbuild/generatebootstrapper-task.md)。  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 Visual Studio 部署的應用程式可以包含必要的安裝啟動載入器 (setup.exe) 與您的部署。 這個逐步解說會建立兩個所需的資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 您可以使用，以建立必要啟動載入器[GenerateBootstrapper 工作](../msbuild/generatebootstrapper-task.md)。  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>使用 Mage.exe 命令列工具的應用程式部署  
   
@@ -128,7 +123,7 @@ ms.lasthandoff: 12/22/2017
   
 10. 將複製的所有檔案在部署目錄到部署目的地或媒體。 這可能是網站或 FTP 站台、 檔案共用或 CD-ROM 上的資料夾。  
   
-11. 為使用者提供 URL、 UNC 或安裝您的應用程式所需的實體媒體。 如果您提供的 URL 或 UNC，您必須讓使用者的完整路徑的部署資訊清單。 例如，如果 AppToDeploy 部署至 http://webserver01/ AppToDeploy 目錄中，完整的 URL 路徑將 http://webserver01/AppToDeploy/AppToDeploy.application。  
+11. 為使用者提供 URL、 UNC 或安裝您的應用程式所需的實體媒體。 如果您提供的 URL 或 UNC，您必須讓使用者的完整路徑的部署資訊清單。 例如，如果 AppToDeploy 部署至http://webserver01/AppToDeploy 目錄中，在完整的 URL 路徑是http://webserver01/AppToDeploy/AppToDeploy.application。  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>使用 MageUI.exe 圖形化工具的應用程式部署  
   
@@ -203,12 +198,12 @@ ms.lasthandoff: 12/22/2017
   
 28. 將複製的所有檔案在部署目錄到部署目的地或媒體。 這可能是網站或 FTP 站台、 檔案共用或 CD-ROM 上的資料夾。  
   
-29. 為使用者提供 URL、 UNC 或安裝您的應用程式所需的實體媒體。 如果您提供的 URL 或 UNC，您必須讓使用者在部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至 http://webserver01/ AppToDeploy 目錄中，完整的 URL 路徑將 http://webserver01/AppToDeploy/AppToDeploy.application。  
+29. 為使用者提供 URL、 UNC 或安裝您的應用程式所需的實體媒體。 如果您提供的 URL 或 UNC，您必須讓使用者在部署資訊清單的完整路徑。 例如，如果 AppToDeploy 部署至http://webserver01/AppToDeploy 目錄中，在完整的 URL 路徑是http://webserver01/AppToDeploy/AppToDeploy.application。  
   
 ## <a name="next-steps"></a>後續步驟  
  當您需要部署新版應用程式時，建立名為新版本之後的新目錄，例如 1.0.0.1—and 新應用程式檔案複製到新的目錄。 接著，您必須遵循上述步驟，建立和簽署新的應用程式資訊清單，並更新並簽署部署資訊清單。 小心指定在這兩個 Mage.exe 相同的更高版本`-New`和`-Update`呼叫，為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]更高版本中，只會更新具有最重要的最左邊的整數。 如果您使用 MageUI.exe，您可以更新部署資訊清單開啟它，選取**應用程式參考**索引標籤上，按一下**選取資訊清單**按鈕，然後再選取 更新應用程式資訊清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

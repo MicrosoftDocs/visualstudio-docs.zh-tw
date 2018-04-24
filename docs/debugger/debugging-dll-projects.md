@@ -1,12 +1,9 @@
 ---
-title: "偵錯 DLL 專案 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 DLL 專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>從 Visual Studio 偵錯 DLL 專案
 下列 Visual Studio 範本會建立 Dll:  
@@ -106,7 +103,7 @@ ms.lasthandoff: 12/22/2017
   
      這個中斷點會被叫用，而且您可以逐步執行 `Test`。 當執行離開 `Test`之後，偵錯工具會返回設計模式。
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>偵錯 c + + 專案外部 DLL
+## <a name="vxtskdebuggingdllprojectsexternal"></a> 偵錯 c + + 專案外部 DLL
 
 如果您在偵錯您的專案外部 DLL，偵錯功能 （例如逐步執行程式碼） 將取決於[DLL 的偵錯組態](#vxtskdebuggingdllprojectsbuildingadebugversion)以及其建置時是否[的.pdb檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)而提供其他所需的 DLL 檔案。
 
@@ -122,7 +119,7 @@ ms.lasthandoff: 12/22/2017
 
 如需有關專案設定的詳細資訊，請參閱[屬性頁 （Visual c + +）](/cpp/ide/property-pages-visual-cpp)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [Visual c + + 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   

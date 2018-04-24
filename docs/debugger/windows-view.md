@@ -2,35 +2,30 @@
 title: 視窗檢視 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-view"></a>視窗檢視
 當您第一次開啟 Spy + + 時，Windows 檢視會顯示系統中的所有視窗和控制項的樹狀結構。 視窗控制代碼和類別名稱會顯示。 目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層。 同層級視窗會顯示在其父代下方縮排的 expansible 清單。  
   
  下圖顯示典型的 Spy + + 視窗檢視以展開最上層節點。  
   
- ![Spy #43; &#43;視窗檢視](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
+ ![Spy&#43; &#43;視窗檢視](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
 Spy++ 視窗檢視  
   
  目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層中，依 z 軸順序排序的同層級視窗。 您可以展開或摺疊樹狀結構的任何父節點，只要按一下 + 或-之節點旁的符號。  

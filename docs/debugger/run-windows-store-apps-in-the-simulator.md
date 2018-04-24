@@ -1,28 +1,25 @@
 ---
-title: "UWP 應用程式在模擬器中執行 |Microsoft 文件"
-ms.custom: 
+title: UWP 應用程式在模擬器中執行 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>UWP 應用程式在模擬器中執行
 UWP 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 UWP 應用程式。 一般而言，您會想要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可以使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
@@ -98,7 +95,7 @@ UWP 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 
 > [!NOTE]
 >  您可以將點陣圖影像的已調整版本儲存在您的應用程式中，Windows 會載入目前比例的正確影像。 如需詳細資訊，請參閱[設計和 UI 的入門](/windows/uwp/layout/design-and-ui-intro)。 不過，如果您變更了模擬器解析度，因此 Windows 選擇了不同的影像來符合解析度，則您必須停止並重新開始偵錯工作階段，才能檢視新影像。  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>擷取螢幕擷取畫面以提交至 Microsoft 市集應用程式  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 擷取螢幕擷取畫面以提交至 Microsoft 市集應用程式  
  當您提交至 Microsoft 市集應用程式時，您必須包含應用程式的螢幕擷取畫面。  
   
 > [!NOTE]
@@ -152,5 +149,5 @@ UWP 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 
   
  您可以藉由按下關閉模擬器**CTRL + ALT + F4**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)

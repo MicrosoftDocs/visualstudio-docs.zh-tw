@@ -1,10 +1,8 @@
 ---
-title: CA1800： 請勿執行不必要的轉 |Microsoft 文件
-ms.custom: ''
+title: CA1800：請勿執行不必要的轉型
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1800
 - DoNotCastUnnecessarily
@@ -20,46 +18,46 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a8260b63e5f2206a124e98db9d519bd3dda6fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78aeac772e52f27b82e41fa66224f27ebfdee342
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：請勿執行不必要的轉型
-|||  
-|-|-|  
-|TypeName|DoNotCastUnnecessarily|  
-|CheckId|CA1800|  
-|分類|Microsoft.Performance|  
-|中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
+|||
+|-|-|
+|TypeName|DoNotCastUnnecessarily|
+|CheckId|CA1800|
+|分類|Microsoft.Performance|
+|中斷變更|非中斷|
+
+## <a name="cause"></a>原因
 方法會在其中一個引數或本機變數上執行重複轉型。
 
-此規則所完成的分析，請使用偵錯資訊，也必須建置測試的組件和相關聯的程式資料庫 (.pdb) 檔案必須能夠使用。  
-  
-## <a name="rule-description"></a>規則描述  
-重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 明確重複轉型作業轉型將結果儲存在本機變數，並使用此區域變數，而不是重複轉型作業。  
-  
-如果 C#`is`運算子用來測試是否轉型將會成功，實際的轉換執行之前，測試結果，請考慮`as`運算子改為。 這會提供相同的功能，而不會執行的隱含轉型作業`is`運算子。 或者，在 C# 7.0 和更新版本，使用`is`運算子搭配[模式比對](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)檢查型別轉換，並在該類型的變數將運算式轉換成以一個步驟。
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，請修改方法實作中的轉換作業數目降至最低。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 如果效能不重要的考量，就會隱藏此規則的警告，或完整地忽略此規則的安全。  
-  
-## <a name="examples"></a>範例  
- 下列範例顯示使用 C# 違反規則的方法`is`運算子。 第二種方法來取代符合規則`is`運算子與測試的結果`as`運算子，就會減少每個反覆項目從一到兩個型別轉換作業的數目。 第三個方法也會滿足規則使用`is`與[模式比對](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)建立所需類型的變數，如果型別轉換會成功。
-  
- [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]  
+此規則所完成的分析，請使用偵錯資訊，也必須建置測試的組件和相關聯的程式資料庫 (.pdb) 檔案必須能夠使用。
 
- 下列範例會示範一種方法， `start_Click`，具有多個重複的明確轉型的違反規則和方法， `reset_Click`，符合規則的本機變數中儲存轉型。  
-  
+## <a name="rule-description"></a>規則描述
+重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。 明確重複轉型作業轉型將結果儲存在本機變數，並使用此區域變數，而不是重複轉型作業。
+
+如果 C#`is`運算子用來測試是否轉型將會成功，實際的轉換執行之前，測試結果，請考慮`as`運算子改為。 這會提供相同的功能，而不會執行的隱含轉型作業`is`運算子。 或者，在 C# 7.0 和更新版本，使用`is`運算子搭配[模式比對](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)檢查型別轉換，並在該類型的變數將運算式轉換成以一個步驟。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，請修改方法實作中的轉換作業數目降至最低。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 如果效能不重要的考量，就會隱藏此規則的警告，或完整地忽略此規則的安全。
+
+## <a name="examples"></a>範例
+ 下列範例顯示使用 C# 違反規則的方法`is`運算子。 第二種方法來取代符合規則`is`運算子與測試的結果`as`運算子，就會減少每個反覆項目從一到兩個型別轉換作業的數目。 第三個方法也會滿足規則使用`is`與[模式比對](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is)建立所需類型的變數，如果型別轉換會成功。
+
+ [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
+
+ 下列範例會示範一種方法， `start_Click`，具有多個重複的明確轉型的違反規則和方法， `reset_Click`，符合規則的本機變數中儲存轉型。
+
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]  
-  
-## <a name="see-also"></a>另請參閱  
-[（C# 參考）](/dotnet/csharp/language-reference/keywords/as)   
-[是 （C# 參考）](/dotnet/csharp/language-reference/keywords/is)
+ [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
+
+## <a name="see-also"></a>另請參閱
+[（C# 參考） 為](/dotnet/csharp/language-reference/keywords/as)
+[（C# 參考）](/dotnet/csharp/language-reference/keywords/is)

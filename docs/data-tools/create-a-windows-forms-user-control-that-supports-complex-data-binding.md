@@ -1,6 +1,5 @@
 ---
-title: 建立資料繫結 Windows Form 使用者控制項 |Microsoft 文件
-ms.custom: ''
+title: 建立資料繫結 Windows Form 使用者控制項
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Form 使用者控制項
 
@@ -80,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-1. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+1. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
 
 1. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 
@@ -111,7 +110,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="add-the-required-data-binding-attribute"></a>加入必要的資料繫結屬性
 
 針對支援資料繫結的複雜控制項，您可以實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>實作 ComplexBindingProperties 屬性
 
 1. 交換器**ComplexDataGridView**程式碼 檢視的控制項。 (在**檢視**功能表上，選取**程式碼**。)
@@ -173,7 +172,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>在表單上建立資料繫結控制項
 
-將主要**客戶**節點從**資料來源**視窗拖曳至表單。確認**ComplexDataGridView**控制項用來顯示資料表的資料。  
+將主要**客戶**節點從**資料來源**視窗拖曳至表單。確認**ComplexDataGridView**控制項用來顯示資料表的資料。
 
 ## <a name="running-the-application"></a>執行應用程式
 
@@ -191,6 +190,6 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Windows Forms 控制項](/dotnet/framework/winforms/controls/index)
+- [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Windows Forms 控制項](/dotnet/framework/winforms/controls/index)

@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 安全性和部署 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 安全性和部署 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - ClickOnce deployment
 - publishing, ClickOnce
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
-caps.latest.revision: "32"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4ec2e74623c39640517ae73786d7865143bf1505
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是一種部署技術，可讓您建立自我更新 Windows 為基礎的應用程式可以安裝並執行最少的使用者互動。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用於發佈及更新部署與 ClickOnce 技術，如果您已經開發您的專案與 Visual Basic 和 Visual C# 應用程式提供完整支援。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自我更新 Windows 為基礎的應用程式可以安裝並執行最少的使用者互動。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用於發佈及更新部署與 ClickOnce 技術，如果您已經開發您的專案與 Visual Basic 和 Visual C# 應用程式提供完整支援。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署克服部署中的三個主要問題：  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署克服部署中的三個主要問題：  
   
 -   **更新應用程式的問題。** 使用 Microsoft Windows Installer 部署時，每當更新應用程式時，使用者可以安裝更新，msp 檔案，並將它套用到已安裝的產品。與[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署中，您可以自動提供更新。 只有應用程式部分已變更被下載，和完整、 更新應用程式然後重新安裝新的並行的資料夾。  
   
@@ -44,9 +41,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="what-is-a-clickonce-application"></a>什麼是 ClickOnce 應用程式？  
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式是任何 Windows Presentation Foundation (.xbap)、 Windows Form (.exe)、 主控台應用程式 (.exe) 或使用發行 Office 方案 (.dll)[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技術。 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式的三種不同的方式： 從網頁上、 網路檔案共用，或媒體例如 CD-ROM。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以安裝在終端使用者電腦上，並在本機執行，即使電腦已離線，或可以在僅限線上模式中執行而不需要永久終端使用者電腦上安裝任何項目。 如需詳細資訊，請參閱[選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式可以自行更新。它們可以檢查可用並自動取代任何更新的檔案的較新版本。 開發人員可以指定更新的行為;網路系統管理員也可以控制更新策略，例如，標示為必要的更新。 更新可以也會回復至舊版的終端使用者或系統管理員。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自行更新。它們可以檢查可用並自動取代任何更新的檔案的較新版本。 開發人員可以指定更新的行為;網路系統管理員也可以控制更新策略，例如，標示為必要的更新。 更新可以也會回復至舊版的終端使用者或系統管理員。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
- 因為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式都已隔離，安裝或執行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式不能破壞現有的應用程式。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式各自獨立。每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會安裝並執行從安全每位使用者，每個應用程式快取。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在網際網路或內部網路安全性區域中，執行應用程式。 必要時，應用程式可以要求提高權限的安全性權限。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
+ 因為[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式都已隔離，安裝或執行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式不能破壞現有的應用程式。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式各自獨立。每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會安裝並執行從安全每位使用者，每個應用程式快取。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在網際網路或內部網路安全性區域中，執行應用程式。 必要時，應用程式可以要求提高權限的安全性權限。 如需詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  
   
 ## <a name="how-clickonce-security-works"></a>ClickOnce 安全性的運作方式  
  核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性根據憑證、 程式碼存取安全性原則和 ClickOnce 信任提示。  
@@ -87,7 +84,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  **發行精靈**Visual Studio 中可以用來執行這些步驟。  
   
- 部署位置中，除了部署資訊清單也包含其中應用程式會檢查有更新版本的更新位置 （Web 網頁或網路檔案共用）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**發行**屬性用來指定時間和頻率應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或藉由應用程式的使用者介面中的使用者選項做[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式開發介面。 此外，**發行**可以採用屬性，讓更新成為強制或回復為舊版。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ 部署位置中，除了部署資訊清單也包含其中應用程式會檢查有更新版本的更新位置 （Web 網頁或網路檔案共用）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **發行**屬性用來指定時間和頻率應用程式應該檢查更新。 部署資訊清單中，可以指定更新行為，或藉由應用程式的使用者介面中的使用者選項做[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式開發介面。 此外，**發行**可以採用屬性，讓更新成為強制或回復為舊版。 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 ### <a name="third-party-installers"></a>第三方廠商安裝程式  
  您可以自訂您要安裝協力廠商元件，以及您的應用程式的 ClickOnce 安裝程式。 您必須有可轉散發套件 （.exe 或.msi 檔案），並描述具有非語言相關產品資訊清單和的特定語言套件資訊清單的封裝。 如需詳細資訊，請參閱[建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
@@ -113,7 +110,7 @@ ms.lasthandoff: 12/22/2017
 |Internet Explorer|2.0、 3.0、 3.5、 3.5 SP1、 4|  
 |Firefox|2.0 SP1、 3.5 SP1、 4|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows Vista 的 ClickOnce 部署](../deployment/clickonce-deployment-on-windows-vista.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

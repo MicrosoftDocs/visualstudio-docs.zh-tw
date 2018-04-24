@@ -1,10 +1,8 @@
 ---
-title: CA1600： 不要使用 idle 處理序優先權 |Microsoft 文件
-ms.custom: ''
+title: CA1600：不要使用 Idle 處理序優先權
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotUseIdleProcessPriority
 - CA1600
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93255488efa84f553d61aaedb0474c69a4bbb8d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d052d2e6d9e3b47217cc6ce25fe752e0e2859437
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
-|||  
-|-|-|  
-|TypeName|DoNotUseIdleProcessPriority|  
-|CheckId|CA1600|  
-|分類|Microsoft.Mobility|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 此規則會發生於處理序會設定為`ProcessPriorityClass.Idle`。  
-  
-## <a name="rule-description"></a>規則描述  
- 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`原本是閒置時，因而阻礙待命時，會佔用 CPU。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要設定處理程序`ProcessPriorityClass.BelowNormal`。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+|||
+|-|-|
+|TypeName|DoNotUseIdleProcessPriority|
+|CheckId|CA1600|
+|分類|Microsoft.Mobility|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 此規則會發生於處理序會設定為`ProcessPriorityClass.Idle`。
+
+## <a name="rule-description"></a>規則描述
+ 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`原本是閒置時，因而阻礙待命時，會佔用 CPU。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要設定處理程序`ProcessPriorityClass.BelowNormal`。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  閒置處理序優先權，且可以安全地忽略行動考量時，才應該隱藏此規則。

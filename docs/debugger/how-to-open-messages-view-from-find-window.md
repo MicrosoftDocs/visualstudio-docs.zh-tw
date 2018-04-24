@@ -1,26 +1,23 @@
 ---
-title: "如何： 從尋找視窗開啟訊息檢視 |Microsoft 文件"
-ms.custom: 
+title: 如何： 從尋找視窗開啟訊息檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db73b501b93f8905d13a7a17dead19fece383c84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4af7e15605915849aa57d73b6e3f59ce89500575
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
 您可能會發現很方便使用**尋找視窗**對話方塊來選取目標視窗中，然後再開啟該視窗的訊息檢視。  

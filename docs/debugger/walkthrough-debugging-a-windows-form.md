@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 偵錯 Windows Form |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 偵錯 Windows Form |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b4e256aeef1a068ddc46d13e98b344bcce56d08b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的受管理應用程式。 Windows Form 建立標準的 Windows 應用程式。 您可以完成這個逐步解說中使用 Visual Basic、 C# 或 c + +。  
@@ -51,7 +48,7 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  在 [專案類型] 窗格中，開啟**Visual Basic**， **Visual C#**，或**Visual c + +**節點，然後  
+2.  在 [專案類型] 窗格中，開啟**Visual Basic**， **Visual C#**，或**Visual c + +** 節點，然後  
   
     1.  Visual Basic 或 Visual C#，請選取**Windows**  節點，然後選取**Windows Form 應用程式**中**範本**窗格。  
   
@@ -90,7 +87,7 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. 在**建置**功能表上，選取**建置方案**。  
+11. 在 [建置] 功能表上，選取 [建置方案]。  
   
      未發生任何錯誤，應該可以建置專案。  
   
@@ -189,6 +186,6 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
   
      偵錯工具在中斷點中斷執行的 Windows Form。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

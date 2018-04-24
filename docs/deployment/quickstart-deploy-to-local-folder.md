@@ -1,27 +1,22 @@
 ---
-title: "將部署到本機資料夾-Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 將部署到本機資料夾-Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式部署至本機資料夾，使用 Visual Studio 發行工具
 
@@ -33,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-1. 在下**Visual C#**或**Visual Basic**，選擇**.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
+1. 在下**Visual C#** 或**Visual Basic**，選擇 **.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
 
 1. 輸入的名稱，例如**MyLocalApp**按一下**確定**。
 

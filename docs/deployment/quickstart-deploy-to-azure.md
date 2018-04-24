@@ -1,27 +1,22 @@
 ---
-title: "發行至 Azure 的應用程式服務-Visual Studio |Microsoft 文件"
-ms.custom: 
+title: 發行至 Azure 的應用程式服務-Visual Studio |Microsoft 文件
+ms.custom: ''
 ms.date: 11/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 52da1a2e618d9ececa1c8fd0d90a86e651cd7fde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>將 ASP.NET 或 ASP.NET Core 應用程式發行至使用 Visual Studio 的 Azure 應用程式服務
 
@@ -33,7 +28,7 @@ ms.lasthandoff: 01/10/2018
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-1. 在下**Visual C#**或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
+1. 在下**Visual C#** 或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
 
 1. 選擇**MVC**，請確定**非驗證**已選取，然後按一下**確定**。
 

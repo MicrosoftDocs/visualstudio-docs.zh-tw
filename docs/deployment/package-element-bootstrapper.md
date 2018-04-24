@@ -2,12 +2,8 @@
 title: '&lt;封裝&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5281d53f213d2cb09f470484ddca2fbaa8cb4601
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c04676f03f4734a25601e772208939e0b3f8482d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;元素 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。  
@@ -193,5 +188,5 @@ ms.lasthandoff: 12/22/2017
 </Package>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

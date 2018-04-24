@@ -1,12 +1,9 @@
 ---
-title: "&lt;相依性&gt;元素 （ClickOnce 應用程式） |Microsoft 文件"
-ms.custom: 
+title: '&lt;相依性&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;元素 （ClickOnce 應用程式）
 識別平台或組件的相依性所需的應用程式。  
@@ -98,7 +95,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentos"></a>dependentOS  
  選擇性。 包含`osVersionInfo`項目。 `dependentOS`和`dependentAssembly`元素互斥： 其中一個必須存在`dependency`項目，但非兩者。  
   
- `dependentOS`支援下列屬性。  
+ `dependentOS` 支援下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -124,7 +121,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="dependentassembly"></a>dependentAssembly  
  選擇性。 包含`assemblyIdentity`項目。 `dependentOS`和`dependentAssembly`元素互斥： 其中一個必須存在`dependency`項目，但非兩者。  
   
- `dependentAssembly`具有下列屬性。  
+ `dependentAssembly` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -140,7 +137,7 @@ ms.lasthandoff: 12/22/2017
 |屬性|描述|  
 |---------------|-----------------|  
 |`name`|必要。 識別應用程式的名稱。|  
-|`version`|必要。 指定應用程式的版本號碼，格式如下：`major.minor.build.revision`|  
+|`version`|必要。 指定應用程式的版本號碼，格式如下： `major.minor.build.revision`|  
 |`publicKeyToken`|選擇性。 指定 16 個字元的十六進位字串，表示最後 8 個位元組`SHA-1`簽署的應用程式或組件之公開金鑰的雜湊值。 用來簽署類別目錄的公開金鑰必須是 2048 位元或更多。|  
 |`processorArchitecture`|選擇性。 指定處理器。 有效值為`x86`適用於 32 位元 Windows 和`I64`適用於 64 位元 Windows。|  
 |`language`|選擇性。 識別兩部分的語言代碼，例如 EN-US，組件。|  
@@ -148,7 +145,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="hash"></a>雜湊  
  `hash`項目是選擇性的子系`assemblyIdentity`項目。 `hash`項目沒有任何屬性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性檢查時，使用應用程式中的所有檔案的演算式雜湊，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 安全性檢查時，使用應用程式中的所有檔案的演算式雜湊，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
   
 ### <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms`項目沒有任何屬性。  
@@ -220,6 +217,6 @@ ms.lasthandoff: 12/22/2017
 </dependency>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)   
  [\<相依性 > 項目](../deployment/dependency-element-clickonce-deployment.md)

@@ -1,12 +1,9 @@
 ---
-title: "如何： 停止程式碼變更 |Microsoft 文件"
-ms.custom: 
+title: 如何： 停止程式碼變更 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - code changes, stopping application of
 - Edit and Continue, stopping code changes
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fde04b22c725064e9066d7ec8a4f85816bd45a01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
@@ -42,6 +39,6 @@ ms.lasthandoff: 12/22/2017
   
  如果您選擇此選項，就無法認可任何的程式碼變更。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)   
  [編輯後繼續、 偵錯、 選項對話方塊](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

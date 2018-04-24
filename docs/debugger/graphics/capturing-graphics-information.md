@@ -1,27 +1,24 @@
 ---
-title: "擷取圖形資訊 |Microsoft 文件"
-ms.custom: 
+title: 擷取圖形資訊 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
 - vs.graphics.capturewindow
 - VS.ToolsOptionsPages.Graphics_Diagnostics.Capture
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
-caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 89488533ab8ba36b0344faa7f0b800d8c4ecc6ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e00dd4d0fae184f092efabb5df4a4f27e76a653a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。  
@@ -50,7 +47,7 @@ ms.lasthandoff: 12/22/2017
   
      ![擷取使用 GPU 使用工具的畫面格。](media/pix_gpu_usage_tool_capture_frame.png)  
   
-     當您準備好要檢查的畫面格已擷取，則啟動**Visual Studio 圖形分析器**依照**框架...**上面的影像縮圖中，或按兩下縮圖的連結。  
+     當您準備好要檢查的畫面格已擷取，則啟動**Visual Studio 圖形分析器**依照**框架...** 上面的影像縮圖中，或按兩下縮圖的連結。  
   
  您可以擷取整個框架，所以當您啟始擷取時，實際上會記錄下一個畫面格的圖形資訊。 錄製會在您啟始擷取的框架呈現後立即開始，而當要擷取的框架顯示時就會結束。 您可以在應用程式於 [圖形診斷] 下執行時擷取所需的框架數。 如果您不擷取任何框架，則會捨棄圖形記錄。  
   
@@ -87,5 +84,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="capturing-graphics-information-from-the-command-line"></a>從命令列擷取圖形資訊  
  您可以使用命令列工具，從應用程式擷取圖形資訊。 這個 DXCap.exe 工具可以快速擷取及播放圖形資訊，而不需使用 Visual Studio 或以程式設計方式擷取。 特別是，您可以使用 DXCap.exe 進行自動化，或是在測試環境中使用。 如需 DXCap.exe 的詳細資訊，請參閱[命令列擷取工具](command-line-capture-tool.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)

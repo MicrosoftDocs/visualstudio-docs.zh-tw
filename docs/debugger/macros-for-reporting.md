@@ -2,12 +2,8 @@
 title: 報告巨集 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -23,25 +19,24 @@ helpviewer_keywords:
 - debugging [CRT], reporting macros
 - _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
-caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af21a708a05bfdc0338ca1c5b2bc038e192eb4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="macros-for-reporting"></a>報告巨集
-您可以使用**_RPTn**，和**_RPTFn**巨集，定義在 CRTDBG。H，來取代使用`printf`陳述式中的偵錯。 這些巨集自動地消失在您的發行組建**_DEBUG**未定義，所以不需要括住在**#ifdef**s。  
+您可以使用 **_RPTn**，和 **_RPTFn**巨集，定義在 CRTDBG。H，來取代使用`printf`陳述式中的偵錯。 這些巨集自動地消失在您的發行組建 **_DEBUG**未定義，所以不需要括住在 **#ifdef**s。  
   
 |巨集|描述|  
 |-----------|-----------------|  
-|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|輸出訊息字串和零至四個引數。 從 _rpt1 到**_RPT4**，訊息字串做為引數的 printf 樣式格式字串。|  
-|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|與相同**_RPTn**，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|  
+|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|輸出訊息字串和零至四個引數。 從 _rpt1 到 **_RPT4**，訊息字串做為引數的 printf 樣式格式字串。|  
+|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|與相同 **_RPTn**，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|  
   
  參考下列範例：  
   
@@ -85,5 +80,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
  因為自訂巨集可以很容易地變更為報告較多或較少資訊至不同的目的端 (取決於哪一種比較方便)，當您的偵錯需求不同時，這種方法特別有用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

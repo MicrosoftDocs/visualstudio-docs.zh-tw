@@ -1,13 +1,9 @@
 ---
-title: "在設計階段-Visual Studio 偵錯 |Microsoft 文件"
-ms.custom: 
+title: 在設計階段-Visual Studio 偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - Immediate window, design-time debugging
 - design-time debugging
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e0210023de05047957e7fbf55a8f970fda19d9
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-at-design-time-in-visual-studio"></a>在 Visual Studio 中的設計階段偵錯
 
@@ -90,7 +85,7 @@ ms.lasthandoff: 02/23/2018
 
 1. 開啟*temp.xaml*，載入設計工具 (*UwpSurface.exe*的 UWP 應用程式，或*XDesProc.exe*) 讓您可以在稍後步驟中，附加。 
 
-1. 開啟新的 Visual Studio 執行個體。 在新的執行個體，開啟**附加至處理序**對話方塊 (**偵錯** > **附加至處理序**)，將**附加至**欄位的正確程式碼的型別，例如**Managed 程式碼 (CoreCLR)**或正確的程式碼類型取決於您的.NET 版本。 從清單中選取正確的設計工具處理序，然後選擇 **附加**。
+1. 開啟新的 Visual Studio 執行個體。 在新的執行個體，開啟**附加至處理序**對話方塊 (**偵錯** > **附加至處理序**)，將**附加至**欄位的正確程式碼的型別，例如**Managed 程式碼 (CoreCLR)** 或正確的程式碼類型取決於您的.NET 版本。 從清單中選取正確的設計工具處理序，然後選擇 **附加**。
 
     Uwp 為目標的專案建置 16299 或以上版本，設計工具的程序是*UwpSurface.exe*。 WPF 或 UWP 的若是 16299 之前的版本，設計工具的程序是*XDesProc.exe*。
 
@@ -105,6 +100,6 @@ ms.lasthandoff: 02/23/2018
     ```
    當網頁載入時，會叫用中斷點。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

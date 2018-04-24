@@ -1,23 +1,20 @@
 ---
-title: "逐步解說： 使用圖形診斷來偵錯計算著色器 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 使用圖形診斷來偵錯計算著色器 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷來偵錯計算著色器
 本逐步解說示範如何使用 Visual Studio 圖形診斷工具來調查產生不正確結果的計算著色器。  
@@ -56,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  檢查**圖形事件清單**轉譯資料集之繪製事件。 若要進行簡化，請輸入`Draw`中**搜尋**右上角的方塊**圖形事件清單**視窗。 這樣會篩選清單，使其只包含標題中具有 "Draw" 的事件。 在此情況下，您會發現發生這些 Draw 事件：  
   
-     ![事件清單 &#40; EL &#41;會顯示繪製事件。] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![事件清單&#40;EL&#41;顯示繪製事件。] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  在圖形記錄文件索引標籤中監看轉譯目標時，在每個 Draw 事件之間移動。  
   
@@ -102,11 +99,11 @@ ms.lasthandoff: 12/22/2017
   
 6.  檢查強制計算步驟的計算著色器原始程式碼。 在此情況下，您將判斷這裡是錯誤來源。  
   
-     ![偵錯 ForceCS &#95;簡單的計算著色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![偵錯 ForceCS&#95;簡單的計算著色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  判斷錯誤的位置之後，即可停止偵錯並修改計算著色器原始程式碼，以正確計算互動中物件之間的距離。 在此情況下，您只要將 `float2 diff = N_position + P_position;` 行變更為 `float2 diff = N_position - P_position;`：  
   
- ![修正過的計算 &#45; 著色器程式碼。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![修正過的計算&#45;著色器程式碼。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  在此情況下，因為計算著色器是在執行階段進行編譯，所以只要在變更之後重新啟動應用程式，即可觀察它們如何影響模擬。 您不需要重建應用程式。 執行應用程式時，會發現模擬現在正確運作。  
   

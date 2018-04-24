@@ -1,26 +1,23 @@
 ---
-title: "Spy + + 參考 |Microsoft 文件"
-ms.custom: 
+title: Spy + + 參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - reference, Spy++
 - Spy++ reference
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2cfbfb7c7e129075ea21b255fa5629ce95fa180
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fc377a2ccfa2663815212857de4a4668dd437870
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="spy-reference"></a>Spy++ 參考
 請參閱說明每個 Spy + + 功能表和對話方塊方塊的下面所列的各節：  

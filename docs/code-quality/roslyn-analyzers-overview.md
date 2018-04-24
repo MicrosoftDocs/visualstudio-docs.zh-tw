@@ -1,8 +1,8 @@
 ---
-title: 在 Visual Studio 中的 Roslyn 分析器 |Microsoft 文件
+title: 在 Visual Studio 中的 Roslyn 分析器
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35b9893372435da154a0be0933af4c1ad65d4ef3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5a434a47bac73aef86e83d220605b196fc2a74a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET 編譯器平台分析器的概觀
 

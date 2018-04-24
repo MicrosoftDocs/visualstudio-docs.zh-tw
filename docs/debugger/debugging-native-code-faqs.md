@@ -1,13 +1,9 @@
 ---
-title: "偵錯原生程式碼的常見問題集 |Microsoft 文件"
-ms.custom: 
+title: 偵錯原生程式碼的常見問題集 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
 dev_langs:
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - debugging [MFC], FAQs
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-native-code-faqs"></a>機器碼偵錯 FAQ
 下列主題包含一些常見問題集的解答：  
@@ -54,6 +49,6 @@ ms.lasthandoff: 12/22/2017
   
 -   [如果暫止於 MFC，如何可以回到呼叫 MFC 的函式？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

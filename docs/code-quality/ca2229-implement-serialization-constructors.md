@@ -1,10 +1,8 @@
 ---
-title: CA2229： 實作序列化建構函式 |Microsoft 文件
-ms.custom: ''
+title: CA2229：請實作序列化建構函式
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2229
 - ImplementSerializationConstructors
@@ -17,47 +15,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04906c737c7581b0b1a0c5a3dcc80407aa35659a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116c77aa01e9b22da3e2037f29deb1b8c47e64c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229：請實作序列化建構函式
-|||  
-|-|-|  
-|TypeName|ImplementSerializationConstructors|  
-|CheckId|CA2229|  
-|分類|Microsoft.Usage|  
-|中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
- 型別實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面、 不是委派或介面，而且下列條件的其中一種情況：  
-  
--   類型沒有建構函式之<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。  
-  
--   類型是密封，而且其序列化建構函式的存取修飾詞不是受保護 （系列）。  
-  
--   型別密封格式，其序列化建構函式的存取修飾詞不是私用。  
-  
-## <a name="rule-description"></a>規則描述  
- 此規則是關於支援自訂序列化的類型。 型別支援自訂序列化，如果它實作<xref:System.Runtime.Serialization.ISerializable>介面。 序列化建構函式，才能還原序列化，或重新建立使用序列化的物件<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，請實作序列化建構函式。 針對密封類別，讓建構函式成為 private，否則為 protected。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 請勿隱藏此規則的違規。 型別將無法還原序列化，並在許多情況下將無法運作。  
-  
-## <a name="example"></a>範例  
- 下列範例會示範符合規則的類型。  
-  
- [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
-  
-## <a name="related-rules"></a>相關的規則  
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
- <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
- <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|ImplementSerializationConstructors|
+|CheckId|CA2229|
+|分類|Microsoft.Usage|
+|中斷變更|非中斷|
+
+## <a name="cause"></a>原因
+ 型別實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面、 不是委派或介面，而且下列條件的其中一種情況：
+
+-   類型沒有建構函式之<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。
+
+-   類型是密封，而且其序列化建構函式的存取修飾詞不是受保護 （系列）。
+
+-   型別密封格式，其序列化建構函式的存取修飾詞不是私用。
+
+## <a name="rule-description"></a>規則描述
+ 此規則是關於支援自訂序列化的類型。 型別支援自訂序列化，如果它實作<xref:System.Runtime.Serialization.ISerializable>介面。 序列化建構函式，才能還原序列化，或重新建立使用序列化的物件<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，請實作序列化建構函式。 針對密封類別，讓建構函式成為 private，否則為 protected。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 請勿隱藏此規則的違規。 型別將無法還原序列化，並在許多情況下將無法運作。
+
+## <a name="example"></a>範例
+ 下列範例會示範符合規則的類型。
+
+ [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]
+
+## <a name="related-rules"></a>相關的規則
+ [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+
+## <a name="see-also"></a>另請參閱
+ <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

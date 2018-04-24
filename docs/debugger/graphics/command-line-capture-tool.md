@@ -1,25 +1,20 @@
 ---
-title: "命令列擷取工具 |Microsoft 文件"
-ms.custom: 
+title: 命令列擷取工具 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ddbce0e003f2825d76458146e1d2fe009a43709e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。  
@@ -167,15 +162,15 @@ DXCap.exe -e map
  上述命令會列舉符合"map"; UWP 應用程式輸出如下：  
   
  **封裝 「 Microsoft.BingMaps":**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Installdirectory 出現： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **名稱： Microsoft.BingMaps**  
- **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **發行者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = 華盛頓州，C = US**  
  **版本： 2.1.2914.1734**  
  **可啟動的應用程式：**  
  **Id: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA： 否**  
  * * AppSpec （以啟動）： **DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** 最後一行的每個列舉應用程式的輸出顯示可用來從其擷取圖形資訊的命令。  
   

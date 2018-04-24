@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_sealed |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_sealed |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_sealed method
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d1e5394dc7f07aeb97fb34cc11428fee13e457
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 擷取指定是否已密封類別或方法的旗標。  
@@ -56,5 +51,5 @@ HRESULT get_sealed(
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,5 @@
 ---
-title: 加入新連接 |Microsoft 文件
-ms.custom: ''
+title: 加入新的連線
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>加入新的連線
 
@@ -37,9 +36,9 @@ ms.lasthandoff: 04/16/2018
 
 ![伺服器總管 的新連接圖示](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata 伺服器總管 中的新連接圖示")
 
-這會開啟**加入連接** 對話方塊。 在這裡，我們輸入 SQL Server LocalDB 執行個體的名稱。  
+這會開啟**加入連接** 對話方塊。 在這裡，我們輸入 SQL Server LocalDB 執行個體的名稱。
 
-![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 新增新的連接對話方塊")  
+![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 新增新的連接對話方塊")
 
 ## <a name="change-the-provider"></a>變更提供者
 
@@ -57,4 +56,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

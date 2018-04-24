@@ -1,13 +1,9 @@
 ---
-title: "遠端偵錯 C# 或 Visual Studio 中的 VB 專案 |Microsoft 文件"
+title: 遠端偵錯 C# 或 Visual Studio 中的 VB 專案 |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 C# 或 Visual Basic 專案
 偵錯 Visual Studio 應用程式已部署在不同電腦上，安裝和部署您的應用程式的所在的電腦上執行遠端工具，設定您的專案，從 Visual Studio 中，連線到遠端電腦，然後執行您的應用程式。
@@ -50,14 +45,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 在某些情況下，它可以是最有效率的檔案共用從執行遠端偵錯工具。 如需詳細資訊，請參閱[從檔案共用執行遠端偵錯工具](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>設定遠端偵錯工具
+## <a name="BKMK_setup"></a> 設定遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > 如果您需要新增其他的使用者權限變更驗證模式或遠端偵錯工具連接埠號碼，請參閱[設定遠端偵錯工具](../debugger/remote-debugging.md#configure_msvsmon)。
   
-## <a name="remote_csharp"></a>遠端偵錯專案
+## <a name="remote_csharp"></a> 遠端偵錯專案
 偵錯工具無法將 Visual C# 或 Visual Basic 傳統型應用程式部署到遠端電腦，但您還是可以對其遠端偵錯，如下所示。 下列程序假設您想要在名為的電腦上進行偵錯**MJO DL**，在下圖中所示。
   
 1.  建立 WPF 專案，名為**MyWpf**。  
@@ -97,7 +92,7 @@ ms.lasthandoff: 01/10/2018
   
 13. 如果出現提示，請輸入連接到遠端電腦的網路認證。  
   
-     所需的認證是根據您的網路安全性組態而有所不同。 例如，在網域電腦，您可以輸入您的網域名稱和密碼。 在非網域的電腦，您可以輸入電腦名稱，有效的使用者帳戶名稱，例如 **MJO-DL\name@something.com** ，以及正確的密碼。
+     所需的認證是根據您的網路安全性組態而有所不同。 例如，在網域電腦，您可以輸入您的網域名稱和密碼。 在非網域的電腦，您可以輸入電腦名稱，有效的使用者帳戶名稱，例如**MJO-DL\name@something.com**，以及正確的密碼。
 
      您應該會看到 WPF 應用程式的主視窗已開啟遠端電腦上。
   
@@ -111,7 +106,7 @@ ms.lasthandoff: 01/10/2018
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

@@ -1,5 +1,5 @@
 ---
-title: 適用於.NET 的 visual Studio 資料工具 |Microsoft 文件
+title: 適用於.NET 的 visual Studio 資料工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -10,11 +10,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: b855516e6eb440b970489c3ebc6209dc0573f231
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91df17bdeda76f707d7f7df8e7452d9a76285861
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於.NET 的 visual Studio 資料工具
 

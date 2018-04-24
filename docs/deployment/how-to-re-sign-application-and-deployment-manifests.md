@@ -1,12 +1,9 @@
 ---
-title: "如何： 重新簽署應用程式和部署資訊清單 |Microsoft 文件"
-ms.custom: 
+title: 如何： 重新簽署應用程式和部署資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, signing manifests
 - Office development in Visual Studio, signing manifests
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e3c6551269df19c554dfa50409108bf952c4b326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba634ffb30d6459c940811f0ea080f8b71a37f34
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：重新簽署應用程式和部署資訊清單
 您對 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案的應用程式資訊清單中的部署屬性變更之後，您必須重新簽署應用程式和部署資訊清單與憑證。 此程序有助於確保終端使用者電腦上沒有安裝的檔案遭竄改。  
@@ -116,7 +113,7 @@ ms.lasthandoff: 12/22/2017
   
 7.  選擇性地複製主要部署資訊清單 (發行\\*appname*.application) 您版本的部署目錄 (publish\Application 檔案\\*appname*_*版本*)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   

@@ -1,5 +1,5 @@
 ---
-title: 使用，並在 Visual Studio 中設定 Roslyn 分析器 |Microsoft 文件
+title: 使用，並在 Visual Studio 中設定 Roslyn 分析器
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 17758b8cd901a03e2ce4f93fe5dfcfdbe97eadab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eeebb1fb631c0890c7bcb11160109813a31eef1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定及使用 Roslyn 分析器規則
 
@@ -126,7 +126,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
    在**預覽變更**對話方塊中，選取**套用**。
 
 > [!NOTE]
-> 在.NET Core 專案中，如果您加入至 NuGet 分析器的專案參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依專案是單元測試專案，將標示為私用中的 NuGet 套件*.csproj*或*.vbproj*參考專案檔：
+> 在.NET Core 專案中，如果您加入至 NuGet 分析器的專案參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依專案是單元測試專案，將標示為私用中的 NuGet 套件 *.csproj*或 *.vbproj*參考專案檔：
 >
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />

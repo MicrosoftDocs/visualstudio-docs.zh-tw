@@ -1,12 +1,9 @@
 ---
-title: "診斷訊息傳送至輸出視窗 |Microsoft 文件"
-ms.custom: 
+title: 診斷訊息傳送至輸出視窗 |Microsoft 文件
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], diagnostic messages in Output window
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>診斷訊息傳送至輸出視窗
 您可以撰寫執行階段訊息**輸出**視窗使用`Debug`類別或`Trace`類別，也就是組件的<xref:System.Diagnostics>類別庫。 如果您只希望在程式的偵錯版本中輸出，請使用 Debug 類別。 如果要同時在偵錯和發行版本 (Release Version) 中輸出，則使用 Trace 類別。  
@@ -59,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 -   已結束的執行序。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [輸出視窗](../ide/reference/output-window.md)   
  [追蹤和檢測應用程式](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  

@@ -1,12 +1,9 @@
 ---
-title: "如何： 在高效能叢集上偵錯 |Microsoft 文件"
-ms.custom: 
+title: 如何： 在高效能叢集上偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - cluster debugging
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：偵錯高效能叢集
 在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 一般遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
@@ -70,7 +67,7 @@ ms.lasthandoff: 12/22/2017
   
      -或-  
   
-     `ProcessID =`*yourprocessIDnumber*  
+     `ProcessID =` *yourprocessIDnumber*  
   
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。  
   
@@ -84,11 +81,11 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**中斷點篩選條件** 對話方塊中，輸入：  
   
-     `ThreadName =`*yourthreadname*  
+     `ThreadName =` *yourthreadname*  
   
      -或-  
   
-     `ThreadID =`*yourthreadIDnumber*  
+     `ThreadID =` *yourthreadIDnumber*  
   
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。  
   
@@ -101,7 +98,7 @@ ms.lasthandoff: 12/22/2017
 (MachineName = marvin) & (ThreadName = fourier1)  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)   
  [如何： 使用處理序 視窗](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   

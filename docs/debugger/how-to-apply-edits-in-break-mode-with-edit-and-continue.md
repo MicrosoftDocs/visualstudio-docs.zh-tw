@@ -1,13 +1,9 @@
 ---
-title: "如何： 套用在中斷模式中的編輯，以編輯後繼續 |Microsoft 文件"
-ms.custom: 
+title: 如何： 套用在中斷模式中的編輯，以編輯後繼續 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - coding, editing in break mode
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f031598e0c8f290907e759bcfceac85c1b063f5f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：以編輯後繼續在中斷模式套用編輯
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。  
@@ -65,6 +60,6 @@ ms.lasthandoff: 12/22/2017
   
      這時程式碼便會一併執行您套用至專案的編輯。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [支援的程式碼變更 （C# 和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

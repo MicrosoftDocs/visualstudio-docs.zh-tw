@@ -2,28 +2,23 @@
 title: 處理序檢視 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="processes-view"></a>處理序檢視
 處理序檢視會顯示您系統上的所有使用中的處理序樹狀結構。 顯示處理序識別碼和模組名稱。 如果您想要檢查通常對應於正在執行之程式的特定系統處理序，請使用處理序檢視。 處理程序所識別的模組名稱，或指定 「 系統處理序 」。  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  從**Spy**功能表上，選擇**處理程序**。  
   
- ![Spy #43; &#43;處理序檢視](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+ ![Spy&#43; &#43;處理序檢視](../debugger/media/spy--_processes.png "Spy + + _Processes")  
 Spy++ 處理序檢視  
   
  上圖顯示處理序檢視與程序和執行緒展開的節點。  

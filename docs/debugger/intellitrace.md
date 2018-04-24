@@ -1,13 +1,9 @@
 ---
-title: IntelliTrace | Microsoft Docs
-ms.custom: 
+title: IntelliTrace |Microsoft 文件
+ms.custom: ''
 ms.date: 07/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
 helpviewer_keywords:
@@ -23,14 +19,14 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 7c5812f73d86bd585cb24f2e8d599c82d2d6e7ab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 

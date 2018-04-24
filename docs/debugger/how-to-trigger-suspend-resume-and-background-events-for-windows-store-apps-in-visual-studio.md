@@ -1,13 +1,9 @@
 ---
-title: "如何觸發暫止、 繼續及背景事件 UWP 應用程式進行偵錯時 |Microsoft 文件"
-ms.custom: 
+title: 如何觸發暫止、 繼續及背景事件 UWP 應用程式進行偵錯時 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +11,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 00e448da2f5a23c2f6aebf6e163181080949129a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
@@ -83,11 +78,11 @@ ms.lasthandoff: 01/19/2018
   
     -   若是 Visual C# 和 Visual Basic 專案，請選擇 [ **不啟動，但在我的程式碼啟動時進行偵錯**]。  
   
-         ![C# 35; &#47;VB 偵錯啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;VB 偵錯啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   若是 JavaScript 和 Visual C++ 專案，請從 [ **啟動應用程式** ] 清單中選擇 [ **否** ]。  
   
-         ![C &#43; &#43; &#47;VB 啟動應用程式偵錯屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB 啟動應用程式偵錯屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  按 **F5** 將應用程式置入偵錯模式。 請注意，[ **偵錯位置** ] 工具列的 [ **處理** ] 清單會顯示應用程式封裝名稱，表示您正處於偵錯模式。  
   
@@ -113,7 +108,7 @@ ms.lasthandoff: 01/19/2018
   
 4.  選擇 [ **診斷** ] 記錄檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)   

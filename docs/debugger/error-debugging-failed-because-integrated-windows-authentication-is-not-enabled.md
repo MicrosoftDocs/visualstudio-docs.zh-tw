@@ -2,12 +2,8 @@
 title: 錯誤： 偵錯失敗，因為並未啟用整合式的 Windows 驗證 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 - aspx
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f189e9f3f85fd53941aa51cf2a2d969b9c9ed19
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 因為驗證錯誤，所以無法對要求偵錯之使用者進行驗證。 這種情形可能會在您嘗試逐步執行 Web 應用程式或 XML Web Service 時發生。 造成這個錯誤的原因之一是未啟用整合式 Windows 驗證。 若要啟用該驗證，請遵循「若要啟用整合式 Windows 驗證」內所述的步驟進行。  
@@ -95,7 +90,7 @@ ms.lasthandoff: 12/22/2017
   
     9. 在下**Web 管理工具**，依序展開**IIS 6 管理相容性**節點，然後選取**IIS 6 Metabase 及 IIS 6 設定相容性**核取方塊。  
   
-    10. 在下**Web 管理工具**，選取**IIS 管理主控台**按一下**[確定]。**  
+    10. 在下**Web 管理工具**，選取**IIS 管理主控台**按一下 **[確定]。**  
   
     11. 重新啟動電腦，這些變更就會生效。  
   
@@ -119,7 +114,7 @@ ms.lasthandoff: 12/22/2017
   
 10. 關閉**網際網路資訊服務 (IIS) 管理員**視窗。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式： 錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft 摘要式驗證](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [執行 Windows Vista 與 IIS 7.0 上的 Web 應用程式和 Visual Studio](http://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,12 +1,9 @@
 ---
-title: "存取 ClickOnce 應用程式中的本機和遠端資料 |Microsoft 文件"
-ms.custom: 
+title: 存取 ClickOnce 應用程式中的本機和遠端資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, data
 - data access, ClickOnce applications
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
-caps.latest.revision: "21"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: df2652a2da7abd0536c3e5cb60c7d36842b5430a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。  
@@ -111,5 +108,5 @@ ms.lasthandoff: 12/22/2017
   
  大部分的情況下，您都不需要直接存取資料庫，而是會從以 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 撰寫的 Web 伺服器應用程式，或是 XML Web Service 來進行存取。 如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式是從 Web 伺服器進行部署，以這種方式存取資料庫通常是最佳的方式。 您可以使用部分信任來存取伺服器，而不需提升應用程式的權限。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

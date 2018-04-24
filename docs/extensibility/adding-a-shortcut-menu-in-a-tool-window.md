@@ -1,28 +1,26 @@
 ---
-title: "將快顯功能表加入工具視窗中 |Microsoft 文件"
-ms.custom: 
+title: 將快顯功能表加入工具視窗中 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
 - menus, context menus
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4f90f5971a101b54aae1cd968d5d5dad67caec74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e4b36800ea291c6f1bc0948a46b67c4e3549f349
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
 本逐步解說置於工具視窗的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 捷徑功能表上的命令的行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，在.vsct 檔案中指定它並顯示以回應按一下滑鼠右鍵。  
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
     </Buttons>  
     ```  
   
-5.  在 ShortcutMenuPackageGuids.cs，加入命令定義 GUID、 捷徑功能表，以及設定功能表項目。  
+5.  在 ShortcutMenuCommand.cs，加入命令定義 GUID、 捷徑功能表，以及設定功能表項目。  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -145,7 +143,7 @@ ms.lasthandoff: 12/22/2017
     ```csharp  
     protected override void Initialize()  
     {  
-        commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
+        var commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
         Content = new ShortcutMenuControl(commandService);  
     }  
     ```  
@@ -172,12 +170,12 @@ ms.lasthandoff: 12/22/2017
         if (null !=commandService)  
         {  
             // Create an alias for the command set guid.  
-            Guid guid = new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet);  
+            Guid guid = new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet);  
   
             // Create the command IDs.   
-            var red = new CommandID(guid, ShortcutMenuPackageGuids.cmdidRed);  
-            var yellow = new CommandID(guid, ShortcutMenuPackageGuids.cmdidYellow);  
-            var blue = new CommandID(guid, ShortcutMenuPackageGuids.cmdidBlue);  
+            var red = new CommandID(guid, ShortcutMenuCommand.cmdidRed);  
+            var yellow = new CommandID(guid, ShortcutMenuCommand.cmdidYellow);  
+            var blue = new CommandID(guid, ShortcutMenuCommand.cmdidBlue);  
   
             // Add a command for each command ID.  
             commandService.AddCommand(new MenuCommand(ChangeColor, red));  
@@ -236,8 +234,8 @@ ms.lasthandoff: 12/22/2017
         if (null != commandService)  
         {  
             CommandID menuID = new CommandID(  
-                new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet),  
-                ShortcutMenuPackageGuids.ColorMenu);  
+                new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet),  
+                ShortcutMenuCommand.ColorMenu);  
             Point p = this.PointToScreen(e.GetPosition(this));  
             commandService.ShowContextMenu(menuID, (int)p.X, (int)p.Y);  
         }  
@@ -255,13 +253,13 @@ ms.lasthandoff: 12/22/2017
   
         switch (mc.CommandID.ID)  
         {  
-            case ShortcutMenuPackageGuids.cmdidRed:  
+            case ShortcutMenuCommand.cmdidRed:  
                 MyToolWindow.Background = Brushes.Red;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidYellow:  
+            case ShortcutMenuCommand.cmdidYellow:  
                 MyToolWindow.Background = Brushes.Yellow;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidBlue:  
+            case ShortcutMenuCommand.cmdidBlue:  
                 MyToolWindow.Background = Brushes.Blue;  
                 break;  
         }  
@@ -280,6 +278,6 @@ ms.lasthandoff: 12/22/2017
   
 4.  按一下捷徑功能表上的色彩。 工具視窗背景色彩應該變更為選取的色彩。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
  [使用和提供服務](../extensibility/using-and-providing-services.md)

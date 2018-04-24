@@ -1,12 +1,9 @@
 ---
-title: "C + + 偵錯組態的專案設定 |Microsoft 文件"
-ms.custom: 
+title: C + + 偵錯組態的專案設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
 - VC.Project.IVCGPUDebugPageObject.EnvironmentMerge
@@ -111,16 +108,16 @@ helpviewer_keywords:
 - pdb files, debug build project settings
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
-caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6b323ab51f4be02faaddc1df7ab2dd6902323d63
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C + + 偵錯組態的專案設定
 您可以變更 C 或 Visual c + + 的偵錯組態中的專案設定**屬性頁** 對話方塊中所述[How to： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁** 對話方塊。  
@@ -188,7 +185,7 @@ ms.lasthandoff: 12/22/2017
 
 若要偵錯您的專案外部的 Dll，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal)。 如果您要偵錯 DLL 專案，但不具有存取呼叫的應用程式的專案，請參閱[如何從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [建立和管理 Visual C++ 專案](/cpp/ide/creating-and-managing-visual-cpp-projects)   

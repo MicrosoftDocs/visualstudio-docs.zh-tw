@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_targetrelativevirtualaddress |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_targetrelativevirtualaddress |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetRelativeVirtualAddress method
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e89bacdc9f16c429ff82495642689964b8e1eceb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c43d496565518df7e24b57cd9d191b1a64a800f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 擷取 thunk 目標的相對虛擬位址 (RVA)。  
@@ -51,6 +46,6 @@ HRESULT get_targetRelativeVirtualAddress (
   
  「 Thunk 」 是一種轉換的 32 位元記憶體位址空間 （也稱為一般的位址空間） 和 （又稱為分段的位址空間） 的 16 位元位址空間的程式碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

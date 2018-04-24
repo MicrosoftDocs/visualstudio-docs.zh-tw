@@ -1,5 +1,5 @@
 ---
-title: CA1824： 以標記組件 NeutralResourcesLanguageAttribute |Microsoft 文件
+title: CA1824：以 NeutralResourcesLanguageAttribute 標記組件
 ms.date: 03/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fdca585cf2c706dc83ecf9c1f7735c0d9d4f47e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8714df15bb7905aa1a7f895a8d5c197ff3796383
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：以 NeutralResourcesLanguageAttribute 標記組件
 

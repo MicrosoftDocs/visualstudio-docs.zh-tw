@@ -1,26 +1,21 @@
 ---
 title: 偵錯快照集的常見問題集 |Microsoft 文件
 ms.date: 11/07/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: 944f1eb0-a74b-4d28-ae2b-a370cd869add
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2ca2bf48c50b0ea5b44654d0711ba162313f04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8547c14cfd8a59d775c909edb06e3542b18710c8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Asked Questions for Visual Studio 偵錯快照集
 

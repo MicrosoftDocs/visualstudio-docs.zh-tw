@@ -1,10 +1,8 @@
 ---
-title: CA1406： 避免對 Visual Basic 6 用戶端的 Int64 引數 |Microsoft 文件
-ms.custom: ''
+title: CA1406：避免對 Visual Basic 6 用戶端使用 Int64 引數
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
 - CA1406
@@ -17,47 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b07be7368269701b2b77fa633464095cc509779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36c8ceb93f4784fa3ff50343b8b9cd7770e69533
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406：避免對 Visual Basic 6 用戶端使用 Int64 引數
-|||  
-|-|-|  
-|TypeName|AvoidInt64ArgumentsForVB6Clients|  
-|CheckId|CA1406|  
-|分類|Microsoft.Interoperability|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 特別標示為可見元件物件模型 (COM) 類型宣告的成員，會採用<xref:System.Int64?displayProperty=fullName>引數。  
-  
-## <a name="rule-description"></a>規則描述  
- Visual Basic 6 COM 用戶端無法存取 64 位元整數。  
-  
- 根據預設，以下是為 COM 可見： 組件、 公用型別、 公用的型別中的公用執行個體成員和公用實值型別的所有成員。 不過，若要減少誤判，這項規則要求 COM 可見性的明確指示; 類型包含組件必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>設`false`和型別都必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute>設`true`。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此參數，其值永遠可以表示為 32 位元整數類資料類型的規則的違規情形，將參數類型變更為<xref:System.Int32?displayProperty=fullName>。 如果參數的值大於可能會以 32 位元整數類資料類型時，請將參數類型變更為<xref:System.Decimal?displayProperty=fullName>。 請注意，兩者<xref:System.Single?displayProperty=fullName>和<xref:System.Double?displayProperty=fullName>失去精確度的上限範圍在<xref:System.Int64>資料型別。 如果成員不是用來為 COM 可見，將它與標記<xref:System.Runtime.InteropServices.ComVisibleAttribute>設`false`。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 它可以安全地隱藏此規則的警告，如果是某些 Visual Basic 6 COM 用戶端將不會存取類型。  
-  
-## <a name="example"></a>範例  
- 下列範例顯示違反規則的類型。  
-  
+|||
+|-|-|
+|TypeName|AvoidInt64ArgumentsForVB6Clients|
+|CheckId|CA1406|
+|分類|Microsoft.Interoperability|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 特別標示為可見元件物件模型 (COM) 類型宣告的成員，會採用<xref:System.Int64?displayProperty=fullName>引數。
+
+## <a name="rule-description"></a>規則描述
+ Visual Basic 6 COM 用戶端無法存取 64 位元整數。
+
+ 根據預設，以下是為 COM 可見： 組件、 公用型別、 公用的型別中的公用執行個體成員和公用實值型別的所有成員。 不過，若要減少誤判，這項規則要求 COM 可見性的明確指示; 類型包含組件必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>設`false`和型別都必須標記為<xref:System.Runtime.InteropServices.ComVisibleAttribute>設`true`。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此參數，其值永遠可以表示為 32 位元整數類資料類型的規則的違規情形，將參數類型變更為<xref:System.Int32?displayProperty=fullName>。 如果參數的值大於可能會以 32 位元整數類資料類型時，請將參數類型變更為<xref:System.Decimal?displayProperty=fullName>。 請注意，兩者<xref:System.Single?displayProperty=fullName>和<xref:System.Double?displayProperty=fullName>失去精確度的上限範圍在<xref:System.Int64>資料型別。 如果成員不是用來為 COM 可見，將它與標記<xref:System.Runtime.InteropServices.ComVisibleAttribute>設`false`。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 它可以安全地隱藏此規則的警告，如果是某些 Visual Basic 6 COM 用戶端將不會存取類型。
+
+## <a name="example"></a>範例
+ 下列範例顯示違反規則的類型。
+
  [!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
- [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]  
-  
-## <a name="related-rules"></a>相關的規則  
- [CA1413：避免在 COM 可見實值型別中使用非公用欄位](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
-  
- [CA1407：避免在 COM 可見類型中使用靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
-  
- [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
-  
-## <a name="see-also"></a>另請參閱  
- [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)   
- [Long 資料類型](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+ [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
+
+## <a name="related-rules"></a>相關的規則
+ [CA1413：避免在 COM 可見實值型別中使用非公用欄位](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+
+ [CA1407：避免在 COM 可見類型中使用靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+
+ [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+
+## <a name="see-also"></a>另請參閱
+ [Unmanaged 程式碼的互通](/dotnet/framework/interop/index) [Long 資料類型](/dotnet/visual-basic/language-reference/data-types/long-data-type)

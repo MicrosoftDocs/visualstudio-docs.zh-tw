@@ -1,12 +1,9 @@
 ---
-title: "C# 偵錯組態的專案設定 |Microsoft 文件"
-ms.custom: 
+title: C# 偵錯組態的專案設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 65b30c1dc0b4306c7104b4d0b3dcd38a2cc55b1d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 偵錯組態的專案設定
 您可以變更 C# 偵錯組態中的專案設定**屬性頁**視窗中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁**視窗。  
@@ -37,7 +34,7 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  本主題不適用於 UWP 應用程式。 請參閱[開始偵錯工作階段 （VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>偵錯索引標籤  
+##  <a name="BKMK_Debug_tab"></a> 偵錯索引標籤  
   
 |**設定**|**描述**|  
 |-----------------|---------------------|  
@@ -49,7 +46,7 @@ ms.lasthandoff: 01/19/2018
 |**啟用 Unmanaged 程式碼偵錯**|讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。|  
 |**啟用 SQL Server 偵錯**|允許 SQL Server 資料庫物件偵錯。|  
   
-##  <a name="BKMK_Build_tab"></a>建置索引標籤  
+##  <a name="BKMK_Build_tab"></a> 建置索引標籤  
   
 |設定|描述|  
 |-------------|-----------------|  
@@ -60,5 +57,5 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > 如需有關您在中找到的偵錯選項**進階**按鈕，請參閱[進階建置設定對話方塊 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。 符號 (.pdb) 檔案的可攜式格式是.NET Core 的最新的跨平台格式。 
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

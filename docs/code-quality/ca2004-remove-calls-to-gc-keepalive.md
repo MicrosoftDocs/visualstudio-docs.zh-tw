@@ -1,10 +1,8 @@
 ---
-title: Ca2004： 必須移除 gc。KeepAlive |Microsoft 文件
-ms.custom: ''
+title: CA2004：必須移除對 GC.KeepAlive 的呼叫
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
 - CA2004
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25c42202f7df2214295af4e3d1a448266cfa6cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2f05764f5147a064815cdb744420686fb6a5a7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004：必須移除對 GC.KeepAlive 的呼叫
-|||  
-|-|-|  
-|TypeName|RemoveCallsToGCKeepAlive|  
-|CheckId|CA2004|  
-|分類|Microsoft.Reliability|  
-|中斷變更|非中斷|  
-  
-## <a name="cause"></a>原因  
- 類別會使用`SafeHandle`但仍包含呼叫`GC.KeepAlive`。  
-  
-## <a name="rule-description"></a>規則描述  
- 如果您要將它轉換成`SafeHandle`使用方式，移除所有對`GC.KeepAlive`（物件）。 在此情況下，類別應該不需要呼叫`GC.KeepAlive`，假設它們沒有完成項，但依賴`SafeHandle`完成作業系統控制代碼。  雖然離開中呼叫成本`GC.KeepAlive`可能是微不足道測量效能，相比，呼叫`GC.KeepAlive`是必要或不足以解決可能不再存在的問題，讓程式碼更難的存留期維護。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 移除呼叫`GC.KeepAlive`。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+|||
+|-|-|
+|TypeName|RemoveCallsToGCKeepAlive|
+|CheckId|CA2004|
+|分類|Microsoft.Reliability|
+|中斷變更|非中斷|
+
+## <a name="cause"></a>原因
+ 類別會使用`SafeHandle`但仍包含呼叫`GC.KeepAlive`。
+
+## <a name="rule-description"></a>規則描述
+ 如果您要將它轉換成`SafeHandle`使用方式，移除所有對`GC.KeepAlive`（物件）。 在此情況下，類別應該不需要呼叫`GC.KeepAlive`，假設它們沒有完成項，但依賴`SafeHandle`完成作業系統控制代碼。  雖然離開中呼叫成本`GC.KeepAlive`可能是微不足道測量效能，相比，呼叫`GC.KeepAlive`是必要或不足以解決可能不再存在的問題，讓程式碼更難的存留期維護。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 移除呼叫`GC.KeepAlive`。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您可以隱藏這個警告，只有不是技術上正確將轉換成`SafeHandle`您類別中的使用方式。

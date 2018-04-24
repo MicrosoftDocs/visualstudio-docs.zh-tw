@@ -1,13 +1,9 @@
 ---
-title: "在 Visual Studio 中的變數上設定監看式 |Microsoft 文件"
+title: 在 Visual Studio 中的變數上設定監看式 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +15,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>使用監看式和 Visual Studio 中的 快速監看式視窗變數上設定監看式
 當您偵錯時，您可以使用**監看式**和**快速監看式**windows 監看變數和運算式。  其差異在於 [監看式]  視窗可以顯示數個變數，而 [快速監看式]  視窗一次僅可顯示單一變數。 
@@ -59,7 +55,7 @@ static void Main(string[] args)
 
     您應該會看到中的變數**值**視窗中的，值為 1。
 
-    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![快速監看式運算式](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     如果您想要評估的運算式，使用變數，將運算式例如`a + b`至**運算式**視窗，然後按一下**重新評估**。 
   
@@ -217,7 +213,7 @@ public class Program
   
 2.  開始偵錯，當執行到中斷點停止時，找到 [區域變數]  視窗中的變數，按一下滑鼠右鍵，然後選取 [設定物件 ID] 。  
   
-3.  您應該會看到 **$** 加上數字中**區域變數**視窗中，代表物件的識別碼。  
+3.  您應該會看到**$** 加上數字中**區域變數**視窗中，代表物件的識別碼。  
   
 4.  將物件 ID 加入 [監看式] 視窗。  
   
@@ -229,7 +225,7 @@ public class Program
 >  如果您想要看到物件的屬性，例如`Person.Name`在上述範例中，您必須已啟用屬性評估。  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>在 [監看式] 視窗中使用暫存器 (僅限 C++)  
- 如果您正在偵錯原生程式碼，您可以加入暫存器名稱以及變數名稱使用 **$\<註冊名稱 >**或 **@\<註冊名稱 >**.  如需詳細資訊，請參閱 [Pseudovariables](../debugger/pseudovariables.md)。  
+ 如果您正在偵錯原生程式碼，您可以加入暫存器名稱以及變數名稱使用 **$\<註冊名稱 >** 或 **@\<註冊名稱 >**.  如需詳細資訊，請參閱 [Pseudovariables](../debugger/pseudovariables.md)。  
   
 ## <a name="dynamic-view-and-the-watch-window"></a>動態檢視和監看式視窗  
  某些指令碼語言 （例如 JavaScript 或 Python） 使用動態或[鴨子輸入](https://en.wikipedia.org/wiki/Duck_typing)，和.NET 語言 （4.0 或更新版本） 支援物件，不容易觀察使用一般的偵錯視窗中，因為它們可能無法顯示的執行階段屬性和方法。  
@@ -250,5 +246,5 @@ public class Program
   
  [動態檢視]  也強化了 COM 物件的偵錯體驗。 當偵錯工具發現包裝在 **System.__ComObject**中的 COM 物件時，它會為該物件新增 [動態檢視]  節點。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具視窗](../debugger/debugger-windows.md)

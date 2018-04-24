@@ -1,12 +1,9 @@
 ---
-title: "疑難排解 ClickOnce 部署中的特定錯誤 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解 ClickOnce 部署中的特定錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 本主題列出當您部署時，可能會發生下列常見錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。  
@@ -72,13 +69,13 @@ ms.lasthandoff: 12/22/2017
   
 -   確認部署資訊清單中的更新間隔。 如果在此時間間隔設定為定期間隔，例如一次每隔六小時，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不會掃描更新之前已超過此時間間隔。 您可以變更要掃描更新每次應用程式啟動時的資訊清單。 變更更新間隔是開發期間驗證正在安裝更新，但它會降低應用程式啟用的方便選項。  
   
--   請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可能已在背景中偵測更新，但將會提示您先安裝 bits，在下一步 啟動。  
+-   請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可能已在背景中偵測更新，但將會提示您先安裝 bits，在下一步 啟動。  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新期間，您收到錯誤，有下列記錄項目: 「 部署中的參考與應用程式資訊清單中所定義的識別不相符 」  
  因為您已經手動編輯部署和應用程式資訊清單中，有一個變得與其他同步處理的資訊清單中會導致身分識別的組件的描述，可能會發生這個錯誤。 組件的識別是由其名稱、 版本、 文化特性和公開金鑰語彙基元所組成。 檢查身分識別中的說明資訊清單，並更正任何差異。  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>第一次從本機磁碟或 CD-ROM 啟動成功，但後續從 [開始] 功能表啟動不成功  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您可以使用部署提供者 URL 來接收應用程式的更新。 請確認 URL 所指向的位置正確。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 您可以使用部署提供者 URL 來接收應用程式的更新。 請確認 URL 所指向的位置正確。  
   
 #### <a name="error-cannot-start-the-application"></a>錯誤: 「 無法啟動應用程式 」  
  此錯誤訊息通常表示已安裝到此應用程式的問題[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]儲存。 請在應用程式有錯誤或存放區已損毀。 記錄檔可能會告訴您哪裡發生錯誤。  
@@ -106,7 +103,7 @@ ms.lasthandoff: 12/22/2017
  如果您要發行的 url，請確定目標電腦已啟用 FrontPage Server Extensions。  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息： 無法建立網站 '\<站台 >'。 不會安裝的 FrontPage Server extensions 通訊的元件。  
- 確定您有 Microsoft Visual Studio 撰寫安裝 Web 元件，您從發行的機器上。 Express 使用者預設不會安裝此元件。 如需詳細資訊，請參閱[http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
+ 確定您有 Microsoft Visual Studio 撰寫安裝 Web 元件，您從發行的機器上。 Express 使用者預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息： 找不到檔案 ' Microsoft.Windows.Common-控制項，Version = 6.0.0.0，文化特性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32'  
  當您嘗試發佈已啟用視覺化樣式的 WPF 應用程式時，就會出現此錯誤訊息。 若要解決此問題，請參閱[如何： 發行與已啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
@@ -132,14 +129,14 @@ ms.lasthandoff: 12/22/2017
 |無法繼續。 應用程式的格式不正確。 請連絡應用程式發行者以尋求協助。<br /><br /> 應用程式驗證失敗。 無法繼續。<br /><br /> 無法擷取應用程式檔案。 在部署中的檔案損毀。|其中一個部署中的資訊清單檔案的語法無效，或包含不能和對應檔案一致的雜湊。 此錯誤也可能表示內嵌於組件資訊清單已損毀。 重新建立您的部署和重新編譯您的應用程式，或尋找並修正錯誤手動資訊清單中。|  
 |無法擷取應用程式。 驗證錯誤。<br /><br /> 應用程式安裝失敗。 找不到應用程式伺服器上的檔案。 如需協助，請連絡應用程式發行者或您的系統管理員。|無法下載部署中的一個或多個檔案，因為您沒有存取權限。 這可能被因所傳回的網頁伺服器，如果您的部署中的檔案的其中一個 Web 伺服器視為受保護的檔案副檔名，可能會發生 403 禁止錯誤。 此外，包含一或多個應用程式的檔案的目錄，可能會需要使用者名稱和密碼才能存取。|  
 |無法下載應用程式。 應用程式缺少必要的檔案。 如需協助，請連絡應用程式廠商或您的系統管理員。|在伺服器上找不到一或多個應用程式資訊清單中列出的檔案。 請確認您已上傳的所有部署的相依檔案，並再試一次。|  
-|應用程式下載失敗。 檢查網路連線，或連絡您的系統管理員或網路服務提供者。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]無法建立網路連線到伺服器。 請檢查伺服器的可用性，以及您網路的狀態。|  
+|應用程式下載失敗。 檢查網路連線，或連絡您的系統管理員或網路服務提供者。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 無法建立網路連線到伺服器。 請檢查伺服器的可用性，以及您網路的狀態。|  
 |URLDownloadToCacheFile 失敗，HRESULT '\<編號 >'。 嘗試下載時，發生錯誤 '\<檔案 >'。|如果使用者已設定 Internet Explorer 進階安全性選項 「 安全之間切換時，即發出警告和不安全模式 」 的部署目標電腦上，而且安裝程式的 URL 所安裝的 ClickOnce 應用程式從非安全重新導向至安全網站 （或反之亦然），安裝會失敗，因為 Internet Explorer 警告中斷它。<br /><br /> 若要解決此問題，您可以執行下列其中一項：<br /><br /> -清除安全性選項。<br />-請確定安裝程式 URL 不會重新導向的方式，以變更安全性模式。<br />-完全移除的重新導向，並指向實際的安裝程式的 URL。|  
 |寫入硬碟時發生錯誤。 可能沒有足夠的空間可用磁碟上。 如需協助，請連絡應用程式廠商或您的系統管理員。|這可能足夠的磁碟空間來儲存應用程式，但它也可能表示更一般的 I/O 錯誤，當您嘗試將應用程式檔案儲存到磁碟機。|  
 |無法啟動應用程式。 在磁碟上沒有足夠的可用空間。|硬碟已滿。 請釋放空間，然後嘗試再次執行應用程式。|  
-|太多已部署的啟用嘗試載入一次。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]限制可以同時啟動的不同應用程式數目。 這主要是為了有效抵禦惡意嘗試發動阻絕服務攻擊本機[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服務; 嘗試快速而連續重複啟動相同的應用程式，將只的單一執行個體的使用者應用程式。|  
+|太多已部署的啟用嘗試載入一次。|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 限制可以同時啟動的不同應用程式數目。 這主要是為了有效抵禦惡意嘗試發動阻絕服務攻擊本機[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服務; 嘗試快速而連續重複啟動相同的應用程式，將只的單一執行個體的使用者應用程式。|  
 |無法透過網路啟動捷徑。|捷徑[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]只在本機硬碟上啟動應用程式。 無法啟動這類開啟指向遠端伺服器上的捷徑檔案的 URL。|  
 |應用程式太大而無法在線上，在部分信任中執行。 如需協助，請連絡應用程式廠商或您的系統管理員。|在部分信任中執行的應用程式不能大於線上應用程式的配額，其預設值為 250 MB 大小的一半。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)

@@ -1,12 +1,9 @@
 ---
-title: "如何： 原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼 |Microsoft 文件"
-ms.custom: 
+title: 如何： 原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -21,18 +18,17 @@ helpviewer_keywords:
 - stepping, out of managed code
 - managed code, stepping out of
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7599c99c9375cda7b5f24432db8c137c5c4357df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d45cd65fc6bc6a66f2f7c698952f0cdd788b9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼
 如果程式碼擁有在中不可見的原生框架**呼叫堆疊**視窗中，跳離 managed 程式碼可能會產生非預期的結果。 因應措施，您可以使用中斷點，而不要**跳離函式**。  
@@ -48,5 +44,5 @@ ms.lasthandoff: 12/22/2017
   
      完成 Managed 呼叫之後，執行將停止於機器碼的中斷點處。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)

@@ -1,12 +1,9 @@
 ---
-title: "&lt;entryPoint&gt;元素 （ClickOnce 應用程式） |Microsoft 文件"
-ms.custom: 
+title: '&lt;entryPoint&gt;元素 （ClickOnce 應用程式） |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - <entryPoint> element [ClickOnce application manifest]
 - manifests [ClickOnce], entryPoint element
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
-caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: beb140a64a415ab1a42f8157e2fafb1d20f9569a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;元素 （ClickOnce 應用程式）
 識別應該是組件時執行這[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用戶端電腦上執行應用程式。  
@@ -115,5 +112,5 @@ ms.lasthandoff: 12/22/2017
   </entryPoint>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

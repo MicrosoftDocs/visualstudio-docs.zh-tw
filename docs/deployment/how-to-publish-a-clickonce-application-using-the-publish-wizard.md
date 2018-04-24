@@ -1,12 +1,9 @@
 ---
-title: "如何： 發行 ClickOnce 應用程式使用發行精靈 |Microsoft 文件"
-ms.custom: 
+title: 如何： 發行 ClickOnce 應用程式使用發行精靈 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - Windows applications, ClickOnce deployments
 - publishing, ClickOnce
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
-caps.latest.revision: "25"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用發行精靈發行 ClickOnce 應用程式
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發行精靈];，以發行應用程式與發佈相關的其他屬性位於**發行**頁面**專案設計工具**。 如需詳細資訊，請參閱[發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。  
@@ -101,7 +98,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  在發行完成後，您必須使用 CD 燒錄機或 DVD 燒錄機，將檔案從步驟 3 中指定的位置複製到 CD-ROM 或 DVD-ROM 媒體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [使用 ClickOnce 部署 Office 方案](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)

@@ -2,12 +2,8 @@
 title: '&lt;排程&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4cbc6b4f5ebd400d90466ccfa353d679a766580
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;排程&gt;元素 （啟動載入器）
 `Schedules`元素包含`Schedule`項目，可定義特定時間所定義的命令在`Command`應該執行項目。  
@@ -51,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="schedule"></a>排程  
  `Schedule`元素是子系`Schedules`項目。 A`Schedules`元素必須至少一個`Schedule`項目。  
   
- `Schedule`具有下列屬性。  
+ `Schedule` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -68,6 +63,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="afterpackage"></a>AfterPackage  
  `AfterPackage`項目會指示安裝程式以安裝指定的封裝之後，執行命令。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

@@ -1,23 +1,20 @@
 ---
-title: "逐步解說： 擷取圖形資訊 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 擷取圖形資訊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 990385be9d9518826f764a59529a1cff61467506
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 037bdbbfb81c36e4f8e4d124801907ca0600aee7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷從 Direct3D 應用程式手動擷取圖形資訊。  
@@ -62,5 +59,5 @@ ms.lasthandoff: 12/22/2017
   
 -   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](overview-of-visual-studio-graphics-diagnostics.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Capturing Graphics Information](capturing-graphics-information.md)

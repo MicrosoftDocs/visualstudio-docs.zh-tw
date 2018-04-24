@@ -1,26 +1,22 @@
 ---
-title: "遠端偵錯 IIS 與 Azure 上的 ASP.NET Core |Microsoft 文件"
+title: 遠端偵錯 IIS 與 Azure 上的 ASP.NET Core |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
@@ -59,11 +55,11 @@ ms.lasthandoff: 01/23/2018
 
 2. 請確定**ASP.NET Core 2.0**已選取，**啟用 Docker 支援**是**不**選取且**驗證**設為**不驗證**。
 
-3. 將專案命名**MyASPApp**按一下**[確定]**來建立新的方案。
+3. 將專案命名**MyASPApp**按一下 **[確定]** 來建立新的方案。
 
 4. 開啟 About.cshtml.cs 檔案，並在設定的中斷點`OnGet`方法 (在較舊的範本，開啟 HomeController.cs 改為和設定中斷點`About()`方法)。
 
-## <a name="remote_debug_azure_app_service"></a>Azure App Service 上的遠端偵錯 ASP.NET Core
+## <a name="remote_debug_azure_app_service"></a> Azure App Service 上的遠端偵錯 ASP.NET Core
 
 從 Visual Studio 中，您可以快速發行及偵錯應用程式完整佈建的 IIS 執行個體。 不過，預先設定的 IIS 設定，而且您不能加以自訂。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 的功能，請試著偵錯在[Azure VM](#BKMK_azure_vm)。) 
 
@@ -83,7 +79,7 @@ ms.lasthandoff: 01/23/2018
 
     就這麼容易！ 本主題中步驟的其餘部分適用於 Azure VM 上的遠端偵錯。
 
-## <a name="remote_debug_azure_vm"></a>Azure VM 上的遠端偵錯 ASP.NET Core
+## <a name="remote_debug_azure_vm"></a> Azure VM 上的遠端偵錯 ASP.NET Core
 
 您可以建立伺服器的 Azure VM 的 Windows，再安裝及設定 IIS 和其他必要的軟體元件。 這會花費的時間比部署到 Azure 應用程式服務，並且需要您在本教學課程執行其餘的步驟。
 
@@ -109,15 +105,15 @@ ms.lasthandoff: 01/23/2018
 1. 安裝[.NET 核心 Windows Server 裝載](https://aka.ms/dotnetcore-2-windowshosting)主機系統上的套件組合。 組合將會安裝.NET 核心執行階段、.NET 核心程式庫和 ASP.NET 核心模組。 深入了解的詳細指示，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)*之前安裝的.NET 核心 Windows Server 主控的組合。
+    > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安裝的.NET 核心 Windows Server 主控的組合。
 
 3. 重新啟動系統 (或執行**net stop was /y**後面**net 啟動 w3svc**挑選變更到系統路徑的命令提示字元)。
 
-### <a name="BKMK_install_webdeploy"></a>（選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
+### <a name="BKMK_install_webdeploy"></a> （選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>設定 Windows Server 電腦上的 ASP.NET 網站
+### <a name="BKMK_deploy_asp_net"></a> 設定 Windows Server 電腦上的 ASP.NET 網站
 
 1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站] 。
 
@@ -129,7 +125,7 @@ ms.lasthandoff: 01/23/2018
 
     如果您沒有看到其中一個使用者具有存取權，進行步驟來新增 IUSR 具有讀取和執行權限的使用者身分。
 
-### <a name="bkmk_webdeploy"></a>（選擇性）發行和部署使用 Web Deploy 從 Visual Studio 的應用程式
+### <a name="bkmk_webdeploy"></a> （選擇性）發行和部署使用 Web Deploy 從 Visual Studio 的應用程式
 
 如果您安裝 Web Deploy 使用 Web Platform Installer，您可以部署應用程式直接從 Visual Studio。
 
@@ -169,11 +165,11 @@ ms.lasthandoff: 01/23/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>下載並安裝 Windows Server 上的遠端工具
+### <a name="BKMK_msvsmon"></a> 下載並安裝 Windows Server 上的遠端工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>設定 Windows Server 上的遠端偵錯工具
+### <a name="BKMK_setup"></a> 設定 Windows Server 上的遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -186,7 +182,7 @@ ms.lasthandoff: 01/23/2018
 2. 在 Visual Studio 中，按一下 **偵錯 > 附加至處理序**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017，您可以重新連接至您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift+Alt+P). 
+    > 在 Visual Studio 2017，您可以重新連接至您先前附加至使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。 
 
 3. [限定詞] 欄位設定為**\<遠端電腦名稱 >: 4022**。
 4. 按一下**重新整理**。
@@ -211,7 +207,7 @@ ms.lasthandoff: 01/23/2018
 
     應該在 Visual Studio 中叫用中斷點。
 
-### <a name="bkmk_openports"></a>疑難排解： 開啟 Windows Server 上的必要連接埠
+### <a name="bkmk_openports"></a> 疑難排解： 開啟 Windows Server 上的必要連接埠
 
 大部分的安裝中安裝 ASP.NET 和遠端偵錯工具所開啟必要的連接埠。 不過，如果您正在疑難排解部署問題，而應用程式裝載在防火牆後面，您可能需要確認正確的通訊埠已開啟。
 

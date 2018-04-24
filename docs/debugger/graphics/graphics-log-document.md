@@ -1,27 +1,24 @@
 ---
-title: "圖形記錄文件 |Microsoft 文件"
-ms.custom: 
+title: 圖形記錄文件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
 - vs.graphics.experiment
 - vs.graphics.vsglog
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 772287d31a3428c3791ead08103f2318763e1701
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 圖形記錄文件是在圖形診斷工作階段下執行應用程式時所發生圖形事件的記錄。 錄製之後，您可以在 Visual Studio 圖形分析器中檢查記錄來診斷轉譯和效能問題。  
@@ -115,6 +112,6 @@ ms.lasthandoff: 12/22/2017
 |**工作階段開始時間**|擷取工作階段開始的日期和時間。|  
 |**Size**|圖形記錄文件的大小。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

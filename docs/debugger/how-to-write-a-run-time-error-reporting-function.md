@@ -1,12 +1,9 @@
 ---
-title: "如何： 撰寫報告函式的執行階段錯誤 |Microsoft 文件"
-ms.custom: 
+title: 如何： 撰寫報告函式的執行階段錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - run-time errors, reporting functions
 - reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a123885ef43a94cbb0d0e03319b88415d9e5c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 331a29b8ec34a33ea43ede68ea477138cca58e16
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>如何：撰寫執行階段錯誤報告函式
 執行階段錯誤的自訂報告函式，它必須具有與 `_CrtDbgReportW` 相同的宣告。 它應該向偵錯工具傳回值 1。  
@@ -125,5 +122,5 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂原生執行階段檢查](../debugger/native-run-time-checks-customization.md)

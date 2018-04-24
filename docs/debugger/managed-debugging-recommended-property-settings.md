@@ -1,12 +1,9 @@
 ---
-title: "Managed 偵錯： 建議的屬性設定 |Microsoft 文件"
-ms.custom: 
+title: Managed 偵錯： 建議的屬性設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], managed
 - debugging managed code, recommended property settings
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ebbd6bf87270bba70dc80cd7ff652c147d3a4849
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: e1c4b725871012f1fbf2c80f3e978f133d4db5b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Managed 偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。  
@@ -53,6 +50,6 @@ ms.lasthandoff: 12/22/2017
 |**定義 DEBUG 常數**|選取這個核取方塊定義 `DEBUG` 常數，讓應用程式能使用 <xref:System.Diagnostics.Debug> 類別。|  
 |**定義 TRACE 常數**|選取這個核取方塊定義 `TRACE` 常數，讓應用程式能使用 <xref:System.Diagnostics.Trace> 類別。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

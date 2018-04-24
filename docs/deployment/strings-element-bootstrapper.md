@@ -2,12 +2,8 @@
 title: '&lt;字串&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
 - MSBuild.GenerateBootstrapper.ProductCultureNotFound
@@ -19,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: df186776e9f1fe431343c8643e5186ff522dfff6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字串&gt;元素 （啟動載入器）
 定義產品名稱、 封裝名稱，以及安裝錯誤訊息的當地語系化的字串。  
@@ -51,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="string"></a>String  
  `String`元素是子系`Strings`項目。 A`Strings`項目可能有一或多個`String`項目。  
   
- `String`具有下列屬性。  
+ `String` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -79,5 +74,5 @@ ms.lasthandoff: 12/22/2017
 </Strings>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)

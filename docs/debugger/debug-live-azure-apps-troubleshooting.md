@@ -1,26 +1,21 @@
 ---
-title: "疑難排解和已知問題進行偵錯快照集 |Microsoft 文件"
+title: 疑難排解和已知問題進行偵錯快照集 |Microsoft 文件
 ms.date: 11/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 7340b5f6ce7e9f8cbcbb0e2673b22712b3ab45a3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照集，則在 Visual Studio 中偵錯的疑難排解和已知問題
 
@@ -71,7 +66,7 @@ ms.lasthandoff: 01/19/2018
 
 - 目前不支援對相同的應用程式服務的多個 Visual Studio 用戶端使用的快照集進行偵錯。
 - Roslyn IL 最佳化不完全支援在 ASP.NET Core 專案。 對於某些 ASP.NET Core 專案，您可能無法看到部分變數，或在條件陳述式中使用一些變數。 
-- 特殊變數，例如*$FUNCTION*或*$CALLER*，無法評估在條件陳述式或 logpoints ASP.NET Core 專案。
+- 特殊變數，例如 *$FUNCTION*或 *$CALLER*，無法評估在條件陳述式或 logpoints ASP.NET Core 專案。
 - 偵錯快照集不會對此應用程式服務具有[本機快取](/azure/app-service/app-service-local-cache)開啟。
 - 目前不支援偵錯應用程式開發介面應用程式的快照集。
 

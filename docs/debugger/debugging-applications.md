@@ -1,28 +1,25 @@
 ---
-title: "偵錯應用程式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d1ed00ca584bc9dce703585e4a1630c62d6496f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 下列各節將說明特定類型應用程式的偵錯。 不同的應用程式類型與不同的語言，需要不同的設定及技術，其呈現出來需要偵錯的問題也不相同。  

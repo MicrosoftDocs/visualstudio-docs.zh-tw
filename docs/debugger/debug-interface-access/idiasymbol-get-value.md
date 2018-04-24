@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_value |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_value |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10bc33c300b9bcdea9b1c6e5784648d7ef19676e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 擷取常數的值。  
@@ -74,5 +69,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

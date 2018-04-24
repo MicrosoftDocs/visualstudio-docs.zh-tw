@@ -1,71 +1,72 @@
 ---
-title: BoundsRules 限制圖形的位置和大小 |Microsoft 文件
-ms.custom: ''
+title: BoundsRules 限制圖案位置和大小
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c672cbc25c28bf4d74f01160212584875b51ba1a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 69e189b8348b7c68c7a778f00975d5d1475223ab
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
-A*範圍規則*是類別，定義限制的大小和圖形的位置。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。  
-  
- 下列範例限制矩形是固定的大小，水平或垂直列。 當使用者拖曳的角落或四周時，大綱翻轉之間允許的兩個設定的高度和寬度。  
-  
- 範圍規則的類別衍生自<xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>。 在圖形中建立規則的執行個體：  
-  
-```  
-using Microsoft.VisualStudio.Modeling.Diagrams; ...  
-public partial class BarShape  
-{  
-  /// <summary>  
-  /// Rule invoked when the user is resizing a shape.  
-  /// </summary>  
-  public override BoundsRules BoundsRules  
-  { get { return new BarBoundsRule(); } }  
-}  
-/// <summary>  
-/// Rule invoked when the user is changing a shape's outline.  
-/// Provides real-time mouse rubber-band feedback, so must work fast.  
-/// </summary>  
-public class BarBoundsRule: BoundsRules  
-{   
-  public override RectangleD GetCompliantBounds   
-     (ShapeElement shape, RectangleD proposedBounds)  
-  {  
-    double thickness = 0.1;  
-    if (proposedBounds.Height > proposedBounds.Width)  
-    {  
-      // There is a minimum width for a shape; the width  
-      // will actually be set to the lesser of   
-      // thickness and that minimum.  
-      return new RectangleD(proposedBounds.Location,   
-            new SizeD(thickness, proposedBounds.Height));  
-    }  
-    else  
-    {  
-      // There is a minimum height for a shape; the   
-      // height will actually be set to the lesser of   
-      // thickness and that minimum.  
-      return new RectangleD(proposedBounds.Location,   
-         new SizeD(proposedBounds.Width, thickness));  
-} } }  
-```  
-  
- 請注意，位置和大小可以限制是否您想要。  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
- [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
+
+A*範圍規則*是類別，定義限制的大小和圖形的位置。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。
+
+下列範例限制矩形是固定的大小，水平或垂直列。 當使用者拖曳的角落或四周時，大綱翻轉之間允許的兩個設定的高度和寬度。
+
+範圍規則的類別衍生自<xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>。 在圖形中建立規則的執行個體：
+
+```csharp
+using Microsoft.VisualStudio.Modeling.Diagrams; ...
+
+public partial class BarShape
+{
+  /// <summary>
+  /// Rule invoked when the user is resizing a shape.
+  /// </summary>
+  public override BoundsRules BoundsRules
+  { get { return new BarBoundsRule(); } }
+}
+
+/// <summary>
+/// Rule invoked when the user is changing a shape's outline.
+/// Provides real-time mouse rubber-band feedback, so must work fast.
+/// </summary>
+public class BarBoundsRule: BoundsRules
+{
+  public override RectangleD GetCompliantBounds
+     (ShapeElement shape, RectangleD proposedBounds)
+  {
+    double thickness = 0.1;
+    if (proposedBounds.Height > proposedBounds.Width)
+    {
+      // There is a minimum width for a shape; the width
+      // will actually be set to the lesser of
+      // thickness and that minimum.
+      return new RectangleD(proposedBounds.Location,
+            new SizeD(thickness, proposedBounds.Height));
+    }
+    else
+    {
+      // There is a minimum height for a shape; the
+      // height will actually be set to the lesser of
+      // thickness and that minimum.
+      return new RectangleD(proposedBounds.Location,
+         new SizeD(proposedBounds.Width, thickness));
+} } }
+```
+
+請注意，位置和大小可以限制是否您想要。
+
+## <a name="see-also"></a>另請參閱
+
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>
+- [回應，並將變更傳播](../modeling/responding-to-and-propagating-changes.md)

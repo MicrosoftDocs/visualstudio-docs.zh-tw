@@ -1,22 +1,19 @@
 ---
-title: "疑難排解 Visual Studio 偵錯工具中的中斷點 |Microsoft 文件"
-ms.custom: 
+title: 疑難排解 Visual Studio 偵錯工具中的中斷點 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "0"
-author: carpediemma
-ms.author: emrou
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a59a5448cb9ceb9aa4ac5578e9234c1a9972a15a
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.topic: conceptual
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d587809a9690e312e923ba184c9d90c38405a5d6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>疑難排解 Visual Studio 偵錯工具中的中斷點
 
@@ -30,7 +27,7 @@ ms.lasthandoff: 01/24/2018
 
 移至**模組**視窗 (**偵錯** > **Windows** > **模組**) 並檢查是否在模組載入。  
 * 如果您的模組載入時，請檢查**符號狀態**欄，以查看是否已載入符號。 
-  * 如果未載入符號，請檢查符號狀態來診斷問題。 從內容功能表中的模組上**模組**視窗中，按一下 **符號載入資訊...**以查看偵錯工具尋找並嘗試載入符號的位置。 如需載入符號的詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+  * 如果未載入符號，請檢查符號狀態來診斷問題。 從內容功能表中的模組上**模組**視窗中，按一下 **符號載入資訊...** 以查看偵錯工具尋找並嘗試載入符號的位置。 如需載入符號的詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   * 如果已載入符號，這表示 PDB 不包含來源檔案的相關資訊。 以下是幾個可能的原因： 
     * 如果最近已新增您的來源檔案，請確認正在載入的模組最新版本。  
     * 您可建立使用已移除的 Pdb **/PDBSTRIPPED**連結器選項。 已移除的 Pdb 不包含原始程式檔資訊。 確認您使用完整的 PDB 和不等量的 PDB。  

@@ -1,26 +1,23 @@
 ---
-title: "訊息屬性 對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 訊息屬性 對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - message options
 - message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ab11a037a5cf9d313e3269a5c3c8df464b120006
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
 使用此對話方塊來找出有關特定訊息的詳細資訊。 若要顯示此對話方塊中，焦點移至[訊息檢視](../debugger/messages-view.md)視窗。 在樹狀目錄中，選取訊息的任何節點，然後選擇 **屬性**從**檢視**功能表。  

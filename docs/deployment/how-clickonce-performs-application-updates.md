@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 執行應用程式更新的方式 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 執行應用程式更新的方式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deploying applications [ClickOnce], application updates
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 6ee199aa98c0c5b72a5693c840b892929e55477a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bbe09cfe546d947bf07334e9dd6468226884e9e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 ClickOnce 會使用應用程式的部署資訊清單中指定的檔案版本資訊決定是否要更新應用程式的檔案。 更新開始之後，ClickOnce 會使用稱為技術*修補檔案*避免重複下載的應用程式檔案。  
@@ -39,6 +36,6 @@ ClickOnce 會使用應用程式的部署資訊清單中指定的檔案版本資�
   
  修補檔案不適用於標示為資料和資料目錄中儲存的檔案。 這些檔案的雜湊簽章不論一律都會下載。 如需有關資料目錄的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

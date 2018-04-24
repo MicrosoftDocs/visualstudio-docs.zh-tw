@@ -3,27 +3,22 @@ title: 偵錯即時 ASP.NET Azure 應用程式的 Visual Studio |Microsoft 文�
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0382f720e73504147c5f38ba61b5407db039a487
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: e6ef3acf3373f03249b9ffa4456195f25b9991a3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
@@ -38,7 +33,7 @@ Snappoints 和 logpoints 類似於中斷點，但不同於中斷點、 snappoint
 
 此外，快照集偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 或更高版本的版本和基本或更高版本的應用程式服務方案。 
 
-在此教學課程中，您將：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟動快照集偵錯工具

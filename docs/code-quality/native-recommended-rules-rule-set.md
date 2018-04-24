@@ -1,23 +1,18 @@
 ---
-title: "原生建議規則規則集 |Microsoft 文件"
-ms.custom: 
+title: 原生建議規則規則集
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1a4319fb657580cc37544508659d0c9aeeb06a
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 4a2fff799001f9fdffb9dde52785e08239d363d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 

@@ -1,13 +1,9 @@
 ---
-title: "保護 ClickOnce 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 保護 ClickOnce 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 13ec12009a48d841a991519ab929794279fe2a5e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="securing-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。  
@@ -51,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
  若包含部署應用程式的區域預設權限以外的權限，在安裝或更新期間，將會造成提示使用者授權。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，使用權限會自動授與，因此使用者就不會看到提示。  
   
- 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您在目標安全性區域中偵錯應用程式， 並於開發安全應用程式時提供協助。 如需詳細資訊，請參閱 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 身為開發人員，您有責任確保您的應用程式能以適當的使用權限執行。 如果應用時間在執行階段要求區域外的權限，可能會發生安全性例外狀況。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您在目標安全性區域中偵錯應用程式， 並於開發安全應用程式時提供協助。 如需詳細資訊，請參閱 [如何：以限制使用權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
  如需程式碼存取安全性以及 ClickOnce 的詳細資訊，請參閱 [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md)。  
   
@@ -82,6 +77,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件  
  Visual Studio 包含免費[先佔式保護-Dotfuscator Community Edition](../ide/dotfuscator/index.md)，可用來保護您透過程式碼混淆和作用中保護的量值的 ClickOnce 應用程式。  如需詳細資訊，請參閱[Dotfuscator Community Edition 使用者指南的 ClickOnce 區段](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

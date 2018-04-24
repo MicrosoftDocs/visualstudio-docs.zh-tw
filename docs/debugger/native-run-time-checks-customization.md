@@ -2,12 +2,8 @@
 title: 原生執行階段會檢查自訂 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -23,20 +19,19 @@ helpviewer_keywords:
 - customizing CRT error checking
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
-caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
-當您編譯與**/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  
+當您編譯與 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  
   
 -   若要將執行階段檢查訊息傳送至非預設的檔案或目的端。  
   
@@ -60,7 +55,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="query-for-information-about-run-time-checks"></a>查詢執行階段檢查的相關資訊  
  `_RTC_NumErrors` 會傳回執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱[_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)和[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

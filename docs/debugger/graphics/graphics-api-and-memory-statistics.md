@@ -1,25 +1,23 @@
 ---
-title: "圖形 API 和記憶體統計資料 |Microsoft 文件"
-ms.custom: 
+title: 圖形 API 和記憶體統計資料 |Microsoft 文件
+ms.custom: ''
 ms.date: 03/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.apistatistics
 - vs.graphics.memorystatistics
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c34c505751153410896da66040c866676c3a7ee2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 48c8ed3c8c2ebffc57ac46e987dbc37950cba0fd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-api-and-memory-statistics"></a>圖形 API 和記憶體統計資料
 <!-- VERSIONLESS -->
@@ -43,7 +41,7 @@ Visual Studio 2017 和更佳的支援圖形 API 統計資料和記憶體統計�
 
 如同 API 統計資料工具中，您可以滑鼠右鍵按一下 [全部複製資料] 視窗中以 csv 格式，可以貼到類似 Excel，以便進一步分析。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [圖形診斷 （偵錯 DirectX 圖形）](visual-studio-graphics-diagnostics.md)   
 [資源記錄](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

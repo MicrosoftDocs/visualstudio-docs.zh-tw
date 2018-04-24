@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定技術支援連結 |Microsoft 文件"
-ms.custom: 
+title: 如何： 指定技術支援連結 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - customer support, ClickOnce applications
 - URLs, ClickOnce applications
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 3953148355321f4ed17d5d4f539c6f31c1a5872c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技術支援的連結
 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，**支援 URL**屬性會識別網頁或檔案共用使用者可以前往以取得應用程式的相關資訊。 這個屬性是選擇性的。如果提供，將應用程式的項目中看到這個 URL**新增或移除程式** 對話方塊。  
@@ -48,6 +45,6 @@ ms.lasthandoff: 12/22/2017
   
 5.  在**支援 URL**欄位中，輸入完整的路徑到網站、 網頁或 UNC 共用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

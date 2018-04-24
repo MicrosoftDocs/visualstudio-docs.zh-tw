@@ -1,12 +1,9 @@
 ---
-title: "如何： 檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新 |Microsoft 文件"
-ms.custom: 
+title: 如何： 檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5953af7c6aafe914be409d8c3ab459b6b4261e54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新
 ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 在第一個方法中，您可以設定 ClickOnce 部署以自動檢查更新，在特定間隔內。 在第二個方法中，您可以撰寫程式碼乃使用<xref:System.Deployment.Application.ApplicationDeployment>檢查更新的類別，根據事件，例如使用者的要求。  
@@ -50,7 +47,7 @@ ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 部署的應用程式，以程式設計方式檢查更新  
   
--   依照指示部署應用程式中所述，使用 Mage.exe[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在呼叫 Mage.exe 來產生部署資訊清單，請務必使用命令列參數`providerUrl`，並指定 ClickOnce 在哪裡檢查更新檔的 URL。 如果您的應用程式將更新從[http://www.adatum.com/MyApp](http://www.adatum.com/MyApp)，比方說，您對產生的部署資訊清單的呼叫可能會看起來像這樣：  
+-   依照指示部署應用程式中所述，使用 Mage.exe[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在呼叫 Mage.exe 來產生部署資訊清單，請務必使用命令列參數`providerUrl`，並指定 ClickOnce 在哪裡檢查更新檔的 URL。 如果您的應用程式將更新從[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，比方說，您對產生的部署資訊清單的呼叫可能會看起來像這樣：  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -63,7 +60,7 @@ ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您的應用程式必須具有完全信任權限使用以程式設計方式更新。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何： 指定部署更新的替代位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

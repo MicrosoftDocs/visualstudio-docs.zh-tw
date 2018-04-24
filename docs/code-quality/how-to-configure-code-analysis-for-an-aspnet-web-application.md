@@ -1,5 +1,5 @@
 ---
-title: 如何： 設定 ASP.NET Web 應用程式的 Visual Studio 中的程式碼分析 |Microsoft 文件
+title: 如何： 設定 ASP.NET Web 應用程式的 Visual Studio 中的程式碼分析
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f0868c825c4e3632a882a044b69e676053800ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d950846811cf1792bf2ee302d37ebd686107fe6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：設定 ASP.NET Web 應用程式的程式碼分析
 

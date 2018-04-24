@@ -1,20 +1,18 @@
 ---
-title: 混合建議規則規則集 |Microsoft 文件
-ms.custom: ''
+title: 混合建議規則規則集
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfecf4019244e02816686783171cb34cd0c0c1d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b84c218ad6a369cfc5d9f06a5f5833fb277692ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
@@ -215,7 +213,7 @@ Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包�
 |[C28253](../code-quality/c28253.md)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|
 |[C28254](../code-quality/c28254.md)|註釋中不支援 dynamic_cast<>()|
 |[C28262](../code-quality/c28262.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤|
-|[C28263](../code-quality/c28263.md)|找到內建註釋的條件式註釋語法錯誤| 
+|[C28263](../code-quality/c28263.md)|找到內建註釋的條件式註釋語法錯誤|
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|
