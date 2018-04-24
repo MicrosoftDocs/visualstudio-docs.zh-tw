@@ -2,12 +2,8 @@
 title: '&lt;相依性&gt;元素 （ClickOnce 部署） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 27
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;元素 （ClickOnce 部署）
 識別要安裝，應用程式的版本，以及應用程式資訊清單的位置。  
@@ -98,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 |屬性|描述|  
 |---------------|-----------------|  
 |`Name`|必要。 識別應用程式的名稱。|  
-|`Version`|必要。 指定應用程式的版本號碼，格式如下：`major.minor.build.revision`|  
+|`Version`|必要。 指定應用程式的版本號碼，格式如下： `major.minor.build.revision`|  
 |`publicKeyToken`|必要。 指定 16 個字元的十六進位字串，表示簽署的應用程式或組件之公開金鑰的 sha-1 雜湊最後 8 個位元組。 用於簽章的公開金鑰必須是 2048 位元或更高。|  
 |`processorArchitecture`|必要。 指定微處理器。 有效值為`x86`適用於 32 位元 Windows 和`IA64`適用於 64 位元 Windows。|  
 |`Language`|選擇性。 識別組件的兩部分語言代碼。 例如，EN-US，它會代表如英文 （美國）。 預設值為 `neutral`。 此元素為`asmv2`命名空間。|  
@@ -107,7 +102,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="hash"></a>雜湊  
  `hash`項目是選擇性的子系`file`項目。 `hash`項目沒有任何屬性。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用應用程式中的所有檔案的演算式雜湊檢查安全性，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用應用程式中的所有檔案的演算式雜湊檢查安全性，以確保沒有任何檔案已在部署後變更。 如果`hash`就不會包含項目，將不會執行這項檢查。 因此，省略`hash`不建議項目。  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms`項目是必要的子系`hash`項目。 `dsig:Transforms`項目沒有任何屬性。  
@@ -186,6 +181,6 @@ ms.lasthandoff: 12/22/2017
 </dependency>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md)

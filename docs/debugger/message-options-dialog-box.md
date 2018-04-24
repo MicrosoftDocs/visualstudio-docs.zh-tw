@@ -1,26 +1,23 @@
 ---
-title: "訊息選項對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 訊息選項對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45878b19619f5a3842d235242603293d990a510a
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 76ced120b9545adb21a4fcfe73df6f69961568b7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 使用此對話方塊來選取哪一個訊息會列在[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，選擇**記錄檔訊息**從**Spy**功能表。  

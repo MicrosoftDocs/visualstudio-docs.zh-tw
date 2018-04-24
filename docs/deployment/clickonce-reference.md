@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 參考 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 參考 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce, reference
 - manifests [ClickOnce]
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
-caps.latest.revision: "8"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 898acac30776a4b189433440c9bb713a00561029
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7d73cb7aa647a3ee6adbf7d06d832fe3b59c5ed8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-reference"></a>ClickOnce 參考
 下列頁面描述用來代表 ClickOnce 應用程式的 XML 檔案的結構。  

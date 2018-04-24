@@ -1,12 +1,9 @@
 ---
-title: "如何： 擷取線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft 文件"
-ms.custom: 
+title: 如何： 擷取線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, query strings
 - query strings, retrieving information
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
-caps.latest.revision: "19"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e0fb359dba89a3eef6f257b0cfe560a3f3ab5738
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 47d20cf156cfdb6aaa18e37160dbf027bb3fb519
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
@@ -82,5 +79,5 @@ ms.lasthandoff: 12/22/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

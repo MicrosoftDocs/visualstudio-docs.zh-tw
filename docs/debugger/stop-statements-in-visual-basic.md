@@ -1,12 +1,9 @@
 ---
-title: "Stop 陳述式在 Visual Basic |Microsoft 文件"
-ms.custom: 
+title: Stop 陳述式在 Visual Basic |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - Stop statements, about Stop statements
 - debugging [Visual Basic], Stop statements vs. breakpoints
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0238d39cec68ce2d569cfc2797e4c8bc2e437860
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 陳述式
 Visual Basic 的 Stop 陳述式提供了設定中斷點的程式設計替代方式。 當偵錯工具碰到 Stop 陳述式時，它會中斷程式的執行 (進入中斷模式)。 C# 程式設計人員使用 System.Diagnostics.Debugger.Break 的呼叫，可以達到相同的效果。  
@@ -61,7 +58,7 @@ Debug.Assert(false)
 Debug.Fail("a clever output string goes here")  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

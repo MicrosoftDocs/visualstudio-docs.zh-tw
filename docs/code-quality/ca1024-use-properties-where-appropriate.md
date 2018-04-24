@@ -1,10 +1,8 @@
 ---
-title: CA1024： 在適當時使用屬性 |Microsoft 文件
-ms.custom: ''
+title: CA1024：建議在適當時使用屬性
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
 - CA1024
@@ -17,105 +15,105 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf44541c9eca3d2b8027ff1b5811caf0ba6824f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03318241206b812f4ffb57dddfc6b4f021d600f1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
-|||  
-|-|-|  
-|TypeName|UsePropertiesWhereAppropriate|  
-|CheckId|CA1024|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，不是陣列。  
-  
-## <a name="rule-description"></a>規則描述  
- 在大部分情況下，內容表示資料，方法會執行動作。 屬性存取欄位，使其更容易使用類似。 方法是成為屬性，如果其中一種情形存在的良好候選項目：  
-  
--   不接受引數，並傳回物件的狀態資訊。  
-  
--   接受單一引數來設定物件狀態的某些部分。  
-  
- 屬性應有的行為如同這些欄位。如果方法無法處理，它應該不會變更的屬性。 方法會比在下列情況中的屬性：  
-  
--   此方法會執行耗時的作業。 這個方法是設定或取得欄位的值所需的時間比感覺。  
-  
--   此方法會執行轉換。 存取欄位不會傳回儲存的資料轉換的版本。  
-  
--   Get 方法有副作用。 擷取欄位的值不會產生任何副作用。  
-  
--   執行的順序很重要。 設定欄位的值不會依賴其他作業的相符項目。  
-  
--   連續兩次呼叫方法會建立不同的結果。  
-  
--   方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。  
-  
--   方法會傳回陣列。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，請將方法變更為屬性。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 如果方法符合至少其中一個先前所列的準則，則隱藏此規則的警告。  
-  
-## <a name="controlling-property-expansion-in-the-debugger"></a>偵錯工具中控制屬性展開  
- 程式設計人員請避免使用屬性的其中一個原因是因為不想要偵錯工具自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但它可能實際上沒有任何副作用。  
-  
- 您可以避免在偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例會示範這個屬性套用至執行個體屬性。  
-  
-```vb  
-Imports System   
-Imports System.Diagnostics   
-  
-Namespace Microsoft.Samples   
-  
-    Public Class TestClass   
-  
-        ' [...]   
-  
-        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _   
-        Public ReadOnly Property LargeObject() As LargeObject   
-            Get   
-                ' Allocate large object   
-                ' [...]   
-            End Get   
-        End Property   
-  
-    End Class   
-  
-End Namespace  
-```  
-  
-```csharp  
-  
-      using System;   
-using System.Diagnostics;   
-  
-namespace Microsoft.Samples   
-{   
-    publicclass TestClass   
-    {   
-        // [...]   
-  
-        [DebuggerBrowsable(DebuggerBrowsableState.Never)]   
-        public LargeObject LargeObject   
-        {   
-            get   
-            {   
-                // Allocate large object   
-                // [...]   
-  
-        }  
-    }  
-}  
-```  
-  
-## <a name="example"></a>範例  
- 下列範例包含數種方法，應該轉換成屬性，以及數個應該就不會報告它們行為不像欄位。  
-  
+|||
+|-|-|
+|TypeName|UsePropertiesWhereAppropriate|
+|CheckId|CA1024|
+|分類|Microsoft.Design|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，不是陣列。
+
+## <a name="rule-description"></a>規則描述
+ 在大部分情況下，內容表示資料，方法會執行動作。 屬性存取欄位，使其更容易使用類似。 方法是成為屬性，如果其中一種情形存在的良好候選項目：
+
+-   不接受引數，並傳回物件的狀態資訊。
+
+-   接受單一引數來設定物件狀態的某些部分。
+
+ 屬性應有的行為如同這些欄位。如果方法無法處理，它應該不會變更的屬性。 方法會比在下列情況中的屬性：
+
+-   此方法會執行耗時的作業。 這個方法是設定或取得欄位的值所需的時間比感覺。
+
+-   此方法會執行轉換。 存取欄位不會傳回儲存的資料轉換的版本。
+
+-   Get 方法有副作用。 擷取欄位的值不會產生任何副作用。
+
+-   執行的順序很重要。 設定欄位的值不會依賴其他作業的相符項目。
+
+-   連續兩次呼叫方法會建立不同的結果。
+
+-   方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。
+
+-   方法會傳回陣列。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，請將方法變更為屬性。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 如果方法符合至少其中一個先前所列的準則，則隱藏此規則的警告。
+
+## <a name="controlling-property-expansion-in-the-debugger"></a>偵錯工具中控制屬性展開
+ 程式設計人員請避免使用屬性的其中一個原因是因為不想要偵錯工具自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但它可能實際上沒有任何副作用。
+
+ 您可以避免在偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例會示範這個屬性套用至執行個體屬性。
+
+```vb
+Imports System
+Imports System.Diagnostics
+
+Namespace Microsoft.Samples
+
+    Public Class TestClass
+
+        ' [...]
+
+        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _
+        Public ReadOnly Property LargeObject() As LargeObject
+            Get
+                ' Allocate large object
+                ' [...]
+            End Get
+        End Property
+
+    End Class
+
+End Namespace
+```
+
+```csharp
+
+      using System;
+using System.Diagnostics;
+
+namespace Microsoft.Samples
+{
+    publicclass TestClass
+    {
+        // [...]
+
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        public LargeObject LargeObject
+        {
+            get
+            {
+                // Allocate large object
+                // [...]
+
+        }
+    }
+}
+```
+
+## <a name="example"></a>範例
+ 下列範例包含數種方法，應該轉換成屬性，以及數個應該就不會報告它們行為不像欄位。
+
  [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

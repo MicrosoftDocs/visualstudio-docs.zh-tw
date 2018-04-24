@@ -2,11 +2,7 @@
 title: 偵錯錯誤和警告對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - debugger, errors
 - errors [Visual Studio], debugger
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 547c9befa5868aee669bc663bf5f7542e8d09ab7
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 底下列出一些偵錯應用程式時可能會碰到的錯誤和警告對話方塊。  

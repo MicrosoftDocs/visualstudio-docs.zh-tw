@@ -1,23 +1,20 @@
 ---
-title: "遠端偵錯工具連接埠指派 |Microsoft 文件"
+title: 遠端偵錯工具連接埠指派 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c541922ac18c28e085db37b6ac9fa9349adbeb9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ab48d9b6a67563171e28dab1f08e496750585288
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：  
@@ -37,7 +34,7 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
   
  在遠端偵錯工具視窗中，按一下 **工具 > 選項**，並設定 TCP/IP 通訊埠編號。  
   
- 命令列啟動遠端偵錯工具中的**/連接埠**切換： **msvsmon /port\<連接埠號碼 >**。  
+ 命令列啟動遠端偵錯工具中的 **/連接埠**切換： **msvsmon /port\<連接埠號碼 >**。  
   
  可以在遠端偵錯說明中找到所有遠端偵錯工具命令列參數 (按**F1**或按一下**協助 > 使用量**遠端偵錯工具視窗中)。  
   
@@ -61,5 +58,5 @@ Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

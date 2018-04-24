@@ -1,12 +1,9 @@
 ---
-title: "如何： 偵錯 ASP.NET 例外狀況 |Microsoft 文件"
-ms.custom: 
+title: 如何： 偵錯 ASP.NET 例外狀況 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ASP.NET, exceptions
 - exceptions, ASP.NET
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 82c81f2998497f047550e35397dc870338ed977e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 5923818e93170ded1f857ac20d42cd6134aed5d3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 偵錯例外狀況是很重要的部分開發強固[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]應用程式。 如何偵錯例外狀況的一般資訊是在[管理例外狀況，偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)。  
@@ -51,5 +48,5 @@ ms.lasthandoff: 12/22/2017
   
 -   對於您可以預期會發生例外狀況並知道如何處理的程式碼，請將 `try ... catch` 區塊置於此程式碼周圍。 例如，如果應用程式正在呼叫 XML Web Service 或直接 SQL Server，該程式碼應該在**try … catch**區塊中，因為可能會發生的許多例外狀況。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

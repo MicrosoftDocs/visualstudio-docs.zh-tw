@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 下載 ClickOnce 部署應用程式開發介面使用設計工具的要求附屬組件 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 下載 ClickOnce 部署應用程式開發介面使用設計工具的要求附屬組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - ClickOnce deployment, localization
 - walkthroughs, localization
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b96665bb2d9e6395d32d85344e2fe2cdabc21951
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。  
@@ -53,7 +50,7 @@ ms.lasthandoff: 12/22/2017
   
      附屬組件都會有名稱形式*isoCode*\ApplicationName.resources.dll，其中*isoCode*是 RFC 1766 格式的語言識別項。  
   
-5.  按一下**新...**中**下載群組**每個語言識別碼的清單。 在系統提示您輸入下載群組名稱時，請輸入語言識別項。 例如，日文的附屬組件，您可以指定下載群組名稱`ja-JP`。  
+5.  按一下**新...** 中**下載群組**每個語言識別碼的清單。 在系統提示您輸入下載群組名稱時，請輸入語言識別項。 例如，日文的附屬組件，您可以指定下載群組名稱`ja-JP`。  
   
 6.  關閉**應用程式檔案** 對話方塊。  
   
@@ -82,6 +79,6 @@ ms.lasthandoff: 12/22/2017
 ## <a name="next-steps"></a>後續步驟  
  在生產環境中，您可能需要移除程式碼範例中將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的那一行，因為用戶端電腦預設會設定正確的值。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署應用程式前，以程式設計方式設定這個值是測試附屬組件的一個好方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 下載附屬組件依 ClickOnce 部署 API 的要求](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
  [當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)

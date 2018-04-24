@@ -1,23 +1,20 @@
 ---
-title: "如何： 發行啟用視覺化樣式的 WPF 應用程式 |Microsoft 文件"
-ms.custom: 
+title: 如何： 發行啟用視覺化樣式的 WPF 應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
-author: mairaw
-ms.author: mairaw
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發行已啟用視覺化樣式的 WPF 應用程式
 視覺化樣式可讓以根據使用者選擇的佈景主題變更的通用控制項的外觀。 根據預設，已啟用視覺化樣式無法針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式及發佈方案會導致錯誤。 本主題描述如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺樣式概觀](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 如需有關錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
@@ -34,7 +31,7 @@ ms.lasthandoff: 12/22/2017
   
  然後，您可以移動已發行的檔案位置要從中安裝應用程式的使用者。  
   
-##  <a name="BKMK_publishsolwovs"></a>沒有啟用視覺化樣式發行方案  
+##  <a name="BKMK_publishsolwovs"></a> 沒有啟用視覺化樣式發行方案  
   
 1.  請確定您的專案，並沒有啟用視覺化樣式。 首先，檢查您的專案資訊清單檔案，如下列 XML。 然後，如果 XML 存在時，括住的 XML 註解標記。  
   
@@ -48,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>若要在 Visual Basic 專案中開啟資訊清單檔案  
   
-    1.  在功能表列上選擇 **專案**， *ProjectName***屬性**，其中*ProjectName* WPF 專案的名稱。  
+    1.  在功能表列上選擇 **專案**，* ProjectName ***屬性**，其中*ProjectName* WPF 專案的名稱。  
   
          WPF 專案的屬性頁會出現。  
   
@@ -58,7 +55,7 @@ ms.lasthandoff: 12/22/2017
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>若要在 C# 專案中開啟資訊清單檔案  
   
-    1.  在功能表列上選擇 **專案**， *ProjectName***屬性**，其中*ProjectName* WPF 專案的名稱。  
+    1.  在功能表列上選擇 **專案**，* ProjectName ***屬性**，其中*ProjectName* WPF 專案的名稱。  
   
          WPF 專案的屬性頁會出現。  
   
@@ -73,7 +70,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  建置並發行您的方案。 如需如何發佈方案的詳細資訊，請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
-##  <a name="BKMK_CreateManifest"></a>建立資訊清單檔案  
+##  <a name="BKMK_CreateManifest"></a> 建立資訊清單檔案  
   
 1.  將下列 XML 貼到 [記事本] 檔案。  
   
@@ -87,14 +84,14 @@ ms.lasthandoff: 12/22/2017
   
 3.  在**存**對話方塊中，於**存檔類型**下拉式清單中，選取**所有檔案**。  
   
-4.  在**檔案名稱**方塊中的檔案名稱，然後附加**.manifest**檔案名稱的結尾。 例如： **themes.manifest**。  
+4.  在**檔案名稱**方塊中的檔案名稱，然後附加 **.manifest**檔案名稱的結尾。 例如： **themes.manifest**。  
   
 5.  選擇**瀏覽資料夾**按鈕、 選取任何資料夾，然後按一下**儲存**。  
   
     > [!NOTE]
     >  剩餘的程序假設這個檔案的名稱是**themes.manifest**和檔案儲存至 C:\temp 目錄電腦上。  
   
-##  <a name="BKMK_embedmanifest"></a>發佈方案的可執行檔中嵌入資訊清單檔案  
+##  <a name="BKMK_embedmanifest"></a> 發佈方案的可執行檔中嵌入資訊清單檔案  
   
 1.  開啟**Visual Studio 命令提示字元**。  
   
@@ -107,7 +104,7 @@ ms.lasthandoff: 12/22/2017
     > -   方案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
     >   
     >      方案發佈至下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
-    > -   最新版本的已發行的應用程式檔案位於下列目錄：`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   最新版本的已發行的應用程式檔案位於下列目錄： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  您沒有使用上述的目錄位置或名稱。 上面所述的位置與名稱是只能用來說明發行您的方案所需的步驟。  
   
@@ -123,7 +120,7 @@ ms.lasthandoff: 12/22/2017
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>簽署應用程式和部署資訊清單  
+##  <a name="BKMK_signappdeplyman"></a> 簽署應用程式和部署資訊清單  
   
 1.  在命令提示字元中，執行下列命令以移除`.deploy`從目前目錄中可執行檔。  
   
@@ -163,7 +160,7 @@ ms.lasthandoff: 12/22/2017
   
  在您執行這些步驟之後，您可以移動已發行的檔案位置要從中安裝應用程式的使用者。 如果您想要時常更新方案，您可以將這些命令移至指令碼，並執行指令碼每次您發行新版本。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
  [視覺化樣式概觀](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [啟用視覺化樣式](https://msdn.microsoft.com/library/bb773175.aspx)   

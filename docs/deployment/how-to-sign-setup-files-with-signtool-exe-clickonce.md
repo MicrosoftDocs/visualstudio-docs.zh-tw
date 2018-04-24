@@ -1,12 +1,9 @@
 ---
-title: "如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft 文件"
-ms.custom: 
+title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce applications, re-signing setup.exe
 - ClickOnce deployment, re-signing setup.exe
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
-caps.latest.revision: "8"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 38fec52a9ca4c152a8bb1065e2d33aa1ea52c97f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc4dc7b2f96b1d36e91e8114458a7a8e9f3231f3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 您可以使用 SignTool.exe 簽署安裝程式 (setup.exe)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  
@@ -80,5 +77,5 @@ ms.lasthandoff: 12/22/2017
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

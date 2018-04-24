@@ -1,26 +1,23 @@
 ---
-title: "功能表命令 |Microsoft 文件"
-ms.custom: 
+title: 功能表命令 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
 - menu commands, Spy++
 ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f1aa79c58bcb5c9281811319db80c002b03e2be3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="menu-commands"></a>功能表命令
 本節中的說明主題清單 Spy + + 功能表上可用的命令。  

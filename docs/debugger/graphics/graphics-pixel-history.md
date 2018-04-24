@@ -2,26 +2,21 @@
 title: 圖形像素歷史記錄 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e0302e4b245a4fbf94d0eb49850101c404cd8a2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫助您了解在遊戲或應用程式的畫面格期間，Direct3D 事件對特定像素有何影響。  
@@ -37,11 +32,11 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
   
  視窗的下半部會顯示有機會影響像素的色彩一起**初始**和**最終**虛擬事件，以代表的初始和最終色彩值畫面格緩衝區中的像素。 初始色彩值是由變更像素色彩的第一個事件 (通常是 `Clear` 事件) 決定。 像素的記錄中一定會有這兩個虛擬事件，即使沒有受到其他任何事件影響也一樣。 當其他事件有機會影響像素時，會顯示它們之間**初始**和**最終**事件。 事件可以展開，以顯示其詳細資料。 針對這種清除呈現目標的簡單事件，事件的效果只是色彩值。 像繪製呼叫這種比較複雜的事件，就會產生一或多個可能影響像素色彩的基本項目。  
   
- 事件繪製的基本項目可以從其基本類型和索引，以及物件的基本項目總數來識別。 比方說，這類識別項**三角形 (第 1456) 的 (6214)**表示基本類型對應至由 6214 個三角形組成物件的 1456th 三角形。 每個基本識別項的左邊都會有一個圖示，摘要說明該基本項目對像素的效果。 影響像素色彩的基本項目會以填滿結果色彩的圓角矩形來表示。 被排除對像素色彩有影響的基本項目，則會以指出像素被排除原因的圖示來表示。 一節會說明這些圖示[基本項目排除](#exclusion)本文稍後。  
+ 事件繪製的基本項目可以從其基本類型和索引，以及物件的基本項目總數來識別。 比方說，這類識別項**三角形 (第 1456) 的 (6214)** 表示基本類型對應至由 6214 個三角形組成物件的 1456th 三角形。 每個基本識別項的左邊都會有一個圖示，摘要說明該基本項目對像素的效果。 影響像素色彩的基本項目會以填滿結果色彩的圓角矩形來表示。 被排除對像素色彩有影響的基本項目，則會以指出像素被排除原因的圖示來表示。 一節會說明這些圖示[基本項目排除](#exclusion)本文稍後。  
   
  您可以展開每個基本項目來檢查像素著色器輸出如何與現有的像素色彩合併，而產生結果色彩。 從這裡您也可以檢查或偵錯與基本項目相關聯的像素著色器程式碼，而且您可以進一步展開頂點著色器節點，以檢查頂點著色器輸入。  
   
-###  <a name="exclusion"></a>基本項目排除  
+###  <a name="exclusion"></a> 基本項目排除  
  如果基本項目被排除會影響像素色彩，被排除的原因有很多。 每個原因會以下表中所描述的圖示來表示：  
   
 |圖示|排除的原因|  
@@ -80,6 +75,6 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
  若要了解像素歷史記錄中的圖形事件，您可能需要發生事件時的裝置狀態相關資訊，或是事件參考之 Direct3D 物件的相關資訊。 中的像素歷史記錄，每個事件**圖形像素歷史記錄**提供的連結，然後目前裝置狀態和相關物件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 遺漏的物件，因為裝置狀態](walkthrough-missing-objects-due-to-device-state.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

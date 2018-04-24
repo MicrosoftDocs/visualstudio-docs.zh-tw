@@ -2,12 +2,8 @@
 title: 如何： 偵錯最佳化程式碼 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -22,26 +18,25 @@ helpviewer_keywords:
 - debug builds, optimizing
 - optimized code, debugging
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
-caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d0bdea3f9fd40985574b6ab5a3bc9f0ea7a59f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 > [!NOTE]
->  [/Zo （增強最佳化偵錯）](/cpp/build/reference/zo-enhance-optimized-debugging)編譯器選項 （在 Visual Studio Update 3 引入） 會產生更豐富的偵錯資訊，針對最佳化程式碼 (未建置的專案**/Od**編譯器選項。 請參閱[/O 選項 （最佳化程式碼）](/cpp/build/reference/o-options-optimize-code))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
+>  [/Zo （增強最佳化偵錯）](/cpp/build/reference/zo-enhance-optimized-debugging)編譯器選項 （在 Visual Studio Update 3 引入） 會產生更豐富的偵錯資訊，針對最佳化程式碼 (未建置的專案 **/Od**編譯器選項。 請參閱[/O 選項 （最佳化程式碼）](/cpp/build/reference/o-options-optimize-code))。 這包括改善對於本機變數和內嵌函式的偵錯支援。  
 >   
->  [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)停用當**/Zo** ocompiler 選項可用。  
+>  [編輯後繼續](../debugger/edit-and-continue-visual-csharp.md)停用當 **/Zo** ocompiler 選項可用。  
   
  當編譯器最佳化程式碼時，它會重新調整位置並重新組織指令。 這會產生較有效率的已編譯程式碼。 因為這種重新安排，偵錯工具不一定能辨識對應到一組指令的原始程式碼。  
   
@@ -71,9 +66,9 @@ ms.lasthandoff: 12/22/2017
   
 4.  在**屬性頁**對話方塊方塊中，請確定`Debug`中選取**組態**下拉式清單。  
   
-5.  在左側的資料夾檢視，選取**C/c + +**資料夾。  
+5.  在左側的資料夾檢視，選取**C/c + +** 資料夾。  
   
-6.  在下**c + +**資料夾中，選取`Optimization`。  
+6.  在下**c + +** 資料夾中，選取`Optimization`。  
   
 7.  在右邊的屬性清單裡，尋找 `Optimization`。 旁邊的設定可能是`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 選擇其中一個其他選項 (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
   
@@ -94,6 +89,6 @@ for (x=0; x<10; x++)
   
  假設您在這行設定中斷點。 您可以預期會叫用 10 次中斷點，但是如果程式碼已完成最佳化，便只會叫用中斷點一次。 原因是第一個指令會將 `x` 值設為 0。 編譯器會辨識這個動作只需做一次，並且將它移出迴圈外。 中斷點會隨著移動。 迴圈內部則仍保留比較和累加 `x` 的指令。 當您檢視**反組譯碼**視窗中，[步驟單位](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)自動設定為指令更大的控制權，當您逐步執行最佳化程式碼時非常有用。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

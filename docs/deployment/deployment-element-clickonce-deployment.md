@@ -2,12 +2,8 @@
 title: '&lt;部署&gt;元素 （ClickOnce 部署） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -22,17 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-caps.latest.revision: 30
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 5f26bd8fe2b67a6078a78c9a263d57e98fc180e9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 識別用於更新部署及公開至系統的屬性。  

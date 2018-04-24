@@ -2,26 +2,21 @@
 title: 圖形管線階段 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pipeline
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
-caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 393661fba27341ec858aa5c099ea9d131e42273a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c708320442c32158ef193ccf7f08669882135d82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [圖形管線階段] 視窗可協助您了解如何透過 Direct3D 圖形管線各階段轉換個別繪製呼叫。  
@@ -129,6 +124,6 @@ ms.lasthandoff: 12/22/2017
   
  ![頂點著色器階段結果預覽](media/gfx_diag_vertex_shader_preview.png)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)

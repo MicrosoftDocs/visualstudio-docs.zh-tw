@@ -2,26 +2,21 @@
 title: 一般索引標籤上，處理屬性 對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e4eb317b4bd40ce21c4cfcd9a3c1db3948e36f
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 3dcefc8be643c74349102261725c4879c0e161cd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、一般索引標籤
 使用**一般**索引標籤，以進一步了解特定的處理程序。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  

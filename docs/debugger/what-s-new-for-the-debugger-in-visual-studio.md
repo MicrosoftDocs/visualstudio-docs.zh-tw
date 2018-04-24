@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 2017 偵錯工具的新功能 |Microsoft 文件"
-ms.custom: 
+title: 在 Visual Studio 2017 偵錯工具的新功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 03/07/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,18 +15,18 @@ helpviewer_keywords:
 - debugging [Visual Studio], what's new
 - what's new [Visual Studio], debugging
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
-caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 07f25edb63e3418bab44d71bc8314d3aa83e7a84
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>在 偵錯工具的新功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>在 偵錯工具的新功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 偵錯工具會包含下列新功能：
 
@@ -72,6 +69,6 @@ ms.lasthandoff: 12/22/2017
 
 如需有關這些新功能的詳細資訊，請參閱[版本資訊[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

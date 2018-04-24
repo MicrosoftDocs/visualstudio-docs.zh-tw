@@ -1,13 +1,9 @@
 ---
-title: "JIT 最佳化和偵錯 |Microsoft 文件"
-ms.custom: 
+title: JIT 最佳化和偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 9a9b18ab38c7c19fa5208d34439bd3133099e8bc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 **最佳化在.NET 中的運作方式：**如果您嘗試偵錯程式碼，很容易當程式碼是**不**最佳化。 這是因為當程式碼已最佳化，編譯器和執行階段變更發出的 CPU 程式碼，讓執行速度較快，但較不直接對應到原始的原始程式碼。 這表示偵錯工具會經常無法告訴您的本機變數的值，以及逐步執行程式碼，而且中斷點可能不會如預期般運作。
@@ -52,7 +47,7 @@ ms.lasthandoff: 02/27/2018
 1. 在您會將偵錯工具附加至正在執行的處理序的情況下，此選項，就可以在已附加偵錯工具已經載入的模組不會影響。
 2. 這個選項沒有任何作用，dll 已預先編譯的原生程式碼 (又稱為 ngen)。 不過，您可以使用環境變數 'COMPlus_ZapDisable' 設為 '1' 啟動處理序來停用預先編譯的程式碼的使用方式。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   

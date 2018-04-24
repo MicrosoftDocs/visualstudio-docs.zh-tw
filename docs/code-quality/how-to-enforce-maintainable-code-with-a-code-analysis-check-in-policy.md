@@ -1,6 +1,5 @@
 ---
-title: 如何： 強制執行維護的程式碼與程式碼分析簽入原則 |Microsoft 文件
-ms.custom: ''
+title: 如何：以程式碼分析簽入原則強制程式碼的可維護性
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c89971795c3785b26ad455583d63326bf7c5d70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 339308675350bb6e4445b1dd068eb07d66f34164
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 強制執行維護的程式碼與程式碼分析簽入原則
 

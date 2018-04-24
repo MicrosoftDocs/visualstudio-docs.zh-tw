@@ -1,23 +1,20 @@
 ---
-title: "Init |Microsoft 文件"
-ms.custom: 
+title: Init |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 229f9a4b8e723fb01991f756b10ed706c7ebb4c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0436384e0af816475590ab84dc645848113f5ab7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="init"></a>Init
 準備主動擷取和記錄到圖形記錄檔的圖形資訊的圖形診斷的應用程式元件。  
@@ -39,5 +36,5 @@ void Init(
   
  您可以完成並關閉使用中的圖形記錄檔藉由呼叫`UnInit`，然後擷取並錄製新的圖形記錄檔的多個圖形資訊，藉由呼叫`Init`一次。 您可以依您想要建立數個獨立的圖形記錄檔使用相同的次數重複這`VsgDbg`執行個體。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [UnInit](init.md)

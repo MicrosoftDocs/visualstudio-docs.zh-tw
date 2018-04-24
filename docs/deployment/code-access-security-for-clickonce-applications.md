@@ -1,13 +1,9 @@
 ---
-title: "ClickOnce 應用程式的程式碼存取安全性 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 應用程式的程式碼存取安全性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
 - vb.XBAProjectPropertiesSecurity.HowTo
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - ClickOnce applications, code access security policies
 - security, ClickOnce
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dad9b3c8391c54c4d668a4c695f4f459664ef373
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼存取安全性限制。 因此，您必須了解程式碼存取安全性的含意，並照著撰寫 ClickOnce 應用程式。  
@@ -96,7 +91,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
   
  在 [進階安全性設定]  對話方塊中，已選取並停用 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊。 這是因為無法針對瀏覽器裝載之應用程式關閉在區域中偵錯。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
  [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   

@@ -1,21 +1,21 @@
 ---
-title: 在 Visual Studio 中產生 TextTransform 公用程式的檔案 |Microsoft 文件
+title: 使用 TextTransform 公用程式，Visual Studio 中產生檔案
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 065d9e23a8ae8b5e328786bb195d191df1388abb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 
@@ -58,7 +58,7 @@ TextTransform [<options>] <templateName>
 |**-r** \<assembly>|用於編譯和執行文字範本的組件。|
 |**-u** \<namespace>|用來編譯範本命名空間。|
 |**-I** \<includedirectory>|包含指定的文字範本中所包含的文字範本的目錄。|
-|**-P** \<referencepath>|若要搜尋的文字範本中指定的組件，或是使用目錄**-r**選項。<br /><br /> 例如，若要包含使用 Visual Studio API 的組件，使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**-P** \<重新整理路徑 >|若要搜尋的文字範本中指定的組件，或是使用目錄 **-r**選項。<br /><br /> 例如，若要包含使用 Visual Studio API 的組件，使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|名稱、 完整型別名稱和組件可以用來處理自訂指示詞的文字範本中的指示詞處理器。|
 |**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|指定指示詞處理器的參數值。 如果您指定參數名稱和值，此參數可指示詞的所有處理器。 如果您指定指示詞處理器，參數是僅適用於指定的處理器。 如果您指定指示詞的名稱，參數才可使用正在處理指定的指示詞。<br /><br /> 若要存取的參數值，指示詞處理器或文字範本中，使用[ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx)。 在文字範本中，包括`hostspecific`範本指示詞中，並在叫用訊息`this.Host`。 例如: <br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 一律使用類型 '！' 標記，即使您省略選擇性的處理器和指示詞名稱。 例如: <br /><br /> `-a !!param!value`|
 |**-h**|提供說明。|

@@ -1,5 +1,5 @@
 ---
-title: 安裝 Visual Studio 中的 Roslyn 分析器 |Microsoft 文件
+title: 安裝 Visual Studio 中的 Roslyn 分析器
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d5d9d5b40cbf773556a3d775b3f92af717629b53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a3b40b3b471e6bb57da561ac51f23086a0f01bd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安裝.NET 編譯器平台分析器
 

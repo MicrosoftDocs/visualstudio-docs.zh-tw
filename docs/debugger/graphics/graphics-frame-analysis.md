@@ -1,25 +1,21 @@
 ---
-title: "圖形框架分析 |Microsoft 文件"
-ms.custom: 
+title: 圖形框架分析 |Microsoft 文件
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -75,7 +71,7 @@ ms.lasthandoff: 02/01/2018
 #### <a name="timeline"></a>時間軸  
  時間軸會顯示彼此相對之繪製呼叫計時的概觀。 因為較大的長條對應較長的繪製時間，所以您可以使用它來快速找出畫面格中最耗費資源的繪製呼叫。 擷取的畫面格包含極大數目的繪製呼叫時，會將多個繪製呼叫合併為一個長條，且長條的長度為其繪製呼叫的總和。  
   
- ![時間軸會顯示繪製 &#45; 呼叫成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![時間軸會顯示繪製&#45;呼叫成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  您可以將指標放在某個長條上方，以查看該長條所對應的繪製呼叫事件。 選取長條時，會讓事件清單與該事件同步。  
   
@@ -137,7 +133,7 @@ ms.lasthandoff: 02/01/2018
   
  畫面格分析限制重試次數為 10 次。 如果您的平台具有主動電源管理或時間閘控，則可能會導致畫面格分析失敗並報告錯誤，原因是超出重試限制。 將平台的電源管理和時脈速度節流重設為較不主動 (平台啟用時)，也許可以解決此問題。  
   
-##  <a name="HardwareSupport"></a>硬體支援  
+##  <a name="HardwareSupport"></a> 硬體支援  
   
 ### <a name="timestamps-and-occlusion-queries"></a>時間戳記和阻擋查詢  
  所有支援畫面格分析的平台都支援時間戳記。 在支援功能層級 9.2 或更高層級的平台上，可支援深度阻擋查詢 (Pixels Occluded 計數器的必要項目)。  
@@ -175,13 +171,13 @@ ms.lasthandoff: 02/01/2018
 ### <a name="warp"></a>WARP  
  畫面格分析的目的是用來分析和改善實際硬體的呈現效能。 不禁止在 WARP 裝置上執行畫面格分析，但通常不值得追求因為 CPU 上執行的 WARP 會比甚至支援最少的現代 Gpu 慢，而且 WARP 效能有極大差異的特定 CPU上正在執行。  
   
-##  <a name="Variants"></a>變異  
+##  <a name="Variants"></a> 變異  
  每個畫面格分析對畫面格呈現在播放期間的方式的變更稱為*variant*。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
   
 |變異|描述|  
 |-------------|-----------------|  
 |**1x1 檢視區大小**|將所有呈現目標上的檢視區維度減少為 1x1 個像素。<br /><br /> 如需詳細資訊，請參閱[1x1 Viewport 大小變異](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
+|**0 msaa**|停用所有呈現目標上的多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**2x MSAA**|啟用所有呈現目標上的 2x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**4x MSAA**|啟用所有呈現目標上的 4x 多重取樣消除鋸齒 (MSAA)。<br /><br /> 如需詳細資訊，請參閱[0x / 2 x / 4 msaa 變異](0x-2x-4x-msaa-variants.md)|  
 |**點紋理篩選**|將所有適當紋理樣本的篩選模式都設定為 `DXD11_FILTER_MIN_MAG_MIP_POINT` (點紋理篩選)。<br /><br /> 如需詳細資訊，請參閱[點、 雙線性、 三線性和非等向性紋理篩選變異](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  

@@ -1,12 +1,9 @@
 ---
-title: "偵錯工具專案設定 |Microsoft 文件"
-ms.custom: 
+title: 偵錯工具專案設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - project settings, debugger
 - debugging [Visual Studio], project settings
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
-caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 某些專案設定也會影響偵錯。 這些設定可以決定像是偵錯工具要查看哪些目錄、用於啟動程式的命令和命令引數，以及為程式建立的偵錯資訊類型等行為。 您可以在 [ **屬性頁** ] 對話方塊中變更這些設定。  
@@ -61,5 +58,5 @@ ms.lasthandoff: 12/22/2017
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
  說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具對程式進行偵錯時所需的準備工作。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)

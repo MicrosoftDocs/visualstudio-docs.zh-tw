@@ -1,12 +1,9 @@
 ---
-title: "如何： 使用 Code Center Premium 來源進行偵錯 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 Code Center Premium 來源進行偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Code Center Premium
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e549cac4606394e5e47fb43c377320965eddbf3e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：以 Code Center Premium 來源進行偵錯
 利用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 偵錯工具，您可以從 Microsoft MSDN Code Center Premium 對安全共用來源進行偵錯。  
@@ -140,7 +137,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  瀏覽並尋找您想要的原始檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)

@@ -1,13 +1,9 @@
 ---
-title: "偵錯工具設定和準備 |Microsoft 文件"
-ms.custom: 
+title: 偵錯工具設定和準備 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -19,17 +15,16 @@ helpviewer_keywords:
 - debugger, setting options
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/22/2017
  [如何：指定偵錯的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何設定登錄機碼以向偵錯工具表示使用何版本。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

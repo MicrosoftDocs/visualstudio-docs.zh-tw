@@ -1,5 +1,5 @@
 ---
-title: CA1701： 資源字串複合字應該使用的大小寫正確 |Microsoft 文件
+title: CA1701：資源字串複合字應該使用正確的大小寫
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2579d50c6a82b4a2fdecaafbc43a904fd371ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b875a22cf070ac433206e8b404dfd71aa64d3acd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701：資源字串複合字應該使用正確的大小寫
 

@@ -1,12 +1,9 @@
 ---
-title: "使用 DebuggerTypeProxy 屬性 |Microsoft 文件"
-ms.custom: 
+title: 使用 DebuggerTypeProxy 屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - DebuggerTypeProxyAttribute class
 - DebuggerTypeProxy attribute
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e80508ce0febc7678585faf6518bf6b838a289
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: af0f2521b2276d28b07a4712009c4c4ae85a4d2d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 proxy 的變數時，proxy (line-of-business) 的原始類型**顯示**。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。  
@@ -64,7 +61,7 @@ ms.lasthandoff: 12/22/2017
   
  `"Namespace.TypeName'2"`  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [建立.managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -1,29 +1,24 @@
 ---
-title: "使用 DebuggerDisplay 屬性 |Microsoft 文件"
-ms.custom: 
+title: 使用 DebuggerDisplay 屬性 |Microsoft 文件
+ms.custom: ''
 ms.date: 08/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11770efcc517b9ec713656f540d75b0a2c412ae7
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [DebuggerDisplayAttribute 類別](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
@@ -179,7 +174,7 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   

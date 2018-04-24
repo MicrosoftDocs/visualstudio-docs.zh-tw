@@ -2,8 +2,7 @@
 title: UWP 應用程式的 Visual Studio 偵錯 |Microsoft 文件
 ms.custom: ''
 ms.date: 01/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b178f66257082bc837e2dfa0835bab3d21a8071e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 522837b2e5475ea5cb25b638d67aaa4d01438271
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>偵錯 Visual Studio 中的通用 Windows 應用程式 (UWP)
 

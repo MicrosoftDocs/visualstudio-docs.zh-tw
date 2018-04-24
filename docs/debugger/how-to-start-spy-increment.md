@@ -2,26 +2,21 @@
 title: 如何： 啟動 Spy + + |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 064a78f9665d2a700a328979b8de169733c09d93
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 您可以啟動 Spy + + 從 Visual Studio 或在命令提示字元。  
@@ -46,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  型別**spyxx.exe**然後按 ENTER 鍵。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Spy + +](../debugger/using-spy-increment.md)   
  [Spy + + 檢視](../debugger/spy-increment-views.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

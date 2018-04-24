@@ -1,38 +1,36 @@
 ---
-title: "選擇網域特定領域語言方案範本 |Microsoft 文件"
-ms.custom: 
+title: 選擇網域指定的語言方案範本
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0723e5d5e9e2d1d216bdeaf91f1fd2b7752e208c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6ec2d2210912011e09e439f25ecaa0e21ab6e918
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
-若要建立特定領域語言方案中，選擇一個網域特定語言設計工具精靈 中的方案範本。 藉由選擇最接近的語言，您想要建立的範本，您可以減少您必須起始方案進行的修改。  
-  
- 下列解決方案範本可用於特定領域語言設計工具精靈。  
-  
-|範本|功能|描述|  
-|--------------|--------------|-----------------|  
-|類別圖表|-區間圖案<br />類別繼承<br />-關聯性繼承<br />繼承圖形<br />-關聯性屬性|如果您的特定領域語言包括實體和屬性的關聯性，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 類別圖。 主要實體是類別和介面，以及關聯、 一般化和實作的關聯性。 類別或介面顯示為方塊包含的屬性清單。|  
-|元件圖表|-連接埠|如果您的特定領域語言包括元件，也就是軟體系統組件，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 元件圖表。 主要實體為元件和連接埠，會顯示為小型外部元件的形狀。|  
-|工作流程圖表|-映像和幾何形狀<br />-   *泳道*|如果您的特定領域語言包含工作流程、 狀態或順序，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 活動圖表。 主要實體是活動，而且主要關聯性的活動之間的轉換。 範本包含數個其他項目例如開始狀態，最終狀態和同步處理列。|  
-|最小的語言|-一個類別和形狀<br />-一的關聯性和連接器|如果您的特定領域語言不相似其他範本，請使用此解決方案範本。 此範本所建立的網域特定定義域語言具有兩個類別和一個關聯性，以表示**工具箱**為**方塊**和**列**。 類別和關聯性各有一個範例字串的屬性。|  
-|最小 WinForm 設計工具|-小型的模型。<br />-顯示模型在 Windows Form。|如果您想要建置應用程式中 DSL 繫結至 Windows Form，而不是圖形化設計工具，請使用此範本。<br /><br /> 格式，可做為使用者介面語言，是 Dsl\UI 資料夾中。<br /><br /> 開啟表單設計工具之前，您應該建置專案。<br /><br /> 如需詳細資訊，請參閱[建立 Windows Forms-Based 特定領域語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)。|  
-|最小的 WPF 設計工具|-小型模型<br />-顯示模型 Windows Presentation Foundation 使用者介面|如果您想要建置應用程式中 DSL 繫結至 WPF 使用者介面，而不是圖形化設計工具，請使用此範本。<br /><br /> 使用者介面的設計工具是 Dsl\UI 資料夾中。<br /><br /> 開啟 UI 設計工具之前，您應該建置專案。<br /><br /> 如需詳細資訊，請參閱[建立 WPF-Based 特定領域語言](../modeling/creating-a-wpf-based-domain-specific-language.md)。|  
-|DSL 程式庫|-最小的程式庫|如果您想要建立部分的 DSL 定義可以匯入其他 DSL 定義，請使用此範本。|  
-  
-## <a name="see-also"></a>請參閱  
- [特定領域語言工具概觀](../modeling/overview-of-domain-specific-language-tools.md)
+若要建立特定領域語言方案中，選擇一個網域特定語言設計工具精靈 中的方案範本。 藉由選擇最接近的語言，您想要建立的範本，您可以減少您必須起始方案進行的修改。
+
+ 下列解決方案範本可用於特定領域語言設計工具精靈。
+
+|範本|功能|描述|
+|--------------|--------------|-----------------|
+|類別圖表|-區間圖案<br />類別繼承<br />-關聯性繼承<br />繼承圖形<br />-關聯性屬性|如果您的特定領域語言包括實體和屬性的關聯性，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 類別圖。 主要實體是類別和介面，以及關聯、 一般化和實作的關聯性。 類別或介面顯示為方塊包含的屬性清單。|
+|元件圖表|-連接埠|如果您的特定領域語言包括元件，也就是軟體系統組件，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 元件圖表。 主要實體為元件和連接埠，會顯示為小型外部元件的形狀。|
+|工作流程圖表|-映像和幾何形狀<br />-   *泳道*|如果您的特定領域語言包含工作流程、 狀態或順序，請使用此解決方案範本。 此範本所建立的網域特定定義域語言類似 UML 活動圖表。 主要實體是活動，而且主要關聯性的活動之間的轉換。 範本包含數個其他項目例如開始狀態，最終狀態和同步處理列。|
+|最小的語言|-一個類別和形狀<br />-一的關聯性和連接器|如果您的特定領域語言不相似其他範本，請使用此解決方案範本。 此範本所建立的網域特定定義域語言具有兩個類別和一個關聯性，以表示**工具箱**為**方塊**和**列**。 類別和關聯性各有一個範例字串的屬性。|
+|最小 WinForm 設計工具|-小型的模型。<br />-顯示模型在 Windows Form。|如果您想要建置應用程式中 DSL 繫結至 Windows Form，而不是圖形化設計工具，請使用此範本。<br /><br /> 格式，可做為使用者介面語言，是 Dsl\UI 資料夾中。<br /><br /> 開啟表單設計工具之前，您應該建置專案。<br /><br /> 如需詳細資訊，請參閱[建立 Windows Forms-Based 特定領域語言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)。|
+|最小的 WPF 設計工具|-小型模型<br />-顯示模型 Windows Presentation Foundation 使用者介面|如果您想要建置應用程式中 DSL 繫結至 WPF 使用者介面，而不是圖形化設計工具，請使用此範本。<br /><br /> 使用者介面的設計工具是 Dsl\UI 資料夾中。<br /><br /> 開啟 UI 設計工具之前，您應該建置專案。<br /><br /> 如需詳細資訊，請參閱[建立 WPF-Based 特定領域語言](../modeling/creating-a-wpf-based-domain-specific-language.md)。|
+|DSL 程式庫|-最小的程式庫|如果您想要建立部分的 DSL 定義可以匯入其他 DSL 定義，請使用此範本。|
+
+## <a name="see-also"></a>另請參閱
+
+- [特定領域語言工具概觀](../modeling/overview-of-domain-specific-language-tools.md)

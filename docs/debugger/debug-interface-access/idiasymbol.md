@@ -2,28 +2,23 @@
 title: IDiaSymbol |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
-caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35accc7ca75a987dae615c06df68b4f85bba4a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a456abd2d3d80a122d4182ae882ca28b07788596
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 描述符號的執行個體的屬性。  
@@ -267,7 +262,7 @@ IDiaSymbol : IUnknown
  這個範例示範如何顯示在指定的相對虛擬位址的函式的區域變數。 它也會顯示不同類型的符號與彼此如何相關。  
   
 > [!NOTE]
->  `CDiaBSTR`是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
+>  `CDiaBSTR` 是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
   
 ```C++  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
@@ -342,13 +337,13 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```  
   
 ## <a name="requirements"></a>需求  
- `Header:`Dia2.h  
+ `Header:` dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   

@@ -1,25 +1,21 @@
 ---
-title: "遠端偵錯遠端 IIS 電腦上的 ASP.NET Core |Microsoft 文件"
+title: 遠端偵錯遠端 IIS 電腦上的 ASP.NET Core |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -44,11 +40,11 @@ ms.lasthandoff: 01/25/2018
 
 2. 請確定**ASP.NET Core 2.0**已選取，**啟用 Docker 支援**是**不**選取且**驗證**設為**不驗證**。
 
-3. 將專案命名**MyASPApp**按一下**[確定]**來建立新的方案。
+3. 將專案命名**MyASPApp**按一下 **[確定]** 來建立新的方案。
 
 4. 開啟 About.cshtml.cs 檔案，並在設定的中斷點`OnGet`方法 (在較舊的範本，開啟 HomeController.cs 改為和設定中斷點`About()`方法)。
 
-## <a name="bkmk_configureIIS"></a>安裝及設定 Windows Server 上的 IIS
+## <a name="bkmk_configureIIS"></a> 安裝及設定 Windows Server 上的 IIS
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -70,15 +66,15 @@ ms.lasthandoff: 01/25/2018
 1. 安裝[.NET 核心 Windows Server 裝載](https://aka.ms/dotnetcore-2-windowshosting)主機系統上的套件組合。 配套在安裝.NET 核心執行階段、.NET 核心程式庫和 ASP.NET 核心模組。 深入了解的詳細指示，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)*之前安裝的.NET 核心 Windows Server 主控的組合。
+    > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安裝的.NET 核心 Windows Server 主控的組合。
 
 3. 重新啟動系統 (或執行**net stop was /y**後面**net 啟動 w3svc**挑選變更到系統路徑的命令提示字元)。
 
-## <a name="BKMK_install_webdeploy"></a>（選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
+## <a name="BKMK_install_webdeploy"></a> （選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>設定 Windows Server 電腦上的 ASP.NET 網站
+## <a name="BKMK_deploy_asp_net"></a> 設定 Windows Server 電腦上的 ASP.NET 網站
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾， **C:\Publish**將稍後部署 ASP.NET 專案。
 
@@ -98,7 +94,7 @@ ms.lasthandoff: 01/25/2018
 
     如果您沒有看到其中一個使用者具有存取權，進行步驟來新增 IUSR 具有讀取和執行權限的使用者身分。
 
-## <a name="bkmk_webdeploy"></a>（選擇性）發行和部署使用 Web Deploy 從 Visual Studio 的應用程式
+## <a name="bkmk_webdeploy"></a> （選擇性）發行和部署使用 Web Deploy 從 Visual Studio 的應用程式
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -108,14 +104,14 @@ ms.lasthandoff: 01/25/2018
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>下載並安裝 Windows Server 上的遠端工具
+## <a name="BKMK_msvsmon"></a> 下載並安裝 Windows Server 上的遠端工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
 > 在某些情況下，它可以是最有效率的檔案共用從執行遠端偵錯工具。 如需詳細資訊，請參閱[從檔案共用執行遠端偵錯工具](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>設定 Windows Server 上的遠端偵錯工具
+## <a name="BKMK_setup"></a> 設定 Windows Server 上的遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -155,7 +151,7 @@ ms.lasthandoff: 01/25/2018
 
     應該在 Visual Studio 中叫用中斷點。
 
-## <a name="bkmk_openports"></a>疑難排解： 開啟 Windows Server 上的必要連接埠
+## <a name="bkmk_openports"></a> 疑難排解： 開啟 Windows Server 上的必要連接埠
 
 大部分的安裝中安裝 ASP.NET 和遠端偵錯工具所開啟必要的連接埠。 不過，您可能需要確認連接埠已開啟。
 

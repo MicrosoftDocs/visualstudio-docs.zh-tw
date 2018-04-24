@@ -1,12 +1,9 @@
 ---
-title: "伺服器和 ClickOnce 部署中的用戶端組態問題 |Microsoft 文件"
-ms.custom: 
+title: 伺服器和 ClickOnce 部署中的用戶端組態問題 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 077333237d1b384208355be7edb1aeb184678a05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您使用網際網路資訊服務 (IIS) Windows Server 上，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 會拒絕傳送該檔案中，與您的部署將不會成功。  
@@ -51,9 +48,9 @@ ms.lasthandoff: 12/22/2017
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會正常顯示透過 SSL，除非 Internet Explorer 時引發的 SSL 憑證的提示。 沒有問題的憑證，例如當不相符的站台名稱或憑證已過期時，可能會引發在提示字元。 若要讓[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]工作透過 SSL 連線，請確定憑證是最新狀態，而且憑證資料比對的站台資料。  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和 Proxy 驗證  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]支援 Windows 整合式開始在.NET Framework 3.5 的 proxy 驗證。 需要的任何特定 machine.config 指示詞不。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不提供支援給其他的驗證通訊協定，例如基本或摘要。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援 Windows 整合式開始在.NET Framework 3.5 的 proxy 驗證。 需要的任何特定 machine.config 指示詞不。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不提供支援給其他的驗證通訊協定，例如基本或摘要。  
   
- 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkId=158730。  
+ 您也可以套用 hotfix，若要啟用這項功能的.NET Framework 2.0。 如需詳細資訊，請參閱http://go.microsoft.com/fwlink/?LinkId=158730。  
   
  如需詳細資訊，請參閱[ \<defaultProxy > 項目 （網路設定）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
   
@@ -96,7 +93,7 @@ ms.lasthandoff: 12/22/2017
  如果您使用 Visual Studio 發行 ClickOnce 應用程式時，您無法指定了對應磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式使用資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱[Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)和[MageUI.exe （資訊清單產生和編輯工具、 圖形化用戶端）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP 通訊協定不支援安裝應用程式  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]任何 HTTP 1.1 Web 伺服器或檔案伺服器從安裝應用程式的支援。 安裝應用程式不支援 FTP，檔案傳輸通訊協定。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 任何 HTTP 1.1 Web 伺服器或檔案伺服器從安裝應用程式的支援。 安裝應用程式不支援 FTP，檔案傳輸通訊協定。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  
   
 |URL 類型|描述|  
 |--------------|-----------------|  
@@ -122,7 +119,7 @@ ms.lasthandoff: 12/22/2017
   
 -   如果您建立副檔名的 MIME 類型"*"和"應用程式/八位元資料流 「 MIME 類型，可讓檔案下載的解除封鎖的檔案類型。 （不過，封鎖無法下載類型，例如.aspx 和.asmx 檔案）。  
   
- 如需 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文章 KB326965，「 IIS 6.0 不做未知 MIME 類型 」， [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ 如需 Windows Server 上設定 MIME 類型的特定指示，請參閱 Microsoft 知識庫文章 KB326965，「 IIS 6.0 不做未知 MIME 類型 」， [ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
   
 ## <a name="content-type-mappings"></a>內容型別對應  
  發行時透過 HTTP，.application 檔案的內容類型 （也稱為 MIME 類型） 應該是 「 應用程式/x-ms-應用程式。 」 如果您有[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安裝在伺服器上，這會為您自動設定。 如果未安裝，則您需要建立的 MIME 類型關聯[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]vroot 應用程式 （或整部伺服器）。  
@@ -136,7 +133,7 @@ ms.lasthandoff: 12/22/2017
   
  如需 iis 的詳細指示，請參閱[如何指定其他的文件類型的 HTTP 壓縮](http://go.microsoft.com/fwlink/?LinkId=178459)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

@@ -1,23 +1,20 @@
 ---
-title: "Mip-map 產生變異 |Microsoft 文件"
-ms.custom: 
+title: Mip-map 產生變異 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f6b7773562ed7b09ca00f7fc471b7ee2924c0181
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。  
@@ -73,5 +70,5 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > [!NOTE]
 >  如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)

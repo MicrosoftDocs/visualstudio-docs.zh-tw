@@ -1,12 +1,9 @@
 ---
-title: "尋找記憶體流失使用 CRT 程式庫 |Microsoft 文件"
-ms.custom: 
+title: 尋找記憶體流失使用 CRT 程式庫 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +26,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 記憶體流失 (定義是無法正確解除配置先前配置的記憶體) 是 C/C++ 應用程式中最不易察覺和難以偵測的錯誤之一。 一開始可能只有少許記憶體流失而未察覺，但隨著時間經過，累積的記憶體流失可能愈來愈多而造成一些症狀，包括應用程式效能降低，甚至是因記憶體不足而沒有反應。 情況更嚴重者，發生記憶體流失的應用程式會因為耗盡所有可用的記憶體而造成其他應用程式也沒有反應，以致於難以判斷到底哪一個應用程式才是禍首。 即使看似無害的記憶體流失也可能是其他問題的根源，而應該解決。  
@@ -263,7 +260,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="false-positives"></a>誤報  
  在某些情況下， `_CrtDumpMemoryLeaks` 會提供錯誤的記憶體流失指示。 如果您使用的程式庫將內部配置標記為 _NORMAL_BLOCKs，而非 `_CRT_BLOCK`s 或 `_CLIENT_BLOCK`s，則可能會發生這種情形。 在這種情況下， `_CrtDumpMemoryLeaks` 無法區分使用者配置和內部程式庫配置。 如果在您呼叫 `_CrtDumpMemoryLeaks`之後執行程式庫配置的全域解構函式，則每個內部程式庫配置都會報告為記憶體流失。 在 Visual Studio .NET 之前的舊版標準樣板程式庫會造成 `_CrtDumpMemoryLeaks` 提出這樣的誤報，但最新版本中已修正這個問題。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

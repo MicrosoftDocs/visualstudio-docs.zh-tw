@@ -1,13 +1,9 @@
 ---
-title: "錯誤： 無法啟動 Web 伺服器上偵錯 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 無法啟動 Web 伺服器上偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -27,17 +23,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e58f8152d5c927271161bbf9615b1dfe3944e6dd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
@@ -59,32 +54,32 @@ ms.lasthandoff: 01/29/2018
 - [偵錯工具無法連接到遠端電腦](#cannot_connect)
 - [請參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
 
-## <a name="IISlist"></a>IIS 沒有列出符合啟動的網站 url
+## <a name="IISlist"></a> IIS 沒有列出符合啟動的網站 url
 
 - 重新啟動 Visual Studio 系統管理員身分，然後重試偵錯。 （某些 ASP.NET 偵錯的情況下需要提高的權限）。
 
     您可以設定 Visual Studio 一律系統管理員身分執行，以滑鼠右鍵按一下 Visual Studio 捷徑圖示中，選擇**屬性 > 進階**，然後選擇 永遠以系統管理員身分執行。
 
-## <a name="web_server_config"></a>未正確設定 web 伺服器
+## <a name="web_server_config"></a> 未正確設定 web 伺服器
 
 - 請參閱[錯誤： 未正確設定 web 伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
-## <a name="unabletoconnect"></a>無法連線到網頁伺服器
+## <a name="unabletoconnect"></a> 無法連線到網頁伺服器
 
 - 為您在同一部電腦上執行 Visual Studio 和 Web 伺服器和使用偵錯**F5** (而不是**附加至處理序**)？ 開啟您專案的屬性，並確定此專案已設定連接到正確的 Web 伺服器，並啟動 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。 Web Form 專案中，開啟**屬性頁 > 起始選項 > 伺服器**。)
 
 - 否則，重新啟動應用程式集區，然後重設 IIS。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="webservertimeout"></a>Web 伺服器未及時回應
+## <a name="webservertimeout"></a> Web 伺服器未及時回應
 
 - 重設 IIS，然後再次嘗試偵錯。 多個偵錯工具執行個體可能會附加至 IIS 處理序中;重設會終止它們。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="msvsmon"></a>Microsoft visual studio 遠端偵錯 monitor(msvsmon.exe) 似乎不在遠端電腦上執行
+## <a name="msvsmon"></a> Microsoft visual studio 遠端偵錯 monitor(msvsmon.exe) 似乎不在遠端電腦上執行
 
 - 如果您正在偵錯在遠端電腦上，請確定您有[安裝且正在執行遠端偵錯工具](../debugger/remote-debugging.md)。 如果訊息提及防火牆，請確定[修正在防火牆中的連接埠](../debugger/remote-debugger-port-assignments.md)已開啟，特別是當您使用協力廠商防火牆。
 - 如果您使用的主機檔案，請確定已正確設定。 例如，如果使用偵錯**F5** (而不是**附加至處理序**)，主機檔案必須包含相同的專案 URL，如專案屬性中所示**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型。
 
-## <a name="server_error"></a>遠端伺服器傳回錯誤
+## <a name="server_error"></a> 遠端伺服器傳回錯誤
 
 請檢查您[IIS 記錄檔](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0)用於錯誤子代碼的詳細資訊，以及此 IIS 7[部落格文章](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)。
 
@@ -93,24 +88,24 @@ ms.lasthandoff: 01/29/2018
 - 無法使用 (503) 伺服器。 由於發生錯誤或組態變更，可能已停止應用程式集區。 重新啟動應用程式集區。
 - (404) 找不到。 請確定應用程式集區已設定為正確的 ASP.NET 版本。
 
-## <a name="aspnet"></a>無法啟動 ASP.NET 偵錯
+## <a name="aspnet"></a> 無法啟動 ASP.NET 偵錯
 
 - 重新啟動應用程式集區，然後重設 IIS。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 - 如果您要重寫 URL，測試與任何 URL 撰寫基本 web.config。 請參閱**注意**有關 URL 重寫模組[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-## <a name="cannot_connect"></a>偵錯工具無法連接到遠端電腦
+## <a name="cannot_connect"></a> 偵錯工具無法連接到遠端電腦
 
 如果您是在本機偵錯，因為 Visual Studio 是 32 位元應用程式，因此它會使用 64 位元版本的遠端偵錯工具偵錯 64 位元應用程式，可能會發生這個錯誤。 開啟您專案的屬性，並確定此專案已設定連線到正確的 Web 伺服器和 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。)
 
 此外，如果您使用的主機檔案，請確定已正確設定。 例如，主機檔案必須包含相同的專案 URL，如專案屬性中所示**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型。
 
-## <a name="see_help"></a>請參閱常見組態錯誤的說明。 執行偵錯工具外部網頁即可提供詳細資訊。
+## <a name="see_help"></a> 請參閱常見組態錯誤的說明。 執行偵錯工具外部網頁即可提供詳細資訊。
 
 - 會在同一部電腦上執行 Visual Studio 和 Web 伺服器嗎？ 開啟您專案的屬性，並確定此專案已設定連接到正確的 Web 伺服器，並啟動 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。)
 
 - 如果仍然無法解決問題，或從遠端進行偵錯，遵循的步驟[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>請檢查您的 IIS 組態
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> 請檢查您的 IIS 組態
 
 之後採取來解決問題，這裡所詳述的步驟，以及之前偵錯，請再試一次，則您可能需要重設 IIS。 您可以執行此動作開啟提升權限的命令提示字元，然後輸入`iisreset`。 
 
@@ -165,5 +160,5 @@ ms.lasthandoff: 01/29/2018
 
     如果您無法取得您的應用程式使用偵錯工具，請嘗試在伺服器上，在本機建立基本的 ASP.NET 應用程式，並嘗試進行偵錯基本應用程式。 （您可能想要使用預設的 ASP.NET MVC 範本。）如果您可以偵錯的基本應用程式，可協助您識別兩個組態之間的差異。 尋找設定差異在 web.config 檔案中，例如 URL 重寫規則。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

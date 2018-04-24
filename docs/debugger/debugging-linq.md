@@ -1,12 +1,9 @@
 ---
-title: "偵錯 LINQ |Microsoft 文件"
-ms.custom: 
+title: 偵錯 LINQ |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +16,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援 Language-Integrated Query (LINQ) 程式碼偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題描述 LINQ 偵錯的主要限制。  
   
-##  <a name="BKMK_ViewingLINQResults"></a>檢視 LINQ 結果  
+##  <a name="BKMK_ViewingLINQResults"></a> 檢視 LINQ 結果  
  藉由使用資料提示方塊、[監看式] 視窗和 [快速監看式] 對話方塊，您可以檢視 LINQ 陳述式的結果。 使用來源視窗時，您可以將指標暫停在來源視窗中的查詢上，則資料提示方塊會隨即出現。 您可以複製 LINQ 變數並張貼到 [監看式] 視窗或 [快速監看式] 對話方塊。  
   
  在 LINQ 中，建立或宣告查詢時並不會進行評估，只有在使用查詢時才會評估。 因此，直到評估前查詢都不會有值。 建立查詢和評估的完整說明，請參閱[LINQ 查詢 (C#) 簡介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或[撰寫您的第一個 LINQ 查詢](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 -   評估查詢可能造成的副作用，會隨資料值或是程式的狀態而變更。 並不是所有的查詢都有副作用。 若要判斷查詢是否能夠安全通過評估而不會發生副作用，您必須了解實作查詢的程式碼。  
   
-##  <a name="BKMK_SteppingAndLinq"></a>逐步執行和 LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> 逐步執行和 LINQ  
  進行 LINQ 程式碼偵錯時，您應該了解逐步執行的一些行為差異。  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,10 +105,10 @@ End Function
   
  修訂的查詢每回會透過 `IsEven` 呼叫函式 `items`。 您可以使用偵錯工具視窗查看每個項目是否符合指定狀況，而且可以逐步執行 `IsEven` 中的程式碼。 這個範例中的述詞相當簡單。 但是，當您必須偵錯更為複雜的述詞時，這個技巧就很好用。  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Linq 不支援編輯後繼續  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Linq 不支援編輯後繼續  
  編輯後繼續 支援 LINQ 查詢，但有限制的變更。 如需詳細資訊，請參閱[EnC 支援變更](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [SQL 偵錯](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    
  [管理例外狀況偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)   
  [LINQ 查詢簡介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)   

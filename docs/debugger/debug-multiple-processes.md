@@ -1,12 +1,9 @@
 ---
-title: "偵錯多個處理序 |Microsoft 文件"
-ms.custom: 
+title: 偵錯多個處理序 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -19,21 +16,21 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 08a089feceb6ba66791358096e3c4663df06494e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 以下是如何開始偵錯處理程序、 處理序之間切換、 中斷和繼續執行、 逐步執行來源、 停止偵錯，並終止或中斷處理序。  
   
-##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>設定多個處理序的執行行為  
+##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> 設定多個處理序的執行行為  
  根據預設，當偵錯工具中有多個處理序正在執行時，中斷、逐步執行或停止偵錯工具命令通常會影響所有處理序。 例如，當一個處理序在中斷點暫止時，所有其他處理序的執行也會暫止。 您可以變更這項預設行為，以便更充分掌控執行命令的目標。  
   
 1.  按一下**偵錯 > 選項和設定**。  
@@ -42,14 +39,14 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>尋找來源和符號 (.pdb) 檔  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來源和符號 (.pdb) 檔  
  若要巡覽處理序的原始程式碼，偵錯工具需要存取處理序的原始程式檔和符號檔。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
  如果您無法存取處理序的檔案，您可以使用 [反組譯碼] 視窗進行巡覽。 請參閱[How to： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a>在 VS 方案中啟動多個處理序、 附加至處理序、 偵錯工具會自動啟動處理序  
+##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> 在 VS 方案中啟動多個處理序、 附加至處理序、 偵錯工具會自動啟動處理序  
   
 -   [開始偵錯 Visual Studio 方案中的多個處理序](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)  
   
@@ -71,22 +68,22 @@ ms.lasthandoff: 12/22/2017
 >      -或-  
 > -   將 Windows 設定為自動在偵錯工具的新執行個體中啟動子處理序。  
   
-###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>開始偵錯 Visual Studio 方案中的多個處理序  
+###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> 開始偵錯 Visual Studio 方案中的多個處理序  
  如果您的 Visual Studio 方案中有多個可以獨立執行的專案 (在個別處理序中執行的專案)，您就可以選取偵錯工具要啟動的專案。  
   
  ![變更專案的啟動類型](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
   
-####  <a name="BKMK_Change_the_startup_project"></a>變更啟始專案  
+####  <a name="BKMK_Change_the_startup_project"></a> 變更啟始專案  
  若要變更方案的啟始專案，選取專案在 方案總管，然後選擇 **設定為啟始專案**從內容功能表。  
   
-####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a>在方案中啟動特定專案  
+####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> 在方案中啟動特定專案  
  若要啟動方案中的專案，而不需要變更預設啟始專案，選取專案在 方案總管，然後選擇 **偵錯**從內容功能表。 然後您可以選擇**開始新執行個體**或**逐步執行新執行個體**。  
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [VS 方案中啟動多個處理序、 附加至處理程序、 偵錯工具會自動啟動處理序](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a>方案中啟動多個專案  
+####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> 方案中啟動多個專案  
   
 1.  在 [方案總管] 中選取方案，然後選擇**屬性**操作功能表上。  
   
@@ -98,7 +95,7 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-###  <a name="BKMK_Attach_to_a_process"></a>附加至處理序  
+###  <a name="BKMK_Attach_to_a_process"></a> 附加至處理序  
  偵錯工具也可以*附加*在 Visual Studio 外部的處理序中執行的程式，包括遠端裝置執行的程式。 附加至程式之後，您就可以使用偵錯工具的執行命令、檢查程式狀態等等。 根據程式建置時是否包含偵錯資訊以及您是否能存取程式的原始程式碼，還有 Common Language Runtime JIT 編譯器是否會追蹤偵錯資訊，可能會對檢查程式狀態的能力有所限制。  
   
  請參閱[附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)如需詳細資訊。  
@@ -111,7 +108,7 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>自動啟動偵錯工具處理序  
+###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 自動啟動偵錯工具處理序  
  有時候，您可能需要對其他處理序所啟動程式的啟始程式碼進行偵錯。 這類範例包括了服務和自訂安裝動作。 在這些案例中，您可以讓偵錯工具在應用程式啟動時啟動並自動附加。  
   
 1.  啟動登錄編輯程式 (**regedit.exe**)。  
@@ -136,13 +133,13 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>切換處理序、 中斷和繼續執行、 逐步執行來源  
+##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 切換處理序、 中斷和繼續執行、 逐步執行來源  
   
 -   [處理序之間切換](#BKMK_Switch_between_processes)  
   
 -   [中斷、 逐步執行和繼續命令](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a>處理序之間切換  
+###  <a name="BKMK_Switch_between_processes"></a> 處理序之間切換  
  進行偵錯時，您可以附加至多個處理序，但是無論在任何時間，偵錯工具一次只能有一個使用中處理序。 您可以設定作用中或*目前*處理序在偵錯位置工具列或**處理程序**視窗。 若要在處理序之間切換，兩個處理序必須處於中斷模式。  
   
  **設定目前的處理序**  
@@ -165,7 +162,7 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a>中斷、 逐步執行和繼續命令  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、 逐步執行和繼續命令  
   
 > [!NOTE]
 >  根據預設，中斷、繼續和逐步執行偵錯工具命令會影響所有正在偵錯的處理序。 若要變更此行為，請參閱[設定多個處理序的執行行為](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -186,7 +183,7 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a>停止偵錯、 結束或中斷處理序  
+##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> 停止偵錯、 結束或中斷處理序  
   
 -   [停止、 結束及中斷連結指令](#BKMK_Stop__terminate__and_detach_commands)  
   
@@ -205,7 +202,7 @@ ms.lasthandoff: 12/22/2017
   
 -   開啟**處理程序**視窗 (快速鍵**Ctrl + Alt + Z**)。 選取的處理序，然後選取或清除**卸離時停止偵錯**核取方塊。  
   
-###  <a name="BKMK_Stop__terminate__and_detach_commands"></a>停止、 結束及中斷連結指令  
+###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> 停止、 結束及中斷連結指令  
   
 |||  
 |-|-|  
@@ -221,7 +218,7 @@ ms.lasthandoff: 12/22/2017
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   

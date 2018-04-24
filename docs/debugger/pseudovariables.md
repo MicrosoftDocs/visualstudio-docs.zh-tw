@@ -1,12 +1,9 @@
 ---
-title: "虛擬變數 |Microsoft 文件"
-ms.custom: 
+title: 虛擬變數 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], pseudovariables
 - pseudovariables
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的虛擬變數
 虛擬變數是用來顯示在變數視窗中的特定資訊的詞彙或**快速監看式** 對話方塊。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。  
@@ -52,7 +49,7 @@ $handles
 |`$` *registername*<br /><br /> 或<br /><br /> `@` *registername*|會顯示暫存器的內容*registername*。<br /><br /> 通常只要輸入註冊名稱，即可顯示註冊內容。 您唯一需要使用此語法的時機，就是當註冊名稱多載變數名稱時。 如果註冊名稱與目前範圍內的變數名稱相同，偵錯工具會將該名稱解譯為變數名稱。 這是當`$` *registername*或`@` *registername*派上用場。|  
 |`$clk`|以時脈週期顯示時間。|  
 |`$user`|針對執行應用程式的帳戶，顯示含有帳戶資訊的結構。 為安全起見，不會顯示密碼資訊。|  
-|`$exceptionstack`|顯示目前 Windows 執行階段例外狀況的堆疊追蹤。 `$ exceptionstack`僅適用於 UWP 應用程式。 針對 C++ 和 SHE 例外狀況，不支援 `$ exceptionstack`。|  
+|`$exceptionstack`|顯示目前 Windows 執行階段例外狀況的堆疊追蹤。 `$ exceptionstack` 僅適用於 UWP 應用程式。 針對 C++ 和 SHE 例外狀況，不支援 `$ exceptionstack`。|  
 |`$ReturnValue`|顯示 .NET Framework 方法的傳回值。|  
   
  在 C# 和 Visual Basic 中，您可以使用下表中顯示的虛擬變數：  
@@ -71,6 +68,6 @@ $handles
 |`$` *N* `#`|顯示物件具有相等的物件識別碼*N*。|  
 |`$dynamic`|顯示特殊**動態檢視**實作物件節點`IDynamicMetaObjectProvider`。 介面。 語法是`$dynamic,`*物件*。 此功能僅適用於使用 .NET Framework 第 4 版的程式碼。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [變數視窗](../debugger/debugger-windows.md)

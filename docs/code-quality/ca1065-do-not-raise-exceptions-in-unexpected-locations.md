@@ -1,8 +1,8 @@
 ---
-title: CA1065： 不要引發例外狀況中的非預期的位置 |Microsoft 文件
+title: CA1065：不要在非預期的位置中引發例外狀況
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 946a729fc3ffd99c4c0b3c435b093a97986d68b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 477286e437a901d15dd7a13a6bc1d9f7634b3b73
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在非預期的位置中引發例外狀況
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 04/16/2018
 
 A<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法不可擲回例外狀況。 處置通常稱為一部分中的清除邏輯`finally`子句。 因此，明確處置從擲回例外狀況會強制使用者在新增例外狀況處理內`finally`子句。
 
-**Dispose （false)**程式碼路徑應該絕不會擲回例外狀況，因為在 Dispose 幾乎一律會呼叫來自完成項。
+**Dispose （false)** 程式碼路徑應該絕不會擲回例外狀況，因為在 Dispose 幾乎一律會呼叫來自完成項。
 
 ### <a name="equality-operators--"></a>等號比較運算子 (= =、 ！ =)
 

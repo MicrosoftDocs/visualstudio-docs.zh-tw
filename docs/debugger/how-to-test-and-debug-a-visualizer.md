@@ -1,12 +1,9 @@
 ---
-title: "如何： 測試和偵錯視覺化檢視 |Microsoft 文件"
-ms.custom: 
+title: 如何： 測試和偵錯視覺化檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - visualizers, debugging
 - debugging [Visual Studio], visualizers
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75102abacbf93c90b6c24d2884224dd9dd1e1bae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 860d6bd5f89ff85f3abf75f1beceb62b6b860d54
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。  
@@ -57,7 +54,7 @@ ms.lasthandoff: 12/22/2017
   
      如需更完整的範例，請參閱[逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

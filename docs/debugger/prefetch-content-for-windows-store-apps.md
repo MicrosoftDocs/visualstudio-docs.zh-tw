@@ -1,27 +1,24 @@
 ---
-title: "使用預先擷取的內容在 UWP 應用程式進行偵錯 |Microsoft 文件"
-ms.custom: 
+title: 使用預先擷取的內容在 UWP 應用程式進行偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 6a0555e2a3ea600a1f5b11eaf95a48f4cfd7df3e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 241937c8462577d6af375d2440efe828a738a8cc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>偵錯使用 Visual Studio 中的預先擷取的內容的 UWP 應用程式
   
@@ -43,5 +40,5 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 >  當您新增或修改指定的 Web 內容時，請重複上述步驟。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [部落格文章： 觸發預先擷取的 Windows 市集應用程式在 Visual Studio 2013 Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

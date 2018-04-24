@@ -1,13 +1,9 @@
 ---
-title: "使用主控台偵錯 JavaScript |Microsoft 文件"
-ms.custom: 
+title: 使用主控台偵錯 JavaScript |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
   
@@ -254,7 +249,7 @@ ms.lasthandoff: 01/19/2018
   
  您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標]  清單提供更好的方式讓您存取其他執行內容。   
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [JavaScript 主控台命令](../debugger/javascript-console-commands.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   

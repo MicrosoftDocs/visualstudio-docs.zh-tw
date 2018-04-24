@@ -2,11 +2,7 @@
 title: Microsoft Visual Studio 偵錯工具 （擲回的例外狀況） 對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.exceptions.thrown
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - debugger, exceptions
 - throwing exceptions, during debugging
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1020711c21fb7171a8f7f8b87296d300f53b78b1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 24ccb3de6b22f54b239b5b772490a8d05a990dbd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio 偵錯工具 (擲回例外狀況) 對話方塊
 您的程式發生了例外狀況。 這個對話方塊將報告擲回的例外狀況類型。 您的程式碼需要處理這個例外狀況。 您可以選擇下列選項處理例外狀況：  
@@ -48,7 +43,7 @@ ms.lasthandoff: 01/04/2018
  **略過**  
  允許繼續執行，而不叫用例外狀況處理常式。 由於不會叫用例外狀況處理常式，因此這會進一步導致包含其他例外狀況和錯誤等後果。 這個選項不適用於某些例外狀況類型。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [管理例外狀況偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)   
  [例外狀況的最佳做法](/dotnet/standard/exceptions/best-practices-for-exceptions)   
  [例外狀況處理](/cpp/windows/exception-handling-cpp-component-extensions)

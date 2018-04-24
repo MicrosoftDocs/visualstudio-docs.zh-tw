@@ -2,12 +2,8 @@
 title: '&lt;命令&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac3ae61012bec5f8134a48714678110951c03b76
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （啟動載入器）
 `Commands`項目實作的項目底下所描述的測試`InstallChecks`項目，並宣告哪一個套件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]啟動載入器應該安裝，如果測試失敗。  
@@ -96,7 +91,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf`元素是子系`InstallConditions`項目，並說明正數條件下應該不會執行命令。 每個`InstallConditions`元素可以有零或多個`BypassIf`項目。  
   
- `BypassIf`具有下列屬性。  
+ `BypassIf` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -108,7 +103,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf`元素是子系`InstallConditions`項目，並說明正值條件下應該停止安裝。 每個`InstallConditions`元素可以有零或多個`FailIf`項目。  
   
- `FailIf`具有下列屬性。  
+ `FailIf` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -119,10 +114,10 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|選擇性。 名稱`Schedule`定義何時應該評估此規則的標記。|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes`元素是子系`Command`項目。 `ExitCodes`元素包含一或多個`ExitCode`項目，可決定安裝應該執行以回應從封裝的結束代碼。 可以有一個選擇性`ExitCode`下方的項目`Command`項目。 `ExitCodes`沒有任何屬性。  
+ `ExitCodes`元素是子系`Command`項目。 `ExitCodes`元素包含一或多個`ExitCode`項目，可決定安裝應該執行以回應從封裝的結束代碼。 可以有一個選擇性`ExitCode`下方的項目`Command`項目。 `ExitCodes` 沒有任何屬性。  
   
 ## <a name="exitcode"></a>ExitCode  
- `ExitCode`元素是子系`ExitCodes`項目。 `ExitCode`元素會決定安裝應該執行以回應從封裝的結束代碼。 `ExitCode`包含沒有子項目，並具有下列屬性。  
+ `ExitCode`元素是子系`ExitCodes`項目。 `ExitCode`元素會決定安裝應該執行以回應從封裝的結束代碼。 `ExitCode` 包含沒有子項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -209,6 +204,6 @@ ms.lasthandoff: 12/22/2017
 </Commands>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)

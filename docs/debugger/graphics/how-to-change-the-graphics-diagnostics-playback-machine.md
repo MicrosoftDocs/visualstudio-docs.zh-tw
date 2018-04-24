@@ -1,23 +1,20 @@
 ---
-title: "如何： 變更圖形診斷播放電腦 |Microsoft 文件"
-ms.custom: 
+title: 如何： 變更圖形診斷播放電腦 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c2279fa20766180371834e3f3425d8e75e98d430
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 143ae65b8d7db584546c250bf5d032450bf220aa
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：變更圖形診斷播放電腦
 您可以播放圖形資訊使用本機電腦，或使用遠端電腦或裝置。  
@@ -52,5 +49,5 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  **遠端偵錯工具連接**對話方塊可能也會顯示可直接連接到您的開發電腦或相同子網路上的遠端偵錯目標。 您可以為圖形診斷播放電腦使用其中一個遠端偵錯目標而不必以手動方式加以設定。 在**遠端偵錯工具連接**對話方塊方塊中，選取您想要然後選擇的目標**選取** 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [圖形記錄文件](graphics-log-document.md)

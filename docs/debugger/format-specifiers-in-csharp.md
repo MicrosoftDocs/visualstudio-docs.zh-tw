@@ -1,13 +1,9 @@
 ---
-title: "格式規範，在偵錯工具 (C#) |Microsoft 文件"
-ms.custom: 
+title: 格式規範，在偵錯工具 (C#) |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,17 +22,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fee9e4c355c83ae44cf6147084c95a3b213bce5a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 447d1c1d9a60e1ff2a360790abe2c3c89f174fa6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# 中的格式規範，在 Visual Studio 偵錯工具
 您可以使用格式規範變更在 **監看式** 視窗中顯示值的格式。 您也可以使用中的格式規範**即時運算**視窗中，**命令**視窗，請在[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，甚至來源視窗中。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip (資料提示方塊)。 DataTip (資料提示方塊) 會反映 DataTip 顯示中的格式規範。  
@@ -72,6 +67,6 @@ ms.lasthandoff: 03/15/2018
 |raw|以項目在原始項目節點中出現的形式顯示該項目。 只有在 Proxy 物件上有效。|字典\<T >|字典的未經處理檢視\<T >|  
 |結果|搭配實作 IEnumerable 或 IEnumerable 類型的變數\<T >，通常是在查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員。|顯示符合查詢條件的成員。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)

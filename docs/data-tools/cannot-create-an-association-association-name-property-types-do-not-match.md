@@ -1,8 +1,7 @@
 ---
-title: 無法建立關聯&lt;關聯名稱&gt;-不符合屬性類型 |Microsoft 文件
-ms.custom: ''
+title: 無法建立關聯的屬性類型不相符
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: gewarren
 ms.author: gewarren
@@ -10,30 +9,32 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6075694b9c33f942cdcb40d6bda2dd4a4ce8139
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0926100c4050f2cb792539b23320f727aa306a57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;-屬性類型不相符
-無法建立關聯\<關聯名稱 >-屬性類型不相符。 屬性沒有相符的型別：\<屬性名稱 >。  
-  
- 關聯是由所選**關聯屬性**中**關聯編輯器** 對話方塊。 關聯兩端屬性的資料型別必須相同。  
-  
- 訊息中所列屬性的資料型別不同。  
-  
-### <a name="to-correct-this-error"></a>更正這個錯誤  
-  
-1.  檢查訊息，並記下訊息中指定的屬性。  
-  
-2.  按一下**確定**關閉對話方塊。  
-  
-3.  檢查**關聯屬性**並選取相同的資料類型的屬性。  
-  
-4.  按一下 [確定 **Deploying Office Solutions**]。  
-  
+
+無法建立關聯\<關聯名稱 >-屬性類型不相符。 屬性沒有相符的型別：\<屬性名稱 >。
+
+關聯是由所選**關聯屬性**中**關聯編輯器** 對話方塊。 關聯兩端屬性的資料型別必須相同。
+
+訊息中所列屬性的資料型別不同。
+
+## <a name="to-correct-this-error"></a>更正這個錯誤
+
+1. 檢查訊息，並記下訊息中指定的屬性。
+
+2. 按一下**確定**關閉對話方塊。
+
+3. 檢查**關聯屬性**並選取相同的資料類型的屬性。
+
+4. 按一下 [確定 **Deploying Office Solutions**]。
+
 ## <a name="see-also"></a>另請參閱
-[O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
-[LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-[如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) 
+
+- [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
+- [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

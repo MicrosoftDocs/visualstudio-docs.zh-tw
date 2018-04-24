@@ -2,12 +2,8 @@
 title: '&lt;RelatedProducts&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 12
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （啟動載入器）
 `RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。  
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  `DependsOnProduct`項目表示目前產品定為指定的產品，並為指定的產品應該在之前目前的安裝。 它是子節點的`RelatedProducts`項目。 A`RelatedProducts`元素可能會有一或多個`DependsOnProduct`項目。  
   
- `DependsOnProduct`具有下列屬性。  
+ `DependsOnProduct` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -73,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="includesproduct"></a>IncludesProduct  
  `IncludesProduct`項目表示產品隨附於目前的安裝，而且不需要另外安裝。 它是子節點的`RelatedProducts`項目。 A`RelatedProducts`元素可能會有一或多個`IncludesProduct`項目。  
   
- `IncludesProduct`具有下列屬性。  
+ `IncludesProduct` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -88,5 +83,5 @@ ms.lasthandoff: 12/22/2017
 </RelatedProducts>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)

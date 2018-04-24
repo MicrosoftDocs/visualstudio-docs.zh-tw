@@ -2,12 +2,8 @@
 title: 偵錯工具中的運算式 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/07/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 helpviewer_keywords:
@@ -20,17 +16,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
-caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1a477a7d02171eecea51b26f796d9c958c09eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -210,7 +205,7 @@ int main()
   
 -   命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
  [內容運算子 （c + +）](../debugger/context-operator-cpp.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   

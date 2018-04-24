@@ -1,12 +1,9 @@
 ---
-title: "如何： 發行具有特定地區設定的專案 |Microsoft 文件"
-ms.custom: 
+title: 如何： 發行具有特定地區設定的專案 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,22 +17,22 @@ helpviewer_keywords:
 - macros, deploying with
 - macros, publishing with
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
-caps.latest.revision: "11"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：發行具有指定地區的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。  
   
 > [!NOTE]
->  當您使用這個巨集時，發行位置應為有效的 URL 或通用命名慣例 (UNC) 共用。 此外，電腦上也必須安裝 Internet Information Services (IIS)。 在上安裝 IIS，**啟動**功能表上，按一下 **控制台**。 按兩下**新增或移除程式**。 在**新增或移除程式**，按一下 **新增/移除 Windows 元件**。 在**Windows 元件精靈**，選取**網際網路資訊服務 (IIS)**中核取方塊**元件**清單。 然後按一下 **完成**關閉精靈。  
+>  當您使用這個巨集時，發行位置應為有效的 URL 或通用命名慣例 (UNC) 共用。 此外，電腦上也必須安裝 Internet Information Services (IIS)。 在上安裝 IIS，**啟動**功能表上，按一下 **控制台**。 按兩下**新增或移除程式**。 在**新增或移除程式**，按一下 **新增/移除 Windows 元件**。 在**Windows 元件精靈**，選取**網際網路資訊服務 (IIS)** 中核取方塊**元件**清單。 然後按一下 **完成**關閉精靈。  
   
 ### <a name="to-create-the-publishing-macro"></a>建立發行巨集  
   
@@ -165,7 +162,7 @@ ms.lasthandoff: 12/22/2017
   
 7.  查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了當地語系化資源 DLL 以外，您還應該查看安裝的檔案，例如資訊清單、setup.exe 和發行網頁檔案。 (根據預設，ClickOnce 會在 EXE 和 DLL 中附加 .deploy 副檔名，您可以在部署後移除此副檔名)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [巨集的開發環境](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [巨集總管 視窗](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 同步處理具有 Team 專案簽入原則的程式碼專案規則集 |Microsoft 文件
+title: 如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516a37aa581a0884772ed825b5889f41d5146388
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1bb6f97495eec73e52751f79d92e2f078bd13b24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
 

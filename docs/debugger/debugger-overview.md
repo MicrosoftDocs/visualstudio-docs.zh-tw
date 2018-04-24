@@ -2,11 +2,7 @@
 title: 概觀-Visual Studio 偵錯工具 |Microsoft 文件
 ms.custom: mvc
 ms.date: 07/11/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: overview
 dev_langs:
 - C++
@@ -15,14 +11,14 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004c03a16554b6defe3c5bc9ed78b0b44ef2d007
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d1941c093b82e31b815140aed4af3201cd3681a8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-of-the-visual-studio-debugger"></a>Visual Studio 偵錯工具的概觀
 

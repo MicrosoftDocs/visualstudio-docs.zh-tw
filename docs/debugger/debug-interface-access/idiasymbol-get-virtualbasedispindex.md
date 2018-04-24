@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_virtualbasedispindex |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_virtualbasedispindex |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtualBaseDispIndex method
 ms.assetid: 5561a3cb-2c82-41cf-9217-3ee2b1e1d1d1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdefb2084e409480a2863e34d9757a0bcf648be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c877453f2ae3de97fbb085d79a3795aea369728
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 擷取虛擬基底位移資料表中的符號索引。  
@@ -46,5 +41,5 @@ HRESULT get_virtualBaseDispIndex (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

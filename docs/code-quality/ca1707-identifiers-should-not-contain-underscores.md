@@ -1,10 +1,8 @@
 ---
-title: CA1707： 識別項不應包含底線 |Microsoft 文件
-ms.custom: ''
+title: CA1707：識別項不應包含底線
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c911f90e4da45ce847654f0c89455375ea478e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4eed69f8c08d6106bf30e9c1884512e384a7a269
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707：識別項不應包含底線
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotContainUnderscores|  
-|CheckId|CA1707|  
-|分類|Microsoft.Naming|  
-|中斷變更|中斷-產生的組件時<br /><br /> 非中斷-產生型別參數時|  
-  
-## <a name="cause"></a>原因  
- 識別項名稱包含底線 (_) 字元。  
-  
-## <a name="rule-description"></a>規則描述  
- 根據慣例，識別項名稱不包含底線 (_) 字元。 此規則會檢查命名空間、 類型、 成員和參數。  
-  
- 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 從名稱中移除所有的底線字元。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 請勿隱藏此規則的警告。  
-  
-## <a name="related-rules"></a>相關的規則  
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotContainUnderscores|
+|CheckId|CA1707|
+|分類|Microsoft.Naming|
+|中斷變更|中斷-產生的組件時<br /><br /> 非中斷-產生型別參數時|
+
+## <a name="cause"></a>原因
+ 識別項名稱包含底線 (_) 字元。
+
+## <a name="rule-description"></a>規則描述
+ 根據慣例，識別項名稱不包含底線 (_) 字元。 此規則會檢查命名空間、 類型、 成員和參數。
+
+ 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 從名稱中移除所有的底線字元。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 請勿隱藏此規則的警告。
+
+## <a name="related-rules"></a>相關的規則
+ [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
  [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

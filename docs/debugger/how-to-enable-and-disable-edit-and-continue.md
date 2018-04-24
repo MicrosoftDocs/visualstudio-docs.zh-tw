@@ -1,12 +1,9 @@
 ---
-title: "如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +） |Microsoft 文件"
-ms.custom: 
+title: 如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +） |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -24,18 +21,17 @@ helpviewer_keywords:
 - Step command
 - Go command
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1c00546b983c9bbb0fd6c01717bd0a09c993e11b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9070913d1106eb5e2ca04160ad95c6a6fd46f752
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 （C#、 VB、 c + +）
 您可以停用或啟用編輯後繼續中的**選項**在執行階段 對話方塊。 但是在進行偵錯時，無法變更這項設定。  
@@ -67,5 +63,5 @@ ms.lasthandoff: 12/22/2017
   
 7.  按一下 [確定 **Deploying Office Solutions**]。    
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)

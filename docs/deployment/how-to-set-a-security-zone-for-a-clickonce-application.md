@@ -1,13 +1,9 @@
 ---
-title: "如何： 設定 ClickOnce 應用程式的安全性區域 |Microsoft 文件"
-ms.custom: 
+title: 如何： 設定 ClickOnce 應用程式的安全性區域 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - code access security, ClickOnce applications
 - security zones, ClickOnce applications
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86dbdf312c1356c6fb63fcfa32f1dd362b4c7599
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>如何：設定 ClickOnce 應用程式的安全性區域
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。  
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   

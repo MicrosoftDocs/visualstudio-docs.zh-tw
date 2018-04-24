@@ -2,26 +2,21 @@
 title: Visual Studio 偵錯 ASP.NET-|Microsoft 文件
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 12b4feefed9b34ab97365818878b2116d0501abb
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: c9cc8022a6080b63792cdadcc87af07e08ef749e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具偵錯 ASP.NET
 
@@ -37,7 +32,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 1. 在出現的對話方塊中，選擇  **Web 應用程式**在中間窗格中，然後按一下**確定**。
 
-     如果您沒有看到**Web 應用程式**專案範本，請按一下**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案** 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**ASP.NET**和**.NET Core**工作負載，然後選擇 **修改**。
+     如果您沒有看到**Web 應用程式**專案範本，請按一下**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案** 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇**ASP.NET**和 **.NET Core**工作負載，然後選擇 **修改**。
 
     ![選擇 Web 應用程式](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
 

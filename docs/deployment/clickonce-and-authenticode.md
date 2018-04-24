@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 和 Authenticode |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 和 Authenticode |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, certificates
 - ClickOnce deployment, security
 ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
-caps.latest.revision: "18"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: aa1ab7ac947a5fbdf9d0423c57a987a4ffe8be97
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4b79990cf41e69e2c175691e94b344d4de116691
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *Authenticode* 是 Microsoft 技術，使用業界標準密碼編譯簽署有數位憑證的應用程式程式碼，以確認應用程式發行者真偽。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。  
@@ -72,7 +69,7 @@ ms.lasthandoff: 12/22/2017
   
 -   您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   

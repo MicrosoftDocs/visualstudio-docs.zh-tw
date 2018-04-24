@@ -1,29 +1,24 @@
 ---
-title: "符號和符號標記 |Microsoft 文件"
-ms.custom: 
+title: 符號和符號標記 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - symbols [DIA SDK]
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72f4cb4b6ed35e880e1cb26980420f4e951ffc16
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 偵錯資訊編譯的程式儲存在程式資料庫 (.pdb) 檔，做為可使用偵錯介面存取 (DIA) SDK Api 的符號。 所有符號[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)屬性。 `symTag`屬性指示符號的類型所定義的[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。 `symIndexId`屬性是`DWORD`含有符號的每個執行個體的唯一識別碼值。  
@@ -42,5 +37,5 @@ ms.lasthandoff: 12/22/2017
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
  描述對應至不同的語言項目，例如類別、 陣列和函式傳回類型的符號類型。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

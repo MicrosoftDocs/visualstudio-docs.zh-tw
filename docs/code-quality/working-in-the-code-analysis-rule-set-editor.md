@@ -1,5 +1,5 @@
 ---
-title: 使用程式碼分析規則集編輯器在 Visual Studio |Microsoft 文件
+title: 使用 Visual Studio 中的程式碼分析規則集編輯器
 ms.date: 04/-4/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c861a6beda6b0196ec03987915b1503f4cc55a19
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 3bd9f02142b803cc9a09fce79cb687ea521dea9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/06/2018
 |---------------------|-----------------|
 |**全部展開**|中的所有群組顯示的規則。|
 |**全部摺疊**|隱藏所有群組中的規則。|
-|**Group By**|指定規則會分組的欄位。 按一下**\<無 >**顯示不含群組的規則。|
+|**Group By**|指定規則會分組的欄位。 按一下**\<無 >** 顯示不含群組的規則。|
 |**資料行選項**|指定要顯示規則的欄位。|
 |**不會套用至目前方案的隱藏規則**|顯示或隱藏不屬於與方案相同的目標類型的規則。|
 |**顯示可以產生程式碼分析錯誤的規則**|顯示或隱藏規則指派動作時發生錯誤。|

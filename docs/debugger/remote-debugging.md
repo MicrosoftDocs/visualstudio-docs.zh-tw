@@ -2,11 +2,7 @@
 title: Visual Studio 遠端偵錯 |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -19,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -58,7 +53,7 @@ ms.lasthandoff: 03/30/2018
 
 1. 尋找**msvsmon.exe**比對您的 Visual Studio 版本的目錄中。 Visual Studio 企業版 2017年:
 
-      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       
       **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
 
@@ -85,7 +80,7 @@ ms.lasthandoff: 03/30/2018
      > [!IMPORTANT] 
      > 您可以從您的 Visual Studio 電腦，使用的使用者帳戶執行遠端偵錯工具在不同的使用者帳戶下，但是您必須將不同的使用者帳戶加入遠端偵錯工具的權限。 
 
-     或者，您可以從命令列啟動遠端偵錯工具**/ 允許\<使用者名稱 >**參數： **msvsmon /allow \< username@computer>**。
+     或者，您可以從命令列啟動遠端偵錯工具 **/ 允許\<使用者名稱 >** 參數： **msvsmon /allow \< username@computer>**。
   
 -   如果您需要變更驗證模式或連接埠號碼，或指定遠端工具的逾時值： 選擇**工具 > 選項**。  
   

@@ -1,12 +1,9 @@
 ---
-title: "如何： 停用 ClickOnce 應用程式的 URL 啟用 |Microsoft 文件"
-ms.custom: 
+title: 如何： 停用 ClickOnce 應用程式的 URL 啟用 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - URL activation, ClickOnce applications
 - ClickOnce deployment, URL activation
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
-caps.latest.revision: "9"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 3f94029c682029ad8fa3167314a2d95b51b00648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 652060d639f5e516500cdc2b9de9fa7a4a45ee9f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>如何：停用 ClickOnce 應用程式的 URL 啟動過程
 一般而言，從 Web 伺服器安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式後，其將立即自動啟動。 基於安全性理由，您可能決定要停用此行為，並告知使用者啟動應用程式從**啟動**功能表改為。 下列程序描述如何停用 URL 啟用。  
@@ -46,5 +43,5 @@ ms.lasthandoff: 12/22/2017
   
 4.  儲存並簽署該資訊清單。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

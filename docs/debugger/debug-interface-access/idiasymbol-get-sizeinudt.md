@@ -1,27 +1,22 @@
 ---
-title: "IDiaSymbol::get_sizeInUdt |Microsoft 文件"
-ms.custom: 
+title: IDiaSymbol::get_sizeInUdt |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59875d7d09d2b52d0b3ec6787c8f17b2e6d70fc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f9a3e9e8cf1b1b931164ebb9f089eb69895945b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 擷取的使用者定義型別之成員的大小。  
@@ -40,5 +35,5 @@ HRESULT get_sizeInUdt(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -2,26 +2,21 @@
 title: 使用 managed 程式碼使用 Visual Studio 偵錯工具進行偵錯 |Microsoft 文件
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44cf8d282c253da7fa3a09ed8d3b90ca46ca07a
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>使用 managed 程式碼使用 Visual Studio 偵錯工具進行偵錯
 
@@ -31,9 +26,9 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-2. 在下**Visual C#**或**Visual Basic**，選擇**.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
+2. 在下**Visual C#** 或**Visual Basic**，選擇 **.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
 
-     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇**.NET 桌面開發**和**.NET Core**工作負載，然後選擇 **修改**。
+     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**和 **.NET Core**工作負載，然後選擇 **修改**。
 
 3. 輸入的名稱，例如**MyDbgApp**按一下**確定**。
 

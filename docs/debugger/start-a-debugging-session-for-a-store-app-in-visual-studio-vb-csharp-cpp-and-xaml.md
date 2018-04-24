@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 中啟動的 UWP 應用程式的偵錯工作階段 |Microsoft 文件"
-ms.custom: 
+title: Visual Studio 中啟動的 UWP 應用程式的偵錯工作階段 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +31,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b298e2b17f1aa8805e0ab896c6978744c6c3bd53
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Visual Studio 中啟動的 UWP 應用程式的偵錯工作階段
   
@@ -79,7 +76,7 @@ ms.lasthandoff: 01/19/2018
 |**裝置**|USB 連接的裝置上的應用程式進行偵錯。 裝置必須是開發人員解除鎖定，並具有已解除鎖定螢幕。|  
 |**行動裝置的模擬器**|模擬器啟動模擬器名稱中指定的設定、 部署應用程式，並開始偵錯。 只有在啟用 HYPER-V 機器上使用模擬器。|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>選擇 其他偵錯選項  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 選擇 其他偵錯選項  
 
 如果您需要設定其他偵錯選項，開啟 專案屬性頁。
   
@@ -89,11 +86,11 @@ ms.lasthandoff: 01/19/2018
   
     -   針對 Visual C# 與 Visual Basic 應用程式，請選擇 [ **偵錯**]。  
   
-         ![& #35。&#47;VB 專案偵錯屬性頁](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; VB 專案偵錯屬性頁](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   針對 Visual c + + 和 JavaScript 應用程式中，展開**組態屬性**節點，然後選擇 **偵錯**。  
   
-         ![C# 43; &#43;UWP 應用程式偵錯屬性頁](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; UWP 應用程式偵錯屬性頁](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> 選擇要使用的偵錯工具  
 根據預設，Visual Studio 會在 C# 與 Visual Basic 應用程式中對 Managed 程式碼進行偵錯。 針對 C# 與 Visual Basic 應用程式，您可以選擇在您的應用程式中對 Managed 與原生 C/C++ 程式碼進行偵錯。 在 c + + 應用程式，Visual Studio 進行偵錯原生程式碼，根據預設。 在 JavaScript 應用程式，Visual Studio 進行偵錯指令碼，根據預設。 
@@ -179,11 +176,11 @@ ms.lasthandoff: 01/19/2018
   
 若要啟動已安裝的應用程式偵錯工具中，選擇**偵錯**，然後**其他偵錯目標**，然後**偵錯已安裝的應用程式套件**。 如需其他指示，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>將偵錯工具附加至執行的 UWP 應用程式  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 將偵錯工具附加至執行的 UWP 應用程式  
 
 若要執行的 UWP 應用程式進行偵錯，請選擇**偵錯**，然後**其他偵錯目標**，然後**偵錯已安裝的應用程式套件**。 如需其他指示，請參閱[偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)。
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>將偵錯工具附加至執行中 Windows 8.x 應用程式
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 將偵錯工具附加至執行中 Windows 8.x 應用程式
  若要將偵錯工具附加至 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式，您必須使用 [Debuggable Package 管理員] 將應用程式設定成以偵錯模式執行。 Debuggable Package 管理員會隨 Visual Studio 遠端工具。  
   
  當您需要偵錯已安裝的應用程式 (例如從 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]安裝的應用程式) 時，將偵錯工具附加至應用程式將有所幫助。 當您具有應用程式的原始程式檔，但沒有應用程式的 Visual Studio 專案時，就必須進行附加。 例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。  
@@ -242,5 +239,5 @@ ms.lasthandoff: 01/19/2018
   
  Visual Studio 會將偵錯工具附加至處理序。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)   

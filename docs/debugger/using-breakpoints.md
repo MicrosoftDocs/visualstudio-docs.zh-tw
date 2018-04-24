@@ -1,13 +1,9 @@
 ---
-title: "使用 Visual Studio 中偵錯工具中的中斷點 |Microsoft 文件"
+title: 使用 Visual Studio 中偵錯工具中的中斷點 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -35,17 +31,16 @@ f1_keywords:
 helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
@@ -261,6 +256,6 @@ ms.lasthandoff: 03/15/2018
 ## <a name="export-and-import-breakpoints"></a>匯出和匯入中斷點  
  您可以將中斷點匯出至 XML 檔案，方法是以滑鼠右鍵按一下此中斷點，然後選取 [匯出] 。 根據預設，該檔案會儲存在此方案目錄中。 若要匯入中斷點，請開啟 [中斷點]  視窗 (**CTRL + ALT + B**)，然後在工具列上按一下向右的箭頭 (工具提示為 [從檔案匯入中斷點] )。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)  
 [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)

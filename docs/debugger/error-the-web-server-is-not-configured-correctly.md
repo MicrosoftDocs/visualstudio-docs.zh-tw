@@ -1,13 +1,9 @@
 ---
-title: "錯誤： 網頁伺服器未正確設定 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 網頁伺服器未正確設定 |Microsoft 文件
+ms.custom: ''
 ms.date: 09/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.projnotconfigured
 dev_langs:
@@ -17,17 +13,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: c9ff79148af491ee27aeae20b66b4d7b742bef6b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 
@@ -53,6 +48,6 @@ ms.lasthandoff: 01/29/2018
   
 4. 如果`maxConnection`限制在 IIS 中的將會過低，而您太多連線，您可能需要[增加的連線限制](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯遠端 IIS 電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

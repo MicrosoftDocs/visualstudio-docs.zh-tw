@@ -1,5 +1,5 @@
 ---
-title: 設定 Visual Studio 中的程式碼分析 |Microsoft 文件
+title: 設定 Visual Studio 中的程式碼分析
 ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 177aba466d89c88c898ea1273240d18a8b1f0f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66faf26170e1e102ccbaffcb74334bdd20e4d8ae
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：設定 Managed 程式碼專案的程式碼分析
 

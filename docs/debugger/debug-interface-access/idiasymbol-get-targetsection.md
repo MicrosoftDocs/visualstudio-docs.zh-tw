@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_targetsection |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_targetsection |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetSection method
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192350832d2d1344cb9ae69791b526f983627545
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f8e624182226215c08d563e3ec5d1dd248f13e4b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
 擷取 thunk 目標位址 > 一的節。  
@@ -46,5 +41,5 @@ HRESULT get_targetSection (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

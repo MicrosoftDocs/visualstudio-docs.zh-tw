@@ -2,12 +2,8 @@
 title: 偵錯原生程式碼 |Microsoft 文件
 ms.custom: ''
 ms.date: 04/11/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], native code
 - native code, debugging
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
-caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f3d0cfd57f4d907bab758e52e0499b63941236
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱[偵錯工具藍圖](../debugger/debugger-basics.md)。  
@@ -76,6 +71,6 @@ ms.lasthandoff: 12/22/2017
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
  [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能的教學課程](../debugger/debugger-feature-tour.md)

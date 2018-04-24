@@ -1,9 +1,7 @@
 ---
-title: 如何： 為 Managed 程式碼缺失建立工作項目 |Microsoft 文件
-ms.custom: ''
+title: 如何：為 Managed 程式碼的缺失建立工作項目
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
@@ -13,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1af08ea7f76f275e17c6f99305b1189fe639291
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41e4a507015a630eb31c86048e785ea179899ccf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>如何：為 Managed 程式碼的缺失建立工作項目
 

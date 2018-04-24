@@ -2,26 +2,21 @@
 title: 樹狀功能表命令 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Tree menu commands
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
-caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5843f5145ab5577ecbf4ad11ec17a06b0f70ba59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 223821e6884dadd39c03e8af4605f207e6a28a2b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="tree-menu-commands"></a>樹狀結構功能表命令
 **樹狀**功能表提供命令來展開或摺疊檢視。  

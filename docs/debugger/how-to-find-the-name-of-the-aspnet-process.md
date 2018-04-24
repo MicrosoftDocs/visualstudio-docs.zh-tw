@@ -1,12 +1,9 @@
 ---
-title: "如何： 尋找 ASP.NET 處理序的名稱 |Microsoft 文件"
-ms.custom: 
+title: 如何： 尋找 ASP.NET 處理序的名稱 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ASP.NET debugging, ASP.NET process
 - ASP.NET process
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e542e58bab483a1f20029bb66a073ae07d45afba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 899860baf5461eb798341cebf775ccde488915b7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：尋找 ASP.NET 處理序的名稱
 若要附加至執行中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，您必須知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 處理序的名稱：  
@@ -53,7 +50,7 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     > 從 Visual Studio 2017 開始，您可以使用 [搜尋] 方塊來搜尋處理序名稱。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [附加至執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  [遠端偵錯 Web 應用程式的必要條件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [系統需求](../debugger/aspnet-debugging-system-requirements.md)   

@@ -2,12 +2,8 @@
 title: 如何： 使用編輯後繼續 (C#) |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Edit and Continue [C#], about Edit and Continue
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
-caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe77428d1d9cfb5ff12554e87ec9afe15d6c86b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a1f073d401ddc1a99e365245f2a8c1b66b13fb8a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用編輯後繼續 (C#)
 利用 C# 的 [編輯後繼續]，偵錯時您可以在中斷模式中變更程式碼。 不需要停止並重新啟動偵錯工作階段，就可以套用這些變更。  
@@ -54,6 +49,6 @@ ms.lasthandoff: 12/22/2017
   
      當您重新啟動偵錯工作階段，設定會生效。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [支援的程式碼變更 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)   

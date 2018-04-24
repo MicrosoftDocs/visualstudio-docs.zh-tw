@@ -1,24 +1,21 @@
 ---
-title: "逐步解說分析 Managed 程式碼的程式碼缺失 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說分析 Managed 程式碼的程式碼缺失 |Microsoft 文件
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說： 分析 managed 程式碼程式碼缺失
 
@@ -30,11 +27,11 @@ ms.lasthandoff: 02/01/2018
 
 ### <a name="to-create-a-class-library"></a>若要建立類別庫
 
-1. 在**檔案**功能表上，選擇**新增** > **專案...**.
+1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
 1. 在**新專案**對話方塊方塊中，展開 **已安裝** > **Visual C#**，然後選擇 **的傳統 Windows 桌面**。
 
-1. 選擇**類別庫 (.NET Framework)**範本。
+1. 選擇**類別庫 (.NET Framework)** 範本。
 
 1. 在**名稱**文字方塊中，輸入**CodeAnalysisManagedDemo** ，然後按一下 **確定**。
 
@@ -63,21 +60,21 @@ ms.lasthandoff: 02/01/2018
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>若要分析的 managed 的專案的程式碼缺失
 
 1. CodeAnalysisManagedDemo 中選取專案**方案總管 中**。
-  
+
 1. 在 [專案] 功能表上，按一下 [屬性]。
-  
+
      CodeAnalysisManagedDemo 屬性頁面會顯示。
-  
+
 1. 選擇**程式碼分析** 索引標籤。
-  
+
 1. 請確定**建置時啟用程式碼分析**已核取。
-  
+
 1. 從**執行此規則集**下拉式清單中，選取**Microsoft 所有規則**。
-  
+
 1. 在**檔案**功能表上，按一下 **儲存選取項目**，然後關閉屬性頁。
-  
+
 1. 在**建置**功能表上，按一下 **建置 CodeAnalysisManagedDemo**。
-  
+
     CodeAnalysisManagedDemo 專案建置警告如下所示**錯誤清單**和**輸出**windows。
 
 ## <a name="correct-the-code-analysis-issues"></a>修正程式碼分析問題
@@ -112,7 +109,7 @@ ms.lasthandoff: 02/01/2018
 
    1. 加入程式碼`using System.Runtime.Serialization;`Class1.cs 檔的開頭。
 
-   1. 接下來，加入建構函式`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. 接下來，加入建構函式 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [Ca1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 將下列建構函式加入至這個類別： 公用 demo()
 

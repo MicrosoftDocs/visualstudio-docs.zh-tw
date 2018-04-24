@@ -1,13 +1,9 @@
 ---
-title: "使用傾印檔案 |Microsoft 文件"
+title: 使用傾印檔案 |Microsoft 文件
 ms.custom: H1HackMay2017
 ms.date: 03/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -22,34 +18,33 @@ helpviewer_keywords:
 - dump files
 - dumps
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b06f88433f8b744a9bea7dfcce95b0a095cf7890
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>使用與 Visual Studio 的傾印檔案
 使用或不含堆積; 傾印檔案建立傾印檔案;開啟傾印檔案;尋找二進位檔、 pdb 的傾印檔案的原始程式檔。
   
-##  <a name="BKMK_What_is_a_dump_file_"></a>什麼是傾印檔案？  
+##  <a name="BKMK_What_is_a_dump_file_"></a> 什麼是傾印檔案？  
  A*傾印檔案*傾印所花的時間是在應用程式的快照集。 它會顯示當時正在執行的處理序，以及哪些模組已載入。 如果儲存的傾印包含堆積資訊，則傾印檔案會包含應用程式記憶體在該時間點的內容快照。 在 Visual Studio 中開啟含有堆積的傾印檔案，就如同在偵錯工作階段中於中斷點停止。 雖然您無法繼續執行，但是可以在傾印發生時，檢查應用程式的堆疊、執行緒和變數值。  
   
  傾印主要用於偵錯開發人員沒有存取權的機器發生的問題。 例如，您可以使用客戶電腦的傾印檔案，您無法重現客戶的當機，或在您的電腦停止回應時。 測試人員也會建立傾印來儲存當機或停止回應資料，讓測試電腦可以用於進行更多測試。 Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔案。 偵錯工具可以載入由 Visual Studio，還是儲存檔案中的其他程式所建立的傾印檔案*小型傾印*格式。  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a>傾印檔案，或不含堆積  
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 傾印檔案，或不含堆積  
  您可以建立包含或不含堆積資訊的傾印檔案。  
   
 -   **堆積的傾印檔案**包含的應用程式的記憶體快照。 其中包括建立傾印時的變數值。 如果您載入的傾印檔案儲存時包含堆積，即使找不到應用程式二進位檔，Visual Studio 仍可以載入符號。 Visual Studio 也會將載入的原生模組二進位檔儲存在傾印檔案中，讓偵錯更容易進行。  
   
 -   **傾印檔案，不含堆積**會遠比含有堆積資訊的傾印。 不過，偵錯工具必須載入應用程式二進位檔以尋找符號資訊。 二進位檔必須與傾印建立當時所使用的二進位檔完全相符。 不含堆積資料的傾印檔案中只會儲存堆疊變數的值。  
   
-##  <a name="BKMK_Requirements_and_limitations"></a>需求和限制  
+##  <a name="BKMK_Requirements_and_limitations"></a> 需求和限制  
   
 -   對最佳化程式碼的傾印檔案進行偵錯可能會造成混淆。 例如，編譯器內嵌函式會造成未預期的呼叫堆疊，而其他最佳化可能會變更變數的存留期。  
   
@@ -65,7 +60,7 @@ ms.lasthandoff: 01/19/2018
   
 -   使用偵錯[SOS.dll （SOS 偵錯擴充功能）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，您必須安裝偵錯工具，適用於屬於 Windows [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
-##  <a name="BKMK_Create_a_dump_file"></a>建立傾印檔案  
+##  <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案  
  若要使用 Visual Studio 建立傾印檔案：  
   
 -   當您在 Visual Studio 中對處理序進行偵錯時，可以在偵錯工具遇到例外狀況或中斷點停止時儲存傾印檔案。 選擇**偵錯**，然後**儲存傾印**，然後**偵錯**。 在**存傾印**對話方塊中，於**存檔類型**清單中，您可以選取**小型傾印**或**小型傾印包含堆積**（預設值）。  
@@ -74,7 +69,7 @@ ms.lasthandoff: 01/19/2018
   
  您也可以使用任何支援 Windows 小型傾印格式的程式建立傾印檔案。 例如， **Procdump**從命令列公用程式[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以建立程序根據觸發程序或隨選的損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在本主題適用於使用其他工具來建立傾印檔案的其他資訊。 
   
-##  <a name="BKMK_Open_a_dump_file"></a>開啟傾印檔案  
+##  <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案  
   
 1.  在 Visual Studio 中，選擇 **檔案**，**開啟**，**檔案**。  
   
@@ -86,7 +81,7 @@ ms.lasthandoff: 01/19/2018
   
 4.  若要啟動偵錯，請移至**動作**區段，然後選擇 **使用僅限 Managed 偵錯**，**使用僅限原生偵錯**或**混合進行偵錯**.  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>尋找二進位檔、 符號 (.pdb) 檔和原始程式檔  
+##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找二進位檔、 符號 (.pdb) 檔和原始程式檔  
  若要使用 Visual Studio 的完整功能對傾印檔案進行偵錯，您需要存取：  
   
 -   進行傾印的 .exe 檔案，以及傾印程序中所使用的其他二進位檔 (DLL 等)。  
@@ -115,7 +110,7 @@ ms.lasthandoff: 01/19/2018
   
  如果 Visual Studio 找不到偵錯傾印中的模組所需的檔案，它會顯示適當的頁面 (**否二進位找到**，**找不到符號**，或**找不到來源**)。 這些頁面提供關於問題原因的詳細資訊，並提供可協助您識別檔案正確位置的動作連結。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)

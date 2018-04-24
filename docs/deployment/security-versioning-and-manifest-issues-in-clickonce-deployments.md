@@ -1,13 +1,9 @@
 ---
-title: "安全性、 版本控制和 ClickOnce 部署中的資訊清單問題 |Microsoft 文件"
-ms.custom: 
+title: 安全性、 版本控制和 ClickOnce 部署中的資訊清單問題 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,16 +19,16 @@ helpviewer_keywords:
 - Windows Vista, ClickOnce deployments
 - manifests [ClickOnce]
 - ClickOnce applications, security issues
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dd693a35725d41b2b8ced99d78bd4a62d8d9e3a
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 8b1f6005b290d1567ae922da8ec46b3db05b9b22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 
@@ -99,7 +95,7 @@ ms.lasthandoff: 02/28/2018
 > [!NOTE]
 > 您更新的資訊清單每次您必須再次加以簽署。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)  
 [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)  

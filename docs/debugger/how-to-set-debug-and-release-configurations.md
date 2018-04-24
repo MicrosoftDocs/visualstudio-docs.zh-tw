@@ -1,13 +1,9 @@
 ---
-title: "如何： 設定偵錯和發行組態 |Microsoft 文件"
+title: 如何： 設定偵錯和發行組態 |Microsoft 文件
 ms.custom: H1HackMay2017
 ms.date: 04/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -32,17 +28,16 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 設定偵錯和發行 Visual Studio 中的組態
 Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 依照名稱提示，您可以建置用來偵錯的偵錯版本，和最後發行散發的發行版本。  
@@ -116,7 +111,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
     可執行檔或主要輸出檔相同資料夾中建立符號檔案。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [在 Visua Studio debugger 中指定符號 (.pdb) 檔和原始程式檔](../debugger/debugger-settings-and-preparation.md)  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [C + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   

@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 部署資訊清單 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 部署資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,23 +12,23 @@ helpviewer_keywords:
 - ClickOnce, deployment manifests
 - deployment manifests [ClickOnce]
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7cca74c6b0b5f1c118bb1360184558fc383c40c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。  
   
  部署資訊清單具有下列項目和屬性。  
   
-|元素|描述|屬性|  
+|項目|描述|屬性|  
 |-------------|-----------------|----------------|  
 |[\<組件 > 項目](../deployment/assembly-element-clickonce-deployment.md)|必要。 最上層項目。|`manifestVersion`|  
 |[\<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要。 識別此 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
@@ -121,5 +118,5 @@ ms.lasthandoff: 12/22/2017
 </Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

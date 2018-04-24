@@ -1,13 +1,9 @@
 ---
-title: "如何： 偵錯 OnStart 方法 |Microsoft 文件"
-ms.custom: 
+title: 如何： 偵錯 OnStart 方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,17 +16,16 @@ helpviewer_keywords:
 - debugging Windows Services applications, OnStart method
 - Windows Service applications, debugging
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcfe3062ff0f36628016e1a9c0fc70278a5b0de7
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: d438a8d6dcd80ec8d9dcce2fb4943e8b5614442c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
 您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。  
@@ -50,7 +45,7 @@ ms.lasthandoff: 01/29/2018
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  選取**[是]，偵錯\<服務名稱 >。**  
+3.  選取 **[是]，偵錯\<服務名稱 >。**  
   
 4.  在 [Just-In-Time 偵錯工具] 視窗中，選取您要用來偵錯的 Visual Studio 版本。  
   
@@ -58,6 +53,6 @@ ms.lasthandoff: 01/29/2018
   
 5.  Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

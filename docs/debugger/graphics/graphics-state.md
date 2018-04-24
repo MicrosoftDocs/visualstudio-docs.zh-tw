@@ -2,26 +2,21 @@
 title: 圖形狀態 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
-caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-state"></a>圖形狀態
 Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事件時作用的圖形狀態 (例如繪製呼叫)。  

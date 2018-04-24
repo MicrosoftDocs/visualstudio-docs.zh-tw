@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 建立自訂指示詞處理器 |Microsoft 文件
+title: 逐步解說：建立自訂指示詞處理器
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f302435bcc5c8b9b66d9822888527a6840baaad5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 322de4ea4cd5c92f57e46daa4a8256b7a212c0a3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說： 建立自訂指示詞處理器
 
@@ -614,7 +614,7 @@ End Property
 您可以從 Visual Studio 中的文字範本中呼叫指示詞之前，您必須新增登錄機碼指示詞處理器。
 
 > [!NOTE]
-> 如果您想要在多部電腦上安裝指示詞處理器，最好是定義 Visual Studio 擴充功能 (VSIX)，其中包含*.pkgdef*和組件的檔案。 如需詳細資訊，請參閱[部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。
+> 如果您想要在多部電腦上安裝指示詞處理器，最好是定義 Visual Studio 擴充功能 (VSIX)，其中包含 *.pkgdef*和組件的檔案。 如需詳細資訊，請參閱[部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。
 
 指示詞處理器的機碼存在於下列登錄位置：
 
@@ -658,7 +658,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     |----------|----------|----------|
     |(預設值)|REG_SZ|(值未設定)|
     |類別|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |程式碼基底|REG_SZ|**\<您的方案路徑 >**CustomDP\bin\Debug\CustomDP.dll|
+    |程式碼基底|REG_SZ|**\<您的方案路徑 >** CustomDP\bin\Debug\CustomDP.dll|
 
      如果組件已置於 GAC 中，則值看起來應該如下表所示：
 

@@ -1,12 +1,8 @@
 ---
-title: "遠端偵錯錯誤和疑難排解 |Microsoft 文件"
-ms.custom: 
+title: 遠端偵錯錯誤和疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,14 +19,14 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a5018aed5c2f85c155b504a5935fd72e5e2ff
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: ecbac9eea6b3510d670aa00e48c85c8dd5bb0e4b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
 您可能會在嘗試進行遠端偵錯時，發生下列錯誤。  
@@ -43,5 +39,5 @@ ms.lasthandoff: 02/01/2018
   
 -   [錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

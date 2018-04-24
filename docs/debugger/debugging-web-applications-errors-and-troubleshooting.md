@@ -1,12 +1,9 @@
 ---
-title: "偵錯 Web 應用程式： 錯誤和疑難排解 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Web 應用程式： 錯誤和疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - debugging Web applications, troubleshooting
 - troubleshooting Web applications
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b8d915339ae8e81d16b46ca602b45d527ab78aa9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 81d9ba4a2e37124f8d8b3641a129d09da1728118
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  
@@ -58,6 +55,6 @@ ms.lasthandoff: 12/22/2017
   
 -   [錯誤：無法在 Web 伺服器上啟動偵錯](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)

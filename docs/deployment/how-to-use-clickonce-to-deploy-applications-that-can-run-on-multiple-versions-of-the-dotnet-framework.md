@@ -1,12 +1,9 @@
 ---
-title: "如何： 使用 ClickOnce 部署可以在多個版本的.NET Framework 執行的應用程式 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 ClickOnce 部署可以在多個版本的.NET Framework 執行的應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, multiple .NET Framework versions
 - deploying applications [ClickOnce], multiple .NET Framework versions
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: dotnet
-ms.openlocfilehash: 2c3153b4c6808d2a79a89a10e35830ec81ba15fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 來部署可在多個 .NET Framework 版本上執行的應用程式
 您可以部署應用程式的使用 clickonce 部署為目標的.NET framework 的多個版本。 這需要您產生和更新的應用程式和部署資訊清單。  
@@ -104,9 +101,9 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新並重新簽署應用程式和部署資訊清單  
   
--   更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱[如何： 重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+-   更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱 [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [\<w > 項目](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md)   

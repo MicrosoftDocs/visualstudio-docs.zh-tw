@@ -1,12 +1,9 @@
 ---
-title: "支援的程式碼變更 （C# 和 Visual Basic） |Microsoft 文件"
-ms.custom: 
+title: 支援的程式碼變更 （C# 和 Visual Basic） |Microsoft 文件
+ms.custom: ''
 ms.date: 10/11/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Edit and Continue [C#], supported code changes
 - Edit and Continue [Visual Basic], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
-caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 855e8111721480b98c1395811090a54dd6e3ab2a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼變更 （C# 和 Visual Basic）
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -108,6 +105,6 @@ ms.lasthandoff: 01/19/2018
   
 -   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

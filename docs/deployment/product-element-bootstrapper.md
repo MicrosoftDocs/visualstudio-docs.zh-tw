@@ -2,12 +2,8 @@
 title: '&lt;產品&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af40da0690bd8b6cc9cc12dd16fe9e11045b0624
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;元素 （啟動載入器）
 `Product`元素是產品檔案內的最上層 XML 元素。  
@@ -255,5 +250,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 下載 ClickOnce 部署應用程式開發介面使用設計工具的要求組件 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 下載 ClickOnce 部署應用程式開發介面使用設計工具的要求組件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, on-demand download
 - on-demand assemblies, ClickOnce
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
-caps.latest.revision: "18"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b19f8759ecaa29ffda36660877bfc69acaa06375
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。  
@@ -101,5 +98,5 @@ ms.lasthandoff: 12/22/2017
   
 2.  您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看到 "Hello, World!" 字串。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>

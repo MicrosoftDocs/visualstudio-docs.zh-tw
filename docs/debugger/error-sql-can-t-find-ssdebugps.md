@@ -1,13 +1,9 @@
 ---
-title: "錯誤： SQL 可以 &#39; t 尋找不到 SSDEBUGPS |Microsoft 文件"
-ms.custom: 
+title: 錯誤： SQL 可以&#39;t 找不到 SSDEBUGPS |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
@@ -18,16 +14,16 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a82222fe1a4a2cd643f9f84127c3674f8078fd
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: f263d76667eb197d85a99ba06a45fc08e2f4d0d6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以 &#39; t 尋找不到 SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t 找不到 SSDEBUGPS
 
 SSDEBUGPS.dll 是 SQL Server 偵錯主機元件。
 

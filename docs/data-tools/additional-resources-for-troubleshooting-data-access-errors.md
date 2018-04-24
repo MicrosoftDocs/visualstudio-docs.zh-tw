@@ -1,8 +1,7 @@
 ---
-title: 疑難排解資料的其他資源存取錯誤 |Microsoft 文件
-ms.custom: ''
+title: 用於疑難排解資料存取錯誤的其他資源
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -227,37 +226,32 @@ robots: noindex,nofollow
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 04d7d9922e15ae61709e21f3b220564c64ec6e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bed8ea08496d8751c093d448c5138b97db39dd3d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用於疑難排解資料存取錯誤的其他資源
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出在 MSDN 上的資料相關論壇。  
-  
- [Windows Form 資料控制項和資料繫結](http://go.microsoft.com/fwlink/?LinkId=160179)  
- 提供有關問題和 Windows Form 中的資料存取的一般討論區論壇。  
-  
- [ADO.NET 資料集論壇](http://go.microsoft.com/fwlink/?LinkId=160180)  
- 提供問題的資料集的相關和一般討論的論壇。  
-  
- [ADO.NET Entity Framework 和 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
- 如需有關的問題和 Entity Framework 應用程式和 LINQ to Entities 語言的一般討論區中提供的論壇。  
-  
- [WCF 資料服務論壇](http://go.microsoft.com/fwlink/?LinkId=160181)  
- 如需有關的問題和資料服務的一般討論區中提供的論壇。  
-  
- [SQL Server 資料存取論壇](http://go.microsoft.com/fwlink/?LinkID=160184)  
- 如需有關的問題和存取 Microsoft SQL Server 中的資料的一般討論區中提供的論壇。  
-  
- [Linq to SQL 論壇](http://go.microsoft.com/fwlink/?LinkId=160183)  
- 提供論壇相關的問題和一般討論 Linq to SQL。  
-  
- [ADO.NET 資料提供者論壇](http://go.microsoft.com/fwlink/?LinkId=160182)  
- 提供問題的不同的.NET Framework 資料提供者的相關和一般討論的論壇。  
-  
- 如需如何疑難排解 SQL Server 的連線資訊，請參閱[如何疑難排解連接到 SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkID=246151)。  
-  
-## <a name="see-also"></a>另請參閱  
- [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
+
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出在 MSDN 上的資料相關論壇。
+
+ [Windows Form 資料控制項和資料繫結](http://go.microsoft.com/fwlink/?LinkId=160179)關於和一般討論 Windows Form 中的資料存取提供問題的論壇。
+
+ [ADO.NET 資料集論壇](http://go.microsoft.com/fwlink/?LinkId=160180)提供問題的資料集的關於和一般討論區論壇。
+
+ [ADO.NET Entity Framework 和 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)提供問題的 Entity Framework 應用程式和 LINQ to Entities 語言關於和一般討論區論壇。
+
+ [WCF 資料服務論壇](http://go.microsoft.com/fwlink/?LinkId=160181)提供問題的資料服務的相關和一般討論的論壇。
+
+ [SQL Server 資料存取論壇](http://go.microsoft.com/fwlink/?LinkID=160184)關於和一般討論區，存取 Microsoft SQL Server 中的資料的問題提供的論壇。
+
+ [Linq to SQL 論壇](http://go.microsoft.com/fwlink/?LinkId=160183)提供問題的 Linq to SQL 關於和一般討論區論壇。
+
+ [ADO.NET 資料提供者論壇](http://go.microsoft.com/fwlink/?LinkId=160182)關於和一般討論區不同的.NET Framework 資料提供者提供問題的論壇。
+
+ 如需如何疑難排解 SQL Server 的連線資訊，請參閱[如何疑難排解連接到 SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkID=246151)。
+
+## <a name="see-also"></a>另請參閱
+
+- [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

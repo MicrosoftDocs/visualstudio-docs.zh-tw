@@ -2,12 +2,8 @@
 title: 在 偵錯工具中檢視 GPU 執行緒 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -19,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
-caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用 GPU 執行緒視窗
 在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需在 GPU 執行的應用程式的詳細資訊，請參閱[c + + AMP 概觀](/cpp/parallel/amp/cpp-amp-overview)。  
@@ -108,7 +103,7 @@ ms.lasthandoff: 12/22/2017
   
 -   在 [GPU 執行緒] 視窗中選擇旗標按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何： 使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)   
  [逐步解說：偵錯 C++ AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

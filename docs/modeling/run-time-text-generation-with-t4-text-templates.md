@@ -1,6 +1,5 @@
 ---
-title: 使用 T4 文字範本產生的執行階段文字 |Microsoft 文件
-ms.custom: ''
+title: 使用 T4 文字範本在執行階段產生文字
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 30956435c321a45a3a1ee32a305080d35b073293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d5cfc884cc595e1e95df4b309bfaeb0e12949d34
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -65,7 +64,7 @@ This report is Company Confidential.
 
 4. 選擇 [新增]。
 
-    建立新檔案具有副檔名**.tt**。 其**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。 它包含下列幾行：
+    建立新檔案具有副檔名 **.tt**。 其**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。 它包含下列幾行：
 
     ```
     <#@ template language="C#" #>
@@ -86,9 +85,9 @@ This report is Company Confidential.
 2. 設定檔案的**自訂工具**屬性**TextTemplatingFilePreprocessor**。 在方案總管] 中，檔案的捷徑功能表上選擇 [**屬性**。
 
     > [!NOTE]
-    > 如果已設定屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 這種情況包括已有延伸模組檔案**.tt**。
+    > 如果已設定屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 這種情況包括已有延伸模組檔案 **.tt**。
 
-3. 變更的檔案名稱副檔名**.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。
+3. 變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。
 
 4. 從檔案名稱的主要部分中移除任何空格或標點符號。 例如 「 我的 Web Page.tt"會不正確，但是"MyWebPage.tt"正確無誤。 檔案名稱將用於產生的程式碼中的類別名稱。
 
@@ -108,7 +107,7 @@ Language 參數將取決於您專案的語言。
 
 ### <a name="plain-content"></a>一般內容
 
-編輯**.tt**檔案以包含您希望應用程式產生的文字。 例如: 
+編輯 **.tt**檔案以包含您希望應用程式產生的文字。 例如: 
 
 ```html
 <html><body>
@@ -151,7 +150,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>從範本建立程式碼
 
-當您儲存**.tt**檔案，分公司**.cs**或**.vb**檔案產生。 若要查看此檔案在 [方案總管] 中的，展開**.tt**檔案節點。 在 Visual Basic 專案中，首先選擇**顯示所有檔案**[方案總管] 工具列。
+當您儲存 **.tt**檔案，分公司 **.cs**或 **.vb**檔案產生。 若要查看此檔案在 [方案總管] 中的，展開 **.tt**檔案節點。 在 Visual Basic 專案中，首先選擇**顯示所有檔案**[方案總管] 工具列。
 
 請注意附帶檔案包含的部分類別，其中包含呼叫的方法`TransformText()`。 您可以從您的應用程式呼叫此方法。
 

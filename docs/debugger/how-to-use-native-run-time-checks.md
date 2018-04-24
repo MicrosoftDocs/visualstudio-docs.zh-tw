@@ -2,12 +2,8 @@
 title: 如何： 使用原生執行階段檢查 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -38,17 +34,16 @@ helpviewer_keywords:
 - stack pointers
 - arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
-caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36edb5901f8ab67360e276f6a8ff5a2a8d51530
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d47b39086f0363bd0bc610ec047213142fb7fec
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
 您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：  
@@ -63,7 +58,7 @@ ms.lasthandoff: 12/22/2017
   
 -   指派至較短變數時流失資料  
   
- 如果使用具有最佳化 ( **/O** ) 組建的**/RTC**，便會造成編譯器錯誤。 如果您在最佳化組建中使用 `runtime_checks` Pragma，此 Pragma 會失效。  
+ 如果使用具有最佳化 ( **/O** ) 組建的 **/RTC**，便會造成編譯器錯誤。 如果您在最佳化組建中使用 `runtime_checks` Pragma，此 Pragma 會失效。  
   
  如果要偵錯的程式已啟用執行階段錯誤檢查，則當這個程式發生執行階段錯誤時，預設動作是停止和中斷偵錯工具。 您可以變更任何執行階段檢查的這個預設行為。 如需詳細資訊，請參閱[管理例外狀況，偵錯工具](../debugger/managing-exceptions-with-the-debugger.md)。  
   
@@ -83,7 +78,7 @@ ms.lasthandoff: 12/22/2017
   
 -   使用 `runtime_checks` Pragma。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   

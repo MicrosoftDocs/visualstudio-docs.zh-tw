@@ -3,11 +3,7 @@ title: 部署概觀-Visual Studio |Microsoft 文件
 description: 深入了解您的選項，以部署應用程式，從 Visual Studio。
 ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c0b21e8bf8abae2e5543d68751fd53b07778c8b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 第一次查看 Visual Studio 中的部署
 
@@ -43,7 +38,7 @@ ms.lasthandoff: 04/03/2018
 
 ### <a name="deploy-to-local-folder"></a>將部署到本機資料夾
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 使用發行工具來部署至本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET Core**： 使用發行工具來部署至本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇發行](../deployment/media/quickstart-publish.png)
 
@@ -51,7 +46,7 @@ ms.lasthandoff: 04/03/2018
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>發行至 Web 或網路共用部署
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 您可以將部署到使用發行工具使用 FTP 或 Web Deploy 的網站。 如需詳細資訊，請參閱[部署網站至](quickstart-deploy-to-a-web-site.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET Core**： 您可以將部署到使用發行工具使用 FTP 或 Web Deploy 的網站。 如需詳細資訊，請參閱[部署網站至](quickstart-deploy-to-a-web-site.md)。
 
     在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 [發行] 工具中，選擇您想要的選項組態步驟。
 

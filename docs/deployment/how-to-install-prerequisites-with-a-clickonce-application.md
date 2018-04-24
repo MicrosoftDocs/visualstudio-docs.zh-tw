@@ -1,12 +1,9 @@
 ---
-title: "如何： 使用 ClickOnce 應用程式安裝必要條件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 使用 ClickOnce 應用程式安裝必要條件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - components, bootstrapping
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
-caps.latest.revision: "13"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 83458b627949cda5f918ec06a5f84bd9697ba6d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d803ae651d75dd6195e4046b86a77d46d3174fc4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：使用 ClickOnce 應用程式安裝必要條件
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式需要.NET Framework 正確版本已安裝在電腦上，才能執行，則為許多應用程式有其他必要條件。 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，您可以選擇一組的必要條件元件，以與您的應用程式一起封裝。 在安裝期間，會檢查以判斷是否它已經存在; 每個必要條件如果不將會安裝在安裝之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -66,11 +63,11 @@ ms.lasthandoff: 12/22/2017
   
 5.  在**指定必要條件的安裝位置**區段中，選取**從下列位置下載必要條件**。  
   
-6.  從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下**[確定]。**  
+6.  從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
   
     > [!NOTE]
     >  您必須確定指定的元件的安裝程式存在於指定的位置。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -3,26 +3,21 @@ title: 了解如何偵錯-Visual Studio |Microsoft 文件
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1c3264f7f7b0c13d8df099ab14288141ef4e6e
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 偵錯
 
@@ -36,7 +31,7 @@ ms.lasthandoff: 03/30/2018
 
 雖然此示範應用程式是 C#，功能也適用於 c + +、 Visual Basic、 JavaScript 和 Visual Studio （除非註明） 支援其他語言。
 
-在此教學課程中，您將：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟動偵錯工具，並叫用中斷點。

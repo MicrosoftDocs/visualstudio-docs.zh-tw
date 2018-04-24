@@ -1,12 +1,9 @@
 ---
-title: "選擇 ClickOnce 部署策略 |Microsoft 文件"
-ms.custom: 
+title: 選擇 ClickOnce 部署策略 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, strategies
 - deploying applications, ClickOnce
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
-caps.latest.revision: "19"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: fffb73fac64aad880531fb8ea51904fb5ac71b16
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：  
@@ -75,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
  以 .NET Framework 2.0 為目標的應用程式則需要 Internet Explorer。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   

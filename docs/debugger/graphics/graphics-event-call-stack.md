@@ -1,27 +1,22 @@
 ---
-title: "圖形事件呼叫堆疊 |Microsoft 文件"
-ms.custom: 
+title: 圖形事件呼叫堆疊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 879189fe71a4bf9dc0b7c56afe81d85d4316b6a4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-event-call-stack"></a>圖形事件呼叫堆疊
 Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有問題的圖形事件與您應用程式的原始程式碼之間的關聯性。  
@@ -47,5 +42,5 @@ Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
  若要了解所選取的圖形事件，您可能需要與其相關聯之 Direct3D 物件的相關資訊。 **圖形事件呼叫堆疊**視窗提供此資訊的連結。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)

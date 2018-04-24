@@ -1,27 +1,24 @@
 ---
-title: "如何： 搜尋訊息檢視中的訊息 |Microsoft 文件"
-ms.custom: 
+title: 如何： 搜尋訊息檢視中的訊息 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
 - messages, searching for
 ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df8fc9ee13a721f98a942a3bb6d10f6c8d844ddf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 368d10f2285c94f053e536da77966e9b2fb26da9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 您可以搜尋特定訊息在訊息檢視中，使用其控制代碼、 類型或訊息識別碼，做為搜尋準則。 其中任何一個，或組合，將會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  
@@ -47,7 +44,7 @@ ms.lasthandoff: 12/22/2017
 4.  清除所有的欄位，您不想指定值。  
   
     > [!TIP]
-    >  若要減少螢幕混亂的情形，請選取**隱藏 spy + +**選項。 此選項會隱藏主要 Spy + + 視窗中，只留下**尋找視窗**對話方塊在其他應用程式的上層。 當您按一下 還原 Spy + + 主視窗**確定**或**取消**，或當您清除**隱藏 Spy + +**選項。  
+    >  若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主要 Spy + + 視窗中，只留下**尋找視窗**對話方塊在其他應用程式的上層。 當您按一下 還原 Spy + + 主視窗**確定**或**取消**，或當您清除**隱藏 Spy + +** 選項。  
   
 5.  選擇**向上**或**向**搜尋初始方向。  
   

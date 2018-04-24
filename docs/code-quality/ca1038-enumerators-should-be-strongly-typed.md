@@ -1,10 +1,8 @@
 ---
-title: CA1038： 列舉值應該強類型 |Microsoft 文件
-ms.custom: ''
+title: CA1038：列舉程式應該是強類型
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -17,50 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b194864f559ff095d8727ff11a4906377aa482
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0cd45f3d601b3bba1bdda795ff098b72e241ca28
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038：列舉程式應該是強類型
-|||  
-|-|-|  
-|TypeName|EnumeratorsShouldBeStronglyTyped|  
-|CheckId|CA1038|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 公用或受保護的型別會實作<xref:System.Collections.IEnumerator?displayProperty=fullName>，但不是提供強類型的版本<xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>屬性。 衍生自下列類型的型別免套用此規則：  
-  
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
-  
-## <a name="rule-description"></a>規則描述  
- 這項規則要求<xref:System.Collections.IEnumerator>實作同時也提供強類型的版本<xref:System.Collections.IEnumerator.Current%2A>屬性，如此使用者就不需要使用介面所提供的功能時，轉型為強類型傳回的值。 這項規則假設的實作類型<xref:System.Collections.IEnumerator>包含比強型別的執行個體的集合<xref:System.Object>。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，實作介面屬性明確 (將它宣告為`IEnumerator.Current`)。 新增公用的強類型的版本的屬性，宣告為`Current`，並讓它傳回強類型的物件。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 當您實作使用，以物件為基礎的集合，例如二進位樹狀目錄的物件為基礎列舉值，則隱藏此規則的警告。 擴充新集合的型別會定義強類型列舉值，並公開強類型的屬性。  
-  
-## <a name="example"></a>範例  
- 下列範例會示範正確的方式來實作的強型別<xref:System.Collections.IEnumerator>型別。  
-  
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]  
-  
-## <a name="related-rules"></a>相關的規則  
- [CA1035：ICollection 實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
-  
- [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Collections.IEnumerator?displayProperty=fullName>   
- <xref:System.Collections.CollectionBase?displayProperty=fullName>   
- <xref:System.Collections.DictionaryBase?displayProperty=fullName>   
- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|EnumeratorsShouldBeStronglyTyped|
+|CheckId|CA1038|
+|分類|Microsoft.Design|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 公用或受保護的型別會實作<xref:System.Collections.IEnumerator?displayProperty=fullName>，但不是提供強類型的版本<xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>屬性。 衍生自下列類型的型別免套用此規則：
+
+-   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+
+-   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+## <a name="rule-description"></a>規則描述
+ 這項規則要求<xref:System.Collections.IEnumerator>實作同時也提供強類型的版本<xref:System.Collections.IEnumerator.Current%2A>屬性，如此使用者就不需要使用介面所提供的功能時，轉型為強類型傳回的值。 這項規則假設的實作類型<xref:System.Collections.IEnumerator>包含比強型別的執行個體的集合<xref:System.Object>。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，實作介面屬性明確 (將它宣告為`IEnumerator.Current`)。 新增公用的強類型的版本的屬性，宣告為`Current`，並讓它傳回強類型的物件。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 當您實作使用，以物件為基礎的集合，例如二進位樹狀目錄的物件為基礎列舉值，則隱藏此規則的警告。 擴充新集合的型別會定義強類型列舉值，並公開強類型的屬性。
+
+## <a name="example"></a>範例
+ 下列範例會示範正確的方式來實作的強型別<xref:System.Collections.IEnumerator>型別。
+
+ [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+
+## <a name="related-rules"></a>相關的規則
+ [CA1035：ICollection 實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+
+ [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)
+
+## <a name="see-also"></a>另請參閱
+ <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.DictionaryBase?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

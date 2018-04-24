@@ -1,22 +1,21 @@
 ---
-title: "建立 UML 模型專案和圖表 |Microsoft 文件"
-ms.custom: 
+title: 建立 UML 模型專案和圖表
 ms.date: 01/23/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams (UML)
 - UML designers
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de9c5e86e8c6cba28ebe601a4f69bc5ee9526fa7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7575f08f3b84e69f0d23557e3a1843efa4bc5bf3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 

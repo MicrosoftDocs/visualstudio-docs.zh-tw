@@ -2,35 +2,30 @@
 title: 訊息檢視 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31baccc88b25979dfc92fed6217bec3b0ef16a55
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息碼和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送至特定處理程序或特別適用於捕捉視窗初始化訊息的執行緒所擁有的所有 windows 訊息。  
   
  一般的 [訊息] 檢視視窗下方會出現。 請注意，第一個資料行包含的視窗控制代碼，而且第二個資料行包含訊息碼 (詳見[訊息代碼](../debugger/message-codes.md))。 已解碼的訊息參數和傳回值會在右邊。  
   
- ![Spy #43; &#43;訊息檢視](../debugger/media/spy--_messagesview.png "Spy + + _MessagesView")  
+ ![Spy&#43; &#43;訊息檢視](../debugger/media/spy--_messagesview.png "Spy + + _MessagesView")  
 Spy++ 訊息檢視  
   
 ## <a name="procedures"></a>程序  

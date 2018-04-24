@@ -1,10 +1,8 @@
 ---
-title: CA1026： 應該不使用預設參數 |Microsoft 文件
-ms.custom: ''
+title: CA1026：不應使用預設參數
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -17,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc307b0c82400a209d09b490ba0882e6474db3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 173a9a62ea6a3106c50fd18f37180b583e0bb42c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不應使用預設參數
-|||  
-|-|-|  
-|TypeName|DefaultParametersShouldNotBeUsed|  
-|CheckId|CA1026|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
-  
-## <a name="cause"></a>原因  
- 外部可見類型包含外部可見的方法會使用預設參數。  
-  
-## <a name="rule-description"></a>規則描述  
- 允許在 Common Language Specification (CLS); 您可以使用預設參數的方法不過，CLS 允許編譯器忽略已指派給這些參數的值。 程式碼撰寫的編譯器會忽略預設參數值必須明確地提供每個預設參數的引數。 若要維持您想要在程式語言之間的行為，使用預設參數的方法應該取代提供預設參數的方法多載。  
-  
- 編譯器時，會忽略預設參數的值管理擴充功能用於 c + + 存取 managed 程式碼。 Visual Basic 編譯器支援使用的預設參數的方法[選擇性](/dotnet/visual-basic/language-reference/modifiers/optional)關鍵字。  
-  
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 若要修正此規則的違規情形，取代使用預設參數提供預設參數的方法多載的方法。  
-  
-## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
- 請勿隱藏此規則的警告。  
-  
-## <a name="example"></a>範例  
- 下列範例會示範使用預設參數的方法，並提供對等功能的多載的方法。  
-  
- [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]  
-  
-## <a name="related-rules"></a>相關的規則  
- [CA1025：必須以參數陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
-  
-## <a name="see-also"></a>另請參閱  
+|||
+|-|-|
+|TypeName|DefaultParametersShouldNotBeUsed|
+|CheckId|CA1026|
+|分類|Microsoft.Design|
+|中斷變更|中斷|
+
+## <a name="cause"></a>原因
+ 外部可見類型包含外部可見的方法會使用預設參數。
+
+## <a name="rule-description"></a>規則描述
+ 允許在 Common Language Specification (CLS); 您可以使用預設參數的方法不過，CLS 允許編譯器忽略已指派給這些參數的值。 程式碼撰寫的編譯器會忽略預設參數值必須明確地提供每個預設參數的引數。 若要維持您想要在程式語言之間的行為，使用預設參數的方法應該取代提供預設參數的方法多載。
+
+ 編譯器時，會忽略預設參數的值管理擴充功能用於 c + + 存取 managed 程式碼。 Visual Basic 編譯器支援使用的預設參數的方法[選擇性](/dotnet/visual-basic/language-reference/modifiers/optional)關鍵字。
+
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 若要修正此規則的違規情形，取代使用預設參數提供預設參數的方法多載的方法。
+
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
+ 請勿隱藏此規則的警告。
+
+## <a name="example"></a>範例
+ 下列範例會示範使用預設參數的方法，並提供對等功能的多載的方法。
+
+ [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
+
+## <a name="related-rules"></a>相關的規則
+ [CA1025：必須以參數陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+
+## <a name="see-also"></a>另請參閱
  [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

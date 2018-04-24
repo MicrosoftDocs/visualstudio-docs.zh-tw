@@ -2,12 +2,8 @@
 title: 偵錯 Visual Studio 中的多執行緒應用程式 |Microsoft 文件
 ms.custom: ''
 ms.date: 09/05/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: cd789bf9b820e13a265cceffbf3c6000ab4f0331
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
@@ -105,6 +100,6 @@ Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行
  [舊版程式碼的多執行緒支援 (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
  提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

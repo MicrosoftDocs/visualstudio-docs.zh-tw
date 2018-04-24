@@ -1,13 +1,9 @@
 ---
-title: "如何： 如果暫止呼叫 MFC 的函式來取回 |Microsoft 文件"
-ms.custom: 
+title: 如何： 如果暫止呼叫 MFC 的函式來取回 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.mfc
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - programs, halting
 - functions [debugger]
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ca8a71327f4d561d8fef2c0e2d6cbf82cd9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 356e9f4950e62f3ac1399b1e79ee2fe400cec47b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：如果暫止，回到呼叫 MFC 的函式
 > [!NOTE]
@@ -48,6 +43,6 @@ ms.lasthandoff: 12/22/2017
   
 -   使用**呼叫堆疊**視窗。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [機器碼偵錯 Faq](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

@@ -1,26 +1,23 @@
 ---
-title: "處理屬性 對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 處理屬性 對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a9d14805f0815c7645ff54352cda218edc44efa4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="process-properties-dialog-box"></a>處理序屬性對話方塊
 若要進一步了解特定的處理程序中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇 **屬性**從**檢視**功能表。  

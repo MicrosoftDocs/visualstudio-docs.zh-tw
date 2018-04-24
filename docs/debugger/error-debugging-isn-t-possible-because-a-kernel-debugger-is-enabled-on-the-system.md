@@ -1,13 +1,9 @@
 ---
-title: "錯誤： 啟用偵錯目前 &#39; t 可能因為核心偵錯系統 |Microsoft 文件"
-ms.custom: 
+title: 錯誤： 偵錯目前&#39;t 可能因為在系統上已啟用核心偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -17,19 +13,18 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - kernel debugger
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0841b6e6d592a8b09b85e744d693f0b356fcbf9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯目前 &#39; t 可能因為核心偵錯已啟用系統上
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯目前&#39;t 可能因為在系統上已啟用核心偵錯工具
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
   
 ```  
@@ -104,6 +99,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

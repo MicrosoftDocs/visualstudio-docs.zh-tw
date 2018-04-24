@@ -2,12 +2,8 @@
 title: 在 偵錯工具中檢視執行緒 |Microsoft 文件
 ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - '@TIB'
 - debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec5cdf340002c9f454c67b170b4e849360de0166
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>在 Visual Studio 中使用 [執行緒] 視窗中偵錯工具中檢視執行緒
 在**執行緒**視窗中，您可以檢查及使用您所偵錯應用程式中的執行緒。 如需如何使用逐步指導**執行緒**視窗中，請參閱[逐步解說： 使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。
@@ -168,6 +163,6 @@ ms.lasthandoff: 12/22/2017
   
 -   在頂端工具列中**執行緒**視窗中，按一下 **展開呼叫堆疊**或**摺疊呼叫堆疊**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)

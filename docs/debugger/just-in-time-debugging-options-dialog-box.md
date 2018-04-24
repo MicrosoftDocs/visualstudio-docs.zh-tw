@@ -1,11 +1,8 @@
 ---
-title: "在 Just-in-time，偵錯、 選項對話方塊 |Microsoft 文件"
-ms.custom: 
+title: 在 Just-in-time，偵錯、 選項對話方塊 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - Just-In-Time debugging, setting options
 - Options dialog box, debugging
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 057c5e0e37d8e84daa4348c91847a12b6a9ae5e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7be7dacbe7b3b89b8bdc09515c23d7597e7e55e5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
 若要存取**時間恰好**頁面，請移至**工具**功能表，然後按一下**選項**。 在**選項**對話方塊方塊中，展開 **偵錯**節點，然後選取**時間恰好**。 這個頁面可讓您啟用 Managed 程式碼、機器碼和指令碼的 Just-In-Time 偵錯。 如需詳細資訊，請參閱[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)。  
@@ -59,6 +56,6 @@ ms.lasthandoff: 01/04/2018
   
  **存取遭拒。有系統管理員啟用時間恰好偵錯 」，或修復您的 Visual Studio 的安裝。**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯、 選項對話方塊](../debugger/debugging-options-dialog-box.md)   
  [如何：指定偵錯工具設定](../debugger/how-to-specify-debugger-settings.md)

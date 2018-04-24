@@ -1,12 +1,9 @@
 ---
-title: "在 偵錯工具中指定符號 (.pdb) 和原始程式檔 |Microsoft 文件"
+title: 在 偵錯工具中指定符號 (.pdb) 和原始程式檔 |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
 - VS.ToolsOptionsPages.Debugger.Symbols
@@ -27,16 +24,16 @@ helpviewer_keywords:
 - pdb files
 - debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbef364c316f51be8996e79f63a493b51e619f1e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 程式資料庫 (.pdb) 檔，也稱為符號檔，將對應您建立類別、 方法和您的專案編譯可執行檔中所使用的識別項的其他程式碼的原始程式碼中的識別項。 .pdb 檔案也會將原始程式碼中的陳述式對應至可執行檔中的執行指令。 偵錯工具會使用此資訊來判斷兩項重要的資訊：
@@ -49,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 > [!TIP]
 > 如果您想要偵錯專案原始程式碼之外的程式碼，例如 Windows 程式碼或協力廠商程式碼您的專案呼叫，您必須指定.pdb （以及 （選擇性） 外部的程式碼的原始程式檔） 的位置，而且這些檔案必須完全符合 t 的組建他可執行檔。  
  
-##  <a name="BKMK_Find_symbol___pdb__files"></a>偵錯工具在搜尋符號檔案？ 
+##  <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具在搜尋符號檔案？ 
   
 1.  DLL 或可執行檔內部指定的位置  
   
@@ -69,14 +66,14 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 符號檔為何需要與可執行檔完全相符？  
 偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 由於編譯器除了會針對建立正確且有效率的程式碼這項主要工作最佳化之外，還會針對加快編譯速度最佳化，因此即使程式碼本身不變，可執行檔的實際配置也可能變更。 如需詳細資訊，請參閱 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>設定在偵錯工具會尋找符號檔和符號載入行為
+##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 設定在偵錯工具會尋找符號檔和符號載入行為
  當您偵錯 Visual Studio IDE 中的專案時，偵錯工具會自動載入符號檔位於專案目錄中。 您可以指定替代的搜尋路徑和符號伺服器，為 Microsoft、 Windows 或協力廠商元件中的**工具 > 選項 > 偵錯 > 符號**。 您也可以指定您想要自動載入符號偵錯工具的特定模組。 然後您就可以在主動進行偵錯時，手動變更這些設定。  
   
 1.  在 Visual Studio 中開啟**工具 > 選項 > 偵錯 > 符號**頁面。  
   
-     ![Tools&#45;選項 &#45;偵錯 &#45;[符號] 頁面](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
+     ![工具&#45;選項&#45;偵錯&#45;[符號] 頁面](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
-2.  選擇的資料夾![tools&#47;選項 &#47;偵錯 &#47;符號資料夾圖示](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")圖示。 可編輯的文字隨即出現在 [ **符號檔 (.pdb) 位置** ] 方塊中。  
+2.  選擇的資料夾![工具&#47;選項&#47;偵錯&#47;符號資料夾圖示](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")圖示。 可編輯的文字隨即出現在 [ **符號檔 (.pdb) 位置** ] 方塊中。  
   
 3.  輸入符號伺服器或符號位置的 URL 或目錄路徑。 陳述式完成可幫助您找出正確的格式。
 
@@ -148,15 +145,15 @@ ms.lasthandoff: 12/22/2017
   
 -   若要變更搜尋路徑，請選擇未選取的路徑，或選擇 [ **新增** ] 並輸入新的路徑。 選擇 [ **載入** ] 可再次搜尋路徑，並且在找到符號檔時將它載入。  
   
--   選擇 [瀏覽並尋找&lt;可執行檔名稱&gt;...]  ，以覆寫任何符號選項，並重試搜尋路徑。 若找到符號檔就會將它載入，否則就會顯示 [檔案總管]，讓您手動選取符號檔。  
+-   選擇**瀏覽並尋找***可執行檔名稱***...** 以覆寫任何符號選項，並重試搜尋路徑。 若找到符號檔就會將它載入，否則就會顯示 [檔案總管]，讓您手動選取符號檔。  
   
--   選擇**變更符號設定...**顯示**偵錯** > **符號**VS [選項] 對話方塊的頁面。  
+-   選擇**變更符號設定...** 顯示**偵錯** > **符號**VS [選項] 對話方塊的頁面。  
   
 -   選擇 [ **檢視反組譯碼** ]，會在新視窗中顯示反組譯碼一次。  
   
 -   若要在找不到原始程式檔或符號檔時一律顯示反組譯碼，請選擇 [ **選項對話方塊** ] 連結，然後同時選取 [ **啟用位址層級偵錯** ] 和 [ **找不到原始碼時則顯示反組譯碼**]。  
   
-     ![選項 &#47;偵錯 &#47;一般反組譯碼選項](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
+     ![選項&#47;偵錯&#47;一般反組譯碼選項](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
  **從捷徑功能表變更符號選項**  
   
@@ -213,7 +210,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  模組之 .pdb 的來源資訊。 這可以是模組建置時原始程式檔的位置，也可以是呼叫來源伺服器的命令。  
   
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a>尋找並載入原始程式檔和未 Source/No 載入符號頁面  
+###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 尋找並載入原始程式檔和未 Source/No 載入符號頁面  
  當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果在您執行其中一個選項後找到 .pdb，而且偵錯工具能夠使用符號檔中的資訊擷取原始程式檔，則會顯示來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 將原始程式檔搜尋路徑加入至方案  
@@ -223,7 +220,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  在 [ **通用屬性** ] 節點下，選擇 [ **偵錯原始程式檔**]。  
   
-3.  按一下資料夾![tools&#47;選項 &#47;偵錯 &#47;符號資料夾圖示](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")圖示。 可編輯的文字會出現在 [ **包含原始程式碼的目錄** ] 清單中。  
+3.  按一下資料夾![工具&#47;選項&#47;偵錯&#47;符號資料夾圖示](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")圖示。 可編輯的文字會出現在 [ **包含原始程式碼的目錄** ] 清單中。  
   
 4.  加入您要搜尋的路徑。  
   
@@ -253,7 +250,7 @@ ms.lasthandoff: 12/22/2017
   
      請注意，[ **允許部分信任組件的來源伺服器 (僅限 Managed)** ] 和 [ **永遠執行未受信任的來源伺服器命令而不須提示** ] 都可能提高上面所討論的安全性風險。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [了解符號檔和符號的 Visual Studio 設定](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 [Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

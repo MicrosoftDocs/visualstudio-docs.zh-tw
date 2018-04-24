@@ -2,29 +2,24 @@
 title: Thunk |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - thunk properties [DIA SDK]
 - thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
-caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc847378510a6c7b0c07834a7658874f94b764e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 906f1daa1df528121c63b6740702fb098c9b779f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thunk"></a>Thunk
 每個`thunk`由`SymTagThunk`標記。  
@@ -58,13 +53,13 @@ ms.lasthandoff: 12/22/2017
 |[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Thunk 所定義的型別， [THUNK_ORDINAL 列舉](../../debugger/debug-interface-access/thunk-ordinal.md)。|  
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|這個 thunk （只在 DIA SDK V8.0 或更新版本） 類型。|  
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|類型符號 （只在 DIA SDK V8.0 或更新版本） 的識別碼。|  
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`如果 thunk 未對齊 （只在 DIA SDK V8.0 或更新版本），|  
-|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`如果 thunk 虛擬 （僅在 DIA SDK V8.0 或更新版本）。|  
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果 thunk 未對齊 （只在 DIA SDK V8.0 或更新版本），|  
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` 如果 thunk 虛擬 （僅在 DIA SDK V8.0 或更新版本）。|  
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|這個 thunk 內可執行映像的位置。|  
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|這個 thunk （只在 DIA SDK V8.0 或更新版本） 的虛擬資料表中的位移。|  
-|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`如果 thunk 標示為 volatile （只在 DIA SDK V8.0 或更新版本）。|  
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果 thunk 標示為 volatile （只在 DIA SDK V8.0 或更新版本）。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
  [THUNK_ORDINAL 列舉](../../debugger/debug-interface-access/thunk-ordinal.md)

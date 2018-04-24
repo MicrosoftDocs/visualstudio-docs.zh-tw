@@ -1,23 +1,20 @@
 ---
-title: "逐步解說： 遺漏的物件因頂點著色而產生 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 遺漏的物件因頂點著色而產生 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
@@ -124,7 +121,7 @@ ms.lasthandoff: 12/22/2017
   
  若要修正問題，請將設定 `m_marbleConstantBufferData.projection` 值的程式碼行，移至初始化區域變數 `projection`值的程式碼行後面。  
   
- ![修正過的 C# 43; &#43;原始碼](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![修正過的 C&#43; &#43;原始程式碼](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  修正程式碼之後，您可以加以重新建置並再次執行應用程式，以確認轉譯問題已解決：  
   

@@ -1,23 +1,20 @@
 ---
-title: "AddMessage |Microsoft 文件"
-ms.custom: 
+title: AddMessage |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0841e622b0fe7c0d01d374da21a12a151c59021d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: de3460a345dba21e3a8f481adb510b9e3bdd4990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="addmessage"></a>AddMessage
 將自訂訊息加入至 圖形診斷*抬頭顯示器*（Hud 顯示）。  

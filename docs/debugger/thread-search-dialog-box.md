@@ -2,26 +2,21 @@
 title: 執行緒搜尋對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6cf674581b4e4368aab87e7ddd6c64096efe5e
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的執行緒中的節點[執行緒檢視](../debugger/threads-view.md)。 若要顯示此對話方塊中，焦點移至**執行緒**檢視 視窗中。 然後選擇 **尋找執行緒**從**搜尋**功能表。  

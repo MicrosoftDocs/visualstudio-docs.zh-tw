@@ -2,12 +2,8 @@
 title: 使用工作視窗 |Microsoft 文件
 ms.custom: ''
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
 dev_langs:
@@ -18,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c78e17898a8f5f3d84b81c9605761919d7a2e
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 85319575766ca9ff3ace297bf1e4e577d49ee6d9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 **工作**視窗類似於**執行緒**視窗中，差別在於前者顯示的相關資訊<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 
@@ -61,7 +56,7 @@ ms.lasthandoff: 03/22/2018
 |**位置**|在工作之呼叫堆疊中的目前位置。 將滑鼠游標停留在這個儲存格上方，就可以查看整個工作的呼叫堆疊。 已排程工作的這個資料行沒有值。|  
 |**Task**|初始方法和任何在建立工作時未傳遞給工作的引數。|  
 |**AsyncState**|對於 Managed 程式碼來說，是指工作狀態。 根據預設，這個資料行是隱藏狀態。 若要顯示這個資料行，請開啟其中一個資料行標頭的操作功能表。 選擇**資料行**， **AsyncState**。|  
-|**Parent**|建立這個工作之工作的 ID。 如果空白，表示工作沒有父代。 這只適用於 Managed 程式。|  
+|**父代**|建立這個工作之工作的 ID。 如果空白，表示工作沒有父代。 這只適用於 Managed 程式。|  
 |**執行緒指派**|正在執行工作之執行緒的 ID 和名稱。|  
 |**AppDomain**|針對 Managed 程式碼，是正在執行工作的應用程式定義域。|  
 |**task_group**|原生程式碼的位址[task_group](/cpp/parallel/concrt/reference/task-group-class.mdd)已排程工作的物件。 針對非同步代理程式和輕量型工作，此欄會設為 0。|  

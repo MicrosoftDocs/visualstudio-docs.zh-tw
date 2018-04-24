@@ -1,12 +1,9 @@
 ---
-title: "ClickOnce 應用程式資訊清單 |Microsoft 文件"
-ms.custom: 
+title: ClickOnce 應用程式資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,23 +12,23 @@ helpviewer_keywords:
 - application manifests [ClickOnce]
 - ClickOnce, application manifests
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52d5a288444b1e98df75e6748fa31176b27211b0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單是描述應用程式部署使用的 XML 檔案[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單具有下列項目和屬性。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單具有下列項目和屬性。  
   
-|元素|描述|屬性|  
+|項目|描述|屬性|  
 |-------------|-----------------|----------------|  
 |[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)|必要。 最上層項目。|`manifestVersion`|  
 |[\<assemblyIdentity > 項目](../deployment/assemblyidentity-element-clickonce-application.md)|必要。 識別主要組件的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
@@ -118,5 +115,5 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式�
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

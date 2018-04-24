@@ -1,12 +1,9 @@
 ---
-title: "如何： 指定部署更新的替代位置 |Microsoft 文件"
-ms.custom: 
+title: 如何： 指定部署更新的替代位置 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - deployment update, alternative locations
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 637f4517734d3a0bbf86c3894c4f0fc7dd5b5e8d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 14c6778d5cad698e6eea541b94df6f8eb793746c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 您可以安裝您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式一開始是從光碟或檔案共用，但是這個應用程式必須檢查是否有定期更新從網站上。 使您的應用程式可以在初始安裝後從 Web 本身更新，您可以在部署資訊清單中指定更新的替代位置。  
@@ -50,9 +47,9 @@ ms.lasthandoff: 12/22/2017
   
 1.  開啟.NET Framework 命令提示字元。  
   
-2.  設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是路徑您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]一律.application 副檔名，其應用程式資訊清單和**http://adatum.com/Update/Path** url[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會檢查應用程式更新。  
+2.  設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是路徑您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]一律.application 副檔名，其應用程式資訊清單和**http://adatum.com/Update/Path**是該的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]會檢查應用程式更新。  
   
-     **Mage-更新 HelloWorld.exe.application-ProviderUrl http://adatum.com/Update/Path**  
+     **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
   
 3.  儲存檔案。  
   
@@ -64,7 +61,7 @@ ms.lasthandoff: 12/22/2017
   
  所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用的應用程式`<deploymentProvider>`應該明確宣告其應用程式資訊清單中，所需的權限，好讓應用程式不會收到不同的不同電腦上的信任層級。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

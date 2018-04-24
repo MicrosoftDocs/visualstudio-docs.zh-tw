@@ -1,12 +1,9 @@
 ---
-title: "如何： 建立產品資訊清單 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立產品資訊清單 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - prerequisites, custom bootstrapper package
 - dependencies, custom bootstrapper package
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 071bfa46df7e11f760bc32cda0a732388835d2d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：建立產品資訊清單
 若要部署您的應用程式的必要條件，您可以建立啟動載入器套件。 啟動載入器套件包含單一產品資訊清單檔案，但卻封裝資訊清單的每個地區設定。 封裝資訊清單包含您的封裝當地語系化特定層面。 這包括字串、 使用者授權合約，以及語言套件。  
@@ -68,7 +65,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  複製或移動到 C:\package 資料夾 CorePackage.msi 檔案。  
   
-7.  加入 XML 以使用啟動載入器命令安裝封裝。 啟動載入器會自動加入**/qn** .msi 檔案中，將會以無訊息模式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
+7.  加入 XML 以使用啟動載入器命令安裝封裝。 啟動載入器會自動加入 **/qn** .msi 檔案中，將會以無訊息模式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
   
     ```  
     <Commands>  
@@ -162,5 +159,5 @@ ms.lasthandoff: 12/22/2017
 </Product>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

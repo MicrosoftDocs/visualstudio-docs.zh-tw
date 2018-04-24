@@ -1,12 +1,9 @@
 ---
-title: "偵錯工具安全性 |Microsoft 文件"
-ms.custom: 
+title: 偵錯工具安全性 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - debugger, security
 - security [Visual Studio], debugging best practices
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95d637585a08089432c8ed054b535c3e56fc9c18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e3824bc4bc4f51baf822caee11a5fb4c106fa9e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 偵錯其他處理序的功能可以讓您獲得在他處無法得到的多樣化功能，特別是在遠端偵錯時。 惡意偵錯工具可能會在被偵錯的電腦上散佈更廣泛的損害。  
@@ -81,7 +78,7 @@ ms.lasthandoff: 12/22/2017
   
  請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   

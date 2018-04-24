@@ -1,23 +1,20 @@
 ---
-title: "BeginCapture |Microsoft 文件"
-ms.custom: 
+title: BeginCapture |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e1c7c0f57b919271c4880c9c1f2fbd8ca1dc964f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c0c04f199472afc516304f7a8f4f135174593b60
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="begincapture"></a>BeginCapture
 開始將結尾擷取間隔`EndCapture`。  
@@ -33,6 +30,6 @@ void BeginCapture();
   
  若要擷取的間隔，您必須準備您的應用程式來擷取和記錄的圖形資訊 — 也就是您必須先呼叫[Init](init.md)的執行個體透過`VsgDbg`類別才能呼叫`BeginCapture`或`EndCapture`。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [EndCapture](endcapture.md)   
  [CaptureCurrentFrame](capturecurrentframe.md)

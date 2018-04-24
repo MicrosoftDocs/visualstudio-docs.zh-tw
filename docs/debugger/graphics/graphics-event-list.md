@@ -2,26 +2,21 @@
 title: 圖形事件清單 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。  
@@ -75,8 +70,8 @@ ms.lasthandoff: 12/22/2017
 |----------|-----------------------|  
 |(無圖示)|一般事件<br /> 使用者定義事件、使用者定義事件群組或繪製事件以外的事件。|  
 |![繪製事件圖示](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|繪製事件<br /> 標記在所擷取之畫面格期間發生的繪製事件。|  
-|![使用者 &#45; 定義的事件標記圖示](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|使用者定義事件群組<br /> 群組應用程式所定義的相關事件。|  
-|![使用者 &#45; 定義的事件標記圖示](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|使用者定義事件標記<br /> 標記應用程式所定義的特定位置。|  
+|![使用者&#45;定義事件標記圖示](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|使用者定義事件群組<br /> 群組應用程式所定義的相關事件。|  
+|![使用者&#45;定義事件標記圖示](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|使用者定義事件標記<br /> 標記應用程式所定義的特定位置。|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>標記應用程式中的使用者定義事件  
  使用者定義事件是您應用程式特有的。 您可以使用它們，將應用程式中發生的重大事件與 [圖形事件清單] 中的事件相互關聯。 例如，您可以建立使用者定義事件群組，以將相關事件 (如呈現使用者介面的事件) 組織成群組或階層，讓您可以更輕鬆地瀏覽事件清單，也可以在繪製特定類型的物件時建立標記，讓您可以更輕鬆地在事件清單中找到其圖形事件。  
@@ -106,7 +101,7 @@ ms.lasthandoff: 12/22/2017
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##資源記錄 Visual Studio 2017 和更新版本包含**資源記錄**視窗。  選取 [監看式] 圖示![監看式 圖示](media/gfx_watch.png)中的項目旁邊**事件清單**視窗將會出現**資源記錄**視窗如下所示：
+## 資源記錄 Visual Studio 2017 和更新版本包含**資源記錄**視窗。  選取 [監看式] 圖示![監看式 圖示](media/gfx_watch.png)中的項目旁邊**事件清單**視窗將會出現**資源記錄**視窗如下所示：
 
 ![資源記錄](media/gfx_diag_resource_history.png)
 
@@ -119,5 +114,5 @@ ms.lasthandoff: 12/22/2017
 **Event**| 顯示發生在方法呼叫產生事件。  選取 [監看式] 圖示也可以檢視個別項目上的任何其他記錄![監看式 圖示](media/gfx_watch.png)上適當的程式行。  此外，任何項目，會繪製為藍色文字，例如`m_commandList`在上面的螢幕擷取畫面，可以選取如需詳細資訊。
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

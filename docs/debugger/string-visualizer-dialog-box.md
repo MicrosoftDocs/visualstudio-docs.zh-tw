@@ -2,11 +2,7 @@
 title: 字串視覺化檢視 中檢視字串 |Microsoft 文件
 ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - string visualizer
 - visualizers, string
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 801618c900f11a562b42e610c56dfa7855dfaf39
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: a3a0575b02422bf83dd560d3eae5724b0a50d3f3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字串視覺化檢視中檢視字串
 您所偵錯時，您可以開啟檢視字串太長，無法在資料提示或偵錯工具視窗中檢視之字串視覺化檢視。 在許多案例中，視覺化檢視可以協助您識別格式不正確的字串。
@@ -70,5 +65,5 @@ ms.lasthandoff: 01/04/2018
 
 ![HTML 字串視覺化檢視](../debugger/media/dbg-string-visualizers-html.png "HTML 字串視覺化檢視")
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立自訂視覺化檢視 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)

@@ -1,13 +1,9 @@
 ---
-title: "偵錯混合模式應用程式 |Microsoft 文件"
-ms.custom: 
+title: 偵錯混合模式應用程式 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - debugging managed code, mixed code
 - mixed-mode debugging, call stack
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c67953db7daa9575fe30108f8772de550ed5b19d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a0564a1e4a03d0b2d72298f0467e6cd1a91cdab9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 混合模式應用程式是指任何組合了機器碼 (C++) 和 Managed 程式碼 (例如在通用語言執行平台執行的 Visual Basic、Visual C# 或 C++) 的應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，偵錯混合模式應用程式是個極為平常的動作；這和偵錯單一模式應用程式大致上相同。 但是仍然要考慮一些特殊情況。  
@@ -60,5 +55,5 @@ ms.lasthandoff: 03/15/2018
   
  因為原生呼叫堆疊和 Managed 呼叫堆疊有所不同，偵錯工具無法一直為混合模式提供完整呼叫堆疊。 當機器碼呼叫 Managed 程式碼時，您可能會發現某些不一樣的地方。 如需詳細資訊，請參閱[混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

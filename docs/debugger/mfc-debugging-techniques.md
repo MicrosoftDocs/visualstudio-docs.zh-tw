@@ -1,13 +1,9 @@
 ---
-title: "MFC 偵錯技術 |Microsoft 文件"
-ms.custom: 
+title: MFC 偵錯技術 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -26,17 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
@@ -193,7 +188,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     請注意，記憶體檢查陳述式前後會以包圍**#ifdef _DEBUG / #endif**區塊，使得它們只能在程式的偵錯版本編譯。  
+     請注意，記憶體檢查陳述式前後會以包圍 **#ifdef _DEBUG / #endif**區塊，使得它們只能在程式的偵錯版本編譯。  
   
      您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 幫助您尋找流失的記憶體。  
   
@@ -421,7 +416,7 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小  
  大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：  
   
-1.  重建 MFC 程式庫使用[/Z7、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項，而不是**/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。  
+1.  重建 MFC 程式庫使用[/Z7、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項，而不是 **/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。  
   
 2.  重建 MFC 程式庫沒有偵錯資訊 (沒有[/Z7、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項)。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。  
   
@@ -480,7 +475,7 @@ pMyPerson->Dump( afxDump );
   
     6.  按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
   
-    7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊 (**組態屬性**資料夾， **C/c + +**子資料夾，**先行編譯標頭**類別)。  
+    7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊 (**組態屬性**資料夾， **C/c + +** 子資料夾，**先行編譯標頭**類別)。  
   
 7.  從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   
@@ -488,5 +483,5 @@ pMyPerson->Dump( afxDump );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Visual C++](../debugger/debugging-native-code.md)

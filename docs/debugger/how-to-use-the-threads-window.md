@@ -1,13 +1,9 @@
 ---
-title: "使用 [執行緒] 視窗的多執行緒應用程式進行偵錯 |Microsoft 文件"
+title: 使用 [執行緒] 視窗的多執行緒應用程式進行偵錯 |Microsoft 文件
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 367bade1041012670ae47937c21be42e38157dca
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>逐步解說： 偵錯 Visual Studio 中使用 [執行緒] 視窗中的多執行緒應用程式
 Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您偵錯多執行緒應用程式的項目。 本教學課程示範如何使用**執行緒**視窗和**偵錯位置**工具列。 如需其他工具的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。   
@@ -215,7 +210,7 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
   
      內容**呼叫堆疊**視窗已變更。 
 
-## <a name="bkmk_freeze"></a>凍結和解除凍結執行緒的執行 
+## <a name="bkmk_freeze"></a> 凍結和解除凍結執行緒的執行 
 
 您可以凍結和解除凍結 （暫止和繼續） 控制執行緒執行工作順序的執行緒。 這可協助您解決並行存取問題，像是死結和競爭情形。
 
@@ -262,6 +257,6 @@ Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您�
   
      與執行緒標記，您只能切換到停止在該特定位置的執行緒。 使用**執行緒**視窗和**偵錯位置**工具列上，您可以切換至任何執行緒。   
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)

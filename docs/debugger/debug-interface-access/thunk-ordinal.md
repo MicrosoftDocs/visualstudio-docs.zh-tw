@@ -1,29 +1,24 @@
 ---
-title: "THUNK_ORDINAL |Microsoft 文件"
-ms.custom: 
+title: THUNK_ORDINAL |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911b01bf52bd73cd438be024dab2580c5a94d1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 將指定的 thunk 型別。  
@@ -72,6 +67,6 @@ typedef enum THUNK_ORDINAL {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

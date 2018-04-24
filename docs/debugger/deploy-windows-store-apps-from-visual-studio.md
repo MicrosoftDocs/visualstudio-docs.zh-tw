@@ -1,27 +1,24 @@
 ---
-title: "從 Visual Studio 的 UWP 應用程式部署 |Microsoft 文件"
-ms.custom: 
+title: 從 Visual Studio 的 UWP 應用程式部署 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>部署 Visual Studio 從 UWP 應用程式
   
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/19/2018
   
 -   部署應用程式，以另一個應用程式或另一種方法啟動該應用程式時，對其進行偵錯。
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>如何部署 UWP 應用程式  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 UWP 應用程式  
  手動部署應用程式是一個簡單的流程：  
   
 1.  如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。  
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/19/2018
   
  **在 JavaScript 或 Visual C++ 專案頁面中指定遠端裝置**  
   
- ![C# 43; &#43;專案進行遠端偵錯屬性](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43;專案進行遠端偵錯屬性](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  從 [ **要啟動的偵錯工具** ] 清單選擇 [ **遠端偵錯工具** ]。  
   
@@ -114,7 +111,7 @@ ms.lasthandoff: 01/19/2018
   
 -   在 [JavaScript 偵錯] 屬性頁上，將 [啟動應用程式]  值設定為 [是] 。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [偵錯已安裝的應用程式套件](../debugger/debug-installed-app-package.md)   
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)

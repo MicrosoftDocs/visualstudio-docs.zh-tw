@@ -1,27 +1,24 @@
 ---
-title: "如何： 建立當地語系化啟動載入器套件 |Microsoft 文件"
-ms.custom: 
+title: 如何： 建立當地語系化啟動載入器套件 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
 - prerequisites, creating localized bootstrapper packages
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
-caps.latest.revision: "15"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9a3339b4bd6724fec782857a74a6b51463fe8028
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權合約檔案 (例如 eula.rtf) 和套件資訊清單 (package.xml)。  
@@ -94,7 +91,7 @@ ms.lasthandoff: 12/22/2017
   
 6.  儲存 package.xml 檔。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)

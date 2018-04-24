@@ -1,12 +1,9 @@
 ---
-title: "逐步解說： 建立自訂啟動載入器以顯示隱私權提示 |Microsoft 文件"
-ms.custom: 
+title: 逐步解說： 建立自訂啟動載入器以顯示隱私權提示 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - Windows Installer deployment, prerequisites
 - prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
 您可以設定 ClickOnce 應用程式與較新的檔案版本和組件版本的組件變成可用時自動更新。 若要確定您的客戶同意此行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，並不會安裝。  
@@ -302,7 +299,7 @@ ms.lasthandoff: 12/22/2017
   
 8.  如果出現 [安裝應用程式] 對話方塊中，按一下**安裝**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   

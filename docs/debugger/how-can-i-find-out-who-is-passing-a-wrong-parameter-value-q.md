@@ -1,13 +1,9 @@
 ---
-title: "如何發現誰傳錯參數值？ | Microsoft Docs"
-ms.custom: 
+title: 如何發現誰傳錯參數值？ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parameters
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - functions [debugger], detecting wrong parameter values
 - parameter values, troubleshooting
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c4953840c879a14406003f0bafffe98908cd95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a46497e45acb4663822b1a7bc6e4ad5a4f09af11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 ## <a name="problem-description"></a>問題說明  
@@ -56,7 +51,7 @@ ms.lasthandoff: 12/22/2017
   
 7.  然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱[How to： 使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [機器碼偵錯 Faq](../debugger/debugging-native-code-faqs.md)   
  [中斷點](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

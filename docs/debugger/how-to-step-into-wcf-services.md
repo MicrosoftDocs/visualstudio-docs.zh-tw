@@ -1,12 +1,9 @@
 ---
-title: "如何： 逐步執行 WCF 服務 |Microsoft 文件"
-ms.custom: 
+title: 如何： 逐步執行 WCF 服務 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - debugging, WCF
 - WCF, debugging
 ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a67432767aaab23a96fbd4a9ca88e9735064c1df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c526490ec9a4b6fa76d485aa86e53b78efcead1e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：逐步執行 WCF 服務
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，您可以逐步執行 WCF 服務。 如果 WCF 服務與用戶端都位於相同的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案，您就可以執行到達 WCF 服務內部的中斷點。  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  執行至中斷點，然後開始逐步執行。 偵錯工具將自動逐步執行服務。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   
  [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：偵錯自我裝載的 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

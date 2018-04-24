@@ -1,13 +1,9 @@
 ---
-title: "遠端偵錯 Visual c + + 專案 |Microsoft 文件"
+title: 遠端偵錯 Visual c + + 專案 |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式，請安裝，您將在其中部署應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行應用程式。
@@ -50,14 +45,14 @@ ms.lasthandoff: 01/10/2018
 > [!TIP]
 > 在某些情況下，它可以是最有效率的檔案共用從執行遠端偵錯工具。 如需詳細資訊，請參閱[從檔案共用執行遠端偵錯工具](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
-## <a name="BKMK_setup"></a>設定遠端偵錯工具
+## <a name="BKMK_setup"></a> 設定遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > 如果您需要新增其他的使用者權限變更驗證模式或遠端偵錯工具連接埠號碼，請參閱[設定遠端偵錯工具](../debugger/remote-debugging.md#configure_msvsmon)。
 
-## <a name="remote_cplusplus"></a>遠端偵錯 Visual c + + 專案  
+## <a name="remote_cplusplus"></a> 遠端偵錯 Visual c + + 專案  
  在下列程序中，名稱和專案路徑是 C:\remotetemp\MyMfc，而遠端電腦的名稱是**MJO DL**。  
   
 1.  建立 MFC 應用程式名為**mymfc。**  
@@ -96,7 +91,7 @@ ms.lasthandoff: 01/10/2018
   
 10. 如果出現提示，請輸入連接到遠端電腦的網路認證。  
   
-     所需的認證專屬於您的網路安全性設定。 比方說，網域的電腦上，您可能會選擇安全性憑證，或輸入您的網域名稱和密碼。 在非網域的電腦，您可以輸入電腦名稱，有效的使用者帳戶名稱，例如 **MJO-DL\name@something.com** ，以及正確的密碼。  
+     所需的認證專屬於您的網路安全性設定。 比方說，網域的電腦上，您可能會選擇安全性憑證，或輸入您的網域名稱和密碼。 在非網域的電腦，您可以輸入電腦名稱，有效的使用者帳戶名稱，例如**MJO-DL\name@something.com**，以及正確的密碼。  
   
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。  
   
@@ -109,7 +104,7 @@ ms.lasthandoff: 01/10/2018
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)] 
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   

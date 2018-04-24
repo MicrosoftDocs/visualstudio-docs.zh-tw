@@ -1,28 +1,25 @@
 ---
-title: "更多偵錯功能 |Microsoft 文件"
-ms.custom: 
+title: 更多偵錯功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b9e249ed95e0860c0dc781c4c0a0c9e7e86acc95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a46c62c05b762bee3233062a5b84e3ffca20e15a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="more-debugging-features"></a>更多偵錯功能
 本節包含您可與 Visual Studio 偵錯工具並用的其他功能。  

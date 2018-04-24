@@ -1,13 +1,9 @@
 ---
-title: "IntelliTrace 功能 |Microsoft 文件"
-ms.custom: 
+title: IntelliTrace 功能 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
 - IntelliTrace, recording execution history
@@ -23,14 +19,14 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 18e3058416e6ce14dd8a481eb5dd8f8200217895
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 

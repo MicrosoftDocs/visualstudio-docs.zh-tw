@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_targetoffset |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_targetoffset |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetOffset method
 ms.assetid: 7d141223-132a-409c-a5a4-94f97340313c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863631365f715e26ee0d9e88b9ecc0e4a1ec507
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2bafe81a58d1c80581dd4e2e6130bc36cd1988a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
 擷取的 thunk 目標位移的區段。  
@@ -46,5 +41,5 @@ HRESULT get_targetOffset (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

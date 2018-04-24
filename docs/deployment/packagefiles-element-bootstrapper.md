@@ -2,12 +2,8 @@
 title: '&lt;請為 PackageFiles&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f900e1e86c20e4ce59984f2a7a6ff91e9014129d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;元素 （啟動載入器）
 `PackageFiles`元素包含`PackageFile`項目，可定義執行的安裝封裝`Command`項目。  
@@ -57,7 +52,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile`元素是子系`PackageFiles`項目。 A`PackageFiles`元素必須至少一個`PackageFile`項目。  
   
- `PackageFile`具有下列屬性。  
+ `PackageFile` 具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -79,7 +74,7 @@ ms.lasthandoff: 12/22/2017
 </PackageFiles>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

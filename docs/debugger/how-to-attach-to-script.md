@@ -1,12 +1,9 @@
 ---
-title: "如何： 附加至指令碼 |Microsoft 文件"
-ms.custom: 
+title: 如何： 附加至指令碼 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - processes, attaching to script
 - remote debugging, attaching to script
 ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 15143ad050997cd92b21bd342f5d821c9514271a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6769c4061487dc4b9279ff6ef9dffd36c2614775
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加至指令碼
 這個主題說明如何以手動方式將 Visual Studio 偵錯工具附加至指令碼檔以便進行偵錯。  
@@ -69,7 +66,7 @@ ms.lasthandoff: 12/22/2017
   
  在某些情況下，在終端機服務 (遠端桌面) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 在 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] (含) 以後版本中，如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 可藉由使用系統管理員帳戶來執行 Visual Studio，或是從伺服器主控台 (而非終端機服務工作階段) 執行 Visual Studio，來解決這個問題。 如果這些解決方法都不是可行的第三個選項是附加至處理序中，輸入 vsjitdebugger.exe-p ProcessId 在 Windows 命令列。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，下載並安裝 Debugging Tools for Windows，可在[Windows 硬體開發人員中心](http://go.microsoft.com/fwlink/?linkid=1651)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [用戶端指令碼偵錯](../debugger/client-side-script-debugging.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
