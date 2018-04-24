@@ -1,29 +1,24 @@
 ---
-title: "Idiaframedata:: Execute |Microsoft 文件"
-ms.custom: 
+title: 'Idiaframedata:: Execute |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::execute method
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad08fd9800fdc197d4218fa55c83487e132f25d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0645d2364712769a6b4f18ef14fbbcb503a51888
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 執行堆疊回溯，並傳回結果的堆疊查核行程框架介面中。  
@@ -53,6 +48,6 @@ HRESULT execute (
 ## <a name="remarks"></a>備註  
  若要回溯堆疊偵錯期間呼叫這個方法。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)物件由用戶端應用程式接收到暫存器的更新，並提供所使用的方法實作`execute`方法。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

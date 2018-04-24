@@ -2,8 +2,7 @@
 title: 'Idiaframedata:: Get_lengthblock |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc4d1bea8a1e7829deb6ea1500137fd136f0a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 63e5645aa92c7078ce93b8158375e9ab4c2a87d0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 擷取的長度，以位元組為單位的框架所描述的程式碼區塊。  

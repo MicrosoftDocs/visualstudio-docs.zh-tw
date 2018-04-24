@@ -1,8 +1,7 @@
 ---
 title: Azure 服務進行偵錯 |Microsoft 文件
 ms.date: 09/14/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -12,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 466028337b35085da0dc541e1892d251d59f17cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 1d22a8a34a5e49e6e7cde01d048f261956bd9c3b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
 

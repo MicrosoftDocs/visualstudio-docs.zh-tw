@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_volatiletype |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_volatiletype |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_volatileType method
 ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fbcdd8e78867eec2184f0df72e7a90f033e6f30
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a71f65988a140b4fe67ceb6244b5221767bf28b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  
@@ -49,5 +44,5 @@ HRESULT get_volatileType (
 ## <a name="remarks"></a>備註  
  在 c + +，UDT 可以標示`volatile`關鍵字，表示其內容不會假設存在一個存取從到下一步。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
