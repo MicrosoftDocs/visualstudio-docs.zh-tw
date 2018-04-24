@@ -1,12 +1,9 @@
 ---
-title: "偵錯 Web 應用程式： 疑難排解 |Microsoft 文件"
-ms.custom: 
+title: 偵錯 Web 應用程式： 疑難排解 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - Web applications, debugging
 - troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e68040d1cdfbac6c1127a280c3d1e1773c2794ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 本節包含可以用來解決錯誤的通用程序。  

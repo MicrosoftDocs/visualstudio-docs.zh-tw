@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_typeids |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_typeids |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_typeIds method
 ms.assetid: 5166e647-fde5-4efe-92bf-77f8ae3fbc9b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b186c9f2f8b3ad49808669c1fd04b1fdefe3b82d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f1ad4aae54096ea2fdcbcac1a68d32fc3b386ad
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 擷取這個符號的編譯器專用的類型識別碼值的陣列。  
@@ -54,5 +49,5 @@ HRESULT get_typeIds (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

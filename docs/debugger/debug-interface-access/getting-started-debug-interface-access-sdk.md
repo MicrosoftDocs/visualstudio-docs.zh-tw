@@ -2,8 +2,7 @@
 title: 使用者入門 （偵錯介面存取 SDK） |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 偵錯介面存取 (DIA) SDK 會提供您與指示文件說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 來開發自訂應用程式開啟的.pdb 和.dbg 檔案，搜尋其內容中的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供 c + + 應用程式中找到的符號相關聯的屬性參考資料表。  
@@ -33,7 +32,7 @@ ms.lasthandoff: 04/16/2018
   
 -   編譯範例的 visual Studio 整合式的開發環境 (IDE)  
   
- DIA SDK 通常會隨 Visual Studio 和其預設位置是*[磁碟機]*\Program Files\Microsoft Visual Studio 9.0\DIA SDK。 安裝的一部分，msdia90.dll，會實作 DIA SDK，會自動註冊，所有您要使用它做為包含`dia2.h`在您的程式和連結`diaguids.lib`。  
+ DIA SDK 通常會隨 Visual Studio 和其預設位置是 *[磁碟機]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 安裝的一部分，msdia90.dll，會實作 DIA SDK，會自動註冊，所有您要使用它做為包含`dia2.h`在您的程式和連結`diaguids.lib`。  
   
  標頭： include\dia2.h  
   
