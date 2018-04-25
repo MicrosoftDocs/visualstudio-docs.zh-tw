@@ -1,30 +1,26 @@
 ---
-title: "移至指定行 | Microsoft Docs"
-ms.custom: 
+title: 移至指定行 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.gotoline
 helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99197e9aa5937273b8ea21847cb6aad797464a04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 79b88ae959ef2fb4e63b30ced7c28d5c7c4a13ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="go-to-line"></a>移至行
 此對話方塊可讓您移至使用中文件內的特定行。 若要存取此對話方塊，請開啟文件以進行編輯，然後選取 [編輯] 功能表中的 [移至]。  

@@ -1,29 +1,24 @@
 ---
-title: "marker_series::write_flag 方法 | Microsoft Docs"
-ms.custom: 
+title: marker_series::write_flag 方法 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beb882a336b5eeb95a9da554cc1377addf7e5772
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6469e6f1b2e32993dbca196b0d4b86999569d71d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
 將旗標寫入並行視覺化檢視追蹤檔。  

@@ -1,26 +1,23 @@
 ---
-title: "如何：設定 IDE 協助工具選項 | Microsoft Docs"
-ms.custom: 
+title: 如何：設定 IDE 協助工具選項 | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: b44f31b03dae1c553008685553548d886a8943a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 > [!TIP]
@@ -76,7 +73,7 @@ ms.lasthandoff: 01/29/2018
  您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。  
 
 > [!NOTE]
->  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 **ALT+**左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，完整實作高對比色彩。  
+>  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 **ALT+** 左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，完整實作高對比色彩。  
 
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩  
 

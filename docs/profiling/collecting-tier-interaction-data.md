@@ -1,13 +1,9 @@
 ---
-title: "收集階層互動資料 | Microsoft Docs"
-ms.custom: 
+title: 收集階層互動資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -17,14 +13,14 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c586b027bec7e480b3dc3b2b378b0ce9600a7d4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 251dac9f457e1103173de01f0a9522c8199a9571
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-tier-interaction-data"></a>收集階層互動資料
 

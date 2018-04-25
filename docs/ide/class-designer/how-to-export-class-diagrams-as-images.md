@@ -1,29 +1,25 @@
 ---
-title: "如何：將類別圖表匯出為影像 (類別設計工具) | Microsoft Docs"
-ms.custom: 
+title: 如何：將類別圖表匯出為影像 (類別設計工具) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e91b350cf410bf0dcd0c124aad678292f059dbae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c69a03c141779eefda805e39cdda6403a502a22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>如何：將類別圖表匯出為影像 (類別設計工具)
 若要匯出從專案程式碼所建立的類別圖，請將該圖儲存為影像。 若要改為匯出 UML 類別圖表，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。  

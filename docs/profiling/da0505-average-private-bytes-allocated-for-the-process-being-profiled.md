@@ -1,27 +1,24 @@
 ---
-title: "DA0505：為所分析的處理序配置的平均私用位元組 | Microsoft Docs"
-ms.custom: 
+title: DA0505：為所分析的處理序配置的平均私用位元組 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
 - vs.performance.505
 ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5d37ebd2ec296153eefdb08d52930cfc08614e96
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b078a920f84037ec9a90e4e050a070bf73b0f47
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：為進行程式碼剖析的處理序所配置的平均私用位元組
 |||  

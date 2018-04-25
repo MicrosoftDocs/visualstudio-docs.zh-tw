@@ -1,16 +1,13 @@
 ---
-title: "Android 偵錯工具屬性 (C++) | Microsoft Docs"
-ms.custom: 
+title: Android 偵錯工具屬性 (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116
 author: corob
 ms.author: mblome
-manager: ghogen
+manager: douge
 f1_keywords:
 - VC.Project.AndroidDebugger.DebuggerType
 - VC.Project.AndroidDebugger.AndroidDeviceID
@@ -18,11 +15,11 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3ca25e560a4bc3060d86972b4000b3d9ad59ba1f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d18125c6666a8eb68becd828da36ecdab077507
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="android-debugger-properties"></a>Android 偵錯工具屬性
 

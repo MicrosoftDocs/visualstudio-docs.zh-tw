@@ -1,26 +1,24 @@
 ---
-title: "如何：列印類別圖表 (類別設計工具) | Microsoft Docs"
-ms.custom: 
+title: 如何：列印類別圖表 (類別設計工具) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a2561789ded435582a064f791edeca08fcbb4cba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f6a5c1c388a82b6091f922d15211e4dfb119b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>如何：列印類別圖表 (類別設計工具)
 您可以使用 Visual Studio 的列印功能來列印類別圖表。  

@@ -1,34 +1,29 @@
 ---
-title: "模組檢視 - .NET 記憶體取樣資料 | Microsoft Docs"
-ms.custom: 
+title: 模組檢視 - .NET 記憶體取樣資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 32eb0b4e34edde03cd455384d7b1c6d36e0365c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
 使用取樣方法收集的 .NET 記憶體檢測資料模組檢視，會將記憶體資料依據分析執行中所執行的模組來分類。 每個模組都是階層式樹狀結構的根。 模組的函式列在模組節點之下。  
   
  配置記憶體之陳述式的原始程式檔行號會列在函式節點下，且執行配置之指示的位址會列在行節點下。 程式行資料和指令資料的內含與專屬值一律相同。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  

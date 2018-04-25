@@ -1,27 +1,25 @@
 ---
-title: "逐步解說：以使用時產生功能進行測試優先開發 | Microsoft Docs"
-ms.custom: 
+title: 逐步解說：以使用時產生功能進行測試優先開發 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 dev_langs:
 - VB
 - CSharp
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bf7a4a4f78ca0de8594a95681c6a5118f1083cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 

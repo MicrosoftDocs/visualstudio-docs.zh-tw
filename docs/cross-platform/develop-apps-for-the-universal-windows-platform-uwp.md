@@ -1,23 +1,21 @@
 ---
-title: "開發適用於通用 Windows 平台 (UWP) 的應用程式 | Microsoft Docs"
-ms.custom: 
+title: 開發適用於通用 Windows 平台 (UWP) 的應用程式 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eb180dfa5550cf6237697c4e214a3742b195b065
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 通用 Windows 平台和單一 Windows 核心可讓您在任何 Windows 10 裝置上執行相同的應用程式 (包括手機和桌上型電腦)。 您可以使用 Visual Studio 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。  

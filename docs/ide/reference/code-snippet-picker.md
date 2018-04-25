@@ -1,12 +1,9 @@
 ---
-title: "程式碼片段選擇器 | Microsoft Docs"
-ms.custom: 
+title: 程式碼片段選擇器 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - code snippets, Code Snippet Picker
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eb9c801f638f108a8096b456784278e019f56d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 

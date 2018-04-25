@@ -1,30 +1,26 @@
 ---
-title: "記錄命令視窗輸出命令 | Microsoft Docs"
-ms.custom: 
+title: 記錄命令視窗輸出命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - tools.logcommandwindowoutput
 helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5dffcd68447cac398c980f0b6c0ac2319c9060
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 57a1393c6db4da7b652490cbf9d352ad7b4455cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。  
@@ -50,7 +46,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  選擇性。 停止 [命令] 視窗的記錄。  
   
  /overwrite  
- 選擇項。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。  
+ 選擇性。 如果在 `filename` 引數指定的檔案符合現有檔案，即會覆寫該檔案。  
   
 ## <a name="remarks"></a>備註  
  如果未指定任何檔案，預設會建立檔案 cmdline.log。 此命令的別名預設為 Log。  

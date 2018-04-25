@@ -1,13 +1,10 @@
 ---
-title: "專案設計工具、編譯頁面 (Visual Basic) | Microsoft Docs"
-ms.custom: 
+title: 專案設計工具、編譯頁面 (Visual Basic) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a883c1a04dc6ab5189cd5b2e5173406c098f6d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 56efec5b538e2e84862549f6b5c7b7f30d9de75d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 請使用 [專案設計工具] 的 [編譯] 頁面來指定編譯指令。 您也可以在此頁面上指定進階編譯器選項及建置前或建置後事件。  

@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 9bc6041adf0fdfb35e13fd8c3c989f149d69950a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 

@@ -1,34 +1,29 @@
 ---
-title: "函式檢視 - 爭用資料 | Microsoft Docs"
-ms.custom: 
+title: 函式檢視 - 爭用資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dcf9ab34e5d0441f3c1ce3a47d5e148c9394d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 68561b5a814ba27f241cee3118ef1bae938adb20
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  
   
  下表說明分析資料檔 [函式] 檢視顯示的值，此檔案是使用並行方法收集。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|此函式遭封鎖而無法執行函式主體程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。|  
 |**專有封鎖時間 %**|在分析執行的所有封鎖時間中，屬於此函式的專屬封鎖時間百分比。|  

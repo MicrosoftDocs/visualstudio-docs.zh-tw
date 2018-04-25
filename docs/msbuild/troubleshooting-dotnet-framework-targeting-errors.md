@@ -1,12 +1,9 @@
 ---
-title: "針對 .NET Framework 目標錯誤進行疑難排解 | Microsoft Docs"
-ms.custom: 
+title: 針對 .NET Framework 目標錯誤進行疑難排解 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - multitargeting
 - .NET Framework Client Profile
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e22020797d14c74c744276df3fafef6a9d799f2f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。  

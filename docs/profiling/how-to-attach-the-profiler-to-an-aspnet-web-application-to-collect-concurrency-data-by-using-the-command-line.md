@@ -1,23 +1,20 @@
 ---
-title: "如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 6242b23bc74589069dd29c37bebf36d045a97bc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 56a3daa0f20a62c8b7410ba5b339179fbf9c5521
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具將程式碼剖析工具附加至 ASP.NET 應用程式，並收集處理序和執行緒並行資料。  

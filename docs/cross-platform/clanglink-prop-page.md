@@ -1,16 +1,13 @@
 ---
-title: "Clang 連結器屬性 (Android C++) | Microsoft Docs"
-ms.custom: 
+title: Clang 連結器屬性 (Android C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
 author: corob
 ms.author: mblome
-manager: ghogen
+manager: douge
 f1_keywords:
 - VC.Project.VCLinkerTool.OutputFile
 - VC.Project.VCLinkerTool.ShowProgress
@@ -35,11 +32,11 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2b4ca3f4c67315357343d1803bda12f11d8cbc6d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 連結器屬性 (Android C++)
 

@@ -1,29 +1,24 @@
 ---
-title: "marker_series::marker_series 建構函式 | Microsoft Docs"
-ms.custom: 
+title: marker_series::marker_series 建構函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::marker_series
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series constructor
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a9e6029ed579a6e7464eae8a198948c49fed58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9b1e33d845dd07306d9a6b59bfb57fd9cc2acc3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 初始化 `marker_series` 類別的新執行個體。  

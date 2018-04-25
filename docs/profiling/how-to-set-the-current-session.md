@@ -1,13 +1,9 @@
 ---
-title: "如何：設定目前的工作階段 | Microsoft Docs"
-ms.custom: 
+title: 如何：設定目前的工作階段 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -18,14 +14,14 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05872e929f6fac17efd4e9d0d0fa02a79e6d0665
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 394c3c7e964b6c9862f75d69a6744d21ad1b8109
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段
 

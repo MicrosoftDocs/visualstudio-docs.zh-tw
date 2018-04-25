@@ -1,12 +1,9 @@
 ---
-title: "如何：手動建立效能工作階段 | Microsoft Docs"
-ms.custom: 
+title: 如何：手動建立效能工作階段 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
 - vs.performance.wizard.exepage
@@ -14,16 +11,16 @@ helpviewer_keywords:
 - performance sessions, creating
 - performance tools, creating performance sessions
 ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fbcd319ac2a2a4a1a327388c22a57d28515a2247
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手動建立效能工作階段
 您可以手動建立效能工作階段， 而且不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟專案便可以完成。 如需詳細資訊，請參閱[設定效能工作階段](../profiling/configuring-performance-sessions.md)。  

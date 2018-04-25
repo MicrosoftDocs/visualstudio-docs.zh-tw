@@ -1,12 +1,10 @@
 ---
-title: "JavaScript、檔案屬性 | Microsoft Docs"
-ms.custom: 
+title: JavaScript、檔案屬性 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -25,16 +23,16 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bd95d18cfbf1ce04c1178a0befbc8cbf7613862e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 06fd31fc8d87dc40df023cbf494fde16c944ae03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="file-version"></a>檔案版本  
  顯示參考的檔案版本。  
 
-### <a name="identity"></a>識別  
+### <a name="identity"></a>身分識別  
  顯示專案中所使用參考的身分識別，這儲存在專案檔中。  
 
 ### <a name="package"></a>Package  

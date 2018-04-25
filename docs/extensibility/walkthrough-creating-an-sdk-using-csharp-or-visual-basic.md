@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
-2.  在範本清單中，展開  **Visual C#**或**Visual Basic**，選擇**Windows 市集** 節點，然後選擇  **的Windows執行階段元件**範本。  
+2.  在範本清單中，展開  **Visual C#** 或**Visual Basic**，選擇**Windows 市集** 節點，然後選擇  **的Windows執行階段元件**範本。  
   
 3.  在**名稱**方塊中，指定**SimpleMath**，然後選擇 [**確定**] 按鈕。  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在捷徑功能表上**方案 'SimpleMath'**  節點，選擇**新增**，**新專案**。  
   
-2.  在範本清單中，展開  **Visual C#**或**Visual Basic**，選擇**擴充性** 節點，然後選擇  **VSIX 專案**範本。  
+2.  在範本清單中，展開  **Visual C#** 或**Visual Basic**，選擇**擴充性** 節點，然後選擇  **VSIX 專案**範本。  
   
 3.  在**名稱**方塊中，指定**SimpleMathVSIX**，然後選擇 [**確定**] 按鈕。  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
-2.  在範本清單中，展開  **Visual C#**或**Visual Basic**，然後選擇  **Windows 市集**節點。  
+2.  在範本清單中，展開  **Visual C#** 或**Visual Basic**，然後選擇  **Windows 市集**節點。  
   
 3.  選擇**空白應用程式**範本，將專案**ArithmeticUI**，然後選擇 [**確定**] 按鈕。  
   

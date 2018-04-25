@@ -1,20 +1,20 @@
 ---
-title: "在 Visual Studio 中使用實驗室環境進行開發 | Microsoft Docs"
+title: 在 Visual Studio 中使用實驗室環境進行開發 | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d42c1d97f1d1d84e55a5ca91a9bd104a4bc6004
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 63fb02f0133055611ef18bbf9d5fe7888df7473f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 

@@ -1,16 +1,15 @@
 ---
-title: "編輯器的行為 | Microsoft Docs"
-description: 
+title: 編輯器的行為
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 3515dfbf3a7cf8c23178aa9df243638f955593e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5de50299ec1d79f28687e5f49d8169ecd3413279
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="editor-behavior"></a>編輯器的行為
 

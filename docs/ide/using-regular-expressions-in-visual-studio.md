@@ -14,14 +14,14 @@ helpviewer_keywords:
 - regular expressions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d8dca622fd5af546971b1c8d3451b27c183584
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: b2cd32695eb07217205048040cc888e097b4fe5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 

@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中指定負載測試情節中的虛擬網路類型 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c301a8d72228ed450479fd39b010db5682ae6adc
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f40c1d26d1b8f28fd72bbcc5eb4842724e2d1e89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 03/19/2018
 > [!WARNING]
 > [均分] 按鈕會覆寫所有已鎖定的項目。
 
- 您也可以不使用滑桿，直接將百分比值輸入 **%** 資料行。 如果您直接輸入百分比值，其他項目就不會自動調整。
+ 您也可以不使用滑桿，直接將百分比值鍵入 **%** 資料行。 如果您直接輸入百分比值，其他項目就不會自動調整。
 
 > [!NOTE]
 > 當總數相加沒有達到 100%，或輸入 **%** 資料行的百分比值有小數點時，滑桿便會停用。

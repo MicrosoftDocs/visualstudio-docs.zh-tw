@@ -27,7 +27,7 @@ ms.lasthandoff: 04/16/2018
 
 * Visual Studio 2015 (非 Express Edition) 或更新版本。  您可以使用免費[Visual Studio Community 版本](https://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  您也可以當您安裝 Visual Studio，檢查 常見工具同時安裝 SDK 的 Visual Studio 擴充性工具。  如果您已安裝 Visual Studio，您也可以安裝此 SDK 移至主功能表**檔案&#124;新增&#124;專案...**，在左側瀏覽窗格中，選擇 C#，然後選擇 擴充性。  當您選擇 「**安裝 Visual Studio 擴充性工具**"階層連結專案範本，它會提示您下載並安裝 SDK。
-* [.NET 編譯器平台 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  您也可以安裝此 SDK，移至主功能表**檔案&#124;新增&#124;專案...**、 選擇**C#**左瀏覽窗格中，然後選擇**擴充性**。  當您選擇 「**下載.NET 編譯器平台 SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。  此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  這非常有用的工具可協助您找出哪些程式碼模型類型您應該尋找在您的分析器。  分析器基礎結構會呼叫您的程式碼的特定程式碼模型類型，因此您的程式碼只執行必要時可以只著重於分析相關的程式碼。
+* [.NET 編譯器平台 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  您也可以安裝此 SDK，移至主功能表**檔案&#124;新增&#124;專案...**、 選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。  當您選擇 「**下載.NET 編譯器平台 SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。  此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  這非常有用的工具可協助您找出哪些程式碼模型類型您應該尋找在您的分析器。  分析器基礎結構會呼叫您的程式碼的特定程式碼模型類型，因此您的程式碼只執行必要時可以只著重於分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>是什麼問題？
 
@@ -63,7 +63,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ## <a name="creating-the-analyzer-project"></a>建立分析器專案
 
-從主要功能表選擇 **檔案&#124;新增&#124;專案...**.在**新專案**對話方塊下方**C#**專案如果您在左側的導覽列中，選擇 擴充性，並在右窗格中選擇**與修正程式碼分析器**專案範本。  輸入名稱，並確認對話方塊。
+從主要功能表選擇 **檔案&#124;新增&#124;專案...**.在**新專案**對話方塊下方**C#** 專案如果您在左側的導覽列中，選擇 擴充性，並在右窗格中選擇**與修正程式碼分析器**專案範本。  輸入名稱，並確認對話方塊。
 
 範本開啟 DiagnosticAnalyzer.cs 檔案。  選擇該編輯器緩衝區 索引標籤。此檔案具有分析器類別 (形成您為資料庫專案的名稱)，衍生自`DiagnosticAnalyzer`（Roslyn 應用程式開發介面型別）。  您新的類別必須`DiagnosticAnalyzerAttribute`宣告您分析器是適用於 C# 語言，如此，編譯器會探索並載入您的分析師。
 

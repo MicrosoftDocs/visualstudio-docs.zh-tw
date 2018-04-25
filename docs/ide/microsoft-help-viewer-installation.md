@@ -1,25 +1,22 @@
 ---
-title: "安裝 Visual Studio 離線說明 | Microsoft Docs"
-ms.custom: 
+title: 安裝 Visual Studio 離線說明 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf5b2645a3d37c7c8f146f154503944dd8e3d50
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 

@@ -13,10 +13,10 @@ manager: wpickett
 ms.workload:
 - dotnet
 ms.openlocfilehash: c2d5d7f7a9a306deb64ac0ecdf9f385fe569efff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="visual-basic-60-offers-from-partners"></a>來自合作夥伴的 Visual Basic 6.0 優惠
 

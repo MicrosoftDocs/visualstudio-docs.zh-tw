@@ -3,28 +3,24 @@ title: 建立 Node.js 和 React 應用程式 - Visual Studio | Microsoft Docs
 description: 在本教學課程中，您會在 Visual Studio 中建立 Node.js 和 React 應用程式
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
-Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense 和其他支援 Node.js 的內建功能。 在適用於 Visual Studio 的本教學課程中，請從 Visual Studio 範本建立 Node.js Web 應用程式專案。 然後，請使用 React 建立簡單的應用程式。 
+Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense 和其他支援 Node.js 的內建功能。 在適用於 Visual Studio 的本教學課程中，請從 Visual Studio 範本建立 Node.js Web 應用程式專案。 然後，請使用 React 建立簡單的應用程式。
 
 在本教學課程中，您將了解如何：
 > [!div class="checklist"]
@@ -51,17 +47,17 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 ## <a name="create-a-project"></a>建立專案
 首先，請建立 Node.js Web 應用程式專案。
 
-1. 開啟 Visual Studio 2017。  
+1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]，鍵入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。   
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]，鍵入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
 
-     如果沒有看到 [空白的 Node.js Web 應用程式] 專案範本，您必須先安裝 Node.js 開發工作負載。 
+     如果沒有看到 [空白的 Node.js Web 應用程式] 專案範本，您必須先安裝 Node.js 開發工作負載。
 
     Visual Studio 會建立新的方案，並開啟專案。
 
-    ![[方案總管] 中的 Node.js 專案](../nodejs/media/tutorial-nodejs-react-project-structure.png)  
+    ![[方案總管] 中的 Node.js 專案](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
     - 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在檔案系統中，此專案是由專案資料夾中的 *.njsproj* 檔案所呈現。 您可以設定與專案建立關聯的屬性和環境變數，方法是以滑鼠右鍵按一下專案，然後選擇 [屬性]。 因為專案檔不會對 Node.js 專案來源進行自訂變更，所以您可以使用其他開發工具執行來回行程。
 
@@ -117,7 +113,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     以下是安裝後顯示在 [方案總管] 中的 npm 模組。
 
-    ![npm 套件](../nodejs/media/tutorial-nodejs-react-npm-modules.png) 
+    ![npm 套件](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
     > 如果您想要使用命令列來安裝 npm 套件，請以滑鼠右鍵按一下專案節點，然後選擇 [在這裡開啟命令提示字元]。 使用標準的 Node.js 命令來安裝套件。
@@ -171,7 +167,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     ```javascript
     declare var require: any
-    
+
     var React = require('react');
     var ReactDOM = require('react-dom');
 
@@ -267,7 +263,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     [命令提示字元] 視窗會顯示結果。
 
-    ![執行 webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png) 
+    ![執行 webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
     如果看到任何錯誤，而不是上述的輸出，您必須在應用程式運作之前解決這些錯誤。 如果您的 npm 套件版本與本教學課程中顯示的版本不同，這可能是錯誤的來源。 修正錯誤的其中一種方法是使用先前步驟中所顯示的確切版本。 此外，如果這些套件版本的其中一或多個版本已遭取代而導致錯誤，您可能需要安裝較新的版本來修正錯誤。
 
@@ -279,7 +275,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 如果系統提示您重新載入外部修改的檔案，請按一下 [全部皆是]。
 
-    ![載入已修改的檔案](../nodejs/media/tutorial-nodejs-react-reload-files.png) 
+    ![載入已修改的檔案](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
 每次變更 *app.tsx* 時，您必須重新執行 webpack 命令。
 
@@ -287,7 +283,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 請確定已選取 Chrome 作為目前的偵錯目標。
 
-    ![選取 Chrome 作為偵錯目標](../nodejs/media/tutorial-nodejs-react-debug-target.png)  
+    ![選取 Chrome 作為偵錯目標](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
 1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯]) 或綠色箭號按鈕。
 
@@ -295,7 +291,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
     Visual Studio 會啟動 *server.js* 這個啟動檔案，藉以啟動應用程式。
 
-    ![在瀏覽器中執行 React](../nodejs/media/tutorial-nodejs-react-running-react.png) 
+    ![在瀏覽器中執行 React](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. 關閉瀏覽器視窗。
 
@@ -305,9 +301,9 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 在 *server.js* 中，按一下 `staticPath` 宣告左側的裝訂邊，以設定中斷點：
 
-    ![設定中斷點](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png) 
+    ![設定中斷點](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 
+    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
 1. 若要執行應用程式，請按 **F5** ([偵錯] > [開始偵錯])。
 
@@ -333,7 +329,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 切換至 Visual Studio，然後在 *app-bundle.js* 程式碼的 `render()` 函式中設定中斷點，如下圖所示：
 
-    ![設定中斷點](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png) 
+    ![設定中斷點](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
 1. 將 Chrome 選取為 Visual Studio 的偵錯目標後，請按 **Ctrl + F5** ([偵錯] > [啟動但不偵錯]) 以在瀏覽器中執行應用程式。
 
@@ -345,7 +341,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
 
 1. 選取具有正確主機通訊埠 (在此範例中為 1337) 的 Chrome 處理序，然後按一下 [附加]。
 
-    ![附加至處理序](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
+    ![附加至處理序](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
     當 [DOM 總管] 和 JavaScript 主控台在 Visual Studio 中開啟時，您就知道偵錯工具已正確附加。 這些偵錯工具類似於 Chrome Developer Tools 和 Edge 的 F12 工具。
 
@@ -367,7 +363,7 @@ Visual Studio 可讓您輕鬆地建立 Node.js 專案，並運用 IntelliSense �
     > [!TIP]
     > 依照下列步驟第一次附加至處理序之後，在 Visual Studio 2017 中選擇 [偵錯] > [重新附加至處理序]，即可快速地重新附加至相同的處理序。
 
-## <a name="next-steps"></a>後續步驟 
+## <a name="next-steps"></a>後續步驟
 
 在本教學課程中，您已了解如何建立 Node.js 和 React 應用程式、轉換 JSX，以及偵錯。 若要深入了解適用於 Visual Studio 的 Node.js 工具，請參閱 Wiki 頁面。
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 藉由搜尋它，在 Windows 搜尋中，開啟安裝的 「 開發人員命令提示字元，然後執行`devenv /updateConfiguration`。
 
-1. 啟動 Visual Studio，然後啟動新的專案和新的項目對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在**%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （執行個體識別碼對應至您的 Visual Studio 執行個體的安裝識別碼）。 每個範本樹狀目錄中初始化會將項目附加至這個記錄檔。
+1. 啟動 Visual Studio，然後啟動新的專案和新的項目對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （執行個體識別碼對應至您的 Visual Studio 執行個體的安裝識別碼）。 每個範本樹狀目錄中初始化會將項目附加至這個記錄檔。
 
 記錄檔包含下列資料行：
 

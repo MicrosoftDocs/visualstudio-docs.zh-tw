@@ -62,7 +62,7 @@ devenv /installvstemplates
 ```  
   
 ### <a name="project-types"></a>專案類型  
- 位置和名稱**專案類型**根節點，例如**Visual C#**和**其他語言**，取決於系統登錄項目。 組織子節點，例如**資料庫**和**智慧型裝置**，鏡像處理包含對應的.vstemplate 檔案的資料夾階層。 讓我們先看看根節點。  
+ 位置和名稱**專案類型**根節點，例如**Visual C#** 和**其他語言**，取決於系統登錄項目。 組織子節點，例如**資料庫**和**智慧型裝置**，鏡像處理包含對應的.vstemplate 檔案的資料夾階層。 讓我們先看看根節點。  
   
 #### <a name="project-type-root-nodes"></a>專案類型的根節點  
  當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是初始化，它會周遊系統登錄機碼 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs 建置，並命名的根節點的子機碼**的型別投影**樹狀目錄中。 這項資訊會快取供稍後使用。 查看 TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 鍵。 每個項目是 VSPackage 的 GUID。 子機碼的名稱 （/ 1） 會被忽略，但其目前狀態會指出這是**專案類型**根節點。 根節點也可能有子機碼控制其外觀**專案類型**樹狀目錄中。 讓我們看看其中部分。  
@@ -131,7 +131,7 @@ devenv /installvstemplates
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- \<ProjectType > 標記和不在 ProjectTemplates 資料夾中，子資料夾可決定在應用程式的根節點**專案類型**樹狀目錄中。 在範例中，Windows CE 應用程式會出現底下**Visual C#**根節點，而且即使您是將 WindowsCE 資料夾移至 VisualBasic 資料夾，則 Windows CE 應用程式仍會出現在  **Visual C#**根節點。  
+ \<ProjectType > 標記和不在 ProjectTemplates 資料夾中，子資料夾可決定在應用程式的根節點**專案類型**樹狀目錄中。 在範例中，Windows CE 應用程式會出現底下**Visual C#** 根節點，而且即使您是將 WindowsCE 資料夾移至 VisualBasic 資料夾，則 Windows CE 應用程式仍會出現在  **Visual C#** 根節點。  
   
 ##### <a name="localizing-the-node-name"></a>當地語系化的節點名稱  
  當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會檢查它找到任何.vstdir 檔案。 .Vstdir 檔案是控制項的外觀中的專案類型的 XML 檔案**新專案** 對話方塊。 在.vstdir 檔案中，使用\<LocalizedName > 標記名稱**專案類型**節點。  
@@ -142,7 +142,7 @@ devenv /installvstemplates
 <LocalizedName Package="{462b036f-7349-4835-9e21-bec60e989b9c}" ID="4598"/>  
 ```  
   
- 這會決定名稱的根節點，在此案例中的當地語系化字串的附屬 DLL 和資源識別碼**資料庫**。 當地語系化的名稱可以包含特殊字元，並不適用於資料夾名稱，例如**.NET**。  
+ 這會決定名稱的根節點，在此案例中的當地語系化字串的附屬 DLL 和資源識別碼**資料庫**。 當地語系化的名稱可以包含特殊字元，並不適用於資料夾名稱，例如 **.NET**。  
   
  如果沒有\<LocalizedName > 標記存在，則該專案類型的命名方式是資料夾本身， **SmartPhone2003**。  
   
@@ -208,7 +208,7 @@ devenv /installvstemplates
   
  開啟 Visual Studio。  
   
-1.  開啟**新專案**對話方塊方塊中，展開  **Visual C#**專案節點。  
+1.  開啟**新專案**對話方塊方塊中，展開  **Visual C#** 專案節點。  
   
  ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   

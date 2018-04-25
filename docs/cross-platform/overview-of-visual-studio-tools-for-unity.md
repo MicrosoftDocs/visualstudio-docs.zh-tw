@@ -1,23 +1,20 @@
 ---
-title: "Visual Studio Tools for Unity 概觀 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Tools for Unity 概觀 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 06aae5b9e925b602b9113fa973af048da775f4c2
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: db0c84f96799a77d49b254e0a6df1837683e80f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 概觀
 在本節中，您將進一步了解 Visual Studio Tools for Unity 所提供的功能，及如何使用這些功能更有效率地使用 Unity。

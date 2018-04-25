@@ -1,13 +1,10 @@
 ---
-title: "用於針對整合式開發環境錯誤進行疑難排解的資源 | Microsoft Docs"
-ms.custom: 
+title: 用於針對整合式開發環境錯誤進行疑難排解的資源 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -96,14 +93,14 @@ f1_keywords:
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6821edc51dced92b40386eb270546456654fbba3
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 48516bd598719112a3a94216b3510b628579f032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 

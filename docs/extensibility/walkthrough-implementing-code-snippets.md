@@ -46,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
      **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     其中*%installdir%*是 Visual Studio 安裝資料夾。 （雖然此路徑通常用來安裝程式碼片段，您可以指定任何路徑）。  
+     其中 *%installdir%* 是 Visual Studio 安裝資料夾。 （雖然此路徑通常用來安裝程式碼片段，您可以指定任何路徑）。  
   
 2.  \1033\ 資料夾中建立的.xml 檔並將其命名**TestSnippets.xml**。 （雖然程式碼片段的索引檔案通常使用這個名稱，您可以指定任何名稱，只要它具有.xml 副檔名。）加入下列文字，然後刪除預留位置 GUID，並加入您自己。  
   

@@ -47,9 +47,9 @@ VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[
 
 ## <a name="to-create-or-identify-categories"></a>若要建立或識別類別目錄
 
--   建構一種特殊類型的類別下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\`<Category>`]
+-   建構一種特殊類型的類別下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\`<Category>`]
 
-     *\<類別目錄 >*為非當地語系化的類別目錄名稱。
+     *\<類別目錄 >* 為非當地語系化的類別目錄名稱。
 
 -   填入具有兩個值的登錄：
 
@@ -62,9 +62,9 @@ VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[
 
 ## <a name="to-create-or-identify-groups"></a>若要建立或識別群組
 
--   建構一種特殊類型的類別下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\  *\<群組 >*]
+-   建構一種特殊類型的類別下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\  *\<群組 >*]
 
-     *\<群組 >*為非當地語系化的群組名稱。
+     *\<群組 >* 為非當地語系化的群組名稱。
 
 -   填入具有兩個值的登錄：
 

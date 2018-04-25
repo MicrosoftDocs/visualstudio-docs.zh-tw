@@ -1,12 +1,9 @@
 ---
-title: "Copy 工作 | Microsoft Docs"
-ms.custom: 
+title: Copy 工作 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
 - MSBuild.Copy.SourceFileNotFound
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - MSBuild, Copy task
 - Copy task [MSBuild]
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d00fa44fc6356cb8893cd3bdf20365330732810
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1cd3f7e6c5075ad024e227c847ff05f186f7b016
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="copy-task"></a>Copy 工作
 將檔案複製到檔案系統上的新位置。  

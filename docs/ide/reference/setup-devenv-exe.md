@@ -1,24 +1,21 @@
 ---
-title: "devenv.exe 安裝參數 | Microsoft Docs"
+title: devenv.exe 安裝參數 | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - setup Devenv switch
 - /setup Devenv switch
 - Devenv, /setup switch
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e37fe50eefc36e7b5396f396d2b614851a0bd9cb
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+manager: douge
+ms.openlocfilehash: eee6e30a7489f5097cb17a19513c2a423187c827
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 

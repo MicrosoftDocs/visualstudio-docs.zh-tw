@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
   
 1.  建立登錄項目，如下所示：  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >*\Text Editor\External 標記\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*是`GUID`用來識別要加入標記  
+     *\<MarkerGUID >* 是`GUID`用來識別要加入標記  
   
-     *\<版本 >*版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，例如 8.0  
+     *\<版本 >* 版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，例如 8.0  
   
      *\<PackageGUID >* VSPackage 實作自動化物件的 guid。  
   
     > [!NOTE]
-    >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路徑\\*\<版本 >*會覆寫替代的根 Visual Studio shell 初始化後，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+    >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路徑\\*\<版本 >* 會覆寫替代的根 Visual Studio shell 初始化後，如需詳細資訊，請參閱[命令列參數](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2.  建立四個值在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >*\Text Editor\External 標記\\*\<MarkerGUID>*  
+2.  建立四個值在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 標記\\*\<MarkerGUID>*  
   
     -   (預設值)  
   

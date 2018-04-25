@@ -1,12 +1,9 @@
 ---
-title: "CvWriteAlert 函式 | Microsoft Docs"
-ms.custom: 
+title: CvWriteAlert 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
 - cvmarkers/CvWriteAlertVW
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - CvWriteAlertVA method
 - CvWriteAlertW method
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2acfd3572d7586d2194e3979954049aede14a965
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7931ae34838ac7c995cbea0543f921fedd20e2ed
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。  

@@ -1,29 +1,24 @@
 ---
-title: "不使用 VS 偵錯工具分析記憶體使用量 | Microsoft Docs"
+title: 不使用 VS 偵錯工具分析記憶體使用量 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2f023900735b2e8f3f2235850ab55ec6237efc
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  

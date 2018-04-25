@@ -1,12 +1,9 @@
 ---
-title: "選擇工具箱項目、WPF 元件 | Microsoft Docs"
-ms.custom: 
+title: 選擇工具箱項目、WPF 元件 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,14 +11,14 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6953cefdaab594825843ac168bebe82bd9ef9144
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 

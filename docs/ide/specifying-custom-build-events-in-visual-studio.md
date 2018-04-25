@@ -1,27 +1,23 @@
 ---
-title: "在 Visual Studio 中指定自訂建置事件 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中指定自訂建置事件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede663f1053f6a3261de542b31b73fc9c8a10bb8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 68068a88744484e0f9d1849a430a32fd3f4c1899
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 您可以指定自訂建置事件，在建置開始之前或完成之後自動執行命令。 例如，您可以在建置開始之前執行 .bat 檔案，或在建置完成之後將新檔案複製到資料夾。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。  

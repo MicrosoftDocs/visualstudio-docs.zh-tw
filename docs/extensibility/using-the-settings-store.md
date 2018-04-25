@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在實驗執行個體，在**工具**功能表上，按一下 **叫用 SettingsStoreCommand**。  
   
-     您應該會看到訊息指出**Microsoft Windows Phone Developer Tools:**後面**True**或**False**。  
+     您應該會看到訊息指出**Microsoft Windows Phone Developer Tools:** 後面**True**或**False**。  
   
  Visual Studio 就會在系統登錄中設定存放區。  
   

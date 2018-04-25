@@ -1,16 +1,15 @@
 ---
-title: "建立和編輯組建組態"
-description: 
+title: 建立和編輯組建組態
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 0cce820d76660124838307cc231b379c449b58a7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3cd55998d3738b5377fe9859b7e212cb7e8aa8d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
 

@@ -2,7 +2,7 @@
 title: Visual Studio 測試總管常見問題集 | Microsoft Docs
 ms.date: 1/15/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
 - Test window
@@ -14,12 +14,12 @@ ms.author: kehavens
 ms.workload:
 - multiple
 author: kendrahavens
-manager: ghogen
-ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+manager: douge
+ms.openlocfilehash: 7612f13f71bed42b5ea416a74c50674ac028f42f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 

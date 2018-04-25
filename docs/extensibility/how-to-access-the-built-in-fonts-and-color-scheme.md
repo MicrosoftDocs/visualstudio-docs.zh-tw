@@ -51,9 +51,9 @@ Visual Studio 整合式的開發環境 (IDE) 將其 [編輯器] 視窗相關聯�
 
 1.  建構一種特殊類型的類別目錄中的下列位置的登錄項目：
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]
 
-     *\<類別目錄 >*為非當地語系化的類別目錄名稱。
+     *\<類別目錄 >* 為非當地語系化的類別目錄名稱。
 
 2.  填入登錄以便使用內建字型和色彩配置具有四個值：
 

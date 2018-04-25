@@ -2,22 +2,19 @@
 title: 了解 Xamarin 的行動裝置開發 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
-manager: ghogen
+manager: douge
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30d2bf7dbcacec6490bf36584b62c200bfab0da8
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 9a174c8712f4ca9151fc30ddd357f53cec2891cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 
@@ -115,7 +112,7 @@ Xamarin.Forms 提供一組通用的 API，可讓您在 .NET Standard 程式庫�
   
 <a name="components" /> 
 
-## <a name="deeper-dive-xamarin-components"></a>深入探討：Xamarin 元件  
+## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components  
 
 *10 分鐘*  
   

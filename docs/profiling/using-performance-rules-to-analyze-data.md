@@ -1,23 +1,20 @@
 ---
-title: "使用效能規則分析資料 | Microsoft Docs"
-ms.custom: 
+title: 使用效能規則分析資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 09b7ca87e18a3c12a47c95ff8a0f4f5867b641e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5ce42343167173647d39dcc6f7db06bedcbc0236
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>使用效能規則分析資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能警告指出，正在進行程式碼剖析的應用程式中發生問題，可能會降低程式執行速度。 警告也可能表示您可能需要變更收集方法，以收集更有用的資料。 效能警告會在程式碼剖析工作階段中自動產生。 在 Visual Studio 中開啟程式碼剖析資料檔案時，警告會出現在 [錯誤清單] 視窗中。 您可以在 [錯誤清單] 視窗中找到問題的原始程式碼，並可以顯示有關錯誤的詳細資訊，例如有關如何解決問題的資訊。 您也可以將您不想要的警告停用。  

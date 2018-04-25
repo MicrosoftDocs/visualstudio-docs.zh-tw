@@ -2,17 +2,17 @@
 title: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員 | Microsoft Docs
 ms.date: 03/02/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1ae1f1bd4deb81b92ffc7a38c82164e5824b4d76
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 593a07af6ef25389a541f66383077b8a373d86eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構
 

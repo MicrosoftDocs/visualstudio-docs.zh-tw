@@ -1,23 +1,20 @@
 ---
-title: "GlobalOn 和 GlobalOff | Microsoft Docs"
-ms.custom: 
+title: GlobalOn 和 GlobalOff | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9998f0f4d46a37b1eccd3cdf5dc48dd994f651a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3009130acbbde431c9751df848eaef252c0bdd04
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 VSPerfCmd.exe **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列程式碼剖析工作階段中的所有處理序和執行緒進行程式碼剖析。  

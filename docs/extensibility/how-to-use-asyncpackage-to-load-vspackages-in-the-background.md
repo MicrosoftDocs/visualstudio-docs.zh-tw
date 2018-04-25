@@ -46,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
     ```  
   
-4.  如果您有要執行的非同步初始化工作，您應該覆寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 移除**initialize （)** VSIX 範本所提供的方法。 ( **Initialize （)**方法中的**AsyncPackage**已密封)。 您可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法，以非同步的服務加入您的封裝。  
+4.  如果您有要執行的非同步初始化工作，您應該覆寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 移除**initialize （)** VSIX 範本所提供的方法。 ( **Initialize （)** 方法中的**AsyncPackage**已密封)。 您可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法，以非同步的服務加入您的封裝。  
   
      注意： 若要呼叫**基底。InitializeAsync()**，您可以變更至您的原始程式碼：  
   

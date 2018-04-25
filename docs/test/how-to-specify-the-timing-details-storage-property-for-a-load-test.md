@@ -1,20 +1,20 @@
 ---
 title: Visual Studio 中負載測試回合設定的計時詳細資料儲存區屬性 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7921f2b3438885f78588f23694537a95cc7841e3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 73e800893fe9d923ff3f119f6741b496feac4fb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/19/2018
     > [!NOTE]
     > 必須選取 [所有個別細節] 選項，才能在負載測試結果中啟用虛擬使用者資料資訊。 如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
--   **無：**不收集任何個別計時詳細資料， 但仍會收集平均值。
+-   **無：**不收集任何個別計時詳細資料。 但仍會收集平均值。
 
 -   **僅限統計資料：**儲存個別計時資料，但只以百分位數資料形式儲存。 這樣可以節省空間資源。
 

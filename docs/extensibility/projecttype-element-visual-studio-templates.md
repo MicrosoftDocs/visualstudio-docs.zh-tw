@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="remarks"></a>備註  
  `ProjectType` 是 `TemplateData` 的必要子項目。  
   
- 值`ProjectType`項目會指定範本所在**新專案**或**加入新項目** 對話方塊。 比方說，與範本`ProjectType`值`CSharp`之下**Visual C#**中的節點**新專案**對話方塊。  
+ 值`ProjectType`項目會指定範本所在**新專案**或**加入新項目** 對話方塊。 比方說，與範本`ProjectType`值`CSharp`之下**Visual C#** 中的節點**新專案**對話方塊。  
   
  範本子類型可以指定使用[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)項目。  
   

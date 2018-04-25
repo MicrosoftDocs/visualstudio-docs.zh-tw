@@ -1,23 +1,20 @@
 ---
-title: "從命令列建立基本的分析報告 | Microsoft Docs"
-ms.custom: 
+title: 從命令列建立基本的分析報告 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報告
 本主題描述基本的 VSPerfReport 命令，它們會從 .vsp、.vsps 分析資料檔案產生逗號分隔值 (.csv) 的報告。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  

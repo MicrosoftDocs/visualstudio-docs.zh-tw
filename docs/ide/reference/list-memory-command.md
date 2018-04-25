@@ -1,13 +1,10 @@
 ---
-title: "列出記憶體命令 | Microsoft Docs"
-ms.custom: 
+title: 列出記憶體命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6780ffc846d3710b78bbfa994ca3e73d14209e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 141754e9b298885266aee6d90850b4f0a5c159aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。  
@@ -46,7 +42,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  選擇性。 顯示對應到記憶體位元組的記憶體字元，ANSI 或 Unicode。  
   
  /Count:`number`  
- 選擇項。 決定要顯示多少個位元組的記憶體，從 `expression` 開始。  
+ 選擇性。 決定要顯示多少個位元組的記憶體，從 `expression` 開始。  
   
  /Format:`formattype`  
  選擇性。 在 [記憶體] 視窗中檢視記憶體資訊用的格式類型，可能是 OneByte、TwoBytes、FourBytes、EightBytes、Float (32 位元) 或 Double (64 位元)。 如果使用 OneByte，則無法使用 `/Unicode`。  

@@ -1,29 +1,24 @@
 ---
-title: "span 類別 | Microsoft Docs"
-ms.custom: 
+title: span 類別 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
 helpviewer_keywords:
 - Concurrency::diagnostic::span class
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6971000da2b17b96d3371d7d75edc242e87cd94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e0246f448ba51ab63cd10d2026d0aa2e2cdbb7bb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。  

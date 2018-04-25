@@ -1,26 +1,23 @@
 ---
-title: "效能報告檢視篩選條件 | Microsoft Docs"
-ms.custom: 
+title: 效能報告檢視篩選條件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [程式碼剖析工具報告檢視篩選條件] 視窗位於 [效能報告] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  

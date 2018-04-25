@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中分析負載測試虛擬使用者活動 | Microsoft Docs
 ms.date: 10/03/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.activitychart
 helpviewer_keywords:
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 149c56f5100c8a9e92108970d29d502a359181b0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5f874b070e726374a20e821508115b5798f40b80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/19/2018
 
  篩選結果面板會顯示在「虛擬使用者活動圖」中。 篩選結果面板可篩選下列項目：
 
--   **僅顯示具有記錄的結果** 僅顯示具有關聯測試記錄的測試結果。
+-   **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
 
 -   **顯示順利完成的結果** 顯示順利完成的結果。
 

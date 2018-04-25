@@ -2,11 +2,8 @@
 title: 快速入門：在 Visual Studio 中使用 XAML 和 C# 來建立您的第一個通用 Windows 平台應用程式 | Microsoft Docs
 ms.custom: ''
 ms.date: 04/04/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7caba5278ec415aec036c501d4911bcd5c7f3c77
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>快速入門：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 
@@ -95,7 +92,7 @@ ms.lasthandoff: 04/06/2018
 
 ### <a name="add-an-event-handler"></a>新增事件處理常式
 
-「事件處理常式」聽起來很複雜，但它其實只是事件發生時所呼叫程式碼的另一個名稱。 在此案例中，它會為 "Hello World!" 按鈕新增動作。
+「事件處理常式」聽起來很複雜，但它其實只是事件發生時所呼叫程式碼的另一個名稱。 在此案例中，它會為 "Hello World!" 按鈕。
 
 1. 按兩下設計畫布上的按鈕控制項。
 

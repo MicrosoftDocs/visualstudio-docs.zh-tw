@@ -1,30 +1,26 @@
 ---
-title: "新增項目命令 | Microsoft Docs"
-ms.custom: 
+title: 新增項目命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70290f588fe3fac83a5cf0b0ab0339d5e0741186
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c0a989ae54dbeaa7fd63348de64d412be25fd3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-new-item-command"></a>加入新項目命令
 將新的方案項目，例如 .htm、.css、.txt 或框架組新增至目前的方案，並開啟它。  
@@ -41,7 +37,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
   
 ## <a name="switches"></a>參數  
  /t: `templatename`  
- 選擇項。 指定要建立之檔案的類型。 如果未指定任何範本名稱，則預設會建立文字檔。  
+ 選擇性。 指定要建立之檔案的類型。 如果未指定任何範本名稱，則預設會建立文字檔。  
   
  /t:`templatename` 引數語法會鏡像 [Add New Solution Item] (新增方案項目) 對話方塊中所找到的資訊。 您必須輸入後接檔案類型的完整分類，且使用反斜線 (`\`) 隔開分類名稱與檔案類型，並使用引號括住整個字串。  
   
@@ -52,7 +48,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```  
   
  /e: `editorname`  
- 選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。  
+ 選擇性。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。  
   
  /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。  
   

@@ -1,12 +1,9 @@
 ---
-title: "DA0013：String.Split 或 String.Substring 的用量高 | Microsoft Docs"
-ms.custom: 
+title: DA0013：String.Split 或 String.Substring 的用量高 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.13
 - vs.performance.rules.DAAvoidStringSubstr
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - vs.performance.13
 - vs.performance.rules.DA0013
 ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de4419e5d83630a09aa3caa2afcd2318266520bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7788328a5c113602ab8404e6682fd08fae7ba772
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的用量高
 |||  

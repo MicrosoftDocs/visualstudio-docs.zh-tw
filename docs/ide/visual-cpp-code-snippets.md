@@ -1,24 +1,21 @@
 ---
-title: "Visual C++ 程式碼片段 | Microsoft Docs"
-ms.custom: 
+title: Visual C++ 程式碼片段 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fa6057f45c3c9030264f6a795caece6ed8a3b28e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 

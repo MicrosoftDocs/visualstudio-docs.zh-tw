@@ -2,21 +2,18 @@
 title: 在 VisualStudio 中使用 EditorConfig 設定 | Microsoft Docs
 ms.custom: ''
 ms.date: 12/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
-ms.openlocfilehash: e9ea6cde08724c00c4595774decea35b2bce44f4
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: fe1653df6fc1d71dc4497c6e7e0a9adae9fa0b44
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -60,7 +57,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.or
 
 1. 在 Visual Studio 中開啟專案或解決方案。 選取專案或解決方案節點，視您的 *.editorconfig* 設定應套用至解決方案中的所有專案或僅只一個專案而定。 您也可以選取專案或解決方案中的資料夾，將 *.editorconfig* 檔案新增到此資料夾。
 
-1. 從功能表列選擇 [專案] > [新增項目]，或按 **Ctrl**+**Shift**+**A**。
+1. 從功能表列選擇 [專案] > [新增項目...]，或按 **Ctrl**+**Shift**+**A**。
 
    [新增項目] 對話方塊隨即開啟。
 
@@ -112,7 +109,7 @@ Visual Studio 可透過提供 IntelliSense 完成清單協助您編輯 *.editorc
 
 在編輯您的 EditorConfig 檔案後，您必須重新載入程式碼檔，新的設定才會生效。
 
-如果您編輯許多 *.editorconfig* 檔案，可能會發現 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)很有幫助。 這個延伸模組有部分功能包括語法反白顯示、 改善的 IntelliSense、驗證和程式碼格式化。
+如果您編輯許多 *.editorconfig* 檔案，可能會發現 [EditorConfig 語言服務延伸模組](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)很有幫助。 這項延伸模組有部分功能包括語法反白顯示、 改善的 IntelliSense、驗證和程式碼格式化。
 
 ![具有 EditorConfig 語言服務延伸模組的 IntelliSense](media/editorconfig-intellisense.png)
 
@@ -149,7 +146,7 @@ indent_style = tab
 
 這表示，如果 [工具] > [選項] > [文字編輯器] 中的任何編輯器設定 (例如縮排大小及樣式、定位點大小或編碼慣例) 是在 EditorConfig 檔案中等於或高於目錄結構中的專案位置所指定，EditorConfig 檔案中的慣例就會覆寫 [選項] 中的設定。 您可以透過切換 [工具] > [選項] > [文字編輯器] 中的 [遵循專案編碼慣例] 選項來控制這個行為。 取消選取此選項會關閉 Visual Studio 的 EditorConfig 支援。
 
-![工具選項 - 遵循專案編碼慣例](media/coding_conventions_option.png)
+![編碼選項 - 遵循專案編碼慣例](media/coding_conventions_option.png)
 
 您可以透過開啟命令提示字元，並從包含專案的磁碟根目錄中執行下列命令，以在父目錄中尋找任何 *.editorconfig* 檔案：
 

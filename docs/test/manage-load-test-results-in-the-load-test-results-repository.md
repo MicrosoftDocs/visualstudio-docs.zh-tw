@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中管理負載測試結果 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, results repository
 - results, load test
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5b09a2350efadafaacdc5fcd530b3c3f50c7419
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f32e5b8bc7a5366f825686a17310a031d20a54bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果儲存機制中的負載測試結果
 

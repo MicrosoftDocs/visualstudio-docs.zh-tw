@@ -1,10 +1,11 @@
 ---
-title: "Dotfuscator 的功能 | Microsoft Docs"
+title: Dotfuscator 的功能 | Microsoft Docs
 ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -12,15 +13,15 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: "了解 Visual Studio 2017 中隨附之免費 Dotfuscator Community Edition 的功能。"
+description: 了解 Visual Studio 2017 中隨附之免費 Dotfuscator Community Edition 的功能。
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 2c2c7decf192f11c12b52b64374719c8ef5edece
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 91d2e379c37567a88e29eb504ad7bc09723d3fc6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
@@ -64,7 +65,7 @@ Dotfuscator CE 可將[應用程式驗證程式碼][checks]插入您的組件，�
 Dotfuscator CE 可將[例外狀況追蹤][exceptions]、[工作階段追蹤][sessions]和[功能追蹤][features]程式碼插入您的應用程式。
 此處理過的應用程式會在執行時，將分析資料傳輸至所設定的 [PreEmptive Analytics 端點][endpoints]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [完整《Dotfuscator CE User Guide》(Dotfuscator CE 使用者指南) 中的本主題][full]
 

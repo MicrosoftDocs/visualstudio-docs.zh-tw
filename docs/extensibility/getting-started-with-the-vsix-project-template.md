@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  按一下 [專案] 功能表上的 [匯出範本]。 完成精靈的步驟。  
   
-         %USERPROFILE%\My Documents\Visual Studio 中建立一個.zip 檔案*\<版本 >*\My 匯出範本\\。  
+         %USERPROFILE%\My Documents\Visual Studio 中建立一個.zip 檔案*\<版本 >* \My 匯出範本\\。  
   
 2.  建立空的 VSIX 專案。  
   

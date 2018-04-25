@@ -1,13 +1,8 @@
 ---
-title: 移植、移轉及升級 Visual Studio 專案 | Microsoft Docs
-ms.custom: ''
+title: 移植、移轉及升級 Visual Studio 專案
 ms.date: 03/14/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -20,14 +15,14 @@ helpviewer_keywords:
 - projects, conversion
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65d1a8edac3de969528b6d27ed540d791d3d08f6
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、移轉及升級 Visual Studio 專案
 

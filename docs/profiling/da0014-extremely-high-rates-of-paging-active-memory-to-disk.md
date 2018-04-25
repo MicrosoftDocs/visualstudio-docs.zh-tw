@@ -1,28 +1,25 @@
 ---
-title: "DA0014：極高比率的使用中記憶體分頁到磁碟 | Microsoft Docs"
-ms.custom: 
+title: DA0014：極高比率的使用中記憶體分頁到磁碟 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAMemoryBound
 - vs.performance.DA0014
 - vs.performance.14
 - vs.performance.rules.DA0014
 ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 039e117d9a5ce4741e637d5daa95be18091554b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a1fe54cec0e42161dceb9879264548d5926a0e7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：極高比率的使用中記憶體分頁到磁碟
 |||  

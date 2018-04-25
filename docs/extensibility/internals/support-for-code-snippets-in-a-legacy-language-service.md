@@ -52,15 +52,15 @@ ms.lasthandoff: 04/16/2018
   
  通常會有兩個程式碼片段範本檔案儲存所在的位置： 1） 將您的語言已安裝而 2） 請在使用者的資料夾。 這些位置會新增至登錄因此，在 Visual Studio**程式碼片段管理員**可以找到這些程式碼片段。 使用者的資料夾是由使用者所建立的程式碼片段儲存的位置。  
   
- 已安裝的程式碼片段範本檔案的典型資料夾配置看起來像這樣： *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets。  
+ 已安裝的程式碼片段範本檔案的典型資料夾配置看起來像這樣： *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets。  
   
- *[InstallRoot]*是安裝在您的語言的資料夾。  
+ *[InstallRoot]* 是安裝在您的語言的資料夾。  
   
- *[TestLanguage]*是您的語言，做為資料夾名稱的名稱。  
+ *[TestLanguage]* 是您的語言，做為資料夾名稱的名稱。  
   
- *[LCID]*是地區設定識別碼。 這是您的程式碼片段如何當地語系化的版本會儲存。 例如，英文的地區設定識別碼是 1033，因此*[LCID]*取代為 1033年。  
+ *[LCID]* 是地區設定識別碼。 這是您的程式碼片段如何當地語系化的版本會儲存。 例如，英文的地區設定識別碼是 1033，因此 *[LCID]* 取代為 1033年。  
   
- 必須提供一個額外的檔案，而這是索引的檔案，通常稱為 SnippetsIndex.xml 或 ExpansionsIndex.xml （您可以使用任何有效的檔案名稱結尾.xml）。 這個檔案通常儲存在*[InstallRoot]*\\*[TestLanguage]*資料夾，並指定的確切位置的程式碼片段資料夾，以及語言識別碼和語言的 GUID使用程式碼片段的服務。 索引檔案的確切路徑會放入登錄中，如稍後所述 」 安裝的登錄項目 」。 SnippetsIndex.xml 檔案的範例如下：  
+ 必須提供一個額外的檔案，而這是索引的檔案，通常稱為 SnippetsIndex.xml 或 ExpansionsIndex.xml （您可以使用任何有效的檔案名稱結尾.xml）。 這個檔案通常儲存在 *[InstallRoot]*\\ *[TestLanguage]* 資料夾，並指定的確切位置的程式碼片段資料夾，以及語言識別碼和語言的 GUID使用程式碼片段的服務。 索引檔案的確切路徑會放入登錄中，如稍後所述 」 安裝的登錄項目 」。 SnippetsIndex.xml 檔案的範例如下：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +81,7 @@ ms.lasthandoff: 04/16/2018
   
  這個範例假設您已安裝 Visual Studio 安裝資料夾中的語言服務。 %LCID%取代使用者的目前地區設定識別碼。 多個\<SnippetDir > 標記可增加，一個用於每個不同的目錄和地區設定。 此外，程式碼片段資料夾可以包含子資料夾，其中每個識別在索引檔案中\<SnippetSubDir > 標記內嵌於\<SnippetDir > 標記。  
   
- 使用者也可以建立自己的程式碼片段，您的語言。 這些通常儲存在使用者的 [設定] 資料夾，例如*[TestDocs]*\Code 片段\\*[TestLanguage]*\Test 程式碼片段，其中*[TestDocs]*是 Visual Studio 使用者的設定資料夾的位置。  
+ 使用者也可以建立自己的程式碼片段，您的語言。 這些通常儲存在使用者的 [設定] 資料夾，例如 *[TestDocs]* \Code 片段\\ *[TestLanguage]* \Test 程式碼片段，其中 *[TestDocs]* 是 Visual Studio 使用者的設定資料夾的位置。  
   
  下列的替代項目可以放在儲存中的路徑\<DirPath > 標記中的索引檔案。  
   
@@ -91,7 +91,7 @@ ms.lasthandoff: 04/16/2018
 |%Installroot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安裝資料夾。|  
 |%Projdir%|包含目前專案的資料夾。|  
 |%Projitem%|資料夾包含目前的專案項目。|  
-|%Testdocs%|使用者的設定 資料夾中，例如 C:\Documents and Settings 資料夾\\*[username]*documents\visual Studio\8。|  
+|%Testdocs%|使用者的設定 資料夾中，例如 C:\Documents and Settings 資料夾\\ *[username]* documents\visual Studio\8。|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>啟用程式碼片段語言服務  
  您也可以新增語言服務啟用程式碼片段<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>VSPackage 屬性 (請參閱[註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)如需詳細資訊)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>和<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>參數是選擇性的但您應包含`SearchPaths`具名參數，以便通知**程式碼片段管理員**您程式碼片段的位置。  

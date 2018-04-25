@@ -1,12 +1,9 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
 - performance tools, VSPerfReport tool
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - command line, tools
 - instrumentation, VSPerfReporttool
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
-caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 075d6549125af399382b1f0018fedadf8dad53ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c7460b287b22ead961a5701fe4f8fa8bb22fc2d2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .csv 檔案。  

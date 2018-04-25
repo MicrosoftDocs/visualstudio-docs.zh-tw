@@ -1,12 +1,9 @@
 ---
 title: -UseEnv (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.UseEnvVars.ExcludePath
 - VC.Project.UseEnvVars.LibraryPath
@@ -21,14 +18,14 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c48e9f22322cd5ebebeff0d987c32d369f98d03
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 5fd76e44b2e503bd7b444e83bb9a64abceeaa561
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 

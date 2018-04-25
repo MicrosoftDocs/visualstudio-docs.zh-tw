@@ -110,7 +110,7 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|類型|[必要]色彩的類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:*的色彩就是無效或未設定。<br /><br /> *CT_RAW:* ARGB 資料列值。<br /><br /> *CT_COLORINDEX:*請勿使用。<br /><br /> *CT_SYSCOLOR:* SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio 中的色彩。<br /><br /> *CT_AUTOMATIC:*自動色彩。<br /><br /> *CT_TRACK_FOREGROUND:*請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:*請勿使用。|  
+|類型|[必要]色彩的類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 的色彩就是無效或未設定。<br /><br /> *CT_RAW:* ARGB 資料列值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio 中的色彩。<br /><br /> *CT_AUTOMATIC:* 自動色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
 |原始程式檔|[必要]以十六進位表示色彩的值|  
   
  中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您在只有 CT_RAW 和 CT_SYSCOLOR 時使用。  

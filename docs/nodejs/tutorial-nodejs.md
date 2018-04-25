@@ -3,28 +3,24 @@ title: 建立 Node.js 和 Express 應用程式 - Visual Studio | Microsoft Docs
 description: 在本教學課程中，您會在 Visual Studio 中建立 Node.js 和 Express 應用程式
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
-在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
+在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
 
 在本教學課程中，您將了解如何：
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ ms.lasthandoff: 04/03/2018
 ## <a name="create-a-project"></a>建立專案
 首先，您將建立 Node.js Web 應用程式專案。
 
-1. 開啟 Visual Studio 2017。  
+1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。  
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選取 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。   
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選取 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
 
-     如果沒有看到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，您必須先安裝 [Node.js 開發] 工作負載。 
+     如果沒有看到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，您必須先安裝 [Node.js 開發] 工作負載。
 
     Visual Studio 會建立新的方案，並開啟專案。 *app.js* 專案檔會在編輯器 (左窗格) 中開啟。
 
@@ -130,11 +126,11 @@ ms.lasthandoff: 04/03/2018
 
 1. 在 `data` 字串後面鍵入 `: get`，而 IntelliSense 將會顯示 `getData` 函式。 選取 `getData`。
 
-    ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. 移除 `"data"` 前面的逗號 (`,`)，而且您會看到運算式上的綠色語法醒目提示。 將滑鼠停留在語法醒目提示上方。
 
-    ![檢視語法錯誤](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![檢視語法錯誤](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     此訊息的最後一行告訴您：JavaScript 解譯器必須要有逗號 (`,`)。
 
@@ -152,15 +148,15 @@ ms.lasthandoff: 04/03/2018
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 
+    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
-    ![設定中斷點](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![設定中斷點](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>執行應用程式
 
 1. 在 [偵錯] 工具列中選取偵錯目標。
 
-    ![選取偵錯目標](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![選取偵錯目標](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. 按 **F5** ([偵錯] > [開始偵錯]) 以執行應用程式。
 
@@ -178,15 +174,15 @@ ms.lasthandoff: 04/03/2018
 
 1. 按一下按鈕，以顯示不同的影像。
 
-    ![瀏覽器中執行的應用程式](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![瀏覽器中執行的應用程式](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. 關閉網頁瀏覽器。  
+1. 關閉網頁瀏覽器。
 
 ## <a name="optional-publish-to-azure-app-service"></a>(選擇性) 發行至 Azure App Service
 
 1. 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。
 
-   ![發佈至 Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![發佈至 Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. 選擇 [Microsoft Azure App Service]。
 
@@ -198,11 +194,11 @@ ms.lasthandoff: 04/03/2018
 
     部署成功時，您的應用程式會在執行 Azure App Service 的瀏覽器中開啟。 按一下按鈕以顯示影像。
 
-   ![執行 Azure App Service 的應用程式](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![執行 Azure App Service 的應用程式](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 恭喜您完成此教學課程！
 
-## <a name="next-steps"></a>後續步驟 
+## <a name="next-steps"></a>後續步驟
 
 在本教學課程中，您已了解如何使用 Express 建立和執行 Node.js 應用程式，以及使用偵錯工具叫用中斷點。
 

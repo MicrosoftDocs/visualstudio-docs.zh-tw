@@ -1,22 +1,22 @@
 ---
-title: "UWP 應用程式的應用程式屬性頁 | Microsoft Docs"
+title: UWP 應用程式的應用程式屬性頁 | Microsoft Docs
 ms.date: 01/23/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - AppPackage.Properties.Application"
 helpviewer_keywords:
 - Application page [UWP project]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 34cb125c33ab36a89601c2492d27841bb2ce49d5
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: 691a4d2c367bb8f283c4381629f33529fa743c62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 

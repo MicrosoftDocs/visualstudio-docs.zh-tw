@@ -1,10 +1,11 @@
 ---
-title: "升級 Dotfuscator Community Edition (CE) | Microsoft Docs"
+title: 升級 Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-02-08
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017, 升級, 命令列"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017, 升級, 命令列
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -19,15 +20,15 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: "了解如何升級 Visual Studio 2017 中隨附的免費 Dotfuscator Community Edition。"
+description: 了解如何升級 Visual Studio 2017 中隨附的免費 Dotfuscator Community Edition。
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 261fc98312914f5a80d2302a90e360dfde2ca17f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 03fdaae7a152db2af4ca042d14748e6508185b78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升級 Dotfuscator Community Edition (CE)
 
@@ -74,7 +75,7 @@ Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適�
 如需 Dotfuscator Professional 之進階應用程式保護功能的詳細資訊，請前往 PreEmptive Solutions 的 [Dotfuscator 概觀頁面][product-about]並[與 Community Edition 進行比較][product-compare]。
 [您可以在 preemptive.com 要求取得完整支援的試用版][eval]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [完整《Dotfuscator CE User Guide》(Dotfuscator CE 使用者指南) 中的本主題][full]
 

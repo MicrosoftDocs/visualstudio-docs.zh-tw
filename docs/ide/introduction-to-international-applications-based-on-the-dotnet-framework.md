@@ -1,13 +1,10 @@
 ---
-title: "以 .NET Framework 為基礎的國際應用程式簡介 | Microsoft Docs"
-ms.custom: 
+title: 以 .NET Framework 為基礎的國際應用程式簡介 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
 - Web applications [.NET Framework], globalization
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: f2bbf16622e0f4bf1ca1478521881c42c34af56d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，建立世界性的應用程式有兩個部分︰全球化，設計適用不同文化特性應用程式的程序；當地語系化，轉譯特定文化特性資源的程序。 如需針對國際市場使用者設計應用程式的一般資訊，請參閱[開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。  

@@ -1,13 +1,10 @@
 ---
-title: "符號路徑命令 | Microsoft Docs"
-ms.custom: 
+title: 符號路徑命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.symbolpath
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb125c691cb9e6f8642093612aca142172e76d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1b35c5d55eed31111746f2e2dbf9befb4fb7591
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
 設定目錄清單，以讓偵錯工具搜尋符號。  

@@ -1,12 +1,9 @@
 ---
-title: "Sdk 元素 (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Sdk 元素 (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -17,16 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - Sdk element [MSBuild]
 - <Sdk> element [MSBuild]
-author: jeffkl
-ms.author: jeffkl
-manager: angerlic
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82a66835ca3b104df325009f7253fafbc429eab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6e22233d58cdb02194b5d5efe21bc397e9ae3a9c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。  

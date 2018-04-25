@@ -110,7 +110,7 @@ ms.lasthandoff: 04/16/2018
   
  **\<程式碼目錄 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
- 若要安裝擴充功能，您的朋友必須關閉所有開啟的 Visual Studio 中，執行個體，然後按兩下.vsix 檔案時，這會顯示**VSIX 安裝程式**。 檔案會複製到**%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目錄。  
+ 若要安裝擴充功能，您的朋友必須關閉所有開啟的 Visual Studio 中，執行個體，然後按兩下.vsix 檔案時，這會顯示**VSIX 安裝程式**。 檔案會複製到 **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目錄。  
   
  當您的朋友一次啟動 Visual Studio 時，他會發現 FirstMenuCommand 擴充功能中的**工具 / 擴充功能和更新**。 他可以移至**擴充功能和更新**解除安裝或停用擴充功能，太。  
   

@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  從專案移除 VS SDK 的參考組件，來選取它們，以滑鼠右鍵按一下和**移除**。  
   
-3.  加入 NuGet 版本的 VS SDK 的參考組件。  在**方案總管參考**節點，開啟**管理 NuGet 封裝...**對話方塊。  如果您想要深入了解此對話方塊，請參閱[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 的參考組件上發佈[nuget.org](http://www.nuget.org)由[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
+3.  加入 NuGet 版本的 VS SDK 的參考組件。  在**方案總管參考**節點，開啟**管理 NuGet 封裝...** 對話方塊。  如果您想要深入了解此對話方塊，請參閱[封裝管理員 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 的參考組件上發佈[nuget.org](http://www.nuget.org)由[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
 4.  使用**nuget.org**做為您**套件來源**，搜尋符合所需的參考組件的 NuGet 封裝名稱 (例如： Microsoft.VisualStudio.Shell.14.0) 並將它安裝在您專案。  NuGet 可以新增多個參考組件，以滿足初始的組件相依性。  
   

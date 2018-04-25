@@ -1,28 +1,25 @@
 ---
-title: "DA0008：收集的樣本少 | Microsoft Docs"
-ms.custom: 
+title: DA0008：收集的樣本少 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
 - vs.performance.DA0008
 - vs.performance.rules.DA0008
 ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b4f472be09694e4e3bcfa0d3a60a2c1703534423
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fb8471728adda5bb141422833c96e0278fed8e5f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的樣本少
 |||  

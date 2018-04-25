@@ -1,27 +1,23 @@
 ---
-title: "如何：選擇收集方法 | Microsoft Docs"
-ms.custom: 
+title: 如何：選擇收集方法 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b63d3492f7a5af940507febfca32161c075b863
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 

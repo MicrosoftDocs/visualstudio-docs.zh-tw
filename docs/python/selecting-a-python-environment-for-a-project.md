@@ -1,26 +1,21 @@
 ---
-title: 選取專案的環境 | Microsoft Docs
+title: 選取專案的環境
 description: 在 Visual Studio 方案總管中，您可以指派特定的 Python 解譯器 (環境) 以一律用於任何指定的專案而忽略預設環境。 您也可以建立和管理虛擬環境。
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>選取要用於專案中的 Python 解譯器和環境
 
@@ -111,7 +106,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 若要安裝新的套件，在 [Python 環境] 視窗中 以滑鼠右鍵按一下環境，並選取 [安裝 Python 套件] 以切換至 [套件] 索引標籤。 輸入搜尋字詞 (通常是套件名稱)，Visual Studio 就會顯示相符的套件。
 
-在 Visual Studio 中，套件 (及相依性) 是下載自 [Python 套件索引 (PyPI)](https://pypi.python.org/pypi) \(英文\)，您也可以在該處搜尋可用的套件。 Visual Studio 的狀態列和輸出視窗會顯示與該安裝相關的資訊。 若要將套件解除安裝，請在該套件上按一下滑鼠右鍵，然後選取 [移除]。
+在 Visual Studio 中，套件 (及相依性) 是下載自 [Python 套件索引 (PyPI)](https://pypi.org) \(英文\)，您也可以在該處搜尋可用的套件。 Visual Studio 的狀態列和輸出視窗會顯示與該安裝相關的資訊。 若要將套件解除安裝，請在該套件上按一下滑鼠右鍵，然後選取 [移除]。
 
 請注意，所顯示的項目可能未必正確，而安裝和解除安裝可能不可靠或不可用。 Visual Studio 會使用 pip 套件管理員 (如果可用)，並會在必要時下載並安裝它。 Visual Studio 也可以使用 easy_install 套件管理員。 使用 `pip` 或 `easy_install` 從命令列安裝的套件也會一併顯示。
 

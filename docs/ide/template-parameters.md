@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 專案和項目範本參數 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 專案和項目範本參數 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -14,12 +11,12 @@ helpviewer_keywords:
 - item templates, parameters
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5e3ce315cd1ddff9445c72f7299a8d6aaf0a3a82
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-parameters"></a>範本參數
 

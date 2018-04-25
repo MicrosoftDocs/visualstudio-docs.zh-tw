@@ -1,16 +1,15 @@
 ---
-title: "自訂組建系統 | Microsoft Docs"
-description: 
+title: 自訂組建系統
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 649289700aa984235f432528a59b970762d26be0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 

@@ -1,26 +1,23 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2799424c82f469cbee7fcf7dea948508da47fa1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e8ddfb73e6871a30cabcece0711b0cf5b4c63175
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** 命令列工具可讓您進行 ASP.Net 網站分析，而不需要設定環境變數或重新啟動您的電腦。 當您進行 ASP.NET 網站分析且不需要 **VSPerfCmd** 提供的額外功能時，請使用 **VSPerfASPNetCmd.exe** 而非 [VSPerfCmd](../profiling/vsperfcmd.md)。 如需 **VSPerfASPNetCmd** 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。 當您使用獨立分析工具來進行 ASP.NET 網站分析時，**VSPerfASPNetCmd** 是慣用的命令列工具。  

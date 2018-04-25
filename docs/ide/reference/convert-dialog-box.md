@@ -1,13 +1,10 @@
 ---
-title: "轉換對話方塊 | Microsoft Docs"
-ms.custom: 
+title: 轉換對話方塊 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
@@ -15,17 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: febbc4e398fb2611a2968c2dbd9a922b12f45e5f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63e32c53b667667e78b38760f8d4c1ad56dc7f94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 [轉換] 對話方塊可讓您選取轉換工具，以從舊的專案建立新的專案 (例如從 Visual Basic 6 專案建立 [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] 專案)。 您也可以使用 [Visual Studio Project Converter](https://github.com/ssvaidya/VSProjectConverter)，來升級舊版 Visual Studio 所建立的專案。   

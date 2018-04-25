@@ -1,13 +1,13 @@
 ---
 layout: LandingPage
-title: "將應用程式部署在 Visual Studio 中 | Microsoft Docs"
-description: "了解如何使用 Visual Studio 2017 部署應用程式、服務與元件。"
-ms.technology: vs-ide-debug
-ms.openlocfilehash: fb23cf992a3474e9bf2d128bbfb384a283fd56df
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+title: 將應用程式部署在 Visual Studio 中 | Microsoft Docs
+description: 了解如何使用 Visual Studio 2017 部署應用程式、服務與元件。
+ms.technology: vs-ide-deployment
+ms.openlocfilehash: e711706666f3a9d3584c1adfee97f87907ecf3f3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 

@@ -1,21 +1,19 @@
 ---
-title: "在 Visual Studio 中實作抽象類別 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中實作抽象類別 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 775175f5492bb8f1dd7ee2111a35ff24b273c3af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: f91c0a056cb17d1eaf2788c3c7111e2ddbbace2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中實作抽象類別
 

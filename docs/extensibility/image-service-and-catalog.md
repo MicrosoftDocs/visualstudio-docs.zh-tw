@@ -165,7 +165,7 @@ ms.lasthandoff: 04/16/2018
 |-|-|  
 |**屬性**|**定義**|  
 |URI|[必要]定義從何處可以載入影像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑|  
-|背景|[選用]指出項目類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:*淺色背景使用的來源。<br /><br /> *深色：*深色背景使用的來源。<br /><br /> *高對比：*來源可用在任何高對比模式中的背景上。<br /><br /> *HighContrastLight:*淺色背景高對比模式中使用的來源。<br /><br /> *HighContrastDark:*深色背景高對比模式中使用的來源。<br /><br /> 如果省略背景屬性，則來源可以用於任何背景上。<br /><br /> 如果背景是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉的來源色彩。 如果省略或設為背景*高對比*，反轉的來源色彩由映像的**AllowColorInversion**屬性。|  
+|背景|[選用]指出項目類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景使用的來源。<br /><br /> *深色：*深色背景使用的來源。<br /><br /> *高對比：*來源可用在任何高對比模式中的背景上。<br /><br /> *HighContrastLight:* 淺色背景高對比模式中使用的來源。<br /><br /> *HighContrastDark:* 深色背景高對比模式中使用的來源。<br /><br /> 如果省略背景屬性，則來源可以用於任何背景上。<br /><br /> 如果背景是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉的來源色彩。 如果省略或設為背景*高對比*，反轉的來源色彩由映像的**AllowColorInversion**屬性。|  
 |||  
   
  A\<來源 > 項目可以有一個下列選擇性子項目：  
@@ -688,7 +688,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
 -   我更新 CPS 專案系統。 發生了什麼事**ImageName**和**StockIconService**？  
   
-    -   o CPS 已更新為使用 moniker 時，這些被移除。 您不需要再呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()**中的擴充方法CPS 公用程式中。 您可以找到從對應**ImageName**至**KnownMonikers**如下：  
+    -   o CPS 已更新為使用 moniker 時，這些被移除。 您不需要再呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式中。 您可以找到從對應**ImageName**至**KnownMonikers**如下：  
   
         |||  
         |-|-|  

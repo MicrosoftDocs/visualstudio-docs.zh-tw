@@ -1,13 +1,10 @@
 ---
-title: "列出原始碼命令 | Microsoft Docs"
-ms.custom: 
+title: 列出原始碼命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Debug.ListSource
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3f3e6cb441697fb8546fcec485d292e979690b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d21a18a58832918b566e925c7c3898988740a1a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。  
@@ -39,19 +35,19 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
   
 ## <a name="switches"></a>參數  
  /Count:`number`  
- 選擇項。 指定要顯示的行數。  
+ 選擇性。 指定要顯示的行數。  
   
  /Current  
- 選擇項。 顯示目前這行。  
+ 選擇性。 顯示目前這行。  
   
  /File:`filename`  
- 選擇項。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。  
+ 選擇性。 要顯示之檔案的路徑。 如果未指定檔名，則此命令會顯示目前陳述式行的原始程式碼。  
   
  /Line:`number`  
- 選擇項。 顯示特定行號。  
+ 選擇性。 顯示特定行號。  
   
  /ShowLineNumbers:`yes|no`  
- 選擇項。 指定是否顯示行號。  
+ 選擇性。 指定是否顯示行號。  
   
 ## <a name="remarks"></a>備註  
   

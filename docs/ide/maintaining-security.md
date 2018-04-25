@@ -2,7 +2,7 @@
 title: 維護 Visual Studio 中的應用程式安全性 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unauthorized access
 - Baseline Security Analyzer
@@ -13,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0594f7c9af507f2c68ac4f0cc80b1d2e38d2a51
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 6fb75bfe3c9e479e67c766137ee84e919f9a6710
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="maintaining-security"></a>維護安全性
 

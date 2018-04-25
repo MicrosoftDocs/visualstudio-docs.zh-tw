@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方案總管] 中**，以滑鼠右鍵按一下方案，按一下**新增**，然後按一下 [**新專案**。  
   
-3.  在左窗格中**新專案**對話方塊方塊中，展開  **Visual Basic**或**Visual C#**節點，然後按一下**Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
+3.  在左窗格中**新專案**對話方塊方塊中，展開  **Visual Basic**或**Visual C#** 節點，然後按一下**Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
   
 4.  將控制項`WebUserControl`，然後按一下 **確定**。  
   
@@ -174,7 +174,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁  
   
-1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
+1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製 **%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
   
 2.  如果您的起始頁參考任何控制項或在 Visual Studio 不會安裝的組件中的類型，將組件複製和貼在 * Visual Studio 安裝資料夾 ***\Common7\IDE\PrivateAssemblies\\** .  
   

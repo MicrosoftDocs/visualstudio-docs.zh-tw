@@ -1,27 +1,22 @@
 ---
-title: "如何︰暫停和繼續效能資料收集 | Microsoft Docs"
-ms.custom: 
+title: 如何︰暫停和繼續效能資料收集 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d2fa0dd28d22e04b4df5942c3a3585693ede33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ec14a6d8909276d479f1e43b1bc20acd4452ef
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  

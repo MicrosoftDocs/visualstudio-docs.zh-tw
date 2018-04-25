@@ -1,13 +1,9 @@
 ---
-title: "CPU 和 Windows 計數器 | Microsoft Docs"
-ms.custom: 
+title: CPU 和 Windows 計數器 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -15,14 +11,14 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96de12221c123049f3c5021751229e02bb938c0f
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 

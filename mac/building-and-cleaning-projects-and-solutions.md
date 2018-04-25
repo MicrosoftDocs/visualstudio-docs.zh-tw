@@ -1,16 +1,15 @@
 ---
-title: "建置和清除專案與方案"
-description: 
+title: 建置和清除專案與方案
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: e5f9a128c1d69683421eb2dbcb351d8a107adeee
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>建置和清除專案與方案
 

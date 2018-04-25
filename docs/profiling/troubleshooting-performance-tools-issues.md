@@ -1,23 +1,20 @@
 ---
-title: "效能工具問題疑難排解 | Microsoft Docs"
-ms.custom: 
+title: 效能工具問題疑難排解 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 748f642e4bd150c8ec5819057b4ee3f7768893f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 32782b5c2d303e54901462de589d076990f579d2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>效能工具問題疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：  

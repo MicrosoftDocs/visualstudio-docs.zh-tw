@@ -1,28 +1,25 @@
 ---
-title: "DA0006：覆寫實值型別的 Equals() | Microsoft Docs"
-ms.custom: 
+title: DA0006：覆寫實值型別的 Equals() | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
 - vs.performance.DA0006
 - vs.performance.rules.DA0006
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b8b821075221486dce02876a2abe8cc3aed27ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b360c97e64842d46fe2b121e8505ac0f9cafebed
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
 |||  

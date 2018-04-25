@@ -1,21 +1,19 @@
 ---
-title: "逐步解說：建置應用程式 | Microsoft Docs"
-ms.custom: 
+title: 逐步解說：建置應用程式 | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 485c8445f24dbd0aaec501649885df50d173347a
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b94f9b9ba60279c359ce7c6cc3c9646bfbbe7c5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 

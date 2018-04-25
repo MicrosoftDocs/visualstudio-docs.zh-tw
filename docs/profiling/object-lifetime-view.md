@@ -1,13 +1,9 @@
 ---
-title: "物件存留期檢視 | Microsoft Docs"
-ms.custom: 
+title: 物件存留期檢視 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - performance reports, objects lifetime view
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 在 [效能工作階段] 屬性頁上核取 [Also collect .NET object lifetime data (同時收集 .NET 物件存留期的資料)] 時，可以使用 [物件存留期] 檢視。  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="general"></a>一般  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**類別名稱**|已配置類型的類別名稱。|  
 |**處理序 ID**|分析執行的處理序 ID。|  
@@ -61,7 +56,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="size-byte-data"></a>大小 (位元組) 資料  
  大小 (位元組) 資料指出分析回合中所建立類型的物件大小，以及在每個解除配置物件的世代中所回收的記憶體數量。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**配置的總位元組數**|類型之所有執行個體的位元組總數。|  
 |**總位元組 %**|分析回合中配置給此類型執行個體的已配置位元組總數百分比。|  
@@ -72,7 +67,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="large-object-heap-data"></a>大型物件堆積資料  
  .NET 記憶體配置器可管理與標準 Managed 堆積不同的位置中的超大型物件。 大型物件堆積資料指出在此位置管理之類型的物件數目和大小。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**大型物件堆積執行個體已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體數目。|  
 |**大型物件堆積位元組已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體大小 (以位元組為單位)。|  

@@ -1,12 +1,10 @@
 ---
 title: -Run (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - /run Devenv
 - run Devenv switch
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - Devenv, /run switch
 - r Devenv switch (/r)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 97e4339546eda741ba961b0015f9f62edf231d24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2290215caa401c5cc4a639874b0b2bd7012b2cd5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 編譯並執行指定的專案或方案。  

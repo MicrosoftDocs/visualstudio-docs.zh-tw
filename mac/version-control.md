@@ -1,16 +1,15 @@
 ---
-title: "版本控制 | Microsoft Docs"
-description: "在 Visual Studio for Mac 中使用 Git 和 Subversion。"
+title: 版本控制
+description: 在 Visual Studio for Mac 中使用 Git 和 Subversion。
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: ceb0c5ec32da5a34971534a11055593039ea82fd
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 8d7e281907488d3b9229ad1fefe90e3df64e2a36
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="version-control"></a>版本控制
 

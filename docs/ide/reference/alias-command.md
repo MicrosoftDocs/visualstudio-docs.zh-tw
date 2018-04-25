@@ -1,13 +1,10 @@
 ---
-title: "別名命令 | Microsoft Docs"
-ms.custom: 
+title: 別名命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - tools.alias
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8abd8c38bcff23b43365253af25547f854cb581
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 02378b6e980dc4590bdc8901f67ca160bbffe157
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。  
@@ -50,10 +46,10 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
   
 ## <a name="switches"></a>參數  
  /delete 或 /del 或 /d  
- 選擇項。 刪除指定的別名，並移除它不進行自動完成。  
+ 選擇性。 刪除指定的別名，並移除它不進行自動完成。  
   
  /reset  
- 選擇項。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。  
+ 選擇性。 將預先定義的別名清單重設為其原始設定。 亦即，它會還原所有預先定義的別名，並移除所有使用者定義的別名。  
   
 ## <a name="remarks"></a>備註  
  因為別名代表命令，所以它們必須位於命令列的開頭。  

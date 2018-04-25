@@ -52,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 -   沒有`ColumnGuideCommands`.vsct 檔中宣告可實作使用者命令和命令的命令處理常式連結的物件。  
   
- **VSIX**。  使用**檔案&#124;新...**命令，以建立專案。  在左側瀏覽窗格中選擇 C# 下的 擴充性 節點，選擇  **VSIX 專案**右窗格中。  輸入 ColumnGuides 的名稱，然後選擇**確定**建立專案。  
+ **VSIX**。  使用**檔案&#124;新...** 命令，以建立專案。  在左側瀏覽窗格中選擇 C# 下的 擴充性 節點，選擇  **VSIX 專案**右窗格中。  輸入 ColumnGuides 的名稱，然後選擇**確定**建立專案。  
   
- **檢視裝飾**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區裝飾**右窗格中。  輸入名稱 ColumnGuideAdornment 做為項目名稱，然後選擇**新增**，將它加入。  
+ **檢視裝飾**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區裝飾**右窗格中。  輸入名稱 ColumnGuideAdornment 做為項目名稱，然後選擇**新增**，將它加入。  
   
  您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案： ColumnGuideAdornment.cs 和 ColumnGuideAdornmentTextViewCreationListener.cs。  範本只會在檢視上繪製一個紫色的矩形。  下面將變更幾行中的檢視建立接聽程式，並取代 ColumnGuideAdornment.cs 的內容。  
   
- **命令**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...**命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。  輸入名稱 ColumnGuideCommands 做為項目名稱，然後選擇**新增**，將它加入。  數個參考，除了新增的命令和封裝新增 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面，您將會取代來定義並實作命令的第一個和最後一個檔案的內容。  
+ **命令**。  在 [方案總管] 中的專案節點上按右指標按鈕。  選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。  選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。  輸入名稱 ColumnGuideCommands 做為項目名稱，然後選擇**新增**，將它加入。  數個參考，除了新增的命令和封裝新增 ColumnGuideCommands.cs、 ColumnGuideCommandsPackage.cs 和 ColumnGuideCommandsPackage.vsct。  下面，您將會取代來定義並實作命令的第一個和最後一個檔案的內容。  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>設定文字檢視建立接聽程式  
  在編輯器中開啟 ColumnGuideAdornmentTextViewCreationListener.cs。  這段程式碼會實作一個處理常式，每當 Visual Studio 建立文字檢視。  沒有屬性，以控制當呼叫此處理常式是根據檢視的特性。  
@@ -1168,7 +1168,7 @@ namespace ColumnGuides
   
 ```  
   
- **修正參考**。  您在此時遺漏參考。  在 [方案總管] 中 [參考] 節點上按右指標按鈕。  選擇**新增...**命令。  **加入參考**對話方塊有右上角的 [搜尋] 方塊。  請輸入"editor"（不含雙引號）。  選擇**Microsoft.VisualStudio.Editor** （您必須核取方塊左邊的項目，只要選取的項目） 的項目，然後選擇 **確定**將參考加入。  
+ **修正參考**。  您在此時遺漏參考。  在 [方案總管] 中 [參考] 節點上按右指標按鈕。  選擇**新增...** 命令。  **加入參考**對話方塊有右上角的 [搜尋] 方塊。  請輸入"editor"（不含雙引號）。  選擇**Microsoft.VisualStudio.Editor** （您必須核取方塊左邊的項目，只要選取的項目） 的項目，然後選擇 **確定**將參考加入。  
   
  **初始化**。  在封裝類別初始化時，它會呼叫`Initialize`命令實作類別上。  `ColumnGuideCommands`初始化具現化類別，並將類別執行個體和封裝參考儲存在類別成員。  
   

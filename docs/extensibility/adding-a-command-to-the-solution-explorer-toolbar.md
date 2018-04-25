@@ -75,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  按一下 [新增] 按鈕。  
   
-     訊息的對話方塊**ToolbarButtonPackage 內 SolutionToolbar.ToolbarButton.MenuItemCallback()**應該顯示。  
+     訊息的對話方塊**ToolbarButtonPackage 內 SolutionToolbar.ToolbarButton.MenuItemCallback()** 應該顯示。  
   
 ## <a name="controlling-the-visibility-of-a-button"></a>控制按鈕的可見性  
  本節的逐步解說示範如何控制可見性的工具列上的按鈕。 藉由設定內容中的一個或多個專案`<VisibilityConstraints>`> 一節的 SolutionToolbar.vsct 檔案，您可以限制按鈕出現只有當專案已開啟。  

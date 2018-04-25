@@ -27,7 +27,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="template-scanning"></a>掃描的範本
 
-在舊版的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**掃描本機的磁碟，以便尋找專案和項目範本。 從 Visual Studio 2017 開始，會執行掃描僅針對使用者層級的位置。 預設使用者層級位置是**%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 所產生的範本，這個位置用**專案** > **匯出範本...**命令時，如果**自動將範本匯入至 Visual Studio**精靈中選取選項。
+在舊版的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**掃描本機的磁碟，以便尋找專案和項目範本。 從 Visual Studio 2017 開始，會執行掃描僅針對使用者層級的位置。 預設使用者層級位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 所產生的範本，這個位置用**專案** > **匯出範本...** 命令時，如果**自動將範本匯入至 Visual Studio**精靈中選取選項。
 
 其他 （非使用者） 的位置，您必須包含指定的位置和範本的其他特性 manifest(.vstman) 檔案。 .Vstman 檔案會產生以及用於範本的.vstemplate 檔案。 如果您安裝您使用.vsix 的擴充功能，您可以完成這需要重新編譯的 Visual Studio 2017 中的擴充功能。 但如果您使用.msi 時，您需要以手動方式進行變更。 如需您需要如何進行這些變更的清單，請參閱**升級至與安裝擴充功能。MSI**本主題稍後。  
   
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
 
 1.  在 Visual Studio 2017 開啟的方案。 系統會要求您升級的程式碼。 按一下 [確定 **Deploying Office Solutions**]。  
   
-2.  在升級完成之後，您可能需要變更安裝目標的版本。 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案，然後選取**安裝目標**] 索引標籤。如果**版本範圍**欄位是**[14.0]**，按一下 [**編輯**並將它變更為包含 Visual Studio 2017。 例如，您可以將它設定為**[14.0,15.0]**安裝擴充功能，Visual Studio 2015 或 Visual Studio 2017，或**[15.0]**只 Visual Studio 2017 來安裝它。  
+2.  在升級完成之後，您可能需要變更安裝目標的版本。 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案，然後選取**安裝目標**] 索引標籤。如果**版本範圍**欄位是 **[14.0]**，按一下 [**編輯**並將它變更為包含 Visual Studio 2017。 例如，您可以將它設定為 **[14.0,15.0]** 安裝擴充功能，Visual Studio 2015 或 Visual Studio 2017，或 **[15.0]** 只 Visual Studio 2017 來安裝它。  
   
 3.  編譯程式碼。  
   
@@ -120,7 +120,7 @@ ms.lasthandoff: 04/16/2018
   
 ```  
   
- 所提供的資訊[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)項目維持不變。  **\<VSTemplateContainer >**元素指向相關聯的範本的.vstemplate 檔案。  
+ 所提供的資訊[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)項目維持不變。  **\<VSTemplateContainer >** 元素指向相關聯的範本的.vstemplate 檔案。  
   
  以下是由 Visual Studio 2015 建立的預設項目.vstemplate 檔案：  
   
@@ -173,7 +173,7 @@ ms.lasthandoff: 04/16/2018
   
 ```  
   
- 所提供的資訊 **\<TemplateData >**項目維持不變。  **\<VSTemplateContainer >**指向相關聯的範本的.vstemplate 檔案的項目  
+ 所提供的資訊 **\<TemplateData >** 項目維持不變。  **\<VSTemplateContainer >** 指向相關聯的範本的.vstemplate 檔案的項目  
   
  如需.vstman 檔案的不同元素的詳細資訊，請參閱[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。  
   

@@ -1,20 +1,20 @@
 ---
-title: "探索界限 | Microsoft IntelliTest 開發人員測試工具 | Microsoft Docs"
+title: 探索界限 | Microsoft IntelliTest 開發人員測試工具 | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 035eda6d5c3e038d3b0c802db794bbfe6cb07a7d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exploration-bounds"></a>探索界限
 

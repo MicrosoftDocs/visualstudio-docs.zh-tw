@@ -68,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
-|(預設值)|REG_SZ|文字|預設值可以用於文件的語言名稱。 此索引鍵的名稱是有對應的項目中的運算式評估工具的 GUID  *\<VS 登錄根目錄 >*\AD7Metrics\Expression 評估工具。|  
+|(預設值)|REG_SZ|文字|預設值可以用於文件的語言名稱。 此索引鍵的名稱是有對應的項目中的運算式評估工具的 GUID  *\<VS 登錄根目錄 >* \AD7Metrics\Expression 評估工具。|  
   
 ### <a name="example"></a>範例  
   
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>邏輯檢視選項的登錄項目  
- *VS Reg 根*\Editors\\*編輯器 GUI >*\LogicalViews 索引鍵可包含下列值。  
+ *VS Reg 根*\Editors\\*編輯器 GUI >* \LogicalViews 索引鍵可包含下列值。  
   
 |名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  

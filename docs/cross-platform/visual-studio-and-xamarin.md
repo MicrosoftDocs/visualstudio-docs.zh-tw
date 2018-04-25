@@ -2,23 +2,19 @@
 title: Visual Studio 和 Xamarin | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
-caps.latest.revision: 10
 author: charlespetzold
 ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: be1739a83e05ca55fa288fa707b37fddb095cc57
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c16898fa94bcdb051b215f3ff89cf4d42cbe7fe7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 

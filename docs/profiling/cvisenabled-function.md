@@ -1,12 +1,9 @@
 ---
-title: "CvIsEnabled 函式 | Microsoft Docs"
-ms.custom: 
+title: CvIsEnabled 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
 - cvmarkers/CvIsEnabled
@@ -14,16 +11,16 @@ helpviewer_keywords:
 - CvIsEnabled method
 - CvIsEnabledEx method
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f7459b155192869f02541d65da9cfaa80f22ddd9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8ff675a7940f5fda61fcf1836a4023ffb8f586b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
 判斷任何工作階段是否已啟用指定的 ETW 提供者。  

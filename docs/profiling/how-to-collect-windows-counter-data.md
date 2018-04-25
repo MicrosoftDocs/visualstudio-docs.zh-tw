@@ -1,13 +1,9 @@
 ---
-title: "如何：收集 Windows 計數器資料 | Microsoft Docs"
-ms.custom: 
+title: 如何：收集 Windows 計數器資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -17,14 +13,14 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49eb2d49b9e34fe23fa1a3bc6594a3336dd9839d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 842ce89c687c1f39bc013a7b1eb2c4b330a86f47
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 

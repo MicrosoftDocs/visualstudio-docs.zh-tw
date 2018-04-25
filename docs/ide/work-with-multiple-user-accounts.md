@@ -2,21 +2,18 @@
 title: 使用多個使用者帳戶
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b3ae67cc4396a7fc9041cb5074c84ffa2aa73a
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: b93a57592ae87daa8d60d5a4d5e7166d26cfe61f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

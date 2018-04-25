@@ -1,15 +1,14 @@
 ---
-title: "註解"
+title: 註解
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: cb44dc755721f6095c9a07ad3e6fec1f6849e149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d49896a3c265dfdc5a25c46e80de498adfffb07
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="comments"></a>註解
 
@@ -19,7 +18,7 @@ ms.lasthandoff: 10/27/2017
 
 * 選取程式碼，然後從操作功能表選取 [切換行註解]
 
-或
+OR
 
 * 在選取的程式碼上使用 `cmd + /` 按鍵繫結關係。
 

@@ -1,13 +1,9 @@
 ---
-title: "程式行檢視 | Microsoft Docs"
-ms.custom: 
+title: 程式行檢視 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - profiling tools, Line view
 - Lines view
 ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b645a6cee08f1b27e353f01aaedcbc258d6d98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 433bcbc46814c49a30836d8a7f0d9ec10e571ea6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。  

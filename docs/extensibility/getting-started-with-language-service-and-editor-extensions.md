@@ -66,9 +66,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="running-extensions-in-the-experimental-instance"></a>執行實驗執行個體中的擴充功能  
  藉由部署 （Windows Vista 和 Windows 7） 上的下列實驗資料夾中儲存的遊戲開發擴充功能時，您可以隔離您的工作版本的 Visual Studio:  
   
- *%LOCALAPPDATA%*\VisualStudio\10.0Exp\Extensions\\*公司*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*公司*\\*ExtensionID*  
   
- 其中*%LOCALAPPDATA%*是登入的使用者名稱，*公司*是擁有延伸模組的公司名稱和*ExtensionID*是擴充功能的識別碼。  
+ 其中 *%LOCALAPPDATA%* 是登入的使用者名稱，*公司*是擁有延伸模組的公司名稱和*ExtensionID*是擴充功能的識別碼。  
   
  當您部署延伸至實驗位置時，它會執行以偵錯模式。 Visual Studio 的第二個執行個體已啟動，且名為**Microsoft Visual Studio 實驗執行個體**。  
   

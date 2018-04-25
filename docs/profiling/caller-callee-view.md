@@ -1,13 +1,9 @@
 ---
-title: "呼叫端-被呼叫端檢視 | Microsoft Docs"
-ms.custom: 
+title: 呼叫端-被呼叫端檢視 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - performance reports, Caller/Callee view
 - Caller/Callee view
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edc4c8a497027e21b21b81ccf7943dab8379ab93
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 34920cfd91c236df4fc88d671d3cac48ebf02252
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格：  

@@ -167,7 +167,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     ```  
   
-     別忘了變更 *\<userpath >*檔名和路徑，在您的電腦上有意義 ！  
+     別忘了變更 *\<userpath >* 檔名和路徑，在您的電腦上有意義 ！  
   
 2.  建置並執行程式碼。 Visual Studio 的實驗執行個體出現時，請開啟的方案。 這會導致自動載入至 AsyncPackage。 當初始設定式執行時，您應該在您指定的位置尋找檔案。  
   

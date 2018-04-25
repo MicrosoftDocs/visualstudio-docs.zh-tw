@@ -2,22 +2,22 @@
 title: 在 Visual Studio 中建立並執行 UWP App 的單元測試 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: ec857cb2bf0aa8e5453180249ddeccf47236dcf1
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: bbb1da5474dcb36e9b102f85f21c4945b3ebb33c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 

@@ -1,22 +1,22 @@
 ---
-title: "適用於 Visual Studio 的 AI 工具"
-description: "適用於 Visual Studio 的 AI 工具概觀"
+title: 適用於 Visual Studio 的 AI 工具
+description: 適用於 Visual Studio 的 AI 工具概觀
 keywords: AI, Visual Studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 69317a662d6407cf4b18f44dcba37e5163b7662d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 43411be41acf2e5bd2e40131dd06bf817bf87a38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

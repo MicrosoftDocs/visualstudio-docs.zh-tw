@@ -25,7 +25,7 @@ ms.lasthandoff: 04/16/2018
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，以存取這些設定。
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>若要起始狀態持續性的字型和色彩
- 字型和色彩資訊會儲存在下列登錄位置中的類別目錄: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >*是類別目錄 GUID。
+ 字型和色彩資訊會儲存在下列登錄位置中的類別目錄: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >* \FontAndColors\\ *\<CategoryGUID >*]，其中 *\<CategoryGUID >* 是類別目錄 GUID。
 
  因此，若要起始持續性，VSPackage 必須：
 

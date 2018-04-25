@@ -1,12 +1,10 @@
 ---
-title: "輸出視窗 | Microsoft Docs"
-ms.custom: 
+title: 輸出視窗 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Output window
 - Toolbox, removing controls
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
-caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1e886e88ad7ab4e943908e003ffe56719bd13211
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4a8a075f977746a769fb19bec6eb196e0d338b12
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="output-window"></a>輸出視窗
 [輸出] 視窗可以顯示整合式開發環境 (IDE) 中各種功能的狀態訊息。 若要開啟 [輸出] 視窗，請在功能表列上選擇 [檢視/輸出]\(或按一下 CTRL+ALT+O)。  

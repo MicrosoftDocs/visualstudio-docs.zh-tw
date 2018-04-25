@@ -1,13 +1,10 @@
 ---
-title: "針對中斷參考進行疑難排解 | Microsoft Docs"
-ms.custom: 
+title: 針對中斷參考進行疑難排解 | Microsoft Docs
+ms.custom: ''
 ms.date: 03/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# projects, references
 - Visual Basic projects, references
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecca7ee3d9d5ae6a4f347df7438cb38718d702b4
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 256e7018b29402a2d67693de3c8e2cfe18ea2f71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 

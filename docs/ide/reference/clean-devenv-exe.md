@@ -1,28 +1,26 @@
 ---
 title: -Clean (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Team System], cleaning files
 - clean Devenv switch
 - /clean Devenv switch
 - Devenv, /clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8ec88191374e06adfce0652ffd777ad971c930c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 清除所有中繼檔案和輸出目錄。  
@@ -38,10 +36,10 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  必要。 方案檔或專案檔的完整路徑和名稱。  
   
  /project `ProjName`  
- 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
+ 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
   
  /projectconfig `ProjConfigName`  
- 選擇項。 要在清除具名 `/project` 時使用的專案組建組態名稱。  
+ 選擇性。 要在清除具名 `/project` 時使用的專案組建組態名稱。  
   
 ## <a name="remarks"></a>備註  
  此參數會執行與整合式開發環境 (IDE) 內之 [清除方案] 功能表命令相同的功能。  

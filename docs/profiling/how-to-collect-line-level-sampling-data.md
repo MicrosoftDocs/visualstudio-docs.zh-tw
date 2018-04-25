@@ -1,32 +1,27 @@
 ---
-title: "如何：收集程式行層級取樣資料 | Microsoft Docs"
-ms.custom: 
+title: 如何：收集程式行層級取樣資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56115f2605cfc2c5f9dc1c4a42062208056b172c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。  
   
-## <a name="overview"></a>概觀  
+## <a name="overview"></a>總覽  
  針對程式行層級取樣，程式碼剖析工具會以設定的間隔瀏覽程式呼叫堆疊，並彙總這些結果。 這些結果會顯示取樣時處理器執行的指令。 接著分析與專有樣本有關的收集資料，以找出程式碼和指令指標 (IP)。  
   
  程式行層級取樣適用於 managed 與機器碼。 顯示此資料的效能報告包含 [程式行] 檢視和 [模組] 檢視。  

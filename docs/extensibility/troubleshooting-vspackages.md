@@ -68,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  VSPackage 的 CLSID 的區段中找到封裝的登錄：  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \Packages  
   
     2.  請確認 SatelliteDll 子機碼所提供的路徑正確。  
   
@@ -121,7 +121,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Unmanaged 程式碼，找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 登錄節點：  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
   
  請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
   

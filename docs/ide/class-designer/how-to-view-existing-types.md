@@ -1,13 +1,10 @@
 ---
-title: "如何：檢視現有類型 (類別設計工具) | Microsoft Docs"
-ms.custom: 
+title: 如何：檢視現有類型 (類別設計工具) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b5b4aed79dfbfda19020cfda17af68d7ae186c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a1d8ff3ee7f58e59081dc555160ce284ddea835
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：檢視現有類型 (類別設計工具)
 若要查看現有的類型及其成員，請將其圖案加入至類別圖。  

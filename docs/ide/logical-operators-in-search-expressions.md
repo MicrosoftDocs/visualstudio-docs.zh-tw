@@ -1,26 +1,24 @@
 ---
-title: "搜尋運算式中的邏輯運算子與進階運算子 | Microsoft Docs"
-ms.custom: 
+title: 搜尋運算式中的邏輯運算子與進階運算子 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Help Viewer, logical operators in search
 - logical operators in search [Help Viewer]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 09141b10ab9ee39568176fa7252a503bdaa747dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 952aea626dd59a303fd7091a4d36fdbf512db6bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 您可以使用邏輯運算子與進階的搜尋運算子，來精簡說明檢視器的說明內容搜尋範圍。
@@ -28,7 +26,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="logical-operators"></a>邏輯運算子
 邏輯運算子會指定應該如何在搜尋查詢中合併多個搜尋詞彙。 下表會顯示邏輯運算子 AND、OR、NOT 和 NEAR。
   
-|搜尋|用法|範例|結果|  
+|搜尋|使用|範例|結果|  
 |-------------------|---------|-------------|------------|  
 |相同文章中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|  
 |文章中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="advanced-operators"></a>進階運算子
 進階搜尋運算子可藉由在文章中指定要尋找搜尋詞彙的位置，來精簡內容的搜尋範圍。 下表描述四個可用的進階搜尋運算子。
 
-|搜尋|用法|範例|結果|  
+|搜尋|使用|範例|結果|  
 |-------------------|---------|-------------|------------|  
 |文章標題中的詞彙|title:|title:binaryreader|標題中包含 "binaryreader" 的主題。|  
 |程式碼範例中的詞彙|code:|code:readdouble|程式碼範例中包含 "readdouble" 的主題。|  

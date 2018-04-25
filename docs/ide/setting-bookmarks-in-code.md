@@ -1,25 +1,22 @@
 ---
-title: "在 Visual Studio 中設定程式碼書籤 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中設定程式碼書籤 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf0aa9d18b02cffb68c68e5c844a726c749a0a3
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: b2c51b360a8df39abfd38e3da175de65c38d59bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 

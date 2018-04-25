@@ -1,16 +1,15 @@
 ---
-title: "了解組建組態"
-description: 
+title: 了解組建組態
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1ca2d7dc7b450367e5f87d62cf2a3c43a6331e13
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 

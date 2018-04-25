@@ -1,16 +1,13 @@
 ---
-title: "Clang 專案屬性 (Android C++) | Microsoft Docs"
-ms.custom: 
+title: Clang 專案屬性 (Android C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: ghogen
+manager: douge
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -46,11 +43,11 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 26e212b10f426bd3a5af0845cc5212ceaa747eb8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8a1fd92a41f145e097615bea4434ea80fd592416
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 

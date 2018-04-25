@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中新增自訂計數器集合以進行負載測試 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - counters, counter sets
 - counter sets
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f691c0eac38dae9e9f419335eb1d3ae87c693df
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f811ee784a0cb40fb1e5daf00f0ccf3c2ca16bfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器加入自訂計數器集合
 

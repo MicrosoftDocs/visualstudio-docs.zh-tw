@@ -1,28 +1,26 @@
 ---
-title: "如何：在編輯器中顯示行號 | Microsoft Docs"
-ms.custom: 
+title: 如何：在編輯器中顯示行號 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
 - Code Editor, line numbers
 - editors, line numbers
 - code, line number displaying
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 589330e05949567837561d4e732043dcc1ce67eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31ae874831dd7ecf68253e2ee3fa62e920e02ec6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：顯示編輯器中的行號
 您可以在程式碼中顯示或隱藏行號。  

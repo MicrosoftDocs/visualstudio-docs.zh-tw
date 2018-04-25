@@ -1,27 +1,24 @@
 ---
-title: "DA0039：非常高比率的鎖定爭用 | Microsoft Docs"
-ms.custom: 
+title: DA0039：非常高比率的鎖定爭用 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
 - vs.performance.DA0039
 - vs.performance.rules.DA0039
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eeec11274df74b65e1991e3a0fd3b9132bb4bcb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b6d3c83feb1a5fcb65940ee05344cb88cf08de74
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 |||  

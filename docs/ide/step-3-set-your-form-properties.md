@@ -1,23 +1,21 @@
 ---
-title: "步驟 3：設定您的表單屬性 | Microsoft Docs"
-ms.custom: 
+title: 步驟 3：設定您的表單屬性 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
-caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e703372a3b59ceee439b234e02e4a2d5a3cb6275
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e4c3c33d42e4350db8626542001d4c2dcab5bb5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。  

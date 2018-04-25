@@ -26,15 +26,15 @@ ms.lasthandoff: 04/16/2018
   
 -   **偵錯封裝：** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會提供相同的使用者介面，無論正在偵錯功能。  
   
--   **工作階段偵錯管理員 (SDM):**提供一致的程式設計介面，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具的各種不同的偵錯引擎的管理。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+-   **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具的各種不同的偵錯引擎的管理。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   **處理序偵錯管理員 (PDM):**管理的所有執行的執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在進行偵錯的所有程式的清單。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+-   **處理序偵錯管理員 (PDM):** 管理的所有執行的執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在進行偵錯的所有程式的清單。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   **偵錯引擎 (DE):**會負責監視程式，偵錯時，通訊 SDM 和 PDM，執行程式的狀態，並與其互動來提供即時分析的運算式評估工具和符號提供者程式的記憶體和變數的狀態。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援語言版本） 和第三方廠商想要支援他們自己的執行的階段。  
+-   **偵錯引擎 (DE):** 會負責監視程式，偵錯時，通訊 SDM 和 PDM，執行程式的狀態，並與其互動來提供即時分析的運算式評估工具和符號提供者程式的記憶體和變數的狀態。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援語言版本） 和第三方廠商想要支援他們自己的執行的階段。  
   
--   **運算式評估工具 (EE):**提供支援動態評估變數和程式已停止的特定點時，使用者所提供的運算式。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援語言版本） 和第三方廠商想要支援他們自己的語言。  
+-   **運算式評估工具 (EE):** 提供支援動態評估變數和程式已停止的特定點時，使用者所提供的運算式。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援語言版本） 和第三方廠商想要支援他們自己的語言。  
   
--   **符號提供者 (SP):**也稱為符號處理常式對應程式的偵錯符號至程式的執行個體，以便可以提供有意義的資訊 （例如來源的程式碼層級偵錯和運算式評估）。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（如 Common Language Runtime [CLR] 符號與程式資料庫 [PDB] 符號檔案格式） 和協力廠商儲存偵錯資訊的自己專屬的方法。  
+-   **符號提供者 (SP):** 也稱為符號處理常式對應程式的偵錯符號至程式的執行個體，以便可以提供有意義的資訊 （例如來源的程式碼層級偵錯和運算式評估）。 它藉由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（如 Common Language Runtime [CLR] 符號與程式資料庫 [PDB] 符號檔案格式） 和協力廠商儲存偵錯資訊的自己專屬的方法。  
   
  下圖顯示 Visual Studio 偵錯工具的這些項目之間的關聯性。  
   

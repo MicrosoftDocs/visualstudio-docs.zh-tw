@@ -1,29 +1,24 @@
 ---
-title: "marker_series 類別 | Microsoft Docs"
-ms.custom: 
+title: marker_series 類別 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
 helpviewer_keywords:
 - Concurrency::diagnostic::marker_series class
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2cbe0a87e61a50f3f2b071aef9ef9e12663a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc78c49aae49704e2dd56abfee7b0e43b285845d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="markerseries-class"></a>marker_series 類別
 表示由單一提供者產生之事件的序列通道。  

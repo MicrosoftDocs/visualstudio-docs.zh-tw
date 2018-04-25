@@ -1,22 +1,22 @@
 ---
-title: "在 Azure Batch AI 中提交工作以定型模型"
-description: "定型模型雲端"
-keywords: "AI, Visual Studio, 定型模型, 雲端"
+title: 在 Azure Batch AI 中提交工作以定型模型
+description: 定型模型雲端
+keywords: AI, Visual Studio, 定型模型, 雲端
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: how-to article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 90d0e7db36b91c2add1bcfe80fb3325bd1ddf126
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: ec0db69bbde1e2abab7022759ed0f7a3d2a88530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 

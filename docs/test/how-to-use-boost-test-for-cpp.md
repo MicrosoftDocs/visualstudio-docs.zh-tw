@@ -1,18 +1,18 @@
 ---
-title: "如何在 Visual Studio 中使用 C++ 的 Boost.Test | Microsoft Docs"
+title: 如何在 Visual Studio 中使用 C++ 的 Boost.Test | Microsoft Docs
 ms.date: 01/29/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e089787a69733639c30705c4aa189227fbca830
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 69cf4403e6a47d30df03e90f0d4ffa51bac2c9c2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Boost.Test
 

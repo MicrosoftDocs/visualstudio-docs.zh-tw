@@ -47,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  在 Windows 檔案總管] 中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾、 按一下 [傳送到，然後按一下壓縮 (zipped) 資料夾。 重新產生的.zip 檔案命名為 Filename.vsix，其中 Filename 是可轉散發檔案安裝封裝的名稱。  
   
- 適用於 Visual Studio 辨識起始頁`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁擴充功能會出現在**自訂起始頁**清單**啟動**選項頁面上為**[安裝延伸模組]***副檔名*。  
+ 適用於 Visual Studio 辨識起始頁`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁擴充功能會出現在**自訂起始頁**清單**啟動**選項頁面上為 **[安裝延伸模組]***副檔名*。  
   
  如果您的起始頁封裝包含組件，您必須加入繫結路徑的登錄，以便他們可以使用 Visual Studio 啟動時。 若要這樣做，請確定您的封裝包含.pkgdef 檔具有下列資訊。  
   
