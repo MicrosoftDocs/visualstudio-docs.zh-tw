@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_guid |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_guid |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_guid method
 ms.assetid: c02a6c92-f406-4646-82e7-3cd005af900e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8700232238dfa5658539827a9c42fe850bbbd81
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e16fa27bf7938a0e7e6202daa4284cd3f2e6634b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 擷取符號的全域唯一識別碼 (GUID)。  
@@ -53,5 +48,5 @@ HRESULT get_guid (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

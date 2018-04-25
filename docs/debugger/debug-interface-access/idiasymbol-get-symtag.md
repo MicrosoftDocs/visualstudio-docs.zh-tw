@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_symtag |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_symtag |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_symTag method
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdbe412c9bfde175671c3ceeb096a3b15468acac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 029dee2188f48d2f41368c965542670e5512f7e5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 擷取符號類型分類。  
@@ -54,6 +49,6 @@ DWORD       tag = 0;
 pType->get_symTag( &tag );  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

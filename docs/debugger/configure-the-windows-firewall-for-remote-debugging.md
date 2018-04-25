@@ -1,23 +1,20 @@
 ---
-title: "設定 Windows 防火牆進行遠端偵錯 |Microsoft 文件"
-ms.custom: 
+title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d9fdd6db229bf1aa6f607e096715ea485ec5c5ce
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
@@ -123,5 +120,5 @@ ms.lasthandoff: 12/22/2017
 |500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|  
 |80|傳出|TCP|網頁伺服器偵錯的必要項。|
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

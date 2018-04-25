@@ -1,13 +1,9 @@
 ---
-title: "堆積配置函式的偵錯版本 |Microsoft 文件"
-ms.custom: 
+title: 堆積配置函式的偵錯版本 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - heap allocation, debug
 - _malloc_dbg function
 ms.assetid: 91748bdc-f4cd-4d8b-ab98-0493dab7ed0d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63642402f6e98e42b2d4954a6065f61fb61159b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e426da9491c13e0d6f9377814673ca41512e5e09
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵錯版本。 這些函式的名稱與發行版本相同，再加上「_dbg」。 本主題以 `malloc` 和 `_malloc_dbg` 為例，說明 CRT 函式發行版本和 _dbg 版本之間的差異。  
@@ -53,5 +48,5 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
   
  未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)會被忽略，和原始程式檔相關的資訊未提供配置要求。 因為 `malloc` 沒有區塊類型參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_lexicalparentid |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_lexicalparentid |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_lexicalParentId method
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 680cd9aea768d29e2afa4295a9593279a67e6c63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e354fe27f9f5386c3aabaebaddc4823779cd1384
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 擷取符號的語彙的父識別碼。  
@@ -49,5 +44,5 @@ HRESULT get_lexicalParentId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，以將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

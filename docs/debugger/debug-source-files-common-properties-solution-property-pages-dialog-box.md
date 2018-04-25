@@ -2,11 +2,7 @@
 title: 來源檔案、 通用屬性、 方案屬性頁對話方塊偵錯 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - source files, specifying in debugger
 - debugger, source files
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>方案屬性頁對話方塊、通用屬性、偵錯原始程式檔
 此屬性頁可指定對方案進行偵錯時，偵錯工具將於何處尋找原始程式檔。  

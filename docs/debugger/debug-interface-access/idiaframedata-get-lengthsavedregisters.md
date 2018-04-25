@@ -1,29 +1,24 @@
 ---
-title: "Idiaframedata:: Get_lengthsavedregisters |Microsoft 文件"
-ms.custom: 
+title: 'Idiaframedata:: Get_lengthsavedregisters |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_lengthSavedRegisters method
 ms.assetid: dfda4e91-9bfa-4b9d-9133-b73015bfa4d5
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e3e8c0d7b4cbec4e019d393ad6877f97b22ff9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e214cacdf9e2a58d3d97311107b9ff20967b723
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 擷取已儲存的暫存器推送到堆疊上的位元組數目。  
@@ -46,6 +41,6 @@ HRESULT get_lengthSavedRegisters (
 ## <a name="remarks"></a>備註  
  這個方法所傳回的值通常用於解譯的程式字串 (請參閱[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法定義的程式字串)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

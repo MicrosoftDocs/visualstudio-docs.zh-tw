@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_isdataaligned |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_isdataaligned |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36743939fdbc8c41967bbbe2ae71aeb72f954cb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2888ce16c64b12ad846289148412733b18bc2500
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 擷取指定某些特定記憶體界限的使用者定義型別 (UDT) 是否已對齊的旗標。  
@@ -47,7 +42,7 @@ HRESULT get_isDataAligned(
 >  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
 ## <a name="remarks"></a>備註  
- 使用非預設資料對齊編譯可執行檔時，這個屬性通常會設定。 例如，Microsoft c + + 編譯器可以變更的資料對齊的命令列選項，/Zp*#*，其中 *#* 是位元組值。  
+ 使用非預設資料對齊編譯可執行檔時，這個屬性通常會設定。 例如，Microsoft c + + 編譯器可以變更的資料對齊的命令列選項，/Zp*#*，其中*#* 是位元組值。  
   
 ## <a name="requirements"></a>需求  
   
@@ -56,5 +51,5 @@ HRESULT get_isDataAligned(
 |標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -2,11 +2,7 @@
 title: 設定防火牆的遠端偵錯對話方塊 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.firewallconfiguration
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - remote debugging, configuring firewalls
 - firewalls, configuring for remote debugging
 ms.assetid: 5dff3393-fdeb-4129-a2f6-31f653107a82
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d945926a08a59fb37e5467591957ee3dcf661b9b
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 982e677639cec6a98ae3aafe3d0ae624df588ccd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>設定遠端偵錯防火牆對話方塊
 當 Windows 防火牆封鎖偵錯工具，使其無法透過網路接收資訊時，這個對話方塊就會出現。 若要繼續進行遠端偵錯，您必須在防火牆中開啟出入口，讓偵錯工具可以接收資訊。  
@@ -49,7 +44,7 @@ ms.lasthandoff: 01/04/2018
  **解除封鎖來自任何電腦的遠端偵錯**  
  讓網路上的任何電腦都可進行遠端偵錯。 這個設定最不安全。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [遠端偵錯](../debugger/remote-debugging.md)  
  [偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)

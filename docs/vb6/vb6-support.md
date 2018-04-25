@@ -14,10 +14,10 @@ ms.author: paulyuk
 ms.workload:
 - paulyuk
 ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>支援適用於 Visual Basic 6.0 在 Windows 上的陳述式
 

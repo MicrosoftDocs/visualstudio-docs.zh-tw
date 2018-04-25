@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_name |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_name |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_name method
 ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab58c34dabcd98b4608a37e59be0c2e4fab14161
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9ed63dce04967d9a312c57b5507da828814c6f6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 擷取的符號名稱。  
@@ -54,5 +49,5 @@ BSTR        name;
 pType->get_name( &name );  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

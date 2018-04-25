@@ -2,8 +2,7 @@
 title: IDiaReadExeAtRVACallback |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a98ff4775c2438d75c7eb547545c7a2278403a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 8836f1d234cddfff42f21a3d376eb93b21e4fe29
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 可讓用戶端應用程式提供的可執行檔的相對虛擬位址所指定的位元組。  

@@ -1,29 +1,24 @@
 ---
-title: "Idialoadcallback2:: Restrictsystemrootaccess |Microsoft 文件"
-ms.custom: 
+title: 'Idialoadcallback2:: Restrictsystemrootaccess |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback2::RestrictSystemRootAccess method
 ms.assetid: 39f22db8-632a-4ef0-babc-23f758e6d937
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b9ba8caf92e7838dfa2bb97cee94aa4a42da77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 000d0b5ce21b6b50b1abab76aa8bf4a7bb1cd62a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 決定系統根目錄中是否允許搜尋.pdb 檔案。  
@@ -40,5 +35,5 @@ HRESULT RestrictSystemRootAccess();
 ## <a name="remarks"></a>備註  
  任何傳回碼以外`S_OK`防止搜尋.pdb 檔案的系統根目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

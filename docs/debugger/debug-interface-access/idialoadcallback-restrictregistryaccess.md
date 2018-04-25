@@ -1,29 +1,24 @@
 ---
-title: "Idialoadcallback:: Restrictregistryaccess |Microsoft 文件"
-ms.custom: 
+title: 'Idialoadcallback:: Restrictregistryaccess |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback::RestrictRegistryAccess method
 ms.assetid: de4760c3-a746-4bab-8065-1388fed31b67
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c0de729331f4c7b12c55ed3e2a6ded0b4c248b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3f98a39b96acca7019125e5198a8be729c5fd23
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 決定是否登錄查詢可用來尋找符號搜尋路徑。  
@@ -40,5 +35,5 @@ HRESULT RestrictRegistryAccess();
 ## <a name="remarks"></a>備註  
  任何傳回碼以外`S_OK`可防止查詢符號搜尋路徑的登錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

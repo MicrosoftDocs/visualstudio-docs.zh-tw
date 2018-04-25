@@ -13,10 +13,10 @@ manager: wpickett
 ms.workload:
 - dotnet
 ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>動員.Net 的 Visual Basic 升級小幫手 (VBUC)
 

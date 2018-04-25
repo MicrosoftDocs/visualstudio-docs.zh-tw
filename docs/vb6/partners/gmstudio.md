@@ -13,10 +13,10 @@ manager: wpickett
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8e44bf6d4287ff1a82aec3342f089e44e776da6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="great-migrations-studio-gmstudio"></a>絕佳移轉 Studio (gmStudio)
 

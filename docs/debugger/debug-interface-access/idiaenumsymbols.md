@@ -1,29 +1,24 @@
 ---
-title: "IDiaEnumSymbols |Microsoft 文件"
-ms.custom: 
+title: IDiaEnumSymbols |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols interface
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb30549dc50b9e585768cd8778b8cbb70fb0f0c0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 列舉各種資料來源中所包含的符號。  
@@ -63,7 +58,7 @@ IDiaEnumSymbols : IUnknown
  這個範例示範如何取得`IDiaEnumSymbols`介面，然後再使用該列舉清單使用者定義型別 (Udt)。  
   
 > [!NOTE]
->  `CDiaBSTR`是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
+>  `CDiaBSTR` 是一個類別，包裝`BSTR`並自動處理當具現化超出範圍時釋出的字串。  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -98,7 +93,7 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   

@@ -1,29 +1,24 @@
 ---
-title: "Idiaframedata:: Get_allocatesbasepointer |Microsoft 文件"
-ms.custom: 
+title: 'Idiaframedata:: Get_allocatesbasepointer |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_allocatesBasePointer method
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e577a5a9723f388d829a70f51cd0a917abf157a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: efbadae145fff951effc7413e432ab2570549c95
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 擷取這個旗標指示是否配置此位址範圍中的程式碼基底指標。 這個方法已被取代。  
@@ -46,6 +41,6 @@ HRESULT get_allocatesBasePointer (
 ## <a name="remarks"></a>備註  
  這個屬性應只能由程式碼，先前稱為存取 FPO_DATA，或當程式字串傳回[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法`NULL`。 否則，程式字串包含要計算前一個暫存器值所需的所有資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
