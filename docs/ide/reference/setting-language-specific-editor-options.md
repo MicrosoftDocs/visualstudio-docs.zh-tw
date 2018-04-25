@@ -1,25 +1,23 @@
 ---
-title: "設定語言特定編輯器選項 | Microsoft Docs"
-ms.custom: 
+title: 設定語言特定編輯器選項 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 082569ea1875e03154e98e8078a21aafc7ad76dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d1882f717d3e1a1cb6aef9a7c52649740c68a089
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 

@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.extension|產品名稱。 extension.versionMajor.versionMinor|  
   
- 您可以註冊不同的應用程式能夠開啟特定的副檔名，將建立版本的 Progid 做為值加入至 HKEY_CLASSES_ROOT\\*\<副檔名 >*\OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的副檔名的清單。 列出的 Progid 相關聯的應用程式出現在 **開啟 * * * 產品名稱*子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會合併重複的項目。  
+ 您可以註冊不同的應用程式能夠開啟特定的副檔名，將建立版本的 Progid 做為值加入至 HKEY_CLASSES_ROOT\\*\<副檔名 >* \OpenWithProgids 索引鍵。 此登錄機碼包含替代的 Progid 相關聯的副檔名的清單。 列出的 Progid 相關聯的應用程式出現在 **開啟 * * * 產品名稱*子功能表。 如果相同的應用程式中同時指定`OpenWithList`和`OpenWithProgids`索引鍵，作業系統會合併重複的項目。  
   
 > [!NOTE]
 >  `OpenWithProgids`金鑰僅適用於在 Windows XP。 因為其他作業系統會忽略這個索引鍵，請勿使用它做為唯一的註冊檔案處理常式。 使用此金鑰，以提供在 Windows XP 中的較佳使用者體驗。  

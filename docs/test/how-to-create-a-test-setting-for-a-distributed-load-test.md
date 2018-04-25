@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中建立分散式負載測試的測試設定 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 38bcbe49850929105199cef360956f29f22a8d0c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 30b9cf45b60b108e51cc1cbe5defd5e8d8cac0e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 
@@ -56,7 +56,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
     > [!NOTE]
     > Visual Studio Enterprise 所顯示的測試設定清單衍生自 [方案項目] 資料夾中測試設定檔的清單。 例如，當您使用 [測試] 功能表上的 [選取現用測試設定] 選項時，即會顯示 [方案項目] 資料夾中的測試設定檔。 這表示，如果您將測試設定檔移動至方案階層架構中的其他位置，那麼在 Visual Studio 整合式開發環境中就不再使用該檔案做為測試設定。
 
-5.  [測試設定] 對話方塊隨即顯示。 請選取 [一般] 頁面。
+5.  [測試設定] 對話方塊隨即顯示。 已選取 [一般] 頁面。
 
      接著，便可以編輯和儲存測試設定值。
 

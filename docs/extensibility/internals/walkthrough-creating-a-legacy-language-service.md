@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管 中**，MyLanguagePackage 專案上按一下滑鼠右鍵，選擇**新增**，**參考**，然後選擇 **加入新參考**  按鈕。  
   
-2.  在**加入參考**對話方塊中，選取**Microsoft.VisualStudio.Package.LanguageService**中**.NET**索引標籤上，按一下 **確定**。  
+2.  在**加入參考**對話方塊中，選取**Microsoft.VisualStudio.Package.LanguageService**中 **.NET**索引標籤上，按一下 **確定**。  
   
      這需要進行一次語言封裝專案。  
   

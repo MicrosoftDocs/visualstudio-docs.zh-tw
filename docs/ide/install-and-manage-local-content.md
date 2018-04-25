@@ -1,13 +1,10 @@
 ---
-title: "安裝本機 Visual Studio 文件 | Microsoft Docs"
-ms.custom: 
+title: 安裝本機 Visual Studio 文件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b6b93d63381ba0e7afa984e6750e0dac07a8a58b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 藉由使用 Microsoft Help Viewer，您可以加入、移除、更新和移動安裝於您電腦上的說明內容，以符合您的軟體開發需求。  

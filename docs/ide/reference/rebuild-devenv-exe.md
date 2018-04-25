@@ -1,12 +1,10 @@
 ---
 title: -Rebuild (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Devenv, /rebuild switch
 - rebuild Devenv switch (/rebuild)
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - /rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 957e987854aae91b72c5cd6109e279253a5772b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0daaba0ddb30b2fe277d2ef1b51ee4c82ff50366
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 清除然後建置指定的解決方案設定。  
@@ -42,10 +40,10 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
- 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
+ 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
   
  /projectconfig `ProjConfigName`  
- 選擇項。 重建具名 `/project` 時所要使用的專案組建設定名稱。  
+ 選擇性。 重建具名 `/project` 時所要使用的專案組建設定名稱。  
   
 ## <a name="remarks"></a>備註  
   

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中用於建立診斷資料配接器的範例專案 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - samples. Diagnostic Data Adapter [Visual Studio ALM]
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 548bdc5e-338f-4be7-a555-e6a2efb1df6b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b37512405442b327bb4b9688a39bfc4c99ea594
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 98606c5afbeed035392f35d71de60bb4d4bbb5a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>建立診斷資料配接器的範例專案
 

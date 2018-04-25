@@ -1,13 +1,10 @@
 ---
-title: "使用類別圖表 (類別設計工具) | Microsoft Docs"
-ms.custom: 
+title: 使用類別圖表 (類別設計工具) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cc5f623b73fa193f11f544a3a1c703d859eebdf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用類別圖表 (類別設計工具)
 類別圖表可幫助您了解其他人撰寫 (或是您很久以前撰寫) 之專案的類別結構。 您可以使用這些類別圖表來自訂專案資訊、與其他人共用，以及向其他人展示。  

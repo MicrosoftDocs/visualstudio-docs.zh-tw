@@ -1,26 +1,23 @@
 ---
-title: "在 Visual Studio 中檢視呼叫階層 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中檢視呼叫階層 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15323f5e70d56cc6bdd30afee3671443d039f95f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d18af9f159c663cb061a32a61343eaa0a14d7503
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 

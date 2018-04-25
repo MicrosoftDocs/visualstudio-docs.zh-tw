@@ -1,12 +1,9 @@
 ---
-title: "HTML 索引標籤、工具箱 | Microsoft Docs"
-ms.custom: 
+title: HTML 索引標籤、工具箱 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc52ea4ce28c7fac6f7318eac8e835efc0f11cb1
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff609631cec69e0d32cb74e5857cd3bb8df5ab94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 

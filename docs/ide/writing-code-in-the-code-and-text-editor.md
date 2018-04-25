@@ -1,24 +1,22 @@
 ---
-title: "Visual Studio 中的程式碼編輯器功能 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的程式碼編輯器功能 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/23/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b3d1afad30967edb130756843371dc9ec7ed26
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: a7aacedac2045dcf069ea2d8a0f406d6322d7ca6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 

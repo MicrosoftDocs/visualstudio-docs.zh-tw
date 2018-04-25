@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b291f2cb15760c42231eedf502c3de398a7db726
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: c53d4db3f413ad8cf4f0b615db18bd5fb6368128
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/19/2018
     > [!NOTE]
     > 此範例使用 Visual C#。
 
-3.  在範本清單中，選取 [Windows Form 控制項程式庫]。
+3.  在範本的清單中，選取 [Windows Form 控制項程式庫]。
 
 4.  在 [名稱] 文字方塊中鍵入名稱，例如 `MessageEditors`，然後選擇 [確定]。
 

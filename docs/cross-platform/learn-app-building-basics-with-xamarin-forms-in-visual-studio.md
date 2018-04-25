@@ -2,10 +2,7 @@
 title: 了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 ms.technology: vs-ide-mobile
 author: charlespetzold
@@ -13,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 6982768950ffe0e4afb664f1cfeb7423e65bbbc4
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>了解在 Visual Studio 中建置 Xamarin.Forms 應用程式的基本概念
 
@@ -33,9 +30,9 @@ ms.lasthandoff: 04/05/2018
   
 -   [設立方案](#solution)  
   
--   [撰寫共用資料服務程式碼](#dataservice)  
+-   [寫入共用的資料服務程式碼](#dataservice)  
   
--   [開始撰寫共用 UI 程式碼](#uicode)  
+-   [開始寫入共用的 UI 程式碼](#uicode)  
   
 -   [使用 Visual Studio Emulator for Android 測試您的應用程式。](#test)  
   
@@ -109,7 +106,7 @@ ms.lasthandoff: 04/05/2018
   
 <a name="dataservice" /> 
 
-## <a name="write-shared-data-service-code"></a>撰寫共用資料服務程式碼  
+## <a name="write-shared-data-service-code"></a>寫入共用的資料服務程式碼  
 
 您將在 **WeatherApp** .NET Standard 程式庫專案中撰寫跨所有平台共用的程式碼。 iOS、Android 及 Windows 專案的應用程式套件組建會參考此程式庫。  
   
@@ -222,7 +219,7 @@ ms.lasthandoff: 04/05/2018
   
  <a name="uicode" /> 
 
-## <a name="begin-writing-shared-ui-code"></a>開始撰寫共用 UI 程式碼  
+## <a name="begin-writing-shared-ui-code"></a>開始寫入共用的 UI 程式碼  
 
 Xamarin.Forms 可讓您實作 .NET Standard 程式庫中的共用 UI 程式碼。 在下列步驟中，您將在專案中新增一個含有按鈕的頁面。 此按鈕會以您在上一節中所看到天氣服務傳回的資料更新頁面上的文字：  
   

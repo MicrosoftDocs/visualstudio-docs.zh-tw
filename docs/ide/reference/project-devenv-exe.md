@@ -1,12 +1,10 @@
 ---
 title: -Project (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - /project Devenv switch
 - projects [Visual Studio], rebuilding
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Devenv, /project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 16cd05607bfd6a3bec2bee143b8f735220a5b643
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 56dc2cdb28e05c884fbf1e29c282a3e43f7390ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 識別所指定方案組態內要建置、清除、重建或部署的單一專案。  
@@ -57,10 +55,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
- 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
+ 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
   
  /projectconfig `ProjConfigName`  
- 選擇項。 要套用至所指定 `/project` 的專案組建組態名稱。  
+ 選擇性。 要套用至所指定 `/project` 的專案組建組態名稱。  
   
 ## <a name="remarks"></a>備註  
   

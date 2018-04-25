@@ -1,28 +1,23 @@
 ---
-title: "如何︰指定 .NET Framework 執行階段 | Microsoft Docs"
-ms.custom: 
+title: 如何︰指定 .NET Framework 執行階段 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a060315c17dfc351aaa3cba5fec52fdcfc3f9b0c
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c52cecb30bdaa4daab46c7359e255d52d71d1597
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何︰指定 .NET Framework 執行階段
 

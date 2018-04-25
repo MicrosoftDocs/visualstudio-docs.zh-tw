@@ -1,26 +1,23 @@
 ---
-title: "模組檢視 - 取樣資料 | Microsoft Docs"
-ms.custom: 
+title: 模組檢視 - 取樣資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 取樣資料的模組檢視，依據分析資料中取樣的模組來分組顯示效能資料。 每個模組都是階層式樹狀結構的根。 模組的取樣函式列在模組節點之下。  
@@ -30,7 +27,7 @@ ms.lasthandoff: 12/22/2017
   
  如果收集樣本的時候正在執行函式 (即函式在呼叫堆疊最上方)，則執行中的原始程式行和指令位址會列在函式節點之下。 因為資料是在執行程式行或指令時，針對原始程式行或指令指標來收集資料，所以程式行資料和指令資料的內含值和專屬值一律相同。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令指標位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  

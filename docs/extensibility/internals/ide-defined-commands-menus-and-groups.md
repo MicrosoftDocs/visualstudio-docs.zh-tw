@@ -35,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
 -   ShellCmdPlace.vsct  
   
- 這些檔案位於 *\<Visual Studio SDK 安裝路徑 >*\VisualStudioIntegration\Common\Inc\\。 這些檔案會提供定義和功能表和群組，您可以使用 VSPackage 的命令表 (.vsct) 組態檔中做為容器您自己的功能表、 群組和命令的 Guid。  
+ 這些檔案位於 *\<Visual Studio SDK 安裝路徑 >* \VisualStudioIntegration\Common\Inc\\。 這些檔案會提供定義和功能表和群組，您可以使用 VSPackage 的命令表 (.vsct) 組態檔中做為容器您自己的功能表、 群組和命令的 Guid。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

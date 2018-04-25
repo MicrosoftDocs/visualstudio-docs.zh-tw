@@ -30,10 +30,10 @@ VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]�
  [命令資料表格式參考](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於 unmanaged 附屬 UI dll。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令處理常式註冊  
- VSPackage，做為使用者介面 (UI) 的處理常式-根據的命令需要登錄項目命名 VSPackage `GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >*\Menus，其中*\<版本 >*版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。  
+ VSPackage，做為使用者介面 (UI) 的處理常式-根據的命令需要登錄項目命名 VSPackage `GUID`。 此登錄項目指定 VSPackage 的 UI 資源檔和該檔案中的功能表資源的位置。 登錄項目本身位於 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >* \Menus，其中*\<版本 >* 版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。  
   
 > [!NOTE]
->  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路徑\\*\<版本 >*會覆寫以替代根時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]殼層會初始化。 如需根路徑的詳細資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
+>  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路徑\\*\<版本 >* 會覆寫以替代根時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]殼層會初始化。 如需根路徑的詳細資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 的資源登錄項目  
  登錄項目結構是：  
@@ -46,7 +46,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
  \<*GUID*> 是`GUID`{XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} 形式 VSPackage。  
   
- *\<資源資訊 >*三個以逗號分隔的項目所組成。 這些元素，順序如下：  
+ *\<資源資訊 >* 三個以逗號分隔的項目所組成。 這些元素，順序如下：  
   
  \<*資源 DLL 路徑*>， \<*功能表資源識別碼*>， \<*功能表版本*>  
   

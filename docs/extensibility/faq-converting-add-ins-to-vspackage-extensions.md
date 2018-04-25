@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
   
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >* Package.cs。)  
   
 3.  將下列 `using` 陳述式加入檔案中：  
   
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>從 VSPackage 取得 DTE 物件  
   
-1.  在 VSIX 專案與 Visual Studio Package 項目範本中，尋找*\<專案名稱 >*Package.cs 檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。  
+1.  在 VSIX 專案與 Visual Studio Package 項目範本中，尋找*\<專案名稱 >* Package.cs 檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。  
   
 2.  加入以下 `using` 陳述式：  
   
@@ -161,7 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  建立具有功能表命令，在 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) > 一節。  
   
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >* Package.cs。)  
   
 3.  加入以下 `using` 陳述式：  
   
@@ -209,7 +209,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  建立具有功能表命令，在 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) > 一節。  
   
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >* Package.cs。)  
   
 3.  加入以下 `using` 陳述式：  
   

@@ -1,13 +1,9 @@
 ---
-title: "處理序檢視 | Microsoft Docs"
-ms.custom: 
+title: 處理序檢視 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.process
 helpviewer_keywords:
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - Profiling Tools,process view
 - Profiling Tools,process report
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c730169988d931d3e1e57dd22f2793b1f8a16a72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86e8a11f55edd2f7a04498b81ec6b8713876f718
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="process-view"></a>處理序檢視
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的程式碼剖析資料。  
@@ -38,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  使用取樣和檢測方法所產生的資料和包括.NET 記憶體資料在內的資料，其處理序檢視的資料行都相同。 下表說明資料行的值。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**唯一 ID**|分析工具產生的唯一處理程序或執行緒識別碼。|  
 |**ID**|系統產生的處理序或執行緒識別碼。|  

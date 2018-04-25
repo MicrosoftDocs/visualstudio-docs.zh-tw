@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>若要註冊的原始檔控制外掛程式 DLL  
   
-1.  新增軟體子機碼，指定您的公司名稱的子機碼後面接著您產品名稱的子機碼中的 HKEY_LOCAL_MACHINE 機碼下的兩個項目。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\*[公司名稱]*\\*[產品名稱]*\\*[項目]* = value。 SCCServerName 和 SCCServerPath，一律會呼叫兩個項目。 每一個都是一般的字串。  
+1.  新增軟體子機碼，指定您的公司名稱的子機碼後面接著您產品名稱的子機碼中的 HKEY_LOCAL_MACHINE 機碼下的兩個項目。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\ *[公司名稱]*\\ *[產品名稱]*\\ *[項目]* = value。 SCCServerName 和 SCCServerPath，一律會呼叫兩個項目。 每一個都是一般的字串。  
   
      例如，如果您的公司名稱是 Microsoft 與您的原始檔控制產品名為 SourceSafe，則這個登錄路徑會是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe。 這個子機碼，在第一個項目，SCCServerName，會是使用者可讀的字串命名您的產品。 第二個項目，SCCServerPath，是到來源的完整路徑控制 IDE 應該連接至的外掛程式 DLL。 下面會提供範例登錄項目：  
   
@@ -55,9 +55,9 @@ ms.lasthandoff: 04/16/2018
   
          HideInVisualStudio 是 DWORD 值，設為 1，以隱藏此外掛程式或 0，以顯示外掛程式。 如果未出現的登錄項目，預設行為是顯示外掛程式。  
   
-    -   DisableSccManager 登錄項目可以用來停用或隱藏**啟動\<原始檔控制伺服器 >**通常出現在下方功能表選項**檔案** ->  **原始檔控制**子功能表。 選取此功能表選項呼叫[SccRunScc](../../extensibility/sccrunscc-function.md)函式。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能想要停用或甚至隱藏**啟動**功能表選項。  
+    -   DisableSccManager 登錄項目可以用來停用或隱藏**啟動\<原始檔控制伺服器 >** 通常出現在下方功能表選項**檔案** ->  **原始檔控制**子功能表。 選取此功能表選項呼叫[SccRunScc](../../extensibility/sccrunscc-function.md)函式。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能想要停用或甚至隱藏**啟動**功能表選項。  
   
-         DisableSccManager 是 DWORD 值設定為 0 為啟用**啟動\<原始檔控制伺服器 >**功能表選項設為 1 可停用功能表選項，並以隱藏功能表選項設定為 2。 如果這個登錄項目沒有出現，預設行為是顯示的功能表選項。  
+         DisableSccManager 是 DWORD 值設定為 0 為啟用**啟動\<原始檔控制伺服器 >** 功能表選項設為 1 可停用功能表選項，並以隱藏功能表選項設定為 2。 如果這個登錄項目沒有出現，預設行為是顯示的功能表選項。  
   
     |範例登錄項目|範例值|  
     |---------------------------|------------------|  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  新增子機碼，SourceCodeControlProvider，HKEY_LOCAL_MACHINE 機碼中的軟體子機碼。  
   
-     這個子機碼下的登錄項目 ProviderRegKey 設定為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = 軟體\\*[公司名稱]*\\*[產品名稱]*。  
+     這個子機碼下的登錄項目 ProviderRegKey 設定為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = 軟體\\ *[公司名稱]*\\ *[產品名稱]*。  
   
      以下是範例內容，供這個子機碼。  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  建立具名 InstalledSCCProviders SourceCodeControlProvider 子機碼下的子機碼，然後將該子機碼下的一個項目。  
   
-     此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱，且值為，同樣地，在步驟 1 中建立的子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[顯示名稱]* = 軟體\\*[公司名稱]* \\ *[產品名稱]*。  
+     此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱，且值為，同樣地，在步驟 1 中建立的子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[顯示名稱]* = 軟體\\ *[公司名稱]* \\ *[產品名稱]*。  
   
      例如:   
   

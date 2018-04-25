@@ -1,12 +1,9 @@
 ---
-title: "安全性和當地語系化附屬組件 | Microsoft Docs"
-ms.custom: 
+title: 安全性和當地語系化附屬組件 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - key pairs for strong-named assemblies
 - strong-named assemblies, security considerations
@@ -19,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: 6d953840-b301-47d5-8d34-30c1b29b5071
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f2834e267e2494f62f5cfed9121a0a94a22afb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ca89e842b6e5229890e93c06b7ca83658f6dbf7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>安全性和當地語系化附屬組件
 

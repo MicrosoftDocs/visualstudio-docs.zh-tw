@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  啟動[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在標準登錄區和負載專案輸入 （亦即，要您的專案類型，不具現化您的專案類型的來源） 的專案。  
   
-2.  開啟專案屬性並移至**偵錯**頁面。 如**命令**，輸入路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (根據預設，這是*[磁碟機]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe)。  
+2.  開啟專案屬性並移至**偵錯**頁面。 如**命令**，輸入路徑[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (根據預設，這是 *[磁碟機]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe)。  
   
 3.  如**命令引數**，型別`/rootsuffix exp`的 （VSIP 安裝時建立） 在實驗登錄區。  
   

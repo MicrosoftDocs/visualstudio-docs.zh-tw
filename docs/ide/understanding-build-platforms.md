@@ -1,13 +1,10 @@
 ---
-title: "了解組建平台 | Microsoft Docs"
-ms.custom: 
+title: 了解組建平台 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.build.newsolutionplatform
 - vs.build.editprojectplatforms
@@ -17,17 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 47d4efb409c2779327c4914422b7e37becd6e3c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-build-platforms"></a>了解組建平台
 您可以儲存套用至不同目標平台之不同版本的方案和專案屬性。 例如，您可以建立以 x86 平台為目標的偵錯組態以及以 x64 平台為目標的偵錯組態。 您可以快速變更使用中平台，以輕鬆地建置多個組態。  

@@ -2,11 +2,8 @@
 title: ResolveComReference 工作 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 26
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07381c84ec7213fe17aabb1db91cc1ab3be6188d
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 取得一或多個類型程式庫名稱或 .tlb 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。  
@@ -41,7 +37,7 @@ ms.lasthandoff: 04/10/2018
 |`DelaySign`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則將公開金鑰放在組件中。 如為 `false`，則完整簽署組件。|  
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的 tlbimp.exe 和 aximp.exe，或選擇性地覆寫。|  
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 tlbimp.exe 和 aximp.exe，以產生必要的包裝函式組件。 此參數會啟用多目標。|  
-|`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設值為 `false`。|  
+|`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設為 `false`。|  
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定保留公開/私密金鑰組<br /><br /> 的項目。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含公開/私密金鑰組<br /><br /> 的項目。|  
 |`NoClassMembers`|選擇性的 `Boolean` 參數。|  
@@ -50,7 +46,7 @@ ms.lasthandoff: 04/10/2018
 |`ResolvedModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。|  
 |`SdkToolsPath`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|  
 |`StateFile`|選擇性的 `String` 參數。<br /><br /> 指定 COM 元件時間戳記的快取檔案。 如果沒有，則每次執行都會重新產生所有的包裝函式。|  
-|`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設值為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|  
+|`TargetFrameworkVersion`|選擇性的 `String` 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|  
 |`TargetProcessorArchitecture`|選擇性的 `String` 參數。<br /><br /> 指定慣用的目標處理器架構。 平移後，傳送至 tlbimp.exe /machine 旗標。<br /><br /> 參數值應該是 <xref:Microsoft.Build.Utilities.ProcessorArchitecture> 的成員。|  
 |`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 COM 參考的類型程式庫檔案路徑。 此參數中包含的項目可能包含項目中繼資料。 如需詳細資訊，請參閱下文的＜TypeLibFiles 項目中繼資料＞一節。|  
 |`TypeLibNames`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要解析的類型程式庫名稱。 此參數中包含的項目必須包含某些項目中繼資料。 如需詳細資訊，請參閱下文的＜TypeLibNames 項目中繼資料＞一節。|  
@@ -82,6 +78,6 @@ ms.lasthandoff: 04/10/2018
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

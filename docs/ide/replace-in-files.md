@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 檔案中尋找和檔案中取代 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 檔案中尋找和檔案中取代 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -16,13 +13,14 @@ helpviewer_keywords:
 - replace in files
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 496cd3c2c6d92e5db591c09bf4d0d5ec645e4c79
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="replace-in-files"></a>檔案中取代
 

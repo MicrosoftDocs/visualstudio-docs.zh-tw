@@ -64,4 +64,4 @@ ms.lasthandoff: 04/16/2018
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>測試以查看它們強制執行初始設定的擴充功能  
  沒有任何顯示的提示，表示是否已初始化文件，所以您可能會難以找出您的延伸模組為強制執行初始化。 您可以設定登錄機碼，使驗證更容易，因為這會導致所有未完全初始化文字的文件的標題`[Stub]`標題中。  
   
- 在**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，將**StubTabTitleFormatString**至**{0} [Stub]**。
+ 在**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，將**StubTabTitleFormatString**至 **{0} [Stub]**。

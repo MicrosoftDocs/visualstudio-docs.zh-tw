@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 整合 (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 整合 (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
@@ -57,7 +53,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會查看 `PropertyGroup`、 `ItemGroup`、 `Import`、屬性和項目的條件，以便建立這份清單。  
   
 ## <a name="additional-build-actions"></a>其他建置動作  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以讓您藉由使用 [檔案屬性] 視窗的 [[建置動作]](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以讓您藉由使用 [ **檔案屬性** ] 視窗的 [ [建置動作](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) ] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
   
 ```xml  
 <ItemGroup>  
@@ -147,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和驗證  
- 使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 結構描述檔驅動。 這些都會安裝在結構描述快取中，可以到 *\<Visual Studio 安裝目錄>*\Xml\Schemas\1033\MSBuild 中找到。  
+ 使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 結構描述檔驅動。 這些都會安裝在結構描述快取中，可以到 *\<Visual Studio 安裝目錄>* \Xml\Schemas\1033\MSBuild 中找到。  
   
  核心 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 類型是在 Microsoft.Build.Core.xsd 中定義，而 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用的通用類型則是在 Microsoft.Build.CommonTypes.xsd 中定義。 若要自訂結構描述，讓自訂的項目類型名稱、屬性和工作都能夠使用 IntelliSense 和驗證，可以編輯 Microsoft.Build.xsd，或是建立自己的結構描述 (內含 CommonTypes 或 Core 結構描述)。 如果已經建立了自己的結構描述，必須使用 [ **屬性** ] 視窗引導 XML 編輯器找到它。  
   

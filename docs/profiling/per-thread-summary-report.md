@@ -1,29 +1,24 @@
 ---
-title: "個別執行緒摘要報表 | Microsoft Docs"
-ms.custom: 
+title: 個別執行緒摘要報表 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
 helpviewer_keywords:
 - Concurrency Visualizer, Per Thread Summary Report
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033d24c2df6e1e483028c6c4ea2d161a9e99a983
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5ac6fe1bc08ce4bed17b2f42c568769ad4314023
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
 此橫條圖會顯示目前可見的時間範圍內，每個未隱藏執行緒在每個活動類別所花費的時間比例。 「執行」表示執行緒正在執行；所有其他分類則表示執行緒正在等待某個項目。  

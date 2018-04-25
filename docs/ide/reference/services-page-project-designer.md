@@ -1,12 +1,9 @@
 ---
-title: "專案設計工具、服務頁面 | Microsoft Docs"
-ms.custom: 
+title: 專案設計工具、服務頁面 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,14 +11,14 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 

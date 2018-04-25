@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
   
  如果您想要開始在特定的方案之外的 Visual Studio 的實驗執行個體，請在命令視窗執行下列命令：  
   
- 「*\<Visual studio 安裝路徑 >*\Common7\IDE\devenv.exe"RootSuffix Exp  
+ 「*\<Visual studio 安裝路徑 >* \Common7\IDE\devenv.exe"RootSuffix Exp  
   
 > [!NOTE]
 >  實驗執行個體底下的登錄寫入`<version number>Exp`和`<version number>Exp_Config`節點。 比方說是 Visual Studio 2015 實驗登錄區  

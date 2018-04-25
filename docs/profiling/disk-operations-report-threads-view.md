@@ -1,29 +1,24 @@
 ---
-title: "磁碟作業報告 (執行緒檢視) | Microsoft Docs"
-ms.custom: 
+title: 磁碟作業報告 (執行緒檢視) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.diskoperations
 helpviewer_keywords:
 - Concurrency Visualizer, File Operations Report (Threads View)
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7fcef6ffd829ea999c1ed8d62d34083f5adab46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: afe999ea56dbbdfd2179307f69ec12df92c612e9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。  

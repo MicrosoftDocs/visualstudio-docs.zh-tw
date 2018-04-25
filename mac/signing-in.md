@@ -1,16 +1,15 @@
 ---
-title: "登入 Visual Studio for Mac | Microsoft Docs"
-description: 
+title: 登入 Visual Studio for Mac
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 5fa5a2479b7b04cd8ad9ec84287a30d801ff90ca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 

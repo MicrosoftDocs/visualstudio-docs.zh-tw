@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中分析負載測試結果和錯誤 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.pageresult
 - vs.test.load.dialog.column
@@ -20,13 +20,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2757f5a09e3abbcc924f94ccdcb008f671a3a8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ef22fcdfeb1b3ccf0005940ca2f7201545482f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/19/2018
 
 ## <a name="collect-percentile-data"></a>收集百分位數資料
 
- 有些負載測試資料表可以包含額外的資料行，其中包含百分位數資料與按照網路模擬而分為群組的回應時間。 根據預設並未收集這個資料。 只有將結果儲存至資料庫時才能使用百分位數資料，在本機儲存時則無法使用。 如需詳細資訊，請參閱[管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取要變更的特定回合設定節點。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [僅限統計資料] 或 [所有個別細節]。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+ 有些負載測試資料表可以包含額外的資料行，其中包含百分位數資料與按照網路模擬而分為群組的回應時間。 根據預設並未收集這個資料。 只有將結果儲存至資料庫時才能使用百分位數資料，在本機儲存時則無法使用。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取要變更的特定回合設定節點。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [僅限統計資料] 或 [所有個別細節]。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 ## <a name="the-requests-table"></a>要求資料表
 

@@ -1,30 +1,26 @@
 ---
-title: "列出反組譯碼命令 | Microsoft Docs"
-ms.custom: 
+title: 列出反組譯碼命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listdisassembly
 helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a704ac783f4efc300de26c2a5e987f82fc2e9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3007b5d675ab8e48406fdaaa69c4858554968920
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。  
@@ -41,10 +37,10 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  每個參數都可以使用其完整格式或簡短形式叫用。  
   
  /count: `number` [或] /c: `number` [或] /length: `number` [或] /l: `number`  
- 選擇項。 要顯示的指令數目。 預設值為 8。  
+ 選擇性。 要顯示的指令數目。 預設值為 8。  
   
  /endaddress: `expression` [或] /e: `expression`  
- 選擇項。 停止反組譯碼的位址。  
+ 選擇性。 停止反組譯碼的位址。  
   
  /codebytes:`yes`&#124;`no` [或] /bytes:`yes`&#124;`no` [或] /b:`yes`&#124;`no`  
  選擇性。 指出是否要顯示程式碼位元組。 預設值為 `no`。  

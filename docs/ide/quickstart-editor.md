@@ -1,24 +1,21 @@
 ---
-title: "在 Visual Studio 中編輯簡介 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中編輯簡介 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 082a89453d76ac70edfbd39681d33b6af2700cc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 46f627d7157972e277589d2edf07309190c6430d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
 

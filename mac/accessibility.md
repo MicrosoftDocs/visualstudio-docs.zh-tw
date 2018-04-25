@@ -1,16 +1,15 @@
 ---
-title: "協助工具選項 | Microsoft Docs"
-description: 
+title: 協助工具選項
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 08/15/2017
-ms.topic: article
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 13c69a1c13507a0f856bc652f7ffa0e5ab233081
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b434a1cf0290c1c43d0f309850e112843907d6da
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="accessibility"></a>協助工具選項
 

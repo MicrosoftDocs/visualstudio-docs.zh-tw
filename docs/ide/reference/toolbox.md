@@ -1,11 +1,9 @@
 ---
-title: "Visual Studio 中的工具箱視窗 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的工具箱視窗 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -14,14 +12,14 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: fc7683e5796310eb35710c37fefe8cb861a83f48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toolbox"></a>工具箱
 

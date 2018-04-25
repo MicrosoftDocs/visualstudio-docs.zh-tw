@@ -1,19 +1,19 @@
 ---
 title: Visual Studio 中用於負載測試的圖形計數器繪圖選項 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, graphing counters
 ms.assetid: 1969c20b-e0eb-48f6-a49f-a9090cd86008
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00860a262573491a358c0f992577f48fc3480d93
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5c52aefb731fdb1c858819d1c005d27000ad840e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>如何：指定圖形計數器的繪圖選項
 

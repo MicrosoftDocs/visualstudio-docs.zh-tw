@@ -85,7 +85,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="requirements"></a>需求  
  標頭： scc.h  
   
- (環境 SDK 中提供的通用資料夾中，預設包含*[磁碟機]*\Program Files\VSIP 8.0\EnvSDK\common\inc; MSSCCI 範例中，VSIP 資料夾中也提供*[磁碟機]*\ProgramFiles\VSIP 8.0\MSSCCI)。  
+ (環境 SDK 中提供的通用資料夾中，預設包含 *[磁碟機]* \Program Files\VSIP 8.0\EnvSDK\common\inc; MSSCCI 範例中，VSIP 資料夾中也提供 *[磁碟機]* \ProgramFiles\VSIP 8.0\MSSCCI)。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   

@@ -48,7 +48,7 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是在零售環境
   
 1.  執行使用 Visual Studio [/記錄檔](../ide/reference/log-devenv-exe.md)ActivityLog.xml 寫入磁碟，在您的工作階段期間的命令列參數。
 
-2.  在關閉之後 Visual Studio，尋找活動記錄檔中的子資料夾 Visual Studio 資料： *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.xml。  
+2.  在關閉之後 Visual Studio，尋找活動記錄檔中的子資料夾 Visual Studio 資料： *%appdata%* \Microsoft\VisualStudio\15.0\ActivityLog.xml。  
   
 3.  使用任何文字編輯器中開啟活動記錄檔。 以下是典型的項目：  
   

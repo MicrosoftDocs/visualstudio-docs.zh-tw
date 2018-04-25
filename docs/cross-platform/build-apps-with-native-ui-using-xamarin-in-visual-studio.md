@@ -2,23 +2,19 @@
 title: 使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 31
 author: charlespetzold
 ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 0ec6529e6a9c41d1b9a4fa99a79d756754df1f45
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
@@ -105,7 +101,7 @@ ms.lasthandoff: 04/05/2018
   
 <a name="dataservice" />
 
-## <a name="write-shared-data-service-code"></a>撰寫共用資料服務程式碼  
+## <a name="write-shared-data-service-code"></a>寫入共用的資料服務程式碼  
 
  **WeatherApp** 專案是 .NET Standard 程式庫。 您將在此專案中撰寫跨所有平台共用的程式碼。 由於每個應用程式專案都具有對 .NET Standard 程式庫的參考，因此 iOS、Android 及 UWP 應用程式套件都會隨附此程式庫。  
   

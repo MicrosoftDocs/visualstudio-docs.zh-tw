@@ -1,30 +1,26 @@
 ---
-title: "評估陳述式命令 | Microsoft Docs"
-ms.custom: 
+title: 評估陳述式命令 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
 - Debug.EvaluateStatement command
 - Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f0d5ecdcf1318490ac0829bb9dd6ded9519872
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe960ec84830ce76095577f7d8ee2f0c9c4ccbe8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 評估並顯示指定的陳述式。  

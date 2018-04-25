@@ -1,28 +1,25 @@
 ---
-title: "DA0003：許多核心樣本 | Microsoft Docs"
-ms.custom: 
+title: DA0003：許多核心樣本 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
 - vs.performance.3
 - vs.performance.rules.DAManyKernelSamples
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7451a5b18b0879a64d92525d5b72a6f4c1ec8cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 508ba3cd803aee877e022d447f061e6e3d495e51
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 |||  

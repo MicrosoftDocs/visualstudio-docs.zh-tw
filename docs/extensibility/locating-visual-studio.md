@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | 單一檔案原生可執行檔以找出符合準則，例如版本或發行前版本，已安裝哪些產品，而且其工作負載所安裝的執行個體。 也支援尋找 Visual Studio 2010 及更新版本中，雖然較少會傳回資訊，Visual Studio 2017 及更新版本。 請參閱[wiki](https://github.com/Microsoft/vswhere/wiki)範例。 |
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell 指令程式支援 2.0 及更新版本中，傳回可用來尋找做為相同的準則為基礎的執行個體做為物件豐富的資訊_vswhere_以及探索更多執行個體的相關屬性。 請參閱[wiki](https://github.com/Microsoft/vssetup.powershell/wiki)範例。 |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 會自動找到_VSIXInstaller_並將透過命令列傳遞至安裝_*.vsix_檔案。 這可以是不需要直接查詢 Api 支援的安裝中很有用。 請參閱[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)範例。 |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 會自動找到_VSIXInstaller_並將透過命令列傳遞至安裝 _*.vsix_檔案。 這可以是不需要直接查詢 Api 支援的安裝中很有用。 請參閱[wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)範例。 |
 
 ## <a name="see-also"></a>另請參閱
 

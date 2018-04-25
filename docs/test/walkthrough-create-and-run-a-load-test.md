@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中建立和執行負載測試 | Microsoft Docs
 ms.date: 10/01/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, in load tests
 - unit tests, load test walkthrough
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 53bde20393f5acd55295bf106cb35f6f09e68bf3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: cc59ffe0e394a89f8277470a2fcf9099aedccbbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 

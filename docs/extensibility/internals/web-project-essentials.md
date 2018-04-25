@@ -34,7 +34,7 @@ Web 專案建立 Web 應用程式。 您可以使用 Web 專案建立 Web 應用
   
     -   Web 應用程式專案 (WAP) 會產生單一的可執行檔，它結合了所有智慧網頁，以及 /App_Code 資料夾中的所有原始程式檔的程式碼。  
   
--   Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >*\Projects\\ *YourWebSite*。  
+-   Web 專案的方案檔位於與網站本身分開。 根據預設，方案檔會位於 \Documents and 設定\\*YourAccount*\My 文件\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
   
     > [!NOTE]
     >  如果您想要保留與網站的方案檔，只要那里移動，並重新開啟它。  

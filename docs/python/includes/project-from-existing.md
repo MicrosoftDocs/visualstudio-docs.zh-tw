@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/19/2018
+---
 1. 啟動 Visual Studio，然後選取 [檔案] > [新增] > [專案]。
 
 1. 在 [新增專案] 對話方塊中，搜尋 "Python"，並選取 [從現有 Python 程式碼] 範本，再提供專案名稱和位置，然後選取 [確定]。

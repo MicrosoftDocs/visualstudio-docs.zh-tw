@@ -52,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 
 工作區擁有<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>工作區中簡單但強大控制服務。 設定的基本概觀，請參閱[自訂建置和偵錯工作](../ide/customize-build-and-debug-tasks-in-visual-studio.md)。
 
-設定適用於大部分`SettingsType`類型為_.json_檔，像是_VSWorkspaceSettings.json_和_tasks.vs.json_。
+設定適用於大部分`SettingsType`類型為 _.json_檔，像是_VSWorkspaceSettings.json_和_tasks.vs.json_。
 
 工作區設定的電源中心 「 範圍 」，也就是只在工作區中的路徑。 當取用者呼叫<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>，包括要求的路徑和設定類型的所有領域會彙都總。 範圍的彙總優先順序如下所示：
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
 1. 所有進一步父目錄，且包含的工作區的根目錄。
 1. 全域設定，「 使用者目錄中。
 
-結果是的執行個體<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>。 此物件保存設定對於特定類型，並可以查詢的索引鍵名稱的設定儲存為`string`。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>方法和<xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions>擴充方法預期的呼叫端知道所要求的設定值的類型。 因為大部分的設定檔會保存為_.json_檔案，許多引動過程將會使用`string`， `bool`， `int`，以及這些類型的陣列。 支援的物件類型。 在這些情況下，您可以使用`IWorkspaceSettings`本身為型別引數。 例如: 
+結果是的執行個體<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>。 此物件保存設定對於特定類型，並可以查詢的索引鍵名稱的設定儲存為`string`。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>方法和<xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions>擴充方法預期的呼叫端知道所要求的設定值的類型。 因為大部分的設定檔會保存為 _.json_檔案，許多引動過程將會使用`string`， `bool`， `int`，以及這些類型的陣列。 支援的物件類型。 在這些情況下，您可以使用`IWorkspaceSettings`本身為型別引數。 例如: 
 
 ```json
 {
@@ -178,7 +178,7 @@ UI 內容可用來自動載入您的封裝。 值為 `4646B819-1AE0-4E79-97F4-8A
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage 封裝未正確載入
 
-工作區擴充性是大量 MEF 為基礎，並組合錯誤將導致裝載開啟的資料夾，無法載入封裝。 例如，如果延伸模組匯出的類型`ExportFileContextProviderAttribute`，但該型別只實作`IWorkspaceProviderFactory<IFileContextActionProvider>`，嘗試在 Visual Studio 中開啟資料夾時，會發生錯誤。 錯誤詳細資料位於_%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解決任何錯誤，以取得您的延伸模組所實作的型別。
+工作區擴充性是大量 MEF 為基礎，並組合錯誤將導致裝載開啟的資料夾，無法載入封裝。 例如，如果延伸模組匯出的類型`ExportFileContextProviderAttribute`，但該型別只實作`IWorkspaceProviderFactory<IFileContextActionProvider>`，嘗試在 Visual Studio 中開啟資料夾時，會發生錯誤。 錯誤詳細資料位於 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解決任何錯誤，以取得您的延伸模組所實作的型別。
 
 ## <a name="next-steps"></a>後續步驟
 

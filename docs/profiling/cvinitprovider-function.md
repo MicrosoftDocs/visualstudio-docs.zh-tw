@@ -1,29 +1,24 @@
 ---
-title: "CvInitProvider 函式 | Microsoft Docs"
-ms.custom: 
+title: CvInitProvider 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
 helpviewer_keywords:
 - CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15abebb58382674bc7943d7949dfddbc62524c91
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 54824ee12c06d18a0d6ded0dfc378a131377cab0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 初始化標記提供者。 必須在其他並行視覺化檢視 SDK 函式之前呼叫。  

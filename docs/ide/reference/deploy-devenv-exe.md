@@ -1,28 +1,26 @@
 ---
 title: -Deploy (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Devenv, /deploy switch
 - deploy Devenv switch
 - deploying applications [Visual Studio], after build
 - /deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dee247f9c948ae5a5d0ac6926679b7849c4c1fbc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 在建置或重建之後部署方案。 只適用於 受控碼專案。  
@@ -41,10 +39,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
- 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
+ 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
   
  /projectconfig `ProjConfigName`  
- 選擇項。 建置具名 `/project` 時所要使用的專案組建組態名稱。  
+ 選擇性。 建置具名 `/project` 時所要使用的專案組建組態名稱。  
   
 ## <a name="remarks"></a>備註  
  指定的專案必須是部署專案。 如果指定的專案不是部署專案，則將已建置的專案傳遞給部署時，它會失敗並發生錯誤。  

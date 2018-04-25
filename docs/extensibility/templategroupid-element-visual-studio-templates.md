@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="remarks"></a>備註  
  `TemplateGroupID` 是元素。  
   
- 值`TemplateGroupID`搭配專案系統登錄項目 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本號碼 >*\Projects\\)篩選的範本中出現的**加入新項目** 對話方塊。  
+ 值`TemplateGroupID`搭配專案系統登錄項目 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本號碼 >* \Projects\\)篩選的範本中出現的**加入新項目** 對話方塊。  
   
 |Visual C++ 值|意義|  
 |------------------------|-------------|  

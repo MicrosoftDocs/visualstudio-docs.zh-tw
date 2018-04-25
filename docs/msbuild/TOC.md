@@ -194,4 +194,6 @@
 ##### [UidManager 工作](uidmanager-task.md)
 ##### [UpdateManifestForBrowserApplication 工作](updatemanifestforbrowserapplication-task.md)
 ### [要逸出的特殊字元](special-characters-to-escape.md)
+## [以程式設計方式使用 MSBuild](msbuild-api.md)
+### [更新至 MSBuild 15](updating-an-existing-application.md)
 ## [MSBuild 字彙表](msbuild-glossary.md)

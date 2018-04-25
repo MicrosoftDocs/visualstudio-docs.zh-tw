@@ -38,7 +38,7 @@ VSPackage，以及其支援的檔案必須是使用者的檔案系統上。 位�
  [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>Managed VSPackage  
- Managed 的 Vspackage 也可以安裝在任何位置。 不過，您應該考慮永遠將它們安裝至全域組件快取 (GAC)，以減少組件載入的時間。 因為 managed 的 Vspackage 一律是強式名稱組件，在 GAC 中安裝這些表示只在安裝期間發生的其強式名稱簽章驗證。 安裝在檔案系統中其他位置的強式名稱組件必須具有驗證每次載入其簽章。 當您在 GAC 中安裝 managed 的 Vspackage 時，使用 regpkg 工具**/assembly**參數寫入登錄項目指向組件的強式名稱。  
+ Managed 的 Vspackage 也可以安裝在任何位置。 不過，您應該考慮永遠將它們安裝至全域組件快取 (GAC)，以減少組件載入的時間。 因為 managed 的 Vspackage 一律是強式名稱組件，在 GAC 中安裝這些表示只在安裝期間發生的其強式名稱簽章驗證。 安裝在檔案系統中其他位置的強式名稱組件必須具有驗證每次載入其簽章。 當您在 GAC 中安裝 managed 的 Vspackage 時，使用 regpkg 工具 **/assembly**參數寫入登錄項目指向組件的強式名稱。  
   
  如果您在 GAC 以外的位置安裝 managed 的 Vspackage，請遵循先前給 unmanaged Vspackage 選擇的目錄階層的建議。 使用 regpkg 工具**assemblyfile**參數寫入登錄項目指向 VSPackage 組件的路徑。  
   

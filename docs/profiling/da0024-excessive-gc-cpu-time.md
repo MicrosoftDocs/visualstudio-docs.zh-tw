@@ -1,27 +1,24 @@
 ---
-title: "DA0024：過多 GC CPU 時間 | Microsoft Docs"
-ms.custom: 
+title: DA0024：過多 GC CPU 時間 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0024
 - vs.performance.24
 - vs.performance.rules.DA0024
 ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 931dd6f37273954dbbdbc8465e514c6db2be590d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e16c273dee14e45e1fc4dc3bb69b27236a6802f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：過多 GC CPU 時間
 |||  

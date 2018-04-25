@@ -264,7 +264,7 @@ HRESULT EnumMetricSections(
 |預留位置|描述|  
 |-----------------|-----------------|  
 |*[登錄機碼]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
-|*[版本 root]*|Visual Studio 版本 (例如， `7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用**/rootsuffix**切換至**devenv.exe**。 VSIP，對於此修飾詞通常是**Exp**，因此版本根為，比方說，8.0Exp。|  
+|*[版本 root]*|Visual Studio 版本 (例如， `7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用 **/rootsuffix**切換至**devenv.exe**。 VSIP，對於此修飾詞通常是**Exp**，因此版本根為，比方說，8.0Exp。|  
 |*[度量 root]*|這可能是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：**到應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須反映在登錄中的版本。|  
 |*[度量 type]*|要寫入標準的類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些所有定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
 |*[度量]*|若要將度量指派值的項目名稱。 實際的組織的度量取決於指標的類型。|  
@@ -274,7 +274,7 @@ HRESULT EnumMetricSections(
 >  儲存所有的 Guid，格式為`{GUID}`。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>偵錯引擎  
- 以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 偵錯引擎的度量的類型名稱，且對應至*[公制 type]*上述登錄樹狀子目錄中。  
+ 以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 偵錯引擎的度量的類型名稱，且對應至 *[公制 type]* 上述登錄樹狀子目錄中。  
   
  `Engine`\  
   
@@ -301,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[連接埠供應商 guid]*|如果有的話，連接埠供應商的 GUID。 許多偵錯引擎會使用預設連接埠供應商，並因此不會指定自己的供應商。 在此情況下，子機碼`PortSupplier`將不會。|  
   
 ### <a name="port-suppliers"></a>連接埠供應商  
- 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 是一個連接埠的供應商的度量的類型名稱，而對應*[公制 type]*。  
+ 以下是在登錄中的連接埠供應商度量資訊的組織。 `PortSupplier` 是一個連接埠的供應商的度量的類型名稱，而對應 *[公制 type]*。  
   
  `PortSupplier`\  
   
@@ -319,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[類別 guid]*|實作此連接埠供應商類別 GUID|  
   
 ### <a name="symbol-providers"></a>符號提供者  
- 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 是的符號提供者的度量的類型名稱，而對應*[公制 type]*。  
+ 以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 是的符號提供者的度量的類型名稱，而對應 *[公制 type]*。  
   
  `SymbolProvider`\  
   
@@ -347,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[類別 guid]*|類別會實作這個符號提供者的 GUID|  
   
 ### <a name="expression-evaluators"></a>運算式評估工具  
- 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的度量的類型名稱，且對應至*[公制 type]*。  
+ 以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的度量的類型名稱，且對應至 *[公制 type]*。  
   
 > [!NOTE]
 >  指標類型`ExpressionEvaluator`中未定義 dbgmetric.h，因為它會假設運算式評估工具的所有度量的變更將會移到適當的運算式評估工具度量函式 (的版面配置`ExpressionEvaluator`子機碼有點複雜，因此詳細資料會隱藏 dbgmetric.lib 內）。  
@@ -378,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[偵錯引擎 guid]*|這個運算式評估工具的運作方式與偵錯引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>運算式評估工具擴充功能  
- 以下是標準的運算式評估工具擴充功能中登錄的組織。 `EEExtensions` 是度量的型別名稱的運算式評估工具擴充功能，而對應*[公制 type]*。  
+ 以下是標準的運算式評估工具擴充功能中登錄的組織。 `EEExtensions` 是度量的型別名稱的運算式評估工具擴充功能，而對應 *[公制 type]*。  
   
  `EEExtensions`\  
   
@@ -393,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[延伸模組 guid]*|運算式評估工具延伸模組的 GUID|  
   
 ### <a name="exceptions"></a>例外狀況  
- 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量的類型名稱，且對應至*[公制 type]*。  
+ 以下是在登錄中的例外狀況度量資訊的組織。 `Exception` 例外狀況的度量的類型名稱，且對應至 *[公制 type]*。  
   
  `Exception`\  
   
@@ -420,7 +420,7 @@ HRESULT EnumMetricSections(
 |*[例外狀況]*|例外狀況的名稱： 例如， **_com_error**或**Control-break**。 這些名稱也可用來識別使用者特定的例外狀況。|  
   
 ## <a name="requirements"></a>需求  
- 這些檔案位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安裝目錄 (根據預設， *[磁碟機]*\Program Files\Microsoft Visual Studio 2010 的 SDK\\)。  
+ 這些檔案位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安裝目錄 (根據預設， *[磁碟機]* \Program Files\Microsoft Visual Studio 2010 的 SDK\\)。  
   
  標頭： includes\dbgmetric.h  
   

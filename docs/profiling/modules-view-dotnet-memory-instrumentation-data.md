@@ -1,34 +1,29 @@
 ---
-title: "模組檢視 - .NET 記憶體檢測資料 | Microsoft Docs"
-ms.custom: 
+title: 模組檢視 - .NET 記憶體檢測資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體檢測資料 [模組] 檢視，會將記憶體和計時資料依據分析執行中所執行的模組來分類。 模組函式的分析資料會列在模組節點下。  
   
 ## <a name="general"></a>一般  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|函式或模組的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
  模組的內含與專有記憶體值是模組中函式的內含與專有記憶體值的總和。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**內含配置**|-   對於函式，這是該函式所建立物件的總數。 此數量包含該函式呼叫的函式所建立的物件。<br />-   對於模組，是在執行分析期間，模組中至少有一個函式正在執行時所配置的物件數目。 此數量包括模組函式呼叫所產生的函式中已配置的物件。|  
 |**內含配置 %**|分析執行期間，模組或函式的內含配置佔所有已配置物件的百分比。|  
@@ -62,7 +57,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|-   對於函式，這是在函式中花費的時間。 此時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間長度。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在此模組或函式的總功能內含耗用時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -73,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="elapsed-exclusive-values"></a>功能專屬耗用值  
  功能專屬耗用值表示函式直接在呼叫堆疊最上方執行的時間。 該時間包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但不包含在子函式中花費的時間。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間**|-   對於函式，這是在模組或函式中花費的時間。 這包含呼叫作業系統 (例如內容切換和輸入/輸出作業) 所花費的時間，但排除在子函式中花費的時間。<br />-   對於模組，這是模組中函式功能專屬耗用時間的總和。|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在此模組或函式的總功能專屬耗用時間內，花費在分析執行的總功能專屬耗用時間百分比。|  
@@ -84,7 +79,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|-   對於函式，這是呼叫函式所花費的時間。 這包含在子函式中花費的時間，但排除呼叫作業系統 (例如內容切換和輸入/輸出作業) 的時間。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間，排除呼叫作業系統的時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在此模組或函式的應用程式內含時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -95,7 +90,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="application-exclusive-values"></a>應用程式專屬值  
  應用程式專屬值表示花費在模組或函式中的時間，排除花費在子函式中的時間。 所表示的時間也排除呼叫作業系統的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的總應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的總應用程式專屬時間。|  
 |**應用程式專屬 (Application Exclusive) 時間 %**|在此模組或函式的應用程式專屬時間內，花費在分析執行的總功能專屬耗用時間百分比。|  

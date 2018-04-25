@@ -1,15 +1,14 @@
 ---
-title: "管理專案和方案屬性 | Microsoft Docs"
+title: 管理專案和方案屬性
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: eac94a70cdfac556fce6e04188ab24c5102eab25
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c4d4366843a6ea07286c73810f821b41f95e44b9
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 

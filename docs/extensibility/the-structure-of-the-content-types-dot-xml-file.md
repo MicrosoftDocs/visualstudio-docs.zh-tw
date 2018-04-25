@@ -26,7 +26,7 @@ ms.lasthandoff: 04/16/2018
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 會使用 [Content_Types].xml 檔案來安裝封裝，但不會安裝該檔案本身。  
   
 > [!NOTE]
->  雖然本主題只適用於使用 VSIX 封裝中的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型屬於的*開放封裝慣例 (OPC)*標準。 如需詳細資訊，請參閱[OPC: 新標準為封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
+>  雖然本主題只適用於使用 VSIX 封裝中的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型屬於的*開放封裝慣例 (OPC)* 標準。 如需詳細資訊，請參閱[OPC: 新標準為封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
  下列各節描述的根項目與屬性和子項目。  

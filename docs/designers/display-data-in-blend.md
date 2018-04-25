@@ -1,19 +1,19 @@
 ---
-title: 在 Blend 中顯示資料 | Microsoft Docs
+title: 在 Blend 中顯示資料
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bec94556432d4f62cf44963f6949d56473b0d48d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 7e7a8e878651154ad87e7991d93a4040ffc55e44
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-data-in-blend"></a>在 Blend 中顯示資料
 

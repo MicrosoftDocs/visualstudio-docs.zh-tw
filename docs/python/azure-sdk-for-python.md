@@ -1,28 +1,22 @@
 ---
-title: Azure SDK for Python |Microsoft 文件
+title: Azure SDK for Python
 description: 適用於 Python 的 Azure SDK 可讓您更輕鬆地從在任何平台上執行的 Python 應用程式取用 Microsoft Azure 服務。
-ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3f03ca08dddb90f6eb86a439f7f92307df3b4335
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -42,7 +36,7 @@ pip install azure
 
 ## <a name="documentation"></a>文件
 
-您可以在 [azure-sdk-for-python.readthedocs.org (英文)](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html) 找到文件。
+您可以在 [azure-sdk-for-python.readthedocs.org (英文)](https://docs.microsoft.com/en-us/python/azure/?view=azure-python) 找到文件。
 
 [適用於 Python 的 Azure SDK 開發人員中心](http://azure.microsoft.com/develop/python/)也有一些實用的資源，其中包括數個教學課程：
 

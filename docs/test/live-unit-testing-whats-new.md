@@ -1,8 +1,8 @@
 ---
-title: "Live Unit Testing 中的新功能 | Microsoft Docs"
+title: Live Unit Testing 中的新功能 | Microsoft Docs
 ms.date: 10-11-2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
@@ -11,11 +11,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f979970b926e3a1a3d0ef7aee53f1e71e7fc0dc
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: cda0426397afd1ce36a122c06eb010f30a671879
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新功能
 

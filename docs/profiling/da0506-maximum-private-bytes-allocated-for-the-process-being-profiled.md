@@ -1,27 +1,24 @@
 ---
-title: "DA0506：為所分析的處理序配置的最大私用位元組 | Microsoft Docs"
-ms.custom: 
+title: DA0506：為所分析的處理序配置的最大私用位元組 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0506
 - vs.performance.DA0506
 - vs.performance.506
 ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4a624e790a618f923f5a70981fc3fef32809966d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 441f68f64fee0849a3de995a2032816ef41f87c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
 |||  

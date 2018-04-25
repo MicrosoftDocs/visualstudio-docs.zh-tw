@@ -1,17 +1,16 @@
 ---
-title: "偵錯 - 資料視覺效果"
-description: "偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。"
+title: 偵錯 - 資料視覺效果
+description: 偵錯是程式設計中常見且必要的一部分。 Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 本篇文章探討在偵錯工具中檢查物件時，可檢視的不同資料視覺效果。
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 
@@ -64,7 +63,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 ![貝茲曲線視覺效果](media/data-visualizations-image16.png)
 
 
-## <a name="string"></a>字串
+## <a name="string"></a>String
 
 少於 100 個字元的字串將完整顯示，而不進行預覽。 較長的字串將會在預覽中完整顯示。 字串可進行編輯，且視覺化檢視會伴隨顯示 [編輯] 按鈕，讓您能夠在預覽或字串值編輯器中編輯字串值，如下所示：
 

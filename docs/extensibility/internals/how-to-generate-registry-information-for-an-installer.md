@@ -25,7 +25,7 @@ ms.lasthandoff: 04/16/2018
 RegPkg.exe 公用程式，可以用來產生 managed VSPackage 的登錄資訊清單。 資訊清單可以併入 Windows Installer 安裝程式套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。  
   
 > [!IMPORTANT]
->  RegPkg 產生專屬於您的開發系統路徑名稱，因此每次您使用 RegPkg，您必須編輯輸出使用適當的 Windows Installer 格式屬性。 例如，InprocServer32 值應該是**[SystemFolder]mscoree.dll**和路徑應該使用**[#filekey]**和**[$componentkey]**。 調整的輸出，如此一來支援的電腦與 Windows 安裝在不同的磁碟機或不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑。 如需詳細資訊，請參閱[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您遵循針對您的開發系統路徑 RegPkg 慣例 — 比方說，檔案識別碼的表單 File_*filename*— 您需要進行較少的變更。  
+>  RegPkg 產生專屬於您的開發系統路徑名稱，因此每次您使用 RegPkg，您必須編輯輸出使用適當的 Windows Installer 格式屬性。 例如，InprocServer32 值應該是 **[SystemFolder]mscoree.dll**和路徑應該使用 **[#filekey]** 和 **[$componentkey]**。 調整的輸出，如此一來支援的電腦與 Windows 安裝在不同的磁碟機或不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑。 如需詳細資訊，請參閱[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您遵循針對您的開發系統路徑 RegPkg 慣例 — 比方說，檔案識別碼的表單 File_*filename*— 您需要進行較少的變更。  
   
 ### <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單  
   

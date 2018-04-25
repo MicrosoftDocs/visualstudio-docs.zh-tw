@@ -1,29 +1,24 @@
 ---
-title: "以可見時間範圍為基礎的報表 | Microsoft Docs"
-ms.custom: 
+title: 以可見時間範圍為基礎的報表 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
 - Concurrency Visualizer, Report Based on Visible Time Range
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
 [設定檔] 檢視顯示的報表是以目前可見的時間範圍和通道為基礎。 若要查看資料不同子集的詳細資訊，請按一下圖例中的項目。  

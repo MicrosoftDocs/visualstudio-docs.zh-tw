@@ -1,27 +1,22 @@
 ---
-title: "處理序檢視 - 爭用資料 | Microsoft Docs"
-ms.custom: 
+title: 處理序檢視 - 爭用資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de13644837c3fd21b38e0be6f4414700eb92414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bf40d5714810fd4beba9d5d75ffbffbf1895883
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的爭用資料。  
@@ -30,7 +25,7 @@ ms.lasthandoff: 12/22/2017
   
  下表說明處理序檢視資料表中資料行的值。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**封鎖時間**|處理序或執行緒的函式遭到封鎖而無法執行期間的時間總計。|  

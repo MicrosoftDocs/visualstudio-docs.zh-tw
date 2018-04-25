@@ -1,12 +1,10 @@
 ---
-title: "管理應用程式資源 (.NET) | Microsoft Docs"
-ms.custom: 
+title: 管理應用程式資源 (.NET) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-application-resources-net"></a>管理應用程式資源 (.NET)
 

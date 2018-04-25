@@ -1,28 +1,26 @@
 ---
 title: -Build (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Team System], command-line
 - /build Devenv switch
 - Devenv, /build switch
 - build Devenv switch
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8eba6684167e4b60f02512e9b0fc1c7dc514a614
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1cc01dac34723f2a587e76461d41a60361a72091
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 使用指定的方案組態檔建置方案。  
@@ -41,10 +39,10 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
  必要。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。  
   
  /project `ProjName`  
- 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
+ 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
   
  /projectconfig `ProjConfigName`  
- 選擇項。 建置具名 `/project` 時所要使用的專案組建組態名稱。  
+ 選擇性。 建置具名 `/project` 時所要使用的專案組建組態名稱。  
   
 ## <a name="remarks"></a>備註  
  此參數會執行與整合式開發環境內之 [建置方案] 功能表命令相同的功能。  

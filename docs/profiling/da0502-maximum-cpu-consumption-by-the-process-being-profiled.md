@@ -1,27 +1,24 @@
 ---
-title: "DA0502：所分析之處理序的最大 CPU 使用量 | Microsoft Docs"
-ms.custom: 
+title: DA0502：所分析之處理序的最大 CPU 使用量 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0502
 - vs.performance.DA0502
 - vs.performance.502
 ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cb9e860afcd88b50b324f1d2b62c6d95a55c270f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f8803a1a0daa0efb9ead00e1e5169057fd88d218
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502：進行程式碼剖析之處理序所需的最大 CPU 使用量
 |||  

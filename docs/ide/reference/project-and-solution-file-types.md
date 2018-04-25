@@ -2,11 +2,8 @@
 title: 專案和方案檔類型 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - File Properties.CopyToOutputDirectory
 - File Properties.CustomToolNamespace
@@ -25,14 +22,14 @@ helpviewer_keywords:
 - suo files
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 3cc172d53e326d5bb20668f6919e887eca39f582
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 

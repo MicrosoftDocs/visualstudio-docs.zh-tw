@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-test-a-manually-created-custom-start-page"></a>若要測試手動建立的自訂起始頁  
   
-1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
+1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製 **%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
   
 2.  如果您的起始頁參考任何控制項或在 Visual Studio 不會安裝的組件中的類型，將組件複製和貼在 * Visual Studio 安裝資料夾 ***\Common7\IDE\PrivateAssemblies\\** .  
   

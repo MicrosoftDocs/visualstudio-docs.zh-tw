@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  取得一份 Perl 語言。  
   
-2.  取得一份 Perl 指令碼 ConvertCTCToVSCT.pl，一般位於 *\<Visual Studio SDK 安裝路徑 >*\VisualStudioIntegration\Tools\bin 資料夾。  
+2.  取得一份 Perl 指令碼 ConvertCTCToVSCT.pl，一般位於 *\<Visual Studio SDK 安裝路徑 >* \VisualStudioIntegration\Tools\bin 資料夾。  
   
 3.  取得一份您想要轉換的 .ctc 原始程式檔。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在 Visual Studio 命令提示字元中，移至包含 .cto 和 .ctsym 檔的目錄。  
   
-4.  型別**vsct.exe** *ctofilename * * *.cto** * vsctfilename***.vsct-S***symfilename ***.ctsym**。  
+4.  型別**vsct.exe** *ctofilename * * *.cto** * vsctfilename ***.vsct-S***symfilename ***.ctsym**。  
   
      `ctofilename` 是.cto 檔，名稱`vsctfilename`是您想要建立之 vsct 檔的名稱和`symfilename`是.ctsym 檔的名稱。  
   

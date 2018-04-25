@@ -1,27 +1,24 @@
 ---
-title: "DA0017：高比率的使用中記憶體分頁到磁碟 | Microsoft Docs"
-ms.custom: 
+title: DA0017：高比率的使用中記憶體分頁到磁碟 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
 - vs.performance.DA0017
 ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0490b5c18c166c6826ac4433277dd5e871ee4d2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e962cfe761af48f5c7aa02d1e476c33e1bf9f4a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
 |||  

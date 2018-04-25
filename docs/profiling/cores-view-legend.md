@@ -1,29 +1,24 @@
 ---
-title: "核心檢視圖例 | Microsoft Docs"
-ms.custom: 
+title: 核心檢視圖例 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View Legend
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7ae3c6bee8b75fd99edc7da150e71ef7394d63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c10695eacdf680d247be8ef95ae14c3208ae92af
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 核心檢視圖例依色彩和名稱識別每個執行緒。 當中包含顯示跨核心內容切換計數、內容切換總數，以及跨核心之內容切換百分比的欄。 圖例中的列以遞減順序，依跨核心內容切換的次數排序。  
@@ -34,7 +29,7 @@ ms.lasthandoff: 12/22/2017
   
  下表描述圖例項目。  
   
-|項目|定義|  
+|元素|定義|  
 |-------------|----------------|  
 |執行緒名稱|顯示前一個核心時間軸中執行緒的名稱和執行緒的色彩。|  
 |跨核心內容切換|執行緒也從一個邏輯核心切換到另一個的內容切換次數。 它不會區分從一個處理器晶粒跨越到另一個的跨核心內容切換，與留在相同晶粒上的跨核心內容切換。|  

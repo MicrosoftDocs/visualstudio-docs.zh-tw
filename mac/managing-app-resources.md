@@ -1,16 +1,15 @@
 ---
-title: "管理應用程式資源"
-description: 
+title: 管理應用程式資源
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: 95aa6abeb5a64158fe0ef0ed2b64392108248523
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5972f0433291070c2c60bf906f031b9d78623186
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="managing-app-resources"></a>管理應用程式資源
 

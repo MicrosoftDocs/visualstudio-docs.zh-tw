@@ -1,19 +1,19 @@
 ---
-title: XAML 錯誤和警告 | Microsoft Docs
+title: XAML 錯誤和警告
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
 ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e29417e1a993adfb2c4bb7c78a6f1ed0209cef
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: b252fe651355000f63c47c5b45cf6d0e9db4d776
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -23,11 +23,11 @@ ms.lasthandoff: 04/03/2018
 
 系統中的多項工具會在幕後平行分析 XAML。 依據偵測到錯誤的工具來看，XAML 錯誤可以區分為下列三種類型：
 
-|**偵測到錯誤的項目**|**錯誤碼格式**|  
-|--------------------------------|-----------------|  
-|XAML 語言服務 (XAML 編輯器)|XLSxxxx|  
-|XAML 設計工具|XDGxxxx|  
-|XAML 編輯後繼續|XECxxxx|  
+|**偵測到錯誤的項目**|**錯誤碼格式**|
+|--------------------------------|-----------------|
+|XAML 語言服務 (XAML 編輯器)|XLSxxxx|
+|XAML 設計工具|XDGxxxx|
+|XAML 編輯後繼續|XECxxxx|
 
 > [!Note]
 > 並非所有錯誤/警告都有對應的程式碼。 這種錯誤通常是 XAML 設計工具的錯誤。

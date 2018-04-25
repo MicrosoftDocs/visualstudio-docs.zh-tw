@@ -1,12 +1,10 @@
 ---
-title: "在 Visual Studio 中巡覽程式碼 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中巡覽程式碼 | Microsoft Docs
+ms.custom: ''
 ms.date: 09/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
 - code editor, go to
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4a0ad83754d16a60d70ed823b07545c9cb837f6f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c36702aad29bbfe7b81ca38cf2bda162fbf5c99e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 

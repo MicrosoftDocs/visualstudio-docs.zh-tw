@@ -1,27 +1,24 @@
 ---
-title: "DA0021：高比率的 Gen 1 記憶體回收 | Microsoft Docs"
-ms.custom: 
+title: DA0021：高比率的 Gen 1 記憶體回收 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.21
 - vs.performance.DA0021
 - vs.performance.rules.DA0021
 ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6a9d6214fc0960a5aca324f519d555f2631109f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5602563c9d9cea9f1500c95f9a7df38a3f4184e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 |||  

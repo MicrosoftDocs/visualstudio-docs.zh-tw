@@ -1,12 +1,9 @@
 ---
-title: "Visual Studio 中的方案和專案 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的方案和專案 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/5/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
 - vs.environment.projects
@@ -26,13 +23,14 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d242a74bd1eaef86e3465d53aa148429af42f7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11441c826a316d995e75f2b6c79232f19985c17b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 

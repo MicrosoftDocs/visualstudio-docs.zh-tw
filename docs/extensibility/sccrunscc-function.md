@@ -66,7 +66,7 @@ SCCRTN SccRunScc(
   
  此函式呼叫計數與目前所選檔案的檔案名稱的陣列。 如果系統管理工具支援它，檔案清單可用來預先在管理介面中的檔案否則，您可以忽略清單。  
   
- 此函式通常叫用使用者選取時**啟動\<原始檔控制伺服器 >**從**檔案** -> **原始檔控制**功能表。 這**啟動**功能表選項可一律停用，或甚至隱藏設定登錄項目。 請參閱[如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需詳細資訊，這和其他功能的位元)。  
+ 此函式通常叫用使用者選取時**啟動\<原始檔控制伺服器 >** 從**檔案** -> **原始檔控制**功能表。 這**啟動**功能表選項可一律停用，或甚至隱藏設定登錄項目。 請參閱[如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需詳細資訊，這和其他功能的位元)。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
