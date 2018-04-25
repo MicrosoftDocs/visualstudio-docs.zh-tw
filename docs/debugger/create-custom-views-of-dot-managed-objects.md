@@ -1,13 +1,9 @@
 ---
-title: "建立受管理物件的自訂檢視 |Microsoft 文件"
-ms.custom: 
+title: 建立受管理物件的自訂檢視 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - debugger, expanding data types
 - mcee_mc.dat file
 ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 329e7fae6a2a8682c23417f88e59700b7caffd53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6be491a5c7a0ceb0ed536416cdd3b273f96b4bb1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-managed-objects"></a>建立受管理物件的自訂檢視
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。  
@@ -55,7 +50,7 @@ ms.lasthandoff: 12/22/2017
   
  您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例： 偵錯運算式評估工具增益集](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   

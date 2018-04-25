@@ -1,29 +1,24 @@
 ---
-title: "Idiasymbol:: Get_isstripped |Microsoft 文件"
-ms.custom: 
+title: 'Idiasymbol:: Get_isstripped |Microsoft 文件'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isStripped method
 ms.assetid: cc2c4a0b-ab9f-4b79-a8ff-a3badb0405d6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c273e6872c3874d9d39a0ed8782ec0e6c624c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f79204e0082fdfb1920959e1c1b143bf04529ee
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 擷取旗標，指出是否從符號檔中已移除專用符號。  
@@ -56,6 +51,6 @@ HRESULT get_isStripped(
 |標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)

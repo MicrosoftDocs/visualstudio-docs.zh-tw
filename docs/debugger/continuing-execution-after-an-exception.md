@@ -2,8 +2,7 @@
 title: 例外狀況之後繼續執行 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,11 +27,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebdb034c85bce6924c90467e0f3cda3bb765832
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 1b26fe427ba83eea9e989e492fde89ade498a114
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 當偵錯工具會中斷執行，因為發生例外狀況時，您會看到**例外狀況協助程式**，根據預設。 如果您已停用**例外狀況協助程式**中**選項**對話方塊中，您會看到**例外狀況助理**（C# 或 Visual Basic） 或**例外狀況**對話方塊 （c + +）。  

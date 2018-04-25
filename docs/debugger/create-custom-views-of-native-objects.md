@@ -2,8 +2,7 @@
 title: 在 偵錯工具中建立原生物件的自訂檢視 |Microsoft 文件
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立原生物件的自訂檢視
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視窗中顯示原生類型的方式 (例如，**監看式**視窗中，**區域變數**視窗中，然後在**資料提示方塊**。
@@ -86,7 +85,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
   
 2.  載入的 c + + 專案或最上層方案項目一部分的.natvis 檔案。 此群組包含所有已載入的 c + + 專案，包括類別庫，但是它不包含其他語言的專案 （例如，您無法載入.natvis 檔案從 C# 專案）。 針對可執行檔專案，您應該使用方案項目來裝載任何 .pdb 中尚未出現的 .natvis 檔案，因為沒有可供使用的 C++ 專案。  
   
-3.  使用者專屬的 natvis 目錄 (例如， **%USERPROFILE%\Documents\Visual Studio 2017\Visualizers**或**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)。  
+3.  使用者專屬的 natvis 目錄 (例如， **%USERPROFILE%\Documents\Visual Studio 2017\Visualizers**或 **%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)。  
   
 4.  全系統 Natvis 目錄 (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**)。 這個目錄是隨 Visual Studio 的.natvis 檔案複製的位置。 如果您有系統管理員權限，您可以將其他檔案加入這個目錄以及。  
   
@@ -97,7 +96,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
   
  如果.natvis 檔案內嵌於.pdb，您無法在偵錯時加以修改。  
   
- 使用**.natvisreload**命令時，您要的 natvis 檔案升級為較新版本 （例如，如果它已簽入原始檔控制，而且您想要取得最新變更的其他人對該檔案）。 建議您使用 Visual Studio XML 編輯器來編輯 natvis 檔案。  
+ 使用 **.natvisreload**命令時，您要的 natvis 檔案升級為較新版本 （例如，如果它已簽入原始檔控制，而且您想要取得最新變更的其他人對該檔案）。 建議您使用 Visual Studio XML 編輯器來編輯 natvis 檔案。  
   
 ##  <a name="BKMK_Expressions_and_formatting"></a> 運算式和格式化  
  Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了增強功能和 c + + 運算式在偵錯工具中所述的限制[內容運算子 （c + +）](../debugger/context-operator-cpp.md)，您應該注意下列差異：  

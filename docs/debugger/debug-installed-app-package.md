@@ -1,13 +1,9 @@
 ---
-title: "偵錯已安裝的應用程式套件 (UWP) |Microsoft 文件"
+title: 偵錯已安裝的應用程式套件 (UWP) |Microsoft 文件
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式套件 Visual Studio (UWP)
 
@@ -62,7 +57,7 @@ ms.lasthandoff: 01/19/2018
 > [!NOTE]
 > Visual Studio 也可以將附加至任何正在執行的 UWP 應用程式處理序藉由選取**偵錯**，然後**附加至處理序**。 附加至正在執行的處理序不需要原始的 Visual Studio 專案中，但載入處理序的符號將有助於大幅偵錯的處理序，您不需要的原始碼時。
   
-## <a name="remote"></a>偵錯在遠端電腦上的安裝或執行應用程式 
+## <a name="remote"></a> 偵錯在遠端電腦上的安裝或執行應用程式 
 
 當您在遠端電腦上安裝的應用程式封裝偵錯時第一次時，Visual Studio 會安裝適用於您的目標裝置的遠端工具的正確版本。 Windows 10 電腦、 XBox、 HoloLens 或 IoT 裝置，必須是您的目標裝置。
 
@@ -97,7 +92,7 @@ ms.lasthandoff: 01/19/2018
 
 在 UWP 應用程式的遠端部署的進階選項的資訊，請參閱[部署和偵錯 UWP 應用程式](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options)。 
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  [遠端偵錯](../debugger/remote-debugging.md)  
