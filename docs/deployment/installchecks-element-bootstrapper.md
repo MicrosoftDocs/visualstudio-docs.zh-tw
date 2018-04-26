@@ -2,12 +2,8 @@
 title: '&lt;InstallChecks&gt;元素 （啟動載入器） |Microsoft 文件'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 23
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 51fcfd8aaa0048cac3fb9a33c7974132655de87a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （啟動載入器）
 `InstallChecks`項目支援啟動各種不同的測試以確定所有適當的應用程式的必要條件都已安裝在本機電腦。  
@@ -88,9 +83,9 @@ ms.lasthandoff: 12/22/2017
 |`ProcessorArchitecture`|選擇性。 此安裝的目標電腦處理器。 預設為 `msil`。|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- 這個項目是選擇性子項目`InstallChecks`。 每個執行個體`ExternalCheck`，啟動載入器會在個別的處理序中執行具名的外部程式，並將它的結束代碼儲存在所指示的屬性`Property`。 `ExternalCheck`適用於實作複雜的相依性檢查，或檢查元件存在的唯一方式是將它執行個體化。  
+ 這個項目是選擇性子項目`InstallChecks`。 每個執行個體`ExternalCheck`，啟動載入器會在個別的處理序中執行具名的外部程式，並將它的結束代碼儲存在所指示的屬性`Property`。 `ExternalCheck` 適用於實作複雜的相依性檢查，或檢查元件存在的唯一方式是將它執行個體化。  
   
- `ExternalCheck`包含任何項目，並具有下列屬性。  
+ `ExternalCheck` 包含任何項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -101,7 +96,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="filecheck"></a>FileCheck  
  這個項目是選擇性子項目`InstallChecks`。 每個執行個體`FileCheck`，啟動載入器會判斷檔案是否存在，以及傳回檔案的版本號碼。 啟動載入器檔案並沒有版本號碼，如果設定所命名的屬性`Property`設為 0。 如果檔案不存在，`Property`未設定任何值。  
   
- `FileCheck`包含任何項目，並具有下列屬性。  
+ `FileCheck` 包含任何項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -114,7 +109,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  這個項目是選擇性子項目`InstallChecks`。 每個執行個體`MsiProductCheck`，啟動載入器會檢查指定的 Microsoft Windows Installer 安裝是否已執行，直到完成為止。 屬性值設定視安裝之產品的狀態而定。 正值表示已安裝產品，0 或-1 表示未安裝。 （請參閱 Windows Installer SDK 函式 MsiQueryFeatureState，如需詳細資訊）. 如果在電腦上未安裝 Windows Installer`Property`未設定。  
   
- `MsiProductCheck`包含任何項目，並具有下列屬性。  
+ `MsiProductCheck` 包含任何項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
@@ -125,24 +120,24 @@ ms.lasthandoff: 12/22/2017
 ## <a name="registrycheck"></a>RegistryCheck  
  這個項目是選擇性子項目`InstallChecks`。 每個執行個體`RegistryCheck`，啟動載入器會檢查以查看指定的登錄機碼是否存在，或是否有指定的值。  
   
- `RegistryCheck`包含任何項目，並具有下列屬性。  
+ `RegistryCheck` 包含任何項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要。 若要將結果儲存屬性的名稱。 這個屬性可參考下測試的`InstallConditions`項目子系的`Command`項目。 如需詳細資訊，請參閱[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要。 登錄機碼的名稱。|  
-|`Value`|選擇性。 要擷取之登錄值名稱。 預設會傳回預設值的文字。 `Value`必須是字串或 DWORD。|  
+|`Value`|選擇性。 要擷取之登錄值名稱。 預設會傳回預設值的文字。 `Value` 必須是字串或 DWORD。|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  這個項目是選擇性子項目`InstallChecks`。 每個執行個體`RegistryFileCheck`，啟動載入器會擷取指定的檔案版本第一次嘗試從指定的登錄機碼擷取至檔案的路徑。 這是特別有用，如果您想要查閱登錄中的值為指定的目錄中的檔案。  
   
- `RegistryFileCheck`包含任何項目，並具有下列屬性。  
+ `RegistryFileCheck` 包含任何項目，並具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要。 若要將結果儲存屬性的名稱。 這個屬性可參考下測試的`InstallConditions`項目子系的`Command`項目。 如需詳細資訊，請參閱[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要。 登錄機碼的名稱。 其值會解譯成檔案的路徑，除非`File`屬性設定。 如果此機碼不存在，`Property`未設定。|  
-|`Value`|選擇性。 要擷取之登錄值名稱。 預設會傳回預設值的文字。 `Value`必須是字串。|  
+|`Value`|選擇性。 要擷取之登錄值名稱。 預設會傳回預設值的文字。 `Value` 必須是字串。|  
 |`FileName`|選擇性。 檔案名稱。 如果指定，取得從登錄機碼的值會假設是一個目錄路徑，而此名稱會附加到其。 如果未指定，從登錄所傳回的值會假設檔案的完整路徑。|  
 |`SearchDepth`|選擇性。 要針對具名檔案的子資料夾中搜尋深度。 搜尋是深度優先。 預設值為 0，將搜尋限制的登錄機碼值所指定的最上層資料夾。|  
   
@@ -185,6 +180,6 @@ ms.lasthandoff: 12/22/2017
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

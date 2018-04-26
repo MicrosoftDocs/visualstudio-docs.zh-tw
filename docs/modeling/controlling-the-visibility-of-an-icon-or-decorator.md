@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 070f49b09086d463a13470f389a4857225b7add9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 的文字行。 您可以設裝飾項目會出現，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可以有不同的圖示會出現取決於該人員的性別的子系數目等等。

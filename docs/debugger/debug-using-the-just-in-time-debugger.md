@@ -1,26 +1,23 @@
 ---
-title: "使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft 文件"
-ms.custom: 
+title: 使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft 文件
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動時執行 Visual Studio 外部的應用程式中發生的例外狀況或損毀。 這可讓您測試您的應用程式未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
@@ -30,7 +27,7 @@ ms.lasthandoff: 12/22/2017
 > [!TIP] 
 > 如果您只想要知道如何回應的時間只需偵錯工具 對話方塊，請參閱[本主題](../debugger/just-in-time-debugging-in-visual-studio.md)。
 
-##  <a name="BKMK_Enabling"></a>啟用或停用時間恰好偵錯  
+##  <a name="BKMK_Enabling"></a> 啟用或停用時間恰好偵錯  
 您可以啟用或停用 Just 時間從 Visual Studio 偵錯**工具 > 選項** 對話方塊。
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>若要啟用或停用 Just-In-Time 偵錯  
@@ -55,7 +52,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>若要編輯登錄來停用 Just-In-Time 偵錯  
   
-1.  在**啟動**功能表中，搜尋並執行`regedit.exe`  
+1.  在**啟動**功能表中，搜尋並執行 `regedit.exe`  
   
 2.  在**登錄編輯程式**視窗中，找出並刪除下列登錄項目：  
   
@@ -125,7 +122,7 @@ static void Main(string[] args)
   
  建置方案 (在 Visual Studio 中，選擇 **建置 > 重建方案**)。 您可以選擇偵錯或發行組態 (選擇**偵錯**完整的偵錯經驗)。 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
   
- 在建置程序會建立可執行檔的 ThrowsNullException.exe。 您可以建立 C# 專案的資料夾底下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或**...\ThrowsNullException\ThrowsNullException\bin\Release**。  
+ 在建置程序會建立可執行檔的 ThrowsNullException.exe。 您可以建立 C# 專案的資料夾底下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或 **...\ThrowsNullException\ThrowsNullException\bin\Release**。  
   
  按兩下 ThrowsNullException.exe。 您應該會看到命令視窗中的，像這樣：  
   
@@ -144,7 +141,7 @@ static void Main(string[] args)
   
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")  
   
- 在下**可能的偵錯工具**，您應該會看到**Microsoft Visual Studio 的新執行個體<available version>**列已選取。 如果已選取，選取該選項。  
+ 在下**可能的偵錯工具**，您應該會看到**Microsoft Visual Studio 的新執行個體<available version>** 列已選取。 如果已選取，選取該選項。  
   
  在視窗底部下**您要使用選取的偵錯工具進行偵錯？**，按一下 **是**。  
   
@@ -177,7 +174,7 @@ static void Main(string[] args)
   
      若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [在 Just-in-time，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)   

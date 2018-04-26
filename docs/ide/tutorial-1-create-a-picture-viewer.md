@@ -1,9 +1,9 @@
 ---
-title: 教學課程 1：建立圖片檢視器 | Microsoft Docs
+title: 教學課程 1：建立圖片檢視器
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 您也會開始撰寫程式碼。 您將學習如何：  
-  
+
 -   建立新的專案。  
-  
+
 -   測試 (偵錯) 應用程式。  
-  
+
 -   將基本控制項 (例如核取方塊和按鈕) 加入至表單。  
-  
+
 -   使用版面配置將控制項放置在表單上。  
-  
+
 -   將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。  
-  
+
 -   使用 IntelliSense 和程式碼片段撰寫程式碼。  
-  
+
 -   撰寫事件處理常式方法。  
-  
+
  完成時，您的程式看起來類似下列圖片。  
-  
+
  ![您在本教學課程中建立的圖片](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 您在本教學課程中建立的圖片  
-  
+
  若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。  
-  
+
  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何：在 C# 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
-  
+
 > [!NOTE]
 >  這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  
 >   
 >  若要查看 Visual Basic 程式碼，請選擇程式碼區塊頂端的 [VB] 索引標籤，若要查看 Visual C# 程式碼，請選擇 [C#] 索引標籤。如果您有興趣了解 Visual C++，請參閱[使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)和 [C++ 語言教學課程](http://www.cplusplus.com/doc/tutorial/)。  
 >   
 >  如果您想了解如何撰寫 Visual C# 或 Visual Basic UWP 應用程式，請參閱[建置 UWP 應用程式](https://developer.microsoft.com/windows/apps)。
-  
+
 ## <a name="related-topics"></a>相關主題  
-  
+
 |標題|描述|  
 |-----------|-----------------|  
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|  

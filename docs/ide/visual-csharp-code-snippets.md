@@ -1,9 +1,9 @@
 ---
-title: C# 程式碼片段 | Microsoft Docs
-ms.custom: ''
+title: C# 程式碼片段
 ms.date: 06/05/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
 - code snippets [C#]
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ee8b5adc7d0c7c40f80cdfed7cc873b092d5eb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 
@@ -75,7 +75,7 @@ Visual Studio for C# 中預設會包含下列程式碼片段。
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼片段函式](../ide/code-snippet-functions.md)  
-[程式碼片段](../ide/code-snippets.md)  
-[範本參數](../ide/template-parameters.md)  
-[如何：使用範圍陳述式程式碼片段](../ide/how-to-use-surround-with-code-snippets.md)
+- [程式碼片段函式](../ide/code-snippet-functions.md)
+- [程式碼片段](../ide/code-snippets.md)
+- [範本參數](../ide/template-parameters.md)
+- [如何：使用範圍陳述式程式碼片段](../ide/how-to-use-surround-with-code-snippets.md)

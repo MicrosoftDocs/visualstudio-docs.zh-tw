@@ -1,6 +1,7 @@
 ---
 title: 匿名方法和程式碼分析
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c219bbd3f674d564fe1341057de213b451f755f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e069976badeffbce04b2f245277426441d3df2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 *匿名方法*是沒有名稱的方法。 匿名方法最常用來做為委派的參數傳遞的程式碼區塊。

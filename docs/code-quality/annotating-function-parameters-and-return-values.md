@@ -1,6 +1,7 @@
 ---
 title: 註釋函式參數和傳回值
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -126,11 +127,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a987dc94ac4f3eb71d047ba33d410d7391a91
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6c5147bdb1720c6da20dd93dd3bda81c2e6464
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文章說明簡單的函式參數的註解一般用法： 純量和結構和類別的指標，和大部分的緩衝區類型。  本文也會顯示常見的使用模式的附註。 功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)

@@ -1,7 +1,9 @@
 ---
-title: 如何： 偵錯 ASP.NET 型工作流程 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 偵錯 ASP.NET 型工作流程 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>HOW TO：ASP.NET 工作流程偵錯 (舊版)
-本主題描述如何偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-基礎[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]目標的應用程式[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]在舊版的 Windows 工作流程設計工具。
 
- 您可以針對在 ASP.NET 中啟動的舊版工作流程，或是藉由附加至裝載工作流程的處理序而發行為 Web 服務的舊版工作流程進行偵錯。
+本主題描述如何偵錯 ASP.NET 型 Windows Workflow Foundation (WF) 應用程式，目標是.NET Framework 3.5 版或舊版的 Windows 工作流程設計工具中 WinFX。
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>若要偵錯 ASP.NET 工作流程
+您可以針對在 ASP.NET 中啟動的舊版工作流程，或是藉由附加至裝載工作流程的處理序而發行為 Web 服務的舊版工作流程進行偵錯。
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>若要偵錯 ASP.NET 工作流程
 
 1.  啟用偵錯 ASP.NET 應用程式，藉由設定**偵錯 = true** web.config 檔案中。
 

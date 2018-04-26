@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的 Visual Basic 使用者入門 | Microsoft Docs
+title: Visual Studio 中的 Visual Basic 使用者入門
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 使用者入門
+
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在您這麼做時探索 Visual Studio [整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
 
 ## <a name="before-you-begin"></a>開始之前
+
 以下快速常見問題集介紹一些重要概念。
+
 ### <a name="what-is-visual-basic"></a>什麼是 Visual Basic？
+
 Visual Basic 是一種類型安全的程式設計語言，設計成容易了解。 它是衍生自 BASIC，其表示「初學者的全方位符號式指令碼 (Beginner's All-purpose Symbolic Instruction Code)」。
+
 ### <a name="what-is-visual-studio"></a>什麼是 Visual Studio？
-Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。  
+
+Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。
+
 ### <a name="what-is-a-console-app"></a>什麼是主控台應用程式？
+
 主控台應用程式會接受輸入，並在命令列視窗 (也稱為 主控台) 中顯示輸出。
+
 ### <a name="what-is-net-core"></a>什麼是 .NET Core？
+
 .NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼  (.NET Framework 和 .NET Core 包含預先建置功能的程式庫以及 Common Language Runtime (CLR)，而後者作為在其中執行程式碼的虛擬機器)。
 
 ## <a name="start-developing"></a>開始進行開發
+
 準備好開始進行開發了嗎？ 讓我們開始吧！
 
 ### <a name="create-a-project"></a>建立專案
+
 首先，我們將建立 Visual Basic 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
 
 1. 開啟 Visual Studio 2017。
@@ -62,11 +74,13 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
+
 1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [Get Tools and Features] (取得工具和功能)。
 
 2. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。   
 
 ## <a name="create-a-what-is-your-name-application"></a>建立 "What Is Your Name" 應用程式
+
 讓我們建立應用程式，提示您輸入您的名稱，然後顯示它與日期和時間。 方式如下：
 
 1. 如果尚未開啟，則請開啟 *WhatIsYourName* 專案。
@@ -93,6 +107,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 5. 按任意鍵以關閉主控台視窗。
 
 ## <a name="create-a-calculate-this-application"></a>建立 "Calculate This" 應用程式
+
 1. 開啟 Visual Studio 2017，然後從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
 2. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。  
@@ -123,6 +138,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
     ![主控台視窗顯示 CaluculateThis 應用程式，其中包含提示要採取的動作。](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>後續步驟
+
 恭喜您完成此教學課程！ 若要更深入了解 Visual Basic 和 Visual Studio IDE，請參閱下列頁面。
 
 * [Visual Basic 指南](/dotnet/visual-basic/index)

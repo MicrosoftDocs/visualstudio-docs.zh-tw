@@ -1,7 +1,8 @@
 ---
-title: Live Unit Testing 簡介 | Microsoft Docs
+title: Live Unit Testing 簡介
 description: 了解 Live Unit Testing 優點，以及在對專案進行單元測試時如何使用它。
 ms.date: 2017-09-11
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67a0ad52ce9de8277d48cb30f6b97bf347e1fe80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f4e6eedead828c4c24eaf0ce57d9aa9d3119731
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 簡介
 

@@ -1,6 +1,7 @@
 ---
 title: CA1806：不要忽略方法的結果
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,11 +14,11 @@ ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 605222de258598e1022288b50f0a30ba87777fdc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法的結果
 |||

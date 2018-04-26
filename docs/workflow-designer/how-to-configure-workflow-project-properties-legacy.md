@@ -1,7 +1,9 @@
 ---
-title: 如何： 設定工作流程專案屬性 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 設定工作流程專案屬性 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - workflow
 helpviewer_keywords:
@@ -14,17 +16,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f7ca9271b8f7585e232ca636dcb5e13de3a6eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66589ab34a969290263afba80acaa7aa7273a3fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>HOW TO：設定工作流程專案屬性 (舊版)
 
 依照下列步驟來檢視或修改與工作流程專案相關聯的屬性。
 
-### <a name="to-view-or-modify-workflow-project-properties"></a>若要檢視或修改工作流程專案屬性
+## <a name="to-view-or-modify-workflow-project-properties"></a>若要檢視或修改工作流程專案屬性
 
 1.  如果**方案總管 中**視窗未顯示，請選取**方案總管 中**上**檢視**功能表。
 

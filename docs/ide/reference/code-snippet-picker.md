@@ -1,9 +1,9 @@
 ---
-title: 程式碼片段選擇器 | Microsoft Docs
-ms.custom: ''
+title: 程式碼片段選擇器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 
@@ -47,15 +47,17 @@ Visual Studio 程式碼編輯器提供了 [程式碼片段選擇器]，讓您只
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-項目名稱  
+項目名稱
+
 可編輯的文字欄位，它會顯示 [項目清單] 中已選取項目的名稱。 若要累加搜尋您想要的項目，請在這個欄位開始鍵入項目名稱。 繼續新增字母，直到 [項目清單] 中選取了所需項目為止。
 
-項目清單  
+項目清單
+
 可供插入的程式碼片段清單，或是含有程式碼片段的資料夾清單。 若要插入程式碼片段或展開資料夾，請選取您要的項目並按 Enter。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用程式碼片段的最佳作法](../../ide/best-practices-for-using-code-snippets.md)  
-[Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)  
-[如何：使用範圍陳述式程式碼片段](../../ide/how-to-use-surround-with-code-snippets.md)
+- [使用程式碼片段的最佳作法](../../ide/best-practices-for-using-code-snippets.md)
+- [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)
+- [如何：使用範圍陳述式程式碼片段](../../ide/how-to-use-surround-with-code-snippets.md)

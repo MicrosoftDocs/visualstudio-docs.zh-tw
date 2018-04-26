@@ -1,6 +1,7 @@
 ---
 title: CA1063：必須正確實作 IDisposable
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
 
@@ -60,21 +61,21 @@ ms.lasthandoff: 04/19/2018
 
 檢查您的程式碼，並判斷哪些解決方案可以修正此違規。
 
-- 從由 {0} 實作且改為覆寫基底類別 Dispose 實作的介面清單中移除 IDisposable。
+- 從所實作的介面清單中移除 IDisposable{0}並改為覆寫基底類別 Dispose 實作。
 
-- 移除型別 {0} 中的完成項、 覆寫 Dispose (bool disposing)，以及最終處理邏輯中的程式碼路徑其中 'disposing' 為 false。
+- 移除型別中的完成項{0}、 覆寫 Dispose (bool disposing)，以及最終處理邏輯中的程式碼路徑其中 'disposing' 為 false。
 
-- 移除 {0}，覆寫 Dispose (bool disposing)，而且將處置邏輯放在程式碼路徑中 'disposing' 為 true。
+- 移除{0}，覆寫 Dispose (bool disposing)，而且將處置邏輯放在程式碼路徑中 'disposing' 為 true。
 
-- 確定 {0} 已宣告為 public 和 sealed。
+- 請確認{0}是宣告為公用和密封。
 
-- 重新命名為 'Dispose' {0}，並請確定它宣告為 public 和 sealed。
+- 重新命名{0}為 'Dispose'，並確定它宣告為 public 和 sealed。
 
-- 請確定該 {0} 宣告為 protected、 virtual 和未密封。
+- 請確定{0}是宣告為 protected、 virtual 和 unsealed。
 
-- 修改 {0}，讓它會呼叫 dispose （true），然後呼叫 GC。目前的物件執行個體上的 SuppressFinalize ('this' Me' 中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])，然後傳回。
+- 修改{0}使它呼叫 dispose （true），然後呼叫 GC。目前的物件執行個體上的 SuppressFinalize ('this' Me' 中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])，然後傳回。
 
-- 修改 {0}，讓它會呼叫 dispose （false），然後傳回。
+- 修改{0}使其呼叫 dispose （false），然後再傳回。
 
 - 如果您要建立未密封的型別宣告並實作 IDisposable 介面，請確定實作 IDisposable 的遵循本節稍早描述的模式。
 

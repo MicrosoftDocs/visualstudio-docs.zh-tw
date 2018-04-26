@@ -9,14 +9,15 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9501b9f33290f3b2116d6b84371675682e8deb05
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/19/2018
 
 2. 以滑鼠右鍵按一下**資料連接**選擇 * * 建立新的 SQL Server 資料庫...」。
 
-3. 在**伺服器名稱**文字方塊中，輸入**(localdb) \mssqllocaldb**。
+3. 在**伺服器名稱**文字方塊中，輸入 **(localdb) \mssqllocaldb**。
 
 4. 在**新的資料庫名稱**文字方塊中，輸入**銷售**，然後選擇 **確定**。
 

@@ -1,6 +1,7 @@
 ---
 title: 分析架構並製作架構模型
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -31,11 +32,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 704eee0122cfa5e0d70c910d4f5e55ff1732e670
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 22a0547374087927e7fc2d3da89c3fe4f2a5c2b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 請確定您的應用程式可以使用 Visual Studio architecture and modeling 工具來設計和模型化應用程式符合架構需求。

@@ -1,7 +1,9 @@
 ---
-title: 告訴我們 | Microsoft Docs
+title: 告訴我們
 ms.custom: ''
 ms.date: 02/19/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -10,17 +12,15 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology:
-- vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f6e61a967d7d551013926dbd580c706192bf3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>告訴我們
 我們想要知道您對於改善我們產品和文件的看法。 我們無法一一回應，但我們會確保您的意見傳達至適當的人員或小組。  
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>我想要回報 Visual Studio 的問題
@@ -52,5 +52,5 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我想要協助改善 Visual Studio 文件
 請使用頁面底部的 [本頁是否能提供幫助？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。 或者，您可以使用同樣位於頁面底部的 [登入以提供文件意見反應] 按鈕，對 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 頁面新增意見反應。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)
