@@ -1,6 +1,7 @@
 ---
 title: 著色器設計工具節點
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d4bb2633571a552c13bda0795d05447f9e340c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
 文件這節中的文章包含可用來建立圖形效果之各種著色器設計工具節點的資訊。

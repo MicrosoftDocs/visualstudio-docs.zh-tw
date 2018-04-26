@@ -1,7 +1,9 @@
 ---
-title: 叫用 Visual Studio Debugger for Windows Workflow Foundation （舊版） |Microsoft 文件
+title: 工作流程設計工具-叫用 Visual Studio Debugger for Windows Workflow Foundation （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
-本主題描述如何使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具偵錯[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]舊版的 Windows 工作流程設計工具中的應用程式。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 一般而言，偵錯舊版工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以使用下列方法啟動 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation：
+本主題描述如何使用 Visual Studio 偵錯工具偵錯舊版的 Windows 工作流程設計工具中的 Windows Workflow Foundation (WF) 應用程式。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+一般而言，偵錯舊版工作流程的方式就如同偵錯以其他 Visual Studio 程式語言撰寫的程式。 您可以下列方式來啟動 Visual Studio Debugger for Windows Workflow Foundation:
 
 -   選取**附加至處理序**上**偵錯**功能表來選取從可用的處理序執行的工作流程執行個體。
 
 -   按**F5**開始執行的工作流程執行個體，或叫用中斷點後繼續執行。
 
 ## <a name="stepping-through-code"></a>逐步執行程式碼
- 偵錯工具所支援最常見的偵錯程序之一為逐步執行：就是一次執行一行程式碼。 逐步執行程式碼的命令有三個：
+
+偵錯工具所支援最常見的偵錯程序之一為逐步執行：就是一次執行一行程式碼。 逐步執行程式碼的命令有三個：
 
 -   **逐步進入**： 您可以逐步執行的活動使用**F11**。 偵錯工具會逐步執行任何已定義的處理常式。 如果沒有定義處理常式，則不進入該活動；若為包含其他活動的複合活動，則逐步執行第一個執行中活動。 以下活動不支援從設計工具逐步進入程式碼處理常式： **IfElseActivity**， **WhileActivity**， **ConditionedActivityGroup**，或**ReplicatorActivity**。 若要偵錯與這些活動相關聯的處理常式，您必須將明確的中斷點放入程式碼中。
 
@@ -51,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 
  若要在 [方案總管] 中設定啟始專案，以滑鼠右鍵按一下專案名稱，然後選取**設定為啟始專案**。 若要將路徑設定中的主機**啟動外部程式**屬性中，按兩下工作流程專案的**屬性**節點在 [方案總管]，然後選取**偵錯**索引標籤。在下**起始動作**，選取**啟動外部程式**並輸入裝載您要偵錯工作的流程的.exe 檔案的路徑。
 
- 如果主應用程式設為啟始專案，則只會叫用 Visual Studio 偵錯工具進行偵錯，不會叫用 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for Windows Workflow Foundation。 如果使用 Visual Studio 偵錯工具，則只會叫用 C# 或 Visual Basic 程式碼中斷點，不會叫用工作流程設計工具中設定的中斷點。 例如，如果使用 <xref:System.Workflow.Activities.ParallelActivity> Debugger for Windows Workflow Foundation，則會叫用您在設計工具中的 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] 活動上設定的中斷點，但當您使用 Visual Studio 偵錯工具時不會叫用該中斷點。
+ 如果主應用程式設定為啟始專案，只有 Visual Studio 偵錯工具會叫用偵錯。Visual Studio Debugger for Windows Workflow Foundation 不會叫用。 如果使用 Visual Studio 偵錯工具，則只會叫用 C# 或 Visual Basic 程式碼中斷點，不會叫用工作流程設計工具中設定的中斷點。 例如，您在設定的中斷點<xref:System.Workflow.Activities.ParallelActivity>時叫用活動設計工具中的，如果使用 Visual Studio Debugger for Windows Workflow Foundation，但不是會在您使用 Visual Studio 偵錯工具。
 
 ## <a name="see-also"></a>另請參閱
 

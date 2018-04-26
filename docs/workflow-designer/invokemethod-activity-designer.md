@@ -1,7 +1,9 @@
 ---
-title: InvokeMethod 活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-InvokeMethod 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
+
 **InvokeMethod**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeMethod>活動。
 
 ## <a name="the-invokemethod-activity"></a>InvokeMethod 活動
- <xref:System.Activities.Statements.InvokeMethod> 會呼叫指定物件或型別的公用方法。
+
+<xref:System.Activities.Statements.InvokeMethod> 會呼叫指定物件或型別的公用方法。
 
 ### <a name="using-the-invokemethod-activity-designer"></a>使用 InvokeMethod 活動設計工具
- **InvokeMethod**活動設計工具位於**基本型別**類別**工具箱**，即可存取的哪一個**工具箱**  索引標籤[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CRTL + ALT + X。)
+ **InvokeMethod**活動設計工具位於**基本型別**類別**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具索引標籤上 (或者，選取**工具列**從**檢視**功能表或 CRTL + ALT + X。)
 
- **InvokeMethod**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面通常用來放置活動，例如內部<xref:System.Activities.Statements.Sequence>。 這會建立一個 <xref:System.Activities.Statements.InvokeMethod> 活動，具有 InvokeMethod 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>可編輯的標頭中**InvokeMethod**活動設計工具或在**DisplayName**屬性方格的方塊。
+ **InvokeMethod**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，因為在活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 這會建立一個 <xref:System.Activities.Statements.InvokeMethod> 活動，具有 InvokeMethod 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>可編輯的標頭中**InvokeMethod**活動設計工具或在**DisplayName**屬性方格的方塊。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 屬性
- 下表顯示 <xref:System.Activities.Statements.InvokeMethod> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 設計工具介面上編輯。
+ 下表顯示 <xref:System.Activities.Statements.InvokeMethod> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程 Designerdesigner 介面上編輯。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

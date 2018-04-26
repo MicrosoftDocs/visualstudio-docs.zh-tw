@@ -1,9 +1,9 @@
 ---
-title: 教學課程 3：建立配對遊戲 | Microsoft Docs
+title: 教學課程 3：建立配對遊戲
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,39 +11,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：  
-  
+
 -   在 `List` 物件中儲存物件 (例如圖示)。  
-  
+
 -   使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。  
-  
+
 -   使用參考變數追蹤表單的狀態。  
-  
+
 -   建置您可以搭配多個物件使用的事件處理常式來回應事件。  
-  
+
 -   讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。  
-  
+
  當您完成此教學課程時，您的程式看起來類似下列圖片。  
-  
+
  ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 您在本教學課程中建立的遊戲  
-  
+
  若要下載這個範例的完整版，請參閱 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (完整的配對遊戲教學課程範例)。  
-  
+
 > [!NOTE]
 >  在本教學課程中，Visual C# 和 Visual Basic 都會涵蓋在內，所以請將焦點放在您正在使用的程式語言專屬資訊。  
-  
+
  如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 此外，其中提供了很好的免費視訊學習資源。 若要深入了解如何在 Visual Basic 程式設計，請參閱 [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Visual Basic 基礎：徹底初學者開發)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。  
-  
+
 ## <a name="related-topics"></a>相關主題  
-  
+
 |標題|描述|  
 |-----------|-----------------|  
 |[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並新增 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|  

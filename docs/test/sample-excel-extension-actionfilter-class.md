@@ -1,18 +1,19 @@
 ---
-title: 範例 Excel 擴充功能：ActionFilter 類別 | Microsoft Docs
+title: 範例 Excel 延伸模組：ActionFilter 類別
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f98afa819fceb4f8b8b34d5aa268f11f7b16993
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b15c0bbc76076178bdb541571e11a7599a3c46c2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>範例 Excel 延伸模組：ActionFilter 類別
 

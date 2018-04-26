@@ -1,6 +1,7 @@
 ---
 title: 如何：建立和修改 MIP 層級
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1a12810d64e4e61230d1832e0394f0bad91cf3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：建立和修改 MIP 層級
 本文件將示範如何使用「影像編輯器」來產生和修改材質空間「詳細層級」(LoD) 的「MIP 層級」。

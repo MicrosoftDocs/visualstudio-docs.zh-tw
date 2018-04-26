@@ -1,7 +1,9 @@
 ---
-title: 選取條件對話方塊 （舊版） |Microsoft 文件
+title: 工作流程設計工具-選取條件對話方塊 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>選取條件對話方塊 (舊版)
-本主題描述如何使用**選取條件**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- **選取條件**對話方塊用於選取要指派給活動的條件屬性的宣告式規則條件。 這些規則條件會公開為以下 Windows Workflow Foundation 全新活動中的屬性：
+本主題描述如何使用**選取條件**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+**選取條件**對話方塊用於選取要指派給活動的條件屬性的宣告式規則條件。 這些規則條件會公開為以下 Windows Workflow Foundation 全新活動中的屬性：
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ ms.lasthandoff: 04/16/2018
 
 -   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- 如需有關如何存取資訊**選取條件**對話方塊中，請參閱[How to： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。
+如需有關如何存取資訊**選取條件**對話方塊中，請參閱[How to： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。
 
- 下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。
+下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。
 
 |UI 項目|描述|
 |----------------|-----------------|

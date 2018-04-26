@@ -1,7 +1,9 @@
 ---
-title: InvokeDelegate |Microsoft 文件
+title: 工作流程設計工具-InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -11,25 +13,29 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93e41d98b156b6314158a1cc99e368092b0cf494
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d68fa1b777663ff8975f8ce99100d8eddc5f05d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
+
 **InvokeDelegate**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeDelegate>活動。
 
 ## <a name="the-invokedelegate-activity"></a>InvokeDelegate 活動
- <xref:System.Activities.Statements.InvokeDelegate> 會呼叫公用委派。
+
+<xref:System.Activities.Statements.InvokeDelegate> 會呼叫公用委派。
 
 ### <a name="using-the-invokedelegate-activity-designer"></a>使用 InvokeDelegate 活動設計工具
- **InvokeDelegate**活動設計工具位於**基本型別**分類**工具箱**，即可存取的哪一個**工具箱**  索引標籤[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CRTL + ALT + X。)
 
- **InvokeDelegate**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面通常用來放置活動，例如內部<xref:System.Activities.Statements.Sequence>。 這會建立一個 <xref:System.Activities.Statements.InvokeDelegate> 活動，具有 InvokeDelegate 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>可編輯的標頭中**InvokeDelegate**活動設計工具或在**DisplayName**屬性方格的方塊。
+**InvokeDelegate**活動設計工具位於**基本型別**分類**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具索引標籤上 (或者，選取**工具列**從**檢視**功能表或 CRTL + ALT + X。)
+
+**InvokeDelegate**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，因為在活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 這會建立一個 <xref:System.Activities.Statements.InvokeDelegate> 活動，具有 InvokeDelegate 的預設 <xref:System.Activities.Activity.DisplayName%2A>。 <xref:System.Activities.Activity.DisplayName%2A>可編輯的標頭中**InvokeDelegate**活動設計工具或在**DisplayName**屬性方格的方塊。
 
 ### <a name="the-invokedelegate-properties"></a>InvokeDelegate 屬性
- 下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 設計工具介面上編輯。
+
+下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程 Designerdesigner 介面上編輯。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

@@ -1,7 +1,7 @@
 ---
-title: 使用程式碼片段的最佳做法 | Microsoft Docs
-ms.custom: ''
+title: 使用程式碼片段的最佳作法
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d11dcc87a4303937c226e5b7a4efebe8617f6f0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
 
@@ -70,6 +70,6 @@ Visual Studio 所安裝的 IntelliSense 程式碼片段本身並沒有安全性�
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[保護應用程式](../ide/securing-applications.md)  
-[程式碼片段](../ide/code-snippets.md)
+- [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [保護應用程式](../ide/securing-applications.md)
+- [程式碼片段](../ide/code-snippets.md)

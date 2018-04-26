@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt;活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-AddToCollection<T>活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt;活動設計工具
-**AddToCollection\<T >**活動設計工具用來建立及設定<xref:System.Activities.Statements.AddToCollection%601>活動。
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > 活動設計工具
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection < T\>活動
- <xref:System.Activities.Statements.AddToCollection%601> 活動會將項目加入至集合。
+**AddToCollection\<T >** 活動設計工具用來建立及設定<xref:System.Activities.Statements.AddToCollection%601>活動。
+
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > 活動
+
+<xref:System.Activities.Statements.AddToCollection%601> 活動會將項目加入至集合。
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>使用 AddToCollection\<T > 活動設計工具
- **AddToCollection\<T >**活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱** 索引標籤[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **AddToCollection\<T >**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面任一處活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>. 這會建立<xref:System.Activities.Statements.AddToCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 AddToCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 這可以在屬性方格中變更)。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**AddToCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
+**AddToCollection\<T >** 活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection < T\>屬性
- 下表顯示 <xref:System.Activities.Statements.AddToCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
+**AddToCollection\<T >** 活動設計工具可以從拖曳**工具箱**及放置活動的例如在內部只要放到工作流程設計工具介面<xref:System.Activities.Statements.Sequence>. 卸除**AddToCollection\<T >** 活動設計工具建立<xref:System.Activities.Statements.AddToCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 AddToCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 TypeArgument 可以變更在屬性方格中）。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**AddToCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
+
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > 屬性
+
+下表顯示 <xref:System.Activities.Statements.AddToCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

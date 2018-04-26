@@ -1,8 +1,9 @@
 ---
-title: Excel 的範例自動程式化 UI 測試擴充功能 | Microsoft Docs
+title: Excel 的範例自動程式碼 UI 測試擴充功能
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - coded UI tests, extensions for Excel
 ms.author: gewarren
@@ -10,13 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c13ede1045734a1038cd89a8faab82c3b48f66d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c76ba569a6f9f34d28d6aaaa268a366c1be7b31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="sample-coded-ui-test-extension-for-excel"></a>Excel 的範例自動程式化 UI 測試擴充功能
+# <a name="sample-coded-ui-test-extension-for-excel"></a>Excel 的範例自動程式碼 UI 測試擴充功能
 範例的擴充元件執行於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自動程式化 UI 測試處理序，具有一些階層性，並以 `ExtensionPackage` 類別為基底。 `TechnologyManager`、`ActionFilter` 和 `PropertyProvider` 類別位於下一個層級，控制項項目位於最上層。
 
  ![Excel 測試延伸模組架構](../test/media/excel_extarch.png "Excel_ExtArch") Excel 測試延伸模組架構

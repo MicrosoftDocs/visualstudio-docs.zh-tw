@@ -1,25 +1,28 @@
 ---
-title: 如何： 實作 Windows Communication Foundation 合約作業 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 實作 Windows Communication Foundation 合約作業 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>HOW TO：實作 Windows Communication Foundation 合約作業 (舊版)
-本主題描述如何實作[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]合約作業為目標的舊版 Windows 工作流程設計工具[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 拖曳之後**ReceiveActivity**活動從工具箱拖曳至工作流程設計介面，您將建立新[!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]合約或匯入現有合約並實作這些作業。 您選取及/或建立您的合約和其作業透過[選擇作業對話方塊 （舊版）](../workflow-designer/choose-operation-dialog-box-legacy.md)。
+本主題描述如何實作使用舊版的 Windows 工作流程設計工具的 Windows Communication Foundation (WCF) 合約作業的目標為.NET Framework 3.5 版或 WinFX。
 
-### <a name="to-implement-a-wcf-contract-operation"></a>若要實作 WCF 合約作業
+拖曳之後**ReceiveActivity**活動從工具箱拖曳至工作流程設計介面，您將建立新[!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)]合約或匯入現有合約並實作這些作業。 您選取及/或建立您的合約和其作業透過[選擇作業對話方塊 （舊版）](../workflow-designer/choose-operation-dialog-box-legacy.md)。
+
+## <a name="to-implement-a-wcf-contract-operation"></a>若要實作 WCF 合約作業
 
 1.  按兩下**ReceiveActivity**活動設計工具中的，或按一下省略符號旁**ServiceOperationInfo**屬性**屬性**窗格。
 

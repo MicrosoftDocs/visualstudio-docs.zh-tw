@@ -1,6 +1,7 @@
 ---
 title: L2DBForm.xaml.cs 原始程式碼
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c74e5f8df3d79a81ba15bed10169f45add14728
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 
