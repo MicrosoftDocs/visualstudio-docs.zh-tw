@@ -1,7 +1,9 @@
 ---
-title: ClearCollection&lt;T&gt;活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-ClearCollection<T>活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23fdb07a4d6ad9052734a9b4bcbde4cabef65db9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt;活動設計工具
-**ClearCollection\<T >**活動設計工具用來建立及設定<xref:System.Activities.Statements.ClearCollection%601>活動。
+# <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > 活動設計工具
 
-## <a name="the-clearcollectiont-activity"></a>ClearCollection < T\>活動
+**ClearCollection\<T >** 活動設計工具用來建立及設定<xref:System.Activities.Statements.ClearCollection%601>活動。
+
+## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > 活動
  <xref:System.Activities.Statements.ClearCollection%601> 活動會清除所有項目的指定集合。
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>使用 ClearCollection\<T > 活動設計工具
- **ClearCollection\<T >**活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱** 索引標籤[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
+ **ClearCollection\<T >** 活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **ClearCollection\<T >**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面任一處活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>. 這會建立<xref:System.Activities.Statements.ClearCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 ClearCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 這可以在屬性方格中變更)。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**ClearCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
+ **ClearCollection\<T >** 活動設計工具可以從拖曳**工具箱**及放置活動的例如在內部只要放到工作流程設計工具介面<xref:System.Activities.Statements.Sequence>. 卸除活動設計工具建立<xref:System.Activities.Statements.ClearCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 ClearCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 TypeArgument 可以變更在屬性方格中）。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**ClearCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
 
-### <a name="the-clearcollectiont-properties"></a>ClearCollection < T\>屬性
+### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > 屬性
  下表顯示 <xref:System.Activities.Statements.ClearCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
 
 |屬性名稱|必要項|使用方式|

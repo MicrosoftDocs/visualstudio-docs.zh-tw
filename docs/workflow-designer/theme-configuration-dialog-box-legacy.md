@@ -1,7 +1,9 @@
 ---
-title: 主題組態對話方塊 （舊版） |Microsoft 文件
+title: 工作流程設計工具的主題組態對話方塊 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>主題組態對話方塊 (舊版)
-本主題描述如何使用**主題組態**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 佈景主題會定義工作流程的背景色彩、前景色彩、樣式、圖示和其他視覺化項目。 您可以儲存佈景主題以供其他工作流程重複使用。
+本主題描述如何使用**主題組態**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
 
- 您建立和編輯佈景主題使用**主題組態** 對話方塊。 若要開啟對話方塊，請選取**建立新的佈景主題**上**工作流程**功能表上或以滑鼠右鍵按一下工作流程設計介面，然後選取**建立新的佈景主題**。
+佈景主題會定義工作流程的背景色彩、前景色彩、樣式、圖示和其他視覺化項目。 您可以儲存佈景主題以供其他工作流程重複使用。
 
- 下表描述的使用者介面 (UI) 項目**主題組態** 對話方塊。
+您建立和編輯佈景主題使用**主題組態** 對話方塊。 若要開啟對話方塊，請選取**建立新的佈景主題**上**工作流程**功能表上或以滑鼠右鍵按一下工作流程設計介面，然後選取**建立新的佈景主題**。
+
+下表描述的使用者介面 (UI) 項目**主題組態** 對話方塊。
 
 |UI 項目|描述|
 |----------------|-----------------|

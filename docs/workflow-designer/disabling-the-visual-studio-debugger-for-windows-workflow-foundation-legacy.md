@@ -1,7 +1,9 @@
 ---
-title: 停用 Visual Studio Debugger for Windows Workflow Foundation （舊版） |Microsoft 文件
+title: 工作流程設計工具-停用 Visual Studio Debugger for Windows Workflow Foundation （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>停用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
 
-本主題描述如何停用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具 建置時使用的組態檔[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]舊版的 Windows 工作流程設計工具中的應用程式。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
+本主題描述如何停用 Visual Studio 偵錯工具建置在舊版的 Windows 工作流程設計工具中的 Windows Workflow Foundation (WF) 應用程式時，使用組態檔。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
 
- 根據預設，將會針對主機處理序啟用 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] Debugger for [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]。 若要停用工作流程偵錯，您必須明確地關閉它將"DisableWorkflowDebugging"項目新增**\<參數 >**中的項目 **\<system.diagnostics >**主機組態檔區段。
+ 根據預設，Visual Studio 偵錯工具的 Windows Workflow Foundation (WF) 會啟用主機處理程序。 若要停用工作流程偵錯，您必須明確地關閉它將"DisableWorkflowDebugging"項目新增**\<參數 >** 中的項目 **\<system.diagnostics >** 主機組態檔區段。
 
  下列範例顯示如何修改主機組態檔來停用工作流程偵錯。
 

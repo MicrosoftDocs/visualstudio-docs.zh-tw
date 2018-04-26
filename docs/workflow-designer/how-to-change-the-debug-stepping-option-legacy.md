@@ -1,7 +1,9 @@
 ---
-title: 如何： 變更偵錯逐步執行選項 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 變更偵錯逐步執行選項 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - branch stepping
 - debugging, stepping options
@@ -14,28 +16,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aedb8e738dc2e6ca2b066dd9a2cd42e332bbd8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31047cedd4e8772b9ebab4ef238a8fe32bc07663
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>HOW TO：變更偵錯逐步執行選項 (舊版)
-本主題描述如何變更偵錯逐步執行選項[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]舊版的 Windows 工作流程設計工具中具有並行動作的應用程式。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 當您正在偵錯舊版的活動，具有並行執行，例如**ParallelActivity**或**ConditionedActivityGroup**，您可以使用其中一個選項逐步執行程式碼。
+本主題描述如何變更偵錯逐步執行具有並行動作的舊版的 Windows 工作流程設計工具中的 Windows Workflow Foundation (WF) 應用程式的選項。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
 
- 依照下列步驟變更舊版工作流程專案中的偵錯逐步執行選項。
+當您正在偵錯舊版的活動，具有並行執行，例如**ParallelActivity**或**ConditionedActivityGroup**，您可以使用其中一個選項逐步執行程式碼。
+
+依照下列步驟變更舊版工作流程專案中的偵錯逐步執行選項。
 
 ## <a name="procedures"></a>程序
 
-#### <a name="to-change-the-debug-stepping-option"></a>若要變更偵錯逐步執行選項
+### <a name="to-change-the-debug-stepping-option"></a>若要變更偵錯逐步執行選項
 
 1.  啟動 Visual Studio。
 
-2.  開啟現有的舊版工作流程專案或建立新的專案，使其利用並行活動並以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。
+2.  開啟現有的舊版工作流程專案或建立新的專案會採用並行活動與目標為.NET Framework 3.5 版或 WinFX。
 
-3.  在**工作流程**功能表在舊版[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]，指向 **偵錯**，然後指向**逐步執行選項**。
+3.  在**工作流程**功能表舊版工作流程設計工具中指向**偵錯**，然後指向**逐步執行選項**。
 
 4.  選取 **執行個體**或**分支**。
 

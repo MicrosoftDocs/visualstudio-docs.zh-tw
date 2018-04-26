@@ -1,18 +1,19 @@
 ---
 title: 在雲端中以使用 Kubernetes 的容器建立 .NET Core 開發環境 - 步驟 3 - 建立 ASP.NET Core Web 應用程式 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: f858a013e4b0c2ce1c30b8f26f2dc33eebf19c27
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 72c7df0a82b91f7b4665b8b7e2cecdfc2eea26cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>使用 .NET Core 開始使用已連線的環境
 
@@ -54,5 +55,5 @@ dotnet new mvc --name webfrontend
 
 但開發程式碼還有一個「更快速的方法」，我們會在下一節中探討。 
 > [!div class="nextstepaction"]
-> [在 Kubernetes 偵錯容器](get-started-netcore-04.md)
+> [在 Kubernetes 中偵錯容器](get-started-netcore-04.md)
 

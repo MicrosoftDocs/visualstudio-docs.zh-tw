@@ -1,18 +1,19 @@
 ---
 title: 在雲端中以使用 Kubernetes 的容器建立 Node.js 開發環境 - 步驟 2 - 建立 Kubernetes 開發環境 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: 3a1adf9160219cae8c67407f7ed6f1b79f2c201b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 033db288f440ba5196d9128cbabe4d4200d05c17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>使用 Node.js 開始使用已連線的環境
 

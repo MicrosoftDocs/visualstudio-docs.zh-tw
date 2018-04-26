@@ -1,6 +1,7 @@
 ---
 title: 如何：隱藏所產生程式碼的程式碼分析警告
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f7bdd3e29f5e45d487377f228ad965ac6e0be6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac2c5d4a7aca3f77feabc0aaba75d7f56a751821
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 Managed 程式碼編譯器通常會產生程式碼加入至專案，以便快速的程式碼開發。 此外，開發人員通常會使用第三方工具可協助您快速地開發應用程式。 這些工具也會產生程式碼加入至專案。

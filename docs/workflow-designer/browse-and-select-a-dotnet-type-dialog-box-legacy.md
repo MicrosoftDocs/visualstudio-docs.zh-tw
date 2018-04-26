@@ -1,7 +1,9 @@
 ---
-title: 瀏覽並選取.NET 類型對話方塊 （舊版） |Microsoft 文件
+title: 工作流程設計工具-瀏覽並選取.NET 類型對話方塊 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>瀏覽並選取 .NET 類型對話方塊 (舊版)
-本主題描述如何使用**瀏覽並選取.NET 型別**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 在**屬性**視窗中，當您選取屬性，採用.NET Framework 型別參考的組件，省略符號**[…]**屬性其文字方塊尾端會出現。 按一下**[…]**開啟**瀏覽並選取.NET 型別** 對話方塊。 在這個對話方塊中，您可以從參考組件的樹狀檢閱中選擇型別。 例如，當您使用活動設計工具中**屬性**視窗中，按一下**基底類別**省略**[…]**從參考的組件樹狀目錄中選取活動的另一個基底類別。
+本主題描述如何使用**瀏覽並選取.NET 型別**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+ 在**屬性**視窗中，當您選取屬性，採用.NET Framework 型別參考的組件，省略符號 **[…]** 屬性其文字方塊尾端會出現。 按一下 **[…]** 開啟**瀏覽並選取.NET 型別** 對話方塊。 在這個對話方塊中，您可以從參考組件的樹狀檢閱中選擇型別。 例如，當您使用活動設計工具中**屬性**視窗中，按一下**基底類別**省略 **[…]** 從參考的組件樹狀目錄中選取活動的另一個基底類別。
 
  下表描述的使用者介面 (UI) 項目**瀏覽並選取.NET 型別** 對話方塊。
 

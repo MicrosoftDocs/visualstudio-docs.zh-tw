@@ -17,14 +17,15 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 49f3aad9adf319c09097324a6c40a4aa7b8f6692
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
 TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定的預存程序的資料庫中的資料。 也可以執行 Tableadapter 加入、 更新和刪除的資料庫來保存您對資料集的變更。 您也可以發出與任何特定資料表無關的通用命令。

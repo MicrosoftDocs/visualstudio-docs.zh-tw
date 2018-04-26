@@ -1,18 +1,19 @@
 ---
 title: 使用 Visual Studio 在雲端中以使用 Kubernetes 的容器建立 .NET Core 開發環境 - 步驟 6 - 了解小組開發 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 04/05/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: d8d81afbe4fbf99c52107c8afc6f1eb9938de792
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+manager: douge
+ms.openlocfilehash: b4bc1f44e63614346f4e2d149e76becabdcb8c71
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>使用 .NET Core 和 Visual Studio 開始使用已連線的環境
 

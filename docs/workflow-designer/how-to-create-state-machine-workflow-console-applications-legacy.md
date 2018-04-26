@@ -1,7 +1,9 @@
 ---
-title: 如何： 建立狀態機器工作流程主控台應用程式 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 建立狀態機器工作流程主控台應用程式 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - console applications, state machine workflows
 - state machine workflow console applications
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc38466c29bbe88202561daf5ee9097367040310
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 805b048a9e30f7a637e178d223b962259dadd926
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>HOW TO：建立狀態機器工作流程主控台應用程式 (舊版)
-請遵循下列步驟以建立狀態機器工作流程主控台應用程式專案使用舊版所提供的 Windows 工作流程設計工具[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
-### <a name="to-create-a-state-machine-application-project"></a>若要建立狀態機器應用程式專案
+請遵循下列步驟來建立狀態機器工作流程主控台應用程式專案中使用 Windows 工作流程設計工具提供的舊版的 Visual Studio 2010。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+## <a name="to-create-a-state-machine-application-project"></a>若要建立狀態機器應用程式專案
 
 1.  啟動 Visual Studio。
 
@@ -29,10 +32,10 @@ ms.lasthandoff: 04/16/2018
 
      [ **新增專案** ] 對話方塊隨即開啟。
 
-3.  選取 [ **.NET Framework 3.0**選項或**.NET Framework 3.5**在清單頂端的下拉式選項**新專案**存取舊版設計工具] 視窗。
+3.  選取 [ **.NET Framework 3.0**選項或 **.NET Framework 3.5**在清單頂端的下拉式選項**新專案**存取舊版設計工具] 視窗。
 
     > [!NOTE]
-    > 中的預設選項[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]是**.NET Framework 4**。 這個選項是用來建立以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 為目標的 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 應用程式，而不會使用舊版設計工具。
+    > Visual Studio 2010 中的預設選項是 **.NET Framework 4**。 這個選項用來建立.NET Framework 4 為目標的 Windows Workflow Foundation (WF) 應用程式並不會使用舊版設計工具。
 
 4.  在**專案類型**窗格中，選取 Visual C# 或 Visual Basic (在**其他語言**)，然後選取 **工作流程**。
 

@@ -1,7 +1,9 @@
 ---
-title: 偵錯舊版工作流程 |Microsoft 文件
+title: 工作流程設計工具的偵錯舊版工作流程
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>偵錯舊版工作流程
 
-如果您使用舊版的 Windows 工作流程設計工具中[!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]建置[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]應用程式，以 Framework 3.0 或 3.5，您可以偵錯您的工作流程類似任何其他程式藉由設定中斷點、 附加至處理序，並檢查執行緒和呼叫堆疊。 您也可以選擇遠端偵錯。
+如果您使用舊版的 Windows 工作流程設計工具在 Visual Studio 中建置 Windows Workflow Foundation (WF) 應用程式，該以 Framework 3.0 或 3.5，您可以偵錯您的工作流程類似任何其他程式所設定中斷點、 附加至處理序，並檢查執行緒和呼叫堆疊。 您也可以選擇遠端偵錯。
 
 > [!NOTE]
 > 如果您的電腦上曾經安裝及解除安裝多個版本的 Visual Studio，WF3 偵錯會因為下列兩種可能性之一而失敗：
@@ -32,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 >
 > 如果在偵錯 .NET Framework 3.0 或 3.5 工作流程時，發生上述任一案例，則執行 Visual Studio 安裝的修復。
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 會與以下標準 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯視窗整合：
+ Windows Workflow Foundation 與以下標準 Visual Studio 偵錯視窗整合：
 
 -   **中斷點**： 運作不如預期，但是您指定用來將函式名稱的活動。
 

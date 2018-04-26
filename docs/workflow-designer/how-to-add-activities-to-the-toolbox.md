@@ -1,18 +1,20 @@
 ---
-title: 如何： 將活動新增至 [工具箱] |Microsoft 文件
+title: 工作流程設計工具-如何： 將活動新增至工具箱
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 
@@ -27,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 3.  建置專案。 如果建置成功，新的類別目錄中**工具箱**名為"\<*專案名稱*> 」 會顯示與該類別目錄中包含的自訂活動。
 
     > [!NOTE]
-    > 如果重設工具箱，自訂活動會移除，即使重新建置方案也一樣。 如果要在重設工具箱後重新填入自訂活動，請重新啟動 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
+    > 如果重設工具箱，自訂活動會移除，即使重新建置方案也一樣。 若要重新填入自訂活動的 [工具箱]，已重設之後，重新啟動 Visual Studio 2010。
 
     > [!NOTE]
     > 在工具箱中，針對一個活動名稱只能顯示一個活動。 如果有兩個活動來自不同的組件但類別名稱相同，就只能顯示其中一個。
@@ -47,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 
 2.  從**工具**功能表上，選取**選擇工具箱項目...**.
 
-3.  在**選擇工具箱項目**對話方塊中，選取**System.Activities 元件**索引標籤，然後按一下 **瀏覽...**想要新增到瀏覽至包含自訂活動組件。
+3.  在**選擇工具箱項目**對話方塊中，選取**System.Activities 元件**索引標籤，然後按一下 **瀏覽...** 想要新增到瀏覽至包含自訂活動組件。
 
 4.  選取組件，然後按一下**確定**。 自訂活動元件會加到元件清單中，而且會自動選取。
 

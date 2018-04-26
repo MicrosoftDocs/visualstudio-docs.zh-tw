@@ -1,7 +1,9 @@
 ---
-title: 選取規則集對話方塊 （舊版） |Microsoft 文件
+title: 工作流程設計工具-選取規則集對話方塊 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>選取規則集對話方塊 (舊版)
-本主題描述如何使用**選取規則集**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- **選取規則集**對話方塊用於選取規則集，您可以使用[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動。 如需有關如何存取資訊**選取規則集**對話方塊中，請參閱[How to： 建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+本主題描述如何使用**選取規則集**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
 
- 下表描述的使用者介面 (UI) 項目**選取規則集** 對話方塊。
+**選取規則集**對話方塊用於選取規則集，您可以使用[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活動。 如需有關如何存取資訊**選取規則集**對話方塊中，請參閱[How to： 建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+
+下表描述的使用者介面 (UI) 項目**選取規則集** 對話方塊。
 
 |UI 項目|描述|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ ms.lasthandoff: 04/16/2018
  如需如何建立和編輯規則集的詳細資訊，請參閱[規則集編輯器對話方塊 （舊版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)。
 
 > [!WARNING]
-> 舊版 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 不支援多重目標。
+> 舊版工作流程設計工具，用於以.NET Framework 3.5 版或 WinFX 目標的規則編輯器不支援多目標。
 
  如需條件的詳細資訊，請參閱[在工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)。
 

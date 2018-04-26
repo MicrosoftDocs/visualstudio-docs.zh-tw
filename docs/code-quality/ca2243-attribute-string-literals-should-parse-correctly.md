@@ -1,6 +1,7 @@
 ---
 title: CA2243：屬性字串常值必須正確剖析
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfb3d3ce0709f95ff864d081ba90c2aa49fad15
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b6aa6fe4cf38d89e76fc7151f493aac414179064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：屬性字串常值必須正確剖析
 |||

@@ -19,14 +19,15 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71d651d2e2d6c84b5858bb4687bf74aa503d014c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8986ce9e2ee1ff171a524b0a402a1e44b70ca06
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集的資料
 驗證資料是確認的程序的輸入資料物件的值符合資料集的結構描述中的條件約束。 驗證程序也會確認這些值會遵循您的應用程式已建立的規則。 它是最好的作法是驗證之前將更新傳送至基礎資料庫的資料。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。

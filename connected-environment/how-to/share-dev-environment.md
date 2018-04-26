@@ -1,18 +1,19 @@
 ---
 title: 如何共用開發環境 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 3/12/2018
-ms.topic: article
-ms.technology: vsce-kubernetes
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: 9808e1ac3a6d7b3381b807bc0ce209e15f3e97cf
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+manager: douge
+ms.openlocfilehash: 43d23caa039340345372076d02b3c4989cde5b01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="share-a-development-environment"></a>共用開發環境
 

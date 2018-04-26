@@ -1,7 +1,9 @@
 ---
-title: 如何： 將新的項目加入至工作流程專案 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 將新的項目加入至工作流程專案 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>HOW TO：將新的項目加入至工作流程專案 (舊版)
-建立工作流程專案使用舊版所提供的 Windows 工作流程設計工具之後[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]為目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，您可以加入[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]項目和其他熟悉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]項目到您專案。
 
- 下表列出您可加入至工作流程專案的 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 項目。
+建立使用 Windows 工作流程設計工具所提供 Visual Studio 2010 為目標的.NET Framework 3.5 版或 WinFX 舊版工作流程專案之後，您可以加入 Windows Workflow Foundation (WF) 項目和其他熟悉的 Visual Studio您的專案項目。
+
+下表列出您可新增至工作流程專案的 Windows Workflow Foundation 項目。
 
 |項目|描述|
 |----------|-----------------|
@@ -33,7 +36,7 @@ ms.lasthandoff: 04/16/2018
 |狀態機器工作流程 (程式碼)|工作流程定義置於設計工具程式碼檔案，且使用者程式碼置於不同程式碼檔案的狀態機器工作流程。|
 |狀態機器工作流程 (程式碼分開置放)|工作流程定義表示成工作流程標記，且使用者程式碼置於不同程式碼檔案的狀態機器工作流程。|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
 
 1.  在**專案**功能表上，按一下 **加入新項目**。
 

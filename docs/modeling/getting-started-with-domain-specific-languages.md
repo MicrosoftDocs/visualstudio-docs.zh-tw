@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7038f1d685fe0f76a9e9dff4026bcf19f9653deb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 本主題說明在定義和使用 Visual studio 使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。

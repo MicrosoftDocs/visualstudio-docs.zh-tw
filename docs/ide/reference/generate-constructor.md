@@ -1,19 +1,19 @@
 ---
-title: 在 Visual Studio 中產生建構函式 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中產生建構函式
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ab26fd6ccc8359c2699154ae6fa5821040ce9ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44235bcacf6f60a3c58fa08f01465f6aad9e57f4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 

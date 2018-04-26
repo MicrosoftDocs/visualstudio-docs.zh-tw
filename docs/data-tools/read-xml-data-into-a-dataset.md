@@ -18,14 +18,15 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6c2ea2b46fcd05360e079dc84da9bfe807ff489
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 資料讀入資料集
 ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可以建立 Windows 應用程式，可將 XML 資料載入資料集。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。

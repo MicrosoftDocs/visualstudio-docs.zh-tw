@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de87d6245057d6fd24b57d64ae09127cf1b282f8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fda89444e0451b5d562aff37beffc2d7a97c0123
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。

@@ -1,10 +1,9 @@
 ---
-title: 用於針對整合式開發環境錯誤進行疑難排解的資源 | Microsoft Docs
-ms.custom: ''
+title: 用於疑難排解整合式開發環境錯誤的資源
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -96,11 +95,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48516bd598719112a3a94216b3510b628579f032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a87d0b6aeec41071fd1e1018155b0a7898ed4a6c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 
@@ -120,6 +119,6 @@ ms.lasthandoff: 04/16/2018
 
 如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../../ide/talk-to-us.md)。
 
- ## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另請參閱
 
 * [針對 Proxy 錯誤進行疑難排解](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

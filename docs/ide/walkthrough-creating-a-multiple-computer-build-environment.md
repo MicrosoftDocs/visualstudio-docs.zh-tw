@@ -1,9 +1,8 @@
 ---
-title: 逐步解說：建立多電腦建置環境 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立多電腦建置環境
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2efa01078cb089055cb48fbb80e9c1ffcde0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -415,5 +414,5 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 ## <a name="see-also"></a>另請參閱
 
-[準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)  
-[命令列參考](../msbuild/msbuild-command-line-reference.md)
+- [準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [命令列參考](../msbuild/msbuild-command-line-reference.md)

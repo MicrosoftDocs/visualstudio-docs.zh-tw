@@ -1,7 +1,9 @@
 ---
-title: 工作流程設計工具中的錯誤訊息 |Microsoft 文件
+title: 工作流程設計工具的錯誤訊息
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
+
 本主題說明使用 Windows 工作流程設計工具時可能會遇到的錯誤訊息的型別。
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>在工作流程設計工具中發生錯誤的情況
- 在下列情況中，[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中會發生錯誤：
+
+在下列情況下，會發生在工作流程設計工具中的錯誤：
 
 1.  此為運算式中的錯誤。
 
@@ -32,12 +36,12 @@ ms.lasthandoff: 04/16/2018
 
 4.  XAML 檔中發生導致工作流程無法載入的錯誤。
 
- 無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 工作流程會成功建置，但是在執行階段擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
+無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 工作流程會成功建置，但是在執行階段擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
 
- 內部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 載入工作流程時，其錯誤會顯示在**錯誤清單**。 若要巡覽至錯誤的來源活動，按兩下中的錯誤**錯誤清單**。
+在 Visual Studio 中，載入工作流程時，其錯誤會顯示在**錯誤清單**。 若要巡覽至錯誤的來源活動，按兩下中的錯誤**錯誤清單**。
 
 ### <a name="expression-errors"></a>運算式錯誤
- 如果有無效的運算式，則會在運算式旁出現內含白色驚嘆號的紅色圓圈來標註。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內，請按一下運算式來檢視在錯誤來源底下的行。 將游標移至這行文字上方，隨即出現描述錯誤來源的工具提示。
+ 如果有無效的運算式，則會在運算式旁出現內含白色驚嘆號的紅色圓圈來標註。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。 在 Visual Studio 中，按一下以檢視錯誤來源底下的行的運算式。 將游標移至這行文字上方，隨即出現描述錯誤來源的工具提示。
 
 ### <a name="activity-validation-errors"></a>活動驗證錯誤
  當未滿足活動的驗證條件限制時，活動的右上角會出現內含白色驚嘆號的紅色圓圈。 將游標移至這個圖示上方，隨即出現描述錯誤來源的工具提示。

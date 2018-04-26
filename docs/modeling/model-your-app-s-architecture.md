@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f7da241dc6090339bd5d9d9e6f731041a27fe84
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="model-your-app39s-architecture"></a>您的應用程式&#39;s 架構
 為了協助確保您的軟體系統或應用程式符合使用者的需求，您可以在 Visual Studio 中建立模型，為您的整體結構描述與軟體系統或應用程式行為的一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。

@@ -1,6 +1,7 @@
 ---
 title: XAML 錯誤和警告
 ms.date: 03/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -9,11 +10,11 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b252fe651355000f63c47c5b45cf6d0e9db4d776
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea8bf298f5847c779d2dc13154ddb27b2efeb214
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 

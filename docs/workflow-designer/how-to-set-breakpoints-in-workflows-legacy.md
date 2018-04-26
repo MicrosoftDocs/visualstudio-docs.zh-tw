@@ -1,7 +1,9 @@
 ---
-title: 如何： 在工作流程 （舊版） 中設定中斷點 |Microsoft 文件
+title: 工作流程設計工具-如何： 在工作流程 （舊版） 中設定中斷點
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>HOW TO：在工作流程中設定中斷點 (舊版)
-本主題描述如何在中設定中斷點[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]使用舊版的 Windows 工作流程設計工具建置的應用程式。 當您的 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 應用程式需要以 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 當您在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中使用舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 來建置 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 應用程式時，您可以在 C# 和 Visual Basic 程式碼中設定中斷點，就像在 Visual Studio 中一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。
+本主題描述如何在 Windows Workflow Foundation (WF) 使用舊版的 Windows 工作流程設計工具建置的應用程式設定中斷點。 Windows Workflow Foundation 應用程式需要.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+ 當您使用 Visual Studio 2010 中的舊版工作流程設計工具來建置 Windows Workflow Foundation 應用程式時，您可以設定中斷點，在 C# 和 Visual Basic 程式碼在 Visual Studio 中一樣即可。 如預期般，工作流程執行會在您設定的每個中斷點上停止。
 
  中斷點有三種狀態：*暫止*，*繫結*，和*錯誤*。 設定中斷點時，狀態為「擱置」，由空心的紅色圖示表示。 執行階段已載入工作流程類型時，中斷點會變成「繫結」狀態，由實心的紅色圖示表示。 如果您指定錯誤的中斷點格式，且活動名稱無效，則會顯示錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。
 

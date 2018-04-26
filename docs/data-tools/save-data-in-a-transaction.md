@@ -15,14 +15,15 @@ ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6fd36ace8949774c755a7a192e201b6d9011ff8b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說： 在交易中儲存資料
 本逐步解說示範如何將資料儲存在交易中，使用<xref:System.Transactions>命名空間。 在本逐步解說中，您將建立 Windows Forms 應用程式。 您將使用資料來源組態精靈，在 Northwind 範例資料庫中建立兩個資料表的資料集。 您會將資料繫結控制項加入 Windows form，以及您將修改 BindingNavigator 的儲存按鈕以更新資料庫在 TransactionScope 內部的程式碼。

@@ -1,12 +1,9 @@
 ---
-title: "選擇 ClickOnce 更新策略 |Microsoft 文件"
-ms.custom: 
+title: 選擇 ClickOnce 更新策略 |Microsoft 文件
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - updates, ClickOnce
 - ClickOnce deployment, update strategies
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供應用程式自動更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式會定期讀取它以查看是否有可用更新，應用程式的部署資訊清單檔。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。  
@@ -120,7 +117,7 @@ ms.lasthandoff: 12/22/2017
   
  如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application>   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   

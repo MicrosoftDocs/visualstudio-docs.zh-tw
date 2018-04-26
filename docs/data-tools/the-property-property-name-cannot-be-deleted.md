@@ -6,14 +6,15 @@ ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d12f974e1949bfb96cd2d6bb774eb2b73f371689
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80b5e40900cd8912b727270a46ebcf119c324f53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>屬性\<屬性名稱 > 無法刪除
 

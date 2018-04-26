@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 668ef447673897ce02d5d988ce20839006fead09
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 34c8c26343eef22d3b36ad70d4d7d484de76d866
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 文字範本中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供有用的方式產生任何類型的文字。 您可以使用文字範本產生的文字，做為您的應用程式的一部分的執行階段，並在設計階段產生的專案程式碼部分。 本主題摘要說明最常要求 「 如何？...」 問題。

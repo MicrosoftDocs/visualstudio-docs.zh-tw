@@ -1,5 +1,6 @@
 ---
-title: 秘訣與訣竅 Visual Studio 偵錯工具中 |Microsoft 文件
+title: 秘訣和訣竅，在 Visual Studio 偵錯工具
+description: 了解 Visual Studio 偵錯工具的產能的秘訣
 ms.custom: ''
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
@@ -14,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 729ea8e59f0b6efd6006308719cba19fbc8b5690
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb4fb2c32f74a764e092e0e6f65685a358d64f54
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具的 產能的秘訣和訣竅
 

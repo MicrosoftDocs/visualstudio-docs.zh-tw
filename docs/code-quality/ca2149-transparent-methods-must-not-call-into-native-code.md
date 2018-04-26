@@ -1,6 +1,7 @@
 ---
 title: CA2149：透明方法不可以呼叫機器碼
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -11,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c14cfff80836ebaeb8b2d0dda2298f91e913083f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0e21ae36795d866be76c6caaf9d01388621348d6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149：透明方法不可以呼叫機器碼
 |||

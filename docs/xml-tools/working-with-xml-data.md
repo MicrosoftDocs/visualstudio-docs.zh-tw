@@ -1,19 +1,19 @@
 ---
-title: 使用 XML 資料 |Microsoft 文件
-ms.custom: ''
+title: 使用 XML 資料
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 
@@ -45,28 +45,16 @@ XML 結構描述設計工具已整合於 Visual Studio 和 XML 編輯器可讓�
 
 Visual Studio 支援偵錯 XSLT 樣式表。 使用偵錯工具，您可在 XSLT 樣式表中設定中斷點，從程式碼逐步執行 XSLT 樣式表等。
 
-## <a name="in-this-section"></a>本節內容
-
-[XML 編輯器](../xml-tools/xml-editor.md)  
-簡介 XML 編輯器。
-
-[XML 結構描述設計工具](../xml-tools/xml-schema-designer.md)  
-討論 XML 結構描述設計工具及使用 XML 結構定義語言 (XSD) 結構描述。
-
 ## <a name="related-sections"></a>相關章節
 
-[偵錯 XSLT](../xml-tools/debugging-xslt.md)  
-討論如何使用 Visual Studio 偵錯工具偵錯樣式表。
+[偵錯 XSLT](../xml-tools/debugging-xslt.md)討論如何偵錯使用 Visual Studio 偵錯工具的樣式表。
 
-[XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。
+[XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 及 XSLT 技術的相關資訊。
 
-[在 Visual Studio 中建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-提供建立資料集之設計階段工具的解釋。
+[建立和設定 Visual Studio 中的資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)提供設計階段工具的說明建立資料集。
 
-[Managed 程式碼中的 XML Web Service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-討論如何建立及部署 XML Web 服務，以及如何存取 XML Web 服務。
+[Managed 程式碼中的 XML Web Service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立及部署 XML Web 服務以及如何存取 XML Web 服務。
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

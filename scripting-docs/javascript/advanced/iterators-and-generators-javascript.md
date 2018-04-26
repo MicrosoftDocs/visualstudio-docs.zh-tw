@@ -1,27 +1,28 @@
 ---
-title: "迭代器和產生器 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 迭代器和產生器 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68ef5b2f-0349-492b-b557-73ff2a2f90cf
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85c27969609a38b87b15c727e9c8aef89ee77032
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a566e870c6e9589daed86d42e3fb933374cbb17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="iterators-and-generators-javascript"></a>迭代器和產生器 (JavaScript)
 迭代器是用來周遊容器物件 (例如清單) 的物件。 在 JavaScript 中，迭代器物件不是不同的內建物件，而是實作 `next` 方法來存取容器物件中下一個項目的物件。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/27/2017
 > [!CAUTION]
 >  [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)] 支援產生器。  
   
-## <a name="iterators"></a>Iterator  
+## <a name="iterators"></a>迭代器  
  JavaScript 迭代器的實作包含兩個或三個符合特定介面的物件：  
   
 -   Iterable 介面  
@@ -140,7 +141,7 @@ console.log(si2.next().value);
 function* strIter() {  
     var str = "jobob";  
     var idx = 0;  
-    while(idx , str.length) {  
+    while(idx < str.length) {  
         var modify = yield str[idx++];  
         if(modify == 100) {  
             idx = 0;  

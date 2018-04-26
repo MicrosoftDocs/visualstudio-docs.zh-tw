@@ -1,6 +1,7 @@
 ---
 title: 最佳作法和範例 (SAL)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
@@ -8,11 +9,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: d26f5329f530af2d6547f44b73ded82c5db53f4f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5e1b86508b803844255458f3aa2c7f33d859af93
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是一些取得大部分超出來源的程式碼的註釋語言 (SAL)，並避免一些常見的問題。

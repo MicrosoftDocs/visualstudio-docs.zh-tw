@@ -1,6 +1,7 @@
 ---
 title: CA1303：不要將常值當做已當地語系化的參數傳遞
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -16,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b621306bab673172c1c437ca0a959e4bc36f6da
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9c20d0c11711f3736f29498f9519f07163e7cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303：不要將常值當做已當地語系化的參數傳遞
 |||

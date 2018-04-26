@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的虛擬變數
 虛擬變數是用來顯示在變數視窗中的特定資訊的詞彙或**快速監看式** 對話方塊。 輸入虛擬變數的方式與輸入一般變數相同。 但虛擬變數並不是變數，而且不會對應至您程式中的變數名稱。  
@@ -49,7 +49,7 @@ $handles
 |`$` *registername*<br /><br /> 或<br /><br /> `@` *registername*|會顯示暫存器的內容*registername*。<br /><br /> 通常只要輸入註冊名稱，即可顯示註冊內容。 您唯一需要使用此語法的時機，就是當註冊名稱多載變數名稱時。 如果註冊名稱與目前範圍內的變數名稱相同，偵錯工具會將該名稱解譯為變數名稱。 這是當`$` *registername*或`@` *registername*派上用場。|  
 |`$clk`|以時脈週期顯示時間。|  
 |`$user`|針對執行應用程式的帳戶，顯示含有帳戶資訊的結構。 為安全起見，不會顯示密碼資訊。|  
-|`$exceptionstack`|顯示目前 Windows 執行階段例外狀況的堆疊追蹤。 `$ exceptionstack` 僅適用於 UWP 應用程式。 針對 C++ 和 SHE 例外狀況，不支援 `$ exceptionstack`。|  
+|`$exceptionstack`|顯示目前 Windows 執行階段例外狀況的堆疊追蹤。 `$ exceptionstack` 僅適用於 UWP 應用程式。 `$ exceptionstack` 不支援 c + + 和 SEH 例外狀況|  
 |`$ReturnValue`|顯示 .NET Framework 方法的傳回值。|  
   
  在 C# 和 Visual Basic 中，您可以使用下表中顯示的虛擬變數：  

@@ -1,6 +1,7 @@
 ---
 title: CA1800：請勿執行不必要的轉型
 ms.date: 10/26/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -18,11 +19,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aeac772e52f27b82e41fa66224f27ebfdee342
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 34c03adb8ff34d3590ed93264d77536c4cdff080
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：請勿執行不必要的轉型
 |||

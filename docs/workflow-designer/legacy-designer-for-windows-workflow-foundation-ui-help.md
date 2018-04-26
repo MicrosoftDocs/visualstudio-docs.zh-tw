@@ -1,7 +1,9 @@
 ---
-title: 舊版的 Windows Workflow Foundation UI 說明的設計工具 |Microsoft 文件
+title: 工作流程設計工具的舊版設計工具的 Windows Workflow Foundation UI 說明
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - UI reference
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, UI reference
@@ -12,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8b3a84926f933e2e7f5d97a6e2f3562f2807560
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>舊版 Windows Workflow Foundation UI 設計工具的說明
-此章節包含舊版的 Windows 工作流程設計工具中的即時線上說明主題[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。 當您需要以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標時，請使用舊版設計工具。
 
- 您可以存取這些主題，從[!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]藉由按下的使用者介面**F1**時舊版[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]對話方塊為開啟。
+本章節包含舊版 Windows 工作流程設計工具，Visual Studio 2010 中的即時線上說明主題。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版設計工具。
+
+您可以從 Visual Studio 使用者介面存取這些主題，藉由按下**F1**舊版工作流程設計工具對話方塊開啟時。

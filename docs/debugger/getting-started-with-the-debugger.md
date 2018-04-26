@@ -1,6 +1,6 @@
 ---
-title: 了解如何偵錯-Visual Studio |Microsoft 文件
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+title: 開始使用偵錯工具
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 偵錯
+# <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 偵錯
 
 本主題將介紹 Visual Studio 偵錯工具的逐步解說中的功能。 如果您想要偵錯工具功能的高階檢視，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
 

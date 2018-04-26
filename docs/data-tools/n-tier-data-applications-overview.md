@@ -11,14 +11,15 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 226fe4206af9e41d1d071b34e6985e00ce4041f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 *多層式架構*資料應用程式是分成多個資料應用程式*層*。 多層式架構應用程式也稱為 「 分散式應用程式 」 和 「 多層式應用程式 」，在個別分成離散層級用戶端與伺服器之間分散處理。 當您開發存取資料的應用程式時，您應該有清楚的區隔構成應用程式的各層之間。

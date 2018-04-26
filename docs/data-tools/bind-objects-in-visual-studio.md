@@ -14,14 +14,15 @@ ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b515a802c4b82bb3b1400f5ea88720242b80aa9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1713221c56fe29357e708e3790aa292d456c4519
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂物件。 當您想要將資料庫的資料儲存在您繫結至 UI 控制項的物件時，建議的方法就是使用 Entity Framework 來產生類別。 Entity Framework 自動產生所有重複使用變更追蹤程式碼，這表示，本機物件的任何變更會自動保存至資料庫時您 DbSet 物件上呼叫 AcceptChanges。 如需詳細資訊，請參閱[Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。

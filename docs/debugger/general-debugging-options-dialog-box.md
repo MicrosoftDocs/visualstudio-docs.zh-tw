@@ -1,12 +1,8 @@
 ---
-title: "選項對話方塊、 一般、 偵錯，|Microsoft 文件"
-ms.custom: 
+title: 選項對話方塊、 一般、 偵錯，|Microsoft 文件
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -22,17 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 **工具 > 選項 > 偵錯 > 一般**頁面可讓您設定下列選項：  
@@ -203,6 +198,6 @@ Managed 程式碼中啟用例外狀況助理。 在 Visual Studio 2017，例外�
   
 您應在偵錯 .NET C++ 程式碼時使用此選項，原因是新的偵錯引擎不支援評估 .NET C++ 運算式。 然而，啟用 [原生相容性模式] 會停用許多相依於目前偵錯工具實作以進行運作的功能。 例如，舊版引擎缺乏許多視覺化檢視針對內建型別類似`std::string`Visual Studio 2015 的專案中。   請在這些案例中使用 Visual Studio 2013 專案，以獲得最佳的偵錯體驗。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

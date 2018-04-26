@@ -1,10 +1,9 @@
 ---
-title: 適合我的發行選項為何？ | Microsoft Docs
-ms.custom: ''
+title: 適合我的發行選項為何？
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.technology:
-- vs-ide-deployment
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5927986b8c89a2e86fcecf874eae35ac016805f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # 適合我的發行選項為何？
 

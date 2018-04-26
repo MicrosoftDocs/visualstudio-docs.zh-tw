@@ -12,14 +12,15 @@ ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: da00528f7c5e2332f4aa599674f6dcb0929be125
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連接到 Access 資料庫 (Windows Form) 中的資料
 您可以使用 Visual Studio 連接至 Access 資料庫 （.mdf 檔案或.accdb 檔案）。 定義連接之後，資料會出現在**資料來源**視窗。 您可以從這個視窗將資料表或檢視表拖曳至表單上。

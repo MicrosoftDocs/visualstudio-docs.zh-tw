@@ -1,18 +1,19 @@
 ---
-title: 範例 Excel 擴充功能：Element 類別 | Microsoft Docs
+title: 範例 Excel 延伸模組：Element 類別
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a254f85a27c650bf8d8b64d2460ebad88e3befc1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
 延伸模組會使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 並代表 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 中 Worksheet 控制項和 Cell 控制項的類別。

@@ -1,5 +1,6 @@
 ---
-title: 使用 c + + 使用 Visual Studio 偵錯工具進行偵錯 |Microsoft 文件
+title: 偵錯 c + +
+description: 偵錯原生程式碼使用 Visual Studio 偵錯工具
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f591c4272dc50643dcb3c82f60d96fd218723405
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1027e5f737bf3fc75b33c47578ae0cc107a1fb7d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-c-using-the-visual-studio-debugger"></a>使用 c + + 使用 Visual Studio 偵錯工具進行偵錯
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門： 偵錯 c + + 使用 Visual Studio 偵錯工具
 
 Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵錯您的應用程式。 本主題提供了解一些基本功能的快速方法。
 
