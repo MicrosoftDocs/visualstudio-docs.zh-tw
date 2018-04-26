@@ -1,7 +1,9 @@
 ---
-title: 舊版工作流程活動 |Microsoft 文件
+title: 工作流程設計工具的舊版工作流程活動
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>舊版工作流程活動
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 包括一組預設的活動，這組活動提供許多功能，如控制流程、條件、事件處理、狀態管理，以及與應用程式和服務相互通訊。 在設計工作流程時，您可以使用系統提供的活動所提供的 Windows 工作流程設計工具，或您可以建立您自己的自訂活動。
+Windows Workflow Foundation (WF) 包含一組預設提供的控制流程、 條件、 事件處理、 狀態管理，以及通訊的功能，應用程式與服務活動。 在設計工作流程時，您可以使用系統提供的活動所提供的 Windows 工作流程設計工具，或您可以建立您自己的自訂活動。
 
- 下表列出 [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] 架構全新的活動集。 然而，並非所有，這些活動都由活動設計工具可以從存取**工具箱**的[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]。 若要建立活動，其設計工具拖曳**工具箱**並將它放在設計介面上。
+下表列出 Windows Workflow Foundation 架構全新的活動組。 然而，並非所有，這些活動都由活動設計工具可以從存取**工具箱**的工作流程設計工具。 若要建立活動，其設計工具拖曳**工具箱**並將它放在設計介面上。
 
 |活動|描述|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|回應對工作流程提出的 Web 服務要求。 如需詳細資訊，請參閱[使用 WebServiceOutputActivity 活動](http://go.microsoft.com/fwlink?LinkID=65092)。|
 |<xref:System.Workflow.Activities.WhileActivity>|讓工作流程執行迴圈，直到符合條件為止。 如需詳細資訊，請參閱[使用 WhileActivity 活動](http://go.microsoft.com/fwlink?LinkID=65091)。|
 
- 如需如何建立自訂活動的詳細資訊，請參閱[開發的自訂活動](http://go.microsoft.com/fwlink?LinkID=65023)和[使用舊版活動設計工具](../workflow-designer/using-the-legacy-activity-designer.md)。
+如需如何建立自訂活動的詳細資訊，請參閱[開發的自訂活動](http://go.microsoft.com/fwlink?LinkID=65023)和[使用舊版活動設計工具](../workflow-designer/using-the-legacy-activity-designer.md)。
 
 ## <a name="see-also"></a>另請參閱
 

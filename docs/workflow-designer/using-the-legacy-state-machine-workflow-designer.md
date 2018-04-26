@@ -1,7 +1,9 @@
 ---
-title: 使用舊版狀態機器工作流程設計工具 |Microsoft 文件
+title: 工作流程設計工具-使用舊版狀態機器工作流程設計工具
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用舊版狀態機器工作流程設計工具
-您可以在建立新的狀態機器工作流程中的專案時[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]為目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]，您可以選擇使用**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 舊版狀態機器專案範本的相關資訊，請參閱[How to： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- 狀態機器工作流程包含了一組狀態。 其中有一個狀態表示初始狀態。 每個狀態可以接收特定的一組事件。 根據事件，會完成另一個狀態的轉換。 狀態機器工作流程會有最終狀態。 當轉換為最終狀態時，工作流程便完成。
+當您建立新的狀態機器工作流程專案以.NET Framework 3.5 版或 WinFX 為目標的 Visual Studio 2010 中時，您可以選擇使用**狀態機器工作流程主控台應用程式**或**狀態機器工作流程程式庫**舊版專案範本。 如果您選擇其中一個狀態機器專案範本，則狀態機器設計工具會以舊版工作流程設計工具使用者介面的方式呈現。 舊版狀態機器專案範本的相關資訊，請參閱[How to： 建立狀態機器工作流程主控台應用程式 （舊版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[How to： 建立狀態機器工作流程程式庫 （舊版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+狀態機器工作流程包含了一組狀態。 其中有一個狀態表示初始狀態。 每個狀態可以接收特定的一組事件。 根據事件，會完成另一個狀態的轉換。 狀態機器工作流程會有最終狀態。 當轉換為最終狀態時，工作流程便完成。
 
 ## <a name="state-machine-designer-views"></a>狀態機器設計工具檢視
  狀態機器設計工具是不限格式的設計工具，這表示活動可自由地在設計介面上移動。 狀態機器設計工具有兩個檢視：*狀態*檢視和*事件導向*檢視。

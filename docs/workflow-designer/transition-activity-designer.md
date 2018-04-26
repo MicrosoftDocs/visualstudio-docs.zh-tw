@@ -1,7 +1,9 @@
 ---
-title: 轉換活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-Transition 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>轉換活動設計工具
+
 <xref:System.Activities.Statements.Transition> 表示在兩個狀態之間轉換。
 
 ## <a name="using-the-transition-activity-designer"></a>使用 Transition 活動設計工具
- Transition 活動設計工具允許您設定兩個狀態之間的轉換。
+
+Transition 活動設計工具允許您設定兩個狀態之間的轉換。
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Transition 屬性
- 下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.Transition> 屬性，並說明如何在設計工具中使用它們。
+
+下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.Transition> 屬性，並說明如何在設計工具中使用它們。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ ms.lasthandoff: 04/16/2018
 |**目的地**|True|表示轉換完成之後狀態機器轉換到的狀態。 這個對應至物件模型中轉換的 <xref:System.Activities.Statements.Transition.To%2A> 屬性。 按一下目的狀態的名稱，可將設計工具檢視切換到該狀態的展開檢視。 當轉換已建立並可用拖曳箭頭 (其將轉換連接至設計工具中的目的狀態) 的方式進行變更時，會設定這個值。|
 
 ### <a name="creating-transitions"></a>建立轉換
- 轉換可由這些方式建立：從某個狀態將線條拖曳到另一個狀態，或將狀態放到三角形上，當某個狀態被拖曳到另一個狀態上方時會出現此三角形。 若要以拖曳的方式來建立轉換，將滑鼠停留在來源狀態的邊緣，並將線條從源狀態拖曳到目的狀態。 若要以放置的方式來建立轉換，拖曳目的狀態並停留在來源狀態上方，然後放到來源狀態周圍四個三角形的其中一個。 目的狀態可以是任一個新的狀態從拖曳**工具箱**，或從工作流程設計工具拖曳到現有狀態。
+
+轉換可由這些方式建立：從某個狀態將線條拖曳到另一個狀態，或將狀態放到三角形上，當某個狀態被拖曳到另一個狀態上方時會出現此三角形。 若要以拖曳的方式來建立轉換，將滑鼠停留在來源狀態的邊緣，並將線條從源狀態拖曳到目的狀態。 若要以放置的方式來建立轉換，拖曳目的狀態並停留在來源狀態上方，然後放到來源狀態周圍四個三角形的其中一個。 目的狀態可以是任一個新的狀態從拖曳**工具箱**，或從工作流程設計工具拖曳到現有狀態。
 
 > [!NOTE]
 > 狀態機器中的單一狀態最多可以有 76 個以工作流程設計工具來建立的轉換。 針對在設計工具以外建立的工作流程，狀態的轉換數目上限僅受制於系統資源。
 
- 共用觸發轉換是一組共用相同觸發事件的轉換。 共用觸發程序允許對目的狀態的條件式進展，根據的是運算式的評估結果，此運算式是針對多個共用通用觸發事件的轉換所設定。 若要將其他動作加入到轉換，並建立共用轉換，請按一下指出所要之轉換起始點的圓形，然後將它拖曳到所要的狀態。 新的轉換會與初始轉換共用相同的觸發程序，但擁有唯一的條件和動作。 共用的轉換也會建立從轉換設計工具內按一下**新增共用的觸發程序轉換**底部的轉換設計工具，然後選取 從想要的目標狀態**要連線的可用狀態**下拉式清單。
+共用觸發轉換是一組共用相同觸發事件的轉換。 共用觸發程序允許對目的狀態的條件式進展，根據的是運算式的評估結果，此運算式是針對多個共用通用觸發事件的轉換所設定。 若要將其他動作加入到轉換，並建立共用轉換，請按一下指出所要之轉換起始點的圓形，然後將它拖曳到所要的狀態。 新的轉換會與初始轉換共用相同的觸發程序，但擁有唯一的條件和動作。 共用的轉換也會建立從轉換設計工具內按一下**新增共用的觸發程序轉換**底部的轉換設計工具，然後選取 從想要的目標狀態**要連線的可用狀態**下拉式清單。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,7 +1,9 @@
 ---
-title: 如何： 建立宣告式規則條件 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 建立宣告式規則條件 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>HOW TO：建立宣告式規則條件 (舊版)
-本主題描述如何宣告目標的規則條件使用舊版的 Windows 工作流程設計工具[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- 條件陳述式會評估為**True**或**False**。 宣告式規則條件是條件陳述式所建立的使用[規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)並以 XML 格式儲存與工作流程。 它可以包括述詞 (Predicate)，這些述詞會比較工作流程狀態和結合多個述詞的布林值代數。
+本主題描述如何宣告規則條件使用舊版的 Windows 工作流程設計工具的目標為.NET Framework 3.5 版或 WinFX。
 
- 宣告式規則條件用於以下的 Windows Workflow Foundation 全新活動中：
+條件陳述式會評估為**True**或**False**。 宣告式規則條件是條件陳述式所建立的使用[規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)並以 XML 格式儲存與工作流程。 它可以包括述詞 (Predicate)，這些述詞會比較工作流程狀態和結合多個述詞的布林值代數。
+
+宣告式規則條件用於以下的 Windows Workflow Foundation 全新活動中：
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>若要使用規則條件編輯器建立宣告式規則條件
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>若要使用規則條件編輯器建立宣告式規則條件
 
 1.  在活動中**屬性**視窗中，按一下 **條件**屬性或**UntilCondition**屬性，根據活動。
 
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/16/2018
 
 4.  按一下**ConditionName**屬性。
 
-5.  按一下**ConditionName**省略**[…]**開啟**選取條件** 對話方塊。
+5.  按一下**ConditionName**省略 **[…]** 開啟**選取條件** 對話方塊。
 
 6.  按一下**新條件**開啟**規則條件編輯器** 對話方塊。
 

@@ -1,8 +1,9 @@
 ---
-title: 格式、C#、文字編輯器、選項 | Microsoft Docs
+title: 格式、C#、文字編輯器、選項
 ms.date: 02/09/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
@@ -19,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: db7140248818cc92f95150e7a368fa0f71d1d010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 534460d0ad6b7290190a88b3714c7f1eb0972723
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
 
@@ -56,4 +57,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
+- [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

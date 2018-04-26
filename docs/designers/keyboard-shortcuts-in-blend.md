@@ -1,6 +1,7 @@
 ---
 title: 鍵盤快速鍵 (Blend)
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a34b8816604eb3da57dbc54b327a2574242d35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: abbfffd1b83b8e5e1133ea909fc14ca90254c4c7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
 ## <a name="project-shortcuts"></a>專案快速鍵

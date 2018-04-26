@@ -1,6 +1,7 @@
 ---
 title: 繪製圖案與路徑
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ddd089022e8a5e0f2500fb2c778a9ec4106612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8aa7ff4885f9e102d74d20e6b8526db50f17cd5e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 在 XAML 設計工具中，「圖形」(Shape) 正如您所預期。 例如：矩形、圓形或橢圓形。 *「路徑」* (path) 是圖形的更靈活版本。 您可以執行像是調整形狀，或將圖形合併在一起形成新的圖形等動作。

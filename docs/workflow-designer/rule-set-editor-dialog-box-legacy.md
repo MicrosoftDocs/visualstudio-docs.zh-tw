@@ -1,7 +1,9 @@
 ---
-title: 規則集編輯器對話方塊 （舊版） |Microsoft 文件
+title: 工作流程設計工具中的規則集編輯器對話方塊 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
-本主題描述如何使用**規則集編輯器**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- **規則集編輯器**對話方塊用來建立和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)規則集可序列化為.rules 檔案。
+本主題描述如何使用**規則集編輯器**在舊版的 Windows 工作流程設計工具 對話方塊。 當您需要以.NET Framework 3.5 版或 WinFX 為目標時，請使用舊版工作流程設計工具。
+
+**規則集編輯器**對話方塊用來建立和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)規則集可序列化為.rules 檔案。
 
 > [!NOTE]
 > 如果您想要開啟.rules 檔案**含編碼的 XML 編輯器**，您必須先關閉工作流程或活動相關聯的設計工具視窗。
 
- 如需有關如何存取資訊**規則集編輯器**對話方塊中，請參閱[How to： 建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
+如需有關如何存取資訊**規則集編輯器**對話方塊中，請參閱[How to： 建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。
 
 > [!WARNING]
-> 舊版 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 不支援多重目標。
+> 舊版工作流程設計工具，用於以.NET Framework 3.5 版或 WinFX 目標的規則編輯器不支援多目標。
 
- 下表描述的使用者介面 (UI) 項目**規則集編輯器** 對話方塊。
+下表描述的使用者介面 (UI) 項目**規則集編輯器** 對話方塊。
 
 |UI 項目|描述|
 |----------------|-----------------|

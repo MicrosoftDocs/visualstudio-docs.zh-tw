@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中引進區域變數 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中引進區域變數
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7af958e923c6af7929b8e4a9309c210dbf8ced5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05cf2d99f88fcf6d43674d837d62f2e6053470a9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 

@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 影像庫
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: sample
 helpviewer_keywords:
@@ -17,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dac2699afa005709599965aec1b32117af414093
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
 

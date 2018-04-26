@@ -1,10 +1,9 @@
 ---
-title: 選項對話方塊、環境、一般 | Microsoft Docs
-ms.custom: ''
+title: 選項對話方塊、環境、一般
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 
@@ -67,17 +66,27 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="other"></a>其他
 
-**[視窗] 功能表中顯示的項目** 自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 與 24 之間的數字。 數字預設為 10。
+**個項目顯示在 [視窗] 功能表中**
 
-**最近使用的清單中顯示的項目** 自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 與 24 之間的數字。 數字預設為 10。 這是擷取最近使用的專案和檔案的簡單方法。
+自訂 [視窗] 功能表之 [視窗] 清單中顯示的視窗數目。 輸入 1 與 24 之間的數字。 數字預設為 10。
 
-**顯示狀態列** 顯示此狀態列。 狀態列位於 IDE 視窗底部，並顯示進行中作業的進度資訊。
+**顯示在最近使用的清單中的項目數**
 
-**[關閉] 按鈕只影響作用中的工具視窗** 指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
+自訂出現在 [檔案] 功能表上的最近使用的專案和檔案數目。 輸入 1 與 24 之間的數字。 數字預設為 10。 這是擷取最近使用的專案和檔案的簡單方法。
 
-**[自動隱藏] 按鈕只影響作用中的工具視窗** 指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
+**顯示狀態列**
+
+顯示狀態列。 狀態列位於 IDE 視窗底部，並顯示進行中作業的進度資訊。
+
+**[關閉] 按鈕只影響作用中的工具視窗**
+
+指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
+
+**自動隱藏 按鈕只影響作用中的工具視窗**
+
+指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 
 ## <a name="see-also"></a>另請參閱
 
-[環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
-[自訂視窗配置](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
+- [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

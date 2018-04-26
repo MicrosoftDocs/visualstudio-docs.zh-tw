@@ -1,9 +1,10 @@
 ---
-title: 適用於 .NET 開發人員的 Visual Studio 2017 | Microsoft Docs
+title: 適用於 .NET 開發人員的 Visual Studio 2017
 description: 本文概述可協助您更快撰寫更好 .NET 程式碼的 Visual Studio 2017 功能。
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -11,15 +12,15 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b7625a074732949e9fb876627dbff1abf005982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017 生產力指南
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) 讓開發人員比以往更具生產力！ 我們已改善方案啟始和載入、測試探索以及鍵入延遲的效能和可靠性。 我們還新增並加強了一些功能，可協助您更快撰寫更好的程式碼。 這些功能包括：巡覽至反向組譯的組件、鍵入時的變數名稱建議、[測試總管] 中的階層架構檢視、[移至全部] (**Ctrl + T**) 以巡覽至檔案/類型/成員/符號宣告、智慧型例外狀況協助程式、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。 
+[Visual Studio 2017](https://www.visualstudio.com/downloads/) 讓開發人員比以往更具生產力！ 我們已改善方案啟始和載入、測試探索以及鍵入延遲的效能和可靠性。 我們還新增並加強了一些功能，可協助您更快撰寫更好的程式碼。 這些功能包括：巡覽至反向組譯的組件、鍵入時的變數名稱建議、[測試總管] 中的階層架構檢視、[移至全部] (**Ctrl + T**) 以巡覽至檔案/類型/成員/符號宣告、智慧型例外狀況協助程式、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。
 
 請遵循本指南來最佳化您的生產力。
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 - [Visual Studio 的快速鍵 (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-以下是常用的 Visual Studio 快速鍵： 
+以下是常用的 Visual Studio 快速鍵：
 
 | 快速鍵 (所有設定檔) | 命令 | 描述 |
 |-|-|-|
@@ -61,7 +62,7 @@ Visual Studio 2017 有一項稱為 [移至全部] (**Ctrl+T**) 的功能。 [移
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的小組對我們的程式碼庫強制執行程式碼樣式規則。
 您可以使用 .editorconfig 檔案來撰寫編碼慣例，並讓它們隨著來源移動。
-- 建議您安裝 [EditorConfig 語言服務延伸模組](https://aka.ms/editorconfig)，以便在 Visual Studio 中新增和編輯 .editorconfig 檔案。 
+- 建議您安裝 [EditorConfig 語言服務延伸模組](https://aka.ms/editorconfig)，以便在 Visual Studio 中新增和編輯 .editorconfig 檔案。
 - 請參閱[文件](https://aka.ms/editorconfigDocs)，以了解所有 .NET 編碼慣例選項。
 - 如需 .editorconfig 範例，請參閱[此要點](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) \(英文\)。
 
@@ -70,10 +71,10 @@ Visual Studio 2017 有一項稱為 [移至全部] (**Ctrl+T**) 的功能。 [移
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>我需要更多的重構和程式碼修正。
 Visual Studio 2017 提供許多重構、程式碼產生動作，以及程式碼修正。 紅色波浪線代表錯誤，綠色波浪線代表警告，而三個灰色點表示程式碼的建議。 您可以存取程式碼修正，方法是按一下燈泡/螺絲起子圖示或按 **Ctrl+.** 或 **Alt+Enter**。 每個修正都隨附一個預覽視窗，其中顯示修正運作方式的即時程式碼差異比對。
 
-- 常用的快速修正和重構包括： 
+- 常用的快速修正和重構包括：
   - *重新命名*
   - *擷取方法*
-  - *變更方法簽章* 
+  - *變更方法簽章*
   - *產生建構函式*
   - *產生方法*
   - 將型別移到檔案
@@ -81,8 +82,8 @@ Visual Studio 2017 提供許多重構、程式碼產生動作，以及程式碼�
   - 加入參數
   - 移除不必要的 Using
   - 詳細資訊請見[文件](https://aka.ms/refactorings)
-- 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix) \(英文\) 撰寫您自己的重構或程式碼修正。 
-- 數個社群成員撰寫了新增額外程式碼檢查的「免費」延伸模組： 
+- 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix) \(英文\) 撰寫您自己的重構或程式碼修正。
+- 數個社群成員撰寫了新增額外程式碼檢查的「免費」延伸模組：
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [ Visual Studio 的 SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -93,10 +94,10 @@ Visual Studio 2017 提供許多重構、程式碼產生動作，以及程式碼�
 Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底。 深入了解[程式碼巡覽功能](../ide/navigating-code.md)
 
 | 功能 | 快速鍵 | 詳細資料/增強功能 |
-|- | - | -| 
+|- | - | -|
 | 尋找所有參考 | **Shift+F12**| 結果會以色彩標示，而且可以依專案、定義等進行分組。您也可以「鎖定」結果。 |
 | 移至實作 | **Ctrl+F12** | 您可以在 `override` 關鍵字上使用 [移至定義] 來瀏覽至覆寫的成員 |
-| 移至定義 | **F12** 或 **Ctrl + 按一下**| 您可以在按一下的同時長按 **Ctrl** 來瀏覽至定義 | 
+| 移至定義 | **F12** 或 **Ctrl + 按一下**| 您可以在按一下的同時長按 **Ctrl** 來瀏覽至定義 |
 | 查看定義 | **Alt+F12** | 定義的內嵌檢視 |
 | 結構視覺化檢視 | 大括號之間的灰色虛線 | 暫留以查看您的程式碼架構 |
 | 巡覽至反向編譯的組件 | **F12** 或 **Ctrl + 按一下** | 透過啟用下列功能以瀏覽至外部來源 (使用 ILSpy 進行反編譯)：[工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼]。 |
@@ -112,8 +113,8 @@ Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底�
 ![Visual Studio 中 [文字總管] 的階層檢視](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>我想要偵錯我的程式碼。
-我們已在 Visual Studio 2017 中加入大量的新偵錯功能。 
-- 「執行至點選處」可允許您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。 
+我們已在 Visual Studio 2017 中加入大量的新偵錯功能。
+- 「執行至點選處」可允許您在一行程式碼旁暫留、點擊顯示的綠色 [播放] 圖示，並執行程式直到該行為止。
 - 新的「例外狀況協助程式」會將最重要的資訊 (例如 NullReferenceException 中哪個變數為 'null') 放置在對話方塊的最上層。
 - [倒退](../debugger/how-to-use-intellitrace-step-back.md)偵錯讓您可以回溯到前面的中斷點或步驟，以檢視應用程式過去的狀態。
 - [快照集偵錯](/azure/application-insights/app-insights-snapshot-debugger)可讓您調查即時 Web 應用程式在例外狀況擲回時的狀態 (必須在 Azure 上)。
@@ -121,8 +122,8 @@ Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底�
 ![VS2017 中新的例外狀況協助程式](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在我的專案中使用版本控制。
-您可以使用 Git 或 TFVC 來儲存及更新您在 Visual Studio 中的程式碼。 
-- 使用 *Team Explorer* 來組織本機變更，並使用狀態列來追蹤暫止的認可和變更。 
+您可以使用 Git 或 TFVC 來儲存及更新您在 Visual Studio 中的程式碼。
+- 使用 *Team Explorer* 來組織本機變更，並使用狀態列來追蹤暫止的認可和變更。
 - 透過 [Visual Studio 的持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)延伸模組，在 Visual Studio 中針對您的專案設定持續整合和傳遞，並採用敏捷式開發人員工作流程。
 
 ![Visual Studio 中的原始檔控制](../ide/media/VSIDE_Productivity_SourceControl.png)

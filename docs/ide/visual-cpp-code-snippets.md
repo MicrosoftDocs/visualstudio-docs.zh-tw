@@ -1,9 +1,9 @@
 ---
-title: Visual C++ 程式碼片段 | Microsoft Docs
-ms.custom: ''
+title: Visual C++ 程式碼片段
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa6057f45c3c9030264f6a795caece6ed8a3b28e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -174,4 +174,4 @@ class SomeClass {
 
 ## <a name="see-also"></a>另請參閱
 
-[程式碼片段](../ide/code-snippets.md)
+- [程式碼片段](../ide/code-snippets.md)

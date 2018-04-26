@@ -1,7 +1,9 @@
 ---
-title: 工作流程設計工具殼層功能 |Microsoft 文件
+title: 工作流程設計工具殼層功能
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 
@@ -27,7 +29,7 @@ Windows 工作流程設計工具由三個主要 UI 區域所組成： 在設計�
  概觀圖會顯示在目前階層連結根目錄中整個活動的縮小版本，包含其子活動與所有展開的子活動。 檢視區是一個橘色框線的矩形，會反白顯示目前在編輯器內的活動部分。 將矩形置放於概觀圖上，即可捲動工作流程設計工具，並變更編輯器的檢視。
 
 > [!NOTE]
-> [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 使用者介面已視覺化。 活動設計工具只有在需要時才會呈現。 如果從未在設計工具介面上畫出工作流程的某部分，則該部分在概觀圖上會顯示為白色。 捲動概觀圖，即可完整畫出工作流程。
+> 是虛擬化工作流程設計工具使用者介面。 活動設計工具只有在需要時才會呈現。 如果從未在設計工具介面上畫出工作流程的某部分，則該部分在概觀圖上會顯示為白色。 捲動概觀圖，即可完整畫出工作流程。
 
 ## <a name="copying-or-saving-workflows-as-images"></a>將工作流程複製或儲存成影像
  工作流程能夠以點陣圖格式複製，或儲存為點陣圖或向量格式。 複製或儲存影像提供一種匯出的方式，可將目前階層連結根目錄中的整個活動檢視匯出到其他程式，包含其子活動與所有展開的子活動。
@@ -36,4 +38,4 @@ Windows 工作流程設計工具由三個主要 UI 區域所組成： 在設計�
 
 ## <a name="fonts-and-colors"></a>字型和色彩
 
-在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 內的 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]中所使用的字型會受到環境字型所控制。 如果您的作業系統主題是高對比的色彩配置，[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 的顯示色彩就會變更。 變更字型或色彩設定後，必須重新啟動 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中的變更才會生效。
+在 Visual Studio 2010 內的工作流程設計工具中使用的字型受到環境字型。 工作流程設計工具中顯示的色彩變更，如果您使用高對比色彩配置作業系統佈景主題。 要變更字型或色彩設定的變更才會影響在工作流程設計工具之後，您必須重新啟動 Visual Studio 2010。

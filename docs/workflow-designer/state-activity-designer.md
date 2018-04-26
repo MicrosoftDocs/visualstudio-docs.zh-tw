@@ -1,7 +1,9 @@
 ---
-title: 狀態活動設計工具 |Microsoft 文件
+title: 工作流程設計工具的 State 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 117479e00c8b27617c33a2cce422afe5ab3124aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
+
 <xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。
 
 ## <a name="using-the-state-activity-designer"></a>使用 State 活動設計工具
- 若要加入<xref:System.Activities.Statements.State>至工作流程中，拖曳**狀態**活動設計工具從**狀態機器**區段**工具箱**拖放入<xref:System.Activities.Statements.StateMachine>Windows 工作流程設計工具介面上的活動。 <xref:System.Activities.Statements.State> 活動稍後可以放到 <xref:System.Activities.Statements.StateMachine> 和加入的轉換，或是可以在放置 <xref:System.Activities.Statements.State> 活動時建立轉換。 若要加入<xref:System.Activities.Statements.State>活動，並建立轉換，在一個步驟中，拖曳**狀態**活動從**狀態機器**區段**工具箱**並將它滑鼠停留在另一個在工作流程設計工具中的狀態。 當被拖曳的 <xref:System.Activities.Statements.State> 位在另一個 <xref:System.Activities.Statements.State> 上方時，另一個 <xref:System.Activities.Statements.State> 周圍會出現四個三角形。 如果將 <xref:System.Activities.Statements.State> 拖放到四個三角形的其中一個，就會將它加入到該狀態機器，並建立從來源 <xref:System.Activities.Statements.State> 到所放置之目的地 <xref:System.Activities.Statements.State> 的轉換。 如需詳細資訊，請參閱[轉換](../workflow-designer/transition-activity-designer.md)。
+
+若要加入<xref:System.Activities.Statements.State>至工作流程中，拖曳**狀態**活動設計工具從**狀態機器**區段**工具箱**拖放入<xref:System.Activities.Statements.StateMachine>Windows 工作流程設計工具介面上的活動。 <xref:System.Activities.Statements.State> 活動稍後可以放到 <xref:System.Activities.Statements.StateMachine> 和加入的轉換，或是可以在放置 <xref:System.Activities.Statements.State> 活動時建立轉換。 若要加入<xref:System.Activities.Statements.State>活動，並建立轉換，在一個步驟中，拖曳**狀態**活動從**狀態機器**區段**工具箱**並將它滑鼠停留在另一個在工作流程設計工具中的狀態。 當被拖曳的 <xref:System.Activities.Statements.State> 位在另一個 <xref:System.Activities.Statements.State> 上方時，另一個 <xref:System.Activities.Statements.State> 周圍會出現四個三角形。 如果將 <xref:System.Activities.Statements.State> 拖放到四個三角形的其中一個，就會將它加入到該狀態機器，並建立從來源 <xref:System.Activities.Statements.State> 到所放置之目的地 <xref:System.Activities.Statements.State> 的轉換。 如需詳細資訊，請參閱[轉換](../workflow-designer/transition-activity-designer.md)。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 State 活動屬性
- 下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.State> 屬性，並說明如何在設計工具中使用它們。 其中一些屬性可以在屬性方格中進行編輯，有些可以在設計工具介面上編輯。
+
+下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.State> 屬性，並說明如何在設計工具中使用它們。 其中一些屬性可以在屬性方格中進行編輯，有些可以在設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

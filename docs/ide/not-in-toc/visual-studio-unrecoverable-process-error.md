@@ -1,21 +1,21 @@
 ---
-title: Visual Studio 無法復原的程序錯誤 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 無法復原的程序錯誤
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - editor
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cb88b9a07728c2e8c263551e9f0aa2e750ec12
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1db7f2729ded01eedda6fff6d18ca1b2ee3607b6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # Visual Studio 無法復原的程序錯誤
 

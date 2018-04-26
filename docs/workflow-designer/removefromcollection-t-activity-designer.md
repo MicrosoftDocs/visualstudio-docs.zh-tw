@@ -1,7 +1,9 @@
 ---
-title: RemoveFromCollection&lt;T&gt;活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-RemoveFromCollection&lt;T&gt;活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
@@ -10,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e2407a7aa75547cf4669bd85814561869998d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6aedee945ab19201406ce26183db4e2f3519263
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt;活動設計工具
-**RemoveFromCollection\<T >**活動設計工具用來建立及設定<xref:System.Activities.Statements.RemoveFromCollection%601>活動。
+# <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活動設計工具
 
-## <a name="the-removefromcollectiont-activity"></a>RemoveFromCollection < T\>活動
+**RemoveFromCollection\<T >** 活動設計工具用來建立及設定<xref:System.Activities.Statements.RemoveFromCollection%601>活動。
+
+## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > 活動
  <xref:System.Activities.Statements.RemoveFromCollection%601> 活動會移除某個特定集合中的指定項目。
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>使用 RemoveFromCollection\<T > 活動設計工具
- **RemoveFromCollection\<T >**活動設計工具位於**集合**分類**工具箱**，即可存取的哪一個**工具箱**索引標籤上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
+ **RemoveFromCollection\<T >** 活動設計工具位於**集合**分類**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **RemoveFromCollection\<T >**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面任一處活動通常放置，例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.RemoveFromCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 RemoveFromCollection < Int32\>。 <xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**RemoveFromCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
+ **RemoveFromCollection\<T >** 活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面上，只要活動通常放置，例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.RemoveFromCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 RemoveFromCollection < Int32\>。 <xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**RemoveFromCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\>屬性
  下表顯示 <xref:System.Activities.Statements.RemoveFromCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
