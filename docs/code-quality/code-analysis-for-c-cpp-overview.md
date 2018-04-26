@@ -1,6 +1,7 @@
 ---
 title: C/C++ 程式碼分析概觀
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,11 +23,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4068b4956d0337a3b3c46693b54b0df165439a7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 71b9652333913a6b101da9669824a9adb21943af
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>程式碼分析 C/c + + 的概觀
 

@@ -6,14 +6,15 @@ ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1d065a31c8c15ac26b7ded368499846cb9f0645
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: acb279780db1291d62cde8202268e0990a56ea64
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具，Visual Studio 中
 

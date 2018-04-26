@@ -1,7 +1,9 @@
 ---
-title: Visual Studio 工作流程視窗 （舊版） |Microsoft 文件
+title: 工作流程設計工具的 Visual Studio 工作流程視窗 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流程視窗 (舊版)
-[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供的舊版 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 可用來以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。 舊版設計工具是一種視覺化設計工具，可用來建立工作流程。 您可以將活動從**工具箱**設計介面，然後再進行那里設定。 當此介面為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 編輯器視窗時，會佔用其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 編輯器視窗使用的主視窗區域。 工作流程的名稱會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 視窗標題列中。
 
- 有經驗的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用者應該已熟悉大多數的舊版設計工具視窗。 下表說明主要的視窗。
+由 Visual Studio 2010 工作流程設計工具提供的舊版可以用於以.NET Framework 3.5 版或 WinFX 目標。 舊版設計工具是一種視覺化設計工具，可用來建立工作流程。 您可以將活動從**工具箱**設計介面，然後再進行那里設定。 當此介面為 Visual Studio 編輯器視窗時，會佔用其他 Visual Studio 編輯器視窗使用的主視窗區域。 工作流程的名稱會顯示在 Visual Studio 視窗標題列中。
+
+大部分的舊版設計工具視窗應該會熟悉熟悉的 Visual Studio 使用者。 下表說明主要的視窗。
 
 |視窗|描述|
 |------------|-----------------|
-|舊版工作流程設計介面|視覺化設計工具介面，可用來建立以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標的工作流程。 它提供了可撰寫以視覺化方式活動拖放到活動設計工具從**工具箱**至設計介面。|
+|舊版工作流程設計介面|用來建立以.NET Framework 3.5 版或 WinFX 為目標的工作流程視覺化設計工具介面。 它提供了可撰寫以視覺化方式活動拖放到活動設計工具從**工具箱**至設計介面。|
 |工具箱|提供活動的圖形表示，您可將活動拖曳至設計介面。|
 |屬性|用於設定工作流程活動屬性。|
 |方案總管|以階層式樹狀檢視顯示工作流程專案，並可讓您存取協助管理專案的功能。|

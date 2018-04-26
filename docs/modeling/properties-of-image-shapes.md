@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 474dd6e1ec655b27c9b447bcb3197c07dba56ecf
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 780c9c98bc6be110a0c8bc987a70aeea3344d0e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 設定以定義影像圖形`Image`預先定義的映像檔案類別的屬性。 支援下列格式：

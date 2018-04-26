@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1bdf6d413287f75fa57ef80525a43f86cd55c74d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ee7f51bd4921a86996f9bc82742649f1b0812a65
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言 (DSL) 中的所有網域屬性可以顯示在圖表上和您語言總管中，對使用者和程式碼可以存取。 不過，屬性不同，其值會儲存的方式。

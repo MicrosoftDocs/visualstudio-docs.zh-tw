@@ -1,20 +1,23 @@
 ---
-title: 如何： 在工作流程中設定中斷點 |Microsoft 文件
+title: 工作流程設計工具-如何： 在工作流程中設定中斷點
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4112e74336faf1fb456ebd94dd7c7617747a11f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2ef863bfb899c218a65673236c284bed63aed11
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
+
 當您使用 Windows 工作流程設計工具時，您可以設定中斷點，圖形化工作流程上與您會在 Visual Basic 或 C# 程式碼即可。 如預期般，工作流程執行會在您設定的每個中斷點上停止。
 
  中斷點有三種狀態：*暫止*，*繫結*，和*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。
@@ -28,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 > [!WARNING]
 > 如果 XAML 檔案屬性的完整路徑不正確，就不會取得工作流程中的中斷點。將專案/方案移至另一個資料夾或另一台機器之後，XAML 檔案的完整路徑即不正確。選取 Ctrl+S 以儲存並更新完整路徑屬性。
 
-### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點
+## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點
 
 1.  選取您要偵錯工具中斷在哪一個活動上。
 

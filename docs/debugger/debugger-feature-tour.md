@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 偵錯工具功能導覽-|Microsoft 文件
-description: Visual Studio 偵錯工具導覽
+title: 第一眼偵錯工具
+description: 需要快速查看 Visual Studio 偵錯工具的不同功能。
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>快速入門： 第一次查看 Visual Studio 偵錯工具
+# <a name="first-look-at-the-visual-studio-debugger"></a>初探 Visual Studio 偵錯工具
 
 本主題將介紹 Visual Studio 偵錯工具的功能。 如果您想要跟著做 Visual Studio 中開啟您自己的應用程式，您可以這樣做，或您可以依照範例應用程式使用[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
@@ -157,7 +157,7 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 ![監看式視窗](../debugger/media/dbg-tour-watch-window.png "監看式視窗")
 
-在此範例中，您必須上設定的監看式`File`物件，而且您可以看到其值變更隨著您瀏覽偵錯工具。 不同於其他變數視窗，**監看式**windows 永遠顯示變數您觀賞 （它們灰色時超出範圍）。
+在此範例中，您必須上設定的監看式`f`物件，而且您可以看到其值變更隨著您瀏覽偵錯工具。 不同於其他變數視窗，**監看式**windows 永遠顯示變數您觀賞 （它們灰色時超出範圍）。
 
 如需詳細資訊，請參閱[設定使用監看式和快速監看式視窗的監看式](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式�
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
 
-## <a name="more-features-to-look-at"></a>若要查看更多的功能
+## <a name="next-steps"></a>後續步驟
 
--   [偵錯工具秘訣和訣竅](../debugger/debugger-tips-and-tricks.md)了解如何增加您的產能，偵錯工具。
+在本教學課程，過許多偵錯工具的功能概覽。 您可以使用範例應用程式的這些功能更深入探討
 
--   [編輯後繼續](../debugger/edit-and-continue.md)語言 (C#、 c + +、 Visual Basic) 的子集，[編輯後繼續] 功能可讓您編輯程式碼進行偵錯工作階段。
-
--   [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何偵錯多執行緒應用程式。 
-
--   [遠端偵錯](../debugger/remote-debugging.md)描述如何偵錯其他電腦或裝置上執行的應用程式。 
-  
--   [IntelliTrace](../debugger/intellitrace.md)說明在 Visual Studio Enterprise 中的 IntelliTrace 功能。 您可以使用它來記錄和追蹤程式碼的執行歷程記錄。
-
--   [網路使用量](../profiling/network-usage.md)描述您可以使用 web 服務與其他網路資源在通用 Windows 應用程式 (UWP) 進行偵錯的程式碼剖析工具。 您可以使用此工具來檢查裝載。
-
--   [偵錯介面存取 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK)。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。  
-
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 偵錯](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [了解使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)

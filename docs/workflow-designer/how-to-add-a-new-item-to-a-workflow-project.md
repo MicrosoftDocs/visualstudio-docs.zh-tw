@@ -1,23 +1,26 @@
 ---
-title: 如何： 將新的項目加入至工作流程專案 |Microsoft 文件
+title: 工作流程設計工具-如何： 將新的項目加入至工作流程專案
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3024573a9ca4732066610c2c29c05fa1d73891
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目加入至工作流程專案
-在建立工作流程專案後，可以將工作流程活動、設計工具和其他熟悉的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 項目加入至專案。
 
- 下表列出您可加入至工作流程專案的 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 項目。
+建立工作流程專案之後，您可以將工作流程活動、 設計工具和其他熟悉的 Visual Studio 項目加入至您的專案。
+
+下表列出您可以加入至工作流程專案的 Windows Workflow Foundation (WF) 項目。
 
 |名稱|描述|
 |----------|-----------------|
@@ -26,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 |程式碼活動|包含寫入至程式碼之執行邏輯的活動。 已為您產生包含 <xref:System.Activities.CodeActivity.Execute%2A> 方法之覆寫的原始程式碼檔。|
 |WCF 工作流程服務|使用工作流程活動建置的 [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] 服務。 選取這個項目是將相同的檔案加入專案，當選取時，您會取得**WCF 工作流程服務應用程式**新的專案範本。 如需有關這個程序的詳細資訊，請參閱[How to： 建立 WCF 工作流程服務應用程式](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)。|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案
 
 1.  在**專案**功能表上，按一下 **加入新項目...**.
 

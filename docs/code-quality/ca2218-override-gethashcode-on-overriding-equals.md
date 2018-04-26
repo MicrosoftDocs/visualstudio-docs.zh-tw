@@ -1,6 +1,7 @@
 ---
 title: CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3bcf3d8c5f9780bcd245af7d5687797fce35ba9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3ad4417551d45c55c3ea194e4b3b3f28ed04af96
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
 |||

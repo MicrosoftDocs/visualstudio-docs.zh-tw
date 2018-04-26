@@ -11,14 +11,15 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e456d436145d859a24a224511dc69c1383bbcaeb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 84b275f2238774aacff143af17161f09006e8506
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>資料庫專案和 Visual Studio 中的資料層應用程式
 您可以使用資料庫專案建立新的資料庫，新的資料層應用程式 (Dac)，並且更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案可讓您套用至您的資料庫開發工作中相同的方式將這些技術套用至 managed 或原生程式碼中的版本控制和專案管理技術。 您可以協助您建立來管理對資料庫和資料庫伺服器的開發小組*DAC 專案*，*資料庫專案*，或*伺服器專案*並將它放置版本控制。 您的小組成員可以簽出檔案，以進行、 建置和測試中的變更*隔離式的開發環境*，或沙箱，與小組共用它們之前。 為協助確保程式碼品質，您的小組可以完成，並預備環境中測試之資料庫的特定版本的所有變更，然後再部署到實際執行環境的變更。

@@ -1,7 +1,9 @@
 ---
-title: 如何： 將活動新增至工具箱 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 將活動新增至工具箱 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>HOW TO：將活動新增至工具箱 (舊版)
-建置在工作流程方案中使用舊版的 Windows 工作流程設計工具為目標時[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]、 自訂活動可以加入至工作流程專案和其設計工具會置於**工具箱**的輕鬆存取。 您也可以直接將活動新增**工具箱**從動態連結程式庫 (DLL)。
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>若要將活動從 DLL 新增至工具箱
+當建置在工作流程方案中使用舊版 Windows 工作流程設計工具的目標.NET Framework 3.5 版或 WinFX，可以自訂活動新增至工作流程專案，並在其設計工具放置於**工具箱**的輕鬆存取。 您也可以直接將活動新增**工具箱**從動態連結程式庫 (DLL)。
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>若要將活動從 DLL 新增至工具箱
 
 1.  以滑鼠右鍵按一下底下的 工具箱 視窗介面**Windows 工作流程**，然後按一下 **選擇項目**。
 

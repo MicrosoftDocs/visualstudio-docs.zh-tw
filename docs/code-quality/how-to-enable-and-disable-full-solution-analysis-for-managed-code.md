@@ -7,14 +7,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 52b181fe58297bb10e1a2abd0f9ff7bf9c78069e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d227360be39455662d3d2ebe822810debd655dac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 啟用和停用 managed 程式碼的完整解決方案分析
 

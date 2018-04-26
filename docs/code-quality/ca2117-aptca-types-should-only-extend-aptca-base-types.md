@@ -1,6 +1,7 @@
 ---
 title: CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8b313f0e1c33eb5c17a291995956e62d8c597e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2d295ef0a0cc2723634ad6f32c9bb91c4f7524b2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 

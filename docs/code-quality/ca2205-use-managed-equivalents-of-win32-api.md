@@ -1,6 +1,7 @@
 ---
 title: CA2205：必須使用 Win32 API 的 Managed 對應項
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e38a985db524b3d95c4f33a4eb4f31c909fd08c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d964cdbe94822fc6156e25320e723cd10fe7d853
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205：必須使用 Win32 API 的 Managed 對應項
 |||

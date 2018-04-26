@@ -223,14 +223,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 robots: noindex,nofollow
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bed8ea08496d8751c093d448c5138b97db39dd3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用於疑難排解資料存取錯誤的其他資源
 

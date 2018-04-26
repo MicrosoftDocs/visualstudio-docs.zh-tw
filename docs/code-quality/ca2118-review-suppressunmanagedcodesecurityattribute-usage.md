@@ -1,6 +1,7 @@
 ---
 title: CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be5ebf971d7a852edafc2b54e954c5b06ef81c88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3eeff4eca5bcc6d2490fc077501726e3ba7e8de1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 |||

@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1742f6cbc4503306766a771db3ed0ab7c264d685
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e6a6bb74d4b4a4fc93c4cf0425c1fe06b9f290a4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供數個層級，您可以定義模型工具：

@@ -18,14 +18,15 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40e19e7595c91429a8c52ddcdd01808a84197cc4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c27cb590b5a8a4b38a143de5e6faba80414f97ba
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入 dataset 時關閉條件約束
 

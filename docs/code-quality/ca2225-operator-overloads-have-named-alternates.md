@@ -1,6 +1,7 @@
 ---
 title: CA2225：運算子多載必須有具名的替代方法
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6e95f73fbb037041aadcc95eb7336a5744ee2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225：運算子多載必須有具名的替代方法
 |||

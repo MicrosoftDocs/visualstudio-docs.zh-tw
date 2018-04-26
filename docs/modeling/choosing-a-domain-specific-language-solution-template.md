@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ec2d2210912011e09e439f25ecaa0e21ab6e918
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e0db20e4920f099882fd04d4ba06e65fb9c0c54c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>選擇網域指定的語言方案範本
 若要建立特定領域語言方案中，選擇一個網域特定語言設計工具精靈 中的方案範本。 藉由選擇最接近的語言，您想要建立的範本，您可以減少您必須起始方案進行的修改。

@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2412e50279c646190d1112a42c00da06c75bf794
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 6f3c17a388aa974b78fdecc108891cf3be17c0da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。

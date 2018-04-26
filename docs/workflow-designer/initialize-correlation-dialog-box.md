@@ -1,7 +1,9 @@
 ---
-title: 初始化相互關聯對話方塊 |Microsoft 文件
+title: 工作流程設計工具-初始化相互關聯對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aac62d4439c2280e977ef929c79bb103348c170a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="initialize-correlation-dialog-box"></a>初始化相互關聯對話方塊
 
@@ -29,7 +31,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>若要啟動初始化相互關聯對話方塊
 
--   按一下**檢視**上**InitializeCorrelation**活動設計工具或選取<xref:System.ServiceModel.Activities.InitializeCorrelation>中的活動[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]然後按一下省略符號按鈕旁的 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的屬性屬性方格中。
+-   按一下**檢視**上**InitializeCorrelation**活動設計工具或選取<xref:System.ServiceModel.Activities.InitializeCorrelation>活動在工作流程設計工具，然後按一下省略符號按鈕旁的 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的屬性屬性方格。
 
 ## <a name="see-also"></a>另請參閱
 

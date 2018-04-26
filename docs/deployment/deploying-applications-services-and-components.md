@@ -1,5 +1,5 @@
 ---
-title: 部署概觀-Visual Studio |Microsoft 文件
+title: 部署概觀
 description: 深入了解您的選項，以部署應用程式，從 Visual Studio。
 ms.custom: mvc
 ms.date: 11/26/2017
@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b21e8bf8abae2e5543d68751fd53b07778c8b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 第一次查看 Visual Studio 中的部署
 

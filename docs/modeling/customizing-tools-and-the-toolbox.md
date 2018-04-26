@@ -13,12 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b82495d3a79139490713bb0bff4804f6e9fc5452
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。

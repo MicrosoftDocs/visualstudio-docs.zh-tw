@@ -1,6 +1,7 @@
 ---
 title: 如何在 Visual Studio 中產生程式碼度量資料
 ms.date: 12/12/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c412c90d77534a3359eb2ae640ba3a83cfddbc8b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 535c831ecaa08ff0eee2c6380d1c3d4045bca89a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何： 產生程式碼度量資料
 

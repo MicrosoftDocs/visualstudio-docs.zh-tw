@@ -17,14 +17,15 @@ ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bf94efcfa7c3829328b3ddabcfa96b779cb1b9f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f97e0d4c0cd16fd2bc7cc8bf140a59a800a254ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構應用程式中的資料集
 

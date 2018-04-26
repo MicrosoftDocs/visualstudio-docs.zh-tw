@@ -1,6 +1,7 @@
 ---
 title: CA2237：必須以 SerializableAttribute 標記 ISerializable 類型
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7121211d474369f55cff36a7b7d388b7ddfc1a24
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4b7efc13eaee32662688593ff0cb94d9c0cb7a8a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237：必須以 SerializableAttribute 標記 ISerializable 類型
 |||

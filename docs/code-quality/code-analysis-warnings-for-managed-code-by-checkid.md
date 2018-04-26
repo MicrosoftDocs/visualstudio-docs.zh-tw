@@ -1,6 +1,7 @@
 ---
 title: 依據 checkid 列出 Managed 程式碼的 visual Studio 程式碼分析警告
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -259,11 +260,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd801587ad5c15eb72835905b48da8799fa37d25
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ffa56023aecc327f78b4b1d860c14fa96e04e45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 checkid 列出 managed 程式碼的程式碼分析警告
 

@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 566558390e29f9198b2328463dfce26327f76565
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-tools"></a>自訂項目工具
 在一些 DSL 定義，您一組項目代表單一的概念。 例如，如果您建立的模型，其中一個元件都有一組固定的通訊埠，您一定想要在其父元件的同時間建立的連接埠。 因此，您必須自訂項目建立工具，讓它會建立一組項目，而不是其中一個。 若要達成此目的，您可以自訂如何初始化項目建立工具。

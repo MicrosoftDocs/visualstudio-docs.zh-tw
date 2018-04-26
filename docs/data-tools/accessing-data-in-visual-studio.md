@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7c7e031eb3fbe0330ab752882c8ac89eb7617bf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 

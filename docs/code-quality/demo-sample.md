@@ -1,6 +1,7 @@
 ---
 title: 示範範例
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: sample
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b557114e8650c2370b81d2ba627b987929414d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a15137263c631a7695ae8878a19c0c206c348e95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="demo-sample"></a>示範範例
 

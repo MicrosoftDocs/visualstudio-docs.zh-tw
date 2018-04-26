@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbb3f5c2abc6a768c69d6d375674f3d54eadee31
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 定義其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼。 大部分的 DSL 方案中的程式碼會產生這個檔案中。

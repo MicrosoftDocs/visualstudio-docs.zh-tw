@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e675d0c4cb7826fb0ddc56dc4491be5d126f3410
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2a7d92646cefb572f96da6cd09aa33f32b7a61b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 A*網域屬性*是一項功能的模型項目可以保存值。 例如，`Person` 網域類別可能具有屬性 `Name` 和 `BirthDate`。 在 DSL 定義中，網域屬性會列在圖表上的網域類別方塊中以及 DSL Explorer 中的網域類別之下。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。

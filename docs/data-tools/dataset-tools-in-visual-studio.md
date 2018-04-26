@@ -45,14 +45,15 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4697fb9f0cbc56fef2b27a3fd14a0a91a224b09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9dc41702d9af7a604569c72f64c869f34a2e1b3b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 > [!NOTE]

@@ -1,6 +1,7 @@
 ---
 title: 程式碼產生和 T4 文字範本
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
@@ -16,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3864a1dbf468cbef19b5da4ca95577db59a02e6
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f0a2b6ef6e73fcc4b3fe754377bdad5fdc05eef2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中， *「T4 文字範本」* (T4 text template) 混合了文字區塊及可產生文字檔案的控制邏輯。 控制邏輯是由 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]撰寫的程式碼片段。 在 Visual Studio 2015 Update 2 (含) 以後版本中，您可以在 T4 範本指示詞中使用 C# 6.0 版功能。 產生的檔案可以是任何類型的文字，例如網頁、資源檔或任何語言的原始程式碼。

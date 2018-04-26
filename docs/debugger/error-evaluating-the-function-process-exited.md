@@ -1,25 +1,25 @@
 ---
-title: 錯誤： 目標處理序結束時評估該函式&#39;函式&#39;|Microsoft 文件
+title: 錯誤： 目標處理序已結束，代碼&#39;程式碼&#39;時評估該函式&#39;函式&#39;|Microsoft 文件
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>錯誤： 目標處理序結束時評估該函式&#39;函式&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>錯誤： 目標處理序已結束，代碼&#39;程式碼&#39;時評估該函式&#39;函式&#39;
 
-完整訊息文字： 目標處理序結束時評估該函式 'function'。 請參閱輸出視窗，以指定的目標處理序結束代碼。
+完整訊息文字： 嘗試評估函式 'function' 目標處理序已結束，代碼 'code'。
 
 若要讓您更輕鬆地檢查.NET 物件的狀態，偵錯工具會自動強制執行額外的程式碼偵錯的處理序 (通常是屬性 getter 方法和`ToString`函式)。 在大部分情況下，這些函式會順利完成，或擲回例外狀況可以攔截的偵錯工具。 不過，有某些情況下，在其中例外狀況無法攔截，因為它們跨核心界限、 需要使用者訊息幫浦，或是無法復原。 做為結果的屬性 getter 或執行程式碼的 ToString 方法來明確終止處理序 (例如，呼叫`ExitProcess()`) 或擲回未處理的例外狀況無法攔截，(比方說， `StackOverflowException`) 將會終止偵錯處理序與結束偵錯工作階段。 如果您遇到這個錯誤訊息時，發生這種情況。
  

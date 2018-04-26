@@ -9,14 +9,15 @@ ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6adcdd2d1bead72c1ff615731aa26be664f1f455
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 46eb04100f455bbd1d8dc26ad2b7c1a67e2da50d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何： 為實體類別加入驗證
 *驗證*實體類別會確認程序的輸入資料物件的值符合的條件約束物件的結構描述，以及建立應用程式的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。

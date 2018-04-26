@@ -1,7 +1,9 @@
 ---
-title: 如何： 使用引數設計工具 |Microsoft 文件
+title: 工作流程設計工具-如何： 使用引數設計工具
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f4af6e06bbebe3f543deed68ff85f4cd0a39be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
-與舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 相較，引數設計工具可讓資料更容易流入及流出活動。 按一下即可存取設計工具**引數**設計畫布左下角的按鈕。 設計工具會包含引數出現在表格形式，而且可依每個資料行標頭，除了清單**預設值**資料行。 每個引數都包含名稱、in/out/in-out/屬性方向、型別與預設運算式值 (如果有的話)。 名稱與預設運算式值都是可編輯的文字欄位，而型別和方向都可從下拉式清單中選取。 如需詳細資訊，請參閱[變數和引數 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
-### <a name="to-create-a-new-argument"></a>若要建立新引數
+相較於舊版.NET Framework，引數設計工具可讓您輕鬆地讓資料流入及流出活動。 按一下即可存取設計工具**引數**設計畫布左下角的按鈕。 設計工具會包含引數出現在表格形式，而且可依每個資料行標頭，除了清單**預設值**資料行。 每個引數都包含名稱、in/out/in-out/屬性方向、型別與預設運算式值 (如果有的話)。 名稱與預設運算式值都是可編輯的文字欄位，而型別和方向都可從下拉式清單中選取。 如需詳細資訊，請參閱[變數和引數 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
-1.  在 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 中開啟工作流程或活動的方案。
+## <a name="to-create-a-new-argument"></a>若要建立新引數
+
+1.  Visual Studio 2010 中開啟工作流程或活動的方案。
 
 2.  開啟引數設計工具，依序按一下**引數**設計畫布左下角的按鈕。 引數設計工具隨即出現。
 

@@ -1,18 +1,17 @@
 ---
-title: 逐步解說： 使用 XSLT 階層 |Microsoft 文件
-ms.custom: ''
+title: 逐步解說：使用 XSLT 階層
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4259a06d79588983e3591510c40e119bc4fcb3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 
@@ -24,93 +23,93 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 ## <a name="to-debug-in-a-referenced-style-sheet"></a>在參考的樣式表中偵錯
 
-1. 在 Visual Studio 中開啟 XML 文件。 本範例使用下列 `collection.xml` 文件。  
-  
+1. 在 Visual Studio 中開啟 XML 文件。 這個範例會使用下列文件：
+
     ```xml
-    <?xml version="1.0" encoding="utf-8"?>  
-    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
-    <COLLECTION>  
-      <BOOK>  
-        <TITLE>Lover Birds</TITLE>  
-        <AUTHOR>Cynthia Randall</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>The Sundered Grail</TITLE>  
-        <AUTHOR>Eva Corets</AUTHOR>  
-        <PUBLISHER>Lucerne Publishing</PUBLISHER>  
-      </BOOK>  
-      <BOOK>  
-        <TITLE>Splish Splash</TITLE>  
-        <AUTHOR>Paula Thurman</AUTHOR>  
-        <PUBLISHER>Scootney</PUBLISHER>  
-      </BOOK>  
-    </COLLECTION>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>
+    <COLLECTION>
+      <BOOK>
+        <TITLE>Lover Birds</TITLE>
+        <AUTHOR>Cynthia Randall</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>The Sundered Grail</TITLE>
+        <AUTHOR>Eva Corets</AUTHOR>
+        <PUBLISHER>Lucerne Publishing</PUBLISHER>
+      </BOOK>
+      <BOOK>
+        <TITLE>Splish Splash</TITLE>
+        <AUTHOR>Paula Thurman</AUTHOR>
+        <PUBLISHER>Scootney</PUBLISHER>
+      </BOOK>
+    </COLLECTION>
     ```
 
 1. 加入下列 `xslincludefile.xsl`：
 
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-          xml:space="preserve">  
-  
-    <xsl:template match="TITLE">  
-       Title - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="AUTHOR">  
-       Author - <xsl:value-of select="."/><BR/>  
-    </xsl:template>  
-  
-    <xsl:template match="PUBLISHER">  
-       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->  
-    </xsl:template>  
-  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xml:space="preserve">
+
+    <xsl:template match="TITLE">
+       Title - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="AUTHOR">
+       Author - <xsl:value-of select="."/><BR/>
+    </xsl:template>
+
+    <xsl:template match="PUBLISHER">
+       Publisher - <xsl:value-of select="."/><BR/><!-- removed second <BR/> -->
+    </xsl:template>
+
+    </xsl:stylesheet>
     ```
-  
-3.  加入下列 `xslinclude.xsl` 檔案：  
-  
+
+3.  加入下列 `xslinclude.xsl` 檔案：
+
     ```xml
-    <?xml version='1.0'?>  
-    <xsl:stylesheet version="1.0"  
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
-  
-      <xsl:output method="xml" omit-xml-declaration="yes"/>  
-  
-      <xsl:template match="/">  
-        <xsl:for-each select="COLLECTION/BOOK">  
-          <xsl:apply-templates select="TITLE"/>  
-          <xsl:apply-templates select="AUTHOR"/>  
-          <xsl:apply-templates select="PUBLISHER"/>  
-          <BR/>  
-          <!-- add this -->  
-        </xsl:for-each>  
-      </xsl:template>  
-  
-      <!-- The following template rule will not be called,  
-      because the related template in the including stylesheet  
-      is called. If we move this template so that  
-      it follows the xsl:include instruction, this one  
-      will be called instead.-->  
-      <xsl:template match="TITLE">  
-        <DIV STYLE="color:blue">  
-          Title: <xsl:value-of select="."/>  
-        </DIV>  
-      </xsl:template>  
-  
-      <xsl:include href="xslincludefile.xsl" />  
-    </xsl:stylesheet>  
+    <?xml version='1.0'?>
+    <xsl:stylesheet version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+      <xsl:output method="xml" omit-xml-declaration="yes"/>
+
+      <xsl:template match="/">
+        <xsl:for-each select="COLLECTION/BOOK">
+          <xsl:apply-templates select="TITLE"/>
+          <xsl:apply-templates select="AUTHOR"/>
+          <xsl:apply-templates select="PUBLISHER"/>
+          <BR/>
+          <!-- add this -->
+        </xsl:for-each>
+      </xsl:template>
+
+      <!-- The following template rule will not be called,
+      because the related template in the including stylesheet
+      is called. If we move this template so that
+      it follows the xsl:include instruction, this one
+      will be called instead.-->
+      <xsl:template match="TITLE">
+        <DIV STYLE="color:blue">
+          Title: <xsl:value-of select="."/>
+        </DIV>
+      </xsl:template>
+
+      <xsl:include href="xslincludefile.xsl" />
+    </xsl:stylesheet>
     ```
-  
+
 4.  在指令處加入中斷點`<xsl:include href="xslincludefile.xsl" />`。
-  
-5.  開始偵錯。  
-  
-6.  偵錯工具停在指示`<xsl:include href="xslincludefile.xsl" />`，按**逐步執行** 按鈕。 請注意，參考的樣式表中的偵錯可以繼續進行。 您會看見階層，同時設計工具會顯示正確的路徑。  
-  
+
+5.  開始偵錯。
+
+6.  偵錯工具停在指示`<xsl:include href="xslincludefile.xsl" />`，按**逐步執行** 按鈕。 在參考的樣式表可以繼續偵錯。 您會看見階層，同時設計工具會顯示正確的路徑。
+
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)
+- [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)

@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 686adf1eb7696447a77d20d18f48527c7cfaae96
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 34330e4c4b5580c0554585ec88599e2d2e62181d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供方法來建立模型的模型之間，與從其他工具的連結。 例如，您無法連結特定領域語言 (DSL) 模型和 UML 模型。 您可以建立一組整合的 DSL。

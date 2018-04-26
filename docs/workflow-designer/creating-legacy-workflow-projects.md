@@ -1,7 +1,9 @@
 ---
-title: 建立舊版工作流程專案 |Microsoft 文件
+title: 工作流程設計工具-建立舊版工作流程專案
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>建立舊版工作流程活動
-本章節描述如何建立使用 vs2010 提供 Windows 工作流程設計工具的舊版工作流程專案。 舊版 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 是以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標。 其中包括如何使用下表所列工作流程專案範本的相關資訊。
+
+本章節描述如何建立工作流程專案使用舊版 Visual Studio 2010 所提供的 Windows 工作流程設計工具。 舊版工作流程設計工具，以.NET Framework 3.5 版或 WinFX 為目標。 其中包括如何使用下表所列工作流程專案範本的相關資訊。
 
 |專案範本|描述|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ ms.lasthandoff: 04/16/2018
 |狀態機器工作流程主控台應用程式|可建立狀態機器工作流程主控台應用程式的專案。|
 |狀態機器工作流程程式庫|可建立狀態機器工作流程程式庫的專案。|
 |空白工作流程專案|用來建立工作流程應用程式的空白專案。|
-
-## <a name="in-this-section"></a>本節內容
- [如何：建立工作流程專案 (舊版)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [如何：建立循序工作流程主控台應用程式 (舊版)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [如何：建立循序工作流程程式庫 (舊版)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [如何：建立工作流程活動程式庫 (舊版)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [如何：建立狀態機器工作流程主控台應用程式 (舊版)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [如何：建立狀態機器工作流程程式庫 (舊版)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [如何：建立空白的工作流程專案 (舊版)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [如何：設定工作流程專案屬性 (舊版)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [如何：新增項目至工作流程專案 (舊版)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>另請參閱
 

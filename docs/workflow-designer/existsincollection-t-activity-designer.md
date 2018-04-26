@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt;活動設計工具 |Microsoft 文件
+title: 工作流程設計工具-ExistsInCollection&lt;T&gt;活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt;活動設計工具
-**ExistsInCollection\<T >**活動設計工具用來建立及設定<xref:System.Activities.Statements.ExistsInCollection%601>活動。
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 活動設計工具
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection < T\>活動
+**ExistsInCollection\<T >** 活動設計工具用來建立及設定<xref:System.Activities.Statements.ExistsInCollection%601>活動。
+
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > 活動
  <xref:System.Activities.Statements.ExistsInCollection%601> 活動會判斷特定集合中是否有指定項目存在。
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>使用 ExistsInCollection\<T > 活動設計工具
- **ExistsInCollection\<T >**活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱** 索引標籤[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
+ **ExistsInCollection\<T >** 活動設計工具位於**集合**分類的**工具箱**，依序按一下存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **ExistsInCollection\<T >**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面任一處活動通常放置，例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.ExistsInCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 ExistsInCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 它可以在屬性方格中變更)。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**ExistsInCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
+ **ExistsInCollection\<T >** 活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面上，只要活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.ExistsInCollection%601>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 ExistsInCollection < Int32\>。 (根據預設， *TypeArgument*是**Int32**。 它可以在屬性方格中變更)。<xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**ExistsInCollection < T\>** 活動設計工具或在**DisplayName**屬性方格的方塊。 其他的屬性必須在屬性方格上進行編輯。
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection < T\>屬性
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > 屬性
  下表顯示 <xref:System.Activities.Statements.ExistsInCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。
 
 |屬性名稱|必要項|使用方式|

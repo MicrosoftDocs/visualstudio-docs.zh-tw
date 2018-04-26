@@ -1,6 +1,7 @@
 ---
 title: Managed 程式碼的程式碼分析警告
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -16,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 201bc04e2a5d030d40a060feda2a9e3e9ad6d45e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Managed 程式碼的程式碼分析警告
 Managed 程式碼分析工具會提供警告，指出 Managed 程式碼程式庫中的規則違規。 警告會組織成規則區域，例如設計、當地語系化、效能與安全性。 每一項警告皆表示 Managed 程式碼分析規則的違規。 本節針對每個 Managed 程式碼分析警告，提供深入的討論與範例。

@@ -1,6 +1,7 @@
 ---
 title: 程式碼分析原則錯誤
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 625b67972095728d1e9f5c0fd9fa9e5d8da60786
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 如果程式碼分析原則不符合在簽入時，會發生下列錯誤：
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
 3.  設定 Visual Studio 中指定的規則不包含的所有規則規則集指定的程式碼分析簽入原則中的 team 專案中所指定。
 
- **程式碼分析原則失敗。在專案 {0} 中有錯誤或組建不是最新狀態。**
+ **程式碼分析原則失敗。在專案中有錯誤{0}或組建不是最新狀態。**
 
  可能是組建包含錯誤或已修正錯誤，而未在修正之後執行程式碼分析。
 
@@ -44,31 +45,31 @@ ms.lasthandoff: 04/19/2018
 
  程式碼分析原則需要所簽入的所有檔案必須都位於目前開啟的方案。 開啟的方案，但 「 擱置中的檢查 」 檢視中的某些檔案並不屬於目前開啟的方案時，會引發此錯誤。 若要更正這個錯誤，開啟方案，其中包含要簽入的檔案。
 
- **'{0}' 的版本不正確。強式名稱的原則中指定為 '{1}'。**
+ **版本 '{0}' 不是正確的。強式名稱的原則中指定為 '{1}'。**
 
  此錯誤適用於.NET 專案。 程式碼分析原則所需的規則.dll 存在於本機電腦，但版本/公開金鑰不符。 若要更正這個錯誤，原則建立者必須更新中的 dll *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\* 其電腦上的目錄。
 
- **'{0}' 的原則中指定組件不存在。**
+ **'{0}' 原則中指定的組件不存在。**
 
  此錯誤適用於.NET 專案。 程式碼分析原則所需的規則沒有對應的用戶端電腦上安裝的 dll。 若要更正這個錯誤，原則建立者必須更新的 dll 中*C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\* 其電腦上的目錄。
 
- **專案 {0} 規則設定不是與程式碼分析原則一致。**
+ **專案{0}規則設定不是與程式碼分析原則一致。**
 
  此錯誤適用於.NET 專案。 無法為嚴格的原則要求必須為 managed 程式碼規則設定。 若要更正這個錯誤，用戶端設定必須是相同或比在伺服器上原則的需求更嚴格。
 
- **使用中的設定未啟用程式碼分析。切換至組態 {0} 並建置專案 {1} 簽入之前。**
+ **使用中的設定未啟用程式碼分析。切換到設定{0}並建置專案{1}簽入之前。**
 
  在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 使用中的組態並沒有啟用，程式碼分析，但沒有啟用至少一個程式碼分析。
 
- **您必須啟用程式碼分析專案 {0} 屬性中的 managed 二進位檔，並在簽入之前建置。**
+ **您必須啟用程式碼分析的專案中的 managed 二進位檔{0}屬性和簽入之前建置。**
 
  發生這個錯誤[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].NET 應用程式。 原則需要 managed 程式碼分析來執行，但它不會啟用用戶端上目前專案中。
 
- **您必須啟用專案 {0} 屬性中的程式碼分析，並在簽入之前建置。**
+ **您必須啟用專案中的程式碼分析{0}屬性和簽入之前建置。**
 
  套用至這個錯誤[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案和 Web 專案。 原則需要 managed 程式碼分析來執行，但它不會啟用用戶端上目前專案中。
 
- **您必須在專案 {0} 屬性中啟用 C/c + + 程式碼分析，並建置在簽入之前。**
+ **您必須在專案中啟用 C/c + + 程式碼分析{0}屬性和簽入之前建置。**
 
  此錯誤適用於 unmanaged 的專案。 程式碼分析原則需要程式碼分析 C/c + +，但是未啟用用戶端上目前專案中。
 

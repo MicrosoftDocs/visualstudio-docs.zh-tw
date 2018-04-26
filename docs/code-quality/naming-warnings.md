@@ -1,6 +1,7 @@
 ---
 title: 命名警告
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e712a4d3bc796a7dcb82f8f46ffbf082a0bf56b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 59f42891e74673c4923c1f64ae2a395e1f4db612
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="naming-warnings"></a>命名警告
 命名警告支援遵循的命名慣例[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]設計指導方針。

@@ -15,12 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abe689021506ab71953e2d6556db8608c301f528
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓這些變更的程式碼，它們會根據從資料產生*模型*。 模型是檔案或資料庫包含您的應用程式需求重要資訊。

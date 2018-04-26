@@ -1,6 +1,7 @@
 ---
 title: CA2227：集合屬性應該為唯讀
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486a210b348149823e442ce12befb63e49b08390
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5a3fd69bccdfdc1c08bbc62f6534b40b746d6d49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227：集合屬性應該為唯讀
 |||

@@ -1,6 +1,7 @@
 ---
 title: 指定套用註釋的時機和位置
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d422de6d4e4c0f372820d838d0173c990f2a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d99ebce3adc27039763e11ed4882a20199e8469
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定套用註釋的時機和位置
 條件式註解時，它可能需要其他註解來指定分析器。  例如，如果函式可以是同步或非同步的變數、 函式的行為，如下所示： 在同步的情況下它一定最終會成功，但是非同步案例中才會報告錯誤無法立即成功時，則。 以同步方式呼叫此函式時，檢查結果值提供以程式碼分析工具的任何值，因為它將不會有傳回。  不過，當函式會以非同步方式呼叫，就不會檢查函式的結果，無法發生嚴重的錯誤。 此範例說明您可以使用的情況下`_When_`註釋，本文稍後所述，啟用檢查。

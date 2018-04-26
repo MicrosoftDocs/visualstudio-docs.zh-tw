@@ -1,6 +1,7 @@
 ---
 title: 在開發期間驗證您的系統
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4ebc815f474f1b8a1c59c9736f9014ba02e523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。

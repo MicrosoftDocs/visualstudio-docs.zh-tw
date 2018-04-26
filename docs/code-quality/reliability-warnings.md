@@ -1,6 +1,7 @@
 ---
 title: 可靠性警告
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d226bb951c2d8296b383e928490ab3d089f22253
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c690be59758ca17a573d742fc0f75c81b955d5ad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 可靠性警告支援程式庫和應用程式的可靠性，例如記憶體和執行緒的正確用法。

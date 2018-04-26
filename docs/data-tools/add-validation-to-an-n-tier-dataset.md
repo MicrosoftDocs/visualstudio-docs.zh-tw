@@ -13,14 +13,15 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed9bcb4521b5e9bdad839563aae1c566d20a5681
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證加入至 n-tier 資料集
 將驗證加入至資料集分成多層式架構方案，基本上是相同的單一檔案的資料集 （單一專案中的資料集） 中加入驗證。 在資料上執行驗證的建議的位置是在<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。

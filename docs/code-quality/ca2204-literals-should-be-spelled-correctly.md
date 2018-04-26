@@ -1,6 +1,7 @@
 ---
 title: CA2204：常值必須使用正確的拼字
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81989ebce0319669a03d62a504f87a0500400cd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f86658978a105c1fa4f3c4602b5c838f4c80726
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204：常值必須使用正確的拼字
 

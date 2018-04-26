@@ -1,7 +1,9 @@
 ---
-title: 循序工作流程檢視 （舊版） |Microsoft 文件
+title: 工作流程設計工具的循序工作流程檢視 （舊版）
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>循序工作流程檢視 (舊版)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 提供舊版的 Windows 工作流程設計工具的可用目標[!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)]或[!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]。
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 提供了一種以圖形方式使用熟悉的 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 使用者介面建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 應用程式。 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 應用程式是由稱做活動的工作流程程序步驟所組成。 若要建立工作流程，撰寫活動在設計介面上的拖曳其各自的活動設計工具從**工具箱**拖曳至設計介面。
+Visual Studio 2010 提供舊版的 Windows 工作流程設計工具可以使用以.NET Framework 3.5 版或 WinFX 為目標。
 
- 當您建立循序工作流程，也就是[SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)，也可使用三個工作流程的檢視。 這些檢視表是可從存取**工作流程**功能表和設計介面上的內容功能表。
+工作流程設計工具可用來以圖形方式建立使用熟悉的 Visual Studio 使用者介面的 Windows Workflow Foundation (WF) 應用程式。 Windows Workflow Foundation (WF) 應用程式是由稱做活動的工作流程處理程序步驟所組成。 若要建立工作流程，撰寫活動在設計介面上的拖曳其各自的活動設計工具從**工具箱**拖曳至設計介面。
 
- 下表列出每個檢視的名稱和說明。
+當您建立循序工作流程，也就是[SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)，也可使用三個工作流程的檢視。 這些檢視表是可從存取**工作流程**功能表和設計介面上的內容功能表。
+
+下表列出每個檢視的名稱和說明。
 
 |功能表/索引標籤選項|描述|
 |----------------------|-----------------|

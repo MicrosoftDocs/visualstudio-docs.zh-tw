@@ -13,14 +13,15 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f3bfdbf8bff8bf5c0d563ed93b473cc33ef42b5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b3b101d251167a646b66568f7aacc005d7c792d7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>代表資料表之間的父子式關聯性，並傳回相關的記錄從另一個物件。 相關的資料表加入至資料集，利用**資料來源組態精靈**，或**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。

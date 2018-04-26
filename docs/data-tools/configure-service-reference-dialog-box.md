@@ -12,14 +12,15 @@ ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed20865726832b57d4d0624d6305daa6ba0fe6fa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: abdb65b32f5f660257ecdc4d94fd9fcc387686f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 

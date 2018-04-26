@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b145677ac902841a479f3c90efac77af48456a57
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1963502f3940fd0d17c770f111e07de14207e687
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更網域指定的語言命名空間
 您可以變更特定領域語言命名的空間。 您必須進行的變更**DSL 總管**、 Dsl 封裝專案中，屬性和組件資訊。

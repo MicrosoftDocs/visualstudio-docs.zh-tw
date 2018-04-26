@@ -16,12 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5dffe99929d8904054e635375f4bf26c3e88cf6
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義的網域特定定義域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。

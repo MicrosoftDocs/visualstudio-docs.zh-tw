@@ -1,6 +1,7 @@
 ---
 title: CA2200：請重新擲回以保存堆疊詳細資料
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c43ba2e9f87d19111ceb43708780c0dd2e9e7e39
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 688c10802b144c619b22b06309cec6dee5efc52e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200：請重新擲回以保存堆疊詳細資料
 |||

@@ -6,14 +6,15 @@ ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7362a396c25adc5b909a92179c32bf7bae5b2fbb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1ed71ad820e6e55d05bc7cc6c7bf62b45f58f55
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="data-class-inheritance-or-designer"></a>資料類別繼承 （O/R 設計工具）
 

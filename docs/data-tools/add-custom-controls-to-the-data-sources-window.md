@@ -15,14 +15,15 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5961498518d8f2a1137134f88f7961f1c9395937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5db34de3244f7ee38ba4ef33c71b251f2bdbb6b0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 當您拖曳的項目**資料來源**至設計介面來建立資料繫結控制項視窗中的，您可以選取您建立的控制項類型。 在視窗中的每個項目有會顯示您可以選擇從控制項下拉式清單。 項目的資料類型所決定的每個項目相關聯的控制項集合。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。

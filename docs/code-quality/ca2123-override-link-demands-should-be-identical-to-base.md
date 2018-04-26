@@ -1,6 +1,7 @@
 ---
 title: CA2123：覆寫連結要求應該與基底相同
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aa696c1d08b71078ff4ae3beed7283d0b0333e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 340b0e7deb12d4568a76d4871eabd49641926dcb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123：覆寫連結要求應該與基底相同
 |||

@@ -1,6 +1,7 @@
 ---
 title: CA2240：必須正確實作 ISerializable
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929937fa8655e5cbb4c86eebd4dce24fcb26966
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bfd13bb09e8e9e3338ed37723f74ca42b09fdeb3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240：必須正確實作 ISerializable
 |||

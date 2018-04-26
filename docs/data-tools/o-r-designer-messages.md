@@ -6,14 +6,15 @@ ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f51a1dd29b25aa9974b93ef1fd5c0b4fdb1dd76b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 

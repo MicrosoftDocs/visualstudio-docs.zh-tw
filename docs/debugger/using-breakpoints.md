@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
@@ -247,8 +247,7 @@ ms.lasthandoff: 04/18/2018
 |**$PNAME**|處理序名稱|  
 |**$TID**|執行緒 ID|  
 |**$TNAME**|執行緒名稱|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|滴答計數 (從 Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤  
  中斷點標籤僅在 [中斷點]  視窗中用來排序和篩選中斷點清單。 若要將標籤加入至中斷點，請選擇中斷點列，然後選擇內容功能表上的 [標籤]  。  

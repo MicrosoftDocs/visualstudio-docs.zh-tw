@@ -13,12 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a282c192b06f878279f567673469d223a71b8d89
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 67aa9353f02af88b595f5d973c600683f77682fa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用 Code Map 分析器尋找潛在問題
 在 Code Map 上執行分析器，以協助您識別可能過度複雜或需要改進的程式碼。 例如，您可以使用這些分析器：

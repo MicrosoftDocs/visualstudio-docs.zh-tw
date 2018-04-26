@@ -6,14 +6,15 @@ ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 906176ebf782a537dffad1deddb41c71739e8a5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b1d98422d9527220b54232d1180ae4b91a28e6b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 entity Framework 工具
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。

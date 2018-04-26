@@ -1,74 +1,63 @@
 ---
-title: XML 編輯器 |Microsoft 文件
-ms.custom: ''
+title: XML 編輯器
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3729086a9e2038c2cfd15643f8d076947645cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
 XML 編輯器以 Visual Studio 文字編輯器中，為基礎，並包含其他 XML 語言的支援。 XML 編輯器包括下列功能：
-  
--   XML 1.0 語法檢查。
-  
--   輸入時的結構描述驗證。
-  
--   XML 片段支援，包括結構描述產生的片段。
-  
--   文件類型定義 (DTD) 支援。
-  
--   XML 結構描述定義語言 (XSD) 結構描述支援。
-  
--   從 XML 執行個體文件建立 XML 結構描述。
-  
--   將 DTD 或 XML 資料精簡 (XDR) 結構描述轉換成 XML 結構描述。
-  
--   XSLT 1.0 語法檢查。
-  
--   文件大綱，以便展開及摺疊項目。
-  
--   與整合[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。 這會提供 XML 結構描述的階層式檢視。
+
+- XML 1.0 語法檢查。
+
+- 輸入時的結構描述驗證。
+
+- XML 片段支援，包括結構描述產生的片段。
+
+- 文件類型定義 (DTD) 支援。
+
+- XML 結構描述定義語言 (XSD) 結構描述支援。
+
+- 從 XML 執行個體文件建立 XML 結構描述。
+
+- 將 DTD 或 XML 資料精簡 (XDR) 結構描述轉換成 XML 結構描述。
+
+- XSLT 1.0 語法檢查。
+
+- 文件大綱，以便展開及摺疊項目。
+
+- 與整合[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。 這會提供 XML 結構描述的階層式檢視。
 
 已知的副檔名，如.xml、.xsd、.xsl 及.config 叫用 XML 編輯器。亦可針對可能包含 XML 的檔案之任何未知副檔名叫用該編輯器。 您也可以開啟 XML 編輯器以任何檔案，使用**開啟**選項，然後從清單中選取 XML 編輯器。
 
-## <a name="in-this-section"></a>本節內容
+## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XML 文件驗證](../xml-tools/xml-document-validation.md)  
-說明語法檢查及驗證功能。
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)可讓您將自動完成屬性集名稱、 範本模式和名稱，以及具名範本的指定之模式或指定的參數名稱。
 
-[XML 編輯器 IntelliSense 功能](../xml-tools/xml-editor-intellisense-features.md)  
-說明編輯器 IntelliSense 功能。
+## <a name="xslt-profiler"></a>XSLT 分析工具
 
-[XML 片段](../xml-tools/xml-snippets.md)  
-說明如何使用 XML 片段功能。
+[XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)建立詳細的 XSLT 效能報告，協助您測量、 評估並解決 XSLT 程式碼的效能相關問題。 XSLT 分析工具也包含 XSL 和 XSLT 樣式表最佳化的實用提示。
 
-[編輯 XSLT 樣式表](../xml-tools/editing-xslt-style-sheets.md)  
-說明 XSLT 編輯體驗。
+## <a name="xslt-hierarchy"></a>XSLT 階層
 
-[結構描述快取](../xml-tools/schema-cache.md)  
-列出 XML 編輯器所安裝的結構描述。
-
-[XML 編輯器元件](../xml-tools/xml-editor-components.md)  
-描述 XML 編輯器使用者介面元件。
+[XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在內含的樣式表和/或內建範本規則中加入中斷點。
 
 ## <a name="related-sections"></a>相關章節
 
-[在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)  
-提供文字編輯器的相關資訊。
-
-[XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-提供 XML 技術的資訊，包括 XML、文件類型定義 (DTD)、XML 結構描述定義語言 (XSD) 和 XSLT。
+- [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)提供文字編輯器的相關資訊。
+- [XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 及 XSLT 技術的相關資訊。
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
+- [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

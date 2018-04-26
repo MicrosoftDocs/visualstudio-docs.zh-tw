@@ -1,7 +1,9 @@
 ---
-title: 如何： 將註解加入至工作流程設計工具中的工作流程 |Microsoft 文件
+title: 工作流程設計工具-如何： 將註解加入至工作流程
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7505d773f26a26df0b31477d99f7f5636d8c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
 
-為了方便建立更大型、更為複雜的工作流程，[!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 讓開發人員可以在設計工具中將註釋加入到下列項目類型：
+為了方便建立更大且更複雜的工作流程，.NET Framework 4.5 可讓開發人員將附註加入至下列類型的設計工具中的項目：
 
 -   <xref:System.Activities.Activity>
 
@@ -36,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 > [!IMPORTANT]
 > 註釋的內容會以純文字的格式儲存在與工作流程相關聯 XAML 檔中，並有可能被其他人讀取。 將敏感資訊輸入至註釋時要謹慎。
 
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>將註釋加入到設計工具中的活動
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>將註釋加入到設計工具中的活動
 
 1. 在工作流程設計工具中，以滑鼠右鍵按一下工作流程設計工具，並選取的項目**註解**，**加入註解**。
 
@@ -44,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
    此項目顯示註釋圖示。 註釋圖示上方註解的文字。
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活動的設計工具中顯示註釋
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活動的設計工具中顯示註釋
 
 1.  與活動設計工具的註釋顯示位於活動外部，按一下  **Pin**註釋裝飾項中的圖示。
 
@@ -56,7 +58,7 @@ ms.lasthandoff: 04/16/2018
 
    ![活動的設計工具外部顯示註釋](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
-### <a name="showing-or-hiding-all-annotations"></a>顯示或隱藏所有註釋
+## <a name="showing-or-hiding-all-annotations"></a>顯示或隱藏所有註釋
 
 1. 以滑鼠右鍵按一下具有註釋的活動。 選取**註解**，**顯示所有註釋**。
 
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 若要顯示的活動設計工具以外的所有註解，以滑鼠右鍵按一下活動，然後選取**註解**，**隱藏所有註解**。
 
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>編輯或刪除活動的註釋
+## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>編輯或刪除活動的註釋
 
 1. 以滑鼠右鍵按一下具有註釋的活動。
 
@@ -74,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 若要同時刪除所有註解，請以滑鼠右鍵按一下工作流程設計工具，並選取**註解**，**刪除所有註解**。
 
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>加入、編輯和刪除變數或引數的註釋
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>加入、編輯和刪除變數或引數的註釋
 
 1. 以滑鼠右鍵按一下變數或引數，並選取 [新增註釋]。
 

@@ -1,7 +1,9 @@
 ---
-title: 如何： 建立工作流程專案 （舊版） |Microsoft 文件
+title: 工作流程設計工具-如何： 建立工作流程專案 （舊版）
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,27 +13,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>HOW TO：建立工作流程專案 (舊版)
-請依照這些步驟來建立以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 或 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 為目標的 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 專案。 此程序會使用舊版所提供的 Windows 工作流程設計工具[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。
 
-### <a name="to-create-a-workflow-project"></a>若要建立工作流程專案
+請遵循下列步驟來建立以.NET Framework 3.5 版或 WinFX 為目標的 Windows Workflow Foundation (WF) 專案。 此程序會使用舊版 Visual Studio 2010 所提供的 Windows 工作流程設計工具。
 
-1.  啟動 [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)]。
+## <a name="to-create-a-workflow-project"></a>若要建立工作流程專案
+
+1.  啟動 Visual Studio。
 
 2.  在 [檔案] 功能表上，指向 [新增]，然後選取 [專案]。
 
      [ **新增專案** ] 對話方塊隨即開啟。
 
-3.  選取 [ **.NET Framework 3.0**選項或**.NET Framework 3.5**在清單頂端的下拉式選項**新專案**存取舊版設計工具] 視窗。
+3.  選取 [ **.NET Framework 3.0**選項或 **.NET Framework 3.5**在清單頂端的下拉式選項**新專案**存取舊版設計工具] 視窗。
 
     > [!NOTE]
-    > 中的預設選項[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]是**.NET Framework 4**。 這個選項是用來建立以 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] 為目標的 [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] 應用程式，而不會使用舊版設計工具。
+    > Visual Studio 2010 中的預設選項是 **.NET Framework 4**。 這個選項用來建立.NET Framework 4 為目標的 Windows Workflow Foundation (WF) 應用程式並不會使用舊版設計工具。
 
 4.  在**專案類型** 窗格中，選取 Visual C# 專案或 Visual Basic 專案，然後選取**工作流程**。
 

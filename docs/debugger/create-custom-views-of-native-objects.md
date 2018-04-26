@@ -1,5 +1,6 @@
 ---
-title: 在 偵錯工具中建立原生物件的自訂檢視 |Microsoft 文件
+title: 建立原生物件的自訂檢視
+description: 若要自訂 Visual Studio 偵錯工具顯示原生類型的方式使用 Natvis 架構
 ms.custom: ''
 ms.date: 06/27/2017
 ms.technology: vs-ide-debug
@@ -14,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 01f051faa03e80caa672aee25a6d4abe3104faad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立原生物件的自訂檢視
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視窗中顯示原生類型的方式 (例如，**監看式**視窗中，**區域變數**視窗中，然後在**資料提示方塊**。

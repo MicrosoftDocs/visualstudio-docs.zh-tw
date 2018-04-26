@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 43691225434a06fc7b3831367efb21980373dfa1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ceca2556e269d554d40e025e5edcb91753149622
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是特殊的屬性，可以加入至定義域項目、 圖形、 連接器及圖表。 您可以新增任何屬性繼承自`System.Attribute`類別。
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/20/2018
 
      **編輯屬性**對話方塊隨即開啟。
 
-3.  在**名稱**資料行中，按一下  **\<加入屬性 >**輸入屬性的名稱。 請按 ENTER 鍵。
+3.  在**名稱**資料行中，按一下  **\<加入屬性 >** 輸入屬性的名稱。 請按 ENTER 鍵。
 
 4.  屬性名稱下的那一行顯示括號。 在這一行輸入屬性參數類型 (例如， `string`)，然後按 ENTER 鍵。
 

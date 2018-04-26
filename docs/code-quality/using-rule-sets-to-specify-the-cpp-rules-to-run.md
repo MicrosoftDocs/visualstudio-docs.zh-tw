@@ -1,6 +1,7 @@
 ---
 title: 使用規則集指定要執行的 C++ 規則
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
@@ -8,11 +9,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad464b11538dd8a3faf2bdf26cd7e3b2bc9650dd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用指定要執行的 c + + 規則規則集
 

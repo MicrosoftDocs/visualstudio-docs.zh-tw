@@ -1,7 +1,9 @@
 ---
-title: 工作流程設計工具 UI 說明 |Microsoft 文件
+title: Workflow 設計工具 UI 說明
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], user interface help
 - Workflow Designer [WFD], user interface help
@@ -11,13 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8049362e7765b2ac9f8f3529f8d283ca43bc7b13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c87a7089044fb8b2c5be14062952e7546a63abb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-ui-help"></a>Workflow 設計工具 UI 說明
-本節包含 Windows 工作流程設計工具的即時線上說明主題。 在中工作時[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]，您可以從使用者介面存取這些主題，藉由按下**F1**時[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]對話方塊為開啟。
 
- 本節也包含有關巡覽與錯誤訊息的幾個主題。
+本節包含 Windows 工作流程設計工具的即時線上說明主題。 當使用 Visual Studio 2010，您可以藉由按下從使用者介面存取這些主題**F1**當工作流程設計工具對話方塊開啟時。
+
+本節也包含有關巡覽與錯誤訊息的幾個主題。

@@ -1,6 +1,7 @@
 ---
 title: CA2236：必須呼叫 ISerializable 類型上的基底類別方法
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7bc90dfd0cf786bbd4e2494a6c65e2c19ff4eb6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 81ea72439219431ee0a1a5403aa266e1b2601a78
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236：必須呼叫 ISerializable 類型上的基底類別方法
 |||
