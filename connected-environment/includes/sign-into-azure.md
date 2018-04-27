@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 502bd8d206b43fc219c850ab870db35e6c3af1c0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="sign-in-to-azure"></a>登入 Azure
 我們需要登入 Azure 以建立我們的開發環境。 在終端機視窗中鍵入下列命令：
 ```cmd

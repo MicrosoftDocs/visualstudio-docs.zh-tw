@@ -3,23 +3,20 @@ title: 如何從 Manage.visualstudio.com 或 VLSC 內重新傳送訂用帳戶指
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 02/13/2018
+ms.date: 04/18/2018
 ms.topic: Get-Started-Article
 description: 了解如何從 manage.visualstudio.com 或 VLSC 重新傳送訂閱指派給訂閱者
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 080ec95c73ed649168838d823a0dcc5d809ee89a
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>如何在 Visual Studio 訂用帳戶管理入口網站中重新傳送訂閱指派電子郵件
 
-重新傳送指派電子郵件所需的步驟會隨您用來管理訂用帳戶的入口網站而不同。 
-
-## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>從 manage.visualstudio.com 內重新傳送指派電子郵件
 
 從 manage.visualstudio.com 入口網站內重新傳送指派電子郵件的程序非常簡單：
 
@@ -28,23 +25,6 @@ ms.lasthandoff: 04/06/2018
 3. 在訂閱者上按一下。  您可以使用 Ctrl+按一下或 Shift+按一下來選取多個訂閱者。
 4. 按一下搜尋結果頂端的 [重新傳送]。  
 
-## <a name="resending-assignment-emails-from-within-vlsc"></a>從 VLSC 內重新傳送指派電子郵件
-當訂用帳戶被指派給 VLSC 中的訂閱者且訂閱者要求傳送指派電子郵件時，您可以編輯訂閱者的電子郵件資訊並將它變更回原始地址，以完成此作業。 這將會自動觸發指派電子郵件的重新傳送。
-
-請依照下列指示重新傳送指派電子郵件：
-
-
-1. 瀏覽大量授權服務中心 (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
-3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
-4. 按一下 [搜尋] 列上的向下箭號。  
-5. 使用 [電子郵件地址] 欄位搜尋訂閱者。
-6. 從結果清中，按一下 [訂閱者] 上的 [姓氏]。
-7. 按一下 [編輯] 。
-8. 編輯訂用帳戶。 要針對哪個項目進行變更並不重要，重要的是進行變更。  例如，從訂閱者的電子郵件地址移除一個字元 (將 “m” 從 .com 移除)。按一下 [儲存] 按鈕
-9. 儲存資訊之後，再次按一下 [編輯] 按鈕並修正電子郵件地址中缺少的字元。 按一下 [儲存] 。
-   
-這會使得 VLSC 發現訂用帳戶發生變更，並重新傳送指派電子郵件給入口網站上所列的電子郵件。 
 
 > [!NOTE]
 > - 新指派的訂用帳戶將會自動產生指派電子郵件。 只有當使用者要求新的指派電子郵件通知或通知因為任何原因而未傳送時，才需要執行上面的動作。

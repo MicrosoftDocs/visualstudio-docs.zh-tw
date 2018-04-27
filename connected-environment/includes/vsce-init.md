@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>初始化 Docker 和 Kubernetes 開發的程式碼
 截至目前為止，我們已有可在本機執行的基本 Web 應用程式。 我們現在要透過建立資產，以定義應用程式的容器並將它部署到 Kubernetes 的方式，將它容器化。 使用已連線的環境很容易執行此作業： 
 

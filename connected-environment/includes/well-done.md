@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 5b1249cc083e2a7ccbfceae27da4aaf0b772bbd9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="well-done"></a>做得好！
 您已完成「入門指南」！ 您已了解如何：
 

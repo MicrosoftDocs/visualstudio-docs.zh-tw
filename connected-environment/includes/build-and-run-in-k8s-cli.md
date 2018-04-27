@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: b10d15b90f7f413d26adf8037c6f52c711a9ed69
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="build-and-run-code-in-kubernetes"></a>在 Kubernetes 中建置並執行程式碼
 開始執行我們的程式碼吧！ 在終端機視窗中，從**根程式碼資料夾**執行此命令，webfrontend：
 
