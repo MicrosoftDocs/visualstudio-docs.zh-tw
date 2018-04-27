@@ -2,8 +2,8 @@
 title: 執行窗格概觀 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 902301021a698dfd0f6e9f09b000c1e4e403e029
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="actions-pane-overview"></a>執行窗格概觀
   執行窗格是可自訂**文件動作**附加到特定的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿的工作窗格。 例如，裝載在 Office 工作窗格，以及其他內建工作窗格內**XML 來源**在 Excel 中的工作窗格或**樣式與格式**Word 工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。  

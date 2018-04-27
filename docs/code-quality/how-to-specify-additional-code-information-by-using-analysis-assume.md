@@ -1,39 +1,39 @@
 ---
-title: 如何：使用 __analysis_assume 指定其他程式碼資訊
+title: 如何： 使用 _Analysis_assume 指定額外的程式碼資訊
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
-- __analysis_assume
+- _Analysis_assume
 helpviewer_keywords:
-- __analysis_assume
+- _Analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 181f9fb4a1f9f5d653d64fb813b974bad898fe13
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何：使用 __analysis_assume 指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何： 使用 _Analysis_assume 指定額外的程式碼資訊
 C/c + + 程式碼，將會協助分析程序，並減少警告，您可以提供程式碼分析工具提示。 若要提供其他資訊，請使用下列函數：
 
- `__analysis_assume(`  `expr`  `)`
+ `_Analysis_assume(`  `expr`  `)`
 
  `expr` -假設為評估為 true 的任何運算式。
 
  程式碼分析工具假設條件運算式所表示的點函式隨即出現，並保持為 true，直到運算式改變，例如，藉由指派給變數，則為 true。
 
 > [!NOTE]
->  `__analysis_assume` 不會影響程式碼最佳化。 外部程式碼分析工具，`__analysis_assume`定義為任何作業。
+>  `_Analysis_assume` 不會影響程式碼最佳化。 外部程式碼分析工具，`_Analysis_assume`定義為任何作業。
 
 ## <a name="example"></a>範例
- 下列程式碼會使用`__analysis_assume`更正程式碼分析警告[C6388](../code-quality/c6388.md):
+ 下列程式碼會使用`_Analysis_assume`更正程式碼分析警告[C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>
@@ -51,7 +51,7 @@ void test( )
 {
   char *pc = (char*)malloc(5);
   FreeAndNull(pc);
-  __analysis_assume(pc == NULL);
+  _Analysis_assume(pc == NULL);
   f(pc);
 }
 ```

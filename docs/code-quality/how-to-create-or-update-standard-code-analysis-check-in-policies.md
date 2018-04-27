@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
 - Managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含程式碼分析規則的子集。
 
-- C/c + + 程式碼，簽入原則要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用個別的程式碼專案，在您的 team 專案中的特定規則。
+- C/c + + 程式碼，在 Visual Studio 2017 15.6 及更早版本，簽入原則要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用個別的程式碼專案，在您的 team 專案中的特定規則。 在 15.7 和更新版本，您可以使用 **/analyze: ruleset**來指定要執行哪些規則。 如需詳細資訊，請參閱[使用規則集指定要執行的 c + + 規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
 
 指定 managed 程式碼簽入原則之後，小組成員可以同步處理程式碼專案的 team 專案的原則設定的程式碼分析設定。
 

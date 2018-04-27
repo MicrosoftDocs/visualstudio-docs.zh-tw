@@ -2,8 +2,8 @@
 title: Office 方案錯誤的其他支援 |Microsoft 文件
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.MSBuild.errAppInfoTaskInsertCtlFailed
@@ -59,11 +59,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a9a4c0d4df2e97d151b6a6a310848812b02d77d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13e0520df662b1a48c3f2a603356d46e21c2f4f2
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
   您可以使用下列資源可協助您尋找 Visual Studio 中建立 Office 方案時遇到的常見問題的解答。  

@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b89cbaa1afa4fd961baf139eeebcff19c8d48f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3b5aa52968be5a2efcf88d7a31505d94f97aaec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="adding-search-to-a-tool-window"></a>加入工具視窗搜尋
 當您建立或更新您的擴充功能中的工具視窗時，您可以在 Visual Studio 中加入相同出現的其他位置的搜尋功能。 這項功能包含下列功能：  
@@ -78,37 +78,6 @@ ms.lasthandoff: 04/16/2018
      在**TestSearchControl**類別中，加入下列程式碼。  
   
      這個程式碼加入公用<xref:System.Windows.Controls.TextBox>屬性名為**SearchResultsTextBox**和公用的字串屬性，名為**SearchContent**。 在建構函式，SearchResultsTextBox 設為 [文字] 方塊中，而且 SearchContent 初始化為新行字元分隔的一組字串。 文字方塊的內容也會初始化字串的集合。  
-  
-    ```csharp  
-    public partial class TestSearchControl : UserControl  
-    {  
-        public TextBox SearchResultsTextBox { get; set; }  
-        public string SearchContent { get; set; }  
-  
-        public TestSearchControl()  
-        {  
-            InitializeComponent();  
-  
-            this.SearchResultsTextBox = resultsTextBox;  
-            this.SearchContent = BuildContent();  
-  
-            this.SearchResultsTextBox.Text = this.SearchContent;  
-        }  
-  
-        private string BuildContent()  
-        {  
-            StringBuilder sb = new StringBuilder();  
-            sb.AppendLine("1 go");  
-            sb.AppendLine("2 good");  
-            sb.AppendLine("3 Go");  
-            sb.AppendLine("4 Good");  
-            sb.AppendLine("5 goodbye");  
-            sb.AppendLine("6 Goodbye");  
-  
-            return sb.ToString();  
-        }  
-    }  
-    ```  
   
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]  
@@ -312,7 +281,7 @@ ms.lasthandoff: 04/16/2018
     System.Threading.Thread.Sleep(100);  
     ```  
   
-5.  藉由重建方案 debugb 開始測試新的設定。  
+5.  測試新的設定，請重新建置方案，然後啟動偵錯。  
   
      進度列會出現在 [搜尋] 視窗 （當做搜尋文字方塊下方藍線） 每次您執行搜尋。  
   
@@ -353,39 +322,11 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
   
-2.  在`TestSearchTask`類別，請取消註解中的 matchCase 行`OnStartSearch`方法：  
+2.  在`TestSearchTask`類別，請取消註解下列行中`OnStartSearch`方法：  
   
-    ```csharp  
-    private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
-    {  
-        get  
-        {  
-            if (m_optionsEnum == null)  
-            {  
-                List<IVsWindowSearchOption> list = new List<IVsWindowSearchOption>();  
-  
-                list.Add(this.MatchCaseOption);  
-  
-                m_optionsEnum = new WindowSearchOptionEnumerator(list) as IVsEnumWindowSearchOptions;  
-            }  
-            return m_optionsEnum;  
-        }  
-    }  
-  
-    private WindowSearchBooleanOption m_matchCaseOption;  
-    public WindowSearchBooleanOption MatchCaseOption  
-    {  
-        get  
-         {  
-            if (m_matchCaseOption == null)  
-            {  
-                m_matchCaseOption = new WindowSearchBooleanOption("Match case", "Match case", false);  
-            }  
-            return m_matchCaseOption;  
-        }  
-    }  
-    ```  
+    ```csharp
+    matchCase = m_toolWindow.MatchCaseOption.Value;
+    ```
   
 3.  測試選項：  
   
