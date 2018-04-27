@@ -1,6 +1,6 @@
 ---
 title: 使用規則集指定要執行的 C++ 規則
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用指定要執行的 c + + 規則規則集
 
-在 Visual Studio 中，您可以建立和修改自訂*規則集*以符合與程式碼分析相關聯的特定專案需求。 若要建立自訂的 c + + 規則設定，必須在 Visual Studio IDE 開啟 C/c + + 專案。 您再規則集編輯器中開啟標準規則集然後加入或移除特定規則，以及選擇性地變更程式碼分析會判斷已違反規則時所發生的動作。
+在 Visual Studio 中，您可以建立和修改自訂*規則集*以符合與程式碼分析相關聯的特定專案需求。 預設的規則集儲存在`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`。
+
+**Visual Studio 2017 版本 15.7**您可以建立自訂規則集使用任何文字編輯器，並將它們套用在命令列組建，不論您使用的系統建立什麼。 如需詳細資訊，請參閱[/analyze: ruleset](/cpp/build/reference/analyze-code-quality)。
+
+若要建立自訂的 c + + 規則，在 Visual Studio 中設定，必須在 Visual Studio IDE 中開啟 C/c + + 專案。 您再規則集編輯器中開啟標準規則集然後加入或移除特定規則，以及選擇性地變更程式碼分析會判斷已違反規則時所發生的動作。
 
 若要建立新的自訂規則集，您將使用新的檔案名稱儲存。 自訂規則集會自動指派至專案。
 
@@ -72,3 +76,20 @@ ms.lasthandoff: 04/26/2018
 - 若要切換顯示和隱藏規則指派**無**動作，選擇**顯示未啟用的規則**。
 
 - 若要新增或移除的 Microsoft 預設規則設定為目前的規則集，請選擇**新增或移除子規則集**。
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>若要建立規則，在文字編輯器中設定
+
+您可以建立自訂規則集的文字編輯器、 將它儲存在任何位置`.ruleset`延伸模組，並套用在與[/analyze: ruleset](/cpp/build/reference/analyze-code-quality)編譯器選項。
+
+下列範例示範基本的規則集檔案，您可以使用做為起點：
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
