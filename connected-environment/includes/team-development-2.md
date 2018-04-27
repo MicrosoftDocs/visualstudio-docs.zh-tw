@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 2. 點擊 F5 (或在終端機視窗中鍵入 `vsce up`) 來執行服務。 這樣做會在我們新選取的空間 `scott` 中自動執行它。 
 1. 我們可以再次執行 `vsce list` 來確認它。 首先，您會發現 `mywebapi` 的執行個體正在 `scott` 空間中執行 (`mainline` 中執行的版本仍在執行，但卻未列出)。 其次，`webfrontend` 的存取點 URL 前面會加上文字 "scott-"。 此 URL 對 `scott` 空間而言是唯一的，而且表示傳送至 "scott URL" 的要求 會首先嘗試路由 `scott` 空間中的服務，並會切換回 `mainline` 空間中的服務。
 

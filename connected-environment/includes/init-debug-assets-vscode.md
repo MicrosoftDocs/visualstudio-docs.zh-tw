@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: dbf7482acb02c6347c9c0d0765ef962cfb43a050
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-debug-assets-with-the-vs-code-extension"></a>使用 VS Code 延伸模組初始化偵錯資產
 我們首先需要設定程式碼專案，讓 VS Code 與我們在 Azure 中的開發環境通訊。 已連線環境的 VS Code 延伸模組會提供協助程式命令來設定偵錯組態。 
 
