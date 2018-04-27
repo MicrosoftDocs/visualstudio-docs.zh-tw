@@ -4,17 +4,18 @@ ms.custom: ''
 ms.date: 03/30/2018
 ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
-ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: douge
+ms.prod: xamarin
+ms.technology: xamarin-tools
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 9a174c8712f4ca9151fc30ddd357f53cec2891cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 

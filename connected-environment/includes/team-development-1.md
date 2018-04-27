@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 30d3f9da291feb52674937d4b2f1b86f3efd0386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/27/2018
+---
 截至目前為止，我們一直在執行我們的應用程式程式碼，就好像自己是唯一使用此應用程式的開發人員一樣。 在本節中，我們會了解已連線的環境如何簡化小組開發：
 * 讓一組開發人員在相同的開發環境中工作。
 * 支援每位開發人員在隔離狀態下重複他們的程式碼，不用擔心中斷其他人的程式碼。
