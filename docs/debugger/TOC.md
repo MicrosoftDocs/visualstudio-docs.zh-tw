@@ -295,6 +295,7 @@
 #### [無法附加到處理序](unable-to-attach-to-the-process.md)
 #### [編輯後繼續錯誤訊息對話方塊](edit-and-continue-error-message-dialog-box.md)
 #### [錯誤︰評估 'function' 函式逾時，且需以不安全的方法中止](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [錯誤: 評估函式 'function' 時，目標處理序以程式碼 'code' 結束。](error-evaluating-the-function-process-exited.md)
 #### [錯誤：無法連接至遠端電腦的 SQL Server](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [錯誤：無法存取 SQL Server 偵錯介面](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [錯誤：SQL 找不到 SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)
