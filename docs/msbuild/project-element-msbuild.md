@@ -1,12 +1,9 @@
 ---
-title: "Project 項目 (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Project 項目 (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf347f135368b2452170e7ebfa9c987ed19adf77
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 44f63cf4517320b9acea0d289723a511dfeb9570
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="project-element-msbuild"></a>Project 項目 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。  
@@ -66,7 +62,7 @@ ms.lasthandoff: 02/09/2018
 |`Sdk`|選擇性屬性。 <br /><br /> 要用來建立隱含 Import 陳述式 (會將它新增至 .proj 檔案) 的 SDK 名稱和選擇性版本。 如果未指定版本，MSBuild 會嘗試解析預設版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。|  
 |`ToolsVersion`|選擇性屬性。<br /><br /> MSBuild 用來判斷 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 之值的工具組版本。|  
 |`TreatAsLocalProperty`|選擇性屬性。<br /><br /> 將不會被視為全域的屬性名稱。 這個屬性可防止特定的命令列屬性覆寫專案檔或目標檔案及所有後續匯入中設定的屬性值。 請以分號 (;) 來分隔多個屬性。<br /><br /> 一般來說，全域屬性值會覆寫專案檔或目標檔案中所設定的屬性值。 如果此屬性列於 `TreatAsLocalProperty` 值中，則全域屬性值不會覆寫該檔案及任何後續匯入中所設定的屬性值。 如需詳細資訊，請參閱[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意︰**您可以使用 **/property** (或 **/p**) 參數，在命令提示字元中設定全域屬性。 您也可以使用 MSBuild 工作的 `Properties` 屬性，針對多專案組建中的子專案設定或修改全域屬性。 如需詳細資訊，請參閱 [MSBuild 工作](../msbuild/msbuild-task.md)。|  
-|`Xmlns`|選擇性屬性。<br /><br /> 若有指定，`xmlns` 屬性的值必須為 "http://schemas.microsoft.com/developer/msbuild/2003"。|  
+|`Xmlns`|選擇性屬性。<br /><br /> 指定時，`xmlns` 屬性的值必須為 "http://schemas.microsoft.com/developer/msbuild/2003"。|  
 
 ### <a name="child-elements"></a>子元素  
 

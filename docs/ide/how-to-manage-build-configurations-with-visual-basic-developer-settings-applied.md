@@ -1,12 +1,10 @@
 ---
-title: "如何：在套用 Visual Basic 開發者設定的情況下管理組建組態 | Microsoft Docs"
-ms.custom: 
+title: 如何：在套用 Visual Basic 開發者設定的情況下管理組建組態 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -16,21 +14,21 @@ helpviewer_keywords:
 - MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 954a968de9840e6f23c3e8ff5ab0ff4d0fa761cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 根據預設，所有進階組建組態選項會隱藏，並套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Developer 設定。 本主題說明如何手動啟用這些設定。  
   
-## <a name="enabling-advanced-build-configurations"></a>啟用進階組建組態  
+## <a name="enable-advanced-build-configurations"></a>啟用進階組建組態  
  根據預設，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Developer 設定會隱藏開啟 [Configuration Manager] 對話方塊和[專案設計工具](..//ide/reference/application-page-project-designer-visual-basic.md)中的 [組態] 和 [平台] 清單的選項。  
   
 #### <a name="to-enable-advanced-build-configurations"></a>啟用進階組建組態  
@@ -46,8 +44,8 @@ ms.lasthandoff: 12/22/2017
   
 4.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     在 [組建] 功能表上，現在已可使用 [Configuration Manager]，而且 [組態] 和 [平台] 清單也會顯示在專案設計工具中。  
+     在 [組建] 功能表上，現在已可使用 [組態管理員]，而且 [組態] 和 [平台] 清單也會顯示在**專案設計工具**中。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+ [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

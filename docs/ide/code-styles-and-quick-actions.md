@@ -1,24 +1,22 @@
 ---
-title: "Visual Studio 程式碼樣式喜好設定 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 程式碼樣式喜好設定 | Microsoft Docs
+ms.custom: ''
 ms.date: 03/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.workload: multiple
-ms.openlocfilehash: 741df95afdd7c7e8b6f0ba2de75c1465cd35cc97
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -30,7 +28,7 @@ ms.lasthandoff: 01/13/2018
 
 您也可以使用 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 檔案管理 .NET 程式碼樣式設定。 在此情況下，EditorConfig 檔案中設定的優先權高於 [選項] 對話方塊中所選取的選項。 您可以使用 EditorConfig 檔案強制執行並設定整個存放庫或專案的程式碼撰寫樣式。
 
-## <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另請參閱
 
 [快速動作](../ide/quick-actions.md)  
 [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)

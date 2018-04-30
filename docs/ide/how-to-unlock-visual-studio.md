@@ -1,12 +1,8 @@
 ---
-title: 如何：解除鎖定 Visual Studio | Microsoft Docs
-ms.custom: ''
+title: 如何：解除鎖定 Visual Studio
 ms.date: 07/20/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -14,11 +10,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何：解除鎖定 Visual Studio
 
@@ -37,11 +33,11 @@ ms.lasthandoff: 04/05/2018
 1. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 將會尋找與您的帳戶建立關聯的 Visual Studio 訂閱或 Visual Studio Team Services 訂閱。
 
 > [!IMPORTANT]
-> 當您從 Team Explorer 工具視窗連線到 Visual Studio Team Services 帳戶時，Visual Studio 會自動尋找關聯的線上訂閱。 當您連線到 Visual Studio Team Services 帳戶時，您可以使用 Microsoft 帳戶和工作/學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
+> 當您從 **Team Explorer** 工具視窗連線到 Visual Studio Team Services 帳戶時，Visual Studio 會自動尋找關聯的線上訂閱。 當您連線到 Visual Studio Team Services 帳戶時，您可以使用 Microsoft 帳戶和工作/學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 
-1. 選取 [檔案]、[帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
+1. 選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
 
 在提供的空格中輸入產品金鑰。
 
@@ -70,7 +66,7 @@ ms.lasthandoff: 04/05/2018
 
 ### <a name="update-expired-licenses"></a>更新到期的授權
 
- 如果您的訂用帳戶完全到期，而不再具有 Visual Studio 的存取權限，則必須更新您的訂用帳戶，或新增另一個具有訂用帳戶的帳戶。 若要查看您正在使用之授權的詳細資訊，請移至 [檔案]、[帳戶設定]，並查看對話方塊右側的授權資訊。 如果您有與不同帳戶建立關聯的其他訂閱，請選取 [新增帳戶] 連結，將該帳戶新增到對話方塊左側的 [所有帳戶] 清單。
+ 如果您的訂用帳戶完全到期，而不再具有 Visual Studio 的存取權限，則必須更新您的訂用帳戶，或新增另一個具有訂用帳戶的帳戶。 若要查看您正在使用之授權的詳細資訊，請移至 [檔案] > [帳戶設定]，並查看對話方塊右側的授權資訊。 如果您有與不同帳戶建立關聯的其他訂閱，請選取 [新增帳戶] 連結，將該帳戶新增到對話方塊左側的 [所有帳戶] 清單。
 
 ## <a name="see-also"></a>另請參閱
 

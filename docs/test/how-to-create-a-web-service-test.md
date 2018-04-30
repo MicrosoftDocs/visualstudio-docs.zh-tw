@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中建立 Web 服務測試 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, creating Web service tests
 - Web services [Visual Studio ALM], creating
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d7a864b7fc62527bdd2593523ccdc91bf913aa
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 64530780a3e599df7e623ea5232c6890bf7b97a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 

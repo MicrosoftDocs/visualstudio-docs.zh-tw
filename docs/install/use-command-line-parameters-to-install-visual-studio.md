@@ -1,12 +1,10 @@
 ---
-title: 使用命令列參數安裝 Visual Studio | Microsoft Docs
+title: 使用命令列參數來安裝 Visual Studio
+description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
+
 當您從命令提示字元安裝 Visual Studio 2017 時，可以使用各種命令列參數來控制或自訂安裝。 您可以從命令列執行下列動作：
 
 - 使用預先選取的特定選項開始安裝。
@@ -37,7 +36,8 @@ ms.lasthandoff: 04/03/2018
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>命令列參數清單  
+## <a name="list-of-command-line-parameters"></a>命令列參數清單
+
  Visual Studio 命令列參數區分大小寫。
 
 > 語法：`vs_enterprise.exe [command] <options>...`
@@ -103,9 +103,11 @@ ms.lasthandoff: 04/03/2018
 | `--noWeb` | **版本 15.3 的新功能，選擇性**：安裝程式現在會下載任何從網際網路安裝的內容。  離線配置中必須提供所有正在安裝的內容。  如果配置缺少內容，安裝程式會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作負載識別碼和元件識別碼清單
+
 如需依 Visual Studio 產品排序的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)頁面。
 
 ## <a name="list-of-language-locales"></a>語言地區設定清單
+
 | **語言地區設定** | **Language** |
 | ----------------------- | --------------- |
 | cs-CZ | 捷克文 |
@@ -124,6 +126,7 @@ ms.lasthandoff: 04/03/2018
 | zh-TW | 繁體中文 |
 
 ## <a name="error-codes"></a>錯誤碼
+
 根據作業的結果，`%ERRORLEVEL%` 環境變數將會設定為下列其中一個值：
 
 | **值** | **結果** |
@@ -138,16 +141,18 @@ ms.lasthandoff: 04/03/2018
 每個作業會在 `%TEMP%` 目錄中產生幾個記錄檔，顯示安裝進度。 依日期將資料夾排序，然後分別針對啟動載入器、安裝程式應用程式和安裝程式引擎尋找開頭為 `dd_bootstrapper`、`dd_client` 和 `dd_setup` 的檔案。
 
 ## <a name="get-support"></a>取得支援
+
 有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
+
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
 
- * [Visual Studio 2017 安裝的命令列參數範例](command-line-parameter-examples.md)
- * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
- * [使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)
+* [Visual Studio 2017 安裝的命令列參數範例](command-line-parameter-examples.md)
+* [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)

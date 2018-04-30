@@ -1,8 +1,8 @@
 ---
-title: "使用 tasks.vs.json 和 launch.vs.jason 在 Visual Studio 中自訂建置及對工作進行偵錯 | Microsoft Docs"
+title: 使用 tasks.vs.json 和 launch.vs.jason 在 Visual Studio 中自訂建置及對工作進行偵錯 | Microsoft Docs
 ms.date: 02/21/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -54,7 +54,7 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 如果您的程式碼基底使用 Visual Studio 無法辨識的自訂組建工具，則在您完成一些設定步驟前，將無法在 Visual Studio 中執行程式碼並對它進行偵錯。 Visual Studio 有提供*建置工作*，可讓您告訴 Visual Studio 建置、重新建置及清除您程式碼的方式。 *tasks.vs.json* 建置工作檔案會將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂建置工具結合。
 
-我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 此程式碼基底的 Makefile 看起來可能會像這樣：
+我們以包含名為 *hello.cs* 之單一 C# 檔案的程式碼基底為例。 這類程式碼基底的 Makefile 看起來可能會像這樣：
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +73,7 @@ bin:
     md bin
 ```
 
-針對這種包含建置、清理及重新建置目標的 Makefile，您可以定義下列 *tasks.vs.json* 檔案。 它包含針對建置、重新建置及清理程式碼基底的三個建置工作，並使用 NMAKE 作為建置工具。
+針對這種包含建置、清理及重建目標的 Makefile，您可以定義下列 tasks.vs.json 檔案。 它包含針對建置、重新建置及清理程式碼基底的三個建置工作，並使用 NMAKE 作為建置工具。
 
 ```json
 {
@@ -117,7 +117,7 @@ bin:
 }
 ```
 
-在您於 *tasks.vs.json* 中定義建置工作之後，系統會將額外的操作功能表項目新增至 [方案總管] 中的相對應檔案。 針對此範例，系統會將 [建置]、[重新建置] 及 [清理] 選項新增至任何 *Makefile* 檔案的操作功能表。
+在您於 *tasks.vs.json* 中定義建置工作之後，系統會將額外的操作功能表項目新增至 [方案總管] 中的相對應檔案。 在此範例中，[建置]、[重建] 和 [清理] 選項會新增至任何 Makefile 檔案的操作功能表。
 
 ![具有 [建置]、[重新建置] 及 [清理] 的 Makefile 操作功能表](media/customize-build-rebuild-clean.png)
 
@@ -207,7 +207,7 @@ bin:
 |`"*/"`| 工作可供工作區中的所有資料夾使用|
 |`"*.js"`| 工作可供工作區中所有具有 .js 副檔名的檔案使用|
 |`"/*.js"`| 工作可供工作區根目錄中所有具有 .js 副檔名的檔案使用|
-|`"src/*/"`| 工作可供 "src" 資料夾的所有子資料夾使用|
+|`"src/*/"`| 工作可供 src 資料夾的所有子資料夾使用|
 |`"makefile"`| 工作可供工作區中的所有 Makefile 檔案使用|
 |`"/makefile"`| 工作僅可供工作區根目錄中的 Makefile 使用|
 
@@ -216,12 +216,12 @@ bin:
 |||
 |-|-|
 |`${env.<VARIABLE>}`| 指定針對開發人員命令提示字元所設定的任何環境變數 (例如 ${env.PATH}、${env.COMSPEC} 等)。 如需詳細資訊，請參閱[適用於 Visual Studio 的開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
-|`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 "C:\sources\hello")|
-|`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 "C:\sources\hello\src\hello.js")|
-|`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 "src\hello.js")|
-|`${fileBasename}`| 沒有路徑或副檔名的檔案名稱 (例如 "hello")|
-|`${fileDirname}`| 不包括檔案名稱的檔案完整路徑 (例如 "C:\sources\hello\src")|
-|`${fileExtname}`| 選取檔案的副檔名 (例如 ".js")|
+|`${workspaceRoot}`| 工作區資料夾的完整路徑 (例如 C:\sources\hello)|
+|`${file}`| 選取來執行此工作之檔案或資料夾的完整路徑 (例如 C:\sources\hello\src\hello.js)|
+|`${relativeFile}`| 檔案或資料夾的相對路徑 (例如 src\hello.js)|
+|`${fileBasename}`| 沒有路徑或副檔名的檔案名稱 (例如 hello)|
+|`${fileDirname}`| 不包括檔案名稱的檔案完整路徑 (例如 C:\sources\hello\src)|
+|`${fileExtname}`| 所選取檔案的副檔名 (例如 .js)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>搭配 launch.vs.json 設定偵錯
 

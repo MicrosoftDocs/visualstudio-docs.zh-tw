@@ -1,12 +1,10 @@
 ---
-title: "建立 Visual Studio 的網頁範本 | Microsoft Docs"
-ms.custom: 
+title: 建立 Visual Studio 的網站範本 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f94823131e568b3f1f254ead9d760210a4c9c1e0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 0f7dcc6f14bc631d4d5880d0d7f1ee123bde0306
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
 
-建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。
+建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 *.vstemplate* 檔案必須將範本指定為網站範本，並識別程式設計語言。
 
 > [!NOTE]
-> 網站範本必須包含空的 .webproj 檔案，而且 .vstemplate 檔案必須在 `Project` 項目的 `File` 屬性中參考它。 雖然 Web 專案不需要 .\*proj 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
+> 網站範本必須包含空的 *.webproj* 檔案，而且 *.vstemplate* 檔案必須在 `File` 項目的 `Project` 屬性中參考它。 雖然 Web 專案不需要 *.proj* 專案檔，但網站範本要正確運作就必須建立此虛設常式檔案。
 
 ### <a name="to-manually-create-a-web-template"></a>手動建立網站範本
 
@@ -34,11 +32,11 @@ ms.lasthandoff: 01/05/2018
 
 1. 修改或刪除專案中的檔案，或將新檔案新增至專案。
 
-1. 在與專案相同的目錄中，使用 .vstemplate 檔案副檔名來建立並儲存 XML 檔案。 在 Visual Studio 中，請不要將它新增至專案。
+1. 在與專案相同的目錄中，使用 *.vstemplate* 檔案副檔名來建立並儲存 XML 檔案。 在 Visual Studio 中，請不要將它新增至專案。
 
-1. 編輯 .vstemplate XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
+1. 編輯 *.vstemplate* XML 檔案，以提供專案範本中繼資料。 如需詳細資訊，請參閱[後續範例](#example)。
 
-1. 找出 .vstemplate 檔案中的 `ProjectType` 項目，並將文字值設為 `Web`。
+1. 找出 *.vstemplate* 檔案中的 `ProjectType` 項目，並將文字值設為 `Web`。
 
 1. 在 `ProjectType` 項目後面，新增 `ProjectSubType` 項目，並將文字值設為範本的程式設計語言。 程式設計語言可以是下列其中一個值：
 
@@ -56,13 +54,13 @@ ms.lasthandoff: 01/05/2018
     </TemplateData>
     ```
 
-1. 在包含 .vstemplate 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取範圍，選擇 [Send to] (傳送至) > [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 .zip 檔案。
+1. 在包含 *.vstemplate* 檔案的範本中選取檔案，並以滑鼠右鍵按一下選取範圍，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 *.zip* 檔案。
 
-1. 將 .zip 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 %USERPROFILE%\Documents\Visual Studio \<版本\>\ProjectTemplates。
+1. 將 *.zip* 範本檔放在 Visual Studio 專案範本目錄中。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\ProjectTemplates*。
 
 ## <a name="example"></a>範例
 
-下列範例示範 Web 專案範本的基本 .vstemplate 檔案：
+下列範例示範 Web 專案範本的基本 *.vstemplate* 檔案：
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
@@ -87,5 +85,5 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
+[建立專案與項目範本](../ide/creating-project-and-item-templates.md)  
 [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)

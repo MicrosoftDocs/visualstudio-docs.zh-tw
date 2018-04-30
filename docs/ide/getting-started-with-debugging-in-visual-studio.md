@@ -1,25 +1,21 @@
 ---
-title: "Visual Studio 中的使用者偵錯入門 | Microsoft Docs"
-ms.custom: 
+title: Visual Studio 中的使用者偵錯入門 | Microsoft Docs
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Visual Studio 中的使用者偵錯入門
 Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在本主題中，可了解如何開始使用最基本的偵錯 UI 功能。  
@@ -49,7 +45,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- 在 [錯誤清單] 視窗中按一下錯誤行，然後跳至發生錯誤的行。 (或者，按一下右上方的 [快速啟動] 列，並鍵入「行號」，然後按 Enter 鍵，來開啟行號。 這是到達 [選項] 視窗項目的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動] 列，並且替您省下很多的 UI 點選！)  
+ 在 [錯誤清單] 視窗中按一下錯誤行，然後跳至發生錯誤的行。 (或者，按一下右上方的 [快速啟動] 列，並鍵入「行號」，然後按 **Enter** 鍵，來開啟行號。 這是到達 [選項] 視窗項目的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動] 列，並且替您省下很多的 UI 點選！)  
 
  ![使用行號的 Visual Studio 編輯器](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -87,7 +83,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  ![Visual Studio 燈泡「無選項」文字](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- 有經驗之後，您可以快速地使用方向鍵和 **Ctrl+**. 來檢查 [快速選項] 重構機會，並清除程式碼！  
+ 有經驗之後，您可以快速地使用方向鍵和 **Ctrl+**. 檢查快速選項重構機會，並清除程式碼！  
 
  如需燈泡的詳細資訊，請參閱[執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)。  
 
@@ -156,6 +152,6 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  ![Visual Studio 程式碼分析警告動態顯示](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  [深入了解使用偵錯工具](../debugger/getting-started-with-the-debugger.md)

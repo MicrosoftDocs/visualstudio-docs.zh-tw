@@ -1,28 +1,26 @@
 ---
-title: "如何：以編碼方式儲存及開啟檔案 | Microsoft Docs"
-ms.custom: 
+title: 如何：以編碼方式儲存及開啟檔案 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 您可以使用特定的字元編碼來儲存檔案，以支援雙向語言。 您也可以在開啟檔案時指定編碼方式，讓 Visual Studio 正確顯示檔案。  

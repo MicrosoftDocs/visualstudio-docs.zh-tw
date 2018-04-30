@@ -1,21 +1,19 @@
 ---
-title: "在 Visual Studio 中使用查看定義 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中使用查看定義 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼
 
@@ -75,12 +73,12 @@ ms.lasthandoff: 01/13/2018
 
 |功能|鍵盤快速鍵|
 |-------------------|:-----------------------:|
-|開啟定義視窗。|Alt+F12|
-|關閉定義視窗|Esc|
-|將定義視窗升級到一般文件索引標籤|Shift+Alt+Home|
-|在定義視窗之間巡覽|Ctrl+Alt+- 和 Ctrl+Alt+=|
-|在多個結果之間巡覽|F8 和 Shift+F8|
-|在程式碼編輯器視窗和定義視窗之間切換|Shift+Esc|
+|開啟定義視窗。|**Alt**+**F12**|
+|關閉定義視窗|**Esc**|
+|將定義視窗升級到一般文件索引標籤|**Shift**+**Alt**+**Home**|
+|在定義視窗之間巡覽|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**|
+|在多個結果之間巡覽|**F8** 和 **Shift**+**F8**|
+|在程式碼編輯器視窗和定義視窗之間切換|**Shift**+**Esc**|
 
 > [!NOTE]
 > 您也可以使用相同的鍵盤快速鍵，在 [查看定義] 視窗中編輯程式碼，就如同在 Visual Studio 中的其他位置使用。
@@ -89,4 +87,4 @@ ms.lasthandoff: 01/13/2018
 
 [巡覽程式碼](../ide/navigating-code.md)  
 [移至定義和查看定義](../ide/go-to-and-peek-definition.md)  
-[產能的秘訣](../ide/productivity-tips-for-visual-studio.md)
+[生產力祕訣](../ide/productivity-tips-for-visual-studio.md)

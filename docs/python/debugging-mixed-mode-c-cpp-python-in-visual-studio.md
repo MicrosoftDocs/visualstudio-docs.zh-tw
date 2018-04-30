@@ -1,28 +1,21 @@
 ---
-title: Python 混和模式偵錯 | Microsoft Docs
+title: Python 混和模式偵錯
 description: 如何在 Visual Studio 中同時對 C++ 和 Python 進行偵錯，包括跨環境之間逐步執行、檢視值和評估運算式。
-ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 

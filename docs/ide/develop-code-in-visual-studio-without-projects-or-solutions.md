@@ -1,30 +1,29 @@
 ---
-title: "在 Visual Studio 中不使用專案或方案來開發程式碼 | Microsoft Docs"
+title: 在 Visual Studio 中不使用專案或方案來開發程式碼
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
 在 Visual Studio 2017 中，您可以在 Visual Studio 中從幾乎任何類型的目錄型專案開啟程式碼，而不需使用方案或專案檔。 例如，這表示您可以在 GitHub 上複製存放庫，然後直接在 Visual Studio 中開啟它並開始開發，而不需建立方案或專案。 若有需要，您可以透過簡單的 JSON 檔案指定自訂建置工作並啟動參數。
 
-當您在 Visual Studio 中開啟程式碼檔案之後，[方案總管] 便會顯示資料夾中的所有檔案。 您可以按一下任何檔案以開始編輯它。 Visual Studio 會在背景開始編制檔案的索引，以啟用 IntelliSense、瀏覽及重構功能。 當您編輯、建立、移動或刪除檔案時，Visual Studio 會自動追蹤變更並持續更新其 IntelliSense 索引。 程式碼的語法會以色彩標示，並且在許多情況下包含基本的 IntelliSense 陳述式完成。
+當您在 Visual Studio 中開啟程式碼檔案之後，方案總管便會顯示資料夾中的所有檔案。 您可以按一下任何檔案以開始編輯它。 Visual Studio 會在背景開始編制檔案的索引，以啟用 IntelliSense、瀏覽及重構功能。 當您編輯、建立、移動或刪除檔案時，Visual Studio 會自動追蹤變更並持續更新其 IntelliSense 索引。 程式碼的語法會以色彩標示，並且在許多情況下包含基本的 IntelliSense 陳述式完成。
 
 ## <a name="open-any-code"></a>開啟任何程式碼
 
@@ -32,13 +31,13 @@ ms.lasthandoff: 02/23/2018
 
 - 在 Visual Studio 功能表列上，選擇 [檔案] > [開啟] > [資料夾]，然後瀏覽至程式碼位置。
 - 在包含程式碼之資料夾 (按一下滑鼠右鍵) 的操作功能表上，選擇 [在 Visual Studio 中開啟] 命令。
-- 在 Visual Studio 的 [開始] 頁面上，選擇 [開啟資料夾] 連結。
+- 在 Visual Studio [起始頁] 上，選擇 [開啟資料夾] 連結。
 - 如果您是鍵盤使用者，請在 Visual Studio 中按 **Ctrl**+**Shift**+**Alt**+**O**。
 - 從複製的 GitHub 存放庫開啟程式碼。
 
-### <a name="to-open-code-from-a-cloned-github-repo"></a>從複製的 GitHub 存放庫開啟程式碼
+### <a name="to-open-code-from-a-cloned-github-repo"></a>從複製的 GitHub 儲存機制開啟程式碼
 
-下列範例說明如何複製 GitHub 存放庫，然後在 Visual Studio 中開啟其程式碼。 若要依照此程序，您必須擁有 GitHub 帳戶並在您的系統上安裝 Git for Windows。 如需詳細資訊，請參閱[註冊新的 GitHub 帳戶 (英文)](https://help.github.com/articles/signing-up-for-a-new-github-account/) 和 [Git for Windows (英文)](https://git-for-windows.github.io/)。
+下列範例說明如何複製 GitHub 儲存機制，然後在 Visual Studio 中開啟其程式碼。 若要依照此程序，您必須擁有 GitHub 帳戶並在您的系統上安裝 Git for Windows。 如需詳細資訊，請參閱[註冊新的 GitHub 帳戶 (英文)](https://help.github.com/articles/signing-up-for-a-new-github-account/) 和 [Git for Windows (英文)](https://git-for-windows.github.io/)。
 
 1. 移至您想要複製到 GitHub 的存放庫。
 
@@ -48,17 +47,17 @@ ms.lasthandoff: 02/23/2018
 
 1. 在 Visual Studio 中，選擇 [Team Explorer] 索引標籤以開啟 [Team Explorer]。 若您沒有看見該索引標籤，請從 [檢視] > [Team Explorer] 開啟它。
 
-1. 在 [Team Explorer] 中的 [本機 Git 存放庫] 區段底下，選擇 [複製] 命令，然後將 GitHub 頁面的 URL 貼到文字方塊中。
+1. 在 [Team Explorer] 中的 [本機 Git 儲存機制] 區段底下，選擇 [複製] 命令，然後將 GitHub 頁面的 URL 貼到文字方塊中。
 
    ![複製專案](./media/VSIDE_Code_Clone2.png)
 
-1. 選擇 [複製] 按鈕，以將專案的檔案複製到本機 Git 存放庫。 視存放庫的大小而定，此程序可能會花費數分鐘的時間。
+1. 選擇 [複製] 按鈕，以將專案的檔案複製到本機 Git 儲存機制。 視儲存機制的大小而定，此程序可能會花費數分鐘的時間。
 
-1. 將存放庫複製到您的系統之後，在 [Team Explorer] 中，從新複製的存放庫 (按一下滑鼠右鍵) 的操作功能表上，選擇 [開啟] 命令。
+1. 將存放庫複製到您的系統之後，請在 [Team Explorer] 中，從新複製的存放庫的操作 (按一下滑鼠右鍵) 功能表上選擇 [開啟] 命令。
 
    ![複製的存放庫](./media/VSIDE_Code_Clone3.png)
 
-1. 選擇 [顯示資料夾檢視] 命令，以在 [方案總管] 中檢視檔案
+1. 選擇 [顯示資料夾檢視] 命令，以在方案總管中檢視檔案。
 
    ![顯示資料夾檢視](./media/VSIDE_Code_Clone3_show.png)
 

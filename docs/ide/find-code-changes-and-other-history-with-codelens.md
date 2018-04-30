@@ -1,23 +1,20 @@
 ---
-title: "尋找 CodeLens 的程式碼變更和其他記錄 | Microsoft Docs"
-ms.custom: 
+title: 尋找 CodeLens 的程式碼變更和其他記錄 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1e20081320109e5334360d0cc1f38b187f05d574
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -34,7 +31,7 @@ ms.lasthandoff: 01/29/2018
 
 ![CodeLens &#45; 連絡您的小組](../ide/media/codelensovervew2.png "CodeLensOvervew2")  
 
-若要選擇欲查看或開啟/關閉 CodeLens 的指標，請移至 [工具] 、[選項] 、[文字編輯器] 、[所有語言] 、[CodeLens] 。  
+若要選擇要查看或是開啟和關閉 CodeLens 的指標，請移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。  
 
 ## <a name="FindReferences"></a> 尋找您程式碼的參考
 
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/29/2018
 
 -  C# 或 Visual Basic 程式碼
 
-請選擇 [參考]  指標 (**[Alt+2]**)。 如果您看到 [0 個參考]，代表您沒有來自 C# 或 Visual Basic 程式碼的參考。 這不包含來自其他項目的參考，例如 XAML 和 ASPX 檔案。
+請選擇 [參考]  指標 (**[Alt+2]**)。 如果您看到 [0 個參考]，代表您沒有來自 C# 或 Visual Basic 程式碼的參考。 這不包含來自其他項目的參考，例如 .xaml 和 .aspx 檔案。
 
 ![CodeLens &#45; 選擇參考指標](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -78,9 +75,9 @@ ms.lasthandoff: 01/29/2018
 
 ![檔案&#45;層級 CodeLens 指標](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
 
-若要使用鍵盤來選取指標，請按住 **ALT** 鍵以顯示相關數字鍵。  
+若要使用鍵盤來選取指標，請按住 **Alt** 鍵以顯示相關數字鍵。  
 
-![按下 ALT 鍵以查看鍵盤存取號碼](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+![按 Alt 鍵以查看鍵盤存取號碼](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
 
 ### <a name="find-changes-in-your-code"></a>尋找您程式碼中的變更
 
@@ -223,7 +220,7 @@ ms.lasthandoff: 01/29/2018
 
 ###  <a name="ChangeOrTurnOff"></a> 問：如何關閉或開啟 CodeLens？ 又如何選擇要查看的指標？
 
-**答：**  除了參考指標之外，您可以關閉或開啟各個指標。 請依序移至 [工具] 、[選項] 、[文字編輯器] 、[所有語言] 和 [CodeLens] 。  
+**答：**  除了參考指標之外，您可以關閉或開啟各個指標。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。  
   
  開啟指標之後，您也可以從指標開啟 CodeLens 選項。  
   
@@ -265,7 +262,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>問：如何變更 CodeLens 的字型和色彩？
 
-**答：** 移至 [ **工具**]、[ **選項**]、[ **環境**]、[ **字型和色彩**]。  
+**答：**移至 [工具] > [選項] > [環境] > [字型和色彩]。  
 
 ![CodeLens &#45; 變更字型和色彩設定](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
 
@@ -277,7 +274,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 3.  按 **向下鍵** 移至 [ **字型和色彩**]。  
 
-4.  按 **TAB** 鍵移至 [ **顯示設定:** ] 清單，然後按 **向下鍵** 選取 [ **CodeLens**]。  
+4.  按 **Tab** 鍵移至 [顯示設定:] 清單，然後按**向下鍵**選取 [CodeLens]。  
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問：我可以移動 CodeLens 平視顯示窗嗎？
 

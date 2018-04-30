@@ -1,25 +1,22 @@
 ---
-title: 變更記錄 (Visual Studio Tools for Unity) | Microsoft Docs
+title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/23/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 author: dantogno
 ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6670f346f4834807296f6385bf23e573400f96a3
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
+# <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3605"></a>3.6.0.5
@@ -61,7 +58,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **Project Generation:**
 
-    -   新增 .Net Standard 的支援。
+    -   已新增 .NET Standard 的支援。
 
 ### <a name="bug-fixes"></a>Bug 修正
 

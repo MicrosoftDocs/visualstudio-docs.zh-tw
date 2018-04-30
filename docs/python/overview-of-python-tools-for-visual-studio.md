@@ -1,15 +1,9 @@
 ---
-title: Windows 上 Visual Studio 中的 Python 支援概觀 | Microsoft Docs
+title: Windows 上 Visual Studio 中的 Python 支援概觀
 description: Visual Studio 中功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))
-ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio 中使用 Python (Windows)
 
@@ -174,13 +168,15 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 您可用下列版本的 Visual Studio 安裝 Python 功能，如[安裝指南](installing-python-support-in-visual-studio.md)所述：
 
 - [Visual Studio 2017 (所有版本)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (所有版本)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (所有版本)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web (Update 2 或更新版本)
 - Visual Studio 2013 Express for Desktop (Update 2 或更新版本)
 - Visual Studio 2013 (Pro 版或更新版本)
 - Visual Studio 2012 (Pro 版或更新版本)
 - Visual Studio 2010 SP1 (Pro 版或更新版本；需要 .NET 4.5)
+
+Visual Studio 2015 及更早版本位於 [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/)。
 
 > [!Important]
 > 只有最新版本的 Visual Studio 具備功能的完整支援與維護。 功能在較舊版本中依然可用，但不會主動維護。
@@ -301,6 +297,6 @@ Visual Studio 提供整合式支援，可將 Web 應用程式和雲端服務發�
 
 ## <a name="additional-resources"></a>其他資源
 
-- [IIS 與 Python 之間的 WFastCGI 橋接 (英文)](https://pypi.python.org/pypi/wfastcgi) (python.org)
+- [WFastCGI bridge between IIS and Python](https://pypi.org/p/wfastcgi) (IIS 與 Python 之間的 WFastCGI 橋接) (pypi.org)
 - [Microsoft Virtual Academy 上的免費 Python 課程](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Top Python Questions at Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions) (Microsoft Virtual Academy 的前幾個 Python 問題)

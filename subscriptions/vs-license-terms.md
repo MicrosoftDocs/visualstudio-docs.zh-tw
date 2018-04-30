@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio 訂用帳戶授權條款"
+title: Visual Studio 訂用帳戶授權條款
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: "Visual Studio 訂用帳戶授權條款。"
+description: Visual Studio 訂用帳戶授權條款。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 **下列 VISUAL STUDIO 訂用帳戶的 MICROSOFT 軟體授權條款：**
 
@@ -45,7 +45,7 @@ _______________________________________
 
    d. **包含之 Microsoft 程式。** 除本節 2.e 和 2.f 中所述內容之外，這些授權條款適用於所有 Microsoft 方案，包括您的軟體訂用帳戶。 如果授權條款與任一這些方案提供您未明確與這些授權條款衝突的其他權限，您也會擁有這些權限。
 
-   e. **Windows 10 IoT 產品。** 服務附帶的所有 Windows IoT 產品和軟體都受其授權條款約束。 此外，如果您想要散發 Windows 10 IoT Core 執行階段映像 (下稱「執行階段映像」) 作商業用途之用，您必須先執行並遵守所在國家/地區 Microsoft 或 Microsoft 分支機構提供的商業授權條款與條件。 商業用途的範例包括執行企業營運、授權、租賃或銷售包含「執行階段映像」的應用程式；基於評估目的向客戶散發您應用程式中的「執行階段映像」；散發「執行階段映像」供商業產品之用；使用「執行階段映像」建立或使用商業產品或以為您或他人營利為目的的任何其他活動。 如需詳細資訊，請移至 [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409)。
+   e. **Windows 10 IoT 產品。** 服務附帶的所有 Windows IoT 產品和軟體都受其授權條款約束。 此外，如果您想要散發 Windows 10 IoT Core 執行階段映像 (下稱「執行階段映像」) 作商業用途之用，您必須先執行並遵守所在國家/地區 Microsoft 或 Microsoft 分支機構提供的商業授權條款與條件。 商業用途的範例包括執行企業營運、授權、租賃或銷售包含「執行階段映像」的應用程式；基於評估目的向客戶散發您應用程式中的「執行階段映像」；散發「執行階段映像」供商業產品之用；使用「執行階段映像」建立或使用商業產品或以為您或他人營利為目的的任何其他活動。 如需詳細資訊，請前往 [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409)。
 
    f. **Visual Studio Feature Packs、Agents for Visual Studio 2015、IntelliTrace Collector for Visual Studio 2015、軟體開發套件 (SDK)、驅動程式開發套件 (DDK)、典範與實例以及協力廠商程式。** 您的訂用帳戶也包含軟體元件，分類為：Visual Studio Feature Packs、Agents for Visual Studio 2015、IntelliTrace Collector for Visual Studio 2015、Visual Studio 2015 遠端工具 (發行前版本和試用版)、SDK、DDK、典範與實例或協力廠商程式。 這些都可以透過 Visual Studio 訂閱者下載取得。 如有任何軟體程式或元件附帶其他條款，在您使用這些項目時也適用這些條款。
 
@@ -97,9 +97,9 @@ _______________________________________
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  **公用程式。** 軟體包含公用程式清單中的某些項目，請見 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409。](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  您可以將這些項目複製並安裝到自己或協力廠商的電腦上。 請注意，公用程式僅供暫時使用，Microsoft 可能不會另行專門修補或更新公用程式，而某些公用程式在本質上就可能讓其他人存取其安裝所在的電腦。 因此，您應該在完成偵錯或部署應用程式和資料庫後，刪除所有已安裝的公用程式。 Microsoft 對任何第三方使用或存取您安裝在任何電腦上的公用程式概不負責。
+   b.  **公用程式。** 軟體包含 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 上之 [公用程式] 清單上的某些項目  您可以將這些項目複製並安裝到自己或協力廠商的電腦上。 請注意，公用程式僅供暫時使用，Microsoft 可能不會另行專門修補或更新公用程式，而某些公用程式在本質上就可能讓其他人存取其安裝所在的電腦。 因此，您應該在完成偵錯或部署應用程式和資料庫後，刪除所有已安裝的公用程式。 Microsoft 對任何第三方使用或存取您安裝在任何電腦上的公用程式概不負責。
 
-   c.  **組建伺服器。** 軟體包含組建伺服器清單中的某些項目，請參閱 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409。](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  您可以將這些項目 (如果包含在軟體中) 複製並安裝到您的組建電腦上。 您和貴組織的其他人只能在組建電腦上使用這些項目進行編譯、建置、驗證和封存您的應用程式，或執行屬於建置程序的品質或效能測試。
+   c.  **組建伺服器。** 軟體包含 [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) 上之 [組建伺服器] 清單上的某些項目  您可以將這些項目 (如果包含在軟體中) 複製並安裝到您的組建電腦上。 您和貴組織的其他人只能在組建電腦上使用這些項目進行編譯、建置、驗證和封存您的應用程式，或執行屬於建置程序的品質或效能測試。
 
    d. **授權範圍。** 您不可以還原工程、反向組譯或解編軟體，或嘗試從軟體衍生原始碼，除非且僅限於：(i) 雖有此限制，但在適用法律允許範圍內；或者 (ii) 需要偵錯已取得 GNU 小眾授權的任何程式庫變更，此授權隨附於並連結到軟體。
 
@@ -192,7 +192,7 @@ _______________________________________
 
     a. **伺服器軟體。** 您必須事先取得 Microsoft 的書面同意，才能向第三方揭露伺服器軟體或其他隨附軟體的所有基準測試結果。 這不適用於 .NET Framework (請參閱下文)。
 
-    b. **Microsoft .NET 基準測試。** 軟體包含一或多個 .NET framework 元件 (以下稱「.NET 元件」)。 您可以進行這些元件的內部基準測試。 您可以揭露這些元件的所有基準測試結果，如果您遵守 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 規定的條件。 無論您與 microsoft 簽訂何種合約，如果您揭露此類基準測試結果，Microsoft 有權揭露其針對您與 .NET 元件同性質產品進行的基準測試結果，假設其符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 規定的條件。
+    b. **Microsoft .NET 基準測試。** 軟體包含一或多個 .NET framework 元件 (以下稱「.NET 元件」)。 您可以進行這些元件的內部基準測試。 您可以揭露這些元件的所有基準測試結果，而前提是您遵守 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 規定的條件。 無論您與 microsoft 簽訂何種合約，如果您揭露此類基準測試結果，Microsoft 有權揭露其針對您與 .NET 元件同性質產品進行的基準測試結果，假設其符合 [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406) 規定的條件。
 
 14. **授權範圍。** 軟體係授權使用，而非出售賣斷。 本合約僅提供　貴用戶使用軟體的部分權利。 Microsoft 保留所有其他權利。 除非相關法律賦予　貴用戶超出本合約限制的其他權利，否則　貴用戶僅得在本合約明示許可的範圍內使用軟體。 因此，　貴用戶必須遵守只允許以特定方式使用軟體的科技保護措施。 如需詳細資訊，請參閱 [www.microsoft.com/licensing/userights](https://www.microsoft.com/licensing/userights)。 貴用戶不得 
     - 未經 Microsoft 事先書面同意，將軟體之任何基準測試結果向第三方揭露，但此規定不適用於 Microsoft .NET Framework (請見第 13b 節)；
@@ -314,7 +314,7 @@ _____
     - Windows Server 2012 Active Directory Rights Management Services。 軟體包含一項功能，可讓您建立未經您許可即無法列印、複製或傳送給其他人的內容。 如需詳細資訊，請移至 [www.microsoft.com/rms](https://www.microsoft.com/rms)。 您可以選擇不使用這項功能。
     - 快速鍵。 當您按一下或將滑鼠移至快速鍵上時，目前網頁的標題和完整網址或 URL，以及標準的電腦資訊和您選取的任何內容，都可能傳送給服務提供者。 如果您使用 Microsoft 提供的快速鍵，資訊傳送就會受到 Microsoft 線上隱私權聲明約束，網址為：[go.microsoft.com/fwlink/?linkid=31493](http://go.microsoft.com/fwlink/?linkid=31493)。 如果您使用協力廠商提供的快速鍵，資訊傳送就會受到協力廠商的隱私權做法約束。
 
-    b. **資訊的使用。** Microsoft 得使用電腦資訊、快速鍵資訊及惡意程式碼報告改善我們的軟體和服務。 本公司也得與其他硬體和軟體廠商共用這些資訊。 這些廠商可使用上述資訊來改善其產品與 Microsoft 軟體的執行方式。
+    b. **資訊的用途。** Microsoft 得使用電腦資訊、快速鍵資訊及惡意程式碼報告改善我們的軟體和服務。 本公司也得與其他硬體和軟體廠商共用這些資訊。 這些廠商可使用上述資訊來改善其產品與 Microsoft 軟體的執行方式。
 
     c.  **不當使用網際網路服務。** 貴用戶不能以任何可能危害或損害他人使用這些服務的方式使用這些服務。 貴用戶不得透過任何方法，使用這些服務以試圖在未經授權的情況下，存取任何服務、資料、帳戶或網路。
 

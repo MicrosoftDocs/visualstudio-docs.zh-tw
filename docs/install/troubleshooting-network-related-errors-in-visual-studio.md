@@ -1,14 +1,11 @@
 ---
-title: 對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解 | Microsoft Docs
-description: ''
+title: 對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
+description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
+ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -21,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
+
 對於您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的常見網路或 Proxy 相關錯誤，我們皆有提供解決方案。
 
 ## <a name="error-proxy-authorization-required"></a>錯誤：「需要 Proxy 授權」
 
 通常當使用者透過 Proxy 伺服器連線到網際網路，而 Proxy 伺服器封鎖 Visual Studio 對某些網路資源所做的呼叫時，就會發生這個錯誤。
 
-### <a name="to-fix-this-error"></a>修正這個錯誤：
+### <a name="to-fix-this-proxy-error"></a>修復這個 Proxy 錯誤
 
 - 重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中依提示輸入您的認證。
 
-- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於允許清單上，以解除封鎖 Visual Studio 中的所有登入案例：
+- 如果重新啟動 Visual Studio 無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http:&#47;&#47;go.microsoft.com 位址的認證，而是提示輸入 &#42;.visualStudio.com 位址的認證。 對於這些伺服器，請考慮將下列 URL 列於白名單上，以解除封鎖 Visual Studio 中的所有登入案例：
 
     - &#42;.windows.net
 
@@ -80,7 +78,7 @@ ms.lasthandoff: 04/03/2018
 
 Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資源。 有些私人網路的安全性設備在 Visual Studio 使用 TLS 1.2 時，會封鎖某些伺服器連線。
 
-### <a name="to-fix-this-error"></a>修正這個錯誤：
+### <a name="to-fix-this-connection-error"></a>修正這個連線錯誤
 
 針對下列 URL 啟用連線：
 
@@ -113,17 +111,19 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
  > [!NOTE]
  > 此清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以在 %APPData%\Nuget\NuGet.Config 中檢查您所使用的 NuGet 伺服器。
 
-
 ## <a name="get-support"></a>取得支援
+
 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有的安裝疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
 
 以下是一些支援選項：
+
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
+
 * [在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [安裝 Visual Studio 2017](install-visual-studio.md)

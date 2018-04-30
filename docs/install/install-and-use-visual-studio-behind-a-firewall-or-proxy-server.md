@@ -1,13 +1,10 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務 | Microsoft Docs
-description: ''
+description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入白名單或開啟的網域 URL、連接埠及通訊協定
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,24 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
-如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入允許清單，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
+
+如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入白名單，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
 * **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含需加入允許清單的網域 URL，使您可以存取所有所需的元件和工作負載。
 
 * **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含需加入允許清單的網域 URL，以及需開啟的連接埠和通訊協定，使您可以存取所有所需的功能和服務。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
+
 ### <a name="urls-to-whitelist"></a>應加入允許清單的 URL
+
 由於 Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載檔案，以下是您應該在 UI 或部署指令碼中作為受信任 URL 加入允許清單的網域 URL。
 
 #### <a name="microsoft-domains"></a>Microsoft 網域
+
 | Domain | 用途 |
 | ------ | ------- |
 | go.microsoft.com | 安裝 URL 解析 |
@@ -57,6 +58,7 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>非 Microsoft 網域
+
 | Domain | 安裝這些工作負載 |
 | ------ | ------- |
 | archive.apache.org |  使用 JavaScript 進行行動開發 (Cordova) |
@@ -72,8 +74,10 @@ ms.lasthandoff: 04/03/2018
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服務
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>應加入允許清單的 URL 及應開啟的連接埠和通訊協定
-為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入允許清單的 URL，以及建議開啟的連接埠和通訊協定。
+
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>應加入白名單的 URL 及應開啟的連接埠和通訊協定
+
+為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入白名單的 URL，以及建議開啟的連接埠和通訊協定。
 
 | 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -116,18 +120,21 @@ ms.lasthandoff: 04/03/2018
 |封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有在特定建置工作案例 (例如 NuGet 工具安裝程式、Node 工具安裝程式)，或您想要和「摘要」一起使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。  封裝服務的核心功能需要使用其他三個網域。 |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解
+
 有時候，在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時，您可能會遇到與網路或 Proxy 相關的錯誤。 如需這些錯誤訊息之解決方案的詳細資訊，請參閱[對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)頁面。
 
 ## <a name="get-support"></a>取得支援
+
 以下是您可使用的額外支援選項：
+
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
+
 * [針對 Visual Studio 中的網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [安裝 Visual Studio 2017](install-visual-studio.md)

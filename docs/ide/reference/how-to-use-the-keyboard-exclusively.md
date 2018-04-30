@@ -1,12 +1,10 @@
 ---
-title: "如何：以獨佔模式使用鍵盤 | Microsoft Docs"
-ms.custom: 
+title: 如何：以獨佔模式使用鍵盤 | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -17,13 +15,14 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 351170b59b9b02c1059bd20fe7ad21981b280aee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 > [!TIP]

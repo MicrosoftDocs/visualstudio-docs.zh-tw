@@ -2,11 +2,8 @@
 title: Exec 工作 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="exec-task"></a>Exec 工作
 使用指定的引數來執行指定的程式或命令。  
@@ -53,7 +49,7 @@ ms.lasthandoff: 04/10/2018
 |`WorkingDirectory`|選擇性的 `String` 參數。<br /><br /> 指定將執行命令的目錄。|  
   
 ## <a name="remarks"></a>備註  
- 若無法針對您想要執行的作業取得特定的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作，此工作就非常有用。 不過，`Exec` 工作與更特定的工作不同，無法從它執行的工具或命令中收集輸出。  
+ 若無法針對您想要執行的作業取得特定的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作，此工作就非常有用。 不過，`Exec` 工作不同於更特定的工作，無法根據其執行之工具或命令的結果進行其他處理或條件式作業。
   
  `Exec` 工作會呼叫 cmd.exe，而不是直接叫用處理序。  
   
@@ -76,6 +72,6 @@ ms.lasthandoff: 04/10/2018
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

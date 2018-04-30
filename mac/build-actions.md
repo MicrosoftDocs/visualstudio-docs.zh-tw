@@ -1,17 +1,16 @@
 ---
-title: "建置動作"
+title: 建置動作
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 78b0e715ca44c613b6a7ee839c0656e301308588
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="build-actions"></a>建置動作 
+# <a name="build-actions"></a>建置動作
 
 Visual Studio for Mac 專案中的所有檔案都有一個建置動作，用以控制檔案在建置期間所發生的狀況。 透過在任何檔案上按一下滑鼠右鍵，並瀏覽至 [建置動作] 即可進行設定，如下所示：
 
@@ -26,4 +25,4 @@ Visual Studio for Mac 專案中的所有檔案都有一個建置動作，用以�
 
 您可以在 [方案總管] 中選取多個檔案，這可讓您一次為多個檔案設定建置動作。
 
-此外，還有針對特定專案的建置動作。 例如，Xamarin.iOS 專案擁有 **BundleResource** 建置動作，該動作會新增檔案作為應用程式套件組合的一部分。 如需 Xamarin.Android 特定建置動作的資訊，請參閱 developer.xamarin.com 上的 [Build Process](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions) (建置流程) 指南。
+此外，還有針對特定專案的建置動作。 例如，Xamarin.iOS 專案擁有 **BundleResource** 建置動作，該動作會新增檔案作為應用程式套件組合的一部分。 如需 Xamarin.Android 特定建置動作的資訊，請參閱[建置流程](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions)指南。

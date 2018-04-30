@@ -1,12 +1,9 @@
 ---
-title: "逐步解說：在 XAML 設計工具中繫結至資料 | Microsoft Docs"
-ms.custom: 
+title: 在 XAML 設計工具中繫結至資料
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,16 +11,16 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>逐步解說：在 XAML 設計工具中繫結至資料
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
 
 在 XAML 設計工具中，您可以使用畫板和 [屬性] 視窗來設定資料繫結屬性。 本逐步解說中的範例示範如何將資料繫結至控制項。 具體來說，本逐步解說示範如何建立具有 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 且名為 `ItemCount` 的簡單購物車類別，然後將 `ItemCount` 屬性繫結至 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控制項的 **Text** 屬性。
 
@@ -103,5 +100,5 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[[新增值轉換器] 對話方塊](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [[新增值轉換器] 對話方塊](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

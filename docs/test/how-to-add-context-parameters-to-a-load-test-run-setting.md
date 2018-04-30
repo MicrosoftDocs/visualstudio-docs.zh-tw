@@ -1,20 +1,20 @@
 ---
 title: 如何：在 Visual Studio 中將內容參數新增至負載測試回合設定 | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數加入至負載測試回合設定
 
@@ -62,9 +62,9 @@ ms.lasthandoff: 03/19/2018
 
      如果回合設定已包含 [內容參數] 資料夾，您可以在該資料夾上按一下滑鼠右鍵，然後選擇 [新增內容參數]。
 
-4.  在 [屬性] 視窗中，將 [名稱] 變更為適當的值 (例如 WebServer1)。 在 [屬性] 視窗中，將 [值] 變更為您要使用的參數 (例如 http://CorporateStagingWebServer)。
+4.  在 [屬性] 視窗中，將 [名稱] 變更為適當的值 (例如 WebServer1)。 在 [屬性] 視窗中，將 [值] 變更為您要使用的參數 (例如 http://CorporateStagingWebServer))。
 
-5.  (選擇性) 重複步驟 3 到 5，並且針對 [值] 屬性使用不同的字串 (例如 http://CorporateProductionWebServer)。
+5.  (選擇性) 重複步驟 3 到 5，並且針對 [值] 屬性使用不同的字串 (例如 http://CorporateProductionWebServer))。
 
 6.  選擇要成為使用中的回合設定。 在回合設定上開啟捷徑功能表，然後選擇 [設定為使用中]。
 

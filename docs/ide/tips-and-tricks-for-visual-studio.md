@@ -1,26 +1,25 @@
 ---
-title: "Visual Studio 鍵盤快速鍵 | Microsoft Docs"
+title: Visual Studio 鍵盤快速鍵 | Microsoft Docs
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>適用於 Visual Studio 的鍵盤祕訣
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的鍵盤快速鍵
 
 您可以使用本文中的快速鍵，來更輕鬆地在 Visual Studio 中巡覽。
 
-這裡列出的快速鍵只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
-
-如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
+> [!TIP]
+> 這裡列出的快速鍵只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="window-management"></a>視窗管理
 
@@ -39,9 +38,9 @@ ms.lasthandoff: 03/08/2018
 |-|-|
 |移動/停駐浮動視窗|Win+向左鍵 / Win+向右鍵|
 |最大化/最小化視窗|Win+向上鍵 / Win+向下鍵|
-|顯示捷徑清單|Win+Alt+n|
-|開始新執行個體|Win+Shift+n|
-|切換視窗|Win+n|
+|顯示捷徑清單|Win+Alt+N|
+|開始新執行個體|Win+Shift+N|
+|切換視窗|Win+N|
 
 ## <a name="visual-studio-search"></a>Visual Studio 搜尋
 
@@ -78,10 +77,10 @@ ms.lasthandoff: 03/08/2018
 |程式碼片段選擇器|Ctrl+K、X 或 ?、Tab (VB)||
 |以此環繞|Ctrl+K、S||
 |顯示快速諮詢|Ctrl+K、I||
-|巡覽至|Ctrl+,||
+|巡覽至|**Ctrl**+**,**||
 |巡覽反白顯示的參考|Ctrl+Shift+Up (上一步)、Ctrl+Shift+Down (下一步)||
-|編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)||
-|區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵||
+|編輯器縮放|**Ctrl**+**Shift**+**>** (In), **Ctrl**+**Shift**+**<** (Out)||
+|區塊選取|按住 **Alt** 並拖曳滑鼠、Shift+Alt+方向鍵||
 |將行上移/下移|Alt+向上鍵 / Alt+向下鍵||
 |重複行|Ctrl+E、V|Visual Studio 2017 15.6 版|
 |展開選取範圍|**Shift**+**Alt**+**=**|Visual Studio 2017 15.5 版|
@@ -91,16 +90,16 @@ ms.lasthandoff: 03/08/2018
 |移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)||
 |關閉 [查看定義] 視窗|Esc||
 |將 [查看定義] 視窗升級到一般文件索引標籤|Ctrl+Alt+Home||
-|在多個 [查看定義] 視窗之間巡覽|Ctrl+Alt+- 和 Ctrl+Alt+=||
-|在多個查看結果之間巡覽|F8 和 Shift+F8||
+|在多個 [查看定義] 視窗之間巡覽|**Ctrl**+**Alt**+**-** and **Ctrl**+**Alt**+**=**||
+|在多個查看結果之間巡覽|**F8** 和 **Shift**+**F8**||
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|Shift+Esc||
 
 ## <a name="toolbars"></a>工具列
 
 |||
 |-|-|
-|加入按鈕|按一下工具列溢位按鈕|
-|尋找標準工具列中的下拉式方塊|Ctrl+D|
+|加入按鈕|選取工具列溢位按鈕|
+|尋找標準工具列中的下拉式方塊|**Ctrl**+**D**|
 |尋找文字方塊命令模式|鍵入 ">"|
 |建立新別名|>alias NewAlias 命令|
 
@@ -125,9 +124,6 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="see-also"></a>另請參閱
 
+- [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
 - [鍵盤快速鍵 (VSTS 和 TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
-- [Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)

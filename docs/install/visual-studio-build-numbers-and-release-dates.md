@@ -1,23 +1,22 @@
 ---
-title: Visual Studio 2017 組建編號和發行日期 | Microsoft Docs
+title: Visual Studio 2017 組建編號和發行日期
 description: 已發行的 Visual Studio 2017 版本和組建編號清單 (依日期排序)。
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/04/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f941891c858d36d4cbe1de706d100c0b27d9c85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 
@@ -25,6 +24,10 @@ ms.lasthandoff: 04/06/2018
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 Preview 4.0 | 預覽 | 2018 年 4 月 18 日 | 15.7.27617.1 |
+| 15.6.6 | 發行 | 2018 年 4 月 10 日 | 15.6.27428.2037 |
+| 15.0.12 | 發行 | 2018 年 4 月 10 日 | 15.0.26228.30 |
+| 15.7.0 Preview 3.0 | 預覽 | 2018 年 4 月 9 日 | 15.7.27604.0 |
 | 15.6.5 | 發行 | 2018 年 4 月 4 日 | 15.6.27428.2027 |
 | 15.6.4 | 發行 | 2018 年 3 月 22 日 | 15.6.27428.2015 |
 | 15.7.0 Preview 2.0 | 預覽 | 2018 年 3 月 21 日 | 15.7.27520.0 |
@@ -124,8 +127,8 @@ ms.lasthandoff: 04/06/2018
 
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
 

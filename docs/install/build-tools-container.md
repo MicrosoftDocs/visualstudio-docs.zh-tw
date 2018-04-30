@@ -1,12 +1,10 @@
 ---
-title: 將建置工具安裝至容器 | Microsoft Docs
+title: 將 Visual Studio Build Tools 安裝至容器
+description: 了解如何將 Visual Studio Build Tools 安裝至 Windows 容器，以便支援持續整合與持續傳遞 (CI/CD) 工作流程。
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
@@ -14,13 +12,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a63b954c87e6b5308e499be2422948fa865964
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="install-build-tools-into-a-container"></a>將建置工具安裝至容器
+# <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
 您可以將 Visual Studio Build Tools 安裝至 Windows 容器，以便支援持續整合與持續傳遞 (CI/CD) 工作流程。 本文將引導您了解需要進行的 Docker 組態變更，以及可在容器中安裝的[工作負載和元件](workload-component-id-vs-build-tools.md)。
 
@@ -46,7 +44,7 @@ ms.lasthandoff: 04/03/2018
 
 ## <a name="step-2-install-docker-for-windows"></a>步驟 2： 安裝 Docker for Windows
 
-如果使用 Windows 10，您可以下載並安裝 [Docker Community Edition for Windows](https://www.docker.com/docker-windows)。 您可以使用 PowerShell 透過 Desired State Configuration (DSC) [安裝 Docker Enterprise Edition for Windows Server 2016](https://docs.docker.com/engine/installation/windows/docker-ee)，或透過[套件提供者](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server)進行簡單的單一安裝。
+如果使用的是 Windows 10，則可以[下載並安裝 Docker Community Edition](https://docs.docker.com/docker-for-windows/install)。 如果使用的是 Windows Server 2016，請遵循[指示來安裝 Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee)。
 
 ## <a name="step-3-switch-to-windows-containers"></a>步驟 3： 切換至 Windows 容器
 
@@ -61,7 +59,7 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 1. 在系統匣中，[以滑鼠右鍵按一下 Docker for Windows 圖示](https://docs.docker.com/docker-for-windows/#docker-settings)，然後按一下 [設定...]。
 2. [按一下 [精靈]](https://docs.docker.com/docker-for-windows/#docker-daemon) 區段。
 3. [將 [基本]](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) 按鈕切換至 [進階]。
-4. 新增下列 JSON 陣列屬性，以將磁碟空間增加到 120GB (讓 Build Tools 有足夠的成長空間)。
+4. 新增下列 JSON 陣列屬性，以將磁碟空間增加到 120 GB (讓 Build Tools 有足夠的成長空間)。
 
    ```json
    {
@@ -116,7 +114,7 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 
 ## <a name="step-5-create-and-build-the-dockerfile"></a>步驟 5： 建立並建置 Dockerfile
 
-您必須將下列範例 Dockerfile 儲存至磁碟上的新檔案。 如果檔案直接以 "Dockerfile" 命名，預設會辨識此名稱。
+將下列範例 Dockerfile 儲存至磁碟上的新檔案。 如果檔案直接以 "Dockerfile" 命名，預設會辨識此名稱。
 
 > [!NOTE]
 > 此範例 Dockerfile 只會排除無法安裝至容器的舊版 Windows SDK。 較舊版本會造成建置命令失敗。
@@ -137,22 +135,22 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 3. 將下列內容儲存至 C:\BuildTools\Dockerfile。
 
    ```dockerfile
-   # Use the latest Windows Server Core image.
-   FROM microsoft/windowsservercore
+   # escape=`
 
-   # Download useful tools to C:\Bin.
-   ADD https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe C:\\Bin\\nuget.exe
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
 
-   # Download the Build Tools bootstrapper outside of the PATH.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\\TEMP\\vs_buildtools.exe
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Add C:\Bin to PATH and install Build Tools excluding workloads and components with known issues.
-   RUN setx /m PATH "%PATH%;C:\Bin" \
-    && C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools --all \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 \
-       --remove Microsoft.VisualStudio.Component.Windows81SDK \
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
    # Start developer command prompt with any other commands specified.
@@ -162,13 +160,16 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
+   > [!NOTE]
+   > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝，且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。
+
 4. 從該目錄內執行下列命令。
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   此命令使用 2 GB 的記憶體在目前的目錄中建置 Dockerfile。 安裝某些工作負載時，預設值 1 GB 並不夠；不過，根據您的建置需求，您可能只使用 1 GB 就能夠進行建置。
+   此命令使用 2 GB 的記憶體在目前的目錄中建置 Dockerfile。 安裝某些工作負載時，預設值 1 GB 並不夠；不過，根據您的建置需求，您可能只使用 1 GB 記憶體就能夠進行建置。
 
    最終映像會標記為 "buildtools2017:latest"，因此您可以輕鬆地在容器中當作 "buildtools2017" 來執行 (因為 "latest" 是未指定任何標記時的預設值)。 如果您想要在更[進階的案例](advanced-build-tools-container.md)中使用特定版本的 Visual Studio Build Tools 2017，請改以特定 Visual Studio 組建編號及 "latest" 來標記容器，以確保容器能夠一致地使用特定版本。
 
@@ -186,13 +187,15 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 若要將此映像用於您的 CI/CD 工作流程，您可以將它發行至自己的 [Azure 容器登錄](https://azure.microsoft.com/services/container-registry)或其他內部 [Docker 登錄](https://docs.docker.com/registry/deploying)，讓伺服器只需要加以提取。
 
 ## <a name="get-support"></a>取得支援
+
 有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
 
 以下是一些支援選項：
+
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
 

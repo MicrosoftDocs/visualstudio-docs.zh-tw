@@ -1,32 +1,29 @@
 ---
-title: "在 Visual Studio 中將某個 .NET Framework 版本設定為目標| Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中將某個 .NET Framework 版本設定為目標| Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：將 .NET Framework 的某個版本設定為目標
 
 本文件描述如何在建立專案時以某個 .NET Framework 版本為目標，以及如何變更現有 Visual Basic、Visual C# 或 Visual F# 專案的目標版本。
 
 > [!IMPORTANT]
-> 如需如何變更 C++ 專案之目標版本的詳細資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+> 如需如何變更 C++ 專案之目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>若要在建立專案時設定目標版本
 
@@ -48,13 +45,13 @@ ms.lasthandoff: 03/08/2018
 
 您可以遵循下列順序變更 Visual Basic、C# 或 Visual F# 專案中的目標 .NET Framework 版本。
 
-如需如何變更 C++ 專案之目標版本的詳細資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+如需如何變更 C++ 專案之目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
 1. 在方案總管中開啟您所要變更專案的捷徑功能表，然後選擇 [屬性]。
 
     ![Visual Studio 方案總管的 [屬性]](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-1. 在 [屬性] 視窗的左欄中，選擇 **[應用程式]** 索引標籤。
+1. 在 [屬性] 視窗的左欄中，選擇 [應用程式] 索引標籤。
 
     ![Visual Studio 應用程式、[屬性]、[應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
@@ -73,7 +70,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="see-also"></a>另請參閱
 
 [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)  
-[進行 .NET Framework 目標錯誤的疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
+[針對 .NET Framework 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
+[應用程式頁面、專案設計工具 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
+[應用程式頁面、專案設計工具 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
 [如何：修改目標 Framework 和平台工具組 (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中檢視型別定義 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中檢視型別定義 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
 - go to definition
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 61428294fc9c4afa32a50b4776f03ce1e98b83b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -38,13 +35,13 @@ ms.lasthandoff: 03/08/2018
 
 ![滑鼠點按移至定義動畫](../ide/media/click_gotodef.gif)
 
-您可以變更滑鼠點按 [移至定義] 的輔助按鍵，方法是移至 [工具]、[選項]、[文字編輯器] 和 [一般]，然後選取 [Alt] 或 [Ctrl+Alt] 從 [Use modifier key] (使用輔助按鍵) 下拉式清單。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
+您可以變更滑鼠點按 [移至定義] 的輔助按鍵，方法是移至 [工具] > [選項] > [文字編輯器] > [一般]，然後選取 [Alt] 或 [Ctrl+Alt] 從 [Use modifier key (使用輔助按鍵)] 下拉式清單。 您也可以停用滑鼠點按 [移至定義]，方法是取消核取 [Enable mouse click to perform Go To Definition] (啟用滑鼠點按以執行移至定義) 核取方塊。
 
 ![啟用滑鼠點按移至定義](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>查看定義
 
-[查看定義] 功能可讓您預覽類型的定義，而不需要離開編輯器中的目前位置。 如果您是鍵盤使用者，請將文字游標放在類型或成員名稱內的某個位置，然後按 **Alt + F12**。 如果您是使用滑鼠的使用者，則可以選取操作功能表中的 [查看定義]。 在 Visual Studio 2017 15.4 版和更新版本中，有新的方式可以使用滑鼠查看檢視定義。 首先，依序移至 [工具]、[選項]、[文字編輯器] 和 [一般]。 選取 [Open definition in peek view] (在查看檢視中開啟定義) 選項，然後按一下 [確定] 關閉 [選項] 對話方塊。
+[查看定義] 功能可讓您預覽類型的定義，而不需要離開編輯器中的目前位置。 如果您是鍵盤使用者，請將文字游標放在類型或成員名稱內的某個位置，然後按 **Alt + F12**。 如果您是使用滑鼠的使用者，則可以選取操作功能表中的 [查看定義]。 在 Visual Studio 2017 15.4 版和更新版本中，有新的方式可以使用滑鼠查看檢視定義。 首先，移至 [工具] > [選項] > [文字編輯器] > [一般]。 選取 [Open definition in peek view] (在查看檢視中開啟定義) 選項，然後按一下 [確定] 關閉 [選項] 對話方塊。
 
 ![設定滑鼠點按查看定義選項](../ide/media/editor_options_peek_view.png)
 
@@ -54,15 +51,15 @@ ms.lasthandoff: 03/08/2018
 
 如果您從快顯視窗查看另一個定義，則將啟動階層連結路徑，而階層連結路徑可使用出現在快顯視窗上方的圓形和箭號進行巡覽。
 
-如需詳細資訊，請參閱[如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+如需詳細資訊，請參閱[如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>中繼資料視為原始程式碼 (C#)
 
 當無法取得您檢視的 C# 型別或成員的原始程式碼時，會改為顯示其中繼資料。 您可以查看所宣告的型別和成員，但無法查看其實作。
 
-當您針對無法取得原始程式碼定義的項目執行 [移至定義] 或 [查看定義] 命令時，程式碼編輯器中會顯示包含該項目中繼資料 (顯示為原始程式碼) 之索引標籤文件的檢視。 後面加上 **[來自中繼資料]**的類型名稱會出現在文件的索引標籤上。
+當您針對無法取得原始程式碼定義的項目執行 [移至定義] 或 [查看定義] 命令時，程式碼編輯器中會顯示包含該項目中繼資料 (顯示為原始程式碼) 之索引標籤文件的檢視。 後面加上 **[來自中繼資料]** 的類型名稱會出現在文件的索引標籤上。
 
-例如，如果對 <xref:System.Console> 執行 [移至定義] 命令，<xref:System.Console> 的中繼資料就會當做 C# 原始程式碼出現在程式碼編輯器中。 顯示的程式碼看起來像其宣告，但不包含實作。
+例如，如果對 <xref:System.Console> 執行 [移至定義] 命令，<xref:System.Console> 的中繼資料就會當做 C# 原始程式碼出現在程式碼編輯器中。 程式碼看起來像其宣告，但未顯示實作。
 
 ![中繼資料當做原始碼](../ide/media/metadatasource.png "MetadataSource")
 
@@ -71,7 +68,7 @@ ms.lasthandoff: 03/08/2018
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>檢視反編譯的原始定義而不是中繼資料 (C#)
 
-**Visual Studio 2017 15.6 版**中的新功能：您可以設定選項，以在檢視無法取得原始程式碼的 C# 型別或成員之定義時，顯示反編譯的原始程式碼。 若要開啟此功能，請選擇功能表列中的 [工具] > [選項]。 然後，展開 [文字編輯器] > [C#] > [進階]，再選取 [啟用巡覽至反編譯的原始碼]。
+Visual Studio 2017 15.6 版中的新功能：您可以設定選項，以在檢視無法取得原始程式碼的 C# 型別或成員之定義時，顯示反編譯的原始程式碼。 若要開啟此功能，請選擇功能表列中的 [工具] > [選項]。 然後，展開 [文字編輯器] > [C#] > [進階]，再選取 [啟用巡覽至反編譯的原始碼]。
 
 ![檢視反編譯的定義](media/go-to-definition-decompiled-sources.png)
 
@@ -81,4 +78,5 @@ ms.lasthandoff: 03/08/2018
 ## <a name="see-also"></a>另請參閱
 
 [巡覽程式碼](../ide/navigating-code.md)
-[如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+[如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,15 +1,14 @@
 ---
-title: "在 Visual Studio for Mac 中管理專案中的參考 | Microsoft Docs"
+title: 在 Visual Studio for Mac 中管理專案中的參考
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 99f3ba9e5192bc17df23a93c9cad7e953797e9b4
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 75395ed0d97eba5203adf7de384bb60f71313916
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 

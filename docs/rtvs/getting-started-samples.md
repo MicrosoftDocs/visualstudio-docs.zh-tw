@@ -1,26 +1,20 @@
 ---
-title: Visual Studio R 工具的範例專案 | Microsoft Docs
+title: 範例 R 專案
 description: 可讓您開始搭配使用 R 和 Visual Studio 的範例集合索引。
-ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 615a53e830821fef780dcbc7596b3a1ced882fb8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 

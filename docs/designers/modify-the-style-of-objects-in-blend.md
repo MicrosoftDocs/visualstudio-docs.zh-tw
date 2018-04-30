@@ -1,22 +1,18 @@
 ---
-title: "在 Blend 中修改物件的樣式 | Microsoft Docs"
-ms.custom: 
+title: 在 Blend 中修改物件的樣式
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: dd96bde626f70211e1698227a8f94df75e3bcb3c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 
@@ -27,8 +23,6 @@ ms.lasthandoff: 01/25/2018
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>筆刷：修改物件的外觀
 
 如果您要變更筆刷的外觀，請將筆刷套用至物件。
-
-**觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [筆刷編輯器](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor) \(英文\)。
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>在物件上繪製重複影像或圖樣
 
@@ -47,8 +41,6 @@ ms.lasthandoff: 01/25/2018
 從按鈕等控制項建立視覺筆刷。 下列圖例顯示視覺筆刷和並排的視覺筆刷。
 
 ![視覺筆刷](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![並排顯示的視覺筆刷](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
-
-**觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [拼貼筆刷](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes) \(英文\)。
 
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>樣式和範本：跨控制項建立一致的外觀與風格
 
@@ -82,7 +74,7 @@ ms.lasthandoff: 01/25/2018
 
 > [!NOTE]
 > 您無法為每一個類型的控制項建立樣式或範本。 如果控制項不支援此項，階層連結按鈕就不會出現在畫板上。
-> 若要回到主文件的編輯範圍，請按一下 [將範圍傳回] ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
+> 若要回到主文件的編輯範圍，請按一下 [將範圍傳回] ![將範圍傳回圖示](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)。
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>將樣式或範本套用至控制項
 
@@ -92,7 +84,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>還原控制項的預設樣式或範本
 
-選取控制項，然後在[屬性](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)面板中，找出 [樣式] 或 [範本] 屬性。 選擇 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png)，然後按一下捷徑功能表上的 [重設]。
+選取控制項，然後在[屬性](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)面板中，找出 [樣式] 或 [範本] 屬性。 選擇 [進階選項]，然後按一下捷徑功能表上的 [重設]。
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>視覺狀態：依控制項的狀態變更其外觀
 
@@ -102,14 +94,12 @@ ms.lasthandoff: 01/25/2018
 
 **觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控制項的狀態](https://www.youtube.com/watch?v=m0PlkF5i6uw) \(英文\)。
 
-##  <a name="Resources"></a> 資源：建立色彩、樣式和範本，之後重複使用這些項目
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>資源：建立色彩、樣式和範本，之後重複使用這些項目
 
 您可以將專案中幾乎任何項目轉換為資源。 資源只是一個可在應用程式中不同地方重複使用的物件。 例如，您可以建立色彩一次、使它變成資源，然後在數個物件上使用該色彩。 若要變更所有這些物件的色彩，只須變更色彩資源即可。
 
 ![[將色彩轉換為資源] 按鈕](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![[建立色彩資源] 對話方塊](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-**觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [資源的簡短試用](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources) \(英文\)。
-
 ## <a name="see-also"></a>另請參閱
 
-[使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

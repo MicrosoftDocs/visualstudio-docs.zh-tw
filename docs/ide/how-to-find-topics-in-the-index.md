@@ -1,12 +1,10 @@
 ---
-title: "使用 Visual Studio 說明檢視器索引 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio 說明檢視器索引 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,18 +13,18 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
+# <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 索引包含與已安裝內容的主題相關聯的關鍵字清單。 每個主題都可能有多個相關聯的關鍵字，而且每個關鍵字都可能與多個主題建立關聯。 請以在活頁簿中使用索引的相同方式來使用此索引。  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>使用索引來尋找主題  

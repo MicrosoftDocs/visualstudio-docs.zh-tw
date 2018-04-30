@@ -1,19 +1,19 @@
 ---
 title: Visual Studio 訂閱者的 VSTS 權益 | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: 了解如何使用 Visual Studio Team Services (VSTS) 做為 Visual Studio 訂閱者。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Visual Studio Team Services (VSTS) 權益
 
@@ -26,12 +26,14 @@ ms.lasthandoff: 03/22/2018
 ## <a name="eligibility"></a>資格
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, MPN, BizSpark, NFR<sup>1</sup> FTE  | 基本, Test Manager, 套件管理, 自我裝載 CI/CD       |  [是]          |
-| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售                                       | 基本                                                            |  [是]          |
+| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>, FTE  | 基本, Test Manager, 套件管理, 自我裝載 CI/CD       |  [是]          |
+| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售,                                        | 基本                                                            |  [是]          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 基本, Test Manager                                              |  [是]          |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 基本, Test Manager                                              |  [是]          |
 
-<sup>1</sup>  *包括：禁止轉售 (NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer。排除：MCT Software & Services、Imagine。*
+
+
 
 進一步了解 VSTS 功能：
 - [基本](https://www.visualstudio.com/team-services/compare-features/)

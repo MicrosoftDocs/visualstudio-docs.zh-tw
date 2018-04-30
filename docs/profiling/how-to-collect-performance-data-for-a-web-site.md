@@ -1,13 +1,9 @@
 ---
-title: "如何：收集網站的效能資料 | Microsoft Docs"
-ms.custom: 
+title: 如何：收集網站的效能資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +16,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
 
@@ -82,11 +78,11 @@ ms.lasthandoff: 02/21/2018
 
 5. 在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式]  方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] 。
 
-    - 若是伺服器 (IIS) 架構的網站，請輸入如 **http://localhost/MySite/default.aspx**之類的 URL。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
+    - 針對以伺服器 (IIS) 為基礎的網站，請鍵入 URL，例如 **http://localhost/MySite/default.aspx** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
 
-    - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。
+    - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。
 
-    - 針對您想要收集 JavaScript 資料的外部網站，請輸入如 http://www.contoso.com 之類的 URL。
+    - 針對您想要收集 JavaScript 資料的外部網站，請鍵入如 http://www.contoso.com 之類的 URL。
 
      如需詳細資訊，請檢視 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 目標二進位檔的屬性頁。
 

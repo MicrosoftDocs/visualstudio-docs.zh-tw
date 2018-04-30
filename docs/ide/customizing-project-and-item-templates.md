@@ -1,23 +1,21 @@
 ---
-title: "自訂 Visual Studio 的專案和項目範本 | Microsoft Docs"
-ms.custom: 
+title: 自訂 Visual Studio 的專案和項目範本 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd0a1f9fd9bf9885fa52e86ea443eaa3164d321e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 04ab5e9648f95946208b71e3b3739630f594cb0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-project-and-item-templates"></a>自訂專案範本和項目範本
 
@@ -37,7 +35,7 @@ ms.lasthandoff: 01/05/2018
 
    如需詳細資訊，請參閱[如何：搭配使用精靈與專案範本 (擴充性)](../extensibility/how-to-use-wizards-with-project-templates.md)。
 
-## <a name="related-sections"></a>相關章節
+### <a name="see-also"></a>另請參閱
 
 [建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
 [如何：針對範本進行疑難排解](../ide/how-to-troubleshoot-templates.md)  

@@ -1,27 +1,25 @@
 ---
-title: "在 Visual Studio 中隱藏專案和 NuGet 套件的編譯器警告 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中隱藏專案和 NuGet 套件的編譯器警告 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af162101eb20e018be44480c862192c0c59276a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
 您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊的詳細資訊，請參閱[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-## <a name="suppressing-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F# 的特定警告 #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F# 的特定警告 #
 
 使用 [組建] 屬性頁隱藏 C# 或 F# 專案的特定警告。
 
@@ -35,7 +33,7 @@ ms.lasthandoff: 01/29/2018
 
 1. 重建方案。
 
-## <a name="suppressing-specific-warnings-for-visual-c"></a>隱藏 Visual C++ 的特定警告
+## <a name="suppress-specific-warnings-for-visual-c"></a>隱藏 Visual C++ 的特定警告
 
 使用 [組態屬性] 屬性頁隱藏 C++ 專案的特定警告。
 
@@ -53,7 +51,7 @@ ms.lasthandoff: 01/29/2018
 
 1. 選擇 [確定] 按鈕，然後重建方案。
 
-## <a name="suppressing-warnings-for-visual-basic"></a>隱藏 Visual Basic 的警告
+## <a name="suppress-warnings-for-visual-basic"></a>隱藏 Visual Basic 的警告
 
 編輯專案的 *.vbproj* 檔案，即可隱藏 Visual Basic 的特定編譯器警告。 若要依「類別」隱藏警告，您可以使用[編譯屬性頁](../ide/reference/compile-page-project-designer-visual-basic.md)。 如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。
 
@@ -65,7 +63,7 @@ ms.lasthandoff: 01/29/2018
 
 1. 在功能表列上，依序選擇 [專案] > [卸載專案]。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 <專案名稱> .vbproj]。
+1. 在**方案總管**中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 <ProjectName>.vbproj]。
 
     隨即在程式碼編輯器中開啟 XML 專案檔。
 
@@ -114,7 +112,7 @@ ms.lasthandoff: 01/29/2018
 
 如需詳細資訊，請參閱 Visual Basic 命令列編譯器的 [/nowarn 編譯器選項](/dotnet/visual-basic/reference/command-line-compiler/nowarn)。
 
-## <a name="suppressing-warnings-for-nuget-packages"></a>隱藏 NuGet 套件的警告
+## <a name="suppress-warnings-for-nuget-packages"></a>隱藏 NuGet 套件的警告
 
 在某些情況下，您可能想要隱藏單一 NuGet 套件的 NuGet 編譯器警告，而不是整個專案。 警告皆有其用途，因此不建議在專案層級隱藏它。 例如，其中一個 NuGet 警告會告訴您套件可能無法完全與您的專案相容。 如果您在專案層級隱藏警告，且隨後新增其他的 NuGet 套件，您將無法知道它是否已產生相容性警告。
 
@@ -136,4 +134,4 @@ ms.lasthandoff: 01/29/2018
 
 [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)  
 [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)  
-[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+[編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

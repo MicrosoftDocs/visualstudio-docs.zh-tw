@@ -1,26 +1,23 @@
 ---
-title: "Visual Studio 訂用帳戶中的 Azure 社群權益 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/8/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Azure Community benefit included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fb8c318d665c5c8b25a245ff304c5b2b9341a1ef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 訂用帳戶中的 Azure 社群權益 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/08/2018
+ms.topic: Get-Started-Article
+description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-community"></a>Azure 社群  
 
-## <a name="overview"></a>概觀 
-直接透過「Azure 社群」從精選支援論壇取得協助。
-
-「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。  
+直接透過「Azure 社群」從精選支援論壇取得協助。  「Azure 社群」權益可讓您存取著重在 Azure 相關主題的論壇集合。  
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -32,31 +29,7 @@ ms.lasthandoff: 01/29/2018
 | [Azure 管理入口網站](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure 備份](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure 虛擬機器](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-### <a name="eligibility"></a>資格
-| 訂用帳戶等級/方案                                 | 權益               | 可續約？                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | 包含              | 是                                                                |
-| Visual Studio Enterprise 年度                              | 包含              | 是                                                                |
-| Visual Studio Enterprise 每月                             | 無法使用         |                                                                    |
-| Visual Studio Professional Standard                          | 包含              | 是                                                                |
-| Visual Studio Professional 年度                            | 包含              | 是                                                                |
-| Visual Studio Professional 每月                           | 無法使用         |                                                                    |
-| Visual Studio Test Pro                                       | 包含              | 是                                                                |
-| MSDN 平台                                               | 包含              | 是                                                                |
-| Visual Studio Dev Essentials                                 | 包含              | 是                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                | 無法使用         |                                                                    |
-| Visual Studio Enterprise - FTE                               | 無法使用         |                                                                    |
-| Visual Studio Enterprise - MPN                               | 無法使用         |                                                                    |
-| Visual Studio Professional - MPN                             | 無法使用         |                                                                    |
-| Visual Studio Enterprise - MVP/RD                            | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                 | 無法使用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | 無法使用         |                                                                    |
-| Visual Studio Enterprise – MCT 軟體與服務           | 無法使用         |                                                                    |
-| Visual Studio Enterprise – MCT 軟體與服務開發人員 | 無法使用         |                                                                    |
-<sup>1</sup>  *包括「禁止轉售」(NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*  
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="activation-steps"></a>啟用步驟
 開始使用 Azure 社群非常簡單。  
@@ -74,8 +47,21 @@ ms.lasthandoff: 01/29/2018
 
    ![Azure 社群範例](_img/vs-azure-community/vs-azure-community-example.png)
 
-## <a name="faq"></a>常見問題集
-到這裡查看是否有更新
+## <a name="eligibility"></a>資格
+Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
+
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售   | 一年      |  [是]          |
+| Visual Studio Professional (標準、年度雲端)  | VL, Azure, 零售                                      | 一年                                                           |  [是]          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 一年                                             |  [是]          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              |一年                                              |  [是]          |
+| Visual Studio Enterprise (每月雲端)、Visual Studio Professional (每月雲端)、NFR<sup>1</sup>                                          | 全部                                              |無法使用                                              |  否          |
+| Visual Studio Dev Essentials                                        | N/A                                              |無法使用                                              |  否          |
+|
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft FTE、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT)*
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="support-resources"></a>支援資源
 -  如需其他 Azure 社群資源，請瀏覽 Azure 社群[支援頁面](https://azure.microsoft.com/support/forums/)。
