@@ -1,25 +1,22 @@
 ---
-title: "如何：使用範圍陳述式程式碼片段 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用範圍陳述式程式碼片段 | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 02/09/2018
 
 1. 在 Visual Studio IDE 中，開啟您想要編輯的檔案。
 
-1. 在程式碼編輯器中，選取要環繞的文字。
+1. 在**程式碼編輯器**中，選取要環繞的文字。
 
 1. 輸入 **Ctrl**+**K**，**Ctrl**+**S**。
 
@@ -39,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 
 1. 在 Visual Studio IDE 中，開啟您想要編輯的檔案。
 
-1. 在程式碼編輯器中，選取要環繞的文字。
+1. 在**程式碼編輯器**中，選取要環繞的文字。
 
 1. 從 [編輯] 功能表，選取 [IntelliSense]，然後選取 [範圍陳述式] 命令。
 
@@ -51,7 +48,7 @@ ms.lasthandoff: 02/09/2018
 
 1. 在 Visual Studio IDE 中，開啟您想要編輯的檔案。
 
-1. 在程式碼編輯器中，選取要環繞的文字。
+1. 在**程式碼編輯器**中，選取要環繞的文字。
 
 1. 以滑鼠右鍵按一下選取的文字，然後從操作功能表選取 [範圍陳述式] 命令。
 
@@ -61,5 +58,5 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[C# 程式碼片段](../ide/visual-csharp-code-snippets.md)  
-[程式碼片段選擇器](../ide/reference/code-snippet-picker.md)
+- [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
+- [程式碼片段選擇器](../ide/reference/code-snippet-picker.md)

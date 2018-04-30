@@ -1,54 +1,27 @@
 ---
-title: "Visual Studio 訂用帳戶的 MODERNRequirements 權益 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the ModernRequirements suite of products included in selected Visual Studio Enterprise subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4ff6c7db66547bc2d4da05bf9aec087113c64cbe
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 訂用帳戶的 MODERNRequirements 權益 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產品的 ModernRequirements 套件。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c16033488db6e23e935f355183db7d7049690ba5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
-## <a name="overview"></a>總覽
-
 選取的 Visual Studio 訂用帳戶包含 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 的六個月訂用帳戶。  MODERNRequirements 的 SmartOffice4TFS 透過以 Microsoft Word 為基礎的報表，以及快速、簡化的 RTF 撰寫，擴充 TFS 或 Visual Studio Team Services 的功能。  ModernRequirements4TFS 則提供工作項目基準化和 HTML5 模擬功能。  
 
-## <a name="eligibility"></a>資格
-| 訂用帳戶等級/方案                                                  | 優勢               | 可續約？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 6 個月              |  [是]                                                               |
-| Visual Studio Enterprise 年度                                               | 6 個月              |  [是]                                                               |
-| Visual Studio Enterprise 每月                                              | 無法使用         |                                                                    |
-| Visual Studio Professional Standard                                           | 無法使用         |                                                                    |
-| Visual Studio Professional 年度                                             | 無法使用         |                                                                    | 
-| Visual Studio Professional 每月                                            | 無法使用         |                                                                    |
-| Visual Studio Test Pro                                                        | 無法使用         |                                                                    |
-| MSDN 平台                                                                | 無法使用         |                                                                    |
-| Visual Studio Dev Essentials                                                  | 無法使用         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 個月              |  [是]                                                               |
-| Visual Studio Enterprise - FTE                                                | 6 個月              |  [是]                                                               |
-| Visual Studio Enterprise - Microsoft 合作夥伴網路                          | 6 個月              |  [是]                                                               |
-| Visual Studio Professional - Microsoft 合作夥伴網路                        | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | 無法使用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 無法使用         |                                                                    |
-| Microsoft 合格訓練人員 - 軟體與服務                             | 無法使用         |                                                                    |
-| Microsoft 合格訓練人員 - 軟體與服務開發人員                   | 無法使用         |                                                                    |
-
-<sup>1</sup>  *包括「禁止轉售」(NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*  
-
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="activation-steps"></a>啟用步驟
-1.  若要使用您的 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1.  若要使用 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2.  在 [工具] 區段找到 [MODERNRequirements4TFS] 磚，並按一下權益磚左下角的 [取得代碼] 連結。   
 
     ![ModernRequirements 權益磚](_img\vs-modernreq\vs-modernreq-tile.png)
@@ -109,10 +82,21 @@ ms.lasthandoff: 01/29/2018
 
 22. 開啟 Word 時，您會看到已新增 [SmartWord4TFS] 索引標籤。 按一下此索引標籤，以顯示 SmartWord4TFS 工具組。 
 
-## <a name="faq"></a>常見問題集
-到這裡查看是否有更新
+## <a name="eligibility"></a>資格
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                          |NA     |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                          |NA     |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                          |NA     |
+| Visual Studio Dev Essentials | NA  |無法使用                                                          |NA     |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、FTE。排除：Microsoft Partner Network (Professional)、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。MCT Software & Services。*
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="support-resources"></a>支援資源
--  需要 ModernRequirements 的產品說明嗎？  請瀏覽 https://www.modernrequirements.com/support-2/ (英文)。
+-  需要 ModernRequirements 的產品說明嗎？  請瀏覽 https://www.modernrequirements.com/support-2/。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 

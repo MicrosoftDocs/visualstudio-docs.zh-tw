@@ -1,16 +1,15 @@
 ---
-title: "啟用 Visual Studio for Mac 的訂用帳戶 | Microsoft Docs"
-description: "本文章說明如何使用您的 Microsoft 帳戶來啟用您的訂用帳戶，並解除 Visual Studio for Mac 中功能的鎖定"
+title: 啟用 Visual Studio for Mac 的訂閱
+description: 本文章說明如何使用您的 Microsoft 帳戶來啟用您的訂用帳戶，並解除 Visual Studio for Mac 中功能的鎖定
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 
@@ -28,7 +27,7 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 如果您的訂用帳戶已過期，則會有兩個選項：
 
-1. 更新您的訂閱 您可以瀏覽至 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 來續訂您的訂用帳戶。
+1. 更新您的訂閱 您可以瀏覽至 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 以更新您的訂閱。
 
 2. 如果您有具有作用中訂用帳戶的其他帳戶，則可以將它新增至 Visual Studio for Mac，如[新增多個使用者帳戶](~/signing-in.md)一文中所述。 Visual Studio for Mac 會從您新增的所有帳戶中偵測到最適合的可用授權。 
 

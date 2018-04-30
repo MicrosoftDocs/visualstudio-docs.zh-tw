@@ -1,13 +1,10 @@
 ---
-title: "使用 Visual Studio 說明檢視器目錄 | Microsoft Docs"
-ms.custom: 
+title: 使用 Visual Studio 說明檢視器目錄 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>如何：在目錄中尋找主題
 在 [內容] 索引標籤上，您可以使用目錄 (TOC) 來尋找資訊。 目錄是一個可展開的清單，其中包含已安裝書籍中的所有主題。 如需有關目錄巡覽方法的協助工具資訊，請參閱[快速鍵 (說明檢視器)](../ide/shortcut-keys-help-viewer.md)。  
@@ -35,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 >  目錄中可用的主題範圍取決於您選取的篩選條件。  
   
 ## <a name="filter-the-toc"></a>篩選目錄  
-您可以篩選目錄來縮小會出現在 [內容] 索引標籤中的主題範圍。只有當標題包含指定詞彙的根時，才會出現在清單中。 例如，如果您指定「疑難排解」做為篩選條件，則只會出現包含「進行疑難排解」或「疑難排解」的標題。 標題不包含該詞彙的節點會以省略符號 (...) 摺疊成單一節點。  
+您可以篩選目錄來縮小會出現在 [內容] 索引標籤中的主題範圍。只有當標題包含指定詞彙的根時，才會出現在清單中。 例如，如果您指定「疑難排解」做為篩選條件，則只會出現包含「進行疑難排解」或「疑難排解」的標題。 標題不包含該詞彙的節點會以省略符號 (**...**) 摺疊成單一節點。  
   
 #### <a name="to-filter-the-toc"></a>篩選目錄  
   
@@ -53,7 +49,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  檢視主題。  
   
-2.  按一下工具列上的 [顯示內容中的主題] 按鈕，或按下 **Ctrl+S**。  
+2.  按一下工具列上的 [顯示內容中的主題] 按鈕，或按下 **Ctrl**+**S**。  
   
      [內容] 索引標籤隨即開啟，並在目錄中顯示主題的位置。  
   

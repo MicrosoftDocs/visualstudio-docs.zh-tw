@@ -1,22 +1,22 @@
 ---
-title: "安裝適用於 Visual Studio 的 AI 工具"
-description: "適用於 Visual Studio 的 AI 工具安裝"
+title: 安裝適用於 Visual Studio 的 AI 工具
+description: 適用於 Visual Studio 的 AI 工具安裝
 keywords: AI, Visual Studio
 author: lisawong19
 ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 93e28558b1d09ded8de5bc6c4eb45230435cb807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installation"></a>安裝
 

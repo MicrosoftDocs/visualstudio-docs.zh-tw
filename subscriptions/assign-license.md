@@ -9,11 +9,11 @@ description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
@@ -32,10 +32,12 @@ ms.lasthandoff: 04/06/2018
 
     如果您的組織用來接收電子郵件的電子郵件與登入的電子郵件不同，則可以選擇在這裡輸入它。 選取超連結，指出「進行通訊的電子郵件與登入的電子郵件不同嗎」？ 
 
-    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https:/my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 完成後，請按一下 [新增]。
+    **存取下載項目：**  
+    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 
+    
+    當您完成選擇此訂閱者的選項時，請按一下 [新增]。
 
     ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-1.png)
-
     ![輸入訂閱者資訊](_img\assign-license-add\add-subscriber-2.png)
 
 4.  新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
@@ -55,9 +57,7 @@ ms.lasthandoff: 04/06/2018
 **為了協助確保順利上傳，請觀察下列最佳做法：**
     - 確定表單欄位未包含逗號。
     - 移除表單欄位 (例如使用者名稱) 前後的空格。
-    - 請確定使用者名稱未包含兩部分名字或姓氏之間的額外空格 (例如，兩部分名字 (例如 "Maggie May") 不應該鍵入為 "Maggie  May"，因為系統不會修剪額外空格)
-
-    ![大量新增範本](_img\assign-license-add\bulk-template.png)
+    - 請確定使用者名稱未包含兩部分名字或姓氏之間的額外空格 (例如，兩部分名字 (例如 "Maggie May") 不應該鍵入為 "Maggie  May"，因為系統不會修剪額外空格) ![大量新增範本](_img\assign-license-add\bulk-template.png)
 
 4.  返回 Visual Studio 訂用帳戶管理入口網站，並在 [Upload Multiple Subscribers] (上傳多位訂閱者) 對話方塊中按一下 [瀏覽]。 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]。 您會在螢幕上看到上傳進度。 
 

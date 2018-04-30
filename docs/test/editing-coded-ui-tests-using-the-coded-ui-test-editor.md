@@ -2,21 +2,21 @@
 title: 在 Visual Studio 中編輯自動程式化 UI 測試 | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式碼 UI 測試編輯器，編輯自動程式碼 UI 測試
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。
@@ -71,7 +71,7 @@ ms.lasthandoff: 03/19/2018
 
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。
 
- 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 'http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
+ 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `'http://Contoso2/default.aspx'`。
 
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 
@@ -140,7 +140,7 @@ ms.lasthandoff: 03/19/2018
 
 若要復原移動，請從 [編輯] 功能表中選擇 [復原]，或是按 Ctrl+Z。 不過，您必須從 UIMap.cs 或 UIMap.vb 檔案手動移除此程式碼。
 
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test
+##  <a name="CodedUITestEditor_LocateUIControl"></a> 尋找受測試應用程式中的 UI 控制項
  有時候，很難視覺化控制項在受測試應用程式之 UI 中的位置。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 使用受測試應用程式上的 [ **尋找 UI 控制項** ] 功能，也可用來確認您已對控制項所做的搜尋屬性修改。
 
  ![找出 UI 控制項](../test/media/codeduilocatecontrol.png "CodedUILocateControl")

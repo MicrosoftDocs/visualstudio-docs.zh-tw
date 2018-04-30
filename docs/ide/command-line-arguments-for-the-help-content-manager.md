@@ -1,26 +1,24 @@
 ---
-title: "Help Content Manager 的命令列引數 | Microsoft Docs"
-ms.custom: 
+title: Help Content Manager 的命令列引數 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 25600941543698b4592e38a9952024754a5d2bbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
-您可以使用說明內容管理員 (HlpCtntMgr.exe) 的命令列引數來指定如何部署和管理本機說明內容。 您必須以系統管理員權限來執行命令列工具的指令碼，您無法以服務方式執行這些指令碼。 使用本工具可執行下列工作：  
+您可以使用 Help Content Manager (*HlpCtntMgr.exe*) 的命令列引數來指定如何部署和管理本機說明內容。 您必須以系統管理員權限來執行命令列工具的指令碼，您無法以服務方式執行這些指令碼。 使用本工具可執行下列工作：  
   
 -   從磁碟或雲端新增或更新本機說明內容。  
   
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  
 ```  
   
-例如：  
+例如:   
   
 ```  
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha  
@@ -48,7 +46,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |參數|是否為必要項？|引數|  
 |------------|---------------|---------------|  
 |/operation|[是]|-   **安裝** -- 從指定的安裝來源將書籍新增至本機內容存放區。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數，或是兩者同時使用。 如果您未指定 /sourceURI 引數，則會把預設的 Visual Studio URI 當成安裝來源。 如果您未指定 /booklist 引數，就會安裝 /sourceUri 上的所有書籍。<br />-   **解除安裝** -- 從本機內容存放區中移除您指定的書籍。<br />     這個參數需要 /booklist 引數或 /sourceURI 引數。  如果您指定 /sourceURI 引數，則會移除所有書籍，並會忽略 /booklist 引數。<br />-   **移動** -- 將本機存放區移至您指定的路徑。 預設本機存放區路徑是設為 %ProgramData% 之下的目錄<br />     這個參數需要 /locationPath 和 /catalogName 引數。 如果您指定無效的路徑，或磁碟機未包含足夠的可用空間來容納內容，就會在事件記錄檔中記錄錯誤訊息。<br />-   **重新整理** -- 更新已變更的主題，因為它們已安裝或最近更新過。<br />     這個參數需要 /sourceURI 引數。|  
-|/catalogName|是|指定內容目錄的名稱。|  
+|/catalogName|[是]|指定內容目錄的名稱。|  
 |/locale|否|指定產品地區設定，此設定用來檢視並管理目前說明檢視器執行個體的內容。 例如，您指定 `EN-US` 英文 - 美國。<br /><br /> 如果您未指定地區設定，就會使用作業系統的地區設定。 如果無法判斷該地區設定，就會使用 `EN-US`。<br /><br /> 如果您指定無效的地區設定，則會在事件記錄檔中記錄錯誤訊息。|  
 |/e|否|如果目前使用者具有系統管理認證，則將 Help Content Manager 的權限提高為系統管理權限。|  
 |/sourceURI|否|指定安裝內容 (服務應用程式開發介面) 的 URL 或內容安裝檔案 (.msha) 的路徑。 在 Visual Studio 2010 樣式端點中，URL 可以指向產品群組 (最上層節點) 或產品書籍 (分葉層級節點)。 您不需要在 URL 結尾包含斜線 (/)。 如果您包含結尾斜線，則它會受到適當地處理。<br /><br /> 當內容正受到管理時，如果找不到您指定的檔案、其無效或無法存取，或是網際網路連線無法使用或遭中斷，會在事件記錄檔中記錄錯誤訊息。|  
@@ -89,6 +87,6 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
 ```  
   
 ## <a name="see-also"></a>另請參閱  
-[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)  
-[Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)  
+[Help Viewer 系統管理員指南](../ide/help-viewer-administrator-guide.md)  
+[Help Content Manager 覆寫](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

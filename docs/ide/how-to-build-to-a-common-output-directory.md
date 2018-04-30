@@ -1,27 +1,25 @@
 ---
-title: "如何：建置到通用輸出目錄 | Microsoft Docs"
-ms.custom: 
+title: 如何：建置到通用輸出目錄 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - output directory
 - builds [Visual Studio], common directory
 - common directory
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f45831618e7d685da1f50ae634770ef735a6ff78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7fccb55bb4c30a6ce18e94667d06f77cc5cb6592
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 預設會在方案的專屬資料夾中建立方案中的每個專案。 您可以變更專案的建置輸出路徑，強制將所有輸出放在相同的資料夾中。  
@@ -36,6 +34,6 @@ ms.lasthandoff: 12/22/2017
   
 4.  針對方案中的所有專案，重複步驟 1-3。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)

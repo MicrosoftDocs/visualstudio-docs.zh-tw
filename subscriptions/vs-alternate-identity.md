@@ -1,53 +1,71 @@
 ---
 title: Visual Studio 訂閱者身分識別
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: How to add an alternate identity for your Visual Studio subscription, to use for VSTS and Azure.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 70bfd305ec35b562fb722fb853016c3df4240ff8
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 04/10/2018
+ms.topic: conceptual
+description: 如何新增 Visual Studio 訂用帳戶的替代身分識別，以用於 VSTS 和 Azure
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: vs subscription
+ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 訂閱者身分識別
 
-當您啟用 Visual Studio 訂用帳戶時，我們會連結您在 Visual Studio 訂用帳戶啟用期間所使用的身分識別 (或登入)。 這樣我們可以在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、VSTS 和 Azure 中辨識您。
+當您啟用 Visual Studio 訂用帳戶時，我們會連結您在 Visual Studio 訂用帳戶啟用期間所使用的身分識別 (或登入)。 這樣我們可以在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Visual Studio Team Services (VSTS) 和 Azure 中辨識您。
 
-在 VSTS 中，我們會在您每次登入時檢查您的 Visual Studio 訂用帳戶狀態，並自動授與您所屬每個帳戶的功能。 因為這些功能是隨附於訂閱者的權益，所以使用連結至 Visual Studio 訂用帳戶的身分識別時，它可以免費將您新增為任何 VSTS 帳戶的成員。
+在 VSTS 中，我們會在您每次登入時檢查您的 Visual Studio 訂用帳戶狀態，並自動授與您所屬每個帳戶的功能。
+因為這些功能是隨附於訂閱者的權益，所以使用連結至 Visual Studio 訂用帳戶的身分識別時，它可以免費將您新增為任何 VSTS 帳戶的成員。
 
 在 Azure 中，當您啟用您訂閱者權益的[每月 Azure 點數](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)時，我們會檢查您的 Visual Studio 訂用帳戶狀態。
 
-在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 中，您可新增**其他身分識別** -- 除啟用期間所用的身分識別之外。 今天，如果您使用 Microsoft 帳戶啟用您的訂用帳戶，我們可讓您新增其他身分識別。 這樣您也可以新增工作或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校的網路時所用的帳戶)，讓您使用您個人的帳戶和您的工作或學校帳戶來存取 VSTS。
+在 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，您可以新增**替代身分識別** -- 除了啟用期間所使用的身分識別之外。 現在，如果您使用 Microsoft 帳戶啟用您的訂用帳戶，我們可讓您新增替代身分識別。 這樣您也可以新增工作或學校帳戶 (登入 Visual Studio、Office 365 或您公司或學校的網路時所用的帳戶)，讓您使用您個人的帳戶和您的工作或學校帳戶來存取 VSTS。
 
-## <a name="how-to-add-an-alternate-identity-to-your-visual-studio-subscription"></a>如何在 Visual Studio 訂用帳戶中新增其他身分識別
+## <a name="add-an-alternate-account-to-your-visual-studio-subscription"></a>將替代帳戶新增至 Visual Studio 訂用帳戶
 
-1. 登入 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
+將替代帳戶新增至 Visual Studio 訂用帳戶，可讓您使用與獲指派訂用帳戶不同的身分識別來存取訂用帳戶權益 (例如 Visual Studio Team Services (VSTS) 和 Azure)。 過去，只有在將 Visual Studio (VS) 訂用帳戶指派給 Microsoft 帳戶 (MSA) 時，才能使用這項功能。 我們已擴充 Azure Active Directory (Azure AD) 中公司或學校帳戶的這個功能。
 
-  > 如果系統要求您選擇「個人帳戶」或「公司或學校帳戶」，請選擇「個人帳戶」(您的 Microsoft 帳戶)。
-  >
-  > 有時候需要選擇，是因為您的 Microsoft 帳戶和您的工作或學校帳戶共用相同的電子郵件地址。 雖然這兩個身分識別使用相同的電子郵件地址，但它們仍是使用不同的設定檔、安全性設定和權限的不同身分識別。
-  >
-  > 自 2018 年 3 月 30 日開始，您就無法再使用所用網域受 Azure Active Directory 管理的電子郵件來建立 Microsoft 帳戶。 您仍然可以使用此電子郵件作為工作帳戶登入。
+這不會將一份訂用帳戶提供給其他帳戶；它只會提供使用替代帳戶存取兩個權益的能力。
 
-2. 前往 [訂用帳戶] 索引標籤。
+針對所有訂用帳戶，您可以新增「公司或學校帳戶」，讓您可以搭配使用該帳戶與您需要登入的權益 (VS IDE、VSTS 和 Azure)。
 
-  ![選擇 [訂用帳戶]](_img/vs-alternate-identity/choose-subscriptions-my-visual-studio-com-portal.png)
+### <a name="prerequisites"></a>必要條件
 
-3. 前往 [相關連結] 下的 [新增其他帳戶]。
+* [VSTS 專案集合系統管理員或帳戶擁有者權限](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
 
-  ![前往 [相關連結] 下的 [新增其他帳戶]](_img/vs-alternate-identity/add-alternate-account-my-visual-studio-com-portal.png)
+* 若要使用替代帳戶，與您帳戶建立關聯的訂用帳戶必須包含 Visual Studio Team Services 或 Microsoft Azure。
 
-4. 輸入您的工作或學校帳戶，然後選擇 [新增]。
+> [!Note]
+> 您可以使用替代識別碼繼續使用訂用帳戶權益，不過，您的訂用帳戶仍然會與原始帳戶建立關聯。
 
-  ![輸入您的工作或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+### <a name="add-the-alternate-account"></a>新增替代帳戶
 
-5. 使用您的工作或學校帳戶登入您的 VSTS 帳戶 (```https://{youraccount}.visualstudio.com```)。 資訊傳播可能略有延遲，請在 15 分鐘後再查看一次。 
+1. 使用 Microsoft 帳戶登入 Visual Studio (https://{youraccount}.visualstudio.com)。
+
+2. 前往 [訂用帳戶]。
+
+  ![新增替代帳戶 - 前往 VS 中的訂用帳戶](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+3. 選擇 [Add alternate account (新增其他帳戶)]。
+
+  ![選擇 [Add alternate account (新增其他帳戶)] ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+
+4. 新增公司或學校帳戶。
+
+  ![新增公司或學校帳戶](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+
+5. 使用公司或學校帳戶登入 Visual Studio (https://{youraccount}.visualstudio.com)。
+
+  ![使用公司或學校帳戶](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+
+  您的替代帳戶會新增至 Visual Studio 訂用帳戶，讓兩個身分識別都利用需要您使用替代帳戶 (IDE、VSTS 和 Azure) 登入的訂閱權益。
+
+如需新增替代帳戶的詳細資訊，請參閱[我的 Visual Studio 常見問題集](https://www.visualstudio.com/my/myvsfaq#alternate)頁面。
 
 ## <a name="faq"></a>常見問題集
 
@@ -61,4 +79,3 @@ ms.lasthandoff: 03/22/2018
 * 至少瀏覽一次 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)再登入 VSTS。
 
 如果 VSTS 仍無法辨識您的訂用帳戶，請[連絡支援服務](https://www.visualstudio.com/team-services/support/)
-

@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中建立解決方案和專案 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中建立解決方案和專案 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![方案/專案階層架構](./media/vside-proj-soln.png)
 
-您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例方案 (BikeSharing.Xamarin-UWP) 包含兩個專案：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
+您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例解決方案 (**BikeSharing.Xamarin-UWP**) 包含兩個專案：**BikeSharing.Clients.Core** 和 **BikeSharing.Clients.Windows**。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
 
 ![內含專案的方案總管](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="to-create-a-project-from-a-project-template"></a>從專案範本建立專案
 
-1. 在 Visual Studio 中建立新的專案有多種方式。 在起始頁上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案] > [新增] > [專案]，或選擇工具列上的 [新增專案] 按鈕。
+1. 在 Visual Studio 中建立新的專案有多種方式。 在 [起始頁] 上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案] > [新增] > [專案]，或選擇工具列上的 [新增專案] 按鈕。
 
   ![起始頁](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ ms.lasthandoff: 03/08/2018
 
 1. 選擇 [確定] 按鈕以建立方案和專案。
 
-1. 如果您想要將其他專案新增至方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [加入新項目]。
+1. 如果您想要將其他專案新增至解決方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [新增項目]。
 
 ## <a name="create-a-project-from-existing-code-files"></a>從現有程式碼檔案建立專案
 
@@ -122,7 +119,7 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="delete-a-solution-project-or-item"></a>刪除方案、專案或項目
 
-您可以永久刪除方案及其內容，但不使用 Visual Studio IDE。 刪除 Visual Studio 中的項目只會將這些項目從目前的方案或專案移除。 若要從系統永久刪除方案或其他元件，請使用檔案總管來刪除包含 .sln 和 .suo 方案檔的資料夾。 不過，在永久刪除方案之前，建議您備份任何專案或檔案，以免再次需要。
+您可以永久刪除方案及其內容，但不使用 Visual Studio IDE。 刪除 Visual Studio 中的項目只會將這些項目從目前的方案或專案移除。 若要從系統永久刪除解決方案或其他元件，請使用檔案總管來刪除包含 .sln 和 .suo 解決方案檔案的資料夾。 不過，在永久刪除方案之前，建議您備份任何專案或檔案，以免再次需要。
 
 > [!NOTE]
 > .suo 檔案是隱藏檔案，不會顯示在預設檔案總管設定下。 若要顯示隱藏的檔案，請在檔案總管的 [檢視] 功能表中，選取 [隱藏的項目] 核取方塊。
@@ -139,5 +136,5 @@ ms.lasthandoff: 03/08/2018
 
 [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)  
 [GitHub 上的 Microsoft 開放原始碼存放庫](https://github.com/Microsoft)  
-[Visual Studio 範例](../ide/visual-studio-samples.md)  
+[Visual Studio samples](../ide/visual-studio-samples.md) (Visual Studio 範例)  
 [開發人員程式碼範例](https://code.msdn.microsoft.com/)

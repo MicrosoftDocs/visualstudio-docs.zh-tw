@@ -1,12 +1,10 @@
 ---
-title: "如何：建立和編輯組態 | Microsoft Docs"
-ms.custom: 
+title: 如何：建立和編輯組態 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -18,47 +16,46 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 97d30f421f7c893410e563b89fd7a33fe539f141
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。  
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
 
-## <a name="creating-build-configurations"></a>建立組建組態  
- 您可以使用 [Configuration Manager] 對話方塊來選取或修改現有的組建組態，或是建立新的組建組態。  
+## <a name="create-build-configurations"></a>建立組建組態  
 
-#### <a name="to-open-the-configuration-manager-dialog-box"></a>開啟 [Configuration Manager] 對話方塊  
+您可以使用 [組態管理員] 對話方塊來選取或修改現有的組建組態，或是建立新的組建組態。  
 
--   在方案總管中，開啟方案的捷徑功能表，然後選擇 [Configuration Manager]。  
+若要開發 [組態管理員] 對話方塊，請在**方案總管**中，開啟方案的捷徑功能表，然後選擇 [組態管理員]。  
 
-    > [!NOTE]
-    >  如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具]、[選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案]、[一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
+> [!NOTE]
+> 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具] > [選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案] > [一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
 
-     在 [Configuration Manager] 對話方塊中，您可以使用 [使用中的方案組態] 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台] 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容] 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。  
+在 [Configuration Manager] 對話方塊中，您可以使用 [使用中的方案組態] 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台] 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容] 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。  
 
  設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。  
 
-#### <a name="to-set-properties-based-on-configurations"></a>根據組態來設定屬性  
+### <a name="to-set-properties-based-on-configurations"></a>根據組態來設定屬性  
 
 -   在方案總管中，開啟專案的捷徑功能表，然後選擇 [屬性]。  
 
      [屬性頁] 視窗隨即開啟。  
 
-     您可以設定組態的屬性。 例如，針對發行組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。 如需屬性頁設定的詳細資訊，請參閱[管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)。  
+     您可以設定組態的屬性。 例如，針對版本組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。 如需屬性頁設定的詳細資訊，請參閱[管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)。  
 
-## <a name="creating-and-modifying-project-configurations"></a>建立和修改專案組態  
+## <a name="create-and-modify-project-configurations"></a>建立和修改專案組態  
 
-#### <a name="to-create-a-project-configuration"></a>建立專案組態  
+### <a name="to-create-a-project-configuration"></a>建立專案組態  
 
 1.  開啟 [組態管理員] 對話方塊。  
 
@@ -74,7 +71,7 @@ ms.lasthandoff: 12/22/2017
 
 6.  若要同時建立整個方案的組態，請選取 [建立新方案組態] 核取方塊。  
 
-#### <a name="to-rename-a-project-configuration"></a>重新命名專案組態  
+### <a name="to-rename-a-project-configuration"></a>重新命名專案組態  
 
 1.  開啟 [組態管理員] 對話方塊。  
 
@@ -88,9 +85,9 @@ ms.lasthandoff: 12/22/2017
 
 5.  選取 [重新命名]，然後輸入新名稱。  
 
-## <a name="creating-and-modifying-solution-wide-build-configurations"></a>建立和修改整個方案的組建組態  
+## <a name="create-and-modify-solution-wide-build-configurations"></a>建立和修改整個方案的組建組態  
 
-#### <a name="to-create-a-solution-wide-build-configuration"></a>建立整個方案的組建組態  
+### <a name="to-create-a-solution-wide-build-configuration"></a>建立整個方案的組建組態  
 
 1.  開啟 [組態管理員] 對話方塊。  
 
@@ -104,7 +101,7 @@ ms.lasthandoff: 12/22/2017
 
 5.  如果您想要同時建立專案組態，請選取 [建立新的專案組態] 核取方塊。  
 
-#### <a name="to-rename-a-solution-wide-build-configuration"></a>重新命名整個方案的組建組態  
+### <a name="to-rename-a-solution-wide-build-configuration"></a>重新命名整個方案的組建組態  
 
 1.  開啟 [組態管理員] 對話方塊。  
 
@@ -116,16 +113,16 @@ ms.lasthandoff: 12/22/2017
 
 4.  選取 [重新命名]，然後輸入新名稱。  
 
-#### <a name="to-modify-a-solution-wide-build-configuration"></a>修改整個方案的組建組態  
+### <a name="to-modify-a-solution-wide-build-configuration"></a>修改整個方案的組建組態  
 
 1.  開啟 [組態管理員] 對話方塊。  
 
 2.  在 [使用中的方案組態] 下拉式清單中，選取您想要的組態。  
 
-3.  在 [專案內容] 窗格中，針對每個專案選取您要的 [組態] 和 [平台]，然後選取是否要 [建置] 它，以及是否要 [部署] 它。  
+3.  在 [專案內容] 窗格中，針對每個專案選取您要的 [組態] 和 [平台]，然後選取是否要 [建置] 它，以及是否要 [部署] 它。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [管理專案和方案屬性](managing-project-and-solution-properties.md)
+ [管理專案及解決方案屬性](managing-project-and-solution-properties.md)
 

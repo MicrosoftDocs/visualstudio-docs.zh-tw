@@ -1,26 +1,23 @@
 ---
-title: "建立 Visual Studio 的項目範本 | Microsoft Docs"
-ms.custom: 
+title: 建立 Visual Studio 的項目範本 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+manager: douge
+ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 
-本主題會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
+本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>將使用者項目範本新增至 [新增項目] 對話方塊
 
@@ -40,23 +37,23 @@ ms.lasthandoff: 01/12/2018
 
 1. 在 [選取範本選項] 頁面上，輸入範本名稱和選擇性描述、圖示影像和預覽影像，然後選擇 [完成]。
 
-    範本檔案會新增至 .zip 檔案，並複製到您在精靈中指定的目錄。 預設位置是 %USERPROFILE%\Documents\Visual Studio \<版本\>\My Exported Templates。
+    範本檔案會新增至 *.zip* 檔案，並複製到您在精靈中指定的目錄。 預設位置是 *%USERPROFILE%\Documents\Visual Studio \<版本\>\My Exported Templates*。
 
-1. 如未在 [匯出範本精靈] 中選取 [自動將範本匯入 Visual Studio] 選項，請找到匯出的範本，將它複製到使用者項目範本目錄。 預設位置是 %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates。
+1. 如果您未在 [匯出範本精靈] 中選取 [自動將範本匯入 Visual Studio] 選項，請尋找匯出的範本。 然後，將它複製到使用者項目範本目錄。 預設位置是 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 建立新的專案或開啟現有的專案，然後選擇 [專案] > [新增項目] 或按 **Ctrl** + **Shift** + **A**。
+1. 建立新的專案或開啟現有的專案，然後選擇 [專案] > [新增項目] 或按 **Ctrl**+**Shift**+**A**。
 
    項目範本會出現在 [新增項目] 對話方塊中。 如已在 [匯出範本精靈] 中新增描述，該描述會出現在對話方塊的右邊。
 
 ## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>讓項目範本能在通用 Windows 應用程式專案中使用
 
-此精靈為建立基本範本執行許多工作，但在許多情況下，您需要在匯出範本之後手動修改 .vstemplate 檔案。 例如，如果您希望項目出現在通用 Windows 應用程式專案的 [新增項目] 對話方塊中，您必須執行一些額外的步驟。
+此精靈為建立基本範本執行許多工作，但在許多情況下，您需要在匯出範本之後手動修改 *.vstemplate* 檔案。 例如，如果您希望項目出現在通用 Windows 應用程式專案的 [新增項目] 對話方塊中，您必須執行一些額外的步驟。
 
 1. 遵循上一節中的步驟匯出項目範本。
 
-1. 解壓縮已建立的 .zip 檔案，在 Visual Studio 中開啟 .vstemplate 檔案。
+1. 解壓縮已建立的 *.zip* 檔案，在 Visual Studio 中開啟 *.vstemplate* 檔案。
 
 1. 若為 C# 通用 Windows 專案，請在 `<TemplateData>` 項目內新增下列 XML：
 
@@ -64,9 +61,9 @@ ms.lasthandoff: 01/12/2018
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
 
-1. 在 Visual Studio 中，儲存並關閉 .vstemplate 檔案。
+1. 在 Visual Studio 中，儲存並關閉 *.vstemplate* 檔案。
 
-1. 複製 .vstemplate 檔案，並貼回至 .zip 檔案。
+1. 複製 *.vstemplate* 檔案，並貼回至 *.zip* 檔案。
 
      如果出現 [複製檔案] 對話方塊，請選擇 [複製並取代] 選項。
 
@@ -76,9 +73,9 @@ ms.lasthandoff: 01/12/2018
 
 您可以指定範本只針對特定的專案子類型顯示，例如 Windows、Office、資料庫或 Web。
 
-1. 在項目範本的.vstemplate 檔案中，找出 ProjectType 項目。
+1. 在項目範本的 *.vstemplate* 檔案中，尋找 `ProjectType` 項目。
 
-1. 緊接著 ProjectType 項目之後加入 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 項目。
+1. 緊接在 `ProjectType` 項目之後新增 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 項目。
 
 1. 將項目的文字值設為下列其中一個值：
 
@@ -107,7 +104,7 @@ ms.lasthandoff: 01/12/2018
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>手動建立項目範本但不使用 [匯出範本精靈]
+## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>若要手動建立項目範本而不使用 [匯出範本] 精靈
 
 在某些情況下，您可能想要從頭開始手動建立項目範本。
 
@@ -115,20 +112,20 @@ ms.lasthandoff: 01/12/2018
 
 1. 修改專案項目，直到它準備好儲存成範本。
 
-1. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[操作說明：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
-1. 在與專案項目檔案相同的目錄中，使用 .vstemplate 檔案副檔名來建立並儲存 XML 檔案。
+1. 在與專案項目檔案相同的目錄中，使用 *.vstemplate* 檔案副檔名來建立並儲存 XML 檔案。
 
-1. 編輯 .vstemplate XML 檔案，以提供項目範本中繼資料。 如需詳細資訊，請參閱[範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md) 和上一節中的範例。
+1. 編輯 *.vstemplate* XML 檔案，以提供項目範本中繼資料。 如需詳細資訊，請參閱[範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md) 和上一節中的範例。
 
-1. 儲存並關閉 .vstemplate 檔案。
+1. 儲存並關閉 *.vstemplate* 檔案。
 
-1. 在 Windows 的檔案總管中，選取您要併入範本中的檔案，以滑鼠右鍵按一下選項，選擇 [Send to] (傳送至) > [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 .zip 檔。
+1. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選項，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 複製 .zip 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 如需詳細資訊，請參閱[如何：尋找並整理專案範本和項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄是 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理專案範本和項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-[建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
+[建立專案與項目範本](../ide/creating-project-and-item-templates.md)  
 [如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)  
 [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)

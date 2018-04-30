@@ -1,22 +1,23 @@
 ---
-title: Visual Studio 中的 C++ 使用者入門 | Microsoft Docs
+title: Visual Studio 中的 C++ 使用者入門
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -76,7 +77,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
    ![[錯誤清單] 視窗中的錯誤](../ide/media/get-started-cpp-error-list.png "[錯誤清單] 視窗中的錯誤")
 
-   您的程式碼遺失 [std::cout](/cpp/standard-library/iostream) 的宣告，其位在 \<iostream> 標頭檔中。
+   您的程式碼遺失 [std::cout](/cpp/standard-library/iostream) 的宣告，其位在 *\<iostream>* 標頭檔中。
 
 1. 若要包含 iostream 標頭，請在 `#include "stdafx.h"` 後面輸入下列程式碼：
 
@@ -85,7 +86,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
    using namespace std;
    ```
 
-   您可能會注意到在您輸入程式碼時會出現一個方塊。 此方塊包含您所輸入字元的自動完成建議。 它是 C++ IntelliSense 的一部分，可提供編碼提示，包含類別或介面成員和參數資訊。 您也可以使用程式碼片段，也就是預先定義的程式碼區塊。 如需詳細資訊，請參閱 [Using IntelliSense](../ide/using-intellisense.md) 與 [Code Snippets](../ide/code-snippets.md)。
+   您可能會注意到在您輸入程式碼時會出現一個方塊。 此方塊包含您所輸入字元的自動完成建議。 它是 C++ IntelliSense 的一部分，可提供編碼提示，包含類別或介面成員和參數資訊。 您也可以使用程式碼片段，也就是預先定義的程式碼區塊。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md) 和[程式碼片段](../ide/code-snippets.md)。
 
    ![編輯器中的已修正程式碼](../ide/media/get-started-cpp-cout-fix.png "編輯器中的已修正程式碼")
 
@@ -105,11 +106,11 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ### <a name="to-debug-the-app"></a>偵錯應用程式
 
-1. 若要啟動偵錯工具，請選擇功能表列上的 [偵錯] > [開始偵錯]。
+若要啟動偵錯工具，請選擇功能表列上的 [偵錯] > [開始偵錯]。
 
-   ![偵錯 功能表上的 [開始偵錯] 命令](../ide/media/get-started-cpp-start-debugging-menu.png "偵錯 功能表上的 [開始偵錯] 命令")
+![偵錯 功能表上的 [開始偵錯] 命令](../ide/media/get-started-cpp-start-debugging-menu.png "偵錯 功能表上的 [開始偵錯] 命令")
 
-   偵錯工具會啟動並執行程式碼。 主控台視窗 (外觀類似命令提示字元的另一個視窗) 會出現幾秒鐘，並在偵錯工具停止執行時快速關閉。 若要查看文字，則必須設定中斷點以停止程式執行。
+偵錯工具會啟動並執行程式碼。 主控台視窗 (外觀類似命令提示字元的另一個視窗) 會出現幾秒鐘，並在偵錯工具停止執行時快速關閉。 若要查看文字，則必須設定中斷點以停止程式執行。
 
 ### <a name="to-add-a-breakpoint"></a>若要加入中斷點
 
@@ -153,8 +154,8 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[使用 Visual Studio 提高產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
-[Visual Studio 範例](../ide/visual-studio-samples.md)  
-[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)
+- [使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [使用 Visual Studio 提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio samples](../ide/visual-studio-samples.md) (Visual Studio 範例)
+- [Visual Studio Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)

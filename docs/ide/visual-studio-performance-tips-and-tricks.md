@@ -1,33 +1,26 @@
 ---
-title: "Visual Studio 效能祕訣和訣竅 | Microsoft Docs"
+title: Visual Studio 效能祕訣和訣竅 | Microsoft Docs
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
 Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發生。 在這些情況下，您可以最佳化可能不會使用的特定 Visual Studio 功能。 下列祕訣不適合作為一般建議。
 
 > [!NOTE]
-> 如果您在使用產品時因記憶體問題而發生困難，請透過意見反應工具讓我們知道。
+> 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)讓我們知道。
 
 ## <a name="optimize-your-environment"></a>將您的環境最佳化
 
@@ -86,7 +79,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
 ### <a name="managed-language-services-roslyn"></a>Managed 語言服務 (Roslyn)
 
-如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱 [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions) (大型解決方案的效能考量)。
+如需 .NET Compiler Platform ("Roslyn") 效能考量的資訊，請參閱[大型解決方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
 
 - **停用完整解決方案分析**
 
@@ -108,7 +101,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
     延伸模組是新增至 Visual Studio 的額外軟體元件，可提供新功能或延伸現有功能。 延伸模組通常可能是記憶體資源問題的來源。 如果您遇到記憶體資源問題，請嘗試一次停用一個延伸模組，以查看它對案例或工作流程的影響。
 
-    若要停用延伸模組，請移至 [工具] | [延伸模組和更新]，然後停用特定延伸模組。
+    若要停用延伸模組，請移至 [工具] > [延伸模組和更新]，然後停用特定延伸模組。
 
 - **停用 XAML 設計工具**
 
@@ -128,8 +121,9 @@ CLR 使用記憶體回收記憶體管理系統。 在此系統中，有時不再
 
 如果可靠地強制執行記憶體回收可讓您的案例運作，請透過 Visual Studio 意見反應工具提出報表，因為這種行為可能是 Bug。
 
-如需 CLR 記憶體回收行程的詳細描述，請參閱 [Fundamental of Garbage Collection](/dotnet/standard/garbage-collection/fundamentals) (記憶體回收基礎)。
+如需 CLR 記憶體回收行程的詳細描述，請參閱[記憶體回收的基本概念](/dotnet/standard/garbage-collection/fundamentals)。
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [最佳化 Visual Studio 效能](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

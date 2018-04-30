@@ -1,53 +1,24 @@
 ---
-title: "Visual Studio 訂用帳戶的 Visual Studio IDE 權益 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/9/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to download and install the Visual Studio IDE included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: c1c7aba590d11e532b471c274e976faa21972cca
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 訂用帳戶的 Visual Studio IDE 權益 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/09/2018
+ms.topic: Get-Started-Article
+description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 678da5c2727e69e3a9f4da7c8f692f082c485e8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 權益
 
-## <a name="overview"></a>總覽 
+身為 Visual Studio 訂閱者，您可以存取 Visual Studio IDE。  特定版本將取決於您的訂用帳戶層級。  權益會以磚形式顯示在訂閱者入口網站之[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面的 [工具] 分類中   
 
-身為 Visual Studio 訂閱者，您可以存取 Visual Studio IDE。  特定版本將取決於您的訂用帳戶層級。  權益會以磚形式顯示在訂閱者入口網站之[權益](https://my.visualstudio.com/benefits)頁面的 [工具] 分類中   
-
-## <a name="eligibility"></a>資格
-| 訂用帳戶等級/方案                                                  | 優勢                            | 可續約？                                |
-|-------------------------------------------------------------------------------|------------------------------------|-------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Enterprise 年度                                               | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Enterprise 每月                                              | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Professional Standard                                           | Visual Studio Professional         | [是]                                       |
-| Visual Studio Professional 年度                                             | Visual Studio Professional         | [是]                                       | 
-| Visual Studio Professional 每月                                            | Visual Studio Professional         | [是]                                       |
-| Visual Studio Test Pro                                                        | Visual Studio Test Professional    | [是]                                       |
-| MSDN 平台                                                                | 無法使用                      |                                           |
-| Visual Studio Dev Essentials                                                  | Visual Studio Community            | [是]                                       |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               |Visual Studio 企業版           | [是]                                       |
-| Visual Studio Enterprise - FTE                                                | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Enterprise - Microsoft 合作夥伴網路                          | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Professional - Microsoft 合作夥伴網路                        | Visual Studio Professional         | [是]                                       |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Visual Studio Professional         | [是]                                       |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Visual Studio 企業版           | [是]                                       |
-| Visual Studio Enterprise – BizSpark                                           | Visual Studio 企業版           | [是]                                       |
-| Microsoft 合格訓練人員 - 軟體與服務                             | 無法使用                      |                                           |
-| Microsoft 合格訓練人員 - 軟體與服務開發人員                   | Visual Studio 企業版           | [是]                                       |
-
-<sup>1</sup>  *包括「禁止轉售」(NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*  
-
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
-
-(在此範例中，將使用 Visual Studio Enterprise。) 
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -85,8 +56,20 @@ ms.lasthandoff: 01/29/2018
 
     ![開始使用 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
-## <a name="faq"></a>常見問題集
-到這裡查看是否有更新
+## <a name="eligibility"></a>資格
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
+| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  [是]         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
+| Visual Studio Dev Essentials | N/A  | Visual Studio Community |[是] |
+
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。排除：MCT Software & Services。*
+
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+
 
 ## <a name="support-resources"></a>支援資源
 -  如需 Visual Studio IDE 的說明，請查看這些資源：

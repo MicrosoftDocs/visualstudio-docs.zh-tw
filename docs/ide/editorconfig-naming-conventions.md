@@ -1,28 +1,26 @@
 ---
-title: "EditorConfig 的 .NET 命名慣例 | Microsoft Docs"
-ms.custom: 
+title: EditorConfig 的 .NET 命名慣例 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
-命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在錯誤清單或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
+命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
 在 .editorconfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。
 
@@ -147,15 +145,15 @@ ms.lasthandoff: 03/02/2018
 ------------ | -------------
 無或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
-warning | 當未遵循此樣式時，在錯誤清單中顯示編譯器警告。
-個錯誤 | 當未遵循此樣式時，在錯誤清單中顯示編譯器錯誤。
+warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告。
+個錯誤 | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
 
 > [!NOTE]
-> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在錯誤清單中 (或作為建議)，以編輯過後的程式碼方式呈現。
+> 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單] 中 (或作為建議)，以編輯過後的程式碼方式呈現。
 
 ## <a name="example"></a>範例
 
-下列 .editorconfig 檔案包含的命名慣例，指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
+下列 .editorconfig 檔案所包含的命名慣例指定公用屬性、方法、欄位、事件及委派必須為大寫。 請注意，此命名慣例指定了多種要套用規則的符號類型，並使用逗號分隔值。
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-下列螢幕擷取畫面顯示了在編輯器中套用此命名慣例後的效果。 兩個公用變數在沒有將第一個字母以大寫方式呈現的情況下命名。 其中一個是 `const`，另一個則是 `readonly`。 由於命名規則僅適用於 *readonly* 符號，因此只有 `readonly` 變數才會顯示命名規則建議。
+下列螢幕擷取畫面顯示在編輯器中套用此命名慣例後的效果。 兩個公用變數在沒有將第一個字母以大寫方式呈現的情況下命名。 其中一個是 `const`，另一個則是 `readonly`。 因為命名規則僅適用於 `readonly` 符號，所有只有 `readonly` 變數才會顯示命名規則建議。
 
 ![命名規則建議](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-若您關閉並重新開啟您的程式碼檔，則相較於之前於名稱違規下方可看見建議的情況，您現在會在錯誤清單中看見彎曲的綠色警告：
+如果您關閉並重新開啟程式碼檔，則相較於之前於名稱違規下方可看見建議的情況，您現在會在 [錯誤清單] 中看見彎曲的綠色警告：
 
 ![命名規則警告](media/editorconfig-naming-rule-warning.png)
 

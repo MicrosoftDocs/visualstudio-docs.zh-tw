@@ -1,12 +1,9 @@
 ---
-title: "檔案中尋找 | Microsoft Docs"
-ms.custom: 
+title: 檔案中尋找
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-in-files"></a>檔案中尋找
 
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="to-display-find-in-files"></a>顯示檔案中尋找
 
-1. 在功能表列上，依序選擇 [編輯] 和 [尋找和取代]。
+1. 在功能表列上，選擇 [編輯] > [尋找和取代]。
 
 1. 選擇 [檔案中尋找]。
 
@@ -71,16 +69,20 @@ ms.lasthandoff: 12/22/2017
 
 您可以展開或摺疊 [尋找選項] 區段。 可選取或清除下列選項：
 
-大小寫須相符  
+**大小寫須相符**
+
 選取時，[尋找結果] 搜尋會區分大小寫
 
-全字拼寫須相符  
+**全字拼寫須相符**
+
 選取時，[尋找結果] 視窗只會傳回全字拼寫相符的項目。
 
-使用規則運算式  
+**使用規則運算式**
+
 如果已選取此核取方塊，您可以使用特殊標記法來定義文字模式，以在 [尋找目標] 或 [取代為] 文字方塊中進行比對。 如需這些標記法的清單，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-尋找下列檔案類型  
+**尋找下列檔案類型**
+
 這個清單可指定要在 [查詢] 目錄中搜尋的檔案類型。 如果此欄位空白，則會搜尋 [查詢] 目錄中的所有檔案。
 
 選取此清單中的任一項目，即可輸入預先設定的搜尋字串，以尋找特定類型的檔案。
@@ -89,20 +91,24 @@ ms.lasthandoff: 12/22/2017
 
 您可以展開或摺疊 [結果選項] 區段。 可選取或清除下列選項：
 
-尋找結果 1 視窗  
+**尋找結果 1 視窗**
+
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 1] 視窗的內容。 這個視窗會自動開啟以顯示搜尋結果。 若要手動開啟此視窗，請從 [檢視] 功能表中選取 [其他視窗]，並選擇 [尋找結果 1]。
 
-尋找結果 2 視窗  
+**尋找結果 2 視窗**
+
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 2] 視窗的內容。 這個視窗會自動開啟以顯示搜尋結果。 若要手動開啟此視窗，請從 [檢視] 功能表中選取 [其他視窗]，並選擇 [尋找結果 2]。
 
-只顯示檔名  
+**只顯示檔名**
+
 顯示含有符合搜尋內容的檔案清單，而非顯示搜尋符合項目本身。
 
-附加結果  
+**附加結果**
+
 將此搜尋結果附加到上一個搜尋結果。
 
 ## <a name="see-also"></a>另請參閱
 
-[尋找和取代文字](../ide/finding-and-replacing-text.md)  
-[檔案中取代](../ide/replace-in-files.md)  
-[Visual Studio 命令](../ide/reference/visual-studio-commands.md)
+- [尋找和取代文字](../ide/finding-and-replacing-text.md)
+- [檔案中取代](../ide/replace-in-files.md)
+- [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

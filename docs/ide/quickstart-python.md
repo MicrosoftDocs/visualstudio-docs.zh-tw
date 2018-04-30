@@ -1,13 +1,10 @@
 ---
-title: 快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式 | Microsoft Docs
+title: 快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 description: 在此快速入門中，您會使用 Visual Studio 在使用 Flask 架構的 Python 中建立簡單 Web 應用程式。
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -67,7 +64,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
     ![顯示預設環境的方案總管](media/quickstart-python-02-default-environment.png)
 
-1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件]。此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。
+1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件...]。此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。
 
 1. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI] \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，如 `c:\program files` 時，就會提示提高權限。)
 
@@ -82,15 +79,15 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解其他可用的 Python 套件？**
 
-**解答**：瀏覽 [Python 套件索引](https://pypi.python.org/pypi) (pypi.python.org) \(英文\)。
+**解答**：瀏覽 [Python 套件索引](https://pypi.org/) (pypi.org)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
 您現在準備好可新增一些 Python 程式碼來實作基本的 Web 應用程式。
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後依序選取 [新增] > [新增項目]。
+1. 在**方案總管**中，以滑鼠右鍵按一下專案，然後依序選取 [新增] > [新增項目]。
 
-1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將它命名為 `app.py`，然後選擇 [新增]。 Visual Studio 會自動在編輯器視窗中開啟檔案。
+1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將其命名為 `app.py`，然後選擇 [新增]。 Visual Studio 會自動在編輯器視窗中開啟檔案。
 
 1. 將下列程式碼複製並貼入 `app.py`：
 
@@ -121,11 +118,11 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解 Flask？**
 
-**解答**：請參閱 Flask 文件，從 [Flask 快速入門](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org) \(英文\) 開始。
+**解答**：請參閱 Flask 文件，從 [Flask 快速入門](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org) \(英文\) 開始。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 以滑鼠右鍵按一下 [方案總管] 中的 `app.py`，並選取 [設定為啟動檔案]。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
+1. 以滑鼠右鍵按一下**方案總管**中的 `app.py`，並選取 [設定為啟動檔案]。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
 
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file.png)
 

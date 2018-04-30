@@ -1,19 +1,19 @@
 ---
 title: 適合 CSP 購買的 Visual Studio 雲端訂閱
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 
@@ -78,13 +78,13 @@ ms.lasthandoff: 03/22/2018
 我們為您購買的每個 Visual Studio 訂閱，每月從第 6 個單位起提供 5% 折扣 (適用於特定客戶)。 這就是每個訂閱選項您會看到兩列資料列的原因。 一個資料列顯示「最小值」為 0，這個應該解讀為 1 至 5 個單位的基本價格。 另一個資料列顯示「最小值」為 5，這是適用於從 6 個單位起的 5% 折扣價格。
 
 
-## <a name="faq"></a>常見問題集
+## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：雲端訂閱的**月租方案**如何收費？
 答：第一期帳單中，我們會依當月的剩餘天數按 比例分配數量。 例如，如果在 4 月 15 日購買了 10 個 Visual Studio Professional 雲端訂閱的月租方案，我們會收取 5 單位的費用，因為 4 月有 30 天，還剩下 15 天；或收取 50% 的費用，然後將 50% 按比例分配到收費的單位。 自 5 月 1 日起至您取消前的每個月，會依完整的 10 個單位計費。
 
 稍後當您增加付費數量時，我們也會將增加的單位按比例分配至當月的剩餘天數。 因此，如果您在 5 月 10 日購買 1 個以上的 Visual Studio Professional 雲端訂閱月租方案，我們大約收取 0.677 個單位的費用 (5 月有 31 天，還有 21 天)。 
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>問：雲端訂用帳戶的**年度訂閱**如何收費？
+### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>問：雲端訂閱的**年度訂閱**如何收費？
 答：每單購買都是立即按購買的完整數量計價。 費用不會分散到一整年，也不會按比例分配。 如果您在一年的不同時間分次購買年度的雲端訂閱，您必須在不同的月份續約訂閱。 我們不會將客戶所有的年度雲端訂閱連在一起，雖然這在 Microsoft 大量授權合約購買中很常見。
 
 ### <a name="q-how-do-cancelations-work"></a>問：取消如何運作？
@@ -96,7 +96,7 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>問：Visual Studio 訂閱有哪些大量採購折扣？
 
-答：「每種類型」的訂用帳戶，自第 6 個開始，所有後續訂用帳戶都會獲得 5% 的折扣：
+答：「每種類型」的訂閱，自第 6 個開始，所有後續訂閱都會獲得 5% 的折扣：
 
 * Visual Studio Professional 每月
 * Visual Studio Professional 年度

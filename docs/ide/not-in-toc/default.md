@@ -1,18 +1,20 @@
 ---
-title: "Visual Studio 中 F1 的預設頁面 | Microsoft Docs"
+title: Visual Studio 中 F1 的預設頁面 | Microsoft Docs
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: ghogen
+manager: douge
+author: gewarren
+ms.author: gewarren
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2d5b027041e9b5ff31126af5e44e22415240ea55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # F1 說明
 
@@ -20,7 +22,7 @@ ms.lasthandoff: 02/28/2018
 
 ## 資料指標位置
 
-如果您在尋找鍵盤或 API 名稱的 F1 說明，按下 **F1**之前，請務必確認游標位在文字內或在文字的開頭。 如果仍然無效，請從 [實用連結](#useful-links) 清單上選取，或在 https://docs.microsoft.com 上搜尋。
+如果您在尋找鍵盤或 API 名稱的 F1 說明，按下 **F1**之前，請務必確認游標位在文字內或在文字的開頭。 如果仍然無效，請從[實用連結](#useful-links)清單中進行選取，或在 https://docs.microsoft.com 上執行搜尋。
 
 ## 實用連結
 

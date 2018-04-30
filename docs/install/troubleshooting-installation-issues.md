@@ -1,43 +1,45 @@
 ---
-title: 針對安裝問題進行疑難排解 | Microsoft Docs
+title: 針對安裝問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
 ms.date: 11/21/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
+ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c86d4e3b28f32678c745ca7fd479881c43b18
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
 ## <a name="symptoms"></a>徵兆
+
 當您嘗試安裝或更新 Visual Studio 2017 時，作業會失敗。
 
 ## <a name="workaround"></a>因應措施
+
 若要暫時解決此問題，請依照這些步驟執行。
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>步驟 1 - 查看此問題是否為已知問題
+
 Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正。 若要查看是否有您問題的因應措施，請參閱[版本資訊的＜已知問題＞一節](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues)。
 
 ### <a name="step-2---check-with-the-developer-community"></a>步驟 2 - 查看開發人員社群
+
 在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方案。
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 3 - 刪除 Visual Studio 安裝程式目錄，以修正升級問題
+
 Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可安裝 Visual Studio 安裝程式的其餘部分。 刪除 Visual Studio 安裝程式檔案，然後重新執行啟動載入器，可能可以解決一些更新失敗問題。
 
 >[!NOTE]
@@ -49,6 +51,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ### <a name="step-4---report-a-problem"></a>步驟 4 - 回報問題
+
 在某些情況下 (例如與損毀的檔案相關的問題)，則必須逐一查看問題：
 
 1. 收集您的安裝記錄檔。 如需詳細資訊，請參閱[如何取得 Visual Studio 安裝記錄檔](#how-to-get-the-visual-studio-installation-logs)。
@@ -58,6 +61,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 4. 按一下 [下一步] 以檢閱您的問題報告，然後按一下 [提交]。
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>步驟 5 - 執行 InstallCleanup.exe 以移除安裝檔案
+
 非不得已，您可以[移除 Visual Studio](remove-visual-studio.md)來移除所有安裝檔案和產品資訊。
 
 1. 請遵循[移除 Visual Studio](remove-visual-studio.md) 中的指示進行。
@@ -65,9 +69,11 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 3. 嘗試重新安裝或更新 Visual Studio。
 
 ### <a name="step-6---contact-us-optional"></a>步驟 6 - 與我們連絡 (選擇性)
+
 如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>如何針對離線安裝程式進行疑難排解
+
 下表是從本機配置進行安裝時的已知問題，及一些可能有幫助的因應措施。
 
 | 問題       | 項目                   | 方案 |
@@ -76,6 +82,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 | 無法安裝新的工作負載、元件或語言。  | `--layout`  | 如果是以部分配置來安裝，並選取該部分配置中先前未下載的工作負載、元件或語言，請確定可以存取網際網路。 |
 
 ## <a name="how-to-get-the-visual-studio-installation-logs"></a>如何取得 Visual Studio 安裝記錄檔
+
 針對大部分安裝問題進行疑難排解時，將會需要安裝記錄檔。 使用 Visual Studio 安裝程式中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)來提交問題時，會自動將這些記錄檔包含在報告中。
 
 當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://aka.ms/vscollect) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集 Visual Studio 2017 所安裝全部元件的安裝記錄檔，包括 .NET Framework、Windows SDK，以及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
@@ -95,12 +102,14 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 如果其他步驟都無法讓您成功安裝，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資料，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous)。
 
 以下是一些選項：
+
 * 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
 * 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
-* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
-* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這需要 [GitHub](https://github.com/) 帳戶)。
+* 您可以追蹤產品問題並在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中尋找解答。
+* 您也可以透過[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動。 (這需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>另請參閱
+
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
 * [移除 Visual Studio 2017](remove-visual-studio.md)

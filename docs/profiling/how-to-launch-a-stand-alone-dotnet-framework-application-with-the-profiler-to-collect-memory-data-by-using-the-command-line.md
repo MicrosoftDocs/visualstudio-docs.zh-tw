@@ -1,37 +1,20 @@
 ---
-title: "如何：使用命令列以程式碼剖析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs"
-ms.custom: 
+title: 如何：使用命令列以程式碼剖析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
-caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 456e8fff1b4e484648c1e30a9b588a4f5923fc91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。  
@@ -66,7 +49,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
     |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。|  
@@ -77,7 +60,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
     -   要收集 .NET Framework 記憶體資料，必須使用 [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword`選項。 關鍵字參數指定要收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
   
-        |關鍵字|說明|  
+        |關鍵字|描述|  
         |-------------|-----------------|  
         |**allocation**|僅收集記憶體配置資料。|  
         |**lifetime**|收集記憶體配置和物件存留期資料。|  
@@ -98,7 +81,7 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
 -   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
@@ -119,15 +102,10 @@ ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
   
     -   輸入 **VSPerfCmd /detach**  
   
-2.  關閉程式碼剖析工具。 類型：  
+2.  關閉分析工具。 類型：  
   
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

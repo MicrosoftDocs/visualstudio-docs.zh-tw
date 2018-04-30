@@ -1,12 +1,9 @@
 ---
-title: "在 Visual Studio 中安裝自訂起始頁或變更起始項目 | Microsoft Docs"
-ms.custom: 
+title: 在 Visual Studio 中安裝自訂起始頁或變更起始項目 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc22bd23b5b245173321ed3a12379c6fe5622af
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9863fdfbfb73e49d0539ba1060f1e1c56888599c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 
@@ -30,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 
 ## <a name="to-change-the-startup-item"></a>變更啟動項目
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具] > [選項]。
 
 1. 展開 [環境]，然後選擇 [啟動]。
 
@@ -40,11 +37,11 @@ ms.lasthandoff: 02/09/2018
 
 您可以使用 Visual Studio SDK [建立您自己的自訂起始頁](../extensibility/creating-a-custom-start-page.md)，或使用其他人已經建立的自訂起始頁。 例如，您可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads) \(英文\) 找到自訂起始頁。
 
-若要安裝自訂起始頁，請開啟 .vsix 檔案，或複製起始頁檔案並貼到電腦上的 **%USERPROFILE%\Documents\Visual Studio 2017\StartPages** 資料夾中。
+若要安裝自訂起始頁，請開啟 .vsix 檔案，或複製起始頁檔案並貼到電腦上的 *%USERPROFILE%\Documents\Visual Studio 2017\StartPages* 資料夾中。
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>選取要顯示的自訂起始頁
 
-1. 在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具] > [選項]。
 
 1. 展開 [環境]，然後選擇 [啟動]。
 

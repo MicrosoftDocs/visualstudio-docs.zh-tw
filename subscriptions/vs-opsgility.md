@@ -1,50 +1,23 @@
 ---
-title: "Visual Studio 訂用帳戶的 Opsgility 權益 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn the Opsgility training benefit included with sekected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: cdaab75e85f1a628a5db29feec780f7c1d2a8db9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 訂用帳戶的 Opsgility 權益 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: 了解所選取 Visual Studio 訂用帳戶所含的 Opsgility 訓練課程權益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Opsgility 權益
 
-## <a name="overview"></a>總覽
 選取的 Visual Studio 訂用帳戶包含隨選訓練課程一年存取權、講師指導訓練 85 折優惠，另外還能存取實作實驗室、認證途徑等。  
-
-## <a name="eligibility"></a>資格
-| 訂用帳戶等級/方案                                                  | 優勢               | 可續約？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 12 個月             |  否                                                                |
-| Visual Studio Enterprise 年度                                               | 12 個月             |  否                                                                |
-| Visual Studio Enterprise 每月                                              | 無法使用         |                                                                    |
-| Visual Studio Professional Standard                                           | 6 個月              |  否                                                                |
-| Visual Studio Professional 年度                                             | 6 個月              |  否                                                                | 
-| Visual Studio Professional 每月                                            | 無法使用         |                                                                    |
-| Visual Studio Test Pro                                                        | 6 個月              |  否                                                                |
-| MSDN 平台                                                                | 6 個月              |  否                                                                |
-| Visual Studio Dev Essentials                                                  | 3 個月              |  否                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 無法使用         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | 無法使用         |                                                                    |
-| Visual Studio Enterprise - Microsoft 合作夥伴網路                          | 無法使用         |                                                                    |
-| Visual Studio Professional - Microsoft 合作夥伴網路                        | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | 無法使用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 無法使用         |                                                                    |
-| Microsoft 合格訓練人員 - 軟體與服務                             | 無法使用         |                                                                    |
-| Microsoft 合格訓練人員 - 軟體與服務開發人員                   | 無法使用         |                                                                    |
-
-<sup>1</sup>  *包括「禁止轉售」(NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*  
-
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="activation-steps"></a>啟用步驟
 1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
@@ -64,8 +37,19 @@ ms.lasthandoff: 01/29/2018
 
     ![Opsgility 權益首頁](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
-## <a name="faq"></a>常見問題集
-到這裡查看是否有更新
+## <a name="eligibility"></a>資格
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售 | 12 個月       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 6 個月                                                            |否。  僅提供給新訂閱者使用         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 6 個月                                             |  否。  僅提供給新訂閱者使用         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 6 個月                                              | 否。  僅提供給新訂閱者使用         |
+| Visual Studio Dev Essentials | NA  | 3 個月 |否。  僅提供給新訂閱者使用 |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+
+*排除：Microsoft Partner Network (MPN)、Microsoft Valued Partner (MVP)、Microsoft Certified Trainer、BizSpark、Imagine、NFR、FTE*
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="support-resources"></a>支援資源
 -  需要 Opsgility 的說明嗎？  請參閱這些資源：

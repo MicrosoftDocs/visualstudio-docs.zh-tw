@@ -1,11 +1,8 @@
 ---
-title: "一般、文字編輯器、選項 | Microsoft Docs"
+title: 一般、文字編輯器、選項 | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -48,58 +45,71 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccc9628b5757f1ab4533b084736602274d8c92
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d215503d182078196337e6ad1110e41b0e888865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
-此對話方塊可讓您變更 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後按一下 [一般]。  
-  
+
+此對話方塊可讓您變更 Visual Studio 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請選取 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後選取 [一般]。
+
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
-  
-## <a name="settings"></a>設定  
- 拖放式文字編輯  
- 選取時，您可使用滑鼠將文字拖曳到目前文件或任何其他開啟文件內的其他位置，藉此移動文字。  
-  
- 自動分隔符號反白顯示  
- 選取時，會反白顯示用來分隔參數或項目值組的分隔符號字元，以及成對大括弧。  
-  
- 追蹤變更  
- 選取程式碼編輯器時，選取範圍邊界會出現黃色垂直線，以標示最近儲存檔案之後有所變更的程式碼。 當您儲存變更時，垂直線會變成綠色。  
-  
- 自動偵測無簽章 UTF-8 編碼  
- 根據預設，編輯器會搜尋位元組順序標記或字元集標籤以偵測編碼方式。 如果目前文件中找不到編碼方式，程式碼編輯器就會嘗試掃描位元組序列以自動偵測 UTF-8 編碼。 若要停用自動偵測編碼，請清除此選項。  
-  
-## <a name="display"></a>顯示器  
- 選取範圍邊界  
- 選取時，編輯器文字區域的左邊緣處會顯示垂直邊界。 您可以按一下此邊界來選取整行文字，或按一下並拖曳以選取連續文字行。  
-  
-|選取範圍邊界起點|選取範圍邊界終點|  
-|-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn 螢幕擷取畫面](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff 螢幕擷取畫面](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
-  
- 指示區邊界  
- 選取時，編輯器文字區域的左邊緣外圍會顯示垂直邊界。 當您按一下此邊界時，會顯示文字相關的圖示和工具提示。 比方說，指示區邊界會出現中斷點或工作清單捷徑。 列印時不會印出指示區邊界的資訊。  
-  
- 垂直捲軸  
- 選取時，會顯示垂直捲軸；您可以上下捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示垂直捲軸，您可以使用 Page Up、Page Down 鍵和方向鍵來捲動。  
-  
- 水平捲軸  
- 選取時，會顯示水平捲軸；您可以左右捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示水平捲軸，您可以使用方向鍵捲動。  
-  
- 反白顯示目前的行  
- 選取時，灰色方塊會框住游標所在的程式碼行。  
-  
-## <a name="see-also"></a>請參閱  
- [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)   
- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md)   
- [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [自訂編輯器](../../ide/customizing-the-editor.md)   
- [使用 IntelliSense](../../ide/using-intellisense.md)
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+
+## <a name="settings"></a>設定
+
+### <a name="drag-and-drop-text-editing"></a>拖放式文字編輯
+
+選取時，您可使用滑鼠將文字拖曳到目前文件或任何其他開啟文件內的其他位置，藉此移動文字。
+
+### <a name="automatic-delimiter-highlighting"></a>自動分隔符號反白顯示
+
+選取時，會反白顯示用來分隔參數或項目值組的分隔符號字元，以及成對大括弧。
+
+### <a name="track-changes"></a>追蹤變更
+
+選取程式碼編輯器時，選取範圍邊界會出現黃色垂直線，以標示最近儲存檔案之後有所變更的程式碼。 當您儲存變更時，垂直線會變成綠色。
+
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>自動偵測無簽章 UTF-8 編碼
+
+根據預設，編輯器會搜尋位元組順序標記或字元集標籤以偵測編碼方式。 如果目前文件中找不到編碼方式，程式碼編輯器就會嘗試掃描位元組序列以自動偵測 UTF-8 編碼。 若要停用自動偵測編碼，請清除此選項。
+
+## <a name="display"></a>顯示器
+
+### <a name="selection-margin"></a>選取範圍邊界
+
+選取時，編輯器文字區域的左邊緣處會顯示垂直邊界。 您可以按一下此邊界來選取整行文字，或按一下並拖曳以選取連續文字行。
+
+|選取範圍邊界起點|選取範圍邊界終點|
+|-------------------------|--------------------------|
+|![HTMLpageSelectionMarginOn 螢幕擷取畫面](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff 螢幕擷取畫面](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
+
+### <a name="indicator-margin"></a>指示區邊界
+
+選取時，編輯器文字區域的左邊緣外圍會顯示垂直邊界。 當您按一下此邊界時，會顯示文字相關的圖示和工具提示。 比方說，指示區邊界會出現中斷點或工作清單捷徑。 列印時不會印出指示區邊界的資訊。
+
+### <a name="vertical-scroll-bar"></a>垂直捲軸
+
+選取時，會顯示垂直捲軸；您可以上下捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示垂直捲軸，您可以使用 Page Up、Page Down 鍵和方向鍵來捲動。
+
+### <a name="horizontal-scroll-bar"></a>水平捲軸
+
+選取時，會顯示水平捲軸；您可以左右捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示水平捲軸，您可以使用方向鍵捲動。
+
+### <a name="highlight-current-line"></a>反白顯示目前的行
+
+選取時，灰色方塊會框住游標所在的程式碼行。
+
+## <a name="see-also"></a>另請參閱
+
+- [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)
+- [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md)
+- [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [自訂編輯器](../../ide/customizing-the-editor.md)
+- [使用 IntelliSense](../../ide/using-intellisense.md)

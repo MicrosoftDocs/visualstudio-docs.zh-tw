@@ -2,9 +2,6 @@
 title: 如何回報 Visual Studio 2017 的問題 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/11/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 809f9121be867785e6d92966ccf92b012740daab
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 
@@ -73,7 +70,7 @@ ms.lasthandoff: 04/05/2018
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式回報問題
 
-若您無法完成 Visual Studio 安裝，或是無法存取 Visual Studio 中的意見反應工具，您可以使用 Visual Studio 安裝程式來回報問題。 若要這麼做，請在 Visual Studio 安裝程式中選擇右上角的意見反應圖示。
+若您無法完成 Visual Studio 安裝，或是無法存取 Visual Studio 中的意見反應工具，您可以使用 **Visual Studio 安裝程式**來回報問題。 若要這麼做，請在 **Visual Studio 安裝程式**中選擇右上角的意見反應圖示。
 
  ![您也可以按 Tab 移至 Visual Studio 安裝程式中的 [提供意見反應] 按鈕，以開啟意見反應工具](../install/media/report-a-problem.png)
 
@@ -85,7 +82,7 @@ ms.lasthandoff: 04/05/2018
 
 如果您沒有要回報的問題，但想要提供產品意見反應或建議，也有管道可以這樣做。 如需詳細資訊，請參閱 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) 頁面。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [告訴我們](../ide/talk-to-us.md)
 * [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)

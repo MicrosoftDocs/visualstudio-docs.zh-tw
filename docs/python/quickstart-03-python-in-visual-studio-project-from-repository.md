@@ -1,15 +1,9 @@
 ---
-title: 快速入門 - 複製 Python 程式碼存放庫 | Microsoft Docs
+title: 快速入門 - 複製 Python 程式碼存放庫
 description: 在此快速入門中，您可以使用 Visual Studio Team Explorer 複製 Python Koans 存放庫，以在 Visual Studio 中建立 Python 專案。
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
@@ -31,7 +25,7 @@ ms.lasthandoff: 03/30/2018
 
 2. 啟動 Visual Studio。
 
-3. 選取 [檢視] > [Team Explorer] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。 (如果您沒看到如下所示的 [連線] 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
+3. 選取 [檢視] > [Team Explorer] 以開啟 **Team Explorer** 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。 (如果您沒看到如下所示的 [連線] 頁面，請選取最上方工具列上的插頭圖示，它會將您帶到該頁面。)
 
     ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media/team-explorer.png)
 
@@ -42,13 +36,13 @@ ms.lasthandoff: 03/30/2018
 
 5. 當複製完成時，存放庫名稱就會出現在 [本機 Git 存放庫] 清單中。 按兩下該名稱，即可瀏覽至 **Team Explorer** 中的存放庫儀表板。
 
-6. 在 [方案] 下，選取 [新增]。
+6. 在 [解決方案] 下，選取 [新增]。
 
     ![從複製品建立新專案的 Team Explorer 視窗](media/team-explorer-new-project.png)
 
 7. 在出現的 [新增專案] 對話方塊中，瀏覽至 Python 語言 (或搜尋 "Python")，選取 [從現有 Python 程式碼]，並指定專案名稱，再將 [位置] 設定為與存放庫相同的資料夾，然後選取 [確定]。 在出現的精靈中，選取 [完成]。
 
-8. 從功能表中選取 [檢視] > [方案總管]。
+8. 從功能表中選取 [檢視] > 方案總管。
 
 9. 在 [方案總管] 中，展開 `python3` 節點，並以滑鼠右鍵按一下 `contemplate_koans.py`，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
 

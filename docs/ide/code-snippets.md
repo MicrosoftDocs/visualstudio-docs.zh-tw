@@ -1,11 +1,9 @@
 ---
-title: "程式碼片段 | Microsoft Docs"
-ms.custom: 
+title: 程式碼片段
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -97,10 +95,10 @@ End Property
 
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)  
-[如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)  
-[使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)  
-[針對程式碼片段進行疑難排解](../ide/troubleshooting-snippets.md)  
-[C# 程式碼片段](../ide/visual-csharp-code-snippets.md)  
-[Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)  
-[程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
+- [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)
+- [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)
+- [使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)
+- [針對程式碼片段進行疑難排解](../ide/troubleshooting-snippets.md)
+- [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
+- [Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)
+- [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

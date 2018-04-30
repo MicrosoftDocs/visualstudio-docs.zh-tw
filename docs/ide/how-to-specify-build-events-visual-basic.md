@@ -1,13 +1,10 @@
 ---
-title: "如何：指定建置事件 (Visual Basic) | Microsoft Docs"
-ms.custom: 
+title: 如何：指定建置事件 (Visual Basic) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe2ab7f174f71933d474aa4737dc713c6540492
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 976db0262666da2ba0c275d9dae9530faf3f5c38
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
 在 Visual Basic 中的建置事件可以用來執行指令碼、巨集或編譯處理程序當中的其他動作。 編譯之前發生的是建置前事件；編譯之後發生的則是建置後事件。  
@@ -48,13 +44,13 @@ ms.lasthandoff: 01/29/2018
 4.  輸入建置前或建置後動作的命令列引數，然後按一下 [確定]。  
   
     > [!NOTE]
-    >  在執行 .bat 檔案的所有建置命令前方，加入 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+    >  在執行 *.bat* 檔案的所有建置命令前方，新增 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
     > [!NOTE]
     >  如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單  
- 下列程序示範如何使用從建置後事件呼叫的 .exe 命令 (專案目錄中的 .exe.manifest 檔案)，設定應用程式資訊清單中的最低作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：  
+ 下列程序示範如何使用從建置後事件呼叫的 *.exe* 命令 (專案目錄中的 *.exe.manifest* 檔案)，設定應用程式資訊清單中的最低作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：  
   
 ```  
 <dependentOS>  
@@ -70,7 +66,7 @@ ms.lasthandoff: 01/29/2018
   
 2.  在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows] 和 [主控台應用程式] 範本。 將專案命名為 `ChangeOSVersionVB`。  
   
-3.  在 Module1.vb 中，將下面這行加入檔案最上方的另一個 `Imports` 陳述式：  
+3.  在 *Module1.vb* 中，將下面這行新增到檔案最上方的另一個 `Imports` 陳述式：  
   
     ```  
     Imports System.Xml  
@@ -119,11 +115,11 @@ ms.lasthandoff: 01/29/2018
     End Sub  
     ```  
   
-     此命令會採用兩個引數。 第一個引數是應用程式資訊清單的路徑 (也就是建置程序建立資訊清單的資料夾，通常為 Projectname.publish)。 第二個引數是新的作業系統版本。  
+     此命令會採用兩個引數。 第一個引數是應用程式資訊清單的路徑 (也就是建置程序建立資訊清單的資料夾，通常為 *<Projectname>*.publish)。 第二個引數是新的作業系統版本。  
   
 5.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-6.  將 .exe 檔案 (例如 `C:\TEMP\ChangeOSVersionVB.exe`) 複製到目錄。  
+6.  複製 *.exe* 檔案到例如 *C:\TEMP\ChangeOSVersionVB.exe* 的目錄。  
   
  接下來，在建置後事件中叫用此命令，以變更應用程式資訊清單。  
   
@@ -132,14 +128,13 @@ ms.lasthandoff: 01/29/2018
 1.  針對要發行的專案，建立 Windows 應用程式。 從 [檔案] 功能表中，依序按一下 [新增] 和 [專案]。  
   
 2.  在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows 傳統桌面] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `VBWinApp`。  
-  
 3.  選取方案總管中的專案，然後按一下 [專案] 功能表中的 [屬性]。  
   
-4.  在 [專案設計工具] 中，移至 [發行] 頁面，然後將 [發行位置] 設為 `C:\TEMP\`。  
+4.  在**專案設計工具**中，移至 [發行] 頁面，然後將 [發行位置] 設為 *C:\TEMP*。  
   
 5.  按一下 [Publish Now]\(立即發行)，即可發行專案。  
   
-     隨即建立資訊清單檔並將其放入`C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案，然後依序按一下 [開啟方式]、[從清單中選取程式] 以及 [記事本]。  
+     會建置資訊清單檔並將它放入 *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案，然後依序按一下 [開啟方式]、[從清單中選取程式] 以及 [記事本]。  
   
      在檔案中搜尋 `<osVersionInfo>` 項目。 例如，版本可能是：  
   
@@ -147,7 +142,7 @@ ms.lasthandoff: 01/29/2018
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  在 [專案設計工具] 中，移至 [編譯] 索引標籤，並按一下 [建置事件] 按鈕以開啟 [建置事件] 對話方塊。  
+6.  在**專案設計工具**中，移至 [編譯] 索引標籤，並按一下 [建置事件] 按鈕以開啟 [建置事件] 對話方塊。  
   
 7.  在 [建置後事件命令列] 文字方塊中，輸入下列命令：  
   
@@ -155,7 +150,7 @@ ms.lasthandoff: 01/29/2018
   
      當您建置專案時，此命令會將應用程式資訊清單中的最低作業系統版本變更為 5.1.2600.0。  
   
-     `$(TargetPath)` 巨集表示要建立之可執行檔的完整路徑。 因此， $(TargetPath).manifest 會指定在 bin 目錄中建立應用程式資訊清單。 發行時，系統會將這份資訊清單複製到您先前設定的發行位置中。  
+     `$(TargetPath)` 巨集表示要建立之可執行檔的完整路徑。 因此，*$(TargetPath).manifest* 會指定在 *bin* 目錄中建立應用程式資訊清單。 發行時，系統會將這份資訊清單複製到您先前設定的發行位置中。  
   
 8.  再次發行專案。 移至 [發行] 頁面，然後按一下 [Publish Now]\(立即發行)。  
   

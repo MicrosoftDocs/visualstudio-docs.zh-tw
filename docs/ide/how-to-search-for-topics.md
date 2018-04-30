@@ -1,28 +1,26 @@
 ---
-title: "如何：搜尋主題 | Microsoft Docs"
-ms.custom: 
+title: 如何：搜尋主題 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜尋主題
 您可以使用全文檢索搜尋功能尋找包含的特定字詞的任何主題。 您也可以使用萬用字元運算式、邏輯運算子和進階的搜尋運算子來修改和自訂查詢。  
   
-若要開啟 [搜尋] 索引標籤，請選擇說明檢視器視窗中的 [搜尋] 索引標籤，或者如果您是鍵盤使用者，請選擇 **Ctrl + E**。  
+若要開啟 [搜尋] 索引標籤，請選擇 [說明檢視器] 視窗中的 [搜尋] 索引標籤，或者如果您是鍵盤使用者，請選擇 **Ctrl**+**E**。  
   
 ## <a name="to-perform-a-full-text-search"></a>執行全文檢索搜尋 
 1.  在搜尋方塊中，輸入您要尋找的文字。  

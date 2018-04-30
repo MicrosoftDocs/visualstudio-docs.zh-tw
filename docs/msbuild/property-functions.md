@@ -1,26 +1,22 @@
 ---
-title: "屬性函式 | Microsoft Docs"
-ms.custom: 
+title: 屬性函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 62b214e5ceefa691787b9dee2a5b3332c6fcbee6
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="property-functions"></a>屬性函式
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。  
@@ -107,6 +103,10 @@ ms.lasthandoff: 03/17/2018
 -   System.TimeSpan  
 
 -   System.Text.RegularExpressions.Regex  
+
+-   System.UriBuilder
+
+-   System.Version
 
 -   Microsoft.Build.Utilities.ToolLocationHelper  
 

@@ -1,33 +1,27 @@
 ---
-title: 使用 Python，步驟 6：使用 Git | Microsoft Docs
+title: 使用 Python 的步驟 6：使用 Git
 description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 6，涵蓋 Visual Studio 與 Git 相關的功能。
-ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec8534e7fd3121510a05e201e8bdea2e9a7fce1c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 93c8ba2ecaaacdd8dd2b0bbf9972df5d5f514c10
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="step-6-working-with-git"></a>步驟 6：使用 Git
 
 **上一個步驟：[安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，提供與本機 Git 存放庫和遠端儲存庫的直接整合。 這個整合包含複製存放庫、認可變更，以及管理分支。
+Visual Studio 在 GitHub 和 Visual Studio Team Services 之類的服務上，提供與本機 Git 存放庫和遠端儲存庫的直接整合。 這項整合包含複製存放庫、認可變更，以及管理分支。
 
 本文提供為現有專案建立本機 Git 存放庫的基本概觀，以及讓您熟悉一些 Visual Studio 的 Git 相關功能。
 

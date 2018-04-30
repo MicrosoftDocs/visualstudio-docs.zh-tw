@@ -1,23 +1,21 @@
 ---
-title: "如何：自訂捲軸以追蹤程式碼 | Microsoft Docs"
-ms.custom: 
+title: 如何：自訂捲軸以追蹤程式碼
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>如何：自訂捲軸以追蹤程式碼
 
 在處理冗長的程式碼檔案時，很難記住所有內容。 您可以自訂程式碼視窗的捲軸，讓您得以鳥瞰程式碼中的所有狀況。
 
@@ -59,4 +57,4 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="see-also"></a>另請參閱
 
-[在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

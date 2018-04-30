@@ -1,57 +1,32 @@
 ---
-title: "Visual Studio 訂用帳戶中的 Office 365 開發人員權益 | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 11/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Office 365 Developer benefit included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 24d43f71aec3be05809fe79085cd7710f47f99ca
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Visual Studio 訂用帳戶中的 Office 365 開發人員權益 | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 11/12/2018
+ms.topic: Get-Started-Article
+description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人員權益。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
-## <a name="overview"></a>總覽
-
 使用選取之 Visual Studio Enterprise 訂用帳戶的訂閱者，會收到 Office 365 開發人員訂用帳戶權益。  Office 365 開發人員訂用帳戶可讓您開發、測試及部署適用於 Microsoft Office 和 Microsoft SharePoint 的增益集。  這項權益可提供給一個租用戶及最多 25 名使用者。
-
-## <a name="eligibility"></a>資格
-| 訂用帳戶等級/方案                                                  | 優勢               | 可續約？                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 包含              |  [是]                                                               |
-| Visual Studio Enterprise 年度                                               | 包含              |  [是]                                                               |
-| Visual Studio Enterprise 每月                                              | 無法使用         |                                                                    |
-| Visual Studio Professional Standard                                           | 無法使用         |                                                                    |
-| Visual Studio Professional 年度                                             | 無法使用         |                                                                    | 
-| Visual Studio Professional 每月                                            | 無法使用         |                                                                    |
-| Visual Studio Test Pro                                                        | 無法使用         |                                                                    |
-| MSDN 平台                                                                | 無法使用         |                                                                    |
-| Visual Studio Dev Essentials                                                  | 無法使用         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 包含              |  [是]                                                               |
-| Visual Studio Enterprise - FTE                                                | 包含              |  [是]                                                               |
-| Visual Studio Enterprise - Microsoft 合作夥伴網路                          | 無法使用         |                                                                    |
-| Visual Studio Professional - Microsoft 合作夥伴網路                        | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | 無法使用         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | 無法使用         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 包含              |  [是]                                                               |
-| Microsoft 合格訓練人員 - 軟體與服務                             | 包含              |  [是]                                                               |
-| Microsoft 合格訓練人員 - 軟體與服務開發人員                   | 包含              |  [是]                                                               |
-
-<sup>1</sup>  *包括「禁止轉售」(NFR)、Microsoft Valued Partner (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)*  
-
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派至您電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="activation-steps"></a>啟用步驟
 
-1. 請前往 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 以登入訂閱者入口網站。
+1. 請前往 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，以登入訂閱者入口網站。
+
 2. 根據您的帳戶，您可以重新導向您組織的登入頁面或 Microsoft 帳戶登入頁面。   無論是哪一種情況，請輸入您的使用者名稱和密碼，然後按一下 [下一步]。
+
 3. 登入程序完成之後，您應該會看到「訂用帳戶權益」頁面。  如果您有多個訂用帳戶，則按一下右上角之黑色功能區下方的下拉式箭號，即可切換訂用帳戶。  Office 365 開發人員訂用帳戶權益磚是位在工具類別中。  請使用磚資料列右側的箭號進行捲動，直到看見 Office 磚為止。 
+
 4. 在 [工具] 區段中找出 Office 365 開發人員訂用帳戶磚。  按一下權益磚底部的 [取得代碼] 連結。   擷取代碼之後，請按一下 [啟用]。 
 
     ![Office 365 開發人員權益磚](_img\vs-office-dev\vs-office-dev-tile.png)
@@ -60,17 +35,13 @@ ms.lasthandoff: 01/29/2018
 
     ![Office 365 開發人員權益的帳戶](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-
 6.  提供有關您將在何處使用訂用帳戶的必要資訊，然後按一下 [下一步]。  此資訊用來判斷訂用帳戶的可用性和任何適用的稅金。  
 
     ![Office 365 開發人員權益的連絡資訊](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-
-
 7.  為您的帳戶建立使用者名稱和密碼。  
 
     ![Office 365 開發人員權益的使用者名稱](_img\vs-office-dev\vs-office-dev-username-cropped.png)
-
 
 8.  提供電話號碼，並選擇透過電話或簡訊接收確認碼。  這可協助我們確定帳戶是由真人所建立。 輸入您收到的確認碼，然後按一下 [下一步]。
 
@@ -82,22 +53,36 @@ ms.lasthandoff: 01/29/2018
 
 11. 在即將完成的「步驟 3」中，系統將要求您選取「付款方法」。  有兩個可用的付款選項。  第一個選項是新增 [信用卡] (如下所示)，而第二個選項為 [發票]。  在這兩種情況下，按一下 [下單] 來送出 0.00 USD 的訂單。   
 
-> [!NOTE]
-> 訂閱者若不想要提供信用卡，請選取 [發票] 付款方法。  您也可以選取 [按年支付]，將發票的收執限制為每年一次。
+    > [!NOTE]
+    > 訂閱者若不想要提供信用卡，請選取 [發票] 付款方法。  您也可以選取 [按年支付]，將發票的收執限制為每年一次。
 
 12. 此時，您已成功兌換 Office 365 開發人員訂用帳戶權益。  您會看到一個用來確認訂單的頁面。  此頁面會提供[登入頁面](https://portal.office.com "Office 365 登入頁面")的連結。  建議您在此頁面插入書籤以供稍後使用。  您還需要記錄此頁面上顯示的使用者識別碼。  (設定帳戶時所提供的電子郵件地址也會收到歡迎電子郵件。)按一下 [啟動安裝程式] 以繼續。  
 
     ![Office 365 開發人員權益的已確認訂單](_img\vs-office-dev\vs-office-dev-confirm.png)
 
-## <a name="faq"></a>常見問題集
+## <a name="eligibility"></a>資格
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含      |  [是]          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
+| Visual Studio Dev Essentials | NA  | 無法使用 |NA |
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft Partner Network (MPN)、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)。*
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
+
+## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>問：一旦我的 Office 365 開發人員訂用帳戶啟用後，我要如何進行設定？
 答：設定 Office 365 開發人員訂用帳戶權益
 
-1. 若要設定 Office 365 開發人員訂用帳戶權益，您可以從 [感謝您的訂單] 頁面上啟動，或稍後前往 [https://portal.office.com](https://portal.office.com) 以登入 Office 入口網站。  在此案例中，我們已在確認頁面之後選取 [啟動安裝程式]。
+1. 若要設定 Office 365 開發人員訂用帳戶權益，您可以從 [Thanks for your order (感謝您的訂單)] 頁面上啟動，或稍後前往 [https://portal.office.com](https://portal.office.com) 以登入 Office 入口網站。  在此案例中，我們已在確認頁面之後選取 [啟動安裝程式]。
 
-> [!NOTE]
-> 若要登入 https://portal.office.com，您必須使用您在上述步驟 7 中建立的新 Office 365 開發人員訂用帳戶的使用者識別碼。
+    > [!NOTE]
+    > 若要登入 https://portal.office.com，您必須使用您在上述步驟 7 中建立的新 Office 365 開發人員訂用帳戶的使用者識別碼。
 
 2. 按一下 [啟動安裝程式] 之後，「步驟 1」會要求連線到您所擁有的現有網域，或繼續使用兌換程序期間的租用戶設定。  在下列範例中，我們選擇繼續使用 appsbyjane2017.onmicrosoft.com 網域。
 
@@ -132,8 +117,8 @@ ms.lasthandoff: 01/29/2018
 
 1. 若要在兌換程序完成之後增加使用者，您必須前往 [https://portal.office.com](https://portal.office.com)，並利用租用戶建立步驟期間所建立的「使用者識別碼」登入。
 
-> [!NOTE]
-> 如果您在尋找登入資訊時遇到問題，請查看「Microsoft 線上服務小組」所傳送的「訂單確認」電子郵件，其主旨為「訂單確認：感謝您的訂購」。  或者，您也可以在您的收件匣中搜尋「Body:(Office 365 企業版 E3 開發人員 MSDN)」。
+    > [!NOTE]
+    > 如果您在尋找登入資訊時遇到問題，請查看「Microsoft 線上服務小組」所傳送的「訂單確認」電子郵件，其主旨為「訂單確認：感謝您的訂購」。  或者，您也可以在您的收件匣中搜尋「Body:(Office 365 企業版 E3 開發人員 MSDN)」。
 
 2. 成功登入之後，請選取**系統管理**磚。 您將會重新導向至「系統管理中心」。
 
@@ -145,8 +130,8 @@ ms.lasthandoff: 01/29/2018
 
 6. 「訂用帳戶」頁面上所指出的「購買」值，現在應該符合送出的值。
 
-> [!NOTE]
-> 「使用者總數」的值超過 25 會導致錯誤。
+    > [!NOTE]
+    > 「使用者總數」的值超過 25 會導致錯誤。
 
 ## <a name="support-resources"></a>支援資源
 -  需要 Office 開發人員訂用帳戶的說明嗎？ 查看 [Office 開發人員中心](https://developer.microsoft.com/office)上的[支援](https://developer.microsoft.com/office/support)資源。

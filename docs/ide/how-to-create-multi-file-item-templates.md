@@ -1,24 +1,22 @@
 ---
-title: "建立 Visual Studio 的多檔案項目範本 | Microsoft Docs"
-ms.custom: 
+title: 建立 Visual Studio 的多檔案項目範本 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/05/2018
 
 1. 以手動建立單一檔案項目範本的方式建立項目範本，但包含構成多檔案項目的每一個檔案。
 
-1. 在 .vstemplate XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如: 
+1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如: 
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ ms.lasthandoff: 01/05/2018
 
 1. 選取要包含在範本中的檔案，以滑鼠右鍵按一下選項，選擇 [Send to] (傳送至) > [壓縮的 (zipped) 資料夾]。
 
-   您選取的檔案即會壓縮成 .zip 檔。
+   您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 將 .zip 檔案複製到使用者項目範本的位置。 此目錄預設為 %USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 結束再重新開啟 Visual Studio。
 
-1. 建立新的專案或開啟現有的專案，然後選擇 [專案] > [新增項目] 或按 **Ctrl** + **Shift** + **A**。
+1. 建立新的專案或開啟現有的專案，然後選擇 [專案] > [新增項目] 或按 **Ctrl**+**Shift**+**A**。
 
    多檔案項目範本即會出現在 [新增項目] 對話方塊中。
 
@@ -98,7 +96,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
+[建立專案與項目範本](../ide/creating-project-and-item-templates.md)  
 [如何：建立項目範本](../ide/how-to-create-item-templates.md)  
 [範本參數](../ide/template-parameters.md)  
 [如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)

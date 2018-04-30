@@ -1,26 +1,23 @@
 ---
-title: "使用檢測收集詳細計時資料 | Microsoft Docs"
-ms.custom: 
+title: 使用檢測收集詳細計時資料 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d4ae0813b2405fe81b5c6c92fbd2cfed0a6faee2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用檢測收集計時詳細資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。  
@@ -34,11 +31,11 @@ ms.lasthandoff: 12/22/2017
 -   在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。  
   
 ## <a name="common-tasks"></a>一般工作  
- 您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  
+ 您可以在效能工作階段的 [效能工作階段屬性頁] 對話方塊中指定其他選項。 若要開啟此對話方塊：  
   
 -   在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
   
- 下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]  對話方塊中指定的選項。  
+ 下表中的工作描述當您使用檢測方法設定檔時，可以在 [效能工作階段]**** [屬性頁]**** 對話方塊中指定的選項。  
   
 |工作|相關內容|  
 |----------|---------------------|  

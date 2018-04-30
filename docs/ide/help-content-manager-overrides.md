@@ -1,25 +1,23 @@
 ---
-title: "Help Content Manager 覆寫設定 | Microsoft Docs"
-ms.custom: 
+title: Help Content Manager 覆寫 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫設定
+# <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 您可以變更 Help Viewer 和 Visual Studio IDE 之說明相關功能的預設行為。 某些選項是透過建立 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 檔案以設定各種登錄機碼值來指定。 其他選項則是在登錄中直接設定。
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 檔案控制 Help Viewer 行為
@@ -62,7 +60,7 @@ ms.lasthandoff: 12/22/2017
 |指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
   
 ## <a name="see-also"></a>另請參閱
-[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)  
+[Help Viewer 系統管理員指南](../ide/help-viewer-administrator-guide.md)  
 [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [使用 .pkgdef 檔案修改 Isolated Shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

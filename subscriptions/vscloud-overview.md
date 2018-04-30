@@ -1,25 +1,25 @@
 ---
 title: 如何購買 Visual Studio Enterprise 和 Visual Studio Professional 雲端訂用帳戶
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Rent Visual Studio Professional or Visual Studio Enterprise on a month-to-month or annual basis, with no long-term contract.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 32b85d7d28dccf8a862848e692974561068186a9
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://www.visualstudio.com/subscriptions/)。 這些就是我們稱之為雲端訂用帳戶的內容。
 
-[比較雲端訂用帳戶權益與定價](https://www.visualstudio.com/vs/pricing/)
+[比較雲端訂閱權益和定價](https://www.visualstudio.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>開始之前
 
@@ -69,10 +69,10 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="buy-cloud-subscriptions-now"></a>立即購買雲端訂用帳戶
 
-* [Visual Studio Professional 每月訂用帳戶](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Professional 年度訂用帳戶](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
-* [Visual Studio Enterprise 每月訂用帳戶](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-* [Visual Studio Enterprise 年度訂用帳戶](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+* [Visual Studio Professional 月租方案](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+* [Visual Studio Professional 年度訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
+* [Visual Studio Enterprise 月租方案](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
+* [Visual Studio Enterprise 年度訂閱](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
 
 ## <a name="related-resources"></a>相關資源
 

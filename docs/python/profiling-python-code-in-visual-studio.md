@@ -1,27 +1,21 @@
 ---
-title: 在 Visual Studio 中測量 Python 程式碼的效能 | Microsoft Docs
+title: 測量 Python 程式碼的效能
 description: 如何在使用 CPython 型解譯器時，以 Visual Studio 分析工具來檢查 Python 程式碼的效能。
-ms.custom: ''
 ms.date: 01/09/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4faa050056296b7dde625268c7ff1112b2c0c6c0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 2f0bd25221f975cd8df122af51af20d125a43a65
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-python-code"></a>分析 Python 程式碼
 
