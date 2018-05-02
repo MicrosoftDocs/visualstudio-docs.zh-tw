@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中指定負載測試情節中的虛擬網路類型 | Microsoft Docs
+title: 在 Visual Studio 中指定負載測試情節中的虛擬網路類型
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f40c1d26d1b8f28fd72bbcc5eb4842724e2d1e89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 

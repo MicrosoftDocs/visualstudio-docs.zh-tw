@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中的自動程式化 UI 測試中使用 HTML5 控制項 | Microsoft Docs
+title: 在 Visual Studio 中的自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b440ce0a9f9cf935020ca7ddf0cf392a0d47ad54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -23,10 +24,12 @@ ms.lasthandoff: 04/16/2018
 -   Visual Studio 企業版
 
 > [!WARNING]
->  在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
+> 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
+
 
 > [!WARNING]
->  如果您在 Internet Explorer 10 中建立自動程式碼 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。
+> 如果您在 Internet Explorer 10 中建立自動程式碼 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。
+
 
 ## <a name="supported-html5-controls"></a>支援的 HTML5 控制項
  自動程式化 UI 測試包括記錄、播放和驗證下列 HTML5 控制項的支援：
@@ -80,7 +83,8 @@ string Volume
  **篩選屬性：**`HtmlAudio` 的篩選屬性是 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
->  搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
+> 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> 視訊控制項
  **視訊控制項：**正確記錄和播放 HTML5 Video 控制項上的動作。
@@ -110,7 +114,8 @@ string VideoWidth
  **篩選屬性：**`HtmlVideo` 的篩選屬性是 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
->  如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。
+> 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> 滑桿
  **滑桿控制項：**正確記錄和播放 HTML5 Slider 控制項上的動作。

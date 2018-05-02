@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 中的自動程式化 UI 測試設定和平台 | Microsoft Docs
+title: Visual Studio 中自動程式化 UI 測試的組態和平台
 ms.date: 2015-10-04
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
@@ -10,18 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
 Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會列在下表中。 這些組態也套用至使用 [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)]建立的動作記錄。
 
 > [!NOTE]
->  自動程式碼 UI 測試處理序的權限必須和待測 App 的權限相同。
+> 自動程式碼 UI 測試處理序的權限必須和待測 App 的權限相同。
+
 
  **需求**
 
@@ -37,7 +39,8 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 |.NET|.NET 2.0、3.0、3.5、4 和 4.5。 **注意：**[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 和 Visual Studio 都需要 .NET 4 才能運作。 然而，支援使用列出的 .NET 版本開發的應用程式。|
 
 > [!NOTE]
->  「*UI 同步處理* 」(UI Synchronization) 功能可在每個控制項的訊息佇列中驗證播放。 如果控制項沒有回應傳送至它的事件，則會重新傳送事件。
+> 「*UI 同步處理* 」(UI Synchronization) 功能可在每個控制項的訊息佇列中驗證播放。 如果控制項沒有回應傳送至它的事件，則會重新傳送事件。
+
 
 ## <a name="platform-support"></a>平台支援
 

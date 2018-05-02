@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 中的程式碼涵蓋範圍 | Microsoft Docs
+title: Visual Studio 中的程式碼涵蓋範圍
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2495c95dfd30727c4c4542903fb00e8b693c1a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 

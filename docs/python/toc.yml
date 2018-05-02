@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: 教學課程
   items:
-    - name: 0 - 安裝 Python 支援
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 - 建立新的 Python 專案
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 - 撰寫和執行程式碼
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 - 使用互動式 REPL 視窗
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 - 在偵錯工具中執行程式碼
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 - 安裝套件及管理 Python 環境
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 - 運用 Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Visual Studio 中的 Python
+      items:
+        - name: 0 - 安裝 Python 支援
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 - 建立新的 Python 專案
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 - 撰寫和執行程式碼
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 - 使用互動式 REPL 視窗
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 - 在偵錯工具中執行程式碼
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 - 安裝套件及管理 Python 環境
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 - 運用 Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: 了解 Visual Studio 中的 Django
+      items:
+        - name: 1 - 建立專案和方案
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 - 建立 Django 應用程式
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 - 提供靜態檔案並新增頁面
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 - 使用 Django Web 專案範本
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 - 驗證使用者
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 - 使用投票 Django Web 專案範本
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: 概念
   items:
     - name: Python 專案
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: 參考資料
   items:
+    - name: 項目範本
+      href: python-item-templates.md
     - name: 選項
       href: python-support-options-and-settings-in-visual-studio.md

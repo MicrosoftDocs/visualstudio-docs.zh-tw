@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 .targets 檔案中所包含的最常用屬性。  
@@ -69,9 +69,10 @@ ms.lasthandoff: 04/19/2018
 |FileAlignment|以位元組為單位，指定要對齊輸出檔案區段的位置。 有效的值為 512、1024、2048、4096、8192。 這個屬性相當於 `/filealignment` 編譯器參數。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 這個參數 (Parameter) 相當於 vbc.exe 編譯器的 `/sdkpath` 參數 (Switch)。|  
 |GenerateDocumentation|(僅 Visual Basic) 布林值參數，指出建置是否產生文件。 如果為 `true`，則建置會產生文件資訊，並將該資訊連同建置工作所建立的可執行檔或程式庫的名稱放入 .xml 檔。|
-|IntermediateOutputPath|如果沒有指定路徑，則為衍生自 `BaseIntermediateOutputPath` 的完整中繼輸出路徑。 例如 \obj\debug\\。 如果這個屬性遭到覆寫，則設定 `BaseIntermediateOutputPath` 沒有任何作用。|  
+|IntermediateOutputPath|如果沒有指定路徑，則為衍生自 `BaseIntermediateOutputPath` 的完整中繼輸出路徑。 例如 \obj\debug\\。|  
 |KeyContainerName|強式名稱金鑰容器的名稱。|  
 |KeyOriginatorFile|強式名稱金鑰檔的名稱。|  
+|MSBuildProjectExtensionsPath|指定專案延伸模組的路徑位置。 根據預設，這會採用與 `BaseIntermediateOutputPath` 相同的值。|  
 |ModuleAssemblyName|組件的名稱，編譯的模組將合併到該組件中。 這個屬性相當於 `/moduleassemblyname` 編譯器參數。|  
 |NoLogo|布林值，指出您是否要關閉編譯器標誌。 這個屬性相當於 `/nologo` 編譯器參數。|  
 |NoStdLib|布林值，指出是否要避免參考標準程式庫 (mscorlib.dll)。 預設值是 `false`。|  

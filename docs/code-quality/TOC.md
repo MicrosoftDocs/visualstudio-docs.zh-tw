@@ -34,7 +34,7 @@
 #### [指定套用註釋的時機和位置](specifying-when-and-where-an-annotation-applies.md)
 #### [內建函式](intrinsic-functions.md)
 #### [最佳做法和範例 (SAL)](best-practices-and-examples-sal.md)
-### [使用 __analysis_assume 來指定其他程式碼資訊](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [使用 _Analysis_assume 來指定其他程式碼資訊](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [規則集](using-rule-sets-to-group-code-analysis-rules.md)
 ### [受控碼的規則集](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [設定 ASP.NET Web 應用程式的程式碼分析](how-to-configure-code-analysis-for-an-aspnet-web-application.md)

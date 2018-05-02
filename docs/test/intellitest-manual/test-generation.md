@@ -1,6 +1,7 @@
 ---
-title: 測試產生 | Microsoft IntelliTest 開發人員測試工具 | Microsoft Docs
+title: 測試產生 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>測試產生
 
-在傳統的單元測試中，需要多個因素才能構成一項測試：
+在傳統的單元測試中，測試由多個項目組成：
+
+* [方法呼叫的序列](test-generation.md#test-generators)
+* 所呼叫方法的引數，這些引數為[測試輸入](input-generation.md)
+* 指出一組[判斷提示](#assumptions-and-assertions)，來驗證預期的受測應用程式行為
+
+以下為範例測試結構：
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-組成測試的不同層面：
-
-* 修正[一系列的方法呼叫](test-generation.md#test-generators)
-* 修正呼叫方法的引數，這些引數是[測試輸入資料](input-generation.md)。
-* 指出一組[判斷提示](#assumptions-and-assertions)，以驗證預期的受測應用程式行為。
 
 IntelliTest 通常會自動判斷多項一般[參數化單元測試](#parameterized-unit-testing)的相關引數值，這會提供一系列的方法呼叫和判斷提示。
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能要求。
+您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上張貼想法和功能要求。

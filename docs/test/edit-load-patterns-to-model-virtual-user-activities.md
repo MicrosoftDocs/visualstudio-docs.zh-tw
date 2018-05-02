@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中用於負載測試的負載模式 | Microsoft Docs
+title: Visual Studio 中用於負載測試的負載模式
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>編輯負載模式以模型化虛擬使用者活動
 
@@ -43,7 +44,8 @@ ms.lasthandoff: 04/16/2018
  例如，具有 [初始使用者計數] 為 1、[最大使用者計數] 為 100、[逐步執行持續期間 (秒)] 為 10 以及 [逐步執行使用者計數] 為 1 的逐步執行負載，會建立從 1 開始，且每隔 10 秒加 1 直到達到 100 個使用者的使用者負載模式。
 
 > [!NOTE]
->  如果總測試持續期間小於逐漸增加至最大使用者負載所需的時間，在經過持續期間之後，測試就會停止，並且不會到達最大使用者計數目標。
+> 如果總測試持續期間小於逐漸增加至最大使用者負載所需的時間，在經過持續期間之後，測試就會停止，並且不會到達最大使用者計數目標。
+
 
  您可以使用逐步執行的目標增加負載，直到伺服器到達效能明顯低落的點。 隨著負載增加，伺服器最終會耗盡資源。 逐步執行負載是用來判斷何時使用者數目會到達上限的好方法。 有了逐步執行負載，您還必須緊密地監視代理程式資源，以確保代理程式能夠產生想要的負載。
 
@@ -117,12 +119,14 @@ ms.lasthandoff: 04/16/2018
  在您使用 [新增負載測試精靈] 建立負載測試之後，就可以使用 [負載測試編輯器]，將與情節建立關聯的負載模式屬性變更為符合您測試目標的層級。
 
 > [!NOTE]
->  如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+> 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
+
 
  負載模式會指定能夠在負載測試期間使用的虛擬使用者數目，以及加入新使用者的比例。 共有三個可用的模式供您選擇：逐步執行、常數和以目標為依據。 如需詳細資訊，請參閱[指定在負載測試情節中使用負載模式之虛擬使用者的數目](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 > [!NOTE]
->  您也可以使用負載測試外掛程式，以程式設計方式變更負載屬性。 如需詳細資訊，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+> 您也可以使用負載測試外掛程式，以程式設計方式變更負載屬性。 如需詳細資訊，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+
 
 ### <a name="to-change-the-load-pattern"></a>若要變更負載模式
 

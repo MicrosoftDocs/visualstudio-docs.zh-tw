@@ -1,6 +1,7 @@
 ---
-title: 使用 .runsettings 檔案在 Visual Studio 中設定單元測試 | Microsoft Docs
+title: 使用 .runsettings 檔案在 Visual Studio 中設定單元測試
 ms.date: 02/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3a446c3223197058401e07a5aef2cb13bde46f3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97d270704196b3656f89d0177f615826dcbef2af
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 *.runsettings* 檔案設定單元測試
 

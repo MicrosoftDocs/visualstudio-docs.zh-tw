@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中建立診斷資料配接器 | Microsoft Docs
+title: 如何：在 Visual Studio 中建立診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22867cab68497afd54c2ffee30bb9ccc73e90862
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 

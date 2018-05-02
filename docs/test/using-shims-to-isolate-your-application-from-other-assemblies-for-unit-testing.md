@@ -1,6 +1,7 @@
 ---
-title: 使用填充碼隔離應用程式，方便在 Visual Studio 中進行單元測試 | Microsoft Docs
+title: 使用填充碼隔離應用程式，以便在 Visual Studio 中進行單元測試
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 22c22328c0c9a34c783dd00f61f4b6c791c3507d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55b31661120c5224d12485764328007dc8445a8e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 
@@ -25,6 +26,10 @@ ms.lasthandoff: 04/16/2018
  **需求**
 
 -   Visual Studio 企業版
+-   .NET Framework 專案
+
+> [!NOTE]
+> 不支援 .NET Standard 專案。
 
 ## <a name="example-the-y2k-bug"></a>範例：Y2K Bug
 

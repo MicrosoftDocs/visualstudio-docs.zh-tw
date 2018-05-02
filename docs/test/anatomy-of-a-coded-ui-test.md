@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 中的自動程式化 UI 測試的結構 | Microsoft Docs
+title: Visual Studio 中自動程式化 UI 測試的內容
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20cd48c087af5d36fad3cf2a21797210ca963e12
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 527a12591b05fcd1f20f8664132bf174ef553477
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 

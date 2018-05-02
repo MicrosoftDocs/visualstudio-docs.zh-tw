@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中測試含有多個 UI 對應的大型應用程式 | Microsoft Docs
+title: 在 Visual Studio 中測試含有多個 UI 對應的大型應用程式
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 640de34044f539dddd43579f672af1b98dfdd715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c87a8f350ecd38a4f0d1f8afd6918b560645e8f4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 的 Web 效能測試中修正無法偵測的動態參數 | Microsoft Docs
+title: 在 Visual Studio 的 Web 效能測試中修正無法偵測的動態參數
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a696f03e715e2b3bede34f45bce90596a14897aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf719eec2b9695e6019cf78e16ec5018639a92ed
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 

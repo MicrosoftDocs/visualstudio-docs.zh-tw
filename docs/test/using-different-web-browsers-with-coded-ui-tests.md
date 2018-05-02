@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中使用不同的網頁瀏覽器搭配自動程式化 UI 測試 | Microsoft Docs
+title: 在 Visual Studio 中使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 061354c17fb2744e1700f30b10a20594a5091a6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f8efe8f64c166a549080d10432fd0dd7e241f79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 

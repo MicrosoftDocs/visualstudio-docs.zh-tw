@@ -1,8 +1,14 @@
 ---
-title: 移植、移轉及升級 Visual Studio 專案
+title: 移植、移轉及升級專案
+description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2017 支援參考，以及 Visual Studio 決定何時需要移轉專案的方式。
 ms.date: 03/14/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+manager: douge
+ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -13,18 +19,13 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>移植、移轉及升級 Visual Studio 專案
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
 一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](https://www.visualstudio.com/vs/release-notes/)，以了解哪些功能專屬於哪一個版本)。
 

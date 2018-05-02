@@ -1,18 +1,19 @@
 ---
-title: 針對 Visual Studio 中的程式碼涵蓋範圍進行疑難排解 | Microsoft Docs
+title: 針對 Visual Studio 中的程式碼涵蓋範圍進行疑難排解
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 10fc5afdd342f1d1677a92498f27e6a13179aabf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshoot-code-coverage"></a>針對程式碼涵蓋範圍進行疑難排解
 

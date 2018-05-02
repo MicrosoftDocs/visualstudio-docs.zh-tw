@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中使用 UI 自動化來測試您的程式碼 | Microsoft Docs
+title: 在 Visual Studio 中利用使用者介面自動化來測試您的程式碼
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9235cf218ab5eed64140f4ae1dc6e4d54ea73e1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 

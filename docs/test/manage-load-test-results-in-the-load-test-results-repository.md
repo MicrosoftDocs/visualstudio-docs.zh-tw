@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中管理負載測試結果 | Microsoft Docs
+title: 在 Visual Studio 中管理負載測試結果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f32e5b8bc7a5366f825686a17310a031d20a54bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果儲存機制中的負載測試結果
 

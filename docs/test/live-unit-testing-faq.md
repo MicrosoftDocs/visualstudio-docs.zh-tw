@@ -1,6 +1,7 @@
 ---
-title: Live Unit Testing 常見問題集 | Microsoft Docs
+title: Live Unit Testing 常見問題集
 ms.date: 2017-10-03
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3e99a01371eeabe9b3959c8f744afa5a93a86c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c49c23bc9ca77721ba6c39fb6c94a0994a70e7d9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
