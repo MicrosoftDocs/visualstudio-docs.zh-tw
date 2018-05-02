@@ -1,13 +1,13 @@
 ---
-title: "IActiveScriptParseProcedure32 |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptParseProcedure32 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 387a856b-f5dc-4371-8620-bd574e046c2c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 8cd253db8cb63adad093b84c4bf47df07bd66d69
