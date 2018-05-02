@@ -1,6 +1,6 @@
 ---
-title: 選取專案的環境
-description: 在 Visual Studio 方案總管中，您可以指派特定的 Python 解譯器 (環境) 以一律用於任何指定的專案而忽略預設環境。 您也可以建立和管理虛擬環境。
+title: 選取要用於專案的 Python 解譯器和環境
+description: 如何指派要為 Visual Studio 專案使用的 Python 環境，以及建立虛擬環境的指示。
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>選取要用於專案中的 Python 解譯器和環境
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何指派要為專案使用的 Python 環境
 
 在 Python 專案中的所有程式碼，都是在特定環境的內容中執行。 Visual Studio 也會使用該環境來進行偵錯、匯入和成員完成、語法檢查，以及任何其他需要環境的工作。
 

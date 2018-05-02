@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中搭配測試總管進行以測試為導向的開發工作 | Microsoft Docs
+title: 在 Visual Studio 中搭配測試清單編輯器進行以測試為導向的開發工作
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 
@@ -60,10 +61,12 @@ ms.lasthandoff: 04/16/2018
  **若要偵錯測試：** 請開啟一個或多個測試的捷徑功能表，然後選擇 [ **偵測選取的測試**]。
 
 > [!IMPORTANT]
->  顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。
+> 顯示的結果是最近執行的結果。 有顏色的結果列只會顯示已執行的測試結果。 例如，如果您執行許多測試，但是有些失敗了，接著只執行成功的測試，然後結果列就會全部顯示綠色。
+
 
 > [!NOTE]
->  如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 [搭配不同的測試架構來使用測試總管](#frameworks)。
+> 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱 [搭配不同的測試架構來使用測試總管](#frameworks)。
+
 
 ##  <a name="walkthrough"></a> 逐步解說：使用單元測試來開發方法
  本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱 [使用不同的測試架構](#frameworks)。

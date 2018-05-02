@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中使用 Microsoft Fakes 在測試期間隔離程式碼 | Microsoft Docs
+title: 在 Visual Studio 中使用 Microsoft Fakes 在測試期間隔離程式碼
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
 
@@ -32,6 +33,10 @@ Fakes 分為兩種類別：
 **需求**
 
 -   Visual Studio 企業版
+-   .NET Framework 專案
+
+> [!NOTE]
+> 不支援 .NET Standard 專案。
 
 ## <a name="choosing-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇
 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。

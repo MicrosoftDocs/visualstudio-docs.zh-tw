@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中編輯負載測試情節 | Microsoft Docs
+title: 在 Visual Studio 中編輯負載測試情節
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 69416ed6a4e06cccd606e705d97bef94d0825bd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
 

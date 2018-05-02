@@ -1,24 +1,25 @@
 ---
-title: 分析功能導覽 | Microsoft Docs
-ms.custom: H1HackMay2017
+title: 利用分析工具測量效能
+description: 查看 Visual Studio 中可用的各種診斷工具。
+ms.custom: mvc
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: quickstart
 helpviewer_keywords:
-- debugger
+- diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c10e06d1dcd789212b04b591f0165e118139b1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="profiling-feature-tour"></a>分析功能導覽
+# <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
 Visual Studio 提供各種不同的分析工具，可協助您依據應用程式類型來診斷不同類型的效能問題。
 

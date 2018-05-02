@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 中的 Live Unit Testing | Microsoft Docs
+title: Visual Studio 中的 Live Unit Testing
 ms.date: 2017-03-07
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f3eced8d8aba9adb0da652e285a594cf32711ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 577ebebec7de0599675f60d764dec52d0d8babd6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing
 

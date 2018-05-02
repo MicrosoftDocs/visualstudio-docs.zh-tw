@@ -1,8 +1,9 @@
 ---
-title: 探索界限 | Microsoft IntelliTest 開發人員測試工具 | Microsoft Docs
+title: 探索界限 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -57,7 +58,7 @@ IntelliTest 對程式執行路徑探索得越深，IntelliTest 從程式的控�
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-[條件約束規劃求解](input-generation.md#constraint-solver)必須計算輸入的 MB 數，這將導致採用不同的新執行路徑。 這是 **PexSettingsAttributeBase** 和其衍生類型的選項。
+[條件約束規劃求解](input-generation.md#constraint-solver)必須計算輸入的 MB 數，這將導致採用不同的新執行路徑。 這是 *PexSettingsAttributeBase** 和其衍生類型的選項。
 
 IntelliTest 對程式執行路徑的探索越深，IntelliTest 從程式的控制流程和資料流程建置的條件約束系統就會變得越複雜。 根據電腦可用的記憶體，您可以設定此值，以允許 IntelliTest 處理更複雜的條件約束系統。
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 IntelliTest 在測試探索期間將嘗試的執行數上限。
 
-這項探索界限背後的動機是包含迴圈或遞迴的任何程式碼可能含有不限數目的執行路徑，因此 IntelliTest 必須在[輸入產生](input-generation.md)期間加以限制。 
+這項探索界限背後的動機是包含迴圈或遞迴的任何程式碼可能含有不限數目的執行路徑，因此 IntelliTest 必須在[輸入產生](input-generation.md)期間加以限制。
 
-**MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示： 
+**MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示：
 
 * IntelliTest 將以不同的測試輸入呼叫參數化測試方法最多 **MaxRuns** 次。
-* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 
-  不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。 
+* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。
 * IntelliTest 會計算找到的唯一執行路徑數目；此數目是透過 **MaxRunsWithUniquePaths** 選項進行限制。
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ IntelliTest 在測試探索期間將嘗試的執行數上限。
 
 不發出新測試的連續執行數上限。
 
-雖然 IntelliTest 通常在短時間內可以找到許多有趣的測試輸入，但在一段時間後，它找不到其他任何新的測試輸入，因此不再發出單元測試。 此組態選項會限定 IntelliTest 可能會執行的連續嘗試數目，而不發出新的測試。 到達此數目後，它將停止探索。 
+雖然 IntelliTest 通常在短時間內可以找到許多有趣的測試輸入，但在一段時間後，它找不到其他任何新的測試輸入，因此不再發出單元測試。 此組態選項會限定 IntelliTest 可能會執行的連續嘗試數目，而不發出新的測試。 到達此數目後，它將停止探索。
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 **MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示： 
 
 * IntelliTest 將以不同的測試輸入呼叫參數化測試方法最多 **MaxRuns** 次。
-* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 
-  不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。 
+* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。 
 * IntelliTest 會計算找到的唯一執行路徑數目；此數目是透過 **MaxRunsWithUniquePaths** 選項進行限制。
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 在探索停止之前可能會遇到的例外狀況數目上限。
 
-這項探索界限背後的動機是要停止探索包含許多錯誤的程式碼。
-如果 IntelliTest 發現程式碼中有太多錯誤，即會停止探索。
+這項探索界限背後的動機是要停止探索包含許多錯誤的程式碼。 如果 IntelliTest 發現程式碼中有太多錯誤，即會停止探索。
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 會忽略超過設定的路徑界限 ([MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 和 [MaxConditions](#maxconditions)) 的執行路徑。
 
-這項探索界限背後的動機是要處理 (可能的) 非終止測試。 當 IntelliTest 觸達探索界限 (例如 [MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 或 [MaxConditions](#maxconditions)) 時，它會假設測試不是非終止處理序，而且不會在稍後造成堆疊溢位。
-這類測試案例可能會對其他測試架構造成問題，此屬性可用來防止 IntelliTest 發出潛在非終止處理序的測試案例或將造成堆疊溢位的測試案例。
+這項探索界限背後的動機是要處理 (可能的) 非終止測試。 當 IntelliTest 觸達探索界限 (例如 [MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack) 或 [MaxConditions](#maxconditions)) 時，它會假設測試不是非終止處理序，而且不會在稍後造成堆疊溢位。 這類測試案例可能會對其他測試架構造成問題，此屬性可用來防止 IntelliTest 發出潛在非終止處理序的測試案例或將造成堆疊溢位的測試案例。
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 **TestEmissionBranchHits** 設定可決定 IntelliTest 是否應該只考慮是否完全涵蓋分支 (**TestEmissionBranchHits = 1**)、測試是否涵蓋它一或兩次 (**TestEmissionBranchHits = 2**) 等等。
 
-**TestEmissionBranchHits=1** 會產生非常小的測試套件，以涵蓋 IntelliTest 可能觸達的所有分支。 特別是，此測試套件也會涵蓋它已觸達的所有基本區塊和陳述式。 
+**TestEmissionBranchHits=1** 會產生非常小的測試套件，以涵蓋 IntelliTest 可能觸達的所有分支。 特別是，此測試套件也會涵蓋它已觸達的所有基本區塊和陳述式。
 
 這個選項的預設值是 **TestEmissionBranchHits = 2**，它會產生更豐富多變的測試套件，同時也更適合用來偵測未來的迴歸錯誤。
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能要求。
+您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上張貼想法和功能要求。

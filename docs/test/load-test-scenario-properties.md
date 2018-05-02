@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 負載測試情節屬性 | Microsoft Docs
+title: Visual Studio 負載測試情節屬性
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
@@ -9,12 +9,13 @@ ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 144a875822034ef3ae10a4f0cb5f1771ebf61fb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2619ce42d80eb804929482ffc2c6fd431e238ca5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 

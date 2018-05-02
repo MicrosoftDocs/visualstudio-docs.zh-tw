@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立分散式負載測試的測試設定 | Microsoft Docs
+title: 在 Visual Studio 中建立分散式負載測試的測試設定
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30b9cf45b60b108e51cc1cbe5defd5e8d8cac0e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 

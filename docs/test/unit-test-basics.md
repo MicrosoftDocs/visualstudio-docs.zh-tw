@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 中的單元測試基本概念 | Microsoft Docs
+title: Visual Studio 中的單元測試基本概念
 ms.date: 2016-01-07
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -10,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6bfbd65a7f242a14f1aebf2c554d481aa570ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
