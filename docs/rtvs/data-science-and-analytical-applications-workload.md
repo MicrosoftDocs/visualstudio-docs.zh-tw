@@ -1,22 +1,23 @@
 ---
 title: 資料科學與分析應用程式工作負載
-description: Visual Studio 中的資料科學與分析應用程式工作負載結合了 Python、R、F# 及其對應的執行階段發行版本，包括 Anaconda。
+description: Visual Studio 工作負載結合了 Python、R、F# 及其對應的執行階段發行版本，包括 Anaconda。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs - vs-python
+ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
+- python
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>資料科學與分析應用程式工作負載
+# <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
 
 可透過 Visual Studio 安裝程式選取並安裝的資料科學與分析應用程式工作負載，結合了三種語言和其對應的執行階段發行版本：
 
