@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 Web 效能測試 API | Microsoft Docs
+title: Visual Studio 中的 Web 效能測試 API
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
 
@@ -23,7 +24,8 @@ ms.lasthandoff: 04/16/2018
  您也可以使用 Web 效能測試 API，以程式設計方式建立及儲存宣告式 Web 效能測試。 若要這樣做，請使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 類別。
 
 > [!TIP]
->  使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
+> 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
+
 
  您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱[如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md) 和[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 

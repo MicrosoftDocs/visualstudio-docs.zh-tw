@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中安裝自訂的診斷資料配接器 | Microsoft Docs
+title: 如何：在 Visual Studio 中安裝自訂的診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 907e65d8-0408-44b3-9e5e-e631892c1726
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9154760fff3305343d06e63150c49db06c720ef6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>如何：安裝自訂的診斷資料配接器
 

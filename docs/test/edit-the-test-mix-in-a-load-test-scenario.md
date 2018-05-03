@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中用於負載測試情節的測試混合 | Microsoft Docs
+title: Visual Studio 中用於負載測試情節的測試混合
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
 
@@ -77,12 +78,14 @@ ms.lasthandoff: 04/16/2018
  [均分] 按鈕用於平均配置所有項目間的百分比。 例如，如果您有三個項目，選擇 [均分] 會將百分比值設定為 34、33 與 33。
 
 > [!WARNING]
->  [均分] 按鈕會覆寫所有已鎖定的項目。
+> [均分] 按鈕會覆寫所有已鎖定的項目。
+
 
  您也可以不使用滑桿，直接將百分比值鍵入 **%** 資料行。 如果您直接輸入百分比值，其他項目就不會自動調整。
 
 > [!NOTE]
->  當總數相加沒有達到 100%，或輸入 **%** 資料行的百分比值有小數點時，滑桿便會停用。
+> 當總數相加沒有達到 100%，或輸入 **%** 資料行的百分比值有小數點時，滑桿便會停用。
+
 
  當您手動輸入百分比值時，應確認所有項目的總和為 100%。 當您儲存混合時，如果總和不是 100%，系統會提示您接受該百分比值，或返回予以調整。 如果您選擇接受此設定，則會按比例分配至 100%。  例如，如果您有兩個項目，而且手動設定為 80% 和 40%。第一個項目會被設定為 66.67% (80 除以 120)，而第二個項目則會被設定為 33.33% (40 除以 120)。
 

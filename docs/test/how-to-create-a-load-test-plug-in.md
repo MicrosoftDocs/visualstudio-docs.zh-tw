@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立負載測試外掛程式 | Microsoft Docs
+title: 在 Visual Studio 中建立負載測試外掛程式
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 
@@ -102,7 +103,8 @@ ms.lasthandoff: 04/16/2018
 下列程式碼會顯示在 LoadTestFinished 事件發生後，執行自訂程式碼的負載測試外掛程式。 如果這段程式碼是在遠端電腦的測試代理程式上執行，而且測試代理程式沒有 localhost SMTP 服務，負載測試就會維持在「進行中」的狀態，因為系統將會開啟訊息方塊。
 
 > [!NOTE]
->  下列程式碼會要求您加入 System.Windows.Forms 的參考。
+> 下列程式碼會要求您加入 System.Windows.Forms 的參考。
+
 
 ```csharp
 using System;

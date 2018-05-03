@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的 Web 效能測試外掛程式 | Microsoft Docs
+title: 建立 Visual Studio 的 Web 效能測試外掛程式
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +11,13 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7cb0eea7c6ebb32d0de4317a92fb83a8f7f2f10
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
 

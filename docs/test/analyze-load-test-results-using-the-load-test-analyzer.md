@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析負載測試結果 | Microsoft Docs
+title: 在 Visual Studio 中分析負載測試結果
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7add3789d3c48fb405818f50efd47bb83cb9f899
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06c9125de718ddada277985513efdb5e0590e4c7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 

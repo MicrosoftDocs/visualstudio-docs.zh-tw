@@ -1,8 +1,9 @@
 ---
-title: 靜態協助程式類別 | Microsoft IntelliTest 開發人員測試工具 | Microsoft Docs
+title: 靜態協助程式類別 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -32,8 +33,7 @@ IntelliTest 提供一組靜態的協助程式類別，可以在撰寫[參數化�
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-[參數化單元測試](test-generation.md#parameterized-unit-testing)中表達假設用的靜態類別，例如[先決條件](test-generation.md#precondition)。
-此類別的方法可以用來篩選掉不要的測試輸入。
+[參數化單元測試](test-generation.md#parameterized-unit-testing)中表達假設用的靜態類別，例如[先決條件](test-generation.md#precondition)。 此類別的方法可以用來篩選掉不要的測試輸入。
 
 如果某些測試輸入中不含假設條件，就會擲回 **PexAssumeFailedException**。 這會導致以無訊息模式忽略測試。
 
@@ -173,4 +173,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能要求。
+您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上張貼想法和功能要求。

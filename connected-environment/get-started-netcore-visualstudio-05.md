@@ -1,18 +1,19 @@
 ---
 title: 使用 Visual Studio 在雲端中以使用 Kubernetes 的容器建立 .NET Core 開發環境 - 步驟 5 - 呼叫其他的容器 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>使用 .NET Core 和 Visual Studio 開始使用已連線的環境
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/19/2018
 1. 在「不同的 Visual Studio 視窗」中開啟專案 `mywebapi`。
 1. 如同您之前對 `webfrontend` 專案所做的那樣，從 [啟動設定] 下拉式清單中選取 [Connected Environment for AKS] (適用於 AKS 之已連線的環境)。 此時，請選取您已經建立的同一個開發環境，而不是建立新的開發環境。 如同前文，保留空間的預設值為 `mainline`，然後按一下 [確定]。 在 [輸出] 視窗中，您會發現 Visual Studio 在開發環境中開始「暖機」這項新的服務，以在您啟動偵錯時加速各項活動。
 1. 按 F5，等候建置和部署服務。 當 Visual Studio 狀態列變成橙色時，您就知道它已就緒
-1. 記下 [輸出] 視窗之 [Connected Environment for AKS] (適用於 AKS 之已連線的環境) 窗格中所顯示的端點 URL，它看起來類似 http://localhost:\<連接埠號碼\>。 容器可能看起來像是在本機執行，但實際上是在我們的 Azure 開發環境中執行。
+1. 記下 [輸出] 視窗之 [Connected Environment for AKS] \(適用於 AKS 之已連線的環境) 窗格中所顯示的端點 URL，它看起來類似 http://localhost:\<連接埠號碼\>。 容器可能看起來像是在本機執行，但實際上是在我們的 Azure 開發環境中執行。
 1. 當 `mywebapi` 就緒後，請用您的瀏覽器開啟 localhost 位址，將 `/api/values` 附加至 URL，以叫用 `ValuesController` 的預設 GET API。 
 1. 如果所有步驟都成功，您應該能夠看見來自 `mywebapi` 服務的回應，看起來像這樣。
 

@@ -1,9 +1,9 @@
 ---
-title: 登入 Visual Studio | Microsoft Docs
+title: 登入 Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 04/16/2018
 
 - **存取 Visual Studio Dev Essentials 方案** - 此方案包含免費的軟體供應項目、訓練、支援等等。 如需詳細資訊，請查看 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 。
 
-- **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請查看 [Visual Studio 中的同步處理設定](../ide/synchronized-settings-in-visual-studio.md)。
+- **同步處理您的 Visual Studio 設定** - 您自訂的設定 (例如按鍵繫結關係、視窗配置和色彩佈景主題)，會在您從任何裝置登入 Visual Studio 時立即套用。 請參閱 [Visual Studio 中的同步設定](../ide/synchronized-settings-in-visual-studio.md)。
 
 - **解除鎖定 Visual Studio Community 版本** - 如果 Community 版本的安裝提示您提供授權，請登入 IDE 來自行解除鎖定。
 
 - **延長 Visual Studio 試用期** - 您可以額外使用 90 天的 Visual Studio Professional 或 Visual Studio Enterprise，而不受限於 30 天的試用期。
 
-- **使用與 MSDN 或 Visual Studio Team Services 訂閱關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱 [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- **使用與 MSDN 或 Visual Studio Team Services 訂閱關聯的帳戶，就可以解除鎖定 Visual Studio**。 請參閱[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
 - 對於同一個帳戶不會再次提示輸入認證，即可在 IDE 中**自動連接到 Azure 和 Visual Studio Team Services 等服務**。
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 
 第一次啟動 Visual Studio 時，系統會要求您登入並提供一些基本註冊資訊。 您應該選擇 Microsoft 帳戶或最能代表您的工作或學校帳戶。 如果您沒有任何一個這樣的帳戶，則可以免費建立一個 Microsoft 帳戶。 請查看 [如何註冊 Microsoft 帳戶？](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需同步設定的清單，請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 您之後可以在 Visual Studio 中開啟 [工具]、[選項] 功能表以變更設定。
+接下來，選擇您在 Visual Studio 中要使用的 UI 設定和色彩佈景主題。 Visual Studio 會記住這些設定，並在您已登入的所有 Visual Studio 環境中同步處理這些設定。 如需同步設定的清單，請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 您之後可以在 Visual Studio 中開啟 [工具] > [選項] 功能表以變更設定。
 
 提供設定之後會啟動 Visual Studio，您也將完成登入並準備開始使用。 若要確認您是否已登入，請在 Visual Studio 環境的右上角尋找您的名稱。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-change-your-profile-information"></a>若要變更您的設定檔資訊
 
-1. 移至 [檔案]、[帳戶設定]，並選擇 [管理 Visual Studio 設定檔] 連結。
+1. 移至 [檔案] > [帳戶設定]，並選擇 [管理 Visual Studio 設定檔] 連結。
 
 1. 在瀏覽器視窗中，選取 [編輯設定檔] 並變更所要的設定。
 
@@ -61,9 +61,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您在登入時遇到任何問題，請參閱[帳戶支援頁面](https://www.visualstudio.com/subscriptions/support/)來取得協助。
+如果您在登入時遇到任何問題，請參閱[帳戶支援](https://www.visualstudio.com/subscriptions/support/)頁面來取得協助。
 
 ## <a name="see-also"></a>另請參閱
 
-[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+* [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

@@ -1,20 +1,19 @@
 ---
-title: Visual Studio IDE 導覽 |Microsoft Docs
-ms.custom: ''
+title: Visual Studio IDE 導覽
 ms.date: 11/15/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9dfa3ba8f4e87b842d2ba8677f76aabd4931d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd72de016e9f44987fae43e7b49820e21af0a288
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -24,11 +23,11 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="start-page"></a>起始頁
 
-啟動 Visual Studio 之後，首先會看到的畫面應該是「起始頁」。 起始頁有如一個「中樞」，可協助您更快找到所需的命令和專案檔。 [最近使用的] 區段會顯示您最近使用的專案和資料夾。 在 [新增專案] 底下，您可以按一下連結來開啟 [新增專案] 對話方塊，或在 [開啟] 底下，您可以開啟現有的專案或程式碼資料夾。 右側是最新的開發人員新聞摘要。
+啟動 Visual Studio 之後，首先會看到的畫面應該是**起始頁**。 **起始頁**有如一個「中樞」，可協助您更快找到所需的命令和專案檔。 [最近使用的] 區段會顯示您最近使用的專案和資料夾。 在 [新增專案] 底下，您可以按一下連結來開啟 [新增專案] 對話方塊，或在 [開啟] 底下，您可以開啟現有的專案或程式碼資料夾。 右側是最新的開發人員新聞摘要。
 
 ![VS 起始頁](media/quickstart-IDE-start-page.png)
 
-關閉起始頁之後若要再次顯示，可以從 [檔案] 功能表重新開啟起始頁。
+關閉**起始頁**之後若要再次顯示，可以從 [檔案] 功能表重新開啟起始頁。
 
 ![檔案功能表](media/quickstart-IDE-file-menu-large.png)
 
@@ -38,11 +37,11 @@ ms.lasthandoff: 04/16/2018
 
 1. 在 [新增專案] 對話方塊中，接受預設專案名稱並選擇 [確定]。
 
-   系統隨即建立專案，並在 [編輯器] 視窗中開啟名為 **Program.cs** 或 **Program.vb** 的檔案。 [編輯器] 會顯示檔案的內容，而且您在 Visual Studio 中撰寫程式碼的工作也大部分都在此進行。
+   系統隨即建立專案，並在 [編輯器] 視窗中開啟名為 *Program.cs* 或 *Program.vb* 的檔案。 [編輯器] 會顯示檔案的內容，而且您在 Visual Studio 中撰寫程式碼的工作大部分都在此進行。
 
 ## <a name="solution-explorer"></a>底下提供說明，包括方案總管
 
-[方案總管] 會以圖形方式來顯示專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以在方案總管中瀏覽階層並移至某個檔案。
+[方案總管] 會以圖形方式來顯示專案、方案或程式碼資料夾中的檔案和資料夾階層。 您可以在 [方案總管] 中瀏覽階層並巡覽至某個檔案。
 
 ![底下提供說明，包括方案總管](media/quickstart-IDE-solution-explorer.png)
 
@@ -72,7 +71,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 透過 [快速啟動] 方塊可以快速且輕鬆地執行 IDE 中大部分的工作。 您可以輸入想要執行工作的相關文字，它就會顯示與該文字相關的選項清單。 例如，假設我們想要增加建置輸出的詳細資訊，以顯示建置實際執行工作的相關額外記錄資訊：
 
-1. 在 [快速啟動] 方塊中輸入 `verbosity`，然後選擇 [選項] 類別底下的 [專案和方案] -> [建置並執行]。
+1. 在 [快速啟動] 方塊中輸入 `verbosity`，然後選擇 [選項] 分類底下的 [專案和方案] -> [建置並執行]。
 
    ![快速啟動方塊](media/quickstart-IDE-quick-launch.png)
 
@@ -86,7 +85,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 ## <a name="send-feedback-menu"></a>[傳送意見反應] 功能表
 
-如果您在使用 Visual Studio 時遇到任何問題，或如果您有改進產品的建議，請使用位於 IDE 頂端 [快速啟動] 方塊旁邊的 [傳送意見反應] 功能表。
+如果您在使用 Visual Studio 時遇到任何問題，或如果您有改善產品的建議，請使用位於 IDE 頂端 [快速啟動] 方塊旁邊的 [傳送意見反應] 功能表。
 
 ![[傳送意見反應] 功能表](media/quickstart-IDE-send-feedback.png)
 
@@ -94,7 +93,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 我們已經介紹了 Visual Studio IDE 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 
-- 請瀏覽 VS 文件中的＜一般使用者介面項目＞小節，其中會進一步討論[錯誤清單](../ide/reference/error-list-window.md)、[輸出視窗](../ide/reference/output-window.md)、[屬性視窗](../ide/reference/properties-window.md)和[選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)等視窗
+- 請瀏覽 VS 文件中的＜**一般使用者介面項目**＞一節，其中會進一步討論[錯誤清單](../ide/reference/error-list-window.md)、[輸出視窗](../ide/reference/output-window.md)、[屬性視窗](../ide/reference/properties-window.md)和[選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)等視窗
 
 - 在 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)中進行更深入的 IDE 導覽，甚至嘗試一些偵錯工作
 

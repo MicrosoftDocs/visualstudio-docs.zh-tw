@@ -1,6 +1,7 @@
 ---
-title: 維護 Visual Studio 中的應用程式安全性 | Microsoft Docs
+title: 維護 Visual Studio 中的應用程式安全性
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb75bfe3c9e479e67c766137ee84e919f9a6710
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee7a90804c2161fe927bebc2b2f1af45862b8ccd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="maintaining-security"></a>維護安全性
+# <a name="maintain-security"></a>維護安全性
 
 常有人說，安全性的代價就是長期的警覺， 儘管您在應用程式的設計和開發過程中已經對安全性投注極大的心力，仍應該假設部署之後會產生安全性問題。 藉由稽核應用程式和分析事件記錄檔的方式，您可能會發現一些之前隱藏的問題。
 

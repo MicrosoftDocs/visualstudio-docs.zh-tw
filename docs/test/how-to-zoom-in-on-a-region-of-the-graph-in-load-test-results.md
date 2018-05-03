@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中放大負載測試結果圖形 | Microsoft Docs
+title: 在 Visual Studio 中放大負載測試結果圖形
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e2379161051c821af07b6da5b102177178a0d7f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖形中的某個區域
 

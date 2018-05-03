@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 效能測試的要求層級外掛程式 | Microsoft Docs
+title: 在 Visual Studio 中建立 Web 效能測試的要求層級外掛程式
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ea574f2f0c9b4d3f0f6da029433b5b600a400702
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac50f956ed45f42f77638146c1340c0ed90f68fa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 

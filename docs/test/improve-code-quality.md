@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 測試工具 | Microsoft Docs
+title: Visual Studio 測試工具
 ms.date: 03/16/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dec57e0f51b9033d9808c36a3ed9ed59c0221131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 

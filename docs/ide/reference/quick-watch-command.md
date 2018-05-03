@@ -1,10 +1,9 @@
 ---
-title: 快速監看式命令 | Microsoft Docs
-ms.custom: ''
+title: 快速監看式命令
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.quickwatch
 helpviewer_keywords:
@@ -16,37 +15,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75ac6c430d34dabdba3a6bebcce78c7c5b9817b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 957f521b23bc56a6bfa4f8de315f130d5f82d8d3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-watch-command"></a>快速監看式命令
-可顯示[快速監看式](../../debugger/watch-and-quickwatch-windows.md)視窗的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-Debug.QuickWatchq [text]  
-```  
-  
-## <a name="arguments"></a>引數  
- `text`  
- 選擇性。 要新增至 [快速監看式] 對話方塊的文字。  
-  
-## <a name="remarks"></a>備註  
- 如果省略 `text`，則會將游標處目前選取的文字或字組新增至監看式視窗。  
-  
-## <a name="example"></a>範例  
-  
-```  
->Debug.QuickWatch  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中使用監看式及快速監看式視窗設定監看式變數](../../debugger/watch-and-quickwatch-windows.md)   
- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [命令視窗](../../ide/reference/command-window.md)   
- [尋找/命令方塊](../../ide/find-command-box.md)   
- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+可顯示[快速監看式](../../debugger/watch-and-quickwatch-windows.md)視窗的 [運算式] 欄位中所選取或指定的文字。 您可以使用此對話方塊來計算偵錯工具辨識的變數或運算式目前的值，或暫存器的內容。 此外，您可以變更任何非 const 變數的值或任何暫存器的內容。
+
+## <a name="syntax"></a>語法
+
+```
+Debug.QuickWatchq [text]
+```
+
+## <a name="arguments"></a>引數
+ `text`
+
+ 選擇性。 要新增至 [快速監看式] 對話方塊的文字。
+
+## <a name="remarks"></a>備註
+ 如果省略 `text`，則會將游標處目前選取的文字或字組新增至監看式視窗。
+
+## <a name="example"></a>範例
+
+```
+>Debug.QuickWatch
+```
+
+## <a name="see-also"></a>請參閱
+
+- [在 Visual Studio 中使用監看式及快速監看式視窗在變數設定監看式](../../debugger/watch-and-quickwatch-windows.md)
+- [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
+- [命令視窗](../../ide/reference/command-window.md)
+- [尋找/命令方塊](../../ide/find-command-box.md)
+- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

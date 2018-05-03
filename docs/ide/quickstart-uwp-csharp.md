@@ -2,6 +2,7 @@
 title: 快速入門：在 Visual Studio 中使用 XAML 和 C# 來建立您的第一個通用 Windows 平台應用程式 | Microsoft Docs
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>快速入門：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 
@@ -76,17 +77,17 @@ ms.lasthandoff: 04/16/2018
 
    ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](../ide/media/uwp-toolbox-add-button-control.png)
 
-  如果您查看「XAML 編輯器」中的程式碼，就會看到在該處也新增了 Button：
+  如果您查看 [XAML 編輯器] 中的程式碼，就會看到在該處也新增了 Button：
 
   ![按一下 [Button] 控制項，然後將它拖曳至設計畫布](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>為按鈕新增標籤
 
-1. 在「XAML 編輯器」中，將 Button Content 值從 "Button" 變更為 "Hello World!"
+1. 在 [XAML 編輯器] 中，將 Button Content 值從 "Button" 變更為 "Hello World!"
 
    ![將 Button Content 值變更為 Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. 請注意，「XAML 設計工具」中的按鈕也發生變更。
+2. 請注意，[XAML 設計工具] 中的按鈕也會變更。
 
    ![按鈕在設計畫布上變更為 Hello World](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 按兩下設計畫布上的按鈕控制項。
 
-2.  編輯 *MainPage.xaml.cs* (程式碼後置頁面) 中的事件處理常式程式碼。
+2. 編輯 *MainPage.xaml.cs* (程式碼後置頁面) 中的事件處理常式程式碼。
 
  這是開始有趣的地方。 預設的事件處理常式看起來會像這樣：
 
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
 
 #### <a name="what-did-we-just-do"></a>我們剛剛做了什麼？
 
-程式碼使用一些 Windows API 來建立語音合成物件，然後提供一些文字給它說出。 (如需有關使用 SpeechSynthesis 的詳細資訊，請參閱 <xref:System.Speech.Synthesis>)。
+程式碼使用一些 Windows API 來建立語音合成物件，然後提供一些文字給它說出。 (如需使用 `SpeechSynthesis` 的詳細資訊，請參閱 <xref:System.Speech.Synthesis>)。
 
 ## <a name="run-the-application"></a>執行應用程式
 

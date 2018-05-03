@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為 Web 效能測試撰寫自訂驗證規則程式碼 | Microsoft Docs
+title: 在 Visual Studio 中為 Web 效能測試撰寫自訂驗證規則程式碼
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 下列程式碼顯示自訂驗證規則的實作。 這個驗證規則會模擬預先定義之「必要標記」驗證規則的行為。 可以使用這個範例做為您自訂驗證規則的起點。
 
 > [!WARNING]
->  自訂驗證器之程式碼中的公用屬性不可有 null 值。
+> 自訂驗證器之程式碼中的公用屬性不可有 null 值。
 
 ```csharp
 using System;

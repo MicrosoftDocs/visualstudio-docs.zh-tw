@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 中的方案和專案 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 中的方案和專案
 ms.date: 10/5/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11441c826a316d995e75f2b6c79232f19985c17b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6be610e60c35ef22306398f56375bfa6185e1e0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -41,31 +41,31 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > 您不需要使用 Visual Studio 中的方案或專案來編輯、建置和偵錯程式碼。 您可以只在 Visual Studio 中開啟包含原始程式檔的資料夾並開始編輯。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
-專案定義於具有 .vbproj、.csproj 或 .vcxproj 這類副檔名的 XML 檔案。 此檔案包含虛擬資料夾階層，以及專案中所有項目的路徑。 它也包含組建設定。
+專案定義於具有 *.vbproj*、*.csproj* 或 *.vcxproj* 這類副檔名的 XML 檔案。 此檔案包含虛擬資料夾階層，以及專案中所有項目的路徑。 它也包含組建設定。
 
 > [!TIP]
-> 若要在 Visual Studio 中查看專案檔的內容，請先卸載專案，方法是在方案總管中選取專案名稱，然後從操作功能表或右鍵功能表中選擇 [卸載專案]。 然後，再次開啟內容功能表並選擇 [編輯 \<專案名稱\>]。
+> 若要在 Visual Studio 中查看專案檔的內容，請先卸載專案，方法是在 [方案總管] 中選取專案名稱，然後從操作功能表或右鍵功能表中選擇 [卸載專案]。 然後，再次開啟內容功能表並選擇 [編輯 \<專案名稱\>]。
 
 在 Visual Studio 中，[方案總管] 會使用專案檔來顯示專案內容與設定。 當您編譯專案時，MSBuild 引擎會使用專案檔來建立可執行檔。 您也可以自訂專案來產生其他類型的輸出。
 
 ## <a name="solutions"></a>方案
 
-「方案」內所含的專案。 方案包含一或多個相關專案，以及組建資訊、Visual Studio 視窗設定與任何未與特定專案建立關聯的其他檔案。 方案是由具有自己獨特格式的文字檔 (副檔名為 .sln) 所描述；它通常不適合手動編輯。
+「方案」內所含的專案。 方案包含一或多個相關專案，以及組建資訊、Visual Studio 視窗設定與任何未與特定專案建立關聯的其他檔案。 方案是由具有自己獨特格式的文字檔 (副檔名為 *.sln*) 所描述；它通常不適合手動編輯。
 
-方案具有關聯的 *.suo* 檔案，其中儲存每個專案使用者的設定、喜好設定與組態資訊。
+方案具有相關聯的 *.suo* 檔案，其中儲存每個專案使用者的設定、喜好設定與組態資訊。
 
-## <a name="creating-new-projects"></a>建立新專案
+## <a name="create-new-projects"></a>建立新專案
 
-建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 這些範本是當您選擇 [檔案]、[新增]、[專案] 或 [檔案]、[新增]、[網站] 時，在 [新增專案] 或 [新增網站] 對話方塊中看到的內容。 如需詳細資訊，請參閱[建立方案與專案](../ide/creating-solutions-and-projects.md)。
+建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 這些範本是當您選擇 [檔案] > [新增] > [專案] 或 [檔案] > [新增] > [網站] 時，在 [新增專案] 或 [新增網站] 對話方塊中看到的內容。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)。
 
-您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
+您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案與項目範本](../ide/creating-project-and-item-templates.md)。
 
-## <a name="managing-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
+## <a name="manage-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
 
-建立新專案之後，即可使用方案總管來檢視和管理專案與方案，以及其相關聯項目。 下圖顯示方案總管與包含兩個專案的 C# 方案。
+建立新專案之後，即可使用方案總管來檢視和管理專案與方案，以及其相關聯項目。 下圖顯示 [方案總管] 與包含兩個專案的 C# 方案。
 
 ![方案總管](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -1,7 +1,7 @@
 ---
-title: 使用 Visual Studio 以暫存變數的值來取代暫存變數 | Microsoft Docs
-ms.custom: ''
+title: 使用 Visual Studio 以暫存變數的值來取代暫存變數
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 12cce111e3c66018cd10e7e50e9018dc9dbfc4d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -65,4 +65,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[重構](../refactoring-in-visual-studio.md)
+- [重構](../refactoring-in-visual-studio.md)

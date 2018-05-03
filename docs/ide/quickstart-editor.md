@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中編輯簡介 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中編輯簡介
 ms.date: 11/30/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f627d7157972e277589d2edf07309190c6430d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
 
@@ -35,13 +35,13 @@ ms.lasthandoff: 04/16/2018
 
    使用 C# 類別的基本架構，在編輯器中開啟新的檔案。
 
-## <a name="using-code-snippets"></a>使用程式碼片段
+## <a name="use-code-snippets"></a>使用程式碼片段
 
 Visual Studio 提供有用的程式碼片段，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 C#、Visual Basic 和 C++)。 請在檔案中新增 C# `void Main` 程式碼片段。
 
 1. 將資料指標放在 `Class1` 建構函式的右大括號下方，然後輸入字元 `svm`。
 
-   您會看到所出現的 IntelliSense 對話方塊包含 `svm` 程式碼片段的相關資訊。
+   您會看到所出現的 **IntelliSense** 對話方塊包含 `svm` 程式碼片段的相關資訊。
 
    ![IntelliSense 程式碼片段](media/quickstart-intellisense-snippet.png)
 
@@ -49,13 +49,13 @@ Visual Studio 提供有用的程式碼片段，讓您可以用來快速且輕鬆
 
    您會看到在檔案中新增 `static void Main()` 方法簽章。 `Main()` 方法是 C# 應用程式的進入點。
 
-可用的程式碼片段會因不同語言而異。 您可以依序選擇 [編輯]、[IntelliSense] 和 [插入程式碼片段]，然後選擇您語言的資料夾，以查看程式設計語言的可用程式碼片段。 針對 C#，清單如下：
+可用的程式碼片段會因不同語言而異。 您可以選擇 [編輯] > [IntelliSense] > [插入程式碼片段]，然後選擇您語言的資料夾，以查看程式設計語言的可用程式碼片段。 針對 C#，清單如下：
 
 ![C# 程式碼片段清單](media/quickstart-code-snippet-list.png)
 
 此清單所包含的程式碼片段用於建立類別、建構函式、`Console.WriteLine()`、`for` 迴圈、`if` 和 `switch` 陳述式等等。
 
-## <a name="commenting-out-code"></a>將程式碼註解化
+## <a name="comment-out-code"></a>註解化程式碼
 
 工具列提供數個按鈕，讓您與您的程式碼一樣更具生產力。 例如，您可以切換 IntelliSense 完成模式、增加或減少縮排、設定書籤，或將程式碼註解化。 在本節中，我們會將一些不想要編譯的程式碼註解化。
 
@@ -91,7 +91,7 @@ Visual Studio 提供有用的程式碼片段，讓您可以用來快速且輕鬆
 
    C# 註解字元 `//` 會新增至每個選取行的開頭，以將程式碼註解化。
 
-## <a name="collapsing-code-blocks"></a>摺疊程式碼區塊
+## <a name="collapse-code-blocks"></a>摺疊程式碼區塊
 
 我們不想要看到所產生 `Class1` 的空白建構函式，以整理我們的程式碼檢視，那麼讓我們摺疊它。 選擇建構函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將資料指標放在建構函式程式碼中的任何位置，然後按 **Ctrl**+**M**、**Ctrl**+**M**。
 
@@ -99,7 +99,7 @@ Visual Studio 提供有用的程式碼片段，讓您可以用來快速且輕鬆
 
 程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在其內有加號的相同灰色方塊，或再次按 **Ctrl**+**M**、**Ctrl**+**M**。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的方法或整個類別。
 
-## <a name="viewing-symbol-definitions"></a>檢視符號定義
+## <a name="view-symbol-definitions"></a>檢視符號定義
 
 Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆。其中一種方式是導覽至包含定義的檔案，例如，在參考符號的任何位置選擇 [移至定義]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 請查看 `string` 的定義。
 
@@ -111,7 +111,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 1. 選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
 
-## <a name="using-intellisense-to-complete-words"></a>使用 IntelliSense 自動完成文字
+## <a name="use-intellisense-to-complete-words"></a>使用 IntelliSense 自動完成文字
 
 [IntelliSense](../ide/using-intellisense.md) 是您撰寫程式碼時的重要資源。 它可以顯示類型可用成員的相關資訊，或方法之不同多載的參數詳細資料。 在您鍵入足夠的字元來釐清文字之後，也可以使用 IntelliSense 自動完成文字。 讓我們新增一行程式碼，以將已排序的字串輸出至主控台視窗。
 
@@ -136,7 +136,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
    }
    ```
 
-## <a name="refactoring-a-name"></a>重構名稱
+## <a name="refactor-a-name"></a>重構名稱
 
 沒有人第一次就取得正確的程式碼，而且您可能想要變更的其中一個項目就是變數或方法的名稱。 讓我們來試試看 Visual Studio 的[重構](../ide/refactoring-in-visual-studio.md)功能，以將 `_words` 變數重新命名為 `words`。
 
@@ -154,7 +154,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 ## <a name="next-steps"></a>後續步驟
 
-您已經完成這個 Visual Studio 編輯器快速入門！ 接下來，您可以試試看一些其他 Visual Studio IDE 快速入門、查看一些[導覽程式碼](../ide/navigating-code.md)的方式，或查看我們所查看功能之相關資訊的連結。 否則，高興撰寫程式碼！
+您已經完成這個 Visual Studio 編輯器快速入門！ 接下來，您可以試試看一些其他 Visual Studio IDE 快速入門、查看一些[巡覽程式碼](../ide/navigating-code.md)的方式，或查看我們所查看功能之相關資訊的連結。 否則，高興撰寫程式碼！
 
 ## <a name="see-also"></a>另請參閱
 

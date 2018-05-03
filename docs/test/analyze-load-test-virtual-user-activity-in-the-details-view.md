@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析負載測試虛擬使用者活動 | Microsoft Docs
+title: 在 Visual Studio 中分析負載測試虛擬使用者活動
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5f874b070e726374a20e821508115b5798f40b80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 

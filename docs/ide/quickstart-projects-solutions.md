@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 中的專案和解決方案簡介 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 中的專案和解決方案簡介
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
 
@@ -53,13 +53,13 @@ ms.lasthandoff: 04/16/2018
 
 現在讓我們將第一個專案新增至解決方案。 我們將從空白專案開始，並將需要的項目新增至專案。
 
-1. 在方案總管中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+1. 在 [方案總管] 中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
 1. 在左窗格中，展開 [Visual C#]，然後選擇 [Windows 傳統桌面]。 然後，在中間窗格中，選擇 [空白專案 (.NET Framework)]。 將專案命名為 "QuickDate"，然後選擇 [確定] 按鈕。
 
-   名為 "QuickDate" 的專案隨即出現在方案總管中該解決方案的下方。 它目前包含稱為 **App.config** 的單一檔案。
+   名為 "QuickDate" 的專案隨即出現在方案總管中該解決方案的下方。 它目前包含稱為 *App.config* 的單一檔案。
 
    > [!NOTE]
    > 如果您在對話方塊的左窗格中看不到 [Visual C#]，則需要安裝 **.NET 桌面開發** 工作負載。 簡單的作法是選擇對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 **Visual Studio Installer** 啟動之後，選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
@@ -70,15 +70,15 @@ ms.lasthandoff: 04/16/2018
 
 我們有空白專案 &mdash; 讓我們新增程式碼檔案。
 
-1. 在方案總管 中，從 [QuickDate] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增項目]。
+1. 在 [方案總管] 中，從 [QuickDate] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增項目]。
 
    [新增項目] 對話方塊隨即開啟。
 
 1. 展開 [Visual C# 項目]，然後選擇 [程式碼]。 在中間窗格中，選擇 [類別]。 將類別命名為 "Calendar"，然後選擇 [新增] 按鈕。
 
-   名為 "Calendar.cs" 的檔案會新增至專案。 一端的 **.cs** 是提供給 C# 程式碼檔案的副檔名。 此檔案會出現在方案總管的視覺效果專案階層中，並在編輯器中開啟其內容。
+   名為 *Calendar.cs* 的檔案會新增至專案。 一端的 *.cs* 是提供給 C# 程式碼檔案的副檔名。 此檔案會出現在方案總管的視覺效果專案階層中，並在編輯器中開啟其內容。
 
-1. 以下列程式碼取代 **Calendar.cs** 檔案的內容。
+1. 以下列程式碼取代 *Calendar.cs* 檔案的內容。
 
    ```csharp
    using System;
@@ -110,13 +110,13 @@ ms.lasthandoff: 04/16/2018
 
 請將單元測試專案新增至解決方案。 現在我們先從專案範本開始，因此不需要將額外程式碼檔案新增至專案。
 
-1. 在方案總管中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+1. 在 [方案總管] 中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
 1. 在左窗格中，展開 [Visual Basic]，然後選擇 [測試] 類別。 在中間窗格中，選擇 [單元測試專案 (.NET Framework)]。 將專案命名為 "QuickTest"，然後選擇 [確定] 按鈕。
 
-   第二個專案會新增至**方案總管**，並在編輯器中開啟名為 **UnitTest1.vb** 的檔案。 **.vb** 是提供給 Visual Basic 程式碼檔案的副檔名。
+   第二個專案會新增至**方案總管**，並在編輯器中開啟名為 *UnitTest1.vb* 的檔案。 *.vb* 是提供給 Visual Basic 程式碼檔案的副檔名。
 
    ![包含兩個專案的方案總管](media/quickstart-projects-solution-explorer.png)
 
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="add-test-code"></a>新增測試程式碼
 
-1. 我們現在會將測試程式碼新增至 Visual Basic 程式碼檔案。 以下列程式碼取代 **UnitTest1.vb** 檔案的內容。
+1. 我們現在會將測試程式碼新增至 Visual Basic 程式碼檔案。 以下列程式碼取代 *UnitTest1.vb* 檔案的內容。
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -150,7 +150,7 @@ ms.lasthandoff: 04/16/2018
 
    您會在一些程式碼下方看到紅色「曲線」。 我們將修正這個錯誤，方法是將測試專案設為 **QuickDate** 專案的 [friend 組件](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)。
 
-1. 回到 **QuickDate** 專案，開啟尚未開啟的 **Calendar.cs** 檔案，並新增下列 using 陳述式和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性，以解決測試專案中的錯誤。
+1. 回到 **QuickDate** 專案，開啟尚未開啟的 *Calendar.cs* 檔案，並新增下列 using 陳述式和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性，以解決測試專案中的錯誤。
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -168,7 +168,7 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 
 1. 在方案總管中，選取 **QuickTest** 專案。 從右鍵功能表或操作功能表中，選擇 [屬性]，或只按 **Alt**+**Enter** 鍵。
 
-   專案的屬性頁會在 [應用程式] 索引標籤上開啟。請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生可執行檔的名稱會從 **QuickTest.exe** 變更為您選擇的任何名稱。
+   專案的屬性頁會在 [應用程式] 索引標籤上開啟。請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生可執行檔的名稱會從 *QuickTest.exe* 變更為您選擇的任何名稱。
 
    ![專案屬性](media/quickstart-projects-properties.png)
 
@@ -185,7 +185,7 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 - [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
 - [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)
 - [快速入門：在編輯器中撰寫程式碼](../ide/quickstart-editor.md)
-- [管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)
+- [管理專案及解決方案屬性](../ide/managing-project-and-solution-properties.md)
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

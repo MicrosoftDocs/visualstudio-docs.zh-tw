@@ -1,9 +1,8 @@
 ---
-title: 如何：建立類型之間的關聯 (類別設計工具) | Microsoft Docs
-ms.custom: ''
+title: 如何：建立類型之間的關聯 (類別設計工具)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -19,41 +18,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d81e2f3bb671f5c88b08bf1cb26db42a6c4383a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>如何：建立類型之間的關聯 (類別設計工具)
-[類別設計工具] 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。  
-  
-雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。  
-  
+
+[類別設計工具] 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。
+
+雖然您可以將所有欄位或屬性顯示為關聯，但是針對要在圖表上突顯的部分而只將重要成員顯示為關聯才更具意義  (您可以隱藏次要成員或將其顯示為一般成員)。
+
 > [!NOTE]
->  [類別設計工具] 只支援單向關聯。  
-  
-### <a name="to-define-an-association-line-in-the-class-diagram"></a>若要在類別圖中定義關聯線  
-  
-1.  在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。  
-  
-2.  在您要以關聯連結的兩個圖案之間繪製一條線。  
-  
+> [類別設計工具] 只支援單向關聯。
+
+## <a name="to-define-an-association-line-in-the-class-diagram"></a>若要在類別圖中定義關聯線
+
+1.  在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。
+
+2.  在您要以關聯連結的兩個圖案之間繪製一條線。
+
      第一個類別中就會建立新的屬性。 這個屬性會以預設名稱顯示為關聯線 (而不是圖案區間中的屬性)。 關聯線所指的圖案即為其類型。
-  
-### <a name="to-change-the-name-of-an-association"></a>若要變更關聯名稱  
-  
--   在圖表介面上按一下關聯線的標籤，然後加以編輯。  
-  
- \-或-  
-  
-1.  按一下其內含屬性顯示為關聯的圖案。  
-  
-     該圖案就會取得焦點，而且其成員會顯示於 [類別細節] 視窗和 [屬性] 視窗中。  
-  
-2.  在 [類別細節] 視窗或 [屬性] 視窗中編輯該屬性的 [名稱] 欄位，然後按 Enter 鍵。  
-  
-     [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。  
-  
+
+## <a name="to-change-the-name-of-an-association"></a>若要變更關聯名稱
+
+-   在圖表介面上按一下關聯線的標籤，然後加以編輯。
+
+ \-或-
+
+1.  按一下其內含屬性顯示為關聯的圖案。
+
+     該圖案就會取得焦點，而且其成員會顯示於 [類別細節] 視窗和 [屬性] 視窗中。
+
+2.  在 [類別細節] 視窗或 [屬性] 視窗中編輯該屬性的 [名稱] 欄位，然後按 Enter 鍵。
+
+     [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。
+
 ## <a name="see-also"></a>另請參閱
-[如何：在成員標記法和關聯標記法之間變更](how-to-change-between-member-notation-and-association-notation.md)
+
+- [如何：在成員標記法和關聯標記法之間變更](how-to-change-between-member-notation-and-association-notation.md)

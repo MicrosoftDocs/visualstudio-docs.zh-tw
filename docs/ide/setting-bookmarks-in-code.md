@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中設定程式碼書籤 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中設定程式碼書籤
 ms.date: 02/23/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c51b360a8df39abfd38e3da175de65c38d59bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edeb4a012d0059f54df29fd74b093cc51ed5e6f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 
