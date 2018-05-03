@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中儲存負載測試記錄 | Microsoft Docs
+title: 在 Visual Studio 中儲存負載測試記錄
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 9ac88d8a-4777-462c-aa0e-244dadb2cfd1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d5c41f358ae3990b768014a97a8b1d27420359d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定儲存測試記錄的頻率
 

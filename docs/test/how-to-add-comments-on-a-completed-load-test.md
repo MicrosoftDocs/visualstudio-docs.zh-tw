@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析已完成的負載測試時新增註解 | Microsoft Docs
+title: 在 Visual Studio 中分析已完成的負載測試時新增註解
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: e6b68940-4fb6-4bd6-bcde-f6477adc7af9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c09b4b623e05882e3be1aebc8c14013261ff5600
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8efc27dd7e9dd6b201421aed17ded3dd31342cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>如何：在分析已完成的負載測試時加入註解
 

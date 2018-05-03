@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中移除執行不到的程式碼重構 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中移除執行不到的程式碼重構
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: kuhlenh
@@ -11,11 +11,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c4e142582e4ee3a3e0308c5368c58fac79f8c6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73b04dafc094e05c57c626333a1d614de3ba76a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 

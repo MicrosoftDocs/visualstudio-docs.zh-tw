@@ -1,21 +1,21 @@
 ---
-title: 逐步解說：建置應用程式 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建置應用程式
 ms.date: 09/25/2017
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94f9b9ba60279c359ce7c6cc3c9646bfbbe7c5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ccafe38714df4d3851e0f81de0f2b03e9d72db52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
+# <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
 藉由完成本逐步解說，您將更熟悉使用 Visual Studio 建置應用程式時可設定的幾個選項。 您將針對一個範例應用程式建立自訂組建組態、隱藏特定警告訊息以及增加組建輸出資訊。
 
@@ -33,42 +33,42 @@ ms.lasthandoff: 04/16/2018
 
 1. 開啟 [組態管理員] 對話方塊。
 
-   ![[建置] 功能表、[組態管理員] 命令](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
+   ![[建置] 功能表、[組態管理員] 命令](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 1. 在 [使用中的方案組態] 清單中，選擇 [\<新增\>]。
 
 1. 在 [新增方案組態] 對話方塊中，將新的組態命名為 `Test`，從現有的偵錯組態複製設定，然後選擇 [確定] 按鈕。
 
-   ![[新增方案組態] 對話方塊](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+   ![[新增方案組態] 對話方塊](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
 
 1. 在 [使用中的方案平台] 清單中，選擇 [\<新增\>]。
 
 1. 在 [新增方案平台] 對話方塊中，選擇 [x64]，而不要從 x86 平台複製設定。
 
-   ![[新增方案平台] 對話方塊](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+   ![[新增方案平台] 對話方塊](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
 1. 選擇 [確定]  按鈕。
 
    使用中的方案組態已變更為 [測試]，且使用中的方案平台設定為 [x64]。
 
-   ![包含測試組態的 [組態管理員]](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
+   ![包含測試組態的 [組態管理員]](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
 1. 選擇 [關閉]。
 
 您可以使用 [標準] 工具列上的 [方案組態] 清單，快速驗證或變更使用中的方案組態。
-  
-![[標準] 工具列的 [方案組態] 選項](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
-  
+
+![[標準] 工具列的 [方案組態] 選項](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+
 ## <a name="build-the-application"></a>建置應用程式
 
 接下來，您將使用自訂組建組態來建置方案。
-  
+
 ### <a name="to-build-the-solution"></a>若要建置方案
-  
+
 -   在功能表列上選擇 [建置] > [建置解決方案]。
-  
+
     [輸出] 視窗顯示組建的結果。 組建成功。
-  
+
 ## <a name="hide-compiler-warnings"></a>隱藏編譯器警告
 
 接下來，我們會介紹一些程式碼，讓編譯器產生警告。
@@ -94,55 +94,56 @@ ms.lasthandoff: 04/16/2018
 1. 在**方案總管**中，選擇頂層專案節點。
 
 1. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
-  
+
      [專案設計工具] 隨即開啟。
 
 1. 選擇 [組建] 頁面，然後在 [隱藏警告] 方塊中指定警告編號 **0168**。
-  
-     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
-  
+
+     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+
      如需詳細資訊，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
 1. 建置方案。
-  
+
      [輸出] 視窗只會顯示組建的摘要資訊。
-  
-     ![輸出視窗、Visual C&#35; 建置警告](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
-  
+
+     ![輸出視窗、Visual C&#35; 建置警告](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+
 ### <a name="to-suppress-all-visual-basic-build-warnings"></a>隱藏所有 Visual Basic 建置警告
 
 1. 在方案總管中，選擇頂層專案節點。
 
 1. 在功能表列上選擇 [ **檢視**]、[ **屬性頁**]。
-  
+
      [專案設計工具] 隨即開啟。
 
 1. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
-  
-     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
-  
+
+     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+
      如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。
 
 1. 建置方案。
-  
+
  [輸出] 視窗只會顯示組建的摘要資訊。
-  
- ![輸出視窗、Visual Basic 建置警告](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
-  
+
+ ![輸出視窗、Visual Basic 建置警告](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+
  如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
-  
+
 ## <a name="display-additional-build-details-in-the-output-window"></a>在輸出視窗中顯示其他組建詳細資料
 
 您可以變更出現在 [輸出] 視窗中的建置流程相關資訊量。 建置詳細等級通常會設定為 [最小]，這表示 [輸出] 視窗只會顯示建置流程摘要，以及任何高優先順序警告或錯誤。 您可以使用[選項對話方塊、專案和方案、建置並執行](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)，來顯示有關組建的詳細資訊。
-  
+
 > [!IMPORTANT]
->  如果顯示詳細資訊，組建將需要更長的時間來完成。
-  
+> 如果顯示詳細資訊，組建將需要更長的時間來完成。
+
+
 ### <a name="to-change-the-amount-of-information-in-the-output-window"></a>變更輸出視窗中的資訊量
 
 1. 開啟 [選項] 對話方塊。
-  
-     ![[工具] 功能表上的 [選項] 命令](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")  
+
+     ![[工具] 功能表上的 [選項] 命令](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")
 
 1. 選擇 [專案和方案] 分類，然後選擇 [建置並執行] 頁面。
 
@@ -151,18 +152,18 @@ ms.lasthandoff: 04/16/2018
 1. 在功能表列上，選擇 [建置]、[清除方案]。
 
 1. 建置方案，然後檢閱 [輸出] 視窗中的資訊。
-  
+
      組建資訊包含組建的開始時間 (位於開頭) 以及檔案的處理順序。 這項資訊也包含 Visual Studio 在建置期間執行的實際編譯器語法。
-  
+
      例如，在 C# 組建中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 選項會列出您稍早在本主題中指定的警告碼 1762，以及其他三個警告。
-  
+
      在 Visual Basic 組建中，[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 不包含要排除的特定警告，因此不會出現任何警告。
-  
+
     > [!TIP]
     > 如果您選擇 Ctrl+F 鍵顯示 [尋找] 對話方塊，即可搜尋 [輸出] 視窗的內容。
 
 如需詳細資訊，請參閱[如何：檢閱、儲存和設定建置記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
-  
+
 ## <a name="create-a-release-build"></a>建立發行組建
 
 您可以建置已針對交付最佳化的範例應用程式版本。 針對發行組建，您將指定在開始建置之前將可執行檔複製到網路共用。
@@ -172,8 +173,8 @@ ms.lasthandoff: 04/16/2018
 ### <a name="to-specify-a-release-build-for-visual-basic"></a>指定 Visual Basic 的發行組建
 
 1. 開啟 [專案設計工具]。
-  
-     ![[檢視] 功能表、[屬性頁] 命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
+
+     ![[檢視] 功能表、[屬性頁] 命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 1. 選擇 [編譯] 頁面。
 
@@ -190,13 +191,13 @@ ms.lasthandoff: 04/16/2018
 
 1. 建置應用程式。
 
-     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
 ### <a name="to-specify-a-release-build-for-c"></a>指定 C# 的發行組建 #
 
 1. 開啟 [專案設計工具]。
-  
-     ![[檢視] 功能表、[屬性頁] 命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
+
+     ![[檢視] 功能表、[屬性頁] 命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
 
 1. 選擇 [組建] 頁面。
 
@@ -205,9 +206,9 @@ ms.lasthandoff: 04/16/2018
 1. 在 [平台] 清單中，選擇 [x86]。
 
 1. 在 [輸出路徑] 方塊中，指定網路路徑。
-  
+
      例如，您可以指定 \\\myserver\builds。
-  
+
     > [!IMPORTANT]
     > 可能會出現一個訊息方塊，警告您所指定的網路共用可能不是信任的位置。 如果您信任所指定的位置，請在訊息方塊中選擇 [確定] 按鈕。
 
@@ -215,14 +216,14 @@ ms.lasthandoff: 04/16/2018
 
 1. 建置應用程式。
 
-     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+     ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    可執行檔會複製到您指定的網路路徑。 其路徑為 \\\myserver\builds\\<檔名>.exe。
 
 恭喜︰您已成功完成本逐步解說。
-  
+
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)  
-[ASP.NET Web 應用程式專案先行編譯概觀](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)  
-[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [ASP.NET Web 應用程式專案先行編譯概觀](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

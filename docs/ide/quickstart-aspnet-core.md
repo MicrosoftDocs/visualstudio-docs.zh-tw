@@ -1,7 +1,9 @@
 ---
-title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式 | Microsoft Docs
-ms.custom: ''
+title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
+description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -68,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 
    ![錯誤清單](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. 在編輯器視窗中，將游標放在包含錯誤的任一行上方，然後選擇左邊界的 [快速動作] 燈泡。 從下拉式功能表中，選擇 **using System;** 將此指示詞新增至檔案頂端，並解決錯誤。
+1. 在編輯器視窗中，將資料指標放在包含錯誤的任一行上方，然後選擇左邊界的**快速動作燈泡**。 從下拉式功能表中，選擇 **using System;** 將此指示詞新增至檔案頂端，並解決錯誤。
 
 ## <a name="run-the-application"></a>執行應用程式
 

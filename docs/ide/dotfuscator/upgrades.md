@@ -1,9 +1,9 @@
 ---
-title: 升級 Dotfuscator Community Edition (CE) | Microsoft Docs
-ms.date: 2017-02-08
+title: 升級 Dotfuscator Community Edition (CE)
+ms.date: 02/08/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017, 升級, 命令列
 helpviewer_keywords:
@@ -23,12 +23,13 @@ helpviewer_keywords:
 description: 了解如何升級 Visual Studio 2017 中隨附的免費 Dotfuscator Community Edition。
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 03fdaae7a152db2af4ca042d14748e6508185b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f842eb9573f2519525f122dd58d23559df37e54c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升級 Dotfuscator Community Edition (CE)
 
@@ -37,23 +38,21 @@ Dotfuscator Community Edition (Dotfuscator CE) 為所有使用 Microsoft Visual 
 
 ## <a name="registering-dotfuscator-ce"></a>註冊 Dotfuscator CE
 
-Dotfuscator CE 的已註冊使用者可存取額外的功能，例如[命令列支援][cli]，這可讓您輕鬆地將 Dotfuscator CE 整合到自動建置流程。
-此外，註冊會授與對 Lucidator 的存取權，這是用於[解碼模糊化的堆疊追蹤][decode-obfuscated]的內建工具。
+Dotfuscator CE 的已註冊使用者可存取額外的功能，例如[命令列支援][cli]，這可讓您輕鬆地將 Dotfuscator CE 整合到自動建置流程。 註冊也會授與對 Lucidator 的存取權，這是用於[解碼模糊化的堆疊追蹤][decode-obfuscated]的內建工具。
 
 註冊不但簡單快速，而且完全免費。
 若要註冊 Dotfuscator CE，請參閱[完整《Dotfuscator CE User Guide》(Dotfuscator CE 使用者指南) 之 ＜Getting Started＞(使用者入門) 頁面上的＜Registering Dotfuscator CE＞ (註冊 Dotfuscator CE) 一節][register-ce]。
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Dotfuscator Community Edition 提供基本層級的保護，而 **_PreEmptive Protection - Dotfuscator_ Professional Edition** 則包含增強的混淆轉換和保護功能。
-它們包括：
+Dotfuscator Community Edition 提供基本層級的保護，而 **_PreEmptive Protection - Dotfuscator_ Professional Edition** 則包含增強的混淆轉換和保護功能。 增強的轉換和功能包括：
 
 * 智慧財產權保護
   * 額外的重新命名選項，包括 Enhanced Overload Induction™ 和隨機化識別碼選取。
   * 用於解碼經過混淆處理之堆疊追蹤的工具。
   * 存取企業級混淆轉換，包括[目標為防止自動程式碼反向組譯的轉換][control-flow]。
   * 能夠[混淆敏感性字串][string-encryption]，以防止執行反向組譯程式碼的簡單搜尋。
-  * 能夠[以不顯眼的方式將擁有權和發佈字串嵌入您的組件][watermarking] (軟體浮水印)，讓您判斷未經授權的軟體漏洞來源。
+  * 能夠[以不顯眼的方式將擁有權和發佈字串嵌入您的組件][watermarking]，讓您判斷未經授權的軟體漏洞來源。
   * 能夠[將多個組件合併成一個組件][linking]，由於消除了關注點分離 (Separation of Concerns) 的問題，因此攻擊者更難判斷程式碼項目的角色。
   * 能夠[自動從您的應用程式移除未使用的程式碼][pruning]，以減少送出的敏感性程式碼數量。
 * 應用程式完整性保護
@@ -73,31 +72,31 @@ Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適�
 此外，Dotfuscator Professional 提供與 Visual Studio 的緊密整合，並針對商業用途授權。
 
 如需 Dotfuscator Professional 之進階應用程式保護功能的詳細資訊，請前往 PreEmptive Solutions 的 [Dotfuscator 概觀頁面][product-about]並[與 Community Edition 進行比較][product-compare]。
-[您可以在 preemptive.com 要求取得完整支援的試用版][eval]。
+[您可以在 preemptive.com 取得完整支援的試用版][eval]。
 
 ## <a name="see-also"></a>請參閱
 
-[完整《Dotfuscator CE User Guide》(Dotfuscator CE 使用者指南) 中的本主題][full]
+[完整 Dotfuscator CE User Guide (Dotfuscator CE 使用者指南) 中的本主題][full]
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[control-flow]: https://www.preemptive.com/products/dotfuscator/features#controlflow
-[string-encryption]: https://www.preemptive.com/products/dotfuscator/features#string
-[watermarking]: https://www.preemptive.com/products/dotfuscator/features#watermarking
-[linking]: https://www.preemptive.com/products/dotfuscator/features#linking
-[pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
+- [control-flow]: https://www.preemptive.com/products/dotfuscator/features#controlflow
+- [string-encryption]: https://www.preemptive.com/products/dotfuscator/features#string
+- [watermarking]: https://www.preemptive.com/products/dotfuscator/features#watermarking
+- [linking]: https://www.preemptive.com/products/dotfuscator/features#linking
+- [pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
 
-[check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
+- [check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
+- [features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[eval]: https://www.preemptive.com/eval-request
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [eval]: https://www.preemptive.com/eval-request
 
-[product-about]: https://www.preemptive.com/products/dotfuscator/overview
-[product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
+- [product-about]: https://www.preemptive.com/products/dotfuscator/overview
+- [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
 
-[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
-[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
+- [cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+- [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-[decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+- [decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html

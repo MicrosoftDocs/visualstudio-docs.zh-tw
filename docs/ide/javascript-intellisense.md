@@ -1,9 +1,8 @@
 ---
-title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
+title: JavaScript IntelliSense
 ms.date: 06/28/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -27,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,7 +52,7 @@ TypeScript 使用數個來源建立這項資訊：
 - [以 TypeScript 宣告檔案為基礎的 IntelliSense](#TsDeclFiles)
 - [自動擷取型別定義](#Auto)
 
-### <a name="TypeInference"></a>以型別推斷為基礎的 IntelliSense
+### <a name="intellisense-based-on-type-inference"></a>以型別推斷為基礎的 IntelliSense
 
 在 JavaScript 中，大部分的時間不提供任何明確的類型資訊。 幸運的是，只要指定周圍的程式碼內容，通常很容易就能找出類型。
 此程序稱為型別推斷。
@@ -70,7 +69,7 @@ nextItem; // now we know nextItem is a string
 
 函式的傳回型別則可從傳回的陳述式推斷。
 
-函式參數目前沒有任何推斷，但使用 JSDoc 或 TypeScript `.d.ts` 檔案有多種方法可處理 (請參閱稍後的章節)。
+函式參數目前沒有任何推斷，但使用 JSDoc 或 TypeScript *.d.ts* 檔案有多種方法可解決此問題 (請參閱稍後的章節)。
 
 此外，還有下列項目的特殊推斷︰
 
@@ -89,7 +88,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a> 以 JSDoc 為基礎的 IntelliSense
+### <a name="intellisense-based-on-jsdoc"></a>以 JSDoc 為基礎的 IntelliSense
 
 遇到不提供所需類型資訊 (或支援文件) 的型別推斷，可能會透過 JSDoc 註解明確提供類型資訊。  例如，若要為部分宣告的物件提供特定的類型，您可以使用 `@type` 標記，如下所示︰
 
@@ -113,29 +112,29 @@ function Foo(param1) {
 }
 ```
 
-如需目前支援的 JsDoc 註解，請參閱[本文](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript)。
+如需目前支援的 JsDoc 註解，請參閱 [JavaScript 中的 JSDoc 支援](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript)。
 
-### <a name="TsDeclFiles"></a> 以 TypeScript 宣告檔案為基礎的 IntelliSense
+### <a name="intellisense-based-on-typescript-declaration-files"></a>以 TypeScript 宣告檔案為基礎的 IntelliSense
 
-因為 JavaScript 和 TypeScript 現在是以相同的語言服務為基礎，所以能夠以更豐富的方式互動。 例如，可為 `.d.ts` 檔案中宣告的值提供 JavaScript IntelliSense ([更多資訊](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html))，而在 TypeScript 中宣告的介面和類別等類型，可提供 JsDoc 註解當作類型使用。 
+因為 JavaScript 和 TypeScript 現在是以相同的語言服務為基礎，所以能夠以更豐富的方式互動。 例如，可為 *.d.ts* 檔案中宣告的值提供 JavaScript IntelliSense (請參閱 [TypeScript 文件](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html))，而在 TypeScript 中宣告的介面和類別等類型，可提供 JsDoc 註解當作類型使用。
 
-以下簡單示範 TypeScript 定義檔案 (透過介面) 向同一專案中的 JavaScript 檔案 (使用 JsDoc 標記) 提供此類的類型資訊。
+以下簡單示範 TypeScript 定義檔案 (透過介面) 向同一專案中的 JavaScript 檔案 (使用 `JsDoc` 標記) 提供此類的類型資訊。
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a> 自動擷取型別定義
+### <a name="automatic-acquisition-of-type-definitions"></a>自動擷取型別定義
 
-在 TypeScript 世界中，最熱門的 JavaScript 程式庫都使用 `.d.ts` 檔案描述其 API，而這類定義最常見的儲存機制位於 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)。
+在 TypeScript 世界中，最熱門的 JavaScript 程式庫都使用 *.d.ts* 檔案描述其 API，而這類定義最常見的存放庫位於 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)。
 
-根據預設，Salsa 語言服務會嘗試偵測使用中的 JavaScript 程式庫為何，並自動下載及參考對應的 `.d.ts` 檔案，依序描述程式庫以便提供更豐富的 IntelliSense。 這些檔案會下載到位於 `%LOCALAPPDATA%\Microsoft\TypeScript` 的使用者資料夾下的快取。
+根據預設，Salsa 語言服務會嘗試偵測使用中的 JavaScript 程式庫為何，並自動下載及參考對應的 *.d.ts* 檔案，以描述程式庫來提供更豐富的 IntelliSense。 這些檔案會下載到位於 *%LOCALAPPDATA%\Microsoft\TypeScript* 的使用者資料夾下的快取。
 
 > [!NOTE]
-> 如果使用 `tsconfig.json` 組態檔，這項功能預設會 [停用]，但可設定為 [啟用]，詳細資訊如下所述。
+> 如果使用 *tsconfig.json* 組態檔，這項功能預設會 [停用]，但可設定為 [啟用]，詳細資訊如下所述。
 
-自動偵測目前處理從 npm (藉由讀取 `package.json` 檔案)、Bower (藉由讀取 `bower.json` 檔案)，以及比對前 400 多個熱門 JavaScript 程式庫清單的專案中的鬆散式檔案下載的相依性。 例如，如果您的專案中有 `jquery-1.10.min.js`，則會擷取並載入檔案 `jquery.d.ts` 以提供更好的編輯體驗。 此 `.d.ts` 檔案對您的專案沒有任何影響。
+自動偵測目前處理從 npm (藉由讀取 *package.json* 檔案)、Bower (藉由讀取 *bower.json* 檔案)，以及比對前 400 多個熱門 JavaScript 程式庫清單的專案中的鬆散式檔案下載的相依性。 例如，如果您的專案中有 *jquery-1.10.min.js*，則會擷取並載入檔案 *jquery.d.ts* 以提供更好的編輯體驗。 此 *.d.ts* 檔案對您的專案沒有任何影響。
 
 如果您不想使用自動擷取，請如下所示新增組態檔來停用這項功能。 您仍然放置定義檔案，以手動方式直接在專案中使用它。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 IntelliSense](../ide/using-intellisense.md)
+- [使用 IntelliSense](../ide/using-intellisense.md)

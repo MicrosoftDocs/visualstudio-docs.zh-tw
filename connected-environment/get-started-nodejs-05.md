@@ -1,18 +1,19 @@
 ---
 title: 在雲端中以使用 Kubernetes 的容器建立 Node.js 開發環境 - 步驟 5 - 呼叫其他的容器 | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: 在 Azure 上使用容器和微服務快速開發 Kubernetes
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, 容器
-manager: ghogen
-ms.openlocfilehash: 5b7065714475ee700fb1a04502a50a4fce0b0e8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 89565869feec746aff75327b59ee7d0b466f26c1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>使用 Node.js 開始使用已連線的環境
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 03/19/2018
 您在名為 `vsce/samples` 的資料夾下應該已有本指南 `mywebapi` 的範例程式碼，(如果沒有，請移至 https://github.com/Azure/vsce 選取 [Clone or Download] (複製或下載)，下載 GitHub 存放庫)。這個區段的程式碼位於 `vsce/samples/nodejs/getting-started/mywebapi`。
 
 ## <a name="run-mywebapi"></a>執行 *mywebapi*
-1. 在*不同的 VS Code 視窗*中開啟資料夾 `mywebapi`。
+1. 在「不同的 VS Code 視窗」中開啟資料夾 `mywebapi`。
 1. 按 F5，等候建置和部署服務。 當 VS Code 偵錯列出現時，您就知道它已就緒。
 1. 記下端點 URL，它看起來像 http://localhost:\<連接埠號碼\>。 **提示：VS Code 狀態列會顯示可點選的 URL。** 容器可能看起來像是在本機執行，但實際上是在我們的 Azure 開發環境中執行。 之所以使用本機位址，是因為 `mywebapi` 尚未定義任何公用端點，只能從 Kubernetes 執行個體中存取。 為方便起見，並促進與您本機電腦私用服務的互動，已連線的環境會建立在 Azure 中執行之容器的暫存 SSH 通道。
 1. 當 `mywebapi` 就緒時，請在瀏覽器中開啟 localhost 位址。 您應該會看到來自 `mywebapi` 服務的回應 ("Hello from mywebapi")。

@@ -1,6 +1,7 @@
 ---
-title: 逐步解說：在 Visual Studio 中使用組態檔定義資料來源 | Microsoft Docs
+title: 逐步解說：在 Visual Studio 中使用組態檔定義資料來源
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 
@@ -71,7 +72,8 @@ ms.lasthandoff: 04/16/2018
 ```
 
 > [!NOTE]
->  組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。 如果您是使用 Visual Studio .NET Framework 3.5，請將 Version 設定為 9.0.0.0。 如果您是使用 Visual Studio .NET Framework 2.0，請將 Version 設定為 8.0.0.0。
+> 組件名稱必須與您所使用的 Microsoft Visual Studio .NET Framework 組建相符。 如果您是使用 Visual Studio .NET Framework 3.5，請將 Version 設定為 9.0.0.0。 如果您是使用 Visual Studio .NET Framework 2.0，請將 Version 設定為 8.0.0.0。
+
 
 ## <a name="define-connection-strings"></a>定義連接字串
  連接字串會定義提供者存取資料來源的特定資訊。 在組態檔中定義的連接字串，可以提供能在整個應用程式中重複使用的資料提供者資訊。 在這個章節中，您會建立兩個連接字串，以供「自訂組態區段」中所定義的資料來源使用。

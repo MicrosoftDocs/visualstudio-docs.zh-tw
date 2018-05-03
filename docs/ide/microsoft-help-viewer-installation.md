@@ -1,7 +1,7 @@
 ---
-title: 安裝 Visual Studio 離線說明 | Microsoft Docs
-ms.custom: ''
+title: 安裝 Visual Studio 離線說明
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 04/16/2018
 
 說明檢視器是 Visual Studio 的選擇性安裝元件。 若要透過 Visual Studio 安裝程式進行安裝，請遵循下列步驟：
 
-1. 從 [開始] 功能表開啟 [Visual Studio 安裝程式]，或者，如果您已開啟 Visual Studio，則可以選擇 [工具]、[取得工具和功能...]來開啟 Visual Studio 安裝程式。
+1. 從 [開始] 功能表開啟 [Visual Studio 安裝程式]，或者，如果您已開啟 Visual Studio，則可以選擇 [工具] > [取得工具和功能] 來開啟 Visual Studio 安裝程式。
 
 1. 選擇 [個別元件] 索引標籤，然後選取 [程式碼工具] 區段下的 [說明檢視器]。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 
    ![快速啟動方塊](media/help_viewer_quick_launch.png)
 
-1. 選擇稱為**說明檢視器 (個別元件)** 的安裝結果。
+1. 選擇稱為**說明檢視器 (個別元件)** 的結果。
 
 1. 在隨即開啟的對話方塊中，選擇 [安裝] 按鈕。
 
@@ -50,5 +50,5 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[適用於 SQL Server 的說明檢視器和離線內容](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [適用於 SQL Server 的說明檢視器和離線內容](/sql/sql-server/sql-server-help-installation)

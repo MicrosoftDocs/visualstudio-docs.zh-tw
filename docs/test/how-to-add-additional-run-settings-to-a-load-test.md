@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將回合設定新增至負載測試 | Microsoft Docs
+title: 在 Visual Studio 中將回合設定新增至負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff4a023f7bed6e182c6807b68a1ed918aee034df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eee7f66c9df199a0ec2b7decb2f56ee70485870e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：將其他回合設定加入至負載測試
 

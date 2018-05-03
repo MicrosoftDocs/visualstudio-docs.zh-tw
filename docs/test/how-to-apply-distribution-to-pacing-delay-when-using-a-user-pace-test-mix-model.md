@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將分佈套用到步調延遲以進行負載測試 | Microsoft Docs
+title: 在 Visual Studio 中將分佈套用到步調延遲以進行負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5140a3ca9cb8274a9b6d9f74260adadfed6201ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25b22ff696fb12e4924587313cde8fe387900fe9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model"></a>如何：在使用使用者步調測試混合模型時，將分佈套用到步調延遲
 

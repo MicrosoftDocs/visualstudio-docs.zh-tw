@@ -1,8 +1,9 @@
 ---
-title: 在 Visual Studio 中用於建立單元測試的範例專案 | Microsoft Docs
+title: Visual Studio 中用於建立單元測試的範例專案
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
@@ -11,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46128b02e98e8fe20b16cc4a858a8782649f3f3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f6ab04990292715932c652e2e275787447761ca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 

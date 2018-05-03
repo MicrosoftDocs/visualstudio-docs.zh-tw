@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中從儲存機制刪除負載測試結果 | Microsoft Docs
+title: 如何：在 Visual Studio 中從存放庫刪除負載測試結果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,13 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7c76f18e55e079539d8348ee68c95f32431bff49
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da6f56175cc1292762107566ab1ebba81c140581
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：從儲存機制中刪除負載測試結果
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中匯出負載測試結果 | Microsoft Docs
+title: 在 Visual Studio 中匯出負載測試結果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce17cba842faf56205d5769bbcccfcdce8db6fec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3da70b7c8c476125478fef2497f084ba4a638a03
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：從儲存機制匯出負載測試結果
 

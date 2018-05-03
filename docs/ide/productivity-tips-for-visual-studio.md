@@ -1,7 +1,7 @@
 ---
-title: 使用 Visual Studio 提高生產力的祕訣 | Microsoft Docs
-ms.custom: ''
+title: 使用 Visual Studio 提高生產力的祕訣
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 04/16/2018
 
 如需常用鍵盤快速鍵的詳細資訊，請參閱[鍵盤祕訣](../ide/tips-and-tricks-for-visual-studio.md)。 或如需完整的鍵盤快速鍵清單，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-## <a name="writing-code"></a>撰寫程式碼
+## <a name="write-code"></a>撰寫程式碼
 
 您可以使用下列功能，更快速地撰寫程式碼。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 
 - **使用範例應用程式**。 您可以從 [Microsoft Developer Network](https://code.msdn.microsoft.com/) 下載和安裝範例應用程式，來加速應用程式開發。 您也可以下載和探索該區域的範例套件，學習特定技術或程式設計概念。
 
-## <a name="navigating-within-your-code"></a>在您的程式碼中巡覽
+## <a name="navigate-within-your-code"></a>在您的程式碼中巡覽
 
  您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 
 - **瀏覽程式碼的整體結構**。 在方案總管中，您可以搜尋和瀏覽專案中的類別及其類型和成員。 您也可以搜尋符號、檢閱方法的呼叫階層、尋找符號參考和執行其他工作。 如果您在方案總管中選擇程式碼項目，則會在 [預覽] 索引標籤中開啟相關聯的檔案，而游標會移至檔案中的項目。 如需詳細資訊，請參閱[檢視程式碼的結構](../ide/viewing-the-structure-of-code.md)。
 
-## <a name="finding-items-faster"></a>更快速地尋找項目
+## <a name="find-items-faster"></a>更快速地尋找項目
 
 除了篩選工具視窗的內容以顯示與您目前的工作有關的資訊以外，您可以在整個 IDE 中搜尋命令、檔案和選項。
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 
     [快速啟動] 會顯示 [新增專案] 對話方塊、[新增項目] 對話方塊以及 [選項] 對話方塊中的 [專案和方案] 頁面的連結。 快速啟動結果也可以包含專案檔和工具視窗。
 
-## <a name="debugging-code"></a>針對程式碼進行偵錯
+## <a name="debug-code"></a>偵錯程式碼
 
 偵錯可能會耗用大量的時間，但是下列的技巧可協助您加快處理它們。
 
@@ -93,11 +93,11 @@ ms.lasthandoff: 04/16/2018
 
      若要加入 DataTip，偵錯工具必須處於中斷模式。 將游標置於變數，然後選擇 DataTip 上出現的釘選按鈕。 當偵錯停止時，藍色的圖釘圖示會出現在原始碼檔案中包含該變數的程式碼行旁邊。 如果您指向藍色圖釘，將會顯示變數在最近期偵錯階段中的值。
 
-- **清除即時運算視窗**。 您可以輸入 `>cls` 或 `>Edit.ClearAll`，在設計階段清除[即時運算視窗](../ide/reference/immediate-window.md)的內容。
+- **清除即時運算視窗**。 您可以輸入 `>cls` 或 `>Edit.ClearAll`，在設計階段清除[即時運算視窗](../ide/reference/immediate-window.md)的內容
 
      如需其他命令的詳細資訊，請參閱 [Visual Studio 命令別名](../ide/reference/visual-studio-command-aliases.md)。
 
-## <a name="accessing-visual-studio-tools"></a>存取 Visual Studio 工具
+## <a name="access-visual-studio-tools"></a>存取 Visual Studio 工具
 
 如果您將開發人員命令提示字元或其他 Visual Studio 工具釘選至 [開始] 功能表或工作列，就可以更輕鬆地存取它。
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 以滑鼠右鍵按一下 [開發人員命令提示字元] 或開啟其快顯功能表，然後選擇 [釘選到 [開始]] 或 [釘選到工作列]。
 
-## <a name="managing-files-toolbars-and-windows"></a>管理檔案、工具列和視窗
+## <a name="manage-files-toolbars-and-windows"></a>管理檔案、工具列和視窗
 
 您可能在開發應用程式的任何時候，同時處理多個程式碼檔案並且在數個工具視窗間移動。 您可以使用下列技巧來保持井然有序。
 
@@ -124,4 +124,4 @@ ms.lasthandoff: 04/16/2018
 - [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
-- [協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+- [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

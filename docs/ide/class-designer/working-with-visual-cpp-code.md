@@ -1,9 +1,8 @@
 ---
-title: 使用 Visual C++ 程式碼 (類別設計工具) | Microsoft Docs
-ms.custom: ''
+title: 使用 Visual C++ 程式碼 (類別設計工具)
 ms.date: 06/21/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -21,96 +20,102 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 490ab617e52e78681f6fdd427548c5e1cbd59957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
-類別設計工具會顯示名為「類別圖表」的視覺化設計介面，以視覺表示法提供專案中的程式碼項目。 您可以使用類別圖表來設計和視覺化類別和專案中的其他類型。  
+# <a name="work-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 
-類別設計工具支援下列 C++ 程式碼元素：  
+[類別設計工具] 會顯示稱為「類別圖表」的視覺化設計介面，以視覺表示法提供專案中的程式碼項目。 您可以使用類別圖表來設計和視覺化類別和專案中的其他類型。
 
--   類別 (類似於 Managed 類別圖形，差別在於它可以有多個繼承關聯性)  
+[類別設計工具] 支援下列 C++ 程式碼項目：
 
--   匿名類別 (會顯示類別檢視為匿名類型產生的名稱)  
+-   類別 (類似於 Managed 類別圖形，差別在於它可以有多個繼承關聯性)
 
--   範本類別  
+-   匿名類別 (會顯示類別檢視為匿名類型產生的名稱)
 
--   結構  
+-   範本類別
 
--   列舉  
+-   結構
 
--   巨集 (會顯示巨集的後處理檢視)  
+-   列舉
 
--   Typedef  
+-   巨集 (會顯示巨集的後處理檢視)
+
+-   Typedef
 
 > [!NOTE]
->  這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/uml-class-diagrams-reference.md)。  
+> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/uml-class-diagrams-reference.md)。
 
-## <a name="troubleshooting-type-resolution-and-display-issues"></a>類型解析與顯示問題的疑難排解  
+## <a name="troubleshoot-type-resolution-and-display-issues"></a>針對類型解析與顯示問題進行疑難排解
 
-### <a name="location-of-source-files"></a>原始程式檔的位置  
-類別設計工具不會追蹤原始程式檔的位置。 因此，如果您修改專案結構或移動專案中的原始程式檔，類別設計工具可能會遺失類型的追蹤 (特別是 typedef、基底類別或關聯類型的來源類型)。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。  
+### <a name="location-of-source-files"></a>原始程式檔的位置
 
-### <a name="update-and-performance-issues"></a>更新和效能問題  
-在 Visual C++ 專案中，可能需要 30 到 60 秒，原始程式檔的變更才會出現在類別圖中。 此延遲也可能會導致類別設計工具擲回錯誤：**選取範圍中找不到任何類型**。 如果您收到這類錯誤，請在錯誤訊息中按一下 [取消]，並等候程式碼項目出現在 [類別檢視] 中。 執行這項操作後，類別設計工具即應能夠顯示類型。  
+[類別設計工具] 不會追蹤原始程式檔的位置。 因此，如果您修改專案結構或移動專案中的原始程式檔，[類別設計工具] 可能會遺失類型的追蹤 (特別是 typedef、基底類別或關聯類型的來源類型)。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。
 
-如果類別圖未以您在程式碼中所做的變更進行更新，您可能需要關閉圖表，再加以重新開啟。  
+### <a name="update-and-performance-issues"></a>更新和效能問題
 
-### <a name="type-resolution-issues"></a>類型解析問題  
-類別設計工具無法解析類型的可能原因如下：  
-  
--   類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[管理專案中的參考](../managing-references-in-a-project.md)。  
-  
--   類型不在正確的範圍內，因此類別設計工具無法找到它。 請確定您的程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
+在 Visual C++ 專案中，可能需要 30 到 60 秒，原始程式檔的變更才會出現在類別圖中。 此延遲也可能會導致 [類別設計工具] 擲回錯誤：**選取範圍中找不到任何類型**。 如果您收到這類錯誤，請在錯誤訊息中按一下 [取消]，並等候程式碼項目出現在 [類別檢視] 中。 執行這項操作後，[類別設計工具] 即應能夠顯示類型。
 
--   類型不存在 (或已標記為註解)。 若要更正這個錯誤，請確定您未將類型標記為註解或刪除類型。  
+如果類別圖未以您在程式碼中所做的變更進行更新，您可能需要關閉圖表，再加以重新開啟。
 
--   類型位於 #import 指示詞所參考的程式庫中。 可行的因應措施之一，是將產生的程式碼 (.tlh 檔) 手動加入至標頭檔中的 #include 指示詞。  
+### <a name="type-resolution-issues"></a>類型解析問題
 
-關於類型解析問題，最常見的錯誤是：**找不到類別圖表 '\<element>'** 中一或多個圖形的程式碼。 此錯誤訊息不一定表示您的程式碼有錯誤。 它只是指出類別設計工具無法顯示您的程式碼。 您可以嘗試下列措施：  
+[類別設計工具] 無法解析類型的可能原因如下：
 
--   確定類型存在。 確定您未在無意中將原始程式檔標記為註解或刪除原始程式檔。  
+-   類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[管理專案中的參考](../managing-references-in-a-project.md)。
 
--   確定類別設計工具支援您所輸入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。  
+-   類型不在正確的範圍內，因此 [類別設計工具] 無法找到它。 請確定您的程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。
 
--   嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[管理專案中的參考](../managing-references-in-a-project.md)。  
+-   類型不存在 (或已標記為註解)。 若要更正這個錯誤，請確定您未將類型標記為註解或刪除類型。
 
--   確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
+-   類型位於 #import 指示詞所參考的程式庫中。 可行的因應措施之一，是將產生的程式碼 (.tlh 檔) 手動加入至標頭檔中的 #include 指示詞。
 
-### <a name="troubleshooting-other-error-messages"></a>其他錯誤訊息的疑難排解  
-您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。  
+-   確定 [類別設計工具] 支援您所鍵入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。
 
-##  <a name="limitations"></a> C++ 程式碼項目限制  
+關於類型解析問題，最常見的錯誤是：**找不到類別圖表 '\<element>'** 中一或多個圖形的程式碼。 此錯誤訊息不一定表示您的程式碼有錯誤。 它只是指出類別設計工具無法顯示您的程式碼。 您可以嘗試下列措施：
 
--   在載入 Visual C++ 專案時，類別設計工具會以唯讀方式運作。 您可以變更類別圖，但是您無法將類別圖中的變更存回至原始程式碼。  
+-   確定類型存在。 確定您未在無意中將原始程式檔標記為註解或刪除原始程式檔。
 
--   類別設計工具僅支援原生 C++ 語意。 針對編譯為 Managed 程式碼的 Visual C++ 專案，類別設計工具只會視覺化屬於原生類型的程式碼元素。 因此，您可以將類別圖加入專案中，但是類別設計工具將不允許您視覺化 `IsManaged` 屬性設為 `true` 的元素 (也就是值類型和參考類型)。  
+-   嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[管理專案中的參考](../managing-references-in-a-project.md)。
 
--   針對 Visual C++ 專案，類別設計工具只會讀取類型的定義。 例如，假設您將類型定義於標頭檔 (.h) 中，並將其成員定義於實作檔 (.cpp) 中。 如果您在實作檔 (.cpp) 上叫用「檢視類別圖」，類別設計工具將不會顯示任何項目。 另舉一例，如果您在使用 `#include` 陳述式的 .cpp 檔上叫用「類別圖檢視」，以包含其他檔案，但不包含任何實際類別定義，類別設計工具也不會顯示任何項目。  
+-   確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。
 
--   IDL (.idl) 檔 (其中定義 COM 介面類型程式庫) 不會顯示在圖表中，除非它們編譯為原生 C++ 程式碼。  
+### <a name="troubleshoot-other-error-messages"></a>針對其他錯誤訊息進行疑難排解
 
--   類別設計工具不支援全域函式和變數。  
+您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。
 
--   類別設計工具不支援等位。 這是配置的記憶體僅足以供等位的最大資料成員使用之類別的特殊類型。  
+## <a name="limitations-for-c-code-elements"></a>C++ 程式碼項目限制
 
--   類別設計工具不會顯示基本資料類型，例如 `int` 和 `char`。  
+-   在載入 Visual C++ 專案時，[類別設計工具] 會以唯讀方式運作。 您可以變更類別圖，但是您無法將類別圖中的變更存回至原始程式碼。
 
--   如果專案沒有類型的正確參考，類別設計工具即不會顯示在目前的專案以外定義的類型。  
+-   [類別設計工具] 僅支援原生 C++ 語意。 針對編譯為受控程式碼的 Visual C++ 專案，[類別設計工具] 只會視覺化屬於原生類型的程式碼項目。 因此，您可以將類別圖表新增至專案中，但是 [類別設計工具] 將不允許您視覺化 `IsManaged` 屬性設為 `true` 的項目 (也就是實值型別和參考型別)。
 
--   類別設計工具可以顯示巢狀類型，但不會顯示巢狀類型和其他類型之間的關係。  
+-   針對 Visual C++ 專案，[類別設計工具] 只會讀取類型的定義。 例如，假設您將類型定義於標頭檔 (.h) 中，並將其成員定義於實作檔 (.cpp) 中。 如果您在實作檔 (.cpp) 上叫用「檢視類別圖表」，[類別設計工具] 將不會顯示任何項目。 另舉一例，如果您在使用 `#include` 陳述式的 .cpp 檔上叫用「檢視類別圖表」，以包含其他檔案，但不包含任何實際類別定義，[類別設計工具] 也不會顯示任何項目。
 
--   類別設計工具無法顯示 void 類型或衍生自 void 類型的類型。  
+-   IDL (.idl) 檔 (其中定義 COM 介面類型程式庫) 不會顯示在圖表中，除非它們編譯為原生 C++ 程式碼。
+
+-   [類別設計工具] 不支援全域函式和變數。
+
+-   [類別設計工具] 不支援等位。 這是配置的記憶體僅足以供等位的最大資料成員使用之類別的特殊類型。
+
+-   [類別設計工具] 不會顯示基本資料類型，例如 `int` 和 `char`。
+
+-   如果專案沒有類型的正確參考，[類別設計工具] 即不會顯示在目前的專案以外定義的類型。
+
+-   [類別設計工具] 可以顯示巢狀類型，但不會顯示巢狀類型和其他類型之間的關聯性。
+
+-   [類別設計工具] 無法顯示無效類型或衍生自無效類型的類型。
 
 ## <a name="see-also"></a>另請參閱
-[設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)   
-[使用類別圖表](working-with-class-diagrams.md)   
-[設計類別和類型](designing-classes-and-types.md)   
-[類別設計工具錯誤的其他相關資訊](additional-information-about-errors.md)   
-[類別設計工具中的 Visual C++ 類別](visual-cpp-classes.md)   
-[類別設計工具中的 Visual C++ 結構](visual-cpp-structures.md)   
-[類別設計工具中的 Visual C++ 列舉](visual-cpp-enumerations.md)   
-[類別設計工具中的 Visual C++ Typedef](visual-cpp-typedefs.md)
+
+- [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
+- [使用類別圖表](working-with-class-diagrams.md)
+- [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
+- [類別設計工具錯誤的其他相關資訊](additional-information-about-errors.md)
+- [類別設計工具中的 Visual C++ 類別](visual-cpp-classes.md)
+- [類別設計工具中的 Visual C++ 結構](visual-cpp-structures.md)
+- [類別設計工具中的 Visual C++ 列舉](visual-cpp-enumerations.md)
+- [類別設計工具中的 Visual C++ Typedef](visual-cpp-typedefs.md)

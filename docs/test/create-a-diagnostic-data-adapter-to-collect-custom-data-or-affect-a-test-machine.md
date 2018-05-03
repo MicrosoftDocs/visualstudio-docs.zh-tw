@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立用於測試的診斷資料配接器 | Microsoft Docs
+title: 在 Visual Studio 中建立用於測試的診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0410fd52e115e2c2c257811e088c46a831d0082d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
 

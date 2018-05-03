@@ -1,10 +1,9 @@
 ---
-title: -Log (devenv.exe) | Microsoft Docs
-ms.custom: ''
+title: -Log (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Log switch
 - Log switch [devenv.exe]
@@ -15,29 +14,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa0fa90e904d4fb7f3e6820ce997a6a93e738f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93d3e4323638d40f003247a2c5bd35c812cc1c69
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-將所有活動記錄至記錄檔中，以進行疑難排解。 在您至少呼叫 `devenv /log` 一次之後這個檔案才會出現。 根據預設，此記錄檔為：  
-  
- *%APPDATA%* \Microsoft\VisualStudio\\<版本>\ActivityLog.xml  
-  
- 其中 <版本> 是 Visual Studio 版本。 不過，您可以指定不同的路徑和檔案名稱。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-Devenv /log Path\NameOfLogFile  
-```  
-  
-## <a name="remarks"></a>備註  
- 這個參數必須出現在命令列結尾，位於所有其他參數之後。  
-  
- 只要是您使用 /log 參數叫用的所有 Visual Studio 執行個體，都會為其寫入記錄。 但不會記錄沒有使用此參數所叫用的 Visual Studio 執行個體。  
-  
-## <a name="see-also"></a>請參閱  
- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
+將所有活動記錄至記錄檔中，以進行疑難排解。 在您至少呼叫 `devenv /log` 一次之後這個檔案才會出現。 根據預設，此記錄檔為：
+
+ *%APPDATA%* \Microsoft\VisualStudio\\<版本>\ActivityLog.xml
+
+ 其中 <版本> 是 Visual Studio 版本。 不過，您可以指定不同的路徑和檔案名稱。
+
+## <a name="syntax"></a>語法
+
+```
+Devenv /log Path\NameOfLogFile
+```
+
+## <a name="remarks"></a>備註
+ 這個參數必須出現在命令列結尾，位於所有其他參數之後。
+
+ 只要是您使用 /log 參數叫用的所有 Visual Studio 執行個體，都會為其寫入記錄。 但不會記錄沒有使用此參數所叫用的 Visual Studio 執行個體。
+
+## <a name="see-also"></a>請參閱
+
+- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

@@ -1,9 +1,9 @@
 ---
-title: devenv.exe 安裝參數 | Microsoft Docs
+title: devenv.exe setup 參數
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - setup Devenv switch
 - /setup Devenv switch
@@ -11,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eee6e30a7489f5097cb17a19513c2a423187c827
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f3d78ebb63434df38735bdf24e9d4fcba8f172c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -44,4 +44,4 @@ devenv /setup
 
 ## <a name="see-also"></a>另請參閱
 
-[Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

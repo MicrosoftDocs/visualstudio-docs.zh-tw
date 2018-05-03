@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的工具箱視窗 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 的 [工具箱] 視窗
 ms.date: 01/18/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7683e5796310eb35710c37fefe8cb861a83f48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f296349a6dfda80ff402b1ede0f1da591f6caa9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="toolbox"></a>工具箱
 

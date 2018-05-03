@@ -1,6 +1,8 @@
 ---
 title: 偵錯或停用 XAML 設計工具的專案程式碼
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
@@ -8,16 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 536c69aa9131068397fd0a86576f473db82fbe10
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
-在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 XAML 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼，解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止這些例外狀況發生。
+# <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 
- 專案程式碼包括：
+在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 XAML 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼來解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止例外狀況發生。
+
+專案程式碼包括：
 
 -   自訂控制項和使用者控制項
 
@@ -27,25 +30,25 @@ ms.lasthandoff: 04/19/2018
 
 -   標的為從專案程式碼產生之設計階段資料的繫結
 
- 當專案程式碼停用後，Visual Studio 會顯示不再提供資料之繫結的預留位置 (如屬性名稱)，或不再執行之控制項的預留位置。
+當專案程式碼停用後，Visual Studio 會顯示預留位置。 例如，Visual Studio 會顯示不再提供資料之繫結的屬性名稱，或不再執行之控制項的預留位置。
 
- ![未處理的例外狀況對話方塊](../designers/media/xaml_unhandledexception.png "XAML_UnhandledException")
+![未處理的例外狀況對話方塊](../designers/media/xaml_unhandledexception.png)
 
-#### <a name="to-determine-if-project-code-is-causing-an-exception"></a>判斷專案程式碼是否會造成例外狀況
+## <a name="to-determine-if-project-code-is-causing-an-exception"></a>判斷專案程式碼是否會造成例外狀況
 
 1.  在未處理的例外狀況對話方塊中，選擇 [按一下此處可重新載入設計工具]  連結。
 
-2.  在功能表列上選擇 [偵錯] 和 [開始偵錯]  ，以建置及執行應用程式。
+2.  在功能表列上選擇 [偵錯] > [開始偵錯]，以建置及執行應用程式。
 
      如果應用程式順利建置並執行，則設計階段的例外狀況可能是由在設計工具中執行的專案程式碼所造成。
 
-#### <a name="to-debug-project-code-running-in-the-designer"></a>偵錯在設計工具中執行的專案程式碼
+## <a name="to-debug-project-code-running-in-the-designer"></a>偵錯在設計工具中執行的專案程式碼
 
 1.  在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具]  連結。
 
 2.  在 [Windows 工作管理員] 中，選擇 [結束工作]  按鈕關閉 Visual Studio XAML 設計工具目前執行的所有執行個體。
 
-     ![TaskManager 中的 XAML 設計工具執行個體](../designers/media/xaml_taskmanager.png "XAML_TaskManager")
+     ![TaskManager 中的 XAML 設計工具執行個體](../designers/media/xaml_taskmanager.png)
 
 3.  在 Visual Studio 中開啟包含要偵錯之程式碼或控制項的 XAML 頁面。
 
@@ -53,35 +56,35 @@ ms.lasthandoff: 04/19/2018
 
 5.  設定專案程式碼的中斷點。
 
-6.  在 Visual Studio 新執行個體的功能表上，選擇 [偵錯] 、[附加至處理序] 。
+6.  在 Visual Studio 新執行個體的功能表上，選擇 [偵錯] > [附加至處理序]。
 
 7.  在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，選擇 [XDesProc.exe] ，然後選擇 [附加]  按鈕。
 
-     ![XAML 設計工具處理序](../designers/media/xaml_attach.png "XAML_Attach")
+     ![XAML 設計工具處理序](../designers/media/xaml_attach.png)
 
      這是 Visual Studio 第一個執行個體的 XAML 設計工具處理序。
 
-8.  在 Visual Studio 第一個執行個體的功能表列上，選擇 [偵錯] 和 [開始偵錯] 。
+8.  在 Visual Studio 第一個執行個體的功能表列上，選擇 [偵錯] > [開始偵錯]。
 
      您現在可以進入正在設計工具中執行的程式碼。
 
-#### <a name="to-disable-project-code-in-the-designer"></a>停用設計工具中的專案程式碼
+## <a name="to-disable-project-code-in-the-designer"></a>停用設計工具中的專案程式碼
 
 -   在未處理的例外狀況對話方塊中，選擇 [按一下此處可停用執行中的專案程式碼並重新載入設計工具]  連結。
 
 -   或者，在 XAML 設計工具的工具列上選擇 [停用專案程式碼]  按鈕。
 
-     ![[停用專案程式碼] 按鈕](../designers/media/xaml_disablecode.png "XAML_DisableCode")
+     ![[停用專案程式碼] 按鈕](../designers/media/xaml_disablecode.png)
 
      您可以再次切換按鈕重新啟用專案程式碼。
 
     > [!NOTE]
-    >  至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼]  按鈕。
+    > 至於以 ARM 或 X64 處理器為目標的專案，Visual Studio 無法在設計工具中執行專案程式碼，所以停用設計工具中的 [停用專案程式碼]  按鈕。
 
 -   無論哪個選項都會導致重新載入設計工具，然後停用所有相關聯專案的程式碼。
 
     > [!NOTE]
-    >  停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。
+    > 停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。
 
 ## <a name="see-also"></a>另請參閱
 

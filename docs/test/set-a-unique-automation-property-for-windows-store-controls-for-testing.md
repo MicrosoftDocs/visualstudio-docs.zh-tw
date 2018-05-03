@@ -1,6 +1,7 @@
 ---
-title: 在 Visual Studio 中為 UWP 控制項設定唯一自動化屬性以進行測試 | Microsoft Docs
+title: 在 Visual Studio 中為 UWP 控制項設定唯一自動化屬性以進行測試
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: a27b3472080f1b22f0b07b01e92d6a0e5326396e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce916f181a6694eabc91cdb7c6a7dec9a8f5e5ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 
@@ -75,7 +76,8 @@ ms.lasthandoff: 04/16/2018
  **Blend for Visual Studio：**使用下列其中一種方法，以從 Blend for Visual Studio 執行這項作業。
 
 > [!NOTE]
->  針對使用 XAML 靜態建立的控制項，您只能使用這個方法。
+> 針對使用 XAML 靜態建立的控制項，您只能使用這個方法。
+
 
  **提供現有控制項的唯一名稱**
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器 | Microsoft Docs
+title: 在 Visual Studio 中建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c53d4db3f413ad8cf4f0b615db18bd5fb6368128
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
 

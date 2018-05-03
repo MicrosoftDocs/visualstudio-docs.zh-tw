@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 2017 的新功能 | Microsoft Docs
+title: Visual Studio 2017 的新功能
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.6 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
@@ -299,7 +299,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 ### <a name="track-your-issue-in-connect"></a>使用 Connect 追蹤您的問題  
  如果您想要追蹤 Visual Studio 意見反應的狀態，請前往 [Connect](http://connect.microsoft.com/) 並回報 Bug。 回報 Bug 之後，就可以回到 Connect 來追蹤其狀態。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](/dotnet/csharp/whats-new)  

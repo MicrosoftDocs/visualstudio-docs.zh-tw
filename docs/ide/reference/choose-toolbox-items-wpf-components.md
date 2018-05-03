@@ -1,9 +1,9 @@
 ---
-title: 選擇工具箱項目、WPF 元件 | Microsoft Docs
-ms.custom: ''
+title: 選擇工具箱項目，WPF 元件
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目、WPF 元件
 
@@ -36,16 +36,20 @@ ms.lasthandoff: 04/16/2018
 
 [WPF 元件] 索引標籤中的欄位包含下列資訊：
 
-名稱  
+**名稱**
+
 列出您電腦登錄中項目之 WPF 控制項的名稱。
 
-命名空間  
+**命名空間**
+
 顯示 [.NET Framework Class API](/dotnet/api/?view=netframework-4.7) 命名空間的階層，該階層定義元件的結構。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 命名空間內的可用元件清單。
 
-組件名稱  
+**組件名稱**
+
 顯示 .NET Framework 組件的名稱，其中包含每個元件的命名空間。 依此欄排序即可列出安裝在您電腦上之每個 .NET Framework 組件中所包含的命名空間清單。
 
-Directory  
+**目錄**
+
 顯示 .NET Framework 組件的位置。 所有組件的預設位置為 [全域組件快取]。 如需全域組件快取的進一步資訊，請參閱[使用組件和全域組件快取](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
 
 ## <a name="uielement-list"></a>UIElement 清單
@@ -54,15 +58,15 @@ Directory
 
 根據您在文字方塊中提供的字串來篩選 WPF 控制項清單。 這會顯示四個欄位中的所有相符項。
 
-### <a name="clear"></a>清除
+**清除**
 
 清除篩選字串。
 
-### <a name="browse"></a>瀏覽
+**瀏覽**
 
 開啟 [開啟舊檔] 對話方塊，該對話方塊可讓您巡覽至包含 WPF 控制項的組件。 請使用此選項載入不在全域組件快取中的組件。
 
-### <a name="language"></a>語言
+**Language**
 
 顯示包含所選 WPF 控制項之組件的當地語系化語言。
 
@@ -80,5 +84,5 @@ Directory
 
 ## <a name="see-also"></a>另請參閱
 
-[工具箱](../../ide/reference/toolbox.md)  
-[WPF 使用者入門](../../designers/getting-started-with-wpf.md)
+- [工具箱](../../ide/reference/toolbox.md)
+- [WPF 使用者入門](../../designers/getting-started-with-wpf.md)

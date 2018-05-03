@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中收集虛擬使用者的完整詳細資料以進行負載測試 | Microsoft Docs
+title: 在 Visual Studio 中收集虛擬使用者的完整詳細資料以進行負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: cb22e43b-af4d-4e09-9389-3c3fa00786f7
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d18a93fad0d113369f48e21ae74a08484b99485c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cac171d6f0e1bcd91a89be799497b84dc15fc5a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>如何：設定負載測試來收集完整詳細資料，以便在測試結果中啟用虛擬使用者活動
 

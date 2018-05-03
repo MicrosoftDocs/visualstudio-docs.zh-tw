@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 檔案中尋找和檔案中取代 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 檔案中尋找和檔案中取代
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8b3dbf5582d7f19af6ee8506caacff4a14f9b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="replace-in-files"></a>檔案中取代
 
 [檔案中取代] 可讓您在一組指定檔案中搜尋程式碼的字串或運算式，並變更部分或所有找到的相符項目。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具]、[匯入和匯出設定]，然後選擇 [重設所有設定]。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具] > [匯入和匯出設定]，然後選擇 [重設所有設定]。
 
 您可以使用下列方法之一，在 [檔案中尋找] 視窗中顯示 [檔案中取代]。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 
    — 或 —
 
-如果 [尋找和取代] 視窗已開啟，請選擇工具列中的 [檔案中取代]。
+  如果 [尋找和取代] 視窗已開啟，請選擇工具列中的 [檔案中取代]。
 
 ## <a name="find-what"></a>尋找目標
 
@@ -63,34 +63,40 @@ ms.lasthandoff: 04/16/2018
 
 您可以展開或摺疊 [尋找選項] 區段。 可選取或清除下列選項：
 
-大小寫須相符  
+**大小寫須相符**
+
 選取時，[尋找結果] 視窗僅會顯示內容和大小寫都相符的 [尋找目標] 字串執行個體。 例如，若搜尋 "MyObject" 時選取 [大小寫須相符]，則會傳回 "MyObject"，而不是 "myobject" 或 "MYOBJECT"。
 
-全字拼寫須相符  
+**全字拼寫須相符**
+
 選取時，[尋找結果] 視窗僅會顯示完整字組相符的 [尋找目標] 字串執行個體。 例如，搜尋 "MyObject" 時會傳回 "MyObject"，而不是 "CMyObject" 或 "MyObjectC"。
 
-使用規則運算式  
+**使用規則運算式**
+
 如果已選取此核取方塊，您可以在 [尋找目標] 或 [取代為] 文字方塊中，使用特殊標記法來定義文字模式。 如需這些標記法的清單，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。
 
-尋找下列檔案類型  
-這個清單可指定要在 [查詢] 目錄中搜尋的檔案類型。 如果此欄位保持空白，則會搜尋 [查詢] 目錄中的所有檔案。
+**尋找下列檔案類型**
 
-選取此清單中的任一項目，即可輸入預先設定的搜尋字串，以尋找特定類型的檔案。
+這個清單可指定要在 [查詢] 目錄中搜尋的檔案類型。 如果此欄位保持空白，則會搜尋 [查詢] 目錄中的所有檔案。 選取此清單中的任一項目，即可輸入預先設定的搜尋字串，以尋找特定類型的檔案。
 
 ## <a name="result-options"></a>結果選項
 
 您可以展開或摺疊 [結果選項] 區段。 可選取或清除下列選項：
 
-尋找結果 1 視窗  
+[尋找結果 1] 視窗
+
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 1] 視窗的內容。 這個視窗會自動開啟以顯示搜尋結果。 若要手動開啟此視窗，請從 [檢視] 功能表中選取 [其他視窗]，並選擇 [尋找結果 1]。
 
-尋找結果 2 視窗  
+[尋找結果 2] 視窗
+
 若選取此選項，目前搜尋的結果將會取代 [尋找結果 2] 視窗的內容。 這個視窗會自動開啟以顯示搜尋結果。 若要手動開啟此視窗，請從 [檢視] 功能表中選取 [其他視窗]，並選擇 [尋找結果 2]。
 
-只顯示檔名  
+**只顯示檔名**
+
 選取此核取方塊時，[尋找結果] 視窗會列出包含搜尋字串之所有檔案的完整名稱和路徑。 不過，這些結果不含字串出現位置的程式碼行。 此核取方塊僅在 [檔案中尋找] 中提供。
 
-全部取代後將修改過的檔案保持開啟  
+**全部取代後將修改過的檔案保持開啟**
+
 選取時，會將已進行取代作業的所有檔案保持開啟，以便您復原或儲存變更。 由於記憶體有限，因此在取代作業之後可以保持開啟的檔案數目有所限制。
 
 > [!CAUTION]
@@ -98,6 +104,6 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[尋找和取代文字](../ide/finding-and-replacing-text.md)  
-[檔案中尋找](../ide/find-in-files.md)  
-[Visual Studio 命令](../ide/reference/visual-studio-commands.md)
+- [尋找及取代文字](../ide/finding-and-replacing-text.md)
+- [檔案中尋找](../ide/find-in-files.md)
+- [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定負載測試回合設定 | Microsoft Docs
+title: 在 Visual Studio 中設定負載測試回合設定
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9c20cc50eae5acc5f9e2f212a8835bc58fd7da4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70998285b5f1702be45cc1a5d31a976fa8c48ce8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 

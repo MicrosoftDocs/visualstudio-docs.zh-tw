@@ -1,7 +1,7 @@
 ---
-title: 在 Visual Studio 中針對測試控制器和測試代理程式進行疑難排解 | Microsoft Docs
+title: 在 Visual Studio 中針對測試控制器和測試代理程式進行疑難排解
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>負載測試中測試控制器和測試代理程式的疑難排解策略
 
@@ -27,7 +28,8 @@ ms.lasthandoff: 04/16/2018
  當您執行負載測試時，若您嘗試連接至測試代理程式電腦並收集效能計數器，便可能會接收到錯誤。 「遠端登錄」服務是負責提供效能計數器資料給遠端電腦的服務。 在某些作業系統上，遠端登錄服務並不會自動啟動。 若要修正此問題，請手動啟動「遠端登錄」服務。
 
 > [!NOTE]
->  您可以在 [控制台] 中存取「遠端登錄」服務。 選擇 [系統管理工具]，然後選擇 [服務]。
+> 您可以在 [控制台] 中存取「遠端登錄」服務。 選擇 [系統管理工具]，然後選擇 [服務]。
+
 
  造成這個問題的另一個原因，是您沒有讀取效能計數器的足夠權限。 對於本機測試回合，執行測試的使用者帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。 對於遠端測試回合，設定控制器執行的帳戶必須是 [Power Users] 群組 (或更高) 的成員，或 [Performance Monitor Users] 群組的成員。
 
@@ -87,7 +89,8 @@ ms.lasthandoff: 04/16/2018
  在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。
 
 > [!NOTE]
->  另一個可能的情況是，您安裝測試代理程式成功，並在執行測試之前，都不會看到這個問題。
+> 另一個可能的情況是，您安裝測試代理程式成功，並在執行測試之前，都不會看到這個問題。
+
 
  若要修正此錯誤，您必須將測試控制器繫結至其中一張網路介面卡。 您必須在測試控制器上設定 `BindTo` 屬性，然後變更測試代理程式以根據 IP 位址 (而非名稱) 參考至測試控制器。 請依下列程序的步驟執行。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為診斷資料配接器建立自訂資料編輯器 | Microsoft Docs
+title: 在 Visual Studio 中為診斷資料配接器建立自訂資料編輯器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 24970227-d1ea-4f6d-9839-e911478848ba
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58c0a4e764edd27e2059175e170a9e542c285a89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6141defb2248cf79888b0ed94824a827bd36815f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>如何：為您的診斷資料配接器建立資料的自訂編輯器
 
