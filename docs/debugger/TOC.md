@@ -9,6 +9,7 @@
 ## [了解使用 Visual Studio 進行偵錯](getting-started-with-the-debugger.md)
 ## [在偵錯工具中執行 Python 程式碼...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [對即時 Azure 應用程式進行偵錯](debug-live-azure-applications.md)
+## [偵錯受控碼與機器碼](how-to-debug-managed-and-native-code.md)
 ## [使用 IntelliTrace 倒退檢視快照](how-to-use-intellitrace-step-back.md)
 # 作法指南
 ## [使用偵錯工具巡覽程式碼](navigating-through-code-with-the-debugger.md)

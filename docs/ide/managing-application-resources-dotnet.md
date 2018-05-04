@@ -1,9 +1,8 @@
 ---
-title: 管理應用程式資源 (.NET) | Microsoft Docs
-ms.custom: ''
+title: 管理應用程式資源 (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,27 +19,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="managing-application-resources-net"></a>管理應用程式資源 (.NET)
+# <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
 資源檔案是屬於應用程式的一部分，但不會經過編譯的檔案，例如圖示檔案或音訊檔案。 由於這些檔案不屬於編譯處理程序的一部分，您可以變更它們而無需重新編譯二進位檔。 如果您打算將應用程式當地語系化，您應該針對所有字串和其他在將應用程式當地語系化時需要變更的資源使用資源檔。
 
-如需 .NET 桌面應用程式中的資源的詳細資訊，請參閱 [Resources in Desktop Apps](/dotnet/framework/resources/index)。
+如需 .NET 桌面應用程式中的資源的詳細資訊，請參閱[桌面應用程式中的資源](/dotnet/framework/resources/index)。
 
-## <a name="working-with-resources"></a>使用資源
+## <a name="work-with-resources"></a>使用資源
 
 在 受控碼專案中，開啟 [專案屬性] 視窗。 您可以透過下列方式開啟 [屬性] 視窗：
 
-- 在方案總管中，以滑鼠右鍵按一下專案節點，並選取 [屬性]
-- 在 [快速啟動] 視窗中，鍵入「專案屬性」
-- 在**方案總管**視窗中選擇 **Alt**+**Enter**
+- 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選取 [屬性]
+- 在 [快速啟動] 視窗中，輸入「專案屬性」
+- 在 [方案總管] 視窗中選擇 **Alt**+**Enter**
 
-選取 **資源**  索引標籤。您可以在專案尚未包含 .resx 檔案的情況下加入 .resx 檔案、加入和刪除不同種類的資源，以及修改現有的資源。
+選取 **資源**  索引標籤。您可以在專案尚未包含 *.resx* 檔案的情況下新增該檔案、新增和刪除不同種類的資源，以及修改現有的資源。
 
 ## <a name="resources-in-other-project-types"></a>其他專案類型中的資源
 
@@ -51,4 +50,4 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)
+- [桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)
