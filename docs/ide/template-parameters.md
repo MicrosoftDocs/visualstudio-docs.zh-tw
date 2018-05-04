@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 專案和項目範本參數 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 專案和項目範本參數
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>範本參數
 
-透過使用範本中的參數，您可以在範本具現化時取代範本機碼部分的值，例如類別名稱和命名空間。 當使用者選擇 [新增專案] 或 [新增項目] 對話方塊中的 [確定] 或 [新增] 時，在背景執行的範本精靈即會取代這些參數。
+將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
 
 ## <a name="declaring-and-enabling-template-parameters"></a>宣告和啟用範本參數
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>若要啟用範本中的參數替換
 
-1. 在範本的 .vstemplate 檔案中，找出對應至您要為其啟用參數取代之項目的 `ProjectItem` 項目。
+1. 在範本的 *.vstemplate* 檔案中，針對您要啟用參數取代的項目，找出對應的 `ProjectItem` 元素。
 
 1. 將 `ReplaceParameters` 項目的 `ProjectItem` 屬性設定為 `true`。
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |SpecificSolutionName|方案名稱。 若已核取 [建立方案目錄]，則 `SpecificSolutionName` 具有方案名稱。 若未核取 [建立方案目錄]，`SpecificSolutionName` 則為空白。|
 |userdomain|目前的使用者網域。|
 |username|目前的使用者名稱。|
-|webnamespace|目前的網站名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於網頁伺服器的根目錄，此範本參數會解析為網頁伺服器的根目錄。|
+|webnamespace|目前的網站名稱。 這個參數用於 Web 表單範本，以保證唯一的類別名稱。 如果網站位於 Web 伺服器的根目錄，此範本參數會解析為 Web 伺服器的根目錄。|
 |年|目前的年份，格式為 YYYY。|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 
 除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 項目 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>範例：檔案名稱使用專案名稱
+## <a name="example-use-the-project-name-for-a-file-name"></a>範例：檔案名稱使用專案名稱
 
 您可以在 `TargetFileName` 屬性中使用參數，來指定專案項目的變數檔案名稱。
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/16/2018
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>範例：命名空間名稱使用安全的專案名稱
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>範例：命名空間名稱使用安全的專案名稱
 
 若要在 C# 類別檔案為命名空間使用安全的專案名稱，請使用下列語法：
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-當您參考檔案時，請在專案範本的 .vstemplate 檔案中，納入 `ReplaceParameters="true"` 屬性：
+當您參考檔案時，請在專案範本的 *.vstemplate* 檔案中，納入 `ReplaceParameters="true"` 屬性：
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>另請參閱
 
-[自訂範本](../ide/customizing-project-and-item-templates.md)  
-[如何：建立專案範本](../ide/how-to-create-project-templates.md)
+- [自訂範本](../ide/customizing-project-and-item-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-project-templates.md)

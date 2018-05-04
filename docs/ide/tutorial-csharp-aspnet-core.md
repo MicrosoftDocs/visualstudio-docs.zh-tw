@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門 | Microsoft Docs
+title: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 ms.custom: ''
 ms.date: 12/11/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b3760c922e540837d0e9452efc8d44762eeeb3af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 使用者入門
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 使用者入門
 在利用使用 Visual Studio 的 ASP.NET Core 進行 C# 開發的這個教學課程中，您將建立 C# ASP.NET Core Web 應用程式、新增其程式碼、探索 IDE 的一些功能，以及執行應用程式。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
@@ -61,7 +61,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
-1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [Get Tools and Features] (取得工具和功能)。
+1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
 
 2. Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。   
 
@@ -86,15 +86,15 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
     ![Visual Studio 中的 ASP.NET 方案總管](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. 從 **Controllers** 資料夾中，開啟 **HomeController.cs** 檔案。
+1. 從 **Controllers** 資料夾中，開啟 *HomeController.cs* 檔案。
 
       ![Visual Studio 中方案總管的 HomeController.cs 檔案](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. 檢視 **HomeController.cs**
+2. 檢視 *HomeController.cs*
 
   ![Visual Studio 程式碼視窗中的 HomeController.cs](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. 專案也會有 **Views** 資料夾，內含對應至每個控制器的其他資料夾 (以及 [共用] 檢視的資料夾)。 例如，**/Home/About** 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 **Views/Home/About.cshtml** 中。 開啟該檔案。
+4. 專案也會有 **Views** 資料夾，內含對應至每個控制器的其他資料夾 (以及 [共用] 檢視的資料夾)。 例如，*/Home/About* 路徑的檢視 CSHTML 檔案 (副檔名為 HTML) 是在 *Views/Home/About.cshtml* 中。 開啟該檔案。
 
   ![Visual Studio 中方案總管的 About.cshtml 檔案](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -105,11 +105,11 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
  >[!NOTE]
  > 若要深入了解此作業，請參閱[使用 Razor 語法的 C# 和 ASP.NET 使用者入門](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)頁面。
 
-6. 方案也包含為網站根資料夾的 **wwwroot** 資料夾。 部署網站時，您可以將 CSS、影像和 JavaScript 程式庫這類靜態網站內容直接放在您要放置它們的路徑上。
+6. 方案也包含為網站根資料夾的 *wwwroot* 資料夾。 部署網站時，您可以將 CSS、影像和 JavaScript 程式庫這類靜態網站內容直接放在您要放置它們的路徑上。
 
  ![Visual Studio 中方案總管的 wwwroot 資料夾](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 **appsettings.json** 中。 不過，您可以根據每個環境來覆寫其中一部分/所有設定，例如，透過提供**開發**環境的 **appsettings.Development.json** 檔案。
+7. 另外還有各種組態檔可用來在執行階段管理專案、其專案和應用程式。 例如，預設應用程式[組態](/aspnet/core/fundamentals/configuration)會儲存在 *appsettings.json* 中。 不過，您可以根據每個環境來覆寫其中一部分/所有設定，例如，透過提供**開發**環境的 *appsettings.Development.json* 檔案。
 
  ![Visual Studio 中方案總管的組態檔](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,17 +126,17 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
  ![選取應用程式的瀏覽器視窗中的 [關於]](../ide/media/csharp-aspnet-browser-page.png)
 
- 其中，瀏覽器中的 [關於] 頁面會呈現 HomeController.cs 檔案中所設定的文字。
+ 其中，瀏覽器中的 [關於] 頁面會呈現 *HomeController.cs* 檔案中所設定的文字。
 
    ![檢視 [關於] 頁面上的文字](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. 將瀏覽器視窗保持開啟，並回到 Visual Studio。 開啟 **Controllers/HomeController.cs** (如果尚未開啟)。
+1. 將瀏覽器視窗保持開啟，並回到 Visual Studio。 開啟 *Controllers/HomeController.cs* (如果尚未開啟)。
 
  ![從 Visual Studio 的方案總管中開啟 HomeController.cs 檔案](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. 在 **About** 方法的第一行中，設定中斷點。 若要這麼做，請按一下邊界，或在該行設定游標，然後按 **F9**。
 
-  這行設定 **ViewData** 集合中的一些資料，而這些資料會呈現在 **Views/Home/About.cshtml** 的 CSHTML 頁面中。
+  這行設定 **ViewData** 集合中的一些資料，而這些資料會呈現在 *Views/Home/About.cshtml* 的 CSHTML 頁面中。
 
  ![在 About.cshtml 的 About 方法的第一行中，設定中斷點。  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
@@ -148,7 +148,7 @@ MVC 模式可協助您建立比傳統整合型應用程式更容易測試和更�
 
 1. 使用您用來新增應用程式中斷點的相同方法來移除應用程式中斷點。
 
-1. 開啟 **Views/Home/About.cshtml**。
+1. 開啟 *Views/Home/About.cshtml*。
 
  ![在方案總管中選取 About.cshtml](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
