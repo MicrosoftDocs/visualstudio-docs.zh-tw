@@ -1,7 +1,7 @@
 ---
-title: 建立啟動載入器套件 |Microsoft 文件
+title: 建立啟動載入器套件
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
@@ -22,81 +22,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 794d569504e46627c9387046b381fdb843a7818e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="creating-bootstrapper-packages"></a>建立啟動載入器套件
-安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (.msi) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  
+# <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
+安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (.msi) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  每個可轉散發元件或必要元件，會啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。 
   
- 啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。  
+啟動載入器會先偵測是否已安裝所有必要條件。 如果未安裝必要條件，啟動載入器會先顯示授權合約。 接著，在使用者接受授權合約之後，就會開始安裝必要條件。 不過，如果啟動載入器偵測到所有必要條件，就會直接啟動應用程式安裝程式。  
   
-## <a name="creating-custom-packages"></a>建立自訂套件  
- 您可以使用 Visual Studio 中的 XML 編輯器產生資訊清單。 如需詳細資訊，請參閱 [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) 與 [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。 如需查看建立啟動載入器套件的範例，請參閱 [逐步解說：建立自訂啟動載入器以顯示隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+## <a name="create-custom-bootstrapper-packages"></a>建立自訂啟動載入器套件  
+您可以使用 Visual Studio 中的 XML 編輯器來產生啟動載入器資訊清單。 若要查看建立啟動載入器套件的範例，請參閱[逐步解說： 建立自訂啟動載入器具有隱私權提示](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
- 若要建立啟動載入器套件，您必須將可轉散發套件以 EXE 或 MSI 檔案形式提供給啟動載入器資訊清單產生器。 啟動載入器資訊清單產生器接著會建立下列檔案：  
+若要建立啟動載入器套件，您必須建立產品資訊清單，每個當地語系化版本的元件時，封裝資訊清單。
   
--   產品資訊清單 (product.xml)，包含套件的所有語言中性中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  
+* 產品資訊清單中， *product.xml*，包含封裝的任何語言中性中繼資料。 此清單包含所有當地語系化版本之可轉散發元件通用的中繼資料。  若要建立這個檔案，請參閱[How to： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
   
--   套件資訊清單 (package.xml)，包含特定語言中繼資料。此清單通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。  
+* 封裝資訊清單中， *package.xml*，包含特定語言中繼資料，其通常包含當地語系化的錯誤訊息。 元件的每個當地語系化版本至少必須各有一份套件資訊清單。 若要建立這個檔案，請參閱[How to： 建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。
   
- 建立這些檔案之後，請將產品資訊清單檔案放入以自訂啟動載入器命名的資料夾中， 並將套件資訊清單檔案放入以地區設定命名的資料夾中。 例如，如果是英文版可轉散發套件的套件資訊清單檔案，請將檔案放入稱為 en 的資料夾中。 針對每個地區設定重複這個程序，例如以 ja 代表日文，以 de 代表德文。 最終的自訂啟動載入器套件可能會有下列資料夾結構。  
+建立這些檔案之後，請將產品資訊清單檔案放入以自訂啟動載入器命名的資料夾中， 並將套件資訊清單檔案放入以地區設定命名的資料夾中。 例如，如果是英文版可轉散發套件的套件資訊清單檔案，請將檔案放入稱為 en 的資料夾中。 針對每個地區設定重複這個程序，例如以 ja 代表日文，以 de 代表德文。 最終的自訂啟動載入器套件可能會有下列資料夾結構。  
+
+    ```
+    CustomBootstrapperPackage
+      product.xml
+      CustomBootstrapper.msi
+      de
+        eula.rtf
+        package.xml
+      en
+        eula.rtf
+        package.xml
+      ja
+        eula.rtf
+        package.xml
+    ```
   
- `CustomBootstrapperPackage`  
+接下來，將可轉散發檔案複製到啟動載入器資料夾位置。 如需詳細資訊，請參閱 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
+ 
+    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+    
+或  
+    
+    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
   
- `product.xml`  
+您也可以從下列登錄機碼中的 [路徑]  值，決定啟動載入器資料夾位置：  
   
- `CustomBootstrapper.msi`  
+    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
- `de`  
+在 64 位元系統上使用下列登錄機碼：  
   
- `eula.rtf`  
+    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
- `package.xml`  
+每個可轉散發元件會出現在套件目錄下各自的子資料夾中。 產品資訊清單和可轉散發檔案必須放入這個子資料夾。 當地語系化的版本的元件和套件資訊清單必須放在根據文化特性名稱來命名的子資料夾中。  
   
- `en`  
+這些檔案複製到啟動載入器資料夾之後，啟動載入器套件會自動出現在 Visual Studio**必要條件** 對話方塊。 如果您的自訂啟動載入器套件沒有出現，請關閉，然後再重新開啟**必要條件** 對話方塊。 如需詳細資訊，請參閱 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
   
- `eula.rtf`  
-  
- `package.xml`  
-  
- `ja`  
-  
- `eula.rtf`  
-  
- `package.xml`  
-  
- 最後，將可轉散發檔案複製到啟動載入器資料夾位置中。 如需詳細資訊，請參閱 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
-  
-```  
-\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- 或  
-  
-```  
-\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
-```  
-  
- 您也可以從下列登錄機碼中的 [路徑]  值，決定啟動載入器資料夾位置：  
-  
-```  
-HKLM\Software\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- 在 64 位元系統上，使用下列登錄機碼：  
-  
-```  
-HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
-```  
-  
- 每個可轉散發元件會出現在套件目錄下各自的子資料夾中。 產品資訊清單和可轉散發檔案會放入這個子資料夾中。 元件和套件資訊清單的當地語系化版本會放入依文化特性名稱命名的子資料夾中。  
-  
- 當這些檔案複製到啟動載入器資料夾之後，啟動載入器套件就會自動出現在 Visual Studio 的 [必要條件] 對話方塊中。 如果您的自訂啟動載入器套件沒有出現在其中，請關閉再重新開啟 [必要條件] 對話方塊。 如需詳細資訊，請參閱 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
-  
- 下表顯示啟動載入器會自動填入的屬性。  
+下表顯示啟動載入器會自動填入的屬性。  
   
 |屬性|描述|  
 |--------------|-----------------|  
@@ -109,11 +92,11 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |InstallMode|安裝模式指出需要從中安裝元件的位置。 包括下列值：<br /><br /> 從廠商的網站安裝-HomeSite-必要條件。<br />從您選取的位置安裝-SpecificSite-必要條件。<br />從應用程式的相同位置安裝-SameSite-必要條件。|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>將可轉散發套件與應用程式安裝分開放置  
- 您可以防止可轉散發檔案部署在安裝專案中。 若要達成這項目的，請在 .NET Framework 目錄的 RedistList 資料夾中建立可轉散發清單：  
+您可以防止可轉散發檔案部署在安裝專案中。 若要達成這項目的，請在 .NET Framework 目錄的 RedistList 資料夾中建立可轉散發清單：  
   
- `%ProgramFiles%\Microsoft.NET\RedistList`  
+`%ProgramFiles%\Microsoft.NET\RedistList`  
   
- 可轉散發清單是 XML 檔案，應該使用下列格式命名： *公司名稱*.*元件名稱*.RedistList.xml。 例如，如果 Acme 建立稱為 Datawidgets 的元件，請使用 Acme.DataWidgets.RedistList.xml。 可轉散發清單的內容範例可能如下所示：  
+可轉散發清單是 XML 檔案，應該使用下列格式命名： *公司名稱*.*元件名稱*.RedistList.xml。 因此，比方說，如果元件建立稱為 Datawidgets acme，使用*Acme.DataWidgets.RedistList.xml*。 可轉散發清單的內容範例可能如下所示：  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

@@ -10,11 +10,11 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2caa7d2e70aa10ab9f8f4f37b08c1f59d6d325
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fafcbd925d144cb619696da105f51e2f00db1421
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/26/2018
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img data-hoverimage="../images/setup-install.svg" src="../images/setup-install.png" alt="" />
+                                <img data-hoverimage="../images/setup-install.svg" src="../images/setup-install.png" alt="Visual Studio install setup" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/26/2018
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Visual Studio overview" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_advanced.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_advanced.svg" alt="Microsoft Virtual Academy" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Visual Studio IDE" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -106,7 +106,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="Projects and solutions" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -124,7 +124,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Code editor" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,7 +142,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="Personalize IDE" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -160,7 +160,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="C# web app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -178,7 +178,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="Visual Basic console app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ console app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -214,7 +214,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python web app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -232,7 +232,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js web app" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -251,23 +251,23 @@ ms.lasthandoff: 04/26/2018
 <div class="ico48Case halfStack">
 
 <!--
-<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833067"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833067"><img width="48" height="48" alt="F# tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Fsharp.svg"><span>F#</span></a></div>
-<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833066"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="https://go.microsoft.com/fwlink/?linkid=833066"><img width="48" height="48" alt="TypeScript tutorial"
 src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span></a></div>
 -->
 
-<div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt="C++ tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt="Python tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/rtvs/getting-started-with-r"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/rtvs/getting-started-with-r"><img width="48" height="48" alt="R tutorial"
 src="https://docs.microsoft.com/media/logos/logo_R.svg"><span>R</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/ide/tutorial-csharp-aspnet-core"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/ide/tutorial-csharp-aspnet-core"><img width="48" height="48" alt="C# tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Csharp.svg"><span>C#</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/ide/tutorial-visual-basic-console"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/ide/tutorial-visual-basic-console"><img width="48" height="48" alt="Visual Basic tutorial"
 src="https://docs.microsoft.com/media/logos/logo_vb.svg"><span>Visual Basic</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/ide/getting-started-with-debugging-in-visual-studio"><img width="48" height="48" alt=""
+<div class="ico48Link"><a href="/visualstudio/ide/getting-started-with-debugging-in-visual-studio"><img width="48" height="48" alt="Debugging tutorial"
 src="https://docs.microsoft.com/media/common/i_debug.svg"><span>偵錯</span></a></div>
