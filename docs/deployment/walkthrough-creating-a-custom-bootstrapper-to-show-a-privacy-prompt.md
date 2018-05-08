@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 建立自訂啟動載入器以顯示隱私權提示 |Microsoft 文件
+title: 逐步解說： 建立自訂啟動載入器具有隱私權提示 |Microsoft 文件
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說： 建立自訂啟動載入器具有隱私權提示
 您可以設定 ClickOnce 應用程式與較新的檔案版本和組件版本的組件變成可用時自動更新。 若要確定您的客戶同意此行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，並不會安裝。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Visual Studio 2010。  
   
-## <a name="creating-an-update-consent-dialog-box"></a>建立更新程式的同意對話方塊  
+## <a name="create-an-update-consent-dialog-box"></a>建立更新同意對話方塊  
  若要顯示隱私權提示，請建立應用程式詢問讀取器同意應用程式的自動更新。  
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要建立顯示同意對話方塊  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/19/2018
   
 26. 在**建置**功能表上，按一下 **和 BuildSolution**。  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>建立自訂啟動載入器套件  
+## <a name="create-the-custom-bootstrapper-package"></a>建立自訂啟動載入器套件  
  若要顯示隱私權提示給使用者，您可以建立更新同意對話方塊應用程式的自訂啟動載入器套件，並將它做為必要條件包含在所有 ClickOnce 應用程式。  
   
  此程序示範如何透過建立下列文件來建立自訂啟動載入器套件：  
@@ -228,7 +228,7 @@ ms.lasthandoff: 04/19/2018
   
 6.  如有必要，建立新 package.xml 資訊清單檔案，以及新 eula.rtf 文件的每個地區設定的軟體授權條款。 例如，如果您建立子目錄 fr 和 de 地區設定，建立個別的 package.xml 資訊清單檔案和軟體授權條款，並將它們儲存到 fr 和 de 子目錄。  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>設定更新同意應用程式的必要條件  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>設定更新同意應用程式的必要條件  
  在 Visual Studio 中，您可以設定更新同意應用程式的必要元件。  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>若要設定更新同意應用程式的必要條件  
@@ -246,7 +246,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="creating-and-testing-the-setup-program"></a>建立並測試安裝程式  
+## <a name="create-and-test-the-setup-program"></a>建立並測試安裝程式  
  設定更新同意應用程式的必要元件之後，您可以產生應用程式的安裝程式並啟動載入器。  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>建立及測試安裝程式沒有按一下 我同意  
