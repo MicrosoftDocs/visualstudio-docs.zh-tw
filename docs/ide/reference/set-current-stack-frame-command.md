@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ee2a7dec352f4bcdcf8e7d164950a422b79d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 95f8c762f16eb4a784ccc2cffb5bfa27d215370e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-current-stack-frame-command"></a>設定目前堆疊框架命令
 可讓您設定特定堆疊框架。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.SetCurrentStackFrame index
 ```
 
@@ -37,7 +37,7 @@ Debug.SetCurrentStackFrame index
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.SetCurrentStackFrame 1
 ```
 

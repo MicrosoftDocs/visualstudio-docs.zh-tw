@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。
@@ -71,10 +71,10 @@ ms.lasthandoff: 04/26/2018
 ## <a name="extensions-to-hide"></a>要隱藏的副檔名
   指定啟用 [顯示所有檔案] 時，不會顯示在方案總管中之檔案的副檔名。
 
- ## <a name="build-customization-search-path"></a>建置自訂搜尋路徑
+## <a name="build-customization-search-path"></a>建置自訂搜尋路徑
   指定包含 .rules 檔案的目錄清單，以協助您定義專案的建置規則。
 
-# <a name="solution-explorer-mode"></a>方案總管模式
+## <a name="solution-explorer-mode"></a>方案總管模式
  **僅顯示專案中的檔案**
 
   將方案總管設定為僅顯示專案中的檔案。

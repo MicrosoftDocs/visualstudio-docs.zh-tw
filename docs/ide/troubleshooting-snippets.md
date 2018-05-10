@@ -1,5 +1,5 @@
 ---
-title: 疑難排解程式碼片段
+title: 針對程式碼片段的問題進行疑難排解
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0151ff22146d745c42204ec66b9f5d35c2c8b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="troubleshooting-snippets"></a>疑難排解程式碼片段
+# <a name="troubleshoot-snippets"></a>針對程式碼片段的問題進行疑難排解
 
 IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀的程式碼片段檔案或程式碼片段檔案中有錯誤內容。
 
-## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>程式碼片段無法從檔案總管拖曳至 Visual Studio 的原始程式檔
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>程式碼片段無法從 [檔案總管] 拖曳至 Visual Studio 的原始程式檔
 
 -   程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。
 

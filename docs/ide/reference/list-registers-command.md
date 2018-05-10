@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1113f7a4e1a61e6fe2954dfe8d98b9b2c52e6732
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Watch [{register|registerGroup}...]]
 [/Unwatch [{register|registerGroup}...]]
@@ -62,7 +62,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="example"></a>範例
  這個範例會使用 `Debug.ListRegisters` 別名 `r` 顯示暫存器群組 `Flags` 的值。
 
-```
+```cmd
 r /Display Flags
 ```
 

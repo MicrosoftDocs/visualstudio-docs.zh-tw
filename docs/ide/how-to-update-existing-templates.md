@@ -1,9 +1,8 @@
 ---
-title: 更新 Visual Studio 中現有的專案和項目範本 | Microsoft Docs
-ms.custom: ''
+title: 更新 Visual Studio 中現有的專案和項目範本
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
 
@@ -49,7 +48,7 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]：
 
 ### <a name="to-manually-update-an-existing-template"></a>手動更新現有範本
 
-1. 找出包含範本的 *.zip* 檔。 使用者專案範本位在 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates*。
+1. 尋找包含範本的 *.zip* 檔。 使用者專案範本位在 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates*。
 
 1. 解壓縮 *.zip* 檔。
 
@@ -69,8 +68,8 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]：
 
 ## <a name="see-also"></a>另請參閱
 
-[自訂範本](../ide/customizing-project-and-item-templates.md)  
-[建立專案與項目範本](../ide/creating-project-and-item-templates.md)  
-[Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)  
-[範本參數](../ide/template-parameters.md)  
-[如何：建立入門套件](../ide/how-to-create-starter-kits.md)
+- [自訂範本](../ide/customizing-project-and-item-templates.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [範本參數](../ide/template-parameters.md)
+- [如何：建立入門套件](../ide/how-to-create-starter-kits.md)

@@ -1,6 +1,6 @@
 ---
-title: 如何管理 Python 環境與解譯器
-description: 如何在 Visual Studio 中使用 [Python 環境] 視窗，來為 Visual Studio 專案管理全域及虛擬環境、設定自訂環境、安裝 Python 解譯器、安裝套件、設定搜尋路徑，以及管理環境。
+title: 管理 Python 環境與解譯器
+description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 環境
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
 Python「環境」是您執行 Python 程式碼的內容，其中包含全域、虛擬和 Conda 環境。 環境是由解譯器、程式庫 (通常是 Python 標準程式庫) 及一組已安裝的套件所組成。 這些元件共同決定有效的語言建構和語法、您可存取的作業系統功能，以及您可以使用的套件。
 

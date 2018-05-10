@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97fe1c6865b8934d2c0329547e98323c75bf3ec0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="watch-command"></a>Watch 命令
 建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.Watch[index]
 ```
 
@@ -40,7 +40,7 @@ Debug.Watch[index]
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.Watch1
 ```
 

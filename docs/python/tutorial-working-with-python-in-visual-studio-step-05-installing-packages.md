@@ -1,6 +1,6 @@
 ---
-title: 使用 Python 的步驟 5：安裝套件
-description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 5，示範用於在 Python 環境中管理套件的 Visual Studio 功能。
+title: 使用 Python 教學課程的步驟 5：安裝套件
+description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 5，示範 Visual Studio 在 Python 環境中管理套件的功能。
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 73de2a4c58a24a603f1d5d54138d5762e3ae9971
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>第 5 步：在 Python 環境中安裝套件
 
@@ -66,7 +66,7 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
 
   ![matplotlib 範例的輸出](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

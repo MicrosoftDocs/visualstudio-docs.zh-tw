@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 225d65c33ac3616bdc207cfd71afa0441d58c80c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 24a8f49c036ed28693d92b162a417114f2c93e89
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/20/2018
   ```
 
  使用者現在就可以從這個共用執行安裝程式，以安裝 Visual Studio。
-    ```
+    ```cmd
     \\server\share\VS2017\vs_enterprise.exe
     ```
 

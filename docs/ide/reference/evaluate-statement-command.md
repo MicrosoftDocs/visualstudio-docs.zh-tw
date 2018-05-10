@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 評估並顯示指定的陳述式。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.EvaluateStatement text
 ```
 
@@ -38,7 +38,7 @@ Debug.EvaluateStatement text
 
  在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 因此；例如，如果 `a` 和 `b` 變數的值不同，則命令
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
 
  相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此；例如，命令
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.EvaluateStatement(a+b)
 ```
 

@@ -1,7 +1,7 @@
 ---
-title: 整理 Visual Studio 中的範本 | Microsoft Docs
-ms.custom: ''
+title: 整理 Visual Studio 中的範本
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +13,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
 
@@ -121,8 +121,8 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[自訂範本](../ide/customizing-project-and-item-templates.md)  
-[Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)  
-[NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)  
-[如何：建立專案範本](../ide/how-to-create-project-templates.md)  
-[如何：建立項目範本](../ide/how-to-create-item-templates.md)
+- [自訂範本](../ide/customizing-project-and-item-templates.md)
+- [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)
+- [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
+- [如何：建立項目範本](../ide/how-to-create-item-templates.md)

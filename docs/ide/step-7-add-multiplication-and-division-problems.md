@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeeca2e53addab923fa3f62c661543497ea1f35
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3c89def201f0045d561b180bd3af521ba4c2de
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。  
 
-### <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題  
+## <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題  
 
 1.  在表單中加入另外四個整數變數。  
 
@@ -38,9 +38,9 @@ ms.lasthandoff: 04/26/2018
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
 
      由於使用鍵盤不容易輸入乘號 (×) 和除號 (÷)，因此 Visual C# 和 Visual Basic 可接受星號 (*) 表示乘法和斜線符號 (/) 表示除法。  
-
-4.  變更計時器的 Tick 事件處理常式的最後一部分，讓事件處理常式在時間結束時填入正確答案。  
-
+  
+4.  變更計時器的 <xref:System.Windows.Forms.Timer.Tick> 事件處理常式的最後一部分，讓事件處理常式在時間結束時填入正確答案。  
+  
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
 
@@ -49,10 +49,10 @@ ms.lasthandoff: 04/26/2018
      受測者必須回答四個問題才能完成測驗，如下圖所示。  
 
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-包含四個問題的數學測驗  
-
-### <a name="to-continue-or-review"></a>若要繼續或檢視  
-
+包含四個問題的**數學測驗**  
+  
+## <a name="to-continue-or-review"></a>若要繼續或檢視  
+  
 -   若要移到下一個教學課程步驟，請參閱[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)。  
-
+  
 -   若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。

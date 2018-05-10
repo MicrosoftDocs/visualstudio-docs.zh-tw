@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [即時運算] 視窗用來偵錯和評估運算式、執行陳述式、列印變數值等等。 它可讓您在偵錯期間，輸入開發語言要評估或執行的運算式。 若要顯示 [即時運算] 視中，請開啟專案以進行編輯，然後從 [偵錯] 功能表中選擇 [視窗]，並選取 [即時運算]，或按 CTRL+ALT+I。
@@ -32,13 +32,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>顯示變數的值
  此視窗在進行應用程式偵錯時特別有用。 例如，若要檢查 `varA` 變數的值，您可以使用 [Print 命令](../../ide/reference/print-command.md)：
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  問號 (?) 是 `Debug.Print` 的別名，因此，此命令也可以撰寫為：
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
  在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此；例如，命令
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 
  相較之下，在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令] 視窗中使用指派運算。 因此；例如，如果 `varA` 和 `varB` 變數的值不同，則命令
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

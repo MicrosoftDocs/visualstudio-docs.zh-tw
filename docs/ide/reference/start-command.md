@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1e5ade7d02882633504ac5615ee751b2533adde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbd2d64d8103afe1e303052c9b27fc2cc85cab58
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.Start [address]
 ```
 
@@ -41,7 +41,7 @@ Debug.Start [address]
 ## <a name="example"></a>範例
  此範例會啟動偵錯工具，並忽略任何發生的例外狀況。
 
-```
+```cmd
 >Debug.Start
 ```
 

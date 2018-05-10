@@ -3,13 +3,13 @@ title: 新增和移除專案項目
 description: 本文件描述如何在 Visual Studio for Mac 中新增和移除專案項目
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: f3fb3d133fb87d7d101018006433e5e75a5b0ec4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2905477ca4141d555d086a680c0cd797b3c4d7c8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="adding-and-removing-project-items"></a>新增和移除專案項目
 

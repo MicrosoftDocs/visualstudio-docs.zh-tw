@@ -15,24 +15,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31810189ec7127548f68a3732afc701e8a7bac08
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-command"></a>尋找命令
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
 
 ## <a name="arguments"></a>引數
- `findwhat` 必要。 要比對的文字。
+ `findwhat` 必要項。 要比對的文字。
 
 ## <a name="switches"></a>參數
  /case 或 /c 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
@@ -62,7 +62,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="example"></a>範例
  此範例會在目前選取的程式碼區段中，對 "somestring" 執行區分大小寫的搜尋。
 
-```
+```cmd
 >Edit.Find somestring /sel /case
 ```
 

@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>在 Visual Studio 中對 R 程式碼進行 Linting
 
-Linting 是一種分析程式碼以揭露潛在錯誤、格式問題，以及其他程式碼雜訊 (例如假性空白) 的程序。 Linting 也有助於鼓勵特定程式碼撰寫慣例，例如如何命名識別碼。這在小組和其他共同作業的情況下很有幫助。
+Linting 會分析程式碼以揭露潛在的錯誤、格式問題和其他程式碼雜訊 (例如假性空白)。 Linting 也有助於鼓勵特定程式碼撰寫慣例，例如如何命名識別碼。 這種慣例在小組內和其他共同作業情況下非常有用。
 
 Visual Studio R 工具 (RTVS) 可為 R 提供內建的 Linting，其行為可透過一系列於本文中所述的選項做出控制。 這些選項可在 [工具] > [選項] > [文字編輯器] > [R] > [Lint] 中找到。
 
@@ -32,7 +30,7 @@ Visual Studio R 工具 (RTVS) 可為 R 提供內建的 Linting，其行為可透
 
 ![R 程式碼 Linting 的範例](media/linting-01.png)
 
-您通常會根據專案或檔案的需求變更 Linting 選項。 例如，來自線上課程的範例程式碼可能會使用 `=` 而非 `<-` 來搭配 Pascal 大小寫識別項。 這種程式碼會頻繁顯示 Linting 警告，因為預設的 Linting 選項會標記此類情況。 因此在處理這種程式碼時，您可以直接停用那些選項，而不需要花費時間修正每個執行個體。
+您通常會根據專案或檔案的需求變更 Linting 選項。 例如，來自線上課程的範例程式碼可能會使用 `=` 而非 `<-` 來搭配 Pascal 大小寫識別項。 這種程式碼會頻繁顯示 Linting 警告，因為預設的 Linting 選項會標記此類情況。 因此在處理這種程式碼時，您可以停用那些選項，而不需要花費時間修正每個執行個體。
 
 ## <a name="assignment-group"></a>指派群組
 

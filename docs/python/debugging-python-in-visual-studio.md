@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>對您的 Python 程式碼進行偵錯
 
@@ -125,7 +125,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 每個例外狀況的核取方塊控制當此例外狀況引發時，是否*一律*中斷偵錯工具。 當您想更頻繁地針對特定例外狀況中斷時，請核取此方塊。
 
-根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況都會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任一例外狀況，然後選取或取消選取 [當使用者程式碼中未處理時繼續]。 當您想減少針對例外狀況中斷的頻率時，請清除此方塊。
+根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況都會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任何例外狀況，並修改 [當使用者程式碼中未處理時繼續] 選項。 當您想減少針對例外狀況中斷的頻率時，請清除此方塊。
 
 若要設定未顯示在此清單中的例外狀況，請按一下 [新增 (Add)] 按鈕將其加入。 名稱必須符合例外狀況的完整名稱。
 

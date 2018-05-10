@@ -1,6 +1,7 @@
 ---
-title: 使用 tasks.vs.json 和 launch.vs.jason 在 Visual Studio 中自訂建置及對工作進行偵錯 | Microsoft Docs
+title: 使用 tasks.vs.json 和 launch.vs.jason 在 Visual Studio 中自訂建置及對工作進行偵錯
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc193c8c54c09a7d2950cd80994d62512d9232d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 

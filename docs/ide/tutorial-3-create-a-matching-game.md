@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f1517f66882ab793efad194c7cf0a76076c4993
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：  
 
--   在 `List` 物件中儲存物件 (例如圖示)。  
+-   在 <xref:System.Collections.Generic.List%601> 物件中儲存物件 (例如圖示)。  
 
 -   使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。  
 
@@ -35,12 +35,14 @@ ms.lasthandoff: 04/26/2018
  ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 您在本教學課程中建立的遊戲  
 
- 若要下載這個範例的完整版，請參閱 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (完整的配對遊戲教學課程範例)。  
+## <a name="tutorial-links"></a>教學課程的連結
+
+ 若要下載這個範例的完整版，請參閱[完整的配對遊戲教學課程範例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) \(英文\)。  
 
 > [!NOTE]
 >  在本教學課程中，Visual C# 和 Visual Basic 都會涵蓋在內，所以請將焦點放在您正在使用的程式語言專屬資訊。  
 
- 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 此外，其中提供了很好的免費視訊學習資源。 若要深入了解如何在 Visual Basic 程式設計，請參閱 [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Visual Basic 基礎：徹底初學者開發)。 若要深入了解如何在 Visual C# 程式設計，請參閱 [C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(Visual C# 基礎：徹底初學者開發)。  
+ 如果您碰到程式開發的問題，請嘗試發表問題至 MSDN 論壇。 請參閱 [Visual Basic 論壇](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 論壇](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 此外，其中提供了很好的免費視訊學習資源。 若要深入了解 Visual Basic 中的程式設計，請參閱 [Visual Basic 基礎：徹底初學者開發](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) \(英文\)。 若要深入了解 Visual C# 中的程式設計，請參閱 [Visual C# 基礎：徹底初學者開發](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) \(英文\)。  
 
 ## <a name="related-topics"></a>相關主題  
 
@@ -49,8 +51,8 @@ ms.lasthandoff: 04/26/2018
 |[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並新增 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|  
 |[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|加入 `Random` 物件和 `List` 物件，以建立圖示清單。|  
 |[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)|將圖示隨機指派給 `Label` 控制項；因此，每個遊戲是不同的。|  
-|[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)|加入 Click 事件處理常式，以變更已按下標籤的色彩。|  
-|[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)|加入參考變數，以追蹤已按一下的標籤。|  
+|[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)|加入 `Click` 事件處理常式，以變更已按下標籤的色彩。|  
+|[步驟 5：加入標籤參考](../ide/step-5-add-label-references.md)|加入參考變數，以追蹤已按一下的標籤。|  
 |[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)|將計時器加入至表單，追蹤遊戲已經過的時間。|  
 |[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)|如果已選取相符的配對，請讓圖示配對維持可見狀態。|  
 |[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|加入 `CheckForWinner()` 方法以驗證玩家是否贏了。|  

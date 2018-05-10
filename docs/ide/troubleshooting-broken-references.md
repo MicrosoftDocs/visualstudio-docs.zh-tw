@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="reference-path-is-incorrect"></a>參考路徑不正確
 
-如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 MyComponent) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如 C:\MyComponents\\) 附加至 **ReferencePath** 專案屬性。
+如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 *MyComponent*) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如*C:\MyComponents*) 附加至 **ReferencePath** 專案屬性。
 
-當專案開啟時，它會藉由尋找參考路徑中的目錄，嘗試找出這些參考的元件檔。 如果用來開啟專案的電腦將元件儲存在不同的目錄 (例如 D:\MyComponents\\)，則找不到參考且 [工作清單] 中會出現錯誤。
+當專案開啟時，它會藉由尋找參考路徑中的目錄，嘗試找出這些參考的元件檔。 如果用來開啟專案的電腦將元件儲存在不同的目錄 (例如 *D:\MyComponents*)，則找不到參考且 [工作清單] 中會出現錯誤。
 
 若要修正這個問題，您可以刪除中斷的參考，然後使用 [加入參考] 對話方塊將它取代。 另一個解決方法是使用專案屬性頁中的 [參考路徑] 項目，然後修改清單中的資料夾以指向正確的位置。 每部電腦上每位使用者的 [參考路徑] 屬性都會保留。 因此，修改您的參考路徑並不會影響專案的其他使用者。
 

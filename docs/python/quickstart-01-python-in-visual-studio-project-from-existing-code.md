@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 497e32e2be5babe16b82e9b06ab12f4f5c2c0ba7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a27110082ead9da0c8c355a9ee3770524f09f04
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：在 Visual Studio 中從現有程式碼建立 Python 專案
 
@@ -35,6 +35,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+- [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 - [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
 - [安裝位置](installing-python-support-in-visual-studio.md#install-locations)。

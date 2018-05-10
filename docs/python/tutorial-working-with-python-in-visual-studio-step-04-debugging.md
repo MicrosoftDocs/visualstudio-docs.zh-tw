@@ -1,6 +1,6 @@
 ---
-title: 使用 Python 的步驟 4：偵錯
-description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 4，涵蓋在偵錯工具中執行 Python 程式碼的方式。
+title: 使用 Python 教學課程的步驟 4：偵錯
+description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 4，涵蓋如何在偵錯工具中執行 Python 程式碼。
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
 > [!Tip]
 > 在某些情況下 (例如，無法啟動 Python 解譯器本身)，輸出視窗只會短暫出現後自動關閉，而不讓您看到任何錯誤訊息。 如果發生這種情況，請以滑鼠右鍵按一下方案總管中的專案，並選取 [屬性]，再選取 [偵錯] 索引標籤，然後將 `-i` 新增至 [解譯器引數] 欄位。 此引數會導致解譯器在程式完成之後進入互動模式，並在您輸入 Ctrl+Z、Enter 結束之前保持視窗開啟。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [在 Python 環境中安裝套件](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

@@ -25,11 +25,11 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f842eb9573f2519525f122dd58d23559df37e54c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升級 Dotfuscator Community Edition (CE)
 
@@ -80,23 +80,23 @@ Dotfuscator Professional 是業界標準 [.NET 混淆器][net-obfuscator]，適�
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [control-flow]: https://www.preemptive.com/products/dotfuscator/features#controlflow
-- [string-encryption]: https://www.preemptive.com/products/dotfuscator/features#string
-- [watermarking]: https://www.preemptive.com/products/dotfuscator/features#watermarking
-- [linking]: https://www.preemptive.com/products/dotfuscator/features#linking
-- [pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
+[control-flow]:  https://www.preemptive.com/products/dotfuscator/features#controlflow
+[string-encryption]:  https://www.preemptive.com/products/dotfuscator/features#string
+[watermarking]:  https://www.preemptive.com/products/dotfuscator/features#watermarking
+[linking]:  https://www.preemptive.com/products/dotfuscator/features#linking
+[pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
-- [check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-- [features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
+[check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
+[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
-- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-- [eval]: https://www.preemptive.com/eval-request
+[net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
+[eval]:  https://www.preemptive.com/eval-request
 
-- [product-about]: https://www.preemptive.com/products/dotfuscator/overview
-- [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
+[product-about]:  https://www.preemptive.com/products/dotfuscator/overview
+[product-compare]:  https://www.preemptive.com/products/dotfuscator/compare-editions
 
-- [cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
-- [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
+[cli]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+[register-ce]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-- [decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+[decode-obfuscated]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html

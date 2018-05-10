@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和延伸模組 SDK 新增參考的比較
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 |機制與應用程式資訊清單整合。|Y|SDK 必須傳遞 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 的特定概念，以使封裝和 F5 能正確地搭配 [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] 中可用的 SDK 使用。|Y|NuGet 內容會成為專案的一部分。 不需要任何特殊的 F5 考量。|
 |機制會部署非參考檔案 (例如，部署在其上執行 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式測試的測試架構)。|Y|如果您將檔案放在 *\redist* 資料夾中，則系統會自動部署檔案。|Y||
 |機制會自動在 Visual Studio IDE 中新增平台 SDK。|Y|如果您將 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 或 Windows Phone SDK 放在具有特定配置的特定位置，SDK 會自動與所有 Visual Studio 功能整合。|N||
-|機制支援全新的開發人員機器。 (也就是，不需安裝作業，簡單地從原始程式碼控制擷取即可運作。)|N|由於您參考 SDK，因此您必須個別簽入您的方案和 SDK。 您可以從兩個 MSBuild 逐一查看 SDK 的非登錄預設位置簽入 SDK (如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md))。 或者，如果自訂位置包含 SDK，您可以在專案檔中指定下列程式碼︰<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 然後將 SDK 簽入到該位置。|Y|您可以簽出方案，Visual Studio 可立即辨識並處理檔案。|
+|機制支援全新的開發人員機器。 (也就是，不需安裝作業，簡單地從原始程式碼控制擷取即可運作。)|N|由於您參考 SDK，因此您必須個別簽入您的方案和 SDK。 您可以從兩個 MSBuild 逐一查看 SDK 的非登錄預設位置簽入 SDK (如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md))。 或者，如果自訂位置包含 SDK，您可以在專案檔中指定下列程式碼︰<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> 然後將 SDK 簽入到該位置。|Y|您可以簽出方案，Visual Studio 可立即辨識並處理檔案。|
 |您可以加入龐大的現有套件作者社群。|N/A|此為新社群。|Y||
 |您可以加入龐大的現有套件取用者社群。|N/A|此為新社群。|Y||
 |您可以加入合作夥伴的生態系統 (自訂組件庫、儲存機制等等)。|N/A|可用的存放庫包含 Visual Studio Marketplace、Microsoft 下載中心與 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。|Y||

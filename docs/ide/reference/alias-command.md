@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c848ff9a0234040e60391be8baa05e23791a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41bddec00866f7c10140abc40c5ff12c623310d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
@@ -57,19 +57,19 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ## <a name="examples"></a>範例
  此範例會建立新的別名 `upper`，而這表示完整命令 Edit.MakeUpperCase。
 
-```
+```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
  此範例會刪除別名 `upper`。
 
-```
+```cmd
 >Tools.alias /delete upper
 ```
 
  此範例會顯示一份所有目前別名和定義的清單。
 
-```
+```cmd
 >Tools.Alias
 ```
 

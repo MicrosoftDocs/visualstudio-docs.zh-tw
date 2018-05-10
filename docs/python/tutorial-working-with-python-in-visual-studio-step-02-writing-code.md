@@ -1,6 +1,6 @@
 ---
-title: 使用 Python 的步驟 2：撰寫和執行程式碼
-description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 2，涵蓋編輯並執行簡單 Hello World 程式的方式，並於後續提供更有趣的程式碼，以示範 Visual Studio 的編輯和 IntelliSense 功能。
+title: 使用 Python 教學課程的步驟 2：撰寫和執行程式碼
+description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 2，包含編輯程式碼和執行專案。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 607903093735c1ab49886afcf292121e0b7bafb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>第 2 步：撰寫和執行程式碼
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 使用 Ctrl + F5 或 [偵錯] > [啟動但不偵錯]，再次執行程式。 當您完成時，請關閉輸出視窗。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

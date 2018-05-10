@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69e57e348692d57baabb0d4f13290913d45f814c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
@@ -44,7 +44,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  例如，若要建立新的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 原始程式檔，您將針對 /t:`templatename` 引數輸入下列項目。
 
-```
+```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
@@ -58,14 +58,14 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>範例
  這個範例會建立新的網頁 "test1.htm"，並在原始碼程式碼編輯器中開啟。
 
-```
+```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 

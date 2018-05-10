@@ -1,6 +1,6 @@
 ---
-title: 使用 Python 的步驟 1：建立專案
-description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 1，提供整個教學課程的大鋼、描述必要條件，並逐步介紹建立新 Python 專案的程序。
+title: 使用 Python 教學課程的步驟 1：建立專案
+description: 在 Visual Studio 中 Python 功能核心逐步解說的概觀與步驟 1，包含必要條件和建立新的 Python 專案。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 
@@ -31,9 +31,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 - [步驟 5：安裝套件以及管理 Python 環境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [步驟 6：使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>必要條件
-
-- 已安裝 Python 工作負載的 Visual Studio 2017。 如需指示，請參閱[步驟 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md)。
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>步驟 1：建立新的 Python 專案
 
@@ -69,7 +67,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
     以滑鼠右鍵按一下方案總管中的任何節點或項目，以存取適用命令的功能表。 例如，**Rename** 命令可讓您變更任何節點或項目的名稱 (包含專案和方案)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [撰寫和執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

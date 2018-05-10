@@ -1,6 +1,6 @@
 ---
-title: 使用 Python 的步驟 3：互動式 REPL 視窗
-description: 在 Visual Studio 內使用 Python 之核心教學課程的步驟 3，涵蓋 Python 互動式 REPL 視窗。
+title: 使用 Python 教學課程的步驟 3：互動式 REPL 視窗
+description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 3，涵蓋 Python 互動式 REPL 視窗。
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 您剛完成的作業是使用互動式視窗的快速 REPL 環境了解一小部分程式碼的詳細資料，然後您可以方便地將該程式碼新增至專案的原始程式檔。 當您現在使用 Ctrl+F5 (或 [偵錯] > [開始但不偵錯]) 再次執行程式碼時，就會看到您想要的確切結果。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
 > [在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

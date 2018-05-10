@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 服務測試 | Microsoft Docs
+title: 在 Visual Studio 中建立 Web 服務測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 64530780a3e599df7e623ea5232c6890bf7b97a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 

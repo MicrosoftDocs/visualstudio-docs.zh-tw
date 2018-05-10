@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf241ec0a9ff849b52761a241e84a15d287bb88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="print-command"></a>列印命令
 評估運算式，或顯示指定的文字。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.Print text
 ```
 
@@ -39,13 +39,13 @@ Debug.Print text
 ## <a name="remarks"></a>備註
  您可以使用問號 (?) 作為此命令的別名。 因此；例如，命令
 
-```
+```cmd
 >Debug.Print expA
 ```
 
  也可以寫成
 
-```
+```cmd
 >? expA
 ```
 
@@ -53,7 +53,7 @@ Debug.Print text
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.Print varA
 ```
 

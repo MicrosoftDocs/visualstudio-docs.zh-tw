@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55e399dab41065fb96f9f3ac8e80484860f5187
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="go-to-command"></a>移至命令
 將游標移至指定的程式行。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Edit.GoTo [linenumber]
 ```
 
@@ -44,7 +44,7 @@ Edit.GoTo [linenumber]
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Edit.GoTo 125
 ```
 

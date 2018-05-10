@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0110a8e9b0e4617ac191bfaab8b575fd8faa6a76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 顯示指定的記憶體範圍的內容。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
@@ -57,13 +57,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="remarks"></a>備註
  您不必寫出完整的 **Debug.ListMemory** 命令與所有參數，而可以使用預先定義的別名叫用命令，並將特定的參數預設為指定的值。 例如，若不輸入：
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
  您可以撰寫：
 
-```
+```cmd
 >df /Count:30 /Unicode
 ```
 
@@ -82,7 +82,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 

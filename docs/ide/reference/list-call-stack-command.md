@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5fb8bd8b0f0f550e6fa1253f778895af0472be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 顯示目前的呼叫堆疊。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 [/ShowNames:yes|no] [/ShowValues:yes|no] [/ShowModule:yes|no]
 [/ShowLineOffset:yes|no] [/ShowByteOffset:yes|no]
@@ -87,7 +87,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="remarks"></a>備註
  對引數或參數所做的變更適用於未來叫用此命令。 如果您發出 Debug.ListCallStackby 本身，則會顯示整個呼叫堆疊。 如果您指定索引，例如，
 
-```
+```cmd
 Debug.ListCallStack 2
 ```
 
@@ -95,7 +95,7 @@ Debug.ListCallStack 2
 
  您也可以使用其預先定義的別名 kb，撰寫此命令。 例如，您可以輸入
 
-```
+```cmd
 kb 2
 ```
 
@@ -103,7 +103,7 @@ kb 2
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 

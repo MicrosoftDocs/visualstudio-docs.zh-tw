@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 您也會開始撰寫程式碼。 您將學習如何：  
@@ -39,9 +39,11 @@ ms.lasthandoff: 04/26/2018
  ![您在本教學課程中建立的圖片](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 您在本教學課程中建立的圖片  
 
- 若要下載這個範例的完整版，請參閱 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (完整的圖片檢視器教學課程範例)。  
+## <a name="tutorial-links"></a>教學課程的連結
 
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：在 Visual Basic 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何：在 C# 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+ 若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。  
+
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[如何：使用 Visual Basic 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何：使用 C# 建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205198)。  
 
 > [!NOTE]
 >  這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。 本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  
@@ -58,9 +60,9 @@ ms.lasthandoff: 04/26/2018
 |[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|  
 |[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)|使用 [屬性] 視窗變更表單的外觀。|  
 |[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|新增 `TableLayoutPanel` 控制項至表單。|  
-|[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|  
+|[步驟 5：將控制項加入至您的表單](../ide/step-5-add-controls-to-your-form.md)|將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 將按鈕加入至表單。|  
 |[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)|將按鈕重新命名為更有意義的名稱。|  
-|[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)|將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。|  
+|[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)|將一個 `OpenFileDialog` 元件和一個 `ColorDialog` 元件加入您的表單。|  
 |[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|使用 IntelliSense 工具撰寫程式碼。|  
 |[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)|檢閱和測試程式碼。 視需要加入註解。|  
 |[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|使用 IntelliSense 撰寫程式碼讓其他按鈕和核取方塊發揮作用。|  

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-如需使用 `typedef` 型別的詳細資訊，請參閱 [Typedefs](/cpp/aliases-and-typedefs-cpp#typedefs)。
+如需使用 `typedef` 型別的詳細資訊，請參閱 [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)。
 
 C++ typedef 圖形具有 typedef 中所指定類型的圖形。 例如，如果來源宣告 `typedef class`，則圖形具有圓角和標籤 **Class**。 針對 `typedef struct`，圖形會有方角和標籤「結構」。
 
@@ -199,6 +199,8 @@ typedef
 
 -> MyIntVect
 
-## <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另請參閱
 
-- [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)
+- [使用 Visual C++ 程式碼](working-with-visual-cpp-code.md)  
+- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

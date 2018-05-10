@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 153a297dea3b392031a07cdc1442070f9cdceba3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 您可以使用 [專案設計工具] 的 [建置] 頁面，來指定專案的組建組態屬性。 此頁面只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/26/2018
 下列選項可讓您選取要顯示或修改的組態和平台。
 
 > [!NOTE]
-> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](/debugger/how-to-set-debug-and-release-configurations.md)。
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 **組態** 指定要顯示或修改的組態設定。 設定可以是 [使用中 (偵錯)] (這是預設值)、[偵錯]、[發行] 或 [所有組態]。
 

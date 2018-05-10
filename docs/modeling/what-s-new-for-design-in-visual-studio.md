@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 
@@ -64,18 +64,13 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Architecture and Modeling Tools 的版本支援
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Architecture and modeling tools 的版本支援
 
-Visual Studio 有數個版本。 並非所有版本都提供 Architecture and Modeling Tools 的支援。 下表顯示每個工具的可用性。
+提供數個版本 visual Studio 2015。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
 |**功能**|**企業版**|**專業版**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Code Map**|[是]|請參閱附註 (1)|-|-|
-|**相依性圖表**|[是]|請參閱附註 (2)|請參閱附註 (2)|-|
+|**Code Map**|[是]|只支援讀取程式碼對應、 篩選程式碼會將對應，加入新的泛型節點，及從選取範圍建立新的導向圖形。|-|-|
+|**相依性圖表**|[是]|只支援讀取相依性圖表。|只支援讀取相依性圖表。|-|
 |**導向圖形**（DGML 圖表）|[是]|是|[是]|-|
 |**程式碼複製品**|[是]|-|-|-|
-
-注意 (1)：僅支援讀取程式碼對應、篩選程式碼對應、加入新的泛型節點，及從選取範圍建立新的導向圖形。
-
-附註 (2): 僅支援讀取相依性圖表。

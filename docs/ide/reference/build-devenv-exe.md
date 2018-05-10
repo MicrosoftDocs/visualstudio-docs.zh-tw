@@ -15,25 +15,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e331ed637edcc81dc99f99c3ec39aa75928f7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba1d23302cc0c3b9d14b23bd8547f33eb21ce0c3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 使用指定的方案組態檔建置方案。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
 ```
 
 ## <a name="arguments"></a>引數
- `SolutionName` 必要。 方案檔的完整路徑和名稱。
+ `SolutionName` 必要項。 方案檔的完整路徑和名稱。
 
- `SolnConfigName` 必要。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
+ `SolnConfigName` 必要項。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
 
  /project `ProjName` 選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。
 
@@ -51,7 +51,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 ## <a name="example"></a>範例
  此範例使用 `MySolution` 的 `Debug` 方案組態中的 `Debug` 專案組建組態，來建置專案 `CSharpConsoleApp`。
 
-```
+```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 

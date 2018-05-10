@@ -1,7 +1,7 @@
 ---
 title: 更新 Visual Studio 2017
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 
@@ -53,6 +53,9 @@ ms.lasthandoff: 04/20/2018
 
      更新將會繼續。 當它完成後，Visual Studio 會重新啟動。
 
+     > [!NOTE]
+     > 如果您以系統管理員模式執行 Visual Studio，就必須在更新之後手動重新啟動 Visual Studio。    
+
 ### <a name="use-the-ide"></a>使用 IDE
 
 您可以從 Visual Studio 中的功能表列檢查更新並安裝該更新。
@@ -66,6 +69,9 @@ ms.lasthandoff: 04/20/2018
 3. 當 [更新] 對話方塊開啟時，選擇 [立即更新]。
 
    更新會以如上一節所述的方式執行，然後 Visual Studio 會在完成後重新啟動。
+
+   > [!NOTE]
+   > 如果您以系統管理員模式執行 Visual Studio，就必須在更新之後手動重新啟動 Visual Studio。  
 
 ### <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式
 

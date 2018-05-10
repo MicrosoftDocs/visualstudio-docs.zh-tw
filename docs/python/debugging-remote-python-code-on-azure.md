@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>對 Azure 上的 Python 程式碼進行遠端偵錯
 
-[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)包括能夠對 Azure App Service 上執行的 Python 程式碼進行遠端偵錯。 不同於簡單的遠端偵錯，此案例中的目標電腦無法透過 TCP 直接存取；因此，Visual Studio 提供可透過 HTTP 公開偵錯工具通訊協定的 Proxy。 使用網站範本建立的專案會在產生的 `web.debug.config` 檔案中自動設定此 Proxy。 當您發佈您專案的偵錯組態時，也會啟用遠端偵錯，如[發佈至 Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service) 所述。
+[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)包括能夠對 Azure App Service 上執行的 Python 程式碼進行遠端偵錯。 不同於簡單的遠端偵錯，此案例中的目標電腦無法透過 TCP 直接存取；因此，Visual Studio 提供可透過 HTTP 公開偵錯工具通訊協定的 Proxy。 使用網站範本建立的專案會在產生的 `web.debug.config` 檔案中自動設定此 Proxy。 遠端偵錯也會在您發佈專案的偵錯設定時啟用，如[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md 所述。
 
 由於 Azure 遠端偵錯使用 Web 通訊端，因此必須透過 [Azure 入口網站](https://portal.azure.com) 為您的 App Service 啟用通訊端，方法是前往 [設定 (Settings)] > [應用程式設定 (Application settings)]，將 [一般設定 (General settings)] > [Web 通訊端 (Web sockets)] 設為 [開啟 (On)]，然後選取 [儲存 (Save)] 以套用變更。 (請注意，**偵錯**設定不適用於 Python 偵錯。)
 
