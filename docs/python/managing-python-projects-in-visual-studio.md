@@ -1,6 +1,6 @@
 ---
 title: 管理 Python 應用程式專案
-description: 說明 Visual Studio 中專案的用途、示範如何建立及管理適用於 Python 程式碼的專案，以及摘要說明可供 Python 使用的各種專案範本。
+description: 專案在 Visual Studio 中的目的，在於如何建立及管理適用於 Python 程式碼的專案，以及可供 Python 使用的各種專案範本。
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="python-projects"></a>Python 專案
+# <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
 定義 Python 應用程式時，通常僅使用資料夾和檔案，但隨著應用程式變得越來越大，此結構會變得相當複雜，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (`.pyproj` 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
@@ -41,9 +41,9 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>新增檔案、指派啟動檔案及設定環境
 
-當您開發應用程式時，通常需要將不同類型的新檔案新增至專案中。 如果要新增這類檔案，可以在專案上按一下滑鼠右鍵，然後選取 [新增] > [現有項目] 以瀏覽要新增的檔案，或是選取 [新增] > [新增項目] 以顯示內含各種項目範本的對話方塊。 範本包含空的 python 檔案、python 類別、單元測試和各種與 Web 應用程式相關的檔案。 您可以使用測試專案來探索這些選項，以了解您的 Visual Studio 版本中提供了哪些選項。
+當您開發應用程式時，通常需要將不同類型的新檔案新增至專案中。 如果要新增這類檔案，請在專案上按一下滑鼠右鍵，然後選取 [加入] > [現有項目] 以瀏覽要新增的檔案，或是選取 [加入] > [新項目] 以顯示內含各種項目範本的對話方塊。 如[項目範本](python-item-templates.md)參考上所述，選項包含空白 Python 檔案、Python 類別、單元測試，以及各種與 Web 應用程式相關的檔案。 您可以使用測試專案來探索這些選項，以了解您的 Visual Studio 版本中提供了哪些選項。
 
-每個 Python 專案都有一個指派的啟動檔案，在 [方案總管] 中是以粗體顯示。 啟動檔案是當您開始偵錯 (F5 或 [偵錯] > [開始偵錯]) 時所執行的檔案，或是當您在互動式視窗中執行專案 (Shift+Alt+F5 或 [偵錯] > [在 Python 互動式中執行專案]) 時所執行的檔案。 若要變更它，請在新檔案上按一下滑鼠右鍵，然後選取 [啟動檔案]。
+每個 Python 專案都有一個指派的啟動檔案，在 [方案總管] 中是以粗體顯示。 啟動檔案是會在您開始偵錯 (F5 或 [偵錯] > [開始偵錯]) 時，或是在您於互動式視窗中執行專案 (Shift+Alt+F5 或 [偵錯] > [在 Python 互動式視窗中執行專案]) 時執行的檔案。 若要變更它，請在新檔案上按一下滑鼠右鍵，然後選取 [啟動檔案]。
 
 > [!Tip]
 > 如果您從專案移除選取的啟動檔案，且不選取新的啟動檔案，在您嘗試執行該專案時，Visual Studio 將無法知道該啟動哪一個 Python 檔案。 在此情況下，Visual Studio 2017 15.6 版及更新版本會顯示錯誤；較舊的版本則會在 Python 解譯器執行的情況下開啟輸出視窗，或是您會看見該輸出視窗出現並立即消失。 如果您遇到這些行為，請確認您已指派啟動檔案。
@@ -58,7 +58,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 ## <a name="project-templates"></a>專案範本
 
-Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 若要使用範本，請選取 [檔案] > [新增] > [專案] 功能表命令，或在 [方案總管] 中的方案上按一下滑鼠右鍵，然後選取 [新增] > [新增專案]，這兩種方式都會顯示以下的 [新增專案] 對話方塊。 若要查看 Python 特定的範本，請依據 "Python" 進行搜尋或選取 [已安裝] > [Python] 節點：
+Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開始或是從現有的程式碼，都可以。 若要使用範本，請選取 [檔案] > [新增] > [專案] 功能表命令，或是以滑鼠右鍵按一下 [方案總管] 中的方案，然後選取 [加入] > [新專案]，這兩種方式都會顯示以下的 [新專案] 對話方塊。 若要查看 Python 特定的範本，請搜尋 "Python" 或選取 [已安裝] > [Python] 節點：
 
 ![含有 Python 範本的 [新增專案] 對話方塊](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 | [從現有 Python 程式碼](#creating-a-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | Python 應用程式 | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
 | [Azure 雲端服務](python-azure-cloud-service-project-template.md) | 以 Python 撰寫的 Azure 雲端服務專案。 |
-| [Web 專案](python-web-application-project-templates.md) | 以各種架構 (包括 Bottle、Django、Flask 及 Flask/Jade) 為基礎的 Web 伺服器專案。 |
+| [Web 專案](python-web-application-project-templates.md) | 針對以各種不同的架構 (包括 Bottle、Django 和 Flask) 為基礎的 Web 應用程式專案。 |
 | IronPython 應用程式 | 與「Python 應用程式」範本類似，但預設使用 IronPython，可藉由 .NET 語言啟用 .NET 互通性及混合模式偵錯。 |
 | IronPython WPF 應用程式 | 一種針對應用程式的使用者介面使用 IronPython 搭配 Windows Presentation Foundation XAML 檔案的專案結構。 Visual Studio 會提供 XAML UI 設計工具、程式碼後置可以用 Python 來撰寫，應用程式則會在不顯示主控台的情況下執行。 |
 | IronPython Silverlight 網頁 | 一種使用 Silverlight 在瀏覽器中執行的 IronPython 專案。 應用程式的 Python 程式碼會以指令碼的形式包含在網頁中。 重複使用指令碼標記會向下拖曳出一些 JavaScript 程式碼，這些程式碼會將在 Silverlight 內部執行的 IronPython 初始化，而您的 Python 程式碼便可從中與 DOM 互動。 |
@@ -80,7 +80,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 > [!Note]
 > 因為 Python 是解譯式語言，所以 Visual Studio 中的 Python 專案不會產生其他編譯式語言專案 (例如 C#) 所產生的獨立式可執行檔。 如需詳細資訊，請參閱[問與答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>從現有的檔案建立專案
 

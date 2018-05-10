@@ -1,19 +1,19 @@
 ---
-title: 在 Visual Studio 中隱藏專案和 NuGet 套件的編譯器警告 | Microsoft Docs
-ms.custom: ''
+title: 在 Visual Studio 中隱藏專案和 NuGet 套件的編譯器警告
 ms.date: 01/24/2018
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
 
@@ -132,6 +132,6 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)  
-[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)  
-[編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
+- [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)

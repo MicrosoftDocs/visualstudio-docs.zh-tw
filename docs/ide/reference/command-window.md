@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>顯示變數的值
  若要檢查 `varA` 變數的值，請使用 [Print 命令](../../ide/reference/print-command.md)：
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  問號 (?) 是 `Debug.Print` 的別名，因此，此命令也可以撰寫為：
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="parameters-switches-and-values"></a>參數、切換參數和值
  部分 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必要和選擇性引數、切換參數和值。 處理這類命令時會套用特定規則。 以下是釐清術語的豐富命令範例。
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="escape-characters"></a>逸出字元
  命令列中的插入號 (^) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

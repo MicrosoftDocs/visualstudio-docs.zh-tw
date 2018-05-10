@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd75d32021f2dd3f6ac1ef76772ea30376ea1b8a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 開啟現有的檔案，並可讓您指定編輯器。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 File.OpenFile filename [/e:editorname]
 ```
 
@@ -45,7 +45,7 @@ File.OpenFile filename [/e:editorname]
 
  例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -55,7 +55,7 @@ File.OpenFile filename [/e:editorname]
 ## <a name="example"></a>範例
  本範例會在原始程式碼編輯器中開啟樣式檔案 "Test1.css"。
 
-```
+```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 

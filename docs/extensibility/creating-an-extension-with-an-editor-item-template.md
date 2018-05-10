@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>使用編輯器項目範本建立擴充功能
 您可以使用隨附於 Visual Studio SDK 來建立基本的編輯器延伸模組加入至編輯器的分類器、 裝飾和邊界的項目範本。 編輯器項目範本可供 Visual C# 或 Visual Basic VSIX 專案。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     -   包含 EditorClassifier1.cs`EditorClassifier1`類別。  
   
-    -   包含 EditorClassifier1ClassificationDefinition.cs`OEditorClassifier1ClassificationDefinition`類別。  
+    -   包含 EditorClassifier1ClassificationDefinition.cs`EditorClassifier1ClassificationDefinition`類別。  
   
     -   包含 EditorClassifier1Format.cs`EditorClassifier1Format`類別。  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
     -   包含 TextAdornment1.cs`TextAdornment1`類別。  
   
-    -   包含 extAdornment1TextViewCreationListener.cs`TextAdornment1TextViewCreationListener`類別。  
+    -   包含 TextAdornment1TextViewCreationListener.cs`TextAdornment1TextViewCreationListener`類別。  
   
 4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。 如果您開啟文字檔，以藍色背景的紅色描述文字中的所有 'a' 字元。  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic** ，然後按一下 **擴充性**。 在**範本**窗格中，選取**VSIX 專案**。 在 [名稱] 方塊中，輸入 `MarginExtension`。 按一下 [確定 **Deploying Office Solutions**]。  
   
-2.  在**方案總管 中**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 移至 Visual C#**擴充性**節點，然後選取**編輯器檢視區裝飾**。 保留預設的檔案名稱 (EditorMargin1.cs/vb)。  
+2.  在**方案總管 中**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 移至 Visual C#**擴充性**節點，然後選取**編輯器邊界**。 保留預設的檔案名稱 (EditorMargin1.cs/vb)。  
   
 3.  有兩個程式碼檔案，如下：  
   

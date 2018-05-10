@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>告訴我們
 我們想要知道您對於改善我們產品和文件的看法。 我們無法一一回應，但我們會確保您的意見傳達至適當的人員或小組。  
@@ -53,4 +53,4 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 請使用頁面底部的 [本頁是否能提供幫助？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。 或者，您可以使用同樣位於頁面底部的 [登入以提供文件意見反應] 按鈕，對 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 頁面新增意見反應。
 
 ## <a name="see-also"></a>另請參閱
- [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)
+[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)

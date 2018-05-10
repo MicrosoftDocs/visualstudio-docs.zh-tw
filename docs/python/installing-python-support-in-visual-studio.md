@@ -1,6 +1,6 @@
 ---
 title: 安裝 Python 支援
-description: 詳細說明在 Visual Studio 2017、2015、2013、2012 及 2010 中安裝適用於 Visual Studio 的 Python 工具 (PTVS) 的方式，包括可用選項及安裝位置。
+description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
 若要為 Visual Studio 安裝 Python 支援 (也稱為「適用於 Visual Studio 的 Python 工具」或 PTVS)，請遵循符合您 Visual Studio 版本之小節中的指示：
 

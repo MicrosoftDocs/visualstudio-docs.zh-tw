@@ -1,5 +1,5 @@
 ---
-title: 示範範例
+title: 程式碼分析的範例 c + + 專案
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,62 +10,62 @@ helpviewer_keywords:
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a15137263c631a7695ae8878a19c0c206c348e95
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aafbaaf682852adaea8f20a1373ea1ae4b025fad
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="demo-sample"></a>示範範例
+# <a name="sample-c-project-for-code-analysis"></a>程式碼分析的範例 c + + 專案
 
 此下列程序說明如何建立範例[逐步解說： 分析 C/c + + 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 程序會建立：
 
--   A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CppDemo 的解決方案。
+- 名為 CppDemo Visual Studio 方案。
 
--   靜態程式庫專案命名為 CodeDefects。
+- 靜態程式庫專案命名為 CodeDefects。
 
--   靜態程式庫專案命名為註解。
+- 靜態程式庫專案命名為註解。
 
- 程序也會提供對靜態程式庫標頭和.cpp 檔案的程式碼。
+程序也會提供程式碼的標頭和 *.cpp*對靜態程式庫檔案。
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>建立 CppDemo 方案和 CodeDefects 專案
 
-1.  按一下**檔案**功能表上，指向**新增**，然後按一下 **新專案**。
+1. 按一下**檔案**功能表上，指向**新增**，然後按一下 **新專案**。
 
-2.  在**專案類型**樹狀目錄清單中，展開 Visual c + + 不是您在 VS 中的預設語言如果**其他語言**。
+2. 在**專案類型**樹狀目錄清單中，展開 Visual c + + 不是您在 VS 中的預設語言如果**其他語言**。
 
-3.  展開**Visual c + +**，然後按一下 **一般**。
+3. 展開**Visual c + +**，然後按一下 **一般**。
 
-4.  在**範本**，按一下 **空專案**。
+4. 在**範本**，按一下 **空專案**。
 
-5.  在**名稱**文字方塊中，輸入**CodeDefects**。
+5. 在**名稱**文字方塊中，輸入**CodeDefects**。
 
-6.  選取**為方案建立目錄**核取方塊。
+6. 選取**為方案建立目錄**核取方塊。
 
-7.  在**方案名稱**文字方塊中，輸入**CppDemo**。
+7. 在**方案名稱**文字方塊中，輸入**CppDemo**。
 
 ## <a name="configure-the-codedefects-project-as-a-static-library"></a>CodeDefects 專案設定為靜態程式庫
 
-1.  在 方案總管 中，以滑鼠右鍵按一下**CodeDefects** ，然後按一下 **屬性**。
+1. 在 方案總管 中，以滑鼠右鍵按一下**CodeDefects** ，然後按一下 **屬性**。
 
-2.  展開**組態屬性**，然後按一下 **一般**。
+2. 展開**組態屬性**，然後按一下 **一般**。
 
-3.  在**一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。
+3. 在**一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。
 
-4.  在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下 **靜態程式庫 (.lib)**。
+4. 在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下 **靜態程式庫 (.lib)**。
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>CodeDefects 專案中加入標頭和來源檔案
 
-1.  在 方案總管 中，展開**CodeDefects**，以滑鼠右鍵按一下**標頭檔**，按一下 **新增**，然後按一下 **新項目**。
+1. 在 方案總管 中，展開**CodeDefects**，以滑鼠右鍵按一下**標頭檔**，按一下 **新增**，然後按一下 **新項目**。
 
-2.  在**加入新項目**對話方塊中，按一下 **程式碼**，然後按一下 **標頭檔 (.h)**。
+2. 在**加入新項目**對話方塊中，按一下 **程式碼**，然後按一下 **標頭檔 (.h)**。
 
-3.  在**名稱**方塊中，輸入**Bug.cpp** ，然後按一下 **新增**。
+3. 在**名稱**方塊中，輸入**Bug.h** ，然後按一下 **新增**。
 
-4.  複製下列程式碼，並將它貼入**Bug.cpp**檔案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。
+4. 複製下列程式碼，並將它貼入*Bug.h* Visual Studio 編輯器中的檔案。
 
     ```cpp
     #include <windows.h>
@@ -87,13 +87,13 @@ ms.lasthandoff: 04/26/2018
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-5.  在 方案總管 中，以滑鼠右鍵按一下**原始程式檔**，指向 **新增**，然後按一下 **新項目**。
+5. 在 方案總管 中，以滑鼠右鍵按一下**原始程式檔**，指向 **新增**，然後按一下 **新項目**。
 
-6.  在**加入新項目**對話方塊中，按一下  **c + + 檔 (.cpp)**
+6. 在**加入新項目**對話方塊中，按一下  **c + + 檔 (.cpp)**
 
-7.  在**名稱**方塊中，輸入**Bug.cpp** ，然後按一下 **新增**。
+7. 在**名稱**方塊中，輸入**Bug.cpp** ，然後按一下 **新增**。
 
-8.  下列程式碼複製並貼到 Bug.h 檔案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。
+8. 複製下列程式碼，並將它貼入*Bug.cpp* Visual Studio 編輯器中的檔案。
 
     ```cpp
     #include <stdlib.h>
@@ -157,29 +157,29 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>將註解專案並將它設定為靜態程式庫
 
-1.  在 方案總管 中，按一下  **CppDemo**，指向 **新增**，然後按一下 **新專案**。
+1. 在 方案總管 中，按一下  **CppDemo**，指向 **新增**，然後按一下 **新專案**。
 
-2.  在**加入新的專案**對話方塊方塊中，展開 Visual c + + 中，按一下**一般**，然後按一下 **空專案**。
+2. 在**加入新的專案**對話方塊方塊中，展開 Visual c + + 中，按一下**一般**，然後按一下 **空專案**。
 
-3.  在**名稱**文字方塊中，輸入**註解**，然後按一下 **新增**。
+3. 在**名稱**文字方塊中，輸入**註解**，然後按一下 **新增**。
 
-4.  在 方案總管 中，以滑鼠右鍵按一下**註解**，然後按一下 **屬性**。
+4. 在 方案總管 中，以滑鼠右鍵按一下**註解**，然後按一下 **屬性**。
 
-5.  展開**組態屬性**，然後按一下 **一般**。
+5. 展開**組態屬性**，然後按一下 **一般**。
 
-6.  在**一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。
+6. 在**一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。
 
-7.  在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下 **靜態程式庫 (.lib)**。
+7. 在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下 **靜態程式庫 (.lib)**。
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>註釋專案中加入標頭檔和原始程式檔
 
-1.  在 方案總管 中，展開**註解**，以滑鼠右鍵按一下**標頭檔**，按一下 **新增**，然後按一下 **新項目**。
+1. 在 方案總管 中，展開**註解**，以滑鼠右鍵按一下**標頭檔**，按一下 **新增**，然後按一下 **新項目**。
 
-2.  在**加入新項目**對話方塊中，按一下 **標頭檔 (.h)**。
+2. 在**加入新項目**對話方塊中，按一下 **標頭檔 (.h)**。
 
-3.  在**名稱**方塊中，輸入**annotations.h** ，然後按一下 **新增**。
+3. 在**名稱**方塊中，輸入**annotations.h** ，然後按一下 **新增**。
 
-4.  複製下列程式碼，並將它貼入**annotations.h**檔案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。
+4. 複製下列程式碼，並將它貼入*annotations.h* Visual Studio 編輯器中的檔案。
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -196,13 +196,13 @@ ms.lasthandoff: 04/26/2018
 
     ```
 
-5.  在 方案總管 中，以滑鼠右鍵按一下**原始程式檔**，指向 **新增**，然後按一下 **新項目**。
+5. 在 方案總管 中，以滑鼠右鍵按一下**原始程式檔**，指向 **新增**，然後按一下 **新項目**。
 
-6.  在**加入新項目**對話方塊中，按一下 **程式碼**，然後按一下  **c + + 檔 (.cpp)**
+6. 在**加入新項目**對話方塊中，按一下 **程式碼**，然後按一下  **c + + 檔 (.cpp)**
 
-7.  在**名稱**方塊中，輸入**annotations.cpp** ，然後按一下 **新增**。
+7. 在**名稱**方塊中，輸入**annotations.cpp** ，然後按一下 **新增**。
 
-8.  複製下列程式碼，並將它貼入**annotations.cpp**檔案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。
+8. 複製下列程式碼，並將它貼入*annotations.cpp* Visual Studio 編輯器中的檔案。
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>

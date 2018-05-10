@@ -12,21 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 4b7df8a53cafda94922cc7b296f0ff52868335f5
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說： 連接到產生指示詞處理器的主機
+
 您可以撰寫自己的主機處理文字範本。 示範基本的自訂主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。
 
- 在本逐步解說中，您會展開您的自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義的特定領域語言時，它會產生*指示詞處理器*網域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，也不需要撰寫組件並匯入之範本中的指示詞的範本。
+在本逐步解說中，您會展開您的自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義的特定領域語言時，它會產生*指示詞處理器*網域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，也不需要撰寫組件並匯入之範本中的指示詞的範本。
 
-> [!WARNING]
->  本逐步解決建置於[逐步解說： 建立自訂文字範本主應用](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。
+> [!NOTE]
+> 本逐步解決建置於[逐步解說： 建立自訂文字範本主應用](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。
 
- 本逐步解說包含下列工作：
+本逐步解說包含下列工作：
 
 -   使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]產生網域模型為基礎的指示詞處理器。
 
@@ -35,7 +39,8 @@ ms.lasthandoff: 04/26/2018
 -   測試自訂主應用程式以產生指示詞處理器。
 
 ## <a name="prerequisites"></a>必要條件
- 若要定義 DSL，您必須已安裝下列元件：
+
+若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
@@ -45,12 +50,11 @@ ms.lasthandoff: 04/26/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- 此外，您必須擁有在建立自訂文字範本轉換[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+此外，您必須擁有在建立自訂文字範本轉換[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用網域特定領域語言工具來產生指示詞處理器
- 在本逐步解說中，您可以使用網域特定語言設計工具精靈來建立特定領域語言方案 DSLMinimalTest。
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用網域特定領域語言工具產生指示詞處理器
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>要用於特定領域語言工具產生的網域模型為基礎的指示詞處理器
+在本逐步解說中，您可以使用網域特定語言設計工具精靈來建立特定領域語言方案 DSLMinimalTest。
 
 1.  建立具有下列特性的特定領域語言方案：
 
@@ -62,12 +66,12 @@ ms.lasthandoff: 04/26/2018
 
     -   公司名稱： Fabrikam
 
-     如需有關建立特定領域語言方案的詳細資訊，請參閱[How to： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需有關建立特定領域語言方案的詳細資訊，請參閱[How to： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
     > [!IMPORTANT]
-    >  這個步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
+    > 這個步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。
 
 3.  按一下 [偵錯] 功能表上的 [開始偵錯]。
 
@@ -81,10 +85,9 @@ ms.lasthandoff: 04/26/2018
 
 6.  儲存方案，然後關閉 特定領域語言設計工具。
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>連線的自訂文字範本主應用程式的指示詞處理器
- 產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>連線的自訂文字範本主應用程式的指示詞處理器
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要連線的自訂文字範本主應用程式產生指示詞處理器
+產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
 1.  開啟 CustomHost 方案。
 
@@ -119,7 +122,7 @@ ms.lasthandoff: 04/26/2018
 5.  找出屬性的程式碼`StandardAssemblyReferences`，並取代為下列程式碼：
 
     > [!NOTE]
-    >  在此步驟中，您可以將產生指示詞處理器，您的主機可以支援所需的組件的參考。
+    > 在此步驟中，您可以將產生指示詞處理器，您的主機可以支援所需的組件的參考。
 
     ```csharp
     //the host can provide standard assembly references
@@ -155,7 +158,7 @@ ms.lasthandoff: 04/26/2018
 6.  找出函式的程式碼`ResolveDirectiveProcessor`，並取代為下列程式碼：
 
     > [!IMPORTANT]
-    >  此程式碼會包含硬式編碼參考產生的指示詞處理器，您要連接的名稱。 您無法輕鬆地進行這一般，在此情況下會尋找所有指示詞處理器之登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。
+    > 此程式碼會包含硬式編碼參考產生的指示詞處理器，您要連接的名稱。 您無法輕鬆地進行這一般，在此情況下會尋找所有指示詞處理器之登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -230,17 +233,18 @@ ms.lasthandoff: 04/26/2018
 
 8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>測試自訂主應用程式與指示詞處理器
- 第一次來測試自訂文字範本主應用程式，您必須撰寫呼叫產生指示詞處理器的文字範本。 然後您執行自訂主應用程式、 傳遞給它的文字範本名稱，並確認已正確處理指示詞。
+## <a name="test-the-custom-host-with-the-directive-processor"></a>測試自訂主應用程式與指示詞處理器
 
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式
+第一次來測試自訂文字範本主應用程式，您必須撰寫呼叫產生指示詞處理器的文字範本。 然後您執行自訂主應用程式、 傳遞給它的文字範本名稱，並確認已正確處理指示詞。
+
+### <a name="create-a-text-template-to-test-the-custom-host"></a>建立文字範本以測試自訂主應用程式
 
 1.  建立文字檔案，並將其命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本] 來建立檔案。
 
 2.  將下列程式碼加入至此文字檔中：
 
     > [!NOTE]
-    >  文字範本的程式語言不需要符合自訂主應用程式。
+    > 文字範本的程式語言不需要符合自訂主應用程式。
 
     ```csharp
     Text Template Host Test
@@ -313,7 +317,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  儲存並關閉檔案。
 
-#### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式
+### <a name="test-the-custom-host"></a>測試自訂主應用程式
 
 1.  開啟 [命令提示字元] 視窗。
 
@@ -324,7 +328,7 @@ ms.lasthandoff: 04/26/2018
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    >  不要輸入位置，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。
+    > 不要輸入位置，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。
 
 3.  輸入空格。
 
@@ -335,7 +339,7 @@ ms.lasthandoff: 04/26/2018
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    >  您可以不要輸入位置，瀏覽檔案 TestTemplateWithDP.txt 中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。
+    > 您可以不要輸入位置，瀏覽檔案 TestTemplateWithDP.txt 中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。
 
      自訂主應用程式會執行，並開始文字範本轉換流程。
 

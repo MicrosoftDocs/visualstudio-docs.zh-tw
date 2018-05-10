@@ -14,9 +14,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: b0d54ce52adac12569cc4662af2d637af05cff8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/03/2018
 ---
 Microsoft SQL Server 2005

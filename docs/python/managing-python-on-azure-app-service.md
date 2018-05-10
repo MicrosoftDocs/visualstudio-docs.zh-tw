@@ -1,5 +1,5 @@
 ---
-title: 在 Azure App Service 上安裝 Python 解譯器和程式庫
+title: 在 Azure App Service 上設定 Python
 description: 如何在 Azure App Service 上安裝 Python 解譯器和程式庫，並設定 Web 應用程式以便能正確地參考該解譯器。
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上設定 Python 環境
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 

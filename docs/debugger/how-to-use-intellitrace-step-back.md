@@ -1,8 +1,8 @@
 ---
-title: 檢視快照集使用 IntelliTrace 步驟後-Visual Studio |Microsoft 文件
+title: 檢視使用 IntelliTrace 步驟後快照集
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
@@ -38,9 +38,20 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
     ![啟用 IntelliTrace 事件和快照集模式](../debugger/media/intellitrace-enable-snapshots.png "啟用 IntelliTrace 事件和快照集模式")
 
+1. 如果您想要檢視快照集的選項設定的例外狀況，請選擇**IntelliTrace** > **進階**從**選項** 對話方塊。
+
+    這些選項可在 Visual Studio 2017 Enterprise 版本 15.7 開始。
+
+    ![設定快照集的行為在例外狀況](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    當您啟用事件和快照集時，建立例外狀況的快照集也預設會啟用。 您可以取消選取 停用在例外狀況的快照集**例外狀況事件收集快照**。 啟用這項功能時，拍攝快照時，未處理例外狀況。 對於已處理的例外狀況，拍攝快照時，才會擲回例外狀況，而且如果它不是重新擲回先前擲回例外狀況。 您可以設定的例外狀況的快照集的最大數目，從下拉式清單中選取值。 最大值適用於每個應用程式進入中斷模式 （例如，當您的應用程式叫用中斷點） 的時間。
+
+    > [!NOTE]
+    > 拍攝快照時，僅適用於例外狀況事件 IntelliTrace 所記錄。 您可以藉由選取指定 IntelliTrace 記錄哪些事件**工具** > **選項** > **IntelliTrace 事件**。
+
 1. 在專案中，設定一或多個中斷點，並開始偵錯 (按**F5**)，或開始進行偵錯逐步執行程式碼 (**F10**或**F11**)。
 
-    IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷點的事件。 這些事件會記錄在**事件**索引標籤中**診斷工具**視窗中的，連同其他 IntelliTrace 事件。 若要開啟此視窗，請選擇**偵錯** > **Windows** > **顯示診斷工具**。
+    IntelliTrace 快照的每個偵錯工具的步驟，中斷點事件和處理的例外狀況事件上的應用程式的程序。 這些事件會記錄在**事件**索引標籤中**診斷工具**視窗中的，連同其他 IntelliTrace 事件。 若要開啟此視窗，請選擇**偵錯** > **Windows** > **顯示診斷工具**。
 
     相機圖示旁邊的快照集是可用的事件。 
 

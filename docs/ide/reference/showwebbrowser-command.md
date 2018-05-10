@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1396cd28244a655d18f6e09f4795dd099a11ca7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 顯示您在 Web 瀏覽器視窗內指定的 URL (不論是在整合式開發環境 (IDE) 內或 IDE 外部)。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
@@ -50,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="example"></a>範例
  下列範例會在 IDE 外面的網頁瀏覽器顯示 MSDN Online 首頁。 如果已經開啟網頁瀏覽器執行個體，便會使用它，否則系統會啟動新的執行個體。
 
-```
+```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
 ```
 

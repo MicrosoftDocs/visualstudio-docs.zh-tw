@@ -9,18 +9,18 @@ description: 了解系統管理員如何解決過度領取訂閱的問題
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 80420dd72416d5de1a96734ae532cfbad93f68d9
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>處理「過度領取」的訂用帳戶
 
 有時，在新增訂閱者之後訂單也有所變更，而可能導致已指派的訂閱數超過公司所擁有的授權數。 發生這種情況時，[訂閱者] 索引標籤會顯示警示，並提供進一步資訊。 
 
 > [!NOTE] 
-> Open License 方案不允許過度領取的情況。
+> Open License 方案不允許過度領取的情況。  此外，其他程式在入口網站中可能會以不同的方式顯示此資訊。 
 
  ![過度領取的訂閱通知](_img\over-claimed\over-claimed-alert.png)
 

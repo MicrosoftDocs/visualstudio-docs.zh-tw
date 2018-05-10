@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb238559cd59c03f134e781bc4beaf7ba7cb7893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-new-item-command"></a>加入新項目命令
 將新的方案項目，例如 .htm、.css、.txt 或框架組新增至目前的方案，並開啟它。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
@@ -40,7 +40,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  例如，若要建立新的文字檔，您將針對 /t:`templatename` 引數輸入下列項目。
 
-```
+```cmd
 /t:"General\Style Sheet"
 ```
 
@@ -50,14 +50,14 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  例如，若要使用原始程式碼編輯器開啟樣式表，您將針對 /e:`editorname` 引數輸入下列項目。
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>範例
  此範例會將新的方案項目 MyHTMLpg 新增至目前方案。
 
-```
+```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 

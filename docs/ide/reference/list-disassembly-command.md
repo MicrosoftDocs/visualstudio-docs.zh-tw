@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c92b5d72b38ffe44eebd8dfc7e84f676e858f649
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64951810020d99239a47b9c6bdba751b2c0a3dfd
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/codebytes:yes|no] [/source:yes|no] [/symbolnames:yes|no]
 [/linenumbers:yes|no]
@@ -61,7 +61,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 ## <a name="example"></a>範例
 
-```
+```cmd
 >Debug.ListDisassembly
 ```
 

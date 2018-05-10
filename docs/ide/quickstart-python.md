@@ -1,34 +1,31 @@
 ---
-title: 快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
-description: 在此快速入門中，您會使用 Visual Studio 在使用 Flask 架構的 Python 中建立簡單 Web 應用程式。
-ms.custom: mvc
+title: 快速入門：使用 Visual Studio 建立 Python Web 應用程式
+description: 在此快速入門中，您將使用 Visual Studio 和 Flask 架構來建立一個簡易的 Python Web 應用程式。
 ms.date: 03/21/2018
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
-dev_langs:
-- python
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
+# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
 在這個 5-10 分鐘將 Visual Studio 當成 Python IDE 的簡介中，您會根據 Flask 架構 建立簡單的 Python Web 應用程式。 您會透過離散步驟建立可協助您了解 Visual Studio 基本功能的專案。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)，免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
 
 ## <a name="create-the-project"></a>建立專案
 
-下列步驟會建立空「專案」，做為應用程式的容器：
+下列步驟會建立空一個空白專案，當作應用程式的容器：
 
 1. 開啟 Visual Studio 2017。
 
@@ -38,7 +35,7 @@ ms.lasthandoff: 04/20/2018
 
     ![已選取 Python Web專案的 [新增專案] 對話方塊](media/quickstart-python-00-web-project.png)
 
-    如果您看不到 Python 專案範本，請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [Get Tools and Features] (取得工具與功能) 開啟 Visual Studio 安裝程式。 選擇 [Python 開發] 工作負載，然後選擇 [修改]。
+    如果您看不到 Python 專案範本，請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具與功能] 來開啟 **Visual Studio 安裝程式**。 選擇 [Python 開發] 工作負載，然後選擇 [修改]。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](../python/media/installation-python-workload.png)
 
@@ -48,15 +45,15 @@ ms.lasthandoff: 04/20/2018
 
 **問題：在 Visual Studio 中為 Python 應用程式建立專案的優點為何？**
 
-**解答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (`.pyproj` 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
+**解答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (*.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
 **問題： 什麼是顯示在 [方案總管] 中的「解決方案」？**
 
-**解答**：Visual Studio「解決方案」是容器，可協助您以群組的方式管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
+**解答**：Visual Studio 解決方案是一個容器，可協助您以群組的方式管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
 
 ## <a name="install-the-flask-library"></a>安裝 Flask 程式庫
 
-Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫之一來處理低階的詳細資料，例如路由 Web 要求和成形回應。 基於此目的，Visual Studio 為 Web 應用程式提供各式各樣的「範本」，您稍後會在此快速入門中使用其中之一。
+Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫之一來處理低階的詳細資料，例如路由 Web 要求和成形回應。 基於此目的，Visual Studio 為 Web 應用程式提供各式各樣的範本，您稍後會在此快速入門中使用其中一個。
 
 在這裡，您會使用下列步驟將 Flask 程式庫安裝在 Visual Studio 用於此專案的預設「全域環境」。
 
@@ -64,9 +61,9 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
     ![顯示預設環境的方案總管](media/quickstart-python-02-default-environment.png)
 
-1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件...]。此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。
+1. 以滑鼠右鍵按一下環境並選取 [安裝 Python 套件]。 此命令會開啟 [套件] 索引標籤上的 [Python 環境] 視窗。
 
-1. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI] \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，如 `c:\program files` 時，就會提示提高權限。)
+1. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI] \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
 
     ![安裝 Flask 程式庫](media/quickstart-python-03-install-package.png)
 
@@ -79,17 +76,17 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解其他可用的 Python 套件？**
 
-**解答**：瀏覽 [Python 套件索引](https://pypi.org/) (pypi.org)。
+**解答**：瀏覽 [Python 套件索引](https://pypi.python.org/pypi) \(英文\)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
 您現在準備好可新增一些 Python 程式碼來實作基本的 Web 應用程式。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下專案，然後依序選取 [新增] > [新增項目]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [加入] > [新項目]。
 
-1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將其命名為 `app.py`，然後選擇 [新增]。 Visual Studio 會自動在編輯器視窗中開啟檔案。
+1. 在出現的對話方塊中，選取 [空白 Python 檔案]，將其命名為 *app.py*，然後選取 [加入]。 Visual Studio 會自動在編輯器視窗中開啟檔案。
 
-1. 將下列程式碼複製並貼入 `app.py`：
+1. 將下列程式碼複製並貼入 *app.py*：
 
     ```python
     from flask import Flask
@@ -114,27 +111,27 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
         app.run('localhost', 4449)
     ```
 
-1. 您可能已經注意到 [新增] > [新增項目] 對話方塊顯示您可新增至 Python 專案的許多其他類型的檔案，包括 Python 類別、Python 套件、Python 單元測試、web.config 檔案等等。 一般而言，這些「項目範本」 顧名思義是使用實用的未定案程式碼建立檔案的好方法。
+1. 您可能已經注意到 [加入] > [新項目] 對話方塊顯示可加入 Python 專案的許多其他類型的檔案，包括 Python 類別、Python 套件、Python 單元測試、*web.config* 檔案等等。 一般而言，這些項目範本 顧名思義是使用實用的未定案程式碼建立檔案的好方法。
 
 **問題：哪裡可以深入了解 Flask？**
 
-**解答**：請參閱 Flask 文件，從 [Flask 快速入門](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org) \(英文\) 開始。
+**解答**：請參閱 Flask 文件，從 [Flask 快速入門](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) \(英文\) 開始。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 以滑鼠右鍵按一下**方案總管**中的 `app.py`，並選取 [設定為啟動檔案]。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
+1. 以滑鼠右鍵按一下 [方案總管] 中的 *app.py* ，然後選取 [設定為啟動檔案]。 執行應用程式時，此命令會找出在 Python 中啟動的程式碼檔案。
 
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file.png)
 
 1. 以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [屬性]。 然後選取 [偵錯] 索引標籤，將 [連接埠號碼] 屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
 
-1. 選取 [偵錯] > [啟動但不偵錯] (Ctrl+F5)，可將變更儲存至檔案並執行應用程式。
+1. 選取 [偵錯] > [啟動但不偵錯] (**Ctrl**+**F5**)，這樣可以將所做的變更儲存至檔案並執行應用程式。
 
 1. 命令視窗隨即出現並顯示訊息「* 在 https://localhost:4449/ 中執行」，然後瀏覽器視窗應會開啟到 `localhost:4449`，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中，狀態為 200。
 
     如果瀏覽器未自動開啟，請啟動您選擇的瀏覽器並瀏覽到 `localhost:4449`。
 
-    如果您在命令視窗中只看到 Python 互動式殼層，或該視窗短暫顯示在畫面上，請確定您已在前文的步驟 1 中將 `app.py` 設定為啟動檔案。
+    如果您在命令視窗中只看到 Python 互動式殼層，或該視窗短暫顯示在畫面上，請確定您已在前文的步驟 1 中將 *app.py* 設定為啟動檔案。
 
 1. 瀏覽到 `localhost:4449/hello` 以測試 `/hello` 資源的裝飾項目也適用。 GET 要求再次出現在命令視窗中，狀態為 200。 您可視需要自行嘗試一些其他 URL，查看它們在命令視窗中顯示 404 狀態碼。
 
@@ -148,7 +145,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 恭喜您從 Visual Studio 執行第一個 Python 應用程式，您已了解將 Visual Studio 當成 Python IDE 使用的一些內容！
 
-因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio「專案範本」負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請選取下面的按鈕。
+因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio 專案範本負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請選取下面的按鈕。
 
 > [!div class="nextstepaction"]
 > [快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)

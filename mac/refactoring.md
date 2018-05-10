@@ -1,15 +1,15 @@
 ---
-title: 在 Visual Studio for Mac 中重構程式碼
+title: 重構程式碼
 description: 使用來源分析，可讓在 Visual Studio for Mac 中重新組織程式碼更為簡單。
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 325c2c5ab244e9e4fc0aae4dafae7425580c2762
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ec0ae7aa61275b9b5362db178b9bdb8e3ccedfbb
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="refactoring"></a>重構
 

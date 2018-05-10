@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 中的方案和專案
-ms.date: 10/5/2017
+ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6be610e60c35ef22306398f56375bfa6185e1e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 

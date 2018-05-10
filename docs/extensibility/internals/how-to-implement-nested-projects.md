@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
+
 當您建立的巢狀的專案類型都必須實作數個額外的步驟。 父專案會在某些相同方案中有針對其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個解決方案和所要建立的巢狀專案階層的父專案必須引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。
 
-### <a name="to-create-nested-projects"></a>若要建立巢狀的專案
+## <a name="create-nested-projects"></a>建立巢狀的專案
 
 1.  整合式的開發環境 (IDE) 藉由呼叫載入父專案的專案檔和啟動資訊<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>介面。 父專案建立並加入至方案。
 
     > [!NOTE]
-    >  此時，它是父專案來建立巢狀的專案，因為必須建立父專案，才能建立子專案的程序還太早。 遵循此順序，父專案可以將設定套用至子專案而視子專案可取得父專案中的資訊。 此順序是如果需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。
+    > 此時，它是父專案來建立巢狀的專案，因為必須建立父專案，才能建立子專案的程序還太早。 遵循此順序，父專案可以將設定套用至子專案而視子專案可取得父專案中的資訊。 此順序是如果需要在原始程式碼控制 (SCC) 等方案總管 中的用戶端。
 
      父專案必須等候<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>專案，它才能建立其巢狀 （子） IDE 所呼叫方法。
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
      如果已經存在，則父專案會建立每個巢狀專案的 GUID 藉由呼叫`CoCreateGuid`。
 
     > [!NOTE]
-    >  `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。
+    > `CoCreateGuid` COM API 呼叫時要建立的 GUID。 如需詳細資訊，請參閱`CoCreateGuid`和 MSDN Library 中的 Guid。
 
      父專案會在要擷取 IDE 中開啟，下次其專案檔中儲存此 GUID。 請參閱步驟 4，如需詳細資訊與相關的呼叫`AddVirtualProjectEX`擷取`guidProjectID`子專案。
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
      因為父和子專案中具現化以程式設計的方式，您可以在此時設定巢狀專案的屬性。
 
     > [!NOTE]
-    >  不只進行巢狀專案，從接收的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明的屬性及功能表選項，指定個別的巢狀專案。
+    > 不只進行巢狀專案，從接收的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以加入額外的動態說明的屬性及功能表選項，指定個別的巢狀專案。
 
 10. 階層是顯示在 [方案總管] 藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。
 
@@ -78,15 +79,12 @@ ms.lasthandoff: 04/16/2018
 
      巢狀的專案當關閉，因為使用者關閉方案或特定專案本身，另一個方法上`IVsParentProject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>，稱為。 父專案包裝呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A>方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A>通知，關閉巢狀的專案方案的事件接聽程式的方法。
 
- 下列主題處理實作巢狀的專案時要考量的幾個其他概念：
+下列主題處理實作巢狀的專案時要考量的幾個其他概念：
 
- [卸載並重新載入巢狀專案的考量](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [巢狀專案的精靈支援](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [實作巢狀專案的命令處理](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [篩選巢狀專案的 AddItem 對話方塊](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [卸載並重新載入巢狀專案的考量](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [巢狀專案的精靈支援](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [實作巢狀專案的命令處理](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [篩選巢狀專案的 AddItem 對話方塊](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>另請參閱
 

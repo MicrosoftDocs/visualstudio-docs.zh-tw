@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 如何建立資料繫結控制項的標題
+
 當您拖曳項目從[資料來源視窗](add-new-data-sources.md)拖曳至設計工具中，特殊的考量派上用場： 標題標籤資料行名稱重新格式化成更容易讀取的字串當兩個或多個單字所找到不串連在一起。 您可以自訂建立的方式，這些標籤，藉由設定**SmartCaptionExpression**， **SmartCaptionReplacement**，和**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。
 
 > [!NOTE]
@@ -48,15 +49,15 @@ ms.lasthandoff: 04/26/2018
 > [!CAUTION]
 > 您必須非常小心，進行設定時在 登錄編輯器。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會導致嚴重的問題，可能需要重新安裝作業系統。 Microsoft 不保證可解決您不當使用登錄編輯程式而造成的問題。 您必須自行承擔使用登錄編輯器的風險。
 >
->  下列知識庫文件包含備份、 編輯和還原登錄的指示： [Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
+> 下列知識庫文件包含備份、 編輯和還原登錄的指示： [Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改智慧的隱藏式字幕功能行為的資料來源視窗
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改智慧隱藏式字幕功能的行為，資料來源視窗
 
 1.  開啟命令視窗中，依序按一下**啟動**然後**執行**。
 
 2.  型別`regedit`中**執行**對話方塊中，然後按一下**確定**。
 
-3.  展開**HKEY_CURRENT_USER**，**軟體*， **Microsoft**， **VisualStudio**節點。
+3.  展開**HKEY_CURRENT_USER**，**軟體**， **Microsoft**， **VisualStudio**節點。
 
 7.  以滑鼠右鍵按一下**15.0**  節點，並建立新**金鑰**名為`Data Designers`。
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
 
     下次您拖曳項目，從**資料來源**視窗中，建立標題標籤使用提供的新登錄值。
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>若要關閉智慧的隱藏式字幕功能
+## <a name="turn-off-the-smart-captioning-feature"></a>關閉智慧型隱藏式字幕功能
 
 1.  開啟命令視窗中，依序按一下**啟動**然後**執行**。
 

@@ -4,13 +4,13 @@ description: Visual Studio for Mac 使用者的常見問題及解決方法。
 ms.topic: troubleshooting
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: a802bf950b5f759a41f88fb9260449fadcea8974
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4a6b5d2f3c5e6c84307d70308773dd353c6de883
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="troubleshooting"></a>疑難排解
 

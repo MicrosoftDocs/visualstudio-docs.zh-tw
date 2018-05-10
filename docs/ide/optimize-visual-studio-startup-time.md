@@ -1,5 +1,5 @@
 ---
-title: 改善 Visual Studio 啟動時間 | Microsoft Docs
+title: 改善 Visual Studio 啟動時間
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
@@ -45,7 +46,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
 2. 選擇您想要停用的延伸模組，然後選擇 [停用] 按鈕。
 
-您隨時可以使用擴充管理員或 [管理 Visual Studio 效能] 對話方塊，針對未來的工作階段重新啟用擴充功能。
+您隨時可以使用**延伸模組管理員**或 [管理 Visual Studio 效能] 對話方塊，針對未來的工作階段重新啟用延伸模組。
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />變更工具視窗設定以改善啟動時間
 

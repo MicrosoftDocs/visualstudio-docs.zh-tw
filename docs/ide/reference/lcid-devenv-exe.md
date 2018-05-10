@@ -18,23 +18,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c67b1b7d581a7e4b9d4309bfe432bf2a3298e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac74f5275288cdba35d3a70f4a7813c800e4327d
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 設定用於整合式開發環境 (IDE) 內文字、貨幣和其他值的預設語言。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 devenv {/LCID|/l} LocaleID
 ```
 
 ## <a name="arguments"></a>引數
- 需要 `LocaleID`。 所指定語言的 LCID (地區設定識別碼)。
+ `LocaleID` 必要項。 所指定語言的 LCID (地區設定識別碼)。
 
 ## <a name="remarks"></a>備註
  載入 IDE，並設定環境的預設自然語言。 在工作階段之間會持續保存這項變更，並在 IDE 中，將其反映在 [選項] 對話方塊中 [環境] 選項的 [國際設定] 窗格中。
@@ -58,7 +58,7 @@ devenv {/LCID|/l} LocaleID
 ## <a name="example"></a>範例
  此範例會載入具有英文資源字串的 IDE。
 
-```
+```cmd
 devenv /LCID 1033
 ```
 

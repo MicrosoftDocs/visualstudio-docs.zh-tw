@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4366235973a3e4aa090f5a2c65b346d40067c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25fe5a4e75ddf349210a936f47d99c94ec70c240
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 將方案檔和其所有專案檔或指定的專案檔更新成這些檔案的目前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 格式。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 devenv SolutionFile | ProjectFile /upgrade
 ```
 
@@ -48,7 +48,7 @@ devenv SolutionFile | ProjectFile /upgrade
 ## <a name="example"></a>範例
  這個範例會在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 方案的預設資料夾中升級名為 "MyProject.sln" 的方案檔。
 
-```
+```cmd
 devenv "MyProject.sln" /upgrade
 ```
 

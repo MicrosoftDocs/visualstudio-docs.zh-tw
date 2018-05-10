@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中將內容參數新增至負載測試回合設定 | Microsoft Docs
+title: 在 Visual Studio 中將內容參數新增到負載測試回合測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數加入至負載測試回合設定
 

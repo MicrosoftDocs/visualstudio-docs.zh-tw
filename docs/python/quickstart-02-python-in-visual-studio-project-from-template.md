@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/19/2018
 
 **解答**：安裝 Python 工作負載後，Visual Studio 提供各種不同的專案範本，包括可用於 [Flask、Bottle 及 Django Web 架構](../python/python-web-application-project-templates.md)、Azure 雲端服務、不同機器學習案例，甚至還有範本可從包含 Python 應用程式的現有資料夾結構建立專案。 您可以透過 [檔案] > [新增] > [專案] 對話方塊選取 [Python] 語言節點與其子節點，來存取這些範本。
 
-Visual Studio 也提供各種不同的檔案或「項目範本」來快速建立 Python 類別、Python 套件、Python 單元測試、web.config 檔案等等。 當 Python 專案開啟時，您可以透過 [新增] > [新增項目] 功能表命令來存取項目範本。
+Visual Studio 也提供各種不同的檔案或「項目範本」來快速建立 Python 類別、Python 套件、Python 單元測試、`web.config` 檔案等等。 當 Python 專案開啟時，您可以透過 [加入] > [加入新項目] 功能表命令來存取項目範本。 請參閱[項目範本](python-item-templates.md)參考。
 
 開始專案或建立檔案時，使用範本可節省大量時間，而且這也是了解不同應用程式類型與程式碼結構的好方法。 花費幾分鐘的時間從不同的範本建立專案與項目，熟悉一下所提供的功能會很有幫助。
 

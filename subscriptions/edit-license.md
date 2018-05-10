@@ -9,20 +9,18 @@ description: 了解系統管理員如何編輯訂用帳戶指派。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 
-如果您是訂用帳戶管理員，就可以變更指派給組織內個人的訂用帳戶。  本文章討論您可以進行變更的類型，並提供必要的步驟。 
+身為訂用帳戶管理員，您可以變更指派給您組織內個人的訂用帳戶。  本文章討論您可以進行的變更類型，並提供必要的步驟。 
 
 ## <a name="making-changes-to-subscriber-information"></a>變更訂閱者資訊
 您可以編輯訂閱者資訊，以更正錯誤或更新資訊。 
-> [!NOTE]
-> 編輯訂閱者的電子郵件地址即會重設任何現有的權益。
 
 若要編輯訂閱者，請選取滑鼠停留在訂閱者電子郵件地址上時，旁邊出現的省略符號 (…)。 隨即顯示下拉式清單。  選取 [編輯] 修改訂閱者的詳細資料。 您也可以按兩下格線中的訂閱者資料列，開啟 [編輯] 視窗。
 

@@ -1,6 +1,6 @@
 ---
 title: Windows 上 Visual Studio 中的 Python 支援概觀
-description: Visual Studio 中功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))
+description: Visual Studio 中 Python 功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))。
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>在 Visual Studio 中使用 Python (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
 Python 是一種熱門的程式設計語言，不僅可靠、有彈性、容易學習、可在所有作業系統上免費使用，而且也受到強大的開發人員社群和許多免費程式庫支援。 Python 支援各式各樣的開發，包括 Web 應用程式、Web 服務、傳統型應用程式、指令碼及科學計算，並且許多大學、科學家、業餘開發人員及專業開發人員等都使用它。 您可以從 [python.org (英文)](https://www.python.org) 和[適用於初學者的 Python (英文)](https://www.python.org/about/gettingstarted/) 深入了解此語言。
 
@@ -88,6 +88,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 �
 如需詳細資訊：
 
 - 文件：[管理 Python 專案](managing-python-projects-in-visual-studio.md)
+- 文件：[項目範本參考](python-item-templates.md)
 - 文件：[Python 專案範本](managing-python-projects-in-visual-studio.md#project-templates)
 - 文件：[使用 C++ 和 Python](working-with-c-cpp-python-in-visual-studio.md)
 - 一般 Visual Studio 功能文件：[專案和項目範本](../ide/creating-project-and-item-templates.md#visual-studio-templates)

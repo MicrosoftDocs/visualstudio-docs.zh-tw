@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fb28a49c1e0439e859211de553d473eaf815fb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 清除然後建置指定的解決方案設定。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
 ```
 
@@ -59,7 +59,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="example"></a>範例
  此範例使用 `MySolution` 的 `Debug` 解決方案設定中的 `Debug` 專案組建設定，來清除和重建專案 `CSharpWinApp`。
 
-```
+```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 

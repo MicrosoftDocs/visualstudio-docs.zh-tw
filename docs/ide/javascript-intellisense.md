@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -52,6 +52,7 @@ TypeScript 使用數個來源建立這項資訊：
 - [以 TypeScript 宣告檔案為基礎的 IntelliSense](#TsDeclFiles)
 - [自動擷取型別定義](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>以型別推斷為基礎的 IntelliSense
 
 在 JavaScript 中，大部分的時間不提供任何明確的類型資訊。 幸運的是，只要指定周圍的程式碼內容，通常很容易就能找出類型。
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>以 JSDoc 為基礎的 IntelliSense
 
 遇到不提供所需類型資訊 (或支援文件) 的型別推斷，可能會透過 JSDoc 註解明確提供類型資訊。  例如，若要為部分宣告的物件提供特定的類型，您可以使用 `@type` 標記，如下所示︰
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 如需目前支援的 JsDoc 註解，請參閱 [JavaScript 中的 JSDoc 支援](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript)。
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>以 TypeScript 宣告檔案為基礎的 IntelliSense
 
 因為 JavaScript 和 TypeScript 現在是以相同的語言服務為基礎，所以能夠以更豐富的方式互動。 例如，可為 *.d.ts* 檔案中宣告的值提供 JavaScript IntelliSense (請參閱 [TypeScript 文件](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html))，而在 TypeScript 中宣告的介面和類別等類型，可提供 JsDoc 註解當作類型使用。
 
 以下簡單示範 TypeScript 定義檔案 (透過介面) 向同一專案中的 JavaScript 檔案 (使用 `JsDoc` 標記) 提供此類的類型資訊。
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>自動擷取型別定義
 
 在 TypeScript 世界中，最熱門的 JavaScript 程式庫都使用 *.d.ts* 檔案描述其 API，而這類定義最常見的存放庫位於 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)。

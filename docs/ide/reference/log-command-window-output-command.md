@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
@@ -58,19 +58,19 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="examples"></a>範例
  這個範例會建立新的記錄檔 cmdlog，並開始命令記錄。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
  這個範例會停止記錄命令檔。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
  這個範例會繼續在先前使用的記錄檔中記錄命令。
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 

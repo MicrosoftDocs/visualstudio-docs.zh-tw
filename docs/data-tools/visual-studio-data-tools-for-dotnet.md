@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於.NET 的 visual Studio 資料工具
 
-Visual Studio 和.NET Framework 一起提供廣泛的應用程式開發介面和工具支援連接至資料庫、 在記憶體中，資料模型化和使用者介面中顯示的資料。 .NET Framework 類別，可讓資料存取功能稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，以及資料的工具在 Visual Studio 中，原先設計主要是支援關聯式資料庫和 XML。 這幾天，許多 NoSQL 資料庫廠商或第三方提供 ADO.NET 提供者。
+Visual Studio 和.NET Framework 一起提供廣泛的應用程式開發介面和工具支援連接至資料庫、 在記憶體中，資料模型化和使用者介面中顯示的資料。 .NET Framework 類別，可讓資料存取功能稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET，以及資料，在 Visual Studio 工具的設計目的，主要是為了支援關聯式資料庫和 XML。 這幾天，許多 NoSQL 資料庫廠商或第三方提供 ADO.NET 提供者。
 
 [.NET core](/dotnet/core/)支援 ADO.NET 資料集和相關的類型除外。 如果您的目標.NET Core 和需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](/ef/core/)。
 
 下圖顯示基本架構的簡化的檢視：
 
 ![ADO.NET 架構](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>一般工作流程
 
 這是一般的工作流程：
 

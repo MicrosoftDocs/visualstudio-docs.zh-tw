@@ -1,24 +1,25 @@
 ---
 title: 適用於 Python 的 Django Web 專案範本
 description: 使用 Django 架構以 Python 所撰寫 Web 應用程式 Visual Studio 範本的概觀。
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
+author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
-[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援可提供專案範本來設定 Django 架構 Web 應用程式的結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，並搜尋 "Django"，然後選取 [Django Web 專案]  範本。 產生的專案包含未定案程式碼，以及預設 SQLite 資料庫。 [Blank Django Web Project] (空白 Django Web 專案) 範本相似，但不包含資料庫。
+[Django (英文)](https://www.djangoproject.com/) 是高階的 Python 架構，專為快速、安全且可擴充的網頁程式開發所設計。 Visual Studio 中的 Python 支援提供數個專案範本，可設定以 Django 為基礎的 Web 應用程式結構。 若要在 Visual Studio 中使用範本，請選取 [檔案] > [新增] > [專案]，搜尋 "Django"，然後從 [空白 Django Web 專案]、[Django Web 專案] 和 [投票 Django Web 專案] 中選取。 如需所有範本的逐步解說，請參閱學習 [Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)。
 
 Visual Studio 針對 Django 專案提供完整的 IntelliSense：
 
@@ -54,10 +55,14 @@ Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命
 
     ![主控台](media/template-django-console-sync-db.png)
 
-- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 `settings.py` 中的 `STATIC_ROOT` 所指定的路徑。 請注意，[發佈至 Microsoft Azure](python-web-application-project-templates.md#publishing-to-azure-app-service)時，發佈作業會自動收集靜態檔案。
+- **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 `settings.py` 中的 `STATIC_ROOT` 所指定的路徑。 當您[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) 時，系統會自動收集靜態檔案作為發佈作業的一部分。
 
     ![主控台](media/template-django-console-collect-static.png)
 
 - **驗證**：執行 `manage.py validate`，這會報告由 `settings.py` 中的 `INSTALLED_APPS` 所指定之已安裝模組中的所有驗證錯誤：
 
     ![主控台](media/template-django-console-validate.png)
+
+## <a name="see-also"></a>另請參閱
+
+- [學習 Django 教學課程](learn-django-in-visual-studio-step-01-project-and-solution.md)

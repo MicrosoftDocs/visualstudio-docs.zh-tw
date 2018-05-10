@@ -1,7 +1,7 @@
 ---
-title: 尋找/命令方塊 | Microsoft Docs
-ms.custom: ''
+title: 尋找命令方塊
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 215ab2501f3221a9235c75d5a9b28f631692b1de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 
@@ -55,5 +55,5 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[命令視窗](../ide/reference/command-window.md)  
-[尋找和取代文字](../ide/finding-and-replacing-text.md)
+- [命令視窗](../ide/reference/command-window.md)
+- [尋找和取代文字](../ide/finding-and-replacing-text.md)

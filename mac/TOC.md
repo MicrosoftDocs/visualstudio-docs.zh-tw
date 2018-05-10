@@ -3,6 +3,7 @@
 # [IDE 導覽](ide-tour.md)
 
 # [安裝](installation.md)
+## [預覽安裝](install-preview.md)
 ## [更新](update.md)
 ## [解除安裝](uninstall.md)
 
@@ -30,6 +31,7 @@
 ## [程式碼片段](snippets.md)
 ## [區塊選取](block-selection.md)
 ## [編輯器佈景主題](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [常用鍵盤快速鍵](keyboard-shortcuts.md)
 
 # [偵錯](debugging.md)
@@ -43,6 +45,7 @@
 ### [建立和編輯組態](create-and-edit-configurations.md)
 
 # [版本控制](version-control.md)
+## [TF 版本控制](tf-version-control.md)
 ## [設定 Git 存放庫](set-up-git-repository.md)
 ## [使用 Git](working-with-git.md)
 ## [設定 Subversion 存放庫](set-up-subversion-repository.md)
@@ -50,7 +53,11 @@
 
 # [工作負載](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [Javascript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Azure Functions 簡介](azure-functions.md)
+### [教學課程：Azure Functions](azure-functions-lab.md)
 ### [已連線的服務](connected-services.md)
 ## [Unity 遊戲開發](unity-tools.md)
 ### [安裝](setup-vsmac-tools-unity.md)

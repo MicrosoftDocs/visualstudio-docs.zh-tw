@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中 F1 的預設頁面 | Microsoft Docs
+title: F1 說明的預設頁面
 ms.date: 02/28/2018
 ms.topic: conceptual
 robots: noindex,nofollow
@@ -9,12 +9,13 @@ f1_keywords:
 manager: douge
 author: gewarren
 ms.author: gewarren
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2d5b027041e9b5ff31126af5e44e22415240ea55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # F1 說明
 

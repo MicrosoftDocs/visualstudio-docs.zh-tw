@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/26/2018
 
 -   類型位於 #import 指示詞所參考的程式庫中。 可行的因應措施之一，是將產生的程式碼 (.tlh 檔) 手動加入至標頭檔中的 #include 指示詞。
 
--   確定 [類別設計工具] 支援您所鍵入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。
+-   確定 [類別設計工具] 支援您所鍵入的類型。 請參閱 [C++ 程式碼項目限制](#limitations-for-c-code-elements)。
 
 關於類型解析問題，最常見的錯誤是：**找不到類別圖表 '\<element>'** 中一或多個圖形的程式碼。 此錯誤訊息不一定表示您的程式碼有錯誤。 它只是指出類別設計工具無法顯示您的程式碼。 您可以嘗試下列措施：
 

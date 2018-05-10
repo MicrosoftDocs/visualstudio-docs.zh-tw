@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 中 EditorConfig 的 .NET 編碼慣例設定 | Microsoft Docs
+title: Visual Studio 中 EditorConfig 的 .NET 編碼慣例設定
 ms.date: 02/28/2018
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -13,15 +13,16 @@ helpviewer_keywords:
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b313271e29bba660af1aa48654bfdfefb81e39f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1996edee476525ec73839fc22dd2fa39de03098a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 

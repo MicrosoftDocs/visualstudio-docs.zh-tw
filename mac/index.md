@@ -1,15 +1,15 @@
 ---
 title: Visual Studio for Mac 簡介
-description: ''
+description: 本文介紹 Mac 版 Visual Studio 的功能
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
@@ -72,7 +72,7 @@ Visual Studio 有自己的整合式 Android SDK Manager。
 
 對於 Android 應用程式，Visual Studio for Mac 包括自己的設計工具，可使用 Android 的 `.axml` 檔案，以視覺化方式建構使用者介面。 Visual Studio for Mac 會在自己的 Android Designer 中開啟這些檔案，如下圖所示：
 
-![](media/intro-image31.png)
+![Android UI 設計工具](media/intro-image31.png)
 
 如需 Android Designer 的詳細資訊，請參閱 [Designer 概觀](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文件。
 
@@ -80,7 +80,7 @@ Visual Studio 有自己的整合式 Android SDK Manager。
 
 iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺化編輯 .xib 和分鏡腳本檔案來建立 iOS、tvOS 和 WatchOS UI 和轉換。 整個使用者介面都可以使用工具箱和設計介面之間的拖放功能建置，同時使用直覺式方法來處理事件。 iOS 設計工具也利用設計階段轉譯支援[自訂控制項](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/)。
 
-![](media/intro-image30.png)
+![iOS 分鏡腳本設計工具](media/intro-image30.png)
 
 如需使用 iOS Designer 的詳細資訊，請參閱 [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer)文件。
 
@@ -109,7 +109,7 @@ Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](
 
 Xamarin Inspector 為使用者提供互動式的 C# 主控台和工具。 檢查即時應用程式時，它可作為教學工具、記錄工具或試驗工具，用為偵錯或診斷輔助工具。
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 其包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，並整合到 IDE 的偵錯工作流程中。
 

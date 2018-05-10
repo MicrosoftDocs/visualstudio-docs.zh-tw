@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 使用它來強化、保護及清理傳統型、行動裝置、伺服器和嵌入式應用程式，以協助保護商業機密和其他智慧財產 (IP)、減少盜版和仿冒，並防止竄改及未經授權的偵錯。
 Dotfuscator 不需要其他程式設計作業，甚至不需要存取原始程式碼，就可以在編譯的組件上執行。
 
-![](media/header.svg)
+![PreEmptive Protection - Dotfuscator](media/header.svg)
 
 ## <a name="why-protection-matters"></a>為何保護很重要
 
@@ -42,7 +42,7 @@ Dotfuscator 可以[混淆][obfuscation]您的 .NET 組件來阻礙還原工程�
 
 「保護應用程式的完整性」也相當重要。
 除了還原工程之外，惡意執行者也可能嘗試製作盜版應用程式、改變應用程式在執行階段的行為，或是操控資料。
-Dotfuscator 可以在您的應用程式中插入[偵測、報告及回應未經授權使用][checks] (包括竄改及第三方偵錯) 的能力。
+Dotfuscator 可以在您的應用程式中插入[偵測、回報及回應未經授權使用][checks] (包括竄改、第三方偵錯以及破解裝置) 的能力。
 
 如需 Dotfuscator 如何整合到安全軟體開發週期的詳細資訊，請參閱 PreEmptive Solutions 的 [SDL 應用程式保護頁面][sdl-protection]。
 
@@ -57,6 +57,7 @@ Dotfuscator CE 中包含的 [.NET Obfuscation][obfuscation] 及其他[應用程�
 * *[重新命名][renaming]* 識別項，使對編譯過的組件進行還原工程更困難。
 * *[反竄改][tamper]* 會偵測遭竄改應用程式的執行、傳輸事件警示，以及終止遭竄改的工作階段。
 * *[反偵錯][debug]* 會偵測附加以執行應用程式的偵錯工具、傳輸事件警示，以及終止受偵錯的工作階段。
+* *[防裝置破解][root]* 可偵測應用程式是否正在已被破解的 Android 裝置上執行，然後在這些裝置上終止工作階段。
 * *[應用程式到期行為][shelflife]* 會針對「壽命結束」日期進行編碼、在應用程式於到期日之後執行時傳輸警示，以及終止到期的應用程式工作階段。
 * *[例外狀況追蹤][exceptions]* 會監視發生在應用程式中的未處理例外狀況。
 * *[工作階段][sessions]與[功能][features]使用情況追蹤*，會判斷已執行的應用程式、應用程式的版本，以及在應用程式中使用的功能。
@@ -67,7 +68,7 @@ Dotfuscator CE 提供現成的基本保護。
 註冊的 Dotfuscator CE 的使用者，以及 *PreEmptive Protection - Dotfuscator* Professional Edition (全球最先進的 [.NET Obfuscator][net-obfuscator]) 使用者，將能取得更多保護方法。
 如需增強 Dotfuscator 的相關資訊，請參閱[升級頁面][upgrades]。
 
-## <a name="getting-started"></a>快速入門
+## <a name="getting-started"></a>使用者入門
 
 若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動]\(Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
 
@@ -84,29 +85,30 @@ Dotfuscator CE 提供現成的基本保護。
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-- [software-protection]: https://www.preemptive.com/software-protection
-- [obfuscation]: https://www.preemptive.com/obfuscation
-- [app-protection]: https://www.preemptive.com/application-protection
-- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[software-protection]:  https://www.preemptive.com/software-protection
+[obfuscation]:  https://www.preemptive.com/obfuscation
+[app-protection]:  https://www.preemptive.com/application-protection
+[sdl-protection]:  https://www.preemptive.com/solutions/SDL-App-Protection
+[net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [install]: install.md
-- [capabilities]: capabilities.md
-- [upgrades]: upgrades.md
+[install]:  install.md
+[capabilities]:  capabilities.md
+[upgrades]:  upgrades.md
 
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+[renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+[checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[tamper]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
+[shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

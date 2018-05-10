@@ -9,11 +9,11 @@ description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 04/16/2018
 
 3.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
 
-    如果您的組織用來接收電子郵件的電子郵件與登入的電子郵件不同，則可以選擇在這裡輸入它。 選取超連結，指出「進行通訊的電子郵件與登入的電子郵件不同嗎」？ 
+    如果您的組織不是使用 Azure Active Directory (Azure AD)，但除了用於登入的電子郵件之外，還有接收電子郵件的其他電子郵件，您可以選擇在這裡輸入它。 選取標籤是 [新增接收通訊的其他電子郵件] 超連結。 
 
     **存取下載項目：**  
-    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保留核取 [下載] 方塊。 如果您選擇取消核取此方塊，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 
+    如果您想要讓此訂閱者在登入 [Visual Studio 訂用帳戶入口網站](https://my.visualstudio.com?wt.mc_id=o~msft~docs)時可存取軟體下載，請務必保持 [下載] 切換按鈕為啟用狀態。 如果您選擇停用下載，則使用者無法存取軟體下載，但仍可存取訂用帳戶中所含的所有其他權益。 
     
     當您完成選擇此訂閱者的選項時，請按一下 [新增]。
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
     ![已新增訂閱者](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>大量指派
-1.  若要一次新增多位訂閱者，請巡覽至 [訂閱者] 索引標籤。在上方功能區中，按一下 [大量新增]。 
+1.  若要一次新增多個訂閱者，請巡覽至 [管理訂閱者] 索引標籤。在上方功能區中，按一下 [大量新增]。 
 
     ![大量新增](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 
     ![上傳多位訂閱者](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 參考是選擇性欄位。 如果您已正確填入範本的任何部分，則應該會看到描述問題的錯誤訊息。 完成時，請將檔案儲存至硬碟。
+3.  在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 參考是選擇性欄位。 如果您已正確填入範本的任何部分，則應該會看到描述問題的錯誤訊息。 完成時請將檔案儲存在本機。
 **為了協助確保順利上傳，請觀察下列最佳做法：**
     - 確定表單欄位未包含逗號。
     - 移除表單欄位 (例如使用者名稱) 前後的空格。
