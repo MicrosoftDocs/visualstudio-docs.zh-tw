@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式發行至網站，使用 Visual Studio 發行工具
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 這些步驟適用於 ASP.NET、 ASP.NET Core、.NET Core 和 Visual Studio 的 Python 應用程式。 For Node.js，所支援的步驟，但是使用者介面不同。
 
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
+
+    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+
 ## <a name="create-a-new-project"></a>建立新專案 
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 1. 在下**Visual C#** 或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
 
-1. 選擇**MVC**，請確定**非驗證**已選取，然後按一下**確定**。
+1. 選擇**MVC** (或選擇**Web 應用程式 （模型-檢視-控制器）**適用於.NET Core)，請確定**非驗證**已選取，然後按一下 **[確定]**.
 
 1. 輸入的名稱，例如**MyWebApp**按一下**確定**。
 
@@ -44,7 +50,9 @@ ms.lasthandoff: 04/19/2018
 
     ![選擇發行](../deployment/media/quickstart-publish-aspnet.png "選擇發行")
 
-1. 在**發行** 窗格中，選擇**IIS，FTP 等**。
+1. 如果您先前設定的任何發行設定檔，**發行** 窗格隨即出現。 按一下**建立新的設定檔**。
+
+1. 在**挑選發行目標**對話方塊方塊中，選擇**IIS，FTP 等**。
 
     ![選擇 IIS、 FTP、 等](../deployment/media/quickstart-publish-iis-ftp.png "選擇 IIS、 FTP 和其他內容。")
 
@@ -56,7 +64,7 @@ ms.lasthandoff: 04/19/2018
 
 1. 在**發行方法**欄位中，選擇一種方法，例如**Web Deploy**或**FTP**。
 
-    您會看到的設定下一步對應加入至發行的方法。
+    您會看到的設定下一步對應加入至發行的方法。 Web Deploy，可簡化部署的 Web 應用程式和網站的 IIS 伺服器，並必須安裝為伺服器上的應用程式。 使用[Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx)來安裝它。
 
 1. 設定發行方法所需要的設定，按一下**驗證連線**。
 
@@ -74,4 +82,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>後續步驟
 
-- [將 ASP.NET 部署到 IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+本快速入門中，您學會如何使用 Visual Studio 建立的發行設定檔。 您也可以設定的發行設定檔匯入發行設定。
+
+> [!div class="nextstepaction"]
+> [匯入發佈設定及部署至 IIS](tutorial-import-publish-settings-iis.md)

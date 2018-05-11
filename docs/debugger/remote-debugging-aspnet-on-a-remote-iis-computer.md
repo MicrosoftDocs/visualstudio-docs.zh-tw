@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -56,6 +56,7 @@ ms.lasthandoff: 04/18/2018
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- iis.net
 
 如果您使用 Internet Explorer，您可以加入信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 這些步驟是不同的其他瀏覽器。 （如果您需要從 my.visualstudio.com 下載較舊版本的遠端偵錯工具時，某些其他信任的網站才能登入。）
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/18/2018
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾， **C:\Publish**將稍後部署 ASP.NET 專案。
 
-2. 開啟**Internet Information Services (IIS) 管理員**。 (在伺服器管理員 的左窗格中選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取**網際網路資訊服務 (IIS) 管理員**。)
+2. 如果它尚未開啟，開啟**網際網路資訊服務 (IIS) 管理員**。 (在伺服器管理員 的左窗格中選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取**網際網路資訊服務 (IIS) 管理員**。)
 
 3. 在下**連線**在左窗格中，移至**網站**。
 

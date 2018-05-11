@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
@@ -83,18 +83,19 @@ ms.lasthandoff: 04/18/2018
 
 您可以建立伺服器的 Azure VM 的 Windows，再安裝及設定 IIS 和其他必要的軟體元件。 這會花費的時間比部署到 Azure 應用程式服務，並且需要您在本教學課程執行其餘的步驟。
 
-首先，請依照下列所述的所有步驟[安裝和執行的 IIS](/azure/virtual-machines/virtual-machines-windows-hero-role)。
+首先，請依照下列所述的所有步驟[安裝和執行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
 
 當您開啟通訊埠 80 的網路安全性群組中時，也請開啟連接埠 4022 遠端偵錯工具。 這樣一來，您不需要開啟它。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的瀏覽器安全性設定
 
-根據您的瀏覽器安全性設定，便可能節省時間新增到您的瀏覽器的下列信任的網站，所以您可以輕鬆地下載本教學課程中所述的軟體。 可能會需要這些網站的存取：
+根據您的瀏覽器安全性設定，便可能節省時間新增到您的瀏覽器的下列信任的網站，所以您可以更快速地下載本教學課程中所述的軟體。 可能會需要這些網站的存取：
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- iis.net
 
 如果您使用 Internet Explorer，您可以加入信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 這些步驟是不同的其他瀏覽器。 （如果您需要從 my.visualstudio.com 下載較舊版本的遠端偵錯工具時，某些其他信任的網站才能登入。）
 
