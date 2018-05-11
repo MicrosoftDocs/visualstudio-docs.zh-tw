@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>將 ASP.NET 或 ASP.NET Core 應用程式發行至使用 Visual Studio 的 Azure 應用程式服務
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 如果您沒有 Azure 帳戶，您可以[這裡進行註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
 
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
+
+    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+
 ## <a name="create-a-new-project"></a>建立新專案 
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
 1. 在下**Visual C#** 或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
 
-1. 選擇**MVC**，請確定**非驗證**已選取，然後按一下**確定**。
+1. 選擇**MVC** (或選擇**Web 應用程式 （模型-檢視-控制器）**適用於.NET Core)，請確定**非驗證**已選取，然後按一下 **[確定]**.
 
 1. 輸入的名稱，例如**MyWebApp**按一下**確定**。
 
@@ -44,7 +50,9 @@ ms.lasthandoff: 04/19/2018
 
     ![選擇發行](../deployment/media/quickstart-publish-aspnet.png "選擇發行")
 
-1. 在**發行** 窗格中，選擇**Microsoft Azure App Service**。
+1. 如果您先前設定的任何發行設定檔，**發行** 窗格隨即出現。 按一下**建立新的設定檔**。
+
+1. 在**挑選發行目標**對話方塊方塊中，選擇**App Service**。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
 
@@ -70,5 +78,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>後續步驟
 
-- [ASP.NET Core 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [使用 Git 將 ASP.NET Core 持續部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment)
+本快速入門中，您學會如何使用 Visual Studio 建立的發行設定檔部署至 Azure。 您也可以設定的發行設定檔匯入發行 Azure 應用程式服務的設定。
+
+> [!div class="nextstepaction"]
+> [匯入發佈設定及部署至 Azure](tutorial-import-publish-settings-azure.md)

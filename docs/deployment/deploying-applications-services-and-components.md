@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 第一次查看 Visual Studio 中的部署
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="deploy-to-local-folder"></a>將部署到本機資料夾
 
-- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET Core**： 使用發行工具來部署至本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET Core**： 使用發行工具來部署至本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**。 (如果您先前已設定任何發行設定檔，接著，您必須按一下**建立新的設定檔**。)接下來，選擇**資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇發行](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,11 @@ ms.lasthandoff: 04/26/2018
 
 - **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和 **.NET Core**： 您可以將部署到使用發行工具使用 FTP 或 Web Deploy 的網站。 如需詳細資訊，請參閱[部署網站至](quickstart-deploy-to-a-web-site.md)。
 
-    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 [發行] 工具中，選擇您想要的選項組態步驟。
+    在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您先前已設定任何發行設定檔，接著，您必須按一下**建立新的設定檔**。)在 [發行] 工具中，選擇您想要的選項組態步驟。
 
     ![選擇 IIS、 FTP 和其他內容。](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    如需匯入 Visual Studio 中的發行設定檔的詳細資訊，請參閱[匯入發行設定並部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。
 
     您也可以部署 ASP.NET 應用程式和服務中的其他方法的數字。 如需詳細資訊，請參閱[部署 ASP.NET web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
 
@@ -60,18 +62,16 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core** web 應用程式： 您可以使用 [發行] 工具，快速地將應用程式部署至 Azure App Service 或至 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 在 發行 對話方塊中，選擇  **Microsoft Azure App Service**或**Microsoft Azure 虛擬機器**，然後依照 設定步驟。
+- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core** web 應用程式： 您可以使用 [發行] 工具，快速地將應用程式部署至 Azure App Service 或至 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您先前已設定任何發行設定檔，接著，您必須按一下**建立新的設定檔**。)在 發行 對話方塊中，選擇  **Microsoft Azure App Service**或**Microsoft Azure 虛擬機器**，然後依照 設定步驟。
 
     ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
 
-    若要發行至 Azure 虛擬機器，向右捲動並選取**Microsoft Azure 虛擬機器**。
+    如需從 Azure 應用程式服務的發行設定檔匯入至 Visual Studio，請參閱[匯入發佈設定及部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
 
     快速簡介，請參閱[發行到 Azure](quickstart-deploy-to-azure.md)。 此外，請參閱[ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 使用 Git 的部署，請參閱[的 ASP.NET Core 使用 Git 連續部署](/aspnet/core/publishing/azure-continuous-deployment)。
 
     > [!NOTE]
     > 如果您沒有 Azure 帳戶，您可以[這裡進行註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
-
-- 其他**Azure 服務**： 請參閱特定[Azure 服務](/azure/#pivot=products)可能支援的 Visual Studio 的不同的部署選項的文件。
 
 ### <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 
