@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c21803f83baaac6a6a5d44764278d35e061d7d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -76,7 +76,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解其他可用的 Python 套件？**
 
-**解答**：瀏覽 [Python 套件索引](https://pypi.python.org/pypi) \(英文\)。
+**解答**：瀏覽 [Python 套件索引](https://pypi.org/) \(英文\)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 

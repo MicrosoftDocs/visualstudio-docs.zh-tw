@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
 
      [ **新增專案** ] 對話方塊隨即出現。
 
-3. 在**新專案**對話方塊之下**Visual C#**或**Visual Basic**，依序展開**Office/SharePoint**，然後選擇  **SharePoint 方案**類別目錄。
+3. 在**新專案**對話方塊之下**Visual C#** 或**Visual Basic**，依序展開**Office/SharePoint**，然後選擇  **SharePoint 方案**類別目錄。
 
 4. 在範本清單中，選擇  **SharePoint 2013-視覺 Web 組件**範本，然後選擇 **確定** 按鈕。
 
