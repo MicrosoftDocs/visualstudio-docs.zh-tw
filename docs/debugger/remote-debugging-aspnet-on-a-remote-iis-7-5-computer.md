@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>遠端偵錯遠端 IIS 電腦上的 ASP.NET
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -74,11 +74,17 @@ ms.lasthandoff: 05/10/2018
 
 2. 重新啟動系統 (或執行**net stop was /y**後面**net 啟動 w3svc**挑選變更到系統路徑的命令提示字元)。
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（選擇性）安裝 Web Deploy 3.6 裝載 Windows Server 上的伺服器
+
+在某些情況下，它可以快速地匯入 Visual Studio 中發行設定，而不是手動設定部署選項。 如果您想要匯入發行設定，而不是 Visual Studio 中設定的發行設定檔，請參閱[匯入發行設定和部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否則，停留在本主題中，請繼續閱讀。 如果您完成匯入發行項發行設定和應用程式部署成功，然後返回本主題並在上一節中啟動[下載遠端工具](#BKMK_msvsmon)。
+
 ## <a name="BKMK_install_webdeploy"></a> （選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> 設定 Windows Server 電腦上的 ASP.NET 網站
+
+如果您要匯入發行設定，您可以略過本節。
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾， **C:\Publish**將稍後部署 ASP.NET 專案。
 

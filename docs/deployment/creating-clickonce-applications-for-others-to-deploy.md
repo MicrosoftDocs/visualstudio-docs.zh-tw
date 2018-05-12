@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 並非所有的開發人員建立 ClickOnce 部署計劃部署應用程式本身。 其中許多只使用 ClickOnce 封裝其應用程式，然後遞交檔案給客戶，例如大型公司。 客戶會變成負責裝載其網路上的應用程式。 本主題討論這類部署中的.NET Framework 3.5 版之前的版本中固有的問題。 然後，它會描述在.NET Framework 3.5 使用新的 [使用信任的資訊清單] 功能提供新的方案。 最後，它會做出結論與建議的策略，以建立 ClickOnce 部署的客戶仍在使用較舊版本的.NET framework。  
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
   
  使用自我簽署的憑證的部署資訊清單有幾個優點。 不需要在取得或建立自己的 Authenticode 憑證，客戶`<useManifestForTrust>`可簡化部署的客戶，同時允許開發人員維護自己的商標設定識別身分應用程式上。 結果是帶正負號的部署更安全且唯一的應用程式身分識別的一組。 這樣就不可能從同一個應用程式部署至多個客戶，可能會發生的衝突。  
   
- 如需如何建立與 ClickOnce 部署的逐步解說資訊`<useManifestForTrust>`啟用，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署，並會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ 如需如何建立與 ClickOnce 部署的逐步解說資訊`<useManifestForTrust>`啟用，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署，並會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>信任是在執行階段的運作方式的應用程式資訊清單  
  若要進一步了解使用信任的應用程式資訊清單的運作方式在執行階段，請考慮下列的範例。 以.NET Framework 3.5 為目標的 ClickOnce 應用程式是 Microsoft 所建立的。 應用程式資訊清單使用`<useManifestForTrust>`項目會由 Microsoft 簽署。 Adventure Works 會使用自我簽署的憑證來簽署部署資訊清單。 Adventure 的 Works 設定用戶端信任由 Microsoft 簽署的任何應用程式。  
@@ -99,6 +99,6 @@ ms.lasthandoff: 04/19/2018
  這個方法的缺點是它需要客戶安裝.NET Framework SDK 工具，並讓開發人員或系統管理員身分在使用這些技術。 有些客戶可能會要求需要少量或沒有技術投入時間集中用於其組件的解決方案。  
   
 ## <a name="see-also"></a>另請參閱  
- [部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

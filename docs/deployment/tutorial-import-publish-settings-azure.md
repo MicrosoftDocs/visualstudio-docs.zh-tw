@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>發行至 Azure App Service 應用程式匯入 Visual Studio 中發行設定
 
 您可以使用**發行**工具匯入發行設定，然後再部署您的應用程式。 在本文中，我們會使用發行 Azure 應用程式服務設定，但是您可以使用類似的步驟，匯入發行設定[IIS](../deployment/tutorial-import-publish-settings-iis.md)。 在某些情況下，使用的發行設定設定檔會加快速度比手動設定部署至 Visual Studio 的每個安裝的服務。
 
-這些步驟適用於 Visual Studio 中的 ASP.NET、 ASP.NET Core 和.NET Core 應用程式。 步驟對應至 Visual Studio 2017 15.6 版本。
+這些步驟適用於 Visual Studio 中的 ASP.NET、 ASP.NET Core 和.NET Core 應用程式。 您也可以匯入發行設定[Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)應用程式。 步驟對應至 Visual Studio 2017 15.6 版本。
 
 在本教學課程中，您將進行下列作業：
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 05/10/2018
 > * 發行設定檔匯入 Visual Studio
 > * 將應用程式部署至 Azure App Service
 
-發行設定檔 (*.publishsettings) 不同於發行設定檔 (*.pubxml) 在 Visual Studio 中建立。 Azure 應用程式服務，會建立發行設定檔，然後可以將它匯入到 Visual Studio。
+發行設定檔 (*\*.publishsettings*) 不同於發行設定檔 (*\*.pubxml*) 在 Visual Studio 中建立。 Azure 應用程式服務，會建立發行設定檔，然後可以將它匯入到 Visual Studio。
 
 > [!NOTE]
-> 如果您只需要複製 Visual Studio 發行設定檔 (\*.pubxml 檔案) 從一個到另一個 Visual Studio 的安裝，您可以找到發行設定檔，  *\<profilename\>.pubxml*，在 *\\< 專案名稱\>\Properties\PublishProfiles* managed 的專案類型的資料夾。 對於網站，查看  *\App_Data*資料夾。 發行設定檔是 MSBuild XML 檔案。
+> 如果您只需要複製 Visual Studio 發行設定檔 (*\*.pubxml*檔案) 從一個到另一個 Visual Studio 的安裝，您可以找到發行設定檔，  *\<profilename\>.pubxml*，請在 *\\< 專案名稱\>\Properties\PublishProfiles* managed 的專案類型的資料夾。 對於網站，查看  *\App_Data*資料夾。 發行設定檔是 MSBuild XML 檔案。
 
 ## <a name="prerequisites"></a>必要條件
 

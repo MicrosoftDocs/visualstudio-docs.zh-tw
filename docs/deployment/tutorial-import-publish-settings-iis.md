@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>發行至 IIS 應用程式匯入 Visual Studio 中發行設定
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/10/2018
 > * 發行設定檔匯入 Visual Studio
 > * 將應用程式部署至 IIS
 
-發行設定檔 (\*.publishsettings) 不同於發行設定檔 (\*.pubxml) 在 Visual Studio 中建立。 發行設定檔由 IIS 或 Azure 應用程式服務，或它可以手動建立，並接著可以將它匯入到 Visual Studio。
+發行設定檔 (*\*.publishsettings*) 不同於發行設定檔 (*\*.pubxml*) 在 Visual Studio 中建立。 發行設定檔由 IIS 或 Azure 應用程式服務，或它可以手動建立，並接著可以將它匯入到 Visual Studio。
 
 > [!NOTE]
 > 如果您只需要複製 Visual Studio 發行設定檔 (\*.pubxml 檔案) 從一個到另一個 Visual Studio 的安裝，您可以找到發行設定檔，  *\<profilename\>.pubxml*，在 *\\< 專案名稱\>\Properties\PublishProfiles* managed 的專案類型的資料夾。 對於網站，查看  *\App_Data*資料夾。 發行設定檔是 MSBuild XML 檔案。
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/10/2018
 
     這篇文章中的步驟會根據 Visual Studio 2017
 
-* 若要從 IIS 中產生的發行設定檔案，您必須正確設定 IIS 8.0 網頁伺服器角色與其中一個 ASP.NET 4.5 執行 Windows Server 2012 的另一部電腦或 ASP.NET Core 安裝。 適用於 ASP.NET Core，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET 4.5，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+* 若要從 IIS 中產生的發行設定檔案，您必須正確設定 IIS 8.0 網頁伺服器角色且執行 Windows Server 2012 的電腦和安裝 ASP.NET 4.5 或 ASP.NET Core。 適用於 ASP.NET Core，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET 4.5，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中建立新的 ASP.NET 專案
 
