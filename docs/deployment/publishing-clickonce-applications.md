@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c7c6e79f251120b9396d523112c717957817ad5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publishing-clickonce-applications"></a>發行 ClickOnce 應用程式
 首次發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，可以使用 [發行精靈] 來設定發行屬性。 這個精靈僅提供少數屬性；所有其他屬性都設為其預設值。  
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/19/2018
 |[逐步解說：依需求以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|  
 |[逐步解說：依需求以 ClickOnce 部署 API 下載附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|描述如何將您的附屬組件標記為選用項目，並僅下載用戶端電腦因其目前文化特性設定而需要的組件。|  
 |[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|  
-|[逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|  
+|[逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|  
 |[如何：將專案設定成以平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)|說明如何藉由變更發行適用於 64 位元處理器**目標 CPU**或**平台目標**專案中的屬性。|  
 |[逐步解說： 啟用 ClickOnce 應用程式在多個.NET Framework 版本上執行](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|  
 |[逐步解說：為 ClickOnce 應用程式建立自訂安裝程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|  
