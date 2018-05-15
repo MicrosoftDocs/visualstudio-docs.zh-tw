@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd11f5b7db7272a453ec2ebb5c8a0a794498e517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在 *Program.cs* 中，將下面這行新增在檔案最上方的另一個 `using` 陳述式：
 
-    ```
+    ```csharp
     using System.Xml;
     ```
 
@@ -160,7 +160,7 @@ ms.lasthandoff: 04/26/2018
 
      在檔案中搜尋 `<osVersionInfo>` 項目。 例如，版本可能是：
 
-    ```
+    ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
@@ -180,7 +180,7 @@ ms.lasthandoff: 04/26/2018
 
      現在，版本應讀為：
 
-    ```
+    ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
@@ -189,4 +189,4 @@ ms.lasthandoff: 04/26/2018
 - [專案設計工具、建置事件頁面 (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

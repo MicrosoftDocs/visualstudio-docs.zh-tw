@@ -1,16 +1,16 @@
 ---
-title: "Windows 指令碼引擎 | Microsoft Docs"
-ms.custom: 
+title: Windows 指令碼引擎 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

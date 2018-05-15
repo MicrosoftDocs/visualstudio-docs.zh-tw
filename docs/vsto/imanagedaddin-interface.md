@@ -58,13 +58,13 @@ interface IManagedAddin : IUnknown
   
 1.  應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<應用程式名稱 >*\Addins\  
+     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<應用程式名稱 >* \Addins\  
   
      這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。  
   
 2.  應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。  
   
-     Managed 的 VSTO 增益集可儲存資訊清單的完整路徑`Manifest`HKEY_CURRENT_USER\Software\Microsoft\Office 下的項目\\*\<應用程式名稱 >*\Addins\\ *\<增益集識別碼 >*。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
+     Managed 的 VSTO 增益集可儲存資訊清單的完整路徑`Manifest`HKEY_CURRENT_USER\Software\Microsoft\Office 下的項目\\*\<應用程式名稱 >* \Addins\\ *\<增益集識別碼 >*。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
   
 3.  如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會透過嘗試建立實作 IManagedAddin 介面的 COM 物件。  
   

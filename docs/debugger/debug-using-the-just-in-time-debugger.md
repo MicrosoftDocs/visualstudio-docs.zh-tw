@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的 Just-In-Time 偵錯工具進行偵錯
 在 Just-in-time 偵錯 Visual Studio 會自動啟動時執行 Visual Studio 外部的應用程式中發生的例外狀況或損毀。 這可讓您測試您的應用程式未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [在 Just-in-time，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

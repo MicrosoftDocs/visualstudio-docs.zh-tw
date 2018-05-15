@@ -1,7 +1,7 @@
 ---
 title: 將部署到本機資料夾-Visual Studio |Microsoft 文件
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式部署至本機資料夾，使用 Visual Studio 發行工具
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 04/19/2018
 
 這些步驟適用於 ASP.NET、 ASP.NET Core、.NET Core 和 Visual Studio 的 Python 應用程式。 For Node.js，所支援的步驟，但是使用者介面不同。
 
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 2017 和 **.NET Framework**和 **.NET Core**安裝的開發工作負載。
+
+    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+
 ## <a name="create-a-new-project"></a>建立新專案 
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-1. 在下**Visual C#** 或**Visual Basic**，選擇 **.NET Core**，然後在中間窗格選擇**主控台應用程式 (.NET Core)**。
+1. 在下**Visual C#** 或**Visual Basic**，選擇 **.NET Core**，然後在中間窗格中選擇 **主控台應用程式 (.NET Core)**。
 
 1. 輸入的名稱，例如**MyLocalApp**按一下**確定**。
 
@@ -40,7 +46,9 @@ ms.lasthandoff: 04/19/2018
 
     ![選擇發行](../deployment/media/quickstart-publish.png "選擇發行")
 
-1. 在**發行** 窗格中，選擇**資料夾**。
+1. 如果您先前設定的任何發行設定檔，**發行** 窗格隨即出現。 按一下**建立新的設定檔**。
+
+1. 在**挑選發行目標**對話方塊方塊中，選擇**資料夾**。
 
     ![選擇資料夾](../deployment/media/quickstart-publish-folder.png "選擇資料夾")
 
