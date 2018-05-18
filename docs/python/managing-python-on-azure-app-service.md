@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上設定 Python 環境
 
@@ -46,7 +46,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>透過 Azure Resource Manager 選擇 Python 版本
 
-如果您要使用 Azure Resource Manager 範本來部署 App Service，請將網站延伸模組新增為資源。 延伸模組會顯示為巢狀資源，其類型為 `siteextensions` 並具有來自 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) 的名稱。
+如果您要使用 Azure Resource Manager 範本來部署 App Service，請將網站延伸模組新增為資源。 特別是，延伸模組會顯示為巢狀資源 (`resources` 下的 `resources` 物件) ，其類型為 `siteextensions` 並具有來自 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) 的名稱。
 
 例如，新增 `python361x64` (Python 3.6.1 x64) 的參考之後，您的範本可能如下所示 (已省略部分屬性)：
 

@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 927d65b8b936200a1e174a7225591690183f1821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: afd383dfd03a1e4e0a2ca9c377ce372d1586c738
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="spanspan-constructor"></a>span::span 建構函式
 初始化 `span` 類別的新執行個體。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 span(  
    const marker_series& _Series,  
    _In_ LPCTSTR _Format,  
@@ -66,9 +66,9 @@ span(
  分類。  
   
 ## <a name="requirements"></a>需求  
- **標頭：**cvmarkersobj.h  
+ **標頭：** cvmarkersobj.h  
   
- **命名空間：**Concurrency::diagnostic
+ **命名空間：** Concurrency::diagnostic
  
  ## <a name="see-also"></a>請參閱
  [span 類別](../profiling/span-class.md)

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>第 5 步：在 Python 環境中安裝套件
 
@@ -43,7 +43,7 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
 
   ![在環境中完成安裝 matplotlib](media/environments-add-matplotlib2.png)
 
-  環境下的小型進度列表示 Visual Studio 正在為新安裝的套件建置其 IntelliSense 資料庫。 [IntelliSense] 索引標籤也會顯示更詳細的資訊。 請注意，在該資料庫完成之前，自動完成和語法檢查等 IntelliSense 功能不會在編輯器中針對該套件啟動。
+  環境下可能會出現小型進度列表示 Visual Studio 正在為新安裝的套件建置其 IntelliSense 資料庫。 [IntelliSense] 索引標籤也會顯示更詳細的資訊。 請注意，在該資料庫完成之前，自動完成和語法檢查等 IntelliSense 功能不會在編輯器中針對該套件啟動。
 
   請注意，**Visual Studio 2017 15.6 版**及更新版本會使用不同且較快的方法來搭配 IntelliSense 運作，並會在 [IntelliSense] 索引標籤上顯示訊息來指出這點。
 

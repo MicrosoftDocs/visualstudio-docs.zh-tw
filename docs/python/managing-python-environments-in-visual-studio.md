@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 03/21/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,17 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ba3902fde77e297148c2006f89dd61bca1e902b
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
 Python「環境」是您執行 Python 程式碼的內容，其中包含全域、虛擬和 Conda 環境。 環境是由解譯器、程式庫 (通常是 Python 標準程式庫) 及一組已安裝的套件所組成。 這些元件共同決定有效的語言建構和語法、您可存取的作業系統功能，以及您可以使用的套件。
 
-在 Windows 上的 Visual Studio 中，您可以在本文所描述的 [Python 環境](#managing-python-environments-in-visual-studio)視窗中，管理這些環境並選取其中之一作為新專案的預設環境。 對於任何給定的專案，您也可以選取特定的環境，而不使用預設的環境。
+在 Windows 上的 Visual Studio 中，您可以在本文所描述的 [Python 環境視窗](#the-python-environments-window)中，管理這些環境並選取其中之一作為新專案的預設環境。 對於任何給定的專案，您也可以選取特定的環境，而不使用預設的環境。
 
 **注意**：如果您剛接觸 Visual Studio 中的 Python，請參閱下列文章以了解必要的背景：
 
@@ -48,15 +48,35 @@ Python「環境」是您執行 Python 程式碼的內容，其中包含全域、
 
 ### <a name="conda-environments"></a>Conda 環境
 
-Conda 環境是使用 `conda` 工具建立的。 Conda 環境通常儲存在 Anaconda 安裝內的 `envs` 資料夾中，因此作用就類似於全域環境。 例如，將新套件安裝到 Conda 環境，便會使得所有使用該環境的專案都能取得該套件。
+Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 15.7 版及更新版本使用整合式 Conda 管理建立的環境。 (需要 Anaconda 或 Miniconda，Anaconda 可透過 Visual Studio 安裝程式取得，請參閱[安裝 - Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017)。)
 
-Visual Studio 目前還不會自動偵測 Conda 環境，但您可以手動將 Visual Studio 指向它。 請參閱[手動識別現有的環境](#manually-identifying-an-existing-environment)。
+> [!Note]
+> 如要取得 Conda 環境的最佳結果，請使用 Conda 4.4.8 或更新版本 (Conda 版本隨 Anaconda 版本而異)。 從 Visual Studio 2017 安裝程式安裝 Anaconda 5.1
+
+若要查看 Conda 環境儲存所在的 Conda 版本和其他資訊，請在 Anaconda 的命令提示字元中 (亦即 Anaconda 所在路徑的命令提示字元) 執行 `conda info`：
+
+```bash
+conda info
+```
+您的 Conda 環境資料夾隨即出現，如下所示：
+
+```output
+       envs directories : c:\anaconda3\envs
+                          C:\Users\user\AppData\Local\conda\conda\envs
+                          C:\Users\user\.conda\envs
+```
+
+因為 Conda 環境未隨專案儲存，所以它們的表現類似全域環境。 例如，將新套件安裝到 Conda 環境，便會使得所有使用該環境的專案都能取得該套件。
+
+若為 Visual Studio 2017 15.6 版或較舊版本，您可以如[手動識別現有的環境](#manually-identify-an-existing-environment)中所述手動指向它們來使用 Conda 環境。
+
+Visual Studio 2017 15.7 版和更新版本會自動偵測 Conda 環境，並在 [Python 環境] 視窗中顯示它們，如下一節所述。
 
 ## <a name="the-python-environments-window"></a>[Python 環境] 視窗
 
 Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開啟視窗，可以使用下列方法之一：
 
-- 選取 [View (檢視)] > [Other Windows (其他視窗)] > [Python Environments (Python 環境)] 功能表命令。
+- 選取 [檢視] > **[其他視窗]** > **[Python 環境]** 功能表命令。
 - 在 [方案總管] 中專案的 [Python 環境] 節點上按一下滑鼠右鍵，然後選取 [檢視所有 Python 環境]：
 
     ![[方案總管] 中的「檢視所有環境」命令](media/environments-view-all.png)
@@ -65,15 +85,17 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 ![[Python Environments (Python 環境)] 視窗](media/environments-default-view.png)
 
-上列影像顯示 Visual Studio 偵測到兩個版本的 Python 3.6 (32-bit) 安裝，以及 Anaconda 5.0.0。
+以粗體顯示的預設環境是 Python 3.6，Visual Studio 用它處理所有的新專案。 所有列出的環境，無論任何類型，都可以用為預設值。
 
-以粗體顯示的預設環境是 Python 3.6 (在此例中為 Anaconda 安裝的一部分)，Visual Studio 會將它用於所有的新專案。 視窗底部的命令適用於所選取的 Python 3.6 解譯器，如您所見，它們是 `C:\Python36-32` 中的特定安裝。 如果沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identifying-an-existing-environment)。
+視窗下半部的命令適用於所選的解譯器，如您所見，它是 `C:\Python36-32` 中的特定安裝 (粗體的預設環境是 Anaconda 安裝的一部分)。 如果沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
 
-在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 另一個會針對環境重新整理 IntelliSense 資料庫的控制項也可能會顯示 (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab)以取得資料庫的相關詳細資料)。
+在每個列出環境的右側，是可開啟該環境互動式視窗的控制項。 (在 Visual Studio 2017 15.5 版和較舊版本中會出現另一個控制項，重新整理該環境的 IntelliSense 資料庫。 如需資料庫的詳細資料，請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
 
 環境清單下方是 [概觀]、[套件] 和 [IntelliSense] 選項的下拉式選取器，如 [Python 環境視窗參考](python-environments-window-tab-reference.md)中所述。 此外，如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用：
 
 ![[Python Environments (Python 環境)] 視窗展開檢視](media/environments-expanded-view.png)
+
+您可在上圖中看到這部特定電腦上的完整環境清單，以及建立環境的其他命令。
 
 > [!Note]
 > 雖然 Visual Studio 會遵守「系統-站台-套件」選項，但未提供從 Visual Studio 內變更它的方式。
@@ -86,16 +108,18 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 如果沒有環境出現，表示 Visual Studio 無法在標準安裝位置中偵測到任何 Python 安裝。 例如，您可能已安裝 Visual Studio 2017，但清除了 Python 工作負載安裝程式中的所有解譯器選項。 同樣地，您可能已安裝 Visual Studio 2015 或更早版本，但未手動安裝解譯器 (請參閱[安裝 Python 解譯器](installing-python-interpreters.md))。
 
-如果您知道電腦上已安裝 Python 解譯器，但 Visual Studio (任何版本) 沒有偵測到它，請使用 [+ 自訂] 命令來手動指定它的位置。 請參閱下一節[手動識別現有的環境](#manually-identifying-an-existing-environment)。
+如果您知道電腦上已安裝 Python 解譯器，但 Visual Studio (任何版本) 沒有偵測到它，請使用 [+ 自訂] 命令來手動指定它的位置。 請參閱下一節：[手動識別現有的環境](#manually-identify-an-existing-environment)。
 
 > [!Tip]
 > Visual Studio 會偵測對現有解譯器的更新，例如使用 python.org 的安裝程式將 Python 2.7.11 升級至 2.7.14。在安裝過程中，較舊的環境會先從 [Python 環境] 清單消失，然後更新環境才會顯示於該位置。
 >
 > 不過，如果您使用檔案系統以手動方式移動解譯器和其環境時，Visual Studio 不會知道新的位置。 如需詳細資訊，請參閱[移動解譯器](installing-python-interpreters.md#moving-an-interpreter)。
 
-## <a name="manually-identifying-an-existing-environment"></a>手動識別現有的環境
+<a name="manually-identifying-an-existing-environment></a>
 
-您可以使用下列步驟來識別安裝在非標準位置中的環境 (包括 conda 環境)：
+## <a name="manually-identify-an-existing-environment"></a>手動識別現有的環境
+
+您可以使用下列步驟來識別安裝在非標準位置中的環境 (包括 Visual Studio 2017 15.6 版及較舊版本中的 Conda 環境)：
 
 1. 在 [Python 環境] 視窗中，選取 [+ 自訂] 以開啟 [設定] 索引標籤：
 
@@ -114,6 +138,24 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 1. 欄位包含您要的值之後，請選取 [套用] 以儲存設定。 您現在可以使用該環境，如同 Visual Studio 內的其他環境。
 
 1. 如果您需要移除手動識別的環境，請選取 [設定] 索引標籤上的 [移除] 命令。自動偵測環境不會提供這個選項。 如需詳細資訊，請參閱[設定索引標籤](python-environments-window-tab-reference.md#configure-tab)。
+
+## <a name="create-a-conda-environment"></a>建立 Conda 環境
+
+*Visual Studio 2017 15.7 版和更新版本。*
+
+1. 在 [Python 環境] 視窗中選取 [+ 建立 Conda 環境]，這會開啟 [建立新的 Conda 環境] 索引標籤：
+
+    ![為新的 Conda 環境建立索引標籤](media/environments-conda-1.png)
+
+1. 在 [名稱] 欄位中輸入環境的名稱，在 [Python] 欄位中選取基底 Python 解譯器，然後選取 [建立]。
+
+1. [輸出] 視窗會顯示新環境的進度，建立完成後會有一些 CLI 指示：
+
+    ![成功建立 Conda 環境](media/environments-conda-2.png)
+
+1. 在 Visual Studio 中，您可以針對專案啟動 Conda 環境，如同您依[選取專案的環境](selecting-a-python-environment-for-a-project.md)中所述，對任何其他環境所做的一樣。
+
+1. 若要在環境中安裝套件，請使用 [[套件] 索引標籤](python-environments-window-tab-reference.md#packages-tab)。
 
 ## <a name="see-also"></a>另請參閱
 

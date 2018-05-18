@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供通用 Windows App 使用。  
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
   
     -   使用 [檢視診斷工作階段時間軸](#Ruler) 來檢視 [標記程式碼以供分析](#ProfileMark)、應用程式週期事件，以及這些事件的相關聯時間軸與其他圖表資料的時間軸。  
   
-    -   使用 [CPU utilization graph](#CPUutilization) 可檢視在特定時段中，CPU 活動及其處理之工作類型的一般資訊。 過多的 CPU 活動很可能會造成回應性問題及畫面格減少。  
+    -   使用 [CPU utilization graph](#CPUUtilization) 可檢視在特定時段中，CPU 活動及其處理之工作類型的一般資訊。 過多的 CPU 活動很可能會造成回應性問題及畫面格減少。  
   
     -   如果您要開發遊戲或多媒體應用程式，請使用 [檢視視覺輸送量 (FPS)](#VisualThroughput) 以找出畫面播放速率下降的時段。  
   

@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 
@@ -58,7 +58,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
      這個資料夾的路徑可能會像下列所示：
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 2. 變更目錄至以下路徑：
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. 執行下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +100,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 4. 執行以下命令，允許在該電腦上沒有系統管理員存取權的使用者或群組存取程式碼剖析驅動程式功能：
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,7 +114,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 5. (選擇性) 若要在電腦重新啟動後保留前述任一步驟的結果，請執行下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

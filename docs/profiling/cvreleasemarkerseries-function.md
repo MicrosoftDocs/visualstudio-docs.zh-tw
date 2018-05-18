@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d28041defb536c01d4e71d38f7eddb18dc2d709f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73f2b7f930a4e58eb3c14380df16892e92a870f5
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
 釋放標記系列。 不要在釋放之後使用標記系列物件，否則應用程式可能會當機。 釋放標記系列失敗會造成記憶體流失。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```C  
 HRESULT CvReleaseMarkerSeries(  
    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries  
 );  
@@ -39,7 +39,7 @@ HRESULT CvReleaseMarkerSeries(
  成功釋放標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰**cvmarkers.h  
+ **標頭︰** cvmarkers.h  
   
 ## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

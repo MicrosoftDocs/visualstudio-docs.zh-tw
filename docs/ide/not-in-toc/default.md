@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # F1 說明
 
@@ -37,4 +37,4 @@ ms.lasthandoff: 04/26/2018
 
 ## 協助我們改善 F1
 
-請留下意見反應，描述您按下 **F1** 時所尋找的項目來協助我們改善 F1 說明體驗。 例如，您的游標當時停在哪個符號或視窗上？ 請使用下方的 [提供文件意見反應] 按鈕。 感謝您！
+請協助我們改善 F1 說明體驗。 按一下下面的 [Give product feedback] \(提供產品的意見反應\) 按鈕，記錄產品的說明問題。 包含您按下 **F1** 時所尋找的說明，例如游標當時位於哪些符號或視窗。 感謝您！

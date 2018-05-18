@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7889fc8b02bcaa09ca1fb33efbd84e524695c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0551545835a530ae63d53f8988ef89aab6476293
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 方法
 判斷是否有任何工作階段啟用該提供者。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 bool is_enabled();  
 bool is_enabled(  
    marker_importance _Importance,  
@@ -43,9 +43,9 @@ bool is_enabled(
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：**cvmarkersobj.h  
+ **標頭：** cvmarkersobj.h  
   
- **命名空間：**Concurrency::diagnostic  
+ **命名空間：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)

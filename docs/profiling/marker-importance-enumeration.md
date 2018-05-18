@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b193ff33d979917342679e115cdb973cb3b7ad5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列舉
 表示並行視覺化檢視標記的重要性層級。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 enum marker_importance;  
 ```  
   
@@ -41,9 +41,9 @@ enum marker_importance;
 |`normal_importance`|指定標記有一般重要性。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：**cvmarkersobj.h  
+ **標頭：** cvmarkersobj.h  
   
- **命名空間：**Concurrency::diagnostic  
+ **命名空間：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e18456ad4665359e33d7a9b5f064585f8195be
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5a135115dc6d004e8b853822d4fc6024d5aec84
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="attach"></a>附加
 VSPerfCmd.exe **Attach** 選項會開始處理序識別碼 (PID) 所指定之執行中處理序的範例分析。  
@@ -26,7 +26,7 @@ VSPerfCmd.exe **Attach** 選項會開始處理序識別碼 (PID) 所指定之執
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cmd  
 VSPerfCmd.exe /Attach:ProcessID [Options]  
 ```  
   
@@ -69,7 +69,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="example"></a>範例  
  此範例示範如何附加至處理序識別碼為 12345 的執行中應用程式執行個體。  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Attach:12345  
 ```  
