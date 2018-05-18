@@ -1,15 +1,15 @@
 ---
-title: 逐步解說 - 在專案中包含 NuGet 套件
+title: 在專案中包含 NuGet 套件
 description: 本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -26,8 +26,6 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 首先，建立名為 `HelloNuget` 的專案，如下所示。 此範例顯示「iOS 單一檢視應用程式」範本，但會使用任何支援的專案類型：
 
 ![建立新 iOS 專案](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>新增套件
 
@@ -50,9 +48,9 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 套件在下載之後就會新增至您的專案。 會如下變更方案：
 
-*   [參考] 節點將包含屬於 NuGet 套件一部分的所有組件清單。
-*   [套件] 節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
-*   **packages.config** 檔案將會新增至專案。 IDE 使用此 XML 檔案來追蹤這個專案中所參考的套件版本。 這個檔案不應該手動進行編輯，但您應該將它保留在版本控制中。 請注意，可以使用 project.json 檔案，而不要使用 packages.config 檔案。 project.json 檔案是支援可轉移還原之 NuGet 3 引進的新套件檔案格式。 如需 project.json 的詳細資訊，請參閱 [NuGet 文件](http://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手動新增 project.json 檔案，以及先關閉並重新開啟專案，再將 project.json 檔案用於 Visual Studio for Mac 中。
+* [參考] 節點將包含屬於 NuGet 套件一部分的所有組件清單。
+* [套件] 節點會顯示您已下載的每個 NuGet 套件。 您可以更新或移除此清單中的套件。
+* **packages.config** 檔案將會新增至專案。 IDE 使用此 XML 檔案來追蹤這個專案中所參考的套件版本。 這個檔案不應該手動進行編輯，但您應該將它保留在版本控制中。 請注意，可以使用 project.json 檔案，而不要使用 packages.config 檔案。 project.json 檔案是支援可轉移還原之 NuGet 3 引進的新套件檔案格式。 如需 project.json 的詳細資訊，請參閱 [NuGet 文件](http://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手動新增 project.json 檔案，以及先關閉並重新開啟專案，再將 project.json 檔案用於 Visual Studio for Mac 中。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 套件
 
@@ -60,8 +58,9 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 確定您將任何必要 `using` 指示詞新增至檔案頂端：
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 大部分 NuGet 都會提供其他資訊，例如 Nuget 來源的 README 或專案頁面連結。 您通常可以在 [新增套件] 頁面的套件簡介上找到此項目的連結：
 

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2904e329e26fe588553745f3a9d6ca8a572b5c83
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>教學課程步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -100,7 +100,7 @@ class HelloDjangoAppConfig(AppConfig):
 
     每個 URL 模式都會描述 Django 路由特定網站相對 URL (也就是 "https://www.domain.com/" 後面的部分) 的檢視。 `urlPatterns` 中以規則運算式 `^$` 為開頭的第一個項目，就是網站根目錄的路由 ("/")。 第二個項目 `^home$`會特別路由 "/home"。 您可以有針對相同檢視的任意數目路由。
 
-1. 再次執行專案，您將會看見由檢視所定義的訊息 "Hello, Django!" 。 當您完成時，請停止伺服器。
+1. 再次執行專案，以查看訊息 "Hello, Django!" 是否如檢視所定義。 當您完成時，請停止伺服器。
 
 ### <a name="commit-to-source-control"></a>認可至原始檔控制
 
@@ -145,7 +145,7 @@ def index(request):
     return HttpResponse(html_content)
 ```
 
-再次執行專案，您將會看見如 "**Hello, Django!** on Monday, 16 April, 2018 at 16:28:10" 的訊息。 重新整理網頁以更新時間，並確認內容會隨每個要求產生。 當您完成時，請停止伺服器。
+再次執行專案，以查看訊息，例如 "**Hello, Django!** on Monday, 16 April, 2018 at 16:28:10"。 重新整理網頁以更新時間，並確認內容會隨每個要求產生。 當您完成時，請停止伺服器。
 
 > [!Tip]
 > 停止和重新啟動專案的捷徑，是使用 [偵錯] > [重新啟動] 功能表命令 (Ctrl+Shift+F5)，或是偵錯工具列上的重新啟動按鈕：
@@ -278,4 +278,4 @@ Django 頁面範本是 HTML 區塊，可包含任意數目的取代權杖 (稱�
 - [撰寫第一個 Django 應用程式，第 1 部分 - 檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) \(英文\) (docs.djangoproject.com)
 - 如需其他 Django 範本功能 (例如包含和繼承)，請參閱 [Django 範本語言](https://docs.djangoproject.com/en/2.0/ref/templates/language/) \(英文\) (docs.djangoproject.com)
 - [inLearning 上的規則運算式訓練](https://www.linkedin.com/learning/topics/regular-expressions) \(英文\) (LinkedIn)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

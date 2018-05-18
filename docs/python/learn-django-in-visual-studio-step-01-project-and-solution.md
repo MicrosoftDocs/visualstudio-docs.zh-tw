@@ -1,7 +1,7 @@
 ---
 title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 1
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，示範 Visual Studio 為 Django 開發所提供的支援。
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程步驟 1：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-- 已安裝 Python 工作負載的 Visual Studio 2017。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+- Visual Studio 2017，具有下列選項：
+  - **Python 開發** 工作負載 (安裝程式的 [工作負載] 索引標籤)。 如需相關指示，請參閱[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)。
+  - [程式碼工具] 下 [個別元件] 索引標籤上的 [Git for Windows] 和 [Visual Studio 的 GitHub 擴充]。
 
 Django 專案範本也包含於所有舊版的適用於 Visual Studio 的 Python 工具，不過其詳細資料可能會和本教學課程所討論的內容不同 (和舊版的 Django 架構之間會有特別多的不同之處)。
 
@@ -89,7 +91,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
     ![[Team Explorer] 視窗顯示可用於原始檔控制的 Git 存放庫選項](media/django/step01-team-explorer.png)
 
-    您可以選擇任何要用於自己專案的服務。 本教學課程示範如何使用 GitHub，用於教學課程的完整範例程式碼維護於 [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) \(英文\) 存放庫中。
+    您可以選擇任何要用於自己專案的服務。 本教學課程示範如何使用 GitHub，用於教學課程的完整範例程式碼維護於 [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) 存放庫中。
 
 1. 選取任何 [發佈] 控制項時，[Team Explorer] 會提示您輸入更多資訊。 例如，發佈此教學課程的範例時，必須先建立存放庫本身，而在 這種情況下，[推送至遠端存放庫] 選項會和存放庫的 URL 搭配使用。
 
@@ -206,4 +208,4 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 - Django 專案程式碼：[撰寫第一個 Django 應用程式，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) \(英文\) (docs.djangoproject.com)
 - 系統管理公用程式：[django-admin 與 manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) \(英文\) (docs.djangoproject.com)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

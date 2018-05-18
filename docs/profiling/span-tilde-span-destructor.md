@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 489490033530befa31f8109d8dfa717e8236cc8e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0e7c2d2985946ddd27c5786c22a724c9b2c4eaa
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="spanspan-destructor"></a>span::~span 解構函式
 終結 `span` 物件，並釋放其資源。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 ~span();  
 ```  
   
 ## <a name="requirements"></a>需求  
- **標頭：**cvmarkersobj.h  
+ **標頭：** cvmarkersobj.h  
   
- **命名空間：**Concurrency::diagnostic
+ **命名空間：** Concurrency::diagnostic
  
  ## <a name="see-also"></a>請參閱
  [span 類別](../profiling/span-class.md)

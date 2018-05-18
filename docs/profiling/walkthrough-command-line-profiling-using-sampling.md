@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
 
@@ -54,13 +54,13 @@ ms.lasthandoff: 04/19/2018
 
 4. 輸入下列命令，以設定適當的環境變數：
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. 執行 VSPerfCmd.exe 這個控制分析工具的命令列工具，以開始剖析。 下列命令會以取樣模式啟動應用程式和分析工具：
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ ms.lasthandoff: 04/19/2018
 
 9. 關閉分析工具。 輸入下列命令：
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. 使用下列命令，以重設環境變數：
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/19/2018
 
     - 使用 VSPerfReport.exe 命令列工具產生逗號分隔值 (.csv) 檔案。 若要產生報表以供在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 外部使用，請使用下列命令：
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

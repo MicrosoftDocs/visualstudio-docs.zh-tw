@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc78c49aae49704e2dd56abfee7b0e43b285845d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 075a81dc81bb202be913f5a06e8213a8a68a010f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerseries-class"></a>marker_series 類別
 表示由單一提供者產生之事件的序列通道。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp  
 class marker_series;  
 ```  
   
@@ -51,9 +51,9 @@ class marker_series;
  `marker_series`  
   
 ## <a name="requirements"></a>需求  
- **標頭：**cvmarkersobj.h  
+ **標頭：** cvmarkersobj.h  
   
- **命名空間：**Concurrency::diagnostic  
+ **命名空間：** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)

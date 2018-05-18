@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 498eef4bac0a3f12735eccea2a15a5f4ab5975eb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a0116d16d98ed6a465b75527981f6a831da2b5d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料
 本主題描述如何透過「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」命令列工具，使用檢測分析方法來收集動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的詳細 .NET 記憶體配置和物件存留期資料。  
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/19/2018
   
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>設定 ASP.NET Web 應用程式和 Web 伺服器  
   
-1.  修改目標應用程式的 web.config 檔案。 請參閱[如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式](../profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)。  
+1.  修改目標應用程式的 web.config 檔案。 請參閱[如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)。  
   
 2.  在裝載 Web 應用程式的電腦上開啟命令提示字元視窗。  
   

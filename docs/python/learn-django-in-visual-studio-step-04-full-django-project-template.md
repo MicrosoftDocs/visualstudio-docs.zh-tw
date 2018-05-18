@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d48c8f86d29c990d254b2ed1d0adf471c24d6b8
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>教學課程步驟 4：使用完整的 Django Web 專案範本
 
@@ -217,4 +217,4 @@ urlpatterns = [
 ## <a name="going-deeper"></a>繼續探討
 
 - [撰寫您的第一個 Django 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/26/2018
 
     ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)
 
-1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 和更早版本
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/26/2018
     - Visual Studio 2012：[適用於 Visual Studio 2012 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010：[適用於 Visual Studio 2010 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+1. [安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="install-locations"></a>安裝位置
 

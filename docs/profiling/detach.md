@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ef2e9e8cfcfd6c825723254f0d5a0891d2e1f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 33255899cbd3ac1fb539d29de5d8b6875a7ea8d6
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="detach"></a>中斷連結
 VSPerfCmd.exe **Detach** 選項會中斷分析工具與指定處理序的連線，如果沒有指定任何處理序則會中斷與所有處理序的連線。 必須已使用取樣方法初始化分析。  
@@ -28,7 +28,7 @@ VSPerfCmd.exe **Detach** 選項會中斷分析工具與指定處理序的連線�
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cmd  
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]  
 ```  
   
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ## <a name="example"></a>範例  
  在此範例中，**Detach** 命令會暫停分析，而 **Shutdown** 命令會關閉分析工具資料檔案。  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ;REM Excercise the application  

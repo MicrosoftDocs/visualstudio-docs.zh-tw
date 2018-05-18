@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教學課程步驟 3：提供靜態檔案、加入頁面，以及使用範本繼承
 
@@ -283,4 +283,4 @@ Django 的範本化系統提供兩個方法，可跨多個範本重複使用特�
 - [撰寫您的第一個 Django 應用程式，第 3 部分 (檢視)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) \(英文\) (docs.djangoproject.com)
 - 如需了解更多 Django 範本的功能，例如控制流程，請參閱 [Django 範本語言](https://docs.djangoproject.com/en/2.0/ref/templates/language/) \(英文\) (docs.djangoproject.com)
 - 如需使用 `{% url %}` 標籤的完整詳細資料，請參閱 [Django 範本的內建範本標籤和篩選參考](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) \(英文\) (docs.djangoproject.com) 中的 [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) \(英文\)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

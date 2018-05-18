@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 
@@ -54,20 +54,20 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 2. 初始化 .NET 程式碼剖析和 TIP 環境變數。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. 啟動分析工具。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. 使用 VSPerfCmd 啟動應用程式。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 6. 清除 TIP 環境變數。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 3. 初始化 .NET 程式碼剖析環境變數。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. 初始化 TIP 環境變數。 輸入下列命令
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 7. 啟動分析工具。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 9. 將程式碼剖析工具附加至服務。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 12. 初始化 .NET 和 TIP 程式碼剖析環境變數。 輸入下列命令：
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ VSPerfASPNETCmd 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../c
 
 若要使用 VSPerfASPNETCmd 將階層互動加入收集的分析資料，請將 **/TIP** 選項加入命令列。 例如，透過檢測方法使用下列命令列收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的階層互動資料：
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

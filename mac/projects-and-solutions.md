@@ -2,13 +2,14 @@
 title: 專案和方案
 description: 本文件概述 Visual Studio for Mac 中的專案和方案。
 author: asb3993
-ms.author: amburns05/06/201804/14/2017
+ms.author: amburns
+ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 4a9ad4794b75590287df63ba11ba64316531db27
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: edc9b341a64d22876f52906f2ee92c33a22d420c
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="projects-and-solutions"></a>專案和方案
 

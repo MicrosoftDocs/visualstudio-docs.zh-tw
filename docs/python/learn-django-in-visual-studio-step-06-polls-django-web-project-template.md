@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>教學課程步驟 6：使用「投票 Django Web 專案」範本
 
@@ -361,7 +361,7 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>後續步驟
 
 > [!Note]
-> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)。
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)。
 
 您現在已探索完 Visual Studio 中的「空白 Django Web 專案」、「Django Web 專案」和「投票 Django Web 專案」 範本的全部內容。 您學會了 Django 的所有基礎知識，例如檢視和範本，也探索了路由、驗證及資料庫模型的應用。 您現在應該能夠利用所有必備的檢視和模型，建立您自己的 Web 應用程式。
 

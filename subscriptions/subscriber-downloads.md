@@ -9,11 +9,11 @@ description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。  
@@ -24,7 +24,7 @@ ms.lasthandoff: 04/06/2018
 
 訂閱者無法使用特定產品的原因如下：
 
-- **您的訂用帳戶層級或方案中不包含該產品。** [深入了解](https://www.visualstudio.com/vs/pricing/)您的訂用帳戶可取得的軟體與權益，或是[下載](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_)各訂用帳戶層級可取得的完整產品清單。 某些程式，例如 [Microsoft 合作夥伴網路](https://partner.microsoft.com/)，會向 Visual Studio 訂用帳戶提供部分權益。  這些訂用帳戶不包含購買 Visual Studio 訂用帳戶時隨附的所有產品。 這些方案的訂閱者應該將有關產品是否可供下載的疑問轉給該方案的支援小組。
+- **您的訂用帳戶層級或方案中不包含該產品。** [深入了解](https://www.visualstudio.com/vs/pricing/)您的訂用帳戶可取得的軟體與權益，或是[下載](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)各訂用帳戶層級可取得的完整產品清單。 某些程式，例如 [Microsoft 合作夥伴網路](https://partner.microsoft.com/)，會向 Visual Studio 訂用帳戶提供部分權益。  這些訂用帳戶不包含購買 Visual Studio 訂用帳戶時隨附的所有產品。 這些方案的訂閱者應該將有關產品是否可供下載的疑問轉給該方案的支援小組。
 - **產品不包含在訂用帳戶中。** 因為特殊的授權條款、技術限制或開發工具相關問題，所以某些 Microsoft 產品不包括在訂用帳戶中。 如果您想要建議將某項產品加入訂用帳戶中，請傳送電子郵件至 Visual Studio [客戶服務中心](https://www.visualstudio.com/subscriptions/support/)。
 - **此產品可公開取得。** 某些工具、SDK、DDK 與 Service Pack 則可從 [Microsoft 下載中心](https://www.microsoft.com/download)公開取得。 這類產品可能就不會發佈至下載。
 - **產品尚未發行。**  許多發行前 (搶鮮版 (Beta)) 版本與候選版可從下載取得。 然而，並不是所有搶鮮版 (Beta) 皆會包含其中，例如某些搶鮮版 (Beta) 需要特殊的註冊或資格。 如需公開技術搶鮮版 (Beta) 計畫的詳細資訊，請瀏覽 [Microsoft Connect](http://connect.microsoft.com/)。
