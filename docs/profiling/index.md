@@ -7,11 +7,11 @@ ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: f574f5e1e87f8fb35a9e8333f7290a8406ede1d7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="profiling-in-visual-studio"></a>Visual Studio 中的分析
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+                            <img src="/media/common/i_road-map.svg" alt="Feature Tour of the Profiler">
                         </div>
                     </div>
                     <div class="cardText">
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-performance.svg" alt="">
+                            <img src="/media/common/i_code-performance.svg" alt="Get Started with the Diagnostics Tools (CPU Usage)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
+                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
                         </div>
                     </div>
                     <div class="cardText">
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-performance.svg" alt="">
+                            <img src="/media/common/i_code-performance.svg" alt="Get Started analyzing Memory Usage">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,7 +97,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="Analyze Resource Consumption (XAML)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -115,7 +115,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="Analyze Network Usage (UWP Apps)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -133,7 +133,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="Analyze GPU Usage (Direct3D)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -151,7 +151,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="Analyze Energy Use (UWP Apps)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -169,7 +169,7 @@ ms.lasthandoff: 04/19/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="">
+                            <img src="/media/common/i_whats-new.svg" alt="See What&#39;s New in Profiling Tools">
                         </div>
                     </div>
                     <div class="cardText">

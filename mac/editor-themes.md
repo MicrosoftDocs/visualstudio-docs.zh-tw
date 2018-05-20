@@ -1,14 +1,15 @@
 ---
 title: 編輯器佈景主題
+description: 本文描述如何編輯編輯器的佈景主題，或新增您自己的 Visual Studio for Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 779eb33db0bca527c37d346b05f0cb3fa038f16b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 88af989cce4a57fcd5f7a8a13173e8aad80d987b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editor-themes"></a>編輯器佈景主題
 編輯器佈景主題可以透過 [Visual Studio] > [喜好設定] > [文字編輯器] > [色彩佈景主題] 功能表選項，變更為 Visual Studio for Mac 中預設提供之 10 種色彩配置的任何一種：

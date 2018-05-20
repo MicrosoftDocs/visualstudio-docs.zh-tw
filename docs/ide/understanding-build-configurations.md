@@ -27,15 +27,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf3523a017b30a837e0d6cf8805d399a424a9c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
-您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，依序選擇 [建置]、[組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。
+您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，選擇 [建置] > [組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。
 
 > [!NOTE]
 > 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱[如何：在套用 Visual Basic 開發者設定的情況下管理組態](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
@@ -88,6 +88,6 @@ ms.lasthandoff: 04/26/2018
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
-- [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)
-- [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)
+- [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+- [C/C++ 組建參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)

@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/26/2018
      更新將會繼續。 當它完成後，Visual Studio 會重新啟動。
 
      > [!NOTE]
-     > 如果您以系統管理員模式執行 Visual Studio，就必須在更新之後手動重新啟動 Visual Studio。    
+     > 當您以系統管理員模式執行 Visual Studio 時，就必須在更新之後手動重新啟動 Visual Studio。
 
 ### <a name="use-the-ide"></a>使用 IDE
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/26/2018
    更新會以如上一節所述的方式執行，然後 Visual Studio 會在完成後重新啟動。
 
    > [!NOTE]
-   > 如果您以系統管理員模式執行 Visual Studio，就必須在更新之後手動重新啟動 Visual Studio。  
+   > 當您以系統管理員模式執行 Visual Studio 時，就必須在更新之後手動重新啟動 Visual Studio。
 
 ### <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安裝程式
 

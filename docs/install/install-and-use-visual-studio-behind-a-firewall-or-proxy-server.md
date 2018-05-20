@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -117,7 +117,7 @@ ms.lasthandoff: 04/20/2018
 | 快照 <br>偵錯工具 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (相依於 Visual Studio 版本) | 1.針對 App Service SKU 大小的查詢 .json 檔案 <br>2.各種 Azure RM 呼叫 <br>3.網站熱身呼叫，透過  <br>4.客戶的目標 App Service Kudu 端點 <br>5.於 nuget.org 中發行的查詢網站延伸模組版本 <br>6.遠端偵錯通道 |
 |Azure 串流分析 <br><br>HDInsight | Management.azure.com |https|443 |用來檢視、提交、執行及管理 ASA 作業 <br><br> 用來瀏覽 HDI 叢集，以及對 HDI 作業進行提交、診斷及偵錯 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用來對作業進行編譯、提交、檢視、診斷及偵錯；用來瀏覽 ADLS 檔案；用來上傳及下載檔案 |
-|封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有在特定建置工作案例 (例如 NuGet 工具安裝程式、Node 工具安裝程式)，或您想要和「摘要」一起使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。  封裝服務的核心功能需要使用其他三個網域。 |
+|封裝服務 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有對特定建置工作案例 (例如：NuGet 工具安裝程式、Node 工具安裝程式)，或在您想要讓摘要使用公用上游時，才需要 *.npmjs.org、*.nuget.org 及 *.nodejs.org。 封裝服務的核心功能則需要使用其他三個網域。 |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>對網路相關錯誤進行疑難排解

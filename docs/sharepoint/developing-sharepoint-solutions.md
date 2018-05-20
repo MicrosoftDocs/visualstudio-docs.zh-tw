@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  將功能加入 SharePoint 專案時，它會顯示為 [方案總管]  中的節點，並使用預設節點名稱：Feature*x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。  
   
 #### <a name="package-node"></a>套件節點  
- [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案，稱為*方案 * * 封裝*，是。封包為主，少。WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 **封裝**節點一定會包含名為 Package.wspdef，檔案[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]封裝定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
+ [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 這個檔案，稱為*方案套件*，是。封包為主，少。WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 **封裝**節點一定會包含名為 Package.wspdef，檔案[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]封裝定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
   
  您可以檢視或變更套件的內容，在封裝設計工具中，按兩下 [套件] 節點或開啟其捷徑功能表，然後選擇**開啟**。 如需詳細資訊，請參閱[建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)。  
   

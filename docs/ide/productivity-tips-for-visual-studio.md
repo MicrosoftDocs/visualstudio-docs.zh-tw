@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
      若要插入程式碼片段，請在功能表列上選擇 [編輯] > [IntelliSense] > [插入程式碼片段] 或 [範圍陳述式]，或是開啟檔案中的捷徑功能表，然後選擇 [程式碼片段] > [插入程式碼片段] 或 [範圍陳述式]。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。
 
-- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 您可以使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Alt**+**Enter** 或 **Ctrl**+**.** 來套用這些動作。 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
+- **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 快速動作的套用方式包括使用螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 或燈泡 ![燈泡圖示](media/light-bulb-icon.png) 圖示，以及按 **Alt**+**Enter** 或 **Ctrl**+**.** 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。
 
 - **顯示和編輯程式碼項目的定義**。 您可以快速顯示和編輯定義程式碼項目 (例如成員、變數或區域) 的模組。
 

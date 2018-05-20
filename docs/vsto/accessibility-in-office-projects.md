@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 786926ff7608a487ea9fcd732e1457bb382a4bab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34a1ea090e85168b5fd0bf2e55c22d0a38ff331f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
   Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置自訂的解決方案符合標準的協助工具需求。 Microsoft 會發行在網站上的協助工具的指導方針。 如需詳細資訊，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。  
@@ -33,13 +33,13 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="accessibility-at-design-time"></a>在設計階段的協助工具  
 
-### <a name="using-shortcut-keys-in-document-level-projects"></a>在文件層級專案中使用的快速鍵  
- 開啟 Visual Studio 中的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會收到所有捷徑命令，但您可以進行 Word 或 Excel 文件選取具有焦點時，接收這些**動態鍵盤配置**上**鍵盤設定**頁面**選項** 對話方塊。 如需詳細資訊，請參閱[Microsoft Office Word 鍵盤，Microsoft Office 鍵盤設定、 [選項] 對話方塊](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)和[Microsoft Office Excel 鍵盤，Microsoft Office 鍵盤設定、 選項對話方塊](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
+### <a name="use-shortcut-keys-in-document-level-projects"></a>在文件層級專案中使用的快速鍵  
+ 開啟 Visual Studio 中的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會收到所有捷徑命令，但您可以進行 Word 或 Excel 文件選取具有焦點時，接收這些**動態鍵盤配置**上**鍵盤設定**頁面**選項** 對話方塊。 如需詳細資訊，請參閱[Microsoft Office Word 鍵盤、 Microsoft Office 鍵盤設定、 選項對話方塊](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)和[Microsoft Office Excel 鍵盤、 Microsoft Office 鍵盤設定、 選項對話方塊](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
 
-### <a name="displaying-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>在文件層級專案中功能區顯示快速鍵  
- Visual Studio 中開啟 Word 文件或 Excel 活頁簿時，您無法按下 Alt 鍵，若要檢視的索引標籤及功能區上的控制項的快速鍵。 若要檢視的鍵盤快速鍵，文件或活頁簿設計工具中開啟時，執行下列步驟。  
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>在文件層級專案中功能區顯示快速鍵  
+ 在 Visual Studio 中開啟 Word 文件或 Excel 活頁簿時，您不能按**Alt**鍵可檢視的索引標籤及功能區上的控制項的快速鍵。 若要檢視的鍵盤快速鍵，文件或活頁簿設計工具中開啟時，執行下列步驟。  
 
-##### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要檢視設計工具中的功能區索引標籤和控制項的快速鍵  
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要檢視設計工具中的功能區索引標籤和控制項的快速鍵  
 
 1.  在 Visual Studio 中，在**工具**功能表上，按一下 **選項**。  
 
@@ -55,14 +55,14 @@ ms.lasthandoff: 04/26/2018
 
 6.  開啟您專案的文件或活頁簿設計工具。  
 
-7.  按 F6 功能區顯示的快速鍵。  
+7.  按**F6**功能區顯示的快速鍵。  
 
-## <a name="accessibility-at-run-time"></a>在執行階段的協助工具  
+## <a name="accessibility-at-runtime"></a>在執行階段的協助工具  
 
-### <a name="windows-forms-controls-on-office-documents"></a>Windows Form Office 文件上的控制項  
+### <a name="windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項  
  Windows Form 控制項中公開協助工具屬性，以提供給協助工具輔助，例如螢幕助讀程式控制項的相關資訊。 您可以利用這些協助工具屬性的文件層級自訂中的 Office 文件上的控制項時。 如需詳細資訊，請參閱[提供 Windows Form 上控制項的協助工具資訊](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)。  
 
- 不過，在執行階段時的 Excel 活頁簿或 Word 文件裝載 Windows Form 控制項有一些協助工具的限制：  
+ 不過，有一些存取範圍限制在執行階段的 Excel 活頁簿或 Word 文件上裝載 Windows Form 控制項時：  
 
 -   您無法以另一個索引標籤從一個控制項。  
 

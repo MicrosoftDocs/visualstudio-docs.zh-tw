@@ -1,14 +1,15 @@
 ---
 title: Visual Studio for Mac 工作負載
+description: 本文介紹可在 Visual Studio for Mac 中使用的各種工作負載
 author: asb3993
 ms.author: amburns
-ms.date: 08/03/2017
+ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: a3132e5719c2b916648456889508095f81e0c165
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2d5fa2a153b91799417430823cc3b3199daec4b6
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
 

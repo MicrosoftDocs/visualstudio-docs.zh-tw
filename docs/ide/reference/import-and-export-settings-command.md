@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a95841d9b9b8e67f34883efcc1a55a2daba7e8b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
 匯入、匯出或重設 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 設定。
 
 ## <a name="syntax"></a>語法
 
-```
+```cmd
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
@@ -51,7 +51,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 下列命令會將目前的設定匯出至檔案 `MyFile.vssettings`。
 
-```shell
+```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 

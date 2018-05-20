@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 
@@ -38,7 +38,7 @@ Visual Basic 原始程式碼編輯器提供下列 IntelliSense 功能：
 
 完成預設可以關閉，只要在 [Visual Basic] 資料夾取消選取 [一般] 屬性頁的 [自動列出成員] 即可。
 
-您可以叫用 [列出成員]、[自動完成文字] 或 ALT + 向右鍵，手動叫用完成。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
+您可以叫用 [列出成員]、[自動完成文字] 或 **Alt**+**向右鍵**，手動叫用完成。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
 ## <a name="intellisense-in-zone"></a>IntelliSense in Zone
 

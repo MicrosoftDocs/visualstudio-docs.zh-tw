@@ -2,7 +2,7 @@
 title: 安裝 Visual Studio 2017 | Microsoft Docs
 description: 了解如何逐步安裝 Visual Studio。
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -119,7 +119,15 @@ ms.lasthandoff: 04/20/2018
 
 另一個變更預設語言的方法，便是從命令列執行安裝程式。 例如，您可以使用下列命令來強制安裝程式以英文執行：`vs_installer.exe --locale en-US`。 下次執行安裝程式時，它會記住這項設定。 安裝程式支援下列語言權杖：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
 
-## <a name="step-7---start-developing"></a>步驟 7 - 開始進行開發
+## <a name="step-7---change-the-installation-location-optional"></a>步驟 7 - 變更安裝位置 (選擇性)
+
+**15.7 的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
+
+  ![Visual Studio 2017 - 變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
+
+如需詳細資訊，請參閱[變更 Visual Studio 中的安裝位置](change-installation-locations.md)頁面。
+
+## <a name="step-8---start-developing"></a>步驟 8 - 開始開發
 
 1. 當 Visual Studio 安裝完成之後，請按一下 [啟動] 按鈕來[開始使用 Visual Studio 進行開發](../ide/get-started-developing-with-visual-studio.md)。
 

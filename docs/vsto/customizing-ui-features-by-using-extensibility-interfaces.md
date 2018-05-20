@@ -1,5 +1,5 @@
 ---
-title: 使用擴充性介面自訂 UI 功能 |Microsoft 文件
+title: 使用擴充性介面自訂 UI 功能
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,13 +23,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59a2eb15dcb21158df33b2f4a8ae138c424795cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d9fd69cb747c235f78be8065d07f03f5b39d66b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -41,21 +41,21 @@ ms.lasthandoff: 04/16/2018
   
  如需類別和設計工具的 Visual Studio 提供這些功能的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)，[功能區設計工具](../vsto/ribbon-designer.md)，和[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md).  
   
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>您可以在 VSTO 增益集中實作的擴充性介面  
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>您可以在 VSTO 增益集中實作擴充性介面  
  下表列出您可以實作的擴充性介面，以及支援這些介面的應用程式。  
   
 |介面|描述|應用程式|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意：**可以加入**功能區 (XML)**項目加入專案，以產生預設<xref:Microsoft.Office.Core.IRibbonExtensibility>您 VSTO 增益集中實作。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> Visio<br /><br /> 字組|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意：** 可以加入**功能區 (XML)** 項目加入專案，以產生預設<xref:Microsoft.Office.Core.IRibbonExtensibility>您 VSTO 增益集中實作。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> Visio<br /><br /> 字組|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|實作這個介面可建立自訂工作窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 字組|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|實作這個介面可建立 Outlook 表單區域。|Outlook|  
   
  Microsoft Office 還定義其他幾個擴充性介面，例如 <xref:Microsoft.Office.Core.IBlogExtensibility>、 <xref:Microsoft.Office.Core.EncryptionProvider>和 <xref:Microsoft.Office.Core.SignatureProvider>。 Visual Studio 不支援在使用 Office 專案範本建立的 VSTO 增益集中實作這些介面。  
   
-## <a name="using-extensibility-interfaces"></a>使用擴充性介面  
+## <a name="use-extensibility-interfaces"></a>使用擴充性介面  
  若要使用擴充性介面自訂 UI 功能，請在您的 VSTO 增益集專案中實作適當的介面。 然後，覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以傳回實作介面的類別執行個體。  
   
- 如需示範如何在 Outlook VSTO 增益集中實作 <xref:Microsoft.Office.Core.IRibbonExtensibility>、 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>及 <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> 介面的範例應用程式，請參閱 [Office Development Samples](../vsto/office-development-samples.md)。  
+ 範例應用程式，示範如何實作<xref:Microsoft.Office.Core.IRibbonExtensibility>， <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，和<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>介面中的 VSTO 增益集對於 Outlook，請參閱中的 UI 管理員範例[Office 程式開發範例](../vsto/office-development-samples.md)。  
   
 ### <a name="example-of-implementing-an-extensibility-interface"></a>實作擴充性介面的範例  
  下列程式碼範例示範 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 介面的簡單實作，以建立自訂工作窗格。 這個範例會定義兩個類別：  
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- 如需實作 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>的詳細資訊，請參閱 Microsoft Office 文件中的 [在 2007 Office System 中建立自訂工作窗格](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) 。  
+ 如需有關實作<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，請參閱[2007 Office system 中建立自訂工作窗格](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be)Microsoft Office 文件中。  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>覆寫 RequestService 方法的範例  
  下列程式碼範例示範如何覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法，以從先前的程式碼範例傳回 `TaskPaneHelper` 類別的執行個體。 它會檢查 *serviceGuid* 參數的值以判斷所要求的介面，然後傳回實作該介面的物件。  
@@ -80,9 +80,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [撰寫 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [在 VSTO 增益集中呼叫程式碼，從其他 Office 方案](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)  
   

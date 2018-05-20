@@ -1,5 +1,5 @@
 ---
-title: 使用 ClickOnce 部署 Office 解決方案 |Microsoft 文件
+title: 使用 ClickOnce 部署 Office 方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29c0e6691f31c6092b9d2222064c59d7fb8839db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
-  使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，如果同一部電腦上有多位使用者將執行您的方案，您應該考慮使用 Windows Installer (.msi)。  
+# <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
+  使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果多個使用者會在相同電腦上執行您的方案。  
   
 ## <a name="in-this-topic"></a>本主題內容  
   
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [將方案復原為舊版](#Roll)  
   
- 如需如何建立 Windows Installer 檔案來部署 Office 方案的詳細資訊，請參閱[部署 Office 方案使用 Windows installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ 如需如何建立 Windows Installer 檔案來部署 Office 方案的詳細資訊，請參閱[使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
   
 ##  <a name="Publish"></a> 發行方案  
  您可以使用，以發行您的方案**發行精靈**或**專案設計工具**。 在此程序，您將使用**專案設計工具**因為它提供一組完整的發行選項。 請參閱[發行精靈&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
      ![在專案設計工具的 [發行] 索引標籤](../vsto/media/vsto-publishtab.png "專案設計工具的 [發行] 索引標籤")  
   
-4.  在**發行資料夾位置 （ftp 伺服器或檔案路徑）**方塊中，輸入您要的資料夾路徑**專案設計工具**来複製的方案檔。  
+4.  在**發行資料夾位置 （ftp 伺服器或檔案路徑）** 方塊中，輸入您要的資料夾路徑**專案設計工具**来複製的方案檔。  
   
      您可以輸入下列任何類型的路徑。  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/16/2018
 9. 如果您的方案會以.NET Framework 4.5 為目標，也可以選取**Visual Studio 2010 Tools for Office Runtime**核取方塊。  
   
     > [!NOTE]  
-    >  根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 中建立的 Office 2013 VSTO 增益集啟動載入器套件](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)。  
+    >  根據預設，不會出現此核取方塊。 若要顯示這個核取方塊，您必須建立啟動載入器套件。 請參閱[使用 Visual Studio 2012 建立的 Office 2013 VSTO 增益集啟動載入器套件](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)。  
   
 10. 在下**指定必要條件的安裝位置**，選擇其中一個選項，會出現，然後選擇 [**確定**] 按鈕。  
   
@@ -131,12 +131,12 @@ ms.lasthandoff: 04/16/2018
      ![發行資料夾結構](../vsto/media/publishfolderstructure.png "發行資料夾結構")  
   
     > [!NOTE]  
-    >  ClickOnce 會將.deploy 副檔名附加至組件中，如此受保護的網際網路資訊服務 (IIS) 安裝就不會因為不安全的副檔名而封鎖檔案。 當使用者安裝方案時，ClickOnce 會移除 .deploy 副檔名。  
+    >  ClickOnce 會將附加 *.deploy*延伸模組組件，讓受保護的網際網路資訊服務 (IIS) 安裝就不會因為不安全的副檔名而封鎖檔案。 當使用者安裝方案時，ClickOnce 會移除 *.deploy*延伸模組。  
   
 14. 將方案檔複製到您在本程序前段指定的安裝位置。  
   
 ##  <a name="Trust"></a> 決定您要授與信任給方案的方式  
- 在使用者電腦上執行方案之前，您必須先授與信任，或是使用者必須在安裝方案時回應信任提示。 若要對方案授與信任，請使用確認為知名且受信任之發行者的憑證來簽署資訊清單。 請參閱[信任方案透過簽署應用程式和部署資訊清單](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+ 在使用者電腦上執行方案之前，您必須先授與信任，或是使用者必須在安裝方案時回應信任提示。 若要對方案授與信任，請使用確認為知名且受信任之發行者的憑證來簽署資訊清單。 請參閱[所簽署應用程式和部署資訊清單，信任方案](../vsto/granting-trust-to-office-solutions.md#Signing)。  
   
  如果您要部署文件層級自訂，而且您想要在文件放在使用者電腦上的資料夾或 SharePoint 網站上提供文件，請確定 Office 信任文件的位置。 請參閱[授與信任給文件](../vsto/granting-trust-to-documents.md)。  
   
@@ -148,46 +148,46 @@ ms.lasthandoff: 04/16/2018
   
  最理想的做法是使用者應該在其電腦上開啟文件的複本，如此就不會有多位使用者嘗試同時開啟相同的複本。 若要強制執行這種做法，您可以設定安裝程式將文件複製到使用者電腦。 請參閱[將方案文件放置到終端使用者的電腦 （文件層級自訂）](#Put)。  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>藉由從 IIS 網站開啟部署資訊清單的方式安裝方案  
- 使用者可以從 Web 開啟部署資訊清單，藉此安裝 Office 方案。 不過，受保護的網際網路資訊服務 (IIS) 安裝將會封鎖副檔名為 .vsto 的檔案。 您必須先在 IIS 中定義 MIME 類型，才能使用 IIS 部署 Office 方案。  
+### <a name="install-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>藉由從 IIS 網站開啟部署資訊清單來安裝方案  
+ 使用者可以從 Web 開啟部署資訊清單，藉此安裝 Office 方案。 不過，受保護的網際網路資訊服務 (IIS) 安裝將會封鎖的檔案 *.vsto*延伸模組。 您必須先在 IIS 中定義 MIME 類型，才能使用 IIS 部署 Office 方案。  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>若要將 .vsto MIME 類型加入至 IIS 6.0  
   
-1.  在執行 IIS 6.0 伺服器上，選擇 **啟動**，**所有程式**，**系統管理工具**，**網際網路資訊服務 (IIS) 管理員**.  
+1.  在執行 IIS 6.0 伺服器上，選擇 **啟動** > **所有程式** > **系統管理工具** >   **Internet Information Services (IIS) 管理員**。 
   
 2.  選擇電腦名稱，**網站**資料夾或您設定的網站。  
   
-3.  在功能表列上選擇 **動作**，**屬性**。  
+3.  在功能表列上選擇 **動作** > **屬性**。  
   
 4.  在**HTTP 標頭**索引標籤上，選擇**MIME 類型** 按鈕。  
   
 5.  在**MIME 類型**視窗中，選擇**新增** 按鈕。  
   
-6.  中**MIME 類型**視窗中，輸入**.vsto**做為副檔名，輸入**應用程式/x ms-vsto**做為 MIME 類型，而然後套用新設定。  
+6.  中**MIME 類型**視窗中，輸入 **.vsto**做為副檔名，輸入**應用程式/x ms-vsto**做為 MIME 類型，而然後套用新設定。  
   
     > [!NOTE]  
-    >  您必須重新啟動 World Wide Web Publishing 服務，或等待背景工作處理序回收，變更才會生效。 然後您必須清除瀏覽器的磁碟快取，並嘗試再次開啟 .vsto 檔案。  
+    >  您必須重新啟動 World Wide Web Publishing 服務，或等待背景工作處理序回收，變更才會生效。 您必須再清除瀏覽器的磁碟快取，然後再次嘗試開啟 *.vsto*檔案一次。  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>若要將 .vsto MIME 類型加入至 IIS 7.0  
   
-1.  在執行 IIS 7.0 伺服器上，選擇 **啟動**，**所有程式**，**附屬應用程式**。  
+1.  在執行 IIS 7.0 伺服器上，選擇 **啟動** > **所有程式** > **附屬應用程式**。  
   
 2.  開啟快顯功能表**命令提示字元**，然後選擇 **系統管理員身分執行。**  
   
 3.  在**開啟**方塊，輸入下列路徑，然後選擇 [**確定**] 按鈕。  
   
-    ```  
+    ```cmd
     %windir%\system32\inetsrv   
     ```  
   
 4.  輸入下列命令，然後套用新的設定。  
   
-    ```  
+    ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。 然後您必須清除瀏覽器的磁碟快取，並嘗試再次開啟 .vsto 檔案。  
+    >  您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。 您必須再清除瀏覽器的磁碟快取，然後再次嘗試開啟 *.vsto*檔案一次。  
   
 ##  <a name="Put"></a> 將方案文件放置到終端使用者的電腦 （文件層級自訂）  
  您可以為其複製到終端使用者電腦上將方案文件，藉由建立部署後動作。 這樣一來，在使用者不需要他們的電腦從安裝位置以手動方式複製文件之後安裝您的方案。 您必須建立定義部署後動作的類別、 建置及發行方案、 修改應用程式資訊清單，及重新簽署應用程式和部署資訊清單。  
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>建立定義部署後動作的類別  
   
-1.  在功能表列上選擇 [ **檔案**]、[ **加入**]、[ **新增專案**]。  
+1.  在功能表列上選擇 **檔案** > **新增** > **新專案**。  
   
 2.  在**加入新的專案**對話方塊中，於**已安裝的範本** 窗格中，選擇**Windows**資料夾。  
   
@@ -206,9 +206,9 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**方案總管 中**，選擇**FileCopyPDA**專案。  
   
-6.  在功能表列上，依序選擇 [專案] 和 [加入參考]。  
+6.  在功能表列上選擇 **專案** > **加入參考**。  
   
-7.  在**.NET**索引標籤上，加入 Microsoft.VisualStudio.Tools.Applications.Runtime 和 microsoft.visualstudio.tools.applications.serverdocument 的參考。  
+7.  在 **.NET**索引標籤上，將參考加入至`Microsoft.VisualStudio.Tools.Applications.Runtime`和`Microsoft.VisualStudio.Tools.Applications.ServerDocument`。  
   
 8.  將類別重新命名為 `FileCopyPDA`，然後將檔案的內容取代為程式碼。 這個程式碼會執行下列工作：  
   
@@ -233,13 +233,13 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**方案總管 中**，選擇**ExcelWorkbook**專案。  
   
-6.  在功能表列上選擇 **專案**，**新資料夾**。  
+6.  在功能表列上選擇 **專案** > **新資料夾**。  
   
-7.  Enter**資料**，然後選擇 Enter 鍵。  
+7.  Enter**資料**，然後選擇  **Enter**索引鍵。  
   
 8.  在**方案總管 中**，選擇**資料**資料夾。  
   
-9. 在功能表列上選擇 **專案**，**加入現有項目**。  
+9. 在功能表列上選擇 **專案** > **加入現有項目**。  
   
 10. 在**加入現有項目**對話方塊中，瀏覽至的輸出目錄**ExcelWorkbook**專案，選擇**ExcelWorkbook.xlsx**檔案，然後再選擇 [ **新增**] 按鈕。  
   
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  在 `</vstav3:update>` 項目後面加上下列程式碼。 類別屬性`<vstav3:entryPoint>`項目，請使用下列語法： *NamespaceName.ClassName*。 在下列範例中，命名空間和類別名稱相同，因此產生的進入點名稱是 `FileCopyPDA.FileCopyPDA`。  
   
-    ```  
+    ```xml
     <vstav3:postActions>  
       <vstav3:postAction>  
         <vstav3:entryPoint  
@@ -282,13 +282,13 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>重新簽署應用程式和部署資訊清單  
   
-1.  在**%USERPROFILE%\Documents\Visual Studio 2013 \ projects\excelworkbook\excelworkbook**資料夾，複製**ExcelWorkbook_TemporaryKey.pfx**憑證檔案，並貼到*PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_資料夾。
+1.  在 **%USERPROFILE%\Documents\Visual Studio 2013 \ projects\excelworkbook\excelworkbook**資料夾，複製**ExcelWorkbook_TemporaryKey.pfx**憑證檔案，並貼到*PublishFolder* **\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_資料夾。
   
 2.  開啟 Visual Studio 命令提示字元中，然後再將目錄變更為**c:\publish\Application Files\ExcelWorkbook**\__MostRecentPublishedVersion_資料夾 (例如， **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**)。  
   
 3.  執行下列命令簽署修改後的應用程式資訊清單：  
   
-    ```  
+    ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  若要變更**c:\publish**資料夾，然後更新並簽署部署資訊清單中執行下列命令：  
   
-    ```  
+    ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
     celWorkbookMostRecentVersionNumber>\ExcelWorkbook.dll.manifest" -certfile "Application Files\ExcelWorkbookMostRecentVersionNumber>\ExcelWorkbook_TemporaryKey.pfx"  
     ```  
@@ -306,7 +306,7 @@ ms.lasthandoff: 04/16/2018
   
      「ExcelWorkbook.vsto 簽署成功」訊息隨即顯示。  
   
-5.  將 ExcelWorkbook.vsto 檔案複製**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目錄。  
+5.  複製*ExcelWorkbook.vsto*檔案**c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_目錄。  
   
 ##  <a name="SharePoint"></a> 將方案文件放置到執行 SharePoint （文件層級自訂） 伺服器  
  您可以使用 SharePoint 將文件層級自訂發行至終端使用者。 當使用者前往 SharePoint 網站並開啟文件時，執行階段會自動將共用網路資料夾中的方案安裝到使用者的本機電腦。 方案安裝到本機上之後，即使文件是複製到其他地方 (例如桌面)，自訂仍舊會執行。  
@@ -327,11 +327,11 @@ ms.lasthandoff: 04/16/2018
   
         2.  在**信任中心**對話方塊方塊中，選擇**信任位置** 按鈕。  
   
-        3.  選取**（不建議使用） 網路上允許之信任位置**核取方塊，，然後選擇 [**加入新的位置**] 按鈕。  
+        3.  選取 **（不建議使用） 網路上允許之信任位置**核取方塊，，然後選擇 [**加入新的位置**] 按鈕。  
   
         4.  在**路徑**方塊中，輸入包含您上傳的文件的 SharePoint 文件庫 URL (例如， *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*)。  
   
-             請勿將加入預設網頁上，例如 default.aspx 或 AllItems.aspx 的名稱。  
+             不的名稱新增到預設 Web 網頁中，例如*default.aspx*或*AllItems.aspx*。  
   
         5.  選取**此位置的子資料夾也會信任**核取方塊，，然後選擇 [**確定**] 按鈕。  
   
@@ -340,13 +340,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Custom"></a> 建立自訂安裝程式  
  您可以建立自訂安裝程式為 Office 方案，而不是使用當您發行方案時，為您建立的安裝程式。 例如，您可以使用登入指令檔開始進行安裝，或使用批次檔安裝方案而無須與使用者互動。 使用者電腦上已安裝必要條件時，下列情境可獲得最佳效果。  
   
- 在自訂安裝過程中，呼叫 Office 方案安裝程式工具 (VSTOInstaller.exe)，這個工具的預設安裝位置如下：  
+ 您的自訂安裝程序的一部分，呼叫 Office 方案的安裝程式工具 (*VSTOInstaller.exe*)，其中預設會安裝在下列位置：  
   
- %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*  
   
- 如果工具不在該位置，您可以使用 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath 或 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath 登錄機碼來尋找該工具的路徑。  
+ 如果工具不在該位置，您可以使用**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath**或**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath**登錄機碼來尋找該工具的路徑。  
   
- VSTOinstaller.exe 可搭配下列參數使用。  
+ 您可以使用下列參數以*VSTOinstaller.exe*。  
   
 |參數|定義|  
 |---------------|----------------|  
@@ -355,12 +355,12 @@ ms.lasthandoff: 04/16/2018
 |/Silent 或 /S|在不提示使用者輸入或顯示任何訊息的情況下，進行安裝或解除安裝。 如果需要信任提示，自訂未安裝或更新。|  
 |/Help 或 /?|顯示 [說明] 資訊。|  
   
- 當您執行 VSTOinstaller.exe 時，可能會出現下列錯誤碼。  
+ 當您執行*VSTOinstaller.exe*，可能會出現下列錯誤碼。  
   
 |錯誤碼|定義|  
 |----------------|----------------|  
 |0|方案已成功安裝或解除安裝，或是出現 VSTOInstaller [說明]。|  
-|-100|一個或多個命令列選項無效，或是設定超過一次。 如需詳細資訊，請輸入"vstoinstaller /？ 」 或參閱[ClickOnce Office 方案建立自訂安裝程式](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
+|-100|一個或多個命令列選項無效，或是設定超過一次。 如需詳細資訊，請輸入"vstoinstaller /？ 」 或參閱[建立自訂安裝 ClickOnce Office 方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
 |-101|一或多個命令列選項無效。 如需詳細資訊，請輸入 "vstoinstaller /?"。|  
 |-200|部署資訊清單 URI 無效。 如需詳細資訊，請輸入 "vstoinstaller /?"。|  
 |-201|無法安裝方案，因為部署資訊清單無效。 請參閱[Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。|  
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
      下列範例將示範如何將安裝路徑變更為 Fabrikam 網站上的位置，不過您可以將 URL 取代為您要的路徑：  
   
-    ```  
+    ```cmd  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
@@ -441,7 +441,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  開啟方案的安裝位置。  
   
-2.  在最上層發行資料夾中，刪除部署資訊清單 (.vsto 檔案)。  
+2.  在最上層發行資料夾中，刪除部署資訊清單 ( *.vsto*檔案)。  
   
 3.  尋找要復原之版本的子資料夾。  
   
@@ -456,7 +456,7 @@ ms.lasthandoff: 04/16/2018
      下次使用者開啟應用程式或自訂文件時，就會偵測到部署資訊清單的變更。 舊版 Office 方案便會從 ClickOnce 快取中執行。  
   
 > [!NOTE]  
->  任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取本機和 ClickOnce 應用程式中的遠端資料](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
+>  任何方案都只有前一個版本會儲存為本機資料。 如果復原兩個版本，則不會保留本機資料。 如需本機資料的詳細資訊，請參閱[存取 ClickOnce 應用程式中的本機和遠端資料](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
   
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
@@ -464,6 +464,6 @@ ms.lasthandoff: 04/16/2018
  [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
  [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
  [如何： 使用 ClickOnce 將文件層級 Office 方案發行至 SharePoint 伺服器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
- [建立自訂安裝 ClickOnce Office 方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [建立自訂安裝 ClickOnce office 方案](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

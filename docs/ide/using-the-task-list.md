@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>使用工作清單
+# <a name="use-the-task-list"></a>使用工作清單
 
 使用 [工作清單]  追蹤使用 `TODO` 和 `HACK`等語彙基元或自訂語彙基元的程式碼註解，以及管理會引導您直接移至程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。
 
@@ -30,29 +30,29 @@ ms.lasthandoff: 04/26/2018
 
 當 [工作清單]  開啟時，會出現在應用程式視窗的底部。
 
-### <a name="to-open-the-task-list"></a>開啟工作清單
+### <a name="open-the-task-list"></a>開啟工作清單
 
-- 在 [檢視] 功能表上，選擇 [工作清單]\(鍵盤：Ctrl+\\、T)。
+- 在 [檢視] 功能表上，選擇 [工作清單] (鍵盤：**Ctrl**+**\\**、**T**)。
 
     ![[工作清單] 視窗](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>變更清單的排序順序
+### <a name="change-the-sort-order-of-the-list"></a>變更清單的排序次序
 
 - 按一下任一資料行的標題。 若要進一步精簡搜尋結果，請按 Shift 鍵再按一下第二個資料行標頭。
 
-     或者，在捷徑功能表上，選擇 [ **排序依據**]，然後選擇標題。 若要進一步精簡搜尋結果，請按 Shift 鍵並選擇第二個資料行標題。
+     或者，在捷徑功能表上，選擇 [ **排序依據**]，然後選擇標題。 若要進一步精簡搜尋結果，請按 **Shift** 鍵並選擇第二個標題。
 
-### <a name="to-show-or-hide-columns"></a>顯示或隱藏資料行
+### <a name="show-or-hide-columns"></a>顯示或隱藏資料行
 
 - 在捷徑功能表上，選擇 [ **顯示行**]。 選擇要顯示或隱藏的資料行。
 
-### <a name="to-change-the-order-of-the-columns"></a>變更欄位順序
+### <a name="change-the-order-of-the-columns"></a>變更資料行順序
 
 - 將任一個資料行標頭拖曳到想要的位置。
 
 ## <a name="user-tasks"></a>使用者工作
 
-從 Visual Studio 2015 開始，已移除使用者工作功能。 當您開啟的解決方案有 Visual Studio 2013 和較早版本的使用者工作資料時，.suo 檔案中的使用者工作資料不會受影響，但使用者工作不會顯示在工作清單中。
+從 Visual Studio 2015 開始，已移除使用者工作功能。 當您開啟的解決方案有 Visual Studio 2013 和較早版本的使用者工作資料時，*.suo* 檔案中的使用者工作資料不會受影響，但使用者工作不會顯示在工作清單中。
 
 如果您想要繼續存取及更新您的使用者工作資料，您應該在 Visual Studio 2013 中開啟專案，並將任何使用者工作的內容複製到您的慣用的專案管理工具 (例如 Team Foundation Server)。
 
@@ -74,11 +74,11 @@ ms.lasthandoff: 04/26/2018
 
 ###  <a name="customTokens"></a> 自訂權杖
 
-根據預設，Visual Studio 包含下列語彙基元：HACK、TODO、UNDONE、NOTE。 這些語彙基元不區分大小寫。
+根據預設，Visual Studio 會包含下列語彙基元：`HACK`、`TODO`、`UNDONE`、`NOTE`。 這些語彙基元不區分大小寫。
 
 您也可以建立自己的自訂語彙基元。
 
-#### <a name="to-create-a-custom-token"></a>要建立自訂的語彙基元
+#### <a name="create-a-custom-token"></a>建立自訂的語彙基元
 
 1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 04/26/2018
 
 根據預設，[工作清單]  視窗中會顯示 C++ TODO 註解。 您可以變更此行為。
 
-#### <a name="to-turn-off-c-todo-comments"></a>若要關閉 C++ TODO 註解
+#### <a name="turn-off-c-todo-comments"></a>關閉 C++ TODO 註解
 
 在 [工具] 功能表上，選擇 [選項] > [文字編輯器] > [C/C++] > [檢視] > [列舉註解工作]，然後將值設定為 false。
 
@@ -106,9 +106,9 @@ ms.lasthandoff: 04/26/2018
 
 ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>建立捷徑
+### <a name="create-a-shortcut"></a>建立捷徑
 
-若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [編輯] > [書籤] > [新增工作清單捷徑]，或按 **Ctrl** + **K**、**Ctrl** + **H**。
+若要建立捷徑，請將指標插入要放置捷徑的程式碼中。 選擇 [編輯] > [書籤] > [新增工作清單捷徑]，或按 **Ctrl**+**K**、**Ctrl**+**H**。
 
 若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。
 

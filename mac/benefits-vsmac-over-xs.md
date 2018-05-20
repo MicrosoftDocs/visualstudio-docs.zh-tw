@@ -1,46 +1,43 @@
 ---
 title: 透過 Xamarin Studio 之 Visual Studio for Mac 的優點
-description: ''
-ms.topic: overview
+description: 本文說明 Visual Studio for Mac 所提供超越 Xamarin Studio 的功能和優點
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63f8e0f03797f08383ad3a1ec2b9303a405ed236
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>透過 Xamarin Studio 之 Visual Studio for Mac 的優點 
+ 
+Visual Studio for Mac 已取代 Xamarin Studio 成為 Mac 上的全功能 IDE。 它提供的功能可讓您用來開發 Web 應用程式和服務、跨平台行動及桌面應用程式和遊戲。 此外，它可讓與 Azure 的整合變得十分簡單，不論其是指發行到 Azure 還是建立 Azure 函式。 它具有您想要從現代 IDE 獲得的所有項目，包括功能完整的原始檔編輯器、功能強大的偵錯工具、可自訂的工作區、Git 整合，以及豐富的擴充系統，全都是針對 Mac 設計。
 
-Visual Studio for Mac 已取代 Xamarin Studio 成為 Mac 上的全功能 IDE。 它提供的功能可讓您用來開發 Web 應用程式和服務、跨平台行動及桌面應用程式和遊戲。 此外，它可讓與 Azure 的整合變得十分簡單，不論其是指發行到 Azure 還是建立 Azure 函式。 它具有您想要從現代 IDE 獲得的所有項目，包括功能完整的原始檔編輯器、功能強大的偵錯工具、可自訂的工作區、Git 整合，以及豐富的擴充系統，全都是針對 Mac 設計。 
+其他功能包括：
 
-其他功能包括： 
+* 以 Roslyn 為基礎的 C# IntelliSense、重構、分析器和程式碼修正
+* 以 NuGet 為基礎的套件管理
+* Visual Studio 相容的專案格式
+* MSBuild 組建引擎
+* 整合式單元測試
+* 預設支援 F#
 
-* 以 Roslyn 為基礎的 C# IntelliSense、重構、分析器和程式碼修正 
-* 以 NuGet 為基礎的套件管理 
-* Visual Studio 相容的專案格式 
-* MSBuild 組建引擎 
-* 整合式單元測試 
-* 預設支援 F# 
-
-本指南中標示為**預覽**的所列優點只適用於 [Alpha 色板](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel)。 
-
-## <a name="language-support"></a>語言支援 
+## <a name="language-support"></a>語言支援
 
 只有在 Visual Studio for Mac 上才提供於 Mac 中撰寫 C# 7 程式碼的功能。
 
-## <a name="net-core"></a>.NET Core  
+## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) 是一種平台，用於建立在 Windows、Linux 和 Mac 上執行的應用程式。 Visual Studio for Mac 支援載入、建立、執行和偵錯 .NET Core 專案。 
+[.NET Core](https://www.microsoft.com/net/core#macos) 是一種平台，用於建立在 Windows、Linux 和 Mac 上執行的應用程式。 Visual Studio for Mac 支援載入、建立、執行和偵錯 .NET Core 專案。
 
 .NET Core 會隨 Visual Studio for Mac 一起安裝，而且立即可用。
 
-.NET Core 支援包括： 
+.NET Core 支援包括：
 
-* C# 和 F# IntelliSense。 
-* 適用於主控台、程式庫和 Web 應用程式的 .NET Core 專案範本。 
+* C# 和 F# IntelliSense。
+* 適用於主控台、程式庫和 Web 應用程式的 .NET Core 專案範本。
 * 完整偵錯支援，包括中斷點、呼叫堆疊、監看式視窗等等。 
 * NuGet 套件參考和以 MSBuild 為基礎的還原。 
 * 整合式單元測試支援，可使用 .NET Core SDK 隨附的 Visual Studio 測試平台來執行和偵錯測試。 
@@ -94,11 +91,11 @@ Visual Studio for Mac 也新增了 HTML、CSS 和 JSON 檔案的新 Web 工具�
 
 ![發佈至 Azure](media/benefits-vsmac-over-xs-image1.png)
 
-### <a name="azure-functions-preview"></a>Azure 函式 (**預覽**)
+### <a name="azure-functions"></a>Azure Functions
 
 Azure 函式是用來在雲端中輕鬆執行少量程式碼片段或函式的解決方案。 Visual Studio for Mac 可讓您撰寫 Azure 函式，並在本機上對 Azure 函式進行偵錯。 若要開始使用，請在 [新增專案] 對話方塊的 [雲端] 下尋找 Azure 函式。 
 
-### <a name="docker-support-preview"></a>Docker 支援 (**預覽**)
+### <a name="docker-support"></a>Docker 支援
 
 您現在可以將 ASP.NET Core 應用程式發行至 Docker 容器，並從 Azure 應用程式服務執行。 
 
@@ -164,6 +161,4 @@ Unity 的工具包括：
 
 ### <a name="cross-platform"></a>跨平台 
 
-* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**預覽**) 
-* [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**預覽**) 
- 
+* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/)

@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
-在編輯器中撰寫程式碼，以及在 [[即時模式]](../ide/reference/immediate-window.md) 命令視窗中偵錯時，有 C# IntelliSense 可供使用。
+在編輯器中撰寫程式碼，以及在[即時模式](../ide/reference/immediate-window.md)命令視窗中進行偵錯時，有 C# IntelliSense 可供使用。
 
 ## <a name="completion-lists"></a>自動完成清單
 
@@ -40,7 +40,7 @@ C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元�
 
 ## <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段
 
-C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。 如需 C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [C# 程式碼片段清單](../ide/visual-csharp-code-snippets.md)。
+C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。 如需 C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。
 
 ## <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字
 
@@ -55,7 +55,7 @@ C# 的完成清單包含範圍內的擴充方法。
 
 擴充方法與執行個體方法使用不同的圖示。 如需清單圖示的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。
 
-## <a name="filtered-completion-lists"></a>篩選後的完成清單
+## <a name="filtered-completion-lists"></a>篩選後的自動完成清單
 
 IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。 C# 會篩選針對下列項目所顯示的完成清單：
 
@@ -67,11 +67,11 @@ IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移�
 
 - **物件初始設定式**：只有能夠初始化的成員會出現在完成清單中。
 
-- **new 關鍵字**：當您鍵入 `new` 然後按下空格鍵，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。
+- **new 關鍵字**：當您鍵入 `new` 然後按下**空格鍵**時，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。
 
-- **enum 關鍵字**：當您在列舉指派的等號之後按空格鍵時，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，當您鍵入關鍵字 return 並執行宣告時，就會自動選取完成清單中的項目。
+- **enum 關鍵字**：當您在列舉指派的等號之後按**空格鍵**時，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，當您鍵入關鍵字 return 並執行宣告時，就會自動選取完成清單中的項目。
 
-- **as 及 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按空格鍵，即會自動顯示篩選後的完成清單。
+- **as 和 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按**空格鍵**，即會自動顯示篩選後的完成清單。
 
 - **事件**：當您鍵入關鍵字 `event`，完成清單僅包含委派類型。
 
@@ -83,7 +83,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ## <a name="override"></a>override
 
-當您鍵入 [override](/dotnet/csharp/language-reference/keywords/override)，然後按下空格鍵時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。
+當您鍵入 [override](/dotnet/csharp/language-reference/keywords/override)，然後按下**空格鍵**時，IntelliSense 即會在快顯清單方塊中顯示所有您可以覆寫的有效基底類別成員。 在 `override` 之後輸入方法的傳回類型，可提示 IntelliSense 僅顯示會傳回相同類型的方法。 當 IntelliSense 找不到任何相符項目時，它會顯示所有基底類別成員。
 
 ## <a name="automatic-code-generation"></a>自動產生程式碼
 
@@ -91,7 +91,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 **加入 using** IntelliSense 作業會自動將必要的 `using` 指示詞新增至程式碼檔案。 此功能可讓您專注在自己所撰寫的程式碼上，而不需要將焦點轉移到其他部分的程式碼。
 
-若要起始加入 using 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作] 叫用加入 using。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]。
+若要起始**新增 using** 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作] 叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]。
 
 ![加入 using，快速動作展開的影像](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
 
@@ -103,15 +103,15 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ### <a name="implement-interface"></a>實作介面
 
-在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中鍵入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
 實作介面將會產生最少數目的滿足介面之方法虛設常式。 如果基礎類別實作部分的介面，則不會重新產生這些虛設常式。
 
 ### <a name="implement-abstract-base-class"></a>實作抽象基底類別
 
-在使用 [程式碼編輯器] 時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作] 燈泡。 燈泡提供您自動實作基底類別方法的選項。
+在使用程式碼編輯器時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作] 燈泡。 燈泡提供您自動實作基底類別方法的選項。
 
-[實作抽象基底類別] 功能所產生的方法虛設常式是由定義在 MethodStub.snippet 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
+[實作抽象基底類別] 功能所產生的方法虛設常式是由定義在 *MethodStub.snippet* 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
 ### <a name="generate-from-usage"></a>使用時產生
 
@@ -121,7 +121,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 - 按一下未定義的識別碼。 [快速動作] 燈泡會出現在識別碼下。 按一下燈泡。
 
-- 按一下未定義的識別碼，然後按 **Ctrl** + **.** (Ctrl + 句號)。
+- 按一下未定義的識別碼，然後按 **Ctrl**+**.** (**Ctrl** + 句號)。
 
 - 以滑鼠右鍵按一下未定義的識別碼，然後按一下 [快速動作及重構]。
 
@@ -141,7 +141,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 在程式碼編輯器中，IntelliSense 可協助您將方法 (事件處理常式) 連結到事件欄位。
 
-當您在 .cs 檔案的事件欄位後面鍵入 `+=` 運算子時，IntelliSense 會提示您按 **Tab** 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
+當您在 *.cs* 檔案的事件欄位後面鍵入 `+=` 運算子時，IntelliSense 會提示您按 **Tab** 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
 
 ![按鈕自動連結](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
@@ -155,7 +155,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 如果按 **Tab** 鍵，IntelliSense 就會虛設出有正確簽章的方法，並將資料指標放在事件處理常式的主體中。
 
 > [!NOTE]
-> 使用 [檢視] 功能表上的 [向後巡覽] 命令 (**Ctrl** + **-**)，返回事件連結陳述式。
+> 使用 [檢視] 功能表上的 [向後巡覽] 命令 (**Ctrl**+**-**)，返回事件連結陳述式。
 
 ## <a name="see-also"></a>另請參閱
 

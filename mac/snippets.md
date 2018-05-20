@@ -1,14 +1,15 @@
 ---
 title: 程式碼片段
+description: 如何使用程式碼片段在 Visual Studio for Mac 中有效率進行程式設計
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 0f89c7eadb9f9fbc7a38f4100a6df259a1aa0a06
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4ad96e79d3fdd3d22df696b95bc11b8074fbdede
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="code-snippets"></a>程式碼片段 
 

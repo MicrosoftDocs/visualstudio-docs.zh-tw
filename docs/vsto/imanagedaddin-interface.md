@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin 介面 |Microsoft 文件
+title: IManagedAddin 介面
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d626257d3a2683a6fbb6032e8053572fd1301645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f29356a3e11634d742d6f6022c35cf8f10871eec
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   實作 IManagedAddin 介面，以建立元件載入 managed VSTO 增益集。2007 Microsoft Office system 中已新增這個介面。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```c++
 [  
     object,  
     uuid(B9CEAB65-331C-4713-8410-DDDAF8EC191A),  
@@ -51,24 +51,24 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|只在 Microsoft Office 應用程式卸載 Managed VSTO 增益集之前呼叫。|  
   
 ## <a name="remarks"></a>備註  
- Microsoft Office 應用程式，從 2007 Microsoft Office system 中，使用 IManagedAddin 介面協助載入 Office VSTO 增益集。您可以實作 IManagedAddin 介面以建立您自己的 VSTO 增益集載入器和執行階段針對 managed VSTO 增益集，而不使用 VSTO 增益集載入器 (VSTOLoader.dll) 和[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 如需詳細資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  
+ Microsoft Office 應用程式，從 2007 Microsoft Office system 中，使用 IManagedAddin 介面協助載入 Office VSTO 增益集。您可以實作 IManagedAddin 介面以建立您自己的 VSTO 增益集載入器和執行階段針對 managed VSTO 增益集，而不使用 VSTO 增益集載入器 (*VSTOLoader.dll*) 和[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 如需詳細資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  
   
-## <a name="how-managed-add-ins-are-loaded"></a>Managed 增益集的載入方式  
+## <a name="how-managed-add-ins-are-loaded"></a>如何載入受管理的增益集  
  當應用程式啟動時，會執行下列步驟：  
   
 1.  應用程式會在下列登錄機碼底下尋找項目，以探索 VSTO 增益集：  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<應用程式名稱 >* \Addins\  
+     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\**  
   
      這個登錄機碼下的每個項目都是 VSTO 增益集的唯一識別碼。 通常這會是 VSTO 增益集組件的名稱。  
   
 2.  應用程式會在每個 VSTO 增益集的項目底下尋找 `Manifest` 項目。  
   
-     Managed 的 VSTO 增益集可儲存資訊清單的完整路徑`Manifest`HKEY_CURRENT_USER\Software\Microsoft\Office 下的項目\\*\<應用程式名稱 >* \Addins\\ *\<增益集識別碼 >*。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
+     Managed 的 VSTO 增益集可儲存資訊清單的完整路徑`Manifest`下的項目**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<應用程式名稱 >_ \Addins\\_\<增益集識別碼 >_**。 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。  
   
 3.  如果應用程式找到 `Manifest` 項目，則會嘗試載入 Managed VSTO 增益集載入器元件。 應用程式會透過嘗試建立實作 IManagedAddin 介面的 COM 物件。  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包含 VSTO 增益集載入器元件 (VSTOLoader.dll)，或者您可以建立自己的實作 IManagedAddin 介面。  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]包含 VSTO 增益集載入器元件 (*VSTOLoader.dll*)，或者您可以建立自己的實作 IManagedAddin 介面。  
   
 4.  應用程式會呼叫 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，並傳入 `Manifest` 項目的值。  
   
@@ -76,7 +76,7 @@ interface IManagedAddin : IUnknown
   
  如需有關登錄機碼的 Microsoft Office 應用程式用來探索及載入 managed VSTO 增益集，請參閱[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
-## <a name="guidance-for-implementing-imanagedaddin"></a>實作 IManagedAddin 的指引  
+## <a name="guidance-to-implement-imanagedaddin"></a>若要實作 IManagedAddin 的指引  
  如果您實作 IManagedAddin，您必須註冊包含實作，請使用下列 CLSID 的 DLL:  
   
  99D651D7-5F7C-470E-8A3B-774D5D9536AC  
@@ -84,7 +84,7 @@ interface IManagedAddin : IUnknown
  Microsoft Office 應用程式會使用這個 CLSID 建立實作 IManagedAddin 的 COM 物件。  
   
 > [!CAUTION]  
->  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的 VSTOLoader.dll 也會使用這個 CLSID。 因此，如果您使用 IManagedAddin 來建立您自己的 VSTO 增益集載入器和執行階段元件，您無法部署您的元件會執行 VSTO 增益集依賴的電腦[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
+>  也會使用這個 CLSID *VSTOLoader.dll*中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 因此，如果您使用 IManagedAddin 來建立您自己的 VSTO 增益集載入器和執行階段元件，您無法部署您的元件會執行 VSTO 增益集依賴的電腦[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
   
 ## <a name="see-also"></a>另請參閱  
  [Unmanaged API 參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  

@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e069b13f3ceda00383bda8d0c33d74059e785f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
 標記新範圍的開頭。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```C  
 HRESULT CvEnterSpanW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
     _Out_ PCV_SPAN* ppSpan,   
@@ -116,20 +116,20 @@ HRESULT CvEnterSpanExVA(
  有效的標記序列內容。 不可以是 NULL。  
   
  `pMessage`  
- 訊息格式字串。 不可以是 NULL。  
+ 訊息格式的字串。 不可以是 NULL。  
   
  `ppSpan`  
- 將保留產生之範圍物件的變數位址。 位址不能是 NULL，變數可以是任何值。  
+ 會保留結果範圍物件的變數位址。 位址不能是 NULL，變數可以是任何值。  
   
 ## <a name="return-value"></a>傳回值  
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰**cvmarkers.h  
+ **標頭︰** cvmarkers.h  
   
- **Unicode：**CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
+ **Unicode：** CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
   
- **ANSI：**CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW  
+ **ANSI：** CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW  
   
 ## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

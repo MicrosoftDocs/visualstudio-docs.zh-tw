@@ -1,5 +1,5 @@
 ---
-title: 自訂動作，在 Outlook 表單區域 |Microsoft 文件
+title: Outlook 表單區域中的自訂動作
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec4c6a0ce361102ab216bc0c9f460a0bdd7a4a0d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 表單區域中的自訂動作
   動作顯示按鈕，可讓使用者回應的 Microsoft Office Outlook 項目。 例如，若要回應的郵件項目，使用者按一下**回覆**，**全部回覆**，或**向前**動作按鈕。 每個動作會建立新的郵件項目，並使用來自原始項目的資訊填入的項目欄位。  
@@ -29,8 +29,8 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-custom-actions-to-a-form-region"></a>將自訂動作加入至表單區域  
- 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管 中**展開**資訊清單** 節點，選取**CustomActions**屬性，然後按一下省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
+## <a name="add-custom-actions-to-a-form-region"></a>新增至表單區域的自訂動作  
+ 若要將自訂動作加入至表單區域，使用**自訂動作** 對話方塊。 您可以開啟**自訂動作**對話方塊**方案總管 中**展開**資訊清單** 節點，選取**CustomActions**屬性，然後按一下 省略符號按鈕 (![ASP.NET 行動設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形"))。  
   
  您可以使用**自訂動作**對話方塊來指定*目標表單*。 目標表單是使用者執行自訂動作時出現的表單。  
   
@@ -50,12 +50,12 @@ ms.lasthandoff: 04/16/2018
 |**TargetForm**|指定目標表單的訊息類別名稱。 例如，輸入**IPM。工作**若要開啟的工作表單。|  
 |**標題**|指定自訂動作按鈕標籤。|  
   
-## <a name="customizing-a-custom-action-at-run-time"></a>自訂執行階段的自訂動作  
+## <a name="customize-a-custom-action-at-runtime"></a>自訂執行階段的自訂動作  
  您也可以使用程式碼的自訂動作來新增行為。 例如，您可以加入接受的電子郵件收件者名稱，並將這些名稱在新的約會項目出席者的程式碼。 若要這樣做，請處理[CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx)事件[MailItem 物件](http://msdn.microsoft.com/library/office/ff861332.aspx)。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [讓表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
+ [將表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

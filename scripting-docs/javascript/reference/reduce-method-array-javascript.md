@@ -1,12 +1,13 @@
 ---
-title: "reduce 方法 （陣列） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: reduce 方法 （陣列） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce 方法 (陣列) (JavaScript)
 陣列中的所有項目會呼叫指定的回呼函式。 回呼函式的傳回值即為累加結果，並做為下一個呼叫的引數提供給回呼函式。  
@@ -41,9 +42,9 @@ array1.reduce(callbackfn[, initialValue])
   
 |參數|定義|  
 |---------------|----------------|  
-|`array1`|必要項。 陣列物件。|  
-|`callbackfn`|必要項。 接受最多四個引數的函式。 `reduce` 方法會針對陣列中的每個元素各呼叫 `callbackfn` 函式一次。|  
-|`initialValue`|選擇項。 如果`initialValue`指定，它用來開始累積為初始值。 第一次呼叫`callbackfn`函式會提供此值做為引數，而不是陣列值。|  
+|`array1`|必要。 陣列物件。|  
+|`callbackfn`|必要。 接受最多四個引數的函式。 `reduce` 方法會針對陣列中的每個元素各呼叫 `callbackfn` 函式一次。|  
+|`initialValue`|選擇性。 如果`initialValue`指定，它用來開始累積為初始值。 第一次呼叫`callbackfn`函式會提供此值做為引數，而不是陣列值。|  
   
 ## <a name="return-value"></a>傳回值  
  從上次呼叫回呼函式為累加的結果。  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>備註  
  如果`initialValue`提供，則`reduce`方法呼叫`callbackfn`函式一次，每個項目出現在陣列中，依照遞增索引順序。 如果`initialValue`未提供，`reduce`方法呼叫`callbackfn`上每個項目，第二個元素開始函式。  
   
- 回呼函式的傳回值依現狀`previousValue`在下次呼叫回呼函式的引數。 上次呼叫回呼函式的傳回值是傳回值的`reduce`方法。  
+ 回呼函式的傳回值依現狀`accumulator`在下次呼叫回呼函式的引數。 上次呼叫回呼函式的傳回值是傳回值的`reduce`方法。  
   
  對於陣列中遺漏的元素則不會呼叫回呼函式。  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>回呼函式語法  
  回呼函式的語法如下：  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  您可以使用最多四個參數宣告回呼函式。  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |回呼引數|定義|  
 |-----------------------|----------------|  
-|`previousValue`|來自先前呼叫的回呼函式的值。 如果`initialValue`提供給`reduce`方法，`previousValue`是`initialValue`第一次呼叫函式。|  
+|`accumulator`|來自先前呼叫的回呼函式的值。 如果`initialValue`提供給`reduce`方法，`accumulator`是`initialValue`第一次呼叫函式。|  
 |`currentValue`|目前的陣列元素的值。|  
 |`currentIndex`|目前的陣列元素的數值索引。|  
 |`array1`|包含元素的陣列物件。|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  如果`initialValue`提供給 reduce 方法：  
   
--   `previousValue` 引數為 `initialValue`。  
+-   `accumulator` 引數為 `initialValue`。  
   
 -   `currentValue`引數是出現在陣列的第一個元素的值。  
   
  如果`initialValue`未提供：  
   
--   `previousValue`引數是出現在陣列的第一個元素的值。  
+-   `accumulator`引數是出現在陣列的第一個元素的值。  
   
 -   `currentValue`引數是出現在陣列的第二個元素的值。  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |元素會從陣列中刪除。|否，除非該元素已傳遞至回呼函式。|  
   
 ## <a name="example"></a>範例  
- 下列範例會將陣列值串連成字串，分隔的值與 「::"。 因為沒有初始值提供給`reduce`方法，回呼函式的第一個呼叫具有與"abc"`previousValue`引數，而"def"做為`currentValue`引數。  
+ 下列範例會將陣列值串連成字串，分隔的值與 「::"。 因為沒有初始值提供給`reduce`方法，回呼函式的第一個呼叫具有與"abc"`accumulator`引數，而"def"做為`currentValue`引數。  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  下列範例會將陣列中的值。 `currentIndex`和`array1`回呼函式中使用參數。  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  下列範例會取得陣列，其中包含只有在介於 1 到 10，另一個陣列中的值。 提供給的初始值`reduce`方法是空陣列。  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

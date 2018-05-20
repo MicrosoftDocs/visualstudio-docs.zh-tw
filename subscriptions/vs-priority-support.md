@@ -3,21 +3,21 @@ title: Visual Studio 訂用帳戶中的優先支援權益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: 了解 Visual Studio 訂用帳戶中所含的優先支援權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的優先支援
 
-「優先支援」權益可讓您存取各種支援社群論壇，並在其中搜尋現有的文章或問新問題。  若社群未在兩天內回答您的問題，Microsoft 的支援小組將會提供答案。  
+「優先支援」權益可讓您存取各種支援社群論壇，並在其中搜尋現有的文章或問新問題。  若社群未在兩天內回應您的問題，Microsoft 的支援小組會提供回覆。  
 
 具有所選 Visual Studio 訂用帳戶的訂閱者符合透過涵蓋各種主題之大量論壇接收優先支援的資格。
 

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 372e92c2edb9110d6fdde45cb5381c7b420b4b03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>如何：將註解新增至類別圖表 (類別設計工具)
+# <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
 
 您可以使用註解圖形來標註類別圖表。 註解圖形有一個屬性 **Text**，您可在其中鍵入文字。 註解圖形只存在於圖表介面，而不在程式碼中。
 

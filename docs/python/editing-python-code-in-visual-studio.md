@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。
+IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help)、[快速諮詢](#quick-info)和[程式碼著色](#code-coloring)。 Visual Studio 2017 15.7 版和更新版本也支援[類型提示](#type-hints)。
 
 為了改善效能，**Visual Studio 2017 15.5 版**及較早版本中的 IntelliSense 會仰賴為您專案中的每個 Python 環境所產生的完成資料庫。 如果新增、移除或更新套件，資料庫可能需要重新整理。 資料庫狀態會顯示在 [IntelliSense] 索引標籤上的 [Python 環境] 視窗中 (方案總管的同層級) (請參閱[環境視窗參考](python-environments-window-tab-reference.md#intellisense-tab))。
 
@@ -77,6 +77,46 @@ IntelliSense 提供[自動完成](#completions)、[簽章說明](#signature-help
 
 > [!Tip]
 > 您可以透過 [工具] > [選項] > [文字編輯器] > [Python] > [進階] 來設定自動完成的行為。 其中，[依據搜尋字串篩選清單]︰在您輸入時套用自動完成建議的篩選 (預設為核取)，而 [成員自動完成顯示成員的交集] 只會顯示所有可能的類型支援的自動完成 (預設為未核取)。 請參閱[選項 - 完成結果](python-support-options-and-settings-in-visual-studio.md#completion-results)。
+
+### <a name="type-hints"></a>類型提示
+
+*Visual Studio 2017 15.7 版和更新版本。*
+
+Python 3.5 以上版本 ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) 中的「類型提示」是表示引數類型、傳回值和類別屬性的函式和類別的註釋語法。 當您將滑鼠停留在具有這些註釋的函式呼叫、引數和變數上方時，IntelliSense 就會顯示類型提示。
+
+在下列範例中，`Vector` 類別會宣告為 `List[float]`，而 `scale` 函式包含其引數和傳回值的類型提示。 將滑鼠停留在該函式呼叫上方即會顯示類型提示：
+
+![將滑鼠停留函式呼叫上方來顯示類型提示](media/code-editing-type-hints1.png)
+
+在下列範例中，您可以看到 `Employee` 類別的標註屬性如何顯示在屬性的 IntelliSense 完成快顯視窗中：
+
+![顯示類型提示的 IntelliSense 完成](media/code-editing-type-hints2.png)
+
+在整個專案中驗證類型提示也很有用，因為通常要到執行階段之後才會出現錯誤。 基於此目的，Visual Studio 透過 [方案總管] 中的操作功能表命令 [Python] > [執行 Mypy] 整合業界標準的 MyPy 工具：
+
+![在 [方案總管] 執行 MyPy 操作功能表命令](media/code-editing-type-hints-run-mypy.png)
+
+必要的話，執行命令會提示您安裝 mypy 套件。 Visual Studio 接著會執行 mypy 來驗證專案中每個 Python 檔案的類型提示。 錯誤會顯示在 Visual Studio 的 [錯誤清單] 視窗中。 在視窗中選取項目會巡覽至程式碼中的適當行。
+
+簡單舉例如下，下列函式定義包含類型提示，指出 `input` 引數是類型 `str`，而該函式的呼叫會嘗試傳遞整數：
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+對這段程式碼使用 [執行 Mypy] 命令會產生下列錯誤：
+
+![mypy 驗證類型提示的範例結果](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> 如果是 3.5 之前的 Python 版本，Visual Studio 也會顯示您透過「虛設常式檔案」(`.pyi`) 提供的類型提示。 只要您不想在程式碼中直接包含類型提示，或者您想要針對不會直接使用類型提示的程式庫建立類型提示時，就可以使用虛設常式檔案。 如需詳細資訊，請參閱 mypy 專案 Wiki 中的[建立 Python 模組的虛設常式](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
+>
+> 目前，Visual Studio 不支援註解的類型提示。
 
 ### <a name="signature-help"></a>簽章說明
 

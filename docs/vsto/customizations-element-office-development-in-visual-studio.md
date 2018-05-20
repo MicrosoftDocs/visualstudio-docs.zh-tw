@@ -1,5 +1,5 @@
 ---
-title: '&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7174f4f04914a120454d9977516e7c2443cbadda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。  
   
 ## <a name="syntax-for-document-level-customizations"></a>文件層級自訂的語法  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>VSTO 增益集的語法  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -66,17 +66,17 @@ ms.lasthandoff: 04/16/2018
 ### <a name="customization"></a>自訂  
  必要。 `customization`中的項目`vstov4`命名空間中定義[&#60;自訂&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
-## <a name="example-of-a-document-level-customization"></a>文件層級自訂的範例  
+## <a name="example-of-a-document-level-customization"></a>文件層級自訂範例  
   
 ### <a name="description"></a>描述  
  下列程式碼範例說明文件層級自訂的 `customizations` 項目。  
   
 > [!NOTE]  
->  這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+>  這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -89,11 +89,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example-of-an-vsto-add-in"></a>VSTO 增益集的範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明 VSTO 增益集的 `customizations` 項目。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明 VSTO 增益集的 `customizations` 項目。 這是包含表單區域的 Outlook VSTO 增益集。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -122,7 +122,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

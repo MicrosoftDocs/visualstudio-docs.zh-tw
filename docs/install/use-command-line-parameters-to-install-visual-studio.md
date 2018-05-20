@@ -2,7 +2,7 @@
 title: 使用命令列參數來安裝 Visual Studio
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -101,6 +101,10 @@ ms.lasthandoff: 04/20/2018
 | `--nocache` | **版本 15.2 的新功能，選擇性**︰如果套件存在，會在安裝或修復之後刪除。 只有在需要時才會再次下載它們，並於使用過後再次刪除。 這會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
 | `--noUpdateInstaller` | **15.2 的新功能，選擇性**︰如果存在，則在指定無訊息時會防止安裝程式更新它自己。 如果在需要安裝程式更新時指定具有無訊息的 noUpdateInstaller，則安裝程式會讓命令失敗，並傳回非零結束代碼。 |
 | `--noWeb` | **版本 15.3 的新功能，選擇性**：安裝程式現在會下載任何從網際網路安裝的內容。  離線配置中必須提供所有正在安裝的內容。  如果配置缺少內容，安裝程式會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 |
+| `--path <name>=<path>` | **15.7 的新功能，選擇性**：用來指定安裝的自訂安裝路徑。 支援的路徑名稱為 shared、cache 和 install。 |
+| `--path cache=<path>` | **15.7 的新功能，選擇性**：使用您指定用於下載安裝檔案的位置。 此位置只能在第一次安裝 Visual Studio 時設定。 範例：`--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **15.7 的新功能，選擇性**：包含並存 Visual Studio 安裝的共用檔案。 某些工具和 SDK 會安裝到此磁碟機上的位置，而其他一些項目則可能會覆寫此設定並安裝到其他磁碟機。 範例：`--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **15.7 的新功能，選擇性**：相當於 `–-installPath`。 特別是 `--installPath "C:\VS"` 與 `--path install="C:\VS"` 相等。 一次只能使用其中一個。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作負載識別碼和元件識別碼清單
 

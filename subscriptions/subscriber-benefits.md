@@ -9,11 +9,11 @@ description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
@@ -40,5 +40,8 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 - 從「優先支援論壇」中社群的成員取得協助。  如果社群成員無法回答您的問題，Microsoft 的專家會提供解答。 
 - 對 Azure 有任何疑問嗎？  請查看 Azure 社群和 Azure Advisor 交談服務。  
 
-如需訂用帳戶中所包含權益的詳細資訊，請參閱 Visual Studio 定價頁面。  特定權益的相關資訊 (包含哪些訂用帳戶包含這些權益) 可在下方的**使用訂閱者權益**主題中取得。 
+> [!NOTE] 
+> 您的訂用帳戶也可能提供軟體下載的存取。  如需下載的詳細資訊，包括您的訂用帳戶隨附哪些下載，請前往 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
+
+如需訂用帳戶中所包含權益的詳細資訊，請參閱 [Visual Studio 定價頁面](https://www.visualstudio.com/vs/pricing/)。  特定權益的相關資訊 (包含哪些訂用帳戶包含這些權益) 可在下方的**使用訂閱者權益**主題中取得。 
 

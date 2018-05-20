@@ -1,5 +1,5 @@
 ---
-title: 如何： 將自訂 XML 組件加入至文件層級自訂 |Microsoft 文件
+title: 如何： 將自訂 XML 組件加入至文件層級自訂
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,19 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5126e5ca6eb83df70ed03a7491fdd5d2a98912e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：將自訂 XML 組件加入至文件層級自訂
-  您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱 [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)。  
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何： 將自訂 XML 組件加入至文件層級自訂
+  您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱[自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Visual Studio 不提供 Microsoft Office PowerPoint 的文件層級專案。 如需使用 VSTO 增益集將自訂 XML 組件加入 PowerPoint 簡報資訊，請參閱[如何： 加入自訂 XML 組件加入文件所使用 VSTO 增益集](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。  
+>  Visual Studio 不提供 Microsoft Office PowerPoint 的文件層級專案。 如需使用 VSTO 增益集將自訂 XML 組件加入 PowerPoint 簡報資訊，請參閱[How to： 使用 VSTO 增益集將自訂 XML 組件加入文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)。  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>將自訂 XML 組件加入至 Excel 活頁簿  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
  為了簡單起見，這個範例使用定義為方法中區域變數的 XML 字串。 通常，您應從外部來源取得 XML，例如檔案或資料庫。  
   
 ## <a name="see-also"></a>另請參閱  
- [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
- [如何：使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+ [自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)   
+ [如何： 使用 VSTO 增益集將自訂 XML 組件加入文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
   

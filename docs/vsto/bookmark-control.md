@@ -1,5 +1,5 @@
 ---
-title: 書籤控制項 |Microsoft 文件
+title: 書籤控制項
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.prod: visual-studio-dev15
@@ -19,30 +19,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68934d202fbffc162b6888ab3a45cdf0b7fd439d
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 60ab9db37f3ed41de4afcdecbf2c9e83ffb5c2f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 在文件層級的專案中，您可以在設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 如需詳細資訊，請參閱 [如何：將書籤控制項加入至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
+ 在文件層級專案中，您可以加入<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件在設計階段或執行階段。 在 VSTO 增益集專案中，您可以加入<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱[如何： 加入書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
 
-## <a name="binding-data-to-the-control"></a>將資料繫結至控制項
+## <a name="bind-data-to-the-control"></a>資料繫結至控制項
  <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項支援簡單資料繫結。 書籤應該使用 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性繫結至資料來源。 書籤的預設資料繫結屬性是 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 屬性。
 
  如果更新繫結資料集中，<xref:Microsoft.Office.Tools.Word.Bookmark>控制項顯示的變更。
 
- 在文件層級專案中，您也可以使用 [資料來源]  視窗，將資料繫結至書籤。 如需詳細資訊，請參閱 [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)。
+ 在文件層級專案中，您也可以使用 [資料來源]  視窗，將資料繫結至書籤。 如需詳細資訊，請參閱[How to： 從物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)。
 
 ## <a name="formatting"></a>格式化
  可套用至 <xref:Microsoft.Office.Interop.Word.Bookmark> 的格式，也可套用至 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。 此格式包括字型、 縮排、 間距、 編號，和樣式。
 
-## <a name="assigning-text-to-the-bookmark"></a>指派文字給書籤
+## <a name="assign-text-to-the-bookmark"></a>指派文字給書籤
  其他的差異<xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>物件和<xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>控制項是指派文字給書籤時，它的運作方式。 如果您將文字指派給長度為零<xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>、 將文字附加至書籤右側，以及書籤保留長度為零。 不過，如果您將文字指派給長度為零<xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>、 將文字插入書籤和書籤的長度會延長為插入的字元總數。
 
  <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>控制項也有<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>屬性。 這個屬性是不同於<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>屬性上提供<xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType>屬性<xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>控制項，或<xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType>屬性<xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>物件。
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/28/2018
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|使用這個屬性可顯示書籤內的文字，並將書籤保留在文件上。 指派文字給書籤會擴充書籤範圍，但不會刪除書籤。<br /><br /> 例如， `Bookmark1.Text = "Hello world"` 會將文字插入書籤，並保留完整的書籤。|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|使用這個屬性可顯示書籤位置上的文字，並自動刪除書籤。 例如， `Bookmark1.Range.Text = "Hello world"` 會將文字插入書籤，並刪除書籤。|
 
-## <a name="renaming-the-control-at-design-time"></a>在設計階段重新命名控制項
+## <a name="rename-the-control-at-design-time"></a>在設計階段重新命名控制項
  在文件層級專案中，當您將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項從 [工具箱]  拖曳至文件時，Visual Studio 會自動產生該控制項的名稱。 您可以在 [屬性]  視窗中，變更控制項的名稱。
 
 ## <a name="overlapping-controls"></a>重疊控制項
@@ -112,8 +112,8 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)
-- [如何：將書籤控制項新增至 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [逐步解說：建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
+- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [逐步解說： 建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

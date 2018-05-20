@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>原始檔編輯器
 
@@ -24,7 +24,6 @@ Visual Studio for Mac 中的原始檔編輯器允許能存取 IDE 中所有其�
 在整個程式碼中有效率地檢視和移動是開發工作流程中不可或缺的部分。 決定如何檢視和維護程式碼是個人決策，而且不同的開發人員會不同，並且不同的專案通常也會不同。
 
 Visual Studio for Mac 提供許多功能強大的功能，讓跨平台開發更容易進行且更具可用性。 下列各節描述一些重點。
-
 
 ## <a name="code-folding"></a>程式碼摺疊功能
 
@@ -62,25 +61,20 @@ Visual Studio for Mac 提供許多功能強大的功能，讓跨平台開發更�
 
  ![顯示的空白字元](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>尺規
 
 資料行尺規適用於判斷行長度，特別是處理具有行長度指導方針的小組時。 巡覽至 [Visual Studio] > [喜好設定] > [文字編輯器] > [標記與尺規]，並選取 (或取消選取) [顯示資料行尺規]，即可開啟或關閉資料行尺規，如下圖所示：
 
- ![](media/source-editor-image5.png)
+ ![醒目提示 [顯示資料行尺規] 的 [喜好設定] 對話方塊](media/source-editor-image5.png)
 
  這會顯示為原始檔編輯器中的淺灰色垂直線。
-
 
 ## <a name="highlight-identifier-references"></a>反白顯示識別碼參考 (Highlight identifier references)
 
 開啟 [反白顯示識別碼參考] 選項時，您可以選取原始程式碼中的任何符號，而原始檔編輯器將會針對該檔案中所有其他參考提供視覺效果指南。 若要開啟此選項，請移至 [Visual Studio] > [喜好設定] > [文字編輯器] > [標記與尺規]，並選取 [反白顯示識別碼參考]，如下圖所示：
 
-![](media/source-editor-image6.png)
+![醒目提示 [醒目提示識別碼參考] 的 [喜好設定] 對話方塊](media/source-editor-image6.png)
 
 反白顯示的色彩也適用於表示要指派或參考的項目。 如果指派某個項目，則會以紅色將它反白顯示；如果參考它，則會以藍色反白顯示：
 
-![](media/source-editor-image7.png)
-
-
-
+![顯示醒目提示色彩的範例](media/source-editor-image7.png)

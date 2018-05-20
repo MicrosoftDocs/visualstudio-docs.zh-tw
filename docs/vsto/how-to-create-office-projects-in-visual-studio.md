@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
 4.  在專案範本清單中，選取 VSTO 增益集專案範本。 如需可用 VSTO 增益集專案範本的清單，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
     > [!NOTE]  
-    >  如果專案範本不會顯示當您選取**Office 增益集** 節點，請確定**.NET Framework 4**或更新版本已在對話方塊頂端的下拉式方塊中選取。 Office 專案範本會顯示這兩個版本的 .NET Framework。  
+    >  如果專案範本不會顯示當您選取**Office 增益集** 節點，請確定 **.NET Framework 4**或更新版本已在對話方塊頂端的下拉式方塊中選取。 Office 專案範本會顯示這兩個版本的 .NET Framework。  
   
 5.  在**名稱**方塊中，輸入專案的名稱。 根據預設，專案名稱會與方案名稱相同。  
   
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      位置具有下列格式：  
   
-    -   [*磁碟機*\]: \  
+      * [*磁碟機*\]\:  
   
-    -   \\\\*伺服器*\\*共用*  
+      * \\\\*伺服器*\\*共用*  
   
      請勿在位置中使用下列字元：  
   
-    -   星號 (*)  
+      * 星號 (*)  
   
-    -   分隔號 (|)  
+      * 分隔號 (|)  
   
-    -   冒號 (:) (除非後接磁碟機代號)。  
+      * 冒號 (:) (除非後接磁碟機代號)。  
   
-    -   雙引號 (") (包含空格的路徑不需要引號。)  
+      * 雙引號 (") (包含空格的路徑不需要引號。)  
   
-    -   小於 (\<)  
+      * 小於 (\<)  
   
-    -   大於 (>)  
+      * 大於 (>)  
   
-    -   問號 (?)  
+      * 問號 (?)  
   
-    -   百分比符號 (%)  
+      * 百分比符號 (%)  
   
-7.  選擇 [確定]  按鈕。  
+7. 選擇 [確定]  按鈕。
   
     > [!NOTE]  
     >  建立增益集專案時，一律會進行儲存， 而無法建立為暫存專案。 如需暫存專案的詳細資訊，請參閱[暫存專案](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/16/2018
 4.  在專案範本清單中，選取文件層級的專案範本。 如需可用的文件層級專案範本的清單，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
     > [!NOTE]  
-    >  如果專案範本不會顯示當您選取**Office 增益集** 節點，請確定**.NET Framework 4**或更新版本已在對話方塊頂端的下拉式方塊中選取。 Office 專案範本會顯示這兩個版本的 .NET Framework。  
+    >  如果專案範本不會顯示當您選取**Office 增益集** 節點，請確定 **.NET Framework 4**或更新版本已在對話方塊頂端的下拉式方塊中選取。 Office 專案範本會顯示這兩個版本的 .NET Framework。  
   
 5.  在**名稱**方塊中，輸入專案的名稱。 根據預設，此名稱也適用於文件。 如果您的 IDE 設定為使用 Visual C# 開發設定或一般開發設定，也請輸入位置和方案名稱。  
   
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      位置具有下列格式：  
   
-    -   [*磁碟機*\]: \  
+    -   [*磁碟機*\]\:  
   
     -   \\\\*伺服器*\\*共用*  
   

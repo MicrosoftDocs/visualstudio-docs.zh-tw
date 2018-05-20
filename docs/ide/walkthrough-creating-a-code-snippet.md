@@ -19,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b5d71994539f313a7a9296d7f753174139756f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>逐步解說：建立程式碼片段
-只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝 ([工具]、[程式碼片段管理員])。
+# <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
+只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
 
 ## <a name="snippet-template"></a>程式碼片段範本
  以下是基本程式碼片段範本：
@@ -48,15 +48,15 @@ ms.lasthandoff: 04/26/2018
 </CodeSnippets>
 ```
 
-### <a name="to-create-a-code-snippet"></a>建立程式碼片段
+### <a name="create-a-code-snippet"></a>建立程式碼片段
 
 1.  在 Visual Studio 中建立新的 XML 檔案，並新增上面所示的範本。
 
-2.  在 Title 項目中，填入程式碼片段標題，例如 "Hello World VB"。
+2.  在 **Title** 項目中，填入程式碼片段標題，例如 "Hello World VB"。
 
-3.  在 [程式碼] 項目的 [語言] 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
+3.  在 **Code** 項目的 **Languages** 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
 
-4.  例如，在 Code 項目的 CDATA 區段中新增一些程式碼：
+4.  例如，在 **Code** 項目的 **CDATA** 區段中新增一些程式碼：
 
     ```xml
     <Code Language="VB">
@@ -64,11 +64,11 @@ ms.lasthandoff: 04/26/2018
     </Code>
     ```
 
-5.  將程式碼片段儲存為 VBCodeSnippet.snippet。
+5.  將程式碼片段儲存為 *VBCodeSnippet.snippet*。
 
-### <a name="to-add-a-code-snippet-to-visual-studio"></a>將程式碼片段新增至 Visual Studio
+### <a name="add-a-code-snippet-to-visual-studio"></a>將程式碼片段新增至 Visual Studio
 
-1.  您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟 [程式碼片段管理員] ([工具]、[程式碼片段管理員])。
+1.  您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟 [程式碼片段管理員] ([工具] > [程式碼片段管理員])。
 
 2.  按一下 [匯出] 按鈕。
 
@@ -78,19 +78,19 @@ ms.lasthandoff: 04/26/2018
 
 5.  程式碼片段會複製至下列位置：
 
-     %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets
+     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，依序選擇操作功能表中的 [程式碼片段]、[插入程式碼片段] 和 [我的程式碼片段]。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
+6.  開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，選擇操作功能表中的 [程式碼片段] > [插入程式碼片段] 和 [我的程式碼片段]。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
 
     `Console.WriteLine("Hello, World!")` 會插入至程式碼檔中。
 
-### <a name="adding-description-and-shortcut-fields"></a>新增描述和捷徑欄位
+### <a name="add-description-and-shortcut-fields"></a>新增描述和捷徑欄位
 
-1.  描述欄位會提供您的程式碼片段在 [程式碼片段管理員] 中檢視時的詳細資訊。 捷徑是使用者可鍵入以插入程式碼片段的標記。 開啟檔案 %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet，以編輯您已新增的程式碼片段。
+1.  描述欄位會提供您的程式碼片段在 [程式碼片段管理員] 中檢視時的詳細資訊。 捷徑是使用者可鍵入以插入程式碼片段的標記。 開啟檔案 *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*，以編輯您已新增的程式碼片段。
 
-2.  將 Author 和 Description 項目新增至 Header 項目，並填入其資料。
+2.  將 **Author** 和 **Description** 項目新增至 **Header** 項目，並填入其資料。
 
-3.  Header 項目看起來應該類似這樣：
+3.  **Header** 項目看起來應該類似這樣：
 
     ```xml
     <Header>
@@ -102,7 +102,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  開啟 [程式碼片段管理員]，然後選取程式碼片段。 在右窗格中，您應該會看到現在已填入 [描述] 和 [作者] 欄位。
 
-5.  若要新增捷徑，請新增 Shortcut 項目以及 Author 和 Description 項目：
+5.  若要新增捷徑，請新增 **Shortcut** 項目以及 **Author** 和 **Description** 項目：
 
     ```xml
     <Header>
@@ -119,13 +119,13 @@ ms.lasthandoff: 04/26/2018
 
     會插入程式碼片段程式碼。
 
-### <a name="to-add-references-and-imports"></a>新增 References 和 Imports
+### <a name="add-references-and-imports"></a>新增 References 和 Imports
 
-1.  您可以使用 References 項目新增專案的參考，並使用 Imports 項目新增 Imports 宣告  (這也適用於 C#)。例如，如果您將程式碼範例中的 `Console.WriteLine` 變更為 `MessageBox.Show`，則可能需要將 System.Windows.Forms.dll 組件新增至專案。
+1.  您可以使用 **References** 項目新增專案的參考，並使用 **Imports** 項目新增 Imports 宣告  (這也適用於 C#)。例如，如果您將程式碼範例中的 `Console.WriteLine` 變更為 `MessageBox.Show`，則可能需要將 *System.Windows.Forms.dll* 組件新增至專案。
 
 2.  開啟程式碼片段。
 
-3.  在 Snippet 項目下新增 References 項目：
+3.  在 **Snippet** 項目下新增 **References** 項目：
 
     ```xml
     <References>
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/26/2018
     </References>
     ```
 
-4.  在 Snippet 項目下新增 Imports 項目：
+4.  在 **Snippet** 項目下新增 **Imports** 項目：
 
     ```xml
     <Imports>
@@ -145,7 +145,7 @@ ms.lasthandoff: 04/26/2018
     </Imports>
     ```
 
-5.  將 CDATA 區段變更如下：
+5.  將 **CDATA** 區段變更如下：
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
@@ -155,21 +155,21 @@ ms.lasthandoff: 04/26/2018
 
 7.  開啟 Visual Basic 專案，並新增程式碼片段。
 
-8.  您會在程式碼檔頂端看到 Imports 陳述式：
+8.  您會在程式碼檔案頂端看到 `Imports` 陳述式：
 
     ```vb
     Imports System.Windows.Forms
     ```
 
-9. 查看專案的屬性。 [參考] 索引標籤會包含 System.Windows.Forms.dll 的參考。
+9. 查看專案的屬性。 [參考] 索引標籤會包含 *System.Windows.Forms.dll* 的參考。
 
-### <a name="adding-replacements"></a>新增取代
+### <a name="add-replacements"></a>新增取代
 
 1.  您可能想要讓使用者取代程式碼片段的各部分；例如，如果您新增變數，而且想要使用者將變數取代為目前專案中的變數。 您可以提供兩種類型的取代：常值和物件。 常值是某種類型的字串 (字串常值、變數名稱或數值的字串表示法)。 物件是字串以外的某種類型的執行個體。 在此程序中，您會宣告常值取代和物件取代，並變更程式碼以參考這些取代。
 
 2.  開啟程式碼片段。
 
-3.  此範例使用 SQL 連接字串，因此您需要變更 Imports 和 References 項目來新增適當的參考：
+3.  此範例使用 SQL 連接字串，因此您需要變更 **Imports** 和 **References** 項目來新增適當的參考：
 
     ```xml
     <References>
@@ -190,7 +190,7 @@ ms.lasthandoff: 04/26/2018
     </Imports>
     ```
 
-4.  若要宣告 SQL 連接字串的常值取代，請在 Snippet 項目下新增 Declarations 項目，並在其中新增具有取代識別碼、工具提示和預設值之子項目的 Literal 項目：
+4.  若要宣告 SQL 連接字串的常值取代，請在 **Snippet** 項目下新增 **Declarations** 項目，並在其中新增具有取代識別碼、工具提示和預設值之子項目的 **Literal** 項目：
 
     ```xml
     <Declarations>
@@ -202,7 +202,7 @@ ms.lasthandoff: 04/26/2018
     </Declarations>
     ```
 
-5.  若要宣告 SQL 連線的物件取代，請新增 Declarations 項目內的 Object 項目，並新增識別碼、物件類型、工具提示和預設值的子項目。 產生的 Declarations 項目看起來應該像這樣：
+5.  若要宣告 SQL 連線的物件取代，請新增 **Declarations** 項目內的 **Object** 項目，並新增識別碼、物件類型、工具提示和預設值的子項目。 產生的 **Declarations** 項目看起來應該像這樣：
 
     ```xml
     <Declarations>

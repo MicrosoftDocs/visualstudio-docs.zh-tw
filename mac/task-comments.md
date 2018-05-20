@@ -1,15 +1,15 @@
 ---
 title: 工作註解
-description: ''
+description: 新增程式碼的工作註解
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: c119af47cc3b592033a68b0ec543afa86140c77a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 23ce804476b6495d45e114728b287c1f5f85d1d9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="task-comments"></a>工作註解
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 04/20/2018
 
 若要新增工作註解，請新增包含工作關鍵字的註解。 例如: 
 
-```
+```csharp
 //TODO: Finish this for all properties.
 ```
 
