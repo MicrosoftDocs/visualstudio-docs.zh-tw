@@ -1,15 +1,15 @@
 ---
 title: 建立和編輯組建組態
-description: ''
+description: 本文描述如何在 Visual Studio for Mac 中建立組建組態
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: a3cd55998d3738b5377fe9859b7e212cb7e8aa8d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: bf097924da2640faed75f4dcef0c82698078911b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
 

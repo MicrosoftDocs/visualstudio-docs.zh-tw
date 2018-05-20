@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>如何：實作介面 (類別設計工具)
+# <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在類別設計工具中實作介面
 
 在 [類別設計工具] 中，您可以將介面連線至替介面方法提供程式碼的類別，以在類別圖表上實作介面。 [類別設計工具] 會產生介面實作，並將介面和類別之間的關聯性顯示為繼承關聯性。 您可以在介面與類別之間繪製繼承線，或從 [類別檢視] 中拖曳介面，來實作介面。
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
      會顯示棒棒糖符號，附加至類別，並且具有介面名稱的標籤會識別繼承關聯性。 Visual Studio 會為所有介面成員產生虛設常式。
 
- 如需詳細資訊，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
+如需詳細資訊，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>從 [類別檢視] 視窗實作介面
 

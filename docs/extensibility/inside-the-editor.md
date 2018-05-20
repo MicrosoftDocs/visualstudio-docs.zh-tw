@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>在編輯器
 編輯器 是由不同子系統，設計用來將編輯器 中 文字 檢視和使用者介面文字模型分開的數字。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
  文字模型子系統是免費的使用者介面 (UI) 的概念。 比方說，不是負責文字格式或文字版面配置，它不了解 visual 裝飾時，可能會以文字產生關聯。  
   
- 文字模型子系統的公用型別都包含在 Microsoft.VisualStudio.Text.Data.dll 和 Microsoft.VisualStudio.CoreUtilitiy.dll，取決於.NET Framework 基底類別程式庫和 Managed Extensibility Framework (MEF)。  
+ 文字模型子系統的公用型別都包含在 Microsoft.VisualStudio.Text.Data.dll 和 Microsoft.VisualStudio.CoreUtility.dll，取決於.NET Framework 基底類別程式庫和 Managed Extensibility Framework (MEF)。  
   
 ### <a name="text-view-subsystem"></a>文字檢視子系統  
  文字檢視子系統負責格式化和顯示文字。 這個子系統中的類型可分為兩個圖層、 根據型別是否依賴 Windows Presentation Foundation (WPF)。 最重要的型別是<xref:Microsoft.VisualStudio.Text.Editor.ITextView>和<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>，控制要顯示的文字行的集合以及插入號、 選取項目和使用 WPF UI 項目在裝飾文字的機能。 這個子系統也提供文字周圍的邊界會顯示區域。 這些邊界可加以擴充，而且可以包含不同類型的內容和視覺效果。 邊界的範例包括列數字的顯示和捲軸。  

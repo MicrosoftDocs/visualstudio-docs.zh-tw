@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/26/2018
     > [!WARNING]
     > 將會錄製所有在桌面上執行的動作。 如果您執行的動作可能會導致在錄製中包括敏感性資料，則請暫停錄製。
 
-     **若要刪除錯誤錄製的動作**，請選擇 [編輯動作]。
+     **若要刪除錯誤錄製的動作**，請選擇 [編輯步驟]。
 
      **若要產生複寫動作的程式碼**，請選擇 [產生程式碼] 圖示，並輸入自動程式化 UI 測試方法的名稱和描述。
 
@@ -273,9 +273,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 在您建立自動程式化 UI 測試之後，就可以在 Visual Studio 中使用下列任何工具對其進行編輯：
 
-- **自動程式化 UI 測試產生器：**使用自動程式化 UI 測試產生器，將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
+- **自動程式化 UI 測試產生器：** 使用自動程式化 UI 測試產生器，將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
 
-- **自動程式化 UI 測試編輯器：**自動程式化 UI 測試編輯器可讓您輕鬆地修改自動程式化 UI 測試。 您可以使用自動程式化 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
+- **自動程式化 UI 測試編輯器：** 自動程式化 UI 測試編輯器可讓您輕鬆地修改自動程式化 UI 測試。 您可以使用自動程式化 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
 - **程式碼編輯器：**
 
@@ -429,7 +429,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="whats-next"></a>後續步驟
 
-**執行自動程式化 UI 測試的其他選項：**您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您也可以從 Microsoft Test Manager，或從 Team Foundation Build 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
+**執行自動程式化 UI 測試的其他選項：** 您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您也可以從 Microsoft Test Manager，或從 Team Foundation Build 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
 
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
 
@@ -437,7 +437,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [如何：將您的測試代理程式設定為執行與桌面互動的測試](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**加入自訂控制項的支援：**自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
+**加入自訂控制項的支援：** 自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
 
 - [啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)
 

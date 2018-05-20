@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="understand-build-platforms"></a>了解建置平台
+# <a name="understand-build-platforms"></a>了解組建平台
 
 您可以儲存套用至不同目標平台之不同版本的方案和專案屬性。 例如，您可以建立以 x86 平台為目標的偵錯組態以及以 x64 平台為目標的偵錯組態。 您可以快速變更使用中平台，以輕鬆地建置多個組態。
 

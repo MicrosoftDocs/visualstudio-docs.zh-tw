@@ -1,5 +1,5 @@
 ---
-title: 自訂文件屬性概觀 |Microsoft 文件
+title: 自訂文件屬性概觀
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+# <a name="custom-document-properties-overview"></a>自訂文件屬性概觀
 
-當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的文件：\_組件位置和\_AssemblyName。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以便啟動自訂。 如需詳細資訊，請參閱[Office 方案的架構在 Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
+當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的文件：\_組件位置和\_AssemblyName。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以便啟動自訂。 如需詳細資訊，請參閱[架構的 Office 方案在 Visual Studio 中](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -54,8 +54,8 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="see-also"></a>另請參閱
 
-[在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
-[應用程式和部署資訊清單在 Office 方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [How to： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[How to： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
+- [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)

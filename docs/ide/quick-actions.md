@@ -1,5 +1,5 @@
 ---
-title: 快速動作
+title: 快速動作、燈泡及螺絲起子
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -29,21 +29,27 @@ ms.lasthandoff: 04/28/2018
 - 套用重構作業 (例如，[內嵌暫存變數](../ide/reference/inline-temporary-variable.md))
 - 產生程式碼 (例如，[引進區域變數](../ide/reference/introduce-local-variable.md))
 
-使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png) 或按 **Ctrl**+**.** 來套用快速動作 當游標位於可使用動作的程式碼行上時。 如果有紅色曲線，而且 Visual Studio 有針對如何修正問題的建議，您就會看到燈泡。 例如，如果紅色曲線指出一個錯誤，當該錯誤有可用的修正時，便會出現燈泡。
+快速動作的套用方式包括使用燈泡 ![燈泡圖示](media/light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 圖示，以及按 **Ctrl**+**.** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有該錯誤可用的修正程式，您就會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
 好比說，協力廠商可以針對任何語言，在 SDK 當中提供自訂診斷和建議，而 Visual Studio 燈泡會依據這些規則亮燈。
 
-## <a name="to-see-a-light-bulb"></a>如何看到燈泡
+## <a name="icons"></a>圖示
 
-1. 在許多情況下，燈泡會在您將滑鼠指標停留在錯誤點上方時自動出現；或者，當您將插入號移到含有錯誤的字行時，燈泡會出現在編輯器左邊界。 當您看到紅色曲線時，可以將滑鼠暫留在其上方，即可顯示燈泡。 當您使用滑鼠或鍵盤前往發生問題之字行中的任何地方，也可以使燈泡顯示。
+當有快速動作可用時，顯示的圖示會指出可用的修正或重構類型。 「螺絲起子」![螺絲起子圖示](media/screwdriver-icon.png)圖示表示有可變更程式碼的動作，但不一定要使用。 「黃色燈泡」![燈泡圖示](media/light-bulb-icon.png)圖示表示有「應」執行的動作，以改善程式碼。 「錯誤燈泡」![錯誤燈泡圖示](media/error-light-bulb-icon.png)圖示表示有動作可修正您程式碼中的錯誤。
 
-1. 在字行任何地方按 **Ctrl**+**.**， 可叫用燈泡，直接前往可能的修正方法清單。
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>顯示燈泡或螺絲起子
+
+- 如果有可用的修正，燈泡會在您將滑鼠暫留於錯誤位置的同時顯示。
 
    ![當滑鼠游標暫留時的燈泡](../ide/media/vs2015_lightbulb_hover.png)
 
+- 燈泡和螺絲起子會在您將游標移到可使用快速動作的程式碼上時，顯示在編輯器的左側邊界。
+
+- 在字行任何地方按 **Ctrl**+**.**， 即可看到可用快速動作與重構的清單。
+
 ## <a name="to-see-potential-fixes"></a>如何看到可能的修正方法
 
-按一下向下箭號或 [顯示可能的修正] 連結，就會顯示燈泡可以提供給您的快速動作清單。
+選取燈泡旁的向下箭號或 [顯示可能的修正] 連結，就會顯示可用的快速動作清單。
 
 ![放大的燈泡](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

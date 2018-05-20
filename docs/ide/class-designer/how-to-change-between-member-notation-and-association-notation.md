@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成員標記法和關聯標記法之間變更 (類別設計工具)
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 
 使用 [類別設計工具] 時，您可以在成員標記法與關聯標記法之間切換，以變更兩種類型在類別圖表中的關聯性代表方式。 將成員顯示為關聯線時，通常可提供類型關聯方式的實用視覺效果。
 
@@ -41,9 +41,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-change-association-notation-to-member-notation"></a>若要將關聯標記法變更為成員標記法
 
--   在類別圖表中，以滑鼠右鍵按一下關聯線，然後視需要選擇 [顯示為屬性] 或 [顯示為欄位]。
-
-     關聯線隨即消失，而在圖表內該類型圖案的適當區間中會顯示屬性。
+在類別圖表中，以滑鼠右鍵按一下關聯線，然後視需要選擇 [顯示為屬性] 或 [顯示為欄位]。 關聯線隨即消失，而在圖表內該類型圖案的適當區間中會顯示屬性。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,311 +1,327 @@
 ---
-title: 尋找 CodeLens 的程式碼變更和其他記錄 | Microsoft Docs
-ms.custom: ''
+title: 尋找 CodeLens 的程式碼變更和其他記錄
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e20081320109e5334360d0cc1f38b187f05d574
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21724619a0dd3b89582c716a5df0fdff6041b682
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
-當您了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 尋找程式碼參考、程式碼的變更、已連結的 Bug、工作項目、程式碼檢閱和單元測試。
+CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 您可以尋找程式碼片段的參考、程式碼的變更、已連結的錯誤、工作項目、程式碼檢閱和單元測試。
 
 > [!NOTE]
-> CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。  
+> CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。
 
-請參閱在解決方案中的何處使用程式碼的各個部分，及使用方式：  
+請參閱在解決方案中的何處使用程式碼的各個部分，及使用方式：
 
-![程式碼編輯器中的 CodeLens 指標](../ide/media/codelensoverview.png "CodeLensOverview")  
+![[程式碼編輯器] 中的 CodeLens 指標](../ide/media/codelens-overview.png)
 
-連絡您的小組有關程式碼的變更，而無須離開編輯器：  
+連絡您的小組有關程式碼的變更，而無須離開編輯器：
 
-![CodeLens &#45; 連絡您的小組](../ide/media/codelensovervew2.png "CodeLensOvervew2")  
+![CodeLens - 連絡您的小組](../ide/media/codelens-contact-info.png)
 
-若要選擇要查看或是開啟和關閉 CodeLens 的指標，請移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。  
+若要選擇要查看或是開啟和關閉 CodeLens 的指標，請移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。
 
-## <a name="FindReferences"></a> 尋找您程式碼的參考
+## <a name="find-references-to-your-code"></a>尋找您程式碼的參考
 
-您需要下列項目：
+您可以在 C# 或 Visual Basic 程式碼中找到參考。
 
--  Visual Studio Enterprise 或 Visual Studio Professional
+1. 選擇**參考**指標或按 **Alt**+**2**。
 
--  C# 或 Visual Basic 程式碼
+   ![CodeLens 參考](../ide/media/codelens-view-references.png)
 
-請選擇 [參考]  指標 (**[Alt+2]**)。 如果您看到 [0 個參考]，代表您沒有來自 C# 或 Visual Basic 程式碼的參考。 這不包含來自其他項目的參考，例如 .xaml 和 .aspx 檔案。
+   > [!NOTE]
+   > 如果指標顯示 **0 個參考**，代表您沒有來自 C# 或 Visual Basic 程式碼的參考。 不過，其他項目 (例如 *.xaml* 和 *.aspx* 檔案) 可能會有參考。
 
-![CodeLens &#45; 選擇參考指標](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+2. 若要檢視參考程式碼，請將滑鼠移至清單中的該參考上方。
 
-若要檢視參考程式碼，請將滑鼠移至該參考上方。  
+   ![CodeLens - 查看參考](../ide/media/codelens-peek-reference.png)
 
-![CodeLens &#45; 查看參考](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+3. 若要開啟包含參考的檔案，請按兩下參考。
 
-若要開啟包含參考的檔案，請按兩下參考。  
+### <a name="code-maps"></a>Code Map
 
-若要查看此程式碼與其參考之間的關聯性，請[建立 Code Map](../modeling/map-dependencies-across-your-solutions.md)，並選擇 Code Map 捷徑功能表的 [顯示所有參考] 。
+若要查看此程式碼與其參考之間的關聯性，請[建立 Code Map](../modeling/map-dependencies-across-your-solutions.md)。 在 Code Map 捷徑功能表中，選取 [顯示所有參考]。
 
-![CodeLens &#45; Code Map 參考](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+![CodeLens - Code Map 上的參考](../ide/media/codelensmappedreferences.png)
 
-## <a name="FindCodeHistory"></a> 尋找您程式碼的記錄和連結的項目
+## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>尋找您程式碼中的變更
 
-檢閱您的程式碼記錄，以了解程式碼發生了什麼事。 或者，請先檢閱變更內容，再將其合併到您的程式碼中，如此可更了解其他分支中的變更可能會如何影響您的程式碼。
+請檢查您的程式碼記錄，以了解程式碼發生了什麼事。 或者，請先檢閱變更內容，再將其合併到您的程式碼中，如此可更了解其他分支中的變更可能會如何影響您的程式碼。
 
-您需要下列項目：
+您需要：
 
 - Visual Studio Enterprise 或 Visual Studio Professional
 
 - Team Foundation Server 2013 或更新版本、Visual Studio Team Services 或 Git
 
-- [Lync 2010 或更新版本或是商務用 Skype](https://technet.microsoft.com/office/dn788773)，以從程式碼編輯器連絡您的小組
+- [商務用 Skype](/skypeforbusiness/) 或 Lync 2010 或更新版本，以從程式碼編輯器連絡您的小組
 
-針對 Team Foundation 版本控制 (TFVC) 或 Git 儲存的 C# 或 Visual Basic 程式碼，您將在類別與方法層級取得 CodeLens 詳細資訊 (「程式碼元素層級」指標)。 如果您的 Git 儲存機制裝載在 TfGit 中，您也會取得 TFS 工作項目的連結。  
+針對 Team Foundation 版本控制 (TFVC) 或 Git 儲存的 C# 或 Visual Basic 程式碼，您將在類別與方法層級取得 CodeLens 詳細資訊 (「程式碼項目層級」指標)。 如果您的 Git 儲存機制裝載在 TfGit 中，您也會取得 TFS 工作項目的連結。
 
-![程式碼項目&#45;層級指標](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+![程式碼項目層級指標](../ide/media/codelens-element-level-indicators.png)
 
-對於可以在 Visual Studio 編輯器中開啟的所有其他類型的檔案，將可於視窗的下方取得整個檔案的 CodeLens 詳細資料 (*檔案層級* 指標)。
+對於 *.cs* 或 *.vb* 之外的檔案類型，您可於視窗的下方取得整個檔案的 CodeLens 詳細資料 (「檔案層級」指標)。
 
-![檔案&#45;層級 CodeLens 指標](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+![檔案層級的 CodeLens 指標](../ide/media/almcodelensfilelevelindicators.png)
 
-若要使用鍵盤來選取指標，請按住 **Alt** 鍵以顯示相關數字鍵。  
+### <a name="code-element-level-indicators"></a>程式碼項目層級指標
 
-![按 Alt 鍵以查看鍵盤存取號碼](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+程式碼項目層級指標可讓您查看哪些人變更了您的程式碼，以及他們進行了哪些變更。 程式碼項目層級指標適用於 C# 和 Visual Basic 程式碼。
 
-### <a name="find-changes-in-your-code"></a>尋找您程式碼中的變更
+當您使用 Team Foundation Server 或 Visual Studio Team Services 中的 Team Foundation 版本控制 (TFVC) 時，這就是您所看到的樣子：
 
-在程式碼項目層級指標中，找出誰變更了您的 C# 或 Visual Basic 程式碼，以及他們做的變更。 當您使用 Team Foundation Server 或 Visual Studio Team Services 中的 Team Foundation 版本控制 (TFVC) 時，這就是您所看到的樣子。  
+![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelens-code-changes.png)
 
-![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/vsts/tfs-server/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更此時間週期。
 
-預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/vsts/tfs-server/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更這項限制。
+若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更]：
 
-若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更] 。  
+![顯示所有程式碼變更](../ide/media/codelens-show-all-file-changes.png)
 
-![顯示所有程式碼變更](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
+[記錄] 視窗隨即開啟：
 
-這會開啟變更集的 [記錄] 視窗。  
+![所有程式碼變更的歷程記錄視窗](../ide/media/codelenscodechangeshistory.png)
 
-![所有程式碼變更的歷程記錄視窗](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
+當您的檔案放在 Git 存放庫中，而您選擇程式碼項目層級變更指標時，這就是您所看到的樣子：
 
-當您的檔案放在 Git 儲存機制中，而您選擇程式碼項目層級變更指標時，這就是您所看到的。  
+![CodeLens：取得 Git 中的程式碼變更記錄](../ide/media/codelens-code-changes-git.png)
 
-![CodeLens：取得 Git 中的程式碼變更記錄](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+### <a name="file-level-indicators"></a>檔案層級指標
 
-在視窗下方的檔案層級指標中，尋找整個檔案 (除了 C# 和 Visual Basic 檔案) 的變更。  
+在視窗下方的檔案層級指標中，尋找整個檔案的變更：
 
-![CodeLens：取得程式碼檔案詳細資料](../ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+![CodeLens：取得程式碼檔案詳細資料](../ide/media/codelens-file-level.png)
 
-若要取得變更的更多詳細資料，請在該項目上按一下滑鼠右鍵。 視您使用的 TFVC 或 Git 之不同，您會取得一系列的選項以比較檔案的版本、檢視詳細資料及追蹤變更集，取得檔案所選的版本，並以對作者發送電子郵件表示出現該變更。 部分詳細資料會出現在 Team Explorer 中。  
+> [!NOTE]
+> 檔案層級指標適用於 C# 和 Visual Basic 檔案。
 
-您也可以看到在這段時間裡是誰變更了您的程式碼。 這可協助您找出小組變更的模式，並評估其影響。  
+若要取得變更的更多詳細資料，請在該項目上按一下滑鼠右鍵。 視您使用的 TFVC 或 Git 之不同，有一些選項可用來比較檔案的版本、檢視詳細資料及追蹤變更集，取得檔案所選的版本，並以對作者發送電子郵件表示出現該變更。 部分詳細資料會出現在 [Team Explorer] 中。
 
-![CodeLens：以圖形方式檢視程式碼變更記錄](../ide/media/codelens.png "CodeLens")  
+您也可以看到在這段時間裡是誰變更了您的程式碼。 這可協助您找出小組變更的模式，並評估其影響。
 
-#### <a name="find-changes-in-your-current-branch"></a>尋找您目前分支中的變更
+![CodeLens：以圖形方式檢視程式碼變更記錄](../ide/media/codelens.png)
 
-假設您的小組有多個分支 (主要分支和子系開發) 可減少中斷穩定程式碼的風險：  
+### <a name="find-changes-in-your-current-branch"></a>尋找您目前分支中的變更
 
-![CodeLens：了解您的程式碼於何時分支](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
+您的小組可能有多個分支 (例如，主要分支和子系開發分支) 可減少中斷穩定程式碼的風險。
 
-找出在主要分支中，有多少人對您的程式碼進行了多少變更 (**Alt + 6**)：  
+![CodeLens：了解您的程式碼於何時分支](../ide/media/codelensfirstbranchconceptual.png)
 
-![CodeLens：了解您的分支中有多少變更](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
+您可以藉由按 **Alt**+**6**，找出在主要分支中，有多少人對您的程式碼進行了多少變更：
 
-#### <a name="find-when-your-code-was-branched"></a>尋找何時將您的程式碼進行分支處理
+![CodeLens：了解您的分支中有多少變更](../ide/media/codelens-branch-changes.png)
 
-在子分支中移至您的程式碼 (例如，這裡的 Dev 分支)。 選擇變更指標 (**Alt + 6**)：  
+### <a name="find-when-your-code-was-branched"></a>尋找何時將您的程式碼進行分支處理
 
-![CodeLens：了解您的程式碼於何時分支](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
+若要尋找何時將您的程式碼進行分支處理，請巡覽至您在子分支中的程式碼。 然後，選取**變更**指標或按 **Alt**+**6**：
 
-#### <a name="find-incoming-changes-from-other-branches"></a>尋找其他分支傳入的變更
+![CodeLens：了解您的程式碼於何時分支](../ide/media/codelens-first-branch.png)
 
-![CodeLens：尋找其他分支的程式碼變更](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+### <a name="find-incoming-changes-from-other-branches"></a>尋找其他分支傳入的變更
 
-...像此處 Dev 分支中的這個 Bug 修正：
+![CodeLens：尋找其他分支的程式碼變更](../ide/media/codelensbranchchangecheckinconceptual.png)
 
-![CodeLens：移入其他分支中的變更](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
+您可以檢視傳入的變更。 在下列螢幕擷取畫面中，已在 "Dev" 分支中進行 Bug 修正：
 
-您可以檢閱這項變更，而不離開目前分支 (Main)：  
+![CodeLens：移入其他分支中的變更](../ide/media/codelens-branch-changes-dev.png)
 
-![CodeLens：查看從其他分支連入的變更](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
+您可以檢閱這項變更，而不離開目前分支 ("Main")：
 
-#### <a name="find-when-changes-got-merged"></a>尋找何時合併變更
+![CodeLens：查看從其他分支連入的變更](../ide/media/codelens-branch-changes-main.png)
 
-因此，您可以看到您分支中所含的變更：  
+### <a name="find-when-changes-got-merged"></a>尋找何時合併變更
 
-![CodeLens &#45; 分支之間合併的變更](../ide/media/codelensbranchmergedconceptual.png "CodeLensBranchMergedConceptual")  
+您可以看到何時合併變更，因此您可以判斷您的分支中包含哪些變更：
 
-例如，您在 Main 分支中的程式碼現在具有來自 Dev 分支的 Bug 修正：  
+![CodeLens - 分支之間合併的變更](../ide/media/codelensbranchmergedconceptual.png)
 
-![CodeLens &#45; 分支之間合併的變更](../ide/media/codelensbranchmergedscreenshot.png "CodeLensBranchMergedScreenshot")  
+例如，您在 Main 分支中的程式碼現在具有來自 "Dev" 分支的 Bug 修正：
 
-#### <a name="compare-an-incoming-change-with-your-local-version-shift--f10"></a>比較傳入變更與您的本機版本 (Shift + F10)
+![CodeLens - 分支之間合併的變更](../ide/media/codelens-branch-merged.png)
 
-![CodeLens：比較連入變更與本機變更](../ide/media/codelensbranchincomingchangemenu.png "CodeLensBranchIncomingChangeMenu")  
+### <a name="compare-an-incoming-change-with-your-local-version"></a>比較傳入變更與您的本機版本
 
-您也可以連按兩下變更集。
+按 **Shift**+**F10** 或按兩下變更集，比較傳入變更與您的本機版本。
 
-#### <a name="what-do-the-icons-mean"></a>圖示的意義為何？
+![CodeLens：比較連入變更與本機變更](../ide/media/codelens-branch-incoming-change-menu.png)
 
-|**圖示**|**變更的出處為何？**|  
-|--------------|-----------------------------------------|  
-|![CodeLens：從目前分支變更圖示](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|目前分支|  
-|![CodeLens &#45; 從父分支變更圖示](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|父分支|  
-|![CodeLens：從子分支變更圖示](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|子分支|  
-|![CodeLens &#45; 從對等分支變更圖示](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|對等分支|  
-|![CodeLens &#45; 從更遠分支變更圖示](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|比父分支、子分支或對等分支更遠的分支|  
-|![CodeLens：從父分支合併圖示](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|從父分支到子分支的合併|
-|![CodeLens：從子分支合併圖示](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|從子分支到父分支的合併|  
-|![CodeLens：從非相關的分支合併圖示](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|從不相關分支的合併 (無基礎的合併)|  
+### <a name="branch-icons"></a>分支圖示
 
-### <a name="find-linked-work-items"></a>尋找已連結的工作項目
+**分支**資料行中的圖示告訴您該分支與您正在處理的分支的相關性。
 
-![CodeLens &#45; 尋找特定程式碼的工作項目](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
+|**圖示**|**變更來源：**|
+|--------------|-----------------------------------------|
+|![CodeLens - 從目前分支變更圖示](../ide/media/codelensbranchcurrenticon.png)|目前分支|
+|![CodeLens： 從父分支變更圖示](../ide/media/codelensbranchparenticon.png)|父分支|
+|![CodeLens - 從子分支變更圖示](../ide/media/codelensbranchchildicon.png)|子分支|
+|![CodeLens：從對等分支變更圖示](../ide/media/codelensbranchpeericon.png)|對等分支|
+|![CodeLens：從遠離的分支變更圖示](../ide/media/codelensbranchfurtherawayicon.png)|比父分支、子分支或對等分支更遠的分支|
+|![CodeLens - 從父分支合併圖示](../ide/media/codelensbranchmergefromparenticon.png)|從父分支到子分支的合併|
+|![CodeLens - 從子分支合併圖示](../ide/media/codelensbranchmergefromchildicon.png)|從子分支到父分支的合併|
+|![CodeLens - 從非相關的分支合併圖示](../ide/media/codelensbranchmergefromunrelatedicon.png)|從不相關分支的合併 (無基礎的合併)|
 
-### <a name="find-linked-code-reviews"></a>尋找已連結的程式碼檢閱
+## <a name="linked-work-items"></a>連結的工作項目
 
-![CodeLens &#45; 檢視程式碼檢閱要求](../ide/media/codelenscodereviews.png "CodeLensCodeReviews")  
+選取**工作項目**指標，或按 **Alt**+**8**，尋找連結的工作項目。
 
-### <a name="find-linked-bugs"></a>尋找已連結的錯誤 (bug)
+![CodeLens - 尋找特定程式碼的工作項目](../ide/media/codelens-work-items.png)
 
-![CodeLens &#45; 尋找連結至變更集的錯誤](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")  
+## <a name="linked-code-reviews"></a>已連結的程式碼檢閱
 
-### <a name="contact-the-owner-of-an-item"></a>連絡項目擁有者
+選取**檢閱**指標，尋找已連結的程式碼檢閱。 若要使用鍵盤，請按住 **Alt** 鍵，然後按**向左鍵**或**向右鍵**以巡覽指標選項。
 
-![連絡項目擁有者](../ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
+![CodeLens - 檢視程式碼檢閱要求](../ide/media/codelens-code-reviews.png)
 
-開啟項目的捷徑功能表，查看連絡人選項。 如果您安裝了 Lync 或商務用 Skype，您會看到下列選項：  
+## <a name="linked-bugs"></a>已連結的錯誤
 
-![項目的連絡選項](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
+選取**錯誤**指標，或按 **Alt**+**7**，尋找已連結的錯誤。
 
-##  <a name="FindRunUnitTests"></a> 尋找您程式碼的單元測試
+![CodeLens - 尋找已連結至變更集的 Bug](../ide/media/codelens-bugs-changesets.png)
 
-深入了解因您的程式碼而存在的單元測試，而不需要開啟 [測試總管]。 您需要下列項目：  
+## <a name="contact-the-owner-of-an-item"></a>連絡項目擁有者
 
--   Visual Studio Enterprise 或 Visual Studio Professional  
-  
--   C# 或 Visual Basic 程式碼  
-  
--   [單元測試專案](../test/unit-test-your-code.md) ，其中具有應用程式程式碼的單元測試  
-  
-1.  移至包含單元測試的應用程式程式碼。  
-  
-2.  檢閱該程式碼的測試 (**Alt + 3**)。  
-  
-     ![CodeLens &#45; 在程式碼編輯器中選擇測試狀態](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
-  
-3.  如果您看到警告圖示 ![CodeLens &#45; 尚未執行的單元測試警告](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon")，請執行測試。  
-  
-     ![CodeLens &#45; 檢視尚未執行的單元測試](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
-  
-4.  若要檢閱測試的定義，請按兩下 CodeLens 指示器視窗中的測試項目，在編輯器中開啟程式碼檔案。  
-  
-     ![CodeLens &#45; 移至單元測試定義](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
-  
-5.  檢閱測試結果。 選擇測試狀態指標 (![CodeLens &#45; 單元測試失敗圖示](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") 或 ![CodeLens &#45; 單元測試通過圖示](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon"))，或按 **Alt + 1**。  
-  
-     ![CodeLens &#45; 查看單元測試結果](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
-  
-6.  若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄和連結的項目](#FindCodeHistory)。
+選取**作者**指標或按 **Alt**+**5**，尋找項目的作者。
 
-##  <a name="QA"></a> 問與答
+![連絡項目擁有者](../ide/media/codelens-contact-item-owner.png)
 
-###  <a name="ChangeOrTurnOff"></a> 問：如何關閉或開啟 CodeLens？ 又如何選擇要查看的指標？
+開啟項目的捷徑功能表，查看連絡人選項。 如果您安裝了 Lync 或商務用 Skype，您會看到下列選項：
 
-**答：**  除了參考指標之外，您可以關閉或開啟各個指標。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。  
-  
- 開啟指標之後，您也可以從指標開啟 CodeLens 選項。  
-  
- ![CodeLens &#45; 開啟或關閉指標](../ide/media/codelensturnoffonindicatorsfromcode.png "CodeLensTurnOffOnIndicatorsFromCode")  
-  
- 請使用 [編輯器] 視窗底部的＞形箭號圖示，開啟和關閉 CodeLens 檔案層級指標。  
-  
- ![開啟和關閉檔案&#45;層級指標](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
-  
-###  <a name="NoIndicators"></a> 問：CodeLens 在哪裡？
+![項目的連絡選項](../ide/media/codelens-item-contact-menu.png)
+
+## <a name="associated-unit-tests"></a>相關聯的單元測試
+
+您可以了解因您的 C# 或 Visual Basic 程式碼而存在的單元測試，而不需要開啟 [測試總管]。
+
+1. 移至包含相關聯[單元測試程式碼](../test/unit-test-your-code.md)的應用程式程式碼。
+
+2. 按 **Alt**+**3**，檢閱程式碼的測試。
+
+     ![CodeLens - 在 [程式碼編輯器] 中選擇測試狀態](../ide/media/codelens-choose-test-indicator.png)
+
+3. 如果您看到警告圖示 ![警告圖示](../ide/media/codelenstestwarningicon.png)，表示測試尚未執行，因此請執行它們。
+
+     ![CodeLens - 檢視尚未執行的單元測試](../ide/media/codelens-tests-not-yet-run.png)
+
+4. 若要檢閱測試的定義，請按兩下 CodeLens 指示器視窗中的測試項目，在編輯器中開啟程式碼檔案。
+
+     ![CodeLens - 移至單元測試定義](../ide/media/codelens-unit-test-definition.png)
+
+5. 若要檢閱測試結果，請選擇測試狀態指標 (![測試失敗的圖示](../ide/media/codelenstestfailedicon.png)或![測試成功圖示](../ide/media/codelenstestpassedicon.png))，或按 **Alt**+**1**。
+
+     ![CodeLens - 查看單元測試結果](../ide/media/codelens-unit-test-result.png)
+
+6. 若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄](#find-code-history)和連結的項目。
+
+## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
+
+若要使用鍵盤來選取指標，請按住 **Alt** 鍵來顯示相關數字鍵，然後按下與您要選取的指標對應的數字。
+
+![鍵盤存取數字](../ide/media/codelens-alt-keys.png)
+
+> [!NOTE]
+> 若要選取**檢閱**指標，請按住 **Alt**，同時使用左移鍵和右移鍵來巡覽。
+
+## <a name="q--a"></a>問與答
+
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>問：如何關閉或開啟 CodeLens，或選擇要查看哪些指標？
+
+**答：**  除了參考指標之外，您可以關閉或開啟各個指標。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。
+
+開啟指標之後，您也可以從指標開啟 CodeLens 選項。
+
+![CodeLens - 開啟或關閉指標](../ide/media/codelensturnoffonindicatorsfromcode.png)
+
+請使用 [編輯器] 視窗底部的＞形箭號圖示，開啟和關閉 CodeLens 檔案層級指標。
+
+![開啟及關閉檔案層級指標](../ide/media/codelensfilelevelonandoff.png)
+
+### <a name="q-where-is-codelens"></a>問：CodeLens 在哪裡？
 
 **答：** CodeLens 顯示在方法、類別、索引子和屬性層級的 C# 和 Visual Basic 程式碼中。 CodeLens 會顯示在所有其他類型檔案的檔案層級。
 
-- 請確定 CodeLens 已開啟。 請依序移至 [工具] 、[選項] 、[文字編輯器] 、[所有語言] 和 [CodeLens] 。  
+- 請確定 CodeLens 已開啟。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。
 
 - 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
 
-- 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 [確認您擁有小組成員權限](/vsts/work/scale/multiple-teams)。
+- 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 確認您擁有[小組成員權限](/vsts/work/scale/multiple-teams)。
 
-- 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 ([**Ctrl + Shift + B**])。
+- 應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 (**Ctrl**+**Shift**+**B**)。
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>問：為什麼看不到認可的工作項目詳細資料？
 
-**答：** 因為 CodeLens 在 TFS 中找不到工作項目，所以可能會發生這種情況。 請確認您已連接至具有那些工作項目的 Team 專案，以及您具有查看那些工作項目的權限。 如果認可描述具有 TFS 中工作項目 ID 的不正確資訊，則也可能會發生這種情況。  
+**答：** 因為 CodeLens 在 TFS 中找不到工作項目，所以可能會發生這種情況。 請確認您已連接至具有那些工作項目的 Team 專案，以及您具有查看那些工作項目的權限。 如果認可描述具有 TFS 中工作項目 ID 的不正確資訊，則工作項目也可能不會顯示。
 
-###  <a name="NoLync"></a> 問：為什麼看不到 Lync 或 Skype 指標？
+### <a name="q-why-dont-i-see-the-skype-indicators"></a>問：為何看不到 Skype 指標？
 
-**答：** 如果您未登入 Lync 或商務用 Skype、未安裝其中之一，或沒有支援的組態，則不會出現 Lync 或 Skype 指標。 不過您仍然可以傳送郵件：  
+**答：** 如果您未登入商務用 Skype、未安裝該產品，或沒有支援的組態，則不會出現 Skype 指標。 不過，您仍然可以傳送郵件：
 
-![CodeLens &#45; 透過郵件連絡變更集擁有人](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")  
+![CodeLens - 透過郵件連絡變更集擁有人](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
- **支援哪些 Lync 和 Skype 組態？**
+**支援哪些 Skype 和 Lync 組態？**
 
--   商務用 Skype (32 位元或 64 位元)  
+- 商務用 Skype (32 位元或 64 位元)
 
--   Lync 2010 或更新版本搭配 (32 位元或 64 位元)，但不是 Lync Basic 2013 的 Windows 8.1  
+- Lync 2010 或更新版本搭配 (32 位元或 64 位元)，但不是 Lync Basic 2013 的 Windows 8.1
 
-CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對所有 Visual Studio 當地語系化版本完成當地語系化。  
+CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對所有 Visual Studio 當地語系化版本完成當地語系化。
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>問：如何變更 CodeLens 的字型和色彩？
 
-**答：**移至 [工具] > [選項] > [環境] > [字型和色彩]。  
+**答：** 移至 [工具] > [選項] > [環境] > [字型和色彩]。
 
-![CodeLens &#45; 變更字型和色彩設定](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
+![CodeLens - 變更字型和色彩設定](../ide/media/codelensoptionsfontscolorssettings.png)
 
 使用鍵盤：
 
-1.  按 **Alt + T + O** 開啟 [ **選項** ] 方塊。  
+1. 按 **Alt**+**T**+**O** 來開啟 [選項] 對話方塊。
 
-2.  按 **向上鍵** 或 **向下鍵** 移至 [ **環境** ] 節點，然後按 **向左鍵** 展開節點。  
+2. 按 **向上鍵** 或 **向下鍵** 移至 [ **環境** ] 節點，然後按 **向左鍵** 展開節點。
 
-3.  按 **向下鍵** 移至 [ **字型和色彩**]。  
+3. 按 **向下鍵** 移至 [ **字型和色彩**]。
 
-4.  按 **Tab** 鍵移至 [顯示設定:] 清單，然後按**向下鍵**選取 [CodeLens]。  
+4. 按 **Tab** 鍵移至 [顯示設定:] 清單，然後按**向下鍵**選取 [CodeLens]。
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問：我可以移動 CodeLens 平視顯示窗嗎？
 
-**答︰**可以，選擇 ![CodeLens &#45; 停駐成為視窗](../ide/media/codelensdockwindow.png "CodeLensDockWindow")，來將 CodeLens 停駐成為視窗。  
+**答：** 可以，選擇![固定圖示](../ide/media/codelensdockwindow.png)可將 CodeLens 固定為視窗。
 
-![停駐 CodeLens 指標視窗](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
+![CodeLens 指標視窗中的 [固定] 按鈕](../ide/media/codelensselectdockwindow.png)
 
-![停駐的 CodeLens 參考視窗](../ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
+![固定的 CodeLens 參考視窗](../ide/media/codelensreferencesdockedwindow.png)
 
 ### <a name="q-how-do-i-refresh-the-indicators"></a>問：如何重新整理指標？
 
-**答：** 這取決於指標：  
+**答：** 這取決於指標：
 
--   **參考**：程式碼變更時，此指標會自動更新。 如果您將此指標固定為獨立視窗，請在此處手動重新整理指標：  
+- **參考**：程式碼變更時，此指標會自動更新。 如果**參考**指標固定為個別的視窗，請選取 [重新整理] 來重新整理指標：
 
-     ![CodeLens &#45; 停駐成為視窗](../ide/media/codelensviewreferencesdocked.png "CodeLensViewReferencesDocked")  
+     ![CodeLens 參考中的 [重新整理] 按鈕](../ide/media/codelensviewreferencesdocked.png)
 
--   **小組**：請在此處手動重新整理指標：  
+- **小組**：從右鍵功能表選取 [重新整理 CodeLens 小組指標]，以重新整理這些指標：
 
-     ![CodeLens &#45; 重新整理指標](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
+     ![[重新整理 CodeLens 小組指標] 功能表項目](../ide/media/codelensrefreshindicatorsfromcode.png)
 
--   **測試**：[尋找您程式碼的單元測試](#FindRunUnitTests)，以重新整理此指標。  
+- **測試**：[尋找您程式碼的單元測試](#Find-unit-tests-for-your-code)，以重新整理**測試**指標。
 
-###  <a name="LocalVersion"></a> 問：什麼是「本機版本」？
+### <a name="q-whats-local-version"></a>問：什麼是「本機版本」？
 
-**答：** [ **本機版本** ] 箭頭指向這個檔案的本機版本的最新變更集。 當伺服器有更新的變更集時，它們會顯示在 [ **本機版本** ] 箭頭上方或下方 (根據變更集的排列順序而定)。
+**答：**[本機版本] 箭頭指向這個檔案的本機版本的最新變更集。 當伺服器有更新的變更集時，它們會顯示在 [ **本機版本** ] 箭頭上方或下方 (根據變更集的排列順序而定)。
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>問：我是否可以管理 CodeLens 處理程式碼的方式，以顯示記錄和連結項目？
 
-**答：** 可以，如果您的程式碼儲存於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
+**答：** 可以。 如果您的程式碼位於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
 
 ## <a name="see-also"></a>另請參閱
 
-[在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

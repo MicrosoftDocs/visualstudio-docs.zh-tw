@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概觀
 
@@ -93,7 +93,7 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
 有一個了解東西的好方法，就是去使用它！ 讓我們來深入探討並建立一個新的簡單程式。
 
-1. 開啟 Visual Studio。 在功能表上，選擇 [檔案] > [新增] > [專案...]。
+1. 開啟 Visual Studio。 在功能表上，選擇 [檔案] > [新增] > [專案]。
 
   ![功能表列上的 [檔案] > [新增專案]](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -209,21 +209,21 @@ Visual Studio 現在比以往更輕巧！ 模組安裝程式可讓您選擇並�
 
  ![查看定義](../ide/media/VSIDE_peek_definition.png)
 
-- [移至定義]  內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
+- **[移至定義]** 內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
 
  ![移至定義](../ide/media/VSIDE_go_to_definition.png)
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
-您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或是使用 [Visual Studio Team Services (VSTS)](/vsts/index) 來一邊管理整個專案的程式碼，一邊管理錯誤 (bug) 與工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱[開始使用 Git 和 Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能) (部落格)。
+您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或是使用 [Visual Studio Team Services (VSTS)](/vsts/index) 來一邊管理整個專案的程式碼，一邊管理錯誤 (bug) 與工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Git 與 Team Services (VSTS) 使用者入門](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
 
 Visual Studio Team Services 是一項雲端式服務，可用來裝載軟體專案及允許以小組進行共同作業。 VSTS 支援 Git 和 Team Foundation 原始檔控制系統，以及 Scrum、CMMI 和 Agile 開發方法。 Team Foundation 版本控制 (TFVC) 使用單一且集中式伺服器儲存機制來追蹤和版本化檔案。 在其他開發人員取得最新變更的地方，一律將本機變更簽入中央伺服器。
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
-如果您在網路上有 Visual Studio Team Services 帳戶或 Team Foundation Server，您便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連接。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連接] 來開啟它。
+如果您在網路上有 Visual Studio Team Services 帳戶或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連接。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
 
-下圖顯示裝載於 VSTS 中之方案的 Team Explorer 視窗。
+下圖顯示裝載於 VSTS 中之方案的 [Team Explorer] 視窗。
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 ![已連接服務](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-選擇 [已連接服務] 頁面上的服務會啟動「已連接服務精靈」，此精靈會設定您的專案並下載必要的 NuGet 套件，以協助您開始編寫服務的程式碼。
+選擇 [已連線的服務] 頁面上的服務會啟動 [已連線的服務精靈]，此精靈會設定您的專案並下載必要的 NuGet 套件，以協助您開始編寫服務的程式碼。
 
-您可以在 Visual Studio 內使用 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 來檢視和管理 Azure 型雲端資源。 Cloud Explorer 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 您可以在 Visual Studio 安裝程式中選取 **Azure 開發**工作負載，來取得 Cloud Explorer。
+您可以在 Visual Studio 內使用 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 來檢視和管理 Azure 型雲端資源。 Cloud Explorer 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 您可以在 Visual Studio 安裝程式中選取 **Azure 開發**工作負載，來取得 **Cloud Explorer**。
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-[伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟伺服器總管，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需有關使用 [伺服器總管] 的詳細資訊，請參閱[新增連線 (英文)](../data-tools/add-new-connections.md)。
+[伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需有關使用 [伺服器總管] 的詳細資訊，請參閱[新增連線 (英文)](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及「Azure SQL 資料倉儲」的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
@@ -261,7 +261,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="learn-more-and-find-out-whats-new"></a>深入了解並找出新功能
 
-如果您從來沒有使用過 Visual Studio，請參閱 [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) 或查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 上提供的免費 Visual Studio 課程。 如果您想要查看 Visual Studio 2017 的新功能，請參閱 [Visual Studio 2017 的新功能](../ide/whats-new-in-visual-studio.md)。
+如果您從來沒有使用過 Visual Studio，請參閱 [Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md) 或查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 上提供的免費 Visual Studio 課程。 如果您想要查看 Visual Studio 2017 的新功能，請參閱 [Visual Studio 2017 的新功能](../ide/whats-new-in-visual-studio.md)。
 
 恭喜您完成 Visual Studio IDE 的導覽！ 希望您已了解有關其部分主要功能一些實用資訊。
 

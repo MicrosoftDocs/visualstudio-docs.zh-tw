@@ -1,15 +1,15 @@
 ---
-title: 建立新的專案和方案
-Description: This topic describes how to create projects and solutions in Visual Studio for Mac
+title: 建立新的專案和方案 (Visual Studio for Mac)
+description: 本文描述如何在 Visual Studio for Mac 中建立專案和方案
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 48c1bf87279af1a2eb5f0371c237c5332bfebebb
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 327d0a51efd312c1a2b2909c90ff7668a1083529
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
 

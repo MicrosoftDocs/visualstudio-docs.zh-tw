@@ -95,11 +95,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a87d0b6aeec41071fd1e1018155b0a7898ed4a6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 
@@ -121,4 +121,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>另請參閱
 
-* [針對 Proxy 錯誤進行疑難排解](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)
+* [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)

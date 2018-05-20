@@ -9,11 +9,11 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -75,6 +75,20 @@ ms.lasthandoff: 04/16/2018
 3.  按一下 [支援] 底下的 [連結支援合約]
 4.  輸入上面 #1 中提供的「存取識別碼」與「合約識別碼」。
 完成這些步驟之後，您將能夠選取與您的 Visual Studio 訂閱權益相關聯的支援方案  (方案名稱可能包含 "MSDN")。
+
+## <a name="eligibility"></a>資格
+| 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  [是]|
+| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |[是]         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  [是]         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | [是]         |
+| Visual Studio Dev Essentials | NA  | 無法使用 |NA|
+| Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
+
+<sup>1</sup>包括：Imagine Premium。不包括：不得轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)、MCT Software & Services。
+
+<sup>2</sup>包括：Imagine Standard。
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立多電腦建置環境
+title: 逐步解說：建立多電腦組建環境
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,13 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 392b2b5a129afe9504f306378103862d631d456e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦組建環境
 
 您可以在組織內建立建置環境，方法是在主機電腦上安裝 Visual Studio，然後將各種檔案和設定複製到另一部電腦，以便該電腦可參與建置。 您不需要在另一部電腦上安裝 Visual Studio。
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 
 - [建置專案](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
-- [建立建置環境以便可將它簽入原始檔控制](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
+- [建立組建環境以便可將它簽入原始檔控制](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -70,21 +70,21 @@ ms.lasthandoff: 04/26/2018
 
 1. 在主機電腦上，安裝 Visual Studio。
 
-2. 在組建電腦上，安裝 .NET Framework 4.5。 若要確認已安裝，請確定登錄機碼 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version 的值是以 "4.5"為開頭。
+2. 在組建電腦上，安裝 .NET Framework 4.5。 若要確認已安裝，請確定登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version** 的值是以 "4.5" 為開頭。
 
 ## <a name="CopyingFiles"></a> 將檔案從主機電腦複製到組建電腦
 
 本節說明如何將特定檔案、編譯器、建置工具、MSBuild 資產和登錄設定從主機電腦複製到組建電腦。 這些指示假設您已在主機電腦上的預設位置安裝 Visual Studio；如果您安裝在其他位置，請據以調整步驟。
 
-- 在 x86 電腦上，預設位置為 C:\Program Files\Microsoft Visual Studio 11.0\
-- 在 x64 電腦上，預設位置為 C:\Program Files (x86)\Microsoft Visual Studio 11.0\
+- 在 x86 電腦上，預設位置為 *C:\Program Files\Microsoft Visual Studio 11.0*
+- 在 x64 電腦上，預設位置為 *C:\Program Files (x86)\Microsoft Visual Studio 11.0*
 
-請注意，[Program Files] 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 \Program Files\\；在 x64 電腦上，此名稱會是 \Program Files (x86)\\。 不論系統架構為何，本逐步解說會將 [Program Files] 資料夾稱為 %ProgramFiles%。
+請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)*。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%*。
 
 > [!NOTE]
 > 在組建電腦上，所有相關檔案都必須在相同的磁碟機上；不過，該磁碟機的磁碟機代號可能會與 Visual Studio 安裝在主機電腦上之磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。
 
-#### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>將 Windows SDK 檔案複製到組建電腦
+#### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>將 Windows SDK 檔案複製到組建電腦
 
 1. 如果您只安裝 Windows 8 的 Windows SDK，請將下列資料夾從主機電腦遞迴複製到組建電腦：
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 04/26/2018
 
     - Microsoft Windows 硬體認證套件
 
-     ...這些套件可能已將檔案安裝到上一個步驟所列的 %ProgramFiles%\Windows Kits\8.0\ 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
+     ...這些套件可能已將檔案安裝到上一個步驟所列的 *%ProgramFiles%\Windows Kits\8.0* 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
 
 2. 將下列資料夾從主機電腦遞迴複製到組建電腦：
 
@@ -146,7 +146,7 @@ ms.lasthandoff: 04/26/2018
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
 
-4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ 或 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ 資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位碼檔複製到 \Windows\System32\ 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 Windows\SysWOW64\ 資料夾，並將 x64 二進位檔複製到 Windows\System32\ 資料夾。
+4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* 或 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* 資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -186,7 +186,7 @@ ms.lasthandoff: 04/26/2018
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只將下列檔案從 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
+5. 只將下列檔案從 *Debug_NonRedist\x86* 或 *Debug_NonRedist\x64* 資料夾複製到組建電腦，如[準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)中所述。 不會複製其他任何檔案。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -207,9 +207,7 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="CreatingRegistry"></a> 建立登錄設定
  您必須建立登錄項目，才能進行 MSBuild 的設定。
 
-#### <a name="to-create-registry-settings"></a>建立登錄設定
-
-1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。 在 x64 電腦上，父機碼會是 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
+1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**。 在 x64 電腦上，父機碼會是 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。
 
     > [!NOTE]
     > 如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。
@@ -218,63 +216,63 @@ ms.lasthandoff: 04/26/2018
 
 2. 在組建電腦上建立下列登錄項目。 所有項目都是字串 (登錄中的 Type == "REG_SZ")。 將這些項目的值設定為主機電腦上可比較項目的相同值。
 
-    - %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)
+    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
 
-    - %RegistryRoot%\VisualStudio\11.0@Source Directories
+    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir
+    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@11.0
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - %RegistryRoot%\VisualStudio\SxS\VS7@11.0
+    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot
+    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
      在 x64 組建電腦上，同時建立下列登錄項目，並參考主機電腦，以判斷如何設定此項目。
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
 
      如果您的組建電腦是 x64，而且您想要使用 64 位元版本的 MSBuild，或者如果您想要在 x64 電腦上使用 Team Foundation Server 組建服務，則必須在原生 64 位元登錄中建立下列登錄項目。 請參考主機電腦，以判斷如何設定這些項目。
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
 ## <a name="SettingEnvVariables"></a> 設定組建電腦上的環境變數
 
-若要在組建電腦上使用 MSBuild，您必須設定 PATH 環境變數。 您可以使用 vcvarsall.bat 來設定變數，或手動加以設定。
+若要在組建電腦上使用 MSBuild，您必須設定 PATH 環境變數。 您可以使用 *vcvarsall.bat* 來設定變數，或手動加以設定。
 
-### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
+### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-- 在組建電腦上開啟命令提示字元視窗，然後執行 %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+- 在組建電腦上開啟 [命令提示字元] 視窗，然後執行 *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
-     下表描述 vcvarsall.bat 支援的引數：
+     下表描述 *vcvarsall.bat* 支援的引數：
 
     |Vcvarsall.bat 引數|編譯器|組建電腦架構|組建輸出架構|
     |----------------------------|--------------|---------------------------------|-------------------------------|
@@ -282,9 +280,9 @@ ms.lasthandoff: 04/26/2018
     |x86_amd64|x64 Cross|x86、x64|X64|
     |amd64|x64 Native|X64|X64|
 
-     如果 vcvarsall.bat 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 一節。
+     如果 *vcvarsall.bat* 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 一節。
 
-### <a name="to-manually-set-environment-variables"></a>手動設定環境變數
+### <a name="manually-set-environment-variables"></a>手動設定環境變數
 
 1. 若要手動設定命令列環境，將此路徑新增至 PATH 環境變數：
 
@@ -316,9 +314,9 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. 若要將組件安裝到 GAC，請在組建電腦上尋找 gacutil.exe (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)一節中的步驟。
+2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)一節中的步驟。
 
-     開啟具有系統管理權限的命令提示字元視窗，然後針對每個檔案執行此命令：
+     開啟具有系統管理權限的 [命令提示字元] 視窗，然後針對每個檔案執行此命令：
 
      **gacutil -i \<檔案>**
 
@@ -329,7 +327,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
 您可以使用 Team Foundation Build 建置 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 專案和方案，或是在命令列上加以建置。 當您使用 Team Foundation Build 建置專案時，它會叫用對應至系統架構的 MSBuild 可執行檔。 在命令列上，您可以使用 32 位元 MSBuild 或 64 位元 MSBuild，而且可以藉由設定 PATH 環境變數，或直接叫用特定架構的 MSBuild 可執行檔，來選擇 MSBuild 的架構。
 
-若要在命令提示字元中使用 msbuild.exe，請執行下列命令，其中 *solution.sln* 是方案名稱的預留位置。
+若要在命令提示字元中使用 *msbuild.exe*，請執行下列命令；其中 *solution.sln* 是方案名稱的預留位置。
 
 **msbuild** *solution.sln*
 
@@ -340,22 +338,22 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> 建立建置環境以便可將它簽入原始檔控制
+## <a name="CreatingForSourceControl"></a> 建立組建環境以便可將它簽入原始檔控制
 
 您可以建立可部署到各種電腦的建置環境，而不需要對檔案進行 GAC 或修改登錄設定。 下列步驟只是完成此作業的一種方式。 請根據您的建置環境獨特的特性，來調整這些步驟。
 
 > [!NOTE]
-> 您必須停用累加建置，以免 tracker.exe 在建置期間擲回錯誤。 若要停用累加建置，請設定下列組建參數：
+> 您必須停用累加建置，以免 *tracker.exe* 在建置期間擲回錯誤。 若要停用累加建置，請設定下列組建參數：
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
-1. 在主機電腦上建立 "Depot" 目錄。
+1. 在主機電腦上建立 *Depot* 目錄。
 
      這些步驟會將此目錄稱為 %Depot%。
 
-2. 如本逐步解說的[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)一節中所述，複製目錄和檔案，但改為貼到您剛才建立的 %Depot% 目錄下。 例如，從 %ProgramFiles%\Windows Kits\8.0\bin\ 複製到 %Depot%\Windows Kits\8.0\bin\\。
+2. 如本逐步解說的[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)一節中所述，複製目錄和檔案，但改為貼到您剛才建立的 *%Depot%* 目錄下。 例如，從 *%ProgramFiles%\Windows Kits\8.0\bin* 複製到 *%Depot%\Windows Kits\8.0\bin*。
 
-3. 將檔案貼到 %Depot% 之後，請進行下列變更：
+3. 將檔案貼到 *%Depot%* 之後，請進行下列變更：
 
     - 在 %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets、\Microsoft.Cpp.InvalidPlatforms.targets\\、\Microsoft.cppbuild.targets\\ 和 \Microsoft.CppCommon.targets\\ 中，將
 
@@ -375,7 +373,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 
-4. 建立 .props 檔案 (例如 Partner.AutoImports.props)，並將該檔案放在含有專案之資料夾的根目錄中。 此檔案可用來設定變數，MSBuild 會使用這些變數來尋找各種資源。 如果變數不是由此檔案設定，則會由依賴登錄值的其他 .props 檔案和 .targets 檔案設定。 因為我們未設定任何登錄值，所以這些變數會是空白的，而且建置會失敗。 相反地，請將下列程式碼新增至 Partner.AutoImports.props：
+4. 建立 *.props* 檔案 (例如 *Partner.AutoImports.props*)，並將該檔案放在含有專案之資料夾的根目錄中。 此檔案可用來設定變數，MSBuild 會使用這些變數來尋找各種資源。 如果變數不是由此檔案設定，則會由依賴登錄值的其他 *.props* 檔案和 *.targets* 檔案設定。 因為我們未設定任何登錄值，所以這些變數會是空白的，而且建置會失敗。 相反地，請將下列程式碼新增至 *Partner.AutoImports.props*：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

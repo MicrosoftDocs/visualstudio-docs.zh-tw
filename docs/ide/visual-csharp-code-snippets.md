@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
  您可以在游標位置插入程式碼片段，或在目前選取的程式碼周圍插入範圍陳述式程式碼片段。 程式碼片段插入器的叫用方式是透過 **IntelliSense** 功能表上的 [插入程式碼片段] 或 [範圍陳述式] 命令，或分別依序使用鍵盤快速鍵 **Ctrl**+**K** 和 **X** 或 **Ctrl**+**K** 和 **S**。
 
- 程式碼片段插入器會顯示所有可用程式碼片段的程式碼片段名稱。 程式碼片段插入器也會包含輸入對話方塊，您可以在其中輸入程式碼片段名稱或程式碼片段名稱的一部分。 程式碼片段插入器會反白顯示最接近程式碼片段名稱的相符項目。 任何時間按 **TAB** 都會關閉程式碼片段插入器，並插入目前選取的程式碼片段。 在程式碼編輯器中按 **ESC** 或按一下滑鼠會關閉程式碼片段插入器，而不插入程式碼片段。
+ **程式碼片段插入器**會顯示所有可用程式碼片段的程式碼片段名稱。 程式碼片段插入器也會包含輸入對話方塊，您可以在其中輸入程式碼片段名稱或程式碼片段名稱的一部分。 程式碼片段插入器會反白顯示最接近程式碼片段名稱的相符項目。 任何時間按 **TAB** 都會關閉程式碼片段插入器，並插入目前選取的程式碼片段。 在程式碼編輯器中按 **ESC** 或按一下滑鼠會關閉程式碼片段插入器，而不插入程式碼片段。
 
 ## <a name="default-code-snippets"></a>預設程式碼片段
 
@@ -57,7 +57,7 @@ Visual Studio for C# 中預設會包含下列程式碼片段。
 |迭代器|建立迭代器。|在類別或結構內部。|
 |iterindex|使用巢狀類別建立 "named" 迭代器和索引子組。|在類別或結構內部。|
 |lock|建立 [lock](/dotnet/csharp/language-reference/keywords/lock-statement) 區塊。|在方法、索引子、屬性存取子或事件存取子內。|
-|mbox|建立 <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> 呼叫。 您可能需要新增 System.Windows.Forms.dll 的參考。|在方法、索引子、屬性存取子或事件存取子內。|
+|mbox|建立 <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> 呼叫。 您可能需要新增 *System.Windows.Forms.dll* 的參考。|在方法、索引子、屬性存取子或事件存取子內。|
 |namespace|建立 [namespace](/dotnet/csharp/language-reference/keywords/namespace) 宣告。|在命名空間 (包含全域命名空間) 內部。|
 |prop|建立[自動實作的屬性](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)宣告。|在類別或結構內部。|
 |propfull|建立具有 `get` 和 `set` 存取子的屬性宣告。|在類別或結構內部。|

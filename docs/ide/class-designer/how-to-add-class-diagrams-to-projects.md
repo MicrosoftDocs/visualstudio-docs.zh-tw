@@ -1,6 +1,6 @@
 ---
 title: 如何：將類別圖表加入至專案 (類別設計工具)
-ms.date: 11/04/2016
+ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,41 +13,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962df3467b8ff37a15c181a764e646ae3fb1e980
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>如何：將類別圖表新增至專案 (類別設計工具)
+# <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
 
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 C#、Visual Basic 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。
 
 您不能從跨多個應用程式共用程式碼的專案建立類別圖。 若要建立 UML 類別圖表，請參閱[建立 UML 模組化專案和圖表](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
-## <a name="to-add-a-blank-class-diagram-to-a-project"></a>若要將空白類別圖加入至專案
+## <a name="install-the-class-designer-component"></a>安裝類別設計工具元件
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案名稱。 接著請選擇 [新增項目] 或 [新增] > [新增項目]。
+若您執行 Visual Studio 2017 而未安裝**類別設計工具**元件，請遵循下列步驟加以安裝。
 
-2.  從範本清單中，選擇 [類別圖表]。 若是 Visual C++ 專案，請查看 [範本] 下方和 [公用程式] 下方以尋找這個範本。
+1. 從 Windows [開始] 功能表開啟 **Visual Studio 安裝程式**，或從 Visual Studio 的功能表列選取 [工具] > [取得工具與功能]。
 
-     類別圖便會在 [類別設計工具] 中開啟，並會在 [方案總管] 的專案階層架構內，顯示為具有 .cd 副檔名的檔案。 使用 [類別設計工具] 工具箱將圖案和線條拖曳至圖表。
+   **Visual Studio 安裝程式**隨即開啟。
 
-3.  若要加入多個類別圖，請重複本程序的步驟。
+1. 選取 [個別元件] 索引標籤，然後向下捲動到 [程式碼工具] 分類。
 
-## <a name="to-add-a-class-diagram-based-on-existing-types"></a>根據現有類別加入類別圖
+1. 選取 [類別設計工具]，然後選取 [修改]。
 
-- 在 [方案總管] 中，開啟類別檔案操作功能表，然後選擇 [檢視類別圖表]。
+   ![Visual Studio 安裝程式中的類別設計工具元件](media/class-designer-component.png)
 
-     -或-
+   **類別設計工具**元件會開始安裝。
 
-     在 [類別檢視] 中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]。
+## <a name="add-a-blank-class-diagram-to-a-project"></a>將空白類別圖表新增至專案
+
+1. 在**方案總管**中，以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [新增項目]。 或者按 **Ctrl**+**Shift**+**A**。
+
+   [新增項目] 對話方塊隨即開啟。
+
+2. 展開 [常用項目] > [一般]，然後從範本清單中選取 [類別圖表]。 若是 Visual C++ 專案，請在 [公用程式] 分類中尋找**類別圖表**範本。
+
+   > [!NOTE]
+   > 若您沒有看到**類別圖表**範本，請[遵循這些步驟](#install-the-class-designer-component)安裝 Visual Studio 的**類別設計工具**元件。
+
+   類別圖表會在類別設計工具中開啟，並在**方案總管**中顯示為副檔名為 *.cd* 的檔案。 您可以從 [工具箱] 將圖形和線條拖曳到圖表。
+
+若要加入多個類別圖，請重複本程序的步驟。
+
+## <a name="add-a-class-diagram-based-on-existing-types"></a>根據現有類型新增類別圖表
+
+在**方案總管**中，開啟類別檔案操作功能表，然後選擇 [檢視類別圖表]。
+
+-或-
+
+在 [類別檢視] 中，開啟命名空間或類型操作功能表，然後選擇 [檢視類別圖表]。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在類別圖表中顯示完整專案的內容
 
-- 在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。
+在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。
 
-     就會建立會自動填入內容的類別圖表。
+就會建立會自動填入內容的類別圖表。
 
 ## <a name="see-also"></a>另請參閱
 

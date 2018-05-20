@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>如何：列印類別圖表 (類別設計工具)
+# <a name="how-to-print-class-diagrams"></a>如何：列印類別圖表
 
 您可以使用 Visual Studio 的列印功能來列印類別圖表。
 
 ## <a name="to-print-a-class-diagram"></a>列印類別圖表
 
-1.  顯示類別圖表  (如有必要，請選取 [類別圖表] 索引標籤加以顯示)。
+1.  開啟類別圖表。
 
 2.  按一下 [檔案] 功能表中的 [列印]。
 
-     整份類別圖表隨即列印。 您可能需要調整 [版面設定] 對話方塊中的設定，才能以適當大小列印。
+整份類別圖表隨即列印。 您可能需要調整 [版面設定] 對話方塊中的設定，才能以適當大小列印。
 
 ## <a name="see-also"></a>另請參閱
 

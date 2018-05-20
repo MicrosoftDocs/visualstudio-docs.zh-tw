@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio 建立 VSTO 增益集適用於 Office |Microsoft 文件
+title: 使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c935d4b71ccea16c450e65c0a153700bfa889583
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。  
@@ -29,18 +29,18 @@ ms.lasthandoff: 04/16/2018
   
  如需 Office 開發的最新資訊，請參閱 MSDN 上的下列開發中心：  
   
--   [使用 Visual Studio 開發 Office 的開發人員入口網站](http://go.microsoft.com/fwlink/?LinkId=123844) 包含有關使用 Visual Studio 將 Office 應用程式自訂為解決方案一部分的產品資訊、程式碼範例、影片與社群資源連結。  
+-   [Visual Studio 開發人員入口網站的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)包含產品資訊、 程式碼範例、 影片和社群資源，需使用 Visual Studio 將 Office 應用程式自訂為方案一部分的連結.  
   
--   [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467) 包含有關 Office 自訂和 Office Business Application (OBA) 的技術文件、程式碼範例、下載、社群資訊、支援和其他文件連結。  
+-   [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含技術文件、 程式碼範例、 下載、 社群資訊、 支援和有關 Office 自訂和 Office Business Application (Oba 其他文件的連結).  
   
 ## <a name="in-this-section"></a>本節內容  
- [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供有關如何設定開發電腦以建立 Office 方案、如何開始建立 Office 方案，以及 Visual Studio 中 Office 開發新功能的資訊連結。  
   
  [升級和移轉 Office 方案](../vsto/upgrading-and-migrating-office-solutions.md)  
  提供有關使用舊版 Visual Studio 所建立的專案之升級程序的資訊連結。  
   
- [Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  提供有關 Office 方案運作方式的資訊連結，包括文件層級自訂和 VSTO 增益集的相關資訊。  
   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
@@ -61,8 +61,8 @@ ms.lasthandoff: 04/16/2018
  [PowerPoint 方案](../vsto/powerpoint-solutions.md)  
  提供有關如何自動化 PowerPoint 以及建立 PowerPoint VSTO 增益集的資訊。  
   
- [Project 方案](../vsto/project-solutions.md)  
- 提供有關如何自動化 Microsoft Office Project 以及建立 Project VSTO 增益集的資訊。  
+ [專案的方案](../vsto/project-solutions.md)  
+ 提供有關如何自動化 Microsoft Office project 以及建立 project VSTO 增益集的資訊。  
   
  [Visio 方案](../vsto/visio-solutions.md)  
  提供有關如何自動化 Visio 以及建立 Visio VSTO 增益集的資訊。  
@@ -86,31 +86,31 @@ ms.lasthandoff: 04/16/2018
  提供範例應用程式連結，以及逐步指示如何執行一般工作的主題連結。  
   
  [一般參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- 提供有關 Office 主要 Interop 組件、資訊清單、使用者介面項目和錯誤訊息的詳細資訊連結。  
+ 提供有關 Office 主要 interop 組件、 資訊清單、 使用者介面項目，以及錯誤訊息的詳細資訊連結。  
   
  [受管理參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- 提供有關以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 專案所使用之 API 命名空間和類型的資訊連結。 如需有關以 .NET Framework 3.5 為目標的 Office 專案所使用之命名空間和類型的 API 參考文件，請參閱 Visual Studio 2008 文件中的下列參考章節： [2007 系統管理的參考](http://go.microsoft.com/fwlink/?LinkId=160658)。  
+ 提供有關以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 專案所使用之 API 命名空間和類型的資訊連結。 如需命名空間和類型，在.NET Framework 3.5 為目標的 Office 專案中可用的 API 參考文件，請參閱 Visual Studio 2008 文件中的下列參考章節： [2007 system managed 參考](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Unmanaged API 參考&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  包含 COM 介面的相關資訊連結，您可以使用這些介面來執行載入及卸載 Office 應用程式中受管理之 VSTO 增益集等動作。  
   
 ## <a name="related-sections"></a>相關章節  
- [使用 Visual Studio 開發 Office 的開發人員入口網站](http://go.microsoft.com/fwlink/?LinkId=123844)  
+ [Visual Studio 開發人員入口網站的 office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)  
  提供技術文件、影片和部落格等其他資源。  
   
  [Visual Studio 開發人員中心](http://go.microsoft.com/fwlink/?LinkID=99124)  
  提供技術文件、影片和部落格等其他 Visual Studio 資源。  
   
- [Office 商業應用程式開發人員入口網站](http://go.microsoft.com/fwlink/?LinkId=99125)  
- 提供有關 Office Business Application (OBA) 以及如何使用 Office system 平台加以建置的資訊。  
+ [Office business application 開發人員入口網站](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ 提供有關 Office Business Application (Oba) 的資訊及如何使用 Office system 平台加以建置的。  
   
- [MSDN Library 的 Microsoft Office 程式開發章節](http://go.microsoft.com/fwlink/?LinkId=149870)  
- 您可以在 MSDN Library 中，找到有關開發數種版本的 Office 方案 (不限於使用 Visual Studio 的 Office 開發工作) 之文章和參考文件的區域。  
+ [MSDN library 的 Microsoft Office 開發章節](http://go.microsoft.com/fwlink/?LinkId=149870)  
+ MSDN library，您可以在此找到的文件，並參考有關開發數種版本的 Office （不限於使用 Visual Studio 的 Office 程式開發） 方案的文件的區域。  
   
- [Visual Studio 應用程式開發](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
- 包含說明如何使用 Visual Studio 設計、開發、偵錯及部署 Web 應用程式、XML Web Service 和傳統用戶端應用程式的主題連結。  
+ [Visual Studio 中的應用程式開發](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ 包含主題連結，說明您可以使用 Visual Studio 設計、 開發、 偵錯和部署 web 應用程式、 XML web 服務和傳統用戶端應用程式的方式。  
   
- [Visual Studio 中的 .NET Framework 程式設計](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [在 Visual Studio 中的.NET framework 程式設計](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
  討論在 Visual Basic 和 Visual C# 中使用 .NET Framework 進行的應用程式開發。  
   
   

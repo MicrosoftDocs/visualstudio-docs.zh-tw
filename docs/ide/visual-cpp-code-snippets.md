@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -23,9 +23,9 @@ ms.lasthandoff: 04/26/2018
 
 您可以將程式碼片段加入程式碼中的特定位置 (插入)，或以程式碼片段圍繞某些選取的程式碼。
 
-## <a name="inserting-a-code-snippet"></a>插入程式碼片段
+## <a name="insert-a-code-snippet"></a>插入程式碼片段
 
-若要插入程式碼片段，請開啟 C++ 程式碼檔 (.cpp 或 .h)，在該檔案內部任意處按一下，然後執行下列其中一項動作：
+若要插入程式碼片段，請開啟 C++ 程式碼檔案 (*.cpp* 或 *.h*)，在該檔案內部任意處按一下，然後執行下列其中一項動作：
 
 - 按一下滑鼠右鍵以取得操作功能表，然後選取 [插入程式碼片段]
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 04/26/2018
 #endif // 0
 ```
 
-然後，您就可以使用正確的條件取代 0。
+然後，您就可以使用正確的條件取代 **0**。
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>使用程式碼片段圍繞已選取的程式碼
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>使用程式碼片段圍繞已選取的程式碼
 
 若要使用程式碼片段來圍繞已選取的程式碼，請選取其中一行 (或多行)，然後執行下列其中一項動作：
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
 - 在 [編輯] > [IntelliSense] 功能表中，選取 [範圍陳述式]
 
-- 從鍵盤按：**Ctrl**+**K**+**X**
+- 從鍵盤按：**Ctrl**+**K**+**S**
 
 選取 [#if]。 您應該會看到類似下面的內容：
 
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="class-vs-classi"></a>class 與 classi
 
-**class** 程式碼片段提供名為 MyClass 的類別定義，這具有適當的預設建構函式和解構函式，其中建構函式和解構函式的定義位於類別之外：
+**class** 程式碼片段提供名為 `MyClass` 的類別定義，這具有適當的預設建構函式和解構函式，其中建構函式和解構函式的定義位於此類別之外：
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-**classi** 程式碼片段也提供一個名為 MyClass 的類別定義，但是預設建構函式和解構函式定義於此類別定義內：
+**classi** 程式碼片段也提供一個名為 `MyClass` 的類別定義，但是預設建構函式和解構函式定義於此類別定義內：
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-如果您插入此解構函式程式碼片段，它就會提供 SomeClass 的解構函式：
+如果您插入此解構函式程式碼片段，它就會提供 `SomeClass` 的解構函式：
 
 ```cpp
 class SomeClass {

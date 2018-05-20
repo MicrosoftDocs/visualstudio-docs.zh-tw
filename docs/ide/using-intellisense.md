@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48aa6cea8deec13bdf5dd43f83528daf5492e3d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>在 Visual Studio 中使用 Intellisense
 
@@ -39,23 +39,23 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ![Visual Studio 成員清單](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
-您可以鍵入 **CTRL** + **J**，並選擇 [編輯] > [IntelliSense] > [列出成員]，或選擇編輯器工具列上的 [列出成員] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。
+您可以鍵入 **Ctrl**+**J**，並選擇 [編輯] > [IntelliSense] > [列出成員]，或選擇編輯器工具列上的 [列出成員] 按鈕，手動叫用 [列出成員] 功能。 在空白行或可辨識範圍外叫用清單時，清單會顯示全域命名空間中的符號。
 
 若要預設關閉 [列出成員] (除非明確地叫用，否則不會出現)，請移至 [工具] > [選項] > [所有語言]，然後取消選取 [自動列出成員]。 如果您想要只關閉特定語言的 [列出成員]，請移至該語言的 [一般] 設定。
 
-您也可以變更為建議模式，在此模式中只會將您輸入的文字插入程式碼。 例如，如果您輸入不在清單中的識別碼並按 **Tab** 鍵，則在完成模式中，項目會取代所鍵入的識別碼。 若要在完成模式與建議模式之間進行切換，請按 **Ctrl** + **Alt** +  **空格鍵**，或選擇 [編輯] > [IntelliSense] > [切換完成模式]。
+您也可以變更為建議模式，在此模式中只會將您輸入的文字插入程式碼。 例如，如果您輸入不在清單中的識別碼並按 **Tab** 鍵，則在完成模式中，項目會取代所鍵入的識別碼。 若要在完成模式與建議模式之間進行切換，請按 **Ctrl**+**Alt**+ **空格鍵**，或選擇 [編輯] > [IntelliSense] > [切換完成模式]。
 
 ## <a name="parameter-info"></a>參數資訊
 
 [參數資訊] 會提供方法、屬性泛型型別參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。
 
-粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用向上鍵和向下鍵檢視函式多載的替代參數資訊。
+粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用**向上鍵**和**向下鍵**檢視函式多載的替代參數資訊。
 
 ![參數資訊](../ide/media/vs2015_param_info.png "VS2015_param_Info")
 
 當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)。
 
-您可以選擇 [編輯] > [IntelliSense] > [參數資訊]、按 **Ctrl** + **Shift** + **空格鍵**，或選擇編輯器工具列上的 [參數資訊] 按鈕，手動叫用 [參數資訊]。
+您可以選擇 [編輯] > [IntelliSense] > [參數資訊]、按 **Ctrl**+**Shift**+**空格鍵**，或選擇編輯器工具列上的 [參數資訊] 按鈕，手動叫用 [參數資訊]。
 
 ## <a name="quick-info"></a>快速諮詢
 
@@ -67,7 +67,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ![C&#35; 程式碼檔中的參數資訊](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
-您可以選擇 [編輯] > [IntelliSense] > [快速諮詢]、按 **Ctrl** + **I**，或選擇編輯器工具列上的 [快速諮詢] 按鈕，手動叫用 [快速諮詢]。
+您可以選擇 [編輯] > [IntelliSense] > [快速諮詢]、按 **Ctrl**+**I**，或選擇編輯器工具列上的 [快速諮詢] 按鈕，手動叫用 [快速諮詢]。
 
 如果函式是多載函式，IntelliSense 可能不會顯示所有多載形式的資訊。
 
@@ -81,7 +81,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 IntelliSense 選項預設為開啟。 若要關閉它們，請選擇 [工具] > [選項] > [文字編輯器]，然後取消選取 [參數資訊] 或 [自動列出成員] (如果您不想要列出成員功能)。
 
-## <a name="troubleshooting-intellisense"></a>疑難排解 IntelliSense
+## <a name="troubleshoot-intellisense"></a>針對 IntelliSense 進行疑難排解
 
 IntelliSense 選項在某些情況下可能不會依照您的預期運作。
 
@@ -102,5 +102,5 @@ MessageBox( hWnd, "String literal|")
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
-- [撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)

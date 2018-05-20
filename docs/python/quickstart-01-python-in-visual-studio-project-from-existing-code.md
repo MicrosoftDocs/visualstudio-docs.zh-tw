@@ -1,7 +1,7 @@
 ---
-title: 快速入門 - 在 Visual Studio 中從現有程式碼建立 Python 專案
+title: 快速入門 - 從現有程式碼建立 Python 專案
 description: 在此快速入門中，您可以使用方便的範本，從現有的資料夾建立 Python 的 Visual Studio 專案。
-ms.date: 01/08/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a27110082ead9da0c8c355a9ee3770524f09f04
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：在 Visual Studio 中從現有程式碼建立 Python 專案
 

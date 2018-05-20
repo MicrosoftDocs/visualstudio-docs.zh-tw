@@ -1,15 +1,15 @@
 ---
 title: 原始檔編輯器常用鍵盤快速鍵
-description: ''
+description: 本文說明 Visual Studio for Mac 原始檔編輯器中的一些常用鍵盤快速鍵
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: ba0e1d7b5625dbe0b9bb86f43f5e402d6cf07043
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: aaf2f4605470464f3122faf95b541f4a71cb75f3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的常用鍵盤快速鍵
 

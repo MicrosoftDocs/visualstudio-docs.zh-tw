@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>如何：檢視現有類型 (類別設計工具)
+# <a name="how-to-view-existing-types-in-class-designer"></a>如何：在類別設計工具中檢視現有類型
 
 若要查看現有的類型及其成員，請將其圖案加入至類別圖。
 
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/26/2018
 
 2.  將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖表。
 
-    > [!WARNING]
+    > [!NOTE]
     > 如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：
     >
-    > -   包含圖表的應用程式專案
-    > -   由應用程式專案匯入的共用專案
-    > -   參考的專案
-    > -   組件
+    > - 包含圖表的應用程式專案
+    > - 由應用程式專案匯入的共用專案
+    > - 參考的專案
+    > - 組件
 
     代表原始程式碼檔中所定義類型的圖案就會出現在圖表上您拖曳檔案所至的位置。
 
@@ -60,9 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>在類別圖中顯示專案內容
 
-- 在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。
-
-     就會建立會自動填入內容的類別圖。
+在 [方案總管] 或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。 就會建立會自動填入內容的類別圖。
 
 ## <a name="see-also"></a>另請參閱
 

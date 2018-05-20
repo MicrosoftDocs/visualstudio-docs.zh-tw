@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/16/2018
   
     -   按一下 [安裝] 。  
   
-7.  重複步驟 7 以尋找並安裝 .NET Standard 專案中的 **Microsoft.CSharp** 套件。 必須要有此程式庫，才能使用 .NET Standard 程式庫中的 C# `dynamic` 資料類型。
+7.  重複步驟 6 以尋找並安裝 .NET Standard 專案中的 **Microsoft.CSharp** 套件。 必須要有此程式庫，才能使用 .NET Standard 程式庫中的 C# `dynamic` 資料類型。
   
 8.  建置方案，並確認沒有任何建置錯誤。  
   

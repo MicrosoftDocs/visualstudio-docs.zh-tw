@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd970f9de33b3fffa542360c7f866de1c836a1d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
@@ -29,23 +29,23 @@ ms.lasthandoff: 04/26/2018
 
  Visual Studio 在盡可能不中斷工作流程的情況下產生新的類型和成員。 您可以建立類型、方法、屬性、欄位或建構函式的 Stub，但不離開目前所在的程式碼位置。 當您開啟對話方塊指定類型產生選項時，焦點會在對話方塊一關閉時，立即回到目前開啟的檔案。
 
- [從用量產生] 功能可以和整合了 Visual Studio 的測試架構一起使用。 本主題會示範 Microsoft 單元測試架構。
+ [使用時產生] 功能可以和整合了 Visual Studio 的測試架構一起使用。 本主題會示範 Microsoft 單元測試架構。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-create-a-windows-class-library-project-and-a-test-project"></a>建立 Windows 類別庫專案和測試專案
+### <a name="create-a-windows-class-library-project-and-a-test-project"></a>建立 Windows 類別庫專案和測試專案
 
 1.  在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中建立新的 **Windows 類別庫**專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。
 
 2.  在**方案總管**中，以滑鼠右鍵按一下上方的解決方案，選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊的左窗格中，選擇 [測試]。
 
-3.  在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 UnitTestProject1。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
+3.  在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 `UnitTestProject1`。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
 
      ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png "NewProject_Test")
 
 4.  選擇 [確定] 關閉 [新增專案] 對話方塊。
 
-### <a name="to-add-a-reference-to-the-class-library-project"></a>在類別庫專案中新增參考
+### <a name="add-a-reference-to-the-class-library-project"></a>在類別庫專案中新增參考
 
 1.  在**方案總管** 中，以滑鼠右鍵按一下單元測試專案下的 [參考] 項目，並選擇 [加入參考]。
 
@@ -55,14 +55,14 @@ ms.lasthandoff: 04/26/2018
 
 4.  儲存您的方案。 您已準備好開始撰寫測試。
 
-### <a name="to-generate-a-new-class-from-a-unit-test"></a>從單元測試產生新類別
+### <a name="generate-a-new-class-from-a-unit-test"></a>從單元測試產生新類別
 
-1.  測試專案包含名為 UnitTest1 的檔案。 在**方案總管**中按兩下這個檔案，在程式碼編輯器中開啟它。 已產生測試類別和測試方法。
+1.  測試專案包含名為 *UnitTest1* 的檔案。 在**方案總管**中按兩下這個檔案，在程式碼編輯器中開啟它。 已產生測試類別和測試方法。
 
 2.  找到類別 `UnitTest1` 的宣告，並將它重新命名為 `AutomobileTest`。
 
  > [!NOTE]
- >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 IntelliSense 視窗開啟時，您可以按 **Ctrl+Alt+SPACEBAR** 切換完成模式和建議模式。 如需詳細資訊，請參閱 [Using IntelliSense](../ide/using-intellisense.md) 。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。
+ >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 [IntelliSense] 視窗開啟時，您可以按 **Ctrl**+**Alt**+**空格鍵** 切換完成模式和建議模式。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。
 
 3.  找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)燈泡會出現在左邊界 (僅限 C#) 或波浪線正下方。
 
@@ -74,15 +74,15 @@ ms.lasthandoff: 04/26/2018
 
 5. 按一下 [產生新的類型] 開啟 [產生類型] 對話方塊。 此對話方塊會提供許多選項，包括在不同的專案中產生類型。
 
-6. 在 [專案] 清單中，按一下 [GFUDemo\_VB] 或 [GFUDemo_CS] 指示 Visual Studio 將檔案新增至類別庫專案，不是新增至測試專案。 如果尚未選取，請選擇 [建立新檔案]並將其命名為 **Automobile.cs** 或 **Automobile.vb**。
+6. 在 [專案] 清單中，按一下 [GFUDemo\_VB] 或 [GFUDemo_CS] 指示 Visual Studio 將檔案新增至類別庫專案，不是新增至測試專案。 如果尚未選取，請選擇 [建立新檔案]並將其命名為 *Automobile.cs* 或 *Automobile.vb*。
 
      ![[產生新的類型] 對話方塊](../ide/media/genotherdialog.png "GenOtherDialog")
 
 6.  按一下 [確定]  關閉對話方塊，並建立新的檔案。
 
-7.  在 **方案總管**的 [GFUDemo_VB] 或 [GFUDemo_CS] 專案節點下，確認是否有新增的 Automobile.vb 或 Automobile.cs 檔案。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
+7.  在 [方案總管] 的 **GFUDemo_VB** 或 **GFUDemo_CS** 專案節點下，確認是否有新增的 *Automobile.vb* 或 *Automobile.cs* 檔案。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`，這可讓您以最少的中斷繼續撰寫測試。
 
-### <a name="to-generate-a-property-stub"></a>產生屬性 Stub
+### <a name="generate-a-property-stub"></a>產生屬性虛設常式
 假設產品規格規定 `Automobile` 類別有兩個公用屬性，名為 `Model` 和 `TopSpeed`。 這些屬性必須由預設的建構函式以 `"Not specified"` 和 `-1` 的預設值來初始化。 以下的單元測試會驗證預設建構函式是否將屬性設定為正確的預設值。
 
 1. 將下列程式碼新增至 `DefaultAutomobileIsInitializedCorrectly` 測試方法。
@@ -96,7 +96,7 @@ ms.lasthandoff: 04/26/2018
 
      在 `Automobile` 類別中，會從內容正確推斷出新屬性的類型。
 
-### <a name="to-generate-a-stub-for-a-new-constructor"></a>產生新建構函式的 Stub
+### <a name="generate-a-stub-for-a-new-constructor"></a>產生新建構函式的虛設常式
 現在我們要建立一個測試方法，產生建構函式 stub 以初始化 `Model` 和 `TopSpeed` 屬性。 稍後，您會新增更多的程式碼以完成測試。
 
 1. 請將下列其他測試方法加入您的 `AutomobileTest` 類別中。
@@ -111,8 +111,8 @@ ms.lasthandoff: 04/26/2018
 
 3.  產生新的建構函式後， `DefaultAutomobileIsInitializedCorrectly`的預設建構函式呼叫下會出現波浪底線。 錯誤訊息指出 `Automobile` 類別沒有任何建構函式採用零引數。 若要產生沒有任何參數的明確預設建構函式，請按一下 [快速動作] 燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
 
-### <a name="to-generate-a-stub-for-a-method"></a>產生方法的 Stub
-假設規格規定，如果其 `Automobile` 和 `Model` 屬性設為預設值以外的值，新的 `TopSpeed` 就可以放入執行狀態。
+### <a name="generate-a-stub-for-a-method"></a>產生方法的虛設常式
+假設規格規定，如果其 `Model` 和 `TopSpeed` 屬性設為預設值以外的值，新的 `Automobile` 就可以放入 `IsRunning` 狀態。
 
 1. 請將下列各行加入 `AutomobileWithModelNameCanStart` 方法中。
 
@@ -125,11 +125,11 @@ ms.lasthandoff: 04/26/2018
 
      `Automobile` 類別現在包含名為 `Start()` 的方法，和名為 `IsRunning` 的屬性。
 
-### <a name="to-run-the-tests"></a>執行測試
+### <a name="run-the-tests"></a>執行測試
 
-1.  在 [測試] 功能表上，選擇 [執行]、[所有測試]。
+1.  在 [測試] 功能表上，選擇 [執行] > [所有測試]。
 
-     [執行]、[所有測試] 命令會執行為目前的解決方案撰寫的任何測試架構中的全部測試。 在這個案例中，會有兩個測試，而且兩個測試都應該要失敗。 `DefaultAutomobileIsInitializedCorrectly` 測試失敗的原因是 `Assert.IsTrue` 條件傳回 `False`。 `AutomobileWithModelNameCanStart` 測試失敗的原因是 `Start` 類別的 `Automobile` 方法擲回例外狀況。
+     [執行] > [所有測試] 命令會執行為目前的解決方案撰寫的任何測試架構中的全部測試。 在這個案例中，會有兩個測試，而且兩個測試都應該要失敗。 `DefaultAutomobileIsInitializedCorrectly` 測試失敗的原因是 `Assert.IsTrue` 條件傳回 `False`。 `AutomobileWithModelNameCanStart` 測試失敗的原因是 `Start` 類別的 `Automobile` 方法擲回例外狀況。
 
      下圖顯示 [測試結果]  視窗。
 
@@ -137,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在 [測試結果] 視窗中，在每個測試結果資料列按兩下，移至每一項測試的位置。
 
-### <a name="to-implement-the-source-code"></a>實作原始程式碼
+### <a name="implement-the-source-code"></a>實作原始程式碼
 
 1.  將下列程式碼加入預設建構函式中，讓 `Model`、 `TopSpeed` 和 `IsRunning` 屬性都初始化為正確的 `"Not specified"`、 `-1`和 `False` (C# 為 `false`) 預設值。
 
@@ -149,7 +149,7 @@ ms.lasthandoff: 04/26/2018
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]
 
-### <a name="to-run-the-tests-again"></a>再次執行測試
+### <a name="run-the-tests-again"></a>再次執行測試
 
 - 在 [測試] 功能表中指向 [執行]，然後按一下 [所有測試]。
 

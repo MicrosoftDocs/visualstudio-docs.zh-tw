@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-IntelliSense for C++ 適用於獨立檔案以及屬於 C++ 專案的檔案。 在跨平台專案中，某些 IntelliSense 功能可用於共用程式碼專案中的 .cpp 和 .c 檔案，即使您是在 Android 或 iOS 內容中亦然。
+IntelliSense for C++ 適用於獨立檔案以及屬於 C++ 專案的檔案。 在跨平台專案中，某些 IntelliSense 功能可用於共用程式碼專案中的 *.cpp* 和 *.c* 檔案，即使您是在 Android 或 iOS 內容中亦然。
 
 ## <a name="intellisense-features-in-c"></a>C++ 中的 IntelliSense 功能
 
@@ -73,23 +73,23 @@ IntelliSense 是一組功能的名稱，這些功能可讓撰寫程式碼變得�
 
 請注意以下各點：
 
-- 第 8 行上的 #else 分支呈現灰色，表示非使用中的區域，因為 __ANDROID\_\_ 針對 Android 專案而定義。
+- 第 8 行上的 `#else` 分支呈現灰色，表示非使用中的區域，因為 `__ANDROID__` 是針對 Android 專案而定義。
 
-- 位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，即具有紫色波浪線。 這是因為目前非使用中的 iOS 專案中並未定義任何識別碼 HELLO。 在 Android 專案中時，第 11 行會進行編譯，但在 iOS 中則否。 由於這是共用程式碼，即使它在目前使用中的組態中編譯時您仍應該進行變更。
+- 位於第 11 行的問候語變數會使用識別碼 `HELLO` 進行初始化，即具有紫色波浪線。 這是因為目前非使用中的 iOS 專案中並未定義任何識別碼 `HELLO`。 在 Android 專案中時，第 11 行會進行編譯，但在 iOS 中則否。 由於這是共用程式碼，即使它在目前使用中的組態中編譯時您仍應該進行變更。
 
-- 第 12 行會在識別碼 BYE 具有紅色波浪線；此識別項不會在目前選取的使用中專案中定義。
+- 第 12 行會在識別碼 `BYE` 具有紅色波浪線；此識別碼未在目前選取的使用中專案內定義。
 
-現在，將使用中的專案變更為 iOS.StaticLibrary，並注意波浪線如何變化。
+現在，將使用中的專案變更為 **iOS.StaticLibrary**，並注意波浪線如何變化。
 
 ![已將 iOS 選取為使用中的專案](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 請注意以下各點：
 
-- 第 6 行上的 #ifdef 分支呈現灰色，表示非使用中的區域，因為 __ANDROID\_\_ 並非針對 iOS 專案而定義。
+- 第 6 行上的 `#ifdef` 分支呈現灰色，表示非使用中的區域，因為 `__ANDROID__` 不是針對 iOS 專案而定義。
 
-- 位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，現在它具有紅色波浪線。 這是因為目前使用中的 iOS 專案中並未定義任何識別碼 HELLO。
+- 位於第 11 行的問候語變數會使用識別碼 `HELLO` 進行初始化，現在它具有紅色波浪線。 這是因為目前使用中的 iOS 專案中並未定義任何識別碼 `HELLO`。
 
-- 第 12 行會在識別碼 BYE 具有紫色波浪線；此識別項不會在目前選取的非使用中 Android.NativeActivity 專案中定義。
+- 第 12 行會在識別碼 `BYE` 具有紫色波浪線；此識別碼未在目前非使用中的 **Android.NativeActivity** 專案內定義。
 
 ### <a name="intellisense-for-stand-alone-files"></a>獨立檔案的 IntelliSense
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的 Office 方案的架構 |Microsoft 文件
+title: 在 Visual Studio 中的 Office 方案的架構
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3796ba362102f1628e218a730d10fc600c744262
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Office 方案在 Visual Studio 中的架構
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>在 Visual Studio 中的 Office 方案的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  
   
 > [!NOTE]  
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/28/2018
  [Visual Studio Tools for Office Runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  描述 Office 方案使用的不同執行階段版本。  
   
- [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
+ [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)  
  描述為了能夠探索和載入 VSTO 增益集，使用者電腦上需要具備的登錄機碼。  
   
  [自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)  
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/28/2018
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  提供將 Microsoft Office 當成平台來開發商務方案的簡介。  
   
- [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供有關設定開發電腦以建立 Office 方案、如何開始建立方案，以及自 Visual Studio 中的舊版 Office Developer Tools 以來的變更資訊連結。  
   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  

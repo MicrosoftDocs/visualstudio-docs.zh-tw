@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>如何：建立類型之間的關聯 (類別設計工具)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的關聯
 
 [類別設計工具] 中的關聯線會顯示圖表中類別的關聯性。 關聯線表示某類別為專案中其他類別的屬性或欄位的類型。 關聯線通常是用來說明專案中類別之間最重要的關係。
 
@@ -35,25 +35,25 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>若要在類別圖中定義關聯線
 
-1.  在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。
+1. 在 [類別設計工具] 下方的 [工具箱] 選取 [關聯]。
 
-2.  在您要以關聯連結的兩個圖案之間繪製一條線。
+2. 在您要以關聯連結的兩個圖案之間繪製一條線。
 
      第一個類別中就會建立新的屬性。 這個屬性會以預設名稱顯示為關聯線 (而不是圖案區間中的屬性)。 關聯線所指的圖案即為其類型。
 
 ## <a name="to-change-the-name-of-an-association"></a>若要變更關聯名稱
 
--   在圖表介面上按一下關聯線的標籤，然後加以編輯。
+在圖表介面上按一下關聯線的標籤，然後加以編輯。
 
- \-或-
+或遵循下列步驟：
 
-1.  按一下其內含屬性顯示為關聯的圖案。
+1. 選取其內含屬性顯示為關聯的圖形。
 
-     該圖案就會取得焦點，而且其成員會顯示於 [類別細節] 視窗和 [屬性] 視窗中。
+   該圖形會得到焦點，而且其成員會顯示於 [類別細節] 和 [屬性] 視窗中。
 
-2.  在 [類別細節] 視窗或 [屬性] 視窗中編輯該屬性的 [名稱] 欄位，然後按 Enter 鍵。
+2. 在 [類別細節] 或 [屬性] 視窗中編輯該屬性的名稱欄位，然後按 **Enter 鍵**。
 
-     [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。
+   [類別細節] 視窗、關聯線、[屬性] 視窗和程式碼中的名稱會隨之變更。
 
 ## <a name="see-also"></a>另請參閱
 

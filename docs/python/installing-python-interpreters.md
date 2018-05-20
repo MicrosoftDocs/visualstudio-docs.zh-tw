@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>安裝 Python 解譯器
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 Visual Studio (所有版本) 會檢查登錄 (依照 [PEP 514 - Windows 登錄中的 Python 註冊](https://www.python.org/dev/peps/pep-0514/) \(英文\))，以自動偵測每個安裝的 Python 解譯器與其環境。
 
-如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 Visual Studio 會在 [Python 環境](managing-python-environments-in-visual-studio.md) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
@@ -45,7 +45,7 @@ Visual Studio 會在 [Python 環境](managing-python-environments-in-visual-stud
 
 如果您使用檔案系統將現有的解譯器移至新的位置，則 Visual Studio 不會自動偵測變更。
 
-- 如果您原本透過 [Python 環境] 視窗指定解譯器的位置，請使用該視窗中的 [設定] 索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)。
+- 如果您原本透過 [Python 環境] 視窗指定解譯器的位置，請使用該視窗中的 [設定] 索引標籤來編輯其環境，以便識別新的位置。 請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 - 如果您已使用安裝程式安裝解譯器，則請使用下列步驟在新的位置中重新安裝解譯器：
 

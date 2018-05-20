@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 變更文件格式使用 CheckBox 控制項 |Microsoft 文件
+title: 逐步解說： 變更文件格式使用核取方塊控制項
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>逐步解說：使用 CheckBox 控制項來變更文件格式
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說： 變更文件格式使用核取方塊控制項
   本逐步解說示範如何使用 Microsoft Office Word 的文件層級自訂的 Windows Form 控制項，變更文字格式。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>建立專案  
+## <a name="create-the-project"></a>建立專案  
  第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="create-a-new-project"></a>建立新專案  
   
 1.  建立 Word 文件專案名稱**My Word 格式**。 在精靈中，選取**建立新的文件**。  
   
-     如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[How to： 在 Visual Studio 建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My Word 格式**專案加入**方案總管 中**。  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>文字和控制項加入 Word 文件  
+## <a name="add-text-and-controls-to-the-word-document"></a>將文字和控制項加入 Word 文件  
  對於此逐步解說中，加入三個核取方塊和某些文字<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入 Word 文件。 核取方塊將會向使用者呈現選項來格式化文字。  
   
-#### <a name="to-add-three-check-boxes"></a>若要加入三個核取方塊  
+### <a name="add-three-check-boxes"></a>新增三個核取方塊  
   
 1.  請確認已在 Visual Studio 設計工具中開啟文件。  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**名稱**|**applyUnderlineFont**|  
     |**Text**|**底線**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>若要加入文字和書籤控制項  
+### <a name="add-text-and-a-bookmark-control"></a>加入文字和書籤控制項  
   
 1.  將游標移到核取方塊控制項下方，輸入下列文字：  
   
@@ -106,14 +106,14 @@ ms.lasthandoff: 04/16/2018
   
      A<xref:Microsoft.Office.Tools.Word.Bookmark>控制項，名為**Bookmark1**加入至文件中選取的文字。  
   
-4.  在**屬性**視窗中，變更的值**（名稱）**屬性**fontText。**  
+4.  在**屬性**視窗中，變更的值 **（名稱）** 屬性**fontText。**  
   
  接下來，撰寫程式碼格式化的文字，當選取或清除核取方塊。  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>格式化的文字時核取方塊已選取或清除  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>格式化的文字，當選取或清除核取方塊  
  當使用者選取一個格式化選項，變更文件中文字的格式。  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>若要變更格式時核取方塊已選取  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>時選取核取方塊變更格式  
   
 1.  以滑鼠右鍵按一下`ThisDocument`中**方案總管] 中**，然後按一下 [**檢視程式碼**快顯功能表。  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>測試應用程式  
+## <a name="test-the-application"></a>測試應用程式  
  您現在可以測試文件，以確認您選取或清除核取方塊時，文字正確格式化。  
   
-#### <a name="to-test-your-document"></a>測試文件  
+### <a name="test-your-document"></a>測試文件  
   
-1.  請按 F5 執行您的專案。  
+1.  按**F5**執行您的專案。  
   
 2.  選取或清除核取方塊。  
   
@@ -154,16 +154,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範使用核取方塊，並以程式設計方式變更文字格式在 Word 文件上的基本概念。 接著可以執行下列一些工作：  
   
--   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說： 在文件使用按鈕的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說： 使用按鈕在文件中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說： 更新文件使用選項按鈕中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說： 更新使用選項按鈕在文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
--  
-  
+
 ## <a name="see-also"></a>另請參閱  
- [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
+ [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
- [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

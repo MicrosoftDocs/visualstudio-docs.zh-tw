@@ -1,5 +1,5 @@
 ---
-title: '&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85fda0db34bf104032e82d5725ff4d3d7aa772cb
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `appAddin` 命名空間的 `vstov4` 項目會儲存自訂 VSTO 增益集特定的資訊。  
+  **AppAddin**元素`vstov4`命名空間儲存 VSTO 增益集的自訂特定資訊。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml 
 <appAddin  
   application  
   loadBehavior  
@@ -38,35 +38,35 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `appAddin` 項目是必要的，且位於 `vstov4` 命名空間。 在應用程式資訊清單中，只可以定義一個 `appAddin` 項目。  
+ **AppAddin**是必要項目，且位於`vstov4`命名空間。 只有一個**appAddin**應用程式資訊清單中定義的項目。  
   
- `appAddin` 項目具有下列屬性。  
+ **AppAddin**元素都具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`application`|必要。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
-|`loadBehavior`|選擇性。 根據預設，將此值設定為下列值時，會啟用 `loadBehavior` 。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)中標題為 LoadBehavior 值的表格。|  
-|`keyName`|必要。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|**應用程式**|必要。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
+|**loadBehavior**|選擇性。 根據預設， **loadBehavior**將此值設為啟用。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱標題為 LoadBehavior 值中的表格[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|**keyName**|必要。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|  
   
- `appAddin` 項目具有下列子項目。  
+ **AppAddin**項目具有下列子元素。  
   
 ### <a name="friendlyname"></a>friendlyName  
- 選擇性。 `friendlyName`項目中會說明[ &#60;friendlyName&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)。  
+ 選擇性。 **FriendlyName**項目中會說明[ &#60;friendlyName&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)。  
   
 ### <a name="description"></a>描述  
- 選擇性。 `description`項目中會說明[&#60;描述&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/description-element-office-development-in-visual-studio.md)。  
+ 選擇性。 **描述**項目中會說明[&#60;描述&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/description-element-office-development-in-visual-studio.md)。  
   
 ### <a name="formregions"></a>formRegions  
- 只有包含表單區域的 Outlook VSTO 增益集才需要。 `formRegions`項目中會說明[ &#60;formRegions&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)。  
+ 只有包含表單區域的 Outlook VSTO 增益集才需要。 **FormRegions**項目中會說明[ &#60;formRegions&#62;元素&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)。  
   
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `appAddin` 部署之 Outlook 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明**appAddin**部署之 Outlook 方案中的項目[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstov4:appAddIn   
   application="Outlook"   
   loadBehavior="3"   
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

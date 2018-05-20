@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能來分組相關更容易進行部署的 SharePoint 專案項目。 您可以建立功能、 設定範圍，及使用 SharePoint 功能設計工具，將其他功能標示為相依性。 在設計工具也會產生資訊清單，其中會描述每項功能的 XML 檔案。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |屬性|描述|  
 |--------------|-----------------|  
-|標題|選擇性。 此功能的預設標題設定為*SolutionName * * FeatureName*。|  
+|標題|選擇性。 此功能的預設標題設定為*SolutionName* *FeatureName*。|  
 |描述|選擇性。 SharePoint 功能的描述。|  
 |範圍|必要。 如果一項功能由使用**方案總管 中**，範圍預設設定為 Web。<br /><br /> 伺服陣列： 啟動整個伺服器陣列的功能。<br /><br /> 站台： 啟動網站集合中的所有網站的功能。<br /><br /> -Web： 啟動特定網站的功能。<br /><br /> -WebApplication： 啟動 web 應用程式中的所有網站的功能。|  
 |在方案中的項目|SharePoint 的所有項目可以加入的功能。|  

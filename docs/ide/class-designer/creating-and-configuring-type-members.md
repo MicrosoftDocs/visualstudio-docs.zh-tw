@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 您可以將這些成員新增至某個類別圖表上的類型，以及在 [類別細節] 視窗中設定這些成員：
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/26/2018
 
 |工作|支援內容|
 |----------|------------------------|
-|**開始使用：**您必須先開啟 [類別細節] 視窗，才可建立及設定類型成員。|-   [開啟類別細節視窗](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [類別細節使用注意事項](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [顯示唯讀資訊](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**建立和修改類型成員：**您可以使用 [類別細節] 視窗來建立新的成員、修改成員，以及將參數新增至方法。|-   [建立成員](creating-and-configuring-type-members.md#CreateMembers)<br />-   [修改類型成員](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [將參數新增至方法](creating-and-configuring-type-members.md#AddMethodParams)|
+|**開始使用：** 您必須先開啟 [類別細節] 視窗，才可建立及設定類型成員。|-   [開啟類別細節視窗](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [類別細節使用注意事項](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [顯示唯讀資訊](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**建立和修改類型成員：** 您可以使用 [類別細節] 視窗來建立新的成員、修改成員，以及將參數新增至方法。|-   [建立成員](creating-and-configuring-type-members.md#create-members)<br />-   [修改類型成員](creating-and-configuring-type-members.md#modify-type-members)<br />-   [將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>開啟類別細節視窗
 根據預設，當您開啟新的類別圖表時會自動出現 [類別細節] 視窗 (請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md))。 您也可以採用下列方式明確地開啟 [類別細節] 視窗。
@@ -126,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  您可以選擇性地指定類型等其他成員相關資訊。
 
-     **注意：**您也可以使用鍵盤快速鍵來建立成員。 如需詳細資料，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
+     **注意：** 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資料，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
 
 ## <a name="modify-type-members"></a>列舉類型成員
 [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。
@@ -157,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<新增成員>**
 
-     [類別細節] 視窗的最後一列包含 [名稱] 儲存格中的 [\<新增成員>] 文字。 如果按一下這個儲存格，便會建立新的成員。 如需詳細資訊，請參閱[建立成員](creating-and-configuring-type-members.md#CreateMembers)。
+     [類別細節] 視窗的最後一列包含 [名稱] 儲存格中的 [\<新增成員>] 文字。 如果按一下這個儲存格，便會建立新的成員。 如需詳細資訊，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
 
 -   **屬性視窗中的成員屬性**
 
@@ -207,14 +207,14 @@ ms.lasthandoff: 04/26/2018
 
 -   **\<新增參數>**
 
-     成員的最後一個參數列包含 [名稱] 儲存格中的 **<add parameter>** 文字。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#HowToAddParameterToMethod)。
+     成員的最後一個參數列包含 [名稱] 儲存格中的 **<add parameter>** 文字。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
 **屬性視窗中的參數屬性**
 
 [屬性] 視窗顯示的參數屬性與 [類別細節] 視窗所顯示的參數屬性相同：[名稱]、[類型]、[修飾詞]、[摘要] 以及 [選擇性預設值] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
 
 > [!NOTE]
-> 若要將參數新增至委派，請參閱[建立成員](creating-and-configuring-type-members.md#CreateMembers)。
+> 若要將參數新增至委派，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
 
 
 > [!NOTE]
