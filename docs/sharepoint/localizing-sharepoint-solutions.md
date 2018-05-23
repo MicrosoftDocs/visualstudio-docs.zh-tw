@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>當地語系化 SharePoint 方案
   準備您的應用程式，讓它們可以用於全球的過程稱為當地語系化。 當地語系化轉譯特定的文化特性的資源。 如需詳細資訊，請參閱[全球化和當地語系化應用程式](/visualstudio/ide/globalizing-and-localizing-applications)。 本主題提供有關如何當地語系化 SharePoint 方案的概觀。  
@@ -47,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
  如需詳細資訊，請參閱[階層式組織當地語系化的資源](http://go.microsoft.com/fwlink/?LinkId=178360)。  
   
- 若要在您開發中的 SharePoint 專案中指定預設資源檔[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，選擇**因語言而異 （Invariant 國家/地區）**文化特性清單中的**加入資源**對話方塊時您將資源檔。  
+ 若要在您開發中的 SharePoint 專案中指定預設資源檔[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，選擇**因語言而異 （Invariant 國家/地區）** 文化特性清單中的**加入資源**對話方塊時您將資源檔。  
   
 ## <a name="localizing-visual-studio-sharepoint-solutions"></a>當地語系化 Visual Studio SharePoint 方案  
  當您將當地語系化的方案時，您應該考慮您的方案會顯示給使用者的文字資訊的所有。 告知性訊息、 錯誤訊息和[!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]字串必須進行轉譯，而且這些翻譯放在資源檔。  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  您建立的功能資源檔之後，將翻譯的字串加入它們。 存取當地語系化的字串格式如下的運算式：  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  ASPX 網頁及控制項標記中的所有硬式編碼屬性字串取代運算式格式如下：  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  例如:   
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  ASPX 為文字，使用運算式格式如下：  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  例如:   
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  在您的程式碼取代硬式編碼字串呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>方法使用下列語法：  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

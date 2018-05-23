@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07c9347bbfb42e3c2e20a1b4ecf6d852c567edbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b559239b537be4a57ff0815f67d8c50acb8b1ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-code"></a>如何：當地語系化程式碼
   未當地語系化的程式碼會使用硬式編碼的字串值。 若要當地語系化程式碼的字串，它們取代成呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，這是參考的當地語系化的資源的方法。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
 11. 找出程式碼中所有使用者可見的硬式編碼字串，例如 UI 文字、錯誤和訊息文字。 使用下列語法呼叫 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 方法取代這些字串：  
   
-    ```  
+    ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
     ```  
   
