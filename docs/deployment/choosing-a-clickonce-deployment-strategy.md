@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：  
@@ -46,15 +46,6 @@ ms.lasthandoff: 04/19/2018
   
  這是預設的部署策略。  
   
-## <a name="install-from-a-cd"></a>從 CD 安裝  
- 使用這項策略時，您的應用程式就會部署至卸除式媒體，例如 CD-ROM 或 DVD。 如同先前的選項，當使用者選擇要安裝應用程式時，就會安裝並啟動，而項目加入**啟動**功能表和**新增或移除程式**中**控制項面板**。  
-  
- 這項策略最適合將應用程式部署至沒有持續性 (Persistent) 網路連接或擁有低寬頻連接的使用者。 由於應用程式是從卸除式媒體安裝，所以不需要網路連接就可以進行安裝。不過，進行應用程式更新時仍然需要網路連接。  
-  
- 若要啟用這項部署策略中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，按一下 **從 CD-ROM 或 DVD-ROM**上**安裝方式**發行精靈的頁面。  
-  
- 若要手動啟用這項部署策略，請變更**deploymentProvider**部署資訊清單中的標記。 (在 Visual Studio 中，這個屬性會公開為**安裝 URL**上**發行**頁面的 專案設計工具。 在 Mage.exe 中是**開始位置**。)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>從 Web 或網路共用啟動應用程式  
  這項策略類似第一項策略，不過此應用程式的行為會與 Web 應用程式一樣。 當使用這按一下 Web 網頁上的連結 (或按兩下檔案共用中的圖示) 時，就會啟動應用程式。 當使用者關閉應用程式時，就無法再使用其本機電腦;不會加入**啟動**功能表或**新增或移除程式**中**控制台**。  
   
@@ -66,6 +57,15 @@ ms.lasthandoff: 04/19/2018
  若要啟用這項部署策略中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，按一下 **不安裝應用程式**上**Web 安裝或執行從**發行精靈的頁面。  
   
  若要手動啟用這項部署策略，，請變更**安裝**部署資訊清單中的標記。 (其值可以是**true**或**false**。 在 Mage.exe 中，使用**僅限線上**選項**應用程式類型**清單。)  
+
+## <a name="install-from-a-cd"></a>從 CD 安裝  
+ 使用這項策略時，您的應用程式就會部署至卸除式媒體，例如 CD-ROM 或 DVD。 如同先前的選項，當使用者選擇要安裝應用程式時，就會安裝並啟動，而項目加入**啟動**功能表和**新增或移除程式**中**控制項面板**。  
+  
+ 這項策略最適合將應用程式部署至沒有持續性 (Persistent) 網路連接或擁有低寬頻連接的使用者。 由於應用程式是從卸除式媒體安裝，所以不需要網路連接就可以進行安裝。不過，進行應用程式更新時仍然需要網路連接。  
+  
+ 若要啟用這項部署策略中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，按一下 **從 CD-ROM 或 DVD-ROM**上**安裝方式**發行精靈的頁面。  
+  
+ 若要手動啟用這項部署策略，請變更**deploymentProvider**部署資訊清單中的標記。 (在 Visual Studio 中，這個屬性會公開為**安裝 URL**上**發行**頁面的 專案設計工具。 在 Mage.exe 中是**開始位置**。)  
   
 ## <a name="web-browser-support"></a>Web 瀏覽器支援  
  以 .NET Framework 3.5 為目標的應用程式可透過任何瀏覽器進行安裝。  

@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c38e965c5d424c7a3a6ffe4047e9422f1f9bb4f0
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4192460ca7825947c88170b7bd36898595504438
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加至指令碼
 這個主題說明如何以手動方式將 Visual Studio 偵錯工具附加至指令碼檔以便進行偵錯。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/11/2018
   
 2.  在**附加至處理序**對話方塊中，查看**可用的處理序**清單，並且尋找指令碼處理您想要附加至。 您可以藉由查看找出指令碼處理序**類型**資料行。  
   
-    1.  如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱[如何： 選取遠端電腦](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+    1.  如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。
   
     2.  如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/11/2018
 > [!NOTE]
 >  如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 將附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
   
- 在某些情況下，在終端機服務 (遠端桌面) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 在 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] (含) 以後版本中，如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 可藉由使用系統管理員帳戶來執行 Visual Studio，或是從伺服器主控台 (而非終端機服務工作階段) 執行 Visual Studio，來解決這個問題。 如果這些解決方法都不是可行的第三個選項是附加至處理序中，輸入 vsjitdebugger.exe-p ProcessId 在 Windows 命令列。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，下載並安裝 Debugging Tools for Windows，可在[Windows 硬體開發人員中心](http://go.microsoft.com/fwlink/?linkid=1651)。  
+ 在某些情況下，在終端機服務 (遠端桌面) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 在 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] (含) 以後版本中，如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 可藉由使用系統管理員帳戶來執行 Visual Studio，或是從伺服器主控台 (而非終端機服務工作階段) 執行 Visual Studio，來解決這個問題。 如果這些解決方法都不是可行的第三個選項是附加至處理序中，輸入 vsjitdebugger.exe-p ProcessId 在 Windows 命令列。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，下載並安裝 Debugging Tools for Windows，可在[Windows 硬體開發人員中心](/windows-hardware/drivers/dashboard/)。  
   
 ## <a name="see-also"></a>另請參閱  
  [用戶端指令碼偵錯](../debugger/client-side-script-debugging.md)   
