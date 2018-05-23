@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 5f910d58f5972c3df27a4efd950d893c8de35f4b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
@@ -43,7 +43,7 @@ Visual Studio for Mac Tools for Unity 支援預期從 Visual Studio 取得的所
 
 ### <a name="powerful-refactoring-and-context-actions"></a>功能強大的重構和內容動作
 
-使用[重新命名、重構和內容動作](/visualstudio/mac/refactoring)的快速功能表和鍵盤快速鍵，來撰寫更多實用程式碼。
+使用[重新命名、重構和內容動作](refactoring.md)的快速功能表和鍵盤快速鍵，來撰寫更多實用程式碼。
 
 ### <a name="browse-and-add-new-files"></a>瀏覽並新增檔案
 
@@ -51,15 +51,15 @@ Visual Studio for Mac Tools for Unity 支援預期從 Visual Studio 取得的所
 
 ### <a name="use-familiar-key-bindings"></a>使用熟悉的按鍵繫結關係
 
-使用您知道的按鍵繫結關係來提高生產力。 Visual Studio for Mac 提供許多熱門 IDE 的常見[按鍵繫結](/visualstudio/mac/customizing-the-ide)，例如 Windows 上的 Visual Studio、ReSharper、Visual Studio Code 和 Xcode。
+使用您知道的按鍵繫結關係來提高生產力。 Visual Studio for Mac 提供許多熱門 IDE 的常見[按鍵繫結](customizing-the-ide.md)，例如 Windows 上的 Visual Studio、ReSharper、Visual Studio Code 和 Xcode。
 
 ### <a name="customize-the-visual-theme"></a>自訂視覺效果佈景主題
 
-請注意包含的[暗色調佈景主題](/visualstudio/mac/customizing-the-ide)。
+請注意包含的[暗色調佈景主題](customizing-the-ide.md)。
 
 ## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>開始使用 Visual Studio for Mac 的 Unity 開發人員祕訣
 
 這些連結說明剛開始使用 Visual Studio for Mac 之 Unity 開發人員的實用功能：
 
-* [自訂 IDE](/visualstudio/mac/customizing-the-ide) - 了解如何[變更視覺效果佈景主題](/visualstudio/mac/customizing-the-ide#dark-theme)，或切換至更熟悉的[按鍵繫結關係](/visualstudio/mac/customizing-the-ide#key-bindings)配置。
-* [原始檔編輯器](/visualstudio/mac/source-editor) - 了解 Visual Studio for Mac 如何更快速且更輕鬆地撰寫更好的程式碼，包含一般[鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)。
+* [自訂 IDE](customizing-the-ide.md) - 了解如何[變更視覺效果佈景主題](customizing-the-ide.md#dark-theme)，或切換至更熟悉的[按鍵繫結關係](customizing-the-ide.md#key-bindings)配置。
+* [原始檔編輯器](source-editor.md) - 了解 Visual Studio for Mac 如何更快速且更輕鬆地撰寫更好的程式碼，包含一般[鍵盤快速鍵](keyboard-shortcuts.md)。

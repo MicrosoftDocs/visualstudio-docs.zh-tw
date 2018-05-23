@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b09e776b1cf6726cd13ca8810ed528be12dd969a
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="version-control"></a>版本控制
 
@@ -27,7 +27,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 Visual Studio for Mac 同時支援 Git 和 Subversion 版本控制系統。 下面的文章會探討如何透過 Visual Studio for Mac 設定 Git 和 Subversion 存放庫，以及檢閱、認可和推送變更這類簡單功能。
 
-* [設定 Git 存放庫](~/set-up-git-repository.md) 
-* [使用 Git](~/working-with-git.md)
-* [設定 Subversion 存放庫](~/set-up-subversion-repository.md)
-* [使用 Subversion](~/working-with-subversion.md)
+* [設定 Git 存放庫](set-up-git-repository.md) 
+* [使用 Git](working-with-git.md)
+* [設定 Subversion 存放庫](set-up-subversion-repository.md)
+* [使用 Subversion](working-with-subversion.md)

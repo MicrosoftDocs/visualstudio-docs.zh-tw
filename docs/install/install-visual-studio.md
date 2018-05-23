@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 05/07/2018
 
 1. 在 [安裝 Visual Studio] 畫面中找到您想要的工作負載。
 
- ![從 Visual Studio 2017 設定對話方塊中選取工作負載](../install/media/install-visual-studio-enterprise.png)
+ ![從 Visual Studio 2017 設定對話方塊中選取工作負載](../install/media/install-visual-studio-community.png)
 
      例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。  
 

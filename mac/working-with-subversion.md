@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 1c03c4fac50c34cb96583a1fc8c16a403b7bbe1b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 9514db72dd72e616f45670ffdf8c0b468bfb81cc
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 
@@ -29,7 +29,7 @@ Subversion 使用「複製-修改-合併」模型，允許使用者同時處理�
 
 開始使用遠端 Subversion 存放庫之前，請簽出存放庫，以在本機電腦上建立該目錄的工作複本。
 
-若要了解如何在 Visual Studio for Mac 中使用 [簽出] 功能，請遵循[設定 Subversion 存放庫](~/set-up-subversion-repository.md)一節中的步驟。
+若要了解如何在 Visual Studio for Mac 中使用 [簽出] 功能，請遵循[設定 Subversion 存放庫](set-up-subversion-repository.md)一節中的步驟。
 
 ## <a name="update-solution"></a>更新方案
 

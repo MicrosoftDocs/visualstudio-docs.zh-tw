@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教學課程
 
@@ -52,7 +52,7 @@ Solution Pad 能組織方案中的專案：
 
 這是原始碼、資源、使用者介面和相依性的檔案組織成平台專屬專案的位置。
 
-如需在 Visual Studio for Mac 中使用專案和方案的詳細資訊，請參閱[專案和方案](~/projects-and-solutions.md)一文。
+如需在 Visual Studio for Mac 中使用專案和方案的詳細資訊，請參閱[專案和方案](projects-and-solutions.md)一文。
 
 ## <a name="assembly-references"></a>組件參考
  
@@ -64,7 +64,7 @@ Solution Pad 能組織方案中的專案：
  
 ![[編輯參考] 對話方塊](media/ide-tour-image20.png)
 
-如需在 Visual Studio for Mac 中使用參考的詳細資訊，請參閱[管理專案中的參考](~/managing-references-in-a-project.md)一文。
+如需在 Visual Studio for Mac 中使用參考的詳細資訊，請參閱[管理專案中的參考](managing-references-in-a-project.md)一文。
 
 ## <a name="dependencies--packages"></a>相依性/套件
 
@@ -76,19 +76,19 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 使用 Visual St
 
 ![新增 NuGet 套件](media/ide-tour-image21.png)
 
-在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](~/nuget-walkthrough.md)一文中找到。
+在應用程式中使用 NuGet 套件的相關資訊，可於[在專案中包含 NuGet 專案](nuget-walkthrough.md)一文中找到。
 
 ## <a name="refactoring"></a>重構
 
-Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](~/refactoring.md)一文中閱讀有關它們的深入資訊。
+Visual Studio for Mac 提供兩種有用的方式來重構程式碼：內容動作和原始檔分析。 您可以在[重構](refactoring.md)一文中閱讀有關它們的深入資訊。
 
 ## <a name="debugging"></a>偵錯
 
-Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。 Visual Studio for Mac 使用 Mono Soft Debugger，它實作到 Mono 執行階段之中，讓 IDE 能跨所有平台進行 Managed 程式碼的偵錯。 如需偵錯的詳細資訊，請瀏覽[偵錯](~/debugging.md)一文。
+Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。 Visual Studio for Mac 使用 Mono Soft Debugger，它實作到 Mono 執行階段之中，讓 IDE 能跨所有平台進行 Managed 程式碼的偵錯。 如需偵錯的詳細資訊，請瀏覽[偵錯](debugging.md)一文。
 
 偵錯工具包含豐富的視覺化檢視，適用於特殊類型，例如字串、色彩、URL、大小、座標，以及貝茲曲線。
 
-如需偵錯工具之資料視覺效果的詳細資訊，請瀏覽[資料視覺效果](~/data-visualizations.md)一文。
+如需偵錯工具之資料視覺效果的詳細資訊，請瀏覽[資料視覺效果](data-visualizations.md)一文。
 
 ## <a name="version-control"></a>版本控制
 
@@ -100,4 +100,4 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 ![Solution Pad 中的未認可檔案](media/ide-tour-image23.png)
 
-如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](~/version-control.md)一文。
+如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](version-control.md)一文。

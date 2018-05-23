@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 28127fec86f839110ff53de3e6d7d2466adc3489
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 
@@ -21,7 +21,7 @@ Visual Studio for Mac 可用來在專案開發期間建置應用程式和建立�
 
 在 IDE 中建立的所有專案和方案都會有預設的組建組態，以定義組建的內容。 您可以編輯這些組態，也可以建立自己的組態。 建立或修改這些組態會自動更新專案檔，MSBuild 之後會使用該檔案來建置專案。  
 
-如需如何在 IDE 中建立專案和方案的詳細資訊，請參閱[建置和清除專案與方案](~/building-and-cleaning-projects-and-solutions.md)指南。
+如需如何在 IDE 中建立專案和方案的詳細資訊，請參閱[建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)指南。
 
 Visual Studio for Mac 也可用來執行下列作業：
 
