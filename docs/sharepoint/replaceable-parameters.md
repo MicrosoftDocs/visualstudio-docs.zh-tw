@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 其功能類似於標準 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 範本語彙基元。 如需詳細資訊，請參閱[範本參數](/visualstudio/ide/template-parameters)。  
   
 ## <a name="token-format"></a>權杖格式  
- 語彙基元開頭和結尾是貨幣符號 （$） 字元。 SharePoint 方案套件 (.wsp) 檔案到在部署階段封裝專案時，用任何的權杖會取代實際的值。 例如，語彙基元**$SharePoint.Package.Name$**可能會解析成字串 「 測試 SharePoint 封裝 」。  
+ 語彙基元開頭和結尾是貨幣符號 （$） 字元。 在部署中，用任何的權杖會取代成實際值，在封裝專案至 SharePoint 方案套件 （.wsp 檔案）。 例如，語彙基元 **$SharePoint.Package.Name$** 可能會解析成字串 「 測試 SharePoint 封裝 」。  
   
 ## <a name="token-rules"></a>語彙基元的規則  
  下列規則適用於語彙基元：  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  不符合這些規則的語彙基元會被忽略，但未提供警告或錯誤。  
   
- 由字串值的語彙基元取代是資訊清單的轉換，如此可讓使用者使用語彙基元編輯資訊清單範本後立即完成。  
+ 由字串值的語彙基元取代是資訊清單的轉換後立即完成。 這項取代可讓使用者編輯資訊清單範本語彙基元。  
   
 ### <a name="token-name-resolution"></a>語彙基元的名稱解析  
  在大部分情況下，權杖會解析為不論它包含特定值。 不過，如果語彙基元相關的封裝或功能，此語彙基元的值取決於包含它。 例如，如果功能在封裝，然後在語彙基元`$SharePoint.Package.Name$`解析 「 封裝 A 」 的值 如果相同的功能是在封裝 B 則`$SharePoint.Package.Name$`解析為 「 套件 B 」。  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  這些擴充功能由定義`<TokenReplacementFileExtensions>`項目在 Microsoft.VisualStudio.SharePoint.targets 檔案中，位於...\\< 程式檔案\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 資料夾。  
   
- 不過，您可以將其他檔案的副檔名加入清單。 若要這樣做，請加入`<TokenReplacementFileExtensions>`定義之前加入 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。  
+ 不過，您可以將其他檔案的副檔名加入清單。 新增`<TokenReplacementFileExtensions>`定義之前加入 SharePoint 專案檔中的任何 PropertyGroup 項目\<匯入 > 的 於 SharePoint 目標檔。  
   
 > [!NOTE]  
 >  編譯專案之後，就會發生 token 取代，因為您不應該新增編譯的檔案類型，例如.cs、.vb 或.resx 檔案副檔名。 語彙基元取代只在未編譯的檔案。  
   
- 比方說，若要加入的語彙基元取代檔案名稱的副檔名清單中的檔案名稱副檔名".myextension"和".yourextension"，您可以加入下列.csproj 檔案：  
+ 比方說，若要加入的語彙基元取代檔案名稱的副檔名清單中的檔案名稱副檔名".myextension"和".yourextension"，您可以加入下列命令以`.csproj`檔案：  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- 或者，您可以加入擴充功能直接.targets 檔案。 不過，如此一來改變不只是封裝在本機系統上，所有 SharePoint 專案擴充功能清單自己。 當您在系統上唯一的開發人員，或大部分的專案需要它，這可能是很方便。 不過，因為它是特定系統，此方法不是高度可攜性，因此，建議您將任何擴充功能加入專案檔改為。  
+ 擴充功能直接加入.targets 檔案。 不過，如此一來改變不只是封裝在本機系統上，所有 SharePoint 專案擴充功能清單自己。 當您在系統上唯一的開發人員，或大部分的專案需要它，這可能是很方便。 不過，因為它是特定系統，此方法不是高度可攜性，因此，建議您將任何擴充功能加入專案檔改為。  
   
 ## <a name="see-also"></a>另請參閱  
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  

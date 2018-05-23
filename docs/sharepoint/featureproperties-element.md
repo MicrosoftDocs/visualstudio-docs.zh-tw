@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 991d2c57da8a1fc45fba266cdafe38000cd3d594
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30f466b1dd849f7c0288de38ead481dfa19995af
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 項目
-  表示將它部署至 SharePoint 時，會包含與功能的屬性值的集合。 將功能部署之後，您可以在程式碼中存取屬性值。  
+  部署至 SharePoint 時，會隨附在功能的屬性值的集合。 將功能部署之後，您可以在程式碼中存取屬性值。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <FeatureProperties>  
   <FeatureProperty.../>  
 </FeatureProperties>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |項目|描述|  
 |-------------|-----------------|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。|  
+|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目為必要的根元素的`.spdata`檔案。|  
   
 ## <a name="remarks"></a>備註  
  如需功能屬性的詳細資訊，請參閱[提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  

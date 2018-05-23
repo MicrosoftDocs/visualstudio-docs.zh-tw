@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90358624f5de8fc7c90e3424f04617acab4388a4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目標自訂 SharePoint 方案套件
   您可以在命令提示字元中使用 MSBuild 目標，自訂 Visual Studio 建立 SharePoint 封裝檔案 (.wsp) 的方式。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。  
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  開啟編輯器 (例如 [記事本])，然後加入下列程式碼。  
   
-    ```  
+    ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <Target Name="BeforeLayout">  
         <Message Importance="high" Text="In the BeforeLayout Target"></Message>  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在專案檔結尾附近的 `Import` 這行後面，加入下列程式碼。  
   
-    ```  
+    ```xml  
     <Import Project="CustomLayout.SharePoint.targets" />  
     ```  
   
@@ -69,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  緊接在 `</Project>` 標記之前，加入下列程式碼：  
   
-    ```  
+    ```xml  
     <Target Name="AfterLayout">  
       <Message Importance="high" Text="In the AfterLayout Target"></Message>  
     </Target>  

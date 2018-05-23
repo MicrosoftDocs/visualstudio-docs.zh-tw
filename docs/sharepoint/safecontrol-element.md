@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14e5d2cfd526d228d84ac6ff084e3873224c08c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8cf6d3d168e3d12d74a9773ccfb3312a29046f7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目
   代表 ASPX 控制項或指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面的 Web 組件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <SafeControl Assembly = "Name of assembly that contains the safe control"  
     IsSafe = "true/false"  
     IsSafeAgainstScript = "true/false"  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |屬性|描述|  
 |---------------|-----------------|  
-|**Assembly**|選擇性**xs: string**屬性。<br /><br /> 定義在 ASPX 控制項或 Web 組件的組件名稱。 根據預設，這個屬性會使用**$SharePoint.Project.AssemblyFullName$**組件名稱的可取代參數。 如需詳細資訊，請參閱[可置換的參數](../sharepoint/replaceable-parameters.md)。|  
+|**Assembly**|選擇性**xs: string**屬性。<br /><br /> 定義在 ASPX 控制項或 Web 組件的組件名稱。 根據預設，這個屬性會使用 **$SharePoint.Project.AssemblyFullName$** 組件名稱的可取代參數。 如需詳細資訊，請參閱[可置換的參數](../sharepoint/replaceable-parameters.md)。|  
 |**IsSafe**|選擇性**xs: boolean**屬性。<br /><br /> 指定在 ASPX 控制項或 Web 組件是不受信任的使用者存取的安全。|  
 |**IsSafeAgainstScript**|選擇性**xs: boolean**屬性。<br /><br /> 指定不受信任的使用者可以檢視或編輯在 ASPX 控制項或 Web 組件的內容。|  
 |**名稱**|選擇性**xs: string**屬性。<br /><br /> 此集合中的安全控制項項目名稱。|  

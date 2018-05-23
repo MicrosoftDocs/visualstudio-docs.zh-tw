@@ -1,5 +1,5 @@
 ---
-title: '&lt;formRegion&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;formRegion&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af7dd4f3472692def9f05a937297d54d13c6f0d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `formRegion` 命名空間的 `vstov4` 項目會識別與 VSTO 增益集相關聯的 Microsoft Office Outlook 表單區域。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <formRegion  
   name>  
   <messageClass  
@@ -57,9 +57,9 @@ ms.lasthandoff: 04/16/2018
 |`name`|必要。 識別與表單區域相關聯的表單。|  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明使用 `formRegion` 所部署之 Outlook VSTO 增益集的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 有三個訊息類別與這個表單區域相關聯。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明使用 `formRegion` 所部署之 Outlook VSTO 增益集的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 有三個訊息類別與這個表單區域相關聯。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
-```  
+```xml  
 <vstov4:formRegion  
     name="OutlookAddIn1.FormRegion1">  
   <vstov4:messageClass name="IPM.Note" />  
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 74aa647fc1048ffd8e8871b8e387657eff4d485a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面及包含影像的網站頁面
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面和網站頁面，其中包含影像變成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  以下列標記取代現有的標記。  
   
-    ```  
+    ```aspx-csharp  
     <%@ Master Language="C#" %>  
     <%@ Register tagprefix="SharePoint" namespace="Microsoft.SharePoint.WebControls" assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>  
     <html dir="ltr">  
@@ -112,7 +112,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  以下列標記取代現有的標記。  
   
-    ```  
+    ```aspx-csharp  
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>  
     <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>  
     <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>  

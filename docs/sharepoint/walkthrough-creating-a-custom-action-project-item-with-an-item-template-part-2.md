@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)
   定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈來使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
@@ -62,9 +62,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇  **Windows**節點。  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇  **Windows**節點。  
   
-4.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
+4.  在頂端**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
 5.  選擇**WPF 使用者控制項程式庫**專案範本，將專案命名**ItemTemplateWizard**，然後選擇 [**確定**] 按鈕。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
      針對 Visual C# 專案，您可以設定此值在**應用程式** 索引標籤。Visual Basic 專案中，您可以設定此值在**編譯** 索引標籤。如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-3.  在**ItemTemplateWizard**專案中，加入**視窗 (WPF)**至專案，項目，然後項目**WizardWindow**。  
+3.  在**ItemTemplateWizard**專案中，加入**視窗 (WPF)** 至專案，項目，然後項目**WizardWindow**。  
   
 4.  加入名為 CustomActionWizard 和字串的兩個程式碼檔案。  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  如果您正在開發的 Visual Basic 專案，移除`ItemTemplateWizard`命名空間從`WizardWindow`中的類別名稱`x:Class`屬性`Window`項目。 此元素為 XAML 的第一行。 當您完成時，第一行應該類似下列程式碼：  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 Visual Studio 命令提示字元視窗中，執行下列命令，取代*PathToWizardAssembly* ItemTemplateWizard 專案，在您開發的內建 ItemTemplateWizard.dll 組件的完整路徑電腦。  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  接近檔案結尾，加入下列`WizardExtension`之間的項目`</TemplateContent>`和`</VSTemplate>`標記。 取代*YourToken*值`PublicKeyToken`屬性與您在上一個程序中取得的公開金鑰 token。  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 ItemTemplate 專案中，請以下列 XML 取代 Elements.xml 檔案的內容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  
@@ -279,7 +279,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  展開**Visual C#**或**Visual Basic**節點 （取決於支援的語言項目範本），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+2.  展開**Visual C#** 或**Visual Basic**節點 （取決於支援的語言項目範本），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 3.  在專案範本清單中選擇**SharePoint 2010 專案**，將專案命名**CustomActionWizardTest**，然後選擇 [ **[確定]** ] 按鈕。  
   

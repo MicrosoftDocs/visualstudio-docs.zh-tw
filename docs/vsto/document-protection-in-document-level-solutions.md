@@ -1,5 +1,5 @@
 ---
-title: 文件保護文件層級方案中的 |Microsoft 文件
+title: 在文件層級方案中的文件保護
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22c8f135770fbd427d361b9c9b113da3b20e609a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="document-protection-in-document-level-solutions"></a>文件層級方案的文件保護
+# <a name="document-protection-in-document-level-solutions"></a>在文件層級方案中的文件保護
   您可以使用文件層級專案中的 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者變更受保護的文件部分。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -42,11 +42,11 @@ ms.lasthandoff: 04/16/2018
   
  不過，如果您建立使用現有的 Word 文件已啟用保護的專案，文件會受到保護，同時設計工具中開啟。 您無法編輯受保護的文件中，部分，但您仍然可以撰寫程式碼在程式碼編輯器來自動化文件。 您也無法建置專案時如果在 Visual Studio 中開啟文件時，會啟用保護。  
   
- 您可以關閉保護文件開啟時在設計工具，讓您能夠編輯文件，並建置專案。 您無法關閉設計工具中複製的保護時進行偵錯。在偵錯期間開啟的文件是從設計工具 （輸出複本會儲存在 \bin 目錄，適用於 Visual Basic 和 C# 的 \bin\debug 目錄） 中開啟單一另一份複本。  
+ 您可以關閉保護文件開啟時在設計工具，讓您能夠編輯文件，並建置專案。 您無法關閉設計工具中複製的保護時進行偵錯。在偵錯期間開啟的文件是在設計工具中開啟單一從另一份複本 (輸出複本會儲存在*\bin* Visual Basic 中，目錄和*\bin\debug*目錄 C#)。  
   
  您可以啟用保護在複本上的關閉 Visual Studio 中的專案、 開啟位於專案目錄中，文件的複本和保護開啟在設計工具中開啟的文件。  
   
-## <a name="enforcing-word-document-protection-on-build"></a>強制執行組建的 Word 文件保護  
+## <a name="enforce-word-document-protection-on-build"></a>強制執行組建的 Word 文件保護  
  Visual Studio 啟動強制執行保護的 Word 文件和範本建置程序期間，讓文件開啟時進行偵錯時，會啟用保護。 文件受到使用空白的密碼。  
   
  保護已啟用在建置期間，如果文件中的程式碼<xref:Microsoft.Office.Tools.Word.Document.Startup>可能造成例外狀況，或變更應用程式行為的事件，此程式碼能夠偵錯正確。 如果文件開啟之後，您可以啟用保護，無法偵錯或測試初始化程式碼。  
@@ -57,9 +57,9 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式保護文件及部分的文件](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
- [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [資訊版權管理和 managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   
- [如何： 允許程式碼在具有限制權限的文件背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何： 允許程式碼以有限權限的文件背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   
   

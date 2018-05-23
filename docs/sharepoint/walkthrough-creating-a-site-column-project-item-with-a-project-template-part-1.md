@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後將它們產生關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後您將建立的專案範本，可用來建立新的專案，其中包含網站欄專案項目。  
@@ -72,9 +72,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
+3.  在頂端**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-4.  展開**Visual Basic**或**Visual C#**節點，然後選擇 **擴充性**節點。  
+4.  展開**Visual Basic**或**Visual C#** 節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
     >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
@@ -89,9 +89,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
+2.  在頂端**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-3.  展開**Visual C#**或**Visual Basic** ] 節點，然後選擇 [**擴充性**節點。  
+3.  展開**Visual C#** 或**Visual Basic** ] 節點，然後選擇 [**擴充性**節點。  
   
 4.  在專案範本清單中選擇**C# 專案範本**或**Visual Basic 專案範本**範本。  
   
@@ -119,9 +119,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
+2.  在頂端**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-3.  展開**Visual C#**或**Visual Basic**節點，並選擇**Windows** ] 節點，然後選擇 [**類別庫**範本。  
+3.  展開**Visual C#** 或**Visual Basic**節點，並選擇**Windows** ] 節點，然後選擇 [**類別庫**範本。  
   
 4.  在**名稱**方塊中，輸入**ProjectItemTypeDefinition** ，然後選擇 [**確定**] 按鈕。  
   
@@ -203,13 +203,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  在專案檔中，找出下列`VSTemplate`項目。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
 4.  以下列 XML 取代此項目。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Elements.xml 檔案的內容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -280,7 +280,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 SharePointProjectItem.spdata 檔案的內容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -304,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Feature1.feature 檔案的內容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
@@ -330,7 +330,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Package.package 檔案的內容。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
@@ -357,7 +357,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果您要建立 Visual C# 專案範本，請使用下列 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -393,7 +393,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果您要建立 Visual Basic 專案範本，請使用下列 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -445,7 +445,7 @@ ms.lasthandoff: 04/16/2018
   
     -   如果您要建立 Visual C# 專案範本，請使用下列 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -525,7 +525,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  如果您要建立 Visual Basic 專案範本，請使用下列 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -694,7 +694,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  展開**Visual C#**或**Visual Basic**節點 （取決於您的專案範本支援語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+2.  展開**Visual C#** 或**Visual Basic**節點 （取決於您的專案範本支援語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 3.  在專案範本清單中選擇**網站資料行**範本。  
   

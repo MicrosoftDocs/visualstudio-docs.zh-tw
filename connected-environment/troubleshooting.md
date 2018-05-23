@@ -20,15 +20,15 @@ ms.lasthandoff: 04/26/2018
 ## <a name="error-upstream-connect-error-or-disconnectreset-before-headers"></a>錯誤「上游連線錯誤或標頭前的中斷連線/重設」
 嘗試存取您的服務時，您可能會看到這個錯誤。 例如，當您在瀏覽器中移至服務的 URL 時。 
 
-**原因：**容器連接埠無法使用。 以下為最常見的原因： 
+**原因：** 容器連接埠無法使用。 以下為最常見的原因： 
 * 容器仍在建置和部署中。 如果您執行 `vsce up` 或啟動偵錯工具，然後在容器成功部署前嘗試存取容器，就可能會發生這種狀況。
 * Dockerfile、Helm 圖表和任何開放連接埠的伺服端程式碼間的連接埠組態不一致。
 
 **請嘗試：**
 1. 如果正在建置/部署容器，您可以等候 2-3 秒，然後再次嘗試存取服務。 
 1. 檢查連接埠組態。 以下所有資產的指定連接埠號碼應該**相同**：
-    * **Dockerfile：**由 `EXPOSE` 指令所指定。
-    * **[Helm 圖表](https://docs.helm.sh)：**由服務的 `externalPort` 和 `internalPort` 值所指定 (通常位於 `values.yml` 檔案中)。
+    * **Dockerfile：** 由 `EXPOSE` 指令所指定。
+    * **[Helm 圖表](https://docs.helm.sh)：** 由服務的 `externalPort` 和 `internalPort` 值所指定 (通常位於 `values.yml` 檔案中)。
     * 在應用程式程式碼中開放的任何連接埠，例如在 Node.js 中為：`var server = app.listen(80, function () {...}`
 
 
@@ -52,21 +52,21 @@ ms.lasthandoff: 04/26/2018
 ## <a name="debugging-error-configured-debug-type-coreclr-is-not-supported"></a>偵錯錯誤「不支援設定的偵錯類型 'coreclr'」
 執行 VS Code 偵錯工具會回報錯誤：`Configured debug type 'coreclr' is not supported.`
 
-**原因：**您沒有在開發電腦上安裝已連線環境的 VS Code 延伸模組。
+**原因：** 您沒有在開發電腦上安裝已連線環境的 VS Code 延伸模組。
 
-**請嘗試：**安裝[已連線環境的 Visual Studio 延伸模組](get-started-netcore-01.md#get-kubernetes-debugging-for-vs-code)。
+**請嘗試：** 安裝[已連線環境的 Visual Studio 延伸模組](get-started-netcore-01.md#get-kubernetes-debugging-for-vs-code)。
 
 
 ## <a name="the-azure-portal-doesnt-show-connected-environment-instances"></a>Azure 入口網站不會顯示已連線的環境執行個體
 
-**原因：**已連線環境的 Azure 入口網站體驗尚未備妥，無法提供預覽。
+**原因：** 已連線環境的 Azure 入口網站體驗尚未備妥，無法提供預覽。
 
 
 ## <a name="the-type-or-namespace-name-mylibrary-could-not-be-found"></a>找不到類型或命名空間名稱 'MyLibrary'
 
-**原因：**組建的內容預設為專案/服務層級，因此找不到您要使用的程式庫專案。
+**原因：** 組建的內容預設為專案/服務層級，因此找不到您要使用的程式庫專案。
 
-**請嘗試：**需要完成的內容：
+**請嘗試：** 需要完成的內容：
 1. 修改 vsce.yaml 檔案以將組建內容設為解決方案層級。
 2. 修改 Dockerfile 和 Dockerfile.develop 檔案以正確指向 csproj 檔案，相對於新的組建內容。
 3. 將 .dockerignore 檔案放在 .sln 檔案旁邊，然後視需要修改。
@@ -77,9 +77,9 @@ ms.lasthandoff: 04/26/2018
 您可能會在管理環境時看到下列錯誤，而且您是在沒有擁有者或參與者存取權限的 Azure 訂用帳戶中工作。
 `The client '<User email/Id>' with object id '<Guid>' does not have authorization to perform action 'Microsoft.ConnectedEnvironment/register/action' over scope '/subscriptions/<Subscription Id>'.`
 
-**原因：**所選 Azure 訂用帳戶尚未註冊 Microsoft.ConnectedEnvironment 命名空間。
+**原因：** 所選 Azure 訂用帳戶尚未註冊 Microsoft.ConnectedEnvironment 命名空間。
 
-**請嘗試：**擁有 Azure 訂用帳戶擁有者或參與者存取權限的使用者可以執行下列 Azure CLI 命令，手動註冊 Microsoft.ConnectedEnvironment 命名空間：
+**請嘗試：** 擁有 Azure 訂用帳戶擁有者或參與者存取權限的使用者可以執行下列 Azure CLI 命令，手動註冊 Microsoft.ConnectedEnvironment 命名空間：
 
 ```cmd
 az provider register --namespace Microsoft.ConnectedEnvironment
@@ -87,9 +87,9 @@ az provider register --namespace Microsoft.ConnectedEnvironment
 
 ## <a name="vsce-doesnt-seem-to-use-my-existing-dockerfile-to-build-a-container"></a>VSCE 似乎不使用我現有的 Dockerfile 來建置容器 
 
-**原因：**VSCE 可以設定為指向您專案中的特定 Dockerfile。 如果 VSCE 似乎不使用您預期的 Dockerfile 來建置您的容器，您可能需要明確告知 VSCE 它的位置。 
+**原因：** VSCE 可以設定為指向您專案中的特定 Dockerfile。 如果 VSCE 似乎不使用您預期的 Dockerfile 來建置您的容器，您可能需要明確告知 VSCE 它的位置。 
 
-**請嘗試：**開啟 VSCE 在您專案中產生的 `vsce.yaml` 檔案。 使用 `configurations->develop->build->dockerfile` 指示詞指向您想要使用 Dockerfile：
+**請嘗試：** 開啟 VSCE 在您專案中產生的 `vsce.yaml` 檔案。 使用 `configurations->develop->build->dockerfile` 指示詞指向您想要使用 Dockerfile：
 
 ```
 ...

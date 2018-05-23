@@ -1,5 +1,5 @@
 ---
-title: 指導方針建立 Outlook 表單區域 |Microsoft 文件
+title: 建立 Outlook 表單區域的指導方針
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>建立 Outlook 表單區域的方針
+# <a name="guidelines-for-creating-outlook-form-regions"></a>建立 Outlook 表單區域的指導方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：  
   
 -   [使用表單區域名稱](#UsingFormRegions)。  

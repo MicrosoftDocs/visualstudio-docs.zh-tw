@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc63a3ac6d677da746823e101ca42d5765703907
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 項目
   表示對應的資料夾。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 |屬性|描述|  
 |---------------|-----------------|  
-|**Target**|需要**xs: string**屬性。<br /><br /> SharePoint 安裝對應的資料夾對應，相對於部署根資料夾中的資料夾路徑。 部署根資料夾由所指定之部署類型**類型**屬性。<br /><br /> 如需詳細資訊，請參閱說明**部署路徑**和**部署根**屬性的 SharePoint 專案中的項目[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Target**|需要**xs： 字串**屬性。<br /><br /> SharePoint 安裝對應的資料夾對應，相對於部署根資料夾中的資料夾路徑。 部署根資料夾由所指定之部署類型**類型**屬性。<br /><br /> 如需詳細資訊，請參閱說明**部署路徑**和**部署根**屬性的 SharePoint 專案中的項目[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|需要**xs: string**屬性。<br /><br /> 為對應的資料夾部署的類型。 如需可能值的詳細資訊，請參閱描述**部署類型**屬性中的 SharePoint 專案項目的[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|  
   
 ### <a name="child-elements"></a>子項目  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 |項目|描述|  
 |-------------|-----------------|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。|  
+|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目是必要的根項目`.spdata`檔案。|  
   
 ## <a name="remarks"></a>備註  
  如需對應的資料夾的詳細資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  

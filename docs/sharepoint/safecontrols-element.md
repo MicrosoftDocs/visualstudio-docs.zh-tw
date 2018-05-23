@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08f981c5dbbf5ae380e782c03553a8f249f41e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99235ad0852ab211a93fa2241d0d86ccb2fd8b51
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="safecontrols-element"></a>SafeControls 項目
-  表示 ASPX 控制項和網頁組件指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面的集合。  
+  ASPX 控制項和網頁組件所指定的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面為安全的集合。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <SafeControls>  
   <SafeControl.../>  
 </SafeControls>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |項目|描述|  
 |-------------|-----------------|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。|  
+|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目為必要的根元素的`.spdata`檔案。|  
   
 ## <a name="remarks"></a>備註  
  如需安全控制項的詳細資訊，請參閱[提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  

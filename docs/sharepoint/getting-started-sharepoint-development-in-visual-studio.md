@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e887109c1edb6bad2ee130c6623d5b7538167ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>使用者入門 (Visual Studio 中的 SharePoint 程式開發)
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。  
@@ -36,7 +36,6 @@ ms.lasthandoff: 04/16/2018
 |-----------|-----------------|  
 |[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|列出針對 SharePoint 進行開發的軟體需求。|  
 |[SharePoint 錯誤的其他相關資訊](../sharepoint/additional-information-for-sharepoint-errors.md)|描述如何在 SharePoint 程式開發和疑難排解期間尋找說明。|  
-|||  
   
 ## <a name="related-sections"></a>相關章節  
   

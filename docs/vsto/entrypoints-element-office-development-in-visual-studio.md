@@ -1,5 +1,5 @@
 ---
-title: '&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <entryPoints>  
     <entryPoint>  
     </entryPoint>  
@@ -54,11 +54,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `entryPoints` 所部署之文件層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明使用 `entryPoints` 所部署之文件層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoExcelWorkbook.ThisWorkbook">  
@@ -98,11 +98,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `entryPoints` 所部署之應用程式層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明使用 `entryPoints` 所部署之應用程式層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoOutlookAddIn.ThisAddIn">  
@@ -118,11 +118,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="multi-project-deployment-example"></a>多專案部署範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明多專案部署的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明多專案部署的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:entryPoints   
   id="ContosoExcel">  
   <vstav3:entryPoint   
@@ -172,7 +172,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

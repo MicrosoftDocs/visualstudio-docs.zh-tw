@@ -1,5 +1,5 @@
 ---
-title: GetAutoInsertExtensions 方法 |Microsoft 文件
+title: GetAutoInsertExtensions 方法
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
   取得要在偵錯期間自動插入的 Office 應用程式的相關資訊。  
@@ -26,13 +26,13 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>語法  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+### <a name="parameters"></a>參數  
   
 |參數|描述|  
 |---------------|-----------------|  
@@ -42,6 +42,6 @@ HRESULT GetAutoInsertExtensions(
  HRESULT 值，表示此方法是否已順利完成。  
   
 ## <a name="remarks"></a>備註  
- 適用於 Office 插入每個應用程式會當成對應至值 HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer 下的 Office 應用程式擴充功能名稱。 主機必須查閱登錄中的這些值，並自動插入擴充功能。  
+ 適用於 Office 插入每個應用程式會以 Office 應用程式擴充功能名稱，對應於底下的值傳回**HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**。 主機必須查閱登錄中的這些值，並自動插入擴充功能。  
   
   

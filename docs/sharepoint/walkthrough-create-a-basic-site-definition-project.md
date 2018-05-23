@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說：建立基本網站定義專案
   本逐步解說將示範如何建立基本網站定義包含在其上某些控制項的視覺 Web 組件。 為了清楚起見，您建立視覺 Web 組件有只有少數的控制項。 不過，您可以建立更複雜的 SharePoint 網站定義，包括更多的功能。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  展開**Visual C#**節點或**Visual Basic** ] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+2.  展開**Visual C#** 節點或**Visual Basic** ] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 3.  在**範本**清單中，選擇**SharePoint 2010 專案**範本。  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在**指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義中，在 SharePoint 網站的 URL，或使用預設位置 (http://*系統名稱*/)。  
   
-6.  在**此 SharePoint 方案的信任層級為何？**區段中，選擇**部署為伺服陣列方案**選項按鈕。  
+6.  在**此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
   
      所有站台定義專案必須部署為陣列方案中。 如需有關沙箱化方案和伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  在**方案總管] 中**，選擇專案節點，然後在功能表列上選擇 [**專案**，**加入新項目**。  
   
-9. 之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+9. 之下**Visual C#** 或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 10. 在**範本** 窗格中，選擇**網站定義**範本，將保留**名稱**做為**SiteDefinition1**，然後選擇  **新增** 按鈕。  
   
@@ -90,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
      [新增項目] 對話方塊隨即出現。  
   
-3.  展開**Visual C#**節點或**Visual Basic** ] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+3.  展開**Visual C#** 節點或**Visual Basic** ] 節點，展開 [ **SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 4.  在範本清單中，選擇 **視覺 Web 組件**範本中，保留預設名稱 VisualWebPart1，，然後選擇 **新增** 按鈕。  
   
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  在 VisualWebPart1.ascx 下方，加入下列三個控制項加入表單的標記： 文字方塊、 按鈕和標籤：  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  開啟 default.aspx 頁面上，，然後加入下列這行程式`WebPartPages`標記：  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  之後`</asp:Content>`項目，取代整個`ContentPlaceHolderId="PlaceHolderMain"`區段和其內容與下列程式碼：  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

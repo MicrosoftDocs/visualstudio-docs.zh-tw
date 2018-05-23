@@ -1,5 +1,5 @@
 ---
-title: GetVstoSolutionMetadata 函式 |Microsoft 文件
+title: GetVstoSolutionMetadata 函式
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c024d97d13c2794dd4fdaee6cfcd53d24c2e668
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d21b0d2b90441f0b9be543933e7243dd41440b02
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函式
   這個 API 支援 Office 基礎結構，並不適合直接從您的程式碼使用。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```c  
 HRESULT WINAPI GetVstoSolutionMetadata(  
     LPCWSTR lpwszSolutionMetadataKey,  
     ISolutionMetadata** ppSolutionInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+### <a name="parameters"></a>參數  
   
 |參數|描述|  
 |---------------|-----------------|  

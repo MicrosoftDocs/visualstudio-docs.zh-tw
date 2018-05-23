@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 
@@ -24,9 +24,13 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="actions-that-fix-errors"></a>修正錯誤的動作
 
+本節中的快速動作可修正程式碼中會導致建置失敗的錯誤。 當快速動作可修正程式碼行上的錯誤時，會在紅色波浪線的邊界或底下顯示具有紅色 'x' 標記的燈泡。
+
+![快速動作錯誤圖示與功能表](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>修正拼字錯誤的符號或關鍵字
 
-如果您不小心拼錯 Visual Studio 中的型別或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到如下的項目：將「拼錯的字」變更為「正確的字」。  例如: 
+如果您不小心拼錯 Visual Studio 中的類型或關鍵字，這個快速動作會自動加以修正。 您會在燈泡功能表中看到如下的項目：將「拼錯的字」變更為「正確的字」。  例如: 
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  錯誤識別碼 | 適用語言 |  支援版本 |
 | ------- | -------------------- | ----------------  |
 | CS8300、BC37284  | C# 和 Visual Basic | Visual Studio 2017 15.3 版 |
-
-### <a name="make-method-synchronous"></a>將方法設為同步
-
-在方法上使用 `async` 或 `Async` 關鍵字時，在該方法中的某處也應該要使用 `await` 或 `Await` 關鍵字。  若並非如此，就會顯示快速動作，讓您可以移除 `async` 或 `Async` 關鍵字和變更傳回型別，以便將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步] 選項。
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  錯誤識別碼 | 適用語言 |  支援版本 |
-| ------- | -------------------- | ----------------  |
-| CS1998、BC42356 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>將方法設為非同步
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | 診斷識別碼 | 適用語言 | 支援版本 |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>將方法設為同步
+
+在方法上使用 `async` 或 `Async` 關鍵字時，在該方法中的某處也應該要使用 `await` 或 `Await` 關鍵字。  若並非如此，就會顯示快速動作，讓您可以移除 `async` 或 `Async` 關鍵字和變更傳回型別，以便將方法設為同步。 使用 [快速動作] 功能表的 [將方法設為同步] 選項。
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  錯誤識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS1998、BC42356 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>另請參閱
 

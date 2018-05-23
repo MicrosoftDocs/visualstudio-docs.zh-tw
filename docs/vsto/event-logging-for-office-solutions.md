@@ -1,5 +1,5 @@
 ---
-title: Office 方案的事件記錄 |Microsoft 文件
+title: Office 方案的事件記錄
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 方案的事件記錄
   在安裝或解除安裝 Office 方案時，您可以使用 Windows 的事件檢視器查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 擷取的例外狀況訊息。 您可以使用事件記錄器的這些訊息，解決安裝和部署問題。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>讀取事件記錄檔  
+## <a name="read-the-event-log"></a>讀取事件記錄檔  
  開啟 [事件檢視器]  並篩選出您要查看的事件。  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>在 Windows Server 2003 和 Windows XP 中讀取事件記錄檔  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>在 Windows Server 2003 和 Windows XP 中讀取事件記錄檔  
   
 1.  在 [控制台] 中，開啟 [系統管理工具] 。  
   
@@ -81,10 +81,10 @@ ms.lasthandoff: 04/16/2018
 ### <a name="localization"></a>當地語系化  
  例外狀況訊息語言取決於 Visual Studio Tools for Office Runtime 語言。 例如，如果使用者電腦安裝了日文語言套件，則會用日文將例外狀況訊息寫入事件記錄檔。  
   
-## <a name="disabling-the-event-logger"></a>停用事件記錄器  
+## <a name="disable-the-event-logger"></a>停用事件記錄器  
  當您安裝或解除安裝 Office 方案時，預設會啟用事件記錄器。 您可以將 VSTO_EVENTLOGDISABLED 環境變數設定為 "1" (一)，以停用事件記錄器。  
   
-#### <a name="to-disable-the-event-log"></a>停用事件記錄檔  
+### <a name="to-disable-the-event-log"></a>停用事件記錄檔  
   
 1.  在 [控制台] 中，開啟 [系統] 。  
   
@@ -100,6 +100,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
- [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  
+ [疑難排解 Office 方案部署](../vsto/troubleshooting-office-solution-deployment.md)  
   
   
