@@ -81,7 +81,6 @@
 ##### [如何：在混合模式中進行偵錯](how-to-debug-in-mixed-mode.md)
 #### [偵錯準備：主控台專案](debugging-preparation-console-projects.md)
 #### [如何：偵錯不屬於 Visual Studio 方案的可執行檔](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [如何：以 Code Center Premium 來源進行偵錯](how-to-debug-with-code-center-premium-source.md)
 #### [偵錯和主機處理序](debugging-and-the-hosting-process.md)
 #### [如何：針對偵錯指定 .NET Framework 版本](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [建立資料的自訂檢視](viewing-data-in-the-debugger.md)

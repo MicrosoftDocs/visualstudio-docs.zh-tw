@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -17,7 +17,7 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中開啟 Unity 指令碼
 
-將 Visual Studio for Mac [設定為 Unity 的外部指令碼編輯器](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac)之後，在開啟所選擇指令碼的情況下，從 Unity 編輯器中開啟任何指令碼將會自動啟動或切換至 Visual Studio for Mac。
+將 Visual Studio for Mac [設定為 Unity 的外部指令碼編輯器](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac)之後，在開啟所選擇指令碼的情況下，從 Unity 編輯器中開啟任何指令碼將會自動啟動或切換至 Visual Studio for Mac。
 
 或者，從 Unity 的 [資產] 功能表中選取 [Open C# Project] (開啟 C# 專案)，也可以在原始檔編輯器中未開啟任何指令碼的情況下開啟 Visual Studio for Mac。
 

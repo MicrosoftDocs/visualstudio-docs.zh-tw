@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: dcfaee4d086fd5cd9d8ce85f365e63fbb21f8a9e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1bb23d03ac613c12df54f1a11e19ee5a8c2edb0
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 
@@ -19,7 +19,7 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 * Visual Studio Professional for Mac
 * Visual Studio Community for Mac
 
-若要開始使用訂用帳戶，請遵循[登入 Visual Studio for Mac](~/signing-in.md) 指南中的步驟來登入 Visual Studio for Mac。 登入會啟動您的訂用帳戶，這會顯示在 [帳戶] 對話方塊中：
+若要開始使用訂用帳戶，請遵循[登入 Visual Studio for Mac](signing-in.md) 指南中的步驟來登入 Visual Studio for Mac。 登入會啟動您的訂用帳戶，這會顯示在 [帳戶] 對話方塊中：
 
 ![顯示使用者授權對話方塊](media/user-accounts-login.png)
 
@@ -29,11 +29,11 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 1. 更新您的訂閱 您可以瀏覽至 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 以更新您的訂閱。
 
-2. 如果您有具有作用中訂用帳戶的其他帳戶，則可以將它新增至 Visual Studio for Mac，如[新增多個使用者帳戶](~/signing-in.md)一文中所述。 Visual Studio for Mac 會從您新增的所有帳戶中偵測到最適合的可用授權。 
+2. 如果您有具有作用中訂用帳戶的其他帳戶，則可以將它新增至 Visual Studio for Mac，如[新增多個使用者帳戶](signing-in.md)一文中所述。 Visual Studio for Mac 會從您新增的所有帳戶中偵測到最適合的可用授權。 
 
 ## <a name="product-key-usage"></a>產品金鑰使用方法
 
-目前，沒有辦法利用產品金鑰來啟用 Visual Studio for Mac 的 Professional 或 Enterprise 權利。 若要使用 Visual Studio Enterprise for Mac 或 Visual Studio Professional for Mac，您必須擁有相關的[訂用帳戶](https://www.visualstudio.com/subscriptions/)並[登入](~/signing-in.md) IDE。
+目前，沒有辦法利用產品金鑰來啟用 Visual Studio for Mac 的 Professional 或 Enterprise 權利。 若要使用 Visual Studio Enterprise for Mac 或 Visual Studio Professional for Mac，您必須擁有相關的[訂用帳戶](https://www.visualstudio.com/subscriptions/)並[登入](signing-in.md) IDE。
 
 ## <a name="offline-activation"></a>離線啟用
 

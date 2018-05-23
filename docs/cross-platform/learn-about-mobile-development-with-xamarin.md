@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 
@@ -101,7 +101,7 @@ Xamarin.Forms 提供一組通用的 API，可讓您在 .NET Standard 程式庫�
   
 ### <a name="microsofts-android-emulator"></a>Microsoft 的 Android 模擬器 
 
-建議您使用 Microsoft [Visual Studio 的 Android 模擬器](~/cross-platform/visual-studio-emulator-for-android.md)，這會隨 Visual Studio 一起安裝。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
+建議您使用 Microsoft [Visual Studio 的 Android 模擬器](visual-studio-emulator-for-android.md)，這會隨 Visual Studio 一起安裝。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
   
 ### <a name="apples-ios-simulator"></a>Apple 的 iOS 模擬器
 

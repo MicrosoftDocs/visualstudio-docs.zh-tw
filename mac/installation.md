@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>設定與安裝 Visual Studio for Mac
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/07/2018
       - 完整跨平台的 Xamarin 應用程式 – 選取 [Android]、[iOS] 與 [macOS] 平台。
   * **.NET Core 應用程式** – 選取 [.NET Core] 平台。
   * **ASP.NET Core Web 應用程式** – 選取 [.NET Core] 平台。
-  * **跨平台 Unity 遊戲開發** – 除了 Visual Studio for Mac 以外，不需要安裝其他平台。 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](~/setup-vsmac-tools-unity.md)。
+  * **跨平台 Unity 遊戲開發** – 除了 Visual Studio for Mac 以外，不需要安裝其他平台。 如需安裝 Unity 延伸模組的詳細資訊，請參閱 [Unity 安裝指南](setup-vsmac-tools-unity.md)。
 
   此安裝畫面顯示每個個別的元件的版本和大小。 您可以按一下每個元件，顯示該元件的相依性清單 (適用於 Android)，查看它下載的其他套件 (適用於.NET Core)，或檢視所需的任何其他應用程式 (適用於 iOS 和 macOS)：
 
@@ -112,4 +112,4 @@ ms.lasthandoff: 05/07/2018
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
-對於其他工作負載，請參閱[工作負載](~/workloads.md)頁面。
+對於其他工作負載，請參閱[工作負載](workloads.md)頁面。
