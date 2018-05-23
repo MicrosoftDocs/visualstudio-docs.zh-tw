@@ -1,5 +1,5 @@
 ---
-title: 存取 Visual Studio 中的資料
+title: 資料存取和工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
+# <a name="access-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
 在 Visual Studio 中，您可以建立連接至幾乎任何的資料庫產品或服務，任何形式、 任何位置中資料的應用程式，在本機電腦、 區域網路上，或 public、 private 或混合式雲端中。
 
 JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接到資料就像任何其他，取得程式庫，然後撰寫程式碼。 對於.NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，建立要儲存和操作資料在記憶體中，並將資料繫結至使用者介面的物件模型的工具。 Microsoft Azure 提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby、 和行動裝置應用程式，以及 Visual Studio 中的工具連接到 Azure 儲存體。
 
-下列清單顯示幾個可以用於許多資料庫和儲存體系統從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有佈建和管理的基礎資料存放區。  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx)是可讓您能夠使用 Azure 的資料存放區，直接從 Visual Studio 的選用元件。 可以在本機電腦上，在本機網路上，或在 Microsoft Azure 中虛擬機器上裝載大部分的其他 SQL 或 NoSQL 資料庫產品此處所列。 在此案例中，您負責管理資料庫本身。
+下列清單顯示幾個可以用於許多資料庫和儲存體系統從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有佈建和管理的基礎資料存放區。 **Azure 開發**中的工作負載[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)可讓您能夠使用 Azure 的資料存放區，直接從 Visual Studio。
+
+![Azure 的開發工作負載](media/azure-development-workload.png)
+
+可以在本機電腦上，在本機網路上，或在 Microsoft Azure 中虛擬機器上裝載大部分的其他 SQL 或 NoSQL 資料庫產品此處所列。 如果您主控 Microsoft Azure 虛擬機器中的資料庫，您負責管理資料庫本身。
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 所有的.NET 資料存取，包括在.NET Core 根據 ADO.NET 中，一組類別，定義用於存取任何種類的資料來源，關聯式和非關聯式的介面。 Visual Studio 有數個工具，可搭配 ADO.NET 為了連接到資料庫，設計工具操作資料，並將資料呈現給使用者。 本節中的文件描述如何使用這些工具。 您也可以直接針對 ado.net 指令程式。 如需直接呼叫 ADO.NET 應用程式開發介面的詳細資訊，請參閱[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-與 ASP.NET 特別相關的資料存取文件，請參閱[使用資料](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 的教學課程，請參閱[開始使用 Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+如需 ASP.NET 的相關資料存取文件，請參閱[使用資料](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 的教學課程，請參閱[開始使用 Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
 在 C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 應用程式可以使用 Microsoft Azure SDK for.NET 來存取 Azure 儲存體和其他 Azure 服務。 Windows.Web.HttpClient 類別可讓與任何 RESTful 服務的通訊。 如需詳細資訊，請參閱[如何連接到 HTTP 伺服器使用 windows.web.http 應用程式開發](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 

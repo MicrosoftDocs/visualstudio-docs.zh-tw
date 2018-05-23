@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門： 第一次查看 Visual Studio 中的部署
 
@@ -86,6 +86,8 @@ ms.lasthandoff: 05/10/2018
     ![桌面的橋接器](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>建立安裝程式套件 （Windows 用戶端）
+
+如果您會需要更複雜的安裝桌面應用程式比[ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)可以提供您可以建立的安裝程式套件，安裝專案中或自訂啟動載入器。
 
 - 您可以使用建立 MSI 為基礎的 WiX 安裝程式[WiX 工具組 Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)。
 

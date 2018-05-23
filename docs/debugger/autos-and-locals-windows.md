@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗
 **自動變數**視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > [自動變數]**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > [區域變數]**) 會相當實用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是在不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 如果您需要基本偵錯的詳細資訊，請參閱 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看 [自動變數] 和 [區域變數] 視窗中的物件  
-陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 [[區域變數]](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) 視窗中的 **FileStream** 物件範例：  
+陣列和物件會以樹狀結構控制項顯示在 [自動變數] 和 [區域變數] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 [[區域變數]](/dotnet/api/system.io.filestream) 視窗中的 **FileStream** 物件範例：  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   

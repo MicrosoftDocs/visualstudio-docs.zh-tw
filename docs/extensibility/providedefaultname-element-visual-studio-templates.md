@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 (Visual Studio 範本)
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統會產生在範本的預設名稱**加入新項目**或**新專案** 對話方塊。  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
  如果`ProvideDefaultName`項目是`false`、**名稱**方塊**加入新項目**和**新專案**對話方塊包含值`<Enter_name>`。  
   
- 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)來指定專案的預設名稱，或項目中的項目**加入新項目**和**新專案**對話方塊。  
+ 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)來指定專案的預設名稱，或項目中的項目**加入新項目**和**新專案**對話方塊。 當值`ProvideDefaultName`項目是`true`，省略`DefaultName`專案項目範本的名稱，也就是從值對話方塊方塊中填入[名稱](../extensibility/name-element-visual-studio-templates.md)項目。
   
 ## <a name="example"></a>範例  
  下列程式碼範例會設定`ProvideDefaultName`元素`false`。  
