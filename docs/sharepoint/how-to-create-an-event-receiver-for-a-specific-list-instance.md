@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：為特定的清單執行個體建立事件接收器
   清單執行個體的事件接收器會回應在清單中定義的任何執行個體中發生的事件。 雖然事件接收器範本不會啟用目標的特定清單執行個體，您可以修改事件接收器，以便以回應事件中的特定清單執行個體的清單定義為範圍。  
@@ -42,12 +42,12 @@ ms.lasthandoff: 04/16/2018
   
 5.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立事件接收器專案。  
   
-6.  在**您要何種類型的事件接收器？**清單中，選擇**清單項目事件**。  
+6.  在**您要何種類型的事件接收器？** 清單中，選擇**清單項目事件**。  
   
     > [!NOTE]  
     >  您也可以選取任何其他種類的事件接收器，例如，會設定為清單定義**列出的電子郵件事件**或**清單工作流程事件**。  
   
-7.  在**何種項目應該做為事件來源？**清單中，選擇**公告**。  
+7.  在**何種項目應該做為事件來源？** 清單中，選擇**公告**。  
   
 8.  在**處理下列事件**清單中，選取**正在加入項目**核取方塊，，然後選擇 [**完成**] 按鈕。  
   
@@ -55,13 +55,13 @@ ms.lasthandoff: 04/16/2018
   
      事件接收器目前是使用下列程式碼行參考 [公告] 清單定義：  
   
-    ```  
+    ```xml  
     <Receivers ListTemplateId="104">  
     ```  
   
      請將這行變更為以下文字：  
   
-    ```  
+    ```xml  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   

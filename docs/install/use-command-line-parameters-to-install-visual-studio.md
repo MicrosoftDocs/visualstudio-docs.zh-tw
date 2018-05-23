@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 05/07/2018
 | `--installPath <dir>` | 要操作之執行個體的安裝目錄。 若是安裝命令，這是**選擇性的**，而且是執行個體的安裝位置。 若是其他命令，這是**必要的**，而且是先前已安裝執行個體的安裝位置。 |
 | `--addProductLang <language-locale>` | **選擇性**︰在安裝或修改作業期間，這會決定要安裝到產品的 UI 語言套件。 它可在命令列上出現多次，以新增多個語言套件。 如果未出現，則會使用電腦地區設定來安裝。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
 | `--removeProductLang <language-locale>` | **選擇性**︰在安裝或修改作業期間，這會決定要從產品移除的 UI 語言套件。 它可在命令列上出現多次，以新增多個語言套件。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
-| `--add <one or more workload or component IDs>` | **選擇性**︰一或多個要新增的工作負載或元件識別碼。 安裝成品的必要元件，但不安裝建議或選用元件。 您可以使用 `--includeRecommended` 和/或 `--includeOptional`，以全域控制其他元件。 若要進行更精細的控制，可將 `;includeRecommended` 或 `;includeOptional` 附加到識別碼 (例如 `--add Workload1;includeRecommended` 或 `--add Workload2;includeRecommended;includeOptional`)。 如需詳細資訊，請參閱[工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。 如有必要，您可以重複此選項。|
+| `--add <one or more workload or component IDs>` | **選擇性**︰一或多個要新增的工作負載或元件識別碼。 安裝成品的必要元件，但不安裝建議或選用元件。 您可以使用 `--includeRecommended` 和/或 `--includeOptional`，以全域控制其他元件。 若要進行更精細的控制，可將 `;includeRecommended` 或 `;includeOptional` 附加到識別碼 (例如 `--add Workload1;includeRecommended` 或 `--add Workload2;includeRecommended;includeOptional`)。 如需詳細資訊，請參閱[工作負載與元件識別碼](workload-and-component-ids.md)頁面。 如有必要，您可以重複此選項。|
 | `--remove <one or more workload or component IDs>` | **選擇性**︰一或多個要移除的工作負載或元件識別碼。 如需詳細資訊，請參閱[工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。 如有必要，您可以重複此選項。|
 | `--in <path>` | **選擇性**︰回應檔的 URI 或路徑。  |
 | `--all` | **選擇性**︰是否要安裝產品的所有工作負載和元件。 |
@@ -80,12 +80,12 @@ ms.lasthandoff: 05/07/2018
 | ----------------------- | --------------- |
 | `--layout <dir>` | 指定一個目錄以建立離線安裝快取。 如需詳細資訊，請參閱[建立 Visual Studio 的網路型安裝](create-a-network-installation-of-visual-studio.md)。|
 | `--lang <one or more language-locales>` | **選擇性**：搭配使用 `--layout`，以指定語言的資源套件來準備離線安裝快取。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
-| `--add <one or more workload or component IDs>` | **選擇性**︰一或多個要新增的工作負載或元件識別碼。 安裝成品的必要元件，但不安裝建議或選用元件。 您可以使用 `--includeRecommended` 和/或 `--includeOptional`，以全域控制其他元件。 若要進行更精細的控制，可將 `;includeRecommended` 或 `;includeOptional` 附加到識別碼 (例如 `--add Workload1;includeRecommended` 或 `--add Workload2;includeOptional`)。 如需詳細資訊，請參閱[工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。 <br/>**注意**：如果使用了 `--add`，則只會下載特定的工作負載和元件及其相依性。 如果未指定 `--add`，所有的工作負載和元件都會下載到配置。|
+| `--add <one or more workload or component IDs>` | **選擇性**︰一或多個要新增的工作負載或元件識別碼。 安裝成品的必要元件，但不安裝建議或選用元件。 您可以使用 `--includeRecommended` 和/或 `--includeOptional`，以全域控制其他元件。 若要進行更精細的控制，可將 `;includeRecommended` 或 `;includeOptional` 附加到識別碼 (例如 `--add Workload1;includeRecommended` 或 `--add Workload2;includeOptional`)。 如需詳細資訊，請參閱[工作負載與元件識別碼](workload-and-component-ids.md)頁面。 <br/>**注意**：如果使用了 `--add`，則只會下載特定的工作負載和元件及其相依性。 如果未指定 `--add`，所有的工作負載和元件都會下載到配置。|
 | `--includeRecommended` | **選擇性**︰包含所安裝之任何工作負載的建議元件，但不包含選擇性元件。 使用 `--allWorkloads` 或 `--add` 指定工作負載。 |
 | `--includeOptional` | **選擇性**︰包含配置中所包含之任何工作負載的建議和選擇性元件。 使用 `--add` 指定工作負載。  |
 | `--keepLayoutVersion` | **版本 15.3 的新功能，選擇性**：無須更新配置的版本，即可將變更套用至配置。 |
-| `--verify` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。  會列出任何損毀或遺失的檔案。 |
-| `--fix` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。  如果找到任何損毀或遺失的檔案，則會重新下載。  必須有網際網路存取權才可修正配置。 |
+| `--verify` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。 會列出任何損毀或遺失的檔案。 |
+| `--fix` | **版本 15.3 的新功能，選擇性**：驗證配置的內容。  如果發現任何檔案損毀或遺失，均會予以重新下載。 必須有網際網路存取權才可修正配置。 |
 | `--clean <one or more paths to catalogs>` | **版本 15.3 的新功能，選擇性**：從已更新為較新版的配置中移除舊版元件。 |
 
 | **進階安裝選項** | **描述** |
@@ -103,7 +103,7 @@ ms.lasthandoff: 05/07/2018
 | `--noWeb` | **版本 15.3 的新功能，選擇性**：安裝程式現在會下載任何從網際網路安裝的內容。  離線配置中必須提供所有正在安裝的內容。  如果配置缺少內容，安裝程式會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 |
 | `--path <name>=<path>` | **15.7 的新功能，選擇性**：用來指定安裝的自訂安裝路徑。 支援的路徑名稱為 shared、cache 和 install。 |
 | `--path cache=<path>` | **15.7 的新功能，選擇性**：使用您指定用於下載安裝檔案的位置。 此位置只能在第一次安裝 Visual Studio 時設定。 範例：`--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **15.7 的新功能，選擇性**：包含並存 Visual Studio 安裝的共用檔案。 某些工具和 SDK 會安裝到此磁碟機上的位置，而其他一些項目則可能會覆寫此設定並安裝到其他磁碟機。 範例：`--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **15.7 的新功能，選擇性**：包含並存 Visual Studio 安裝的共用檔案。 某些工具和 SDK 會安裝到此磁碟機上的位置，而其他一些項目則可能會覆寫此設定並安裝到其他磁碟機。 範例：`--path shared="C:\VS\shared"` <br><br>重要：此項目只能在第一次安裝 Visual Studio 時設定一次。 |
 | `--path install=<path>` | **15.7 的新功能，選擇性**：相當於 `–-installPath`。 特別是 `--installPath "C:\VS"` 與 `--path install="C:\VS"` 相等。 一次只能使用其中一個。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作負載識別碼和元件識別碼清單
@@ -114,20 +114,20 @@ ms.lasthandoff: 05/07/2018
 
 | **語言地區設定** | **Language** |
 | ----------------------- | --------------- |
-| cs-CZ | 捷克文 |
-| de-DE | 德文 |
-| zh-TW | 英文 |
-| es-ES | 西班牙文 |
-| fr-FR | 法文 |
-| it-IT | 義大利文 |
-| ja-JP | 日文 |
-| ko-KR | 韓文 |
-| pl-PL | 波蘭文 |
-| pt-BR | 葡萄牙文 - 巴西 |
-| ru-RU | 俄文 |
-| tr-TR | 土耳其文 |
-| zh-CN | 簡體中文 |
-| zh-TW | 繁體中文 |
+| Cs-cz | 捷克文 |
+| De-de | 德文 |
+| En-us | 英文 |
+| Es-es | 西班牙文 |
+| Fr-fr | 法文 |
+| It-it | 義大利文 |
+| Ja-jp | 日文 |
+| Ko-kr | 韓文 |
+| Pl-pl | 波蘭文 |
+| Pt-br | 葡萄牙文 - 巴西 |
+| Ru-ru | 俄文 |
+| Tr-tr | 土耳其文 |
+| Zh-cn | 簡體中文 |
+| Zh-tw | 繁體中文 |
 
 ## <a name="error-codes"></a>錯誤碼
 

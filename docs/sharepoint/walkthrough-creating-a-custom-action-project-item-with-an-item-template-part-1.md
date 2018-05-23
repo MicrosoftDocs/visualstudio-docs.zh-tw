@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以藉由建立您自己的專案項目類型擴充 Visual Studio 中的 SharePoint 專案系統。 在本逐步解說，您將建立可加入至 SharePoint 專案，在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**網站動作**功能表的 SharePoint 網站。  
@@ -78,9 +78,9 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  在清單頂端的**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**已選取。  
+3.  在清單頂端的**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。  
   
-4.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
+4.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
     >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
@@ -95,9 +95,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在清單頂端的**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**已選取。  
+2.  在清單頂端的**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。  
   
-3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
 4.  在專案範本清單中選擇**C# 項目範本**或**Visual Basic 項目範本**範本。  
   
@@ -109,9 +109,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在清單頂端的**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**已選取。  
+2.  在清單頂端的**新專案**對話方塊方塊中，請確定 **.NET Framework 4.5**已選取。  
   
-3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，並選擇**Windows**  節點，然後選擇  **類別庫**專案範本。  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，並選擇**Windows**  節點，然後選擇  **類別庫**專案範本。  
   
 4.  在**名稱**方塊中，輸入**ProjectItemDefinition**，然後選擇 [**確定**] 按鈕。  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  下列 XML 程式碼是 Visual C# 項目範本。 如果您要建立 Visual Basic 項目範本，以取代值`ProjectType`具有項目`VisualBasic`。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
@@ -230,7 +230,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  將下列 XML 程式碼加入至 CustomAction.spdata 檔案，然後儲存並關閉檔案。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.CustomAction" DefaultFile="Elements.xml"   
      xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -250,7 +250,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Elements.xml 檔案的內容取代為下列 XML，然後儲存並關閉檔案。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="Replace this with a GUID or some other unique string"  
@@ -274,13 +274,13 @@ ms.lasthandoff: 04/16/2018
   
 15. 找出下列`VSTemplate`專案檔中的項目。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
     ```  
   
 16. 取代此項`VSTemplate`具有下列 XML，然後儲存和關閉檔案項目。  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -356,7 +356,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  展開**Visual C#**或**Visual Basic** （取決於支援的語言項目範本），依序展開**SharePoint**，然後選擇  **2010年**節點。  
+2.  展開**Visual C#** 或**Visual Basic** （取決於支援的語言項目範本），依序展開**SharePoint**，然後選擇  **2010年**節點。  
   
 3.  在專案範本清單中選擇**SharePoint 2010 專案**。  
   
@@ -400,25 +400,25 @@ ms.lasthandoff: 04/16/2018
   
     -   在`CustomAction`項目，設定`Id`GUID 或其他唯一的字串屬性，如下列範例所示：  
   
-        ```  
+        ```xml  
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"  
         ```  
   
     -   在`CustomAction`項目，設定`Title`屬性，如下列範例所示：  
   
-        ```  
+        ```xml  
         Title="SharePoint Developer Center"  
         ```  
   
     -   在`CustomAction`項目，設定`Description`屬性，如下列範例所示：  
   
-        ```  
+        ```xml  
         Description="Opens the SharePoint Developer Center Web site."  
         ```  
   
     -   在`UrlAction`項目，設定`Url`屬性，如下列範例所示：  
   
-        ```  
+        ```xml  
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   

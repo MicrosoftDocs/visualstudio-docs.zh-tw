@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始化表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始化表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 啟動工作流程時先到 SharePoint 系統管理員 （關聯表單） 相關聯的 ASPX 形式。  
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上選擇 [**檔案**，**新增**，**專案**顯示**新專案**] 對話方塊。  
   
-2.  展開**SharePoint**節點之下**Visual C#**或**Visual Basic**，然後選擇  **2010年**節點。  
+2.  展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇  **2010年**節點。  
   
 3.  在**範本** 窗格中，選擇**SharePoint 2010 專案**專案範本。  
   
@@ -88,15 +88,15 @@ ms.lasthandoff: 04/16/2018
   
 7.  在功能表列上選擇 **專案**，**加入新項目**。  
   
-8.  之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+8.  之下**Visual C#** 或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
-9. 在**範本** 窗格中，選擇**循序工作流程 （僅限陣列方案）**範本，然後選擇 **新增** 按鈕。  
+9. 在**範本** 窗格中，選擇**循序工作流程 （僅限陣列方案）** 範本，然後選擇 **新增** 按鈕。  
   
      **SharePoint 自訂精靈**隨即出現。  
   
 10. 在**指定偵錯的工作流程名稱**頁面上，接受預設名稱 (**ExpenseReport-Workflow1**)。 保留預設流程範本類型值 (**清單工作流程)**。 選擇 [下一步] 按鈕。  
   
-11. 在**您希望 Visual Studio 自動關聯工作流程偵錯工作階段中？**頁面上，清除 自動將您的工作流程範本，如果已核取方塊。  
+11. 在**您希望 Visual Studio 自動關聯工作流程偵錯工作階段中？** 頁面上，清除 自動將您的工作流程範本，如果已核取方塊。  
   
      這個步驟可讓您以手動方式將共用文件清單之後會顯示關聯表單的工作流程產生關聯。  
   
@@ -111,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上選擇 [**專案**，**加入新項目**顯示**加入新項目**] 對話方塊。  
   
-3.  在對話方塊] 方塊中的 [樹狀] 檢視中，展開 [ **Visual C#**或**Visual Basic** （取決於您專案的語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+3.  在對話方塊] 方塊中的 [樹狀] 檢視中，展開 [ **Visual C#** 或**Visual Basic** （取決於您專案的語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 4.  在範本清單中，選擇 **工作流程關聯表單**範本。  
   
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  直接在此內容項目中的第一行之後, 加入下列程式碼，建立標籤和文字方塊提示的經費支出核准限制 (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -172,7 +172,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上選擇 [**專案**，**加入新項目**顯示**加入新項目**] 對話方塊。  
   
-3.  在對話方塊] 方塊中的 [樹狀] 檢視中，展開 [ **Visual C#**或**Visual Basic** （取決於您專案的語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+3.  在對話方塊] 方塊中的 [樹狀] 檢視中，展開 [ **Visual C#** 或**Visual Basic** （取決於您專案的語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 4.  在範本清單中，選擇 **工作流程初始表單**範本。  
   
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  直接在此內容項目中的第一行之後, 加入下列程式碼建立的標籤和文字方塊中顯示的經費支出核准限制 (*AutoApproveLimit*) 的輸入關聯表單中，而且另一個標籤和費用總計提示您輸入的文字方塊中 (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會執行一系列的部署步驟，以特定順序。 Visual Studio 包含許多的內建部署步驟，但您也可以建立您自己。  
@@ -73,7 +73,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
     >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇  **Windows**節點。  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇  **Windows**節點。  
   
 3.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
@@ -102,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**，然後選擇  **Windows**節點。  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**，然後選擇  **Windows**節點。  
   
 3.  在對話方塊頂端，選擇  **.NET Framework 3.5**清單中的.NET Framework 版本。  
   
@@ -161,9 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-create-the-deployment-configuration"></a>若要建立的部署組態  
   
-1.  
-  
-2.  在**DeploymentStepExtension**專案中，開啟 DeploymentConfigurationExtension 程式碼檔案，並接著將下列程式碼貼入其中。  
+1.  在**DeploymentStepExtension**專案中，開啟 DeploymentConfigurationExtension 程式碼檔案，並接著將下列程式碼貼入其中。  
   
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
@@ -253,9 +251,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  在**新的專案**對話方塊方塊中，展開 [ **Visual C#**節點或**Visual Basic** ] 節點，展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
+2.  在**新的專案**對話方塊方塊中，展開 [ **Visual C#** 節點或**Visual Basic** ] 節點，展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
   
-3.  在對話方塊頂端，請確定**.NET Framework 3.5**會出現在.NET Framework 版本的清單。  
+3.  在對話方塊頂端，請確定 **.NET Framework 3.5**會出現在.NET Framework 版本的清單。  
   
      專案[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要這個版本的.NET Framework。  
   
@@ -282,11 +280,11 @@ ms.lasthandoff: 04/16/2018
   
 11. 在**選擇清單設定**頁面上，確認下列設定，然後選擇 **完成**按鈕：  
   
-    1.  **員工清單**會出現在**您想要清單顯示什麼名稱？**方塊。  
+    1.  **員工清單**會出現在**您想要清單顯示什麼名稱？** 方塊。  
   
-    2.  **建立自訂的清單為基礎：**會選擇選項按鈕。  
+    2.  **建立自訂的清單為基礎：** 會選擇選項按鈕。  
   
-    3.  **預設值 （空白）**中選擇**建立自訂的清單為基礎：**清單。  
+    3.  **預設值 （空白）** 中選擇**建立自訂的清單為基礎：** 清單。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立員工清單項目的標題欄與單一的空執行個體，並開啟清單設計工具。  
   
@@ -306,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 15. 在 Elements.xml 檔案中，取代預設的 XML 檔案中以下列 XML。 這段 XML 會變更的清單名稱**員工**，並將具有名為 Jim 宗翰的員工的資訊。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -357,7 +355,7 @@ ms.lasthandoff: 04/16/2018
   
      當您完成時，此檔案應該包含下列 XML。  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -432,7 +430,7 @@ ms.lasthandoff: 04/16/2018
   
      屬性編輯器/設計工具隨即開啟。  
   
-4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇  **<**移動從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
+4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇  **<** 移動從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
   
      這個動作會移除這些欄位的預設檢視從**員工**SharePoint 網站上的清單。  
   

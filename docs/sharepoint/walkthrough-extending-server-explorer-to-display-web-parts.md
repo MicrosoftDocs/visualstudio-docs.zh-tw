@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 Web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連接**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，使其顯示 Web 組件庫上每個連線的 SharePoint 網站。  
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#** 或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
     >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
@@ -89,7 +89,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在**新專案**對話方塊方塊中，展開 [ **Visual C#**節點或**Visual Basic** ] 節點，然後再選擇**Windows**節點。  
+2.  在**新專案**對話方塊方塊中，展開 [ **Visual C#** 節點或**Visual Basic** ] 節點，然後再選擇**Windows**節點。  
   
 3.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
@@ -103,17 +103,15 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  在**新專案**對話方塊方塊中，展開  **Visual C#**節點或**Visual Basic**  節點，然後選擇  **Windows**節點。  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#** 節點或**Visual Basic**  節點，然後選擇  **Windows**節點。  
   
 3.  在對話方塊頂端，選擇  **.NET Framework 3.5**清單中的.NET Framework 版本。  
   
-4.  
-  
-5.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartCommands**，然後選擇 [ **[確定]** ] 按鈕。  
+4.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartCommands**，然後選擇 [ **[確定]** ] 按鈕。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 新增**WebPartCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-6.  從專案刪除 Class1 的程式碼檔案。  
+5.  從專案刪除 Class1 的程式碼檔案。  
   
 ## <a name="configuring-the-projects"></a>設定專案  
  您撰寫程式碼來建立擴充功能之前，您必須新增程式碼檔案和組件參考，並設定專案設定。  

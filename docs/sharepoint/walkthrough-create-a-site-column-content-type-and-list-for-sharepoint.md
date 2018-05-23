@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 的網站資料行、內容類型和清單
   下列程序示範如何建立自訂 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立使用新的內容類型的清單。  
@@ -61,15 +61,15 @@ ms.lasthandoff: 04/16/2018
   
 1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**檔案**功能表上，選擇**新增**，**專案**。  
   
-2.  在**新專案**對話方塊之下**Visual C#**或**Visual Basic**，展開**SharePoint** ] 節點，然後選擇 [ **2010年**。  
+2.  在**新專案**對話方塊之下**Visual C#** 或**Visual Basic**，展開**SharePoint** ] 節點，然後選擇 [ **2010年**。  
   
-3.  在**範本**] 窗格中，選擇**SharePoint 2010 專案**，變更的專案名稱**診所**，然後選擇 [ **[確定]**按鈕。  
+3.  在**範本**] 窗格中，選擇**SharePoint 2010 專案**，變更的專案名稱**診所**，然後選擇 [ **[確定]** 按鈕。  
   
      SharePoint 2010 專案範本是空白的專案在此範例中用來包含網站資料行和稍後加入其他專案項目。  
   
 4.  在**指定偵錯的網站和安全性層級**頁面上，輸入您要加入新的自訂欄位項目，在本機 SharePoint 網站的 URL，或使用預設位置 (`http://<`*系統名稱*`>/)`.  
   
-5.  在**此 SharePoint 方案的信任層級為何？**區段中，使用預設值**部署為沙箱化方案**。  
+5.  在**此 SharePoint 方案的信任層級為何？** 區段中，使用預設值**部署為沙箱化方案**。  
   
      如需有關沙箱化和伺服器陣列方案，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在站台資料行的 Elements.xml 檔案中，保留**類型**設定為**文字**，並變更**群組**設**診所網站資料行**。 完成時，網站資料行的 Elements.xml 檔案看起來應該像下列的範例。  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上選擇 **專案**，**加入新項目**。  
   
-3.  之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+3.  之下**Visual C#** 或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 4.  在**範本** 窗格中，選擇**內容類型**範本，將名稱變更為**病患資訊**，然後選擇 **新增** 按鈕。  
   
@@ -139,7 +139,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在功能表列上選擇 **專案**，**加入新項目**。  
   
-3.  之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
+3.  之下**Visual C#** 或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
 4.  在**範本** 窗格中，選擇**清單**範本，將名稱變更為**病患**，然後選擇 **新增** 按鈕。  
   

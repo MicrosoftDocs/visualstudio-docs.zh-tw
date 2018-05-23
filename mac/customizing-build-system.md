@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
@@ -28,17 +28,17 @@ MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分�
 
 您可以滑鼠右鍵按一下專案名稱，然後選取 [在搜尋工具中顯示]來找到 MSBuild 檔案。 搜尋工具視窗會顯示與您專案相關的所有檔案和資料夾，包括 `.csproj` 檔案，如下圖所示：
 
-![](media/customizing-build-system-image1.png)
+![搜尋工具中的 csproj 位置](media/customizing-build-system-image1.png)
 
 若要在 Visual Studio for Mac 中使用新的索引標籤顯示 `.csproj`，請以滑鼠右鍵按一下專案名稱，並瀏覽至 [工具] > [編輯檔案]：
 
-![](media/customizing-build-system-image2.png)
+![在來源編輯器中開啟 csproj](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>組合 MSBuild 檔案
 
 所有的 MSBuild 檔案都包含必要的根 `Project` 元素，例如：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分�
 
 一般來說，專案也會匯入 `.targets` 檔案。 這個檔案包含許多描述如何處理和建置各種檔案的規則。 該匯入通常會顯示在 `proj` 檔案的底端，而對於 C# 專案其外觀則如下：
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 例如，簡單主控台應用程式的 PropertyGroup 看起來可能如下列 XML：
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 例如，下列程式碼片段會建立 iOS 啟動畫面。 啟動畫面擁有組建類型 `BundleResource`，包含作為映像路徑的規格：
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  可以使用 `@()` 語法從運算式參考項目集。 例如，`@(BundleResource)` 會評估為 BundleResource 項目集，這表示所有 BundleResource 項目。 如果沒有此類型的項目，則其為空白，而且不會產生任何錯誤。
 
 ## <a name="resources-for-learning-msbuild"></a>用來學習 MSBuild 的資源
@@ -105,5 +105,3 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 * [MSDN - 概觀](https://msdn.microsoft.com/library/dd393574.aspx)
 * [MSDN - 概念](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

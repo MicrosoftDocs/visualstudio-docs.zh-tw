@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed3278a237633cbf7f15806fa0efa9b3bc33bb6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面新增到工作流程
   本逐步解說示範如何將應用程式頁面會顯示在工作流程專案從工作流程衍生的資料。 它是在專案中的主題描述基礎[逐步解說： 建立工作流程關聯與初始化表單與](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]的 ApplicationPage1.aspx，取代`PlaceHolderMain`有下列區段：  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
         <asp:Label ID="Label1" runat="server" Font-Bold="True"   
             Text="Expenses that exceeded allotted amount" Font-Size="Medium"></asp:Label>  
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  加入應用程式頁面的標題來取代`PlaceHolderPageTitleInTitleArea`有下列區段：  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
         Expense Report Summary  
     </asp:Content>  

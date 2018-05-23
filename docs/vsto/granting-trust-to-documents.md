@@ -1,5 +1,5 @@
 ---
-title: 授與信任給文件 |Microsoft 文件
+title: 將信任授與文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Granting Trust to Documents
+# <a name="grant-trust-to-documents"></a>將信任授與文件
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,15 +39,15 @@ ms.lasthandoff: 04/16/2018
   
 -   本機資料夾是被視為較安全並受到隱含信任的位置。 您必須將檔案共用等遠端位置指定為受信任的位置。  
   
--   當您將目錄加入信任的位置時，這個動作不只會授與完全信任給 Office 方案，也會授與完全信任給 VBA 和 ActiveX 程式碼。 基於這個理由，您不應將根目錄和 [我的文件] 資料夾指定為受信任。  
+-   當您將目錄加入信任的位置時，這個動作不只會授與完全信任給 Office 方案，也會授與完全信任給 VBA 和 ActiveX 程式碼。 基於這個理由，根目錄和*我的文件*資料夾應該不會被指定為受信任。  
   
--   雖然文件本身是因為使用受信任的位置而受到信任，但仍需要額外的權限才能信任自訂項目。 您可透過使用憑證簽署資訊清單、按一下信任提示，或將 Office 方案安裝到 Program Files 目錄，以授與完全信任給自訂項目。  
+-   雖然文件本身是因為使用受信任的位置而受到信任，但仍需要額外的權限才能信任自訂項目。 您可以使用簽署資訊清單的憑證、 按一下信任提示，或安裝 Office 方案，以授與完全信任自訂*Program Files*目錄。  
   
--   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱[How to： 將文件層級 Office 方案發行至 SharePoint 伺服器使用 clickonce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 將文件層級 Office 方案發行至 SharePoint 伺服器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
 ## <a name="see-also"></a>另請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
- [Office 方案安全性疑難排解](../vsto/troubleshooting-office-solution-security.md)   
+ [疑難排解 Office 方案安全性](../vsto/troubleshooting-office-solution-security.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -91,17 +91,15 @@ Visual Studio 2017 包含一組內建的 [.NET 編譯器平台分析器](../code
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用燈泡來修正或重構程式碼
 
-[燈泡](../ide/quick-actions.md)是 Visual Studio 較新的功能，可讓您重構程式碼內嵌。 這是可迅速有效地修正 C#、C++ 和 Visual Basic 程式碼中常見警告的簡單方式。 若要存取，請以滑鼠右鍵按一下警告波浪線，然後選取 [快速動作]，或按 **Ctrl**+**.** (當游標在彩色波浪線上時)。 您會看到一份可能的修正或重構清單，可套用至該程式碼行。
+[快速動作](../ide/quick-actions.md)可從燈泡或螺絲起子圖示使用，讓您重構程式碼內嵌。 這是可迅速有效地修正 C#、C++ 和 Visual Basic 程式碼中常見警告的簡單方式。 若要存取，請以滑鼠右鍵按一下警告波浪線，然後選取 [快速動作與重構]。 您也可在游標停在彩色波浪線上時，按下 **Ctrl**+ 或是選取邊邊的燈泡或螺絲起子圖示。 您會看到一份可能的修正或重構清單，可套用至該程式碼行。
 
 ![Visual Studio 燈泡預覽](../ide/media/quick-actions-options.png)
 
-只要程式碼分析器判斷有修正、重構或改善程式碼的機會，即可使用燈泡。 按一下任何一行程式碼，再按一下滑鼠右鍵開啟操作功能表，然後選取 [快速動作] (如果您希望更有效率，也可以按 **Ctrl**+**.**)。 如果有重構或改進選項可用，則會顯示這些選項。 否則會在 IDE 左下角顯示 [No quick options available here] \(這裡沒有可用的快速選項\) 訊息。
+只要程式碼分析器判斷有修正、重構或改善程式碼的機會，即可使用快速動作。 按一下任何一行程式碼，再按一下滑鼠右鍵開啟操作功能表，然後選取 [快速動作與重構]。 如果有重構或改進選項可用，則會顯示這些選項。 否則會在 IDE 左下角顯示 [No quick actions available here] \(沒有任何可用的快速動作\) 訊息。
 
-![Visual Studio 燈泡「無選項」文字](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![文字：No quick actions available here (沒有任何可用的快速動作)](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-有經驗之後，您可以快速地使用方向鍵和 **Ctrl**+**.** 檢查快速選項重構機會，並清除程式碼！
-
-如需燈泡的詳細資訊，請參閱[快速動作](../ide/quick-actions.md)。
+有經驗之後，您可以快速地使用方向鍵和 **Ctrl**+**.** 找出輕鬆重構的機會，並清除您的程式碼！
 
 ## <a name="debug-your-running-code"></a>偵錯您執行的程式碼
 
@@ -161,4 +159,4 @@ Visual Studio 2017 包含一組內建的 [.NET 編譯器平台分析器](../code
 
 - [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
 - [深入了解使用偵錯工具](../debugger/getting-started-with-the-debugger.md)
-- [產生及修正程式嗎](../ide/code-generation-in-visual-studio.md)
+- [產生及修正程式碼](../ide/code-generation-in-visual-studio.md)

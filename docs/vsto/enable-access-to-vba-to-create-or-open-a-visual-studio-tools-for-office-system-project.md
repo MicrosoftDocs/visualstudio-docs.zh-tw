@@ -1,6 +1,6 @@
 ---
-title: 啟用存取權建立或開啟 Visual Studio Tools for Microsoft Office System 專案的 VBA
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: 啟用存取權建立或開啟 Visual Studio Tools for Microsoft Office system 專案的 VBA
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for Microsoft Office System 專案的 VBA
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for Microsoft Office system 專案的 VBA
 
-您可以建立或開啟 Visual Studio Tools for Microsoft Office System 專案之前，您必須明確啟用對 Visual Basic for Applications (VBA) 在 Microsoft Office 中的專案系統的存取。
+您可以建立或開啟 Visual Studio Tools for Microsoft Office system 專案之前，您必須明確啟用對 Visual Basic for Applications (VBA) 在 Microsoft Office 中的專案系統的存取。
 
  Microsoft Office 開發專案需要存取 Visual Basic for Applications (VBA) 專案系統中 Microsoft Office Word 和 Microsoft Office Excel 時，即使專案不使用 Visual Basic 應用程式。 設計階段所支援 Visual Basic 和 C# 專案的控制項，取決於 Visual Basic for Applications 專案系統。
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 05/10/2018
 
  如果出現 VBA 或 COM 錯誤，您可以修復 Office 的安裝。
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>啟用或停用 Visual Basic 專案的存取
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>若要啟用或停用存取 Visual Basic 專案
 
 1. 按一下 [檔案]  索引標籤。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/10/2018
 
 6. 按一下 [確定 **Deploying Office Solutions**]。
 
-### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要啟用或停用存取與 2007 Microsoft Office system 的 Visual Basic 專案
+### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要啟用或停用與 2007 Microsoft Office system 的 Visual Basic 專案的存取
 
 1. 在**工具**功能表在 Word 或 Excel，指向**巨集**，然後按一下 **安全性**。
 

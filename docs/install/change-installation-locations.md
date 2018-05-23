@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0460e61fea7e617e497a46c55f8af811ba2e24fe
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>變更 Visual Studio 2017 中的安裝位置
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/07/2018
   > [!IMPORTANT]
   > 如果您暫停安裝並於稍後繼續，Visual Studio 會從停止的地方繼續。 換句話說，其安裝進度會以剩餘的下載項目與安裝項目為基準，而不會從上一個計數開始。
 
-2. 在 [Visual Studio] 區段中，接受預設值。 這會安裝核心產品，並包含本版 Visual Studio 的特定檔案。
+2. 在 [Visual Studio IDE] 區段中，接受預設。 這會安裝核心產品，並包含本版 Visual Studio 的特定檔案。
 
  > [!IMPORTANT]
  > 如果您的系統磁碟機是固態硬碟 (SSD)，以下是我們建議您接受系統磁碟機上預設位置的原因：當您使用 Visual Studio 開發時，您會讀取並寫入大量檔案，而增加磁碟 I/O 活動。  最好選擇最快的磁碟機來處理負載。
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/07/2018
  > [!IMPORTANT]
  > 此位置會在您第一次安裝時設定，而且之後無法從安裝程式 UI 變更。 相反地，您必須[使用命令列參數](use-command-line-parameters-to-install-visual-studio.md)來移動下載快取
 
-4. 在 [Shared components, SDKs, and tools] \(共用元件、SDK 和工具\) 區段中，指定您要儲存檔案以供並存 Visual Studio 安裝共用的磁碟機。 讓 Visual Studio 安裝程式變更其安裝位置的 SDK 和工具也會儲存在此目錄中。
+4. 在 [Shared components, tools, and SDKs] \(共用元件、工具 和 SDK\) 區段中，指定您要儲存檔案以供並存 Visual Studio 安裝共用的磁碟機。 讓 Visual Studio 安裝程式變更其安裝位置的 SDK 和工具也會儲存在此目錄中。
 
  > [!NOTE]
  > 某些工具和 SDK 對於可安裝的位置有不同的規則。 這些工具和 SDK 仍然會安裝在您的系統磁碟機上，即使您選擇其他位置也一樣。
