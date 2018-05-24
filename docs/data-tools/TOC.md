@@ -1,5 +1,5 @@
-# 概觀
-## [存取 Visual Studio 中的資料](accessing-data-in-visual-studio.md)
+# 總覽
+## [使用 Visual Studio 存取資料](accessing-data-in-visual-studio.md)
 # 教學課程
 ## [使用 ADO.NET 建立簡單的資料應用程式](create-a-simple-data-application-by-using-adonet.md)
 ## [使用 WPF 和 Entity Framework 建立簡單的資料應用程式](create-a-simple-data-application-with-wpf-and-entity-framework-6.md)

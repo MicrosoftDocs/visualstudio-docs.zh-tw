@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後將它們產生關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後您將建立的專案範本，可用來建立新的專案，其中包含網站欄專案項目。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  這是獨立的逐步解說。 完成此逐步解說之後，您可以將精靈加入專案範本來增強專案項目。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+> 一系列的範例工作流程，請參閱[SharePoint 工作流程範例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說在開發電腦上：  

@@ -8,26 +8,26 @@
 ## [部署到 Azure](quickstart-deploy-to-azure.md)
 # 教學課程
 ## .NET
-### [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs)
-### [為 Microsoft Store (傳統型橋接器) 封裝傳統型應用程式](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [使用發行工具部署 .NET Core 應用程式](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [為 Microsoft Store (傳統型橋接器) 封裝傳統型應用程式](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [從命令列建置 ClickOnce 應用程式](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [將 ASP.NET Core 應用程式發行到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [將 ASP.NET Core 應用程式發行到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [匯入發佈設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
 ### [匯入發佈設定並部署至 IIS](tutorial-import-publish-settings-iis.md)
-### [使用 Git 將 ASP.NET Core 持續部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment)
-### [將 ASP.NET 部署到 IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [使用 Git 將 ASP.NET Core 持續部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [將 ASP.NET 部署到 IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## 原生
-### [Visual C++ 中的部署](/cpp/ide/deployment-in-visual-cpp)
-### [為 Microsoft Store (傳統型橋接器) 封裝傳統型應用程式](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Visual C++ 中的部署...](/cpp/ide/deployment-in-visual-cpp)
+### [為 Microsoft Store (傳統型橋接器) 封裝傳統型應用程式](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [使用 ClickOnce 部署原生應用程式...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [使用 Visual Studio 封裝 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps)
+### [使用 Visual Studio 封裝 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [使用 Web Deploy 發行到 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [使用 Web Deploy 發行到 Azure 網站](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [發佈至 Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [發佈至 Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # 作法指南
 ## [ClickOnce 安全性和部署](clickonce-security-and-deployment.md)
 ### [選擇 ClickOnce 部署策略](choosing-a-clickonce-deployment-strategy.md)

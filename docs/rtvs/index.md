@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -32,12 +32,12 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 然後遵循下列連結以深入了解 R 的相關功能，以及 Visual Studio 本身的一般功能。
 
-| 功能 | 描述 | 一般 Visual Studio 文件 | 
+| 功能 | 描述 | 一般 Visual Studio 文件 |
 | --- | --- | --- |
 | [Visual Studio 專案系統](r-projects-in-visual-studio.md) | 在便利的結構中組織並管理相關檔案，並利用適用於各種項目 (例如 R 程式碼、R 文件、R Markdown、SQL 查詢及預存程序) 的有用範本。 同時也能運用[套件管理員](r-package-manager-in-visual-studio.md)和 [SQL Server 整合](integrating-sql-server-with-r.md)。  | [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md) |
 | [工作區](r-workspaces-in-visual-studio.md) | RTVS 可繫結至本機及遠端工作區，讓您能夠使用更小的資料集於本機開發 R 程式碼，然後輕鬆地利用更大的資料集在更為強大的雲端電腦上執行程式碼。 | N/A |
 | [R 工具選項](options-for-r-tools-in-visual-studio.md) | 控制 RTVS 的各個層面。 | [選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md) |
-| [豐富的編輯、IntelliSense 及程式碼片段](editing-r-code-in-visual-studio.md) | 包含語法色彩標示、適用所有程式碼和程式庫的 [IntelliSense](r-intellisense.md)、程式碼格式設定、簽章說明、移至定義、尋找所有參考、[程式碼片段](code-snippets-for-r.md)等。 | [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [豐富的編輯、IntelliSense 及程式碼片段](editing-r-code-in-visual-studio.md) | 包含語法色彩標示、適用所有程式碼和程式庫的 [IntelliSense](r-intellisense.md)、程式碼格式設定、簽章說明、移至定義、尋找所有參考、[程式碼片段](code-snippets-for-r.md)等。 | [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdown 文件可協助您共用資料結果，Markdown 程式碼區塊內將具有整合的 R 程式碼。 | N/A |
 | [互動式視窗](interactive-repl-for-r-in-visual-studio.md) | 針對 R 提供完整的 REPL 體驗，並能夠輕鬆地在互動式視窗中執行來源檔案中的程式碼。 | N/A |
 | [視覺化資料](visualizing-data-with-r-in-visual-studio.md) | 繪圖是 R 體驗不可或缺的一部分，而 RTVS 支援多種獨立的繪圖視窗，每個視窗都擁有自己的記錄，並可以在視窗之間移動繪圖。 繪圖可以儲存為點陣圖或 PDF 檔案，或是以點陣圖或中繼檔的形式複製到剪貼簿。  | N/A |
