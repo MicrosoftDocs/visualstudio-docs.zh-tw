@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供的工具可協助您建立自訂工作流程，管理生命週期的文件和 SharePoint 網站的清單項目。 提供的項目包括設計工具、一組活動控制項，以及必要的組件參考。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也包含**SharePoint 自訂精靈**協助建立及設定工作流程。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>在 SharePoint 中的工作流程  
  當您新增至 SharePoint 文件庫或清單的工作流程時，您強制執行商務程序，在文件庫或清單中的所有項目上。 工作流程會描述系統或使用者必須在每個項目，例如傳送要編輯，然後檢閱的項目執行的動作。 這些動作，稱為*活動*，是工作流程的建置組塊。  
   
- 您可以建立 SharePoint 工作流程中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署至 SharePoint 網站。 工作流程部署至 SharePoint 之後，您關聯與程式庫或清單。 它可以再自動啟動，處理程序，或以手動方式，由的使用者。 如需工作流程作業的詳細資訊，請參閱[管理處理程序中使用工作流程](http://go.microsoft.com/fwlink/?LinkId=79757)。  
+ 您可以建立 SharePoint 工作流程中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署至 SharePoint 網站。 工作流程部署至 SharePoint 之後，您關聯與程式庫或清單。 它可以再自動啟動，處理程序，或以手動方式，由的使用者。 如需工作流程作業的詳細資訊，請參閱[開發 SharePoint 工作流程使用 Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)。  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>建立自訂 SharePoint 工作流程  
  兩個 SharePoint 工作流程專案可供您在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]:**循序工作流程**和**狀態機器工作流程**。  

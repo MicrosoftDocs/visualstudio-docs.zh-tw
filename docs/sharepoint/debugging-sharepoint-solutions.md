@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>對 SharePoint 方案進行偵錯
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您開始偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將專案檔案部署到 SharePoint 伺服器，然後開啟網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  當您偵錯工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]文件庫或清單加入工作流程範本 （取決於其類型）。 您可以開始將工作流程範本或藉由手動新增或更新項目。 然後您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工作流程。  
   
 > [!NOTE]  
->  如果您加入其他組件的參考，請確定這些組件安裝在全域組件快取中 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程方案將會失敗。 如需如何安裝組件資訊，請參閱[手動啟動工作流程上的文件或項目](http://go.microsoft.com/fwlink/?LinkID=79938)。  
+>  如果您加入其他組件的參考，請確定這些組件安裝在全域組件快取中 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否則，工作流程方案將會失敗。 如需如何安裝組件資訊，請參閱[手動啟動工作流程上的文件或項目](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
  不過，部署程序無法啟動工作流程。 您必須從 SharePoint 網站啟動工作流程。 使用 Microsoft Office Word 2010 中，用戶端應用程式，或使用不同的伺服器端程式碼，您也可以啟動工作流程。 使用其中一種方法中指定**SharePoint 自訂精靈**。  
   
- 例如，如果您指定可以手動啟動工作流程，請直接從程式庫或清單中的項目啟動工作流程。 如需如何以手動方式啟動工作流程的詳細資訊，請參閱[手動啟動工作流程上的文件項目](http://go.microsoft.com/fwlink/?LinkID=79938)。  
+ 例如，如果您指定可以手動啟動工作流程，請直接從程式庫或清單中的項目啟動工作流程。 如需如何以手動方式啟動工作流程的詳細資訊，請參閱[手動啟動工作流程上的文件項目](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
 ##  <a name="FeatureEvents"></a> 偵錯功能事件接收器  
  根據預設，當您執行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 應用程式，其功能時會自動為您啟用 SharePoint 伺服器上。 不過，這會造成問題時進行偵錯功能事件接收器，因為當啟動功能[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，它會比偵錯工具在不同處理序中執行。 這表示，某些偵錯功能，例如中斷點，將無法正常運作。  

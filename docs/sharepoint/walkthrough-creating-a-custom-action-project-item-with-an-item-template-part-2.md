@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)
   定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈來使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   偵錯和測試的精靈。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置：[專案檔案的 SharePoint 工具擴充性的逐步解說](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+>  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立自訂活動，以便在工作流程。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要執行本逐步解說，您必須先建立 CustomActionProjectItem 解決方案完成[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  

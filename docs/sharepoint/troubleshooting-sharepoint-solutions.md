@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>SharePoint 方案疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱[偵錯 SharePoint 2007 工作流程方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/16/2018
   
 -   安裝 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。  
   
--   請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]線上文章[入口網站的存取權授與](http://go.microsoft.com/fwlink/?LinkId=98310)。  
+-   請確定您需要 SharePoint 網站的系統管理員存取權。 如需詳細資訊，請參閱[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]線上文章[指派或移除服務應用程式的系統管理員在 SharePoint 伺服器](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>站台刪除網頁事件不會發生在事件接收器專案  
  當您建立事件接收器專案時，您選取特定 Web 事件，例如 「 正在刪除站台 」，永遠不會發生這個事件。  
@@ -238,7 +238,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在**應用程式集區**頁面上，選擇 SharePoint 應用程式集區 (通常是"SharePoint-80")，然後在**動作** 窗格中，選擇**進階設定**連結。  
   
-4.  若要增加 IIS 逾時之前的等待時間，變更的值**Ping 回應時間上限 （秒）**大於 90 秒的值。  
+4.  若要增加 IIS 逾時之前的等待時間，變更的值**Ping 回應時間上限 （秒）** 大於 90 秒的值。  
   
 5.  若要停用 IIS ping，請設定**已啟用 Ping**至**False**。  
   

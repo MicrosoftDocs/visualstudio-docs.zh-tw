@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0aa938d41540229d6cd91598968f104b3fa3a7be
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)
   定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈在使用您的範本建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
 -   偵錯和測試的精靈。  
   
 > [!NOTE]  
->  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369)。  
+> 一系列的範例工作流程，請參閱[SharePoint 工作流程範例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要執行本逐步解說，您必須先建立 SiteColumnProjectItem 解決方案完成[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
