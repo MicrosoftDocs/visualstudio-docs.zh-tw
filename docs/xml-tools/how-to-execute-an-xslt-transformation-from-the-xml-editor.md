@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>HOW TO：從 XML 編輯器執行 XSLT 轉換
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何： 從 XML 編輯器執行 XSLT 轉換
 
 XML 編輯器可讓您將 XSLT 樣式表與 XML 文件相關聯、執行轉換，以及檢閱輸出。 XSLT 轉換的結果輸出會顯示在新文件視窗中。
 
-**輸出**屬性會指定輸出檔名。 如果**輸出**屬性為空白，暫存目錄中產生檔案名稱。 副檔名以樣式表中的 `xsl:output` 項目為基礎，可以是 .xml、.txt 或 .htm。
+**輸出**屬性會指定輸出檔名。 如果**輸出**屬性為空白，暫存目錄中產生檔案名稱。 副檔名根據`xsl:output`樣式中的項目工作表，而且可以是下列。*xml*，。*txt*或。*htm*。
 
-如果**輸出**屬性指定的檔案名稱為 htm 或.html 延伸模組，XSLT 輸出預覽使用[!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]Internet Explorer。 所有其他副檔名都使用 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 所選擇的預設編輯器來開啟。 例如，如果副檔名為 .xml，則 Visual Studio 使用 XML 編輯器。
+如果**輸出**屬性指定的檔名。*htm*或。*html*延伸模組，XSLT 輸出是預覽使用[!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]Internet Explorer。 所有其他副檔名都使用 [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio 所選擇的預設編輯器來開啟。 例如，如果副檔名是。*xml*，Visual Studio 會使用 XML 編輯器。
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>從 XML 文件執行 XSLT 轉換
 

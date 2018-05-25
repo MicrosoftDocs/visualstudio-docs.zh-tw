@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91c8f8003f610e9cf4aa440fa0175bb13267896e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f32dedf1b0f431f3385c14f7c0d4d5ddd27982a9
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>一般參考 （在 Visual Studio 中的 Office 程式開發）
   本章節包含有關 Visual Studio 中的 Microsoft Office 專案的技術詳細資料。  

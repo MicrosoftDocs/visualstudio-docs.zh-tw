@@ -1,5 +1,5 @@
 ---
-title: 如何： 將自訂工作窗格加入至應用程式 |Microsoft 文件
+title: 如何： 應用程式中加入自訂工作窗格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 818b8e2937692ff0ec445d2a94193beaa1b480bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：在應用程式中加入自訂工作窗格
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何： 應用程式中加入自訂工作窗格
   您可以使用 VSTO 增益集，將自訂工作窗格加入上面所列的應用程式。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -30,11 +30,11 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="adding-a-custom-task-pane-to-an-application"></a>在應用程式中加入自訂工作窗格  
+## <a name="add-a-custom-task-pane-to-an-application"></a>應用程式中加入自訂工作窗格  
   
-#### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要在應用程式中加入自訂工作窗格  
+### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要在應用程式中加入自訂工作窗格  
   
-1.  針對上面所列的其中一個應用程式，開啟或建立 VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  針對上面所列的其中一個應用程式，開啟或建立 VSTO 增益集專案。 如需詳細資訊，請參閱[How to： 在 Visual Studio 建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。  
   
@@ -62,6 +62,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [自訂工作窗格](../vsto/custom-task-panes.md)   
- [逐步解說：運用自訂工作窗格自動化應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [逐步解說： 運用自訂工作窗格應用程式自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

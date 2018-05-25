@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>HOW TO：將節點從 XML 結構描述總管加入至工作空間
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何： 將節點加入至工作區中，從 XML 結構描述總管
 
-本主題說明如何將節點加入[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)XML 結構描述總管中。 只要將 XML 結構描述總管中的節點拖曳到 XSD 設計工具檢視上，或者使用 XML 結構描述總管的操作功能表，即可達到此目的。 您也可以加入以 XML 結構描述總管執行搜尋後反白顯示為結果的節點。 如需詳細資訊，請參閱[如何： 加入結構描述設定搜尋結果節點加入工作空間](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
+本主題說明如何將節點加入[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)從**XML 結構描述總管**。 這可以藉由拖放節點從**XML 結構描述總管**放至 XSD 設計工具檢視，或使用**XML 結構描述總管的**操作功能表。 您也可以加入會反白顯示所執行的搜尋結果的節點**XML 結構描述總管**。 如需詳細資訊，請參閱[How to： 將結構描述集合搜尋節點加入至工作區](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。
 
 > [!NOTE]
 > 只有全域節點可以加入至[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。
@@ -33,11 +33,11 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>將節點拖放至檢視上
 
-1.  以滑鼠右鍵按一下圖表檢視中的 `PurchaseOrderType` 節點。 選取**在 XML 結構描述總管中顯示**。
+1.  以滑鼠右鍵按一下`PurchaseOrderType`圖表檢視中的節點。 選取**在 XML 結構描述總管中顯示**。
 
-     該節點會在 XML 結構描述總管中反白顯示。
+     節點會反白顯示**XML 結構描述總管**。
 
-2.  以滑鼠右鍵按一下`PurchaseOrderType`節點中的 XML 結構描述總管和選取**顯示所有參考**。
+2.  以滑鼠右鍵按一下`PurchaseOrderType`節點**XML 結構描述總管**選取**顯示所有參考**。
 
      `purchaseOrder` 節點會反白顯示。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
      ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     搜尋結果會在 XML 結構描述總管中反白顯示，並以刻度標示在垂直捲軸上。
+     搜尋結果會以反白顯示**XML 結構描述總管**並以刻度標示在垂直捲軸上。
 
 2.  按一下搜尋結果加入工作區**反白顯示的節點新增到工作區**摘要結果面板上的按鈕。
 

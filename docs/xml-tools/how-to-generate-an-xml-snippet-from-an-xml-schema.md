@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何： 從 XML 結構描述產生 XML 片段
 
-XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案且定位在項目名稱旁邊時，可以按 TAB 鍵，將從該項目之結構描述資訊產生的 XML 資料填入項目。
+XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML 片段的功能。 例如，當您撰寫 XML 檔案中，相鄰的項目名稱時，您可以按** 索引標籤**要從該元素的結構描述資訊產生的 XML 資料以填入項目。
 
 此功能僅可用於項目。 下列規則也適用：
 
@@ -44,12 +44,12 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
 ## <a name="example"></a>範例
 
- 本節中的步驟說明如何使用 XML 編輯器之結構描述產生的 XML 片段功能。
+ 本節中的步驟顯示如何使用結構描述產生 XML 程式碼片段 XML 編輯器功能。
 
 > [!NOTE]
 > 先將結構描述檔案儲存到本機電腦上，再啟動這些程序。
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>建立新的 XML 檔案，並將其與 XML 結構描述相關聯
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>若要建立新的 XML 檔案，並將它與 XML 結構描述產生關聯
 
 1.  在**檔案**功能表上，指向**新增**，然後按一下**檔案**。
 
@@ -85,11 +85,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
      **請連絡**-加入根項目。
 
-3.  選取**連絡人**從 [成員] 清單中，按下 ENTER。
+3.  選取**連絡人**從成員 清單中，然後按**Enter**。
 
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。
 
-4.  按 TAB 鍵，會根據 `Contact` 項目的結構描述資訊產生它的 XML 資料。
+4.  按** 索引標籤**產生的 XML 資料`Contact`項目會根據其結構描述資訊。
 
 ## <a name="input"></a>輸入
 
@@ -158,4 +158,4 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 ## <a name="see-also"></a>另請參閱
 
 - [XML 片段](../xml-tools/xml-snippets.md)
-- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)
+- [如何： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)

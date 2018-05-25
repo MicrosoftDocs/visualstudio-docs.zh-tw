@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2956e0c19e7cf50fdde39765bc5b26112986b84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>HOW TO：評估 XPath 運算式
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   不支援使用者定義函式。
 
 > [!NOTE]
-> 下列程序會使用 belowAvg.xsl 及 books.xml 檔[逐步解說： 偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主題。
+> 下列程序使用*belowAvg.xsl*和*books.xml*檔案從[逐步解說： 偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主題。
 
 ## <a name="to-evaluate-an-xpath-expression"></a>評估 XPath 運算式
 

@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>熟悉的使用者介面  
  Microsoft Office system 應用程式的使用者已經十分熟悉工作窗格使用如**樣式與格式**Word 工作窗格。 自訂工作窗格的行為與 Microsoft Office system 的其他工作窗格相同。 使用者可以將自訂工作窗格固定至應用程式視窗的不同側，也可以將自訂工作窗格拖曳到視窗中的任何位置。 您可以建立同時顯示多個自訂工作窗格的 VSTO 增益集，而且使用者可以個別控制每個工作窗格。  
   
-### <a name="windows-forms-support"></a>Windows Form 支援  
+### <a name="windows-forms-support"></a>Windows form 支援  
  您使用 Visual Studio 的 Office 開發工具來為自訂工作窗格所建立的使用者介面，均是以 Windows Forms 控制項為基礎。 您可以使用熟悉的 [Windows Form 設計工具] 設計自訂工作窗格的使用者介面。 也可以使用 Windows Form 中的資料繫結支援，將資料來源繫結至工作窗格上的控制項。  
   
 ## <a name="create-a-custom-task-pane"></a>建立自訂工作窗格  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>從工作窗格存取應用程式  
  如果您要從使用者控制項自動化應用程式，可以使用程式碼中的 `Globals.ThisAddIn.Application` 直接存取物件模型。 靜態 `Globals` 類別會提供對 `ThisAddIn` 物件的存取。 這個物件的 `Application` 欄位為應用程式之物件模型的進入點。  
   
- 如需有關`Application`欄位`ThisAddIn`物件，請參閱[程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。如需示範如何自動從自訂工作窗格應用程式的逐步解說，請參閱[逐步解說： 運用自訂工作窗格應用程式自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 如需有關`Globals`類別，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 如需有關`Application`欄位`ThisAddIn`物件，請參閱[程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。如需示範如何自動從自訂工作窗格應用程式的逐步解說，請參閱[逐步解說： 運用自訂工作窗格應用程式自動](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 如需有關`Globals`類別，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>管理工作窗格的使用者介面  
  在您建立工作窗格之後，可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件的屬性和事件來控制工作窗格的使用者介面，以及在使用者變更工作窗格時予以回應。  
@@ -142,16 +142,11 @@ ms.lasthandoff: 05/17/2018
  ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 管理 Word VSTO 增益集的工作窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
   
 ##  <a name="Outlook"></a> Outlook  
- 當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 [總管] 視窗可顯示資料夾內容，而 [檢查] 視窗則會顯示電子郵件訊息或工作之類的項目。  
+ 當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 總管視窗，顯示資料夾的內容，而會偵測器視窗，顯示電子郵件訊息或工作之類的項目。  
   
  如果要在多個 [總管] 或 [檢查] 視窗中顯示自訂工作窗格，您需要在 [總管] 或 [檢查] 視窗開啟時，建立自訂工作窗格的新執行個體。 若要這麼做，請在建立 [總管] 或 [檢查] 視窗時處理引發的事件，然後在事件處理常式中建立工作窗格。 您也可以處理 [總管] 與 [檢查] 事件，依據可見的視窗來隱藏或顯示工作窗格。  
   
  若要將工作窗格與特定檔案總管或偵測器產生關聯，請使用<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>方法來建立工作窗格和傳遞<xref:Microsoft.Office.Interop.Outlook.Explorer>或<xref:Microsoft.Office.Interop.Outlook.Inspector>物件*視窗*參數。 如需有關如何建立自訂工作窗格的詳細資訊，請參閱[自訂工作窗格概觀](../vsto/custom-task-panes.md)。  
-  
- 如需逐步解說示範如何建立工作窗格的每一個開啟的電子郵件訊息，請參閱[逐步解說： 在 Outlook 中顯示的電子郵件訊息的自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
-  
-### <a name="outlook-events"></a>Outlook 事件  
- 若要監視 [總管] 視窗的狀態，可以處理下列與 [總管] 相關的事件：  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

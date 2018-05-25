@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bb1bcc13ad908b69a847662178cd6cd13aeec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：使用內容模型檢視檢查節點的內容模型
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何： 檢查使用內容模型檢視節點的內容模型
 
 本主題描述如何瀏覽您使用的節點[內容模型檢視](../xml-tools/content-model-view.md)。
 

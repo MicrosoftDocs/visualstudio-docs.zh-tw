@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考  
  Excel PIA 參考文件說明 Excel 主要 Interop 組件中的類型。 這份文件也可以從下列位置： [Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
- 如需有關設計的 Excel PIA，例如類別和介面中差異 PIA 以及 PIA 中的事件實作的方式，請參閱[的類別和介面概觀 Office 主要 Interop 組件中](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ 如需有關設計的 Excel PIA，例如類別和介面中差異 PIA 以及 PIA 中的事件實作的方式，請參閱[Office 主要 interop 組件中類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>VBA 物件模型參考  
  VBA 物件模型參考記載公開給 Visual Basic for Applications (VBA) 程式碼時的 Excel 物件模型。 如需詳細資訊，請參閱[Excel 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199768)。  

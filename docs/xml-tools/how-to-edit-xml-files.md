@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
+# <a name="how-to-edit-xml-files"></a>如何： 編輯 XML 檔案
 
-XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或與 Visual Studio 專案相關的檔案上。 XML 編輯器與下列副檔名相關：.config、.dtd、.xml、.xsd、.xdr、.xsl、.xslt 和 .vssettings。 XML 編輯器也與未登錄特定編輯器，且包含 XML 或 DTD 內容的任何其他檔案類型相關聯。
+XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或與 Visual Studio 專案相關的檔案上。 XML 編輯器都與下列副檔名： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，和 *.vssettings*。 XML 編輯器也與未登錄特定編輯器，且包含 XML 或 DTD 內容的任何其他檔案類型相關聯。
 
 > [!NOTE]
 > HTML 編輯器可處理 XHTML 文件。
@@ -70,5 +70,5 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 ## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器](../xml-tools/xml-editor.md)
-- [屬性視窗、XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)
-- [如何：從 XML 文件建立 XML 結構描述](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)
+- [如何： 從 XML 文件建立 XML 結構描述](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

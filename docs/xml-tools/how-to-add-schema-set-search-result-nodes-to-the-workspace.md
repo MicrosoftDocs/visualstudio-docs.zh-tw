@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>HOW TO：將結構描述集合搜尋節點加入工作空間
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何： 將結構描述集合搜尋節點加入至工作區
 
-本主題說明如何將 XML 結構描述總管中反白顯示為關鍵字搜尋結果的節點加入工作空間。
+本主題說明如何將以反白顯示的節點加入**XML 結構描述總管**做為工作區中的關鍵字搜尋的結果。
 
 > [!NOTE]
 > 只有全域節點可以加入至[工作區](../xml-tools/xml-schema-designer-workspace.md)。
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
      ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     搜尋結果會在 XML 結構描述總管中反白顯示，並以刻度標示在垂直捲軸上。
+     搜尋結果會以反白顯示**XML 結構描述總管**並以刻度標示在垂直捲軸上。
 
 3.  按一下搜尋結果加入工作區**反白顯示的節點新增到工作區**摘要結果面板上的按鈕。
 
