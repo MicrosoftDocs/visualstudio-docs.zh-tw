@@ -66,4 +66,5 @@
 # [協助工具選項](accessibility.md)
 
 # [疑難排解](troubleshooting.md)
+## [Visual Studio 客戶經驗改進計畫](visual-studio-experience-improvement-program.md)
 ## [回報問題](report-a-problem.md)
