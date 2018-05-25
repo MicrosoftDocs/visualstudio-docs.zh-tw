@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、 XML、 文字編輯器、 選項對話方塊
 
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊從**工具**功能表。
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
  結束標記完成時重新格式化項目。
 
-## <a name="mixed-content"></a>混合內容
+## <a name="mixed-content"></a>混合的內容
  **依預設保留混合的內容**
 
  決定編輯器是否重新格式化混合內容。 依預設，編輯器嘗試重新格式化混合內容，內容在 `xml:space="preserve"` 範圍中時除外。
@@ -67,5 +67,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [屬性視窗、XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)
+- [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)
 - [XML 編輯器元件](../xml-tools/xml-editor-components.md)

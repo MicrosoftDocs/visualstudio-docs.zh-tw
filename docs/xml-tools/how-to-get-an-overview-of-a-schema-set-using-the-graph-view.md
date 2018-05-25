@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4feb40ba843da5c3f2e5f7de9b8d554debf6fcc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：使用圖表檢視取得結構描述集的概觀
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何： 取得設定使用圖表檢視的結構描述的概觀
 
 本主題描述如何使用[圖表檢視](../xml-tools/graph-view.md)查看結構描述以及節點之間的關聯性中之節點的高階檢視。
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>建立新的 XSD 檔案，並且在內容模型檢視中顯示根項目
 
-1.  建立新的 XML 結構描述檔案，並將檔案另存為 Relationships.xsd。
+1.  建立新的 XML 結構描述檔案，並將檔案儲存為*Relationships.xsd*。
 
 2.  按一下**使用 XML 編輯器檢視與編輯基礎 XML 結構描述檔案**開始檢視上的連結。
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 04/26/2018
 
 4.  以滑鼠右鍵按一下 XML 編輯器中，選取**檢視表設計工具**。
 
-5.  從 XSD 工具列中選取圖表檢視。
+5.  選取 [圖形] 檢視，從**XSD 工具列**。
 
-6.  選取**結構描述集**XML 結構描述總管和將該節點拖曳至 [圖形] 檢視的設計介面中的節點。 您會看見所有的全域節點，以及連接具有關聯性之節點的箭號。
+6.  選取**結構描述集**節點**XML 結構描述總管**並拖曳至 [圖形] 檢視的設計介面的節點。 您會看見所有的全域節點，以及連接具有關聯性之節點的箭號。
 
      ![圖形檢視](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
 

@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
+# <a name="how-to-create-xml-snippets"></a>如何： 建立 XML 片段
 
 XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。
 
@@ -30,7 +30,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
 3.  以滑鼠右鍵按一下編輯窗格中，選取**插入程式碼片段**。
 
-4.  選取**片段**從清單中，按下 ENTER。
+4.  選取**片段**清單和按**Enter**。
 
 5.  對新片段進行任何變更。
 
@@ -40,9 +40,9 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
 7.  輸入新的程式碼片段名稱並選取**程式碼片段檔案**從**存檔類型**下拉式清單 視窗。
 
-8.  使用**存**將檔案位置變更為 My Documents\Visual Studio 2005\Code Snippets\XML\My XML 程式碼片段資料夾，然後按下下拉式清單**儲存**。
+8.  使用**存**下拉式清單來變更檔案位置*My Documents\Visual Studio 2005\Code Snippets\XML\My XML 片段*資料夾，然後按下**儲存**。
 
-## <a name="snippet-description"></a>片段說明
+## <a name="snippet-description"></a>程式碼片段描述
 
  本節說明重複使用片段中的某些索引鍵項目。 如需結構描述元素的 XML 程式碼片段所使用的詳細資訊，請參閱[程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)。
 
@@ -59,7 +59,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
  `Expansion`類型會決定程式碼片段顯示當您叫用**插入程式碼片段**命令。 `SurroundsWith`類型會決定程式碼片段顯示當您叫用**包圍與**命令。
 
-### <a name="code-element"></a>Code 項目
+### <a name="code-element"></a>程式碼項目
 
  `Code` 項目定義叫用片段時將插入的 XML 文字。
 
@@ -83,7 +83,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
 -   $selected$ 為預先定義的變數。 它表示叫用片段之前在 XML 編輯器中選取的文字。 這個變數的位置決定了所選文字在環繞該選取內容之程式碼片段中出現的位置。
 
--   $end$ 為預先定義的變數。 當使用者按 ENTER 鍵完成編輯程式碼片段欄位時，這個變數決定了插入號 (^) 移至何處。
+-   $end$ 為預先定義的變數。 當使用者按**Enter**來完成編輯程式碼片段欄位時，此變數決定了插入號 (^) 移至何處。
 
  上面的 `Code` 項目會插入下列 XML 文字：
 
@@ -120,5 +120,5 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 ## <a name="see-also"></a>另請參閱
 
 - [XML 片段](../xml-tools/xml-snippets.md)
-- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)
-- [如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [如何： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)
+- [如何： 從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

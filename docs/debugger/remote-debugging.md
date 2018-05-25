@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 遠端偵錯 |Microsoft 文件
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -47,22 +47,63 @@ ms.lasthandoff: 04/18/2018
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> 解除封鎖下載 Windows Server 上的遠端工具
+
+在 Windows Server 上的 Internet Explorer 中的預設安全性設定可以讓它更耗時下載元件，例如遠端工具。
+
+* Internet Explorer，讓您無法開啟網站並存取 web 資源，除非明確地允許包含資源的網域上已啟用增強式的安全性設定 （也就是受信任）。
+
+* 在 Windows Server 2016 中設定預設**網際網路選項** > **安全性** > **網際網路** >  **自訂層級** > **下載**也會停用檔案的下載。 如果您選擇下載直接在 Windows Server 上的遠端工具，您必須啟用檔案下載。
+
+若要下載 Windows Server 上的工具，我們建議下列其中一項：
+
+* 下載遠端工具，例如一個執行的 Visual Studio，在不同電腦上，然後複製 *.exe*到 Windows Server 的檔案。
+
+* 執行遠端偵錯工具[從檔案共用](#fileshare_msvsmon)Visual Studio 電腦上。
+
+* 下載直接在 Windows Server 上的遠端工具，並接受提示來加入信任的網站。 現代化網站通常包含許多協力廠商資源，因此這會導致大量的提示。 此外，任何重新導向的連結可能需要手動加入。 您可以選擇新增部分信任的網站，然後再開始下載。 移至**網際網路選項 > 安全性 > 信任的網站 > 網站**然後新增下列站台。
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * 關於： 空白
+
+  針對舊版 my.visualstudio.com 上偵錯工具中，加入這些額外的站台，以確定該登入成功：
+
+  * microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * my.visualstudio.com
+  * login.microsoftonline.com
+  * login.live.com
+  * secure.aadcdn.microsoftonline p.com
+  * msft.sts.microsoft.com
+  * auth.gfx.ms
+  * app.vssps.visualstudio.com
+  * vlscppe.microsoft.com
+  * query.prod.cms.rt.microsoft.com
+
+    如果您選擇下載遠端工具時新增這些網域，然後選擇 **新增**出現提示時。
+
+    ![已封鎖的內容對話方塊](../debugger/media/remotedbg-blocked-content.png)
+
+    當您下載軟體時，您會取得載入各種網站指令碼和資源的權限授與某些其他要求。 在 my.visualstudio.com，我們建議您新增其他的網域，以確定該登入成功。
+
 ### <a name="fileshare_msvsmon"></a> （選擇性）若要從檔案共用執行遠端偵錯工具
 
-您可以找到遠端偵錯工具 (**msvsmon.exe**) 與 Visual Studio Community、 Professional 或 Enterprise 已經安裝在電腦上。 某些情況下，設定遠端偵錯最簡單的方式是從檔案共用執行遠端偵錯工具 (msvsmon.exe)。 使用方式的限制，請參閱遠端偵錯工具的 [說明] 頁面 (**協助 > 使用量**遠端偵錯工具中)。
+您可以找到遠端偵錯工具 (*msvsmon.exe*) 與 Visual Studio Community、 Professional 或 Enterprise 已經安裝在電腦上。 某些情況下，設定遠端偵錯最簡單的方式是從檔案共用執行遠端偵錯工具 (msvsmon.exe)。 使用方式的限制，請參閱遠端偵錯工具的 [說明] 頁面 (**協助 > 使用量**遠端偵錯工具中)。
 
-1. 尋找**msvsmon.exe**比對您的 Visual Studio 版本的目錄中。 Visual Studio 企業版 2017年:
+1. 尋找*msvsmon.exe*比對您的 Visual Studio 版本的目錄中。 Visual Studio 企業版 2017年:
 
-      **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. 共用**遠端偵錯工具**Visual Studio 電腦上的資料夾。
 
-3. 在遠端電腦上執行**msvsmon.exe**。 請遵循[安裝指示](#bkmk_setup)。
+3. 在遠端電腦上執行*msvsmon.exe*。 請遵循[安裝指示](#bkmk_setup)。
 
 > [!TIP] 
-> 命令列安裝和命令列參考，請參閱說明頁面**msvsmon.exe**輸入``msvsmon.exe /?``安裝 Visual Studio 的電腦上的命令列中 (或移至**協助 > 使用量**遠端偵錯工具中)。
+> 命令列安裝和命令列參考，請參閱說明頁面*msvsmon.exe*輸入``msvsmon.exe /?``安裝 Visual Studio 的電腦上的命令列中 (或移至**協助 > 使用量**遠端偵錯工具中)。
   
 ## <a name="requirements_msvsmon"></a> 需求
 

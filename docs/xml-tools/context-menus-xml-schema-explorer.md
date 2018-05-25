@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="context-menus-xml-schema-explorer"></a>操作功能表 (XML 結構描述總管)
+# <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
 
-## <a name="node-type-schema-set"></a>節點型別：結構描述設定
+## <a name="node-type-schema-set"></a>節點型別： 結構描述集
 
 下表描述結構描述集節點可用的選項。
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 |**顯示全域項目**|尋找並反白顯示結構描述集中的所有全域項目。|
 |**屬性視窗**|開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-namespace"></a>節點型別：命名空間
+## <a name="node-type-namespace"></a>節點型別： 命名空間
  下表描述命名空間節點可用的選項。
 
 |選項|描述|
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 |**顯示全域項目**|尋找並反白顯示所選命名空間中的所有全域項目。|
 |**屬性視窗**|開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-file"></a>節點型別：檔案
+## <a name="node-type-file"></a>節點型別： 檔案
  下表描述檔案節點可用的選項。
 
 |選項|描述|
@@ -64,8 +64,8 @@ ms.lasthandoff: 04/26/2018
 |**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
 |**屬性視窗**|開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-element"></a>節點型別：項目
- 除了上述的全域節點選項外，項目節點的內容功能表還包含下列選項：
+## <a name="node-type-element"></a>節點型別： 項目
+ 除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：
 
 |選項|描述|
 |------------|-----------------|
@@ -76,8 +76,8 @@ ms.lasthandoff: 04/26/2018
 |**顯示替代群組標頭**|針對屬於替代群組之成員的全域項目，尋找並反白顯示選取之項目的所有直接和間接標頭，例如下列項目：<br /><br /> 的選取的項目上指定替代群組標頭。<br />的在其標頭項目上指定替代群組標頭。|
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|
 
-## <a name="node-type-global-types"></a>節點型別：全域型別
- 除了上述的全域節點選項外，全域型別節點的內容功能表還有下列選項：
+## <a name="node-type-global-types"></a>節點型別： 全域型別
+ 除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：
 
 |選項|描述|
 |------------|-----------------|
@@ -86,8 +86,8 @@ ms.lasthandoff: 04/26/2018
 |**顯示所有衍生型別**|尋找並反白顯示直接和間接衍生自選取之型別的所有型別。|
 |**顯示所有祖系**|顯示所有父 (基底) 型別。|
 
-## <a name="node-type-attribute"></a>節點型別：屬性
- 除了上述的全域節點選項外，屬性節點的內容功能表還有下列選項：
+## <a name="node-type-attribute"></a>節點型別： 屬性
+ 除了上述的全域節點選項外，屬性節點的操作功能表還有下列選項：
 
 |選項|描述|
 |------------|-----------------|
@@ -95,8 +95,8 @@ ms.lasthandoff: 04/26/2018
 |**請移至原始屬性**|針對屬性參考，瀏覽至此屬性的實際定義。|
 |**顯示所有參考**|針對全域屬性，尋找並反白顯示所選屬性的所有參考 (其他具有 `ref="selectedAttribute"` 的屬性)。|
 
-## <a name="node-type-attribute-group"></a>節點型別：屬性群組
- 除了上述的全域節點選項外，屬性群組節點的內容功能表還包含下列選項：
+## <a name="node-type-attribute-group"></a>節點型別： 屬性群組
+ 除了上述的全域節點選項外，屬性群組節點的操作功能表還包含下列選項：
 
 |選項|描述|
 |------------|-----------------|
@@ -104,8 +104,8 @@ ms.lasthandoff: 04/26/2018
 |**顯示所有成員**|尋找並反白顯示屬性群組的所有成員。|
 |**顯示所有參考**|尋找並反白顯示所選屬性群組的所有參考 (具有 `ref="selectedAttributeGroup"` 的屬性群組)。|
 
-## <a name="node-type-named-group"></a>節點型別：具名群組
- 除了上述的全域節點選項外，具名群組節點的內容功能表還包含下列選項：
+## <a name="node-type-named-group"></a>節點型別： 具名群組
+ 除了上述的全域節點選項外，具名群組節點的操作功能表還包含下列選項：
 
 |選項|描述|
 |------------|-----------------|
@@ -116,4 +116,4 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>另請參閱
 
 - [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)
-- [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)
+- [搜尋結構描述設定](../xml-tools/searching-the-schema-set.md)

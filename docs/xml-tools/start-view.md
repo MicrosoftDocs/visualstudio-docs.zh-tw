@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>開始檢視
 
@@ -26,9 +26,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="watermark"></a>浮水印
 
-浮水印窗格包含連結至所有 XSD 設計工具檢視、XML 編輯器和 XML 結構描述總管的清單。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
+浮水印窗格包含一份所有 XSD 設計工具檢視、 XML 編輯器的連結和**XML 結構描述總管**。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
 
-## <a name="schema-set-details"></a>結構描述集合詳細資訊
+## <a name="schema-set-details"></a>結構描述設定的詳細資料
 
 **結構描述集的詳細資料**窗格列出全域結構描述節點型別，並顯示每個型別的結構描述中有多少執行個體。 您可以使用**新增**節點類型，將新節點加入至工作區旁的連結。
 
@@ -42,9 +42,9 @@ ms.lasthandoff: 04/26/2018
 
 |選項|描述|
 |------------|-----------------|
-|**顯示開始檢視**|切換至開始檢視。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 1**。|
-|**顯示內容模型檢視**|切換至內容模型檢視。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 2**。|
-|**顯示圖表檢視**|切換至圖表檢視。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 3**。|
+|**顯示開始檢視**|切換至開始檢視。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**1**。|
+|**顯示內容模型檢視**|切換至內容模型檢視。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**2**。|
+|**顯示圖表檢視**|切換至圖表檢視。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**3**。|
 
 ## <a name="see-also"></a>另請參閱
 

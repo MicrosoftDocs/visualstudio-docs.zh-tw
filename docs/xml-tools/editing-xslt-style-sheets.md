@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>編輯 XSLT 樣式表
+# <a name="edit-xslt-style-sheets"></a>編輯 XSLT 樣式表
 
 XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器功能，如 IntelliSense、大綱、XML 片段等。 此外，還有可讓您在 XSLT 中更輕鬆地進行開發的新功能。
 
@@ -29,7 +29,7 @@ XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器
 
  **波浪底線**
 
- XML 編輯器使用已安裝的 xslt.xsd 檔案來驗證 XSLT 樣式表。 驗證錯誤以藍色波浪底線顯示。 XML 編輯器還會在背景中編譯樣式表，並以適當的波浪底線報告編譯器錯誤或警告。
+ XML 編輯器使用已安裝*xslt.xsd*檔案來驗證 XSLT 樣式表。 驗證錯誤以藍色波浪底線顯示。 XML 編輯器還會在背景中編譯樣式表，並以適當的波浪底線報告編譯器錯誤或警告。
 
  **指令碼區塊的支援**
 

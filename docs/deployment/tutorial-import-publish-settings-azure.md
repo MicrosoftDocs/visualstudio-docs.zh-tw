@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>發行至 Azure App Service 應用程式匯入 Visual Studio 中發行設定
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須已安裝的 Visual Studio 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
+* 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
 
     如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
 
@@ -92,21 +92,7 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>匯入 Visual Studio 中的發行設定和部署
 
-1. 在電腦上有 Visual Studio 中開啟 ASP.NET 專案的位置，以滑鼠右鍵按一下方案總管] 中的專案，然後選擇 [**發行**。
-
-1. 如果您先前設定的任何發行設定檔，**發行** 窗格隨即出現。 按一下**建立新的設定檔**。
-
-1. 在**挑選發行目標**對話方塊中，按一下 **匯入設定檔**。
-
-    ![選擇發行](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. 瀏覽至您在上一節中建立的發行設定檔案的位置。
-
-1. 在**匯入發行設定檔**對話方塊中，選取您在上一節中建立的設定檔，然後按一下**開啟**。
-
-1. 選取其中兩個已匯入設定檔，然後按一下**發行**。
-
-    Visual Studio 開始部署程序，和 [輸出] 視窗會顯示進度和結果。
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>後續步驟
 

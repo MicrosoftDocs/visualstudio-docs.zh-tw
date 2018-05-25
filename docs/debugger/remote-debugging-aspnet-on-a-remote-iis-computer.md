@@ -1,7 +1,7 @@
 ---
 title: 遠端偵錯遠端 IIS 電腦上的 ASP.NET Core |Microsoft 文件
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 952b4e4cdff2f5620870cad5903d6e20f61a862e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb1898c9e46de7669bc727884055f847abb0ce6e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -31,6 +31,14 @@ ms.lasthandoff: 05/11/2018
 ## <a name="requirements"></a>需求
 
 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能會失敗或實在。 如需需求的完整清單，請參閱[需求](../debugger/remote-debugging.md#requirements_msvsmon)。
+
+## <a name="app-already-running-in-iis"></a>已在 IIS 中執行的應用程式嗎？
+
+這篇文章包含基本的 Windows server 上的 IIS 組態設定及部署 Visual Studio 應用程式的步驟。 這些步驟是以確定伺服器具有必要安裝，應用程式可以正確地執行，而且您準備好要遠端偵錯元件。
+
+* 如果您的應用程式執行於 IIS，而且您只想要下載遠端偵錯工具並啟動偵錯，請移至[下載並安裝 Windows Server 上的遠端工具](#BKMK_msvsmon)。
+
+* 如果您想要取得說明，請確認您的應用程式已設定，部署，並在 IIS 中正確執行，以便您可以偵錯，請遵循本主題中的所有步驟。
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 電腦上建立 ASP.NET Core 應用程式 
 
@@ -50,17 +58,14 @@ ms.lasthandoff: 05/11/2018
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的瀏覽器安全性設定
 
-根據您的安全性設定，便可能節省時間新增到您的瀏覽器的下列信任的網站，所以您可以輕鬆地下載本教學課程中所述的軟體。 可能會需要這些網站的存取：
+如果在 Internet Explorer （它預設會啟用） 啟用增強式安全性設定，您可能需要將某些網域新增為信任的網站，您可以下載某些網頁伺服器元件。 新增信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 新增下列網域。
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - iis.net
 
-如果您使用 Internet Explorer，您可以加入信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 這些步驟是不同的其他瀏覽器。 （如果您需要從 my.visualstudio.com 下載較舊版本的遠端偵錯工具時，某些其他信任的網站才能登入。）
-
-當您下載軟體時，可能會收到要求授與權限來載入各種網站指令碼和資源。 在大部分情況下，這些額外的資源都不需要安裝軟體。
+當您下載軟體時，可能會收到要求授與權限來載入各種網站指令碼和資源。 其中一些資源並非必要，但若要簡化程序中，按一下**新增**出現提示時。
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Windows 伺服器上安裝 ASP.NET Core
 
@@ -71,17 +76,47 @@ ms.lasthandoff: 05/11/2018
 
 3. 重新啟動系統 (或執行**net stop was /y**後面**net 啟動 w3svc**挑選變更到系統路徑的命令提示字元)。
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>（選擇性）安裝 Web Deploy 3.6 裝載 Windows Server 上的伺服器
+## <a name="choose-a-deployment-option"></a>選擇 部署選項
 
-在某些情況下，它可以快速地匯入 Visual Studio 中發行設定，而不是手動設定部署選項。 如果您想要匯入發行設定，而不是 Visual Studio 中設定的發行設定檔，請參閱[匯入發行設定和部署到 IIS](../deployment/tutorial-import-publish-settings-iis.md)。 否則，停留在本主題中，請繼續閱讀。 如果您完成匯入發行項發行設定和應用程式部署成功，然後返回本主題並在上一節中啟動[下載遠端工具](#BKMK_msvsmon)。
+如果您需要協助部署到 IIS 應用程式，請考慮這些選項：
 
-## <a name="BKMK_install_webdeploy"></a> （選擇性）安裝 Web Deploy 3.6 Windows 伺服器上
+* 部署在 IIS 中建立的發行設定檔並匯入 Visual Studio 中的設定。 在某些情況下，這是一個快速方式來部署您的應用程式。 當您建立的發行設定檔案時，權限會自動設定 IIS 中。
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* 部署發行至本機資料夾，並且將輸出的慣用方法複製到 IIS 上的已備妥應用程式資料夾。
 
-## <a name="BKMK_deploy_asp_net"></a> 設定 Windows Server 電腦上的 ASP.NET 網站
+## <a name="optional-deploy-using-a-publish-settings-file"></a>（選擇性）使用發行設定檔部署
 
-如果您要匯入發行設定，您可以略過本節。
+您可以使用這個選項建立的發行設定檔，並匯入 Visual Studio。
+
+> [!NOTE]
+> 這種部署方法會使用 Web Deploy。 如果您想要設定 Web Deploy 以手動方式在 Visual Studio 中而非匯入設定，您可以安裝而不是 Web 部署 3.6 Web 部署 3.6 主控伺服器。 不過，如果您設定 Web Deploy 以手動方式，您必須確定應用程式資料夾的伺服器上已設定正確的值和權限 (請參閱[設定 ASP.NET 網站](#BKMK_deploy_asp_net))。
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>安裝及設定 Web Deploy 來裝載 Windows Server 上的伺服器
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中建立的發行設定檔案
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>匯入 Visual Studio 中的發行設定和部署
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+應用程式部署成功後，它應該會自動啟動。 如果從 Visual Studio 應用程式未啟動，請在 IIS 中啟動應用程式。 您需要確定應用程式集區欄位的 ASP.NET Core **DefaultAppPool**設**沒有 Managed 程式碼**。
+
+1. 在**設定**對話方塊中，按一下 偵錯啟用**下一步**，選擇**偵錯**組態，然後選擇 **移除其他檔案，在目的地**下**檔案發行**選項。
+
+    > [!NOTE]
+    > 如果您選擇發行組態，則停用偵錯*web.config*檔案，當您發行時。
+
+1. 按一下**儲存**然後重新發行應用程式。
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>（選擇性）部署發行至本機資料夾
+
+您可以使用此選項來部署應用程式，如果您想要將應用程式複製到 IIS 使用 Powershell、 RoboCopy，或您想要手動複製這些檔案。
+
+### <a name="BKMK_deploy_asp_net"></a> 設定 Windows Server 電腦上的 ASP.NET 網站
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾， **C:\Publish**將稍後部署 ASP.NET 專案。
 
@@ -101,17 +136,17 @@ ms.lasthandoff: 05/11/2018
 
     如果您沒有看到其中一個使用者具有存取權，進行步驟來新增 IUSR 具有讀取和執行權限的使用者身分。
 
-## <a name="bkmk_webdeploy"></a> （選擇性）發行和部署使用 Web Deploy 從 Visual Studio 的應用程式
-
-[!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
-
-## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>（選擇性）發佈和部署應用程式發行至本機資料夾從 Visual Studio
+### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>發佈和部署應用程式發行至本機資料夾從 Visual Studio
 
 您可以發佈和部署應用程式使用的檔案系統或其他工具。
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
 ## <a name="BKMK_msvsmon"></a> 下載並安裝 Windows Server 上的遠端工具
+
+在此教學課程中，我們會使用 Visual Studio 2017。
+
+如果您無法開啟遠端偵錯工具下載頁面，請參閱[解除封鎖檔案下載](../debugger/remote-debugging.md#unblock_msvsmon)的說明。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

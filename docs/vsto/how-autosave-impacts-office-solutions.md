@@ -1,5 +1,5 @@
 ---
-title: 自動儲存有何影響 Office 方案 |Microsoft 文件
+title: 自動儲存有何影響 Office 方案
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4492148420fd120d51013d24189e45cd2d8c45d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21c49599ddc992bf35e6c1464b664a23fb33a691
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動儲存有何影響 Office 方案
 

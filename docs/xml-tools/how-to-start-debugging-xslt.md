@@ -11,13 +11,13 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cd1dc4327954d67c3a3f77a88da3c43c7935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
+# <a name="how-to-start-debugging-xslt"></a>如何： 開始偵錯 XSLT
 
 XSLT 偵錯工具可用於偵錯 XSLT 樣式表或 XSLT 應用程式。 偵錯時，您可藉由逐步執行、跨過或跳出程式碼，來逐行執行程式碼。 XSLT 偵錯工具使用程式碼逐步執行功能的命令，與其他 Visual Studio 偵錯工具用法相同。 開始偵錯後，XSLT 偵錯工具會開啟視窗，以顯示輸入文件與 XSLT 輸出。
 
@@ -92,5 +92,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [逐步解說： 偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [偵錯工具基礎](../debugger/debugger-basics.md)

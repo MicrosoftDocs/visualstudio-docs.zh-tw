@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3cfe8d0af7bebac5bce48e82b4237de071a41d8
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門： 使用 Visual Studio 偵錯工具偵錯 ASP.NET
 
@@ -41,7 +41,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
 1. 在 方案總管開啟 About.cshtml.cs （下 Pages/About.cshtml)，並將下列程式碼
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         Message = "Your application description page.";
@@ -50,7 +50,7 @@ Visual Studio 偵錯工具會提供許多功能強大的功能，可協助您偵
 
     取代為此程式碼：
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         LinkedList<int> result = doWork();
