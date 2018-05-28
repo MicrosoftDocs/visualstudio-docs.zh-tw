@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # 適合我的發行選項為何？
 
@@ -98,7 +98,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 ### 選擇自訂部署的時機
 
-- 您是在非 Azure 且可透過 URL 存取的提供者上使用雲端服務。
+- 您使用可透過 URL 存取的提供者 (非 Azure) 雲端服務。
 - 您想要使用認證進行部署，但這些認證不是您在 Visual Studio 內使用的認證或直接繫結至 Azure 帳戶的認證。
 - 您想要在每次部署時刪除目標中的檔案。
 

@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -84,7 +84,7 @@ warning | 違反此樣式規則時，顯示編譯器警告。
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - C# 程式碼樣式設定
-    - [隱含和明確類型](#var)
+    - [隱含和明確類型](#implicit-and-explicit-types)
         - csharp\_style\_var\_for\_built\_in_types
         - csharp\_style\_var\_when\_type\_is_apparent
         - csharp\_style\_var_elsewhere
@@ -592,7 +592,7 @@ dotnet_style_null_propagation = true:suggestion
 
 本節中的樣式規則只適用於 C#。
 
-#### <a name="var"></a>隱含和明確類型
+#### <a name="implicit-and-explicit-types"></a>隱含和明確類型
 
 本節中的樣式規則 (規則識別碼 IDE0007 和 IDE0008) 是關於使用 [var](/dotnet/csharp/language-reference/keywords/var) 關鍵字與變數宣告中的明確類型。 當類型顯然位於其他位置時，這項規則可以分別套用至內建類型。
 

@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="filtering-report-views"></a>篩選報表檢視
+# <a name="filter-report-views"></a>篩選報告檢視
 您可以在分析資料檔案上套用篩選，限制效能報告檢視中顯示的分析資料，並匯出報表檔案。 您可以將報告限制為介於時間戳記值之間的資料，也可以將資料限制為特定處理序和執行緒。 您可以將篩選儲存到檔案，然後匯入儲存的篩選，在不同的分析資料檔案中建立篩選。  
   
  您也可以在 [摘要] 檢視中使用圖形化時間軸，將報表限制在某個時間區段。 請參閱[如何：從摘要時間表篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
@@ -42,7 +42,6 @@ ms.lasthandoff: 04/19/2018
     |**Operator**|選取運算子以指定子句的欄位和值之間的關聯性。<br /><br /> =    等於<br /><br /> <>  不等於<br /><br /> <    小於<br /><br /> >    大於<br /><br /> <=  小於或等於<br /><br /> >=  大於或等於|  
     |**值**|選取或輸入要尋找的值。 某些欄位會列出可用的欄位值。|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>從標記報表檢視建立分析工具報表篩選  
   
@@ -92,5 +91,5 @@ ms.lasthandoff: 04/19/2018
   
 2.  指定要儲存之篩選條件 (.vspf) 檔案的位置和檔案名稱。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)

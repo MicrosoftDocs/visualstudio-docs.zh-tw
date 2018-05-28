@@ -17,13 +17,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f098b18100bd54e8078ea0c855a1b3e51926b93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f8973f1536ded24d2fd327aa3eac1ceee795cb54
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="call-tree-view"></a>呼叫樹狀圖檢閱
+# <a name="call-tree-view"></a>[呼叫樹狀圖] 檢閱
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。  
   
  [呼叫樹狀圖] 檢視也可展開並反白顯示花最多時間或最常取樣的函式的執行路徑。 若要顯示效能資源使用最多的路徑，請以滑鼠右鍵按一下函式，然後按一下 [展開最忙碌路徑]。  
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/19/2018
   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)   
- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
+ [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

@@ -11,13 +11,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d4506f4b9ee68e7920fa4bbb4c463d00cceb73
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="setting-general-performance-session-options"></a>設定一般效能工作階段選項
+# <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 
 您可以在效能工作階段屬性對話方塊的 [一般] 頁面上設定 Visual Studio 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管] 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
@@ -35,13 +35,14 @@ ms.lasthandoff: 04/19/2018
 
 |||
 |-|-|
-|**收集 .NET 物件配置資訊**. 根據預設，資料會包含已配置的物件數目和大小。 選取或清除此核取方塊，以啟用或停用 .NET 記憶體資料收集。<br /><br /> **同時收集 .NET 物件存留期的資訊**. 選取此核取方塊，以包含用來回收記憶體物件之記憶體回收世代的資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**收集 .NET 物件配置資訊**. 根據預設，資料會包含已配置的物件數目和大小。 選取或清除此核取方塊，以啟用或停用 .NET 記憶體資料收集。 |- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**同時收集 .NET 物件存留期的資訊**. 選取此核取方塊，以包含用來回收記憶體物件之記憶體回收世代的資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
 
  當您開始對應用程式進行程式碼剖析時，程式碼剖析工作階段頁面就會出現，您可以在此暫停、繼續執行及停止程式碼剖析。
 
  ![程式碼剖析工作階段頁面](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
-## <a name="setting-profiling-data-file-options"></a>設定分析資料檔案選項
+## <a name="set-profiling-data-file-options"></a>設定分析資料檔案選項
 
 |||
 |-|-|

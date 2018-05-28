@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
+* 您必須安裝 Visual Studio 2017 和 Node.js 開發工作負載。
 
     如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
 
@@ -95,6 +95,8 @@ ms.lasthandoff: 04/26/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    上述程式碼會新增標記來動態產生一個具有標題和歡迎訊息的 HTML 頁面。 此頁面也包含了程式碼，以顯示每次按下按鈕就會隨之變更的影像。
+
 1. 在 routes 資料夾中，開啟 *index.js*。
 
 1. 在 `router.get` 呼叫前面，新增下列程式碼：
@@ -110,6 +112,8 @@ ms.lasthandoff: 04/26/2018
     }
     ````
 
+    此程式碼會建立將傳遞給動態產生 HTML 頁面的資料物件。
+
 1. 將 `router.get` 函式呼叫取代為下列程式碼：
 
     ```js
@@ -117,14 +121,16 @@ ms.lasthandoff: 04/26/2018
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    上述程式碼會使用 Express 路由器物件來設定目前的頁面，然後轉譯頁面，其中會將標題和資料物件傳遞給頁面。
 
-    包含 `res.render` 的程式碼行中有錯誤。 我們需要修正此錯誤，才能執行應用程式。 我們將在下節修正該錯誤。
+    為了示範 Visual Studio 的數個功能，我們在包含 `res.render` 的程式碼行中納入了一個錯誤。 我們必須先修正此錯誤，應用程式才能執行。 我們將在下節修正該錯誤。
 
 ## <a name="use-intellisense"></a>使用 IntelliSense
 
 1. 在 *index.js* 中，移至包含 `res.render` 的行。
 
-1. 在 `data` 字串後面鍵入 `: get`，而 IntelliSense 將會顯示 `getData` 函式。 選取 `getData`。
+1. 將您的游標放在 `data` 字串後面，輸入 `: get`，IntelliSense 將會顯示 `getData` 函式。 選取 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

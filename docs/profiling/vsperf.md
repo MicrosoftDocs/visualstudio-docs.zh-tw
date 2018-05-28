@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0b0941959b0d70fa5dfb0ae72aed181b1cd42e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令列工具，可以︰  
@@ -67,6 +67,6 @@ ms.lasthandoff: 04/19/2018
 |**/detach**|停止資料收集，但讓目標處理序繼續執行。|  
 |**/status**|顯示分析工具的狀態。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

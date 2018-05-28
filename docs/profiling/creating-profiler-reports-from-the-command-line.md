@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7bde83ce810f8260e61eacddf1a086953a63a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="creating-profiler-reports-from-the-command-line"></a>從命令列建立程式碼剖析工具報告
+# <a name="create-profiler-reports-from-the-command-line"></a>從命令列建立分析工具報告
 **VSPerfReport** 命令列工具可讓您從分析資料 (.vsp) 檔案建立.xml 或以逗號分隔值 (.csv) 報表。 VSPerfReport 報表類型極符合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之介面的資料表檢視。 您可以篩選報表只顯示您的程式碼，以及只顯示分析資料檔案的區段。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
  您也可以更輕鬆地共用分析資料檔案，方法是將符號內嵌到 .vsp 檔案，以及建立較小且更快速開啟的預先分析報表 (.vsps) 檔案。  
   
-## <a name="common-tasks"></a>一般工作  
+## <a name="common-tasks"></a>一般工作
   
 |工作|相關內容|  
 |----------|---------------------|  

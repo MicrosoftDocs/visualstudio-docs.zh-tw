@@ -9,11 +9,11 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 
@@ -83,6 +83,7 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 ## <a name="support-resources"></a>支援資源
 -  需要使用 DataCamp 的說明嗎？  請參閱這些資源：
     - [DataCamp 社群](https://www.datacamp.com/community/tutorials) \(英文\)，其中包含論壇和教學課程。
-    - [常見問題集](https://datacamp.groovehq.com/help_center) \(英文\)。  在 [常見問題集] 頁面上，您也可以提交電子郵件支援要求。
+    - [DataCamp 說明中心](https://support.datacamp.com/hc) \(英文\)，可供搜尋支援主題及查看要求使用者問題。  
+    - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 

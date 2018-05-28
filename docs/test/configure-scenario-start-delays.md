@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定用於負載測試的情節啟動延遲
+title: 設定負載測試的情節啟動延遲
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
      [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
 
-2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要指定要使用之代理程式的情節節點。
+2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要變更其準備行為的情節節點。
 
 3. 在 [檢視] 功能表上，選取 [屬性視窗]。
 

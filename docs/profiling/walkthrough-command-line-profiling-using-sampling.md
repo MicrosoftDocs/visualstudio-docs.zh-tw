@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
 本逐步解說將示範如何使用命令列工具和取樣來剖析應用程式，以識別效能問題。
 
@@ -98,10 +98,10 @@ ms.lasthandoff: 05/11/2018
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [效能工作階段概觀](../profiling/performance-session-overview.md)  
-[從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
-[了解取樣資料值](../profiling/understanding-sampling-data-values.md)  
+[認識取樣資料值](../profiling/understanding-sampling-data-values.md)  
 [效能報告檢視](../profiling/performance-report-views.md)

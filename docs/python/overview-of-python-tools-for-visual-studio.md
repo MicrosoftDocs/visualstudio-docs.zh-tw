@@ -1,7 +1,7 @@
 ---
 title: Windows 上 Visual Studio 中的 Python 支援概觀
 description: Visual Studio 中 Python 功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))。
-ms.date: 04/06/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -57,7 +57,7 @@ Visual Studio 提供最優質的 Python 編輯器，包括語法色彩標示、�
 - 文件：[程式碼格式設定](formatting-python-code.md)
 - 文件：[重構](refactoring-python-code.md)
 - 文件：[Lint 處理](linting-python-code.md)
-- 一般 Visual Studio 功能文件：[在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- 一般 Visual Studio 功能文件：[程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>互動式視窗
 

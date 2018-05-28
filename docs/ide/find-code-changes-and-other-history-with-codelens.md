@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21724619a0dd3b89582c716a5df0fdff6041b682
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -324,4 +324,4 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ## <a name="see-also"></a>另請參閱
 
-- [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

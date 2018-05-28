@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
 1.  在 Visual Studio 中開啟 C# 通用 Windows 專案。  
   
-2.  在功能表列上，依序選擇 [偵錯] / [效能分析工具...]。  
+2.  在功能表列上，依序選擇 [偵錯] > [效能分析工具]。  
   
 3.  選取 [記憶體使用量]，然後選擇頁面底部的 [啟動] 按鈕。  
   
@@ -199,9 +199,9 @@ ms.lasthandoff: 04/19/2018
 |**大小 (位元組)**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)  
+ [分析功能導覽](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

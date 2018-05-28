@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3bd10121973c88e7a211aa741664b8ffb9b7bbc
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6fb73d202251df71a165c586d02d345329b97342
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集服務的並行資料
+# <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用分析工具命令列收集服務的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。  
   
 > [!NOTE]
@@ -32,22 +32,22 @@ ms.lasthandoff: 05/11/2018
   
 ## <a name="related-tasks"></a>相關工作  
   
-### <a name="profiling-windows-services"></a>分析 Windows 服務  
+### <a name="profile-windows-services"></a>分析 Windows 服務  
   
 |工作|相關內容|  
 |----------|---------------------|  
 |**使用取樣方法進行分析**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**使用檢測方法進行分析**|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
+|**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
 |**分析 .NET 記憶體配置和記憶體回收**|-   [收集 .NET 記憶體資料](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
   
-### <a name="profiling-concurrency-data"></a>分析並行資料  
+### <a name="profile-concurrency-data"></a>分析並行資料  
   
 |工作|相關內容|  
 |----------|---------------------|  
 |**分析獨立應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
 |**分析 ASP.NET Web 應用程式**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="analyzing-concurrency-data-views-and-reports"></a>分析並行資料檢視和報表  
+### <a name="analyze-concurrency-data-views-and-reports"></a>分析並行資料檢視和報表  
  [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
   
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)  

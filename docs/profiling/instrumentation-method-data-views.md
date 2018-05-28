@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d9fb3d0d90c5832620e8ab8642b491c0b68f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
@@ -55,5 +55,5 @@ ms.lasthandoff: 04/19/2018
  [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
  使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)

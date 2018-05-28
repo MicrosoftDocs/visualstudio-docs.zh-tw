@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 077ae868561f58596955ce39a9335f845f00f8b5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e48a9b5f601994a7a32aae38bdafbfdce6da22e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。  
@@ -24,27 +24,3 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  C 語言標準針對程式庫等實作，保留使用開頭為底線 (`_`) 字元的識別項。 請勿在程式碼中使用開頭為底線的名稱。 我們不保證名稱遵循這個慣例之程式碼項目的行為，而且未來的發行版本可能會變更。 因此，本文件中將省略這類程式碼項目。  
   
-## <a name="in-this-section"></a>本節內容  
- [CvCreateDefaultMarkerSeriesOfDefaultProvider 函式](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
-  
- [CvCreateMarkerSeries 函式](../profiling/cvcreatemarkerseries-function.md)  
-  
- [CvCreateMarkerSeriesWithCodePageA 函式](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
-  
- [CvEnterSpan 函式](../profiling/cventerspan-function.md)  
-  
- [CvInitProvider 函式](../profiling/cvinitprovider-function.md)  
-  
- [CvIsEnabled 函式](../profiling/cvisenabled-function.md)  
-  
- [CvLeaveSpan 函式](../profiling/cvleavespan-function.md)  
-  
- [CvReleaseMarkerSeries 函式](../profiling/cvreleasemarkerseries-function.md)  
-  
- [CvReleaseProvider 函式](../profiling/cvreleaseprovider-function.md)  
-  
- [CvWriteAlert 函式](../profiling/cvwritealert-function.md)  
-  
- [CvWriteFlag 函式](../profiling/cvwriteflag-function.md)  
-  
- [CvWriteMessage 函式](../profiling/cvwritemessage-function.md)

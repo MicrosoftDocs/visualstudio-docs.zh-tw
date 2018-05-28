@@ -9,11 +9,11 @@ description: Visual Studio 訂用帳戶授權條款。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 **下列 VISUAL STUDIO 訂用帳戶的 MICROSOFT 軟體授權條款：**
 
@@ -128,7 +128,7 @@ _______________________________________
     (有時稱為「多工」或「共用」)，不會減少您需要的任何類型授權數目。
 
 
-8. **強制啟用。** 啟用會建立軟體使用與特定裝置的關聯。 在啟用期間，軟體會將軟體和裝置的相關資訊傳送給 Microsoft。 此資訊包括軟體的版本、語言和產品金鑰，以及裝置的網際網路通訊協定位址和裝置硬體組態的衍生資訊。 如需詳細資訊，請參閱 [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)] 使用此軟體即表示您同意傳輸此資訊。 啟用之前，您有權使用在安裝過程中安裝的軟體版本。 **在安裝程序指定的時間過後，除非啟用它，否則您使用軟體的權限會受到限制。** 這是為了防止未經授權的使用。 如果您不啟用它，該時間之後即無法繼續使用軟體。 如果裝置連線到網際網路，軟體會自動連線到 Microsoft 啟用。 您也可以透過網際網路或電話手動啟用軟體。 如果這樣做，可能會產生網際網路和電話服務費用。 電腦元件或軟體的某些變更可能需要您重新啟用該軟體。 **軟體如未啟用，會一直提醒您。**
+8. **強制啟用。** 啟用會建立軟體使用與特定裝置的關聯。 在啟用期間，軟體會將軟體和裝置的相關資訊傳送給 Microsoft。 此資訊包括軟體的版本、語言和產品金鑰，以及裝置的網際網路通訊協定位址，還有裝置硬體設定所衍生的資訊。 如需詳細資訊，請參閱 [Microsoft 產品啟用](https://www.microsoft.com/en-us/piracy/mpa.aspx)。 使用軟體即表示貴用戶同意傳輸此資訊。 啟用之前，您有權使用在安裝過程中安裝的軟體版本。 **在安裝程序指定的時間過後，除非啟用它，否則您使用軟體的權限會受到限制。** 這是為了防止未經授權的使用。 如果您不啟用它，該時間之後即無法繼續使用軟體。 如果裝置連線到網際網路，軟體會自動連線到 Microsoft 啟用。 您也可以透過網際網路或電話手動啟用軟體。 如果這樣做，可能會產生網際網路和電話服務費用。 電腦元件或軟體的某些變更可能需要您重新啟用該軟體。 **軟體如未啟用，會一直提醒您。**
 
 9. **驗證。**
 

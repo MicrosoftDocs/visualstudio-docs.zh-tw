@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行程式碼剖析工具
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無論是否含偵錯工具皆可執行 (例如：[CPU 使用量] 和 [記憶體使用量])。 非偵錯工具效能工具適用於針對「版本」設定執行，而偵錯工具整合工具適用於針對「偵錯」設定執行。  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>不論有無偵錯工具，我都應該執行此工具嗎？  
@@ -39,9 +39,9 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>偵錯時收集程式碼剖析資料  
  下列章節說明本機偵錯。 您可以在稍後的各節裡，了解在裝置上偵錯或遠端偵錯。  
   
-1.  開啟您想要偵錯的專案，然後按一下[偵錯/開始偵錯]\ (或工具列上的 [開始]  或 **F5**)。  
+1.  開啟您想要偵錯的專案，然後按一下[偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。  
   
-2.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。  
+2.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。  
   
 3.  執行您要收集資料的案例。  
   
@@ -51,11 +51,11 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  您可以透過工具列上的 [選取工具] 設定來選擇要查看 [記憶體使用量] 或 [CPU 使用量] (或兩者)。 若正在執行 Visual Studio Enterprise，您可以在 [工具] / [選項] / [IntelliTrace] 中啟用或停用 IntelliTrace。  
+4.  您可以透過工具列上的 [選取工具] 設定來選擇要查看 [記憶體使用量] 或 [CPU 使用量] (或兩者)。 若正在執行 Visual Studio Enterprise，您可以在 [工具] > [選項] > [IntelliTrace] 中啟用或停用 IntelliTrace。  
   
 5.  在您停止偵錯時，診斷工作階段就會結束。  
   
- 在 Visual Studio 2015 Update 1 中，[診斷工具]  視窗可讓您更輕鬆地專注於感興趣的事件。   事件名稱現在會與分類前置詞 (軌跡、程式輸出、中斷點、檔案等等) 一起顯示，讓您能夠快速掃視指定分類的清單，或略過不在意的分類。  
+ 在 Visual Studio 2015 Update 1 中，[診斷工具]  視窗可讓您更輕鬆地專注於感興趣的事件。   事件名稱現在會與分類前置詞 (**軌跡**、**程式輸出**、**中斷點**、**檔案**等等) 一起顯示，讓您能夠快速掃視指定分類的清單，或略過不在意的分類。  
   
  這個視窗現在會有一個搜尋方塊，讓您可以找到事件清單中任何位置的特定字串。 例如，下圖顯示搜尋字串 "install" 的結果，其符合四個事件：  
   
@@ -72,7 +72,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 1.  在 Visual Studio 中開啟專案。  
   
-2.  在 [偵錯] 功能表上選擇 [效能分析工具...]\(快速鍵：Alt + F2).  
+2.  在 [偵錯] 功能表上選擇 [效能分析工具] (快速鍵：**Alt**+**F2**)。  
   
 3.  在診斷啟動頁面上，選擇要在工作階段中執行的一項或多項工具。 只有適用於該專案類型、作業系統與程式設計語言的工具才會顯示。 當您選擇一項診斷工具時，將會停用無法在相同診斷工作階段中執行的工具選項。 如果是 C# UWP 應用程式，您的選擇會看起來如下：  
   
@@ -106,7 +106,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
 |![步驟 5](../profiling/media/procguid_6.png "ProcGuid_6")|當您的資料包含來自多項工具的資訊時，該工具的詳細資料會收集在索引標籤之下。|  
 |![步驟 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|這項工具可以有一個或多個詳細資料檢視。 檢視會經過特定時間軸區域篩選。|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>將另一部裝置設定為分析目標  
+## <a name="set-the-analysis-target-to-another-device"></a>將另一部裝置設定為分析目標  
  除了從 Visual Studio 專案啟動您的應用程式之外，您也可以在替代目標上執行診斷工作階段。 例如，您可能想要在從 Windows 市集安裝的應用程式版本上診斷效能問題。  
   
  ![選擇診斷工具分析目標](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

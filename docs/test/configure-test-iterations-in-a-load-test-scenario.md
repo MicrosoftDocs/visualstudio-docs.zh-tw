@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 
@@ -46,24 +46,24 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>若要指定測試反覆項目上限
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+2. [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
 
-3.  在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要對其指定測試反覆項目數上限的情節節點。
+3. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要對其指定測試反覆項目數上限的情節節點。
 
-4.  在 [檢視] 功能表上，選取 [屬性視窗]。
+4. 在 [檢視] 功能表上，選取 [屬性視窗]。
 
      情節的分類和屬性會顯示在 [屬性] 視窗中。
 
-5.  在 [測試反覆項目數目上限] 屬性的文字方塊中，鍵入值以指出執行負載測試時，要針對情節執行測試的次數上限。
+5. 在 [測試反覆項目數目上限] 屬性的文字方塊中，鍵入值以指出執行負載測試時，要針對情節執行測試的次數上限。
 
     > [!NOTE]
     > 對 [測試反覆項目數目上限] 屬性使用值 0，表示沒有反覆項目上限。
 
-6.  屬性變更完成之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目數目上限] 值來執行負載測試。
+6. 屬性變更完成之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目數目上限] 值來執行負載測試。
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>針對情節指定測試反覆項目之間的考慮時間
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>為情節指定測試反覆項目間的考慮時間
 
 [測試反覆項目間的考慮時間] 屬性是在 [負載測試編輯器] 中編輯負載測試情節屬性時，使用 [屬性] 視窗設定的屬性。
 
@@ -72,21 +72,21 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>若要指定測試反覆項目之間的考慮時間
+### <a name="to-specify-the-think-time-between-test-iterations"></a>指定測試反覆項目間的考慮時間
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
      [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
 
-2.  在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要指定要使用之代理程式的情節節點。
+2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其指定考慮時間的情節節點。
 
-3.  在 [檢視] 功能表上，選取 [屬性視窗]。
+3. 在 [檢視] 功能表上，選取 [屬性視窗]。
 
      情節的分類和屬性會顯示在 [屬性] 視窗中。
 
-4.  在 [測試反覆項目間的考慮時間] 屬性值中，輸入數字，代表啟動下一個測試反覆項目之前的等候秒數。
+4. 在 [測試反覆項目間的考慮時間] 屬性值中，輸入數字，代表啟動下一個測試反覆項目之前的等候秒數。
 
-5.  屬性變更完成之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目間的考慮時間] 值來執行負載測試。
+5. 屬性變更完成之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目間的考慮時間] 值來執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 
