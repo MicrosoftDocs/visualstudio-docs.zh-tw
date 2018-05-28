@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 快取資料之虛擬使用者的百分比
 
@@ -29,21 +29,21 @@ ms.lasthandoff: 04/26/2018
 
 如果進行負載測試的網站有大量的回訪使用者，他們的本機快取可能已經有影像和其他可快取的內容，那麼將 [新使用者的百分比] 屬性設定為 100%，將會比真實使用狀況產生更多的下載要求。 在此情況下，您應該估計來自網站的初次瀏覽者的瀏覽百分比，然後據以設定 [新使用者的百分比] 屬性。
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>若要指定要用於情節的代理程式
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>指定情節的新使用者百分比
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
      [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
 
-2.  在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其指定要使用之代理程式的情節節點。
+2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其變更新使用者百分比值的情節節點。
 
-3.  在 [檢視] 功能表上，選取 [屬性視窗]。
+3. 在 [檢視] 功能表上，選取 [屬性視窗]。
 
      情節的分類和屬性會顯示在 [屬性] 視窗中。
 
-4.  為新使用者的百分比輸入數字，以設定 [新使用者的百分比] 屬性的值。
+4. 為新使用者的百分比輸入一個數字，以設定 [新使用者的百分比] 屬性的值。
 
-5.  完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [新使用者的百分比] 值來執行負載測試。
+5. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 接著，您就可以使用新的 [新使用者的百分比] 值來執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

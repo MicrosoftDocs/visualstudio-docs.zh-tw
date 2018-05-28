@@ -9,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -74,7 +74,7 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 ![新增 include 指示詞](media/cpp-write-test-methods.png "C++ 測試針對標頭檔新增 include")
 
-TEST_CLASS 和 TEST_METHOD 是 [Microsoft 原生測試架構]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md) 的一部分。 **測試總管**以類似的方式來探索其他支援架構中的測試方法。
+TEST_CLASS 和 TEST_METHOD 是 [Microsoft 原生測試架構](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)的一部分。 **測試總管**以類似的方式來探索其他支援架構中的測試方法。
 
 TEST_METHOD 傳回 void。 若要產生測試結果，請使用 `Assert` 類別中的靜態方法，根據預期結果來測試實際結果。 在下列範例中，假設 `MyClass` 具有接受 `std::string` 的建構函式。 我們可以測試此建構函式是否會如預期般初始化類別：
 

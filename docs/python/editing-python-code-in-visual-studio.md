@@ -1,7 +1,7 @@
 ---
 title: 編輯 Python 程式碼
 description: 在 Visual Studio 中編輯 Python 可提供 IntelliSense、程式碼片段及巡覽功能，還有格式設定、Linting 和重構。
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/07/2018
 |---|---|
 | ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範編輯 Python 程式碼的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) \(英文\) (2 分 30 秒)。|
 
-如需在 Visual Studio 中編輯程式碼的一般文件，請參閱[在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱 [Visual Studio 中的大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。
+如需有關在 Visual Studio 中編輯程式碼的一般文件，請參閱[程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱 [Visual Studio 中的大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。
 
 您也可以使用 Visual Studio 物件瀏覽器 ([檢視] > [其他視窗] > [物件瀏覽器] 或 Ctrl+W、J) 來檢查每個模組中定義的 Python 類別，以及這些類別中定義的函式。
 

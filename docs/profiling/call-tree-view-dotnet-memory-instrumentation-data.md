@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b33cffb8fba135043f316e6857f7da0ff138afe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e05286c10758c19f1e3f5a5692f814a096763544
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體配置分析資料的 [呼叫樹狀結構] 檢視，會顯示在分析應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及 .NET 記憶體和函式的計時資料。  
   
  [呼叫樹狀圖] 檢視中的值，適用於呼叫樹狀圖中父函式所呼叫的函式執行個體。 百分比值的計算方式是比較函式執行個體值與分析執行中的總配置數目或大小。  
   
-## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
+## <a name="highlight-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
  [呼叫樹狀結構] 檢視可以展開並反白顯示已建立最大或大部分記憶體物件之處理序或函式的執行路徑。 若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。  
   
-## <a name="setting-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點  
+## <a name="set-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點  
  分析執行中的每個處理序都會顯示為根節點。 您可以設定 [呼叫樹狀結構] 檢視的開始節點，方法是以滑鼠右鍵按一下您想要設定為開始節點的節點，然後選取 [設定根目錄]。  
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回所檢視的節點，並以滑鼠右鍵按一下 [呼叫樹狀結構檢視] 視窗，然後選取 [重設根目錄]。  

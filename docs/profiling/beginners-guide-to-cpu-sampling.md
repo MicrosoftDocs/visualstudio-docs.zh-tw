@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -121,11 +121,11 @@ ms.lasthandoff: 04/19/2018
   
 4.  在重新執行工作階段之後，會將另一個資料檔案加入 [效能總管] 中此工作階段的 [報告] 資料夾。 選取原始和新的程式碼剖析資料，以滑鼠右鍵按一下選取範圍，然後按一下 [比較效能報告]。  
   
-     新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較程式碼剖析工具資料檔案](../profiling/how-to-compare-performance-data-files.md)。
+     新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)   
- [快速入門](../profiling/getting-started-with-performance-tools.md)   
+ [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [概觀](../profiling/overviews-performance-tools.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+ [分析功能導覽](../profiling/profiling-feature-tour.md)

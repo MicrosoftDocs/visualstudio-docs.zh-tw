@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>專案和方案、選項對話方塊
 設定與專案和解決方案有關的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後按一下 [一般]。
@@ -70,6 +70,12 @@ ms.lasthandoff: 04/26/2018
 **將檔案移動到新位置前先提示**
 
 選取時，在方案總管中執行檔案的位置變更前，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會顯示確認訊息方塊。
+
+**載入方案時重新開啟文件 (Visual Studio 2017 15.8 版 Preview 2 和更新版本)**
+ 
+在載入方案期間，自動重新開啟在先前工作階段中已開啟的文件。 選取時，會在載入方案時，自動開啟上次關閉此方案時處於開啟狀態的文件。
+
+重新開啟特定類型的檔案或設計工具可能會導致方案載入延遲。 如果您不想要還原方案先前的內容，請將此選項取消選取以提升方案載入效能。
 
 ## <a name="locations-tab-options"></a>[位置] 索引標籤選項
 

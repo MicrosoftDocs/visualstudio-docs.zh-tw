@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9917aa941dc867819f1e83bd24ced884614a8db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f96c5fa1b54a34fa2d67233bbf17164b0dbfeb7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="visible-timeline-profile"></a>可見時間表分析
 執行緒封鎖檢視的可見時間表分析提供統計資訊和報表連結。 當您放大、縮小、水平捲動、隱藏通道或顯示通道時，作用中圖例中的數字會隨之變更，反映目前在檢視中的項目。 若要檢視有關圖例中項目的報表，按一下該項目。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

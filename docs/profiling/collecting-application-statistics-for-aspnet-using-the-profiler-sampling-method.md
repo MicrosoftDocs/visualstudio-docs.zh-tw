@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9be304398fcefaf6a38ca7e1d557f2c9146b4872
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 應用程式的統計資料
 
@@ -37,20 +37,20 @@ ms.lasthandoff: 05/11/2018
   
 ## <a name="related-tasks"></a>相關工作  
   
-### <a name="profiling-aspnet-web-applications"></a>為 ASP.NET Web 應用程式進行程式碼剖析  
+### <a name="profile-aspnet-web-applications"></a>分析 ASP.NET Web 應用程式  
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**使用檢測方法進行分析**|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**使用檢測方法進行分析**|-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
 |**分析記憶體配置和記憶體回收**|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
 |**分析資源爭用和執行緒活動**|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="sampling-method"></a>取樣方法  
+### <a name="sample-method"></a>取樣方法  
   
 |工作|相關內容|  
 |----------|---------------------|  
 |**分析獨立 (用戶端) 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
 |-   **分析服務**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
   
-### <a name="analyzing-sampling-data-views-and-reports"></a>分析取樣資料檢視和報表  
+### <a name="analyze-sampling-data-views-and-reports"></a>分析取樣資料檢視和報表  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

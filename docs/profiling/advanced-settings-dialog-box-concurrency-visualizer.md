@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 04/19/2018
   
  您可以使用重要性層級清單來篩選出重要性或 ETW 層級小於指定值的事件。  
   
-### <a name="configuring-an-existing-provider"></a>設定現有的提供者  
+### <a name="configure-an-existing-provider"></a>設定現有的提供者  
  若要編輯與現有提供者相關聯的設定，在清單中選取它，然後選擇 [編輯提供者] 按鈕。  您可以變更名稱、GUID 和篩選設定。  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>篩選出並行視覺化檢視報表的標記資料  
@@ -84,6 +84,6 @@ ms.lasthandoff: 04/19/2018
   
  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Just My Code](../profiling/just-my-code-threads-view.md)   
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

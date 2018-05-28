@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
+# <a name="add-tier-interaction-data-from-the-command-line"></a>從命令列新增階層互動資料
 
 在與一或多個資料庫通訊的多階層應用程式函式中，階層互動分析提供會同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 呼叫執行時間的額外資訊。
 
@@ -38,17 +38,17 @@ ms.lasthandoff: 05/14/2018
 
 階層互動資料只能在 Visual Studio Enterprise 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>使用 VSPerfCmd 加入階層互動資料
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>使用 VSPerfCmd 加入階層互動資料
 
 VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整功能。 若要使用 VSPerfCmd 將階層互動加入收集的分析資料，您必須使用 **VSPerfCLREnv** 公用程式來設定和移除啟用階層互動資料的環境變數。 您指定的選項和收集資料所需的程序，取決於您正在分析的應用程式類型。
 
-## <a name="profiling-stand-alone-applications"></a>對獨立應用程式進行程式碼剖析
+## <a name="profile-stand-alone-applications"></a>分析獨立應用程式
 
 若要將階層互動資料加入未由另一個處理程序執行的應用程式，例如對 SQLServer 資料庫進行同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 呼叫的 Windows 傳統型應用程式，請使用 **VSPerfClrEnv /InteractionOn** 選項設定環境變數，並使用 **VSPerfClrEnv /InteractionOff** 選項將它們移除。
 
 下列範例中會使用檢測方法對 Windows 桌面應用程式進行程式碼剖析，並且收集階層互動資料。
 
-### <a name="profiling-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行程式碼剖析的範例
+### <a name="profile-a-windows-desktop-application-example"></a>對 Windows 傳統型應用程式進行分析的範例
 
 1. 使用系統管理員權限開啟命令提示視窗。 按一下 [開始]，然後依序指向 [所有程式] 和 [附屬應用程式]。 用右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身份執行]。
 
@@ -79,9 +79,9 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
     vsperfclrenv /off
     ```
 
-如需詳細資訊，請參閱[對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)。
+如需詳細資訊，請參閱[對獨立應用程式進行分析](../profiling/command-line-profiling-of-stand-alone-applications.md)。
 
-## <a name="profiling-services"></a>對服務進行程式碼剖析
+## <a name="profile-services"></a>分析服務
 
 若要分析服務 (包括 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式)，請使用 **VSPerfClrEnv /GlobalInteractionOn** 選項設定環境變數，再使用 **VSPerfClrEnv /GlobalInteractionOff** 選項將它們移除。
 
@@ -89,7 +89,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 下列範例中會使用檢測方法對 Windows 服務進行分析，並且收集階層互動資料。
 
-### <a name="profiling-a-windows-service-example"></a>對 Windows 服務進行程式碼剖析的範例
+### <a name="profile-a-windows-service-example"></a>對 Windows 服務進行分析的範例
 
 1. 如有必要，請安裝服務。
 
@@ -101,7 +101,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
     vsperfclrenv /globaltraceon
     ```
 
-4. 初始化 TIP 環境變數。 輸入下列命令
+4. 初始化 TIP 環境變數。 輸入下列命令：
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ VSPerfASPNETCmd 命令列工具可讓您存取程式碼剖析工具中的完整�
 
 [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 加入階層互動資料
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 加入階層互動資料
 
 VSPerfASPNETCmd 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。 相較於 **VSPerfCmd** 命令列工具，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 VSPerfASPNETCmd 的這些功能使得階層互動資料的收集變得格外輕鬆。
 

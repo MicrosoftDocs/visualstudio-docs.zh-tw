@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edeb4a012d0059f54df29fd74b093cc51ed5e6f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e0154a9d410e7bbe60913b757f216225239704b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 
@@ -43,4 +43,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
 
@@ -160,7 +160,7 @@ ms.lasthandoff: 05/03/2018
 ## <a name="see-also"></a>另請參閱
 
 - [使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [使用 IntelliSense](../ide/using-intellisense.md)
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [快速動作](../ide/quick-actions.md)

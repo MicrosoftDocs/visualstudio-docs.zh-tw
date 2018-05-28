@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="3701"></a>3.7.0.1
+ 發行日期：2018 年 5 月 7 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **安裝程式：**
+
+    -   已修正使用實驗性組建時的相依性問題。
+
+## <a name="3700"></a>3.7.0.0
+ 發行日期：2018 年 5 月 7 日
+
+### <a name="new-features"></a>新功能
+
+-   **偵錯：**
+
+    -   已新增對協調偵錯的支援 (使用同一個 Visual Studio 工作階段對多個播放器/編輯器進行偵錯)。
+    
+    -   已新增對 Android USB 播放器偵錯的支援。
+    
+    -   已新增對 UWP/IL2CPP 播放器偵錯的支援。
+
+-   **評估：**
+
+    -   已新增對十六進位指定名稱的支援。
+    
+    -   已改善監看視窗評估體驗。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   修正例外狀況設定的使用方式。
+
+-   **Project Generation:**
+
+    -   產生時排除套件管理員編譯單位。
 
 ## <a name="3605"></a>3.6.0.5
  發行日期：2018 年 3 月 13 日
@@ -26,7 +64,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **Project Generation:**
 
-    -   Unity 2018.1 之新專案產生器的新增支援
+    -   已新增 Unity 2018.1 中新專案產生器的支援。
 
 ### <a name="bug-fixes"></a>Bug 修正
 

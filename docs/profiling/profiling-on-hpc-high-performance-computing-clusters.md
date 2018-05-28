@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
-您可以使用 Visual Studio 分析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行分析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。
+您可以使用 Visual Studio 分析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行分析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](https://azure.microsoft.com/solutions/big-compute/)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/19/2018
 |*%FxPath%*|[!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行程式碼剖析
+## <a name="profile-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行分析
 
 您可以使用 HPC 效能精靈來指定 HPC 叢集和目標資訊，以設定程式碼剖析工作階段。 您可以在效能工作階段屬性頁中指定其他選項。 程式碼剖析工具會自動部署必要的目標二進位檔，並啟動分析工具和 HPC 應用程式。
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 04/19/2018
 
 10. 按一下 [ **完成**]。
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>使用效能工作階段屬性頁來設定 HPC 程式碼剖析屬性
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>使用效能工作階段屬性頁來設定 HPC 程式碼剖析屬性
 
 您可以在效能工作階段屬性頁的 [HPC 啟動屬性] 頁面上，變更在 HPC 程式碼剖析精靈上設定的效能工作階段屬性。 您可以在 [HPC 進階屬性] 頁面上設定其他選項。
 

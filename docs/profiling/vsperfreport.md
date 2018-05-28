@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .csv 檔案。  
@@ -65,7 +65,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**NoLogo**|當執行報告時，隱藏版本資訊。|  
 |**UserRulesDirectory**|指定包含使用者定義之效能規則的目錄 [尚未實作]。|  
   
-## <a name="filter-options"></a>篩選選項：  
+## <a name="filter-options"></a>篩選選項  
  下表描述用於篩選可用資料的選項。  
   
 |選項|描述|  
@@ -90,5 +90,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|使用此特定資料行來比較值。 預設為專有樣本百分比資料行。|  
 |**QueryDiffTables**|列出提供之兩個報告檔案的有效資料表和資料行。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)

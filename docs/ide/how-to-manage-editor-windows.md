@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b10bb58420b09bc184ef447503ca90acc7574f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
 
@@ -58,5 +58,5 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>另請參閱
 
 - [自訂編輯器](../ide/customizing-the-editor.md)
-- [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)
+- [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

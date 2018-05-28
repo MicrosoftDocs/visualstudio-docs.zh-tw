@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** 工具的用途是啟動及停止效能資料收集。 其使用下列語法：  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn 與 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|暫停指定執行緒的分析。 請只在使用檢測方法進行分析時使用 **ThreadOff**。|  
 |[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|在分析資料檔案中插入標記，以及選擇性文字。|  
   
-## <a name="sampling-method-options"></a>取樣方法選項  
+## <a name="sample-method-options"></a>取樣方法選項  
  只有在使用取樣分析方法時，才能使用下列選項。  
   
 |選項|描述|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|停止分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。 如果未指定任何處理序，所有處理序的分析都會停止。|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|收集 .NET 記憶體配置和物件存留期資料。 只能搭配 **VSPerfCmdLaunch** 選項使用。|  
   
-### <a name="sampling-interval-options"></a>取樣間隔選項  
+### <a name="sample-interval-options"></a>取樣間隔選項  
  下列選項會指定取樣間隔的類型和持續時間。 預設為 **Timer**。 您也可以使用 **Counter** 選項，將 CPU 計數器指定為間隔。 這些選項只能搭配 **Launch** 或分析工作階段的第一個 **Attach** 指定。  
   
 |選項|描述|  

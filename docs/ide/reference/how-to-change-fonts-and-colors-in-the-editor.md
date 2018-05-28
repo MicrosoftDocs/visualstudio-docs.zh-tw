@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在編輯器中變更字型和顏色
 在程式碼編輯器的 [顯示項目] 中，您可以變更預設字體、調整字型大小，亦可變更各種文字的前景和背景色彩。 當變更字型設定時，請注意下列資訊：
@@ -56,5 +56,5 @@ ms.lasthandoff: 04/26/2018
 
 - [自訂編輯器](../../ide/customizing-the-editor.md)
 - [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)
-- [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [程式碼編輯器的功能](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

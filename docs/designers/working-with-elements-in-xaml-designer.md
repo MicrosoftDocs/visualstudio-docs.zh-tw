@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 您可以在 XAML 中、在程式碼中或使用 XAML 設計工具，將項目 (控制項、版面配置和圖形) 加入應用程式。 本主題說明如何在 Visual Studio 或 Blend for Visual Studio 中，使用 XAML 設計工具來處理項目。
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
         -   **移到最下層**可將項目移到這個順序的最下層。
 
-     在 [屬性] 視窗的 [版面配置] 區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 項目重疊時，具有較低 **ZIndex** 值的項目會出現在前面。
+     在 [屬性] 視窗的 [版面配置] 區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 當元素重疊時，具有較高 **ZIndex** 值的元素會出現在前面。
 
 ## <a name="changing-the-alignment-of-an-element"></a>變更項目的對齊方式
  您可以使用功能表命令或將項目拖曳至對齊線，來對齊畫板中的項目。
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/26/2018
 
      邊緣對齊時，會出現「對齊界限」以指出對齊方式。 對齊界限是一條紅色虛線。 只有在啟用 [貼齊至對齊線]  時才會顯示對齊界限。 如需顯示對齊界限的畫板圖例，請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
-## <a name="changing-the-an-elements-margins"></a>變更項目的邊界
+## <a name="changing-an-elements-margins"></a>變更元素的邊界
  XAML 設計工具中的邊界可決定畫板上某個項目周圍的空白間距。 例如，邊界可指定項目的外緣與含有該項目之 `Grid` 面板界限之間的間距。 邊界也可指定 `StackPanel` 中所包含的項目之間的間距。
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>在 [屬性] 視窗中變更項目的邊界

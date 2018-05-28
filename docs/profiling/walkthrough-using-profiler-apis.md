@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
@@ -37,9 +37,9 @@ ms.lasthandoff: 05/11/2018
 ## <a name="prerequisites"></a>必要條件  
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：  
   
- [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+ [操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
   
- [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)  
+ [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)  
   
  根據預設，啟動分析工具時，分析工具會收集全域層級的資料。 程式開頭的下列程式碼會關閉全域分析。  
   
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  您可以在命令列關閉資料收集，而不使用 API 呼叫。 下列步驟假設您的命令列建置環境設定成執行分析工具和您的開發工具。 這包含 VSInstr 和 VSPerfCmd 所需的設定。 請參閱＜命令列分析工具＞。  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>使用分析工具 API 限制資料收集  
+## <a name="limit-data-collection-using-profiler-apis"></a>使用分析工具 API 限制資料收集  
   
 #### <a name="to-create-the-code-to-profile"></a>建立要分析的程式碼  
   
@@ -159,8 +159,8 @@ DataCollection.CurrentId);
   
      在目前目錄中，會使用產生的效能資料來建立 .csv 檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)   
- [快速入門](../profiling/getting-started-with-performance-tools.md)   
+ [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

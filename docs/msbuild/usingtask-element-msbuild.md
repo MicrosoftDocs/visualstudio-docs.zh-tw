@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 項目 (MSBuild)
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。  
@@ -68,10 +68,10 @@ ms.lasthandoff: 04/19/2018
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。|  
 
 ## <a name="remarks"></a>備註  
- 如果明確或透過匯入的專案檔案出現在專案檔案中，則可以在 `UsingTask` 項目的任何位置參考環境變數、命令列屬性和專案層級屬性。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
+ 您可以在專案檔所包含 (直接包含或透過匯入的專案檔來包含) 的 `UsingTask` 元素中，參考環境變數、命令列屬性、專案層級屬性及專案層級項目。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
 
 > [!NOTE]
->  如果 `UsingTask` 項目來自全域註冊 MSBuild 引擎的其中一個 .tasks 檔案，則專案層級屬性沒有任何意義。 專案層級屬性對於 MSBuild 而言不是全域的。  
+>  如果 `UsingTask` 元素來自已向 MSBuild 引擎全域註冊的其中一個 .tasks 檔案，則專案層級屬性和項目沒有任何意義。 專案層級值對 MSBuild 而言不是全域的。  
 
  在 MSBuild 4.0 中，可以從 .overridetask 檔案載入使用的工作。  
 
