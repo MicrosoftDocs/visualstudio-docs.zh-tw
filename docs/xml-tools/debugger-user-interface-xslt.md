@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b2767a952c566359b1c61bbdc83060bf905e99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 04/26/2018
 
 如需詳細資訊，請參閱[偵錯使用者介面參考](../debugger/debugging-user-interface-reference.md)。
 
-## <a name="locals-window"></a>本機視窗
+## <a name="locals-window"></a>[區域變數] 視窗
  [本機] 視窗會顯示樣式表中定義之任何變數的相關資訊。 [本機] 視窗包含資訊的三個資料行：
 
  **名稱**
@@ -51,12 +51,12 @@ ms.lasthandoff: 04/26/2018
  XSLT 偵錯工具使用分開的視窗顯示偵錯工具輸出。 這是用來顯示的輸出相同的視窗**顯示 XSL 輸出**命令。
 
 ## <a name="task-list"></a>工作清單
- [工作清單] 會列出樣式表中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
+ **工作清單**列出樣式表中的所有編譯錯誤。 按兩下錯誤，即可將游標移至發生錯誤的程式行。
 
- [工作清單] 包括 XSLT 檔之指令碼區塊中發生的所有錯誤。
+ **工作清單**包括 XSLT 檔中的指令碼區塊中發生的任何錯誤。
 
 > [!NOTE]
-> XSLT 偵錯工具沒有警告，所以它們永不會顯示於 [工作清單] 中。
+> XSLT 偵錯工具會有任何警告，所以它們永不會顯示在**工作清單**。
 
 ## <a name="breakpoints-window"></a>中斷點視窗
  [中斷點] 視窗會顯示目前專案中的所有中斷點。 當視窗在檢視表中時如果加入中斷點，則視窗會自動更新以顯示新中斷點。
@@ -71,16 +71,16 @@ ms.lasthandoff: 04/26/2018
 
  [監看式] 視窗中顯示的變數是針對目前的內容 (呼叫堆疊上的最上層項目)。 如果您變更內容，則監看式視窗會更新，並顯示為該內容設定的變數。
 
-## <a name="call-stack-window"></a>呼叫堆疊視窗
- [呼叫堆疊] 視窗用於檢視呼叫堆疊上的函式名稱、參數型別與參數值。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
+## <a name="call-stack-window"></a>[呼叫堆疊] 視窗
+ **呼叫堆疊** 視窗用於檢視呼叫堆疊、 參數類型和參數值的函式的名稱。 僅當進行偵錯的程式處於中斷狀態時，才會顯示呼叫堆疊資訊。
 
- 呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果有從範本 a 到範本 b 的呼叫，則範本 a 及範本 b 都會出現在呼叫堆疊視窗中，而且目前內容會位於清單的最頂端。 使用者可以查看目前執行的查詢。
+ 呼叫堆疊表示經歷 XSLT 執行的各種內容。 例如，如果沒有從範本"a"至"b"的範本，範本"a"，而且範本"b"出現在**呼叫堆疊**與目前內容的清單最上方的視窗。 使用者可以查看目前執行的查詢。
 
  如果範本在 XSLT 檔中沒有名稱，則會使用由 XSLT 處理器產生的名稱。
 
  按一下非清單頂部的項目，會使用標準的綠色反白顯示及綠色箭頭，向檢視器表示 XSLT 執行分支所在的位置。
 
-## <a name="quickwatch-dialog-box"></a>快速監看式對話方塊
+## <a name="quickwatch-dialog-box"></a>QuickWatch 對話方塊
  **快速監看式**對話方塊用來評估 XPath 1.0 運算式。 內容節點 ([本機] 視窗中的 `self::node()` 節點) 提供 XPath 運算式執行的內容。 執行 XPath 運算式的結果會顯示於 [監看式] 視窗中。
 
  下列清單說明對 XPath 運算式評估的某些限制。
@@ -102,4 +102,4 @@ ms.lasthandoff: 04/26/2018
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
 - [偵錯工具基礎](../debugger/debugger-basics.md)
-- [檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)
+- [檢查 [Visual Studio 中的] [自動變數] 和 [區域變數] 視窗中的變數](../debugger/autos-and-locals-windows.md)
