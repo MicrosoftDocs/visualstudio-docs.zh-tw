@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>選項對話方塊、偵錯、一般
 **工具 > 選項 > 偵錯 > 一般**頁面可讓您設定下列選項：  
@@ -94,11 +94,11 @@ ms.lasthandoff: 04/18/2018
 - **允許部分信任組件 (僅限 Managed) 的來源伺服器**  
     當來源伺服器支援啟用時，這個設定會覆寫不擷取部分信任組件之來源的預設行為。  
 
-- **啟用來源連結支援**  
+**啟用來源連結支援**  
     告知 Visual Studio debugger 下載來源檔案包含來源連結資訊的.pdb 檔。 如需來源連結的詳細資訊，請參閱[來源連結規格](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
 
     > [!IMPORTANT]
-    >  因為來源連結會下載檔案，使用 http 或 https，請確定您信任的.pdb 檔案。  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **反白顯示整行中斷點和目前的陳述式 （只有 c + +）**  
 當偵錯工具反白顯示中斷點或目前的陳述式時，它會反白顯示整行。  
