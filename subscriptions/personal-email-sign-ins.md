@@ -9,11 +9,12 @@ description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Ho
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335716"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio 訂用帳戶 - 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？ 
 
@@ -34,6 +35,6 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="solution"></a>方案
 
-若要更正此問題，您必須編輯訂閱者資訊以更新其登入電子郵件地址。  您可以對單一訂閱者進行編輯，或是大量做出編輯。 如需完整資訊，請造訪[編輯訂閱](/visualstudio/subscriptions/edit-license)。  
+若要更正此問題，您必須編輯訂閱者資訊以更新其登入電子郵件地址。  您可以對單一訂閱者進行編輯，或是大量做出編輯。 如需完整資訊，請造訪[編輯訂閱](edit-license.md)。  
 
 在您更新訂閱者的電子郵件地址之後，便應該通知他們其登入資訊已經變更。  他們也會收到一封包含更新資訊的電子郵件。   
