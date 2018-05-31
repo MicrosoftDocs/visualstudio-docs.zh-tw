@@ -9,11 +9,12 @@ description: 了解訂用帳戶管理員可以如何存取系統管理入口網�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335888"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>存取入口網站與管理系統管理員 - 適用於透過大量授權 (VL) 取得的訂閱
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/06/2018
 
      a. 在電子郵件中，會以唯一的連結提供主要與通知連絡人以及其公開客戶號碼 (PCN) 的末三碼。  (如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序)。
 
-     b. 若要取得完整的 PCN，主要連絡人需要登入 VLSC。 [尋找 PCN 的指示](/find-pcn/) 
+     b. 若要取得完整的 PCN，主要連絡人需要登入 VLSC。 [尋找 PCN 的指示](find-pcn.md) 
 
      c.  取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們可以使用工作/學校帳戶 (如果您的組織在 AAD 中) 或 Microsoft 帳戶 (MSA) 登入，如果您的組織不在 AAD 中。 
 
@@ -46,6 +47,6 @@ ms.lasthandoff: 04/06/2018
 
 3.  存取新的訂用帳戶管理入口網站。 組織一旦移轉，就會向最近新增的超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站，開始管理訂用帳戶。  
 
-如果您需要新增至新的 Visual Studio 訂用帳戶管理入口網站，但不確定主要/通知連絡人是誰，您可以在登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 之後尋找此資訊。 如需在 VLSC 中尋找主要/通知連絡人的步驟，請參考[如何尋找我的主要連絡人](/find-primary-contact/)主題。
+如果您需要新增至新的 Visual Studio 訂用帳戶管理入口網站，但不確定主要/通知連絡人是誰，您可以在登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 之後尋找此資訊。 如需在 VLSC 中尋找主要/通知連絡人的步驟，請參考[如何尋找我的主要連絡人](find-primary-contact.md)主題。
 
 如果您已具備系統管理員的身分，就可以直接前往 Visual Studio 訂用帳戶管理入口網站：[https://manage.visualstudio.com](https://manage.visualstudio.com)。 

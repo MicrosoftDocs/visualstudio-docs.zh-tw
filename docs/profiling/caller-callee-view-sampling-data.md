@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c04c3d6e9df1bc761fdbcd3e78a5e43ab3efd1f2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8e964ec877b791fc3058068e2f89706cc5826e0f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335966"
 ---
-# <a name="caller--callee-view---sampling-data"></a>呼叫端 / 被呼叫端檢視 - 取樣資料
+# <a name="caller--callee-view---sampling-data"></a>呼叫端/被呼叫端檢視 - 取樣資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。  
   
  **目前的函式**會顯示在中間方格中，顯示所選取函式的分析資訊。 這些值包括對函式的所有取樣呼叫。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
 |**專有樣本**|- 若為目前的函式，這是當此函式直接執行時，亦即此函式在呼叫堆疊最上方時，在分析執行中所收集的樣本數目。 當此函式的子函式正在執行時所收集的樣本不會計入專有計數。<br />- 若為呼叫端函式，這是當此函式呼叫目前函式時所收集，目前函式的專有樣本數目。<br />- 若為被呼叫端函式，這是當目前函式呼叫此函式時所收集，此函式的專有樣本數目。|  
 |**專有樣本 %**|分析執行的所有樣本中，屬於此函式之專有樣本的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922f6f40389277bed7da7b960fae341d7afe70da
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: f63ee0e28a432e43f30377b9f876004b69cd13dc
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335729"
 ---
 # <a name="automark"></a>AutoMark
 **AutoMark** 選項指定收集 Windows 軟體效能計數器事件之間的毫秒數。 Windows 效能計數器指定於 **WinCounter** 選項中。  
@@ -43,8 +44,8 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Pr
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [分析服務](../profiling/command-line-profiling-of-services.md)

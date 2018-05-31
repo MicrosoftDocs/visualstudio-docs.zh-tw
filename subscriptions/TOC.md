@@ -74,10 +74,9 @@
 #### [管理 MPN 的訂用帳戶](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## 資源
-### [Visual Studio 授權條款](vs-license-terms.md)
 ### [Visual Studio 授權白皮書](http://aka.ms/vslicensing) \(英文\)
 ### [比較訂閱選項和定價](https://www.visualstudio.com/vs/pricing)
 ### [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
 ### [Visual Studio 管理與訂閱支援](https://www.visualstudio.com/support/support-overview-vs)
-### [大量授權和產品使用權限 (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [大量授權條款](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft 產品和服務合約 (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

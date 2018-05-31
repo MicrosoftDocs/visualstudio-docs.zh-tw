@@ -9,11 +9,12 @@ description: 了解系統管理員可以如何處理過期的 Visual Studio 訂�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f4f1e049ce5f236fc1bce958d698b15637cb265d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335615"
 ---
 # <a name="handling-expired-subscriptions"></a>處理過期的訂用帳戶
 
@@ -25,4 +26,4 @@ ms.lasthandoff: 04/06/2018
 1.  請連絡大量授權的轉銷商或 Microsoft 賣方。 
 2.  將您的合約編號和購買帳戶號碼提供給他們。 
 
-您的轉銷商或 Microsoft 賣方將引導您完成更新，或進行購買其他訂閱的程序。 下好訂單或更新合約之後，您就可以使用新的訂用帳戶，並將其[指派給訂閱者](/assign-license/)。 
+您的轉銷商或 Microsoft 賣方將引導您完成更新，或進行購買其他訂閱的程序。 下好訂單或更新合約之後，您就可以使用新的訂用帳戶，並將其[指派給訂閱者](assign-license.md)。 

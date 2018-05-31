@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5a80233a6c1aaed56770e0ec2bb6733a800ce06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336096"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的 .NET 記憶體分析資料。 [呼叫端/被呼叫端] 檢視包含三個方格。  
@@ -50,8 +51,8 @@ ms.lasthandoff: 04/19/2018
 |**專有位元組**|- 若為目前的函式，這是函式在分析執行中所配置的記憶體位元組數目。 這個數目不包含由目前函式呼叫之函式所配置的記憶體。<br />- 若為呼叫端函式，這是目前函式 (從呼叫端函式的呼叫所產生) 的專有位元組數目。<br />- 若為被呼叫端函式，這是函式之執行個體 (從目前函式的呼叫所產生) 所配置的位元組數目。 這個數目不包含由被呼叫端函式呼叫之函式所配置的位元組。|  
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   
- [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+ [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

@@ -9,11 +9,12 @@ description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335589"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
@@ -22,7 +23,7 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 權益分為三個類別：
 
 ## <a name="tools"></a>工具
-「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](/vs-ide-benefit/)、[Visual Studio Team Services](/vs-vsts/) 和 [Azure](/vs-azure/) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
+「工具」類別提供各種權益的存取權，包括 [Visual Studio IDE](vs-ide-benefit.md)、[Visual Studio Team Services](vs-vsts.md) 和 [Azure](vs-azure.md) 等旗艦級權益。  視您的訂用帳戶層級而定，您也會看到 Windows 和 Office 365 開發人員帳戶、Visual Studio App Center，以及來自 WhiteSource Bolt 和 ModernRequirements 等夥伴的權益。
 
 ## <a name="professional-development"></a>專業開發
 為了協助您持續增強技能集，並跟上最新的技術，我們提供一些來自業界先驅的最佳線上訓練課程的存取權。 所提供絕佳內容的範例包括：
