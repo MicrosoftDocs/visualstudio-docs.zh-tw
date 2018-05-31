@@ -9,11 +9,12 @@ description: 了解如何從 manage.visualstudio.com 或 VLSC 重新傳送訂閱
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2edabf44637672f45241299703cb3d3f88348b6c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335953"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>如何在 Visual Studio 訂用帳戶管理入口網站中重新傳送訂閱指派電子郵件
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/27/2018
 從 manage.visualstudio.com 入口網站內重新傳送指派電子郵件的程序非常簡單：
 
 1. 瀏覽 [manage.visualstudio.com](https://manage.visualstudio.com) 入口網站並登入。 
-2. 使用 [篩選] 索引標籤搜尋要重新傳送指派電子郵件的訂閱者 (如需有關篩選的詳細資訊，請參閱[搜尋訂用帳戶](/visualstudio/subscriptions/search-license))。
+2. 使用 [篩選] 索引標籤搜尋要重新傳送指派電子郵件的訂閱者 (如需有關篩選的詳細資訊，請參閱[搜尋訂用帳戶](search-license.md))。
 3. 在訂閱者上按一下。  您可以使用 Ctrl+按一下或 Shift+按一下來選取多個訂閱者。
 4. 按一下搜尋結果頂端的 [重新傳送]。  
 
