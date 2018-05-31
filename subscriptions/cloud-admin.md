@@ -9,11 +9,12 @@ description: 設定雲端訂用帳戶的系統管理員
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335680"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>設定 Visual Studio 雲端訂用帳戶的系統管理員
 
@@ -40,11 +41,11 @@ Visual Studio 雲端訂用帳戶是由系統管理員管理。  這些人可以�
 6. 按一下頁面頂端的 [新增] 索引標籤。 
 7. 在右側的飛出視窗窗格中，按一下您要設定為系統管理員的訂閱者名稱。
 8. 按一下窗格頂端的 [角色] 下拉式清單，向下捲動並選取 [使用者存取系統管理員]。
-9. 按一下 [儲存]。
+9. 按一下 [儲存] 。
 您指定的訂閱者現在將顯示在頁面中央，而其角色將顯示為「使用者存取系統管理員」。  
 
 新的系統管理員現在可以登入[管理入口網站](https://manage.visualstudio.com)、從頁面左上角的清單中選取與用來購買雲端訂用帳戶相同的 Azure 訂用帳戶，並開始管理那些訂用帳戶。 
 
 
-如需 Visual Studio 雲端訂用帳戶的資訊，請參閱＜購買雲端訂用帳戶＞底下的[概觀](/vscloud-overview/)。 若要購買 Visual Studio 雲端訂用帳戶，請瀏覽 Visual Studio Marketplace，網址是 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。 
+如需 Visual Studio 雲端訂用帳戶的資訊，請參閱＜購買雲端訂用帳戶＞底下的[概觀](vscloud-overview.md)。 若要購買 Visual Studio 雲端訂用帳戶，請瀏覽 Visual Studio Marketplace，網址是 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。 
 
