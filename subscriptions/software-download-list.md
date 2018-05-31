@@ -9,11 +9,12 @@ description: 請找出 Visual Studio 訂用帳戶隨附軟體下載項目的清�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7958ccedb28a14763264cd590e83d5e8e7fbbcdf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335836"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我要如何知道哪些軟體可供下載？
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/06/2018
 
 若您已經有 Visual Studio 訂用帳戶： 
 1. 前往 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
-2. 登入訂用帳戶。  (取得有關[登入](/visualstudio/subscriptions/signing-in)的說明)。
+2. 登入訂用帳戶。  (取得有關[登入](signing-in.md)的說明)。
 3. 成功登入之後，您將能夠搜尋您想要的下載項目。  您也可以看到可依數個條件排序的熱門下載項目清單。 
 
 若要快速尋找產品，請使用頁面頂端的「搜尋」功能或按一下左邊的不同產品類型。

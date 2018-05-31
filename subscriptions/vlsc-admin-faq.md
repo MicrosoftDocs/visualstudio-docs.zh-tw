@@ -9,11 +9,12 @@ description: 大量授權服務中心系統管理移轉常見問題集
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336122"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 訂閱系統管理移轉
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/06/2018
 我們將會寄送電子郵件給「主要/通知連絡人」，邀請他們在組織移轉的一週前完成上線程序。 「訂閱管理員」也會收到電子郵件，告知他們我們已連絡「主要/通知連絡人」，並已提供有關如何協助確保上線成功的詳細資料。 了解如何[尋找組織的主要/通知連絡人](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?)。 
 
 ### <a name="is-onboarding-different-from-migration"></a>上線與移轉是否不同？
-是。  此程序包含兩個階段。 在移轉前將組織設定好 (或上線) 可確保您的系統管理員工作不會受到干擾。 在我們移轉組織的資訊之後，您就能夠在新版入口網站中管理 Visual Studio 訂閱。 如果「主要/通知連絡人」未在移轉前執行上線程序，「訂閱管理員」將會被系統封鎖而無法管理訂閱，直到您完成上線程序為止。 
+可以。  此程序包含兩個階段。 在移轉前將組織設定好 (或上線) 可確保您的系統管理員工作不會受到干擾。 在我們移轉組織的資訊之後，您就能夠在新版入口網站中管理 Visual Studio 訂閱。 如果「主要/通知連絡人」未在移轉前執行上線程序，「訂閱管理員」將會被系統封鎖而無法管理訂閱，直到您完成上線程序為止。 
 
 ### <a name="what-is-the-onboarding-process"></a>什麼是上線程序？
 「主要/通知連絡人」將會收到邀請他們完成上線程序的電子郵件。 請參閱下面有關此程序的指示。 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/06/2018
 
     輸入 PCN 之後，系統會將他們引導至可供他們新增超級管理員和系統管理員 (先前稱為「訂閱管理員」) 的頁面。 在理想的情況下，這應該在組織的移轉日期之前完成，如此才不會干擾您的訂閱管理工作。 
 
-3.  **存取新版訂閱管理入口網站：**移轉組織之後，將會傳送電子郵件給超級管理員和系統管理員，邀請他們存取新版入口網站以開始管理訂閱。 
+3.  **存取新版訂閱管理入口網站：** 移轉組織之後，將會傳送電子郵件給超級管理員和系統管理員，邀請他們存取新版入口網站以開始管理訂閱。 
 
 > [!NOTE] 
 > 如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序。 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/06/2018
 請登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，然後瀏覽下列路徑：[訂閱] > [Visual Studio 訂閱]。 PCN 會位在 [合約/公開客戶編號結果] 底下。 請參閱這篇[說明文章](/find-pcn/)，了解有關尋找 PCN 的逐步指引。 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>要如何找出誰是我的主要或通知連絡人？
-請登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，然後瀏覽下列路徑：[授權] > [關聯摘要]。選取您的 [授權識別碼] > [連絡人]。 請參閱這篇[說明文章](/find-primary-contact/)，了解有關尋找「主要連絡人」或「通知連絡人」的逐步指引。 
+請登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，然後瀏覽下列路徑：[授權] > [關聯摘要]。選取您的 [授權識別碼] > [連絡人]。 請參閱這篇[說明文章](find-primary-contact.md)，了解有關尋找「主要連絡人」或「通知連絡人」的逐步指引。 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>如果我的主要或通知連絡人不見、已離職或無法完成上線工作時，該怎麼辦？
 您將需要[連絡支援人員](https://www.visualstudio.com/subscriptions/support/#talktous)，並提供您在 VLSC 中用來管理訂閱的電子郵件。 驗證之後，支援人員將能夠協助您進行上線程序。 
@@ -106,8 +107,8 @@ ms.lasthandoff: 04/06/2018
 
 - Visual Studio 訂閱和管理[支援](https://www.visualstudio.com/subscriptions/support/) 
 
-- [如何尋找我的 PCN](/find-pcn/)
+- [如何尋找我的 PCN](find-pcn.md)
 
-- [如何尋找我的主要或通知連絡人](/find-primary-contact/) 
+- [如何尋找我的主要或通知連絡人](find-primary-contact.md) 
 
 - 讓組織上線及管理系統管理員的[影片](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) 

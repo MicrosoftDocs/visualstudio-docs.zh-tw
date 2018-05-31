@@ -1,7 +1,7 @@
 ---
 title: F1 說明的預設頁面
 ms.date: 02/28/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335703"
 ---
 # F1 說明
 

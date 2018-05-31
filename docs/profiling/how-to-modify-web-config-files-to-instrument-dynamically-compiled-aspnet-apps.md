@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21a4916e9e8398096e239ca1736238b0ffe8145
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336028"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。  
@@ -75,15 +76,16 @@ ms.lasthandoff: 05/11/2018
   
      `PathToASPNetHelperDll` 是 Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll 的檔案 URL。 如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在預設位置中，**href** 值應該是 `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
             <assemblyBinding   
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"
+                        culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  
@@ -94,7 +96,7 @@ ms.lasthandoff: 05/11/2018
         </runtime>  
 ```  
   
-### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>將程式碼剖析工具的後續處理步驟加入至 configuration/system.web/compilation 項目  
+### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>將分析工具的後續處理步驟加入至 configuration/system.web/compilation 元素  
   
 1.  如有需要，加入 **system.web** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
   
@@ -110,7 +112,7 @@ ms.lasthandoff: 05/11/2018
     |--------------------|---------------------|  
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -126,7 +128,7 @@ ms.lasthandoff: 05/11/2018
     <configuration>  
 ```  
   
-### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>將程式碼剖析工具位置設定加入至 configuration/appSettings 項目  
+### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>將分析工具位置設定加入至 configuration/appSettings 元素  
   
 1.  如有需要，加入 **appSettings** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。  
   
@@ -152,7 +154,7 @@ ms.lasthandoff: 05/11/2018
   
      `PerformanceToolsFolder` 是程式碼剖析工具可執行檔的路徑。 如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 是安裝到預設位置，則此值將是 **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -176,7 +178,7 @@ ms.lasthandoff: 05/11/2018
 ## <a name="example"></a>範例  
  以下為完整的 web.config 檔，會啟用動態編譯之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和程式碼剖析。 本範例假設修改前檔案中沒有其他設定。  
   
-```  
+```xml  
 <?xml version="1.0"?>  
     <configuration>  
         <runtime>  
@@ -219,6 +221,6 @@ ms.lasthandoff: 05/11/2018
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：檢測動態編譯的 ASP.NET 應用程式並收集詳細計時資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
  [如何：檢測動態編譯的 ASP.NET 應用程式並收集記憶體資料](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

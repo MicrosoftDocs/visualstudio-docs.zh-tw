@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 187f6c7cdbbcb99d5c1ac336e922c4a2fedbb44d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336054"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。  
@@ -61,7 +62,7 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
 >  -   Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](/dotnet/api/system.idisposable))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) (等同於 C# 和 VB 中的 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel))。  
 > -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
- 如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 這個 Windows SDK 範例。  
+ 如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)這個 Windows SDK 範例。  
   
  **將標記加入至 JavaScript 程式碼**  
   
@@ -152,6 +153,6 @@ if (performance && performance.mark) {
   
 -   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
- [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)
+ [分析功能導覽](../profiling/profiling-feature-tour.md)
