@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693636"
 ---
-# <a name="xml-schemas-dialog-box"></a>XML 結構描述對話方塊
+# <a name="xml-schemas-dialog-box"></a>XML 結構描述 對話方塊
 
 **XML 結構描述**對話方塊用於選取哪個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。
 
@@ -52,5 +53,5 @@ ms.lasthandoff: 04/26/2018
 ## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-- [如何：選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [如何： 選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [結構描述快取](../xml-tools/schema-cache.md)

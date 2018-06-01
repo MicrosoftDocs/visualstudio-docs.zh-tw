@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691492"
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>建立商務資料連接模型
   您可以建立商務資料連線 (BDC) 模型，或使用 Visual Studio 中自訂現有的 BDC 模型。 每個 SharePoint 專案可以包含一個模型。 如需詳細資訊，請參閱[整合至 SharePoint 的商務資料](../sharepoint/integrating-business-data-into-sharepoint.md)。  
   
-## <a name="creating-a-new-model"></a>建立新模型  
+## <a name="create-a-new-model"></a>建立新的模型
  若要建立新的模型，建立**商務資料連接模型**專案，或新增**商務資料連接模型**項目**空白的 SharePoint 專案**。  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Visual Studio 偵錯專案時，將組件複製到本機電腦上的兩個位置。  
   
-## <a name="adding-an-existing-model"></a>加入現有的模型  
+## <a name="add-an-existing-model"></a>加入現有的模型
  您可以匯入使用其他工具，例如 SharePoint Designer 所建立的模型。 您可能會選擇將現有模型匯入至您的專案，在下列情況：  
   
 -   若要自訂已部署到 SharePoint 伺服器陣列的模型。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  您可以加入 LOB 系統的型別.NET Framework 組件匯入模型中的選項中選取**新增.NET 組件 LobSystem**。 這可讓您撰寫自訂程式碼，並使用設計工具定義匯入模型之中繼資料。  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>相關主題
   
 |標題|描述|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[如何：使用資源檔來指定當地語系化名稱、屬性和使用權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|描述如何在當模型由 Web 組件或網頁提供模型中繼資料會合併的字串。|  
 |[如何：在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|示範如何在功能中包含自訂組件。|  
   
-  
+ 

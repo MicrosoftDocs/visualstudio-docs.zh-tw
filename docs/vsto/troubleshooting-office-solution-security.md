@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693314"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Office 方案安全性疑難排解
   本主題包含當您使用保護 Office 方案時，可能會遇到的常見問題的解決提示。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>無法從受限制的網站安裝方案的信任  
- 使用者無法從 web 位置安裝方案，如果 Internet Explorer 受限制的網站區域中列出的網站。 即使方案以受信任的憑證簽署，也是如此。  
+ 使用者無法從 web 位置安裝方案，如果網站已列在 Internet Explorer 受限制的網站區域。 即使方案以受信任的憑證簽署，也是如此。  
   
  部署資訊清單的 URL 可分類成五個區域的其中一個：  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
  使用 ieesc 時與 Internet Explorer 7 及更新版本，如果部署資訊清單的 URL 分類的網際網路區域中，資訊清單必須來自受信任之發行者的憑證，或無法安裝方案。 未使用 ieesc 時，預設行為是提示使用者進行信任決策。  
   
- 管理使用 ieesc 時，Internet Explorer 7 的效果和更新版本中，找出網站和通用命名慣例 (UNC) 路徑，您信任並將其加入至其中一個信任的安全性區域 （近端內部網路或信任的網站）。如需如何管理區域相關資訊，請參閱[設定 ClickOnce 信任的發行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
+ 管理使用 ieesc 時，Internet Explorer 7 的影響和更新版本中，找出網站和通用命名慣例 (UNC) 路徑，您信任並將其加入至其中一個信任的安全性區域 （近端內部網路或信任的網站）。如需如何管理區域相關資訊，請參閱[設定 ClickOnce 信任的發行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)  

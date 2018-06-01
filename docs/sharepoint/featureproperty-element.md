@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e371e15e3d366c9c73783d345b1c27340519f521
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2ff9571adc23c9ddc86de96736b9d37ef1cec5d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691814"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 項目
   代表將它部署至 SharePoint 時，會包含與功能的自訂屬性。 將功能部署之後，您可以在程式碼中存取屬性。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/22/2018
 |**Key**|需要**xs: string**屬性。<br /><br /> 用來儲存及擷取屬性值的索引鍵。 每個屬性必須有此功能內是唯一的索引鍵。|  
 |**值**|需要**xs: string**屬性。<br /><br /> 屬性值。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

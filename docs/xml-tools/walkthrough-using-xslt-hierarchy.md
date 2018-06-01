@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693441"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
+# <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說： 使用 XSLT 階層
 
 XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 `includes` 和 `imports` 指示。 編譯會從主樣式表開始，但當您看見編譯 XSLT 樣式表所產生的錯誤時，該錯誤的來源可能並非主要樣式表。 修復錯誤或編輯樣式表可能需要存取包含或匯入的樣式表。 在偵錯工具中逐步執行樣式表會開啟包含及匯入的樣式表，您可以在一個或多個包含的樣式表中加入一些中斷點。
 
@@ -47,7 +48,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </COLLECTION>
     ```
 
-1. 加入下列 `xslincludefile.xsl`：
+1. 加入下列*xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>
     ```
 
-3.  加入下列 `xslinclude.xsl` 檔案：
+3.  加入下列*xslinclude.xsl*檔案：
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)
+- [逐步解說： XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)

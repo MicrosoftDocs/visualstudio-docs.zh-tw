@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691600"
 ---
 # <a name="create-sharepoint-solutions"></a>建立 SharePoint 方案
   除了在 SharePoint Designer 中建立 SharePoint 應用程式之外，您也可以在 Visual Studio 中建立 SharePoint 應用程式。 Visual Studio 提供進階偵錯工具、IntelliSense、陳述式完成和專案範本等功能，可加速開發 SharePoint。 Visual Studio 也利用進階 .NET Framework 工具和語言。 您可以使用 Visual Basic 或 Visual C# 開發 SharePoint 專案，並且可以使用 JavaScript 開發 SharePoint 專案的應用程式。  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![MSDN 開發人員中心](../sharepoint/media/vs-icon-msdndevcenter.gif "MSDN 開發人員中心")|**MSDN 開發人員中心**<br /><br /> -   [Visual Studio 開發中心](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [SharePoint 開發人員中心](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [SharePoint Server 開發人員中心](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [SharePoint Designer 開發人員中心](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [ASP.NET 開發人員中心](http://msdn.microsoft.com/aa336522.aspx)|  
 |![提供意見反應](../sharepoint/media/vs-icon-feedback.gif "提供意見反應")|**提供意見反應**<br /><br /> 提供有關 Visual Studio 的意見反應：<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> 提供有關 Visual Studio 文件的意見反應：<br /><br /> -   **輕量型檢視。** 如果您在任何主題的頂端，您可以選擇 [為這個主題評分]  連結跳至該主題的底部，然後指定 [是]  或 [否]  以回應 [本文對您有任何幫助嗎？]  。如果選擇 [否] ，可接著選取一或多個出現的核取方塊，及 (或) 在文字方塊中提供更多資訊。 完成後，請選擇 [提交]  按鈕。<br />-   **Scriptfree 檢視。** 在主題頂端，選擇 [意見反應]  link to provide feedback in the MSDN, TechNet and Expression Library  forum.<br />-   **傳統檢視。** 在主題頂端，選擇 [意見反應]  圖示，將有關該主題的意見反應提供給文件小組。|  
   
-  
+ 

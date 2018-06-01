@@ -1,5 +1,5 @@
 ---
-title: Office 中的執行緒支援 |Microsoft 文件
+title: Office 中的執行緒支援
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693080"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
-  本主題提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不具備執行緒安全，但您可使用 Office 方案中的多個執行緒。 Office 應用程式的元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供序列化並行呼叫，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的機制。 這項機制稱為單一執行緒 apartment (STA) 模型。 呼叫已序列化，因為呼叫端可能會封鎖一段時間，伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。  
+  本文提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不具備執行緒安全，但您可使用 Office 方案中的多個執行緒。 Office 應用程式的元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供序列化並行呼叫，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的機制。 這項機制稱為單一執行緒 apartment (STA) 模型。 呼叫已序列化，因為呼叫端可能會封鎖一段時間，伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
   
  不過，如果是使用 Visual Studio 中的 Office 開發工具所建立的方案，COM interop 轉換所有已拒絕的呼叫<xref:System.Runtime.InteropServices.COMException>（"訊息篩選條件以表示應用程式是忙碌中 」）。 每當您進行呼叫的物件模型在背景執行緒，您必須準備好處理這個例外狀況。 一般而言，牽涉到重試的時間量，並顯示對話方塊。 不過，也會建立為 STA 背景執行緒，然後再註冊該執行緒來處理這種情況的訊息篩選條件。  
   
-## <a name="starting-the-thread-correctly"></a>正確啟動該執行緒  
+## <a name="start-the-thread-correctly"></a>正確地啟動執行緒  
  當您建立新的 STA 執行緒時，apartment 狀態設定為 STA 啟動執行緒之前。 下列程式碼範例會示範如何執行這項操作。  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- 如需詳細資訊，請參閱[Managed 執行緒處理的最佳做法](/dotnet/standard/threading/managed-threading-best-practices)。  
+ 如需詳細資訊，請參閱[Managed 執行緒處理最佳作法](/dotnet/standard/threading/managed-threading-best-practices)。  
   
 ## <a name="modeless-forms"></a>非強制回應表單  
  非強制回應表單可讓某種類型的應用程式互動時顯示表單。 使用者互動的表單，並與未關閉應用程式互動的表單。 Office 物件模型支援受管理的非強制回應表單。不過，它們不應在背景執行緒上。  

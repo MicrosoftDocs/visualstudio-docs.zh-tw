@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693665"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩檢與群組 (XML 結構描述總管)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩檢與群組 （XML 結構描述總管）
 
-本主題描述的選項，可透過**排序、 篩選與分組選項**XML 結構描述總管工具列上的功能表。
+本主題描述的選項，可透過**排序、 篩選與分組選項**功能表**XML 結構描述總管**工具列。
 
-## <a name="filter-options"></a>篩選選項：
+## <a name="filter-options"></a>篩選選項
 
  以下是可用的篩選選項。 根據預設，**顯示命名空間**和**顯示結構描述檔案**選取選項。
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="sorting-options"></a>排序選項
 
- 以下是可用的排序選項。 預設值是**依類型排序**。 排序依據選項不適用於檔案和命名空間。
+ 以下是可用的排序選項。 預設值是**依類型排序**。 **排序依據**選項不會套用到檔案和命名空間。
 
 -   **依類型排序**。
 

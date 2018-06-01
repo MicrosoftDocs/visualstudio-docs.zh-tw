@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691351"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
+# <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他資訊
   您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具疑難排解主題和 Microsoft Developer Network (MSDN) 公共論壇中錯誤和警告。  
   
-## <a name="troubleshooting-errors-and-issues"></a>疑難排解錯誤和問題。  
+## <a name="troubleshoot-errors-and-issues"></a>疑難排解錯誤和問題
  如需一些常見錯誤及其他問題[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，請參閱下列主題：  
   
 -   [針對 SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>其他資源  
+## <a name="other-resources"></a>其他資源
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具論壇，並提供在 MSDN 上的其他資源。  
   
 |詞彙|定義|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  如果仍然找不到您需要的答案，您可以存取線上支援的選項，例如連絡 Microsoft 產品支援服務，或搜尋知識庫文章。 如需詳細資訊，請參閱[Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=155371)頁面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 

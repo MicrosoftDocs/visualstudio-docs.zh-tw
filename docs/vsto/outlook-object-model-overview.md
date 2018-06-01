@@ -21,22 +21,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693042"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
   
- 此主題提供 Outlook 物件模型中部分主要物件的簡要概觀。 如需可深入了解整個 Outlook 物件模型的相關資源，請參閱 [使用 Outlook 物件模型文件](#refdoc)。  
+ 此主題提供 Outlook 物件模型中部分主要物件的簡要概觀。 如需其中您可以進一步了解整個 Outlook 物件模型的資源，請參閱[使用 Outlook 物件模型文件](#refdoc)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
  ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 使用 Outlook 建立自訂工作報表？](http://go.microsoft.com/fwlink/?LinkID=130315)。  
   
-## <a name="accessing-objects-in-an-outlook-project"></a>存取 Outlook 專案中的物件  
+## <a name="access-objects-in-an-outlook-project"></a>存取 Outlook 專案中的物件  
  Outlook 會提供許多您可以與之互動的物件。 若要有效使用物件模型，您應該熟悉下列最上層物件：  
   
 -   <xref:Microsoft.Office.Interop.Outlook.Application>  
@@ -64,10 +65,10 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 屬性，您可用來存取顯示單一項目內容的視窗，例如電子郵件訊息或會議邀請。  
   
- 若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 若要取得的執行個體<xref:Microsoft.Office.Interop.Outlook.Application>物件，請使用的應用程式欄位`ThisAddIn`專案中的類別。 如需詳細資訊，請參閱[程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
 > [!NOTE]  
->  為了避免安全性警告，當您使用受 Outlook 物件模型保護封鎖的屬性和方法，取得 Outlook 物件的應用程式欄位的`ThisAddIn`類別。 如需詳細資訊，請參閱 [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md)。  
+>  為了避免安全性警告，當您使用受 Outlook 物件模型保護封鎖的屬性和方法，取得 Outlook 物件的應用程式欄位的`ThisAddIn`類別。 如需詳細資訊，請參閱[Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。  
   
 ### <a name="explorer-object"></a>Explorer 物件  
  <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件表示會顯示含有項目之資料夾內容的視窗，而這些項目包括電子郵件訊息、工作或約會。 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件含有一些方法和屬性，可讓您用來修改視窗，以及視窗變更時引發的事件。  
@@ -76,11 +77,11 @@ ms.lasthandoff: 04/16/2018
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 物件的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
   
--   使用的 GetExplorer 方法<xref:Microsoft.Office.Interop.Outlook.MAPIFolder>物件取得<xref:Microsoft.Office.Interop.Outlook.Explorer>目前資料夾。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件的 `GetExplorer` 方法來取得目前資料夾的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
   
-### <a name="inspector-object"></a>Inspector 物件  
+### <a name="inspector-object"></a>偵測器物件  
  <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件是表示顯示單一項目的視窗，而這些項目包括電子郵件訊息、工作或約會。 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件含有一些方法和屬性，可讓您用來修改視窗，以及視窗變更時引發的事件。  
   
  若要取得 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件，請進行下列其中一項動作：  
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。  
   
--   使用 GetInspector 方法的特定項目，例如<xref:Microsoft.Office.Interop.Outlook.MailItem>或<xref:Microsoft.Office.Interop.Outlook.AppointmentItem>，擷取與其相關聯的偵測器。  
+-   使用特定項目 (例如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>) 的 `GetInspector` 方法來擷取與該項目相關聯的偵測器。  
   
 ### <a name="mapifolder-object"></a>MAPIFolder 物件  
  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件表示含有電子郵件訊息、連絡人、工作和其他項目的資料夾。 Outlook 會提供 16 個預設的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 物件。  
@@ -123,13 +124,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="refdoc"></a> 使用 Outlook 物件模型文件  
  如需 Outlook 物件模型的完整資訊，您可以參閱 Outlook 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
   
-### <a name="primary-interop-assembly-reference"></a>主要 Interop 組件參考  
- Outlook PIA 參考記載 Outlook 2010 主要 Interop 組件中的類型。 如需詳細資訊，請參閱 [Outlook 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189580)。  
+### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考  
+ Outlook PIA 參考記載 Outlook 2010 主要 Interop 組件中的類型。 如需詳細資訊，請參閱[Outlook 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189580)。  
   
  這份文件除了提供 PIA 中所有類型的資訊以外，還提供其他有關 PIA 結構的資訊以及常見 Outlook 自動化工作的程式碼範例。  
   
 ### <a name="vba-object-model-reference"></a>VBA 物件模型參考  
- VBA 物件模型參考記載 Outlook 物件模型公開給 Visual Basic for Application (VBA) 程式碼時的資訊。 如需詳細資訊，請參閱 [Outlook 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199769)。  
+ VBA 物件模型參考記載 Outlook 物件模型公開給 Visual Basic for Application (VBA) 程式碼時的資訊。 如需詳細資訊，請參閱[Outlook 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199769)。  
   
  VBA 物件模型參考中的所有物件和成員都會對應至 Outlook PIA 中的類型和成員。 例如，VBA 物件模型參考中的偵測器物件會對應至<xref:Microsoft.Office.Interop.Outlook.Inspector>Outlook PIA 中的物件。 雖然 VBA 物件模型參考會提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Outlook VSTO 增益集專案中使用這些程式碼範例，您必須將此參考中的 VBA 程式碼改成 Visual Basic 或 Visual C# 程式碼。  
   
@@ -141,5 +142,5 @@ ms.lasthandoff: 04/16/2018
 |[使用郵件項目](../vsto/working-with-mail-items.md)|所提供的主題示範如何使用郵件項目執行工作。|  
 |[使用資料夾](../vsto/working-with-folders.md)|所提供的主題示範如何使用資料夾執行工作。|  
 |[使用行事曆項目](../vsto/working-with-calendar-items.md)|所提供的主題示範如何使用行事曆項目執行工作。|  
-|[如何：以程式設計方式判斷目前的 Outlook 項目](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|示範如何顯示目前資料夾的名稱以及已選取項目的某些相關資訊。|  
+|[如何： 以程式設計方式判斷目前的 Outlook 項目](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|示範如何顯示目前資料夾的名稱以及已選取項目的某些相關資訊。|  
   

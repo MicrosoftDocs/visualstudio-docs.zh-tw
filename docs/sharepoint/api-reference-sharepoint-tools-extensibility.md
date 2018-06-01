@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692066"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>API 參考 (SharePoint 工具擴充性)
+# <a name="api-reference-sharepoint-tools-extensibility"></a>API 參考 （SharePoint 工具擴充性）
   本章節包含擴充 Visual Studio 中的 SharePoint 工具的應用程式開發介面參考文件。  
   
-## <a name="in-this-section"></a>本節內容  
+## <a name="in-this-section"></a>本節內容
  <xref:Microsoft.VisualStudio.SharePoint>  
  包含您用來擴充 SharePoint 專案系統的型別。 例如，您可以擴充內建的 SharePoint 專案和專案項目，或您可以建立您自己的專案項目。  
   
@@ -58,12 +59,11 @@ ms.lasthandoff: 04/16/2018
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  包含用來自訂 SharePoint 專案的功能和封裝驗證行為的類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [參考&#40;SharePoint 工具擴充性&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [工具擴充功能的 SharePoint 程式撰寫模型概觀](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  
   

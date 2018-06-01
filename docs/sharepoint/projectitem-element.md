@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1805ea5b09eac6fbe1efffe8581c347c586442cd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f6d273e0fa980e25c8b8d0c7ea6b1a8eb5d537c9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692037"
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這個項目 the.spdata 檔案的必要的根項目。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 05/22/2018
 |**SupportedDeploymentScopes**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的部署範圍。 這個值是以逗號分隔的字串，包含一或多個下列字串： 伺服器陣列、 網站、 Web、 WebApplication 或封裝。 例如：`Web, Site`<br /><br /> 在自訂 SharePoint 專案項目類型中，這個屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性。|  
 |**Type**|需要**xs: string**屬性。<br /><br /> SharePoint 專案項目識別項。 自訂 SharePoint 專案項目類型中的識別碼是您傳遞給字串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 如需詳細資訊，請參閱[如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> 如需 Visual Studio 隨附的內建 SharePoint 專案項目識別碼的清單，請參閱[擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -72,7 +73,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8cf6d3d168e3d12d74a9773ccfb3312a29046f7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5e507d83a1f1f75e346ccbab1858d797dc7b7518
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691839"
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目
   代表 ASPX 控制項或指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面的 Web 組件。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 05/22/2018
 |**命名空間**|選擇性**xs: string**屬性。<br /><br /> ASPX 控制項或 Web 組件的命名空間。|  
 |**類型名稱**|選擇性**xs: string**屬性。<br /><br /> 在 ASPX 控制項或 Web 組件型別名稱。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -65,7 +66,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

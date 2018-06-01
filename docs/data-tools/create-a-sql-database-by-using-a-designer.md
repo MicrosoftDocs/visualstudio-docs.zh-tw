@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690922"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中加入資料表
 您可以使用 Visual Studio 建立及更新 SQL Server Express LocalDB 中的本機資料庫檔案。 您也可以藉由執行 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。 本主題中，我們將建立的.mdf 檔案，並使用資料表設計工具中加入資料表和索引鍵。
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  透過更新指令碼窗格中的第一行來命名 Customers 資料表，以符合下面範例：
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 

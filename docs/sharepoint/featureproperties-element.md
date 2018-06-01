@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30f466b1dd849f7c0288de38ead481dfa19995af
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7ee33d880a56103ea024f22038350ec36021561b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691784"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 項目
   部署至 SharePoint 時，會隨附在功能的屬性值的集合。 將功能部署之後，您可以在程式碼中存取屬性值。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -55,9 +56,9 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="element-information"></a>項目資訊  
   
-|項目|描述|  
+|元素|描述|  
 |-------------|-----------------|  
-|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

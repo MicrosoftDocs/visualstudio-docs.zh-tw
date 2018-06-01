@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693795"
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 
@@ -88,7 +89,7 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
 
 5.  您也可以按一下資料行名稱以排序資料。
 
-### <a name="select-calltree-view"></a>選取呼叫樹狀圖檢視
+### <a name="select-call-tree-view"></a>選取呼叫樹狀圖檢視
 
 1.  選取**呼叫樹狀檢閱**中**目前檢視**下拉式清單。 此檢閱是程式執行的樹狀檢閱。
 
@@ -110,4 +111,4 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [逐步解說： 使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)

@@ -19,11 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691208"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用 customers 和 orders 資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二種形式會顯示所選取的客戶的訂單。 本逐步解說示範如何建立第一個表單接收資料的第二個表單上的方法。
@@ -145,7 +146,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  WHERE 子句加入查詢，以傳回`Orders`根據`CustomerID`。 查詢應與下列類似：
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID

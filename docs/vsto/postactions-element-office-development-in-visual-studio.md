@@ -1,5 +1,5 @@
 ---
-title: '&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c4dafa1c5ac7ef296ba388ecdfd93d00afef708
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6542344d5e0967504eccbedd4986cd80ef04f40a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692570"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `postActions` 命名空間的 `vstav3` 項目包含描述安裝 Office 方案後所執行之部署後動作的所有 `postAction` 項目。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <postActions>  
   <postAction>  
     <entryPoint>  
@@ -52,11 +53,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="post-deployment-action-example"></a>部署後動作範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明使用 `postActions` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   
-```  
+```xml  
 <vstav3:postActions>  
   <vstav3:postAction>  
     <vstav3:entryPoint   
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7aa00180cf5eb54bad9ceb28468f93b1d1f3d59
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f77cb92e62d5a5aec4d5e43fe295a3bab279c579
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692154"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示要部署至 SharePoint 時，包含與專案項目個別專案的輸出。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
 |**Target**|選擇性**xs: string**屬性。<br /><br /> 相依專案輸出到部署在 SharePoint 伺服器上，相對於部署根資料夾的所在路徑。 部署根資料夾由所指定之部署類型**類型**屬性。<br /><br /> 如需詳細資訊，請參閱說明**部署路徑**和**部署根**屬性的 SharePoint 專案中的項目[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|需要**xs: string**屬性。<br /><br /> 部署到相依專案的輸出使用的型別。 如需可能值的詳細資訊，請參閱描述**部署類型**屬性中的 SharePoint 專案項目的[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**命名空間**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  
