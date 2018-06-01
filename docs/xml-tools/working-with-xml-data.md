@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693717"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 
@@ -35,7 +36,7 @@ XML 編輯器用來編輯 XML 文件。 它提供鍵入時完整的 XML 1.0 語�
 
 - 支援編輯 XSLT 樣式表，包括 IntelliSense 支援。
 
-- XML 結構描述總管。
+- **XML 結構描述總管**。
 
 ## <a name="xml-schema-designer"></a>XML 結構描述設計工具
 
@@ -53,7 +54,7 @@ Visual Studio 支援偵錯 XSLT 樣式表。 使用偵錯工具，您可在 XSLT
 
 [建立和設定 Visual Studio 中的資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)提供設計階段工具的說明建立資料集。
 
-[Managed 程式碼中的 XML Web Service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立及部署 XML Web 服務以及如何存取 XML Web 服務。
+[Managed 程式碼中的 XML Web service](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)討論如何建立及部署 XML Web 服務以及如何存取 XML Web 服務。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4610a2574fbd822e4468436655668cff3892270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693561"
 ---
-# <a name="xml-document-properties-properties-window"></a>XML 文件屬性 (屬性視窗)
+# <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
 
 **屬性**視窗會提供有關使用 XML 編輯器中的文件的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。
 

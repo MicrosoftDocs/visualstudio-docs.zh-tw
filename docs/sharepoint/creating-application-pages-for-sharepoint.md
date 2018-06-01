@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68731e2a0c933f3f48f3a2211a9d17ca21e50242
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691975"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>建立 SharePoint 的應用程式頁面
+# <a name="creating-application-pages-for-sharepoint"></a>建立 SharePoint 應用程式頁面
   *應用程式頁面*是設計用來在 SharePoint 網站中使用 ASP.NET Web 網頁。 應用程式頁面是特殊的類型的 ASP.NET 網頁。 應用程式頁面和標準的 ASP.NET 網頁的主要差異是應用程式頁面上包含合併 SharePoint 主版頁面的內容。 主版頁面可讓應用程式頁面來做為站台的其他頁面共用相同的外觀和行為。  
   
  Visual Studio 可讓您使用設計工具設計應用程式頁面。 在設計工具會顯示內容區域定義主版頁面中每個內容預留位置。 您可以設計應用程式頁面上，將控制項拖曳到這些內容區域。  
   
-## <a name="application-pages"></a>應用程式頁面  
+## <a name="application-pages"></a>應用程式頁面
  應用程式頁面會共用所有的站台伺服器上，而是一個站台的特定網站頁面。 如需詳細資訊， [SharePoint 頁面類型](http://go.microsoft.com/fwlink/?LinkID=211584)。  
   
  根據預設，會顯示當您建立 SharePoint 網站之頁面的大部分都是網站頁面。 站台頁面可以加入至 SharePoint 頁面文件庫。 使用者可以使用 SharePoint Designer 之類的工具，以自訂網站頁面。 站台頁面也可以裝載功能，例如動態 Web 組件和網頁組件區域。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Visual Studio 不會提供範本，可協助您建立 SharePoint 網站的網站頁面。 如需詳細資訊，請參閱[SharePoint 頁面類型](http://go.microsoft.com/fwlink/?LinkID=211584)。  
   
-## <a name="creating-an-application-page"></a>建立應用程式頁面  
+## <a name="create-an-application-page"></a>建立應用程式頁面
  若要建立應用程式頁面上，新增**應用程式頁面**加入 SharePoint 專案項目。 當您建立的應用程式頁面時，Visual Studio 會在您的專案中加入下列資料夾：  
   
 |資料夾|描述|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 |應用程式頁面的程式碼檔|包含程式碼後置應用程式頁面。 加入程式碼可處理此檔案的事件。|  
 |應用程式頁面的設計工具程式碼檔|包含設計工具所產生的程式碼。 不要直接編輯這個檔案。|  
   
-## <a name="designing-and-debugging-an-application-page"></a>設計和偵錯的應用程式頁面  
+## <a name="design-and-debug-an-application-page"></a>設計和偵錯的應用程式頁面
  使用設計工具檢視 Visual Studio 中設計的應用程式頁面的內容。 此設計工具隨即出現，當您在專案中開啟應用程式頁面 (透過按兩下，或是開啟其捷徑功能表，然後選擇**開啟**)，然後選擇 [**設計**底部的按鈕編輯器]。  
   
 > [!NOTE]  
@@ -70,14 +71,13 @@ ms.lasthandoff: 04/16/2018
   
  如需如何偵錯 SharePoint 專案的詳細資訊，請參閱[疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
-## <a name="choosing-a-master-page"></a>選擇主版頁面  
+## <a name="choose-a-master-page"></a>選擇主版頁面
  根據預設，**應用程式頁面**項目參考的主版頁面的站台用來偵錯您的專案。 頁面名為 v4.master，而且您可以找到它列在**主版頁面圖庫**的 SharePoint 網站。  
   
  您可以明確地變更的主版頁面所設定使用的應用程式頁面`MasterPageFile`應用程式的屬性`Page`項目。 (例如： `MasterPageFile="~/_layouts/applicationv4.master"`)。 事實上，您必須將此屬性，如果在 SharePoint 伺服器上未啟用動態主版頁面。 如需有關在 SharePoint 中的主版頁面的詳細資訊，請參閱[主版頁面](http://go.microsoft.com/fwlink/?LinkID=169281)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [SharePoint Foundation 開發深度](http://go.microsoft.com/fwlink/?LinkID=182103)   
  [ASP.NET 概觀](/aspnet/overview)   
  [ASP.NET Web Pages](/aspnet/web-pages/index)   
-  
   

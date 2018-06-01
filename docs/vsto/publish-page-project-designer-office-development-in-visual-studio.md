@@ -1,5 +1,5 @@
 ---
-title: 專案設計工具 （Visual Studio 中的 Office 程式開發）、 發行頁 |Microsoft 文件
+title: 發行頁、 專案設計工具 （Visual Studio 中的 Office 程式開發）
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,19 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692840"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>專案設計工具、發行頁 (Visual Studio 中的 Office 程式開發)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行頁、 專案設計工具 （Visual Studio 中的 Office 程式開發）
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。  
   
  若要存取此頁面，選取的專案中**方案總管 中**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。  
   
 > [!NOTE]  
->  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱 [如何：使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+>  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[How to： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **發行資料夾位置 (網站、FTP 伺服器或檔案路徑)**  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  選項包括本機電腦、UNC 檔案共用或 HTTP/HTTPS 網站。 這個路徑可以是本機 (*c:\foldername\publishfolder*)、 相對 (*發行\\*)，或完整的位置 (*\\\servername\foldername*或 http://*servername/foldername*)。  
   
- 根據預設，發行位置是*http://localhost/projectname/*是否已安裝了 IIS，則為 publish\ 目錄如果您未安裝 IIS。  
+ 根據預設，發行位置是*http://localhost/projectname/* 如果您有安裝了 IIS，或*發行\\*目錄，如果您不需要安裝 IIS。  
   
  **安裝資料夾 URL**  
  選擇性。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
  如果安裝檔案位於相對於文件或安裝程式的位置，例如使用 CD 選項，請將這個方塊保留空白。  
   
- 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱 [如何：變更 Office 方案的安裝路徑](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+ 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱[如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
  **必要條件**  
  必要條件可包含在安裝程式中，或視需要於安裝期間下載。  
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
 -   支援 URL：使用者連絡 Office 方案技術支援的位置。  
   
- **選項 (Office 設定)**  
+ **選項 （Office 設定）**  
  您可以設定下列屬性的發行選項：  
   
 -   方案名稱：出現在 Office 應用程式中的 Office 方案名稱。  
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/16/2018
  **發行語言**  
  這個選項會設定 Microsoft 軟體授權條款的語言，並將語言套件包含在必要條件清單中。 它不會影響自訂的語言。 安裝程式中的語言取決於 Visual Studio 已安裝的語言。  
   
- 如需如何變更 **發行語言**的詳細資訊，請參閱 [How to: Change the Publish Language for a ClickOnce Application](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application)。  
+ 如需有關如何變更**發行語言**，請參閱[如何： 變更 ClickOnce 應用程式的發行語言](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application)。  
   
  **發行版本**  
  設定自訂的版本號碼。 當版本號碼變更時，應用程式會以更新的形式發行。 在建置程序期間，會針對每個版本建立新的資料夾，以避免覆寫先前發行的版本。 發行版本的每個部分 (**主要**、 **次要**、 **組建**、 **修訂**) 最多可包含 5 個數字。  

@@ -10,11 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03f82da87bc546eea7d2b20100e11ca32ab72aad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: HT
+ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691062"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,11 +47,11 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="Use SQL Server Data Tools to design, deploy, and maintain your databases" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解使用 SQL Server Data Tools 來設計、部署及維護資料庫</h3>
+                        <h3>深入了解設計、 部署和維護資料庫的 SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="Use Azure Data Lake to develop Big Data applications with U-SQL and .NET" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="Run Hive queries on Azure HDInsight with Hadoop" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/26/2018
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="Use Azure Streaming Analytics to develop near-real time, big data solutions" />
                         </div>
                     </div>
                     <div class="cardText">

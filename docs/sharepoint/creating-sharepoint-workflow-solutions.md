@@ -23,11 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691920"
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供的工具可協助您建立自訂工作流程，管理生命週期的文件和 SharePoint 網站的清單項目。 提供的項目包括設計工具、一組活動控制項，以及必要的組件參考。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也包含**SharePoint 自訂精靈**協助建立及設定工作流程。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/23/2018
   
  您可以建立 SharePoint 工作流程中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署至 SharePoint 網站。 工作流程部署至 SharePoint 之後，您關聯與程式庫或清單。 它可以再自動啟動，處理程序，或以手動方式，由的使用者。 如需工作流程作業的詳細資訊，請參閱[開發 SharePoint 工作流程使用 Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)。  
   
-## <a name="creating-custom-sharepoint-workflows"></a>建立自訂 SharePoint 工作流程  
+## <a name="create-custom-sharepoint-workflows"></a>建立自訂 SharePoint 工作流程
  兩個 SharePoint 工作流程專案可供您在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]:**循序工作流程**和**狀態機器工作流程**。  
   
  A*循序工作流程*代表一系列的步驟。 這些步驟會執行一個接著一個直到最後一個活動完成為止。 循序工作流程都在其執行嚴格的順序。 因為它們可以接收外部事件，並包括平行邏輯流程，所以可能會執行的確切順序。 下圖顯示循序工作流程的範例。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 05/23/2018
   
  如需工作流程類型的詳細資訊，請參閱[工作流程類型](http://go.microsoft.com/fwlink/?LinkId=178995)。  
   
-### <a name="using-the-wizard"></a>使用精靈  
+### <a name="using-the-wizard"></a>使用精靈
  當您建立 SharePoint 工作流程專案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，您先指定在其設定**SharePoint 自訂精靈**。 精靈會建立一個專案中的使用這些設定**方案總管 中**。 此專案包含程式碼檔，用來部署工作流程的數個檔案，以及建立自訂 SharePoint 工作流程所需的組件參考。  
   
  建立工作流程之後，您可以修改其屬性，在 [屬性] 視窗中。 雖然大部分的工作流程屬性可以直接在 [屬性] 視窗中變更，但是有些會需要您按一下省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 至變更其值。 這個按鈕會重新啟動**SharePoint 自訂精靈**。 屬性值變更，請選擇後**完成**按鈕來完成這些程序。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 05/23/2018
 > [!NOTE]  
 >  **工作流程類型**屬性是唯讀的而且無法變更。 如果您想要變更工作流程類型時，您必須建立另一個工作流程。  
   
-## <a name="designing-a-sharepoint-workflow"></a>設計 SharePoint 工作流程  
+## <a name="design-a-sharepoint-workflow"></a>設計 SharePoint 工作流程
  您定義商務程序中的所有步驟之後，請使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]設計 SharePoint 工作流程的工作流程設計工具。 若要開啟設計工具，請按兩下 Workflow1.cs 或 Workflow1.vb 中的**方案總管] 中**，或開啟任何這些檔案的捷徑功能表，然後選擇 [**開啟**。  
   
 ### <a name="activities"></a>活動  
@@ -88,20 +89,20 @@ ms.lasthandoff: 05/23/2018
   
  並非所有的核心工作流程活動支援 SharePoint。 如需詳細資訊，請參閱[工作流程活動的 Windows SharePoint Services 概觀](http://go.microsoft.com/fwlink/?LinkID=156094)。  
   
-#### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流程活動  
+#### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流程活動
  **SharePoint 工作流程** 索引標籤包含專用的活動，以用於[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]。 這些活動會簡化，並簡化開發的文件的生命週期工作流程。 如需中所列的活動**SharePoint 工作流程**索引標籤上，請參閱[工作流程活動的 Windows SharePoint Services 概觀](http://go.microsoft.com/fwlink/?LinkID=156094)。  
   
-#### <a name="windows-workflow-activities"></a>Windows 工作流程活動  
+#### <a name="windows-workflow-activities"></a>Windows 工作流程活動
  **Windows 工作流程** 索引標籤包含活動所提供的[!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]。 您可以使用這些活動建立工作流程排程的任何一種 Windows 工作流程應用程式。  
   
  如需中所列的活動**Windows 工作流程**索引標籤上，請參閱[Windows Workflow Foundation 活動](http://go.microsoft.com/fwlink/?LinkID=156096)。 如需有關 Windows Workflow Foundation 的詳細資訊，請參閱[Windows Workflow Foundation 概觀](http://go.microsoft.com/fwlink/?LinkID=128632)。  
   
-### <a name="working-with-activities-in-the-designer"></a>使用設計工具中的活動  
+### <a name="work-with-activities-in-the-designer"></a>使用活動設計工具中
  您的工作流程排程，可以包含 Windows 工作流程活動和 SharePoint 工作流程活動的組合。  
   
  在設計工具會顯示視覺提示，可協助您定位和正確設定活動。 當您將活動拖曳或複製到工作流程排程時，設計工具會顯示綠色的加號 (+) 圖示，表示工作流程中該活動的有效位置。 您無法位置它不是有效的位置來放置活動。 例如，您無法定位傳送活動的第一個活動為接聽活動分支中。 如需詳細資訊，請參閱[SharePoint Designer 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=178476)。  
   
-## <a name="collecting-information-during-the-workflow"></a>在工作流程期間收集的資訊  
+## <a name="collect-information-during-the-workflow"></a>在工作流程期間收集的資訊
  您可能想要從使用者收集資訊在預先定義的工作流程中的時間。 您可以使用表單或項目屬性來收集資訊。  
   
 ### <a name="forms"></a>表單  
@@ -119,21 +120,21 @@ ms.lasthandoff: 05/23/2018
   
  其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含關聯與初始化表單的項目範本。 舉例來說，*關聯表單*是可讓系統管理員安裝工作流程的其中一個輸入參數與工作流程，例如費用工作流程的消費限制。 舉例來說，*初始表單*是指可讓費用工作流程的使用者輸入到工作流程所花的數量。 如需這些表單類型的詳細資訊，請參閱[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。  
   
-### <a name="item-properties"></a>項目屬性  
+### <a name="item-properties"></a>項目屬性
  您也可以使用 SharePoint 文件庫或清單中項目的屬性，從使用者收集資訊。 主要的程式碼檔案 （Workflow1.cs 或 Workflow1.vb） 會宣告名為 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 類別的執行個體`workflowProperties`。 使用`workflowProperties`物件來存取文件庫或清單中的程式碼的屬性。 如需範例，請參閱[逐步解說： 建立及偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。  
   
-## <a name="debugging-a-sharepoint-workflow-template"></a>偵錯 SharePoint 工作流程範本  
+## <a name="debug-a-sharepoint-workflow-template"></a>偵錯 SharePoint 工作流程範本
  您可以偵錯 SharePoint 工作流程專案相同當您偵錯其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 型的專案。 當您啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會使用您在中指定的設定**SharePoint 自訂精靈**開啟適當的 SharePoint 網站，並自動建立關聯的工作流程範本使用適當的程式庫或清單中。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會將附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名為 w3wp.exe 處理序。  
   
  若要測試工作流程，您必須手動啟動它。 如需詳細資訊，請參閱 < > 一節 < 偵錯工作流程中[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。 如需有關[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 應用程式偵錯，請參閱[偵錯 Web 應用程式和指令碼](/visualstudio/debugger/debugging-web-applications-and-script)。  
   
-## <a name="deploying-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流程範本  
+## <a name="deploy-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流程範本
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署的 SharePoint 工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 如需詳細資訊，請參閱[封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。  
   
-## <a name="importing-globally-reusable-workflows"></a>匯入可全域重複使用的工作流程  
+## <a name="import-globally-reusable-workflows"></a>匯入可全域重複使用的工作流程
  除了建立站台特有的可重複使用工作流程，SharePoint Designer 可讓您建立*可全域重複使用的工作流程*，這是可供任何 SharePoint 網站的工作流程。 中的匯入可重複使用工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]目前不會匯入可全域重複使用的工作流程。 不過，您可以使用 SharePoint Designer 可全域重複使用的工作流程轉換成可重複使用工作流程，，或匯入工作流程作為未轉換的宣告式工作流程。 如需詳細資訊，請參閱[匯入現有的 SharePoint 網站中的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)。  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>相關主題
   
 |標題|描述|  
 |-----------|-----------------|  
@@ -143,9 +144,9 @@ ms.lasthandoff: 05/23/2018
 |[逐步解說：建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|示範如何執行兩項重要工作： 建立站台層級的工作流程，並建立自訂工作流程活動。|  
 |[逐步解說：將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|示範如何匯入 SharePoint Designer 2010 中建立的可重複使用宣告式工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)  
   
-  
+ 

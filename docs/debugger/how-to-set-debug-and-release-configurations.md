@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690662"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>如何： 設定偵錯和發行 Visual Studio 中的組態
 Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 依照名稱提示，您可以建置用來偵錯的偵錯版本，和最後發行散發的發行版本。  
@@ -60,7 +61,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
   
      在 Express 版中無法使用此工具列。 您可以使用**建置方案 F6**和**開始偵錯 F5**功能表項目選擇組態。
 
-## <a name="BKMK_symbols_release"></a>產生組建的符號 (.pbd) 檔案
+## <a name="BKMK_symbols_release"></a>產生組建的符號 (.pdb) 檔案
 
 對於大部分的專案類型，.pdb 檔案產生的預設值為兩個偵錯和發行組建，但預設設定會根據特定專案類型及 Visual Studio 版本而不同。 您可以設定編譯器是否會產生.pdb 檔案和要包含偵錯資訊的種類。
 

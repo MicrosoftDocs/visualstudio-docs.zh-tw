@@ -22,11 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691130"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 資料集是記憶體中資料的複本。 如果您修改該資料時，它會是最好的作法是將這些變更儲存回資料庫。 您可以執行這三種方式之一：
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
  為了示範如何進行更新，假設您的應用程式會使用包含單一資料表的資料集。 應用程式會從資料庫擷取兩個資料列。 在擷取之後，記憶體中資料表看起來像這樣：
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ ms.lasthandoff: 04/26/2018
 
  您的應用程式將 Nancy 查爾斯狀態變更為 慣用。 」 因為此變更，而值<xref:System.Data.DataRow.RowState%2A>屬性，該資料列從變更<xref:System.Data.DataRowState.Unchanged>至<xref:System.Data.DataRowState.Modified>。 值<xref:System.Data.DataRow.RowState%2A>屬性的第一個資料列會保持<xref:System.Data.DataRowState.Unchanged>。 資料表現在看起來像這樣：
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

@@ -20,11 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f484c0501cbeede5600a4831d3d872ac81b3b5c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34694042"
 ---
 # <a name="creating-pages-for-sharepoint"></a>建立 SharePoint 的網頁
   您可以建立應用程式頁面、 網站頁面、 主版頁面和 SharePoint 網站的頁面配置。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
  您也可以使用階層式樣式表、 ECMAScript 和佈景主題，修改的外觀和行為的頁數。  
   
-## <a name="types-of-sharepoint-pages"></a>類型的 SharePoint 頁面  
+## <a name="types-of-sharepoint-pages"></a>類型的 SharePoint 頁面
  下表描述四個主要類型的 SharePoint 網站所包含的頁數。  
   
 |頁面類型|描述|  
@@ -45,29 +46,28 @@ ms.lasthandoff: 04/16/2018
   
  如需每種類型的頁面的概觀，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)，和[頁面配置和主版頁面](http://go.microsoft.com/fwlink/?LinkID=182096)。  
   
-## <a name="creating-application-pages"></a>建立應用程式頁面  
+## <a name="create-application-pages"></a>建立應用程式頁面
  您也可以將 Visual Studio 中建立應用程式頁面**應用程式頁面**加入 SharePoint 專案項目。 您可以將控制項加入至頁面上，，然後加入程式碼中處理控制項事件。  
   
  您可以在頁面的程式碼檔案中設定中斷點、 開始偵錯工具，和測試本機 SharePoint 網站上的網頁，而不執行任何其他設定步驟。 如需詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
-## <a name="creating-site-pages-master-pages-and-page-layouts"></a>建立網站頁面、 主版頁面和頁面配置  
+## <a name="create-site-pages-master-pages-and-page-layouts"></a>建立網站頁面、 主版頁面和頁面配置
  您可以使用 SharePoint Designer 來建立網站頁面、 主版頁面和頁面配置。 然後，您可以匯入這些頁面 Visual Studio。 如果您想要充分利用可用在 Visual Studio 中的原始檔控制功能的部署，匯入您的網頁。 如需詳細資訊，請參閱[匯入現有的 SharePoint 網站中的項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)。  
   
  因為很難在匯入之後，修改這些頁面，您應該在您匯入之前，設計這些頁面。  
   
-## <a name="creating-cascading-style-sheets-ecmascript-and-themes"></a>建立階層式樣式表、 ECMAScript 和佈景主題  
+## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>建立階層式樣式表、 ECMAScript 和佈景主題
  Visual Studio 不提供開發階層式樣式表 (CSS)、 ECMAScript （JavaScript、 JScript） 或 SharePoint 網站的佈景主題檔案的範本。 您可以使用 SharePoint SDK 中提供的指導方針，或使用 SharePoint Designer 之類的工具來建立這些檔案。  
   
  您可以直接將這些檔案加入至您的方案，或您可以匯入它們。 在任一情況下，您必須建立每個項目加入適當的對應的資料夾。 如需如何建立對應的資料夾的詳細資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
   
  如需建立階層式樣式表的詳細資訊，請參閱[階層式樣式表類別中的使用量 SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098)。 如需建立 SharePoint 方案的 JavaScript 和 JScript 檔案的詳細資訊，請參閱[設定 」 基本 ASPX 頁面的 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)。 如需佈景主題的詳細資訊，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)。  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>相關主題
   
 |標題|描述|  
 |-----------|-----------------|  
 |[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何新增應用程式頁面： 會合併與 SharePoint 主版頁面的.aspx 內容。|  
 |[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|示範如何建立 SharePoint 網站執行的 ASP.NET 網頁。|  
 |[逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|示範如何設計和偵錯 ASP.NET Web 網頁的 SharePoint 網站。|  
-  
   

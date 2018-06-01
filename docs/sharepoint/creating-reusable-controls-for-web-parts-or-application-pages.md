@@ -18,16 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e76a13174a9ac980644f8f9116c6518fc853028c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47a519db245e2ec15548ba1d46a583d0a73f466f
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693480"
 ---
-# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>為 Web 組件或應用程式頁面建立可重複使用的控制項
+# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>建立可重複使用控制項的 web 組件或應用程式頁面
   在 Visual Studio 中，您可以為 SharePoint 中執行的應用程式頁面和 Web 組件，建立可供其利用之自訂、可重複使用的控制項。 這些控制項稱為使用者控制項。 使用者控制項是一種運作方式十分類似 ASP.NET Web 網頁的複合控制項，您可以將現有的 Web 伺服器控制項和標記加入至使用者控制項，並定義控制項的屬性和方法。 您接著可以將其內嵌在 ASP.NET Web pages，它們做為一個單位的位置。  
   
-## <a name="creating-a-user-control"></a>建立使用者控制項  
+## <a name="create-a-user-control"></a>建立使用者控制項
  若要建立使用者控制項，加入**使用者控制項**至**空白的 SharePoint 專案**。 如需詳細資訊，請參閱[How to： 建立 SharePoint 應用程式頁面或 Web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)。  
   
  當您將加入**使用者控制項**Visual Studio 項目，在您的專案，建立資料夾並將數個檔案新增至資料夾。 下表描述每個檔案。  
@@ -38,10 +39,10 @@ ms.lasthandoff: 04/16/2018
 |程式碼檔案|包含使用者控制項背後的程式碼。 加入程式碼來處理此檔案的事件。|  
 |設計工具程式碼檔案|包含設計工具所產生的程式碼，且不應直接編輯。|  
   
-## <a name="designing-the-user-control"></a>設計使用者控制項  
+## <a name="design-the-user-control"></a>設計使用者控制項
  使用 Visual Studio 中的 Visual Web Developer 設計工具來設計使用者控制項。 此設計工具隨即出現在您開啟專案中的使用者控制項檔案並選擇**設計** 索引標籤。  
 
-## <a name="consuming-the-user-control"></a>使用使用者控制項  
+## <a name="consume-the-user-control"></a>使用使用者控制項
  使用者控制項不會出現在 SharePoint 中直到您將它們包含在應用程式頁面或 Web 組件中。  
   
  若要將使用者控制項包含在應用程式頁面上，開啟您要將 ASP.NET 使用者控制項的網頁。 切換至 設計 檢視中，然後在方案總管 中，選取您的自訂使用者控制項檔案並將它拖曳到頁面。 ASP.NET 使用者控制項加入至頁面，並在設計工具建立 @ Register 指示詞，所需的頁面以辨識使用者控制項。 您現在可以使用控制項的公用屬性和方法。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
  [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]  
   
-## <a name="debugging-a-user-control"></a>偵錯的使用者控制項  
+## <a name="debug-a-user-control"></a>偵錯使用者控制項
  偵錯的使用者控制項，請確定使用者控制項包含在應用程式頁面或 Web 組件在 SharePoint 專案中。 就像您會在任何 Visual Studio 專案中的程式碼進行偵錯，您接著可以偵錯使用者控制項中的程式碼。  
   
  當您啟動 Visual Studio 偵錯工具時，Visual Studio 會開啟 SharePoint 網站。  
@@ -60,10 +61,9 @@ ms.lasthandoff: 04/16/2018
   
  如需有關偵錯 SharePoint 專案的詳細資訊，請參閱[疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>相關主題
   
 |標題|描述|  
 |-----------|-----------------|  
 |[如何：為 SharePoint 應用程式頁面或 Web 組件建立使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|示範如何建立可由應用程式頁面和 Web 組件，在 SharePoint 中執行的自訂、 可重複使用控制項。|  
-  
   

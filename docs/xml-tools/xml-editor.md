@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693782"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
@@ -39,7 +40,7 @@ XML 編輯器以 Visual Studio 文字編輯器中，為基礎，並包含其他 
 
 - 與整合[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。 這會提供 XML 結構描述的階層式檢視。
 
-已知的副檔名，如.xml、.xsd、.xsl 及.config 叫用 XML 編輯器。亦可針對可能包含 XML 的檔案之任何未知副檔名叫用該編輯器。 您也可以開啟 XML 編輯器以任何檔案，使用**開啟**選項，然後從清單中選取 XML 編輯器。
+XML 編輯器中叫用已知的副檔名，例如 *.xml*， *.xsd*， *.xsl*，和 *.config*。亦可針對可能包含 XML 的檔案之任何未知副檔名叫用該編輯器。 您也可以開啟 XML 編輯器以任何檔案，使用**開啟**選項，然後從清單中選取 XML 編輯器。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

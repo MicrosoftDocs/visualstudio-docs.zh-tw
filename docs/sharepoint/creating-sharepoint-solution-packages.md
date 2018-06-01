@@ -16,23 +16,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e67073d1a12a9412b153adc0c06471c4d39ff15a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0fd1a6f424e45b8982d4e05ea501186c45b96aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691998"
 ---
 # <a name="creating-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   使用封裝設計工具，您可以建立並自訂部署套件。 例如，您可以加入 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟動範圍，以及識別功能依存性。 在設計工具也會產生資訊清單描述每個封裝的 XML 檔案。  
   
-## <a name="packaging-tools"></a>封裝工具  
+## <a name="packaging-tools"></a>封裝工具
  您可以使用**封裝設計工具**自訂封裝，並產生資訊清單。 您可以加入 SharePoint 專案項目，設定是否應該重設，以及設定部署伺服器類型的 Web 伺服器。 如需詳細資訊，請參閱[如何： 加入和移除使用封裝設計工具的功能和封裝的項目](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
  或者，您可以使用**封裝總管**來修改項目在封裝檔案 (.wsp) 的功能。 如需詳細資訊，請參閱[如何： 新增與移除功能和封裝的項目使用封裝總管](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
  您可以使用 Visual Studio 和 MSBuild 以建立部署 SharePoint 方案套件 (.wsp) 檔案。 此程序會產生所需的 SharePoint 部署資訊清單檔案。 如需詳細資訊，請參閱[How to： 建立 SharePoint 套件](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)和[How to： 建立 SharePoint 方案套件使用 MSBuild 工作](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。  
   
-## <a name="package-designer-options"></a>封裝設計工具選項  
+## <a name="package-designer-options"></a>封裝設計工具選項
  下表顯示的屬性，您可以自訂 SharePoint 套件與**封裝設計工具**。  
   
 |封裝設計工具屬性|預設設定的說明|  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |在方案中的項目|所有的 SharePoint 專案項目，可以加入至封裝的功能。|  
 |在封裝中的項目|選擇性。 所有的 SharePoint 項目和您想要部署封裝中的功能。|  
   
-## <a name="configuring-the-packaging-process"></a>設定封裝的程序  
+## <a name="configure-the-packaging-process"></a>設定封裝的程序
  開發 Visual Studio 中的 SharePoint 方案之後，您可以自訂封裝專案的方式。  
   
  下表顯示可用於自訂.wsp 檔案的建立方式的兩個 MSBuild 目標。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
  如需詳細資訊， [How to： 自訂 SharePoint 方案套件所使用的 MSBuild 目標](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)。  
   
-## <a name="packaging-architecture"></a>封裝架構  
+## <a name="packaging-architecture"></a>封裝架構
  當您在 Visual Studio 中建立 SharePoint 套件 (.wsp)，就會執行下列步驟。  
   
 1.  功能和封裝驗證，以確定封裝的實體和語意結構正確無誤。  
@@ -70,14 +71,14 @@ ms.lasthandoff: 04/16/2018
   
 6.  中繼目錄中的檔案會加入至.wsp 檔案。  
   
-## <a name="package-folder-structure"></a>封裝的資料夾結構  
+## <a name="package-folder-structure"></a>套件資料夾結構
  當您封裝您的 SharePoint 專案時，.wsp 檔案會為您建立在 SolutionFolder\bin\\*BuildConfiguration*資料夾。 例如，如果您的方案處於*磁碟機*: \Visual Studio 2013\Projects\ListDefinition1 和組建組態設為 發行、.wsp 檔案位於*磁碟機*: \Visual Studio 2013 \Projects\ListDefinition1\bin\Release。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [如何： 新增與移除功能和封裝的項目使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [如何： 建立 SharePoint 套件](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
  [如何： 使用 MSBuild 工作建立 SharePoint 方案套件](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
  [如何：使用 MSBuild 目標自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
-  
+ 

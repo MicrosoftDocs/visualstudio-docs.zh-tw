@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f92b96f09353bf8e432d6a3931a534064ad7c446
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693847"
 ---
 # <a name="xml-snippets"></a>XML 片段
 
@@ -42,10 +43,10 @@ XML 編輯器包括許多片段，涵蓋了某些通用工作。 這可讓您更
 
  如需詳細資訊，請參閱[How to： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)。
 
-## <a name="schema-generated-xml-snippets"></a>結構描述產生的 XML 片段
+## <a name="schema-generated-xml-snippets"></a>結構描述產生 XML 片段
  XML 編輯器還具有從 XML 結構描述產生 XML 片段的功能。 此功能可讓您以從該項目的結構描述資訊產生的 XML 項目來填入項目。
 
- 如需詳細資訊，請參閱[如何： 產生 XML 片段從 XML 結構描述](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。
+ 如需詳細資訊，請參閱[How to： 從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。
 
 ## <a name="create-new-xml-snippets"></a>建立新的 XML 片段
  除了隨附的程式碼片段[!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)]Visual Studio，依預設，您也可以建立及使用您自己的 XML 片段。
