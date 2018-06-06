@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab58cb90f9486c3a233d5173db340be3ee5f034
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815661"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;元素 （ClickOnce 部署）
 部署資訊清單最上層項目。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
   
       <assembly    
    manifestVersion  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>範例  
  下列程式碼範例說明`assembly`部署使用的應用程式的部署資訊清單中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 這個程式碼範例是針對所提供之較大範例的一部分[ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)主題。  
   
-```  
+```xml  
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  

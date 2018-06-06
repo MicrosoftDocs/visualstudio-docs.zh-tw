@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ed2080c34908f67c83baed182d8e958eb1776b8f
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815817"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用發行精靈發行 ClickOnce 應用程式
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發行精靈];，以發行應用程式與發佈相關的其他屬性位於**發行**頁面**專案設計工具**。 如需詳細資訊，請參閱[發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/19/2018
   
      [發行精靈] 隨即出現。  
   
-3.  在**您要在其中發行應用程式？**頁面上，輸入有效的 FTP 伺服器位址或有效的檔案路徑使用一種格式所示，，然後按一下**下一步**。  
+3.  在**您要在其中發行應用程式？** 頁面上，輸入有效的 FTP 伺服器位址或有效的檔案路徑使用一種格式所示，，然後按一下**下一步**。  
   
-4.  在**使用者要如何安裝應用程式？**頁面上，選取使用者將會前往安裝應用程式的位置：  
+4.  在**使用者要如何安裝應用程式？** 頁面上，選取使用者將會前往安裝應用程式的位置：  
   
     -   如果使用者將從網站安裝，請按一下**從網站**並輸入 URL 對應到上一個步驟中所輸入的檔案路徑。 按 [ **下一步**]。 (當您指定 FTP 位址做為發行位置時，通常會使用這個選項。 不支援直接從 FTP 下載。 因此，您必須在此輸入 URL。)  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/19/2018
   
     -   如果使用者將從抽取式媒體安裝，請按一下**從 CD-ROM 或 DVD-ROM**，然後按一下 **下一步**。  
   
-5.  在**應用程式可以離線？**頁面上，按一下適當的選項：  
+5.  在**應用程式可以離線？** 頁面上，按一下適當的選項：  
   
     -   如果您想要啟用應用程式執行時使用者會與網路中斷連線，請按一下**是，此應用程式可供線上或離線**。 上的捷徑**啟動**功能表將會建立應用程式。  
   
@@ -76,14 +77,14 @@ ms.lasthandoff: 04/19/2018
   
      [發行精靈] 隨即出現。  
   
-3.  在**您要在其中發行應用程式？**頁面上，輸入檔案路徑或 FTP 位置其中發行應用程式，例如 d:\deploy。 然後按一下 **下一步**才能繼續。  
+3.  在**您要在其中發行應用程式？** 頁面上，輸入檔案路徑或 FTP 位置其中發行應用程式，例如 d:\deploy。 然後按一下 **下一步**才能繼續。  
   
-4.  在**使用者要如何安裝應用程式？**頁面上，按一下 從**CD-ROM 或 DVD-ROM**，然後按一下 **下一步**。  
+4.  在**使用者要如何安裝應用程式？** 頁面上，按一下 從**CD-ROM 或 DVD-ROM**，然後按一下 **下一步**。  
   
     > [!NOTE]
     >  如果您想要執行自動安裝時 CD-ROM 插入磁碟機中，開啟**發行**頁面**專案設計工具**按一下**選項**按鈕，然後在**發行選項**精靈中，選取**若是使用光碟安裝，安裝程式啟動時自動啟動 CD 插入**。  
   
-5.  如果您使用 CD-ROM 散發應用程式，可能會想要從網站提供更新。 在**哪裡將應用程式檢查更新檔？**頁面上，選擇 [更新] 選項：  
+5.  如果您使用 CD-ROM 散發應用程式，可能會想要從網站提供更新。 在**哪裡將應用程式檢查更新檔？** 頁面上，選擇 [更新] 選項：  
   
     -   如果應用程式會檢查更新，請按一下**應用程式會檢查從下列位置下載更新**，輸入將會張貼更新的位置。 這可以是檔案位置、網站或 FTP 伺服器。  
   
@@ -101,4 +102,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
- [使用 ClickOnce 部署 Office 方案](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)

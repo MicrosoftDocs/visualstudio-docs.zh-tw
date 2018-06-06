@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815541"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您安裝的應用程式指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (.mdb) 檔案。 下列程序說明如何新增至任何類型的資料檔您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  更新清單的資料檔案的應用程式資訊清單。  
   
-     **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      執行此工作會重新建立您的應用程式資訊清單中的檔案清單，也會自動產生的雜湊簽章。  
   
@@ -53,13 +54,11 @@ ms.lasthandoff: 04/19/2018
   
      您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。  
   
-     **mage-s 應用程式資訊清單-cf cert_file-pwd 密碼**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **mage-u 部署資訊清單 appm 應用程式資訊清單**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **mage-s 部署資訊清單-cf certfile-pwd 密碼**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要使用 MageUI.exe 中納入資料檔案  
   

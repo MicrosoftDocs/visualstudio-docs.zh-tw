@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816038"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說： 建立自訂啟動載入器具有隱私權提示
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說：建立具有隱私權提示的自訂啟動載入器
 您可以設定 ClickOnce 應用程式與較新的檔案版本和組件版本的組件變成可用時自動更新。 若要確定您的客戶同意此行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，並不會安裝。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -68,13 +69,13 @@ ms.lasthandoff: 05/04/2018
   
 12. 在**屬性**視窗中，變更**文字**下的屬性**配置**至**繼續**。  
   
-13. 在**屬性**視窗中，變更**（名稱）**下的屬性**設計**至**ProceedButton**。  
+13. 在**屬性**視窗中，變更 **（名稱）** 下的屬性**設計**至**ProceedButton**。  
   
 14. 在**工具箱**，拖曳**按鈕**右下方的表單控制項。  
   
 15. 在**屬性**視窗中，變更**文字**下的屬性**配置**至**取消**。  
   
-16. 在**屬性**視窗中，變更**（名稱）**下的屬性**設計**至**CancelButton**。  
+16. 在**屬性**視窗中，變更 **（名稱）** 下的屬性**設計**至**CancelButton**。  
   
 17. 在設計師中，按兩下**我同意**核取方塊以產生 CheckedChanged 事件處理常式。  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  在 product.xml 檔案中，加入下列 XML 程式碼。 請確定您不要覆寫現有的 XML 程式碼。  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ ms.lasthandoff: 05/04/2018
   
 2.  在 package.xml 檔中，加入下列 XML 程式碼定義地區設定，並包括軟體授權條款。 請確定您不要覆寫現有的 XML 程式碼。  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  

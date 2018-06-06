@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815869"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 傳統 COM 元件的部署一直困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用重疊的應用程式之間。 這種情況通常不是.NET Framework 應用程式中的問題因為彼此完全隔離的應用程式或元件的並存相容。 Visual Studio 可讓您部署獨立的 COM 元件，Windows XP 或更高版本的作業系統上。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  Class1.vb 中加入下列程式碼之後產生的程式碼`New`方法：  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
   
 8.  按兩下這個按鈕，加入處理常式程式碼，並在程式碼檔案中，加入程式碼，讓處理常式，如下所示：  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

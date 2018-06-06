@@ -28,18 +28,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee364b7116bf69b961726ec2154809f66f9bc45
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815031"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;元素 （ClickOnce 應用程式）
 識別平台或組件的相依性所需的應用程式。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
   
       <dependency>  
    <dependentOS  
@@ -173,7 +174,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>範例  
  下列程式碼範例說明`dependency`中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 這個程式碼範例是針對所提供之較大範例的一部分[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)主題。  
   
-```  
+```xml  
 <dependency>  
   <dependentOS>  
     <osVersionInfo>  

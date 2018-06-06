@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815070"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 來部署可在多個 .NET Framework 版本上執行的應用程式
 您可以部署應用程式的使用 clickonce 部署為目標的.NET framework 的多個版本。 這需要您產生和更新的應用程式和部署資訊清單。  
@@ -85,13 +86,13 @@ ms.lasthandoff: 04/19/2018
   
 2.  新增`group="framework"`給 sentinel 組件相依性的 XML (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 看起來應該如下所示：  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最低公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該如下所示：  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
