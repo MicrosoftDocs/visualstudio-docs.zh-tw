@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1e744071219426c751576f8ca781ad27dfedb61
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815842"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;元素 （ClickOnce 應用程式）
 識別所有非組件檔案下載和使用的應用程式。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <file  
     name  
     size  
@@ -187,7 +188,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>範例  
  下列程式碼範例說明`file`的部署使用的應用程式資訊清單的應用程式中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。  
   
-```  
+```xml  
 <file name="Icon.ico" size="9216">  
   <hash>  
     <dsig:Transforms>  

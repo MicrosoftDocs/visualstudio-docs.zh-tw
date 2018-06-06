@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5701b88f3942301c8fdb6d674fc323e62a93589b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815453"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （啟動載入器）
 `RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <RelatedProducts>  
     <DependsOnProduct  
         Code  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="example"></a>範例  
  下列程式碼範例會指定 Microsoft 安裝程式會隨[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，因此將不需要另外安裝。  
   
-```  
+```xml  
 <RelatedProducts>  
     <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
 </RelatedProducts>  

@@ -27,18 +27,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815570"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
 A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化的組件、 授權合約和文件的文化特性相關元件。  
   
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。  
   
-|項目|描述|屬性|  
+|元素|描述|屬性|  
 |-------------|-----------------|----------------|  
 |[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|必要的產品檔案的最上層項目。|無|  
 |[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的套件檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
@@ -56,7 +57,7 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何安裝完整的產品檔案[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
