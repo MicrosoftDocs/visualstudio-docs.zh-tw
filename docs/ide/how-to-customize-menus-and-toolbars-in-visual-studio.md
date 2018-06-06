@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745945"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
     -   若要加入功能表，請選擇 [新增功能表] 按鈕，選擇 [修改選取範圍] 按鈕，然後為您要新增的功能表命名。
 
-        ![自訂顯示如何加入功能表的對話方塊](../ide/media/addmenu.png "AddMenu")
+        ![自訂顯示如何加入功能表的對話方塊](../ide/media/addmenu.png)
 
     -   若要移除功能表，請在 [控制項] 清單中選擇該功能表，然後選擇 [刪除] 按鈕。
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/26/2018
 
     -   若要新增工具列，請選擇 [新增] 按鈕，為您要新增的工具列指定一個名稱，然後選擇 [確定] 按鈕。
 
-        ![自訂顯示如何加入工具列的對話方塊](../ide/media/addtoolbar.png "AddToolbar")
+        ![自訂顯示如何加入工具列的對話方塊](../ide/media/addtoolbar.png)
 
     -   若要移除自訂工具列，請在 [工具列] 清單中選擇該工具列，然後選擇 [刪除] 按鈕。
 
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/26/2018
 
         在 [加入命令] 對話方塊中，選擇 [分類] 清單中的某個項目，選擇 [命令] 清單中的某個項目，然後選擇 [確定] 按鈕。
 
-        ![Visual Studio 中的 [加入命令] 對話方塊](../ide/media/addcommand.png "AddCommand")
+        ![Visual Studio 中的 [加入命令] 對話方塊](../ide/media/addcommand.png)
 
     -   若要刪除命令，請在 [控制項] 清單中選擇該命令，然後選擇 [刪除] 按鈕。
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746581"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 
@@ -45,7 +46,7 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 > [!NOTE]
 > 為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色，並使用 **MaterialSpecular** 和 **MaterialSpecularPower** 參數來指定金屬外觀。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。
 
- ![著色器圖形和其效果預覽](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![著色器圖形及其效果預覽](../designers/media/digit-lighting-graph.png)
 
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節
 
@@ -56,7 +57,7 @@ Phong 光源模型擴充 Lambert 光源模型以納入反射強光，模擬表�
 >
 > **MaterialSpecularPower** 屬性可決定反射亮部的濃度。 高光澤度會模擬更模糊、範圍更小的亮部。 非常低的光澤度會模擬強烈、呈彎曲狀的亮部，使整個表面的色彩過度飽和而隱蔽起來。
 
- ![已套用至模型的 Phong 光源](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![已套用至模型的 Phong 光源](../designers/media/digit-lighting-model.png)
 
  如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 

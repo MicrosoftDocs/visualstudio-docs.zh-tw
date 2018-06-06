@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745733"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>如何：自訂捲軸以追蹤程式碼
 
@@ -33,11 +34,11 @@ ms.lasthandoff: 05/22/2018
 
     以下是在搜尋字串之後，捲軸呈現的外觀。 請注意，會出現該字串的所有出現處。
 
-    ![搜尋字串之後的捲軸。](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![搜尋字串之後的捲軸。](../ide/media/enhancedscrollbarsearch.png)
 
     以下是取代字串所有出現處之後的捲軸外觀。 您馬上就能看到此作業造成一些問題。
 
-    ![將字串取代為錯誤之後的捲軸](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![以錯誤的字串來取代之後的捲軸](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>設定捲軸的顯示模式
 
@@ -47,11 +48,11 @@ ms.lasthandoff: 05/22/2018
 
     啟用地圖模式且寬度設定為 [中] 時，搜尋範例的外觀如下：
 
-    ![地圖模式中的捲軸](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![地圖模式中的捲軸](../ide/media/enhancedscrollbar.png)
 
 2. 在地圖模式中，若要在使用游標上下移動捲軸時預覽程式碼，請選取 [顯示預覽工具提示] 選項。 其外觀如下：
 
-    ![包含工具提示的捲軸](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![包含工具提示的捲軸](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     如果您想要保留地圖模式捲動行為和預覽工具提示，但不想看到原始程式碼概觀，可以將 [原始檔概觀] 設定為 [關閉]。
 

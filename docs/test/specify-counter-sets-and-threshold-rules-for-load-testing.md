@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751338"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 
@@ -38,10 +39,10 @@ ms.lasthandoff: 04/26/2018
 
 |工作|相關主題|
 |-----------|-----------------------|
-|**管理負載測試的計數器集合：**建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯 [計數器集合]。 對應計數器集合包含選擇您要從中收集效能資料的電腦集合，並指派一組計數器集合收集每一部個別電腦。 您可以在 [負載測試編輯器] 中管理計數器。|-   [如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**將計數器集合新增至負載測試：**當您使用 [新增負載測試精靈] 建立負載測試時，可以新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 當您建立負載測試之後，您可以使用 [負載測試編輯器] 將新的計數器加入至現有的計數器集合。|-   [如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：新增自訂計數器集合](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**為負載測試指定使用計數器的臨界值規則：**臨界值規則是設定在單獨之效能計數器上的規則，用來監視負載測試期間的系統資源使用狀況。 計數器集合定義包含許多關鍵效能計數器之預先定義的臨界值規則。 負載測試中的臨界值規則會將效能計數器值與常數值或其他效能計數器值做比較。|-   [如何：新增臨界值規則](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**為計數器集合對應的電腦指派易記名稱：**您可以新增電腦標記，讓您將容易辨認的名稱套用至電腦。 這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色，例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。<br /><br /> 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。|-   [如何：將電腦標記新增至計數器集合對應](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**管理負載測試的計數器集合：** 建立負載測試之後，您就可以在 [負載測試編輯器] 中編輯 [計數器集合]。 對應計數器集合包含選擇您要從中收集效能資料的電腦集合，並指派一組計數器集合收集每一部個別電腦。 您可以在 [負載測試編輯器] 中管理計數器。|-   [如何：管理計數器集合](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**將計數器集合新增至負載測試：** 當您使用 [新增負載測試精靈] 建立負載測試時，可以新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 當您建立負載測試之後，您可以使用 [負載測試編輯器] 將新的計數器加入至現有的計數器集合。|-   [如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：新增自訂計數器集合](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**為負載測試指定使用計數器的臨界值規則：** 臨界值規則是設定在單獨之效能計數器上的規則，用來監視負載測試期間的系統資源使用狀況。 計數器集合定義包含許多關鍵效能計數器之預先定義的臨界值規則。 負載測試中的臨界值規則會將效能計數器值與常數值或其他效能計數器值做比較。|-   [如何：新增臨界值規則](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**為計數器集合對應的電腦指派易記名稱：** 您可以新增電腦標記，讓您將容易辨認的名稱套用至電腦。 這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色，例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。<br /><br /> 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。|-   [如何：將電腦標記新增至計數器集合對應](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
 
 ## <a name="use-counter-sets"></a>使用計數器集合
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 共有三種計數器類別：百分比、計數和平均， 例如 CPU 使用比例、SQL Server 鎖定計數和每秒的 IIS 要求。
 
-![負載測試計數器集合](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![負載測試計數器集合](../test/media/loadtestcountersets.png)
 
 執行測試的電腦會報告個別 HTTP 要求的效能資料。 例如，代理程式電腦。 對於要求，您可以監視諸如收到第一個位元組的平均時間、回應時間和每秒要求數等資料。
 

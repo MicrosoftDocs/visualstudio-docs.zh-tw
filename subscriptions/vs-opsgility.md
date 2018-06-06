@@ -9,11 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶所含的 Opsgility 訓�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477624"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Opsgility 權益
 
@@ -52,8 +53,6 @@ ms.lasthandoff: 04/16/2018
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。 
 
 ## <a name="support-resources"></a>支援資源
--  需要 Opsgility 的說明嗎？  請參閱這些資源：
-    - [常見問題集](https://www.opsgility.com/Home/FAQ)
-    - 透過[與我們連絡](https://www.opsgility.com/SupportTicket) \(英文\) 頁面提交支援票證。 
+-  需要 Opsgility 的說明嗎？  透過[與我們連絡](https://www.opsgility.com/SupportTicket) \(英文\) 頁面提交支援票證。 
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://www.visualstudio.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://www.visualstudio.com/support/) 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751230"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖分析虛擬使用者在負載測試期間的行為
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
      **詳細資料圖例面板**
 
-     ![詳細資料圖例面板](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![詳細資料圖例面板](../test/media/ltest_detailslegend.png)
 
 2.  選取或清除與負載測試關聯之錯誤、記錄、測試、搜尋和 ASPX 頁面的核取方塊。
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
      **篩選結果面板**
 
-     ![篩選結果面板](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![篩選結果面板](../test/media/ltest_filterresults.png)
 
 3.  在 [篩選] 結果中，選取或清除下列篩選選項的核取方塊：
 

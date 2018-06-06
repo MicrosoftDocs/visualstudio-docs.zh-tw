@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745626"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
 本文件將示範如何使用影像編輯器來建立基本材質。
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
  下列步驟示範如何建立代表「靶心」目標的材質。當您完成時，材質看起來應該類似下列圖片。 設定影像編輯器使用綠色棋盤式圖樣顯示材質，更能展現出材質中的透明度。
 
- ![以綠色顯示透明度的「靶心」目標](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![透明度以綠色呈現的「準星型」鏢靶](../designers/media/digit-bullseye-texture-in-editor.png)
 
  開始之前，請確定已顯示 [屬性] 視窗。 您可以在工作時，使用 [屬性] 視窗來設定影像大小、變更工具屬性，以及指定色彩。
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  完成「靶心」目標材質。 以下是呈現透明度的最終影像。
 
- ![完整的「靶心」目標材質](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![完成後的「準星型」鏢靶紋理](../designers/media/gfx_image_demo_bullseye.png)
 
  下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。
 

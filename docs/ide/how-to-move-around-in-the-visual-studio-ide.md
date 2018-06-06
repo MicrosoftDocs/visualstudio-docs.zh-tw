@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e78cba542c5a511eed13eedcde2665a832b09ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747127"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中四處移動
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 
 [IDE 瀏覽器] 運作方式十分類似 Windows 應用程式切換器。 其僅可使用快速鍵來存取，而無法透過功能表使用。 您可使用兩個命令存取 [IDE 瀏覽器]\(如下所示)，以依據所需的循環瀏覽順序，循環瀏覽檔案。
 
-![Visual Studio IDE 導覽器](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")
+![Visual Studio IDE 導覽器](../ide/media/vs2015_ide_navigator.png)
 
 `Window.PreviousDocumentWindowNav` 可讓您移至最近存取的檔案，並`Window.NextDocumentWindowNav`可讓您依相反順序移動。 [一般開發設定] 會將 **Shift**+**Alt**+**F7** 指派至 `Window.PreviousDocumentWindowNav`，並將 **Alt**+**F7** 指派至 `Window.NextDocumentWindowNav`。
 

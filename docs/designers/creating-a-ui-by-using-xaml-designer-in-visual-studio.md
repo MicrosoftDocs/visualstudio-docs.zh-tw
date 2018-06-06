@@ -1,6 +1,7 @@
 ---
 title: 在 Visual Studio 中使用 XAML 設計工具建立 UI
 ms.date: 07/17/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9eadc306b0b2f7c53dffc01d27590bc5d4cf4b52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745746"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的 Windows 和 Web 應用程式。 您可以從 [工具箱]  拖曳控制項並在 [屬性]  視窗中設定屬性，藉此建立應用程式的使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。
@@ -33,7 +35,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  在 [設計] 檢視中，含有 *「畫板」* (Artboard) 的視窗是作用中視窗，可做為主要工作介面。 您可以透過它加入或繪製項目，然後修改這些項目，以視覺化方式在您的應用程式中設計頁面。 如需詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。 下圖顯示 [設計] 檢視中的畫板。
 
- ![XAML 設計工具的 [設計] 檢視](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![XAML 設計工具的 [設計] 檢視](../designers/media/xaml_editor_design_view.png)
 
  畫板可提供下列功能：
 
@@ -55,7 +57,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  在 [設計] 檢視中，畫面的左下方區域會提供其他畫板命令，如下所示：
 
- ![設計檢視命令](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![設計檢視命令](../designers/media/xaml_editor_design_controls.png)
 
  這個工具列提供下列命令：
 
@@ -69,7 +71,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  在 [XAML] 檢視中，含有 XAML 編輯器的視窗是作用中視窗，而 XAML 編輯器是您主要的撰寫工具。 可延伸應用程式標記語言 (XAML) 提供宣告式的 XML 架構詞彙來指定應用程式的使用者介面。 [XAML] 檢視包括 IntelliSense、自動格式化、語法反白顯示和標記巡覽。 下圖顯示 [XAML] 檢視：
 
- ![XAML 檢視](../designers/media/xaml_editor.png "xaml_editor")
+ ![[XAML] 檢視](../designers/media/xaml_editor.png)
 
  **分割檢視列**：當 XAML 編輯器位於視窗下方時，分割檢視列就會出現在 [XAML] 檢視的頂端。 分割檢視列可讓您控制 [設計] 檢視和 [XAML] 檢視的相對大小。 您也可以交換檢視的位置 (使用 [交換窗格]  按鈕)，指定要水平或垂直排列檢視，以及是否摺疊任一個檢視。
 
@@ -78,7 +80,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 ## <a name="device-window"></a>[裝置] 視窗
  XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計]  功能表存取 [裝置] 視窗。 看起來如下：
 
- ![[裝置] 視窗](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![[裝置] 視窗](../designers/media/xaml_editor_device_panel.png)
 
  [裝置] 視窗中的可用選項包括：
 
@@ -113,7 +115,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  若要檢視 [文件大綱] 視窗，請在功能表列上依序選擇 [檢視] 、[其他視窗] 、[文件大綱] 。
 
- ![[文件大綱] 視窗](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![文件大綱視窗](../designers/media/xaml_editor_doc_outline.png)
 
  [文件大綱] 視窗中的可用選項包括：
 
@@ -128,7 +130,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 ## <a name="properties-window"></a>屬性視窗
  [屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：
 
- ![[屬性] 視窗](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![屬性視窗](../designers/media/xaml_editor_prop_window.png)
 
  [屬性] 視窗的頂端有各種選項。 您可以使用 [名稱]  方塊，變更目前選取項目的名稱。 在左上角，有一個代表目前選取項目的圖示。 若要依分類或依字母順序排列屬性，請按一下 [排列依據] 清單中的 [分類] 、[名稱]  或 [來源]  。 若要查看控制項的事件清單，請按一下顯示閃電符號的 [事件]  按鈕。 若要搜尋屬性，請在 [搜尋屬性]  方塊中開始輸入屬性的名稱。 在您輸入文字時，[屬性] 視窗會顯示符合搜尋的屬性。 有些屬性可讓您藉由選取向下箭號按鈕來設定進階屬性。 如需使用屬性和處理事件的詳細資訊，請參閱 [快速入門：新增控制項和處理事件](http://go.microsoft.com/fwlink/?LinkID=247983)
 

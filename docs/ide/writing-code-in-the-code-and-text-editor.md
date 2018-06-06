@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572387"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 
@@ -87,6 +88,6 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [Visual Studio 中的 C++ 使用者入門](../ide/quickstart-cpp.md)
+- [Visual Studio 中的 C++ 使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../ide/tutorial-csharp-aspnet-core.md)
 - [Visual Studio 中的 Python 使用者入門](../ide/quickstart-python.md)

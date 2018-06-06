@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548631"
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 
 Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資料，這些資料可協助您偵測應用程式中與記憶體相關的效能問題。
 
@@ -65,7 +66,7 @@ Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資
 |在 [階層互動]  頁面上，將 ADO.NET 呼叫資料加入程式碼剖析執行。|- [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|
 |在 [Windows 事件] 頁面上，指定一或多個要收集取樣資料的 Windows 事件追蹤 (ETW) 事件。|- [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |在 [Windows 計數器]  頁面上，指定將加入程式碼剖析資料為標記的一或多個作業系統效能計數器。|- [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|
-|在 [進階] 頁面上，如果您的應用程式模組使用多個版本，請指定要分析的 .NET Framework 執行階段版本。 預設會分析載入的第一個版本。|- [如何︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|在 [進階] 頁面上，如果您的應用程式模組使用多個版本，請指定要分析的 .NET Framework 執行階段版本。 預設會分析載入的第一個版本。|- [如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>檢測工作
 
@@ -76,10 +77,10 @@ Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資
 |在 [二進位檔]  頁面上，請指定此模組已檢測複本的位置。 根據預設，會將原始二進位碼檔案移到備份資料夾中。|- [如何：重新配置所檢測的二進位檔](../profiling/how-to-relocate-instrumented-binaries.md)|
 |在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |在 [CPU 計數器]  頁面上，指定將加入程式碼剖析資料的一或多個處理器效能計數器。|- [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)|
-|在 [進階] 頁面上，指定您想要的任何其他 VSInstr.exe 選項，例如要包含或排除特定函式的選項。 如需有關 VSInstr 選項的詳細資訊，請參閱 [VSInstr](../profiling/vsinstr.md)|- [如何：指定其他檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
+|在 [進階] 頁面上，指定您想要的任何其他 VSInstr.exe 選項，例如要包含或排除特定函式的選項。 如需有關 VSInstr 選項的詳細資訊，請參閱 [VSInstr](../profiling/vsinstr.md)|- [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>另請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
 [效能工作階段屬性](../profiling/performance-session-properties.md)

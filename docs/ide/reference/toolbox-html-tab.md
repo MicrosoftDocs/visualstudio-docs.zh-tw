@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752692"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 
@@ -33,13 +34,13 @@ ms.lasthandoff: 04/26/2018
 
 **指標**
 
-![ASP.NET Mobile 設計工具 HTML 網頁指標](../../ide/reference/media/vxpointer.gif "vxPointer")
+![ASP.NET Mobile 設計工具 HTML 網頁指標](../../ide/reference/media/vxpointer.gif)
 
 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[工具箱](../../ide/reference/toolbox.md)。
 
 **輸入 (按鈕)**
 
-![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif "vxButton")
+![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif)
 
 插入 `type="button"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Button1"` 表示第一個按鈕、插入 `id="Button2"` 表示第二個按鈕，以此類推。
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (重設)**
 
-![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif)
 
 插入 `type="reset"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Reset1"` 表示第一個重設按鈕、插入 `id="Reset2"` 表示第二個重設按鈕，以此類推。
 
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (送出)**
 
-![HTMLpageToolbarSubmitButton 螢幕擷取畫面](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton 螢幕擷取畫面](../../ide/reference/media/vxsubmit.gif)
 
 插入 `type="submit"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Submit1"` 表示第一個送出按鈕、插入 `id="Submit2"` 表示第二個送出按鈕，以此類推。
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (文字)**
 
-![HTMLpageToolbarTextField 螢幕擷取畫面](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField 螢幕擷取畫面](../../ide/reference/media/vxtextfield.gif)
 
 在文件中，插入 `type="text"` 的 `input` 項目。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="Text1"` 表示第一個文字欄位、插入 `id="Text2"` 表示第二個文字欄位，以此類推。
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (檔案)**
 
-![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif)
 
 在文件中，插入 `type="file"` 的 `input` 項目。 根據預設，插入 `id="File1"` 表示第一個檔案欄位、插入 `id="File2"` 表示第二個檔案欄位，以此類推。
 
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (密碼)**
 
-![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif)
 
 插入 `type="password"` 的 `input` 項目。 根據預設，插入 `id="Password1"` 表示第一個密碼欄位、插入 `id="Password2"` 表示第二個密碼欄位，以此類推。
 
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (核取方塊)**
 
-![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif)
 
 插入 `type="checkbox"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Checkbox1"` 表示第一個核取方塊、插入 `id="Checkbox2"` 表示第二個核取方塊，以此類推。
 
@@ -132,7 +133,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (選項按鈕)**
 
-![VisualStudioHTMLpageRadioButton 螢幕擷取畫面](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif)
 
 插入 `type="radio"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Radio1"` 表示第一個選項按鈕、插入 `id="Radio2"` 表示第二個選項按鈕，以此類推。
 
@@ -144,7 +145,7 @@ ms.lasthandoff: 04/26/2018
 
 **輸入 (隱藏)**
 
-![HTML 網頁隱藏項目](../../ide/reference/media/vxhidden.gif "vxhidden")
+![HTML 網頁隱藏項目](../../ide/reference/media/vxhidden.gif)
 
 插入 `type="hidden"` 的 `input` 項目。 根據預設，插入 `id="Hidden1"` 表示第一個隱藏欄位、插入 `id="Hidden2"` 表示第二個隱藏欄位，以此類推。
 
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 
 **文字區域**
 
-![HTML 網頁工具列文字區域](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![HTML 網頁工具列文字區域](../../ide/reference/media/vxtextarea.gif)
 
 插入 `textarea` 項目。 您可以重新調整文字區域，或使用其捲軸來檢視超出顯示區域的文字。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="textarea1"` 表示第一個文字區域、插入 `id=" textarea 2"` 表示第二個文字區域，以此類推。
 
@@ -171,7 +172,7 @@ ms.lasthandoff: 04/26/2018
 
 **資料表**
 
-![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif)
 
 插入 `table` 項目。
 
@@ -183,7 +184,7 @@ ms.lasthandoff: 04/26/2018
 
 **影像**
 
-![HTML 網頁影像項目](../../ide/reference/media/vximage.gif "vxImage")
+![HTML 網頁影像項目](../../ide/reference/media/vximage.gif)
 
 插入 `img` 項目。 編輯這個項目來指定其 `src` 和其 `alt` 文字。
 
@@ -195,7 +196,7 @@ ms.lasthandoff: 04/26/2018
 
 **選取**
 
-![HTML 網頁工具箱下拉式清單](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![HTML 網頁工具箱下拉式清單](../../ide/reference/media/vxdropdown.gif)
 
 插入下拉式清單 `select` 項目 (不使用 `size` 屬性)。 根據預設，插入 `id="select1"` 表示第一個清單方塊、插入 `id="select2"` 表示第二個清單方塊，以此類推。
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 04/26/2018
 
 **水平尺規**
 
-![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif)
 
 插入 `hr` 項目。 若要增加線條的粗細，請編輯 `size` 屬性。
 
@@ -221,7 +222,7 @@ ms.lasthandoff: 04/26/2018
 
 **Div**
 
-![HTML 網頁標籤](../../ide/reference/media/vxlabel.gif "vxLabel")
+![HTML 網頁標籤](../../ide/reference/media/vxlabel.gif)
 
 插入包含 `ms_positioning="FlowLayout"` 屬性的 `div` 項目。 除了寬度和高度之外，這個項目等同於「流程配置面板」。 若要格式化 `div` 項目內所含的文字，請將 `class="stylename"` 屬性新增至開始標記。
 

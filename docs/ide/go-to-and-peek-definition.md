@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745759"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/26/2018
 
 例如，如果對 <xref:System.Console> 執行 [移至定義] 命令，<xref:System.Console> 的中繼資料就會當做 C# 原始程式碼出現在程式碼編輯器中。 程式碼看起來像其宣告，但未顯示實作。
 
-![中繼資料當做原始碼](../ide/media/metadatasource.png "MetadataSource")
+![中繼資料當做原始碼](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > 當您嘗試對標記為內部的型別或成員執行 [移至定義] 或 [檢視定義] 命令時，Visual Studio 不會將它們的中繼資料顯示為原始程式碼，無論參考的組件是否為 Friend 組件。

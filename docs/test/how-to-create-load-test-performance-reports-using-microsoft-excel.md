@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751529"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報表
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
  下圖是顯示異動 (更新購物車) 速度下降和 (% Processor) 計數器變差之相關性的報告範例。 這指出應用程式的程式碼可能出現問題，而不是資料庫或網路問題，而且是使用 ASP.NET 分析工具診斷的絕佳候選對象。
 
- ![應用程式程式碼中的潛在問題](../test/media/lt_excel.png "LT_Excel")
+ ![應用程式程式碼中的潛在問題](../test/media/lt_excel.png)
 
  產生 Excel 報表的方法包括：在 [負載測試分析器] 中使用工具列的 [建立 Excel 報表] 按鈕，以及在 Excel 中使用 Office 功能區的 [負載測試] 索引標籤中的 [負載測試報告] 選項。
 

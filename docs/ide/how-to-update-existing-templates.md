@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572562"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新現有的範本
 
@@ -72,4 +73,3 @@ Visual Studio 提供可用來更新現有範本的 [匯出範本精靈]：
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [範本參數](../ide/template-parameters.md)
-- [如何：建立入門套件](../ide/how-to-create-starter-kits.md)

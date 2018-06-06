@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751776"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 Microsoft SharePoint 2010 應用程式的隔離單元測試。 模擬器會使用來自 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 隔離架構的[填充碼](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)建立輕量型記憶體內部物件，用於模仿 SharePoint 應用程式開發介面最常見的物件和方法。 沒有模擬 SharePoint 方法或要變更模擬器的預設行為時，則可以建立 Fakes 填充碼提供您想要的結果。
@@ -33,7 +34,7 @@ Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart 範例
  AppointmentsWebPart 會讓您檢視和管理約會的 SharePoint 清單。
 
- ![約會 Web 組件](../test/media/ut_emulators_appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
+ ![約會 Web 組件](../test/media/ut_emulators_appointmentswebpart.png)
 
  在本範例中，我們將測試 Web 組件的兩個方法：
 
@@ -118,7 +119,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 3.  搜尋 `Microsoft.SharePoint.Emulators` 的 [線上] 分類，然後選擇 [安裝]。
 
- ![Sharepoint 模擬器 NuGet 套件](../test/media/ut_emulators_nuget.png "UT_EMULATORS_Nuget")
+ ![SharePoint 模擬器 NuGet 封裝](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> 使用模擬執行測試方法
  安裝此套件會將參考加入您的專案之必要程式庫中。 若要在現有的測試類別中輕鬆使用模擬器，請加入命名空間 `Microsoft.SharePoint.Emulators` 和 `Microsoft.QualityTools.Testing.Emulators`。
@@ -155,7 +156,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  當測試方法執行時，此模擬器執行階段會呼叫 Microsoft Fakes，將程式碼動態插入至 SharePoint 方法，藉此將對這些方法的呼叫轉向至 Microsoft.SharePoint.Fakes.dll 中宣告的委派。 Microsoft.SharePoint.Emulators.dll 會實作模擬方法的委派，仔細模仿實際的 SharePoint 行為。 當測試方法或受測元件呼叫 SharePoint 方法時，產生的行為是模擬的行為。
 
- ![模擬器執行流程](../test/media/ut_emulators_flowchart.png "UT_EMULATORS_FlowChart")
+ ![模擬器執行流程](../test/media/ut_emulators_flowchart.png)
 
 ##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> 建立兩用類別和方法
  若要建立方法，同時用於真正 SharePoint 應用程式開發介面的整合測試與使用模擬器的隔離單元測試，請使用多載建構函式 `SharePointEmulationScope(EmulationMode)` 包裝測試方法程式碼。 `EmulationMode` 列舉的兩個值指定此範圍是否使用模擬器 (`EmulationMode.Enabled`) 或者此範圍是否使用 SharePoint 應用程式開發介面 (`EmulationMode.Passthrough`)。
@@ -266,11 +267,11 @@ namspace MySPAppTests
 
 1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 Microsoft.SharePoint.fakes 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。
 
-     ![方案總管中的 Fakes 資料夾](../test/media/ut_emulators_fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+     ![方案總管中的 Fakes 資料夾](../test/media/ut_emulators_fakesfilefolder.png)
 
 2.  在您安裝 Microsoft SharePoint 模擬器套件之後，以及如果您編輯了 Microsoft.SharePoint.Fakes 檔案，請重建此測試專案至少一次。 建置此專案會在磁碟上專案根資料夾中建立 **FakesAssembly** 資料夾並予以填入。
 
-     ![FakesAssembly 資料夾](../test/media/ut_emulators_fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
+     ![FakesAssembly 資料夾](../test/media/ut_emulators_fakesassemblyfolder.png)
 
 3.  將參考新增至位於 **FakesAssembly** 資料夾中的 **Microsoft.SharePoint.14.0.0.0.Fakes.dll** 組件。
 

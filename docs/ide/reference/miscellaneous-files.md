@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747729"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 您可能想要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器，單獨處理專案或方案中的檔案。 開啟方案時，可以開啟並修改檔案，而不需要將它們新增至方案或專案。 您想要單獨處理稱為其他檔案的容器中檔案。 其他檔案是方案和專案的外部檔案、未納入組建中，而且不能隨附於原始檔控制下的方案。
 
  單獨開啟容器中的檔案因各種原因而十分有用。 您可能有想要在開發專案方案時檢視但不是方案開發之必要項目的檔案。 常見範例包括開發附註或指示、資料庫結構描述和程式碼片段。 此外，您可能想要建立獨立檔案。
 
- ![方案專案](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![方案專案](../../ide/reference/media/projects_solutions_misc.gif)
 
  如果啟用資料夾的選項，方案總管可以顯示檔案的 [其他檔案] 資料夾。 您可以從[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)設定選項。 關閉其他檔案之後，除非同時啟用該其他檔案的選項，否則不會與任何特定方案或專案建立關聯。
 

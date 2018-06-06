@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752303"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：將 .NET Framework 的某個版本設定為目標
 
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/26/2018
 
 1. 在方案總管中開啟您所要變更專案的捷徑功能表，然後選擇 [屬性]。
 
-    ![Visual Studio 方案總管的 [屬性]](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
+    ![Visual Studio [方案總管]、[屬性]](../ide/media/vs_slnexplorer_properties.png)
 
 1. 在 [屬性] 視窗的左欄中，選擇 [應用程式] 索引標籤。
 
-    ![Visual Studio 應用程式、[屬性]、[應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
+    ![Visual Studio 應用程式、[屬性]、[應用程式] 索引標籤](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
     > [!NOTE]
     > 在建立 UWP 應用程式之後，就無法變更 Windows 或 .NET Framework 的目標版本。

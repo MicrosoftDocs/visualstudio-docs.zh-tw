@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750834"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
 **虛擬使用者活動圖**
 
- ![虛擬使用者活動圖](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![虛擬使用者活動圖](../test/media/virtual_actchart.png)
 
  [詳細資料] 檢視中顯示的「虛擬使用者活動圖」可用來以視覺方式分析個別虛擬使用者在負載測試期間的行為。 虛擬使用者活動圖可讓您查看使用者活動模式、負載模式、將失敗或緩慢的測試相互關聯，以及查看其他虛擬使用者活動的要求。 虛擬使用者活動圖也可幫助您決定 CPU 使用量突然增加的問題、每秒要求中降低的情形，以及發生這些狀況時正在執行的測試或頁面。
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **詳細資料圖例面板**
 
- ![詳細資料圖例面板](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![詳細資料圖例面板](../test/media/ltest_detailslegend.png)
 
  詳細資料圖例面板會顯示在虛擬使用者活動圖中。 詳細資料圖例窗格可讓您根據不同準則，篩選出測試、頁面和異動。 例如，您可以從檢視中移除特定測試、移除所有順利完成的測試，或移除因特定因素而失敗的測試。 您也可以移除不具有記錄的所有測試。
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **篩選結果面板**
 
- ![篩選結果面板](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![篩選結果面板](../test/media/ltest_filterresults.png)
 
  篩選結果面板會顯示在「虛擬使用者活動圖」中。 篩選結果面板可篩選下列項目：
 
@@ -54,10 +55,10 @@ ms.lasthandoff: 04/26/2018
 
 |工作|相關主題|
 |-----------|-----------------------|
-|**設定負載測試以使用虛擬使用者活動圖：**您必須先設定負載測試屬性設定，才能執行要檢視其虛擬使用者活動資料的負載測試。|-   [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)|
-|**執行負載測試：**建立負載測試並設定為啟用虛擬使用者活動資料收集之後，您必須執行測試，直到測試完成才能檢視虛擬使用者活動圖。||
-|**檢視其中包含虛擬使用者活動資料的負載測試結果：**建立、設定以及完成執行負載測試之後，您可以使用虛擬使用者活動圖檢視虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**找出負載測試中的效能問題：**您可以使用虛擬使用者活動圖，協助在負載測試中找出效能問題。|-   [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**設定負載測試以使用虛擬使用者活動圖：** 您必須先設定負載測試屬性設定，才能執行要檢視其虛擬使用者活動資料的負載測試。|-   [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)|
+|**執行負載測試：** 建立負載測試並設定為啟用虛擬使用者活動資料收集之後，您必須執行測試，直到測試完成才能檢視虛擬使用者活動圖。||
+|**檢視其中包含虛擬使用者活動資料的負載測試結果：** 建立、設定以及完成執行負載測試之後，您可以使用虛擬使用者活動圖檢視虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**找出負載測試中的效能問題：** 您可以使用虛擬使用者活動圖，協助在負載測試中找出效能問題。|-   [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>另請參閱
 

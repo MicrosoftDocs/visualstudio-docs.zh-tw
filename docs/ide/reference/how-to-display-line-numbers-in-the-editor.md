@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747491"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：顯示編輯器中的行號
 您可以在程式碼中顯示或隱藏行號。
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/22/2018
 
 2.  選取 [行號] 核取方塊。
 
-    ![在編輯器中顯示行號的選項](../../ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")
+    ![在編輯器中顯示行號的選項](../../ide/reference/media/vs_displaylinenumbers.png)
 
 > [!NOTE]
 > 根據您的語言或設定，您可能需要選取 [選項] 對話方塊中的 [顯示所有設定] 核取方塊，才能顯示 [所有語言] 子節點。

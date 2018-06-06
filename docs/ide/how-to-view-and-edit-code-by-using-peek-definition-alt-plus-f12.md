@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746711"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
      下圖顯示名為 `Print()` 之方法的 [查看定義] 視窗：
 
-     ![[查看] 視窗](../ide/media/peekwindow.png "PeekWindow")
+     ![[查看] 視窗](../ide/media/peekwindow.png)
 
      定義視窗會出現在原始檔案的 `printer.Print("Hello World!")` 這一行下方。 視窗不會隱藏原始檔案的任何程式碼。 `printer.Print("Hello World!")` 之後這幾行會出現在定義視窗底下。
 
@@ -43,19 +44,19 @@ ms.lasthandoff: 04/26/2018
 
 如果您已開啟 [查看定義] 視窗，就可以在該視窗中的程式碼上再次呼叫 [查看定義]。 另一個定義視窗隨即開啟。 一組出現在定義視窗索引標籤旁邊的階層連結點，您可以用來在定義視窗之間巡覽。 每個點的工具提示顯示點表示的定義檔檔案名稱和路徑。
 
-   ![[查看] 視窗內的 [查看] 視窗](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![[查看] 視窗內的 [查看] 視窗](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>具有多個結果的查看定義
 
 如果您在擁有多個定義的程式碼上使用 [查看定義] \(例如，部分類別\)，則結果清單會出現在程式碼定義檢視的右邊。 您可以選取清單中的所有結果，顯示它的定義。
 
-   ![來自多個結果的 [查看] 視窗](../ide/media/peekmultiple.png "PeekMultiple")
+   ![來自多個結果的 [查看] 視窗](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>在查看定義視窗中編輯
 
 當您在 [查看定義] 視窗內開始編輯時，您所更改的檔案將以分開的索引標籤呈現在程式碼編輯器上，並且能夠反映您所做過的更改內容。 您可以在 [查看定義] 視窗中繼續進行編譯、取消和儲存變更，並且此索引標籤將繼續反映這些變更。 即使您沒有儲存變更卻關閉了 [查看定義] 視窗，您仍可以在索引標籤進行編譯、取消，並儲存變更，正確地整理您在 [查看定義] 視窗中的停止的地方。
 
-   ![在 [查看] 視窗內編輯](../ide/media/peekedit.png "PeekEdit")
+   ![在 [查看] 視窗內編輯](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>變更查看定義的選項
 

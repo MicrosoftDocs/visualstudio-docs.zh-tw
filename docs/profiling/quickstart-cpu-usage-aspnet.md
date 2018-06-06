@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477284"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (ASP.NET)
 
@@ -49,13 +50,13 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 1. 在方案總管中，開啟 `Models/Data.cs`，然後將下列 `using` 陳述式新增至檔案頂端：
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. 在 Data.cs 中，將下列程式碼：
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -63,7 +64,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
     取代為此程式碼：
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -133,7 +134,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 1. 在方案總管中，開啟 Controller/HomeControllers.cs，並將下列程式碼：
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -144,7 +145,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
     取代為此程式碼：
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();

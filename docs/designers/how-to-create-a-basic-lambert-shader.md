@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748201"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：建立基本 Lambert 著色器
 
@@ -41,13 +42,13 @@ Lambert 光源模型結合環境與定向光源來為 3D 場景中的物件加�
 > [!NOTE]
 > 為了更適當展現此圖中的著色器效果，已使用著色器的 **MaterialDiffuse** 參數來指定橘色。 遊戲或應用程式可以使用這個參數為每個物件提供獨特的色彩值。 如需材質參數的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。
 
- ![著色器圖形和其效果預覽。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")
+ ![著色器圖形及其效果預覽。](../designers/media/digit-lambert-effect-graph.png)
 
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞一節。
 
  下圖顯示本文件中所述套用至 3D 模型的著色器。
 
- ![已套用至模型的 Lambert 光源。](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")
+ ![已套用至模型的 Lambert 光源。](../designers/media/digit-lambert-effect-result.png)
 
  如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 

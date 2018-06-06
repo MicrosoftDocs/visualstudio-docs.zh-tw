@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f745033ecb88fd70de4c7150dc5ae3165ab3c99b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746321"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階材質著色器
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。
 
-![著色器圖形和其效果預覽](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")
+![著色器圖形及其效果預覽](../designers/media/digit-grayscale-effect.png)
 
 某些圖形可對一些著色器提供更佳的預覽。 如需在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)
 

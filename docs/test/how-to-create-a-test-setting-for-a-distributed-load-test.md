@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751815"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 
@@ -74,7 +75,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
      [角色] 頁面隨即顯示。
 
-     ![測試設定角色](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![測試設定角色](../test/media/load_testtestrole.png)
 
 10. 若要從遠端執行測試，或是從遠端執行測試並且從遠端收集資料，請使用 [測試執行方法] 下拉式清單並選取 [遠端執行]。
 
@@ -108,7 +109,7 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
      [資料和診斷] 頁面隨即顯示。
 
-     ![測試設定資料和診斷](../test/media/load_testtest.png "Load_TestTest")
+     ![測試設定資料和診斷](../test/media/load_testtest.png)
 
 18. 在 [資料和診斷] 頁面中，您可以選取角色用來收集資料的「診斷資料配接器」，藉以定義角色的行為。 因此，如果您針對角色啟用了一個或多個資料和診斷配接器，則測試控制器將會選取可用的測試代理程式電腦，根據您針對角色定義的屬性收集指定之資料和診斷配接器的資料。 若要選取您要為每個角色收集的資料和診斷資料配接器，請選取角色。 針對每個角色，根據各項測試的需求，選取診斷資料配接器。 若要設定您已為每個角色選取的診斷資料配接器，請選擇 [設定]。
 
@@ -124,14 +125,14 @@ Visual Studio 的測試設定會儲存在檔案中。 測試設定會定義有�
 
     |診斷資料配接器|在負載測試中使用|相關主題|
     |-----------------------------|-------------------------|----------------------|
-    |**用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy：**此 Proxy 可讓您針對 IntelliTrace 和測試影響診斷資料配接器，收集從用戶端到網頁伺服器之 HTTP 呼叫的相關資訊。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 除非您有特定需要，必須收集測試代理程式電腦的系統資訊，否則不要包含此配接器。 **注意：**我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集大量資料而發生問題。 <br /><br /> 使用負載測試不會收集測試影響資料。||
-    |**IntelliTrace：**您可以設定以記錄檔儲存的特定診斷追蹤資訊。 記錄檔具有 .tdlog 副檔名。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷追蹤的記錄檔會自動附加至此 Bug 中。 記錄檔中收集的資料可縮短重現及診斷程式碼錯誤所需的時間，進而提高偵錯的效能。 使用這個記錄檔，就可以在另一部電腦上重新建立本機工作階段。 這樣可降低無法重現 Bug 的風險。<br /><br /> 如需詳細資訊，請參閱[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![重要圖示](../test/media/vc364f3.gif)<br /><br /> 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集和記錄大量資料而發生問題。 您應該僅在執行時間短，且不會使用許多測試代理程式的負載測試中嘗試使用 IntelliTrace 配接器。|[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**ASP.NET 分析工具：**您可以建立包含 ASP.NET 分析的測試設定，以收集 ASP.NET Web 應用程式的效能資料。|ASP.NET 分析工具診斷資料配接器會分析 Internet Information Services (IIS) 處理序，因此不會針對開發網頁伺服器執行。 若要在負載測試中分析網站，您必須在 IIS 執行所在的電腦上安裝測試代理程式。 測試代理程式不會產生負荷，而是只進行收集的代理程式。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|[如何：使用測試設定來設定 ASP.NET 分析工具以進行負載測試](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**事件記錄檔：**您可以設定測試設定來包含事件記錄檔收集 (該事件記錄檔收集是包含在測試結果中)。||[如何：使用測試設定來設定事件記錄檔收集](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**網路模擬：**您可以使用測試設定指定要對測試加上人為的網路負載。 網路模擬可藉由模擬特定網路連線速度 (如撥號連線)，對電腦的對外通訊產生影響。 **注意：**網路模擬無法用以增加網路連線速度。|負載測試會忽略網路模擬配接器。 因為負載測試會改用負載測試情節的網路混合中指定的設定。<br /><br /> 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
-    |**系統資訊：**測試設定可設定為包含系統資訊診斷和資料收集器執行所在電腦的相關系統資訊。 透過測試設定，系統資訊會指定於測試結果中。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 您可以同時從負載代理程式和待測系統收集系統資訊。|不需任何設定，即可收集這項資訊。|
-    |**測試影響：**您可以收集在測試案例執行時，應用程式程式碼使用了哪些方法的相關資訊。 您可以將這項資訊對照開發人員對應用程式程式碼所做的變更，判斷有哪些測試受到這些開發變更的影響。|負載測試不會收集測試影響資料。||
-    |**視訊錄製器：**您可以在執行自動化測試時，建立桌面工作階段的視訊錄製。 這在檢視自動程式化 UI 測試的使用者動作時可能很有用。 視訊可協助其他小組成員找出難以重現的應用程式問題。 **注意：**遠端執行測試時，除非代理程式以互動式處理序模式執行，否則視訊錄製器將無法運作。|![重要圖示](../test/media/vc364f3.gif) **警告：**不建議使用視訊錄製器配接器進行負載測試。|[如何：使用測試設定在測試期間包含螢幕和聲音錄製](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy：** 此 Proxy 可讓您針對 IntelliTrace 和測試影響診斷資料配接器，收集從用戶端到網頁伺服器之 HTTP 呼叫的相關資訊。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 除非您有特定需要，必須收集測試代理程式電腦的系統資訊，否則不要包含此配接器。 **注意：** 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集大量資料而發生問題。 <br /><br /> 使用負載測試不會收集測試影響資料。||
+    |**IntelliTrace：** 您可以設定以記錄檔儲存的特定診斷追蹤資訊。 記錄檔具有 .tdlog 副檔名。 在您執行測試時，若測試步驟失敗，您可以建立 Bug。 包含診斷追蹤的記錄檔會自動附加至此 Bug 中。 記錄檔中收集的資料可縮短重現及診斷程式碼錯誤所需的時間，進而提高偵錯的效能。 使用這個記錄檔，就可以在另一部電腦上重新建立本機工作階段。 這樣可降低無法重現 Bug 的風險。<br /><br /> 如需詳細資訊，請參閱[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![重要圖示](../test/media/vc364f3.gif)<br /><br /> 我們不建議您在負載測試中使用 IntelliTrace 配接器，因為會因收集和記錄大量資料而發生問題。 您應該僅在執行時間短，且不會使用許多測試代理程式的負載測試中嘗試使用 IntelliTrace 配接器。|[如何：收集 IntelliTrace 資料以協助偵錯困難的問題](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**ASP.NET 分析工具：** 您可以建立包含 ASP.NET 分析的測試設定，以收集 ASP.NET Web 應用程式的效能資料。|ASP.NET 分析工具診斷資料配接器會分析 Internet Information Services (IIS) 處理序，因此不會針對開發網頁伺服器執行。 若要在負載測試中分析網站，您必須在 IIS 執行所在的電腦上安裝測試代理程式。 測試代理程式不會產生負荷，而是只進行收集的代理程式。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|[如何：使用測試設定來設定 ASP.NET 分析工具以進行負載測試](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**事件記錄檔：** 您可以設定測試設定來包含事件記錄檔收集 (該事件記錄檔收集是包含在測試結果中)。||[如何：使用測試設定來設定事件記錄檔收集](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**網路模擬：** 您可以使用測試設定指定要對測試加上人為的網路負載。 網路模擬可藉由模擬特定網路連線速度 (如撥號連線)，對電腦的對外通訊產生影響。 **注意：** 網路模擬無法用以增加網路連線速度。|負載測試會忽略網路模擬配接器。 因為負載測試會改用負載測試情節的網路混合中指定的設定。<br /><br /> 如需詳細資訊，請參閱[指定虛擬網路類型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
+    |**系統資訊：** 測試設定可設定為包含系統資訊診斷和資料收集器執行所在電腦的相關系統資訊。 透過測試設定，系統資訊會指定於測試結果中。|![資訊圖示](../test/media/vc364f4.gif)<br /><br /> 您可以同時從負載代理程式和待測系統收集系統資訊。|不需任何設定，即可收集這項資訊。|
+    |**測試影響：** 您可以收集在測試案例執行時，應用程式程式碼使用了哪些方法的相關資訊。 您可以將這項資訊對照開發人員對應用程式程式碼所做的變更，判斷有哪些測試受到這些開發變更的影響。|負載測試不會收集測試影響資料。||
+    |**視訊錄製器：** 您可以在執行自動化測試時，建立桌面工作階段的視訊錄製。 這在檢視自動程式化 UI 測試的使用者動作時可能很有用。 視訊可協助其他小組成員找出難以重現的應用程式問題。 **注意：** 遠端執行測試時，除非代理程式以互動式處理序模式執行，否則視訊錄製器將無法運作。|![重要圖示](../test/media/vc364f3.gif) **警告：** 不建議使用視訊錄製器配接器進行負載測試。|[如何：使用測試設定在測試期間包含螢幕和聲音錄製](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. 選擇 [部署]。
 

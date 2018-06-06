@@ -9,11 +9,12 @@ description: 了解如何啟用 Microsoft Store 中購買的 Visual Studio 訂�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477271"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>如何啟用從 Microsoft Store 取得的訂用帳戶？
 如果您是透過 Microsoft Store 購買 Visual Studio 訂用帳戶，則可以從付款 [確認頁面] 或購買後您所收到的 [確認電子郵件] 起始啟用步驟。 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/06/2018
 7. 成功登入後，[啟用您的 Visual Studio 訂用帳戶] 視窗即會出現。
 8. 輸入從「付款確認頁面」或「確認電子郵件」取得的產品金鑰資訊，然後按一下 [啟動]。
 
-    ![輸入產品金鑰](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. [[訂用帳戶]](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 頁面上現在應該可以看到訂用帳戶，且您應該可以存取您所有的訂用帳戶權益。 
 
