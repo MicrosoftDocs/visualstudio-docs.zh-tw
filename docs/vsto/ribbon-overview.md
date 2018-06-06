@@ -25,7 +25,7 @@ ms.openlocfilehash: 6f78f55f1f36f23331a9e27228c0afa567429e30
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693016"
 ---
 # <a name="ribbon-overview"></a>功能區概觀

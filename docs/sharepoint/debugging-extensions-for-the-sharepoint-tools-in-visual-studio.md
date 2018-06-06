@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4e2e6f3858833be49caf59d4d53fc1f8a131f10
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765290"
 ---
-# <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯 Visual Studio 中 SharePoint 工具的擴充功能
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯 Visual Studio 中 SharePoint 工具擴充功能
   您可以偵錯在實驗執行個體或規則的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要疑難排解延伸模組的行為，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 如何執行 SharePoint 命令。  
   
-## <a name="debugging-extensions-in-the-experimental-instance-of-visual-studio"></a>在 Visual Studio 的實驗執行個體中的偵錯擴充功能  
+## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>偵錯 Visual Studio 的實驗執行個體中延伸模組
  未經測試的延伸模組所保護的意外損毀 Visual Studio 開發環境，Visual Studio SDK 提供替代的 Visual Studio 執行個體，稱為*實驗執行個體*，可讓您安裝及測試擴充功能。 使用規則的執行個體的 Visual Studio，開發新的延伸模組，但偵錯，並在實驗執行個體中加以執行。 如需詳細資訊，請參閱[實驗執行個體的](/visualstudio/extensibility/the-experimental-instance)。  
   
  如果您使用 VSIX 專案來部署您的擴充功能，而且此 VSIX 專案中方案的啟始專案，Visual Studio 自動安裝，並實驗執行個體中執行擴充功能，當您偵錯您的方案。 啟動專案為專案啟動偵錯包含多個專案的方案時。 如需使用來部署您的擴充功能的 VSIX 專案的詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [逐步解說：在伺服器總管延伸模組中呼叫 SharePoint 用戶端物件模型](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
-## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>規則的執行個體的 Visual Studio 中偵錯擴充功能  
+## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>偵錯規則的執行個體的 Visual Studio 中的擴充功能
  如果您想要偵錯擴充功能專案的 Visual Studio 規則的執行個體中，第一次規則的執行個體中安裝擴充功能。 然後，將偵錯工具附加至第二個 Visual Studio 處理序。 完成之後，您可以移除擴充功能，以便在開發電腦上不再載入。  
   
 #### <a name="to-install-the-extension"></a>安裝擴充功能  
   
 1.  關閉所有 Visual Studio 執行個體。  
   
-2.  在組建輸出資料夾中的擴充功能專案中，開啟.vsix 檔案透過按兩下，或是開啟其捷徑功能表，然後選擇**開啟**:  
+2.  在 建置輸出資料夾中的擴充功能專案中，開啟 *.vsix*檔案透過按兩下，或是開啟其捷徑功能表，然後選擇**開啟**:  
   
 3.  在**Visual Studio 擴充功能安裝程式**對話方塊方塊中，選取您想要安裝擴充功能，再選擇的 Visual Studio 版本**安裝** 按鈕。  
   
-     Visual Studio 會延伸檔案安裝至 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*作者姓名*\\*副檔名*\\*版本*。 這個路徑中的最後三個資料夾都從建構`Author`， `Name`，和`Version`extension.vsixmanifest 檔案延伸模組中的項目。  
+     Visual Studio 會延伸檔案安裝至 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*作者姓名*\\*副檔名*\\*版本*。 這個路徑中的最後三個資料夾都從建構`Author`， `Name`，和`Version`中的項目*extension.vsixmanifest*的延伸模組檔案。  
   
 4.  Visual Studio 安裝擴充功能之後，請選擇**關閉** 按鈕。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  在功能表列上選擇 **偵錯**，**附加至處理序**。  
   
-5.  在**可用的處理序**清單中，選擇 devenv.exe。 此項目是指 Visual Studio; 第二個執行個體這是您要偵錯您的專案擴充功能中的執行個體。  
+5.  在**可用的處理序**清單中，選擇*devenv.exe*。 此項目是指 Visual Studio; 第二個執行個體這是您要偵錯您的專案擴充功能中的執行個體。  
   
 6.  選擇**附加** 按鈕。  
   
@@ -92,8 +93,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  選擇**立即重新啟動**按鈕，以完成解除安裝。  
   
-## <a name="debugging-sharepoint-commands"></a>偵錯 SharePoint 命令  
- 如果您想要偵錯 SharePoint 命令的 SharePoint 工具擴充功能的一部分，您必須將偵錯工具附加至 vssphost4.exe 處理序。 這是執行 SharePoint 命令 64 位元主控件程序。 如需有關 SharePoint 命令和 vssphost4.exe 的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
+## <a name="debug-sharepoint-commands"></a>偵錯 SharePoint 命令
+ 如果您想要偵錯 SharePoint 命令的 SharePoint 工具擴充功能的一部分，您必須將偵錯工具附加*vssphost4.exe*程序。 這是執行 SharePoint 命令 64 位元主控件程序。 如需有關 SharePoint 命令和*vssphost4.exe*，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
   
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>若要將偵錯工具附加至 vssphost4.exe 程序  
   
@@ -101,17 +102,17 @@ ms.lasthandoff: 04/16/2018
   
 2.  在 Visual Studio 中您正在偵錯工具，在功能表列的執行個體，選擇**偵錯**，**附加至處理序**。  
   
-3.  在**可用的處理序**清單中，選擇 vssphost.exe。  
+3.  在**可用的處理序**清單中，選擇*vssphost.exe*。  
   
     > [!NOTE]  
-    >  如果 vssphost.exe 沒有出現在清單中，您必須在您執行擴充功能的 Visual Studio 執行個體中啟動 vssphost4.exe 程序。 一般而言，您藉由執行使 Visual Studio 以連接至 SharePoint 網站，在開發電腦上的動作。 例如，Visual Studio 會啟動 vssphost4.exe 底下展開的站台連線節點 （節點會顯示網站 URL） 時**SharePoint 連接**中的節點**伺服器總管**視窗中，或當您將特定 SharePoint 專案項目，例如**清單執行個體**或**事件接收器**加入 SharePoint 專案項目。  
+    >  如果 vssphost.exe 沒有出現在清單中，您必須啟動*vssphost4.exe*處理序中的 Visual Studio 會執行擴充功能的執行個體。 一般而言，您藉由執行使 Visual Studio 以連接至 SharePoint 網站，在開發電腦上的動作。 例如，Visual Studio 會啟動*vssphost4.exe*展開的站台連線節點 （節點會顯示網站 URL） 下**SharePoint 連接**中的節點**伺服器總管**視窗中，或當您將某些 SharePoint 專案項目，例如**清單執行個體**或**事件接收器**加入 SharePoint 專案項目。  
   
 4.  選擇**附加** 按鈕。  
   
 5.  在 Visual Studio 正在偵錯的執行個體，執行的步驟，才能執行您的命令。  
   
-## <a name="modifying-registry-values-to-help-debug-sharepoint-tools-extensions"></a>修改登錄值，以協助偵錯 SharePoint 工具擴充功能  
- 當您偵錯的 Visual Studio 中的 SharePoint 工具擴充功能時，您可以修改登錄，以協助您疑難排解擴充功能中的值。 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools 機碼下的值存在。 依預設不存在這些值。  
+## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>修改登錄值，以協助偵錯 SharePoint 工具擴充功能
+ 當您偵錯的 Visual Studio 中的 SharePoint 工具擴充功能時，您可以修改登錄，以協助您疑難排解擴充功能中的值。 值存在下**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**索引鍵。 依預設不存在這些值。  
   
  若要疑難排解 SharePoint 工具的任何擴充功能，您可以建立及設定 EnableDiagnostics 值。 下表描述此值。  
   
@@ -123,14 +124,13 @@ ms.lasthandoff: 04/16/2018
   
 |值|描述|  
 |-----------|-----------------|  
-|AttachDebuggerToHostProcess|指定是否要顯示的對話方塊，可讓您將偵錯工具附加至 vssphost4.exe，只要它啟動的 REG_DWORD。 如果由 vssphost.exe 執行您要偵錯命令啟動之後，立即這非常有用，但沒有足夠的時間來執行命令之前，以手動方式附加偵錯工具。 若要顯示的對話方塊中，會呼叫 vssphost4.exe<xref:System.Diagnostics.Debugger.Break%2A>方法啟動時。<br /><br /> 啟用此行為，請將此值設定為 1。 若要關閉此行為，將此值設定為 0，或刪除此值。<br /><br /> 如果您設定此值為 1 時，您可能也要增加 HostProcessStartupTimeout 值，讓您有足夠的時間來附加偵錯工具，Visual Studio 要求 vssphost4.exe 發出信號，指出成功啟動之前。|  
+|AttachDebuggerToHostProcess|指定是否要顯示的對話方塊，可讓您附加至偵錯工具的 REG_DWORD *vssphost4.exe*只要它啟動。 如果由 vssphost.exe 執行您要偵錯命令啟動之後，立即這非常有用，但沒有足夠的時間來執行命令之前，以手動方式附加偵錯工具。 若要顯示對話方塊中， *vssphost4.exe*呼叫<xref:System.Diagnostics.Debugger.Break%2A>方法啟動時。<br /><br /> 啟用此行為，請將此值設定為 1。 若要關閉此行為，將此值設定為 0，或刪除此值。<br /><br /> 如果您設定此值為 1 時，您也可以增加 HostProcessStartupTimeout 值，讓您有足夠的時間來附加偵錯工具，Visual Studio 要求之前*vssphost4.exe*發出信號，指出成功啟動。|  
 |ChannelOperationTimeout|指定的時間，以秒為單位，Visual Studio 執行 SharePoint 命令的 REG_DWORD。 如果命令不會執行的時間，<xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>就會擲回。<br /><br /> 預設為 120 秒。|  
-|HostProcessStartupTimeout|指定的時間，以秒為單位，Visual Studio vssphost4.exe 發出信號，如它的 REG_DWORD 已順利啟動。 如果 vssphost4.exe 不表示成功的開始時間，<xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>就會擲回。<br /><br /> 預設值為 60 秒。|  
-|MaxReceivedMessageSize|指定允許的大小上限，以位元組為單位，Visual Studio 和 vssphost4.exe 之間傳遞的 WCF 訊息的 REG_DWORD。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
-|MaxStringContentLength|REG_DWORD 指定允許的大小上限，單位為位元組的 Visual Studio 和 vssphost4.exe 之間傳遞的字串。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
+|HostProcessStartupTimeout|指定的時間，以秒為單位的 REG_DWORD，Visual Studio 會等到*vssphost4.exe*發出信號，指出成功啟動。 如果*vssphost4.exe*時間，不表示成功開始<xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException>就會擲回。<br /><br /> 預設值為 60 秒。|  
+|MaxReceivedMessageSize|指定允許的大小，以位元組為單位，Visual Studio 之間傳遞的 WCF 訊息的最大的 REG_DWORD 和*vssphost4.exe*。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
+|MaxStringContentLength|指定允許的大小，以位元組為單位，Visual Studio 之間傳遞的字串，最大值的 REG_DWORD 和*vssphost4.exe*。<br /><br /> 預設值為 1048576 個位元組 (1 MB)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [部署 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
-  
+

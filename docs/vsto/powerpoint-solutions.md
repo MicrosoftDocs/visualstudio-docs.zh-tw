@@ -24,7 +24,7 @@ ms.openlocfilehash: c7436bbb7ce904f8c969652e3f4ff0a794116c9c
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692703"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案

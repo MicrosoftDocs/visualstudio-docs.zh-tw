@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 185876ec788bc3fcba917df77a7044a395bc8375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766610"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元加入至搜尋方法
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何： 將篩選描述元加入至搜尋方法
   篩選描述元可讓取用者的模型之前，它們執行，將值傳遞給方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  常見的案例之一是在 SharePoint 中的使用者想要擷取的外部內容類型符合某些準則的執行個體。 您可以將篩選描述元加入至搜尋方法，以支援此案例中。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方法詳細資料**視窗中，選擇參數的類型描述元。  
   
-3.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
+3.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。  
   
 4.  在**屬性**視窗中，將**型別名稱**適用於篩選的資料類型的屬性。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
      下方會出現新的篩選描述元**篩選描述元**節點。  
   
-7.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
+7.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。  
   
 8.  在**屬性**視窗中，選擇**類型**屬性。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

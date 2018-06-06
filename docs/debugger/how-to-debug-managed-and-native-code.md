@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764549"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>教學課程： 在 Visual Studio 中的 managed 和原生程式碼偵錯
 
@@ -39,7 +40,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
 
 * 您必須已安裝的 Visual Studio 和**的 c + + 桌面應用程式開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
@@ -73,7 +74,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
 
 1. 選擇您的應用程式程式碼的範本。
 
-    適用於.NET Framework 中**新專案**對話方塊方塊中，選擇**Visual C#**，**的傳統 Windows 桌面**從已安裝的範本 區段中，然後在中間窗格中選取**主控台應用程式 (.NET Framework)**。
+    適用於.NET Framework 中**新專案**對話方塊方塊中，選擇**Visual C#**， **Windows 桌面**從已安裝的範本 區段中，然後在中間窗格選取**主控台應用程式 (.NET Framework)**。
 
     適用於.NET Core 中**新專案**對話方塊方塊中，選擇**Visual C#**， **.NET Core**從已安裝的範本 區段中，然後在中間窗格中選取**主控台應用程式 (.NET Core)**。
 
@@ -119,7 +120,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
     ```
     "nativeDebugging": true
     ```
-    
+
     因此，比方說，您的檔案可能看起來如下所示：
-    
+
     ```
     {
       "profiles": {

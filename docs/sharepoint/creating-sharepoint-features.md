@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692011"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766385"
 ---
-# <a name="creating-sharepoint-features"></a>建立 SharePoint 功能
+# <a name="create-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能來分組相關更容易進行部署的 SharePoint 專案項目。 您可以建立功能、 設定範圍，及使用 SharePoint 功能設計工具，將其他功能標示為相依性。 在設計工具也會產生資訊清單，其中會描述每項功能的 XML 檔案。  
   
 ## <a name="add-features-to-the-sharepoint-solution"></a>將功能加入至 SharePoint 方案

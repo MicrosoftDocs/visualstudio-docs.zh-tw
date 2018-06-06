@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41d36dc5c7f4f2d904a69d9053ed0f669b1a86c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a64da6c7289aa8af67436ca38404ef3d050b5ab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768101"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：將項目新增至 SharePoint 專案
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>如何： 將項目加入 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每個包含多個 SharePoint 專案項目。 您開啟或建立 SharePoint 方案之後，您可以加入新的或現有的項目這些專案。 例如，新的工作流程專案會隨附預設表單，名為 default.aspx 中，但您可以取代為新的或不同的形式，該表單，或加入另一種 ASPX 形式。  
   
 ### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>若要將新的專案項目加入至 SharePoint 方案  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方案總管 中**，選擇專案節點。  
   
-3.  在功能表列上選擇 [**專案**，**加入新項目**顯示**加入新項目**] 對話方塊。  
+3.  在功能表列上選擇 [**專案** > **加入新項目**顯示**加入新項目**] 對話方塊。  
   
 4.  在**已安裝的範本**清單中，展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
@@ -46,12 +47,11 @@ ms.lasthandoff: 04/16/2018
   
 2.  在**方案總管 中**，選擇專案節點。  
   
-3.  在功能表列上選擇 [**專案**，**加入現有項目**顯示**加入現有項目**] 對話方塊。  
+3.  在功能表列上選擇 [**專案** > **加入現有項目**顯示**加入現有項目**] 對話方塊。  
   
 4.  瀏覽至包含您要新增、 加以選擇，然後選擇的項目資料夾**新增** 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

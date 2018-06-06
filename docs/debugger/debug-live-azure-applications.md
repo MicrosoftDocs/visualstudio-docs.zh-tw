@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766320"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
 您感興趣的程式碼執行時，快照集偵錯工具會擷取在實際執行應用程式的快照。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
 Snappoints 和 logpoints 類似於中斷點，但不同於中斷點、 snappoints 不停止應用程式叫用時。 通常，擷取快照時 snappoint 需要大約 10-20 毫秒為單位。 
-
-快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
-
-- 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
-- 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
-
-此外，快照集偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 或更高版本的版本和基本或更高版本的應用程式服務方案。 
 
 在本教學課程中，您將進行下列作業：
 
@@ -40,16 +34,27 @@ Snappoints 和 logpoints 類似於中斷點，但不同於中斷點、 snappoint
 > * 設定 snappoint 與檢視快照集
 > * 設定 logpoint
 
-## <a name="start-the-snapshot-debugger"></a>啟動快照集偵錯工具
+## <a name="prerequisites"></a>必要條件
 
-1. 安裝[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/)或更新版本。 如果您要從舊版的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並檢查 ASP.NET 及 web 程式開發工作負載中的快照集偵錯工具元件。
+* 快照集偵錯工具只適用於 Visual Studio 2017 Enterprise 15.5 或更新版本與版本**ASP.NET 及 web 程式開發工作負載**。 針對 ASP.NET Core，您也需要。**NET 核心開發**安裝的工作負載。
 
-2. 開啟您想要的快照集進行偵錯的專案。 
+    如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您要從舊版的 Visual Studio 2017 安裝更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 及 web 程式開發工作負載**。
+
+* 基本或更高版本的 Azure 應用程式服務方案。
+
+* 快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
+
+    * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
+    * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>開啟您的專案，並啟動快照集偵錯工具
+
+1. 開啟您想要的快照集進行偵錯的專案。 
 
     > [!IMPORTANT] 
     > 設為快照集偵錯，您需要開啟**相同版本的原始程式碼**發行到您的 Azure 應用程式服務。 
 
-3. 在 Cloud Explorer 中 (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure 應用程式服務，然後選取**附加偵錯工具的快照集**。
+1. 在 Cloud Explorer 中 (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure 應用程式服務，然後選取**附加偵錯工具的快照集**。
 
    ![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png)
 

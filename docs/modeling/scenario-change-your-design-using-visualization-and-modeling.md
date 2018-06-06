@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750164"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>情節：使用視覺化和模型功能變更設計
 
@@ -150,13 +151,13 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
  例如，開發人員建立了 Code Map。 接著調整其範圍以便將焦點放在新情節會影響的區域。 這些區域在地圖上會處於選取及醒目提示的狀態：
 
- ![命名空間相依性圖形](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![命名空間相依性圖形](../modeling/media/namespace_reviewsystem.png)
 
  **命名空間 Code Map**
 
  開發人員展開選取的命名空間以查看其類別、方法及關聯性：
 
- ![展開的命名空間相依性圖形](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![展開的命名空間相依性圖形](../modeling/media/dep_reviewsystem.png)
 
  **展開的命名空間 Code Map，包含可見的跨群組連結**
 
@@ -177,7 +178,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
  例如，下列相依性圖表描述圖層與每個圖層相關聯的成品數目之間的相依性：
 
- ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
 
  **相依性圖表**
 
@@ -277,19 +278,19 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 下列地圖顯示 PaymentProcessing 類別及 Dinner Now 系統其他部分之間的相依性，其以選取狀態顯示：
 
-![Dinner Now 付款系統相依性圖形](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Dinner Now 付款系統相依性圖形](../modeling/media/dep_dnpayment.png)
 
 **Dinner Now 付款系統的 Code Map**
 
 開發人員展開 PaymentProcessing 類別並選取其成員以探索地圖，進而查看可能受影響的區域。
 
-![PaymentProcessing 和相依性內部的方法](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![PaymentProcessing 和相依性內部的方法](../modeling/media/depgraph_expandeddn.png)
 
 **PaymentProcessing 類別內部方法及其相依性**
 
 他們針對 Lucerne 付款系統產生下列地圖以查看其類別、方法與相依性。 小組發現 Lucerne 系統可能也需要處理，以與 Dinner Now 系統其他部分互動：
 
-![Lucerne 付款系統相依性圖形](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Lucerne 付款系統相依性圖形](../modeling/media/depgraph_lucernepay.png)
 
 **Lucerne 付款系統的 Code Map**
 
@@ -297,7 +298,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
 在重新組織程式碼之後，小組產生新的 Code Map 來查看已更新的結構及關聯性：
 
-![已重新組織程式碼的相依性圖形](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![包含重組程式碼的相依性圖形](../modeling/media/depgraph_integrated.png)
 
 **程式碼已重新組織過的 Code Map**
 
@@ -338,7 +339,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
  為了協助 Lucerne 描述及討論參與「處理付款」使用案例的實體，他們繪製了下列類別圖表：
 
- ![處理付款 」 實體類別圖表上的](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![類別圖表上的「處理付款」實體](../modeling/media/uml_payentities.png)
 
  **類別圖表上的「處理付款」實體**
 
@@ -346,7 +347,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
  在開發期間，Lucerne 使用下列類別圖表來描述及討論每個類別的詳細資料：
 
- ![處理付款 」 實體詳細資料在類別圖表上的](../modeling/media/uml_payment.png "UML_Payment")
+ ![類別圖表上的「處理付款」實體詳細資料](../modeling/media/uml_payment.png)
 
  **類別圖表上的「處理付款」詳細資料**
 
@@ -407,7 +408,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
  若要讓程式碼與設計一致，Dinner Now 及 Lucerne 會使用下列相依性圖表來驗證演變的程式碼：
 
- ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![整合式的付款系統的相依性圖表](../modeling/media/layer_integrated_dnlucerne.png)
 
  **描述 Dinner now 與 Lucerne 整合的相依性圖表**
 
@@ -417,13 +418,13 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 
  下列 Code Map 顯示 Dinner Now 及 PaymentApprover 之間的新呼叫：
 
- ![與整合的系統更新的相依性圖形](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![包含已整合之系統的更新相依性圖形](../modeling/media/depgraph_intsystem.png)
 
  **內含已更新方法呼叫的 Code Map**
 
  在確定系統如預期運作之後，Dinner Now 會將 PaymentProcessing 程式碼註解化。 圖層驗證報表結果無誤，且產生的 Code Map 顯示沒有任何 PaymentProcessing 相依性存在：
 
- ![未含 PaymentProcessing 的相依性圖形](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![沒有 PaymentProcessing 的相依性圖形](../modeling/media/depgraph_nomore.png)
 
  **未含 PaymentProcessing 的 Code Map**
 

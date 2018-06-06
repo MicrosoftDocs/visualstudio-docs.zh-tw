@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747387"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 您可以透過將資料繫結至控制項，對應用程式的使用者顯示資料。 您可以建立這些資料繫結控制項項目從**資料來源**視窗拖曳到設計介面或在 Visual Studio 中的介面上的控制項。
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="data-sources-window"></a>資料來源視窗
  資料來源可以是您的專案中的項目**資料來源**視窗。 此視窗是可見的或從存取**檢視**時表單的設計介面是您的專案中的現用視窗的功能表。 您可以在建立控制項繫結至基礎資料中，這個視窗拖曳項目，您也可以設定資料來源，以滑鼠右鍵按一下。
 
- ![資料來源視窗](../data-tools/media/raddata-data-sources-window.png "raddata 資料來源視窗")
+ ![資料來源視窗](../data-tools/media/raddata-data-sources-window.png)
 
  會出現在每種資料類型**資料來源**視窗中，預設會建立控制項時，您將項目拖曳至設計工具。 拖曳的項目之前**資料來源**視窗中，您可以變更將會建立的控制項。 如需詳細資訊，請參閱[設定要從資料來源視窗拖曳時建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 

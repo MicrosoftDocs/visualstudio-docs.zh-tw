@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690922"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747036"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中加入資料表
 您可以使用 Visual Studio 建立及更新 SQL Server Express LocalDB 中的本機資料庫檔案。 您也可以藉由執行 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。 本主題中，我們將建立的.mdf 檔案，並使用資料表設計工具中加入資料表和索引鍵。
@@ -36,7 +36,7 @@ ms.locfileid: "34690922"
 
 3.  在項目範本清單中，向下捲動並選取**服務架構資料庫**。
 
-     ![項目範本對話方塊](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![項目範本對話方塊](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。
 
@@ -95,7 +95,7 @@ ms.locfileid: "34690922"
 
     您應該會看到類似下面的內容：
 
-    ![資料表設計工具](../data-tools/media/raddata-table-designer.png "raddata 資料表設計工具")
+    ![資料表設計工具](../data-tools/media/raddata-table-designer.png)
 
 7.  在左上角的**資料表設計工具**，選取**更新** 按鈕。
 
@@ -130,7 +130,7 @@ ms.locfileid: "34690922"
 ### <a name="to-create-a-foreign-key"></a>若要建立外部索引鍵
 1.  在方格右側內容窗格中，開啟捷徑功能表**外部索引鍵**，然後選取**加入新的外部索引鍵**，如下圖所示。
 
-     ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png "ForeignKey")
+     ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png)
 
 2.  在文字方塊中取代**Customers**與`Customers`。
 

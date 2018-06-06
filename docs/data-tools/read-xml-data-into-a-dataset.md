@@ -1,5 +1,5 @@
 ---
-title: XML 資料讀入資料集
+title: 將 XML 資料讀入資料集
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745932"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>XML 資料讀入資料集
+# <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可以建立 Windows 應用程式，可將 XML 資料載入資料集。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。
 
  這個逐步解說包含五個主要步驟：
@@ -53,7 +54,7 @@ ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 

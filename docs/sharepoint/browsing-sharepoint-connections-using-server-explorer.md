@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691413"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765852"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>使用 [伺服器總管] 的瀏覽 SharePoint 連接
-  您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 網站元件，例如清單定義和內容類型，會出現在節點名為**SharePoint 連接**的樹狀檢視中**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視**，**伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>使用伺服器總管瀏覽 SharePoint 連線
+  您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 網站元件，例如清單定義和內容類型，會出現在節點名為**SharePoint 連接**的樹狀檢視中**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視** > **伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。  
   
 > [!IMPORTANT]  
 >  若要瀏覽 SharePoint 網站，您必須是 SharePoint 網站集合的系統管理員，同時必須以本機電腦的系統管理員身分執行 Visual Studio。 否則，網站會出現在**伺服器總管**，但是您無法展開其節點。 若要確認您是網站集合的系統管理員，請開啟站台在 web 瀏覽器中開啟**網站動作**功能表上，選擇**網站權限**，然後在**權限： 小組站台**頁面上，選擇**網站集合管理員**命令**管理**功能區上的群組。 如果您是網站集合管理員，您的名稱會出現在文字方塊中。 如果**網站集合管理員**命令未出現功能區上的管理群組中，您不是管理員網站集合，您必須向網站管理員取得適當的權限。  

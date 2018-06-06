@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748930"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -55,11 +56,11 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="example"></a> DSL 定義範例
  這是本主題中的範例如 DslDefinition.dsl 的主要部分：
 
- ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png)
 
  此模型是此 DSL 的執行個體：
 
- ![都鐸王朝家譜模型](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![都鐸王朝家譜模型](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>參考和命名空間
  若要執行本主題中的程式碼，您應該參考：
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  DSL，在網域模型項目，它代表的概念，例如人或歌曲，則是分開的圖形元素，代表圖表上看到的內容項目。 網域模型項目儲存的重要屬性和關聯性的概念。 圖形元素儲存大小、 位置和色彩在圖表上的物件的檢視以及其元件部分的配置。
 
 ### <a name="presentation-elements"></a>簡報項目
- ![基底的圖案和項目類型的類別圖表](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![基本圖案和項目類型的類別圖表](../modeling/media/dslshapesandelements.png)
 
  在 DSL 定義中，您指定每個項目會建立衍生自下列標準類別的其中一個類別。
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  圖形、 連接器和圖表會的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>和即時存放區中。 因此，您必須進行這些變更只在交易內。 如需詳細資訊，請參閱[How to： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ##  <a name="docdata"></a> 文件檢視和文件資料
- ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>儲存資料分割
  當載入模型時，同時載入隨附的圖表。 一般而言，模型載入 Store.DefaultPartition，而且圖表內容載入至另一個磁碟分割。 通常，每個資料分割的內容會載入，並儲存至個別檔案。

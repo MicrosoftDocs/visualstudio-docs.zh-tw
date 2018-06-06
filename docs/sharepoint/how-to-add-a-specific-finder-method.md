@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767646"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>如何：加入特定搜尋方法
+# <a name="how-to-add-a-specific-finder-method"></a>如何： 加入特定搜尋方法
   您可以藉由建立傳回單一實體執行個體*特定搜尋工具*方法。 在使用者選擇商務資料 web 組件或外部的清單中的實體時，商務資料連線 (BDC) 服務會執行特定搜尋工具方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-### <a name="to-create-a-specific-finder-method"></a>若要建立特定搜尋工具方法  
+### <a name="to-create-a-specific-finder-method"></a>若要建立特定搜尋方法
   
-1.  在 BDC 設計工具中，選擇 [實體]。  
+1.  在**BDC 設計工具**，選擇實體。  
   
-     如需如何將實體加入至 BDC 設計工具，Visual Studio 中的資訊，請參閱[How to： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+     如需如何新增實體至**BDC 設計工具**在 Visual Studio 中，請參閱[How to： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
-2.  在功能表列上選擇 **檢視**，**其他視窗**， **BDC 方法詳細資料**。  
+2.  在功能表列上選擇 **檢視** > **其他視窗**， **BDC 方法詳細資料**。  
   
      **BDC 方法詳細資料**視窗隨即開啟。 如需該視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

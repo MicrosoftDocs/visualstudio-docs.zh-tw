@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f59f5e1b31baf9f731f58c9f21163c2a54f2a238
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766915"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>如何：將實體加入至模型
+# <a name="how-to-add-an-entity-to-a-model"></a>如何： 將實體加入至模型
   若要建立實體時，將 Visual Studio 的實體控制項**工具箱**商務資料連線 (BDC) 設計工具上。  
   
 ### <a name="to-add-an-entity-to-the-model"></a>若要將實體加入至模型  
@@ -51,11 +52,11 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [如何： 加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
  [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
  [如何： 加入 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
-  
+ 

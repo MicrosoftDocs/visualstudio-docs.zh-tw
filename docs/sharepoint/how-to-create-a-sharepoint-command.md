@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbfaeba966a2608f67ff63b0de39f13669a7169f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767659"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>如何：建立 SharePoint 命令
+# <a name="how-to-create-a-sharepoint-command"></a>如何： 建立 SharePoint 命令
   如果您想要使用伺服器物件模型中的 SharePoint 工具擴充功能，您必須建立自訂*SharePoint 命令*來呼叫 API。 您可以直接呼叫伺服器物件模型的組件中定義 SharePoint 命令。  
   
  如需有關 SharePoint 命令的用途的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -77,11 +78,10 @@ ms.lasthandoff: 04/16/2018
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>部署命令  
- 若要部署命令，包括命令組件在相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]與延伸模組組件，以使用命令的擴充功能 (VSIX) 封裝。 您也必須加入一個項目命令中的組件 extension.vsixmanifest 檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+ 若要部署命令，包括命令組件在相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]延伸模組 (*vsix*) 與延伸模組組件，以使用命令的封裝。 您也必須加入一個項目命令中的組件 extension.vsixmanifest 檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [如何： 執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [逐步解說：擴充伺服器總管以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
   

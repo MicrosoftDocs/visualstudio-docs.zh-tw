@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dafa11c17968eb5468ecd4eff462ff9474ce5131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767438"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝總管在套件中新增與移除功能和項目
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何： 新增與移除功能和項目加入封裝時使用 [封裝總管]
   若要設定套件以部署 SharePoint 項目和功能，您可以使用 [封裝總管] 中。 您可以調整的 SharePoint 專案項目和功能.wsp 檔案內。  
   
  或者，您可以使用封裝設計工具來檢視和重新排列的功能變更的啟動順序。 如需詳細資訊，請參閱[如何： 加入和移除使用封裝設計工具的功能和封裝的項目](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-open-the-packaging-explorer"></a>若要開啟 [封裝總管]  
   
-1.  在功能表列上選擇 **檢視**，**其他視窗**，**封裝總管**。  
+1.  在功能表列上選擇 **檢視** > **其他視窗** > **封裝總管**。  
   
      **封裝總管**會出現在**工具箱**。  
   
 ## <a name="adding-a-feature-to-a-package"></a>將功能加入封裝  
  您可以使用 [封裝總管] 中，將新的和現有功能加入封裝中。  
   
-#### <a name="to-add-a-sharepoint-feature"></a>若要加入 SharePoint 功能  
+#### <a name="to-add-a-sharepoint-feature"></a>若要加入 SharePoint 功能
   
 1.  開啟**封裝總管**，開啟專案的捷徑功能表，然後選擇**加入功能**。  
   
@@ -60,13 +61,12 @@ ms.lasthandoff: 04/16/2018
 ## <a name="validating-a-feature-or-package"></a>驗證功能或封裝  
  您可以識別潛在問題的 SharePoint 功能和封裝驗證的檔案。 警告和錯誤會顯示在輸出視窗 和 錯誤清單 視窗中。  
   
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要驗證的 SharePoint 功能或封裝  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要驗證的 SharePoint 功能或封裝
   
 1.  開啟**封裝總管**。  
   
 2.  功能或封裝中，開啟捷徑功能表，然後選擇**驗證**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

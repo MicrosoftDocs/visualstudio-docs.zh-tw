@@ -1,5 +1,5 @@
 ---
-title: 建立及設定 TableAdapters
+title: 建立和設定 TableAdapter
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748953"
 ---
-# <a name="create-and-configure-tableadapters"></a>建立及設定 TableAdapters
+# <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 Tableadapter 會提供您的應用程式和資料庫之間的通訊。 這些連接到資料庫、 執行的查詢或預存程序，並傳回新的資料資料表，或將現有的填滿<xref:System.Data.DataTable>傳回資料。 Tableadapter 也可以從資料庫應用程式傳送更新的資料。
 
 Tableadapter 會為您建立的當您執行下列動作之一：
@@ -40,7 +41,7 @@ Tableadapter 的簡介，請參閱[填滿資料集，使用 Tableadapter](../dat
 ## <a name="use-the-tableadapter-configuration-wizard"></a>使用 TableAdapter 組態精靈
 執行**TableAdapter 組態精靈**來建立或編輯 Tableadapter 以及與其關聯的 Datatable。 您可以設定現有的 TableAdapter，以滑鼠右鍵按一下它在**Dataset 設計工具**。
 
-![raddata 資料表配接器組態精靈](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata 資料表配接器組態精靈")
+![raddata 資料表配接器組態精靈](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 如果您從工具箱拖曳新的 TableAdapter 時**Dataset 設計工具**焦點放精靈隨即啟動，並且提示您指定的資料來源的 TableAdapter 應該連接至處於。 在下一個頁面上，精靈會要求通訊使用資料庫時，SQL 陳述式或預存程序應該使用何種命令。 （將不會出現，如果您要設定已經與資料來源相關聯的 TableAdapter。）
 
@@ -63,7 +64,7 @@ Tableadapter 的簡介，請參閱[填滿資料集，使用 Tableadapter](../dat
 ## <a name="configure-a-tableadapters-fill-method"></a>設定 TableAdapter 的 Fill 方法
 有時您可能想要變更的 TableAdapter 資料表的結構描述。 若要這樣做，您可以修改 TableAdapter 的主要`Fill`方法。 Tableadapter 會使用主要建立`Fill`定義相關聯的資料表的結構描述的方法。 主要`Fill`方法為基礎的查詢或預存程序輸入當您最初設定 TableAdapter。 它是第一個 （最上層） 方法，在 DataSet 設計工具中的資料表。
 
-![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif)
 
 任何您所做變更至 TableAdapter 的主要`Fill`方法會反映在相關聯的資料資料表的結構描述。 例如，從主查詢中移除資料行`Fill`方法也會移除資料行相關聯的資料表。 此外，移除資料行，從主要`Fill`方法會移除資料行的任何其他查詢的 tableadapter。
 

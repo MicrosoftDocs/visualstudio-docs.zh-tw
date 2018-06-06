@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767773"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>如何：新增與移除其他組件
+# <a name="how-to-add-and-remove-additional-assemblies"></a>如何： 加入和移除其他組件
   如果 SharePoint 套件相依於其他功能或資料的組件，您可以加入組件加入您的方案套件 (.wsp)。 如此一來，在 SharePoint 伺服器可確保套件安裝的自訂組件。  
   
  您也可以新增和變更的安全控制和組件相關聯的類別資源檔案。  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  選擇 Delete 鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
  [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [如何：新增與移除 SharePoint 功能中的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

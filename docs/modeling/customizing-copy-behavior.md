@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748370"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK 建立之網域指定的語言 (DSL) 中，您可以變更使用者複製及貼上項目時所發生的情況。
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
  此規則會以遞迴方式套用至複製的項目和連結。
 
- ![複製並貼上項目](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![複製及貼上的項目](../modeling/media/dslcopypastedefault.png)
 
  複製的項目和連結會經過序列化並儲存在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) 中，再置於 [剪貼簿] 上。
 
@@ -217,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ##  <a name="customizeLinks"></a> 自訂連結複製行為
  當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 DSL 定義中，選取 [在關聯性和設定屬性] 視窗中的某一端的角色**傳播複製**值。
 
- ![網域角色的 propagates Copy 屬性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![網域角色的 Propagates Copy 屬性](../modeling/media/dslpropagatescopy.png)
 
  共有三個值：
 
@@ -227,7 +228,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 -   將複本傳播至連結和相反角色扮演者 - 複製的群組包含連結另一端的項目複本。
 
- ![使用 PropagateCopyToLinkOnly 複製的](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![使用 PropagateCopyToLinkOnly 複製的效用](../modeling/media/dslpropagatecopy.png)
 
  您所做的變更會影響複製的項目和影像。
 
@@ -237,9 +238,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 > [!TIP]
 >  如需使用程式碼以自訂模型的詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
- ![複製作業的順序圖表](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![複製作業的順序圖表](../modeling/media/dslcopyseqdiagram.png)
 
- ![貼上作業的順序圖表](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![貼上作業的順序圖表](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>定義自己的 ElementOperations
 

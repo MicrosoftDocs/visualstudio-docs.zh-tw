@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745694"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
 TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定的預存程序的資料庫中的資料。 也可以執行 Tableadapter 加入、 更新和刪除的資料庫來保存您對資料集的變更。 您也可以發出與任何特定資料表無關的通用命令。
@@ -49,7 +50,7 @@ TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定�
 ## <a name="tableadapter-overview"></a>TableAdapter 概觀
  Tableadapter 會連接到資料庫、 執行的查詢或預存程序，並使用傳回的資料填入其 DataTable 設計工具產生的元件。 Tableadapter 也會傳送更新的資料從您的應用程式資料庫。 您可以執行您希望在 TableAdapter 上，只要它們會傳回包含符合與 TableAdapter 相關聯之資料表的結構描述的查詢。 下圖顯示 Tableadapter 資料庫和記憶體中的其他物件之間的互動：
 
- ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
  雖然 Tableadapter 專搭配**Dataset 設計工具**，TableAdapter 類別不會產生為巢狀類別的<xref:System.Data.DataSet>。 它們位於專屬於每個資料集的個別命名空間中。 例如，如果您擁有名為的資料集`NorthwindDataSet`，相關聯的 Tableadapter<xref:System.Data.DataTable>中`NorthwindDataSet`就會產生`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如: 
 
@@ -63,7 +64,7 @@ TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定�
  TableAdapter 的更新功能會相依於多少資訊會顯示在 [TableAdapter 精靈] 中的主查詢。 例如，設定為擷取值，從多個資料表 （聯結）、 純量值、 檢視或彙總函式的結果的 Tableadapter 不會一開始建立將更新送回基礎資料庫的能力。 不過，您可以設定的 INSERT、 UPDATE 和 DELETE 命令，以手動方式在**屬性**視窗。
 
 ## <a name="tableadapter-queries"></a>TableAdapter 查詢
- ![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif)
 
  Tableadapter 可以包含多個查詢，以填滿其相關聯的資料表格。 只要每個查詢會傳回相同的結構描述為其相關聯的資料的資料表符合的資料，您可以定義您的應用程式要求時，最多 TableAdapter 查詢。 此功能可讓您載入不同的結果，根據不同準則 TableAdapter。
 

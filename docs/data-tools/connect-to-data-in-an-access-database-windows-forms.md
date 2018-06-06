@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746812"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連接到 Access 資料庫 (Windows Form) 中的資料
 您可以使用 Visual Studio 連接至 Access 資料庫 （.mdf 檔案或.accdb 檔案）。 定義連接之後，資料會出現在**資料來源**視窗。 您可以從這個視窗將資料表或檢視表拖曳至表單上。
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**檢視**功能表上，選取**其他視窗** > **資料來源**。
 
-     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 
 3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 9. 回到**加入連接**對話方塊中，選取**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**從**OLE DB 提供者**下拉式清單。
 
-     ![OLE DB 提供者 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB 提供者 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  如果您沒有看到**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**在 OLE DB 提供者 下拉式清單，您可能需要安裝[2007 Office System 驅動程式： 資料連線元件](https://www.microsoft.com/download/confirmation.aspx?id=23734)。
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**檢視**功能表上，選取**其他視窗** > **資料來源**。
 
-     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 
 3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  在**資料庫檔名**，指定您想要連接到，然後再選取.mdb 檔案的名稱與路徑**確定**。
 
-     ![加入連接 Access 資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![加入連線存取資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. 選取**下一步**上**選擇資料連線**頁面。
 

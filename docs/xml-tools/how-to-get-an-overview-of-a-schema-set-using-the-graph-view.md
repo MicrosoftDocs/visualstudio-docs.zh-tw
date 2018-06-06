@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751893"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何： 取得設定使用圖表檢視的結構描述的概觀
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/25/2018
 
 6.  選取**結構描述集**節點**XML 結構描述總管**並拖曳至 [圖形] 檢視的設計介面的節點。 您會看見所有的全域節點，以及連接具有關聯性之節點的箭號。
 
-     ![圖形檢視](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![圖形檢視](../xml-tools/media/relationshipingraphview.gif)
 
 7.  按一下設計介面上的任何節點並查看階層連結列，以查看所選節點在結構描述集中的位置。
 

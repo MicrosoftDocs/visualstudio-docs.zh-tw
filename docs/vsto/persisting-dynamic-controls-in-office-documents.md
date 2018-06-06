@@ -25,7 +25,7 @@ ms.openlocfilehash: b7544549460ab7582ce1af8fde7616213c79e9df
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692791"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>保存動態控制項中的 Office 文件

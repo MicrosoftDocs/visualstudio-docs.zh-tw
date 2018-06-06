@@ -24,7 +24,7 @@ ms.openlocfilehash: c3364c778b8dfc290ef06b7daa5ba063ac31f3db
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692596"
 ---
 # <a name="project-solutions"></a>專案的方案

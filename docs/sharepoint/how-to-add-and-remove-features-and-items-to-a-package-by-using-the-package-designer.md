@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767153"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何：使用封裝設計工具在套件中新增與移除功能
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何： 新增與移除功能和封裝的項目使用封裝設計工具
   當您建立 SharePoint 方案時，Visual Studio 會將預設的 SharePoint 功能加入方案中的套件。 最終的部署之前新增和移除 SharePoint 專案項目與要修改 SharePoint 封裝的功能。  
   
  或者，您可以使用 [封裝總管] 來新增和移除 SharePoint 專案項目。 您也可以檢視和變更階層中的 SharePoint 專案項目並放套件 (.wsp) 的功能。 如需詳細資訊，請參閱[如何： 新增與移除功能和封裝的項目使用封裝總管](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="adding-features-to-a-sharepoint-package"></a>將功能加入 SharePoint 套件  
  您可以使用封裝設計工具，將功能加入 SharePoint 封裝。  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>若要加入 SharePoint 功能與封裝設計工具  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>若要加入 SharePoint 功能與封裝設計工具
   
 1.  開啟**封裝設計工具**。  
   
@@ -54,15 +55,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="removing-features-from-a-sharepoint-package"></a>從 SharePoint 套件中移除功能  
  若要移除 SharePoint 封裝的功能，您可以使用封裝設計工具。  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>若要移除 SharePoint 功能與封裝設計工具  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>若要移除 SharePoint 功能與封裝設計工具
   
 1.  在**封裝中的項目**清單中，選擇您想要移除，然後選擇一個項目**移除**(<) 按鈕，或選擇**全部移除**按鈕 (<<) 移除所有項目。  
   
      SharePoint 項目會出現在**方案中的項目**清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
  [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [如何： 建立封裝](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
   

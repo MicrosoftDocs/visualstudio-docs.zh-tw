@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 將控制項加入工作表，在執行階段，在 VSTO 增益集專案 |Microsoft 文件
+title: 逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,16 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767331"
 ---
-# <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>逐步解說：在執行階段於 VSTO 增益集專案中，將控制項加入工作表中
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- **適用於：**本主題資訊適用於 Excel VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題資訊適用於 Excel VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  這個逐步解說將說明下列工作：  
   
@@ -46,16 +47,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Excel  
   
-## <a name="creating-a-new-excel-vsto-add-in-project"></a>建立新的 Excel VSTO 增益集專案  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>建立新的 Excel VSTO 增益集專案  
  請從建立新的 Excel VSTO 增益集專案開始。  
   
-#### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要建立新的 Excel VSTO 增益集專案  
+### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要建立新的 Excel VSTO 增益集專案  
   
 1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立具有名稱的 Excel VSTO 增益集專案**為 ExcelDynamicControls**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  將參考加入**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**組件。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Form 控制項加入工作表。  
   
-## <a name="providing-a-ui-to-add-controls-to-a-worksheet"></a>提供可將控制項加入工作表的 UI  
+## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>提供可將控制項加入工作表的 UI  
  將自訂索引標籤加入 Excel 功能區。 使用者可以選取索引標籤上的核取方塊，將控制項加入工作表。  
   
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>若要提供可將控制項加入工作表的 UI  
@@ -91,10 +92,10 @@ ms.lasthandoff: 04/16/2018
     |**名稱**|**ListObject**|  
     |**Label**|**ListObject**|  
   
-## <a name="adding-controls-to-the-worksheet"></a>將控制項加入工作表  
+## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表  
  您只能將 Managed 控制項加入做為容器的主項目。 因為 VSTO 增益集專案會使用任何開啟的工作表，所以 VSTO 增益集會將工作表轉換為主項目後，或取得現有主項目，再加入控制項。 將程式碼加入每個控制項的 Click 事件處理常式，以根據開啟的工作表，產生 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 然後，將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表中目前選取的範圍。  
   
-#### <a name="to-add-controls-to-a-worksheet"></a>若要將控制項加入工作表  
+### <a name="to-add-controls-to-a-worksheet"></a>若要將控制項加入工作表  
   
 1.  在功能區設計工具中，按兩下**按鈕**。  
   
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  在**方案總管 中**，選取 Ribbon1.cs 或 Ribbon1.vb。  
+3.  在**方案總管 中**，選取*Ribbon1.cs*或*Ribbon1.vb*。  
   
 4.  在**檢視**功能表上，按一下 **設計師**。  
   
@@ -134,16 +135,16 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
-## <a name="removing-controls-from-the-worksheet"></a>移除工作表的控制項  
- 當工作表儲存和關閉時，都不會保存控制項。 您應該在儲存工作表之前，以程式設計方式移除所有產生的 Windows Form 控制項，否則該活頁簿下次開啟時，只會顯示控制項的外框。 請將程式碼加入 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件，以便從產生之主項目的控制項集合移除 Windows Form 控制項。 如需詳細資訊，請參閱 [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+## <a name="remove-controls-from-the-worksheet"></a>移除工作表中的控制項  
+ 當工作表儲存和關閉時，都不會保存控制項。 您應該在儲存工作表之前，以程式設計方式移除所有產生的 Windows Form 控制項，否則該活頁簿下次開啟時，只會顯示控制項的外框。 請將程式碼加入 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件，以便從產生之主項目的控制項集合移除 Windows Form 控制項。 如需詳細資訊，請參閱[保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
-#### <a name="to-remove-controls-from-the-worksheet"></a>若要移除工作表的控制項  
+### <a name="to-remove-controls-from-the-worksheet"></a>若要移除工作表的控制項  
   
-1.  在**方案總管 中**，選取 ThisAddIn.cs 或 ThisAddIn.vb。  
+1.  在**方案總管 中**，選取*ThisAddIn.cs*或*ThisAddIn.vb*。  
   
 2.  在**檢視**功能表上，按一下 **程式碼**。  
   
-3.  將下列方法加入 ThisAddin 類別。 此程式碼會取得活頁簿中的第一個工作表，然後使用 `HasVstoObject` 方法檢查工作表是否具有產生的工作表物件。 如果產生的工作表物件具有控制項，程式碼便會取得該工作表物件，並逐一查看控制項集合，同時移除控制項。  
+3.  將下列方法加入 `ThisAddIn` 類別中。 此程式碼會取得活頁簿中的第一個工作表，然後使用 `HasVstoObject` 方法檢查工作表是否具有產生的工作表物件。 如果產生的工作表物件具有控制項，程式碼便會取得該工作表物件，並逐一查看控制項集合，同時移除控制項。  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
@@ -152,12 +153,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-solution"></a>測試方案  
- 從功能區上的自訂索引標籤選取控制項，將此控制項加入工作表。 當您儲存工作表時，這些控制項將會被移除。  
+## <a name="test-the-solution"></a>測試方案  
+ 將控制項加入工作表，從功能區上的自訂索引標籤中選取。 當您儲存工作表時，這些控制項將會被移除。  
   
-#### <a name="to-test-the-solution"></a>若要測試方案  
+### <a name="to-test-the-solution"></a>若要測試方案  
   
-1.  請按 F5 執行您的專案。  
+1.  按**F5**執行您的專案。  
   
 2.  選取 Sheet1 中的任何儲存格。  
   
@@ -190,7 +191,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [Excel 方案](../vsto/excel-solutions.md)   
- [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [ListObject 控制項](../vsto/listobject-control.md)  

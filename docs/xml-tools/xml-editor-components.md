@@ -13,7 +13,7 @@ ms.openlocfilehash: 12e29632e29b41f707470231481e70e151ca6f77
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693743"
 ---
 # <a name="xml-editor-components"></a>XML 編輯器元件

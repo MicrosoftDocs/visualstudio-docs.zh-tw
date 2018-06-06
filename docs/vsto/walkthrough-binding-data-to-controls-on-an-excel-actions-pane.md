@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 將資料繫結至 Excel 執行窗格上的控制項 |Microsoft 文件
+title: 逐步解說： 將資料繫結至 Excel 執行窗格上的控制項
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767906"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>逐步解說：將資料繫結至 Excel 執行窗格上的控制項
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>逐步解說： 將資料繫結至 Excel 執行窗格上的控制項
   本逐步解說示範資料繫結至 Microsoft Office Excel 中的 [動作] 窗格上的控制項。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   讀取和寫入至 SQL Server 資料庫的權限。  
   
-## <a name="creating-the-project"></a>建立專案  
+## <a name="create-the-project"></a>建立專案  
  第一步是建立 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立名稱的 Excel 活頁簿專案**我的 Excel 執行窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立名稱的 Excel 活頁簿專案**我的 Excel 執行窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱[How to： 在 Visual Studio 建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新 Excel 活頁簿，並將**我的 Excel 執行窗格**專案加入**方案總管 中**。  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>將新的資料來源加入至專案  
+## <a name="add-a-new-data-source-to-the-project"></a>將新的資料來源加入至專案  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>將新的資料來源加入至專案  
+### <a name="to-add-a-new-data-source-to-the-project"></a>將新的資料來源加入至專案  
   
-1.  如果看不到 [ **資料來源** ] 視窗，請在功能表列選擇 [ **檢視**]、[ **其他視窗**]、[ **資料來源**] 即可顯示。  
+1.  如果**資料來源**看不到視窗中，顯示，在功能表列選擇**檢視** > **其他視窗** >  **資料來源**。  
   
 2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  精靈會新增**供應商**資料表和**產品**資料表**資料來源**視窗。 它也會將具類型資料集加入至您的專案中可見的**方案總管 中**。  
   
-## <a name="adding-controls-to-the-worksheet"></a>將控制項加入工作表  
+## <a name="add-controls-to-the-worksheet"></a>將控制項加入工作表  
  接下來，加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項和<xref:Microsoft.Office.Tools.Excel.ListObject>第一個工作表的控制項。  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>若要加入 NamedRange 控制項和 ListObject 控制項  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>若要加入 NamedRange 控制項和 ListObject 控制項  
   
 1.  確認**我的 Excel 動作 Pane.xlsx**活頁簿是在 Visual Studio 設計工具中開啟與`Sheet1`顯示。  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  僅適用 C#，請選取**suppliersBindingSource**元件匣中，以及變更**修飾詞**屬性**內部**中**屬性**視窗。  
   
-## <a name="adding-controls-to-the-actions-pane"></a>將控制項加入至 [動作] 窗格  
- 接下來，您必須執行窗格控制項包含下拉式方塊。  
+## <a name="add-controls-to-the-actions-pane"></a>將控制項加入 [動作] 窗格  
+ 接下來，您必須執行窗格控制項有下拉式方塊。  
   
-#### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項  
+### <a name="to-add-an-actions-pane-control"></a>若要加入執行窗格控制項  
   
 1.  選取**我的 Excel 執行窗格**專案中**方案總管 中**。  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  在**加入新項目**對話方塊中，選取**執行窗格控制項**，其命名**ActionsControl**，然後按一下**新增**。  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>將資料繫結 Windows Form 控制項加入執行窗格控制項  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>將資料繫結 Windows Form 控制項加入執行窗格控制項  
   
 1.  從**通用控制項**索引標籤的**工具箱**，拖曳<xref:System.Windows.Forms.ComboBox>執行窗格控制項的控制項。  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  調整大小以配合下拉式方塊的使用者控制項。  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>[動作] 窗格上的控制項繫結至資料  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>在 [動作] 窗格上的將控制項繫結至資料  
  在本節中，您將設定資料來源的<xref:System.Windows.Forms.ComboBox>至相同的資料來源<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上的控制項。  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>若要設定控制項的資料繫結屬性  
+### <a name="to-set-data-binding-properties-of-the-control"></a>若要設定控制項的資料繫結屬性  
   
 1.  執行窗格控制項中，以滑鼠右鍵按一下，然後按一下 **檢視程式碼**。  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>顯示 [動作] 窗格  
- [動作] 窗格不可見，直到您在執行階段加入控制項。  
+## <a name="show-the-actions-pane"></a>顯示 [動作] 窗格  
+ 您在執行階段將控制項之前，[動作] 窗格不是可見。  
   
 #### <a name="to-show-the-actions-pane"></a>若要顯示 [動作] 窗格  
   
-1.  在**方案總管 中**Thisworkbook.cs 或 Thisworkbook.vb，以滑鼠右鍵按一下，然後按**檢視程式碼**。  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下*Thisworkbook.cs*或*Thisworkbook.vb*，然後按一下 [**檢視程式碼**。  
   
 2.  建立使用者控制項中的新執行個體`ThisWorkbook`類別。  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>測試應用程式  
+## <a name="test-the-application"></a>測試應用程式  
  現在您可以測試文件，以確認動作 窗格中，開啟文件開啟時，以及控制項有主要/詳細資料關聯性。  
   
-#### <a name="to-test-your-document"></a>測試文件  
+### <a name="to-test-your-document"></a>測試文件  
   
-1.  請按 F5 執行您的專案。  
+1.  按**F5**執行您的專案。  
   
 2.  確認 [動作] 窗格已顯示。  
   
@@ -183,11 +184,11 @@ ms.lasthandoff: 04/16/2018
   
 -   資料繫結至 Word 中的控制項。 如需詳細資訊，請參閱[逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
--   部署專案。 如需詳細資訊，請參閱[部署 Office 方案使用 clickonce](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
+-   部署專案。 如需詳細資訊，請參閱[使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [如何： 管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

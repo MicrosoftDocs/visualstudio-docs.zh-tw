@@ -16,23 +16,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a76a56eccb1d65e8b64b691d0da29e8b9d30637
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cabb70ba998594d99242696d0f87d60d5eb01226
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766085"
 ---
-# <a name="extending-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
+# <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和項目範本來建立 SharePoint 方案。 這些範本符合需求的許多開發案例，但您可能會發現某些情況下，它們不在其中提供您所需要的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。  
   
-## <a name="overview-of-the-sharepoint-project-system"></a>SharePoint 專案系統的概觀  
+## <a name="overview-of-the-sharepoint-project-system"></a>SharePoint 專案系統的概觀
  SharePoint 專案系統為基礎的基本元件*SharePoint 專案項目*。 SharePoint 專案項目代表單一 SharePoint 自訂，例如清單定義、 Web 組件或內容類型。  
   
  SharePoint 專案是 Visual Studio 專案包含一個或多個 SharePoint 專案項目。 SharePoint 專案也包含可定義如何將專案項目分組的功能和封裝部署到其他元件。  
   
  SharePoint 專案項目和 SharePoint 專案的內容的相關資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
-## <a name="how-to-extend-the-sharepoint-project-system"></a>如何擴充 SharePoint 專案系統  
+## <a name="how-to-extend-the-sharepoint-project-system"></a>如何擴充 SharePoint 專案系統
  您可以下列方式來擴充 SharePoint 專案系統：  
   
 -   定義您自己的 SharePoint 專案項目類型，並將其與新的項目範本] 或 [Visual Studio 中的專案範本關聯。 例如，您可以建立自訂動作或欄位定義 SharePoint 專案項目類型。 如需詳細資訊，請參閱[定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。  
@@ -43,14 +44,14 @@ ms.lasthandoff: 04/16/2018
   
 -   擴充 SharePoint 專案項目和 SharePoint 專案的封裝和部署行為。 例如，您可以建立您自己的部署步驟，或在您部署或撤銷專案時，Visual Studio 執行特定的部署步驟時，您可以執行額外的自訂工作時執行。 如需詳細資訊，請參閱[擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
-## <a name="common-development-tasks"></a>常見的開發工作  
+## <a name="common-development-tasks"></a>常見的開發工作
  擴充 SharePoint 專案系統中，您可以執行下列的一般工作：  
   
 -   專案項目並在多種不同類型的專案檔中儲存自訂字串資料。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統中儲存的資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 -   SharePoint 專案系統中的 Visual Studio 自動化物件模型或整合物件模型中，對應的物件中轉換物件，反之亦然。 如需詳細資訊，請參閱[轉換之間 SharePoint 專案系統類型與其他 Visual Studio 專案類型](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
  [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   

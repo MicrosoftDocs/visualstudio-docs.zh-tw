@@ -24,20 +24,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a0607bcd05fcb0d63fcc9bff40dfffeb2c45b8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02a6daf7a3155113ecd06d991b337b54fb0d7cd4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768127"
 ---
-# <a name="how-to-add-a-deleter-method"></a>如何：加入刪除者方法
-  您可以讓使用者從 SharePoint 網站上的一個外部清單刪除資料錄，藉由新增*刪除者*模型的方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+# <a name="how-to-add-a-deleter-method"></a>如何： 加入刪除者方法
+  您可以讓使用者從 SharePoint 網站上的一個外部清單刪除的資料記錄，將刪除者方法新增至模型。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-deleter-method"></a>若要建立的刪除者方法  
   
-1.  在 BDC 設計工具中，選擇 [實體]。  
+1.  在**BDC 設計工具**，選擇實體。  
   
-2.  在功能表列上選擇 **檢視**，**其他視窗**， **BDC 方法詳細資料**。  
+2.  在功能表列上選擇 **檢視** > **其他視窗** > **BDC 方法詳細資料**。  
   
      **BDC 方法詳細資料**視窗隨即開啟。 如需此視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
      [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749053"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
@@ -63,7 +64,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
  許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態 * * 商務規則*做為與相關概念的類別圖上類別相關聯的註解。 例如: 
 
- ![註解附加至 Order 類別中的規則。] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![附加至 Order 類別之註解的規則。](../modeling/media/uml_reqmcd2.png)
 
  *「動態商務規則」* (dynamic business rules) 限制允許的事件序列。 例如，您可以使用序列或活動圖來示範使用者必須先登入，才能對系統執行其他作業。
 

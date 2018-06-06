@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747465"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 *階層式更新*指儲存回資料庫的更新的資料 （從兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是提供資料庫中的條件約束來控制插入、 更新和刪除相關的記錄行為的一致性規則。 比方說，它會建立客戶記錄，才能允許該客戶的訂單建立強制執行參考完整性。  如需在資料集中的關聯性的詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>啟用資料集內的階層式更新
  根據預設，會啟用階層式更新的新增或專案中建立的所有新資料集。 藉由設定開啟或關閉開啟的階層式更新**階層式更新**具類型的資料集，資料集屬性**True**或**False**:
 
- ![階層式更新設定](../data-tools/media/hierarchical-update-setting.png "階層式更新設定")
+ ![階層式更新設定](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>建立新的資料表之間的關聯性
  若要建立新的關聯性，兩個資料表之間，Dataset 設計工具中選取每個資料表的標題列，然後以滑鼠右鍵按一下並選取**加入關聯**。
 
- ![階層式更新將新增關聯功能表](../data-tools/media/hierarchical-update-add-relation-menu.png "階層式更新將新增關聯功能表")
+ ![階層式更新將新增關聯功能表](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>了解 foreign key 條件約束、 階層的更新和刪除
  請務必了解如何 foreign key 條件約束和串聯資料庫中的行為會在產生的資料集程式碼中建立。

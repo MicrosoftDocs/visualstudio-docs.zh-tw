@@ -25,7 +25,7 @@ ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693042"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751737"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述設定
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/24/2018
 
  您輸入的子字串，執行關鍵字搜尋**搜尋 SchemaSet**文字方塊**XML 結構描述總管**工具列。
 
- ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif)
 
  **XML 結構描述總管**搜尋結構描述集的下列屬性：
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/24/2018
 
  您可以將搜尋結果加入工作區依序按一下**反白顯示的節點新增到工作區**摘要結果面板上的按鈕。
 
- ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>清除搜尋結果
 

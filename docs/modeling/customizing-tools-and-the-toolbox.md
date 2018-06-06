@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748523"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 您必須針對要讓使用者加入至其模型的項目 (Element)，定義工具箱項目 (Item)。 工具有兩種類型：項目工具和連接工具。 在產生的設計工具中，使用者可以選取一個項目工具將圖形拖曳至圖表，也可以選取一個連接工具來繪製圖形之間的連結。 一般而言，項目工具可讓使用者將網域類別執行個體加入至其模型，而連接工具可讓使用者加入網域關聯性執行個體。
@@ -83,9 +84,9 @@ Editor
 
      如果您想要定義新的圖示，請在 [方案總管] 中建立點陣圖檔案**Dsl\Resources**資料夾。 檔案應該具有下列屬性值：**建置動作** = **內容**;**複製到輸出目錄** = **不要複製**。
 
-4.  **項目工具：**設定**類別**工具的參考會對應至圖形的具象網域類別的屬性。
+4.  **項目工具：** 設定**類別**工具的參考會對應至圖形的具象網域類別的屬性。
 
-     **連接器工具：**設定**連接產生器**工具的其中一個項目下拉式清單中所提供的屬性。 當您將連接線對應至網域關聯性時，會自動建立連接產生器。 如果您最近剛建立連接線，通常會選取相關聯的連接產生器。
+     **連接器工具：** 設定**連接產生器**工具的其中一個項目下拉式清單中所提供的屬性。 當您將連接線對應至網域關聯性時，會自動建立連接產生器。 如果您最近剛建立連接線，通常會選取相關聯的連接產生器。
 
 5.  若要測試 DSL，請按 F5 鍵或 CTRL+F5，然後在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體中開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **從巢狀元件進入 OutPort 的連線**
 
- ![連接產生器](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![連接產生器](../modeling/media/connectionbuilder_3.png)
 
  因此，您可能需要指定可從巢狀元件連接至 OutPort。 若要指定這類的連線，您將**使用自訂接受**上**InPort**與來源角色類型和**OutPort**與中的目標角色類型**DSL 詳細資料**視窗下圖中所示：
 
  **連結連線的 DSL 總管 中的指示詞**
 
- ![連接產生器影像](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![連接產生器影像](../modeling/media/connectionbuilder_4a.png)
 
  **連結連線 DSL 詳細資料視窗中的指示詞**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  您必須接著提供 ConnectionBuilder 類別中的方法：
 

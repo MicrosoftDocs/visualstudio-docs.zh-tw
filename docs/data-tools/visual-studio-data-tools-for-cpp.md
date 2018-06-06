@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752394"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C + + 的 visual Studio data tools
 
@@ -34,11 +35,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  您可以使用 SQL Server Management Studio 來將解壓縮的 Northwind.mdf 檔案附加到 localDB。 SQL Server Management Studio 啟動時，連接到 (localdb) \MSSQLLocalDB。
 
-     ![SSMS 連接對話方塊](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS 連接對話方塊")
+     ![SSMS 連接對話方塊](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      然後以滑鼠右鍵按一下左窗格中的 localdb 節點，並選擇 **附加**。
 
-     ![SSMS 附加資料庫](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加資料庫")
+     ![SSMS 附加資料庫](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  下載 ODBC Windows SDK 範例中，並將它解壓縮至新位置。 這個範例會示範用來連接到資料庫以及發出查詢命令的基本 ODBC 命令。 您可以進一步了解這些函式[Microsoft 開放式資料庫連接 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)。 當您第一次載入的方案 （位於 c + + 資料夾） 時，Visual Studio 會提供升級至目前版本的 Visual Studio 方案。 按一下 [ **是**]。
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  按 F5 鍵建置並執行應用程式。 您應該會看到對話方塊，從驅動程式提示您輸入的資料庫。 輸入`(localdb)\MSSQLLocalDB`，並檢查**使用信任連接**。 Press **OK**. 您應該會看到訊息，指出成功連線的主控台。 您也應該看到命令提示字元中您可以在這裡輸入 SQL 陳述式。 下列畫面顯示一個範例查詢和結果：
 
-     ![ODBC 範例查詢輸出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 範例查詢輸出")
+     ![ODBC 範例查詢輸出](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>另請參閱
 

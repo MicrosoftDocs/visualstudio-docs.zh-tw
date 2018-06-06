@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749472"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示的特定領域語言 (DSL) 模型，而不是使用 DSL 圖表狀態。 本主題會引導您繫結至 DSL 的 Windows Form 中，使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK。
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) DSL 執行個體，顯示 Windows 表單 UI 和 [模型總管] 中。
 
 ## <a name="creating-a-windows-forms-dsl"></a>建立 Windows Form DSL
  **最少的 WinForm 設計師**DSL 範本所建立的最小的 DSL，您可以修改以符合您自己的需求。
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="updating-the-dsl-definition"></a>DSL 定義的更新
  DSL 定義用於這個逐步解說下列。
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定義
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 04/26/2018
 
      屬性和關聯性的模型類別會出現在 [資料來源] 視窗。
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>您的模型連接至表單
 
@@ -172,7 +173,7 @@ ms.lasthandoff: 04/26/2018
 
 -   它可確保，當使用者選取一個資料列時，[屬性] 視窗會顯示對應的模型項目，而不是資料方格資料列的屬性。
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4")結構描述資料來源和檢視之間的連結。
+ ![DslWpf4](../modeling/media/dslwpf4.png)結構描述資料來源和檢視之間的連結。
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成程式的繫結 DSL
 
@@ -236,7 +237,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  在 FarmControl.cs [設計] 檢視中，選取簡單的欄位，例如名稱、 大小或 IsOrganic。
 
-2.  在 [屬性] 視窗中，依序展開**DataBindings**並開啟**（進階）**。
+2.  在 [屬性] 視窗中，依序展開**DataBindings**並開啟 **（進階）**。
 
      在**格式化與進階繫結**對話方塊下方**資料來源更新模式**，選擇**OnPropertyChanged**。
 
@@ -301,7 +302,7 @@ ms.lasthandoff: 04/26/2018
 
      您應該能夠編輯的資料格檢視中的項目名稱。 您也可以從那裡刪除它。
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>關於程式碼中新增項目
  新的項目按鈕，如下列替代程式碼則稍微簡單一些。

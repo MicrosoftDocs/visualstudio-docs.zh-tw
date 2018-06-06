@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691366"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764871"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>關聯自訂資料與 SharePoint 工具擴充功能
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>關聯自訂資料與 SharePoint 工具擴充功能
   您可以加入自訂資料中 SharePoint 工具擴充功能的特定物件。 當您想要從您的擴充功能中的其他程式碼供稍後存取的擴充功能的一個部分中有資料時，這非常有用。 而是實作自訂的方式來儲存及存取資料，您可以關聯物件中的資料，在您的擴充功能，然後稍後從相同的物件擷取資料。  
   
  加入自訂資料物件時也很有用您想要保留的 Visual Studio 中的特定項目相關資料。 SharePoint 工具擴充功能會載入一次在 Visual Studio 中，因此您的擴充功能可能會使用數個不同的項目 (例如專案、 專案項目，或**伺服器總管**節點) 在任何時間。 如果您有只與特定的項目有關的自訂資料，您可以將資料加入物件，表示該項目。  
@@ -87,5 +87,6 @@ ms.locfileid: "34691366"
  [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [逐步解說： 擴充伺服器總管 以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [如何： 將屬性加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
+ [如何：將屬性新增至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

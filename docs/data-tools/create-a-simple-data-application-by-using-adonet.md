@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745798"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
 
  **瀏覽表單**
 
- ![瀏覽對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png)
 
 |瀏覽表單的控制項|屬性|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/26/2018
 
  **NewCustomer 表單**
 
- ![加入新的客戶，然後下訂單](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![新增客戶以及下訂單](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 表單的控制項|屬性|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ ms.lasthandoff: 04/26/2018
 
  **FillOrCancel 表單**
 
- ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![填寫或取消訂單](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 表單的控制項|屬性|
 |----------------------------------------|----------------|
@@ -130,7 +131,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  在**名稱**資料行中，輸入`connString`。
 
-3.  在**類型**清單中，選取**（連接字串）**。
+3.  在**類型**清單中，選取 **（連接字串）**。
 
 4.  在**範圍**清單中，選取**應用程式**。
 

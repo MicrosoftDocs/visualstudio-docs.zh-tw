@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a68e7d039fe0b60faf42ea319bb3a3bd4f888d3b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764215"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式部署至本機資料夾，使用 Visual Studio 發行工具
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和 **.NET Framework**和 **.NET Core**安裝的開發工作負載。
+* 您必須安裝 Visual Studio 2017 和。**NET 桌面開發**工作負載而。**.NET Core**工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/22/2018
 
     Visual Studio 會建立專案。
 
-## <a name="deploy-to-a-local-folder"></a>將部署到本機資料夾
+## <a name="deploy-to-a-local-folder"></a>部署到本機資料夾
 
 1. 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。
 

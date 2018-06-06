@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748484"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 定義其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼。 大部分的 DSL 方案中的程式碼會產生這個檔案中。
@@ -25,13 +26,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-dsl-definition"></a>DSL 定義
  當您開啟`Dsl\DslDefinition.dsl`、 您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗類似下列圖片。
 
- ![dsl 設計工具](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
  DSL 定義中最重要的資訊是 DSL 定義圖表中顯示。 其他資訊，也是 DslDefinition.dsl 的一部分，會顯示在通常會出現在圖表的側邊的 DSL 總管。 您可以使用圖中的最常見的工作，與用於更進階自訂的 DSL 總管。
 
  DSL 定義圖表會顯示定義模型項目，以及定義連結模型項目之間的關聯性的網域類別。 此外，它也會顯示圖形及連接器，用來向使用者顯示的模型項目。
 
- ![具有泳道的 dsl 設計工具](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![具有泳道的 dsl 設計工具](../modeling/media/dsl_desinger.png)
 
  當您在 DSL 定義中，在圖表或 DSL 總管 中選取項目相關的資訊會顯示在 屬性 視窗中。 DSL 詳細資料視窗中，可能會顯示其他資訊。
 
@@ -45,13 +46,13 @@ ms.lasthandoff: 04/26/2018
 
  下圖顯示已建立之使用者的音樂媒體櫃 DSL 模型。 音樂專輯包含歌曲的清單方塊來表示。 演出者都由圓角的方塊中，並連線到他們有貢獻的專輯。
 
- ![產生的 DSL 執行個體模型](../modeling/media/music_instance.png "Music_Instance")
+ ![已產生的 DSL 執行個體模型](../modeling/media/music_instance.png)
 
  DSL 定義分隔兩個層面。 使用圖形類別和連接器類別會定義模型項目上模型圖表的外觀。 使用網域類別和網域關聯性定義模型中所含的資訊。
 
  下圖顯示的網域類別和關聯性，DSL 定義中的音樂媒體櫃。
 
- ![內嵌和參考關聯性](../modeling/media/music_classes.png "Music_Classes")
+ ![內嵌和參考關聯性](../modeling/media/music_classes.png)
 
  下圖顯示四個網域類別： 音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題、 等等。 在執行個體模型中，其中一些屬性的值會顯示在圖表上。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 ### <a name="the-explorer-displays-the-embedding-tree"></a>[總管] 中顯示內嵌的樹狀目錄
  DSL 定義也會建立檔案總管，使用者會看到其模型圖表一起。
 
- ![產生的 DSL 總管](../modeling/media/music_explorer.png "Music_Explorer")
+ ![已產生的 DSL 總管](../modeling/media/music_explorer.png)
 
  [總管] 中會顯示在模型中，即使您尚未定義任何圖形的所有項目。 它會顯示項目和內嵌關聯性，但未參考關聯性。
 
@@ -122,7 +123,7 @@ ms.lasthandoff: 04/26/2018
 
  在下列圖片之間的線**發行者**領域類別和**PublisherCatalog**網域關聯性是來源角色。 網域關係之間的線和**專輯**網域類別是目標角色。
 
- ![角色和屬性。] (../modeling/media/propertycode.png "PropertyCode")
+ ![角色和屬性。](../modeling/media/propertycode.png)
 
  當您撰寫周遊模型的程式碼時，關聯性相關聯的名稱是特別重要。 比方說，當您建置 DSL 方案時，產生的類別發行者會有的屬性是集合的相簿的目錄。 專輯的類別有一個屬性是 「 發行者 」 之類別的單一執行個體的發行者。
 

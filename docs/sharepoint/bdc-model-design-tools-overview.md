@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691475"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765748"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具概觀
   您可以使用 BDC 設計工具來設計商務資料連線 (BDC) 模型**BDC 方法詳細資料**視窗中，而**BDC 總管**。  
@@ -56,14 +56,14 @@ ms.locfileid: "34691475"
   
  您可以快速產生中的搜尋、 特定搜尋工具、 建立者、 Updater 和刪除者方法**BDC 方法詳細資料**視窗。 當您產生這些方法時，Visual Studio 會加入至方法的中繼資料，例如參數、 執行個體和型別描述元。 您可以修改此中繼資料，以滿足您的特定案例。  
   
- 若要開啟**BDC 方法詳細資料**視窗，請在功能表列上的選擇**檢視**，**其他視窗**， **BDC 方法詳細資料**。  
+ 若要開啟**BDC 方法詳細資料**視窗，請在功能表列上的選擇**檢視** > **其他視窗** > **BDC 方法詳細資料**.  
   
  若要檢視中的方法**BDC 方法詳細資料**視窗中，選擇 BDC 設計工具中的實體。 選取實體的方法會出現在**BDC 方法詳細資料**視窗。 如果您沒有在 BDC 設計工具中，選擇實體**BDC 方法詳細資料**視窗會顯示任何資訊。  
   
  展開或摺疊中的節點**BDC 方法詳細資料**視窗定義參數、 執行個體，並篩選描述元。 使用**BDC 總管**定義類型描述元。  
   
 ## <a name="bdc-explorer"></a>BDC 總管
- **BDC 總管**顯示構成模型的項目。 若要開啟**BDC 總管**，在功能表列上選擇 **檢視**，**其他視窗**， **BDC 總管**。 若要瀏覽此模型中，展開節點中的**BDC 總管**。 每個節點表示模型檔的 XML 中的項目。  
+ **BDC 總管**顯示構成模型的項目。 若要開啟**BDC 總管**，在功能表列上選擇 **檢視** > **其他視窗** > **BDC 總管**。 若要瀏覽此模型中，展開節點中的**BDC 總管**。 每個節點表示模型檔的 XML 中的項目。  
   
  隨著您選擇在節點**BDC 總管**，您選擇每個節點的屬性會出現在**屬性**視窗。 許多這些屬性對應到模型檔案中的屬性。 您可以使用 [搜尋] 方塊上方的搜尋模型**BDC 總管**。  
   

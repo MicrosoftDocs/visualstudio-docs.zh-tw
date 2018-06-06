@@ -19,7 +19,7 @@ ms.openlocfilehash: 3509588baa700cc6d280c01c2456b4736b8eb58d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691868"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 項目
