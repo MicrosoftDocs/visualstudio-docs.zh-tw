@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751867"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何測試 Visual C++ DLL
 
@@ -31,11 +32,11 @@ ms.lasthandoff: 04/26/2018
 
 3.  將專案命名為 `RooterLibTests`；指定位置；將方案命名為 `RooterLib`；並確定已核取 [為方案建立目錄]。
 
-     ![指定方案與專案名稱和位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![指定方案和專案的名稱和位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  在新的專案中，開啟 **unittest1.cpp**。
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      請注意：
 
@@ -64,13 +65,13 @@ ms.lasthandoff: 04/26/2018
 
      測試專案隨即建置並執行。 [測試總管] 視窗隨即開啟，而且測試會在 [通過的測試] 底下列出。 視窗底部的 [摘要] 窗格會提供有關所選取測試的其他詳細資料。
 
-     ![測試總管](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![測試總管](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> 將 DLL 專案加入方案
 
 1.  在 [方案總管] 中，選擇方案名稱。 從捷徑功能表選擇 [加入]，然後選擇 [加入新的專案]。
 
-     ![建立 RooterLib 專案](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![建立 RooterLib 專案](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  在 [新增專案] 對話方塊中，選擇 [DLL (UWP 應用程式)]。
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  在 [方案總管] 中，選擇 [RooterLib] 專案，然後從捷徑功能表選擇 [屬性]。
 
-         ![新增前置處理器符號定義](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![加入前置處理器符號定義](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  在 [RooterLib 屬性頁] 對話方塊中，依序展開 [組態屬性] 和 [C++]，然後選擇 [前置處理器]。
 
@@ -175,7 +176,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  在 [測試總管] 中，選擇 [ **全部執行**]。
 
-     ![基本測試成功](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![基本測試成功](../test/media/ute_cpp_testexplorer_basictest.png)
 
  您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。
 
@@ -206,7 +207,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  測試失敗。
 
-     ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 失敗](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > 確認每個測試在您撰寫之後立即失敗。 這樣有助於避免撰寫永遠不會失敗的測試這種易犯的錯誤。
@@ -278,7 +279,7 @@ ms.lasthandoff: 04/26/2018
 
      測試失敗。 在 [測試總管] 中選擇測試名稱。 失敗的判斷提示會反白顯示。 [測試總管] 的詳細資料窗格中會顯示失敗的訊息。
 
-     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests 失敗](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  若要查看測試失敗的原因，請逐步執行函式：
 
@@ -308,7 +309,7 @@ ms.lasthandoff: 04/26/2018
 
  現在所有測試都通過了。
 
- ![所有測試都成功](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![所有測試都成功](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> 重構程式碼，但不變更測試
 

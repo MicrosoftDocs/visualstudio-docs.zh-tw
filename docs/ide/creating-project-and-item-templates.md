@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573254"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -45,10 +46,6 @@ ms.lasthandoff: 04/26/2018
 - 項目範本會出現在 [新增項目] 對話方塊中。
 
 如需範本資料夾的詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
-
-## <a name="starter-kits"></a>入門套件
-
-入門套件是增強的範本，可以與社群的其他成員共用。 入門套件包含可編譯的程式碼範例、文件和其他資源，協助使用者經由建置實際有用的應用程式，學習新的工具和程式設計技巧。 入門套件的基本內容和程序與範本相同。 如需詳細資訊，請參閱[如何：建立入門套件](../ide/how-to-create-starter-kits.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,6 +1,7 @@
 ---
 title: 逐步解說：建立逼真的 3D 撞球
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bd12e380a9362a82ff890dd016e5469e30f136a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748032"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 
@@ -55,11 +57,11 @@ ms.lasthandoff: 04/19/2018
 
      紋理看起來應該像這樣：
 
-     ![撞球紋理](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")
+     ![撞球的材質](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
 4.  或者，您也可能想要減少此紋理的儲存需求。 您可以減少紋理的寬度使符合其高度，來完成此作業。 這會壓縮紋理及其寬度，但因為紋理對應至球體的方式，會在呈現撞球時展開。 調整大小後，紋理看起來應該像這樣：
 
-     ![壓縮成方形的撞球紋理](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")
+     ![壓縮成方形的撞球材質](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 
  現在您可以建立將此紋理套用至模型的著色器。
 
@@ -69,11 +71,11 @@ ms.lasthandoff: 04/19/2018
 
      根據預設，著色器圖形看起來像這樣︰
 
-     ![預設的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_0.png "gfx_shader_demo_billiard_step_0")
+     ![預設的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_0.png)
 
 2.  修改預設的著色器，以便將紋理樣本的值套用至目前的像素。 著色器圖形看起來應該像這樣︰
 
-     ![將紋理套用到物件的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_1.png "gfx_shader_demo_billiard_step_1")
+     ![將材質套用到物件的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
 3.  設定紋理屬性，套用您在之前程序中建立的紋理。 將 [材質範例] 節點的 **Texture** 屬性值設定為 [Texture1]，然後使用相同 [屬性] 視窗中的 **Texture1** 屬性群組的 **Filename** 屬性指定紋理檔案。
 
@@ -81,7 +83,7 @@ ms.lasthandoff: 04/19/2018
 
  您的撞球現在看起來應該像這樣︰
 
- ![經過紋理處理的撞球特寫](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")
+ ![經過材質處理的撞球特寫](../designers/media/gfx_shader_demo_.png)
 
 ## <a name="create-depth-with-the-lambert-lighting-model"></a>使用 Lambert 光源模型建立深度
 
@@ -95,7 +97,7 @@ ms.lasthandoff: 04/19/2018
 
 -   修改著色器以 Lambert 光源值調整紋理範例的值。 您的著色器圖形看起來應該像這樣︰
 
-     ![加上 Lambert 光源的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_2.png "gfx_shader_demo_billiard_step_2")
+     ![已加上 Lambert 光源的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_2.png)
 
 -   或者，您也可以選擇設定著色器圖形的 **MaterialDiffuse** 屬性，調整設定光源的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。
 
@@ -103,7 +105,7 @@ ms.lasthandoff: 04/19/2018
 
  套用 Lambert 光源後的撞球看起來應該像這樣︰
 
- ![經過紋理和光源處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")
+ ![經過材質和光源處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_2.png)
 
 ## <a name="enhance-the-basic-appearance-with-specular-highlights"></a>以高光強化基本的外觀
 
@@ -117,7 +119,7 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
 1.  使用相加透明混色來修改著色器以包含高光比重。 您的著色器圖形看起來應該像這樣︰
 
-     ![加上高光光的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_3.png "gfx_shader_demo_billiard_step_3")
+     ![已加上反射光源的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
 2.  或者，您也可以設定著色器圖形的高光屬性 (**MaterialSpecular** 和 **MaterialSpecularPower**) 來調整高光的運作方式。 若要存取著色器圖形的屬性，請選擇設計介面的空白區域，然後在 [屬性] 視窗中找出您想要存取的屬性。
 
@@ -125,7 +127,7 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
  套用高光後的撞球看起來應該像這樣︰
 
- ![加上高光的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")
+ ![已加上反射處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_3.png)
 
 ## <a name="create-a-sense-of-space-by-reflecting-the-environment"></a>反映環境以建立空間感
 
@@ -149,13 +151,13 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
 4.  建立第二個紋理，大小和第一個紋理相同。 此紋理會在立方體貼圖的四個面重複，對應球檯的表面和邊，以及球檯附近的區域。 請務必使用和底面紋理相同的色彩，以此紋理繪製球檯的介面。 紋理看起來應該像這樣：
 
-     ![立方體貼圖各面的紋理](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")
+     ![立方體貼圖各邊的材質](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png)
 
      請記住，反射貼圖不一定要完全一致才有效。例如，本文中建立影像所用的立方體貼圖只包含四個球袋而不是六個。
 
 5.  建立第三個紋理，大小和其他紋理相同。 此紋理會是立方體貼圖的頂面，對應球檯上方的天花板。 為讓這部分的倒影更有趣，您可以繪製頂光以強調前個程序中新增至著色器的高光。 紋理看起來應該像這樣：
 
-     ![立方體貼圖頂面的紋理](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
+     ![立方體貼圖頂端的材質](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
  既然您已針對立方體貼圖的各面建立個別的紋理，就可以使用工具將它們組合至一個儲存在單一 .dds 紋理的立方體貼圖中。 只要可以 .dds 紋理格式來儲存立方體貼圖，您可以使用任何想用的程式來建立立方體貼圖。 本逐步解說示範如何使用附屬於 2010 年 6 月版的 DirectX SDK 的 DirectX 紋理工具來建立紋理。
 
@@ -179,7 +181,7 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
  您可以將立方體貼圖的配置想像成這樣︰
 
- ![環境立方體貼圖的配置](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")
+ ![環境立方體貼圖的配置](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png)
 
  頂端影像是正 Y (+Y) 立方體面，中間從左到右是 -X、+Z、+X 和 -Z 立方體面，底面是 -Y 立方體面。
 
@@ -189,13 +191,13 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
 1.  使用相加透明混色來修改著色器以包含環境貼圖。 您的著色器圖形看起來應該像這樣︰
 
-     ![兩種反光著色器節點的特寫](../designers/media/gfx_shader_demo_billiard_step_4b.png "gfx_shader_demo_billiard_step_4b")
+     ![兩種反光著色器節點的特寫](../designers/media/gfx_shader_demo_billiard_step_4b.png)
 
      請注意，您可以使用 [乘積和] 節點來簡化著色器圖形。
 
      以下是實作環境貼圖的著色器節點的詳細檢視︰
 
-     ![增環境貼圖的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_4a.png "gfx_shader_demo_billiard_step_4a")
+     ![已加上環境貼圖的著色器圖形](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
 2.  設定立方體貼圖紋理屬性，套用您在之前程序中所建立的紋理。 將 [立方體貼圖範例] 節點的 **Texture** 屬性值設定為 [Texture2]，然後使用 **Texture2** 屬性群組的 **Filename** 屬性指定紋理檔案。
 
@@ -203,7 +205,7 @@ Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 �
 
  套用環境貼圖後的撞球看起來應該像這樣︰
 
- ![經過環境貼圖處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")
+ ![經過環境貼圖處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_4.png)
 
  在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建立基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。
 

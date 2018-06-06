@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751880"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>如何：使用計數器面板來分析錯誤
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
  [計數器] 面板中的 [錯誤] 節點包含負載測試期間偵測到的所有錯誤。 [錯誤] 節點包含不同的錯誤種類專屬的數個子分類錯誤節點。 例如，[例外狀況] 和 [HTTP 錯誤]。
 
- ![計數器面板的錯誤節點](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![計數器面板的錯誤節點](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>在計數器面板中分析錯誤
 

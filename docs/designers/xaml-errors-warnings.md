@@ -10,11 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea8bf298f5847c779d2dc13154ddb27b2efeb214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746620"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -40,6 +41,6 @@ ms.lasthandoff: 04/26/2018
 
 取消選取 [Show errors detected by the XAML designer] (顯示 XAML 設計工具所偵測到的錯誤) 核取方塊。
 
-![隱藏 XAML 設計工具的錯誤](../designers/media/suppress_xaml_designer_errors.PNG "SuppressXAMLDesignerErrors")
+![隱藏 XAML 設計工具的錯誤](../designers/media/suppress_xaml_designer_errors.png)
 
 

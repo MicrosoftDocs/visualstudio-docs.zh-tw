@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751854"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
 執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
- ![摘要檢視](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![摘要檢視](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>負載測試摘要
 

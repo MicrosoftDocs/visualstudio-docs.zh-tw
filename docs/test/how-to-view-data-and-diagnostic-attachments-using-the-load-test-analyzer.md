@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751361"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>如何：使用負載測試分析器檢視資料和診斷附件
 
 在執行負載測試之前，您可以選取測試設定，指定要使用的診斷和資料配接器。 在負載測試完成之後，當您分析結果時，可以使用 [負載測試分析器] 來檢視這些診斷和資料配接器的詳細資料。 若要檢視資料和診斷配接器的詳細資料，請選擇 [負載測試分析器] 工具列上的 [檢視資料和診斷附件] 按鈕。 例如，如果負載測試的測試設定中有設定系統資訊配接器，您就可以檢視用於執行負載測試之電腦的系統資訊。
 
-![選擇 [診斷資料配接器附件] 對話方塊](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![[選擇診斷資料配接器附件] 對話方塊](../test/media/load_adapterdialog.png)
 
 另一個例子是負載測試的測試設定中包含 IntelliTrace 配接器。 IntelliTrace 配接器可讓您開啟 [IntelliTrace 摘要] 頁面。
 
-![IntelliTrace 摘要](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![IntelliTrace 摘要](../test/media/load_intellitrace.png)
 
 如需詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)和[收集 IntelliTrace 資料](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
 

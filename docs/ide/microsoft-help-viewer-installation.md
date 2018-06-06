@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747478"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 
 |         |         |
 |---------|---------|
-|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |  [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) (英文) 以了解如何使用 Visual Studio 安裝程式安裝 Microsoft Help Viewer。 |
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png)  |  [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) (英文) 以了解如何使用 Visual Studio 安裝程式安裝 Microsoft Help Viewer。 |
 
 ## <a name="see-also"></a>另請參閱
 

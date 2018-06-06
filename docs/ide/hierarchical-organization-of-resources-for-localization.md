@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752316"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 
@@ -42,11 +43,11 @@ ms.lasthandoff: 04/26/2018
 
  儲存您資源的最佳方式是盡可能地將它們一般化。 也就是盡可能將當地語系化字串、影像等等儲存在中性文化特性的資源檔中，而不是特定文化特性。 舉例來說，如果您有適用於比利時法文 ("fr-BE") 文化特性的資源，而在該資源之上即為使用英文的後援資源，則當某些人在設定為加拿大法文文化特性的系統上使用您的應用程式時，可能會造成問題。 系統會尋找 "fr-CA" 的附屬組件，但找不到，因此會載入包含後援資源的主要組件 (英文)，而不是載入法文資源。 下圖顯示此不適當的案例。
 
- ![只限特定資源](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![只限特定資源](../ide/media/vbspecificresourcesonly.gif)
 
  如果您遵循建議的做法，盡可能地為 "fr" 文化特性的中性資源檔放入許多資源，則加拿大法文的使用者就不會看到標示為 "fr-BE" 文化特性的資源，但會看到字串以法文顯示。 下列情況顯示此建議的案例。
 
- ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4b8bb09795f35e3ae67065322e926a09dda0f19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691855"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
@@ -47,8 +48,7 @@ ms.lasthandoff: 04/26/2018
 
 * [使用 UI 自動化來測試您的程式碼](use-ui-automation-to-test-your-code.md)
 * [開始建立、編輯和維護自動程式碼 UI 測試](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [使用自動程式化 UI 測試來測試 UWP 應用程式](test-windows-store-8-1-apps-with-coded-ui-tests.md)
-* [使用自動程式碼 UI 測試來測試 Windows Phone 應用程式](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
+* [使用自動程式化 UI 測試來測試 UWP 應用程式](test-uwp-app-with-coded-ui-test.md)
 * [使用自動程式碼 UI 測試來測試 SharePoint 應用程式](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction to Coded UI Tests with Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx) (Visual Studio Enterprise 的自動程式碼 UI 測試簡介 (實驗室))
 

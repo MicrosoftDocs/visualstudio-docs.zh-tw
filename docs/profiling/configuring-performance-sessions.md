@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692196"
 ---
 # <a name="configure-performance-sessions"></a>設定效能工作階段
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，您可以收集大量應用程式類型的各種效能資料。 本節說明如何使用效能精靈，以及效能工作階段的屬性和目標二進位檔，來設定分析工具收集您感興趣的資料。 分析工具的組態屬性也可以用來控制要在分析執行中收集的資料量。 如需詳細資訊，請參閱[控制資料收集](../profiling/controlling-data-collection.md)。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 05/17/2018
 ## <a name="related-sections"></a>相關章節  
  [控制資料收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)

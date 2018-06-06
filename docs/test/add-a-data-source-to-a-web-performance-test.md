@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750821"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -123,7 +124,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>問：我可以使用哪些資料庫做為資料來源？
 
-**答：**您可使用下列項目：
+**答：** 您可使用下列項目：
 
 - Microsoft SQL Azure。
 
@@ -139,15 +140,15 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>問：如何使用逗號分隔值 (CSV) 文字檔做為資料來源？
 
-**答：**方式如下：
+**答：** 方式如下：
 
 1. 建立資料夾以組織您的專案資料庫成品並加入項目。
 
-     ![將新項目新增至 Data 資料夾](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![將新項目加入至 Data 資料夾](../test/media/web_test_databinding_foldernewitem.png)
 
 2. 建立文字檔
 
-     ![將新的文字檔命名為 ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![將新的文字檔命名為 ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. 編輯文字檔並加入下列內容：
 
@@ -159,15 +160,15 @@ ms.lasthandoff: 04/26/2018
 
 4. 使用[繫結 SQL 資料](#AddingDataBindingWebTest_BindSQLData)中的步驟，但要選擇 CSV 檔案作為資料來源。
 
-     ![輸入名稱並選擇 CSV 檔案](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![輸入名稱並選擇 CSV 檔案](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>問：如果我現有的 CSV 檔未包含資料行標頭，該如何處理？
 
-**答：**如果無法新增資料行標頭，您可以使用結構描述檔案將 CSV 檔案當成資料庫處理。
+**答：** 如果無法新增資料行標頭，您可以使用結構描述檔案將 CSV 檔案當成資料庫處理。
 
 1. 新增名為 schema.ini 的文字檔。
 
-     ![新增 schema.ini 檔案](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![加入 schema.ini 檔案](../test/media/web_test_databinding_schemafile.png)
 
 2. 請編輯 schema.ini 檔案，加入描述您的資料結構之資訊。 例如，描述 CSV 檔案的結構描述檔可能像這樣：
 
@@ -178,39 +179,39 @@ ms.lasthandoff: 04/26/2018
 
 3. 將資料來源加入至測試。
 
-     ![將資料來源新增至 Web 效能測試](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![將資料來源加入至 Web 效能測試](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. 如果您使用的是 schema.ini 檔案，請選擇資料庫 (而非 CSV 檔案) 做為資料來源並為其命名。
 
-     ![新增資料庫資料來源](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![加入資料庫資料來源](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. 建立新連線。
 
-     ![選擇 [新增連接]](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![選取 [新增連接]](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. 選取 .NET Framework Data Provider for OLE DB。
 
-     ![選取 .NET Framework OLE DB 資料提供者](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![選取 .NET Framework OLE DB 資料提供者](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. 選擇 [進階]。
 
-     ![選擇 [進階]](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![選擇 [進階]](../test/media/web_test_databinding_advanced.png)
 
 8. 針對 [提供者] 屬性，選取 [Microsoft.Jet.OLEDB.4.0]，然後將 [擴充屬性] 設為 [Text;HDR=NO]。
 
-     ![套用進階屬性](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![套用進階屬性](../test/media/web_test_databinding_advancedproperties.png)
 
 9. 輸入包含結構描述檔案的資料夾名稱，然後測試連接。
 
-     ![輸入 Data 資料夾的路徑](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![輸入 Data 資料夾的路徑](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. 選取想要使用的 CSV 檔案。
 
-     ![選取文字檔](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![選取文字檔](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      在您完成後，CSV 檔案顯示為資料表。
 
-     ![已新增至測試的資料來源](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![已加入至測試的資料來源](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>問：如何使用 XML 檔案做為資料來源？
 
@@ -218,11 +219,11 @@ ms.lasthandoff: 04/26/2018
 
 1. 建立資料夾以組織您的專案資料庫成品並加入項目。
 
-     ![將新項目新增至 Data 資料夾](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![將新項目加入至 Data 資料夾](../test/media/web_test_databinding_foldernewitem.png)
 
 2. 建立 XML 檔。
 
-     ![新增 ColorData.xml 檔案](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![加入 ColorData.xml 檔案](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. 編輯 XML 檔案並加入您的資料：
 
@@ -242,15 +243,15 @@ ms.lasthandoff: 04/26/2018
 
 4. 使用[繫結 SQL 資料](#AddingDataBindingWebTest_BindSQLData)中的步驟，但要選擇 XML 檔案作為資料來源。
 
-     ![輸入名稱並選擇 XML 檔案](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![輸入名稱並選擇 XML 檔案](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>問：我可以將資料繫結加入至使用 SOAP 的 Web 服務要求嗎？
 
-**答：**是，您必須手動變更 SOAP XML。
+**答：** 是，您必須手動變更 SOAP XML。
 
 1. 在要求樹狀中選擇 Web 服務要求，並在 [屬性] 視窗中選擇 [字串內容] 屬性中的省略符號 (...)。
 
-     ![編輯 Web 服務字串內容](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![編輯 Web 服務字串內容](../test/media/web_test_databinding_webservicerequest.png)
 
 2. 請使用下列語法，以資料繫結值取代 SOAP 主體中的值：
 

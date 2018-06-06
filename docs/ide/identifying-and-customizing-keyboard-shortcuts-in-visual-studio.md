@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747225"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 2. 展開 [環境]，然後選擇 [鍵盤]。
 
-   ![顯示 [選項] 對話方塊中的鍵盤快速鍵](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![顯示 [選項] 對話方塊中的鍵盤快速鍵](../ide/media/optionskeyboard.png)
 
 3. 在 [顯示包含下列的命令] 方塊中，輸入沒有空格的所有或部分命令的名稱。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 5. 如果命令已具有鍵盤快速鍵，則會出現在 [所選取命令的快速鍵] 清單中。
 
-   ![檢視所指定命令的捷徑](../ide/media/viewshortcut.png "ViewShortcut")
+   ![檢視所指定命令的捷徑](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>自訂鍵盤快速鍵
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
      如果已將該捷徑指派給其他命令，則該捷徑會出現在 [快速鍵目前已被下列命令所使用] 方塊中。 在這種情況下，請選擇**退格鍵**以刪除快速鍵，再嘗試指派另一個快速鍵。
 
-    ![為命令指定不同的捷徑](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![為命令指定不同的捷徑](../ide/media/reassignshortcut.png)
 
 7. 選擇 [指派] 按鈕。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 04/26/2018
 
 4. 選取 [鍵盤] 核取方塊，然後選擇 [下一步] 按鈕。
 
-    ![僅匯出自訂的鍵盤快速鍵](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![僅匯出自訂的鍵盤快速鍵](../ide/media/exportshortcuts.png)
 
 5. 在 [您要將設定檔命名為什麼?] 和 [在此目錄中儲存我的設定檔] 方塊中，保留預設值或指定不同的值，然後選擇 [完成] 按鈕。
 
@@ -129,7 +130,7 @@ ms.lasthandoff: 04/26/2018
 
 7. 選取 [鍵盤] 核取方塊，然後選擇 [完成] 按鈕。
 
-    ![僅匯入自訂的鍵盤快速鍵](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![僅匯入自訂的鍵盤快速鍵](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>另請參閱
 

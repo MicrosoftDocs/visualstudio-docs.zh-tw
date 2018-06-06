@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750879"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
 
@@ -43,9 +44,9 @@ ms.lasthandoff: 04/26/2018
 
 1.  在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
 
-2.  (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2.  (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
-     ![圖表檢視縮放控制項](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 
 3.  在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]。
 

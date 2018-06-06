@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573280"
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入門：使用程式碼編輯器
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
 
-本快速入門假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/quickstart-cpp.md) 建立主控台應用程式。
+本快速入門假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 建立主控台應用程式。
 
 ## <a name="create-a-new-code-file"></a>建立新的程式碼檔
 

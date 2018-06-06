@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210dc624bbdaac7aaa0297167416d684629eb07f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548176"
 ---
-# <a name="command-line-profiling-tools-reference"></a>命令列程式碼剖析工具參考
+# <a name="command-line-profiling-tools-reference"></a>命令列分析工具參考
 命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。  
   
 ## <a name="in-this-section"></a>本節內容  

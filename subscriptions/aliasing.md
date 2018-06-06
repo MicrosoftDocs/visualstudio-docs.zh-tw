@@ -9,21 +9,22 @@ description: 登入可能會因為使用別名或易記名稱而失敗
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477648"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
-視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。 
+視用於登入的帳戶類型而定，當登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 時，可用的訂用帳戶可能無法正確顯示。 其中一個可能的原因是使用「別名」或「易記名稱」，而非使用訂用帳戶指派目標的登入身分識別。 這稱為「別名處理」。 
 
 ## <a name="what-is-aliasing"></a>別名處理是什麼？
 
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
+當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。  針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>身為系統管理員，我有哪些選項？
 
@@ -46,27 +47,28 @@ ms.lasthandoff: 04/06/2018
 請依照這些步驟使用目錄帳戶新增訂閱者。
 
 1. 瀏覽[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 並登入。
-2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂閱]。
+2. 從 VLSC [系統管理] 頁面，按一下 [訂用帳戶]，然後按一下 [Visual Studio 訂用帳戶]。
 
-    ![[訂閱] 功能表](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. 按一下與該 Visual Studio 訂用帳戶關聯的 [合約編號]。
 
-    ![選取合約](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
-4. 按一下 [指派訂閱]。
+4. 按一下 [指派訂用帳戶]。
 
-    ![指派訂閱](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. 選取想要的 [訂用帳戶層級]。
 
-    ![訂用帳戶層級](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. 驗證您有可指派的訂用帳戶，然後按一下 [下一步]。
 7.  輸入訂閱者詳細資料並在 [電子郵件地址] 中輸入目錄地址，然後按一下 [下一步]。
 
-    ![電子郵件地址](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. 驗證訂閱者資訊，然後按一下 [完成]。
 
 9. 使用下面的[範本](#notifying-your-subscribers-with-directory-addresses)通知訂閱者其訂用帳戶已佈建。
@@ -128,7 +130,7 @@ ms.lasthandoff: 04/06/2018
     - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
     - 建立您的密碼
     - 選擇您的推廣設定
-    - 按一下 [下一步]
+    - 按一下 [下一步] 
 
 3. 完成驗證步驟並按一下 [下一步]。
 

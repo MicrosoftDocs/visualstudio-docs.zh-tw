@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751438"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -43,9 +44,9 @@ ms.lasthandoff: 04/26/2018
 -   [進度列](#UsingHTML5ControlsCodedUITestsProgressBar)
 
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> 音訊控制項
- **音訊控制項：**正確記錄和播放 HTML5 Audio 控制項上的動作。
+ **音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。
 
- ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")
+ ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
 
 |動作|錄製|產生的程式碼|
 |------------|---------------|--------------------|
@@ -87,9 +88,9 @@ string Volume
 
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> 視訊控制項
- **視訊控制項：**正確記錄和播放 HTML5 Video 控制項上的動作。
+ **視訊控制項：** 正確記錄和播放 HTML5 Video 控制項上的動作。
 
- ![HTML5 Video 控制項](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")
+ ![HTML5 視訊控制項](../test/media/codedui_html5_video.png)
 
 |動作|錄製|產生的程式碼|
 |------------|---------------|--------------------|
@@ -118,9 +119,9 @@ string VideoWidth
 
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> 滑桿
- **滑桿控制項：**正確記錄和播放 HTML5 Slider 控制項上的動作。
+ **滑桿控制項：** 正確記錄和播放 HTML5 Slider 控制項上的動作。
 
- ![HTML5 Slider 控制項](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")
+ ![HTML5 Slider 控制項](../test/media/codedui_html5_slider.png)
 
 |動作|錄製|產生的程式碼|
 |------------|---------------|--------------------|
@@ -138,9 +139,9 @@ string ValueAsNumber
 ```
 
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> 進度列
- **進度列控制項：**進度列是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。
+ **進度列控制項：** 進度列是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。
 
- ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")
+ ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765163"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [配置] 檢視會列出在分析回合期間建立的類型。 每種類型都是呼叫樹狀圖的根節點，可顯示導致類型配置的函式執行路徑。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
  函式的資料會顯示已建立的物件數目以及針對父類型的物件所配置的位元組數目。  
   
-## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
+## <a name="highlight-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
  您可以找到建立父類型大部分物件之呼叫樹狀圖的執行路徑。  
   
 -   若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]。  

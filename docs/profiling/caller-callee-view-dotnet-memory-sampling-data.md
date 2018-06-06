@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d74e6c90f1caf66cbba299ea210d6f4af6637f4e
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336096"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548113"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的 .NET 記憶體分析資料。 [呼叫端/被呼叫端] 檢視包含三個方格。  

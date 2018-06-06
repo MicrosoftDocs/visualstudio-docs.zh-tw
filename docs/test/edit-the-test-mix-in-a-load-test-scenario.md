@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750931"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 
 您可以使用 [負載測試編輯器] 將其他 Web 效能和單元測試加入至情節的測試混合。
 
-![將測試新增至現有的負載測試](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![將測試加入至現有的負載測試](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>若要將其他測試加入至現有的情節
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/26/2018
 5.  (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
 ##  <a name="EditingTestMixRemoveTest"></a> 從情節移除測試
- ![從現有的負載測試中移除測試](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![從現有的負載測試中移除測試](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>從情節移除測試
 

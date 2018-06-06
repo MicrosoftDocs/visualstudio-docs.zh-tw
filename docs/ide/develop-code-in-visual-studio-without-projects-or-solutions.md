@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746023"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/26/2018
 
 |         |         |
 |---------|---------|
-|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")|    [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) 了解如何使用 Visual Studio 複製及開啟 GitHub 存放庫的程式碼。 |
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png)|    [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) 了解如何使用 Visual Studio 複製及開啟 GitHub 存放庫的程式碼。 |
 
 ## <a name="run-and-debug-your-code"></a>執行程式碼並對它進行偵錯
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751802"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>如何：使用負載測試分析器中的計數器面板來分析臨界值違規
 
@@ -22,21 +23,21 @@ ms.lasthandoff: 04/26/2018
 
  臨界值違規會與特定的效能計數器相關聯，並且表示效能計數器超過或未達設定的臨界值。 [計數器] 面板中的圖示會傳達臨界值違規。
 
- ![計數器面板的電腦節點](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![計數器面板的電腦節點](../test/media/ltest_compnode.png)
 
  臨界值違規的圖示會從失敗計數器所在的樹狀目錄節點傳播至根目錄。 此圖示會提醒使用者注意在樹狀目錄上可能看不到之計數器的違規，因為樹狀目錄未展開。 您可以在上圖中 [計數器] 面板的 [電腦] 節點中查看此圖示的範例。
 
  其圖示可以是下列其中之一：
 
- ![無臨界值違規](../test/media/icon_ltest_1.gif "Icon_LTest_1") 無臨界值違規。
+ ![無臨界值違規](../test/media/icon_ltest_1.gif) 無臨界值違規。
 
- ![最後一個間隔中的嚴重臨界值違規](../test/media/icon_ltest_2.gif "Icon_LTest_2") 在最後一個間隔中發生了嚴重臨界值違規。
+ ![最新間隔期間的嚴重臨界值違規](../test/media/icon_ltest_2.gif) 在最後一個間隔中發生了嚴重臨界值違規。
 
- ![前一個間隔中的嚴重臨界值違規](../test/media/icon_ltest_3.gif "Icon_LTest_3") 在前一個間隔中發生了嚴重臨界值違規。
+ ![預先間隔期間的嚴重臨界值違規](../test/media/icon_ltest_3.gif) 在前一個間隔中發生了嚴重臨界值違規。
 
- ![最後一個間隔中的警告臨界值違規](../test/media/icon_ltest_4.gif "Icon_LTest_4") 在最後一個間隔中發生了警告臨界值違規。
+ ![最新間隔期間的警告臨界值違規](../test/media/icon_ltest_4.gif) 在最後一個間隔中發生了警告臨界值違規。
 
- ![前一個間隔中的警告臨界值違規](../test/media/icon_ltest_5.gif "Icon_LTest_5") 在前一個間隔中發生了警告臨界值違規。
+ ![預先間隔期間的警告臨界值違規](../test/media/icon_ltest_5.gif) 在前一個間隔中發生了警告臨界值違規。
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>若要在計數器面板中分析臨界值違規
 

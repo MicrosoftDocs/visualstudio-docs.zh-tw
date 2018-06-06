@@ -13,17 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764929"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 使用者入門
 
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在這麼做時探索 [Visual Studio 整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -62,9 +63,11 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 #### <a name="add-a-workgroup-optional"></a>新增工作群組 (選擇性)
+
 如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
+
 1. 按一下 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
 
   ![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../ide/media/vs-open-visual-studio-installer-generic.png)
@@ -74,9 +77,10 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
    ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
+
 1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
 
-2. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。   
+2. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
 ## <a name="create-a-what-is-your-name-application"></a>建立 "What Is Your Name" 應用程式
 
@@ -106,6 +110,7 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 5. 按任意鍵以關閉主控台視窗。
 
 ## <a name="create-a-calculate-this-application"></a>建立 "Calculate This" 應用程式
+
 1. 開啟 Visual Studio 2017，然後從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
 2. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual Basic]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [主控台應用程式 (.NET Core)]。 然後將檔案命名為 *CalculateThis*。  

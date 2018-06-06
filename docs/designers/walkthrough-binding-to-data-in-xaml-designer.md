@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745707"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>在 XAML 設計工具中繫結至資料
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
      下圖顯示已選取 **ShoppingCart** 的 [選取物件] 對話方塊。
 
-     ![[選取物件] 對話方塊](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![[選取物件] 對話方塊](../designers/media/blendselectobject.png)
 
 1. 在 [工具箱] 中，選擇 `TextBlock` 控制項，以將它新增至表單。
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
 
      下圖顯示已選取 **ItemCount** 屬性的 [建立資料繫結] 對話方塊。
 
-     ![[建立資料繫結] 對話方塊](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![[建立資料繫結] 對話方塊](../designers/media/xaml_create_data_binding.png)
 
 1. 按下 **F5** 即可執行應用程式。
 

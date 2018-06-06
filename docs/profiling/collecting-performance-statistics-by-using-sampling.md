@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fea27cdfbcc843b30fbb4500dd9528df5b65c3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548254"
 ---
-# <a name="collecting-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
+# <a name="collect-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 
 根據預設，Visual Studio 分析工具取樣方法會每 10,000,000 個處理器循環 (在 1 GHz 電腦上大約是每隔百分之一秒) 即收集一次分析資訊。 取樣方法可用來尋找處理器使用率的問題，建議用來調查大多數效能問題。
 

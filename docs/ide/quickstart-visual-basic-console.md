@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766239"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立在主控台上執行的簡單 Visual Basic 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -68,7 +69,8 @@ ms.lasthandoff: 04/26/2018
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
-   除非您按任一鍵，否則這會暫停程式。
+
+    除非您按任一鍵，否則這會暫停程式。
 
 2. 在功能表列中，選取 [組建]  >  [組建方案]。
 

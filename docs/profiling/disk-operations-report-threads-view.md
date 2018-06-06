@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe999ea56dbbdfd2179307f69ec12df92c612e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d145b57b2cacce68b609ddc7aea5cef41cf69762
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764614"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 04/19/2018
   
 -   寫入延遲 (以毫秒為單位)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

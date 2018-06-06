@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 827b76f3b4b40f59fe22b3c5424c6d8c13087809
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750990"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
      [設定診斷資料配接器 - 螢幕和聲音錄製器] 對話方塊隨即顯示。
 
-     ![Video configuration](../test/media/testsettingvideoconfiggdr.png "TestSettingVideoConfigGDR")
+     ![視訊組態](../test/media/testsettingvideoconfiggdr.png)
 
 4.  (選擇性) 選取 [啟用錄音] 擷取錄製中的音訊內容。
 
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/26/2018
 
 6.  在 [螢幕錄製品質] 底下，設定下列下拉式清單選項：
 
-    1.  **畫面播放速率：**指定您要在螢幕和聲音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
+    1.  **畫面播放速率：** 指定您要在螢幕和聲音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
 
-    2.  **位元速率：**指定要在螢幕和聲音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
+    2.  **位元速率：** 指定要在螢幕和聲音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
 
-    3.  **品質(1-100)：**您可以指定範圍介於 1 和 100 之間的螢幕和聲音錄製品質。 預設值為 50 (中間範圍)。
+    3.  **品質(1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和聲音錄製品質。 預設值為 50 (中間範圍)。
 
 7.  選擇 [確定] 。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
 

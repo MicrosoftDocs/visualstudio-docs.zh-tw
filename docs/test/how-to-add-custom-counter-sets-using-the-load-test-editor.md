@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bd58cc29368ed66d3dd8c35fa4bdf3c87aa6a747
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752010"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器加入自訂計數器集合
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 請在 [負載測試編輯器] 中管理計數器。 您可以在負載測試的 [計數器集合] 節點中，看到已新增至測試的計數器集合。 當您建立負載測試之後，可以將新的自訂計數器集合加入至其中。
 
-![自訂計數器集合](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![自訂計數器集合](../test/media/loadtestcustomcounter.png)
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>將自訂計數器集合加入至負載測試
 

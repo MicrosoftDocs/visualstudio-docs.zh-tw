@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571610"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -136,5 +137,4 @@ ms.lasthandoff: 04/26/2018
 
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub 上的 Microsoft 開放原始碼存放庫](https://github.com/Microsoft)
-- [Visual Studio samples](../ide/visual-studio-samples.md) (Visual Studio 範例)
 - [開發人員程式碼範例](https://code.msdn.microsoft.com/)

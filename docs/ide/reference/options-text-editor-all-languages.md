@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749225"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/26/2018
 
  選取時，會在長行換行至下一行之處顯示返回箭號指標。
 
- ![LineBreakSymbol 螢幕擷取畫面](../../ide/reference/media/linebreak.gif "linebreak")
+ ![LineBreakSymbol 螢幕擷取畫面](../../ide/reference/media/linebreak.gif)
 
  如果您不想顯示這些指示器，請清除這個選項。
 

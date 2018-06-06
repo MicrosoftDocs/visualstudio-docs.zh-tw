@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750905"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 |資料行|描述|預設為可見|
 |------------|-----------------|------------------------|
 |時間|負載測試期間發生違規的時間。|[是]|
-|電腦|發生違規之測試中的電腦名稱。 **注意：**當您在 Rig 上執行負載測試時，這很重要。|[是]|
+|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|[是]|
 |分類|發生違規之效能計數器的分類。|[是]|
 |計數器|發生違規之效能計數器的名稱。|[是]|
 |執行個體|發生違規的效能計數器執行個體。|[是]|
@@ -53,15 +54,15 @@ ms.lasthandoff: 04/26/2018
 
  其圖示可以是下列其中之一：
 
- ![無臨界值違規](../test/media/icon_ltest_1.gif "Icon_LTest_1") 無臨界值違規。
+ ![無臨界值違規](../test/media/icon_ltest_1.gif) 無臨界值違規。
 
- ![最後一個間隔中的嚴重臨界值違規](../test/media/icon_ltest_2.gif "Icon_LTest_2") 在最後一個間隔中發生了嚴重臨界值違規。
+ ![最新間隔期間的嚴重臨界值違規](../test/media/icon_ltest_2.gif) 在最後一個間隔中發生了嚴重臨界值違規。
 
- ![前一個間隔中的嚴重臨界值違規](../test/media/icon_ltest_3.gif "Icon_LTest_3") 在前一個間隔中發生了嚴重臨界值違規。
+ ![預先間隔期間的嚴重臨界值違規](../test/media/icon_ltest_3.gif) 在前一個間隔中發生了嚴重臨界值違規。
 
- ![最後一個間隔中的警告臨界值違規](../test/media/icon_ltest_4.gif "Icon_LTest_4") 在最後一個間隔中發生了警告臨界值違規。
+ ![最新間隔期間的警告臨界值違規](../test/media/icon_ltest_4.gif) 在最後一個間隔中發生了警告臨界值違規。
 
- ![前一個間隔中的警告臨界值違規](../test/media/icon_ltest_5.gif "Icon_LTest_5") 在前一個間隔中發生了警告臨界值違規。
+ ![預先間隔期間的警告臨界值違規](../test/media/icon_ltest_5.gif) 在前一個間隔中發生了警告臨界值違規。
 
  您也可以選擇在圖形上顯示臨界值違規。 臨界值圖示會出現在圖形上發生臨界值違規的資料點旁。
 

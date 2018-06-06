@@ -1,6 +1,7 @@
 ---
 title: 如何：建立基本材質著色器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe0031eed40424dbe9dc0219ecf82c69e44b33c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747049"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 
@@ -46,7 +48,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。
 
-![著色器圖形和其效果預覽](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
+![著色器圖形及其效果預覽](../designers/media/digit-texture-effect.png)
 
 某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)
 
