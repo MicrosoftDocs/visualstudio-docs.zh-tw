@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751841"
 ---
 # <a name="start-view"></a>開始檢視
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
 開始檢視包含兩個主要區段：*浮水印*和**結構描述集的詳細資料**窗格。 其中也包含工具列，所有的 XSD 設計工具檢視皆提供此工具列。
 
-![XML 結構描述設計工具開始檢視](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![XML 結構描述設計工具開始檢視](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>浮水印
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 05/24/2018
 
 您可以在開始檢視、 之間瀏覽[內容模型檢視](../xml-tools/content-model-view.md)和[圖表檢視](../xml-tools/graph-view.md)從 XML 結構描述設計工具工具列。
 
-![XML 結構描述設計工具工具列](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![XML 結構描述設計工具工具列](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 當開始檢視為作用中時，下列 XSD 設計工具工具列的按鈕將會啟用：
 

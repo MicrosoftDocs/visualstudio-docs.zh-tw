@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748669"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
  如果您對這個方案範本不熟悉，請按 F5 鍵進行實驗。 請特別注意，您可以將通訊埠工具拖曳到元件上來建立通訊埠，也可以連接通訊埠。
 
- ![元件和連接埠互連](../modeling/media/componentsample.png "ComponentSample")
+ ![元件和相互連接的通訊埠](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 方案的結構
  **Dsl** DSL 專案定義的 API。 **DslPackage**專案可讓您定義如何與整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 您也可以加入自己的專案，這些專案也可以包含從模型產生的程式碼。
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/26/2018
 
  建議您檢查產生的程式碼，以協助您了解 DSL。 若要查看產生的檔案，請展開 [方案總管] 中的 *.tt 檔。
 
- \*.Tt 檔案包含極少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可以位於 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**
+ \*.Tt 檔案包含極少的產生程式碼。 相反地，這些檔案使用 `<#include>` 指示詞來包含共用範本檔案。 共用的檔案可以位於**\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  當您將自己的程式碼加入至 DSL 方案時，請將此程式碼加入至 Generated Code 資料夾外部的其他檔案中。 您可能想要建立**自訂程式碼**資料夾。 (當您將新的程式碼檔案加入至自訂資料夾時，請記得修正初始程式碼基本架構中的命名空間)。
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
  *YourDsl* `Schema.xsd`
 
- 包含您的 DSL 執行個體的檔案結構描述。 這個檔案會複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+ 包含您的 DSL 執行個體的檔案結構描述。 這個檔案會複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
  如果透過設定 [DSL 總管] 中的選項來自訂序列化，此結構描述會據以變更。 但是，如果您撰寫自己的序列化程式碼，這個檔案可能不再表示實際的結構描述。 如需詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 

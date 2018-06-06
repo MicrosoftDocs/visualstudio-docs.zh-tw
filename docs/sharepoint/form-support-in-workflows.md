@@ -16,19 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7214a472eff3b9181362932828f3ffee2f4fbe48
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767393"
 ---
-# <a name="form-support-in-workflows"></a>工作流程中的表單支援
+# <a name="form-support-in-workflows"></a>在工作流程中的表單支援
   表單的四種可用工作流程中： 關聯、 初始化、 工作及修改。 這些表單類型可以根據 ASPX 表單或表單。 支援層級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供特定的格式取決於許多因素下, 表所述。 如需工作流程表單類型的詳細資訊，請參閱[Workflow Form 概觀](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 網站上。  
   
-## <a name="xml-refactoring"></a>XML 重構  
+## <a name="xml-refactoring"></a>XML 重構
  當您將加入至 ASPX 關聯或初始表單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流程專案項目，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]自動重構工作流程的 Elements.xml 檔案中的 XML，保留指的是關聯或起始同步處理的表單屬性每當更新表單名稱或部署路徑或表單刪除。 不過，當您使用工作流程，例如工作或修改表單中的其他表單類型 Elements.xml 檔案，將會無法重構。  
   
-## <a name="form-support-in-new-visual-studio-workflows"></a>新的 Visual Studio 工作流程中的表單支援  
+## <a name="form-support-in-new-visual-studio-workflows"></a>新的 Visual Studio 工作流程中的表單支援
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ASPX 或 InfoPath 表單中建立的工作流程中不同的表單類型的支援[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 |表單型別|Visual Studio 中使用 ASPX 表單建立工作流程|在 Visual Studio 中使用建立的 InfoPath 表單的工作流程|  
@@ -38,17 +39,17 @@ ms.lasthandoff: 04/16/2018
 |工作|-沒有 ASPX 工作表單範本可用於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 您必須建立應用程式頁面上，並加入程式碼。<br />-無法重構 Elements.xml 檔案的工作流程。<br />-如需詳細資訊，請參閱[工作流程工作表單 (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187674)|-沒有在 InfoPath 工作表單範本[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-沒有之間沒有整合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 設計師。<br />-無法重構 Elements.xml 檔案的工作流程。|  
 |修改|-沒有 ASPX 修改表單範本可用於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 若要新增修改表單，您必須建立應用程式頁面上，並加入程式碼。<br />-無法重構 Elements.xml 檔案的工作流程。 您必須手動編輯適當。<br />-如需詳細資訊，請參閱[工作流程修改表單 (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187675)|-沒有中的修改 InfoPath 表單範本[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-沒有之間沒有整合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 設計師。<br />-無法重構 Elements.xml 檔案的工作流程。|  
   
-## <a name="form-support-in-imported-sharepoint-reusable-workflows"></a>在匯入的 SharePoint 可重複使用工作流程中的表單支援  
+## <a name="form-support-in-imported-sharepoint-reusable-workflows"></a>匯入 SharePoint 可重複使用工作流程中的表單支援
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ASPX 或 InfoPath 表單 SharePoint 可重複使用的工作流程會匯入至不同的表單類型的支援[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 |表單型別|已從 SharePoint Designer 匯入 ASPX 表單的可重複使用工作流程|已從 SharePoint Designer 匯入的 InfoPath 表單的可重複使用工作流程|  
 |---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |關聯|-表單是在工作流程的 Elements.xml 檔案中參考。<br />-當您重新命名或刪除，表單或其部署路徑變更時，將會重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。|  
-|初始化|-表單正由工作流程的 Elements.xml 檔案中的工作流程。<br />-當您重新命名或刪除，表單或其部署路徑變更時，將會重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。 **注意：**規則和屬性必須新增並變更此案例要能運作。|  
-|工作|-表單是在工作流程的 Elements.xml 檔案中參考。<br />-無法重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。 **注意：**規則和屬性必須新增並變更此案例要能運作。|  
+|初始化|-表單正由工作流程的 Elements.xml 檔案中的工作流程。<br />-當您重新命名或刪除，表單或其部署路徑變更時，將會重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。 **注意：** 規則和屬性必須新增並變更此案例要能運作。|  
+|工作|-表單是在工作流程的 Elements.xml 檔案中參考。<br />-無法重構 Elements.xml 檔案的工作流程。|-表單是匯入，但在工作流程的 Elements.xml 並未參考。<br />-無法重構 Elements.xml 檔案的工作流程。 **注意：** 規則和屬性必須新增並變更此案例要能運作。|  
 |修改|不適用。 無法在 SharePoint Designer 中建立 ASPX 修改表單。|不適用。 除了內建的 SharePoint 伺服器工作流程，後者不包含.wsp 檔案中匯出的工作流程時，無法在 SharePoint Designer 中建立 InfoPath 修改表單。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [逐步解說： 使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  

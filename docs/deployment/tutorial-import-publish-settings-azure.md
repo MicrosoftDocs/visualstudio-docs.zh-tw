@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766736"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>發行至 Azure App Service 應用程式匯入 Visual Studio 中發行設定
 
@@ -37,9 +38,9 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
+* 您必須安裝 Visual Studio 2017 和**ASP.NET**和。**NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要。**NET 核心**工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 * 建立 Azure 的應用程式服務。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 
 
@@ -92,11 +93,11 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>匯入 Visual Studio 中的發行設定和部署
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您建立的發行設定檔、 Visual studio，將它匯入和 ASP.NET 應用程式部署至 Azure App Service。
+在本教學課程中，您建立的發行設定檔、 Visual studio，將它匯入和 ASP.NET 應用程式部署至 Azure App Service。 您可以在 Visual Studio 中的發佈選項的概觀。
 
 > [!div class="nextstepaction"]
 > [第一眼部署](../deployment/deploying-applications-services-and-components.md)

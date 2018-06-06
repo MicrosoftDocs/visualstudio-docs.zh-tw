@@ -34,7 +34,7 @@ ms.openlocfilehash: 512952a27e2b1c22df256e36f8cbea59f04a3295
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692827"
 ---
 # <a name="program-document-level-customizations"></a>程式文件層級自訂

@@ -19,7 +19,7 @@ ms.openlocfilehash: f77cb92e62d5a5aec4d5e43fe295a3bab279c579
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692154"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目

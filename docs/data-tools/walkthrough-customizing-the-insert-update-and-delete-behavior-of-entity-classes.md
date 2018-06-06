@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 356f15d3d7f332f87b445c66c89f79d099031a1b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dad2ffbc162b53d4141826b6015829482f3bc2df
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746750"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說： 自訂插入、 更新和刪除實體類別的行為
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 
@@ -218,7 +219,7 @@ ms.lasthandoff: 04/26/2018
 13. 地圖**Original_CustomerID**方法引數**CustomerID (Original)** 類別屬性。
 
     > [!NOTE]
-    >  根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應至有效類別屬性，您可以設定**類別屬性**值設定為**（無）**。
+    >  根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應至有效類別屬性，您可以設定**類別屬性**值設定為 **（無）**。
 
 14. 按一下**套用**儲存選取的類別和行為設定。
 

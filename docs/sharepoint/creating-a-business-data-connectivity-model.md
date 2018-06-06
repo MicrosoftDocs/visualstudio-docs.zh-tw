@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691492"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765186"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>建立商務資料連接模型
+# <a name="create-a-business-data-connectivity-model"></a>建立商務資料連接模型
   您可以建立商務資料連線 (BDC) 模型，或使用 Visual Studio 中自訂現有的 BDC 模型。 每個 SharePoint 專案可以包含一個模型。 如需詳細資訊，請參閱[整合至 SharePoint 的商務資料](../sharepoint/integrating-business-data-into-sharepoint.md)。  
   
 ## <a name="create-a-new-model"></a>建立新的模型

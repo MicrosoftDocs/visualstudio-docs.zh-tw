@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47a519db245e2ec15548ba1d46a583d0a73f466f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9bc2dc1af5f2f040a15c5bee25a8d5dfc91afe2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693480"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764765"
 ---
-# <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>建立可重複使用控制項的 web 組件或應用程式頁面
+# <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>建立可重複使用控制項的 web 組件或應用程式頁面
   在 Visual Studio 中，您可以為 SharePoint 中執行的應用程式頁面和 Web 組件，建立可供其利用之自訂、可重複使用的控制項。 這些控制項稱為使用者控制項。 使用者控制項是一種運作方式十分類似 ASP.NET Web 網頁的複合控制項，您可以將現有的 Web 伺服器控制項和標記加入至使用者控制項，並定義控制項的屬性和方法。 您接著可以將其內嵌在 ASP.NET Web pages，它們做為一個單位的位置。  
   
 ## <a name="create-a-user-control"></a>建立使用者控制項

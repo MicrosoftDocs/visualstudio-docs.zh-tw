@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748406"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 以儲存檢視器中，您可以檢查的狀態*儲存*供[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 儲存的檢視器會顯示所有的網域模型項目在特定的存放區，以及項目屬性和項目之間的連結。
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>使用存放區檢視器
  存放區檢視器開啟時，則非強制回應的 Windows Form 視窗隨即出現，如下圖所示。
 
- ![](../modeling/media/storeviewer2.png "storeviewer2")儲存檢視器
+ ![](../modeling/media/storeviewer2.png) 存放區檢視器
 
  存放區檢視器有三個窗格： 左邊的窗格、 右上方窗格中和右下方的窗格。 左的窗格是樹狀檢視中的型別`DomainDataDirectory`存放區的成員。 如果您展開 [資料分割] 節點，然後按一下項目，項目的屬性會出現在右上方窗格中。 如果項目連結到其他項目，其他項目會出現在右下方窗格中。 如果您按兩下右下方窗格中的項目，項目會在左窗格中反白顯示。
 

@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691975"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765001"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>建立 SharePoint 應用程式頁面
+# <a name="create-application-pages-for-sharepoint"></a>建立適用於 SharePoint 的應用程式頁面
   *應用程式頁面*是設計用來在 SharePoint 網站中使用 ASP.NET Web 網頁。 應用程式頁面是特殊的類型的 ASP.NET 網頁。 應用程式頁面和標準的 ASP.NET 網頁的主要差異是應用程式頁面上包含合併 SharePoint 主版頁面的內容。 主版頁面可讓應用程式頁面來做為站台的其他頁面共用相同的外觀和行為。  
   
  Visual Studio 可讓您使用設計工具設計應用程式頁面。 在設計工具會顯示內容區域定義主版頁面中每個內容預留位置。 您可以設計應用程式頁面上，將控制項拖曳到這些內容區域。  
@@ -55,7 +55,7 @@ ms.locfileid: "34691975"
   
 |檔案|描述|  
 |----------|-----------------|  
-|ASP.NET 網頁檔案 (.aspx)|包含定義頁面的 XML 標記。|  
+|ASP.NET 網頁檔案 (*.aspx*)|包含定義頁面的 XML 標記。|  
 |應用程式頁面的程式碼檔|包含程式碼後置應用程式頁面。 加入程式碼可處理此檔案的事件。|  
 |應用程式頁面的設計工具程式碼檔|包含設計工具所產生的程式碼。 不要直接編輯這個檔案。|  
   

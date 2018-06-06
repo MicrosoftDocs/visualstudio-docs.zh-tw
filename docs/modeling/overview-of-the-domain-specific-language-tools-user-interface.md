@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748721"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次開啟中的特定領域語言工具 （DSL 工具） 解決方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，使用者介面會類似下列圖片。
 
- ![dsl 設計工具](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
  下表說明如何使用的使用者介面的部分。
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="the-domain-model-diagram"></a>網域模型圖表
  網域模型圖分成兩個部分。 之一端中的圖表會顯示模型中的項目和關聯性。 在另一端會示範如何在模型顯示，並包含用來顯示項目和屬性的模型圖表的圖形。 下圖顯示圖表項的目。
 
- ![具有泳道的 dsl 設計工具](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![具有泳道的 dsl 設計工具](../modeling/media/dsl_desinger.png)
 
  下表說明一些網域模型圖表的項目。
 

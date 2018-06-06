@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 在交易中儲存資料
+title: 逐步解說：儲存異動中的資料
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745525"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說： 在交易中儲存資料
+# <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 本逐步解說示範如何將資料儲存在交易中，使用<xref:System.Transactions>命名空間。 在本逐步解說中，您將建立 Windows Forms 應用程式。 您將使用資料來源組態精靈，在 Northwind 範例資料庫中建立兩個資料表的資料集。 您會將資料繫結控制項加入 Windows form，以及您將修改 BindingNavigator 的儲存按鈕以更新資料庫在 TransactionScope 內部的程式碼。
 
 ## <a name="prerequisites"></a>必要條件
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 

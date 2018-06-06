@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750424"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義的網域特定定義域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  建立方案與**網域特定領域語言**範本，您可以找到**其他專案類型/擴充性**中**新專案** 對話方塊。
 
-     ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
      當您按一下**確定**、**特定領域語言精靈**會開啟並顯示一份範本 DSL 解決方案。
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/26/2018
 
  這時使用者介面類似以下圖片。
 
- ![dsl 設計工具](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
  此方案定義網域指定的語言。 如需詳細資訊，請參閱[的特定領域語言工具使用者介面概觀](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
  如果您執行的方案，您已建立從**基本語言**範本，您的實驗性 Visual Studio 會類似下列的範例：
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  使用工具進行實驗。 建立項目並連接它們。
 
@@ -139,11 +140,11 @@ ms.lasthandoff: 04/26/2018
 
  下圖顯示 DSL 的類別和關聯性部分，可用來做為本主題中的範例。
 
- ![內嵌和參考關聯性](../modeling/media/music_classes.png "Music_Classes")
+ ![內嵌和參考關聯性](../modeling/media/music_classes.png)
 
  下一張圖是此 DSL 的範例模型：
 
- ![產生的 DSL 執行個體模型](../modeling/media/music_instance.png "Music_Instance")
+ ![已產生的 DSL 執行個體模型](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  「模型」是指使用者建立的 DSL 執行個體，通常會顯示為圖表。 本主題同時討論 DSL 定義圖以及使用 DSL 時出現的模型圖表。
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/26/2018
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定義在圖表上顯示為圖形的項目類別
 
-1.  **定義和測試中所述的領域類別**[定義網域類別](#classes) **。** 
+1.  **定義和測試中所述的領域類別**[定義網域類別](#classes) **。**
 
     -   類別的父系應為根類別。 也就是說，根類別與新網域類別之間應該有內嵌關聯性。
 
@@ -285,7 +286,7 @@ ms.lasthandoff: 04/26/2018
 
     4.  請確定核取記號隨每一個裝飾項目名稱出現。
 
-     ![圖形對應和 DSL 詳細資料視窗](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![圖形對應和 DSL 詳細資料視窗](../modeling/media/dsldetailswindow.png)
 
 7.  **請工具箱項目建立的網域類別的項目。**
 
@@ -318,7 +319,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  **建立圖形**拖曳到模型圖表工具。
 
-5.  **確認每個文字裝飾項目的出現，**而且：
+5.  **確認每個文字裝飾項目的出現，** 而且：
 
     1.  您可以編輯它，除非您已設定**是 UI 唯讀**上的 domain 內容的旗標。
 
@@ -331,7 +332,7 @@ ms.lasthandoff: 04/26/2018
 
  例如，如果音樂 Album 和 Artist 顯示為圖表上的圖形，您可以定義名為 ArtistsAppearedOnAlbums 的關聯性，該關聯性會將 Artist 連結到他們已工作的 Album。 請參閱圖中的範例。
 
- ![產生的 DSL 執行個體模型](../modeling/media/music_instance.png "Music_Instance")
+ ![已產生的 DSL 執行個體模型](../modeling/media/music_instance.png)
 
  參考關聯性也可以連結相同類型的項目。 例如，在代表家庭樹狀結構的 DSL 中，父系與其子系之間的關聯性是從人員到人員的參考關聯性。
 
@@ -346,9 +347,9 @@ ms.lasthandoff: 04/26/2018
 
  **將網域屬性加入至關聯性。** 在圖中，演出者專輯關聯性具有角色的屬性。
 
- **設定允許重複的屬性關聯性，**如果相同的模型項目組之間有多個連結的相同類別。 例如，您可以允許老師向同一位學生教授多個科目。
+ **設定允許重複的屬性關聯性，** 如果相同的模型項目組之間有多個連結的相同類別。 例如，您可以允許老師向同一位學生教授多個科目。
 
- ![圖形的連接器對應](../modeling/media/music_connector.png "Music_Connector")
+ ![接點的圖案對應](../modeling/media/music_connector.png)
 
  如需詳細資訊，請參閱[屬性網域關係](../modeling/properties-of-domain-relationships.md)和[網域角色的屬性](../modeling/properties-of-domain-roles.md)。
 
@@ -400,7 +401,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  **請確認多樣性正確無誤。例如，請確認您無法連線到多個管理員個人。**
 
-8.  **確認每個文字裝飾項目的出現，**而且：
+8.  **確認每個文字裝飾項目的出現，** 而且：
 
     1.  您可以編輯它，除非您已設定**是 UI 唯讀**上的 domain 內容的旗標。
 
@@ -411,11 +412,11 @@ ms.lasthandoff: 04/26/2018
 ##  <a name="compartments"></a> 定義包含清單的圖形： 區間圖案
  區間圖形包含一或多個項目清單。 例如，在音樂庫 DSL 中，您可以使用區間圖形來代表音樂 Album。 在每一個 Album 中都有一份 Song 清單。
 
- ![區間圖案](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![區間圖案](../modeling/media/compartmentshape.png)
 
  在 DSL 定義中達成此效果的最簡單方法中，請為容器定義一個網域類別，並為每一份清單各定義一個網域類別。 容器類別會對應到區間圖形。
 
- ![圖形地圖](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![圖案對應](../modeling/media/music_mapcomp.png)
 
  如需詳細資訊，請參閱[屬性區間圖案](../modeling/properties-of-compartment-shapes.md)。
 
@@ -505,7 +506,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  開啟語言總管。 確認您可以看到內部有清單項目節點的容器節點。
 
- ![產生的 DSL 總管](../modeling/media/music_explorer.png "Music_Explorer")
+ ![已產生的 DSL 總管](../modeling/media/music_explorer.png)
 
  先測試區間圖形之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 

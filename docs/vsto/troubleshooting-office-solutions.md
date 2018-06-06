@@ -21,7 +21,7 @@ ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693181"
 ---
 # <a name="troubleshoot-office-solutions"></a>疑難排解 Office 方案

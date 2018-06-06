@@ -37,7 +37,7 @@ ms.openlocfilehash: 0b7e45ed9ba8e9fcd42d57a1cc6aaf34ce3e3711
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693379"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主項目和主控制項的程式設計限制

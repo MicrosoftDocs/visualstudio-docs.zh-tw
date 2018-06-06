@@ -14,7 +14,7 @@ ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693665"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩檢與群組 （XML 結構描述總管）

@@ -21,7 +21,7 @@ ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690714"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集

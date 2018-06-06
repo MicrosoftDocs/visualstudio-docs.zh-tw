@@ -1,5 +1,5 @@
 ---
-title: VBA 和 Office 方案在 Visual Studio 中比較 |Microsoft 文件
+title: 相較的 Visual Studio 中的 VBA 和 Office 方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768049"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>VBA 和 Office 方案 (在 Visual Studio 中) 比較
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>相較的 Visual Studio 中的 VBA 和 Office 方案
   Microsoft Visual Basic for Applications (VBA) 會使用與 Office 應用程式緊密整合的 Unmanaged 程式碼。 使用 Visual Studio 建立的 Microsoft Office 專案可讓您充分利用 .NET Framework 和 Visual Studio 設計工具。  
   
  如需您可以使用 Visual Studio 建立的 Office 方案類型的資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -44,16 +45,16 @@ ms.lasthandoff: 04/16/2018
   
 -   巨集錄製。  
   
-## <a name="combining-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>合併 VBA 方案與使用 Visual Studio 建立的 Office 方案  
- 您可以從使用 Visual Studio 建立的 Office 方案中呼叫 VBA 程式碼，也可以從 VBA 在使用 Visual Studio 建立的 Office 方案中呼叫程式碼。 特定技術會依 Office 方案是 VSTO 增益集或文件層級自訂而有所不同。 如需詳細資訊，請參閱 [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) 與 [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>合併 VBA 方案與使用 Visual Studio 建立 Office 方案  
+ 您可以從使用 Visual Studio 建立的 Office 方案中呼叫 VBA 程式碼，也可以從 VBA 在使用 Visual Studio 建立的 Office 方案中呼叫程式碼。 特定技術會依 Office 方案是 VSTO 增益集或文件層級自訂而有所不同。 如需詳細資訊，請參閱[從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)和[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [在 VSTO 增益集中呼叫程式碼，從其他 Office 方案](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
- [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

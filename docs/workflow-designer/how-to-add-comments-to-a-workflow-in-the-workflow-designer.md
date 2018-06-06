@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752023"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>HOW TO：將註解新增至工作流程設計工具中的工作流程
 
@@ -52,11 +53,11 @@ ms.lasthandoff: 04/26/2018
 
    註解會顯示在活動設計工具。 在下列螢幕擷取畫面中，註釋「工作流程中的開始活動」顯示在活動的設計工具中。
 
-   ![活動設計工具中顯示的註釋](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![在活動設計工具中顯示的註釋](../workflow-designer/media/annotationindesigner.png)
 
 1. 若要顯示註釋的活動設計工具外，將滑鼠停留在活動設計工具中的註釋區域，按一下**取消釘選**圖示
 
-   ![活動的設計工具外部顯示註釋](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![在活動的設計工具外部顯示的註釋](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>顯示或隱藏所有註釋
 

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766548"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>將 web 應用程式或.NET Core 應用程式發行至網站，使用 Visual Studio 發行工具
 
@@ -26,9 +27,9 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
+* 您必須安裝 Visual Studio 2017 和**ASP.NET 及 web 開發**工作負載和。**NET 桌面開發**工作負載。 .NET Core 應用程式中，您需要。**NET 核心**工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-new-project"></a>建立新專案 
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 05/10/2018
 
 1. 在下**Visual C#** 或**Visual Basic**，選擇**Web**，然後在中間窗格中選擇  **ASP.NET Web 應用程式 (.NET Framework)**（僅限 C#) 或**ASP.NET Core Web 應用程式**，然後按一下 **確定**。
 
-1. 選擇**MVC** (或選擇**Web 應用程式 （模型-檢視-控制器）**適用於.NET Core)，請確定**非驗證**已選取，然後按一下 **[確定]**.
+1. 選擇**MVC** (或選擇**Web 應用程式 （模型-檢視-控制器）** 適用於.NET Core)，請確定**非驗證**已選取，然後按一下 **[確定]**.
 
 1. 輸入的名稱，例如**MyWebApp**按一下**確定**。
 
@@ -85,4 +86,4 @@ ms.lasthandoff: 05/10/2018
 本快速入門中，您學會如何使用 Visual Studio 建立的發行設定檔。 您也可以設定的發行設定檔匯入發行設定。
 
 > [!div class="nextstepaction"]
-> [匯入發佈設定及部署至 IIS](tutorial-import-publish-settings-iis.md)
+> [匯入發佈設定並部署至 IIS](tutorial-import-publish-settings-iis.md)

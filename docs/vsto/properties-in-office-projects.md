@@ -25,7 +25,7 @@ ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692768"
 ---
 # <a name="properties-in-office-projects"></a>Office 專案中的屬性

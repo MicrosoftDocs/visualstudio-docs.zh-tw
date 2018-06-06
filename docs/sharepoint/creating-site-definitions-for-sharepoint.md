@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691800"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765488"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>建立 SharePoint 的站台定義
+# <a name="create-site-definitions-for-sharepoint"></a>建立 SharePoint 的網站定義
   中的 SharePoint 網站定義專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可讓您建立*網站定義*，做為新的 SharePoint 網站的基礎。 這些定義不只會決定的外觀和行為的 SharePoint 網站，但也其預設內容和功能。 在定義中，您可以將預先設定的清單、 內容類型、 事件接收器、 影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您建立部落格網站定義為基礎的站台時，此網站包含清單、 Web 組件和部落格網站需要的其他項目。  
   
  如需網站定義的詳細資訊，請參閱[網站範本及定義](http://go.microsoft.com/fwlink/?LinkId=179134)。  
@@ -41,11 +41,11 @@ ms.locfileid: "34691800"
   
 |檔案名稱|描述|  
 |---------------|-----------------|  
-|default.aspx|新的 SharePoint 網站預設 ASPX 首頁。|  
-|Onet.xml|指定新的站台組態]、 [站台定義範本，以及預設行為的元件。 這些設定可以包含屬性的內容類型已啟用，預設清單檢視中，文件範本檔案，例如，Web 組件包含與站台。 根據預設，`Modules`區段會列出要加入至 SharePoint 網站和設定方式的檔案。|  
-|webtemp_*SiteDefinitionName*.xml|指定出現在站台定義設定**範本選擇**區段**新的 SharePoint 網站**頁面。|  
+|*default.aspx*|新的 SharePoint 網站預設 ASPX 首頁。|  
+|*Onet.xml*|指定新的站台組態]、 [站台定義範本，以及預設行為的元件。 這些設定可以包含屬性的內容類型已啟用，預設清單檢視中，文件範本檔案，例如，Web 組件包含與站台。 根據預設，`Modules`區段會列出要加入至 SharePoint 網站和設定方式的檔案。|  
+|*webtemp_ {SiteDefinitionName}.xml*|指定出現在站台定義設定**範本選擇**區段**新的 SharePoint 網站**頁面。|  
   
- 根據預設，所有的站台定義會儲存在*磁碟機：* \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates 資料夾。 每個站台定義都有它自己的子資料夾。  
+ 根據預設，所有的站台定義會儲存在 *{磁碟機:} \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*資料夾。 每個站台定義都有它自己的子資料夾。  
   
 ## <a name="related-topics"></a>相關主題
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691800"
 |-----------|-----------------|  
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|將引導您逐步完成建立基本網站定義專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
 |[如何： 建立自訂網站定義和設定](http://go.microsoft.com/fwlink/?LinkId=183309)|描述如何在 SharePoint 中建立自訂網站定義複製現有的站台定義，然後再修改該複本。|  
-|[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定的站台定義中提供的原始檔**範本選擇**區段**新的 SharePoint 網站**頁面。|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定的站台定義中提供的原始檔**範本選擇**區段**新的 SharePoint 網站**頁面。|  
 |[當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)|描述如何準備您的 SharePoint 方案供全域使用。|  
 |[建立 SharePoint 的 Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述如何建立的使用者可以修改 SharePoint 網頁組件。|  
 |[為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|描述如何建立可重複使用執行中應用程式頁面和 Web 組件的控制項。|  

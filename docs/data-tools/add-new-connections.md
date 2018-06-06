@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747088"
 ---
 # <a name="add-new-connections"></a>加入新的連線
 
@@ -35,23 +36,23 @@ ms.lasthandoff: 04/26/2018
 
 若要建立資料庫的連接，請按一下**加入連接**中的圖示**伺服器總管**，或以滑鼠右鍵按一下**伺服器總管**上**資料連線**節點，然後選取**加入連接**。 從這裡，您也可以連接到另一部伺服器、 SharePoint 服務或 Azure 服務的資料庫。
 
-![伺服器總管 的新連接圖示](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata 伺服器總管 中的新連接圖示")
+![伺服器總管 的新連接圖示](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 這會開啟**加入連接** 對話方塊。 在這裡，我們輸入 SQL Server LocalDB 執行個體的名稱。
 
-![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png "raddata 新增新的連接對話方塊")
+![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>變更提供者
 
 如果不想要的資料來源，請按一下**變更**按鈕來選擇新的資料來源及/或新的 ADO.NET 資料提供者。 新的提供者可能會要求您提供認證，根據您設定的方式。
 
-![變更 AD0.NET 資料提供者](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata 變更 AD0.NET 資料提供者")
+![變更 AD0.NET 資料提供者](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>測試連接
 
 您已選擇資料來源之後，請按一下**測試連接**。 如果不成功，您必須疑難排解根據廠商的說明文件。
 
-![測試連接](../data-tools/media/raddata-test-connection.png "raddata 測試連接")
+![測試連接](../data-tools/media/raddata-test-connection.png)
 
 如果測試成功，即準備好建立*資料來源*，這是一個 Visual Studio 詞彙，實際上會*資料模型*為基礎的基礎資料庫或服務。
 

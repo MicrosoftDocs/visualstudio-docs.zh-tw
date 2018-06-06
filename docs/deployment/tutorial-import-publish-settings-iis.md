@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766667"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>發行至 IIS 應用程式匯入 Visual Studio 中發行設定
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/24/2018
 
 * 您必須安裝 Visual Studio 2017 和**ASP.NET**和 **.NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要 **.NET Core**工作負載。
 
-    如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
 * 若要從 IIS 中產生的發行設定檔案，您必須執行 Windows Server 2012 或 Windows Server 2016 的電腦，而且您必須正確設定的 IIS 網頁伺服器角色。 也必須安裝 ASP.NET 4.5 或 ASP.NET Core。 適用於 ASP.NET Core，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET 4.5，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
@@ -66,17 +67,17 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中建立的發行設定檔案
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>匯入 Visual Studio 中的發行設定和部署
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
 應用程式部署成功後，它應該會自動啟動。 如果沒有啟動從 Visual Studio，請在 IIS 中啟動應用程式。 您需要確定應用程式集區欄位的 ASP.NET Core **DefaultAppPool**設**沒有 Managed 程式碼**。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您可以建立的發行設定檔，它匯入到 Visual Studio 中，並部署至 IIS 的 ASP.NET 應用程式。
+在本教學課程中，您可以建立的發行設定檔，它匯入到 Visual Studio 中，並部署至 IIS 的 ASP.NET 應用程式。 您可以在 Visual Studio 中的其他發行選項的概觀。
 
 > [!div class="nextstepaction"]
 > [第一眼部署](../deployment/deploying-applications-services-and-components.md)

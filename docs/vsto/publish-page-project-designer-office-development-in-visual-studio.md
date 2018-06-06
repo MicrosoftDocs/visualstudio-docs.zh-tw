@@ -23,7 +23,7 @@ ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692840"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行頁、 專案設計工具 （Visual Studio 中的 Office 程式開發）

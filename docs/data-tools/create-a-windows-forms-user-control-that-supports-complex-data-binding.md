@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a1922c3b79a718b3a239280561bf954165332e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e48e6a3a5694a518f30b3d9ec749d01b1e7127b8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746500"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Form 使用者控制項
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-1. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+1. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 1. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 

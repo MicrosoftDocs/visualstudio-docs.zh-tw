@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749937"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
@@ -34,7 +35,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 
 |**分類**|**連結**|
 |------------------|---------------|
-|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug 七： 程式碼的了解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9： 使用相依性圖表的應用程式的架構](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： 如何使用相依性圖表的驗證程式碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**影片**|![影片連結](../data-tools/media/playvideo.gif) [Channel 9: Doug 七： 程式碼的了解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [Channel 9： 使用相依性圖表的應用程式的架構](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列： 如何使用相依性圖表的驗證程式碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**部落格**|-   [Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|

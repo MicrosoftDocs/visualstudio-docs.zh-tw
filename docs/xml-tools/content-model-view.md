@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751789"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
  在下圖**工作區**面板包含六個結構描述節點。 `purchaseOrder`  中選取節點**工作區** 面板，而且會顯示在設計介面。
 
- ![XML 結構描述設計工具內容模型檢視](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![XML 結構描述設計工具內容模型檢視](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>工作區面板
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/24/2018
 
  當內容模型檢視正在作用中時，會啟用下列 XSD 設計工具工具列的按鈕。
 
- ![XML 結構描述設計工具工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![XML 結構描述設計工具工具列](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |選項|描述|
 |------------|-----------------|

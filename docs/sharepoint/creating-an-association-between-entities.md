@@ -24,14 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b96a316e451528b886dd1eba0840a3212678e922
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692167"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766343"
 ---
-# <a name="creating-an-association-between-entities"></a>建立實體之間的關聯
+# <a name="create-an-association-between-entities"></a>建立實體之間的關聯
   您可以定義您藉由建立關聯的商務資料連線 (BDC) 模型中實體之間的關聯性。 Visual Studio 會產生模型的取用者提供每個關聯的相關資訊的方法。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。  
   
 ## <a name="create-an-association"></a>建立關聯

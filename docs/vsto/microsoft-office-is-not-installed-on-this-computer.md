@@ -19,7 +19,7 @@ ms.openlocfilehash: 1e781612e051b281b340c3744d2fbb1e6a1e834d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692427"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>在電腦上沒有安裝 Microsoft Office

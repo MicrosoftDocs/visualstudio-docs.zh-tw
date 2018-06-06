@@ -23,7 +23,7 @@ ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692456"
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂

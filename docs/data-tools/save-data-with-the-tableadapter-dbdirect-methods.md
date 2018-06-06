@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747543"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 本逐步解說提供詳細的指示，直接對資料庫執行 SQL 陳述式，使用 TableAdapter 的 DBDirect 方法。 TableAdapter 的 DBDirect 方法提供資料庫更新的控制層的級。 您可以使用它們來執行特定 SQL 陳述式和預存程序的呼叫`Insert`， `Update`，和`Delete`方法視您的應用程式 (而不是多載`Update`執行更新的方法INSERT 和 DELETE 陳述式，在一個呼叫中的)。
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。
 

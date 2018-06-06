@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691528"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765722"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
+# <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀和行為的 SharePoint 網站的頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們出現在 SharePoint 網站的頁面的建置組塊。 請參閱[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
   
  您可以建立和使用範本，從 Visual Studio 偵錯 SharePoint 網站上的 web 組件。  
@@ -50,7 +50,7 @@ ms.locfileid: "34691528"
   
 |檔案|描述|  
 |----------|-----------------|  
-|Elements.xml|包含專案中的功能定義檔會使用來部署 web 組件的資訊。|  
+|*Elements.xml*|包含專案中的功能定義檔會使用來部署 web 組件的資訊。|  
 |.webpart 檔案|提供 SharePoint web 組件庫中顯示網頁組件所需的資訊。|  
 |程式碼檔案|包含的方法，將控制項加入至 web 組件，以及所產生 web 組件內的自訂內容。|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691528"
 |控制項名稱|描述|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|插入 ASP 功能表。 如需詳細資訊，請參閱[功能表控制項概觀](http://go.microsoft.com/fwlink/?LinkId=235316)。|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|插入**連結**.aspx 頁面項目，並套用所定義的一個或多個外部樣式表**CssRegistration**。|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|將 DateTime 控制項插入至.aspx 網頁。|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|插入的.aspx 頁面上的安全性驗證|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|插入**連結**項目插入 *.aspx*頁面上，並套用所定義的一個或多個外部樣式表**CssRegistration**。|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|插入到 DateTime 控制項 *.aspx*頁面。|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|插入到安全性驗證 *.aspx*頁面|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|傳回指定清單的屬性。|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|傳回目前網站的全域屬性。|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|插入 rss 摘要的.aspx 頁面連結。|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|插入 RSS 摘要連結 *.aspx*頁面。|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|提供屬性和方法，以註冊資源，例如指令碼，在頁面上，以便它們可以呈現網頁時要求。|  
-|[主題](http://go.microsoft.com/fwlink/?LinkId=235314)|佈景主題套用至.aspx 網頁。|  
+|[主題](http://go.microsoft.com/fwlink/?LinkId=235314)|若要將佈景主題套用 *.aspx*頁面。|  
   
 ## <a name="debug-a-web-part"></a>偵錯的 web 組件
  您可以偵錯 SharePoint 專案就像您會偵錯其他 Visual Studio 專案包含 web 組件。 當您啟動 Visual Studio 偵錯工具時，Visual Studio 會開啟 SharePoint 網站。  

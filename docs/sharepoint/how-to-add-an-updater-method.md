@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc7c946a89c8ba05ffed443816d6ce4e9056b88b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 808e37b6d172a63288751c28dfdcd1e43d466c08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767413"
 ---
-# <a name="how-to-add-an-updater-method"></a>如何：加入更新者方法
+# <a name="how-to-add-an-updater-method"></a>如何： 加入 Updater 方法
   您可以讓使用者藉由建立更新 SharePoint 外部清單中的商務資料*Updater*方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-an-updater-method"></a>若要建立 Updater 方法  
   
 1.  在 BDC 設計工具中，選擇 [實體]。  
   
-2.  在功能表列上選擇 **檢視**，**其他視窗**， **BDC 方法詳細資料**。  
+2.  在功能表列上選擇 **檢視** > **其他視窗** > **BDC 方法詳細資料**。  
   
      BDC 方法詳細資料視窗隨即開啟。 如需此視窗的詳細資訊，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  在**方案總管 中**，開啟實體的已產生的服務程式碼檔案的捷徑功能表，然後選擇**檢視程式碼**。  
   
-     實體服務程式碼檔隨即開啟 程式碼編輯器。 如需有關該檔案的詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
+     實體服務程式碼檔案中開啟**程式碼編輯器**。 如需有關該檔案的詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
   
 5.  若要更新資料的 Update 方法加入程式碼。 下列範例會更新為 SQL Server AdventureWorks 範例資料庫中的連絡人資訊。  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
      [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
@@ -79,4 +80,4 @@ ms.lasthandoff: 04/16/2018
  [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
   
-  
+ 

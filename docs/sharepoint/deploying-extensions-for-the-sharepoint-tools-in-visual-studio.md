@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767256"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中 SharePoint 工具的擴充功能
-  若要部署的 SharePoint 工具擴充功能，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝，其中包含延伸模組組件和任何其他您想要發佈副檔名的檔案。 VSIX 封裝是壓縮的檔案，會遵循開放封裝慣例 (OPC) 標準。 VSIX 封裝具有.vsix 副檔名。  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中 SharePoint 工具擴充功能
+  若要部署的 SharePoint 工具擴充功能，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝，其中包含延伸模組組件和任何其他您想要發佈副檔名的檔案。 VSIX 封裝是壓縮的檔案，會遵循開放封裝慣例 (OPC) 標準。 VSIX 封裝 *.vsix*延伸模組。  
   
  建立 VSIX 封裝之後，其他使用者可以執行.vsix 檔案來安裝您的擴充功能。 當使用者安裝您的擴充功能時，所有的檔案會安裝 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 資料夾。 若要部署擴充功能，您可以上傳 VSIX 封裝，來[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站上，或者您可以將套件發佈給您的客戶透過其他方式，例如所裝載的網路共用或某些其他網站上的套件。  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  您可以建立 VSIX 封裝使用**VSIX 專案**範本在 Visual Studio 中，或者您可以手動建立 VSIX 封裝。  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>使用 VSIX 專案建立 VSIX 封裝  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>使用 VSIX 專案建立 VSIX 封裝
  您可以使用**VSIX 專案**Visual Studio SDK，可以建立 VSIX 封裝，針對 SharePoint 工具擴充功能所提供的範本。 使用 VSIX 專案透過手動建立 VSIX 封裝，提供多項優點：  
   
 -   當您建置專案時，visual Studio 會自動產生 VSIX 封裝。 為您完成工作，例如部署檔案新增至封裝，以及建立封裝的 [Content_Types].xml 檔案。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  如需有關如何使用 VSIX 專案的詳細資訊，請參閱[VSIX 專案範本](/visualstudio/extensibility/vsix-project-template)。  
   
-### <a name="organizing-your-projects"></a>組織您的專案  
+### <a name="organize-your-projects"></a>組織您的專案
  根據預設，VSIX 專案只會產生 VSIX 封裝，而不是組件。 因此，您通常不會實作 SharePoint 工具擴充功能 VSIX 專案。 您通常會使用至少兩個專案：  
   
 -   VSIX 專案。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  如果您在相同的 Visual Studio 方案中包含的所有專案，您可以修改 source.extension.vsixmanifest 檔案中包含組建輸出的類別庫專案在 VSIX 專案。  
   
-### <a name="editing-the-vsix-manifest"></a>編輯 VSIX 資訊清單  
+### <a name="edit-the-vsix-manifest"></a>編輯 VSIX 資訊清單
  您必須編輯 source.extension.vsixmanifest 檔案中要包含您想要在您的擴充功能中包含的所有項目的項目在 VSIX 專案。 當您從快顯功能表開啟 source.extension.vsixmanifest 檔案時，檔案會顯示在設計工具中，提供用於編輯 XML 檔案中的 UI。 如需詳細資訊，請參閱[VSIX 資訊清單設計工具](/visualstudio/extensibility/vsix-manifest-designer)。  
   
  您必須為下列項目 source.extension.vsixmanifest 檔案中新增項目：  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*.zip  
   
-     例如，如果您擁有名為 ContosoCustomAction.zip 支援英文 （美國） 地區設定的項目範本，完整路徑可能 ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip。  
+     例如，如果您擁有名為 ContosoCustomAction.zip 支援英文 （美國） 地區設定的項目範本，可能是完整路徑*ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*。  
   
 3.  在**方案總管 中**，選擇的範本檔案 (*YourTemplateName*.zip)。  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  在**來源**清單中，選擇**檔案系統上的檔案**。  
   
-9. 在**路徑**欄位中，輸入組件的完整路徑 (例如， **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**，或使用**瀏覽**按鈕來找出並選擇組件，然後再選擇**確定** 按鈕。  
+9. 在**路徑**欄位中，輸入組件的完整路徑 (例如， *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*，或使用**瀏覽**按鈕來找出並選擇組件，然後再選擇**確定** 按鈕。  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>包含專案範本或項目範本的精靈  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  選擇 [確定]  按鈕。  
   
-### <a name="related-walkthroughs"></a>相關的逐步解說  
+### <a name="related-walkthroughs"></a>相關的逐步解說
  下表列出逐步解說示範如何使用 VSIX 專案，才能部署不同類型的 SharePoint 工具擴充功能。  
   
 |擴充功能類型|相關的逐步解說|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |擴充功能，包括 Visual Studio 範本|[逐步解說：使用項目範本建立自訂動作專案項目 (第 1 部分)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [逐步解說：使用專案範本建立網站資料行專案項目 (第 1 部分)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |包含的範本精靈擴充功能|[逐步解說：使用項目範本建立自訂動作專案項目 (第 2 部分)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>手動建立 VSIX 封裝  
+## <a name="create-vsix-packages-manually"></a>手動建立 VSIX 封裝
  如果您想要手動建立 VSIX 封裝，您的 SharePoint 工具擴充功能，請執行下列步驟：  
   
 1.  Extension.vsixmanifest 檔案和 [Content_Types].xml 檔案在中建立新的資料夾。 如需詳細資訊，請參閱[VSIX 套件的剖析](/visualstudio/extensibility/anatomy-of-a-vsix-package)。  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [偵錯 Visual Studio 中 SharePoint 工具的延伸模組](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   

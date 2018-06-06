@@ -38,7 +38,7 @@ ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693730"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具

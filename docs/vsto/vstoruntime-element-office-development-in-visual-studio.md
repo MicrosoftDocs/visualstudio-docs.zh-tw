@@ -1,5 +1,5 @@
 ---
-title: '&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件'
+title: '&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee2d50d69c363d5073a09b953c00d22a11ef5315
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d21e097c0a05dfba2aa15bc41e37441ae02a63e4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768062"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml  
 <vstoRuntime  
     release  
     version  
@@ -49,9 +50,9 @@ ms.lasthandoff: 04/16/2018
  `vstoRuntime` 沒有任何項目。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+ 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
   
-```  
+```xml  
 <vstav3:vstoRuntime  
     release="VSTOR40Beta1"  
     version="10.0.20303"  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   

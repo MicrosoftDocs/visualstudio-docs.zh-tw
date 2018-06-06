@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750255"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 本主題說明在定義和使用 Visual studio 使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
  當您設計 DSL 時，您可以將它做為 Visual Studio 整合擴充功能 (VSIX) 封裝的一部分散發。 使用 Visual Studio 中 DSL 使用者：
 
- ![家譜圖表、 工具箱和總管](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![家譜圖表、工具箱和總管](../modeling/media/familyt_instance.png)
 
  表示法是非負數的 DSL 的組件。 這個標記法，VSIX 封裝會包含使用者可以套用至協助他們編輯並從他們的模型產生資料的工具。
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  按一下**網域特定語言設計工具**。
 
-     ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
 4.  在**名稱**方塊中，輸入**FamilyTree**。 按一下 [確定 **Deploying Office Solutions**]。
 
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
  這時使用者介面類似以下圖片。
 
- ![dsl 設計工具](../modeling/media/dsl_designer.png "dsl_designer")
+ ![dsl 設計工具](../modeling/media/dsl_designer.png)
 
  此方案定義網域指定的語言。 如需詳細資訊，請參閱[的特定領域語言工具使用者介面概觀](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。
 
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
  您的實驗性 Visual Studio 會類似下列的範例：
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>模型的內容
  DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型 * * 元素*和*連結*的項目之間。 DSL 定義指定的模型項目類型，可以存在於模型中的連結。 例如，在 DSL 基本語言範本所建立的沒有一種類型的模型項目和一種連結類型。
@@ -196,7 +197,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  在 DslDefinition 圖表中，重新命名**ExampleModel**至**FamilyTreeModel**， **ExampleElement**至**人員**， **目標**至**父系**，和**來源**至**子系**。 您可以按一下每一個標籤加以變更。
 
-     ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![DSL 定義圖表&#45;王朝家譜模型](../modeling/media/familyt_person.png)
 
 2.  重新命名的項目和連接器工具。
 
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/26/2018
 
     4.  選取每個新的裝飾項目，然後在 [屬性] 視窗中，設定**位置**欄位。 這會決定網域屬性值在圖形上的顯示位置。 例如，設定**InnerBottomLeft**和**InnerBottomRight**。
 
-         ![區間圖案定義](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![區間圖案定義](../modeling/media/familyt_compartment.png)
 
 3.  將裝飾項目對應到屬性。
 
@@ -271,7 +272,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  .Tt 檔，在您可以加入程式碼會取得每個人員的屬性。
 
- ![家譜圖表、 工具箱和總管](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![家譜圖表、工具箱和總管](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>定義新類別
  您可以加入網域類別和關聯性模型。 例如，您可以建立新的類別來代表城鎮，以及代表人員存在城鎮中新的關聯性。
@@ -297,7 +298,7 @@ ms.lasthandoff: 04/26/2018
 
     1.  按一下**參考關聯性**工具，按一下 人員，然後按一下 城鎮。
 
-         ![DSL 定義片段： 家譜根部](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![DSL 定義片段：家譜根部](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  參考關聯性可交互參照模型樹狀結構的一個部分從另一個。
@@ -322,7 +323,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  使用**圖表元素會對應**工具，以將新的連接器連結至人員城鎮之間的關聯性。
 
-         ![已加入的圖案對應的家譜定義](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![已加入圖案對應的家譜定義](../modeling/media/familyt_shapemap.png)
 
 6.  建立供新市區項目的工具。
 

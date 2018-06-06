@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1fa954c2f24daa17ce4f1ed9aeb90df9f4566e58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2bbd0e4ab34b20be3be9a3adaa0b43f436727c2c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767698"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何：將捷徑功能表項目加入至自訂 SharePoint 專案項目類型
+# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何： 將捷徑功能表項目加入至自訂 SharePoint 專案項目類型
   當您定義自訂 SharePoint 專案項目類型時，您可以將快顯功能表項目加入專案項目。 當使用者以滑鼠右鍵按一下專案項目中的，會出現的功能表項目**方案總管 中**。  
   
  下列步驟假設您已定義您自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱[如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
@@ -56,9 +57,9 @@ ms.lasthandoff: 04/16/2018
   
  若要部署專案項目，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件、 範本和您想要與專案項目一起散發的任何其他檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
  [如何： 將屬性加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
   
-  
+ 

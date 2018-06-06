@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64de38fe796ce3c1e0d333a22582ad2973e1c4d2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692115"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765355"
 ---
-# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
+# <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換
   在某些情況下您可能會有物件 SharePoint 專案系統中，而且您想要使用 Visual Studio 自動化物件模型或整合物件模型中對應物件的功能，反之亦然。 在這些情況下，您可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>SharePoint 專案服務，將物件轉換成不同的物件模型的方法。  
   
  例如，您可能會有<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>物件，但您想要使用方法只可用在<xref:EnvDTE.Project>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>物件。 在此情況下，您可以使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>方法，將轉換<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>至<xref:EnvDTE.Project>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>。  
@@ -45,7 +45,7 @@ ms.locfileid: "34692115"
   
  這個範例需要：  
   
--   SharePoint 專案系統具有 EnvDTE.dll 組件的參考延伸模組。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。  
+-   參考到 SharePoint 專案系統的延伸模組*EnvDTE.dll*組件。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。  
   
 -   暫存器的程式碼`projectService_ProjectAdded`方法以處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded>事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。 如需範例，請參閱[How to： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   

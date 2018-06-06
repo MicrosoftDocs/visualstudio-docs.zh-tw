@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749540"
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
@@ -26,7 +27,7 @@ DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。
 
  *RelationshipName.PropertyName/!Role*
 
- ![CommentReferencesSubjects 參考關聯性](../modeling/media/dsl_reference.png "dsl_reference")
+ ![CommentReferencesSubjects 參考關聯性](../modeling/media/dsl_reference.png)
 
  這個語法會周遊模型的樹狀結構。 例如，網域關聯性**CommentReferencesSubjects**上圖中有**主旨**角色。 路徑區段 **/ ！Subjectt**指定路徑是透過存取的項目上完成**主旨**角色。
 

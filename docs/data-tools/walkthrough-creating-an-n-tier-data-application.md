@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746997"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立 N-Tier 資料應用程式
 *多層式架構*資料應用程式是可存取資料而且分成多個邏輯層，應用程式或*層*。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的終端使用者隔離。 如需詳細資訊，請參閱[多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 -   撰寫程式碼以填入資料表。
 
-![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[影片-如何： 建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[影片-如何： 建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。
 
 ## <a name="prerequisites"></a>必要條件
 本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.
 
-2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。
+2. 展開  **Visual C#** 或**Visual Basic**左窗格中，然後選取**Windows 桌面**。
 
 3. 在中間窗格中，選取**類別庫**專案類型。
 
@@ -289,7 +290,7 @@ ms.lasthandoff: 04/26/2018
 
 1.  以滑鼠右鍵按一下方案總管] 中的方案，然後選擇 [**新增**，**新的專案...**.
 
-2.  在**新專案**對話方塊的左窗格中，選取**的傳統 Windows 桌面**。 在中間窗格中，選取**Windows Form 應用程式**。
+2.  在**新專案**對話方塊的左窗格中，選取**Windows 桌面**。 在中間窗格中，選取**Windows Form 應用程式**。
 
 3.  將專案命名**PresentationTier**按一下**確定**。
 

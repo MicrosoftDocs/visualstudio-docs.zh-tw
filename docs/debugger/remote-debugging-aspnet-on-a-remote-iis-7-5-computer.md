@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: dddbe20c36aac6bc1c21cc2e29e59231c5b8feaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 759615311478f1b428edc2a800c61b9252a3a84a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746854"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>遠端偵錯遠端 IIS 電腦上的 ASP.NET
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -183,7 +184,7 @@ ms.lasthandoff: 05/24/2018
 
 ## <a name="BKMK_attach"></a> 從 Visual Studio 電腦連接至 ASP.NET 應用程式
 
-1. Visual Studio 電腦上，開啟**MyASPApp**方案。
+1. Visual Studio 電腦上，開啟您嘗試偵錯方案 (**MyASPApp**如果您要遵照這篇文章中的步驟)。
 2. 在 Visual Studio 中，按一下 **偵錯 > 附加至處理序**（Ctrl + Alt + P）。
 
     > [!TIP]

@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694042"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765524"
 ---
-# <a name="creating-pages-for-sharepoint"></a>建立 SharePoint 的網頁
+# <a name="create-pages-for-sharepoint"></a>建立 SharePoint 頁面，
   您可以建立應用程式頁面、 網站頁面、 主版頁面和 SharePoint 網站的頁面配置。  
   
  您可以使用 Visual Studio 中的範本來建立應用程式頁面。 使用 SharePoint Designer 中建立網站頁面、 主版頁面和頁面配置。 然後，您可以匯入這些頁面 Visual Studio SharePoint 專案中使用它們。  
@@ -67,7 +67,7 @@ ms.locfileid: "34694042"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何新增應用程式頁面： 會合併與 SharePoint 主版頁面的.aspx 內容。|  
+|[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何新增應用程式頁面： *.aspx*合併 SharePoint 主版頁面的內容。|  
 |[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|示範如何建立 SharePoint 網站執行的 ASP.NET 網頁。|  
 |[逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|示範如何設計和偵錯 ASP.NET Web 網頁的 SharePoint 網站。|  
   

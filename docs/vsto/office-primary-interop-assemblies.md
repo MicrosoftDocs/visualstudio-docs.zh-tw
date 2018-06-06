@@ -21,7 +21,7 @@ ms.openlocfilehash: d1851fd05999bfc2d925cbe4a079be3a9f4139db
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693467"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件

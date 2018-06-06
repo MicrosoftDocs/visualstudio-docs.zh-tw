@@ -19,7 +19,7 @@ ms.openlocfilehash: 5e507d83a1f1f75e346ccbab1858d797dc7b7518
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691839"
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目

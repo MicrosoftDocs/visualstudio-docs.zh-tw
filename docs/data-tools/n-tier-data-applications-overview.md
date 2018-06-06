@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747140"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 *多層式架構*資料應用程式是分成多個資料應用程式*層*。 多層式架構應用程式也稱為 「 分散式應用程式 」 和 「 多層式應用程式 」，在個別分成離散層級用戶端與伺服器之間分散處理。 當您開發存取資料的應用程式時，您應該有清楚的區隔構成應用程式的各層之間。
@@ -58,7 +59,7 @@ Visual Studio 包含可協助開發人員建立多層式架構應用程式的一
 
 下圖顯示功能與技術，可提供 Visual Studio 中，而且它們可能適用於什麼情況的多層式架構應用程式的中介層。
 
-![中間層元件](../data-tools/media/ntiermid.png "NtierMid")中介層
+![中間層元件](../data-tools/media/ntiermid.png)中介層
 
 中介層通常會連接到資料層使用資料連接。 此資料連接通常會儲存在資料存取元件中。
 
@@ -67,7 +68,7 @@ Visual Studio 包含可協助開發人員建立多層式架構應用程式的一
 
 下圖顯示功能與技術，可提供在 Visual Studio 中，而且它們可能適用於什麼情況的多層式架構應用程式的資料層。
 
-![資料層元件](../data-tools/media/ntierdatatier.png "ntierdatatier")資料層
+![資料層元件](../data-tools/media/ntierdatatier.png)資料層
 
 資料層無法直接從展示層中的用戶端存取。 相反地，資料存取元件中介層用於簡報和資料層之間的通訊。
 

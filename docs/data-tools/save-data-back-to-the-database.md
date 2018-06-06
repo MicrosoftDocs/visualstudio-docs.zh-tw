@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691130"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748055"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 資料集是記憶體中資料的複本。 如果您修改該資料時，它會是最好的作法是將這些變更儲存回資料庫。 您可以執行這三種方式之一：
@@ -60,7 +60,7 @@ ms.locfileid: "34691130"
 
  如果您所做的變更傳送回資料庫，第二個步驟是必要的。 如果您不使用資料繫結控制項，您必須以手動方式呼叫的 Update 方法相同的 TableAdapter （或資料配接器），您用來填入資料集。 不過，您也可以使用不同的配接器，例如，將資料從一個資料來源移到另一個或多個資料來源。 如果您不使用資料繫結，並會儲存相關資料表的變更，您必須以手動方式具現化類別的變數自動產生 TableAdapterManager，然後呼叫其 UdpateAll 方法。
 
- ![Visual Basic 資料集更新](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")兩階段更新處理程序和成功的更新中 DataRowVersion 的角色
+ ![Visual Basic 資料集更新](../data-tools/media/vbdatasetupdates.gif)兩階段更新處理程序和成功的更新中 DataRowVersion 的角色
 
  資料集包含的資料表，其中包含資料列集合的集合。 如果您想要稍後更新為基礎的資料來源，您必須使用 DataTable.DataRowCollection 屬性時新增或移除資料列上的方法。 這些方法會執行已更新的資料來源所需的變更追蹤。 如果您的資料列的屬性上呼叫 RemoveAt 集合，刪除不會傳送回資料庫。
 

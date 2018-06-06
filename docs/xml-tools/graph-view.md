@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751698"
 ---
 # <a name="graph-view"></a>圖形檢視
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/24/2018
 
  下圖顯示的設計介面中包含六個全域節點的圖表檢視。
 
- ![XML 結構描述設計工具的圖形檢視](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![XML 結構描述設計工具圖形檢視](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>設計介面
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/24/2018
 
  如果設計介面空白，XML 編輯器中， **XML 結構描述總管**，並顯示浮水印。 *浮水印*是所有 XSD 設計工具檢視連結的清單。
 
- ![XSD 設計工具;圖形檢視](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![XSD 設計工具；圖形檢視](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
 
@@ -98,7 +99,7 @@ ms.lasthandoff: 05/24/2018
 
  圖表檢視作用中時，會啟用下列 XSD 工具列按鈕。
 
- ![XML 結構描述設計工具工具列](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![XML 結構描述設計工具工具列](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |選項|描述|
 |------------|-----------------|

@@ -19,18 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8be3cd7576dcd42391c2f1bda1bd2d997ea958ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97bfe044ef89691afdb1a8e845867ce2e177dbb9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767958"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>如何：加入專案輸出參考
+# <a name="how-to-add-a-project-output-reference"></a>如何： 加入專案輸出參考
   若要部署至 SharePoint 的非 SharePoint 專案的組件 （或 Silverlight 專案中的.xap 檔案），請將其加入做為專案輸出參考。  
   
  此程序會建立兩個專案之間的方案組建相依性。 建置專案輸出參考相關聯的專案之前建置和部署 SharePoint 專案。  
   
-### <a name="to-add-a-project-output-reference"></a>若要加入專案輸出參考  
+### <a name="to-add-a-project-output-reference"></a>若要加入專案輸出參考
   
 1.  載入包含至少一個 SharePoint 專案和一個非 SharePoint 專案的方案。  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  選擇箭號旁**專案名稱**，選擇非 SharePoint 專案項目名稱，然後選擇**確定** 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [提供封裝和專案項目中的部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [如何： 將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

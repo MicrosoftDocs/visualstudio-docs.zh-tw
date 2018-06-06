@@ -25,7 +25,7 @@ ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692716"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 （在 Visual Studio 中的 Office 程式開發）

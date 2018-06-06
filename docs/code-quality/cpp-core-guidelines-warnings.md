@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746062"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
@@ -25,11 +26,11 @@ C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用程式碼分析的 c + + 核心檢查指導方針
  您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**中的核取方塊**程式碼分析**區段**屬性頁**對話方塊您的專案。
 
- ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  C + + 核心檢查 」 規則是預設的規則集時已啟用程式碼分析執行的擴充功能。 由於 c + + 核心檢查規則開發，全都堅實的某些規則和某些可能不是可供使用的所有程式碼，但仍有幫助。 規則分成兩個群組： 已釋放及實驗。 您可以選擇是否要為您的專案屬性中執行已釋出或實驗性規則。
 
- ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  若要啟用或停用 c + + 核心檢查規則集，請開啟**屬性頁**為您的專案 對話方塊。 在下**組態屬性**，依序展開**程式碼分析**，**延伸**。 旁邊的下拉式清單中控制**檢查 （發行） 啟用 c + + 核心**或**檢查 （實驗） 啟用 c + + 核心**，選擇**是**或**否**。 選擇**確定**或**套用**以儲存變更。
 
@@ -228,7 +229,7 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 2.  在**NuGet 套件管理員**視窗中，搜尋 Microsoft.CppCoreCheck。
 
-     ![Nuget 套件管理員 視窗會顯示 CppCoreCheck 封裝](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Nuget 套件管理員 視窗會顯示 CppCoreCheck 封裝](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝**按鈕，將規則加入至您的專案。
 

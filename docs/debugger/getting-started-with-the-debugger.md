@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766255"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程： 了解如何使用 Visual Studio 偵錯
 
@@ -39,6 +40,14 @@ ms.lasthandoff: 04/26/2018
 > * 檢查資料提示與偵錯工具視窗中的變數
 > * 檢查呼叫堆疊
 > * 使用例外狀況協助程式
+
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 2017 和。**NET 桌面開發**工作負載。
+
+    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+
+    如果您要安裝的工作負載，但是已經有 Visual Studio 中，按一下 **開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案**對話方塊 (選取**檔案**  > **新** > **專案**)。 Visual Studio 安裝程式即會啟動。 選擇。**NET 桌面開發**工作負載，然後選擇 **修改**。
 
 ## <a name="start-the-debugger"></a>開始偵錯工具 ！
 

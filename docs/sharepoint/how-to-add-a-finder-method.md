@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1660d440b72c48787af2cf2c653a420982c8799
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7773c2c81527e065652486eb851f3c27828bf76d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767125"
 ---
-# <a name="how-to-add-a-finder-method"></a>如何：加入搜尋方法
-  若要啟用 web 組件或清單中顯示的實體清單的商務資料連接服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法會傳回實體執行個體的集合。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+# <a name="how-to-add-a-finder-method"></a>如何： 加入搜尋方法
+  若要啟用 web 組件或清單中顯示的實體清單的商務資料連線 (BDC) 服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法會傳回實體執行個體的集合。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-finder-method"></a>若要建立搜尋方法  
   
-1.  在 BDC 設計工具中，選擇 [實體]。  
+1.  在**BDC 設計工具**，選擇實體。  
   
      如需詳細資訊，請參閱[How to： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
-2.  在功能表列上選擇 **檢視**，**其他視窗**， **BDC 方法詳細資料**。  
+2.  在功能表列上選擇 **檢視** > **其他視窗** > **BDC 方法詳細資料**。  
   
      **BDC 方法詳細資料**視窗隨即開啟。 如需有關**BDC 方法詳細資料**視窗中，請參閱[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   

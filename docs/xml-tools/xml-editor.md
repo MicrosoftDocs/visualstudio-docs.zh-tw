@@ -13,7 +13,7 @@ ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693782"
 ---
 # <a name="xml-editor"></a>XML 編輯器

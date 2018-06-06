@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746555"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說： 分析 managed 程式碼程式碼缺失
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
-1. 在**新專案**對話方塊方塊中，展開 **已安裝** > **Visual C#**，然後選擇 **的傳統 Windows 桌面**。
+1. 在**新專案**對話方塊方塊中，展開 **已安裝** > **Visual C#**，然後選擇  **Windows 桌面**。
 
 1. 選擇**類別庫 (.NET Framework)** 範本。
 

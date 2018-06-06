@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746542"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF 應用程式中顯示相關的資料
 在某些應用程式，您可以使用來自多個資料表或實體的父子式關聯性中彼此有關聯的資料。 例如，您可能想要顯示一個方格，其中會顯示從客戶`Customers`資料表。 當使用者選取特定的客戶時，另一個方格會顯示該客戶的相關訂單`Orders`資料表。
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/26/2018
 
      下圖示範相關**訂單**資料表**客戶**資料表中的資料集在**資料來源**視窗。
 
-     ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif "DataSources2")
+     ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>另請參閱
 
