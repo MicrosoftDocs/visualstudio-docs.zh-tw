@@ -1,5 +1,5 @@
 ---
-title: 在 Office 方案中的晚期繫結 |Microsoft 文件
+title: 在 Office 方案中的晚期繫結
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572546"
 ---
-# <a name="late-binding-in-office-solutions"></a>Office 方案中的晚期繫結
+# <a name="late-binding-in-office-solutions"></a>在 Office 方案中的晚期繫結
   Office 應用程式的物件模型中的某些類型提供功能，可透過晚期繫結功能。 例如，一些方法和屬性可以傳回不同類型的物件，視 Office 應用程式的內容而定，而某些型別可以公開不同的方法或在不同內容中的屬性。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  Visual Basic 專案 where **Option Strict**已關閉，因此 Visual C# 目標的專案[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]可直接與採用這些晚期繫結功能的類型。  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>隱含和明確轉型的物件傳回值  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>隱含和明確轉換物件的傳回值  
  許多方法和屬性中的 Microsoft Office 主要 interop 組件 (Pia) 傳回<xref:System.Object>值，因為它們可以傳回許多不同類型的物件。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A>屬性會傳回<xref:System.Object>因為其傳回值可以是<xref:Microsoft.Office.Interop.Excel.Worksheet>或<xref:Microsoft.Office.Interop.Excel.Chart>根據使用中工作表的是物件。  
   
  方法或屬性傳回<xref:System.Object>，您必須明確地 （在 Visual Basic) 將物件轉換成正確的類型，在 Visual Basic 專案位置**Option Strict**上。 您沒有明確轉換<xref:System.Object>傳回值，在 Visual Basic 專案位置**Option Strict**已關閉。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="accessing-members-that-are-available-only-through-late-binding"></a>存取成員，只能透過晚期繫結  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>只能透過晚期繫結的存取成員  
  某些屬性和方法 Office Pia 中的都可以只透過晚期繫結。 專案 Visual Basic 中的 where **Option Strict**已關閉，或在 Visual C# 專案中目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]，您可以這些語言中使用晚期繫結功能，來存取晚期繫結成員。 專案 Visual Basic 中的 where **Option Strict**已開啟，您必須使用反映來存取這些成員。  
   
 ### <a name="examples"></a>範例  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>另請參閱  
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
+ [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [使用動態類型&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict 陳述式](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   

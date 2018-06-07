@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572237"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/19/2018
  信任的應用程式部署是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所特有，並且僅能與 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式搭配使用。  
   
 ### <a name="sign-the-deployment"></a>簽署部署  
- 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱 [如何： 發行 ClickOnce 應用程式使用發行精靈] (http://msdn.microsoft.com/library/31kztyey\(v = vs.110\)。  
+ 取得您的憑證之後，必須用它來簽署您的部署。 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 發行精靈來部署應用程式，精靈會自動產生測試憑證 (如果您未自行指定憑證的話)。 不過，您也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案設計工具視窗，提供由 CA 所提供的憑證。  另請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 > [!CAUTION]
 >  我們不建議使用測試憑證來部署應用程式。  

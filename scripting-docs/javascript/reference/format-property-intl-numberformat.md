@@ -1,27 +1,29 @@
 ---
-title: "format 屬性 (Intl.NumberFormat) |Microsoft 文件"
-ms.custom: 
+title: format 屬性 (Intl.NumberFormat) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68c3223a-023c-4fa0-aa99-d049a7a0e26a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be40f8e94220ad7504dd3b9736e71b3416bb3d2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7528c79852c4836dfd967322b876d738f9781107
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572471"
 ---
 # <a name="format-property-intlnumberformat"></a>format 屬性 (Intl.NumberFormat)
 傳回使用指定的數字格式器設定來格式化地區設定特定的數字的函數。  
@@ -34,7 +36,7 @@ numberFormatObj.format
   
 #### <a name="parameters"></a>參數  
  `numberFormatObj`  
- 必要項。 名稱`NumberFormat`做為格式子物件。  
+ 必要。 名稱`NumberFormat`做為格式子物件。  
   
 ## <a name="remarks"></a>備註  
  所傳回的函式`format`屬性會接受單一引數， `value`，並傳回字串，表示當地語系化的數字，使用指定的選項`NumberFormat`物件。 如果`value`未提供，則函數會傳回`NaN`（不是數字）。  
@@ -47,7 +49,7 @@ var nf = new Intl.NumberFormat(["en-US"], {
     style: "currency",  
     currency: "CNY",  
     currencyDisplay: "symbol",  
-    maximumFractionDigit: 1  
+    maximumFractionDigits: 1  
 })  
   
 if (console && console.log) {  

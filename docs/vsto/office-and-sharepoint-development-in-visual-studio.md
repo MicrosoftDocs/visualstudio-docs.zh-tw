@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572162"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 開發
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 office 和 SharePoint 開發
   若要擴充 Microsoft Office 和 SharePoint，您可以建立讓使用者從 [Office 市集](https://store.office.com/) 或組織目錄下載的輕量應用程式或增益集，或是建立以 .NET Framework 為基礎的解決方案，讓使用者可以安裝在電腦上。  
   
  本主題內容：  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  相較於 VSTO 增益集和解決方案，這些增益集的使用量非常小，而且可以使用 HTML5、JavaScript、CSS3 和 XML 等幾乎任何 Web 程式設計技術來建置。  若要開始，請使用 Visual Studio 中的 Office Developer Tools，或是名稱代碼為 Napa Office 365 Development Tools 的輕量 Web 型工具，其可讓您建立專案、撰寫程式碼，以及在瀏覽器中執行您的增益集。  
   
  ![Office 與 SharePoint 概念模型的應用程式](../vsto/media/officeandsharepointapps2015.png "Office 與 SharePoint 概念模型的應用程式")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>建置 Office 增益集  
  若要擴充 Office 的功能，請建置 Office 增益集。 它基本上是裝載於 Office 應用程式，例如 Excel、 Word、 Outlook 和 PowerPoint 的網頁。 您的應用程式可以將功能加入至文件、工作表、電子郵件訊息、約會、簡報和專案中。  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |深入了解 SharePoint 增益集，然後建置一個。|[SharePoint 增益集](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |將 SharePoint 增益集與傳統 SharePoint 解決方案相比較。|[SharePoint 增益集與 SharePoint 解決方案相比較](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|選擇要建置 SharePoint 增益集，還是建置 SharePoint 解決方案。|[在 SharePoint 增益集與 SharePoint 解決方案間抉擇](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|選擇要建置 SharePoint 增益集，還是建置 SharePoint 解決方案。|[SharePoint 增益集與 SharePoint 解決方案之間做決定](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> 建立 VSTO 增益集  
  建立的 VSTO 增益集以 Office 2007 或 Office 2010 為目標或來超越 Office 2013 和 Office 2016 極限 Office 增益集。VSTO 增益集只會在桌面上執行。 使用者必須安裝 VSTO 增益集，所以通常較難部署和支援。  不過，您的 VSTO 增益集可以與 Office 更密切地整合。 例如，它可以將索引標籤和控制項加入至 Office 功能區，以及執行進階的自動化工作，例如合併文件或修改圖表。 您可以運用 .NET Framework，並使用 C# 和 Visual Basic 來與 Office 物件互動。  

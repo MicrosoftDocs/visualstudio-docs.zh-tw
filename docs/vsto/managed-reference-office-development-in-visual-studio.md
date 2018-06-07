@@ -1,5 +1,5 @@
 ---
-title: Managed 參考 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件
+title: Managed 的參考 （在 Visual Studio 中的 Office 程式開發）
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c991b6507ded441dd37ec92cb5efd0e2167285
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572188"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>Managed 參考 (Visual Studio 中的 Office 程式開發)
+# <a name="managed-reference-office-development-in-visual-studio"></a>Managed 的參考 （在 Visual Studio 中的 Office 程式開發）
   本節包含命名空間的應用程式開發介面參考文件，和用在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]之 Office 專案中的類型。 如需命名空間和類型，在.NET Framework 3.5 為目標的 Office 專案中可用的 API 參考文件，請參閱 Visual Studio 文件中的下列參考章節： [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
 > [!NOTE]  
@@ -63,8 +64,8 @@ ms.lasthandoff: 04/16/2018
  包含用於建置 Office 專案的 MSBuild 工作類別。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [使用者入門&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Visual Studio tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   

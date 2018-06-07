@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571766"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、XML、文字編輯器、選項對話方塊
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、 XML、 文字編輯器、 選項對話方塊
 
 此對話方塊可讓您變更 XML 編輯器的自動完成及結構描述設定。 您可以存取**選項**對話方塊從**工具**功能表。
 
@@ -70,5 +71,5 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>另請參閱
 
-- [屬性視窗、XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)
+- [XML 文件屬性，屬性視窗](../xml-tools/xml-document-properties-properties-window.md)
 - [XML 編輯器元件](../xml-tools/xml-editor-components.md)
