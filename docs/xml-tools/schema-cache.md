@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5febfd1055c10eaa39d27e411aba5cf442a97c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572783"
 ---
 # <a name="schema-cache"></a>結構描述快取
 
-XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。
+XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。
 
 XML 編輯器也可以尋找位於方案中的結構描述，結構描述中所指定**結構描述**欄位的文件**屬性**視窗中，與所識別的結構描述`xsi:schemaLocation`和`xsi:noNamespaceSchemaLocation`屬性。
 
@@ -26,32 +27,32 @@ XML 編輯器也可以尋找位於方案中的結構描述，結構描述中所�
 
 |Filename|描述|
 |--------------|-----------------|
-|catalog.xsd|XML 編輯器結構描述目錄檔案的結構描述。 如需結構描述目錄的詳細資訊，請參閱下方。|
-|DotNetConfig.xsd|Web.Config 檔案的結構描述 」http://schemas.microsoft.com/.NETConfiguration/v2.0"。|
-|msbuild.xsd|MSBuild make 檔中，結構描述 」http://schemas.microsoft.com/developer/msbuild/2003"。|
-|msdata.xsd|<xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。|
-|msxsl.xsd|Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。|
-|SnippetFormat.xsd|程式碼片段 XML 檔案的結構描述。 例如，請參閱 %InstallDir%\VC#\Expansions。|
-|Soap1.1.xsd|簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述http://schemas.xmlsoap.org/soap/envelope/。|
-|Soap1.2.xsd|簡易物件存取通訊協定 1.2 的結構描述。|
-|SiteMapSchema.xsd|ASP.NET sitemap XML 檔案的結構描述 」http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|
-|wsdl.xsd|結構描述的 Web 服務描述語言， http://schemas.xmlsoap.org/wsdl/。|
-|xenc.xsd|XML 加密的結構描述http://www.w3.org/2000/09/xmldsig#。|
-|xhtml.xsd|XHTML 的結構描述http://www.w3.org/1999/xhtml。|
-|xlink.xsd|XLink1.0，結構描述http://www.w3.org/1999/xlink。|
-|xml.xsd|架構中描述的 xml: space 及 xml: lang 屬性http://www.w3.org/XML/1998/namespace。|
-|xmlsig.xsd|XML 數位簽章的結構描述http://www.w3.org/2000/09/xmldsig#。|
-|xsdschema.xsd|架構中描述的 XSD 本身當中， http://www.w3.org/2001/XMLSchema。|
-|xslt.xsd|轉換的 XML 結構描述， http://www.w3.org/1999/XSL/Transform。|
+|*catalog.xsd*|XML 編輯器結構描述目錄檔案的結構描述。 如需結構描述目錄的詳細資訊，請參閱下方。|
+|*DotNetConfig.xsd*|Web.Config 檔案的結構描述 」http://schemas.microsoft.com/.NETConfiguration/v2.0"。|
+|*msbuild.xsd*|MSBuild make 檔中，結構描述 」http://schemas.microsoft.com/developer/msbuild/2003"。|
+|*msdata.xsd*|<xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。|
+|*msxsl.xsd*|Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。|
+|*SnippetFormat.xsd*|程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%InstallDir%\VC#\Expansions*。|
+|*Soap1.1.xsd*|簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述http://schemas.xmlsoap.org/soap/envelope/。|
+|*Soap1.2.xsd*|簡易物件存取通訊協定 1.2 的結構描述。|
+|*SiteMapSchema.xsd*|ASP.NET sitemap XML 檔案的結構描述 」http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"。|
+|*wsdl.xsd*|結構描述的 Web 服務描述語言， http://schemas.xmlsoap.org/wsdl/。|
+|*xenc.xsd*|XML 加密的結構描述http://www.w3.org/2000/09/xmldsig#。|
+|*xhtml.xsd*|XHTML 的結構描述http://www.w3.org/1999/xhtml。|
+|*xlink.xsd*|XLink1.0，結構描述http://www.w3.org/1999/xlink。|
+|*xml.xsd*|架構中描述的 xml: space 及 xml: lang 屬性http://www.w3.org/XML/1998/namespace。|
+|*xmlsig.xsd*|XML 數位簽章的結構描述http://www.w3.org/2000/09/xmldsig#。|
+|*xsdschema.xsd*|架構中描述的 XSD 本身當中， http://www.w3.org/2001/XMLSchema。|
+|*xslt.xsd*|轉換的 XML 結構描述， http://www.w3.org/1999/XSL/Transform。|
 
-## <a name="updating-schemas-in-the-cache"></a>更新快取中的結構描述
+## <a name="update-schemas-in-the-cache"></a>更新快取中的結構描述
  編輯器會在載入 XML 編輯器封裝時，載入結構描述快取目錄，並於執行期間監看是否發生任何變更。 如果已加入結構描述，則會將其自動載入已知結構描述的記憶體中索引。 如果已移除結構描述，則會將其自動從記憶體中索引移除。 如果已更新結構描述，則會自動讓此結構描述的記憶體中快取失效。
 
 > [!NOTE]
 > 因為結構描述快取目錄對您的電腦是通用的，所以在這裡您應該僅加入標準的、且對您電腦上可能建立之所有 Visual Studio 專案皆有用的結構描述。
 
 
- XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 catalog.xsd 檔定義目錄檔案的格式，並包含在結構描述快取目錄中。 catalog.xml 檔是預設的目錄，而且包含 %InstallDir% 中其他結構描述的連結。 以下是 catalog.xml 檔的範例：
+ XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 *Catalog.xsd*檔會定義類別目錄檔案的格式並包含在結構描述快取目錄。 *Catalog.xml*檔是預設的目錄，而且包含其他結構描述中連結 *%installdir%*。 以下是取樣*catalog.xml*檔案：
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -92,7 +93,7 @@ XML 編輯器也可以尋找位於方案中的結構描述，結構描述中所�
 ```
 
 ## <a name="localized-schemas"></a>當地語系化結構描述
- 在許多情況下，catalog.xml 檔不包含當地語系化結構描述的項目。 您可以將其他項目加入到指向當地語系化資料結構目錄的 catalog.xml 檔案中。
+ 在許多情況下*catalog.xml*檔案未包含當地語系化結構描述的項目。 您可以加入其他項目，以*catalog.xml*指向當地語系化結構描述目錄的檔案。
 
  在下列範例中，已經建立使用 %LCID% 變數指向當地語系化結構描述的新 `Schema` 項目。
 
@@ -120,7 +121,7 @@ XML 編輯器也可以尋找位於方案中的結構描述，結構描述中所�
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>加入通用結構描述的其他目錄
 
-1.  編輯 XML 編輯器結構描述快取目錄中的 catalog.xml 檔。
+1.  編輯*catalog.xml* XML 編輯器結構描述快取目錄中的檔案。
 
 2.  加入指向其他結構描述目錄的新 `<Catalog href="..."/>` 項目。
 

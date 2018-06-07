@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572721"
 ---
 # <a name="create-bootstrapper-packages"></a>建立啟動載入器套件
 安裝程式 (Setup Program) 是一般安裝程式 (Installer)，可設定來偵測及安裝可轉散發元件，例如 Windows Installer (.msi) 檔案和可執行程式。 安裝程式也稱為啟動載入器。 其程式設計方式是透過一組 XML 資訊清單，指定用於管理元件安裝的中繼資料。  每個可轉散發元件或先決條件，出現在**必要條件**ClickOnce 對話方塊是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。 
@@ -77,7 +78,7 @@ ms.lasthandoff: 05/10/2018
   
 每個可轉散發元件會出現在套件目錄下各自的子資料夾中。 產品資訊清單和可轉散發檔案必須放入這個子資料夾。 當地語系化的版本的元件和套件資訊清單必須放在根據文化特性名稱來命名的子資料夾中。  
   
-這些檔案複製到啟動載入器資料夾之後，啟動載入器套件會自動出現在 Visual Studio**必要條件** 對話方塊。 如果您的自訂啟動載入器套件沒有出現，請關閉，然後再重新開啟**必要條件** 對話方塊。 如需詳細資訊，請參閱 [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
+這些檔案複製到啟動載入器資料夾之後，啟動載入器套件會自動出現在 Visual Studio**必要條件** 對話方塊。 如果您的自訂啟動載入器套件沒有出現，請關閉，然後再重新開啟**必要條件** 對話方塊。 如需詳細資訊，請參閱 [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。  
   
 下表顯示啟動載入器會自動填入的屬性。  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/10/2018
 |ApplicationName|應用程式的名稱。|  
 |ProcessorArchitecture|可執行檔之目標平台的處理器和每個字組的位元。 包括下列值：<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98 或 Windows ME 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
+|[Versionnt>](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 作業系統的版本號碼。 版本的語法是 Major.Minor.ServicePack。|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|在安裝期間執行的 Windows Installer 組件 (msi.dll) 版本。|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|如果使用者具有系統管理員權限，則會設定這個屬性。 值為 true 或 false。|  
 |InstallMode|安裝模式指出需要從中安裝元件的位置。 包括下列值：<br /><br /> 從廠商的網站安裝-HomeSite-必要條件。<br />從您選取的位置安裝-SpecificSite-必要條件。<br />從應用程式的相同位置安裝-SameSite-必要條件。|  

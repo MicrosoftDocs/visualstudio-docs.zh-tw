@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2e2b7a9e6511faaa1941d65f6b328a07b10f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ae7595121fcefa36998a88b53aae466d3a726cb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573319"
 ---
 # <a name="integration-with-xml-editor"></a>與 XML 編輯器整合
 
@@ -22,9 +23,9 @@ XML 結構描述設計工具會與 XML 編輯器整合。 如果您修改 XSD �
 
 -   在 XML 編輯器中，以滑鼠右鍵按一下節點，然後選取**在 XML 結構描述總管中顯示**。
 
--   在 [圖形] 檢視和 XML 結構描述總管中，按兩下的節點，或以滑鼠右鍵按一下節點並選取**檢視程式碼**。 在內容模型檢視中，以滑鼠右鍵按一下節點並選取**檢視程式碼**。
+-   在 [圖形] 檢視和**XML 結構描述總管**、 按兩下的節點，或以滑鼠右鍵按一下節點並選取**檢視程式碼**。 在內容模型檢視中，以滑鼠右鍵按一下節點並選取**檢視程式碼**。
 
-下列螢幕擷取畫面會顯示在 XML 結構描述總管中開啟的 XML 結構描述。 XML 結構描述總管會在樹狀檢視中顯示結構描述設定。 XML 編輯器會顯示目前在 XML 結構描述總管中使用之節點的文字檢視。
+下列螢幕擷取畫面顯示 XML 結構描述中開啟**XML 結構描述總管**。 **XML 結構描述總管**顯示在樹狀檢視中設定的結構描述。 XML 編輯器會顯示目前作用中節點的文字檢視**XML 結構描述總管**。
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 

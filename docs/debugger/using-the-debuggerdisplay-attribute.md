@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573241"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 [DebuggerDisplayAttribute 類別](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+」，nq"後置詞告訴顯示最終的值時，請移除引號，運算式評估工具 (nq = 沒有引號)。 
   
 ## <a name="example"></a>範例  
  下列程式碼範例將示範如何使用 `DebuggerDisplay`搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 (例如 [ **監看式** ] 視窗)，它會產生類似下面所示的展開：  

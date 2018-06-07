@@ -1,5 +1,5 @@
 ---
-title: 限制的 Windows Form Office 文件上的控制項 |Microsoft 文件
+title: Office 文件上的 Windows Form 控制項的限制
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572955"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項限制
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項的限制
 
 有一些 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中，加入 Windows Form 控制項和 Windows Form 控制項加入至 Windows Form 之間的差異。 例如，當您將加入<xref:Microsoft.Office.Tools.Word.Controls.Button>這類控制項加入文件中，屬性<xref:System.Windows.Forms.Control.Dock>， <xref:System.Windows.Forms.Control.Anchor>，和<xref:System.Windows.Forms.Control.TabIndex>未如您預期運作。
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/26/2018
 
 - 在設計階段將 Windows Form 控制項加入 Word 文件中。 您可以修改設計工具中的控制項來變更。
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項中的差異
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項的差異
 
 在 Windows Form 上，但確實存在一些差異 Windows Form 控制項通常在 Office 文件上有相同的行為。 下表描述的差異在於 Office 文件上的 Windows Form 控制項。
 
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/26/2018
 |控制項調整大小|如果您調整使用其中一個八個調整大小控點的文件上的控制項，新的控制項維度不會反映在**屬性**直到則在重新選取控制項的視窗。|
 |控制行為|Excel 工作表上的控制項可能會在工作表視窗分割時不正常的行為。 例如，若要存取<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>工作表上只可以在其中一個視窗中。|
 |控制項命名|您無法使用保留的字名稱的控制項。 例如，如果您加入<xref:Microsoft.Office.Tools.Excel.Controls.Button>加入工作表並將名稱變更為**系統**，當您建置專案時，會發生錯誤。|
-|以程式設計方式加入控制項|請勿將控制項加入文件，在執行階段使用控制項的建構函式。 相反地，使用所提供的協助程式方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法，將按鈕加入至工作表。 如果您想要加入的控制項不支援這些 helper 方法，您可以使用 AddControl 方法。 如需詳細資訊，請參閱 [在執行階段將控制項加入至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)。|
-|複製控制項|如果您複製的 Windows Form 控制項，並將它貼到文件中，在執行階段，會將空的 ActiveX 控制項容器貼入文件。 不會顯示在 Windows Form 控制項，這是在新的位置，以及程式碼後置原始控制項不會複製到容器 ActiveX 控制項。|
+|以程式設計方式加入控制項|請勿將控制項加入文件在執行階段使用控制項的建構函式。 相反地，使用所提供的協助程式方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 例如，使用<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>方法，將按鈕加入至工作表。 如果您想要加入的控制項不支援這些 helper 方法，您可以使用`AddControl`方法。 如需詳細資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。|
+|複製控制項|如果您複製的 Windows Form 控制項，並將它貼到文件在執行階段，會將空的 ActiveX 控制項容器貼入文件。 不會顯示在 Windows Form 控制項，這是在新的位置，以及程式碼後置原始控制項不會複製到容器 ActiveX 控制項。|
 
 ## <a name="limitations-in-document-level-projects"></a>在文件層級專案中的限制
 
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/26/2018
 特定的 Windows Form 控制項，就會自**工具箱**當 Excel 工作表或 Word 文件是在 Visual Studio 設計工具中開啟。 這是因為技術限制，或因為已經使用 Word 或 Excel 中的功能。 Excel 和 Word 專案支援的 Windows Form 控制項和其他元件中出現的所有**工具箱**當文件具有焦點，而且您也可以將協力廠商控制項加入工作表或文件。
 
 > [!NOTE]
-> 所有控制項都移除了**工具箱**文件受到保護時。 如需文件保護的詳細資訊，請參閱[文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)。
+> 所有控制項都移除了**工具箱**文件受到保護時。 如需文件保護的詳細資訊，請參閱[文件保護文件層級方案中的](../vsto/document-protection-in-document-level-solutions.md)。
 
 > [!NOTE]
 > 第三方勂厞饡瑢<xref:System.Runtime.InteropServices.ComVisibleAttribute>屬性設為**true**才能使用 Office 方案中。
@@ -178,13 +179,13 @@ ms.lasthandoff: 04/26/2018
 
 - <xref:System.Windows.Forms.ToolStripPanel>
 
-### <a name="support-for-legacy-activex-controls"></a>支援的舊版 ActiveX 控制項
+### <a name="support-for-legacy-activex-controls"></a>支援的舊版的 ActiveX 控制項
 
 如果您建立使用現有的 Word 文件或包含 ActiveX 控制項的 Excel 活頁簿的文件層級 Office 專案時，ActiveX 控制項的功能不會遺失。不過，沒有您從 Visual Studio 中的文件中加入新的 ActiveX 控制項的支援。 例如，如果您的 Word 文件有一個按鈕，從**控制項**工具箱 中執行 Visual Basic for Applications (VBA) 巨集，它會繼續已在 Office 專案中使用文件之後，執行巨集。 不過，建議您移除 ActiveX 控制項和 VBA 巨集和取代 Windows Form 控制項和 managed 程式碼。
 
 ## <a name="see-also"></a>另請參閱
 
 - [Office 文件上的控制項](../vsto/controls-on-office-documents.md)
-- [Office 文件上的 Windows Forms 控制項概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [在執行階段將控制項新增至 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [如何：將 Windows Forms 控制項新增至 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573124"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何： 使用 XML 片段
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 將 XML 片段加入編輯器後，片段中所有可編輯的欄位均會以黃色反白顯示，且游標位於第一個可編輯欄位上。
 
-## <a name="insert-snippet"></a>插入程式碼片段
+## <a name="insert-snippet"></a>插入片段
 
 下列程序說明如何存取**插入程式碼片段**命令。
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 從清單中使用滑鼠，或輸入的程式碼片段和按名稱選取片段** 索引標籤**或**Enter**。
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>透過 IntelliSense 自動完成清單插入片段
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>若要插入程式碼片段透過 IntelliSense 自動完成清單
 
 1. 將游標置於您要插入 XML 片段的位置。
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > **環繞**命令也會提供透過鍵盤快速鍵 (**Ctrl**+**K**，然後**Ctrl** +**S**)。
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>透過操作功能表使用以此環繞
+### <a name="to-use-surround-with-from-the-context-menu"></a>若要從內容功能表使用範圍陳述式
 
 1. 在 [XML 編輯器] 中選取要環繞的文字。
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段** 索引標籤**或**Enter**。
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要透過 IntelliSense 功能表使用以此環繞
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要從 IntelliSense 功能表使用範圍陳述式
 
 1. 在 [XML 編輯器] 中選取要環繞的文字。
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/26/2018
 
 3. 從清單中使用滑鼠，或輸入片段並按名稱選取片段** 索引標籤**或**Enter**。
 
-## <a name="using-xml-snippets"></a>使用 XML 片段
+## <a name="use-xml-snippets"></a>使用 XML 片段
 
 一旦選擇了 XML 片段，程式碼片段的文字便會自動插入游標位置。 會反白顯示片段中任何可編輯的欄位，並自動選取第一個可編輯的欄位。 目前選取的欄位為 boxed。
 
@@ -109,10 +110,10 @@ ms.lasthandoff: 04/26/2018
 
 按下**Enter**或**Esc**取消欄位編輯，並將編輯器返回到正常。
 
-要變更可編輯的程式碼片段欄位的預設色彩，請修改中的程式碼片段欄位設定**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱[如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+要變更可編輯的程式碼片段欄位的預設色彩，請修改**程式碼片段欄位**中設定**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱[如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [XML 片段](../xml-tools/xml-snippets.md)
-- [如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)
+- [如何： 從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [如何： 建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)
