@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthor::ParseScriptText |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptAuthor::ParseScriptText |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.ParseScriptText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::ParseScriptText
 ms.assetid: ebe212e8-6789-423d-ad22-92be984dc7ad
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645508"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
 剖析指令碼文字、 將文字加入指令碼撰寫引擎，並建立`IScriptEntry`對應至指令碼區塊的物件。  

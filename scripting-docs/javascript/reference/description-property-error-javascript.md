@@ -1,13 +1,13 @@
 ---
-title: "description 屬性 （錯誤） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: description 屬性 （錯誤） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Description
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Description property
 - errors, description
 ms.assetid: ea727f1e-2041-4400-965c-67e6d47a1ff0
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636358"
 ---
 # <a name="description-property-error-javascript"></a>description 屬性 (錯誤) (JavaScript)
 傳回或設定與特定的錯誤相關聯的描述性字串。  

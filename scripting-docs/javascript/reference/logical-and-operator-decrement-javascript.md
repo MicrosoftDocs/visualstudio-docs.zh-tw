@@ -1,13 +1,13 @@
 ---
-title: "邏輯 AND 運算子 (&amp;&amp;) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 邏輯 AND 運算子 (&amp;&amp;) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '&&'
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - logical AND operator
 - '&& operator'
 ms.assetid: 4714dea9-1999-444a-8acd-72f0851e4f65
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638278"
 ---
 # <a name="logical-and-operator-ampamp-javascript"></a>邏輯 AND 運算子 (&amp;&amp;) (JavaScript)
 針對兩個運算式執行邏輯結合運算。  

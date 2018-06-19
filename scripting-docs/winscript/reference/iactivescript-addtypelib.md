@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::AddTypeLib |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::AddTypeLib |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddTypeLib
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640868"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 將類型程式庫加入至指令碼的命名空間。 這是類似於`#include`C/c + + 中的指示詞。 它可讓一組預先定義的項目類別定義，例如`typedefs`，和名為要加入至執行階段環境的指令碼中使用的常數。  

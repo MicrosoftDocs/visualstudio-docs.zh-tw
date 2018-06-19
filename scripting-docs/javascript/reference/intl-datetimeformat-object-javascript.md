@@ -1,13 +1,13 @@
 ---
-title: "Intl.DateTimeFormat 物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Intl.DateTimeFormat 物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DateTimeFormat
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: cc555ac2-f31c-4239-a612-b84c08e3a37f
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641968"
 ---
 # <a name="intldatetimeformat-object-javascript"></a>Intl.DateTimeFormat 物件 (JavaScript)
 提供地區設定特定的日期和時間格式。  
@@ -46,7 +47,7 @@ dateTimeFormatObj = new Intl.DateTimeFormat([locales][, options])
  選擇項。 一個物件，該物件包含一個或多個指定日期和時間之格式化選項的屬性。 如需詳細資訊，請參閱＜備註＞一節。  
   
 ## <a name="remarks"></a>備註  
- `locales`參數必須符合[BCP 47](http://tools.ietf.org/html/rfc5646)語言或地區設定標記，例如"EN-US"和"ZH-CN"。 此標記可能包括語言、國家/地區和變化。 例如語言標記的詳細資訊，請參閱[附錄 A](http://tools.ietf.org/html/rfc5646#appendix-A)的 BCP 47。 如`DateTimeFormat`，您可以新增**-u**子標記的地區設定字串中要包含一個或兩個下列 Unicode 延伸：  
+ `locales`參數必須符合[BCP 47](http://tools.ietf.org/html/rfc5646)語言或地區設定標記，例如"EN-US"和"ZH-CN"。 此標記可能包括語言、國家/地區和變化。 例如語言標記的詳細資訊，請參閱[附錄 A](http://tools.ietf.org/html/rfc5646#appendix-A)的 BCP 47。 如`DateTimeFormat`，您可以新增 **-u**子標記的地區設定字串中要包含一個或兩個下列 Unicode 延伸：  
   
 -   -指定編號的系統延伸兵：*語言*-*區域*-u-兵-*numberingsystem*  
   

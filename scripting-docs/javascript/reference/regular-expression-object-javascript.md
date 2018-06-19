@@ -1,13 +1,13 @@
 ---
-title: "規則運算式物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 規則運算式物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RegularExpression_JavaScript
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - regular expressions, RegExp object
 - RegExp object, overview
 ms.assetid: 346aa83e-a045-47ea-acae-b42c7b121534
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642038"
 ---
 # <a name="regular-expression-object-javascript"></a>規則運算式物件 (JavaScript)
 此物件包含規則運算式模式，以及指出如何套用該模式的旗標。  

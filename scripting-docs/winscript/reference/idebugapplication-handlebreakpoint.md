@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplication::HandleBreakPoint |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication::HandleBreakPoint |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.HandleBreakPoint
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::HandleBreakPoint
 ms.assetid: 97219bdf-a39a-4e69-81ac-4ca2afe77ce5
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726138"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 會導致目前的執行緒可封鎖，並傳送通知之中斷點的 IDE 偵錯工具。  

@@ -1,13 +1,13 @@
 ---
-title: "ubound 方法 (VBArray) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: ubound 方法 (VBArray) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ubound
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - ubound method
 ms.assetid: 761811c5-9a3d-4cb3-bfe0-0a8749f34496
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641538"
 ---
 # <a name="ubound-method-vbarray-javascript"></a>ubound 方法 (VBArray) (JavaScript)
 傳回在指定之 VBArray 維度中使用的最高索引值。  

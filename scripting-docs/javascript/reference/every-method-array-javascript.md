@@ -1,12 +1,13 @@
 ---
-title: "every 方法 （陣列） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: every 方法 （陣列） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - every method
 - arrays [JavaScript], every method
 ms.assetid: dc4ee2f8-fb9e-4c9f-af5a-fe836e40ddd1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637398"
 ---
 # <a name="every-method-array-javascript"></a>every 方法 (陣列) (JavaScript)
 判斷陣列的所有成員是否都符合指定的測試。  

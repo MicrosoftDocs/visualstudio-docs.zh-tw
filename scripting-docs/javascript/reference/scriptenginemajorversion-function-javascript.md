@@ -1,13 +1,13 @@
 ---
-title: "ScriptEngineMajorVersion 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: ScriptEngineMajorVersion 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ScriptEngineMajorVersion
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - ScriptEngineMajorVersion function
 ms.assetid: 3e251bce-1e14-4cb5-b79f-53845d1920fd
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639678"
 ---
 # <a name="scriptenginemajorversion-function-javascript"></a>ScriptEngineMajorVersion 函式 (JavaScript)
 取得使用中指令碼引擎的主要版本號碼。  

@@ -1,12 +1,13 @@
 ---
-title: "Object.seal 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.seal 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - Object.seal function
 - seal function
 ms.assetid: e72c804a-4dab-4ec9-b9df-9c9c908aa12d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641148"
 ---
 # <a name="objectseal-function-javascript"></a>Object.seal 函式 (JavaScript)
 防止修改現有屬性 (Property) 的屬性 (Attribute)，並可防止新屬性  (Attribute) 加入。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33874820"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 元件目錄
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="feedback-client"></a>Feedback Client
 
-**識別碼：**Microsoft.VisualStudio.Workload.FeedbackClient
+**識別碼：** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**描述：**意見反應用戶端可讓專案關係人針對 Visual Studio Team Services 或 Team Foundation Server 提供豐富的意見反應。
+**描述：** 意見反應用戶端可讓專案關係人針對 Visual Studio Team Services 或 Team Foundation Server 提供豐富的意見反應。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

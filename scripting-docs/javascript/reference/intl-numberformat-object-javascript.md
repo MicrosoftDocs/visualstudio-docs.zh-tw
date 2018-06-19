@@ -1,13 +1,13 @@
 ---
-title: "Intl.NumberFormat 物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Intl.NumberFormat 物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - NumberFormat
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 820bc90f-f1e7-457a-b90d-487dfc3a736d
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640128"
 ---
 # <a name="intlnumberformat-object-javascript"></a>Intl.NumberFormat 物件 (JavaScript)
 提供地區設定特定的數字格式。  
@@ -46,7 +47,7 @@ numberFormatObj = new Intl.NumberFormat([locales][, options])
  選擇項。 物件，其中包含一或多個指定數字格式選項的屬性。 如需詳細資訊，請參閱＜備註＞一節。  
   
 ## <a name="remarks"></a>備註  
- `locales`參數必須符合[BCP 47](http://tools.ietf.org/html/rfc5646)語言或地區設定標記，例如"EN-US"和"ZH-CN"。 此標記可能包括語言、國家/地區和變化。 例如語言標記的詳細資訊，請參閱[附錄 A](http://tools.ietf.org/html/rfc5646#appendix-A)的 BCP 47。 如`NumberFormat`，您可以新增**-u**子標記後面-兵指定編號的系統擴充功能：  
+ `locales`參數必須符合[BCP 47](http://tools.ietf.org/html/rfc5646)語言或地區設定標記，例如"EN-US"和"ZH-CN"。 此標記可能包括語言、國家/地區和變化。 例如語言標記的詳細資訊，請參閱[附錄 A](http://tools.ietf.org/html/rfc5646#appendix-A)的 BCP 47。 如`NumberFormat`，您可以新增 **-u**子標記後面-兵指定編號的系統擴充功能：  
   
  「*語言*-*區域*-u-兵-*numberingsystem*"  
   

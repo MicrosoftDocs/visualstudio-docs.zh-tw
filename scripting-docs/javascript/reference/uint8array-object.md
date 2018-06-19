@@ -1,19 +1,20 @@
 ---
-title: "Uint8Array 物件 |Microsoft 文件"
-ms.custom: 
+title: Uint8Array 物件 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: ae78b3ee-b660-4625-ac7b-d414a0842c87
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641488"
 ---
 # <a name="uint8array-object"></a>Uint8Array 物件
 8 位元不帶正負號整數值的類型陣列。 內容已初始化為 0。 如果無法配置要求的位元組數目，就會引發例外狀況。  

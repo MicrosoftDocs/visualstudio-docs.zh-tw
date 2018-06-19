@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplication::FIsAutoJitDebugEnabled |Microsoft 文件"
-ms.custom: 
+title: IDebugApplication::FIsAutoJitDebugEnabled |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.FIsAutoJitDebugEnabled
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::FIsAutoJitDebugEnabled
 ms.assetid: 0551dd3b-e6eb-442a-8201-418f96fe62df
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725178"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
 決定在 just-in-time (JIT) 偵錯工具的自動偵錯無聲主機已向。  

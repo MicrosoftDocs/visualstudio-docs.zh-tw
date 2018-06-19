@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthor::AddScriptlet |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptAuthor::AddScriptlet |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.AddScriptlet
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::AddScriptlet
 ms.assetid: 879a6651-f187-4934-b130-c1247549900b
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645658"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
 將程式碼的程式碼片段加入做為子系的根層級`IScriptNode`物件。 在主機中的程式碼片段的完整限定的名稱可包含只有兩個層級。  

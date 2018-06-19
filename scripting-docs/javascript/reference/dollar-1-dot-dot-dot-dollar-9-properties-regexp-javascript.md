@@ -1,13 +1,13 @@
 ---
-title: "$1...$9 屬性 (RegExp) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: $1...$9 屬性 (RegExp) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $1...$9
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636638"
 ---
 # <a name="19-properties-regexp-javascript"></a>$1...$9 屬性 (RegExp) (JavaScript)
 傳回所九個最近記憶模式比對期間發現的部分。 唯讀。  
@@ -46,7 +47,7 @@ RegExp.$n
  從 1 到 9 的任何整數。  
   
 ## <a name="remarks"></a>備註  
- 值**$1...$9**成功括以括號比對時，會修改的屬性。 在規則運算式模式中，可指定任意數目的括號括住的子字串，但會儲存只有最近的九個。  
+ 值 **$1...$9**成功括以括號比對時，會修改的屬性。 在規則運算式模式中，可指定任意數目的括號括住的子字串，但會儲存只有最近的九個。  
   
 ## <a name="example"></a>範例  
  下列範例會執行規則運算式搜尋。 它會顯示相符項目，並從全域 submatches`RegExp`物件。 子相符項目是成功的括號括住相符項目中所包含的`$1...$9`屬性。 此範例也會顯示相符項目，並且 submatches 從傳回的陣列`exec`方法。  

@@ -1,13 +1,13 @@
 ---
-title: "setMonth 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: setMonth 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setMonth
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Month method
 - setMonth method
 ms.assetid: 4f5be295-d536-46c0-b3a4-ad06457efe82
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640258"
 ---
 # <a name="setmonth-method-date-javascript"></a>setMonth 方法 (日期) (JavaScript)
 設定中的月份值`Date`物件使用本地時間。  
@@ -52,7 +53,7 @@ dateObj. setMonth(numMonth[, dateVal])
 ## <a name="remarks"></a>備註  
  若要設定月份值使用國際標準時間 (UTC)，使用`setUTCMonth`方法。  
   
- 如果值`numMonth`大於 11 （年 1 月是月份 0） 或負數，據此修改儲存的年份。 例如，如果預存的日期是"1996 年 1 月 5 日 」 和**setMonth(14)**是呼叫，日期變更為"3 月 5，1997。 」  
+ 如果值`numMonth`大於 11 （年 1 月是月份 0） 或負數，據此修改儲存的年份。 例如，如果預存的日期是"1996 年 1 月 5 日 」 和**setMonth(14)** 是呼叫，日期變更為"3 月 5，1997。 」  
   
  **SetFullYear**方法可以用來設定年、 月和月份天數。  
   

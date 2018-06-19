@@ -1,13 +1,13 @@
 ---
-title: "位元 OR 指派運算子 (| =) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 位元 OR 指派運算子 (| =) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - bitwise operators, OR operator
 - OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633888"
 ---
 # <a name="bitwise-or-assignment-operator--javascript"></a>位元 OR 指派運算子 (|=) (JavaScript)
 針對變數值和運算式的值執行位元 OR，然後將結果指派給此變數。  
@@ -55,7 +56,7 @@ result |= expression
 result = result | expression  
 ```  
   
- **&#124; =**運算子會查看值的二進位表示法*結果*和*運算式*，並在其上的位元 OR 運算。 這項作業的結果行為就像這樣：  
+ **&#124; =** 運算子會查看值的二進位表示法*結果*和*運算式*，並在其上的位元 OR 運算。 這項作業的結果行為就像這樣：  
   
 ```JavaScript  
 0101    (result)  

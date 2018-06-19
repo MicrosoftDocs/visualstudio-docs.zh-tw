@@ -1,13 +1,13 @@
 ---
-title: "IActiveScriptParse32::ParseScriptText |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptParse32::ParseScriptText |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: af1e3b6723b402263359719695aa1f57432c76e2
@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724818"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 剖析指定的程式碼程式碼片段，新增到命名空間宣告，並評估為適當的程式碼。  

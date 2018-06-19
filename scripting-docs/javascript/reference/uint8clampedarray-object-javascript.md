@@ -1,19 +1,20 @@
 ---
-title: "Uint8ClampedArray 物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Uint8ClampedArray 物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 0c5537f7-00b4-487a-8fba-ef032e67e7bd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642108"
 ---
 # <a name="uint8clampedarray-object-javascript"></a>Uint8ClampedArray 物件 (JavaScript)
 8 位元不帶正負號整數 (值壓制為範圍 0-255) 的類型陣列。 內容已初始化為 0。 如果無法配置要求的位元組數目，就會擲回例外狀況。  

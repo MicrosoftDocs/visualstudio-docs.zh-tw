@@ -1,12 +1,13 @@
 ---
-title: "JavaScript 執行階段錯誤 |Microsoft 文件"
-ms.custom: 
+title: JavaScript 執行階段錯誤 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT-32725
@@ -38,7 +39,7 @@ helpviewer_keywords:
 - errors [JavaScript]
 - run-time errors, JavaScript
 ms.assetid: c111469d-8f31-4bde-9d46-16d58775db7d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -47,6 +48,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640798"
 ---
 # <a name="javascript-run-time-errors"></a>JavaScript 執行階段錯誤
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 執行階段錯誤是指令碼嘗試執行系統無法執行的動作時發生的錯誤。 您可能會在評估變數運算式或配置記憶體時發現執行階段錯誤。  

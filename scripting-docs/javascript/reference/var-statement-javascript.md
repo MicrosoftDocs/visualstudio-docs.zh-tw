@@ -1,13 +1,13 @@
 ---
-title: "var 陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: var 陳述式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/22/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - var_JavaScriptKeyword
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - declaring variables, var statement
 - var statement
 ms.assetid: 56f900af-a5c4-4667-9664-5956d30f0aae
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641358"
 ---
 # <a name="var-statement-javascript"></a>var 陳述式 (JavaScript)
 宣告變數。  

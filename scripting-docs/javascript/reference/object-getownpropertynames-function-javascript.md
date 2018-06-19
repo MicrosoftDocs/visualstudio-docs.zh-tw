@@ -1,12 +1,13 @@
 ---
-title: "Object.getOwnPropertyNames 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.getOwnPropertyNames 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - getOwnPropertyNames method [JavaScript]
 - Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639928"
 ---
 # <a name="objectgetownpropertynames-function-javascript"></a>Object.getOwnPropertyNames 函式 (JavaScript)
 傳回物件本身屬性的名稱。 物件的自己的屬性是指定義直接於該物件，而且不繼承自物件的原型。 物件的屬性包括欄位 （物件） 和函式。  

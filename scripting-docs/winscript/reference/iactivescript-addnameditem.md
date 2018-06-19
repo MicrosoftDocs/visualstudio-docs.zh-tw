@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::AddNamedItem |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::AddNamedItem |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddNamedItem
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - AddNamedItem method, IActiveScript interface
 ms.assetid: a7c6317d-948f-4bb3-b169-1bbe5b7c7cc5
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642018"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 將指令碼引擎的命名空間的根層級項目的名稱。 根層級項目是與屬性和方法、 事件來源或這三個物件。  

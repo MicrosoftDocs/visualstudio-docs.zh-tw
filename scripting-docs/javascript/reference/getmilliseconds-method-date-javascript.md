@@ -1,13 +1,13 @@
 ---
-title: "getMilliseconds 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: getMilliseconds 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getMilliseconds
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - milliseconds
 - getMilliseconds method
 ms.assetid: 1b512146-1e8a-44a4-89da-6cc5338d15cb
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636608"
 ---
 # <a name="getmilliseconds-method-date-javascript"></a>getMilliseconds 方法 (日期) (JavaScript)
 取得使用本地時間的日期的毫秒數。  

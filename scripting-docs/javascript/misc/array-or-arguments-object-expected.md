@@ -1,13 +1,13 @@
 ---
-title: "陣列或引數的物件必須是 |Microsoft 文件"
-ms.custom: 
+title: 陣列或引數的物件必須是 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5028
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632738"
 ---
 # <a name="array-or-arguments-object-expected"></a>必須是陣列或引數物件
 您並未提供做為引數的陣列。 發生這個錯誤**Function.prototype.apply**只方法。 如果指定，此函式的第二個引數必須是`Array`物件或**引數**物件。  

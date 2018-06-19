@@ -1,11 +1,11 @@
 ---
-title: "IDebugAsyncOperationCallBack::onComplete |Microsoft 文件"
-ms.custom: 
+title: IDebugAsyncOperationCallBack::onComplete |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugAsyncOperationCallBack.onComplete
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugAsyncOperationCallBack::onComplete
 ms.assetid: d4023f5a-41f9-4948-b0dc-3317d61bb783
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725918"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
 發出訊號，結果是可從非同步的偵錯作業。  

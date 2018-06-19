@@ -1,12 +1,13 @@
 ---
-title: "Object.freeze 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.freeze 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - Object.freeze function
 - freeze function
 ms.assetid: 83ffe193-0a37-4e0c-9b66-44c422765fb3
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641818"
 ---
 # <a name="objectfreeze-function-javascript"></a>Object.freeze 函式 (JavaScript)
 防止修改現有屬性 (Property) 的屬性 (Attribute) 和值，並可防止新屬性 (Property) 加入。  

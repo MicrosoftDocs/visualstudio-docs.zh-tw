@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::SetScriptSite |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::SetScriptSite |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.SetScriptSite
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_SetScriptSite
 ms.assetid: 47d94c32-09f8-4539-ac56-0236026f627b
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645568"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
 通知的指令碼引擎[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面由主機提供的站台。 呼叫這個方法在任何其他[IActiveScript](../../winscript/reference/iactivescript.md)介面方法使用。  

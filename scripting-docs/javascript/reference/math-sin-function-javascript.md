@@ -1,13 +1,13 @@
 ---
-title: "Math.sin 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Math.sin 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sin
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - sin method
 - Math object
 ms.assetid: 2e36fb5d-7e7b-4133-9f73-dcc817ac51fe
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638518"
 ---
 # <a name="mathsin-function-javascript"></a>Math.sin 函式 (JavaScript)
 傳回一個數字的正弦值。  

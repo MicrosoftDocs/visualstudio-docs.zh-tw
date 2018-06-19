@@ -1,13 +1,13 @@
 ---
-title: "substring 方法 （字串） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: substring 方法 （字串） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640928"
 ---
 # <a name="substring-method-string-javascript"></a>substring 方法 (字串) (JavaScript)
 傳回子字串內的指定位置`String`物件。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="remarks"></a>備註  
  `substring`方法會傳回字串，包含從子字串`start`最多，但不是包括`end`。  
   
- **Substring**方法會使用較低的值`start`和`end`做為子字串的開始點。 例如，strvar.substring (0、 3**)**和 strvar.substring （3，0） 傳回相同的子字串。  
+ **Substring**方法會使用較低的值`start`和`end`做為子字串的開始點。 例如，strvar.substring (0、 3 **)** 和 strvar.substring （3，0） 傳回相同的子字串。  
   
  如果有任一個`start`或`end`是`NaN`或負值，則會取代為零。  
   

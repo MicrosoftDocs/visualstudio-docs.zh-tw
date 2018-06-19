@@ -1,12 +1,13 @@
 ---
-title: "遞增 （+ +） 和遞減 （-） 運算子 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 遞增 （+ +） 和遞減 （-） 運算子 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - --
@@ -22,7 +23,7 @@ helpviewer_keywords:
 - decrement operators, syntax
 - -- operator
 ms.assetid: 49eaf4cf-8818-478d-a429-cdd2ece20811
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +32,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637348"
 ---
 # <a name="increment--and-decrement----operators-javascript"></a>遞增 (++) 和遞減 (--) 運算子 (JavaScript)
 遞增運算子，增減遞減運算子的其中一個變數的值。  

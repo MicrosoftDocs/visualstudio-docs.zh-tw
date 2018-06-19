@@ -1,16 +1,16 @@
 ---
-title: "IDebugThreadCall 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugThreadCall 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugThreadCall interface
 ms.assetid: 9a9a9892-f310-4ef3-8db2-4f868be52d7e
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726938"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall 介面
 `IDebugThreadCall`通常會實作介面的元件，與跨執行緒呼叫`IDebugThread`封送處理程序的偵錯管理員 (PDM) 所提供的實作。  

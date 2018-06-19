@@ -1,13 +1,13 @@
 ---
-title: "&#39; 預設值 &#39;只能出現一次在 &#39; 參數 &#39;陳述式 |Microsoft 文件"
-ms.custom: 
+title: '&#39; 預設值 &#39;只能出現一次在 &#39; 參數 &#39;陳述式 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1027
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633098"
 ---
 # <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; 預設值 &#39;只能出現一次在 &#39; 參數 &#39;陳述式
 您嘗試使用**預設**不止一次在 switch 陳述式內的陳述式。 預設情況下永遠是 switch 陳述式 （它是中斷情況下） 中的最後一個 case 陳述式。  

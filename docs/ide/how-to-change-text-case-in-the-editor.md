@@ -18,6 +18,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446058"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：變更編輯器中的文字大小寫
 

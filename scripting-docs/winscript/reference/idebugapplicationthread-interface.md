@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplicationThread 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugApplicationThread 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThread interface
 ms.assetid: f869c328-4409-4b74-a6c3-9e63fc58c63d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725948"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread 介面
 可讓語言引擎和主機以提供執行緒同步處理，以及維護執行緒特定的偵錯狀態資訊。 這個介面延伸`IRemoteDebugApplicationThread`介面，以提供執行緒的非遠端存取。  

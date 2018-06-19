@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptSite |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptSite |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSite interface
 ms.assetid: 4d604a11-5365-46cf-ab71-39b3dbbe9f22
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725008"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 藉由建立 Windows 指令碼引擎的站台主機。 通常，此站台將會顯示指令碼 （例如，ActiveX 控制項） 的所有物件的容器相關聯。 一般而言，此容器會對應至文件或檢視的頁面。 例如，Microsoft Internet Explorer 中，會建立這類容器，每個要顯示之 HTML 頁面。 每個 ActiveX 控制項 （或其他自動化物件） 頁面上，以及指令碼引擎本身，則會是此容器中的可列舉。  

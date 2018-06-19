@@ -1,16 +1,18 @@
 ---
-title: "IActiveScriptProfilerCallback::Shutdown |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptProfilerCallback::Shutdown |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerCallback.Shutdown
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerCallback.Shutdown
+apilocation:
+- scrobj.dll
 ms.assetid: 1281bf3c-d7d8-4ff5-9d8a-d1761fdb262e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724728"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 呼叫以通知分析工具物件，每當程式碼剖析指令碼引擎已停止。 如此一來，分析工具物件可以呼叫它的清理常式，視需要。 這個方法也會呼叫指令碼引擎指令碼引擎正在關閉，或當呼叫[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)失敗。  

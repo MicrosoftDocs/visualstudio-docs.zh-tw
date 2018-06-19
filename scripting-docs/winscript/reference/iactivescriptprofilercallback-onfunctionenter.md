@@ -1,16 +1,18 @@
 ---
-title: "IActiveScriptProfilerCallback::OnFunctionEnter |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptProfilerCallback::OnFunctionEnter |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerCallback.OnFunctionEnter
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerCallback.OnFunctionEnter
+apilocation:
+- scrobj.dll
 ms.assetid: 12dab2b4-df4e-444d-99cb-25e1c278e6e8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724598"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
 通知分析工具物件的指令碼引擎即將執行呼叫函式不是插入文件物件模型 (DOM) 的呼叫。  

@@ -1,11 +1,11 @@
 ---
-title: "IDispError::QueryErrorInfo |Microsoft 文件"
-ms.custom: 
+title: IDispError::QueryErrorInfo |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispError.QueryErrorInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDispError::QueryErrorInfo
 ms.assetid: e7e71a14-77e2-4331-9ffc-1dace041fa84
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726978"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 擷取特定類型的資訊時發生錯誤。  

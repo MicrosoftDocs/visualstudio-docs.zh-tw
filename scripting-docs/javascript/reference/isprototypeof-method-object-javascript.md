@@ -1,13 +1,13 @@
 ---
-title: "isPrototypeOf 方法 (Object) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: isPrototypeOf 方法 (Object) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - isPrototypeOf
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - isPrototypeOf method
 ms.assetid: 9c821319-c208-480f-915e-565ef6e017b6
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637378"
 ---
 # <a name="isprototypeof-method-object-javascript"></a>isPrototypeOf 方法 (Object) (JavaScript)
 判斷某個物件是否存在於另一個物件的原型鏈結中。  

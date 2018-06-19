@@ -1,11 +1,11 @@
 ---
-title: "DBGPROP_ATTRIB_FLAGS |Microsoft 文件"
-ms.custom: 
+title: DBGPROP_ATTRIB_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DBGPROP_ATTRIB_FLAGS
@@ -16,7 +16,7 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS
 ms.assetid: 90314496-527b-4357-9df8-125a360bf216
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642008"
 ---
 # <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
 描述 `IDebugProperty` 的各種屬性。 `DebugPropertyInfo` 結構的成員。  

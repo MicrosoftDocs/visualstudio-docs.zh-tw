@@ -1,16 +1,16 @@
 ---
-title: "IDebugHelper 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugHelper 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugHelper interface
 ms.assetid: ef5691e0-1d82-42c2-997c-888e31c478dd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727308"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper 介面
 當做的 factory 物件瀏覽器和簡單的連接點。 處理序偵錯管理員 (PDM) 會實作這個介面，由指令碼引擎。  

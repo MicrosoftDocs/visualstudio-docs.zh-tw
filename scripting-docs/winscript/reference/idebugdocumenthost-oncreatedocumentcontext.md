@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentHost::OnCreateDocumentContext |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentHost::OnCreateDocumentContext |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHost.OnCreateDocumentContext
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHost::OnCreateDocumentContext
 ms.assetid: 080c8604-cfd7-484e-a337-15040870e683
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726718"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
 通知主機，正在建立新的文件內容，並可讓主應用程式選擇性地傳回未知的新內容的控制。  

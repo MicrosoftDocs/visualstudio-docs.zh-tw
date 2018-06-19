@@ -1,12 +1,13 @@
 ---
-title: "Object.isSealed 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.isSealed 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - isSealed function [JavaScript]
 - Object.isSealed [JavaScript]
 ms.assetid: af4f192e-cebe-44b9-8eef-90c096f5ae8f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641998"
 ---
 # <a name="objectissealed-function-javascript"></a>Object.isSealed 函式 (JavaScript)
 如果無法在物件中修改現有屬性 (Property) 的屬性 (Attribute)，且新的屬性 (Property) 無法加入物件，便傳回 `true`。  

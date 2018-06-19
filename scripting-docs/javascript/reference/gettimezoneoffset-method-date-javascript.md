@@ -1,13 +1,13 @@
 ---
-title: "getTimezoneOffset 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: getTimezoneOffset 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getTimeZoneOffset
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - getTimezoneOffset method
 - time zones [Visual Studio]
 ms.assetid: 58ee22b0-4688-45bd-a337-cc23119b09ce
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637048"
 ---
 # <a name="gettimezoneoffset-method-date-javascript"></a>getTimezoneOffset 方法 (日期) (JavaScript)
 取得本機電腦上的時間與國際標準時間 (UTC) 之間的差異以分鐘為單位。  

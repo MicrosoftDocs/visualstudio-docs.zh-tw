@@ -1,16 +1,18 @@
 ---
-title: "IActiveScriptProfilerControl::StartProfiling |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptProfilerControl::StartProfiling |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerControl.StartProfiling
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerControl.StartProfiling
+apilocation:
+- scrobj.dll
 ms.assetid: 56a7b3b7-8c21-43d0-9d8b-53bbc19fabb9
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724868"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
 啟動指令碼引擎上的分析。 指令碼引擎建立的分析工具物件執行個體，藉由呼叫[CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec)。  

@@ -1,19 +1,20 @@
 ---
-title: "getInt8 方法 (DataView) |Microsoft 文件"
-ms.custom: 
+title: getInt8 方法 (DataView) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 867eefa0-f2e0-44b9-85bc-efb849d55138
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636518"
 ---
 # <a name="getint8-method-dataview"></a>getInt8 方法 (DataView)
 從開始檢視中取得指定的位元組位移的 Int8 值。 沒有對齊方式限制;多位元組值可能會擷取從任何的位移。  

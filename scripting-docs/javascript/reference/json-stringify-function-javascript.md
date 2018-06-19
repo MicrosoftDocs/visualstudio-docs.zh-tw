@@ -1,13 +1,13 @@
 ---
-title: "JSON.stringify 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: JSON.stringify 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - stringify method
 ms.assetid: 0fafaf3b-c29b-46dc-b65b-ca223064a1d0
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640558"
 ---
 # <a name="jsonstringify-function-javascript"></a>JSON.stringify 函式 (JavaScript)
 將 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值轉換成以 JavaScript 物件標記法 (JavaScript Object Notation，JSON) 表示的字串。  

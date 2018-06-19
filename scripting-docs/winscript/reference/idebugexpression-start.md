@@ -1,11 +1,11 @@
 ---
-title: "IDebugExpression::Start |Microsoft 文件"
-ms.custom: 
+title: IDebugExpression::Start |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugExpression.Start
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugExpression::Start
 ms.assetid: a7af3470-62b5-40f0-987d-63b6b22538b3
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727598"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 開始評估的運算式。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951787"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗，或 [尋找/命令]  方塊來叫用命令。 在每種情況下，大於符號 (`>`) 都用來表示應執行命令，而不是搜尋或偵錯作業。

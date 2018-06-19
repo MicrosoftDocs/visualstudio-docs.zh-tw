@@ -1,13 +1,13 @@
 ---
-title: "JSON 物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: JSON 物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638048"
 ---
 # <a name="json-object-javascript"></a>JSON 物件 (JavaScript)
 可提供函式針對 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值和 JavaScript 物件標記法 (JavaScript Object Notation，JSON) 表示的格式進行相互轉換的內建物件。 `JSON.stringify` 函式可以將 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值序列化成 JSON 文字， 而 `JSON.parse` 函式則可以將 JSON 文字還原序列化成 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 值。  

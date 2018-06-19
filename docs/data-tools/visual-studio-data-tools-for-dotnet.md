@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864716"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於.NET 的 visual Studio 資料工具
 

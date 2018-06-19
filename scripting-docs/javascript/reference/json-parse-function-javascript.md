@@ -1,13 +1,13 @@
 ---
-title: "JSON.parse 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: JSON.parse 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON.parse
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - parse JSON method
 - JSON.parse method
 ms.assetid: 20f00d31-5ab5-4c3c-ab49-2534fc39a9b4
-caps.latest.revision: 
+caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27782187"
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse 函式 (JavaScript)
 將以 JavaScript 物件標記法 (JavaScript Object Notation，JSON) 表示的字串轉換成物件。  

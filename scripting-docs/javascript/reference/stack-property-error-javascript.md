@@ -1,13 +1,13 @@
 ---
-title: "stack 屬性 （錯誤） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: stack 屬性 （錯誤） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Error.stack
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - JavaScript error stack
 - error stack [JavaScript]
 ms.assetid: 1dc21fdd-853c-4664-bf1c-24eb1f6f2daf
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641138"
 ---
 # <a name="stack-property-error-javascript"></a>stack 屬性 (錯誤) (JavaScript)
 取得或設定字串形式的錯誤堆疊，其中包含堆疊追蹤框架。  

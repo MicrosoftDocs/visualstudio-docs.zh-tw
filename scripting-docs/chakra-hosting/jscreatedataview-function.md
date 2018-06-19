@@ -1,14 +1,14 @@
 ---
-title: "JsCreateDataView 函式 | Microsoft Docs"
-ms.custom: 
+title: JsCreateDataView 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 161e59eb-d429-46f7-9a38-bbf2149ccf44
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567978"
 ---
 # <a name="jscreatedataview-function"></a>JsCreateDataView 函式
 建立 JavaScript `DataView` 物件。  

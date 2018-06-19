@@ -1,19 +1,20 @@
 ---
-title: "constructor 屬性 (WeakMap) |Microsoft 文件"
-ms.custom: 
+title: constructor 屬性 (WeakMap) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 1e3f9333-ce75-4d32-9b14-fbe81fd73dfb
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636038"
 ---
 # <a name="constructor-property-weakmap"></a>constructor 屬性 (WeakMap)
 指定的函式會建立`WeakMap`物件。  

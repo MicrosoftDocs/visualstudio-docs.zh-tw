@@ -1,13 +1,13 @@
 ---
-title: "toLowerCase 方法 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: toLowerCase 方法 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toLowerCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toLowerCase method
 ms.assetid: dfd543b9-3e7a-4f83-a391-9cde109ad6bc
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640638"
 ---
 # <a name="tolowercase-method-javascript"></a>toLowerCase 方法 (JavaScript)
 將字串中的所有字母字元轉換成小寫。  
