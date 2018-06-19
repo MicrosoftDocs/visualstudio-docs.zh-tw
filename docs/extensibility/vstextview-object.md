@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138723"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 [文字] 檢視是可讓使用者檢視和編輯文字緩衝的 Unicode 文字的視窗。 基本上，檢視是大部分使用者參考的項目做為編輯器。 檢視從緩衝區分隔文字的各層 （自動換行、 大綱文字等等），因為不保證會確切的緩衝區中的文字檢視。 如需 [文字] 檢視的詳細資訊，請參閱[使用舊版 API 存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

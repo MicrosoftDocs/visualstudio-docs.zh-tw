@@ -1,16 +1,16 @@
 ---
-title: "IEnumDebugStackFrames 介面 |Microsoft 文件"
-ms.custom: 
+title: IEnumDebugStackFrames 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IEnumDebugStackFrames interface
 ms.assetid: 13484429-0140-4f4f-8502-3ca2a0553ed4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728338"
 ---
 # <a name="ienumdebugstackframes-interface"></a>IEnumDebugStackFrames 介面
 列舉對應至執行緒的堆疊框架。  

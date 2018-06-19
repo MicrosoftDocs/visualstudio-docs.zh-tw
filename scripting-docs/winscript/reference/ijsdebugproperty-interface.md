@@ -1,14 +1,14 @@
 ---
-title: "IJsDebugProperty 介面 |Microsoft 文件"
-ms.custom: 
+title: IJsDebugProperty 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: aeaeeedd-c3f6-4b92-8e84-9a38f1b390f0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727928"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty 介面
 表示屬性瀏覽器。  

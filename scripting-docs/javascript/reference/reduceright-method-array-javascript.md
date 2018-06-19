@@ -1,12 +1,13 @@
 ---
-title: "reduceRight 方法 （陣列） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: reduceRight 方法 （陣列） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], reduceRight method
 - reduceRight method [JavaScript]
 ms.assetid: 85963761-da11-407c-8bce-278c930e61bd
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641918"
 ---
 # <a name="reduceright-method-array-javascript"></a>reduceRight 方法 (陣列) (JavaScript)
 在陣列中，以遞減順序的所有項目會呼叫指定的回呼函式。 回呼函式的傳回值即為累加結果，並做為下一個呼叫的引數提供給回呼函式。  

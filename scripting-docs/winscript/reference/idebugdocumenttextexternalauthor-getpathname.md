@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentTextExternalAuthor::GetPathName |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentTextExternalAuthor::GetPathName |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentTextExternalAuthor.GetPathName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentTextExternalAuthor::GetPathName
 ms.assetid: 445152a1-9cf8-402e-93d6-3d4bf2b81d17
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727738"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
 傳回文件的完整路徑和檔案名稱。  

@@ -1,16 +1,18 @@
 ---
-title: "JsDebugReadMemoryFlags 列舉 |Microsoft 文件"
-ms.custom: 
+title: JsDebugReadMemoryFlags 列舉 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: JsDebugReadMemoryFlags
-apilocation: jscript9diag.dll
+apiname:
+- JsDebugReadMemoryFlags
+apilocation:
+- jscript9diag.dll
 ms.assetid: 0d98d154-9cb1-49de-b2df-a2d029d343b7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733708"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags 列舉
 旗標，用於指定讀取記憶體時的行為。  

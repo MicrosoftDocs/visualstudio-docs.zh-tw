@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 訂閱"
+title: Visual Studio 訂閱
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795314"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。  訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。

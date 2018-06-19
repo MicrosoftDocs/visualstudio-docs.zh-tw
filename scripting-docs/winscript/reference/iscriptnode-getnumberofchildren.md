@@ -1,11 +1,11 @@
 ---
-title: "IScriptNode::GetNumberOfChildren |Microsoft 文件"
-ms.custom: 
+title: IScriptNode::GetNumberOfChildren |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptNode.GetNumberOfChildren
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptNode::GetNumberOfChildren
 ms.assetid: 3451c7e9-cb50-482e-9038-6e7d7ce1ecdf
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733628"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
 傳回的子節點數目`IScriptNode`物件。  

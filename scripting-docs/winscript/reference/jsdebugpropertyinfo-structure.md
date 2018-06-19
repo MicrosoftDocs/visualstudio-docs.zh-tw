@@ -1,16 +1,18 @@
 ---
-title: "JsDebugPropertyInfo 結構 |Microsoft 文件"
-ms.custom: 
+title: JsDebugPropertyInfo 結構 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: JsDebugPropertyInfo
-apilocation: jscript9diag.dll
+apiname:
+- JsDebugPropertyInfo
+apilocation:
+- jscript9diag.dll
 ms.assetid: 3a5463a7-2013-4846-9ab2-8beb675a5a6a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733818"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>JsDebugPropertyInfo 結構
 指出有關屬性的資訊。  

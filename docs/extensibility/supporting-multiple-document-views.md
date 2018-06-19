@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141716"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 您可以提供多個檢視的文件建立個別的文件資料和文件檢視物件的編輯器。 某些其他文件檢視，會很有用的情況如下：  

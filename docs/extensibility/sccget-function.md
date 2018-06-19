@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140648"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，以檢視及編譯，但不是用於編輯的複本。 在大多數系統中，檔案會標記為唯讀。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135646"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>舊版語言服務中的大綱
 大綱，讓可以摺疊成概觀或外框的複雜的程式。 比方說，在 C# 中的所有方法可摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示結構和類別名稱。 在單一方法，複雜的邏輯可摺疊來顯示陳述式的第一行，例如顯示的整體流程`foreach`， `if`，和`while`。  

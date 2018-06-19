@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136772"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>安裝擴充功能資料夾外
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
  </ProjectReference>
 ```
 
->**注意：**您可以編輯.csproj 檔案直接，如果您偏好。
+>**注意：** 您可以編輯.csproj 檔案直接，如果您偏好。
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>如何設定 InstallRoot 底下的子路徑
 

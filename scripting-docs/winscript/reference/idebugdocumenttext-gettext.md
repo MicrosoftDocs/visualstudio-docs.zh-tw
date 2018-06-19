@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentText::GetText |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentText::GetText |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentText.GetText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentText::GetText
 ms.assetid: 3c940a30-6c0f-4deb-aa4d-21a0bdef8461
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728078"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
 擷取字元和/或字元屬性，與字元位置範圍相關聯。  

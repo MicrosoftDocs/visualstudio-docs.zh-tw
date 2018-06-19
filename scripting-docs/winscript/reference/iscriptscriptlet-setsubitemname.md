@@ -1,11 +1,11 @@
 ---
-title: "IScriptScriptlet::SetSubItemName |Microsoft 文件"
-ms.custom: 
+title: IScriptScriptlet::SetSubItemName |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptScriptlet.SetSubItemName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptScriptlet::SetSubItemName
 ms.assetid: 619f222f-b4c3-4c7b-9d19-e4e7037343a6
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733868"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
 設定中的程式碼片段物件主機的完整限定名稱的最後一個識別項。  

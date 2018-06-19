@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: "Visual Studio 中的版本控制 | VSTS 與 TFS"
-description: "Visual Studio 中的版本控制使用者入門指南"
-keywords: "VSTS, TFS, 版本控制"
+title: Visual Studio 中的版本控制 | VSTS 與 TFS
+description: Visual Studio 中的版本控制使用者入門指南
+keywords: VSTS, TFS, 版本控制
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795348"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 

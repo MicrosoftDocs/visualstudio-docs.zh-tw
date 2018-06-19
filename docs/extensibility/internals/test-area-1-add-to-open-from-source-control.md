@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134730"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1： 加入開啟從原始檔控制
 這個原始檔控制外掛程式測試區域涵蓋放在原始檔控制的專案或解決方案，並擷取原始檔控制。  

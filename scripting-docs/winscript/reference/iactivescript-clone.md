@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::Clone |Microsoft 文件"
-ms.custom: 
+title: IActiveScript::Clone |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641588"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 複製目前指令碼引擎 （減去任何目前的執行狀態），傳回不已在目前執行緒中的任何網站載入指令碼引擎。 這個新的指令碼引擎的屬性會與原始的指令碼引擎會在已轉換為初始化的狀態屬性相同。  

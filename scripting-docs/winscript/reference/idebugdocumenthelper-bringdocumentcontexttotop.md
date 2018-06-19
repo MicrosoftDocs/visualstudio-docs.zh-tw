@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentHelper::BringDocumentContextToTop |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentHelper::BringDocumentContextToTop |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.BringDocumentContextToTop
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::BringDocumentContextToTop
 ms.assetid: cf9751c5-e9b7-45c6-b084-3f3873dbf01d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725858"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
 將本文件的內容傳送到頂端偵錯工具使用者介面中。  

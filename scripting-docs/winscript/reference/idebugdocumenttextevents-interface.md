@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentTextEvents 介面 |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentTextEvents 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentTextEvents interface
 ms.assetid: 341b20fd-994c-4030-a06b-6c66ad38c35d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727998"
 ---
 # <a name="idebugdocumenttextevents-interface"></a>IDebugDocumentTextEvents 介面
 提供的事件，表示相關聯的文字文件的變更。  

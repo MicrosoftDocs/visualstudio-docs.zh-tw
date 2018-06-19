@@ -1,16 +1,16 @@
 ---
-title: "IScriptScriptlet 介面 |Microsoft 文件"
-ms.custom: 
+title: IScriptScriptlet 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IScriptScriptlet interface
 ms.assetid: b9981908-a337-4228-864c-c741f111ab2d
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733808"
 ---
 # <a name="iscriptscriptlet-interface"></a>IScriptScriptlet 介面
 物件，用於實作`IScriptScriptlet`介面代表事件處理常式指令碼。  

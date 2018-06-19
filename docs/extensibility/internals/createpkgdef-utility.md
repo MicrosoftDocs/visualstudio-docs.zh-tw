@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135780"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 採用.dll 檔案，以做為參數的 Visual Studio 擴充功能，並建立.dll 伴隨著.pkgdef 檔。 .Pkgdef 檔包含會否則被寫入系統登錄時安裝擴充功能的所有資訊。  
