@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563049"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;元素 （ClickOnce 部署）
 識別要安裝，應用程式的版本，以及應用程式資訊清單的位置。  

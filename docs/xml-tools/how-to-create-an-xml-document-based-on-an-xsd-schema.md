@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549086"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何： 建立根據 XSD 結構描述的 XML 文件
 

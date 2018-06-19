@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122518"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 這個方法會判斷是否已過期或父容器的此物件的編輯後繼續狀態。 自訂運算式評估工具不會實作這個方法，一律會傳回`E_NOTIMPL`。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108926"
 ---
 # <a name="launching-the-debugger"></a>啟動偵錯工具
 啟動偵錯工具需要傳送正確的順序的方法和事件的適當的屬性。  

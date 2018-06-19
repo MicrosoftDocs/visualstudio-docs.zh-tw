@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116200"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 偵錯引擎 (DE) 會使用此介面，將偵錯事件傳送至工作階段的偵錯管理員 (SDM)。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574464"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在設計階段時解析組件
 當您透過 [加入參考] 對話方塊的 [.NET] 索引標籤加入組件的參考時，參考會指向中繼參考組件，也就是說，這個組件會包含所有類型和簽章資訊，但不一定會包含任何程式碼。 [.NET] 索引標籤列出的參考組件對應至.NET Framework 中的執行階段組件。 此外，它會列出的參考組件對應至協力廠商使用的已註冊 AssemblyFoldersEx 資料夾中的執行階段組件。  

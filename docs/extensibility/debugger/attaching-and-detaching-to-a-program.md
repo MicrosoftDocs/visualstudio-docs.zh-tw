@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110064"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和中斷連結至程式
 附加偵錯工具需要傳送正確的順序的方法和事件的適當的屬性。  

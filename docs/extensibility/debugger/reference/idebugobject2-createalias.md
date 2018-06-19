@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113041"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 建立的唯一識別碼或此物件的別名，或傳回現有的別名。  

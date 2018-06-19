@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110077"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 描述引發的條件式中斷點的計數和條件。  

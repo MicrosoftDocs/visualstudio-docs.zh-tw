@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108465"
 ---
 # <a name="about-file-name-extensions"></a>關於檔案名稱副檔名
 當您註冊 VSPackage 的副檔名時，您將它與關聯的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這是重要如果多個版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]安裝在電腦上。  

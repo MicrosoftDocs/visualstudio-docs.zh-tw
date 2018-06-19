@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116486"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 這個介面會指定要向使用者報告的錯誤訊息。  

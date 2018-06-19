@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125514"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 此結構表示 （通常是函式或方法） 的範圍內的區域變數的位址。  

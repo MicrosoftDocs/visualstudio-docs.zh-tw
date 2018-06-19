@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919501"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何： 啟用和停用自動程式碼分析，managed 程式碼
 

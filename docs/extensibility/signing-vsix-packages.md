@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142288"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 封裝
 延伸模組組件不需要經過簽署才能在 Visual Studio 中，可以執行，但它是不錯的作法，若要這樣做。  

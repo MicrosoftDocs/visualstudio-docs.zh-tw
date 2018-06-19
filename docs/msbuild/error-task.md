@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567804"
 ---
 # <a name="error-task"></a>Error 工作
 停止組建，並根據評估的條件陳述式來記錄錯誤。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108782"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定的命令所使用的位元旗標
 藉由單一值中設定一個或多個位元可以修改的原始檔控制外掛程式 API 中的函式的行為。 這些值稱為位元旗標。 原始檔控制外掛程式 API 所使用的位元各種的旗標的詳細資訊，所使用的函式分組。  

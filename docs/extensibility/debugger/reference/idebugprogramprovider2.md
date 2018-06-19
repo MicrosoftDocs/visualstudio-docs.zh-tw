@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120555"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 這個已註冊的介面可讓偵錯工作階段管理員 (SDM) 來取得有關程式已經 「 發行 」 透過[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)介面。  

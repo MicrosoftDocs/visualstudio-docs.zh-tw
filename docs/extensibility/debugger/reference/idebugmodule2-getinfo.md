@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116434"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 取得此模組的相關資訊。  

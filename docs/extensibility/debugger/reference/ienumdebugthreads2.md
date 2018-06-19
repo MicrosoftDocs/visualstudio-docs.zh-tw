@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125462"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 此 interfac 列舉在目前的偵錯工作階段中執行的執行緒。  

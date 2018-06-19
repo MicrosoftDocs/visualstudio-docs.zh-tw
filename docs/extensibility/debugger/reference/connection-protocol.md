@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109999"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 指出用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  

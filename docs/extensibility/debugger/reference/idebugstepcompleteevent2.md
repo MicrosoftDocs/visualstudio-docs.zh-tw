@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121309"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 這個介面是由偵錯引擎 (DE) 的工作階段偵錯的經理 (SDM) 完成時傳送程式偵錯時逐步執行、 不進入函式或跳離一行程式碼或陳述式或指令。  

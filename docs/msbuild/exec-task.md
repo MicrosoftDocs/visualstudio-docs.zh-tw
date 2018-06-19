@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569683"
 ---
 # <a name="exec-task"></a>Exec 工作
 使用指定的引數來執行指定的程式或命令。  

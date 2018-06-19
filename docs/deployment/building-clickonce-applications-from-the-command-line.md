@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566182"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只剩的另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在集中建置實驗室，或使用進階指令碼技術建置專案本身的範圍之外。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116854"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此介面代表位元組的記憶體。  

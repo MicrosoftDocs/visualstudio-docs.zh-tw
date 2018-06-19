@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568636"
 ---
 # <a name="creating-forwarding-loggers"></a>建立轉送記錄器
 轉送記錄器可讓您選擇在多處理器系統上建置專案時想要監視的事件，以提高記錄的效率。 啟用轉送記錄器時，您可以防止不必要的事件塞滿中央記錄器，而導致建置時間變慢、記錄空間暴增等問題。  

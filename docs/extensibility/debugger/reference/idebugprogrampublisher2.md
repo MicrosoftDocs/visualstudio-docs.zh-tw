@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119555"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 這個介面可讓偵錯引擎 (DE) 或自訂連接埠供應商註冊進行偵錯的程式。  

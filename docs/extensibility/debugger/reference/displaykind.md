@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109908"
 ---
 # <a name="displaykind"></a>DisplayKind
 列舉有效的值，代表要從取得的資訊種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，並向使用者顯示。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125899"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>參考 (Visual Studio 偵錯應用程式開發介面)
 Visual Studio 偵錯 SDK 參考簡述的執行階段架構和偵錯工具和元件功能的基本模型。 文件會越少做出假設，盡可能以相關說明，它會透過介面定義的行為以外的元件和介面。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917090"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer。

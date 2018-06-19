@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31892699"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 *匿名方法*是沒有名稱的方法。 匿名方法最常用來做為委派的參數傳遞的程式碼區塊。
