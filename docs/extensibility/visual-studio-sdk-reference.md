@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146841"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含使用 Visual Studio SDK 開發人員 Visual Studio 的命名空間、 相關的命名空間和感興趣的其他區域的相關資訊。  

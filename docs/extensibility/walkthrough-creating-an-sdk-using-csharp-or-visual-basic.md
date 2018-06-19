@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146607"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic 的 SDK
 在本逐步解說，您將學習如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 為 Visual Studio 擴充功能 (VSIX)。 您將完成下列程序：  

@@ -1,13 +1,13 @@
 ---
-title: "let 陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: let 陳述式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - let_JavaScriptKeyword
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - let statement
 - declaring variables, let statement
 ms.assetid: c7e4f8a9-8f54-47b6-aed2-956959c1ecfd
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638888"
 ---
 # <a name="let-statement-javascript"></a>let 陳述式 (JavaScript)
 宣告區塊範圍變數。  

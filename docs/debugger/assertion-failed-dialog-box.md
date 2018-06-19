@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456421"
 ---
 # <a name="assertion-failed-dialog-box"></a>判斷提示已失敗對話方塊
 判斷提示 (Assertion) 陳述式會指定您希望在程式的某個特定點維持為 true 的條件。 如果該條件並未維持 true，表示判斷提示失敗，程式執行將會中斷，並出現這個對話方塊。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460273"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 啟始的存取權的偵錯符號的來源。  

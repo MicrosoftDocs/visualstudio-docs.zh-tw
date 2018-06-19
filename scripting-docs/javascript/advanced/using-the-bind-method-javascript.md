@@ -1,13 +1,13 @@
 ---
-title: "使用 bind 方法 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 使用 bind 方法 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +26,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987863"
 ---
 # <a name="using-the-bind-method-javascript"></a>使用 bind 方法 (JavaScript)
 JavaScript `bind` 方法有數種用途。 通常它是用來保留另一個內容中執行之函式的執行內容。 `bind` 會建立與原始函式擁有相同主體的新函式。 傳遞給 `bind` 的第一個引數會指定繫結函式中 `this` 關鍵字的值。 您也可以將額外的選擇性引數傳遞至 `bind`。 如需其他用法的範例，請參閱 [bind 方法 (函式)](../../javascript/reference/bind-method-function-javascript.md)。 如需使用 `bind` 部分套用函式的範例，請參閱[使用 Hilo JavaScript 的非同步程式設計模式和祕訣 (Windows 市集)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx)。  

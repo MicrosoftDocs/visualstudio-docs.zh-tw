@@ -1,13 +1,13 @@
 ---
-title: "餘數運算子 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 餘數運算子 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '%'
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - '% operator [JavaScript]'
 - remainder operator [JavaScript]
 ms.assetid: f98bf7ee-8366-4f1d-8769-dbdff82056a8
-caps.latest.revision: 
+caps.latest.revision: 0
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753254"
 ---
 # <a name="remainder-operator--javascript"></a>餘數運算子 (JavaScript)
 將另一個數值運算式的值的數值運算式的值除以，並產生其餘部分。  

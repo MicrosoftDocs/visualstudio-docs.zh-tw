@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465882"
 ---
 # <a name="functiontype"></a>FunctionType
 每個唯一的函式簽章由`SymTagFunctionType`符號。 每個參數會被識別為具有類別子符號`SymTagFunctionArgType`標記。  

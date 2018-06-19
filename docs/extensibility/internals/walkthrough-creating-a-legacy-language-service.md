@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144930"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說： 建立舊版語言服務
 使用 managed 的封裝架構 (MPF) 語言類別實作中的語言服務[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]相當簡單。 您需要 VSPackage 也可以裝載語言服務、 語言服務本身，以及您的語言剖析器。  

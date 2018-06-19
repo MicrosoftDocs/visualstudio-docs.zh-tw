@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474085"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：顯示和隱藏暫存器群組
 **註冊**視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯** 節點，**一般**類別目錄。  

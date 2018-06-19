@@ -1,13 +1,13 @@
 ---
-title: "IActiveScriptSiteDebug32::GetDocumentContextFromPosition |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 71136a1b3cb136cbc0a97cf39f59f1f4e950048b
@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725078"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
 語言引擎用於委派`IDebugCodeContext::GetSourceContext`。  

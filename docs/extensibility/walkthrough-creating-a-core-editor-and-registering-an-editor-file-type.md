@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147405"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說： 建立核心編輯器和登錄編輯程式檔案類型
 本逐步解說示範如何建立啟動的 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .myext 副檔名的檔案時，核心編輯器會載入。  

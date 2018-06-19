@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457897"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 偵錯介面存取 (DIA) SDK 會提供您與指示文件說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 來開發自訂應用程式開啟的.pdb 和.dbg 檔案，搜尋其內容中的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供 c + + 應用程式中找到的符號相關聯的屬性參考資料表。  

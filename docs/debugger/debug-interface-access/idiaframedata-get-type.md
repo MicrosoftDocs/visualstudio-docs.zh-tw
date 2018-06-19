@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460436"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 擷取特定編譯器的框架類型。  

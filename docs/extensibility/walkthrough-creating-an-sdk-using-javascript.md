@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144212"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說： 建立使用 JavaScript SDK
 本逐步解說將說明如何使用 JavaScript 建立簡單的數學 SDK 為 Visual Studio 擴充功能 (VSIX)。  本逐步解說分成下列部分：  

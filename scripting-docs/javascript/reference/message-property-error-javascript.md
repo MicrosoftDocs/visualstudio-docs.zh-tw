@@ -1,13 +1,13 @@
 ---
-title: "message 屬性 （錯誤） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: message 屬性 （錯誤） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - message
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Message property
 ms.assetid: 8cab0392-e0db-4714-827c-47ab04e8b4f2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638568"
 ---
 # <a name="message-property-error-javascript"></a>message 屬性 (錯誤) (JavaScript)
 會傳回錯誤訊息字串。  

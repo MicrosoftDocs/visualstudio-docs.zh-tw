@@ -17,6 +17,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031848"
 ---
 # <a name="linting-r-code-in-visual-studio"></a>在 Visual Studio 中對 R 程式碼進行 Linting
 

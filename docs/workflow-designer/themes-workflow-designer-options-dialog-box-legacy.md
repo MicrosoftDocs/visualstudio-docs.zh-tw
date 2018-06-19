@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972737"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>選項對話方塊、工作流程設計工具、佈景主題 (舊版)
 

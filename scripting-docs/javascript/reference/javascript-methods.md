@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 方法 |Microsoft 文件"
-ms.custom: 
+title: JavaScript 方法 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, methods
 ms.assetid: 003747e2-7860-4c96-b129-5180ae0fe745
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642908"
 ---
 # <a name="javascript-methods"></a>JavaScript 方法
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]方法。  

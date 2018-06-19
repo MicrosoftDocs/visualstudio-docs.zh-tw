@@ -28,6 +28,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031562"
 ---
 # <a name="code-analysis-for-cc-overview"></a>程式碼分析 C/c + + 的概觀
 

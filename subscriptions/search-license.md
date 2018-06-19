@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031178"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
 Visual Studio 訂用帳戶管理入口網站可讓您根據各種條件來尋找特定一小部分的訂閱者。 您可以依名稱、電子郵件地址、訂用帳戶層級和各種其他資訊來篩選訂閱者清單。 

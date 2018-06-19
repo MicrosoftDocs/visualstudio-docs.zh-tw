@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470666"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 擷取這個符號的編譯器專用的類型識別碼值的陣列。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458449"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (偵錯介面存取 SDK)
 某些編譯器引入不會識別任何標準語彙符號類型的符號。 這些符號所識別的`SymTagCustom`標記。  

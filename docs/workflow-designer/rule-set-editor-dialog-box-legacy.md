@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977335"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/26/2018
  如需條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。
 
 ### <a name="halt-and-update-functions"></a>暫止和更新函式
- **Then 動作：**和**Else 動作：**運算式支援**暫止**和**更新**函式。 若要使用**暫止**函式中，輸入**暫止**到**Then 動作：**或**Else 動作：**文字方塊。 **暫止**動作會造成規則集立即停止執行，並且控制項會傳回至呼叫的程式碼。 您使用**更新**函式與向前鏈結。
+ **Then 動作：** 和**Else 動作：** 運算式支援**暫止**和**更新**函式。 若要使用**暫止**函式中，輸入**暫止**到**Then 動作：** 或**Else 動作：** 文字方塊。 **暫止**動作會造成規則集立即停止執行，並且控制項會傳回至呼叫的程式碼。 您使用**更新**函式與向前鏈結。
 
  **更新**陳述式可以在編輯器中有兩種形式表示，則下列範例會示範這兩種形式：
 

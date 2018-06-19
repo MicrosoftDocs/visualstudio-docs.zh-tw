@@ -1,13 +1,13 @@
 ---
-title: "IActiveScriptParseProcedure32::ParseProcedureText |Microsoft 文件"
-ms.custom: 
+title: IActiveScriptParseProcedure32::ParseProcedureText |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ede37171-2f1e-4467-a358-17bd4a4f1869
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 2f36160ab9dca3ccc99aed1068b7e94fe1b7675d
@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724788"
 ---
 # <a name="iactivescriptparseprocedure32parseproceduretext"></a>IActiveScriptParseProcedure32::ParseProcedureText
 剖析指定的程式碼的程序，並將程式新增到命名空間。  

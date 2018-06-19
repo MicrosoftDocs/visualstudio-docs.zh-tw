@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146828"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的 UX Essentials
 ## <a name="best-practices"></a>最佳作法  
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
  ![忽略色彩服務，並使用 「 進一步了解"的超連結是 Visual Studio 的反向模式。] (../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />忽略色彩服務，並使用 「 進一步了解"的超連結是 Visual Studio 的反向模式。  
   
- **更好的解決方案：**會造成使用者會按一下連結會問的問題。  
+ **更好的解決方案：** 會造成使用者會按一下連結會問的問題。  
   
 -   Windows Azure 服務如何運作？  
   

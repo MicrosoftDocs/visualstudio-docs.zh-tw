@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459506"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 執行堆疊回溯，並傳回結果的堆疊查核行程框架介面中。  

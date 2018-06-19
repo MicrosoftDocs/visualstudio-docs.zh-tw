@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147577"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>逐步解說： 建立使用 c + + SDK
 本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 為 Visual Studio 擴充功能 (VSIX)，並再用它來建立應用程式。 本逐步解說分成下列步驟：  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在範本清單中，展開  **Visual c + +**， **Windows 通用**，然後選取**DLL （Windows 通用應用程式）**範本。 在**名稱**方塊中，指定`NativeMath`，然後選擇 [**確定**] 按鈕。  
+2.  在範本清單中，展開  **Visual c + +**， **Windows 通用**，然後選取**DLL （Windows 通用應用程式）** 範本。 在**名稱**方塊中，指定`NativeMath`，然後選擇 [**確定**] 按鈕。  
   
 3.  更新 NativeMath.h 以符合下列程式碼。  
   

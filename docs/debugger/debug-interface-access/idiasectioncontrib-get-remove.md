@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461405"
 ---
 # <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
 擷取指出區段是否已移除，才能進行記憶體中的映像的一部分的旗標。  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471833"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>編輯後繼續錯誤訊息對話方塊
 您的語言支援 [編輯後繼續]，偵錯時，會出現此對話方塊，但**編輯後繼續**不適用於您所做的程式碼變更的類型。 方塊內的錯誤訊息會提供更詳細的說明。 出現這個對話方塊的可能原因包括：  

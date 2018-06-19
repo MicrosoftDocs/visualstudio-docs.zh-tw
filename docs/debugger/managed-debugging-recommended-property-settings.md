@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476438"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Managed 偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。  

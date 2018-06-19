@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973704"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 
@@ -34,7 +35,7 @@ Windows 工作流程設計工具由三個主要 UI 區域所組成： 在設計�
 ## <a name="copying-or-saving-workflows-as-images"></a>將工作流程複製或儲存成影像
  工作流程能夠以點陣圖格式複製，或儲存為點陣圖或向量格式。 複製或儲存影像提供一種匯出的方式，可將目前階層連結根目錄中的整個活動檢視匯出到其他程式，包含其子活動與所有展開的子活動。
 
- 若要複製為影像，以滑鼠右鍵按一下設計工具並選取**複製為影像**。 若要儲存為影像，以滑鼠右鍵按一下設計工具並選取**儲存為影像**。 工作流程可儲存為 JPG、PNG、GIF 或 XPS 格式。 選取格式**存** 對話方塊中的**存檔類型：**下拉式清單方塊，在視窗底部。
+ 若要複製為影像，以滑鼠右鍵按一下設計工具並選取**複製為影像**。 若要儲存為影像，以滑鼠右鍵按一下設計工具並選取**儲存為影像**。 工作流程可儲存為 JPG、PNG、GIF 或 XPS 格式。 選取格式**存** 對話方塊中的**存檔類型：** 下拉式清單方塊，在視窗底部。
 
 ## <a name="fonts-and-colors"></a>字型和色彩
 

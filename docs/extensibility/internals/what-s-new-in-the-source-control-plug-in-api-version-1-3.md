@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145005"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>什麼&#39;s 來源中的新控制的外掛程式 API 版本 1.3
 原始檔控制外掛程式 API 1.3 版導入了下列新的函式，以提供更進階的控制項。  

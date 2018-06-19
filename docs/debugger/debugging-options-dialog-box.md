@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472878"
 ---
 # <a name="debugging-options-dialog-box"></a>選項對話方塊、偵錯
 **偵錯**資料夾，請在**選項** 對話方塊上的**工具**功能表上，提供了下列頁面，可讓您指定偵錯工具選項。  

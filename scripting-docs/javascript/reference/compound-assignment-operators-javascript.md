@@ -1,13 +1,13 @@
 ---
-title: "複合指派運算子 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 複合指派運算子 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - compound assignment operators
 - assignment operators, compound
 ms.assetid: c9bd75ed-c8f8-4643-a861-2673f00967f4
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +26,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753322"
 ---
 # <a name="compound-assignment-operators-javascript"></a>複合指派運算子 (JavaScript)
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指派運算子。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148856"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8： 外掛程式切換
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 具有使用者介面 (UI)，若要變更目前的原始檔控制外掛程式。 這個測試區域會提供挑選的外掛程式用於原始檔控制方案的程序中的測試案例。  

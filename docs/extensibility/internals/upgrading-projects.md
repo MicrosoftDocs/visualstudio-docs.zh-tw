@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148242"
 ---
 # <a name="upgrading-projects"></a>升級專案
 變更從一個版本的專案模型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]下可能需要的專案和方案升級，讓它們可以在較新版本上執行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可用來實作您自己的專案中的升級支援的介面。  

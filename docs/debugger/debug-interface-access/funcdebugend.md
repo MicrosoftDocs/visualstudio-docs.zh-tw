@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461856"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 如果函式具有定義的時間點，在哪些偵錯結束，偵錯起始點由使用的符號`SymTagFuncDebugEnd`標記。  

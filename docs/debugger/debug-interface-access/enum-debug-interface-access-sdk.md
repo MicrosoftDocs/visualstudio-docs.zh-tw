@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463246"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (偵錯介面存取 SDK)
 列舉所識別的`SymTagEnum`符號。 每個列舉值會顯示為具有類別子`SymTagConstant`標記。  

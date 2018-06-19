@@ -1,11 +1,11 @@
 ---
-title: "DBGPROP_INFO_FLAGS |Microsoft 文件"
-ms.custom: 
+title: DBGPROP_INFO_FLAGS |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DBGPROP_INFO_FLAGS
@@ -16,7 +16,7 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS
 ms.assetid: e9450a21-a802-4c3e-8b3d-8e202f555de1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641048"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 用來指定`DebugPropertyInfo`欄位  

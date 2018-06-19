@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470469"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 和 __debugbreak
 您可以呼叫 DebugBreak Win32 函式或[__debugbreak](/cpp/intrinsics/debugbreak)內建在您的程式碼在任何時間點。 `DebugBreak` 和 `__debugbreak` 的作用與在該位置設定中斷點的作用相同。  

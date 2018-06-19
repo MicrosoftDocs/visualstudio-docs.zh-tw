@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967135"
 ---
 # <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>如何：在分析已完成的負載測試時加入註解
 

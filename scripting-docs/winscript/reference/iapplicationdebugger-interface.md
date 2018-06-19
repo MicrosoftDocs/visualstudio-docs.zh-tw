@@ -1,16 +1,16 @@
 ---
-title: "IApplicationDebugger 介面 |Microsoft 文件"
-ms.custom: 
+title: IApplicationDebugger 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IApplicationDebugger interface
 ms.assetid: 27f6f8f5-2bf3-49bc-8abb-dfca98935aba
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725408"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger 介面
 偵錯工具所公開的主要介面。 除了繼承自`IUnknown`、`IApplicationDebugger`介面會公開下列方法。  

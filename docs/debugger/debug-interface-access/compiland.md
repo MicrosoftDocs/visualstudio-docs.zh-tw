@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457835"
 ---
 # <a name="compiland"></a>編譯模組
 有一個`SymTagCompiland`符號連結的.exe 檔案的每個編譯單位。 編譯模組的資訊分割成具有符號`SymTagCompiland`標記，可以擷取而不載入其他的編譯模組符號和符號與`SymTagCompilandDetails`標記，這可能需要載入其他符號。  

@@ -1,13 +1,13 @@
 ---
-title: "input 屬性 ($_) (RegExp) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: input 屬性 ($_) (RegExp) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $_
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - input property
 - $_ property
 ms.assetid: 88c6d1d8-56f7-4334-a7eb-e899aec9cda4
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637438"
 ---
 # <a name="input-property--regexp-javascript"></a>input 屬性 ($_) (RegExp) (JavaScript)
 傳回針對已執行規則運算式搜尋字串。 唯讀。  

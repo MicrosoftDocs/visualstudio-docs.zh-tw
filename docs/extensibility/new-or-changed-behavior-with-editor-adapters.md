@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148658"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器介面卡
 如果您要更新舊版的 Visual Studio 核心編輯器中，針對所撰寫的程式碼，而且您打算使用編輯器介面卡 （或填充碼），而不是使用新的 API，您應留意下列中的編輯器配接器行為的差異相對於前一個核心編輯器中。  

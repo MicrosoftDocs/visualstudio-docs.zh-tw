@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 未來的保留字 |Microsoft 文件"
-ms.custom: 
+title: JavaScript 未來的保留字 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - extends_JavaScriptKeyword
@@ -31,7 +31,7 @@ dev_langs:
 helpviewer_keywords:
 - reserved keywords (JavaScript)
 ms.assetid: 570de156-8e5c-413c-ac04-51120bdbb634
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -40,6 +40,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637508"
 ---
 # <a name="javascript-future-reserved-words"></a>JavaScript 未來的保留字
 在 JavaScript 中，未來保留的關鍵字必須不能當做識別項，即使是在目前版本中沒有特殊意義。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460185"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
 擷取指出區段是否可以共用記憶體中的旗標。  

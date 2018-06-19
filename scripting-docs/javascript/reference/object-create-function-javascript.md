@@ -1,12 +1,13 @@
 ---
-title: "Object.create 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.create 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - create function [JavaScript]
 - Object.create function [JavaScript]
 ms.assetid: 0ad31f36-a9ee-444e-b0fe-c87843d03196
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640478"
 ---
 # <a name="objectcreate-function-javascript"></a>Object.create 函式 (JavaScript)
 建立具有指定的原型，並選擇性地包含指定之屬性的物件。  

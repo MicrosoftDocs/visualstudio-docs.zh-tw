@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473634"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
 您可以展開和摺疊的 Windows、 處理序和執行緒檢視，使用兩種方法： 在視窗中，或使用的圖示上按一下**樹狀**功能表。 + 和-在樹狀目錄中的圖示做為在 Visual c + + 專案的視窗。  

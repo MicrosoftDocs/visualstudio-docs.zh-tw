@@ -1,13 +1,13 @@
 ---
-title: "toArray 方法 (VBArray) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: toArray 方法 (VBArray) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toArray
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toArray method
 ms.assetid: 664de44c-2039-4289-82f6-948e9d744d80
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641768"
 ---
 # <a name="toarray-method-vbarray-javascript"></a>toArray 方法 (VBArray) (JavaScript)
 傳回從 VBArray 轉換的標準 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 陣列。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145954"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>測試指南的原始檔控制外掛程式
 本節提供指引來測試您的原始檔控制外掛程式與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 會提供更詳盡的最常見的測試區域，以及某些更錯綜複雜區域可能有問題的概觀。 本概觀不是測試案例的完整清單。  

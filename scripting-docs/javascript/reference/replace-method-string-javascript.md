@@ -1,13 +1,13 @@
 ---
-title: "replace 方法 （字串） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: replace 方法 （字串） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - replace
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - replacing strings
 - Replace method
 ms.assetid: 5f0e4765-df4d-4887-bd09-efe5e58251bf
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/09/2018
+ms.locfileid: "27719340"
 ---
 # <a name="replace-method-string-javascript"></a>replace 方法 (String) (JavaScript)
 使用規則運算式或搜尋字串取代字串中的文字。  

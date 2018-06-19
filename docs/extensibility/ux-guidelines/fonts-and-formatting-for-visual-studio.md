@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148128"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型及格式設定適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -106,7 +107,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
  **會顯示為：** 34 pt Segoe UI Light  
  **適用於：** （罕見） 唯一品牌 UI，例如在 [開始] 頁面
 
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -124,9 +125,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="310-environment-font--light"></a>310%環境字型 + 細體  
  **會顯示為：** 28 pt Segoe UI Light   
- **適用於：**大型的簽章對話方塊標題，主報表中的標題  
+ **適用於：** 大型的簽章對話方塊標題，主報表中的標題  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -144,9 +145,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="200-environment-font--semilight"></a>200%環境字型 + 半細體  
  **會顯示為：** 18 pt Segoe UI semilight 做    
- **適用於：**子標題、 小型及中型 對話方塊中的標題  
+ **適用於：** 子標題、 小型及中型 對話方塊中的標題  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤： 
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤： 
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -166,7 +167,7 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 14 pt Segoe UI    
  **適用於：** UI 或報表，以及文件中的區段標題  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -184,9 +185,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="133-environment-font"></a>133%環境字型  
  **會顯示為：** 12 點 Segoe UI    
- **適用於：**簽章對話方塊和文件中較小的子標題以及 UI  
+ **適用於：** 簽章對話方塊和文件中較小的子標題以及 UI  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -204,9 +205,9 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="122-environment-font"></a>122%環境字型  
  **會顯示為：** 11 pt Segoe UI    
- **適用於：**區段中的簽章對話方塊標題中，排名最前面的節點在樹狀結構檢視中，垂直索引標籤瀏覽  
+ **適用於：** 區段中的簽章對話方塊標題中，排名最前面的節點在樹狀結構檢視中，垂直索引標籤瀏覽  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -223,10 +224,10 @@ label.SetResourceReference(Label.StyleProperty,
 ```
   
 #### <a name="environment-font--bold"></a>環境字型 + 粗體  
- **會顯示為：**粗體 9 點 Segoe UI    
- **適用於：**標籤和簽章對話方塊、 報表和文件中的次良好的 UI  
+ **會顯示為：** 粗體 9 點 Segoe UI    
+ **適用於：** 標籤和簽章對話方塊、 報表和文件中的次良好的 UI  
   
- **程序程式碼：**其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序程式碼：** 其中`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
@@ -411,7 +412,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：**罕見。 Unique 只品牌 UI。<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用輕量<br /><br /> **不要：**<br /><br /> 使用 ui 以外簽章 UI，例如起始頁<br />-粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 34 pt Segoe UI Light<br /><br /> **Visual 範例：**<br /><br /> *目前未使用。可用於起始頁。*|  
+|**使用方式：** 罕見。 Unique 只品牌 UI。<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />一律使用輕量<br /><br /> **不要：**<br /><br /> 使用 ui 以外簽章 UI，例如起始頁<br />-粗體、 斜體或粗體斜體<br />本文的使用<br />-使用中工具視窗|**會顯示為：** 34 pt Segoe UI Light<br /><br /> **Visual 範例：**<br /><br /> *目前未使用。可用於起始頁。*|  
   
 #### <a name="310-environment-font--light"></a>310%環境字型 + 細體  
   
@@ -429,31 +430,31 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 在文件中的區段標頭以及 UI<br />-報表<br /><br /> **操作方法：**使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 14 pt Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![155%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**使用方式：**<br /><br /> 在文件中的區段標頭以及 UI<br />-報表<br /><br /> **操作方法：** 使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 14 pt Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![155%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>133%環境字型  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 簽章對話方塊中的小子標題<br />文件中的小子標題以及 UI<br /><br /> **操作方法：**使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 12 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![133%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**使用方式：**<br /><br /> 簽章對話方塊中的小子標題<br />文件中的小子標題以及 UI<br /><br /> **操作方法：** 使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 12 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![133%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>122%環境字型  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 簽章對話方塊中的區段標題<br />的樹狀檢視中最上層節點<br />-垂直 tab 導覽<br /><br /> **操作方法：**使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 11 pt Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![122%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**使用方式：**<br /><br /> 簽章對話方塊中的區段標題<br />的樹狀檢視中最上層節點<br />-垂直 tab 導覽<br /><br /> **操作方法：** 使用句子大小寫<br /><br /> **不要：**<br /><br /> -粗體、 斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 11 pt Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![122%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>環境字型 + 粗體  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> -標籤和子標頭中的簽章對話方塊<br />-標籤和子報表中的標頭<br />-標籤和子文件中的標頭以及 UI<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-使用粗體的加權<br /><br /> **不要：**<br /><br /> -斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：**粗體 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型的範例&#43;粗體標題](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
+|**使用方式：**<br /><br /> -標籤和子標頭中的簽章對話方塊<br />-標籤和子報表中的標頭<br />-標籤和子文件中的標頭以及 UI<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-使用粗體的加權<br /><br /> **不要：**<br /><br /> -斜體或粗體斜體<br />本文的使用<br />-使用標準 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 粗體 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型的範例&#43;粗體標題](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202 f_EFB")|  
   
 #### <a name="environment-font"></a>環境字型  
   
 |||  
 |-|-|  
-|**使用方式：**所有其他文字<br /><br /> **操作方法：**使用句子大小寫<br /><br /> **不要：**斜體或粗體斜體|**會顯示為：** 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**使用方式：** 所有其他文字<br /><br /> **操作方法：** 使用句子大小寫<br /><br /> **不要：** 斜體或粗體斜體|**會顯示為：** 9 點 Segoe UI<br /><br /> **Visual 範例：**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>填補和間距  
  標題會需要它們，讓它們有適當的強調周圍的空間。 此空間會根據點大小和還有什麼是附近的標題，例如水平尺規或一行文字中的環境字型而有所不同。  

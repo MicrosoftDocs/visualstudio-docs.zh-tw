@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144891"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至檔案的副檔名
 您可以定義您自己的內容類型，然後連結它透過使用編輯器 Managed Extensibility Framework (MEF) 擴充功能檔案的副檔名。 在某些情況下，檔案名稱的副檔名已經定義語言服務;不過，使用 MEF 您仍必須將它連結至內容類型。  

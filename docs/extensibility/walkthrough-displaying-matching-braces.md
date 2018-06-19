@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143315"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>逐步解說： 顯示對稱的括號
 您可以實作語言為基礎的功能，例如定義您想要比對，在大括的號，然後將文字標記標記加入至對稱的括號，當插入號位於其中一個大括號比對的大括號。 您可以定義大括號中的內容語言，或您可以定義您自己的檔案名稱副檔名和內容類型，並將標籤套用到僅該型別，或您可以將標籤套用到現有的內容類型 （例如"text")。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對括號。  

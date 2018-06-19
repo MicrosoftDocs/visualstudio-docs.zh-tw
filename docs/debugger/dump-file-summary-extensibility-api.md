@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471017"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>傾印檔案摘要擴充性 API
 使用本節中的擴充性 Api，您可以擴充。Exe 專案系統和**傾印摘要**頁面供您自己的自訂偵錯引擎。  

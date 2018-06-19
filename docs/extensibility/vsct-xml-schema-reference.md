@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143536"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 提供的命令資料表編譯器結構描述項目，允許子元素和屬性每個。  

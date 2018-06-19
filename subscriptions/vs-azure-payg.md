@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195318"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>設定 Azure 開發/測試隨收隨付訂用帳戶
 在雲端與您的小組共同作業。  建立多個開發和測試隨用隨付訂用帳戶，讓您能夠與其他訂閱者共同作業，同時為小組與環境提供適時的隔離。  您會收到專屬的 Azure 訂用帳戶軟體開發/測試和雲端使用權限的每小時折扣費率。

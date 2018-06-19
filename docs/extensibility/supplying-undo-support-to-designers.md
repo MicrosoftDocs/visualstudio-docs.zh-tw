@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144878"
 ---
 # <a name="supplying-undo-support-to-designers"></a>提供給設計工具的復原支援
 設計工具，如編輯器，通常需要支援復原作業，因此使用者就可以反轉最近的變更時修改程式碼項目。  

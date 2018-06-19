@@ -1,13 +1,13 @@
 ---
-title: "標記陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 標記陳述式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - labeled_JavaScriptKeyword
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - labeled statement
 - identifiers, statements
 ms.assetid: 019f898e-9e27-4be4-a22f-c5927c7fcae2
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637598"
 ---
 # <a name="labeled-statement-javascript"></a>標記陳述式 (JavaScript)
 提供陳述式的識別項。  

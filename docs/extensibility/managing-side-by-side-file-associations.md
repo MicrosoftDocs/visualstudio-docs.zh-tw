@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146802"
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理並行的檔案關聯
 如果您的 VSPackage 提供的檔案關聯，您必須決定如何處理的並行安裝所在的特定版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該被叫用以開啟檔案。 不相容的檔案格式複合問題。  

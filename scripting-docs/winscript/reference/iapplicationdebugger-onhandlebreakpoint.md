@@ -1,11 +1,11 @@
 ---
-title: "IApplicationDebugger::onHandleBreakPoint |Microsoft 文件"
-ms.custom: 
+title: IApplicationDebugger::onHandleBreakPoint |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IApplicationDebugger.onHandleBreakPoint
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IApplicationDebugger::onHandleBreakPoint
 ms.assetid: 31adcecd-d6c1-4222-ab2c-32ec2fefb322
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725298"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 處理中斷點事件。  

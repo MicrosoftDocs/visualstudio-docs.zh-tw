@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148190"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （資料行指南）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。  本主題會示範如何開始使用常見的延伸模組功能，資料行的指南。  資料行的輔助線是以視覺化方式淺色文字編輯器的檢視，可協助您管理您的程式碼的特定資料行寬度上繪製的直線。  特別是格式化程式碼可能很重要的範例包含在文件，部落格文章，或錯誤報告。  

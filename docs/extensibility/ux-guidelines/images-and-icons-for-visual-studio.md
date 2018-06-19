@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148502"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>影像和 Visual Studio 的圖示
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 使用 Visual Studio 中的映像  
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/16/2018
   
 -   **圖示**。 會出現在命令、 階層、 範本和等等的小型影像。 使用 Visual Studio 中的預設圖示大小為 16 x 16 PNG。 圖示映像服務所產生的自動產生 HDPI 支援 XAML 的格式。  
   
-     **注意：**功能表系統中使用映像，而您不應建立的每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)以查看您的命令是否應該取得圖示。  
+     **注意：** 功能表系統中使用映像，而您不應建立的每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)以查看您的命令是否應該取得圖示。  
   
 -   **縮圖。** 在對話方塊中，例如 [新增專案] 對話方塊的 [預覽] 區域中使用的影像。  
   
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/16/2018
 ### <a name="overview"></a>總覽  
  Visual Studio 會使用具有全新的幾何和正負數 （淡/濃） 50/50 平衡和使用直接、 容易了解象徵物的現代化樣式圖示。 重要圖示設計點清楚、 簡化主機，以及內容周圍的中心。  
   
--   **清晰度：**專注於核心比喻，其意義和責難提供圖示。  
+-   **清晰度：** 專注於核心比喻，其意義和責難提供圖示。  
   
--   **簡化：**減少其核心意義圖示-取得佈景主題，只需要的項目與任何 frills。  
+-   **簡化：** 減少其核心意義圖示-取得佈景主題，只需要的項目與任何 frills。  
   
--   **內容：**概念在開發期間，當您決定哪一個項目構成圖示的核心比喻時很重要，請考慮圖示角色的所有層面。  
+-   **內容：** 概念在開發期間，當您決定哪一個項目構成圖示的核心比喻時很重要，請考慮圖示角色的所有層面。  
   
  有圖示，有數個設計點，以避免：  
   

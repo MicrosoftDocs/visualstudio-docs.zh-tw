@@ -19,9 +19,10 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144459"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
-如果您永遠不會編寫 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**本頁很有幫助？**螢幕的底部) 以取得您想要。  
+如果您永遠不會編寫 Visual Studio 擴充功能之前，您可能會有一些問題。 我們已列出一些最常見的。 如果您沒有看到您要尋找的資訊，請使用意見反應按鈕 (**本頁很有幫助？** 螢幕的底部) 以取得您想要。  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>若要開發 Visual Studio 擴充功能是否需要哪些軟體？  
  您需要安裝 Visual Studio SDK 除了 Visual Studio，若要開發 Visual Studio 擴充功能。 您可以安裝 Visual Studio SDK 一部分一般安裝，或您可以在稍後安裝。 如需有關如何安裝 Visual Studio SDK 的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  

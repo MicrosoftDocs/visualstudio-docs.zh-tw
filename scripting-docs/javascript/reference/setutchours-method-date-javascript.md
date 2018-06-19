@@ -1,13 +1,13 @@
 ---
-title: "setUTCHours 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: setUTCHours 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setUTCHours
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - UTC times, setting
 - setUTCHours method
 ms.assetid: 257e36fd-fb06-4a4d-8634-d66a020a1511
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641068"
 ---
 # <a name="setutchours-method-date-javascript"></a>setUTCHours 方法 (日期) (JavaScript)
 設定中的小時值`Date`物件使用國際標準時間 (UTC)。  
@@ -61,7 +62,7 @@ dateObj.setUTCHours(numHours[, numMin[, numSec[, numMilli]]])
   
  若要設定使用本地時間的小時值，請使用`setHours`方法。  
   
- 如果引數的值大於它的範圍，或為負數，就會據以修改其他的儲存的值。 例如，如果預存的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCHours(30)**是呼叫，日期變更為"1996 年 1 月 6 日 06:00:00.00。 」  
+ 如果引數的值大於它的範圍，或為負數，就會據以修改其他的儲存的值。 例如，如果預存的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCHours(30)** 是呼叫，日期變更為"1996 年 1 月 6 日 06:00:00.00。 」  
   
 ## <a name="example"></a>範例  
  在下列程式碼中，說明了如何使用 `setUTCHours` 方法。  

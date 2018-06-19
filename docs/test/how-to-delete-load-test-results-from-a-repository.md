@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972015"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：從儲存機制中刪除負載測試結果
 
