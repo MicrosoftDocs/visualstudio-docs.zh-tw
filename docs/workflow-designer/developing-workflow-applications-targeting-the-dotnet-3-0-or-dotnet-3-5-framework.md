@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968702"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>以 .NET 3.0 或 .NET 3.5 Framework 為目標開發工作流程應用程式
 

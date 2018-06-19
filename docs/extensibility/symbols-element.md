@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142772"
 ---
 # <a name="symbols-element"></a>符號的項目
 會定義 Guid 和其他 VSCT 項目所使用的識別碼。 對於 unmanaged 程式碼，這項資訊通常是由所指定的標頭檔[Extern 元素](../extensibility/extern-element.md)。 Managed 程式碼使用的符號項目來定義這項資訊的子元素。  

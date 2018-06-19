@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967092"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>如何：設定負載測試來收集完整詳細資料，以便在測試結果中啟用虛擬使用者活動
 
@@ -25,14 +26,14 @@ ms.lasthandoff: 04/26/2018
 
  [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定可以設為下列任何選項：
 
--   **所有個別細節：**針對測試期間發行的每個測試、異動和頁面，收集和儲存個別計時資料。
+-   **所有個別細節：** 針對測試期間發行的每個測試、異動和頁面，收集和儲存個別計時資料。
 
     > [!NOTE]
     > 必須選取 [所有個別細節] 選項，才能在負載測試結果中啟用虛擬使用者資料資訊。
 
--   **無：**不收集任何個別計時詳細資料。 但仍會收集平均值。
+-   **無：** 不收集任何個別計時詳細資料。 但仍會收集平均值。
 
--   **僅限統計資料：**儲存個別計時資料，但只以百分位數資料形式儲存。 這樣可以節省空間資源。
+-   **僅限統計資料：** 儲存個別計時資料，但只以百分位數資料形式儲存。 這樣可以節省空間資源。
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>若要設定負載測試中的計時詳細資料儲存區屬性
 

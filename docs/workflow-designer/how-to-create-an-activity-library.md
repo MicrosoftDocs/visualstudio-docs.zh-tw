@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974040"
 ---
 # <a name="how-to-create-an-activity-library"></a>HOW TO：建立活動程式庫
 自訂活動是用來將工作流程中特定的商務程序模型化。 Visual Studio 2010 中的活動程式庫範本會提供可讓您建立這類自訂活動，以視覺化方式使用 Windows 工作流程設計工具。

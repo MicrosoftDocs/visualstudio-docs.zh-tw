@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977266"
 ---
 # <a name="iterators-and-generators-javascript"></a>迭代器和產生器 (JavaScript)
 迭代器是用來周遊容器物件 (例如清單) 的物件。 在 JavaScript 中，迭代器物件不是不同的內建物件，而是實作 `next` 方法來存取容器物件中下一個項目的物件。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954388"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 藉由建立描述您的應用程式架構以高層級*相依性圖表*Visual Studio 中。 確定您的程式碼保持一致與這個設計來驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。

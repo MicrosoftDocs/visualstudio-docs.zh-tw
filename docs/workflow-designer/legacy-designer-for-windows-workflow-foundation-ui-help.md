@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970283"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>舊版 Windows Workflow Foundation UI 設計工具的說明
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965975"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用網域指定的語言方案
 使用建立的網域特定定義域語言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 此區段是有關如何設定及自訂方案。

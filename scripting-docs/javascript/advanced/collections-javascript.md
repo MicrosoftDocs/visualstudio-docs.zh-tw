@@ -1,19 +1,20 @@
 ---
-title: "集合 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 集合 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783048"
 ---
 # <a name="collections-javascript"></a>集合 (JavaScript)
 您可以使用集合物件 [Map](../../javascript/reference/map-object-javascript.md)、[Set](../../javascript/reference/set-object-javascript.md) 和 [WeakMap](../../javascript/reference/weakmap-object-javascript.md) 來儲存值和物件。 這些物件可提供簡便的方法讓您使用索引鍵或值 (而非使用索引) 來加入和擷取成員。 若要使用索引來存取集合的成員，請使用 `Array` 物件。 如需詳細資訊，請參閱[使用陣列](../../javascript/advanced/using-arrays-javascript.md)。  

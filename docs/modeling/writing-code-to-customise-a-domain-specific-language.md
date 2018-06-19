@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965222"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼以自訂特定領域語言
 
