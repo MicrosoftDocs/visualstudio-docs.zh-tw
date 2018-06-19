@@ -1,11 +1,11 @@
 ---
-title: "IMachineDebugManager::AddApplication |Microsoft 文件"
-ms.custom: 
+title: IMachineDebugManager::AddApplication |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IMachineDebugManager.AddApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IMachineDebugManager::AddApplication
 ms.assetid: 7cd591b6-718c-4e77-acb7-a6dd147ddf57
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728788"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
 新增應用程式來執行應用程式清單。  

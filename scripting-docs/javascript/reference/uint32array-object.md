@@ -1,19 +1,20 @@
 ---
-title: "Uint32Array 物件 |Microsoft 文件"
-ms.custom: 
+title: Uint32Array 物件 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: c4bf5409-2d4b-4660-9f4b-a45d7a02b47e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641528"
 ---
 # <a name="uint32array-object"></a>Uint32Array 物件
 32 位元不帶正負號的整數值的具類型的陣列。 內容已初始化為 0。 如果無法配置要求的位元組數目，就會引發例外狀況。  

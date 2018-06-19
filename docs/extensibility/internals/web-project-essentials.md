@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140991"
 ---
 # <a name="web-project-essentials"></a>Web 專案的基本資訊
 Web 專案建立 Web 應用程式。 您可以使用 Web 專案建立 Web 應用程式具有智慧網頁。 智慧網頁已呈現網頁上指定的伺服器端程式碼。  

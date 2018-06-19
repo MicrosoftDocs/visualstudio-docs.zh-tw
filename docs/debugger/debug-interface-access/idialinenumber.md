@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465219"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 存取描述對應到原始程式檔行號位元組的影像文字區塊的程序的資訊。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112203"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 偵錯引擎 (DE) 時即將執行的使用者程式碼的第一個指令程式，將此介面傳送至工作階段的偵錯管理員 (SDM)。  

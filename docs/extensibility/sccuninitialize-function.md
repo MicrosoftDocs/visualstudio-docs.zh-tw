@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140491"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函式
 此函式會清除任何配置或由先前呼叫所建立的開啟連接[SccInitialize](../extensibility/sccinitialize-function.md)準備關閉原始檔控制外掛程式。  

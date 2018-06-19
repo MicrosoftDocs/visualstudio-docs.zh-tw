@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30864188"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>適用於系統管理員的上線電子郵件通訊
 

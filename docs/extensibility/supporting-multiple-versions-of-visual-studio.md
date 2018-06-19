@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137816"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支援多個版本的 Visual Studio
 詞彙*來並行*表示您可以安裝和維護多個版本的同一部電腦上的產品。 適用於 Vspackage，這表示使用者可以擁有數個 Visual Studio 版本安裝在同一部電腦上。 不過，您不能有 Vspackage，載入至單一的 Visual Studio 版本的並存版本。  

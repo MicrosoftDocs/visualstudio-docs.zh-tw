@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141092"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>解除安裝 Windows Installer VSPackage
 大部分的情況下，Windows Installer 可以解除安裝 VSPackage 只由 「 復原 」 一樣安裝 VSPackage。 自訂動作所述[命令，必須是執行之後安裝](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必須也解除安裝後執行。 因為 devenv.exe 呼叫 InstallFinalize 標準動作，進行安裝和解除安裝之前，CustomAction 和 InstallExecuteSequence 資料表項目會做這兩種情況。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141938"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用文字標記與舊版應用程式開發介面
 文字標記是文字的浮動範圍中的緩衝區，可能會影響顯示和文字的區域的行為。 標記包含中斷點、 書籤，波浪底線和唯讀區域。 文字標記會基本上不同的語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面上，通常被要求語法著色。 語法著色可變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並在套用特殊的行為和著色。  

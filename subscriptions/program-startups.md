@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863647"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初學者提供的 Visual Studio 訂用帳戶
 加入 Microsoft for Startups 計劃的合格新創公司可獲得 5 個 [Visual Studio Enterprise 每月雲端訂閱](https://www.visualstudio.com/vs/pricing/)。 這些是與市售相同的訂閱，但沒有特殊限制。 每個訂用帳戶都必須先指派給使用者 (已獲得授權的使用者)，使用者才能執行 Visual Studio 並在 VSTS 中辨識為 Visual Studio Enterprise 訂閱者。

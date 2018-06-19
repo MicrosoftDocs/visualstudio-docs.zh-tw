@@ -23,9 +23,10 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899941"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>原型和原型繼承
 在 JavaScript 中，`prototype` 是函式的屬性，也是由建構函式所建立之物件的屬性。 函式的原型就是物件。 當函式本身就是建構函式時，原型就會派上用場。  

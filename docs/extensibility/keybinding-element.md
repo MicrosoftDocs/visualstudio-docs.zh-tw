@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139165"
 ---
 # <a name="keybinding-element"></a>按鍵繫結關係的項目
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。  

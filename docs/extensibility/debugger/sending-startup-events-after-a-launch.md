@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135750"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 在偵錯引擎 (DE) 會附加至程式之後，它會傳送一系列的啟動事件至偵錯工作階段。  

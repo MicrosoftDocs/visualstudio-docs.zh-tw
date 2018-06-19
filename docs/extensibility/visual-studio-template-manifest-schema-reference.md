@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142570"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
 此結構描述會描述針對 Visual Studio 專案或項目樣板所產生的 Visual Studio 範本資訊清單 (.vstman) 檔案格式，並且描述的位置和其他範本的相關資訊。  

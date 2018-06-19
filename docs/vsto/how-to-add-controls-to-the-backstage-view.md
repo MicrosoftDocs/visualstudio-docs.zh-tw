@@ -28,6 +28,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549073"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何： 將控制項加入 Backstage 檢視
   您可以使用功能區設計工具將控制項加入後按一下開啟功能表**檔案** 索引標籤。當您執行應用程式中，您將加入的控制項**檔案**索引標籤會出現一個名為群組**增益集**。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134879"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂的分類和顯示項目
 VSPackage 可以提供控制項的字型和色彩，其文字的底部[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 透過自訂的分類和顯示項目。

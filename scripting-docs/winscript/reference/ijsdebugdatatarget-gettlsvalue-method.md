@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugdatatarget:: Gettlsvalue 方法 |Microsoft 文件"
-ms.custom: 
+title: 'Ijsdebugdatatarget:: Gettlsvalue 方法 |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugDataTarget.GetTlsValue
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugDataTarget.GetTlsValue
+apilocation:
+- jscript9diag.dll
 ms.assetid: db575be9-7b24-45c5-9008-e4f2f76d6757
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727878"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue 方法
 正在進行偵錯的執行緒，擷取指定的 TLS 索引執行緒區域儲存區 (TLS) 插槽中的值。  

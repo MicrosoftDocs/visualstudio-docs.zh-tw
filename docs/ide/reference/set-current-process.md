@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705082"
 ---
 # <a name="set-current-process"></a>設定目前處理序
 將指定的處理序設為偵錯工具中的使用中處理序。

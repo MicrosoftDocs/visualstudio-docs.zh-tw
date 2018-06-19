@@ -1,11 +1,11 @@
 ---
-title: "IDebugDocumentHelper::Attach |Microsoft 文件"
-ms.custom: 
+title: IDebugDocumentHelper::Attach |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugDocumentHelper.Attach
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugDocumentHelper::Attach
 ms.assetid: 834f23a9-716d-44df-b23c-d1bf6da60e79
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726968"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
 將這份文件加入至文件樹狀結構。  

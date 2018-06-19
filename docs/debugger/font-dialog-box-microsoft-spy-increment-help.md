@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471160"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>字型對話方塊 (Microsoft Spy++ 說明)
 使用此對話方塊來設定中使用的字元字型[Spy + + 檢視](../debugger/spy-increment-views.md)視窗。 若要顯示此對話方塊中，展開 **檢視**功能表，然後選擇 **字型**。  

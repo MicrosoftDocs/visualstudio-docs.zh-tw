@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108332"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 專案是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼並建立 Web 服務、 資料庫和其他資源的參考。  

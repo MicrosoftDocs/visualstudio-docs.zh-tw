@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139347"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 檔案
 當 Visual Studio 方案或專案放置在原始檔控制使用 IDE 時，IDE 會從原始檔控制外掛程式在字串的形式接收兩項重要的資訊。 這些字串"AuxPath"和"ProjName 」，並不清楚在 IDE 中，但是會使用由外掛程式版本控制中找出方案或專案。 IDE 通常會取得這些字串第一次呼叫[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然後未來呼叫的方案或專案檔中儲存[SccOpenProject](../extensibility/sccopenproject-function.md)。 內嵌在此方案和專案檔時，「 AuxPath"和"ProjName"字串不會自動更新使用者分支中，就會分岔，或複製會在版本控制中的方案和專案檔時。 若要確定方案和專案檔會指向其正確的位置，在版本控制中，使用者必須手動更新的字串。 字串可當做不透明，因為它不一定清楚如何他們應該更新。  

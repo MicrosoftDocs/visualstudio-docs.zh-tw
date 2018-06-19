@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135818"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支援舊版語言服務中的 [自動變數] 視窗
 **自動變數**視窗會顯示運算式，例如變數和參數的範圍內時進行偵錯的程式已暫停 （可能是因為中斷點或例外狀況）。 運算式可以包含變數，本機或全域和區域範圍中已變更的參數。 **自動變數**視窗也可以包含的類別、 結構或其他類型具現化。 任何可以評估的運算式評估工具的項目可能會顯示在**自動變數**視窗。  

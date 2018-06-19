@@ -1,17 +1,17 @@
 ---
-title: "IDispatchEx 介面 |Microsoft 文件"
-ms.custom: 
+title: IDispatchEx 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDispatchEx interface, about IDispatchEx
 - IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24730298"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 介面
 `IDispatchEx`副檔名為`IDispatch`介面，適用於動態語言，例如指令碼語言的支援功能。 本章節描述`IDispatchEx`介面本身之間的差異`IDispatch`和`IDispatchEx`，和擴充功能的基本原理。 它預期讀者已熟悉`IDispatch`並存取`IDispatch`文件。  

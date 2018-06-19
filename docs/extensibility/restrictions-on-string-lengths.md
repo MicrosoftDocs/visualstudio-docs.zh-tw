@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136454"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度限制
 原始檔控制外掛程式 API 限制使用不同的函式中之字串的長度。  

@@ -1,11 +1,11 @@
 ---
-title: "ISimpleConnectionPoint::Unadvise |Microsoft 文件"
-ms.custom: 
+title: ISimpleConnectionPoint::Unadvise |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ISimpleConnectionPoint.Unadvise
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - ISimpleConnectionPoint::Unadvise
 ms.assetid: eae06a58-ed42-4839-aad4-14420b15343f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733898"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 終止透過先前建立諮詢連接`ISimpleConnectionPoint::Advise`。  

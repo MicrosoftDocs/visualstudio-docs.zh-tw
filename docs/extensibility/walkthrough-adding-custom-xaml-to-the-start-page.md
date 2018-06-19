@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140055"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>逐步解說： 在 [開始] 頁面中加入自訂的 XAML
 本逐步解說示範如何建立自訂 Visual Studio 起始頁包含網頁瀏覽器。  

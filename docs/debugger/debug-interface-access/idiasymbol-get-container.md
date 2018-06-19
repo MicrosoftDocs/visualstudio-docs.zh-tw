@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462908"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 此函式會擷取符號，代表這個符號父/容器的指標。  

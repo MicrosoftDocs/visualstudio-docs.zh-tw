@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142626"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>逐步解說： 建立邊界字符
 您可以自訂編輯器邊界的外觀，使用自訂的編輯器延伸模組。 本逐步解說會自訂圖像的指標邊界，每當"todo"這個字出現在程式碼註解。  

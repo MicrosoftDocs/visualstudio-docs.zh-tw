@@ -1,11 +1,11 @@
 ---
-title: "IVariantChangeType 介面 |Microsoft 文件"
-ms.custom: 
+title: IVariantChangeType 介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IVariantChangeType
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IVariantChangeType interface
 ms.assetid: c5bf03dd-8eaa-45f1-9e86-1b48f017a45b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733828"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType 介面
 可讓呼叫者，從一種類型的變數值轉換成另一個。  
