@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481472"
 ---
 # <a name="stale-code-warning-dialog-box"></a>過時程式碼警告對話方塊
 會出現此對話方塊後變更原生程式碼的**編輯後繼續**無法立即套用。 因此，現在目前堆疊框架中的某些機器碼已過期，也就是過時了。 如需詳細資訊，請參閱[How to： 使用過時程式碼](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)。  

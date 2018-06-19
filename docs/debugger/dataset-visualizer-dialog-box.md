@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457263"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
 [資料集視覺化檢視] 可讓您檢視 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。 在偵錯工具變數視窗或 DataTip 中，按一下每一個物件的 [值] 旁邊出現的放大鏡圖示，就可以存取這個視覺化檢視。  

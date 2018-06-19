@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477075"
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息碼和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送至特定處理程序或特別適用於捕捉視窗初始化訊息的執行緒所擁有的所有 windows 訊息。  

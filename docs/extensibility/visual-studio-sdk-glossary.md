@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148895"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 詞彙
 僅提供所用的詞彙定義[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]文件。  

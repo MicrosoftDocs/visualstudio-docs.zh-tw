@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453985"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教學課程
 

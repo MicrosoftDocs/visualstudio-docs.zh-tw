@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128647"
 ---
 # <a name="language-service-support-for-debugging"></a>語言服務支援偵錯
 語言服務可以提供功能，可支援透過偵錯工具<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>介面。 這些功能包括驗證中斷點，並提供一份運算式**自動變數**視窗。  

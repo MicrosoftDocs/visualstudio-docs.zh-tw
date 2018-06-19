@@ -24,6 +24,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447865"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>在文件層級方案中的文件保護
   您可以使用文件層級專案中的 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者變更受保護的文件部分。  

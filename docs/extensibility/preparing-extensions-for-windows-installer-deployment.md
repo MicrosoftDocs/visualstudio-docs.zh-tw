@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136322"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署的擴充功能
 若要部署的 VSIX 封裝，您無法使用 Windows Installer 封裝 (MSI)。 不過，您可以將 MSI 部署的 VSIX 套件的內容解壓縮。 本文件說明如何準備的預設輸出，則為 VSIX 封裝，以包含在安裝專案的專案。  

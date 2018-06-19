@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472707"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 當您檢視中的記憶體內容**記憶體**視窗或**反組譯碼**視窗中，您可以使用垂直捲軸上移或下移的記憶體空間中。  

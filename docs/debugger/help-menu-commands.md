@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472005"
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
 **協助**功能表提供命令來開啟說明檔案。  

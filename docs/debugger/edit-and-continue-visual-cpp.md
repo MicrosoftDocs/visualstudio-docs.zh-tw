@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474544"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)的編輯後繼續的限制相關資訊。

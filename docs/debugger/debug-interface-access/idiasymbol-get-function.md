@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465638"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
 擷取指定的公用符號是否參考的函式的旗標。  

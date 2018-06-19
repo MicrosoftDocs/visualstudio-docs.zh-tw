@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571119"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 我們建議用來撰寫 MSBuild 指令碼的最佳作法如下：  

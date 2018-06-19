@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463324"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 擷取可讓用戶端來逐一查看的所有函式內嵌，直接或間接地以指定的父符號的行號資訊和指定的虛擬位址 (VA) 內所包含的列舉。  

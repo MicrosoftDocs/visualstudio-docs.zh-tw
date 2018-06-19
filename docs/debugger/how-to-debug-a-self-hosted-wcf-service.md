@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479938"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
 A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]啟動用戶端和伺服器，當您選擇**開始偵錯**上**偵錯**功能表。  

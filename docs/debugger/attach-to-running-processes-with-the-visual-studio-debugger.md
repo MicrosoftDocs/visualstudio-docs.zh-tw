@@ -34,6 +34,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454553"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 處理序執行之後，請按一下**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**) 若要開啟**附加至處理序** 對話方塊。

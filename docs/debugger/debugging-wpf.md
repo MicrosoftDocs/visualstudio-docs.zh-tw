@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479815"
 ---
 # <a name="debugging-wpf"></a>偵錯 WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 提供了額外的功能，可讓 WPF 應用程式偵錯變得更輕鬆。  

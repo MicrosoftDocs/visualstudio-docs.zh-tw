@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453812"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的常用鍵盤快速鍵
 

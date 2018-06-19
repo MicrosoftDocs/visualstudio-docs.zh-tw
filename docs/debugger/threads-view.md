@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476893"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [執行緒] 檢視是您的系統上的 windows 與相關聯的所有執行緒的一般清單。 會顯示執行緒 ID 和每個執行緒的模組名稱。 程序不包含在內，但您可以輕鬆找到擁有所選取之執行緒的程序。  

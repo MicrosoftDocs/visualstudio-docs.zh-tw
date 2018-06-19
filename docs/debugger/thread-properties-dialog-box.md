@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476412"
 ---
 # <a name="thread-properties-dialog-box"></a>執行緒屬性對話方塊
 使用這個對話方塊方塊中尋找深入了解特定執行緒。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開訊息。 選取的任何執行緒節點在樹狀目錄中，然後選擇 **屬性**從**檢視**功能表。  

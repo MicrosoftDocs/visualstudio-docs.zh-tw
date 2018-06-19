@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465404"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。  
