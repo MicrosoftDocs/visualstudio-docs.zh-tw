@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957797"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在類別設計工具中變更為成員標記法或關聯標記法
 

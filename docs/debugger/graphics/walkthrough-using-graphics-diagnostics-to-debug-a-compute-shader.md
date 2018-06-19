@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481261"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷來偵錯計算著色器
 本逐步解說示範如何使用 Visual Studio 圖形診斷工具來調查產生不正確結果的計算著色器。  

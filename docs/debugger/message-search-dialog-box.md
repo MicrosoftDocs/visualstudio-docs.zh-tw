@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481797"
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
 使用此對話方塊，即可尋找並選取的節點中的特定訊息[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，將焦點移至 [訊息] 檢視視窗。 然後選擇 **尋找訊息**從**搜尋**功能表。  

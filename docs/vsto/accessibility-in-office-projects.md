@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262309"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
   Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置自訂的解決方案符合標準的協助工具需求。 Microsoft 會發行在網站上的協助工具的指導方針。 如需詳細資訊，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。  

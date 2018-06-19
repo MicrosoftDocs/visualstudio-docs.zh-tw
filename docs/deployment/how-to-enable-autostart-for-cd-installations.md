@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558239"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>如何：啟用 CD 安裝的 AutoStart
 部署時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]透過卸除式媒體例如 CD-ROM 或 DVD-ROM 應用程式，您可以啟用`AutoStart`以便[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]插入媒體時，自動啟動應用程式。  

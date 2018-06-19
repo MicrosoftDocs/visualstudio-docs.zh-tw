@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479241"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C + + 偵錯組態的專案設定
 您可以變更 C 或 Visual c + + 的偵錯組態中的專案設定**屬性頁** 對話方塊中所述[How to： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示如何尋找中的偵錯工具相關設定**屬性頁** 對話方塊。  

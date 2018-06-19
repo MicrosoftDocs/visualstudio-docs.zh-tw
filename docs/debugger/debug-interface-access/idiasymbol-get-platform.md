@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470952"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 擷取編譯所編譯模組的平台類型。  

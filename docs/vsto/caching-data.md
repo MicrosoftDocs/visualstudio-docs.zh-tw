@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264365"
 ---
 # <a name="cache-data"></a>快取資料
   您可以快取文件層級自訂中的資料物件，以便可存取資料，而不需要開啟 Microsoft Office Word 或 Microsoft Office Excel 或離線。 若要快取物件，該物件必須符合特定需求的資料類型。 .NET Framework 中的許多常見的資料類型符合這些需求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。  

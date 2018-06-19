@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475635"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：偵錯 .NET Framework 原始檔
 若要偵錯.NET Framework 原始程式碼，您必須偵錯符號的程式碼存取權。 您也需要啟用逐步執行.NET Framework 原始程式碼。  

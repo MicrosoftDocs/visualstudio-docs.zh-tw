@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559331"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：使用 ClickOnce 應用程式安裝必要條件
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式需要.NET Framework 正確版本已安裝在電腦上，才能執行，則為許多應用程式有其他必要條件。 發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，您可以選擇一組的必要條件元件，以與您的應用程式一起封裝。 在安裝期間，會檢查以判斷是否它已經存在; 每個必要條件如果不將會安裝在安裝之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  

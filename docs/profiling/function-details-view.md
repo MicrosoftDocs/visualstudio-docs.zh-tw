@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578305"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [函式詳細資料檢視] 視窗會顯示下列資訊︰  

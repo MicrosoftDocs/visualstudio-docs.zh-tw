@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569498"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 .resx 檔案做為資源檔。  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481174"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
 報告攔截函式，使用安裝[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)會產生偵錯報表。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：  

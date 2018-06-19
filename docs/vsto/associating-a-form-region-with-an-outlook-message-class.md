@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268226"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>將表單區域與 Outlook 訊息類別產生關聯
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域將表單區域與每個項目的訊息類別產生關聯。 例如，如果您想要的郵件項目底部附加表單區域，您可以將關聯表單區域`IPM.Note`訊息類別。  

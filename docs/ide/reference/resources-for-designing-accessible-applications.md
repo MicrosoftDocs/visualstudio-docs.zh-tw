@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704170"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481333"
 ---
 # <a name="vtableshape"></a>VTableShape
 [VTable](../../debugger/debug-interface-access/vtable.md)符號有所識別的類別子符號`SymTagVTableShape`標記。  

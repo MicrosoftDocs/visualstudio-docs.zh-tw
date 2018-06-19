@@ -13,6 +13,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34478310"
 ---
 如果您安裝 Web Deploy 使用 Web Platform Installer，您可以部署應用程式直接從 Visual Studio。
 

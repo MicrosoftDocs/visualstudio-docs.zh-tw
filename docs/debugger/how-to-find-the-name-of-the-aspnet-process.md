@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473815"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：尋找 ASP.NET 處理序的名稱
 若要附加至執行中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，您必須知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 處理序的名稱：  

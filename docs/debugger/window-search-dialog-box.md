@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476627"
 ---
 # <a name="window-search-dialog-box"></a>視窗搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的視窗中的節點[視窗檢視](../debugger/windows-view.md)。 若要顯示此對話方塊中，將焦點移至 Windows 的 [檢視] 視窗。 然後選擇 **尋找視窗**從**搜尋**功能表。  

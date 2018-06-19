@@ -18,6 +18,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33870958"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 

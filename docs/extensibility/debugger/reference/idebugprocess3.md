@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121088"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此介面代表正在執行的程序，而且它的程式。 這個介面是用來取代中的數個方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 它可控制程序中的所有程式。  

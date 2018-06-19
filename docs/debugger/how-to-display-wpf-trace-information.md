@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476220"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：顯示 WPF 追蹤資訊
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以從 WPF 應用程式接收偵錯追蹤資訊，並顯示該資訊**輸出**視窗。 若要顯示偵錯追蹤資訊，必須啟用 WPF 追蹤。  

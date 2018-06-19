@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110025"
 ---
 # <a name="debug-package"></a>偵錯封裝
 偵錯封裝在 Visual Studio shell 中執行，並處理所有的使用者介面。 它會使用 Visual Studio 偵錯介面和通訊工作階段的偵錯管理員 (SDM)。  

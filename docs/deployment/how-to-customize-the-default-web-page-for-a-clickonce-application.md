@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557667"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自訂 ClickOnce 應用程式的預設 Web 網頁
 當發行 ClickOnce 應用程式 web，網頁上自動產生及發行以及應用程式。 預設頁面包含的應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34547994"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 

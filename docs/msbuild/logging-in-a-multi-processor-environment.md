@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575374"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了記錄的複雜性。 在單一處理器環境中，記錄器可以透過可預測的循序方式來處理傳入的事件、訊息、警告和錯誤。 不過，在多處理器環境中，來自數個來源的事件可能會同時或不依順序到達。 MSBuild 提供可辨識多處理器的新記錄器，並啟用建立自訂「轉送記錄器」。  

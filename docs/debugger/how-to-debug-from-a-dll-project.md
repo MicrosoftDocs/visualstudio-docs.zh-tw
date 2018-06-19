@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475807"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>如何： 從 Visual Studio 中的 DLL 專案進行偵錯
 若要偵錯 DLL 專案的一種方式為在 DLL 專案的專案屬性中指定呼叫應用程式，然後您可以從開始偵錯 DLL 專案本身。 要執行這個方法，應用程式必須呼叫 DLL，DLL 必須位在應用程式預期可找到的位置和 （否則應用程式可能會找到不同版本的 dll 和載入，而是，它將不會叫用中斷點）。 其他的偵錯 Dll 的方法，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)。
@@ -67,7 +68,7 @@ C++ 屬性頁面在配置與內容方面和 C# 及 Visual Basic 的屬性頁面�
 
 5.  如果需要您也可以呼叫做為 URL 的應用程式。 (若正在偵錯本機 ASP.NET 應用程式所使用之 Managed DLL，進行此動作可能相當有助益。)  
   
-     在下**起始動作**，選取**以 URL 啟動瀏覽器：**選項按鈕並塡入 URL。
+     在下**起始動作**，選取**以 URL 啟動瀏覽器：** 選項按鈕並塡入 URL。
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>從 DLL 專案啟動偵錯  
   

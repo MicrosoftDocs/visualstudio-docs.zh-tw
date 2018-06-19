@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477364"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要偵錯執行緒和處理序，在 Visual Studio 中的工具
 *執行緒*和*處理程序*是電腦科學中相關的概念。 兩者都代表必須以特定順序執行的指令序列。 但是，不同執行緒或處理序中的指令能夠平行執行。  

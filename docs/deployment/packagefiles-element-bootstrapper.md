@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560904"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;元素 （啟動載入器）
 `PackageFiles`元素包含`PackageFile`項目，可定義執行的安裝封裝`Command`項目。  

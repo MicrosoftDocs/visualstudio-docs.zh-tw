@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124639"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>介面 （Visual Studio 偵錯）
 方法依字母順序列在每個介面，在該資料表的內容，並依照 Vtable 順序的介面上。  

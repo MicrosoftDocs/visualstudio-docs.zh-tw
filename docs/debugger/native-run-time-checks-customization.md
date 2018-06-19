@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480898"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 當您編譯與 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  

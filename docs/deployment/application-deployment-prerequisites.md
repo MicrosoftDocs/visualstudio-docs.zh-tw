@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565688"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 為了確保應用程式順利安裝及執行，您必須先確認目標電腦上已安裝與應用程式相依的所有元件。 例如，使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建立的大多數應用程式都與 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 具相依性；在安裝應用程式之前，目的地電腦上必須存在正確的 Common Language Runtime 版本。  

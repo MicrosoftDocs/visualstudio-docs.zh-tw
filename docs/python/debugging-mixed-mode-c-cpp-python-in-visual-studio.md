@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31583147"
 ---
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 

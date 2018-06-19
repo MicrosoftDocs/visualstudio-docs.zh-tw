@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34000395"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558928"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 在 Visual Studio 中的建置應用程式對使用者帳戶控制 (UAC) 在 Windows Vista 上通常會產生內嵌的資訊清單，編碼為二進位的 XML 資料，應用程式的可執行檔。 因為 ClickOnce 和免註冊 COM 應用程式需要外部資訊清單，Visual Studio 會產生這些類型的專案包含 UAC 資料，而不是內嵌的資訊清單檔案。 根據預設，Visual Studio 會從呼叫 app.manifest 檔案使用資訊，來產生外部 UAC 資訊清單資訊 （如 ClickOnce 和免註冊 COM 部署），或將它內嵌在應用程式的可執行檔 （適用於所有其他情況下）。 Visual Studio 提供下列選項以產生資訊清單：  

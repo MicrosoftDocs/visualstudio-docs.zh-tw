@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574636"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  

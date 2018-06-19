@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114900"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 這個介面會描述連接埠。 這項描述用來將連接埠新增至連接埠供應商。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263925"
 ---
 # <a name="common-data-views"></a>一般資料檢視
 本節包含所有分析方法常見分析工具資料檔案之檢視與報表的相關參考資訊。  

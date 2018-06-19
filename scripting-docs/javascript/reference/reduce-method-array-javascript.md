@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264772"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce 方法 (陣列) (JavaScript)
 陣列中的所有項目會呼叫指定的回呼函式。 回呼函式的傳回值即為累加結果，並做為下一個呼叫的引數提供給回呼函式。  

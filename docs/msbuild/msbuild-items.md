@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577531"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  

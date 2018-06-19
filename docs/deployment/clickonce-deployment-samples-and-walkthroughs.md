@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563371"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 本節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來部署 Windows Forms、 WPF 和主控台應用程式的技術。  

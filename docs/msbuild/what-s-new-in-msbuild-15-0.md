@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569299"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 的新功能
 MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/download/core) 的一部分來取得，並且可以在 Windows、macOS 和 Linux 上建置 .NET Core 專案。  

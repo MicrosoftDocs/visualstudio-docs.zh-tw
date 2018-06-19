@@ -17,6 +17,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34063680"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 

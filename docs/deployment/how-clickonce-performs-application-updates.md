@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557693"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 ClickOnce 會使用應用程式的部署資訊清單中指定的檔案版本資訊決定是否要更新應用程式的檔案。 更新開始之後，ClickOnce 會使用稱為技術*修補檔案*避免重複下載的應用程式檔案。  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476971"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字串視覺化檢視中檢視字串
 您所偵錯時，您可以開啟檢視字串太長，無法在資料提示或偵錯工具視窗中檢視之字串視覺化檢視。 在許多案例中，視覺化檢視可以協助您識別格式不正確的字串。

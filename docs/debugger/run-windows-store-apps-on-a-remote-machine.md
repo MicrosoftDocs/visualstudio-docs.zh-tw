@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477312"
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>在 Visual Studio 中的遠端電腦上執行 UWP 應用程式
   
@@ -43,10 +44,10 @@ ms.lasthandoff: 04/18/2018
 - Windows 10 電腦執行 Windows 10 版本早於 Windows 10 建立者的更新，您必須[安裝並執行遠端偵錯元件](#BKMK_download)。
   
 ##  <a name="BKMK_Security"></a> 安全性  
-根據預設， **Universal （未加密的通訊協定）**適用於 Windows 10。 這個通訊協定應該只用於受信任的網路。 偵錯連接容易受到惡意使用者便無法攔截及變更程式開發和遠端電腦之間傳遞資料。
+根據預設， **Universal （未加密的通訊協定）** 適用於 Windows 10。 這個通訊協定應該只用於受信任的網路。 偵錯連接容易受到惡意使用者便無法攔截及變更程式開發和遠端電腦之間傳遞資料。
   
 > [!WARNING]
->  當您將驗證模式設定為有是不具網路安全性**Universal （未加密的通訊協定）**或**無**。 只有在確定網路沒有惡意傳輸的風險時，請選擇這些模式。  
+>  當您將驗證模式設定為有是不具網路安全性**Universal （未加密的通訊協定）** 或**無**。 只有在確定網路沒有惡意傳輸的風險時，請選擇這些模式。  
   
 ##  <a name="BKMK_DirectConnect"></a> 如何直接使用 USB 纜線連接 
 

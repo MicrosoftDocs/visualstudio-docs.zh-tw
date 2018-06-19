@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561346"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 您可以安裝您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式一開始是從光碟或檔案共用，但是這個應用程式必須檢查是否有定期更新從網站上。 使您的應用程式可以在初始安裝後從 Web 本身更新，您可以在部署資訊清單中指定更新的替代位置。  

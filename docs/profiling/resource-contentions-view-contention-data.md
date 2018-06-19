@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584135"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。  

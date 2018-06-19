@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454634"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>檢查自動變數中的變數和 Visual Studio 中的 [區域變數] 視窗
 **自動變數**視窗 (偵錯時， **CTRL + ALT + V、 A**，或**偵錯 > Windows > [自動變數]**) 和**區域變數**視窗 （偵錯時**CTRL + ALT + V、 L**，或**偵錯 > Windows > [區域變數]**) 會相當實用，當您想要在偵錯時查看變數值。 [區域變數]  視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 [自動變數]  視窗會顯示目前這一行 (偵錯工具停止處的位置) 附近使用的變數。 在此視窗中顯示哪些變數的完全是在不同的語言不同。 請參閱下方的 [What variables appear in the Autos Window?](#bkmk_whatvariables)   
