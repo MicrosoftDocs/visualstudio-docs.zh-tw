@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468329"
 ---
 # <a name="idiasession"></a>IDiaSession
 提供偵錯符號的查詢內容。  
@@ -35,7 +36,7 @@ IDiaSession : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|擷取對應至這個符號存放區中的符號的可執行檔的負載位址。 這是相同的值傳遞給`put_loadAddress`方法。|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定載入位址，對應的可執行檔，此符號存放區中。 **注意：**請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定載入位址，對應的可執行檔，此符號存放區中。 **注意：** 請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|擷取全域範圍的參考。|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|擷取包含在符號存放區中的所有資料表的列舉值。|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|擷取靜態位置的所有具名符號的列舉值。|  

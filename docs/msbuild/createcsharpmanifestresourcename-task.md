@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576725"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 工作
 從指定的 .resx 檔案名稱或其他資源，建立 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 樣式的資訊清單名稱。  

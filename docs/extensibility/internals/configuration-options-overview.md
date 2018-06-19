@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132465"
 ---
 # <a name="configuration-options-overview"></a>設定選項的概觀
 中的專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是搭配命名集的屬性、 通常編譯器參數和檔案位置中所述的組建類型。 根據預設，新的方案包含兩個組態，偵錯和發行。 使用預設值，或修改以符合您特定的方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果使用只能在一個設定，該組態會對應到所有的方案組態。  

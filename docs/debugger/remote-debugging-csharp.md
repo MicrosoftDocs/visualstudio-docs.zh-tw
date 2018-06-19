@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477702"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 C# 或 Visual Basic 專案
 偵錯 Visual Studio 應用程式已部署在不同電腦上，安裝和部署您的應用程式的所在的電腦上執行遠端工具，設定您的專案，從 Visual Studio 中，連線到遠端電腦，然後執行您的應用程式。

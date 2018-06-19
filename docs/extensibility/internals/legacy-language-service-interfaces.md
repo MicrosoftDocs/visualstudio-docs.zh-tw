@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134616"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 任何特定的程式設計語言，可以有只有一個執行個體的語言服務一次。 不過，單一語言服務可以服務多個編輯器。  

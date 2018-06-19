@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470900"
 ---
 # <a name="error-site-uses-ip-address"></a>錯誤：站台使用 IP 位址
 當偵錯工具嘗試自動附加至使用 IP 位址的 Web 應用程式時，就會發生這個錯誤。 如果您變更，發生這種的情況**網站識別**至**使用特定 IP 位址**在 IIS 中。  

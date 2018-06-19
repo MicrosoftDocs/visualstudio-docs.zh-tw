@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128935"
 ---
 # <a name="creating-a-source-control-vspackage"></a>建立原始檔控制 VSPackage
 本文件包含連結至原始檔控制封裝與整合的架構概觀[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，API 所實作的介面，並且要取用的服務定義，說明簡單的來源的範例控制封裝的實作。  

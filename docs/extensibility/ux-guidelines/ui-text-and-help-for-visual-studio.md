@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148362"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字和 Visual Studio 的說明
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
@@ -306,7 +307,7 @@ ms.lasthandoff: 04/16/2018
 ##### <a name="dialogs-created-through-the-environment"></a>透過在環境建立的對話方塊  
  透過建立許多殼層對話方塊**VBDialogBoxParam**函式。 已更新此共用的函式，以協助您移動**協助**對話方塊按鈕**嗎？** 按鈕，同時保留與舊版的架構相容且可延伸。  
   
- 具體來說， **VBDialogBoxParam**函式會查看其識別碼是一個按鈕的對話方塊範本**IDHELP** (9) 或標籤是**協助**或**（& a) 協助**. 如果找到說明 按鈕，它隱藏和**WS_EX_CONTEXTHELP**樣式加入至對話方塊中，而放置**嗎？** 在對話方塊的標題列按鈕。  
+ 具體來說， **VBDialogBoxParam**函式會查看其識別碼是一個按鈕的對話方塊範本**IDHELP** (9) 或標籤是**協助**或 **（& a) 協助**. 如果找到說明 按鈕，它隱藏和**WS_EX_CONTEXTHELP**樣式加入至對話方塊中，而放置**嗎？** 在對話方塊的標題列按鈕。  
   
  建立對話方塊時，推入至堆疊的對話方塊程序，並使用名為前置處理的對話方塊程序叫用對話方塊**DialogPreProc**。 當**嗎？** 按一下按鈕時，它會傳送**WM_SYSCOMMAND**的**SC_CONTEXTHELP**對話方塊。 **DialogPreProc**擷取此命令，並且其變更為**WM_HELP**訊息，傳遞至原始的對話方塊程  
   

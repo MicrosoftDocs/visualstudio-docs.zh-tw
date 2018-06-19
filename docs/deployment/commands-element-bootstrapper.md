@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566195"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （啟動載入器）
 `Commands`項目實作的項目底下所描述的測試`InstallChecks`項目，並宣告哪一個套件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]啟動載入器應該安裝，如果測試失敗。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134652"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>導覽列的舊版語言服務的支援
 導覽列頂端的編輯器檢視會顯示檔案中的類型和成員。 類型會以左側下拉式清單中，而成員就會顯示在右側下拉式清單。 當使用者選取類型時，將插入號會放在類型的第一行。 當使用者選取成員時，會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。  

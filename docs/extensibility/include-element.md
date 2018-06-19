@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133295"
 ---
 # <a name="include-element"></a>包含項目
 Include 項目指定的檔案，位於所提供包含插入至目前檔案的路徑。  所有符號和定義的型別都會在已編譯的結果。  

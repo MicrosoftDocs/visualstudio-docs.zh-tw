@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475790"
 ---
 # <a name="using-spy"></a>使用 Spy++
 Spy + + (SPYXX。EXE) 是 win32 公用程式，可讓您系統的處理程序、 執行緒、 視窗和視窗訊息的圖形化檢視。 Spy + + 說明本章節包含下列說明主題：  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560709"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼存取安全性限制。 因此，您必須了解程式碼存取安全性的含意，並照著撰寫 ClickOnce 應用程式。  

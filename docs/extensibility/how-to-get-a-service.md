@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132452"
 ---
 # <a name="how-to-get-a-service"></a>如何： 取得服務
 您通常需要取得 Visual Studio 服務來存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一個或多個介面。 您可以從 VSPackage 取得大部分的服務。  

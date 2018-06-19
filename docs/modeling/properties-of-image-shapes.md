@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952624"
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 設定以定義影像圖形`Image`預先定義的映像檔案類別的屬性。 支援下列格式：

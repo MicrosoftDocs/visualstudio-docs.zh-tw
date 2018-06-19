@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31964947"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>建立診斷資料配接器以收集自訂資料或影響測試電腦
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/26/2018
 
 |工作|相關主題|
 |-----------|-----------------------|
-|**建立診斷資料配接器：**您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料配接器](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**安裝自訂診斷資料配接器：**您可以將診斷資料配接器複製到正確的目錄以安裝自建的配接器，或是他人所提供的配接器。|-   [如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
-|**選取執行測試時要使用的自訂診斷資料配接器：**您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [測試時收集診斷資料 (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
-|**設定診斷資料配接器執行的動作：**您可以進行設定，以控制診斷資料配接器在該特定測試設定中的動作。|-   [如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
+|**建立診斷資料配接器：** 您可以藉由建立類別庫來建立診斷資料配接器，然後使用診斷資料配接器 API，收集您想要的資訊或影響您用來執行測試的測試系統。|-   [如何：建立診斷資料配接器](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**安裝自訂診斷資料配接器：** 您可以將診斷資料配接器複製到正確的目錄以安裝自建的配接器，或是他人所提供的配接器。|-   [如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
+|**選取執行測試時要使用的自訂診斷資料配接器：** 您可以選取要用於測試設定的診斷資料配接器，以便在執行測試時使用該配接器。|-   [測試時收集診斷資料 (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [在手動測試中收集診斷資料 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**設定診斷資料配接器執行的動作：** 您可以進行設定，以控制診斷資料配接器在該特定測試設定中的動作。|-   [如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>另請參閱
 

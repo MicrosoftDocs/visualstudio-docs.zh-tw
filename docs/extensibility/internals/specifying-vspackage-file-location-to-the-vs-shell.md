@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131998"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VS Shell 指定 VSPackage 的檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是能夠找出組件載入 VSPackage 的 DLL。 您可以找出它以各種方式下, 表中所述。  

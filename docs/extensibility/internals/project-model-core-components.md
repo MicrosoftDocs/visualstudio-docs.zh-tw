@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133102"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 在專案模型上，展開下列資料表。 這些表格顯示介面，而且模型的介面和特定物件相關聯的服務中識別的服務的簡短的描述。 此外，資料表會詳細說明中的專案建立和維護，根據您的特定專案類型的需求是選用的其他介面。  

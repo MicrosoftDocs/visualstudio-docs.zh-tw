@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131487"
 ---
 # <a name="command-routing-algorithm"></a>命令路由演算法
 在 Visual Studio 中多個不同的元件會處理命令。 命令會從最內部的內容中，根據目前的選取範圍，路由傳送到最外層 （也稱為通用） 的內容。 如需詳細資訊，請參閱[可用性](../../extensibility/internals/command-availability.md)。  

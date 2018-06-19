@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559071"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新
 ClickOnce 會提供兩種方式，一旦部署之後，更新的應用程式。 在第一個方法中，您可以設定 ClickOnce 部署以自動檢查更新，在特定間隔內。 在第二個方法中，您可以撰寫程式碼乃使用<xref:System.Deployment.Application.ApplicationDeployment>檢查更新的類別，根據事件，例如使用者的要求。  

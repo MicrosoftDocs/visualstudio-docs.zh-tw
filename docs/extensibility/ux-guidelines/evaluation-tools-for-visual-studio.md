@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147329"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>評估 Tools for Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 的技術檢查清單  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134089"
 ---
 # <a name="running-document-table"></a>執行中的文件表格
 IDE 會維護呼叫執行中文件資料表 (RDT) 的內部結構中所有目前開啟的文件的清單。 這份清單包括在記憶體中，不論是否目前正在編輯這些文件的所有開啟的文件。 文件是會保存，包括檔案的專案或主要專案檔 （例如，.vcxproj 檔案） 中的任何項目。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140068"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>語言服務內容，使用提供的舊版應用程式開發介面
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供的文字標記的內容，或提供所有的使用者內容。 此處所述每之間的差異。  

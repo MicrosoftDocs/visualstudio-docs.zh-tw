@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31898583"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303：不要將常值當做已當地語系化的參數傳遞
 |||

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130752"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 實作復原管理
 用於復原管理的主要介面為<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，由環境實作。 支援管理復原，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。  

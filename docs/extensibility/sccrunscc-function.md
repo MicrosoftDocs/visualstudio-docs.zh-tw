@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138261"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用的原始檔控制系統管理工具。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581964"
 ---
 # <a name="performance-rules-by-id"></a>依 ID 排序的效能規則
 |警告|描述|  

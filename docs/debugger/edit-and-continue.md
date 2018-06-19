@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471966"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並繼續偵錯在 Visual Studio 中 （C#、 VB、 c + +）
 [編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇之類的執行命令繼續執行程式**繼續**或**步驟**、 編輯及繼續自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。  

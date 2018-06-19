@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148268"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 共用的色彩
 當您在設計 UI 使用通用 Visual Studio shell 項目，或您想要介面項目與類似的功能一致時，使用在封裝定義檔中現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。  

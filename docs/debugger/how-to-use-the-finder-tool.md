@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476181"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
 您可以使用搜尋工具中**尋找視窗**對話方塊，即可顯示視窗屬性或訊息。 搜尋工具也可以找出已停用的子視窗，並分辨哪一個視窗，來反白顯示，如果停用子視窗有重疊。  

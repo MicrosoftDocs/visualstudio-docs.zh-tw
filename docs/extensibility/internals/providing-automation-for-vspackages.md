@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131568"
 ---
 # <a name="providing-automation-for-vspackages"></a>提供 Vspackage 的自動化
 有兩種主要方式可讓您的 Vspackage： 藉由實作 VSPackage 特定物件，並藉由實作標準 automation 物件。 一般而言，這些項目用於一起擴充 automation 模型的環境。  

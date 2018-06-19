@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132141"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 擴充大綱中提供支援舊版語言服務
 有兩個選項，來擴充您的語言支援的大綱支援**摺疊至定義**命令。 您可以將控制編輯器的大綱區域，並將用戶端控制大綱區域。  

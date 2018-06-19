@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130449"
 ---
 # <a name="exposing-project-objects"></a>公開專案物件
 自訂專案類型可以提供 automation 物件，以便讓專案使用 automation 介面的存取權。 每個專案類型必須為提供標準<xref:EnvDTE.Project>自動化物件，存取從<xref:EnvDTE.Solution>，其中包含已經在 IDE 中開啟的所有專案的集合。 在專案中的每個項目必須由公開<xref:EnvDTE.ProjectItem>物件存取具有`Project.ProjectItems`。 除了這些標準 automation 物件，可以選擇專案的方案專案特定自動化物件。  

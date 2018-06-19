@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135674"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>支援的舊版語言服務程式碼片段
 程式碼片段是一段程式碼插入至原始程式檔。 程式碼片段本身是以 XML 為基礎的範本與一組欄位。 程式碼片段插入後可以有不同的值，根據插入程式碼片段的內容，會反白顯示這些欄位。 立即插入程式碼片段之後，語言服務可以格式化程式碼片段。  

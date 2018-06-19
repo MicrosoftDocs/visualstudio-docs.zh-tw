@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138284"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>開啟動態工具視窗
 從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有時候，不過，您可能需要開啟特定 UI 內容會套用，且當 UI 內容不再適用時，關閉時的工具視窗。 工具視窗的這些型別稱為*動態*或*自動可見*。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148115"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔案設定 Visual Studio 擴充功能的安裝行為。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
  **擴充功能 SDK**  
  指定不只限於特定的產品和版本的全域安裝。 **目標平台識別項**是平台，例如"Windows"，您的目標。 **平台版本為目標**是版本，例如 8.0、 的目標平台。 **SDK 名稱**和**SDK 版本**分別為名稱和 SDK 的版本號碼。  
   
- **針對所有使用者安裝此 VSIX （需要提高權限安裝）**核取方塊  
+ **針對所有使用者安裝此 VSIX （需要提高權限安裝）** 核取方塊  
  如果選取此核取方塊，為所有使用者; 安裝此擴充功能否則，它會安裝僅針對目前的使用者。  
   
  **Windows Installer 會安裝此 VSIX**核取方塊  

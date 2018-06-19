@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132730"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入編輯器服務、 處理站和核心編輯器提供不同類型的存取您的擴充功能的代理程式的數目。 例如，您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>給定的內容類型。 （此作業可讓您執行不同類型的搜尋文字的緩衝區上）。  

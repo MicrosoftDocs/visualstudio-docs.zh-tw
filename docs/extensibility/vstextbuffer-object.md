@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141030"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 物件
 文字緩衝區物件表示 Unicode 文字，通常與檔案相關聯的資料流。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>物件可以用核心編輯器中，內容之外，如果精靈是。  

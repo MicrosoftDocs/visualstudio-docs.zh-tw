@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561606"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：發行具有指定地區的專案
 一個應用程式包含不同地區設定的元件是很常見的情況。 在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。 本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。 如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 (例如 'de' 或 'de-DE')。  
@@ -144,7 +145,7 @@ ms.lasthandoff: 04/19/2018
   
 2.  在**新專案**對話方塊中，選取**Windows 應用程式**從**Visual Basic**節點。 將專案命名**PublishLocales**。  
   
-3.  按一下 Form1。 在**屬性**視窗底下**設計**，變更**語言**屬性從**（預設）**至**英文**. 變更**文字**表單屬性以**MyForm**。  
+3.  按一下 Form1。 在**屬性**視窗底下**設計**，變更**語言**屬性從 **（預設）** 至**英文**. 變更**文字**表單屬性以**MyForm**。  
   
      請注意，當地語系化資源 DLL 只有在需要時才會建立。 例如，在您指定新的地區設定之後，若變更表單的文字或其中一個控制項，就會建立。  
   

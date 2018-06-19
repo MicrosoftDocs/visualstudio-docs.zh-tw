@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129624"
 ---
 # <a name="source-control"></a>原始檔控制
 本章節將討論的整合功能，以及實作原始檔控制的選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，透過原始檔控制外掛程式或原始檔控制 VSPackage。  

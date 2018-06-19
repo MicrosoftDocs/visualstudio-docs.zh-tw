@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130655"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選器的重要命令
 如果您想要建立功能完整的語言服務篩選條件，請考慮將處理下列的命令。 中定義的命令識別碼的完整清單<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>列舉 managed 程式碼和 Stdidcmd.h 標頭檔案 unmanaged[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]程式碼。 您可以找到 Stdidcmd.h 檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。  

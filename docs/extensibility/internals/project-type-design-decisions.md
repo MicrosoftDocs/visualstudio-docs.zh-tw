@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131486"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須決定數個設計有關您的專案類型。 您必須決定您將使用哪些類型的專案將包含的項目、 如何將保存專案檔，以及哪一種承諾模型。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131572"
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 語言服務定義的項目和功能特定的語言，並用來提供該語言的特定資訊的編輯器。 例如，編輯器必須知道的項目和語言的關鍵字，以支援的語法著色。  

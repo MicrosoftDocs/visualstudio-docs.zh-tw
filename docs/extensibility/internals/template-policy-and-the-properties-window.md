@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130038"
 ---
 # <a name="template-policy-and-the-properties-window"></a>原則範本和 [屬性] 視窗
 專案包含企業樣板專案內的企業樣板專案可以強制執行原則。 範本的原則問題變得可用來設定屬性的預設值、 隱藏的屬性、 加入屬性等等的條件約束系統。  

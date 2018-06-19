@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131156"
 ---
 # <a name="nesting-projects"></a>巢狀專案
 企業應用程式開發人員使用您的 VS 套件可以輕鬆地群組類似類型的專案中一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*專案巢狀*。 例如，企業樣板專案會使用巢狀的專案與群組專案組成各種分類。 商務外觀專案、 Web UI 專案等等中群組在一起一個類別目錄。  

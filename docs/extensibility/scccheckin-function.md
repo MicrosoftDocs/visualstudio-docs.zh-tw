@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138850"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 此函式簽入原始檔控制系統，儲存所做的變更和建立新的版本先前會在簽出檔案。 此函式呼叫計數與簽入的檔案名稱的陣列。  

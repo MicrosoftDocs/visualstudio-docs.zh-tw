@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477598"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：將執行緒加上旗標和取消旗標
 您可以加上旗標的執行緒，您想要特別注意標記中的圖示與**執行緒**，**平行堆疊**（執行緒檢視）**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。  

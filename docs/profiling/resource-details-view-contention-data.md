@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584395"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
 資源詳細資料檢視會在時間軸圖形顯示因爭用所選取的資源而造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制執行緒暫停執行而發生封鎖事件。  

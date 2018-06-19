@@ -26,6 +26,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134580"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援的符號瀏覽工具
 **物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**和**尋找符號結果**工具提供符號瀏覽 Visual Studio 中的功能。 這些工具中顯示的符號的階層式樹狀檢視，並且顯示在樹狀目錄中的符號之間的關聯性。 符號可能代表命名空間、 物件、 類別、 類別成員和各種元件中包含其他語言項目。 這些元件包括 Visual Studio 專案中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]元件和型別 (.tlb) 程式庫。 如需詳細資訊，請參閱[檢視程式碼的結構](../../ide/viewing-the-structure-of-code.md)。  

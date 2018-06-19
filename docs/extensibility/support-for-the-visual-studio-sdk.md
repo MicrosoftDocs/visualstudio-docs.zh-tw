@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141684"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 支援
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。  

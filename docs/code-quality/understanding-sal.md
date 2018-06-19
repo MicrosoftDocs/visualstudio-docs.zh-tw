@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927542"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋可讓您描述函式如何使用它的參數、 建立與其，相關的假設和完成時，它可保證。 標頭檔中定義的註解`<sal.h>`。 C + + 的 visual Studio 程式碼分析會使用 SAL 註釋，來修改其分析的函式。 用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。
@@ -40,7 +41,7 @@ void * memcpy(
  您可以判斷此函式的功能嗎？ 當實作或呼叫函式時，必須維護特定的屬性，以確保程式正確性。 只要查看宣告，例如此範例中，您不知道它們為何。 不含 SAL 註釋，您必須依賴文件或程式碼註解。 以下是什麼的 MSDN 文件的`memcpy`指出：
 
 > 「 複本計數位元組的 src 到目的地。 如果來源和目的地重疊，memcpy 的行為未定義。 您可以使用 memmove 處理重疊的區域。
-> **安全性注意事項：**確定目的地緩衝區是相同大小，等於或大於來源緩衝區。 如需詳細資訊，請參閱 「 避免緩衝區滿溢 」。
+> **安全性注意事項：** 確定目的地緩衝區是相同大小，等於或大於來源緩衝區。 如需詳細資訊，請參閱 「 避免緩衝區滿溢 」。
 
  文件包含的資訊，建議您的程式碼必須維護特定的屬性，以確保程式的正確性的位元數：
 

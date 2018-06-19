@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577063"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 結束目前追蹤內容。  
@@ -36,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
  如果已結束追蹤內容，則為已設定 **SUCCEEDED** 位元的 **HRESULT**。  
   
 ## <a name="requirements"></a>需求  
- **標頭：**FileTracker.h  
+ **標頭：** FileTracker.h  
   
 ## <a name="see-also"></a>請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132557"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>建立方案的父容器的資料夾
 在原始檔控制外掛程式 API 1.2 版，使用者可以指定針對方案中的所有 Web 專案的單一根來源控制目的地。 此單一根稱為超級統一的根 （南下）。  

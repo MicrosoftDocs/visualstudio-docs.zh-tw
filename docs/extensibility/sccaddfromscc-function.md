@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139948"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 此函式可讓使用者瀏覽已在原始檔控制系統中的檔案，之後將這些檔案目前的專案。 例如，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。  

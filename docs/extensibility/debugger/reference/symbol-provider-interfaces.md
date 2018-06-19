@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131297"
 ---
 # <a name="symbol-provider-interfaces"></a>符號提供者介面
 以下是符號處理介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  

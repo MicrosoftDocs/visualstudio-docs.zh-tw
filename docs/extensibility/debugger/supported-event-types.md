@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134357"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 Visual Studio 偵錯目前支援下列事件類型：  

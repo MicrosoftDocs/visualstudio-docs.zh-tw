@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139756"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Ngen VSIX v3 支援
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
 </ProjectReference>
  ```
 
- >**注意：**您可以編輯.csproj 檔案直接，如果您偏好。
+ >**注意：** 您可以編輯.csproj 檔案直接，如果您偏好。
 
 ## <a name="extra-information"></a>額外的資訊
 

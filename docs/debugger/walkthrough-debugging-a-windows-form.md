@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477949"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的受管理應用程式。 Windows Form 建立標準的 Windows 應用程式。 您可以完成這個逐步解說中使用 Visual Basic、 C# 或 c + +。  

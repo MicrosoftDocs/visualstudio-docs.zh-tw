@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134629"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 當您建立新的專案類型時，您必須建立登錄項目，以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]辨識，並使用您的專案類型。 您通常會使用登錄指令碼 (.rgs) 檔案建立這些登錄項目。  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477413"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>從 Visual Studio 偵錯 DLL 專案
 下列 Visual Studio 範本會建立 Dll:  

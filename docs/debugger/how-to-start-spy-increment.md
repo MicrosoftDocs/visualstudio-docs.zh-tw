@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473854"
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 您可以啟動 Spy + + 從 Visual Studio 或在命令提示字元。  

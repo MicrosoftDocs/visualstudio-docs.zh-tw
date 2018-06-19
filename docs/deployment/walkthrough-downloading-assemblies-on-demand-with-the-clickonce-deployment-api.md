@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565766"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依 ClickOnce 部署 API 的要求下載組件
 根據預設，所有組件包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能必須部分應用程式所使用的一小群使用者。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說將示範如何將標示為 「 選用 」 的應用程式中的某些組件，以及如何下載使用中的類別<xref:System.Deployment.Application>當 common language runtime (CLR) 要求其命名空間。  

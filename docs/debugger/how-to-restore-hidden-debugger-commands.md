@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475193"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：還原隱藏的偵錯工具命令
 當您設定 Visual Studio 時，將會要求您選擇一組預設 IDE 設定，做為您主要的程式設計語言。 某些語言的預設 IDE 設定可能會隱藏特定偵錯工具命令。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  在**自訂**對話方塊中，按一下 [**命令**] 索引標籤。  
   
-3.  在**功能表列：**下拉式清單中，選取**偵錯**您想要包含所還原的命令的功能表。  
+3.  在**功能表列：** 下拉式清單中，選取**偵錯**您想要包含所還原的命令的功能表。  
   
 4.  按一下**新增命令...**  按鈕。  
   

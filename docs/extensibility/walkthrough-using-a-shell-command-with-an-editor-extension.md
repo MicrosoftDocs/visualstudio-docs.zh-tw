@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148375"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說： 使用 Shell 命令的編輯器延伸模組
 VSPackage，您可以加入至編輯器功能，例如功能表命令。 本逐步解說示範如何將裝飾文字在編輯器中檢視，藉由叫用功能表命令。  

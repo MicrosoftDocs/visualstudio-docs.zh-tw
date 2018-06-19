@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564242"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;描述&gt;元素 （ClickOnce 部署）
 識別應用程式資訊用於建立 shell 的存在和**新增或移除程式**控制台 中的項目。  

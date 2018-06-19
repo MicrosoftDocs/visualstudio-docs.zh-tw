@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130876"
 ---
 # <a name="project-priority"></a>專案優先順序
 專案項目通常是在方案中只能有一個專案的成員。 因此，在 IDE 可以輕易地判斷哪一個專案用來開啟項目中。 不過，如果項目是多個專案的成員，IDE 會使用優先順序配置來判斷最佳的專案開啟的項目。  

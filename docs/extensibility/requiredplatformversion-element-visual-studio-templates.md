@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136168"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 項目 (Visual Studio 樣板)
 指定的專案範本需要正常運作的作業系統最低版本。 這個項目用於建立的專案範本[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。  

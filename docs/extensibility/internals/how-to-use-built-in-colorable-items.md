@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129679"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用內建的色彩項目
 使用內建的色彩項目之前，您必須先指示整合式的開發環境 (IDE) 未提供您自己自訂色彩項目，在此情況下的方式是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>物件。 您可以設定語言服務的登錄項目。  
