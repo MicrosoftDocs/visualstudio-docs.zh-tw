@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949575"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 

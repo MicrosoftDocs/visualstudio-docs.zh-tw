@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097610"
 ---
 # <a name="commandname-element"></a>CommandName 項目
 `CommandName`項目會指定所顯示的文字中的鍵盤類別目錄**選項**對話方塊中，然後在**命令**清單中**自訂**對話方塊方塊。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949588"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義的屬性
 DslDefinition 屬性會定義*網域特定領域語言*定義屬性，例如版本編號。 DslDefinition 屬性會出現在**屬性**視窗中，當您按一下圖中的開放區域*網域特定語言設計工具*。

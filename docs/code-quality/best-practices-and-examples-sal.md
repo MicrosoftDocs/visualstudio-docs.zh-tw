@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900990"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是一些取得大部分超出來源的程式碼的註釋語言 (SAL)，並避免一些常見的問題。

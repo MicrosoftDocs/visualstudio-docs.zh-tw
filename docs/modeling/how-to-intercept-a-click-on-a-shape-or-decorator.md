@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952296"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
 下列程序示範如何攔截按一下圖形或圖示裝飾項目。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。

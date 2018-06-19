@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918591"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：屬性名稱不能和其中有 get 的方法名稱相符
 |||

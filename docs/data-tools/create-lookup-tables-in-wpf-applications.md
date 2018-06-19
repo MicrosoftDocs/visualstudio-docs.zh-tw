@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926531"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 應用程式建立查閱資料表
 詞彙*查閱資料表*(有時稱為*查閱繫結*) 描述會顯示資訊從一個資料表，另一個資料表中的外部索引鍵欄位的值為基礎的控制項。 您可以透過將主要節點的父資料表中建立查閱資料表或物件存放至**資料來源**視窗拖曳至已繫結至資料行或屬性相關的子系資料表中的控制項。

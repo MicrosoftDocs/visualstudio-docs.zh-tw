@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926256"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。

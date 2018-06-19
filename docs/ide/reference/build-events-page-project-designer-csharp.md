@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944839"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
 使用 [專案設計工具] 的 [建置事件] 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱[如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。

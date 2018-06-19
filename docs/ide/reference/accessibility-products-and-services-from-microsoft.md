@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948739"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 

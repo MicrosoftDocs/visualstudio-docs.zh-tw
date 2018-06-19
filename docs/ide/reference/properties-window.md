@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947296"
 ---
 # <a name="properties-window"></a>屬性視窗
 使用這個視窗來檢視和變更設計階段屬性，以及位於編輯器和設計工具中的選定物件的事件。 您也可以使用 [屬性] 視窗來編輯和檢視檔案、專案和解決方案屬性。 您可以在 [檢視] 功能表上找到 [屬性] 視窗。 您也可以按 F4 或在 [快速啟動] 視窗中鍵入 **Properties** 來開啟它。

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946802"
 ---
 # <a name="toggle-breakpoint-command"></a>切換中斷點命令
 根據中斷點目前的狀態以及在檔案中的目前位置，將其開啟或關閉。

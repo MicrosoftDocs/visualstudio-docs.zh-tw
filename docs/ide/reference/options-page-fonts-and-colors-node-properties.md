@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944683"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項] 對話方塊的 [環境] 類別的 [字型和色彩] 中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。

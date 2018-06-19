@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097792"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>建立多個執行個體工具視窗
 您可以在使多個執行個體可以同時開啟程式的工具視窗。 根據預設，工具視窗可以有只有一個執行個體開啟。  

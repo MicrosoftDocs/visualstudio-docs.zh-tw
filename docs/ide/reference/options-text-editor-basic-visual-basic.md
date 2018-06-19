@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945853"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>基本 (Visual Basic)、文字編輯器、選項
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的[基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：

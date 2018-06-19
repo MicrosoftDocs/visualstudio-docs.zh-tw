@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953491"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
  若要查看哪些 Visual Studio 版本支援這些功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="system-and-subsystem-testing"></a>系統和子系統測試
- *系統測試，*也稱為*接受度測試*、 測試是否符合使用者需求的方法。 這類測試關注系統的外部可見行為，而非內部設計。
+ *系統測試，* 也稱為*接受度測試*、 測試是否符合使用者需求的方法。 這類測試關注系統的外部可見行為，而非內部設計。
 
  擴充或重新設計系統時，系統測試極為重要。 它們可協助您在變更程式碼時避免造成錯誤。
 

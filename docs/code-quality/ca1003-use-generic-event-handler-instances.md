@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899960"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：必須使用一般事件處理常式執行個體
 |||

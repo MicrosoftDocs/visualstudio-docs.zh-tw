@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106860"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 移除 IDE 已經設定為特定的執行階段架構或語言的例外狀況的清單。  

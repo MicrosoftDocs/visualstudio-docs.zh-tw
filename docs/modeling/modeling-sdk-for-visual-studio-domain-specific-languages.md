@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950838"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
 使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大的模型為基礎的開發工具，可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。

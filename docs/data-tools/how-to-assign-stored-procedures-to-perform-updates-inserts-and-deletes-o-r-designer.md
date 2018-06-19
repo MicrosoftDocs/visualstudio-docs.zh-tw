@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926492"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）
 預存程序 (Stored Procedure) 可以加入至 O/R 設計工具，而且可以當成一般 <xref:System.Data.Linq.DataContext> 方法來執行。 也可以使用覆寫預設[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]執行插入、 更新和刪除時變更儲存至資料庫的實體類別的執行階段行為 (例如，當呼叫<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。

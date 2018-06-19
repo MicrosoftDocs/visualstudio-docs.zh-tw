@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946828"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>自訂圖表上的展示
 圖表是網域指定的語言設計工具的主要簡報區域。 使用者通常會使用圖表來建構其模型。 您可以如下列主題中所述來自訂圖表。

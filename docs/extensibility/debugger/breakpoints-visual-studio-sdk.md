@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100539"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>中斷點 (Visual Studio SDK)
 有三種中斷點類型： 暫止，繫結，以及錯誤。  

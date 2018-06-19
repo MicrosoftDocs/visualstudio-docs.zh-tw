@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105837"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 在伺服器上建立偵錯引擎執行的個體。  

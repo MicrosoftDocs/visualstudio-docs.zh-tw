@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942574"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 顯示列出所有 `devenv` 參數的訊息方塊，以及每個參數的簡短描述。

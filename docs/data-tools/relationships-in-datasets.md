@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927200"
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>代表資料表之間的父子式關聯性，並傳回相關的記錄從另一個物件。 相關的資料表加入至資料集，利用**資料來源組態精靈**，或**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。
@@ -59,7 +60,7 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
 |外部索引鍵條件約束規則|動作|
 |----------------------------------|------------|
 |<xref:System.Data.Rule.Cascade>|父記錄所做的變更 （更新或刪除） 也會是子資料表中的相關記錄。|
-|<xref:System.Data.Rule.SetNull>|不會刪除子記錄，但子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定時，子記錄可以保留為 「 處理 」，亦即有沒有父資料錄的關聯性。 **注意：**使用這項規則可能會導致子資料表中的資料無效。|
+|<xref:System.Data.Rule.SetNull>|不會刪除子記錄，但子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定時，子記錄可以保留為 「 處理 」，亦即有沒有父資料錄的關聯性。 **注意：** 使用這項規則可能會導致子資料表中的資料無效。|
 |<xref:System.Data.Rule.SetDefault>|相關的子記錄的外部索引鍵設定為預設值 (如同建立的資料行所<xref:System.Data.DataColumn.DefaultValue%2A>屬性)。|
 |<xref:System.Data.Rule.None>|不會變更相關的子記錄。 使用此設定時，子記錄可能包含無效的父記錄的參考。|
 

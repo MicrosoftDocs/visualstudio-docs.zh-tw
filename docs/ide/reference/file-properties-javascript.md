@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947920"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。

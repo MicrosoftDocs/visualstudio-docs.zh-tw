@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918853"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101：必須指定 P/Invoke 字串引數的封送處理
 |||

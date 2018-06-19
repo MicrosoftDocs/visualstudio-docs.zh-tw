@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098414"
 ---
 # <a name="adding-command-line-switches"></a>加入命令列參數
 您可以新增 devenv.exe 執行時，套用至 VSPackage 的命令列參數。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>來宣告參數和其屬性的名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器**AddCommandSwitchPackage**不使用引數與自動載入的 VSPackage。  

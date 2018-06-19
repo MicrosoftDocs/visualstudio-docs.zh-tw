@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103415"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 描述例外狀況或程式偵錯時所擲回執行階段錯誤。  

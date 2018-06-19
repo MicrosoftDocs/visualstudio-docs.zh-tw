@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101374"
 ---
 # <a name="creating-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 偵錯引擎 (DE) 是一種元件，可讓特定的執行階段架構的偵錯。 通常是只有一個 DE 實作每個執行階段環境。  

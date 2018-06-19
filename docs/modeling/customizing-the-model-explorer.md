@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953036"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以變更的外觀和行為的 [總管] 中您的網域特定語言設計工具，如下所示：

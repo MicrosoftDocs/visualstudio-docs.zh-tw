@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099518"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定偵錯引擎 (DE) 附加至程式節點的原因。  

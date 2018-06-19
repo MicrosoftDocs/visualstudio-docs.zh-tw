@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952727"
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器代表產生的設計工具中的網域關聯性。

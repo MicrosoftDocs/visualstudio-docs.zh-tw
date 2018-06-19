@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31896487"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020：避免在命名空間中包含過少的類型
 |||

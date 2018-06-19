@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31060206"
 ---
 # <a name="nmake-properties-android-c"></a>NMake 屬性 (Android C++)
 

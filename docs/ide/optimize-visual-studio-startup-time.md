@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948440"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
@@ -58,7 +59,7 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
 3. 選擇下列三個選項之一：
 
-    - **使用預設行為：**工具視窗的預設行為。 保持選取這個選項不會改善啟動效能。
+    - **使用預設行為：** 工具視窗的預設行為。 保持選取這個選項不會改善啟動效能。
 
     - **啟動時不要顯示視窗**：開啟 Visual Studio 時，一律會關閉指定的工具視窗，即使您在前一個工作階段中開啟也是一樣。 您可以在需要時從適當的功能表開啟工具視窗。
 

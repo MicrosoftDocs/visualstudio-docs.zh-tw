@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949562"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 您可以將數個 DSL 封裝成單一方案的一部分，以便能夠一起安裝。

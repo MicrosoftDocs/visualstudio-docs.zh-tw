@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926806"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說： 建立與 WPF 和 Entity Framework 的 WCF 資料服務
 本逐步解說示範如何建立簡單[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]裝載在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 應用程式，然後從 Windows Form 應用程式加以存取。

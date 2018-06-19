@@ -37,6 +37,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950029"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。

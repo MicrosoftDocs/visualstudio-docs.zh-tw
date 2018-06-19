@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925559"
 ---
 # <a name="performance-warnings"></a>效能警告
 效能警告支援高效能程式庫和應用程式。

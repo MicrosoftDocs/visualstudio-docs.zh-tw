@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979447"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 應用程式
 

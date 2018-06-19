@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899746"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046：請勿多載參考類型上的等號比較運算子
 |||

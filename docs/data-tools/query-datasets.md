@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926692"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋特定的資料錄集中的資料，請使用 FindBy 方法在資料表上，撰寫迴圈時，資料表的資料列集合，或使用您自己 foreach 陳述式[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。

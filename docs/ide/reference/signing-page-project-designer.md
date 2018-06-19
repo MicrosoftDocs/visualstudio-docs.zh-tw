@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951992"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 使用 [專案設計工具]的 [簽署] 頁面可簽署應用程式和部署資訊清單，也可簽署組件 (強式名稱簽署)。

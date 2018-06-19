@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945671"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - C#
 
-**功能：**移除永遠不會執行的程式碼。
+**功能：** 移除永遠不會執行的程式碼。
 
-**時機：**您的程式沒有某個程式碼片段的路徑，使得該程式碼片段變成不必要的程式碼片段。
+**時機：** 您的程式沒有某個程式碼片段的路徑，使得該程式碼片段變成不必要的程式碼片段。
 
-**原因：**藉由移除多餘且永遠不會執行的程式碼來提升可讀性和便於維護。
+**原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和便於維護。
 
 ## <a name="how-to"></a>操作說明
 

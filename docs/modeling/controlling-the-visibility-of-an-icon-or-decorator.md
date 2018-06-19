@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951368"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A *decorator*是圖示或出現在圖形中的網域特定定義域語言 (DSL) 的文字行。 您可以設裝飾項目會出現，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可以有不同的圖示會出現取決於該人員的性別的子系數目等等。

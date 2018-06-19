@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945307"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中產生 Equals 與 GetHashCode 方法覆寫
 
@@ -21,9 +22,9 @@ ms.lasthandoff: 04/26/2018
 
 - C#
 
-**功能：**讓您產生 **Equals** 與 **GetHashCode** 方法。
+**功能：** 讓您產生 **Equals** 與 **GetHashCode** 方法。
 
-**時機：**當您有某個類型應由一或多個欄位比對，而不是由記憶體中的物件位置比對時，請產生這些覆寫。
+**時機：** 當您有某個類型應由一或多個欄位比對，而不是由記憶體中的物件位置比對時，請產生這些覆寫。
 
 **原因：**
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927174"
 ---
 # <a name="native-minimum-rules-rule-set"></a>原生最小規則規則集
 Microsoft 原生最小規則的重點在於機器碼中最關鍵的問題，包括可能的安全性漏洞和應用程式損毀。 您應該在為原生專案建立的任何自訂規則集中，包含此規則集。

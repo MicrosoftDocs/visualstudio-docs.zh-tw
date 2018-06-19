@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927265"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的 c + + 專案中最關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立這個規則集的任何自訂規則集。

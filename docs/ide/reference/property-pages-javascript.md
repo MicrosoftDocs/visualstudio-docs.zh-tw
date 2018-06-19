@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949497"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [屬性頁] 可讓您存取專案設定。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。

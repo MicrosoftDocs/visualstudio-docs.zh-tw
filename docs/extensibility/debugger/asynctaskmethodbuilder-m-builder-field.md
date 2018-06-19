@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098715"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder 欄位
 表示這個非泛型執行個體將委派的泛型的產生器物件。  

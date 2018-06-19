@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947634"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 

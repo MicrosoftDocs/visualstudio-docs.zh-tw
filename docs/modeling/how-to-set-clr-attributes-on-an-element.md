@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948908"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
 自訂屬性是特殊的屬性，可以加入至定義域項目、 圖形、 連接器及圖表。 您可以新增任何屬性繼承自`System.Attribute`類別。

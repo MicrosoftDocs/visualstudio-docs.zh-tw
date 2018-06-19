@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104614"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>選擇 共用和版本建立 Vspackage
 不同版本的 Visual Studio 可以在相同電腦上並存。 Vspackage 可以支援的任何集合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本。  

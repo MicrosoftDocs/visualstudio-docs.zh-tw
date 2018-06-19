@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949520"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 （DSL 工具），裝載在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，讓您設計的特定領域語言，然後產生所有使用者必須具備才能建立模型為基礎之語言的項目。

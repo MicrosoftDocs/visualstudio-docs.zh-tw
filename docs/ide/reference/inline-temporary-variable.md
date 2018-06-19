@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945606"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>內嵌暫存變數重構
 
@@ -26,11 +27,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您移除暫存變數，並改以其值來取代它。
+**功能：** 讓您移除暫存變數，並改以其值來取代它。
 
-**時機：**使用暫存變數會讓程式碼變得更難理解。
+**時機：** 使用暫存變數會讓程式碼變得更難理解。
 
-**原因：**移除暫存變數可讓程式碼變得較容易閱讀。
+**原因：** 移除暫存變數可讓程式碼變得較容易閱讀。
 
 ## <a name="how-to"></a>操作說明
 

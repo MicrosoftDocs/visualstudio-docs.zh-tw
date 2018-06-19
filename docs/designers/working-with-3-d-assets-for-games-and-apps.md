@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924840"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104702"
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 已啟動程式之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。  

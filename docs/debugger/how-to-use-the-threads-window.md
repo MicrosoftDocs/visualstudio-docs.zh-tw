@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926237"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>逐步解說： 偵錯 Visual Studio 中使用 [執行緒] 視窗中的多執行緒應用程式
 Visual Studio 提供**執行緒**視窗以及其他使用者介面來協助您偵錯多執行緒應用程式的項目。 本教學課程示範如何使用**執行緒**視窗和**偵錯位置**工具列。 如需其他工具的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。   

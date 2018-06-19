@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944735"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中產生方法
 
@@ -23,11 +24,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您立即將方法新增至類別。
+**功能：** 讓您立即將方法新增至類別。
 
 **時機：** 您引進新的方法，並想要自動正確地宣告它。
 
-**原因：**您可以在使用方法和參數之前先宣告方法和參數，不過，此功能將可自動產生宣告。
+**原因：** 您可以在使用方法和參數之前先宣告方法和參數，不過，此功能將可自動產生宣告。
 
 ## <a name="how-to"></a>操作說明
 

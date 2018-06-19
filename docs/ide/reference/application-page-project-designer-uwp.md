@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944407"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 

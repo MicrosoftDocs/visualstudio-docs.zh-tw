@@ -1,6 +1,7 @@
 ---
 title: 常數節點
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df41815f7f824468babd2fc0bbd9bc97595e3ddb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 52c9c2d28a3e36a53e7a9da3acf36752f1f8d82f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926518"
 ---
 # <a name="constant-nodes"></a>常數節點
 

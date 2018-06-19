@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954133"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式，即為*軌跡處理常式*。

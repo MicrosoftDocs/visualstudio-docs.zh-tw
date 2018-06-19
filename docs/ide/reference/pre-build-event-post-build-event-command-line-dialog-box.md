@@ -40,6 +40,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947969"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 您可以直接在編輯方塊中鍵入[專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的建置前或建置後事件，或者可以從可用的巨集清單選取建置前或建置後巨集。

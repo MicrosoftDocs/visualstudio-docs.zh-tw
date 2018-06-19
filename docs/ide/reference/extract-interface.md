@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948167"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -28,11 +29,11 @@ ms.lasthandoff: 04/26/2018
 
 - Visual Basic
 
-**功能：**讓您使用來自類別、結構或介面的現有成員來建立介面。
+**功能：** 讓您使用來自類別、結構或介面的現有成員來建立介面。
 
-**時機：**您有數個類別、結構或介面，而它們具有可設為通用並供其他類別、結構或介面使用的方法。
+**時機：** 您有數個類別、結構或介面，而它們具有可設為通用並供其他類別、結構或介面使用的方法。
 
-**原因：**介面是適用於物件導向設計的絕佳建構。 想像您有各種動物的類別 (Dog、Cat、Bird) ，這些類別可能都有通用的方法，例如 Eat、Drink、Sleep。 使用一個像是 IAnimal 的介面將可讓 Dog、Cat 及 Bird 有一個適用於這些方法的通用「簽章」。
+**原因：** 介面是適用於物件導向設計的絕佳建構。 想像您有各種動物的類別 (Dog、Cat、Bird) ，這些類別可能都有通用的方法，例如 Eat、Drink、Sleep。 使用一個像是 IAnimal 的介面將可讓 Dog、Cat 及 Bird 有一個適用於這些方法的通用「簽章」。
 
 ## <a name="how-to"></a>操作說明
 
