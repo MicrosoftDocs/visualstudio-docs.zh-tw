@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129202"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案的連接設定的應用程式
 使用原始檔控制外掛程式 API 1.2 建置可以跨多個專案或多個連線內容中執行相同的原始檔控制作業批次作業使用原始檔控制外掛程式。 若要刪除備援，每個專案的使用者經驗的對話方塊可用批次。  

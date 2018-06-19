@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140287"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式更新的特定來源控制命令的檔案清單，並提供所有指定檔案的原始檔控制狀態。  

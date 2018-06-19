@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129439"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表來源控制項實作的範例。 在模型中，您會看到您必須實作的介面和環境服務，您必須呼叫。 如同所有的服務，您實際上會呼叫您透過服務所取得的特定介面的方法。 若要更輕鬆地查看原始檔控制會實行識別的類別名稱。  

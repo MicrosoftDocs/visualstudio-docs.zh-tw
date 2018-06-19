@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133099"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/16/2018
 
 如果您只想要在 Visual Studio 2017，建置，但是想要輸出執行 Visual Studio 2015 和 Visual Studio 2017 的 VSIX，則參考[延伸模組移轉文件](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
->**注意：**在 Visual Studio 版本之間的變更，因為工作在其中一個版本的某些作業將無法運作另一個。 確定您嘗試存取的功能都可在這兩個版本中，或擴充功能將會有非預期的結果。
+>**注意：** 在 Visual Studio 版本之間的變更，因為工作在其中一個版本的某些作業將無法運作另一個。 確定您嘗試存取的功能都可在這兩個版本中，或擴充功能將會有非預期的結果。
 
 以下是您將會完成，往返 VSIX 本文件中的步驟大綱：
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
     * 以滑鼠右鍵按一下方案，然後選擇 **管理方案的 NuGet 套件...**
     * Visual Studio 會自動為您建立 packages.config 檔案
 
->**注意：**如果您的專案包含 EnvDTE 封裝，他們可能需要加上按一下滑鼠右鍵**參考**選取**將參考加入**並加入適當的參考。  使用 NuGet 封裝，可能會嘗試建置專案時建立的錯誤。
+>**注意：** 如果您的專案包含 EnvDTE 封裝，他們可能需要加上按一下滑鼠右鍵**參考**選取**將參考加入**並加入適當的參考。  使用 NuGet 封裝，可能會嘗試建置專案時建立的錯誤。
 
 ## <a name="adding-appropriate-build-tools"></a>新增適當的建置工具
 
@@ -112,7 +113,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 儲存並關閉檔案。
 
->**注意：**如果您選擇要完成這項作業與在 Visual Studio 2017 VSIX 設計工具，您必須手動編輯必要的版本以確認它是所有版本的 Visual Studio 2017 相容。  這是因為設計工具會為您目前版本的 Visual Studio (例如，15.0.26208.0) 插入的最小版本。  不過，因為其他使用者可能會有較早版本，您會想要手動編輯這個檔案來 15.0。
+>**注意：** 如果您選擇要完成這項作業與在 Visual Studio 2017 VSIX 設計工具，您必須手動編輯必要的版本以確認它是所有版本的 Visual Studio 2017 相容。  這是因為設計工具會為您目前版本的 Visual Studio (例如，15.0.26208.0) 插入的最小版本。  不過，因為其他使用者可能會有較早版本，您會想要手動編輯這個檔案來 15.0。
 
 此時，您的資訊清單檔案看起來應該像下面這樣：
 
@@ -138,7 +139,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 加入下列標記`<VsixType>v3</VsixType>`至屬性群組。
 
->**注意：**建議加入下面`<OutputType></OutputType>`標記。
+>**注意：** 建議加入下面`<OutputType></OutputType>`標記。
 
 ### <a name="3-add-the-debugging-properties"></a>3.加入偵錯屬性
 
@@ -210,4 +211,4 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ![尋找在 VSIX](media/finding-a-VSIX-example.png)
 
->**注意：**如果訊息 」 開啟檔案"強制關閉 Visual Studio 停止您的專案，瀏覽至您的專案目錄，顯示隱藏的資料夾，並刪除.vs 資料夾。
+>**注意：** 如果訊息 」 開啟檔案"強制關閉 Visual Studio 停止您的專案，瀏覽至您的專案目錄，顯示隱藏的資料夾，並刪除.vs 資料夾。

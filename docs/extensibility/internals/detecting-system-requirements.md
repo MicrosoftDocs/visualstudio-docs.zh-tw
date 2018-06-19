@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128700"
 ---
 # <a name="detecting-system-requirements"></a>偵測系統需求
 VSPackage 無法作用，除非已安裝 Visual Studio。 當您使用 Microsoft Windows 安裝程式來管理您的 VSPackage 的安裝時，您可以設定來偵測是否已安裝 Visual Studio 安裝程式。 您也可以設定它來檢查系統有其他需求，例如，特定版本的 Windows 或特定的 RAM 數量。  

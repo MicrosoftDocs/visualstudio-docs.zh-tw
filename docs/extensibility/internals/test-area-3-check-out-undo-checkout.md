@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134961"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>測試區域 3： 簽出/恢復簽出
 這個原始檔控制外掛程式的測試區域涵蓋透過版本存放區中的編輯和還原項目**簽出**和**恢復簽出**命令。  

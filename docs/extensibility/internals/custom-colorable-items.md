@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133368"
 ---
 # <a name="custom-colorable-items"></a>自訂色彩項目
 您可以覆寫類型的清單上色功能，例如關鍵字以及註解、 實作自訂色彩項目做為語言服務的一部分。  

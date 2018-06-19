@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127499"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 若要尋找所有可用的服務，或判斷是否已安裝特定的服務，您可以使用 「 設定存放區。 您必須知道服務類別的型別。  
@@ -82,4 +83,4 @@ ms.lasthandoff: 04/16/2018
   
 3.  在實驗執行個體，在**工具**功能表上，按一下 **叫用 FindServicesCommand**。  
   
-     您應該會看到訊息的文字**協助服務可用：**後面**True**或**False**。 若要確認這項設定，您可以使用登錄編輯程式，在先前步驟中所示。
+     您應該會看到訊息的文字**協助服務可用：** 後面**True**或**False**。 若要確認這項設定，您可以使用登錄編輯程式，在先前步驟中所示。

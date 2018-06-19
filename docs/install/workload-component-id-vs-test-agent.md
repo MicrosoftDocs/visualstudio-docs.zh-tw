@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864820"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 元件目錄
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="test-agent"></a>測試代理程式
 
-**識別碼：**Microsoft.VisualStudio.Workload.TestAgent
+**識別碼：** Microsoft.VisualStudio.Workload.TestAgent
 
-**描述：**支援從遠端執行自動化測試和負載測試
+**描述：** 支援從遠端執行自動化測試和負載測試
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126297"
 ---
 # <a name="registering-the-program"></a>註冊程式
 偵錯引擎取得連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，啟用偵錯程式下一步是註冊該連接埠。 註冊之後，程式會用於偵錯由下列方式的其中一個：  

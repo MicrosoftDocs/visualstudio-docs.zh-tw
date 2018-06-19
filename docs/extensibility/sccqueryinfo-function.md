@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138879"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 此函式會取得一組選取原始檔控制下的檔案狀態資訊。  

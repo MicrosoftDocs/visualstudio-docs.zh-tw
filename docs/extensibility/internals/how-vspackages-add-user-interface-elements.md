@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136077"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面項目
 VSPackage 可以加入使用者介面 (UI) 項目，例如，功能表、 工具列和工具視窗，來透過.vsct 檔的 Visual Studio。  

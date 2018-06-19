@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131604"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 環境呼叫的基底的 project factory 實作以建構專案<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 當環境決定專案檔案的副檔名的專案類型的 GUID 清單不是空白時，就會啟動專案子類型的建構。 專案副檔名和專案 GUID 指定專案是否[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案類型。 例如，.vbproj 擴充功能和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 識別[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案。

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127744"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>新增目錄，以加入新項目對話方塊
 下列程式碼範例示範如何註冊一組新的目錄**加入新項目** 對話方塊。 目錄**加入新項目**對話方塊會針對每個專案不同。 因此，專案子機碼下，在中找到登錄目錄\<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

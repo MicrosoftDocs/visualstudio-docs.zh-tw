@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133426"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 和 Visual Studio SDK 中的常數
 <xref:Microsoft.VisualStudio.VSConstants>類別會提供存取的環境 Guid 和常數的選取項目。  

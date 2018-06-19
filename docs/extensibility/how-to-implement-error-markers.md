@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127847"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 實作錯誤標記
 錯誤標記 （或紅色波浪底線） 是最困難的文字編輯器的自訂實作。 不過，它們提供給使用者的 VSPackage 的好處遠超過為他們提供的成本。 錯誤標記稍微標示您的語言剖析器認為正確曲線或波浪式紅色底線的文字。 此指標會協助程式設計人員，以視覺化方式顯示不正確的程式碼。  

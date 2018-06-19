@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131629"
 ---
 # <a name="in-place-activation"></a>就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  

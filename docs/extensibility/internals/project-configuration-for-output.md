@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132191"
 ---
 # <a name="project-configuration-for-output"></a>專案組態的輸出
 每個設定可以支援一組產生輸出項目，例如可執行檔或資源檔案的建置處理序。 這些輸出項目的私用使用者，而且可以放置在連結相關的類型的輸出，例如可執行檔 （.exe、.dll、.lib） 和原始程式檔 （.idl，.h 檔案） 的群組。  

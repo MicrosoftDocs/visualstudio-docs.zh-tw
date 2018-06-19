@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126734"
 ---
 # <a name="terminating-a-program"></a>終止程式
 以下是一個執行緒的單一程式終止的描述。  

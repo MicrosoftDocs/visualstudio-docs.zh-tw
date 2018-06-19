@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134084"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 VSPackage 可能會定義一或多個設定分類，也就是群組的保存在使用者選擇時的狀態變數**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用設定應用程式開發介面中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

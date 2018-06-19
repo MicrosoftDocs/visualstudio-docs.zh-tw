@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132171"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要啟用自訂的工具在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必須註冊，因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以具現化，並與特定專案類型關聯。  

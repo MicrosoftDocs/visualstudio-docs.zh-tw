@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131323"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>在舊版語言服務中的陳述式完成
 陳述式完成是語言服務用來協助完成語言關鍵字或項目，在開始核心編輯器中輸入使用者的程序。 本主題討論陳述式完成的運作方式，以及如何實作語言服務中。  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454710"
 ---
 **下列 VISUAL STUDIO 訂用帳戶的 MICROSOFT 軟體授權條款：**
 

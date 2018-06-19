@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132328"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>執行個體化使用舊版 API 的核心編輯器
 編輯器會負責文字編輯功能，例如插入、 刪除、 複製和貼。 它會結合這些函式提供的語言服務，例如文字著色、 縮排和 IntelliSense 陳述式完成。  

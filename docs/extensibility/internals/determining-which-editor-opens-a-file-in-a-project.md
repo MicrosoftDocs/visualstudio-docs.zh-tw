@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130005"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>決定編輯器開啟的專案中的檔案
 當使用者開啟檔案的專案中時，環境會經歷輪詢程序，最後開啟適當的編輯器或設計工具，該檔案。 初始環境所採用的程序是相同的標準和自訂編輯器。 輪詢要用來開啟檔案時，環境會使用各種不同的準則，VSPackage 必須與環境協調在這個程序。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132387"
 ---
 # <a name="source-control-plug-in-architecture"></a>原始檔控制外掛程式架構
 您可以加入至原始檔控制支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由實作和附加原始檔控制外掛程式整合式的開發環境 (IDE)。 IDE 會連接到原始檔控制外掛程式透過定義完善的原始檔控制外掛程式 API。 IDE 會藉由提供使用者介面 (UI)，其中包含的工具列和功能表命令顯示原始檔控制系統的版本控制功能。 原始檔控制外掛程式實作原始檔控制功能。  

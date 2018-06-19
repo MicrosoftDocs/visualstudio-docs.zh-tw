@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126779"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用登錄設定來管理私人組件庫
 如果您是系統管理員或開發人員的 Isolated Shell 擴充功能，您可以控制存取控制項、 範本和 Visual Studio 組件庫、 範例庫或私用組件庫中的工具。 若要讓組件庫可用或無法使用，建立描述的已修改的登錄機碼和其值的.pkgdef 檔。  

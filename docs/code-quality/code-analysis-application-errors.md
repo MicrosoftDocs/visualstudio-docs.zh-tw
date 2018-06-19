@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921019"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 此區段是由 managed 程式碼分析工具所產生的錯誤訊息的參考。 若要取得特定的錯誤訊息的說明，請輸入中的錯誤號碼**尋找**方塊中的索引。

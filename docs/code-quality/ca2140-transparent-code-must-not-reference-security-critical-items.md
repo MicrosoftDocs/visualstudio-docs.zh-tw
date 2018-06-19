@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918432"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140：透明程式碼不可以參考安全性關鍵項目
 |||

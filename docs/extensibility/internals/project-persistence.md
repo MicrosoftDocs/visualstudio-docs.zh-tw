@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131120"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是您的專案的重要設計考量。 大部分的專案使用專案項目代表檔案。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其資料為非檔案型的專案。 這兩個檔案的擁有者專案和專案檔必須保存。 IDE 會指示專案以儲存本身或專案項目。  

@@ -1,6 +1,7 @@
 ---
 title: 影像編輯器範例
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256d960004d09762139cd378cb385b502128bd42
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37d83891ff17ae1dfef7985ba4e8b28688a294e7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923194"
 ---
 # <a name="image-editor-examples"></a>影像編輯器範例
 

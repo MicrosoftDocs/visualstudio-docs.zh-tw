@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137745"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 提供一份完整的檔案名稱，此函式取出它們的本機磁碟機。 註解適用於所有簽出的檔案。註解引數可以是`null`字串。  

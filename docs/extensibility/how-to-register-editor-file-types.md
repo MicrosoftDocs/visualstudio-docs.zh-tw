@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129166"
 ---
 # <a name="how-to-register-editor-file-types"></a>如何： 註冊編輯器檔案類型
 登錄編輯程式檔案類型的最簡單方式是使用屬性的一部分提供的登錄屬性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的封裝原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，您也可以寫入登錄指令碼會註冊您的編輯器和相關聯的延伸模組。

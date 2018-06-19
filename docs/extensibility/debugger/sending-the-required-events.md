@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126164"
 ---
 # <a name="sending-the-required-events"></a>傳送所需的事件
 使用此程序所需的事件傳送。  

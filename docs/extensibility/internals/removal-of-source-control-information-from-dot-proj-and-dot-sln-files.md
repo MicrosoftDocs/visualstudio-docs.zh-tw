@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128983"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>從原始檔控制資訊移除。Proj 和。Sln 檔案
 原始檔控制外掛程式 API SCC 1.2 版中的資訊會儲存在 MSSCCPRJ。SCC 檔案。 MSSCCPRJ 的優點。SCC 檔案是，SCC 資訊是不在來源-控制像.proj 和.sln 檔案中一樣。  

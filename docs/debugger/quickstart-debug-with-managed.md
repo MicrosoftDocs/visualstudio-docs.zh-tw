@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476878"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入門： 偵錯 managed 程式碼使用 Visual Studio 偵錯工具
 

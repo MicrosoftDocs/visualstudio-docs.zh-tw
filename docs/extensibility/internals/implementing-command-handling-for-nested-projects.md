@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128996"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作處理巢狀專案命令
 IDE 可以傳遞命令，都會通過<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，以巢狀的專案或父專案可以篩選或覆寫命令。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134671"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何： 更新 Visual Studio 擴充功能
 您也可以使用您的系統上更新 Visual Studio 擴充功能**擴充功能和更新**安裝更新的版本。 如果您建立擴充功能的更新的版本，您可以為已更新的 VSIX 資訊清單中的版本號碼遞增它表示。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131261"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>選取項目及在 IDE 中的貨幣
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可讓您維護使用者的資訊目前選取物件，使用選取*內容*。 與選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  

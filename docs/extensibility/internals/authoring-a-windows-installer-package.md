@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127919"
 ---
 # <a name="authoring-a-windows-installer-package"></a>撰寫的 Windows Installer 封裝
 資料磁碟機的 Windows Installer 模型。 不用撰寫程序的指令碼，將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。  

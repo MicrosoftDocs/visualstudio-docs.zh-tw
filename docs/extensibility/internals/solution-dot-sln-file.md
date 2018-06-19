@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133400"
 ---
 # <a name="solution-sln-file"></a>方案 (。Sln) 檔案
 解決方案是用於組織專案在 Visual Studio 中的結構。 方案會維護文字為基礎 (共用） 的.sln 和.suo （二進位檔、 使用者特定解決方案的選項） 檔案中的專案狀態資訊。 如需.suo 檔案的詳細資訊，請參閱[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  

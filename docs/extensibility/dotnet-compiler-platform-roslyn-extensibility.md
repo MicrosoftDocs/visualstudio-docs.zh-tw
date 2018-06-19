@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126932"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 編譯器平台 (&quot;Roslyn&quot;) 擴充性
 核心任務.NET 編譯器平台 ("Roslyn") 是開啟的 C# 和 Visual Basic 編譯器，並讓工具和共用的豐富資訊編譯器中的開發人員需要的程式相關。 程式碼分析工具可改善程式碼品質和程式碼產生器應用程式建構中的輔助工具。 工具取得更佳，因為它們需要的存取為越來越多的唯一編譯器擁有深層的程式碼知識。 而不是不透明的轉譯器 （來源中的程式碼和物件的程式碼時），Roslyn 編譯器會提供 Api，您可以使用的工具和應用程式中的程式碼相關的工作。  

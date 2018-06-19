@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129277"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>其他原始檔控制專案和方針編輯器
 有許多的專案和編輯器應該遵守才能支援原始檔控制的指導方針。  

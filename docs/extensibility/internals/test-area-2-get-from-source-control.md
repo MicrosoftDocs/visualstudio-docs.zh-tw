@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133241"
 ---
 # <a name="test-area-2-get-from-source-control"></a>從原始檔控制取得測試區域 2:
 這個測試區域涵蓋測試案例從透過 Get 命令的版本存放區中擷取項目。 這兩個本機和 Web 專案，可以套用這些測試案例。  

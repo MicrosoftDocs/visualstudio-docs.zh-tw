@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865188"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 
@@ -282,7 +283,7 @@ Windows 會使用數種高對比系統層級主題增加文字、 背景和影�
 
 - **選擇 前景/背景配對**一起或您將無法確定色彩選擇會在所有高對比佈景主題。
 
-- **判斷您的 UI 中哪些部分是最重要，並確認 [內容] 區域會突顯出來。**您將會遺失許多詳細資料，通常會區別色彩色調的些微差異，所以使用強式的框線色彩是通用定義內容區域，因為沒有任何不同的內容區域的色彩變化。
+- **判斷您的 UI 中哪些部分是最重要，並確認 [內容] 區域會突顯出來。** 您將會遺失許多詳細資料，通常會區別色彩色調的些微差異，所以使用強式的框線色彩是通用定義內容區域，因為沒有任何不同的內容區域的色彩變化。
 
 ### <a name="system-color-set"></a>系統色彩設定
 

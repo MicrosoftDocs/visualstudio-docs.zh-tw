@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923425"
 ---
 # <a name="saving-data"></a>儲存資料
 將資料儲存為保存的程序變更回原始的資料存放區，通常是例如 SQL Server 關聯式資料庫的應用程式的資料模型中的資料。

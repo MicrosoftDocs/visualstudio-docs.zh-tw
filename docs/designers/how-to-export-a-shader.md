@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924991"
 ---
 # <a name="how-to-export-a-shader"></a>如何：匯出著色器
 本文件將示範如何使用著色器設計工具匯出有向圖著色器語言 (DGSL) 著色器，以便您在應用程式中使用。

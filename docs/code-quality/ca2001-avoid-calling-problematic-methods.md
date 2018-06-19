@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918473"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001：避免呼叫有問題的方法
 |||

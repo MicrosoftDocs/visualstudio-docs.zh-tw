@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127028"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 欄位
 它已達到執行狀態，或確認其取消動作，並完成而沒有例外狀況之前，已取消工作。  

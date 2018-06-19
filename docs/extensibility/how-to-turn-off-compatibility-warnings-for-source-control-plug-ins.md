@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129546"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉原始檔控制外掛程式的相容性警告
 使用原始檔控制中的時，使用者可能會看到幾個相容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 顯示的警告取決於原始檔控制外掛程式的功能，而且可以停用，詳細資料如下。  

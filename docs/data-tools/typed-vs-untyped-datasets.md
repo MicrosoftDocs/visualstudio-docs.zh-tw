@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922319"
 ---
 # <a name="typed-vs-untyped-datasets"></a>具型別與具型別
 具類型資料集是第一次衍生自基底的資料集<xref:System.Data.DataSet>類別，並接著會使用從資訊**Dataset 設計工具**，其會儲存於.xsd 檔案，以產生新的強類型 dataset 類別。 從結構描述 （資料表、 資料行，等等） 的資訊會產生，並編譯成這個新的資料集類別，當做第一級物件和屬性的一組。 因為具類型資料集繼承自基底<xref:System.Data.DataSet>類別，型別的類別假設所有的功能<xref:System.Data.DataSet>類別，並可以搭配這些方法會採用的執行個體<xref:System.Data.DataSet>類別做為參數。

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920440"
 ---
 # <a name="portability-warnings"></a>可攜性警告
 可攜性警告跨不同的作業系統支援可攜性。

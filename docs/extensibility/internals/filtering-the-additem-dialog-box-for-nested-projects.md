@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128854"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>篩選巢狀專案 AddItem 對話方塊
 當您顯示**AddItem**巢狀專案中，父專案 對話方塊可以控制哪些項目會顯示在對話方塊中。  

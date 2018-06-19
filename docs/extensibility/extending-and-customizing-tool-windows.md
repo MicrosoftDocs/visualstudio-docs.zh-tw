@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129231"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>擴充及自訂工具視窗
 Visual Studio 提供許多不同類型的視窗，例如工具視窗、 文件視窗和對話方塊視窗。 [屬性] 視窗、 [輸出] 視窗和 [工作清單] 視窗中，例如其他視窗是工具視窗的類型。  

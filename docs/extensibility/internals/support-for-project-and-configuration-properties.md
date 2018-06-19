@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133568"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 **屬性**視窗[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 可顯示專案和組態屬性。 讓使用者可以設定您的應用程式的內容，您可以提供您自己的專案類型 屬性頁。  

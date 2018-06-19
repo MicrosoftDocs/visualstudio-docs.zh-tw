@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132246"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指實際建置程序從輸出項目移至期望位置進行偵錯和安裝。 例如，Web 應用程式可能會在本機電腦上建置，並將其放在伺服器上。  

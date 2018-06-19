@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134210"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 功能表
 本主題列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  

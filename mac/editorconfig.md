@@ -7,11 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 553a8ceeae16b660115ea3c8e32e544e903a72af
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 336ec5ef0779bcd67302bea7b51851dced531a7d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957385"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>建立和編輯自訂的 EditorConfig 檔案
 
@@ -73,7 +74,7 @@ EditorConfig 也支援在 C# 中使用[程式碼樣式格式設定](https://docs
 
 建議您重複使用專案中現有的 `.editorconfig` 檔案。 若要新增現有檔案，您必須先在 **Terminal** 中輸入下列命令，以在 Finder 中顯示隱藏的檔案：
 
-```
+```bash
 $ defaults write com.apple.Finder AppleShowAllFiles true
 $ killall Finder
 ```

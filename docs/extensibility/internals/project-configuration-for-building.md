@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133298"
 ---
 # <a name="project-configuration-for-building"></a>建置專案組態
 給定方案的方案組態的清單是由方案組態 對話方塊來管理。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126284"
 ---
 # <a name="registering-a-custom-debug-engine"></a>註冊的自訂偵錯引擎
 偵錯引擎必須註冊為 class factory 遵循 COM 慣例，以及透過 Visual Studio 登錄子機碼來註冊使用 Visual Studio。  

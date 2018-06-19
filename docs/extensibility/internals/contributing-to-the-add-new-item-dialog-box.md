@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129218"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>提供給加入新項目對話方塊
 專案子類型可提供完整的新目錄的項目**加入新項目**註冊對話方塊**加入項目**下的 範本`Projects`登錄子機碼。  

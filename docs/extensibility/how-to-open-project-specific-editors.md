@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129037"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何： 開啟專案的特定編輯器
 如果正在開啟專案項目檔在本質上繫結至該專案的特定編輯器，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器，您可以使用此專案專屬編輯器選項指定的特定點陣圖編輯器會辨識唯一至您的專案檔中的資訊。  

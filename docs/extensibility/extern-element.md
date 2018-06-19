@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127688"
 ---
 # <a name="extern-element"></a>Extern 項目
 Extern 項目會參考在編譯時期與.vsct 檔案合併的任何外部標頭 (.h) 檔案。 要合併的檔案必須是指定給 VSCT 編譯器或所參考的 Include 路徑上[Include 項目](../extensibility/include-element.md)。 檔案可能是其他.vsct 檔案或 c + + 標頭檔。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902268"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 您可以使用 Microsoft 基本設計方針規則規則集著重於讓您的程式碼更容易了解及使用。 您應該包含這個規則集，如果您的專案包含程式庫程式碼，或您想要強制很容易維護的程式碼的最佳作法。

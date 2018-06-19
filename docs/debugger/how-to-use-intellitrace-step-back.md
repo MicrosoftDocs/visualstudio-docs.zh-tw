@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33881220"
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步驟後的檢視快照集
 
@@ -61,7 +62,7 @@ IntelliTrace 步驟後就可用以啟動 Visual Studio Enterprise 2017 版本 15
 
 ## <a name="navigate-and-view-snapshots"></a>瀏覽和檢視的快照集
 
-1. 使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])** 中偵錯 工具列按鈕。
+1. 使用事件之間瀏覽**步驟回溯 （Alt + [）** 和**向前步驟 (Alt +])** 中偵錯 工具列按鈕。
 
     這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 若要逐步向前或向事件自動啟動[歷程偵錯](../debugger/historical-debugging.md)上所選取的事件。
 

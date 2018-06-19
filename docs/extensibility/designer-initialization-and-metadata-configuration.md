@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132743"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具的初始設定和中繼資料組態
 管理與設計工具或設計工具元件相關聯的中繼資料和篩選條件屬性提供機制，以定義特定的設計工具所使用的工具來處理不同的應用程式<xref:System.Type>物件 （例如資料結構類別或圖形化的實體），在設計工具時，以及如何設定 Visual Studio IDE，以支援在設計工具 (如執行個體的**工具箱**類別目錄或索引標籤可供使用)。  

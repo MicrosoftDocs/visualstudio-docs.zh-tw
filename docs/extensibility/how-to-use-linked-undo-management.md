@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127633"
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用已連結的復原管理
 已連結的復原可讓使用者同時復原多個檔案中相同的編輯。 比方說，跨多個程式檔，例如標頭檔和 Visual c + + 檔案，同時文字變更為已連結的復原交易。 連結的復原功能已內建復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 可以連結在一起，以被視為單一復原單位個別復原堆疊父復原單位來執行的已連結的復原。 下一節會詳細說明使用的已連結的復原的程序。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919634"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：組件應包含有效的強式名稱
 |||

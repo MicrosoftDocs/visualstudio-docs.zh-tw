@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139366"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>驗證舊版語言服務中的中斷點
 中斷點會指出偵錯工具中正在執行時，應該在特定時間點停止執行程式。 使用者可以在原始程式檔中的任一行上放置中斷點，因為編輯器並不知道何者構成中斷點的有效位置。 啟動偵錯工具時，所有標記 （稱為暫止中斷點） 的中斷點繫結至執行中的程式中的適當位置。 在同一時間中斷點驗證，以確保它們標示的有效的程式碼位置。 例如，註解上的中斷點無效，因為在原始程式碼中該位置沒有程式碼。 偵錯工具會停用無效的中斷點。  

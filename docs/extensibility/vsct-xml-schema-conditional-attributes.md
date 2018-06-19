@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138352"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 結構描述條件式屬性
 條件式屬性可能會套用至所有清單和項目。 邏輯運算子和符號展開運算式評估為 true 或 false。 如果為 true，相關聯的清單或項目隨附於產生的輸出。  

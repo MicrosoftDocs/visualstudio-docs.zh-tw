@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133658"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他組件
 有許多您可以擴充的 Visual Studio 使用者介面的多個部分。 這裡我們會示範幾。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129802"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 開啟編輯器開啟的文件
 開啟文件視窗的專案之前，專案首先必須決定檔案是否已開啟另一個編輯器的文件視窗中。 可以在專案特定的編輯器中，請開啟檔案，或是其中一個標準的編輯器向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  

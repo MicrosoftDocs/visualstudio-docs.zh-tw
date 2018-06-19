@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130943"
 ---
 # <a name="resources-in-vspackages"></a>在 Vspackage 中的資源
 您可以在 managed VSPackage 本身或原生附屬 UI Dll，受管理的附屬 Dll 中內嵌的當地語系化的資源。  

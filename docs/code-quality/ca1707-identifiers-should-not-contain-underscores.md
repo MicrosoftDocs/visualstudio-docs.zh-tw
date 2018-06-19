@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915890"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707：識別項不應包含底線
 |||

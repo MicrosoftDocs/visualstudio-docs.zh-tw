@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899983"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050：在命名空間中宣告類型
 |||

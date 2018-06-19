@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926440"
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
 文件這節中的文章包含可用來建立圖形效果之各種著色器設計工具節點的資訊。

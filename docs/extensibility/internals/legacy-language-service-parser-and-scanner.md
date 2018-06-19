@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134575"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務剖析器與掃描器
 剖析器為語言服務的核心。 Managed Package Framework (MPF) 語言類別，需要選取要顯示的程式碼的相關資訊的語言剖析器。 剖析器會將文字分隔為語彙基元，並再識別這些語彙基元的類型和功能。  

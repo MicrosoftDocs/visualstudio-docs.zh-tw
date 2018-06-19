@@ -1,6 +1,7 @@
 ---
 title: 模型編輯器範例
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: dd0f4155-b4f9-4f16-b0fd-3f4cd4c80d5a
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9b9579bac69a36a5eb876cd859f20357c0e1c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 798cf3622c5f6bc8462ce475c780ce26190b7ae6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917432"
 ---
 # <a name="model-editor-examples"></a>模型編輯器範例
 

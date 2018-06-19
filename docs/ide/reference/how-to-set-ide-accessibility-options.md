@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952099"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921441"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>個別的資料集和 TableAdapters 分成不同的專案
 具類型資料集已經過加強，以便[Tableadapter](create-and-configure-tableadapters.md)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層級，並產生多層式架構資料應用程式。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128555"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 當您自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您應該了解如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]處理階層，例如專案和如何決定向使用者顯示的內容使用選取範圍內容。 本章節將討論的概念[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層和選取範圍。  

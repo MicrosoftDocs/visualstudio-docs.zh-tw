@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126044"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 指定程式提供者相關聯的屬性。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921707"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
 SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用原始程式碼註釋，您可以進行意圖背後程式碼明確。 這些註解也會啟用自動化的靜態分析工具使用少了許多誤判和誤否定更精確地分析您的程式碼。

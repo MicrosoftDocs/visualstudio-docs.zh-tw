@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918109"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：必須檢視 SQL 查詢中是否有安全性弱點
 |||

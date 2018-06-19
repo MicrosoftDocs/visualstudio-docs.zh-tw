@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926111"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構應用程式中的資料集
 

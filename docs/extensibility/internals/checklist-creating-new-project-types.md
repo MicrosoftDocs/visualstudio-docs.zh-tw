@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131985"
 ---
 # <a name="checklist-creating-new-project-types"></a>檢查清單： 建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引。  

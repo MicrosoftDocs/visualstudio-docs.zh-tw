@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132423"
 ---
 # <a name="project-property-user-interface"></a>專案屬性的使用者介面
 專案子類型可以使用專案中的項目**屬性頁**對話方塊所提供的基底的專案，隱藏或做唯讀控制項和整個網頁提供，或將專案子類型特有的頁面加入至**屬性頁** 對話方塊。

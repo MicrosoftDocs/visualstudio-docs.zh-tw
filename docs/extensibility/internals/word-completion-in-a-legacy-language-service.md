@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141509"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>在舊版語言服務中的文字完成
 文字完成填滿遺漏字元在齊部分輸入的字組中。 如果只有一個可能的完成，完成字元輸入時完成這個字。 如果部分文字符合一個以上的可能性，會顯示可能的完成的清單。 完成字元可以是任何字元，不會用於識別項。  

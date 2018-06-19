@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128868"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>決定是否要實作原始檔控制 VSPackage
 本節的擴充原始檔控制方案並提供廣泛的指導方針選擇適合整合路徑的相關 elaborates 的原始檔控制外掛程式和原始檔控制 Vspackage 的選擇。  

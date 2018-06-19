@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129114"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您可以讓 [文字] 檢視會處理的語言服務截距命令。 這是適用於文字檢視不會管理的特定語言的行為。 您可以攔截這些命令加入文字檢視中的一或多個命令篩選器，從您的語言服務。  

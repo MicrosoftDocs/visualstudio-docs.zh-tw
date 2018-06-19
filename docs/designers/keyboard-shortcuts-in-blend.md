@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927070"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
 ## <a name="project-shortcuts"></a>專案快速鍵

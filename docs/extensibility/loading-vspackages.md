@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140010"
 ---
 # <a name="loading-vspackages"></a>載入 Vspackage
 只有需要其功能時，只有 Vspackage 會載入 Visual Studio。 例如，VSPackage 會在 Visual Studio 會使用專案工廠或 VSPackage 實作的服務時載入。 這項功能稱為延遲的載入，會盡可能使用來改善效能。  

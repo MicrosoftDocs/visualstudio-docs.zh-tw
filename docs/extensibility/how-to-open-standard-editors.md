@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129254"
 ---
 # <a name="how-to-open-standard-editors"></a>如何： 開啟標準編輯器
 當您開啟標準編輯器時，您會讓 IDE 判斷指定的檔案類型，而不是指定之檔案的專案特定編輯器的標準編輯器。  

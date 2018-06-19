@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133525"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 將擴充性專案移轉至 Visual Studio 2017
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>更新 Microsoft.VSSDK.BuildTools NuGet 套件
 
->**注意：**如果您的方案未參考 Microsoft.VSSDK.BuildTools NuGet 封裝，您可以略過此步驟。
+>**注意：** 如果您的方案未參考 Microsoft.VSSDK.BuildTools NuGet 封裝，您可以略過此步驟。
 
 若要建置您的延伸模組中新的 VSIX v3 （第 3 版） 格式，您的方案將需要使用新的 VSSDK 建置工具來建置。 這將會隨 Visual Studio 2017，但您的 VSIX v2 擴充功能可能會緊透過 NuGet 較舊版本的參考。 如果是這樣，您必須手動安裝更新為您的方案 Microsoft.VSSDK.BuildTools NuGet 套件。
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
 
 若要確保使用者的 Visual Studio 安裝程式已執行此擴充功能所需的所有組件，指定延伸模組資訊清單檔案中的所有必要條件元件或封裝。 當使用者嘗試安裝此擴充功能時，VSIXInstaller 會檢查如果已安裝所有必要條件。 如果某些遺漏時，就會提示使用者安裝遺漏的元件擴充功能的安裝程序的一部分。
 
->**注意：**最少，所有擴充功能應該指定 Visual Studio 核心編輯器元件為必要條件。
+>**注意：** 最少，所有擴充功能應該指定 Visual Studio 核心編輯器元件為必要條件。
 
 * 編輯擴充功能資訊清單檔案 （通常稱為 source.extension.vsixmanifest）。
 * 請確定`InstallationTarget`包含 15.0。
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/16/2018
 
 而不是直接編輯資訊清單 XML，您可以使用新**必要條件** 索引標籤中選取必要條件的資訊清單設計工具和 XML 將會為您更新。
 
->**注意：**資訊清單設計工具只會允許您選取目前的 Visual Studio 執行個體所安裝的元件 （沒有工作負載或封裝）。 如果您要新增為工作負載、 封裝或目前未安裝的元件的必要元件，請直接編輯 XML 資訊清單。
+>**注意：** 資訊清單設計工具只會允許您選取目前的 Visual Studio 執行個體所安裝的元件 （沒有工作負載或封裝）。 如果您要新增為工作負載、 封裝或目前未安裝的元件的必要元件，請直接編輯 XML 資訊清單。
 
 * 開啟 [設計] source.extension.vsixmanifest 檔案。
 * 選取**必要條件** 索引標籤，然後按**新增** 按鈕。
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="update-debug-settings-for-project"></a>更新專案的偵錯設定
 
-如果您想要偵錯您的 Visual Studio 的實驗執行個體中的擴充功能，請確定專案設定**偵錯** > **起始動作**具有**啟動外部程式：**值設定為您的 Visual Studio 2017 安裝 devenv.exe 檔。
+如果您想要偵錯您的 Visual Studio 的實驗執行個體中的擴充功能，請確定專案設定**偵錯** > **起始動作**具有**啟動外部程式：** 值設定為您的 Visual Studio 2017 安裝 devenv.exe 檔。
 
 它看起來可能像是：
 
@@ -114,7 +115,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 ![啟動外部程式](media/start-external-program.png)
 
->**注意：**偵錯起始動作通常儲存在。 副檔名為.csproj.user 檔案。 這個檔案通常會納入到.gitignore 檔案並，因此，不通常會儲存其他專案時使用檔案認可至原始檔控制。 因此，如果您有提取您的方案從原始檔控制全新很可能將必須為啟動動作設定任何值的專案。 使用 Visual Studio 2017 建立新的 VSIX 專案都有。 以指向目前的 Visual Studio 安裝目錄的預設值建立的副檔名為.csproj.user 檔案。 不過如果您正在移轉 v2 VSIX 擴充功能，則可能的。 副檔名為.csproj.user 檔案會包含先前 Visual Studio 版本的安裝目錄的參考。 設定的值**偵錯** > **起始動作**將允許正確 Visual Studio 實驗執行個體啟動時您嘗試偵錯您的擴充功能。
+>**注意：** 偵錯起始動作通常儲存在。 副檔名為.csproj.user 檔案。 這個檔案通常會納入到.gitignore 檔案並，因此，不通常會儲存其他專案時使用檔案認可至原始檔控制。 因此，如果您有提取您的方案從原始檔控制全新很可能將必須為啟動動作設定任何值的專案。 使用 Visual Studio 2017 建立新的 VSIX 專案都有。 以指向目前的 Visual Studio 安裝目錄的預設值建立的副檔名為.csproj.user 檔案。 不過如果您正在移轉 v2 VSIX 擴充功能，則可能的。 副檔名為.csproj.user 檔案會包含先前 Visual Studio 版本的安裝目錄的參考。 設定的值**偵錯** > **起始動作**將允許正確 Visual Studio 實驗執行個體啟動時您嘗試偵錯您的擴充功能。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>請檢查擴充功能建置正確 （如 VSIX v3)
 
@@ -131,7 +132,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 此 VSIX 仍會成功安裝在電腦安裝所有必要的先決條件的測試。
 
->**注意：**之前安裝任何擴充功能，請關閉所有 Visual Studio 執行個體。
+>**注意：** 之前安裝任何擴充功能，請關閉所有 Visual Studio 執行個體。
 
 嘗試安裝此擴充功能：
 
@@ -152,7 +153,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 等候處理程序，才能關閉，或以手動方式結束工作。 您可以找到處理程序所列的名稱，或使用括號中列出的 PID。
 
->**注意：**這些處理程序將不會自動關閉 Visual Studio 的執行個體正在執行時。 請確認您在機器-包括其他使用者，從 Visual Studio 的所有執行個體已關閉，然後繼續重試。
+>**注意：** 這些處理程序將不會自動關閉 Visual Studio 的執行個體正在執行時。 請確認您在機器-包括其他使用者，從 Visual Studio 的所有執行個體已關閉，然後繼續重試。
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>核取時遺漏所需的必要條件
 

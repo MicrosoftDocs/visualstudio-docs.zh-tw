@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130132"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗物件清單
 中的物件清單**屬性**視窗是下拉式清單，可讓您可以在一或多個選取的 windows 中使用的其他物件變更選取範圍。 選取此清單內的不同物件觸發程序呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>通知環境已選取新的物件。 中顯示的資訊**屬性**視窗然後變更為顯示與新選取的物件相關聯的屬性。  

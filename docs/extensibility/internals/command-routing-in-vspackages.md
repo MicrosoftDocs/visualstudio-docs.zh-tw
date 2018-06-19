@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135799"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令路由
 命令路由傳入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根據它的執行的內容。 它是全域內容來路由傳送從向外的初步內容。  

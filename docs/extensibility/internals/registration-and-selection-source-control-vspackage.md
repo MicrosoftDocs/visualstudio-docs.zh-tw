@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133033"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取範圍 (原始檔控制 VSPackage)
 VSPackage 必須註冊來公開它的原始檔控制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果一個以上的原始檔控制 VSPackage 註冊，使用者可以選取要在適當的時間載入的 VSPackage。 請參閱[Vspackage](../../extensibility/internals/vspackages.md)如需有關 Vspackage 和如何加以註冊。  

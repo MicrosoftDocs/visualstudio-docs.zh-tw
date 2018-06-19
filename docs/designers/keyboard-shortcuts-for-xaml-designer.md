@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922438"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
 XAML 設計工具中的鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動作縮減為單一鍵盤快速鍵，以加速您的作業。

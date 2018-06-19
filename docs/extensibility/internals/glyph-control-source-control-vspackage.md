@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130712"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制項 (原始檔控制 VSPackage)
 加入原始檔控制 Vspackage 可用的深度整合的一部分是能夠顯示自己圖像來表示的原始檔控制下的項目狀態。  

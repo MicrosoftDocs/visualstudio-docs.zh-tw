@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920944"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用的話)，例如 ++、-- 和函式呼叫在這個內容中全都有副作用。  然而，SAL 提供一些類似的函式物件和某些保留的符號可在 SAL 運算式中使用。 這些稱為*內建函式*。

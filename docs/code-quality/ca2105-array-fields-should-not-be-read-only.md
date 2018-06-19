@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915202"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：陣列欄位不應為唯讀
 |||
