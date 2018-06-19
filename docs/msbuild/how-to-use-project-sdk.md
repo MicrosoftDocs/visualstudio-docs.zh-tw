@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569884"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 專案 SDK
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。

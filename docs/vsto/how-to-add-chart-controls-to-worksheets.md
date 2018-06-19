@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548732"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何： 將圖表控制項加入工作表
   您可以加入<xref:Microsoft.Office.Tools.Excel.Chart>控制項加入 Microsoft Office Excel 工作表在設計階段和執行階段在文件層級自訂中。 您也可以加入<xref:Microsoft.Office.Tools.Excel.Chart>控制項在執行階段，在 VSTO 增益集。  

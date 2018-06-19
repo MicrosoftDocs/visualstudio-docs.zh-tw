@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142873"
 ---
 # <a name="wizard-vsz-file"></a>精靈 (。Vsz) 檔案
 整合式的開發環境 (IDE) 會使用.vsz 檔案來啟動精靈。 這些.vsz 檔案包含用來判斷要呼叫哪一個精靈的 IDE 資訊和要傳遞給精靈的資訊。  

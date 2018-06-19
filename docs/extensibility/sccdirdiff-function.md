@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138018"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函式
 此函式會顯示目前的本機目錄上的用戶端磁碟 」 和 「 原始檔控制下對應的專案之間的差異。  

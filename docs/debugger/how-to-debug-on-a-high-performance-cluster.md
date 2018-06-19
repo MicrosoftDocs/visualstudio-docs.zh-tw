@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477660"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：偵錯高效能叢集
 在高效能叢集上偵錯多重處理程式類似在遠端電腦上偵錯一般程式。 但是，還是有一些其他的考量。 一般遠端安裝需求，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  

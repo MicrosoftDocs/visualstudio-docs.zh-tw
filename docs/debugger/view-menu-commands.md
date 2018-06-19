@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481771"
 ---
 # <a name="view-menu-commands"></a>檢視功能表命令
 **檢視**功能表提供控制命令 Spy + + 使用者介面。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478915"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 建立的.exe 檔案時，指定 （在最小值和每個全域函式和資料符號） 的每個公用符號`SymTagPublicSymbol`標記。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481225"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件進行偵錯 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  在 [ **動作** ] 窗格中，選擇 [ **檢視** ]，並確定已勾選 [ **顯示分析與偵錯記錄檔** ]。  
   
-3.  在**事件檢視器 （本機）**樹狀目錄中，展開節點**Applications and Services Logs** > **Microsoft** > **Windows**  >  **BackgroundTasksInfrastructure**。  
+3.  在**事件檢視器 （本機）** 樹狀目錄中，展開節點**Applications and Services Logs** > **Microsoft** > **Windows**  >  **BackgroundTasksInfrastructure**。  
   
 4.  選擇 [ **診斷** ] 記錄檔。  
   

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476789"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
 在 Internet Explorer 中，目前停用指令碼偵錯功能  

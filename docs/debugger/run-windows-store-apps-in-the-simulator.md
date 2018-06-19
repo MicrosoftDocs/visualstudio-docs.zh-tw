@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480657"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>UWP 應用程式在模擬器中執行
 UWP 應用程式的 Visual Studio 模擬器是桌面應用程式，可以模擬 UWP 應用程式。 一般而言，您會想要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可以使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。

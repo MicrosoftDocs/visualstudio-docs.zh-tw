@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114777"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 取得先前用來建立連接埠 （如果有的話） 的連接埠的描述。  

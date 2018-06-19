@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146087"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說： 在 [開始] 頁面上儲存使用者設定
 您可以保存使用者設定起始頁。 依循這個逐步解說，您可以建立將設定儲存至登錄中，當使用者按一下按鈕時，並接著會擷取該設定，每次在開始頁面載入的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設起始頁 XAML 會呼叫該控制項，您不必修改本身的起始頁。  

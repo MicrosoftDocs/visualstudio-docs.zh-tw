@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472019"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>錯誤： 您沒有檢查處理程序的權限&#39;s 身分識別
 您沒有檢查此處理序識別的權限。 這很可能是因為系統組態所造成。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482070"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著色器程式碼在應用程式的真實狀況下的運作方式。  

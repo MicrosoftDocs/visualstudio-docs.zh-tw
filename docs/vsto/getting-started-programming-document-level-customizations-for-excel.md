@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448424"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>開始使用適用於 Excel 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立 Microsoft Office excel 的文件層級自訂，以下是您需要知道。  

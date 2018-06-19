@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571191"
 ---
 # <a name="xsd-task"></a>XSD 工作
 包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。  

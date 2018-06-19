@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480263"
 ---
 # <a name="symbol-locations"></a>符號位置
 大部分的符號的影像檔中有定義的位置。 符號的位置指定其值介於[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉型別。 符號可能支援其他的屬性，根據它的位置。  

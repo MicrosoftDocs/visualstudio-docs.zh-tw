@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466054"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Dia2dump.cpp 原始程式檔
 下列 Dia2dump.cpp 原始碼顯示.pdb 檔案的內容。 此原始程式碼由[Dia2dump 範例](../../debugger/debug-interface-access/dia2dump-sample.md)。  

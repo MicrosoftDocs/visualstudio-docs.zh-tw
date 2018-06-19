@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478027"
 ---
 # <a name="windows-view"></a>視窗檢視
 當您第一次開啟 Spy + + 時，Windows 檢視會顯示系統中的所有視窗和控制項的樹狀結構。 視窗控制代碼和類別名稱會顯示。 目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層。 同層級視窗會顯示在其父代下方縮排的 expansible 清單。  

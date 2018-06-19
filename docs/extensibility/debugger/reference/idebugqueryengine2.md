@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122739"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 這個介面可讓偵錯管理員 (SDM) 擷取介面，表示偵錯引擎 (DE) 的工作階段。  

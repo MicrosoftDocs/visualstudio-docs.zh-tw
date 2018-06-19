@@ -26,6 +26,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448372"
 ---
 # <a name="document-host-item"></a>Document 主項目
   <xref:Microsoft.Office.Tools.Word.Document> 主項目是一種類型，其會從 Word 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Word.Document> 類型。 <xref:Microsoft.Office.Tools.Word.Document> 主項目除了提供與 <xref:Microsoft.Office.Interop.Word.Document> 物件相同的所有屬性、方法和事件之外，也會公開其他事件，並做為主控制項和 Windows Forms 控制項的容器。  

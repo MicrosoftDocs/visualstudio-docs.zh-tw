@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578376"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 將所指定項目的路徑寫入至指定的文字檔。  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468368"
 ---
 # <a name="data-debug-interface-access-sdk"></a>資料 (偵錯介面存取 SDK)
 所有的變數，例如參數、 本機變數、 全域變數，以及類別成員，藉以`SymTagData`符號。 常數值 (`LocIsConstant`) 也可識別此類型。  

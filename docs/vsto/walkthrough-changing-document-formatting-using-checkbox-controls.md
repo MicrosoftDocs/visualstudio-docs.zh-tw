@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263860"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說： 變更文件格式使用核取方塊控制項
   本逐步解說示範如何使用 Microsoft Office Word 的文件層級自訂的 Windows Form 控制項，變更文字格式。  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477033"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。  

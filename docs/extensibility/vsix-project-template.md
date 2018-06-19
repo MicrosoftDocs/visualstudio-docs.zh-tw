@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142389"
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 您可以使用 VSIX 專案範本來將一或多個 Visual Studio 擴充功能包裝在 VSIX 專案，並再將封裝發佈上[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站。  

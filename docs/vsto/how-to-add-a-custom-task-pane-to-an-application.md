@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548810"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何： 應用程式中加入自訂工作窗格
   您可以使用 VSTO 增益集，將自訂工作窗格加入上面所列的應用程式。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  

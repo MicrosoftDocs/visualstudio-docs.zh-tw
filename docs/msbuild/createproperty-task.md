@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566689"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。  

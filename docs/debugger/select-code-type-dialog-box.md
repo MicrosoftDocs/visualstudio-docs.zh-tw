@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475138"
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 若要開啟此對話方塊中，開啟**附加至處理序**對話方塊，然後按一下**選取** 按鈕。  

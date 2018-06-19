@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475414"
 ---
 # <a name="symbol-load-information-dialog-box"></a>符號載入資訊對話方塊
 **符號載入資訊**對話方塊隨即開啟，當您以滑鼠右鍵按一下**模組**視窗，然後選擇 **符號載入資訊**。  

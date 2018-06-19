@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477543"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗
 **記憶體**視窗可讓您檢視您的應用程式使用的記憶體空間。 **監看式**視窗中，**快速監看式**對話方塊中，**自動變數**視窗中，和**區域變數**視窗會顯示的變數，也就是內容儲存在記憶體中的特定位置。 但是**記憶體** 視窗會顯示整體。 這類檢視對於檢查無法適當地顯示在其他視窗的大批資料 (例如，緩衝區或很大的字串) 來說極為方便。 不過，**記憶體**視窗並不限於顯示資料。 它還會顯示記憶體空間內的所有內容，不管這些內容是資料、程式碼，或是未指派之記憶體內的無意義資料。  

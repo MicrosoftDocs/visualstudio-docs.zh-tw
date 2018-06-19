@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464923"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 如果指定的旗標會擷取[編譯](../../debugger/debug-interface-access/compiland.md)包含偵錯資訊。  

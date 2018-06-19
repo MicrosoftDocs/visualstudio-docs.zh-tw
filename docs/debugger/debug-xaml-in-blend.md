@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477449"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中偵錯 XAML
 您可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具為應用程式的 XAML 偵錯。 當您建置專案時，任何錯誤都會顯示在**結果**面板。 只要按兩下錯誤，即可找到與該錯誤相關的標記。 如果您需要更多工作空間，您可以隱藏**結果**按 F12 的面板。  

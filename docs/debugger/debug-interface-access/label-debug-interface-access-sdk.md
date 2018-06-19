@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473828"
 ---
 # <a name="label-debug-interface-access-sdk"></a>標籤 (偵錯介面存取 SDK)
 程式碼的位置由`SymTagLabel`符號。  

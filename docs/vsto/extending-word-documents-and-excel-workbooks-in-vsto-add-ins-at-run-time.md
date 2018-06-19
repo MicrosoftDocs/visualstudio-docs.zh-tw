@@ -26,6 +26,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548618"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段
   您可以使用 VSTO 增益集，以下列方式自訂 Word 文件和 Excel 活頁簿：  

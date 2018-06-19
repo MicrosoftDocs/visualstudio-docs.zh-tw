@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567612"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 此工作會接受組態字串清單，並將它們指派給指定的專案。  

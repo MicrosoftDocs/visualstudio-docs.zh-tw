@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558616"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 必須啟用 ClickOnce 應用程式的程式碼存取安全性，才能發行應用程式。 當您發行應用程式使用發行精靈時，這會自動完成。  

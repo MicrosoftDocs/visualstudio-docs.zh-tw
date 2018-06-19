@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577785"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定 `Choose` 元素的可能程式碼區塊以選取。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472041"
 ---
 # <a name="find-window-dialog-box"></a>尋找視窗對話方塊
 使用此對話方塊來選取視窗，並顯示其屬性或訊息。 若要顯示此對話方塊中，選擇**尋找視窗**從**Spy**功能表。  

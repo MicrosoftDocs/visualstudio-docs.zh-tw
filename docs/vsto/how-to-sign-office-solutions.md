@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262187"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何： 簽署 Office 方案
   如果您登入方案時，可以授與信任給方案以辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有方案將都會信任。  

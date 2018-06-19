@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566117"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 您可以使用 SignTool.exe 簽署安裝程式 (setup.exe)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  

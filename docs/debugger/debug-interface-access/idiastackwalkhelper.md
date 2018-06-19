@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464962"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 可加速，查核堆疊使用的程式偵錯資料庫 (.pdb) 檔案。  
@@ -42,7 +43,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|搜尋指定的堆疊框架的最接近的函式傳回的位址。|  
 |[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|搜尋指定的堆疊框架，位於或接近指定之堆疊位址的回覆地址的。|  
 |[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|擷取堆疊框架，其中包含指定的虛擬位址。|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|擷取包含指定的虛擬位址的符號。 **注意：**符號的型別必須`SymTagFunctionType`(介於[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|擷取包含指定的虛擬位址的符號。 **注意：** 符號的型別必須`SymTagFunctionType`(介於[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別)。|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|傳回與指定的虛擬位址相關聯的 PDATA 資料區塊。|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|擷取可執行檔開始虛擬位址的虛擬位址某處的可執行檔的記憶體空間中。|  
   

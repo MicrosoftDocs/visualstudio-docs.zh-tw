@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146760"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>逐步解說： 顯示 QuickInfo 工具提示
 QuickInfo 會顯示方法簽章的 IntelliSense 功能，並描述當使用者將指標移方法名稱。 您可以實作以語言為基礎的功能，例如 QuickInfo 定義您要提供 QuickInfo 描述的識別碼，然後再建立要顯示的內容中的工具提示。 您可以定義 QuickInfo 中的內容語言服務，或您可以定義您自己的檔案名稱副檔名和內容類型，並顯示 QuickInfo，只要該類型，或對於現有的內容類型 （例如"text")，您可以顯示 QuickInfo。 本逐步解說示範如何顯示 QuickInfo 「 文字 」 內容類型。  

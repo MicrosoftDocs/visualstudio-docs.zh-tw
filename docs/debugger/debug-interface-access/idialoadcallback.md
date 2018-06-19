@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466149"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 DIA 符號找出程序，因此可以讓使用者介面，以報告進度的位置嘗試從接收回呼。  

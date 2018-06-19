@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577349"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 在項目或屬性中儲存工作輸出值。  

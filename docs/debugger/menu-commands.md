@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476032"
 ---
 # <a name="menu-commands"></a>功能表命令
 本節中的說明主題清單 Spy + + 功能表上可用的命令。  

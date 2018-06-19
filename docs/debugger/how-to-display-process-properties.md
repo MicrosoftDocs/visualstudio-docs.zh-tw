@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481706"
 ---
 # <a name="how-to-display-process-properties"></a>如何：顯示處理序屬性
 若要進一步了解處理程序中所列[處理序檢視](../debugger/processes-view.md)，使用[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)。  

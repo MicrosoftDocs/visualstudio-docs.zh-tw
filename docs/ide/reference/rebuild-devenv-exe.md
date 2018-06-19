@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704651"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 清除然後建置指定的解決方案設定。

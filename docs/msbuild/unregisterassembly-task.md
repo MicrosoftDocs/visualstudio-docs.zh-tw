@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576829"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|  
 |`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要取消註冊的組件。|  
 |`AssemblyListFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 包含 `RegisterAssembly` 工作與 `UnregisterAssembly` 工作之間狀態的相關資訊。 如此可防止工作嘗試取消註冊無法在 `RegisterAssembly` 工作中註冊的組件。<br /><br /> 如果已指定此參數，則會忽略 `Assemblies` 和 `TypeLibFiles` 參數。|  
-|`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 從指定的組件中取消註冊指定的類型程式庫。 **注意：**只有在類型程式庫檔案名稱與組件名稱不同時才需要此參數。|  
+|`TypeLibFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 從指定的組件中取消註冊指定的類型程式庫。 **注意：** 只有在類型程式庫檔案名稱與組件名稱不同時才需要此參數。|  
   
 ## <a name="remarks"></a>備註  
  此工作的成功不一定需要組件存在。 如果您嘗試取消註冊不存在的組件，工作將會完成並隨附警告。 這是因為此工作作業的目的是從登錄中移除組件註冊。 如果組件並不存在，就不存在於登錄中，因此工作就會成功。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463048"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 擷取指定函式是否包含任何的旗標[結構化例外狀況處理 （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。  

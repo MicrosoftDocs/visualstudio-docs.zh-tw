@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479834"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C# 中撰寫視覺化檢視 #
 本逐步解說示範如何使用 C# 撰寫簡單的視覺化檢視。 您將在本逐步解說中建立的視覺化檢視會顯示使用 Windows form 訊息方塊字串內容。 這個簡易字串視覺化檢視不是特別適用於本身，但它會顯示建立更有用的視覺化檢視其他資料類型時，必須遵循的基本步驟。  

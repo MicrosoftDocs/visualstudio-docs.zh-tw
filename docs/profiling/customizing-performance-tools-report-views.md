@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263961"
 ---
 # <a name="customize-performance-tools-report-views"></a>自訂效能工具報表檢視
 本節說明如何自訂使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具產生的報表。  

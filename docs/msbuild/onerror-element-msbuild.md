@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568550"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 項目 (MSBuild)
 如果失敗工作的 `ContinueOnError` 屬性是 `false`，則會執行一或多個目標。  

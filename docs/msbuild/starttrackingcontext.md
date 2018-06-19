@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566884"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 啟動追蹤內容。  
@@ -43,4 +44,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：**FileTracker.h
+ **標頭：** FileTracker.h
