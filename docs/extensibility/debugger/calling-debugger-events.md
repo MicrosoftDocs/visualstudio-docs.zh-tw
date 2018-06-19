@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100023"
 ---
 # <a name="calling-debugger-events"></a>呼叫偵錯工具事件
 偵錯工作階段中的事件會以特定順序發生。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102788"
 ---
 # <a name="evaluating-expressions"></a>評估運算式
 運算式會建立從 [自動變數]、 監看式、 快速監看式或立即的 windows 中傳遞的字串。 評估運算式時，它會產生可列印的字串，包含名稱和類型變數或引數和其值。 這個字串會顯示在對應的 IDE 視窗中。  

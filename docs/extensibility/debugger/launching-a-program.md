@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103860"
 ---
 # <a name="launching-a-program"></a>啟動程式
 要偵錯程式的使用者可以按 F5 執行偵錯工具從 IDE。 這會開始一系列的事件，最後會導致在 IDE 的連接到偵錯引擎 (DE)，接著連接，或附加，程式，如下所示：  

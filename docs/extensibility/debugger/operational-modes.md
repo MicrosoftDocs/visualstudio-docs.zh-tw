@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105563"
 ---
 # <a name="operational-modes"></a>作業模式
 有三種模式中的 IDE 可以操作，如下所示：  

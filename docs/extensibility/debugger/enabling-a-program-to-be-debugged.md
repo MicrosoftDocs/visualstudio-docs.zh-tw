@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100526"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>啟用要進行偵錯的程式
 您偵錯引擎 (DE) 偵錯程式之前，必須先啟動 DE，或將它附加至現有的程式。  

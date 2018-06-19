@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099209"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
 指定是否要建立專案及執行參數取代在指定的位置，或執行參數取代在暫存位置，然後儲存專案到指定的位置。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066934"
 ---
 # <a name="import-an-xcode-project"></a>匯入 XCode 專案
 適用於跨平台行動裝置開發的 Microsoft Visual C++ 內含將您的 XCode 專案移至 Visual Studio 的支援，您可以在其中建立跨平台的程式庫，並與其他專案共用程式碼。 [從 XCode 匯入] 精靈可簡化下列流程：在 XCode 目標中匯入專案，並分割 C++ 程式碼，以用來做為靜態程式庫或共用程式碼專案。 您可以在 Visual Studio 中管理 iOS 特有的程式碼，但仍能使用 XCode 來執行分鏡腳本和組建。 如需如何輕鬆地在 Visual Studio 和 XCode 之間來回移動程式碼的相關資訊，請參閱＜在 XCode 和 Visual Studio之間移動變更＞。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103236"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 （Visual Studio 偵錯）
 參考章節包含的 api，顯示的語法和使用方式，針對所有應用程式開發介面項目，指南概念性概觀和程式碼範例的分類。 依類別目錄依字母順序列出所有參考。  

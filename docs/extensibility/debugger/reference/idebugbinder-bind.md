@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100061"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 這個方法會取得的記憶體內容或包含符號的目前值的物件。  

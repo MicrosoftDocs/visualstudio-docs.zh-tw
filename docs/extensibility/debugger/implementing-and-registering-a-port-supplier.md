@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103171"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>實作並註冊一個連接埠的供應商
 連接埠供應商的角色是追蹤，並提供連接埠，接著管理處理程序。 您必須建立一個連接埠時，連接埠提供者具現化 CoCreate 使用連接埠供應商的 GUID （工作階段的偵錯管理員 [SDM] 將會使用連接埠供應商使用者選取或專案系統所指定的連接埠供應商）。 然後會呼叫 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以新增任何連接埠。 如果可以加入一個連接埠，藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)並將其傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述連接埠。 `AddPort` 會傳回新的連接埠由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。  

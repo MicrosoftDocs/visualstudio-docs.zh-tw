@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105287"
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 Visual Studio 整合式的開發環境 (IDE) 可裝載編輯器的不同類型：  

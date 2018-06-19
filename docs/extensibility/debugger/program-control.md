@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102086"
 ---
 # <a name="program-control"></a>程式控制權
 在 Visual Studio 中偵錯所有下列逐步執行和繼續執行常式的層級發生程式：  

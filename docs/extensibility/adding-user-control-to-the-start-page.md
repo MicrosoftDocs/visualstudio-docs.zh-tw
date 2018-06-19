@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104091"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面
 本逐步解說示範如何加入自訂起始頁的 DLL 參考。 範例會將使用者控制項加入方案，建置使用者控制項，然後參考起始頁.xaml 檔建置的組件。 新的索引標籤裝載使用者控制項，可當做基本 Web 瀏覽器。  

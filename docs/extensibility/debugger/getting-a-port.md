@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102989"
 ---
 # <a name="getting-a-port"></a>取得連接埠
 連接埠代表處理程序執行所在電腦的連接。 該電腦可能會在本機電腦或遠端電腦 (其中可能可能執行非 windows 作業系統，請參閱 <<c0> [ 連接埠](../../extensibility/debugger/ports.md)如需詳細資訊)。  

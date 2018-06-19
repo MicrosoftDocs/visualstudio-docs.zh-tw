@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104147"
 ---
 # <a name="binding-breakpoints"></a>繫結中斷點
 如果使用者設定中斷點，也許是按 F9，IDE 會構成要求，並提示偵錯工作階段來建立中斷點。  

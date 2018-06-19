@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099834"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件來源 (Visual Studio SDK)
 有兩個來源的事件： 偵錯引擎 (DE) 工作階段偵錯和管理員 (SDM)。 從 DE 傳送的事件有非 NULL 引擎，而從 SDM 傳送的事件都有 NULL 引擎。  

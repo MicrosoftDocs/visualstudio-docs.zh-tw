@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097207"
 ---
 # <a name="archive"></a>封存
 本章節包含 Visual Studio 擴充性技術，仍然支援，但有較新的取代技術的討論。  

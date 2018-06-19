@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945112"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 在建置或重建之後部署方案。 只適用於 受控碼專案。

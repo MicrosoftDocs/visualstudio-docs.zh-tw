@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097455"
 ---
 # <a name="mstateobject-field"></a>m_stateObject 欄位
 物件，表示動作會使用的資料。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100282"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中斷模式中的運算式評估
 以下說明當偵錯工具處於中斷模式，但必須進行運算式評估所發生的程序。  
