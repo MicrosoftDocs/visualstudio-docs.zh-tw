@@ -1,13 +1,13 @@
 ---
-title: "length 屬性 (arguments) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: length 屬性 (arguments) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - length Property
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - length property (arguments)
 - Length property
 ms.assetid: 3cf36823-15bc-489b-a951-24c4923d9dba
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637908"
 ---
 # <a name="length-property-arguments-javascript"></a>length 屬性 (arguments) (JavaScript)
 傳回引數由呼叫端傳遞至函式的實際數目。  

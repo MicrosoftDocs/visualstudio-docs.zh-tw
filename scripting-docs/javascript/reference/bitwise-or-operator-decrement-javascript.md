@@ -1,13 +1,13 @@
 ---
-title: "位元 OR 運算子 (|)(JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 位元 OR 運算子 (|)(JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|'
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - OR operator
 - '| operator'
 ms.assetid: ffc8f758-3151-478e-bafb-fc78f1c469a0
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633748"
 ---
 # <a name="bitwise-or-operator--javascript"></a>位元 OR 運算子 (|) (JavaScript)
 針對兩個運算式執行位元 OR。  
@@ -51,7 +52,7 @@ result = expression1 | expression2
  任何運算式。  
   
 ## <a name="remarks"></a>備註  
- **&#124;**運算子會查看兩個運算式值的二進位表示法，並在其上的位元 OR 運算。 這項作業的結果行為，如下所示：  
+ **&#124;** 運算子會查看兩個運算式值的二進位表示法，並在其上的位元 OR 運算。 這項作業的結果行為，如下所示：  
   
 ```JavaScript  
 0101   (expression1)  

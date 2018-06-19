@@ -1,13 +1,13 @@
 ---
-title: "加法運算子 （+） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 加法運算子 （+） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - +
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - addition operator
 - + operator
 ms.assetid: ec1237d3-e78b-4e77-bd7d-c0204cf03acd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +31,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633258"
 ---
 # <a name="addition-operator--javascript"></a>加法運算子 (+) (JavaScript)
 將一個數值運算式的值加入至另一個，或串連兩個字串。  

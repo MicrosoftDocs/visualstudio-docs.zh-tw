@@ -1,12 +1,13 @@
 ---
-title: "forEach 方法 （陣列） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: forEach 方法 （陣列） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - arrays [JavaScript], forEach method
 - callback function, forEach method [JavaScript]
 ms.assetid: bd188034-a62b-4cbd-99c8-46d70dd6823d
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637488"
 ---
 # <a name="foreach-method-array-javascript"></a>forEach 方法 (陣列) (JavaScript)
 針對陣列中的每個元素執行指定的動作。  

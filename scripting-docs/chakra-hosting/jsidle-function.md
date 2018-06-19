@@ -1,18 +1,18 @@
 ---
-title: "JsIdle 函式 | Microsoft Docs"
-ms.custom: 
+title: JsIdle 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsIdle
 helpviewer_keywords:
 - JsIdle function
 ms.assetid: 372d1c62-8e19-4886-aa33-364cabc09bba
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568808"
 ---
 # <a name="jsidle-function"></a>JsIdle 函式
 告知執行階段執行任何必要的閒置處理。  

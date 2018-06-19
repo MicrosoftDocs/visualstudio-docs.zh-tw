@@ -1,13 +1,13 @@
 ---
-title: "@if陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: '@if陳述式 (JavaScript) |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@if_JavaScriptKeyword'
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - else statement
 - '@if statement'
 ms.assetid: ff11b29d-c06a-4276-b11d-db73e2da98ac
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +31,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634048"
 ---
 # <a name="if-statement-javascript"></a>@if陳述式 (JavaScript)
 根據運算式的值而定，有條件地執行陳述式群組。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/27/2017
  選擇項。 如果無法剖析文字`condition1`是**true**。  
   
  `text2`  
- 選擇項。 如果要剖析的文字`condition1`是**false**和`condition2`是**，則為 true**。  
+ 選擇項。 如果要剖析的文字`condition1`是**false**和`condition2`是 **，則為 true**。  
   
  `text3`  
  選擇項。 如果兩個，無法剖析文字`condition1`和`condition2`是**false**。  

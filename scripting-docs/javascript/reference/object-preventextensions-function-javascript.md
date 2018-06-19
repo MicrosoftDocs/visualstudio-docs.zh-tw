@@ -1,12 +1,13 @@
 ---
-title: "Object.preventExtensions 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Object.preventExtensions 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - preventExtensions function [JavaScript]
 - Object.preventExtensions function [JavaScript]
 ms.assetid: e6b48197-2374-4437-a9fe-519dd45a2077
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641108"
 ---
 # <a name="objectpreventextensions-function-javascript"></a>Object.preventExtensions 函式 (JavaScript)
 防止新屬性加入物件。  

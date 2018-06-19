@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637088"
 ---
 # <a name="global-object-javascript"></a>全域物件 (JavaScript)
 內建物件，其目的是為了收集到一個物件的全域函式和常數。  

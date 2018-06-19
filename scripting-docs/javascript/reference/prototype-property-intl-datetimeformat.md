@@ -1,19 +1,20 @@
 ---
-title: "prototype 屬性 (Intl.DateTimeFormat) |Microsoft 文件"
-ms.custom: 
+title: prototype 屬性 (Intl.DateTimeFormat) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: e1e693ff-1775-407e-b655-18a60d238ded
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638608"
 ---
 # <a name="prototype-property-intldatetimeformat"></a>prototype 屬性 (Intl.DateTimeFormat)
 傳回的原型參考針對格式器。  

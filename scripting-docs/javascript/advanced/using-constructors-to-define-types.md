@@ -1,12 +1,13 @@
 ---
-title: "使用建構函式定義類型 | Microsoft Docs"
-ms.custom: 
+title: 使用建構函式定義類型 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - objects, creating [JavaScript]
 - constructors, creating
 ms.assetid: e869702e-4caf-4513-8dd5-fe690535f8aa
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569178"
 ---
 # <a name="using-constructors-to-define-types"></a>使用常數定義類型
 建構函式是具現化特殊類型[物件](../../javascript/objects-and-arrays-javascript.md)的函式。 您會使用 **new** 關鍵字叫用建構函式。 以下是一些具有內建 JavaScript 物件及自訂物件的建構函式範例。  

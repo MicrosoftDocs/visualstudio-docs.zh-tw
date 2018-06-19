@@ -1,14 +1,14 @@
 ---
 title: JsProjectionCallbackContext Typedef | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 50c705c5-664f-4a1a-92f6-4882fc718ab1
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568418"
 ---
 # <a name="jsprojectioncallbackcontext-typedef"></a>JsProjectionCallbackContext Typedef
 從 JsRT 傳入應用程式回呼 JsProjectionEnqueueCallback，然後再以正確執行緒上的應用程式所提供的回呼 `JsProjectionCallback` 傳回 JsRT 的內容。  

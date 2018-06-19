@@ -1,19 +1,20 @@
 ---
-title: "具類型陣列 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 具類型陣列 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569358"
 ---
 # <a name="typed-arrays-javascript"></a>類型陣列 (JavaScript)
 您可以使用類型陣列來處理二進位資料，資料來自例如網路通訊協定、二進位檔案格式，以及原始圖形緩衝區等來源。 類型陣列也可用來管理記憶體中具有已知位元組版面配置的二進位資料。  

@@ -1,13 +1,13 @@
 ---
-title: "atEnd 方法 （列舉程式） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: atEnd 方法 （列舉程式） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - atEnd
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - atEnd method
 ms.assetid: 326808fb-9a0f-428e-aff1-b11b237913f1
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633648"
 ---
 # <a name="atend-method-enumerator-javascript"></a>atEnd 方法 (列舉程式) (JavaScript)
 傳回布林值，指出列舉值是否位於集合的結尾。  

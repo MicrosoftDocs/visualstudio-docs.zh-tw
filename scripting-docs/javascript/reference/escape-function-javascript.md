@@ -1,13 +1,13 @@
 ---
-title: "escape 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: escape 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - escape
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - hexadecimal
 - String object, encoding
 ms.assetid: caa92bea-ba69-4109-a68a-6e2debda463a
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636508"
 ---
 # <a name="escape-function-javascript"></a>escape 函式 (JavaScript)
 將字串編碼以讓他們可以讀取所有電腦上。 已取代。  
@@ -45,7 +46,7 @@ escape(charString)
   
  **逸出**函式會傳回字串值 （以 Unicode 格式），其中包含的內容`charstring`。 全部為空格、 標點符號、 重音的字元，而且其他任何非 ASCII 字元會取代`%` *xx*編碼，其中*xx*相當的十六進位數字，代表字元。 例如，空格會傳回為"%20"。  
   
- 包含值大於 255 使用儲存的字元**%u** *xxxx*格式。  
+ 包含值大於 255 使用儲存的字元 **%u** *xxxx*格式。  
   
 > [!NOTE]
 >  **逸出**函式不應該用來編碼統一資源識別項 (URI)。 使用`encodeURI`和`encodeURIComponent`改為函式。  

@@ -1,18 +1,18 @@
 ---
-title: "JsDisableRuntimeExecution 函式 | Microsoft Docs"
-ms.custom: 
+title: JsDisableRuntimeExecution 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsDisableRuntimeExecution
 helpviewer_keywords:
 - JsDisableRuntimeExecution function
 ms.assetid: 4bd4670a-a9da-4f8c-b3fd-1fd366d915c3
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568268"
 ---
 # <a name="jsdisableruntimeexecution-function"></a>JsDisableRuntimeExecution 函式
 暫停指令碼執行，並在執行階段中終止任何執行中的指令碼。  

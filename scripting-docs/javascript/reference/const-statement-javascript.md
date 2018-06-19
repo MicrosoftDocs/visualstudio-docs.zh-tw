@@ -1,13 +1,13 @@
 ---
-title: "const 陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: const 陳述式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - const_JavaScriptKeyword
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - declaring variables, const statement
 - const statement
 ms.assetid: 3ad0840f-437f-4163-9571-86ecc5ddb987
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634098"
 ---
 # <a name="const-statement-javascript"></a>const 陳述式 (JavaScript)
 以常數值宣告區塊範圍變數。  

@@ -1,14 +1,14 @@
 ---
-title: "JsGetTypedArrayStorage 函式 | Microsoft Docs"
-ms.custom: 
+title: JsGetTypedArrayStorage 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 52e4ac5f-cc71-456d-95de-a48f7327503d
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568698"
 ---
 # <a name="jsgettypedarraystorage-function"></a>JsGetTypedArrayStorage 函式
 取得具類型陣列所使用的基礎記憶體儲存體。  

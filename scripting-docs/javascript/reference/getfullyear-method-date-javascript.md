@@ -1,13 +1,13 @@
 ---
-title: "getFullYear 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: getFullYear 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getFullYear
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Date object
 - getFullYear method
 ms.assetid: f9ec1262-02e9-4791-90b5-48f33b1dc4bc
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636748"
 ---
 # <a name="getfullyear-method-date-javascript"></a>getFullYear 方法 (日期) (JavaScript)
 取得使用本地時間的年度。  

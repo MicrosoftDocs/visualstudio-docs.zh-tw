@@ -1,13 +1,13 @@
 ---
-title: "位元 AND 指派運算子 (&amp;=) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 位元 AND 指派運算子 (&amp;=) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '&='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - AND operator
 - bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634038"
 ---
 # <a name="bitwise-and-assignment-operator-amp-javascript"></a>位元 AND 指派運算子 (&amp;=) (JavaScript)
 設定變數值的位元 AND 運算的結果及運算式的值。 變數和運算式會被視為 32 位元整數。  

@@ -1,12 +1,13 @@
 ---
-title: "Math 常數 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: Math 常數 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -34,7 +35,7 @@ helpviewer_keywords:
 - Math.LN2 constant [JavaScript]
 - Math.LN10 constant [JavaScript]
 ms.assetid: 8a674046-cb99-4103-92be-83697fba6344
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -43,6 +44,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638948"
 ---
 # <a name="math-constants-javascript"></a>Math 常數 (JavaScript)
 數學常數傳回之內容的常數值`Math`物件。  

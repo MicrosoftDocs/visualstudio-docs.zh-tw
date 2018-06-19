@@ -1,12 +1,13 @@
 ---
-title: "物件和陣列 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 物件和陣列 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569338"
 ---
 # <a name="objects-and-arrays-javascript"></a>物件和陣列 (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 物件是屬性和方法的集合。 方法是物件的函式成員。 屬性 (Property) 是一個值或一系列的值 (以陣列或物件的格式存在)，它是物件的成員。 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支援四種物件：  

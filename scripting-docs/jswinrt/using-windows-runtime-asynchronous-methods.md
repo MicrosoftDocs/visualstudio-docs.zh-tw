@@ -1,18 +1,18 @@
 ---
-title: "使用 Windows 執行階段非同步方法 | Microsoft Docs"
-ms.custom: 
+title: 使用 Windows 執行階段非同步方法 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571448"
 ---
 # <a name="using-windows-runtime-asynchronous-methods"></a>使用 Windows 執行階段非同步方法
 許多 Windows 執行階段方法 (特別是可能會花長時間來完成的方法) 都是非同步方法。 這些方法通常會傳回非同步動作或作業 (例如 `Windows.Foundation.IAsyncAction`、`Windows.Foundation.IAsyncOperation`、`Windows.Foundation.IAsyncActionWithProgress` 或 `Windows.Foundation.IAsyncOperationWithProgress`)。 這些方法在 JavaScript 中是以 [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434) 模式表示。 換句話說，這些方法會傳回具有 [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx) 函式的 Promise 物件，因此您必須在作業執行成功時提供處理結果的 `completed` 函式。 如果您不想提供錯誤處理常式，則應該使用 [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) 函式，不要使用 `then` 函式。  

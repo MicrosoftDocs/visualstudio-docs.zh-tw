@@ -1,14 +1,14 @@
 ---
-title: "以 Edge 和舊版引擎為 JsRT API 的目標 | Microsoft Docs"
-ms.custom: 
+title: 以 Edge 和舊版引擎為 JsRT API 的目標 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569598"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>以 Edge 和舊版引擎為 JsRT API 的目標
 從 Windows 10 開始，我們對 Chakra (JavaScript 引擎) 所做的一項變更，就是支援兩個不同的 Chakra 引擎，以配合 Windows 10 支援新的 Edge 轉譯引擎的瀏覽器策略：  

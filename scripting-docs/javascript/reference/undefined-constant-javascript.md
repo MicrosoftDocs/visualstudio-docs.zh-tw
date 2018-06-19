@@ -1,13 +1,13 @@
 ---
-title: "undefined 常數 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: undefined 常數 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - undefined
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - undefined property
 ms.assetid: 2a689d7d-00b0-48fb-9c95-5c2867bde006
-caps.latest.revision: 
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640518"
 ---
 # <a name="undefined-constant-javascript"></a>undefined 常數 (JavaScript)
 永遠不會定義，例如未初始化的變數值。  

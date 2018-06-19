@@ -1,13 +1,13 @@
 ---
-title: "@cc_on陳述式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: '@cc_on陳述式 (JavaScript) |Microsoft 文件'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@cc_on_JavaScriptKeyword'
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - '@set statement'
 - '@if statement'
 ms.assetid: fdeda7ee-b9f4-4e52-8aa2-21c90c02a332
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634018"
 ---
 # <a name="ccon-statement-javascript"></a>@cc_on陳述式 (JavaScript)
 在指令碼的註解內啟用條件式編譯支援。  

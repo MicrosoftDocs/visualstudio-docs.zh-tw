@@ -1,13 +1,13 @@
 ---
-title: "True 關鍵字 |Microsoft 文件"
-ms.custom: 
+title: True 關鍵字 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - true_JavaScriptKeyword
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - true keyword
 ms.assetid: 38045e3b-d4fb-4958-b6c3-1e500872d64f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633308"
 ---
 # <a name="true-keyword"></a>True 關鍵字
 **True**關鍵字的值等於-1。  

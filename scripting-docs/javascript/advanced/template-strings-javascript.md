@@ -1,19 +1,20 @@
 ---
-title: "範本字串 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 範本字串 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: f2e525a5-b0fc-49c3-95a0-641788e5c12a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569148"
 ---
 # <a name="template-strings-javascript"></a>範本字串 (JavaScript)
 在 [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] 中，您可以使用範本字串，來建構具有內嵌運算式的字串常值。 範本字串也提供對多行字串的內建支援。  

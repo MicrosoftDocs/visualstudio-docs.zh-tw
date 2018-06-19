@@ -1,12 +1,13 @@
 ---
-title: "特殊字元 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 特殊字元 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - escape sequence
 - backslash (\)
 ms.assetid: 3b38b1bd-1f0f-4748-b13e-55cab36fd126
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569628"
 ---
 # <a name="special-characters-javascript"></a>特殊字元 (JavaScript)
 您可以在字串中放入 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 提供的逸出序列 (Escape Sequence)，用來建立無法直接輸入的字元。  

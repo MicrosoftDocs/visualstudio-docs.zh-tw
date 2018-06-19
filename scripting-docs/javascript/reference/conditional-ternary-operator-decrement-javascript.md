@@ -1,13 +1,13 @@
 ---
-title: "條件 （三元） 運算子 (？:)(JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 條件 （三元） 運算子 (？:)(JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '?:'
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - conditional (Ternary) operator
 - ternary
 ms.assetid: 7399ac32-9324-4a9a-ae76-be9c0f9df81c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634188"
 ---
 # <a name="conditional-ternary-operator--javascript"></a>條件 (三元) 運算子 (?:) (JavaScript)
 根據條件傳回兩個運算式的其中一個。  

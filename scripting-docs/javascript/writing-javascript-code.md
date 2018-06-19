@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571498"
 ---
 # <a name="writing-javascript-code"></a>撰寫 JavaScript 程式碼
 就像許多其他程式設計語言一樣，[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 會組織成陳述式、包含相關陳述式集的區塊，以及註解。 您可以在陳述式內使用變數、字串、數字和運算式。  

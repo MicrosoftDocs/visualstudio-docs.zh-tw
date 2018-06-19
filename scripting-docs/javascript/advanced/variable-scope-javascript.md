@@ -1,12 +1,13 @@
 ---
-title: "變數範圍 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 變數範圍 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569318"
 ---
 # <a name="variable-scope-javascript"></a>變數範圍 (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 有兩個範圍：全域和區域。 在函式定義之外宣告的變數就是全域變數，其值可在整個程式中存取和修改。 在函式定義內宣告的變數則是區域變數。 每次執行函式時，就會建立區域變數再予以摧毀，而且函式之外的所有程式碼都不能存取這個變數。 除了區塊範圍變數這種特殊案例外，JavaScript 並不支援區塊範圍 (使用一組大括弧 `{. . .}` 定義新的範圍)。  

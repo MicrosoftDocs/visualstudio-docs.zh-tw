@@ -1,14 +1,14 @@
 ---
-title: "JsSetPromiseContinuationCallback 函式 | Microsoft Docs"
-ms.custom: 
+title: JsSetPromiseContinuationCallback 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 6ef0faf4-1500-4bd9-aeca-c208492af8ea
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568648"
 ---
 # <a name="jssetpromisecontinuationcallback-function"></a>JsSetPromiseContinuationCallback 函式
 設定當工作必須排入佇列供未來執行時，內容所呼叫的承諾接續回呼函式。  

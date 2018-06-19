@@ -1,17 +1,17 @@
 ---
-title: "使用中指令碼撰寫介面 |Microsoft 文件"
-ms.custom: 
+title: 使用中指令碼撰寫介面 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script Authoring interfaces
 - ActivAut.h
 ms.assetid: 7bc6e64d-1291-4b4f-86b7-ab906252a109
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640758"
 ---
 # <a name="active-script-authoring-interfaces"></a>動態指令碼撰寫的介面
 ActivAut.h 標頭檔會提供本章節所列的介面。  

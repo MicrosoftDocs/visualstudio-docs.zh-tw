@@ -1,13 +1,13 @@
 ---
-title: "lastParen 屬性 （$ +） (RegExp) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: lastParen 屬性 （$ +） (RegExp) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $+
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - lastParen property ($+)
 ms.assetid: 18aca591-a97a-48da-8b06-422346804b16
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639358"
 ---
 # <a name="lastparen-property--regexp-javascript"></a>lastParen 屬性 ($+) (RegExp) (JavaScript)
 如果有的話，請從任何規則運算式搜尋，傳回最後的括號括住子相符項目。 唯讀。  

@@ -1,18 +1,18 @@
 ---
-title: "JsIsRuntimeExecutionDisabled 函式 | Microsoft Docs"
-ms.custom: 
+title: JsIsRuntimeExecutionDisabled 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsIsRuntimeExecutionDisabled
 helpviewer_keywords:
 - JsIsRuntimeExecutionDisabled function
 ms.assetid: 77490280-fb84-4614-a1f0-6ac31e3bd607
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568198"
 ---
 # <a name="jsisruntimeexecutiondisabled-function"></a>JsIsRuntimeExecutionDisabled 函式
 傳回值，指出執行階段中是否已停用指令碼執行。  

@@ -1,13 +1,13 @@
 ---
-title: "無法指派給 &#39; 這 &#39; |Microsoft 文件"
-ms.custom: 
+title: 無法指派給 &#39; 這 &#39; |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633158"
 ---
 # <a name="cannot-assign-to-39this39"></a>無法指派給 &#39; 這 &#39;
 您嘗試將值指派給**這**。 **這**是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]是指的關鍵字：  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請勿嘗試將指派給**這**。 若要存取的屬性或方法的具現化物件，使用點運算子 (例如 circle**。**半徑）。  
+-   請勿嘗試將指派給**這**。 若要存取的屬性或方法的具現化物件，使用點運算子 (例如 circle **。** 半徑）。  
   
     > [!NOTE]
     >  您不能命名為使用者建立的變數**這**; 它是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]保留字。  

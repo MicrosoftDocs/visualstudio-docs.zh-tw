@@ -1,19 +1,20 @@
 ---
-title: "ArrayBuffer 物件 |Microsoft 文件"
-ms.custom: 
+title: ArrayBuffer 物件 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634318"
 ---
 # <a name="arraybuffer-object"></a>ArrayBuffer 物件
 代表二進位資料的原始緩衝區，用來儲存不同類型陣列的資料。 `ArrayBuffers`無法讀取或寫入直接，但是可以傳遞給類型陣列或[DataView 物件](../../javascript/reference/dataview-object.md)來視需要解譯原始緩衝區。  

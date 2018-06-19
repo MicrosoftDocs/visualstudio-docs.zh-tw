@@ -1,13 +1,13 @@
 ---
-title: "0...n 屬性 (arguments) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 0...n 屬性 (arguments) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - 0...n
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - 0...n properties
 ms.assetid: 52857c4b-3d56-4500-93ff-4db4729c2578
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634008"
 ---
 # <a name="0n-properties-arguments-javascript"></a>0...n 屬性 (引數) (JavaScript)
 傳回個別的引數的實際值**引數**所傳回物件**引數**屬性執行的函式。  

@@ -1,13 +1,13 @@
 ---
-title: "JsParseSerializedScriptWithCallback 函式 | Microsoft Docs"
-ms.custom: 
+title: JsParseSerializedScriptWithCallback 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a93ecfb-4b82-4a85-b24c-6816db2332ea
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568838"
 ---
 # <a name="jsparseserializedscriptwithcallback-function"></a>JsParseSerializedScriptWithCallback 函式
 剖析序列化的指令碼，並傳回代表該指令碼的函式。     僅在需要時，才提供消極載入指令碼來源的能力。  

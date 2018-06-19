@@ -1,13 +1,13 @@
 ---
-title: "stackTraceLimit 屬性 （錯誤） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: stackTraceLimit 屬性 （錯誤） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Error.stackTraceLimit
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - error stack [JavaScript]
 - JavaScript stack trace limit
 ms.assetid: 127ef8e8-892e-4263-9ebc-03364af01212
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640568"
 ---
 # <a name="stacktracelimit-property-error-javascript"></a>stackTraceLimit 屬性 (錯誤) (JavaScript)
 取得或設定堆疊追蹤限制，這相當於錯誤顯示的畫面格數目。 預設限制為 10。  

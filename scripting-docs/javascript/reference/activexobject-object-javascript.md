@@ -1,13 +1,13 @@
 ---
-title: "ActiveXObject 物件 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: ActiveXObject 物件 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ActiveXObject
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - ActiveXObject object
 - Automation objects, ActiveXObject objects
 ms.assetid: 9c7bed07-853f-48aa-92db-3131324746ec
-caps.latest.revision: 
+caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634338"
 ---
 # <a name="activexobject-object-javascript"></a>ActiveXObject 物件 (JavaScript)
 啟用及傳回對 Automation 物件的參考。  

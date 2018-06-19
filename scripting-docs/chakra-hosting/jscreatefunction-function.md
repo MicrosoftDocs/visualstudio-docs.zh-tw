@@ -1,18 +1,18 @@
 ---
-title: "JsCreateFunction 函式 | Microsoft Docs"
-ms.custom: 
+title: JsCreateFunction 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsCreateFunction
 helpviewer_keywords:
 - JsCreateFunction function
 ms.assetid: b298a96a-5ef7-4203-a8c8-55f9bfc6d2bb
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567758"
 ---
 # <a name="jscreatefunction-function"></a>JsCreateFunction 函式
 建立新的 JavaScript 函式。  

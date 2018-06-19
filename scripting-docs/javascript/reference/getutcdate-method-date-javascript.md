@@ -1,13 +1,13 @@
 ---
-title: "getUTCDate 方法 （日期） (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: getUTCDate 方法 （日期） (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getUTCDate
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - UTC dates, returning
 - getUTCDate method
 ms.assetid: 9e4c763f-c94c-44c9-9684-cb632d75b62e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636968"
 ---
 # <a name="getutcdate-method-date-javascript"></a>getUTCDate 方法 (日期) (JavaScript)
 取得一天的--月，使用國際標準時間 (UTC)。  

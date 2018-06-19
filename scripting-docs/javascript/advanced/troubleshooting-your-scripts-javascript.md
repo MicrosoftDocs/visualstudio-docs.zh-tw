@@ -1,12 +1,13 @@
 ---
-title: "針對指令碼進行疑難排解 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 針對指令碼進行疑難排解 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - automative type conversion
 - troubleshooting scripts
 ms.assetid: 0e0545d9-44e5-4179-befc-99a882c5c672
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569278"
 ---
 # <a name="troubleshooting-your-scripts-javascript"></a>指令碼疑難排解 (JavaScript)
 任何程式設計語言都會有些地方有意外狀況。 例如，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 中的 `null` 值，其行為與 C 或 C++ 語言中的 `Null` 值不同。  

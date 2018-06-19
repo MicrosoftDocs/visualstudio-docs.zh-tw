@@ -1,13 +1,13 @@
 ---
 title: JsSerializedScriptUnloadCallback Typedef | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d18c392-cca0-411e-9f2b-0d788b16161a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568568"
 ---
 # <a name="jsserializedscriptunloadcallback-typedef"></a>JsSerializedScriptUnloadCallback Typedef
 由執行階段在完成與指令碼執行相關的所有資源時呼叫。     呼叫端應該釋放載入的任何來源、位元組碼和目前的內容。  

@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 指示詞 |Microsoft 文件"
-ms.custom: 
+title: JavaScript 指示詞 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript directives
 ms.assetid: b83d10c6-104d-442b-9fe8-f55b11101ed3
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637068"
 ---
 # <a name="javascript-directives"></a>JavaScript 指示詞
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指示詞。  

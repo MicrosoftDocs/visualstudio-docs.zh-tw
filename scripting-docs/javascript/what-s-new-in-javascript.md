@@ -1,19 +1,20 @@
 ---
-title: "JavaScript 的新功能 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 的新功能 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 342b68ef-df93-48c4-81de-bdf6b6ce58d9
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571478"
 ---
 # <a name="what39s-new-in-javascript"></a>JavaScript 的新功能
 本文件列出兩個[邊緣模式](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx)、[!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式都支援的 JavaScript 新功能。  
@@ -37,7 +39,7 @@ ms.lasthandoff: 10/27/2017
 |-------------|-----------------|  
 |類別|新的語法支援[類別](../javascript/reference/class-statement-javascript.md)宣告。|  
 |Promise|[Promise](../javascript/reference/promise-object-javascript.md) 使非同步撰寫程式碼更方便、更俐落。 同時支援 Promise 建構函式及 `all` 和 `race` 公用程式方法。|  
-|Iterator|現在您可以反覆查看遞迴的物件 (包括陣列、類似陣列的物件和迭代器) ，叫用自訂的反覆項目攔截程序，來執行每個相異的屬性值陳述式。 如需詳細資訊，請參閱[迭代器和產生器](../javascript/advanced/iterators-and-generators-javascript.md)。 **注意：**目前還不支援產生器。|  
+|Iterator|現在您可以反覆查看遞迴的物件 (包括陣列、類似陣列的物件和迭代器) ，叫用自訂的反覆項目攔截程序，來執行每個相異的屬性值陳述式。 如需詳細資訊，請參閱[迭代器和產生器](../javascript/advanced/iterators-and-generators-javascript.md)。 **注意：** 目前還不支援產生器。|  
 |Arrow 函式|Arrow 函式 (=>) 提供簡寫語法，用於 `function` 關鍵字，以語彙 `this` 繫結為特色。|  
 |內建物件的新方法|[Array 物件](../javascript/reference/array-object-javascript.md)、[Math 物件](../javascript/reference/math-object-javascript.md)、[Number 物件](../javascript/reference/number-object-javascript.md)、[Object 物件](../javascript/reference/object-object-javascript.md)及 [String 物件](../javascript/reference/string-object-javascript.md)等內建物件包含許多新的公用程式函式和屬性，可用來操作和檢查資料。|  
 |物件常值的增強功能|物件現在支援計算的屬性、簡潔的方法定義，以及簡寫語法，用於其值已初始化為相同名稱變數的屬性。 如需詳細資訊，請參閱[建立物件](../javascript/creating-objects-javascript.md)。|  

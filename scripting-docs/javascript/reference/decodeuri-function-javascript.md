@@ -1,13 +1,13 @@
 ---
-title: "decodeURI 函式 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: decodeURI 函式 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - decodeURI
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - decodeURI method
 ms.assetid: af6c81dc-10f4-4243-a7ce-d18ae3ea0fb8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636238"
 ---
 # <a name="decodeuri-function-javascript"></a>decodeURI 函式 (JavaScript)
 取得未編碼的版本的編碼統一資源識別元 (URI)。  

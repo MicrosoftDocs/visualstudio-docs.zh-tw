@@ -1,13 +1,13 @@
 ---
-title: "邏輯 NOT 運算子 （！）(JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 邏輯 NOT 運算子 （！）(JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '!'
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - '! operator'
 - '! operator, about ! operator'
 ms.assetid: 68c3dc71-ae95-4293-9155-67405846d71d
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638938"
 ---
 # <a name="logical-not-operator--javascript"></a>邏輯 NOT 運算子 (!)(JavaScript)
 在運算式上執行邏輯否定運算。  
@@ -55,7 +56,7 @@ result = !expression
 |True|False|  
 |False|True|  
   
- 所有一元運算子，例如**！** 運算子會評估運算式，如下所示：  
+ 所有一元運算子，例如 **！** 運算子會評估運算式，如下所示：  
   
 -   如果套用到未定義或`null`運算式中，執行階段錯誤，就會引發。  
   
@@ -67,7 +68,7 @@ result = !expression
   
  運算子會套用至產生的數字。  
   
- 如**！** 運算子，如果*運算式*非零，*結果*為零。 如果*運算式*為零，*結果*為 1。  
+ 如 **！** 運算子，如果*運算式*非零，*結果*為零。 如果*運算式*為零，*結果*為 1。  
   
 ## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  

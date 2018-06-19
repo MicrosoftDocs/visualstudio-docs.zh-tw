@@ -1,13 +1,13 @@
 ---
-title: "必須是的常數 |Microsoft 文件"
-ms.custom: 
+title: 必須是的常數 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632938"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試使用條件式編譯測試陳述式中的 （非條件式編譯） 變數。 條件式編譯測試陳述式必須評估為常數。  

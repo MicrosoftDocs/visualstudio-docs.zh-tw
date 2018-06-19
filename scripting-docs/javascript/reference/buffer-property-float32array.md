@@ -1,19 +1,20 @@
 ---
-title: "buffer 屬性 (Float32Array) |Microsoft 文件"
-ms.custom: 
+title: buffer 屬性 (Float32Array) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 07b341ae-f83b-44ea-ad84-d5736eb51ec4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633348"
 ---
 # <a name="buffer-property-float32array"></a>buffer 屬性 (Float32Array)
 唯讀。 取得這個陣列所參考的 ArrayBuffer。  

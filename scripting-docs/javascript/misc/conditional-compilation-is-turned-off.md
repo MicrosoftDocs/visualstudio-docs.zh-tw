@@ -1,13 +1,13 @@
 ---
-title: "條件式編譯已經關閉 |Microsoft 文件"
-ms.custom: 
+title: 條件式編譯已經關閉 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1030
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633108"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>條件式編譯已經關閉
 您嘗試上使用條件式編譯變數，而不進行第一次開啟條件式編譯。 開啟 條件式編譯會告知[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器將解譯開頭為 @ 做為條件式編譯變數的識別項。 您可以從您的陳述式的條件式程式碼：  

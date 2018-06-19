@@ -1,13 +1,13 @@
 ---
-title: "發生例外狀況而且未攔截到 |Microsoft 文件"
-ms.custom: 
+title: 發生例外狀況而且未攔截到 |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633118"
 ---
 # <a name="exception-thrown-and-not-caught"></a>發生例外狀況而且未攔截
 包含您`throw`陳述式中程式碼，但它不住**再試一次**區塊，不足或沒有相關聯**攔截**區塊來攔截錯誤。 從擲回例外狀況**再試一次**封鎖使用**擲回**陳述式，並已攔截外**再試一次**區塊**攔截**陳述式。  

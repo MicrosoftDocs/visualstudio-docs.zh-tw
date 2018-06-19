@@ -1,18 +1,18 @@
 ---
-title: "JsGetValueType 函式 | Microsoft Docs"
-ms.custom: 
+title: JsGetValueType 函式 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsGetValueType
 helpviewer_keywords:
 - JsGetValueType function
 ms.assetid: f403cf7c-c8c0-4a17-bfa9-0302d00e760e
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568348"
 ---
 # <a name="jsgetvaluetype-function"></a>JsGetValueType 函式
 取得 JsValueRef 的 JavaScript 類型。  

@@ -1,13 +1,13 @@
 ---
-title: "無效的字元 (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: 無效的字元 (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633728"
 ---
 # <a name="invalid-character-javascript"></a>無效的字元 (JavaScript)
 組成識別項不使用的字元 （或字元） 辨識為有效的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器。 有效的字元使用下列規則：  

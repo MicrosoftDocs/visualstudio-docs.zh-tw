@@ -1,13 +1,13 @@
 ---
-title: "callee 屬性 (arguments) (JavaScript) |Microsoft 文件"
-ms.custom: 
+title: callee 屬性 (arguments) (JavaScript) |Microsoft 文件
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - callee
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - callee property
 ms.assetid: ad9d4d21-73f0-44f6-8bec-502f3456cd23
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634058"
 ---
 # <a name="callee-property-arguments-javascript"></a>callee 屬性 (引數) (JavaScript)
 傳回`Function`物件正在執行，也就是指定的本文`Function`物件。  
