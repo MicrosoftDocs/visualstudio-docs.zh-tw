@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: 建立結果檢視器的增益集
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: 使用 UI 自動化來測試您的程式碼
+- name: UI 測試自動化
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 逐步解說：建立、編輯和維護自動程式化 UI 測試
+    - name: 逐步解說：建立、編輯及維護程式碼 UI 測試
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: 使用自動程式化 UI 測試來測試 Windows UWP 應用程式
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: 使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: 為 UWP 控制項設定唯一自動化屬性以進行測試
+    - name: 使用程式碼 UI 測試來測試 UWP 應用程式
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: 為 UWP 控制項設定獨特的自動化屬性
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: 在自動程式化 UI 測試中使用 HTML5 控制項
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: 建立資料驅動式自動程式化 UI 測試
       href: creating-a-data-driven-coded-ui-test.md
-    - name: 讓自動程式化 UI 測試在播放期間等候特定事件
+    - name: 在播放期間等候特定事件
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: 使用不同的網頁瀏覽器搭配自動程式化 UI 測試
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: 啟用控制項的自動程式化 UI 測試功能
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: 自動程式碼 UI 測試和動作記錄的支援組態和平台
+    - name: 支援的組態與平台
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: 擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
+    - name: 擴充程式碼 UI 測試架構
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: 自動程式化 UI 測試的範例 Excel 增益集
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: 範例 Excel Communicator 介面
-          href: sample-excel-communicator-interface.md
-        - name: Excel 的範例自動程式碼 UI 測試擴充功能
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 範例 Excel 延伸模組：ExtensionPackage 類別
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 範例 Excel 延伸模組：TechnologyManager 類別
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 範例 Excel 延伸模組：PropertyProvider 類別
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 範例 Excel 延伸模組：Element 類別
-              href: sample-excel-extension-element-classes.md
-            - name: 範例 Excel 延伸模組：ActionFilter 類別
-              href: sample-excel-extension-actionfilter-class.md
 - name: 測試實驗室管理
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
