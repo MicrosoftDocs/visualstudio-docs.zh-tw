@@ -64,7 +64,7 @@
 #### [過期的訂閱](handle-expired-license.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
 ## 取得 Visual Studio 訂閱
-### [比較訂用帳戶選項](https://www.visualstudio.com/vs/pricing)
+### [比較訂用帳戶選項](https://visualstudio.microsoft.com/vs/pricing)
 ### 購買雲端訂閱
 #### [概觀](vscloud-overview.md)
 #### [計費常見問題集](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## 資源
 ### [Visual Studio 授權白皮書](http://aka.ms/vslicensing) \(英文\)
-### [比較訂閱選項和定價](https://www.visualstudio.com/vs/pricing)
-### [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
-### [Visual Studio 管理與訂閱支援](https://www.visualstudio.com/support/support-overview-vs)
+### [比較訂閱選項和定價](https://visualstudio.microsoft.com/vs/pricing)
+### [比較 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
+### [Visual Studio 管理與訂閱支援](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [大量授權條款](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft 產品和服務合約 (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)
