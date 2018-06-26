@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766697"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。 |
 
-在本主題中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
+在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
 > [!NOTE]
 > 如果是 .NET Core 和 ASP.NET Core，[CPU 使用量] 工具目前不提供使用可攜式 PBD 的精確結果。 請改用完整 PDB。
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 > * 收集 CPU 使用量資料
 > * 分析 CPU 使用量資料
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料 
+## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
   
 1.  開啟您想要在 Visual Studio 中偵錯的專案，並在您的應用程式中要檢查 CPU 使用量的位置設定中斷點。
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/26/2018
   
 3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
 
-4.  您可以透過工具列上的 **[Select Tools (選取工具)]** 設定來選擇是否要查看 **[CPU Usage (CPU 使用量)]**、[[Memory Usage (記憶體使用量)]](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
+4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
 
      ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/26/2018
 
      此時，您可以開始分析資料。
 
-## <a name="Step2"></a> 步驟 2：分析 CPU 使用量資料
+## <a name="step-2-analyze-cpu-usage-data"></a>步驟 2：分析 CPU 使用量資料
 
 建議您先檢查 [CPU 使用量] 下方的函式清單、識別執行最多工作的函式，仔細觀察每一項，接著開始分析您的資料。
 
@@ -131,7 +132,7 @@ ms.lasthandoff: 04/26/2018
 |||
 |-|-|
 |![步驟 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|  
-|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [[顯示外部程式碼]](#BKMK_External_Code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 **[外部程式碼]** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
+|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼](#BKMK_External_Code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼]  節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
 |![步驟 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|
 |![步驟 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼]  時，應用程式方法也可包含 [外部程式碼]  節點。|
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 04/26/2018
 
 - [Modules (模組)] 內含函式的模組名稱，或內含 [External Code (外部程式碼)] 節點中的函式的模組數目。
 
-## <a name="BKMK_External_Code"></a>檢視外部程式碼
+## <a name="view-external-code"></a>檢視外部程式碼
 
 外部程式碼是在系統和架構元件中由您撰寫之程式碼所執行的函式。 外部程式碼包含啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式的函式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 工具會將使用者方法的外部函式，收集成一個 [外部程式碼] 節點。
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/26/2018
 使用搜尋方塊尋找您所尋找的節點，然後使用水平捲軸檢視資料。
 
 > [!TIP]
-> 如果您剖析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+> 如果您分析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確定您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.*pdb*) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
