@@ -15,15 +15,16 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767682"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
 
-本逐步解說會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
+本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
 
 > [!NOTE]
 > 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)
@@ -41,23 +42,20 @@ ms.lasthandoff: 05/22/2018
 
 2. 在 [檔案] 功能表上選取 [新增] > [專案]。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+   [ **新增專案** ] 對話方塊隨即出現。
 
 3. 在 [ **已安裝的範本**] 下，按一下 [ **Visual C#**]。
 
 4. 在應用程式類型清單中，按一下 [ **類別庫**]。
 
-5. 在 [ **名稱** ] 方塊中，輸入 `Bank` ]，然後按一下 [ **確定**。
+5. 在 [名稱] 方塊中，鍵入 **Bank**，然後按一下 [確定]。
 
-    > [!NOTE]
-    > 如果已經有專案使用 "Bank" 這個名稱，就請為專案選擇另一個名稱。
+   新的 Bank 專案會建立並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
 
-     新的 Bank 專案會建立並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
+   > [!NOTE]
+   > 如果 *Class1.cs* 檔案並未在程式碼編輯器中開啟，請在 [方案總管] 中按兩下 *Class1.cs* 檔案加以開啟。
 
-    > [!NOTE]
-    > 如果 *Class1.cs* 檔案並未在程式碼編輯器中開啟，請在 [方案總管] 中按兩下 *Class1.cs* 檔案加以開啟。
-
-6. 從[用於建立單元測試的範例專案案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼，並以複製的程式碼取代 *Class1.cs* 的原始內容。
+6. 從[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼，並以複製的程式碼取代 *Class1.cs* 的原始內容。
 
 7. 另存新檔成 *BankAccount.cs* 檔案。
 
@@ -93,11 +91,11 @@ public void Debit(double amount)
 
 4. 在 [名稱] 文字方塊中，輸入 `BankTests`，然後選取 [確定]。
 
-     **BankTests** 專案就會新增至 **Bank** 方案中。
+   **BankTests** 專案就會新增至 **Bank** 方案中。
 
 5. 在 **BankTests** 專案中，新增 **Bank** 專案的參考。
 
-     在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從操作功能表選擇 [新增參考]。
+   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從操作功能表選擇 [新增參考]。
 
 6. 在 [參考管理員] 對話方塊中，展開 [ **方案** ]，然後檢查 [ **Bank** ] 項目。
 
@@ -142,7 +140,7 @@ using BankAccountNS;
 
 - 在適用於 Managed 程式碼的 Microsoft 單元測試架構中，對於包含要在 [測試總管] 中執行的單元測試方法的任何類別而言， `[TestClass]` 屬性是必要的。
 
-- 您要讓 [測試總管] 執行的每個測試方法都必須具有 `[TestMethod]`屬性。
+- 您要讓 [測試總管] 執行的每個測試方法都必須具有 `[TestMethod]` 屬性。
 
 單元測試專案中可以含有不具有 `[TestClass]` 屬性的其他類別，而測試類別中也可以含有不具有 `[TestMethod]` 屬性的其他方法。 您可以在測試方法中使用這些其他類別和方法。
 
@@ -211,13 +209,13 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>修正程式碼並重新執行測試
 
-**分析測試結果**
+### <a name="analyze-the-test-results"></a>分析測試結果
 
 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期的參數 (**Expected\<值>** 參數) 和實際收到的參數 (**Actual\<值>** 參數)。 您預期餘額會減少，但實際上它增加了提領的金額。
 
 單元測試發現了一個錯誤：提領的金額應該從帳戶餘額「減去」，但卻被「加入」至帳戶餘額。
 
-**修正 Bug**
+### <a name="correct-the-bug"></a>修正 Bug
 
 若要更正這個錯誤，請將這一行：
 
@@ -231,7 +229,7 @@ m_balance += amount;
 m_balance -= amount;
 ```
 
-**重新執行測試**
+### <a name="rerun-the-test"></a>重新執行測試
 
 在 [測試總管] 中，選擇 [ **全部執行** ] 以重新執行測試。 紅色/綠色狀態列會轉成綠色，表示通過測試，且測試會移至 [成功的測試] 群組。
 
@@ -239,14 +237,14 @@ m_balance -= amount;
 
 這一節會說明分析、單元測試開發和重構的反覆流程，是如何協助您讓生產環境程式碼更加強固而有效。
 
-**分析問題**
+### <a name="analyze-the-issues"></a>分析問題
 
 您已建立測試方法，以確認會在 `Debit` 方法中正確扣除有效金額。 現在，請確認如果付款金額處於下列任一狀況，該方法會擲回 <xref:System.ArgumentOutOfRangeException>：
 
 - 大於餘額，或
 - 小於零。
 
-**建立測試方法**
+### <a name="create-the-test-methods"></a>建立測試方法
 
 建立測試方法，以確認付款金額小於零時的正確行為：
 
@@ -277,11 +275,11 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. 將 `debitAmount` 設定為大於餘額的數字。
 
-**執行測試**
+### <a name="run-the-tests"></a>執行測試
 
 執行兩個測試方法可示範如何正確運作測試。
 
-**繼續分析**
+### <a name="continue-the-analysis"></a>繼續分析
 
 不過，最後兩個測試方法也令人困擾。 在任一測試時，您無法確定受測方法中的哪個條件會擲回例外狀況。 某種可區分兩個條件 (即負的付款金額或金額大於餘額) 的方式，會增加您對測試的信賴度。
 
@@ -291,11 +289,11 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-有一個建構函式可用來報告更豐富的資訊：<xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` 包含引數的名稱、引數值和使用者定義的訊息。 您可以重構受測方法以使用這個建構函式。 更好的是，您可以使用可公開取得的類型成員來指定錯誤。
+有一個建構函式可用來報告更豐富的資訊：<xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> 包含引數的名稱、引數值和使用者定義的訊息。 您可以重構受測方法以使用這個建構函式。 更好的是，您可以使用可公開取得的類型成員來指定錯誤。
 
-**重構受測程式碼**
+### <a name="refactor-the-code-under-test"></a>重構受測程式碼
 
-首先，在類別範圍定義錯誤訊息的兩個常數。 將這些常數放入受測類別 (`Bank`) 中：
+首先，在類別範圍定義錯誤訊息的兩個常數。 將這些常數放入受測類別 BankAccount 中：
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -316,7 +314,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
     }
 ```
 
-**重構測試方法**
+### <a name="refactor-the-test-methods"></a>重構測試方法
 
 移除 `ExpectedException` 測試方法屬性，改為攔截擲回的例外狀況，並確認其相關聯的訊息。 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法可讓您比較兩個字串。
 
@@ -344,7 +342,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**重新測試、重新撰寫和重新分析**
+### <a name="retest-rewrite-and-reanalyze"></a>重新測試、重新撰寫和重新分析
 
 假設受測方法中有一個錯誤，因此 `Debit` 方法不僅不會「擲回」<xref:System.ArgumentOutOfRangeException>，更不會輸出包含例外狀況的正確訊息。 目前，測試方法不會處理這種情況。 如果 `debitAmount` 值有效 (也就是說，小於餘額但大於零)，則不會攔截到任何例外狀況，因此永遠不會引發判斷提示。 然而，測試方法會成功。 這樣就不好了，因為您要的是測試方法在未擲回例外狀況時失敗。
 

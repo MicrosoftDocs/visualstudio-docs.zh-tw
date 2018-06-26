@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56982cdef9c27beb4e5aeb82fa9d9741e87fbd7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20324a3026f5c32fcc1525f1c5afcd20b1b62332
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690727"
 ---
-# <a name="comparing-performance-data-files"></a>比較效能資料檔案
-分析工具資料檔案比較功能可讓您選取兩個報表檔案 (.VSP 或 .VSPS) 檔案，然後產生報告以顯示一個分析工作階段到另一個之間發生的差異、效能衰退和改進。  
+# <a name="compare-performance-data-files"></a>比較效能資料檔案
+分析工具資料檔案比較功能可讓您選取兩個報表檔案 (.*vsp* 或 .*vsps*) 檔案，然後產生報告以顯示一個分析工作階段到另一個之間發生的差異、效能回復和改善。  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的資料檔案比較報表會比較一個分析資料檔案的分析結果和另一個資料檔案的基準分析結果。 必須使用相同的分析方法產生這兩個資料檔案。 分析的比較報表會儲存成 .vsps 檔。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的資料檔案比較報表會比較一個分析資料檔案的分析結果和另一個資料檔案的基準分析結果。 必須使用相同的分析方法產生這兩個資料檔案。 分析的比較報表會儲存成 .*vsps* 檔。  
   
  比較報表檢視會以表格檢視的方式呈現變更資料。 表格會呈現相對於基準的差異或變更。 差異是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。  
   
@@ -33,4 +34,4 @@ ms.lasthandoff: 04/19/2018
  設定臨界值可減少雜訊，並以指定的數量篩選掉資料列的比較表格檢視中未變更的資料。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)
+ [操作說明：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573163"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [執行緒檢視] 是 [並行視覺化檢視] 中最詳細且功能最豐富的檢視 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/19/2018
   
 -   了解在背景工作執行緒與執行的關鍵路徑之間的相依性。  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>檢查特定時間間隔和執行緒  
+## <a name="examine-specific-time-intervals-and-threads"></a>檢查特定時間間隔和執行緒  
  執行緒檢視會顯示時間軸。 您可以在時間軸內縮放和移動瀏覽，檢查應用程式的特定間隔與執行緒。 x 軸上是時間，而 y 軸上有幾個通道︰  
   
 -   系統上的每個磁碟機各有兩個 I/O 通道，一個通道用來讀取，而另一個用來寫入。  
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/19/2018
  若要找出執行時間花費在哪一行程式碼，請展開呼叫樹狀圖，然後在呼叫樹狀圖項目的捷徑功能表上，選擇 [檢視原始檔] 或 [檢視呼叫位置]。 [檢視原始檔] 會找到執行的那一行程式碼。 [檢視呼叫位置] 會找到呼叫所執行那一行程式碼的程式碼行。 如果只有一個呼叫位置存在，會反白顯示其程式碼行。 如果有多個呼叫位置存在，您可以在出現的對話方塊中選取想的位置，然後選擇 [移至原始檔] 以反白顯示呼叫位置程式碼。 找到有最多執行個體、花費最多時間 (或兩者) 的呼叫位置通常最有用。 如需詳細資訊，請參閱[設定檔報告](../profiling/execution-profile-report.md)。  
   
 #### <a name="synchronization"></a>同步處理  
- 同步處理報表顯示負責同步處理區塊的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱[同步處理時間](../profiling/synchronization-time.md)。  
+ 同步處理報表顯示負責同步處理區塊的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱[同步處理時間](../profiling/synchronization-time.md)  
   
 #### <a name="io"></a>I/O  
  I/O 報表顯示負責 I/O 區塊的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)。  
@@ -147,5 +148,5 @@ ms.lasthandoff: 04/19/2018
 #### <a name="disk-operations"></a>磁碟作業  
  此索引標籤會顯示和代表目前處理序的磁碟 I/O 相關的處理序和執行緒，接觸到哪些檔案 (例如，載入的 DLL)、一共讀取多少個位元組以及其他資訊。 您可以使用此報表來評估執行期間花費在存取檔案的時間，尤其是處理序似乎為 I/O 繫結時。 如需詳細資訊，請參閱[磁碟作業報告](../profiling/disk-operations-report-threads-view.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)

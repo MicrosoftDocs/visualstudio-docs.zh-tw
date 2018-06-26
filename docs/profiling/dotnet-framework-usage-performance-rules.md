@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766018"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 |[DA0018：32 位元應用程式正以處理序 Managed 記憶體限制執行](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md)|程式碼剖析執行期間收集的系統資料指出，.NET Framework 記憶體堆積已接近 Managed 堆積在 32 位元處理序中可以到達的大小上限。 請考慮使用 .NET 記憶體程式碼剖析方法再次嘗試程式碼剖析，並最佳化應用程式使用的受管理資源。|  
 |[DA0021：高比率的 Gen 1 記憶體回收](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|數量相對高的 .NET 記憶體物件正在層代 1 記憶體回收中收回。 如果有太多短期物件存留在層代 0 回收中，記憶體管理的成本很容易變得過高。|  
 |[DA0022：高比率的 Gen 2 記憶體回收](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|數量高的 .NET 記憶體物件正在層代 2 記憶體回收中收回。 如果有太多短期物件存留在層代 1 回收中，記憶體管理的成本很容易變得過高。 鎖定爭用率超過規則 DA0005 的上限臨界值時，就會引發此規則。|  
-|[DA0023：高 GC CPU 時間](../profiling/da0023-high-gc-cpu-time.md)|程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量極高。|  
+|[DA0023：高 GC CPU 時間](../profiling/da0023-high-gc-cpu-time.md)|分析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量極高。|  
 |[DA0024：過多 GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)|程式碼剖析期間收集的系統效能資料指出，相較於應用程式總處理時間，花費在記憶體回收的時間量過高。 當記憶體回收所花費的時間量超過規則 DA0023 的上限臨界值時，就會引發此規則。|  
 |[DA0038：鎖定爭用的比率很高](../profiling/da0038-high-rate-of-lock-contentions.md)|程式碼剖析資料收集的系統效能資料指出，應用程式執行期間發生極高的鎖定爭用率。 請考慮使用並行程式碼剖析方法再次進行程式碼剖析，以尋找爭用的原因。|  
 |[DA0039：鎖定爭用的比率非常高](../profiling/da0039-very-high-rate-of-lock-contentions.md)|程式碼剖析資料收集的系統效能資料指出，應用程式執行期間發生過高的鎖定爭用率。 請考慮使用並行程式碼剖析方法再次進行程式碼剖析，以尋找爭用的原因。 鎖定爭用率超過規則 DA0038 的上限臨界值時，就會引發此規則。|

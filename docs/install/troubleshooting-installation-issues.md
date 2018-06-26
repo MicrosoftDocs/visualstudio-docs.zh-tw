@@ -1,5 +1,5 @@
 ---
-title: 針對安裝問題進行疑難排解
+title: 針對 Visual Studio 2017 的安裝問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766034"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
@@ -112,4 +113,5 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
+* [將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [移除 Visual Studio 2017](remove-visual-studio.md)

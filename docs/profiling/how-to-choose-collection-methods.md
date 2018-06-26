@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765384"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 
@@ -52,7 +53,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 1. 在 [效能總管] 中，選取效能工作階段。
 
-     效能工作階段檔案名稱的副檔名為 .psess。
+     效能工作階段檔案名稱的副檔名為 .*psess*。
 
 2. 以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。
 
@@ -80,7 +81,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 6. (選擇性) 按一下 [同時收集 .NET 物件存留期的資訊]，以收集回收物件記憶體的記憶體回收層代相關資料。
 
-     如需收集 .NET 記憶體資料時可用的其他選項的詳細資訊，請參閱[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。
+     如需收集 .NET 記憶體資料時可用之其他選項的詳細資訊，請參閱[收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>使用效能工作階段屬性選取並行資料收集
 
@@ -93,5 +94,5 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 ## <a name="see-also"></a>另請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[了解取樣資料值](../profiling/understanding-sampling-data-values.md)  
+[認識取樣資料值](../profiling/understanding-sampling-data-values.md)  
 [效能工作階段屬性](../profiling/performance-session-properties.md)

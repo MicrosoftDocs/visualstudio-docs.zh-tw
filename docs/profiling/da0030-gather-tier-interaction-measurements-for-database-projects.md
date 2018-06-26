@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766190"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：蒐集資料庫專案的階層互動度量
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動度量
 |||  
 |-|-|  
 |規則 ID|DA0030|  
@@ -42,4 +43,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  此規則僅供參考，可能不需要更正措施。  
   
- 如需如何從 Visual Studio IDE 將階層互動資料加入分析資料的詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。 如需如何從命令列加入階層互動資料的詳細資訊，請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
+ 如需如何從 Visual Studio IDE 將階層互動資料新增至分析資料的資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。 如需如何從命令列新增至階層互動資料的資訊，請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。

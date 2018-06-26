@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573137"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-**VSPerfCmd.exe** 工具的用途是啟動及停止效能資料收集。 其使用下列語法：  
+*VSPerfCmd.exe* 工具的用途是啟動及停止效能資料收集。 其使用下列語法：  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- 下表說明 **VSPerfCmd.exe** 工具選項。  
+ 下表說明 *VSPerfCmd.exe* 工具選項。  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|顯示目前電腦的有效 CPU 計數器清單。|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|指定要加入設定檔標記資料的 Windows 效能計數器事件。 只能與 **Start** 搭配使用。|  
 |[AutoMark](../profiling/automark.md) **:** *n*|指定 Windows 效能計數器資料收集事件之間的時間間隔 (毫秒)。 搭配 **WinCounter** 使用。|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|控制指定的 Windows 事件追蹤 (ETW) 事件集合。 ETW 資料會收集到不是分析資料 (.vsp) 檔案的 .itl 檔案中。|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|控制指定的 Windows 事件追蹤 (ETW) 事件集合。 ETW 資料會收集到不是分析資料 (.*vsp*) 檔案的 .*itl* 檔案中。|  
 |[Status](../profiling/status.md)|顯示分析工具的狀態、目前分析的處理序資訊以及有權控制分析工具的帳戶。|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|關閉分析資料檔案並關閉分析工具。|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|在對 **VSPerfCmdGlobalOff** 進行呼叫後恢復資料收集。|  
@@ -90,7 +91,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **VSPerfCmd /Driver** 選項現已淘汰。 請對這個功能使用 **VsPerfCmdAdmin** 選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

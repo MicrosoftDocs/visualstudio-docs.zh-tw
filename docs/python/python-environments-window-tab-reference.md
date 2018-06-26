@@ -1,7 +1,7 @@
 ---
 title: Python 環境視窗參考
 description: 有關 Visual Studio [Python 環境] 視窗中所出現每個索引標籤的詳細資料。
-ms.date: 05/07/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572120"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 05/10/2018
 
 在舊版中，也標示為 "pip"。
 
-使用 pip 管理安裝在環境中的套件，讓您也能夠搜尋並安裝新的套件 (包括任何相依性)。 在 Visual Studio 2017 15.7 版及更新版本中，會改為出現使用 Conda 套件管理員的 [套件 (Conda)] 選項。 (如果您沒有看到該選項，請設定 [工具] > [選項] > [Python] > [實驗] > [Use conda package manager when available (instead of pip)] \(可用時使用 Conda 套件管理員 (而不是pip)\) 選項，然後重新啟動 Visual Studio。)
+使用 pip 管理安裝在環境中的套件，讓您也能夠搜尋並安裝新的套件 (包括任何相依性)。 在 Visual Studio 2017 15.7 版及更新版本中，會改為出現使用 Conda 套件管理員的 [套件 (Conda)] 索引標籤。 (如果您沒有看到該選項，請設定 [工具] > [選項] > [Python] > [實驗] > [Use conda package manager when available (instead of pip)] \(可用時使用 Conda 套件管理員 (而不是pip)\) 選項，然後重新啟動 Visual Studio。)
 
 已安裝的套件會和更新 (向上箭頭) 及解除安裝 (位於圓圈中的交叉) 該套件的控制項一起顯示：
 
@@ -85,11 +86,19 @@ ms.lasthandoff: 05/10/2018
 
 ![具有針對 "num" 之搜尋的 Python 環境套件索引標籤](media/environments-pip-tab.png)
 
-您也可以在搜尋方塊中直接輸入任何 `pip install` 命令，包括 `--user` 或 `--no-deps` 之類的旗標。
+您可以在上圖中看到，搜尋結果會顯示符合搜尋詞彙的套件數；不過，在清單中的第一個項目，是要直接執行 `pip install <name>` 的命令。 如果您在 [套件 (Conda)] 索引標籤上，您會改為看到 `conda install <name>`：
+
+![顯示 conda install 命令的 Conda 套件索引標籤](media/environments-conda-tab-install.png)
+
+在這兩種情況下，您可以在 [搜尋] 方塊中，在套件名稱之後新增引數來自訂安裝。 包含引數時，搜尋結果會顯示 `pip install` 或 `conda install`，後面接著搜尋方塊的內容：
+
+![使用 pip 和 conda install 命令的引數](media/environments-pip-tab-arguments.png)
 
 安裝套件時會在環境於檔案系統的 `Lib` 資料夾內建立子資料夾。 例如，如果您已在 `c:\Python36` 中安裝 Python 3.6，則會將套件安裝在 `c:\Python36\Lib` 中；如果已在 `c:\Program Files\Anaconda3` 中安裝 Anaconda3，則會將套件安裝在 `c:\Program Files\Anaconda3\Lib` 中。
 
-在後者的情況下，因為環境位於檔案系統的受保護區域 `c:\Program Files` 中，所以 Visual Studio 必須提高權限來執行 `pip install` 以允許它建立套件子資料夾。 需要提高權限時，Visual Studio 會顯示「可能需要系統管理員權限才可安裝、更新或移除此環境的套件」提示：
+### <a name="granting-administrator-privileges-for-package-install"></a>授與套件安裝用的系統管理員權限
+
+將套件安裝至位於檔案系統受保護區域的環境時，例如 `c:\Program Files\Anaconda3\Lib`，Visual Studio 必須提高權限來執行 `pip install` 以允許它建立套件子資料夾。 需要提高權限時，Visual Studio 會顯示「可能需要系統管理員權限才可安裝、更新或移除此環境的套件」提示：
 
 ![套件安裝的提高權限提示](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ ms.lasthandoff: 05/10/2018
 選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。
 
 在這個相同的選項索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](python-support-options-and-settings-in-visual-studio.md#general-options)。
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>較舊版本 Python 的安全性限制
+
+使用 Python 2.6、3.1 和 3.2 時，Visual Studio 會顯示警告「由於安全性限制，從網際網路安裝可能不適用於此版本的 Python」：
+
+![較舊版本 Python 的 pip install 限制相關訊息](media/environments-old-version-restriction.png)
+
+警告的原因是，使用這些較舊版本的 Python 時，`pip install` 未包含傳輸安全性層 (TLS) 1.2 的支援，這在從套件來源 pypi.org 下載套件時是必要的。自訂 Python 組建可能會支援 TLS 1.2，在此情況下 `pip install` 可能有效。
+
+可以從 [bootstrap.pypa.io](https://bootstrap.pypa.io/) 下載套件的適當 `get-pip.py`、從 [pypi.org](https://pypi.org/) 手動下載套件，然後從該本機複本安裝套件。
+
+不過，建議直接升級至 Python 2.7 或 3.3+，如此便不會出現警告。
 
 ## <a name="intellisense-tab"></a>IntelliSense 索引標籤
 

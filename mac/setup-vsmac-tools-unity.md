@@ -3,13 +3,14 @@ title: 設定 Visual Studio for Mac Tools for Unity
 description: 設定和安裝 Unity 工具，以便在 Visual Studio for Mac 中使用
 author: dantogno
 ms.author: v-davian
-ms.date: 07/17/2017
+ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f9a6da6c30132d6303705019919dfcad9f8cd484
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 18839ce37feb4f2a113c4a8875ce1c25ddba31e1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573267"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>設定 Visual Studio for Mac Tools for Unity
 
@@ -17,49 +18,67 @@ ms.lasthandoff: 05/23/2018
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
-下載和安裝 Visual Studio for Mac。 所有 Visual Studio for Mac 版本都支援 Visual Studio for Mac Tools for Unity，包含免費 Community Edition：
+### <a name="unity-bundled-installation"></a>Unity 配套安裝
+
+從 Unity 2018.1 開始，Visual Studio for Mac 是 Unity 的預設 C# IDE，而且包含在 Unity 下載助理，以及 Unity 中樞安裝工具中。 從 [store.unity.com](https://store.unity.com/) 下載 Unity。
+
+在安裝期間，請確定已核取要與 Unity 一起安裝之元件清單中的 Visual Studio for Mac：
+
+#### <a name="unity-hub"></a>Unity 中樞
+
+![unity 中樞安裝](media/setup-vsmac-tools-unity-image7.png)
+
+#### <a name="unity-download-assistant"></a>Unity 下載小幫手
+
+![unity 下載小幫手安裝](media/setup-vsmac-tools-unity-image8.png)
+
+#### <a name="check-for-updates-to-visual-studio-for-mac"></a>檢查 Visual Studio for Mac 的更新
+
+Unity 安裝所隨附的 Visual Studio for Mac 版本可能不是最新。 建議您檢查更新，以確保您可以存取最新工具和功能。
+
+* [更新 Visual Studio for Mac](update.md)
+
+### <a name="manual-installation"></a>手動安裝
+
+如果您已經有 Unity 5.6.1 或更新版本，但沒有 Visual Studio for Mac，可以手動安裝 Visual Studio for Mac。 所有 Visual Studio for Mac 版本都與 Visual Studio for Mac Tools for Unity 配套，包含免費 Community Edition：
 
 * 從 [visualstudio.com](https://www.visualstudio.com/) 下載 Visual Studio for Mac。
 * 在安裝程序期間，會自動安裝 Visual Studio for Mac Tools for Unity。
 * 如需其他安裝說明，請遵循[安裝指南](installation.md)中的步驟。
 
+> [!NOTE]
+> Visual Studio for Mac Tools for Unity 需要 Unity 版本 5.6.1 或更新版本。 若要確認 Unity 版本中已啟用 Visual Studio Tools for Unity，請從 Unity 功能表中選取 [About Unity] (關於 Unity) 功能表，並在對話方塊左下方尋找「已啟用 Microsoft Visual Studio Tools for Unity」文字。
+>
+> ![關於 Unity](media/setup-vsmac-tools-unity-image3.png)
+
 ## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>確認已啟用 Visual Studio for Mac Tools for Unity 延伸模組
 
 預設應該啟用 Visual Studio for Mac Tools for Unity 延伸模組時，您可以進行這項確認，並檢查已安裝的版本號碼：
 
-1.  從 Visual Studio 功能表中，選取 [延伸模組]。
+1. 從 Visual Studio 功能表中，選取 [延伸模組]。
 
   ![選取 [延伸模組]](media/setup-vsmac-tools-unity-image1.png)
 
-2.  展開 [遊戲開發] 區段，並確認 Visual Studio for Mac Tools for Unity 項目。
+1. 展開 [遊戲開發] 區段，並確認 Visual Studio for Mac Tools for Unity 項目。
 
   ![檢視 Unity 項目](media/setup-vsmac-tools-unity-image2.png)
 
-## <a name="install-unity"></a>安裝 Unity
-
-Visual Studio for Mac Tools for Unity 需要 Unity 版本 5.6.1 或更新版本。 所有 Unity 計劃都會使用 Visual Studio Tools for Unity，包含免費的個人計劃。 從 [store.unity.com](https://store.unity.com/) 下載 Unity。
-
-> [!NOTE]
-> 若要確認 Unity 版本中已啟用 Visual Studio Tools for Unity，請從 Unity 功能表中選取 [About Unity] (關於 Unity) 功能表，並在對話方塊左下方尋找「已啟用 Microsoft Visual Studio Tools for Unity」文字。
->
->   ![關於 Unity](media/setup-vsmac-tools-unity-image3.png)
-
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>設定 Unity 以與 Visual Studio for Mac 搭配使用
 
-Visual Studio 必須設定為 Unity 中的外部指令碼編輯器：
+從 Unity 2018.1 開始，Visual Studio 應該是 Unity 中的預設外部指令碼編輯器。 您可以確認這一點，或將外部指令碼編輯器變更為 Visual Studio：
 
-1.  從 Unity 功能表中，選取 [喜好設定]。
+1. 從 Unity 功能表中，選取 [喜好設定]。
 
   ![選取 [喜好設定]](media/setup-vsmac-tools-unity-image4.png)
 
-2.  在 [喜好設定] 對話方塊中，選取 [外部工具] 索引標籤。
+1. 在 [喜好設定] 對話方塊中，選取 [外部工具] 索引標籤。
 
-3.  從 [External Script Editor] (外部指令碼編輯器) 下拉式清單中，選擇列出的 [Visual Studio]，否則請選取 [瀏覽...]。
+1. 從 [External Script Editor] (外部指令碼編輯器) 下拉式清單中，選擇列出的 [Visual Studio]，否則請選取 [瀏覽...]。
 
   ![選取 [Visual Studio]](media/setup-vsmac-tools-unity-image5.png)
 
-4.  如果已選取 [瀏覽...]，請巡覽至 [應用程式] 目錄，並選取 [Visual Studio]，然後按一下 [開啟]。
+1. 如果已選取 [瀏覽...]，請巡覽至 [應用程式] 目錄，並選取 [Visual Studio]，然後按一下 [開啟]。
 
   ![選取 [開啟]](media/setup-vsmac-tools-unity-image6.png)
 
-5.  在 [External Script Editor] (外部指令碼編輯器) 清單中選取 Visual Studio 之後，請關閉 [喜好設定] 對話方塊，以完成設定程序。
+1. 在 [External Script Editor] (外部指令碼編輯器) 清單中選取 Visual Studio 之後，請關閉 [喜好設定] 對話方塊，以完成設定程序。

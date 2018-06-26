@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572972"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
@@ -30,9 +31,9 @@ ms.lasthandoff: 05/22/2018
   
  Visual Studio 分析工具可讓您限制資料收集。 本逐步解說所提供的範例說明如何使用分析工具 API 來限制資料收集。 Visual Studio 分析工具提供用於控制應用程式內資料收集的 API。  
   
- 針對原生程式碼，Visual Studio 分析工具 API 位在 VSPerf.dll 中。 標頭檔 (VSPerf.h) 和匯入程式庫 (VSPerf.lib) 位在 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中。  
+ 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中。  
   
- 針對受控碼，分析工具 API 位在 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位在 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。  
+ 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 此 DLL 位在 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。  
   
 ## <a name="prerequisites"></a>必要條件  
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。  
   
     > [!NOTE]
-    >  您的組建必須參考 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中的 Microsoft.VisualStudio.Profiler.dll 程式庫。  
+    >  您的組建必須參考 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中的 *Microsoft.VisualStudio.Profiler.dll* 程式庫。  
   
 2.  複製下列程式碼，並將其貼入專案中：  
   
@@ -157,10 +158,10 @@ DataCollection.CurrentId);
   
 8.  鍵入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**  
   
-     在目前目錄中，會使用產生的效能資料來建立 .csv 檔案。  
+     在目前目錄中，會使用產生的效能資料來建立 .*csv* 檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [使用者入門](../profiling/getting-started-with-performance-tools.md)   
- [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

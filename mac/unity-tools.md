@@ -3,27 +3,30 @@ title: Visual Studio for Mac Tools for Unity
 description: 隆重介紹 Visual Studio Tools for Unity 延伸模組
 author: dantogno
 ms.author: v-davian
-ms.date: 07/17/2017
+ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: f80debf3098fd8296ddfa205db3ed296707e23c0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572413"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![Unity 和 Visual Studio for Mac 的樣式化圖](media/vsmac-tools-unity-image1.png)
 
-Visual Studio for Mac Tools for Unity 是一種免費的 Visual Studio 延伸模組，可將 Visual Studio for Mac 轉換為使用 Unity 平台開發跨平台遊戲和應用程式的功能強大工具。
+Visual Studio for Mac Tools for Unity 是一種免費的 Visual Studio 延伸模組，可將 Visual Studio for Mac 轉換為使用 Unity 平台開發跨平台遊戲和應用程式的功能強大工具。 
 
-## <a name="overview"></a>總覽 
+Unity 整合現成包含在 Visual Studio for Mac，且從 Unity 2018.1 開始，Visual Studio for Mac 是 Unity 專案的預設 C# IDE。
+
+## <a name="overview"></a>總覽
 
 以下是 Visual Studio for Mac Tools for Unity 的一些主要功能：
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>與 Visual Studio for Mac Community Edition 相容
 
-免費提供 [Visual Studio for Mac Community Edition](https://www.visualstudio.com/)。
+[Visual Studio for Mac 社群版本](https://www.visualstudio.com/)可供免費使用，並從 Unity 2018.1 開始與 Unity 安裝搭配。 請參閱 Visual Studio for Mac Tools for Unity [設定文件](setup-vsmac-tools-unity.md)，以取得詳細資訊。
 
 ### <a name="intellisense-for-unity-messages"></a>Unity 訊息的 IntelliSense
 
@@ -33,13 +36,10 @@ IntelliSense 可快速且輕鬆地[實作 Unity 訊息](using-vsmac-tools-unity.
 
 Visual Studio for Mac Tools for Unity 支援預期從 Visual Studio 取得的所有[偵錯](using-vsmac-tools-unity.md#unity-debugging)功能：
 
-*   設定中斷點，包含條件式中斷點。
-
-*   在監看式視窗中評估複雜的運算式。
-
-*   檢查及修改變數和引數的值。
-
-*   向下切入至複雜的物件和資料結構。
+* 設定中斷點，包含條件式中斷點。
+* 在監看式視窗中評估複雜的運算式。
+* 檢查及修改變數和引數的值。
+* 向下切入至複雜的物件和資料結構。
 
 ### <a name="powerful-refactoring-and-context-actions"></a>功能強大的重構和內容動作
 

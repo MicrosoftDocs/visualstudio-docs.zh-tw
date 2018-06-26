@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765696"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。  
@@ -47,8 +48,8 @@ ms.lasthandoff: 04/19/2018
   
  在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。  
   
-### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉 Managed 程式碼的程式行層級取樣  
- 程式行層級取樣預設為開啟。 您可以執行下列其中一項動作以關閉 Managed 程式碼的程式行層級資料收集︰  
+### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉受控程式碼的程式行層級取樣  
+ 程式行層級取樣預設為開啟。 您可以執行下列其中一個命令，以關閉受控程式碼的程式行層級資料收集：  
   
 -   在進行程式碼剖析之前，輸入 **VSPerfCLREnv /samplelineoff**。 這會影響應用程式和服務。  
   
@@ -56,6 +57,6 @@ ms.lasthandoff: 04/19/2018
   
 -   啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>**。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
