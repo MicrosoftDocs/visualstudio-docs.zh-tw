@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691182"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](http://go.microsoft.com/fwlink/?LinkId=235405)。  
@@ -120,7 +121,7 @@ ms.lasthandoff: 05/14/2018
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>相關主題  
+## <a name="see-also"></a>另請參閱  
   
 |標題|描述|  
 |-----------|-----------------|  

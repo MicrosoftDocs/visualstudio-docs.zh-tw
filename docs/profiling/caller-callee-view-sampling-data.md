@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e964ec877b791fc3058068e2f89706cc5826e0f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335966"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548706"
 ---
-# <a name="caller--callee-view---sampling-data"></a>呼叫端/被呼叫端檢視 - 取樣資料
+# <a name="callercallee-view---sampling-data"></a>呼叫端/被呼叫端檢視 - 取樣資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。  
   
  **目前的函式**會顯示在中間方格中，顯示所選取函式的分析資訊。 這些值包括對函式的所有取樣呼叫。  

@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750330"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教學課程步驟 3：提供靜態檔案、加入頁面，以及使用範本繼承
 
 **上一個步驟：[使用檢視與頁面範本來建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁組成，並且使用如 CSS 和 JavaScript 等共用資源與檔案來提供一致的樣式和行為。
+在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁組成，並且使用如 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
 在這個步驟中，您將了解如何：
 
@@ -40,8 +41,6 @@ ms.lasthandoff: 05/04/2018
 ![Visual Studio 中的加入新項目對話方塊](media/django/step03-add-new-item-dialog.png)
 
 若要使用範本，請選取所需的範本、指定檔案名稱，然後選取 [確定]。 以這種方式加入項目，會將檔案自動加入您的 Visual Studio 專案，並為原始檔控制標記變更。
-
-Visual Studio 也會將一些常用選項直接加入 [加入] 功能表。 例如，在 Python 專案中，您可能會在 [加入] 功能表底部看到 [HTML 頁面] 或 [樣式表] 命令。這些命令會提示您輸入名稱並建立檔案。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
@@ -187,7 +186,7 @@ Django 的範本化系統提供兩個方法，可跨多個範本重複使用特�
 
 下列步驟將示範繼承：
 
-1. 在應用程式的 `templates/HelloDjangoApp` 資料夾中，建立新的 HTML 檔案 (使用 [加入] > [新項目] 操作功能表或 [加入] > [HTML 網頁]) 並命名為 `layout.html`，然後貼上下列內容。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
+1. 在應用程式的 `templates/HelloDjangoApp` 資料夾中，建立新的 HTML 檔案 (使用 [新增] > [新增項目] 操作功能表或 [新增] > [HTML 網頁]) 並命名為 `layout.html`，然後將它取代為下列標記。 您可以看到此範本包含一個名為 "content" (內容) 的區塊，這是參考頁面必須全部取代的部分：
 
     ```html
     <!DOCTYPE html>

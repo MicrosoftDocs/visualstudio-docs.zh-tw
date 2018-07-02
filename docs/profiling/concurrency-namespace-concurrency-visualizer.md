@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548134"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
 `Concurrency` 命名空間提供可讓您存取並行執行階段 (C++ 的並行程式設計架構) 的類別和函式。 如需詳細資訊，請參閱[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。  
@@ -40,5 +41,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>需求  
  **標頭：** cvmarkersobj.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C 程式庫參考](../profiling/c-library-reference.md)

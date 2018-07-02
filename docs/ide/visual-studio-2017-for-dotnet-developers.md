@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748747"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017 生產力指南
 
@@ -88,7 +89,7 @@ Visual Studio 2017 提供許多重構、程式碼產生動作，以及程式碼�
   - [ Visual Studio 的 SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Visual Studio 中的重構](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Visual Studio 中的重構](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>我需要尋找使用方式、移至實作、巡覽至反向編譯的組件
 Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底。 深入了解[程式碼巡覽功能](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Visual Studio 2017 有許多功能，可協助您搜尋和瀏覽程式碼基底�
 - [倒退](../debugger/how-to-use-intellitrace-step-back.md)偵錯讓您可以回溯到前面的中斷點或步驟，以檢視應用程式過去的狀態。
 - [快照集偵錯](/azure/application-insights/app-insights-snapshot-debugger)可讓您調查即時 Web 應用程式在例外狀況擲回時的狀態 (必須在 Azure 上)。
 
-![VS2017 中新的例外狀況協助程式](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![VS2017 中的新例外狀況協助程式](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在我的專案中使用版本控制。
 您可以使用 Git 或 TFVC 來儲存及更新您在 Visual Studio 中的程式碼。

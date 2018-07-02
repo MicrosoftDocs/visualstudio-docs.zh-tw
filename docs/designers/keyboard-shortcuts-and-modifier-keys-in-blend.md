@@ -1,6 +1,7 @@
 ---
 title: Blend 中的鍵盤快速鍵和輔助按鍵
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd5299a9384e672f00150997ee4310de6c3282c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747413"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 鍵盤快速鍵可將需要點擊多次滑鼠按鈕的動作縮減為單一鍵盤快速鍵，以加速您的作業。 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中鍵盤快速鍵可分為下列兩種分類：
@@ -22,13 +24,13 @@ ms.lasthandoff: 04/19/2018
 
      若要使用便捷鍵，請先按 ALT 或 F10 以顯示底線，然後再按特定功能表或對話方塊項目的對應字母。 您也可以使用 TAB 鍵或方向鍵來瀏覽功能表或對話方塊。 例如，如果在 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 中按 ALT，[檔案] 功能表的 **F** 字母下方會出現底線以識別為便捷鍵。 若要開啟專案，您可以按住 ALT、按 F，然後再按 O。
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") 按 ALT 後出現加底線的便捷鍵
+     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) 按 ALT 後出現加底線的便捷鍵
 
 -   **快速鍵**：您可以按鍵盤快速鍵以使用快速鍵來執行動作 (例如，選取功能表命令或修改工具的行為)。
 
      [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面中的鍵盤快速鍵大多很容易識別；它們會顯示在功能表命令的右邊。 例如，在 [檔案] 功能表上，[開啟專案] 功能表命令即包含鍵盤快速鍵 CTRL+SHIFT+O。 若要查看 [工具] 面板中某個工具的快速鍵，請將指標停留在該工具上方。
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") 有捷徑的功能表項目旁邊會顯示快速鍵
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) 有捷徑的功能表項目旁邊會顯示快速鍵
 
  如需協助工具和功能的詳細資訊，請參閱 [Accessibility at Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069) (Microsoft 協助工具)。
 

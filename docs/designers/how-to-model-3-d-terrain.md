@@ -1,6 +1,7 @@
 ---
 title: 如何：建立 3D 地形模型
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3108ff6c04ccae459e977601446d3d16efa8ebfa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745574"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
 
@@ -25,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 當您完成時，結果應該像這樣：
 
-![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png)
 
 開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
@@ -51,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 
 完成地形模型。 以下顯示套用 Phong 網底的最終模型︰
 
-![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png)
 
 您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述。
 

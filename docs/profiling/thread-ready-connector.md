@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fbb4138c03f613e6e0d6fd1c07f7e759d07700
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476647"
 ---
 # <a name="thread-ready-connector"></a>執行緒就緒連接器
 當您按一下封鎖區段查看呼叫堆疊及其解除封鎖堆疊時，可能也會顯示執行緒就緒連接器。 如果解除封鎖事件發生在目前處理序中的另一個執行緒上，則執行緒就緒連接器會以視覺化方式識別讓封鎖的執行緒繼續執行的執行緒及執行區段。

@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751711"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 
@@ -45,11 +46,11 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 6.  保留選取 [ **為方案建立目錄** ] 選項，並選擇 [ **確定** ] 按鈕。
 
-     ![量身打造的單元測試程式庫](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![量身打造的單元測試程式庫](../test/media/unit_test_win8_1.png)
 
      您的 UWP 單元測試專案隨即填入 [方案總管] 中，並且程式碼編輯器中會顯示預設的單元測試標題 - UnitTest1。
 
-     ![量身打造的新單元測試專案](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![新量身打造的單元測試專案](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>編輯單元測試專案的 UWP 應用程式資訊清單檔
 
@@ -99,7 +100,7 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
     >
     > 此外，您可以選擇 [ **偵錯選取的測試**]、[ **開啟測試**]，並使用 [ **屬性** ] 選項。
     >
-    > ![單元測試總管 &#45; 單元測試內容功能表](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![[單元測試總管] &#45; 單元測試操作功能表](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     單元測試隨即執行。 完成時，[測試總管] 會顯示測試狀態、耗用時間並提供來源連結。
 

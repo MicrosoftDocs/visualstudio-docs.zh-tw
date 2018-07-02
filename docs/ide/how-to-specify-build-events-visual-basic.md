@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746204"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
 
@@ -128,7 +129,7 @@ ms.lasthandoff: 05/07/2018
 
 1.  針對要發行的專案，建立 Windows 應用程式。 從 [檔案] 功能表中，依序按一下 [新增] 和 [專案]。
 
-2.  在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows 傳統桌面] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `VBWinApp`。
+2.  在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows 桌面] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `VBWinApp`。
 3.  選取方案總管中的專案，然後按一下 [專案] 功能表中的 [屬性]。
 
 4.  在**專案設計工具**中，移至 [發行] 頁面，然後將 [發行位置] 設為 *C:\TEMP*。

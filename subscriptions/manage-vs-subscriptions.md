@@ -9,11 +9,12 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548719"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -77,15 +78,15 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 - Microsoft 市集：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。 
 - 大量授權：如果您的公司是透過大量授權購買訂閱，則應該由系統管理員連絡轉銷商以更新您的訂閱。
 
-**雲端訂用帳戶：**雲端訂用帳戶不需要續約。  只要訂閱已付費，即持續有效。 
+**雲端訂用帳戶：** 雲端訂用帳戶不需要續約。  只要訂閱已付費，即持續有效。 
 
-**透過方案取得的訂用帳戶：**如果您是透過方案取得訂用帳戶，則該訂用帳戶會繫結至您參與的方案。  如需詳細資訊，請聯繫您的方案連絡人。 
+**透過方案取得的訂用帳戶：** 如果您是透過方案取得訂用帳戶，則該訂用帳戶會繫結至您參與的方案。  如需詳細資訊，請聯繫您的方案連絡人。 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 合作夥伴網路](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials：**Dev Essentials 是免費的程式，因此成員資格不會過期。  
+**Visual Studio Dev Essentials：** Dev Essentials 是免費的程式，因此成員資格不會過期。  
 
 ## <a name="transferring-subscriptions"></a>轉移訂閱
 如果您的訂閱是透過 Microsoft 大量授權購買而得，但您要將訂閱重新指派給組織內的其他人員，則必須交由系統管理員來處理。 您可以連絡客戶服務中心，以將零售訂閱轉移給其他使用者。  免費或「禁止轉售」訂閱則無法轉移。 
@@ -118,3 +119,21 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 ![其他帳戶](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。  
+
+## <a name="frequently-asked-questions"></a>常見問題集   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>問：如果我未更新訂閱，Microsoft 會保留我的資料多久？
+答：根據購買管道，Microsoft 維護客戶資料的時間長度不一。
+
+| 通道                                                | 持續時間 (天數) |
+|--------------------------------------------------------|-----------------|
+|    零售 (例如透過 Microsoft Store)               |    360          |
+|    大量授權服務中心 (VLSC)              |    180          |
+|    Microsoft 產品和服務合約 (MPSA)    |    180          |
+|    Visual Studio 雲端訂閱                   |    180          |
+|    程式 (例如 MCT、BizSpark、MPN、Imagine)          |    180          |
+|    禁止轉售 (例如 MVP、MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - 如果您選擇關閉 Microsoft 帳戶或 Azure AD，則會立即匿名您的個人資料。  
+> - 如果您有使用中的訂閱，則不會完全移除您的個人資料。 

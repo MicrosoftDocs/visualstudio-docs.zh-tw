@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750359"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>教學課程步驟 4：使用完整的 Django Web 專案範本
 
 **上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-您已透過 Visual Studio 的「空白 Django 應用程式專案」範本來建置應用程式，因而探索了 Django 的基本知識，現在就可以輕鬆地了解由「Django Web 專案」範本所產生較完整的應用程式。
+您已透過 Visual Studio 的「空白 Django Web 專案」範本來建置應用程式，因而探索 Django 的基本知識，現在就可以輕鬆地了解由「Django Web 專案」範本所產生的較完整應用程式。
 
 現在在這個步驟中，您將要：
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/04/2018
 
 1. 由於該範本再次包含了 `requirements.txt` 檔案，因此 Visual Studio 會詢問要在何處安裝這些相依性。 選擇 [安裝至虛擬環境] 選項，然後在 [新增虛擬環境] 對話方塊中，選取 [建立] 並接受預設值。
 
-1. Python 設定好虛擬環境後，請遵照所顯示 `readme.html` 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只要以滑鼠右鍵按一下 Visual Studio 專案，並選取 [Python] > [Django 建立進階使用者] 命令，然後遵照提示進行。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
+1. Visual Studio 設定好虛擬環境後，請遵循所顯示 `readme.html` 中的指示來建立 Django 進階使用者 (也就是系統管理員)。 只要以滑鼠右鍵按一下 Visual Studio 專案，並選取 [Python] > [Django 建立進階使用者] 命令，然後遵照提示進行。 請務必記下您的使用者名稱和密碼，因為當您執行應用程式的驗證功能時會用到。
 
 1. 您可以在 [方案總管] 中的 "DjangoWeb" 專案上按一下滑鼠右鍵，然後選取 [設定為啟始專案]，即可將該專案設定為 Visual Studio 的預設專案。 以粗體字型顯示的起始專案，會在您啟動偵錯工具時執行。
 

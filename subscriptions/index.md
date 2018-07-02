@@ -1,26 +1,28 @@
 ---
 title: Visual Studio 訂閱
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327186"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946922"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
+
 Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。  訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。
 
-##  <a name="get-started"></a>開始使用
+## <a name="get-started"></a>開始使用
+
 系統管理員請登入 [https://manage.visualstudio.com](https://manage.visualstudio.com) 以指派訂用帳戶給您的小組。<br>
 訂閱者請登入 [https://my.visualstudio.com](https://my.visualstudio.com) 來存取您的訂用帳戶權益。
 
@@ -134,6 +136,12 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>新功能
+
+為了讓訂用帳戶更加實用，我們會時常新增及更新訂用帳戶權益。 若要深入了解，請參閱[訂用帳戶中的新功能](whats-new-in-subscriptions.md)頁面。
 
 ---
 

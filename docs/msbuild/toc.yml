@@ -84,6 +84,8 @@
               items:
                 - name: 逐步解說：建立內嵌工作
                   href: walkthrough-creating-an-inline-task.md
+            - name: 具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
+              href: msbuild-roslyncodetaskfactory.md
         - name: 比較屬性和項目
           href: comparing-properties-and-items.md
         - name: MSBuild 特殊字元
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete 工作
               href: delete-task.md
+            - name: DownloadFile 工作
+              href: downloadfile-task.md
             - name: Error 工作
               href: error-task.md
             - name: Exec 工作
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly 工作
               href: unregisterassembly-task.md
+            - name: Unzip 工作
+              href: unzip-task.md
             - name: UpdateManifest 工作
               href: updatemanifest-task.md
             - name: Vbc 工作
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation 工作
               href: xsltransformation-task.md
+            - name: ZipDirectory 工作
+              href: zipdirectory-task.md
         - name: MSBuild 條件
           href: msbuild-conditions.md
         - name: MSBuild 條件式建構

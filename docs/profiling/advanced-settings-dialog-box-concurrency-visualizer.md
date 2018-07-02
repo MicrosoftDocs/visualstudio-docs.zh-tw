@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690789"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
@@ -25,9 +26,9 @@ ms.lasthandoff: 05/17/2018
  並行視覺化檢視會使用與 Visual Studio 偵錯工具相同的符號設定。 並行視覺化檢視會使用設定，來解析與效能資料相關聯的呼叫堆疊。  並行視覺化檢視會在處理追蹤時，存取設定頁面中所指定的符號伺服器。  透過網路存取此資料時，追蹤處理速度就會變慢。  若要降低解析符號所需的時間量，您可以本機快取符號。 如果已經下載符號，Visual Studio 將從本機快取中載入它們。  
   
 ## <a name="just-my-code"></a>Just My Code  
- 根據預設，Just My Code 是 Visual Studio 中一組與目前方案相關聯的 .exe 和 .dll 檔案。 當您使用 Just My Code 功能來篩選呼叫堆疊時，並行視覺化檢視就會評估這組檔案。 在 [Just My Code] 索引標籤中，您可以將包含 .exe 和 .dll 檔案的目錄加入至並行視覺化檢視針對 Just My Code 所使用的位置。  
+ 根據預設，Just My Code 是 Visual Studio 中一組與目前方案建立關聯的 .*exe* 和 .*dll* 檔案。 當您使用 Just My Code 功能來篩選呼叫堆疊時，並行視覺化檢視就會評估這組檔案。 在 [Just My Code] 索引標籤中，您可以將包含 .*exe* 和 .*dll* 檔案的目錄新增至並行視覺化檢視針對 Just My Code 所使用的位置。  
   
- 在收集追蹤時，會將 .exe 和 .dll 檔案的路徑儲存於追蹤檔中。  變更此設定不會影響任何先前收集的追蹤。  
+ 在收集追蹤時，會將 .*exe* 和 .*dll* 檔案的路徑儲存於追蹤檔案中。  變更此設定不會影響任何先前收集的追蹤。  
   
 ## <a name="buffering"></a>緩衝  
  並行視覺化檢視會在收集追蹤時，使用Windows 事件追蹤 (ETW)。  ETW 會在儲存事件時使用各種緩衝區。  預設的 ETW 緩衝區設定並非適用所有案例，在某些情況下，可能會導致像是遺失事件等問題。  您可以使用 [緩衝] 索引標籤來設定 ETW 緩衝區設定。 如需詳細資訊，請參閱[事件追蹤](http://go.microsoft.com/fwlink/?LinkId=234579)和 [EVENT_TRACE_PROPERTIES 結構 (英文)](http://go.microsoft.com/fwlink/?LinkId=234580)。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="markers"></a>Markers  
  在 [標記] 索引標籤中，您可以設定一組 ETW 提供者，以便在並行視覺化檢視中顯示為標記。  您也可以根據重要性層級和 ETW 類別來篩選標記集合。  如果您使用[並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md) 並使用您自己的標記提供者，則可在此處註冊該提供者，讓它能夠出現在 [執行緒] 檢視中。  
   
-### <a name="adding-a-new-provider"></a>加入新的提供者  
+### <a name="add-a-new-provider"></a>新增新的提供者  
  如果您的程式碼使用[並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md) 或遵循 <xref:System.Diagnostics.Tracing.EventSource> 慣例產生 ETW 事件，您可以在這個對話方塊中註冊這些事件，藉以在並行視覺化檢視中檢視它們。  
   
  在 [名稱] 欄位中，輸入描述提供者所產生之事件類型的名稱。  在 [GUID] 欄位中，輸入與此提供者相關聯的 GUID (GUID 會與每個 ETW 提供者產生關聯)。  
@@ -74,13 +75,13 @@ ms.lasthandoff: 05/17/2018
 ## <a name="files"></a>檔案  
  在 [檔案] 索引標籤上，您可以指定每次收集追蹤時要儲存追蹤檔的目錄。  並行視覺化檢視會針對它所收集的每個追蹤產生四個檔案：  
   
--   核心模式的事件追蹤記錄 (ETL) 檔案 (*.kernel.etl)  
+-   核心模式的事件追蹤記錄 (ETL) 檔案 (*.* kernel.etl*)  
   
--   使用者模式的事件追蹤記錄檔案 (*.user.etl)  
+-   使用者模式的事件追蹤記錄檔案 (*.* user.etl*)  
   
--   並行視覺化檢視的資料檔案 (*.CVData)  
+-   並行視覺化檢視的資料檔案 (*.* CVData*)  
   
--   並行視覺化檢視的追蹤檔案 (*.CVTrace)  
+-   並行視覺化檢視的追蹤檔案 (*.* CVTrace*)  
   
  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
   

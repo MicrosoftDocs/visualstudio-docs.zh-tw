@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748227"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 若要起始**新增 using** 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作] 叫用**新增 using**。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]。
 
-![加入 using，快速動作展開的影像](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
 按一下燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
 
@@ -143,11 +144,11 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 當您在 *.cs* 檔案的事件欄位後面鍵入 `+=` 運算子時，IntelliSense 會提示您按 **Tab** 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。
 
-![按鈕自動連結](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![按鈕自動連結](../ide/media/vxautohookup.gif)
 
 如果按 **Tab** 鍵，IntelliSense 會自動為您完成陳述式，並在程式碼編輯器中將事件處理常式參考顯示為選取的文字。 若要完成自動事件連結，IntelliSense 會提示您再次按 **Tab** 鍵，為事件處理常式建立空白的虛設常式。
 
-![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > 如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。

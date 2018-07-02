@@ -1,6 +1,7 @@
 ---
 title: 如何：建立以幾何為基礎的漸層著色器
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b386e3a607101774d755d8673e76557b0ef66ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745772"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
 
@@ -48,13 +50,13 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 在本圖例中，指定橘色以更適當展現著色器效果，但因為世界空間中尚無預覽圖形的位置，而無法在著色器設計工具中完整預覽著色器。 著色器必須在實際場景中預覽，才能呈現完整的效果。
 
- ![著色器圖形和其效果預覽](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![著色器圖形及其效果預覽](../designers/media/digit-gradient-effect-graph.png)
 
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞
 
  下圖顯示本文件中所述的著色器，套用至[如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)中所示的 3D 場景。 色彩濃度會隨著世界空間的點高度增加。
 
- ![已套用至 3D 地形模型的漸層效果](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![已套用至 3D 地形模型的漸層效果](../designers/media/digit-gradient-effect-result.png)
 
  如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 

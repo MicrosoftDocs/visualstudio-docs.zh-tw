@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747114"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 在此圖中，指定橘色以更適當展現著色器的效果。
 
-![3D 模型上的著色器圖形及其結果](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![3D 模型上的著色器圖形及其結果](../designers/media/digit-flat-color-effect.png)
 
 某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)。
 

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6f293633bb64b06f5374a21fbc9382d58b0bc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5a5982fd194f86d2cfe2b63a564c0ce1ce90f8a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749823"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 |||  

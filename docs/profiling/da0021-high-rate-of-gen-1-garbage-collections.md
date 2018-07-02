@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5602563c9d9cea9f1500c95f9a7df38a3f4184e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4fe9c0557b7bc7ce366f2652e83b671ba813db69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750060"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 |||  

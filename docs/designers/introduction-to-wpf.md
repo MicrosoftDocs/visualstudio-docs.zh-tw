@@ -1,6 +1,7 @@
 ---
 title: WPF 簡介
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
@@ -12,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 96855f9050eda640b0f5dc9c44dbc67a3ec6b328
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747277"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 
@@ -66,7 +68,7 @@ XAML 是以宣告方式來實作應用程式外觀所用的 XML 標記語言。 
 
  下圖顯示上述範例中 XAML 所定義的使用者介面 (UI)。
 
- ![包含按鈕的視窗](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![包含按鈕的視窗](../designers/media/wpfintrofigure10.png)
 
  由於 XAML 是以 XML 為基礎，您以此撰寫的 UI 會組合成巢狀項目階層架構，稱為 [項目樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 項目樹狀結構提供一個邏輯和直覺方式來建立及管理 UI。
 
@@ -299,7 +301,7 @@ WPF 提供的 2D 圖形涵蓋一組標準的基本圖形。 不過，您可能�
 
 <xref:System.Windows.Media.Geometry> 物件可用來裁剪、叫用測試及轉譯 2D 圖表資料。
 
-![Path 的各種用法](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Path 的各種用法](../designers/media/wpfintrofigure5.png)
 
 如需詳細資訊，請參閱[幾何概觀](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。
 
@@ -307,7 +309,7 @@ WPF 提供的 2D 圖形涵蓋一組標準的基本圖形。 不過，您可能�
 
 WPF 2D 功能子集包含漸層、點陣圖、繪圖、利用視訊繪製、旋轉、縮放和傾斜等視覺效果。 這些全部可用筆刷來完成；下圖顯示一些範例。
 
-![不同筆刷的圖例](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![不同筆刷的圖例](../designers/media/wpfintrofigure6.png)
 
 如需詳細資訊，請參閱 [WPF 筆刷概觀](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview)。
 
@@ -315,7 +317,7 @@ WPF 2D 功能子集包含漸層、點陣圖、繪圖、利用視訊繪製、旋�
 
 WPF 也包含可與 2D 圖形互動的 3D 轉譯功能，以便建立更生動有趣的使用者介面。 例如，下圖顯示轉譯成 3D 圖形的 2D 影像。
 
-![Visual3D 範例螢幕擷取畫面](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Visual3D 範例螢幕擷取畫面](../designers/media/wpfintrofigure13.png)
 
 如需詳細資訊，請參閱 [3D 圖形診斷](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview)。
 
@@ -323,7 +325,7 @@ WPF 也包含可與 2D 圖形互動的 3D 轉譯功能，以便建立更生動�
 
 WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，以建立有趣的網頁切換及執行其他工作。 您可以建立大多數 WPF 類別的動畫，甚至是自訂類別。 下圖顯示執行中的簡單動畫。
 
-![動畫效果立方體的影像](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![立方體動畫的影像](../designers/media/wpfintrofigure7.png)
 
 如需詳細資訊，請參閱 [動畫概觀](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
 
@@ -335,7 +337,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 影像是大多數應用程式的共通功能，WPF 提供數種方式來使用影像。 下圖顯示具有包含縮圖影像之清單方塊的使用者介面。 選取縮圖時，會顯示完整大小的影像。
 
-![縮圖影像與完整大小影像](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![縮圖影像與完整影像](../designers/media/wpfintrofigure8.png)
 
 如需詳細資訊，請參閱 [影像處理概觀](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
 
@@ -347,7 +349,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 下圖中的視窗顯示執行中的 <xref:System.Windows.Controls.MediaElement> 控制項。
 
-![具有音訊與視訊的 MediaElement 控制項](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![具有音訊與視訊的 MediaElement 控制項](../designers/media/wpfintrofigure1.png)
 
 如需詳細資訊，請參閱[圖形和多媒體](/dotnet/framework/wpf/graphics-multimedia)。
 
@@ -396,7 +398,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 其結果如下圖所示。
 
-![包含文字的 TextBox 控制項](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![包含文字的 TextBox 控制項](../designers/media/wpfintrofigure21.png)
 
 不過，其他控制項可能包含不同內容類型的多個項目； <xref:System.Windows.Controls.Button>屬性所指定的 <xref:System.Windows.Controls.ContentControl.Content%2A> 內容可包含各種項目，包括版面配置控制項、文字、影像和圖案。 下列範例示範具有內含 <xref:System.Windows.Controls.Button> 、 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Label>和 <xref:System.Windows.Controls.Border>之內容的 <xref:System.Windows.Controls.MediaElement>。
 
@@ -422,7 +424,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 下圖顯示這個按鈕的內容。
 
-![包含多種類型內容的按鈕](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![包含多種類型內容的按鈕](../designers/media/wpfintrofigure22.png)
 
 如需各種控制項所支援之內容類型的詳細資訊，請參閱 [WPF 內容模型](/dotnet/framework/wpf/controls/wpf-content-model)。
 
@@ -451,7 +453,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 控制項範本可讓您指定控制項的外觀，而資料範本則可讓您指定控制項內容的外觀。 資料範本通常可用來增強繫結資料的顯示方式。 下圖顯示繫結至 <xref:System.Windows.Controls.ListBox> 物件集合之 `Task` 的預設外觀，其中每項工作都有名稱、描述和優先權。
 
-![具有預設外觀的清單方塊](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![具有預設外觀的清單方塊](../designers/media/wpfintrofigure18.png)
 
 預設外觀是您可預期的 <xref:System.Windows.Controls.ListBox>外觀。 不過，每項工作的預設外觀只包含工作名稱。 若要顯示工作名稱、描述和優先權，則必須使用 <xref:System.Windows.Controls.ListBox> 變更 <xref:System.Windows.DataTemplate>控制項之繫結清單項目的預設外觀。 下列 XAML 會定義此 <xref:System.Windows.DataTemplate>，您可以使用 <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> 屬性將其套用至每項工作。
 
@@ -648,7 +650,7 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
  下圖顯示 `NumericUpDown` 中所裝載的 <xref:System.Windows.Window>控制項。
 
- ![自訂使用者控制項](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![自訂 UserControl](../designers/media/wpfintrofigure3.png)
 
 如需自訂控制項的詳細資訊，請參閱 [控制項撰寫概觀](/dotnet/framework/wpf/controls/control-authoring-overview)。
 

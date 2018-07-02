@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751672"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
 
-7.  按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤圖像 (![Smart Tag Glyph](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) 並遵循下列步驟進行：
+7.  按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
 
     1.  選擇 [停駐於父容器中]。
 

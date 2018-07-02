@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750281"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
 
@@ -32,7 +33,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
-2. 在 [Visual C#] 或 [Visual Basic] 下方，選擇 [Windows 傳統桌面]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+2. 在 [Visual C#] 或 [Visual Basic] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
 
 3. 鍵入 **MyProfilerApp** 這類名稱，然後按一下 [確定]。
 
@@ -40,14 +41,14 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 2. 開啟 Program.cs，並將所有程式碼取代為下列程式碼：
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -55,10 +56,10 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -68,8 +69,8 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -77,7 +78,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -90,14 +91,14 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -105,21 +106,21 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -127,15 +128,15 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -144,13 +145,13 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -159,8 +160,8 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
     > [!NOTE]
     > 在 Visual Basic 中，確定啟始物件設定為 `Sub Main` ([屬性] > [應用程式] > [啟始物件])。
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 步驟 1︰收集程式碼剖析資料
+
 1.  首先，在 `Main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
     `for (int i = 0; i < 200; i++)`
@@ -177,7 +178,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
-  
+
 3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
 
 4.  按一下 [偵錯/開始偵錯] (或工具列上的 [開始] 或 **F5**)。
@@ -197,7 +198,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
      現在，您擁有在兩個中斷點之間執行的程式碼區域專屬的應用程式效能資料。
 
      程式碼剖析工具隨即開始準備執行緒資料。 等候它完成。
-  
+
      [CPU 使用量] 工具會在 [CPU Usage (CPU 使用量)] 索引標籤中顯示報告。
 
      此時，您可以開始分析資料。
@@ -215,7 +216,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 
 2. 在函式清單中，按兩下 `ServerClass::GetNumber` 函式。
 
-    當您按兩下函式時，[呼叫端/被呼叫端] 檢視會在左窗格中開啟。 
+    當您按兩下函式時，[呼叫端/被呼叫端] 檢視會在左窗格中開啟。
 
     ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -234,7 +235,7 @@ Visual Studio 提供許多功能強大的功能，可協助您分析應用程式
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 - 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>請參閱
 
- [Visual Studio 中的分析](../profiling/index.md)  
- [分析功能導覽](../profiling/profiling-feature-tour.md)
+- [Visual Studio 中的分析](../profiling/index.md)
+- [分析功能導覽](../profiling/profiling-feature-tour.md)

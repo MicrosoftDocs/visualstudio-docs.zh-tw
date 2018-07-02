@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747504"
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入門：專案和方案
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/26/2018
 
    [ **加入新的專案** ] 對話方塊隨即開啟。
 
-1. 在左窗格中，展開 [Visual C#]，然後選擇 [Windows 傳統桌面]。 然後，在中間窗格中，選擇 [空白專案 (.NET Framework)]。 將專案命名為 "QuickDate"，然後選擇 [確定] 按鈕。
+1. 在左窗格中，展開 [Visual C#]，然後選擇 [Windows 桌面]。 然後，在中間窗格中，選擇 [空白專案 (.NET Framework)]。 將專案命名為 "QuickDate"，然後選擇 [確定] 按鈕。
 
    名為 "QuickDate" 的專案隨即出現在方案總管中該解決方案的下方。 它目前包含稱為 *App.config* 的單一檔案。
 

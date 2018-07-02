@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c70ddc12b2c790a360f5124e7deeb8e99189742c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b7f673adc1c5f93c3cf356218c510cad7f8d229
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749862"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 |||  
@@ -38,9 +39,9 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>規則描述  
  雖然使用例外處理常式來攔截中斷程式執行的錯誤和其他事件是一個好方法，但是在一般的程式執行邏輯中使用例外處理常式可能會很耗費資源，應予以避免。 在大部分情況下，最好只針對很少發生且未預期的情況使用例外狀況。 例外狀況不應該用來當做一般程式流程的一部分傳回值。 在許多情況下，您可以驗證值並使用條件式邏輯以暫止執行導致問題的陳述式，來避免引發例外狀況。  
   
- 如需詳細資訊，請參閱 MSDN 上 **Microsoft Patterns and Practices** 文件庫中＜改進 .NET 應用程式效能和延展性＞(英文) 的＜第 5 章 - 改進 Managed 程式碼的效能＞(英文) 中的[例外狀況管理 (英文)](http://go.microsoft.com/fwlink/?LinkID=177825) 一節。  
+ 如需詳細資訊，請參閱 MSDN 上 **Microsoft Patterns and Practices** 文件庫中＜Improving .NET Application Performance and Scalability＞(改善 .NET 應用程式效能和延展性) 的**＜Chapter 5 - Improving Managed Code Performance＞(第 5 章 - 改善 Managed 程式碼的效能)** 中的 [Exception Management](http://go.microsoft.com/fwlink/?LinkID=177825) (例外狀況管理) 一節。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至 [標記] 檢視。 尋找包含 **.NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec** 度量的欄位。 判斷是否有特定的程式執行階段，當中的例外狀況處理比其他階段更頻繁。 使用取樣設定檔，嘗試識別 throw 陳述式以及產生頻繁例外狀況的 try/catch 區塊。 如果有必要，請在 catch 區塊中加入邏輯，協助您了解最常處理的例外狀況。 如果可行，請將經常執行的 throw 陳述式或 catch 區塊，取代為簡單的流程控制邏輯或驗證程式碼。  
+ 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至 [標記] 檢視。 尋找包含 **.NET CLR Exceptions(@ProcessInstance)\\# of Excels Thrown / sec** 度量的欄位。 判斷是否有特定的程式執行階段，當中的例外狀況處理比其他階段更頻繁。 使用取樣設定檔，嘗試識別 throw 陳述式以及產生頻繁例外狀況的 try/catch 區塊。 如果有必要，請在 catch 區塊中加入邏輯，協助您了解最常處理的例外狀況。 如果可行，請將經常執行的 throw 陳述式或 catch 區塊，取代為簡單的流程控制邏輯或驗證程式碼。  
   
- 例如，如果您發現應用程式經常處理 DivideByZeroException 例外狀況，在程式中加入邏輯來檢查分母是否有零值將可改善應用程式的效能。
+ 例如，如果您發現應用程式經常處理 DivideByZeroException 例外狀況，在程式中新增邏輯來檢查分母是否有零值可改善應用程式的效能。

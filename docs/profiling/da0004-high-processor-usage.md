@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab522c19971e734e5a42f607d99f38f8e44930d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5800acfded9d500c68a0e071ffa6501d6b3c77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749606"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：處理器使用率高
 |||  
@@ -33,10 +34,10 @@ ms.lasthandoff: 04/19/2018
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
   
 ## <a name="cause"></a>原因  
- 處理器 (CPU) 使用率在使用檢測方法所收集的分析資料中明顯偏高。 分析 CPU 繫結應用程式時，請考慮使用取樣分析方法。  
+ 處理器 (CPU) 使用率在使用檢測方法所收集的分析資料中很高。 分析 CPU 繫結應用程式時，請考慮使用取樣分析方法。  
   
 ## <a name="rule-description"></a>規則描述  
- 在此分析執行期間，處理器一致地非常忙碌。 CPU 使用率過高可能表示是 CPU 繫結應用程式。 檢測的設定檔通常不是調查 CPU 使用方式情節最有效的方式。 當您分析花費許多時間在處理器上執行指令的應用程式時，取樣通常更有效率。  
+ 在此分析執行期間，一或多個處理器持續很忙碌。 CPU 使用率過高可能表示是 CPU 繫結應用程式。 檢測的設定檔不是調查 CPU 使用率情節最有效的方式。 當您分析花費許多時間在處理器上執行指令的應用程式時，取樣會更有效率。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  除非您需要函式計時，或者您比較有興趣了解輸入/輸出而不是處理器瓶頸，否則請考慮使用取樣方法而非檢測方法再次分析您的應用程式。

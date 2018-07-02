@@ -1,6 +1,6 @@
 - name: 版本控制
   href: /visualstudio/version-control/index
-- name: 概觀
+- name: 總覽
   items:
     - name: 了解 Git
       href: /vsts/git/tutorial/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: 資源
   items:
-    - name: 了解 Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: 什麼是 Git
+      href: /azure/devops/git/what-is-git

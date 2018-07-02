@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 187f6c7cdbbcb99d5c1ac336e922c4a2fedbb44d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336054"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692131"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。  
   
-##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> 能源消耗分析工具是什麼，它的運作方式為何，以及測量什麼內容  
+## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>能源消耗分析工具是什麼，它的運作方式為何，以及測量什麼內容  
  [能源消耗] 分析工具會在分析工作階段期間，擷取裝置的顯示器、CPU 和網路連線的活動。 然後它會產生這些活動的用電量評估，以及該分析工作階段的總計能源量。  
   
 > [!NOTE]
@@ -45,7 +45,7 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
   
  例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> 透過使用者標記識別情節  
+## <a name="identify-scenarios-with-user-marks"></a>透過使用者標記識別情節  
  您可以將「 *使用者標記* 」(User Mark) 加入至分析資料，以便識別時間軸尺規中的區段。  
   
  ![時間軸中的使用者標記](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -76,7 +76,7 @@ if (performance && performance.mark) {
   
  *markDescription* 這個字串包含要在使用者標記工具提示中顯示的訊息。  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a> 設定您的環境以進行分析  
+## <a name="configure-your-environment-for-profiling"></a>設定您的環境以進行分析  
  為了獲得較佳的評估結果，建議您分析以本身電池供電之低電源裝置上的應用程式能源使用情形。 由於這類裝置大部分不會執行 Visual Studio，因此您需要將 Visual Studio 電腦連接到使用 Visual Studio 遠端工具的裝置。 若要連接到遠端裝置，您必須設定 Visual Studio 專案和遠端裝置。 如需詳細資訊，請參閱[在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 > [!TIP]
@@ -84,7 +84,7 @@ if (performance && performance.mark) {
 > -   在以電池供電的目標裝置上進行分析。  
 > -   關閉其他可能使用相同資源 (網路、CPU 或顯示器) 的應用程式。  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> 收集應用程式的能源分析資料  
+## <a name="collect-energy-profile-data-for-your-app"></a>收集應用程式的能源分析資料  
   
 1.  在 [偵錯]  功能表上，選擇 [啟動診斷但不偵錯] 。  
   
@@ -93,7 +93,7 @@ if (performance && performance.mark) {
 2.  選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。  
   
     > [!NOTE]
-    >  當您啟動 [ **能源消耗** ] 分析工具時，可能會看到 [ **使用者帳戶控制** ] 視窗，要求您提供執行 VsEtwCollector.exe 的權限。 選擇 [ **是**]。  
+    >  當您啟動 [能源消耗] 分析工具時，可能會看到 [使用者帳戶控制] 視窗，要求您提供執行 *VsEtwCollector.exe* 的權限。 選擇 [ **是**]。  
   
 3.  執行您的應用程式進行資料收集。  
   
@@ -103,7 +103,7 @@ if (performance && performance.mark) {
   
      Visual Studio 會分析收集到的資料並顯示結果。  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> 收集已安裝應用程式的能源分析資料  
+## <a name="collect-energy-profile-data-for-an-installed-app"></a>收集已安裝應用程式的能源分析資料  
  [能源消耗] 工具只能在從 Visual Studio 方案啟動或從 Microsoft Store 安裝的 UWP 應用程式上執行。 方案在 Visual Studio 中開啟時，預設目標為 [ **啟始專案**]。 目標為已安裝的應用程式：  
   
 1.  選擇 [ **變更目標** ]，然後選擇 [ **已安裝的應用程式**]。  
@@ -116,7 +116,7 @@ if (performance && performance.mark) {
   
  若要停止分析，請切換回到 Visual Studio (Alt+Tab)，並選擇診斷中樞頁面上的 [ **停止收集** ]。  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a> 分析能源分析資料  
+## <a name="analyze-energy-profile-data"></a>分析能源分析資料  
  能源分析資料會顯示在 Visual Studio 文件視窗中：  
   
  ![能源分析工具報告頁面](../profiling/media/energyprof_all.png "ENERGYPROF_All")  
@@ -134,7 +134,7 @@ if (performance && performance.mark) {
   
  尋找資源用電量尖峰的區域。 將尖峰區與應用程式的功能產生關聯。 然後使用時間軸上的時間軸控制列放大該區域。 如果您將焦點放在網路使用方式，請展開 [ **資源 (開啟/關閉)** ] 圖形的 [ **網路**  ] 節點，比較網路連接開啟時間與應用程式透過連接接收或傳輸資料的時間。 減少在非必要時開啟網路，是非常有效的最佳化方式。  
   
-##  <a name="BKMK_Optimize_energy_use"></a> 最佳化能源利用  
+## <a name="optimize-energy-use"></a>最佳化能源利用  
  除了傳輸資料之外，網路連線初始化、維護及關閉連線都會產生能源成本。 某些網路在資料已傳送或接收後仍然保持連線一段時間，以便讓更多資料透過單一連線傳輸。 您可以使用 [ **資源 (開啟/關閉)** ] 窗格檢查應用程式與連接互動的方式。  
   
  ![資源 &#40;開&#47;關&#41; 窗格](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")  
@@ -145,7 +145,7 @@ if (performance && performance.mark) {
   
  對於顯示器的能源成本，您擁有的控制權比較少。 大部分畫面顯示淺色時，所需的能源比顯示深色更多，因此使用深色背景會是節省成本的一種方式。  
   
-##  <a name="BKMK_Other_resources"></a> 其他資源  
+## <a name="other-resources"></a>其他資源  
   
 -   Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
   

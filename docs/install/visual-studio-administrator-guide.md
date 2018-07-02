@@ -2,7 +2,7 @@
 title: Visual Studio 系統管理員指南
 description: 深入了解如何在企業環境中部署 Visual Studio。
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691114"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 系統管理員指南
 
 在企業環境中，系統管理員從網路共用或是使用系統管理軟體將安裝部署給終端使用者，是很常見的。 我們已設計 Visual Studio 安裝程式引擎來支援企業部署，讓系統管理員可以建立網路安裝位置、預先設定安裝預設值、在安裝程序期間部署產品金鑰，以及在成功推出後管理產品更新。 此系統管理員指南針對網路環境中的企業部署，提供以案例為基礎的指導方針。
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>在企業環境中部署 Visual Studio 2017
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>在企業環境中部署 Visual Studio 2017
 
 只要每部目標電腦符合[最小安裝需求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)，您就可以將 Visual Studio 2017 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
 
@@ -49,12 +50,26 @@ ms.lasthandoff: 04/20/2018
 > [!IMPORTANT]
 > 請注意，從網路共用安裝將會「記住」它們的來源位置。 這表示用戶端電腦的修復可能需要回到用戶端原先安裝開始處的網路共用。 請小心選擇網路位置，以便它能與您預期在組織中執行 Visual Studio 2017 用戶端的存留期一致。
 
-## <a name="visual-studio-tools"></a>Visual Studio Tools
+## <a name="use-visual-studio-tools"></a>使用 Visual Studio Tools
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md)。
 
 > [!TIP]
 > 除了系統管理員指南中的文件外，另外一個有關 Visual Studio 2017 安裝的實用資訊來源是 [Heath Stewart 的部落格](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)。
+
+## <a name="specify-customer-feedback-settings"></a>指定客戶回函設定
+
+根據預設，Visual Studio 的安裝已啟用客戶回函。 當您啟用群組原則時，您可以設定 Visual Studio 停用個別電腦上的客戶回函。 若要這樣做，請在下列機碼上設定以登錄為基礎的原則：
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+項目 = **OptIn**
+
+值 = (DWORD)
+* **0** 表示退出
+* **1** 表示加入
+
+如需客戶回函設定的詳細資訊，請參閱 [Visual Studio 客戶經驗改進計畫](../ide/visual-studio-experience-improvement-program.md)頁面。
 
 ## <a name="get-support"></a>取得支援
 

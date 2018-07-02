@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752062"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -29,13 +30,13 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。
 
-![單元測試總管](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
 
 當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  和 [未執行的測試] 預設群組中的結果。 您可以變更測試總管群組測試的方式。
 
 您可以從測試總管工具列上執行許多尋找、組織並執行測試工作的功能。
 
-![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png "UTE_ToolBar")
+![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>執行測試
 
@@ -47,7 +48,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。
 
-- 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。
+- 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 執行測試時，測試總管視窗頂端會動畫呈現成功/失敗列。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。
 
@@ -65,7 +66,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 若要檢視個別測試的詳細資料，請選取該測試。
 
-![測試執行詳細資料](../test/media/ute_testdetails.png "UTE_TestDetails")
+![測試執行詳細資料](../test/media/ute_testdetails.png)
 
 測試詳細資料窗格會顯示下列資訊：
 
@@ -91,9 +92,9 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="group-tests-in-the-test-list"></a>將測試清單中的測試分組
 
- 若要變更測試組織的方法，請選取 [群組依據] 按鈕![測試總管的 [群組] 按鈕](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")旁邊的向下箭號 ，然後選取新的群組準則。
+ 若要變更測試的組織方式，請選擇 [群組依據] 按鈕 ![測試總管的 [群組] 按鈕](../test/media/ute_groupby_btn.png)旁邊的向下箭號，然後選取新的分組準則。
 
- ![在測試總管中依分類為測試分組](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![在 [測試總管] 中依分類為測試分組](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>測試總管群組
 
@@ -135,7 +136,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 3. 在引號之間輸入篩選值。
 
-![在測試總管中篩選測試](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![在 [測試總管] 中篩選測試](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
@@ -162,7 +163,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  您可以建立和儲存想要執行或檢視為群組的測試清單。 當您選取播放清單時，即會在 [測試總管] 中顯示清單中的測試。 您可以將在測試中加入一個以上的播放清單，當您選擇預設的 [所有測試]  播放清單時，就可以使用專案中的所有測試。
 
- ![選擇播放清單](../test/media/ute_playlist.png "UTE_Playlist")
+ ![選擇播放清單](../test/media/ute_playlist.png)
 
  **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在內容功能表上，選擇 [加入至播放清單] 、[新增播放清單] 。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
 
@@ -170,7 +171,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  **若要開啟播放清單**，請選取 Visual Studio 功能表上的 [測試]、[播放清單]，然後從最近使用過的播放清單的清單中選擇，或選取 [開啟播放清單] 指定播放清單的名稱和位置。
 
- 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。
+ 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 ## <a name="debug-and-analyze-unit-tests"></a>偵錯和分析單元測試
 

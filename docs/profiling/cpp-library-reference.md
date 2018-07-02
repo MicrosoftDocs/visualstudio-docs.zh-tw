@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6eecf12f554a8a6143f9c040916da9f0e318b1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5551cb5e66eae9471f2e4e79d2aa6587bf440120
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749212"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。  
@@ -27,5 +28,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="in-this-section"></a>本節內容  
  [Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

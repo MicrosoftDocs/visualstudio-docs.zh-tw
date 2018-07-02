@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751513"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 在本主題中，我們會使用稱為 `MyBank` 的虛構應用程式開發來做為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法會以 C# 撰寫，並使用 Managed 程式碼適用的 Microsoft 單元測試架構來呈現，不過，這個概念可輕鬆地轉移到其他語言和架構。
 
- ![MyBank 方案](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank 方案](../test/media/ute_mybanksolution.png)
 
  我們第一次在 `MyBank` 應用程式的設計嘗試包括帳戶元件 (代表個別帳戶及其與銀行的交易)，和資料庫元件 (代表可彙總及管理個別帳戶的功能)。
 
@@ -85,15 +86,15 @@ public void Withdraw(double amount)
 
 1.  從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試]  。
 
-     ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png)
 
 2.  按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
-     ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png)
 
 3.  會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。
 
-     ![隨即建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![隨即建立單元測試](../test/media/createunittestsstubs.png)
 
 4.  現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。
 
- ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![單元測試總管](../test/media/ute_failedpassednotrunsummary.png)
 
  隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  及 [未執行的測試] 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有這些測試的檢視。
 
@@ -214,11 +215,11 @@ public void My_Test ()
 
 [測試總管] 工具列可協助您探索、組織和執行您有興趣的測試。
 
- ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
- 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]  (鍵盤：F12) 以顯示所選測試的原始程式碼。
+ 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]\(鍵盤：F12) 以顯示所選測試的原始程式碼。
 
- 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。
+ 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
@@ -227,17 +228,17 @@ public void My_Test ()
 
 |||
 |-|-|
-|![建置後執行](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，接著在 [測試總管] 工具列上選擇 [建置之後執行測試]  。|
+|![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，接著在 [測試總管] 工具列上選擇 [建置之後執行測試]  。|
 
 ### <a name="filter-and-group-the-test-list"></a>篩選與群組測試清單
 
 若有大量測試，您可以在 [測試總管] 搜尋方塊中輸入文字以便依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。
 
- ![搜尋篩選條件分類](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
+|![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png)|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
 
  如需詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。
 
@@ -260,7 +261,7 @@ public void My_Test ()
 
  **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型]  ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法]  。
 
- ![產生方法虛設常式 IntelliSense 功能表](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![[產生方法 Stub] IntelliSense 功能表](../test/media/ute_generatemethodstubintellisense.png)
 
  **問：是否可以建立採用多個資料集做為輸入來執行測試的單元測試？**
 
@@ -304,9 +305,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。
 
- ![程式碼涵蓋範圍結果](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![程式碼涵蓋範圍結果](../test/media/ute_codecoverageresults.png)
 
- 進一步了解[程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+ 進一步了解 [程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 。
 
  **問：如何在我的程式碼中測試是否具有外部相依性的方法？**
 
@@ -326,6 +327,6 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：
 
- ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png)
 
  將會使用所選擇的架構來建立您的單元測試虛設常式。

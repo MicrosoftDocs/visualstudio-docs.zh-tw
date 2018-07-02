@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745991"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 
@@ -30,14 +31,14 @@ ms.lasthandoff: 04/26/2018
 2. 如果您尚未登入，請選取位於工具右邊的 [登入]，如以下螢幕擷取畫面所示。
 3. 依照畫面上的指示操作來登入。
 
- ![登入以回報問題](../ide/media/sign-in-new-ux.png "登入以回報問題")
+ ![登入以回報問題](../ide/media/sign-in-new-ux.png)
 
 ## 搜尋類似問題並針對類似問題投票 <a name="search_and_vote"></a>
 
 1. 搜尋您的問題，並查看其他人是否也回報過。
 2. 如果有人回報過，則請對它投票，讓我們知道。
 
-  ![搜尋類似問題並針對類似問題投票](../ide/media/search-and-vote.png "搜尋類似問題並針對類似問題投票")
+  ![搜尋類似問題並針對類似問題投票](../ide/media/search-and-vote.png)
 
 ## 回報新問題 <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 2. 建立問題的描述性標題，如此可協助我們將問題發送給適當的 Visual Studio 團隊。
 3. 請提供其他任何詳細資訊給我們，如果可能，也請提供重現問題的步驟。
 
-  ![回報新問題](../ide/media/report-new-problem.png "回報新問題")
+  ![回報新問題](../ide/media/report-new-problem.png)
 
 ## 提供螢幕擷取畫面和附件 (選擇性) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/26/2018
 1. 選擇 [錄製] 索引標籤。
 2. 選擇 [開始錄製]。 授與權限來執行工具。
 
-  ![選擇 [開始錄製] 以提供追蹤和堆積傾印檔案 ](../ide/media/record-dialog-box.png "提供追蹤和堆積傾印檔案")
+  ![選擇 [開始錄製] 以提供追蹤和堆積傾印檔案 ](../ide/media/record-dialog-box.png)
 
 3. 出現 [步驟收錄程式] 工具時，請執行重現問題的步驟。
 4. 完成之後，請選擇 [停止錄製] 按鈕。

@@ -1,41 +1,30 @@
 - name: 使用工作流程設計工具開發應用程式
   href: developing-applications-with-the-workflow-designer.md
   items:
-    - name: 使用 Workflow Designer
-      href: using-the-workflow-designer.md
+    - name: 建立工作流程專案
+      href: creating-a-workflow-project.md
       items:
-        - name: 建立工作流程專案
-          href: creating-a-workflow-project.md
-          items:
-            - name: 建立工作流程主控台應用程式
-              href: how-to-create-a-workflow-console-application.md
-            - name: 建立 WCF 工作流程服務應用程式
-              href: how-to-create-a-wcf-workflow-service-application.md
-            - name: 建立活動程式庫
-              href: how-to-create-an-activity-library.md
-            - name: 建立活動設計工具程式庫
-              href: how-to-create-an-activity-designer-library.md
-            - name: 將新項目新增至工作流程專案
-              href: how-to-add-a-new-item-to-a-workflow-project.md
-        - name: 將活動新增至工具箱
-          href: how-to-add-activities-to-the-toolbox.md
-        - name: 使用引數設計工具
-          href: how-to-use-the-argument-designer.md
-        - name: 使用變數設計工具
-          href: how-to-use-the-variable-designer.md
-        - name: 使用運算式編輯器
-          href: how-to-use-the-expression-editor.md
-        - name: 使用匯入設計工具
-          href: how-to-use-the-imports-designer.md
-        - name: 使用階層連結巡覽
-          href: how-to-use-breadcrumb-navigation.md
-        - name: 使用工作流程設計工具中的搜尋
-          href: how-to-use-search-in-the-workflow-designer.md
-        - name: 定義並取用工作流程設計工具中的活動委派
-          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-        - name: 將註解新增至工作流程設計工具中的工作流程
-          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: 使用活動設計工具
+        - name: 將新項目新增至工作流程專案
+          href: how-to-add-a-new-item-to-a-workflow-project.md
+    - name: 將活動新增至工具箱
+      href: how-to-add-activities-to-the-toolbox.md
+    - name: 使用引數設計工具
+      href: how-to-use-the-argument-designer.md
+    - name: 使用變數設計工具
+      href: how-to-use-the-variable-designer.md
+    - name: 使用運算式編輯器
+      href: how-to-use-the-expression-editor.md
+    - name: 使用匯入設計工具
+      href: how-to-use-the-imports-designer.md
+    - name: 使用階層連結巡覽
+      href: how-to-use-breadcrumb-navigation.md
+    - name: 使用工作流程設計工具中的搜尋
+      href: how-to-use-search-in-the-workflow-designer.md
+    - name: 定義並取用工作流程設計工具中的活動委派
+      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+    - name: 將註解新增至工作流程設計工具中的工作流程
+      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: 活動設計工具
       href: using-the-activity-designers.md
       items:
         - name: Control Flow 活動設計工具
@@ -156,18 +145,16 @@
           items:
             - name: Interop 活動設計工具
               href: interop-activity-designer.md
-    - name: 使用工作流程設計工具偵錯工作流程
+    - name: 偵錯工作流程
       href: debugging-workflows-with-the-workflow-designer.md
       items:
-        - name: 叫用工作流程偵錯工具
-          href: how-to-invoke-the-workflow-debugger.md
         - name: 在工作流程中設定中斷點
           href: how-to-set-breakpoints-in-workflows.md
         - name: 使用工作流程設計工具對 XAML 進行偵錯
           href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: 工作流程設計工具中不支援的偵錯情況
+        - name: 不支援的偵錯案例
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Workflow 設計工具 UI 說明
+    - name: UI 參考
       href: workflow-designer-ui-help.md
       items:
         - name: 瀏覽並選取 .NET 類型對話方塊
@@ -188,97 +175,7 @@
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
         - name: 工作流程設計工具殼層功能
           href: workflow-designer-shell-features.md
-        - name: 工作流程設計中的鍵盤快速鍵
+        - name: 鍵盤快速鍵
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: 工作流程設計工具的錯誤訊息
+        - name: 錯誤訊息
           href: error-messages-in-workflow-designer.md
-    - name: 以 .NET 3.0 或 .NET 3.5 Framework 為目標開發工作流程應用程式
-      href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
-      items:
-        - name: 偵錯舊版工作流程
-          href: debugging-legacy-workflows.md
-          items:
-            - name: ASP.NET 型工作流程偵錯 (舊版)
-              href: how-to-debug-aspnet-based-workflows-legacy.md
-            - name: 在工作流程中設定中斷點 (舊版)
-              href: how-to-set-breakpoints-in-workflows-legacy.md
-            - name: 從遠端電腦偵錯工作流程 (舊版)
-              href: debugging-workflows-from-a-remote-computer-legacy.md
-            - name: 偵錯逐步執行選項 (舊版)
-              href: debug-stepping-options-legacy.md
-            - name: 變更偵錯逐步執行選項 (舊版)
-              href: how-to-change-the-debug-stepping-option-legacy.md
-            - name: 停用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
-              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-            - name: 叫用 Visual Studio Debugger for Windows Workflow Foundation (舊版)
-              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-        - name: 使用舊版工作流程設計工具
-          href: using-the-legacy-workflow-designer.md
-          items:
-            - name: Visual Studio 工作流程視窗 (舊版)
-              href: visual-studio-workflow-windows-legacy.md
-            - name: 建立舊版工作流程活動
-              href: creating-legacy-workflow-projects.md
-              items:
-                - name: 建立工作流程活動程式庫 (舊版)
-                  href: how-to-create-a-workflow-activity-library-legacy.md
-                - name: 建立空白的工作流程專案 (舊版)
-                  href: how-to-create-an-empty-workflow-project-legacy.md
-                - name: 將新項目新增至工作流程專案 (舊版)
-                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
-                - name: 設定工作流程專案屬性 (舊版)
-                  href: how-to-configure-workflow-project-properties-legacy.md
-                - name: 建立循序工作流程主控台應用程式 (舊版)
-                  href: how-to-create-sequential-workflow-console-applications-legacy.md
-                - name: 建立狀態機器工作流程主控台應用程式 (舊版)
-                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
-                - name: 建立工作流程專案 (舊版)
-                  href: how-to-create-workflow-projects-legacy.md
-                - name: 建立循序工作流程程式庫 (舊版)
-                  href: how-to-create-a-sequential-workflow-library-legacy.md
-                - name: 建立狀態機器工作流程程式庫 (舊版)
-                  href: how-to-create-a-state-machine-workflow-library-legacy.md
-            - name: 循序工作流程檢視 (舊版)
-              href: sequential-workflow-views-legacy.md
-            - name: 舊版工作流程活動
-              href: legacy-workflow-activities.md
-              items:
-                - name: 建立宣告式規則條件 (舊版)
-                  href: how-to-create-a-declarative-rule-condition-legacy.md
-                - name: 建立 PolicyActivity 規則集 (舊版)
-                  href: how-to-create-a-policyactivity-rule-set-legacy.md
-                - name: 活動檢視 (舊版)
-                  href: activity-views-legacy.md
-                - name: 將活動新增至工具箱 (舊版)
-                  href: how-to-add-activities-to-the-toolbox-legacy.md
-                - name: 實作 Windows Communication Foundation 合約作業 (舊版)
-                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
-                - name: 叫用 Windows Communication Foundation 合約作業 (舊版)
-                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
-            - name: 在工作流程中使用佈景主題 (舊版)
-              href: using-themes-in-workflows-legacy.md
-            - name: 使用舊版狀態機器工作流程設計工具
-              href: using-the-legacy-state-machine-workflow-designer.md
-            - name: 使用舊版活動設計工具
-              href: using-the-legacy-activity-designer.md
-            - name: 舊版 Windows Workflow Foundation UI 設計工具的說明
-              href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-              items:
-                - name: 繫結至活動的屬性對話方塊 (舊版)
-                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
-                - name: 瀏覽並選取 .NET 類型對話方塊 (舊版)
-                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
-                - name: 選擇作業對話方塊 (舊版)
-                  href: choose-operation-dialog-box-legacy.md
-                - name: 規則條件編輯器對話方塊 (舊版)
-                  href: rule-condition-editor-dialog-box-legacy.md
-                - name: 規則集編輯器對話方塊 (舊版)
-                  href: rule-set-editor-dialog-box-legacy.md
-                - name: 選取條件對話方塊 (舊版)
-                  href: select-condition-dialog-box-legacy.md
-                - name: 選取規則集對話方塊 (舊版)
-                  href: select-rule-set-dialog-box-legacy.md
-                - name: 主題組態對話方塊 (舊版)
-                  href: theme-configuration-dialog-box-legacy.md
-                - name: 選項對話方塊、工作流程設計工具、佈景主題 (舊版)
-                  href: themes-workflow-designer-options-dialog-box-legacy.md

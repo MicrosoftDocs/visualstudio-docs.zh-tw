@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750967"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖形中的某個區域
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 > [!TIP]
 > 您可以使用工具列中的 [同步水平縮放控制]，開啟或關閉自動水平縮放同步處理。 當同步處理開啟時，套用至某個圖形上的任何縮放也會套用至 [圖形] 檢閱上的任何其他圖形。
 
- ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") 圖形檢視縮放控制
+ ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png) 圖形檢視縮放控制
 
  在上圖中，已放大待測系統圖形來調查臨界值問題。 臨界值違規已透過工具列之 [圖形選項] 下拉式清單中的 [在圖形上顯示臨界值違規] 來啟用。
 

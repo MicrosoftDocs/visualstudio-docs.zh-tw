@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1d4fbe642d8b6c4673f99295d0544364a4e81a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476697"
 ---
 # <a name="timer"></a>計時器
 VSPerfCmd.exe **Timer** 選項會將取樣的分析事件設定為處理器時脈週期，並且選擇性地變更取樣間隔中預設為 10,000,000 的週期數目。 在 1GH (1 GHz) 處理器上，10,000,000 個時脈週期約為每秒 100 個樣本。 可指定的最小週期數目為 50,000。  
@@ -67,8 +68,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
+ [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [分析服務](../profiling/command-line-profiling-of-services.md)

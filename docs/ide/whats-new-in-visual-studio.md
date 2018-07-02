@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750476"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/14/2018
 
 選擇您需要的工作負載，然後在需要時加以變更。
 
- ![Visual Studio 2017 安裝對話方塊](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 安裝畫面")
+ ![Visual Studio 2017 安裝對話方塊](../install/media/install-visual-studio-enterprise.png)
 
 此外，您還有微調安裝的選項：
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/14/2018
 
 Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充功能)，讓它們變成在需要時載入，而不是在 IDE 啟動時載入。 想要知道哪些延伸模組影響啟動、解決方案載入和輸入效能嗎？ 您可以在 [說明] > [管理 Visual Studio 效能] 中查看這項資訊。
 
-  ![Visual Studio 2017 中的 [選項] 對話方塊](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio [說明] 對話方塊 - 效能管理")
+  ![Visual Studio 2017 中的選項對話方塊](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>使用漫遊延伸模組管理員來管理延伸模組
 
@@ -97,19 +98,19 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 若要查看 Visual Studio 中的延伸模組清單，請按一下 [工具] > [延伸模組和更新]，然後按一下 [漫遊延伸模組管理員]。
 
-![Visual Studio 2017 - [延伸模組和更新] 對話方塊](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - [工具] > [延伸模組和更新] 對話方塊")
+![Visual Studio 2017 - [延伸模組和更新] 對話方塊](../ide/media/vs2017ide-extensions-and-updates.png)
 
 漫遊延伸模組管理員會追蹤您安裝的所有延伸模組，但是您可以選擇想要新增至 [漫遊] 清單的延伸模組。
 
-![Visual Studio 2017 - [延伸模組和更新] 對話方塊](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - 漫遊延伸模組管理員")
+![Visual Studio 2017 - [延伸模組和更新] 對話方塊](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 當您使用漫遊延伸模組管理員時，清單上會有三個圖示類型︰
 
-* ![[已漫遊] 圖示](../ide/media/vs2017ide-roamedicon.png "[已漫遊] 圖示") 已漫遊：在此「漫遊清單」中但未安裝在您電腦上的擴充功能。
+* ![已漫遊圖示](../ide/media/vs2017ide-roamedicon.png) ***已漫遊***：在此「漫遊清單」中但未安裝在您電腦上的延伸模組。
   (您可以使用 [下載] 按鈕進行安裝)。
-* ![[已漫遊並已安裝] 圖示](../ide/media/vs2017ide-roamedinstalledicon.png "[已漫遊並已安裝] 圖示") 已漫遊並已安裝︰所有在此「漫遊清單」中並已安裝在您開發環境中的擴充功能。
+* ![已漫遊並已安裝圖示](../ide/media/vs2017ide-roamedinstalledicon.png) ***已漫遊並已安裝***︰所有在此「漫遊清單」中並已安裝在您開發環境中的延伸模組。
   (如果您決定不再漫遊，則可以使用 [停止漫遊] 按鈕予以移除)。
-* ![[已安裝] 圖示](../ide/media/vs2017ide-installedicon.png "[已安裝] 圖示") 已安裝︰所有已安裝在此環境中但不在「漫遊清單」中的擴充功能。
+* ![已安裝圖示](../ide/media/vs2017ide-installedicon.png) ***已安裝***︰所有已安裝在此環境中但不在「漫遊清單」中的延伸模組。
   (使用 [開始漫遊] 按鈕，即可將延伸模組新增至 [漫遊] 清單)。
 
 您在已登入期間下載的所有延伸模組都會以 [Roamed & Installed] \(已漫遊且已安裝\) 的形式新增至您的清單。 延伸模組隨後會成為漫遊清單的一部份，使您得以從任何電腦存取。
@@ -118,7 +119,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 在 Visual Studio Enterprise 2017 中，即時單元測試會在您撰寫程式碼時，在編輯器中提供即時單元測試結果和程式碼涵蓋範圍。 它可以與 .NET Framework 和 .NET Core 的 C# 和 Visual Basic 專案搭配運作，並且支援 MSTest、xUnit 及 NUnit 這三種測試架構。
 
-![Live Unit Testing](../ide/media/lut-codewindow.png "Visual Studio Enterprise 版中新 Live Unit Testing 功能的範例")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 如需詳細資訊，請參閱 [Live Unit Testing 簡介](../test/live-unit-testing-intro.md)。 如需每個 Visual Studio Enterprise 2017 版本中新增的功能清單，請參閱 [Live Unit Testing 的新功能](../test/live-unit-testing-whats-new.md)。
 
@@ -153,27 +154,27 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 當您在 Visual Studio 中處理專案時，可以設定您的程式碼，然後快速認可並發行到 Git 服務。 您也可以從 IDE 右下角的按鈕中使用功能表點選，來管理您的 Git 儲存機制。
 
-![Visual Studio 2017 與 Git 互動對話方塊](../ide/media/vsIDE-GitInteraction.png "Visual Studio IDE 中的 Git 工具")
+![Visual Studio 2017 與 [Git] 對話方塊互動](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>體驗改善的瀏覽控制項
 
 我們已重新整理瀏覽體驗，以協助您在從 A 移到 B 時更為堅定而不易分心。
 
-* **15.4 的新功能**：**移至定義** (**Ctrl**+**按一下滑鼠左鍵**或 **F12**) &ndash; 滑鼠使用者可透過按住 **Ctrl** 鍵然後按一下成員，更輕鬆地巡覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。  
+* **15.4 的新功能**：**移至定義** (**Ctrl**+**按一下滑鼠左鍵**或 **F12**) &ndash; 滑鼠使用者可透過按住 **Ctrl** 鍵然後按一下成員，更輕鬆地巡覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
 
 * **移至實作** (**Ctrl**+**F12**) &ndash; 從任何基底類型或成員巡覽至其各種實作。
 
 * **移至全部** (**Ctrl**+**T** 或 **Ctrl**+**,**) &ndash; 直接巡覽至任何檔案/類型/成員/符號宣告。 您可以篩選您的結果清單或使用查詢語法 (例如 "f searchTerm" 用於檔案，"t searchTerm" 用於類型等等)。
 
-  ![已改進的 [移至全部]](../ide/media/vs2017ide-navigation-go-to.png "已改進的 [移至全部] 功能範例")
+  ![已改善的 [移至全部]](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **尋找所有參考** (**Shift**+**F12**) &ndash; 透過語法顏色標示，您可以依據專案、定義及路徑的組合，將 [尋找所有參考] 結果分組。 您也可以「鎖定」結果，如此您便可以繼續尋找其他參考，又不會遺失原始結果。
 
-  ![新的 [尋找所有參考] 工具](../ide/media/vs2017ide-find-all-references.png "新的 [尋找所有參考] 工具範例")
+  ![新的 [尋找所有參考] 工具](../ide/media/vs2017ide-find-all-references.png)
 
-* **結構視覺化檢視** &ndash; 灰色垂直虛線 (縮排輔助線) 在程式碼中就像是地標，可提供在您檢視框架內的內容。 您可以透過熱門的 Productivity Power Tools 辨識它們。 您可以使用它們，以視覺化方式隨時呈現您所在的程式碼區塊，而不需捲動。 將滑鼠游標暫留在程式碼行上會顯示工具提示，可讓您看到該區塊的開頭及其父代。 此功能除了在 C#、Visual Basic 及 XAML 有提供之外，所有透過 TextMate 文法支援的語言也都有此功能。  
+* **結構視覺化檢視** &ndash; 灰色垂直虛線 (縮排輔助線) 在程式碼中就像是地標，可提供在您檢視框架內的內容。 您可以透過熱門的 Productivity Power Tools 辨識它們。 您可以使用它們，以視覺化方式隨時呈現您所在的程式碼區塊，而不需捲動。 將滑鼠游標暫留在程式碼行上會顯示工具提示，可讓您看到該區塊的開頭及其父代。 此功能除了在 C#、Visual Basic 及 XAML 有提供之外，所有透過 TextMate 文法支援的語言也都有此功能。
 
-  ![Visual Studio 2017 結構視覺化檢視](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的結構視覺化檢視")
+  ![Visual Studio 2017 結構視覺化檢視](../ide/media/vsIDE-StructureVisualizer.png)
 
 如需新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Visual Studio 2017 中的生產力) 部落格文章。
 
@@ -191,13 +192,13 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 現在，您可以更容易在偵錯時往前跳過，而不需設定中斷點來停在您想要的程式碼行上。 當您在偵錯工具中被停止時，只需要按一下出現在程式碼行旁邊的圖示。 您的程式碼將會執行，並在下次在程式碼路徑中執行到該行時，就停在該行。
 
-![Visual Studio 2017 偵錯 - 執行至點選處](../ide/media/vs2017ide-RunToClick.png "Visual Studio 偵錯和診斷中的 [執行至點選處]")
+![Visual Studio 2017 偵錯 - 執行至點選處](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>新的例外狀況協助程式
 
 新的「例外狀況協助程式」可協助您快速檢視例外狀況資訊。 此資訊會以簡潔的形式呈現，其中包含內部例外狀況的快速存取方式。 當您診斷 NullReferenceException 時，在「例外狀況協助程式」內即可快速查看哪些項目為 Null。
 
-![Visual Studio 中新的「例外狀況協助程式」對話方塊](../ide/media/vs2017ide-ExceptionHelper.png "新的「例外狀況協助程式」對話方塊")
+![Visual Studio 中的新例外狀況協助程式對話方塊](../ide/media/vs2017ide-ExceptionHelper.png)
 
 如需詳細資訊，請參閱 [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
 
@@ -247,7 +248,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 通用 Windows 平台 (UWP) 是適用於 Windows 10 的應用程式平台。 您只需要一個 API 集合、一個應用程式套件和一個觸達所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的 Store，就能開發 UWP app。 UWP 支援不同螢幕大小及各種互動模型，不論是觸控、滑鼠和鍵盤、遊戲控制器，還是手寫筆都沒問題。 UWP app 的核心概念是使用者想要在其「所有」裝置之間移動體驗到的事物，並想要使用最方便或最有效率的任何裝置來處理手邊的工作。
 
- ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png)
 
 &mdash;從 C#、Visual Basic、C++ 或 JavaScript&mdash; 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 Visual Studio 2017 提供各種語言的 UWP app 範本，讓您可以建立適用於所有裝置的單一專案。 當工作完成時，您可以產生應用程式套件，並從 Visual Studio 提交給 Microsoft Store，以將您的應用程式提供給任何 Windows 10 裝置上的客戶。
 
@@ -270,7 +271,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 **15.3 的新功能**：針對 iOS 開發需求，我們已新增獨立權利編輯器。 它包含可輕鬆地瀏覽的使用者易記 UI。 若要啟動它，請按兩下 *entitlements.plist* 檔案。
 
-![Xamarin 的權利編輯器](../ide/media/xamarin-entitlements-editor.png "Xamarin 的權利編輯器")
+![Xamarin 的權利編輯器](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
@@ -309,9 +310,9 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 .NET Core 平台是由幾個元件所組成，其中包含 Managed 編譯器、執行階段、基底類別庫，以及許多應用程式模型 (例如 ASP.NET Core)。 .NET Core 支援三個主要作業系統：Windows、Linux 和 macOS。 您可以在裝置、雲端和內嵌/IoT 案例中使用 .NET Core。
 
-而且，它現在包含 Docker 支援。  
+而且，它現在包含 Docker 支援。
 
-**15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。  
+**15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。
 
 如需詳細資訊，請參閱 [.NET Core 指南](/dotnet/core/index)頁面。
 
@@ -346,7 +347,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
  為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
 
-如果您想為我們提供改善 Visual Studio 的建議，或是深入了解產品支援選項，請參閱 [告訴我們][](../ide/talk-to-us.md) 頁面。
+如果您想為我們提供改善 Visual Studio 的建議，或是深入了解產品支援選項，請參閱 [[告訴我們]](../ide/talk-to-us.md) 頁面。
 
 ### <a name="report-a-problem"></a>回報問題
 

@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc2d1da953e0c358241a06ff99e7e47b014bd29
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690623"
 ---
 # <a name="attach"></a>附加
-VSPerfCmd.exe **Attach** 選項會開始處理序識別碼 (PID) 所指定之執行中處理序的範例分析。  
+*VSPerfCmd.exe* **Attach** 選項會開始進行處理序識別碼 (PID) 所指定之執行中處理序的樣本分析。  
   
  若要使用 **Attach** 選項，您必須在 Start 選項中指定 **Sample** 選項。  
   
