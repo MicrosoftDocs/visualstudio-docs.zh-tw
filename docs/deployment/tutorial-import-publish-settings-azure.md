@@ -38,7 +38,7 @@ ms.locfileid: "34766736"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和**ASP.NET**和。**NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要。*.NET Core**工作負載。
+* 您必須安裝 Visual Studio 2017 和**ASP.NET**和。**NET Framework**開發工作負載。 .NET Core 應用程式中，您也需要。**.NET Core**工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
