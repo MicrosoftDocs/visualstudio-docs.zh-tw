@@ -36,7 +36,7 @@ Snappoints 和 logpoints 類似於中斷點，但不同於中斷點、 snappoint
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照集偵錯工具只適用於 Visual Studio 2017 Enterprise 15.5 或更新版本與版本**ASP.NET 及 web 程式開發工作負載**。 針對 ASP.NET Core，您也需要。**NET 核心開發**安裝的工作負載。
+* 快照集偵錯工具只適用於 Visual Studio 2017 Enterprise 15.5 或更新版本與版本**ASP.NET 及 web 程式開發工作負載**。 針對 ASP.NET Core，您也需要。**.NET Core 開發**安裝的工作負載。
 
     如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您要從舊版的 Visual Studio 2017 安裝更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 及 web 程式開發工作負載**。
 

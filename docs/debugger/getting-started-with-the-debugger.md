@@ -43,11 +43,11 @@ ms.locfileid: "34766255"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和。**NET 桌面開發**工作負載。
+* 您必須安裝 Visual Studio 2017 和。**.NET 桌面開發**工作負載。
 
     如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
-    如果您要安裝的工作負載，但是已經有 Visual Studio 中，按一下 **開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案**對話方塊 (選取**檔案**  > **新** > **專案**)。 Visual Studio 安裝程式即會啟動。 選擇。**NET 桌面開發**工作負載，然後選擇 **修改**。
+    如果您要安裝的工作負載，但是已經有 Visual Studio 中，按一下 **開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案**對話方塊 (選取**檔案**  > **新** > **專案**)。 Visual Studio 安裝程式即會啟動。 選擇。**.NET 桌面開發**工作負載，然後選擇 **修改**。
 
 ## <a name="start-the-debugger"></a>開始偵錯工具 ！
 
