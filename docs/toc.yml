@@ -155,8 +155,6 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: 新增及移除專案項目
               href: ide/adding-and-removing-project-items.md
-            - name: 專案和方案檔類型
-              href: ide/reference/project-and-solution-file-types.md
             - name: 管理專案和解決方案屬性
               href: ide/managing-project-and-solution-properties.md
             - name: 管理專案中的參考
@@ -604,11 +602,6 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Configuring Warnings in Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: 停用裝載處理序
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: 裝載處理序 (vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: 逐步解說：建立多電腦組建環境
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 偵錯...
@@ -634,7 +627,7 @@
           href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: 自訂視窗版面配置
           href: ide/customizing-window-layouts-in-visual-studio.md
-        - name: 自訂方案總管中的檔案巢狀
+        - name: '自訂 [方案總管] 中的檔案巢狀'
           href: ide/file-nesting-solution-explorer.md
         - name: 自訂起始頁
           href: ide/customizing-the-start-page-for-visual-studio.md
@@ -1062,6 +1055,9 @@
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: 回報 Visual Studio 的問題
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: 開發人員社群資料隱私權
+          href: ide/developer-community-privacy.md
     - name: 客戶經驗改進計畫
       href: ide/visual-studio-experience-improvement-program.md
       items:
