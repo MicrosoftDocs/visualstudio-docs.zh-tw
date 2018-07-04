@@ -18,7 +18,7 @@ ms.workload:
 - cplusplus
 ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34764549"
@@ -151,7 +151,7 @@ Visual Studio 可讓您啟用多個偵錯工具類型偵錯時，這稱為混合
 
     ![啟用混合的模式偵錯](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-## <a name="configure-mixed-mode-debugging-net-core"></a>設定混合的模式偵錯 （.NET 核心）
+## <a name="configure-mixed-mode-debugging-net-core"></a>設定混合的模式偵錯 （.NET Core）
 
 在 Visual Studio 2017 的大部分版本中，您必須啟用混合的模式偵錯原生程式碼中使用.NET Core 應用程式*launchSettings.json*檔案而不是**屬性**頁面。 若要追蹤 UI 更新這項功能，請參閱此[GitHub 問題](https://github.com/dotnet/project-system/issues/1125)。
 
