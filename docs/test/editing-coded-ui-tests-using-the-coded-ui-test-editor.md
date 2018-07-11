@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692365"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668392"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
@@ -92,9 +92,9 @@ ms.locfileid: "34692365"
 
 - 您可以使用自動程式化 UI 測試編輯器工具列中的 [尋找] 按鈕，以開啟 Visual Studio 中的 [尋找和取代] 工具。 接著，您可以使用 [尋找] 控制項，找出自動程式碼 UI 測試編輯器中的 UI 動作。 例如，您可以嘗試尋找「按一下 [登入] 按鈕」。 在大型測試中，這樣做很有用。 您無法在 [自動程式碼 UI 測試編輯器] 的 [尋找和取代] 工具中使用取代功能。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的＜尋找控制項＞。
 
-- 有時候，很難視覺化控制項在受測試應用程式之 UI 中的位置。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 如需詳細資訊，請參閱本文更下方位置的[尋找受測試應用程式中的 UI 控制項](#CodedUITestEditor_LocateUIControl)。
+- 有時候，很難視覺化控制項在受測試應用程式之 UI 中的位置。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 如需詳細資訊，請參閱本文更下方位置的[尋找受測試應用程式中的 UI 控制項](#locate-a-ui-control-in-the-application-under-test)。
 
-- 它可能需要展開包含您想要編輯之控制項的容器控制項。 如需詳細資訊，請參閱本文更下方位置的[尋找控制項和其子系](#CodedUITestEditor_LocateDecendants)。
+- 它可能需要展開包含您想要編輯之控制項的容器控制項。 如需詳細資訊，請參閱本文更下方位置的[尋找控制項和其子系](#locate-a-control-and-its-descendants)。
 
 ## <a name="delete-unwanted-ui-actions"></a>刪除不必要的 UI 動作
 

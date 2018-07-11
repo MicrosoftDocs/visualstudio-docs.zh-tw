@@ -9,12 +9,12 @@ description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4325921bbaa75e0fb8a8a16947c45901b6f01649
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d0dbd509d60ed3528186e41c98f374ab6db60fa3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477375"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36327020"
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
@@ -26,9 +26,7 @@ ms.locfileid: "34477375"
 1.  登入[系統管理員入口網站](https://manage.visualstudio.com)
 
 2.  若要指派單一 Visual Studio 訂閱者，請按一下資料表頂端的 [新增]。
-
-    <img alt="Add subscriber" src="_img\assign-license-add\assign-license-add.png" style="border: 1px solid #CCCCCC" />
-
+   
 3.  將資訊輸入至新訂閱者的表單欄位。 如果您的組織使用 Azure Active Directory，此欄位會作為搜尋功能來尋找您目前目錄中的人員，如此您就可以從搜尋結果中選取正確的使用者。 選取該人員之後，會自動填入其名稱、登入電子郵件和通知電子郵件，如下所示。 
 
     如果您的組織不是使用 Azure Active Directory (Azure AD)，但除了用於登入的電子郵件之外，還有接收電子郵件的其他電子郵件，您可以選擇在這裡輸入它。 選取標籤是 [新增接收通訊的其他電子郵件] 超連結。 
@@ -43,23 +41,17 @@ ms.locfileid: "34477375"
 
 4.  新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
 
-    <img alt="Subscriber added" src="_img\assign-license-add\add-subscriber-complete.png" style="border: 1px solid #CCCCCC" />
 
 ## <a name="bulk-assignments"></a>大量指派
 1.  若要一次新增多個訂閱者，請巡覽至 [管理訂閱者] 索引標籤。在上方功能區中，按一下 [大量新增]。 
 
-    <img alt="Bulk add" src="_img\assign-license-add\bulk-assign-add.png" style="border: 1px solid #CCCCCC" />
-
 2. 大量指派會使用 Microsoft Excel 範本來上傳訂閱者。 在 [Upload Multiple Subscribers] (上傳多位訂閱者)　對話方塊中，按一下 [下載] 來下載範本。 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
-
-    <img alt="Upload multiple subscribers" src="_img\assign-license-add\bulk-assign-upload.png" style="border: 1px solid #CCCCCC" />
 
 3.  在 Excel 試算表中，請將您想要指派訂用帳戶之個人的資訊填入欄位中。 參考是選擇性欄位。 如果您已正確填入範本的任何部分，則應該會看到描述問題的錯誤訊息。 完成時請將檔案儲存在本機。
 **為了協助確保順利上傳，請觀察下列最佳做法：**
     - 確定表單欄位未包含逗號。
     - 移除表單欄位 (例如使用者名稱) 前後的空格。
     - 請確定使用者名稱未包含兩部分名字或姓氏之間的額外空格 (例如，兩部分名字 (例如 "Maggie May") 不應該鍵入為 "Maggie  May"，因為系統不會修剪額外空格)。
-    <img alt="Bulk add template" src="_img\assign-license-add\bulk-template.png" style="border: 1px solid #CCCCCC" />
 
 4.  返回 Visual Studio 訂用帳戶管理入口網站，並在 [Upload Multiple Subscribers] (上傳多位訂閱者) 對話方塊中按一下 [瀏覽]。 巡覽至您儲存的 Excel 檔案，然後按一下 [確定]。 您會在螢幕上看到上傳進度。 
 
@@ -70,4 +62,3 @@ ms.locfileid: "34477375"
 
 上傳成功時，您會看到訂閱者清單和確認訊息。
 
-   <img alt="Upload complete" src="_img\assign-license-add\bulk-assign-upload-complete.png" style="border: 1px solid #CCCCCC" />
