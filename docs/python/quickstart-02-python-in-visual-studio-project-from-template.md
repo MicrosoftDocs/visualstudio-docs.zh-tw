@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957333"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37057020"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
@@ -37,11 +37,31 @@ ms.locfileid: "33957333"
     > [!Tip]
     > 當您開始專案時，強烈建議您立刻建立虛擬環境，因為大部分 Visual Studio 範本都會請您執行此作業。 當您新增或移除程式庫時，虛擬環境可持續維護您的專案實際需求。 您接著可以輕鬆地產生 `requirements.txt` 檔案，用來在其他開發電腦上 (使用原始檔控制時) 重新安裝那些相依性，以及在將專案部署到生產伺服器時使用。 如需虛擬環境與其優點的詳細資訊，請參閱[使用虛擬環境](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments)與[使用 requirements.txt 管理必要套件](../python/managing-required-packages-with-requirements-txt.md)。
 
-1. 在 Visual Studio 建立環境之後，查看 [方案總管] 中是否可看到 `app.py` 檔案與 `requirements.txt`。 開啟 `app.py` 以查看範本是否已提供和[快速入門 - 使用 Flask 建立 Web 應用程式](../ide/quickstart-python.md)中之程式碼類似的程式碼，以及是否有兩個新增的區段。
+1. 在 Visual Studio 建立環境之後，查看 [方案總管] 中是否可看到 `app.py` 檔案與 `requirements.txt`。 開啟 `app.py` 即可看到範本已提供和[快速入門 - 使用 Flask 建立 Web 應用程式](../ide/quickstart-python.md)中程式碼類似的程式碼，並新增了幾個區段。 下方顯示的程式碼均由範本建立，因此您不必自行在 `app.py` 貼入任何程式碼。
 
-    首先為一行 `wsgi_app = app.wsgi_app`，它在將應用程式部署到 Web 主機時十分有用。
+    程式碼會從必要的匯入開始：
 
-    再來則是啟動程式碼，可讓您透過環境變數設定主機和連接埠，而非使用硬式編碼。 此類程式碼可讓您輕鬆地控制開發和生產機器上的設定，而不需要變更程式碼：
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    接下來這行，在將應用程式部署到 Web 主機時相當實用：
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    再來是簡單函式上的路由裝飾項目，以定義檢視：
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    最後則是下方的啟動程式碼，可讓您透過環境變數來設定主機和連接埠，而不是對其寫入編碼。 此類程式碼可讓您輕鬆地控制開發和生產機器上的設定，而不需要變更程式碼：
 
     ```python
     if __name__ == '__main__':
@@ -56,7 +76,8 @@ ms.locfileid: "33957333"
 
 1. 選取 [偵錯] > [啟動但不偵錯] 以執行應用程式並將瀏覽器開啟到 `localhost:5555`。
 
-**問題：Visual Studio 還提供其他哪些 Python 範本？**
+
+  **問題：Visual Studio 還提供其他哪些 Python 範本？**
 
 **解答**：安裝 Python 工作負載後，Visual Studio 提供各種不同的專案範本，包括可用於 [Flask、Bottle 及 Django Web 架構](../python/python-web-application-project-templates.md)、Azure 雲端服務、不同機器學習案例，甚至還有範本可從包含 Python 應用程式的現有資料夾結構建立專案。 您可以透過 [檔案] > [新增] > [專案] 對話方塊選取 [Python] 語言節點與其子節點，來存取這些範本。
 

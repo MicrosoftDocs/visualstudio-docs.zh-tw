@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36235262"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -83,7 +84,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 ![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelens-code-changes.png)
 
-預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/vsts/tfs-server/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更此時間週期。
+預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](/tfs/server/ref/command-line/tfsconfig-cmd) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更此時間週期。
 
 若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更]：
 
@@ -205,23 +206,25 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 1. 移至包含相關聯[單元測試程式碼](../test/unit-test-your-code.md)的應用程式程式碼。
 
-2. 按 **Alt**+**3**，檢閱程式碼的測試。
+2. 若您尚未這麼做，請建置應用程式以載入 CodeLens 測試指標。 請確認[已建置組件的探索](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)已開啟。
+
+3. 按 **Alt**+**3**，檢閱程式碼的測試。
 
      ![CodeLens - 在 [程式碼編輯器] 中選擇測試狀態](../ide/media/codelens-choose-test-indicator.png)
 
-3. 如果您看到警告圖示 ![警告圖示](../ide/media/codelenstestwarningicon.png)，表示測試尚未執行，因此請執行它們。
+4. 如果您看到警告圖示 ![警告圖示](../ide/media/codelenstestwarningicon.png)，表示測試尚未執行，因此請執行它們。
 
      ![CodeLens - 檢視尚未執行的單元測試](../ide/media/codelens-tests-not-yet-run.png)
 
-4. 若要檢閱測試的定義，請按兩下 CodeLens 指示器視窗中的測試項目，在編輯器中開啟程式碼檔案。
+5. 若要檢閱測試的定義，請按兩下 CodeLens 指示器視窗中的測試項目，在編輯器中開啟程式碼檔案。
 
      ![CodeLens - 移至單元測試定義](../ide/media/codelens-unit-test-definition.png)
 
-5. 若要檢閱測試結果，請選擇測試狀態指標 (![測試失敗的圖示](../ide/media/codelenstestfailedicon.png)或![測試成功圖示](../ide/media/codelenstestpassedicon.png))，或按 **Alt**+**1**。
+6. 若要檢閱測試結果，請選擇測試狀態指標 (![測試失敗的圖示](../ide/media/codelenstestfailedicon.png)或![測試成功圖示](../ide/media/codelenstestpassedicon.png))，或按 **Alt**+**1**。
 
      ![CodeLens - 查看單元測試結果](../ide/media/codelens-unit-test-result.png)
 
-6. 若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄](#find-code-history)和連結的項目。
+7. 若要查看有多少人變更此測試、是誰變更此測試，或是對此測試做了多少變更，請[尋找您程式碼的記錄](#find-code-history)和連結的項目。
 
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
@@ -252,7 +255,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 - 請確定 CodeLens 已開啟。 移至 [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens]。
 
-- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
+- 如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/tfs/server/ref/command-line/tfsconfig-cmd)，確定程式碼索引已開啟。
 
 - 唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 確認您擁有[小組成員權限](/vsts/work/scale/multiple-teams)。
 
@@ -320,7 +323,11 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>問：我是否可以管理 CodeLens 處理程式碼的方式，以顯示記錄和連結項目？
 
-**答：** 可以。 如果您的程式碼位於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/vsts/tfs-server/command-line/tfsconfig-cmd)。
+**答：** 可以。 如果您的程式碼位於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](/tfs/server/ref/command-line/tfsconfig-cmd)。
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>問：當我初次開啟解決方案時，我的 CodeLens 測試指標不再顯示在檔案中。 該如何加以載入？
+
+**答：** 重建您的專案，讓 CodeLens 測試指標在您的檔案中載入。 請確認[已建置組件的探索](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)已開啟。 為了提升效能，Visual Studio 不再於程式碼檔案載入時，為測試指標擷取來源資訊。 測試指標會在**測試清單編輯器**中，在建置後或在您按兩下以瀏覽到測試時載入。
 
 ## <a name="see-also"></a>另請參閱
 

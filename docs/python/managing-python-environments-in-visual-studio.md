@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 05/22/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477570"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342745"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -87,7 +87,7 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 ![[Python Environments (Python 環境)] 視窗](media/environments-default-view.png)
 
-如果在清單中沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
+Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/) 來識別使用登錄來安裝的環境。 如果在清單中沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
 
 在清單中選取環境，會在 [概觀] 索引標籤上顯示該環境的各種屬性與指令。例如，您在上圖中可見，解譯器的位置是 `C:\Python36-32`。 使用環境清單下的下拉式清單，切換到不同的索引標籤，例如 [套件] 和 [IntelliSense]。 這些索引標籤描述於 [Python 環境視窗索引標籤參考](python-environments-window-tab-reference.md)。
 
@@ -118,7 +118,27 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 >
 > 不過，如果您使用檔案系統以手動方式移動解譯器和其環境時，Visual Studio 不會知道新的位置。 如需詳細資訊，請參閱[移動解譯器](installing-python-interpreters.md#moving-an-interpreter)。
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>修正無效的環境
+
+若 Visual Studio 找到環境的登錄項目，但解譯器的路徑無效，[Python 環境] 視窗就會以有刪除線的字型顯示名稱：
+
+![顯示無效環境的 [Python 環境] 視窗](media/environments-invalid-entry.png)
+
+若要修正您想保留的環境，請先嘗試使用其安裝程式的**修復**流程。 例如，標準 Python 3.x 的安裝程式即包含該選項。
+
+若要修正沒有修復選項的環境，或要移除無效的環境，請直接使用下列步驟修改登錄。 Visual Studio 會在您對登錄進行變更時，自動更新 [Python 環境] 視窗。
+
+1. 執行 `regedit.exe`。
+1. 若是 32 位元解譯器，請瀏覽到 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`；若是 64 位元解譯器，則請瀏覽到 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`。 若是 IronPython，請改為尋找 `IronPython`。
+1. 展開符合發佈的節點，例如 CPython 為 `PythonCore`，Anaconda 為 `ContinuumAnalytics`。 若是 IronPython，請展開版本號碼節點。
+1. 檢查 `InstallPath` 節點下的值：
+
+    ![一般 CPython 安裝的登錄項目](media/environments-registry-entries.png)
+
+    - 若環境仍存在於您的電腦上，請將 `ExecutablePath` 的值變更為正確位置。 如有必要，也請修正 `(Default)` 和 `WindowedExecutablePath` 值。
+    - 若環境不再存在於您的電腦上，而您想要從 [Python 環境] 視窗中予以移除，請刪除 `InstallPath` 的父節點，如上圖中的 `3.6`。
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>手動識別現有的環境
 
