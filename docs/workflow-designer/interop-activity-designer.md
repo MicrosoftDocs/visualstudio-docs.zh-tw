@@ -31,7 +31,7 @@ ms.locfileid: "31979070"
 
  [移轉](../workflow-designer/migration-activity-designers.md)包含分類<xref:System.Activities.Statements.Interop>活動只會出現在**工具箱**如果您的專案以完整的.NET Framework 4 為目標。
 
- 針對 C# 專案，您可以重新擬定專案目標，使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管 中**，然後選取**屬性**。 在**應用程式**索引標籤上，選取**NET Framework 4**選項**目標 framework**。 選取**是**按鈕**目標 Framework 變更**對話方塊，顯示詢問您是否確認這項變更。
+ 針對 C# 專案，您可以重新擬定專案目標，使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管 中**，然後選取**屬性**。 在**應用程式**索引標籤上，選取**.NET Framework 4**選項**目標 framework**。 選取**是**按鈕**目標 Framework 變更**對話方塊，顯示詢問您是否確認這項變更。
 
  對於 VB 專案，您可以重新擬定專案目標，使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管 中**，然後選取**屬性**。 在**編譯**索引標籤上，按一下 [**進階編譯選項**] 按鈕。 選取 **.Net Framework 4**從**目標 framework 清單**，然後按一下 **確定**。 按一下**是**按鈕**目標 Framework 變更**對話方塊，顯示詢問您是否確認這項變更。
 
