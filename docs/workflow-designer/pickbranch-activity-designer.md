@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976569"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755551"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 
@@ -25,34 +25,34 @@ ms.locfileid: "31976569"
 
 ## <a name="pickbranch"></a>PickBranch
 
-<xref:System.Activities.Statements.PickBranch> 物件包含在一個 <xref:System.Activities.Statements.Pick.Branches%2A> 活動的 <xref:System.Activities.Statements.Pick> 集合中。 每一個 <xref:System.Activities.Statements.PickBranch> 都包含在 <xref:System.Activities.Statements.Pick> 活動的分支中，而且可以因為部分做為觸發程序的傳入事件而執行。 如此一來 Windows 工作流程設計工具會提供事件架構控制流程模型。 每個 <xref:System.Activities.Statements.PickBranch> 都包含了 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 及 <xref:System.Activities.Statements.PickBranch.Action%2A>。
+<xref:System.Activities.Statements.PickBranch> 物件包含在一個 <xref:System.Activities.Statements.Pick.Branches%2A> 活動的 <xref:System.Activities.Statements.Pick> 集合中。 每一個 <xref:System.Activities.Statements.PickBranch> 都包含在 <xref:System.Activities.Statements.Pick> 活動的分支中，而且可以因為部分做為觸發程序的傳入事件而執行。 這種方式在工作流程設計工具會提供事件為基礎的控制流程模型。 每個 <xref:System.Activities.Statements.PickBranch> 都包含了 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 及 <xref:System.Activities.Statements.PickBranch.Action%2A>。
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活動設計工具
 
-**PickBranch**設計工具位於**控制流程**分類**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X)。
+存取權**PickBranch**設計工具中**控制流程**分類**工具箱**。
 
-兩個空<xref:System.Activities.Statements.PickBranch>物件與顯示名稱的**Branch1**和**Branch2**做為的項目建立的預設<xref:System.Activities.Statements.Pick>活動時**挑選**活動設計工具一開始會放到工作流程設計工具中。 這些個別<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**設計工具標頭或**屬性**針對每個分支的視窗。
+兩個空<xref:System.Activities.Statements.PickBranch>物件，顯示名稱**Branch1**並**Branch2**項目預設會建立<xref:System.Activities.Statements.Pick>活動時**挑選**活動設計工具一開始會放到工作流程設計工具中。 各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**設計工具的標頭或內**屬性**針對每個分支的視窗。
 
-有兩種方式新增<xref:System.Activities.Statements.PickBranch>物件的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具從**工具箱**或使用中的內容功能表內**挑選**設計介面：
+有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>物件的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**，或使用中的內容功能表內**挑選**設計介面：
 
-1.  **PickBranch**設計工具會建立<xref:System.Activities.Statements.PickBranch>時從拖曳**工具箱**並放入每個分支的**挑選**上的活動設計工具工作流程設計工具介面。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 拖曳時**PickBranch**設計工具拖曳到**挑選**設計工具，使用滑鼠，**挑選**設計工具會使用垂直的藍灰色帶，以指示<xref:System.Activities.Statements.PickBranch>會加入為某個特定的滑鼠位置。
+- **PickBranch**設計工具會建立<xref:System.Activities.Statements.PickBranch>當從拖曳**工具箱**然後放到其中的分支**挑選**上的活動設計工具工作流程設計工具介面。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 拖曳時**PickBranch**設計工具拖曳到**挑選**滑鼠，設計工具**挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。
 
-2.  以滑鼠右鍵按一下**挑選**活動設計工具 (但不是在**PickBranch**設計工具) 來取得內容功能表並選取**建立分支**即可新增<xref:System.Activities.Statements.PickBranch>。 請注意，新<xref:System.Activities.Statements.PickBranch>現存的右邊就會加入<xref:System.Activities.Statements.PickBranch>中的物件**挑選**設計工具。
+- 以滑鼠右鍵按一下**挑選**活動設計工具 (但不是深入探討**PickBranch**設計工具) 來取得內容功能表，再選取**Create Branch**來新增新的<xref:System.Activities.Statements.PickBranch>。 請注意，新<xref:System.Activities.Statements.PickBranch>新增至現有的權限<xref:System.Activities.Statements.PickBranch>中的物件**挑選**設計工具。
 
- **PickBranch**設計工具可以展開以顯示**觸發程序**和**動作**方塊或摺疊，只要按一下其標頭右邊 double 的插入號。 編輯<xref:System.Activities.Statements.PickBranch.Trigger%2A>和<xref:System.Activities.Statements.PickBranch.Action%2A>每個<xref:System.Activities.Statements.PickBranch>由活動放進**觸發程序**和**動作**其設計工具的方塊。
+**PickBranch**設計工具可以展開以顯示**觸發程序**並**動作**方塊，若要摺疊，只要按一下各個標題右邊的雙箭頭符號即可。 編輯<xref:System.Activities.Statements.PickBranch.Trigger%2A>並<xref:System.Activities.Statements.PickBranch.Action%2A>每個<xref:System.Activities.Statements.PickBranch>活動放進**觸發程序**並**動作**其設計工具的方塊。
 
- <xref:System.Activities.Statements.PickBranch>中的物件<xref:System.Activities.Statements.Pick.Branches%2A>集合<xref:System.Activities.Statements.Pick>物件，可以重新排列拖曳和卸除它們中的新位置**挑選**設計工具。 **挑選**設計工具會使用垂直的藍灰色帶，以指示<xref:System.Activities.Statements.PickBranch>加入為某個特定的滑鼠位置。
+<xref:System.Activities.Statements.PickBranch>中的物件<xref:System.Activities.Statements.Pick.Branches%2A>的集合<xref:System.Activities.Statements.Pick>物件，可以藉由拖放到新的位置中重新排列**挑選**設計工具。 **挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。
 
- 有兩個方法可以刪除 <xref:System.Activities.Statements.PickBranch>：
+有兩個方法可以刪除 <xref:System.Activities.Statements.PickBranch>：
 
-1.  選取**PickBranch**設計工具並將它刪除。
+- 選取  **PickBranch**設計工具並將它刪除。
+- 選取 [ **PickBranch**設計師] 中，按一下滑鼠右鍵取得操作功能表，然後選取**刪除**。
 
-2.  選取**PickBranch**設計工具中，按一下滑鼠右鍵，以取得操作功能表，再選取**刪除**。
-
- 請務必選取**PickBranch**設計工具中，選取其中一個內的活動其**觸發程序**或**動作**方塊不小心刪除其中的活動而非<xref:System.Activities.Statements.PickBranch>物件。
+務必選取**PickBranch**設計工具，因為其中一個內活動及其**觸發程序**或**動作**方塊不小心刪除其中的活動而非<xref:System.Activities.Statements.PickBranch>物件。
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>工作流程設計工具中的 PickBranch 屬性
- 下表顯示最為實用<xref:System.Activities.Statements.PickBranch>屬性，並說明如何在工作流程設計工具中使用它們。
+
+下表顯示最為實用<xref:System.Activities.Statements.PickBranch>屬性，並說明如何在工作流程設計工具中使用它們。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

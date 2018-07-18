@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace 擴充性 API 參考 |Microsoft 文件
+title: IntelliTrace 擴充性的 API 參考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457458"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433141"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 使用本節中的資訊，您可以使用 IntelliTrace 擴充性 API 來讀取及解碼應用程式中的 .itrace 檔案。  
@@ -31,5 +31,5 @@ ms.locfileid: "31457458"
  [IntelliTrace](../debugger/intellitrace.md)  
  提供如何使用 IntelliTrace 進行偵錯的詳細資訊。  
   
- [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [MSDN Code Gallery](https://code.msdn.microsoft.com/)  
  管理顯示如何使用 IntelliTrace 擴充性的範例應用程式。

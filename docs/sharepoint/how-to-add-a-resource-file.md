@@ -1,5 +1,5 @@
 ---
-title: 如何： 將資源檔 |Microsoft 文件
+title: 如何： 加入資源檔 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,42 +18,42 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 533deb22f37af012ab9c4fd3a8d369edad64ce06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766824"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756567"
 ---
-# <a name="how-to-add-a-resource-file"></a>如何： 將資源檔
-  將資源檔加入的命令所在的方案節點，在 [方案總管] 功能節點的捷徑功能表。 如需詳細資訊，請參閱[當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
+# <a name="how-to-add-a-resource-file"></a>如何： 加入資源檔
+  方案節點，然後在 [方案總管] 中的功能節點的捷徑功能表上，是將資源檔的命令。 如需詳細資訊，請參閱 <<c0> [ 當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
   
-### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>若要將全域資源檔案加入至 SharePoint 方案  
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>若要將全域資源檔新增至 SharePoint 方案  
   
-1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟 SharePoint 方案。  
+1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟 SharePoint 方案。  
   
-2.  在**方案總管] 中**，選擇 SharePoint 專案節點，然後在功能表列上選擇 [**專案** > **加入新項目**。  
+2.  在 **方案總管**，選擇 SharePoint 專案節點，然後在功能表列上選擇 **專案** > **加入新項目**。  
   
-3.  在**加入新項目**對話方塊方塊中，選擇**全域資源檔案**範本，然後選擇 [**新增**] 按鈕。  
+3.  中**加入新項目**對話方塊方塊中，選擇**全域資源檔**範本，然後選擇**新增** 按鈕。  
   
     > [!NOTE]  
-    >  只有在選取 SharePoint 專案項目時，會出現 全域資源檔案的專案項目範本。  
+    >  只有在選取 SharePoint 專案項目時，會出現全域資源檔案的專案項目範本。  
   
-4.  在**加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。  
+4.  在 **加入資源**對話方塊方塊中，選擇資源檔案，例如英文 （美國） 文化特性。  
   
-     這個步驟會加入至您的方案中使用的格式，資源的全域資源檔案 * x ***。*** 文化特性 ***。** resx，例如*Resource1.en US.resx*。  
+     這個步驟會將全域資源檔加入至您的方案格式，也就是資源 * x ***。*** 文化特性 ***。** resx，例如*Resource1.en US.resx*。  
   
-5.  當**資源編輯器**中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源加入至資源檔。  
+5.  當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。  
   
-### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>若要將功能資源檔加入至 SharePoint 功能  
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>若要將功能資源檔新增至 SharePoint 功能  
   
-1.  如果尚未開啟，在 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟方案。  
+1.  如果尚未在中開啟 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟方案。  
   
-2.  在**方案總管 中**，開啟快顯功能表下的功能名稱**功能** 節點，然後選擇 **加入功能資源**。  
+2.  在**方案總管 中**，開啟下的功能名稱的捷徑功能表**功能**節點，然後選擇**加入功能資源**。  
   
      這個步驟會加入資源檔格式，功能 * ResourceFileName ***。*** 文化特性 ***。** resx，例如*Feature1.en US.resx*。  
   
-3.  當**資源編輯器**中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源加入至資源檔。  
+3.  當**資源編輯器**以開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，將資源新增至資源檔。  
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  

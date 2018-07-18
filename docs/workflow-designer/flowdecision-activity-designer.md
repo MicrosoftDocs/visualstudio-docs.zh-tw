@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978131"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758333"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活動設計工具
 
@@ -28,16 +28,18 @@ ms.locfileid: "31978131"
 當流程可分支為兩個路徑時，請使用 <xref:System.Activities.Statements.FlowDecision>。 <xref:System.Activities.Statements.FlowDecision> 節點有 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 以及與以下兩種可能結果之一相關聯的 <xref:System.Activities.Statements.FlowNode>：<xref:System.Activities.Statements.FlowDecision.True%2A> 或 <xref:System.Activities.Statements.FlowDecision.False%2A>。 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 會加以評估，且此評估的值會判斷在 <xref:System.Activities.Statements.FlowNode> 內要處理的下一個 <xref:System.Activities.Statements.Flowchart>。
 
 ### <a name="using-the-flowdecision-designer"></a>使用 FlowDecision 設計工具
- **FlowDecision**設計工具位於**流程圖**分類**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **FlowDecision**設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面內**流程圖**活動設計工具。 這會建立<xref:System.Activities.Statements.FlowDecision>標示為**決策**內<xref:System.Activities.Statements.Flowchart>活動。 滑鼠停留在設計工具和**True**和**False**出現兩個分支的方形控點。
+**FlowDecision**設計工具位於**流程圖**類別**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤。 或者，選取**工具箱**從**檢視**功能表，或是按下**Ctrl**+**Alt** + **X**。
 
- 拖曳之後**FlowDecision**設計工具和其他設計工具到**流程圖**，節點可以連結在一起，以指定的執行順序。 若要建立來源節點間的連結 (包括**True**和**False**的分支**FlowDecision**) 與目的地節點，滑鼠停留在來源節點的設計工具和它的每一端上出現方形控點。 按一下方形控點，按住滑鼠按鈕加以拖曳到目的地節點中的另一個控點，此控點是當滑鼠游標移到目的地活動的設計工具上時，以相似方式顯示的控點。 放開滑鼠按鈕，這兩個節點之間就會建立連結，此連結會以箭號表示，從來源設計工具指向目的地設計工具。
+**FlowDecision**設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面內**流程圖**活動設計工具。 這會建立<xref:System.Activities.Statements.FlowDecision>標示**決策**內<xref:System.Activities.Statements.Flowchart>活動。 滑鼠停留在設計工具和 **，則為 True**並**False**出現兩個分支的方形控點。
 
- 狀態運算式<xref:System.Activities.Statements.FlowDecision.Condition%2A>可以依照輸入**條件**方塊**屬性**按一下的視窗上提示文字該處會指示 「 輸入 VB 運算式 」。
+拖曳之後**FlowDecision**設計工具和其他設計工具到**流程圖**，節點可以連結在一起，以指定的執行順序。 若要建立來源節點間的連結 (包括 **，則為 True**並**False**分支**FlowDecision**) 和目的地節點，滑鼠停留在來源節點的設計工具與每一面上出現方形控點。 按一下方形控點，按住滑鼠按鈕加以拖曳到目的地節點中的另一個控點，此控點是當滑鼠游標移到目的地活動的設計工具上時，以相似方式顯示的控點。 放開滑鼠按鈕，這兩個節點之間就會建立連結，此連結會以箭號表示，從來源設計工具指向目的地設計工具。
+
+運算式，指出<xref:System.Activities.Statements.FlowDecision.Condition%2A>可以使用大寫字母**條件**方塊**屬性**按一下的視窗，顯示提示文字 「 輸入 VB 運算式 」。
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision 屬性
- 下表顯示 <xref:System.Activities.Statements.FlowDecision> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。
+
+下表顯示 <xref:System.Activities.Statements.FlowDecision> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

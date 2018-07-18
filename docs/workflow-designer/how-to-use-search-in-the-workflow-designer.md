@@ -10,20 +10,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751659"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757964"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 
-為了方便建立更大型且更為複雜的工作流程，可以在工作流程設計工具中使用「搜尋」，依關鍵字來尋找項目。 請注意，設計工具不支援「取代」。 「搜尋」可在設計工具中尋找下列項目：
+為了方便建立更大型且更複雜的工作流程，您可以搜尋關鍵字所尋找的項目在工作流程設計工具內。 請注意，設計工具不支援「取代」。
 
 ## <a name="quick-find"></a>快速尋找
 
-快速尋找會在設計工具中，找出下列：
+快速尋找在設計工具中尋找下列：
 
 -   <xref:System.Activities.Activity> 物件、<xref:System.Activities.Statements.FlowNode> 物件、<xref:System.Activities.Statements.State> 物件、轉換及其他自訂流程控制項目的屬性。
 
@@ -33,24 +33,24 @@ ms.locfileid: "34751659"
 
 -   運算式
 
-### <a name="using-quick-find"></a>使用快速尋找
+### <a name="use-quick-find"></a>使用快速尋找
 
-1.  工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯**，**尋找和取代**，**快速尋找**。
+1.  工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯** > **尋找和取代** > **快速尋找**.
 
-2.  輸入搜尋詞彙**尋找**文字方塊中，按一下 **找下一個**。
+2.  輸入搜尋詞彙**Find what**文字方塊中，按一下 **尋找下一個**。
 
-3.  系統會在目前工作流程中尋找搜尋字詞。 下列螢幕擷取畫面顯示目前在設計工具中找到的活動顯示名稱。
+3.  搜尋字詞位於目前的工作流程。 下圖顯示位於設計工具中的活動顯示名稱：
 
-     ![Workflow Designer 中的搜尋結果](../workflow-designer/media/designersearch.png)
+   ![Workflow Designer 中的搜尋結果](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>檔案中尋找
 
-使用「檔案中尋找」將在工作流程檔案 (包含 XAML 檔案) 中尋找字串。
+在檔案中的尋找會在工作流程檔案，包括 XAML 檔案中，找出字串。
 
-### <a name="using-find-in-files"></a>使用檔案中尋找
+### <a name="use-find-in-files"></a>使用 檔案中尋找
 
-1.  在 Visual Studio 中，按**Ctrl + Shift + F**，或選取**編輯**，**尋找和取代**，**檔案中尋找**
+1.  在 Visual Studio 中按**Ctrl**+**Shift**+**F**，或選取**編輯** >  **尋找和取代** > **檔案中尋找**。
 
-2.  輸入搜尋的項目到**尋找**文字方塊中，按一下 **全部尋找**
+2.  輸入搜尋項目插入**Find what**文字方塊中，按一下 **全部尋找**。
 
-3.  尋找結果將會顯示在 Visual Studio**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符項目的活動。
+3.  尋找結果所示**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符的活動。

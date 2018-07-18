@@ -1,5 +1,5 @@
 ---
-title: O R 設計工具訊息
+title: O-R 設計工具訊息
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922306"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089049"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 
@@ -25,7 +25,7 @@ ms.locfileid: "31922306"
 
  [無法建立關聯\<關聯名稱 >-屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [無法建立關聯\<關聯名稱 >-屬性類型不相符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [無法建立關聯\<關聯名稱 >-屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [變更 DataContext 方法的傳回型別將無法復原](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
@@ -41,9 +41,9 @@ ms.locfileid: "31922306"
 
  [您要新增至此設計工具的物件使用了不同於設計工具目前所使用的資料連線](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [屬性\<屬性名稱 > 無法刪除](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [屬性\<屬性名稱 > 不能刪除](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [屬性\<屬性名稱 > 無法刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -61,5 +61,5 @@ ms.locfileid: "31922306"
 
 ## <a name="see-also"></a>另請參閱
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)
+- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

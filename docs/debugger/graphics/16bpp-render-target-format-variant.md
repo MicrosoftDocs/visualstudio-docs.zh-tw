@@ -1,5 +1,5 @@
 ---
-title: 16bpp 呈現目標格式變異 |Microsoft 文件
+title: 16bpp 呈現目標格式變異 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,28 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f8328b180c398cab5ff7fa0f29dfc578414e3a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474855"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433324"
 ---
-# <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
+# <a name="16-bpp-render-target-format-variant"></a>16 bpp 轉譯目標格式變異
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。  
   
 ## <a name="interpretation"></a>解譯  
- 呈現目標或背景緩衝區通常會使用 32bpp (每像素 32 位元數) 格式，例如 B8G8R8A8_UNORM。 32bpp 格式可能會耗用許多記憶體頻寬。 因為 B5G6R5_UNORM 格式是大小為 32bpp 格式一半的 16bpp 格式，所以使用它可以釋放記憶體頻寬的壓力，但會降低色彩逼真度。  
+ 呈現目標或背景緩衝區通常會使用 32 bpp （每像素 32 位元） 的格式，例如 B8G8R8A8_UNORM。 32 bpp 格式可能會耗用大量的記憶體頻寬。 因為 B5G6R5_UNORM 格式是 32 bpp 格式一半的大小以 16 bpp 格式，則使用它可以讓壓力的記憶體頻寬，但會降低的色彩逼真度。  
   
- 如果此變異顯示大量的效能提高，則可能表示您的應用程式耗用太多記憶體頻寬。 尤其是分析的畫面格有大量過度繪製，或包含許多 Alpha 混色時，效能可能會明顯提高。  
-  
- 如果應用程式所呈現的場景類型不需要再現高逼真度色彩，也不需要呈現目標具有 Alpha 色板，而且經常不包含平滑漸層 (容易受色彩逼真度降低的級區成品所影響)，請考慮使用 16bpp 呈現目標格式，來減少記憶體頻寬使用量。  
-  
- 如果應用程式中所呈現的場景，需要再現高逼真度色彩或 Alpha 色板，或是經常使用平滑漸層，請考慮使用其他策略來減少記憶體頻寬使用量；例如，減少過度繪製或 Alpha 透明混色數量、減少畫面格緩衝區的維度，或透過啟用壓縮或減少維度，來修改紋理資源以耗用較少的記憶體頻寬。 像往常一樣，您需要考慮所有這些最佳化伴隨的影像品質取捨。  
-  
- 如果您的應用程式切換至 16bpp 背景緩衝區會有所助益，但它是您交換鏈結的一部分，所以需要採取額外的步驟，因為 DXGI_FORMAT_B5G6R5_UNORM 不是使用 `D3D11CreateDeviceAndSwapChain` 或 `IDXGIFactory::CreateSwapChain` 建立的交換鏈結所支援的背景緩衝區格式。 您需要改成使用 `CreateTexture2D` 建立 B5G6R5_UNORM 格式呈現目標，並改向該呈現目標呈現。 接著，在交換鏈結上呼叫 Present 之前，請先使用呈現目標做為來源紋理來繪製整個螢幕的四分之一，以將呈現目標複製到交換鏈結背景緩衝區。 雖然這個額外步驟會耗用一些記憶體頻寬，但是大部分的呈現作業會耗用較少的頻寬，因為它們會影響 16bpp 呈現目標；如果這樣節省下來的頻寬，多於將呈現目標複製至交換鏈結背景緩衝區所耗用的頻寬，則會改善呈現效能。  
-  
- 透過使用 16bpp 畫面格緩衝區格式，可以讓使用並排呈現技術的 GPU 架構大幅提升效能，因為畫面格緩衝區的較大部分可能會放入每個並排的本機畫面格緩衝區快取。 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。  
+ 如果此變異顯示大量的效能提高，則可能表示您的應用程式耗用太多記憶體頻寬。 就能大幅提升效能，尤其是當分析的畫面格有大量過度繪製或 alpha 透明混色。
+
+16-bpp 呈現目標格式可以減少記憶體使用量的頻外，當您的應用程式具有下列條件：
+- 不需要高逼真度色彩。
+- 不需要 alpha 色頻。
+- Ofent 沒有平滑漸層 （也就是容易色彩逼真度降低條紋成品）。
+
+其他策略來減少記憶體頻寬包括：
+- 減少過度繪製或 alpha 透明混色數量。
+- 減少畫面格緩衝區的維度。
+- 減少紋理資源的維度。
+- 降低的紋理資源的壓縮。
+ 
+像往常一樣，您需要考慮所有這些最佳化伴隨的影像品質取捨。  
+
+屬於交換鏈結的應用程式將不支援 16 bpp 背景緩衝區格式 (DXGI_FORMAT_B5G6R5_UNORM)。 使用建立這些交換鏈結`D3D11CreateDeviceAndSwapChain`或`IDXGIFactory::CreateSwapChain`。 若要解決這項限制，請執行下列步驟：
+1. 使用建立 B5G6R5_UNORM 格式呈現目標`CreateTexture2D`並轉譯為目標。 
+2. 複製到交換鏈結四分之一轉譯目標繪製使用呈現目標做為來源紋理的全螢幕四組數字。
+3. 交換鏈結上呼叫 Present。
+
+ 如果這項策略可儲存更多的頻寬，非供將呈現目標複製到交換鏈結的四分之一，會改善呈現效能。
+
+ 使用並排的呈現技術的 GPU 架構可以使用 16 bpp 畫面格緩衝區格式，以查看效能優勢明顯。 這項改進是因為較大部份的畫面格緩衝區可容納每個並排的本機畫面格緩衝區快取中。 並排的呈現架構有時出現在行動電話話筒和平板電腦的 GPU 中；它們很少出現在此範圍之外。  
   
 ## <a name="remarks"></a>備註  
  每次呼叫可建立呈現目標的 `ID3D11Device::CreateTexture2D` 時，都會將呈現目標格式重設為 DXGI_FORMAT_B5G6R5_UNORM。 特別是 pDesc 中所傳遞的 D3D11_TEXTURE2D_DESC 物件描述呈現目標時，會覆寫此格式；亦即：  
@@ -46,9 +60,9 @@ ms.locfileid: "31474855"
  因為 B5G6R5 格式沒有 Alpha 色板，所以此變異不會保留 Alpha 內容。 如果您應用程式的呈現需要呈現目標中有 Alpha 色板，則不能只是切換至 B5G6R5 格式。  
   
 ## <a name="example"></a>範例  
- **16bpp 呈現目標格式**variant 可重現的藉由建立呈現目標`CreateTexture2D`使用如下的程式碼：  
+ **16 bpp 呈現目標格式**變體，即可重現建立使用呈現目標的`CreateTexture2D`使用如下的程式碼：  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC target_description;  
   
 target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  

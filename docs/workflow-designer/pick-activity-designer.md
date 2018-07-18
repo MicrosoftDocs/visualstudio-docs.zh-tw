@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975428"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757747"
 ---
 # <a name="pick-activity-designer"></a>Pick 活動設計工具
 
@@ -25,15 +25,13 @@ ms.locfileid: "31975428"
 
 ## <a name="the-pick-activity"></a>Pick 活動
 
-<xref:System.Activities.Statements.Pick> 活動包含 <xref:System.Activities.Statements.PickBranch> 物件的集合，<xref:System.Activities.Statements.Pick> 活動可因部分做為觸發的傳入事件而執行這些物件中的其中一個。 如此一來 Windows 工作流程設計工具會提供事件架構控制流程模型。 每個 <xref:System.Activities.Statements.PickBranch> 都包含了 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 及 <xref:System.Activities.Statements.PickBranch.Action%2A>。 在開頭<xref:System.Activities.Statements.Pick>活動執行、 所有觸發程序活動<xref:System.Activities.Statements.PickBranch>排程項目。 第一個活動完成時，就會排程對應的動作活動，然後取消其他所有觸發活動。
+<xref:System.Activities.Statements.Pick> 活動包含 <xref:System.Activities.Statements.PickBranch> 物件的集合，<xref:System.Activities.Statements.Pick> 活動可因部分做為觸發的傳入事件而執行這些物件中的其中一個。 這種方式在工作流程設計工具會提供事件為基礎的控制流程模型。 每個 <xref:System.Activities.Statements.PickBranch> 都包含了 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 及 <xref:System.Activities.Statements.PickBranch.Action%2A>。 在開頭<xref:System.Activities.Statements.Pick>活動的執行中，所有觸發程序活動<xref:System.Activities.Statements.PickBranch>排程項目。 第一個活動完成時，就會排程對應的動作活動，然後取消其他所有觸發活動。
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活動設計工具
 
-**挑選**活動設計工具位於**控制流程**分類**工具箱**，即可存取的哪一個**工具箱**工作流程設計工具 索引標籤 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
+存取權**挑選**中的活動設計工具**控制流程**分類**工具箱**。 **挑選**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，只要通常放置活動設計工具，例如在**序列**活動設計工具。 後放入工作流程設計工具，它會建立<xref:System.Activities.Statements.Pick>活動，其中預設包含兩個空<xref:System.Activities.Statements.PickBranch>活動為具有項目會顯示 Branch1 和 Branch2 名稱。 各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**活動設計工具的標頭或內**屬性**針對每個分支的視窗。
 
-**挑選**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面上，只要通常放置活動設計工具，例如內部**順序**活動設計工具。 之後放入工作流程設計工具，它會建立<xref:System.Activities.Statements.Pick>活動，其中預設包含兩個空<xref:System.Activities.Statements.PickBranch>活動為具有項目會顯示 Branch1 和 Branch2 名稱。 這些個別<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**活動設計工具的標頭或**屬性**針對每個分支的視窗。
-
-有兩種方式新增<xref:System.Activities.Statements.PickBranch>活動的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具從**工具箱**或使用中的內容功能表內**挑選**設計介面。 如需詳細資訊，請參閱[PickBranch](../workflow-designer/pickbranch-activity-designer.md)主題。 請注意，只有項目可以置於**挑選**活動設計工具是**PickBranch**活動設計工具。
+有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>活動的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**或使用中的內容功能表內**挑選**設計介面。 如需詳細資訊，請參閱 < [PickBranch](../workflow-designer/pickbranch-activity-designer.md)主題。 請注意，唯一項目可以置於**挑選**活動設計工具**PickBranch**活動設計工具。
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Pick 活動屬性
 

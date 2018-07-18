@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers |Microsoft 文件
+title: IDiaEnumLineNumbers |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0b457a0efef1c860be7174f012575aec64f99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463272"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057317"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-列舉各種資料來源中所包含的行號。  
+列舉各種資料來源中包含的行號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,18 +35,18 @@ IDiaEnumLineNumbers : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|擷取[IEnumVARIANT 介面](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)這個列舉值的版本。|  
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|擷取之行號的數字。|  
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|透過索引擷取的行號。|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|擷取指定的數目的列舉順序中的行號。|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|  
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|擷取線數字數目。|  
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|透過索引中擷取的行號。|  
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|擷取指定的數目的列舉型別序列中的行號。|  
 |[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|略過指定的數目的列舉順序中的行號。|  
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|列舉序列重設為開頭。|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|將列舉型別序列重設到開頭。|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
   
 ## <a name="remarks"></a>備註  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面藉由呼叫下列方法之一取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面：  
+ 這個介面藉由呼叫其中一項中的下列方法取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面：  
   
 -   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
@@ -59,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>範例  
- 這個範例示範如何取得`IDiaEnumLineNumbers`從工作階段的介面。 在此情況下，此範例示範如何取得函式的行數字列舉 (由`pSymbol`)。 使用行號的更完整的範例，請參閱[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)介面。  
+ 此範例示範如何取得`IDiaEnumLineNumbers`從工作階段的介面。 在此情況下，此範例會示範如何取得函式的行數字列舉 (由`pSymbol`)。 使用行號的更完整範例，請參閱 < [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)介面。  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  

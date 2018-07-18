@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974919"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758228"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活動設計工具
 
@@ -26,7 +26,7 @@ ms.locfileid: "31974919"
 
 ## <a name="using-the-statemachine-activity-designer"></a>使用 StateMachine 活動設計工具
 
-若要加入<xref:System.Activities.Statements.StateMachine>活動，拖曳**StateMachine**活動設計工具，從**狀態機器**區段**工具箱**並將它放入 Windows 工作流程設計工具介面。 若要加入至這個子狀態<xref:System.Activities.Statements.StateMachine>活動，拖曳<xref:System.Activities.Statements.State>或<xref:System.Activities.Core.Presentation.FinalState>從**工具箱**並將其放置**StateMachine**。
+新增<xref:System.Activities.Statements.StateMachine>活動，拖曳**StateMachine**活動設計工具，從**狀態機器**一節**工具箱**並將它放入工作流程設計工具介面。 要加入至這個子狀態<xref:System.Activities.Statements.StateMachine>活動，拖曳<xref:System.Activities.Statements.State>或<xref:System.Activities.Core.Presentation.FinalState>從**工具箱**拖曳至**StateMachine**。
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 StateMachine 活動屬性
 
