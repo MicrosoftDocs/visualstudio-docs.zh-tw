@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式建立會議邀請 |Microsoft 文件
+title: 如何： 以程式設計方式建立會議邀請
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02a3e462e356ce3bf144ca51c0d62162596188b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5cada5d337eb4f72caf9077afc9bcd42706b21d1
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257367"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>如何：以程式設計方式建立會議邀請
+# <a name="how-to-programmatically-create-a-meeting-request"></a>如何： 以程式設計方式建立會議邀請
   本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,6 +35,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>另請參閱  
  [使用行事曆項目](../vsto/working-with-calendar-items.md)   
- [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

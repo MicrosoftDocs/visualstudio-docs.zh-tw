@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式將資料列和資料行加入至 Word 表格 |Microsoft 文件
+title: 如何： 以程式設計方式將資料列和資料行加入至 Word 表格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5058665c0c6d882e41d534d51a398ae90e0e03e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255885"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以程式設計方式在 Word 表格中加入列和欄
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何： 以程式設計方式將資料列和資料行加入至 Word 表格
   在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,21 +35,21 @@ ms.lasthandoff: 04/16/2018
 > [!IMPORTANT]  
 >  只有在使用下列任何專案範本建立的專案中，才能執行此程式碼：  
 >   
->  -   Word 2013 文件  
+> -   Word 2013 文件  
 > -   Word 2013 範本  
 > -   Word 2010 文件  
 > -   Word 2010 範本  
 >   
->  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱[How to： 目標 Office 應用程式透過主要 Interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+>  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後您必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
-#### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
+### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。  
   
      [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
+### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。  
   
@@ -61,16 +62,16 @@ ms.lasthandoff: 04/16/2018
 > [!IMPORTANT]  
 >  只有在使用 Word VSTO 增益集範本建立的專案中，才能執行此程式碼。  
 >   
->  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱[How to： 目標 Office 應用程式透過主要 Interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+>  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後您必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
-#### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
+### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
+### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
   
 1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。  
   
@@ -80,6 +81,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>另請參閱  
  [如何： 以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)   
  [如何： 以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [如何： 以程式設計方式填入 Word 表格文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

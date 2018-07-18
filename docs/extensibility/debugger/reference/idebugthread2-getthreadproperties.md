@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties |Microsoft 文件
+title: IDebugThread2::GetThreadProperties |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19c31fdc648d59879e03d97862f2b9518720a3eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76b2f11e53f8fca5fdf277ce982bcb767d7c8828
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120812"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234599"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 取得描述這個執行緒的屬性。  
@@ -43,19 +43,19 @@ int GetThreadProperties (
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，可判斷哪些欄位的`ptp`會先填入。  
+ [in]從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，決定哪些欄位`ptp`是要填入。  
   
  `ptp`  
- [in、 out]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構，填入這些執行緒的內容。  
+ [in、 out]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)執行緒的屬性會填入的結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  從這個方法傳回的資訊通常會顯示在**執行緒**偵錯視窗。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CProgram`實作物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。  
   
 ```cpp  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  

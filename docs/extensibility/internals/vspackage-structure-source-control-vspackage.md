@@ -1,5 +1,5 @@
 ---
-title: VSPackage 結構 (來源控制 VSPackage) |Microsoft 文件
+title: VSPackage 結構 (原始檔控制 VSPackage) |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,67 +14,68 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13b811b504259bf10440419b3cb4029a4c239c5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d36e31db9c47325e62fe759cd5030c5f24fb73be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142785"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057614"
 ---
-# <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (來源控制 VSPackage)
-原始檔控制封裝 SDK 提供的指導方針建立 VSPackage，允許將他或她原始檔控制功能與整合原始檔控制實施者[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。 VSPackage 是 COM 元件，通常會視需要而載入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 為基礎的服務，其登錄項目中的封裝會通告。 每個 VSPackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常會使用所提供的服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 和 proffers 自己的某些服務。  
-  
- VSPackage 會宣告其功能表項目，並建立透過.vsct 檔的預設項目狀態。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 會顯示功能表項目處於此狀態直到載入 VSPackage。 接著，VSPackage 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。  
-  
-## <a name="source-control-package-characteristics"></a>原始檔控制封裝特性  
- VSPackage 緊密整合到原始檔控制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
-  
- VSPackage 語意包括：  
-  
--   必定正在 VSPackage 實作介面 (`IVsPackage`介面)  
-  
--   UI 命令實作 (.vsct 檔與實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)  
-  
--   使用 VSPackage 的登錄[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
-  
- 原始檔控制 VSPackage 必須與其進行通訊這些其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實體：  
-  
--   專案  
-  
--   編輯器  
-  
--   方案  
-  
--   Windows  
-  
--   執行中的文件表格  
-  
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>可以使用的 visual Studio 環境服務  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>  
-  
- SVsRegisterScciProvider 服務  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>  
-  
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP 介面實作，而且呼叫  
- 原始檔控制封裝是 VSPackage，以及因此它可以直接互動會向其他 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 為了提供全面性的原始檔控制功能，原始檔控制 VSPackage 可以處理專案或殼層所提供的介面。  
-  
- 在每個專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>中的專案被視為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 不過，這個介面不特製化不足以原始檔控制。 必須是來源底下的專案控制實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>。 若要查詢其內容的專案，並提供它圖像 （glyph） 和繫結資訊 （所需的資訊來建立連接的伺服器位置與專案下的磁碟位置之間的原始檔控制 VSPackage 便會使用這個介面原始檔控制）。  
-  
- 實作 VSPackage 的原始檔控制<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，依次讓專案，以自行註冊為原始檔控制和擷取其狀態的圖像 （glyph）。  
-  
- 原始檔控制 VSPackage 必須考量的介面的完整清單，請參閱[相關服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。  
-  
-## <a name="see-also"></a>另請參閱  
- [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)   
- [相關的服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
+# <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 結構 (原始檔控制 VSPackage)
+
+原始檔控制封裝 SDK 會提供建立 VSPackage 的指導方針可讓原始檔控制實作者，他或她的原始檔控制功能整合在 Visual Studio 環境。 VSPackage 是通常視需要載入由 Visual Studio 整合式的開發環境 (IDE) 會由其登錄項目中的封裝公告服務為基礎的 COM 元件。 每個 VSPackage 必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常會使用 Visual Studio IDE 所提供的服務，並提供其本身的某些服務。
+
+VSPackage 會宣告其功能表項目，並建立透過.vsct 檔的預設項目狀態。 Visual Studio IDE 會顯示功能表項目處於此狀態，直到載入 VSPackage。 接著，VSPackage 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>呼叫方法來啟用或停用功能表項目。
+
+## <a name="source-control-package-characteristics"></a>原始檔控制封裝特性
+
+原始檔控制 VSPackage 已完全整合至 Visual Studio 中。 VSPackage 語意包括：
+
+-   因為 VSPackage 實作介面 (`IVsPackage`介面)
+
+-   UI 命令實作 (.vsct 檔並實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面)
+
+-   使用 Visual Studio VSPackage 的註冊。
+
+原始檔控制 VSPackage 這些其他的 Visual Studio 實體必須與通訊：
+
+-   專案
+
+-   編輯器
+
+-   方案
+
+-   Windows
+
+-   執行中的文件表格
+
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio 環境服務使用
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
+
+SVsRegisterScciProvider 服務
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>
+
+<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
+
+### <a name="vsip-interfaces-implemented-and-called"></a>VSIP 介面實作，並呼叫
+
+原始檔控制套件的 VSPackage，且因此可直接與其他已向 Visual Studio 的 Vspackage 中互動。 為了提供原始檔控制功能的完整範圍，原始檔控制 VSPackage 可以處理專案或殼層所提供的介面。
+
+在 Visual Studio 中的每個專案必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>視為 Visual Studio IDE 中的專案。 不過，此介面不特製化足夠用於原始檔控制。 應該是來源底下的專案控制實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>。 這個介面是由原始檔控制 VSPackage 來查詢其內容的專案，並提供它圖像 （glyph） 和繫結資訊 （所需的資訊來建立的伺服器位置與專案下的磁碟位置之間的連線原始檔控制）。
+
+原始檔控制 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，這可讓專案以註冊其本身的原始檔控制，並擷取其狀態的圖像 （glyph）。
+
+原始檔控制 VSPackage 必須考量的介面的完整清單，請參閱 <<c0> [ 相關的服務與介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。
+
+## <a name="see-also"></a>另請參閱
+
+- [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)
+- [相關的服務和介面](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

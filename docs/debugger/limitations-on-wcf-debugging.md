@@ -1,5 +1,5 @@
 ---
-title: WCF 偵錯的限制 |Microsoft 文件
+title: WCF 偵錯的限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a865a9852b8a6700e250225244546567967257de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476994"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058519"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 您可以使用三種方式開始對 WCF 服務進行偵錯：  
@@ -47,16 +47,16 @@ ms.locfileid: "31476994"
   
 -   您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     </system.web>  
     ```  
   
-     這個程式碼只需要加入一次。 藉由編輯.config 檔案，或藉由附加至服務，您可以加入下列程式碼**附加至處理序**。 當您使用**附加至處理序**服務偵錯程式碼會自動加入.config 檔案。 完成這個動作後，您就可以進行偵錯及逐步執行服務，而不需要編輯 .config 檔案。  
+     這個程式碼只需要加入一次。 藉由編輯.config 檔案，或藉由使用附加至服務，您可以新增此程式碼**附加至處理序**。 當您使用**附加至處理序**服務偵錯程式碼會自動新增至.config 檔案。 完成這個動作後，您就可以進行偵錯及逐步執行服務，而不需要編輯 .config 檔案。  
   
 ## <a name="limitations-on-stepping-out-of-a-service"></a>跳離服務的限制  
- 跳離服務並返回用戶端的限制，與逐步執行服務所述的限制相同。 此外，您必須將偵錯工具附加至用戶端。 如果您要對用戶端進行偵錯並逐步執行服務，則偵錯工具會保持附加至服務的狀態。 這是 true 使用來啟動用戶端是否**開始偵錯**或附加至用戶端使用**附加至處理序**。 如果您藉由附加至服務的方式開始進行偵錯，則偵錯工具尚未附加至用戶端。 在此情況下，如果您必須跳離服務並傳回給用戶端，您必須先使用**附加至處理序**以手動方式附加至用戶端。  
+ 跳離服務並返回用戶端的限制，與逐步執行服務所述的限制相同。 此外，您必須將偵錯工具附加至用戶端。 如果您要對用戶端進行偵錯並逐步執行服務，則偵錯工具會保持附加至服務的狀態。 這適用於使用來啟動用戶端是否**開始偵錯**或使用附加至用戶端**附加至處理序**。 如果您藉由附加至服務的方式開始進行偵錯，則偵錯工具尚未附加至用戶端。 在此情況下，如果您必須跳離服務並傳回給用戶端，您必須先使用**附加至處理序**以手動方式附加至用戶端。  
   
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>自動附加至服務的限制  
  自動附加至服務具有下列限制：  
@@ -69,17 +69,17 @@ ms.locfileid: "31476994"
   
 -   您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     <system.web>  
     ```  
   
 ## <a name="self-hosting"></a>自我裝載  
- A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 如需如何在自我裝載的服務進行偵錯資訊，請參閱[如何： 偵錯之自我裝載 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。  
+ A*自我裝載的服務*是 iis 中，WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 如需如何偵錯自我裝載的服務的資訊，請參閱[如何： 偵錯自我裝載 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。  
   
 ## <a name="self-hosting"></a>自我裝載  
- 若要啟用的偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式， [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 之前必須先安裝[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。 如果[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]之前先安裝[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5，就會發生錯誤時嘗試進行偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式。 錯誤訊息為「無法自動逐步執行伺服器」。 若要修正此問題，請使用 Windows**控制台** > **程式和功能**修復您[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。  
+ 若要啟用的偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]之前，則必須安裝 3.0 或 3.5[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。 如果[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]之前先安裝[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5，就會發生錯誤時您嘗試偵錯[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]3.0 或 3.5 應用程式。 錯誤訊息為「無法自動逐步執行伺服器」。 若要修正此問題，請使用 Windows**控制台中** > **程式和功能**修復您[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安裝。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   

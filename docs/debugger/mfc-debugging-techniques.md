@@ -1,5 +1,5 @@
 ---
-title: MFC 偵錯技術 |Microsoft 文件
+title: MFC 偵錯技術 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059252"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
@@ -64,14 +65,14 @@ ms.lasthandoff: 04/18/2018
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC 提供了一個特殊[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)硬式編碼的中斷點，在原始程式碼中的函式：  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  在 Intel 平台上， `AfxDebugBreak` 會產生下列會在原始程式碼裡而非在核心 (Kernel) 程式碼中斷的程式碼：  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  下列範例顯示一些您可以使用 **TRACE** 巨集的方式。 就像 `printf`一樣， **TRACE** 巨集可以處理許多引數。  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  TRACE 巨集適當處理 char * 和 wchar_t\*參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  如果您不要以 `DEBUG_NEW` 取代 **new**來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
   
-1.  建立 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) 成員函式。 這會建立第一個記憶體快照。  
+1.  建立[CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2)物件，然後呼叫[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)成員函式。 這會建立第一個記憶體快照。  
   
 2.  程式執行記憶體配置和解除配置操作之後，會建立另一個 `CMemoryState` 物件並且呼叫此物件的 `Checkpoint` 。 這會取得記憶體使用的第二個快照。  
   
-3.  建立第三個 `CMemoryState` 物件並呼叫其 [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 成員函式，會提供兩個先前的 `CMemoryState` 物件作為引數。 如果兩種記憶體狀態之間有差異， `Difference` 函式會傳回非零值。 這表示有些記憶體區塊沒有解除配置。  
+3.  建立第三個`CMemoryState`物件並呼叫其[cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference)成員函式，做為引數提供兩個先前`CMemoryState`物件。 如果兩種記憶體狀態之間有差異， `Difference` 函式會傳回非零值。 這表示有些記憶體區塊沒有解除配置。  
   
      這個範例會顯示程式碼看起來的樣子：  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -188,18 +189,18 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     請注意，記憶體檢查陳述式前後會以包圍 **#ifdef _DEBUG / #endif**區塊，使得它們只能在程式的偵錯版本編譯。  
+     請注意，記憶體檢查陳述式會括住 **#ifdef _DEBUG / #endif**區塊，使得它們只會中編譯程式的偵錯版本。  
   
-     您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 幫助您尋找流失的記憶體。  
+     既然您已經知道有記憶體流失存在，您可以使用另一個成員函式， [cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics)幫助您找到它。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 檢視記憶體統計資料  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 函式會查看兩個記憶體狀態物件，並偵測開頭和結尾狀態之間任何沒有從堆積解除配置的物件。 在您已擷取記憶體快照並使用 `CMemoryState::Difference`比較這些快照之後，您可以呼叫 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 取得沒有解除配置之物件的詳細資訊。  
+ [Cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference)函式會查看兩個記憶體狀態物件，並偵測任何沒有從開頭和結尾狀態之間的堆積解除配置的物件。 在擷取記憶體快照並比較這些之後使用`CMemoryState::Difference`，您可以呼叫[cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics)取得尚未解除配置物件的相關資訊。  
   
  參考下列範例：  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  從此範例的傾印看起來會像這樣：  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [本主題內容](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印  
- 在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince)來傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
+ 在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 傾印所有物件配置自上次[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
   
 > [!NOTE]
 >  您必須先 [啟用診斷追蹤](#BKMK_Enabling_Memory_Diagnostics)，才能使用 MFC 物件傾印。  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  下列程式碼會比較兩個記憶體狀態來測試記憶體流失，如果偵測到遺漏便會傾印所有物件：  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  傾印的內容看起來像這樣：  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> 解譯記憶體傾印  
  請看此物件傾印的詳細內容：  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  產生這種傾印的程式只有兩種明確的配置，一種是在堆疊上，另一種是在堆積上：  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` 建構函式 (Constructor) 需要三個 `char`指標的引數 (用來初始化 `CString` 成員變數)。 在記憶體傾印裡，您可以看到 `CPerson` 物件和三個非物件區塊 (3、4 和 5)。 這些物件會儲存 `CString` 成員變數字元，且在不會在叫用 (Invoke) `CPerson` 物件解構函式 (Destructor) 刪除。  
   
- 區塊編號 2 是 `CPerson` 物件本身。 `$51A4` 代表區塊的位址且後面跟著物件的內容 (由 `CPerson`DumpAllObjectsSince`Dump` 呼叫時，由 [::](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince)所輸出)。  
+ 區塊編號 2 是 `CPerson` 物件本身。 `$51A4` 代表區塊的位址且後面跟著物件，因為它所輸出的內容`CPerson`::`Dump`呼叫時[DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)。  
   
  您可以由區塊編號 1 的順序號碼和大小猜想出它與 `CString` 框架變數相關，這些資訊符合 `CString` 框架變數裡的字元數字。 框架上配置的變數在框架超過範圍 (Scope) 時會自動解除配置。  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  一般來說，您不必擔心與框架變數相關的堆積物件，因為它們會在框架變數超過範圍時自動解除配置。 若要避免在記憶體診斷傾印裡發生混亂，您應該定位 `Checkpoint` 呼叫，這樣它們會在框架變數範圍的外部。 例如，將範圍括號放在前述配置程式碼的前後，如下所示：  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  加了範圍括號，這個範例的記憶體傾印如下：  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -338,7 +339,7 @@ Phone #: 581-0215
   
  **非物件配置**  
   
- 請注意，有些配置是物件 (例如 `CPerson`)，而有些則是非物件配置。 「 非物件配置 」 所配置的物件不是衍生自`CObject`或基本 C 類型，例如配置`char`， `int`，或`long`。 如果 **CObject**衍生類別配置額外空間 (例如為內部緩衝區)，則該類物件便會顯示物件和非物件配置。  
+ 請注意，有些配置是物件 (例如 `CPerson`)，而有些則是非物件配置。 「 非物件配置 」 是配置的物件不是衍生自`CObject`或基本 C 類型，例如配置`char`， `int`，或`long`。 如果 **CObject**衍生類別配置額外空間 (例如為內部緩衝區)，則該類物件便會顯示物件和非物件配置。  
   
  **防止記憶體流失**  
   
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  然而，對於堆積上的物件配置，您必須明確地刪除物件以防止記憶體流失。 若要清除先前範例裡最後的記憶體流失，請參考下列程式碼，刪除配置在堆積的 `CPerson` 物件：  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [本主題內容](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
- 當您從 [CObject](/cpp/mfc/reference/cobject-class)衍生類別時，您可在使用 `Dump` DumpAllObjectsSince [來傾印物件至](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) 輸出視窗 [時，覆寫](../ide/reference/output-window.md)成員函式以提供額外的資訊。  
+ 當您衍生的類別[CObject](/cpp/mfc/reference/cobject-class)，您可以覆寫`Dump`成員函式，以提供其他資訊，當您使用[DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)來傾印物件至[輸出視窗](../ide/reference/output-window.md)。  
   
  `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  `Dump` 函式的宣告看起來像這樣：  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  在下列範例裡， `Dump` 函式先呼叫基底類別的 `Dump` 函式。 然後將每個成員變數的簡短說明和成員的值一起寫入至診斷資料流。  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  您必須提供 `CDumpContext` 引數來指定傾印的輸出位置。 MFC 的偵錯版本提供一個可以傳送輸出至偵錯工具的預先定義 `CDumpContext` 物件 (名為 `afxDump` )。  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  
@@ -416,9 +417,9 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小  
  大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：  
   
-1.  重建 MFC 程式庫使用[/Z7、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項，而不是 **/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。  
+1.  重建使用 MFC 程式庫[/z7，/Zi，/ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項，而不是 **/z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。  
   
-2.  重建 MFC 程式庫沒有偵錯資訊 (沒有[/Z7、 /Zi、 /ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項)。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。  
+2.  重建 MFC 程式庫，沒有偵錯資訊 (沒有[/z7，/Zi，/ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)選項)。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。  
   
 3.  只以選取模組的偵錯資訊建置您自己的應用程式，如下所述。  
   
@@ -433,15 +434,15 @@ pMyPerson->Dump( afxDump );
   
 3.  首先，您要建立新專案組態。  
   
-    1.  在**\<專案 > 屬性頁**對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。  
+    1.  在 [ **\<專案 > 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。  
   
-    2.  在 [組態管理員對話方塊](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在**組態**欄中，選取**\<新增...>**。  
+    2.  在 [組態管理員對話方塊](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 **組態**欄中，選取**\<新增...>**。  
   
     3.  在 [新增專案組態對話方塊](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
   
     4.  在 [ **複製設定值** ] 清單裡，選擇 [ **發行**]。  
   
-    5.  按一下**確定**關閉**新專案組態** 對話方塊。  
+    5.  按一下 [ **[確定]** 以關閉**新的專案組態**] 對話方塊。  
   
     6.  關閉 [ **組態管理員** ] 對話方塊。  
   
@@ -471,11 +472,11 @@ pMyPerson->Dump( afxDump );
   
     4.  在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
   
-    5.  在屬性方格裡，尋找**偵錯資訊格式。**  
+    5.  在 [屬性] 方格中，尋找**偵錯資訊格式。**  
   
     6.  按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
   
-    7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊 (**組態屬性**資料夾， **C/c + +** 子資料夾，**先行編譯標頭**類別)。  
+    7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊中 (**組態屬性**資料夾中， **C/c + +** 子資料夾，**先行編譯標頭**類別)。  
   
 7.  從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   

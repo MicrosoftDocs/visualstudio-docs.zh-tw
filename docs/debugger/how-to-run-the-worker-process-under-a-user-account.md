@@ -1,5 +1,5 @@
 ---
-title: 如何： 執行背景工作處理序的使用者帳戶 |Microsoft 文件
+title: 如何： 執行背景工作處理序，使用者帳戶 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475750"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057183"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
 
  > [!IMPORTANT]
- > 從 Windows Server 2008 R2 開始，我們建議使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區身分識別。
+ > 從 Windows Server 2008 R2 開始，我們建議您使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區識別。
   
 ## <a name="procedure"></a>程序  
   
@@ -40,7 +40,7 @@ ms.locfileid: "31475750"
   
 1.  開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。  
   
-2.  尋找&lt;processModel&gt;區段，然後將 user 和 password 屬性變更為的名稱和您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼。  
+2.  尋找&lt;processModel&gt;區段，然後將 user 和 password 屬性變更為您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼與名稱。  
   
 3.  儲存 machine.config 檔。  
   
@@ -58,17 +58,17 @@ ms.locfileid: "31475750"
   
 5.  開啟 Windows 命令提示，然後執行下列命令重設伺服器：  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     — 或 —  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  
   
-6.  找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，然後選擇**屬性**快顯功能表。  
+6.  找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇**屬性**快顯功能表。  
   
 7.  在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。  
   

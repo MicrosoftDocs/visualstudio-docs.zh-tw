@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 偵錯目前&#39;t 可能因為在系統上已啟用核心偵錯 |Microsoft 文件
+title: 錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482109"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058720"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯目前&#39;t 可能因為在系統上已啟用核心偵錯工具
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   在命令提示中，輸入：  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  在命令提示中，輸入：  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -76,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>若要停用所有工作階段的核心偵錯 (其他 Windows 作業系統)  
   
-1.  在您的系統磁碟機上尋找 boot.ini (通常是 c:\\)。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：  
+1.  您的系統磁碟機上尋找 boot.ini (通常是 c:\\)。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  使用 [記事本] 開啟 boot.ini 並移除下列選項：  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

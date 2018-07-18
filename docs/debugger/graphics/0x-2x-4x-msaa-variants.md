@@ -1,5 +1,5 @@
 ---
-title: 0 x-2 x-4 msaa 變異 |Microsoft 文件
+title: 0 的 x-2 x-4 的 msaa 變異 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f77e5635a333d6fb2f041f88ee96d817fe36ba2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475764"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433311"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。  
@@ -59,7 +59,7 @@ ms.locfileid: "31475764"
 ## <a name="example"></a>範例  
  使用與下面類似的程式碼，即可針對使用 `ID3D11Device::CreateTexture2D` 所建立的呈現目標，重現這些變異：  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC target_description;  
 target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  
 target_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead  
@@ -70,7 +70,7 @@ d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ## <a name="example"></a>範例  
  或者，針對使用 IDXGISwapChain::CreateSwapChain 或 D3D11CreateDeviceAndSwapChain 所建立的交換鏈結，使用與下面類似的程式碼：  
   
-```  
+```cpp
 DXGI_SWAP_CHAIN_DESC chain_description;  
 chain_description.SampleDesc.Count = 4; // 4x MSAA, can be 2 or 0 instead  
 chain_description.SampleDesc.Quality = 0;  

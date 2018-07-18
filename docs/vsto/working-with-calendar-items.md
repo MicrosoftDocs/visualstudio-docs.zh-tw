@@ -1,5 +1,5 @@
 ---
-title: 使用行事曆項目 |Microsoft 文件
+title: 使用行事曆項目
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,23 +21,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3caae91f24c3fbdefe24ae421fb80536b9d8ca56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 199665d7cce60034c2b998b6c67fbc1623c43307
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258589"
 ---
-# <a name="working-with-calendar-items"></a>使用行事曆項目
+# <a name="work-with-calendar-items"></a>使用行事曆項目
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 類別包含您用來執行行事曆項目工作的方法和屬性。  
   
 |工作|程序|  
 |----------|---------------|  
-|建立約會並加入收件者。|[如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)|  
-|刪除週期性約會執行個體。|[如何：以程式設計方式刪除約會](../vsto/how-to-programmatically-delete-appointments.md)|  
-|建立 [行事曆] 資料夾並加入約會項目。|[如何：以程式設計方式建立自訂行事曆](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|建立並傳送會議邀請。|[如何：以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|建立約會並加入收件者。|[如何： 以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)|  
+|刪除週期性約會執行個體。|[如何： 以程式設計方式刪除約會](../vsto/how-to-programmatically-delete-appointments.md)|  
+|建立 [行事曆] 資料夾並加入約會項目。|[如何： 以程式設計方式建立自訂行事曆](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|建立並傳送會議邀請。|[如何： 以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
- 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱 [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)。  
+ 如需 Outlook 工作和 Outlook 物件模型的詳細資訊，請參閱[Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用連絡人項目](../vsto/working-with-contact-items.md)   

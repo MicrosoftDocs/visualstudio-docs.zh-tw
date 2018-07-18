@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 請確認 DNS 是目標電腦上正確設定 |Microsoft 文件
+title: 錯誤： 請確認 DNS 是在目標電腦上正確設定 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,23 +16,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50eed9a4c769b2e8b58cbdf35c6e10b57ae9b0c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d2d945376f093e7df437751127c544b349458fd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479633"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056094"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>錯誤：請確認目標電腦上的 DNS 設定都正確
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Ensure that DNS is correctly configured on the target computer.  
 ```  
   
  當目標電腦無法解析 Visual Studio 偵錯工具主機電腦的名稱時，便會發生這個錯誤。 請檢查目標電腦上的 DNS 設定。  
   
--   如需在 Windows 8.1、 Vista、 Windows 7、 Windows Server 2012、 Windows Server 2008 或 Windows Server 2008 R2，檢視您的 DNS 設定，執行這項操作： 在**啟動**功能表上，選擇**說明及支援**然後搜尋**變更 TCP/IP 設定**。  
+-   如需在 Windows 8.1、 Vista、 Windows 7、 Windows Server 2012、 Windows Server 2008 或 Windows Server 2008 R2 中，檢視您的 DNS 設定，執行這項操作： 在**開始**功能表上，選擇**說明及支援**然後搜尋**變更 TCP/IP 設定**。  
   
 -   如需詳細資訊，請移至[Microsoft Windows 網站](http://go.microsoft.com/fwlink/?LinkId=252720)並搜尋**變更 TCP/IP 設定**。  
   

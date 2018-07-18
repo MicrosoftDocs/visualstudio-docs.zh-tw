@@ -49,31 +49,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dc41702d9af7a604569c72f64c869f34a2e1b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71e660260c6ec6dfd671d4b6b2d036ffd6cffb3a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927148"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756167"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 > [!NOTE]
->  資料集和相關的類別會讓應用程式處理記憶體中資料的應用程式的連接會中斷資料庫早期 2000s年從舊版.NET 技術。 它們是特別適用於應用程式可讓使用者修改資料，並保存回資料庫的變更。 雖然資料集證明為十分成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式來使用物件模型，為表格式資料，並且有更簡單的程式設計介面。
+>  資料集和相關的類別是舊版的.NET 技術，從早期 2000s 可讓應用程式的應用程式會與資料庫中斷連接時，使用記憶體中的資料。 它們是特別適用於應用程式，讓使用者能夠修改資料，並保存資料庫的變更。 雖然資料集已證明是非常成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式，為物件模型的表格式資料搭配使用，而且有一個簡單的程式設計介面。
 
- 資料集物件是記憶體中物件，基本上是小型的資料庫。 它包含資料表、 DataColumn 和 DataRow 物件可以儲存並修改一或多個資料庫中的資料，而不需要維護的開啟連接。 資料集維護其資料，以變更的相關資訊，以便將追蹤更新，並重新連接您的應用程式時，傳送回資料庫。
+ A`DataSet`物件是基本上是小型資料庫的記憶體物件。 它包含`DataTable`， `DataColumn`，和`DataRow`物件中，您可以儲存和修改一或多個資料庫中的資料，而不需要維護的開啟連接。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 
- .NET Framework 類別庫中的 System.Data 命名空間中定義資料集和相關的類別。 您可以建立和修改資料集，以動態方式在程式碼中。 如需如何執行這些作業的詳細資訊，請參閱 ADO.NET。 本節中的文件將示範如何使用 Visual Studio 設計工具來處理資料集。 若要知道一件事： 透過設計工具所做的資料集使用 TableAdapter 物件來與資料庫互動而以程式設計的方式的資料集使用資料配接器物件。 以程式設計方式建立資料集的相關資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+ 資料集和相關的類別會定義在*System.Data* .NET Framework 類別庫中的命名空間。 您可以建立及修改動態程式碼中的資料集。 如需如何執行該動作的詳細資訊，請參閱 ADO.NET。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 若要知道一件事： 設計工具來進行的資料集使用 TableAdapter 物件來與資料庫互動。 然而，資料集，以程式設計的方式使用`DataAdapter`物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
- 如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，通常就可以更佳的效能使用 DataReader 物件取得資料的泛型清單的物件或另一個集合物件。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
+ 如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，您可以使用，通常取得較佳的效能`DataReader`物件擷取資料到泛型`List`物件或另一個集合物件。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
 
 ## <a name="dataset-workflow"></a>資料集的工作流程
- Visual Studio 提供許多工具，可簡化使用資料集。 基本的端對端工作流程是︰
+ Visual Studio 提供工具，以簡化使用資料集。 基本的端對端工作流程是：
 
--   使用**資料來源**視窗從一或多個資料來源建立新的資料集。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表中的資料行。 請小心選擇，以節省資料集所需的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+-   使用**資料來源**視窗建立新的資料集從一個或多個資料來源。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表資料行。 請小心選擇，以保留的資料集需要的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
--   指定在資料表之間的關聯性，以便正確地處理外部索引鍵。 如需詳細資訊，請參閱[填滿資料集，使用 Tableadapter](../data-tools/fill-datasets-by-using-tableadapters.md)。
+-   指定在資料表之間的關聯性，以便能夠正確處理外部索引鍵。 如需詳細資訊，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)。
 
--   使用**TableAdapter 組態精靈**至指定的查詢或預存程序將會填入資料集，以及要實作哪些資料庫作業 （更新、 刪除等等）。 如需詳細資訊，請參閱下列主題：
+-   使用**TableAdapter 組態精靈**指定的查詢或預存程序可填入資料集，以及要實作哪些資料庫作業 （update、 delete 等等）。 如需詳細資訊，請參閱下列主題：
 
     -   [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -83,15 +83,15 @@ ms.locfileid: "31927148"
 
     -   [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 
--   查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱[查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 可讓[LINQ (Language-Integrated Query ()](/dotnet/csharp/linq/)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
+-   查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 可讓[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 
--   使用**資料來源**視窗使用者介面控制項繫結至資料集或其個別的資料行，並指定使用者可編輯的哪些資料行。 如需詳細資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+-   使用**Zdroje dat**使用者介面控制項繫結至資料集或其個別的資料行，並指定哪些資料行是使用者可編輯 視窗。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
 ## <a name="datasets-and-n-tier-architecture"></a>資料集和多層式架構的架構
- 多層式架構應用程式中的資料集的相關資訊，請參閱[處理在多層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)。
+ 如需在多層式架構應用程式中的資料集的資訊，請參閱[使用多層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)。
 
 ## <a name="datasets-and-xml"></a>資料集和 XML
- 有關轉換資料集與 XML 的詳細資訊，請參閱[讀取 XML 資料至資料集](../data-tools/read-xml-data-into-a-dataset.md)和[將資料集儲存為 XML](../data-tools/save-a-dataset-as-xml.md)。
+ 如需轉換資料集，與 XML 的資訊，請參閱[讀取 XML 資料至資料集](../data-tools/read-xml-data-into-a-dataset.md)並[將資料集儲存為 XML](../data-tools/save-a-dataset-as-xml.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerDisplay 屬性 |Microsoft 文件
+title: 使用 DebuggerDisplay 屬性 |Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573241"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057579"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
-[DebuggerDisplayAttribute 類別](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
+[DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
   
  `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。  
   
@@ -35,7 +35,7 @@ ms.locfileid: "34573241"
   
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   
-|屬性|輸出顯示在 [值] 欄位|  
+|屬性|不會出現在 [值] 資料行的輸出|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 用於具有 `x` 和 `y`欄位的類型。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`參數語法會因語言而有所不同。 因此，請小心使用。|`String value is [5, 6, 6]`|  
@@ -51,7 +51,7 @@ ms.locfileid: "34573241"
   
  若要建置 autoexp.cs，請開啟 VS2015 的開發人員命令提示字元，然後執行下列命令  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  

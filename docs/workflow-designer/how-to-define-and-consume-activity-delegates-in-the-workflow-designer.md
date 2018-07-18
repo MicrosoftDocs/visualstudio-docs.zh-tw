@@ -10,76 +10,83 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 73bf61c845b0124a8350f61c161ded1cf0c80043
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2039c1792a5e42c3181a01b10ff5bf271ea3bf2f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979564"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755752"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
 
-.NET framework 4.5 包含新的預設設計工具的<xref:System.Activities.Statements.InvokeDelegate>活動。 這個設計工具可用來將委派指派給衍生自 <xref:System.Activities.ActivityDelegate> 的活動，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。
+.NET framework 4.5 還包括全新的設計工具<xref:System.Activities.Statements.InvokeDelegate>活動。 這個設計工具可用來將委派指派給衍生自 <xref:System.Activities.ActivityDelegate> 的活動，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。
 
 ## <a name="define-an-activity-delegate"></a>定義活動委派
 
-1.  在 Visual Studio 中，選取**檔案**，**新增**，**專案**。 選取**工作流程**節點的左側，而**工作流程主控台應用程式**右邊的範本。 將專案 （如有需要），然後按一下 **確定**。
+1.  在 Visual Studio 中，選取**檔案** > **新增** > **專案**。
 
-2.  中的專案上按一下滑鼠右鍵**方案總管 中**選取**新增**，**新項目...**.選取**工作流程**節點的左側，而**活動**右邊的範本。 新活動**MyForEach.xaml**按一下**確定**。 活動會在工作流程設計工具中開啟。
+1. 在**新的專案**對話方塊中，選取**工作流程**左側的類別目錄，然後選取**工作流程主控台應用程式**專案範本。 （如有需要） 的專案命名，然後按一下**Ok**。
+
+   > [!NOTE]
+   > 如果您沒有看到**工作流程**類別，第一次安裝**Windows Workflow Foundation**元件的 Visual Studio 2017。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+
+2.  中的專案上按一下滑鼠右鍵**方案總管**，然後選取**新增** > **新項目**。 選取 **工作流程**類別目錄，然後選取**活動**項目範本。 新活動命名**MyForEach.xaml** ，然後選取**確定**。
+
+   活動會在 工作流程設計工具中開啟。
 
 3.  在工作流程設計工具中，按一下**引數** 索引標籤。
 
-4.  按一下**建立引數**。 新引數命名**項目**。
+4.  按一下  **Vytvořit Argument**。 命名新的引數**項目**。
 
-5.  在**引數型別**欄中，選取 **[T] 陣列**。
+5.  在 **引數型別**欄中，選取**的 [T] 陣列**。
 
-6.  在型別瀏覽器中，選取**物件**。 Click **Ok**.
+6.  在型別瀏覽器中，選取**物件**，然後選取**確定**。
 
-7.  按一下**建立引數**一次。 新引數命名**主體**。 在**方向**新引數，選取資料行**屬性**。
+7.  按一下 **建立引數**一次。 命名新的引數**主體**。 在 **方向**資料行的新引數，選取**屬性**。
 
-8.  在引數類型 欄位中，選取**瀏覽型別...**
+8.  在 [引數類型] 欄中，選取**瀏覽型別**
 
-9. 在型別瀏覽器中，輸入**ActivityAction**中**型別名稱**欄位。 選取**ActivityAction\<T >** 樹狀檢視中。 選取**物件**似乎指派類型的下拉式清單中**ActivityAction\<物件 >** 引數。
+9. 在型別瀏覽器中，輸入**ActivityAction**中**型別名稱**欄位。 選取  **ActivityAction\<T >** 樹狀檢視中。 選取 **物件**似乎指派類型下拉式清單中**ActivityAction\<物件 >** 引數。
 
-10. 拖曳<xref:System.Activities.Statements.While>活動從**控制流程**工具箱拖曳至設計工具介面的區段。
+10. 拖曳<xref:System.Activities.Statements.While>活動，從**控制流程**工具箱拖曳至設計工具介面的一部分。
 
-11. 選取<xref:System.Activities.Statements.While>活動，然後選取**變數** 索引標籤。
+11. 選取 [<xref:System.Activities.Statements.While>活動，然後選取**變數**] 索引標籤。
 
-12. 選取**建立變數**。 將新變數命名**索引**。
+12. 選取 **建立的變數**。 新的變數命名**Index**。
 
-13. 在**變數型別**欄中，選取**Int32**。 保留**範圍**為**時**，而**預設**空白的資料行。
+13. 在 **變數的型別**欄中，選取**Int32**。 離開**範圍**做為**雖然**，而**預設**資料行保留空白。
 
-14. 設定**條件**屬性<xref:System.Activities.Statements.While>活動**索引 < Items.Length;**。
+14. 設定**條件**屬性<xref:System.Activities.Statements.While>活動**index < Items.Length;**。
 
-15. 拖曳<xref:System.Activities.Statements.InvokeDelegate>活動從**基本型別**工具箱的區段**主體**的<xref:System.Activities.Statements.While>活動。
+15. 拖曳<xref:System.Activities.Statements.InvokeDelegate>活動，從**基本型別**工具箱的區段**主體**的<xref:System.Activities.Statements.While>活動。
 
-16. 選取**主體**委派下拉式清單中。
+16. 選取 **主體**委派下拉式清單中。
 
-17. 在**屬性**方格<xref:System.Activities.Statements.InvokeDelegate>活動中，按一下  **...** 按鈕**委派引數**屬性。
+17. 在 **屬性**方格<xref:System.Activities.Statements.InvokeDelegate>活動中，按一下  **...** 按鈕**委派引數**屬性。
 
-18. 在**值**具名引數的資料行**引數**，輸入**Items [Index]**。 按一下**確定**關閉**DelegateArguments**對話方塊。
+18. 在 **值**具名引數的資料行**引數**，輸入**Items [Index]**。 按一下  **Ok**以關閉**DelegateArguments**對話方塊。
 
-19. 將 <xref:System.Activities.Statements.Assign> 活動拖曳到 <xref:System.Activities.Statements.InvokeDelegate> 活動底下的水平線上。 <xref:System.Activities.Statements.Assign>將建立活動，以及<xref:System.Activities.Statements.Sequence>活動將會自動建立包含兩個活動中的**主體**區段**MyForEach**活動。 需要此序列，因為**主體**區段只能包含單一活動。 自動建立新<xref:System.Activities.Statements.Sequence>活動是.NET Framework 4.5 的新功能。
+19. 將 <xref:System.Activities.Statements.Assign> 活動拖曳到 <xref:System.Activities.Statements.InvokeDelegate> 活動底下的水平線上。 <xref:System.Activities.Statements.Assign>建立活動時，以及<xref:System.Activities.Statements.Sequence>活動會自動建立包含兩個活動中的**主體**一節**MyForEach**活動。 需要此序列，因為**主體**區段只能包含單一活動。 自動建立新<xref:System.Activities.Statements.Sequence>活動是.NET Framework 4.5 的新功能。
 
-20. 設定**至**屬性<xref:System.Activities.Statements.Assign>活動**索引**。 設定**值**屬性**指派**活動**index + 1**。
+20. 設定**要**屬性<xref:System.Activities.Statements.Assign>活動**index**。 設定**值**屬性**指派**活動**index+1**。
 
- 自訂**MyForEach**活動將會立即叫用針對傳遞到它透過每個值執行一次任意活動**項目**集合，做為活動的輸入集合中的值。
+   自訂**MyForEach**活動會叫用一次來傳給它透過每個值的任意活動**項目**集合，做為活動輸入集合中的值。
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>使用工作流程中的自訂活動
 
-1.  建置專案時按**Ctrl + Shift + B**。
+1.  建置專案，藉由按下**Ctrl**+**Shift**+**B**。
 
-2.  在**方案總管 中**，開啟**Workflow1.xaml**設計工具中。
+2.  在 **方案總管**，開啟**Workflow1.xaml**設計工具中。
 
-3.  拖曳**MyForEach**活動從工具箱拖曳至設計工具介面。 活動將會在工具箱的區段中，名稱與專案的名稱相同。
+3.  拖曳**MyForEach**從工具箱拖曳至設計工具介面的活動。 活動是在與專案同名的工具箱 的區段中。
 
-4.  設定**項目**屬性**MyForEach**活動**新 Object [] {1，"abc"}**。
+4.  設定**項目**屬性**MyForEach**活動**new Object [] {1，"abc"}**。
 
-5.  拖曳<xref:System.Activities.Statements.WriteLine>活動從**基本型別**工具箱的區段**委派： 主體**區段**MyForEach**活動。
+5.  拖曳<xref:System.Activities.Statements.WriteLine>活動，從**基本型別**工具箱的區段**Delegate: Body**一節**MyForEach**活動。
 
-6.  設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**Argument.ToString()**。
+6.  設定**文字**屬性<xref:System.Activities.Statements.WriteLine>活動**argument.tostring （)**。
 
-工作流程執行時，在主控台顯示下列資訊：
+工作流程執行時，主控台會顯示下列輸出：
 
 **1**
 **abc**

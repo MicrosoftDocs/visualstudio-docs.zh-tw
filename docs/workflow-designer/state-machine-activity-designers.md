@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具的狀態機器活動設計工具
+title: 工作流程設計工具-狀態機器活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972359"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755498"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 
-Windows 工作流程設計工具包含數個活動設計工具可讓您建構工作流程時。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
+工作流程設計工具包含活動設計工具可供您建構工作流程時數。 本節包含系統提供的活動設計工具，這些活動設計工具用來建立和管理狀態機器工作流程。 下列主題會說明這些設計工具，並且提供如何使用的指引。
 
 ## <a name="reference"></a>參考資料
  <xref:System.Activities.Statements.StateMachine>
@@ -39,7 +39,7 @@ Windows 工作流程設計工具包含數個活動設計工具可讓您建構工
 
  [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
 
- [訊息處理](../workflow-designer/messaging-activity-designers.md)
+ [傳訊](../workflow-designer/messaging-activity-designers.md)
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 

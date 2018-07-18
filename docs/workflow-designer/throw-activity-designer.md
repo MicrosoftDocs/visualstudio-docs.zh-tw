@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974652"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758317"
 ---
 # <a name="throw-activity-designer"></a>Throw 活動設計工具
 
-**擲回**活動設計工具用來建立及設定<xref:System.Activities.Statements.Throw>活動。
+**擲回**活動設計工具會用來建立及設定<xref:System.Activities.Statements.Throw>活動。
 
 ## <a name="the-throw-activity"></a>Throw 活動
- <xref:System.Activities.Statements.Throw> 活動會擲回例外狀況。
+
+<xref:System.Activities.Statements.Throw> 活動會擲回例外狀況。
 
 ### <a name="using-the-throw-activity-designer"></a>使用 Throw 活動設計工具
- **擲回**活動設計工具位於**錯誤處理**分類**工具箱**，即可存取的哪一個**工具箱** 索引標籤上的工作流程設計工具左側 (或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)
 
- **擲回**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面上，只要活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.Throw>預設值的活動**DisplayName**的擲回。 <xref:System.Activities.Activity.DisplayName%2A>值可以編輯的標頭中**擲回**活動設計工具或在**DisplayName**屬性方格的方塊。 <xref:System.Activities.Statements.Throw.Exception%2A> 屬性必須在屬性方格中編輯。
+存取權**擲回**中的活動設計工具**錯誤處理**類別**工具箱**。
+
+**擲回**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，不論活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 這會建立<xref:System.Activities.Statements.Throw>活動，具有預設值**DisplayName**的擲回。 <xref:System.Activities.Activity.DisplayName%2A>可以編輯的標頭中的值**擲回**活動設計工具或**DisplayName**屬性方格的方塊。 <xref:System.Activities.Statements.Throw.Exception%2A> 屬性必須在屬性方格中編輯。
 
 ### <a name="the-throw-properties"></a>擲回屬性
- 下表顯示 <xref:System.Activities.Statements.Throw> 屬性，並且描述屬性在設計工具中的使用方式。
+
+下表顯示 <xref:System.Activities.Statements.Throw> 屬性，並且描述屬性在設計工具中的使用方式。
 
 |屬性名稱|必要項|使用方式|
 |-------------------|--------------|-----------|

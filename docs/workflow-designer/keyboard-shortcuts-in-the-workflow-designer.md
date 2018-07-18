@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977640"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756590"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
-所有核心功能的 Windows 工作流程設計工具可以利用鍵盤存取。
+所有的工作流程設計工具的核心功能可以透過鍵盤存取。
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>使用鍵盤巡覽工作流程設計工具
 
-在 Visual Studio 2010、 內部，全域快速鍵與除錯快速鍵套用到工作流程設計工具。 此外，已建立的工作流程設計工具特定的鍵盤快速鍵的數字。 在 Visual Studio 2010 中，所有的鍵盤快速鍵可以重新對應。 然而，在重新裝載的應用程式中，這些快速鍵都已硬式編碼。
+在 Visual Studio 中，全域快速鍵與除錯快速鍵套用至工作流程設計工具。 此外，已建立數個工作流程設計工具特定的鍵盤快速鍵。 在 Visual Studio 中，所有的鍵盤快速鍵可以重新對應。 然而，在重新裝載的應用程式中，這些快速鍵都已硬式編碼。
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>工作流程設計工具快速鍵
 
@@ -49,13 +49,13 @@ ms.locfileid: "31977640"
 
 ### <a name="flowchart"></a>流程圖
 
-下列是透過鍵盤建構流程圖所使用的手勢。 與工作流程設計工具的其餘部分，活動會加入至設計工具介面提供與 Visual Studio 2010 的全域工具箱快速鍵。
+下列是透過鍵盤建構流程圖所使用的手勢。 與工作流程設計工具的其餘部分，活動會新增至使用隨 Visual Studio 提供的全域工具箱快速鍵在設計工具介面。
 
 - 若要移動活動，請選取該活動並使用方向鍵重新定位。
 
 - 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。
 
-- 若要設定某個活動做為開始節點，使用**Set as StartNode**內容功能表中的命令。
+- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**的內容功能表命令。
 
 - 若要連接活動：
 
@@ -73,11 +73,11 @@ ms.locfileid: "31977640"
 
 - 如果成對的活動無法連接，例如來源活動已經有傳出的連接，則選取範圍內活動之間的其他連接，只要有可能連接仍然會連接。
 
-- 當**FlowDecision**包含在選取項目和**FlowDecision**沒有傳出的連接時，連接線會放在**True**分支。
+- 當**FlowDecision**包含在選取項目和**FlowDecision**沒有傳出的連接器，連接器會放在 **，則為 True**分支。
 
 ### <a name="expression-editing"></a>運算式編輯
 
-根據預設，Visual Basic 文字編輯的預設鍵盤快速鍵適用於內部運算式編輯器，在工作流程設計工具，但有下列限制：
+根據預設，Visual Basic 文字編輯的預設鍵盤快速鍵適用於在運算式編輯器，在工作流程設計工具，但有下列限制：
 
 - 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。
 
@@ -88,4 +88,4 @@ ms.locfileid: "31977640"
    - 復原
    - 取消復原
 
-- 若要重新對應 Visual Studio 2010 中的工作流程設計工具內的運算式編輯命令的鍵盤快速鍵，編輯工作流程設計工具範圍中的快速鍵。 在文字編輯器 範圍內所做的變更會自動不適用於工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。
+- 若要重新對應 Visual Studio 中的工作流程設計工具中的運算式編輯命令的鍵盤快速鍵，編輯工作流程設計工具的範圍中的快速鍵。 在 [文字編輯器] 範圍內所做的變更會自動不適用於工作流程設計工具。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。
